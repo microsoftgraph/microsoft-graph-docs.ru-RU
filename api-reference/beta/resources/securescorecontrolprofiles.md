@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса Секурескореконтролпрофилес
+title: Тип ресурса Секурескореконтролпрофиле
 description: Представляет уровень безопасности клиента для данных элемента управления. По умолчанию он возвращает все элементы управления для клиента и может явно извлекать отдельные элементы управления.
 localization_priority: Normal
-ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41a74af0de47bbe77b8ea04cbea011a6f085d1bb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549176"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343413"
 ---
-# <a name="securescorecontrolprofiles-resource-type"></a>Тип ресурса Секурескореконтролпрофилес
+# <a name="securescorecontrolprofile-resource-type"></a>Тип ресурса Секурескореконтролпрофиле
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +20,7 @@ ms.locfileid: "32549176"
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Перечисление объектов secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Чтение свойств и метаданных объекта Секурескореконтролпрофилес.|
+|[Перечисление объектов secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | Коллекция [секурескореконтролпрофиле](securescorecontrolprofiles.md) |Получение коллекции объектов Секурескореконтролпрофиле.|
 
 
 ## <a name="properties"></a>Свойства
@@ -29,7 +29,7 @@ ms.locfileid: "32549176"
 |:--|:--|:--|
 |   Азуретенантид   |   String  |   Строка GUID для идентификатора клиента.  |
 |   Контролнаме |   String  |   Имя элемента управления. |
-|   title   |   Строка  |   Название элемента управления.   |
+|   title   |   String  |   Название элемента управления.   |
 | Комплианцеинформатион | Коллекция [комплианцеинформатион](complianceinformation.md) | Коллекция сведений о соответствии, связанных с контролем безопасности по показателю |
 |   Контролкатегори |   String  |   Категория действий управления (учетная запись, данные, устройство, приложения, инфраструктура).  |
 |   actionType  |   String  |   Тип действия управления (config, проверка, поведение). |
@@ -44,7 +44,8 @@ ms.locfileid: "32549176"
 |   исправления |   String  |   Описание того, что будет исправлено элементом управления. |
 |   Ремедиатионимпакт | String  |   Описание влияния на пользователей об исправлении. |
 |   Актионурл | String  |   URL-адрес, по которому можно выполнить действия с элементом управления. |
-|   Контролстатеупдатес |   Коллекция [секурескореконтролстатеупдате](securescorecontrolstateupdate.md) |    Флаг, указывающий, где клиент пометил элемент управления (Ignore, thirdParty, проверен) (поддерживает [Обновление](../api/securescorecontrolprofiles-update.md)). |
+|   Контролстатеупдатес | Коллекция [секурескореконтролстатеупдате](securescorecontrolstateupdate.md) |    Флаг, указывающий, где клиент пометил элемент управления (Ignore, thirdParty, проверен) (поддерживает [Обновление](../api/securescorecontrolprofiles-update.md)). |
+|   Вендоринформатион | [Секуритивендоринформатион](securityvendorinformation.md) |
 
 ## <a name="relationships"></a>Связи
 
@@ -59,32 +60,30 @@ ms.locfileid: "32549176"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 }-->
 
 ```json
 {
-"title": "String", 
-"azureTenantId": "Guid", 
-"referenceId": "String", 
-"controlName": "String", 
-"maxScore": "Int32",
-"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
-"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
-"service": "String",
-"tier": "Collection(microsoft.graph.SecureScore.tier)",
-"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
-"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
-"rank ": "Int32",
-"threats": "Collection(microsoft.graph.SecureScore.threat)",
-"deprecated ": "Boolean",
-"remediation": "String",
-"remediationImpact ": "String",
-"actionUrl": "String",
-"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
-"tenantNotes": "String",
-"upn": "String",
-"comments": "String",
+  "title": "String",
+  "azureTenantId": "String (identifier)",
+  "maxScore": 1024.13,
+  "actionType": "String",
+  "service": "String",
+  "tier": "String",
+  "userImpact": "string",
+  "implementationCost ": "String",
+  "rank ": 100,
+  "threats": ["string"],
+  "deprecated ": false,
+  "remediation": "String",
+  "remediationImpact ": "String",
+  "actionUrl": "String",
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
+  "controlCategory": "string",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 
@@ -98,8 +97,6 @@ ms.locfileid: "32549176"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securescorecontrolprofiles.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

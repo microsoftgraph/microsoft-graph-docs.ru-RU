@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание списка списков SharePoint на сайте
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c91d7f8f395faa48965cb8334e1cc9eba78b978c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f7f6863f87814b56ea85b05ac1d96537828cb135
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540973"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333465"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции [списков][] для [сайта][].
 
@@ -32,17 +34,17 @@ ms.locfileid: "32540973"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>Отклик
@@ -86,10 +88,13 @@ Content-type: application/json
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate"
-} -->
+  "tocPath": "Lists/Enumerate",
+  "suppressions": []
+}
+-->

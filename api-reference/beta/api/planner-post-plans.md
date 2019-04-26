@@ -4,14 +4,16 @@ description: Используйте этот API, чтобы создать об
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3d55fddae020a58b2fdb240b486d65b3d78a320
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539028"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332557"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API, чтобы создать объект **plannerPlan**.
 
@@ -44,7 +46,6 @@ POST /planner/plans
 
 >**Примечание.** Пользователь, создающий план, должен быть участником группы, владеющей планом. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
 
-
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `201 Created` и объект [plannerPlan](../resources/plannerplan.md) в тексте ответа.
@@ -56,13 +57,12 @@ POST /planner/plans
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/v1.0/planner/plans
+POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,7 +77,6 @@ Content-length: 381
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,10 +105,13 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

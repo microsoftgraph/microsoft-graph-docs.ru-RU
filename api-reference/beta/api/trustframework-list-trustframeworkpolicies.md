@@ -4,12 +4,12 @@ description: Эта операция перечисляет все объект�
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 873fe9de84ec58ded43141668dd3681409032e56
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 568463be596e79284b6ec73f6aa69174b0a8c7d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536714"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335103"
 ---
 # <a name="list-trustframeworkpolicies"></a>Список ТрустфрамеворкполиЦиес
 
@@ -61,7 +61,7 @@ GET /trustFramework/policies/
 
 <!-- {
   "blockType": "request",
-  "name": "get__trustFrameworks"
+  "name": "get_trustFrameworks"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/trustFramework/policies
@@ -72,12 +72,13 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy",
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "value": [
         {

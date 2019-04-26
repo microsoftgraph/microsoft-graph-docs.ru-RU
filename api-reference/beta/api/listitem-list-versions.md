@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Получение предыдущей версии записи списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b8a9078bb0e56f3c3068a92bab9835f2a4964f79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 843c2f501217f7ce1d7923835bf0a7b44a010950
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540967"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333500"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>Создание списка версий элемента ListItem (ознакомительная версия)
 
@@ -112,8 +112,6 @@ Content-Type: application/json
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": [
-    "Error: /api-reference/beta/api/listitem-list-versions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

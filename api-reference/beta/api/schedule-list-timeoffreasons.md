@@ -4,12 +4,12 @@ description: Получение списка Тимеоффреасонс по �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f91fab2b2a0acdd095b6c46168bd9971b40b667d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78e2d91dd878c2ad4828ad5fdf25bc43e7b61dc8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545806"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331553"
 ---
 # <a name="list-timeoffreasons"></a>Список Тимеоффреасонс
 
@@ -71,7 +71,8 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOffReason"
+  "@odata.type": "microsoft.graph.timeOffReason",
+  "isCollection": true
 } -->
 
 ```http
@@ -111,8 +112,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schedule-list-timeoffreasons.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

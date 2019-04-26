@@ -4,12 +4,12 @@ description: Для отправки используются назначени
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542905"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334130"
 ---
 # <a name="educationsubmission-resource-type"></a>Тип ресурса educationSubmission
 
@@ -27,7 +27,7 @@ ms.locfileid: "32542905"
 |[Получение educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Чтение свойств и связей объекта **educationSubmission** .|
 |[Список ресурсов](../api/educationsubmission-list-resources.md) |Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Получение коллекции объектов **едукатионсубмиссионресаурце** .|
 |[Список Субмиттедресаурцес](../api/educationsubmission-list-submittedresources.md) |Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Получение коллекции объектов **едукатионсубмиссионресаурце** .|
-|[Обновление](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
+|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
 |[Передачи](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Преподаватель использует возврат, чтобы показать, что оценки и отзывы могут отображаться для учащегося.|
 |[Отправить](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Для включения назначения учащийся использует функцию "послать". При этом ресурсы будут скопированы в папку **субмиттедресаурцес** для ступенчатого и обновления состояния.|
 |[Отправляются](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Учащийся использует unsubmit, чтобы переместить состояние отправки от отправки к работе. При этом ресурсы будут скопированы в папку **воркингресаурцес** для ступенчатого и обновления состояния.|
@@ -40,28 +40,29 @@ ms.locfileid: "32542905"
 |id|String| Только для чтения.|
 |получатель;|[ЕдукатионсубмиссионреЦипиент](educationsubmissionrecipient.md)|, Которому назначена эта отправка.|
 |Релеаседби|[identitySet](identityset.md)|Пользователь, который изменил состояние этой отправки на "выпущено".|
-|Релеаседдатетиме|DateTimeOffset|Момент времени, когда была выпущена отправка. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Релеаседдатетиме|DateTimeOffset|Момент времени, когда была выпущена отправка. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Ретурнедби|[identitySet](identityset.md)|Пользователь, который изменил состояние этой отправки на "возвращено".|
-|Ретурнеддатетиме|DateTimeOffset|Момент времени, когда была возвращена отправка. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Ретурнеддатетиме|DateTimeOffset|Момент времени, когда была возвращена отправка. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Ресаурцесфолдерурл|String|Папка, в которой должны храниться все файловые ресурсы для этой отправки.|
 |status|string| Только для чтения. Возможные значения: `working`, `submitted`, `released`, `returned`.|
 |Субмиттедби|[identitySet](identityset.md)|Пользователь, который переместил ресурс в отправленное состояние.|
-|Субмиттеддатетиме|DateTimeOffset|Момент времени, когда отправка была перемещена в состояние отправлено. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Субмиттеддатетиме|DateTimeOffset|Момент времени, когда отправка была перемещена в состояние отправлено. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Унсубмиттедби|[identitySet](identityset.md)|Пользователь, который переместит ресурс в рабочее состояние.|
-|Унсубмиттеддатетиме|DateTimeOffset|Момент времени, когда отправка перемещается из состояния отправки в рабочее состояние. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Унсубмиттеддатетиме|DateTimeOffset|Момент времени, когда отправка перемещается из состояния отправки в рабочее состояние. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resources|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Допускается значение null.|
+|resources|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Допускает значение null.|
 |Субмиттедресаурцес|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -70,18 +71,20 @@ ms.locfileid: "32542905"
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
-  "id": "String (identifier)",
-  "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "returnedDateTime": "String (timestamp)",
-  "resourcesFolderUrl": "String",
-  "status": "string",
-  "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "unsubmittedDateTime": "String (timestamp)"
+    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
+    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)",
+    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "releasedDateTime":"String (timestamp)"
 }
 ```
 
@@ -94,8 +97,6 @@ ms.locfileid: "32542905"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsubmission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

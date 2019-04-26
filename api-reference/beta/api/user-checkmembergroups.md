@@ -1,15 +1,15 @@
 ---
 title: checkMemberGroups
-description: Проверка членства в указанном списке групп. Возвращает список этих групп, из которых
+description: Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d7452795cb0a8ffdf3a966a3e350a8634b2a7ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9a19def28bb5747b9a8573c6179e3a2009eca1d0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536806"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334971"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "32536806"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
 | Для приложений                            | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Примечание:** Этот API на `Directory.Read.All` данный момент требует разрешение или более высокий уровень. При использовании `User.Read.All` разрешений `User.ReadWrite.All` или разрешений возвращается ошибка. Мы знаем об этой проблеме.
+> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании `User.Read.All` разрешений `User.ReadWrite.All` или разрешений возвращается ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 | Параметр | Тип   | Описание           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | String | Массив идентификаторов групп |
+| groupIds  | Коллекция строк | Массив идентификаторов групп |
 
 ## <a name="response"></a>Отклик
 
@@ -83,7 +83,7 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -116,8 +116,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-checkmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,19 +1,21 @@
 ---
-title: Перечисление планов
-description: Получение списка объектов **plannerPlan** , принадлежащие объекта групповой.
-localization_priority: Priority
+title: Список планов
+description: Получение списка объектов **plannerPlan**, принадлежащих объекту group.
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 0212968b0882c4090044519d12157a52c85b421b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972490"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525686"
 ---
-# <a name="list-plans"></a>Перечисление планов
+# <a name="list-plans"></a>Список планов
 
-Получение списка объектов **plannerPlan** , принадлежащие объекта [групповой](../resources/group.md) .
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получение списка объектов **plannerPlan**, принадлежащих объекту [group](../resources/group.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -34,8 +36,8 @@ GET /groups/{group-id}/planner/plans
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
@@ -50,10 +52,10 @@ GET /groups/{group-id}/planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
+GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,10 +89,13 @@ Content-length: 421
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

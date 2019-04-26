@@ -2,18 +2,18 @@
 title: Перечисление объектов secureScoreControlProfiles
 description: Получение свойств и связей объекта Секурескореконтролпрофилес.
 localization_priority: Normal
-ms.openlocfilehash: 6627111633f54eb7bc2584af826b69fd5bd6cf49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 29efa2c9bedaa295304eb82190a64fbc4a863cd1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545640"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331570"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Перечисление объектов secureScoreControlProfiles
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [секурескореконтролпрофилес](../resources/securescorecontrolprofiles.md) .
+Получает список объектов [секурескореконтролпрофиле](../resources/securescorecontrolprofiles.md) для клиента.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,7 +37,7 @@ GET /security/secureScoreControlProfiles
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {Code}. Обязательный.|
+| Authorization  | Bearer {Code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -45,7 +45,7 @@ GET /security/secureScoreControlProfiles
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескореконтролпрофилес** в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескореконтролпрофиле** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -66,8 +66,9 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
@@ -82,11 +83,11 @@ Content-type: application/json
             "actionUrl": "actionUrl.value",
             "controlCategory": "controlCategory.value",
             "title": "title.value",
-            "deprecated": "deprecated.value",
+            "deprecated": true,
             "implementationCost": "implementationCost.value",
             "lastModifiedDateTime": "lastModifiedDateTime.value",
-            "maxScore": "maxScore.value",
-            "rank": "rank.value",
+            "maxScore": 1020.13,
+            "rank": 100,
             "remediation": "remediation.value",
             "remediationImpact": "remediationImpact.value",
             "service": "service.value",
@@ -125,8 +126,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

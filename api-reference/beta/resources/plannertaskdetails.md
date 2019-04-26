@@ -4,12 +4,12 @@ description: Ресурс **plannerTaskDetails** представляет доп
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 579ecdbf43275de90468883d158af725eb1d1734
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d11b0ca1f6090c65a1c5eaa45ce368d102994299
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563616"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344388"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 
@@ -29,12 +29,12 @@ ms.locfileid: "32563616"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|String|Описание задачи.|
+|description|Строка|Описание задачи.|
 |id|String| Только для чтения. Идентификатор сведений о задаче. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -69,8 +69,6 @@ ms.locfileid: "32563616"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannertaskdetails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

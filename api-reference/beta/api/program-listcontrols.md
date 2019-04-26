@@ -2,12 +2,12 @@
 title: Список Програмконтролс программы
 description: В функции проверки доступа Azure AD перечислите все объекты Програмконтрол, связанные с определенной программой.
 localization_priority: Normal
-ms.openlocfilehash: 9134e9aa322446553da2e0c644a6fc8b43b0b54d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 787199b4c254411166d30e960024923cfe1d279f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546446"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331960"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Список Програмконтролс программы
 
@@ -19,9 +19,11 @@ ms.locfileid: "32546446"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу. |
+|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Для приложений                            | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
+
+ Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +38,7 @@ GET /programs('{programId}')/controls
 ## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [програмконтрол](../resources/programcontrol.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -47,7 +49,7 @@ GET /programs('{programId}')/controls
   "name": "get_programControl_from_program"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/programs('673a7379-9c38-4f01-bd9d-4fda7260b807')/controls
+GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
 
 ##### <a name="response"></a>Отклик
@@ -87,8 +89,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

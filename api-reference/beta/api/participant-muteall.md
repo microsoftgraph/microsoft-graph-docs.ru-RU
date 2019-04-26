@@ -4,12 +4,12 @@ description: Отключение звука всех участников зв�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7ae154e0a9e211620d9761c9051e73d5b35ec020
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539374"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332771"
 ---
 # <a name="participant-muteall"></a>участник: Мутеалл
 
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция строк|Участники, которые должны быть отключены.|
+|participants|Коллекция String|Участники, которые должны быть отключены.|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -103,8 +103,6 @@ Content-Length: 259
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/participant-muteall.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

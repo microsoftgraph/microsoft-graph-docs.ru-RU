@@ -1,19 +1,22 @@
 ---
 title: Перечисление задач
 description: Получение списка объектов **plannertask**, назначенных объекту User.
-localization_priority: Priority
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 1f2f1e9378971cef887214b2a4992198d9e797bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 821412ff8a8054a2e09f1073af7df732b1f2c9a0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546820"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337658"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение списка объектов **plannertask**, назначенных объекту User.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -27,8 +30,7 @@ ms.locfileid: "32546820"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
-GET /users/{id}/planner/tasks
-GET /drive/root/createdByUser/planner/tasks
+GET /users/<id>/planner/tasks
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,7 +55,7 @@ GET /drive/root/createdByUser/planner/tasks
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/planner/tasks
+GET https://graph.microsoft.com/beta/me/planner/tasks
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -102,10 +104,13 @@ Content-length: 833
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List tasks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

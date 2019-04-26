@@ -4,14 +4,17 @@ description: 'Возвращает список напоминаний кале�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 34c2f1a55b6dea1daff36c5ce98d1959fd78b301
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c863d1049fe5313778f5b51ec93f5c65ea22f43
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547748"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334528"
 ---
 # <a name="user-reminderview"></a>user: reminderView
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Возвращает список напоминаний о событиях в календаре пользователя в заданных время начала и окончания. 
 
 ## <a name="permissions"></a>Разрешения
@@ -47,7 +50,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.
 
@@ -60,7 +63,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
+GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 
 ##### <a name="response"></a>Отклик
@@ -77,7 +80,7 @@ Content-type: application/json
 Content-length: 673
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.reminder)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.reminder)",
     "value": [
         {
             "eventId": "AAMkADNsvAAA=",
@@ -106,10 +109,13 @@ Content-length: 673
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: reminderView",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

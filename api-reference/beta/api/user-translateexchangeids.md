@@ -4,12 +4,12 @@ description: Перевод идентификаторов ресурсов, с�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1721f30ea34f02a63d841c77f7c44d50e98624b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536502"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334648"
 ---
 # <a name="user-translateexchangeids"></a>Пользователь: Транслатиксчанжеидс
 
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| Инпутидс | Коллекция EDM. String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
+| Инпутидс | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
 | Саурцеидтипе | Ексчанжеидформат | Тип идентификатора идентификаторов в `InputIds` параметре. |
 | Таржетидтипе | Ексчанжеидформат | Запрошенный тип идентификатора для преобразования. |
 
@@ -67,7 +67,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 - Удалите все замыкающие символы заполнения (`=`).
 - Добавьте целое число в конец строки, указывающую количество заполненных символов в исходной (`0`, `1`или `2`).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и коллекцию [конвертидресулт](../resources/convertidresult.md) в тексте отклика.
 
@@ -114,21 +114,13 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

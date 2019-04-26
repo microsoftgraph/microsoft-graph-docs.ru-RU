@@ -2,12 +2,12 @@
 title: Удаление программы
 description: В функции рецензирования Access Azure AD удалите объект Program.
 localization_priority: Normal
-ms.openlocfilehash: 930367e6c61d354655e73fb7ece9c8776e15f34e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3839c552d7342bc00f5fdf8c26d45770c12ff17
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546411"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331987"
 ---
 # <a name="delete-program"></a>Удаление программы
 
@@ -23,9 +23,11 @@ ms.locfileid: "32546411"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, что позволяет им создавать программы. |
+|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
+
+Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать программы.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ DELETE /programs('<id>')
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -51,7 +53,7 @@ DELETE /programs('<id>')
   "name": "delete_program"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
 ##### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -72,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

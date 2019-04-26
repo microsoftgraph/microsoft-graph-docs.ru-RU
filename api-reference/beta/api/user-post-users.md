@@ -4,12 +4,12 @@ description: Используйте этот API, чтобы создать но
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fe7fddb437684bbf038de39198b74be4fc5e1824
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bd39aa9251fabeeb564eb9db1e782804f533543
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536581"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334618"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -45,7 +45,7 @@ POST /users
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
 |accountEnabled |boolean |Если учетная запись обеспечена — true, в противном случае — false.|
-|displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
+|displayName |строка |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя.|
@@ -81,7 +81,7 @@ Content-type: application/json
 }
 ```
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -123,8 +123,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

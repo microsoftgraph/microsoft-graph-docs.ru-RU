@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 82a14f6462604b732119b90d037b2fab711df5af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a01a2a8a8ad827145ee98a3ef0687546581d3096
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507842"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340660"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
@@ -51,21 +51,22 @@ ms.locfileid: "32507842"
 {
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
-  "following": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
 }
 ```
 
@@ -96,10 +97,10 @@ ms.locfileid: "32507842"
 | Отношение | Тип                                 | Описание
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | Коллекция [itemActivity][]          | Список последних действий, выполненных для этого объекта drive.
-| items        | Коллекция [driveitem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
-| root         | [driveitem](driveitem.md)            | Корневая папка на диске. Только для чтения.
-| special      | Коллекция [driveitem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
-| following    | Коллекция [DriveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
+| items        | Коллекция [driveItem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
+| root         | [driveItem](driveitem.md)            | Корневая папка на диске. Только для чтения.
+| special      | Коллекция [driveItem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
+| following    | Коллекция [driveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
 
 ## <a name="methods"></a>Методы
 
@@ -142,8 +143,6 @@ ms.locfileid: "32507842"
   "tocBookmarks": {
     "Resources/Drive": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

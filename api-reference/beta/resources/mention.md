@@ -4,12 +4,12 @@ description: Представляет уведомление для пользо
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: f8e04722edf878b4f3851de837908dc5c0a02de7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523482"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342326"
 ---
 # <a name="mention-resource-type"></a>Тип ресурса "упоминание"
 
@@ -55,17 +55,17 @@ ms.locfileid: "32523482"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|application | String | Имя приложения, в котором создается упоминание. Необязательный. Не используется и по умолчанию задано значение NULL для **сообщения**. |
-|Клиентреференце | String | Уникальный идентификатор, представляющий родительский объект для экземпляра ресурса. Необязательный. Не используется и по умолчанию задано значение NULL для **сообщения**. |
+|application | String | Имя приложения, в котором создается упоминание. Необязательно. Не используется и по умолчанию задано значение NULL для **сообщения**. |
+|Клиентреференце | String | Уникальный идентификатор, представляющий родительский объект для экземпляра ресурса. Необязательно. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | Сведения электронной почты пользователя, выполнившего упоминание. |
 |createdDateTime  |DateTimeOffset |Дата и время создания упоминания в клиенте. |
-|Прямой | String | Глубокая веб-ссылка на контекст упоминания в экземпляре ресурса. Необязательный. Не используется и по умолчанию задано значение NULL для **сообщения**. |
+|Прямой | String | Глубокая веб-ссылка на контекст упоминания в экземпляре ресурса. Необязательно. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 |id | String| Уникальный идентификатор упоминания в экземпляре ресурса.|
 |котором | [emailAddress](../resources/emailaddress.md) | Сведения электронной почты упомянутого человека. Обязательный. |
 |Ментионтекст | String | Необязательное свойство. Не используется и по умолчанию задано значение NULL для **сообщения**. Чтобы получить упоминание в сообщении, ознакомьтесь со свойством **бодипревиев** этого сообщения. |
-|Серверкреатеддатетиме | DateTimeOffset | Дата и время создания упоминания на сервере. Необязательный. Не используется и по умолчанию задано значение NULL для **сообщения**. |
+|Серверкреатеддатетиме | DateTimeOffset | Дата и время создания упоминания на сервере. Необязательно. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -75,8 +75,8 @@ ms.locfileid: "32523482"
 |:---------------|:--------|:----------|
 |[POST](../api/user-sendmail.md#request-2) и Send | Нет | Создание и отправка упоминаний в виде части нового сообщения.|
 |[Публикация](../api/user-post-messages.md#request-2) в новом черновике | [сообщение](../resources/message.md) , которое содержит один или **** несколько объектов упоминаются. | Создайте черновик нового сообщения и добавьте в него один или несколько **упомянутых** объектов.|
-|[Получение](../api/user-list-messages.md#request-2) сообщений с упоминанием меня | Коллекция объектов [message](../resources/message.md) | Получение всех сообщений в почтовом ящике вошедшего пользователя, который содержит **упоминание** этого пользователя.|
-|[Получение](../api/message-get.md#request-2) сообщения и его упоминаний | Коллекция объектов [message](../resources/message.md) | Получите сообщение и разверните сведения о каждом упоминании **** в сообщении.|
+|[Получение](../api/user-list-messages.md#request-2) сообщений с упоминанием меня | Коллекция [message](../resources/message.md) | Получение всех сообщений в почтовом ящике вошедшего пользователя, который содержит **упоминание** этого пользователя.|
+|[Получение](../api/message-get.md#request-2) сообщения и его упоминаний | Коллекция [message](../resources/message.md) | Получите сообщение и разверните сведения о каждом упоминании **** в сообщении.|
 |[Удаление](../api/message-delete.md#request-2) упоминания | Нет |Удаляет указанное упоминание из указанного сообщения в почтовом ящике вошедшего пользователя. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -88,8 +88,6 @@ ms.locfileid: "32523482"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

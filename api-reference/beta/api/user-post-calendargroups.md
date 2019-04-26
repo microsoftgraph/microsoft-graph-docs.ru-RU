@@ -4,14 +4,16 @@ description: С помощью этого API можно создать экзе
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 922fa813009090e504a71049ca0f8c717fc48354
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e867964bb11d0c2b97a7fef43a52c395dcff77ce
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547699"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334584"
 ---
 # <a name="create-calendargroup"></a>Создание объекта CalendarGroup
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 С помощью этого API можно создать экземпляр CalendarGroup.
 ## <a name="permissions"></a>Разрешения
@@ -50,7 +52,7 @@ POST /users/{id | userPrincipalName}/calendarGroups
   "name": "create_calendargroup_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendarGroups
+POST https://graph.microsoft.com/beta/me/calendarGroups
 Content-type: application/json
 Content-length: 90
 
@@ -83,10 +85,13 @@ Content-length: 110
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create CalendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: Тип ресурса Паренталконтролсеттингс
 description: Указывает параметры родительского контроля для приложения. Эти параметры управляют согласия пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 52a808cd4c3e6f29e4d43c7c4ea5c9e30a81447b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e62e137b872437626a5c77c114f14c6ad0c5eb2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568670"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345001"
 ---
 # <a name="parentalcontrolsettings-resource-type"></a>Тип ресурса Паренталконтролсеттингс
 

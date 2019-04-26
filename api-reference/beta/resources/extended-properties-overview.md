@@ -4,12 +4,12 @@ description: 'Расширенные свойства позволяют хра�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ead40279547fa838b7224a25c3605d0825c3f797
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 38aefd484d4afe13418255aa1d6e0b46050ae4fe
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542915"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340331"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
 
@@ -94,11 +94,3 @@ ms.locfileid: "32542915"
 - [Создание расширенного свойства в новом или существующем экземпляре ресурса](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`](../api/multivaluelegacyextendedproperty-get.md)
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extended-properties-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

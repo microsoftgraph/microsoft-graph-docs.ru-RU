@@ -1,17 +1,19 @@
 ---
 title: 'user: getMemberGroups'
 description: 'Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания '
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d4f9042be8be7f736ac585efaab0f2ebb16a6aab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1dceb870716d118efb2c8439a9159294f903b2f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544332"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334921"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возвращение всех названий групп, в которых состоит пользователь. Проверка промежуточная, в отличие от считывания свойства навигации [memberOf](../api/user-list-memberof.md) (возвращаются только группы, для которых пользователь является непосредственным членом).
 
@@ -23,7 +25,7 @@ ms.locfileid: "32544332"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
 | Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
@@ -42,13 +44,13 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json          |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр           | Тип    | Описание                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| securityEnabledOnly | Boolean | **true** (указывает, что должны быть возвращены только группы безопасности, в которых состоит пользователь) и **false** (указывает, что должны быть возвращены все группы, в которых состоит пользователь). Примечание. Присвоить значение **true** можно только при вызове этого метода для пользователя. |
+| securityEnabledOnly | Логическое | **true** (указывает, что должны быть возвращены только группы безопасности, в которых состоит пользователь) и **false** (указывает, что должны быть возвращены все группы, в которых состоит пользователь). Примечание. Присвоить значение **true** можно только при вызове этого метода для пользователя. |
 
 ## <a name="response"></a>Отклик
 
@@ -68,7 +70,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
 Content-length: 33
 
@@ -103,10 +105,13 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

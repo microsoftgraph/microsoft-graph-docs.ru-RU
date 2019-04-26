@@ -3,14 +3,16 @@ title: Тип ресурса Имажеинфо
 description: Сложный тип для представления свойства " **атрибуты** " в части висуалинфо объекта Activity.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 112b1dc3d1db45f3fe470c1c21d483b09c00202c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6ffdacefb11f583f8c9529a36472a01537643c3c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563313"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344015"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .
 
@@ -20,7 +22,7 @@ ms.locfileid: "32563313"
 |:----|:-----|:-----------|
 |iconUrl | String | Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.|
 |Алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
-|Аддимажекуери | Boolean | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
+|Аддимажекуери | Логический | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,10 +49,13 @@ ms.locfileid: "32563313"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "imageinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

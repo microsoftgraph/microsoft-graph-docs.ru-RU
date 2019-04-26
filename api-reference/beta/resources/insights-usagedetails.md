@@ -4,12 +4,12 @@ description: Сложный тип, содержащий свойства исп
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8a8893f2c5fcb21e2e578eefa4cf5733782db07
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551297"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333535"
 ---
 # <a name="usagedetails-resource-type"></a>Тип ресурса Усажедетаилс
 
@@ -20,6 +20,14 @@ ms.locfileid: "32551297"
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.usageDetails"
+}-->
 
 ```json
 {
@@ -34,11 +42,3 @@ ms.locfileid: "32551297"
 | -------------         |---------------| -------------|
 | lastAccessedDateTime                  | DateTimeOffset        | Дата и время последнего обращения пользователя к ресурсу. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.                      |
 | lastModifiedDateTime              | DateTimeOffset        | Дата и время последнего изменения ресурса пользователем. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.       |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-usagedetails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

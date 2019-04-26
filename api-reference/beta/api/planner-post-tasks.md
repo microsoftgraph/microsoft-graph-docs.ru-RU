@@ -1,17 +1,19 @@
 ---
 title: Создание объекта plannerTask
 description: Используйте этот API, чтобы создать объект **plannerTask**.
-localization_priority: Priority
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f74e41e3c855fd6cf54019e2cfd13e36fce45b7e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 400f40540370580b3d3af7a94368cdc9582d703e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538947"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332531"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API, чтобы создать объект **plannerTask**.
 ## <a name="permissions"></a>Разрешения
@@ -34,7 +36,7 @@ POST /planner/tasks
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON. В качестве свойства **задачи Планировщика** planId необходимо указать идентификатор существующего объекта [plannerPlan](../resources/plannerplan.md).
 
 ## <a name="response"></a>Отклик
@@ -51,7 +53,7 @@ POST /planner/tasks
   "name": "create_plannertask_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/planner/tasks
+POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
 Content-length: 285
 
@@ -68,7 +70,7 @@ Content-length: 285
 }
 ```
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON.
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -109,10 +111,13 @@ Content-length: 677
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

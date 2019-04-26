@@ -4,12 +4,12 @@ description: Папка, содержащая контакты.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe980bc27aed3579a70c52941b1a784696b553e3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543387"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341206"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -26,14 +26,14 @@ ms.locfileid: "32543387"
 |:---------------|:--------|:----------|
 |[Получение contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md). |Получение папки с контактами с помощью идентификатора папки контактов.|
 |[Обновление](../api/contactfolder-update.md) | [contactFolder](contactfolder.md). |Обновление объекта contactFolder. |
-|[Удаление](../api/contactfolder-delete.md) | Нет |Удаление объекта contactFolder. |
+|[Delete](../api/contactfolder-delete.md) | Нет |Удаление объекта contactFolder. |
 |[Список экземпляров childFolders](../api/contactfolder-list-childfolders.md) |Коллекция [contactFolder](contactfolder.md)| Получение коллекции дочерних папок для указанной папки с контактами.|
 |[Создание дочернего элемента contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md).| Создание дочернего объекта contactFolder указанной папки.|
 |[delta](../api/contact-delta.md)|Коллекция [contact](contact.md)| Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.|
 |[Список контактов в папке](../api/contactfolder-list-contacts.md) |Коллекция [contact](contact.md)| Получение коллекции контактов из стандартной папки с контактами для пользователя, выполнившего вход (`.../me/contacts`), или из указанной папки с контактами.|
 |[Создание контакта в папке](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.|
 |**Расширенные свойства**| | |
-|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md).  |Создание одного или несколько расширенных свойств с одним значением в новом или существующем экземпляре contactFolder.   |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md).  |Создание одного или несколько расширенных свойств с одним значением в новом или существующем экземпляре contactFolder.   |
 |[Получение contactFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md). | Получение экземпляров contactFolder, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md). | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем экземпляре contactFolder.  |
 |[Получение contactFolder с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md). | Получение экземпляра contactFolder, который содержит расширенное свойство с несколькими значениями, при помощи `$expand`. |
@@ -46,7 +46,7 @@ ms.locfileid: "32543387"
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 |wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolders|Коллекция [ContactFolder](contactfolder.md)|Коллекция дочерних папок в папке. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -82,7 +82,7 @@ ms.locfileid: "32543387"
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 
@@ -95,8 +95,6 @@ ms.locfileid: "32543387"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contactfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

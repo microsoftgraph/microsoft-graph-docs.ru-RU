@@ -2,12 +2,12 @@
 title: Тип ресурса Филтероператорсчема
 description: Описывает оператор, который можно использовать в фильтре.
 localization_priority: Normal
-ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f0ada4aaa02efa2484ffa75d88b2c8256f15fe8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581739"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342867"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Тип ресурса Филтероператорсчема
 
@@ -55,8 +55,6 @@ ms.locfileid: "32581739"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-filteroperatorschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

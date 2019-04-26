@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ra
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1bcd24913ecbee055fe2f7926d1102bd5cb7ec43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c527b336c3cd9fd69d9e7af00ba73a8bb43eb011
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538311"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331890"
 ---
 # <a name="get-rangeborder"></a>Получение объекта RangeBorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538311"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/borders(<sideIndex>)
+GET /workbook/names/{name}/range/format/borders(<sideIndex>)
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
 ```
@@ -44,9 +44,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,14 +55,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex
   "name": "get_rangeborder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders(<sideIndex>)
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,8 +87,6 @@ Content-length: 136
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangeborder-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

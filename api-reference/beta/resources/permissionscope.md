@@ -2,12 +2,12 @@
 title: Тип ресурса permissionScope
 description: Представляет область делегированного разрешения OAuth 2,0. Указанные делегированные области разрешений OAuth 2,0 могут запрашиваться клиентскими приложениями (через коллекцию **рекуиредресаурцеакцесс** для объекта Application) при вызове приложения-ресурса. Свойство **oauth2Permissions** объекта ServicePrincipal и сущности приложения является коллекцией **OAuth2Permission**.
 localization_priority: Normal
-ms.openlocfilehash: 00629a6e123ef19290d3c1bd4797e4bab3ce95c0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6f45d2eb0645991eb55db8ef3338e3b6fcf300a7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568182"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344997"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
@@ -21,7 +21,7 @@ ms.locfileid: "32568182"
 |:---------------|:--------|:----------|
 |Админконсентдескриптион|String| Текст справки по разРешениям, который отображается в качестве согласия администратора и взаимодействия с назначением приложений. |
 |Админконсентдисплайнаме|String| Отображаемое имя разрешения, которое отображается в качестве согласия администратора и взаимодействия с назначением приложений. |
-|id|Guid| Уникальный идентификатор разрешения области в коллекции oauth2Permissions. |
+|id|GUID| Уникальный идентификатор разрешения области в коллекции oauth2Permissions. |
 |isEnabled|Boolean| При создании или обновлении разрешения для этого свойства должно быть задано **значение true** (значение по умолчанию). Чтобы удалить разрешение, необходимо сначала задать для этого свойства значение **false**. В этот момент разрешение может быть удалено из последующего вызова. |
 |основания|String| Для внутреннего использования. |
 |type|String| Указывает, может ли пользователь иметь разрешение на доступ к области, а также о том, является ли оно разрешением, которое должно быть отослано администратором компании. Возможные значения: *User* или *Admin*. |
@@ -65,8 +65,6 @@ ms.locfileid: "32568182"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/permissionscope.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

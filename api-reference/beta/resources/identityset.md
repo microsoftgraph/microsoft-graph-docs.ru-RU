@@ -4,19 +4,22 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Identity
 localization_priority: Normal
-ms.openlocfilehash: 10b39bd5747e10ea4340bb5b4c54df0f94eb4229
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b1570fc0ec0a6e28bab569dfae6992675d8b3537
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547146"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333662"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса Identity
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Ресурс **Identity** является коллекцией с ключом для ресурсов [Identity](identity.md) .
+
 Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,12 +4,12 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c5868788159f0602c1f8a263138c7ce9107c2c94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b1d481d43374d8611f221fb5c3047cdc9cd9148
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535527"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328240"
 ---
 # <a name="bookingappointment-resource-type"></a>Тип ресурса Букингаппоинтмент
 
@@ -25,8 +25,8 @@ ms.locfileid: "32535527"
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |  Коллекция [букингаппоинтмент](bookingappointment.md) | Получение списка объектов **букингаппоинтмент** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 |[Создание Букингаппоинтмент](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Создание нового **букингаппоинтмент** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингаппоинтмент](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Чтение свойств и связей объекта **букингаппоинтмент** .|
-|[Обновление](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Обновление объекта **букингаппоинтмент** . |
-|[Удаление](../api/bookingappointment-delete.md) | Нет |Удаление объекта **букингаппоинтмент** . |
+|[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Обновление объекта **букингаппоинтмент** . |
+|[Delete](../api/bookingappointment-delete.md) | Нет |Удаление объекта **букингаппоинтмент** . |
 |[Отмена](../api/bookingappointment-cancel.md)|Нет| Отмена объекта **букингаппоинтмент** .|
 
 ## <a name="properties"></a>Свойства
@@ -57,14 +57,14 @@ ms.locfileid: "32535527"
 |Сервицелокатион|[location](location.md)|Место доставки службы.|
 |Служба|String|Имя **букингсервице** , связанного с этой встречей.<br>Это свойство является необязательным при создании новой встречи. Если он не указан, то он вычисляется из службы, связанной с встречей, с помощью свойства **serviceId** .|
 |Сервиценотес|String|Заметки из [букингстаффмембер](bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
-|Стаффмемберидс|Коллекция строк|Идентификатор каждого [букингстаффмембер](bookingstaffmember.md) , запланированного в этой встрече.|
+|Стаффмемберидс|Коллекция String|Идентификатор каждого [букингстаффмембер](bookingstaffmember.md) , запланированного в этой встрече.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается встреча.|
 
 ## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -118,8 +118,6 @@ ms.locfileid: "32535527"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingappointment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

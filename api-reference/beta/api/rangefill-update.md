@@ -4,12 +4,12 @@ description: Обновление свойств объекта rangefill.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 87214cf944c5f0aadd26189dcdfba6383cb6cb65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a9855d02702cd33d4319b2fb8f18bd9c98ebfce
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546253"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331826"
 ---
 # <a name="update-rangefill"></a>Обновление объекта rangeFill
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546253"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/fill
+PATCH /workbook/names/{name}/range/format/fill
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
@@ -38,7 +38,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -47,7 +47,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [RangeFill](../resources/rangefill.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукранжефилл](../resources/workbookrangefill.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -56,7 +56,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
   "name": "update_rangefill"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/fill
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 Content-type: application/json
 Content-length: 28
 
@@ -87,8 +87,6 @@ Content-length: 28
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangefill-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

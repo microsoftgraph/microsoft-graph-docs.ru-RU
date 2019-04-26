@@ -2,12 +2,12 @@
 title: Тип ресурса attachment
 description: Вы можете добавить связанное содержимое в событие,
 localization_priority: Normal
-ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5cd02b665e9491ab4cf4b6046571273d88fee7e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535599"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339057"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -36,7 +36,7 @@ ms.locfileid: "32535599"
 |[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
 |[Список вложений задачи Outlook](../api/outlooktask-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для задачи Outlook. |
 |[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md) | Получение списка вложений для записи. |
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление вложения для события, сообщения, задачи Outlook или POST. |
+|[Delete](../api/attachment-delete.md) | Нет |Удаление вложения для события, сообщения, задачи Outlook или POST. |
 
 ## <a name="properties"></a>Свойства
 
@@ -45,7 +45,7 @@ ms.locfileid: "32535599"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип MIME.|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |name|String|Отображаемое имя вложения. Он может не быть фактическим именем файла.|
@@ -89,8 +89,6 @@ ms.locfileid: "32535599"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/attachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

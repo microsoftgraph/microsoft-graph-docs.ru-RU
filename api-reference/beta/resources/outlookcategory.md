@@ -4,12 +4,12 @@ description: Представляет категорию, по которой п
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5124a681cd4dd1f37ef1ecfea250eb6eb2d228a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e937e7f41816c0d0e9e511854d10fc70fe8a27b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568661"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341797"
 ---
 # <a name="outlookcategory-resource-type"></a>Тип ресурса outlookCategory
 
@@ -61,7 +61,7 @@ ms.locfileid: "32568661"
 | Preset24 | Темно-клюквенный |
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже показано представление ресурса в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -86,7 +86,7 @@ ms.locfileid: "32568661"
 |[Получение категории](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Получение свойств и отношений указанного объекта **outlookCategory**.|
 |[Создание](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Создание объекта **outlookCategory** в основном списке категорий пользователя.|
 |[Обновление](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Обновление перезаписываемого свойства **color** указанного объекта **outlookCategory**. |
-|[Удаление](../api/outlookcategory-delete.md) | Нет |Удаление указанного объекта **outlookCategory**. |
+|[Delete](../api/outlookcategory-delete.md) | Нет |Удаление указанного объекта **outlookCategory**. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -4,14 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: c90dd8889d07f903a7d3c79d9e4e5db3b9f2a30b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf35a3cbeee8003db8ed121e5bafbc88df098d9a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535419"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341246"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **contentType** представляет _тип контента_ в SharePoint.
 Типы контента позволяют задать набор столбцов, которые должны присутствовать в каждом элементе [**listItem**][listItem] в [**списке**][list].
@@ -22,10 +24,7 @@ ms.locfileid: "32535419"
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса **contentType** в формате JSON.
-<!-- {
-  "blockType": "resource",
- "baseType": "microsoft.graph.entity",
- "@odata.type": "microsoft.graph.contentType" } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
 ```json
 {
@@ -56,7 +55,7 @@ ms.locfileid: "32535419"
 | **name**          | string               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.
 | **parentId**      | string               | Уникальный идентификатор типа контента.
-| **readOnly**      | логический              | Если это свойство имеет значение `true`, вам не удастся изменить тип контента. Чтобы изменить тип контента, потребуется сначала присвоить этому свойству значение `false`.
+| **readOnly**      | boolean              | Если это свойство имеет значение `true`, вам не удастся изменить тип контента. Чтобы изменить тип контента, потребуется сначала присвоить этому свойству значение `false`.
 | **sealed**        | boolean              | Если это свойство имеет значение `true`, пользователям не удастся изменить тип контента. Кроме того, вам не удастся изменить тип контента с помощью операции сдвига вниз. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.
 
 ## <a name="relationships"></a>Связи
@@ -72,10 +71,13 @@ ms.locfileid: "32535419"
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": []
+}
+-->

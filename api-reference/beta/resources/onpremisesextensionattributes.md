@@ -2,12 +2,12 @@
 title: Тип ресурса onPremisesExtensionAttributes
 description: Свойство **onPremisesExtensionAttributes** объекта user содержит пятнадцать свойств настраиваемого атрибута расширения. Для пользователя **onPremisesSyncEnabled** этот набор свойств размещается в локальной службе Active Directory и синхронизируется с Azure AD и доступен только для чтения. Для пользователя, предназначенного только для облачного облака (где **onPremisesSyncEnabled** имеет значение false), эти свойства можно задать при создании или обновлении.
 localization_priority: Normal
-ms.openlocfilehash: f44f71fdcd86d2165289282568a2d7153ccc99b1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14e6d8530e67f40704d1052ef5e66cf9046b883f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568900"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341811"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 

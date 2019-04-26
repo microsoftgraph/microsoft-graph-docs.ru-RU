@@ -4,12 +4,12 @@ description: Добавить или удалить лицензии для по
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ef9946a7ac53a0e0e8b90a31fd4767bcc0549468
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f11582484a4c6ff7be5a0d33da20e7f2b3a392e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548000"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329936"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -45,9 +45,9 @@ POST /users/{id | userPrincipalName}/assignLicense
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить Сервицепланс, связанные с лицензией, задав свойство **дисабледпланс** для объекта [коллекция assignedlicense](../resources/assignedlicense.md) .|
-|removeLicenses|Guid|Коллекция Скуидс, идентифицирующая лицензии, которые требуется удалить.|
+|removeLicenses|Коллекция объектов Guid|Коллекция Скуидс, идентифицирующая лицензии, которые требуется удалить.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и обновленный объект [User](../resources/user.md) в тексте отклика.
 
@@ -93,7 +93,7 @@ Content-length: 185
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 В обоих примерах откликом является обновленный объект пользователя. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -138,8 +138,6 @@ Content-length: 491
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

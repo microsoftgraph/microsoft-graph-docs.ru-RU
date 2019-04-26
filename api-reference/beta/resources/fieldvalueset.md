@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
-ms.openlocfilehash: ed10b586ee55ccd32e81b03bdc6359ee13605877
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f8b193045bdc7c4e0286067c46c31693a66dfb4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506526"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340267"
 ---
 # <a name="fieldvalueset-resource"></a>Ресурс fieldValueSet
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет значения столбца в ресурсе [listItem](listitem.md).
 
@@ -19,8 +21,7 @@ ms.locfileid: "32506526"
 
 Ниже показано представление ресурса **fieldValueSet** в формате JSON.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
-       "baseType": "microsoft.graph.entity", "openType": true } -->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {
@@ -51,10 +52,13 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 В одном запросе вы можете запросить до 12 полей подстановки, а также любое количество "обычных" полей.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet"
-} -->
+  "tocPath": "Resources/FieldValueSet",
+  "suppressions": []
+}
+-->

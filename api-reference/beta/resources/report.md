@@ -4,12 +4,12 @@ description: Microsoft Graph позволяет получить доступ к
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 4799289374df8fbaac8edf7c43514557d193c80d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cc3e8948b3633f5bf48e174c79327214d77d60c3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563177"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343677"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Office 365 в Microsoft Graph
 
@@ -54,11 +54,3 @@ Microsoft Graph позволяет управлять доступом к рес
 - Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/report.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

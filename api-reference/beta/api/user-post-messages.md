@@ -4,12 +4,12 @@ description: С помощью этого API можно создать черн
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4c15bfc0a29909b1e7a7ba27b5ac221c0d11f815
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6178abcae6f7dadde2166f7f3a71bf4915ec245
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544094"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334581"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -60,7 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Message](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 Ниже приведен пример запроса на создание черновика нового сообщения.
 <!-- {
   "blockType": "request",
@@ -88,7 +88,7 @@ Content-type: application/json
 ```
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -371,8 +371,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

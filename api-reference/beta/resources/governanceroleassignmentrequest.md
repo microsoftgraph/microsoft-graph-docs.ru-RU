@@ -2,12 +2,12 @@
 title: Тип ресурса governanceRoleAssignmentRequest
 description: Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 localization_priority: Normal
-ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5d5f34d417b5d5cbd5eca9bb32ad49c17ef70e5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547457"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333691"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>Тип ресурса governanceRoleAssignmentRequest
 
@@ -22,21 +22,21 @@ ms.locfileid: "32547457"
 | Метод          |Возвращаемый тип  |Описание|
 |:------------|:--------|:--------|
 |[Получение](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получение запроса на назначение роли, указанного по ИДЕНТИФИКАТОРу.  
-|[List](../api/governanceroleassignmentrequest-list.md) | Коллекция [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получение запросов на назначение ролей ресурсу.|
+|[Список](../api/governanceroleassignmentrequest-list.md) | Коллекция [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получение запросов на назначение ролей ресурсу.|
 |[Создание](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Создание запроса на управление жизненным циклом существующего или нового назначения роли.|
 |[Отмена](../api/governanceroleassignmentrequest-cancel.md)|  |Отмена ожидающего запроса на назначение роли.|
-|[Обновление](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Администраторы обновляют решения в запросах, если запросы находятся в состоянии `PendingAdminDecision`.|
+|[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Администраторы обновляют решения в запросах, если запросы находятся в состоянии `PendingAdminDecision`.|
 
 ## <a name="properties"></a>Свойства
 | Свойство                  | Тип          |Описание|
 |:--------------------------|:--------------|:----------|
-|id                         |String         |Идентификатор запроса на назначение роли.|
+|id                         |Строка         |Идентификатор запроса на назначение роли.|
 |resourceId                 |String         |Обязательный. Идентификатор ресурса, с которым связан запрос назначения роли.|
 |Роледефинитионид           |String         |Обязательный. Идентификатор определения роли, с которым связан запрос назначения роли.|
 |Субжектид                  |String         |Обязательный. Идентификатор субъекта, с которым связан запрос назначения роли.|
 |type                       |String         |Обязательный. Представляет тип операции для назначения роли. Значение может быть <ul><li>`AdminAdd`: Администраторы Назначение пользователям и группам ролей;</li><li>`UserAdd`: Пользователи активируют подходящие назначения;</li><li> `AdminUpdate`: Администраторы изменение существующих назначений ролей</li><li>`AdminRemove`: Администраторы удалять пользователей и группы из ролей;<li>`UserRemove`: Пользователи деактивируют активные назначения;<li>`UserExtend`: Пользователи запрашивают, чтобы расширить их назначения с истекшим сроком действия;</li><li>`AdminExtend`: Администраторы расширяют назначения с истекающим сроком действия.</li><li>`UserRenew`: Пользователи запрашивают обновление назначений с истекшим сроком действия;</li><li>`AdminRenew`: Администраторы расширяют назначения с истекающим сроком действия.</li></ul>|
 |Ассигнментстате|String  |Обязательный. Состояние назначения. Значение может быть <ul><li> `Eligible`для подходящего назначения</li><li> `Active`— Если он напрямую назначается `Active` администраторами или активирован в соответствии с подходящими пользователями.</li></ul>|
-|Рекуестеддатетиме          |DateTimeOffset |Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Рекуестеддатетиме          |DateTimeOffset |Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Диспетчер                   |[governanceSchedule](governanceschedule.md)|Объект расписания для запроса на назначение роли.|
 |причиной                     |String         |Сообщение, предоставленное пользователями и администраторами при создании запроса о том, почему это необходимо.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |Состояние запроса на назначение роли.|
@@ -44,19 +44,20 @@ ms.locfileid: "32547457"
 
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип                                |Описание|
 |:-------------|:----------------------------------|:----------|
 |resource      |[governanceResource](../resources/governanceresource.md)            |Только для чтения. Ресурс, на который запрашивается запрос. |
 |roleDefinition|[Говернанцероледефинитион](../resources/governanceroledefinition.md)|Только для чтения. Определение роли, которому назначен запрос. |
 |subject       |[Говернанцесубжект](../resources/governancesubject.md)|Только для чтения. Участник группы "пользователь/группа".|
 
-### <a name="json-representation"></a>Представление в формате JSON
+### <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -89,8 +90,6 @@ ms.locfileid: "32547457"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

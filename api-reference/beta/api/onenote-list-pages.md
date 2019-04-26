@@ -4,16 +4,18 @@ description: Получение списка объектов Page.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 4717428dc7b45d893993dd366eb33137000d3bb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe4b53c51f594c9ddd3124d5c3917efda3447edb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540403"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333060"
 ---
 # <a name="list-pages"></a>Список страниц
 
-Получение списка объектов [Page](../resources/page.md) .
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получение списка объектов [Page](../resources/onenotepage.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -49,13 +51,13 @@ GET /sites/{id}/onenote/pages
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Page](../resources/page.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [оненотепаже](../resources/onenotepage.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/pages
+GET https://graph.microsoft.com/beta/me/onenote/pages
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "ignored" } -->
@@ -69,6 +71,7 @@ Content-length: 393
     {
       "title": "title-value",
       "createdByAppId": "createdByAppId-value",
+      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
         "oneNoteClientUrl": {
           "href": "href-value"
@@ -87,10 +90,13 @@ Content-length: 393
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List pages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедаппровал
 description: Представляет утверждение, запрошенное в результате привилегированного управления удостоверениями для доступа к роли.
 localization_priority: Normal
-ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 754fcd9b61321db1675408172c945557e38dc0e0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563659"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344240"
 ---
 # <a name="privilegedapproval-resource-type"></a>Тип ресурса Привилежедаппровал
 
@@ -43,7 +43,7 @@ ms.locfileid: "32563659"
 ## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
+|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускает значение null.|
 |Request|[Привилежедролеассигнментрекуест](privilegedroleassignmentrequest.md)| Только для чтения. Запрос на назначение роли для этого объекта утверждения|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,8 @@ ms.locfileid: "32563659"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedApproval"
 }-->
 
@@ -82,8 +84,6 @@ ms.locfileid: "32563659"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedapproval.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

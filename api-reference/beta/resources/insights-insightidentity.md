@@ -4,12 +4,12 @@ description: Сложный тип, содержащий свойства общ
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8718ab248dada75f04d92d6a8717dd4f43ee8106
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549575"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333598"
 ---
 # <a name="insightidentity"></a>insightIdentity
 

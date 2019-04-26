@@ -4,12 +4,12 @@ description: Обновляйте несколько индикаторов си
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 91020b533b621c1ba77b2f839d4e6ffd8d7ee8ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5831c09a8ac01673b9cf5e37d3c0ac00e1350a2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537043"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335296"
 ---
 # <a name="tiindicator-updatetiindicators"></a>Тииндикатор: Упдатетииндикаторс
 
@@ -49,7 +49,7 @@ POST /security/tiIndicators/updateTiIndicators
 |:-------------|:------------|:------------|
 |значение|Коллекция Тииндикатор| Коллекция **тииндикаторс** , которую требуется обновить. У каждой сущности должен быть **идентификатор** и другие редактируемые свойства, которые необходимо обновить.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.
 
@@ -62,7 +62,8 @@ POST /security/tiIndicators/updateTiIndicators
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_updatetiindicators"
+  "name": "tiindicator_updatetiindicators",
+  "isCollection":true
 }-->
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators
@@ -100,6 +101,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

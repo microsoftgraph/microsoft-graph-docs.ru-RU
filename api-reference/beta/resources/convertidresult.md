@@ -2,12 +2,12 @@
 title: Тип ресурса Конвертидресулт
 description: Результат преобразования формата идентификатора, выполняемого функцией Транслатиксчанжеидс.
 localization_priority: Normal
-ms.openlocfilehash: db28172d009ee8a8a39b7e02733d893dc20a81e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5981f75ee071777f9119d0db2c0078153a160180
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535393"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341043"
 ---
 # <a name="convertidresult-resource-type"></a>Тип ресурса Конвертидресулт
 
@@ -23,7 +23,7 @@ ms.locfileid: "32535393"
 | targetId | String | Преобразованный идентификатор. Это значение отсутствует, если произошел сбой преобразования. |
 | Еррордетаилс | [Женерицеррор](genericerror.md) | Объект Error, указывающий причину сбоя преобразования. Это значение отсутствует, если преобразование выполнено успешно. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -45,11 +45,3 @@ ms.locfileid: "32535393"
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/convertidresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

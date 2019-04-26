@@ -2,12 +2,12 @@
 title: Получение объекта signIn
 description: Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
 localization_priority: Priority
-ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537295"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335803"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
@@ -45,8 +45,7 @@ GET /auditLogs/signIns/{id}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http

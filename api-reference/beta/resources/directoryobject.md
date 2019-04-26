@@ -4,12 +4,12 @@ description: Представляет объект Azure Active Directory. Ти�
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3364af6afc4a8bf1661186a26e0f741abb6bc232
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507814"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340856"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -31,8 +31,8 @@ ms.locfileid: "32507814"
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь, группа или объект каталога. Это транзитивная проверка.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная проверка. |
 |[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
-|[delta](../api/directoryobject-delta.md)|Коллекция directoryObject| Получение добавочных изменений для объектов каталога. Поддерживает фильтрацию по производному типу. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
+|[delta](../api/directoryobject-delta.md)|Коллекция [directoryObject](directoryobject.md)| Получение добавочных изменений для объектов каталога. Поддерживает фильтрацию по производному типу. |
 
 ## <a name="properties"></a>Свойства
 
@@ -54,7 +54,8 @@ ms.locfileid: "32507814"
 
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "openType": true
 }-->
 
 ```json
@@ -73,8 +74,6 @@ ms.locfileid: "32507814"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: Тип ресурса Говернанцерулесеттинг
 description: Представляет правила, из которых состоят параметры ролей.
 localization_priority: Normal
-ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 433fc0d3ab3a524b86bbf1fc46dbe5185549473b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547461"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333732"
 ---
 # <a name="governancerulesetting-resource-type"></a>Тип ресурса Говернанцерулесеттинг
 
@@ -22,7 +22,7 @@ ms.locfileid: "32547461"
 |Рулеидентифиер|String        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule``.|
 |setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Параметер_наме: Параметер_валуе. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -49,8 +49,6 @@ ms.locfileid: "32547461"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governancerulesetting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

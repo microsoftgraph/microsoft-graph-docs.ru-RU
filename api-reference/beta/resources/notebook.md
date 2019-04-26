@@ -4,12 +4,12 @@ description: Записная книжка OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 24e9a7a4b87a59af27166121aff2847f5f15d894
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1d79ca41a357206f8c19568082bf2833a60089c4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459131"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342172"
 ---
 # <a name="notebook-resource-type"></a>Тип ресурса для записной книжки
 
@@ -23,6 +23,7 @@ ms.locfileid: "32459131"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "sectionGroups",
     "sections"
@@ -65,23 +66,23 @@ ms.locfileid: "32459131"
 |Self|String|Конечная точка, где можно получить сведения о записной книжке. Только для чтения.|
 |userRole|String|Возможные значения: `Owner`, `Contributor`, `Reader`, `None`. Owner — это доступ к записной книжке на уровне владельца. Участник представляет доступ к записной книжке для чтения и записи. Читатель предоставляет доступ только для чтения к записной книжке. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|sectionGroups|Коллекция [sectionGroup](sectiongroup.md)|Группы разделов в записной книжке. Только для чтения. Допускается значение null.|
-|sections|Коллекция [section](section.md)|Разделы записной книжки. Только для чтения. Допускается значение null.|
+|sectionGroups|Коллекция [sectionGroup](sectiongroup.md)|Группы разделов в записной книжке. Только для чтения. Допускает значение null.|
+|sections|Коллекция [оненотесектион](onenotesection.md)|Разделы записной книжки. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Вывод записной книжки](../api/notebook-get.md) | [Notebook](notebook.md) |Прочитайте свойства и связи записной книжки.|
+|[Вывод записной книжки](../api/notebook-get.md) | [записной книжки](notebook.md) |Прочитайте свойства и связи записной книжки.|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Коллекция [recentNotebook](recentnotebook.md) | Получите коллекцию записных книжек, которые недавно открывал пользователь. |
-|[Жетнотебукфромвебурл](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | Получение свойств и связей объекта записной книжки с помощью URL-пути. |
-|[Создание группы разделов](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Создание группы разделов путем отправки в коллекцию sectionGroups в указанной записной книжке.|
-|[Список групп разделов](../api/notebook-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной записной книжке.|
-|[Создание раздела](../api/notebook-post-sections.md) |[Section](section.md)| Создание раздела путем публикации в коллекции разделов в указанной записной книжке.|
-|[Вывод списка разделов](../api/notebook-list-sections.md) |Коллекция [section](section.md)| Получение коллекции разделов в указанной записной книжке.|
+|[Жетнотебукфромвебурл](../api/notebook-getnotebookfromweburl.md) | [записной книжки](notebook.md) | Получение свойств и связей объекта записной книжки с помощью URL-пути. |
+|[Создание группы разделов](../api/notebook-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Создание группы разделов путем отправки в коллекцию sectionGroups в указанной записной книжке.|
+|[Перечисление групп разделов](../api/notebook-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной записной книжке.|
+|[Создание раздела](../api/notebook-post-sections.md) |[Оненотесектион](onenotesection.md)| Создание раздела путем публикации в коллекции разделов в указанной записной книжке.|
+|[Перечисление разделов](../api/notebook-list-sections.md) |Коллекция [оненотесектион](onenotesection.md)| Получение коллекции разделов в указанной записной книжке.|
 |[Включеныcopynotebook](../api/notebook-copynotebook.md)| Нет | Копирует записную книжку.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -93,8 +94,6 @@ ms.locfileid: "32459131"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/notebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

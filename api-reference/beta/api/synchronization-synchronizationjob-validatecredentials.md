@@ -2,12 +2,12 @@
 title: 'Синчронизатионжоб: Валидатекредентиалс'
 description: Убедитесь, что учетные данные действительны в клиенте.
 localization_priority: Normal
-ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4be9317f753865fdb956e58566ec1302d1542de5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537141"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330105"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 
@@ -43,7 +43,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 |Усесаведкредентиалс|Логический|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
 |записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, `useSavedCredentials` если параметр `true`имеет значение.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -87,8 +87,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

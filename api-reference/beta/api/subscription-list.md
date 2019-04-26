@@ -3,12 +3,12 @@ title: Перечисление подписок
 description: " в приведенных ниже сценариях представлены подробные сведения."
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 20aad712bc49f91bec58a67c0c66ef76bf4653e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ffcf78c7df28faba22b92a7389f473f0ea91613
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537092"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335840"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -24,7 +24,7 @@ ms.locfileid: "32537092"
 |:---------------- |:-------------------------------------------- |
 | [Делегированный](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
 | [Делегированный](/graph/auth-v2-user) (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отКлика основываются на контексте вызывающего приложения. Ниже приведен краткий обзор типичных сценариев.
 
@@ -86,13 +86,13 @@ GET /subscriptions
 GET https://graph.microsoft.com/beta/subscriptions
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Note: ответ, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -128,9 +128,7 @@ Content-length: 586
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/subscription-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

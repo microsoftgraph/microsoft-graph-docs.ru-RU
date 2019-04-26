@@ -2,12 +2,12 @@
 title: Обзор API журнала аудита Azure AD
 description: Azure Active Directory (Azure AD) отслеживает действия пользователя, регистрирует показатели и создает отчеты журнала аудита, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные, лежащие в основе этих отчетов, и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
 localization_priority: Priority
-ms.openlocfilehash: 89be0007ae6c13fb48ba165ca991f5dfa9d9b9cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8bda9aff36ad8b46fbec3096008c2d5227058ef1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543897"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339087"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
 
@@ -65,11 +65,3 @@ Azure AD предоставляет два типа журналов актив�
 - Ознакомьтесь с примерами журналов [аудита](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) и [входа](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Изучите действия и ресурс [directoryAudit](directoryaudit.md).
 - Изучите действия и ресурс [signIn](signin.md). 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

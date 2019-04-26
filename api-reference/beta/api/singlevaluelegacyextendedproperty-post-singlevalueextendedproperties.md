@@ -1,15 +1,15 @@
 ---
-title: Создание однозначного расширенного свойства
+title: Создание расширенного свойства с одним значением
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
-ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 193cf8608829e2f4c06f49fa9675b7384941e7e7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545217"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330993"
 ---
-# <a name="create-single-value-extended-property"></a>Создание однозначного расширенного свойства
+# <a name="create-single-value-extended-property"></a>Создание расширенного свойства с одним значением
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "32545217"
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md). 
 - [event](../resources/event.md)
-- [mailFolder](../resources/mailfolder.md);
+- [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Задача Outlook](../resources/outlooktask.md)
 - [Папка задач Outlook](../resources/outlooktaskfolder.md)
@@ -46,7 +46,7 @@ ms.locfileid: "32545217"
 | [calendar](../resources/calendar.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [post](../resources/post.md). | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
-| [mailFolder](../resources/mailfolder.md); | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [Задача Outlook](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [Папка задач Outlook](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
@@ -177,7 +177,7 @@ PATCH /groups/{id}/events/{id}
 
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 
 Первый пример показывает создание нового события и расширенного свойства с одним значением с помощью одной и той же операции POST. Помимо свойств, которые вы обычно указываете для нового события, тело запроса включает коллекцию **singleValueExtendedProperties**, которая содержит одно расширенное свойство с одним значением, и следующие данные для этого свойства:
 
@@ -268,9 +268,7 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

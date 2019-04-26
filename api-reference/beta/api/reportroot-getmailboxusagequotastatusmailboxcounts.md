@@ -4,12 +4,12 @@ description: Узнайте, сколько почтовых ящиков пол
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 2ed01152d4670b0bcb1ebccab1e12302c5bb19fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f409857a2e4743e4b49a8b8080cf56aad0d94b26
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546127"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331857"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
@@ -63,7 +63,7 @@ URL-адреса для скачивания, для которых выполн
 
 CSV-файл содержит столбцы со следующими заголовками:
 
-- Report Refresh Date (дата обновления отчета)
+- "Report Refresh Date" (Дата обновления отчета);
 - Under Limit (ограничение не превышено)
 - Warning Issued (выведено предупреждение)
 - Send Prohibited (отправка запрещена)
@@ -172,11 +172,3 @@ Content-Length: 311
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getmailboxusagequotastatusmailboxcounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

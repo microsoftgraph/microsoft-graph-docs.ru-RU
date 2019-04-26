@@ -4,12 +4,12 @@ description: Удалите несколько индикаторов систе
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 49475f15520f02cc36bb1bf37af9a5849a8ee245
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5ceaa7e7c0402719b8ee202053da54ad235cc28
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544679"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335313"
 ---
 # <a name="tiindicator-deletetiindicators"></a>Тииндикатор: Делететииндикаторс
 
@@ -47,9 +47,9 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция строк| Коллекция Тииндикатор `id`s, которую необходимо удалить. |
+|значение|Коллекция String| Коллекция Тииндикатор `id`s, которую необходимо удалить. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика.
 
@@ -94,6 +94,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

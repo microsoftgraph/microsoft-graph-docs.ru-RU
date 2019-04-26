@@ -4,12 +4,12 @@ description: 'Опубликуйте приложение в каталоге п
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7acd916aa04200c626d8045e7da5a6d00be8a951
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3560faff90e02da77e7a3a5a55dba4ce1ecf87d9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544561"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335309"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений Организации
 
@@ -46,7 +46,7 @@ POST /appCatalogs/teamsApps
 
 Полезные данные манифеста ZIP Teams. Для ZIP-файла приложения Teams [в разделе Create a App Package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [теамскаталогапп](../resources/teamsapp.md) .
 
@@ -78,11 +78,3 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,15 +4,16 @@ description: Правило, которое применяется к сообщ
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 790968563acfe7ed1fb760839454957bb2ac0ecb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d74d4c6a5121355113a883c5c8096420986b6549
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457125"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342263"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Правило, которое применяется к сообщениям в папке "Входящие" пользователя.
 
@@ -28,9 +29,9 @@ ms.locfileid: "32457125"
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
 | displayName | String | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
-| hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
-| id |Строка|Уникальный идентификатор правила. Только для чтения.|
-| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
+| hasError | Логический | Указывает, является ли правило ошибкой. Только для чтения. |
+| id |String|Уникальный идентификатор правила. Только для чтения.|
+| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
@@ -42,7 +43,6 @@ ms.locfileid: "32457125"
   "blockType": "resource",
   "optionalProperties": [
    ],
-   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 
@@ -68,14 +68,17 @@ ms.locfileid: "32457125"
 |[Получение правила](../api/messagerule-get.md) | [messageRule](messagerule.md) |Считывает свойства и отношения объекта **messageRule**.|
 |[Создание](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Создает объект **messageRule**, определяя набор условий и действий.|
 |[Обновление](../api/messagerule-update.md) | [messageRule](messagerule.md) |Изменяет записываемые свойства объекта **messageRule** и сохраняет изменения. |
-|[Удаление](../api/messagerule-delete.md) | Нет |Удаляет указанный объект **messageRule**. |
+|[Delete](../api/messagerule-delete.md) | Нет |Удаляет указанный объект **messageRule**. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "messageRule resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

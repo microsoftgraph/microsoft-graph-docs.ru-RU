@@ -4,14 +4,16 @@ description: Представляет запись TXT, добавленную �
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4bdcddc0ec81d8a7fc76e2113155fdc7ee871161
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14280f7ddaa172960a269a22255db4ea3e44dc61
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543142"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334510"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса Домаинднсткстрекорд
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -24,7 +26,7 @@ ms.locfileid: "32543142"
 |id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения. |
 |Переключатель|Логический| Если этот параметр имеет значение false, запись TXT должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
 |label|String| Значение, используемое при настройке свойства *Name* записи TXT на узле DNS.|
-|recordType|String| Тип записи DNS. Значение всегда является *txt*. Ключ |
+|recordType|String| Тип записи DNS. Значение всегда является *txt*. Key |
 |Суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи TXT.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |text|String| Значение, используемое при настройке свойства *Text* на узле DNS. |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
@@ -33,12 +35,11 @@ ms.locfileid: "32543142"
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -47,6 +48,7 @@ ms.locfileid: "32543142"
 
 ```json
 {
+  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -60,10 +62,13 @@ ms.locfileid: "32543142"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsTxtRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

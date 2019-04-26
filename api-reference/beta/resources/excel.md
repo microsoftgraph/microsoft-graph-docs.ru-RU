@@ -4,12 +4,12 @@ description: 'Можно использовать Microsoft Graph, чтобы р
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 8e054e884fdc70130b9a39731a0b2641d69689dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fbb07f14f9cd43212109fdee45171ac09bbdd64d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542983"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333906"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -65,7 +65,7 @@ authorization: Bearer {access-token}
 Если для параметра `persistChanges` установлено значение `false`, возвращается идентификатор непостоянного сеанса.  
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -110,7 +110,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -203,7 +203,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -224,7 +224,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -254,7 +254,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -288,7 +288,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -314,7 +314,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -322,7 +322,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#chart",
-  "@odata.type": "#microsoft.graph.chart",
+  "@odata.type": "#microsoft.graph.workbookChart",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL')/workbook/worksheets(%27%7B00000000-0001-0000-0000-000000000000%7D%27)/charts(%27%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D%27)",
   "height": 216.0,
   "id": "{2D421098-FA19-41F7-8528-EE7B00E4BB42}",
@@ -378,7 +378,7 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -397,7 +397,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -417,7 +417,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -447,7 +447,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -474,7 +474,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -564,7 +564,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -679,7 +679,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -712,7 +712,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -749,7 +749,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -764,7 +764,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -779,7 +779,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
@@ -804,7 +804,7 @@ workbook-session-id: {session-id}
 ```
 
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -829,7 +829,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -845,7 +845,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -863,7 +863,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -872,7 +872,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -975,7 +975,7 @@ content-type: application/json;odata.metadata
 
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#range",
-  "@odata.type": "#microsoft.graph.range",
+  "@odata.type": "#microsoft.graph.workbookRange",
   "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/worksheets(%27%7B00000000-0001-0000-0300-000000000000%7D%27)/range(address=%27test!A1:B2%27)",
   "address": "test!A1:B2",
   "addressLocal": "test!A1:B2",
@@ -1077,7 +1077,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -1094,7 +1094,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1283,7 +1283,7 @@ workbook-session-id: {session-id}
 ```
 
 
-##### <a name="response"></a>Ответ 
+##### <a name="response"></a>Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1322,11 +1322,3 @@ Content-Type: application/json
 }
 ```
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/excel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

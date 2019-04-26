@@ -4,12 +4,12 @@ description: Тип участника.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a138267529127562fa9df42d8b20a985939b50e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568663"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345021"
 ---
 # <a name="participant-resource-type"></a>Тип ресурса участника
 
@@ -25,7 +25,7 @@ ms.locfileid: "32568663"
 | [Конфигуремиксер](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Настройка микшера звука участника.            |
 | [Приглашение](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Приглашение участника на звонок.                 |
 | [Отключение звука для участника](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Отключение выключения участника в вызове.                     |
-| [Отключение звука всех участников](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Отключение выключения всех участников собрания.         |
+| [Отключение выключения всех участников](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Отключение выключения всех участников собрания.         |
 
 ## <a name="properties"></a>Свойства
 
@@ -39,7 +39,7 @@ ms.locfileid: "32568663"
 | метаданных             | String                                   | Большой двоичный объект данных, предоставляемый участником в списке     |
 | Рекордингинфо        | [Рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

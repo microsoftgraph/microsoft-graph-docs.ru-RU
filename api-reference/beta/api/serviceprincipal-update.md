@@ -2,12 +2,12 @@
 title: Обновление serviceprincipal
 description: Обновление свойств объекта serviceprincipal.
 localization_priority: Normal
-ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9bb3f8b578d3a0e24418f80da693ff317a7cc132
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537532"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331481"
 ---
 # <a name="update-serviceprincipal"></a>Обновление serviceprincipal
 
@@ -33,7 +33,7 @@ PATCH /servicePrincipals/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -43,7 +43,7 @@ PATCH /servicePrincipals/{id}
 |appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
 |appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения.                            **Примечания**: требуется версия 1,5 или более новая, не допускающая значение null.            |
 |appRoles|Аппроле|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в описании свойства **appRoles** для объекта Application **Notes**: требуется версия 1,5 или более новая, не допускающая значение null.            |
-|displayName|String|Отображаемое имя для субъекта-службы.|
+|displayName|Строка|Отображаемое имя для субъекта-службы.|
 |errorUrl|String|            |
 |homepage|String|URL-адрес домашней страницы связанного приложения.|
 |keyCredentials|Кэйкредентиал|Коллекция ключевых учетных данных, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
@@ -97,7 +97,7 @@ Content-length: 391
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -134,8 +134,6 @@ Content-length: 391
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

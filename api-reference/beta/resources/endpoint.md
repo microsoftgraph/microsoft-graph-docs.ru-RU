@@ -2,12 +2,12 @@
 title: Тип ресурса Endpoint
 description: 'Конечные точки представляют URL-адреса ресурсов, связанных с сущностью.  Например, при создании новой группы Office 365 дополнительные ресурсы также создаются в составе группы Office 365. Сюда входят такие сведения, как групповой почтовый ящик для бесед и папка OneDrive группы для документов и файлов. Дополнительные сведения об этих ресурсах группы Office 365, в том числе связанные с ними URL-адреса ресурсов ** , теперь можно прочитать с помощью навигации по конечным точкам в типе ресурса Group. Это позволяет приложениям распознавать эти ресурсы и даже внедрять взаимодействие с URL-АДРЕСами ресурсов в своих собственных интерфейсах. '
 localization_priority: Normal
-ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 474da77d10d9b433dd6d4914f9b75812e040a9e4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542994"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340213"
 ---
 # <a name="endpoint-resource-type"></a>Тип ресурса Endpoint
 
@@ -32,7 +32,7 @@ ms.locfileid: "32542994"
 | Провидерресаурцеид|String| Для групп Office 365 для ресурса задано известное имя ресурса (например, Yammer. Фидурл и т. д.). Значение null не допускается. Только для чтения.|
 | URI            | String  | URL-адрес опубликованного ресурса. Значение null не допускается. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -45,7 +45,7 @@ ms.locfileid: "32542994"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 }-->
 
 ```json
@@ -69,8 +69,6 @@ ms.locfileid: "32542994"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/endpoint.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,14 +2,16 @@
 title: Тип ресурса extension
 description: Абстрактный тип для поддержки открытого типа openTypeExtension в OData 4-й версии.
 localization_priority: Normal
-ms.openlocfilehash: b261ceeff4639b8a602edbb411b34ab19d46ea8e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33238d0addc1b3cc7797fc2a600b7b6195a8d9ea
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542638"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333947"
 ---
 # <a name="extension-resource-type"></a>Тип ресурса extension
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Абстрактный тип для поддержки открытого типа [openTypeExtension](opentypeextension.md) в OData 4-й версии.
 
@@ -18,10 +20,7 @@ ms.locfileid: "32542638"
 Ниже показано представление JSON ресурса.
 
 <!-- {
-  "abstract": "true",
-  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
-  "openType": true,
   "optionalProperties": [
 
   ],
@@ -50,10 +49,13 @@ ms.locfileid: "32542638"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "extension resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: Обновление свойств объекта rangeformat.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2bd576fcb30facd220e9abf7a8a1fee8d22f80a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c0d285a82b34ce06d8a10c784a124cc03519e1c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546173"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331845"
 ---
 # <a name="update-rangeformat"></a>Обновление объекта RangeFormat
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546173"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format
+PATCH /workbook/names/{name}/range/format
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
@@ -38,7 +38,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -51,12 +51,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [RangeFormat](../resources/rangeformat.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукранжеформат](../resources/workbookrangeformat.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
 ### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>Обновляет свойства Format, Fill и Font в трех ячейках таблицы
 
-В приведенных ниже примерах показано, как обновить свойства [RangeFormat](../resources/rangeformat.md), [RangeFill](../resources/rangefill.md) и [RangeFont](../resources/rangefont.md) указанного диапазона.
+В следующих примерах показано, как обновить свойства [воркбукранжеформат](../resources/workbookrangeformat.md), [воркбукранжефилл](../resources/workbookrangefill.md)и [воркбукранжефонт](../resources/workbookrangefont.md) указанного диапазона.
 
 В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.
 
@@ -70,7 +70,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
   "name": "update_rangeformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format
 Content-type: application/json
 
 {
@@ -85,7 +85,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -108,7 +108,7 @@ Content-type: application/json
   "name": "update_rangeformat_font"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/font
 Content-type: application/json
 
 {
@@ -122,7 +122,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -146,7 +146,7 @@ Content-type: application/json
   "name": "update_rangeformat_fill"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$A$1')/format/fill
 Content-type: application/json
 
 {
@@ -158,7 +158,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -176,7 +176,7 @@ Content-type: application/json
   "name": "update_rangeformat_two"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format
 Content-type: application/json
 
 {
@@ -192,7 +192,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -215,7 +215,7 @@ Content-type: application/json
   "name": "update_rangeformat_font_two"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/font
 Content-type: application/json
 
 {
@@ -228,7 +228,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -252,7 +252,7 @@ Content-type: application/json
   "name": "update_rangeformat_fill_two"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format/fill
 Content-type: application/json
 
 {
@@ -264,7 +264,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -283,7 +283,7 @@ Content-type: application/json
   "name": "update_rangeformat_three"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format
 Content-type: application/json
 
 {
@@ -299,7 +299,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -322,7 +322,7 @@ Content-type: application/json
   "name": "update_rangeformat_font_three"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/font
 Content-type: application/json
 
 {
@@ -336,7 +336,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -360,7 +360,7 @@ Content-type: application/json
   "name": "update_rangeformat_fill_three"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill
 Content-type: application/json
 
 {
@@ -372,7 +372,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -394,7 +394,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/rangeformat-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: update_rangeformat_font_three/underline:\r\n       Expected type String but actual was Single. Property: underline, actual value: 'Single'"
   ]
 }
 -->

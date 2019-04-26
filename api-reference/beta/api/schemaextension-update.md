@@ -3,12 +3,12 @@ title: Обновление schemaExtension
 description: Обновление свойств в определении указанного schemaExtension.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: f457609af15716ef2ada3945132afd285fd2394c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 98bf2376eba25a7ed5a0642561b05372aa0e8b58
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537744"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331479"
 ---
 # <a name="update-schemaextension"></a>Обновление schemaExtension
 
@@ -45,7 +45,7 @@ PATCH /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -113,8 +113,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schemaextension-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

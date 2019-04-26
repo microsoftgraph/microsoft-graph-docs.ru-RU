@@ -2,12 +2,12 @@
 title: Тип ресурса patternedRecurrence
 description: Расписание и диапазон повторения.
 localization_priority: Normal
-ms.openlocfilehash: f4ffd62b54eb6d577269b36d0ee3bea0a3a0002c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 063df70dfeeb1d37cfc5e23710108dd4cfc9ae57
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568265"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344938"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
 
@@ -18,10 +18,10 @@ ms.locfileid: "32568265"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|Частота события.|
-|range|[RecurrenceRange](recurrencerange.md)|Продолжительность события.|
+|pattern|[recurrencePattern](recurrencepattern.md)|Частота события.|
+|range|[recurrenceRange](recurrencerange.md)|Продолжительность события.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -50,8 +50,6 @@ ms.locfileid: "32568265"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/patternedrecurrence.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

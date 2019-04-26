@@ -4,12 +4,12 @@ description: Пользователь в системе. Используемы�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d0467ed9ac03a1607d575b6eac5f6b3330b68c3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c415507dc6dc2bfbb2f1410168b97a9e3ced770
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542976"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333957"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "32542976"
 |[Перечисление учебных заведений](../api/educationuser-list-schools.md) |Коллекция [educationSchool](educationschool.md)| Получение коллекции объектов **educationSchool**, для которых пользователь является участником.|
 |[Получение пользователя](../api/educationuser-get-user.md) |[user](user.md)| Получение простого каталога **user**, который соответствует этому объекту **educationUser**.|
 |[Обновление](../api/educationuser-update.md) | [educationUser](educationuser.md)   |Обновление объекта **educationUser**. |
-|[Удаление](../api/educationuser-delete.md) | Нет |Удаление объекта **educationUser**. |
+|[Delete](../api/educationuser-delete.md) | Нет |Удаление объекта **educationUser**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -62,12 +62,12 @@ ms.locfileid: "32542976"
 |userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). Поддерживает параметры $filter и $orderby.
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.          |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classes|Коллекция [educationClass](educationclass.md)| Курсы пользователя. Допускается значение null.|
+|classes|Коллекция [educationClass](educationclass.md)| Курсы пользователя. Допускает значение null.|
 |schools|Коллекция [educationSchool](educationschool.md)| Учебные заведения пользователя. Допускается значение NULL.|
-|assignments| [educationAssignment](educationassignment.md)| Список заданий для пользователя. Допускается значение null.|
+|assignments| [educationAssignment](educationassignment.md)| Список назначений для пользователя. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -75,6 +75,7 @@ ms.locfileid: "32542976"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -96,7 +97,21 @@ ms.locfileid: "32542976"
   "primaryRole": "string",
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "accountEnabled": true,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["string"],
+  "department": "string",
+  "mailNickname": "string",
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "relatedContacts": [{"@odata.type": "microsoft.graph.relatedContact"}],
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
@@ -110,8 +125,6 @@ ms.locfileid: "32542976"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

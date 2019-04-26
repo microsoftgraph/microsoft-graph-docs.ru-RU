@@ -4,12 +4,12 @@ description: Создайте папку задач в группе задач �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 16f54dffc1ff2fff71a22658a2418be99fde7353
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad276f3b1ae55abd64302fa3c0620ecbe712e514
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539650"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332650"
 ---
 # <a name="create-outlooktaskfolder"></a>Создание outlookTaskFolder
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [OutlookTaskFolder](../resources/outlooktaskfolder.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 
@@ -91,8 +91,6 @@ Content-length: 151
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlookuser-post-taskfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

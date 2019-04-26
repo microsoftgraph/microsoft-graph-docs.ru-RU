@@ -4,12 +4,12 @@ description: Вы можете получить высокоуровневое �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1f899c3a60e1c0d66dd3b7e075bf0daf13de0b43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec4cb7d6f533726c1ab8b22bb14f6059c04769ca
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457090"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345140"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 
@@ -26,12 +26,4 @@ ms.locfileid: "32457090"
 | [Получение сведений об учетной записи](../api/reportroot-getonedriveusageaccountdetail.md) | Stream          | [Онедривеусажеаккаунтдетаил](../resources/onedriveusageaccountdetail.md) | Получите сведения об использовании OneDrive с разбивкой по учетным записям. |
 | [Получение количества учетных записей](../api/reportroot-getonedriveusageaccountcounts.md) | Stream          | [Онедривеусажеаккаунткаунтс](../resources/onedriveusageaccountcounts.md) | Отслеживайте, как меняется количество активных сайтов OneDrive для бизнеса. Активным считается сайт, на котором пользователи просматривали, изменяли, добавляли, скачивали, синхронизировали файлы или делились ими. |
 | [Получение количества файлов](../api/reportroot-getonedriveusagefilecounts.md) | Поток          | [Онедривеусажефилекаунтс](../resources/onedriveusagefilecounts.md) | Получение общего количества файлов на всех сайтах и количества активных файлов. Файл считается активным, если он был сохранен, синхронизирован, изменен в указанный период или им поделились в указанный период. |
-| [Получение хранилища](../api/reportroot-getonedriveusagestorage.md) | Stream          | [Ситеусажестораже](../resources/siteusagestorage.md) | Получение сведений о том, как меняется используемый объем хранилища в OneDrive для бизнеса. |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onedrive-usage-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+| [Получение занятого объема хранилища](../api/reportroot-getonedriveusagestorage.md) | Поток          | [Ситеусажестораже](../resources/siteusagestorage.md) | Получение сведений о том, как меняется используемый объем хранилища в OneDrive для бизнеса. |

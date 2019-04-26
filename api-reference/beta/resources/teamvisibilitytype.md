@@ -1,15 +1,15 @@
 ---
-title: Элементы
+title: Members
 description: 'Описывает видимость команды. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7e77fbd2667f8656a4c2f66046636ff73ac8891d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3891092236012e0f960124d48b868256d58b538c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582943"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342040"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>тип перечисления объекта teamvisibilitytype
 
@@ -22,12 +22,4 @@ ms.locfileid: "32582943"
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
 |закрытый|нуль|Любой пользователь может видеть команду, но только владелец может добавить в нее пользователя.|
-|public|1 |Любой пользователь может присоединиться к команде.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamvisibilitytype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+|public|1,1|Любой пользователь может присоединиться к команде.|

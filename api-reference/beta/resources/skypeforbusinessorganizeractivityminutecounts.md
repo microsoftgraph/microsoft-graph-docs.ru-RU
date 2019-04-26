@@ -2,12 +2,12 @@
 title: Тип ресурса Скипефорбусинессорганизерактивитиминутекаунтс
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 6b3b38c61ebb7b294de9ea5fc2641a7527bf04f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e2eba759ab8c22d8105267779bac46f909262bb8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461187"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342823"
 ---
 # <a name="skypeforbusinessorganizeractivityminutecounts-resource-type"></a>Тип ресурса Скипефорбусинессорганизерактивитиминутекаунтс
 
@@ -16,8 +16,8 @@ ms.locfileid: "32461187"
 | Свойство           | Тип   |
 | :----------------- | :----- |
 | Audiovideohttp         | Int64  |
-| dialInOut3rdParty  | Int64  |
-| Диалинаутмикрософт | Int64  |
+| Диалинмикрософт    | Int64  |
+| Диалаутмикрософт   | Int64  |
 | Репортрефрешдате  | Дата   |
 | reportDate         | Дата   |
 | Репортпериод       | String |
@@ -33,11 +33,11 @@ ms.locfileid: "32461187"
 
 ```json
 {
-  "audioVideo": 1024, 
-  "dialInMicrosoft": 1024, 
-  "dialOutMicrosoft": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "audioVideo": 1024,
+  "dialInMicrosoft": 1024,
+  "dialOutMicrosoft": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

@@ -4,12 +4,12 @@ description: Типы Теамсасинкоператион. Элементы �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4de95db194bf41939521b53f06614b46b6afae99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad1fdb80768a6f4c7043b5431bd0ed84bf2f25f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553640"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341542"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>тип перечисления объекта teamsasyncoperationtype
 
@@ -22,16 +22,8 @@ ms.locfileid: "32553640"
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
 |Недопустимый|нуль|Недопустимое значение.|
-|Клонетеам|1 |Операция клонирования команды.|
-|Арчиветеам|2 |Операция архивации команды.|
-|Унарчиветеам|3 |Операция восстановления архивной команды.|
-|Креатетеам|3 |Операция по созданию команды с нуля.|
+|Клонетеам|1,1|Операция клонирования команды.|
+|Арчиветеам|2|Операция архивации команды.|
+|Унарчиветеам|4|Операция восстановления архивной команды.|
+|Креатетеам|4|Операция по созданию команды с нуля.|
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationtype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

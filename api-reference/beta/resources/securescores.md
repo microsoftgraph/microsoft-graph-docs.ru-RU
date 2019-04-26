@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса Секурескорес
+title: Тип ресурса Секурескоре
 description: 'TOP = n, где n — это количество дней, в течение которых требуется получить данные. '
 localization_priority: Normal
-ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1f4ee37b5e257cfb914f45a1260f3572403f00dd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549211"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343383"
 ---
-# <a name="securescores-resource-type"></a>Тип ресурса Секурескорес
+# <a name="securescore-resource-type"></a>Тип ресурса Секурескоре
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "32549211"
 |   Активеусеркаунт |   Int32   |   Число активных пользователей для данного клиента.  |
 |   Куррентскоре    |   Двойное  |   Текущий полученный рейтинг клиента на указанную дату.    |
 |   Максскоре |  Двойное  |   Максимальная возможная Оценка клиента на указанную дату.    |
-|   Енабледсервицес |   Коллекция строк   |   Службы, предоставляемые корпорацией Майкрософт для клиента (например, Exchange Online, Skype, SharePoint).   |
+|   Енабледсервицес |   Коллекция String   |   Службы, предоставляемые корпорацией Майкрософт для клиента (например, Exchange Online, Skype, SharePoint).   |
 |   Аверажекомпаративескорес |  Коллекция [аверажекомпаративескоре](averagecomparativescore.md)    |Средняя оценка по различным областям (например, усреднение по отраслям, среднему на количество участников) и категории элементов управления (идентификация, данные, устройство, приложения, инфраструктура) в области. |
 |   Контролскорес | Коллекция [контролскоре](controlscore.md)  |   Содержит результаты клиентов для набора элементов управления.   |
 
@@ -53,22 +53,23 @@ ms.locfileid: "32549211"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json
 {
-"id": "String",
-"azureTenantId": "Guid",
-"createdDate": "DateTimeOffset",
-"licensedUserCount": "Int32",
-"activeUserCount": "Int32",
-"currentScore": "Int32",
-"maxScore": "Int32",
-"averageScore": "Double",
-"enabledServices": "Collection(string)",
-"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+  "id": "String",
+  "azureTenantId": "Guid",
+  "createdDate": "DateTimeOffset",
+  "licensedUserCount": "Int32",
+  "activeUserCount": "Int32",
+  "currentScore": "Int32",
+  "maxScore": "Int32",
+  "averageScore": "Double",
+  "enabledServices": "Collection(string)",
+  "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+  "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+  "createdDateTime": "2019-02-07T20:33:53.156Z"
 }
 
 ```
@@ -81,8 +82,6 @@ ms.locfileid: "32549211"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securescores.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

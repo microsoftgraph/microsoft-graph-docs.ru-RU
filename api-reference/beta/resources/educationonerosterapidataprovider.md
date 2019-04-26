@@ -4,12 +4,12 @@ description: Используется для настройки профиля �
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 55a3cd0e20f15c4b7d44bc7aebdc19f202e044f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ac232f71600f701efd8d085386fa9070773b475
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543000"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334196"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>ресурс Едукатиононеростерапидатапровидер
 
@@ -24,7 +24,7 @@ ms.locfileid: "32543000"
 | Свойство | Тип | Описание |
 |:-|:-|:-|
 | **Коннектионурл** | String | URL-адрес подключения к экземпляру OneRoster. |
-| **Счулсидс** | Коллекция строк |  Список Саурцедидс School для синхронизации. |
+| **Счулсидс** | Коллекция String |  Список Саурцедидс School для синхронизации. |
 | **providerName** | String | Имя поставщика службы OneRoster, как определено [спецификациЕй OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
 | **Коннектионсеттингс** | [Microsoft. Graph. Едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [Microsoft. Graph. educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [Microsoft. Graph. educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
 | **настроек** | [Microsoft. Graph. Едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | НеОбязательная Настройка, применяемая к профилю синхронизации.|
@@ -54,11 +54,3 @@ ms.locfileid: "32543000"
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationonerosterapidataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

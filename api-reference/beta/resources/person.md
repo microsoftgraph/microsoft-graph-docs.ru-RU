@@ -4,12 +4,12 @@ description: Объединение сведений о человеке чер�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0def5d62dd941122858ffa61bf224a9ef672ad0c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561476"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344929"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 
@@ -49,7 +49,7 @@ ms.locfileid: "32561476"
 |websites|Коллекция [website](website.md)|Веб-сайты человека.|
 |yomiCompany|string|Название компании человека, записанное так, как оно звучит по-японски.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

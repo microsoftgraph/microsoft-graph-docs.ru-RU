@@ -4,12 +4,12 @@ description: Узнайте, сколько места в хранилище з�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 4248251bac7146334dc97e8101f29d53faacf2d5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a6d6c28229f7287f81ea8e9a9a4686103e36122b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545963"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331831"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 
@@ -63,7 +63,7 @@ URL-адреса для скачивания, для которых выполн
 
 CSV-файл содержит столбцы со следующими заголовками:
 
-- Report Refresh Date (дата обновления отчета)
+- "Report Refresh Date" (Дата обновления отчета);
 - Mailbox Storage Used (Byte) [занято почтовыми ящиками (байт)]
 - Site Storage Used (Byte) [занято сайтами (байт)]
 - Report Date (дата отчета)
@@ -166,11 +166,3 @@ Content-Length: 285
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getoffice365groupsactivitystorage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

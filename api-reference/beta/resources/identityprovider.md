@@ -2,12 +2,12 @@
 title: Тип ресурса identityProvider
 description: Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может иметь значение Microsoft, Google, Facebook, Amazon или LinkedIn.
 localization_priority: Normal
-ms.openlocfilehash: afd21635d932582f2a9ee6c2cde1cf45a9d4260f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 616f4d30bf6b5aad0bb97a732cf3aaf27e0fd26d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547265"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333723"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
@@ -34,11 +34,11 @@ ms.locfileid: "32547265"
 
 ## <a name="properties"></a>Свойства
 
-|Свойство|Тип|Обязательный|Допускается значение null|Описание|
+|Свойство|Тип|Обязательное|Допускается значение null|Описание|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|Строка|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
-|clientSecret|Строка|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
-|id|Строка|Нет|Нет|Идентификатор поставщика удостоверений.|
+|clientSecret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
+|id|String|Нет|Нет|Идентификатор поставщика удостоверений.|
 |name|String|Нет|Нет|Отображаемое имя поставщика удостоверений.|
 |type|Строка|Да|Нет|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
@@ -46,7 +46,7 @@ ms.locfileid: "32547265"
 
 Для каждого поставщика удостоверений существует процесс создания регистрации приложения. Например, пользователи создают регистрацию приложения с помощью Facebook на сайте [developers.facebook.com](https://developers.facebook.com/). Получившийся идентификатор и секрет клиента можно передать для [создания identityProvider](../api/identityprovider-post-identityproviders.md). После этого каждый объект пользователя в каталоге можно объединить с любым поставщиком удостоверений клиента для проверки подлинности. Это позволяет пользователям входить путем ввода учетных данных на странице входа поставщика удостоверений. Маркер от поставщика удостоверений проверяется с помощью Azure AD перед выпуском клиентом маркера для приложения.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -64,11 +64,3 @@ ms.locfileid: "32547265"
     "clientSecret": "String"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identityprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

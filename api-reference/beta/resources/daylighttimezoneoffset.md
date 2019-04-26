@@ -2,14 +2,16 @@
 title: Тип ресурса daylightTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее.
 localization_priority: Normal
-ms.openlocfilehash: 160163d6f574eb75746fa751e383c06696006e43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6e965a154b0219a78898c2bf021cac2bb11c238
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535231"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340968"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Тип ресурса daylightTimeZoneOffset
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее.
 
@@ -34,7 +36,7 @@ ms.locfileid: "32535231"
 | year | Edm.Int32 | Указывает, как часто (в годах) осуществляется переход со стандартного времени на летнее. Например, значение 0 указывает, что переход осуществляется ежегодно.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -43,7 +45,6 @@ ms.locfileid: "32535231"
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.standardTimeZoneOffset",
   "@odata.type": "microsoft.graph.daylightTimeZoneOffset"
 }-->
 
@@ -61,10 +62,13 @@ ms.locfileid: "32535231"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "daylightTimeZoneOffset resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

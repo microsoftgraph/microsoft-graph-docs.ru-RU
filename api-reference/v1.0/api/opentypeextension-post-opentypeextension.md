@@ -3,12 +3,12 @@ title: Создание открытого расширения
 description: Создание открытого расширения (объекта openTypeExtension) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 0823cb549527f7e5851e9d47e328b427eb64539f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d435dc430d78d3ab25947de9536cd26933b4bc48
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503557"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345850"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -161,11 +161,11 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 Ниже представлен отклик для первого примера. Текст отклика включает свойства нового сообщения и следующие данные для нового расширения:
 
-- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- Свойство **id** с полным именем `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Стандартное свойство **extensionName**, указанное в запросе.
 - Пользовательские данные из запроса, сохраненные в виде 3 настраиваемых свойств.
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,8 +225,8 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
-('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-      "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+('AAMkAGEbs88AAB84uLuAAA=')/extensions('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
+      "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -267,7 +267,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 Ниже представлен отклик для второго примера. Текст отклика включает следующие данные для нового расширения:
 
 - Свойство по умолчанию **extensionName**.
-- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- Свойство **id** с полным именем `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Сохраняемые пользовательские данные.
 
 <!-- {
@@ -283,9 +283,9 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
     "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
     "companyName": "Wingtip Toys",
     "dealValue": 500050,
     "expirationDate": "2015-12-03T10:00:00.000Z"
@@ -334,7 +334,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
     "@odata.type": "#microsoft.graph.openTypeExtension",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
     "dealValue": 1010100,
@@ -367,7 +367,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
     },
   "extensions": [
     {
-      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",
@@ -425,7 +425,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
           },
           "Extensions": [
             {
-              "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+              "@odata.type": "microsoft.graph.openTypeExtension",
               "extensionName": "Com.Contoso.Benefits",
               "companyName": "Contoso",
               "expirationDate": "2016-08-03T11:00:00.000Z",

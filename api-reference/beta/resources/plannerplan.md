@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса plannerPlan
-description: Ресурс **plannerPlan** представляет план в Office 365. План может принадлежать группе и содержать коллекцию перечисление plannertasks. Он также может иметь коллекцию Планнербуккетс. Каждый объект Plan содержит объект Details, который может содержать дополнительные сведения о плане. Более подробную информацию о связях между группами, планами и задачами можно узнать в разделе Планировщик.
+description: Ресурс **plannerPlan** представляет план в Office 365. План может принадлежать группе. Он содержит коллекцию объектов plannerTask. Кроме того, он может содержать коллекцию объектов plannerBucket. Каждый объект Plan содержит объект Details, который может содержать дополнительные сведения о плане. Дополнительные сведения об отношениях, которыми связаны группы, планы и задачи, см. в статье "Планировщик".
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f37f6ea08f2951256e2d7f94cf9abad7e8ac60b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5da918e3ba0e8087d4572799168fa1132e0ce5e7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578871"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344468"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **plannerPlan** представляет план в Office 365. План может принадлежать [группе](group.md) и содержать коллекцию [перечисление plannertasks](plannertask.md). Он также может иметь коллекцию [планнербуккетс](plannerbucket.md). Каждый объект Plan содержит объект [Details](plannerplandetails.md) , который может содержать дополнительные сведения о плане. Более подробную информацию о связях между группами, планами и задачами можно узнать в разделе [планировщик](planner-overview.md).
+Ресурс **plannerPlan** представляет план в Office 365. План может принадлежать [группе](group.md). Он содержит коллекцию объектов [plannerTask](plannertask.md). Кроме того, он может содержать коллекцию объектов [plannerBucket](plannerbucket.md). Каждый объект Plan содержит объект [Details](plannerplandetails.md) , который может содержать дополнительные сведения о плане. Дополнительные сведения об отношениях, которыми связаны группы, планы и задачи, см. в статье [Планировщик](planner-overview.md).
 
 
 
@@ -23,29 +23,29 @@ ms.locfileid: "32578871"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Чтение свойств и связей объекта **plannerPlan** .|
-|[Перечисление сегментов](../api/plannerplan-list-buckets.md) |Коллекция [plannerBucket](plannerbucket.md)| Получение коллекции объектов **plannerBucket** .|
-|[Перечисление задач](../api/plannerplan-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask** .|
-|[Обновление](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Обновление объекта **plannerPlan** . |
+|[Получение plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Считывание свойств и связей объекта **plannerPlan**.|
+|[Перечисление контейнеров](../api/plannerplan-list-buckets.md) |Коллекция [plannerBucket](plannerbucket.md)| Получение коллекции объектов **plannerBucket**.|
+|[Перечисление задач](../api/plannerplan-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
+|[Обновление](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Обновление объекта **plannerPlan**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|String| Только для чтения. ИДЕНТИФИКАТОР плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
-|owner|String|Идентификатор [группы](group.md) , которой принадлежит план. Для задания этого поля должна существовать допустимая группа. После задания этого свойства это свойство невозможно обновить.|
+|createdDateTime|DateTimeOffset|Только для чтения. Дата и время создания плана. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|id|String| Только для чтения. Идентификатор плана. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
+|owner|String|Идентификатор [группы](group.md), которая является владельцем плана. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. После установки значения обновить это свойство невозможно.|
 |title|String|Обязательный. Название плана.|
-|createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший план.|
+|createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|
 |контекстах|[plannerPlanContextCollection](plannerplancontextcollection.md);| Только для чтения. Дополнительные пользовательские взаимодействия, в которых используется этот план, представленный в виде записей [планнерпланконтекст](plannerplancontext.md) .|
 
 ## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|сегментов|Коллекция [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Коллекция сегментов в плане.|
-|подробности|[plannerPlanDetails](plannerplandetails.md);| Только для чтения. Допускается значение null. Дополнительные сведения о плане.|
-|tasks|Коллекция [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в плане.|
+|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускает значение null. Коллекция контейнеров в плане.|
+|details|[plannerPlanDetails](plannerplandetails.md)| Только для чтения. Допускает значение null. Дополнительные сведения о плане.|
+|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в плане.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -54,6 +54,8 @@ ms.locfileid: "32578871"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerPlan"
 }-->
 
@@ -89,8 +91,6 @@ ms.locfileid: "32578871"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

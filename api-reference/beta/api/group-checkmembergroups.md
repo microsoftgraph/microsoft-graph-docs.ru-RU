@@ -1,15 +1,15 @@
 ---
 title: 'group: checkMemberGroups'
-description: Проверка членства в указанном списке групп. Возвращает список этих групп, из которых
+description: Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 838ea805f6732965029690a05e8d3294fdd62c26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1815f187a25eaddbd3b1757fde5e7e4e9c74f650
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503110"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329662"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -25,11 +25,11 @@ ms.locfileid: "32503110"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложений                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
+| Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Приложение                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Примечание:** Этот API на `Directory.Read.All` данный момент требует разрешение или более высокий уровень. При использовании `Group.Read.All` этого разрешения будет возвращена ошибка. Мы знаем об этой проблеме.
+> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешения `Group.Read.All` возникает ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /groups/{id}/checkMemberGroups
 
 | Параметр | Тип   | Описание           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | String | Массив идентификаторов групп |
+| groupIds  | Коллекция строк | Массив идентификаторов групп |
 
 ## <a name="response"></a>Отклик
 
@@ -82,7 +82,7 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -115,8 +115,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-checkmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

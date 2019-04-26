@@ -4,12 +4,12 @@ description: Маилсеарчфолдер — это виртуальная п
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba76029b69d91be39c9d63ca755e8a4603aec0b9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 15f334f2910c962c367242965bd2104c8f3edb79
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562607"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342765"
 ---
 # <a name="mailsearchfolder-resource-type"></a>Тип ресурса Маилсеарчфолдер
 
@@ -26,14 +26,14 @@ ms.locfileid: "32562607"
 | [Получение папки поиска](../api/mailfolder-get.md) | [Маилсеарчфолдер](mailsearchfolder.md) | Получение указанной папки поиска. |
 | [Обновление папки поиска](../api/mailsearchfolder-update.md) | [Маилсеарчфолдер](mailsearchfolder.md) | Обновление указанной папки поиска. |
 | [Удаление папки поиска](../api/mailfolder-delete.md) | Нет | Удаление указанной папки поиска. |
-| [ПереЧисление всех сообщений в папке поиска](../api/mailfolder-list-messages.md) | Коллекция объектов [message](message.md) | ПереЧисление всех сообщений в указанной папке поиска. |
+| [ПереЧисление всех сообщений в папке поиска](../api/mailfolder-list-messages.md) | Коллекция [message](message.md) | ПереЧисление всех сообщений в указанной папке поиска. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| Поддержка | Boolean | Указывает, является ли папка поиска редактируемой с помощью REST API. |
-| Инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтового ящика. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| Поддержка | Логический | Указывает, является ли папка поиска редактируемой с помощью REST API. |
+| Инклуденестедфолдерс | Логический | Указывает, как должна проходить иерархия папок почтового ящика. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
 | Саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
 | Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
@@ -65,8 +65,6 @@ ms.locfileid: "32562607"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailsearchfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

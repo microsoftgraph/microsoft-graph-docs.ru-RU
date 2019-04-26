@@ -4,12 +4,12 @@ description: Одноэлементный объект, служащий кон�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a6d4557fb77ecc7a9f635688046b267d08c16d78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 45164300bbfa9ff3a4de3da144dd66d5dad6e42b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566292"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341332"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -72,12 +72,14 @@ ms.locfileid: "32566292"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "optionalProperties":[
+    "managedAppRegistrations"
+    ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

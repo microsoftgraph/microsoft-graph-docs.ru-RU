@@ -1,17 +1,19 @@
 ---
 title: Список календарей
 description: 'Получение всех календарей пользователя (свойство навигации `/calendars`), календарей из группы по умолчанию или из указанной группы календарей. '
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 576defc97cfaf7b3d6924f522e6463fcb56907d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b68089df6002443f8d28376c995ca6a3746457e6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547867"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334838"
 ---
 # <a name="list-calendars"></a>Список календарей
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение всех календарей пользователя (свойство навигации `/calendars`), календарей из группы по умолчанию или из указанной группы календарей. 
 ## <a name="permissions"></a>Разрешения
@@ -66,7 +68,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendars
+GET https://graph.microsoft.com/beta/me/calendars
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -81,16 +83,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars",
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+            "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
             "id": "AAMkAGI2TGuLAAA=",
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
+            "hexColor": "",
+            "isShared":false,
+            "isSharedWithMe":false,
             "canEdit":true,
             "owner":{
                 "name":"Samantha Booth",
@@ -99,14 +105,18 @@ Content-type: application/json
         }
     ]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendars",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

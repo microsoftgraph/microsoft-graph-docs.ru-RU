@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедролеассигнмент
 description: 'Представляет назначение привилегированной роли для определенного пользователя. '
 localization_priority: Normal
-ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563426"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344244"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>Тип ресурса Привилежедролеассигнмент
 
@@ -23,7 +23,7 @@ ms.locfileid: "32563426"
 |[Коллекция Привилежедролеассигнмент списка](../api/privilegedroleassignment-list.md) | Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение коллекции объектов Привилежедролеассигнмент.|
 |[Получение privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Чтение свойств и связей объекта Привилежедролеассигнмент.|
 |[Создание задания](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Создайте новое назначение путем публикации в коллекции назначений.|
-|[Удаление](../api/privilegedroleassignment-delete.md) | Нет |Удаление объекта privilegedRoleAssignment. |
+|[Delete](../api/privilegedroleassignment-delete.md) | Нет |Удаление объекта privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как бессрочного.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как соответствующего требованиям.|
 |[my](../api/privilegedroleassignment-my.md)|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение привилегированных назначений ролей текущего пользователя.|
@@ -41,7 +41,7 @@ ms.locfileid: "32563426"
 ## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null. Сведения о связанной роли.|
+|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускает значение null. Сведения о связанной роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -52,6 +52,8 @@ ms.locfileid: "32563426"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedRoleAssignment"
 }-->
 
@@ -76,8 +78,6 @@ ms.locfileid: "32563426"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

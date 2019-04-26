@@ -4,12 +4,12 @@ description: API Планировщика в Microsoft Graph можно испо
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 327701fde2679ab4c90061cf2ed98c4967a5cf58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 29fdbe5403292638e8b6067a5e8b81d8e1bef250
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573699"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344622"
 ---
 # <a name="use-the-planner-rest-api"></a>Использование REST API Планировщика
 
@@ -164,11 +164,3 @@ API Планировщика возвращает код состояния 403,
 Во всех запросах `POST`, `PATCH` и `DELETE` API Планировщика заголовок `If-Match` необходимо указывать с последним известным значением тега etag ресурса.
 Код состояния 412 также может быть возвращен, если значение тега etag, указанное в запросе, больше не соответствует версии ресурса в службе. В этом случае клиентам следует прочитать ресурс еще раз и получить новый тег etag.
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/planner-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

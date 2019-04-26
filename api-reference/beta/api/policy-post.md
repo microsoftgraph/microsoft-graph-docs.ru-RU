@@ -2,12 +2,12 @@
 title: Создание политики
 description: Создайте новый объект Policy, указав отображаемое имя, тип политики и описание политики.
 localization_priority: Normal
-ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4521f6fb032f936aec27cc5cac47d27e62bd2a3a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546845"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332201"
 ---
 # <a name="create-policy"></a>Создание политики
 
@@ -48,7 +48,7 @@ POST /policies
 |displayName|String|Настраиваемое имя политики.|
 |type|String|Указывает тип политики. В настоящее время должен быть "Токенлифетимеполици"|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [Policy](../resources/policy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.  
 
@@ -98,8 +98,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/policy-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

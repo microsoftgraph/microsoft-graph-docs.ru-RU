@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 0cc2c0994a5e4d2a45e78c055af466f1c4999de6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981534"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578758"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>Входной и выходной HTML-код на страницах OneNote
 
@@ -425,7 +425,7 @@ upper-alpha | &nbsp; |
 </ol>
 ``` 
 
-Ниже приводятся выходные данные HTML. Обратите внимание, что стили возвращаются встроенными в отдельные элементы **li** или **span**.
+Ниже представлен выходной HTML-код. Обратите внимание, что стили возвращаются встроенными в отдельные элементы **li** или **span**.
 
 ```html
 <ol>

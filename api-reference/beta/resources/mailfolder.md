@@ -4,12 +4,12 @@ description: Почтовая папка в почтовом ящике поль
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 294f2a9a6b4775ad30165352dec5520fb0efa804
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547132"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342777"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
@@ -54,20 +54,20 @@ GET /me/mailFolders/drafts
 
 | Метод | Возвращаемый тип | Описание |
 |:-------|:------------|:------------|
-|[Получение объекта mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md); |Чтение свойств и связей объекта mailFolder.|
-|[Создание объекта MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md);| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolders.|
+|[Получение объекта mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Чтение свойств и связей объекта mailFolder.|
+|[Создание объекта MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolders.|
 |[Вывод списка объектов childFolder](../api/mailfolder-list-childfolders.md) |Коллекция [mailFolder](mailfolder.md)| Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/MailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.|
 |[Создание сообщения](../api/mailfolder-post-messages.md) |[message](message.md)| Создание сообщения в текущем элементе mailFolder путем его публикации в коллекции сообщений.|
 |[Список сообщений](../api/mailfolder-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
-|[Обновление](../api/mailfolder-update.md) | [mailFolder](mailfolder.md);|Обновление указанного объекта mailFolder. |
-|[Удаление](../api/mailfolder-delete.md) | Нет |Удаление указанного объекта mailFolder. |
-|[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md);|Копирование элемента mailFolder и его содержимого в другой элемент mailFolder.|
+|[Обновление](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Обновление указанного объекта mailFolder. |
+|[Delete](../api/mailfolder-delete.md) | Нет |Удаление указанного объекта mailFolder. |
+|[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Копирование элемента mailFolder и его содержимого в другой элемент mailFolder.|
 |[delta](../api/mailfolder-delta.md)|Коллекция [mailFolder](mailfolder.md)|Получение набора папок почты, которые были добавлены в почтовый ящик пользователя или удалены из него.|
-|[move](../api/mailfolder-move.md)|[mailFolder](mailfolder.md);|Перемещение элемента mailFolder и его содержимого в другой элемент mailFolder.|
+|[move](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Перемещение элемента mailFolder и его содержимого в другой элемент mailFolder.|
 |**Расширенные свойства**| | |
-|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md);  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем элементе mailFolder.   |
-|[Получение элемента mailFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md); | Получение элементов mailFolder, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
-|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md); | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем элементе mailFolder.  |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[mailFolder](mailfolder.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем элементе mailFolder.   |
+|[Получение элемента mailFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Получение элементов mailFolder, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
+|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [mailFolder](mailfolder.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем элементе mailFolder.  |
 |[Получение элемента mailFolder с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [mailFolder](mailfolder.md) | Получение элемента mailFolder, который содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
 
 ## <a name="properties"></a>Свойства
@@ -93,7 +93,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 ПоЧтовые папки в Outlook могут содержать более одного типа элементов, например, папка "Входящие" может содержать элементы приглашения на собрания, которые отличаются от элементов почты. `TotalItemCount`и `UnreadItemCount` включать элементы в папку почты независимо от их типов элементов.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение | Тип | Описание |
 |:-------------|:-----|:------------|
@@ -103,7 +103,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -139,7 +139,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -151,8 +151,6 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

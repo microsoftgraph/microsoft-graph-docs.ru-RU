@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c7abc218ee6743b0b59c2b40714137d723649749
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f9a69b7fc8a8d5e81c67847849cab30b8391caa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538326"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331712"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538326"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/borders
+POST /workbook/names/{name}/range/format/borders
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
@@ -40,11 +40,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [RangeBorder](../resources/rangeborder.md) в формате JSON.
+В тексте запроса добавьте представление объекта [Воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -54,7 +54,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
   "name": "create_rangeborder_from_rangeformat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 Content-type: application/json
 Content-length: 136
 
@@ -66,13 +66,13 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-Предоставьте в тексте запроса описание объекта [RangeBorder](../resources/rangeborder.md) в формате JSON.
+В тексте запроса добавьте представление объекта [Воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -97,8 +97,6 @@ Content-length: 136
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

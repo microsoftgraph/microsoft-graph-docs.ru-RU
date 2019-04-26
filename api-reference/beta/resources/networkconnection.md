@@ -2,12 +2,12 @@
 title: Тип ресурса networkConnection
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 94bf27265f591d32c01e7043d3a10468a924d78a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570724"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342200"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
@@ -25,18 +25,46 @@ ms.locfileid: "32570724"
 |Дестинатионпорт|String|Порт назначения (для сетевого подключения).|
 |Дестинатионурл|String|URL-адрес сетевого подключения/URI-строка — без параметров. (например, "www.contoso.com/products/Default.HTML")|
 |direction|connectionDirection|Направление сетевого подключения. Возможные значения: `unknown`, `inbound`, `outbound`.|
-|Домаинрегистереддатетиме|DateTimeOffset|Дата регистрации конечного домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Домаинрегистереддатетиме|DateTimeOffset|Дата регистрации конечного домена. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Локалднснаме|String|Локальное разрешение DNS-имен, отображаемое в локальном кэше DNS узла (например, на случай, если файл hosts был подделан).|
 |Натдестинатионаддресс|String|IP-адрес назначения преобразования сетевых адресов.|
 |Натдестинатионпорт|String|Порт назначения преобразования сетевых адресов.|
 |Натсаурцеаддресс|String|IP-адрес источника преобразования сетевых адресов.|
 |Натсаурцепорт|String|Порт источника преобразования сетевых адресов.|
-|Protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|Сетевой протокол. Возможные значения: `unknown`, `ip`, `icmp`, `igmp` `ggp` `ipv4` `tcp` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `ipv6RoutingHeader` `ipv6FragmentHeader`,,,,,,,,,,,,,,,,,,,,, `pup` `udp` `idp` `ipv6` , `raw`, `ipx`, `spx`, `spxII`.|
+|Protocol|securityNetworkProtocol|Сетевой протокол. Возможные значения: `unknown`, `ip`, `icmp`, `igmp` `ggp` `ipv4` `tcp` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `ipv6RoutingHeader` `ipv6FragmentHeader`,,,,,,,,,,,,,,,,,,,,, `pup` `udp` `idp` `ipv6` , `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Созданный поставщиком/вычисляемый показатель риска для сетевого подключения. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 |Саурцеаддресс|String|Источник (то есть источник) IP-адрес сетевого подключения.|
 |Саурцепорт|String|Исходный (то есть источник) IP-порт (сетевого подключения).|
 |status|connectionStatus|Состояние сетевого подключения. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |Урлпараметерс|String|Параметры (суффикс) конечного URL-адреса.|
+
+### <a name="securitynetworkprotocol-values"></a>значения Секуритинетворкпротокол
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|unknown|-1|НеИзвестный протокол.|
+|см|нуль|Протокол IP.|
+|полученных|1,1| Протокол управления сообщениями в Интернете.|
+|режимы|2| Протокол управления группами Интернет.|
+|ГГП|4| Протокол шлюза для шлюза.|
+|IPv4|SP4| Протокол Интернета версии 4.|
+|tcp|ICMPv6| Протокол управления передачей.|
+|ПУП|12 | Протокол универсальных пакетов парк.|
+|протокола|17 | Протокол датаграммы пользователя.|
+|IDP|22| Протокол датаграмм через Интернет.|
+|поддерживающ|41| Протокол IP версии 6 (IPv6).|
+|ipv6RoutingHeader|43| заголовок маршрутизации IPv6.|
+|ipv6FragmentHeader|44| заголовок фрагмента IPv6.|
+|Ипсеценкапсулатингсекуритипайлоад|50| заголовок полезных данных безопасности, включающий IPv6.|
+|Ипсекаусентикатионхеадер|51| заголовок проверки поДлинности IPv6.|
+|icmpV6|58| Протокол управления сообщениями в Интернете для IPv6.|
+|ipv6NoNextHeader|59| IPv6: следующий заголовок отсутствует.|
+|ipv6DestinationOptions|60| заголовок параметров назначения IPv6.|
+|этаже|77| Протокол сетевого диска (неофициальный).|
+|RAW|255| Протокол IP-пакетов RAW.|
+|x|1000| Протокол обмена пакетами в Интернете.|
+|возмож|1256| Последовательный протокол обмена пакетами.|
+|Спксии|1257| Последовательный протокол обмена пакетами версии 2.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -57,18 +85,18 @@ ms.locfileid: "32570724"
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
-  "direction": "@odata.type: microsoft.graph.connectionDirection",
+  "direction": "String",
   "domainRegisteredDateTime": "String (timestamp)",
   "localDnsName": "String",
   "natDestinationAddress": "String",
   "natDestinationPort": "String",
   "natSourceAddress": "String",
   "natSourcePort": "String",
-  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+  "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",
-  "status": "@odata.type: microsoft.graph.connectionStatus",
+  "status": "String",
   "urlParameters": "String"
 }
 
@@ -83,8 +111,6 @@ ms.locfileid: "32570724"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/networkconnection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

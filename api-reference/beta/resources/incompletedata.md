@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: Инкомплетедата
 localization_priority: Normal
-ms.openlocfilehash: f2493263d5293b95cbe386b46c56429d11dda089
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40c1b782384076eefc986f67dc1736f191feb7b7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549036"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339969"
 ---
 # <a name="incompletedata-resource-type"></a>Тип ресурса Инкомплетедата
 
@@ -41,8 +41,6 @@ ms.locfileid: "32549036"
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/IncompleteData",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/incompletedata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

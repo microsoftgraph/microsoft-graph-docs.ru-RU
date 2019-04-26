@@ -4,12 +4,12 @@ description: Более изощренные угрозы безопасност
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524465"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343401"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Использование API Microsoft Graph для обнаружения и защиты угроз безопасности (Предварительная версия)
 
@@ -27,11 +27,3 @@ ms.locfileid: "32524465"
 - [Интеграция с интеллектуальным графиком безопасности с помощью API безопасности](security-api-overview.md)
 - [Зачем использовать Azure AD для защиты удостоверений в вашей организации?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Использование API защиты удостоверений Azure AD](identityprotection-root.md)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ta
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: de24baee308377cb0b907084b0f1644da5c7fe1a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32efdee19d8d4a334d7c61090c7ce84bcfacdba0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544658"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335411"
 ---
 # <a name="get-tablesort"></a>Получение объекта TableSort
 
@@ -43,9 +43,9 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [TableSort](../resources/tablesort.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблесорт](../resources/workbooktablesort.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableSort"
+  "@odata.type": "microsoft.graph.workbookTableSort"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -83,8 +83,6 @@ Content-length: 51
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablesort-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

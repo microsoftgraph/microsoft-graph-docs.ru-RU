@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Normal
-ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e8a4adaa3c1d41270e172f9d0b0e1bf3829927c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568258"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344984"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 
@@ -70,8 +70,8 @@ ms.locfileid: "32568258"
 | ссылка                | [SharingLink][]             | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
 | roles               | Collection(String)          | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
 | shareId             | Строка                      | Уникальный маркер, который можно использовать для доступа к общему элементу через **[API shares][]**. Только для чтения.
-| expirationDateTime  | DateTimeOffset              | Формат YYYY – MM – ДДВчч: mm: ССЧП of DateTimeOffset указывает срок действия разрешения. DateTime. MinValue указывает, что для этого разрешения не задано действие срока действия. Необязательный параметр.
-| hasPassword         | Boolean                     | Указывает, задан ли для этого разрешения пароль, который отображается в ответе. НеОбязательный и только для чтения и только для OneDrive персональный.
+| expirationDateTime  | DateTimeOffset              | Формат YYYY – MM – ДДВчч: mm: ССЧП of DateTimeOffset указывает срок действия разрешения. DateTime. MinValue указывает, что для этого разрешения не задано действие срока действия. Необязательно.
+| hasPassword         | Логический                     | Указывает, задан ли для этого разрешения пароль, который отображается в ответе. НеОбязательный и только для чтения и только для OneDrive персональный.
 
 ### <a name="roles-enumeration-values"></a>Значения перечислений ролей
 

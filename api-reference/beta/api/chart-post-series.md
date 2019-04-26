@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 89022d8468f842753a4b74ace2f802f4ee23ad09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c583c27ee64dd83b8dbfe1076847e951ab3d2ecb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456544"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327891"
 ---
 # <a name="create-chartseries"></a>Создание объекта ChartSeries
 
@@ -28,7 +28,7 @@ ms.locfileid: "32456544"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series
+POST /workbook/worksheets/{id|name}/charts/{name}/series
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [ChartSeries](../resources/chartseries.md) в формате JSON.
+В тексте запроса добавьте представление объекта [Воркбукчартсериес](../resources/workbookchartseries.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [ChartSeries](../resources/chartseries.md) в тексте отклика.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукчартсериес](../resources/workbookchartseries.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -52,7 +52,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
   "name": "create_chartseries_from_chart"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
 Content-type: application/json
 Content-length: 26
 
@@ -60,13 +60,13 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-Предоставьте в тексте запроса описание объекта [ChartSeries](../resources/chartseries.md) в формате JSON.
+В тексте запроса добавьте представление объекта [Воркбукчартсериес](../resources/workbookchartseries.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -87,8 +87,6 @@ Content-length: 26
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chart-post-series.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

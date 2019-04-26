@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 1a38cc3e08917b0d4aa2a8df4943ebc932c937d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 04b9a92bfd723b188fc6869717a5665e10b6af30
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506231"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345182"
 ---
 # <a name="lookupcolumn-resource-type"></a>Тип ресурса lookupColumn
 
@@ -36,10 +36,10 @@ ms.locfileid: "32506231"
 
 | Имя свойства             | Тип    | Описание
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | логический | Указывает, можно ли выбрать несколько значений в источнике.
+| **allowMultipleValues**   | boolean | Указывает, можно ли выбрать несколько значений в источнике.
 | **allowUnlimitedLength**  | boolean | Указывает, может ли длина значений в столбце превышать стандартное ограничение в 255 символов.
-| **columnName**            | строка  | Имя исходного столбца подстановки.
-| **listId**                | строка  | Уникальный идентификатор исходного списка подстановки.
+| **columnName**            | string  | Имя исходного столбца подстановки.
+| **listId**                | string  | Уникальный идентификатор исходного списка подстановки.
 | **primaryLookupColumnId** | string  | Если это свойство указано, то данный столбец представляет собой *вторичную подстановку*, для которой извлекается дополнительное поле из элемента списка, подставленного при *первичной подстановке*. Используйте элемент списка, полученный в результате *первичной* подстановки, в качестве источника для указанного здесь столбца.
 
 <!--
@@ -49,8 +49,6 @@ ms.locfileid: "32506231"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/LookupColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/lookupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

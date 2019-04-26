@@ -2,12 +2,12 @@
 title: Тип ресурса Счедулеитем
 description: Элемент, описывающий доступность пользователя, соответствующего фактическому событию, в календаре пользователя по умолчанию. Этот элемент также применяется к ресурсу.
 localization_priority: Normal
-ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8b0d7bc18c00ca8bda3ef91b2ec8c629c980a97
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563062"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343470"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса Счедулеитем
 
@@ -19,11 +19,11 @@ ms.locfileid: "32563062"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в течение которого заканчивается соответствующее событие. |
-|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательный параметр. |
-|location |String | Расположение, в котором находится соответствующее событие. Необязательный параметр.|
+|Частный |Логический |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательно. |
+|location |String | Расположение, в котором находится соответствующее событие. Необязательно.|
 |start |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
 |status |Фрибусистатус | Состояние доступности пользователя или ресурса во время соответствующего события. Возможные `free`значения:, `tentative`, `busy`, `oof`, `workingElsewhere`,. `unknown` |
-|subject |String | Строка темы соответствующего события. Необязательный параметр.|
+|subject |String | Строка темы соответствующего события. Необязательно.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,8 +61,6 @@ ms.locfileid: "32563062"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/scheduleitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

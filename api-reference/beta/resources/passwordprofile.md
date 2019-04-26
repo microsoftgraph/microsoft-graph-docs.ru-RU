@@ -2,12 +2,12 @@
 title: Тип ресурса passwordProfile
 description: Содержит профиль пароля, связанный с пользователем. Свойство **passwordProfile** объекта user является объектом **passwordProfile**.
 localization_priority: Normal
-ms.openlocfilehash: 3caff59c8fd0838b91f9fdfb79bdbb154aa83b9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07e1bb317015177d737719ff024586c94ee05474
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568460"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344897"
 ---
 # <a name="passwordprofile-resource-type"></a>Тип ресурса passwordProfile
 
@@ -32,7 +32,7 @@ ms.locfileid: "32568460"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json
@@ -53,8 +53,6 @@ ms.locfileid: "32568460"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/passwordprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

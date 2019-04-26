@@ -4,14 +4,16 @@ description: Копирование папки почты со всем ее с�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e1c4c567c56e869ed1e18ff0c887393c8345929d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b1fb9b0b3d3891f33020458ffb5b140f9bf42c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540907"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333388"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Копирование папки почты со всем ее содержимым в другую папку почты.
 
@@ -35,10 +37,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный параметр. |
-| Content-Type | `application/json`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательно. |
+| Content-Type | `application/json`. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -48,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 |:----------|:-----|:------------|
 |destinationId|String|Идентификатор папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
@@ -57,6 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 Ниже приведен пример вызова этого API.
 
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -64,7 +68,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -77,7 +81,8 @@ Content-length: 44
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +106,13 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

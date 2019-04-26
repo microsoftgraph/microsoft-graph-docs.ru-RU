@@ -2,12 +2,12 @@
 title: Создание Програмконтрол
 description: В средстве проверки доступа Azure AD создайте новый объект Програмконтрол.  При этом будет связана проверка доступа к программе.
 localization_priority: Normal
-ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d7a48b45049c2268856a3ec238114cfa9bf834f5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332046"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 
@@ -27,9 +27,11 @@ ms.locfileid: "32546441"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, что позволяет им создавать Програмконтрол. |
+|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Для приложений                            |  Програмконтрол. ReadWrite. ALL  |
+
+Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать **програмконтрол**. 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +54,7 @@ POST /programControls
 | `controlId`              |`String`                | ControlId элемента управления, в частности идентификатор проверки доступа.                                                |
 | `controlTypeId`          |`String`                | Програмконтролтипе определяет тип элемента управления программы, например элемент управления, который связывается с проверками гостевого доступа. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [програмконтрол](../resources/programcontrol.md) в тексте отклика.
 
 
@@ -111,8 +113,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

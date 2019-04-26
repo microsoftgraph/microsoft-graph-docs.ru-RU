@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса OneNote
+title: Тип ресурса onenote
 description: Точка входа для ресурсов OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 5ed063fb485acdbd029a977ffb6cd721bf7085c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44dfe7b33632bb6691802e46b66f54015b6aa6ae
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561665"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341493"
 ---
-# <a name="onenote-resource-type"></a>Тип ресурса OneNote
+# <a name="onenote-resource-type"></a>Тип ресурса onenote
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Точка входа для ресурсов OneNote.
 
-Все вызовы службы OneNote через API Microsoft Graph используют следующий корневой URL-адрес службы:
+Все вызовы службы OneNote через API Microsoft Graph выполняются с помощью следующего корневого URL-адреса службы:
 
 ```
 https://graph.microsoft.com/{version}/{location}/onenote/ 
@@ -25,7 +25,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 
 Местоположение может представлять собой записные книжки для пользователей в Office 365 или OneDrive для пользователей, групповых записных книжек или размещенных на сайте SharePoint записных книжек группы в Office 365. 
 
-**Записные книжКи пользователя** Чтобы получить доступ к личным записным книжкам в OneDrive для бизнеса или OneDrive для бизнеса, используйте один из следующих URL-адресов:
+**Записные книжки пользователей.** Чтобы получить доступ к персональным записным книжкам в OneDrive для бизнеса или личном хранилище OneDrive, воспользуйтесь одним из следующих URL-адресов:
 
 ```
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -33,41 +33,56 @@ https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{noteboo
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
-**Записные книжки для групп** Чтобы получить доступ к записным книжкам, принадлежащим группе, используйте следующий корневой URL-адрес службы:
+**Записные книжки группы.** Чтобы получить доступ к записным книжкам группы, воспользуйтесь следующим корневым URL-адресом службы:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-**Записные книжки сайта SharePoint** Чтобы получить доступ к записным книжкам, принадлежащим сайту группы SharePoint, используйте следующий корневой URL-адрес службы:
+**Записные книжки на сайте SharePoint.** Чтобы получить доступ к записным книжкам на сайте группы SharePoint, воспользуйтесь следующим корневым URL-адресом службы:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Авторизация
 
-Для получения сведений о разрешениях, необходимых для работы с API [](/graph/permissions-reference#notes-permissions)OneNote, ознакомьтесь с разрешениями для заметок.
+Сведения о разрешениях, необходимых для работы с API OneNote, см. в разделе [Разрешения для заметок](/graph/permissions-reference#notes-permissions).
 
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|notebooks|[](notebook.md) Коллекция записных книжек|Коллекция записных книжек OneNote, принадлежащих пользователю или группе. Только для чтения. Допускается значение null.|
-|operations|Коллекция [Operation](onenoteoperation.md) |Состояние операций OneNote. Получение коллекции Operations не поддерживается, но вы можете получить состояние длительно выполняемых операций, если `Operation-Location` заголовок возвращается в ответе. Только для чтения. Допускается значение null.|
-|pages|Коллекция [страниц](page.md)|Страницы во всех записных книжках OneNote, принадлежащие пользователю или группе.  Только для чтения. Допускается значение null.|
-|resources|Коллекция [ресурсов](resource.md) |Изображение и другие файловые ресурсы на страницах OneNote. Получение коллекции ресурсов не поддерживается, но вы можете [получить двоичное содержимое определенного ресурса](resource.md). Только для чтения. Допускается значение null.|
-|sectionGroups|Коллекция [sectionGroup](sectiongroup.md)|Группы разделов во всех записных книжках OneNote, принадлежащие пользователю или группе.  Только для чтения. Допускается значение null.|
-|sections|Коллекция [section](section.md)|Разделы во всех записных книжках OneNote, принадлежащие пользователю или группе.  Только для чтения. Допускается значение null.|
+|notebooks|Коллекция [notebook](notebook.md)|Коллекция записных книжек OneNote, принадлежащих пользователю или группе. Только для чтения. Допускается значение null.|
+|operations|Коллекция [onenoteOperation](onenoteoperation.md) |Состояние операций OneNote. Получение коллекции операций не поддерживается, но можно получить состояние длительных операций, если в отклике возвращается заголовок `Operation-Location`. Только для чтения. Допускается значение null.|
+|pages|Коллекция [оненотепаже](onenotepage.md)|Страницы всех записных книжек OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
+|resources|Коллекция [оненотересаурце](onenoteresource.md) |Изображения и другие файловые ресурсы на страницах OneNote. Получение коллекции ресурсов не поддерживается, но можно [получить двоичное содержимое определенного ресурса](onenoteresource.md). Только для чтения. Допускается значение null.|
+|sectionGroups|Коллекция [sectionGroup](sectiongroup.md)|Группы разделов во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускает значение null.|
+|sections|Коллекция [оненотесектион](onenotesection.md)|Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание записной книжки](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| Создание записной книжки путем публикации в коллекции записных книжек.|
-|[Список записных книжек](../api/onenote-list-notebooks.md) |[](notebook.md) Коллекция записных книжек| Получение коллекции записных книжек.|
-|[Создание страницы](../api/onenote-post-pages.md) |[Page](page.md)| Создание страницы путем публикации в коллекции Pages.|
-|[Перечисление страниц](../api/onenote-list-pages.md) |Коллекция [страниц](page.md)| Получение коллекции страниц.|
-|[Список групп разделов](../api/onenote-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов.|
-|[Вывод списка разделов](../api/onenote-list-sections.md) |Коллекция [section](section.md)| Получение коллекции разделов.|
+|[Создание записной книжки](../api/onenote-post-notebooks.md) |[записной книжки](notebook.md)| Создание записной книжки путем публикации в коллекции записных книжек.|
+|[Перечисление записных книжек](../api/onenote-list-notebooks.md) |Коллекция [notebook](notebook.md)| Получение коллекции записных книжек.|
+|[Создание страницы](../api/onenote-post-pages.md) |[Оненотепаже](onenotepage.md) | Создание страницы путем публикации в коллекции страниц.|
+|[Перечисление страниц](../api/onenote-list-pages.md) |Коллекция [оненотепаже](onenotepage.md)| Получение коллекции страниц.|
+|[Перечисление групп разделов](../api/onenote-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов.|
+|[Перечисление разделов](../api/onenote-list-sections.md) |Коллекция [оненотесектион](onenotesection.md)| Получение коллекции разделов.|
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": [{ "@odata.type": "microsoft.graph.onenotePage" }],
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -78,8 +93,6 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenote.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

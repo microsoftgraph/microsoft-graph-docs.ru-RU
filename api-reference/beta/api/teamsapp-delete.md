@@ -4,16 +4,16 @@ description: 'Удалите приложение из каталога прил
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: e88b072e9beb9f29cf5a26c9dccac89ffa78fc39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 35a131309445f0a84bdc54690e1f88b5a0ad31f0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544593"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335236"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений Организации
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удалите [приложение](../resources/teamsapp.md) из каталога приложений организации (Каталог приложений клиента). Чтобы удалить приложение из каталога приложений вашей организации, укажите `organization` в качестве **distributionMethod** в ресурсе [теамскаталогапп](../resources/teamsapp.md) .
 
@@ -43,11 +43,11 @@ DELETE /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-Нет.
+Отсутствуют.
 
 >**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./teamsapp-list.md) , для ссылки на приложение, которое вы хотите обновить. Не используйте идентификатор из манифеста пакета приложения ZIP.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ```
 HTTP/1.1 204 No Content
@@ -58,7 +58,7 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>Запрос
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
 
 ### <a name="response"></a>Отклик

@@ -4,12 +4,12 @@ description: Получите сведения о действиях в OneDrive
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 40b4d5485998ebc39d541977c56c2afaef203819
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 485b825eabe7723529c7e013d161b4a63ed7786c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538156"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336601"
 ---
 # <a name="reportroot-getonedriveactivityuserdetail"></a>reportRoot: getOneDriveActivityUserDetail
 
@@ -71,12 +71,12 @@ CSV-файл содержит столбцы со следующими заго�
 - "User Principal Name" (Имя участника-пользователя);
 - "Is Deleted" (Удалено);
 - "Deleted Date" (Дата удаления);
-- "Last Activity Date" (Дата последнего действия);
+- Last Activity Date (дата последнего действия)
 - "Viewed Or Edited File Count" (Количество просмотренных или измененных файлов);
 - "Synced File Count" (Количество синхронизированных файлов);
 - "Shared Internally File Count" (Количество файлов, к которым предоставлен доступ внутренним пользователям);
 - "Shared Externally File Count" (Количество файлов, к которым предоставлен доступ внешним пользователям);
-- "Assigned Products" (Назначенные продукты);
+- Assigned Products (назначенные продукты)
 - "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
@@ -186,11 +186,3 @@ Content-Length: 450
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityuserdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

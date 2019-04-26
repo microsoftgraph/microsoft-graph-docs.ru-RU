@@ -3,12 +3,12 @@ title: Тип ресурса historyItem
 description: Представляет элемент журнала для действия в приложении. Действия пользователей представляют собой одно назначение в вашем приложении (например, телеПЕРЕДАЧИ, документ или текущую кампанию в видеоигре). Когда пользователь наносит это действие, задействование регистрируется в виде элемента журнала, который указывает время начала и окончания для этого действия. По мере того как пользователь повторно перезапускается с этим действием, для одного действия пользователя записываются несколько элементов журнала.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c43a4f0515f8d61625e11abe8bbdbe2464c729f9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563336"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344082"
 ---
 # <a name="historyitem-resource-type"></a>Тип ресурса historyItem
 
@@ -29,21 +29,21 @@ ms.locfileid: "32563336"
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|status | EnumType | ЗаДается сервером. Код состояния, используемый для идентификации допустимых объектов. Значения: активные, обновленные, удаленные, проигнорированы.|
+|status | string | ЗаДается сервером. Код состояния, используемый для идентификации допустимых объектов. Значения: активные, обновленные, удаленные, проигнорированы.|
 |Усертимезоне | String | Необязательное свойство. Часовой пояс, в котором устройство пользователя, используемое для создания действия, было размещено во время создания действия. Значения, предоставляемые как идентификаторы Олсона для поддержки представления на нескольких платформах.|
 |createdDateTime | DateTimeOffset | ЗаДается сервером. Дата и время в формате UTC, когда объект был создан на сервере.|
 |lastModifiedDateTime | DateTimeOffset | ЗаДается сервером. Дата и время в формате UTC, когда объект был изменен на сервере.|
 |id | String | Обязательный. Идентификатор GUID для объекта **historyItem** в клиентском наборе.|
 |Стартеддатетиме | DateTimeOffset | Обязательный. Дата и время (UTC) при запуске **historyItem** (сеанс активности). Обязательный для журнала временной шкалы.|
-|Ластактиведатетиме | DateTimeOffset | Необязательный параметр. Дата и время (в формате UTC), когда **historyItem** (сеанс активности) использовался в последний раз как активный или завершенный — если значение равно null, то состояние **HistoryItem** должно быть текущим.|
-|expirationDateTime | DateTimeOffset | Необязательный параметр. Дата и время в формате UTC, когда **historyItem** будет окончательно удален. Может быть задано клиентом.|
+|Ластактиведатетиме | DateTimeOffset | Необязательно. Дата и время (в формате UTC), когда **historyItem** (сеанс активности) использовался в последний раз как активный или завершенный — если значение равно null, то состояние **HistoryItem** должно быть текущим.|
+|expirationDateTime | DateTimeOffset | Необязательно. Дата и время в формате UTC, когда **historyItem** будет окончательно удален. Может быть задано клиентом.|
 |Активедуратионсекондс | int | Необязательный параметр. Продолжительность активных пользователей. Если этот параметр не указан, вычисляется из **стартеддатетиме** и **ластактиведатетиме**.|
 
 ## <a name="relationships"></a>Связи
 
 |Отношение | Тип | Описание|
 |:------------|:-----|:-----------|
-|activity| [действии](../resources/projectrome-activity.md) | Необязательный параметр. Свойство NavigationProperty/вложение; свойство навигации для связанного действия.|
+|activity| [действии](../resources/projectrome-activity.md) | Необязательно. Свойство NavigationProperty/вложение; свойство навигации для связанного действия.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,6 +56,7 @@ ms.locfileid: "32563336"
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.historyItem"
 }-->
 
@@ -82,8 +83,6 @@ ms.locfileid: "32563336"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,18 +1,18 @@
 ---
 title: Удаление объекта rejectedSender
-description: Удаление пользователя или группы из списка rejectedSenders.
+description: Удаление пользователя или группы из списка отклоненных отправителей.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 58936ee410b63f43d9c0a9e8efcf3eb5a96e76ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63e34e39d25ea3e3cc4d352d7caf6a71c86a5a57
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461138"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334487"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
-Удаление пользователя или группы из списка rejectedSenders.
+Удаление пользователя или группы из списка отклоненных отправителей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

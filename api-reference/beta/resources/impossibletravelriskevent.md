@@ -2,12 +2,12 @@
 title: Тип ресурса Импоссиблетравелрискевент
 description: Событие риска, обнаруженное службой удостоверений Azure Active Directory, в котором два входа с учетной записью происходят из расположений нетипично для пользователя, и вы не сможете перемещаться между расположениями в период между входами. полная информация события риска можно найти в документации по защите удостоверений Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 517a09963570ce2c4a9e58edf7b73babaaff0426
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d086a6fc127649da10184ae0396a2c58ee82964e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548329"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333605"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса Импоссиблетравелрискевент
 
@@ -28,9 +28,9 @@ ms.locfileid: "32548329"
 |Клоседдатетиме|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
 |Девицеинформатион|string| Сведения об устройстве|
-|id|string| Только для чтения|
+|id|строка| Только для чтения|
 |ipAddress|string| IP-адрес второго входа|
-|Исатипикаллокатион|логический| Если одно из расположений для пользователя является нетипичным|
+|Исатипикаллокатион|boolean| Если одно из расположений для пользователя является нетипичным|
 |location|string| Расположение, подключенное к IP-адресу второго входа|
 |Превиаусипаддресс|string| IP-адрес первого входа|
 |Превиауслокатион|string| Расположение, подключенное к IP-адресу первого входа|
@@ -44,17 +44,18 @@ ms.locfileid: "32548329"
 |userId|string| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -80,7 +81,8 @@ ms.locfileid: "32548329"
   "userAgent": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -94,8 +96,6 @@ ms.locfileid: "32548329"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/impossibletravelriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

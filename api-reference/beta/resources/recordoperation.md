@@ -4,12 +4,12 @@ description: Тип Рекордоператион
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75760e38dde13a02624db987d521e3b02977901d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563043"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343933"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса Рекордоператион
 
@@ -31,7 +31,7 @@ ms.locfileid: "32563043"
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения. Создается сервером.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Создается сервером.                                                 |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

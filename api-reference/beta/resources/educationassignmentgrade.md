@@ -4,12 +4,12 @@ description: " Тем не менее, все типы ступенчатого 
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 5ca13ba057ef000a468d910d49288d9ae8e0c962
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e925059a5eb06e5cc9795f78368b884fa40dd3ff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543023"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334546"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>Тип ресурса Едукатионассигнментграде
 
@@ -22,9 +22,9 @@ ms.locfileid: "32543023"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Градедби|[identitySet](identityset.md)| Пользователь, который выполнил ступенчатое. |
-|Градеддатетиме|DateTimeOffset| Момент времени, когда уровень был применен к этому объекту отправки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Градеддатетиме|DateTimeOffset| Момент времени, когда уровень был применен к этому объекту отправки. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -53,8 +53,6 @@ ms.locfileid: "32543023"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentgrade.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

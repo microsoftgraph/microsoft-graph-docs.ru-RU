@@ -4,14 +4,16 @@ description: Ресурс **планнерекстерналреференце**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 95084e8a4d2d1b117fc627902b2bd8163fcc82f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d2bce70afbeee3848f3055530daf732afe8a2b5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461243"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344825"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Тип ресурса Планнерекстерналреференце
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **планнерекстерналреференце** представляет метаданные ссылки (например, файл, URL-адрес). Это значение пар "свойство-значение" в [объекте екстерналреференцес](plannerexternalreferences.md).
 
@@ -22,7 +24,7 @@ ms.locfileid: "32461243"
 |:---------------|:--------|:----------|
 |alias|String|Псевдоним имени для описания ссылки.|
 |lastModifiedBy|[identitySet](identityset.md)|Только для чтения. Идентификатор пользователя, на который последний раз изменился.|
-|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Превиевприорити|String|Используется для задания относительного порядка приоритетов, в соответствии с которым ссылка будет отображаться в качестве предварительной версии для задачи.|
 |type|String|Используется для описания типа ссылки. Типы включают: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
@@ -50,10 +52,13 @@ ms.locfileid: "32461243"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerExternalReference resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

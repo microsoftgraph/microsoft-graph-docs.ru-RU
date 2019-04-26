@@ -4,12 +4,12 @@ description: Изменение свойств для записи в задач
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 47a96d7e1fd7044bcc43edac809696c5a3ad2c42
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539847"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332708"
 ---
 # <a name="update-outlooktask"></a>Обновление outlooktask
 
@@ -45,9 +45,9 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -56,12 +56,12 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |assignedTo|String|Имя пользователя, которому назначена задача.|
 |body|[itemBody](../resources/itembody.md)|Текст задачи, который обычно содержит сведения о задаче. Обратите внимание, что поддерживается только тип HTML.|
 |categories|Коллекция String|Категории, связанные с задачей.|
-|changeKey|String|Версия задачи.|
+|changeKey|Строка|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача была завершена.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
 |hasAttachments|Boolean|Присвоено значение true, если у задачи есть вложения.|
-|importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
+|importance|строка|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |owner|String|Имя пользователя, создавшего задачу.|
@@ -73,7 +73,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |status|string|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|Краткое описание или название задачи.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
@@ -88,8 +88,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
-
+PATCH https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTHgwAAA=
 Prefer: outlook.timezone="Eastern Standard Time"
 Content-type: application/json
 Content-length: 76
@@ -160,8 +159,6 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

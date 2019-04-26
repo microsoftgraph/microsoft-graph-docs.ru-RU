@@ -4,12 +4,12 @@ description: Узнайте, сколько пользователей были 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f04f892e3bcfe593ebd1d5a4ca04cf70f0dd38e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e608e16f4745067980167cca52060d08ab0e4f95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538107"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336664"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 
@@ -17,7 +17,7 @@ ms.locfileid: "32538107"
 
 Узнайте, сколько пользователей были активны и неактивны в каждой службе.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: активные пользователи](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -63,7 +63,7 @@ URL-адреса для скачивания, для которых выполн
 
 CSV-файл содержит столбцы со следующими заголовками:
 
-- Report Refresh Date (дата обновления отчета)
+- "Report Refresh Date" (Дата обновления отчета);
 - Exchange Active (активны в Exchange)
 - Exchange Inactive (неактивны в Exchange)
 - OneDrive Active (активны в OneDrive)
@@ -78,7 +78,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Teams Inactive (неактивны в Teams)
 - Office 365 активен
 - Office 365 неАктивен
-- Report Period (Отчетный период).
+- "Report Period" (Отчетный период).
 
 Следующие столбцы не поддерживаются в Китае Microsoft Graph, предоставляемом компанией 21Vianet:
 
@@ -202,11 +202,3 @@ Content-Length: 458
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getoffice365servicesusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

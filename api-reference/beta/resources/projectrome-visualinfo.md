@@ -3,14 +3,16 @@ title: Тип ресурса Висуалинфо
 description: Сложный тип для представления свойства **висуалелементс** в объекте Activity.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 56d3822c89de074847aeab6c8a0a742ecd7f006f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02c7318f45f711da3a27b03747aac94fd9706
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563412"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344069"
 ---
 # <a name="visualinfo-resource-type"></a>Тип ресурса Висуалинфо
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложный тип для представления свойства **висуалелементс** в объекте [Activity](../resources/projectrome-activity.md) .
 
@@ -27,8 +29,8 @@ ms.locfileid: "32563412"
 |Дисплайтекст | String | Обязательный. Краткое текстовое описание уникального действия пользователя (например, имя документа в тех случаях, когда действие относится к созданию документа)|
 |description | String | Необязательное свойство. Длинное текстовое описание уникального действия пользователя (пример: имя документа, первое предложение и/или метаданные)|
 |Баккграундколор | String | Необязательное свойство. Цвет фона, используемый для отображения активности в цвете ПОЛЬЗОВАТЕЛЬСКОГО интерфейса для источника действия приложения. Должно быть допустимым шестнадцатеричным цветом|
-|содержимое | Нетипизированный объект JSON | Необязательный параметр. Настраиваемый фрагмент объекта data: JSON, используемый для предоставления настраиваемого содержимого для отображения действий в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе оболочки Windows|
-|Attribution | [Имажеинфо](../resources/projectrome-imageinfo.md) | Необязательный параметр. Объект JSON, используемый для представления значка, представляющего приложение, используемое для создания действия|
+|содержимое | Нетипизированный объект JSON | Необязательно. Настраиваемый фрагмент объекта data: JSON, используемый для предоставления настраиваемого содержимого для отображения действий в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе оболочки Windows|
+|Attribution | [Имажеинфо](../resources/projectrome-imageinfo.md) | Необязательно. Объект JSON, используемый для представления значка, представляющего приложение, используемое для создания действия|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,7 +49,7 @@ ms.locfileid: "32563412"
 
 ```json
 {
-    "@odata.type": "microsoft.graph.visualInfo",
+    "@data.type": "microsoft.graph.visualInfo",
     "attribution": {
         "@odata.type": "microsoft.graph.imageInfo",
         "iconUrl": "String (URL)",
@@ -58,17 +60,20 @@ ms.locfileid: "32563412"
     "backgroundColor": "String",
     "displayText": "String",
     "content": {
-        "@odata.type": "microsoft.graph.Json"
+        "@data.type": "microsoft.graph.Json"
     }
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "visualinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

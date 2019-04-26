@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Пакет
+title: Режим
 localization_priority: Normal
-ms.openlocfilehash: bcfc1a1e754286566c8b24b9b00c7f2eb0721316
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22acb26168e2973a789a5de919063f250fb77e8b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568638"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344980"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
 

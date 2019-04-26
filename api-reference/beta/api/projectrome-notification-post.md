@@ -3,12 +3,12 @@ title: Создание и отправление уведомления
 description: 'Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546403"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331954"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,11 +32,11 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string |Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательный. |
+|Authorization | string |Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательно. |
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [уведомления](../resources/projectrome-notification.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, указывающий, что уведомление было успешно создано и сохранено. 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
@@ -94,11 +94,3 @@ location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-9
 ```
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-notification-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедролеассигнментрекуест
 description: Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 localization_priority: Normal
-ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ead028d61fcbf6fe7cebf13291c0ba5231f0ba22
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563361"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344279"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>Тип ресурса Привилежедролеассигнментрекуест
 
@@ -21,7 +21,7 @@ ms.locfileid: "32563361"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | Коллекция [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
+|[Список](../api/privilegedroleassignmentrequest-list.md) | Коллекция [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
 |[Создание](../api/privilegedroleassignmentrequest-post.md)|  [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Создание запроса на управление жизненным циклом существующего или нового назначения роли.|
 |[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена ожидающего запроса на назначение роли.|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |Получение запроса на назначение роли для текущего рекустор.|
@@ -37,7 +37,7 @@ ms.locfileid: "32563361"
 |Рекуестеддатетиме|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| Идентификатор роли.|
 |Диспетчер|[governanceSchedule](governanceschedule.md)| Объект расписания для запроса на назначение роли.|
-|status|Строка| Только для чтения. состояние запроса на назначение роли. Возможные значения `NotStarted``Completed`:,`RequestedApproval``Scheduled``Approved``Revoked``RequestExpired`,,,,,,,,,.`ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
+|status|String| Только для чтения. состояние запроса на назначение роли. Возможные значения `NotStarted``Completed`:,`RequestedApproval``Scheduled``Approved``Revoked``RequestExpired`,,,,,,,,,.`ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
 |Тиккетнумбер|String| Тиккетнумбер для назначения роли. |
 |Тиккетсистем|String| Тиккетсистем для назначения роли.|
 |type|String| Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: Администраторы Add Users to Roles; `UserAdd`: Пользователи добавляют назначения ролей.|
@@ -57,6 +57,7 @@ ms.locfileid: "32563361"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 }-->
 
@@ -87,8 +88,6 @@ ms.locfileid: "32563361"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

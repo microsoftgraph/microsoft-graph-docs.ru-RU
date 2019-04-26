@@ -2,12 +2,12 @@
 title: Отправка команд для устройства
 description: 'Этот API позволяет функциям Project Рим выполнять командное устройство, связанное с учетной записью Майкрософт. После выполнения вызова GET `me/devices`, передайте идентификатор устройства, чтобы выдать команду на устройство. Поддерживаются два типа команд: Лаунчури и Аппсервицес. Если вы используете Лаунчури, укажите *тип* и параметры *полезных данных* . Для вызова включающее укажите '
 localization_priority: Normal
-ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537536"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336041"
 ---
 # <a name="send-device-command"></a>Отправка команд для устройства
 
@@ -56,7 +56,7 @@ POST me/devices/{id}/commands
 }
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 201 OK
@@ -86,7 +86,7 @@ HTTP/1.1 201 OK
 |Паккажефамилинаме | String | Имя семейства пакетов Windows Application. |
 |Аппсервиценаме | String | Имя службы приложений, определенной конечным приложением. Является обязательным при запуске службы приложений. |
 |type| String | Лаунчури или включающее. |
-|id| String | Идентификатор команды, отправленной на устройство. |
+|id| Строка | Идентификатор команды, отправленной на устройство. |
 |Актионстатус | String | [Состояние](get-device-command-status.md) команды. |
 |error| String| Все ошибки, связанные с запросом от конечного приложения. |
 
@@ -120,7 +120,7 @@ Content-Type: application/json; charset=utf-8
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -179,7 +179,7 @@ Content-Type: application/json; charset=utf-8
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -202,11 +202,3 @@ HTTP/1.1 201 OK
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

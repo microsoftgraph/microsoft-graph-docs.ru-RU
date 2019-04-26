@@ -2,12 +2,12 @@
 title: Создание Синчронизатионтемплате
 description: Создайте новый шаблон синхронизации для конкретного приложения.
 localization_priority: Normal
-ms.openlocfilehash: ce519b57766956b10d05b6b3745ca16f609b597c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8bf6701468621f90adf7d3e7cc28cbdbd4c97083
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536966"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335530"
 ---
 # <a name="create-synchronizationtemplate"></a>Создание Синчронизатионтемплате
 
@@ -40,7 +40,7 @@ POST /applications/{id}/synchronization/templates/
 
 В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) , который требуется создать. `id`Свойства `applicationId` и `factoryTag` свойства являются обязательными. Если с `schema` шаблоном не предоставляется никакой шаблон, будет использоваться схема по умолчанию, связанная со `factoryTag` свойством.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
 
@@ -94,8 +94,6 @@ HTTP/1.1 201 Created
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

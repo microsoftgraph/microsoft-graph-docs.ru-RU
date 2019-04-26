@@ -2,12 +2,12 @@
 title: Настройка синхронизации с пользовательскими целевыми атрибутами
 description: Вы можете настроить схему синхронизации, включив в нее настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается, как настроить подписку на Salesforce, добавив новое `officeCode`поле с именем. Вы настраиваете синхронизацию из Azure Active Directory (Azure AD) с Salesforce, и для каждого пользователя вы заполните `officeCode` поле в Salesforce значением из `extensionAttribute10` поля в Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a6f33c0325c8e062c2e704c7f1d319148a051ba
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582151"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342942"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с пользовательскими целевыми атрибутами
 
@@ -95,6 +95,7 @@ Authorization: Bearer {Token}
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "directories": [
@@ -262,11 +263,3 @@ HTTP/1.1 201 No Content
 ```
 
 Если схема была успешно сохранена, в следующей итерации задания синхронизации начнется повторная обработка всех учетных записей в Azure AD, а новые сопоставления будут применены ко всем подготовленным учетным записям.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

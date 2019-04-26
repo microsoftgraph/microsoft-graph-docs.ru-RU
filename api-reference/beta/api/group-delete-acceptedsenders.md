@@ -1,21 +1,21 @@
 ---
 title: Удаление объекта acceptedSender
-description: 'Удаление пользователя или группы из списка acceptedSenders. '
+description: 'Удаление пользователя или группы из списка принятых отправителей. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a3406c028990b7b5989036f4173cf86f257b4f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22e81f8bbbb497b8209e6faa744a54b24029391c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503100"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329771"
 ---
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление пользователя или группы из списка acceptedSenders. 
+Удаление пользователя или группы из списка принятых отправителей для указанной группы. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "32503100"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -40,21 +40,19 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>Пример 1: Удаление пользователя из списка обслуживаемых отправителей для группы.
 #### <a name="request"></a>Запрос
-Ниже представлено несколько примеров запроса.
 
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "remove_user_from_acceptedsenderslist_of_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
-
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{user-id}
 ```
 
 #### <a name="response"></a>Отклик
@@ -62,6 +60,30 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 
 <!-- {
   "blockType": "response",
+  "name": "remove_user_from_acceptedsenderslist_of_group",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>Пример 2: Удаление группы из списка обслуживаемых отправителей для группы.
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "remove_group_from_acceptedsenderslist_of_group"
+}-->
+```http
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{other-group-id}
+```
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+<!-- {
+  "blockType": "response",
+  "name": "remove_group_from_acceptedsenderslist_of_group",
   "truncated": true
 } -->
 ```http
@@ -73,12 +95,10 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create acceptedSender",
+  "description": "Remove acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-acceptedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

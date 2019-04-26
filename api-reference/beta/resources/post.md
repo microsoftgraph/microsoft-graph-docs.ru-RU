@@ -4,12 +4,12 @@ description: Представляет отдельный элемент POST в 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: abfd2b19681b9821377830f1696fa6f754afd711
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563598"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344242"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 
@@ -26,7 +26,7 @@ ms.locfileid: "32563598"
 
 С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](/graph/extensibility-overview).
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -39,6 +39,8 @@ ms.locfileid: "32563598"
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.post"
 }-->
 
@@ -82,8 +84,8 @@ ms.locfileid: "32563598"
 ## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для POST. Только для чтения. Допускается значение null.|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для записи. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для POST. Только для чтения. Допускает значение null.|
+|extensions|Коллекция [Extension](extension.md)|Коллекция открытых расширений, определенных для записи. Только для чтения. Допускает значение null.|
 |Инреплито|[Post](post.md)|Предыдущая запись, на которую отвечает эта запись, находится в [conversationThread](conversationthread.md). Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|
@@ -97,7 +99,7 @@ ms.locfileid: "32563598"
 |[Ответ](../api/post-reply.md)|Нет|Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы.|
 |[Переадресация](../api/post-forward.md)|Нет|Переадресация публикации получателю.|
 |**Вложения**| | |
-|[Список вложений](../api/post-list-attachments.md) |Коллекция [attachment](attachment.md)| Получает все вложения для экземпляра post.|
+|[Список вложений](../api/post-list-attachments.md) |Коллекция [attachment](attachment.md) | Получает все вложения для экземпляра post.|
 |[Добавление вложения](../api/post-post-attachments.md) |[attachment](attachment.md)| Добавление вложения в публикацию. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
@@ -126,8 +128,6 @@ ms.locfileid: "32563598"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

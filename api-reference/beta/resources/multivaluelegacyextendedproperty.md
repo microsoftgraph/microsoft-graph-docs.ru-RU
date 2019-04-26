@@ -2,12 +2,12 @@
 title: Тип ресурса multiValueLegacyExtendedProperty
 description: Расширенное свойство, содержащее коллекцию значений.
 localization_priority: Normal
-ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a30f8cf2a77e43db028c069fc36dc5cd8f360a3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506259"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342186"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Тип ресурса multiValueLegacyExtendedProperty
 
@@ -27,10 +27,10 @@ ms.locfileid: "32506259"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Идентификатор свойства. Только для чтения.|
+|id|string|Идентификатор свойства. Только для чтения.|
 |значение|Коллекция строк|Коллекция значений свойств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -43,7 +43,7 @@ ms.locfileid: "32506259"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json
@@ -63,8 +63,6 @@ ms.locfileid: "32506259"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/multivaluelegacyextendedproperty.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

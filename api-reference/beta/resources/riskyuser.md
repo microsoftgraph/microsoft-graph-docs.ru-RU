@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса riskyUsers
+title: Тип ресурса Рискюсер
 description: Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 179a6cbddf3e4b27c47761bd81aad1052ae7f728
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563184"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343537"
 ---
-# <a name="riskyusers-resource-type"></a>Тип ресурса riskyUsers
+# <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,8 +57,9 @@ ms.locfileid: "32563184"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.riskyUser"
 }-->
 

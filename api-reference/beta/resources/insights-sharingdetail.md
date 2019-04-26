@@ -4,12 +4,12 @@ description: 'Сложный тип, содержащий свойства об�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a2dc75ed2a62d7a67538bdef801bd97133fbd15
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551563"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333568"
 ---
 # <a name="sharingdetail-resource-type"></a>Тип ресурса Шарингдетаил
 
@@ -19,7 +19,13 @@ ms.locfileid: "32551563"
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже показано представление JSON ресурса.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.sharingDetail"
+}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",
@@ -39,11 +45,3 @@ ms.locfileid: "32551563"
 | Шарингтипе             | String        | Определяет способ предоставления общего доступа к документу, который может быть "ссылка", "вложение", "Группа", "сайт".     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, имеющий общий доступ к документу.  |
 | Шарингреференце        | [Ресаурцереференце](insights-resourcereference.md)      |  |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-sharingdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

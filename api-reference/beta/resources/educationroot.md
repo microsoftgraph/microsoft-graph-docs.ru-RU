@@ -4,12 +4,12 @@ description: 'Пространство имен `/education` обеспечив�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 91f0162402b8c87042fab622710d314f27d6f4e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83879a2fe448e97f62dc592b42d1cbc1d3d5cf39
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507156"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334194"
 ---
 # <a name="educationroot-resource-type"></a>Тип ресурса educationRoot
 
@@ -31,12 +31,12 @@ ms.locfileid: "32507156"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение null.|
-|me|[educationUser](educationuser.md)| Только для чтения. Допускается значение null.|
-|schools|Коллекция [educationSchool](educationschool.md)| Только для чтения. Допускается значение null.|
+|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускает значение null.|
+|me|[educationUser](educationuser.md)| Только для чтения. Допускает значение null.|
+|schools|Коллекция [educationSchool](educationschool.md)| Только для чтения. Допускает значение null.|
 |users|Коллекция [educationUser](educationuser.md)| Только для чтения. Допускается значение NULL.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -48,8 +48,6 @@ ms.locfileid: "32507156"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationroot.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

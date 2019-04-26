@@ -2,12 +2,12 @@
 title: Тип ресурса servicePrincipal
 description: Представляет экземпляр приложения в каталоге. Наследуется от directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63a313aa12943909a11e8f3b5fa9a7f1edeb1e75
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571865"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345722"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 

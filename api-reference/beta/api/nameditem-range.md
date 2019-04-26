@@ -2,12 +2,12 @@
 title: 'NamedItem: Range'
 description: Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.
 localization_priority: Normal
-ms.openlocfilehash: 283eadbe423fad415534bb4e355f7926e24628be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f122009bb0cbd6857d6890ac972a98fe8dd3ff67
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540376"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333115"
 ---
 # <a name="nameditem-range"></a>NamedItem: Range
 
@@ -26,7 +26,7 @@ ms.locfileid: "32540376"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/Range
+POST /workbook/names/{name}/Range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -39,7 +39,7 @@ POST /workbook/names(<name>)/Range
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -50,7 +50,7 @@ POST /workbook/names(<name>)/Range
   "name": "nameditem_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/Range
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/Range
 ```
 
 ##### <a name="response"></a>Отклик
@@ -58,7 +58,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -84,8 +84,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/nameditem-range.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

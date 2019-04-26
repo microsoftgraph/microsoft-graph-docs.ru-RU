@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта **
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ad7c9853b4f00850e77f3bc70e0136abfec3064
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 878c2a96ca8cf709f4c8ce9a14d0bb4b78448cd7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545632"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331546"
 ---
 # <a name="get-riskyuser"></a>Получение Рискюсер
 
@@ -39,7 +39,7 @@ GET /riskyUsers/{id}
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательный параметр.|
+| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -77,7 +77,7 @@ Content-type: application/json
   "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Alex Wilbur",
   "userPrincipalName": "alexw@contoso.com"
 }

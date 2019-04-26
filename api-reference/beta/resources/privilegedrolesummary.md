@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедролесуммари
 description: Сводка статистики для определенной роли.
 localization_priority: Normal
-ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3e7b447f63c5f8545021508ae2dc137bef845210
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563436"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344290"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>Тип ресурса Привилежедролесуммари
 
@@ -25,14 +25,14 @@ ms.locfileid: "32563436"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Елеватедкаунт|Int32|Число пользователей с назначенной ролью и активацией роли.|
-|id|string| Уникальный идентификатор для роли. Только для чтения.|
-|Манажедкаунт|Int32|Количество пользователей, которым назначена роль, но отключена роль.|
+|Елеватедкаунт|int32|Число пользователей с назначенной ролью и активацией роли.|
+|id|строка| Уникальный идентификатор для роли. Только для чтения.|
+|Манажедкаунт|int32|Количество пользователей, которым назначена роль, но отключена роль.|
 |Мфаенаблед|boolean|**значение true** , если для активации роли требуется mfa. **false** , если для активации роли не требуется mfa.|
 |status|string| Возможные значения: `ok`, `bad`. Значение зависит от коэффициента (Манажедкаунт/Усерскаунт). Если отношение меньше заданного порогового значения, `ok` возвращается. `bad` В противном случае возвращается.|
-|Усерскаунт|Int32|Число пользователей, которым назначена роль.|
+|Усерскаунт|int32|Число пользователей, которым назначена роль.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -69,8 +69,6 @@ ms.locfileid: "32563436"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrolesummary.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

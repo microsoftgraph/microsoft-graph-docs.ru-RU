@@ -1,17 +1,17 @@
 ---
-title: Обновление объекта chartdatalabels
-description: Обновление свойств объекта chartdatalabels.
+title: Обновление Воркбукчартдаталабелс
+description: Обновление свойств объекта воркбукчартдаталабелс.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b7eb067bed747ae2532939e61a9e0dec58ff4655
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aeb4bf0af0c61429548bb1d01ab2049122bfda3b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456481"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327788"
 ---
-# <a name="update-chartdatalabels"></a>Обновление объекта chartdatalabels
+# <a name="update-workbookchartdatalabels"></a>Обновление Воркбукчартдаталабелс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "32456481"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
+PATCH /workbook/worksheets/{id|name}/charts/{name}/datalabels
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -36,23 +36,23 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |разделитель|string|Строка, представляющая разделитель для меток данных на диаграмме.|
-|showBubbleSize|логический|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
-|showCategoryName|логический|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
-|showLegendKey|логический|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|
-|showPercentage|логический|Логическое значение, которое указывает, отображается ли процентное соотношение меток данных.|
-|showSeriesName|логический|Логическое значение, которое указывает, отображается ли имя ряда для меток данных.|
+|showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
+|showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
+|showLegendKey|boolean|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|
+|showPercentage|boolean|Логическое значение, которое указывает, отображается ли процентное соотношение меток данных.|
+|showSeriesName|boolean|Логическое значение, которое указывает, отображается ли имя ряда для меток данных.|
 |showValue|boolean|Логическое значение, которое указывает, отображается ли значение метки данных.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartDataLabels](../resources/chartdatalabels.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартдаталабелс](../resources/workbookchartdatalabels.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -61,7 +61,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
   "name": "update_chartdatalabels"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/datalabels
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels
 Content-type: application/json
 Content-length: 134
 
@@ -78,7 +78,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -103,8 +103,6 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartdatalabels-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

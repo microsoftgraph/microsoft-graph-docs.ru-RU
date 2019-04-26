@@ -2,12 +2,12 @@
 title: Общие сведения об API синхронизации Azure AD
 description: ') позволяет автоматизировать создание, Обслуживание и удаление удостоверений в приложениях Cloud (программное обеспечение, в качестве службы или SaaS), таких как Dropbox, Salesforce, ServiceNow и т. д. С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:'
 localization_priority: Normal
-ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e472acc60e74c6a22a744d84e7e4dcf672337a6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523464"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342936"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Общие сведения об API синхронизации Azure AD
 
@@ -198,11 +198,3 @@ HTTP/1.1 200 OK
 
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

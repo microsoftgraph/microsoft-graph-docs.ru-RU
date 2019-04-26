@@ -4,12 +4,12 @@ description: Получение списка объектов rangeborder.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 44bb169f099c1b2a7870a0d962cf29829273c392
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 904f7a7d8019447ef632d2c0126f75d246461600
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546163"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331766"
 ---
 # <a name="list-borders"></a>Список границ
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546163"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/borders
+GET /workbook/names/{name}/range/format/borders
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
@@ -44,9 +44,9 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [RangeBorder](../resources/rangeborder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,14 +55,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
   "name": "get_borders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder",
+  "@odata.type": "microsoft.graph.workbookRangeBorder",
   "isCollection": true
 } -->
 ```http
@@ -92,8 +92,6 @@ Content-length: 185
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangeformat-list-borders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

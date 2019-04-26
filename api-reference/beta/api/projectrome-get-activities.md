@@ -3,12 +3,12 @@ title: Получение действий пользователей
 description: Получение действий для определенного пользователя. В отличие от **последней** функции OData, будут возвращены действия без журналов. Разрешение UserActivity. ReadWrite. CreatedByApp будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d09f7fef3d6666885e776f70f439f273d3cdb95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546334"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331912"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
@@ -62,7 +62,7 @@ GET /me/activities
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика с действиями пользователя для вашего приложения.
 
@@ -150,8 +150,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-get-activities.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

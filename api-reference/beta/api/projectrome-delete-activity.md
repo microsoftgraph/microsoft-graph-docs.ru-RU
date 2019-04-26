@@ -3,14 +3,16 @@ title: Удаление действия
 description: Удаление существующего действия пользователя для вашего приложения.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 78a3d2363d569a66985199fa2a6b2c6a5f6e5d30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e22b9a0d3a238f2e976fa83a290769b2e099030
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546393"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331941"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление существующего действия пользователя для вашего приложения.
 
@@ -43,7 +45,7 @@ DELETE /me/activities/{id}
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если действие было удалено.
 
@@ -59,7 +61,7 @@ DELETE /me/activities/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
+DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 ```
 
 ##### <a name="response"></a>Отклик
@@ -77,10 +79,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

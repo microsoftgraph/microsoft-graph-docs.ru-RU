@@ -4,12 +4,12 @@ description: 'Представляет курс в учебном заведен
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2a1fb4434933a4cc41c9a84c54864f2211f40962
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542891"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334434"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -36,7 +36,7 @@ ms.locfileid: "32542891"
 |[Создание Едукатионкатегори](../api/educationclass-post-category.md) | [Едукатионкатегори](educationCategory.md) | Создание нового **едукатионкатегори** для этого класса.|
 |[Перечисление категорий](../api/educationclass-list-categories.md) | Коллекция [едукатионкатегори](educationCategory.md) | Получение списка объектов **едукатионкатегори** , принадлежащих этому классу.|
 |[Обновление](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Обновление объекта **educationClass**. |
-|[Удаление](../api/educationclass-delete.md) | Нет |Удаление объекта **educationClass**. |
+|[Delete](../api/educationclass-delete.md) | Нет |Удаление объекта **educationClass**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -53,13 +53,13 @@ ms.locfileid: "32542891"
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|
-|schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение null.|
+|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускает значение null.|
+|schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускает значение null.|
 |teachers|Коллекция [educationUser](../resources/educationuser.md)|  Все преподаватели для этого курса. Допускается значение NULL.|
-|assignments|Коллекция [educationAssignment](../resources/educationassignment.md)| Все назначения, связанные с этим классом. Допускается значение null.|
+|assignments|Коллекция [educationAssignment](../resources/educationassignment.md)| Все назначения, связанные с этим классом. Допускает значение null.|
 |categories|Коллекция [едукатионкатегори](../resources/educationassignment.md)| Все категории, связанные с этим классом. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,6 +68,7 @@ ms.locfileid: "32542891"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -99,8 +100,6 @@ ms.locfileid: "32542891"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

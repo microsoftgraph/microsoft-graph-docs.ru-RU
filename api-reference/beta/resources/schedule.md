@@ -4,12 +4,12 @@ description: Коллекция Счедулингграупс, Shift, Тиме�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: de3662fcf3c5a8e50493e365f6a10a8641a451df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48b3b5c118a39442469bc6155068664fcebe0ec2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563151"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343523"
 ---
 # <a name="schedule-resource-type"></a>Тип ресурса "Расписание"
 
@@ -31,7 +31,7 @@ ms.locfileid: "32563151"
 | id                    |`string`  |Идентификатор объекта `schedule`.|
 | enabled               |`bool`    | Указывает, включено ли расписание для группы. Обязательный.|
 | timeZone              |`string`  | Указывает часовой пояс, в течение которого Группа расписаний использует формат базы данных. Обязательный.|
-| Провисионстатус       |`enum`    | Состояние подготовки расписания. |
+| Провисионстатус       |`operationStatus`    | Состояние подготовки расписания. `notStarted`Возможные значения: `running`,, `completed`,. `failed` |
 | Провисионстатускоде   |`string`  | Дополнительные сведения о том, почему не удалось подготовить расписание. |
 
 
@@ -74,8 +74,6 @@ ms.locfileid: "32563151"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

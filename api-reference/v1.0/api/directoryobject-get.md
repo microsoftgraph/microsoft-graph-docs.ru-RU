@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 79cf534fc154257a952bef6494c3aa0124dfb928
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571949"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -35,8 +35,8 @@ GET /directoryObjects/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 

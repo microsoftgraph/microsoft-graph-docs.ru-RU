@@ -4,12 +4,12 @@ description: Копирует записную книжку в папку "за�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 7100d768fb411aeab8ccbd0622de26aeae8a7133
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 693268bc8f9343e93a2edeece4e232cfc15224fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540382"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333122"
 ---
 # <a name="notebook-copynotebook"></a>Записная книжка: Включеныcopynotebook
 
@@ -52,7 +52,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
 |Ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 
@@ -95,8 +95,6 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/notebook-copynotebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
