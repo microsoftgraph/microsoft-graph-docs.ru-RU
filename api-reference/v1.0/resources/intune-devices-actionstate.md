@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e06b492e41ffa5e2f9aa4b64782e96125ea746a2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261490"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548462"
 ---
 # <a name="actionstate-enum-type"></a>тип перечисления actionState
 
@@ -21,12 +21,12 @@ ms.locfileid: "30261490"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Недопустимое состояние действия|
-|закончен|1,1|Ожидается действие|
-|закрыт|2|Действие отменено.|
-|ASP|4|Действие активно.|
-|done|4|Действие выполнено без ошибок.|
-|failed|17:00|Не удалось выполнить действие|
-|notSupported|6|Действие не поддерживается.|
+|закончен|1 |Ожидается действие|
+|закрыт|2 |Действие отменено.|
+|ASP|3 |Действие активно.|
+|done|4 |Действие выполнено без ошибок.|
+|сбоев|5 |Не удалось выполнить действие|
+|notSupported|6 |Действие не поддерживается.|
 
 
 
