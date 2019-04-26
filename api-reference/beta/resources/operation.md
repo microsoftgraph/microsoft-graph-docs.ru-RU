@@ -1,19 +1,19 @@
 ---
-title: Тип ресурса операции
-description: Состояние выполнения длительной операции.
+title: Тип ресурса Operation
+description: Состояние длительной операции.
 localization_priority: Normal
 ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568912"
 ---
-# <a name="operation-resource-type"></a>Тип ресурса операции
+# <a name="operation-resource-type"></a>Тип ресурса Operation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Состояние выполнения длительной операции.
+Состояние длительной операции.
 
 ## <a name="methods"></a>Методы
 
@@ -24,8 +24,8 @@ ms.locfileid: "29520188"
 | Свойство           | Тип            | Описание                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | Время начала операции.                                                |
-| id                 | String          | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
-| lastActionDateTime | DateTimeOffset  | Время последнего действия операции.                                   |
+| id                 | Строка          | Идентификатор операции. Только для чтения. Создается сервером.                                  |
+| Ластактиондатетиме | DateTimeOffset  | Время последнего действия операции.                                   |
 | status             | String          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
 ## <a name="relationships"></a>Отношения

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 416d07266f9564bc8685447ee5a318014d462d69
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770965"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555992"
 ---
 # <a name="hashalgorithms-enum-type"></a>тип перечисления Хашалгорисмс
 
@@ -22,8 +22,8 @@ ms.locfileid: "31770965"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|хэшем|1,1|Хэш-алгоритм SHA-1.|
-|SHA2|2|Хэш-алгоритм SHA-2.|
+|хэшем|1 |Хэш-алгоритм SHA-1.|
+|SHA2|2 |Хэш-алгоритм SHA-2.|
 
 
 

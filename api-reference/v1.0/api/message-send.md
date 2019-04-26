@@ -1,15 +1,15 @@
 ---
 title: 'message: send'
-description: Отправьте сообщение в папке «Черновики». Черновик сообщения могут быть новый черновик сообщения, ответ черновиков, ответить всем черновиков или
+description: Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 3f9740f74238012571abcfa7f406fd12ed58c9e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463595"
 ---
 # <a name="message-send"></a>message: send
 
@@ -39,9 +39,9 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Length | число | 0. требуется. |
+| Content-Length | число | 0. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5d9b5e9382d074d54b3fb0d42e2a18682bf28654
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801045"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556475"
 ---
 # <a name="androidforworkcompliancepolicy-resource-type"></a>Тип ресурса androidForWorkCompliancePolicy
 
@@ -26,15 +26,15 @@ ms.locfileid: "31801045"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список АндроидфорворккомплианцеполиЦиес](../api/intune-deviceconfig-androidforworkcompliancepolicy-list.md)|Коллекция [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Список свойств и связей объектов [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
-|[Получение androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-get.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Чтение свойств и связей объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
-|[Создание androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-create.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Создание нового объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
+|[Получение androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-get.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md);|Чтение свойств и связей объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
+|[Создание androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-create.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md);|Создание нового объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
 |[Удаление androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-delete.md)|Нет|Удаляет объект [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md).|
-|[Обновление androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-update.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md)|Обновление свойств объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
+|[Обновление androidForWorkCompliancePolicy](../api/intune-deviceconfig-androidforworkcompliancepolicy-update.md)|[androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md);|Обновление свойств объекта [androidForWorkCompliancePolicy](../resources/intune-deviceconfig-androidforworkcompliancepolicy.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
@@ -48,20 +48,20 @@ ms.locfileid: "31801045"
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа, допустимых до сброса заводских настроек. Допустимые значения — от 1 до 16.|
-|securityPreventInstallAppsFromUnknownSources|Boolean|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
-|securityDisableUsbDebugging|Boolean|Запрещает USB-отладку на устройствах с Android.|
-|securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
-|deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
+|securityPreventInstallAppsFromUnknownSources|Логический|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
+|securityDisableUsbDebugging|Логический|Запрещает USB-отладку на устройствах с Android.|
+|securityRequireVerifyApps|Логический|Указывает, что требуется включить функцию проверки приложений для Android.|
+|deviceThreatProtectionEnabled|Логический|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[Девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
+|securityBlockJailbrokenDevices|Логический|Устройства нельзя взламывать и рутовать.|
 |osMinimumVersion|String|Минимальная версия Android.|
 |osMaximumVersion|String|Максимальная версия Android.|
 |minAndroidSecurityPatchLevel|String|Минимальный уровень обновления для системы безопасности Android.|
 |storageRequireEncryption|Boolean|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Указывает, что устройству требуется пройти проверку сертификата SafetyNet.|
-|securityRequireGooglePlayServices|Boolean|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
-|securityRequireUpToDateSecurityProviders|Boolean|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Логический|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Логический|Указывает, что устройству требуется пройти проверку сертификата SafetyNet.|
+|securityRequireGooglePlayServices|Логический|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
+|securityRequireUpToDateSecurityProviders|Логический|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Указывает на то, что устройству требуется пройти проверку целостности клиентского приложения "Корпоративный портал" в среде выполнения.|
 
 ## <a name="relationships"></a>Связи

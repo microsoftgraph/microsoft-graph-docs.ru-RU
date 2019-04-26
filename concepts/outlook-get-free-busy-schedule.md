@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555208"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Получение расписания доступности пользователей и ресурсов
 

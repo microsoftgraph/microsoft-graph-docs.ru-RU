@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 268b5ab7030eae72cb9af4630b30bb8a2db8cdfc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551409"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Обновление windowsPhone81GeneralConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md).
@@ -54,17 +54,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|applyOnlyToWindowsPhone81|Boolean|Указывает, применяется ли эта политика только к Windows Phone 8.1. Это свойство доступно только для чтения.|
-|appsBlockCopyPaste|Boolean|Указывает, следует ли заблокировать копирование данных.|
-|bluetoothBlocked|Boolean|Указывает, следует ли заблокировать Bluetooth.|
-|cameraBlocked|Boolean|Указывает, следует ли заблокировать камеру.|
-|cellularBlockWifiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|applyOnlyToWindowsPhone81|Логический|Указывает, применяется ли эта политика только к Windows Phone 8.1. Это свойство доступно только для чтения.|
+|appsBlockCopyPaste|Логический|Указывает, следует ли заблокировать копирование данных.|
+|bluetoothBlocked|Логический|Указывает, следует ли заблокировать Bluetooth.|
+|cameraBlocked|Логический|Указывает, следует ли заблокировать камеру.|
+|cellularBlockWifiTethering|Логический|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
 |emailBlockAddingAccounts|Boolean|Указывает, следует ли заблокировать пользовательские учетные записи электронной почты.|
-|locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
-|microsoftAccountBlocked|Boolean|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
+|locationServicesBlocked|Логический|Указывает, следует ли заблокировать службы определения местоположения.|
+|microsoftAccountBlocked|Логический|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
 |nfcBlocked|Логический|Указывает, следует ли заблокировать NFC.|
 |passwordBlockSimple|Boolean|Указывает, следует ли заблокировать синхронизацию календаря.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля.|
@@ -74,13 +74,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
-|screenCaptureBlocked|Boolean|Указывает, следует ли запретить делать снимки экрана.|
-|storageBlockRemovableStorage|Boolean|Указывает, следует ли запретить использовать съемные носители.|
-|storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование.|
-|webBrowserBlocked|Boolean|Указывает, следует ли заблокировать веб-браузер.|
-|wifiBlocked|Boolean|Указывает, следует ли заблокировать Wi-Fi.|
-|wifiBlockAutomaticConnectHotspots|Boolean|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
+|screenCaptureBlocked|Логический|Указывает, следует ли запретить делать снимки экрана.|
+|storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
+|storageRequireEncryption|Логический|Указывает, обязательно ли шифрование.|
+|webBrowserBlocked|Логический|Указывает, следует ли заблокировать веб-браузер.|
+|wifiBlocked|Логический|Указывает, следует ли заблокировать Wi-Fi.|
+|wifiBlockAutomaticConnectHotspots|Логический|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |wifiBlockHotspotReporting|Boolean|Указывает, следует ли запретить устройству сообщать об обнаруженных хот-спотах Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |windowsStoreBlocked|Boolean|Указывает, следует ли заблокировать Microsoft Store.|
 

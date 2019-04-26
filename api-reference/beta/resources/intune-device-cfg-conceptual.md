@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781444"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556426"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 

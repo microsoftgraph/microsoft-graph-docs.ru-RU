@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса yammerGroupsActivityDetail
+title: Тип ресурса Яммерграупсактивитидетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c5b580f643686c27497fd24a6fe00c7750a6a938
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551423"
 ---
-# <a name="yammergroupsactivitydetail-resource-type"></a>Тип ресурса yammerGroupsActivityDetail
+# <a name="yammergroupsactivitydetail-resource-type"></a>Тип ресурса Яммерграупсактивитидетаил
 
 ## <a name="properties"></a>Свойства
 
 | Свойство           | Тип    |
 | :----------------- | :------ |
-| reportRefreshDate  | Date    |
-| groupDisplayName   | Строка  |
-| isDeleted          | Boolean |
-| ownerPrincipalName | Строка  |
-| lastActivityDate   | Date    |
-| groupType          | Строка  |
-| office365Connected | Boolean |
-| memberCount        | Int64   |
-| postedCount        | Int64   |
-| readCount          | Int64   |
-| likedCount         | Int64   |
-| reportPeriod       | String  |
+| Репортрефрешдате  | Дата    |
+| Граупдисплайнаме   | String  |
+| isDeleted          | Логический |
+| ОвнерпринЦипалнаме | String  |
+| Ластактивитидате   | Дата    |
+| groupType          | String  |
+| office365Connected | Логический |
+| Мемберкаунт        | Int64   |
+| Постедкаунт        | Int64   |
+| Реадкаунт          | Int64   |
+| Ликедкаунт         | Int64   |
+| Репортпериод       | String  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

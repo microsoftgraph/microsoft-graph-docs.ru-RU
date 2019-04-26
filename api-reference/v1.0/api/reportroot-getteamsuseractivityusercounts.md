@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: ae1dc1cd7272d1dc162f34560ab966bab2734e77
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571438"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554627"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 
@@ -35,11 +35,11 @@ GET /reports/getTeamsUserActivityUserCounts(period='{period_value}')
 
 ## <a name="function-parameters"></a>Параметры функции
 
-В URL-адресе запроса укажите следующий параметр и действительное значение.
+В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | строка | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -55,7 +55,7 @@ URL-адреса для скачивания, для которых выполн
 
 CSV-файл содержит столбцы со следующими заголовками:
 
-- "Report Refresh Date" (Дата обновления отчета);
+- Report Refresh Date (Дата обновления отчета);
 - Report Date (Дата отчета);
 - Team Chat Messages (Сообщения в чатах групп);
 - Private Chat Messages (Сообщения в приватных чатах);

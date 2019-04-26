@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 441c0270bc6488a09fec02f1e1681e009b889918
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556895"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип перечисления win32LobAppReturnCodeType
 
@@ -23,10 +23,10 @@ ms.locfileid: "31805210"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |сбоев|нуль|Сбоев.|
-|success|1,1|Отключен.|
-|Софтребут|2|Требуется программная перезагрузка.|
-|Хардребут|4|Необходима аппаратная перезагрузка.|
-|Retry|SP4|Повторите попытку.|
+|success|1 |Отключен.|
+|Софтребут|2 |Требуется программная перезагрузка.|
+|Хардребут|3 |Необходима аппаратная перезагрузка.|
+|Retry|4 |Повторите попытку.|
 
 
 

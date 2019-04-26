@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057017"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554060"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
@@ -34,12 +34,12 @@ ms.locfileid: "30057017"
 
 ## <a name="relationships"></a>Связи
 
-| Связь   | Тип    | Описание |
+| Отношение   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
 |Теамсаппдефинитион|[Теамсаппдефинитион](teamsapp.md)| Сведения о данной версии приложения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 <!-- {
   "blockType": "resource",

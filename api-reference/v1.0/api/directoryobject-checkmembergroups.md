@@ -1,15 +1,15 @@
 ---
 title: Проверка групп элементов
-description: Проверить членство в заданном списке групп и возвращает из этого списка в эти группы
+description: Проверяет членство в указанном списке групп и возвращает из этого списка эти группы.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 99ebf38b8f230233b50fa642f7503302afd02b33
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941788"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555131"
 ---
 # <a name="check-member-groups"></a>Проверка групп элементов
 
@@ -36,14 +36,14 @@ POST /directoryObjects/{id}/checkMemberGroups
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка | application/json  |
+| Content-Type  | string | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция String|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция строк|Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 
@@ -69,8 +69,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

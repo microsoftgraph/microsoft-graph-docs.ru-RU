@@ -1,19 +1,19 @@
 ---
-title: получение оповещения;
-description: " Извлечение свойств и связи оповещения объекта."
+title: Получение оповещения
+description: " Получение свойств и связей объекта Alert."
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 36629363a3f55a654554dcbbde8bfdc113de1f37
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551444"
 ---
-# <a name="get-alert"></a>получение оповещения;
+# <a name="get-alert"></a>Получение оповещения
 
- Извлечение свойств и связи объекта [оповещение](../resources/alert.md) .
+ Получение свойств и связей объекта [Alert](../resources/alert.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -21,9 +21,9 @@ ms.locfileid: "27937900"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
+|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,15 +37,15 @@ GET /security/alerts/{alert_id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | Bearer {Code}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Alert** в тексте отклика. Если поставщик возвращает код состояния, отличный от 2xx или 404, или если время ожидания поставщика истекло, ответ будет кодом `206 Partial Content` состояния с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в разделе [ответ об ошибках API безопасности Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 
@@ -61,9 +61,9 @@ GET /security/alerts/{alert_id}
 GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 67c11096414db0dccad2ccf56ec184a4e3f30397
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260937"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554739"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 
@@ -26,7 +26,7 @@ ms.locfileid: "30260937"
 |displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |bundleID|String|ИД пакета приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

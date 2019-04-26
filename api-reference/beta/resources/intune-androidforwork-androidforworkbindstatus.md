@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74d5079dcde477fb99ac96eeed72e105506b9d81
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552487"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>тип перечисления Андроидфорворкбиндстатус
 
@@ -23,9 +23,9 @@ ms.locfileid: "31772078"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нотбаунд|нуль|Пока не задокументировано.|
-|свободного|1,1|Пока не задокументировано.|
-|Баундандвалидатед|2|Пока не задокументировано.|
-|Отмена привязки|4|Пока не задокументировано.|
+|свободного|1 |Пока не задокументировано.|
+|Баундандвалидатед|2 |Пока не задокументировано.|
+|Отмена привязки|3 |Пока не задокументировано.|
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Корневой каталог для обслуживания
-description: 2015-10-25 14:57:30 UTC-->
+description: 2015-10-25 14:57:30 UTC — _Гт_
 localization_priority: Normal
 ms.openlocfilehash: 5e9c464c50dcbef7a03ca3a2fc2b0aaac40fbb30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554893"
 ---
 # <a name="service-root"></a>Корневой каталог для обслуживания
 
@@ -32,9 +32,9 @@ ms.locfileid: "29524312"
 |[Список объектов subscribedSku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение коллекции объектов subscribedSku. |
 |[Создание пользователя](../api/user-post-users.md) |[user](user.md)| Создание пользователя путем добавления в коллекцию пользователей.|
 |[Список пользователей](../api/user-list.md) | Коллекция объектов [user](user.md) |Получение коллекции объектов user. |
-|[Создание connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Создайте новый connectorGroup, отправку сообщений в коллекцию connectorGroups.|
-|[Список connectorGroup](../api/connectorgroup-list.md) | [connectorGroup](connectorgroup.md) коллекции |Получите коллекцию объектов connectorGroup. |
-|[Список соединителей](../api/connector-list.md) | Коллекция [соединителей](connector.md) |Получите коллекцию объектов соединителя. |
+|[Создание Коннекторграуп](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Создание нового Коннекторграуп путем отправки в коллекцию Коннекторграупс.|
+|[Список Коннекторграуп](../api/connectorgroup-list.md) | Коллекция [коннекторграуп](connectorgroup.md) |Получение коллекции объектов Коннекторграуп. |
+|[Соединитель List](../api/connector-list.md) | [](connector.md) Коллекция соединителей |Получение коллекции объектов Connector. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

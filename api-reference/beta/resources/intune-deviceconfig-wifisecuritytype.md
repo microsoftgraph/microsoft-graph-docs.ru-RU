@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9144a5761691b0a50e40370b1f4d2d08967f2c28
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554844"
 ---
 # <a name="wifisecuritytype-enum-type"></a>тип перечисления Вифисекурититипе
 
@@ -23,11 +23,11 @@ ms.locfileid: "31780009"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |окно|нуль|Открыть (без проверки поДлинности).|
-|Впаперсонал|1,1|WPA – личное.|
-|Впаентерприсе|2|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
-|WEP|4|WEP-шифрование.|
-|wpa2Personal|SP4|WPA2 — личное.|
-|wpa2Enterprise|17:00|WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип Виндовсвифиентерприсиапконфигуратион.|
+|Впаперсонал|1 |WPA – личное.|
+|Впаентерприсе|2 |WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
+|WEP|3 |WEP-шифрование.|
+|wpa2Personal|4 |WPA2 — личное.|
+|wpa2Enterprise|5 |WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип Виндовсвифиентерприсиапконфигуратион.|
 
 
 

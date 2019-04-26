@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970390"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569041"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -20,23 +20,23 @@ ms.locfileid: "27970390"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |Чтение свойств и связей объекта chartSeries.|
+|[Получение объекта ChartSeries](../api/chartseries-get.md) | [Воркбукчартсериес](chartseries.md) |Чтение свойств и связей объекта chartSeries.|
 |[Создание объекта ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Создание объекта ChartPoints путем добавления в коллекцию точек.|
 |[Список точек](../api/chartseries-list-points.md) |Коллекция объектов [ChartPoints](chartpoint.md)| Получение коллекции объектов ChartPoints.|
-|[обновление](../api/chartseries-update.md). | [WorkbookChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
-|[List](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md) коллекции |Получение коллекции объектов chartSeries. |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
+|[Обновление](../api/chartseries-update.md) | [Воркбукчартсериес](chartseries.md) |Обновление объекта ChartSeries. |
+|[Список](../api/chartseries-list.md) | Коллекция [воркбукчартсериес](chartseries.md) |Получение коллекции объектов chartSeries. |
+|[Итемат](../api/chartseriescollection-itemat.md)|[Воркбукчартсериес](chartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|строка|Представляет имя ряда в диаграмме.|
+|name|string|Представляет имя ряда в диаграмме.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
-|points|[WorkbookChartPoint](chartpoint.md) коллекции|Представляет коллекцию всех точек в ряду. Только для чтения.|
+|format|[Воркбукчартсериесформат](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
+|points|Коллекция [воркбукчартпоинт](chartpoint.md)|Представляет коллекцию всех точек в ряду. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -1,20 +1,20 @@
 ---
-title: 'page: copyToSection'
-description: Копирование страницы в определенный раздел.
+title: 'Страница: copyToSection'
+description: Копирует страницу в определенный раздел.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: b09c47ab7dbaec7b7dd63d134cdefae1260d9e8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556664"
 ---
-# <a name="page-copytosection"></a>page: copyToSection
-Копирование страницы в определенный раздел.
+# <a name="page-copytosection"></a>Страница: copyToSection
+Копирует страницу в определенный раздел.
 
-Для операций Copy необходимо использовать модель асинхронного вызова:  сначала вызовите действие Copy, а затем опросите конечную точку операции, чтобы получить результат.
+Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,20 +35,20 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
-|id|String|Обязательный. Идентификатор целевого раздела.|
+|groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
+|id|String|Обязательный. Идентификатор раздела назначения.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation-get.md), опросите конечную точку Operation-Location.
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -69,7 +69,7 @@ Content-length: 52
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

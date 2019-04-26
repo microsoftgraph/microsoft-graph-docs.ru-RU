@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 937c5aa7a49b2e209499fd36e62042d9a06bca6d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552291"
 ---
 # <a name="managedioslobapp-resource-type"></a>Тип ресурса managedIOSLobApp
 
@@ -25,11 +25,11 @@ ms.locfileid: "31787822"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов managedIOSLobApp](../api/intune-apps-managedioslobapp-list.md)|Коллекция [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Список свойств и связей объектов [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
-|[Get managedIOSLobApp](../api/intune-apps-managedioslobapp-get.md)|[managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Чтение свойств и связей объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
-|[Create managedIOSLobApp](../api/intune-apps-managedioslobapp-create.md)|[managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Создание объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
-|[Delete managedIOSLobApp](../api/intune-apps-managedioslobapp-delete.md)|None|Удаление экземпляра [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
-|[Update managedIOSLobApp](../api/intune-apps-managedioslobapp-update.md)|[managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Обновление свойств объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
+|[Перечисление managedIOSLobApps](../api/intune-apps-managedioslobapp-list.md)|Коллекция [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Список свойств и связей объектов [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
+|[Получение managedIOSLobApp](../api/intune-apps-managedioslobapp-get.md)|[managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Считывание свойств и связей объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
+|[Создание managedIOSLobApp](../api/intune-apps-managedioslobapp-create.md)|[managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Создание объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
+|[Удаление managedIOSLobApp](../api/intune-apps-managedioslobapp-delete.md)|None|Удаление экземпляра [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
+|[Обновление managedIOSLobApp](../api/intune-apps-managedioslobapp-update.md)|[managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)|Обновление свойств объекта [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -50,7 +50,7 @@ ms.locfileid: "31787822"
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appAvailability|[Манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. НаСледуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
@@ -70,7 +70,7 @@ ms.locfileid: "31787822"
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

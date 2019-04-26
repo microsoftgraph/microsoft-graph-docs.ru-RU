@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936839"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548105"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -85,7 +85,7 @@ ms.locfileid: "27936839"
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски.|
 
 ## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для контакта. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для контакта. Только для чтения. Допускается значение null.|

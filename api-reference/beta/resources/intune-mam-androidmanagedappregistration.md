@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 97b704fb84e65f41060d2085700c32e3baef288e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781682"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556839"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>Тип ресурса androidManagedAppRegistration
 
@@ -26,9 +26,9 @@ ms.locfileid: "31781682"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-list.md)|Коллекция [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Список свойств и связей объектов [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
-|[Get androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-get.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Чтение свойств и связей объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
-|[Создание объекта androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-create.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Создание объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
+|[Перечисление androidManagedAppRegistrations](../api/intune-mam-androidmanagedappregistration-list.md)|Коллекция [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Список свойств и связей объектов [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
+|[Получение androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-get.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Считывание свойств и связей объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
+|[Создание объекта androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-create.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md);|Создание объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

@@ -6,11 +6,11 @@ title: Поиск файлов
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 8211d9565640dd1cc3376a2803135352dfa88e3b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550464"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 

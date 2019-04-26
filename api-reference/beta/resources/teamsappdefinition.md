@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса teamsAppDefinition
-description: Подробные сведения о одной версии teamsApp.
+title: Тип ресурса Теамсаппдефинитион
+description: Сведения о одной версии teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 94e2c790f8bf4623e56ca76bde164b718ee6fa38
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509982"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554028"
 ---
-# <a name="teamsappdefinition-resource-type"></a>Тип ресурса teamsAppDefinition
+# <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подробные сведения о одной версии [teamsApp](teamsapp.md).
+Сведения о одной версии [teamsApp](teamsapp.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный идентификатор (не appid команды). |
-| teamsAppId          | string   | Идентификатор в манифесте приложения группы. |
-| displayName         | строка   | Имя приложения, предоставляемый разработчиком приложения. |
+| id                  | строка   | Уникальный идентификатор (а не идентификаторы Teams). |
+| teamsAppId          | string   | Идентификатор из манифеста приложения Teams. |
+| displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
 | version             | string   | Номер версии приложения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 <!-- {
   "blockType": "resource",
