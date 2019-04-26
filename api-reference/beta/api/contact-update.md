@@ -4,12 +4,12 @@ description: Обновление свойств объекта Contact.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d0aedb4b4e07409af0ae8c47c4393f4532f91660
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455701"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327494"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -72,7 +72,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |middleName|String|Отчество контакта.|
 |nickName|String|Псевдоним контакта.|
 |officeLocation|String|Расположение офиса контакта.|
-|parentFolderId|String|Идентификатор родительской папки контакта.|
+|parentFolderId|Строка|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
 |phones |Коллекция [phone](../resources/phone.md) |Номера телефонов, связанные с контактом, например домашний телефон, мобильный телефон и служебный телефон. |
 |postalAddresses |Коллекция [physicalAddress](../resources/physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и служебный адрес. |
@@ -84,7 +84,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |Веддинганниверсари |Дата |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
-|yomiSurname|Строка|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
+|yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
 Так как **контактный** ресурс поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, относящиеся к приложению, в пользовательских свойствах расширения в существующем экземпляре **контакта** .
 
@@ -119,7 +119,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -219,8 +219,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

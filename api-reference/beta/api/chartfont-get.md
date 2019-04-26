@@ -1,17 +1,17 @@
 ---
-title: Получение объекта ChartFont
-description: Получение свойств и связей объекта chartfont.
+title: Получение Воркбукчартфонт
+description: Получение свойств и связей объекта Воркбукчартфонт.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3440b4c01988cfad6af10e40a36da6551f5ec854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f43d445ec195d80dfc40405d5e75d1cf7675f58
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456656"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327741"
 ---
-# <a name="get-chartfont"></a>Получение объекта ChartFont
+# <a name="get-workbookchartfont"></a>Получение Воркбукчартфонт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +28,9 @@ ms.locfileid: "32456656"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
@@ -44,9 +44,9 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartFont](../resources/chartfont.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартфонт](../resources/workbookchartfont.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,14 +55,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
   "name": "get_chartfont"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -88,8 +88,6 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartfont-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

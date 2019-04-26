@@ -4,16 +4,16 @@ description: Получение списка приложений, устано�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 957c2593e714c215a1697c2f03b53ef95cb72603
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544581"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330278"
 ---
 # <a name="list-apps-in-team"></a>Список приложений в команде
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка приложений, [установленных](../resources/teamsappinstallation.md) в указанной [команде](../resources/team.md).
 
@@ -25,7 +25,7 @@ ms.locfileid: "32544581"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All    |
+|Для приложений | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,7 +64,7 @@ GET /teams/{id}/installedApps
 }-->
 
 ```http
-GET /teams/{id}/installedApps
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>Отклик
@@ -103,7 +103,7 @@ Content-length: 55
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>Отклик
@@ -158,10 +158,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List owners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: В группе маршрутизации звука хранит�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544003"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328255"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Тип ресурса Аудиораутингграуп
 
@@ -24,17 +24,17 @@ ms.locfileid: "32544003"
 | Метод                                                  | Возвращаемый тип                               | Описание                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Получение Аудиораутингграуп](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Чтение свойств и связей объекта Аудиораутингграуп.|
-| [Обновление](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
-| [Удаление](../api/audioroutinggroup-delete.md)            | Нет                                      | Удаление группы маршрутизации звука.              |
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | Нет                                      | Удаление группы маршрутизации звука.              |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип              | Описание                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Только для чтения. Создается сервером.                                         |
-| приемники     | Коллекция String | Список идентификаторов участников.                                   |
-| Раутингмоде   | String            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
-| sources       | Коллекция String | Список идентификаторов участников исходного участника.                                      |
+| id            | string            | Только для чтения. Создается сервером.                                         |
+| приемники     | Коллекция (string) | Список идентификаторов участников.                                   |
+| Раутингмоде   | string            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
+| sources       | Коллекция (string) | Список идентификаторов участников исходного участника.                                      |
 
 > **Примечание:** Режим маршрутизации определяет ограничения для источников и получателей. Поддерживаются только следующие группы маршрутизации.
 > - `oneToOne`— у источников и приемников есть только один участник.
@@ -45,7 +45,7 @@ ms.locfileid: "32544003"
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,10 +58,10 @@ ms.locfileid: "32544003"
 }-->
 ```json
 {
-  "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "id": "string (identifier)",
+  "receivers": [ "string" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "string" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -73,8 +73,6 @@ ms.locfileid: "32544003"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

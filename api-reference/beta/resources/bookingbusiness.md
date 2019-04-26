@@ -4,12 +4,12 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12b075d273e0228466db063b2c9b91232c32fc2c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543866"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328257"
 ---
 # <a name="bookingbusiness-resource-type"></a>Тип ресурса Букингбусинесс
 
@@ -24,8 +24,8 @@ ms.locfileid: "32543866"
 |[Список Букингбусинессес](../api/bookingbusiness-list.md) | Коллекция [букингбусинесс](bookingbusiness.md) |Получение коллекции объектов букингбусинесс в клиенте. |
 |[Создание Букингбусинесс](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Создание новой книги Майкрософт для бизнеса. |
 |[Получение Букингбусинесс](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Чтение свойств и связей объекта Букингбусинесс.|
-|[Обновление](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств объекта **букингбусинесс** . |
-|[Удаление](../api/bookingbusiness-delete.md) | Нет |Удаление объекта **букингбусинесс** . |
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств объекта **букингбусинесс** . |
+|[Delete](../api/bookingbusiness-delete.md) | Нет |Удаление объекта **букингбусинесс** . |
 |[Создание Букингаппоинтмент](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Создание нового Букингаппоинтмент путем публикации в коллекции встреч.|
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |Коллекция [букингаппоинтмент](bookingappointment.md)| Получение коллекции объектов Букингаппоинтмент.|
 |[Создание Букингкустомер](../api/bookingbusiness-post-customers.md) |[Букингкустомер](bookingcustomer.md)| Создание нового Букингкустомер путем публикации в коллекции Customers.|
@@ -54,13 +54,13 @@ ms.locfileid: "32543866"
 |Счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
 |Вебситеурл|String|URL-адрес веб-сайта компании. Свойство **вебситеурл** вместе с параметром **Address**( **Телефон**) отображается в нижнем колонтитуле страницы бизнес-планирования.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|appointments|Коллекция [букингаппоинтмент](bookingappointment.md)| Все встречи этого бизнеса. Только для чтения. Допускается значение null.|
-|calendarView|Коллекция [букингаппоинтмент](bookingappointment.md)| Набор встреч этого бизнеса в указанном диапазоне дат. Только для чтения. Допускается значение null.|
-|TAP|Коллекция [букингкустомер](bookingcustomer.md)| Все клиенты этого предприятия. Только для чтения. Допускается значение null.|
-|служб|Коллекция [букингсервице](bookingservice.md)| Все службы, предлагаемые этим бизнесом. Только для чтения. Допускается значение null.|
+|appointments|Коллекция [букингаппоинтмент](bookingappointment.md)| Все встречи этого бизнеса. Только для чтения. Допускает значение null.|
+|calendarView|Коллекция [букингаппоинтмент](bookingappointment.md)| Набор встреч этого бизнеса в указанном диапазоне дат. Только для чтения. Допускает значение null.|
+|TAP|Коллекция [букингкустомер](bookingcustomer.md)| Все клиенты этого предприятия. Только для чтения. Допускает значение null.|
+|служб|Коллекция [букингсервице](bookingservice.md)| Все службы, предлагаемые этим бизнесом. Только для чтения. Допускает значение null.|
 |Стаффмемберс|Коллекция [букингстаффмембер](bookingstaffmember.md)| Все сотрудники, которые предоставляют услуги в этом бизнесе. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +69,7 @@ ms.locfileid: "32543866"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -105,8 +106,6 @@ ms.locfileid: "32543866"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingbusiness.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

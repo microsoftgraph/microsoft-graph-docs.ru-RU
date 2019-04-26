@@ -4,12 +4,12 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 35e439888b39c81451242f01d2aaae89b65ad8ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6cf62320a6cfd8e96455e95e1d17c0621d261f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535499"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328320"
 ---
 # <a name="bookingservice-resource-type"></a>Тип ресурса Букингсервице
 
@@ -24,8 +24,8 @@ ms.locfileid: "32535499"
 |[Список служб](../api/bookingbusiness-list-services.md) | Коллекция [букингсервице](bookingservice.md) | Получение списка объектов **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
 |[Создание Букингсервице](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте объект **букингсервице** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингсервице](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получение свойств и связей объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[Обновление](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
-|[Удаление](../api/bookingservice-delete.md) | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Delete](../api/bookingservice-delete.md) | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -44,13 +44,13 @@ ms.locfileid: "32535499"
 |Буфер буфера|Duration (Длительность)|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
 |преБуфер|Duration (Длительность)|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
 |Счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|Стаффмемберидс|Коллекция строк|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
+|Стаффмемберидс|Коллекция String|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
 
 ## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -92,8 +92,6 @@ ms.locfileid: "32535499"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingservice.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

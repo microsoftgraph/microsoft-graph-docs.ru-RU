@@ -4,14 +4,17 @@ description: Обновление объекта event.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 620c19cc4e21806c9b32901e577bdb0ddc0f4e1b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3579cd1e4d139a3a192f3b97d09cfd9858e64b63
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501979"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328505"
 ---
 # <a name="update-event"></a>Обновление события
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Обновление объекта [event](../resources/event.md).
 
 ## <a name="permissions"></a>Разрешения
@@ -35,7 +38,7 @@ PATCH /groups/{id}/calendar/events/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
@@ -50,7 +53,7 @@ PATCH /groups/{id}/calendar/events/{id}
   "name": "update_group_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/events/{id}
+PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -61,7 +64,7 @@ Content-length: 211
     "response": "",
     "time": "datetime-value"
   },
-  "iCalUId": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
@@ -80,10 +83,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

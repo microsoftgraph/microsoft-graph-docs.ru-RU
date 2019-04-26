@@ -4,12 +4,12 @@ description: Получение списка бесед для пользова�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0dd4e6538e82ef2ba341c87cf7b541f3dda0dfbe
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: 818cd5037c9d37d58e96b40c85e546487676a13e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33301891"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327712"
 ---
 # <a name="list-chats"></a>Список чатов
 

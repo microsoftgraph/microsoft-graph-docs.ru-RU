@@ -4,12 +4,12 @@ description: ПереЧисление всех ответов на сообще�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c3c681c820f4cc855105ec1605be920a98a1430
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 377d574a037010e4a441406506af4764784145e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456460"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328143"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
@@ -36,7 +36,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-С помощью параметра запроса [$Top](/graph/query-parameters#top-parameter) можно управлять количеством элементов в ответе. Другие [Параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
+Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике. Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -196,8 +196,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messagereplies.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

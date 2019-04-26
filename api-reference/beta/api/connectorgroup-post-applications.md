@@ -2,12 +2,12 @@
 title: Создание приложения
 description: С помощью этого API можно создать объект application.
 localization_priority: Normal
-ms.openlocfilehash: 350e5f0fcb45f7404a670c1a0af4e4ddd02a97c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee0ecc6db99c0ea92131dbbf0e9c028234925f0a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455942"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327490"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -32,7 +32,7 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательно|
+| Authorization  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса должно быть представление объекта [application](../resources/application.md) в формате JSON.
@@ -92,8 +92,6 @@ Content-length: 355
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-post-applications.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

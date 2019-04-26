@@ -1,18 +1,18 @@
 ---
 title: Список rejectedSenders
-description: 'Получение пользователей или групп из списка rejectedSenders для данной группы. '
+description: 'Получение списка пользователей или групп, которые находятся в списке отклоненных отправителей для этой группы. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 5dd03644b91ad847b61350f48792afdaa087d59b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ddabeccd5e09c035eabf0c280fde54bc6db628f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502066"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329597"
 ---
 # <a name="list-rejectedsenders"></a>Список rejectedSenders
-Получение пользователей или групп из списка rejectedSenders для данной группы. 
+Получение списка пользователей или групп, которые находятся в списке отклоненных отправителей для этой группы. 
 
 Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

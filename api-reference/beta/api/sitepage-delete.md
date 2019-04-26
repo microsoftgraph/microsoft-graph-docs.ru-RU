@@ -5,12 +5,12 @@ ms.date: 05/07/2018
 title: Удаление страницы с сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f855942288556fdf07e2b3af78408976c34eb052
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5c38a5f5b96a100cfbae0eba30f957b079568e5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537135"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330256"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Удаление страницы из списка страниц сайта
 
@@ -20,7 +20,7 @@ ms.locfileid: "32537135"
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[сайта]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +53,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 Не указывайте текст запроса для этого метода.
 <!-- TODO: should we provide a URL to recover/undelete the file, if one exists? -->
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот вызов возвращает `204 No Content` ответ, указывающий на то, что ресурс был удален и что не было возвращено.
 
@@ -81,8 +81,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "Pages/Delete",
-  "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

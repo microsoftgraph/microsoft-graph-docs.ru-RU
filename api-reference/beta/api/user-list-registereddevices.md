@@ -1,17 +1,19 @@
 ---
-title: Список registeredDevices
+title: Перечисление registeredDevices
 description: Получение списка зарегистрированных устройств пользователя.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fa2a0e8d9209a652c751bd30f0b950182c6525f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0e69261e09f771a732af7acfa2f94bf53e54fc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547791"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329848"
 ---
-# <a name="list-registereddevices"></a>Список registeredDevices
+# <a name="list-registereddevices"></a>Перечисление registeredDevices
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка зарегистрированных устройств пользователя.
 ## <a name="permissions"></a>Разрешения
@@ -50,7 +52,7 @@ GET /users/{id | userPrincipalName}/registeredDevices
   "name": "get_registereddevices"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/registeredDevices
+GET https://graph.microsoft.com/beta/me/registeredDevices
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -76,10 +78,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List registeredDevices",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

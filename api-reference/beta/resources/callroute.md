@@ -4,12 +4,12 @@ description: Тип Каллрауте.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cfa470c4d3a03655221cab1f29baa60d00a8cf6c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 06dd1a2265c5a6bda9feba0b51e7fd731d7945c3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543840"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328281"
 ---
 # <a name="callroute-resource-type"></a>Тип ресурса Каллрауте
 
@@ -25,7 +25,7 @@ ms.locfileid: "32543840"
 | Исходный текст            | [identitySet](identityset.md) | Идентификатор, который изначально использовался при вызове.           |
 | Раутингтипе         | String                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -52,8 +52,6 @@ ms.locfileid: "32543840"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/callroute.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

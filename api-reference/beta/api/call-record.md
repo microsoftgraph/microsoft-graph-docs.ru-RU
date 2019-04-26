@@ -4,12 +4,12 @@ description: Запись вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bc1a98374c34986e2a4430f5b50c5a2801dcd0e8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461299"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328285"
 ---
 # <a name="call-record"></a>Call: Record
 
@@ -22,7 +22,7 @@ ms.locfileid: "32461299"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция        |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
 | Для приложений     | Calls.AccessMedia.All                       |
 
@@ -50,7 +50,7 @@ POST /applications/{id}/calls/{id}/record
 |Максрекорддуратионинсекондс|Int32| Максимальная длительность записи в секундах.|
 |Плайбип|Логический| Воспроизводит звуковой сигнал после воспроизведения приглашения.|
 |Стреамвхилерекординг|Логический|Если задано значение true, расположение ресурса будет указано сразу после начала записи. |
-|Стоптонес|Коллекция строк|Остановка заданных тонов в конец записи.|
+|Стоптонес|Коллекция String|Остановка заданных тонов в конец записи.|
 |Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
@@ -94,7 +94,7 @@ Content-Length: 394
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -150,8 +150,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

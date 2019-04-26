@@ -2,12 +2,12 @@
 title: Создание governanceRoleAssignmentRequest
 description: Создайте запрос на назначение роли, который будет представлять нужную операцию для назначения роли. В приведенной ниже таблице перечислены операции.
 localization_priority: Normal
-ms.openlocfilehash: 104ab1a0d4909bc2181df70bc4fc895fc4558260
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b9b5f701f3f8ad283f589d07b250ce8ea63aa479
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503284"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329643"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -15,7 +15,7 @@ ms.locfileid: "32503284"
 
 Создайте запрос на назначение роли, который будет представлять нужную операцию для назначения роли. В приведенной ниже таблице перечислены операции.
 
-| Operation                                   | Тип        |
+| Операция                                   | Тип        |
 |:--------------------------------------------|:------------|
 | Назначение роли                    | Админадд    |
 | Активация подходящего назначения роли        | Усерадд     |
@@ -58,11 +58,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Идентификатор ресурса. Обязательно. |
-| Роледефинитионид | String                                                   | Идентификатор определения роли. Обязательно. |
-| Субжектид        | String                                                   | ИДЕНТИФИКАТОР субъекта. Обязательно. |
+| resourceId       | String                                                   | Идентификатор ресурса. Обязательный. |
+| Роледефинитионид | String                                                   | Идентификатор определения роли. Обязательный. |
+| Субжектид        | String                                                   | ИДЕНТИФИКАТОР субъекта. Обязательный. |
 | Ассигнментстате  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active`. Обязательное. |
-| type             | Строка                                                   | Тип запроса. Возможные значения: `AdminAdd`, `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `AdminRenew` `AdminExtend`,,,,, и. `UserExtend` `UserRenew` Обязательно. |
+| type             | String                                                   | Тип запроса. Возможные значения: `AdminAdd`, `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `AdminRenew` `AdminExtend`,,,,, и. `UserExtend` `UserRenew` Обязательный. |
 | причиной           | String                                                   | Необходимо указать причину для запроса на назначение роли для аудита и проверки. |
 | Диспетчер         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение роли. `UserAdd`Для типа запроса `AdminAdd`,, `AdminUpdate`, и `AdminExtend`, он необходим. |
 
@@ -74,7 +74,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды ошибок, приведенные в следующей таблице.
 
-| Код ошибки     | Сообщение об ошибке                               | Подробно       |
+| Код ошибки     | Сообщение об ошибке                               | Сведения       |
 |:---------------|:--------------------------------------------|:--------------|
 | 400 Бадрекуест | Роленотфаунд                                | Не `roleDefinitionId` удается найти указанный в тексте запроса. |
 | 400 Бадрекуест | Ресаурцеислоккед                            | Ресурс, указанный в теле запроса, находится в состоянии `Locked` и не может создавать запросы на назначение ролей. |
@@ -96,11 +96,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | Строка                                                   | Да                      | \<resourceId\> |
-| Роледефинитионид | Строка                                                   | Да                      | \<Роледефинитионид\> |
-| Субжектид        | Строка                                                   | Да                      | \<Субжектид\> |
-| Ассигнментстате  | Строка                                                   | Да                      | ПодХодящие/активные |
-| type             | Строка                                                   | Да                      | Админадд |
+| resourceId       | String                                                   | Да                      | \<resourceId\> |
+| Роледефинитионид | String                                                   | Да                      | \<Роледефинитионид\> |
+| Субжектид        | String                                                   | Да                      | \<Субжектид\> |
+| Ассигнментстате  | String                                                   | Да                      | ПодХодящие/активные |
+| type             | String                                                   | Да                      | Админадд |
 | причиной           | String                                                   | зависит от параметров роли |   |
 | Диспетчер         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
@@ -188,11 +188,11 @@ Content-type: application/json
 
 | Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | Строка                                                   | Да                      | \<resourceId\> |
-| Роледефинитионид | Строка                                                   | Да                      | \<Роледефинитионид\> |
-| Субжектид        | Строка                                                   | Да                      | \<Субжектид\> |
-| Ассигнментстате  | Строка                                                   | Да                      | Активное |
-| type             | Строка                                                   | Да                      | Усерадд |
+| resourceId       | String                                                   | Да                      | \<resourceId\> |
+| Роледефинитионид | String                                                   | Да                      | \<Роледефинитионид\> |
+| Субжектид        | String                                                   | Да                      | \<Субжектид\> |
+| Ассигнментстате  | String                                                   | Да                      | Активные |
+| type             | String                                                   | Да                      | Усерадд |
 | причиной           | String                                                   | зависит от параметров роли |   |
 | Диспетчер         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
@@ -291,12 +291,12 @@ Content-type: application/json
 
 | Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | Строка                                                   | Да      | \<resourceId\> |
-| Роледефинитионид | Строка                                                   | Да      | \<Роледефинитионид\> |
-| Субжектид        | Строка                                                   | Да      | \<Субжектид\> |
-| Ассигнментстате  | Строка                                                   | Да      | Активное |
+| resourceId       | String                                                   | Да      | \<resourceId\> |
+| Роледефинитионид | String                                                   | Да      | \<Роледефинитионид\> |
+| Субжектид        | String                                                   | Да      | \<Субжектид\> |
+| Ассигнментстате  | String                                                   | Да      | Активные |
 | type             | Строка                                                   | Да      | Усерремове |
-| причиной           | Строка                                                   | Нет       |   |
+| причиной           | String                                                   | Нет       |   |
 | Диспетчер         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -361,12 +361,12 @@ Content-type: application/json
 
 | Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | Строка                                                   | Да      | \<resourceId\> |
+| resourceId       | String                                                   | Да      | \<resourceId\> |
 | Роледефинитионид | Строка                                                   | Да      | \<Роледефинитионид\> |
 | Субжектид        | Строка                                                   | Да      | \<Субжектид\> |
 | Ассигнментстате  | Строка                                                   | Да      | ПодХодящие/активные |
 | type             | Строка                                                   | Да      | Админремове |
-| причиной           | Строка                                                   | Нет       |   |
+| причиной           | String                                                   | Нет       |   |
 | Диспетчер         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -429,7 +429,7 @@ Content-type: application/json
 
 | Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | Строка                                                   | Да                     | \<resourceId\> |
+| resourceId       | String                                                   | Да                     | \<resourceId\> |
 | Роледефинитионид | Строка                                                   | Да                     | \<Роледефинитионид\> |
 | Субжектид        | Строка                                                   | Да                     | \<Субжектид\> |
 | Ассигнментстате  | Строка                                                   | Да                     | ПодХодящие/активные |
@@ -520,11 +520,11 @@ Content-type: application/json
 
 | Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | Строка                                                   | Да                     | \<resourceId\> |
+| resourceId       | String                                                   | Да                     | \<resourceId\> |
 | Роледефинитионид | Строка                                                   | Да                     | \<Роледефинитионид\> |
 | Субжектид        | Строка                                                   | Да                     | \<Субжектид\> |
-| Ассигнментстате  | Строка                                                   | Да                     | ПодХодящие/активные |
-| type             | Строка                                                   | Да                     | Админекстенд |
+| Ассигнментстате  | String                                                   | Да                     | ПодХодящие/активные |
+| type             | String                                                   | Да                     | Админекстенд |
 | причиной           | String                                                   | зависит от Ролесеттингс |   |
 | Диспетчер         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
@@ -613,8 +613,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

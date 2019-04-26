@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 783201ec40ac0749d2c2999649bf1c420eaba5b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32654155"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328530"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>Тип ресурса Аппликатионсигниндетаиледсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "32654155"
 |Аггрегатедевентдатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |appDisplayName|String|Имя приложения, в которое пользователь выполнил вход.|
 |appId|String|Идентификатор приложения, в который пользователь выполнил вход.|
-|id|String| Уникальный идентификатор, представляющий действия при входе.|
+|id|Строка| Уникальный идентификатор, представляющий действия при входе.|
 |Сигнинкаунт|Int64|Количество входов, выполненных приложением.|
 |status|[signInStatus](signinstatus.md)|Сведения о состоянии входа.|
 

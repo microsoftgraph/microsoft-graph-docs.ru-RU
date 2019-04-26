@@ -2,12 +2,12 @@
 title: Обновление identityProvider
 description: Обновление свойств в существующей identityProvider.
 localization_priority: Normal
-ms.openlocfilehash: d98bc5d0bd7a8f165f33c89548a69805039cdf07
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c73a96a5447a9f6dc8408b7abbb52dc5b7ee68a6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501464"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328599"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 
@@ -94,8 +94,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/identityprovider-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

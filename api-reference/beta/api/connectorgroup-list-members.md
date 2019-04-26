@@ -1,15 +1,15 @@
 ---
-title: Список элементов
+title: Список участников
 description: Получение списка объектов Connector, связанных с Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: 0a35e2645d017d6c0ff23121a5f592438e575798
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ceb5c6e0af7d9b661cbd32c2a7412322be1cf91
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455893"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327510"
 ---
-# <a name="list-members"></a>Список членов
+# <a name="list-members"></a>Список элементов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ GET /connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательно|
+| Authorization  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -86,8 +86,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-list-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
