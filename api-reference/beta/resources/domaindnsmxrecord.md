@@ -1,45 +1,44 @@
 ---
-title: Тип ресурса domainDnsMxRecord
-description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+title: Тип ресурса Домаинднсмксрекорд
+description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 09af66a522d99645540ec24324c82f565eaedb1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535125"
 ---
-# <a name="domaindnsmxrecord-resource-type"></a><span data-ttu-id="46005-104">Тип ресурса domainDnsMxRecord</span><span class="sxs-lookup"><span data-stu-id="46005-104">domainDnsMxRecord resource type</span></span>
+# <a name="domaindnsmxrecord-resource-type"></a><span data-ttu-id="80f44-104">Тип ресурса Домаинднсмксрекорд</span><span class="sxs-lookup"><span data-stu-id="80f44-104">domainDnsMxRecord resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="80f44-105">Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте.</span><span class="sxs-lookup"><span data-stu-id="80f44-105">Represents a MX record added to the DNS zone file of a particular domain in the tenant.</span></span> <span data-ttu-id="80f44-106">НаСледуется от объекта [DomainDnsRecord](domaindnsrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="80f44-106">Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
 
-<span data-ttu-id="46005-p102">Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).</span><span class="sxs-lookup"><span data-stu-id="46005-p102">Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+## <a name="methods"></a><span data-ttu-id="80f44-107">Методы</span><span class="sxs-lookup"><span data-stu-id="80f44-107">Methods</span></span>
+<span data-ttu-id="80f44-108">Прямые запросы к этому ресурсу не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="80f44-108">Direct queries to this resource are not supported.</span></span> <span data-ttu-id="80f44-109">Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .</span><span class="sxs-lookup"><span data-stu-id="80f44-109">Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="46005-107">Методы</span><span class="sxs-lookup"><span data-stu-id="46005-107">Methods</span></span>
-<span data-ttu-id="46005-p103">Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запрашивать записи службы доменов, см. в статье [о доменах](domain.md).</span><span class="sxs-lookup"><span data-stu-id="46005-p103">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
-
-## <a name="properties"></a><span data-ttu-id="46005-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="46005-110">Properties</span></span>
-| <span data-ttu-id="46005-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="46005-111">Property</span></span>     | <span data-ttu-id="46005-112">Тип</span><span class="sxs-lookup"><span data-stu-id="46005-112">Type</span></span>   |<span data-ttu-id="46005-113">Описание</span><span class="sxs-lookup"><span data-stu-id="46005-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="80f44-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="80f44-110">Properties</span></span>
+| <span data-ttu-id="80f44-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="80f44-111">Property</span></span>     | <span data-ttu-id="80f44-112">Тип</span><span class="sxs-lookup"><span data-stu-id="80f44-112">Type</span></span>   |<span data-ttu-id="80f44-113">Описание</span><span class="sxs-lookup"><span data-stu-id="80f44-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="46005-114">id</span><span class="sxs-lookup"><span data-stu-id="46005-114">id</span></span>|<span data-ttu-id="46005-115">String</span><span class="sxs-lookup"><span data-stu-id="46005-115">String</span></span>| <span data-ttu-id="46005-p104">Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.</span><span class="sxs-lookup"><span data-stu-id="46005-p104">Unique identifier assigned to this entity. Not nullable, Read-only.</span></span>|
-|<span data-ttu-id="46005-118">isOptional</span><span class="sxs-lookup"><span data-stu-id="46005-118">isOptional</span></span>|<span data-ttu-id="46005-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="46005-119">Boolean</span></span>| <span data-ttu-id="46005-120">Если указано значение false, для правильной работы Microsoft Online Services с доменом пользователь должен настроить запись MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="46005-120">If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
-|<span data-ttu-id="46005-121">label</span><span class="sxs-lookup"><span data-stu-id="46005-121">label</span></span>|<span data-ttu-id="46005-122">String</span><span class="sxs-lookup"><span data-stu-id="46005-122">String</span></span>| <span data-ttu-id="46005-123">Значение, используемое при настройке свойства *псевдонима, узла или имени* для записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="46005-123">Value used when configuring the *alias/host/name* property of the MX record at the DNS host.</span></span> |
-|<span data-ttu-id="46005-124">mailExchange</span><span class="sxs-lookup"><span data-stu-id="46005-124">mailExchange</span></span>|<span data-ttu-id="46005-125">String</span><span class="sxs-lookup"><span data-stu-id="46005-125">String</span></span>| <span data-ttu-id="46005-126">Значение, используемое при настройке *значения, ответа или целевого объекта* для записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="46005-126">Value used when configuring the *answer/destination/value* of the MX record at the DNS host.</span></span>|
-|<span data-ttu-id="46005-127">preference</span><span class="sxs-lookup"><span data-stu-id="46005-127">preference</span></span>|<span data-ttu-id="46005-128">Int32</span><span class="sxs-lookup"><span data-stu-id="46005-128">Int32</span></span>| <span data-ttu-id="46005-129">Значение, используемое при настройке свойства *приоритета или предпочтения* для записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="46005-129">Value used when configuring the *Preference/Priority* property of the MX record at the DNS host.</span></span> |
-|<span data-ttu-id="46005-130">recordType</span><span class="sxs-lookup"><span data-stu-id="46005-130">recordType</span></span>|<span data-ttu-id="46005-131">String</span><span class="sxs-lookup"><span data-stu-id="46005-131">String</span></span>| <span data-ttu-id="46005-p105">Тип записи DNS. Это свойство всегда имеет значение *Mx*. Ключ.</span><span class="sxs-lookup"><span data-stu-id="46005-p105">Type of DNS record. The value is always *Mx*. Key</span></span> |
-|<span data-ttu-id="46005-135">supportedService</span><span class="sxs-lookup"><span data-stu-id="46005-135">supportedService</span></span>|<span data-ttu-id="46005-136">Строка</span><span class="sxs-lookup"><span data-stu-id="46005-136">String</span></span>| <span data-ttu-id="46005-137">Служба или компонент Microsoft Online Services, зависящие от этой записи типа MX.</span><span class="sxs-lookup"><span data-stu-id="46005-137">Microsoft Online Service or feature that has a dependency on this MX record.</span></span></br></br><span data-ttu-id="46005-138">Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*.</span><span class="sxs-lookup"><span data-stu-id="46005-138">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
-|<span data-ttu-id="46005-139">ttl</span><span class="sxs-lookup"><span data-stu-id="46005-139">ttl</span></span>|<span data-ttu-id="46005-140">Int32</span><span class="sxs-lookup"><span data-stu-id="46005-140">Int32</span></span>| <span data-ttu-id="46005-p106">Значение, используемое при настройке свойства *ttl* (срока жизни) для записи MX на узле DNS. Не допускает значения null.</span><span class="sxs-lookup"><span data-stu-id="46005-p106">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span> |
+|<span data-ttu-id="80f44-114">id</span><span class="sxs-lookup"><span data-stu-id="80f44-114">id</span></span>|<span data-ttu-id="80f44-115">String</span><span class="sxs-lookup"><span data-stu-id="80f44-115">String</span></span>| <span data-ttu-id="80f44-116">Уникальный идентификатор, назначенный этой сущности.</span><span class="sxs-lookup"><span data-stu-id="80f44-116">Unique identifier assigned to this entity.</span></span> <span data-ttu-id="80f44-117">Не допускает значения NULL и только для чтения.</span><span class="sxs-lookup"><span data-stu-id="80f44-117">Not nullable, Read-only.</span></span>|
+|<span data-ttu-id="80f44-118">Переключатель</span><span class="sxs-lookup"><span data-stu-id="80f44-118">isOptional</span></span>|<span data-ttu-id="80f44-119">Логический</span><span class="sxs-lookup"><span data-stu-id="80f44-119">Boolean</span></span>| <span data-ttu-id="80f44-120">Если задано значение false, запись MX должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом.</span><span class="sxs-lookup"><span data-stu-id="80f44-120">If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
+|<span data-ttu-id="80f44-121">label</span><span class="sxs-lookup"><span data-stu-id="80f44-121">label</span></span>|<span data-ttu-id="80f44-122">String</span><span class="sxs-lookup"><span data-stu-id="80f44-122">String</span></span>| <span data-ttu-id="80f44-123">Значение, используемое при настройке свойства *Alias/Host/Name* для записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="80f44-123">Value used when configuring the *alias/host/name* property of the MX record at the DNS host.</span></span> |
+|<span data-ttu-id="80f44-124">Маилексчанже</span><span class="sxs-lookup"><span data-stu-id="80f44-124">mailExchange</span></span>|<span data-ttu-id="80f44-125">String</span><span class="sxs-lookup"><span data-stu-id="80f44-125">String</span></span>| <span data-ttu-id="80f44-126">Значение, используемое при настройке *ответа/назначения/значения* для записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="80f44-126">Value used when configuring the *answer/destination/value* of the MX record at the DNS host.</span></span>|
+|<span data-ttu-id="80f44-127">параметров</span><span class="sxs-lookup"><span data-stu-id="80f44-127">preference</span></span>|<span data-ttu-id="80f44-128">Int32</span><span class="sxs-lookup"><span data-stu-id="80f44-128">Int32</span></span>| <span data-ttu-id="80f44-129">Значение, используемое при настройке свойства *предпочтения/приоритета* записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="80f44-129">Value used when configuring the *Preference/Priority* property of the MX record at the DNS host.</span></span> |
+|<span data-ttu-id="80f44-130">recordType</span><span class="sxs-lookup"><span data-stu-id="80f44-130">recordType</span></span>|<span data-ttu-id="80f44-131">String</span><span class="sxs-lookup"><span data-stu-id="80f44-131">String</span></span>| <span data-ttu-id="80f44-132">Тип записи DNS.</span><span class="sxs-lookup"><span data-stu-id="80f44-132">Type of DNS record.</span></span> <span data-ttu-id="80f44-133">Значение — это всегда *MX*.</span><span class="sxs-lookup"><span data-stu-id="80f44-133">The value is always *Mx*.</span></span> <span data-ttu-id="80f44-134">Ключ</span><span class="sxs-lookup"><span data-stu-id="80f44-134">Key</span></span> |
+|<span data-ttu-id="80f44-135">Суппортедсервице</span><span class="sxs-lookup"><span data-stu-id="80f44-135">supportedService</span></span>|<span data-ttu-id="80f44-136">String</span><span class="sxs-lookup"><span data-stu-id="80f44-136">String</span></span>| <span data-ttu-id="80f44-137">Служба или компонент Microsoft Online, который имеет зависимость от этой записи MX.</span><span class="sxs-lookup"><span data-stu-id="80f44-137">Microsoft Online Service or feature that has a dependency on this MX record.</span></span></br></br><span data-ttu-id="80f44-138">Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, \*SharePointPublic \*, *OrgIdAuthentication*, *Yammer*, *Intune*</span><span class="sxs-lookup"><span data-stu-id="80f44-138">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
+|<span data-ttu-id="80f44-139">используем</span><span class="sxs-lookup"><span data-stu-id="80f44-139">ttl</span></span>|<span data-ttu-id="80f44-140">Int32</span><span class="sxs-lookup"><span data-stu-id="80f44-140">Int32</span></span>| <span data-ttu-id="80f44-141">Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS.</span><span class="sxs-lookup"><span data-stu-id="80f44-141">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host.</span></span> <span data-ttu-id="80f44-142">Не допускает значение null</span><span class="sxs-lookup"><span data-stu-id="80f44-142">Not nullable</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="46005-143">Связи</span><span class="sxs-lookup"><span data-stu-id="46005-143">Relationships</span></span>
-<span data-ttu-id="46005-144">Нет</span><span class="sxs-lookup"><span data-stu-id="46005-144">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="80f44-143">Отношения</span><span class="sxs-lookup"><span data-stu-id="80f44-143">Relationships</span></span>
+<span data-ttu-id="80f44-144">Нет</span><span class="sxs-lookup"><span data-stu-id="80f44-144">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="46005-145">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="46005-145">JSON representation</span></span>
-<span data-ttu-id="46005-146">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="46005-146">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="80f44-145">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="80f44-145">JSON representation</span></span>
+<span data-ttu-id="80f44-146">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80f44-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -48,7 +47,6 @@ ms.locfileid: "29508421"
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -63,15 +61,10 @@ ms.locfileid: "29508421"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsMxRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsmxrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
