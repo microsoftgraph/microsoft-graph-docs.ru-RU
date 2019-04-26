@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9fbbaea28f93b757881550f36d76540fb6cfb388
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573566"
 ---
 # <a name="close-session"></a>Close Session
 
@@ -39,7 +39,7 @@ workbook-session-id: {session-id}
 ## <a name="request-body"></a>Тело запроса
 Для этого API не нужно тело запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 

@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса mailTipsError
+title: Тип ресурса Маилтипсеррор
 description: Ошибка, возникающая во время действия.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 499949c5995025e9327e1f662365b0c5e43c80f4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934207"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574007"
 ---
-# <a name="mailtipserror-resource-type"></a>Тип ресурса mailTipsError
+# <a name="mailtipserror-resource-type"></a>Тип ресурса Маилтипсеррор
 
 Ошибка, возникающая во время действия.
 
@@ -19,7 +19,7 @@ ms.locfileid: "27934207"
 | Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
 | message | String | Сообщение об ошибке. |
-| code | Строка | Код ошибки. |
+| code | String | Код ошибки. |
 
 ## <a name="json-representation"></a>Представление JSON
 

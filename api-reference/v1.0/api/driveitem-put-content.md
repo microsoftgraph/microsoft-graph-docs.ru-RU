@@ -6,11 +6,11 @@ title: Отправка небольших файлов
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481512"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572719"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: eeee3eefb63c5387b134daeb75f920dbe13d1236
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772575"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576404"
 ---
 # <a name="chassistype-enum-type"></a>тип перечисления Чассистипе
 
@@ -23,10 +23,10 @@ ms.locfileid: "31772575"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|системной|1,1|Системной.|
-|ноутбуков|2|Ноутбуков.|
-|Ворксворкстатион|4|Рабочие.|
-|Ентерприсесервер|SP4|Сервер предприятия.|
+|системной|1 |Системной.|
+|ноутбуков|2 |Ноутбуков.|
+|Ворксворкстатион|3 |Рабочие.|
+|Ентерприсесервер|4 |Сервер предприятия.|
 |phone|100|Звонков.|
 |ПК|101|Мобильный планшет.|
 |Мобилеосер|102|Другой мобильный.|

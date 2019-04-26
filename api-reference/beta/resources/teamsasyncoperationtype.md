@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления teamsAsyncOperationType
-description: Типы teamsAsyncOperation. Участники будут добавляться здесь дополнительных async поддерживают операции.
+title: тип перечисления объекта teamsasyncoperationtype
+description: Типы Теамсасинкоператион. Элементы будут добавлены здесь, так как поддерживаются дополнительные асинхронные операции.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4de95db194bf41939521b53f06614b46b6afae99
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516569"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553640"
 ---
-# <a name="teamsasyncoperationtype-enum-type"></a>Тип перечисления teamsAsyncOperationType
+# <a name="teamsasyncoperationtype-enum-type"></a>тип перечисления объекта teamsasyncoperationtype
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Типы [teamsAsyncOperation](teamsasyncoperation.md). Участники будут добавляться здесь дополнительных async поддерживают операции.
+Типы [теамсасинкоператион](teamsasyncoperation.md). Элементы будут добавлены здесь, так как поддерживаются дополнительные асинхронные операции.
 
 ## <a name="members"></a>Элементы
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|Invalid|(0)|Недопустимое значение|
-|cloneTeam|$1|Операция следует скопировать группы.|
-|archiveTeam|–2|Операции в архив группы.|
-|unarchiveTeam|–3|Операция восстановление архивированных группы.|
-|createTeam|–3|Операция создать группу «с нуля».|
+|Недопустимый|нуль|Недопустимое значение.|
+|Клонетеам|1 |Операция клонирования команды.|
+|Арчиветеам|2 |Операция архивации команды.|
+|Унарчиветеам|3 |Операция восстановления архивной команды.|
+|Креатетеам|3 |Операция по созданию команды с нуля.|
 
 <!--
 {

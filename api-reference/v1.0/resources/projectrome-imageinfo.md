@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса imageInfo
-description: Сложный тип для представления свойство **атрибуты** в части visualInfo объекта активности.
+title: Тип ресурса Имажеинфо
+description: Сложный тип для представления свойства " **атрибуты** " в части висуалинфо объекта Activity.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: a17fe40f53308a0b1b1f587425d2afb019f84bb5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579715"
 ---
-# <a name="imageinfo-resource-type"></a>Тип ресурса imageInfo
+# <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
 
-Сложный тип для представления свойство **атрибуты** в части [visualInfo](../resources/projectrome-visualinfo.md) объекта [активности](../resources/projectrome-activity.md) .
+Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .
 
 ## <a name="properties"></a>Свойства
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|iconUrl | Строка | Необязательный; URI, указывающий на значок, представляющий приложение, используемый для создания операции|
-|alternateText | Строка | Необязательный; Замещающий текст доступного содержимого для образа|
-|addImageQuery | Логический | Необязательный; параметр служит для указания сервера может отобразить изображение динамически в ответ на параметризации. Для примера — изображение высокой контрастности|
+|iconUrl | String | Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.|
+|Алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
+|Аддимажекуери | Boolean | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
 
 ## <a name="json-representation"></a>Представление JSON
 

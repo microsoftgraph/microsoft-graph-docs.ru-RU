@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573923"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -49,7 +49,7 @@ ms.locfileid: "30572392"
 - [Профиль Windows AutoPilot Deployment](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Тип устройства с автопилотом Windows](intune-enrollment-windowsautopilotdevicetype.md)
+- [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Полное состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Параметры Windows AutoPilot](intune-enrollment-windowsautopilotsettings.md)

@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342284"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574598"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -28,10 +28,10 @@ ms.locfileid: "30342284"
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | строка      | NULL                                                     |
-| contentUrl | строка      | URL-адрес веб-сайта                                       |
-| removeUrl  | строка      | NULL                                                     |
-| websiteUrl | строка      | URL-адрес веб-сайта                                       |
+| entityId   | string      | Null                                                     |
+| contentUrl | string      | URL-адрес веб-сайта                                       |
+| removeUrl  | string      | NULL                                                     |
+| websiteUrl | string      | URL-адрес веб-сайта                                       |
 
 ## <a name="planner-tabs"></a>Вкладки планировщика
 
@@ -39,10 +39,10 @@ ms.locfileid: "30342284"
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | строка      | Идентификатор плана (идентификатор для применения с действием GET /planner/plans/{id}).                                              |
-| contentUrl | строка      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId={planId}`, где {tenantName} — это имя клиента (например, example.onmicrosoft.com), а {planId} совпадает с идентификатором сущности.  |
-| removeUrl  | строка      | Совпадает со значением contentUrl.    |
-| websiteUrl | строка      | Совпадает со значением contentUrl.   |
+| entityId   | string      | Идентификатор плана (идентификатор для применения с действием GET /planner/plans/{id}).                                              |
+| contentUrl | string      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId={planId}`, где {tenantName} — это имя клиента (например, example.onmicrosoft.com), а {planId} совпадает с идентификатором сущности.  |
+| removeUrl  | string      | Совпадает со значением contentUrl.    |
+| websiteUrl | string      | Совпадает со значением contentUrl.   |
 
 Чтобы создать новый план для отображения на вкладке планировщика, см. статью [Создание объекта plannerPlan](/graph/api/planner-post-plans?view=graph-rest-beta).
 
@@ -52,10 +52,10 @@ ms.locfileid: "30342284"
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | строка      | NULL                                                     |
-| contentUrl | строка      | `https://web.microsoftstream.com/embed/video/{id}?autoplay=false&showinfo=true&app=microsoftteams&l={locale}`, где {id} — это идентификатор видеопотока. Чтобы найти {id} потока, откройте его в браузере и взгляните на URL-адрес — он будет представлен в форме `https://{domain}.microsoftstream.com/video/{id}`.  |
-| removeUrl  | строка      | NULL                                                     |
-| websiteUrl | строка      | `https://web.microsoftstream.com/video/{id}`, где {id} — это идентификатор видеопотока.    |
+| entityId   | string      | Null                                                     |
+| contentUrl | string      | `https://web.microsoftstream.com/embed/video/{id}?autoplay=false&showinfo=true&app=microsoftteams&l={locale}`, где {id} — это идентификатор видеопотока. Чтобы найти {id} потока, откройте его в браузере и взгляните на URL-адрес — он будет представлен в форме `https://{domain}.microsoftstream.com/video/{id}`.  |
+| removeUrl  | string      | NULL                                                     |
+| websiteUrl | string      | `https://web.microsoftstream.com/video/{id}`, где {id} — это идентификатор видеопотока.    |
 
 ## <a name="microsoft-forms-tabs"></a>Вкладки Microsoft Forms
 
@@ -64,9 +64,9 @@ ms.locfileid: "30342284"
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | строка      | Идентификатор формы.  Определите это значение, перейдите к форме на веб-сайте Forms и найдите URL-адрес формы `https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}`.      |
-| contentUrl | строка      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`, где {formId} совпадает с идентификатором сущности, а {locale}, {groupId}, {tid}, {upn} являются литералами.   |
-| removeUrl  | строка      | NULL                                                     |
+| entityId   | string      | Идентификатор формы.  Определите это значение, перейдите к форме на веб-сайте Forms и найдите URL-адрес формы `https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}`.      |
+| contentUrl | string      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`, где {formId} совпадает с идентификатором сущности, а {locale}, {groupId}, {tid}, {upn} являются литералами.   |
+| removeUrl  | string      | NULL                                                     |
 | websiteUrl | строка      |  `https://forms.office.com`    |
 
 ## <a name="word-excel-powerpoint-and-pdf-tabs"></a>Вкладки Word, Excel, PowerPoint и PDF
@@ -86,7 +86,7 @@ ms.locfileid: "30342284"
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Идентификатор sourceDoc для файла. Вы найдете его, открыв файл в SharePoint и посмотрев на адресную строку — URL-адрес будет иметь предложение `sourcedoc=%7B{sourceDocId}%7D`. Вы также можете получить эти данные из webUrl адреса элемента диска SharePoint для документа. Дополнительные сведения см.[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
 | contentUrl | string      | URL-адрес документ в формате `{folder-webUrl}/{item-name}`. {folder-webUrl} - это webUrl адрес папки SharePoint, содержащей файл, который можно найти путем открытия файла в SharePoint и просмотра адресной строки, либо с помощью свойства webUrl из [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} соответствует имени файла (например, file.docx), которое является свойством `name` в [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| removeUrl  | строка      | NULL                                                     |
+| removeUrl  | string      | NULL                                                     |
 | websiteUrl | string      | Null                                       |
 
 ### <a name="example-create-a-configured-word-tab"></a>Пример: создание настроенной вкладки Word
@@ -119,8 +119,8 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | строка      | Пустая строка ("")                                        |
-| contentUrl | строка      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопировав URL-адрес и удалив "/Формс/аллитемс.аспкс" и все после этого. |
+| entityId   | string      | Пустая строка ("")                                        |
+| contentUrl | string      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопировав URL-адрес и удалив "/Формс/аллитемс.аспкс" и все после этого. |
 | removeUrl  | string      | NULL                                                     |
 | websiteUrl | string      | Null                                                     |
 
@@ -148,9 +148,9 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | строка      | `{randomGuid}_{notebookId}`, где {randomGuid} — это созданный вами идентификатор GUID.                                      |
-| contentUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
-| removeUrl  | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| entityId   | string      | `{randomGuid}_{notebookId}`, где {randomGuid} — это созданный вами идентификатор GUID.                                      |
+| contentUrl | string      | URL-адрес формы `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| removeUrl  | string      | URL-адрес формы `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
 | websiteUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, где `oneNoteWebUrl` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) |
 
 ## <a name="power-bi-tabs"></a>Вкладки Power BI

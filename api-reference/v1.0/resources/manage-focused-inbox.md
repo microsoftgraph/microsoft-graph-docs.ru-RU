@@ -1,13 +1,13 @@
 ---
 title: Управление сортировкой почты
-description: 'Конкретный папки «Входящие» позволяет просматривать важные сообщения в `Focused` вкладка из папки «Входящие», а остальную часть сообщения в папке "Входящие" `Other` вкладки. Система классификации '
+description: 'Сортировка папки "Входящие" позволяет просматривать важные сообщения на `Focused` вкладке папки "Входящие", а остальные сообщения — на `Other` вкладке. Система классификации '
 localization_priority: Normal
 ms.openlocfilehash: b4c6ceca3248a03f814e42298c9892a1447dd2a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826728"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573986"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 671dc5785aae4d912d60c2356fc7b1a204630c3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941604"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575228"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -37,12 +37,12 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|shift|строка|Указывает, каким способом сдвига ячеек.  Возможные значения: `Up`, `Left`.|
+|shift|string|Определяет способ сдвига ячеек.  Возможные значения: `Up`, `Left`.|
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

@@ -3,11 +3,11 @@ title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
 localization_priority: Normal
 ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880572"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575788"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "27880572"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String| Имя строго типизированного свойства, определенного в качестве части расширения схемы.|
-|type|Строка| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
+|type|String| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
 #### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 
 При определении свойства в расширении схемы поддерживаются следующие типы данных:
@@ -28,10 +28,10 @@ ms.locfileid: "27880572"
 | Binary | Не более 256 байт. |
 | Boolean | Не поддерживается для ресурсов contact, message, event и post. |
 | DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
-| Integer | 32-разрядное значение. Не поддерживается для ресурсов contact, message, event и post. |
+| Целое число | 32-разрядное значение. Не поддерживается для ресурсов contact, message, event и post. |
 | String | Не более 256 символов. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

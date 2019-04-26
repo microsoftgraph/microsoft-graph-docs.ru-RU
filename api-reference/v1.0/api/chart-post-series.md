@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 053fd380728928241c146787c03b87a5207a0b7a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927536"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575438"
 ---
 # <a name="create-chartseries"></a>Создание объекта ChartSeries
 
@@ -35,12 +35,12 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [WorkbookChartSeries](../resources/chartseries.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [Воркбукчартсериес](../resources/chartseries.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [WorkbookChartSeries](../resources/chartseries.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукчартсериес](../resources/chartseries.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -58,9 +58,9 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-В тексте запроса укажите представление JSON объекта [WorkbookChartSeries](../resources/chartseries.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В тексте запроса добавьте представление объекта [Воркбукчартсериес](../resources/chartseries.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

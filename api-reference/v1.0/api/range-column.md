@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 21338edb35c8e3e7c060d0f4a03e7e3e77f4e60b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575270"
 ---
 # <a name="range-column"></a>Range: Column
 
@@ -38,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="path-parameters"></a>Параметры пути
-В поле путь запроса укажите следующие параметры.
+В пути запроса укажите следующие параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -61,8 +61,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

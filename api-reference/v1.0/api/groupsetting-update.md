@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1ebea83f26bd3fcf54e530e80173c830fbde7ba8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577765"
 ---
 # <a name="update-a-group-setting"></a>Обновление параметра группы
 
@@ -42,11 +42,11 @@ PATCH /groups/{id}/settings/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. 
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. 
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| values | Коллекция объектов settingValue | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
+| values | Коллекция settingValue | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
 
 ## <a name="response"></a>Отклик
 
@@ -123,7 +123,7 @@ Content-length: 173
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",

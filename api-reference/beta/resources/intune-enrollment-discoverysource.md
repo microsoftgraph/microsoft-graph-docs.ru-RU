@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2506cc1c0ae8cbb623a88c3681bbbd36462a2622
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573860"
 ---
 # <a name="discoverysource-enum-type"></a>тип перечисления Дисковерисаурце
 
@@ -23,8 +23,8 @@ ms.locfileid: "31803348"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Дисковерисаурце неИзвестен.|
-|Админимпорт|2|Устройство импортируется администратором.|
-|Девицеенроллментпрограм|SP4|Устройство добавляется программой регистрации устройств Apple (DEP).|
+|Админимпорт|2 |Устройство импортируется администратором.|
+|Девицеенроллментпрограм|4 |Устройство добавляется программой регистрации устройств Apple (DEP).|
 
 
 

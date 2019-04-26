@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Фотография
 localization_priority: Normal
 ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573762"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
 
@@ -44,9 +44,9 @@ ms.locfileid: "30480917"
 | **takenDateTime**       | DateTimeOffset | Представляет дату и время съемки. Только для чтения.
 | **cameraMake**          | Строка         | Изготовитель камеры. Только для чтения.
 | **cameraModel**         | String         | Модель камеры. Только для чтения.
-| **fNumber**             | Double         | Значение диафрагмы камеры. Только для чтения.
-| **exposureDenominator** | Double         | Знаменатель дробного значения выдержки камеры. Только для чтения.
-| **exposureNumerator**   | Double         | Числитель дробного значения выдержки камеры. Только для чтения.
+| **fNumber**             | Двойное         | Значение диафрагмы камеры. Только для чтения.
+| **exposureDenominator** | Двойное         | Знаменатель дробного значения выдержки камеры. Только для чтения.
+| **exposureNumerator**   | Двойное         | Числитель дробного значения выдержки камеры. Только для чтения.
 | **focalLength**         | Double         | Фокусное расстояние камеры. Только для чтения.
 | **iso**                 | Int64          | Значение ISO камеры. Только для чтения.
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574511"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>тип перечисления Нотификатионтемплатебрандингоптионс
 
@@ -21,9 +21,9 @@ ms.locfileid: "30261896"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Нет фирменной символики.|
-|Инклудекомпанилого|1,1|Включите логотип компании.|
-|Инклудекомпанинаме|2|Включите название компании.|
-|Инклудеконтактинформатион|4|Включение контактной информации.|
+|Инклудекомпанилого|1 |Включите логотип компании.|
+|Инклудекомпанинаме|2 |Включите название компании.|
+|Инклудеконтактинформатион|4 |Включение контактной информации.|
 
 
 

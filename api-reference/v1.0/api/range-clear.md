@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 00dfabae88554d94d068fcb81f74601583e817a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575277"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -37,12 +37,12 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|applyTo|string|Необязательный параметр. Определяет тип очистить действия.  Возможные значения: `All`, `Formats`, `Contents`.|
+|applyTo|string|Необязательный параметр. Определяет тип действия очистки.  Допустимые значения: `All`, `Formats`, `Contents`.|
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response"
