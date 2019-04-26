@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8d9060c28744bae52d4690bf75487e298d58d2a1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800933"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571718"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Тип ресурса Иоседуцертификатесеттингс
 
@@ -22,7 +22,7 @@ ms.locfileid: "31800933"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|trustedRootCertificate|Binary|Доверенный корневой сертификат.|
+|trustedRootCertificate|Двоичный|Доверенный корневой сертификат.|
 |Цертфиленаме|String|Имя файла, отображаемое в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе.|
 |Цертификатионаусорити|String|Центр сертификации PKCS.|
 |Цертификатионаусоритинаме|String|Имя центра сертификации PKCS.|

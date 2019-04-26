@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса ChartLegendFormat
-description: Инкапсулирует свойства формата для легенды диаграммы.
+description: Инкапсулирует свойства формата легенды диаграммы.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f35f7a3cf152024bd89f03daf8be98ec1d8066b0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972070"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569097"
 ---
 # <a name="chartlegendformat-resource-type"></a>Тип ресурса ChartLegendFormat
 
-Инкапсулирует свойства формата для легенды диаграммы.
+Инкапсулирует свойства формата легенды диаграммы.
 
 
 ## <a name="methods"></a>Методы
@@ -23,10 +23,10 @@ ms.locfileid: "27972070"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
-|шрифт|[WorkbookChartFont](chartfont.md)|Представляет атрибуты шрифта (название, размер, цвет и т. д.) легенды диаграммы. Только для чтения.|
+|fill|[Воркбукчартфилл](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
+|шрифт|[Воркбукчартфонт](chartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д., в условных обозначениях диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

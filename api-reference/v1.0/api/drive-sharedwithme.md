@@ -3,7 +3,7 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание списка файлов, к которым мне предоставлен доступ
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 6d1b08de1c5a55f85fc54f5666dafcb9db346fc3
 ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
@@ -13,6 +13,8 @@ ms.lasthandoff: 04/24/2019
 ms.locfileid: "32576089"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции ресурсов [DriveItem](../resources/driveitem.md), к которым предоставлен общий доступ для владельца ресурса [Drive](../resources/drive.md).
 
@@ -31,7 +33,7 @@ ms.locfileid: "32576089"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe
@@ -89,10 +91,13 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Sharing/Shared with me"
-} -->
+  "tocPath": "Sharing/Shared with me",
+  "suppressions": []
+}
+-->

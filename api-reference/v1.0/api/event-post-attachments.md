@@ -1,15 +1,15 @@
 ---
 title: Добавление вложения
-description: Используйте этот интерфейс API для добавления вложения в событии. Начиная с него
+description: С помощью этого API можно добавить вложение к событию. Так как
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cd295ba9b80bbbfcbdf4c6f7bebe95e8b0e4bfcb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584315"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -24,7 +24,7 @@ ms.locfileid: "27990294"
 |Для приложений | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-Вложения для [событий](../resources/event.md) в списке пользователя по умолчанию [календаря](../resources/calendar.md).
+Вложения для [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя по умолчанию.
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -61,8 +61,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | строка  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
@@ -94,7 +94,7 @@ Content-length: 151
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -124,7 +124,7 @@ Content-type: application/json
 
 ##### <a name="request"></a>Запрос
 
-В этом примере к одному событию прикрепляется другое в качестве вложения.
+Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.
 
 <!-- {
   "blockType": "request",
@@ -158,7 +158,7 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса operationError
-description: Описание ошибки в teamsAsyncOperation.
+title: Тип ресурса Оператионеррор
+description: Описание ошибок в Теамсасинкоператион.
 localization_priority: Normal
 ms.openlocfilehash: 1f07fe064d7bbd255f2693071c86842a34fdffa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568915"
 ---
-# <a name="operationerror-resource-type"></a>Тип ресурса operationError
+# <a name="operationerror-resource-type"></a>Тип ресурса Оператионеррор
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описание ошибки в [teamsAsyncOperation](teamsasyncoperation.md).
+Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).
 
-## <a name="operationerror-properties"></a>operationError свойства
+## <a name="operationerror-properties"></a>Свойства Оператионеррор
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|String (только для чтения)|Код ошибки операции.|
-|message|String (только для чтения)|Сообщение об ошибке операции.|
+|code|string (только для чтения)|Код ошибки операции.|
+|message|string (только для чтения)|Сообщение об ошибке операции.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,8 +46,6 @@ ms.locfileid: "29526132"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/operationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

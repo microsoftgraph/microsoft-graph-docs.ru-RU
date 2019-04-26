@@ -2,12 +2,12 @@
 title: Список Бусинессфловтемплатес
 description: В функции проверок доступа Azure AD перечислите все объекты Бусинессфловтемплате.
 localization_priority: Normal
-ms.openlocfilehash: 5b1d96330f808600c7f306ca85009bc5948a22f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d9755a8aefb8c9e9fc4348c2002141805847c5d
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461621"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299670"
 ---
 # <a name="list-businessflowtemplates"></a>Список Бусинессфловтемплатес
 
@@ -19,9 +19,11 @@ ms.locfileid: "32461621"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать доступ. |
+|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Для приложений                            | Акцессревиев. Read. ALL |
+
+Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -101,8 +103,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

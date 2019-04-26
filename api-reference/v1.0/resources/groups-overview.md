@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 46d8f1db9a2c3c12add07787d62fe02c588cd6ae
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642270"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570836"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 

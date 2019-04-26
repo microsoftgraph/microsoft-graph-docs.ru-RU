@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса attributeMappingFunctionSchema
-description: Описываются функции, которая может использоваться в Отображение атрибута для преобразования значения во время синхронизации.
+title: Тип ресурса Аттрибутемаппингфунктионсчема
+description: Описывает функцию, которая может использоваться в сопоставлении атрибутов для преобразования значений во время синхронизации.
 localization_priority: Normal
 ms.openlocfilehash: e2c0139f7c797c3f519cc638561b09f611018b28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511984"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582104"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса attributeMappingFunctionSchema
+# <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса Аттрибутемаппингфунктионсчема
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описываются функции, который может использоваться в [сопоставление атрибутов](synchronization-attributemapping.md) для преобразования значения во время синхронизации.
+Описывает функцию, которая может использоваться в сопоставлении [атрибутов](synchronization-attributemapping.md) для преобразования значений во время синхронизации.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) коллекции|Список поддерживаемых атрибут сопоставления функций.|
+|[List](../api/synchronization-synchronizationschema-functions.md) | Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)|Список поддерживаемых функций сопоставления атрибутов.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
 |name                        |String                    |Имя оператора. |
-|parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) коллекции  |Коллекция параметров функции.|
+|parameters                  |Коллекция [аттрибутемаппингпараметерсчема](../resources/synchronization-attributemappingparameterschema.md)  |Коллекция параметров функции.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -57,8 +57,6 @@ ms.locfileid: "29511984"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-attributemappingfunctionschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

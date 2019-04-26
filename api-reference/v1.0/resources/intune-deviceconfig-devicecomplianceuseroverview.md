@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceComplianceUserOverview
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 177c66d9c09ce8ee1ac546e987e9475c5df3264f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260881"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567531"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Тип ресурса deviceComplianceUserOverview
 

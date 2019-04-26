@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 31f668506ce04271e31acec3efd85ce0cd747e9d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583972"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
@@ -37,7 +37,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 
@@ -55,7 +55,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/unmerge
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

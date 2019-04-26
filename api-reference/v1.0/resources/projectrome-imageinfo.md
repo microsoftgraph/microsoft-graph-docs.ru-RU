@@ -12,6 +12,8 @@ ms.locfileid: "32579715"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .
 
 ## <a name="properties"></a>Свойства
@@ -47,10 +49,13 @@ ms.locfileid: "32579715"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "imageinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -13,6 +13,8 @@ ms.locfileid: "32550086"
 ---
 # <a name="get-user"></a>Получение пользователя
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
 
 >**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
@@ -49,7 +51,7 @@ GET /education/users/{id}/user
   "name": "get_user"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/user
+GET https://graph.microsoft.com/beta/education/me/user
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -86,10 +88,13 @@ Content-length: 491
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

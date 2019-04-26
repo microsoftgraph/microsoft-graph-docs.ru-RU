@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3f9f53d5cf1ea9f89aae477a121cd183ec32c773
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801314"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572194"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -25,10 +25,10 @@ ms.locfileid: "31801314"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-list.md)|Коллекция [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|Список свойств и связей объектов [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
-|[Get windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-get.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|Чтение свойств и связей объекта [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
-|[Создание windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-create.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|Создает объект [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
-|[Delete windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-delete.md)|None|Удаление экземпляра [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
+|[Перечисление windows10CompliancePolicies](../api/intune-deviceconfig-windows10compliancepolicy-list.md)|Коллекция [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|Список свойств и связей объектов [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
+|[Получение windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-get.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md);|Считывание свойств и связей объекта [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
+|[Создание windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-create.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md);|Создание объекта [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
+|[Удаление windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-delete.md)|None|Удаление экземпляра [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
 |[Обновление windows10CompliancePolicy](../api/intune-deviceconfig-windows10compliancepolicy-update.md)|[windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md)|Обновление свойств объекта [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).|
 
 ## <a name="properties"></a>Свойства

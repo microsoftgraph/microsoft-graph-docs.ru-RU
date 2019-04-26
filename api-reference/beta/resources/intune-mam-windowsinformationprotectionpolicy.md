@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0cb441582ff30b9ef1d8a385617d4c0403e0e91b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561861"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>Тип ресурса windowsInformationProtectionPolicy
 
@@ -26,8 +26,8 @@ ms.locfileid: "31806309"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов WindowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-list.md)|Коллекция [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Перечисление свойств и связей объектов [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
-|[Получение объекта windowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-get.md)|[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Чтение свойств и связей объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
-|[Create windowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-create.md)|[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Создание объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
+|[Получение объекта windowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-get.md)|[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md);|Чтение свойств и связей объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
+|[Создание объекта windowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-create.md)|[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md);|Создание объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
 |[Удаление объекта windowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-delete.md)|Нет|Удаление объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
 |[Обновление объекта windowsInformationProtectionPolicy](../api/intune-mam-windowsinformationprotectionpolicy-update.md)|[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Обновление свойств объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).|
 
@@ -76,7 +76,7 @@ ms.locfileid: "31806309"
 |minutesOfInactivityBeforeDeviceLock|Int32|Указывает максимальное время простоя устройства (в минутах), по истечении которого оно блокируется ПИН-кодом или паролем.   Значение — целое число, которое лежит в диапазоне X, где 0 <= X <= 999.|
 |daysWithoutContactBeforeUnenroll|Int32|Время с момента последнего подключения к Интернету до очистки данных приложения (в днях) |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |protectedAppLockerFiles|Коллекция [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md)|Еще один способ указания защищенных приложений с помощью xml-файлов. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|

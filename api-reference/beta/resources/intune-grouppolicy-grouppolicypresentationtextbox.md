@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 123858e95c43955e39b7dba680c67643f0afa3d9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791329"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556867"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>Тип ресурса Граупполиципресентатионтекстбокс
 
@@ -38,7 +38,7 @@ ms.locfileid: "31791329"
 |id|String|Ключ объекта. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |Значение|String|Локализованная строка по умолчанию, отображаемая в текстовом поле. По умолчанию это значение пусто.|
-|Обязательный|Boolean|Требование ввести значение в текстовое поле. Значение по умолчанию − ложь.|
+|Обязательный|Логический|Требование ввести значение в текстовое поле. Значение по умолчанию − ложь.|
 |maxLength|Int64|Целое число без знака, задающее максимальное количество текстовых символов. Значение по умолчанию — 1023.|
 
 ## <a name="relationships"></a>Связи

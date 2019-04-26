@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 602316620aa076107436abdc39c97ea0dcb270d0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571991"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>тип перечисления windows10VpnProfileTarget
 
@@ -23,8 +23,8 @@ ms.locfileid: "31787612"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |user|нуль|Профиль конечного пользователя VPN.|
-|device;|1,1|Конечный профиль VPN для устройства.|
-|Аутопилотдевице|2|Целевой профиль VPN для устройства автоПилота.|
+|device;|1 |Конечный профиль VPN для устройства.|
+|Аутопилотдевице|2 |Целевой профиль VPN для устройства автоПилота.|
 
 
 

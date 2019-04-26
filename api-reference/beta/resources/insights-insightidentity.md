@@ -20,6 +20,12 @@ ms.locfileid: "32549575"
 ## <a name="json-representation"></a>Представление JSON
 Ниже показано представление JSON ресурса.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",
@@ -35,11 +41,3 @@ ms.locfileid: "32549575"
 | displayName       | Строка          | Отображаемое имя пользователя, который предоставил общий доступ к элементу. |
 | id              | String        | Идентификатор пользователя, который предоставил общий доступ к элементу.     |
 | address             | String      | Адрес электронной почты пользователя, который предоставил общий доступ к элементу.  |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

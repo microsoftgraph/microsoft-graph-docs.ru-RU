@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c94e79f688e117960b3a8a0f2c9888a908634a82
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572334"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581725"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>Тип ресурса office365GroupsActivityCounts
 
@@ -17,13 +17,13 @@ ms.locfileid: "29572334"
 
 | Свойство               | Тип   | Описание                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate      | Date   | Последняя дата контента.          |
-| exchangeEmailsReceived | Int64  | Количество почтовых ящиков групп, получаемые по электронной почте. |
-| yammerMessagesPosted   | Int64  | Число сообщений, помещенных в группы Yammer. |
-| yammerMessagesRead     | Int64  | Количество сообщений, ознакомьтесь с разделом в группы Yammer. |
-| yammerMessagesLiked    | Int64  | Количество сообщений, оцененных в группах Yammer. |
-| reportDate             | Date   | Дата отправки целого ряда по электронной почте в почтовый ящик группы или учета количество сообщений, чтение или нравится, что в группе Yammer |
-| reportPeriod           | Строка | Количество дней, на которое отчета.    |
+| Репортрефрешдате      | Дата   | Самая поздняя дата контента.          |
+| Ексчанжеемаилсрецеивед | Int64  | Количество сообщений электронной почты, получаемых групповой почтовыми ящиками. |
+| Яммермессажеспостед   | Int64  | Количество сообщений, отправленных в группы Yammer. |
+| Яммермессажесреад     | Int64  | Количество сообщений, прочитанных в группах Yammer. |
+| Яммермессажесликед    | Int64  | Количество сообщений, которые понравилось в группах Yammer. |
+| reportDate             | Дата   | Дата, когда в группу Yammer было отправлено, прочитано или понравилось количество сообщений электронной почты для почтового ящика группы или сообщений. |
+| Репортпериод           | String | Количество дней, охватываемых отчетом.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

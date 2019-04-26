@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4dc7cb92cfbe87cd98b24614cd9fa31f4f81bb38
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574482"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Тип ресурса notificationMessageTemplate
 
@@ -30,9 +30,9 @@ ms.locfileid: "30253731"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Отображаемое имя для шаблона сообщения уведомления.|
+|displayName|Строка|Отображаемое имя для шаблона сообщения уведомления.|
 |defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
 |brandingOptions|[Нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 

@@ -1,15 +1,15 @@
 ---
-title: Создание события
+title: Создание объекта Event
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: fa63bae39c0e30c34a22dcfc91a7f0e7db528f58
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508946"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536462"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -72,7 +72,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 Так как ресурс **event** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к событию при его создании.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
@@ -217,7 +217,7 @@ Content-length: 2197
 ##### <a name="request-2"></a>Запрос 2
 В следующем примере задаются 3 расположения, где организатор и участники могут посетить мероприятие.
 
-В теле запроса представьте объект [event](../resources/event.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -290,7 +290,7 @@ Content-length: 1390
 
 ##### <a name="response-2"></a>Ответ 2
 В приведенном ниже примере ответа показано созданное событие, в котором указаны сведения о 3 местах проведения собрания. Так как используется заголовок запроса `Prefer: outlook.timezone="Pacific Standard Time"`, свойства **start** и **end** выражены в формате PST.
-Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -601,8 +601,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

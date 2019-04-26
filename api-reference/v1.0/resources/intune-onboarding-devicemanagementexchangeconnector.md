@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 172a8ae7bbdbad77da9b7a67d57047441e5a039d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262610"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583986"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Тип ресурса deviceManagementExchangeConnector
 
@@ -25,12 +25,12 @@ ms.locfileid: "30262610"
 |[Создание объекта deviceManagementExchangeConnector](../api/intune-onboarding-devicemanagementexchangeconnector-create.md)|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md);|Создание объекта [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).|
 |[Удаление объекта deviceManagementExchangeConnector](../api/intune-onboarding-devicemanagementexchangeconnector-delete.md)|Нет|Удаляет объект [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).|
 |[Обновление объекта deviceManagementExchangeConnector](../api/intune-onboarding-devicemanagementexchangeconnector-update.md)|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|Обновление свойств объекта [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).|
-|[Действие sync](../api/intune-onboarding-devicemanagementexchangeconnector-sync.md)|Нет|Н/Д|
+|[Действие sync](../api/intune-onboarding-devicemanagementexchangeconnector-sync.md)|Нет|Пока не задокументировано|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[Девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
@@ -41,8 +41,8 @@ ms.locfileid: "30262610"
 |exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
 
-## <a name="relationships"></a>Связи
-None
+## <a name="relationships"></a>Отношения
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

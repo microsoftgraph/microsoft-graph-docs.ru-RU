@@ -2,15 +2,15 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: Перечисление
+title: List
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581575"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -33,7 +33,7 @@ ms.locfileid: "30481519"
 | [Перечисление элементов списка][]  | GET /lists/{list-id}/items
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
-| [Создание элемента списка][]      | POST /lists/{list-id}
+| [Создание элемента в списке][]      | POST /lists/{list-id}
 | [Получение последних действий][] | GET /lists/{list-id}/activities
 
 [Получение списка]: ../api/list-get.md
@@ -88,7 +88,7 @@ ms.locfileid: "30481519"
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
 | **contentTypes** | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.
-| **displayName**  | string                           | Отображаемый заголовок списка.
+| **displayName**  | строка                           | Отображаемый заголовок списка.
 | **list**         | [listInfo][]                     | Предоставляет дополнительные сведения о списке.
 | **system**       | [systemFacet][]                  | Если это свойство задано, оно указывает, что данным списком управляет система. Только для чтения.
 
@@ -101,7 +101,7 @@ ms.locfileid: "30481519"
 | **createdBy**            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
 | **description**          | строка           | Текст с описанием элемента.
-| **lastModifiedBy**       | [identitySet][]  | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
+| **lastModifiedBy**;       | [identitySet][]  | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | **lastModifiedDateTime** | DateTimeOffset   | Дата и время последнего изменения элемента. Только для чтения.
 | **webUrl**               | строка (url-адрес)     | URL-адрес для отображения элемента в браузере. Только для чтения.
 
@@ -137,8 +137,6 @@ ms.locfileid: "30481519"
   "tocBookmarks": {
     "Lists": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

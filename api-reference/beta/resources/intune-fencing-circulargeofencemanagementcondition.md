@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f826bd05a7f21df9ccf46579b77dc13967c31231
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568817"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>Тип ресурса Циркуларжеофенцеманажементкондитион
 
@@ -43,8 +43,8 @@ ms.locfileid: "31780282"
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |latitude|Double|Широта в градусах от – 90 до + 90 включительно.|
-|longitude|Двойное с плавающей точкой|Долгота в градусах от – 180 до + 180 включительно.|
-|Радиусинметерс|Одинарное с плавающей точкой|Радиус в метрах.|
+|longitude|Двойное|Долгота в градусах от – 180 до + 180 включительно.|
+|Радиусинметерс|Одинарное|Радиус в метрах.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|

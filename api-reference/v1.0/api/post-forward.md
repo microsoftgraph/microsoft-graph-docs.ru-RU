@@ -13,6 +13,8 @@ ms.locfileid: "32576320"
 ---
 # <a name="post-forward"></a>post: forward
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Пересылка записи получателю. Вы можете указать в запросе родительскую беседу вместе с цепочкой или только родительскую цепочку. 
 
 ## <a name="permissions"></a>Разрешения
@@ -57,7 +59,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
+POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
 Content-length: 166
 
@@ -86,10 +88,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "post: forward",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

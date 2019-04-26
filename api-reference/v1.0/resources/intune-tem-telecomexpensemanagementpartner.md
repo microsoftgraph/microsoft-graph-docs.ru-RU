@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0d300fb881576932350eb60a6b441fa3087e6e5e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260195"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571809"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Тип ресурса telecomExpenseManagementPartner
 
@@ -29,15 +29,15 @@ ms.locfileid: "30260195"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор партнера TEM.|
-|displayName|String|Отображаемое имя партнера TEM.|
+|id|String|Уникальный идентификатор партнера TEM.|
+|displayName|Строка|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
-|enabled|Логический|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
+|enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
 
-## <a name="relationships"></a>Связи
-None
+## <a name="relationships"></a>Отношения
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

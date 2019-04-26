@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: e08c83f140b86d831d71470dd3d47c14681e3b32
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164339"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566397"
 ---
 # <a name="list-threads"></a>Список цепочек
 
@@ -22,7 +22,7 @@ ms.locfileid: "30164339"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Group.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -41,7 +41,7 @@ GET /groups/{id}/conversations/{id}/threads
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversationThread](../resources/conversationthread.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -54,7 +54,7 @@ GET /groups/{id}/conversations/{id}/threads
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

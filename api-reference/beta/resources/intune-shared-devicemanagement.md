@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518542"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574455"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -40,7 +40,7 @@ ms.locfileid: "31518542"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение deviceManagement](../api/intune-shared-devicemanagement-get.md)|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
+|[Получение объекта deviceManagement](../api/intune-shared-devicemanagement-get.md)|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |[Обновление объекта deviceManagement](../api/intune-shared-devicemanagement-update.md)|Обновление свойств объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |**Настройка устройства**|
 |[Действие enableLegacyPcManagement](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|Нет|Пока не задокументировано.|
@@ -59,15 +59,15 @@ ms.locfileid: "31518542"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор, связанный с устройством.|
 |**Настройка устройства**|
-|Интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
+|Интунеаккаунтид|Guid|Идентификатор учетной записи Intune для данного клиента|
 |Легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |Максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
 |Аккаунтмовекомплетиондатетиме|DateTimeOffset|Дата _Амп_ время, когда данные клиента перемещаются между скалеунитс.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о согласия администратора.|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Общие сведения о защите устройств.|
-|managedDeviceCleanupSettings;|[managedDeviceCleanupSettings;](../resources/intune-devices-manageddevicecleanupsettings.md)|Правило очистки устройств|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Общие сведения о защите устройств.|
+|managedDeviceCleanupSettings;|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md);|Правило очистки устройств|
 |subscriptionState|[Девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[Девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств с Windows.|
@@ -82,7 +82,7 @@ ms.locfileid: "31518542"
 |androidForWorkAppConfigurationSchemas|Коллекция [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md)|Сущности схемы конфигурации в приложении Android for Work.|
 |androidForWorkEnrollmentProfiles|Коллекция [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Сущности профиля регистрации Android for Work.|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Одноэлементная сущность параметров Android for Work.|
-|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Одноэлементная сущность учетной записи для учетной записи управляемого хранилища Android.|
+|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md);|Одноэлементная сущность учетной записи для учетной записи управляемого хранилища Android.|
 |Андроидманажедстореаппконфигуратионсчемас|Коллекция [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Сущности схемы конфигурации корпоративных приложений Android.|
 |**Аудит**|
 |auditEvents|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|События аудита|
@@ -102,7 +102,7 @@ ms.locfileid: "31518542"
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|Общие сведения о состоянии конфигурации устройства для этой учетной записи.|
 |Девицеконфигуратионрестриктедаппсвиолатионс|Коллекция [рестриктедаппсвиолатион](../resources/intune-deviceconfig-restrictedappsviolation.md)|Нарушения ограниченного доступа к приложениям для этой учетной записи.|
 |deviceConfigurations|Коллекция [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Конфигурации устройств.|
-|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|Сводка по состоянию пользователей конфигурации устройств для этой учетной записи.|
+|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Сводка по состоянию пользователей конфигурации устройств для этой учетной записи.|
 |iosUpdateStatuses|Коллекция [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|Состояния установки обновления программного обеспечения IOS для этой учетной записи.|
 |Ндесконнекторс|Коллекция [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md)|Коллекция соединителей NDES для этой учетной записи.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Общие сведения о состоянии обновления программного обеспечения.|

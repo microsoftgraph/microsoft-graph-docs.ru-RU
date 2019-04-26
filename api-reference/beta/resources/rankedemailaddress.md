@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса rankedEmailAddress
-description: Представляет адрес ранжированных электронной почты.
+title: Тип ресурса Ранкедемаиладдресс
+description: Представляет ранжированный адрес электронной почты.
 localization_priority: Normal
 ms.openlocfilehash: 938afc0de208fd3cdbd0cfec299d01ada9d4f592
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510010"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563280"
 ---
-# <a name="rankedemailaddress-resource-type"></a>Тип ресурса rankedEmailAddress
+# <a name="rankedemailaddress-resource-type"></a>Тип ресурса Ранкедемаиладдресс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет адрес ранжированных электронной почты.
+Представляет ранжированный адрес электронной почты.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |address|string|Адрес электронной почты.|
-|rank|double|Ранг адрес электронной почты. Ранг используется в качестве ключа сортировки, при использовании возвращаемых результатов. Более высокое значение соответствует более актуальному результату. Релевантность определяется сигналами связи, сотрудничества и рабочих отношений.|
+|rank|double|Ранг адреса электронной почты. В качестве ключа сортировки используется ранг, связанный с другими возвращенными результатами. Более высокое значение соответствует более актуальному результату. Релевантность определяется сигналами связи, сотрудничества и рабочих отношений.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -50,8 +50,6 @@ ms.locfileid: "29510010"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/rankedemailaddress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

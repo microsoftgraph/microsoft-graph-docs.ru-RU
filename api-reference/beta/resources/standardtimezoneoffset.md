@@ -3,11 +3,11 @@ title: Тип ресурса standardTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное.
 localization_priority: Normal
 ms.openlocfilehash: cc3de9a0977caf6c222291fdff2b4e0f96a9d9e5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514483"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582180"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Тип ресурса standardTimeZoneOffset
 
@@ -26,7 +26,7 @@ ms.locfileid: "29514483"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | dayOccurrence | Edm.Int32 | Представляет n-е повторение дня недели, в который происходит переход с летнего на стандартное время. |
-| dayOfWeek | строка | Представляет день недели, в который осуществляется переход с летнего времени на стандартное. |
+| dayOfWeek | string | Представляет день недели, в который осуществляется переход с летнего времени на стандартное. |
 | month | Edm.Int32 | Представляет месяц, когда осуществляется переход с летнего времени на стандартное. |
 | time | Edm.TimeOfDay | Представляет время суток, когда происходит переход с летнего времени на стандартное. |
 | year | Edm.Int32 | Указывает периодичность перехода с летнего времени на стандартное (в годах). Например, значение "0" указывает, что переход осуществляется ежегодно.|
@@ -64,8 +64,6 @@ ms.locfileid: "29514483"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/standardtimezoneoffset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

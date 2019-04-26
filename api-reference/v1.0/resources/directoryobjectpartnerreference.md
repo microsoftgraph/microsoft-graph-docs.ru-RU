@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0b84b7447d689759444e9cfd99982857eafa71eb
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30224133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574689"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
@@ -19,10 +19,10 @@ ms.locfileid: "30224133"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|Строка| Описание возвращаемого объекта. Только для чтения. |
+|description|String| Описание возвращаемого объекта. Только для чтения. |
 |displayName|String| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
 |Екстерналпартнертенантид|Guid| Идентификатор клиента для партнерского клиента. Только для чтения. |
-|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
+|id|Строка| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,8 +58,6 @@ ms.locfileid: "30224133"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryobjectpartnerreference.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

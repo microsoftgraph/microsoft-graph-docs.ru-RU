@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2808d92ac68fd6193381fccfd0d118f36e602677
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571725"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>Тип ресурса iosCompliancePolicy
 
@@ -25,11 +25,11 @@ ms.locfileid: "31796082"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-list.md)|Коллекция [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Список свойств и связей объектов [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
-|[Get iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-get.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Чтение свойств и связей объекта [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
-|[Create iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-create.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Создание объекта [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
-|[Delete iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-delete.md)|None|Удаление экземпляра [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
-|[Update iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Обновление свойств объекта [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
+|[Перечисление iosCompliancePolicies](../api/intune-deviceconfig-ioscompliancepolicy-list.md)|Коллекция [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Список свойств и связей объектов [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
+|[Получение iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-get.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md);|Считывание свойств и связей объекта [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
+|[Создание iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-create.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md);|Создание нового объекта [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
+|[Удаление iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-delete.md)|None|Удаление экземпляра [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
+|[Обновление iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Обновление свойств объекта [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

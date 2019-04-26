@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 306f280928c843b596c57e7bdab454fd138851cc
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260839"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571200"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
@@ -20,12 +20,12 @@ ms.locfileid: "30260839"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platformBlocked|Логический|Указывает, блокируется ли регистрация платформы|
+|platformBlocked|Boolean|Указывает, блокируется ли регистрация платформы|
 |personalDeviceEnrollmentBlocked|Boolean|Указывает, блокируется ли регистрация личных устройств|
 |osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

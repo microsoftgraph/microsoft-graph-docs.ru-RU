@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557105"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание элемента [listItem][] в [списке][].
 
@@ -31,7 +33,7 @@ ms.locfileid: "30481029"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>Тело запроса
@@ -45,7 +47,7 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -91,10 +93,13 @@ Content-type: application/json
 [списке]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
-} -->
+  "tocPath": "ListItem/Create",
+  "suppressions": []
+}
+-->

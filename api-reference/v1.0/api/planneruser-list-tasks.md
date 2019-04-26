@@ -1,19 +1,22 @@
 ---
 title: Перечисление задач
 description: Получение списка объектов **plannertask**, назначенных объекту User.
-localization_priority: Priority
+localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: ff391b31aa82daf8f1080938ad6555090e7e3d96
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574280"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение списка объектов **plannertask**, назначенных объекту User.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -27,8 +30,7 @@ ms.locfileid: "27967989"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
-GET /users/{id}/planner/tasks
-GET /drive/root/createdByUser/planner/tasks
+GET /users/<id>/planner/tasks
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -36,8 +38,8 @@ GET /drive/root/createdByUser/planner/tasks
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
@@ -53,10 +55,10 @@ GET /drive/root/createdByUser/planner/tasks
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/planner/tasks
+GET https://graph.microsoft.com/beta/me/planner/tasks
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,10 +104,13 @@ Content-length: 833
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List tasks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

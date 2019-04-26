@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568810"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Бинариманажементкондитионекспрессионоператортипе
 
@@ -23,7 +23,7 @@ ms.locfileid: "31784707"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |или|нуль|Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.|
-|и|1,1|Оценивает набор операндов как true, если все его операнды имеют значение true.|
+|и|1 |Оценивает набор операндов как true, если все его операнды имеют значение true.|
 
 
 

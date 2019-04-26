@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 98f29935304c5eac2262049f76a9bcf006aa694b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264094"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571823"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 
@@ -35,7 +35,7 @@ ms.locfileid: "30264094"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
