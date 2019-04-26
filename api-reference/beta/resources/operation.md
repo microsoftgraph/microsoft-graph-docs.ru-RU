@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса операции
-description: Состояние выполнения длительной операции.
+title: Тип ресурса Operation
+description: Состояние длительной операции.
 localization_priority: Normal
 ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568912"
 ---
-# <a name="operation-resource-type"></a><span data-ttu-id="c3c0d-103">Тип ресурса операции</span><span class="sxs-lookup"><span data-stu-id="c3c0d-103">operation resource type</span></span>
+# <a name="operation-resource-type"></a><span data-ttu-id="0f8fe-103">Тип ресурса Operation</span><span class="sxs-lookup"><span data-stu-id="0f8fe-103">operation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c3c0d-104">Состояние выполнения длительной операции.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-104">The status of a long-running operation.</span></span>
+<span data-ttu-id="0f8fe-104">Состояние длительной операции.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-104">The status of a long-running operation.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="c3c0d-105">Методы</span><span class="sxs-lookup"><span data-stu-id="c3c0d-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="0f8fe-105">Методы</span><span class="sxs-lookup"><span data-stu-id="0f8fe-105">Methods</span></span>
 
-<span data-ttu-id="c3c0d-106">Нет</span><span class="sxs-lookup"><span data-stu-id="c3c0d-106">None</span></span>
+<span data-ttu-id="0f8fe-106">Нет</span><span class="sxs-lookup"><span data-stu-id="0f8fe-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c3c0d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="c3c0d-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0f8fe-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0f8fe-107">Properties</span></span>
 
-| <span data-ttu-id="c3c0d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="c3c0d-108">Property</span></span>           | <span data-ttu-id="c3c0d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="c3c0d-109">Type</span></span>            | <span data-ttu-id="c3c0d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="c3c0d-110">Description</span></span>                                                                     |
+| <span data-ttu-id="0f8fe-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="0f8fe-108">Property</span></span>           | <span data-ttu-id="0f8fe-109">Тип</span><span class="sxs-lookup"><span data-stu-id="0f8fe-109">Type</span></span>            | <span data-ttu-id="0f8fe-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0f8fe-110">Description</span></span>                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="c3c0d-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="c3c0d-111">createdDateTime</span></span>    | <span data-ttu-id="c3c0d-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c3c0d-112">DateTimeOffset</span></span>  | <span data-ttu-id="c3c0d-113">Время начала операции.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-113">The start time of the operation.</span></span>                                                |
-| <span data-ttu-id="c3c0d-114">id</span><span class="sxs-lookup"><span data-stu-id="c3c0d-114">id</span></span>                 | <span data-ttu-id="c3c0d-115">String</span><span class="sxs-lookup"><span data-stu-id="c3c0d-115">String</span></span>          | <span data-ttu-id="c3c0d-116">Идентификатор операции. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-116">The operation id. Read-only.</span></span> <span data-ttu-id="c3c0d-117">Сервер, созданный.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-117">Server generated.</span></span>                                  |
-| <span data-ttu-id="c3c0d-118">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="c3c0d-118">lastActionDateTime</span></span> | <span data-ttu-id="c3c0d-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c3c0d-119">DateTimeOffset</span></span>  | <span data-ttu-id="c3c0d-120">Время последнего действия операции.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-120">The time of the last action of the operation.</span></span>                                   |
-| <span data-ttu-id="c3c0d-121">status</span><span class="sxs-lookup"><span data-stu-id="c3c0d-121">status</span></span>             | <span data-ttu-id="c3c0d-122">String</span><span class="sxs-lookup"><span data-stu-id="c3c0d-122">String</span></span>          | <span data-ttu-id="c3c0d-123">Возможные значения: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="c3c0d-124">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-124">Read-only.</span></span> |
+| <span data-ttu-id="0f8fe-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="0f8fe-111">createdDateTime</span></span>    | <span data-ttu-id="0f8fe-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0f8fe-112">DateTimeOffset</span></span>  | <span data-ttu-id="0f8fe-113">Время начала операции.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-113">The start time of the operation.</span></span>                                                |
+| <span data-ttu-id="0f8fe-114">id</span><span class="sxs-lookup"><span data-stu-id="0f8fe-114">id</span></span>                 | <span data-ttu-id="0f8fe-115">Строка</span><span class="sxs-lookup"><span data-stu-id="0f8fe-115">String</span></span>          | <span data-ttu-id="0f8fe-116">Идентификатор операции. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-116">The operation id. Read-only.</span></span> <span data-ttu-id="0f8fe-117">Создается сервером.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-117">Server generated.</span></span>                                  |
+| <span data-ttu-id="0f8fe-118">Ластактиондатетиме</span><span class="sxs-lookup"><span data-stu-id="0f8fe-118">lastActionDateTime</span></span> | <span data-ttu-id="0f8fe-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0f8fe-119">DateTimeOffset</span></span>  | <span data-ttu-id="0f8fe-120">Время последнего действия операции.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-120">The time of the last action of the operation.</span></span>                                   |
+| <span data-ttu-id="0f8fe-121">status</span><span class="sxs-lookup"><span data-stu-id="0f8fe-121">status</span></span>             | <span data-ttu-id="0f8fe-122">String</span><span class="sxs-lookup"><span data-stu-id="0f8fe-122">String</span></span>          | <span data-ttu-id="0f8fe-123">Возможные значения: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="0f8fe-124">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-124">Read-only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="c3c0d-125">Отношения</span><span class="sxs-lookup"><span data-stu-id="c3c0d-125">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="0f8fe-125">Отношения</span><span class="sxs-lookup"><span data-stu-id="0f8fe-125">Relationships</span></span>
 
-<span data-ttu-id="c3c0d-126">Нет</span><span class="sxs-lookup"><span data-stu-id="c3c0d-126">None</span></span>
+<span data-ttu-id="0f8fe-126">Нет</span><span class="sxs-lookup"><span data-stu-id="0f8fe-126">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c3c0d-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c3c0d-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0f8fe-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0f8fe-127">JSON representation</span></span>
 
-<span data-ttu-id="c3c0d-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c3c0d-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0f8fe-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f8fe-128">The following is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -51,7 +51,7 @@ ms.locfileid: "29520188"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="c3c0d-129">Пример</span><span class="sxs-lookup"><span data-stu-id="c3c0d-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0f8fe-129">Пример</span><span class="sxs-lookup"><span data-stu-id="0f8fe-129">Example</span></span>
 
 <!-- {
   "blockType": "example",
