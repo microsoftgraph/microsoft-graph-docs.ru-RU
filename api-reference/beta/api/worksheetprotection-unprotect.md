@@ -1,17 +1,17 @@
 ---
-title: 'WorksheetProtection: unprotect'
+title: 'Воркбукворкшитпротектион: Unprotect'
 description: Снятие защиты с листа
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9fe503034e2d54dd1df7282c2c0e5fa0819bfdfd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca2491fe86cd6e407d87202ced69c32e9f49ac4a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535820"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339344"
 ---
-# <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
+# <a name="workbookworksheetprotection-unprotect"></a>Воркбукворкшитпротектион: Unprotect
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "worksheetprotection_unprotect"
+  "name": "workbookworksheetprotection_unprotect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
@@ -82,12 +82,10 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: unprotect",
+  "description": "workbookWorksheetProtection: unprotect",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-unprotect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: Список Програмконтролтипес
 description: В функции проверок доступа Azure AD перечислите все объекты Програмконтролтипе.
 localization_priority: Normal
-ms.openlocfilehash: 00983cadf4bd1e0cf136c594f06ac3ee6fbb1de5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e66d39587ace59d635c5e5d092673c90684adb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538489"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337219"
 ---
 # <a name="list-programcontroltypes"></a>Список Програмконтролтипес
 
@@ -19,9 +19,11 @@ ms.locfileid: "32538489"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу. |
+|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Для приложений                            | Програмконтрол. Read. ALL ", Програмконтрол. ReadWrite. ALL  |
+
+Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +38,7 @@ GET /programControlTypes
 ## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [програмконтролтипе](../resources/programcontroltype.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,8 +101,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/programcontroltype-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

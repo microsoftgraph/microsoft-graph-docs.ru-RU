@@ -4,12 +4,12 @@ description: 'Абстрактный объект, используемый дл
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49afe12f4897df80ce78ba28a024883cefeb0a96
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507184"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340486"
 ---
 # <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
 
@@ -22,13 +22,13 @@ ms.locfileid: "32507184"
 |:---------------|:--------|:----------|
 |description|String| Описание организации.|
 |displayName|String| Отображаемое имя Организации.|
-|externalSource|строка| Источник, из которого была создана данная организация. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|string| Источник, из которого была создана данная организация. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,8 +58,6 @@ ms.locfileid: "32507184"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationorganization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

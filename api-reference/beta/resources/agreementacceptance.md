@@ -2,12 +2,12 @@
 title: Тип ресурса agreementAcceptance
 description: Представляет текущее состояние пользователя в пределах области настраиваемых терминов компании на платформе Azure Active Directory (Azure AD).
 localization_priority: Normal
-ms.openlocfilehash: 884a6b7dcf4dcc8f00aa927dd9d486c074b64183
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 84b54998e8afaad501d2cf46d564400aa2307507
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544066"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339150"
 ---
 # <a name="agreementacceptance-resource-type"></a>Тип ресурса agreementAcceptance
 
@@ -31,7 +31,7 @@ ms.locfileid: "32544066"
 |Агриментфилеид|String|Идентификатор файла соглашения, принятого пользователем.|
 |Агриментид|String|Идентификатор соглашения.|
 |id|String| Только для чтения.|
-|recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |состояние|string| Возможные значения: `accepted`, `declined`.|
 |userDisplayName|String|Отображаемое имя пользователя, когда оно было записано.|
 |userEmail|String|Сообщение электронной почты пользователя, когда сообщение о принятии было записано.|
@@ -42,7 +42,7 @@ ms.locfileid: "32544066"
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -78,8 +78,6 @@ ms.locfileid: "32544066"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreementacceptance.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

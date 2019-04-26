@@ -1,21 +1,21 @@
 ---
-title: Получение объекта WorksheetProtection
-description: Получение свойств и связей объекта worksheetprotection.
+title: Получение Воркбукворкшитпротектион
+description: Получение свойств и связей объекта воркбукворкшитпротектион.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c3de9aa039b824cff5e5e746c599452b6cfed79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 342864453e60e66f1485a052ab225249a5a1380f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535741"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339359"
 ---
-# <a name="get-worksheetprotection"></a>Получение объекта WorksheetProtection
+# <a name="get-workbookworksheetprotection"></a>Получение Воркбукворкшитпротектион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта worksheetprotection.
+Получение свойств и связей объекта Воркбукворкшитпротектион.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,15 +42,15 @@ GET /workbook/worksheets/{id|name}/protection
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [WorksheetProtection](../resources/worksheetprotection.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшитпротектион](../resources/workbookworksheetprotection.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "get_worksheetprotection"
+  "name": "get_workbookworksheetprotection"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -77,12 +77,10 @@ Content-length: 23
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get WorksheetProtection",
+  "description": "Get workbookWorksheetProtection",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

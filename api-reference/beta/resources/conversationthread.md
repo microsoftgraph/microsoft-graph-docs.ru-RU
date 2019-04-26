@@ -4,12 +4,12 @@ description: conversationThread — это коллекция экземпляр
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 504b8b8d4e47f892da72ea7ef9588491d0642f21
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39861bdebbc6bb869a4e55d379fd44b2ceb73400
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543411"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341003"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 
@@ -23,11 +23,11 @@ conversationThread — это коллекция экземпляров [post](p
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список цепочек бесед](../api/group-list-threads.md) | Коллекция [conversationThread](conversationthread.md) |Получение всех цепочек группы.|
+|[Перечисление цепочек](../api/group-list-threads.md) | Коллекция [conversationThread](conversationthread.md) |Получение всех цепочек группы.|
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[Удаление](../api/conversationthread-delete.md) | Нет |Удаление объекта conversationThread. |
+|[Delete](../api/conversationthread-delete.md) | Нет. |Удаление объекта conversationThread. |
 |[reply](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
 |[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 
@@ -44,7 +44,7 @@ conversationThread — это коллекция экземпляров [post](p
 |preview|String|Краткая сводка из текста последней записи в этой беседе.|
 |isLocked|Boolean|Указывает, заблокирована ли цепочка.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |posts|Коллекция [post](post.md)| Только для чтения. Допускается значение null.|
@@ -87,8 +87,6 @@ conversationThread — это коллекция экземпляров [post](p
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/conversationthread.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

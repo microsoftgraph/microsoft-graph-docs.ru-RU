@@ -2,12 +2,12 @@
 title: Тип ресурса Бусинессфловтемплате
 description: В функции рецензирования Access в Azure AD объект `businesFlowTemplate` представляет шаблон рабочего процесса Azure AD. Идентификатор шаблона, например, для проверки гостевых участников группы, предоставляется вызывающим абонентом при создании проверки доступа.
 localization_priority: Normal
-ms.openlocfilehash: 567a7f499e2fb493f3ca519e312e69fb43fe3b79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0cca72bc8ccd372cdaf9952b385bc63f81b0631d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543745"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338834"
 ---
 # <a name="businessflowtemplate-resource-type"></a>Тип ресурса Бусинессфловтемплате
 
@@ -33,7 +33,7 @@ ms.locfileid: "32543745"
 
 ## <a name="relationships"></a>Связи
 
-Нет.
+Отсутствуют.
 
 ## <a name="see-also"></a>См. также
 
@@ -42,7 +42,7 @@ ms.locfileid: "32543745"
 |[Создание Акцессревиев](../api/accessreview-create.md) | [Акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -69,8 +69,6 @@ ms.locfileid: "32543745"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/businessflowtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

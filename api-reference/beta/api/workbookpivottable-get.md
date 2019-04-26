@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта wo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 65f6600fba2b1072c8501f6e2417b33a728b3410
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 458d2f065af512b4bc33481916085fecf50aa4af
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536119"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339517"
 ---
 # <a name="get-workbookpivottable"></a>Получение workbookPivotTable
 
@@ -44,7 +44,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookPivotTable](../resources/workbookpivottable.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -74,11 +74,3 @@ Content-length: 46
   "name": "name-value"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/workbookpivottable-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

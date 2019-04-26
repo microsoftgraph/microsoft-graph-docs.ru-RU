@@ -2,12 +2,12 @@
 title: Тип ресурса Синчронизатионруле
 description: Определяет способ выполнения синхронизации для обработчика синхронизации, в том числе объекты, которые необходимо синхронизировать и в каком направлении, как объекты из исходного каталога должны сопоставляться с объектами в целевом каталоге и как атрибуты должно быть преобразовано при синхронизации из источника с целевым каталогом.
 localization_priority: Normal
-ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b881c73d8fec8dc6b342192195d486807c744cf7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453646"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340032"
 ---
 # <a name="synchronizationrule-resource-type"></a>Тип ресурса Синчронизатионруле
 
@@ -23,14 +23,14 @@ ms.locfileid: "32453646"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|редактируем       |Boolean    |`true`значение, если правило синхронизации может быть изменено; `false` если это правило доступно только для чтения и не должно изменяться.|
+|редактируем       |Логический    |`true`значение, если правило синхронизации может быть изменено; `false` если это правило доступно только для чтения и не должно изменяться.|
 |id             |Строка     |Идентификатор правила синхронизации. Допустимые значения: один из идентификаторов, распознаваемый обработчиком синхронизации. Поддерживаемые идентификаторы правил можно найти в шаблоне синхронизации, возвращенном API.|
 |метаданных       |Коллекция [стрингкэйстрингвалуепаир](synchronization-stringkeystringvaluepair.md) |Дополнительные свойства расширения. Если вы не укажете в явной форме команду поддержки, значения метаданных не должны изменяться.|
 |name           |String     |Понятное имя правила синхронизации. Значение null не допускается.|
 |Обжектмаппингс |Коллекция [обжектмаппинг](synchronization-objectmapping.md)    |Коллекция сопоставлений объектов, поддерживаемых правилом. Сообщает обработчику синхронизации, какие объекты должны синхронизироваться.|
 |priority       |Целое число    |Приоритет относительно других правил в [синчронизатионсчема](synchronization-synchronizationschema.md). Правила с наименьшим номером приоритета будут обработаны первыми.|
-|Саурцедиректоринаме       |Строка    |Имя исходного каталога. Должно сопоставляться с одним из определений каталога в [синчронизатионсчема](synchronization-synchronizationschema.md).|
-|Таржетдиректоринаме       |Строка    |Имя целевого каталога. Должно сопоставляться с одним из определений каталога в [синчронизатионсчема](synchronization-synchronizationschema.md).|
+|Саурцедиректоринаме       |String    |Имя исходного каталога. Должно сопоставляться с одним из определений каталога в [синчронизатионсчема](synchronization-synchronizationschema.md).|
+|Таржетдиректоринаме       |String    |Имя целевого каталога. Должно сопоставляться с одним из определений каталога в [синчронизатионсчема](synchronization-synchronizationschema.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -67,8 +67,6 @@ ms.locfileid: "32453646"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationrule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

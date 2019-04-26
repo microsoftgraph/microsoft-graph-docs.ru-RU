@@ -4,14 +4,16 @@ description: 'Получение состояния длительной опе�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ad9a09960c946bf41d4f62e73c65e1c7562f97ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d9e880a63eef7290c6fad06ef53960015101f3d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539979"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338147"
 ---
 # <a name="get-onenoteoperation"></a>Получение onenoteOperation
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение состояния длительной операции с OneNote. Это относится к операциям, которые возвращают заголовок **operationing — Location** в ответе `CopyNotebook`, `CopyToNotebook`например `CopyToSectionGroup`, `and CopyToSection`,,.   
 
@@ -39,7 +41,7 @@ GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Нет.
+Отсутствуют.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -61,7 +63,7 @@ GET /sites/{id}/onenote/operations/{id}
   "name": "get_onenoteoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
+GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -87,10 +89,13 @@ Content-length: 215
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get onenoteOperation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

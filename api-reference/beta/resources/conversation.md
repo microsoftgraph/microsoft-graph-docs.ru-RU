@@ -4,14 +4,16 @@ description: Беседа — коллекция цепочек, содержа�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 7d489a75f72a705a77231af940094b7aa2d18fe1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: db7c8822a3d91369554007656baed171ae81b1fd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535406"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341248"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Беседа — коллекция [цепочек](conversationthread.md), содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
 
@@ -21,10 +23,10 @@ ms.locfileid: "32535406"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
+|[Перечисление бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
 |[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
 |[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
-|[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
+|[Delete](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
 |[Список цепочек беседы](../api/conversation-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
 |[Создание цепочки беседы](../api/conversation-post-threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
 
@@ -38,7 +40,7 @@ ms.locfileid: "32535406"
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
 |Уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -47,23 +49,13 @@ ms.locfileid: "32535406"
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!--{
+<!-- {
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.conversation",
-  "@odata.annotations": [
-    {
-      "property": "threads",
-      "capabilities": {
-        "changeTracking": false,
-        "searchable": false
-      }
-    }
-  ]
+  "@odata.type": "microsoft.graph.conversation"
 }-->
 
 ```json
@@ -73,9 +65,7 @@ ms.locfileid: "32535406"
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"],
-
-  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
+  "uniqueSenders": ["string"]
 }
 
 ```
@@ -83,10 +73,13 @@ ms.locfileid: "32535406"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "conversation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

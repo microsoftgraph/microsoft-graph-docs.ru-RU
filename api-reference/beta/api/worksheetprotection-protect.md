@@ -1,17 +1,17 @@
 ---
-title: 'WorksheetProtection: protect'
+title: 'Воркбукворкшитпротектион: защита'
 description: Защита листа. Выдает исключение, если лист защищен.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b10fa4454b5937c2548e023adfd34900a16c8c95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544058"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339374"
 ---
-# <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
+# <a name="workbookworksheetprotection-protect"></a>Воркбукворкшитпротектион: защита
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|WorksheetProtectionOptions|Необязательные параметры защиты листа.|
+|options|[Воркбукворкшитпротектионоптионс](../resources/workbookworksheetprotectionoptions.md)|Необязательные параметры защиты листа.|
 
 ## <a name="response"></a>Отклик
 
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "worksheetprotection_protect"
+  "name": "workbookworksheetprotection_protect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
@@ -94,12 +94,10 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: protect",
+  "description": "workbookWorksheetProtection: protect",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-protect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

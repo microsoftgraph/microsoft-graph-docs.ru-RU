@@ -14,11 +14,19 @@ author: "ммаст — MSFT" локализатион_приорити: Normal 
 |:-|:-|
 | [**Едукатионидентитиматчингконфигуратион**](educationidentitymatchingconfiguration.md) | Используйте этот тип для согласования с существующими учетными записями пользователей в Azure Active Directory (Azure AD). |
 | [**Едукатионидентитикреатионконфигуратион**](educationidentitycreationconfiguration.md) | Используйте этот тип для создания новых учетных записей пользователей в Azure AD. |
-<!--
+
+## <a name="json-representation"></a>Представление JSON
+<!-- {
+  "blockType": "resource",
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration"
+}-->
+
+```json
 {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationidentitysynchronizationconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
 }
--->
+```
+

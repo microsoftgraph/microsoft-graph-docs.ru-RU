@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса managedAppRegistration
-description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
+description: 'ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации. '
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3be91dd094258f0bf998521c058f1c62659fbcc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d6862af09e4bbe1b22d183b8d10c56ff2782f51
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581032"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341731"
 ---
 # <a name="managedappregistration-resource-type"></a>Тип ресурса managedAppRegistration
 
@@ -45,10 +45,10 @@ ManagedAppEntity — это базовый тип для всех осталь�
 |flaggedReasons|Коллекция [манажедаппфлагжедреасон](../resources/intune-mam-managedappflaggedreason.md)|Нуль или более причин, по которым помечается регистрация приложения например приложения, запущенного на устройстве с административным доступом.|
 |userId|String|ИД пользователя, к которому относится эта регистрация приложения.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |version|Строка|Версия объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |appliedPolicies|Коллекция [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Нуль или более политик, примененных к зарегистрированному приложению, когда оно в последний раз синхронизировалось со службой управления.|
@@ -60,12 +60,11 @@ ManagedAppEntity — это базовый тип для всех осталь�
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedAppRegistration"
-}
--->
+  "@odata.type": "microsoft.graph.managedAppRegistration",
+  "abstract": true
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedAppRegistration",
   "createdDateTime": "String (timestamp)",
   "lastSyncDateTime": "String (timestamp)",
   "applicationVersion": "String",
@@ -89,8 +88,3 @@ ManagedAppEntity — это базовый тип для всех осталь�
   "version": "String"
 }
 ```
-
-
-
-
-

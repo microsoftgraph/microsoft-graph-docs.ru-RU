@@ -4,12 +4,12 @@ description: 'С помощью этого API можно добавить вл�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 56693a04d6f0579d043b4d745fe53ae61536b82e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb03df507d116aa18a2d77b19a667e7f3afb9f7d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540466"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338518"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -83,7 +83,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "a0b1c76de9f7="
 }
 ```
 
@@ -109,7 +109,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "a0b1c76de9f7="
 }
 ```
 
@@ -198,7 +198,7 @@ Content-length: 319
 } 
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример полного ответа.
 <!-- {
   "blockType": "response",
@@ -237,7 +237,7 @@ HTTP 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: create_file_attachment_from_message/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'a0b1c76de9f7='"
   ]
 }
 -->

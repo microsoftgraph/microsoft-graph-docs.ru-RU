@@ -2,12 +2,12 @@
 title: " Тип ресурса Контролскоре"
 description: Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
 localization_priority: Normal
-ms.openlocfilehash: d8c2d73205f00a9dd5f2f28fcee3c33778bb3276
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34e94128ff3993a01d37770bea1ad046f936405f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543380"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341185"
 ---
 #  <a name="controlscore-resource-type"></a>Тип ресурса Контролскоре
 
@@ -20,7 +20,7 @@ ms.locfileid: "32543380"
 |   Контролкатегори |   String  |  Категория действий управления (идентификация, данные, устройство, приложения, инфраструктура). |
 |   description |   String  |  Описание элемента управления. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -35,7 +35,7 @@ ms.locfileid: "32543380"
 ```json
 {
   "controlName": "String",
-  "score": "String",
+  "score": "Double",
   "controlCategory": "String",
   "description": "String"
 }

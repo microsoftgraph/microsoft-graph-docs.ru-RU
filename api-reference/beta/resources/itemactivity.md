@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivity
 localization_priority: Normal
-ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcb68f94574512fd7e952db036a86f242652851d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561889"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339865"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса ItemActivity
 

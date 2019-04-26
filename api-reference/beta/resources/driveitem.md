@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507583"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340703"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -47,7 +47,7 @@ ms.locfileid: "32507583"
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{
+{  
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
@@ -151,7 +151,7 @@ ms.locfileid: "32507583"
 | permissions        | Коллекция объектов [permission][]   | Набор разрешений для элемента. Только для чтения. Допускается значение null.
 | subscriptions      | Коллекция [subscription][] | Набор подписок на элемент. Поддерживается только в корне диска.
 | thumbnails         | Коллекция объектов [thumbnailSet][] | Коллекция, содержащая объекты [ThumbnailSet][], связанные с элементом. Дополнительные сведения см. в статье о [получении эскизов][]. Только для чтения. Допускается значение null.
-| versions           | Коллекция [driveItemVersion][] | Список предыдущих версий элемента. Дополнительные сведения см. в статье, посвященной [получению предыдущих версий][]. Только для чтения. Может иметь значение null.
+| versions           | Коллекция [driveItemVersion][] | Список предыдущих версий элемента. Дополнительные сведения см. в статье, посвященной [получению предыдущих версий][]. Только для чтения. Допускает значение null.
 | workbook           | [workbook][]                | Для файлов, представляющих собой электронные таблицы Excel, получает доступ к API книги для работы с содержимым электронной таблицы. Допускается значение null.
 
 ## <a name="instance-attributes"></a>Атрибуты экземпляра
@@ -251,8 +251,6 @@ URL-адрес будет доступен в течение короткого 
   "tocBookmarks": {
     "Resources/Item": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

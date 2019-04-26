@@ -3,14 +3,16 @@ title: Создание или замена действия
 description: Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую вставку.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 497b0e0bf4e236065dc6b44c44e80d99b22a5dc4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538486"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337287"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую [вставку](#example-2-deep-insert).
 
@@ -44,7 +46,7 @@ PUT /me/activities/{appActivityId}
 
 В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было `200 OK` создано, или если действие было заменено.
 
@@ -62,7 +64,7 @@ PUT /me/activities/{appActivityId}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -83,7 +85,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": false
+      "addImageQuery": "false"
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -111,7 +113,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -174,7 +176,7 @@ Content-Type: application/json
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -228,7 +230,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.userActivity"
+    "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -292,10 +294,13 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: Тип ресурса Анонимаусиприскевент
 description: Событие риска, обнаруженное службой удостоверений Azure Active Directory, в котором выполняется попытка входа учетной записи с IP-адреса, который является анонимным. Полную информацию о событиях риска можно найти в документации по защите удостоверений Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 5f428a99466e67dfbbe4ef9b4ebe0006b56f99e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fa1210a8899af11e295e6503dfcae51dba43776
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461054"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339169"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>Тип ресурса Анонимаусиприскевент
 
@@ -28,17 +28,17 @@ ms.locfileid: "32461054"
 |Клоседдатетиме|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
 |id|строка| Только для чтения|
-|ipAddress|строка| IP-адрес входа|
-|location|строка| Расположение, подключенное к IP-адресу входа|
+|ipAddress|string| IP-адрес входа|
+|location|string| Расположение, подключенное к IP-адресу входа|
 |Рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|Рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|строка| Тип риска|
-|userDisplayName|строка| Имя пользователя под угрозой|
-|userId|строка| Идентификатор пользователя, который подвергается риску|
+|Рискевенттипе|string| Тип риска|
+|userDisplayName|string| Имя пользователя под угрозой|
+|userId|string| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
@@ -52,6 +52,7 @@ ms.locfileid: "32461054"
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.anonymousIpRiskEvent"
 }-->
 
@@ -68,7 +69,8 @@ ms.locfileid: "32461054"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +84,6 @@ ms.locfileid: "32461054"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/anonymousipriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

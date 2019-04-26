@@ -4,14 +4,16 @@ description: Представляет запись SRV, добавленную �
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bdbc2246340d5cd15529dd05101567bc04d1e607
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a80bfd1caa755a7b4f27f29e1c34ec4295a52f33
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535027"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340707"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса Домаинднссрврекорд
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -28,7 +30,7 @@ ms.locfileid: "32535027"
 |порта|Int32| Значение, используемое при настройке свойства *Port* записи SRV на узле DNS. |
 |priority|Int32| Значение, используемое при настройке свойства *Priority* записи SRV на узле DNS. |
 |Protocol|String| Значение, используемое при настройке свойства *Protocol* записи SRV на узле DNS. |
-|recordType|String|  Тип записи DNS. Значение — всегда *SRV*. Ключ |
+|recordType|String|  Тип записи DNS. Значение — всегда *SRV*. Key |
 |service|String| Значение, используемое при настройке свойства *Service* для записи SRV на узле DNS. |
 |Суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи SRV.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи SRV на узле DNS. Не допускает значение null |
@@ -38,12 +40,11 @@ ms.locfileid: "32535027"
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -52,6 +53,7 @@ ms.locfileid: "32535027"
 
 ```json
 {
+  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -70,10 +72,13 @@ ms.locfileid: "32535027"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

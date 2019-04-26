@@ -4,12 +4,12 @@ description: API для образования в Microsoft Graph улучшаю
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b5dd443b9ccda48c586bc44f6f4e35523a5e000f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534873"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340669"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 
@@ -64,7 +64,7 @@ API для работы со списком поддерживают следу�
 - [перечисление всех учебных заведений](../api/educationroot-list-schools.md); 
 - [перечисление учебных заведений, в которых преподается определенный предмет](../api/educationclass-list-schools.md);
 - [перечисление учебных заведений пользователя](../api/educationuser-list-schools.md);
-- [получение всех классов](../api/educationroot_list_classes.md );
+- [получение всех классов](../api/educationroot-list-classes.md );
 - [получение классов в учебном заведении](../api/educationschool-list-classes.md);
 - [список классов пользователя](../api/educationuser-list-classes.md);
 - [добавление классов в учебном заведении](../api/educationschool-post-classes.md);
@@ -127,13 +127,5 @@ API управления для School Data Sync поддерживают сле
 Используйте API Microsoft Graph для образования, чтобы создавать решения для образования, которые получают доступ к назначениям учащихся и их спискам учебного заведения. Чтобы узнать больше:
 
 - Изучите ресурсы и методы, наиболее полезные для вашего сценария.
-- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+- опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,14 +4,16 @@ description: Для каждого домена в клиенте может п�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7b04e65da67bc61e3f3b91ed3dae7cba70a3d27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da969956616d22f5b13041b1a7bc4ebcdb510565
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543156"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340653"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Для каждого домена в клиенте может потребоваться добавить записи DNS в файл зоны DNS домена, чтобы домен можно было использовать в Microsoft Online Services. Объект **DomainDnsRecord** используется для представления таких DNS-записей. Базовый объект для сущностей [домаинднскнамерекорд](domaindnscnamerecord.md), [домаинднсмксрекорд](domaindnsmxrecord.md), [домаинднссрврекорд](domaindnssrvrecord.md) и [домаинднссрврекорд](domaindnssrvrecord.md) .
 
@@ -24,19 +26,18 @@ ms.locfileid: "32543156"
 |id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
 |Переключатель|Логический| Если задано значение false, эта запись должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
 |label|String| Значение, используемое при настройке имени DNS-записи на узле DNS. |
-|recordType|String| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Может принимать одно из следующих значений: *CNAME*, *MX*, *SRV*, *txt* .</br></br>Ключ |
+|recordType|String| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Может принимать одно из следующих значений: *CNAME*, *MX*, *SRV*, *txt* .</br></br>Key |
 |Суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи DNS.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи DNS на узле DNS. Не допускает значение null |
 
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -57,10 +58,13 @@ ms.locfileid: "32543156"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

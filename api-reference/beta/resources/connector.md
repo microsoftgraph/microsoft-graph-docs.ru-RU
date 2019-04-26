@@ -1,13 +1,13 @@
 ---
 title: Тип ресурса Connector
-description: Ниже показано представление ресурса в формате JSON.
+description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5467d2a4625ad3813ff2777838db87be3ca5b713
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535539"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341222"
 ---
 # <a name="connector-resource-type"></a>Тип ресурса Connector
 
@@ -25,7 +25,7 @@ ms.locfileid: "32535539"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение соединителя](../api/connector-get.md) | [PDIF](connector.md) |Чтение свойств и связей объекта Connector.|
-|[Список memberOf](../api/connector-list-memberof.md) |Коллекция [коннекторграуп](connectorgroup.md)| Получение объекта Коннекторграуп, связанного с соединителем.|
+|[Перечисление memberOf](../api/connector-list-memberof.md) |Коллекция [коннекторграуп](connectorgroup.md)| Получение объекта Коннекторграуп, связанного с соединителем.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -35,17 +35,18 @@ ms.locfileid: "32535539"
 |ИмяКомпьютера|String| Имя компьютера, на котором работает соединитель. <BR>Только для чтения|
 |status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только для чтения |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |memberOf|Коллекция [коннекторграуп](connectorgroup.md)| Коннекторграуп, участником которого является подключение.<br>Только для чтения. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -71,8 +72,6 @@ ms.locfileid: "32535539"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/connector.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

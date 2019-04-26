@@ -4,12 +4,12 @@ description: Приглашение участников в активный з�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 50c9ebd30bf70290006d8c04ccfb29e09ce0d566
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 375d799a6598d1ce453f412851820df49ff98e50
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539480"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337895"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
@@ -46,7 +46,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 |participants|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)| Участники, которые необходимо пригласить.|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="examples"></a>Примеры
@@ -126,7 +126,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 200 OK
@@ -330,7 +330,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ``` http
 HTTP/1.1 200 OK
@@ -446,7 +446,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ``` http
 HTTP/1.1 201 Created
@@ -535,7 +535,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ``` http
 HTTP/1.1 200 OK
@@ -722,8 +722,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/participant-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

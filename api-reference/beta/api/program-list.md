@@ -2,12 +2,12 @@
 title: Список программ
 description: В функции проверки доступа Azure AD перечислите все объекты программы.
 localization_priority: Normal
-ms.openlocfilehash: 71073f2469087e92b43823e89881406fb17a666b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6200cfe9a2f9879b5589c52cd9f48b4cfa2253ba
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538621"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337265"
 ---
 # <a name="list-programs"></a>Список программ
 
@@ -19,9 +19,11 @@ ms.locfileid: "32538621"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу. |
+|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
+|Для приложений                            | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
+
+ Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +38,7 @@ GET /programs
 ## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [Program](../resources/program.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -93,8 +95,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

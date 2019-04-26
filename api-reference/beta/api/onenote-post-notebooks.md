@@ -4,14 +4,16 @@ description: Создайте новую записную книжку OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: deeb775f19ba2378cd15ffcbd72ef2caafd23b83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2b0890c68a8a0271bdcc6fba1e65c5ba2e0c5c6a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540172"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338159"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новую записную [книжКу](../resources/notebook.md)OneNote.
 ## <a name="permissions"></a>Разрешения
@@ -42,7 +44,7 @@ POST /sites/{id}/onenote/notebooks
 
 Имена записных книжек должны быть уникальными. Имя не может содержать более 128 символов или содержать следующие символы: _Км_ *\/: _лт__гт_ | ' "
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [записной книжки](../resources/notebook.md) в тексте отклика.
 
@@ -54,7 +56,7 @@ POST /sites/{id}/onenote/notebooks
   "name": "create_notebook_from_onenote"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
+POST https://graph.microsoft.com/beta/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
@@ -79,6 +81,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -95,10 +98,13 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

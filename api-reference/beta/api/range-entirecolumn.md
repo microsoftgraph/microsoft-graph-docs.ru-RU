@@ -4,12 +4,12 @@ description: Возвращает объект, представляющий в�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b97bf5f5b4e1f2f5ac95bf375608b831b7367328
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d2ef99cbcf47c8debdfb01e759af2df698f244d1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546438"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337014"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546438"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/EntireColumn
+GET /workbook/names/{name}/range/EntireColumn
 GET /workbook/worksheets/{id|name}/range(address='<address>')/EntireColumn
 GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
@@ -43,7 +43,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -54,7 +54,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
   "name": "range_entirecolumn"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/EntireColumn
 ```
 
 ##### <a name="response"></a>Отклик
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -88,8 +88,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-entirecolumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

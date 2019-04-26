@@ -4,14 +4,16 @@ description: Получение свойств и связей объекта з
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: af8d358a7f05ed60b48e6df6a3cc60319e009e34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f45ead1b5cd603e6f56597b965e45182e0e3dfd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540336"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338224"
 ---
 # <a name="get-notebook"></a>Вывод записной книжки
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств и связей объекта записной [книжки](../resources/notebook.md) .
 ## <a name="permissions"></a>Разрешения
@@ -56,7 +58,7 @@ GET /sites/{id}/onenote/notebooks/{id}
   "name": "get_notebook"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
+GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -74,6 +76,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -90,10 +93,13 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,14 +4,16 @@ description: Получение списка объектов **plannerplan**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: e4df80ceb12f19af4dac5ea2fb196cf3efc7fdcc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bb54611d44aa775b0256811c160afe821fd0880f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539069"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337892"
 ---
 # <a name="list-plans"></a>Перечисление планов
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов **plannerplan**.
 ## <a name="permissions"></a>Разрешения
@@ -53,7 +55,7 @@ GET /planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/plans
+GET https://graph.microsoft.com/beta/planner/plans
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -90,10 +92,13 @@ Content-length: 421
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

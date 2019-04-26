@@ -4,12 +4,12 @@ description: Административное устройство предос�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4dbc1c00b87e35f90cb0e14169364591c28c406f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535785"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339134"
 ---
 # <a name="administrativeunit-resource-type"></a>Тип ресурса administrativeUnit
 
@@ -51,23 +51,24 @@ ms.locfileid: "32535785"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|string|Необязательное описание административной единицы.|
-|displayName|строка|Отображаемое имя административной единицы.|
+|displayName|string|Отображаемое имя административной единицы.|
 |id|строка|Уникальный идентификатор административной единицы. Только для чтения.|
 |visibility|string|Определяет, является ли модуль админстративе и его элементы скрытыми или общедоступными. Может быть задано значение значение hiddenmembership или public. Если не задано, то поведение по умолчанию — Public. Если задано значение значение hiddenmembership, только члены административной единицы могут перечислить других членов единицы админстративе.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для данной административной единицы. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, являющиеся членами этого Админситративе подразделения. Методы HTTP: GET (List Members), POST (Add Members), DELETE (удалить участников).|
 |Scopedadministrators|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены роли с областью действия этой административной единицы.  Методы HTTP: GET (List Скопедролемембершипс), POST (Add Scopedrolemembership изменен), DELETE (удалить Scopedrolemembership изменен). |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -101,8 +102,6 @@ ms.locfileid: "32535785"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/administrativeunit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

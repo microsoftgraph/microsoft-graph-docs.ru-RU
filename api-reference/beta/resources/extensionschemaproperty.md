@@ -2,12 +2,12 @@
 title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
 localization_priority: Normal
-ms.openlocfilehash: bb044aa2f85ea5accdba4ed43a1a5b1c856a209d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05fb5eb94f760bce26ba09bf3e8e862ff5fd2fb8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542652"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340275"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -19,8 +19,8 @@ ms.locfileid: "32542652"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|String| Имя строго типизированного свойства, определенного как часть расширения схемы.|
-|type|Строка| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
+|name|Строка| Имя строго типизированного свойства, определенного как часть расширения схемы.|
+|type|String| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
 #### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 
 При определении свойства в расширении схемы поддерживаются следующие типы данных:
@@ -31,9 +31,9 @@ ms.locfileid: "32542652"
 | Boolean | Не поддерживается для ресурсов message, event и post. |
 | DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
 | Целое число | 32-разрядное значение. Не поддерживается для ресурсов message, event и post. |
-| String | Не более 256 символов. |
+| String | Не более 256 символов |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -61,8 +61,6 @@ ms.locfileid: "32542652"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extensionschemaproperty.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

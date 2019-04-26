@@ -2,12 +2,12 @@
 title: Тип ресурса inferenceClassificationOverride
 description: Представляет переопределение пользователя, определяющее, как должны классифицироваться входящие сообщения от определенного отправителя
 localization_priority: Normal
-ms.openlocfilehash: 1cf1896b43dccfe59ed253c22a8a7341e9ee6e1d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 59ed4c472d7972ae4292388572bbb66b7a588996
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548735"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340056"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
@@ -21,7 +21,7 @@ ms.locfileid: "32548735"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Обновление](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения указанным образом. |
-|[Удаление](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -34,7 +34,7 @@ ms.locfileid: "32548735"
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

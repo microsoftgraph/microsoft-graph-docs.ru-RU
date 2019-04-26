@@ -3,12 +3,12 @@ title: Создание открытого расширения
 description: Создание открытого расширения (объекта openTypeExtension) и Добавление настраиваемых свойств
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24745ecfa5e59bd8bc455018690e813f82c33662
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539958"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338168"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -90,11 +90,11 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставьте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md)со следующими обязательными парами имя — значение и любыми дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
+Предоставьте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md)со следующими обязательными парами имя — значение и любыми дополнительными пользовательскими данными. Данные в полезных данных JSON могут быть простыми типами или массивами простых типов.
 
 | Имя       | Значение |
 |:---------------|:----------|
-| @odata.type | Microsoft. Graph. OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %уникальная_строка% |
 
 При создании расширения в _новом_ экземпляре ресурса предоставьте не только объект **openTypeExtension**, но и представление JSON соответствующих свойств для создания этого экземпляра ресурса.
@@ -108,9 +108,9 @@ POST /users/{id|userPrincipalName}/extensions
 При создании расширения с использованием такой же операции, как для создания экземпляра ресурса, операция возвращает такой же код ответа, что и при создании экземпляра ресурса без расширения.
 Изучите соответствующие статьи о создании экземпляров, перечисленные [выше](#create-an-extension-in-a-new-resource-instance).
 
-### <a name="response-body"></a>Текст ответа
+### <a name="response-body"></a>Текст отклика
 
-| Сценарий       | Ресурс  | Текст ответа |
+| Сценарий       | Ресурс  | Текст отклика |
 |:---------------|:----------|:--------------|
 | Создание расширения с явным созданием _нового_ экземпляра ресурса | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Включает новый экземпляр, дополненный объектом [openTypeExtension](../resources/opentypeextension.md). |
 | Создание расширения с неявным созданием экземпляра ресурса | [post](../resources/post.md) | Ответ содержит только код ответа без текста. |
@@ -125,7 +125,7 @@ POST /users/{id|userPrincipalName}/extensions
 - Свойства **subject**, **body** и **toRecipients**, характерные для нового сообщения.
 - Данные для расширения:
 
-  - Тип `Microsoft.Graph.OpenTypeExtension`.
+  - Тип `microsoft.graph.openTypeExtension`.
   - Имя расширения "Com.Contoso.Referral".
   - Дополнительные данные, хранящиеся в виде трех настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и `dealValue`.
 
@@ -135,6 +135,7 @@ POST /users/{id|userPrincipalName}/extensions
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages
+Content-Type: application/json
 
 {
   "subject": "Annual review",
@@ -151,7 +152,7 @@ POST https://graph.microsoft.com/beta/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -165,11 +166,11 @@ POST https://graph.microsoft.com/beta/me/messages
 
 Ниже представлен отклик для первого примера. Текст отклика включает свойства нового сообщения и следующие данные для нового расширения:
 
-- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- Свойство **id** с полным именем `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Стандартное свойство **extensionName**, указанное в запросе.
 - Пользовательские данные из запроса, сохраненные в виде 3 настраиваемых свойств.
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -228,10 +229,10 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
-('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-      "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+('AAMkAGEbs88AAB84uLuAAA=')/extensions('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
+      "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -247,7 +248,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 Во втором примере показано создание расширения в указанном сообщении. Текст запроса включает следующие данные для расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`.
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.Referral".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.
 
@@ -256,10 +257,11 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
+Content-Type: application/json
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -272,13 +274,13 @@ POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 Ниже представлен отклик для второго примера. Текст отклика включает следующие данные для нового расширения:
 
 - Свойство по умолчанию **extensionName**.
-- Свойство **id** с полным именем `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- Свойство **id** с полным именем `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Сохраняемые пользовательские данные.
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -286,11 +288,11 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
     "companyName": "Wingtip Toys",
     "dealValue": 500050,
     "expirationDate": "2015-12-03T10:00:00.000Z"
@@ -303,7 +305,7 @@ Content-type: application/json
 
 В третьем примере показано создание расширения в указанном событии группы. Текст запроса включает следующие данные для расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`.
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.Deal".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.
 
@@ -312,10 +314,11 @@ Content-type: application/json
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
+POST https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
+Content-type: application/json
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -330,7 +333,7 @@ POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc7
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -338,8 +341,8 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
     "dealValue": 1010100,
@@ -353,7 +356,7 @@ Content-type: application/json
 
 В четвертом примере показано создание расширения в новой записи группы с помощью одного вызова действия **reply** для существующей записи группы. Действие **reply** создает запись и внедряет в нее новое расширение. Текст запроса включает свойство **post**, которое, в свою очередь, содержит свойство **body** новой записи и следующие данные для нового расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`.
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.HR".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и массив строк `topPicks`.
 
@@ -362,7 +365,8 @@ Content-type: application/json
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/reply
+POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
+Content-type: application/json
 
 {
   "post": {
@@ -372,7 +376,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
     },
   "extensions": [
     {
-      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",
@@ -407,7 +411,7 @@ Content-Length: 0
 
 В пятом примере показано создание расширения в новой записи группы с помощью той же операции POST, которая создает беседу. Операция POST создает беседу, цепочку и запись, а также внедряет в эту запись новое расширение. Текст отклика включает свойства **Topic** и **Threads**, а также дочерний объект **post** для новой беседы. Объект **post**, в свою очередь, содержит свойство **body** новой записи и следующие данные расширения:
 
-- Тип `Microsoft.Graph.OpenTypeExtension`.
+- Тип `microsoft.graph.openTypeExtension`.
 - Имя расширения "Com.Contoso.HR".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и массив строк `topPicks`.
 
@@ -416,7 +420,8 @@ Content-Length: 0
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
+Content-type: application/json
 
 {
   "Topic": "Does anyone have a second?",
@@ -430,7 +435,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
           },
           "Extensions": [
             {
-              "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+              "@odata.type": "microsoft.graph.openTypeExtension",
               "extensionName": "Com.Contoso.Benefits",
               "companyName": "Contoso",
               "expirationDate": "2016-08-03T11:00:00.000Z",
@@ -488,8 +493,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,18 +4,18 @@ description: Создание раздела в указанной записн�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 3f40c9d89c8b507b142748378b0a9a90be82203d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4b99b81b70d9e1541170a34973e4b48827dd5f44
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540186"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338203"
 ---
 # <a name="create-section"></a>Создание раздела
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [раздела](../resources/section.md) в указанной записной книжке.
+Создание [раздела](../resources/onenotesection.md) в указанной записной книжке.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -46,7 +46,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [section](../resources/section.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [оненотесектион](../resources/onenotesection.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -105,8 +105,6 @@ Content-length: 272
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/notebook-post-sections.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

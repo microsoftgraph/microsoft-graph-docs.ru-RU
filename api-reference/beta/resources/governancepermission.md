@@ -2,12 +2,12 @@
 title: Тип ресурса Говернанцепермиссион
 description: 'Представляет разрешение на доступ к определенному governanceResource в Говернанцесубжект.  '
 localization_priority: Normal
-ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f6be4bdc502f829b1dcfd991d1c2ae6130dea8a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547510"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340184"
 ---
 # <a name="governancepermission-resource-type"></a>Тип ресурса Говернанцепермиссион
 
@@ -23,10 +23,16 @@ ms.locfileid: "32547510"
 |isActive|Логический|Указывает, имеет ли запрашивающая сторона какое – либо активное назначение ролей для этого уровня доступа.|
 |Действительный|Логический|Указывает, имеет ли запрашивающее назначение роли для уровня доступа.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.governancePermission"
+}-->
 ```json
 {
   "accessLevel": "String",
@@ -35,11 +41,3 @@ ms.locfileid: "32547510"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governancepermission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

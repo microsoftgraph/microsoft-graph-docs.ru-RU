@@ -4,12 +4,12 @@ description: Представляет устройство, зарегистри
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8f8b689840220267fe1f048b0108193ba1cdb308
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b91b6e595dfc062836d8193c7c2dad769140e51
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535250"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340863"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -27,7 +27,7 @@ ms.locfileid: "32535250"
 |[Список объектов device](../api/device-list.md) | Коллекция [device](device.md)| Получение списка устройств, зарегистрированных в каталоге. |
 |[Обновление device](../api/device-update.md) | [device](device.md)  |Обновление свойств объекта Device. |
 |[Удаление device](../api/device-delete.md) | Нет |Удаление объекта Device. |
-|[Список memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, непосредственным участником которых является устройство. |
+|[Перечисление memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, непосредственным участником которых является устройство. |
 |[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, участником которых является устройство. Эта операция является транзитивным. |
 |[Список экземпляров registeredOwner](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
@@ -57,27 +57,27 @@ ms.locfileid: "32535250"
 |operatingSystemVersion|String| Версия операционной системы устройства. Обязательный параметр. |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. |
 |Профилетипе|String|Тип профиля устройства. Возможные значения:<br />**Регистереддевице** умолчани<br />**Секуревм**<br />**Printer**<br />**Общий**<br />**Интернета**|
-|Системлабелс|Коллекция строк| Список меток, примененных к устройству системой. |
+|Системлабелс|Коллекция String| Список меток, примененных к устройству системой. |
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction). |
 |Имя| String | Понятное имя устройства. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. |
-|Status | String| Устройство подключено к сети или находится в автономном режиме. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. |
+|Состояние | String| Устройство подключено к сети или находится в автономном режиме. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. |
 |Платформа |String|Платформа устройства. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта.|
 |Kind| Строка| Форм фактор устройства. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. |
 |Модель| String| Модель устройства. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. |
 |Вычислитель| String| Производитель устройства. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в составе проекта. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
-|registeredOwners|Коллекция [directoryObject](directoryobject.md)| Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускается значение null.|
-|registeredUsers|Коллекция [directoryObject](directoryobject.md)| Коллекция зарегистрированных пользователей устройства. В случае зарегистрированных личных устройств или устройств, присоединенных через облако, при регистрации для обычных пользователей задается то же значение, что и для владельцев. Только для чтения. Допускается значение null.|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Допускается значение null.|
+|registeredOwners|Коллекция [directoryObject](directoryobject.md)| Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускает значение null.|
+|registeredUsers|Коллекция [directoryObject](directoryobject.md)| Коллекция зарегистрированных пользователей устройства. В случае зарегистрированных личных устройств или устройств, присоединенных через облако, при регистрации для обычных пользователей задается то же значение, что и для владельцев. Только для чтения. Допускает значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Допускает значение null.|
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователи, относящиеся к зарегистрированным владельцам устройства. Только для чтения. Допускается значение null.|
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)|Зарегистрированные пользователи устройства. Только для чтения. Допускается значение null.|
-|Команды  | Collection (Microsoft. Graph. Command) | Набор команд, отправляемых на это устройство|
+|Команды  | Коллекция [команд](command.md) | Набор команд, отправляемых на это устройство|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -136,8 +136,6 @@ ms.locfileid: "32535250"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/device.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

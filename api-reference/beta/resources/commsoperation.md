@@ -4,12 +4,12 @@ description: Состояние определенных длительных о
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34e6ff32c250308e71e05cb5d5c4d04d5671535d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460599"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341368"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса Коммсоператион
 
@@ -26,7 +26,7 @@ ms.locfileid: "32460599"
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | Контекст      | String                      | Контекст клиента.                                                             |
 | createdDateTime    | DateTimeOffset              | Время начала операции.                                                |
-| id                 | String                      | Идентификатор операции. Только для чтения. Создается сервером.                                  |
+| id                 | Строка                      | Идентификатор операции. Только для чтения. Создается сервером.                                  |
 | Ластактиондатетиме | DateTimeOffset              | Время последнего действия операции.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения. Создается сервером.                            |
 | status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
@@ -51,7 +51,7 @@ ms.locfileid: "32460599"
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
+  "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
 }
 ```
@@ -69,7 +69,7 @@ ms.locfileid: "32460599"
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "#microsoft.graph.resultInfo",
+    "@odata.type": "microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"
@@ -85,8 +85,6 @@ ms.locfileid: "32460599"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/commsoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

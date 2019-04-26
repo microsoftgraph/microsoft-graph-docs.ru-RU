@@ -1,17 +1,17 @@
 ---
-title: тип общего ресурса
+title: Тип ресурса Шарединсигхт
 description: 'Понимание файлов, к которым предоставлен общий доступ, или определенного пользователя. Поддерживаются следующие общие файлы:'
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 128a85bb9aa2e9f51d2393029cce3c27f8c4e6f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549491"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339998"
 ---
-# <a name="shared-resource-type"></a>тип общего ресурса
+# <a name="sharedinsight-resource-type"></a>Тип ресурса Шарединсигхт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,15 +37,19 @@ ms.locfileid: "32549491"
 | Ресурсе resourcevisualization | [Ресурсе resourcevisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для отображения документа в вашем интерфейсе. Только для чтения      |
 | Ресаурцереференце     | [Ресаурцереференце](insights-resourcereference.md)                      | Справочные свойства общего документа, например URL-адрес и тип документа. Только для чтения       |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| resource      | Объект        | Используется для перехода к элементу, к которому предоставлен общий доступ. Для вложений в файл используется тип *fileAttachment*. Для связанных вложений используется тип *driveItem*. |
+| resource      | Коллекция объектов | Используется для перехода к элементу, к которому предоставлен общий доступ. Для вложений в файл используется тип *fileAttachment*. Для связанных вложений используется тип *driveItem*. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-
+<!--{
+  "blockType":"resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sharedInsight"
+}-->
 ```json
 {
   "id": "string",
@@ -56,11 +60,3 @@ ms.locfileid: "32549491"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

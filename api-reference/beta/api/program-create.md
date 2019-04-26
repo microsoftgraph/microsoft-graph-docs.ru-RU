@@ -2,12 +2,12 @@
 title: Создание программы
 description: В функции рецензирования Access Azure AD создайте объект программы.
 localization_priority: Normal
-ms.openlocfilehash: a6e9ab300cf44a2f3973c468679af7fa48262680
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7ba329924761b1f43d0fc0fff02c6578b3a64a72
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538541"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337223"
 ---
 # <a name="create-program"></a>Создание программы
 
@@ -19,9 +19,11 @@ ms.locfileid: "32538541"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, что позволяет им создавать программы. |
+|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
+
+Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать программы.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +46,7 @@ POST /programs
 | `description`               |`String`                              |  Описание программы.           |
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [Program](../resources/program.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,8 +101,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
