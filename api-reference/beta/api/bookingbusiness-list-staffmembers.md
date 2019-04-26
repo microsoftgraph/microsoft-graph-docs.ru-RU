@@ -4,47 +4,47 @@ description: Получение списка объектов Букингста
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 4d8cfcfcab5478149404f4ac990ab45aa0d61c1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 317fa38932bb5dc813b9b676bef26f73a6020daf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461766"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322593"
 ---
-# <a name="list-staffmembers"></a><span data-ttu-id="67773-103">Список Стаффмемберс</span><span class="sxs-lookup"><span data-stu-id="67773-103">List staffMembers</span></span>
+# <a name="list-staffmembers"></a><span data-ttu-id="60f9c-103">Список Стаффмемберс</span><span class="sxs-lookup"><span data-stu-id="60f9c-103">List staffMembers</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="67773-104">Получение списка объектов [букингстаффмембер](../resources/bookingstaffmember.md) в указанном [букингбусинесс](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="67773-104">Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="67773-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="67773-105">Permissions</span></span>
-<span data-ttu-id="67773-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67773-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="60f9c-104">Получение списка объектов [букингстаффмембер](../resources/bookingstaffmember.md) в указанном [букингбусинесс](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="60f9c-104">Get a list of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="60f9c-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="60f9c-105">Permissions</span></span>
+<span data-ttu-id="60f9c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="60f9c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="67773-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="67773-108">Permission type</span></span>      | <span data-ttu-id="67773-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="67773-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="60f9c-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="60f9c-108">Permission type</span></span>      | <span data-ttu-id="60f9c-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="60f9c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="67773-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="67773-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="67773-111">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="67773-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="67773-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="67773-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67773-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67773-113">Not supported.</span></span>   |
-|<span data-ttu-id="67773-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="67773-114">Application</span></span> | <span data-ttu-id="67773-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67773-115">Not supported.</span></span>  |
+|<span data-ttu-id="60f9c-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="60f9c-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="60f9c-111">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="60f9c-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="60f9c-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="60f9c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60f9c-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60f9c-113">Not supported.</span></span>   |
+|<span data-ttu-id="60f9c-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="60f9c-114">Application</span></span> | <span data-ttu-id="60f9c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60f9c-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="67773-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="67773-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="60f9c-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="60f9c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/staffMembers
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="67773-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="67773-117">Optional query parameters</span></span>
-<span data-ttu-id="67773-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="67773-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="60f9c-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="60f9c-117">Optional query parameters</span></span>
+<span data-ttu-id="60f9c-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="60f9c-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="67773-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="67773-119">Request headers</span></span>
-| <span data-ttu-id="67773-120">Имя</span><span class="sxs-lookup"><span data-stu-id="67773-120">Name</span></span>      |<span data-ttu-id="67773-121">Описание</span><span class="sxs-lookup"><span data-stu-id="67773-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="60f9c-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="60f9c-119">Request headers</span></span>
+| <span data-ttu-id="60f9c-120">Имя</span><span class="sxs-lookup"><span data-stu-id="60f9c-120">Name</span></span>      |<span data-ttu-id="60f9c-121">Описание</span><span class="sxs-lookup"><span data-stu-id="60f9c-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="67773-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="67773-122">Authorization</span></span>  | <span data-ttu-id="67773-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="67773-123">Bearer {code}</span></span>|
+| <span data-ttu-id="60f9c-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="60f9c-122">Authorization</span></span>  | <span data-ttu-id="60f9c-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="60f9c-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="67773-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="67773-124">Request body</span></span>
-<span data-ttu-id="67773-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="67773-125">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="67773-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="67773-126">Response</span></span>
-<span data-ttu-id="67773-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингстаффмембер](../resources/bookingstaffmember.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="67773-127">If successful, this method returns a `200 OK` response code and collection of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="67773-128">Пример</span><span class="sxs-lookup"><span data-stu-id="67773-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="67773-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="67773-129">Request</span></span>
-<span data-ttu-id="67773-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="67773-130">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="60f9c-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="60f9c-124">Request body</span></span>
+<span data-ttu-id="60f9c-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="60f9c-125">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="60f9c-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="60f9c-126">Response</span></span>
+<span data-ttu-id="60f9c-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингстаффмембер](../resources/bookingstaffmember.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="60f9c-127">If successful, this method returns a `200 OK` response code and collection of [bookingStaffMember](../resources/bookingstaffmember.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="60f9c-128">Пример</span><span class="sxs-lookup"><span data-stu-id="60f9c-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="60f9c-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="60f9c-129">Request</span></span>
+<span data-ttu-id="60f9c-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="60f9c-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_staffmembers"
@@ -52,8 +52,8 @@ GET /bookingBusinesses/{id}/staffMembers
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffMembers
 ```
-##### <a name="response"></a><span data-ttu-id="67773-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="67773-131">Response</span></span>
-<span data-ttu-id="67773-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="67773-132">The following is an example of the response.</span></span> <span data-ttu-id="67773-133">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="67773-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="67773-134">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="67773-134">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="60f9c-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="60f9c-131">Response</span></span>
+<span data-ttu-id="60f9c-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="60f9c-132">The following is an example of the response.</span></span> <span data-ttu-id="60f9c-133">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="60f9c-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="60f9c-134">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="60f9c-134">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -204,8 +204,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingbusiness-list-staffmembers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

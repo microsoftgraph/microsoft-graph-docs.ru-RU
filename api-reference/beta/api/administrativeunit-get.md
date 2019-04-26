@@ -4,53 +4,53 @@ description: Получение свойств и связей объекта ad
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 588d116d546503fa8db6c8ba56c5d0e328a10b8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32e76f867c1f36f3817e6d1816513f4c775642ef
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459489"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322846"
 ---
-# <a name="get-administrativeunit"></a><span data-ttu-id="1b83d-103">Получение administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="1b83d-103">Get administrativeUnit</span></span>
+# <a name="get-administrativeunit"></a><span data-ttu-id="aa1d8-103">Получение administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="aa1d8-103">Get administrativeUnit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1b83d-104">Получение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="1b83d-104">Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+<span data-ttu-id="aa1d8-104">Получение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="aa1d8-104">Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="1b83d-105">Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="1b83d-105">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.</span></span>
+<span data-ttu-id="aa1d8-105">Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="aa1d8-105">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1b83d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b83d-106">Permissions</span></span>
-<span data-ttu-id="1b83d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b83d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aa1d8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aa1d8-106">Permissions</span></span>
+<span data-ttu-id="aa1d8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa1d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="1b83d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b83d-109">Permission type</span></span>      | <span data-ttu-id="1b83d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b83d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aa1d8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aa1d8-109">Permission type</span></span>      | <span data-ttu-id="aa1d8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="aa1d8-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b83d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b83d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1b83d-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1b83d-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1b83d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b83d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b83d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b83d-114">Not supported.</span></span>    |
-|<span data-ttu-id="1b83d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1b83d-115">Application</span></span> | <span data-ttu-id="1b83d-116">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1b83d-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="aa1d8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aa1d8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="aa1d8-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="aa1d8-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="aa1d8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aa1d8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa1d8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-114">Not supported.</span></span>    |
+|<span data-ttu-id="aa1d8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aa1d8-115">Application</span></span> | <span data-ttu-id="aa1d8-116">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aa1d8-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1b83d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1b83d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa1d8-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aa1d8-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1b83d-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1b83d-118">Optional query parameters</span></span>
-<span data-ttu-id="1b83d-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1b83d-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="aa1d8-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="aa1d8-118">Optional query parameters</span></span>
+<span data-ttu-id="aa1d8-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1b83d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1b83d-120">Request headers</span></span>
-| <span data-ttu-id="1b83d-121">Имя</span><span class="sxs-lookup"><span data-stu-id="1b83d-121">Name</span></span>      |<span data-ttu-id="1b83d-122">Описание</span><span class="sxs-lookup"><span data-stu-id="1b83d-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aa1d8-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="aa1d8-120">Request headers</span></span>
+| <span data-ttu-id="aa1d8-121">Имя</span><span class="sxs-lookup"><span data-stu-id="aa1d8-121">Name</span></span>      |<span data-ttu-id="aa1d8-122">Описание</span><span class="sxs-lookup"><span data-stu-id="aa1d8-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1b83d-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1b83d-123">Authorization</span></span>  | <span data-ttu-id="1b83d-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b83d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="aa1d8-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="aa1d8-123">Authorization</span></span>  | <span data-ttu-id="aa1d8-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1b83d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1b83d-126">Request body</span></span>
-<span data-ttu-id="1b83d-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1b83d-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aa1d8-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="aa1d8-126">Request body</span></span>
+<span data-ttu-id="aa1d8-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1b83d-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="1b83d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aa1d8-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="aa1d8-128">Response</span></span>
 
-<span data-ttu-id="1b83d-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1b83d-129">If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1b83d-130">Пример</span><span class="sxs-lookup"><span data-stu-id="1b83d-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1b83d-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b83d-131">Request</span></span>
-<span data-ttu-id="1b83d-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1b83d-132">Here is an example of the request.</span></span>
+<span data-ttu-id="aa1d8-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-129">If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="aa1d8-130">Пример</span><span class="sxs-lookup"><span data-stu-id="aa1d8-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="aa1d8-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="aa1d8-131">Request</span></span>
+<span data-ttu-id="aa1d8-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_administrativeunit"
@@ -58,8 +58,8 @@ GET /administrativeUnits/{id}
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="1b83d-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b83d-133">Response</span></span>
-<span data-ttu-id="1b83d-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1b83d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="aa1d8-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="aa1d8-133">Response</span></span>
+<span data-ttu-id="aa1d8-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="aa1d8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,10 +78,10 @@ Content-length: 134
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1b83d-137">См. также</span><span class="sxs-lookup"><span data-stu-id="1b83d-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aa1d8-137">См. также</span><span class="sxs-lookup"><span data-stu-id="aa1d8-137">See also</span></span>
 
-- [<span data-ttu-id="1b83d-138">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="1b83d-138">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="1b83d-139">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="1b83d-139">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="aa1d8-138">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="aa1d8-138">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="aa1d8-139">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="aa1d8-139">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
@@ -96,8 +96,6 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/administrativeunit-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,31 +2,31 @@
 title: Тип ресурса Аттрибутемаппингсаурце
 description: 'Определяет способ извлечения (или преобразования) значения из исходного объекта. Например, это может быть простое значение из определенного атрибута для исходного объекта или более сложное выражение сцепления строк/извлечения/замены на основе нескольких исходных атрибутов. '
 localization_priority: Normal
-ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b00cec8f49b914d37d252e5dc464720228bb825
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582182"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345635"
 ---
-# <a name="attributemappingsource-resource-type"></a><span data-ttu-id="b3106-104">Тип ресурса Аттрибутемаппингсаурце</span><span class="sxs-lookup"><span data-stu-id="b3106-104">attributeMappingSource resource type</span></span>
+# <a name="attributemappingsource-resource-type"></a><span data-ttu-id="478df-104">Тип ресурса Аттрибутемаппингсаурце</span><span class="sxs-lookup"><span data-stu-id="478df-104">attributeMappingSource resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b3106-105">Определяет способ извлечения (или преобразования) значения из исходного объекта.</span><span class="sxs-lookup"><span data-stu-id="b3106-105">Defines how a value should be extracted (or transformed) from the source object.</span></span> <span data-ttu-id="b3106-106">Например, это может быть простое значение из определенного атрибута для исходного объекта или более сложное выражение сцепления строк/извлечения/замены на основе нескольких исходных атрибутов.</span><span class="sxs-lookup"><span data-stu-id="b3106-106">For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.</span></span> 
+<span data-ttu-id="478df-105">Определяет способ извлечения (или преобразования) значения из исходного объекта.</span><span class="sxs-lookup"><span data-stu-id="478df-105">Defines how a value should be extracted (or transformed) from the source object.</span></span> <span data-ttu-id="478df-106">Например, это может быть простое значение из определенного атрибута для исходного объекта или более сложное выражение сцепления строк/извлечения/замены на основе нескольких исходных атрибутов.</span><span class="sxs-lookup"><span data-stu-id="478df-106">For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="b3106-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="b3106-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="478df-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="478df-107">Properties</span></span>
 
-| <span data-ttu-id="b3106-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="b3106-108">Property</span></span>              | <span data-ttu-id="b3106-109">Тип</span><span class="sxs-lookup"><span data-stu-id="b3106-109">Type</span></span>                      | <span data-ttu-id="b3106-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b3106-110">Description</span></span>               |
+| <span data-ttu-id="478df-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="478df-108">Property</span></span>              | <span data-ttu-id="478df-109">Тип</span><span class="sxs-lookup"><span data-stu-id="478df-109">Type</span></span>                      | <span data-ttu-id="478df-110">Описание</span><span class="sxs-lookup"><span data-stu-id="478df-110">Description</span></span>               |
 |:----------------------|:--------------------------|:--------------------------|
-|<span data-ttu-id="b3106-111">выражение</span><span class="sxs-lookup"><span data-stu-id="b3106-111">expression</span></span>             |<span data-ttu-id="b3106-112">String</span><span class="sxs-lookup"><span data-stu-id="b3106-112">String</span></span>                     |<span data-ttu-id="b3106-113">Эквивалентное представление этого объекта **аттрибутемаппингсаурце** в выражении.</span><span class="sxs-lookup"><span data-stu-id="b3106-113">Equivalent expression representation of this **attributeMappingSource** object.</span></span>|
-|<span data-ttu-id="b3106-114">name</span><span class="sxs-lookup"><span data-stu-id="b3106-114">name</span></span>                   |<span data-ttu-id="b3106-115">String</span><span class="sxs-lookup"><span data-stu-id="b3106-115">String</span></span>                     |<span data-ttu-id="b3106-116">Параметр Name источника сопоставления.</span><span class="sxs-lookup"><span data-stu-id="b3106-116">Name parameter of the mapping source.</span></span> <span data-ttu-id="b3106-117">В зависимости от значения свойства **Type** это может быть имя функции, имя исходного атрибута или значение константы, которое будет использоваться.</span><span class="sxs-lookup"><span data-stu-id="b3106-117">Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.</span></span> |
-|<span data-ttu-id="b3106-118">parameters</span><span class="sxs-lookup"><span data-stu-id="b3106-118">parameters</span></span>             |<span data-ttu-id="b3106-119">Коллекция [стрингкэйаттрибутемаппингсаурцевалуепаир](synchronization-stringkeyattributemappingsourcevaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="b3106-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection</span></span> | <span data-ttu-id="b3106-120">Если этот объект представляет функцию, перечисляет параметры функции.</span><span class="sxs-lookup"><span data-stu-id="b3106-120">If this object represents a function, lists function parameters.</span></span> <span data-ttu-id="b3106-121">Параметры состоят из объектов **аттрибутемаппингсаурце** , что позволяет использовать сложные выражения.</span><span class="sxs-lookup"><span data-stu-id="b3106-121">Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions.</span></span> <span data-ttu-id="b3106-122">Если **тип** — Not `Function`, это свойство будет иметь значение null или пустой массив.</span><span class="sxs-lookup"><span data-stu-id="b3106-122">If **type** is not `Function`, this property will be null/empty array.</span></span> |
-|<span data-ttu-id="b3106-123">type</span><span class="sxs-lookup"><span data-stu-id="b3106-123">type</span></span>                   | <span data-ttu-id="b3106-124">String</span><span class="sxs-lookup"><span data-stu-id="b3106-124">String</span></span>                    |<span data-ttu-id="b3106-125">Тип этого источника сопоставления атрибутов.</span><span class="sxs-lookup"><span data-stu-id="b3106-125">The type of this attribute mapping source.</span></span> <span data-ttu-id="b3106-126">Возможные значения: `Attribute`, `Constant`, `Function`.</span><span class="sxs-lookup"><span data-stu-id="b3106-126">Possible values are: `Attribute`, `Constant`, `Function`.</span></span> <span data-ttu-id="b3106-127">Значение по умолчанию: `Attribute`.</span><span class="sxs-lookup"><span data-stu-id="b3106-127">Default is `Attribute`.</span></span>| 
+|<span data-ttu-id="478df-111">выражение</span><span class="sxs-lookup"><span data-stu-id="478df-111">expression</span></span>             |<span data-ttu-id="478df-112">String</span><span class="sxs-lookup"><span data-stu-id="478df-112">String</span></span>                     |<span data-ttu-id="478df-113">Эквивалентное представление этого объекта **аттрибутемаппингсаурце** в выражении.</span><span class="sxs-lookup"><span data-stu-id="478df-113">Equivalent expression representation of this **attributeMappingSource** object.</span></span>|
+|<span data-ttu-id="478df-114">name</span><span class="sxs-lookup"><span data-stu-id="478df-114">name</span></span>                   |<span data-ttu-id="478df-115">String</span><span class="sxs-lookup"><span data-stu-id="478df-115">String</span></span>                     |<span data-ttu-id="478df-116">Параметр Name источника сопоставления.</span><span class="sxs-lookup"><span data-stu-id="478df-116">Name parameter of the mapping source.</span></span> <span data-ttu-id="478df-117">В зависимости от значения свойства **Type** это может быть имя функции, имя исходного атрибута или значение константы, которое будет использоваться.</span><span class="sxs-lookup"><span data-stu-id="478df-117">Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.</span></span> |
+|<span data-ttu-id="478df-118">parameters</span><span class="sxs-lookup"><span data-stu-id="478df-118">parameters</span></span>             |<span data-ttu-id="478df-119">Коллекция [стрингкэйаттрибутемаппингсаурцевалуепаир](synchronization-stringkeyattributemappingsourcevaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="478df-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection</span></span> | <span data-ttu-id="478df-120">Если этот объект представляет функцию, перечисляет параметры функции.</span><span class="sxs-lookup"><span data-stu-id="478df-120">If this object represents a function, lists function parameters.</span></span> <span data-ttu-id="478df-121">Параметры состоят из объектов **аттрибутемаппингсаурце** , что позволяет использовать сложные выражения.</span><span class="sxs-lookup"><span data-stu-id="478df-121">Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions.</span></span> <span data-ttu-id="478df-122">Если **тип** — Not `Function`, это свойство будет иметь значение null или пустой массив.</span><span class="sxs-lookup"><span data-stu-id="478df-122">If **type** is not `Function`, this property will be null/empty array.</span></span> |
+|<span data-ttu-id="478df-123">type</span><span class="sxs-lookup"><span data-stu-id="478df-123">type</span></span>                   | <span data-ttu-id="478df-124">String</span><span class="sxs-lookup"><span data-stu-id="478df-124">String</span></span>                    |<span data-ttu-id="478df-125">Тип этого источника сопоставления атрибутов.</span><span class="sxs-lookup"><span data-stu-id="478df-125">The type of this attribute mapping source.</span></span> <span data-ttu-id="478df-126">Возможные значения: `Attribute`, `Constant`, `Function`.</span><span class="sxs-lookup"><span data-stu-id="478df-126">Possible values are: `Attribute`, `Constant`, `Function`.</span></span> <span data-ttu-id="478df-127">Значение по умолчанию: `Attribute`.</span><span class="sxs-lookup"><span data-stu-id="478df-127">Default is `Attribute`.</span></span>| 
 
-## <a name="json-representation"></a><span data-ttu-id="b3106-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b3106-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="478df-128">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="478df-128">JSON representation</span></span>
 
-<span data-ttu-id="b3106-129">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b3106-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="478df-129">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="478df-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,9 +45,9 @@ ms.locfileid: "32582182"
 }
 ```
 
-## <a name="json-examples"></a><span data-ttu-id="b3106-130">Примеры JSON</span><span class="sxs-lookup"><span data-stu-id="b3106-130">JSON Examples</span></span>
+## <a name="json-examples"></a><span data-ttu-id="478df-130">Примеры JSON</span><span class="sxs-lookup"><span data-stu-id="478df-130">JSON Examples</span></span>
 
-<span data-ttu-id="b3106-131">Простой атрибут для сопоставления атрибутов</span><span class="sxs-lookup"><span data-stu-id="b3106-131">Simple attribute to attribute mapping</span></span>
+<span data-ttu-id="478df-131">Простой атрибут для сопоставления атрибутов</span><span class="sxs-lookup"><span data-stu-id="478df-131">Simple attribute to attribute mapping</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +65,7 @@ ms.locfileid: "32582182"
 }
 ```
 
-<span data-ttu-id="b3106-132">Выражение, извлекающее первые 8 символов из исходного атрибута</span><span class="sxs-lookup"><span data-stu-id="b3106-132">Expression extracting first 8 characters from the source attribute</span></span>
+<span data-ttu-id="478df-132">Выражение, извлекающее первые 8 символов из исходного атрибута</span><span class="sxs-lookup"><span data-stu-id="478df-132">Expression extracting first 8 characters from the source attribute</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -121,8 +121,6 @@ ms.locfileid: "32582182"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-attributemappingsource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

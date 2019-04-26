@@ -4,57 +4,57 @@ description: Обновляет свойства объекта groupLifecyclePo
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 69073693203981debbfa8010468df271ea65cef3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 923d9b960e0624360bce0e235f9e973d8922ebfb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501765"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324008"
 ---
-# <a name="update-grouplifecyclepolicy"></a><span data-ttu-id="7839a-103">Update groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="7839a-103">Update groupLifecyclePolicy</span></span>
+# <a name="update-grouplifecyclepolicy"></a><span data-ttu-id="ee272-103">Update groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="ee272-103">Update groupLifecyclePolicy</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7839a-104">Обновляет свойства объекта groupLifecyclePolicy[тип ресурса groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="7839a-104">Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.</span></span>
+<span data-ttu-id="ee272-104">Обновляет свойства объекта groupLifecyclePolicy[тип ресурса groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="ee272-104">Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7839a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7839a-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ee272-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ee272-105">Permissions</span></span>
 
-<span data-ttu-id="7839a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7839a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ee272-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ee272-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
  
 
-|<span data-ttu-id="7839a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7839a-108">Permission type</span></span>      | <span data-ttu-id="7839a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7839a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ee272-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ee272-108">Permission type</span></span>      | <span data-ttu-id="ee272-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ee272-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7839a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7839a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7839a-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7839a-111">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7839a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7839a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7839a-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7839a-113">Not supported</span></span> |
-|<span data-ttu-id="7839a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7839a-114">Application</span></span> | <span data-ttu-id="7839a-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7839a-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="ee272-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ee272-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ee272-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee272-111">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ee272-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ee272-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee272-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ee272-113">Not supported</span></span> |
+|<span data-ttu-id="ee272-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ee272-114">Application</span></span> | <span data-ttu-id="ee272-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee272-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7839a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7839a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ee272-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ee272-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groupLifecyclePolicies/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7839a-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7839a-117">Optional request headers</span></span>
-| <span data-ttu-id="7839a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="7839a-118">Name</span></span> | <span data-ttu-id="7839a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="7839a-119">Description</span></span> |
+## <a name="optional-request-headers"></a><span data-ttu-id="ee272-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ee272-117">Optional request headers</span></span>
+| <span data-ttu-id="ee272-118">Имя</span><span class="sxs-lookup"><span data-stu-id="ee272-118">Name</span></span> | <span data-ttu-id="ee272-119">Описание</span><span class="sxs-lookup"><span data-stu-id="ee272-119">Description</span></span> |
 |:-----------|:-----------|
-| <span data-ttu-id="7839a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7839a-120">Authorization</span></span> | <span data-ttu-id="7839a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7839a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7839a-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7839a-123">Content-Type</span></span>  | <span data-ttu-id="7839a-124">application/json</span><span class="sxs-lookup"><span data-stu-id="7839a-124">application/json</span></span>  |
+| <span data-ttu-id="ee272-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ee272-120">Authorization</span></span> | <span data-ttu-id="ee272-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ee272-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ee272-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ee272-123">Content-Type</span></span>  | <span data-ttu-id="ee272-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ee272-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7839a-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7839a-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ee272-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ee272-125">Request body</span></span>
 
-<span data-ttu-id="7839a-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="7839a-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="ee272-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="ee272-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7839a-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="7839a-129">Property</span></span> | <span data-ttu-id="7839a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7839a-130">Type</span></span> | <span data-ttu-id="7839a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7839a-131">Description</span></span> |
+| <span data-ttu-id="ee272-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="ee272-129">Property</span></span> | <span data-ttu-id="ee272-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ee272-130">Type</span></span> | <span data-ttu-id="ee272-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ee272-131">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7839a-132">alternateNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="7839a-132">alternateNotificationEmails</span></span>|<span data-ttu-id="7839a-133">String</span><span class="sxs-lookup"><span data-stu-id="7839a-133">String</span></span>| <span data-ttu-id="7839a-134">Список адресов электронной почты для отправки уведомлений о группах без владельцев.</span><span class="sxs-lookup"><span data-stu-id="7839a-134">List of email address to send notifications for groups without owners.</span></span> <span data-ttu-id="7839a-135">Можно указать несколько адресов электронной почты, разделив их точкой с запятой.</span><span class="sxs-lookup"><span data-stu-id="7839a-135">Multiple email address can be defined by separating email address with a semicolon.</span></span> |
-|<span data-ttu-id="7839a-136">groupLifetimeInDays</span><span class="sxs-lookup"><span data-stu-id="7839a-136">groupLifetimeInDays</span></span>|<span data-ttu-id="7839a-137">Int32</span><span class="sxs-lookup"><span data-stu-id="7839a-137">Int32</span></span>| <span data-ttu-id="7839a-138">Количество дней до истечения срока действия группы.</span><span class="sxs-lookup"><span data-stu-id="7839a-138">Number of days before a group expires and needs to be renewed.</span></span> <span data-ttu-id="7839a-139">После продления группа будет оставаться активной в течение указанного количества дней.</span><span class="sxs-lookup"><span data-stu-id="7839a-139">Once renewed, the group expiration is extended by the number of days defined.</span></span> |
-|<span data-ttu-id="7839a-140">managedGroupTypes</span><span class="sxs-lookup"><span data-stu-id="7839a-140">managedGroupTypes</span></span>|<span data-ttu-id="7839a-141">String</span><span class="sxs-lookup"><span data-stu-id="7839a-141">String</span></span>| <span data-ttu-id="7839a-142">Тип группы, к которому применяется политика истечения срока действия.</span><span class="sxs-lookup"><span data-stu-id="7839a-142">The group type for which the expiration policy applies.</span></span> <span data-ttu-id="7839a-143">Возможные значения — **All**, **Selected** и **None**.</span><span class="sxs-lookup"><span data-stu-id="7839a-143">Possible values are **All**, **Selected** or **None**.</span></span> |
+|<span data-ttu-id="ee272-132">alternateNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="ee272-132">alternateNotificationEmails</span></span>|<span data-ttu-id="ee272-133">String</span><span class="sxs-lookup"><span data-stu-id="ee272-133">String</span></span>| <span data-ttu-id="ee272-134">Список адресов электронной почты для отправки уведомлений о группах без владельцев.</span><span class="sxs-lookup"><span data-stu-id="ee272-134">List of email address to send notifications for groups without owners.</span></span> <span data-ttu-id="ee272-135">Можно указать несколько адресов электронной почты, разделив их точкой с запятой.</span><span class="sxs-lookup"><span data-stu-id="ee272-135">Multiple email address can be defined by separating email address with a semicolon.</span></span> |
+|<span data-ttu-id="ee272-136">groupLifetimeInDays</span><span class="sxs-lookup"><span data-stu-id="ee272-136">groupLifetimeInDays</span></span>|<span data-ttu-id="ee272-137">Int32</span><span class="sxs-lookup"><span data-stu-id="ee272-137">Int32</span></span>| <span data-ttu-id="ee272-138">Количество дней до истечения срока действия группы.</span><span class="sxs-lookup"><span data-stu-id="ee272-138">Number of days before a group expires and needs to be renewed.</span></span> <span data-ttu-id="ee272-139">После продления группа будет оставаться активной в течение указанного количества дней.</span><span class="sxs-lookup"><span data-stu-id="ee272-139">Once renewed, the group expiration is extended by the number of days defined.</span></span> |
+|<span data-ttu-id="ee272-140">managedGroupTypes</span><span class="sxs-lookup"><span data-stu-id="ee272-140">managedGroupTypes</span></span>|<span data-ttu-id="ee272-141">String</span><span class="sxs-lookup"><span data-stu-id="ee272-141">String</span></span>| <span data-ttu-id="ee272-142">Тип группы, к которому применяется политика истечения срока действия.</span><span class="sxs-lookup"><span data-stu-id="ee272-142">The group type for which the expiration policy applies.</span></span> <span data-ttu-id="ee272-143">Возможные значения — **All**, **Selected** и **None**.</span><span class="sxs-lookup"><span data-stu-id="ee272-143">Possible values are **All**, **Selected** or **None**.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7839a-144">Ответ</span><span class="sxs-lookup"><span data-stu-id="7839a-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ee272-144">Ответ</span><span class="sxs-lookup"><span data-stu-id="ee272-144">Response</span></span>
 
-<span data-ttu-id="7839a-145">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="7839a-145">If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7839a-146">Пример</span><span class="sxs-lookup"><span data-stu-id="7839a-146">Example</span></span>
+<span data-ttu-id="ee272-145">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ee272-145">If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ee272-146">Пример</span><span class="sxs-lookup"><span data-stu-id="ee272-146">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7839a-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="7839a-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ee272-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="ee272-147">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -71,8 +71,8 @@ Content-length: 151
   "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="7839a-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="7839a-148">Response</span></span>
-<span data-ttu-id="7839a-149">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="7839a-149">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="ee272-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="ee272-148">Response</span></span>
+<span data-ttu-id="ee272-149">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="ee272-149">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,8 +100,6 @@ Content-length: 146
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/grouplifecyclepolicy-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

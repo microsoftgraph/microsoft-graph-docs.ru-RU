@@ -2,29 +2,29 @@
 title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
 localization_priority: Normal
-ms.openlocfilehash: a5eacb79dfca97b992e2f8584761aaa45beccd76
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a119ea5d81689a814a9f7f8b10da8b267e98dd03
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581576"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345320"
 ---
-# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="26934-103">Тип ресурса licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="26934-103">licenseUnitsDetail resource type</span></span>
+# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="9da7c-103">Тип ресурса licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="9da7c-103">licenseUnitsDetail resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="26934-104">Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.</span><span class="sxs-lookup"><span data-stu-id="26934-104">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
+<span data-ttu-id="9da7c-104">Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.</span><span class="sxs-lookup"><span data-stu-id="9da7c-104">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="26934-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="26934-105">Properties</span></span>
-| <span data-ttu-id="26934-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="26934-106">Property</span></span>     | <span data-ttu-id="26934-107">Тип</span><span class="sxs-lookup"><span data-stu-id="26934-107">Type</span></span>   |<span data-ttu-id="26934-108">Описание</span><span class="sxs-lookup"><span data-stu-id="26934-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9da7c-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="9da7c-105">Properties</span></span>
+| <span data-ttu-id="9da7c-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="9da7c-106">Property</span></span>     | <span data-ttu-id="9da7c-107">Тип</span><span class="sxs-lookup"><span data-stu-id="9da7c-107">Type</span></span>   |<span data-ttu-id="9da7c-108">Описание</span><span class="sxs-lookup"><span data-stu-id="9da7c-108">Description</span></span>|
 |:-------------|:-----|:----------|
-|<span data-ttu-id="26934-109">enabled</span><span class="sxs-lookup"><span data-stu-id="26934-109">enabled</span></span>|<span data-ttu-id="26934-110">Int32</span><span class="sxs-lookup"><span data-stu-id="26934-110">Int32</span></span>| <span data-ttu-id="26934-111">Количество включенных единиц.</span><span class="sxs-lookup"><span data-stu-id="26934-111">The number of units that are enabled.</span></span> |
-|<span data-ttu-id="26934-112">suspended</span><span class="sxs-lookup"><span data-stu-id="26934-112">suspended</span></span>|<span data-ttu-id="26934-113">Int32</span><span class="sxs-lookup"><span data-stu-id="26934-113">Int32</span></span>| <span data-ttu-id="26934-114">Количество приостановленных единиц.</span><span class="sxs-lookup"><span data-stu-id="26934-114">The number of units that are suspended.</span></span> |
-|<span data-ttu-id="26934-115">warning</span><span class="sxs-lookup"><span data-stu-id="26934-115">warning</span></span>|<span data-ttu-id="26934-116">Int32</span><span class="sxs-lookup"><span data-stu-id="26934-116">Int32</span></span>| <span data-ttu-id="26934-117">Количество единиц, которые находятся в состоянии предупреждения.</span><span class="sxs-lookup"><span data-stu-id="26934-117">The number of units that are in warning status.</span></span> |
+|<span data-ttu-id="9da7c-109">enabled</span><span class="sxs-lookup"><span data-stu-id="9da7c-109">enabled</span></span>|<span data-ttu-id="9da7c-110">Int32</span><span class="sxs-lookup"><span data-stu-id="9da7c-110">Int32</span></span>| <span data-ttu-id="9da7c-111">Количество включенных единиц.</span><span class="sxs-lookup"><span data-stu-id="9da7c-111">The number of units that are enabled.</span></span> |
+|<span data-ttu-id="9da7c-112">suspended</span><span class="sxs-lookup"><span data-stu-id="9da7c-112">suspended</span></span>|<span data-ttu-id="9da7c-113">Int32</span><span class="sxs-lookup"><span data-stu-id="9da7c-113">Int32</span></span>| <span data-ttu-id="9da7c-114">Количество приостановленных единиц.</span><span class="sxs-lookup"><span data-stu-id="9da7c-114">The number of units that are suspended.</span></span> |
+|<span data-ttu-id="9da7c-115">warning</span><span class="sxs-lookup"><span data-stu-id="9da7c-115">warning</span></span>|<span data-ttu-id="9da7c-116">Int32</span><span class="sxs-lookup"><span data-stu-id="9da7c-116">Int32</span></span>| <span data-ttu-id="9da7c-117">Количество единиц, которые находятся в состоянии предупреждения.</span><span class="sxs-lookup"><span data-stu-id="9da7c-117">The number of units that are in warning status.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="26934-118">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="26934-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9da7c-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="9da7c-118">JSON representation</span></span>
 
-<span data-ttu-id="26934-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="26934-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="9da7c-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9da7c-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,8 +52,6 @@ ms.locfileid: "32581576"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/licenseunitsdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
