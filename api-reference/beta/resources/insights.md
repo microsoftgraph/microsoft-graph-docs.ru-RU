@@ -5,11 +5,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: 4e71dbca7bf4ebbe054d0da83436e5dc2129cf19
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551899"
 ---
 # <a name="insights-resource-type"></a>Тип ресурса insights
 
@@ -27,7 +27,7 @@ ms.locfileid: "29640170"
 
 ## <a name="relationships"></a>Связи
 
-| Связь      | Тип          | Описание  |
+| Отношение      | Тип          | Описание  |
 | ------------- |---------------| -------------|
 | trending      | Коллекция [Trending](insights-trending.md)       | Вычисляемая связь, определяющая популярные документы. Популярные документы могут храниться в OneDrive или на сайтах SharePoint.   |
 | used      | Коллекция [Used](insights-used.md)       | Вычисляемая связь, определяющая документы, просмотренные и измененные пользователем. Включает документы, используемые пользователем в OneDrive для бизнеса, SharePoint, открытые как вложения почты и вложенные ссылки из таких источников, как Box, DropBox и Google Диск.  |

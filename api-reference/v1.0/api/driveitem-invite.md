@@ -6,11 +6,11 @@ title: Отправка приглашения на доступ к элемен
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548098"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -62,7 +62,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | Коллекция получателей, которые будут получать доступ и приглашение к совместному использованию.
 | message          | String                         | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов.
-| requireSignIn    | Boolean                        | Указывает, требуется ли получателю приглашения на вход для просмотра общего элемента.
+| requireSignIn    | Логический                        | Указывает, требуется ли получателю приглашения на вход для просмотра общего элемента.
 | sendInvitation   | Boolean                        | Если этот параметр имеет значение true, получателю отправляется [ссылка для совместного доступа][] . В противном случае разрешение предоставляется напрямую без отправки уведомления.
 | roles            | Collection(String)             | Укажите роли, которые должны быть предоставлены получателям приглашения к совместному использованию.
 
@@ -94,7 +94,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Замечания
+## <a name="remarks"></a>Примечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
 * Список доступных ролей см. в разделе [Перечисление ролей](../resources/permission.md#roles-enumeration).

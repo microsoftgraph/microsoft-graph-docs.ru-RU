@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b4e866ee1e13d1b9353b042e69042d43af314aca
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781199"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552235"
 ---
 # <a name="iosvppapp-resource-type"></a>Тип ресурса iosVppApp
 
@@ -25,11 +25,11 @@ ms.locfileid: "31781199"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов iosVppApp](../api/intune-apps-iosvppapp-list.md)|Коллекция [iosVppApp](../resources/intune-apps-iosvppapp.md)|Список свойств и связей объектов [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[Get iosVppApp](../api/intune-apps-iosvppapp-get.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Чтение свойств и связей объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[Create iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Создание объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[Delete iosVppApp](../api/intune-apps-iosvppapp-delete.md)|None|Удаление экземпляра [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[Update iosVppApp](../api/intune-apps-iosvppapp-update.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Обновление свойств объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Перечисление iosVppApps](../api/intune-apps-iosvppapp-list.md)|Коллекция [iosVppApp](../resources/intune-apps-iosvppapp.md)|Список свойств и связей объектов [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Получение iosVppApp](../api/intune-apps-iosvppapp-get.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md);|Считывание свойств и связей объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Создание iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md);|Создание нового объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Удаление iosVppApp](../api/intune-apps-iosvppapp-delete.md)|None|Удаление экземпляра [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Обновление iosVppApp](../api/intune-apps-iosvppapp-update.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Обновление свойств объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
 |[Действие revokeAllLicenses](../api/intune-apps-iosvppapp-revokealllicenses.md)|Нет|Отозвать все назначенные лицензии на Android для данного приложения.|
 |[Действие revokeAllLicenses](../api/intune-apps-iosvppapp-revokeuserlicense.md)|Нет|Отзыв назначенной лицензии пользователя на iOS VPP для данного приложения.|
 |[Действие revokeAllLicenses](../api/intune-apps-iosvppapp-revokedevicelicense.md)|Нет|Отзыв назначенной лицензии на устройство VPP для iOS для данного приложения.|
@@ -53,7 +53,7 @@ ms.locfileid: "31781199"
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
@@ -73,7 +73,7 @@ ms.locfileid: "31781199"
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

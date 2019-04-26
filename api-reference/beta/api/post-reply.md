@@ -1,15 +1,15 @@
 ---
 title: 'post: reply'
-description: 'Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы. Можно указать '
+description: 'Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы. Вы можете указать '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: dfdc25b3e99c26d266631a331d7d58c73042e64b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538606"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -115,7 +115,7 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 ##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552416"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -55,7 +55,7 @@ ms.locfileid: "31806568"
 - [Сводка по установке электронной книги](intune-books-ebookinstallsummary.md)
 - [Сертификат подписи корпоративного кода](intune-apps-enterprisecodesigningcertificate.md)
 - [Исключенные приложения](intune-apps-excludedapps.md)
-- [Информация о шифровании файлов](intune-apps-fileencryptioninfo.md)
+- [Сведения о шифровании файлов](intune-apps-fileencryptioninfo.md)
 - [Состояние установки](intune-books-installstate.md)
 - [Тип устройства iOS](intune-apps-iosdevicetype.md)
 - [Бизнес-приложение iOS](intune-apps-ioslobapp.md)
@@ -77,7 +77,7 @@ ms.locfileid: "31806568"
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
 - [Минимальная версия операционной системы macOS](intune-apps-macosminimumoperatingsystem.md)
-- [Приложение из набора Office для macOS](intune-apps-macosofficesuiteapp.md)
+- [Набор приложений Office для macOS](intune-apps-macosofficesuiteapp.md)
 - [Приложение macOS, приобретенное по программе VPP](intune-apps-macosvppapp.md)
 - [Лицензия, назначенная приложению macOS, которое приобретено по программе VPP](intune-apps-macosvppappassignedlicense.md)
 - [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-apps-macosvppappassignmentsettings.md)
@@ -91,13 +91,13 @@ ms.locfileid: "31806568"
 - [Состояние устройства, связанное с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 - [Общие сведения об устройствах, связанные с настройкой мобильных приложений для управляемых устройств](intune-apps-manageddevicemobileappconfigurationdevicesummary.md)
 - [Состояние пользователя, связанное с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
-- [Ресурс managedDeviceMobileAppConfigurationUserSummary](intune-apps-manageddevicemobileappconfigurationusersummary.md)
+- [Сводка по пользователям, связанным с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationusersummary.md)
 - [Управление электронной книгой](intune-books-managedebook.md)
 - [Назначение управляемой электронной книги](intune-books-managedebookassignment.md)
 - [Категория управляемых электронных книг](intune-books-managedebookcategory.md)
-- [Управляемые бизнес-приложения для iOS](intune-apps-managedioslobapp.md)
+- [Управляемое бизнес-приложение для iOS](intune-apps-managedioslobapp.md)
 - [Управляемое приложение из магазина iOS](intune-apps-managediosstoreapp.md)
-- [Управляемые мобильные бизнес-приложения](intune-apps-managedmobilelobapp.md)
+- [Управляемое мобильное бизнес-приложение](intune-apps-managedmobilelobapp.md)
 - [Тип ключа конфигурации приложения MDM](intune-apps-mdmappconfigkeytype.md)
 - [Приложение Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessapp.md)
 - [Настройки назначения приложения из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
@@ -107,7 +107,7 @@ ms.locfileid: "31806568"
 - [Назначение мобильного приложения](intune-apps-mobileappassignment.md)
 - [Настройки назначения мобильного приложения](intune-apps-mobileappassignmentsettings.md)
 - [Категория мобильных приложений](intune-apps-mobileappcategory.md)
-- [Содержимое мобильных приложений](intune-apps-mobileappcontent.md)
+- [Содержимое мобильного приложения](intune-apps-mobileappcontent.md)
 - [Файл содержимого мобильного приложения](intune-apps-mobileappcontentfile.md)
 - [Состояние отправки файла содержимого мобильного приложения](intune-apps-mobileappcontentfileuploadstate.md)
 - [Тип депендеци для мобильного приложения](intune-apps-mobileappdependecytype.md)
@@ -134,7 +134,7 @@ ms.locfileid: "31806568"
 - [Информация об итоговом состоянии приложения](intune-apps-resultantappstatedetail.md)
 - [Сертификат подписи кода Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Состояние установки приложения пользователем](intune-apps-userappinstallstatus.md)
-- [Тип ресурса userInstallStateSummary](intune-books-userinstallstatesummary.md)
+- [Сводка по состояниям установки для пользователей](intune-books-userinstallstatesummary.md)
 - [Тип лицензирования VPP](intune-apps-vpplicensingtype.md)
 - [Веб-приложение](intune-apps-webapp.md)
 - [Бизнес-приложение Win32](intune-apps-win32lobapp.md)

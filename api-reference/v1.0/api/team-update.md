@@ -1,21 +1,21 @@
 ---
-title: Группа обновления
-description: Обновление свойств указанной группы.
+title: Обновление объекта команды
+description: Обновление свойств указанной команды.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6dd8e38261cb2e64c3717ea3bee26ca96bd8958
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016620"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548994"
 ---
-# <a name="update-team"></a>Группа обновления
+# <a name="update-team"></a>Обновление объекта команды
 
 
 
-Обновление свойств указанной [группы](../resources/team.md).
+Обновление свойств указанной [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "28016620"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All    |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,8 +41,8 @@ PATCH /teams/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [группы](../resources/team.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 

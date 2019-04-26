@@ -1,26 +1,26 @@
 ---
-title: Отменить privilegedRoleAssignmentRequest
-description: Отмена privilegedRoleAssignmentRequest.
+title: Отмена Привилежедролеассигнментрекуест
+description: Отмена объекта Привилежедролеассигнментрекуест.
 localization_priority: Normal
 ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642809"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546530"
 ---
-# <a name="cancel-privilegedroleassignmentrequest"></a>Отменить privilegedRoleAssignmentRequest
+# <a name="cancel-privilegedroleassignmentrequest"></a>Отмена Привилежедролеассигнментрекуест
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмена [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
+Отмена объекта [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -36,21 +36,21 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Возвращает [privilegedRoleAssignmentRequest] (.. / resources/privilegedRoleAssignmentRequest.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [Привилежедролеассигнментрекуест] (.. /Ресаурцес/привилежедролеассигнментрекуест.МД) в теле отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
-Этот интерфейс API возвращает стандартные коды ошибок HTTP. Кроме того он возвращает коды пользовательских ошибок, перечисленных в следующей таблице.
+Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды настраиваемых ошибок, приведенные в следующей таблице.
 
 |Код ошибки     | Сообщение об ошибке              |
 |:--------------------| :---------------------|
-| 400 BadRequest | RequestId не может быть Null. |
-| 400 BadRequest | Запрос с Идентификатором запроса не найден. |
-| 400 BadRequest | Отмены можно выполнить только на состояние расписанию и ожидает утверждения. |
-| 403 доступ запрещен | Автор запроса не может совершать вызов отмены или запрос не найден. |
+| 400 Бадрекуест | RequestId не может иметь значение null. |
+| 400 Бадрекуест | Запрос с ИДЕНТИФИКАТОРом запроса не найден. |
+| 400 Бадрекуест | Отмену можно выполнить только по запланированному состоянию и Пендингаппровал. |
+| 403 авторизация | Инициатор запроса не может выполнить вызов отмены или запрос не найден. |
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

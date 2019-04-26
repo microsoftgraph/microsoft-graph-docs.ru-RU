@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2583cbf5fd8feee12b18482c515490d2de8ce8be
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548056"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Удаление Трустфрамеворкполици
 
@@ -23,7 +23,7 @@ ms.locfileid: "31989403"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. Трустфрамеворк|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -64,7 +64,7 @@ DELETE /trustFramework/policies/{id}
 DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",

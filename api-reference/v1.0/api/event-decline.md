@@ -1,19 +1,19 @@
 ---
 title: 'event: decline'
-description: Отклонить приглашение на события, указанного в календаре пользователя.
+description: Отклонение приглашения на указанное событие в календаре пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 920a97db9a6716d2111a8179c86d5556042a6edd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550099"
 ---
 # <a name="event-decline"></a>event: decline
 
-Отклонить приглашение для указанного [события](../resources/event.md) в [Календарь](../resources/calendar.md)пользователя.
+ОтКлонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,14 +55,14 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|comment|Строка|Текст, включенный в ответ. Необязательный.|
-|sendResponse|Boolean|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
+|comment|String|Текст, включенный в ответ. Необязательный.|
+|sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
 
@@ -94,7 +94,7 @@ Content-length: 56
 
 <br/>
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

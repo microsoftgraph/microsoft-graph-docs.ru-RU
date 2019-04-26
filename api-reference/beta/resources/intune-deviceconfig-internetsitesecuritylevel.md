@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 84893c71dc1026ca15922aa343e5117032aa50b8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786884"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556036"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>тип перечисления Интернетситесекуритилевел
 
@@ -23,9 +23,9 @@ ms.locfileid: "31786884"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|medium|1,1|Средний.|
-|Медиумхигх|2|Умеренно высокий.|
-|высокоуровневых|4|Высокоуровневых.|
+|medium|1 |Средний.|
+|Медиумхигх|2 |Умеренно высокий.|
+|высокоуровневых|3 |Высокоуровневых.|
 
 
 
