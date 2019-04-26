@@ -1,23 +1,23 @@
 ---
 title: Тип ресурса settingValue
-description: Параметр, представленный парой "имя-значение".
+description: Параметр, представленный в виде "имя-значение".
 localization_priority: Normal
 ms.openlocfilehash: 3edf5bdc1fae77702206eae78d53fcf0fdc5b644
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834036"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549687"
 ---
 # <a name="settingvalue-resource-type"></a>Тип ресурса settingValue
 
-Параметр, представленный парой "имя-значение".
+Параметр, представленный в виде "имя-значение".
 
 ### <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|name|String| Имя параметра, определенное [groupSettingTemplate](groupsettingtemplate.md). |
+|name|String| Имя параметра (как определено в [groupSettingTemplate](groupsettingtemplate.md)). |
 |value|String| Значение параметра. |
 
 ### <a name="json-representation"></a>Представление в формате JSON

@@ -6,11 +6,11 @@ title: Скачивание файла
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 836ffe051077e41c7fcf9cb0404d8bb016948177
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481610"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548063"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 

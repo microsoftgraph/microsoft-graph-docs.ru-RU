@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fac3952488b5004a74286d337f04a8aa6038b174
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572047"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>Тип ресурса windows10NetworkBoundaryConfiguration
 
