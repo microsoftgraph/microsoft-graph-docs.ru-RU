@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad99a7dd701c52def0879a8611cc49f96e4654b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454435"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325265"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 
@@ -75,7 +77,7 @@ GET /users/{userId}/drive/root/delta
 
 Ниже приведен пример первоначального запроса.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -123,7 +125,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса, выполненного после первоначального.
 
-<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -179,7 +181,7 @@ Content-type: application/json
 
 ### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -187,7 +189,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>Отклик
 
-<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -230,10 +232,13 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes"
-} -->
+  "tocPath": "Items/Sync changes",
+  "suppressions": []
+}
+-->

@@ -2,14 +2,16 @@
 title: Тип ресурса licenseDetails
 description: Содержит сведения о лицензии, назначенной пользователю.
 localization_priority: Normal
-ms.openlocfilehash: 7036904e20173f8fefb6f4f02bd2473289de96c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b977dcff67ac9dc03890a4f2182d8b1d974f314
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562680"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345307"
 ---
 # <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Содержит сведения о лицензии, назначенной пользователю.
 
@@ -29,7 +31,7 @@ ms.locfileid: "32562680"
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Равно свойству skuId в связанном объекте [SubscribedSku](subscribedsku.md) . Только для чтения |
 |Скупартнумбер|String| Имя уникального отображаемого номера SKU. Равно Скупартнумбер для связанного объекта [SubscribedSku](subscribedsku.md) ; Пример: "Аад_премиум". Только для чтения |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -37,7 +39,6 @@ ms.locfileid: "32562680"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -56,10 +57,13 @@ ms.locfileid: "32562680"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "licenseDetails resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

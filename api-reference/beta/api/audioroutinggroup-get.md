@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта А
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 810a27c91c5a31a970f7b279d774d12bf049210d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f9d3d76a07bfae88f53181ff04c3fab3ee6d220
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459040"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322570"
 ---
 # <a name="get-audio-routing-group"></a>Получение группы маршрутизации звука
 
@@ -22,7 +22,7 @@ ms.locfileid: "32459040"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                               |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
@@ -41,7 +41,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -60,7 +60,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -96,8 +96,6 @@ Content-Length: 233
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/audioroutinggroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

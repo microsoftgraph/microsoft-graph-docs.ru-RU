@@ -4,14 +4,16 @@ description: Получение простого каталога **user**, ко
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 1212057af13057f691e5721bd21a351e59a82511
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3779b10199da6a28049ff6c53b87fe27b3564ae
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457432"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321979"
 ---
 # <a name="get-user"></a>Получение пользователя
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
 
@@ -24,7 +26,7 @@ ms.locfileid: "32457432"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,9 +39,9 @@ GET /education/users/{id}/user
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -49,7 +51,7 @@ GET /education/users/{id}/user
   "name": "get_user"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/user
+GET https://graph.microsoft.com/beta/education/me/user
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -86,10 +88,13 @@ Content-length: 491
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

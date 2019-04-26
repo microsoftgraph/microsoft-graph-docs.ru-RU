@@ -4,14 +4,16 @@ description: Получение списка преподавателей для
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 16f402ba6892ae02d98902688e1cf3b04be316d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e33dc583d563362a2e18658aedb915b9bf5531ad
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457742"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324659"
 ---
 # <a name="list-teachers"></a>Перечисление преподавателей
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка преподавателей для класса. Чтобы делегированные маркеры могли получить список преподавателей, они должны принадлежать к классу.
 
@@ -22,7 +24,7 @@ ms.locfileid: "32457742"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |   Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,9 +39,9 @@ GET /education/classes/{id}/teachers
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -49,7 +51,7 @@ GET /education/classes/{id}/teachers
   "name": "get_teachers"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
+GET https://graph.microsoft.com/beta/education/classes/11023/teachers
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List teachers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

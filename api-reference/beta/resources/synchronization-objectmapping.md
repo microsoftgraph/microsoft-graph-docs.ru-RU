@@ -2,12 +2,12 @@
 title: Тип ресурса Обжектмаппинг
 description: Определяет способ синхронизации данного объекта из исходного каталога в конечный каталог. В частности, он определяет, как объект в исходном каталоге должен сопоставляться с объектом в целевом каталоге, какие фильтры области (если они есть) следует использовать, чтобы определить, нужно ли подготовить заданный объект, и как будут преобразованы атрибуты объекта. Источник с целевым каталогом.
 localization_priority: Normal
-ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581762"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345598"
 ---
 # <a name="objectmapping-resource-type"></a>Тип ресурса Обжектмаппинг
 
@@ -23,14 +23,14 @@ ms.locfileid: "32581762"
 |:--------------|:----------|:---------------|
 |Аттрибутемаппингс  |Коллекция [аттрибутемаппинг](synchronization-attributemapping.md)    | Сопоставления атрибутов определяют, какие атрибуты необходимо сопоставить из исходного объекта в целевом объекте и как они будут передаваться. Для поддержки преобразования исходных значений источника доступны некоторые функции.|
 |enabled        |Boolean    |Когда `true`сопоставление этого объекта будет обработано во время синхронизации. Когда `false`сопоставление этого объекта будет пропущено.|
-|Фловтипес      |Обжектфловтипе    |Какие типы Flow включены для этого сопоставления объектов. `Add`создает новые объекты в целевом каталоге, `Update` изменяет существующие объекты и `Delete` разменяет существующие. Значение по умолчанию: `Add, Update, Delete`. |
+|Фловтипес      |Обжектфловтипес    |Какие типы Flow включены для этого сопоставления объектов. `Add`создает новые объекты в целевом каталоге, `Update` изменяет существующие объекты и `Delete` разменяет существующие. Значение по умолчанию: `Add, Update, Delete`. |
 |метаданных       |Коллекция Метадатаентри    |Дополнительные свойства расширения. Если явно не указано иное, значения метаданных не должны изменяться.|
 |name           |String     |Понятное имя сопоставления объектов.|
 |scope          |[filter](synchronization-filter.md)     |Определяет фильтр, который будет использоваться при принятии решения о подготовке данного объекта. Например, вам может потребоваться предоставить только пользователей, которые находятся в США.|
 |Саурцеобжектнаме           |String     |Имя объекта в исходном каталоге. Должно сопоставлять имя объекта из исходного [определения каталога](synchronization-directorydefinition.md).|
 |Таржетобжектнаме           |String     |Имя объекта в целевом каталоге. Должно сопоставлять имя объекта из [определения целевого каталога](synchronization-directorydefinition.md).|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,7 +58,7 @@ ms.locfileid: "32581762"
 ## <a name="json-example"></a>Пример JSON
 
 <!-- {
-  "blockType": "resource",
+  "blockType": "example",
   "optionalProperties": [
 
   ],
@@ -355,8 +355,6 @@ ms.locfileid: "32581762"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

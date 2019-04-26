@@ -4,12 +4,12 @@ description: 'Группа папок (outlookTaskFolder), которая сод
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 486261d80b8faad7a5969f8f1ce198479e39583c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af5599773c6a4edef97356e99daa522760d9b37a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568618"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345541"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Тип ресурса outlookTaskGroup
 
@@ -35,8 +35,8 @@ ms.locfileid: "32568618"
 |:---------------|:--------|:----------|
 |changeKey|String|Версия группы задач.|
 |Граупкэй|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
-|id|Строка|Уникальный строковый идентификатор группы задач. Только для чтения.|
-|Исдефаултграуп|Boolean|Значение true, если группа задач является группой задач по умолчанию.|
+|id|String|Уникальный строковый идентификатор группы задач. Только для чтения.|
+|Исдефаултграуп|Логический|Значение true, если группа задач является группой задач по умолчанию.|
 |name|String|Имя группы задач.|
 
 ## <a name="relationships"></a>Связи

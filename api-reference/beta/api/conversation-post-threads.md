@@ -1,19 +1,21 @@
 ---
 title: Создание цепочки
-description: 'Создание цепочки в указанной беседе. '
+description: Создание цепочки в указанной беседе.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4b939758906da1814ee4ffc2a722427bf4e7f6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455599"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326694"
 ---
 # <a name="create-thread"></a>Создание цепочки
 
-Создание цепочки в указанной беседе. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Создание цепочки в указанной беседе.
 
 Создание указанных цепочки и записи. Используйте [цепочку ответов](conversationthread-reply.md), чтобы размещать дальнейшие записи в этой цепочке. Кроме того, если вы получаете идентификатор записи, вы можете [ответить](post-reply.md) на эту запись в цепочке.
 
@@ -38,7 +40,7 @@ POST /groups/{id}/conversations/{id}/threads
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите описание объекта [ConversationThread](../resources/conversationthread.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -53,7 +55,7 @@ POST /groups/{id}/conversations/{id}/threads
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -69,7 +71,7 @@ Content-type: application/json
 В теле запроса укажите описание объекта [conversationThread](../resources/conversationthread.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201 Created` и `id` новой цепочки в теле отклика. Ниже приведен пример отклика. 
+В случае успеха этот метод возвратит код отклика `201 Created` и `id` новой цепочки в теле отклика. Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,10 +89,13 @@ Content-length: 346
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

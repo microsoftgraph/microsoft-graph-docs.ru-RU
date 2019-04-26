@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: Получение специальных папок
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1afdd464091c395909f57291100f95bbadc5a47
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454787"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325782"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по ее имени
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте специальную коллекцию для доступа к специальной папке по имени.
 
@@ -85,10 +87,10 @@ Content-type: application/json
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
 
 ```http
-GET /me/drive/special/{special-folder-name}/children
+GET /me/drive/special/{name}/children
 ```
 
 ### <a name="response"></a>Отклик
@@ -115,10 +117,13 @@ Content-Type: application/json
 
 Если у вашего приложения есть разрешения только для чтения, то запрос на получение специальной папки или ее дочерних элементов может завершиться ошибкой `404 Not Found` или `403 Forbidden`, если специальная папка еще не существует.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders"
-} -->
+  "tocPath": "OneDrive/Drive/Special folders",
+  "suppressions": []
+}
+-->

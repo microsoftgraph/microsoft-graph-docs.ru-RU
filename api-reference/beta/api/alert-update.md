@@ -4,12 +4,12 @@ description: Обновление редактируемого свойства 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459242"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322679"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -25,7 +25,7 @@ ms.locfileid: "32459242"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Приложение | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,10 +40,10 @@ PATCH /security/alerts/{alert_id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {Code}. Обязательный параметр.|
+| Authorization  | Bearer {Code}. Обязательный параметр.|
 |Prefer | Возврат = представление |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить. Текст **должен** содержать `vendorInformation` свойство Valid `provider` и `vendor` Fields. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в текст запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -51,7 +51,7 @@ PATCH /security/alerts/{alert_id}
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитика, которому назначено оповещение для рассмотрения, исследования или исправления.|
 |Клоседдатетиме|DateTimeOffset|Время закрытия оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|comments|Коллекция строк|Комментарии аналитика в оповещении (для управления оповещениями клиентов).|
+|comments|Коллекция String|Комментарии аналитика в оповещении (для управления оповещениями клиентов).|
 |замечания|Перечисление Алертфидбакк|Обратная связь аналитика с оповещением. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|Перечисление Алертстатус|Состояние жизненного цикла оповещений (Stage). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|Коллекция String|Определяемые пользователями метки, которые могут быть применены к оповещению и могут использоваться в качестве условий фильтрации (например, "Хва", "показано").|
@@ -174,8 +174,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

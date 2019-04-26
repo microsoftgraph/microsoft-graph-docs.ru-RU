@@ -2,12 +2,12 @@
 title: Создание соглашения
 description: Создание нового объекта договора.
 localization_priority: Normal
-ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb7ca15d43c37fd98fe45984d2de1fd57a85ad54
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459234"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322698"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -33,7 +33,7 @@ POST /agreements
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [соглашения](../resources/agreement.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
@@ -45,7 +45,7 @@ POST /agreements
 |Files/fileName|String|Имя файла соглашения (например, Тау. PDF).|
 |файлы и IsDefault|Логический|Указывает, является ли этот файл соглашением по умолчанию, если ни одна из культур не соответствует параметрам клиента. Если ни один из файлов не помечен как используемый по умолчанию, первый из них будет рассматриваться как используемый по умолчанию.|
 |файлы/язык|String|Язык и региональные параметры файла соглашения в формате languagecode2-Country/regioncode2. languagecode2 это код из двух букв в нижнем регистре, производный от стандарта ISO 639-1. страна или regioncode2 является производной от стандарта ISO 3166 и обычно состоит из двух прописных букв или тега языка BCP-47 (например, EN-US).|
-|Files/fileData/Data|Binary|Данные, представляющие условия использования PDF-документа.|
+|Files/fileData/Data|Двоичный|Данные, представляющие условия использования PDF-документа.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [Agreement](../resources/agreement.md) в тексте отклика.
@@ -105,8 +105,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

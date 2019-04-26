@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: 85e26779d7c7df72a3176290654511ebd0f9493b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a05be9e75444f97d809765a0eb16a71cde2957e3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576117"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345486"
 ---
 # <a name="uploadsession-resource"></a>Ресурс UploadSession
 
@@ -17,7 +17,7 @@ ms.locfileid: "32576117"
 
 Ресурс **UploadSession** содержит сведения о способе отправки больших файлов в OneDrive, OneDrive для бизнеса или в библиотеки документов SharePoint.
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -56,8 +56,6 @@ ms.locfileid: "32576117"
   "description": "UploadSession is used to provide information about large file uploads.",
   "section": "documentation",
   "tocPath": "Resources/UploadSession",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/uploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

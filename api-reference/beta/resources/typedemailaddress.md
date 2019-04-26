@@ -2,12 +2,12 @@
 title: Тип ресурса Типедемаиладдресс
 description: Представляет имя, адреса электронной почты и соответствующие им типы адресов электронной почты контакта.
 localization_priority: Normal
-ms.openlocfilehash: 3b1230dabc1e49c6cb9220eea95f0c3b93053d96
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92f3f1f89c73fe968c7fb06f7c5ed4b0eff883fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576460"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345476"
 ---
 # <a name="typedemailaddress-resource-type"></a>Тип ресурса Типедемаиладдресс
 
@@ -23,7 +23,7 @@ ms.locfileid: "32576460"
 |type |String |Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`. Значение по умолчанию `unknown`—, то есть **адрес** не был задан как определенный тип. |
 |Осерлабел |String  |Чтобы указать настраиваемый тип адреса электронной почты, задайте **** для `other`параметра Тип значение и назначьте **осерлабел** настраиваемой строке. Например, вы можете использовать конкретный адрес электронной почты для своих мероприятий. Задайте **** для `other`параметра Type значение, а для параметра **осерлабел** — настраиваемую `Volunteer work`строку (например,). |
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -54,8 +54,6 @@ ms.locfileid: "32576460"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/typedemailaddress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

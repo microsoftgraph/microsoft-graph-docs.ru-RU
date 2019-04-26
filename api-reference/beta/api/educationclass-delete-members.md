@@ -4,14 +4,16 @@ description: Удаляет educationUser из educationClass.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ba9d490691b6d717fc1d088408c25a2724eb491a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac5ee332c58a070d9f25dfb3bde78177fb323b02
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457951"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324950"
 ---
 # <a name="remove-a-student"></a>Удаление учащегося
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаляет [educationUser](../resources/educationuser.md) из [educationClass](../resources/educationclass.md).
 
@@ -24,7 +26,7 @@ ms.locfileid: "32457951"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,11 +38,11 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
 
 ## <a name="example"></a>Пример
@@ -51,7 +53,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}
+DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ```
 
 ##### <a name="response"></a>Отклик
@@ -67,10 +69,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

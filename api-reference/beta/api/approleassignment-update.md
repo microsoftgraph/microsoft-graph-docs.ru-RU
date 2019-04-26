@@ -2,12 +2,12 @@
 title: Обновление объекта AppRoleAssignment
 description: Обновление свойств объекта аппролеассигнмент.
 localization_priority: Normal
-ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3aeea70142c81c7ce368d0c9e688c87677eb210
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458959"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322623"
 ---
 # <a name="update-approleassignment"></a>Обновление объекта AppRoleAssignment
 
@@ -35,13 +35,13 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|Время создания гранта.|
-|id|Guid|Идентификатор роли, назначенный субъекту.  Эта роль должна быть объявлена в целевом приложении-ресурсе **resourceId** в свойстве **appRoles**. Если в ресурсе не объявлены разрешения, необходимо указать идентификатор по умолчанию (нулевой GUID).                            **Примечание.** Значение null не допускается.            |
+|id|GUID|Идентификатор роли, назначенный субъекту.  Эта роль должна быть объявлена в целевом приложении-ресурсе **resourceId** в свойстве **appRoles**. Если в ресурсе не объявлены разрешения, необходимо указать идентификатор по умолчанию (нулевой GUID).                            **Примечание.** Значение null не допускается.            |
 |principalDisplayName|String|Отображаемое имя субъекта, которому был предоставлен доступ.|
 |principalId|GUID|Уникальный идентификатор (**ObjectID**) субъекта, которому предоставляется доступ.                            **Примечания**: обязательные.            |
 |principalType|String|Тип субъекта.  Это может "Пользователь", "Группа" или "Субъект-служба".|
@@ -76,7 +76,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -102,8 +102,6 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

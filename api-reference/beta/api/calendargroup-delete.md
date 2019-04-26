@@ -4,14 +4,16 @@ description: Удаление группы календарей, отлично�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: df9e35cc18cf16148cac5321a10bc9837ad0b4c2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b97118d5717f7a4cdb0047d9a29833663868e76f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461411"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322374"
 ---
 # <a name="delete-calendargroup"></a>Удаление объекта calendarGroup
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление группы календарей, отличной от стандартной.
 
@@ -40,11 +42,11 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -60,7 +62,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
+DELETE https://graph.microsoft.com/beta/me/calendarGroups/{id}
 ```
 
 ##### <a name="response"></a>Отклик
@@ -79,10 +81,13 @@ HTTP/1.1 204 No Content
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete calendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

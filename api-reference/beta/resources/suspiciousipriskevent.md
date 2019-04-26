@@ -2,12 +2,12 @@
 title: Тип ресурса СуспиЦиаусиприскевент
 description: Событие риска, обнаруженное при попытке входа учетной записи с подозрительным IP-адресом с помощью средства защиты удостоверений Azure Active Directory. Полную информацию о событиях риска можно найти в документации по защите удостоверений Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: e144e1f631941076b5cee7cee20d90062564012a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5151c5526dc4d7d63ce6b230705497f67db88dd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582063"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345726"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>Тип ресурса СуспиЦиаусиприскевент
 
@@ -27,15 +27,15 @@ ms.locfileid: "32582063"
 |:---------------|:--------|:----------|
 |Клоседдатетиме|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
-|id|string| Только для чтения|
-|ipAddress|string| IP-адрес входа|
-|location|string| Расположение, подключенное к IP-адресу входа|
+|id|строка| Только для чтения|
+|ipAddress|строка| IP-адрес входа|
+|location|строка| Расположение, подключенное к IP-адресу входа|
 |Рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|Рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|string| Тип риска|
-|userDisplayName|string| Имя пользователя под угрозой|
-|userId|string| Идентификатор пользователя, который подвергается риску|
+|Рискевенттипе|строка| Тип риска|
+|userDisplayName|строка| Имя пользователя под угрозой|
+|userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
 ## <a name="relationships"></a>Связи
@@ -52,6 +52,7 @@ ms.locfileid: "32582063"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.suspiciousIpRiskEvent"
 }-->
 
@@ -68,7 +69,8 @@ ms.locfileid: "32582063"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +84,6 @@ ms.locfileid: "32582063"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/suspiciousipriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

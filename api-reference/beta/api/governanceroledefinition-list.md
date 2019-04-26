@@ -2,12 +2,12 @@
 title: Список Говернанцероледефинитионс
 description: Получение коллекции Говернанцероледефинитионс для ресурса.
 localization_priority: Normal
-ms.openlocfilehash: 0e03a75446723743cc43eef63c42dd0f39c86126
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b79a8c27a6d2c26b5f827d87762f7edc9c0aaf3b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503067"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324240"
 ---
 # <a name="list-governanceroledefinitions"></a>Список Говернанцероледефинитионс
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "32503067"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Приложение | Привилежедакцесс. ReadWrite. Азурересаурцес |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
 
@@ -103,8 +103,6 @@ Content-Length: 21906
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceroledefinition-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,17 +1,19 @@
 ---
 title: Перечисление оповещений
 description: Получение списка объектов оповещений.
+localization_priority: Normal
 author: preetikr
-localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ab9ec3c42b0a46279e43660e241fb3cde52e83a9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459215"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322700"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
+
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов [оповещений](../resources/alert.md) .
 
@@ -23,7 +25,7 @@ ms.locfileid: "32459215"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL |
+|Приложение | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +48,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`Возвращает сводные результаты из каждого поставщика API безопасности.  
+- `$top`Возвращает сводные результаты из каждого поставщика API безопасности.
 
 Чтобы получить альтернативный набор свойств, используйте параметр запроса `$select` OData, чтобы указать требуемый набор свойств **оповещения** .  Например, чтобы вернуть свойства **assignedTo**, **Category**и **Severity** , добавьте в запрос следующее: `$select=assignedTo,category,severity`.
 
@@ -56,7 +58,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {Code}. Обязательно.|
+| Authorization  | Bearer {Code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -77,7 +79,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/security/alerts
+GET https://graph.microsoft.com/beta/security/alerts
 ```
 
 ### <a name="response"></a>Отклик
@@ -112,10 +114,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
-ms.openlocfilehash: 3fab75c6a63630f57dae8d0578691ba10622231d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b88f7514f7871e3c3850da91e4cd90b32f3a69c4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569958"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345414"
 ---
 # <a name="itemactionset-resource-type"></a>Тип ресурса ItemActionSet
 

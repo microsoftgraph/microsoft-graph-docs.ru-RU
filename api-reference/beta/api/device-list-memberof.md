@@ -4,14 +4,16 @@ description: Получение групп, непосредственным у�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8cd803fbb89f16488e29b0f6490fbe06eee8f6c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f8760216d4954840ac72a0e7bc6adaaebdfe8fa5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455266"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326092"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 
@@ -38,7 +40,7 @@ GET /devices/{id}/memberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -55,7 +57,7 @@ GET /devices/{id}/memberOf
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
+GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 
 ### <a name="response"></a>Отклик
@@ -88,10 +90,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

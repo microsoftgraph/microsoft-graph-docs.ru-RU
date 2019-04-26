@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal
-ms.openlocfilehash: 474d20e08d96294a30029e764d0b01f5b0c6bfcd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 999949f788c215a1e0645577a14b540586108926
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581619"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345420"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса ItemActivityTimeSet
 

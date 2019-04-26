@@ -4,12 +4,12 @@ description: Тип Токенмитингинфо.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 38a5aae17cf4364a1cfd58680c2e7b9437cf0e40
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523023"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345510"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса Токенмитингинфо
 
@@ -21,10 +21,10 @@ ms.locfileid: "32523023"
 
 | Свойство                     | Тип    | Описание                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| Алловконверсатионвисаусост | Boolean | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
+| Алловконверсатионвисаусост | Логический | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
 | токен                        | Строка  | Токен для присоединения и активации собрания.                                        |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -33,6 +33,7 @@ ms.locfileid: "32523023"
   "optionalProperties": [
 
   ],
+   "baseType": "microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
@@ -64,8 +65,6 @@ ms.locfileid: "32523023"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/tokenmeetinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,18 +1,18 @@
 ---
 title: Список acceptedSenders
-description: Получение пользователей или групп из списка acceptedSenders для данной группы.
+description: Получение списка пользователей или групп, которые находятся в списке принятых отправителей для этой группы.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 210d7ddde215cfbbe52ad28e4c07168cfb17ff28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24430e4e7dd6a6d591fb24c5f029e268d46c65ca
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502388"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321292"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
-Получение пользователей или групп из списка acceptedSenders для данной группы.
+Получение списка пользователей или групп, которые находятся в списке принятых отправителей для этой группы.
 
 Пользователи из списка разрешенных отправителей могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках разрешенных и запрещенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -38,7 +38,7 @@ GET /groups/{id}/acceptedSenders
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

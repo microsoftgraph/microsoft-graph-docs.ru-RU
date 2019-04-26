@@ -1,17 +1,19 @@
 ---
-title: Получение группы
+title: Вывод группы
 description: Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: bd5cac6b952f58c27a3f801db8679dfc48b16de3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18ed3c601e08bb8ae677af64eb05cecc89053a6a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457965"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324691"
 ---
 # <a name="get-group"></a>Получение группы
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.
 
@@ -24,7 +26,7 @@ ms.locfileid: "32457965"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,9 +38,9 @@ GET /education/classes/{id}/group
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -48,7 +50,7 @@ GET /education/classes/{id}/group
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
+GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -89,10 +91,13 @@ Content-length: xxx
 
 <!-- uuid: 0087D9B3-1418-4C87-91C9-A18C6D93706B
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,14 +4,16 @@ description: Удаление класса. Так как класс также 
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a7d5f376bd6d70229d8058084946fd474a692212
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 722e7986a32670a764f1dd11b2875194a1c5a257
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457944"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324973"
 ---
 # <a name="delete-educationclass"></a>Удаление educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление класса. Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
 
@@ -22,7 +24,7 @@ ms.locfileid: "32457944"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,11 +37,11 @@ DELETE /education/classes/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -50,7 +52,7 @@ DELETE /education/classes/{id}
   "name": "delete_educationclass"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
+DELETE https://graph.microsoft.com/beta/education/classes/11022
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -65,10 +67,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

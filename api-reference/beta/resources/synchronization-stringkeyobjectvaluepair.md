@@ -2,12 +2,12 @@
 title: Тип ресурса Стрингкэйобжектвалуепаир
 description: Представляет собой запись "ключ-значение", в которой ключ является строкой, а значение — произвольным объектом JSON. Это открытый тип OData, который предполагает наличие свойства с именем `value` , которое является допустимым объектом JSON.
 localization_priority: Normal
-ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66b4438b73f0000c172db1df385088528d221be4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523219"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324804"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>Тип ресурса Стрингкэйобжектвалуепаир
 
@@ -19,9 +19,9 @@ ms.locfileid: "32523219"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |ключа|String|Ключ.|
-|значение|Любые|Произвольный объект JSON.|
+|значение|Json|Произвольный объект JSON.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -35,7 +35,10 @@ ms.locfileid: "32523219"
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value": {
+    "@odata.type": "microsoft.graph.Json"
+  }
 }
 
 ```
@@ -49,8 +52,6 @@ ms.locfileid: "32523219"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-stringkeyobjectvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

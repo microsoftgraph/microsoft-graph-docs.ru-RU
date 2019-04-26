@@ -4,12 +4,12 @@ description: В функции рецензирования Access в Azure AD �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 39aa08f802182949ac796445a736ddea24ff18a6
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: 7be3d5ea922f8d2dca87dba005e62fd30fef3540
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299628"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323083"
 ---
 # <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
 
@@ -38,7 +38,7 @@ GET /accessReviews('{reviewId}')/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик

@@ -1,44 +1,48 @@
 ---
-title: Тип ресурса "Параметры"
-description: 'Параметры текущего пользователя. '
+title: Тип ресурса settings
+description: 'Текущие параметры пользователя. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3465370a8c22feed925517d2424501e490c17631
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554270"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345451"
 ---
-# <a name="settings-resource-type"></a>Тип ресурса "Параметры"
+# <a name="settings-resource-type"></a>Тип ресурса settings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры текущего пользователя. Чтобы узнать, как получить или обновить параметры пользователя, ознакомьтесь со [статьЕй получение параметров](../api/user-get-settings.md) и [Обновление параметров](../api/user-update-settings.md).
+Текущие параметры пользователя. Сведения о получении и обновлении параметров пользователя см. в статьях [Получение параметров](../api/user-get-settings.md) и [Обновление параметров](../api/user-update-settings.md).
 
 Этот ресурс поддерживает:
 
-- Проверка того, участвует ли пользователь и пользователь в Организации для обнаружения контента.
-- Отключение или Включение обнаружения контента для определенных пользователей. При этом также отключаются документы в Office delve.
+- Проверку участия пользователя и организации пользователя в поиске содержимого.
+- Включение и отключение поиска содержимого для конкретных пользователей. При этом также отключаются документы в Office Delve.
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение параметров пользователя](../api/user-get-settings.md) |[settings](../resources/user-settings.md)| Получение параметров пользователя и Организации. |
+|[Получение параметров пользователя](../api/user-get-settings.md) |[settings](../resources/user-settings.md)| Получение параметров пользователя и организации. |
 |[Обновление параметров пользователя](../api/user-update-settings.md) |[settings](../resources/user-settings.md)| Обновление текущих параметров пользователя. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Контрибутионтоконтентдисковеридисаблед|Логический|Если задано значение true, доступ представителя к API [трендов](insights-trending.md) пользователя отключен. Если задано значение true, документы в Office delve пользователя отключены. Если задано значение true, то релевантность содержимого, отображаемого в Office 365, например в разделе Рекомендуемые сайты в SharePoint Home и представление "Обнаружение" в OneDrive для бизнеса влияет. Пользователи могут управлять этим параметром в [Office delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|Контрибутионтоконтентдисковерясорганизатиондисаблед|Логический|Отражает [параметр уровня Организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) , контролирующий доступ делегата [](insights-trending.md) к API тенденций. Если задано значение true, Организация не имеет доступа к Office delve. Релевантность контента, отображаемого в Office 365, например в разделе Рекомендуемые сайты в SharePoint Home, а представление обнаружения в OneDrive для бизнеса влияет на всю организацию. Этот параметр доступен только для чтения и может быть изменен только администраторами в [центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ к API [trending](insights-trending.md) пользователя отключен. Если задано значение true, документы в Office Delve пользователя отключены. Установка значения true влияет на релевантность содержимого, отображаемого в Office 365, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Пользователи могут управлять этим параметром в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отображает [параметр на уровне организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff), управляющий делегированным доступом к API [trending](insights-trending.md). Если задано значение true, у организации отсутствует доступ к Office Delve. Это влияет для всей организации на релевантность содержимого, отображаемого в Office 365, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Этот параметр доступен только для чтения и может изменяться только администраторами в [Центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.userSettings"
+}-->
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,
@@ -46,11 +50,3 @@ ms.locfileid: "32554270"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/user-settings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

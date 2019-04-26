@@ -4,14 +4,16 @@ description: Получает список объектов groupLifecyclePolicy
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 56ba6f47e1ccd0784f76204d0101171406263397
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8dc26d78a0e840af5c1bea7683788ceb55fe514
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502444"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324251"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Перечисление groupLifecyclePolicies
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получает список объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md), к которым принадлежит группа.
 
@@ -38,9 +40,9 @@ GET /groups/{id}/groupLifecyclePolicies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.
 ## <a name="example"></a>Пример
 
@@ -51,11 +53,11 @@ GET /groups/{id}/groupLifecyclePolicies
   "name": "get_grouplifecyclepolicies"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
+GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 ```
 ##### <a name="response"></a>Отклик
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
+Content-length: 227
 
 {
   "value": [
@@ -81,10 +83,13 @@ Content-length: 222
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List groupLifecyclePolicies",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

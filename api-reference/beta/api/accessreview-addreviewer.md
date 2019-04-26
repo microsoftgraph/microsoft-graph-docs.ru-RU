@@ -4,12 +4,12 @@ description: 'В функции рецензирования Access в Azure AD 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1a526451330321c7fbbfd1d5287dd5ad892eee84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 831e8a32869c6b7bd2d83d736e45efbd1d21a5f3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456859"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323673"
 ---
 # <a name="add-accessreview-reviewer"></a>Добавление рецензента Акцессревиев
 
@@ -37,14 +37,14 @@ POST /accessReviews('{reviewId}')/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление идентификатора пользователя, который будет рецензентом, в формате JSON.
 
 В следующей таблице приведены свойства, которые можно указать при обновлении Акцессревиев.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `id`             |`String`                                                        | Идентификатор пользователя.  |
+| `id`        | `String`   | Идентификатор пользователя.|
 
 
 ## <a name="response"></a>Отклик
@@ -62,8 +62,8 @@ POST /accessReviews('{reviewId}')/reviewers
   "name": "add_accessReview_reviewer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/reviewers
-Content-type: application/json
+POST https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
+Content-Type: application/json
 
 {
     "id":"006111db-0810-4494-a6df-904d368bd81b"
@@ -78,7 +78,6 @@ Content-type: application/json
 } -->
 ```http
 HTTP/1.1 201 Created
-
 ```
 
 <!--
@@ -88,8 +87,6 @@ HTTP/1.1 201 Created
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

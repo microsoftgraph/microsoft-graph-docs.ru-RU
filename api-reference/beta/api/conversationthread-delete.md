@@ -4,14 +4,16 @@ description: Удаление объекта conversationThread.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: b4f2cde17e48a4a55f2059ba35aac892d77754ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68fe2d7c89545de095518271dee346a48b028a9e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455608"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326218"
 ---
 # <a name="delete-conversationthread"></a>Удаление объекта conversationThread
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление объекта conversationThread.
 ## <a name="permissions"></a>Разрешения
@@ -35,10 +37,10 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -50,7 +52,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}
   "name": "delete_conversationthread"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+DELETE https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -64,10 +66,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete conversationThread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

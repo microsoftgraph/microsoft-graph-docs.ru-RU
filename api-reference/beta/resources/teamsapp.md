@@ -4,27 +4,27 @@ description: Приложение в каталоге приложений Micro
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe60222ae6c5d8475722e18e69555df2d3892759
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2686bddad3c70e60c764647d5bef453fd7524462
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553955"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345775"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Приложение в каталоге приложений [Microsoft Teams](teams-api-overview.md) .
+Приложение в каталоге приложений [Microsoft Teams](teams-api-overview.md).
 
-Пользователи могут просматривать эти приложения в магазине Microsoft Teams, и эти приложения можно установить в Teams с помощью метода [Add App to Team](../api/teamsappinstallation-add.md) . [](team.md)
+Пользователи могут видеть эти приложения в магазине Microsoft Teams, а эти приложения можно устанавливать в [командах](team.md), используя метод [добавления приложения в команду](../api/teamsappinstallation-add.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Список опубликованных приложений](../api/teamsapp-list.md) | Коллекция [teamsApp](teamsapp.md) | Список опубликованных приложений из каталога приложений Microsoft Teams.|
-|[Публикация приложения](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Опубликуйте приложение в каталоге приложений организации.|
+|[Публикация приложения](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Публикация приложения в каталоге приложений организации.|
 |[Обновление опубликованного приложения](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Обновление опубликованного приложения в каталоге приложений организации.|
 |[Удаление опубликованного приложения](../api/teamsapp-delete.md) | Нет | Удаление опубликованного приложения из каталога приложений организации.|
 
@@ -32,24 +32,24 @@ ms.locfileid: "32553955"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Идентификатор приложения, созданного приложением каталога (отличается от идентификатора, предоставленного разработчиком, в [пакете приложения Microsoft Teams ZIP](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| externalId          | string   | Идентификатор каталога, предоставленный разработчиком приложения в [пакете ZIP приложения Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| displayName                | string   | Имя приложения каталога, предоставленное разработчиком приложения в [пакете ZIP приложения Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| distributionMethod  | teamsAppDistributionMethod     | Способ распространения для приложения. |
+| id                  | string   | Сгенерированный идентификатор приложения из каталога приложений (отличающийся от предоставленного разработчиком идентификатора в [ZIP-пакете приложения Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| externalId          | строка   | Идентификатор каталога, предоставленный разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| displayName                | string   | Название приложения каталога, предоставленное разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| distributionMethod  | teamsAppDistributionMethod     | Метод распространения приложения. |
 
-### <a name="teamsappdistributionmethod-values"></a>значения teamsAppDistributionMethod
+### <a name="teamsappdistributionmethod-values"></a>Значения teamsAppDistributionMethod
 
-|Member|Значение|Описание|
+|Элемент|Значение|Описание|
 |:---|:---|:---|
-|восстановлен|нуль| Приложение доступно всем клиентам через магазин приложений Microsoft Teams.|
-|organization;|1 |Приложение доступно только в этом клиенте.|
-|неопубликованные|2 |Приложение доступно только для пользователя или группы, на которую он установлен.|
+|store|0| Приложение доступно всем клиентам через магазин приложений Microsoft Teams.|
+|organization|1|Приложение доступно только в этом клиенте|
+|sideloaded|2|Приложение доступно только тому пользователю или той команде, где оно установлено.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение | Тип   | Описание |
 |:---------------|:--------|:----------|
-|Аппдефинитионс|Коллекция [теамсаппдефинитион](teamsappdefinition.md)| Сведения о каждой версии приложения. |
+|appDefinitions|Коллекция [teamsAppDefinition](teamsappdefinition.md)| Сведения о каждой версии приложения. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -71,7 +71,7 @@ ms.locfileid: "32553955"
 # <a name="see-also"></a>См. также
 
 - [teamsAppInstallation](teamsappinstallation.md)
-- [Теамсаппдефинитион](teamsappdefinition.md)
+- [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -83,9 +83,7 @@ ms.locfileid: "32553955"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsapp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

@@ -4,12 +4,12 @@ description: Удаление существующей категории.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3c68f4a9950437ddcebc0cd40237bef07c597648
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1345e58061a080c0996aa9a749aef656ea03a963
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457917"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324985"
 ---
 # <a name="delete-educationcategory"></a>Удаление Едукатионкатегори
 
@@ -24,7 +24,7 @@ ms.locfileid: "32457917"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |   Не поддерживается. |
-|Для приложений | Не поддерживается.  | 
+|Приложение | Не поддерживается.  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,11 +38,11 @@ DELETE /education/classes/<id>/assignmentCategories/<id>
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -79,8 +79,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationcategory-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

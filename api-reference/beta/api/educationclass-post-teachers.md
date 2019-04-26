@@ -4,14 +4,16 @@ description: Добавление преподавателя в класс.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 959b873dba3f88665b170f52da4e4063adb200ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 96f43e8939debad0efd3b2d074b7e19e1fcc6cdd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457730"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324786"
 ---
 # <a name="add-teacher"></a>Добавление преподавателя
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Добавление преподавателя в класс.
 
@@ -22,7 +24,7 @@ ms.locfileid: "32457730"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +37,7 @@ POST /education/classes/{id}/teachers/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса предоставьте описание объекта [educationUser](../resources/educationuser.md) в формате JSON.
 
 
@@ -50,12 +52,12 @@ POST /education/classes/{id}/teachers/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
+POST https://graph.microsoft.com/beta/education/classes/11017/teachers/$ref
 Content-type: application/json
 Content-length: 508
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/education/users/14011"
+  "@odata.id":"https://graph.microsoft.com/beta/education/users/14011"
 }
 ```
 
@@ -77,10 +79,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

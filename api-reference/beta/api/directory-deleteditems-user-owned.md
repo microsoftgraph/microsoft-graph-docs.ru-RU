@@ -4,12 +4,12 @@ description: 'Получает список недавно удаленных э
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f02d6dccd005696c130c6bb4a1f42c603943e5c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 81afb6e3da6cd9ffb795c4e867c23177a24a5ed2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455067"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325996"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Список удаленных элементов, принадлежащих пользователю**
 
@@ -17,7 +17,7 @@ ms.locfileid: "32455067"
 
 В настоящее время функции списка удаленных элементов поддерживаются только для ресурсов [группы](../resources/group.md) , принадлежащих пользователю.
 
-Это действие службы, которое означает, что она не поддерживает разбивку на страницы.  API возвращает до 1 000 удаленных объектов, принадлежащих пользователю, отсортированных по ИДЕНТИФИКАТОРу.  Если пользователь владеет 1 000 или более удаленными объектами, API не возвращает ничего.
+Это действие службы, которое означает, что она не поддерживает разбивку на страницы.  API возвращает до 1 000 удаленных объектов, принадлежащих пользователю, отсортированных по ИДЕНТИФИКАТОРу.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,25 +37,19 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| **Имя**      | **Описание**           |
+| Имя          | Описание               |
 | ------------- | ------------------------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-
-```json
-{
-  "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"group"
-}
-```
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса требуются следующие параметры:
 
 | Параметр    | Тип |Описание|
 |:---------------|:--------|:----------|
 |userId|String|Идентификатор владельца.|
-|type|Строка|Тип собственных объектов, которые требуется вернуть; `Group` в настоящее время является единственным поддерживаемым значением.|
+|type|String|Тип собственных объектов, которые требуется вернуть; `group` в настоящее время является единственным поддерживаемым значением.|
+
 
 ## <a name="response"></a>Отклик
 
@@ -70,12 +64,10 @@ POST /directory/deletedItems/getUserOwnedObjects
 ``` http
 POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
-```
 
-``` json
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"Group"
+  "type":"group"
 }
 ```
 
@@ -93,7 +85,7 @@ Content-length: 1249
           {
               "@odata.type": "#microsoft.graph.group",
               "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-              "deletedDateTime": "2018-04-01T12:34:56Z",
+              "deletedDateTime": "2018-04-01T12:39:16Z",
               "classification": null,
               "createdDateTime": "2017-03-22T12:39:16Z",
               "description": null,

@@ -4,12 +4,12 @@ description: 'Представляет клиента Azure Active Directory. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f2b7d83f8c78eb11ad4f22d456d9791982aab5c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568558"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345592"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -51,14 +51,13 @@ ms.locfileid: "32568558"
 |postalCode|String| Почтовый индекс в адресе организации |
 |preferredLanguage|String| Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1. Пример: ru. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Профиль конфиденциальности организации.            |
-|provisionedPlans|Коллекция [ProvisionedPlan](provisionedplan.md)| Значение null не допускается.            |
-|Провисионинжеррорс|Коллекция ProvisioningError| Значение null не допускается.            |
+|provisionedPlans|Коллекция [коллекция provisionedplan](provisionedplan.md)| Значение null не допускается.            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||
 |state|String| Название республики, области или края в адресе организации |
 |street|String| Название улицы в адресе организации |
 |technicalNotificationMails|Коллекция String| Значение null не допускается. |
-|verifiedDomains|Коллекция [VerifiedDomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается.            |
+|verifiedDomains|Коллекция [коллекция verifieddomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается.            |
 
 ## <a name="relationships"></a>Отношения
 
@@ -66,7 +65,7 @@ ms.locfileid: "32568558"
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса Организации. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
@@ -104,7 +103,9 @@ ms.locfileid: "32568558"
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
+  "dirSyncEnabled": true
 }
 ```
 
@@ -123,8 +124,6 @@ ms.locfileid: "32568558"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

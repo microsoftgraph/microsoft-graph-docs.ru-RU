@@ -4,12 +4,12 @@ description: Получение списка объектов конечной �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d8bb01d00fbac03a2b52d95179ec22ca769f9df2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5e65bdfc2daa39424c3e6f0c90a3717f91d4e0b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502398"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324330"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -40,7 +40,7 @@ GET /groups/{id}/endpoints
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | Приложение/JSON |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -57,11 +57,11 @@ GET /groups/{id}/endpoints
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```
 ##### <a name="response"></a>Отклик
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Endpoint",
+  "@odata.type": "microsoft.graph.endpoint",
   "isCollection": true
 } -->
 ```http
@@ -92,8 +92,6 @@ Content-length: 261
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-list-endpoints.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -3,12 +3,12 @@ title: 'driveItem: Preview'
 description: Это действие позволяет получать кратковременно недопустимые URL-адреса для встраиваемых элементов, чтобы отобразить временный предварительный просмотр.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454372"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325162"
 ---
 # <a name="driveitem-preview"></a>driveItem: Preview
 
@@ -29,7 +29,7 @@ ms.locfileid: "32454372"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)
 |:---------------------------------------|:-------------------------------------------
 | Делегированные (рабочая или учебная учетная запись)     | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL, sites. ReadWrite. ALL.
-| Делегированное (личная учетная запись Майкрософт) | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL
+| Делегированные (личная учетная запись Майкрософт) | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL
 | Для приложений                            | Не поддерживается.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса определяются свойства внедряемого URL-адреса, запрашиваемого приложением.
 Запрос должен быть объектом JSON с указанными ниже свойствами.
@@ -55,8 +55,8 @@ POST /shares/{shareId}/driveItem/preview
 | Просмотр      | string        | Необязательно. Предварительная версия приложения для использования. `onedrive` или `office`. Если значение равно null, подходящее средство просмотра будет выбрано автоматически.
 | не для Chrome  | boolean       | Необязательный параметр. Если `true` выбрано значение (по умолчанию), то Внедренное представление не будет содержать элементы управления.
 | Алловедит   | boolean       | Необязательный параметр. Если `true`файл можно редактировать из встроенного пользовательского интерфейса.
-| page        | строка или число | Необязательный атрибут. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
-| zoom        | number        | Необязательный атрибут. Масштаб (при необходимости) для запуска.
+| page        | строка или число | Необязательно. Номер страницы для начала документа, если это необходимо. Указывается как строка для будущих случаев использования для типов файлов, таких как ZIP.
+| zoom        | number        | Необязательно. Масштаб (при необходимости) для запуска.
 
 ## <a name="response"></a>Отклик
 
@@ -109,11 +109,3 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>Страница/масштаб
 
 Параметры `page` и `zoom` могут быть недоступны для всех предварительных версий приложений, но будут применены, если это приложение поддерживает приложение предварительного просмотра.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

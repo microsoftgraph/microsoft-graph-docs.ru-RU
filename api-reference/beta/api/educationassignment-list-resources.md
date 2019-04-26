@@ -4,12 +4,12 @@ description: Получение всех ресурсов, связанных с
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5556210604ce6b0c273a0e4d89e1a792d2639b12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2ba4ba24168e6186fd61d58320763f8361d569f0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464791"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324752"
 ---
 # <a name="list-educationassignmentresources"></a>Список Едукатионассигнментресаурцес
 
@@ -39,7 +39,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
@@ -138,8 +138,6 @@ Content-length: 1011
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-list-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

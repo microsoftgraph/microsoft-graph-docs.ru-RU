@@ -4,12 +4,12 @@ description: Вычисляемое представление, которое �
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 512dcdfb8a94a2a90c47c4005298537d1d83f137
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49f777e77663a4c055e186860f791459db57ca9c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32500827"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323701"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -103,11 +103,3 @@ Content-length: 801
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending/{id}/resource
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/insights-list-trending.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

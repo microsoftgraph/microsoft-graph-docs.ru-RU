@@ -4,14 +4,16 @@ description: Обновление свойств объекта calendarGroup.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9f697996c44468039a73900ec0eb98f28d4a9c49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6456b0d4df9f7806986284a15ac2f91f78238641
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461369"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324703"
 ---
 # <a name="update-calendargroup"></a>Обновление объекта calendarGroup.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств объекта calendarGroup.
 
@@ -43,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -67,7 +69,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
+PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
 Content-length: 30
 
@@ -102,10 +104,13 @@ Content-length: 110
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update calendargroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,15 +1,15 @@
 ---
 title: 'group: checkMemberGroups'
-description: Проверьте наличие членства в указанный список групп. Возвращает из списка из которых эти группы
+description: Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 8abac44bf6c97e0ebbd8235ec246f19f0c73e920
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524185"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -25,9 +25,9 @@ ms.locfileid: "27932121"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложений                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
+| Приложение                            | _Group.Read.All_, Directory.Read.All Directory.ReadWrite.All                               |
 
-> **Примечание:** Этот интерфейс API в настоящее время требует `Directory.Read.All` разрешений или выше. С помощью `Group.Read.All` разрешение возвращает ошибку. Мы знаем об этой проблеме.
+> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешения `Group.Read.All` возникает ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,15 +41,15 @@ POST /groups/{id}/checkMemberGroups
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | строка | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип              | Описание           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | Коллекция String | Массив идентификаторов групп |
+| groupIds  | Коллекция строк | Массив идентификаторов групп |
 
 ## <a name="response"></a>Отклик
 
@@ -80,9 +80,9 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

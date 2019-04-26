@@ -2,29 +2,29 @@
 title: Тип ресурса Парсикспрессионреспонсе
 description: 'Представляет отклик от действия [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) .'
 localization_priority: Normal
-ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14fcce13d2e78b99a8712c51768e6a94928fa07f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523436"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345560"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса Парсикспрессионреспонсе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет отклик от действия [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) .
+Представляет отклик от действия [парсикспрессион](../api/synchronization-synchronizationschema-parseexpression.md) .
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|error|OData. Error|Сведения об ошибке, если вычисление выражений привело к ошибке.|
-|Евалуатионресулт|Коллекция строк|Коллекция значений, полученных при оценке выражения.|
-|Евалуатионсукцеедед|Boolean|`true`, если оценка выполнена успешно.|
+|error|Публицеррор|Сведения об ошибке, если вычисление выражений привело к ошибке.|
+|Евалуатионресулт|Коллекция String|Коллекция значений, полученных при оценке выражения.|
+|Евалуатионсукцеедед|Логический|`true`, если оценка выполнена успешно.|
 |Парседекспрессион|[Аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Объект [аттрибутемаппингсаурце](synchronization-attributemappingsource.md) , представляющий проанализированное выражение.|
-|Парсингсукцеедед|Boolean|`true`, если выражение было успешно проанализировано.|
+|Парсингсукцеедед|Логический|`true`, если выражение было успешно проанализировано.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -56,8 +56,6 @@ ms.locfileid: "32523436"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-parseexpressionresponse.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 'TeamsTab — это вкладка, которая закрепл�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 207b9d1d4d27199f07ae22bd47587411f917afae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6666fbcd69ac46e778ef46380c426c4e94a129fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553647"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345706"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
 
@@ -35,8 +35,8 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |  id              |   строка                  |  Идентификатор, который уникальным образом определяет определенный экземпляр вкладки канала. только чтение.     |
 |  displayName            |   string                  |  Имя вкладки.     |
 |  name            |   строка                  |  Устаревшие Имя вкладки.     |
-|  teamsAppId           |   string             |  Идентификатор определения приложения вкладки. Это значение нельзя изменить после создания вкладки.     |
-|  Сортордериндекс  |   string                  |  Индекс заказа, используемого для сортировки вкладок.     |
+|  teamsAppId           |   строка             |  Идентификатор определения приложения вкладки. Это значение нельзя изменить после создания вкладки.     |
+|  Сортордериндекс  |   строка                  |  Индекс заказа, используемого для сортировки вкладок.     |
 |  webUrl          |   string                  |  URL-адрес глубокой ссылки для экземпляра вкладки. Только для чтения.     |
 |  конфигурацион        |   [Теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
 
@@ -58,13 +58,14 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 }-->
 
 ```json
-{  
+{
   "id": "string",
   "displayName": "string",
   "teamsAppId": "string",
   "sortOrderIndex": "string",
   "webUrl": "string",
-  "configuration" : "teamsTabConfiguration"
+  "configuration": "teamsTabConfiguration",
+  "name": "string"
 }
 
 ```
@@ -78,9 +79,7 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamstab.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

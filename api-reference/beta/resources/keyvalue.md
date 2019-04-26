@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса Ключзначение
-description: Ниже показано представление ресурса в формате JSON.
+description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 4223df85f9f120ba6477480f943d65a2511b6f2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b5a1c2e9baa32db91e82f6821a598e74c5b5fbb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581097"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345316"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -22,7 +22,7 @@ ms.locfileid: "32581097"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.keyvalue"
+  "@odata.type": "microsoft.graph.keyValue"
 }-->
 
 ```json
@@ -47,8 +47,6 @@ ms.locfileid: "32581097"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/keyvalue.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

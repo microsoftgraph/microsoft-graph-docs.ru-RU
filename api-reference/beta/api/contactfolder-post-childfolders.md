@@ -4,14 +4,16 @@ description: 'Создание дочернего объекта contactFolder �
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 606e6b9dfc906e8b6975c64fa36beede5a7c56b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7991b0168963044488621ca4bfb689bbb15455ac
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455653"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327228"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание дочернего объекта contactFolder указанной папки. 
 
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
   "name": "create_contactfolder_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
+POST https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 Content-type: application/json
 Content-length: 84
 
@@ -82,10 +84,13 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create ContactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

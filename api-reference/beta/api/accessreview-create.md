@@ -4,12 +4,12 @@ description: В средстве проверки доступа Azure AD соз
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 16ce9861e77db27e216913bb3e7cb5bfbbf202b0
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: 8eafaa1ee03e810a8e19c0c0c08b46e111c6420c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299593"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323724"
 ---
 # <a name="create-accessreview"></a>Создание Акцессревиев
 
@@ -43,7 +43,7 @@ POST /accessReviews
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Акцессревиев](../resources/accessreview.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Акцессревиев.

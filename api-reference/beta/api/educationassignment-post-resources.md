@@ -4,12 +4,12 @@ description: OData. Type, указывающая тип создаваемого
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 34e8740336acbef056ec0b3703547de51fdc42ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 408ff1b44fda0d4e9b6f16c2234ed06a4ca24852
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464812"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324723"
 ---
 # <a name="create-educationassignmentresource"></a>Создание Едукатионассигнментресаурце
 
@@ -37,7 +37,7 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в формате JSON.
 
 
@@ -103,8 +103,6 @@ Content-length: 229
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

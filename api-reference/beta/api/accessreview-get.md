@@ -4,12 +4,12 @@ description: 'В функции рецензирования Access Azure AD и�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0bb757e3f92ced3d6f9615cb92a8e9b622bdec50
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: 263749521e199079dc8b4d9b352eb9c2cb5adf35
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299579"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323670"
 ---
 # <a name="get-accessreview"></a>Получение Акцессревиев
 
@@ -42,7 +42,7 @@ GET /accessReviews('{reviewId}')
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик

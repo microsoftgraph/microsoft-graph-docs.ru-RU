@@ -2,12 +2,12 @@
 title: Тип ресурса Локатедрискевент
 description: Событие риска, обнаруженное защитой удостоверений Azure Active Directory на основе данных о расположении. К найденным относятся следующие типы событий риска.
 localization_priority: Normal
-ms.openlocfilehash: 20fe76099c511483144b42e33fc260910debb5ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c7503c08700a0d7c2d2ad67e8868901bdb008e2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578156"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345377"
 ---
 # <a name="locatedriskevent-resource-type"></a>Тип ресурса Локатедрискевент
 
@@ -32,15 +32,15 @@ ms.locfileid: "32578156"
 |:---------------|:--------|:----------|
 |Клоседдатетиме|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
-|id|string| Только для чтения|
-|ipAddress|string| IP-адрес входа|
-|location|string| Расположение, подключенное к IP-адресу входа|
+|id|строка| Только для чтения|
+|ipAddress|строка| IP-адрес входа|
+|location|строка| Расположение, подключенное к IP-адресу входа|
 |Рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|Рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|string| Тип риска|
-|userDisplayName|string| Имя пользователя под угрозой|
-|userId|string| Идентификатор пользователя, который подвергается риску|
+|Рискевенттипе|строка| Тип риска|
+|userDisplayName|строка| Имя пользователя под угрозой|
+|userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
 ## <a name="relationships"></a>Связи
@@ -57,6 +57,9 @@ ms.locfileid: "32578156"
   "optionalProperties": [
 
   ],
+   "abstract": true,
+   "keyProperty": "id",
+   "baseType":"microsoft.graph.identityRiskEvent",
   "@odata.type": "microsoft.graph.locatedRiskEvent"
 }-->
 
@@ -73,7 +76,8 @@ ms.locfileid: "32578156"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -87,8 +91,6 @@ ms.locfileid: "32578156"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/locatedriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

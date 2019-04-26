@@ -4,12 +4,12 @@ description: 'Создайте запрос для нового профиля �
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: efc9b76405b57d0e47d645d0e7b00dc9425ba71b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 79e3e19f4361f0fe1fd7cb9090c685e60a46f259
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457405"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324399"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание Едукатионсинчронизатионпрофиле
 
@@ -22,7 +22,7 @@ ms.locfileid: "32457405"
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -36,7 +36,7 @@ POST /synchronizationProfiles
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-| Content-Type | string | Приложение/JSON. Обязательный. |
+| Content-Type | string | Приложение/JSON. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
@@ -187,11 +187,3 @@ Content-type: application/json
     ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsynchronizationprofile-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

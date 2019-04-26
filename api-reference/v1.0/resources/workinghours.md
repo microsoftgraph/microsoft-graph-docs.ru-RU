@@ -2,12 +2,12 @@
 title: Тип ресурса workingHours
 description: Представляет дни недели и часы работы пользователя в определенном часовом поясе.
 localization_priority: Normal
-ms.openlocfilehash: b221b6f4f1fe8dee7fc7a043993f0d0cd3ea5b7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0f2cf09f1e0f2270b5d1ae08ce9e5757c5900da
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463819"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345395"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 
@@ -28,7 +28,7 @@ ms.locfileid: "32463819"
 | endTime | Edm.TimeOfDay | Время дня, в которое пользователь заканчивает работать. |
 | timeZone | [timeZoneBase](timezonebase.md) | Часовой пояс, к которому относится рабочее время. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -43,8 +43,8 @@ ms.locfileid: "32463819"
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "startTime": "String (timeofday)",
+  "endTime": "String (timeofday)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

@@ -4,14 +4,16 @@ description: 'Получение публикаций из указанной ц
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6ab9658753baceed8b983eb493957503179f5865
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ebea2708c4d76c4d8f545da380a2d11ccd89b94
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455270"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326123"
 ---
 # <a name="list-posts"></a>Список публикаций
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение записей из указанного потока. Вы можете задать родительскую беседу вместе с цепочкой или только цепочку, не ссылаясь на родительскую беседу.
 
@@ -22,7 +24,7 @@ ms.locfileid: "32455270"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group. ReadWrite. ALL, Group. Read. ALL |
+|Приложение | Group. ReadWrite. ALL, Group. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +40,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,7 +54,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
   "name": "get_posts"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
+GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -65,41 +67,53 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 523
 
 {
-  "value": [
-    {
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "receivedDateTime": "datetime-value",
-      "hasAttachments": true,
-      "from": {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('0d75b8dc-c42d-44dd-890a-751a99c0589f')/threads('AAQkAD8EJUmcWwTJi06Cew%3D%3D')/posts",
+    "value":[
+        {
+            "@odata.etag":"W/\"CQAAABYAAAC/3QURwysWS6IJYYw5exv4AAAAAAlK\"",
+            "id":"AQMkADgAAAIJbQAAAA==",
+            "createdDateTime":"2018-01-11T17:36:17Z",
+            "lastModifiedDateTime":"2018-01-11T17:36:17Z",
+            "importance": "normal",
+            "changeKey":"CQAAABYAAAC/3QURwysWS6IJYYw5exv4AAAAAAlK",
+            "categories":[
+
+            ],
+            "receivedDateTime":"2018-01-11T17:36:17Z",
+            "hasAttachments":false,
+            "body":{
+                "contentType":"html",
+                "content":"<html><body></body></html>"
+            },
+            "from":{
+                "emailAddress":{
+                    "name":"Marketing",
+                    "address":"Marketing@M365B489948.onmicrosoft.com"
+                }
+            },
+            "sender":{
+                "emailAddress":{
+                    "name":"Marketing",
+                    "address":"Marketing@M365B489948.onmicrosoft.com"
+                }
+            }
         }
-      },
-      "sender": {
-        "emailAddress": {
-          "name": "name-value",
-          "address": "address-value"
-        }
-      },
-      "conversationThreadId": "conversationThreadId-value"
-    }
-  ]
+    ]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List posts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

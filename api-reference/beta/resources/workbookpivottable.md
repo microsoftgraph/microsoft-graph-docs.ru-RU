@@ -1,17 +1,17 @@
 ---
-title: Тип ресурсов pivotTable
+title: Тип ресурса workbookPivotTable
 description: Представляет сводную таблицу Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99ad62474ef0c8e56ec5a699edac742ee28ae446
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453879"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345791"
 ---
-# <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
+# <a name="workbookpivottable-resource-type"></a>Тип ресурса workbookPivotTable
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,13 +34,14 @@ ms.locfileid: "32453879"
 ## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
+|worksheet|[Воркбукворкшит](workbookworksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -54,11 +55,3 @@ ms.locfileid: "32453879"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/workbookpivottable.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

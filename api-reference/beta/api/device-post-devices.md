@@ -4,12 +4,12 @@ description: Создайте новое устройство.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60a3e3bf2e44d975e1c3dc8383e0320a9906eda7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455137"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326072"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -24,7 +24,7 @@ ms.locfileid: "32455137"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ POST /devices
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
 
 Так как ресурс **Device** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавить настраиваемые свойства с собственными данными к экземпляру устройства при его создании.
@@ -64,7 +64,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "base64Y3YxN2E1MWFlYw=="
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
@@ -75,7 +75,7 @@ Content-length: 364
 ```
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "base64Y3YxN2E1MWFlYw=="
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
@@ -118,8 +118,6 @@ Content-length: 364
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/device-post-devices.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

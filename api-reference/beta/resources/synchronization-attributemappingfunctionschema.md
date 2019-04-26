@@ -2,12 +2,12 @@
 title: Тип ресурса Аттрибутемаппингфунктионсчема
 description: Описывает функцию, которая может использоваться в сопоставлении атрибутов для преобразования значений во время синхронизации.
 localization_priority: Normal
-ms.openlocfilehash: e2c0139f7c797c3f519cc638561b09f611018b28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca66baf7fbc160cd4c57cba0f865ae07de9d5932
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582104"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345643"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса Аттрибутемаппингфунктионсчема
 
@@ -19,7 +19,7 @@ ms.locfileid: "32582104"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)|Список поддерживаемых функций сопоставления атрибутов.|
+|[Перечисление](../api/synchronization-synchronizationschema-functions.md) | Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)|Список поддерживаемых функций сопоставления атрибутов.|
 
 ## <a name="properties"></a>Свойства
 
@@ -28,7 +28,7 @@ ms.locfileid: "32582104"
 |name                        |String                    |Имя оператора. |
 |parameters                  |Коллекция [аттрибутемаппингпараметерсчема](../resources/synchronization-attributemappingparameterschema.md)  |Коллекция параметров функции.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

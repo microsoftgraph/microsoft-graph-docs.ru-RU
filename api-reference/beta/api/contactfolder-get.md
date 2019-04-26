@@ -4,14 +4,16 @@ description: Получение папки контактов с помощью 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5ab29eb96f900404f035442605047bd2df3e37e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 168981fa10da58bdbed8e2d38016dc54c8d6a02d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455666"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327256"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение папки контактов с помощью ее идентификатора.
 
@@ -43,10 +45,10 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [contactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -57,7 +59,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
   "name": "get_contactfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
+GET https://graph.microsoft.com/beta/me/contactFolders/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -74,16 +76,20 @@ Content-length: 104
 {
   "displayName": "Finance",
   "id": "AAMkAGI2TKI5AAA=",
-  "parentFolderId": "AAMkAGI2AAEOAAA="
+  "parentFolderId": "AAMkAGI2AAEOAAA=",
+  "wellKnownName": null
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get contactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

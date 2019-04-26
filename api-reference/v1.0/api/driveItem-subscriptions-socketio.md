@@ -4,12 +4,12 @@ ms.author: dspektor
 title: Получение конечной точки WebSocket
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4d4577ea69c65d6ce003af96b0d96b55fe178fb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2172015e446b57706caeecf73b8da2b6b486f7d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562757"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345836"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 
@@ -49,7 +49,7 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 GET /me/drive/root/subscriptions/socketIo
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Subscription](../resources/subscription.md) в тексте отклика.
 

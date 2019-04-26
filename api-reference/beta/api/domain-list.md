@@ -4,14 +4,16 @@ description: Получение списка объектов Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7cbc4237d7fad61366102a25b65ffd4718c61d62
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c979239f8de181140b59e4c4e93447fc9e1fe2a7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454878"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325912"
 ---
 # <a name="list-domains"></a>Список доменов
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов Domain.
 
@@ -22,7 +24,7 @@ ms.locfileid: "32454878"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
+|Приложение | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +40,7 @@ GET /domains
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept         | приложение/JSON; |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -52,10 +54,10 @@ GET /domains
   "name": "get_domains"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains
+GET https://graph.microsoft.com/beta/domains
 ```
 ##### <a name="response"></a>Отклик
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,7 +78,7 @@ Content-length: 245
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
-      "id": "contoso.com",
+      "name": "contoso.com",
       "supportedServices": [
         "Email",
         "OfficeCommunicationsOnline"
@@ -88,10 +90,13 @@ Content-length: 245
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List domains",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

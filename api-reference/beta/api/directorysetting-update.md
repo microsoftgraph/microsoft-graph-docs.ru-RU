@@ -4,12 +4,12 @@ description: Обновление свойств определенного об
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 06dbb3be6ae855a43cf83e05fd2b099e1071dceb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454801"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325822"
 ---
 # <a name="update-a-directory-setting"></a>Обновление параметра каталога
 
@@ -26,7 +26,7 @@ ms.locfileid: "32454801"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ PATCH /groups/{id}/settings/{id}
 | Авторизация  | Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. 
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. 
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -91,8 +91,6 @@ HTTP/1.1 204 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directorysetting-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

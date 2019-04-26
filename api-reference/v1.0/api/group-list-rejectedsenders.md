@@ -1,18 +1,18 @@
 ---
 title: Список rejectedSenders
-description: 'Получение пользователей или групп из списка rejectedSenders для данной группы. '
+description: 'Получение списка пользователей или групп, которые находятся в списке отклоненных отправителей для этой группы. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 14bf57133ad953d40c3cf39cca4cdf8c4f9f19f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0233ec78cf883bfb88aad0ffbdd80af7db439305
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550023"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345654"
 ---
 # <a name="list-rejectedsenders"></a>Список rejectedSenders
-Получение пользователей или групп из списка rejectedSenders для данной группы. 
+Получение списка пользователей или групп, которые находятся в списке отклоненных отправителей для этой группы. 
 
 Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
 
@@ -38,7 +38,7 @@ GET /groups/{id}/rejectedSenders
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

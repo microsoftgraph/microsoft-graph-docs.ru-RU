@@ -3,12 +3,12 @@ title: Получение конечной точки WebSocket
 description: Использование этих API в производственных приложениях не поддерживается.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 736684812d2cbc10affed82a3f946d75731f6768
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1f4d793655c2f51454bbd58303d1f6141b46cc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454570"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325398"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 
@@ -28,7 +28,7 @@ Socket.io — это популярная библиотека уведомле�
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)
 |:---------------------------------------|:-------------------------------------------
 | Делегированные (рабочая или учебная учетная запись)     | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL, sites. ReadWrite. ALL.
-| Делегированное (личная учетная запись Майкрософт) | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL
+| Делегированные (личная учетная запись Майкрософт) | Files. Read, Files. ReadWrite, Files. ReadWrite. ALL
 | Для приложений                            | Не поддерживается.
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -92,11 +92,3 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
