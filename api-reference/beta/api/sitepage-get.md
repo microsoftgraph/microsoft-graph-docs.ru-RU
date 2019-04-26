@@ -5,43 +5,42 @@ ms.date: 03/15/2018
 title: Получение страницы на сайте
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a97ee8f52a6276664b3349c01c545c711707ceea
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545296"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330410"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9a3db-102">Получение страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="9a3db-102">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="98b73-102">Получение страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="98b73-102">Get a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9a3db-103">Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="9a3db-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="98b73-103">Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="98b73-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[сайта]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="9a3db-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9a3db-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="98b73-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="98b73-107">Permissions</span></span>
 
-<span data-ttu-id="9a3db-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9a3db-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98b73-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="98b73-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9a3db-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9a3db-110">Permission type</span></span>      | <span data-ttu-id="9a3db-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9a3db-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="98b73-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="98b73-110">Permission type</span></span>      | <span data-ttu-id="98b73-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="98b73-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9a3db-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9a3db-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9a3db-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9a3db-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9a3db-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9a3db-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a3db-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9a3db-115">Not supported.</span></span>    |
-|<span data-ttu-id="9a3db-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9a3db-116">Application</span></span> | <span data-ttu-id="9a3db-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9a3db-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="98b73-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="98b73-112">Delegated (work or school account)</span></span> | <span data-ttu-id="98b73-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98b73-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="98b73-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="98b73-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98b73-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="98b73-115">Not supported.</span></span>    |
+|<span data-ttu-id="98b73-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="98b73-116">Application</span></span> | <span data-ttu-id="98b73-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98b73-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9a3db-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9a3db-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98b73-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="98b73-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="9a3db-119">Пример</span><span class="sxs-lookup"><span data-stu-id="9a3db-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98b73-119">Пример</span><span class="sxs-lookup"><span data-stu-id="98b73-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="9a3db-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="9a3db-120">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="98b73-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="98b73-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -49,7 +48,7 @@ GET /sites/{site-id}/pages/{page-id}
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="9a3db-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="9a3db-121">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="98b73-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="98b73-121">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -58,7 +57,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": 2,
+    "id": "2",
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",
@@ -141,8 +140,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
-  "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

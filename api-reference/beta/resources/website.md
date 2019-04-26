@@ -2,30 +2,30 @@
 title: Тип ресурса веб-сайта
 description: Представляет веб-сайт.
 localization_priority: Normal
-ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b44fcacf77f3b2afb5cdc9dfea2340d0a1fc1cd5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454046"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339658"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="cb011-103">Тип ресурса веб-сайта</span><span class="sxs-lookup"><span data-stu-id="cb011-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="5ac54-103">Тип ресурса веб-сайта</span><span class="sxs-lookup"><span data-stu-id="5ac54-103">website resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb011-104">Представляет веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="cb011-104">Represents a web site.</span></span>
+<span data-ttu-id="5ac54-104">Представляет веб-сайт.</span><span class="sxs-lookup"><span data-stu-id="5ac54-104">Represents a web site.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="cb011-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cb011-105">Properties</span></span>
-| <span data-ttu-id="cb011-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cb011-106">Property</span></span>     | <span data-ttu-id="cb011-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cb011-107">Type</span></span>   |<span data-ttu-id="cb011-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cb011-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5ac54-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5ac54-105">Properties</span></span>
+| <span data-ttu-id="5ac54-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5ac54-106">Property</span></span>     | <span data-ttu-id="5ac54-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5ac54-107">Type</span></span>   |<span data-ttu-id="5ac54-108">Описание</span><span class="sxs-lookup"><span data-stu-id="5ac54-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cb011-109">type</span><span class="sxs-lookup"><span data-stu-id="cb011-109">type</span></span>|<span data-ttu-id="cb011-110">Строка</span><span class="sxs-lookup"><span data-stu-id="cb011-110">String</span></span>| <span data-ttu-id="cb011-111">Возможные значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="cb011-111">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="cb011-112">address</span><span class="sxs-lookup"><span data-stu-id="cb011-112">address</span></span>|<span data-ttu-id="cb011-113">string</span><span class="sxs-lookup"><span data-stu-id="cb011-113">string</span></span>|<span data-ttu-id="cb011-114">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="cb011-114">The URL of the website.</span></span>|
-|<span data-ttu-id="cb011-115">displayName</span><span class="sxs-lookup"><span data-stu-id="cb011-115">displayName</span></span>|<span data-ttu-id="cb011-116">string</span><span class="sxs-lookup"><span data-stu-id="cb011-116">string</span></span>|<span data-ttu-id="cb011-117">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="cb011-117">The display name of the web site.</span></span>|
+|<span data-ttu-id="5ac54-109">type</span><span class="sxs-lookup"><span data-stu-id="5ac54-109">type</span></span>|<span data-ttu-id="5ac54-110">String</span><span class="sxs-lookup"><span data-stu-id="5ac54-110">String</span></span>| <span data-ttu-id="5ac54-111">Возможные значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="5ac54-111">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="5ac54-112">address</span><span class="sxs-lookup"><span data-stu-id="5ac54-112">address</span></span>|<span data-ttu-id="5ac54-113">string</span><span class="sxs-lookup"><span data-stu-id="5ac54-113">string</span></span>|<span data-ttu-id="5ac54-114">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="5ac54-114">The URL of the website.</span></span>|
+|<span data-ttu-id="5ac54-115">displayName</span><span class="sxs-lookup"><span data-stu-id="5ac54-115">displayName</span></span>|<span data-ttu-id="5ac54-116">string</span><span class="sxs-lookup"><span data-stu-id="5ac54-116">string</span></span>|<span data-ttu-id="5ac54-117">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="5ac54-117">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cb011-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cb011-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ac54-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5ac54-118">JSON representation</span></span>
 
-<span data-ttu-id="cb011-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cb011-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5ac54-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5ac54-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,8 +53,6 @@ ms.locfileid: "32454046"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/website.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,37 +4,37 @@ description: Категория, которая может быть примен
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 928f37b4d29a4443c947bd92bf4a71f9f8a05f59
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf5ee33ec7d217c0bc4c6e4d35666d6e9f34dadb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507320"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340604"
 ---
-# <a name="educationcategory-resource-type"></a><span data-ttu-id="a790b-103">Тип ресурса Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="a790b-103">educationCategory resource type</span></span>
+# <a name="educationcategory-resource-type"></a><span data-ttu-id="589a2-103">Тип ресурса Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="589a2-103">educationCategory resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a790b-104">Категория, которая может быть применена к назначениям.</span><span class="sxs-lookup"><span data-stu-id="a790b-104">A category that can be applied to assignments.</span></span>
+<span data-ttu-id="589a2-104">Категория, которая может быть применена к назначениям.</span><span class="sxs-lookup"><span data-stu-id="589a2-104">A category that can be applied to assignments.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="a790b-105">Методы</span><span class="sxs-lookup"><span data-stu-id="a790b-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="589a2-105">Методы</span><span class="sxs-lookup"><span data-stu-id="589a2-105">Methods</span></span>
 
-| <span data-ttu-id="a790b-106">Метод</span><span class="sxs-lookup"><span data-stu-id="a790b-106">Method</span></span>           | <span data-ttu-id="a790b-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="a790b-107">Return Type</span></span>    |<span data-ttu-id="a790b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="a790b-108">Description</span></span>|
+| <span data-ttu-id="589a2-106">Метод</span><span class="sxs-lookup"><span data-stu-id="589a2-106">Method</span></span>           | <span data-ttu-id="589a2-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="589a2-107">Return Type</span></span>    |<span data-ttu-id="589a2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="589a2-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="a790b-109">Получение Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="a790b-109">Get educationCategory</span></span>](../api/educationcategory-get.md) | [<span data-ttu-id="a790b-110">Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="a790b-110">educationCategory</span></span>](educationCategory.md) | <span data-ttu-id="a790b-111">Получение существующего **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="a790b-111">Get an existing **educationCategory**.</span></span>|
-|[<span data-ttu-id="a790b-112">Удаление категории</span><span class="sxs-lookup"><span data-stu-id="a790b-112">Delete category</span></span>](../api/educationcategory-delete.md) | <span data-ttu-id="a790b-113">Отсутствует</span><span class="sxs-lookup"><span data-stu-id="a790b-113">None</span></span> | <span data-ttu-id="a790b-114">Удаление **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="a790b-114">Remove an **educationCategory**.</span></span>|
+|[<span data-ttu-id="589a2-109">Получение Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="589a2-109">Get educationCategory</span></span>](../api/educationcategory-get.md) | [<span data-ttu-id="589a2-110">Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="589a2-110">educationCategory</span></span>](educationCategory.md) | <span data-ttu-id="589a2-111">Получение существующего **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="589a2-111">Get an existing **educationCategory**.</span></span>|
+|[<span data-ttu-id="589a2-112">Удаление категории</span><span class="sxs-lookup"><span data-stu-id="589a2-112">Delete category</span></span>](../api/educationcategory-delete.md) | <span data-ttu-id="589a2-113">Нет</span><span class="sxs-lookup"><span data-stu-id="589a2-113">None</span></span> | <span data-ttu-id="589a2-114">Удаление **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="589a2-114">Remove an **educationCategory**.</span></span>|
 
 
-## <a name="properties"></a><span data-ttu-id="a790b-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="a790b-115">Properties</span></span>
-| <span data-ttu-id="a790b-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="a790b-116">Property</span></span>     | <span data-ttu-id="a790b-117">Тип</span><span class="sxs-lookup"><span data-stu-id="a790b-117">Type</span></span>   |<span data-ttu-id="a790b-118">Описание</span><span class="sxs-lookup"><span data-stu-id="a790b-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="589a2-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="589a2-115">Properties</span></span>
+| <span data-ttu-id="589a2-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="589a2-116">Property</span></span>     | <span data-ttu-id="589a2-117">Тип</span><span class="sxs-lookup"><span data-stu-id="589a2-117">Type</span></span>   |<span data-ttu-id="589a2-118">Описание</span><span class="sxs-lookup"><span data-stu-id="589a2-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a790b-119">id</span><span class="sxs-lookup"><span data-stu-id="a790b-119">id</span></span>|<span data-ttu-id="a790b-120">String</span><span class="sxs-lookup"><span data-stu-id="a790b-120">String</span></span>|<span data-ttu-id="a790b-121">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="a790b-121">Unique identifier for the category.</span></span>|
-|<span data-ttu-id="a790b-122">displayName</span><span class="sxs-lookup"><span data-stu-id="a790b-122">displayName</span></span>|<span data-ttu-id="a790b-123">String</span><span class="sxs-lookup"><span data-stu-id="a790b-123">String</span></span>|<span data-ttu-id="a790b-124">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="a790b-124">Unique identifier for the category.</span></span>|
+|<span data-ttu-id="589a2-119">id</span><span class="sxs-lookup"><span data-stu-id="589a2-119">id</span></span>|<span data-ttu-id="589a2-120">String</span><span class="sxs-lookup"><span data-stu-id="589a2-120">String</span></span>|<span data-ttu-id="589a2-121">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="589a2-121">Unique identifier for the category.</span></span>|
+|<span data-ttu-id="589a2-122">displayName</span><span class="sxs-lookup"><span data-stu-id="589a2-122">displayName</span></span>|<span data-ttu-id="589a2-123">String</span><span class="sxs-lookup"><span data-stu-id="589a2-123">String</span></span>|<span data-ttu-id="589a2-124">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="589a2-124">Unique identifier for the category.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a790b-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a790b-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="589a2-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="589a2-125">JSON representation</span></span>
 
-<span data-ttu-id="a790b-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a790b-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="589a2-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="589a2-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -61,8 +61,6 @@ ms.locfileid: "32507320"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationcategory.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
