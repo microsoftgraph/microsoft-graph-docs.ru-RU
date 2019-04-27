@@ -4,12 +4,12 @@ description: В Microsoft Graph электронные письма предст
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 160db6aae079d90f1ce20640429181cdbe6a4da5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927613"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555187"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Автоматизация создания, отправки и обработки сообщений
 
@@ -109,5 +109,8 @@ Prefer: outlook.allow-unsafe-html
 Дополнительные сведения:
 
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
+- [Получение содержимого MIME (предварительная версия)](outlook-get-mime-message.md)
+- [Получение общих сообщений](outlook-share-messages-folders.md)
+- [Отправка сообщений Outlook от другого пользователя](outlook-send-mail-from-other-user.md)
 - [Получение неизменяемых идентификаторов для ресурсов Outlook (предварительная версия)](outlook-immutable-id.md)
 - [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.

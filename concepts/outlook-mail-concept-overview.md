@@ -4,12 +4,12 @@ description: Outlook — это центр обмена сообщениями 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5480d174b542766ba540af97a1af99456ad21cf2
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554669"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 
@@ -68,7 +68,8 @@ Outlook — это центр обмена сообщениями в Office 36
 
   - [Создание и отправка сообщений](outlook-create-send-messages.md)
   - Способы [упорядочивания сообщений](outlook-organize-messages.md)
-  - Способы [получения общих сообщений](outlook-share-messages-folders.md)
+  - [Получение содержимого MIME сообщения](outlook-get-mime-message.md)
+  - [Получение общих сообщений](outlook-share-messages-folders.md)
   - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
   - Как [отправлять почту от имени другого пользователя](outlook-send-mail-from-other-user.md)
 

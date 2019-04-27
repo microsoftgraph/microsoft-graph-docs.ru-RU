@@ -1,36 +1,36 @@
 ---
-title: Справочник по конечной точки бета-версию Microsoft Graph
-description: 'Содержимое ссылки в этом разделе документы в конечную точку бета-версию Microsoft Graph. Конечная точка бета-версия включает в себя API-интерфейсы, которые в настоящее время в предварительной версии и еще не общедоступной. Мы пригласить повторите эти интерфейсы API и обеспечивают ваш отзыв с помощью следующих каналов:'
+title: Справочник по бета-версии конечной точки Microsoft Graph
+description: 'В справочном содержимом этого раздела описывается бета-версия конечной точки Microsoft Graph. Конечная точка бета-версии включает API-интерфейсы, которые в настоящий момент находятся в предварительной версии и не являются общедоступными. Попробуйте эти API и оставьте отзыв через следующие каналы:'
 localization_priority: Priority
 ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874307"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544010"
 ---
-# <a name="microsoft-graph-beta-endpoint-reference"></a>Справочник по конечной точки бета-версию Microsoft Graph
+# <a name="microsoft-graph-beta-endpoint-reference"></a>Справочник по бета-версии конечной точки Microsoft Graph
 
-Содержимое ссылки в этом разделе документы в конечную точку бета-версию Microsoft Graph. Конечная точка бета-версия включает в себя API-интерфейсы, которые в настоящее время в предварительной версии и еще не общедоступной. Мы пригласить повторите эти интерфейсы API и обеспечивают ваш отзыв с помощью следующих каналов:
+В справочном содержимом этого раздела описывается бета-версия конечной точки Microsoft Graph. Конечная точка бета-версии включает API-интерфейсы, которые в настоящий момент находятся в предварительной версии и не являются общедоступными. Попробуйте эти API и оставьте отзыв через следующие каналы:
 
-- [Репозиториев](https://github.com/OfficeDev/microsoft-graph-docs/issues) - обратной связи по API-интерфейсы предварительного просмотра. Установка метки с `beta`.
-- [Сайт StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - вопросы или справки в коде. Установка метки с `microsoftgraph`.
+- [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) — для отзывов о предварительных версиях API-интерфейсов. Используйте тег `beta`.
+- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) — для вопросов и справки по вашему коду. Используйте тег `microsoftgraph`.
 
 > **Примечание.** API-интерфейсы в конечной точке бета-версии могут быть изменены. Не рекомендуем использовать их в рабочих приложениях. 
 
-## <a name="call-the-beta-endpoint"></a>Звонок в конечную точку бета-версия
+## <a name="call-the-beta-endpoint"></a>Вызов конечной точки бета-версии
 
-Microsoft Graph API запросов к конечной точке бета-версии используйте следующий формат:
+В запросах API Microsoft Graph к конечной точке бета версии используется следующий шаблон:
 
 ```
     https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
-Для получения дополнительных сведений показано [Использование Microsoft Graph API](/graph/use-the-api).
+Дополнительные сведения см. в статье [Использование API Microsoft Graph](/graph/use-the-api).
 
 ## <a name="see-also"></a>См. также
 
 - [Обзор Microsoft Graph](/graph/overview)
-- [Песочница Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer)
-- [Краткое руководство Microsoft Graph](https://developer.microsoft.com/graph/quick-start)
+- [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+- [Краткое руководство по Microsoft Graph](https://developer.microsoft.com/graph/quick-start)
 

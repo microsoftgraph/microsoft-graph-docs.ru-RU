@@ -1,15 +1,15 @@
 ---
 title: 'event: delta'
-description: 'Получение событий, которые были добавлены, удалены или обновлены в **представления календаря** (диапазон событий) '
+description: 'Получение списка событий, которые были добавлены в **calendarView** (диапазон событий), обновлены в нем или удалены из него '
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7eb8a80f8e857edc9aa9ff8781fae01dc1476677
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963712"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562855"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -44,8 +44,8 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 |:---------------|:--------|:----------|
 |startDateTime|String|Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T20:00:00.0000000".|
-| $deltatoken | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для этого же представления календаря и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этого представления календаря.|
-| $skiptoken | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что в представлении календаря остаются не отслеженные изменения. |
+| $deltatoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для этого же представления календаря и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этого представления календаря.|
+| $skiptoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что в представлении календаря остаются не отслеженные изменения. |
 
 При выполнении разностного запроса для представления календаря следует ожидать получения всех свойств, которые обычно получают с помощью запроса `GET /calendarview`. `$select` в этом случае не поддерживается. 
 
@@ -53,10 +53,10 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json. Обязательный. |
-| Prefer | строка  | odata.maxpagesize={x}. Необязательный параметр. |
-| Prefer | строка | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json. Обязательный. |
+| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
+| Prefer | string | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
 
 ## <a name="response"></a>Отклик
 

@@ -2,12 +2,14 @@
 title: Тип ресурса chatMessage
 description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 localization_priority: Priority
-ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 893a7d09dba1ef376926c8ad7339e21a84cd83fa
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800000"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543895"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -37,15 +39,15 @@ ms.locfileid: "30800000"
 |messageType|Строка|Тип сообщения. В настоящее время поддерживаются следующие значения: message, chatEvent, Typing.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения.|
-|deleted|Boolean|Указывает, было ли сообщение обратимо удалено.|
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
-|body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Возвращает неформатированный текст по умолчанию. Приложение может выбрать формат HTML в составе параметров запроса|
-|summary|string|Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений|
-|mentions|Коллекция [chatMessageMention](chatmention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
+|subject|string| Тема сообщения в формате обычного текста.|
+|body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. По умолчанию содержимое представлено в формате обычного текста. Приложение может выбрать формат HTML в составе параметров запроса. Содержимое представлено в формате HTML, если сообщение содержит ресурс [chatMessageMention](chatmessagemention.md). |
+|summary|string|Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений.|
+|attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
+|mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
 |importance| строка | Важность сообщения: Normal, High.|
-|reactions| Коллекция [chatMessageReaction](chatreaction.md) | Реакции на сообщение (например, "Нравится")|
-|locale|string|Язык сообщения, установленный клиентом|
-|attachments|Коллекция [chatMessageAttachment](chatattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
+|reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на сообщение (например, "Нравится").|
+|языковые стандарты|string|Язык сообщения, установленный клиентом.|
 
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -84,6 +86,7 @@ ms.locfileid: "30800000"
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
+  "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string"
 }
