@@ -4,11 +4,11 @@ description: 'API SharePoint в Microsoft Graph поддерживает сле�
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 9edab0f8e4207dac2a88943a0a2cd1cbe58b97e3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583916"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Работа с сайтами SharePoint в Microsoft Graph
 
@@ -22,8 +22,8 @@ API SharePoint в Microsoft Graph поддерживает следующие о
 API SharePoint предоставляет три основных типа ресурсов:
 
 * [Site](site.md) _(объект верхнего уровня)_
-* [List](list.md);
-* [ListItem](listitem.md).
+* [List](list.md)
+* [ListItem](listitem.md)
 
 Ниже показан пример ресурса listItem.
 
@@ -89,12 +89,15 @@ API SharePoint предоставляет три основных типа ре�
 
 | Путь                                           | Описание
 |:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | Сайт, связанный сhttps://contoso.sharepoint.com/teams/hr
+| /sites/contoso.sharepoint.com:/teams/hr        | Сайт, связанный с https://contoso.sharepoint.com/teams/hr
 | /sites/contoso.sharepoint.com:/teams/hr:/drive | Доступ к ресурсу [drive](drive.md), заданному по умолчанию.
 
 ## <a name="note-for-existing-sharepoint-developers"></a>Примечание, касающееся разработки решений для SharePoint
 
-API SharePoint в Microsoft Graph имеет ряд ключевых отличий от API CSOM. Ресурс [site][] сопоставляется с `SPWeb`. Корневой ресурс [site][] (`SPWeb`) в семействе веб-сайтов имеет аспект [siteCollection](sitecollection.md), содержащий сведения о `SPSite`. Идентификатор сайта уникален только в пределах одного семейства веб-сайтов. Чтобы обратиться к сайту с использованием ИД, нужно предоставить два идентификатора — для семейства и для самого сайта.
+API SharePoint в Microsoft Graph имеет ряд ключевых отличий от API CSOM.
+Ресурс [site][] сопоставляется с `SPWeb`.
+Корневой ресурс [site][] (`SPWeb`) в семействе веб-сайтов имеет аспект [siteCollection](sitecollection.md), содержащий сведения о `SPSite`.
+Идентификаторы сайтов уникальны только в пределах одного семейства веб-сайтов. Поэтому чтобы обратиться к сайту по его идентификатору, необходимо указать два идентификатора — для семейства веб-сайтов и для самого сайта.
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id},{spweb-id}/

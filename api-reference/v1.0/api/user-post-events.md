@@ -1,33 +1,36 @@
 ---
 title: Создание события
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
-localization_priority: Priority
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ef3ac07ba64115a10862cbdfb98dfbd63d2023ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978615"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564080"
 ---
 # <a name="create-event"></a>Создание события
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.
 
-В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md). 
+В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md).
 
 При отправке события сервер отправляет приглашения всем участникам.
 
 **Установка места проведения события**
 
-Администратор Exchange может настроить почтовый ящик и адрес электронной почты для ресурса, например конференц-зала, или оборудования, например проектора. Затем пользователи могут пригласить ресурс в качестве участников собрания. Сервер принимает или отклоняет приглашение на собрание от имени ресурса, руководствуясь расписанием его занятости. Если сервер принимает приглашение от имени ресурса, он создает соответствующее событие в календаре ресурса. В случае переноса собрания сервер автоматически обновляет событие в календаре ресурса.
+Администратор Exchange может настроить почтовый ящик и адрес электронной почты для ресурса, например конференц-зала, или оборудования, например проектора. Затем пользователи могут пригласить ресурс в качестве участников собрания. Сервер принимает или отклоняет приглашение на собрание от имени ресурса, руководствуясь расписанием его занятости.
+Если сервер принимает приглашение от имени ресурса, он создает соответствующее событие в календаре ресурса. В случае переноса собрания сервер автоматически обновляет событие в календаре ресурса.
 
 Еще одно преимущество настройки почтового ящика для ресурса — возможность управления расписанием для ресурса. Например, вы можете разрешить бронирование частного конференц-зала только руководителям и их представителям.
 
 Если вы организуете событие, у которого есть место проведения:
 
-1. Задайте соответствующее значение для свойства **location** объекта **event**. 
+1. Задайте соответствующее значение для свойства **location** объекта **event**.
 2. Задайте необязательное свойство **locationEmailAddress**, если у места проведения собрания есть адрес электронной почты.
 
 Кроме того, если место проведения собрания было настроено как ресурс или для мероприятия требуется какое-либо оборудование, настроенное как ресурс:
@@ -35,7 +38,6 @@ ms.locfileid: "27978615"
 3. Пригласите ресурс как объект [attendee](../resources/attendee.md).
 4. Задайте для свойства **type** участника значение `resource`.
 5. Укажите свойство **emailAddress** участника в качестве электронного адреса ресурса.
-
 
 
 ## <a name="permissions"></a>Разрешения
@@ -82,7 +84,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
   "name": "create_event_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 Content-length: 600
@@ -117,7 +119,8 @@ Content-length: 600
 ```
 В теле запроса представьте объект [event](../resources/event.md) в формате JSON.
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
+Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -130,7 +133,7 @@ Content-type: application/json
 Content-length: 2197
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt9AHjAAA=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
@@ -141,7 +144,7 @@ Content-length: 2197
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -220,7 +223,7 @@ Content-length: 2197
   "name": "create_event_from_user_multiple_locations"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 Content-length: 1390
@@ -300,7 +303,7 @@ Content-type: application/json
 Content-length: 2985
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
   "createdDateTime":"2017-08-30T07:06:33.8673345Z",
@@ -311,7 +314,7 @@ Content-length: 2985
   ],
   "originalStartTimeZone":"Pacific Standard Time",
   "originalEndTimeZone":"Pacific Standard Time",
-  "iCalUId":"04000000820089190544",
+  "uid":"04000000820089190544",
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
@@ -362,6 +365,7 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
+        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",
@@ -421,7 +425,7 @@ Content-length: 2985
   "name": "create_event_recurring"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events
+POST https://graph.microsoft.com/beta/me/events
 Content-type: application/json
 
 {
@@ -478,7 +482,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
     "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
     "id":"AAMkADQwMD",
     "createdDateTime":"2017-10-07T04:59:12.9698856Z",
@@ -489,7 +493,7 @@ Content-type: application/json
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
+    "uid":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
@@ -579,6 +583,8 @@ Content-type: application/json
 ```
 
 
+
+
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
@@ -586,13 +592,15 @@ Content-type: application/json
 - [Добавление пользовательских данных в группы с помощью расширений схемы](/graph/extensibility-schema-groups)
 
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

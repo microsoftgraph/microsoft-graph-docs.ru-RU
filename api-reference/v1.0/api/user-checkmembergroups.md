@@ -1,21 +1,23 @@
 ---
 title: checkMemberGroups
-description: Проверьте наличие членства в указанный список групп. Возвращает из списка из которых эти группы
+description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a259416525cbd339f68962674a3441c10f6b3235
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567895"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
-Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых указанный пользователь состоит напрямую или транзитивно.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В одном запросе можно проверять до 20 групп. Эта функция поддерживает Office 365 и другие типы групп, подготовленных в Azure AD. Обратите внимание, что группы Office 365 не могут содержать групп. Следовательно, членство в группе Office 365 всегда непосредственное.
+Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых указанный пользователь состоит напрямую или транзитивно.
+
+В одном запросе можно проверять до 20 групп. Эта функция поддерживает Office 365 и другие типы групп, подготовленных в Azure AD. Обратите внимание, что группы Office 365 не могут содержать групп. Следовательно, участие в группе Office 365 всегда непосредственное.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +29,7 @@ ms.locfileid: "27981352"
 | Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
 | Для приложения                            | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Примечание:** Этот интерфейс API в настоящее время требует `Directory.Read.All` разрешений или выше. С помощью `User.Read.All` или `User.ReadWrite.All` разрешения возвращает ошибку. Мы знаем об этой проблеме.
+> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешений `User.Read.All` или `User.ReadWrite.All` возникает ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,9 +50,9 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр | Тип              | Описание           |
-| :-------- | :---------------- | :-------------------- |
-| groupIds  | Коллекция String | Массив идентификаторов групп |
+| Параметр | Тип   | Описание           |
+| :-------- | :----- | :-------------------- |
+| groupIds  | Коллекция строк | Массив идентификаторов групп |
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +72,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -83,7 +85,7 @@ Content-length: 44
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -107,10 +109,13 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,13 +1,13 @@
 ---
 title: Тип ресурса attachment
-description: Связанное содержимое можно добавить на событие
+description: Вы можете добавить связанное содержимое в экземпляр event,
 localization_priority: Priority
 ms.openlocfilehash: 284895871a0c6a80140ff248045b89d2de104c20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892332"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569384"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -42,7 +42,7 @@ ms.locfileid: "27892332"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип MIME.|
-|id|Строка| Только для чтения.|
+|id|String| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |имя|String|Имя вложенного файла.|

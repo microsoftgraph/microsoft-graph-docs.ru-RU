@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 295397e4c85e2096d69e7ba14432cc866b4094a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564045"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -139,7 +139,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-Следующий пример добавляет несколько заголовков сообщений Интернета клиента при создании черновика сообщения.
+В следующем примере добавляется пара пользовательских заголовков сообщений Интернета при создании черновика сообщения.
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -174,8 +174,8 @@ Content-type: application/json
 }
 ```
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response-2"></a>Ответ 2
-Ниже приведен пример отклика. Примечание: Заголовки сообщений Интернета не возвращаются в ответа POST по умолчанию. Объект ответа, показанный здесь также может усекаться для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response-2"></a>Отклик 2
+Ниже приведен пример отклика. Примечание. Заголовки сообщений Интернета не возвращаются по умолчанию в ответе POST. Примечание. Представленный здесь объект отклика также может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",

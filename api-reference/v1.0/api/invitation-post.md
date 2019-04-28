@@ -1,17 +1,19 @@
 ---
 title: Создание приглашения
 description: Используйте этот API для создания приглашения. Приглашение позволяет добавить внешнего пользователя в организацию.
-localization_priority: Priority
+localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ed6dbfe4991d3dc36fba8cf66ca0177a93effcf6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568077"
 ---
 # <a name="create-invitation"></a>Создание приглашения
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API для создания [приглашения](../resources/invitation.md). Приглашение позволяет добавить внешнего пользователя в организацию.
 
@@ -48,8 +50,8 @@ POST /invitations
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |строка | Адрес электронной почты приглашаемого пользователя.|
-|inviteRedirectUrl |строка |URL-адрес, на который пользователь перенаправляется после активации.|
+|invitedUserEmailAddress |string | Адрес электронной почты приглашаемого пользователя.|
+|inviteRedirectUrl |string |URL-адрес, на который пользователь перенаправляется после активации.|
 
 ## <a name="response"></a>Отклик
 
@@ -63,7 +65,7 @@ POST /invitations
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/invitations
+POST https://graph.microsoft.com/beta/invitations
 Content-type: application/json
 Content-length: 551
 
@@ -73,8 +75,8 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,14 +107,6 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
+  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: create_user_from_users/invitedUser:
-      Property 'invitedUser' is of type Custom but has no custom members."
-  ]
-}-->

@@ -1,13 +1,13 @@
 ---
 title: Обновление объекта profilephoto
-description: Обновление фотографий для выполнившего вход **пользователя**, или указанной **группы** или **контакта**. Начиная с него
+description: Обновление фотографии вошедшего **пользователя** либо указанной **группы** или **контакта**. Так как
 localization_priority: Priority
 ms.openlocfilehash: 39c5a0405a05d46cbd77f161cd45fb19c40d8b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576348"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 
@@ -71,8 +71,8 @@ Content-type: image/jpeg
 Binary data for the image
 
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

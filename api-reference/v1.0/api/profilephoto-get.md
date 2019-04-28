@@ -2,12 +2,12 @@
 title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств profilePhoto).
 localization_priority: Priority
-ms.openlocfilehash: 6b1a3e54b1145cc2fdcf8ed9e587652d4d7061c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833952"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576285"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -34,7 +34,7 @@ ms.locfileid: "27833952"
 
 ## <a name="http-request"></a>HTTP-запрос 
 
-### <a name="get-the-photo"></a>Получение фотографий
+### <a name="get-the-photo"></a>Получение фотографии
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -58,16 +58,12 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получить метаданные для определенного размера фотографии
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получение метаданных фотографии определенного размера
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
 GET /groups/{id}/photos/{size}
-GET /me/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
-GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## <a name="path-parameters"></a>Параметры пути
@@ -76,25 +72,26 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 |:-----|:-----|:-----|
 |size  |String  | Размер фотографии. Поддерживаемые размеры фотографий в формате HD для Office 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory. |
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 ### <a name="response-for-getting-the-photo"></a>Отклик для запроса на получение фотографии
 При успешном выполнении этот метод возвращает код отклика `200 OK` и двоичные данные запрашиваемой фотографии.  Если фотография не существует, операция возвратит отклик `404 Not Found`.
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>Отклик для запроса на получение метаданных фотографии
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [profilePhoto](../resources/profilephoto.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
-Этот запрос возвращает фотографию пользователя, вошедшего в систему, с максимальным доступным размером.
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>Пример 1. Получение фотографии пользователя, вошедшего в систему, с максимальным доступным размером
+##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"
 }-->
@@ -102,12 +99,11 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response"></a>Отклик 
 Содержит двоичные данные запрошенной фотографии. Код HTTP-отклика: 200.
 
-##### <a name="request-2"></a>Запрос 2
-Этот запрос получает фотографию 48 x 48 для вошедшего пользователя.
-
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
+##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"
 }-->
@@ -116,11 +112,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-2"></a>Ответ 2
-Содержит двоичные данные запрошенной фотографии 48 x 48. Код HTTP-ответа: 200.
+##### <a name="response"></a>Отклик
+Содержит двоичные данные запрошенной фотографии 48 x 48. Код HTTP-отклика: 200.
 
-##### <a name="request-3"></a>Запрос 3
-Этот запрос возвращает метаданные фотографии вошедшего пользователя.
+### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Пример 3. Получение метаданных фотографии вошедшего пользователя
+##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"
 }-->
@@ -128,9 +124,11 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-3"></a>Ответ 3
+##### <a name="response"></a>Отклик
 
-В данных указанного ниже ответа содержатся метаданные фотографии. Примечание. Показанный здесь объект ответа может быть усечен для краткости.
+В данных указанного ниже отклика содержатся метаданные фотографии. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -149,7 +147,9 @@ Content-type: application/json
 }
 ```
 
-Ниже показаны данные отклика в случае, если фотография пользователя еще не выложена. Примечание. Показанный здесь объект отклика может быть усечен для краткости.
+Ниже показаны данные отклика в случае, если фотография пользователя еще не выложена.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "ignored"
