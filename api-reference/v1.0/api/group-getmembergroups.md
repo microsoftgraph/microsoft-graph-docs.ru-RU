@@ -4,12 +4,12 @@ description: Возвращение всех групп, в которых со�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b96e092ec30040dadaff3399d932c70d73d7f037
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575886"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334466"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -23,11 +23,10 @@ ms.locfileid: "32575886"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложения                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешения `Group.Read.All` возникает ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
