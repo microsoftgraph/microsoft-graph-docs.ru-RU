@@ -4,18 +4,18 @@ description: Представляет отдельное сообщение ча
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 893a7d09dba1ef376926c8ad7339e21a84cd83fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c2631d0ba4883160c443000fa2ecb0e1853523d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543895"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339849"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет отдельное сообщение чата в объекте [channel](channel.md) или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
+Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md). Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 
 ## <a name="methods"></a>Методы
 
@@ -27,13 +27,15 @@ ms.locfileid: "32543895"
 |[Получение ответа на сообщение](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Получение одного ответа на сообщение в канале.|
 |[Отправка сообщения в канал](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
 |[Ответ на сообщение в канале](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
+|[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
+|[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Идентификатор родительского или корневого сообщения беседы. |
+|replyToId| string | Идентификатор родительского или корневого сообщения беседы. (Применимо только к сообщениям в каналах, но не в чате) |
 |from|[identitySet](identityset.md)| Только для чтения. Подробные сведения об отправителе сообщения.|
 |etag| строка | Номер версии сообщения. |
 |messageType|Строка|Тип сообщения. В настоящее время поддерживаются следующие значения: message, chatEvent, Typing.|
@@ -41,8 +43,8 @@ ms.locfileid: "32543895"
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения.|
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
 |subject|string| Тема сообщения в формате обычного текста.|
-|body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. По умолчанию содержимое представлено в формате обычного текста. Приложение может выбрать формат HTML в составе параметров запроса. Содержимое представлено в формате HTML, если сообщение содержит ресурс [chatMessageMention](chatmessagemention.md). |
-|summary|string|Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений.|
+|body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Представление определяется параметром contentType в тексте. Содержимое всегда имеет формат HTML, если сообщение содержит [chatMessageMention](chatmessagemention.md). |
+|summary|string| Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений. Относится только к сообщениям каналов, не к сообщениям чата. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
 |importance| строка | Важность сообщения: Normal, High.|
@@ -88,7 +90,8 @@ ms.locfileid: "32543895"
   "importance": "string",
   "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "locale": "string"
+  "locale": "string",
+  "deleted": true
 }
 
 ```
@@ -102,8 +105,6 @@ ms.locfileid: "32543895"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

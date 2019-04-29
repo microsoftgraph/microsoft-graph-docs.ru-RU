@@ -116,14 +116,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Автоматизация обмена сообщениями
             href: outlook-create-send-messages.md
-          - name: Упорядочение сообщений
-            href: outlook-organize-messages.md
+          - name: Получение содержимого MIME (предварительная версия)
+            href: outlook-get-mime-message.md
           - name: Получение общих сообщений
             href: outlook-share-messages-folders.md
-          - name: Неизменяемый идентификатор (предварительная версия)
-            href: outlook-immutable-id.md
           - name: Отправка почты от имени другого пользователя
             href: outlook-send-mail-from-other-user.md
+          - name: Упорядочение сообщений
+            href: outlook-organize-messages.md
+          - name: Неизменяемый идентификатор (предварительная версия)
+            href: outlook-immutable-id.md
       - name: Примечания
         displayName: OneNote
         items:
@@ -251,8 +253,12 @@ items:
           - name: Регулирование
             href: throttling.md
           - name: Уведомления об изменениях
-            href: webhooks.md
             displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: Обзор
+                href: webhooks.md
+              - name: Отсутствие уведомлений в Outlook (предварительная версия)
+                href: webhooks-outlook-authz.md
           - name: Отслеживание изменений
             displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:
