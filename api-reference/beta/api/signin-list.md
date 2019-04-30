@@ -1,17 +1,17 @@
 ---
-title: Список signIns
-description: Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.  Самые последние signIns возвращаются первые.
+title: Перечисление входов
+description: Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.  Последние входы возвращаются первыми.
 localization_priority: Priority
 ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861791"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545159"
 ---
-# <a name="list-signins"></a>Список signIns
+# <a name="list-signins"></a>Перечисление входов
 
-Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.  Самые последние signIns возвращаются первые.
+Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.  Последние входы возвращаются первыми.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -23,7 +23,7 @@ ms.locfileid: "27861791"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All | 
 
-Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.
+Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -31,36 +31,36 @@ ms.locfileid: "27861791"
 GET auditLogs/signIns
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Проверьте [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для порядок использования этих параметров.
+Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|Фильтрует результаты (строки). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|Извлекает следующую страницу результатов из результатов наборы данных, которые охватывают несколько страниц.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>Список атрибутов, поддерживаемых $filter параметром
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>Список атрибутов, поддерживаемых параметром $filter
 |Имя атрибута |Поддерживаемые операторы|
 |:----------------|:------|
 |id|eq|
 |userId|eq|
 |appId|eq|
-|createdDateTime| EQ, le ge|
-|userDisplayName| EQ, startswith|
-|userPrincipalName| EQ, startswith|
-|appDisplayName| EQ, startswith|
-|ipAddress| EQ, startswith|
-|Город /| EQ, startswith|
-|расположение/состояние| EQ, startswith|
-|расположение/countryOrRegion| EQ, startswith|
-|Код состояния или ошибки|eq|
-|initiatedBy/пользователь|eq|
-|initiatedBy/пользователей/displayName| eq|
-|initiatedBy/пользователей/userPrincipalName| EQ, startswith|
+|createdDateTime| eq, le, ge|
+|userDisplayName| eq, startswith|
+|userPrincipalName| eq, startswith|
+|appDisplayName| eq, startswith|
+|ipAddress| eq, startswith|
+|location/city| eq, startswith|
+|location/state| eq, startswith|
+|location/countryOrRegion| eq, startswith|
+|status/errorCode|eq|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetail/браузера| EQ, startswith|
-|deviceDetail/операционной системы| EQ, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |riskDetail| eq|
 |riskLevelAggregated| eq|
@@ -74,8 +74,8 @@ GET auditLogs/signIns
 |resourceId| eq|
 
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [входить](../resources/signin.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [signIn](../resources/signin.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -86,8 +86,8 @@ GET auditLogs/signIns
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

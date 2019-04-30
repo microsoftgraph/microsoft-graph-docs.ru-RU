@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 ms.openlocfilehash: 97755052a1f0e5cf91fb45987870b498832ee735
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555929"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
 
@@ -22,10 +22,10 @@ ms.locfileid: "27967856"
 |:---------------|:--------|:----------|
 |[Получение объекта Table](../api/table-get.md) | [WorkbookTable](table.md) |Чтение свойств и связей объекта таблицы.|
 |[Создание объекта TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](tablecolumn.md)| Создание объекта TableColumn путем добавления в коллекцию столбцов.|
-|[Список столбцов](../api/table-list-columns.md) |[WorkbookTableColumn](tablecolumn.md) коллекции| Получение коллекции объектов TableColumn.|
+|[Список столбцов](../api/table-list-columns.md) |Коллекция [WorkbookTableColumn](tablecolumn.md)| Получение коллекции объектов TableColumn.|
 |[Создание объекта TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| Создание объекта TableRow путем добавления в коллекцию строк.|
-|[Список строк](../api/table-list-rows.md) |[WorkbookTableRow](tablerow.md) коллекции| Получение коллекции объектов TableRow.|
-|[Обновление](../api/table-update.md) | [WorkbookTable](table.md)   |Обновление объекта Table. |
+|[Список строк](../api/table-list-rows.md) |Коллекция [WorkbookTableRow](tablerow.md)| Получение коллекции объектов TableRow.|
+|[Update](../api/table-update.md) | [WorkbookTable](table.md)   |Обновление объекта Table. |
 |[Databodyrange](../api/table-databodyrange.md)|[Range](range.md)|Получает объект диапазона, связанный с основными данными таблицы.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой заголовков таблицы.|
 |[Range](../api/table-range.md)|[Range](range.md)|Получает объект диапазона, связанный со всей таблицей.|
@@ -34,17 +34,17 @@ ms.locfileid: "27967856"
 |[Converttorange](../api/table-converttorange.md)|[Range](range.md)|Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.|
 |[Delete](../api/table-delete.md)|Нет|Удаляет таблицу.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Нет|Повторно применяет все текущие фильтры к таблице.|
-|[Список](../api/table-list.md) | [WorkbookTable](table.md) коллекции |Получение коллекции объектов table. |
+|[List](../api/table-list.md) | Коллекция [WorkbookTable](table.md) |Получение коллекции объектов table. |
 |[Add](../api/tablecollection-add.md)|[WorkbookTable](table.md)|Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
-|name|строка|Имя таблицы.|
+|id|string|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
+|name|string|Имя таблицы.|
 |showHeaders|boolean|Указывает, отображается ли строка заголовков. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.|
 |showTotals|boolean|Указывает, отображается ли строка итогов. Можно задать это значение, чтобы отобразить или скрыть строку итогов.|
-|style|строка|Постоянное значение, представляющее стиля таблицы. Возможные значения: TableStyleLight1 через TableStyleLight21, TableStyleMedium1 через TableStyleMedium28, TableStyleStyleDark1 через TableStyleStyleDark11. Также можно указать настраиваемых пользовательских стиля присутствует в книге.|
+|style|string|Постоянное значение, представляющее стиль таблицы. Допустимые значения: от TableStyleLight1 до TableStyleLight21, TableStyleMedium1 до TableStyleMedium28, TableStyleStyleDark1 до TableStyleStyleDark11. Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.|
 |highlightFirstColumn|Boolean|Указывает, содержит ли первый столбец специальное форматирование.   |
 |highlightLastColumn|Boolean|Указывает, содержит ли последний столбец специальное форматирование. |
 |showBandedColumns|Boolean|Указывает, чередуется ли форматирование четных и нечетных столбцов для более удобного просмотра таблицы.   |
@@ -52,11 +52,11 @@ ms.locfileid: "27967856"
 |showFilterButton|Boolean|Указывает, видны ли кнопки фильтрации в верхней части заголовков столбцов. Это свойство можно использовать, только если таблица содержит строку заголовков.   |
 |legacyId|String|Устаревший идентификатор, используемый в старых клиентах Excel. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.   |
 
-## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Отношения
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|columns|[WorkbookTableColumn](tablecolumn.md) коллекции|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
-|rows|[WorkbookTableRow](tablerow.md) коллекции|Представляет коллекцию всех строк в таблице. Только для чтения.|
+|columns|Коллекция [WorkbookTableColumn](tablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
+|rows|Коллекция [WorkbookTableRow](tablerow.md)|Представляет коллекцию всех строк в таблице. Только для чтения.|
 |sort|[WorkbookTableSort](tablesort.md)|Представляет сортировку для таблицы. Только для чтения.|
 |worksheet|[WorkbookWorksheet](worksheet.md)|Лист, содержащий текущую таблицу. Только для чтения.|
 

@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa18cf9ce8a0dbaf7f50c0b643335a5a992d9049
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570773"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324796"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -69,10 +69,10 @@ ms.locfileid: "32570773"
 |[Перечисление цепочек](../api/group-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек группы.|
 |[Обновление цепочки](../api/group-update-thread.md) |Нет| Обновление свойств объекта thread.|
 |[Удаление цепочки](../api/group-delete-thread.md) |Нет| Удаление объекта thread.|
-|[Вывод acceptedSenders](../api/group-list-acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка acceptedSenders для данной группы.|
+|[Вывод acceptedSenders](../api/group-list-acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка пользователей или групп, включенных в список утвержденных отправителей для этой группы.|
 |[Добавление acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию acceptedSenders.|
 |[Удаление acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Удаление User или Group из коллекции acceptedSenders.|
-|[Список rejectedSenders](../api/group-list-rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка rejectedSenders для данной группы.|
+|[Список rejectedSenders](../api/group-list-rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы.|
 |[Добавление rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию rejectedSenders.|
 |[Удаление rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Удаление нового объекта User или Group из коллекции объектов rejectedSender.|
 |[Создание параметра](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Создание параметра объекта на базе groupSettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп.|
