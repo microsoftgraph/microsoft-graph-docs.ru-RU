@@ -1,15 +1,17 @@
 ---
-title: Вывод вложения
-description: 'Чтение свойства и связи вложения, присоединенные к событию '
+title: Получение вложения
+description: 'Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к данным о событии '
 localization_priority: Priority
-ms.openlocfilehash: b04f2a1d34d63c800854d3a9454d34ca3d1f2f7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: ff26ac63a6d16ea9e5b25b0f6c3f28e32c089aff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845761"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440110"
 ---
-# <a name="get-attachment"></a>Вывод вложения
+# <a name="get-attachment"></a>Получение вложения
 
 Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к [данным о событии](../resources/event.md), [сообщению](../resources/message.md) или [записи](../resources/post.md). 
 
@@ -26,15 +28,15 @@ ms.locfileid: "27845761"
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 * При доступе к вложениям в сообщениях: Mail.Read.
-* При доступе к вложениям в данных о событиях: Calendars.Read.
-* Если доступ к вложениям в группу публикации: Group.Read.All.
+* При доступе к вложениям в событиях: Calendars.Read.
+* При доступе к вложениям в событиях или записях групп: Group.Read.All.
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
 -->
 
 ## <a name="http-request"></a>HTTP-запрос
-Вложения для [событий](../resources/event.md) в списке пользователя по умолчанию [календаря](../resources/calendar.md).
+Вложения [события](../resources/event.md) в [календаре](../resources/calendar.md) по умолчанию для пользователя.
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -80,8 +82,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Вложения для [сообщений](../resources/message.md) , содержащихся в дочерней папкой [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показана один уровень вложения, но сообщение может быть найдена в дочерних дочернего и т. д.
-<!-- { "blockType": "ignored" } -->
+Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д. <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -99,12 +100,12 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код ответа `200 OK` и объект **attachment** в тексте ответа. Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceattachment.md).
+В случае успеха этот метод возвращает код ответа `200 OK` и объект **attachment** в тексте ответа. Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment или referenceAttachment.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
 
@@ -266,34 +267,36 @@ Content-type: application/json
 
 ## <a name="example-reference-attachment"></a>Пример (вложенная ссылка)
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса на получение вложенной ссылки из данных, касающихся события.
+Ниже приведен пример запроса на получение вложенной ссылки из сообщения.
 <!-- {
   "blockType": "request",
-  "name": "get_reference_attachment"
+  "name": "get_reference_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKgAAA=","AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8="]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8=
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
+  "name": "get_reference_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
-  "@odata.type": "#microsoft.graph.referenceAttachment",
-  "contentType": "contentType-value",
-  "lastModifiedDateTime": "datetime-value",
-  "id": "id-value",
-  "isInline": false,
-  "name": "name-value",
-  "size": 99,
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages('AAMkAGUzY5QKgAAA%3D')/attachments/$entity",
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "id": "AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8=",
+    "lastModifiedDateTime": "2019-04-02T02:58:11Z",
+    "name": "Sales Invoice Template.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 1060,
+    "isInline": true
 }
 ```
 
