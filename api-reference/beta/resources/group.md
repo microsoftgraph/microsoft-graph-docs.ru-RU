@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e5f369e1c95e13cb4b4c16aa3317e78c33c5d601
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547468"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340206"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -75,10 +75,10 @@ ms.locfileid: "32547468"
 |[Перечисление цепочек](../api/group-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек группы.|
 |[Обновление цепочки](../api/group-update-thread.md) |Нет| Обновление свойств объекта thread.|
 |[Удаление цепочки](../api/group-delete-thread.md) |Нет| Удаление объекта thread
-|[Перечисление acceptedSenders](../api/group-list-acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка acceptedSenders для данной группы.|
+|[Перечисление acceptedSenders](../api/group-list-acceptedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка разрешенных отправителей для данной группы.|
 |[Добавление acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию acceptedSenders.|
 |[Удаление acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Удаление User или Group из коллекции acceptedSenders.|
-|[Список rejectedSenders](../api/group-list-rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка rejectedSenders для данной группы.|
+|[Список rejectedSenders](../api/group-list-rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей или групп из списка отклоненных отправителей для данной группы.|
 |[Добавление rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию rejectedSenders.|
 |[Удаление rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Удаление новых User или Group из коллекции rejectedSenders.|
 |**Открытые расширения**| | |
@@ -161,8 +161,8 @@ ms.locfileid: "32547468"
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и административные единицы, в которых состоит группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)| Пользователи, контакты и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
-|membersWithLicenseErrors|Коллекция [User](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
-|onenote|[OneNote](onenote.md)| Только для чтения.|
+|membersWithLicenseErrors|Коллекция объектов [user](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
+|onenote|[onenote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
@@ -201,7 +201,6 @@ ms.locfileid: "32547468"
     "settings",
     "sites",
     "threads",
-
     "allowExternalSenders",
     "assignedLicenses",
     "autoSubscribeNewMembers",
@@ -229,7 +228,7 @@ ms.locfileid: "32547468"
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
   "id": "string (identifier)",
-  "isFavorite": true,  
+  "isFavorite": true,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
@@ -239,7 +238,7 @@ ms.locfileid: "32547468"
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": ["string"],
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
@@ -247,21 +246,27 @@ ms.locfileid: "32547468"
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
   "visibility": "string",
-  "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "conversations": [ { "@odata.type": "microsoft.graph.conversation" }],
-  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "events": [ { "@odata.type": "microsoft.graph.event" }],
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "conversations": [{"@odata.type": "microsoft.graph.conversation"}],
+  "createdOnBehalfOf": {"@odata.type": "microsoft.graph.directoryObject"},
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "members": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
-  "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
-  "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
+  "owners": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "sites": [{"@odata.type": "microsoft.graph.site"}],
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
+  "classification": "string",
+  "hasMembersWithLicenseErrors": true,
+  "membershipRule": "string",
+  "membershipRuleProcessingState": "string",
+  "preferredLanguage": "string",
+  "theme": "string"
 }
 
 ```
@@ -282,8 +287,6 @@ ms.locfileid: "32547468"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

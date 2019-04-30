@@ -3,12 +3,12 @@ title: Обзор API сайтов и контента SharePoint
 description: SharePoint — это ваша мобильная интеллектуальная интрасеть. В SharePoint пользователи могут делиться и управлять контентом, знаниями и приложениями при работе в группах, искать необходимую информацию и вести совместную работу в рамках организации. С помощью REST API для SharePoint в Microsoft Graph вы можете интегрировать свои решения с сайтами и контентом SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7f703854112643afc11cf82b32b6b9247f0bca39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e794d52bd0f876e1572b1bca5bca23fbd40154a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573482"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345822"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Обзор API сайтов и контента SharePoint
 
@@ -56,11 +56,11 @@ SharePoint хранит файлы в [списках особого типа][]
 - [API SharePoint в Microsoft Graph 1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
 - [API SharePoint в бета-версии Microsoft Graph](/graph/api/resources/sharepoint?view=graph-rest-beta)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-Чтобы приступить к работе с SharePoint в Microsoft Graph, изучите дополнительные сведения о [работе с сайтами][SharePoint].
+Чтобы приступить к работе с SharePoint в Microsoft Graph, изучите дополнительные сведения о [работе с сайтами](/graph/api/resources/sharepoint?view=graph-rest-1.0).
 
-[списки]: /graph/api/resources/list?view=graph-rest-1.0
+[list]: /graph/api/resources/list?view=graph-rest-1.0
 [столбцы]: /graph/api/resources/columndefinition?view=graph-rest-1.0
 [тип списка]: /graph/api/resources/listinfo?view=graph-rest-1.0
 [создать]: /graph/api/list-create?view=graph-rest-1.0

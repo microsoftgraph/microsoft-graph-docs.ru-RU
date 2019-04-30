@@ -4,12 +4,12 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 78276af6a21653645d6c9344b5962d0c8f4086b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529861"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328219"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
@@ -29,7 +29,8 @@ Microsoft Bookings позволяет владельцам малого бизн
 Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth-overview) для соответствующих операций.
 
 1. Убедитесь, что у компании есть подписка на [Office 365 бизнес премиум](https://products.office.com/ru-RU/business/office-365-business-premium).
-2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов: <!-- { "blockType": "ignored" } -->
+2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -41,7 +42,8 @@ Content-Type: application/json
 ```
 Используйте свойство **id** нового объекта **bookingBusiness**, возвращенного в отклике POST, чтобы продолжить [настройку](../api/bookingbusiness-update.md) бизнес-параметров и добавить сотрудников и услуги для компании.
 
-3. Добавьте отдельных сотрудников для компании: <!-- { "blockType": "ignored" } -->
+3. Добавьте отдельных сотрудников для компании:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +55,8 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. Определите каждую услугу, предлагаемую компанией: <!-- { "blockType": "ignored" } -->
+4. Определите каждую услугу, предлагаемую компанией:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,13 +66,15 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. Опубликуйте страницу расписания для компании, чтобы у клиентов и бизнес-операторов была возможность начать резервирование встреч: <!-- { "blockType": "ignored" } -->
+5. Опубликуйте страницу расписания для компании, чтобы у клиентов и бизнес-операторов была возможность начать резервирование встреч:
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Как правило, можно указать список всех компаний для резервирования в клиенте Office 365: <!-- { "blockType": "ignored" } -->
+Как правило, можно указать список всех компаний для резервирования в клиенте Office 365:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -96,11 +101,3 @@ Authorization: Bearer {access token}
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Узнайте, как выбрать [разрешения](/graph/permissions-reference) в Microsoft Graph.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

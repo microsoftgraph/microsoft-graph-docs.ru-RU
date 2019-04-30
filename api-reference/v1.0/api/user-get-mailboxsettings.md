@@ -1,15 +1,15 @@
 ---
 title: Получение параметров почтового ящика пользователя
-description: 'Получите mailboxSettings пользователя. Это включает параметры для автоматических ответов (уведомление людей автоматически при '
+description: 'Получение объекта mailboxSettings пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0e68d50cde270c20c76bce1e703ff07ff45c2107
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 24f8dcd69085153c50976bf2447214bfb4f23a1c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914565"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345857"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -31,13 +31,15 @@ ms.locfileid: "27914565"
 |Для приложений | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-Для получения всех параметров почтового ящика для пользователя:<!-- { "blockType": "ignored" } -->
+Получение всех параметров почтового ящика пользователя:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Получение определенных параметров -, например только автоматический отвечает параметры, язык, часовой пояс или рабочее время:<!-- { "blockType": "ignored" } -->
+Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -56,10 +58,10 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -122,8 +124,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.000",
-        "endTime":"17:00:00.000",
+        "startTime": "08:00:00.0000000",
+        "endTime": "17:00:00.0000000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }

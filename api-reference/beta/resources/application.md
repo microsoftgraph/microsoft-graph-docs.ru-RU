@@ -4,12 +4,12 @@ description: 'Представляет приложение. Любое прил
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0bed2d85e0b7308e8006c99143ea80e2d756202
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548206"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339107"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -43,7 +43,7 @@ ms.locfileid: "32548206"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|api|[api](api.md)| Указывает параметры для приложения API. |
+|api|[apiApplication](apiapplication.md)| Указывает параметры для приложения API. |
 |appId| String | Уникальный идентификатор, назначенный для приложения с помощью Azure AD. Значение null не допускается. Только для чтения. |
 |appRoles|Коллекция [appRole](approle.md)|Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается.|
 |createdDateTime|DateTimeOffset| Дата и время регистрации приложения. |
@@ -57,14 +57,14 @@ ms.locfileid: "32548206"
 |logo|Stream|Основной логотип для приложения. Значение null не допускается. |
 |optionalClaims|optionalClaims| Зарезервировано для последующего использования. |
 |orgRestrictions|Коллекция String| Зарезервировано для последующего использования. |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения.|
+|parentalControlSettings|Коллекция [parentalControlSettings](parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения.|
 |passwordCredentials|Коллекция [passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|
-|publicClient|[publicClient](publicclient.md)| Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
+|publicClient|[publicClientApplication](publicclientapplication.md)| Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 |publisherDomain| String | Проверенный домен издателя для приложения. Только для чтения.|
 |requiredResourceAccess|Коллекция [requiredResourceAccess](requiredresourceaccess.md)|Указывает ресурсы, к которым приложению требуется доступ, и устанавливает области разрешений OAuth и роли приложения, требующиеся приложению для каждого из этих ресурсов. Эта предварительная настройка доступа к необходимым ресурсам определяет интерфейс предоставления согласия. Значение null не допускается.|
 |signInAudience | String | Указывает, какие учетные записи Майкрософт поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>**AzureADMyOrg**: пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (т. е. один клиент)</li><li>**AzureADMultipleOrgs**: пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (т. е. несколько клиентов)</li> <li>**AzureADandPersonalMicrosoftAccount**: пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. |
-|web|[web](web.md)| Указывает параметры для веб-приложения. |
+|web|[webApplication](webapplication.md)| Указывает параметры для веб-приложения. |
 
 ## <a name="relationships"></a>Связи
 
@@ -83,6 +83,7 @@ ms.locfileid: "32548206"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "createdOnBehalfOf",
     "owners"
@@ -104,7 +105,7 @@ ms.locfileid: "32548206"
   "isFallbackPublicClient": true,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
@@ -127,8 +128,6 @@ ms.locfileid: "32548206"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

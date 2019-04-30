@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ee05a3c826924b606de599f2fbcadbebb963192f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581305"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345090"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -203,27 +203,27 @@ ms.locfileid: "32581305"
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные пользователем. Только для чтения. Допускается значение null.|
 |directReports|Коллекция [directoryObject](directoryobject.md)|Пользователи и контакты, являющиеся подчиненными пользователя (пользователи и контакты, у которых в свойстве manager указан этот пользователь). Только для чтения. Допускается значение null. |
 |drive|[drive](drive.md)|Хранилище OneDrive пользователя. Только для чтения.|
-|events|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
+|drives|Коллекция [drive](drive.md)| Коллекция дисков, доступных для этого пользователя. Только для чтения. |
+|Мероприятия|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
 |extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Допускается значение null.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
-|insights|Коллекция [insights](insights.md)| Только для чтения. Допускается значение null.|
+|insights|[officeGraphInsights](officegraphinsights.md) | Только для чтения. Допускается значение null.|
 |joinedGroups|Коллекция [group](group.md)| Только для чтения. Допускается значение null.|
 |mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, роли каталога и административные единицы, в которых состоит пользователь. Только для чтения. Допускается значение null.|
 |joinedTeams|Коллекция [group](group.md)|Команды Microsoft Teams, участником которых является пользователь. Только для чтения. Допускается значение null.|
 |messages|Коллекция [message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
-|onenote|[OneNote](onenote.md)| Только для чтения.|
+|onenote|[onenote](onenote.md)| Только для чтения.|
 |outlook|[outlookUser](outlookuser.md)| Выборочные службы Outlook, доступные пользователю. Только для чтения. Допускается значение null.|
 |ownedDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |people|Коллекция [person](person.md)| Только для чтения. Наиболее релевантные люди для пользователя. Коллекция упорядочена по их релевантности для пользователя, которая определяется его общением, совместной работой и бизнес-связями. Человек представляется в виде агрегированных сведений из почты, контактов и социальных сетей.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
-|photos|Коллекция [Photo](photo.md)| Только для чтения. Допускается значение null.|
+|photos|Коллекция [photo](photo.md)| Только для чтения. Допускается значение null.|
 |planner|[plannerUser](planneruser.md)| Выборочные службы Планировщика, доступные пользователю. Только для чтения. Допускается значение null. |
-|sharepoint|[sharepoint](sharepoint.md)| Доступ к сайту SharePoint пользователя. Только для чтения. |
 |scopedRoleMemberOf|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участие пользователя в административных единицах с ролью в заданной области. Только для чтения. Допускается значение null.|
-|settings|Коллекция [settings](user-settings.md)| Только для чтения. Допускается значение null.|
+|параметры|[userSettings](user-settings.md) | Только для чтения. Допускается значение null.|
 |registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -243,6 +243,7 @@ ms.locfileid: "32581305"
     "createdObjects",
     "directReports",
     "drive",
+    "drives",
     "events",
     "extensions",
     "joinedGroups",
@@ -319,30 +320,40 @@ ms.locfileid: "32581305"
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
-  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
-  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
-  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
-  "settings": { "@odata.type": "microsoft.graph.userSettings" },
-  "events": [ { "@odata.type": "microsoft.graph.event" } ],
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
-  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
-  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
-  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
-  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "calendars": [{"@odata.type": "microsoft.graph.calendar"}],
+  "contacts": [{"@odata.type": "microsoft.graph.contact"}],
+  "contactFolders": [{"@odata.type": "microsoft.graph.contactFolder"}],
+  "createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "drives": [{"@odata.type": "microsoft.graph.drive"}],
+  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "settings": {"@odata.type": "microsoft.graph.userSettings"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassification"},
+  "mailFolders": [{"@odata.type": "microsoft.graph.mailFolder"}],
+  "manager": {"@odata.type": "microsoft.graph.directoryObject"},
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "messages": [{ "@odata.type": "microsoft.graph.message"}],
+  "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
+  "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
+  "employeeId": "string",
+  "faxNumber": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
+  "onPremisesSamAccountName": "string",
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "showInAddressList": true
 }
 ```
 
@@ -354,12 +365,13 @@ ms.locfileid: "32581305"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-}-->
+  "suppressions": []
+}
+-->

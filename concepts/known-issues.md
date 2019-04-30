@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2858701aaa795bad617c395c91d15508f6dd650f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555446"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341350"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -230,7 +230,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 * Не поддерживается несколько пространств имен.
 * Не поддерживаются запросы GET для `$ref` и приведение для пользователей, групп, устройств, субъектов-служб и приложений.
-* Не поддерживается `@odata.bind`. Это значит, что разработчики не смогут правильно задавать параметры `Accepted` и `RejectedSenders` для группы.
+* Не поддерживается `@odata.bind`. Это значит, что разработчики не смогут правильно настроить свойство **acceptedSenders** или **rejectedSenders** для группы.
 * Отсутствует `@odata.id` для навигации по объектам без вложений (например, сообщениям) при использовании минимальных метаданных.
 * `$expand`:
   * Отсутствует поддержка `nextLink`.

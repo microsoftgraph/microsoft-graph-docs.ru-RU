@@ -2,12 +2,12 @@
 title: Тип ресурса signIn
 description: 'Этот ресурс представляет сведения о действиях входа пользователя или приложения в каталоге. '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557974"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343019"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 Этот ресурс представляет сведения о действиях входа пользователя или приложения в каталоге. 
@@ -41,11 +41,10 @@ ms.locfileid: "32557974"
 |riskDetail|`riskDetail`|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskLevelAggregated|`riskLevel`|Предоставляет агрегированный уровень риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskLevelDuringSignIn|`riskLevel`|Предоставляет уровень риска при входе. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
-|riskEventTypes|`riskEventTypes`|Предоставляет список типов событий риска, связанных с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`.|
+|riskEventTypes|Коллекция `riskEventType`|Предоставляет список типов событий риска, связанных с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`.|
 |riskState|`riskState`|Представляет "состояние риска" пользователя с риском, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Предоставляет сведения, связанные с многофакторной проверкой подлинности (MFA), например "Требуется MFA", "Состояние MFA", для соответствующего входа.|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Предоставляет сведения о сетевом расположении.|
-|riskLevel|string| Представляет уровень риска, связанный с входом. Возможные значения: `low`, `medium`, `high`.|
+|networkLocationDetails|Коллекция [networkLocationDetail](networklocationdetail.md)|Предоставляет сведения о сетевом расположении.|
 |status|[signInStatus](signinstatus.md)|Представляет состояние входа. Возможные значения: `Success` и `Failure`.|
 |userDisplayName|String|Указывает отображаемое имя пользователя.|
 |userId|String|Указывает userId пользователя.|
@@ -95,11 +94,13 @@ ms.locfileid: "32557974"
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "riskEventTypes": "string",
+  "riskEventTypes": ["String"],
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "processingTimeInMilliseconds": 12356,
+  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}]
 }
 
 ```
