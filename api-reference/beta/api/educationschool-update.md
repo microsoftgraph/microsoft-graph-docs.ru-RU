@@ -4,69 +4,67 @@ description: Обновление свойств объекта school.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 30d233bb2ec91721254307d124a30af65fa75e6e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dc7b2bac294d52dcd70a96770619e205a2e0b4b7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324735"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587726"
 ---
-# <a name="update-educationschool-properties"></a><span data-ttu-id="9118a-103">Обновление свойств educationSchool</span><span class="sxs-lookup"><span data-stu-id="9118a-103">Update educationschool properties</span></span>
+# <a name="update-educationschool-properties"></a><span data-ttu-id="0fb65-103">Обновление свойств educationSchool</span><span class="sxs-lookup"><span data-stu-id="0fb65-103">Update educationschool properties</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="0fb65-104">Обновление свойств объекта school.</span><span class="sxs-lookup"><span data-stu-id="0fb65-104">Update the properties of a school object.</span></span>
 
-<span data-ttu-id="9118a-104">Обновление свойств объекта school.</span><span class="sxs-lookup"><span data-stu-id="9118a-104">Update the properties of a school object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0fb65-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0fb65-105">Permissions</span></span>
+<span data-ttu-id="0fb65-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0fb65-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9118a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9118a-105">Permissions</span></span>
-<span data-ttu-id="9118a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9118a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="9118a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9118a-108">Permission type</span></span>      | <span data-ttu-id="9118a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9118a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0fb65-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0fb65-108">Permission type</span></span>      | <span data-ttu-id="0fb65-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0fb65-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9118a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9118a-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="9118a-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9118a-111">Not supported.</span></span>  |
-|<span data-ttu-id="9118a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9118a-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="9118a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9118a-113">Not supported.</span></span>  |
-|<span data-ttu-id="9118a-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="9118a-114">Application</span></span> | <span data-ttu-id="9118a-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9118a-115">EduRoster.ReadWrite.All</span></span> |
+|<span data-ttu-id="0fb65-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0fb65-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="0fb65-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0fb65-111">Not supported.</span></span>  |
+|<span data-ttu-id="0fb65-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0fb65-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="0fb65-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0fb65-113">Not supported.</span></span>  |
+|<span data-ttu-id="0fb65-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0fb65-114">Application</span></span> | <span data-ttu-id="0fb65-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0fb65-115">EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9118a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9118a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0fb65-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0fb65-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/schools/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="9118a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9118a-117">Request headers</span></span>
-| <span data-ttu-id="9118a-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9118a-118">Header</span></span>       | <span data-ttu-id="9118a-119">Значение</span><span class="sxs-lookup"><span data-stu-id="9118a-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="0fb65-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0fb65-117">Request headers</span></span>
+| <span data-ttu-id="0fb65-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0fb65-118">Header</span></span>       | <span data-ttu-id="0fb65-119">Значение</span><span class="sxs-lookup"><span data-stu-id="0fb65-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9118a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9118a-120">Authorization</span></span>  | <span data-ttu-id="9118a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9118a-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9118a-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9118a-123">Content-Type</span></span>  | <span data-ttu-id="9118a-124">application/json</span><span class="sxs-lookup"><span data-stu-id="9118a-124">application/json</span></span>  |
+| <span data-ttu-id="0fb65-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0fb65-120">Authorization</span></span>  | <span data-ttu-id="0fb65-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0fb65-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0fb65-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0fb65-123">Content-Type</span></span>  | <span data-ttu-id="0fb65-124">application/json</span><span class="sxs-lookup"><span data-stu-id="0fb65-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9118a-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9118a-125">Request body</span></span>
-<span data-ttu-id="9118a-126">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="9118a-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="9118a-127">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="9118a-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="9118a-128">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="9118a-128">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0fb65-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0fb65-125">Request body</span></span>
+<span data-ttu-id="0fb65-126">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="0fb65-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="0fb65-127">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="0fb65-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="0fb65-128">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="0fb65-128">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="9118a-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="9118a-129">Property</span></span>     | <span data-ttu-id="9118a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="9118a-130">Type</span></span>   |<span data-ttu-id="9118a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="9118a-131">Description</span></span>|
+| <span data-ttu-id="0fb65-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="0fb65-129">Property</span></span>     | <span data-ttu-id="0fb65-130">Тип</span><span class="sxs-lookup"><span data-stu-id="0fb65-130">Type</span></span>   |<span data-ttu-id="0fb65-131">Описание</span><span class="sxs-lookup"><span data-stu-id="0fb65-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9118a-132">displayName</span><span class="sxs-lookup"><span data-stu-id="9118a-132">displayName</span></span>| <span data-ttu-id="9118a-133">Строка</span><span class="sxs-lookup"><span data-stu-id="9118a-133">String</span></span>| <span data-ttu-id="9118a-134">Отображаемое имя школы</span><span class="sxs-lookup"><span data-stu-id="9118a-134">Display name of the school</span></span>| 
-|<span data-ttu-id="9118a-135">description</span><span class="sxs-lookup"><span data-stu-id="9118a-135">description</span></span>| <span data-ttu-id="9118a-136">String</span><span class="sxs-lookup"><span data-stu-id="9118a-136">String</span></span> | <span data-ttu-id="9118a-137">Описание школы</span><span class="sxs-lookup"><span data-stu-id="9118a-137">Description of the school</span></span>| 
-|<span data-ttu-id="9118a-138">principalEmail</span><span class="sxs-lookup"><span data-stu-id="9118a-138">principalEmail</span></span>| <span data-ttu-id="9118a-139">String</span><span class="sxs-lookup"><span data-stu-id="9118a-139">String</span></span>| <span data-ttu-id="9118a-140">Адрес электронной почты директора</span><span class="sxs-lookup"><span data-stu-id="9118a-140">Email address of the principal</span></span>|
-|<span data-ttu-id="9118a-141">principalName</span><span class="sxs-lookup"><span data-stu-id="9118a-141">principalName</span></span>| <span data-ttu-id="9118a-142">String</span><span class="sxs-lookup"><span data-stu-id="9118a-142">String</span></span> | <span data-ttu-id="9118a-143">Имя директора</span><span class="sxs-lookup"><span data-stu-id="9118a-143">Name of the principal</span></span>|
-|<span data-ttu-id="9118a-144">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="9118a-144">externalPrincipalId</span></span>| <span data-ttu-id="9118a-145">String</span><span class="sxs-lookup"><span data-stu-id="9118a-145">String</span></span> | <span data-ttu-id="9118a-146">Идентификатор директора в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="9118a-146">Id of principal in syncing system.</span></span> |
-|<span data-ttu-id="9118a-147">highestGrade</span><span class="sxs-lookup"><span data-stu-id="9118a-147">highestGrade</span></span>|<span data-ttu-id="9118a-148">String</span><span class="sxs-lookup"><span data-stu-id="9118a-148">String</span></span>| <span data-ttu-id="9118a-149">Самый старший класс.</span><span class="sxs-lookup"><span data-stu-id="9118a-149">Highest grade taught.</span></span> |
-|<span data-ttu-id="9118a-150">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="9118a-150">lowestGrade</span></span>|<span data-ttu-id="9118a-151">String</span><span class="sxs-lookup"><span data-stu-id="9118a-151">String</span></span>| <span data-ttu-id="9118a-152">Самый младший класс.</span><span class="sxs-lookup"><span data-stu-id="9118a-152">Lowest grade taught.</span></span> |
-|<span data-ttu-id="9118a-153">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="9118a-153">schoolNumber</span></span>|<span data-ttu-id="9118a-154">String</span><span class="sxs-lookup"><span data-stu-id="9118a-154">String</span></span>| <span data-ttu-id="9118a-155">Номер школы.</span><span class="sxs-lookup"><span data-stu-id="9118a-155">School Number.</span></span>|
-|<span data-ttu-id="9118a-156">externalId</span><span class="sxs-lookup"><span data-stu-id="9118a-156">externalId</span></span>|<span data-ttu-id="9118a-157">String</span><span class="sxs-lookup"><span data-stu-id="9118a-157">String</span></span>| <span data-ttu-id="9118a-158">Идентификатор учебного заведения в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="9118a-158">Id of school in syncing system.</span></span> |
-|<span data-ttu-id="9118a-159">phone</span><span class="sxs-lookup"><span data-stu-id="9118a-159">phone</span></span>|<span data-ttu-id="9118a-160">String</span><span class="sxs-lookup"><span data-stu-id="9118a-160">String</span></span>| <span data-ttu-id="9118a-161">Номер телефона учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="9118a-161">Phone number of school.</span></span> |
-|<span data-ttu-id="9118a-162">fax</span><span class="sxs-lookup"><span data-stu-id="9118a-162">fax</span></span>|<span data-ttu-id="9118a-163">String</span><span class="sxs-lookup"><span data-stu-id="9118a-163">String</span></span>| <span data-ttu-id="9118a-164">Номер факса учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="9118a-164">Fax number of school.</span></span> |
-|<span data-ttu-id="9118a-165">address</span><span class="sxs-lookup"><span data-stu-id="9118a-165">address</span></span>|[<span data-ttu-id="9118a-166">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="9118a-166">physicalAddress</span></span>](../resources/physicaladdress.md)| <span data-ttu-id="9118a-167">Адрес учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="9118a-167">Address of the School.</span></span>|
-|<span data-ttu-id="9118a-168">createdBy</span><span class="sxs-lookup"><span data-stu-id="9118a-168">createdBy</span></span>|[<span data-ttu-id="9118a-169">identitySet</span><span class="sxs-lookup"><span data-stu-id="9118a-169">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="9118a-170">Объект, который создал учебное заведение.</span><span class="sxs-lookup"><span data-stu-id="9118a-170">Entity who created the school.</span></span>|
+|<span data-ttu-id="0fb65-132">displayName</span><span class="sxs-lookup"><span data-stu-id="0fb65-132">displayName</span></span>| <span data-ttu-id="0fb65-133">Строка</span><span class="sxs-lookup"><span data-stu-id="0fb65-133">String</span></span>| <span data-ttu-id="0fb65-134">Отображаемое имя школы</span><span class="sxs-lookup"><span data-stu-id="0fb65-134">Display name of the school</span></span>| 
+|<span data-ttu-id="0fb65-135">description</span><span class="sxs-lookup"><span data-stu-id="0fb65-135">description</span></span>| <span data-ttu-id="0fb65-136">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-136">String</span></span> | <span data-ttu-id="0fb65-137">Описание школы</span><span class="sxs-lookup"><span data-stu-id="0fb65-137">Description of the school</span></span>| 
+|<span data-ttu-id="0fb65-138">principalEmail</span><span class="sxs-lookup"><span data-stu-id="0fb65-138">principalEmail</span></span>| <span data-ttu-id="0fb65-139">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-139">String</span></span>| <span data-ttu-id="0fb65-140">Адрес электронной почты директора</span><span class="sxs-lookup"><span data-stu-id="0fb65-140">Email address of the principal</span></span>|
+|<span data-ttu-id="0fb65-141">principalName</span><span class="sxs-lookup"><span data-stu-id="0fb65-141">principalName</span></span>| <span data-ttu-id="0fb65-142">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-142">String</span></span> | <span data-ttu-id="0fb65-143">Имя директора</span><span class="sxs-lookup"><span data-stu-id="0fb65-143">Name of the principal</span></span>|
+|<span data-ttu-id="0fb65-144">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="0fb65-144">externalPrincipalId</span></span>| <span data-ttu-id="0fb65-145">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-145">String</span></span> | <span data-ttu-id="0fb65-146">Идентификатор директора в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="0fb65-146">Id of principal in syncing system.</span></span> |
+|<span data-ttu-id="0fb65-147">highestGrade</span><span class="sxs-lookup"><span data-stu-id="0fb65-147">highestGrade</span></span>|<span data-ttu-id="0fb65-148">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-148">String</span></span>| <span data-ttu-id="0fb65-149">Самый старший класс.</span><span class="sxs-lookup"><span data-stu-id="0fb65-149">Highest grade taught.</span></span> |
+|<span data-ttu-id="0fb65-150">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="0fb65-150">lowestGrade</span></span>|<span data-ttu-id="0fb65-151">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-151">String</span></span>| <span data-ttu-id="0fb65-152">Самый младший класс.</span><span class="sxs-lookup"><span data-stu-id="0fb65-152">Lowest grade taught.</span></span> |
+|<span data-ttu-id="0fb65-153">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="0fb65-153">schoolNumber</span></span>|<span data-ttu-id="0fb65-154">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-154">String</span></span>| <span data-ttu-id="0fb65-155">Номер школы.</span><span class="sxs-lookup"><span data-stu-id="0fb65-155">School Number.</span></span>|
+|<span data-ttu-id="0fb65-156">externalId</span><span class="sxs-lookup"><span data-stu-id="0fb65-156">externalId</span></span>|<span data-ttu-id="0fb65-157">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-157">String</span></span>| <span data-ttu-id="0fb65-158">Идентификатор учебного заведения в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="0fb65-158">Id of school in syncing system.</span></span> |
+|<span data-ttu-id="0fb65-159">phone</span><span class="sxs-lookup"><span data-stu-id="0fb65-159">phone</span></span>|<span data-ttu-id="0fb65-160">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-160">String</span></span>| <span data-ttu-id="0fb65-161">Номер телефона учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="0fb65-161">Phone number of school.</span></span> |
+|<span data-ttu-id="0fb65-162">fax</span><span class="sxs-lookup"><span data-stu-id="0fb65-162">fax</span></span>|<span data-ttu-id="0fb65-163">String</span><span class="sxs-lookup"><span data-stu-id="0fb65-163">String</span></span>| <span data-ttu-id="0fb65-164">Номер факса учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="0fb65-164">Fax number of school.</span></span> |
+|<span data-ttu-id="0fb65-165">address</span><span class="sxs-lookup"><span data-stu-id="0fb65-165">address</span></span>|[<span data-ttu-id="0fb65-166">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="0fb65-166">physicalAddress</span></span>](../resources/physicaladdress.md)| <span data-ttu-id="0fb65-167">Адрес учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="0fb65-167">Address of the School.</span></span>|
+|<span data-ttu-id="0fb65-168">createdBy</span><span class="sxs-lookup"><span data-stu-id="0fb65-168">createdBy</span></span>|[<span data-ttu-id="0fb65-169">identitySet</span><span class="sxs-lookup"><span data-stu-id="0fb65-169">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="0fb65-170">Объект, который создал учебное заведение.</span><span class="sxs-lookup"><span data-stu-id="0fb65-170">Entity who created the school.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9118a-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="9118a-171">Response</span></span>
-<span data-ttu-id="9118a-172">При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationSchool](../resources/educationschool.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9118a-172">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9118a-173">Пример</span><span class="sxs-lookup"><span data-stu-id="9118a-173">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9118a-174">Запрос</span><span class="sxs-lookup"><span data-stu-id="9118a-174">Request</span></span>
-<span data-ttu-id="9118a-175">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9118a-175">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="0fb65-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="0fb65-171">Response</span></span>
+<span data-ttu-id="0fb65-172">При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationSchool](../resources/educationschool.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0fb65-172">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0fb65-173">Пример</span><span class="sxs-lookup"><span data-stu-id="0fb65-173">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0fb65-174">Запрос</span><span class="sxs-lookup"><span data-stu-id="0fb65-174">Request</span></span>
+<span data-ttu-id="0fb65-175">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0fb65-175">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/schools/10002
+PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
 Content-length: 292
 
@@ -75,10 +73,10 @@ Content-length: 292
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="9118a-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="9118a-176">Response</span></span>
-<span data-ttu-id="9118a-177">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9118a-177">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="0fb65-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="0fb65-176">Response</span></span>
+<span data-ttu-id="0fb65-177">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0fb65-177">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="9118a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9118a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="0fb65-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0fb65-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,16 +112,27 @@ Content-length: 292
   "phone": "+1 (253) 555-0102"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0fb65-180">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="0fb65-180">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0fb65-181">Языках</span><span class="sxs-lookup"><span data-stu-id="0fb65-181">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationschool-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0fb65-182">Язык</span><span class="sxs-lookup"><span data-stu-id="0fb65-182">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationschool-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

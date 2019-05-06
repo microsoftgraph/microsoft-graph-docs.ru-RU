@@ -4,30 +4,30 @@ description: С помощью этого API можно добавить вло
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 583959b227afccaf52b5951aa4270523bccd1dc1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 238afc378ac7e49cb39a07308c8b1e176cbd11ae
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324340"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586745"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="1b874-104">Добавление вложения</span><span class="sxs-lookup"><span data-stu-id="1b874-104">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="1a277-104">Добавление вложения</span><span class="sxs-lookup"><span data-stu-id="1a277-104">Add attachment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1b874-p102">С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="1b874-p102">Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+<span data-ttu-id="1a277-p102">С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="1a277-p102">Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1b874-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b874-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1a277-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1a277-107">Permissions</span></span>
 
-<span data-ttu-id="1b874-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b874-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1a277-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a277-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1b874-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b874-110">Permission type</span></span>      | <span data-ttu-id="1b874-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b874-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1a277-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1a277-110">Permission type</span></span>      | <span data-ttu-id="1a277-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1a277-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b874-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b874-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1b874-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1b874-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="1b874-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b874-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b874-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1b874-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="1b874-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1b874-116">Application</span></span> | <span data-ttu-id="1b874-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1b874-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="1a277-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1a277-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1a277-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a277-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="1a277-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1a277-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a277-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a277-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="1a277-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1a277-116">Application</span></span> | <span data-ttu-id="1a277-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a277-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1b874-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1b874-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1a277-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1a277-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,26 +40,26 @@ POST /users/{id | userPrincipalName}/events/{id}/attachments
 POST /groups/{id}/events/{id}/attachments
 -->
 
-## <a name="request-headers"></a><span data-ttu-id="1b874-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1b874-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1a277-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1a277-119">Request headers</span></span>
 
-| <span data-ttu-id="1b874-120">Имя</span><span class="sxs-lookup"><span data-stu-id="1b874-120">Name</span></span>       | <span data-ttu-id="1b874-121">Тип</span><span class="sxs-lookup"><span data-stu-id="1b874-121">Type</span></span> | <span data-ttu-id="1b874-122">Описание</span><span class="sxs-lookup"><span data-stu-id="1b874-122">Description</span></span>|
+| <span data-ttu-id="1a277-120">Имя</span><span class="sxs-lookup"><span data-stu-id="1a277-120">Name</span></span>       | <span data-ttu-id="1a277-121">Тип</span><span class="sxs-lookup"><span data-stu-id="1a277-121">Type</span></span> | <span data-ttu-id="1a277-122">Описание</span><span class="sxs-lookup"><span data-stu-id="1a277-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1b874-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1b874-123">Authorization</span></span>  | <span data-ttu-id="1b874-124">string</span><span class="sxs-lookup"><span data-stu-id="1b874-124">string</span></span>  | <span data-ttu-id="1b874-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b874-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1b874-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1b874-127">Content-Type</span></span> | <span data-ttu-id="1b874-128">string</span><span class="sxs-lookup"><span data-stu-id="1b874-128">string</span></span>  | <span data-ttu-id="1b874-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b874-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="1a277-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a277-123">Authorization</span></span>  | <span data-ttu-id="1a277-124">string</span><span class="sxs-lookup"><span data-stu-id="1a277-124">string</span></span>  | <span data-ttu-id="1a277-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1a277-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1a277-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1a277-127">Content-Type</span></span> | <span data-ttu-id="1a277-128">string</span><span class="sxs-lookup"><span data-stu-id="1a277-128">string</span></span>  | <span data-ttu-id="1a277-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1a277-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1b874-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1b874-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1a277-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1a277-131">Request body</span></span>
 
-<span data-ttu-id="1b874-132">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1b874-132">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="1a277-132">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1a277-132">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1b874-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b874-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1a277-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a277-133">Response</span></span>
 
-<span data-ttu-id="1b874-134">В случае успеха этот метод возвращает код отклика `201 Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1b874-134">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="1a277-134">В случае успеха этот метод возвращает код отклика `201 Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1a277-134">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="1b874-135">Пример (вложенный файл)</span><span class="sxs-lookup"><span data-stu-id="1b874-135">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="1a277-135">Пример (вложенный файл)</span><span class="sxs-lookup"><span data-stu-id="1a277-135">Example (file attachment)</span></span>
 
-### <a name="request"></a><span data-ttu-id="1b874-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b874-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1a277-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a277-136">Request</span></span>
 
-<span data-ttu-id="1b874-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1b874-137">Here is an example of the request.</span></span>
+<span data-ttu-id="1a277-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1a277-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
@@ -77,11 +77,11 @@ Content-length: 151
 }
 ```
 
-<span data-ttu-id="1b874-138">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1b874-138">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="1a277-138">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1a277-138">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="1b874-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b874-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1a277-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a277-139">Response</span></span>
 
-<span data-ttu-id="1b874-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1b874-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1a277-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1a277-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,12 +106,20 @@ Content-Length: 735
     "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1a277-143">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="1a277-143">SDK sample code</span></span>
 
-## <a name="example-item-attachment"></a><span data-ttu-id="1b874-143">Пример (вложенный элемент)</span><span class="sxs-lookup"><span data-stu-id="1b874-143">Example (item attachment)</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a277-144">Язык</span><span class="sxs-lookup"><span data-stu-id="1a277-144">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Javascript-snippets.md)]
 
-### <a name="request"></a><span data-ttu-id="1b874-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b874-144">Request</span></span>
+---
 
-<span data-ttu-id="1b874-145">Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.</span><span class="sxs-lookup"><span data-stu-id="1b874-145">Here is an example which attaches an event with another event as an item attachment.</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="example-item-attachment"></a><span data-ttu-id="1a277-145">Пример (вложенный элемент)</span><span class="sxs-lookup"><span data-stu-id="1a277-145">Example (item attachment)</span></span>
+
+### <a name="request"></a><span data-ttu-id="1a277-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a277-146">Request</span></span>
+
+<span data-ttu-id="1a277-147">Ниже приведен пример, в котором присоединяется событие с другим событием в качестве вложения элемента.</span><span class="sxs-lookup"><span data-stu-id="1a277-147">Here is an example which attaches an event with another event as an item attachment.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -145,9 +153,9 @@ Content-length: 600
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1b874-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b874-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1a277-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a277-148">Response</span></span>
 
-<span data-ttu-id="1b874-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1b874-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1a277-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1a277-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,13 +179,21 @@ Content-length: 162
     "isInline":false
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1a277-152">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="1a277-152">SDK sample code</span></span>
 
-## <a name="example-reference-attachment"></a><span data-ttu-id="1b874-150">Пример (вложенная ссылка)</span><span class="sxs-lookup"><span data-stu-id="1b874-150">Example (reference attachment)</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a277-153">Язык</span><span class="sxs-lookup"><span data-stu-id="1a277-153">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_item_attachment_from_event-Javascript-snippets.md)]
 
-### <a name="request"></a><span data-ttu-id="1b874-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b874-151">Request</span></span>
+---
 
-<span data-ttu-id="1b874-152">Ниже приведен пример запроса, добавляющего к существующему событию вложенное ссылку.</span><span class="sxs-lookup"><span data-stu-id="1b874-152">Here is an example of a request that adds a reference attachment to an existing event.</span></span>
-<span data-ttu-id="1b874-153">Вложение указывает на папку в OneDrive.</span><span class="sxs-lookup"><span data-stu-id="1b874-153">The attachment points to a folder on OneDrive.</span></span>
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="example-reference-attachment"></a><span data-ttu-id="1a277-154">Пример (вложенная ссылка)</span><span class="sxs-lookup"><span data-stu-id="1a277-154">Example (reference attachment)</span></span>
+
+### <a name="request"></a><span data-ttu-id="1a277-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a277-155">Request</span></span>
+
+<span data-ttu-id="1a277-156">Ниже приведен пример запроса, добавляющего к существующему событию вложенное ссылку.</span><span class="sxs-lookup"><span data-stu-id="1a277-156">Here is an example of a request that adds a reference attachment to an existing event.</span></span>
+<span data-ttu-id="1a277-157">Вложение указывает на папку в OneDrive.</span><span class="sxs-lookup"><span data-stu-id="1a277-157">The attachment points to a folder on OneDrive.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_event",
@@ -199,9 +215,9 @@ Content-length: 319
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1b874-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b874-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1a277-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a277-158">Response</span></span>
 
-<span data-ttu-id="1b874-155">Ниже приведен пример полного ответа.</span><span class="sxs-lookup"><span data-stu-id="1b874-155">Here is an example of a full response.</span></span>
+<span data-ttu-id="1a277-159">Ниже приведен пример полного ответа.</span><span class="sxs-lookup"><span data-stu-id="1a277-159">Here is an example of a full response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -228,6 +244,14 @@ HTTP 201 Created
   "isFolder": true
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1a277-160">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="1a277-160">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a277-161">Язык</span><span class="sxs-lookup"><span data-stu-id="1a277-161">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -239,6 +263,9 @@ HTTP 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: create_file_attachment_from_event/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='"
   ]
 }
