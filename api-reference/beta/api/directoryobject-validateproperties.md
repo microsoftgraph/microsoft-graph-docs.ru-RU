@@ -4,64 +4,64 @@ description: Убедитесь, что отображаемое имя или �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 182e1d97a0fe6406a0d5d2930cb87a473c7f9cdb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 64bfe6865cbb7d887bbb19e27ee583b123616c80
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325720"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591144"
 ---
-# <a name="directoryobject-validateproperties"></a><span data-ttu-id="0ee1c-105">directoryObject: Валидатепропертиес</span><span class="sxs-lookup"><span data-stu-id="0ee1c-105">directoryObject: validateProperties</span></span>
+# <a name="directoryobject-validateproperties"></a><span data-ttu-id="59ccc-105">directoryObject: Валидатепропертиес</span><span class="sxs-lookup"><span data-stu-id="59ccc-105">directoryObject: validateProperties</span></span>
 
-<span data-ttu-id="0ee1c-106">Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span>  <span data-ttu-id="0ee1c-107">Клиенты могут использовать API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться **создать** группу Office 365.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group.</span></span> <span data-ttu-id="0ee1c-108">Для проверки свойств существующей группы используйте [функцию валидатепропертиес](group-validateproperties.md) для групп.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-108">For validating properties of an existing group, use the [validateProperties function](group-validateproperties.md) for groups.</span></span>
+<span data-ttu-id="59ccc-106">Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования.</span><span class="sxs-lookup"><span data-stu-id="59ccc-106">Validate if an Office 365 group's display name or mail nickname complies with naming policies.</span></span>  <span data-ttu-id="59ccc-107">Клиенты могут использовать API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться **создать** группу Office 365.</span><span class="sxs-lookup"><span data-stu-id="59ccc-107">Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group.</span></span> <span data-ttu-id="59ccc-108">Для проверки свойств существующей группы используйте [функцию валидатепропертиес](group-validateproperties.md) для групп.</span><span class="sxs-lookup"><span data-stu-id="59ccc-108">For validating properties of an existing group, use the [validateProperties function](group-validateproperties.md) for groups.</span></span>
 
-<span data-ttu-id="0ee1c-109">Для отображаемого имени и свойств псевдонима почты выполняются следующие проверки.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
-1. <span data-ttu-id="0ee1c-110">Проверка политики именования префиксов и суффиксов</span><span class="sxs-lookup"><span data-stu-id="0ee1c-110">Validate the prefix and suffix naming policy</span></span>
-2. <span data-ttu-id="0ee1c-111">Проверка политики нестандартных запрещенных слов</span><span class="sxs-lookup"><span data-stu-id="0ee1c-111">Validate the custom banned words policy</span></span>
-3. <span data-ttu-id="0ee1c-112">Проверка уникальности псевдонима почты</span><span class="sxs-lookup"><span data-stu-id="0ee1c-112">Validate the mail nickname is unique</span></span>
+<span data-ttu-id="59ccc-109">Для отображаемого имени и свойств псевдонима почты выполняются следующие проверки.</span><span class="sxs-lookup"><span data-stu-id="59ccc-109">The following validations are performed for the display name and mail nickname properties:</span></span> 
+1. <span data-ttu-id="59ccc-110">Проверка политики именования префиксов и суффиксов</span><span class="sxs-lookup"><span data-stu-id="59ccc-110">Validate the prefix and suffix naming policy</span></span>
+2. <span data-ttu-id="59ccc-111">Проверка политики нестандартных запрещенных слов</span><span class="sxs-lookup"><span data-stu-id="59ccc-111">Validate the custom banned words policy</span></span>
+3. <span data-ttu-id="59ccc-112">Проверка уникальности псевдонима почты</span><span class="sxs-lookup"><span data-stu-id="59ccc-112">Validate the mail nickname is unique</span></span>
 
-<span data-ttu-id="0ee1c-113">Этот API возвращается при первом обнаружении ошибки.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-113">This API returns with the first failure encountered.</span></span> <span data-ttu-id="0ee1c-114">Если одно или несколько свойств не прошли несколько проверок, возвращается только свойство с первой ошибкой проверки.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-114">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="0ee1c-115">Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-115">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
+<span data-ttu-id="59ccc-113">Этот API возвращается при первом обнаружении ошибки.</span><span class="sxs-lookup"><span data-stu-id="59ccc-113">This API returns with the first failure encountered.</span></span> <span data-ttu-id="59ccc-114">Если одно или несколько свойств не прошли несколько проверок, возвращается только свойство с первой ошибкой проверки.</span><span class="sxs-lookup"><span data-stu-id="59ccc-114">If one or more properties fail multiple validations, only the property with the first validation failure is returned.</span></span> <span data-ttu-id="59ccc-115">Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов.</span><span class="sxs-lookup"><span data-stu-id="59ccc-115">However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0ee1c-116">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="0ee1c-116">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="59ccc-116">Необходимые условия</span><span class="sxs-lookup"><span data-stu-id="59ccc-116">Prerequisites</span></span>
 
-<span data-ttu-id="0ee1c-117">Для выполнения этого API требуются следующие **разрешения** : *Group. Read. ALL*</span><span class="sxs-lookup"><span data-stu-id="0ee1c-117">The following **permission** is required to execute this API: *Group.Read.All*</span></span>
+<span data-ttu-id="59ccc-117">Для выполнения этого API требуются следующие **разрешения** : *Group. Read. ALL*</span><span class="sxs-lookup"><span data-stu-id="59ccc-117">The following **permission** is required to execute this API: *Group.Read.All*</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="0ee1c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0ee1c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="59ccc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="59ccc-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /directoryObjects/validateProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0ee1c-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0ee1c-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="59ccc-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="59ccc-119">Request headers</span></span>
 
-| <span data-ttu-id="0ee1c-120">Имя</span><span class="sxs-lookup"><span data-stu-id="0ee1c-120">Name</span></span>           | <span data-ttu-id="0ee1c-121">Описание</span><span class="sxs-lookup"><span data-stu-id="0ee1c-121">Description</span></span>      |
+| <span data-ttu-id="59ccc-120">Имя</span><span class="sxs-lookup"><span data-stu-id="59ccc-120">Name</span></span>           | <span data-ttu-id="59ccc-121">Описание</span><span class="sxs-lookup"><span data-stu-id="59ccc-121">Description</span></span>      |
 |:---------------|:-----------------|
-| <span data-ttu-id="0ee1c-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0ee1c-122">Authorization</span></span>  | <span data-ttu-id="0ee1c-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="0ee1c-123">Bearer {code}</span></span>    |
-| <span data-ttu-id="0ee1c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0ee1c-124">Content-Type</span></span>   | <span data-ttu-id="0ee1c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0ee1c-125">application/json</span></span> |
+| <span data-ttu-id="59ccc-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="59ccc-122">Authorization</span></span>  | <span data-ttu-id="59ccc-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="59ccc-123">Bearer {code}</span></span>    |
+| <span data-ttu-id="59ccc-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="59ccc-124">Content-Type</span></span>   | <span data-ttu-id="59ccc-125">application/json</span><span class="sxs-lookup"><span data-stu-id="59ccc-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0ee1c-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0ee1c-126">Request body</span></span>
-<span data-ttu-id="0ee1c-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="59ccc-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="59ccc-126">Request body</span></span>
+<span data-ttu-id="59ccc-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="59ccc-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0ee1c-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="0ee1c-128">Parameter</span></span>    | <span data-ttu-id="0ee1c-129">Тип</span><span class="sxs-lookup"><span data-stu-id="0ee1c-129">Type</span></span>   |<span data-ttu-id="0ee1c-130">Описание</span><span class="sxs-lookup"><span data-stu-id="0ee1c-130">Description</span></span>|
+| <span data-ttu-id="59ccc-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="59ccc-128">Parameter</span></span>    | <span data-ttu-id="59ccc-129">Тип</span><span class="sxs-lookup"><span data-stu-id="59ccc-129">Type</span></span>   |<span data-ttu-id="59ccc-130">Описание</span><span class="sxs-lookup"><span data-stu-id="59ccc-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0ee1c-131">Сущности</span><span class="sxs-lookup"><span data-stu-id="0ee1c-131">entityType</span></span>|<span data-ttu-id="0ee1c-132">String</span><span class="sxs-lookup"><span data-stu-id="0ee1c-132">String</span></span>| <span data-ttu-id="0ee1c-133">`Group`— единственный поддерживаемый тип объекта.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-133">`Group` is the only supported entity type.</span></span> |
-|<span data-ttu-id="0ee1c-134">displayName</span><span class="sxs-lookup"><span data-stu-id="0ee1c-134">displayName</span></span>|<span data-ttu-id="0ee1c-135">String</span><span class="sxs-lookup"><span data-stu-id="0ee1c-135">String</span></span>| <span data-ttu-id="0ee1c-136">Отображаемое имя группы, которую требуется проверить.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-136">The display name of the group to validate.</span></span> <span data-ttu-id="0ee1c-137">Свойство не обязательно должно быть обязательным.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-137">The property is not individually required.</span></span> <span data-ttu-id="0ee1c-138">Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname).</span><span class="sxs-lookup"><span data-stu-id="0ee1c-138">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="0ee1c-139">mailNickname</span><span class="sxs-lookup"><span data-stu-id="0ee1c-139">mailNickname</span></span>|<span data-ttu-id="0ee1c-140">String</span><span class="sxs-lookup"><span data-stu-id="0ee1c-140">String</span></span>| <span data-ttu-id="0ee1c-141">Псевдоним почты для группы, которую требуется проверить.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-141">The mail nickname of the group to validate.</span></span> <span data-ttu-id="0ee1c-142">Свойство не обязательно должно быть обязательным.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-142">The property is not individually required.</span></span> <span data-ttu-id="0ee1c-143">Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname).</span><span class="sxs-lookup"><span data-stu-id="0ee1c-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
-|<span data-ttu-id="0ee1c-144">Онбехалфофусерид</span><span class="sxs-lookup"><span data-stu-id="0ee1c-144">onBehalfOfUserId</span></span>|<span data-ttu-id="0ee1c-145">GUID</span><span class="sxs-lookup"><span data-stu-id="0ee1c-145">Guid</span></span>| <span data-ttu-id="0ee1c-146">Идентификатор объекта пользователя, который олицетворяет при вызове API.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-146">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="0ee1c-147">Результаты проверки предназначены для атрибутов и ролей Онбехалфофусерид.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-147">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
+|<span data-ttu-id="59ccc-131">Сущности</span><span class="sxs-lookup"><span data-stu-id="59ccc-131">entityType</span></span>|<span data-ttu-id="59ccc-132">String</span><span class="sxs-lookup"><span data-stu-id="59ccc-132">String</span></span>| <span data-ttu-id="59ccc-133">`Group`— единственный поддерживаемый тип объекта.</span><span class="sxs-lookup"><span data-stu-id="59ccc-133">`Group` is the only supported entity type.</span></span> |
+|<span data-ttu-id="59ccc-134">displayName</span><span class="sxs-lookup"><span data-stu-id="59ccc-134">displayName</span></span>|<span data-ttu-id="59ccc-135">Строка</span><span class="sxs-lookup"><span data-stu-id="59ccc-135">String</span></span>| <span data-ttu-id="59ccc-136">Отображаемое имя группы, которую требуется проверить.</span><span class="sxs-lookup"><span data-stu-id="59ccc-136">The display name of the group to validate.</span></span> <span data-ttu-id="59ccc-137">Свойство не обязательно должно быть обязательным.</span><span class="sxs-lookup"><span data-stu-id="59ccc-137">The property is not individually required.</span></span> <span data-ttu-id="59ccc-138">Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname).</span><span class="sxs-lookup"><span data-stu-id="59ccc-138">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="59ccc-139">mailNickname</span><span class="sxs-lookup"><span data-stu-id="59ccc-139">mailNickname</span></span>|<span data-ttu-id="59ccc-140">String</span><span class="sxs-lookup"><span data-stu-id="59ccc-140">String</span></span>| <span data-ttu-id="59ccc-141">Псевдоним почты для группы, которую требуется проверить.</span><span class="sxs-lookup"><span data-stu-id="59ccc-141">The mail nickname of the group to validate.</span></span> <span data-ttu-id="59ccc-142">Свойство не обязательно должно быть обязательным.</span><span class="sxs-lookup"><span data-stu-id="59ccc-142">The property is not individually required.</span></span> <span data-ttu-id="59ccc-143">Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname).</span><span class="sxs-lookup"><span data-stu-id="59ccc-143">However, at least one property (displayName or mailNickname) is required.</span></span> |
+|<span data-ttu-id="59ccc-144">Онбехалфофусерид</span><span class="sxs-lookup"><span data-stu-id="59ccc-144">onBehalfOfUserId</span></span>|<span data-ttu-id="59ccc-145">GUID</span><span class="sxs-lookup"><span data-stu-id="59ccc-145">Guid</span></span>| <span data-ttu-id="59ccc-146">Идентификатор объекта пользователя, который олицетворяет при вызове API.</span><span class="sxs-lookup"><span data-stu-id="59ccc-146">The object ID of the user to impersonate when calling the API.</span></span> <span data-ttu-id="59ccc-147">Результаты проверки предназначены для атрибутов и ролей Онбехалфофусерид.</span><span class="sxs-lookup"><span data-stu-id="59ccc-147">The validation results are for the onBehalfOfUserId's attributes and roles.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="0ee1c-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ee1c-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="59ccc-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="59ccc-148">Response</span></span>
 
-<span data-ttu-id="0ee1c-149">При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-149">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="0ee1c-150">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-150">It does not return anything in the response body.</span></span>
+<span data-ttu-id="59ccc-149">При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика.</span><span class="sxs-lookup"><span data-stu-id="59ccc-149">If successful and there are no validation errors, the method returns `204 No Content` response code.</span></span> <span data-ttu-id="59ccc-150">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="59ccc-150">It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="0ee1c-151">Если запрос является недопустимым, метод возвращает `400 Bad Request` код отклика.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-151">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="0ee1c-152">В тексте отклика возвращается сообщение об ошибке со сведениями о недопустимом запросе.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-152">An error message with details about the invalid request is returned in the response body.</span></span>
+<span data-ttu-id="59ccc-151">Если запрос является недопустимым, метод возвращает `400 Bad Request` код отклика.</span><span class="sxs-lookup"><span data-stu-id="59ccc-151">If the request is invalid, the method returns `400 Bad Request` response code.</span></span> <span data-ttu-id="59ccc-152">В тексте отклика возвращается сообщение об ошибке со сведениями о недопустимом запросе.</span><span class="sxs-lookup"><span data-stu-id="59ccc-152">An error message with details about the invalid request is returned in the response body.</span></span>
 
-<span data-ttu-id="0ee1c-153">При возникновении ошибки проверки метод возвращает `422 Unprocessable Entity` код отклика.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-153">If there is a validation error, the method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="0ee1c-154">В тексте отклика возвращается сообщение об ошибке и коллекция сведений об ошибке.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-154">An error message and a collection of error details is returned in the response body.</span></span>
+<span data-ttu-id="59ccc-153">При возникновении ошибки проверки метод возвращает `422 Unprocessable Entity` код отклика.</span><span class="sxs-lookup"><span data-stu-id="59ccc-153">If there is a validation error, the method returns `422 Unprocessable Entity` response code.</span></span> <span data-ttu-id="59ccc-154">В тексте отклика возвращается сообщение об ошибке и коллекция сведений об ошибке.</span><span class="sxs-lookup"><span data-stu-id="59ccc-154">An error message and a collection of error details is returned in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0ee1c-155">Примеры</span><span class="sxs-lookup"><span data-stu-id="0ee1c-155">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="59ccc-155">Примеры</span><span class="sxs-lookup"><span data-stu-id="59ccc-155">Examples</span></span>
 
-<span data-ttu-id="0ee1c-156">В этом примере показан успешный запрос на проверку.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-156">This is an example of a successful validation request.</span></span>
+<span data-ttu-id="59ccc-156">В этом примере показан успешный запрос на проверку.</span><span class="sxs-lookup"><span data-stu-id="59ccc-156">This is an example of a successful validation request.</span></span>
 
-### <a name="request"></a><span data-ttu-id="0ee1c-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ee1c-157">Request</span></span>
+### <a name="request"></a><span data-ttu-id="59ccc-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="59ccc-157">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "directoryobject_validateproperties"
@@ -79,7 +79,7 @@ Content-length: 164
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0ee1c-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ee1c-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="59ccc-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="59ccc-158">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -87,10 +87,20 @@ Content-length: 164
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="59ccc-159">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="59ccc-159">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="59ccc-160">Языках</span><span class="sxs-lookup"><span data-stu-id="59ccc-160">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Cs-snippets.md)]
 
-<span data-ttu-id="0ee1c-159">Это пример запроса с ошибками проверки.</span><span class="sxs-lookup"><span data-stu-id="0ee1c-159">This is an example of a request with validation errors.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="59ccc-161">Язык</span><span class="sxs-lookup"><span data-stu-id="59ccc-161">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
 
-### <a name="request"></a><span data-ttu-id="0ee1c-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ee1c-160">Request</span></span>
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<span data-ttu-id="59ccc-162">Это пример запроса с ошибками проверки.</span><span class="sxs-lookup"><span data-stu-id="59ccc-162">This is an example of a request with validation errors.</span></span>
+
+### <a name="request"></a><span data-ttu-id="59ccc-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="59ccc-163">Request</span></span>
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
@@ -104,7 +114,7 @@ Content-length: 164
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0ee1c-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ee1c-161">Response</span></span>
+### <a name="response"></a><span data-ttu-id="59ccc-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="59ccc-164">Response</span></span>
 ```http
 HTTP/1.1 422 
 Content-Type: application/json
@@ -144,5 +154,9 @@ Content-Type: application/json
   "description": "directoryObject: validateProperties",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
