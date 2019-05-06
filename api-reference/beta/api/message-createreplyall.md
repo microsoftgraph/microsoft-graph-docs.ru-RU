@@ -4,36 +4,36 @@ description: 'Создание черновика сообщения "ответ
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f863f0d1e6c4422a33ddb82009547c88020dbb75
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6ce0f40c980465896043905bfb868ef538800a00
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333198"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598034"
 ---
-# <a name="message-createreplyall"></a><span data-ttu-id="f64f7-103">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="f64f7-103">message: createReplyAll</span></span>
+# <a name="message-createreplyall"></a><span data-ttu-id="52cad-103">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="52cad-103">message: createReplyAll</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f64f7-104">Создание черновика сообщения "Ответить всем", чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createReplyAll**.</span><span class="sxs-lookup"><span data-stu-id="f64f7-104">Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call.</span></span> <span data-ttu-id="f64f7-105">После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.</span><span class="sxs-lookup"><span data-stu-id="f64f7-105">You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="52cad-104">Создание черновика сообщения "Ответить всем", чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createReplyAll**.</span><span class="sxs-lookup"><span data-stu-id="52cad-104">Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call.</span></span> <span data-ttu-id="52cad-105">После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.</span><span class="sxs-lookup"><span data-stu-id="52cad-105">You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
 
-<span data-ttu-id="f64f7-106">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="f64f7-106">**Note**</span></span>
+<span data-ttu-id="52cad-106">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="52cad-106">**Note**</span></span>
 
-- <span data-ttu-id="f64f7-107">Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="f64f7-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="f64f7-108">Если указать и то, и другое, будет возвращена ошибка неПравильного запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="f64f7-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="f64f7-109">Если свойство **replyTo** указано в исходном сообщении, в формате Интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в</span><span class="sxs-lookup"><span data-stu-id="f64f7-109">If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the</span></span>  
-<span data-ttu-id="f64f7-110">свойства **replyTo** и **toRecipients** , а не получатели в свойствах **from** и **toRecipients** .</span><span class="sxs-lookup"><span data-stu-id="f64f7-110">**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.</span></span> 
+- <span data-ttu-id="52cad-107">Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="52cad-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="52cad-108">Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="52cad-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="52cad-109">Если свойство **replyTo** указано в исходном сообщении, в формате Интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в</span><span class="sxs-lookup"><span data-stu-id="52cad-109">If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the</span></span>  
+<span data-ttu-id="52cad-110">свойства **replyTo** и **toRecipients** , а не получатели в свойствах **from** и **toRecipients** .</span><span class="sxs-lookup"><span data-stu-id="52cad-110">**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="f64f7-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f64f7-111">Permissions</span></span>
-<span data-ttu-id="f64f7-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f64f7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="52cad-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="52cad-111">Permissions</span></span>
+<span data-ttu-id="52cad-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52cad-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f64f7-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f64f7-114">Permission type</span></span>      | <span data-ttu-id="f64f7-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f64f7-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="52cad-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="52cad-114">Permission type</span></span>      | <span data-ttu-id="52cad-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="52cad-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f64f7-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f64f7-116">Delegated (work or school account)</span></span> | <span data-ttu-id="f64f7-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f64f7-117">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f64f7-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f64f7-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f64f7-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f64f7-119">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f64f7-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f64f7-120">Application</span></span> | <span data-ttu-id="f64f7-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f64f7-121">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="52cad-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="52cad-116">Delegated (work or school account)</span></span> | <span data-ttu-id="52cad-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="52cad-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="52cad-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="52cad-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52cad-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="52cad-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="52cad-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="52cad-120">Application</span></span> | <span data-ttu-id="52cad-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="52cad-121">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f64f7-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f64f7-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="52cad-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="52cad-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createReplyAll
@@ -41,28 +41,28 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
 POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
-## <a name="request-headers"></a><span data-ttu-id="f64f7-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f64f7-123">Request headers</span></span>
-| <span data-ttu-id="f64f7-124">Имя</span><span class="sxs-lookup"><span data-stu-id="f64f7-124">Name</span></span>       | <span data-ttu-id="f64f7-125">Тип</span><span class="sxs-lookup"><span data-stu-id="f64f7-125">Type</span></span> | <span data-ttu-id="f64f7-126">Описание</span><span class="sxs-lookup"><span data-stu-id="f64f7-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="52cad-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="52cad-123">Request headers</span></span>
+| <span data-ttu-id="52cad-124">Имя</span><span class="sxs-lookup"><span data-stu-id="52cad-124">Name</span></span>       | <span data-ttu-id="52cad-125">Тип</span><span class="sxs-lookup"><span data-stu-id="52cad-125">Type</span></span> | <span data-ttu-id="52cad-126">Описание</span><span class="sxs-lookup"><span data-stu-id="52cad-126">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f64f7-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="f64f7-127">Authorization</span></span>  | <span data-ttu-id="f64f7-128">string</span><span class="sxs-lookup"><span data-stu-id="f64f7-128">string</span></span>  | <span data-ttu-id="f64f7-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f64f7-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f64f7-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f64f7-131">Content-Type</span></span> | <span data-ttu-id="f64f7-132">string</span><span class="sxs-lookup"><span data-stu-id="f64f7-132">string</span></span>  | <span data-ttu-id="f64f7-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f64f7-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="52cad-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="52cad-127">Authorization</span></span>  | <span data-ttu-id="52cad-128">string</span><span class="sxs-lookup"><span data-stu-id="52cad-128">string</span></span>  | <span data-ttu-id="52cad-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="52cad-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="52cad-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="52cad-131">Content-Type</span></span> | <span data-ttu-id="52cad-132">string</span><span class="sxs-lookup"><span data-stu-id="52cad-132">string</span></span>  | <span data-ttu-id="52cad-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="52cad-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f64f7-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f64f7-135">Request body</span></span>
-<span data-ttu-id="f64f7-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f64f7-136">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="52cad-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="52cad-135">Request body</span></span>
+<span data-ttu-id="52cad-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="52cad-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f64f7-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="f64f7-137">Parameter</span></span>    | <span data-ttu-id="f64f7-138">Тип</span><span class="sxs-lookup"><span data-stu-id="f64f7-138">Type</span></span>   |<span data-ttu-id="f64f7-139">Описание</span><span class="sxs-lookup"><span data-stu-id="f64f7-139">Description</span></span>|
+| <span data-ttu-id="52cad-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="52cad-137">Parameter</span></span>    | <span data-ttu-id="52cad-138">Тип</span><span class="sxs-lookup"><span data-stu-id="52cad-138">Type</span></span>   |<span data-ttu-id="52cad-139">Описание</span><span class="sxs-lookup"><span data-stu-id="52cad-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f64f7-140">comment</span><span class="sxs-lookup"><span data-stu-id="f64f7-140">comment</span></span>|<span data-ttu-id="f64f7-141">String</span><span class="sxs-lookup"><span data-stu-id="f64f7-141">String</span></span>|<span data-ttu-id="f64f7-p106">Добавляемый комментарий. Может быть пустой строкой.</span><span class="sxs-lookup"><span data-stu-id="f64f7-p106">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="f64f7-144">message</span><span class="sxs-lookup"><span data-stu-id="f64f7-144">message</span></span>|[<span data-ttu-id="f64f7-145">message</span><span class="sxs-lookup"><span data-stu-id="f64f7-145">message</span></span>](../resources/message.md)|<span data-ttu-id="f64f7-146">Все доступные для записи свойства, которые необходимо обновить в сообщении "ответить всем".</span><span class="sxs-lookup"><span data-stu-id="f64f7-146">Any writeable properties to update in the reply-all message.</span></span>|
+|<span data-ttu-id="52cad-140">comment</span><span class="sxs-lookup"><span data-stu-id="52cad-140">comment</span></span>|<span data-ttu-id="52cad-141">String</span><span class="sxs-lookup"><span data-stu-id="52cad-141">String</span></span>|<span data-ttu-id="52cad-p106">Добавляемый комментарий. Может быть пустой строкой.</span><span class="sxs-lookup"><span data-stu-id="52cad-p106">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="52cad-144">message</span><span class="sxs-lookup"><span data-stu-id="52cad-144">message</span></span>|[<span data-ttu-id="52cad-145">message</span><span class="sxs-lookup"><span data-stu-id="52cad-145">message</span></span>](../resources/message.md)|<span data-ttu-id="52cad-146">Все доступные для записи свойства, которые необходимо обновить в сообщении "ответить всем".</span><span class="sxs-lookup"><span data-stu-id="52cad-146">Any writeable properties to update in the reply-all message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f64f7-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="f64f7-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="52cad-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="52cad-147">Response</span></span>
 
-<span data-ttu-id="f64f7-148">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f64f7-148">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="52cad-148">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="52cad-148">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f64f7-149">Пример</span><span class="sxs-lookup"><span data-stu-id="f64f7-149">Example</span></span>
-<span data-ttu-id="f64f7-150">В следующем примере создается черновик для ответа ALL и добавляется вложение и комментарий в одном вызове **createReplyAll** .</span><span class="sxs-lookup"><span data-stu-id="f64f7-150">The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.</span></span>
-##### <a name="request"></a><span data-ttu-id="f64f7-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="f64f7-151">Request</span></span>
-<span data-ttu-id="f64f7-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f64f7-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="52cad-149">Пример</span><span class="sxs-lookup"><span data-stu-id="52cad-149">Example</span></span>
+<span data-ttu-id="52cad-150">В следующем примере создается черновик для ответа ALL и добавляется вложение и комментарий в одном вызове **createReplyAll** .</span><span class="sxs-lookup"><span data-stu-id="52cad-150">The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.</span></span>
+##### <a name="request"></a><span data-ttu-id="52cad-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="52cad-151">Request</span></span>
+<span data-ttu-id="52cad-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="52cad-152">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createreplyall"
@@ -85,8 +85,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f64f7-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="f64f7-153">Response</span></span>
-<span data-ttu-id="f64f7-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f64f7-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="52cad-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="52cad-153">Response</span></span>
+<span data-ttu-id="52cad-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="52cad-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,6 +129,14 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="52cad-157">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="52cad-157">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="52cad-158">Язык</span><span class="sxs-lookup"><span data-stu-id="52cad-158">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_createreplyall-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,6 +147,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
