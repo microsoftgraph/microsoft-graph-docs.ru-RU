@@ -3,12 +3,12 @@ title: Обновление открытого расширения
 description: 'Обновление открытого расширения (объекта openTypeExtension) с использованием свойств, указанных в теле запроса:'
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a90e960faf526f3d4bf51832f150757f261e3438
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bc8e8446631a0872fc3e7fa73cb0bea36d40672e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332999"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596955"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -86,7 +86,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 
 ## <a name="example"></a>Пример
-#### <a name="request-1"></a>Запрос 1
+#### <a name="request-1"></a>Запрос 1
 
 В первом примере показано, как обновить расширение в сообщении. Изначально расширение представлено указанными ниже полезными данными JSON.
 
@@ -137,7 +137,7 @@ PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 
-#### <a name="response-1"></a>Отклик 1
+#### <a name="response-1"></a>Ответ 1
 
 Вот отклик, который не зависит от способа, которым вы ссылаетесь на расширение.
 
@@ -209,7 +209,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Отклик 2
+#### <a name="response-2"></a>Ответ 2
 
 Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.
 
@@ -238,6 +238,14 @@ Content-Type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_opentypeextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -249,6 +257,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

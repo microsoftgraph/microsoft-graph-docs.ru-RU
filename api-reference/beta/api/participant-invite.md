@@ -1,21 +1,21 @@
 ---
 title: 'участник: пригласить'
-description: Приглашение участников в активный звонок.
+description: Приглашение участников в активный вызов.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 375d799a6598d1ce453f412851820df49ff98e50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec1a5ee5510ddf2da0cd93cf93a28ee14eaf1b81
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337895"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595842"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Приглашение участников в активный звонок.
+Приглашение участников в активный вызов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -97,6 +97,14 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/participant-invite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <br/>
 
 ### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующем собрании P2P
@@ -406,7 +414,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a>ПриСоединение к собранию канала без мультимедиа
+### <a name="join-channel-meeting-without-media"></a>Присоединение к собранию канала без мультимедиа
 
 > **Важно!** если экземпляр Bot присоединяется только в целях облегчения передачи, следует избегать согласования мультимедиа.  Поэтому лучше всего добавлять его без `requestedModalities` или. `mediaConfig`
 
@@ -722,6 +730,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/participant-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

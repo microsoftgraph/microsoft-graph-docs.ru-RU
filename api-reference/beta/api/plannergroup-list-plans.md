@@ -1,21 +1,19 @@
 ---
-title: Перечисление планов
-description: Получение списка объектов **plannerPlan** , принадлежащих объекту Group.
-localization_priority: Normal
+title: Список планов
+description: Получение списка объектов **plannerPlan**, принадлежащих объекту group.
+localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6653b5008b32de60f2de6beff30bd56ee184f73c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a80522fb9a824db41413854c39046e2ff81226d6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337770"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33594899"
 ---
 # <a name="list-plans"></a>Список планов
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Получение списка объектов **plannerPlan** , принадлежащих объекту [Group](../resources/group.md) .
+Получение списка объектов **plannerPlan**, принадлежащих объекту [group](../resources/group.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -52,7 +50,7 @@ GET /groups/{group-id}/planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans
+GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -86,16 +84,27 @@ Content-length: 421
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_plans-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_plans-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannergroup-list-plans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannergroup-list-plans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

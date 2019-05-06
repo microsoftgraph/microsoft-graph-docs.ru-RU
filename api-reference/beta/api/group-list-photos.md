@@ -4,17 +4,14 @@ description: Получение списка объектов profilePhoto.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 9d20ac132e46dbba73c0432121f7cd2ac137d24a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d1ce8094e34370c5a04d770b46e7d7f9982233e5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324438"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592845"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Получение списка объектов [profilePhoto](../resources/profilephoto.md).
 
 ## <a name="permissions"></a>Разрешения
@@ -22,9 +19,9 @@ ms.locfileid: "33324438"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +29,6 @@ ms.locfileid: "33324438"
 GET /groups/{id}/photos
 GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 ```
-
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -41,7 +37,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -55,7 +51,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
   "name": "get_photos"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/photos
+GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```
 
 #### <a name="response"></a>Отклик
@@ -82,16 +78,27 @@ Content-length: 94
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_photos-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_photos-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List photos",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-photos.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-photos.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

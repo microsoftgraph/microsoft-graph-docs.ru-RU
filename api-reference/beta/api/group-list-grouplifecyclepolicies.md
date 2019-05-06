@@ -4,16 +4,14 @@ description: Получает список объектов groupLifecyclePolicy
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a8dc26d78a0e840af5c1bea7683788ceb55fe514
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 98b9ddd448a78c025b3396c22d7da86c17913395
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324251"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592999"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Перечисление groupLifecyclePolicies
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получает список объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md), к которым принадлежит группа.
 
@@ -40,7 +38,7 @@ GET /groups/{id}/groupLifecyclePolicies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.
@@ -53,7 +51,7 @@ GET /groups/{id}/groupLifecyclePolicies
   "name": "get_grouplifecyclepolicies"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
+GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```
 ##### <a name="response"></a>Отклик
 
@@ -67,7 +65,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 227
+Content-length: 222
 
 {
   "value": [
@@ -80,16 +78,27 @@ Content-length: 227
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List groupLifecyclePolicies",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-grouplifecyclepolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

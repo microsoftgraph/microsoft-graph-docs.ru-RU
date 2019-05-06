@@ -4,12 +4,12 @@ description: 'Создание черновика сообщения "ответ
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f863f0d1e6c4422a33ddb82009547c88020dbb75
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6ce0f40c980465896043905bfb868ef538800a00
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333198"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598034"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -19,7 +19,7 @@ ms.locfileid: "33333198"
 
 **Примечание**
 
-- Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра. Если указать и то, и другое, будет возвращена ошибка неПравильного запроса HTTP 400.
+- Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра. Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.
 - Если свойство **replyTo** указано в исходном сообщении, в формате Интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в  
 свойства **replyTo** и **toRecipients** , а не получатели в свойствах **from** и **toRecipients** . 
 
@@ -129,6 +129,14 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_createreplyall-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,6 +147,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

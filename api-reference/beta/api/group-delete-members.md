@@ -1,20 +1,17 @@
 ---
 title: Удаление элемента
 description: С помощью этого API можно удалить участника из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации **members**. Вы можете удалять пользователей или другие группы.
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 0b985a5bc7c70e55a4e5ecfcc395595b7041fa30
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 56b717556fd129f30ba5e2957a7779ea1c6a8a05
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329654"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593337"
 ---
 # <a name="remove-member"></a>Удаление члена
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 С помощью этого API можно удалить участника из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации **members**. Вы можете удалять пользователей или другие группы.
 
 ## <a name="permissions"></a>Разрешения
@@ -24,7 +21,7 @@ ms.locfileid: "33329654"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Group.ReadWrite.All, Directory.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +48,7 @@ DELETE /groups/{id}/members/{id}/$ref
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 ```
 Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.
 
@@ -66,16 +63,27 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create member",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete-members.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delete-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

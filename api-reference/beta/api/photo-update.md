@@ -2,16 +2,14 @@
 title: Обновление фотографии
 description: Обновление свойств объекта фотографии.
 localization_priority: Normal
-ms.openlocfilehash: f9e64aed22308736ff08d6297a9f8823aa7e2de1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6ca485b15ef5727fb03e450823a51daf8a227441
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332594"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595655"
 ---
 # <a name="update-photo"></a>Обновление фотографии
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств объекта фотографии.
 ## <a name="permissions"></a>Разрешения
@@ -36,7 +34,7 @@ PATCH /drive/root/createdByUser/photo
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -53,7 +51,7 @@ PATCH /drive/root/createdByUser/photo
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
+PATCH https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 Content-type: application/json
 Content-length: 53
 
@@ -81,16 +79,27 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_photo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_photo-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/photo-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

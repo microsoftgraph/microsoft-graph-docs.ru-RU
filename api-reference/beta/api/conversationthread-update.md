@@ -4,16 +4,14 @@ description: Блокировка и разблокировка, позволя�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e4a2fbeb8e92271294ffa9e3fb065a9d9ae64649
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9f374cd4b9f344d15fc64bff57659c5b327dd477
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326138"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591977"
 ---
 # <a name="update-conversationthread"></a>Обновление объекта conversationThread
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Блокировка и разблокировка, позволяющие разрешить или предотвратить дальнейшую публикацию записей в цепочке.
 ## <a name="permissions"></a>Разрешения
@@ -38,7 +36,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -56,7 +54,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
   "name": "update_conversationthread"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups/{id}/threads/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 Content-type: application/json
 Content-length: 419
 
@@ -88,7 +86,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+  "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -100,19 +98,30 @@ Content-length: 419
       }
     }
   ],
-  "isLocked": true
+  "isLocked": true 
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_conversationthread-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_conversationthread-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update conversationthread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

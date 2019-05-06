@@ -1,19 +1,17 @@
 ---
 title: Создание объекта plannerTask
 description: Используйте этот API, чтобы создать объект **plannerTask**.
-localization_priority: Normal
+localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 400f40540370580b3d3af7a94368cdc9582d703e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e5c3c1c9fec96e7f72ab3c7aa61fe574d1f3319a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332531"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595519"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API, чтобы создать объект **plannerTask**.
 ## <a name="permissions"></a>Разрешения
@@ -53,7 +51,7 @@ POST /planner/tasks
   "name": "create_plannertask_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/planner/tasks
+POST https://graph.microsoft.com/v1.0/planner/tasks
 Content-type: application/json
 Content-length: 285
 
@@ -108,16 +106,24 @@ Content-length: 677
   "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_plannertask_from_planner-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerTask",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planner-post-tasks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
