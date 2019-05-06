@@ -4,16 +4,14 @@ description: Копирование папки почты со всем ее с�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6b1fb9b0b3d3891f33020458ffb5b140f9bf42c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c19903977cb90b119e21fbc4cad944afd87ea1fc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333388"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598137"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Копирование папки почты со всем ее содержимым в другую папку почты.
 
@@ -37,7 +35,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-
 | Заголовок | Значение |
 |:-------|:------|
 | Авторизация | `Bearer {token}`. Обязательно. |
@@ -60,7 +57,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 Ниже приведен пример вызова этого API.
 
 ##### <a name="request"></a>Запрос
-
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -68,7 +64,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -82,7 +78,6 @@ Content-length: 44
 Ниже приведен пример отклика.
 
 > **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,16 +98,27 @@ Content-length: 179
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
