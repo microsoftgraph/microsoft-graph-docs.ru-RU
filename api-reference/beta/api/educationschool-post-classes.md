@@ -4,16 +4,14 @@ description: Добавление класса в учебное заведен�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3c20e26c338f35eb6b4f17bf6ad214054c009fce
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9967192b0a2663f44337e31822b53ce31fdb1b04
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324683"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587948"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Добавление educationClass к educationSchool
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Добавление класса в учебное заведение.
 
@@ -24,7 +22,7 @@ ms.locfileid: "33324683"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +35,7 @@ POST /education/schools/{id}/classes/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.
 
 
@@ -52,12 +50,12 @@ POST /education/schools/{id}/classes/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/schools/10002/classes/$ref
+POST https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/$ref
 Content-type: application/json
 Content-length: 224
 
 {
- "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"
+ "@odata.id":"https://graph.microsoft.com/v1.0/education/classes/11006"
 }
 ```
 
@@ -74,16 +72,24 @@ Content-length: 224
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_educationclass_from_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-post-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

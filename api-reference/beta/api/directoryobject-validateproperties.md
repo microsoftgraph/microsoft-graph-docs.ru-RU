@@ -4,12 +4,12 @@ description: Убедитесь, что отображаемое имя или �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 182e1d97a0fe6406a0d5d2930cb87a473c7f9cdb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 64bfe6865cbb7d887bbb19e27ee583b123616c80
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325720"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591144"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: Валидатепропертиес
 
@@ -22,7 +22,7 @@ ms.locfileid: "33325720"
 
 Этот API возвращается при первом обнаружении ошибки. Если одно или несколько свойств не прошли несколько проверок, возвращается только свойство с первой ошибкой проверки. Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Необходимые условия
 
 Для выполнения этого API требуются следующие **разрешения** : *Group. Read. ALL*
 
@@ -39,13 +39,13 @@ POST /directoryObjects/validateProperties
 | Авторизация  | Bearer {code}    |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Сущности|String| `Group`— единственный поддерживаемый тип объекта. |
-|displayName|String| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname). |
+|displayName|Строка| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname). |
 |mailNickname|String| Псевдоним почты для группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname). |
 |Онбехалфофусерид|GUID| Идентификатор объекта пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей Онбехалфофусерид. |
 
@@ -87,6 +87,16 @@ Content-length: 164
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Это пример запроса с ошибками проверки.
 
@@ -144,5 +154,9 @@ Content-Type: application/json
   "description": "directoryObject: validateProperties",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

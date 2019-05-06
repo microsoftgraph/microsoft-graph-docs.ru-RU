@@ -5,16 +5,14 @@ ms.date: 09/10/2017
 title: Список пользователей, имеющих доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a5886e45f903a5d4419617ff21fd00fb274a4868
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5b3d096b42b06226580bf7d7b430351ab5719ad4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325354"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589158"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений на общий доступ в элементе DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание списка действующих разрешений на общий доступ в элементе [DriveItem](../resources/driveitem.md).
 
@@ -76,7 +74,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 В этом примере показано, как получить набор разрешений для элемента в объекте drive пользователя, выполнившего вход в систему.
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -131,6 +129,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-item-permissions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-item-permissions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Замечания
 
@@ -142,13 +150,14 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
   "tocPath": "Sharing/Permissions",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-permissions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

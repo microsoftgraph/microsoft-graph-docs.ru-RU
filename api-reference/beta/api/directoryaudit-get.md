@@ -1,20 +1,24 @@
 ---
 title: Получение directoryAudit
-description: Предоставляет (или получает) определенный элемент журнала аудита Azure Active Directory. Включает журналы аудита, созданные различными службами Azure Active Directory, например службой управления пользователями, приложениями, устройствами и группами, управления привилегированными пользователями, проверки доступа, условий использования, защиты идентификации, управления паролями (SSPR и сброс паролей администраторов), самостоятельного управления группами и т. д.
+description: Описывает метод Get ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40d94dd0ffe5df1adc9df9042173e33b5b98a204
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455116"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591690"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
-Предоставляет (или получает) определенный элемент журнала аудита Azure Active Directory. Включает журналы аудита, созданные различными службами Azure Active Directory, например службой управления пользователями, приложениями, устройствами и группами, управления привилегированными пользователями, проверки доступа, условий использования, защиты идентификации, управления паролями (SSPR и сброс паролей администраторов), самостоятельного управления группами и т. д.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получение конкретного элемента журнала аудита Azure Active Directory. Сюда входит элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, Управление устройствами и группами, управление правами на доступ к данным, обзоры доступа, условия использования, защита удостоверений, управление паролями ( самообслуживания и сброс паролей администратора), самостоятельное управление группами и т. д.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -26,26 +30,36 @@ ms.locfileid: "32455116"
 Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+
+Этот метод поддерживает параметры запросов OData для настройки отклика. Сведения о том, как использовать эти параметры, можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Ответ
+
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директоряудит](../resources/directoryaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudit"
@@ -53,8 +67,11 @@ GET /auditLogs/directoryAudits/{id}
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 ```
-##### <a name="response"></a>Отклик
+
+### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,7 +84,7 @@ Content-length: 218
 ```
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{
         "id": "id",
         "category": "UserManagement",
@@ -89,7 +106,7 @@ Content-length: 218
         "targetResources": [{
             "@odata.type": "#microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6xx2-4xx4-8xxd-cxxfdxx5xx95",
-            "displayName": "Lynda.com",
+            "displayName": "Example.com",
             "modifiedProperties": [{
                 "displayName": "Action Client Name",
                 "oldValue": null,
@@ -110,3 +127,27 @@ Content-length: 218
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryaudit-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryaudit-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -3,12 +3,12 @@ title: Получение ресурса DriveItemVersion (ознакомите�
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b9b5fae9013fcb2e6014f322d950aa831bafdb71
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 62f9e68ce53c2caa422053b355729054073bf754
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325220"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588157"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>Получение ресурса DriveItemVersion (ознакомительная версия)
 
@@ -78,6 +78,16 @@ Content-Type: application/json
     "size": 123
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-single-version-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-single-version-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Замечания
 
@@ -93,6 +103,9 @@ OneDrive не сохраняет полные метаданные для пре
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitemversion-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

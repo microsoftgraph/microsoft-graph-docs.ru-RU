@@ -4,16 +4,14 @@ description: 'Ответ на цепочку в беседе группы и д�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ae8899990cf13b14644ff94db576e64e568c4832
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0500a51d582dcd728b7c0807d22ef4e58e4c5db7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326135"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591801"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ответ на цепочку в беседе группы и добавление в нее новой записи. Вы можете указать в запросе всю родительскую беседу или только цепочку.
 
@@ -24,7 +22,7 @@ ms.locfileid: "33326135"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +56,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
   "name": "conversationthread_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/reply
+POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/reply
 Content-type: application/json
 Content-length: 1131
 
@@ -81,16 +79,27 @@ Content-length: 1131
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/conversationthread_reply-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/conversationthread_reply-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "conversationThread: reply",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-reply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-reply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
