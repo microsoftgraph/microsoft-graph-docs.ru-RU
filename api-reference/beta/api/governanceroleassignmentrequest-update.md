@@ -2,12 +2,12 @@
 title: Обновление Говернанцеролеассигнментрекуестс
 description: Позволяет администраторам обновлять свои решения (`AdminApproved` или `AdminDenied`) в говернанцеролеассигнментрекуестс, которые находятся в состоянии `PendingAdminDecision`.
 localization_priority: Normal
-ms.openlocfilehash: e18793f1267047ca4e8e2fed9d03cb8e21c7c289
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a20e583d701dca988b935b21e1d5874efcff6415
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329593"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593503"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление Говернанцеролеассигнментрекуестс
 
@@ -44,7 +44,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |:-------------|:----------------------|:--------|:----------|
 |причиной        |String                 |✓        |Причина, предоставляемая администратором для своего решения.|
 |решении        |String                 |✓        |Принятие решения администратором запроса на назначение роли. Значение должно быть Обновлено как `AdminApproved` или. `AdminDenied`|
-|Диспетчер      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение роли. Для состояния `AdminApproved`это обязательное требование.|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение роли. Для состояния `AdminApproved`это обязательное требование.|
 |Ассигнментстате      |String|         | Состояние присваивания, а также значения: `Eligible` или. `Active` Для решения `AdminApproved`это необходимо. |
 ### <a name="response"></a>Отклик
 Этот метод можно применять только к запросам, которые находятся в состоянии `PendingAdminDecision`.
@@ -73,6 +73,16 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
   "assignmentState": "Eligible"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="response"></a>Отклик
 <!-- {
@@ -93,6 +103,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

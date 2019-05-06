@@ -1,19 +1,21 @@
 ---
 title: Тип ресурса directoryAudit
-description: Этот ресурс представляет элементы аудита каталога и их коллекцию
+description: Описывает ресурс Директоряудит (Entity) API Microsoft Graph (REST), который помогает выполнять аудит действий с каталогом (клиентом) (бета-версия).
 author: lleonard-msft
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 4511c2f34a12298651f690deeac713ff3caa3006
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543228"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611290"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
-Этот ресурс представляет элементы аудита каталога и их коллекцию
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Представляет элементы аудита каталога и его коллекцию.
 
 ## <a name="methods"></a>Методы
 
@@ -27,7 +29,7 @@ ms.locfileid: "32543228"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|activityDisplayName|String|Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список зарегистрированных действий см. в [списке действий Azure AD](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|activityDisplayName|String|Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список зарегистрированных действий см. в [списке действий Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|Коллекция [keyValue](keyvalue.md)|Указывает дополнительные сведения о действии.|
 |category|String|Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)|
 |correlationId|GUID|Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.|

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Возврат файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cec932eef89c02569d6f350f436c6a7721286e92
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 982a581d44e39e6ddcc7bb3a52da64cd2a2eaf55
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325409"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589368"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>Возврат изменений в ресурсе DriveItem
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -74,6 +74,16 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/checkin-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/checkin-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="remarks"></a>Замечания
 
@@ -87,6 +97,9 @@ HTTP/1.1 204 No content
   "keywords": "copy existing item",
   "section": "documentation",
   "tocPath": "Items/Copy",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

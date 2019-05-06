@@ -4,12 +4,12 @@ description: В функции проверок доступа Azure AD извл
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fee4b4adc4bc4e33964575976c67cfeaa077a34c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ef1db408a4b47928e86f47f30588a8e09f98dad7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323729"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586203"
 ---
 # <a name="list-accessreview-decisions"></a>Список решений Акцессревиев
 
@@ -26,7 +26,7 @@ ms.locfileid: "33323729"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. Read. ALL |
+|Для приложений                            | AccessReview.Read.All |
 
  Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.
 
@@ -40,7 +40,7 @@ GET /accessReviews('{reviewId}')/decisions
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик
@@ -81,6 +81,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>См. также
 
@@ -88,10 +98,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Получение Акцессревиев](accessreview-get.md) |  [Акцессревиев](../resources/accessreview.md) |  Получение проверки доступа. |
 |[Список моих решений Акцессревиев](accessreview-listmydecisions.md) |        Коллекция [акцессревиевдеЦисион](../resources/accessreviewdecision.md)|    В качестве проверяющего получите мое решение Акцессревиев.|
-|[Отправка напоминания о Акцессревиев](accessreview-sendreminder.md) |       Отсутствуют.   |   Отправьте напоминание рецензентам Акцессревиев. |
-|[Остановить Акцессревиев](accessreview-stop.md) |        Отсутствуют.   |   Остановка Акцессревиев. |
-|[Сброс решений Акцессревиев](accessreview-reset.md) |        Отсутствуют.   |   Сброс решений во время выполнения Акцессревиев.|
-|[Применение решений Акцессревиев](accessreview-apply.md) |        Отсутствуют.   |   Применение решений из завершенной Акцессревиев.|
+|[Отправка напоминания о Акцессревиев](accessreview-sendreminder.md) |       Нет.   |   Отправьте напоминание рецензентам Акцессревиев. |
+|[Остановить Акцессревиев](accessreview-stop.md) |        Нет.   |   Остановка Акцессревиев. |
+|[Сброс решений Акцессревиев](accessreview-reset.md) |        Нет.   |   Сброс решений во время выполнения Акцессревиев.|
+|[Применение решений Акцессревиев](accessreview-apply.md) |        Нет.   |   Применение решений из завершенной Акцессревиев.|
 
 
 <!--
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

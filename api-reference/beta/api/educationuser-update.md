@@ -4,12 +4,12 @@ description: Обновление свойств объекта **educationuser*
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: ef544aca0509322d12d6cd3e70e4c52334272bb3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c1f5c659c86b49c689d727d9417f0ae54168a984
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324876"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587377"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -23,7 +23,7 @@ ms.locfileid: "33324876"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All |
+|Для приложений | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +48,8 @@ PATCH /education/users/{id}
 |surname| String | Фамилия пользователя|
 |mail| String| Электронный адрес|
 |mobilePhone| String | Номер мобильного телефона пользователя |
-|externalSource|строка| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|строка| Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|string| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|string| Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Почтовый адрес пользователя.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Адрес проживания пользователя.|
 |primaryRole|string| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`.|
@@ -127,6 +127,16 @@ Content-length: 508
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -137,6 +147,9 @@ Content-length: 508
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

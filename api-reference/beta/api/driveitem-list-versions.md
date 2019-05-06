@@ -1,18 +1,16 @@
 ---
-title: ПереЧисление версий объекта DriveItem
+title: Перечисление версий объекта DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3b9078da144bbee02a7f97046b6cce3fa8a84154
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5f1e53326fced074bddacbaa7501ed4ed2986a68
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325252"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588325"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>ПереЧисление версий объекта DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="listing-versions-of-a-driveitem"></a>Перечисление версий объекта DriveItem
 
 OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 В зависимости от того, каковы служба и конфигурация, новую версию можно создавать при каждом изменении или сохранении, создавать вручную или не создавать никогда.
@@ -53,7 +51,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions
@@ -108,6 +106,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Замечания
 
@@ -116,13 +124,14 @@ OneDrive не сохраняет полные метаданные для пре
 Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

@@ -4,12 +4,12 @@ description: В функции рецензирования Access в Azure AD �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7be3d5ea922f8d2dca87dba005e62fd30fef3540
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 756cb2d7bc93ea8fe490d0f857c609c3f82229f6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323083"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586004"
 ---
 # <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
 
@@ -23,7 +23,7 @@ ms.locfileid: "33323083"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. Read. ALL  |
+|Для приложений                            | AccessReview.Read.All  |
 
 
  Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.
@@ -38,7 +38,7 @@ GET /accessReviews('{reviewId}')/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик
@@ -76,14 +76,24 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_reviewers-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_reviewers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>См. также
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение Акцессревиев](accessreview-get.md) |  [Акцессревиев](../resources/accessreview.md) |  Получение проверки доступа. |
-|[Добавление рецензента Акцессревиев](accessreview-addreviewer.md) |     Отсутствуют.   |   Добавьте проверяющего в объект Акцессревиев. |
-|[Удаление рецензента Акцессревиев](accessreview-removereviewer.md) | Отсутствуют. |   Удаление проверяющего из Акцессревиев. |
+|[Добавление рецензента Акцессревиев](accessreview-addreviewer.md) |     Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
+|[Удаление рецензента Акцессревиев](accessreview-removereviewer.md) | Нет. |   Удаление проверяющего из Акцессревиев. |
 
 
 <!--
@@ -93,6 +103,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

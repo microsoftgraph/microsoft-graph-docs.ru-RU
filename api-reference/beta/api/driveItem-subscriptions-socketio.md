@@ -3,12 +3,12 @@ title: Получение конечной точки WebSocket
 description: Использование этих API в производственных приложениях не поддерживается.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1f4d793655c2f51454bbd58303d1f6141b46cc5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 03dbaf8522005c2bb0c038c8ba885becc41f72dc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325398"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591823"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 
@@ -19,7 +19,7 @@ ms.locfileid: "33325398"
 Socket.io — это популярная библиотека уведомлений для JavaScript, использующая WebSocket. Дополнительные сведения см. в разделе [Socket.IO](https://socket.io).
 
 [drive]: ../resources/drive.md
-[Socket.IO]: https://socket.io/
+[socket.io]: https://socket.io/
 
 ## <a name="permissions"></a>Разрешения
 
@@ -69,6 +69,16 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 `notificationUrl` Возвращаемый параметр является URL-адресом конечной точки Socket.IO.
 Чтобы использовать его с клиентом socket.io, разделите строку на `/callback?` маркере.
@@ -92,3 +102,16 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

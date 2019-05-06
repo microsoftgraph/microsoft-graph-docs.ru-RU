@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3b5e0c6ef03af87af9f28745bd73bb0cb886852d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0fab3f7a25a9f16a3808e4c3ec530132781e0bee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325293"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589480"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -67,7 +67,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | sendInvitation   | Boolean                                         | Указывает, создано ли электронное письмо или запись (false) или разрешение (true).            |
 | roles            | Collection(String)                              | Указывают роли, которые предоставляются получателям приглашения на доступ.                         |
 | expirationDateTime | DateTimeOffset                       | Укажите значение даты и времени, после которого истечет срок действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и в личных учетных записях OneDrive для бизнеса.
-| password           | Строка                         | Пароль, установленный в приглашении создателем. Только неОбязательные и OneDrive персональный
+| password           | Строка                         | Пароль, установленный в приглашении создателем. Только необязательные и OneDrive персональный
 
 ## <a name="example"></a>Пример
 
@@ -130,6 +130,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ### <a name="partial-success-response"></a>Частичный отклик об успешном выполнении
 
 При приглашении нескольких получателей уведомление может завершиться успешно для некоторых и не для других.
@@ -196,7 +206,7 @@ Content-type: application/json
 | Хипчеккрекуиред               | Необходимо выполнить разрешение ГИП (предотвращение проникновения на узел) — разрешить отправку уведомлений об отправке.
 | Ексчанжеинвалидусер            | Не найден почтовый ящик текущего пользователя.
 | Ексчанжеаутофмаилбокскуота      | Недостаточно квоты.
-| ЕксчанжемаксреЦипиентс          | ПреВышено максимальное количество получателей, которые могут быть отправлены в одно и то же время.
+| ЕксчанжемаксреЦипиентс          | Превышено максимальное количество получателей, которые могут быть отправлены в одно и то же время.
 
 >**Примечание:** В любой момент служба может добавить новые коды ошибок или прекратить возврат старых.
 
@@ -219,6 +229,9 @@ Content-type: application/json
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

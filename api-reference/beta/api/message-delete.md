@@ -4,12 +4,12 @@ description: Удаление сообщения из почтового ящи�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8cc1aeac2e51282851aba73a07668f36d3407fee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0c221b08d895bcc19ebbb87996b8ef3c5f3c029a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338635"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598639"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
@@ -63,7 +63,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 В первом примере показано, как удалить указанное сообщение.
 <!-- {
   "blockType": "request",
@@ -73,7 +73,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -81,6 +81,16 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_message-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>Запрос 2
 В следующем примере показано, как **** удалить определенное упоминание из указанного сообщения.
@@ -91,8 +101,8 @@ HTTP/1.1 204 No Content
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```
-##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример отклика. 
+##### <a name="response-2"></a>Ответ 2
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -100,6 +110,16 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_mention_in_message-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_mention_in_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -109,6 +129,11 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

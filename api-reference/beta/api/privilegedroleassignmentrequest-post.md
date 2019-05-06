@@ -2,12 +2,12 @@
 title: Создание Привилежедролеассигнментрекуест
 description: Создание объекта привилежедролеассигнментрекуест.
 localization_priority: Normal
-ms.openlocfilehash: f120181144bc73d7a66c42d03e8743bbbc736582
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d963bd1cc103928675890aa7ddeccd5fd27594c0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337240"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593769"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание Привилежедролеассигнментрекуест
 
@@ -41,10 +41,10 @@ POST /privilegedRoleAssignmentRequests
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
 |roleId|String|Идентификатор роли. Обязательное.|
-|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: Администраторы Add Users to Roles; `UserAdd`: Пользователи добавляют назначения ролей. Обязательный.|
-|Ассигнментстате|String|Состояние назначения. Значение может быть `Eligible` для правого назначения `Active` , если оно напрямую назначено `Active` администраторами или активировано в соответствии с подходящими пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
+|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: Администраторы Add Users to Roles; `UserAdd`: Пользователи добавляют назначения ролей. Обязательно.|
+|Ассигнментстате|String|Состояние назначения. Значение может быть `Eligible` для правого назначения `Active` , если оно напрямую назначено `Active` администраторами или активировано в соответствии с подходящими пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательно.|
 |причиной|String|Необходимо указать причину для запроса на назначение роли для аудита и проверки.|
-|Диспетчер|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение роли.|
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение роли.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
@@ -67,7 +67,7 @@ POST /privilegedRoleAssignmentRequests
 | 400 Бадрекуест | Роль уже активирована. |
 | 400 Бадрекуест | Женерицелеватеусерторолеассигнментс: Тикктинг сведения являются обязательными и не предоставляются в процессе активации. |
 | 400 Бадрекуест | Между запланированной активацией и запросом существует перекрытие. |
-| 403 авторизация | Для повышения требуется многоФакторная проверка поДлинности. |
+| 403 авторизация | Для повышения требуется многофакторная проверка подлинности. |
 | 403 авторизация | От имени повышения прав не разрешено. |
 
 ## <a name="example"></a>Пример
@@ -130,6 +130,16 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -140,6 +150,9 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

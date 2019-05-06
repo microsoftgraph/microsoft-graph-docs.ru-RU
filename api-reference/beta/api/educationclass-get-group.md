@@ -4,16 +4,14 @@ description: Получение **группы** Office 365, которая со
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 18ed3c601e08bb8ae677af64eb05cecc89053a6a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 02ec23b793d20348f0f3a02056031343e82cc1c5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324691"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587597"
 ---
 # <a name="get-group"></a>Получение группы
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.
 
@@ -26,7 +24,7 @@ ms.locfileid: "33324691"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +36,7 @@ GET /education/classes/{id}/group
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в теле отклика.
@@ -50,7 +48,7 @@ GET /education/classes/{id}/group
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -88,16 +86,27 @@ Content-length: xxx
    "visibility": "visibility-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 0087D9B3-1418-4C87-91C9-A18C6D93706B
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-get-group.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-get-group.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

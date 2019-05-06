@@ -2,12 +2,12 @@
 title: Создание Програмконтрол
 description: В средстве проверки доступа Azure AD создайте новый объект Програмконтрол.  При этом будет связана проверка доступа к программе.
 localization_priority: Normal
-ms.openlocfilehash: d7a48b45049c2268856a3ec238114cfa9bf834f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e8b1fd9d72250f4ebc12508a324c3ad914f1db33
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332046"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611120"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 
@@ -27,9 +27,9 @@ ms.locfileid: "33332046"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. ReadWrite. ALL  |
+|Делегированные (рабочая или учебная учетная запись)     | ProgramControl.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            |  Програмконтрол. ReadWrite. ALL  |
+|Для приложений                            |  ProgramControl.ReadWrite.All  |
 
 Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать **програмконтрол**. 
 
@@ -98,6 +98,16 @@ Content-type: application/json
   "createdDateTime": "2018-05-18T20:26:05.2976279Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>См. также
 
@@ -113,6 +123,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

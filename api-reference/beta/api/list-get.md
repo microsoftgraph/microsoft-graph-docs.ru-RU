@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Получение списка SharePoint
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 445a9c816411462f6617578a7ff45fc01ce2ba1e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3d161245f88954211b07567b326397cabc16716a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338836"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598586"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возвращает метаданные для [списка][].
 
@@ -33,8 +31,8 @@ ms.locfileid: "33338836"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## <a name="request-body"></a>Тело запроса
@@ -45,7 +43,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=colu
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-list" } -->
+<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -53,7 +51,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### <a name="response"></a>Ответ
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -70,26 +68,37 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 С помощью операторов `select` и `expand` вы можете получить метаданные списка, определения столбцов и элементы списка в одном запросе.
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### <a name="response"></a>Отклик
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [
@@ -134,14 +143,27 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-list-multi-expand-Cs-snippets.md)]
 
-<!--
-{
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-list-multi-expand-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Lists/Get metadata",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/list-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

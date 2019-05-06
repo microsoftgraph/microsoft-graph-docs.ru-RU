@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание папки
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1efd0150a1444f312c047a4aea30091928bb6cd5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 820c95aa5cd331c91a773fd37c1da56132361a97
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325272"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588283"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание папки или ресурса [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) с указанным родительским элементом или по указанному пути.
 
@@ -107,6 +105,14 @@ Content-Type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-response"></a>Ответ с ошибкой
 
@@ -116,13 +122,13 @@ Content-Type: application/json
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
   "tocPath": "Items/Create folder",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->
