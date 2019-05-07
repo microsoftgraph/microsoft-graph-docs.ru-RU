@@ -4,16 +4,14 @@ description: Получение списка пользователей в уч�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1889dfd19ab5ef461cccff5a2dc0103fce79cb29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f580ac4e4650a4ba29f369abfa078dd1b04f0f06
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550275"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615897"
 ---
 # <a name="list-educationusers"></a>Перечисление EducationUsers
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка пользователей в учебном заведении.
 
@@ -41,7 +39,7 @@ GET /education/schools/{id}/users
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -51,7 +49,7 @@ GET /education/schools/{id}/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/schools/10002/users
+GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -105,16 +103,27 @@ Content-length: 593
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-list-users.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationschool-list-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

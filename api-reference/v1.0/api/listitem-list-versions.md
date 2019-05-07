@@ -1,16 +1,16 @@
 ---
-title: ПереЧисление версий элемента ListItem
+title: Перечисление версий элемента ListItem
 description: Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0da37c65c4f7cf737d7e37b0ed50305aa19b3e53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e0230ac732f39831894315ef86a7c1bcdfa10e0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568035"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613362"
 ---
-# <a name="listing-versions-of-a-listitem"></a>ПереЧисление версий элемента ListItem
+# <a name="listing-versions-of-a-listitem"></a>Перечисление версий элемента ListItem
 
 Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.
 
@@ -99,6 +99,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-previous-versions-listitem-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-previous-versions-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- {
@@ -106,5 +116,9 @@ Content-Type: application/json
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/listitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

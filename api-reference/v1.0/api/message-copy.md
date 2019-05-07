@@ -4,16 +4,14 @@ description: Копирование сообщения в папку.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 0ba81a39718b290e1408589e2f4a540f323a93dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 82e3670347da4616f0e41c3645d61d762eb1e252
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565452"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612785"
 ---
 # <a name="message-copy"></a>message: copy
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Копирование сообщения в папку.
 
@@ -42,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный параметр. |
-| Content-Type | `application/json`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательно. |
+| Content-Type | `application/json`. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,18 +49,17 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|destinationId|String|Идентификатор целевой папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|destinationId|String|Идентификатор целевой папки либо имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и ресурс [Message](../resources/message.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [message](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 Ниже приведен пример вызова этого API.
 
 ##### <a name="request"></a>Запрос
-
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -70,7 +67,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/messages/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -79,11 +76,11 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,8 +93,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "sentDateTime": "2016-10-19T10:37:00Z",
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -107,16 +104,27 @@ Content-length: 248
   "bodyPreview": "bodyPreview-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_copy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_copy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "message: copy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/message-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

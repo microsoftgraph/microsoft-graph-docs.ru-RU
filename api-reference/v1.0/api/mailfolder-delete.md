@@ -4,12 +4,12 @@ description: Удаление указанного mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 56b1fc45b79172f64ceb1bf9b0d6f69da1695bcf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1effb7d8e0ba6a27ddbef979f85c6e1e81adcecd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565466"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612648"
 ---
 # <a name="delete-mailfolder"></a>Удаление объекта MailFolder
 
@@ -42,7 +42,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -65,6 +65,16 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -73,5 +83,9 @@ HTTP/1.1 204 No Content
   "description": "Delete mailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

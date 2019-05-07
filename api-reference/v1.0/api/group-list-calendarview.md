@@ -1,15 +1,15 @@
 ---
 title: Список calendarView
-description: Получение вхождений, исключений и отдельных экземпляров событий в представлении календаря, определенном диапазоном времени.
+description: Получение исключений, повторяемых или единичных экземпляров событий в представлении календаря, которое определяется заданным диапазоном времени,
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: db4c448176f21fc2a2d691e9155f9b7bba45d873
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a76766a82e573c3916b3de1236ee936788231b3f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583594"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614228"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.
@@ -42,9 +42,9 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
+| Authorization  | строка | Bearer {токен}. Обязательный.  |
 | Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
-| Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательный параметр. |
+| Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -245,6 +245,16 @@ Preference-Applied: outlook.body-content-type="text"
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendarview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendarview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -253,5 +263,9 @@ Preference-Applied: outlook.body-content-type="text"
   "description": "List calendarView",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

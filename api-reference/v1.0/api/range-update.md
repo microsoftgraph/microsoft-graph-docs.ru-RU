@@ -4,12 +4,12 @@ description: Обновление свойств объекта диапазон
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 706147a3ff3aade9ae19679aab6bb09bc271128a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525567"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607587"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -41,11 +41,11 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|columnHidden|логический|Указывает, скрыты ли все столбцы текущего диапазона.|
+|columnHidden|boolean|Указывает, скрыты ли все столбцы текущего диапазона.|
 |formulas|Json|Представляет формулу в формате A1.|
 |formulasLocal|Json|Представляет формулу в нотации стиля A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула =SUM(A1, 1.5) превратится в "=СУММ(A1; 1,5)" на русском языке.|
 |formulasR1C1|Json|Представляет формулу в формате R1C1.|
-|numberFormat|Json|Представляет код в числовом формате Excel для заданной ячейки.|
+|numberFormat|Json|Представляет код в числовом формате Excel для данной ячейки.|
 |rowHidden|boolean|Указывает, скрыты ли все строки текущего диапазона.|
 |values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
@@ -92,6 +92,14 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_range-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +109,7 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/range-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
       Inconsistent types between parameter (Collection) and table (None)",
     "Warning: /api-reference/v1.0/api/range-update.md/update_range/values:

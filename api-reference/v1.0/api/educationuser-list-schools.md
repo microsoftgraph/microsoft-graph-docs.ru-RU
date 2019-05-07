@@ -4,12 +4,12 @@ description: Получение списка учебных заведений �
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0c0db5332cb5f7e3a48fcca802352c338f8ac4dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f60dd487bf7f72984f33e67e727526dbbf8c24ee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550037"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615545"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -42,7 +42,7 @@ GET /education/users/{id}/schools
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationSchool](../resources/educationschool.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -104,6 +104,16 @@ Content-length: 345
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -112,5 +122,9 @@ Content-length: 345
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationuser-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationuser-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

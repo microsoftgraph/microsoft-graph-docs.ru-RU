@@ -4,12 +4,12 @@ description: Обновление свойств объекта **plannerbucket*
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 1941220304cd2d95aba5f0aab42b62c8d0e61397
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c951c2ab44abff9c91204b46859627daf5706c4e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562008"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33609390"
 ---
 # <a name="update-plannerbucket"></a>Обновление объекта plannerbucket
 
@@ -39,7 +39,7 @@ PATCH /planner/buckets/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|String|Имя сегмента.|
+|name|Строка|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
@@ -85,6 +85,16 @@ Content-length: 245
   "id": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerbucket-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannerbucket-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,5 +103,9 @@ Content-length: 245
   "description": "Update plannerbucket",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannerbucket-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerbucket-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

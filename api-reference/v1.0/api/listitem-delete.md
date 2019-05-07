@@ -5,16 +5,14 @@ ms.date: 09/11/2017
 title: Удаление записи из списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e5f6fa9e893178e824c4c432d6669638779e5358
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80ecd3a9079e52ee9908f0211d0e283d993869b2
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464633"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612977"
 ---
 # <a name="delete-an-item-from-a-list"></a>Удаление элемента из списка
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление элемента из [списка][].
 
@@ -37,7 +35,7 @@ ms.locfileid: "32464633"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
@@ -52,10 +50,10 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 
 ## <a name="example"></a>Пример
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}
+DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
 ```
 
 ## <a name="response"></a>Отклик
@@ -67,16 +65,25 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{i
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete-item-site-Cs-snippets.md)]
 
-<!--
-{
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete-item-site-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Delete",
   "suppressions": [
-    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/listitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+} -->

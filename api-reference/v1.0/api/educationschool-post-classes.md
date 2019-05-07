@@ -4,12 +4,12 @@ description: Добавление класса в учебное заведен�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1794fe41cb26fcd87f8a75635a422d3e93497299
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5fa06df1df03c40de4670251ec2af1bc31d683d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550051"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615840"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Добавление educationClass к educationSchool
 
@@ -72,6 +72,14 @@ Content-length: 224
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_educationclass_from_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -80,5 +88,8 @@ HTTP/1.1 204 No Content
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationschool-post-classes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

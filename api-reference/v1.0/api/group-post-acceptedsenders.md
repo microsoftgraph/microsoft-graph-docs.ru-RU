@@ -4,17 +4,14 @@ description: Добавление пользователя или группы �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ba5d98796807be0ad1bb6eb58bb55fd8eb00fb84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f98a98afe3fd0bb6c4e9aa72ee9b17de6882d8ff
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561819"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613765"
 ---
 # <a name="create-acceptedsender"></a>Создание объекта acceptedSender
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Добавление пользователя или группы в список объектов acceptedSender.
 
 Укажите пользователя или группу с помощью параметра `@odata.id` в тексте запроса. Пользователи из списка разрешенных отправителей могут отправлять записи в беседы группы. Убедитесь, что в списках разрешенных и запрещенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
@@ -52,12 +49,12 @@ POST /groups/{id}/acceptedSenders/$ref
   "name": "create_acceptedsender"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
+POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
 
@@ -70,16 +67,24 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_acceptedsender-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

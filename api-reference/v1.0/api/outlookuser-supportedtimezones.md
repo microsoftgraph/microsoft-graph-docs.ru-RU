@@ -4,12 +4,12 @@ description: Получение списка поддерживаемых час
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c9c90ea56b1c0924ec91436733c99c67333b99d5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b77c50e65f4709925a2a2b979ba5828503050352
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556671"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611647"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -67,8 +67,8 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a>Ответ 1
-Ниже приведен пример ответа. 
+##### <a name="response-1"></a>Отклик 1
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -102,6 +102,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_supportedtimezones_default-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_supportedtimezones_default-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>Запрос 2
 В приведенном ниже примере для параметра `TimeZoneStandard` задается значение `Iana` и считывается список поддерживаемых часовых поясов в формате IANA. 
@@ -116,7 +126,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStand
 ```
 
 ##### <a name="response-2"></a>Ответ 2
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 <!-- {
   "blockType": "response",
@@ -152,6 +162,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_supportedtimezones_iana-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_supportedtimezones_iana-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -161,5 +181,11 @@ Content-type: application/json
   "description": "user: supportedTimeZones",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/outlookuser-supportedtimezones.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

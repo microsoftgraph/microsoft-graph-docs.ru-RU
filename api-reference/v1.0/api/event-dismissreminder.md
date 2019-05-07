@@ -1,19 +1,19 @@
 ---
 title: 'event: dismissReminder'
-description: ОтКлонить напоминание, запущенное для события в календаре пользователя.
+description: Отклонить напоминание, запущенное для события в календаре пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cf2421db56babd394a3c011fb9bd4db9f83cb823
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a88e622d6f6fde60971b03ea53783d1e720512c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562848"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615506"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
-ОтКлонить напоминание, запущенное для [события](../resources/event.md) в календаре пользователя [](../resources/calendar.md).
+Отклонить напоминание, запущенное для [события](../resources/event.md) в календаре пользователя [](../resources/calendar.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 <br/>
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {
@@ -87,6 +87,16 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_dismissreminder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_dismissreminder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,5 +105,9 @@ HTTP/1.1 200 OK
   "description": "event: dismissReminder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/event-dismissreminder.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/event-dismissreminder.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

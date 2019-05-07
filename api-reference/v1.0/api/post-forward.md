@@ -4,16 +4,14 @@ description: 'Переадресация публикации получател
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: dfc6cd62a69577b233771d7716caa19c8b566cac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 65e8869774fe6823ae09349cf92627920d965f94
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576320"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608585"
 ---
 # <a name="post-forward"></a>post: forward
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Пересылка записи получателю. Вы можете указать в запросе родительскую беседу вместе с цепочкой или только родительскую цепочку. 
 
@@ -59,7 +57,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
+POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
 Content-length: 166
 
@@ -85,16 +83,27 @@ Content-length: 166
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_forward-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_forward-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "post: forward",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/post-forward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

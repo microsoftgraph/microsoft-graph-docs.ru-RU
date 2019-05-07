@@ -4,12 +4,12 @@ description: Удаление пользователя или группы из 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 63e34e39d25ea3e3cc4d352d7caf6a71c86a5a57
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5ff913b748583c9c58307cd51be427290380f3f7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334487"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614873"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 Удаление пользователя или группы из списка отклоненных отправителей.
@@ -62,6 +62,16 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/remove_rejectedSender_from_group-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/remove_rejectedSender_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -70,5 +80,9 @@ HTTP/1.1 204 No Content
   "description": "Remove rejectedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete-rejectedsenders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delete-rejectedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -1,19 +1,17 @@
 ---
-title: Перечисление планов
+title: Список планов
 description: Получение списка объектов **plannerplan**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 1521bc5d03943288d516f9db975c394619bfb71c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c783a09ba7cef3dc2cf5a7d329d183ff2dae1e4e
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562071"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611534"
 ---
 # <a name="list-plans"></a>Перечисление планов
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов **plannerplan**.
 ## <a name="permissions"></a>Разрешения
@@ -55,7 +53,7 @@ GET /planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans
+GET https://graph.microsoft.com/v1.0/planner/plans
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -89,16 +87,27 @@ Content-length: 421
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_plans-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_plans-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planner-list-plans.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/planner-list-plans.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

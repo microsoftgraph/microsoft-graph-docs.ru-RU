@@ -4,12 +4,12 @@ description: Получение набора папок почты, которы
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bf7b935b8354bf01cd3a612dd5178a96ef74d00c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df8bbcf10d08a1dbd5ff908400290eda15612704
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565424"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612655"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -41,7 +41,7 @@ GET /users/{id}/mailFolders/delta
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции почтовых папок и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | строка | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции почтовых папок получены не все изменения. |
+| $skiptoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции почтовых папок получены не все изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -50,11 +50,11 @@ GET /users/{id}/mailFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект коллекции [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
@@ -108,6 +108,16 @@ Content-length: 254
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/mailfolder_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/mailfolder_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>См. также
 
@@ -121,5 +131,9 @@ Content-length: 254
   "description": "mailFolder: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

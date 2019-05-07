@@ -3,12 +3,12 @@ title: Получение последних действий пользоват
 description: " Функцию. Служба будет запрашивать последние Historyitem, а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d7d119f5a80e86a47c8f61756cad99542d0b3b0b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 709723dfb728c169c8b596675dc26308dd60dac5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575340"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608396"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
@@ -37,7 +37,7 @@ GET /me/activities/recent
 Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
 - $expand для свойства навигации **historyitem** .
-- $Top, чтобы ограничить максимальное количество элементов на страницах.
+- $top, чтобы ограничить максимальное количество элементов на страницах.
 - $filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.
 
 Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.
@@ -60,7 +60,7 @@ GET /me/activities/recent
 
 Не указывайте текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика с последними действиями пользователя для вашего приложения.
 
@@ -138,6 +138,16 @@ Content-Type: application/json
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_recent_activities-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_recent_activities-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
@@ -147,6 +157,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/projectrome-get-recent-activities.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: get_recent_activities/container/contentInfo:
       Property 'contentInfo' is of type Custom but has no custom members.",
 

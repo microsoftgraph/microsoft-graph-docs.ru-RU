@@ -4,12 +4,12 @@ description: Перемещение папки почты со всем ее с�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e61b5a3f170fad88064e7ec00ecbcc63ee43d768
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 499ab8f07e028837af9d6df0f9f3b232e5762497
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565488"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612477"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -38,8 +38,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательный параметр. |
-| Content-Type | `application/json`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательно. |
+| Content-Type | `application/json`. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 |:----------|:-----|:------------|
 |destinationId|String|Идентификатор папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
@@ -79,7 +79,7 @@ Content-length: 44
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,6 +100,16 @@ Content-length: 179
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/mailfolder_move-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/mailfolder_move-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,5 +118,9 @@ Content-length: 179
   "description": "mailFolder: move",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-move.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-move.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

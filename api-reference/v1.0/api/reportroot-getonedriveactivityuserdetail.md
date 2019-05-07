@@ -4,12 +4,12 @@ description: Получите сведения о действиях в OneDrive
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 2349aaec209f64f5e447731faa9d77ba8787a44d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f747f9778f6145ba2502f57629fb3f58ec73def3
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574231"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33604867"
 ---
 # <a name="reportroot-getonedriveactivityuserdetail"></a>reportRoot: getOneDriveActivityUserDetail
 
@@ -51,7 +51,7 @@ GET /reports/getOneDriveActivityUserDetail(date={date_value})
 
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.                |
+| Авторизация | Bearer {token}. Обязательный.                |
 | If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
@@ -66,12 +66,12 @@ CSV-файл содержит столбцы со следующими заго�
 - "User Principal Name" (Имя участника-пользователя);
 - "Is Deleted" (Удалено);
 - "Deleted Date" (Дата удаления);
-- "Last Activity Date" (Дата последнего действия);
+- Last Activity Date (дата последнего действия)
 - "Viewed Or Edited File Count" (Количество просмотренных или измененных файлов);
 - "Synced File Count" (Количество синхронизированных файлов);
 - "Shared Internally File Count" (Количество файлов, к которым предоставлен доступ внутренним пользователям);
 - "Shared Externally File Count" (Количество файлов, к которым предоставлен доступ внешним пользователям);
-- "Assigned Products" (Назначенные продукты);
+- Assigned Products (назначенные продукты)
 - "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
@@ -90,7 +90,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityUserDetail(period='D7')
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -105,6 +105,16 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getonedriveactivityuserdetail-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.
 
@@ -116,3 +126,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Viewed Or Edited File Count,Synced File Count,Shared Internally File Count,Shared Externally File Count,Assigned Products,Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getonedriveactivityuserdetail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

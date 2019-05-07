@@ -3,12 +3,12 @@ title: Восстановление предыдущей версии ресур
 description: Восстановление предыдущей версии ресурса ListItem в качестве текущей версии. При этом будет создана новая версия с тем же содержимым, что и в предыдущей версии, но будут сохранены все существующие версии элемента.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3ba63f56838d07a0031baf613dec8e0847aaf2e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e2dc6518b3d2cc1b12599802d0493b85a8dcbc6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542062"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613911"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Восстановление предыдущей версии ресурса ListItem
 
@@ -56,11 +56,25 @@ POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/rest
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/restore-item-version-listItem-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/restore-item-version-listItem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/listitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
