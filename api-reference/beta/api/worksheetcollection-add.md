@@ -4,54 +4,54 @@ description: . Активируйте ().
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 51bc8f29d5d8fcc898fc2f1f8ebcf1800ebf1cc7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3a74a209cbd1177ec12b3d928c7760113ef347b1
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339667"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636802"
 ---
-# <a name="worksheetcollection-add"></a><span data-ttu-id="6a04c-103">WorksheetCollection: add</span><span class="sxs-lookup"><span data-stu-id="6a04c-103">WorksheetCollection: add</span></span>
+# <a name="worksheetcollection-add"></a><span data-ttu-id="40c71-103">WorksheetCollection: add</span><span class="sxs-lookup"><span data-stu-id="40c71-103">WorksheetCollection: add</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6a04c-p101">Добавляет новый лист в книгу. Лист будет добавлен в конец набора имеющихся листов. Если вы хотите активировать только что добавленный лист, вызовите команду .activate().</span><span class="sxs-lookup"><span data-stu-id="6a04c-p101">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6a04c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6a04c-107">Permissions</span></span>
-<span data-ttu-id="6a04c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6a04c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="40c71-p101">Добавляет новый лист в книгу. Лист будет добавлен в конец набора имеющихся листов. Если вы хотите активировать только что добавленный лист, вызовите команду .activate().</span><span class="sxs-lookup"><span data-stu-id="40c71-p101">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.</span></span>
+## <a name="permissions"></a><span data-ttu-id="40c71-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="40c71-107">Permissions</span></span>
+<span data-ttu-id="40c71-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="40c71-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6a04c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6a04c-110">Permission type</span></span>      | <span data-ttu-id="6a04c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6a04c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="40c71-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="40c71-110">Permission type</span></span>      | <span data-ttu-id="40c71-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="40c71-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6a04c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6a04c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6a04c-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6a04c-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6a04c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6a04c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6a04c-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6a04c-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6a04c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6a04c-116">Application</span></span> | <span data-ttu-id="6a04c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6a04c-117">Not supported.</span></span> |
+|<span data-ttu-id="40c71-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="40c71-112">Delegated (work or school account)</span></span> | <span data-ttu-id="40c71-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40c71-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="40c71-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="40c71-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40c71-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="40c71-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="40c71-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="40c71-116">Application</span></span> | <span data-ttu-id="40c71-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="40c71-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6a04c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6a04c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="40c71-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="40c71-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6a04c-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6a04c-119">Request headers</span></span>
-| <span data-ttu-id="6a04c-120">Имя</span><span class="sxs-lookup"><span data-stu-id="6a04c-120">Name</span></span>       | <span data-ttu-id="6a04c-121">Описание</span><span class="sxs-lookup"><span data-stu-id="6a04c-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="40c71-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="40c71-119">Request headers</span></span>
+| <span data-ttu-id="40c71-120">Имя</span><span class="sxs-lookup"><span data-stu-id="40c71-120">Name</span></span>       | <span data-ttu-id="40c71-121">Описание</span><span class="sxs-lookup"><span data-stu-id="40c71-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6a04c-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6a04c-122">Authorization</span></span>  | <span data-ttu-id="6a04c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6a04c-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6a04c-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6a04c-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="6a04c-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="6a04c-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="40c71-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="40c71-122">Authorization</span></span>  | <span data-ttu-id="40c71-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="40c71-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="40c71-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="40c71-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="40c71-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="40c71-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6a04c-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6a04c-128">Request body</span></span>
-<span data-ttu-id="6a04c-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="6a04c-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="40c71-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="40c71-128">Request body</span></span>
+<span data-ttu-id="40c71-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="40c71-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="6a04c-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="6a04c-130">Parameter</span></span>    | <span data-ttu-id="6a04c-131">Тип</span><span class="sxs-lookup"><span data-stu-id="6a04c-131">Type</span></span>   |<span data-ttu-id="6a04c-132">Описание</span><span class="sxs-lookup"><span data-stu-id="6a04c-132">Description</span></span>|
+| <span data-ttu-id="40c71-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="40c71-130">Parameter</span></span>    | <span data-ttu-id="40c71-131">Тип</span><span class="sxs-lookup"><span data-stu-id="40c71-131">Type</span></span>   |<span data-ttu-id="40c71-132">Описание</span><span class="sxs-lookup"><span data-stu-id="40c71-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6a04c-133">name</span><span class="sxs-lookup"><span data-stu-id="6a04c-133">name</span></span>|<span data-ttu-id="6a04c-134">string</span><span class="sxs-lookup"><span data-stu-id="6a04c-134">string</span></span>|<span data-ttu-id="6a04c-p105">Необязательный параметр. Имя добавляемого листа. Если параметр используется, имя должно быть уникальным. В противном случае Excel определяет имя нового листа.</span><span class="sxs-lookup"><span data-stu-id="6a04c-p105">Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.</span></span>|
+|<span data-ttu-id="40c71-133">name</span><span class="sxs-lookup"><span data-stu-id="40c71-133">name</span></span>|<span data-ttu-id="40c71-134">string</span><span class="sxs-lookup"><span data-stu-id="40c71-134">string</span></span>|<span data-ttu-id="40c71-p105">Необязательный параметр. Имя добавляемого листа. Если параметр используется, имя должно быть уникальным. В противном случае Excel определяет имя нового листа.</span><span class="sxs-lookup"><span data-stu-id="40c71-p105">Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="6a04c-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="6a04c-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="40c71-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="40c71-139">Response</span></span>
 
-<span data-ttu-id="6a04c-140">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6a04c-140">If successful, this method returns `200 OK` response code and [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
+<span data-ttu-id="40c71-140">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="40c71-140">If successful, this method returns `200 OK` response code and [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6a04c-141">Пример</span><span class="sxs-lookup"><span data-stu-id="6a04c-141">Example</span></span>
-<span data-ttu-id="6a04c-142">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="6a04c-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6a04c-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="6a04c-143">Request</span></span>
-<span data-ttu-id="6a04c-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6a04c-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="40c71-141">Пример</span><span class="sxs-lookup"><span data-stu-id="40c71-141">Example</span></span>
+<span data-ttu-id="40c71-142">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="40c71-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="40c71-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="40c71-143">Request</span></span>
+<span data-ttu-id="40c71-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="40c71-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheetcollection_add"
@@ -66,8 +66,8 @@ Content-length: 26
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="6a04c-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="6a04c-145">Response</span></span>
-<span data-ttu-id="6a04c-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6a04c-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="40c71-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="40c71-145">Response</span></span>
+<span data-ttu-id="40c71-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="40c71-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,6 +85,16 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="40c71-149">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="40c71-149">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="40c71-150">Языках</span><span class="sxs-lookup"><span data-stu-id="40c71-150">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/worksheetcollection_add-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40c71-151">Язык</span><span class="sxs-lookup"><span data-stu-id="40c71-151">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/worksheetcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,6 +105,9 @@ Content-length: 100
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/worksheetcollection-add.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/worksheetcollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

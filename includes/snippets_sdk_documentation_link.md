@@ -1,0 +1,3 @@
+<!-- markdownlint-disable MD041-->
+
+> <span data-ttu-id="3babe-101">Сведения о том, как [Добавить пакет SDK](https://docs.microsoft.com/graph/sdks/sdk-installation) в проект и [создать экземпляр поставщика](https://docs.microsoft.com/graph/sdks/choose-authentication-providers) проверки подлинности, можно найти в [документации по пакету SDK](https://docs.microsoft.com/graph/sdks/sdks-overview).</span><span class="sxs-lookup"><span data-stu-id="3babe-101">For details about how to [add the SDK](https://docs.microsoft.com/graph/sdks/sdk-installation) to your project and [create an auth provider](https://docs.microsoft.com/graph/sdks/choose-authentication-providers) instance, see the [SDK documentation](https://docs.microsoft.com/graph/sdks/sdks-overview).</span></span> 
