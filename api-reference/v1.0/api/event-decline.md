@@ -4,28 +4,28 @@ description: Отклонение приглашения на указанное
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 920a97db9a6716d2111a8179c86d5556042a6edd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5bf4a1317def6c4b82c306ba5a11df9bc2820e48
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550099"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615671"
 ---
-# <a name="event-decline"></a><span data-ttu-id="cfcab-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="cfcab-103">event: decline</span></span>
+# <a name="event-decline"></a><span data-ttu-id="189e3-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="189e3-103">event: decline</span></span>
 
-<span data-ttu-id="cfcab-104">ОтКлонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="cfcab-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="189e3-104">Отклонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="189e3-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cfcab-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cfcab-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="189e3-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="189e3-105">Permissions</span></span>
 
-<span data-ttu-id="cfcab-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cfcab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="189e3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="189e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cfcab-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cfcab-108">Permission type</span></span>      | <span data-ttu-id="cfcab-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cfcab-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="189e3-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="189e3-108">Permission type</span></span>      | <span data-ttu-id="189e3-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="189e3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cfcab-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cfcab-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cfcab-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cfcab-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="cfcab-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cfcab-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cfcab-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cfcab-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="cfcab-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cfcab-114">Application</span></span> | <span data-ttu-id="cfcab-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cfcab-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="189e3-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="189e3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="189e3-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="189e3-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="189e3-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="189e3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="189e3-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="189e3-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="189e3-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="189e3-114">Application</span></span> | <span data-ttu-id="189e3-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="189e3-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cfcab-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cfcab-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="189e3-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="189e3-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,33 +48,33 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="cfcab-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cfcab-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="189e3-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="189e3-117">Request headers</span></span>
 
-| <span data-ttu-id="cfcab-118">Имя</span><span class="sxs-lookup"><span data-stu-id="cfcab-118">Name</span></span>       | <span data-ttu-id="cfcab-119">Тип</span><span class="sxs-lookup"><span data-stu-id="cfcab-119">Type</span></span> | <span data-ttu-id="cfcab-120">Описание</span><span class="sxs-lookup"><span data-stu-id="cfcab-120">Description</span></span>|
+| <span data-ttu-id="189e3-118">Имя</span><span class="sxs-lookup"><span data-stu-id="189e3-118">Name</span></span>       | <span data-ttu-id="189e3-119">Тип</span><span class="sxs-lookup"><span data-stu-id="189e3-119">Type</span></span> | <span data-ttu-id="189e3-120">Описание</span><span class="sxs-lookup"><span data-stu-id="189e3-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="cfcab-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfcab-121">Authorization</span></span>  | <span data-ttu-id="cfcab-122">string</span><span class="sxs-lookup"><span data-stu-id="cfcab-122">string</span></span>  | <span data-ttu-id="cfcab-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cfcab-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cfcab-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cfcab-125">Content-Type</span></span> | <span data-ttu-id="cfcab-126">string</span><span class="sxs-lookup"><span data-stu-id="cfcab-126">string</span></span>  | <span data-ttu-id="cfcab-p103">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cfcab-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="189e3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="189e3-121">Authorization</span></span>  | <span data-ttu-id="189e3-122">string</span><span class="sxs-lookup"><span data-stu-id="189e3-122">string</span></span>  | <span data-ttu-id="189e3-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="189e3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="189e3-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="189e3-125">Content-Type</span></span> | <span data-ttu-id="189e3-126">string</span><span class="sxs-lookup"><span data-stu-id="189e3-126">string</span></span>  | <span data-ttu-id="189e3-p103">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="189e3-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cfcab-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cfcab-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="189e3-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="189e3-129">Request body</span></span>
 
-<span data-ttu-id="cfcab-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="cfcab-130">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="189e3-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="189e3-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="cfcab-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="cfcab-131">Parameter</span></span>    | <span data-ttu-id="cfcab-132">Тип</span><span class="sxs-lookup"><span data-stu-id="cfcab-132">Type</span></span>   |<span data-ttu-id="cfcab-133">Описание</span><span class="sxs-lookup"><span data-stu-id="cfcab-133">Description</span></span>|
+| <span data-ttu-id="189e3-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="189e3-131">Parameter</span></span>    | <span data-ttu-id="189e3-132">Тип</span><span class="sxs-lookup"><span data-stu-id="189e3-132">Type</span></span>   |<span data-ttu-id="189e3-133">Описание</span><span class="sxs-lookup"><span data-stu-id="189e3-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cfcab-134">comment</span><span class="sxs-lookup"><span data-stu-id="cfcab-134">comment</span></span>|<span data-ttu-id="cfcab-135">String</span><span class="sxs-lookup"><span data-stu-id="cfcab-135">String</span></span>|<span data-ttu-id="cfcab-p104">Текст, включенный в ответ. Необязательный.</span><span class="sxs-lookup"><span data-stu-id="cfcab-p104">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="cfcab-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="cfcab-138">sendResponse</span></span>|<span data-ttu-id="cfcab-139">Логическое</span><span class="sxs-lookup"><span data-stu-id="cfcab-139">Boolean</span></span>|<span data-ttu-id="cfcab-p105">Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.</span><span class="sxs-lookup"><span data-stu-id="cfcab-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="189e3-134">comment</span><span class="sxs-lookup"><span data-stu-id="189e3-134">comment</span></span>|<span data-ttu-id="189e3-135">String</span><span class="sxs-lookup"><span data-stu-id="189e3-135">String</span></span>|<span data-ttu-id="189e3-p104">Текст, включенный в ответ. Необязательный.</span><span class="sxs-lookup"><span data-stu-id="189e3-p104">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="189e3-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="189e3-138">sendResponse</span></span>|<span data-ttu-id="189e3-139">Логическое</span><span class="sxs-lookup"><span data-stu-id="189e3-139">Boolean</span></span>|<span data-ttu-id="189e3-p105">Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.</span><span class="sxs-lookup"><span data-stu-id="189e3-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="cfcab-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfcab-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="189e3-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="189e3-143">Response</span></span>
 
-<span data-ttu-id="cfcab-p106">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="cfcab-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="189e3-p106">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="189e3-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cfcab-146">Пример</span><span class="sxs-lookup"><span data-stu-id="cfcab-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="189e3-146">Пример</span><span class="sxs-lookup"><span data-stu-id="189e3-146">Example</span></span>
 
-<span data-ttu-id="cfcab-147">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="cfcab-147">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="189e3-147">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="189e3-147">Here is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="cfcab-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="cfcab-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="189e3-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="189e3-148">Request</span></span>
 
-<span data-ttu-id="cfcab-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cfcab-149">Here is an example of the request.</span></span>
+<span data-ttu-id="189e3-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="189e3-149">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -94,9 +94,9 @@ Content-length: 56
 
 <br/>
 
-### <a name="response"></a><span data-ttu-id="cfcab-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfcab-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="189e3-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="189e3-150">Response</span></span>
 
-<span data-ttu-id="cfcab-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cfcab-151">Here is an example of the response.</span></span>
+<span data-ttu-id="189e3-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="189e3-151">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,6 +106,16 @@ Content-length: 56
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="189e3-152">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="189e3-152">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="189e3-153">Языках</span><span class="sxs-lookup"><span data-stu-id="189e3-153">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_decline-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="189e3-154">Язык</span><span class="sxs-lookup"><span data-stu-id="189e3-154">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_decline-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <br/>
 
@@ -116,5 +126,9 @@ HTTP/1.1 200 OK
   "description": "event: decline",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/event-decline.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/event-decline.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -4,30 +4,30 @@ description: Узнайте, сколько уникальных пользов�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5294526970445256399933ea34c4939d16373024
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4e29035b0c15d6304dd9b7514d60ba5637d02b2
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582285"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607045"
 ---
-# <a name="reportroot-getemailappusageversionsusercounts"></a><span data-ttu-id="4c187-103">reportRoot: getEmailAppUsageVersionsUserCounts</span><span class="sxs-lookup"><span data-stu-id="4c187-103">reportRoot: getEmailAppUsageVersionsUserCounts</span></span>
+# <a name="reportroot-getemailappusageversionsusercounts"></a><span data-ttu-id="691c0-103">reportRoot: getEmailAppUsageVersionsUserCounts</span><span class="sxs-lookup"><span data-stu-id="691c0-103">reportRoot: getEmailAppUsageVersionsUserCounts</span></span>
 
-<span data-ttu-id="4c187-104">Узнайте, сколько уникальных пользователей у каждой версии Outlook для компьютера.</span><span class="sxs-lookup"><span data-stu-id="4c187-104">Get the count of unique users by Outlook desktop version.</span></span>
+<span data-ttu-id="691c0-104">Узнайте, сколько уникальных пользователей у каждой версии Outlook для компьютера.</span><span class="sxs-lookup"><span data-stu-id="691c0-104">Get the count of unique users by Outlook desktop version.</span></span>
 
-> <span data-ttu-id="4c187-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span><span class="sxs-lookup"><span data-stu-id="4c187-105">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
+> <span data-ttu-id="691c0-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span><span class="sxs-lookup"><span data-stu-id="691c0-105">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4c187-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4c187-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="691c0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="691c0-106">Permissions</span></span>
 
-<span data-ttu-id="4c187-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4c187-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="691c0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="691c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4c187-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4c187-109">Permission type</span></span>                        | <span data-ttu-id="4c187-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4c187-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="691c0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="691c0-109">Permission type</span></span>                        | <span data-ttu-id="691c0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="691c0-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="4c187-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4c187-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4c187-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c187-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="4c187-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4c187-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c187-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4c187-114">Not supported.</span></span>                           |
-| <span data-ttu-id="4c187-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4c187-115">Application</span></span>                            | <span data-ttu-id="4c187-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4c187-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="691c0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="691c0-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="691c0-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="691c0-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="691c0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="691c0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="691c0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="691c0-114">Not supported.</span></span>                           |
+| <span data-ttu-id="691c0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="691c0-115">Application</span></span>                            | <span data-ttu-id="691c0-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="691c0-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="4c187-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4c187-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="691c0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="691c0-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -35,42 +35,42 @@ ms.locfileid: "32582285"
 GET /reports/getEmailAppUsageVersionsUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="4c187-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="4c187-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="691c0-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="691c0-118">Function parameters</span></span>
 
-<span data-ttu-id="4c187-119">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="4c187-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="691c0-119">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="691c0-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="4c187-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="4c187-120">Parameter</span></span> | <span data-ttu-id="4c187-121">Тип</span><span class="sxs-lookup"><span data-stu-id="4c187-121">Type</span></span>   | <span data-ttu-id="4c187-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4c187-122">Description</span></span>                              |
+| <span data-ttu-id="691c0-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="691c0-120">Parameter</span></span> | <span data-ttu-id="691c0-121">Тип</span><span class="sxs-lookup"><span data-stu-id="691c0-121">Type</span></span>   | <span data-ttu-id="691c0-122">Описание</span><span class="sxs-lookup"><span data-stu-id="691c0-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="4c187-123">period</span><span class="sxs-lookup"><span data-stu-id="4c187-123">period</span></span>    | <span data-ttu-id="4c187-124">string</span><span class="sxs-lookup"><span data-stu-id="4c187-124">string</span></span> | <span data-ttu-id="4c187-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="4c187-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="4c187-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="4c187-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="4c187-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="4c187-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="4c187-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4c187-128">Required.</span></span> |
+| <span data-ttu-id="691c0-123">period</span><span class="sxs-lookup"><span data-stu-id="691c0-123">period</span></span>    | <span data-ttu-id="691c0-124">string</span><span class="sxs-lookup"><span data-stu-id="691c0-124">string</span></span> | <span data-ttu-id="691c0-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="691c0-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="691c0-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="691c0-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="691c0-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="691c0-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="691c0-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="691c0-128">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="4c187-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4c187-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="691c0-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="691c0-129">Request headers</span></span>
 
-| <span data-ttu-id="4c187-130">Имя</span><span class="sxs-lookup"><span data-stu-id="4c187-130">Name</span></span>          | <span data-ttu-id="4c187-131">Описание</span><span class="sxs-lookup"><span data-stu-id="4c187-131">Description</span></span>                              |
+| <span data-ttu-id="691c0-130">Имя</span><span class="sxs-lookup"><span data-stu-id="691c0-130">Name</span></span>          | <span data-ttu-id="691c0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="691c0-131">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="4c187-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4c187-132">Authorization</span></span> | <span data-ttu-id="4c187-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4c187-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="4c187-135">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="4c187-135">If-None-Match</span></span> | <span data-ttu-id="4c187-136">Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="4c187-136">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="4c187-137">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="4c187-137">Optional.</span></span> |
+| <span data-ttu-id="691c0-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="691c0-132">Authorization</span></span> | <span data-ttu-id="691c0-p103">Bearer {token}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="691c0-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="691c0-135">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="691c0-135">If-None-Match</span></span> | <span data-ttu-id="691c0-136">Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="691c0-136">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="691c0-137">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="691c0-137">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="4c187-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="4c187-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="691c0-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="691c0-138">Response</span></span>
 
-<span data-ttu-id="4c187-139">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="4c187-139">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4c187-140">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="4c187-140">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="691c0-139">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="691c0-139">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="691c0-140">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="691c0-140">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="4c187-141">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="4c187-141">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="691c0-141">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="691c0-141">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="4c187-142">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="4c187-142">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="691c0-142">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="691c0-142">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="4c187-143">Report Refresh Date (дата обновления отчета)</span><span class="sxs-lookup"><span data-stu-id="4c187-143">Report Refresh Date</span></span>
-- <span data-ttu-id="4c187-144">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4c187-144">Outlook 2016</span></span>
-- <span data-ttu-id="4c187-145">Outlook 2013</span><span class="sxs-lookup"><span data-stu-id="4c187-145">Outlook 2013</span></span>
-- <span data-ttu-id="4c187-146">Outlook 2010</span><span class="sxs-lookup"><span data-stu-id="4c187-146">Outlook 2010</span></span>
-- <span data-ttu-id="4c187-147">Outlook 2007</span><span class="sxs-lookup"><span data-stu-id="4c187-147">Outlook 2007</span></span>
-- <span data-ttu-id="4c187-148">Undetermined (не определено)</span><span class="sxs-lookup"><span data-stu-id="4c187-148">Undetermined</span></span>
-- <span data-ttu-id="4c187-149">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="4c187-149">Report Period</span></span>
+- <span data-ttu-id="691c0-143">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="691c0-143">Report Refresh Date</span></span>
+- <span data-ttu-id="691c0-144">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="691c0-144">Outlook 2016</span></span>
+- <span data-ttu-id="691c0-145">Outlook 2013</span><span class="sxs-lookup"><span data-stu-id="691c0-145">Outlook 2013</span></span>
+- <span data-ttu-id="691c0-146">Outlook 2010</span><span class="sxs-lookup"><span data-stu-id="691c0-146">Outlook 2010</span></span>
+- <span data-ttu-id="691c0-147">Outlook 2007</span><span class="sxs-lookup"><span data-stu-id="691c0-147">Outlook 2007</span></span>
+- <span data-ttu-id="691c0-148">Undetermined (не определено)</span><span class="sxs-lookup"><span data-stu-id="691c0-148">Undetermined</span></span>
+- <span data-ttu-id="691c0-149">"Report Period" (Отчетный период).</span><span class="sxs-lookup"><span data-stu-id="691c0-149">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="4c187-150">Пример</span><span class="sxs-lookup"><span data-stu-id="4c187-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="691c0-150">Пример</span><span class="sxs-lookup"><span data-stu-id="691c0-150">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4c187-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="4c187-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="691c0-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="691c0-151">Request</span></span>
 
-<span data-ttu-id="4c187-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4c187-152">The following is an example of the request.</span></span>
+<span data-ttu-id="691c0-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="691c0-152">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -82,9 +82,9 @@ GET /reports/getEmailAppUsageVersionsUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageVersionsUserCounts(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="4c187-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="4c187-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="691c0-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="691c0-153">Response</span></span>
 
-<span data-ttu-id="4c187-154">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4c187-154">The following is an example of the response.</span></span>
+<span data-ttu-id="691c0-154">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="691c0-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,8 +97,18 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="691c0-155">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="691c0-155">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="691c0-156">Языках</span><span class="sxs-lookup"><span data-stu-id="691c0-156">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getemailappusageversionsusercounts-Cs-snippets.md)]
 
-<span data-ttu-id="4c187-155">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="4c187-155">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="691c0-157">Язык</span><span class="sxs-lookup"><span data-stu-id="691c0-157">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getemailappusageversionsusercounts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<span data-ttu-id="691c0-158">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="691c0-158">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -108,3 +118,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undetermined,Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getemailappusageversionsusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getemailappusageversionsusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
