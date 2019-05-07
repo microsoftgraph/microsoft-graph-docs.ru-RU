@@ -4,52 +4,52 @@ description: Создание нового **аудиораутингграуп*
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c406f29a2a14f1c7cd763c6d3e8ec5b9f3d2fa22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a8bd4e0c1e3e78152df9631b2fd4ed06f6df7c69
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328314"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635878"
 ---
-# <a name="create-audio-routing-group"></a><span data-ttu-id="470ed-103">Создание группы маршрутизации звука</span><span class="sxs-lookup"><span data-stu-id="470ed-103">Create audio routing group</span></span>
+# <a name="create-audio-routing-group"></a><span data-ttu-id="b969a-103">Создание группы маршрутизации звука</span><span class="sxs-lookup"><span data-stu-id="b969a-103">Create audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="470ed-104">Создание нового **аудиораутингграуп**.</span><span class="sxs-lookup"><span data-stu-id="470ed-104">Create a new **audioRoutingGroup**.</span></span>
+<span data-ttu-id="b969a-104">Создание нового **аудиораутингграуп**.</span><span class="sxs-lookup"><span data-stu-id="b969a-104">Create a new **audioRoutingGroup**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="470ed-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="470ed-105">Permissions</span></span>
-<span data-ttu-id="470ed-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="470ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b969a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b969a-105">Permissions</span></span>
+<span data-ttu-id="b969a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b969a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="470ed-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="470ed-108">Permission type</span></span>                        | <span data-ttu-id="470ed-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="470ed-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b969a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b969a-108">Permission type</span></span>                        | <span data-ttu-id="b969a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b969a-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="470ed-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="470ed-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="470ed-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="470ed-111">Not supported.</span></span>                               |
-| <span data-ttu-id="470ed-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="470ed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="470ed-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="470ed-113">Not supported.</span></span>                               |
-| <span data-ttu-id="470ed-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="470ed-114">Application</span></span>                            | <span data-ttu-id="470ed-115">Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL</span><span class="sxs-lookup"><span data-stu-id="470ed-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="b969a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b969a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b969a-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b969a-111">Not supported.</span></span>                               |
+| <span data-ttu-id="b969a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b969a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b969a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b969a-113">Not supported.</span></span>                               |
+| <span data-ttu-id="b969a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b969a-114">Application</span></span>                            | <span data-ttu-id="b969a-115">Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL</span><span class="sxs-lookup"><span data-stu-id="b969a-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="470ed-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="470ed-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b969a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b969a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
 POST /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="470ed-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="470ed-117">Request headers</span></span>
-| <span data-ttu-id="470ed-118">Имя</span><span class="sxs-lookup"><span data-stu-id="470ed-118">Name</span></span>          | <span data-ttu-id="470ed-119">Описание</span><span class="sxs-lookup"><span data-stu-id="470ed-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="b969a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b969a-117">Request headers</span></span>
+| <span data-ttu-id="b969a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b969a-118">Name</span></span>          | <span data-ttu-id="b969a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="b969a-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="470ed-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="470ed-120">Authorization</span></span> | <span data-ttu-id="470ed-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="470ed-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b969a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b969a-120">Authorization</span></span> | <span data-ttu-id="b969a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b969a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="470ed-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="470ed-123">Request body</span></span>
-<span data-ttu-id="470ed-124">В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="470ed-124">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b969a-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b969a-123">Request body</span></span>
+<span data-ttu-id="b969a-124">В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b969a-124">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="470ed-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="470ed-125">Response</span></span>
-<span data-ttu-id="470ed-126">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="470ed-126">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b969a-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="b969a-125">Response</span></span>
+<span data-ttu-id="b969a-126">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b969a-126">If successful, this method returns `200 OK` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="470ed-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="470ed-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b969a-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="b969a-127">Examples</span></span>
 
-### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="470ed-128">Пример 1: "одна к одной группе маршрутизации аудио"</span><span class="sxs-lookup"><span data-stu-id="470ed-128">Example 1: One-to-one audio routing group</span></span>
+### <a name="example-1-one-to-one-audio-routing-group"></a><span data-ttu-id="b969a-128">Пример 1: "одна к одной группе маршрутизации аудио"</span><span class="sxs-lookup"><span data-stu-id="b969a-128">Example 1: One-to-one audio routing group</span></span>
 
-##### <a name="request"></a><span data-ttu-id="470ed-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="470ed-129">Request</span></span>
-<span data-ttu-id="470ed-130">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="470ed-130">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b969a-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="b969a-129">Request</span></span>
+<span data-ttu-id="b969a-130">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b969a-130">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -72,11 +72,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="470ed-131">В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="470ed-131">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="b969a-131">В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b969a-131">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="470ed-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="470ed-132">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b969a-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="b969a-132">Response</span></span>
 
-> <span data-ttu-id="470ed-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="470ed-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b969a-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b969a-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -99,10 +99,20 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="470ed-135">Пример 2: multicast Аудиораутингграуп</span><span class="sxs-lookup"><span data-stu-id="470ed-135">Example 2: Multicast audioRoutingGroup</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b969a-135">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="b969a-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b969a-136">Языках</span><span class="sxs-lookup"><span data-stu-id="b969a-136">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Cs-snippets.md)]
 
-##### <a name="request"></a><span data-ttu-id="470ed-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="470ed-136">Request</span></span>
-<span data-ttu-id="470ed-137">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="470ed-137">The following example shows the request.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b969a-137">Язык</span><span class="sxs-lookup"><span data-stu-id="b969a-137">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-audioRoutingGroup-from-call-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+### <a name="example-2-multicast-audioroutinggroup"></a><span data-ttu-id="b969a-138">Пример 2: multicast Аудиораутингграуп</span><span class="sxs-lookup"><span data-stu-id="b969a-138">Example 2: Multicast audioRoutingGroup</span></span>
+
+##### <a name="request"></a><span data-ttu-id="b969a-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b969a-139">Request</span></span>
+<span data-ttu-id="b969a-140">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b969a-140">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -130,11 +140,11 @@ Content-Length: 233
 }
 ```
 
-<span data-ttu-id="470ed-138">В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="470ed-138">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
+<span data-ttu-id="b969a-141">В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b969a-141">In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="470ed-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="470ed-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b969a-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="b969a-142">Response</span></span>
 
-> <span data-ttu-id="470ed-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="470ed-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b969a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b969a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -170,6 +180,9 @@ Content-Length: 233
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/call-post-audioroutinggroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

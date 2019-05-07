@@ -1,39 +1,39 @@
 ---
 title: Список calendarView
-description: Получение вхождений, исключений и отдельных экземпляров событий в представлении календаря, определенном диапазоном времени, из календаря пользователя по умолчанию
+description: Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря пользователя, которое определяется заданным диапазоном времени.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75d1c71c5a35944db1ac8a59843356022f2374e0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d4372609c7f81d7f832d9bd62ed90bec4e1df05e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334873"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637509"
 ---
-# <a name="list-calendarview"></a><span data-ttu-id="ee278-103">Список calendarView</span><span class="sxs-lookup"><span data-stu-id="ee278-103">List calendarView</span></span>
+# <a name="list-calendarview"></a><span data-ttu-id="07324-103">Список calendarView</span><span class="sxs-lookup"><span data-stu-id="07324-103">List calendarView</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ee278-104">Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного либо другого календаря пользователя, которое определяется заданным диапазоном времени.</span><span class="sxs-lookup"><span data-stu-id="ee278-104">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar, or from some other calendar of the user's.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ee278-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ee278-105">Permissions</span></span>
-<span data-ttu-id="ee278-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ee278-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="07324-104">Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного либо другого календаря пользователя, которое определяется заданным диапазоном времени.</span><span class="sxs-lookup"><span data-stu-id="07324-104">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar, or from some other calendar of the user's.</span></span>
+## <a name="permissions"></a><span data-ttu-id="07324-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="07324-105">Permissions</span></span>
+<span data-ttu-id="07324-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="07324-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee278-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ee278-108">Permission type</span></span>      | <span data-ttu-id="ee278-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ee278-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="07324-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="07324-108">Permission type</span></span>      | <span data-ttu-id="07324-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="07324-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ee278-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ee278-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ee278-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee278-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="ee278-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ee278-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee278-113">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee278-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="ee278-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ee278-114">Application</span></span> | <span data-ttu-id="ee278-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee278-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="07324-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="07324-110">Delegated (work or school account)</span></span> | <span data-ttu-id="07324-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="07324-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="07324-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="07324-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="07324-113">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="07324-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="07324-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="07324-114">Application</span></span> | <span data-ttu-id="07324-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="07324-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ee278-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ee278-116">HTTP request</span></span>
-<span data-ttu-id="ee278-117">Экземпляр [calendar](../resources/calendar.md) по умолчанию для пользователя.</span><span class="sxs-lookup"><span data-stu-id="ee278-117">A user's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="07324-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="07324-116">HTTP request</span></span>
+<span data-ttu-id="07324-117">Экземпляр [calendar](../resources/calendar.md) по умолчанию для пользователя.</span><span class="sxs-lookup"><span data-stu-id="07324-117">A user's default [calendar](../resources/calendar.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-<span data-ttu-id="ee278-118">Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="ee278-118">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="07324-118">Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="07324-118">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -43,39 +43,39 @@ GET /me/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}
 GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-<span data-ttu-id="ee278-119">[Календарь](../resources/calendar.md) пользователя в определенной группе [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="ee278-119">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="07324-119">[Календарь](../resources/calendar.md) в определенном объекте [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="07324-119">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="ee278-120">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="ee278-120">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="07324-120">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="07324-120">Query parameters</span></span>
 
-<span data-ttu-id="ee278-121">В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.</span><span class="sxs-lookup"><span data-stu-id="ee278-121">In the request URL, provide the following required query parameters with values.</span></span>
+<span data-ttu-id="07324-121">В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.</span><span class="sxs-lookup"><span data-stu-id="07324-121">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="ee278-122">Параметр</span><span class="sxs-lookup"><span data-stu-id="ee278-122">Parameter</span></span>    | <span data-ttu-id="ee278-123">Тип</span><span class="sxs-lookup"><span data-stu-id="ee278-123">Type</span></span>   |<span data-ttu-id="ee278-124">Описание</span><span class="sxs-lookup"><span data-stu-id="ee278-124">Description</span></span>|
+| <span data-ttu-id="07324-122">Параметр</span><span class="sxs-lookup"><span data-stu-id="07324-122">Parameter</span></span>    | <span data-ttu-id="07324-123">Тип</span><span class="sxs-lookup"><span data-stu-id="07324-123">Type</span></span>   |<span data-ttu-id="07324-124">Описание</span><span class="sxs-lookup"><span data-stu-id="07324-124">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ee278-125">startDateTime</span><span class="sxs-lookup"><span data-stu-id="ee278-125">startDateTime</span></span>|<span data-ttu-id="ee278-126">String</span><span class="sxs-lookup"><span data-stu-id="ee278-126">String</span></span>|<span data-ttu-id="ee278-p102">Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="ee278-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="ee278-129">endDateTime</span><span class="sxs-lookup"><span data-stu-id="ee278-129">endDateTime</span></span>|<span data-ttu-id="ee278-130">String</span><span class="sxs-lookup"><span data-stu-id="ee278-130">String</span></span>|<span data-ttu-id="ee278-p103">Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="ee278-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="07324-125">startDateTime</span><span class="sxs-lookup"><span data-stu-id="07324-125">startDateTime</span></span>|<span data-ttu-id="07324-126">String</span><span class="sxs-lookup"><span data-stu-id="07324-126">String</span></span>|<span data-ttu-id="07324-p102">Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="07324-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="07324-129">endDateTime</span><span class="sxs-lookup"><span data-stu-id="07324-129">endDateTime</span></span>|<span data-ttu-id="07324-130">String</span><span class="sxs-lookup"><span data-stu-id="07324-130">String</span></span>|<span data-ttu-id="07324-p103">Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="07324-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-<span data-ttu-id="ee278-133">Этот метод также поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ee278-133">This method also supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ee278-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ee278-134">Request headers</span></span>
-| <span data-ttu-id="ee278-135">Имя</span><span class="sxs-lookup"><span data-stu-id="ee278-135">Name</span></span>       | <span data-ttu-id="ee278-136">Тип</span><span class="sxs-lookup"><span data-stu-id="ee278-136">Type</span></span> | <span data-ttu-id="ee278-137">Описание</span><span class="sxs-lookup"><span data-stu-id="ee278-137">Description</span></span> |
+<span data-ttu-id="07324-133">Этот метод также поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="07324-133">This method also supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="07324-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="07324-134">Request headers</span></span>
+| <span data-ttu-id="07324-135">Имя</span><span class="sxs-lookup"><span data-stu-id="07324-135">Name</span></span>       | <span data-ttu-id="07324-136">Тип</span><span class="sxs-lookup"><span data-stu-id="07324-136">Type</span></span> | <span data-ttu-id="07324-137">Описание</span><span class="sxs-lookup"><span data-stu-id="07324-137">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="ee278-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee278-138">Authorization</span></span>  | <span data-ttu-id="ee278-139">строка</span><span class="sxs-lookup"><span data-stu-id="ee278-139">string</span></span> | <span data-ttu-id="ee278-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ee278-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ee278-142">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ee278-142">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="ee278-143">string</span><span class="sxs-lookup"><span data-stu-id="ee278-143">string</span></span> | <span data-ttu-id="ee278-144">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="ee278-144">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="ee278-145">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="ee278-145">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="ee278-146">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="ee278-146">Optional.</span></span> |
-| <span data-ttu-id="ee278-147">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="ee278-147">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="ee278-148">string</span><span class="sxs-lookup"><span data-stu-id="ee278-148">string</span></span> | <span data-ttu-id="ee278-149">Формат возвращаемого свойства **body**.</span><span class="sxs-lookup"><span data-stu-id="ee278-149">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="ee278-150">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="ee278-150">Values can be "text" or "html".</span></span> <span data-ttu-id="ee278-151">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="ee278-151">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="ee278-152">Если заголовок не указан, свойство **body** возвращается в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="ee278-152">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="ee278-153">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="ee278-153">Optional.</span></span> |
+| <span data-ttu-id="07324-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="07324-138">Authorization</span></span>  | <span data-ttu-id="07324-139">string</span><span class="sxs-lookup"><span data-stu-id="07324-139">string</span></span> | <span data-ttu-id="07324-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="07324-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="07324-142">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="07324-142">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="07324-143">string</span><span class="sxs-lookup"><span data-stu-id="07324-143">string</span></span> | <span data-ttu-id="07324-144">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="07324-144">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="07324-145">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="07324-145">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="07324-146">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="07324-146">Optional.</span></span> |
+| <span data-ttu-id="07324-147">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="07324-147">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="07324-148">string</span><span class="sxs-lookup"><span data-stu-id="07324-148">string</span></span> | <span data-ttu-id="07324-149">Формат возвращаемого свойства **body**.</span><span class="sxs-lookup"><span data-stu-id="07324-149">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="07324-150">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="07324-150">Values can be "text" or "html".</span></span> <span data-ttu-id="07324-151">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="07324-151">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="07324-152">Если заголовок не указан, свойство **body** возвращается в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="07324-152">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="07324-153">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="07324-153">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ee278-154">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ee278-154">Request body</span></span>
-<span data-ttu-id="ee278-155">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ee278-155">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="07324-154">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="07324-154">Request body</span></span>
+<span data-ttu-id="07324-155">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="07324-155">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee278-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="ee278-156">Response</span></span>
+## <a name="response"></a><span data-ttu-id="07324-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="07324-156">Response</span></span>
 
-<span data-ttu-id="ee278-157">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ee278-157">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ee278-158">Пример</span><span class="sxs-lookup"><span data-stu-id="ee278-158">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ee278-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="ee278-159">Request</span></span>
-<span data-ttu-id="ee278-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ee278-160">Here is an example of the request.</span></span>
+<span data-ttu-id="07324-157">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="07324-157">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="07324-158">Пример</span><span class="sxs-lookup"><span data-stu-id="07324-158">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="07324-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="07324-159">Request</span></span>
+<span data-ttu-id="07324-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="07324-160">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_calendarview"
@@ -83,8 +83,8 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 ```http
 GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000
 ```
-##### <a name="response"></a><span data-ttu-id="ee278-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="ee278-161">Response</span></span>
-<span data-ttu-id="ee278-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ee278-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="07324-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="07324-161">Response</span></span>
+<span data-ttu-id="07324-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="07324-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,6 +112,16 @@ Content-length: 354
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="07324-165">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="07324-165">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="07324-166">Языках</span><span class="sxs-lookup"><span data-stu-id="07324-166">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_calendarview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="07324-167">Язык</span><span class="sxs-lookup"><span data-stu-id="07324-167">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_calendarview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -122,6 +132,9 @@ Content-length: 354
   "keywords": "calendar",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-calendarview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
