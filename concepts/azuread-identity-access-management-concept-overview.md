@@ -3,12 +3,12 @@ title: Обзор API Azure AD для управления идентифика
 description: 'Azure Active Directory (Azure AD) помогает централизовать управление идентификацией и доступом и, соответственно, обеспечить безопасный и эффективный доступ между приложениями, устройствами, службами и инфраструктурой. С помощью Azure AD организации могут управлять идентификацией и доступом в локальной, гибридной и облачной средах.  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 634b2c806065f6e1b7cd2a0f2aca41cfdb2aa7fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02faa345426b77e0ede8a0c92e54207338bec
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570259"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599823"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Обзор API Azure AD для управления идентификацией и доступом
 
@@ -84,7 +84,7 @@ Azure AD использует адаптивные алгоритмы машин
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Узнайте, как [использовать REST API Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Используйте Azure AD для [аутентификации](auth-overview.md) в Microsoft Graph.
+- Используйте Azure AD для [аутентификации](./auth/) в Microsoft Graph.
 - Интегрируйте [вход в Azure AD](https://azure.microsoft.com/ru-RU/develop/identity/signin/) в свое приложение или в свой веб-сайт.
 - Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).
 - Изучите [примеры](https://developer.microsoft.com/graph/graph/examples), чтобы получить более четкое представление об использовании Microsoft Graph.

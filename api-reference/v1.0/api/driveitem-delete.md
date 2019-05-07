@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Удаление файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6c6afe91167d6ce8c4bce3d53eb3cb9085bb394f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 69286819a0f49def234709a0fce41eca155b6a74
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548070"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33617176"
 ---
 # <a name="delete-a-driveitem"></a>Удаление ресурса DriveItem
 
@@ -56,13 +56,23 @@ DELETE /me/drive/items/{item-id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот запрос возвращает ответ `204 No Content`, указывающий, что ресурс был удален и что нет данных, которые необходимо возвратить.
+В случае успешного запроса этот вызов возвращает отклик `204 No Content`, указывающий, что ресурс удален, поэтому данные не возвращаются.
 
 <!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="error-responses"></a>Ответы с ошибками
 
@@ -75,5 +85,9 @@ HTTP/1.1 204 No Content
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
+  "tocPath": "Items/Delete",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

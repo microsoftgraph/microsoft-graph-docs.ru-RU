@@ -1,0 +1,135 @@
+---
+title: Получение Секурескоре
+description: Получение свойств и связей объекта Секурескоре.
+author: preetikr
+localization_priority: Normal
+ms.prod: security
+ms.openlocfilehash: 48b6f74fb298a0b9064f2abc7b2c8055ea60b6a8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33629763"
+---
+# <a name="get-securescore"></a>Получение Секурескоре
+
+Получение свойств и связей объекта [секурескоре](../resources/securescore.md) .
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Приложение | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /security/secureScores/{id}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя      |Описание|
+|:----------|:----------|
+| Авторизация  | Bearer {код}. Обязательно.|
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескоре** в тексте отклика. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+
+## <a name="example"></a>Пример
+
+### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "get_securescore"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/security/secureScores/{id}
+```
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.secureScore"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "00000001-0001-0001-0001-000000000001c_2019-03-19",
+  "azureTenantId": "00000001-0001-0001-0001-000000000001c",
+  "activeUserCount": 0,
+  "createdDateTime": "2019-03-19T15:21:00Z",
+  "currentScore": 387.0,
+  "enabledServices": [
+    "HasExchange",
+    "HasSharePoint",
+    "HasInTune"
+  ],
+  "licensedUserCount": 100,
+  "maxScore": 697.0,
+  "averageComparativeScores": [
+    {
+      "basis": "AllTenants",
+      "averageScore": 37.0
+    },
+    {
+      "basis": "TotalSeats",
+      "averageScore": 46.0
+    },
+    {
+      "basis": "IndustryTypes",
+      "averageScore": 109.0
+    }
+  ],
+  "controlScores": [
+    {
+      "controlCategory": "Identity",
+      "controlName": "AdminMFA",
+      "description": "Requiring multi-factor authentication (MFA) for all Azure Active Directory accounts with privileged roles",
+      "score": 35.0
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "DLPEnabled",
+      "description": "Data Loss Prevention (DLP) policies can be used to comply with business standards and industry regulations.",
+      "score": 20.0
+    }
+  ],
+"vendorInformation": {
+  "provider": "SecureScore",
+  "providerVersion": null,
+  "subProvider": null,
+  "vendor": "Microsoft"
+  }
+}
+```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "get secureScores",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}
+-->

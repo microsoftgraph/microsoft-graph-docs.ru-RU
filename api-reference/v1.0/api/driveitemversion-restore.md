@@ -3,12 +3,12 @@ title: Восстановление предыдущей версии ресур
 description: Восстановление предыдущей версии ресурса DriveItem в качестве текущей версии. При этом будет создана новая версия с тем же содержимым, что и в предыдущей версии, но будут сохранены все существующие версии файла.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bfc4513b958d74aae40e7108f2c0b59b570e5c6c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53a8f5e40e06ef90662a55c44ca718bc82f4fb4b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550499"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616254"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>Восстановление предыдущей версии ресурса DriveItem
 
@@ -59,6 +59,16 @@ POST /drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/restore-item-version-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/restore-item-version-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [item-resource]: ../resources/driveitem.md
 
@@ -67,5 +77,9 @@ HTTP/1.1 204 No Content
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

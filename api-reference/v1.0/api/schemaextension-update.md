@@ -3,12 +3,12 @@ title: Обновление schemaExtension
 description: Обновление свойств в определении указанного schemaExtension.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 9f8bfc77ddcb3633160f76ce5d900e4ba09af1c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72b94f492947ef5853d14283eca33a682ea14b05
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521084"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603867"
 ---
 # <a name="update-schemaextension"></a>Обновление schemaExtension
 
@@ -50,7 +50,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |description|String|Описание расширения схемы.|
 |properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция типов и имен свойств, составляющих определение расширения схемы. Разрешены только добавочные изменения. |
-|status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании разРабатывается. **** Переход между состояниями возможен из **разработки** в **доступном** и **доступном** для **устаревших**состояниях.|
+|status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании разрабатывается. **** Переход между состояниями возможен из **разработки** в **доступном** и **доступном** для **устаревших**состояниях.|
 |targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешены только добавочные изменения.|
 
 ## <a name="response"></a>Отклик
@@ -95,6 +95,16 @@ Content-length: 201
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>См. также
 
@@ -108,5 +118,9 @@ HTTP/1.1 204 No Content
   "description": "Update schemaextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
