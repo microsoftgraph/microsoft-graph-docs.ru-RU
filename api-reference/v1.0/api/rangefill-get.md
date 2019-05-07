@@ -4,50 +4,50 @@ description: Получение свойств и связей объекта ra
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 80448c45883a5797b50d78d9a68af4768f8cafd0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44537c8c0523cc4221c5fcde4b5b7a3e90030186
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584007"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607507"
 ---
-# <a name="get-rangefill"></a><span data-ttu-id="caade-103">Получение объекта RangeFill</span><span class="sxs-lookup"><span data-stu-id="caade-103">Get RangeFill</span></span>
+# <a name="get-rangefill"></a><span data-ttu-id="c5350-103">Получение объекта RangeFill</span><span class="sxs-lookup"><span data-stu-id="c5350-103">Get RangeFill</span></span>
 
-<span data-ttu-id="caade-104">Получение свойств и связей объекта rangefill.</span><span class="sxs-lookup"><span data-stu-id="caade-104">Retrieve the properties and relationships of rangefill object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="caade-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="caade-105">Permissions</span></span>
-<span data-ttu-id="caade-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="caade-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c5350-104">Получение свойств и связей объекта rangefill.</span><span class="sxs-lookup"><span data-stu-id="c5350-104">Retrieve the properties and relationships of rangefill object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c5350-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c5350-105">Permissions</span></span>
+<span data-ttu-id="c5350-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c5350-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="caade-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="caade-108">Permission type</span></span>      | <span data-ttu-id="caade-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="caade-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c5350-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c5350-108">Permission type</span></span>      | <span data-ttu-id="c5350-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c5350-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="caade-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="caade-110">Delegated (work or school account)</span></span> | <span data-ttu-id="caade-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="caade-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="caade-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="caade-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="caade-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="caade-113">Not supported.</span></span>    |
-|<span data-ttu-id="caade-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="caade-114">Application</span></span> | <span data-ttu-id="caade-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="caade-115">Not supported.</span></span> |
+|<span data-ttu-id="c5350-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c5350-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c5350-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c5350-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c5350-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c5350-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5350-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c5350-113">Not supported.</span></span>    |
+|<span data-ttu-id="c5350-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c5350-114">Application</span></span> | <span data-ttu-id="c5350-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c5350-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="caade-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="caade-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c5350-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c5350-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/format/fill
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="caade-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="caade-117">Optional query parameters</span></span>
-<span data-ttu-id="caade-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="caade-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c5350-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c5350-117">Optional query parameters</span></span>
+<span data-ttu-id="c5350-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c5350-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="caade-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="caade-119">Request headers</span></span>
-| <span data-ttu-id="caade-120">Имя</span><span class="sxs-lookup"><span data-stu-id="caade-120">Name</span></span>      |<span data-ttu-id="caade-121">Описание</span><span class="sxs-lookup"><span data-stu-id="caade-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c5350-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c5350-119">Request headers</span></span>
+| <span data-ttu-id="c5350-120">Имя</span><span class="sxs-lookup"><span data-stu-id="c5350-120">Name</span></span>      |<span data-ttu-id="c5350-121">Описание</span><span class="sxs-lookup"><span data-stu-id="c5350-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="caade-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="caade-122">Authorization</span></span>  | <span data-ttu-id="caade-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="caade-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="caade-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="caade-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="caade-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="caade-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c5350-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c5350-122">Authorization</span></span>  | <span data-ttu-id="c5350-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c5350-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c5350-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c5350-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c5350-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c5350-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="caade-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="caade-128">Request body</span></span>
-<span data-ttu-id="caade-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="caade-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5350-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c5350-128">Request body</span></span>
+<span data-ttu-id="c5350-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c5350-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="caade-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="caade-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c5350-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="c5350-130">Response</span></span>
 
-<span data-ttu-id="caade-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефилл](../resources/rangefill.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="caade-131">If successful, this method returns a `200 OK` response code and [WorkbookRangeFill](../resources/rangefill.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="caade-132">Пример</span><span class="sxs-lookup"><span data-stu-id="caade-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="caade-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="caade-133">Request</span></span>
-<span data-ttu-id="caade-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="caade-134">Here is an example of the request.</span></span>
+<span data-ttu-id="c5350-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефилл](../resources/rangefill.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c5350-131">If successful, this method returns a `200 OK` response code and [WorkbookRangeFill](../resources/rangefill.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c5350-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c5350-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c5350-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c5350-133">Request</span></span>
+<span data-ttu-id="c5350-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c5350-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_rangefill"
@@ -55,8 +55,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 ```
-##### <a name="response"></a><span data-ttu-id="caade-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="caade-135">Response</span></span>
-<span data-ttu-id="caade-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="caade-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c5350-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c5350-135">Response</span></span>
+<span data-ttu-id="c5350-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c5350-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -71,6 +71,16 @@ Content-length: 28
   "color": "color-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c5350-139">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="c5350-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c5350-140">Языках</span><span class="sxs-lookup"><span data-stu-id="c5350-140">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_rangefill-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c5350-141">Язык</span><span class="sxs-lookup"><span data-stu-id="c5350-141">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_rangefill-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -79,5 +89,9 @@ Content-length: 28
   "description": "Get RangeFill",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/rangefill-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/rangefill-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
