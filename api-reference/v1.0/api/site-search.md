@@ -6,31 +6,31 @@ title: Поиск сайтов
 description: Выполните поиск в клиенте SharePoint для сайтов, которые совпадают с предоставленными ключевыми словами.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 48a479df2f91dd4d60455a26c4e16f561ea88f83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5dedb77a362507b5d59a8372f64bd72d6504c980
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560986"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603085"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="50d65-103">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="50d65-103">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="2b028-103">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="2b028-103">Search for sites</span></span>
 
-<span data-ttu-id="50d65-104">Выполните поиск в клиенте SharePoint для [сайтов][] , которые совпадают с предоставленными ключевыми словами.</span><span class="sxs-lookup"><span data-stu-id="50d65-104">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
+<span data-ttu-id="2b028-104">Выполните поиск в клиенте SharePoint для [сайтов][] , которые совпадают с предоставленными ключевыми словами.</span><span class="sxs-lookup"><span data-stu-id="2b028-104">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [сайтов]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="50d65-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="50d65-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2b028-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2b028-106">Permissions</span></span>
 
-<span data-ttu-id="50d65-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50d65-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2b028-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2b028-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="50d65-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="50d65-109">Permission type</span></span>                        | <span data-ttu-id="50d65-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="50d65-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="2b028-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2b028-109">Permission type</span></span>                        | <span data-ttu-id="2b028-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2b028-110">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="50d65-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="50d65-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="50d65-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50d65-112">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="50d65-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="50d65-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50d65-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50d65-114">Not supported.</span></span>
-|<span data-ttu-id="50d65-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="50d65-115">Application</span></span>                            | <span data-ttu-id="50d65-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50d65-116">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="2b028-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2b028-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2b028-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b028-112">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="2b028-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2b028-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b028-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2b028-114">Not supported.</span></span>
+|<span data-ttu-id="2b028-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2b028-115">Application</span></span>                            | <span data-ttu-id="2b028-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2b028-116">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="50d65-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="50d65-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2b028-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2b028-117">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "32560986"
 GET /sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="50d65-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="50d65-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2b028-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="2b028-118">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -67,12 +67,26 @@ Content-type: application/json
   ]
 }
 ```
-><span data-ttu-id="50d65-119">**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="50d65-119">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="50d65-120">Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="50d65-120">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2b028-119">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="2b028-119">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="2b028-120">Языках</span><span class="sxs-lookup"><span data-stu-id="2b028-120">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/search-sites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2b028-121">Язык</span><span class="sxs-lookup"><span data-stu-id="2b028-121">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/search-sites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+><span data-ttu-id="2b028-122">**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="2b028-122">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="2b028-123">Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="2b028-123">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Search"
+  "tocPath": "Sites/Search",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/site-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/site-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

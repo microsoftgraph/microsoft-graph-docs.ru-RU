@@ -4,55 +4,55 @@ description: Возвращает определенное количество 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1cba55c213fc1a5cf5858f9b4308ed519fc6d3ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95c2c80bd2a07f2074b69b634aaef46ea9ffa456
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585414"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601094"
 ---
-# <a name="workbookrange-columnsbefore"></a><span data-ttu-id="dad91-103">workbookRange: columnsBefore</span><span class="sxs-lookup"><span data-stu-id="dad91-103">workbookRange: columnsBefore</span></span>
+# <a name="workbookrange-columnsbefore"></a><span data-ttu-id="2c945-103">workbookRange: columnsBefore</span><span class="sxs-lookup"><span data-stu-id="2c945-103">workbookRange: columnsBefore</span></span>
 
-<span data-ttu-id="dad91-104">Возвращает определенное количество столбцов слева от заданного диапазона.</span><span class="sxs-lookup"><span data-stu-id="dad91-104">Gets a certain number of columns to the left of the given range.</span></span>
+<span data-ttu-id="2c945-104">Возвращает определенное количество столбцов слева от заданного диапазона.</span><span class="sxs-lookup"><span data-stu-id="2c945-104">Gets a certain number of columns to the left of the given range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dad91-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dad91-105">Permissions</span></span>
-<span data-ttu-id="dad91-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dad91-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2c945-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2c945-105">Permissions</span></span>
+<span data-ttu-id="2c945-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c945-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dad91-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dad91-108">Permission type</span></span>      | <span data-ttu-id="dad91-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dad91-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2c945-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2c945-108">Permission type</span></span>      | <span data-ttu-id="2c945-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2c945-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dad91-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dad91-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dad91-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dad91-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="dad91-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dad91-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dad91-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dad91-113">Not supported.</span></span>    |
-|<span data-ttu-id="dad91-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dad91-114">Application</span></span> | <span data-ttu-id="dad91-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dad91-115">Not supported.</span></span> |
+|<span data-ttu-id="2c945-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2c945-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2c945-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2c945-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2c945-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2c945-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c945-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c945-113">Not supported.</span></span>    |
+|<span data-ttu-id="2c945-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2c945-114">Application</span></span> | <span data-ttu-id="2c945-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c945-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dad91-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dad91-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c945-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2c945-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="dad91-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="dad91-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="2c945-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="2c945-117">Function parameters</span></span>
 
-| <span data-ttu-id="dad91-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="dad91-118">Parameter</span></span>    | <span data-ttu-id="dad91-119">Тип</span><span class="sxs-lookup"><span data-stu-id="dad91-119">Type</span></span>   |<span data-ttu-id="dad91-120">Описание</span><span class="sxs-lookup"><span data-stu-id="dad91-120">Description</span></span>|
+| <span data-ttu-id="2c945-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="2c945-118">Parameter</span></span>    | <span data-ttu-id="2c945-119">Тип</span><span class="sxs-lookup"><span data-stu-id="2c945-119">Type</span></span>   |<span data-ttu-id="2c945-120">Описание</span><span class="sxs-lookup"><span data-stu-id="2c945-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dad91-121">count</span><span class="sxs-lookup"><span data-stu-id="dad91-121">count</span></span>|<span data-ttu-id="dad91-122">Int32</span><span class="sxs-lookup"><span data-stu-id="dad91-122">Int32</span></span>|<span data-ttu-id="dad91-p102">Необязательный. Количество столбцов, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.</span><span class="sxs-lookup"><span data-stu-id="dad91-p102">Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
+|<span data-ttu-id="2c945-121">count</span><span class="sxs-lookup"><span data-stu-id="2c945-121">count</span></span>|<span data-ttu-id="2c945-122">Int32</span><span class="sxs-lookup"><span data-stu-id="2c945-122">Int32</span></span>|<span data-ttu-id="2c945-p102">Необязательный. Количество столбцов, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.</span><span class="sxs-lookup"><span data-stu-id="2c945-p102">Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="dad91-128">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dad91-128">Request headers</span></span>
-| <span data-ttu-id="dad91-129">Имя</span><span class="sxs-lookup"><span data-stu-id="dad91-129">Name</span></span>       | <span data-ttu-id="dad91-130">Описание</span><span class="sxs-lookup"><span data-stu-id="dad91-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c945-128">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2c945-128">Request headers</span></span>
+| <span data-ttu-id="2c945-129">Имя</span><span class="sxs-lookup"><span data-stu-id="2c945-129">Name</span></span>       | <span data-ttu-id="2c945-130">Описание</span><span class="sxs-lookup"><span data-stu-id="2c945-130">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="dad91-131">Авторизация</span><span class="sxs-lookup"><span data-stu-id="dad91-131">Authorization</span></span>  | <span data-ttu-id="dad91-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dad91-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dad91-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="dad91-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="dad91-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="dad91-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2c945-131">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2c945-131">Authorization</span></span>  | <span data-ttu-id="2c945-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c945-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2c945-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2c945-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="2c945-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="2c945-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dad91-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="dad91-137">Request body</span></span>
-<span data-ttu-id="dad91-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="dad91-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c945-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2c945-137">Request body</span></span>
+<span data-ttu-id="2c945-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2c945-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dad91-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="dad91-139">Response</span></span>
-<span data-ttu-id="dad91-140">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="dad91-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2c945-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="2c945-139">Response</span></span>
+<span data-ttu-id="2c945-140">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2c945-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dad91-141">Пример</span><span class="sxs-lookup"><span data-stu-id="dad91-141">Example</span></span>
-<span data-ttu-id="dad91-142">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="dad91-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="dad91-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="dad91-143">Request</span></span>
-<span data-ttu-id="dad91-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="dad91-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2c945-141">Пример</span><span class="sxs-lookup"><span data-stu-id="2c945-141">Example</span></span>
+<span data-ttu-id="2c945-142">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="2c945-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2c945-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c945-143">Request</span></span>
+<span data-ttu-id="2c945-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2c945-144">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -63,8 +63,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
-##### <a name="response"></a><span data-ttu-id="dad91-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="dad91-145">Response</span></span>
-<span data-ttu-id="dad91-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="dad91-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2c945-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c945-145">Response</span></span>
+<span data-ttu-id="2c945-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c945-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,3 +84,24 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="2c945-149">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="2c945-149">SDK sample code</span></span>
+
+# <a name="ctabcs"></a>[<span data-ttu-id="2c945-150">Языках</span><span class="sxs-lookup"><span data-stu-id="2c945-150">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/workbookrange-columnsbefore.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/workbookrange-columnsbefore.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

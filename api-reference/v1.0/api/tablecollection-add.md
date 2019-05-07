@@ -4,59 +4,59 @@ description: Создание таблицы. Исходный адрес диа
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 4b2523725c65f0b09e6f91296eacfcb9c75e2927
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d53a41f80a329dae98f95e9b630c511715268e8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520496"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602723"
 ---
-# <a name="tablecollection-add"></a><span data-ttu-id="6e19f-105">TableCollection: add</span><span class="sxs-lookup"><span data-stu-id="6e19f-105">TableCollection: add</span></span>
+# <a name="tablecollection-add"></a><span data-ttu-id="3a622-105">TableCollection: add</span><span class="sxs-lookup"><span data-stu-id="3a622-105">TableCollection: add</span></span>
 
-<span data-ttu-id="6e19f-p102">Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="6e19f-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
+<span data-ttu-id="3a622-p102">Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="3a622-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
 
-## <a name="error-handling"></a><span data-ttu-id="6e19f-109">Обработка ошибок</span><span class="sxs-lookup"><span data-stu-id="6e19f-109">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="3a622-109">Обработка ошибок</span><span class="sxs-lookup"><span data-stu-id="3a622-109">Error Handling</span></span>
 
-<span data-ttu-id="6e19f-110">Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP.</span><span class="sxs-lookup"><span data-stu-id="6e19f-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="6e19f-111">В этом случае нужно повторить запрос.</span><span class="sxs-lookup"><span data-stu-id="6e19f-111">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="3a622-110">Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP.</span><span class="sxs-lookup"><span data-stu-id="3a622-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="3a622-111">В этом случае нужно повторить запрос.</span><span class="sxs-lookup"><span data-stu-id="3a622-111">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6e19f-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6e19f-112">Permissions</span></span>
-<span data-ttu-id="6e19f-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e19f-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a622-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3a622-112">Permissions</span></span>
+<span data-ttu-id="3a622-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a622-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6e19f-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6e19f-115">Permission type</span></span>      | <span data-ttu-id="6e19f-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6e19f-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3a622-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3a622-115">Permission type</span></span>      | <span data-ttu-id="3a622-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3a622-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6e19f-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6e19f-117">Delegated (work or school account)</span></span> | <span data-ttu-id="6e19f-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6e19f-118">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6e19f-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6e19f-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e19f-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e19f-120">Not supported.</span></span>    |
-|<span data-ttu-id="6e19f-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6e19f-121">Application</span></span> | <span data-ttu-id="6e19f-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e19f-122">Not supported.</span></span> |
+|<span data-ttu-id="3a622-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3a622-117">Delegated (work or school account)</span></span> | <span data-ttu-id="3a622-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3a622-118">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3a622-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3a622-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a622-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3a622-120">Not supported.</span></span>    |
+|<span data-ttu-id="3a622-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3a622-121">Application</span></span> | <span data-ttu-id="3a622-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3a622-122">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6e19f-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6e19f-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a622-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3a622-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/add
 POST /workbook/worksheets/{id|name}/tables/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6e19f-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6e19f-124">Request headers</span></span>
-| <span data-ttu-id="6e19f-125">Имя</span><span class="sxs-lookup"><span data-stu-id="6e19f-125">Name</span></span>       | <span data-ttu-id="6e19f-126">Описание</span><span class="sxs-lookup"><span data-stu-id="6e19f-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3a622-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3a622-124">Request headers</span></span>
+| <span data-ttu-id="3a622-125">Имя</span><span class="sxs-lookup"><span data-stu-id="3a622-125">Name</span></span>       | <span data-ttu-id="3a622-126">Описание</span><span class="sxs-lookup"><span data-stu-id="3a622-126">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6e19f-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6e19f-127">Authorization</span></span>  | <span data-ttu-id="6e19f-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6e19f-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6e19f-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6e19f-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="6e19f-p106">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="6e19f-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3a622-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3a622-127">Authorization</span></span>  | <span data-ttu-id="3a622-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3a622-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3a622-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="3a622-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="3a622-p106">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="3a622-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6e19f-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6e19f-133">Request body</span></span>
-<span data-ttu-id="6e19f-134">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="6e19f-134">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a622-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3a622-133">Request body</span></span>
+<span data-ttu-id="3a622-134">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="3a622-134">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="6e19f-135">Параметр</span><span class="sxs-lookup"><span data-stu-id="6e19f-135">Parameter</span></span>    | <span data-ttu-id="6e19f-136">Тип</span><span class="sxs-lookup"><span data-stu-id="6e19f-136">Type</span></span>   |<span data-ttu-id="6e19f-137">Описание</span><span class="sxs-lookup"><span data-stu-id="6e19f-137">Description</span></span>|
+| <span data-ttu-id="3a622-135">Параметр</span><span class="sxs-lookup"><span data-stu-id="3a622-135">Parameter</span></span>    | <span data-ttu-id="3a622-136">Тип</span><span class="sxs-lookup"><span data-stu-id="3a622-136">Type</span></span>   |<span data-ttu-id="3a622-137">Описание</span><span class="sxs-lookup"><span data-stu-id="3a622-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6e19f-138">address</span><span class="sxs-lookup"><span data-stu-id="6e19f-138">address</span></span>|<span data-ttu-id="6e19f-139">string</span><span class="sxs-lookup"><span data-stu-id="6e19f-139">string</span></span>|<span data-ttu-id="6e19f-p107">Адрес или имя объекта range, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.</span><span class="sxs-lookup"><span data-stu-id="6e19f-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
-|<span data-ttu-id="6e19f-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="6e19f-142">hasHeaders</span></span>|<span data-ttu-id="6e19f-143">boolean</span><span class="sxs-lookup"><span data-stu-id="6e19f-143">boolean</span></span>|<span data-ttu-id="6e19f-p108">Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.</span><span class="sxs-lookup"><span data-stu-id="6e19f-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
+|<span data-ttu-id="3a622-138">address</span><span class="sxs-lookup"><span data-stu-id="3a622-138">address</span></span>|<span data-ttu-id="3a622-139">string</span><span class="sxs-lookup"><span data-stu-id="3a622-139">string</span></span>|<span data-ttu-id="3a622-p107">Адрес или имя объекта range, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.</span><span class="sxs-lookup"><span data-stu-id="3a622-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
+|<span data-ttu-id="3a622-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="3a622-142">hasHeaders</span></span>|<span data-ttu-id="3a622-143">boolean</span><span class="sxs-lookup"><span data-stu-id="3a622-143">boolean</span></span>|<span data-ttu-id="3a622-p108">Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.</span><span class="sxs-lookup"><span data-stu-id="3a622-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="6e19f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="6e19f-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3a622-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="3a622-147">Response</span></span>
 
-<span data-ttu-id="6e19f-148">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктабле](../resources/table.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6e19f-148">If successful, this method returns `200 OK` response code and [WorkbookTable](../resources/table.md) object in the response body.</span></span>
+<span data-ttu-id="3a622-148">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктабле](../resources/table.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3a622-148">If successful, this method returns `200 OK` response code and [WorkbookTable](../resources/table.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6e19f-149">Пример</span><span class="sxs-lookup"><span data-stu-id="6e19f-149">Example</span></span>
-<span data-ttu-id="6e19f-150">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="6e19f-150">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6e19f-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="6e19f-151">Request</span></span>
-<span data-ttu-id="6e19f-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6e19f-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3a622-149">Пример</span><span class="sxs-lookup"><span data-stu-id="3a622-149">Example</span></span>
+<span data-ttu-id="3a622-150">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="3a622-150">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3a622-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="3a622-151">Request</span></span>
+<span data-ttu-id="3a622-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3a622-152">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablecollection_add"
@@ -72,8 +72,8 @@ Content-length: 54
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="6e19f-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="6e19f-153">Response</span></span>
-<span data-ttu-id="6e19f-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6e19f-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3a622-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="3a622-153">Response</span></span>
+<span data-ttu-id="3a622-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3a622-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,6 +92,16 @@ Content-length: 109
   "style": "style-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="3a622-157">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="3a622-157">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="3a622-158">Языках</span><span class="sxs-lookup"><span data-stu-id="3a622-158">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/tablecollection_add-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3a622-159">Язык</span><span class="sxs-lookup"><span data-stu-id="3a622-159">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablecollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,5 +110,9 @@ Content-length: 109
   "description": "TableCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/tablecollection-add.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/tablecollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
