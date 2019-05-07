@@ -3,14 +3,16 @@ title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 1bf693fb8551db916807570459d9658fa02665f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aef2e72898230440bf43c43c0acb317ae0f720ad
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560965"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603062"
 ---
 # <a name="update-subscription"></a>Обновление подписки
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возобновление подписки путем увеличения срока действия.
 
@@ -42,7 +44,6 @@ ms.locfileid: "32560965"
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
   - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
 
-
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -72,7 +73,7 @@ PATCH /subscriptions/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
+PATCH https://graph.microsoft.com/beta/subscriptions/{id}
 Content-type: application/json
 
 {
@@ -80,12 +81,12 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -99,17 +100,33 @@ Content-length: 252
   "resource":"me/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
-  "clientState":"subscription-identifier",
+  "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_subscription-Cs-snippets.md)]
 
-<!-- {
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_subscription-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!--
+{
   "type": "#page.annotation",
   "description": "Update subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

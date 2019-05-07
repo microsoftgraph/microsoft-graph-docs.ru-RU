@@ -3,12 +3,12 @@ title: Получение ресурса ListItemVersion
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса ListItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3e45cf260a9f526a7309c63791ed2cb6b8196e45
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d36c09c62cd802c8514781df26f5cac076f107df
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541397"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613488"
 ---
 # <a name="get-a-listitemversion-resource"></a>Получение ресурса ListItemVersion
 
@@ -74,11 +74,25 @@ Content-Type: application/json
     "fields": {  }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-single-version-listItem-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-single-version-listItem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitemversion-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/listitemversion-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

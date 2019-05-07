@@ -4,12 +4,12 @@ description: Обновление свойств объекта rangefont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 40dfe68ec16415dbfa4abcbdb46da8cc9f89c961
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d258463ed9ee8ab6968a4b5781b2415fd45ca860
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453236"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607770"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 
@@ -41,7 +41,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|bold|логический|Указывает, является ли шрифт полужирным.|
+|bold|boolean|Указывает, является ли шрифт полужирным.|
 |color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
@@ -93,6 +93,16 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_rangefont-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_rangefont-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,5 +111,9 @@ Content-length: 134
   "description": "Update rangefont",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/rangefont-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

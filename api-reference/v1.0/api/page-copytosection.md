@@ -4,12 +4,12 @@ description: Копирует страницу в определенный ра�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: b09c47ab7dbaec7b7dd63d134cdefae1260d9e8d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba7fe9105a8bd610263583cd314a98e69cd50814
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556664"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611596"
 ---
 # <a name="page-copytosection"></a>Страница: copyToSection
 Копирует страницу в определенный раздел.
@@ -35,8 +35,8 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `application/json` |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
@@ -46,7 +46,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
 |id|String|Обязательный. Идентификатор раздела назначения.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 
@@ -79,6 +79,16 @@ Content-length: 52
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/page_copytosection-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/page_copytosection-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,5 +97,9 @@ HTTP/1.1 202 Accepted
   "description": "page: copyToSection",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

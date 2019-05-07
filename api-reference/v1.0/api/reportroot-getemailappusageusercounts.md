@@ -4,12 +4,12 @@ description: Получение числа уникальных пользова
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 242a7256bab59fa8fa010a1e1966e262c81797c2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7821b321a28a81868147b00314c8ca774f8b75f0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582327"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33606982"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 
@@ -47,7 +47,7 @@ GET /reports/getEmailAppUsageUserCounts(period='{period_value}')
 
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.                |
+| Авторизация | Bearer {token}. Обязательный.                |
 | If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
@@ -58,7 +58,7 @@ URL-адреса для скачивания, для которых выполн
 
 CSV-файл содержит столбцы со следующими заголовками:
 
-- Report Refresh Date (дата обновления отчета)
+- "Report Refresh Date" (Дата обновления отчета);
 - Mail For Mac (Mail для Mac)
 - "Outlook For Mac" (Outlook для Mac);
 - "Outlook For Windows" (Outlook для Windows);
@@ -69,7 +69,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "IMAP4 App" (Приложение с поддержкой IMAP4);
 - SMTP App (Приложение с поддержкой SMTP)
 - Report Date (Дата отчета)
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 
@@ -87,7 +87,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserCounts(period='D7')
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -102,6 +102,16 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getemailappusageusercounts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getemailappusageusercounts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.
 
@@ -113,3 +123,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For Mobile,Other For Mobile,Outlook For Web,POP3 App,IMAP4 App,SMTP App,Report Date,Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getemailappusageusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getemailappusageusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,12 +4,12 @@ description: Выполнение операции сортировки.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: be024f3eacbb4e2d1178ec7b82a8e8ca604aff60
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e7996b3c2a67d7b43ed594a490c06a5b7ce84230
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32452708"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607024"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -43,7 +43,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
-|matchCase|логический|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
+|matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
 |orientation|string|Необязательно. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
 |method|string|Необязательно. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
@@ -94,6 +94,16 @@ Content-length: 358
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/rangesort_apply-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/rangesort_apply-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,5 +112,9 @@ HTTP/1.1 200 OK
   "description": "RangeSort: apply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

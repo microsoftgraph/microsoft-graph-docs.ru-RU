@@ -2,12 +2,12 @@
 title: Add Named Item FormulaLocal
 description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
 localization_priority: Normal
-ms.openlocfilehash: 24232699220a025c19a4e2141d15ac76f0ad807f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 452707d546e7f0b358a840056b03271ca1a0c7ee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460893"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612139"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
@@ -93,6 +93,16 @@ Content-length: 109
     "visible": true
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -102,5 +112,9 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

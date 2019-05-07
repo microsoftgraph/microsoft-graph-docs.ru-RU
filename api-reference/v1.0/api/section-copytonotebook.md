@@ -4,12 +4,12 @@ description: Копирование раздела в указанную зап�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: e122f8f7dfee82caa026ff569899516af4205ac2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ed7285f601d0509404ecab73a2029e9f55212971
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521021"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603583"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 Копирование раздела в указанную записную книжку.
@@ -35,7 +35,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `application/json` |
+| Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
@@ -80,6 +80,16 @@ Content-length: 84
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/section_copytonotebook-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/section_copytonotebook-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -88,5 +98,9 @@ HTTP/1.1 202 Accepted
   "description": "section: copyToNotebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

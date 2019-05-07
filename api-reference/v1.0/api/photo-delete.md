@@ -2,16 +2,14 @@
 title: Удаление фотографии
 description: Удаление фотографии.
 localization_priority: Normal
-ms.openlocfilehash: e83e00f6579c300395b21608c89984a775bb5ab4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05a679217aea32ee026ef1786c7d6a21689d1cab
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521077"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611512"
 ---
 # <a name="delete-photo"></a>Удаление фотографии
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление фотографии.
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +38,7 @@ DELETE /drive/root/createdByUser/photo
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -49,10 +47,10 @@ DELETE /drive/root/createdByUser/photo
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "delete_photo"
+"name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
+DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
@@ -63,18 +61,27 @@ DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_photo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_photo-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete photo",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/photo-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/photo-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/photo-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

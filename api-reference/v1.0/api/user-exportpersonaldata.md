@@ -4,12 +4,12 @@ description: Передает запрос операции политики д�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba26d2b2bc5af63f01a4333490d9850ffa3dd767
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6feffbe56a6b4fe21c5a06eb89016f68d8f045ef
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576278"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602151"
 ---
 # <a name="user-exportpersonaldata"></a>Пользователь: Експортперсоналдата
 
@@ -21,7 +21,7 @@ ms.locfileid: "32576278"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User. Export. ALL, User. Read. ALL  |
-|Делегированные (личная учетная запись Майкрософт) |  Не применимо  |
+|Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
 |Для приложений | User. Export. ALL, User. Read. ALL |
 
 >**Примечание:** Экспорт может выполняться только администратором компании, когда используются делегированные разрешения.
@@ -49,7 +49,7 @@ POST /users/{id}/exportPersonalData
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Location  | URL-адрес для проверки состояния запроса. |
+| Расположение  | URL-адрес для проверки состояния запроса. |
 | Retry — после  | Период времени в секундах. Запрос должен подождать этого времени после отправки запроса на проверку состояния. |
 
 ## <a name="example"></a>Пример
@@ -67,9 +67,19 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 {
   Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
@@ -92,5 +102,9 @@ HTTP/1.1 202 Accepted
   "description": "user: exportPersonalData",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

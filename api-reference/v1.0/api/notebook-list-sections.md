@@ -4,12 +4,12 @@ description: Получение списка объектов Оненотесе
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fd7c7d0eb5dee97ab2e9d16a911d52e2707fed58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ae0101c0d53f3a61d07cb83fe9297323272f6ef7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562169"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612020"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 
@@ -19,7 +19,7 @@ ms.locfileid: "32562169"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.Create, Notes.Read, Notes.ReadWrite    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
@@ -32,9 +32,9 @@ GET /groups/{id}/onenote/notebooks/{id}/sections
 GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
-По умолчанию используется `name asc`порядок сортировки.
+По умолчанию используется порядок сортировки `name asc`.
 
 Запрос по умолчанию `parentNotebook` разворачивает и выбирает `id`свойства `displayName`, и `self` . Допустимые `expand` значения для разделов `parentNotebook` — `parentSectionGroup`и.
 
@@ -43,7 +43,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Accept | string | `application/json` |
+| Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -96,6 +96,16 @@ Content-length: 345
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_sections-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_sections-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -104,5 +114,9 @@ Content-length: 345
   "description": "List sections",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-list-sections.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-list-sections.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
