@@ -1,15 +1,15 @@
 ---
 title: Получение параметров почтового ящика пользователя
-description: 'Получение объекта mailboxSettings пользователя. К ним относятся параметры для автоматических ответов (автоматически уведомлять пользователей при '
+description: 'Получение объекта mailboxSettings пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dcc42f6775c53f4fcb93c89c06809c7218a0d59
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9cf98ffc7e0824737239868bbaadb3b2c4bead0f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329917"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637355"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -76,7 +76,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 В первом примере считываются все параметры часового пояса для почтового ящика вошедшего пользователя, в том числе параметры часового пояса, автоматических ответов, языкового стандарта (язык и страна или регион) и рабочего времени.
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
 ##### <a name="response-1"></a>Ответ 1
-Ответ включает все параметры почтового ящика вошедшего пользователя. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает все параметры почтового ящика вошедшего пользователя. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,6 +134,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailboxsettings_1-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailboxsettings_1-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="request-2"></a>Запрос 2
 Во втором примере показано, как получить только параметры автоматических ответов почтового ящика пользователя, выполнившего вход в систему.
@@ -172,6 +182,16 @@ Content-type: application/json
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mailboxsettings_2-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mailboxsettings_2-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-3"></a>Запрос 3
@@ -184,7 +204,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
 ##### <a name="response-3"></a>Ответ 3
-Ответ включает только параметры рабочего времени. Обратите внимание, что рабочее время пользователя относится к [пользовательскому часовому поясу](../resources/customtimezone.md). Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает только параметры рабочего времени. Обратите внимание, что рабочее время пользователя относится к [пользовательскому часовому поясу](../resources/customtimezone.md). Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
@@ -240,6 +260,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

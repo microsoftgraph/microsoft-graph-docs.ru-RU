@@ -2,12 +2,12 @@
 title: Перечисление объектов secureScores
 description: Получение свойств и связей объекта Секурескорес.
 localization_priority: Normal
-ms.openlocfilehash: baa4e2e887eb739160105f2ded149481f8a8d0d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 55a9628d88300a97b62145f22f6fc18fce04b92b
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335992"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638811"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
@@ -37,7 +37,7 @@ GET /security/secureScores
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {Code}. Обязательно.|
+| Авторизация  | Bearer {код}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -128,6 +128,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescores_list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescores_list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -137,6 +147,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

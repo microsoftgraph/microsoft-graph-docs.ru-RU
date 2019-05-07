@@ -3,12 +3,12 @@ title: Обновление schemaExtension
 description: Обновление свойств в определении указанного schemaExtension.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 98bf2376eba25a7ed5a0642561b05372aa0e8b58
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d671f743d1e10c80d713e8efba4e917d3dbd31dd
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331479"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638923"
 ---
 # <a name="update-schemaextension"></a>Обновление schemaExtension
 
@@ -45,7 +45,7 @@ PATCH /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -53,7 +53,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |description|String|Описание расширения схемы.|
 |properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция типов и имен свойств, составляющих определение расширения схемы. Разрешены только добавочные изменения. |
-|status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании разРабатывается. **** Переход между состояниями возможен из **разработки** в **доступном** и **доступном** для **устаревших**состояниях.|
+|status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании разрабатывается. **** Переход между состояниями возможен из **разработки** в **доступном** и **доступном** для **устаревших**состояниях.|
 |targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешены только добавочные изменения.|
 
 ## <a name="response"></a>Отклик
@@ -87,7 +87,7 @@ Content-length: 201
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -98,6 +98,16 @@ Content-length: 201
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>См. также
 
@@ -113,6 +123,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: Предоставьте общий доступ к диапазо�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee015e307f7f9b738e912e7246d70a03a32848f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a1e86d397b871ed78f867695e272368b2bcb5eb4
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336146"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638951"
 ---
 # <a name="schedule-share"></a>Расписание: общий доступ
 
@@ -52,8 +52,8 @@ POST /teams/{teamId}/schedule/share
 
 |Параметр                   |Тип           |Описание  |
 |-----------------------|-------------------|--------------|
-| Нотифитеам            |`Boolean`             |Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена. Обязательный.       |
-| startDateTime         |`DateTimeOffset`   |Время начала совместного использования смен по расписанию. Обязательный.   |
+| Нотифитеам            |`Boolean`             |Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена. Обязательно.       |
+| startDateTime         |`DateTimeOffset`   |Время начала совместного использования смен по расписанию. Обязательно.   |
 | endDateTime           |`DateTimeOffset`   | Время окончания для совместного использования смены графика до.   |
 
 ## <a name="response"></a>Отклик
@@ -93,6 +93,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/schedule-share-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/schedule-share-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -103,6 +113,9 @@ HTTP/1.1 204 No content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schedule-share.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schedule-share.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

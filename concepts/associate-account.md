@@ -2,20 +2,20 @@
 title: Связывание учетной записи Office 365 с Azure AD для создания приложений и управления ими
 description: 'Для проверки подлинности приложений с помощью Microsoft Azure Active Directory необходимо зарегистрировать их в Azure AD. Именно здесь хранятся сведения об учетной записи пользователя Office 365 и приложениях. Чтобы управлять Azure Active Directory на портале Azure, необходима подписка на Microsoft Azure. Управлять пользователями, ролями и приложениями можно с помощью портала в Microsoft Azure. '
 localization_priority: Normal
-ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+ms.openlocfilehash: efcb898290944314951af9b6dca980513aff2954
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880159"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599858"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Связывание учетной записи Office 365 с Azure AD для создания приложений и управления ими
 
 Для проверки подлинности приложений с помощью Microsoft Azure Active Directory необходимо зарегистрировать их в Azure AD. Именно здесь хранятся сведения об учетной записи пользователя Office 365 и приложениях. Чтобы управлять Azure Active Directory на портале Azure, необходима подписка на Microsoft Azure. Управлять пользователями, ролями и приложениями можно с помощью портала в Microsoft Azure. 
 
-В этой статье показано, как связать учетную запись Office 365 с Azure Active Directory для создания приложений и управления ими.
+В этой статье показано, как связать учетную запись Office 365 с Azure Active Directory для создания приложений и управления ими.
 
- >**Примечание.** В этой статье в качестве поставщика проверки подлинности для приложения используется Azure AD. Если вы используете конечную точку Azure AD версии 2.0, выполнять это действие не требуется. Дополнительные сведения см. в статье [Проверка подлинности в приложении с помощью Microsoft Graph](auth-overview.md).
+ >**Примечание.** В этой статье в качестве поставщика проверки подлинности для приложения используется Azure AD. Если вы используете конечную точку Azure AD версии 2.0, выполнять это действие не требуется. Дополнительные сведения см. в статье [Проверка подлинности в приложении с помощью Microsoft Graph](./auth).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -23,7 +23,7 @@ ms.locfileid: "27880159"
 
 Если у вас нет учетной записи Office 365 для бизнеса, вы можете:
 
-- выбрать один из [планов Office 365 для бизнеса](https://products.office.com/ru-RU/business/compare-office-365-for-business-plans), перечисленных выше, или
+- выбрать один из [планов Office 365 для бизнеса](https://products.office.com/en-us/business/compare-office-365-for-business-plans), перечисленных выше, или
 - [принять участие в программе Office 365 для разработчиков и получить бесплатную подписку на Office 365 сроком на 1 год](https://aka.ms/devprogramsignup).
 
 **Подписка на Microsoft Azure**. 
@@ -88,10 +88,10 @@ ms.locfileid: "27880159"
             
 4. После создания подписки на Azure выберите элемент **Портал**.
         
-5. Отобразятся базовые сведения об Azure. Вы можете просмотреть их или нажать кнопку **X**, чтобы закрыть соответствующее окно.
+5. Откроется обзор Azure. Вы можете просмотреть его или нажать кнопку **X**, чтобы закрыть окно.
         
     Теперь в подписке на Azure должны появиться все элементы. Вы увидите каталог с именем вашего клиента Office 365.
     
 ## <a name="see-also"></a>См. также
-- [Основные сведения о регистрации приложения в Azure AD](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Интеграция приложений с Azure Active Directory](https://azure.microsoft.com/ru-RU/documentation/articles/active-directory-integrating-applications/)
+- [Основные сведения о регистрации приложения в Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Интеграция приложений с Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)

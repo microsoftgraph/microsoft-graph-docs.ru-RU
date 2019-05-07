@@ -4,12 +4,12 @@ description: В функции рецензирования Access в Azure AD �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b1c2c1fc0ea94c7d595725fbcc303e1534b1c204
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 026b445eee69557ead9179100cd6075e06783a86
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323009"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636732"
 ---
 # <a name="update-accessreview"></a>Обновление Акцессревиев
 
@@ -25,7 +25,7 @@ ms.locfileid: "33323009"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -39,7 +39,7 @@ PATCH /accessReviews('{reviewId}')
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление параметров объекта [Акцессревиев](../resources/accessreview.md) в формате JSON.
 
 В следующей таблице приведены свойства, которые можно указать при обновлении Акцессревиев.
@@ -98,6 +98,16 @@ Content-type: application/json
     "description": "Sample description"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_accessReview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_accessReview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -106,6 +116,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -1,21 +1,21 @@
 ---
 title: 'Call: Плайпромпт'
-description: ПроИгрывать запрос в вызове.
+description: Проигрывать запрос в вызове.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e0f1c29b01861e931b96dc75549b8e883460b98d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 571c8b412e6e8099aaee020ef45e2ad55b1e5707
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328072"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635864"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ПроИгрывать запрос в вызове.
+Проигрывать запрос в вызове.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
@@ -93,6 +93,14 @@ Content-Length: 166
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-playPrompt-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
@@ -133,6 +141,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-playprompt.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
