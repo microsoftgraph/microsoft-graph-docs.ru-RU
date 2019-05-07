@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Поиск сайтов SharePoint по ключевому слову
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a5594eb71fd4193756d3d07af82bbd7bbe4a7ea3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 380ba75281c15c97d71cc68098abfa070f85720a
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335838"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638591"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
@@ -67,6 +67,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/search-sites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/search-sites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 >**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**. Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.
 
 <!--
@@ -76,6 +86,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/Search",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

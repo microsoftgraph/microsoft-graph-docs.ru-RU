@@ -4,12 +4,12 @@ description: Получение списка объектов Person, упоря
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: ed6c7a6c05cd678dc2107f00c42211a186fa61fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: de07eaa4b3601c91ace9894e55bd4357fbb23881
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329898"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637194"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -44,12 +44,12 @@ GET /users/{id | userPrincipalName}/people
 |:---------------|:--------|:-------|
 |$filter|string|Позволяет возвращать в отклике только тех людей, чьи записи содержат указанные критерии.|
 |$orderby|строка|По умолчанию люди в ответе сортируются по степени соответствия запросу. Этот порядок можно изменить с помощью параметра *$orderby*.|
-|$search|string|Поиск пользователей по имени или псевдониму. Поддерживается нечеткое соответствие. Параметр работает только для поиска пользователей, вошедших в систему, а не для поиска людей, относящихся к другим пользователям. Также поддерживает `topic` ключевое слово для поиска людей на основе разделов, извлеченных из электронных бесед с этим пользователем. Сведения и примеры представлены в разделе " *выполнение нечеткого поиска* ". [](/graph/people-example#perform-a-fuzzy-search)|
+|$search|string|Поиск пользователей по имени или псевдониму. Поддерживается нечеткое соответствие. Параметр применяется только для поиска людей, относящихся к вошедшему пользователю, а не для поиска людей, относящихся к другим пользователям. Также поддерживает ключевое слово `topic` для поиска людей с учетом тем, извлеченных из бесед электронной почты с определенным человеком. Сведения и примеры см. в разделе *Нечеткий поиск* статьи [Получение релевантных сведений о людях](/graph/people-example#perform-a-fuzzy-search).|
 |$select|string|Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.|
 |$skip|int|Пропуск первых n результатов; эту функцию удобно использовать при разбиении результатов на страницы. Эта возможность не поддерживается при использовании параметра *$search*.|
 |$top|int|Количество возвращаемых результатов.|
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 
 | Имя      |Описание|
 |:----------|:----------|
@@ -176,6 +176,16 @@ Content-length: 1326
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="requesting-a-subsequent-page-of-people"></a>Запрос последующей страницы людей
 
@@ -280,6 +290,9 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Application.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3c85608ad31d0d83607a49e06e2a46032e927bc4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322913"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636333"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -36,18 +36,18 @@ PATCH /applications/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowPublicClient|Логический| Указывает, может ли приложение работать в качестве общедоступного клиента. Например, установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию: *false*. |
-|api|[Апиаппликатион](../resources/apiapplication.md)| Указывает параметры для приложения API. |
+|api|[apiApplication](../resources/apiapplication.md)| Указывает параметры для приложения API. |
 |appRoles|Коллекция [appRole](../resources/approle.md)|Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается.|
 |applicationAliases|Коллекция String| URI, определяющие приложение. Дополнительные сведения см. в статье [Объекты приложения и субъекта-службы](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается. |
 |createdDateTime|DateTimeOffset| Дата и время регистрации приложения. |
 |deletedDateTime|DateTimeOffset| Дата и время удаления приложения. |
-|displayName|String|Отображаемое имя приложения. |
+|displayName|Строка|Отображаемое имя приложения. |
 |id|String|Уникальный идентификатор приложения. Наследуется от [directoryObject](../resources/directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 |info|[informationalUrl](../resources/informationalurl.md)| Основные сведения о профиле приложения. | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 |keyCredentials|Коллекция [keyCredential](../resources/keycredential.md)|Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
@@ -89,6 +89,16 @@ Content-length: 72
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,6 +109,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

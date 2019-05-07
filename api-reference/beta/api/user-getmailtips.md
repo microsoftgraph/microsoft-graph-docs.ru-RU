@@ -1,21 +1,21 @@
 ---
 title: 'Пользователь: подсказки'
-description: Получение подСказок одного или нескольких получателей, доступных пользователю, вошедшего в систему.
+description: Получение подсказок одного или нескольких получателей, доступных пользователю, вошедшего в систему.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 03143b511fc2eade8bac0e9c4adc6a4224a344ee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5ba3c606f9e54a27f46586ecc13b008a761a7d85
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334942"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637334"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение подСказок одного или нескольких получателей, доступных [пользователю](../resources/user.md), вошедшего в систему.
+Получение подсказок одного или нескольких получателей, доступных [пользователю](../resources/user.md), вошедшего в систему.
 
 Обратите внимание, что `POST` выполнив вызов `getMailTips` действия, вы можете запросить определенные типы подсказок, которые будут возвращаться сразу для нескольких получателей. Запрошенные подсказки возвращаются в коллекции [подсказок](../resources/mailtips.md) .
 
@@ -125,6 +125,16 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_getmailtips-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -135,6 +145,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

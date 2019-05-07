@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными от сети экземплярами корпоративных облачных служб Майкрософт, которые ограничены в пределах географических границ конкретных стран и обслуживаются местным персоналом.
-ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526308"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599830"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -22,6 +22,8 @@ ms.locfileid: "32526308"
 
 В этой статье приводятся сведения о различных облачных развертываниях Microsoft Graph и возможностях, доступных разработчикам в различных средах.
 
+>**Примечание:** [Microsoft Graph Data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) не поддерживает никакие из национальных облачных развертываний. 
+
 ## <a name="app-registration-and-token-service-root-endpoints"></a>Конечные точки регистрации приложений и корневых конечных точек службы маркеров
 
 Перед вызовом API Microsoft Graph необходимо сначала зарегистрировать приложение и получить маркер. В следующей таблице перечислены базовые URL-адреса для конечных точек Azure Active Directory (Azure AD) для регистрации приложения и получения маркеров для каждого национального облака.
@@ -33,7 +35,7 @@ ms.locfileid: "32526308"
 |Azure AD для Китая под управлением 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Azure AD (глобальная служба)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
-Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в разделе [получение маркеров проверки](./auth-overview.md)подлинности. Сведения о сценариях проверки подлинности Azure AD см. [](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
+Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке](./auth/auth-concepts.md)подлинности. Сведения о сценариях проверки подлинности Azure AD см. [](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
 
 > **Примечание.** [Конечные точки авторизации и маркеров Azure AD версии 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) доступны только в глобальной службе и не могут использоваться с национальными облачными развертываниями.
 

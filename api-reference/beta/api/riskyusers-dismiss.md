@@ -1,24 +1,24 @@
 ---
-title: ОтКлонить riskyUsers
-description: Отклонение риска для объекта riskyUsers.
+title: Отклонить Рискюсер
+description: Отклонение риска для объекта Рискюсер.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 3027320b25c35e60e1b5dccabc7ff34ea642a953
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2ca876b494b7753918e67ccdff3a6a37a776d054
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336356"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639049"
 ---
-# <a name="dismiss-riskyusers"></a>ОтКлонить riskyUsers
+# <a name="riskyuser-dismiss"></a>Рискюсер: отклонить
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
-Отклонение риска для объекта **рискюсер** . Это действие установит для уровня риска целевого пользователя значение нет.
+Отклонить риск одного или нескольких объектов [рискюсер](../resources/riskyuser.md) . Это действие задает для уровня риска целевого пользователя значение нет.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,7 +39,6 @@ POST /riskyUsers/dismiss
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Укажите идентификаторы пользователя, которые нужно отклонить в теле запроса.
@@ -74,6 +73,16 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +91,9 @@ HTTP/1.1 204 No Content
   "description": "Dismiss riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

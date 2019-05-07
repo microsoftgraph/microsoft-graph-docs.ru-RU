@@ -4,12 +4,12 @@ description: Обновление свойств объекта Тииндика
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 55613e3c13695a502b43c127c1164d2adf9f6534
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 75a34acb98ee00e737fb75e5e49f7c0fb4adea20
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330439"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637572"
 ---
 # <a name="update-tiindicator"></a>Обновление объекта tiIndicator
 
@@ -62,7 +62,7 @@ PATCH /security/tiIndicators/{id}
 |lastReportedDateTime|DateTimeOffset|Время последнего рассмотрения индикатора. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |Малварефамилинамес|Коллекция String|Имя семейства вредоносных программ, связанное с индикатором, если оно существует. Корпорация Майкрософт применяет имя семейства вредоносных программ (Майкрософт), если это возможно, то, что можно [](https://www.microsoft.com/wdsi/threats)найти с помощью энциклопедии по системе безопасности защитника Windows.|
 |Пассивеонли|Логический|Определяет, должен ли индикатор инициировать событие, видимое конечному пользователю. Если задано значение true, средства безопасности не уведомляют конечного пользователя о выполнении "попадания". Чаще всего это рассматривается как аудит или тихий режим по продуктам безопасности, в котором они просто зарегистрируются, но не будут выполнять действие. Значение по умолчанию − ложь.|
-|серьезность|Int32|Целое число, представляющее серьезность вредоносного поведения, идентифицируемого данными в индикаторе. Допустимые значения: 0 – 5, где 5 — самый серьезный, а ноль — нет. Значение по умолчанию — 3.|
+|severity|Int32|Целое число, представляющее серьезность вредоносного поведения, идентифицируемого данными в индикаторе. Допустимые значения: 0 – 5, где 5 — самый серьезный, а ноль — нет. Значение по умолчанию — 3.|
 |tags|Коллекция String|Массив строк JSON, В котором хранятся произвольные Теги и ключевые слова.|
 |Тлплевел|[Тлплевел](#tlplevel-values)| Значение протокола светофора для индикатора. Возможные значения: `unknown`, `white`, `green`, `amber`, `red`.|
 
@@ -81,7 +81,7 @@ PATCH /security/tiIndicators/{id}
 
 | Значения | Описание |
 |:-------|:------------|
-|Actions|Представляет "действия по целям". Злоумышленник получает такие действия, как распределенная атака типа "отказ в обслуживании".|
+|Действия|Представляет "действия по целям". Злоумышленник получает такие действия, как распределенная атака типа "отказ в обслуживании".|
 |C2|Представляет канал управления, с которым работает скомпрометированная система.|
 |Delivery|Процесс распространения кода эксплойта для жертв (например, USB, электронной почты, веб-сайтов).|
 |Опасность|Код эксплойта использует преимущества уязвимостей (например, выполнение кода).|
@@ -140,6 +140,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода для SDK
+# <a name="ctabcs"></a>[Языках](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_tiIndicator-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_tiIndicator-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>Пример 2: запрос с заголовком предпочтения
 
@@ -200,5 +210,11 @@ Content-type: application/json
   "description": "Update tiIndicator",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
