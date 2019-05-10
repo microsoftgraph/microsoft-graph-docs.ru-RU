@@ -1,20 +1,24 @@
 ---
 title: Перечисление входов
-description: Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.  Последние входы возвращаются первыми.
-localization_priority: Priority
-ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Описан метод перечисления ресурсов signIn (объектов) из API Microsoft Graph API (REST), что помогает при аудите действий в каталоге (клиенте) (бета-версия).
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: fdb1358d36a0e1da34779de5505c5f18f901e681
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545159"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638685"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
-Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.  Последние входы возвращаются первыми.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Получает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.  Последние входы возвращаются первыми.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -31,7 +35,7 @@ ms.locfileid: "32545159"
 GET auditLogs/signIns
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -87,7 +91,9 @@ GET auditLogs/signIns
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,6 +105,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 264
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signins-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signins-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -201,5 +217,9 @@ Content-length: 264
   "description": "List signIns",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

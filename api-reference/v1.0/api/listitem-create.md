@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a4237703d8cb8d3142a331def586843e4d7a2c59
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557105"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613029"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание элемента [listItem][] в [списке][].
 
@@ -33,7 +31,7 @@ ms.locfileid: "32557105"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>Тело запроса
@@ -47,7 +45,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -87,19 +85,27 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
 [списке]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Create",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

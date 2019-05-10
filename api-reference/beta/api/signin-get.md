@@ -1,19 +1,25 @@
 ---
 title: Получение объекта signIn
-description: Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
-localization_priority: Priority
-ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: Получение определенного события входа пользователя Azure AD для клиента.
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1a3d1f8cbff40eb76e26a5f08afa36368a5148dd
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335803"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638561"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
-Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получение определенного события входа пользователя Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
 
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -25,25 +31,36 @@ ms.locfileid: "33335803"
 Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+
+Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [signIn](../resources/signin.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "get_signin"
@@ -51,8 +68,11 @@ GET /auditLogs/signIns/{id}
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### <a name="response"></a>Отклик
+
+### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -63,6 +83,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 ```
+
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -78,14 +99,14 @@ Content-length: 211
         "status": {
             "errorCode": 0,
             "failureReason": null,
-            "additionalDetails": "SignIn Success & CA Sucess"
+            "additionalDetails": "SignIn Success & CA Success"
         },
         "clientAppUsed": null,
         "deviceDetail": {
             "deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
             "displayName": "DeviceName",
             "operatingSystem": "Windows 10",
-            "browser": "Rich Client v1.0.2016.0",
+            "browser": "Rich Client v3.14.1592.7",
             "isCompliant": true,
             "isManaged": true,
             "trustType": ""
@@ -119,6 +140,17 @@ Content-length: 211
 }
 
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -126,5 +158,9 @@ Content-length: 211
   "description": "Get signIn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

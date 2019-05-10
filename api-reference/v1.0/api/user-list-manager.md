@@ -1,19 +1,17 @@
 ---
 title: Получение руководителя
 description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ae243f0fa4c8212cecebedc39ebfc2d5713d5689
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f877c6f26244c18aba7fbf874ed0a05bda8279e7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571319"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601792"
 ---
 # <a name="list-manager"></a>Получение руководителя
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
 ## <a name="permissions"></a>Разрешения
@@ -28,6 +26,7 @@ ms.locfileid: "32571319"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -47,13 +46,21 @@ GET /users/{id | userPrincipalName}/manager
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_manager"
+}-->
 ```http
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": false
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -77,16 +84,27 @@ Content-type: application/json
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_manager-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_manager-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-manager.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-manager.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

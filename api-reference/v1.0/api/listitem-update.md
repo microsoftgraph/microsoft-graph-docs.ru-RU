@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Изменение записи в списке SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f80f2607e953ba760893170366179f6751d9665d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 811dcd2640b2fe95ab78c1561fea8ea98f3029ff
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541411"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614003"
 ---
 # <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
 
@@ -78,6 +78,14 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
+#### <a name="sdk-sample-code"></a>Образец кода SDK
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
@@ -87,5 +95,8 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Update"
+  "tocPath": "ListItem/Update",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

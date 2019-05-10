@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Создание списка списков SharePoint на сайте
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 4cafc4ea32b1dadd686f257946470ba41e32c48b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78c27e732cecbbae6f25513f30c662865522a083
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557049"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613341"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 
@@ -78,8 +78,18 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/enum-lists-Cs-snippets.md)]
 
-## <a name="remarks"></a>Заметки
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/enum-lists-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="remarks"></a>Комментарии
 
 По умолчанию ресурсы list с аспектом [system][] скрыты.
 Чтобы перечислить их, включите `system` в оператор `$select`.
@@ -91,5 +101,9 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate"
+  "tocPath": "Lists/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7cf2521f5e119b5270344aef25b775d49451e9cd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ce2554efa452a95f52f34d358e39b0d32ce839a7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440096"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599781"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -16,32 +16,38 @@ ms.locfileid: "33440096"
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
-## <a name="april-2019"></a>Апрель 2019 г.
+## <a name="may-2019"></a>Май 2019 г.
 
-### <a name="access-reviews-api"></a>API проверки доступа
+### <a name="risky-users-api"></a>Рискованные API пользователей
 
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлены разрешения приложений AccessReview.Read.All, ProgramControl.Read.All и ProgramControl.ReadWrite.All. Дополнительные сведения см. в статье [Справочник по API проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Дополнение | бета | Добавлен объект [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta). |
+| Дополнение | бета | Добавлена операция [список журнала](/graph/api/riskyuser-list-history?view=graph-rest-beta). |
+
+### <a name="security-apis"></a>API безопасности
+
+| **Тип изменения** | **Version** | **Описание**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), включающие следующие ресурсы и операции:<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Обновление объектов secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+
+## <a name="april-2019"></a>Апрель 2019 г.
+
+### <a name="azure-ad-apis"></a>API Azure AD
+
+| **Тип изменения** | **Version**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 |  Представлены новые **API журналов аудита для Azure AD**, предоставляющие журналы действий для задач управления каталогом с помощью объекта [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-v1.0) и действий входа с помощью объекта [signIns](/graph/api/resources/signIns?view=graph-rest-v1.0).|
+| Дополнение | бета | Добавлены новые разрешения приложений для API **проверки доступа**: AccessReview.Read.All, ProgramControl.Read.All и ProgramControl.ReadWrite.All. Дополнительные сведения см. в статье [Справочник по API проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлено свойство **signInSessionsValidFromDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это переименование свойств **refreshTokensValidFromDateTime**, но оба они будут поддерживаться, чтобы обеспечить простую миграцию для клиентов. В течение следующих нескольких месяцев старое свойство **refreshTokensValidFromDateTime** будет удалено.|
+| Дополнение | Бета | Добавлено действие **revokeSignInSessions** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это переименование действия **invalidateAllRefreshTokens**, но оба служебных действия будут поддерживаться, чтобы обеспечить простую миграцию для клиентов. В течение следующих нескольких месяцев старое служебное действие **invalidateAllRefreshTokens** будет удалено. |
 
 ### <a name="azure-ad-b2c-apis"></a>API Azure AD B2C
 
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета |Представлен новый тип ресурса [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). Этот тип ресурса поддерживает операции [создания](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [перечисления](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [получения](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [обновления](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta) и [удаления](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta).|
-
-### <a name="webhooks-change-notifications"></a>Веб-перехватчики (уведомления об изменениях)
-
-| **Тип изменения** | **Version**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлены два типа уведомлений жизненного цикла (`subscriptionRemoved` и `missed`), доступные для ресурсов Outlook. Приложения, выполняющие подписку, могут принимать соответствующие меры, чтобы уменьшить влияние прерывания уведомлений. Дополнительные сведения см. в статье [Уменьшение числа пропущенных подписок и уведомлений о ресурсах Outlook (предварительная версия)](webhooks-outlook-authz.md)|
-
-### <a name="directory-apis"></a>API каталогов
-
-| **Тип изменения** | **Version**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета | Добавлено свойство **signInSessionsValidFromDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это переименование свойств **refreshTokensValidFromDateTime**, но оба они будут поддерживаться, чтобы обеспечить простую миграцию для клиентов. В течение следующих нескольких месяцев старое свойство **refreshTokensValidFromDateTime** будет удалено.|
-| Дополнение | Бета | Добавлено действие **revokeSignInSessions** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это переименование действия **invalidateAllRefreshTokens**, но оба служебных действия будут поддерживаться, чтобы обеспечить простую миграцию для клиентов. В течение следующих нескольких месяцев старое служебное действие **invalidateAllRefreshTokens** будет удалено. |
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 |Тип изменения|Версия|Описание|
@@ -84,14 +90,6 @@ ms.locfileid: "33440096"
 |Дополнение|Бета|Добавлены свойства навигации **intents**, **settingDefinitions**, **templates** и **categories** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство навигации **securityBaselineStates** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 
-### <a name="messages"></a>Сообщения
-
-| **Тип изменения** | **Version**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | бета          | Добавлена поддержка нового [разрешения Mail.ReadBasic (предварительная версия)](permissions-reference.md#mail-permissions) для интерфейсов [Список сообщений](/graph/api/user-list-messages?view=graph-rest-beta) и [Получение сообщений](/graph/api/message-get?view=graph-rest-beta).            |
-| Дополнение        | Бета-версия          | Добавлена возможность [получения содержимого MIME сообщения](outlook-get-mime-message.md). |
-| Дополнение        | Бета          | Добавлена возможность [получения необработанного содержимого вложенного файла или элемента](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи группы. |
-
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
 | **Тип изменения** | **Version**   | **Описание**                          |
@@ -100,15 +98,22 @@ ms.locfileid: "33440096"
 |Дополнение |1.0| Добавлены свойства **email** и **webUrl** для [канала](/graph/api/resources/channel?view=graph-rest-1.0).|
 | Дополнение | бета | Добавлены ресурсы [chat](/api-reference/beta/resources/chat.md) и соответствующие методы. |
 
-## <a name="march-2019"></a>Март 2019 г.
-
-### <a name="risky-users-api"></a>Рискованные API пользователей
+### <a name="outlook-mail"></a>Почта Outlook
 
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Дополнение |бета| Появился метод [Confirm riskyUsers compromised](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta), который позволяет администраторам подтверждать компрометацию пользователей в службе "Защита идентификации Azure AD". |
-|Дополнение |бета| Появился метод [Dismiss riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta), который позволяет администраторам отменить отметку "рискованный" для пользователей в службе "Защита идентификации Azure AD". |
-|Дополнение |бета| Появилось свойство **isProcessing** для ресурса [riskyUsers](/graph/api/resources/riskyuser?view=graph-rest-beta). |
+| Дополнение        | бета          | Добавлена поддержка нового [разрешения Mail.ReadBasic (предварительная версия)](permissions-reference.md#mail-permissions) для интерфейсов [Список сообщений](/graph/api/user-list-messages?view=graph-rest-beta) и [Получение сообщений](/graph/api/message-get?view=graph-rest-beta).            |
+| Дополнение        | Бета-версия          | Добавлена возможность [получения содержимого MIME сообщения](outlook-get-mime-message.md). |
+| Дополнение        | Бета          | Добавлена возможность [получения необработанного содержимого вложенного файла или элемента](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи группы. |
+
+### <a name="webhooks-change-notifications"></a>Веб-перехватчики (уведомления об изменениях)
+
+| **Тип изменения** | **Version**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлены два типа уведомлений жизненного цикла (`subscriptionRemoved` и `missed`), доступные для ресурсов Outlook. Приложения, выполняющие подписку, могут принимать соответствующие меры, чтобы уменьшить влияние прерывания уведомлений. Дополнительные сведения см. в статье [Уменьшение числа пропущенных подписок и уведомлений о ресурсах Outlook (предварительная версия)](webhooks-outlook-authz.md)|
+
+
+## <a name="march-2019"></a>Март 2019 г.
 
 ### <a name="directory-apis"></a>API каталогов
 
@@ -131,6 +136,7 @@ ms.locfileid: "33440096"
 | Дополнение | бета | Добавление API для управления ресурсами [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) в [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) и [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
 | Дополнение | бета | Добавление нового ресурса [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta).|
 | Дополнение | бета | Добавление свойства **recipients** для ресурса [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta).|
+
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 
@@ -192,6 +198,14 @@ ms.locfileid: "33440096"
 |Удаление | бета | Сложные типы: <br> **attendeeAvailabilityDataModel** <br> **attendeeDataModel** <br> **findMeetingTimesResponse** <br> **findMeetingTimesTimeConstraints** <br> **locationConstraints** <br> **meetingTimeSlotDataModel** <br> **searchWindowTimeSlot**|
 |Удаление | бета | Перечисления: <br> **addressType** <br> **availabilityStatus** |
 |Дополнение | бета | Восстановлены следующие сложные типы: <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
+
+### <a name="risky-users-api"></a>Рискованные API пользователей
+
+| **Тип изменения** | **Version**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Дополнение |бета| Появился метод [Confirm riskyUsers compromised](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta), который позволяет администраторам подтверждать компрометацию пользователей в службе "Защита идентификации Azure AD". |
+|Дополнение |бета| Появился метод [Dismiss riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta), который позволяет администраторам отменить отметку "рискованный" для пользователей в службе "Защита идентификации Azure AD". |
+|Дополнение |бета| Представлено свойство **isProcessing** для ресурса [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta). |
 
 
 ## <a name="february-2019"></a>Февраль 2019 г.
@@ -1170,7 +1184,7 @@ ms.locfileid: "33440096"
 |Дополнение|Бета|Добавлено свойство навигации **deviceConfigurationRestrictedAppsViolations** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство навигации **assignments** для объекта [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство навигации **networkAccessConfigurations** для объекта [windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta).|
-|Удаление|Бета|Удалено свойство **permissions** из сложного типа [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta).|
+|Удаление|бета|Удалено свойство **permissions** из сложного типа [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta).|
 |Изменение|бета|Изменен тип следующих свойств сложного типа [bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta):<br/>**recoveryInformationToStore** с [bitLockerRecoveryinformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta) на [bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta).<br/>|
 |Дополнение|Бета|Добавлено свойство **deviceInactivityBeforeRetirementInDay** для сложного типа [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство **landingPageCustomizedImage** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta).|
@@ -1799,7 +1813,7 @@ ms.locfileid: "33440096"
 |Изменение|бета|Добавлено свойство навигации **apps** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **vppTokens** для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta).|
-|Изменение|Бета-версия|Удалено свойство навигации **deviceCompliancePolicy** объекта [deviceCompliancePolicyAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicyassignment?view=graph-rest-beta).|
+|Изменение|бета|Удалено свойство навигации **deviceCompliancePolicy** объекта [deviceCompliancePolicyAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicyassignment?view=graph-rest-beta).|
 |Изменение|бета|Добавлено свойство навигации **deviceCompliancePolicy** для объекта [deviceCompliancePolicyGroupAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicygroupassignment?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **identityCertificateForClientAuthentication** для объекта [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta).|
