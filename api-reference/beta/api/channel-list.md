@@ -4,18 +4,18 @@ description: Получение списка каналов в команде.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 476f5a698801725ce441c31d21715a2a180658cf
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 90320abf7ddbb630c1aede5df43d0e0614da5de4
+ms.sourcegitcommit: 5e8a6761d2766f2d12068c7a5e02724da3f3e11d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33659602"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [каналов](../resources/channel.md) в команде.
+Получение списка [каналов](../resources/channel.md) в [команде](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
