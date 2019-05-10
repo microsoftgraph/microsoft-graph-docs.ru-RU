@@ -20,8 +20,8 @@ abstract:
       height: 110
       src: ./images/index/whatsnew-video.png
       width: 250
-    title: 'Новые возможности Microsoft Graph (12:39)'
-    href: 'https://www.youtube.com/watch?v=3X10r2VVLCg'
+    title: "Обзор Microsoft\_Graph (4:46)"
+    href: 'https://youtu.be/PI9NO5rayiY'
     width: 250
 sections:
   - items:
@@ -60,6 +60,41 @@ sections:
             image:
               src: ./images/index/i_api.svg
             title: Бета-версия REST API Microsoft Graph
+  - title: Обновления в документах
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: "<a href=\"/graph/data-connect-concept-overview\">Подключение к данным Microsoft\_Graph</a>"
+          - html: <a href="/graph/outlook-get-free-busy-schedule">Получение сведений о доступности</a>
+          - html: <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Журналы аудита и входа</a>
+          - html: <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">Поставщики удостоверений</a>
+          - html: <a href="/graph/auth">Руководство по улучшенной проверке подлинности</a>
+          - html: "<a href=\"/graph/migrate-azure-ad-graph-overview\">Миграция приложений из Azure\_AD\_Graph в Microsoft\_Graph</a>"
+          - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">Оценка безопасности клиента</a>
+          - html: <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">Руководство по пакетам SDK</a>
+          - html: 'Фрагменты API (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">пример</a>)'
+      - type: paragraph
+        text: <b>Только бета-версия</b>
+      - type: list
+        style: unordered
+        items:
+          - html: "<a href=\"/graph/dynamics-business-central-concept-overview\">Dynamics\_365 Business Central</a>"
+          - html: <a href="/graph/api/driveitem-follow?view=graph-rest-beta">Подписка на документы</a> и <a href="/graph/api/driveitem-unfollow?view=graph-rest-beta">ее отмена</a>
+          - html: '<a href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">Приглашение к совместному использованию</a> включает истечение срока его действия и пароль'
+          - html: <a href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">Проверки доступа</a> поддерживают разрешения для приложений
+          - html: <a href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">Отчеты о входе в приложение</a>
+          - html: "<a href=\"/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta\">Настраиваемые вход и регистрация в Azure\_AD\_B2C</a>"
+          - html: <a href="/graph/api/resources/riskyuser?view=graph-rest-beta">Рискованный пользователь</a> и <a href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">журнал</a>
+          - html: <a href="/graph/outlook-get-mime-message">Получение содержимого MIME сообщений</a>
+          - html: '<a href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">Получение необработанного контента или содержимого MIME вложений</a>'
+          - html: <a href="/graph/webhooks-outlook-authz">Уменьшение количества уведомлений об отсутствии изменений</a>
+          - html: <a href="graph/api/resources/tiindicator?view=graph-rest-beta">Индикаторы угроз</a>
+          - html: <a href="/graph/api/resources/securityaction?view=graph-rest-beta">Действия по обеспечению безопасности</a>
+          - html: <a href="/graph/api/resources/shift?view=graph-rest-beta">Управление сменами</a>
+          - html: <a href="/graph/api/resources/chat?view=graph-rest-beta">Личные чаты</a>
+      - type: paragraph
+        text: Подробнее см. в <a href="/graph/changelog">журнале изменений</a>.
   - title: Поддерживаемые платформы
     items:
       - type: paragraph

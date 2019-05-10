@@ -1,71 +1,69 @@
 ---
 title: Создание приглашения
 description: Используйте этот API для создания приглашения. Приглашение позволяет добавить внешнего пользователя в организацию.
-localization_priority: Normal
+localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ed6dbfe4991d3dc36fba8cf66ca0177a93effcf6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44b1cb9524b2a41fe354a88e8632f3aba473c683
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568077"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613473"
 ---
-# <a name="create-invitation"></a><span data-ttu-id="72010-104">Создание приглашения</span><span class="sxs-lookup"><span data-stu-id="72010-104">Create invitation</span></span>
+# <a name="create-invitation"></a><span data-ttu-id="c7d6d-104">Создание приглашения</span><span class="sxs-lookup"><span data-stu-id="c7d6d-104">Create invitation</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="c7d6d-p102">Используйте этот API для создания [приглашения](../resources/invitation.md). Приглашение позволяет добавить внешнего пользователя в организацию.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-p102">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
 
-<span data-ttu-id="72010-p102">Используйте этот API для создания [приглашения](../resources/invitation.md). Приглашение позволяет добавить внешнего пользователя в организацию.</span><span class="sxs-lookup"><span data-stu-id="72010-p102">Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.</span></span>
+<span data-ttu-id="c7d6d-107">При создании приглашения у вас есть несколько вариантов:</span><span class="sxs-lookup"><span data-stu-id="c7d6d-107">When creating a new invitation you have several options available:</span></span>
 
-<span data-ttu-id="72010-107">При создании приглашения у вас есть несколько вариантов:</span><span class="sxs-lookup"><span data-stu-id="72010-107">When creating a new invitation you have several options available:</span></span>
+1. <span data-ttu-id="c7d6d-p103">Microsoft Graph может автоматически отправить письмо с приглашением, или ваше приложение может использовать полученное в отклике свойство *inviteRedeemUrl* для отправки специального приглашения выбранным вами способом. Вы можете настроить содержимое и язык письма, отправляемого Microsoft Graph, используя [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span><span class="sxs-lookup"><span data-stu-id="c7d6d-p103">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
+2. <span data-ttu-id="c7d6d-p104">Когда приглашается пользователь, создается объект user (userType задано значение Guest), который требуется для управления доступом к ресурсам. Приглашенный пользователь должен пройти процесс активации, чтобы получить доступ к соответствующим ресурсам.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-p104">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
 
-1. <span data-ttu-id="72010-p103">Microsoft Graph может автоматически отправить письмо с приглашением, или ваше приложение может использовать полученное в отклике свойство *inviteRedeemUrl* для отправки специального приглашения выбранным вами способом. Вы можете настроить содержимое и язык письма, отправляемого Microsoft Graph, используя [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span><span class="sxs-lookup"><span data-stu-id="72010-p103">On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).</span></span>
-2. <span data-ttu-id="72010-p104">Когда приглашается пользователь, создается объект user (userType задано значение Guest), который требуется для управления доступом к ресурсам. Приглашенный пользователь должен пройти процесс активации, чтобы получить доступ к соответствующим ресурсам.</span><span class="sxs-lookup"><span data-stu-id="72010-p104">When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.</span></span>
-
-## <a name="permissions"></a><span data-ttu-id="72010-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="72010-112">Permissions</span></span>
-<span data-ttu-id="72010-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="72010-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c7d6d-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c7d6d-112">Permissions</span></span>
+<span data-ttu-id="c7d6d-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7d6d-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="72010-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="72010-115">Permission type</span></span>      | <span data-ttu-id="72010-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="72010-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c7d6d-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c7d6d-115">Permission type</span></span>      | <span data-ttu-id="c7d6d-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c7d6d-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="72010-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="72010-117">Delegated (work or school account)</span></span> | <span data-ttu-id="72010-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72010-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="72010-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="72010-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="72010-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="72010-120">Not supported.</span></span>    |
-|<span data-ttu-id="72010-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="72010-121">Application</span></span> | <span data-ttu-id="72010-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="72010-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="c7d6d-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c7d6d-117">Delegated (work or school account)</span></span> | <span data-ttu-id="c7d6d-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7d6d-118">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c7d6d-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c7d6d-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7d6d-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-120">Not supported.</span></span>    |
+|<span data-ttu-id="c7d6d-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c7d6d-121">Application</span></span> | <span data-ttu-id="c7d6d-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7d6d-122">User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="72010-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="72010-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c7d6d-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c7d6d-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-## <a name="request-headers"></a><span data-ttu-id="72010-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="72010-124">Request headers</span></span>
-| <span data-ttu-id="72010-125">Заголовок</span><span class="sxs-lookup"><span data-stu-id="72010-125">Header</span></span>       | <span data-ttu-id="72010-126">Значение</span><span class="sxs-lookup"><span data-stu-id="72010-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c7d6d-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c7d6d-124">Request headers</span></span>
+| <span data-ttu-id="c7d6d-125">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c7d6d-125">Header</span></span>       | <span data-ttu-id="c7d6d-126">Значение</span><span class="sxs-lookup"><span data-stu-id="c7d6d-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="72010-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="72010-127">Authorization</span></span>  | <span data-ttu-id="72010-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="72010-p106">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="72010-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="72010-130">Content-Type</span></span>  | <span data-ttu-id="72010-131">application/json</span><span class="sxs-lookup"><span data-stu-id="72010-131">application/json</span></span>  |
+| <span data-ttu-id="c7d6d-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c7d6d-127">Authorization</span></span>  | <span data-ttu-id="c7d6d-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c7d6d-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c7d6d-130">Content-Type</span></span>  | <span data-ttu-id="c7d6d-131">application/json</span><span class="sxs-lookup"><span data-stu-id="c7d6d-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="72010-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="72010-132">Request body</span></span>
-<span data-ttu-id="72010-133">В теле запроса должно быть представление объекта [invitation](../resources/invitation.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="72010-133">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c7d6d-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c7d6d-132">Request body</span></span>
+<span data-ttu-id="c7d6d-133">В теле запроса должно быть представление объекта [invitation](../resources/invitation.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-133">In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.</span></span>
 
-<span data-ttu-id="72010-134">В приведенной ниже таблице показаны свойства, которые обязательно указывать при создании приглашения.</span><span class="sxs-lookup"><span data-stu-id="72010-134">The following table shows the properties that are required when you create a invitation.</span></span>
+<span data-ttu-id="c7d6d-134">В приведенной ниже таблице показаны свойства, которые обязательно указывать при создании приглашения.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-134">The following table shows the properties that are required when you create a invitation.</span></span>
 
-| <span data-ttu-id="72010-135">Параметр</span><span class="sxs-lookup"><span data-stu-id="72010-135">Parameter</span></span> | <span data-ttu-id="72010-136">Тип</span><span class="sxs-lookup"><span data-stu-id="72010-136">Type</span></span> | <span data-ttu-id="72010-137">Описание</span><span class="sxs-lookup"><span data-stu-id="72010-137">Description</span></span>|
+| <span data-ttu-id="c7d6d-135">Параметр</span><span class="sxs-lookup"><span data-stu-id="c7d6d-135">Parameter</span></span> | <span data-ttu-id="c7d6d-136">Тип</span><span class="sxs-lookup"><span data-stu-id="c7d6d-136">Type</span></span> | <span data-ttu-id="c7d6d-137">Описание</span><span class="sxs-lookup"><span data-stu-id="c7d6d-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="72010-138">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="72010-138">invitedUserEmailAddress</span></span> |<span data-ttu-id="72010-139">string</span><span class="sxs-lookup"><span data-stu-id="72010-139">string</span></span> | <span data-ttu-id="72010-140">Адрес электронной почты приглашаемого пользователя.</span><span class="sxs-lookup"><span data-stu-id="72010-140">The email address of the user you are inviting.</span></span>|
-|<span data-ttu-id="72010-141">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="72010-141">inviteRedirectUrl</span></span> |<span data-ttu-id="72010-142">string</span><span class="sxs-lookup"><span data-stu-id="72010-142">string</span></span> |<span data-ttu-id="72010-143">URL-адрес, на который пользователь перенаправляется после активации.</span><span class="sxs-lookup"><span data-stu-id="72010-143">The URL that the user will be redirected to after redemption.</span></span>|
+|<span data-ttu-id="c7d6d-138">invitedUserEmailAddress</span><span class="sxs-lookup"><span data-stu-id="c7d6d-138">invitedUserEmailAddress</span></span> |<span data-ttu-id="c7d6d-139">string</span><span class="sxs-lookup"><span data-stu-id="c7d6d-139">string</span></span> | <span data-ttu-id="c7d6d-140">Адрес электронной почты приглашаемого пользователя.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-140">The email address of the user you are inviting.</span></span>|
+|<span data-ttu-id="c7d6d-141">inviteRedirectUrl</span><span class="sxs-lookup"><span data-stu-id="c7d6d-141">inviteRedirectUrl</span></span> |<span data-ttu-id="c7d6d-142">string</span><span class="sxs-lookup"><span data-stu-id="c7d6d-142">string</span></span> |<span data-ttu-id="c7d6d-143">URL-адрес, на который пользователь перенаправляется после активации.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-143">The URL that the user will be redirected to after redemption.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="72010-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="72010-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c7d6d-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7d6d-144">Response</span></span>
 
-<span data-ttu-id="72010-145">В случае успеха этот метод возвращает код отклика `201 Created` и объект [invitation](../resources/invitation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="72010-145">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
+<span data-ttu-id="c7d6d-145">В случае успеха этот метод возвращает код отклика `201 Created` и объект [invitation](../resources/invitation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-145">If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="72010-146">Пример</span><span class="sxs-lookup"><span data-stu-id="72010-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="72010-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="72010-147">Request</span></span>
-<span data-ttu-id="72010-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="72010-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c7d6d-146">Пример</span><span class="sxs-lookup"><span data-stu-id="c7d6d-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c7d6d-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="c7d6d-147">Request</span></span>
+<span data-ttu-id="c7d6d-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/invitations
+POST https://graph.microsoft.com/v1.0/invitations
 Content-type: application/json
 Content-length: 551
 
@@ -75,8 +73,8 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="72010-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="72010-149">Response</span></span>
-<span data-ttu-id="72010-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="72010-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c7d6d-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7d6d-149">Response</span></span>
+<span data-ttu-id="c7d6d-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c7d6d-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,6 +105,26 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c7d6d-153">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="c7d6d-153">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c7d6d-154">C#</span><span class="sxs-lookup"><span data-stu-id="c7d6d-154">c</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c7d6d-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c7d6d-155">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/invitation-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/invitation-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
+  ]
+}-->
