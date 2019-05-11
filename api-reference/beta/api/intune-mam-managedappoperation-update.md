@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта managedAppOperation
 description: Обновление свойств объекта managedAppOperation.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6644c18d2d22ce72c42a2d6b29fa7e6a6d116d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 73c1547f4c7878e9f4b5c032f972951c52296868
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529795"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903679"
 ---
 # <a name="update-managedappoperation"></a>Обновление объекта managedAppOperation
 
@@ -50,11 +50,11 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя операции.|
+|displayName|Строка|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
 |id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -94,7 +94,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

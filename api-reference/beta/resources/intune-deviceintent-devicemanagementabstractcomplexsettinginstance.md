@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементабстракткомплекссеттингинстанце
 description: Экземпляр параметра, представляющий сложное значение для абстрактного параметра
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef69bbf34cb4f273f7c9caea529072b369266189
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e254833f6381643afad250e7d61a4bb42b8098b9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523555"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943538"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>Тип ресурса Девицеманажементабстракткомплекссеттингинстанце
 
@@ -20,7 +20,7 @@ ms.locfileid: "32523555"
 Экземпляр параметра, представляющий сложное значение для абстрактного параметра
 
 
-НаСледуется от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)
+Наследуется от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -34,10 +34,10 @@ ms.locfileid: "32523555"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|Дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|Валуежсон|String|Представление JSON значения, наСледуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|Имплементатионид|String|Идентификатор определения для выбранной реализации этого сложного параметра|
+|id|Строка|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|Дефинитионид|Строка|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|Валуежсон|Строка|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|Имплементатионид|Строка|Идентификатор определения для выбранной реализации этого сложного параметра|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -61,7 +61,6 @@ ms.locfileid: "32523555"
   "implementationId": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Действие revokeLicenses
 description: Отзыв лицензий, связанных с определенным appleVolumePurchaseProgramToken
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6799edd63f555275ea5f4142844c55611923ac5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 691a8b6aeb23bc388a0316a81eeacfdb3a375e75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527933"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899804"
 ---
 # <a name="revokelicenses-action"></a>Действие revokeLicenses
 
@@ -77,7 +77,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Список организаций
 description: Список свойств и связей объектов organization.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 067489dad7e08053cd4e6004f1e8b20fca479853
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b817607138399d10bdb96debfba1766e42818082
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528507"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899972"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -46,7 +46,7 @@ GET /organization
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [organization](../resources/intune-onboarding-organization.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -83,7 +83,6 @@ Content-Length: 622
   ]
 }
 ```
-
 
 
 

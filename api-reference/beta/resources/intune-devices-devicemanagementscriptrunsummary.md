@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементскриптрунсуммари
 description: Содержит свойства сводки по запуску сценария управления устройствами.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6807114ebaf7ba3a778520c7b2a383f5a13c31f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0838a03aeecdff801c4650b49c48384707608b75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522449"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942075"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>Тип ресурса Девицеманажементскриптрунсуммари
 
@@ -28,13 +28,13 @@ ms.locfileid: "32522449"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Key объекта сводки запуска сценария управления устройствами.|
+|id|Строка|Key объекта сводки запуска сценария управления устройствами.|
 |Сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |Сукцессусеркаунт|Int32|Число пользователей Success.|
 |errorUserCount|Int32|Количество пользователей с ошибками.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,7 +55,6 @@ ms.locfileid: "32522449"
   "errorUserCount": 1024
 }
 ```
-
 
 
 

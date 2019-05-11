@@ -1,15 +1,15 @@
 ---
 title: Создание Сиделоадингкэй
 description: Создание нового объекта Сиделоадингкэй.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24f2c970182322bc47b333137d7ea94b61e9726f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c448e675df87d0706f377b43857adc00f1f5d32
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528486"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899902"
 ---
 # <a name="create-sideloadingkey"></a>Создание Сиделоадингкэй
 
@@ -52,14 +52,14 @@ POST /deviceAppManagement/sideLoadingKeys
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
-|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
+|displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
 |description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |Тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|Строка|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,7 +98,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов targetedManagedAppPolicyAssignment
 description: Список свойств и связей объектов targetedManagedAppPolicyAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4faa618e4d074c0304d442252b6c5045b58ef5b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b8f94a5547c902cde0693ea1d7b2ed04e17f153
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529340"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33902971"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Перечисление объектов targetedManagedAppPolicyAssignment
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -80,7 +80,6 @@ Content-Length: 276
   ]
 }
 ```
-
 
 
 

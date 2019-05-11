@@ -1,15 +1,15 @@
 ---
 title: Удаление объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Удаляет объект deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aba16875ff0f9a3c141dfea8388c1b8014791301
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bf704ad3f702674ac2d0ad1476e5d69d9743c9f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528717"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900196"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Удаление объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

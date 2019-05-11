@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Adminconsent.
 description: Сведения о согласия администратора.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b14eb19096a034612715081ae2e3dba25b5bb218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aaac2bb11d90f1e6fec52fae0c17f374c33868ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534495"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943370"
 ---
 # <a name="adminconsent-resource-type"></a>Тип ресурса Adminconsent.
 
@@ -24,7 +24,7 @@ ms.locfileid: "32534495"
 |:---|:---|:---|
 |Шареапнсдата|[Админконсентстате](../resources/intune-devices-adminconsentstate.md)|Разрешение администратора о предоставлении общего доступа к данным о пользователях и устройствах в Apple. Возможные значения: `notConfigured`, `granted`, `notGranted`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,7 +40,6 @@ ms.locfileid: "32534495"
   "shareAPNSData": "String"
 }
 ```
-
 
 
 

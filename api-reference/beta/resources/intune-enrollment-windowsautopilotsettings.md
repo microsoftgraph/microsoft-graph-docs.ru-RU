@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windowsAutopilotSettings
 description: Ресурс windowsAutopilotSettings представляет учетную запись автопилота Windows для синхронизации данных с службой синхронизации данных устройств Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5f7893b7a9dd01a3ea7c41875f235870a5ce27f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547048"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941438"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>Тип ресурса windowsAutopilotSettings
 
@@ -29,12 +29,12 @@ ms.locfileid: "32547048"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |Ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |syncStatus|[Виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,7 +54,6 @@ ms.locfileid: "32547048"
   "syncStatus": "String"
 }
 ```
-
 
 
 

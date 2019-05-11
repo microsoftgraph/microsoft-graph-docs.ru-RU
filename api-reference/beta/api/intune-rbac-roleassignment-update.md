@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта roleAssignment
 description: Обновление свойств объекта roleAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55d285d6bf0f8188ee7363442434f4faaceac362
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0601c844a1449d817f1c0f3feeb6948f8daf6ce2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527394"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899489"
 ---
 # <a name="update-roleassignment"></a>Обновление объекта roleAssignment
 
@@ -50,8 +50,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображаемое или понятное имя назначения роли.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображаемое или понятное имя назначения роли.|
 |description|String|Описание назначения роли.|
 |Скопемемберс|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 |scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md);|Задает тип области для назначения роли. Тип по умолчанию "Ресаурцескопе" позволяет назначать Ресаурцескопес. Для "Аллдевицес", "Алллиценседусерс" и "Аллдевицесандлиценседусерс" свойство Ресаурцескопес должно оставаться пустым. Возможные значения: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
@@ -106,7 +106,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 

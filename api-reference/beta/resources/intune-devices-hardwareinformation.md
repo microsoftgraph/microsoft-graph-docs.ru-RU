@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Hardwareinformation.
 description: Сведения об оборудовании для данного устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c751b6601c296b01be91792105325e10a52ea2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ad73731be7f3fd3d18798b7dc84ce7865449529
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522484"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942012"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
@@ -25,27 +25,27 @@ ms.locfileid: "32522484"
 |serialNumber|Строка|Серийный номер.|
 |Тоталсторажеспаце|Int64|Общий объем хранилища устройства.|
 |Фристоражеспаце|Int64|Свободное место на устройстве.|
-|imei|String|IMEI|
+|imei|Строка|IMEI|
 |meid|String|MEID|
-|manufacturer|String|Производитель устройства|
-|model|String|Модель устройства|
-|phoneNumber|String|Номер телефона устройства|
-|subscriberCarrier|String|Абонентская перевозчик устройства|
-|Целлулартечнологи|String|Технология сотовой связи устройства|
-|Вифимак|String|MAC-адрес устройства Wi-Fi|
-|Оператингсистемлангуаже|String|Язык операционной системы устройства|
-|isSupervised|Boolean|Контролируемый режим устройства|
+|manufacturer|Строка|Производитель устройства|
+|model|Строка|Модель устройства|
+|phoneNumber|Строка|Номер телефона устройства|
+|subscriberCarrier|Строка|Абонентская перевозчик устройства|
+|Целлулартечнологи|Строка|Технология сотовой связи устройства|
+|Вифимак|Строка|MAC-адрес устройства Wi-Fi|
+|Оператингсистемлангуаже|Строка|Язык операционной системы устройства|
+|isSupervised|Логический|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|Свойства isshareddevice|Boolean|Общие iPad|
+|Свойства isshareddevice|Логический|Общие iPad|
 |Шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
-|ТпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
-|Оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
-|Девицефуллкуалифиеддомаиннаме|String|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
+|ТпмспеЦификатионверсион|Строка|Строка, указывающая версию спецификации.|
+|Оператингсистемедитион|Строка|Строка, задающая выпуск операционной системы.|
+|Девицефуллкуалифиеддомаиннаме|Строка|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
 |Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате|[Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования к оборудованию для обеспечения безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |Девицегуардвиртуализатионбаседсекуритистате|[Девицегуардвиртуализатионбаседсекуритистате](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |Девицегуардлокалсистемаусоритикредентиалгуардстате|[Девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -90,7 +90,6 @@ ms.locfileid: "32522484"
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
 }
 ```
-
 
 
 

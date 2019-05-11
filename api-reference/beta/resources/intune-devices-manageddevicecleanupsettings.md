@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Манажеддевицеклеанупсеттингс
 description: Определите правило, когда администратор хочет очистить устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d7e91d632860e47275cda158acf4d816c64e835
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5070de01324b25332d42b63a4d1d787989b86c4f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522120"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941963"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Тип ресурса Манажеддевицеклеанупсеттингс
 
@@ -22,9 +22,9 @@ ms.locfileid: "32522120"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Девицеинактивитибефореретирементиндайс|String|Количество дней, когда устройство не связывалось с Intune.|
+|Девицеинактивитибефореретирементиндайс|Строка|Количество дней, когда устройство не связывалось с Intune.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,7 +40,6 @@ ms.locfileid: "32522120"
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсусертипе
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b0a2ad0755e3658be7e640a192b5c4622a14ee6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56483c849558a670ff153e8161d7a02b16bc61c6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546992"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941389"
 ---
 # <a name="windowsusertype-enum-type"></a>тип перечисления Виндовсусертипе
 
@@ -23,8 +23,7 @@ ms.locfileid: "32546992"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |имени|нуль|Пока не задокументировано.|
-|Стандартный|1 |Пока не задокументировано.|
-
+|Стандартный|1,1|Пока не задокументировано.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Получение пользователя
 description: Чтение свойств и связей объекта user.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7e6643fa2beccf83384c454451094473e7c80ac8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ead8f6516dfae6c4357ac62f491bb45e89522600
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526820"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899244"
 ---
 # <a name="get-user"></a>Получение пользователя
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления платформы
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edb921a12ca932f5c10d22120a065fb46f2bb8d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a9e2411c2eb2b6d5cd58b336deeb9f8017832e9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562666"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941480"
 ---
 # <a name="platform-enum-type"></a>тип перечисления платформы
 
@@ -22,13 +22,12 @@ ms.locfileid: "32562666"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|НеИзвестная платформа устройства|
-|модуле|1 |Платформа устройства IOS|
-|ОС|2 |Платформа для устройств Android|
-|под|3 |Платформа Windows для устройств|
-|Мобильные|4 |Платформа устройства мобильные|
-|macOS|5 |Платформа для устройств Mac|
-
+|unknown|нуль|Неизвестная платформа устройства|
+|модуле|1,1|Платформа устройства IOS|
+|ОС|2|Платформа для устройств Android|
+|под|4|Платформа Windows для устройств|
+|Мобильные|SP4|Платформа устройства мобильные|
+|macOS|17:00|Платформа для устройств Mac|
 
 
 

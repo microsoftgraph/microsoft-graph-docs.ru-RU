@@ -1,15 +1,15 @@
 ---
 title: Получение Сиделоадингкэй
 description: Чтение свойств и связей объекта Сиделоадингкэй.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f048c33de07d07321295d7771ef1bafb9e618376
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cc895692e08e9fd3030b1db1fdcd0491511baba3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528479"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899895"
 ---
 # <a name="get-sideloadingkey"></a>Получение Сиделоадингкэй
 
@@ -79,7 +79,6 @@ Content-Length: 328
   }
 }
 ```
-
 
 
 

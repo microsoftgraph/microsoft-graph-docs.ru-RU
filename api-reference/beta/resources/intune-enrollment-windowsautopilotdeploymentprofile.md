@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windowsAutopilotDeploymentProfile
 description: Профиль развертывания Windows для автопилота
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f82d48422ecff99f106d4a62b07ac8532cb546c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0596f4cd23c98b271c5e463a973dcfd29cee6dad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546999"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941466"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -37,9 +37,10 @@ ms.locfileid: "32546999"
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
 |Енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
 |Екстраксардварехаш|Логический|Извлечение Хардварехаш для профиля|
-|Девиценаметемплате|String|Шаблон, используемый для именования автоПилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
-|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автоПилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
+|Девиценаметемплате|Строка|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автопилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
 |Енаблевхитеглове|Логический|Включите для профиля белый Глове для автопилотного развертывания.|
+|roleScopeTagIds|Коллекция строк|Теги областей для профиля.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -86,10 +87,12 @@ ms.locfileid: "32546999"
   "extractHardwareHash": true,
   "deviceNameTemplate": "String",
   "deviceType": "String",
-  "enableWhiteGlove": true
+  "enableWhiteGlove": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

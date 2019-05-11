@@ -1,15 +1,15 @@
 ---
 title: Удаление объекта windowsInformationProtectionPolicy
 description: Удаляет объект windowsInformationProtectionPolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf05dec1d93f4cd0366a99050b0859635a4ccf37
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76951ef5c433ccb2636f72453d4828136c613275
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529130"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900610"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Удаление объекта windowsInformationProtectionPolicy
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

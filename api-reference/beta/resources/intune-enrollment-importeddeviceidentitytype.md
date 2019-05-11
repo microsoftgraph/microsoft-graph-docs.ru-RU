@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Импортеддевицеидентититипе
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c22866ea0a79bc620595024f8182c3d0aa3f198d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a70fcab482d577e91598729575dd1465f4a7fb57
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542139"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941543"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>тип перечисления Импортеддевицеидентититипе
 
@@ -22,10 +22,9 @@ ms.locfileid: "32542139"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|НеИзвестное значение Импортеддевицеидентититипе.|
-|imei|1 |Удостоверение устройства имеет тип IMEI.|
-|serialNumber|2 |Идентификатор устройства имеет тип "серийный номер".|
-
+|unknown|нуль|Неизвестное значение Импортеддевицеидентититипе.|
+|imei|1,1|Удостоверение устройства имеет тип IMEI.|
+|serialNumber|2|Идентификатор устройства имеет тип "серийный номер".|
 
 
 

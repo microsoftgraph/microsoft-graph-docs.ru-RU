@@ -1,15 +1,15 @@
 ---
 title: Обновление Усерпфксцертификате
 description: Обновление свойств объекта Усерпфксцертификате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f84d0579805fcb2fed5664a6046b380a9ce08cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d996f67517bd28a7c12990883602a50c9a0ac1c2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527947"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899713"
 ---
 # <a name="update-userpfxcertificate"></a>Обновление Усерпфксцертификате
 
@@ -51,22 +51,22 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
+|отпечаток|Строка|Отпечаток SHA-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
-|providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
-|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
+|providerName|Строка|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
+|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
 |Паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |Енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|Енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
+|Енкриптедпфкспассворд|Строка|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,6 +117,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

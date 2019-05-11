@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса importedWindowsAutopilotDeviceIdentity
 description: Импортированные устройства с Windows AutoPilot
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50fd9d25faa4b7f1dc244701977bf6c71cd82974
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70cdc846424941ea98fefdb23da0886930498f75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567055"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941564"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentity
 
@@ -32,15 +32,16 @@ ms.locfileid: "32567055"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
-|orderIdentifier|String|Номер заказа устройства Windows Autopilot.|
+|id|Строка|GUID объекта|
+|orderIdentifier|Строка|Номер заказа устройства Windows Autopilot.|
 |serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|Импортид|String|Идентификатор импорта для устройства автопилота Windows.|
+|Импортид|Строка|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
+|АссигнедусерпринЦипалнаме|Строка|ИМЯ участника-пользователя для пользователя, которому будет назначено устройство|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,10 +67,10 @@ ms.locfileid: "32567055"
     "deviceRegistrationId": "String",
     "deviceErrorCode": 1024,
     "deviceErrorName": "String"
-  }
+  },
+  "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

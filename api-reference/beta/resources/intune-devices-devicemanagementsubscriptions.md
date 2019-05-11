@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицеманажементсубскриптионс
 description: Подписки управления мобильными устройствами клиентов.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e17823eb8fd07c9e7a624db425ef55540e43c96
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 182b288fc84dfb4b98c4b810618ac09bfdbefa0d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522421"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942187"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>тип перечисления Девицеманажементсубскриптионс
 
@@ -22,13 +22,12 @@ ms.locfileid: "32522421"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Отсутствует|
-|корпоративного|1 |Подписка на Microsoft Intune|
-|Office365|2 |Подписка на Office365|
-|Интунепремиум|4 |Подписка на Microsoft Intune Premium|
+|none|нуль|Отсутствует|
+|корпоративного|1,1|Подписка на Microsoft Intune|
+|Office365|2|Подписка на Office365|
+|Интунепремиум|SP4|Подписка на Microsoft Intune Premium|
 |Интуне_еду|8 |Microsoft Intune для образования подписки|
-|Интуне_смб|16 |Подписка на Microsoft Intune для малого бизнеса|
-
+|Интуне_смб|столбцов|Подписка на Microsoft Intune для малого бизнеса|
 
 
 

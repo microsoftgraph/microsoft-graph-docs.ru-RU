@@ -1,15 +1,15 @@
 ---
 title: Список объектов mobileThreatDefenseConnector
 description: Список свойств и связей объектов mobileThreatDefenseConnector.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d810f7a5e469b357ab959a9d90f22ab0b9bb12b9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5c8cb3c842de7e1b1b5c8990850132fa6bee5751
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528661"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899951"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Список объектов mobileThreatDefenseConnector
 
@@ -46,7 +46,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +86,6 @@ Content-Length: 764
   ]
 }
 ```
-
 
 
 

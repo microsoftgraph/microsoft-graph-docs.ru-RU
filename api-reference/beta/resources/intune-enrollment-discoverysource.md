@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Дисковерисаурце
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2506cc1c0ae8cbb623a88c3681bbbd36462a2622
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c08304e1701c3d9abba2ee0744feb96c8a69ef4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573860"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941634"
 ---
 # <a name="discoverysource-enum-type"></a>тип перечисления Дисковерисаурце
 
@@ -22,10 +22,9 @@ ms.locfileid: "32573860"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Дисковерисаурце неИзвестен.|
-|Админимпорт|2 |Устройство импортируется администратором.|
-|Девицеенроллментпрограм|4 |Устройство добавляется программой регистрации устройств Apple (DEP).|
-
+|unknown|нуль|Дисковерисаурце неизвестен.|
+|Админимпорт|2|Устройство импортируется администратором.|
+|Девицеенроллментпрограм|SP4|Устройство добавляется программой регистрации устройств Apple (DEP).|
 
 
 

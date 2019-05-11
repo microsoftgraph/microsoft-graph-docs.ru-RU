@@ -1,15 +1,15 @@
 ---
 title: Получение организации
 description: Чтение свойств и связей объекта organization.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c0e4a6a4947a4b85e434437618917d8aa113e0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a3ffa5a95af226a304ee6ed09dae430bcc50317
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528647"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899958"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -49,7 +49,7 @@ GET /organization/{organizationId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [organization](../resources/intune-onboarding-organization.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -84,7 +84,6 @@ Content-Length: 584
   }
 }
 ```
-
 
 
 

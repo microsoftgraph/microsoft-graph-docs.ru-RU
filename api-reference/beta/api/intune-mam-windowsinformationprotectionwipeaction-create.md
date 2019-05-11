@@ -1,15 +1,15 @@
 ---
 title: Создание Виндовсинформатионпротектионвипеактион
 description: Создание нового объекта Виндовсинформатионпротектионвипеактион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a99aa4c89e80df93637cde6e3dc4bdd88018c76a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c9ed14e7bee4645972be17528047bf84032986a5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529137"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900680"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Создание Виндовсинформатионпротектионвипеактион
 
@@ -50,17 +50,17 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|Таржетедусерид|String|UserId, целевой для этого действия очистки.|
-|Таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
-|Таржетеддевиценаме|String|Имя целевого устройства.|
-|Таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
+|Таржетедусерид|Строка|UserId, целевой для этого действия очистки.|
+|Таржетеддевицерегистратионид|Строка|Девицерегистратионид, предназначенный для этого действия очистки.|
+|Таржетеддевиценаме|Строка|Имя целевого устройства.|
+|Таржетеддевицемакаддресс|Строка|Mac-адрес целевого устройства.|
 |Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

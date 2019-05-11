@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 340225527a246df681bdea165e316e06e0dcbd54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1116c50717813ed05a8278deaae134fbd6f26c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527590"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899503"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -51,11 +51,11 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String|Категория ресурса, к которой относится данная операция.|
+|resource|Строка|Категория ресурса, к которой относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|Енабледфорскопевалидатион|Boolean|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|Енабледфорскопевалидатион|Логический|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

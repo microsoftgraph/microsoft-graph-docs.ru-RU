@@ -1,15 +1,15 @@
 ---
 title: Получение объекта localizedNotificationMessage
 description: Чтение свойств и связей объекта localizedNotificationMessage.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84e4a1dd2a354a8b9b04d6964642c4810d1364e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 743d45f24b81b5d032bcf2c04091c54c57d8d8d4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529025"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900687"
 ---
 # <a name="get-localizednotificationmessage"></a>Получение объекта localizedNotificationMessage
 
@@ -49,7 +49,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -79,7 +79,6 @@ Content-Length: 346
   }
 }
 ```
-
 
 
 

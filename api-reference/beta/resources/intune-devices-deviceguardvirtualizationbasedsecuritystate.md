@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицегуардвиртуализатионбаседсекуритистате
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51def159e90b256e772138264139f2a96fbd3344
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c989a0495f1dd9a8067060ab119f2648db6705d0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570133"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942085"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритистате
 
@@ -23,13 +23,12 @@ ms.locfileid: "32570133"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |запускается|нуль|Запущено|
-|Ребутрекуиред|1 |Обязательный корень|
-|require64BitArchitecture|2 |необходима разрядная архитектура 64|
-|Нотлиценсед|3 |Не лицензировано|
-|notConfigured|4 |Не настроено|
-|Доеснотмисардваререкуирементс|5 |Система не соответствует требованиям к оборудованию|
+|Ребутрекуиред|1,1|Обязательный корень|
+|require64BitArchitecture|2|необходима разрядная архитектура 64|
+|Нотлиценсед|4|Не лицензировано|
+|notConfigured|SP4|Не настроено|
+|Доеснотмисардваререкуирементс|17:00|Система не соответствует требованиям к оборудованию|
 |остальные|42|Остальные. Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.|
-
 
 
 

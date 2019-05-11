@@ -1,15 +1,15 @@
 ---
 title: Создание объекта deviceManagementPartner
 description: Создание объекта deviceManagementPartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dde8da26d87812e198a47b8bbf4fd498122ac5c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c9eea3c6ba8a3010a2a63d6dd362555aed553f0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528745"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900098"
 ---
 # <a name="create-devicemanagementpartner"></a>Создание объекта deviceManagementPartner
 
@@ -55,10 +55,10 @@ POST /deviceManagement/deviceManagementPartners
 |partnerState|[Девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[Девицеманажементпартнерапптипе](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Тип партнерского приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Идентификатор одноклиентского приложения партнера|
-|displayName|String|Отображаемое имя партнера|
+|displayName|Строка|Отображаемое имя партнера|
 |isConfigured|Boolean|Указывает, настроен ли партнер по управлению устройствами|
 |Вхенпартнердевицесвиллберемовед|DateTimeOffset|Дата и время в формате UTC, когда партнерские устройства будет удален. Это скоро станет обселете.|
-|Вхенпартнердевицесвиллбемаркедаснонкомплиант|DateTimeOffset|Дата и время в формате UTC, когда партнерские устройства будет помечен как неСоответствующий. Это скоро станет обселете.|
+|Вхенпартнердевицесвиллбемаркедаснонкомплиант|DateTimeOffset|Дата и время в формате UTC, когда партнерские устройства будет помечен как несоответствующий. Это скоро станет обселете.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|Дата и время в формате UTC, указывающие, когда будут удалены партнерские устройства|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|Дата и время в формате UTC, указывающие, когда партнерские устройства будут отмечены как несоответствующие требованиям|
 
@@ -113,7 +113,6 @@ Content-Length: 713
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
 
 
 

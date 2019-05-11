@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицеманажементексчанжеакцессстате
 description: Состояние доступа к Exchange для устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3cbe04dee84418d43dc610253522174caad9b2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa5a49ca352163f41ed747c4bf33c150ce2ecba9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570035"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942068"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстате
 
@@ -22,12 +22,11 @@ ms.locfileid: "32570035"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Не обнаружено состояние доступа в Exchange|
-|unknown|1 |Неизвестный режим доступа к устройству Exchange|
-|разрешенных|2 |Устройство имеет доступ к Exchange|
-|заблокированных|3 |Устройство заблокировано в Exchange|
-|карантин|4 |Устройство помещено в карантин в Exchange|
-
+|none|нуль|Не обнаружено состояние доступа в Exchange|
+|unknown|1,1|Неизвестный режим доступа к устройству Exchange|
+|разрешенных|2|Устройство имеет доступ к Exchange|
+|заблокированных|4|Устройство заблокировано в Exchange|
+|карантин|SP4|Устройство помещено в карантин в Exchange|
 
 
 
