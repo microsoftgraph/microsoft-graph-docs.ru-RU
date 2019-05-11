@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса mobileApp
 description: Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abc2a8c0f905d69b613ef12bca308d1d0f72d69c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4bc14b517068ba8427389d09dace8945ebbd1b0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552305"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950034"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -35,16 +35,16 @@ ms.locfileid: "32552305"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Администратор предоставил или импортировал название приложения.|
-|description|String|Описание приложения.|
-|publisher|String|Издатель приложения.|
+|description|Строка|Описание приложения.|
+|publisher|Строка|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения.|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором.|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
-|informationUrl|String|URL-адрес с дополнительными сведениями.|
+|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
+|informationUrl|Строка|URL-адрес с дополнительными сведениями.|
 |owner|String|Владелец приложения.|
-|developer|String|Разработчик приложения.|
+|developer|Строка|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
 |uploadState|Int32|Состояние отправки.|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
@@ -99,7 +99,6 @@ ms.locfileid: "32552305"
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

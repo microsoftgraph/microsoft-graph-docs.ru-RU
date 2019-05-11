@@ -1,15 +1,15 @@
 ---
 title: Создание Мобилеаппдепенденци
 description: Создание нового объекта Мобилеаппдепенденци.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85aeae1d8d76b4c4609ff38f1263aaeb9a634e9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a272a9c39262b6dd14c8d118f8c50e615d92583
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489060"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935149"
 ---
 # <a name="create-mobileappdependency"></a>Создание Мобилеаппдепенденци
 
@@ -43,17 +43,17 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Мобилеаппдепенденци в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеаппдепенденци.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор сущности отношения. НаСледуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|Идентификатор приложения целевого дочернего мобильного приложения. НаСледуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|Таржетдисплайнаме|String|Отображаемое имя целевого дочернего мобильного приложения. НаСледуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|Депенденцитипе|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
+|id|Строка|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|Строка|Идентификатор приложения целевого дочернего мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|Таржетдисплайнаме|Строка|Отображаемое имя целевого дочернего мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|Депенденцитипе|[Мобилеаппдепенденцитипе](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
 
@@ -95,7 +95,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
 
 
 

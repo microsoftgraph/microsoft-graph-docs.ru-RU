@@ -1,15 +1,15 @@
 ---
 title: Получение windowsAppX
 description: Чтение свойств и связей объекта windowsAppX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 771ca124f5e5a02c08477aafc49672b9c2bd2444
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e0142c8aead42571ffa32e6320e03a177ffe87c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488458"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934784"
 ---
 # <a name="get-windowsappx"></a>Получение windowsAppX
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -118,7 +118,6 @@ Content-Length: 1646
   }
 }
 ```
-
 
 
 

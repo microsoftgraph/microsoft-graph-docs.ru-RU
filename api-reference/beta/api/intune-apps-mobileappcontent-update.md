@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта mobileAppContent
 description: Обновление свойств объекта mobileAppContent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a33cab7aa5d576ebf1a55986c3e5d9a0d9f0325
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf319617d88d6a5efbac4ac1da6f3afa9369c838
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489249"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935225"
 ---
 # <a name="update-mobileappcontent"></a>Обновление объекта mobileAppContent
 
@@ -45,14 +45,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [mobileAppContent](../resources/intune-apps-mobileappcontent.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [mobileAppContent](../resources/intune-apps-mobileappcontent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Версия контента приложения.|
+|id|Строка|Версия контента приложения.|
 
 
 
@@ -85,7 +85,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
 
 
 

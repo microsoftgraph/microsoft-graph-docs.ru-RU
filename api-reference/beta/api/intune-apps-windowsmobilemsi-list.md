@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов windowsMobileMSI
 description: Список свойств и связей объектов windowsMobileMSI.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7c66f9bf1d94e7efcb41cdd3767d068cea72908
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95a07eeec1387808f34d99c5346c6b779c0cf303
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32487722"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934672"
 ---
 # <a name="list-windowsmobilemsis"></a>Перечисление объектов windowsMobileMSI
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -105,7 +105,6 @@ Content-Length: 1407
   ]
 }
 ```
-
 
 
 

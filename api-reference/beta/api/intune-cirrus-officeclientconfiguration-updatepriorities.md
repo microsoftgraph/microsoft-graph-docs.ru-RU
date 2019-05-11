@@ -2,14 +2,14 @@
 title: Действие updatePriorities
 description: Обновление приоритетов политики.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a237ac20154e9356ff999bc5c671b02c15c7028
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483168"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934056"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
@@ -43,7 +43,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

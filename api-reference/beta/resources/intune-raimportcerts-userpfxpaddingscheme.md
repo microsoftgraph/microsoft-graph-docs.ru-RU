@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Усерпфкспаддингсчеме
 description: Поддерживаемые значения для схемы заполнения, используемой поставщиком шифрования.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e1028f5e3bcac6b3ece66efb1ca50e7b65ea2bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6bf3d5b30dab16983cee549d6dcf9895a086180a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566369"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940059"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
 
@@ -22,12 +22,13 @@ ms.locfileid: "32566369"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Пока не задокументировано.|
-|PKCS1|1 |Пока не задокументировано.|
-|oaepSha1|2 |Пока не задокументировано.|
-|oaepSha256|3 |Пока не задокументировано.|
-|oaepSha384|4 |Пока не задокументировано.|
-|oaepSha512|5 |Пока не задокументировано.|
+|none|нуль|Пока не задокументировано.|
+|pkcs1|1,1|Пока не задокументировано.|
+|oaepSha1|2|Пока не задокументировано.|
+|oaepSha256|4|Пока не задокументировано.|
+|oaepSha384|SP4|Пока не задокументировано.|
+|oaepSha512|17:00|Пока не задокументировано.|
+
 
 
 

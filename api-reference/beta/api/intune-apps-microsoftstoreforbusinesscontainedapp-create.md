@@ -1,15 +1,15 @@
 ---
 title: Создание Микрософтсторефорбусинессконтаинедапп
 description: Создание нового объекта Микрософтсторефорбусинессконтаинедапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7d8894e01b7993e50f12ee3aa3e83173fbebb11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbdea27ad63b3216df4e729d5f4fc3387a5ade5a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490978"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935407"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Создание Микрософтсторефорбусинессконтаинедапп
 
@@ -45,15 +45,15 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Микрософтсторефорбусинессконтаинедапп в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Микрософтсторефорбусинессконтаинедапп.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. НаСледуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
-|Модели|String|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
+|id|Строка|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
+|Модели|Строка|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

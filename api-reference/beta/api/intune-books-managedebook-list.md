@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов managedEBook
 description: Список свойств и связей объектов managedEBook.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a772a7f8fcb3f273cf0934a60528775dfd5a6e9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce8b565b608e72047a8983595ec8daf6b2cc3640
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483308"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934231"
 ---
 # <a name="list-managedebooks"></a>Перечисление объектов managedEBook
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/managedEBooks
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedEBook](../resources/intune-books-managedebook.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +86,6 @@ Content-Length: 756
   ]
 }
 ```
-
 
 
 

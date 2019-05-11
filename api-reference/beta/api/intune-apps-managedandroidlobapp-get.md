@@ -1,15 +1,15 @@
 ---
 title: Get managedAndroidLobApp
 description: Чтение свойств и связей объекта managedAndroidLobApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ecb18df6010dea8a423822427ddc7ad31dc2f303
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a14a7cd45353451dc71498a01780e10c3cc5779
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495317"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935771"
 ---
 # <a name="get-managedandroidlobapp"></a>Get managedAndroidLobApp
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -126,7 +126,6 @@ Content-Length: 1786
   }
 }
 ```
-
 
 
 

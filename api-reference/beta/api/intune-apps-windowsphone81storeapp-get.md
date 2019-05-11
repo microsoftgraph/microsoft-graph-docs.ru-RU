@@ -1,15 +1,15 @@
 ---
 title: Получение windowsPhone81StoreApp
 description: Чтение свойств и связей объекта windowsPhone81StoreApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6feb60e2c23f617f7cb96b3b4a72bc270427fe53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd69ef5d97ca4dc5a79d93118617bffa1d122dd0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488192"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934588"
 ---
 # <a name="get-windowsphone81storeapp"></a>Получение windowsPhone81StoreApp
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -100,7 +100,6 @@ Content-Length: 1018
   }
 }
 ```
-
 
 
 

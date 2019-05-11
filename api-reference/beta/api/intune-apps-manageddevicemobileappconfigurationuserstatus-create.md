@@ -1,15 +1,15 @@
 ---
 title: Создание объекта managedDeviceMobileAppConfigurationUserStatus
 description: Создание объекта managedDeviceMobileAppConfigurationUserStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ce63be7d333f319fb93245c224b9432fe644294
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 736078b22a4977d27e2b1233265fe4fe71319c0c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32493260"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935603"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Создание объекта managedDeviceMobileAppConfigurationUserStatus
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта managedDeviceMobileAppConfigurationUserStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта managedDeviceMobileAppConfigurationUserStatus.
@@ -99,7 +99,6 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

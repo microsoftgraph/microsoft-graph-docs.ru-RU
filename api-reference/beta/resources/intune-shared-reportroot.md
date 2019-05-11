@@ -2,14 +2,14 @@
 title: Тип ресурса reportRoot
 description: Ресурс, представляющий экземпляр устройства или отчет об устранении неполадок в зависимости от контекста.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: a2e41d9b17ca7acafa98dad65db5d2ff5ce30925
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c975abfa3cb580d107967c7adaf66627bad2ad2e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572943"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938732"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 
@@ -37,9 +37,9 @@ ms.locfileid: "32572943"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта.|
+|id|Строка|Уникальный идентификатор для этого объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,23 +1,23 @@
 ---
-title: Создание iosEducationDeviceConfiguration
-description: Создание нового объекта iosEducationDeviceConfiguration.
+title: Создание Иосдериведкредентиалаусентикатионконфигуратион
+description: Создание нового объекта Иосдериведкредентиалаусентикатионконфигуратион.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42cf04d58cfb2519fca12d75e780b949d92ee86b
+ms.openlocfilehash: f5b75ffdd5153e03e8c6e5145394dfc10c125f90
 ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923639"
+ms.locfileid: "33957089"
 ---
-# <a name="create-ioseducationdeviceconfiguration"></a>Создание iosEducationDeviceConfiguration
+# <a name="create-iosderivedcredentialauthenticationconfiguration"></a>Создание Иосдериведкредентиалаусентикатионконфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [iosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) .
+Создание нового объекта [иосдериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,9 +45,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта iosEducationDeviceConfiguration в формате JSON.
+В тексте запроса добавьте представление объекта Иосдериведкредентиалаусентикатионконфигуратион в формате JSON.
 
-В следующей таблице приведены свойства, необходимые при создании iosEducationDeviceConfiguration.
+В следующей таблице приведены свойства, необходимые при создании Иосдериведкредентиалаусентикатионконфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -63,7 +63,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [iosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [иосдериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -72,10 +72,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 261
+Content-length: 277
 
 {
-  "@odata.type": "#microsoft.graph.iosEducationDeviceConfiguration",
+  "@odata.type": "#microsoft.graph.iosDerivedCredentialAuthenticationConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -91,11 +91,11 @@ Content-length: 261
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 433
+Content-Length: 449
 
 {
-  "@odata.type": "#microsoft.graph.iosEducationDeviceConfiguration",
-  "id": "3d563be4-3be4-3d56-e43b-563de43b563d",
+  "@odata.type": "#microsoft.graph.iosDerivedCredentialAuthenticationConfiguration",
+  "id": "01713f58-3f58-0171-583f-7101583f7101",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"

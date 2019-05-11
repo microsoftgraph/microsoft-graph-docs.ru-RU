@@ -1,15 +1,15 @@
 ---
 title: Создание объекта windows10TeamGeneralConfiguration
 description: Создает объект windows10TeamGeneralConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17dfa82cd080a861537c5d09cb9fe349f3c18ce8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b0dfbe53ec23662e9e3e83a8f7c8da6cb02c2a0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515598"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918481"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>Создание объекта windows10TeamGeneralConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта windows10TeamGeneralConfiguration в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта windows10TeamGeneralConfiguration.
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Логический|Указывает, следует ли заблокировать оперативную аналитику Azure.|
-|azureOperationalInsightsWorkspaceId|String|Идентификатор рабочей области оперативной аналитики Azure.|
+|azureOperationalInsightsWorkspaceId|Строка|Идентификатор рабочей области оперативной аналитики Azure.|
 |azureOperationalInsightsWorkspaceKey|String|Ключ рабочей области оперативной аналитики Azure.|
 |connectAppBlockAutoLaunch|Логический|Указывает, следует ли автоматически запускать приложение Connect, когда начинается проекция.|
 |maintenanceWindowBlocked|Логический|Указывает, следует ли запретить устанавливать период обслуживания для обновлений устройства.|
@@ -167,7 +167,6 @@ Content-Length: 1414
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

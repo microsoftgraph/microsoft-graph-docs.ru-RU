@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов managedDeviceMobileAppConfiguration
 description: Перечисление свойств и связей объектов managedDeviceMobileAppConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ddd4195c1e249acff6b2a3a70987bc459045f8c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e898f3db109bf6727b1edd61b936895a1fd1fb5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32494996"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935687"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>Перечисление объектов managedDeviceMobileAppConfiguration
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/mobileAppConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -84,7 +84,6 @@ Content-Length: 559
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Get managedApp
 description: Чтение свойств и связей объекта managedApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff962c3c3e1a94cf1192c40afb4ab5cac3ba7f73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27e96751d24d5a5d80cd01af0e5f1f9187567896
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495052"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935722"
 ---
 # <a name="get-managedapp"></a>Get managedApp
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -101,7 +101,6 @@ Content-Length: 1025
   }
 }
 ```
-
 
 
 

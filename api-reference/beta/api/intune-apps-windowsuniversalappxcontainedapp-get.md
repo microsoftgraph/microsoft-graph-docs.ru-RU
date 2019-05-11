@@ -1,15 +1,15 @@
 ---
 title: Получение Виндовсуниверсалаппксконтаинедапп
 description: Чтение свойств и связей объекта Виндовсуниверсалаппксконтаинедапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: defbdb0f378c39c67e3c7861801a25b79c1aee32
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b0b3d859a92025e9803713efc9e7209d8435e5c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485553"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934448"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Получение Виндовсуниверсалаппксконтаинедапп
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,7 +77,6 @@ Content-Length: 196
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов editionUpgradeConfiguration
 description: Список свойств и связей объектов editionUpgradeConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d23905ca59a36f26fab1a3740e4b8a4c535072f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5c25b269703aa334f045cdfb66809f82875cc981
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467661"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33926812"
 ---
 # <a name="list-editionupgradeconfigurations"></a>Перечисление объектов editionUpgradeConfiguration
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,7 +88,6 @@ Content-Length: 700
   ]
 }
 ```
-
 
 
 

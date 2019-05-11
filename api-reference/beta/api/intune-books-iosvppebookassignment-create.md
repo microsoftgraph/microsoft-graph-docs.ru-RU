@@ -1,15 +1,15 @@
 ---
 title: Создание объекта iosVppEBookAssignment
 description: Создание объекта iosVppEBookAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f25f3afcabd9ace9af346bac8c6cd5c46975803e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da7825b77cbbbaaee6a8d5f78225304864628815
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483693"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934280"
 ---
 # <a name="create-iosvppebookassignment"></a>Создание объекта iosVppEBookAssignment
 
@@ -43,16 +43,16 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта iosVppEBookAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта iosVppEBookAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. НаСледуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -93,7 +93,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

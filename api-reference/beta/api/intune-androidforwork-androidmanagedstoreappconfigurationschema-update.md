@@ -1,15 +1,15 @@
 ---
 title: Обновление Андроидманажедстореаппконфигуратионсчема
 description: Обновление свойств объекта Андроидманажедстореаппконфигуратионсчема.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95b01edae05234c1e6bd9c801d3f5c5f83287195
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11a27615501f9810ea4eac3db7c85cd2856caba6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497572"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937500"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>Обновление Андроидманажедстореаппконфигуратионсчема
 
@@ -43,14 +43,14 @@ PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManag
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
+|id|Строка|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме.|
 
@@ -131,7 +131,6 @@ Content-Length: 854
   ]
 }
 ```
-
 
 
 

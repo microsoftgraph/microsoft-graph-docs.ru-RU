@@ -1,15 +1,15 @@
 ---
 title: Удаление Макосвппаппассигнедлиценсе
 description: Удаляет объект Макосвппаппассигнедлиценсе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 201f5c0b00b991dc5160070447751e7f81fcc860
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 239b0fe122b8cf05c4ab28b723519fd6d1e4b0fe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495315"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935820"
 ---
 # <a name="delete-macosvppappassignedlicense"></a>Удаление Макосвппаппассигнедлиценсе
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

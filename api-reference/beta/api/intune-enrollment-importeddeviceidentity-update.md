@@ -1,15 +1,15 @@
 ---
 title: Обновление Импортеддевицеидентити
 description: Обновление свойств объекта Импортеддевицеидентити.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b97cfd44c9d3b380c89b9116f9989da8e893b91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b114bd928db1d3c05d6ab5a0a1a9a897c91efd60
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532718"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908361"
 ---
 # <a name="update-importeddeviceidentity"></a>Обновление Импортеддевицеидентити
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор импортированного удостоверения устройства|
-|Импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
+|Импортеддевицеидентифиер|Строка|Импортированный идентификатор устройства|
 |Импортеддевицеидентититипе|[Импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -105,7 +105,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

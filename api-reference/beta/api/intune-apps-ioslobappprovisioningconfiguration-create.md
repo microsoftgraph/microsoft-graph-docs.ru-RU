@@ -1,15 +1,15 @@
 ---
 title: Создание iosLobAppProvisioningConfiguration
 description: Создание нового объекта iosLobAppProvisioningConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89420fa4680fdb6978ebff209c36f4f81804596a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a848b7bb83146019f4eebc37c95a99ce4beba17
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496095"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937024"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Создание iosLobAppProvisioningConfiguration
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта iosLobAppProvisioningConfiguration в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании iosLobAppProvisioningConfiguration.
@@ -51,7 +51,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|expirationDateTime|DateTimeOffset|Дата и время неОбязательного окончания срока действия профиля.|
+|expirationDateTime|DateTimeOffset|Дата и время необязательного окончания срока действия профиля.|
 |payloadFileName|String|Имя файла полезных данных (*. мобилепровисион | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.|
@@ -112,7 +112,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

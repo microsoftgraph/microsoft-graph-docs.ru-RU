@@ -1,15 +1,15 @@
 ---
 title: Создание Иосвппаппассигнедлиценсе
 description: Создание нового объекта Иосвппаппассигнедлиценсе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59d40d358809214c4ad04996c42f24cd4c97e634
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b42149e547c363f6677a9ecf7cd7ae7492405ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495409"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936191"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Создание Иосвппаппассигнедлиценсе
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Иосвппаппассигнедлиценсе в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Иосвппаппассигнедлиценсе.
@@ -51,10 +51,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Усеремаиладдресс|String|Адрес электронной почты пользователя.|
+|Усеремаиладдресс|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

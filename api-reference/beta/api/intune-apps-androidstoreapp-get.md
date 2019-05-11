@@ -1,15 +1,15 @@
 ---
 title: Get androidStoreApp
 description: Чтение свойств и связей объекта androidStoreApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 102626d168d65fd0f9b4e20115c02cc75392214a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4071e0cd8a7ecdf62e2f7ff3cef89829d93fac8f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496466"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937185"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -119,7 +119,6 @@ Content-Length: 1511
   }
 }
 ```
-
 
 
 

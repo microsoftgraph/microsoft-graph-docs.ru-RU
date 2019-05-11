@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Оффицесуитеинсталлпрогрессдисплайлевел
-description: ПереЧисление, указывающее уровень отображения ПОЛЬЗОВАТЕЛЬСКОГО интерфейса установки хода установки на устройстве.
-author: tfitzmac
+description: Перечисление, указывающее уровень отображения ПОЛЬЗОВАТЕЛЬСКОГО интерфейса установки хода установки на устройстве.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76dc0253f6c74ed81e65eeefb62b7196f1674aac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66dcfa70df27c9f4a66a27cd776da37b96bfcdef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551808"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949782"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>тип перечисления Оффицесуитеинсталлпрогрессдисплайлевел
 
@@ -17,14 +17,13 @@ ms.locfileid: "32551808"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-ПереЧисление, указывающее уровень отображения ПОЛЬЗОВАТЕЛЬСКОГО интерфейса установки хода установки на устройстве.
+Перечисление, указывающее уровень отображения ПОЛЬЗОВАТЕЛЬСКОГО интерфейса установки хода установки на устройстве.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Пока не задокументировано.|
-|полный|1 |Пока не задокументировано.|
-
+|none|нуль|Пока не задокументировано.|
+|полный|1,1|Пока не задокументировано.|
 
 
 

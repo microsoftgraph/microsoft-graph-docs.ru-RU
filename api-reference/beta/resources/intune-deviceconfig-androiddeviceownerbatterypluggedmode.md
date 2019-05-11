@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Андроиддевицеовнербаттериплугжедмоде
 description: Допустимые значения владельца устройств Android для состояний подключаемых режимов питания устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ceaa8ee43139ab662c0d30a7b0b1d0d917dc1759
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d12dd2fcaa566892a5accb2c095ac19483fa69f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556393"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949187"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>тип перечисления Андроиддевицеовнербаттериплугжедмоде
 
@@ -23,10 +23,9 @@ ms.locfileid: "32556393"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|ac|1 |Источник питания является подзарядом сети ПЕРЕМЕНного тока.|
-|Порт|2 |Источник электроСети — USB-порт.|
-|инфракрас|3 |Источник энергоПотребления беспроводной сети.|
-
+|ac|1,1|Источник питания является подзарядом сети ПЕРЕМЕНного тока.|
+|Порт|2|Источник электросети — USB-порт.|
+|инфракрас|4|Источник энергопотребления беспроводной сети.|
 
 
 

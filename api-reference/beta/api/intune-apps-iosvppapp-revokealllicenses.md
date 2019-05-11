@@ -1,15 +1,15 @@
 ---
 title: Действие revokeAllLicenses
 description: Отозвать все назначенные лицензии на Android для данного приложения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 708065bb16fa5435aada4e888d95f489df4924a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 286c9966b143ed65609cbbfd13d742c4594e6465
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495577"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937395"
 ---
 # <a name="revokealllicenses-action"></a>Действие revokeAllLicenses
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -79,7 +79,6 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

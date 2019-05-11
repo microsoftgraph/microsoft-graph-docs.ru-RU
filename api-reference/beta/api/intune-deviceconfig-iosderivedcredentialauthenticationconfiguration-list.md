@@ -1,30 +1,30 @@
 ---
-title: Удаление объекта iosLobApp
-description: Удаляет объект iosLobApp.
+title: Список Иосдериведкредентиалаусентикатионконфигуратионс
+description: Список свойств и связей объектов Иосдериведкредентиалаусентикатионконфигуратион.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28cd55a02781ef84372966e6596571eb31567fe1
+ms.openlocfilehash: 5541e3bf7b6ba5ff6dd10ba6e00e1fcc44675179
 ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936989"
+ms.locfileid: "33957086"
 ---
-# <a name="delete-ioslobapp"></a>Удаление объекта iosLobApp
+# <a name="list-iosderivedcredentialauthenticationconfigurations"></a>Список Иосдериведкредентиалаусентикатионконфигуратионс
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [iosLobApp](../resources/intune-apps-ioslobapp.md).
+Список свойств и связей объектов [иосдериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -34,9 +34,8 @@ ms.locfileid: "33936989"
 }
 -->
 ``` http
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,21 +47,41 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [иосдериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 526
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.iosDerivedCredentialAuthenticationConfiguration",
+      "id": "01713f58-3f58-0171-583f-7101583f7101",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
+      "displayName": "Display Name value",
+      "version": 7
+    }
+  ]
+}
 ```
 
 

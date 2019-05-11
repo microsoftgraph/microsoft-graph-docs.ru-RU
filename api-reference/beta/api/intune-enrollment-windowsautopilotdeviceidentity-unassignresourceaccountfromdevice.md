@@ -1,15 +1,15 @@
 ---
 title: Действие unassignResourceAccountFromDevice
 description: Отменяет назначение учетной записи ресурса для автопилотного устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cb9919d7541a6f6283103d4be2ebb4391aa9397
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe71d4112a7b4a764ee466f50ca6598245a5b66c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532571"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908160"
 ---
 # <a name="unassignresourceaccountfromdevice-action"></a>Действие unassignResourceAccountFromDevice
 
@@ -63,7 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

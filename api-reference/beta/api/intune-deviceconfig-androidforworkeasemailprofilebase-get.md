@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидфорворкеасемаилпрофилебасе
 description: Чтение свойств и связей объекта Андроидфорворкеасемаилпрофилебасе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07709b4414fc04270aab9b11fe7f28e252bb5f09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d84ee2cef84623b5f2f26ce4868c211a98baca2c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479332"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933545"
 ---
 # <a name="get-androidforworkeasemailprofilebase"></a>Получение Андроидфорворкеасемаилпрофилебасе
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,7 +91,6 @@ Content-Length: 714
   }
 }
 ```
-
 
 
 

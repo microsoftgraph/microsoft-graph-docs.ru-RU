@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовсаппксаппассигнментсеттингс
 description: Содержит свойства, используемые при назначении мобильного приложения Windows AppX группе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f15af8bf60dae2b40473eb23a1093f9e73bda7b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bba16c9a98bbdbf584cd7a0cba1c4634bf90b31
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557861"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949873"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Тип ресурса Виндовсаппксаппассигнментсеттингс
 
@@ -27,7 +27,7 @@ ms.locfileid: "32557861"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст выполнения устройства для мобильного приложения Windows AppX.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32557861"
   "useDeviceContext": true
 }
 ```
-
 
 
 

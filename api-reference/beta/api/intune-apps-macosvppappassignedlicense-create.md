@@ -1,15 +1,15 @@
 ---
 title: Создание Макосвппаппассигнедлиценсе
 description: Создание нового объекта Макосвппаппассигнедлиценсе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b21b002e7cae3f3b52967cb320caa43e67c10a9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9738b39b3d30c5c246fdfd77788187a7dc46a47a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495325"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935827"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Создание Макосвппаппассигнедлиценсе
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Макосвппаппассигнедлиценсе в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Макосвппаппассигнедлиценсе.
@@ -51,10 +51,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Усеремаиладдресс|String|Адрес электронной почты пользователя.|
+|Усеремаиладдресс|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Список Термсандкондитионсграупассигнментс
 description: Список свойств и связей объектов Термсандкондитионсграупассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f57dabab20ac88d819abb58b857e416b0fa65a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a65616d8b18f057d1017369ab5bb3b2e0f7346ef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482251"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933734"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Список Термсандкондитионсграупассигнментс
 
@@ -43,7 +43,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -74,7 +74,6 @@ Content-Length: 214
   ]
 }
 ```
-
 
 
 

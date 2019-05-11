@@ -1,15 +1,15 @@
 ---
 title: Получение Ентерприсекодесигнингцертификате
 description: Чтение свойств и связей объекта Ентерприсекодесигнингцертификате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf1496dad2518d01aa5560004abe44c01d4fe8b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9571141b968e5fa93962c4a935c21065fb3c0dac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496487"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937031"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>Получение Ентерприсекодесигнингцертификате
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSignin
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,7 +82,6 @@ Content-Length: 478
   }
 }
 ```
-
 
 
 

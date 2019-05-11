@@ -1,15 +1,15 @@
 ---
 title: Получение managedDeviceMobileAppConfigurationDeviceStatus
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationDeviceStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9cfc8994eac177b1c2e2ac17f9ec8ec24407243
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d789926be0e74a2a93309184bd760bd3e111b54
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32493330"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935638"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>Получение managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -83,7 +83,6 @@ Content-Length: 551
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов managedDeviceMobileAppConfigurationAssignment
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb49dd3bb5830ce8e161d68b3c5a5add33cd219a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2752dde5d4ead8e45dff751b2d1f114eca37238c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32494954"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935673"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>Перечисление объектов managedDeviceMobileAppConfigurationAssignment
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -76,7 +76,6 @@ Content-Length: 287
   ]
 }
 ```
-
 
 
 

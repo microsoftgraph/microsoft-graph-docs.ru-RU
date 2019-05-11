@@ -1,15 +1,15 @@
 ---
 title: Обновление Манажементкондитионстатемент
 description: Обновление свойств объекта Манажементкондитионстатемент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e7ddc6a41ac7753ca827f6849ecd7964e86db6f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b3d050467b69d716bf3c2ce131c22e511575dd70
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532018"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905338"
 ---
 # <a name="update-managementconditionstatement"></a>Обновление Манажементкондитионстатемент
 
@@ -52,18 +52,18 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
-|displayName|String|Имя, определенное администратором оператора условия управления.|
+|displayName|Строка|Имя, определенное администратором оператора условия управления.|
 |description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения оператора условия управления. Обновленная сторона службы.|
 |выражение|[Манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
 |eTag|String|Тег ETag оператора условия управления. Обновленная сторона службы.|
 |Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого оператора условия управления.
-Это рассчитывается на основе условий управления, связанных с оператором условия управления, и поиском пересечения соответствующих платформ. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
+Это рассчитывается на основе условий управления, связанных с оператором условия управления, и поиском пересечения соответствующих платформ. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -112,7 +112,6 @@ Content-Length: 491
   ]
 }
 ```
-
 
 
 

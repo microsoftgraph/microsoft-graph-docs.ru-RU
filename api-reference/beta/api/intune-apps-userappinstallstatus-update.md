@@ -1,15 +1,15 @@
 ---
 title: Обновление Усераппинсталлстатус
 description: Обновление свойств объекта Усераппинсталлстатус.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb999de52c39bc3e0a0e97c4e80d3043bb700165
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9f8cbcec45e1575c2bde8832c893c41a0eac0010
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488822"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934892"
 ---
 # <a name="update-userappinstallstatus"></a>Обновление Усераппинсталлстатус
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md).
@@ -98,7 +98,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

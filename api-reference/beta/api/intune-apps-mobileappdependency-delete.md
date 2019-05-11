@@ -1,15 +1,15 @@
 ---
 title: Удаление Мобилеаппдепенденци
 description: Удаляет объект Мобилеаппдепенденци.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4510cb32030f2f107f3523193cee6dbb11c23e1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2b837b555a08ef865a87bb4cc0380f0b6ced607e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488927"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935176"
 ---
 # <a name="delete-mobileappdependency"></a>Удаление Мобилеаппдепенденци
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRel
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

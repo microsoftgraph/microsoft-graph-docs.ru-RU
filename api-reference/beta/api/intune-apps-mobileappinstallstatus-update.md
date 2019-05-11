@@ -1,15 +1,15 @@
 ---
 title: Обновление mobileAppInstallStatus
 description: Обновление свойств объекта mobileAppInstallStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2cb7b3acedd1e036972380002eaf8795b1a35ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a08232bcfb6dc8588cb670e70d6e36d7fea475d3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489067"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935112"
 ---
 # <a name="update-mobileappinstallstatus"></a>Обновление mobileAppInstallStatus
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).
@@ -52,18 +52,18 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceName|String|Имя устройства|
-|deviceId|String|ИДЕНТИФИКАТОР устройства|
+|deviceName|Строка|Имя устройства|
+|deviceId|Строка|ИДЕНТИФИКАТОР устройства|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации|
 |Mobileappinstallstatusvalue (|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |Инсталлстатедетаил|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Сведения о состоянии установки приложения. Возможные значения: `noAdditionalDetails`, `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet`,,,,,,,,,,,,,,,,,,,,, `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` , `processorArchitectureNotApplicable`.|
 |errorCode|Int32|Код ошибки для установки или удаления сбоев.|
-|osVersion|String|Версия ОС|
-|osDescription|String|Описание ОС|
+|osVersion|Строка|Версия ОС|
+|osDescription|Строка|Описание ОС|
 |userName|String|Имя пользователя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|Дисплайверсион|String|Доступная для человека версия приложения|
+|Дисплайверсион|Строка|Доступная для человека версия приложения|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 
