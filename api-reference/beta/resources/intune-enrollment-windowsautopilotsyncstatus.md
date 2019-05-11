@@ -1,32 +1,31 @@
 ---
 title: тип перечисления Виндовсаутопилотсинкстатус
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fa6a896644e83be4acd55755baad9b9494ffee3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9579f087324362db640ac4ae60bd6a78ae82cb0a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547041"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941420"
 ---
-# <a name="windowsautopilotsyncstatus-enum-type"></a><span data-ttu-id="aa3f0-103">тип перечисления Виндовсаутопилотсинкстатус</span><span class="sxs-lookup"><span data-stu-id="aa3f0-103">windowsAutopilotSyncStatus enum type</span></span>
+# <a name="windowsautopilotsyncstatus-enum-type"></a><span data-ttu-id="5d9fc-103">тип перечисления Виндовсаутопилотсинкстатус</span><span class="sxs-lookup"><span data-stu-id="5d9fc-103">windowsAutopilotSyncStatus enum type</span></span>
 
-> <span data-ttu-id="aa3f0-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aa3f0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5d9fc-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5d9fc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="aa3f0-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="aa3f0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5d9fc-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5d9fc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="aa3f0-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="aa3f0-106">Not yet documented</span></span>
+<span data-ttu-id="5d9fc-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="5d9fc-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="aa3f0-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="aa3f0-107">Members</span></span>
-|<span data-ttu-id="aa3f0-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="aa3f0-108">Member</span></span>|<span data-ttu-id="aa3f0-109">Значение</span><span class="sxs-lookup"><span data-stu-id="aa3f0-109">Value</span></span>|<span data-ttu-id="aa3f0-110">Описание</span><span class="sxs-lookup"><span data-stu-id="aa3f0-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="5d9fc-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="5d9fc-107">Members</span></span>
+|<span data-ttu-id="5d9fc-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="5d9fc-108">Member</span></span>|<span data-ttu-id="5d9fc-109">Значение</span><span class="sxs-lookup"><span data-stu-id="5d9fc-109">Value</span></span>|<span data-ttu-id="5d9fc-110">Описание</span><span class="sxs-lookup"><span data-stu-id="5d9fc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aa3f0-111">unknown</span><span class="sxs-lookup"><span data-stu-id="aa3f0-111">unknown</span></span>|<span data-ttu-id="aa3f0-112">нуль</span><span class="sxs-lookup"><span data-stu-id="aa3f0-112">0</span></span>|<span data-ttu-id="aa3f0-113">НеИзвестное состояние синхронизации</span><span class="sxs-lookup"><span data-stu-id="aa3f0-113">Unknown sync status</span></span>|
-|<span data-ttu-id="aa3f0-114">inProgress</span><span class="sxs-lookup"><span data-stu-id="aa3f0-114">inProgress</span></span>|<span data-ttu-id="aa3f0-115">1 </span><span class="sxs-lookup"><span data-stu-id="aa3f0-115">1</span></span>|<span data-ttu-id="aa3f0-116">Выполняется синхронизация</span><span class="sxs-lookup"><span data-stu-id="aa3f0-116">Sync is in progress</span></span>|
-|<span data-ttu-id="aa3f0-117">готовы</span><span class="sxs-lookup"><span data-stu-id="aa3f0-117">completed</span></span>|<span data-ttu-id="aa3f0-118">2 </span><span class="sxs-lookup"><span data-stu-id="aa3f0-118">2</span></span>|<span data-ttu-id="aa3f0-119">Синхронизация завершена.</span><span class="sxs-lookup"><span data-stu-id="aa3f0-119">Sync completed.</span></span>|
-|<span data-ttu-id="aa3f0-120">сбоев</span><span class="sxs-lookup"><span data-stu-id="aa3f0-120">failed</span></span>|<span data-ttu-id="aa3f0-121">3 </span><span class="sxs-lookup"><span data-stu-id="aa3f0-121">3</span></span>|<span data-ttu-id="aa3f0-122">Ошибка синхронизации.</span><span class="sxs-lookup"><span data-stu-id="aa3f0-122">Sync failed.</span></span>|
-
+|<span data-ttu-id="5d9fc-111">unknown</span><span class="sxs-lookup"><span data-stu-id="5d9fc-111">unknown</span></span>|<span data-ttu-id="5d9fc-112">нуль</span><span class="sxs-lookup"><span data-stu-id="5d9fc-112">0</span></span>|<span data-ttu-id="5d9fc-113">Неизвестное состояние синхронизации</span><span class="sxs-lookup"><span data-stu-id="5d9fc-113">Unknown sync status</span></span>|
+|<span data-ttu-id="5d9fc-114">inProgress</span><span class="sxs-lookup"><span data-stu-id="5d9fc-114">inProgress</span></span>|<span data-ttu-id="5d9fc-115">1,1</span><span class="sxs-lookup"><span data-stu-id="5d9fc-115">1</span></span>|<span data-ttu-id="5d9fc-116">Выполняется синхронизация</span><span class="sxs-lookup"><span data-stu-id="5d9fc-116">Sync is in progress</span></span>|
+|<span data-ttu-id="5d9fc-117">готовы</span><span class="sxs-lookup"><span data-stu-id="5d9fc-117">completed</span></span>|<span data-ttu-id="5d9fc-118">2</span><span class="sxs-lookup"><span data-stu-id="5d9fc-118">2</span></span>|<span data-ttu-id="5d9fc-119">Синхронизация завершена.</span><span class="sxs-lookup"><span data-stu-id="5d9fc-119">Sync completed.</span></span>|
+|<span data-ttu-id="5d9fc-120">сбоев</span><span class="sxs-lookup"><span data-stu-id="5d9fc-120">failed</span></span>|<span data-ttu-id="5d9fc-121">4</span><span class="sxs-lookup"><span data-stu-id="5d9fc-121">3</span></span>|<span data-ttu-id="5d9fc-122">Ошибка синхронизации.</span><span class="sxs-lookup"><span data-stu-id="5d9fc-122">Sync failed.</span></span>|
 
 
 
