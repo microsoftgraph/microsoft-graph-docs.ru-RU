@@ -1,40 +1,40 @@
 ---
 title: Тип ресурса Мобилеапптраублешутингапптаржесистори
-description: Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
-author: tfitzmac
+description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a19399788462b6dc7cae995971ddb443051b6959
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6fd3ba328dac666feac9f5a87dd8cfebe7627f43
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570710"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939749"
 ---
-# <a name="mobileapptroubleshootingapptargethistory-resource-type"></a><span data-ttu-id="fa167-103">Тип ресурса Мобилеапптраублешутингапптаржесистори</span><span class="sxs-lookup"><span data-stu-id="fa167-103">mobileAppTroubleshootingAppTargetHistory resource type</span></span>
+# <a name="mobileapptroubleshootingapptargethistory-resource-type"></a><span data-ttu-id="b8b13-103">Тип ресурса Мобилеапптраублешутингапптаржесистори</span><span class="sxs-lookup"><span data-stu-id="b8b13-103">mobileAppTroubleshootingAppTargetHistory resource type</span></span>
 
-> <span data-ttu-id="fa167-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa167-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="b8b13-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b8b13-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fa167-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fa167-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b8b13-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b8b13-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fa167-106">Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.</span><span class="sxs-lookup"><span data-stu-id="fa167-106">History Item contained in the Mobile App Troubleshooting Event.</span></span>
+<span data-ttu-id="b8b13-106">Элемент History, содержащийся в событии устранения неполадок мобильного приложения.</span><span class="sxs-lookup"><span data-stu-id="b8b13-106">History Item contained in the Mobile App Troubleshooting Event.</span></span>
 
 
-<span data-ttu-id="fa167-107">НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="fa167-107">Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>
+<span data-ttu-id="b8b13-107">Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="b8b13-107">Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fa167-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="fa167-108">Properties</span></span>
-|<span data-ttu-id="fa167-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="fa167-109">Property</span></span>|<span data-ttu-id="fa167-110">Тип</span><span class="sxs-lookup"><span data-stu-id="fa167-110">Type</span></span>|<span data-ttu-id="fa167-111">Описание</span><span class="sxs-lookup"><span data-stu-id="fa167-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b8b13-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="b8b13-108">Properties</span></span>
+|<span data-ttu-id="b8b13-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="b8b13-109">Property</span></span>|<span data-ttu-id="b8b13-110">Тип</span><span class="sxs-lookup"><span data-stu-id="b8b13-110">Type</span></span>|<span data-ttu-id="b8b13-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b8b13-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fa167-112">Оккурренцедатетиме</span><span class="sxs-lookup"><span data-stu-id="fa167-112">occurrenceDateTime</span></span>|<span data-ttu-id="fa167-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa167-113">DateTimeOffset</span></span>|<span data-ttu-id="fa167-114">Время возникновения элемента журнала.</span><span class="sxs-lookup"><span data-stu-id="fa167-114">Time when the history item occurred.</span></span> <span data-ttu-id="fa167-115">НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="fa167-115">Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>|
-|<span data-ttu-id="fa167-116">Секуритиграупид</span><span class="sxs-lookup"><span data-stu-id="fa167-116">securityGroupId</span></span>|<span data-ttu-id="fa167-117">String</span><span class="sxs-lookup"><span data-stu-id="fa167-117">String</span></span>|<span data-ttu-id="fa167-118">Идентификатор группы безопасности AAD, к которой назначена эта группа.</span><span class="sxs-lookup"><span data-stu-id="fa167-118">AAD security group id to which it was targeted.</span></span>|
-|<span data-ttu-id="fa167-119">Рунстате</span><span class="sxs-lookup"><span data-stu-id="fa167-119">runState</span></span>|[<span data-ttu-id="fa167-120">Рунстате</span><span class="sxs-lookup"><span data-stu-id="fa167-120">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="fa167-121">Состояние элемента.</span><span class="sxs-lookup"><span data-stu-id="fa167-121">Status of the item.</span></span> <span data-ttu-id="fa167-122">Возможные значения: `unknown`, `success`, `fail`.</span><span class="sxs-lookup"><span data-stu-id="fa167-122">Possible values are: `unknown`, `success`, `fail`.</span></span>|
-|<span data-ttu-id="fa167-123">errorCode</span><span class="sxs-lookup"><span data-stu-id="fa167-123">errorCode</span></span>|<span data-ttu-id="fa167-124">String</span><span class="sxs-lookup"><span data-stu-id="fa167-124">String</span></span>|<span data-ttu-id="fa167-125">Код ошибки для сбоя, пустой при отсутствии ошибки.</span><span class="sxs-lookup"><span data-stu-id="fa167-125">Error code for the failure, empty if no failure.</span></span>|
+|<span data-ttu-id="b8b13-112">Оккурренцедатетиме</span><span class="sxs-lookup"><span data-stu-id="b8b13-112">occurrenceDateTime</span></span>|<span data-ttu-id="b8b13-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b8b13-113">DateTimeOffset</span></span>|<span data-ttu-id="b8b13-114">Время возникновения элемента журнала.</span><span class="sxs-lookup"><span data-stu-id="b8b13-114">Time when the history item occurred.</span></span> <span data-ttu-id="b8b13-115">Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="b8b13-115">Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)</span></span>|
+|<span data-ttu-id="b8b13-116">Секуритиграупид</span><span class="sxs-lookup"><span data-stu-id="b8b13-116">securityGroupId</span></span>|<span data-ttu-id="b8b13-117">Строка</span><span class="sxs-lookup"><span data-stu-id="b8b13-117">String</span></span>|<span data-ttu-id="b8b13-118">Идентификатор группы безопасности AAD, к которой назначена эта группа.</span><span class="sxs-lookup"><span data-stu-id="b8b13-118">AAD security group id to which it was targeted.</span></span>|
+|<span data-ttu-id="b8b13-119">Рунстате</span><span class="sxs-lookup"><span data-stu-id="b8b13-119">runState</span></span>|[<span data-ttu-id="b8b13-120">Рунстате</span><span class="sxs-lookup"><span data-stu-id="b8b13-120">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="b8b13-121">Состояние элемента.</span><span class="sxs-lookup"><span data-stu-id="b8b13-121">Status of the item.</span></span> <span data-ttu-id="b8b13-122">Возможные значения: `unknown`, `success`, `fail`.</span><span class="sxs-lookup"><span data-stu-id="b8b13-122">Possible values are: `unknown`, `success`, `fail`.</span></span>|
+|<span data-ttu-id="b8b13-123">errorCode</span><span class="sxs-lookup"><span data-stu-id="b8b13-123">errorCode</span></span>|<span data-ttu-id="b8b13-124">String</span><span class="sxs-lookup"><span data-stu-id="b8b13-124">String</span></span>|<span data-ttu-id="b8b13-125">Код ошибки для сбоя, пустой при отсутствии ошибки.</span><span class="sxs-lookup"><span data-stu-id="b8b13-125">Error code for the failure, empty if no failure.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="fa167-126">Отношения</span><span class="sxs-lookup"><span data-stu-id="fa167-126">Relationships</span></span>
-<span data-ttu-id="fa167-127">Нет</span><span class="sxs-lookup"><span data-stu-id="fa167-127">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b8b13-126">Связи</span><span class="sxs-lookup"><span data-stu-id="b8b13-126">Relationships</span></span>
+<span data-ttu-id="b8b13-127">Нет</span><span class="sxs-lookup"><span data-stu-id="b8b13-127">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="fa167-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fa167-128">JSON Representation</span></span>
-<span data-ttu-id="fa167-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fa167-129">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b8b13-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b8b13-128">JSON Representation</span></span>
+<span data-ttu-id="b8b13-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b8b13-129">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingAppTargetHistory"
@@ -49,6 +49,7 @@ ms.locfileid: "32570710"
   "errorCode": "String"
 }
 ```
+
 
 
 
