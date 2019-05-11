@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе
 description: Возможные значения для Локалсекуритйоптионссмарткардремовалбехавиортипе
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 785742f997df931cecb8144c127adf98ee74e58e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 65a3ad1828ec84dde1c9f5ab0fa8732862bc270c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460501"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946201"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе
 
@@ -26,7 +26,6 @@ ms.locfileid: "32460501"
 |noAction|1,1|Блокировка рабочей станции|
 |Форцелогофф|2|Принудительный выход|
 |Дисконнектремотедесктопсессион|4|Отключение при удаленном сеансе служб удаленных рабочих столов|
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Деливерйоптимизатионмакскачесизеперцентаже
 description: 'Оптимизация доставки: максимальный размер кэша типы в процентах.'
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f48b85c269da4204b985a19701b9d40a50358e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c010c66aeb1dc9a8830927cf9ddb031833ba304
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461208"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947248"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионмакскачесизеперцентаже
 
@@ -20,14 +20,14 @@ ms.locfileid: "32461208"
 Оптимизация доставки: максимальный размер кэша типы в процентах.
 
 
-НаСледуется от [деливерйоптимизатионмакскачесизе](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
+Наследуется от [деливерйоптимизатионмакскачесизе](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Максимумкачесизеперцентаже|Int32|Задает максимальный размер кэша, который может использовать оптимизация доставки, в процентах от размера диска (1-100). Допустимые значения — от 1 до 100|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32461208"
   "maximumCacheSizePercentage": 1024
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Локалсекуритйоптионсстандардусерелеватионпромптбехавиортипе
 description: Возможные значения для Локалсекуритйоптионсстандардусерелеватионпромптбехавиор
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8aca3e16b52acbd8655ece4db0098c3aafafca17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b83d4f5cb19b9135c801c1607027e89d2473a726
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460515"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946142"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионсстандардусерелеватионпромптбехавиортипе
 
@@ -26,7 +26,6 @@ ms.locfileid: "32460515"
 |Аутоматикаллиденелеватионрекуестс|1,1|Автоматическое отклонение запросов на повышение прав|
 |Промптфоркредентиалсонсесекуредесктоп|2|Запрос учетных данных на безопасном рабочем столе|
 |Промптфоркредентиалс|4|Запрос учетных данных|
-
 
 
 

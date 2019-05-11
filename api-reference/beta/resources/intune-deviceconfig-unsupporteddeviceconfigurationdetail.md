@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Унсуппортеддевицеконфигуратиондетаил
 description: Описание причин неподдерживаемого объекта.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 660f73774025a065565fb72ca74c9674a4159fc0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dfb4a25325826b20f77d75dc9d545ee64d12f254
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548693"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944651"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>Тип ресурса Унсуппортеддевицеконфигуратиондетаил
 
@@ -23,9 +23,9 @@ ms.locfileid: "32548693"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |message|String|Сообщение С объяснением, почему объект не поддерживается.|
-|propertyName|String|Если сообщение связано с определенным свойством в исходной сущности, то имя этого свойства.|
+|propertyName|Строка|Если сообщение связано с определенным свойством в исходной сущности, то имя этого свойства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32548693"
   "propertyName": "String"
 }
 ```
-
 
 
 

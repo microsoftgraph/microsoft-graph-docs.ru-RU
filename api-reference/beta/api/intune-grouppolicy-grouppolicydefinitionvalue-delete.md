@@ -1,15 +1,15 @@
 ---
 title: Удаление Граупполицидефинитионвалуе
 description: Удаляет объект Граупполицидефинитионвалуе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09b1a22933e48318dfa19342bbc0d3a51cde04d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 704e48c083874ca6fad85f2ad0226ba67c2b607d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531434"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905065"
 ---
 # <a name="delete-grouppolicydefinitionvalue"></a>Удаление Граупполицидефинитионвалуе
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

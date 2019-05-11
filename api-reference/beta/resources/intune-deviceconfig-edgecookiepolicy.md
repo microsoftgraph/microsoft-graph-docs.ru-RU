@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Еджекукиеполици
 description: Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1df7873f43cae176a7ffa715fd1e8b2da47a614f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba9dba88642bab3afc2bd44b70e035004a7aa58d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567118"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946912"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>тип перечисления Еджекукиеполици
 
@@ -23,10 +23,9 @@ ms.locfileid: "32567118"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|разрешить|1 |Разрешить.|
-|Блокксирдпарти|2 |Блокировать только сторонние файлы cookie.|
-|Блоккалл|3 |Блокировать все файлы cookie.|
-
+|разрешить|1,1|Разрешить.|
+|Блокксирдпарти|2|Блокировать только сторонние файлы cookie.|
+|Блоккалл|4|Блокировать все файлы cookie.|
 
 
 

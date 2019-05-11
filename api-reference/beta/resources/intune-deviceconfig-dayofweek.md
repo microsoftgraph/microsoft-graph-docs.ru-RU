@@ -1,15 +1,15 @@
 ---
 title: тип перечисления dayOfWeek
 description: Возможные значения для дня недели
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd630bcdd5230abf1e22ad4ccf820551b89a36f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c50c392b5db0656c8953948507e88d89a22ff28e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549571"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947388"
 ---
 # <a name="dayofweek-enum-type"></a>тип перечисления dayOfWeek
 
@@ -23,13 +23,12 @@ ms.locfileid: "32549571"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |воскресеньям|нуль|Воскресеньям.|
-|Вторник|1 |Вторник.|
-|во|2 |Во.|
-|Четверг|3 |Четверг.|
-|Пятница|4 |Пятница.|
-|пятницам|5 |Пятницам.|
+|Вторник|1,1|Вторник.|
+|во|2|Во.|
+|Четверг|4|Четверг.|
+|Пятница|SP4|Пятница.|
+|пятницам|17:00|Пятницам.|
 |субботу|6 |Субботу.|
-
 
 
 

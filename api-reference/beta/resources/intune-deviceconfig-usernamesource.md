@@ -1,15 +1,15 @@
 ---
 title: тип перечисления usernameSource
 description: Источник имени пользователя.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53eae35e947b958c21df63ece3156da4107e8d0b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a058b94a3cbea82690eadbcf3fc9f0e159412dc5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561973"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944637"
 ---
 # <a name="usernamesource-enum-type"></a>тип перечисления usernameSource
 
@@ -23,9 +23,8 @@ ms.locfileid: "32561973"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userPrincipalName|нуль|Имя участника пользователя.|
-|primarySmtpAddress|1 |Основной SMTP-адрес.|
-|samAccountName|2 |Имя учетной записи SAM пользователя.|
-
+|primarySmtpAddress|1,1|Основной SMTP-адрес.|
+|samAccountName|2|Имя учетной записи SAM пользователя.|
 
 
 

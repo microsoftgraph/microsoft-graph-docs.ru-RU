@@ -1,15 +1,15 @@
 ---
 title: Обновление Виндовсманажементапфеалссуммари
 description: Обновление свойств объекта Виндовсманажементапфеалссуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 008b49500a6b323f1b440488022fd836e25b5ac5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 323e8fdf611b25676f2b1337829a162eedb83f58
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534390"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909101"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Обновление Виндовсманажементапфеалссуммари
 
@@ -50,14 +50,14 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта сводки работоспособности приложения управления Windows.|
+|id|Строка|Ключ объекта сводки работоспособности приложения управления Windows.|
 |Хеалсидевицекаунт|Int32|Работоспособное число устройств.|
 |Унхеалсидевицекаунт|Int32|Неработоспособное число устройств.|
-|unknownDeviceCount|Int32|Количество неИзвестных устройств.|
+|unknownDeviceCount|Int32|Количество неизвестных устройств.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 210
   "unknownDeviceCount": 2
 }
 ```
-
 
 
 

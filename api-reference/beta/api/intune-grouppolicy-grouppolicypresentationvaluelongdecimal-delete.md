@@ -1,15 +1,15 @@
 ---
 title: Удаление ГраупполиципресентатионвалуелонгдеЦимал
 description: Удаляет объект ГраупполиципресентатионвалуелонгдеЦимал.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fef3f4aa16438ee2c9157f02befa340d7f56e4d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 718b7999231a27a875c36eea3507d927cf56f80c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530671"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904267"
 ---
 # <a name="delete-grouppolicypresentationvaluelongdecimal"></a>Удаление ГраупполиципресентатионвалуелонгдеЦимал
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

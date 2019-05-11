@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Локалсекуритйоптионсинформатиондисплайедонлоккскринтипе
 description: Возможные значения для Локалсекуритйоптионсинформатиондисплайедонлоккскрин
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd1946843efa7f5967014abd5b4e7a230fc39826
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b1b13110525e4d53244ae94d8f7323744defdaf6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572558"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946079"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>тип перечисления Локалсекуритйоптионсинформатиондисплайедонлоккскринтипе
 
@@ -23,10 +23,9 @@ ms.locfileid: "32572558"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|«|1 |Отображаемое имя пользователя, имена доменов и пользователей|
-|Администраторсандповерусерс|2 |Только отображаемое имя пользователя|
-|Администраторсандинтерактивеусерс|3 |Не отображать сведения о пользователе|
-
+|«|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
+|Администраторсандповерусерс|2|Только отображаемое имя пользователя|
+|Администраторсандинтерактивеусерс|4|Не отображать сведения о пользователе|
 
 
 

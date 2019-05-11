@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Енкриптионрепортполицидетаилс
 description: Сведения о политике для отчета о шифровании
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c9903b54483fc6f77cd183abee0e54b10acf9cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ddca213c3de3c004a19ebc3877aed1542604933e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556300"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946646"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
 
@@ -22,10 +22,10 @@ ms.locfileid: "32556300"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Полициид|String|Идентификатор политики для отчета о шифровании|
-|policyName|String|Имя политики для отчета о шифровании|
+|Полициид|Строка|Идентификатор политики для отчета о шифровании|
+|policyName|Строка|Имя политики для отчета о шифровании|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32556300"
   "policyName": "String"
 }
 ```
-
 
 
 

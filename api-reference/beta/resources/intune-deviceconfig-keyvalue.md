@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Ключзначение
 description: Определение значения ключа.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 317736fd016ca457a7fad9536ce71f00b6954b3b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 592f3ff070ab7440d5c16d5380b556993915e6ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460508"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946127"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
@@ -22,10 +22,10 @@ ms.locfileid: "32460508"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ключа|String|Ключ.|
+|ключа|Строка|Ключ.|
 |value|String|Значение|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32460508"
   "value": "String"
 }
 ```
-
 
 
 

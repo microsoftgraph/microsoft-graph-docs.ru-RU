@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Макосфиреваллаппликатион
 description: Представляет приложение в списке приложений брандмауэра macOS
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45d8742a888eb492b71bf9829b9621bde9608ef5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9eb1f77bdadf62ddf6ac5362653ddb7d535f8c85
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460480"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946212"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Тип ресурса Макосфиреваллаппликатион
 
@@ -25,7 +25,7 @@ ms.locfileid: "32460480"
 |bundleId|String|Свойства bundleid приложения.|
 |Алловсинкомингконнектионс|Логический|Разрешены ли входящие подключения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32460480"
   "allowsIncomingConnections": true
 }
 ```
-
 
 
 

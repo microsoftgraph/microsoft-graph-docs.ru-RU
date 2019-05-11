@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Кэйсторажепровидероптион
 description: Параметры импорта поставщика хранилища ключей (KSP).
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b422443abcdb72cd76399ae9f2e0fea59bb6f34f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 77695c9deab823db79a3f8a98df16ff140d87248
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460424"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946268"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>тип перечисления Кэйсторажепровидероптион
 
@@ -26,7 +26,6 @@ ms.locfileid: "32460424"
 |Усетпмкспосервисефаил|1,1|Импорт в KSP доверенного ПЛАТФОРМЕНного модуля (TPM), если он присутствует, в противном случае произойдет ошибка.|
 |Усепасспортфорворккспосервисефаил|2|Импорт в паспорт для Works KSP, если он доступен, в противном случае произойдет ошибка.|
 |Усесофтварексп|4|Импорт в KSP программного обеспечения.|
-
 
 
 

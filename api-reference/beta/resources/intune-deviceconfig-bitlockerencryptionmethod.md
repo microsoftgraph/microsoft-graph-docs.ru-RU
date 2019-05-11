@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Битлоккеренкриптионмесод
 description: Типы Битлоккеренкриптионмесод
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71790c6d4d67ebfdfe7da0c7726cf30b908433c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 247354a9d933985f25b18756b57640e407e4a172
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549333"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947528"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>тип перечисления Битлоккеренкриптионмесод
 
@@ -22,11 +22,10 @@ ms.locfileid: "32549333"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|aesCbc128|3 |AES — CBC 128 — бит.|
-|aesCbc256|4 |AES — CBC 256 — бит.|
+|aesCbc128|4|AES — CBC 128 — бит.|
+|aesCbc256|SP4|AES — CBC 256 — бит.|
 |xtsAes128|6 |КСТС — AES 128 — бит.|
 |xtsAes256|7 |КСТС — AES 256 — бит.|
-
 
 
 

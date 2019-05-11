@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Иоснотификатионалерттипе
 description: Тип оповещения о параметрах уведомлений.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52812ab1761687062a1051e4d10eb9390e07fa27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 129cbc5844b3531922ea54e7cb9f28ed987a9077
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521497"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946415"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>тип перечисления Иоснотификатионалерттипе
 
@@ -23,10 +23,9 @@ ms.locfileid: "32521497"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|заголовок|1 |Заголовок.|
-|модаль|2 |Модаль.|
-|Нет|3 |Нет.|
-
+|заголовок|1,1|Заголовок.|
+|модаль|2|Модаль.|
+|none|4|Нет.|
 
 
 

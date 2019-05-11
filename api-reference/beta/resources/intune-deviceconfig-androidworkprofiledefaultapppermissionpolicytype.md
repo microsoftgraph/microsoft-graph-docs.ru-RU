@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
 description: Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91b4571650171e9dcd4febf5078525b3e320b501
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca019291dae065201c8f9466195fe40fc6e3e299
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562449"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947675"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
 
@@ -23,10 +23,9 @@ ms.locfileid: "32562449"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|Подсказка|1 |Появляется.|
-|автоПредоставление|2 |Автоматическое предоставление.|
-|автоЗапрет|3 |Автоматическое отклонение.|
-
+|Подсказка|1,1|Появляется.|
+|автопредоставление|2|Автоматическое предоставление.|
+|автозапрет|4|Автоматическое отклонение.|
 
 
 

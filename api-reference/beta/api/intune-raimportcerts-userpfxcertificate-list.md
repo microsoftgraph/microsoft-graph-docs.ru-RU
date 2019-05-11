@@ -1,15 +1,15 @@
 ---
 title: Список Усерпфксцертификатес
 description: Список свойств и связей объектов Усерпфксцертификате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d885555158c8caf83fee11e51f29ea2433e76797
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aad2b6dbd5a61c2fc18cfe53174da0e747578a4d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527961"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899741"
 ---
 # <a name="list-userpfxcertificates"></a>Список Усерпфксцертификатес
 
@@ -85,6 +85,7 @@ Content-Length: 784
   ]
 }
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Иосваллпапердисплайлокатион
 description: Тип перечисления для отображения спецификатора расположения для фонового рисунка.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d408a37c1f535aeb0e51cc50327f2897803093b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f89c1c8c037a9609c46488955880fabaf3c74fc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460402"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946408"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>тип перечисления Иосваллпапердисплайлокатион
 
@@ -26,7 +26,6 @@ ms.locfileid: "32460402"
 |Событий|1,1|Настроенное изображение рабочего стола отображается на экране блокировки.|
 |Хомескрин|2|Настроенное изображение для фонового рисунка отображается на экране "Домашняя страница" (список значков).|
 |Локкандхомескринс|4|Настроенное изображение рабочего стола отображается на экране блокировки и на начальном экране.|
-
 
 
 

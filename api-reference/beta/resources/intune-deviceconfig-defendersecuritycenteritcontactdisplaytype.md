@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
 description: Возможные значения для Дефендерсекуритицентеритконтактдисплай
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3baa7b83679a94b67fdccc6172eb81c7b616a9b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0dfe0440e8d5d888eda723a08086ef8ab3203f61
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563716"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947311"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
 
@@ -23,10 +23,9 @@ ms.locfileid: "32563716"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Дисплайинаппандиннотификатионс|1 |Отображение в приложении и в уведомлениях|
-|Дисплайонлинапп|2 |Отображение только в приложении|
-|Дисплайонлиннотификатионс|3 |Отображение только в уведомлениях|
-
+|Дисплайинаппандиннотификатионс|1,1|Отображение в приложении и в уведомлениях|
+|Дисплайонлинапп|2|Отображение только в приложении|
+|Дисплайонлиннотификатионс|4|Отображение только в уведомлениях|
 
 
 

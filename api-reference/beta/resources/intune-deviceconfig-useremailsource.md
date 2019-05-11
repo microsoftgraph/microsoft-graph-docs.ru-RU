@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Усеремаилсаурце
 description: Возможные значения для источника имени пользователя или источника электронной почты.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b544d0390b10c3cf7d1f48fcf6684f8128cdf6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48ade13d794c231c5c596c7960d0dee1a5ea805d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548441"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944609"
 ---
 # <a name="useremailsource-enum-type"></a>тип перечисления Усеремаилсаурце
 
@@ -23,8 +23,7 @@ ms.locfileid: "32548441"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userPrincipalName|нуль|Имя участника пользователя.|
-|primarySmtpAddress|1 |Основной SMTP-адрес.|
-
+|primarySmtpAddress|1,1|Основной SMTP-адрес.|
 
 
 

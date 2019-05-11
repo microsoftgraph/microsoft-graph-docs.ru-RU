@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Еджехомебуттонопенсневтаб
 description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает новую страницу вкладки.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e91c7f4347a26d8bd7cf0265a90d6ac1fd42ca6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76951c80da374a69a62c45b2676e3f36794d4bb2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524387"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946758"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>Тип ресурса Еджехомебуттонопенсневтаб
 
@@ -20,13 +20,13 @@ ms.locfileid: "32524387"
 Отображение кнопки "домой"; Нажатие кнопки "домой" загружает новую страницу вкладки.
 
 
-НаСледуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "32524387"
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
-
 
 
 

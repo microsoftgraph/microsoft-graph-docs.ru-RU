@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Енкриптионстате
 description: Состояние шифрования
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35496094cb5b7b70f2c193b20e952b086213b10c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4b14df734616f5a1008aaed8a9c75fcfc6c78571
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556104"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946681"
 ---
 # <a name="encryptionstate-enum-type"></a>тип перечисления Енкриптионстате
 
@@ -23,8 +23,7 @@ ms.locfileid: "32556104"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нотенкриптед|нуль|Не зашифровано|
-|шифрования|1 |Шифрования|
-
+|шифрования|1,1|Шифрования|
 
 
 

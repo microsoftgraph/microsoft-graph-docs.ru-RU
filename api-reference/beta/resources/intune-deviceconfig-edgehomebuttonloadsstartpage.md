@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Еджехомебуттонлоадсстартпаже
 description: Отображение кнопки "домой"; При нажатии кнопки "домой" загружается Начальная страница — это также значение по умолчанию.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc84f8eabbb1db68a48cdc940a522aba18479ff9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1133f2f5bff30c8dc6e2e4a727f831629df26910
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551703"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946765"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>Тип ресурса Еджехомебуттонлоадсстартпаже
 
@@ -20,13 +20,13 @@ ms.locfileid: "32551703"
 Отображение кнопки "домой"; При нажатии кнопки "домой" загружается Начальная страница — это также значение по умолчанию.
 
 
-НаСледуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "32551703"
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
-
 
 
 

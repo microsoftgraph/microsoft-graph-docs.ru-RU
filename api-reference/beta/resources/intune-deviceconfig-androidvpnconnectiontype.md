@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Androidvpnconnectiontype.
 description: Тип VPN-подключения Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 584f2d7ca14c05c87542c500b16af74f4f96b129
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6ff310a6661d9db505d4d12a26636fbc803aac9e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561994"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947871"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>тип перечисления Androidvpnconnectiontype.
 
@@ -23,12 +23,11 @@ ms.locfileid: "32561994"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|Пулсесекуре|1 |Безопасный импульс.|
-|f5EdgeClient|2 |ПоГраничный клиент F5.|
-|Деллсоникваллмобилеконнект|3 |Мобильное подключение Dell Сониквалл.|
-|Чеккпоинткапсулевпн|4 |Проверка поКапсулы VPN.|
-|клиентов|5 |Клиентов|
-
+|Пулсесекуре|1,1|Безопасный импульс.|
+|f5EdgeClient|2|Пограничный клиент F5.|
+|Деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
+|Чеккпоинткапсулевпн|SP4|Проверка покапсулы VPN.|
+|клиентов|17:00|Клиентов|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления subjectAlternativeNameType
 description: Варианты альтернативного имени субъекта.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea055171fade56361562aeac065a67b23154e207
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf093293645dd92cddfc7aede2d49c82116ebf8d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548672"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944658"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>тип перечисления subjectAlternativeNameType
 
@@ -22,12 +22,11 @@ ms.locfileid: "32548672"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет альтернативного имени субъекта.|
-|emailAddress|1 |Адрес электронной почты.|
-|userPrincipalName|2 |Имя участника-пользователя (UPN).|
-|Кустомазуреадаттрибуте|4 |Настраиваемый атрибут Azure AD.|
+|none|нуль|Нет альтернативного имени субъекта.|
+|emailAddress|1,1|Адрес электронной почты.|
+|userPrincipalName|2|Имя участника-пользователя (UPN).|
+|Кустомазуреадаттрибуте|SP4|Настраиваемый атрибут Azure AD.|
 |Домаиннамесервице|8 |Служба доменных имен (DNS).|
-
 
 
 

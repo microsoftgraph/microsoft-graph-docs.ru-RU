@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Деливерйоптимизатионграупидоптионстипе
 description: Возможные значения параметра Деливерйоптимизатионграупидоптионстипе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9823380e8c7e4ffef1c1aa913c9db0cf08ede888
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e6404b3fc01df4ac67de628477b4747c7fc553b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562699"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947234"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>тип перечисления Деливерйоптимизатионграупидоптионстипе
 
@@ -23,11 +23,10 @@ ms.locfileid: "32562699"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|adSite|1 |Сайт Active Directory.|
-|Аусентикатеддомаинсид|2 |SID домена с проверкой поДлинности.|
-|Дхкпусероптион|3 |Параметр пользователя DHCP.|
-|Днссуффикс|4 |DNS-суффикс.|
-
+|adSite|1,1|Сайт Active Directory.|
+|Аусентикатеддомаинсид|2|SID домена с проверкой подлинности.|
+|Дхкпусероптион|4|Параметр пользователя DHCP.|
+|Днссуффикс|SP4|DNS-суффикс.|
 
 
 

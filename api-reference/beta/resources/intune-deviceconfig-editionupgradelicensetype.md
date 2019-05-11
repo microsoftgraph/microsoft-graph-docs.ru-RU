@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Едитионупграделиценсетипе
 description: Тип лицензии на обновление выпуска
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d39e625d24d6ab8486bc281be957ef8728d4403b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60ce0f65a07c1fddacc0856c7e7549b31c7851b4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556160"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946653"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32556160"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |productKey|нуль|Тип ключа продукта|
-|Лиценсефиле|1 |Тип файла лицензии|
-|notConfigured|2 |NotConfigured|
-
+|Лиценсефиле|1,1|Тип файла лицензии|
+|notConfigured|2|NotConfigured|
 
 
 

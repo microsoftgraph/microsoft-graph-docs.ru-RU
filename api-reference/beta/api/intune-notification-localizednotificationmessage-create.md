@@ -1,15 +1,15 @@
 ---
 title: Создание объекта localizedNotificationMessage
 description: Создание объекта localizedNotificationMessage.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5458605b4b4e58b27e65298f709121283fc91ecd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24d352ed38a572f5fdf8cdb8567afadcb25256dd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529095"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900652"
 ---
 # <a name="create-localizednotificationmessage"></a>Создание объекта localizedNotificationMessage
 
@@ -52,7 +52,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|locale|String|Языковой стандарт, для которого предназначено сообщение.|
+|locale|Строка|Языковой стандарт, для которого предназначено сообщение.|
 |subject|String|Тема шаблона сообщения.|
 |messageTemplate|String|Содержимое шаблона сообщения.|
 |isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.|
@@ -97,7 +97,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

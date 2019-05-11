@@ -1,15 +1,15 @@
 ---
 title: Получение Граупполиципресентатионвалуетекст
 description: Чтение свойств и связей объекта Граупполиципресентатионвалуетекст.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba8c66012870735987cc92e4218dc242ab7d7bda
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 46e7b1b80e7d48c6e62a152dd593d220fd12ff9d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530566"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904099"
 ---
 # <a name="get-grouppolicypresentationvaluetext"></a>Получение Граупполиципресентатионвалуетекст
 
@@ -77,7 +77,6 @@ Content-Length: 302
   }
 }
 ```
-
 
 
 

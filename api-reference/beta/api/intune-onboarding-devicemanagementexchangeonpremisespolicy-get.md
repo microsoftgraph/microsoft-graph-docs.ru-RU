@@ -1,15 +1,15 @@
 ---
 title: Получение Девицеманажементексчанжеонпремисесполици
 description: Чтение свойств и связей объекта Девицеманажементексчанжеонпремисесполици.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18bd34aff0797f62d848924ac858062617924f66
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f66ba598318e2d2ea4613d56a84de5128dadd9b6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528802"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900119"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Получение Девицеманажементексчанжеонпремисесполици
 
@@ -95,7 +95,6 @@ Content-Length: 777
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Обновление deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Обновление свойств объекта deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44a938e652ba71c6d18846a6a4e85a87b7653ca8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bd2eea7a906fcad21b52250971f12a5087971ce1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528836"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900161"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Обновление deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -50,25 +50,25 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор конфигурации страницы состояния регистрации, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|displayName|String|Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|version|Int32|Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|pinMinimumLength|Int32|Пока не задокументировано.|
-|pinMaximumLength|Int32|Пока не задокументировано.|
-|pinUppercaseCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не задокументировано. Возможные значения: `allowed`, `required`, `disallowed`.|
-|pinLowercaseCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не задокументировано. Возможные значения: `allowed`, `required`, `disallowed`.|
-|pinSpecialCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не задокументировано. Возможные значения: `allowed`, `required`, `disallowed`.|
-|state|[Включение](../resources/intune-shared-enablement.md)|Еще не задокументировано. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|securityDeviceRequired|Boolean|Н/Д|
-|unlockWithBiometricsEnabled|Boolean|Н/Д|
-|remotePassportEnabled|Boolean|Н/Д|
-|pinPreviousBlockCount|Int32|Пока не задокументировано.|
-|pinExpirationInDays|Int32|Пока не задокументировано.|
-|enhancedBiometricsState|[Включение](../resources/intune-shared-enablement.md)|Еще не задокументировано. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|displayName|Строка|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|pinMinimumLength|Int32|Определяет минимальное количество символов, необходимое для ПИН-кода Windows Hello для бизнеса.  Это значение должно находиться в диапазоне от 4 до 127 включительно, и меньше или равно значению, заданному для максимального ПИН-кода.|
+|pinMaximumLength|Int32|Управляет максимальным количеством символов для ПИН-кода Windows Hello для бизнеса. Это значение должно находиться в диапазоне от 4 до 127 включительно. Это значение должно быть больше или равно значению, заданному для минимального ПИН-кода.|
+|pinUppercaseCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Управляет возможностью использования прописных букв в ПИН-коде Windows Hello для бизнеса.  Allows разрешает использование прописных букв (s), в то время как это необходимо. Если задано значение "не разрешено", прописные буквы не будут разрешены. Возможные значения: `allowed`, `required`, `disallowed`.|
+|pinLowercaseCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Управляет возможностью использования строчных букв в ПИН-коде Windows Hello для бизнеса.  Allows разрешает использование строчных букв (s), в то время как это необходимо. Если задано значение "не разрешено", буквы нижнего регистра не будут разрешены. Возможные значения: `allowed`, `required`, `disallowed`.|
+|pinSpecialCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Управляет возможностью использования специальных символов в ПИН-коде Windows Hello для бизнеса.  Allows разрешает использование специальных символов, в то время как они необходимы для их отображения. Если задано значение "не разрешено", Специальные символы не будут разрешены. Возможные значения: `allowed`, `required`, `disallowed`.|
+|состояние|[Включение](../resources/intune-shared-enablement.md)|Определяет, разрешено ли настраивать устройство для Windows Hello для бизнеса. Если задано значение Disabled, пользователь не сможет подготовить Windows Hello для бизнеса, за исключением того, что в Azure Active Directory присоединяются мобильные телефоны, если это необходимо. Если задано значение не задано, Intune не будет переопределять значения по умолчанию для клиента. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|securityDeviceRequired|Логический|Определяет, требуется ли доверенный ПЛАТФОРМЕНный модуль для подготовки Windows Hello для бизнеса. TPM предоставляет дополнительные преимущества безопасности, которые хранятся на нем, не могут использоваться на других устройствах. Если задано значение false, все устройства могут подготавливать Windows Hello для бизнеса, даже если нет пригодного к использованию ДОВЕРЕНного ПЛАТФОРМЕНного модуля.|
+|unlockWithBiometricsEnabled|Логический|Управляет использованием биометрических жестов, таких как лицо и отпечаток, в качестве альтернативы ПИН-коду Windows Hello для бизнеса.  Если задано значение false, биометрические жесты не разрешены. Пользователи по-прежнему должны настроить ПИН-код в качестве резервной копии в случае сбоев.|
+|remotePassportEnabled|Boolean|Управляет использованием удаленного Windows Hello для бизнеса. Удаленная функция Windows Hello для бизнеса обеспечивает возможность использования портативного, зарегистрированного устройства в качестве вспомогательного для проверки подлинности на настольных компьютерах. Рабочий стол должен быть присоединен к Azure AD, а на вспомогательном устройстве должен быть ПИН-код Windows Hello для бизнеса.|
+|pinPreviousBlockCount|Int32|Управляет возможностью запретить пользователям использовать прошлые контакты. Он должен иметь значение от 0 до 50 включительно, а текущий ПИН-код пользователя включен в этот счетчик. Если задано значение 0, предыдущие ПИН-коды не сохраняются. История ПИН-кодов не сохраняется при сбросе ПИН-кода.|
+|pinExpirationInDays|Int32|Определяет период времени (в днях), в течение которого можно использовать ПИН-код, прежде чем система потребует от пользователя изменить его. Должно быть задано значение от 0 до 730 включительно. Если задано значение 0, срок действия ПИН-кода пользователя никогда не истекает|
+|enhancedBiometricsState|[Включение](../resources/intune-shared-enablement.md)|Управляет возможностью использования функций защиты от спуфинга для распознавания лиц на поддерживающих его устройствах. Если задано значение Disabled, функции защиты от спуфинга не допускаются. Если задано значение не задано, пользователь может выбрать, следует ли использовать функцию защиты от спуфинга. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -135,7 +135,6 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
-
 
 
 

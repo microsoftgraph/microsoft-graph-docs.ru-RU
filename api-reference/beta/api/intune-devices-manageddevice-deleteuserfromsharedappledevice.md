@@ -1,15 +1,15 @@
 ---
 title: Действие deleteUserFromSharedAppleDevice
 description: Удаление пользователя на общем устройстве Apple
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ef8f95424b270df7797335bec0d608790dc56f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0e3bafd6f7da757a5dc60ec1f31517e2de95298
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520216"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909731"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Действие deleteUserFromSharedAppleDevice
 
@@ -80,7 +80,6 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

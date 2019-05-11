@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Кэйусажес
 description: Параметры использования ключа.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02ce6dbf3dcd984e8d07dea6c93990fd30c868c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 65707cd57031e89f795c0e8e7e4a72e84eca2f79
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460613"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946219"
 ---
 # <a name="keyusages-enum-type"></a>тип перечисления Кэйусажес
 
@@ -24,7 +24,6 @@ ms.locfileid: "32460613"
 |:---|:---|:---|
 |КэйенЦифермент|1,1|Использование шифрования ключей.|
 |Дигиталсигнатуре|2|Использование цифровой подписи.|
-
 
 
 

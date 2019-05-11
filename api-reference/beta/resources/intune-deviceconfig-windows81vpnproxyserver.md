@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windows81VpnProxyServer
 description: VPN-прокси-сервер.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a337dc2d18ed5f10ecb9f8f654a7d19175fc476
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26f15e8e2b6982c322ffc78cb9d6270b08bcbc3c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554256"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944245"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Тип ресурса windows81VpnProxyServer
 
@@ -20,18 +20,18 @@ ms.locfileid: "32554256"
 VPN-прокси-сервер.
 
 
-НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)
+Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|address|String|Address. НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|порта|Int32|Порта. Допустимые значения — от 0 до 65535, наСледуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|Аутоматикконфигуратионскриптурл|Строка|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|address|String|Address. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|порта|Int32|Порта. Допустимые значения — от 0 до 65535, наследуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |Аутоматикаллидетектпроксисеттингс|Логический|Автоматически определять параметры прокси-сервера.|
 |Бипасспроксисерверфорлокаладдресс|Логический|Обход прокси-сервера для локального адреса.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,7 +51,6 @@ VPN-прокси-сервер.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

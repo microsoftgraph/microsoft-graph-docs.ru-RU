@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Интернетексплорермессажесеттинг
 description: Сообщение, которое будет отображаться на границе перед переключением в Internet Explorer.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f36ba0eed3485cf65f9111cb118a766fb17456bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 748cafef86666cd795e48581e07303314c556b13
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556020"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946947"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>тип перечисления Интернетексплорермессажесеттинг
 
@@ -23,10 +23,9 @@ ms.locfileid: "32556020"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|активирован|1 |Активирован.|
-|enabled|2 |Доступ.|
-|Кипгоинг|3 |Кипгоинг.|
-
+|активирован|1,1|Активирован.|
+|enabled|2|Доступ.|
+|Кипгоинг|4|Кипгоинг.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Bitlockersystemdrivepolicy.
 description: Основные политики шифрования BitLocker.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05496ff7636447fee8a2171634431394d4f588bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b9301e2199c5e2f032309cb3c11ec01f14d969bb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549288"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947486"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>Тип ресурса Bitlockersystemdrivepolicy.
 
@@ -32,10 +32,10 @@ ms.locfileid: "32549288"
 |minimumPinLength|Int32|Указывает минимальную длину ПИН-кода для запуска. Допустимые значения — от 4 до 20.|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Позволяет восстанавливать зашифрованные диски операционной системы BitLocker в отсутствие требуемых сведений о ключе запуска. Этот параметр политики применяется при включении BitLocker.|
 |prebootRecoveryEnableMessageAndUrl|Логический|Включение сообщения о восстановлении перед загрузкой и URL-адреса. Если Рекуирестартупаусентикатион имеет значение false, это значение не влияет.|
-|Пребутрековеримессаже|String|Определяет настраиваемое сообщение о восстановлении.|
-|Пребутрековерюрл|String|Определяет настраиваемый URL-адрес для восстановления.|
+|Пребутрековеримессаже|Строка|Определяет настраиваемое сообщение о восстановлении.|
+|Пребутрековерюрл|Строка|Определяет настраиваемый URL-адрес для восстановления.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -71,7 +71,6 @@ ms.locfileid: "32549288"
   "prebootRecoveryUrl": "String"
 }
 ```
-
 
 
 

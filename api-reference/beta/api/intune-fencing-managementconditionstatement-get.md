@@ -1,15 +1,15 @@
 ---
 title: Получение Манажементкондитионстатемент
 description: Чтение свойств и связей объекта Манажементкондитионстатемент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0f3fa73be57634a87ed201ae1e59ab2b66373e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e113425effad04712e3dfc45a4ae6c9bb9e7de5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532137"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905366"
 ---
 # <a name="get-managementconditionstatement"></a>Получение Манажементкондитионстатемент
 
@@ -86,7 +86,6 @@ Content-Length: 536
   }
 }
 ```
-
 
 
 

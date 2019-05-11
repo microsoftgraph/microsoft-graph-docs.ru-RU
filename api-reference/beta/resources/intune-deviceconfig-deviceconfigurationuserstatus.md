@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceConfigurationUserStatus
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c7d975d3c59976a2880f7299917d8a1158ddc4d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68d608f60ed213e6e9f5a0cfdcdd3e724c31bd24
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567251"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947024"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>Тип ресурса deviceConfigurationUserStatus
 
@@ -38,7 +38,7 @@ ms.locfileid: "32567251"
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,7 +60,6 @@ ms.locfileid: "32567251"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

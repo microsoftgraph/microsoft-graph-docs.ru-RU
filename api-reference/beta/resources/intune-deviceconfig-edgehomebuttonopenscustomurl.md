@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Еджехомебуттонопенскустомурл
 description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dad4baba5fd55b99efd6b2b7ebadf1973d6c9c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3b82acaf8ef5f6e008d759f257c7382ff64492b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551717"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946821"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>Тип ресурса Еджехомебуттонопенскустомурл
 
@@ -20,14 +20,14 @@ ms.locfileid: "32551717"
 Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
 
 
-НаСледуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Хомебуттонкустомурл|String|Заданный URL-адрес для загрузки.|
+|Хомебуттонкустомурл|Строка|Заданный URL-адрес для загрузки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32551717"
   "homeButtonCustomURL": "String"
 }
 ```
-
 
 
 

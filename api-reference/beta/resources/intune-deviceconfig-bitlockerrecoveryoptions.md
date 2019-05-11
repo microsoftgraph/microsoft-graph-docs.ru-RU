@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Битлоккеррековерйоптионс
 description: Параметры восстановления BitLocker.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5652add71ba19b1eba102a0579a787d7410d6c89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f5ffc5c3246dbe8eeafd39df6669079e060f0da
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549445"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947508"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>Тип ресурса Битлоккеррековерйоптионс
 
@@ -30,7 +30,7 @@ ms.locfileid: "32549445"
 |Рековеринформатионтосторе|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|Настройте, какие части данных восстановления BitLocker хранятся в AD DS. Возможные значения: `passwordAndKey`, `passwordOnly`.|
 |Енаблебитлоккерафтеррековеринформатионтосторе|Логический|Указывает, следует ли включить BitLocker до тех пор, пока данные для восстановления не будут храниться в доменных СЛУЖБах Active Directory.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "32549445"
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
-
 
 
 

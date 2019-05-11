@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Еджехомебуттонхидден
 description: Скрыть кнопку "домой".
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d188bb9c481c694d7d0f2117b1bcff4d1c369dcd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a54a8b9dba004a11632b973abcc18a0a230d6298
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551738"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946786"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>Тип ресурса Еджехомебуттонхидден
 
@@ -20,13 +20,13 @@ ms.locfileid: "32551738"
 Скрыть кнопку "домой".
 
 
-НаСледуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+Наследуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "32551738"
   "@odata.type": "#microsoft.graph.edgeHomeButtonHidden"
 }
 ```
-
 
 
 

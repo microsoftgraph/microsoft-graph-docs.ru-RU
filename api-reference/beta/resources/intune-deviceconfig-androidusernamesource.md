@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Андроидусернамесаурце
 description: Источник имени пользователя для Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 194d34f734825cbac3e98c7aa959e4433f7262ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5f7754257ccdab096f6b93475ed004f146fd6ab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562540"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947885"
 ---
 # <a name="androidusernamesource-enum-type"></a>тип перечисления Андроидусернамесаурце
 
@@ -23,10 +23,9 @@ ms.locfileid: "32562540"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |username|нуль|Имя пользователя.|
-|userPrincipalName|1 |Имя участника-пользователя.|
-|samAccountName|2 |Имя учетной записи SAM пользователя.|
-|primarySmtpAddress|3 |Основной SMTP-адрес.|
-
+|userPrincipalName|1,1|Имя участника-пользователя.|
+|samAccountName|2|Имя учетной записи SAM пользователя.|
+|primarySmtpAddress|4|Основной SMTP-адрес.|
 
 
 

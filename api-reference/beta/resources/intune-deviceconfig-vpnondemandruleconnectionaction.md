@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Впнондемандрулеконнектионактион
 description: Действие подключения к VPN-требованию для правила.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08e39402a0ab6211c3feec53cf325530ea216c85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 548a52697e6107d6c1c3d64503067db29d24f3fe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561945"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944574"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>тип перечисления Впнондемандрулеконнектионактион
 
@@ -23,10 +23,9 @@ ms.locfileid: "32561945"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |connect|нуль|Connect.|
-|Евалуатеконнектион|1 |Оценка подключения.|
-|пропуск|2 |Пропуск.|
-|disconnect|3 |Соединять.|
-
+|Евалуатеконнектион|1,1|Оценка подключения.|
+|пропуск|2|Пропуск.|
+|disconnect|4|Соединять.|
 
 
 

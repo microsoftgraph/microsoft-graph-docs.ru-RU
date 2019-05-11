@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсаппстартлайауттилесизе
 description: Размер плитки приложения Windows в макете "начало".
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 498cb8f38eeb4f4223655156e2d6ef5f178140a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6f32aa9f6b392e67ec26bfe8fa4f1c1e9c88bd38
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554138"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944182"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>тип перечисления Виндовсаппстартлайауттилесизе
 
@@ -23,11 +23,10 @@ ms.locfileid: "32554138"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |hidden|нуль|Скрыто.|
-|small|1 |Малый 1x1.|
-|medium|2 |Средний 2x2.|
-|уровне|3 |Широкие 4x2.|
-|large|4 |Большой 4x4.|
-
+|small|1,1|Малый 1x1.|
+|medium|2|Средний 2x2.|
+|уровне|4|Широкие 4x2.|
+|large|SP4|Большой 4x4.|
 
 
 

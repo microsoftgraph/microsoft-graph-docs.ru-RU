@@ -1,15 +1,15 @@
 ---
 title: Создание Граупполиципресентатионвалуе
 description: Создание нового объекта Граупполиципресентатионвалуе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e92af32f33b1fe3335b88b5c21be094554fd6ab8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eff84bf413cfc94ab94be0726becb2bd917d69c5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530776"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904596"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>Создание Граупполиципресентатионвалуе
 
@@ -52,7 +52,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Деливерйоптимизатионбандвидсхаурсвисперцентаже
-description: Предельная проПускная способность в процентах с рабочими часами.
-author: tfitzmac
+description: Предельная пропускная способность в процентах с рабочими часами.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ecb024d15ee5d4e748d57e1b895c9418feadd52a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a22201310c844ff1e46bb891e9c30944a1604177
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562729"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947241"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсхаурсвисперцентаже
 
@@ -17,10 +17,10 @@ ms.locfileid: "32562729"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Предельная проПускная способность в процентах с рабочими часами.
+Предельная пропускная способность в процентах с рабочими часами.
 
 
-НаСледуется от [деливерйоптимизатионбандвидс](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
+Наследуется от [деливерйоптимизатионбандвидс](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -28,7 +28,7 @@ ms.locfileid: "32562729"
 |Бандвидсбаккграундперцентажехаурс|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процент загрузки в фоновом режиме.|
 |Бандвидсфореграундперцентажехаурс|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процентное соотношение загрузки в процентах.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,7 +57,6 @@ ms.locfileid: "32562729"
   }
 }
 ```
-
 
 
 

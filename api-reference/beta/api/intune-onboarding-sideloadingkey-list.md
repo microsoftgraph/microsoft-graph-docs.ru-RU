@@ -1,15 +1,15 @@
 ---
 title: Список Сиделоадингкеиес
 description: Список свойств и связей объектов Сиделоадингкэй.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb0e52c016785a2d1d4cbe7807bc0bf4beb3993c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 208cfb4d02347166d09335ab9f4e5c3c7804b768
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528472"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899860"
 ---
 # <a name="list-sideloadingkeies"></a>Список Сиделоадингкеиес
 
@@ -78,7 +78,6 @@ Content-Length: 356
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Статеманажементсеттинг
 description: Параметр управления состоянием.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 553c746eded6c71d2195a7899917a57bce8441c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cec14d336800a1a1554a2dda9bd46dce8503c3fb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548665"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944679"
 ---
 # <a name="statemanagementsetting-enum-type"></a>тип перечисления Статеманажементсеттинг
 
@@ -23,9 +23,8 @@ ms.locfileid: "32548665"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|заблокированных|1 |Заблокированных.|
-|разрешенных|2 |Разрешенных.|
-
+|заблокированных|1,1|Заблокированных.|
+|разрешенных|2|Разрешенных.|
 
 
 
