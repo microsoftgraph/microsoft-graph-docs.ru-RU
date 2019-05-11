@@ -1,27 +1,27 @@
 ---
 title: тип перечисления включения
 description: Описывает перечисление включения API Microsoft Graph для Intune, которое поддерживает несколько рабочих процессов.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e781e1c58427ea166f77f3c250e572cbd3520210
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4854b9209d749b86967cc4b8894431d05d785fe7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525231"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938669"
 ---
-# <a name="enablement-enum-type"></a><span data-ttu-id="067e3-103">тип перечисления включения</span><span class="sxs-lookup"><span data-stu-id="067e3-103">enablement enum type</span></span>
+# <a name="enablement-enum-type"></a><span data-ttu-id="596c7-103">тип перечисления включения</span><span class="sxs-lookup"><span data-stu-id="596c7-103">enablement enum type</span></span>
 
-> <span data-ttu-id="067e3-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="067e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="596c7-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="596c7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="067e3-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="067e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="596c7-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="596c7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="067e3-106">Возможные значения свойства</span><span class="sxs-lookup"><span data-stu-id="067e3-106">Possible values of a property</span></span>
+<span data-ttu-id="596c7-106">Возможные значения свойства</span><span class="sxs-lookup"><span data-stu-id="596c7-106">Possible values of a property</span></span>
 
-## <a name="members"></a><span data-ttu-id="067e3-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="067e3-107">Members</span></span>
-|<span data-ttu-id="067e3-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="067e3-108">Member</span></span>|<span data-ttu-id="067e3-109">Значение</span><span class="sxs-lookup"><span data-stu-id="067e3-109">Value</span></span>|<span data-ttu-id="067e3-110">Описание</span><span class="sxs-lookup"><span data-stu-id="067e3-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="596c7-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="596c7-107">Members</span></span>
+|<span data-ttu-id="596c7-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="596c7-108">Member</span></span>|<span data-ttu-id="596c7-109">Значение</span><span class="sxs-lookup"><span data-stu-id="596c7-109">Value</span></span>|<span data-ttu-id="596c7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="596c7-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="067e3-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="067e3-111">notConfigured</span></span>|<span data-ttu-id="067e3-112">нуль</span><span class="sxs-lookup"><span data-stu-id="067e3-112">0</span></span>|<span data-ttu-id="067e3-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="067e3-113">Device default value, no intent.</span></span>|
-|<span data-ttu-id="067e3-114">enabled</span><span class="sxs-lookup"><span data-stu-id="067e3-114">enabled</span></span>|<span data-ttu-id="067e3-115">1 </span><span class="sxs-lookup"><span data-stu-id="067e3-115">1</span></span>|<span data-ttu-id="067e3-116">Включает параметр на устройстве.</span><span class="sxs-lookup"><span data-stu-id="067e3-116">Enables the setting on the device.</span></span>|
-|<span data-ttu-id="067e3-117">активирован</span><span class="sxs-lookup"><span data-stu-id="067e3-117">disabled</span></span>|<span data-ttu-id="067e3-118">2 </span><span class="sxs-lookup"><span data-stu-id="067e3-118">2</span></span>|<span data-ttu-id="067e3-119">Отключает параметр на устройстве.</span><span class="sxs-lookup"><span data-stu-id="067e3-119">Disables the setting on the device.</span></span>|
+|<span data-ttu-id="596c7-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="596c7-111">notConfigured</span></span>|<span data-ttu-id="596c7-112">нуль</span><span class="sxs-lookup"><span data-stu-id="596c7-112">0</span></span>|<span data-ttu-id="596c7-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="596c7-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="596c7-114">enabled</span><span class="sxs-lookup"><span data-stu-id="596c7-114">enabled</span></span>|<span data-ttu-id="596c7-115">1,1</span><span class="sxs-lookup"><span data-stu-id="596c7-115">1</span></span>|<span data-ttu-id="596c7-116">Включает параметр на устройстве.</span><span class="sxs-lookup"><span data-stu-id="596c7-116">Enables the setting on the device.</span></span>|
+|<span data-ttu-id="596c7-117">активирован</span><span class="sxs-lookup"><span data-stu-id="596c7-117">disabled</span></span>|<span data-ttu-id="596c7-118">2</span><span class="sxs-lookup"><span data-stu-id="596c7-118">2</span></span>|<span data-ttu-id="596c7-119">Отключает параметр на устройстве.</span><span class="sxs-lookup"><span data-stu-id="596c7-119">Disables the setting on the device.</span></span>|
