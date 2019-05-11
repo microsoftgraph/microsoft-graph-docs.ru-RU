@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса macOSCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Mac OS.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 716cb1382a92d70a26cdd591b7c51a67f144ebee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bd811904d76eb2eaeb7871a1320394974aaa409c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460543"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946044"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Тип ресурса macOSCompliancePolicy
 
@@ -49,10 +49,10 @@ ms.locfileid: "32460543"
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|osMinimumVersion|String|Минимальная версия MacOS.|
+|osMinimumVersion|Строка|Минимальная версия MacOS.|
 |osMaximumVersion|String|Максимальная версия MacOS.|
-|Осминимумбуилдверсион|String|Минимальная версия сборки MacOS.|
-|Осмаксимумбуилдверсион|String|Максимальная версия сборки MacOS.|
+|Осминимумбуилдверсион|Строка|Минимальная версия сборки MacOS.|
+|Осмаксимумбуилдверсион|Строка|Максимальная версия сборки MacOS.|
 |systemIntegrityProtectionEnabled|Boolean|Указывает на то, что защита целостности системы для устройств должна быть включена.|
 |deviceThreatProtectionEnabled|Логический|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[Девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
@@ -115,7 +115,6 @@ ms.locfileid: "32460543"
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Макослаунчитем
 description: Представляет приложение в списке элементов запуска macOS
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1317f2d42c21d0d11d45290696f183c679b049e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ffdd1d491f56051430b57c6cc3319279b31bcad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570684"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946065"
 ---
 # <a name="macoslaunchitem-resource-type"></a>Тип ресурса Макослаунчитем
 
@@ -23,9 +23,9 @@ ms.locfileid: "32570684"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к запускаемому элементу.|
-|скрытых|Boolean|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
+|скрытых|Логический|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32570684"
   "hide": true
 }
 ```
-
 
 
 

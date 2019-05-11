@@ -1,15 +1,15 @@
 ---
 title: тип перечисления certificateValidityPeriodScale
 description: Параметры периода действия сертификата.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d83dc982743222fe409a28595ea9caa1725620ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ddc87957a50af40991a6610cc29536f42c49d14f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549447"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947408"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>тип перечисления certificateValidityPeriodScale
 
@@ -23,9 +23,8 @@ ms.locfileid: "32549447"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |срок|нуль|Срок.|
-|полугод|1 |Полугод.|
-|годе|2 |Годе.|
-
+|полугод|1,1|Полугод.|
+|годе|2|Годе.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Цертификатеревокатионстатус
 description: Состояние отзыва сертификата.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fd9a6cd34df322a057d16e3d803d8685f7cd173
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4544968e473c41d787df606112801c9b60e2cb98
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549387"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947430"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>тип перечисления Цертификатеревокатионстатус
 
@@ -22,12 +22,11 @@ ms.locfileid: "32549387"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Не отозван.|
-|закончен|1 |Отзыв ожидается.|
-|опубликован|2 |Выдана команда отзыва.|
-|сбоев|3 |Не удалось выполнить отзыв.|
-|отозван|4 |Отозван.|
-
+|none|нуль|Не отозван.|
+|закончен|1,1|Отзыв ожидается.|
+|опубликован|2|Выдана команда отзыва.|
+|сбоев|4|Не удалось выполнить отзыв.|
+|отозван|SP4|Отозван.|
 
 
 

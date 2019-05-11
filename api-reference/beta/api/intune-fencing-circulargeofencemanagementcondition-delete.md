@@ -1,15 +1,15 @@
 ---
 title: Удаление Циркуларжеофенцеманажементкондитион
 description: Удаляет объект Циркуларжеофенцеманажементкондитион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f63895e64bcf5db424e73f3687b04cfcaef91152
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 727d369b18432835effa5a1c119858ce28b8747f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532270"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905506"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>Удаление Циркуларжеофенцеманажементкондитион
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

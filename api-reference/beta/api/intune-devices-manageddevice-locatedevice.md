@@ -1,15 +1,15 @@
 ---
 title: Действие locateDevice
 description: Поиск устройства
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fec558033796571f6d4dc285dfa758ee681bc3ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 382ba289fdeb729a78d336855c4652090e87f8c5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520307"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909654"
 ---
 # <a name="locatedevice-action"></a>Действие locateDevice
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

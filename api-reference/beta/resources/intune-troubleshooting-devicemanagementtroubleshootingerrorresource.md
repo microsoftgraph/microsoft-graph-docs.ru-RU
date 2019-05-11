@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементтраублешутинжеррорресаурце
 description: Объект, представляющий ссылку на информацию об устранении неполадок, ссылка на портал Azure или документ Microsoft.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5905f62a1da0329db1b311ae586cdb64517a2b5d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 712832420b556517be8ef053cc6cd292acfeed86
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554053"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939863"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррорресаурце
 
@@ -23,9 +23,9 @@ ms.locfileid: "32554053"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |text|String|Пока не задокументировано.|
-|ссылка|String|Ссылка на веб-ресурс. Может содержать любой из следующих форматеров: {{UPN}}, {{Девицегуид}}, {{Усергуид}}|
+|ссылка|Строка|Ссылка на веб-ресурс. Может содержать любой из следующих форматеров: {{UPN}}, {{Девицегуид}}, {{Усергуид}}|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "32554053"
   "link": "String"
 }
 ```
+
 
 
 

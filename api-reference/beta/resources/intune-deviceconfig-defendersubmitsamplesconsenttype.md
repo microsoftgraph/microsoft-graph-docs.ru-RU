@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Дефендерсубмитсамплесконсенттипе
 description: Возможные значения для Дефендерсубмитсамплесконсенттипе
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 105f282f93eb43d8e977a997d0ea114ff86ace10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 212215c95a0f9674be793e6f001d8e71d2039b4a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563477"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947276"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>тип перечисления Дефендерсубмитсамплесконсенттипе
 
@@ -23,10 +23,9 @@ ms.locfileid: "32563477"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Сендсафесамплесаутоматикалли|нуль|Автоматическая отправка надежных образцов|
-|Алвайспромпт|1 |Всегда запрашивать|
-|Неверсенд|2 |Никогда не отправлять|
-|Сендаллсамплесаутоматикалли|3 |Автоматическая отправка всех примеров|
-
+|Алвайспромпт|1,1|Всегда запрашивать|
+|Неверсенд|2|Никогда не отправлять|
+|Сендаллсамплесаутоматикалли|4|Автоматическая отправка всех примеров|
 
 
 

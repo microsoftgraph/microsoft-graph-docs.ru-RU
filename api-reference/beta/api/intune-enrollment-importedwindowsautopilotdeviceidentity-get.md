@@ -1,15 +1,15 @@
 ---
 title: Получение importedWindowsAutopilotDeviceIdentity
 description: Чтение свойств и связей между объектамиimportedWindowsAutopilotDeviceIdentity.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 786533d0c65b623c00e9326336f9993339033fb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6448fb6868c6669e09cdd9bcd242c0e137e5dcaa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532683"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908338"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Получение importedWindowsAutopilotDeviceIdentity
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDe
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 671
+Content-Length: 743
 
 {
   "value": {
@@ -83,11 +83,11 @@ Content-Length: 671
       "deviceRegistrationId": "Device Registration Id value",
       "deviceErrorCode": 15,
       "deviceErrorName": "Device Error Name value"
-    }
+    },
+    "assignedUserPrincipalName": "Assigned User Principal Name value"
   }
 }
 ```
-
 
 
 

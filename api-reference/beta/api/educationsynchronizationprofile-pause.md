@@ -4,12 +4,12 @@ description: Приостановите синхронизацию опреде�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: abe0d94691608c245757b53b4417c88d19679409
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 37593589d4ef789021c7ed19f1f98f12407c1621
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587516"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938953"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Приостановка синхронизации в Едукатионсинчронизатионпрофиле
 
@@ -37,7 +37,7 @@ POST /synchronizationProfiles/{id}/pause
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
@@ -61,15 +61,15 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
   "blockType": "response",
   "name": "post_synchronizationProfile_pause"
 }-->
-```
+```http
 HTTP/1.1 200 OK
 ```
 
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_synchronizationProfile_pause-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/post_synchronizationProfile_pause-Javascript-snippets.md)]
 
 ---

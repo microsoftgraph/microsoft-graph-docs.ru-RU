@@ -1,15 +1,15 @@
 ---
 title: Удаление depOnboardingSetting
 description: Удаляет объект depOnboardingSetting.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96524db09268dd42ee14839aa6e84ffa14c4b26a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1ff1e290217fb82b2169c881b82b1b2fc39e5bc1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533292"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908737"
 ---
 # <a name="delete-deponboardingsetting"></a>Удаление depOnboardingSetting
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

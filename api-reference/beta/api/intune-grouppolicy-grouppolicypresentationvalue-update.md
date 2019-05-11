@@ -1,15 +1,15 @@
 ---
 title: Обновление Граупполиципресентатионвалуе
 description: Обновление свойств объекта Граупполиципресентатионвалуе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e81726ea683b200c3e2a26071d834c7ab6b3428
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dc93403587282d9f9c449a09dad77b98f9e70181
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530868"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904505"
 ---
 # <a name="update-grouppolicypresentationvalue"></a>Обновление Граупполиципресентатионвалуе
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
-description: Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
-author: tfitzmac
+description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbbf575c7eaecb93e0256d6f672d0c4d6bdd0edf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce8cf0290830a22ae1f074f9b177535cd2b20e09
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570042"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939835"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
 
@@ -17,19 +17,19 @@ ms.locfileid: "32570042"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
+Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
 
 
-НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
+Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "32570042"
   "errorCode": "String"
 }
 ```
+
 
 
 

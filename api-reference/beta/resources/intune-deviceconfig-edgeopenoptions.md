@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Еджеопеноптионс
 description: Возможные значения параметра Еджеопенсвис.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fc4c39a5400b84d1718845b1f36f76be8d6df50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2505eac36176093d6e939a4fdb823dbc86b85f7a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524402"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946751"
 ---
 # <a name="edgeopenoptions-enum-type"></a>тип перечисления Еджеопеноптионс
 
@@ -23,11 +23,10 @@ ms.locfileid: "32524402"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|startPage|1 |StartPage.|
-|Невтабпаже|2 |Невтабпаже.|
-|Превиауспажес|3 |Превиауспажес.|
-|СпеЦификпажес|4 |СпеЦификпажес.|
-
+|startPage|1,1|StartPage.|
+|Невтабпаже|2|Невтабпаже.|
+|Превиауспажес|4|Превиауспажес.|
+|СпеЦификпажес|SP4|СпеЦификпажес.|
 
 
 

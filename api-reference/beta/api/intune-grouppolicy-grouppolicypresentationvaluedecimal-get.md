@@ -1,15 +1,15 @@
 ---
 title: Получение ГраупполиципресентатионвалуедеЦимал
 description: Чтение свойств и связей объекта ГраупполиципресентатионвалуедеЦимал.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d043822a0ac635e2eac43d4d7141ffa351ac8c02
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9ba9ad3c417c9c8b7c77503b8906fedba9daec4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530853"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904421"
 ---
 # <a name="get-grouppolicypresentationvaluedecimal"></a>Получение ГраупполиципресентатионвалуедеЦимал
 
@@ -77,7 +77,6 @@ Content-Length: 293
   }
 }
 ```
-
 
 
 

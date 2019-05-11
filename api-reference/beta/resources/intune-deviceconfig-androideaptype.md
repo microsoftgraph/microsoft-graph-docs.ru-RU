@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Андроидеаптипе
 description: Типы конфигурации протокола EAP (Extensible Authentication Protocol).
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18da5ee6a71a9c91a4caa0fe513749107fd5cbf6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 67636eac6d566fe021e0610aee32c764ebe400a8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556738"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949040"
 ---
 # <a name="androideaptype-enum-type"></a>тип перечисления Андроидеаптипе
 
@@ -22,10 +22,9 @@ ms.locfileid: "32556738"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Еаптлс|13 |Протокол расширенной проверки поДлинности — протокол TLS (EAP-TLS).|
-|Еапттлс|21|Протокол расширенной проверки поДлинности (EAP-TTLS).|
+|Еаптлс|13|Протокол расширенной проверки подлинности — протокол TLS (EAP-TLS).|
+|Еапттлс|21|Протокол расширенной проверки подлинности (EAP-TTLS).|
 |протокола|25|Протокол PEAP (protected Extensible Authentication Protocol).|
-
 
 
 

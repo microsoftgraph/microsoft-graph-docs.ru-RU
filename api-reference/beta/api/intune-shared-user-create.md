@@ -1,15 +1,15 @@
 ---
 title: Создание пользователя
 description: Создание объекта user.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8f8cf0fb067c5a9cac80308f49fe07af122c1b47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c8324bd70d073b45ecb7ef1ecccbb5019debf89a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526960"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898103"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -58,7 +58,7 @@ POST /users
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор пользователя.|
+|id|Строка|Уникальный идентификатор пользователя.|
 |**Встроенное подключение**||
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 

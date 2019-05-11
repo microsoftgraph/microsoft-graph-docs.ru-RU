@@ -1,15 +1,15 @@
 ---
 title: Действие uploadDepToken
 description: Отправка нового маркера программы регистрации устройств
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 553f0156304d69af79ca957a9d05a0115a41d93a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ea0a8ce6984ba5598cc42a04a9d3799aa50a10e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533117"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908639"
 ---
 # <a name="uploaddeptoken-action"></a>Действие uploadDepToken
 
@@ -79,7 +79,6 @@ Content-length: 69
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

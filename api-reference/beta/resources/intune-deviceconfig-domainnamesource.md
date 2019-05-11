@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Домаиннамесаурце
 description: Имя_домена источник.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e697fd9bfdf399aa6e6b3e24fc4132458d0156f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44693fb2f64fe17b382298a8ae3fb1718339165f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567153"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946835"
 ---
 # <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
 
@@ -23,8 +23,7 @@ ms.locfileid: "32567153"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Фуллдомаиннаме|нуль|Полное доменное имя.|
-|Нетбиосдомаиннаме|1 |имя домена сети BIOS.|
-
+|Нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceComplianceScheduledActionForRule
 description: Запланированное действие для правила
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3b5d7df3dd4451e5b068b3b544cb0a841911cb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8618cd1222cc4885eae4b892da2c25c2944ca6ef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565837"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947115"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -31,7 +31,7 @@ ms.locfileid: "32565837"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 ## <a name="relationships"></a>Связи
@@ -54,7 +54,6 @@ ms.locfileid: "32565837"
   "ruleName": "String"
 }
 ```
-
 
 
 

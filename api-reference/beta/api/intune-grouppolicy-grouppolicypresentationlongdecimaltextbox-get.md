@@ -1,15 +1,15 @@
 ---
 title: Получение ГраупполиципресентатионлонгдеЦималтекстбокс
 description: Чтение свойств и связей объекта ГраупполиципресентатионлонгдеЦималтекстбокс.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13c4cc97c2ebcceb58494f85584ef3f56aed6ac4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8d827a47741f78bd6861a9560e591410fcff7066
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530965"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904785"
 ---
 # <a name="get-grouppolicypresentationlongdecimaltextbox"></a>Получение ГраупполиципресентатионлонгдеЦималтекстбокс
 
@@ -83,7 +83,6 @@ Content-Length: 377
   }
 }
 ```
-
 
 
 

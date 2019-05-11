@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Енкриптионреадинессстате
 description: Состояние готовности шифрования
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45ececca88487d7191e3e3469e3ca16b4e602ea2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0cb014b4b895d59175b244a5fc4398a6b12ebe1e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556258"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946695"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>тип перечисления Енкриптионреадинессстате
 
@@ -23,8 +23,7 @@ ms.locfileid: "32556258"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нотреади|нуль|Не готов|
-|сможет|1 |Готово|
-
+|сможет|1,1|Готово|
 
 
 

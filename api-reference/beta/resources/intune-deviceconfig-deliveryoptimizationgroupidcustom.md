@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Деливерйоптимизатионграупидкустом
 description: Тип идентификатора настраиваемой группы
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d4f369c9a3b62480549f19d4a7c1d7b1d0bb196
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3e439b9d4777a0b0c513d750d0b5e35783dbd9a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556167"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947255"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидкустом
 
@@ -20,14 +20,14 @@ ms.locfileid: "32556167"
 Тип идентификатора настраиваемой группы
 
 
-НаСледуется от [деливерйоптимизатионграупидсаурце](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
+Наследуется от [деливерйоптимизатионграупидсаурце](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Граупидкустом|String|Указывает произвольный идентификатор группы, к которому относится устройство.|
+|Граупидкустом|Строка|Указывает произвольный идентификатор группы, к которому относится устройство.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32556167"
   "groupIdCustom": "String"
 }
 ```
-
 
 
 

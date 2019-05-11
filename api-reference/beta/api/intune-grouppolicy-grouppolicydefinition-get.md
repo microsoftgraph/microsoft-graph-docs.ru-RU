@@ -1,15 +1,15 @@
 ---
 title: Получение Граупполицидефинитион
 description: Чтение свойств и связей объекта Граупполицидефинитион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71af6ad469317ba5776fb0d13f464909c30b8394
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28ee836810647582803837f8bdaf3ab975d76974
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531399"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905107"
 ---
 # <a name="get-grouppolicydefinition"></a>Получение Граупполицидефинитион
 
@@ -84,7 +84,6 @@ Content-Length: 435
   }
 }
 ```
-
 
 
 

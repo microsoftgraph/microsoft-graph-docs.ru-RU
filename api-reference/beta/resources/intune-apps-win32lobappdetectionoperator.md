@@ -1,15 +1,15 @@
 ---
 title: тип перечисления win32LobAppDetectionOperator
 description: Содержит свойства для оператора обнаружения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 662a49dfcb5f4c80e870185849c6943ace9eed88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d373b03898fdeed45d1dc3218c812b3f7b9726d0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550786"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949761"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>тип перечисления win32LobAppDetectionOperator
 
@@ -23,13 +23,12 @@ ms.locfileid: "32550786"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|одинаков|1 |Оператор Equals.|
-|notEqual|2 |Оператор Not Equal.|
-|greaterThan|4 |Оператор "больше чем".|
-|Греатерсанорекуал|5 |Оператор "больше или равно".|
+|одинаков|1,1|Оператор Equals.|
+|notEqual|2|Оператор Not Equal.|
+|greaterThan|SP4|Оператор "больше чем".|
+|Греатерсанорекуал|17:00|Оператор "больше или равно".|
 |Лесссан|8 |Оператор "меньше чем".|
 |Лесссанорекуал|9 |Оператор "меньше или равно".|
-
 
 
 

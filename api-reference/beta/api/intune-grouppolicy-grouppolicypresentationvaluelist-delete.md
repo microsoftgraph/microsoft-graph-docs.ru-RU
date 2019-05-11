@@ -1,15 +1,15 @@
 ---
 title: Удаление Граупполиципресентатионвалуелист
 description: Удаляет объект Граупполиципресентатионвалуелист.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b223f0cf2a6deb2eae7046b1e8ceaa0d672dd51b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ecd614d5870c67bfb3ca3cacc25ea1963c4df53
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530958"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904309"
 ---
 # <a name="delete-grouppolicypresentationvaluelist"></a>Удаление Граупполиципресентатионвалуелист
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

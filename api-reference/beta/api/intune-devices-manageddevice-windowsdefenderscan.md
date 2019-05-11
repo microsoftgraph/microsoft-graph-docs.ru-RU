@@ -1,15 +1,15 @@
 ---
 title: Действие windowsDefenderScan
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 735063d263651da4bf3b93170eedb94f8bf25c58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d1a990669bf95928b655d8bec470bf7896933e83
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520069"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909507"
 ---
 # <a name="windowsdefenderscan-action"></a>Действие windowsDefenderScan
 
@@ -80,7 +80,6 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

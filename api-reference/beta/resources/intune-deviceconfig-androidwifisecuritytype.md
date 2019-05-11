@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Андроидвифисекурититипе
 description: Типы безопасности Wi/Fi для Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edc0f2d28891c48e4df73bdbdfda9edb931c90e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af1a53b9dbb120d9bfece828a20c71d8c4e0050e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562491"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947878"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>тип перечисления Андроидвифисекурититипе
 
@@ -22,9 +22,8 @@ ms.locfileid: "32562491"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|окно|нуль|Открыть (без проверки поДлинности).|
-|Впаентерприсе|1 |WPA-предприятие/WPA2-предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
-
+|окно|нуль|Открыть (без проверки подлинности).|
+|Впаентерприсе|1,1|WPA-предприятие/WPA2-предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Удаление roleAssignment
 description: Удаление объекта roleAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88477a1142131e45b43215d93324244d499dee66
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 411f7a9832e704421a360c7e98510aa4d49eaf57
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527569"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899496"
 ---
 # <a name="delete-roleassignment"></a>Удаление roleAssignment
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
