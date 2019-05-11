@@ -1,34 +1,34 @@
 ---
 title: Создание Девицеманажементинтентусерстате
 description: Создание нового объекта Девицеманажементинтентусерстате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa3b718bbf0b4e87805a79066bfd6f898e47a0d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3efb5031cd66e6a9566297f4d3db6430140f4e8f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507765"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915981"
 ---
-# <a name="create-devicemanagementintentuserstate"></a><span data-ttu-id="fcd61-103">Создание Девицеманажементинтентусерстате</span><span class="sxs-lookup"><span data-stu-id="fcd61-103">Create deviceManagementIntentUserState</span></span>
+# <a name="create-devicemanagementintentuserstate"></a><span data-ttu-id="80636-103">Создание Девицеманажементинтентусерстате</span><span class="sxs-lookup"><span data-stu-id="80636-103">Create deviceManagementIntentUserState</span></span>
 
-> <span data-ttu-id="fcd61-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fcd61-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="80636-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80636-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fcd61-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fcd61-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="80636-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="80636-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fcd61-106">Создание нового объекта [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) .</span><span class="sxs-lookup"><span data-stu-id="fcd61-106">Create a new [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object.</span></span>
+<span data-ttu-id="80636-106">Создание нового объекта [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) .</span><span class="sxs-lookup"><span data-stu-id="80636-106">Create a new [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="fcd61-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="fcd61-107">Prerequisites</span></span>
-<span data-ttu-id="fcd61-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fcd61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="80636-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="80636-107">Prerequisites</span></span>
+<span data-ttu-id="80636-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80636-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fcd61-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fcd61-110">Permission type</span></span>|<span data-ttu-id="fcd61-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="fcd61-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="80636-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="80636-110">Permission type</span></span>|<span data-ttu-id="80636-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="80636-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fcd61-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fcd61-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fcd61-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fcd61-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="fcd61-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fcd61-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fcd61-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fcd61-115">Not supported.</span></span>|
-|<span data-ttu-id="fcd61-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fcd61-116">Application</span></span>|<span data-ttu-id="fcd61-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fcd61-117">Not supported.</span></span>|
+|<span data-ttu-id="80636-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="80636-112">Delegated (work or school account)</span></span>|<span data-ttu-id="80636-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80636-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="80636-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="80636-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="80636-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80636-115">Not supported.</span></span>|
+|<span data-ttu-id="80636-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="80636-116">Application</span></span>|<span data-ttu-id="80636-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80636-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fcd61-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fcd61-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80636-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="80636-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "32507765"
 POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fcd61-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fcd61-119">Request headers</span></span>
-|<span data-ttu-id="fcd61-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fcd61-120">Header</span></span>|<span data-ttu-id="fcd61-121">Значение</span><span class="sxs-lookup"><span data-stu-id="fcd61-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="80636-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="80636-119">Request headers</span></span>
+|<span data-ttu-id="80636-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="80636-120">Header</span></span>|<span data-ttu-id="80636-121">Значение</span><span class="sxs-lookup"><span data-stu-id="80636-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fcd61-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fcd61-122">Authorization</span></span>|<span data-ttu-id="fcd61-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fcd61-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fcd61-124">Accept</span><span class="sxs-lookup"><span data-stu-id="fcd61-124">Accept</span></span>|<span data-ttu-id="fcd61-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fcd61-125">application/json</span></span>|
+|<span data-ttu-id="80636-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="80636-122">Authorization</span></span>|<span data-ttu-id="80636-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="80636-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="80636-124">Accept</span><span class="sxs-lookup"><span data-stu-id="80636-124">Accept</span></span>|<span data-ttu-id="80636-125">application/json</span><span class="sxs-lookup"><span data-stu-id="80636-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fcd61-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fcd61-126">Request body</span></span>
-<span data-ttu-id="fcd61-127">В тексте запроса добавьте представление объекта Девицеманажементинтентусерстате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fcd61-127">In the request body, supply a JSON representation for the deviceManagementIntentUserState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80636-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="80636-126">Request body</span></span>
+<span data-ttu-id="80636-127">В тексте запроса добавьте представление объекта Девицеманажементинтентусерстате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80636-127">In the request body, supply a JSON representation for the deviceManagementIntentUserState object.</span></span>
 
-<span data-ttu-id="fcd61-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентусерстате.</span><span class="sxs-lookup"><span data-stu-id="fcd61-128">The following table shows the properties that are required when you create the deviceManagementIntentUserState.</span></span>
+<span data-ttu-id="80636-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентусерстате.</span><span class="sxs-lookup"><span data-stu-id="80636-128">The following table shows the properties that are required when you create the deviceManagementIntentUserState.</span></span>
 
-|<span data-ttu-id="fcd61-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="fcd61-129">Property</span></span>|<span data-ttu-id="fcd61-130">Тип</span><span class="sxs-lookup"><span data-stu-id="fcd61-130">Type</span></span>|<span data-ttu-id="fcd61-131">Описание</span><span class="sxs-lookup"><span data-stu-id="fcd61-131">Description</span></span>|
+|<span data-ttu-id="80636-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="80636-129">Property</span></span>|<span data-ttu-id="80636-130">Тип</span><span class="sxs-lookup"><span data-stu-id="80636-130">Type</span></span>|<span data-ttu-id="80636-131">Описание</span><span class="sxs-lookup"><span data-stu-id="80636-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fcd61-132">id</span><span class="sxs-lookup"><span data-stu-id="fcd61-132">id</span></span>|<span data-ttu-id="fcd61-133">Строка</span><span class="sxs-lookup"><span data-stu-id="fcd61-133">String</span></span>|<span data-ttu-id="fcd61-134">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="fcd61-134">The ID</span></span>|
-|<span data-ttu-id="fcd61-135">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="fcd61-135">userPrincipalName</span></span>|<span data-ttu-id="fcd61-136">String</span><span class="sxs-lookup"><span data-stu-id="fcd61-136">String</span></span>|<span data-ttu-id="fcd61-137">Имя участника-пользователя, сообщаемое на устройстве</span><span class="sxs-lookup"><span data-stu-id="fcd61-137">The user principal name that is being reported on a device</span></span>|
-|<span data-ttu-id="fcd61-138">userName</span><span class="sxs-lookup"><span data-stu-id="fcd61-138">userName</span></span>|<span data-ttu-id="fcd61-139">String</span><span class="sxs-lookup"><span data-stu-id="fcd61-139">String</span></span>|<span data-ttu-id="fcd61-140">Имя пользователя, сообщаемое на устройстве</span><span class="sxs-lookup"><span data-stu-id="fcd61-140">The user name that is being reported on a device</span></span>|
-|<span data-ttu-id="fcd61-141">deviceCount</span><span class="sxs-lookup"><span data-stu-id="fcd61-141">deviceCount</span></span>|<span data-ttu-id="fcd61-142">Int32</span><span class="sxs-lookup"><span data-stu-id="fcd61-142">Int32</span></span>|<span data-ttu-id="fcd61-143">Количество устройств, принадлежащие пользователю для намерения</span><span class="sxs-lookup"><span data-stu-id="fcd61-143">Count of Devices that belongs to a user for an intent</span></span>|
-|<span data-ttu-id="fcd61-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="fcd61-144">lastReportedDateTime</span></span>|<span data-ttu-id="fcd61-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fcd61-145">DateTimeOffset</span></span>|<span data-ttu-id="fcd61-146">Дата и время последнего изменения отчета о намерениях</span><span class="sxs-lookup"><span data-stu-id="fcd61-146">Last modified date time of an intent report</span></span>|
-|<span data-ttu-id="fcd61-147">state</span><span class="sxs-lookup"><span data-stu-id="fcd61-147">state</span></span>|[<span data-ttu-id="fcd61-148">Комплианцестатус</span><span class="sxs-lookup"><span data-stu-id="fcd61-148">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="fcd61-149">Состояние пользователя для намерения.</span><span class="sxs-lookup"><span data-stu-id="fcd61-149">User state for an intent.</span></span> <span data-ttu-id="fcd61-150">Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="fcd61-150">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="80636-132">id</span><span class="sxs-lookup"><span data-stu-id="80636-132">id</span></span>|<span data-ttu-id="80636-133">Строка</span><span class="sxs-lookup"><span data-stu-id="80636-133">String</span></span>|<span data-ttu-id="80636-134">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="80636-134">The ID</span></span>|
+|<span data-ttu-id="80636-135">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="80636-135">userPrincipalName</span></span>|<span data-ttu-id="80636-136">String</span><span class="sxs-lookup"><span data-stu-id="80636-136">String</span></span>|<span data-ttu-id="80636-137">Имя участника-пользователя, сообщаемое на устройстве</span><span class="sxs-lookup"><span data-stu-id="80636-137">The user principal name that is being reported on a device</span></span>|
+|<span data-ttu-id="80636-138">userName</span><span class="sxs-lookup"><span data-stu-id="80636-138">userName</span></span>|<span data-ttu-id="80636-139">String</span><span class="sxs-lookup"><span data-stu-id="80636-139">String</span></span>|<span data-ttu-id="80636-140">Имя пользователя, сообщаемое на устройстве</span><span class="sxs-lookup"><span data-stu-id="80636-140">The user name that is being reported on a device</span></span>|
+|<span data-ttu-id="80636-141">deviceCount</span><span class="sxs-lookup"><span data-stu-id="80636-141">deviceCount</span></span>|<span data-ttu-id="80636-142">Int32</span><span class="sxs-lookup"><span data-stu-id="80636-142">Int32</span></span>|<span data-ttu-id="80636-143">Количество устройств, принадлежащие пользователю для намерения</span><span class="sxs-lookup"><span data-stu-id="80636-143">Count of Devices that belongs to a user for an intent</span></span>|
+|<span data-ttu-id="80636-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="80636-144">lastReportedDateTime</span></span>|<span data-ttu-id="80636-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="80636-145">DateTimeOffset</span></span>|<span data-ttu-id="80636-146">Дата и время последнего изменения отчета о намерениях</span><span class="sxs-lookup"><span data-stu-id="80636-146">Last modified date time of an intent report</span></span>|
+|<span data-ttu-id="80636-147">состояние</span><span class="sxs-lookup"><span data-stu-id="80636-147">state</span></span>|[<span data-ttu-id="80636-148">Комплианцестатус</span><span class="sxs-lookup"><span data-stu-id="80636-148">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="80636-149">Состояние пользователя для намерения.</span><span class="sxs-lookup"><span data-stu-id="80636-149">User state for an intent.</span></span> <span data-ttu-id="80636-150">Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="80636-150">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="fcd61-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="fcd61-151">Response</span></span>
-<span data-ttu-id="fcd61-152">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fcd61-152">If successful, this method returns a `201 Created` response code and a [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="80636-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="80636-151">Response</span></span>
+<span data-ttu-id="80636-152">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="80636-152">If successful, this method returns a `201 Created` response code and a [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fcd61-153">Пример</span><span class="sxs-lookup"><span data-stu-id="fcd61-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="80636-153">Пример</span><span class="sxs-lookup"><span data-stu-id="80636-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fcd61-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="fcd61-154">Request</span></span>
-<span data-ttu-id="fcd61-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fcd61-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="80636-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="80636-154">Request</span></span>
+<span data-ttu-id="80636-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="80636-155">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/userStates
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 275
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="fcd61-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="fcd61-156">Response</span></span>
-<span data-ttu-id="fcd61-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fcd61-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="80636-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="80636-156">Response</span></span>
+<span data-ttu-id="80636-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="80636-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -98,7 +98,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

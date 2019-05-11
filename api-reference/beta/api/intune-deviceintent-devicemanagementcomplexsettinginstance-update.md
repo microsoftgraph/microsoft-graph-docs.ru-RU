@@ -1,34 +1,34 @@
 ---
 title: Обновление Девицеманажементкомплекссеттингинстанце
 description: Обновление свойств объекта Девицеманажементкомплекссеттингинстанце.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 983dc7013a3e81fe0ad50314127b2ca7b7ca7de2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9a578f6fa0ce407335272b92f16aa7372e04fb5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509452"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916582"
 ---
-# <a name="update-devicemanagementcomplexsettinginstance"></a><span data-ttu-id="8b79e-103">Обновление Девицеманажементкомплекссеттингинстанце</span><span class="sxs-lookup"><span data-stu-id="8b79e-103">Update deviceManagementComplexSettingInstance</span></span>
+# <a name="update-devicemanagementcomplexsettinginstance"></a><span data-ttu-id="35319-103">Обновление Девицеманажементкомплекссеттингинстанце</span><span class="sxs-lookup"><span data-stu-id="35319-103">Update deviceManagementComplexSettingInstance</span></span>
 
-> <span data-ttu-id="8b79e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b79e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="35319-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35319-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8b79e-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8b79e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="35319-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="35319-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8b79e-106">Обновление свойств объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .</span><span class="sxs-lookup"><span data-stu-id="8b79e-106">Update the properties of a [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) object.</span></span>
+<span data-ttu-id="35319-106">Обновление свойств объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .</span><span class="sxs-lookup"><span data-stu-id="35319-106">Update the properties of a [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="8b79e-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="8b79e-107">Prerequisites</span></span>
-<span data-ttu-id="8b79e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8b79e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="35319-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="35319-107">Prerequisites</span></span>
+<span data-ttu-id="35319-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35319-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b79e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8b79e-110">Permission type</span></span>|<span data-ttu-id="8b79e-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8b79e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="35319-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="35319-110">Permission type</span></span>|<span data-ttu-id="35319-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="35319-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="8b79e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8b79e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8b79e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b79e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="8b79e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8b79e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8b79e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b79e-115">Not supported.</span></span>|
-|<span data-ttu-id="8b79e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8b79e-116">Application</span></span>|<span data-ttu-id="8b79e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b79e-117">Not supported.</span></span>|
+|<span data-ttu-id="35319-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="35319-112">Delegated (work or school account)</span></span>|<span data-ttu-id="35319-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35319-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="35319-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="35319-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="35319-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35319-115">Not supported.</span></span>|
+|<span data-ttu-id="35319-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="35319-116">Application</span></span>|<span data-ttu-id="35319-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35319-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8b79e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8b79e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35319-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="35319-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,32 +40,32 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/recommendedSettings/{deviceManagementSettingInstanceId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8b79e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8b79e-119">Request headers</span></span>
-|<span data-ttu-id="8b79e-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8b79e-120">Header</span></span>|<span data-ttu-id="8b79e-121">Значение</span><span class="sxs-lookup"><span data-stu-id="8b79e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="35319-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="35319-119">Request headers</span></span>
+|<span data-ttu-id="35319-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="35319-120">Header</span></span>|<span data-ttu-id="35319-121">Значение</span><span class="sxs-lookup"><span data-stu-id="35319-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="8b79e-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8b79e-122">Authorization</span></span>|<span data-ttu-id="8b79e-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8b79e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="8b79e-124">Accept</span><span class="sxs-lookup"><span data-stu-id="8b79e-124">Accept</span></span>|<span data-ttu-id="8b79e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8b79e-125">application/json</span></span>|
+|<span data-ttu-id="35319-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="35319-122">Authorization</span></span>|<span data-ttu-id="35319-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="35319-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="35319-124">Accept</span><span class="sxs-lookup"><span data-stu-id="35319-124">Accept</span></span>|<span data-ttu-id="35319-125">application/json</span><span class="sxs-lookup"><span data-stu-id="35319-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8b79e-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8b79e-126">Request body</span></span>
-<span data-ttu-id="8b79e-127">В тексте запроса добавьте представление объекта [Девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8b79e-127">In the request body, supply a JSON representation for the [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="35319-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="35319-126">Request body</span></span>
+<span data-ttu-id="35319-127">В тексте запроса добавьте представление объекта [Девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="35319-127">In the request body, supply a JSON representation for the [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) object.</span></span>
 
-<span data-ttu-id="8b79e-128">В следующей таблице приведены свойства, необходимые при создании [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md).</span><span class="sxs-lookup"><span data-stu-id="8b79e-128">The following table shows the properties that are required when you create the [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md).</span></span>
+<span data-ttu-id="35319-128">В следующей таблице приведены свойства, необходимые при создании [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md).</span><span class="sxs-lookup"><span data-stu-id="35319-128">The following table shows the properties that are required when you create the [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md).</span></span>
 
-|<span data-ttu-id="8b79e-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="8b79e-129">Property</span></span>|<span data-ttu-id="8b79e-130">Тип</span><span class="sxs-lookup"><span data-stu-id="8b79e-130">Type</span></span>|<span data-ttu-id="8b79e-131">Описание</span><span class="sxs-lookup"><span data-stu-id="8b79e-131">Description</span></span>|
+|<span data-ttu-id="35319-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="35319-129">Property</span></span>|<span data-ttu-id="35319-130">Тип</span><span class="sxs-lookup"><span data-stu-id="35319-130">Type</span></span>|<span data-ttu-id="35319-131">Описание</span><span class="sxs-lookup"><span data-stu-id="35319-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8b79e-132">id</span><span class="sxs-lookup"><span data-stu-id="8b79e-132">id</span></span>|<span data-ttu-id="8b79e-133">String</span><span class="sxs-lookup"><span data-stu-id="8b79e-133">String</span></span>|<span data-ttu-id="8b79e-134">Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="8b79e-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="8b79e-135">Дефинитионид</span><span class="sxs-lookup"><span data-stu-id="8b79e-135">definitionId</span></span>|<span data-ttu-id="8b79e-136">String</span><span class="sxs-lookup"><span data-stu-id="8b79e-136">String</span></span>|<span data-ttu-id="8b79e-137">Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="8b79e-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="8b79e-138">Валуежсон</span><span class="sxs-lookup"><span data-stu-id="8b79e-138">valueJson</span></span>|<span data-ttu-id="8b79e-139">String</span><span class="sxs-lookup"><span data-stu-id="8b79e-139">String</span></span>|<span data-ttu-id="8b79e-140">Представление JSON значения, наСледуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="8b79e-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="35319-132">id</span><span class="sxs-lookup"><span data-stu-id="35319-132">id</span></span>|<span data-ttu-id="35319-133">Строка</span><span class="sxs-lookup"><span data-stu-id="35319-133">String</span></span>|<span data-ttu-id="35319-134">Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="35319-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="35319-135">Дефинитионид</span><span class="sxs-lookup"><span data-stu-id="35319-135">definitionId</span></span>|<span data-ttu-id="35319-136">Строка</span><span class="sxs-lookup"><span data-stu-id="35319-136">String</span></span>|<span data-ttu-id="35319-137">Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="35319-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="35319-138">Валуежсон</span><span class="sxs-lookup"><span data-stu-id="35319-138">valueJson</span></span>|<span data-ttu-id="35319-139">Строка</span><span class="sxs-lookup"><span data-stu-id="35319-139">String</span></span>|<span data-ttu-id="35319-140">Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span><span class="sxs-lookup"><span data-stu-id="35319-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="8b79e-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="8b79e-141">Response</span></span>
-<span data-ttu-id="8b79e-142">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8b79e-142">If successful, this method returns a `200 OK` response code and an updated [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="35319-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="35319-141">Response</span></span>
+<span data-ttu-id="35319-142">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="35319-142">If successful, this method returns a `200 OK` response code and an updated [deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b79e-143">Пример</span><span class="sxs-lookup"><span data-stu-id="8b79e-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="35319-143">Пример</span><span class="sxs-lookup"><span data-stu-id="35319-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8b79e-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="8b79e-144">Request</span></span>
-<span data-ttu-id="8b79e-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8b79e-145">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="35319-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="35319-144">Request</span></span>
+<span data-ttu-id="35319-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="35319-145">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings/{deviceManagementSettingInstanceId}
 Content-type: application/json
@@ -78,8 +78,8 @@ Content-length: 158
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="8b79e-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="8b79e-146">Response</span></span>
-<span data-ttu-id="8b79e-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8b79e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="35319-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="35319-146">Response</span></span>
+<span data-ttu-id="35319-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="35319-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -92,7 +92,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 
