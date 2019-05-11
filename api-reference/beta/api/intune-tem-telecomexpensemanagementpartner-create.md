@@ -1,34 +1,34 @@
 ---
 title: Создание telecomExpenseManagementPartner
 description: Создание объекта telecomExpenseManagementPartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2d17526d7613d10c3c9796bd62f3658295173a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5451ac55122c908dbeb41a300a9344729ab65461
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526687"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898151"
 ---
-# <a name="create-telecomexpensemanagementpartner"></a><span data-ttu-id="c24c9-103">Создание telecomExpenseManagementPartner</span><span class="sxs-lookup"><span data-stu-id="c24c9-103">Create telecomExpenseManagementPartner</span></span>
+# <a name="create-telecomexpensemanagementpartner"></a><span data-ttu-id="80d60-103">Создание telecomExpenseManagementPartner</span><span class="sxs-lookup"><span data-stu-id="80d60-103">Create telecomExpenseManagementPartner</span></span>
 
-> <span data-ttu-id="c24c9-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c24c9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="80d60-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80d60-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c24c9-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c24c9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="80d60-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="80d60-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c24c9-106">Создание объекта [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="c24c9-106">Create a new [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
+<span data-ttu-id="80d60-106">Создание объекта [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="80d60-106">Create a new [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c24c9-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="c24c9-107">Prerequisites</span></span>
-<span data-ttu-id="c24c9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c24c9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="80d60-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="80d60-107">Prerequisites</span></span>
+<span data-ttu-id="80d60-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80d60-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c24c9-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c24c9-110">Permission type</span></span>|<span data-ttu-id="c24c9-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="c24c9-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="80d60-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="80d60-110">Permission type</span></span>|<span data-ttu-id="80d60-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="80d60-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c24c9-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c24c9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c24c9-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c24c9-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="c24c9-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c24c9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c24c9-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c24c9-115">Not supported.</span></span>|
-|<span data-ttu-id="c24c9-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c24c9-116">Application</span></span>|<span data-ttu-id="c24c9-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c24c9-117">Not supported.</span></span>|
+|<span data-ttu-id="80d60-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="80d60-112">Delegated (work or school account)</span></span>|<span data-ttu-id="80d60-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80d60-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="80d60-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="80d60-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="80d60-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80d60-115">Not supported.</span></span>|
+|<span data-ttu-id="80d60-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="80d60-116">Application</span></span>|<span data-ttu-id="80d60-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80d60-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c24c9-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c24c9-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80d60-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="80d60-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "32526687"
 POST /deviceManagement/telecomExpenseManagementPartners
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c24c9-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c24c9-119">Request headers</span></span>
-|<span data-ttu-id="c24c9-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c24c9-120">Header</span></span>|<span data-ttu-id="c24c9-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c24c9-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="80d60-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="80d60-119">Request headers</span></span>
+|<span data-ttu-id="80d60-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="80d60-120">Header</span></span>|<span data-ttu-id="80d60-121">Значение</span><span class="sxs-lookup"><span data-stu-id="80d60-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c24c9-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c24c9-122">Authorization</span></span>|<span data-ttu-id="c24c9-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c24c9-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c24c9-124">Accept</span><span class="sxs-lookup"><span data-stu-id="c24c9-124">Accept</span></span>|<span data-ttu-id="c24c9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c24c9-125">application/json</span></span>|
+|<span data-ttu-id="80d60-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="80d60-122">Authorization</span></span>|<span data-ttu-id="80d60-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="80d60-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="80d60-124">Accept</span><span class="sxs-lookup"><span data-stu-id="80d60-124">Accept</span></span>|<span data-ttu-id="80d60-125">application/json</span><span class="sxs-lookup"><span data-stu-id="80d60-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c24c9-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c24c9-126">Request body</span></span>
-<span data-ttu-id="c24c9-127">В теле запроса добавьте представление объекта telecomExpenseManagementPartner в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c24c9-127">In the request body, supply a JSON representation for the telecomExpenseManagementPartner object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80d60-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="80d60-126">Request body</span></span>
+<span data-ttu-id="80d60-127">В теле запроса добавьте представление объекта telecomExpenseManagementPartner в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80d60-127">In the request body, supply a JSON representation for the telecomExpenseManagementPartner object.</span></span>
 
-<span data-ttu-id="c24c9-128">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта telecomExpenseManagementPartner.</span><span class="sxs-lookup"><span data-stu-id="c24c9-128">The following table shows the properties that are required when you create the telecomExpenseManagementPartner.</span></span>
+<span data-ttu-id="80d60-128">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта telecomExpenseManagementPartner.</span><span class="sxs-lookup"><span data-stu-id="80d60-128">The following table shows the properties that are required when you create the telecomExpenseManagementPartner.</span></span>
 
-|<span data-ttu-id="c24c9-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="c24c9-129">Property</span></span>|<span data-ttu-id="c24c9-130">Тип</span><span class="sxs-lookup"><span data-stu-id="c24c9-130">Type</span></span>|<span data-ttu-id="c24c9-131">Описание</span><span class="sxs-lookup"><span data-stu-id="c24c9-131">Description</span></span>|
+|<span data-ttu-id="80d60-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="80d60-129">Property</span></span>|<span data-ttu-id="80d60-130">Тип</span><span class="sxs-lookup"><span data-stu-id="80d60-130">Type</span></span>|<span data-ttu-id="80d60-131">Описание</span><span class="sxs-lookup"><span data-stu-id="80d60-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c24c9-132">id</span><span class="sxs-lookup"><span data-stu-id="c24c9-132">id</span></span>|<span data-ttu-id="c24c9-133">String</span><span class="sxs-lookup"><span data-stu-id="c24c9-133">String</span></span>|<span data-ttu-id="c24c9-134">Уникальный идентификатор партнера TEM.</span><span class="sxs-lookup"><span data-stu-id="c24c9-134">Unique identifier of the TEM partner.</span></span>|
-|<span data-ttu-id="c24c9-135">displayName</span><span class="sxs-lookup"><span data-stu-id="c24c9-135">displayName</span></span>|<span data-ttu-id="c24c9-136">Строка</span><span class="sxs-lookup"><span data-stu-id="c24c9-136">String</span></span>|<span data-ttu-id="c24c9-137">Отображаемое имя партнера TEM.</span><span class="sxs-lookup"><span data-stu-id="c24c9-137">Display name of the TEM partner.</span></span>|
-|<span data-ttu-id="c24c9-138">url</span><span class="sxs-lookup"><span data-stu-id="c24c9-138">url</span></span>|<span data-ttu-id="c24c9-139">String</span><span class="sxs-lookup"><span data-stu-id="c24c9-139">String</span></span>|<span data-ttu-id="c24c9-140">URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.</span><span class="sxs-lookup"><span data-stu-id="c24c9-140">URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.</span></span>|
-|<span data-ttu-id="c24c9-141">appAuthorized</span><span class="sxs-lookup"><span data-stu-id="c24c9-141">appAuthorized</span></span>|<span data-ttu-id="c24c9-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="c24c9-142">Boolean</span></span>|<span data-ttu-id="c24c9-143">Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.</span><span class="sxs-lookup"><span data-stu-id="c24c9-143">Whether the partner's AAD app has been authorized to access Intune.</span></span>|
-|<span data-ttu-id="c24c9-144">enabled</span><span class="sxs-lookup"><span data-stu-id="c24c9-144">enabled</span></span>|<span data-ttu-id="c24c9-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="c24c9-145">Boolean</span></span>|<span data-ttu-id="c24c9-146">Определяет, включено или отключено сейчас подключение Intune к службе TEM.</span><span class="sxs-lookup"><span data-stu-id="c24c9-146">Whether Intune's connection to the TEM service is currently enabled or disabled.</span></span>|
-|<span data-ttu-id="c24c9-147">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="c24c9-147">lastConnectionDateTime</span></span>|<span data-ttu-id="c24c9-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c24c9-148">DateTimeOffset</span></span>|<span data-ttu-id="c24c9-149">Метка времени последнего запроса, отправленного в службу Intune партнером TEM.</span><span class="sxs-lookup"><span data-stu-id="c24c9-149">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
+|<span data-ttu-id="80d60-132">id</span><span class="sxs-lookup"><span data-stu-id="80d60-132">id</span></span>|<span data-ttu-id="80d60-133">String</span><span class="sxs-lookup"><span data-stu-id="80d60-133">String</span></span>|<span data-ttu-id="80d60-134">Уникальный идентификатор партнера TEM.</span><span class="sxs-lookup"><span data-stu-id="80d60-134">Unique identifier of the TEM partner.</span></span>|
+|<span data-ttu-id="80d60-135">displayName</span><span class="sxs-lookup"><span data-stu-id="80d60-135">displayName</span></span>|<span data-ttu-id="80d60-136">Строка</span><span class="sxs-lookup"><span data-stu-id="80d60-136">String</span></span>|<span data-ttu-id="80d60-137">Отображаемое имя партнера TEM.</span><span class="sxs-lookup"><span data-stu-id="80d60-137">Display name of the TEM partner.</span></span>|
+|<span data-ttu-id="80d60-138">url</span><span class="sxs-lookup"><span data-stu-id="80d60-138">url</span></span>|<span data-ttu-id="80d60-139">String</span><span class="sxs-lookup"><span data-stu-id="80d60-139">String</span></span>|<span data-ttu-id="80d60-140">URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.</span><span class="sxs-lookup"><span data-stu-id="80d60-140">URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.</span></span>|
+|<span data-ttu-id="80d60-141">appAuthorized</span><span class="sxs-lookup"><span data-stu-id="80d60-141">appAuthorized</span></span>|<span data-ttu-id="80d60-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="80d60-142">Boolean</span></span>|<span data-ttu-id="80d60-143">Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.</span><span class="sxs-lookup"><span data-stu-id="80d60-143">Whether the partner's AAD app has been authorized to access Intune.</span></span>|
+|<span data-ttu-id="80d60-144">enabled</span><span class="sxs-lookup"><span data-stu-id="80d60-144">enabled</span></span>|<span data-ttu-id="80d60-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="80d60-145">Boolean</span></span>|<span data-ttu-id="80d60-146">Определяет, включено или отключено сейчас подключение Intune к службе TEM.</span><span class="sxs-lookup"><span data-stu-id="80d60-146">Whether Intune's connection to the TEM service is currently enabled or disabled.</span></span>|
+|<span data-ttu-id="80d60-147">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="80d60-147">lastConnectionDateTime</span></span>|<span data-ttu-id="80d60-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="80d60-148">DateTimeOffset</span></span>|<span data-ttu-id="80d60-149">Метка времени последнего запроса, отправленного в службу Intune партнером TEM.</span><span class="sxs-lookup"><span data-stu-id="80d60-149">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c24c9-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="c24c9-150">Response</span></span>
-<span data-ttu-id="c24c9-151">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c24c9-151">If successful, this method returns a `201 Created` response code and a [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="80d60-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="80d60-150">Response</span></span>
+<span data-ttu-id="80d60-151">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="80d60-151">If successful, this method returns a `201 Created` response code and a [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c24c9-152">Пример</span><span class="sxs-lookup"><span data-stu-id="c24c9-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="80d60-152">Пример</span><span class="sxs-lookup"><span data-stu-id="80d60-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c24c9-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="c24c9-153">Request</span></span>
-<span data-ttu-id="c24c9-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c24c9-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="80d60-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="80d60-153">Request</span></span>
+<span data-ttu-id="80d60-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="80d60-154">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 248
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c24c9-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="c24c9-155">Response</span></span>
-<span data-ttu-id="c24c9-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c24c9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="80d60-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="80d60-155">Response</span></span>
+<span data-ttu-id="80d60-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="80d60-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -98,7 +98,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

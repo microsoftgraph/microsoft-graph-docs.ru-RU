@@ -1,31 +1,31 @@
 ---
-title: Получение Секурескореконтролпрофиле
+title: Получение объектов secureScoreControlProfile
 description: Получение свойств и связей объекта Секурескореконтролпрофиле.
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 6accac07ab66a57303dd3881b47daae82deb2a9f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: afdfde0e87c180af7e3cdf7523966526649ad9f6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629756"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951430"
 ---
-# <a name="get-securescorecontrolprofile"></a><span data-ttu-id="0d4c1-103">Получение Секурескореконтролпрофиле</span><span class="sxs-lookup"><span data-stu-id="0d4c1-103">Get secureScoreControlProfile</span></span>
+# <a name="get-securescorecontrolprofile"></a><span data-ttu-id="b944f-103">Получение объектов secureScoreControlProfile</span><span class="sxs-lookup"><span data-stu-id="b944f-103">Get secureScoreControlProfile</span></span>
 
-<span data-ttu-id="0d4c1-104">Получение свойств и связей объекта [секурескореконтролпрофиле](../resources/securescorecontrolprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="0d4c1-104">Retrieve the properties and relationships of an [securescorecontrolprofile](../resources/securescorecontrolprofile.md) object.</span></span>
+<span data-ttu-id="b944f-104">Получение свойств и связей объекта [секурескореконтролпрофиле](../resources/securescorecontrolprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="b944f-104">Retrieve the properties and relationships of an [securescorecontrolprofile](../resources/securescorecontrolprofile.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0d4c1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0d4c1-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b944f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b944f-105">Permissions</span></span>
 
-<span data-ttu-id="0d4c1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0d4c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b944f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b944f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0d4c1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0d4c1-108">Permission type</span></span>      | <span data-ttu-id="0d4c1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0d4c1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b944f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b944f-108">Permission type</span></span>      | <span data-ttu-id="b944f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b944f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0d4c1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0d4c1-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="0d4c1-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d4c1-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
-|<span data-ttu-id="0d4c1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0d4c1-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="0d4c1-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-113">Not supported.</span></span>  |
-|<span data-ttu-id="0d4c1-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="0d4c1-114">Application</span></span> | <span data-ttu-id="0d4c1-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d4c1-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="b944f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b944f-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="b944f-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b944f-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>   |
+|<span data-ttu-id="b944f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b944f-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="b944f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b944f-113">Not supported.</span></span>  |
+|<span data-ttu-id="b944f-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="b944f-114">Application</span></span> | <span data-ttu-id="b944f-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b944f-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0d4c1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0d4c1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b944f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b944f-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,25 +33,25 @@ ms.locfileid: "33629756"
 GET /security/securescorecontrolprofiles/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0d4c1-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0d4c1-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b944f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b944f-117">Request headers</span></span>
 
-| <span data-ttu-id="0d4c1-118">Имя</span><span class="sxs-lookup"><span data-stu-id="0d4c1-118">Name</span></span>      |<span data-ttu-id="0d4c1-119">Описание</span><span class="sxs-lookup"><span data-stu-id="0d4c1-119">Description</span></span>|
+| <span data-ttu-id="b944f-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b944f-118">Name</span></span>      |<span data-ttu-id="b944f-119">Описание</span><span class="sxs-lookup"><span data-stu-id="b944f-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="0d4c1-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0d4c1-120">Authorization</span></span>  | <span data-ttu-id="0d4c1-121">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-121">Bearer {code}.</span></span> <span data-ttu-id="0d4c1-122">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-122">Required.</span></span>|
+| <span data-ttu-id="b944f-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b944f-120">Authorization</span></span>  | <span data-ttu-id="b944f-121">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="b944f-121">Bearer {code}.</span></span> <span data-ttu-id="b944f-122">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="b944f-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0d4c1-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0d4c1-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b944f-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b944f-123">Request body</span></span>
 
-<span data-ttu-id="0d4c1-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b944f-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b944f-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0d4c1-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="0d4c1-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b944f-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="b944f-125">Response</span></span>
 
-<span data-ttu-id="0d4c1-126">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескореконтролпрофиле** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-126">If successful, this method returns a `200 OK` response code and a **secureScoreControlProfile** object in the response body.</span></span> <span data-ttu-id="0d4c1-127">Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="0d4c1-128">Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="0d4c1-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="b944f-126">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескореконтролпрофиле** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b944f-126">If successful, this method returns a `200 OK` response code and a **secureScoreControlProfile** object in the response body.</span></span> <span data-ttu-id="b944f-127">Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="b944f-127">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="b944f-128">Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="b944f-128">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="0d4c1-129">Пример</span><span class="sxs-lookup"><span data-stu-id="0d4c1-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b944f-129">Пример</span><span class="sxs-lookup"><span data-stu-id="b944f-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0d4c1-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="0d4c1-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b944f-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="b944f-130">Request</span></span>
 
-<span data-ttu-id="0d4c1-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-131">The following is an example of the request.</span></span>
+<span data-ttu-id="b944f-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b944f-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_securescorecontrolprofile"
@@ -61,9 +61,9 @@ GET /security/securescorecontrolprofiles/{id}
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 ```
 
-### <a name="response"></a><span data-ttu-id="0d4c1-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="0d4c1-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b944f-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="b944f-132">Response</span></span>
 
-<span data-ttu-id="0d4c1-133">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0d4c1-133">The following is an example of the response.</span></span>
+<span data-ttu-id="b944f-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b944f-133">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -123,6 +123,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b944f-134">Образец кода SDK</span><span class="sxs-lookup"><span data-stu-id="b944f-134">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b944f-135">C#</span><span class="sxs-lookup"><span data-stu-id="b944f-135">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofile-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b944f-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="b944f-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofile-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -130,6 +140,10 @@ Content-type: application/json
   "description": "get secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

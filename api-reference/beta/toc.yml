@@ -69,22 +69,22 @@ items:
             href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
-          - name: '1: обзор различий'
+          - name: 1. Проверка различий
             expanded: true
             items:
-              - name: Обращения
+              - name: Запросы
                 href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
-              - name: Функции служб
+              - name: Функции службы
                 href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
               - name: Типы ресурсов
                 href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
-              - name: Свойства объекта
+              - name: Свойства объектов
                 href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
               - name: Методы
                 href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
-          - name: '2: Проверка использования API'
+          - name: 2. Изучение использования API
             href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
-          - name: '3: Просмотр сведений о приложении'
+          - name: 3. Проверка сведений о приложении
             expanded: true
             items:
               - name: Регистрация приложения
@@ -93,7 +93,7 @@ items:
                 href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
               - name: Клиентские библиотеки .NET
                 href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
-          - name: '4: развертывание, тестирование и расширение'
+          - name: '4. Развертывание, тестирование и расширение'
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
   - name: Использование пакетов SDK
     items:
@@ -1671,6 +1671,8 @@ items:
                     href: api/intune-apps-mobileappdependency-delete.md
                   - name: Обновление
                     href: api/intune-apps-mobileappdependency-update.md
+              - name: Тип зависимости мобильных приложений
+                href: resources/intune-apps-mobileappdependencytype.md
               - name: Состояние установки мобильных приложений
                 href: resources/intune-apps-mobileappinstallstatus.md
                 items:
@@ -3370,6 +3372,17 @@ items:
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
               - name: Тип защиты учетных данных для местного системного центра в Device Guard
                 href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
+              - name: Производный поставщик учетных данных для управления устройствами
+                href: resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md
+              - name: Тип уведомления о получении учетных данных для управления устройствами
+                href: resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md
+              - name: Параметры производных учетных данных управления устройствами
+                href: resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md
+                items:
+                  - name: Получение
+                    href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-get.md
+                  - name: Обновление
+                    href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-update.md
               - name: Параметры управления устройствами
                 href: resources/intune-deviceconfig-devicemanagementsettings.md
               - name: Локальный пользователь или группа для прав пользователя для управления устройством
@@ -3440,6 +3453,8 @@ items:
                     href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
               - name: Тип лицензии для обновления выпуска
                 href: resources/intune-deviceconfig-editionupgradelicensetype.md
+              - name: Тип сертификата электронной почты
+                href: resources/intune-deviceconfig-emailcertificatetype.md
               - name: Продолжительность синхронизации электронной почты
                 href: resources/intune-deviceconfig-emailsyncduration.md
               - name: Расписание синхронизации электронной почты
@@ -3790,6 +3805,19 @@ items:
                     href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
                   - name: Обновление
                     href: api/intune-deviceconfig-ioscustomconfiguration-update.md
+              - name: Конфигурация проверки подлинности производных учетных данных iOS
+                href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
+                items:
+                  - name: Список
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-list.md
+                  - name: Получение
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-get.md
+                  - name: Создание
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-create.md
+                  - name: Удаление
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-update.md
               - name: Конфигурация функций для устройств iOS
                 href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
                 items:
@@ -4407,7 +4435,7 @@ items:
               - name: Неподдерживаемая конфигурация устройства
                 href: resources/intune-deviceconfig-unsupporteddeviceconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
@@ -4498,7 +4526,7 @@ items:
               - name: Политика соответствия требованиям для Windows 10
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -5070,7 +5098,7 @@ items:
               - name: Конфигурация VPN для Windows
                 href: resources/intune-deviceconfig-windowsvpnconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-windowsvpnconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windowsvpnconfiguration-get.md
@@ -5135,7 +5163,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-devices-applepushnotificationcertificate-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-devices-applepushnotificationcertificate-update.md
               - name: Событие устранения неполадок маркера VPP Apple
                 href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
@@ -5155,7 +5183,7 @@ items:
               - name: Событие аудита
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-auditing-auditevent-list.md
                   - name: Получение
                     href: api/intune-auditing-auditevent-get.md
@@ -5329,7 +5357,7 @@ items:
               - name: Экземпляр сложного параметра управления устройствами
                 href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
                   - name: Получение
                     href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
@@ -5365,7 +5393,7 @@ items:
               - name: Намерение управления устройствами
                 href: resources/intune-deviceintent-devicemanagementintent.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceintent-devicemanagementintent-list.md
                   - name: Получение
                     href: api/intune-deviceintent-devicemanagementintent-get.md
@@ -5377,6 +5405,8 @@ items:
                     href: api/intune-deviceintent-devicemanagementintent-update.md
                   - name: Действие updateSettings
                     href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+                  - name: действие Мигратетотемплате
+                    href: api/intune-deviceintent-devicemanagementintent-migratetotemplate.md
                   - name: Действие назначения
                     href: api/intune-deviceintent-devicemanagementintent-assign.md
               - name: Назначение намерения управления устройствами
@@ -5471,7 +5501,7 @@ items:
                     href: api/intune-devices-devicemanagementscript-delete.md
                   - name: Обновление
                     href: api/intune-devices-devicemanagementscript-update.md
-                  - name: назначения действия
+                  - name: Действие назначения
                     href: api/intune-devices-devicemanagementscript-assign.md
               - name: Назначение сценария управления устройствами
                 href: resources/intune-devices-devicemanagementscriptassignment.md
@@ -5550,7 +5580,7 @@ items:
               - name: Определение параметра управления устройствами
                 href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
                   - name: Получение
                     href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
@@ -5580,7 +5610,7 @@ items:
               - name: Экземпляр параметра строки управления устройствами
                 href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
                   - name: Получение
                     href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
@@ -5752,6 +5782,8 @@ items:
                     href: api/intune-devices-manageddevice-playlostmodesound.md
                   - name: Действие setDeviceName
                     href: api/intune-devices-manageddevice-setdevicename.md
+                  - name: действие Ротатефилеваулткэй
+                    href: api/intune-devices-manageddevice-rotatefilevaultkey.md
                   - name: Действие retire
                     href: api/intune-devices-manageddevice-retire.md
                   - name: Действие wipe
@@ -5948,7 +5980,7 @@ items:
               - name: Партнерская служба удаленного помощника
                 href: resources/intune-remoteassistance-remoteassistancepartner.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-remoteassistance-remoteassistancepartner-list.md
                   - name: Получение
                     href: api/intune-remoteassistance-remoteassistancepartner-get.md
@@ -5970,6 +6002,19 @@ items:
                 href: resources/intune-devices-revokeapplevpplicensesactionresult.md
               - name: Расписание запуска
                 href: resources/intune-devices-runschedule.md
+              - name: Сводка по состоянию категории базовых показателей безопасности
+                href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
+                items:
+                  - name: Список
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
               - name: Состояние соответствия требованиям базового плана безопасности
                 href: resources/intune-deviceintent-securitybaselinecompliancestate.md
               - name: Состояние устройства базового плана безопасности
@@ -5985,32 +6030,6 @@ items:
                     href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
                   - name: Обновление
                     href: api/intune-deviceintent-securitybaselinedevicestate-update.md
-              - name: Состояние параметра базового плана безопасности
-                href: resources/intune-deviceintent-securitybaselinesettingstate.md
-                items:
-                  - name: Список
-                    href: api/intune-deviceintent-securitybaselinesettingstate-list.md
-                  - name: Получение
-                    href: api/intune-deviceintent-securitybaselinesettingstate-get.md
-                  - name: Создание
-                    href: api/intune-deviceintent-securitybaselinesettingstate-create.md
-                  - name: Удаление
-                    href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
-                  - name: Обновление
-                    href: api/intune-deviceintent-securitybaselinesettingstate-update.md
-              - name: Состояние базового плана безопасности
-                href: resources/intune-deviceintent-securitybaselinestate.md
-                items:
-                  - name: Перечисление
-                    href: api/intune-deviceintent-securitybaselinestate-list.md
-                  - name: Получение
-                    href: api/intune-deviceintent-securitybaselinestate-get.md
-                  - name: Создание
-                    href: api/intune-deviceintent-securitybaselinestate-create.md
-                  - name: Удаление
-                    href: api/intune-deviceintent-securitybaselinestate-delete.md
-                  - name: Обновление
-                    href: api/intune-deviceintent-securitybaselinestate-update.md
               - name: Сводка состояния базового плана безопасности
                 href: resources/intune-deviceintent-securitybaselinestatesummary.md
                 items:
@@ -6216,7 +6235,7 @@ items:
                     href: api/intune-wip-intunebrandingprofileassignment-get.md
                   - name: Создание
                     href: api/intune-wip-intunebrandingprofileassignment-create.md
-                  - name: Удаление
+                  - name: Удалить
                     href: api/intune-wip-intunebrandingprofileassignment-delete.md
                   - name: Обновление
                     href: api/intune-wip-intunebrandingprofileassignment-update.md
@@ -6426,7 +6445,7 @@ items:
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                   - name: Создание
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                  - name: Удалить
+                  - name: Удаление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                   - name: Обновление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -6634,7 +6653,7 @@ items:
               - name: Соединитель Mobile Threat Defense
                 href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                   - name: Получение
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -6651,12 +6670,12 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
               - name: Организация
                 href: resources/intune-onboarding-organization.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-onboarding-organization-list.md
                   - name: Получение
                     href: api/intune-onboarding-organization-get.md
@@ -7501,7 +7520,7 @@ items:
               - name: Программа
                 href: resources/program.md
                 items:
-                  - name: Создание
+                  - name: Создать
                     href: api/program-create.md
                   - name: Удаление
                     href: api/program-delete.md
@@ -7941,7 +7960,7 @@ items:
               - name: Определения ролей
                 href: resources/governanceroledefinition.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/governanceroledefinition-list.md
                   - name: Получение
                     href: api/governanceroledefinition-get.md
@@ -7957,7 +7976,7 @@ items:
               - name: Назначения ролей
                 href: resources/governanceroleassignment.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/governanceroleassignment-list.md
                   - name: Получение
                     href: api/governanceroleassignment-get.md
@@ -9093,7 +9112,7 @@ items:
             items:
               - name: Список
                 href: api/outlookuser-list-tasks.md
-              - name: Создание
+              - name: Create
                 href: api/outlookuser-post-tasks.md
               - name: Получение
                 href: api/outlooktask-get.md
@@ -9112,7 +9131,7 @@ items:
             items:
               - name: Список
                 href: api/outlookuser-list-taskfolders.md
-              - name: Создание
+              - name: Create
                 href: api/outlookuser-post-taskfolders.md
               - name: Получение
                 href: api/outlooktaskfolder-get.md
@@ -9127,9 +9146,9 @@ items:
           - name: Группа задач Outlook
             href: resources/outlooktaskgroup.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/outlookuser-list-taskgroups.md
-              - name: Создание
+              - name: Create
                 href: api/outlookuser-post-taskgroups.md
               - name: Получение
                 href: api/outlooktaskgroup-get.md
@@ -9302,47 +9321,49 @@ items:
               - name: Список диапазона
                 href: api/nameditem-range.md
       - name: Средства
-      - name: Открытые расширения
-        href: resources/opentypeextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+        expanded: true
         items:
-          - name: Создание открытого расширения
-            href: api/opentypeextension-post-opentypeextension.md
-          - name: Получение открытого расширения
-            href: api/opentypeextension-get.md
-          - name: Обновление открытого расширения
-            href: api/opentypeextension-update.md
-          - name: Удаление открытого расширения
-            href: api/opentypeextension-delete.md
-      - name: Расширения схемы
-        href: resources/schemaextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-        items:
-          - name: Перечисление расширений схемы
-            href: api/schemaextension-list.md
-          - name: Создание расширения схемы
-            href: api/schemaextension-post-schemaextensions.md
-          - name: Получение расширения схемы
-            href: api/schemaextension-get.md
-          - name: Обновление расширения схемы
-            href: api/schemaextension-update.md
-          - name: Удаление расширения схемы
-            href: api/schemaextension-delete.md
-      - name: Уведомления об изменениях
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-        items:
-          - name: Обзор
-            href: resources/webhooks.md
-          - name: Подписка
-            href: resources/subscription.md
+          - name: Открытые расширения
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: Список подписки
-                href: api/subscription-list.md
-              - name: Получение подписки
-                href: api/subscription-get.md
-              - name: Создание подписки
-                href: api/subscription-post-subscriptions.md
-              - name: Обновление подписки
-                href: api/subscription-update.md
-              - name: Удаление подписки
-                href: api/subscription-delete.md
+              - name: Создание открытого расширения
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Получение открытого расширения
+                href: api/opentypeextension-get.md
+              - name: Обновление открытого расширения
+                href: api/opentypeextension-update.md
+              - name: Удаление открытого расширения
+                href: api/opentypeextension-delete.md
+          - name: Расширения схемы
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Перечисление расширений схемы
+                href: api/schemaextension-list.md
+              - name: Создание расширения схемы
+                href: api/schemaextension-post-schemaextensions.md
+              - name: Получение расширения схемы
+                href: api/schemaextension-get.md
+              - name: Обновление расширения схемы
+                href: api/schemaextension-update.md
+              - name: Удаление расширения схемы
+                href: api/schemaextension-delete.md
+          - name: Уведомления об изменениях
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: Обзор
+                href: resources/webhooks.md
+              - name: Подписка
+                href: resources/subscription.md
+                items:
+                  - name: Список подписки
+                    href: api/subscription-list.md
+                  - name: Получение подписки
+                    href: api/subscription-get.md
+                  - name: Создание подписки
+                    href: api/subscription-post-subscriptions.md
+                  - name: Обновление подписки
+                    href: api/subscription-update.md
+                  - name: Удаление подписки
+                    href: api/subscription-delete.md
