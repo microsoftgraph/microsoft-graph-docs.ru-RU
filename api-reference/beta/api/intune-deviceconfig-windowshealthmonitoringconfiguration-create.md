@@ -1,15 +1,15 @@
 ---
 title: Создание Виндовшеалсмониторингконфигуратион
 description: Создание нового объекта Виндовшеалсмониторингконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fcc2c701df05f175c5123da5685d397ca2c3947
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a594b406a41eb307b4a3347cfa3f0eb8ecda35e1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514961"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917956"
 ---
 # <a name="create-windowshealthmonitoringconfiguration"></a>Создание Виндовшеалсмониторингконфигуратион
 
@@ -44,23 +44,24 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовшеалсмониторингконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовшеалсмониторингконфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Алловдевицехеалсмониторинг|[Включение](../resources/intune-shared-enablement.md)|Включает мониторинг работоспособности устройств на устройстве. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|Конфигдевицехеалсмониторингскопе|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|СепЦифиес набор событий, полученных с устройства, на котором включен мониторинг работоспособности. Возможные значения: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|Конфигдевицехеалсмониторингскопе|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Задает набор событий, полученных с устройства, на котором включен мониторинг работоспособности. Возможные значения: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|Конфигдевицехеалсмониторингкустомскопе|Строка|Указывает настраиваемый набор событий, собранных с устройства, на котором включен мониторинг работоспособности|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 371
+Content-length: 471
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -86,7 +87,8 @@ Content-length: 371
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
 
@@ -95,7 +97,7 @@ Content-length: 371
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 643
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -110,10 +112,10 @@ Content-Length: 543
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

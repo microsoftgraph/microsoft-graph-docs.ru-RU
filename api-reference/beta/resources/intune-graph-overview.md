@@ -1,15 +1,15 @@
 ---
 title: Использование API Graph для Intune — API Microsoft Graph
 description: Перечисление API Microsoft Graph для коечных точек Intune (REST), которые можно использовать для управления организацией клиента, его устройствами, приложениями, доступом и ресурсами.
-author: tfitzmac
+author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: fc254772a5b4db131a5cda45fc83b336bf12f993
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 883fce914176b2e08d49e4de414cc7c09776714a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575963"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941193"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 

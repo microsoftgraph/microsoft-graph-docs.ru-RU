@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Манажеддевицеовнертипе
 description: Тип владельца устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21ee6fa9a64dfb0891282ff79363ed1ca8f57bdd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb4c0fe2440c17453d5941138eade3b9911b9dda
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521196"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941977"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>тип перечисления Манажеддевицеовнертипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32521196"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|внутрихолдинговом|1 |Принадлежит компании.|
-|personal|2 |Принадлежит пользователю.|
-
+|внутрихолдинговом|1,1|Принадлежит компании.|
+|personal|2|Принадлежит пользователю.|
 
 
 

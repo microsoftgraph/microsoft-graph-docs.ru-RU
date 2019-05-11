@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовскиоскаутологон
 description: Класс, используемый для определения конфигурации киоска с автовходом
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dde52acf7a90f60d5065c4c12e0b0221d0afc379
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9a3f90bb52d05e0cd5f3c46da268cf2829aa8c2f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522428"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943909"
 ---
 # <a name="windowskioskautologon-resource-type"></a>Тип ресурса Виндовскиоскаутологон
 
@@ -20,13 +20,13 @@ ms.locfileid: "32522428"
 Класс, используемый для определения конфигурации киоска с автовходом
 
 
-НаСледуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
+Наследуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "32522428"
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
-
 
 
 

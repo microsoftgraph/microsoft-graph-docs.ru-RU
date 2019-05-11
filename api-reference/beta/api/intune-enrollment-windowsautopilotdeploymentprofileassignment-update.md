@@ -1,15 +1,15 @@
 ---
 title: Обновление Виндовсаутопилотдеплойментпрофилеассигнмент
 description: Обновление свойств объекта Виндовсаутопилотдеплойментпрофилеассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 562ae8b137754acc3475ba98fb335a4f7e7310dd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b5f28f6208fe81e251b5a5a2dc79c8e56def15ad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532662"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908219"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>Обновление Виндовсаутопилотдеплойментпрофилеассигнмент
 
@@ -50,12 +50,12 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля развертывания Windows для автопилота.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,7 +90,6 @@ Content-Length: 232
   }
 }
 ```
-
 
 
 

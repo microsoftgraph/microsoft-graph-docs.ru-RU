@@ -1,30 +1,30 @@
 ---
-title: Получение windowsMalwareInformation
-description: Чтение свойств и связей объекта windowsMalwareInformation.
+title: Удаление Иосдериведкредентиалаусентикатионконфигуратион
+description: Удаляет объект Иосдериведкредентиалаусентикатионконфигуратион.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ec6c630944d8f70f7ef5ab96af2905449356b8d
+ms.openlocfilehash: dfdc0035ad2f27db19cbe480f56d353c66b92447
 ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909297"
+ms.locfileid: "33957087"
 ---
-# <a name="get-windowsmalwareinformation"></a>Получение windowsMalwareInformation
+# <a name="delete-iosderivedcredentialauthenticationconfiguration"></a>Удаление Иосдериведкредентиалаусентикатионконфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) .
+Удаляет объект [иосдериведкредентиалаусентикатионконфигуратион](../resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -34,11 +34,10 @@ ms.locfileid: "33909297"
 }
 -->
 ``` http
-GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
-
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -46,38 +45,24 @@ GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 381
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.windowsMalwareInformation",
-    "id": "8ebd2b9b-2b9b-8ebd-9b2b-bd8e9b2bbd8e",
-    "displayName": "Display Name value",
-    "additionalInformationUrl": "https://example.com/additionalInformationUrl/",
-    "severity": "low",
-    "category": "adware",
-    "lastDetectionDateTime": "2016-12-31T23:59:27.3805104-08:00"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 

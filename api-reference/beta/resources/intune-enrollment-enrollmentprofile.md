@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса объекта enrollmentprofile
 description: Ресурс объекта enrollmentprofile представляет коллекцию конфигураций, которым необходимо предоставить предварительную регистрацию, чтобы включить регистрацию определенных устройств, удостоверения которых были предварительно настроены. Для этого типа профиля назначаются идентификаторы предварительно подготовленных устройств, чтобы применить конфигурации профиля при регистрации соответствующего устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abc00f27ef65cdddfef30a06bef55a8fa44e488a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d105f7318e177abac8071e11a21c9641d35c2359
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573839"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941585"
 ---
 # <a name="enrollmentprofile-resource-type"></a>Тип ресурса объекта enrollmentprofile
 
@@ -28,21 +28,21 @@ ms.locfileid: "32573839"
 |[Удаление объекта enrollmentprofile](../api/intune-enrollment-enrollmentprofile-delete.md)|Нет|Удаляет объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md).|
 |[Обновление объекта enrollmentprofile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md);|Обновление свойств объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) .|
 |[Действие setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Нет|Н/Д|
-|[функция функция exportmobileconfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|Экспорт конфигурации мобильного устройства|
+|[функция функция exportmobileconfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Строка|Экспорт конфигурации мобильного устройства|
 |[Действие updateDeviceProfileAssignment](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|GUID объекта|
-|displayName|String|Имя профиля|
+|displayName|Строка|Имя профиля|
 |description|String|Описание профиля|
-|Рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
-|Конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации|
-|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
-|Рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
+|Рекуиресусераусентикатион|Логический|Указывает, требуется ли для профиля проверка подлинности пользователя|
+|Конфигуратионендпоинтурл|Строка|URL-адрес конечной точки конфигурации, используемый для регистрации|
+|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
+|Рекуирекомпанипорталонсетупассистантенролледдевицес|Логический|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,7 +65,6 @@ ms.locfileid: "32573839"
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Список Апплевпнконфигуратионс
 description: Список свойств и связей объектов appleVpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef4e0c40c66fcaba0c34c8b2d03e9e5adc42affb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6f43508f84a912898f86cdeecae9cac19ecce066
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471569"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928115"
 ---
 # <a name="list-applevpnconfigurations"></a>Список Апплевпнконфигуратионс
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -140,7 +140,6 @@ Content-Length: 2334
   ]
 }
 ```
-
 
 
 

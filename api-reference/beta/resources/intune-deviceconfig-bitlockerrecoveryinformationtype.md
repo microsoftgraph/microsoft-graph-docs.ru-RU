@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Битлоккеррековеринформатионтипе
 description: Типы Битлоккеррековеринформатионтипе
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e46dfbecf3c8018cbf0d73dc61721046c43e5b8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b628e0ac44e0ae595e5cca37a0752ae07336ca1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549438"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947500"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>тип перечисления Битлоккеррековеринформатионтипе
 
@@ -22,9 +22,8 @@ ms.locfileid: "32549438"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Пассвордандкэй|1 |Хранение паролей восстановления и пакетов ключевых ключей.|
-|Пассвордонли|2 |Сохранять только пароли восстановления.|
-
+|Пассвордандкэй|1,1|Хранение паролей восстановления и пакетов ключевых ключей.|
+|Пассвордонли|2|Сохранять только пароли восстановления.|
 
 
 

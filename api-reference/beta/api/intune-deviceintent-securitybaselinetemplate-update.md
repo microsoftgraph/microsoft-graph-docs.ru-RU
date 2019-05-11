@@ -1,15 +1,15 @@
 ---
 title: Обновление Секуритибаселинетемплате
 description: Обновление свойств объекта Секуритибаселинетемплате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f2cb66df449dc8586ef3fb3f822fadf62891902
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2dfd292a234eafca5ebacd3757566ff2675da6f0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466170"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33911709"
 ---
 # <a name="update-securitybaselinetemplate"></a>Обновление Секуритибаселинетемплате
 
@@ -35,6 +35,7 @@ ms.locfileid: "32466170"
 -->
 ``` http
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}
+PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,9 +51,12 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор шаблона, унаследованный от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|displayName|String|Отображаемое имя шаблона, унаследованное от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|id|String|Идентификатор шаблона, унаследованный от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|displayName|Строка|Отображаемое имя шаблона, унаследованное от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |description|String|Описание шаблона, унаследованное от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|versionInfo|Строка|Сведения о версии шаблона, унаследованные от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|нерекомендуемый|Логический|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона. Наследуется от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|Интенткаунт|Int32|Количество целей, созданных на основе этого шаблона. Наследуется от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 
 
@@ -66,12 +70,15 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 145
+Content-length: 232
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
 
@@ -80,16 +87,18 @@ Content-length: 145
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 281
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
-
 
 
 
