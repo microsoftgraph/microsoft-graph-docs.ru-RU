@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Метередконнектионлимиттипе
 description: Параметры ограничения лимитного подключения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb0cd84d5cdee909cb897ee46010551605ab1f5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6e7cabe52bdf3c6b0a77304b7dd11c88f50cc99
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554366"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950769"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип перечисления Метередконнектионлимиттипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32554366"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unrestricted|нуль|Unrestricted|
-|стандарт|1 |ИСПРАВЛЕНО|
-|переменная|2 |Переменная|
-
+|стандарт|1,1|ИСПРАВЛЕНО|
+|переменная|2|Переменная|
 
 
 

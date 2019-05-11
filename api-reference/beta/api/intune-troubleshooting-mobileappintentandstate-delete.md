@@ -1,15 +1,15 @@
 ---
 title: Удаление Мобилеаппинтентандстате
 description: Удаляет объект Мобилеаппинтентандстате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8d463ade2c940938694037b4fbad6bc6a102d6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95be9c13776e875e1e9a09e6534299b5592b4762
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541292"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899342"
 ---
 # <a name="delete-mobileappintentandstate"></a>Удаление Мобилеаппинтентандстате
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

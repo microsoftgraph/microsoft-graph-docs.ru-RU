@@ -1,15 +1,15 @@
 ---
 title: Удаление Виндовсдомаинжоинконфигуратион
 description: Удаляет объект Виндовсдомаинжоинконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 74cc1c53712bd20406209fc7ceca47d5eceb5786
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e1ed4774bf522ca820880f6a5e07e4bf87ed1f07
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526813"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897851"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>Удаление Виндовсдомаинжоинконфигуратион
 

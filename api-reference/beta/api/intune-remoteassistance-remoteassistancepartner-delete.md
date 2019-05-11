@@ -1,15 +1,15 @@
 ---
 title: Удаление объекта remoteAssistancePartner
 description: Удаляет объект remoteAssistancePartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebc63833ffc5005e400f5a331bce6cad1481e1fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f0edc4c7175cc818900c71adbf89300448a784d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527261"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899370"
 ---
 # <a name="delete-remoteassistancepartner"></a>Удаление объекта remoteAssistancePartner
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartner
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

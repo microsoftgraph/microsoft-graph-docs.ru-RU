@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Ндесконнектор
 description: Сущность, представляющая локальный Соединитель NDES.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4e0f8c4d59a668354e81b04bd84342b0354138a5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554473"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950790"
 ---
 # <a name="ndesconnector-resource-type"></a>Тип ресурса Ндесконнектор
 
@@ -33,10 +33,10 @@ ms.locfileid: "32554473"
 |:---|:---|:---|
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
-|state|[Ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|String|Понятное имя соединителя NDES Connector.|
+|состояние|[Ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
+|displayName|Строка|Понятное имя соединителя NDES Connector.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,7 +56,6 @@ ms.locfileid: "32554473"
   "displayName": "String"
 }
 ```
-
 
 
 

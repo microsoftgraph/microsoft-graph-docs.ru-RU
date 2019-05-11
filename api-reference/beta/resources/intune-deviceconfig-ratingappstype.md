@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Ратингаппстипе
 description: Оценка приложений как в мультимедийном контенте
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44e9c83846eed23588dbf796be9e3f7969829e84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 818b57499ceb3f4cfd0136572cd229b9f0fe9e80
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566698"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950958"
 ---
 # <a name="ratingappstype-enum-type"></a>тип перечисления Ратингаппстипе
 
@@ -23,12 +23,11 @@ ms.locfileid: "32566698"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое приложений|
-|Аллблоккед|1 |Не разрешать контент приложений|
-|agesAbove4|2 |4 +, возраст 4 и выше|
-|agesAbove9|3 |9 +, возраст 9 и более поздних версий|
-|agesAbove12|4 |12 +, 12 лет и более |
-|agesAbove17|5 |17 +, возраст 17 и выше|
-
+|Аллблоккед|1,1|Не разрешать контент приложений|
+|agesAbove4|2|4 +, возраст 4 и выше|
+|agesAbove9|4|9 +, возраст 9 и более поздних версий|
+|agesAbove12|SP4|12 +, 12 лет и более |
+|agesAbove17|17:00|17 +, возраст 17 и выше|
 
 
 

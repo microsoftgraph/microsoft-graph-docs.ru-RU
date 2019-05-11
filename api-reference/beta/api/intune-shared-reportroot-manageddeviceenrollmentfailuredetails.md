@@ -1,15 +1,15 @@
 ---
 title: Функция Манажеддевицеенроллментфаилуредетаилс
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e861b8947396c67c72ba47493d30e6010905b107
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37a94b9429ec93d05fe524d54b1d8a882255cc4e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526925"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898285"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 

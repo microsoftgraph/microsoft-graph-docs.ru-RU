@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Ратингиреландмовиестипе
 description: Метки оценок фильмов в Ирландии
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fd2468b3f6a1d17dfd2e6dd4ee3d088848fdeeb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1dd7083b83b4461045017e4ded1cf5047ffc703d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461215"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951073"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>тип перечисления Ратингиреландмовиестипе
 
@@ -28,9 +28,8 @@ ms.locfileid: "32461215"
 |Паренталгуиданце|4|Категория PG рекомендует родительские рекомендации|
 |agesAbove12|SP4|Классификация 12A подходит для зрителей от 12 или более ранних версий|
 |agesAbove15|17:00|Классификация 15A подходит для зрителей от 15 или более ранних версий|
-|agesAbove16|ICMPv6|16-Классификация подходит для зрителей от 16 или более ранних версий|
-|взрослые|см|18 классификация, подходящая только для взрослых|
-
+|agesAbove16|6 |16-Классификация подходит для зрителей от 16 или более ранних версий|
+|взрослые|7 |18 классификация, подходящая только для взрослых|
 
 
 

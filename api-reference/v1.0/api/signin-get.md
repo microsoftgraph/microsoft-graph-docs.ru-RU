@@ -4,12 +4,12 @@ description: Описывает метод Get ресурса SignIn (Entity) и
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d1971a0c0dd85ab07ff7a23204b31c141c130a62
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 218812e25967a6643636ee6f027b2592a2088647
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629728"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951439"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -34,7 +34,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки отклика. Сведения о том, как использовать эти параметры, представлены в разделе [Параметры запроса OData](/graph/query_parameters).
+Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -81,6 +81,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 ```
+#### <a name="sdk-sample-code"></a>Образец кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -137,5 +147,9 @@ Content-length: 211
   "description": "Get signIn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

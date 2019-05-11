@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Ратингжапантелевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11d65f44791ebbaeac35c6814070b9b707f9a268
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: de82f29720b125db4751de693e3d9a349177dbc9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556874"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950867"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>тип перечисления Ратингжапантелевисионтипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32556874"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|Аллблоккед|1 |Не разрешать показ контента|
-|ЕксплиЦиталловед|2 |Все ТЕЛЕВИЗИОНные материалы явно разрешены|
-
+|Аллблоккед|1,1|Не разрешать показ контента|
+|ЕксплиЦиталловед|2|Все ТЕЛЕВИЗИОНные материалы явно разрешены|
 
 
 

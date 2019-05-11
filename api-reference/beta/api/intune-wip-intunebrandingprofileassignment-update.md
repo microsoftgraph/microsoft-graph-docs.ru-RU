@@ -1,15 +1,15 @@
 ---
 title: Обновление Интунебрандингпрофилеассигнмент
 description: Обновление свойств объекта Интунебрандингпрофилеассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16b49bd41ed0ce612b1d481553386cc8f789e187
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1673955a1aa96d84604db512e85acc5605d1641f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541782"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898870"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Обновление Интунебрандингпрофилеассигнмент
 
@@ -50,12 +50,12 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignm
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
+|id|Строка|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль фирменной символики.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,7 +90,6 @@ Content-Length: 220
   }
 }
 ```
-
 
 
 

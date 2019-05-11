@@ -1,15 +1,15 @@
 ---
 title: Функция Манажеддевицеенроллменттопфаилурес
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: edc44099ed325455b3bd94b01aa1cec9b9582c0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cd03290845fdf672fa298cfc4996785e8d3cddc8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526848"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898230"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>Функция Манажеддевицеенроллменттопфаилурес
 

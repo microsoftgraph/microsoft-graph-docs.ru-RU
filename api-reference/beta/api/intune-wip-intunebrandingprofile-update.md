@@ -1,15 +1,15 @@
 ---
 title: Обновление Интунебрандингпрофиле
 description: Обновление свойств объекта Интунебрандингпрофиле.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f957966ed18003b65b164aff53b4a3d74468051
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e59fcf95d436aca53cb5dc6ab61feda6f7d6d77
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541838"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899188"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление Интунебрандингпрофиле
 
@@ -51,18 +51,18 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ профиля|
-|имя_профиля|String|Имя профиля|
-|Профиледескриптион|String|Описание профиля|
+|имя_профиля|Строка|Имя профиля|
+|Профиледескриптион|Строка|Описание профиля|
 |Исдефаултпрофиле|Логический|Показывает, используется ли профиль по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании Брандингпрофиле.|
 |lastModifiedDateTime|DateTimeOffset|При последнем изменении Брандингпрофиле.|
 |displayName|Строка|Название компании или организации, которое отображается пользователям.|
-|contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
-|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
-|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
-|contactITNotes|String|Текстовые комментарии в отношении пользователя или организации, ответственных за ИТ-поддержку.|
-|privacyUrl|String|URL-адрес страницы с политикой конфиденциальности компании или организации.|
-|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
+|contactITName|Строка|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
+|contactITPhoneNumber|Строка|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
+|contactITEmailAddress|Строка|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
+|contactITNotes|Строка|Текстовые комментарии в отношении пользователя или организации, ответственных за ИТ-поддержку.|
+|privacyUrl|Строка|URL-адрес страницы с политикой конфиденциальности компании или организации.|
+|onlineSupportSiteUrl|Строка|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
 |showLogo|Логический|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
@@ -73,7 +73,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -172,7 +172,6 @@ Content-Length: 1377
   }
 }
 ```
-
 
 
 

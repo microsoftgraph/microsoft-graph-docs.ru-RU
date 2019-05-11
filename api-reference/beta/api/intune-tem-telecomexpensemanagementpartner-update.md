@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта telecomExpenseManagementPartner
 description: Обновление свойств объекта telecomExpenseManagementPartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eabd6e795558ee719ef3e6c1ac79039b3ef040b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d639e1e041940d9e7a742676a47557605d58e92
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526715"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897816"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Обновление объекта telecomExpenseManagementPartner
 
@@ -98,7 +98,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

@@ -1,16 +1,16 @@
 ---
-title: Обновление Секурескореконтролпрофиле
+title: Обновление объектов secureScoreControlProfile
 description: Обновление редактируемого объекта Секурескореконтролпрофиле в любом интегрированном решении для изменения различных свойств, таких как assignedTo или Тенантноте.
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 8f3193b72ac59528c386bb6207b17d4440e6c98a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629749"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951293"
 ---
-# <a name="update-securescorecontrolprofile"></a>Обновление Секурескореконтролпрофиле
+# <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
 Обновление редактируемого объекта **секурескореконтролпрофиле** в любом интегрированном решении для изменения различных свойств, таких как **assignedTo** или **тенантноте**.
 
@@ -47,7 +47,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.|
 |comment|String|Комментарии аналитика в элементе управления (для управления клиентом).|
-|state| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+|state| Строка|Управляемый аналитикой параметр для элемента управления. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о продукте, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре;). **Требуются поля поставщика и поставщика.** |
 
 
@@ -99,6 +99,14 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Образец кода SDK
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>Пример 2: запрос с заголовком предпочтения
 
@@ -201,6 +209,10 @@ Content-type: application/json
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

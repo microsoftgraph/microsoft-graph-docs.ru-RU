@@ -1,15 +1,15 @@
 ---
 title: Функция Жетманажеддевицесвисаппфаилурес
 description: Получает список устройств с неудачными приложениями
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d4f2800a187c62c1c6a894817f2405f88c6356d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 96d58ab7be68c7ba63f84bf686337230c9c5c11e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526841"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897802"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>Функция Жетманажеддевицесвисаппфаилурес
 

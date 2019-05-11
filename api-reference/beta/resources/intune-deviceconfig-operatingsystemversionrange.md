@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Оператингсистемверсионранже
 description: Диапазон версий операционной системы.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80b0afb706a71ef8e0e3d4877fa7d0df822fe1d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e7fe455bc0e934e08b858a084009ac5c8364a673
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566754"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950965"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Тип ресурса Оператингсистемверсионранже
 
@@ -23,10 +23,10 @@ ms.locfileid: "32566754"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|String|Описание этого диапазона (например, "допустимые сборки 1702")|
-|Ловестверсион|String|Наименьшая включающая версия, содержащаяся в этом диапазоне.|
-|Хигхестверсион|String|Максимальная включающая версия, которую содержит этот диапазон.|
+|Ловестверсион|Строка|Наименьшая включающая версия, содержащаяся в этом диапазоне.|
+|Хигхестверсион|Строка|Максимальная включающая версия, которую содержит этот диапазон.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,7 +44,6 @@ ms.locfileid: "32566754"
   "highestVersion": "String"
 }
 ```
-
 
 
 

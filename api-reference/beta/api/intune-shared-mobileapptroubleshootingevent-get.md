@@ -2,14 +2,14 @@
 title: Получение Мобилеапптраублешутинжевент
 description: Описывает метод Get Мобилеапптраублешутинжевент API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 474108fc1e6345a9fb436acf877a2aa1daf9c401
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2237edd34ab4a6e22032db997e45ed98bee570f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526967"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898684"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Получение Мобилеапптраублешутинжевент
 

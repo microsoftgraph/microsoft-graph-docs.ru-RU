@@ -1,15 +1,15 @@
 ---
 title: Список объектов telecomExpenseManagementPartner
 description: Список свойств и связей объектов telecomExpenseManagementPartner.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b75b93609cd9212c1bab3ac8a4fbe49ce974e0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66257f6c01303276e3bef387f2f38b3e34eb6abc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526806"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898187"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>Список объектов telecomExpenseManagementPartner
 
@@ -46,7 +46,7 @@ GET /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +78,6 @@ Content-Length: 358
   ]
 }
 ```
-
 
 
 

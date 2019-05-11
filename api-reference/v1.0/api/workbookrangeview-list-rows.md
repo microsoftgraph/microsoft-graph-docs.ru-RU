@@ -4,12 +4,12 @@ description: Получение списка, который включает в
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c0760e63fd9d1c143c4d4e649c093d83009374c8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 36e7c93133dd4298aa53898d05557cb88ca127c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600470"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951279"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -79,9 +79,11 @@ Content-length: 247
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Образец кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_rows-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_rows-Cs-snippets.md)]
 
 ---

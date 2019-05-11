@@ -1,15 +1,15 @@
 ---
 title: Действие sendCustomNotificationToCompanyPortal
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 43e0a5a9690d3f60f646eb5ed55e6d51ba2caab8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e44c1817d5387721755a1622eebc06a666c0f7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527058"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898397"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 

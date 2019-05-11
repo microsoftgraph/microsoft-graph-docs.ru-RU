@@ -1,15 +1,15 @@
 ---
 title: Получение объекта deviceCategory
 description: Чтение свойств и связей объекта deviceCategory.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 213265a4f9127c9095dd382688a98ce7154e099a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c65c06e13067b3ba299e0e6ca4fe15584667c99b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527163"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899300"
 ---
 # <a name="get-devicecategory"></a>Получение объекта deviceCategory
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства, возвращаемые при фактическом вызове, меняются в зависимости от контекста.
 

@@ -69,22 +69,22 @@ items:
             href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
-          - name: '1: обзор различий'
+          - name: 1. Проверка различий
             expanded: true
             items:
-              - name: Обращения
+              - name: Запросы
                 href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
-              - name: Функции служб
+              - name: Функции службы
                 href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
               - name: Типы ресурсов
                 href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
-              - name: Свойства объекта
+              - name: Свойства объектов
                 href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
               - name: Методы
                 href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
-          - name: '2: Проверка использования API'
+          - name: 2. Изучение использования API
             href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
-          - name: '3: Просмотр сведений о приложении'
+          - name: 3. Проверка сведений о приложении
             expanded: true
             items:
               - name: Регистрация приложения
@@ -93,7 +93,7 @@ items:
                 href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
               - name: Клиентские библиотеки .NET
                 href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
-          - name: '4: развертывание, тестирование и расширение'
+          - name: '4. Развертывание, тестирование и расширение'
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
   - name: Использование пакетов SDK
     items:
@@ -2372,7 +2372,7 @@ items:
                     href: api/intune-mam-defaultmanagedappprotection-get.md
                   - name: Создание
                     href: api/intune-mam-defaultmanagedappprotection-create.md
-                  - name: Удалить
+                  - name: Удаление
                     href: api/intune-mam-defaultmanagedappprotection-delete.md
                   - name: Обновление
                     href: api/intune-mam-defaultmanagedappprotection-update.md
@@ -2590,7 +2590,7 @@ items:
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                   - name: Создание
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                  - name: Удаление
+                  - name: Удалить
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                   - name: Обновление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -3830,7 +3830,7 @@ items:
           - name: Профили составляющих оценки безопасности
             href: resources/securescorecontrolprofile.md
             items:
-              - name: Получение профиля управления безопасной оценкой
+              - name: Получение профилей составляющих оценки безопасности
                 href: api/securescorecontrolprofile-get.md
               - name: Список профилей составляющих оценки безопасности
                 href: api/security-list-securescorecontrolprofiles.md
@@ -4227,47 +4227,49 @@ items:
               - name: Список диапазона
                 href: api/nameditem-range.md
       - name: Средства
-      - name: Открытые расширения
-        href: resources/opentypeextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+        expanded: true
         items:
-          - name: Создание открытого расширения
-            href: api/opentypeextension-post-opentypeextension.md
-          - name: Получение открытого расширения
-            href: api/opentypeextension-get.md
-          - name: Обновление открытого расширения
-            href: api/opentypeextension-update.md
-          - name: Удаление открытого расширения
-            href: api/opentypeextension-delete.md
-      - name: Расширения схемы
-        href: resources/schemaextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-        items:
-          - name: Перечисление расширений схемы
-            href: api/schemaextension-list.md
-          - name: Создание расширения схемы
-            href: api/schemaextension-post-schemaextensions.md
-          - name: Получение расширения схемы
-            href: api/schemaextension-get.md
-          - name: Обновление расширения схемы
-            href: api/schemaextension-update.md
-          - name: Удаление расширения схемы
-            href: api/schemaextension-delete.md
-      - name: Уведомления об изменениях
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-        items:
-          - name: Обзор
-            href: resources/webhooks.md
-          - name: Подписка
-            href: resources/subscription.md
+          - name: Открытые расширения
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: Список подписки
-                href: api/subscription-list.md
-              - name: Получение подписки
-                href: api/subscription-get.md
-              - name: Создание подписки
-                href: api/subscription-post-subscriptions.md
-              - name: Обновление подписки
-                href: api/subscription-update.md
-              - name: Удаление подписки
-                href: api/subscription-delete.md
+              - name: Создание открытого расширения
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Получение открытого расширения
+                href: api/opentypeextension-get.md
+              - name: Обновление открытого расширения
+                href: api/opentypeextension-update.md
+              - name: Удаление открытого расширения
+                href: api/opentypeextension-delete.md
+          - name: Расширения схемы
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: Перечисление расширений схемы
+                href: api/schemaextension-list.md
+              - name: Создание расширения схемы
+                href: api/schemaextension-post-schemaextensions.md
+              - name: Получение расширения схемы
+                href: api/schemaextension-get.md
+              - name: Обновление расширения схемы
+                href: api/schemaextension-update.md
+              - name: Удаление расширения схемы
+                href: api/schemaextension-delete.md
+          - name: Уведомления об изменениях
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: Обзор
+                href: resources/webhooks.md
+              - name: Подписка
+                href: resources/subscription.md
+                items:
+                  - name: Список подписки
+                    href: api/subscription-list.md
+                  - name: Получение подписки
+                    href: api/subscription-get.md
+                  - name: Создание подписки
+                    href: api/subscription-post-subscriptions.md
+                  - name: Обновление подписки
+                    href: api/subscription-update.md
+                  - name: Удаление подписки
+                    href: api/subscription-delete.md

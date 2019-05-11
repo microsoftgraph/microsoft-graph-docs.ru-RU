@@ -1,15 +1,15 @@
 ---
 title: Получение объекта windowsInformationProtectionAppLearningSummary
 description: Чтение свойств и связей объекта windowsInformationProtectionAppLearningSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b91adf5f634682da812d79a22c001afd45eb557
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75f643b3d62d19fe5e040da6aa763379c141132f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541887"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898702"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Получение объекта windowsInformationProtectionAppLearningSummary
 
@@ -49,7 +49,7 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsI
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +77,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

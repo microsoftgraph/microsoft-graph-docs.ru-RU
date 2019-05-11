@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта reportRoot
 description: Обновление свойств объекта reportRoot.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3127ca7804883c5e29fe91cf5e21bb15240a1314
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 845ee1c469bf0d986d8d417ad620cabf7f527884
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526953"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897837"
 ---
 # <a name="update-reportroot"></a>Обновление объекта reportRoot
 
@@ -51,7 +51,7 @@ PATCH /reports
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого объекта.|
+|id|Строка|Уникальный идентификатор для этого объекта.|
 
 
 

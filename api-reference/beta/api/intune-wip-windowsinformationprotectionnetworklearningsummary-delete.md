@@ -1,15 +1,15 @@
 ---
 title: Удаление windowsInformationProtectionNetworkLearningSummary
 description: Удаление объекта windowsInformationProtectionNetworkLearningSummary.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6bdfa4e60f582d0c7f1fc6df4ef1bfa17b199099
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd72b4ee58c2397eec679610d419e66beb4678a2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541215"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899237"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>Удаление windowsInformationProtectionNetworkLearningSummary
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsInformationProte
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

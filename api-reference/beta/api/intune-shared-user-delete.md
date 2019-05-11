@@ -1,15 +1,15 @@
 ---
 title: Удаление пользователя
 description: Удаляет объект user.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ecf07bf080a76e6f1fce515d41090be214e7a514
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 394876368b6de7bd76b4eb6a5f11cc4d923fdc88
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526862"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898148"
 ---
 # <a name="delete-user"></a>Удаление пользователя
 
