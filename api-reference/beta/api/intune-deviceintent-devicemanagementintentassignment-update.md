@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементинтентассигнмент
 description: Обновление свойств объекта Девицеманажементинтентассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18552402a6a0531ee1c966f71bd519e4b9127d31
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dace2f8babeabb492bbddfe7c0e9dac6c533565e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508353"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916163"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Обновление Девицеманажементинтентассигнмент
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceMa
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор назначения|
+|id|Строка|Идентификатор назначения|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения|
 
 
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

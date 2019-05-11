@@ -1,15 +1,15 @@
 ---
 title: Получение Макострустедрутцертификате
 description: Чтение свойств и связей объекта Макострустедрутцертификате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42b9451dfb03e74ee230164bb1b775f6ad779349
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4550b1a59ac622943b0ba6b8accaa125fd835db6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518480"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922285"
 ---
 # <a name="get-macostrustedrootcertificate"></a>Получение Макострустедрутцертификате
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,7 +86,6 @@ Content-Length: 582
   }
 }
 ```
-
 
 
 

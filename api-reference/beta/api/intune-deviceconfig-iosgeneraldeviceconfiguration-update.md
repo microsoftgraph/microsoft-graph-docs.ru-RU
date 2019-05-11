@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта iosGeneralDeviceConfiguration
 description: Обновление свойств объекта iosGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be9a3efd2ea681e3d774250073b1631a1f04d23a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 71a2618af07d459d52c379a27e47f7c251c9d97d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467269"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923456"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Обновление объекта iosGeneralDeviceConfiguration
 
@@ -45,20 +45,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountBlockModification|Логический|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Логический|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
@@ -131,18 +131,23 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |keyboardBlockSpellCheck|Логический|Указывает, следует ли заблокировать проверку правописания, когда устройство находится в защищенном режиме (iOS 8.1.3 и более поздних версий).|
 |kioskModeAllowAssistiveSpeak|Логический|Указывает, можно ли использовать специальные возможности речеобразования в режиме киоска.|
 |kioskModeAllowAssistiveTouchSettings|Логический|Указывает, следует ли запретить доступ к настройкам сенсорного управления со специальными возможностями в режиме киоска.|
-|kioskModeAllowAutoLock|Логический|Указывает, следует ли запретить автоблокировку устройства в режиме киоска.|
+|kioskModeAllowAutoLock|Логический|Указывает, следует ли запретить автоблокировку устройства в режиме киоска. ФунЦитоналити этого свойства является избыточным по умолчанию для ОС и является устаревшим. Вместо этого используйте Киоскмодеблоккаутолокк.|
+|Киоскмодеблоккаутолокк|Логический|Указывает, следует ли блокировать автоматическую блокировку устройств в режиме киоска.|
 |kioskModeAllowColorInversionSettings|Логический|Указывает, следует ли запретить доступ к настройкам инверсии цвета в режиме киоска.|
-|kioskModeAllowRingerSwitch|Логический|Указывает, можно ли использовать переключатель звонка в режиме киоска.|
-|kioskModeAllowScreenRotation|Логический|Указывает, следует ли запретить поворот экрана в режиме киоска.|
-|kioskModeAllowSleepButton|Логический|Указывает, можно ли использовать кнопку "Сон" в режиме киоска.|
-|kioskModeAllowTouchscreen|Логический|Указывает, можно ли использовать сенсорный экран в режиме киоска.|
+|kioskModeAllowRingerSwitch|Логический|Указывает, можно ли использовать переключатель звонка в режиме киоска. ФунЦитоналити этого свойства является избыточным по умолчанию для ОС и является устаревшим. Вместо этого используйте Киоскмодеблоккринжерсвитч.|
+|Киоскмодеблоккринжерсвитч|Логический|Указывает, следует ли запретить использование переключателя звонка в режиме киоска.|
+|kioskModeAllowScreenRotation|Логический|Указывает, следует ли запретить поворот экрана в режиме киоска. ФунЦитоналити этого свойства является избыточным по умолчанию для ОС и является устаревшим. Вместо этого используйте Киоскмодеблоккскринротатион.|
+|Киоскмодеблоккскринротатион|Логический|Указывает, следует ли блокировать поворот экрана в режиме киоска.|
+|kioskModeAllowSleepButton|Логический|Указывает, можно ли использовать кнопку "Сон" в режиме киоска. ФунЦитоналити этого свойства является избыточным по умолчанию для ОС и является устаревшим. Вместо этого используйте Киоскмодеблоккслипбуттон.|
+|kioskModeBlockSleepButton|Логический|Указывает, следует ли запретить использование кнопки "сон" в режиме киоска.|
+|kioskModeAllowTouchscreen|Boolean|Указывает, можно ли использовать сенсорный экран в режиме киоска. ФунЦитоналити этого свойства является избыточным по умолчанию для ОС и является устаревшим. Вместо этого используйте Киоскмодеблокктаучскрин.|
+|Киоскмодеблокктаучскрин|Логический|Указывает, следует ли запретить использование сенсорного экрана в режиме киоска.|
 |kioskModeAllowVoiceOverSettings|Логический|Указывает, следует ли запретить доступ к настройкам VoiceOver в режиме киоска.|
-|kioskModeAllowVolumeButtons|Логический|Указывает, можно ли использовать кнопки громкости в режиме киоска.|
+|kioskModeAllowVolumeButtons|Логический|Указывает, можно ли использовать кнопки громкости в режиме киоска. ФунЦитоналити этого свойства является избыточным по умолчанию для ОС и является устаревшим. Вместо этого используйте Киоскмодеблоккволумебуттонс.|
 |kioskModeBlockVolumeButtons|Логический|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
-|kioskModeAllowZoomSettings|Boolean|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
-|kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|Киоскмодебуилтинаппид|String|Идентификатор встроенных приложений для использования в режиме киоска. Используется, когда KioskModeManagedAppId и KioskModeAppStoreUrl не заданы.|
+|kioskModeAllowZoomSettings|Логический|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
+|kioskModeAppStoreUrl|Строка|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
+|Киоскмодебуилтинаппид|Строка|Идентификатор встроенных приложений для использования в режиме киоска. Используется, когда KioskModeManagedAppId и KioskModeAppStoreUrl не заданы.|
 |kioskModeRequireAssistiveTouch|Логический|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Логический|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Логический|Указывает, обязательно ли использовать монозвук в режиме киоска.|
@@ -165,10 +170,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |networkUsageRules|Коллекция [iosNetworkUsageRule](../resources/intune-deviceconfig-iosnetworkusagerule.md)|Список управляемых приложений и сетевых правил, которые к ним применяются. Эта коллекция может содержать не более 1000 элементов.|
 |mediaContentRatingApps|[Ратингаппстипе](../resources/intune-deviceconfig-ratingappstype.md)|Параметры оценки контента мультимедиа для приложений. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Логический|Указывает, следует ли запретить использовать приложение "Сообщения" на защищенном устройстве.|
-|notificationsBlockSettingsModification|Логический|Указывает, можно ли изменять настройки уведомлений (iOS 9.3 и более поздних версий).|
+|notificationsBlockSettingsModification|Boolean|Указывает, можно ли изменять настройки уведомлений (iOS 9.3 и более поздних версий).|
 |passcodeBlockFingerprintUnlock|Логический|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
 |passcodeBlockFingerprintModification|Логический|Позволяет заблокировать изменение зарегистрированных отпечатков пальцев Touch ID в защищенном режиме.|
-|passcodeBlockModification|Boolean|Указывает, можно ли изменять секретный код на защищенном устройстве (iOS 9.0 и более поздних версий).|
+|passcodeBlockModification|Логический|Указывает, можно ли изменять секретный код на защищенном устройстве (iOS 9.0 и более поздних версий).|
 |passcodeBlockSimple|Логический|Указывает, следует ли заблокировать простые секретные коды.|
 |passcodeExpirationDays|Int32|Количество дней до окончания срока действия секретного кода. Допустимые значения: от 1 до 65 535.|
 |passcodeMinimumLength|Int32|Минимальная длина секретного кода. Допустимые значения: от 4 до 14.|
@@ -193,7 +198,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |siriBlocked|Логический|Указывает, следует ли запретить использовать Siri.|
 |siriBlockedWhenLocked|Логический|Указывает, следует ли запретить использовать Siri, когда устройство заблокировано.|
 |siriBlockUserGeneratedContent|Логический|Указывает, следует ли запретить Siri запрашивать данные о пользовательском контенте на защищенном устройстве.|
-|siriRequireProfanityFilter|Логический|Указывает, следует ли запретить Siri записывать или произносить нецензурные выражения на защищенном устройстве.|
+|siriRequireProfanityFilter|Boolean|Указывает, следует ли запретить Siri записывать или произносить нецензурные выражения на защищенном устройстве.|
 |Софтвареупдатесенфорцедделайиндайс|Int32|Задает число дней, в течение которых обновление программного обеспечения будет делед для защищенного устройства. Допустимые значения: от 0 до 90.|
 |Софтвареупдатесфорцеделайед|Логический|Указывает, следует ли откладывать видимость обновлений программного обеспечения, когда устройство находится в защищенном режиме.|
 |spotlightBlockInternetResults|Логический|Указывает, следует ли запретить показывать результаты из Интернета при поиске полезных сведений на защищенном устройстве.|
@@ -214,12 +219,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Впнблокккреатион|Логический|Указывает, блокируется ли создание конфигураций VPN (iOS 11,0 и более поздних версий).|
 |Аппремовалблоккед|Логический|Указывает, разрешено ли удаление приложений.|
 |Усбрестриктедмодеблоккед|Логический|Указывает, разрешена ли подключаться к стандарту USB, пока устройство заблокировано (iOS 11.4.1 и более поздних версий).|
-|Пассвордблоккаутофилл|Логический|Указывает, разрешена ли функция автоЗаполнения паролей (iOS 12,0 и более поздних версий).|
+|Пассвордблоккаутофилл|Логический|Указывает, разрешена ли функция автозаполнения паролей (iOS 12,0 и более поздних версий).|
 |Пассвордблоккпроксимитирекуестс|Логический|Указывает, следует ли запретить запрашивать пароли с близлежащих устройств (iOS 12,0 и более поздних версий).|
 |Пассвордблоккаирдропшаринг|Логический|Указывает, следует ли заблокировать общий доступ к паролям с помощью AirDrop паролей iOS 12,0 и более поздних версий.|
 |Датеандтимефорцесетаутоматикалли|Логический|Указывает, включена ли функция даты и времени "автоматически задано" и не может быть отключена пользователем (iOS 12,0 и более поздних версий).|
 |Контактсалловманажедтаунманажедврите|Логический|Указывает, могут ли управляемые приложения записывать контакты в неуправляемые учетные записи контактов (iOS 12,0 и более поздних версий).|
 |Контактсалловунманажедтоманажедреад|Логический|Указывает, могут ли неуправляемые приложения читать из управляемых учетных записей контактов (iOS 12,0 или более поздней версии).|
+|Целлуларблоккперсоналхотспотмодификатион|Логический|Указывает, следует ли запретить пользователю изменять параметр личных гиперобъектов (iOS 12,2 или более поздней версии).|
+|Сиридисаблесерверлоггинг|Логический|Указывает, отключено ли ведение журнала Siri на стороне сервера (iOS 12,2 или более поздней версии).|
 
 
 
@@ -233,7 +240,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 9105
+Content-length: 9386
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -342,11 +349,16 @@ Content-length: 9105
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -484,7 +496,9 @@ Content-length: 9105
   "passwordBlockAirDropSharing": true,
   "dateAndTimeForceSetAutomatically": true,
   "contactsAllowManagedToUnmanagedWrite": true,
-  "contactsAllowUnmanagedToManagedRead": true
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
 
@@ -493,7 +507,7 @@ Content-length: 9105
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9277
+Content-Length: 9558
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -605,11 +619,16 @@ Content-Length: 9277
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -747,10 +766,11 @@ Content-Length: 9277
   "passwordBlockAirDropSharing": true,
   "dateAndTimeForceSetAutomatically": true,
   "contactsAllowManagedToUnmanagedWrite": true,
-  "contactsAllowUnmanagedToManagedRead": true
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
-
 
 
 

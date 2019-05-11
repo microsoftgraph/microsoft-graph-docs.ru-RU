@@ -1,15 +1,15 @@
 ---
 title: Получение КарттоклассассоЦиатион
 description: Чтение свойств и связей объекта КарттоклассассоЦиатион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a6002fae4d1283944ff48ffd3a9e77c562b8810
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 29fe739b718385efd8f08f1e345e1c94e2c15090
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471548"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928157"
 ---
 # <a name="get-carttoclassassociation"></a>Получение КарттоклассассоЦиатион
 
@@ -46,7 +46,7 @@ GET /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -85,7 +85,6 @@ Content-Length: 488
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Получение Виндовсфониасемаилпрофилеконфигуратион
 description: Чтение свойств и связей объекта Виндовсфониасемаилпрофилеконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41daca4fe9ba7e4bb6a271cf26fbe9789bba70ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c5d1e0ebca9ab4a033a09b82084790fe3eee229
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511902"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917508"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Получение Виндовсфониасемаилпрофилеконфигуратион
 
@@ -99,7 +99,6 @@ Content-Length: 1035
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Список Андроидворкпрофилецертификатепрофилебасес
 description: Список свойств и связей объектов Андроидворкпрофилецертификатепрофилебасе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51f15a1595b380f32e036b54f4512e68cd853510
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 648ce9f0df9824262afa9d368cf1856accd0b8ee
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475319"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928647"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>Список Андроидворкпрофилецертификатепрофилебасес
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,7 +95,6 @@ Content-Length: 979
   ]
 }
 ```
-
 
 
 

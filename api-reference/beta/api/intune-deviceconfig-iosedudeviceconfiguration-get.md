@@ -1,15 +1,15 @@
 ---
 title: Получение Иоседудевицеконфигуратион
 description: Чтение свойств и связей объекта Иоседудевицеконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfaf21c4025a42572c53eb6133c4347a292b5ef4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc8bcad444e6ea3f905f377ecac106705115af9c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467185"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923540"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>Получение Иоседудевицеконфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -118,7 +118,6 @@ Content-Length: 2189
   }
 }
 ```
-
 
 
 

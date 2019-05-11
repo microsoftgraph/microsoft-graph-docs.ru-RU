@@ -1,15 +1,15 @@
 ---
 title: Получение windowsPhone81ImportedPFXCertificateProfile
 description: Чтение свойств и связей объекта windowsPhone81ImportedPFXCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 199263173cdc352c792df4906fb70dda0eb7c257
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11a2906af5eee43e43129cda48e575fe1d66cae2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512658"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917732"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Получение windowsPhone81ImportedPFXCertificateProfile
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -92,7 +92,6 @@ Content-Length: 818
   }
 }
 ```
-
 
 
 

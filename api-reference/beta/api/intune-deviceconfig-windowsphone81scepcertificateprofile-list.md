@@ -1,15 +1,15 @@
 ---
 title: Список windowsPhone81SCEPCertificateProfiles
 description: Список свойств и связей объектов windowsPhone81SCEPCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f8593771b4d8d376d832c4d9df247b6309523ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1467be2f4e1a6a829fa96aa90a06f8ca4cc6396a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512686"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917662"
 ---
 # <a name="list-windowsphone81scepcertificateprofiles"></a>Список windowsPhone81SCEPCertificateProfiles
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -104,7 +104,6 @@ Content-Length: 1365
   ]
 }
 ```
-
 
 
 

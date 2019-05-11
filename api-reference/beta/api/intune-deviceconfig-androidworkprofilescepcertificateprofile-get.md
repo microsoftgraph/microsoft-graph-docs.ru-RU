@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидворкпрофилесцепцертификатепрофиле
 description: Чтение свойств и связей объекта Андроидворкпрофилесцепцертификатепрофиле.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d3056ef08278cf99483813815ec44a48db2a08b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9524ed0a56b528c8d93d78e7825c1acefa0ecc45
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32472927"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928290"
 ---
 # <a name="get-androidworkprofilescepcertificateprofile"></a>Получение Андроидворкпрофилесцепцертификатепрофиле
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -113,7 +113,6 @@ Content-Length: 1478
   }
 }
 ```
-
 
 
 

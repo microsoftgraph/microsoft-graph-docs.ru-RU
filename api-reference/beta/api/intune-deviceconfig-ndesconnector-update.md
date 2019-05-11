@@ -1,15 +1,15 @@
 ---
 title: Обновление Ндесконнектор
 description: Обновление свойств объекта Ндесконнектор.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 894690392b40bcb8d386ece0dc5da482900bec7f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 03519d8298e7e7786ed754545ebbefae1179584d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518222"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922194"
 ---
 # <a name="update-ndesconnector"></a>Обновление Ндесконнектор
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md).
@@ -52,8 +52,8 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 |:---|:---|:---|
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
-|state|[Ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|String|Понятное имя соединителя NDES Connector.|
+|состояние|[Ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
+|displayName|Строка|Понятное имя соединителя NDES Connector.|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

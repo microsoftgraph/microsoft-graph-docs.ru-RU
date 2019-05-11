@@ -1,15 +1,15 @@
 ---
 title: Список windows81CertificateProfileBases
 description: Список свойств и связей объектов windows81CertificateProfileBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3becbc01cd0e9804bde108536ce5e7b0c1c485e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a821364c8a27739ff6d94d91d32c6a7880bea91
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515360"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918341"
 ---
 # <a name="list-windows81certificateprofilebases"></a>Список windows81CertificateProfileBases
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -103,7 +103,6 @@ Content-Length: 1243
   ]
 }
 ```
-
 
 
 

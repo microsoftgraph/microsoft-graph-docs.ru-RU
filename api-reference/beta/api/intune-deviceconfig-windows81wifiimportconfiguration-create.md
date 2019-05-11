@@ -1,15 +1,15 @@
 ---
 title: Создание windows81WifiImportConfiguration
 description: Создание нового объекта windows81WifiImportConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47e8f9f818b48a5ddb30e1bce6afbc0c103df40b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da8f192499f9f6326a8c19adfebd14a442bd442b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515199"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918103"
 ---
 # <a name="create-windows81wifiimportconfiguration"></a>Создание windows81WifiImportConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта windows81WifiImportConfiguration в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windows81WifiImportConfiguration.
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |payloadFileName|String|Имя файла полезных данных (XML).|
-|имя_профиля|String|Имя профиля, отображаемое в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе.|
+|имя_профиля|Строка|Имя профиля, отображаемое в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе.|
 |payload|Binary|Полезные данные (Массив байтов в кодировке UTF8). Это XML-файл, сохраненный на устройстве, используемом для подключения к конечной точке Wi-Fi.|
 
 
@@ -116,7 +116,6 @@ Content-Length: 553
   "payload": "cGF5bG9hZA=="
 }
 ```
-
 
 
 

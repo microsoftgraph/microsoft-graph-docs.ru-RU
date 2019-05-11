@@ -1,15 +1,15 @@
 ---
 title: Get iosGeneralDeviceConfiguration
 description: Чтение свойств и связей объекта iosGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31535aacef7b4b4a0c42c62f89cc7ed19926e89d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8864e86eec7aa548fd3ceaeb0dc09279c1bf1633
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467297"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923505"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9800
+Content-Length: 10095
 
 {
   "value": {
@@ -180,11 +180,16 @@ Content-Length: 9800
     "kioskModeAllowAssistiveSpeak": true,
     "kioskModeAllowAssistiveTouchSettings": true,
     "kioskModeAllowAutoLock": true,
+    "kioskModeBlockAutoLock": true,
     "kioskModeAllowColorInversionSettings": true,
     "kioskModeAllowRingerSwitch": true,
+    "kioskModeBlockRingerSwitch": true,
     "kioskModeAllowScreenRotation": true,
+    "kioskModeBlockScreenRotation": true,
     "kioskModeAllowSleepButton": true,
+    "kioskModeBlockSleepButton": true,
     "kioskModeAllowTouchscreen": true,
+    "kioskModeBlockTouchscreen": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
     "kioskModeBlockVolumeButtons": true,
@@ -322,11 +327,12 @@ Content-Length: 9800
     "passwordBlockAirDropSharing": true,
     "dateAndTimeForceSetAutomatically": true,
     "contactsAllowManagedToUnmanagedWrite": true,
-    "contactsAllowUnmanagedToManagedRead": true
+    "contactsAllowUnmanagedToManagedRead": true,
+    "cellularBlockPersonalHotspotModification": true,
+    "siriDisableServerLogging": true
   }
 }
 ```
-
 
 
 

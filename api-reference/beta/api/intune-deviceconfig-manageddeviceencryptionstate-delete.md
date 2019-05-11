@@ -1,15 +1,15 @@
 ---
 title: Удаление Манажеддевицеенкриптионстате
 description: Удаляет объект Манажеддевицеенкриптионстате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c501a5c64ea77b9c31f5456f738fce6bed4886a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ac8af80fb567cb63b3cc83d261756bf43646707
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518340"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922734"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>Удаление Манажеддевицеенкриптионстате
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionS
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryption
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

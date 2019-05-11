@@ -1,15 +1,15 @@
 ---
 title: Удаление windows10NetworkBoundaryConfiguration
 description: Удаляет объект windows10NetworkBoundaryConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f07aed9b3dcbc5ac2acfaad7dc0c8cc8ff20a830
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ae8738cb5051ee304ee72e78e192fbe2fe4e4732
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516478"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918558"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>Удаление windows10NetworkBoundaryConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

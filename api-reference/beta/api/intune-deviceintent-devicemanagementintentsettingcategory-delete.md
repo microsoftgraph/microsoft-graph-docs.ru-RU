@@ -1,15 +1,15 @@
 ---
 title: Удаление Девицеманажементинтентсеттингкатегори
 description: Удаляет объект Девицеманажементинтентсеттингкатегори.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86d274158a521e66d87af47a60bfe94b27b287ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1f702879ab1ab878174f5fadfd76cb85e05fd7c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507828"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915713"
 ---
 # <a name="delete-devicemanagementintentsettingcategory"></a>Удаление Девицеманажементинтентсеттингкатегори
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

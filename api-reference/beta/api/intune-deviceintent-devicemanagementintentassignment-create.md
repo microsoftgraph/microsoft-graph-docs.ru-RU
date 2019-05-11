@@ -1,15 +1,15 @@
 ---
 title: Создание Девицеманажементинтентассигнмент
 description: Создание нового объекта Девицеманажементинтентассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91a23ab1d0c715f3b3cb28e4f6c84c1e3168270a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ea992271bd065ad64423dc4756e5efba430b78c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508381"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916191"
 ---
 # <a name="create-devicemanagementintentassignment"></a>Создание Девицеманажементинтентассигнмент
 
@@ -50,7 +50,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор назначения|
+|id|Строка|Идентификатор назначения|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения|
 
 
@@ -90,7 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

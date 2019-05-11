@@ -1,15 +1,15 @@
 ---
 title: Действие assign
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e111483fcf2ed1d266aae0c81feac04967cb37f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 64c26687f7558c6bd0cf7bb1c82fe4132601d792
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509200"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916352"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -85,7 +85,6 @@ Content-length: 280
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

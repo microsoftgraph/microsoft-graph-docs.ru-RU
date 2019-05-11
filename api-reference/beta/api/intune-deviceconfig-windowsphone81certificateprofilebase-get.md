@@ -1,15 +1,15 @@
 ---
 title: Получение windowsPhone81CertificateProfileBase
 description: Чтение свойств и связей объекта windowsPhone81CertificateProfileBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f87ef91b4f247b84ace41a7b1554d9d14b7df7e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e2c45247d644ef4afbd52542edaa37afb5d06cae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32513260"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917865"
 ---
 # <a name="get-windowsphone81certificateprofilebase"></a>Получение windowsPhone81CertificateProfileBase
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -96,7 +96,6 @@ Content-Length: 968
   }
 }
 ```
-
 
 
 

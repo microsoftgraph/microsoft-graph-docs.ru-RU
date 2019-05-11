@@ -1,15 +1,15 @@
 ---
 title: Получение iosWiFiConfiguration
 description: Чтение свойств и связей объекта iosWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ca2ad56eddec38667e3e32e7ee58a8014adf45f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5b2d4f2085c0d4430740525818e9c4dd59f1e4a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519012"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923043"
 ---
 # <a name="get-ioswificonfiguration"></a>Получение iosWiFiConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,7 +95,6 @@ Content-Length: 908
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Получение iosScepCertificateProfile
 description: Чтение свойств и связей объекта iosScepCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e57f40b1b44cb1695bff04d2ed4eff630db0eceb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b8d4e62c9a3fe029b7b91410e3331ca647d1d3cf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519845"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923344"
 ---
 # <a name="get-iosscepcertificateprofile"></a>Получение iosScepCertificateProfile
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -112,7 +112,6 @@ Content-Length: 1426
   }
 }
 ```
-
 
 
 

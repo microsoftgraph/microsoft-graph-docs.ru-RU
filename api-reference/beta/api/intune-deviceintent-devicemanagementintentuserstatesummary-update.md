@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементинтентусерстатесуммари
 description: Обновление свойств объекта Девицеманажементинтентусерстатесуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1661770f444fe7479d47858ce6e8ad394d3ed98e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7eb98c9c77c5bc8cecef7994fd2913111bd913fb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507744"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915763"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Обновление Девицеманажементинтентусерстатесуммари
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
+|id|Строка|Идентификатор|
 |conflictCount|Int32|Количество пользователей в конфликте|
 |errorCount|Int32|Количество пользователей с ошибками|
 |failedCount|Int32|Количество пользователей с ошибками|
@@ -98,7 +98,6 @@ Content-Length: 247
   "successCount": 12
 }
 ```
-
 
 
 

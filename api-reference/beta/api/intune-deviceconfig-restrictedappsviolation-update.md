@@ -1,15 +1,15 @@
 ---
 title: Обновление Рестриктедаппсвиолатион
 description: Обновление свойств объекта Рестриктедаппсвиолатион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4b472fbac98b8b38ce8f97e8be87d788b288d27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ea5a73f26e2abc0411419ad37f0a35c5432db78
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518145"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922103"
 ---
 # <a name="update-restrictedappsviolation"></a>Обновление Рестриктедаппсвиолатион
 
@@ -43,20 +43,20 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Рестриктедаппсвиолатион](../resources/intune-deviceconfig-restrictedappsviolation.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [рестриктедаппсвиолатион](../resources/intune-deviceconfig-restrictedappsviolation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
+|id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
-|Манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
-|deviceName|String|Имя устройства|
-|Девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
-|Девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
+|Манажеддевицеид|Строка|Уникальный идентификатор управляемого устройства, должен быть GUID|
+|deviceName|Строка|Имя устройства|
+|Девицеконфигуратионид|Строка|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
+|Девицеконфигуратионнаме|Строка|Имя профиля конфигурации устройства|
 |platformType|[Полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|Коллекция [манажеддевицерепортедапп](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
@@ -120,7 +120,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

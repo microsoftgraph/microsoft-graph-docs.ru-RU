@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидворкпрофилинтерприсевификонфигуратион
 description: Чтение свойств и связей объекта Андроидворкпрофилинтерприсевификонфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 064ccab43e12be908b7ac2876eb56a577faa411d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd5afddce8b2815c0437641f45eafd6fb84f5199
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475223"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928584"
 ---
 # <a name="get-androidworkprofileenterprisewificonfiguration"></a>Получение Андроидворкпрофилинтерприсевификонфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,7 +95,6 @@ Content-Length: 1009
   }
 }
 ```
-
 
 
 
