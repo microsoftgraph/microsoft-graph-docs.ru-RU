@@ -1,15 +1,15 @@
 ---
 title: Удаление Импортедаппледевицеидентити
 description: Удаляет объект Импортедаппледевицеидентити.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21ae40af17197dd31caba8f78052e6d5dfa6977d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5f46354ec1f047464a89055c69003fd15042c23
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532984"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908548"
 ---
 # <a name="delete-importedappledeviceidentity"></a>Удаление Импортедаппледевицеидентити
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

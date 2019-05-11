@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеандаппманажементдата
 description: Экспортированные данные
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3d85c6ba4eb4cdb96326f7a95efd5a8f9a8af4df
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521231"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940437"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>Тип ресурса Девицеандаппманажементдата
 
@@ -24,7 +24,7 @@ ms.locfileid: "32521231"
 |:---|:---|:---|
 |содержимое|Поток|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,7 +40,6 @@ ms.locfileid: "32521231"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 

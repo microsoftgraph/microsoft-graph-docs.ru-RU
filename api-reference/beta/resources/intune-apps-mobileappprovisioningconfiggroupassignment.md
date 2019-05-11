@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса К mobileappprovisioningconfiggroupassignment.
 description: Содержит свойства, используемые для назначения конфигурации подготовки приложений группе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6af0d2547e5e63ed887e31983046944630f8cdf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c01dfd8da7d241719ca873fa910338a286f16dbd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554305"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949915"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>Тип ресурса К mobileappprovisioningconfiggroupassignment.
 
@@ -31,10 +31,10 @@ ms.locfileid: "32554305"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
-|id|String|Ключ объекта.|
+|Таржетграупид|Строка|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
+|id|Строка|Ключ объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "32554305"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

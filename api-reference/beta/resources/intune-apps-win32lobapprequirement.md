@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса win32LobAppRequirement
 description: Базовый класс для обнаружения приложения Win32
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3177493c5289b54cb43369a9dc62970097486f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee8593603f00a06fc47540d2829ef851cc99facb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554102"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949509"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>Тип ресурса win32LobAppRequirement
 
@@ -23,9 +23,9 @@ ms.locfileid: "32554102"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|String|Значение обнаружения|
+|Детектионвалуе|Строка|Значение обнаружения|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32554102"
   "detectionValue": "String"
 }
 ```
-
 
 
 

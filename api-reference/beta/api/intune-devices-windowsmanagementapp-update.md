@@ -1,15 +1,15 @@
 ---
 title: Обновление windowsManagementApp
 description: Обновление свойств объекта windowsManagementApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4eb4787113d6172ee3523c463191dff0948f75d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 93a47a41125a0f3b0e9684d914ba426085326fa9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534208"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909213"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление windowsManagementApp
 
@@ -50,12 +50,12 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String|Доступная версия приложения управления Windows.|
+|id|Строка|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|Строка|Доступная версия приложения управления Windows.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +86,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
 
 
 

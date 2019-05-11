@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса iosVppAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения VPP для iOS группе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36c6e2c60423038f2af10ccdbcfaf94ecd6ec3aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f7570108ac38b417ca4d1a5213759c071fe8492b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552326"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950461"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Тип ресурса iosVppAppAssignmentSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "32552326"
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "32552326"
   "vpnConfigurationId": "String"
 }
 ```
-
 
 
 

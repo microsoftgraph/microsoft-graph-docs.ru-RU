@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементексчанжеакцессруле
 description: Правила доступа к устройству в Exchange.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 832e11829300ccd1ac4e1d4e6b08acafb908f3b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af40f1b3b0d5602c5a67a524dc7083d95681b988
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566607"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940402"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>Тип ресурса Девицеманажементексчанжеакцессруле
 
@@ -25,7 +25,7 @@ ms.locfileid: "32566607"
 |Девицекласс|[Девицеманажементексчанжедевицекласс](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Класс устройства, на который влияет это правило.|
 |accessLevel|[Девицеманажементексчанжеакцесслевел](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Уровень доступа для Exchange, предоставляемый этим правилом. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "32566607"
   "accessLevel": "String"
 }
 ```
-
 
 
 

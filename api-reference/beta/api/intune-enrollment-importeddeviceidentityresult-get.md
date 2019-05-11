@@ -1,15 +1,15 @@
 ---
 title: Получение Импортеддевицеидентитиресулт
 description: Чтение свойств и связей объекта Импортеддевицеидентитиресулт.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec3e2c0bc9f43118c872e806e94e6d2332bcaea7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 233fef2b4b8056e0178033e99aea999e7b0ed0fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532739"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908401"
 ---
 # <a name="get-importeddeviceidentityresult"></a>Получение Импортеддевицеидентитиресулт
 
@@ -83,7 +83,6 @@ Content-Length: 570
   }
 }
 ```
-
 
 
 

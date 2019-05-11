@@ -1,15 +1,15 @@
 ---
 title: Встроенные управляемые устройства с помощью API Intune-Microsoft Graph
-description: ПереЧисление API Microsoft Graph для конечных точек Intune (REST), используемых для встроенных устройств (Настройка и инициализация) для организации клиента.
+description: Перечисление API Microsoft Graph для конечных точек Intune (REST), используемых для встроенных устройств (Настройка и инициализация) для организации клиента.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 2acd4310c07fd1532a1a16bdc419d7bad23bc973
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c5cd08b1e60811b0298bb97cb4fcf030a84a5dd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521238"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940424"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 

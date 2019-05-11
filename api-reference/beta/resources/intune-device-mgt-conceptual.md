@@ -1,15 +1,15 @@
 ---
 title: Управление устройствами в Microsoft Intune — API Microsoft Graph
 description: Список API Microsoft Graph для конечных точек Intune (REST), определяющих Управление устройствами для организации клиента.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556438"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949201"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -152,10 +152,9 @@ ms.locfileid: "32556438"
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Расписание запуска](intune-devices-runschedule.md)
+- [Сводка по состоянию категории базовых показателей безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Состояние устройства базового плана безопасности](intune-deviceintent-securitybaselinedevicestate.md)
-- [Состояние параметра базового плана безопасности](intune-deviceintent-securitybaselinesettingstate.md)
-- [Состояние базового плана безопасности](intune-deviceintent-securitybaselinestate.md)
 - [Сводка состояния базового плана безопасности](intune-deviceintent-securitybaselinestatesummary.md)
 - [Шаблон базового плана безопасности](intune-deviceintent-securitybaselinetemplate.md)
 - [Пользователь общего устройства Apple](intune-devices-sharedappledeviceuser.md)

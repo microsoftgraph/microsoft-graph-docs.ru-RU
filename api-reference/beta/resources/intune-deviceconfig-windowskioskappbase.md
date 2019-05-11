@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовскиоскаппбасе
 description: Базовый класс для типа приложений
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6254ca7835687d64d209b118f9ed0d4a4ec26e8e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 93884a53ce20f67fadbd60fa2a8f180aba8fa826
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464288"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944091"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Тип ресурса Виндовскиоскаппбасе
 
@@ -27,7 +27,7 @@ ms.locfileid: "32464288"
 |Тип|[Виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |Автозапуск|Логический|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "32464288"
   "autoLaunch": true
 }
 ```
-
 
 
 

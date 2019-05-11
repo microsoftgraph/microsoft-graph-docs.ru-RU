@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Логжедонусер
-description: ВоШедший в систему пользователь
-author: tfitzmac
+description: Вошедший в систему пользователь
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2b92d8504ba4854109efa30d0637bca1ea35d7b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eeacee7d4d3a22e0d069851c1f9271ceb0e32c0d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522085"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941970"
 ---
 # <a name="loggedonuser-resource-type"></a>Тип ресурса Логжедонусер
 
@@ -17,7 +17,7 @@ ms.locfileid: "32522085"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-ВоШедший в систему пользователь
+Вошедший в систему пользователь
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -25,7 +25,7 @@ ms.locfileid: "32522085"
 |userId|String|Идентификатор пользователя|
 |Ластлогондатетиме|DateTimeOffset|Дата и время, когда пользователь входит в систему|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32522085"
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

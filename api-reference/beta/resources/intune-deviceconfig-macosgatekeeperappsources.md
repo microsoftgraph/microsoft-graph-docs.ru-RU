@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Макосгатекипераппсаурцес
 description: Параметры источника приложения для привратника macOS.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dbe261b223a180f64016d41495a0f4fcec22868
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b178072bd4364b2fc0df813d5b8e56423c2b29fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460632"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946149"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>тип перечисления Макосгатекипераппсаурцес
 
@@ -26,7 +26,6 @@ ms.locfileid: "32460632"
 |Макаппсторе|1,1|Можно запускать только приложения из Mac аппсторе.|
 |Макаппстореандидентифиеддевелоперс|2|Можно запускать только приложения из Mac аппсторе и идентифицированных разработчиков.|
 |всей|4|Приложения из любого места могут быть запущены.|
-
 
 
 

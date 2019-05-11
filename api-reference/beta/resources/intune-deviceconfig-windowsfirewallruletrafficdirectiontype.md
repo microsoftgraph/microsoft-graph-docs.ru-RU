@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсфиреваллрулетраффикдиректионтипе
 description: Направления трафика правила брандмауэра.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbde291788bb0f68f53dae57352e4942d1358fcf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b431bc1577460b7245b00764df4835e933662484
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573825"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944049"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>тип перечисления Виндовсфиреваллрулетраффикдиректионтипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32573825"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|вышли|1 |Правило применяется к исходящему трафику.|
-|возврата|2 |Правило применяется к входящему трафику.|
-
+|вышли|1,1|Правило применяется к исходящему трафику.|
+|возврата|2|Правило применяется к входящему трафику.|
 
 
 

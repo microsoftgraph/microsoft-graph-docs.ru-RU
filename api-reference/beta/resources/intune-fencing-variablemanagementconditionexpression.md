@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Вариаблеманажементкондитионекспрессион
 description: Оценивает состояние условия управления как логическое выражение.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 548c0ffd27f76dacf5f88d9e783ce793e64cc434
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 21b2d7e9af445ac7d439b7d0dd6a37517aeeaf2a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552891"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941221"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Тип ресурса Вариаблеманажементкондитионекспрессион
 
@@ -20,14 +20,14 @@ ms.locfileid: "32552891"
 Оценивает состояние условия управления как логическое выражение.
 
 
-НаСледуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
+Наследуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Манажементкондитионид|String|Идентификатор условия управления, используемый для оценки выражения.|
+|Манажементкондитионид|Строка|Идентификатор условия управления, используемый для оценки выражения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32552891"
   "managementConditionId": "String"
 }
 ```
-
 
 
 

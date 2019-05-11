@@ -1,15 +1,15 @@
 ---
 title: Функция Аутопилотдевицестреам
 description: Создайте запрос на отправку с потоком устройства с автопилотом.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c03ca0319e3e6458c3a58ea82efb52b6c6bc840
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ae42466b45bb731f1efe3f31eb7c83867b1808b2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532452"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908324"
 ---
 # <a name="autopilotdevicestream-function"></a>Функция Аутопилотдевицестреам
 
@@ -68,7 +68,6 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
-
 
 
 

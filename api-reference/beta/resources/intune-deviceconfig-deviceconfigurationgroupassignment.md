@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceConfigurationGroupAssignment
 description: Назначение группы конфигурации устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1805cb29e8920876d8a340c9379d7b3200c4c779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc42e9cf328319e5a6fa2274e091be9a4776a5fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568147"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947031"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
@@ -31,9 +31,9 @@ ms.locfileid: "32568147"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|Таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
-|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
+|id|Строка|Ключ объекта.|
+|Таржетграупид|Строка|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
+|excludeGroup|Логический|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -56,7 +56,6 @@ ms.locfileid: "32568147"
   "excludeGroup": true
 }
 ```
-
 
 
 

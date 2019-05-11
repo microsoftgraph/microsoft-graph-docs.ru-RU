@@ -1,15 +1,15 @@
 ---
 title: тип перечисления win32LobAppPowerShellScriptDetectionType
 description: Содержит все поддерживаемые типы обнаружения вывода сценариев PowerShell.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4dc45a3b7ec8fe2732a89022fd3c74c0959bbc1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2c18e0fa5f6b200a017203fd8320e0b895e8a47
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534537"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949565"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>тип перечисления win32LobAppPowerShellScriptDetectionType
 
@@ -23,13 +23,12 @@ ms.locfileid: "32534537"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|string|1 |Выходной тип данных String.|
-|dateTime|2 |Тип выходных данных — Дата и время.|
-|целое|3 |Тип выходных данных — целое число.|
-|с плавающей запятой|4 |Тип выходных данных — float.|
-|version|5 |Тип выходных данных — Version.|
-|логический|6 |Тип выходных данных — Boolean.|
-
+|строка|1,1|Выходной тип данных String.|
+|dateTime|2|Тип выходных данных — Дата и время.|
+|целое|4|Тип выходных данных — целое число.|
+|с плавающей запятой|SP4|Тип выходных данных — float.|
+|version|17:00|Тип выходных данных — Version.|
+|boolean|6 |Тип выходных данных — Boolean.|
 
 
 

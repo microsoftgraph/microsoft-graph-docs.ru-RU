@@ -2,14 +2,14 @@
 title: Тип ресурса Оффицеклиентчеккинстатус
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7cbc54ac2e276932273130f194f484f3ee23b7c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526701"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949292"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса Оффицеклиентчеккинстатус
 
@@ -21,17 +21,17 @@ ms.locfileid: "32526701"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userPrincipalName|String|Имя участника пользователя, использующего устройство.|
+|userPrincipalName|Строка|Имя участника пользователя, использующего устройство.|
 |deviceName|String|Имя устройства, пытающееся вернуть.|
-|devicePlatform|String|Платформа устройства пытается вернуться.|
-|Девицеплатформверсион|String|Версия платформы устройства, пытающаяся вернуть значение.|
-|Вассукцессфул|Boolean|, Если последний возврат выполнен успешно.|
+|devicePlatform|Строка|Платформа устройства пытается вернуться.|
+|Девицеплатформверсион|Строка|Версия платформы устройства, пытающаяся вернуть значение.|
+|Вассукцессфул|Логический|, Если последний возврат выполнен успешно.|
 |userId|String|Идентификатор пользователя, использующий устройство.|
 |Чеккиндатетиме|DateTimeOffset|Время последнего возврата устройства в формате UTC.|
-|Ошибк|String|Сообщение об ошибке, если оно связано с последним возвратом.|
+|Ошибк|Строка|Сообщение об ошибке, если оно связано с последним возвратом.|
 |appliedPolicies|Коллекция строк|Список политик, доставляемых на устройство при последнем возврате.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

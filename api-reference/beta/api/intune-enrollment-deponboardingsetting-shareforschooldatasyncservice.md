@@ -1,15 +1,15 @@
 ---
 title: Действие shareForSchoolDataSyncService
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46af6faf0fb7ea4d391cb566ec7cd9771eac0acb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60f2f99e43874d1fdea69694a17fc4d5fb2124b3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533285"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908730"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>Действие shareForSchoolDataSyncService
 
@@ -62,7 +62,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

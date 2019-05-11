@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса vppLicensingType
 description: Содержит свойства для корпоративного лицензирования приложений iOS (VPP).
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f4966b6608bcd96720c4260191388979e811061
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 812cbdc203b09422f8a2cddac205d59f8c762a34
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555236"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949712"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Тип ресурса vppLicensingType
 
@@ -27,7 +27,7 @@ ms.locfileid: "32555236"
 |supportsUserLicensing|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |supportsDeviceLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "32555236"
   "supportsDeviceLicensing": true
 }
 ```
-
 
 
 

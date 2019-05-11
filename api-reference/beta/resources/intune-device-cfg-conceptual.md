@@ -1,15 +1,15 @@
 ---
 title: Настройка устройств в Microsoft Intune — Microsoft Гааф API
 description: Список API Microsoft Graph для конечных точек Intune (REST), определяющих настройку устройств для организации клиента.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556426"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949166"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -171,6 +171,9 @@ ms.locfileid: "32556426"
 - [Тип ресурса deviceConfigurationUserStateSummary](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Состояние пользователей, касающееся конфигураций устройств](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Тип защиты учетных данных для местного системного центра в Device Guard](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Производный поставщик учетных данных для управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [Тип уведомления о получении учетных данных для управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [Параметры производных учетных данных управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Параметры управления устройствами](intune-deviceconfig-devicemanagementsettings.md)
 - [Локальный пользователь или группа для прав пользователя для управления устройством](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Параметры прав пользователя для управления устройства](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -198,6 +201,7 @@ ms.locfileid: "32556426"
 - [Режим телеметрии Edge](intune-deviceconfig-edgetelemetrymode.md)
 - [Конфигурация обновления выпуска](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Тип лицензии для обновления выпуска](intune-deviceconfig-editionupgradelicensetype.md)
+- [Тип сертификата электронной почты](intune-deviceconfig-emailcertificatetype.md)
 - [Продолжительность синхронизации электронной почты](intune-deviceconfig-emailsyncduration.md)
 - [Расписание синхронизации электронной почты](intune-deviceconfig-emailsyncschedule.md)
 - [Состояние готовности шифрования](intune-deviceconfig-encryptionreadinessstate.md)
@@ -244,6 +248,7 @@ ms.locfileid: "32556426"
 - [Базовый профиль сертификатов для iOS](intune-deviceconfig-ioscertificateprofilebase.md)
 - [Политика соответствия для iOS](intune-deviceconfig-ioscompliancepolicy.md)
 - [Настраиваемая конфигурация для iOS](intune-deviceconfig-ioscustomconfiguration.md)
+- [Конфигурация проверки подлинности производных учетных данных iOS](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [Конфигурация функций для устройств iOS](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [Настройка профилей электронной почты EAS для iOS](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [Параметры сертификата iOS для учебных заведений](intune-deviceconfig-ioseducertificatesettings.md)

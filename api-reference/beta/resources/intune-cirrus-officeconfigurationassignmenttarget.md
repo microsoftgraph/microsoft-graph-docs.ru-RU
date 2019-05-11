@@ -2,14 +2,14 @@
 title: Тип ресурса Оффицеконфигуратионассигнменттаржет
 description: Целевой объект назначения конфигурации клиента Office.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e20f9c6e0503d3d2870096ca11f2f634f1610f90
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2cb5c32cc0d489671642cc2193a87a5e758faf8e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526379"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949285"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>Тип ресурса Оффицеконфигуратионассигнменттаржет
 
@@ -23,7 +23,7 @@ ms.locfileid: "32526379"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

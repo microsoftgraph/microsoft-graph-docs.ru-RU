@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceEnrollmentPlatformRestriction
 description: Ограничения на регистрацию для определенных платформ
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8ba3306c5a4af4dfbb8b97e4d4794b917ebbf64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5908d1e1d9d2c7eb902017bffdc533e33486f909
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566656"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940416"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
@@ -22,12 +22,12 @@ ms.locfileid: "32566656"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platformBlocked|Boolean|Указывает, блокируется ли регистрация платформы|
+|platformBlocked|Логический|Указывает, блокируется ли регистрация платформы|
 |personalDeviceEnrollmentBlocked|Boolean|Указывает, блокируется ли регистрация личных устройств|
-|osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
+|osMinimumVersion|Строка|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "32566656"
   "osMaximumVersion": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Действие wipe
 description: Очистка устройства
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91bdbd45355c986e7ef59bf5e8be6621db462001
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5d50366cef1660aec80137562e912746b81f162f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520041"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909493"
 ---
 # <a name="wipe-action"></a>Действие wipe
 
@@ -84,7 +84,6 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

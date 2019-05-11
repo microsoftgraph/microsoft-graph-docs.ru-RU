@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Иоседуцертификатесеттингс
 description: Доверенные корневые сертификаты и сертификаты PFX для iOS EDU.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d9060c28744bae52d4690bf75487e298d58d2a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4305745c8b9d12bf19c4e8be6c10f24076ec29f1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571718"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946506"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Тип ресурса Иоседуцертификатесеттингс
 
@@ -22,16 +22,16 @@ ms.locfileid: "32571718"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|trustedRootCertificate|Двоичный|Доверенный корневой сертификат.|
-|Цертфиленаме|String|Имя файла, отображаемое в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе.|
-|Цертификатионаусорити|String|Центр сертификации PKCS.|
-|Цертификатионаусоритинаме|String|Имя центра сертификации PKCS.|
-|Цертификатетемплатенаме|String|Имя шаблона сертификата PKCS.|
+|trustedRootCertificate|Binary|Доверенный корневой сертификат.|
+|Цертфиленаме|Строка|Имя файла, отображаемое в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе.|
+|Цертификатионаусорити|Строка|Центр сертификации PKCS.|
+|Цертификатионаусоритинаме|Строка|Имя центра сертификации PKCS.|
+|Цертификатетемплатенаме|Строка|Имя шаблона сертификата PKCS.|
 |Свойства renewalthresholdpercentage|Int32|Пороговое значение возобновления сертификата. Допустимые значения — от 1 до 99|
 |certificateValidityPeriodValue|Int32|Значение срока действия сертификата.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срока действия сертификата. Возможные значения: `days`, `months`, `years`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,7 +54,6 @@ ms.locfileid: "32571718"
   "certificateValidityPeriodScale": "String"
 }
 ```
-
 
 
 

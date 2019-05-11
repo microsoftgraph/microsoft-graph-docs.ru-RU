@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 888df51e17ab45dcada3d69fad95315b26b4b20e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561182"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949299"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -38,7 +38,7 @@ ms.locfileid: "32561182"
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги.|
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
+|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -76,7 +76,6 @@ ms.locfileid: "32561182"
   "privacyInformationUrl": "String"
 }
 ```
-
 
 
 

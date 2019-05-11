@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса win32LobAppReturnCode
 description: Содержит свойства кода возврата для приложения Win32
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c05d695b05a001e6854e254bf065d6fb41ba773
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a37236064abb2e792e9227b8f76f32e1fd3ff9d9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461089"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949481"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>Тип ресурса win32LobAppReturnCode
 
@@ -25,7 +25,7 @@ ms.locfileid: "32461089"
 |Ретурнкоде|Int32|Возвращаемый код.|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Тип кода возврата. Возможные значения: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32461089"
   "type": "String"
 }
 ```
-
 
 
 

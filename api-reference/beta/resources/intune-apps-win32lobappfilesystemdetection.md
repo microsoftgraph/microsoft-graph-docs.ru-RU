@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса win32LobAppFileSystemDetection
 description: Содержит путь к файлу или папке для обнаружения приложения Win32
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e899a9caa5e4f21292ec56c5595bc77d3b68bcc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c7ba5c05647f25eb6248a7611617e630611025a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550765"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949642"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 
@@ -20,19 +20,19 @@ ms.locfileid: "32550765"
 Содержит путь к файлу или папке для обнаружения приложения Win32
 
 
-НаСледуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
-|Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|Филеорфолдернаме|Строка|Имя файла или папки для определения бизнес-приложения Win32|
 |check32BitOn64System|Логический|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
 |Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|String|Значение обнаружения файлов или папок|
+|Детектионвалуе|Строка|Значение обнаружения файлов или папок|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "32550765"
   "detectionValue": "String"
 }
 ```
-
 
 
 

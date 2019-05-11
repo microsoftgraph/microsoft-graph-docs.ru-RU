@@ -1,15 +1,15 @@
 ---
 title: тип перечисления deviceType
 description: Тип устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e29fb236bbfeca914878e92d8b565502e5658f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9f9a0197cce39e1801058abb3dcc52671852093
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525224"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939821"
 ---
 # <a name="devicetype-enum-type"></a>тип перечисления deviceType
 
@@ -23,24 +23,24 @@ ms.locfileid: "32525224"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системной|нуль|Системной.|
-|Виндовсрт|1 |Виндовсрт.|
-|winMO6|2 |WinMO6.|
-|Nokia|3 |Nokia.|
-|windowsPhone|4 |Windows Phone.|
-|mac|5 |OS.|
+|Виндовсрт|1,1|Виндовсрт.|
+|winMO6|2|WinMO6.|
+|Nokia|4|Nokia.|
+|windowsPhone|SP4|Windows Phone.|
+|mac|17:00|OS.|
 |winCE|6 |WinCE.|
 |Винембеддед|7 |Винембеддед.|
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |Иподтауч.|
-|ОС|11 |ОС.|
-|Исокконсумер|12 |Исокконсумер.|
-|формате|13 |Формате.|
-|Макмдм|14 |Клиент Mac OS X, использующий встроенный агент MDM.|
-|holoLens|15 |Представляет собой затейливого Windows 10 гогглес.|
-|Сурфацехуб|16 |Устройство Surface HUB.|
-|Андроидфорворк|17 |Android для рабочего устройства.|
-|Андроидентерприсе|18 |Устройство Android Enterprise.|
+|ОС|-11:00|ОС.|
+|Исокконсумер|12|Исокконсумер.|
+|формате|13|Формате.|
+|Макмдм|14|Клиент Mac OS X, использующий встроенный агент MDM.|
+|holoLens|означает|Представляет собой затейливого Windows 10 гогглес.|
+|Сурфацехуб|столбцов|Устройство Surface HUB.|
+|Андроидфорворк|17|Android для рабочего устройства.|
+|Андроидентерприсе|0,18|Устройство Android Enterprise.|
 |BlackBerry|100|BlackBerry.|
 |Положите|101|Положите.|
 |unknown|255|Указывает, что тип устройства неизвестен.|

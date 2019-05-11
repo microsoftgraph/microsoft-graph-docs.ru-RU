@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса resourceAction
 description: Набор разрешенных и запрещенных действий для ресурса.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4cccb0b47d0d4724ebba7a4749529ccbfe5f7f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 597a9c7cdc2f04247e799772f100d1a0b778453e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566341"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939989"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
@@ -25,7 +25,7 @@ ms.locfileid: "32566341"
 |allowedResourceActions|Коллекция строк|Разрешенные действия|
 |notAllowedResourceActions|Коллекция строк|Действия не разрешены.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "32566341"
   ]
 }
 ```
-
 
 
 

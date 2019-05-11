@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Манажедебуккатегори
 description: Содержит свойства для одной категории электронной книги Intune.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef3d0d621394af0cfe949031d79ff374ba0491b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0baa3dbbecd90483eeb182edf486fcd6bfdd846b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548294"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949320"
 ---
 # <a name="managedebookcategory-resource-type"></a>Тип ресурса Манажедебуккатегори
 
@@ -32,10 +32,10 @@ ms.locfileid: "32548294"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя категории электронной книги.|
+|displayName|Строка|Имя категории электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Манажедебуккатегори.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,7 +54,6 @@ ms.locfileid: "32548294"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

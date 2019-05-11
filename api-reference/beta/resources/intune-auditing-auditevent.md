@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса auditEvent
 description: Класс, содержащий свойства события аудита.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c6004db55f25f92261de8fd6ee2a5418928e9a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 87c57f2b4dccd837f58ffaab4242a87ae61c24d3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558337"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949383"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -33,20 +33,20 @@ ms.locfileid: "32558337"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|String|Имя компонента.|
+|componentName|Строка|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String|Понятное имя действия.|
+|activity|Строка|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String|Тип выполненного действия.|
-|activityOperationType|String|Тип операции HTTP для действия.|
+|activityType|Строка|Тип выполненного действия.|
+|activityOperationType|Строка|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
 |category|String|Категория аудита.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -101,7 +101,6 @@ ms.locfileid: "32558337"
   "category": "String"
 }
 ```
-
 
 
 

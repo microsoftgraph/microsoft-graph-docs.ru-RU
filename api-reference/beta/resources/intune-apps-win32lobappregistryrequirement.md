@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса win32LobAppRegistryRequirement
 description: Содержит свойства реестра для обнаружения приложения Win32
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64eb6a437350d569a8cbc65b5f8cac0da9661508
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bd6f5e64953f71bcea6ed5e6e06205213bba58b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534432"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949537"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>Тип ресурса win32LobAppRegistryRequirement
 
@@ -20,19 +20,19 @@ ms.locfileid: "32534432"
 Содержит свойства реестра для обнаружения приложения Win32
 
 
-НаСледуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)
+Наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наСледуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|Детектионвалуе|Строка|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |check32BitOn64System|Логический|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
-|Ключевой|String|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
-|valueName|String|Имя значения реестра|
+|Ключевой|Строка|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
+|valueName|Строка|Имя значения реестра|
 |Детектионтипе|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных в реестре. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "32534432"
   "detectionType": "String"
 }
 ```
-
 
 
 

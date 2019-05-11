@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта targetedManagedAppPolicyAssignment
 description: Обновление свойств объекта targetedManagedAppPolicyAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfdeae9b54b2f196b419150cf54aa722ffcd2d63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4a1fbfeffb3504ab806783372278dd790f41b3e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529312"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903111"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Обновление объекта targetedManagedAppPolicyAssignment
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id|
+|id|Строка|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор для развертывания группы или приложения|
 
 
@@ -94,7 +94,6 @@ Content-Length: 223
   }
 }
 ```
-
 
 
 

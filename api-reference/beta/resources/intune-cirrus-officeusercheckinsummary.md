@@ -2,14 +2,14 @@
 title: Тип ресурса Оффицеусерчеккинсуммари
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: b74d7508c9ef3b1d7183c806783e567cb75859ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ee53bbdbb02a3d5716f49941ec108e23a09ae88
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526386"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949271"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса Оффицеусерчеккинсуммари
 
@@ -25,7 +25,7 @@ ms.locfileid: "32526386"
 |Сукцеедедусеркаунт|Int32|Общее количество успешных проверок пользователей за последние 3 месяца.|
 |failedUserCount|Int32|Общее число неудачных проверок пользователей за последние 3 месяца.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

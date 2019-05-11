@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса networkIPv6ConfigurationManagementCondition
-description: Можно определить условия управления на основе конфигурации IPv6, которые будут вызываться, когда устройство обнаружит определенные параметры IP-сети. Условие управления IP-конфигурацией считается ИСТИНным, только если сетевое подключение активно. Адреса DHCP-серверов IPv6 могут быть несогласованными. Это связано с тем, что Windows (цирка Редстоне) не предоставляет эту информацию в службу естественной проверки поДлинности.
-author: tfitzmac
+description: Можно определить условия управления на основе конфигурации IPv6, которые будут вызываться, когда устройство обнаружит определенные параметры IP-сети. Условие управления IP-конфигурацией считается ИСТИНным, только если сетевое подключение активно. Адреса DHCP-серверов IPv6 могут быть несогласованными. Это связано с тем, что Windows (цирка Редстоне) не предоставляет эту информацию в службу естественной проверки подлинности.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27f6e0705e7eee1e4e980c9f663df987c32c0705
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 460977c45b34526c417dbc61360a33bed66f33d7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565592"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941207"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv6ConfigurationManagementCondition
 
@@ -18,10 +18,10 @@ ms.locfileid: "32565592"
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Можно определить условия управления на основе конфигурации IPv6, которые будут вызываться, когда устройство обнаружит определенные параметры IP-сети. Условие управления IP-конфигурацией считается ИСТИНным, только если сетевое подключение активно.
-Адреса DHCP-серверов IPv6 могут быть несогласованными. Это связано с тем, что Windows (цирка Редстоне) не предоставляет эту информацию в службу естественной проверки поДлинности.
+Адреса DHCP-серверов IPv6 могут быть несогласованными. Это связано с тем, что Windows (цирка Редстоне) не предоставляет эту информацию в службу естественной проверки подлинности.
 
 
-НаСледуется от [нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md)
+Наследуется от [нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -35,23 +35,23 @@ ms.locfileid: "32565592"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|Имя условия управления, определенное администратором. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|description|String|Описание условия управления, заданное администратором. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|eTag|String|Тег ETag условия управления. Обновленная сторона службы. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|ipV6Prefix|String|Подсеть IPv6, к которой необходимо подключиться. Например: 2001: db8::/32|
-|ipV6Gateway|String|Адрес шлюза IPv6 в. Например, 2001: db8:: 1|
-|ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптера.|
-|Днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
+|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Строка|Уникальное имя условия управления. Используется в выражениях условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|displayName|Строка|Имя условия управления, определенное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|description|String|Описание условия управления, заданное администратором. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|eTag|String|Тег ETag условия управления. Обновленная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|ipV6Prefix|Строка|Подсеть IPv6, к которой необходимо подключиться. Например: 2001: db8::/32|
+|ipV6Gateway|Строка|Адрес шлюза IPv6 в. Например, 2001: db8:: 1|
+|ipV6DNSServerList|Коллекция строк|DNS-серверы IPv6, настроенные для адаптера.|
+|Днссуффикслист|Коллекция строк|Допустимые DNS-суффиксы для текущей сети. Например, seattle.contoso.com|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|Манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|Манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -84,7 +84,6 @@ ms.locfileid: "32565592"
   ]
 }
 ```
-
 
 
 

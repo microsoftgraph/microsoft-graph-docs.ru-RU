@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементексчанжеонпремисесполици
-description: ОдноЭлементный объект, представляющий политику локальной политики Exchange, настроенную для клиента.
-author: tfitzmac
+description: Одноэлементный объект, представляющий политику локальной политики Exchange, настроенную для клиента.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8605a3062d8808ea6a4d0b5397283f0ca82d920
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 281ea3fbdbb1c166692b03859cf7ed3c8272d3b7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566572"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940304"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>Тип ресурса Девицеманажементексчанжеонпремисесполици
 
@@ -17,7 +17,7 @@ ms.locfileid: "32566572"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-ОдноЭлементный объект, представляющий политику локальной политики Exchange, настроенную для клиента.
+Одноэлементный объект, представляющий политику локальной политики Exchange, настроенную для клиента.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -28,8 +28,8 @@ ms.locfileid: "32566572"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|Нотификатионконтент|Двоичный|Текст уведомления, который будет отправляться пользователям, помещенным в карантин этой политикой. Это HTML-кодированный массив байтов в кодировке UTF8.|
+|id|Строка|Пока не задокументировано.|
+|Нотификатионконтент|Binary|Текст уведомления, который будет отправляться пользователям, помещенным в карантин этой политикой. Это HTML-кодированный массив байтов в кодировке UTF8.|
 |Дефаултакцесслевел|[Девицеманажементексчанжеакцесслевел](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Состояние доступа по умолчанию в Exchange. Это правило применяется глобально ко всей организации Exchange. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
 |Акцессрулес|Коллекция [девицеманажементексчанжеакцессруле](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|Список правил доступа к устройствам в Exchange. Правила доступа применяются глобально ко всей организации Exchange|
 |Кновндевицеклассес|Коллекция [девицеманажементексчанжедевицекласс](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Список классов устройств, известных для Exchange|
@@ -73,7 +73,6 @@ ms.locfileid: "32566572"
   ]
 }
 ```
-
 
 
 

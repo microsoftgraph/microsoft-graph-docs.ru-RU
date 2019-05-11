@@ -1,15 +1,15 @@
 ---
 title: Обновление windowsAutopilotSettings
 description: Обновление свойств объекта windowsAutopilotSettings.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0392fda945cb3b98c872e75d5f896a13b2f4ce2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41c7b8f00bdd3adbb7f2b1de1ad72a62676b8af5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532585"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908142"
 ---
 # <a name="update-windowsautopilotsettings"></a>Обновление windowsAutopilotSettings
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/windowsAutopilotSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |Ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |syncStatus|[Виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
@@ -92,7 +92,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceEnrollmentConfiguration
-description: Пока не задокументировано.
-author: tfitzmac
+description: Базовый класс конфигурации регистрации устройств
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ac4d37529eb6e3688b110146801a7ec5ee533c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d05914e1b25ac3712ac60274facf0904c91d4224
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521252"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940458"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -17,31 +17,31 @@ ms.locfileid: "32521252"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано.
+Базовый класс конфигурации регистрации устройств
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список объектов deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md)|Коллекция [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Список свойств и связей объектов [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |[Получение объекта deviceEnrollmentConfiguration](../api/intune-onboarding-deviceenrollmentconfiguration-get.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Чтение свойств и связей объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|[Действие setPriority](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|Нет|Пока не задокументировано.|
+|[Действие setPriority](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|Нет|Н/Д|
 |[Действие assign](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|Нет|Пока не задокументировано|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор конфигурации страницы состояния регистрации|
-|displayName|String|Пока не задокументировано.|
-|description|String|Пока не задокументировано.|
-|priority|Int32|Пока нет описания|
-|createdDateTime|DateTimeOffset|Пока не задокументировано.|
-|lastModifiedDateTime|DateTimeOffset|Н/Д|
-|version|Int32|Пока нет описания|
+|id|String|Уникальный идентификатор для учетной записи|
+|displayName|Строка|Отображаемое имя конфигурации регистрации устройств|
+|description|String|Описание конфигурации регистрации устройств|
+|priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
+|createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для конфигурации регистрации устройств|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств в формате UTC|
+|version|Int32|Версия конфигурации регистрации устройств|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства.|
+|assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -63,7 +63,6 @@ ms.locfileid: "32521252"
   "version": 1024
 }
 ```
-
 
 
 

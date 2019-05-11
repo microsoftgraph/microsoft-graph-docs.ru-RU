@@ -2,14 +2,14 @@
 title: Общие ресурсы в Microsoft Intune — API Microsoft Graph
 description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), поддерживающих несколько рабочих процессов для организации клиента.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 6436f134ae9e95623b073f6e645f0737d45d540e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d627ebb67876c89136ba6e4e63e9879e3a0ed8d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566285"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939905"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -51,7 +51,7 @@ ms.locfileid: "32566285"
 - [Состояние выполнения](intune-shared-runstate.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [Пользователь](intune-shared-user.md)
+- [пользователь](intune-shared-user.md);
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)

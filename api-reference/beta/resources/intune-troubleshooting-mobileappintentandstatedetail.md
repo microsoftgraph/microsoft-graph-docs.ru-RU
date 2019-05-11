@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Мобилеаппинтентандстатедетаил
 description: Цель мобильного приложения и состояние установки для данного устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e39a8e869a688dc74ebcc18e4ef56fc16459013d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2392d9bc83fda65832cb123115ba1285c823174a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523443"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939023"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>Тип ресурса Мобилеаппинтентандстатедетаил
 
@@ -23,13 +23,13 @@ ms.locfileid: "32523443"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationId|String|Идентификатор Мобиеапп.|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор.|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор.|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md);|Цель для мобильного приложения. Возможные значения: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
-|Дисплайверсион|String|Доступная для человека версия приложения|
+|Дисплайверсион|Строка|Доступная для человека версия приложения|
 |installState|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |Суппортеддевицетипес|Коллекция [мобилеаппсуппортеддевицетипе](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)|Поддерживаемые платформы для приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,7 @@ ms.locfileid: "32523443"
   ]
 }
 ```
+
 
 
 

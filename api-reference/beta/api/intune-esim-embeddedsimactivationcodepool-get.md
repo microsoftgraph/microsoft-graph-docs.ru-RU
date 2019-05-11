@@ -1,15 +1,15 @@
 ---
 title: Получение Ембеддедсимактиватионкодепул
 description: Чтение свойств и связей объекта Ембеддедсимактиватионкодепул.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38c6e35033dfa2c9f2f579691f250580b87ed319
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a13c3db576561f87712522c27fe1dcda3fe73e7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532396"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33907593"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>Получение Ембеддедсимактиватионкодепул
 
@@ -86,7 +86,6 @@ Content-Length: 675
   }
 }
 ```
-
 
 
 

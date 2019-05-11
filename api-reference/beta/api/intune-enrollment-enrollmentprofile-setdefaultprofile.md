@@ -1,15 +1,15 @@
 ---
 title: Действие setDefaultProfile
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 874ff79e25cfeaabcad0d92849cfbc01004c314a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80d8e6bd29a29278d7269bf3ebb9ad0aa6210871
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533138"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908534"
 ---
 # <a name="setdefaultprofile-action"></a>Действие setDefaultProfile
 
@@ -62,7 +62,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

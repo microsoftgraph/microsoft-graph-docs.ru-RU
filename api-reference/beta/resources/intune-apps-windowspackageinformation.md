@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windowsPackageInformation
 description: Содержит свойства для сведений о пакете для бизнес-приложения Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e1dda51d5c98cb27ab9e71c7bef9167959c9052
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2803779830d0e2bb88a0a91a96abfc101d15cb66
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558239"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949502"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
 
@@ -23,14 +23,14 @@ ms.locfileid: "32558239"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, в которой можно запустить это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|String|Отображаемое имя.|
-|identityName|String|Имя удостоверения.|
-|Идентитипублишер|String|Издатель удостоверений.|
+|displayName|Строка|Отображаемое имя.|
+|identityName|Строка|Имя удостоверения.|
+|Идентитипублишер|Строка|Издатель удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия идентификатора.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,7 +61,6 @@ ms.locfileid: "32558239"
   }
 }
 ```
-
 
 
 

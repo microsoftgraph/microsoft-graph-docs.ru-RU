@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсарчитектуре
 description: Содержит свойства для архитектуры Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebed524aefbe9ea75773fac675408f889fb43247
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e755967dc6987b7de77c56e140ea7102e0b49e70
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557994"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949495"
 ---
 # <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
 
@@ -22,13 +22,12 @@ ms.locfileid: "32557994"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Флаги не заданы.|
-|платформы|1 |Поддерживается ли тип архитектуры x86 Windows.|
-|x|2 |Поддерживается ли тип архитектуры Windows x64.|
-|руки|4 |Поддерживается ли тип архитектуры Windows ARM.|
+|none|нуль|Флаги не заданы.|
+|платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
+|x|2|Поддерживается ли тип архитектуры Windows x64.|
+|руки|SP4|Поддерживается ли тип архитектуры Windows ARM.|
 |определенно|8 |Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
-|arm64|16 |Поддерживается ли тип архитектуры Windows Arm64.|
-
+|arm64|столбцов|Поддерживается ли тип архитектуры Windows Arm64.|
 
 
 

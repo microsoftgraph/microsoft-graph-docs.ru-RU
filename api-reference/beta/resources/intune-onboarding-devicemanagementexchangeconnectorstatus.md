@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицеманажементексчанжеконнекторстатус
 description: Текущее состояние соединителя Exchange Connector.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87b45805c7beb15147cf90f8c2f6bef1b82ecb7f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37e91b057e39b28849b47de89c275f7067a08ac6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566621"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940353"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторстатус
 
@@ -22,11 +22,10 @@ ms.locfileid: "32566621"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Соединитель не существует.|
-|Коннектионпендинг|1 |Ожидание подключения к среде Exchange.|
-|присоединен|2 |Подключение к среде Exchange|
-|подключения|3 |Отключено от среды Exchange|
-
+|none|нуль|Соединитель не существует.|
+|Коннектионпендинг|1,1|Ожидание подключения к среде Exchange.|
+|присоединен|2|Подключение к среде Exchange|
+|подключения|4|Отключено от среды Exchange|
 
 
 

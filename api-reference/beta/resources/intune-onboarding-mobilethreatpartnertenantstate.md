@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Мобилесреатпартнертенантстате
 description: Состояние партнера этого клиента.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b145805247a41f28e957cc024941d0e0448a73ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5565ecff080ce8c70f1dbf3885b39477bdbe978
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566488"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940178"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>тип перечисления Мобилесреатпартнертенантстате
 
@@ -23,10 +23,9 @@ ms.locfileid: "32566488"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |выходе|нуль|Партнер недоступен.|
-|доступен|1 |Партнер доступен.|
-|enabled|2 |Партнер включен.|
-|не отвечает|3 |Партнер не отвечает.|
-
+|доступен|1,1|Партнер доступен.|
+|enabled|2|Партнер включен.|
+|не отвечает|4|Партнер не отвечает.|
 
 
 

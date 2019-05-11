@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса fileEncryptionInfo
 description: Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a2236e2c63703ea5af2662d5b0f4594e7888799
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a507aed30d82fd012a964082a2d83fed0f7c751
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552179"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950426"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
@@ -22,15 +22,15 @@ ms.locfileid: "32552179"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|encryptionKey|Двоичный|Ключ, используемый для шифрования содержимого файла.|
-|initializationVector|Двоичный|Вектор инициализации, используемый для алгоритма шифрования.|
-|mac|Двоичный|Хэш зашифрованного содержимого файла + IV (хэш содержимого).|
-|macKey|Двоичный|Ключ для получения свойства mac.|
-|profileIdentifier|String|Идентификатор профиля.|
+|encryptionKey|Binary|Ключ, используемый для шифрования содержимого файла.|
+|initializationVector|Binary|Вектор инициализации, используемый для алгоритма шифрования.|
+|mac|Binary|Хэш зашифрованного содержимого файла + IV (хэш содержимого).|
+|macKey|Binary|Ключ для получения свойства mac.|
+|profileIdentifier|Строка|Идентификатор профиля.|
 |fileDigest|Binary|Дайджест файла до шифрования.|
 |fileDigestAlgorithm|String|Алгоритм дайджеста файла.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "32552179"
   "fileDigestAlgorithm": "String"
 }
 ```
-
 
 
 

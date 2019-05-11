@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов macOSGeneralDeviceConfiguration
 description: Список свойств и связей объектов macOSGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63ec36b6db40f6b4f05525fe7441407931af55f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 121103a70805165e8193b8bf3bf666d88989da4a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518466"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922566"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Перечисление объектов macOSGeneralDeviceConfiguration
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2437
+Content-Length: 2806
 
 {
   "value": [
@@ -128,12 +128,18 @@ Content-Length: 2437
       "passwordBlockAirDropSharing": true,
       "softwareUpdatesEnforcedDelayInDays": 2,
       "softwareUpdatesForceDelayed": true,
-      "contentCachingBlocked": true
+      "contentCachingBlocked": true,
+      "iCloudBlockPhotoLibrary": true,
+      "screenCaptureBlocked": true,
+      "classroomAppBlockRemoteScreenObservation": true,
+      "classroomAppForceUnpromptedScreenObservation": true,
+      "classroomForceAutomaticallyJoinClasses": true,
+      "classroomForceRequestPermissionToLeaveClasses": true,
+      "classroomForceUnpromptedAppAndDeviceLock": true
     }
   ]
 }
 ```
-
 
 
 

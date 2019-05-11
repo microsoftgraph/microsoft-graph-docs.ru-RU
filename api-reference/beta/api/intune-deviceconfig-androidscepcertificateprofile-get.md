@@ -1,15 +1,15 @@
 ---
 title: Получение androidScepCertificateProfile
 description: Чтение свойств и связей объекта androidScepCertificateProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05ca735640bf0b7a1d081c93967eefe1f26ca0f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce4f7ffb987aa7f45b74fe749de468a113d2843f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475979"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928906"
 ---
 # <a name="get-androidscepcertificateprofile"></a>Получение androidScepCertificateProfile
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -105,7 +105,6 @@ Content-Length: 1227
   }
 }
 ```
-
 
 
 

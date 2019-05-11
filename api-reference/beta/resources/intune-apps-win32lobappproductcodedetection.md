@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса win32LobAppProductCodeDetection
 description: Содержит код продукта и свойства версии для обнаружения приложения Win32
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 755d0470873da1e5176e0962ace955d1fc647b80
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6c56e3047ccc83e7d417e03bc4a95a8538650341
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534467"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949523"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>Тип ресурса win32LobAppProductCodeDetection
 
@@ -20,16 +20,16 @@ ms.locfileid: "32534467"
 Содержит код продукта и свойства версии для обнаружения приложения Win32
 
 
-НаСледуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|productCode|String|Код продукта для бизнес-приложения Win32 (LoB).|
+|productCode|Строка|Код продукта для бизнес-приложения Win32 (LoB).|
 |Продуктверсионоператор|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для определения версии продукта. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |productVersion|String|Версия приложения, на котором установлен продукт Win32 бизнес (LoB).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,7 +47,6 @@ ms.locfileid: "32534467"
   "productVersion": "String"
 }
 ```
-
 
 
 

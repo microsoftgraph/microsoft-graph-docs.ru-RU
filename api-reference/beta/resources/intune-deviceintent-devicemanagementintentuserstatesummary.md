@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементинтентусерстатесуммари
 description: Сущность, представляющая сводную информацию о состоянии пользователя для намерения
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 538d1e5da36a1d90aac95641175eb0cebeeb69c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b4b13d4dc368c52686aa4d003a0f5995762ec56
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550555"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943455"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентусерстатесуммари
 
@@ -28,14 +28,14 @@ ms.locfileid: "32550555"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
+|id|Строка|Идентификатор|
 |conflictCount|Int32|Количество пользователей в конфликте|
 |errorCount|Int32|Количество пользователей с ошибками|
 |failedCount|Int32|Количество пользователей с ошибками|
 |notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,7 +57,6 @@ ms.locfileid: "32550555"
   "successCount": 1024
 }
 ```
-
 
 
 

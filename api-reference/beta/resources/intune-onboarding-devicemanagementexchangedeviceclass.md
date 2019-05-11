@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементексчанжедевицекласс
 description: Класс устройства в Exchange.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ec9f0242521bf23b4ed5f1c9f002211d542e48c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 16ed6730363a8f33eeb9ad430f5d2fb56c518032
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566565"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940297"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>Тип ресурса Девицеманажементексчанжедевицекласс
 
@@ -25,7 +25,7 @@ ms.locfileid: "32566565"
 |name|String|Имя класса устройств, на который влияет это правило.|
 |type|[Девицеманажементексчанжеакцессрулетипе](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Тип устройства, на которое влияет это правило, например Model, Family. Возможные значения: `family`, `model`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32566565"
   "type": "String"
 }
 ```
-
 
 
 

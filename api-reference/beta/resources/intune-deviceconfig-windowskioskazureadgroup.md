@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовскиосказуреадграуп
 description: Класс, используемый для идентификации группы AzureAD для конфигурации киоска
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3224f55f4a5158fb8c0850a4dbea7e6bcf8d18d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ba3b98a0d44a993b3c5be89d4bdb01e348e9ac0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522435"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943902"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>Тип ресурса Виндовскиосказуреадграуп
 
@@ -20,15 +20,15 @@ ms.locfileid: "32522435"
 Класс, используемый для идентификации группы AzureAD для конфигурации киоска
 
 
-НаСледуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
+Наследуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
+|displayName|Строка|Отображаемое имя группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 |groupId|String|Идентификатор группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "32522435"
   "groupId": "String"
 }
 ```
-
 
 
 

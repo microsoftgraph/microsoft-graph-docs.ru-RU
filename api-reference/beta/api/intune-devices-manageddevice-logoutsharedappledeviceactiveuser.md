@@ -1,15 +1,15 @@
 ---
 title: Действие logoutSharedAppleDeviceActiveUser
 description: Выход от имени активного пользователя общего устройства Apple
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5c9593a8c2ab9a443de177f544e949ba158b77c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2ab50bbc742c713bff617efd7074b62b8f03fd3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520174"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909633"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>Действие logoutSharedAppleDeviceActiveUser
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

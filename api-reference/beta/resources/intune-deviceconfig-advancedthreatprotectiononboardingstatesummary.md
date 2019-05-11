@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
 description: Сводка по состоянию Advanced Threat Protection в Защитнике Windows по всей учетной записи.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf0c9604d356bbd20d14aec9eb60768342cc2945
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d96de8e427d265003811c751bce7b6c0675ba667
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556419"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949124"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
 
@@ -28,7 +28,7 @@ ms.locfileid: "32556419"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор.|
+|id|Строка|Уникальный идентификатор.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -65,7 +65,6 @@ ms.locfileid: "32556419"
   "notAssignedDeviceCount": 1024
 }
 ```
-
 
 
 

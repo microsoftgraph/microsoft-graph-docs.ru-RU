@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса win32LobAppAssignmentSettings
 description: Содержит свойства, используемые для назначения бизнес-приложения Win32 для группы.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 445cd1a03a7495d4946f600dea3773d7bd9e2249
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ee2ac32773fc0ec781f22ff547dccfdcd15aea1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550807"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949803"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>Тип ресурса win32LobAppAssignmentSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "32550807"
 |:---|:---|:---|
 |уведомления|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|Состояние уведомления о назначении этого приложения. Возможные значения: `showAll`, `showReboot`, `hideAll`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32550807"
   "notifications": "String"
 }
 ```
-
 
 
 

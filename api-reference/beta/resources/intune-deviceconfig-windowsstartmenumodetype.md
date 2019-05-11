@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсстартменумодетипе
 description: Тип режимов отображения для меню "Пуск".
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03f4fcc1c16c09a4e510034a83c300733ac2767c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e4d580bfc580cd6424ca49b98cc510d84cf5c10c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523681"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943713"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>тип перечисления Виндовсстартменумодетипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32523681"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|Перейти|1 |Полноэкранный режим.|
-|неПолноэкранный режим|2 |Не полный экран.|
-
+|Перейти|1,1|Полноэкранный режим.|
+|неполноэкранный режим|2|Не полный экран.|
 
 
 

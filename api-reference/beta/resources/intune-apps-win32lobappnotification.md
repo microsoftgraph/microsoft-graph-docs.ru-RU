@@ -1,15 +1,15 @@
 ---
 title: тип перечисления win32LobAppNotification
 description: Содержит значение состояния уведомления.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3774aea1e3737157bf3242cc03990312a7d3510e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: be04f8f3b2a830c3acde06d591cfd6f80bf18ee2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534474"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949551"
 ---
 # <a name="win32lobappnotification-enum-type"></a>тип перечисления win32LobAppNotification
 
@@ -23,9 +23,8 @@ ms.locfileid: "32534474"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |showAll|нуль|Показать все уведомления.|
-|Шовребут|1 |Показывать уведомления о перезапуске только и отменять другие уведомления.|
-|Хидеалл|2 |Скрыть все уведомления.|
-
+|Шовребут|1,1|Показывать уведомления о перезапуске только и отменять другие уведомления.|
+|Хидеалл|2|Скрыть все уведомления.|
 
 
 

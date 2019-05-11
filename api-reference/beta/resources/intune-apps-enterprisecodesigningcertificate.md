@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Ентерприсекодесигнингцертификате
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 213915889ad575af61fcdda7ee7306c0b38370c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75798ec0e66086b3dbf1425d297ed7f0a29808c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552270"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950468"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Тип ресурса Ентерприсекодесигнингцертификате
 
@@ -32,16 +32,16 @@ ms.locfileid: "32552270"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|содержимое|Двоичный|Сертификат подписи кода Windows Enterprise в формате необработанных данных.|
+|содержимое|Binary|Сертификат подписи кода Windows Enterprise в формате необработанных данных.|
 |status|[Цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|String|Имя поставщика сертификата.|
-|имени|String|Значение издателя для сертификата.|
+|Иссуернаме|Строка|Имя поставщика сертификата.|
+|имени|Строка|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|Уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соКонструирования.|
+|Уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,7 +66,6 @@ ms.locfileid: "32552270"
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

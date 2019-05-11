@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементсеттингксмлконстраинт
 description: Ограничение, обеспечивающее применение параметра, — это XML-файл с правильным форматом
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 510d16f8c28bc3efc3c1bb1952c62edbc5394810
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6544844778a7e9a2437525506d6d8a21c9fb0503
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550590"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943302"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингксмлконстраинт
 
@@ -20,13 +20,13 @@ ms.locfileid: "32550590"
 Ограничение, обеспечивающее применение параметра, — это XML-файл с правильным форматом
 
 
-НаСледуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "32550590"
   "@odata.type": "#microsoft.graph.deviceManagementSettingXmlConstraint"
 }
 ```
-
 
 
 

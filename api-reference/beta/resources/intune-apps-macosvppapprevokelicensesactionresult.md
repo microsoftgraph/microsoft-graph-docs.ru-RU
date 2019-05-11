@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Макосвппаппревокелиценсесактионресулт
 description: Определяет результаты для действий в приложениях MacOS VPP, содержит унаследованные свойства для Актионресулт.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfe15398484dbcccdcbae876ea88c81268b8536c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad7ad1a2cdf8eabd67c1578c387b424f3e6f6c85
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552277"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950223"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Макосвппаппревокелиценсесактионресулт
 
@@ -23,7 +23,7 @@ ms.locfileid: "32552277"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|UserId, связанный с действием.|
-|Манажеддевицеид|String|DeviceId, связанный с действием.|
+|Манажеддевицеид|Строка|DeviceId, связанный с действием.|
 |Тоталлиценсескаунт|Int32|Количество лицензий, для которых была предпринята попытка отзыва.|
 |Фаиледлиценсескаунт|Int32|Количество лицензий, для которых произошел сбой при отзыве.|
 |Актионфаилуререасон|[Впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
@@ -32,7 +32,7 @@ ms.locfileid: "32552277"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,7 +56,6 @@ ms.locfileid: "32552277"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

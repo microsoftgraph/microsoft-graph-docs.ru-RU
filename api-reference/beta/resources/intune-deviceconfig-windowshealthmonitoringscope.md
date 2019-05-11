@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовшеалсмониторингскопе
 description: Область мониторинга работоспособности устройств
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5b471c98137594d685702257e679d44e7c2c120
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b72531bd71aafb58dd93e803982b00ff1f4653a2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573881"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944098"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>тип перечисления Виндовшеалсмониторингскопе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32573881"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |undefined|нуль|Undefined|
-|healthMonitoring|1 |Основные события для мониторинга работоспособности устройств Windows|
-|Бутперформанце|2 |События производительности загрузки|
-
+|healthMonitoring|1,1|Основные события для мониторинга работоспособности устройств Windows|
+|Бутперформанце|2|События производительности загрузки|
 
 
 

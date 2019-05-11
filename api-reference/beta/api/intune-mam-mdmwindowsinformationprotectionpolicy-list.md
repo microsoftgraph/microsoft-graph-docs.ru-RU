@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов mdmWindowsInformationProtectionPolicy
 description: Перечисление свойств и связей объектов mdmWindowsInformationProtectionPolicy.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09c6b2df9aa998d428264840c16a8fed30cf166a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cfaf2873909dbcd59feda57aec1f6695707f386c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529501"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903609"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Перечисление объектов mdmWindowsInformationProtectionPolicy
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -199,7 +199,6 @@ Content-Length: 4684
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 description: Объект, содержащий подробные сведения об ошибке и ее исправлении.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cfcbe0688836fa394237f1a25656540e401555f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a50c749e6c6c6ddd59705bbea34f0bbd2488f9a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554067"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939786"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 
@@ -24,11 +24,11 @@ ms.locfileid: "32554067"
 |:---|:---|:---|
 |контекст|String|Пока не задокументировано.|
 |Failure|String|Пока не задокументировано.|
-|Фаилуредетаилс|String|Подробное описание того, что пошло не так.|
-|исправления|String|Подробное описание этой проблемы.|
+|Фаилуредетаилс|Строка|Подробное описание того, что пошло не так.|
+|исправления|Строка|Подробное описание этой проблемы.|
 |resources|Коллекция [девицеманажементтраублешутинжеррорресаурце](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этой ошибке.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "32554067"
   ]
 }
 ```
+
 
 
 

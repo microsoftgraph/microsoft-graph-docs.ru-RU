@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Мобилеаппдепендецитипе
 description: Указывает тип зависимости, связанный с отношением между двумя мобильными приложениями.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cbf468435aa289913b566750823e65c73249838
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa60a799bed4ddd214e80b81112f88f71b02c18f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554179"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949943"
 ---
 # <a name="mobileappdependecytype-enum-type"></a>тип перечисления Мобилеаппдепендецитипе
 
@@ -23,7 +23,7 @@ ms.locfileid: "32554179"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |обнаруживать|нуль|Указывает, что дочернее приложение должно быть обнаружено перед установкой родительского приложения.|
-|автоУстановка|1 |Указывает, что дочернее приложение должно быть установлено перед установкой родительского приложения.|
+|Автоустановка|1,1|Указывает, что дочернее приложение должно быть установлено перед установкой родительского приложения.|
 
 
 

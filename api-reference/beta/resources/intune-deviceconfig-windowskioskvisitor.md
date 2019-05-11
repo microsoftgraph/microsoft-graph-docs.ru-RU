@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовскиосквиситор
 description: Класс, используемый для определения учетной записи киоска посетителя
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd6bc6e652b7058b55f60656191eafcae3c198c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 839d4c98bd3c30e57a41e99e279d405ecbd0327d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573209"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943804"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>Тип ресурса Виндовскиосквиситор
 
@@ -20,13 +20,13 @@ ms.locfileid: "32573209"
 Класс, используемый для определения учетной записи киоска посетителя
 
 
-НаСледуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
+Наследуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "32573209"
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Удаление Импортеддевицеидентити
 description: Удаляет объект Импортеддевицеидентити.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c706a177f7a5bf96a523d8b4d707725d54f29ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 169b03de95a85f93f93346651b824450117a1540
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532788"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908317"
 ---
 # <a name="delete-importeddeviceidentity"></a>Удаление Импортеддевицеидентити
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentitie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

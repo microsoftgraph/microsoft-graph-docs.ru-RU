@@ -1,15 +1,15 @@
 ---
 title: Создание Граупполициконфигуратионассигнмент
 description: Создание нового объекта Граупполициконфигуратионассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b0deda8c76a52705a60787766711b18b4b6ff50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41689302bfbb8dead46a610e277895219a58d181
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531997"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905170"
 ---
 # <a name="create-grouppolicyconfigurationassignment"></a>Создание Граупполициконфигуратионассигнмент
 
@@ -50,13 +50,13 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/as
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип групп, нацеленных на конфигурацию групповой политики.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 287
   }
 }
 ```
-
 
 
 

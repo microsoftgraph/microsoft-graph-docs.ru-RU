@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса iosLobAppProvisioningConfiguration
 description: В этом разделе приведены описания объявляемых методов, свойств и связей, предоставляемых ресурсом конфигурации подготовки бизнес-приложений iOS.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a5a85b0b5467835a1ecb3d81997e0300ab08eee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 197aed0a687e417750b61b0de2637bfbb9198a16
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552312"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950370"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Тип ресурса iosLobAppProvisioningConfiguration
 
@@ -33,7 +33,7 @@ ms.locfileid: "32552312"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|expirationDateTime|DateTimeOffset|Дата и время неОбязательного окончания срока действия профиля.|
+|expirationDateTime|DateTimeOffset|Дата и время необязательного окончания срока действия профиля.|
 |payloadFileName|String|Имя файла полезных данных (*. мобилепровисион | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.|
@@ -76,7 +76,6 @@ ms.locfileid: "32552312"
   "version": 1024
 }
 ```
-
 
 
 

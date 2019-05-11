@@ -1,15 +1,15 @@
 ---
 title: тип перечисления actionState
 description: Состояние действия на устройстве
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1188670476e911b01375598a2361aae326a98425
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa3e3dcd9b563301fb87b9bae0f3c2957631334b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566320"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939919"
 ---
 # <a name="actionstate-enum-type"></a>тип перечисления actionState
 
@@ -22,14 +22,13 @@ ms.locfileid: "32566320"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Недопустимое состояние действия|
-|закончен|1 |Ожидается действие|
-|закрыт|2 |Действие отменено.|
-|ASP|3 |Действие активно.|
-|done|4 |Действие выполнено без ошибок.|
-|сбоев|5 |Не удалось выполнить действие|
+|none|нуль|Недопустимое состояние действия|
+|закончен|1,1|Ожидается действие|
+|закрыт|2|Действие отменено.|
+|ASP|4|Действие активно.|
+|done|SP4|Действие выполнено без ошибок.|
+|сбоев|17:00|Не удалось выполнить действие|
 |notSupported|6 |Действие не поддерживается.|
-
 
 
 

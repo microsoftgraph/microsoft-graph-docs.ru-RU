@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Рунстате
 description: Указывает тип состояния выполнения скрипта управления устройствами.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 706ef0d5ea87796c951d2fcb8c7357643fba7afb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 093af5b16854bf65699e469b1afd47fe6b990375
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522589"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939842"
 ---
 # <a name="runstate-enum-type"></a>тип перечисления Рунстате
 
@@ -22,9 +22,9 @@ ms.locfileid: "32522589"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|НеИзвестный результат.|
-|success|1 |Сценарий успешно запущен.|
-|сбой|2 |Не удалось выполнить скрипт.|
+|unknown|нуль|Неизвестный результат.|
+|success|1,1|Сценарий успешно запущен.|
+|сбой|2|Не удалось выполнить скрипт.|
 
 
 

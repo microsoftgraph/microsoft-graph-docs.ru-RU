@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Аппликатионгуарденабледоптионс
 description: Возможные значения для Аппликатионгуарденабледоптионс
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac967cf80c15ce7947049f2ff444f8b8f0fb90fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e40dca252dd9b95afa781aac7ee888afd62ad4aa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549533"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947682"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>тип перечисления Аппликатионгуарденабледоптионс
 
@@ -23,10 +23,9 @@ ms.locfileid: "32549533"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Енабледфоредже|1 |Включено для поГраничного сервера|
-|Енабледфороффице|2 |Включено для Office|
-|Енабледфореджеандоффице|3 |Включено для поГраничной и Office|
-
+|Енабледфоредже|1,1|Включено для пограничного сервера|
+|Енабледфороффице|2|Включено для Office|
+|Енабледфореджеандоффице|4|Включено для пограничной и Office|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Ситесекуритилевел
 description: Возможные значения для уровня безопасности сайта.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 209b14cd5aff03d7cca2792999c9e1328774e578
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a38c4846e134e92735f102e9eae257e84b8fb2b7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464662"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944686"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>тип перечисления Ситесекуритилевел
 
@@ -28,7 +28,6 @@ ms.locfileid: "32464662"
 |medium|4|Средний.|
 |Медиумхигх|SP4|Умеренно высокий.|
 |высокоуровневых|17:00|Высокоуровневых.|
-
 
 
 

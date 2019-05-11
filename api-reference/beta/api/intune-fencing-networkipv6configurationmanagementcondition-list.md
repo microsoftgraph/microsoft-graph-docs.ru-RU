@@ -1,15 +1,15 @@
 ---
 title: Список networkIPv6ConfigurationManagementConditions
 description: Список свойств и связей объектов networkIPv6ConfigurationManagementCondition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df76ffd3f0fa8f9a5b01b066a76fc237c5a2b813
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e20dc7c23bb64a5174e6adc657b8ca595b194ac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532046"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905240"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>Список networkIPv6ConfigurationManagementConditions
 
@@ -91,7 +91,6 @@ Content-Length: 760
   ]
 }
 ```
-
 
 
 
