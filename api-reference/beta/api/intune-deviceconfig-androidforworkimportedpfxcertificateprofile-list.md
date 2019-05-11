@@ -1,15 +1,15 @@
 ---
 title: Список Андроидфорворкимпортедпфксцертификатепрофилес
 description: Список свойств и связей объектов Андроидфорворкимпортедпфксцертификатепрофиле.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 805927c25e4b9741aa742f75d0e86743e213d1de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d10f2888598df65ddcf0a8114a13adead1728ae8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478653"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933454"
 ---
 # <a name="list-androidforworkimportedpfxcertificateprofiles"></a>Список Андроидфорворкимпортедпфксцертификатепрофилес
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -96,7 +96,6 @@ Content-Length: 1027
   ]
 }
 ```
-
 
 
 

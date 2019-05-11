@@ -1,15 +1,15 @@
 ---
 title: Список Виндовсаппксс
 description: Список свойств и связей объектов windowsAppX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af3cdcad5b13efa9d67fb23a851dc62ab57d25b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 35e0a900c260105a29a60ac35ba83a50add467fd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488472"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934742"
 ---
 # <a name="list-windowsappxs"></a>Список Виндовсаппксс
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -115,7 +115,6 @@ Content-Length: 1748
   ]
 }
 ```
-
 
 
 

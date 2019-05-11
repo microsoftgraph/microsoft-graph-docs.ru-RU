@@ -1,15 +1,15 @@
 ---
 title: Получение deviceConfigurationGroupAssignment
 description: Чтение свойств и связей объекта deviceConfigurationGroupAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2860a7e4027b664930dd3593a95c2b356a082f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f2fca67879d977a9fdcc3813bbe5ec6583718fe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469490"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927475"
 ---
 # <a name="get-deviceconfigurationgroupassignment"></a>Получение deviceConfigurationGroupAssignment
 
@@ -54,7 +54,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 222
   }
 }
 ```
-
 
 
 

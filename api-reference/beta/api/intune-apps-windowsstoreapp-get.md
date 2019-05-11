@@ -1,15 +1,15 @@
 ---
 title: Получение Виндовсстореапп
 description: Чтение свойств и связей объекта Виндовсстореапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a723b135a8d0b315db9b3c84fe561c38cc01d59a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d6cda8f7fd29f4b536573a163f3475c13dfb1a9d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32486092"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934546"
 ---
 # <a name="get-windowsstoreapp"></a>Получение Виндовсстореапп
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -100,7 +100,6 @@ Content-Length: 1011
   }
 }
 ```
-
 
 
 

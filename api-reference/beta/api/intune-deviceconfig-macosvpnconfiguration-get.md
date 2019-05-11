@@ -1,15 +1,15 @@
 ---
 title: Получение Макосвпнконфигуратион
 description: Чтение свойств и связей объекта Макосвпнконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 471cc53a5aaba2d69d80171cb50469473fb67bf5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f113edb5629f9314e00d456e7cb534962494c34
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518368"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922131"
 ---
 # <a name="get-macosvpnconfiguration"></a>Получение Макосвпнконфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -142,7 +142,6 @@ Content-Length: 2184
   }
 }
 ```
-
 
 
 

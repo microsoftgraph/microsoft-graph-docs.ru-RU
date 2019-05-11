@@ -1,15 +1,15 @@
 ---
 title: Обновление Иослобапппровисионингконфигуратионассигнмент
 description: Обновление свойств объекта Иослобапппровисионингконфигуратионассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1339dca15ded4ef725e732f9c07ba5d7564f87ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb89d98eb4536f8cda959e3025cc7cec8dc6ebe7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495871"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937059"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>Обновление Иослобапппровисионингконфигуратионассигнмент
 
@@ -43,14 +43,14 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Иослобапппровисионингконфигуратионассигнмент](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [иослобапппровисионингконфигуратионассигнмент](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

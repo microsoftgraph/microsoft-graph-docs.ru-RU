@@ -1,15 +1,15 @@
 ---
 title: Создание объекта termsAndConditions
 description: Создание объекта termsAndConditions.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff4587ba1cb0ffd454c7ec3ee59751855a88545f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bad30650679f54e245e8f6bcd736e17bf15cce8a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482755"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933930"
 ---
 # <a name="create-termsandconditions"></a>Создание объекта termsAndConditions
 
@@ -43,7 +43,7 @@ POST /deviceManagement/termsAndConditions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта termsAndConditions в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта termsAndConditions.
@@ -54,10 +54,10 @@ POST /deviceManagement/termsAndConditions
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |modifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Имя политики использования, указанное администратором. |
-|description|String|Описание политики использования, указанное администратором.|
-|title|Строка|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
-|bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
+|displayName|Строка|Имя политики использования, указанное администратором. |
+|description|Строка|Описание политики использования, указанное администратором.|
+|title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
+|bodyText|Строка|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
 |version|Int32|Целое число, указывающее текущую версию условий. Увеличивается, когда администратор вносит изменения в условия и хочет, чтобы пользователи повторно приняли измененную политику.|
 
@@ -107,7 +107,6 @@ Content-Length: 505
   "version": 7
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов termsAndConditionsAssignment
 description: Список свойств и связей объектов termsAndConditionsAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b96d703904ccbb88ac1cfba4ae90180a3132a727
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 222d0f1580fc20bce57a1fd3fc14cf71dac26212
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482734"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933797"
 ---
 # <a name="list-termsandconditionsassignments"></a>Перечисление объектов termsAndConditionsAssignment
 
@@ -43,10 +43,10 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -76,7 +76,6 @@ Content-Length: 270
   ]
 }
 ```
-
 
 
 

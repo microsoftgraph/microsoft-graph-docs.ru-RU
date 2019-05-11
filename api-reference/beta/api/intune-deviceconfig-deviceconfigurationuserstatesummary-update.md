@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеконфигуратионусерстатесуммари
 description: Обновление свойств объекта Девицеконфигуратионусерстатесуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b03f366ba494e351e5dab898ec10e259db250521
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dfbaa2cc4b76a1c1e7cb59685c2ee1bd9d3674de
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467908"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927274"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Обновление Девицеконфигуратионусерстатесуммари
 
@@ -43,19 +43,19 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |unknownUserCount|Int32|Количество неизвестных пользователей|
 |notApplicableUserCount|Int32|Количество неприменимых пользователей|
 |compliantUserCount|Int32|Число соответствующих пользователей|
 |remediatedUserCount|Int32|Количество исправленных пользователей|
-|nonCompliantUserCount|Int32|Количество неСоответствующих пользователей|
+|nonCompliantUserCount|Int32|Количество несоответствующих пользователей|
 |errorUserCount|Int32|Количество пользователей с ошибками|
 |conflictUserCount|Int32|Количество конфликтующих пользователей|
 
@@ -104,7 +104,6 @@ Content-Length: 324
   "conflictUserCount": 1
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Создание Виндовсуниверсалаппксконтаинедапп
 description: Создание нового объекта Виндовсуниверсалаппксконтаинедапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c60644e72a5885a2155ed8ef9feae965bd86b0cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ed3f1cdf9334fa32e728306b33f561d2ddbd8a82
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485929"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934469"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Создание Виндовсуниверсалаппксконтаинедапп
 
@@ -45,15 +45,15 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсуниверсалаппксконтаинедапп в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсуниверсалаппксконтаинедапп.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. НаСледуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
-|Модели|String|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения приложения WindowsUniversalAppX.|
+|id|Строка|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
+|Модели|Строка|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения приложения WindowsUniversalAppX.|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

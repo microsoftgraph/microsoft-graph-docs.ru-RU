@@ -1,15 +1,15 @@
 ---
 title: Получение androidEnterpriseWiFiConfiguration
 description: Чтение свойств и связей объекта androidEnterpriseWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eba7572805ba93d47ef01274fe6c15be1577d56c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bc3eed6a1bcc6207b90936246c9ce04bbc89ba8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479696"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933020"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>Получение androidEnterpriseWiFiConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 998
+Content-Length: 1165
 
 {
   "value": {
@@ -91,11 +91,13 @@ Content-Length: 998
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
     "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "usernameFormatString": "Username Format String value",
+    "passwordFormatString": "Password Format String value",
+    "preSharedKey": "Pre Shared Key value"
   }
 }
 ```
-
 
 
 

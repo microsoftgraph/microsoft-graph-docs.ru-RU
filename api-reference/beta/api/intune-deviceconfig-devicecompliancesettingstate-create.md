@@ -1,15 +1,15 @@
 ---
 title: Создание объекта deviceComplianceSettingState
 description: Создание объекта deviceComplianceSettingState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbc15b29552e671bb102cadc027ed551bc360233
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e62d9ce097426b028a41d0ce882038f75e99de94
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470435"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927645"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Создание объекта deviceComplianceSettingState
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceComplianceSettingState в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceSettingState.
@@ -52,15 +52,15 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |:---|:---|:---|
 |id|Строка|Ключ объекта|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Тип платформы устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
-|setting|String|Имя класса параметров и свойства.|
-|settingName|String|Имя параметра в отчете|
-|deviceId|String|ИД устройства в отчете|
-|deviceName|String|Имя устройства в отчете|
+|setting|Строка|Имя класса параметров и свойства.|
+|settingName|Строка|Имя параметра в отчете|
+|deviceId|Строка|ИД устройства в отчете|
+|deviceName|Строка|Имя устройства в отчете|
 |userId|String|ИД пользователя в отчете|
 |userEmail|String|Электронный адрес пользователя в отчете|
-|userName|String|Имя пользователя в отчете|
+|userName|Строка|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
-|deviceModel|String|Модель устройства в отчете|
+|deviceModel|Строка|Модель устройства в отчете|
 |state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
@@ -119,7 +119,6 @@ Content-Length: 598
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

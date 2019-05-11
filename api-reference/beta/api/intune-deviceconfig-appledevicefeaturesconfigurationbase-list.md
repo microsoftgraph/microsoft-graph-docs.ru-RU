@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов appleDeviceFeaturesConfigurationBase
 description: Список свойств и связей объектов appleDeviceFeaturesConfigurationBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d074fedd7aa2fde069d609aea318216d7415ba18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4c385067d93036bc8e19c3d5b93df9e73bf73db1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471541"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928094"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>Перечисление объектов appleDeviceFeaturesConfigurationBase
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 789
   ]
 }
 ```
-
 
 
 

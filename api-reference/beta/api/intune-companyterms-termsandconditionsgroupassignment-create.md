@@ -1,15 +1,15 @@
 ---
 title: Создание Термсандкондитионсграупассигнмент
 description: Создание нового объекта Термсандкондитионсграупассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c390ed0d3d5fce21cc69adfe513169833d8f4a43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9d12dc03357faa804c801768294321fabe559bd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482454"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933762"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Создание Термсандкондитионсграупассигнмент
 
@@ -43,15 +43,15 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Термсандкондитионсграупассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Термсандкондитионсграупассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
-|Таржетграупид|String|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
+|id|Строка|Уникальный идентификатор объекта.|
+|Таржетграупид|Строка|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
 
 
 
@@ -86,7 +86,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

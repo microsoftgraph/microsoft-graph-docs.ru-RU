@@ -1,15 +1,15 @@
 ---
 title: Действие revokeAllLicenses
 description: Отзыв назначенной лицензии на устройство VPP для iOS для данного приложения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0dcb1481a4c0a19205952d8d1994d65648cc1e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f0ccbfdd293fb84a9d32c78a51d9e71be8dd0ab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495612"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936485"
 ---
 # <a name="revokedevicelicense-action"></a>Действие revokeAllLicenses
 
@@ -45,14 +45,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Манажеддевицеид|String|DeviceId, для которого назначена лицензия на приложение|
+|Манажеддевицеид|Строка|DeviceId, для которого назначена лицензия на приложение|
 |Нотифиманажеддевицес|Логический|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
@@ -81,7 +81,6 @@ Content-length: 85
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

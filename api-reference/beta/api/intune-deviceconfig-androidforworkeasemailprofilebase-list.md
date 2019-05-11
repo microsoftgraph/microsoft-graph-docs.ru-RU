@@ -1,15 +1,15 @@
 ---
 title: Список Андроидфорворкеасемаилпрофилебасес
 description: Список свойств и связей объектов Андроидфорворкеасемаилпрофилебасе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54d22811c6208ed4e44a8867271152c37f22f56c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a249494a5292836dba4366e3c260890037b32384
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479290"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933503"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>Список Андроидфорворкеасемаилпрофилебасес
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -89,7 +89,6 @@ Content-Length: 762
   ]
 }
 ```
-
 
 
 
