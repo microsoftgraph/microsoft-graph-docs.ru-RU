@@ -1,15 +1,15 @@
 ---
 title: Создание Девицеманажементкомплекссеттингинстанце
 description: Создание нового объекта Девицеманажементкомплекссеттингинстанце.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99842b9ec7a331861a2ca2528ad8c2d3b131b76f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4541090d163b02d8fda7a62ca43ce11ba69ff4a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509459"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916507"
 ---
 # <a name="create-devicemanagementcomplexsettinginstance"></a>Создание Девицеманажементкомплекссеттингинстанце
 
@@ -53,9 +53,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|Дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|Валуежсон|String|Представление JSON значения, наСледуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|Строка|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|Дефинитионид|Строка|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|Валуежсон|Строка|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

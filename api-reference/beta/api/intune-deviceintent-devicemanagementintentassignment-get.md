@@ -1,15 +1,15 @@
 ---
 title: Получение Девицеманажементинтентассигнмент
 description: Чтение свойств и связей объекта Девицеманажементинтентассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b07e48d33ad4d2b7653fc27ac3fcf47a2e568ccd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61e28a9dbe4e91dbfaa8cbdc9a49a9cbcf4d8692
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508409"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916177"
 ---
 # <a name="get-devicemanagementintentassignment"></a>Получение Девицеманажементинтентассигнмент
 
@@ -77,7 +77,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

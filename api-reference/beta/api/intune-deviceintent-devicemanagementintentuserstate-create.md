@@ -1,15 +1,15 @@
 ---
 title: Создание Девицеманажементинтентусерстате
 description: Создание нового объекта Девицеманажементинтентусерстате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa3b718bbf0b4e87805a79066bfd6f898e47a0d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3efb5031cd66e6a9566297f4d3db6430140f4e8f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507765"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915981"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Создание Девицеманажементинтентусерстате
 
@@ -55,7 +55,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceCount|Int32|Количество устройств, принадлежащие пользователю для намерения|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

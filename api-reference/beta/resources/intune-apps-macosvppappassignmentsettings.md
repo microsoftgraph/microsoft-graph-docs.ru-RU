@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Макосвппаппассигнментсеттингс
 description: Содержит свойства, используемые для назначения мобильному приложению Mac VPP группе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b55e203e58197d4b3e29d4a6a8567769d9196e0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b0c7b76b562a58e832c97cc03fb475a023247ee5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553087"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950321"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>Тип ресурса Макосвппаппассигнментсеттингс
 
@@ -27,7 +27,7 @@ ms.locfileid: "32553087"
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32553087"
   "useDeviceLicensing": true
 }
 ```
-
 
 
 

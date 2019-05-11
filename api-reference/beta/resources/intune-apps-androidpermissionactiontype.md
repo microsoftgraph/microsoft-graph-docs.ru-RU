@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Андроидпермиссионактионтипе
 description: Действие Android, которое предпринимается, когда приложение запрашивает опасное разрешение.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c832add0d338a18ca098feae80ba54d1cc07032
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99510e0f9a24095be519534a1d7bf411de9da938
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552137"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950580"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>тип перечисления Андроидпермиссионактионтипе
 
@@ -23,9 +23,8 @@ ms.locfileid: "32552137"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Подсказка|нуль|Пока не задокументировано.|
-|автоПредоставление|1 |Пока не задокументировано.|
-|автоЗапрет|2 |Пока не задокументировано.|
-
+|автопредоставление|1,1|Пока не задокументировано.|
+|автозапрет|2|Пока не задокументировано.|
 
 
 

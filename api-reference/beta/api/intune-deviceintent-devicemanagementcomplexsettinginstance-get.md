@@ -1,15 +1,15 @@
 ---
 title: Получение Девицеманажементкомплекссеттингинстанце
 description: Чтение свойств и связей объекта Девицеманажементкомплекссеттингинстанце.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d28219e853d24c5c3d342290a7dd3460f43c6608
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a304ece3347faf5c820dd9265e5edc6903775dd1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509466"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916530"
 ---
 # <a name="get-devicemanagementcomplexsettinginstance"></a>Получение Девицеманажементкомплекссеттингинстанце
 
@@ -79,7 +79,6 @@ Content-Length: 234
   }
 }
 ```
-
 
 
 

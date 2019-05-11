@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Макосвппаппассигнедлиценсе
 description: Назначение лицензии на MacOS Volume Purchase Program. Этот класс не поддерживает операции создания, удаления и обновления.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31f8e078f7695a115ce92d6d3f687d41a13831fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 879e19b54705e52b12ea18aeb822a2ee712f3eab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553920"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950300"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>Тип ресурса Макосвппаппассигнедлиценсе
 
@@ -32,12 +32,12 @@ ms.locfileid: "32553920"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Усеремаиладдресс|String|Адрес электронной почты пользователя.|
+|Усеремаиладдресс|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,7 +58,6 @@ ms.locfileid: "32553920"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

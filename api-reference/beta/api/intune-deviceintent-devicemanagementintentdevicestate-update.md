@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементинтентдевицестате
 description: Обновление свойств объекта Девицеманажементинтентдевицестате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4c9a80e9b7221d9ab7ef42ec23b389c1f3bf326
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7f6af8a8348bdd0223f4c799730909cd3972567
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508374"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915974"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>Обновление Девицеманажементинтентдевицестате
 
@@ -52,11 +52,11 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 |:---|:---|:---|
 |id|Строка|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
-|userName|String|Имя пользователя, сообщаемое на устройстве|
+|userName|Строка|Имя пользователя, сообщаемое на устройстве|
 |deviceDisplayName|String|Имя устройства, о котором сообщается|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|String|Идентификатор устройства, о котором сообщается|
+|состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|deviceId|Строка|Идентификатор устройства, о котором сообщается|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
 
 
 

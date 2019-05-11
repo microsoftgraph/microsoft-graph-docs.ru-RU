@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсспотлигхтенаблементсеттингс
 description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64c0adffd21f6411b2ea86a29d7d5b72233924a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 43bd36f617b5d87e4eaa2bdbf6e3e951cdf3f3e7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523667"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943791"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>тип перечисления Виндовсспотлигхтенаблементсеттингс
 
@@ -23,9 +23,8 @@ ms.locfileid: "32523667"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|"Прожектор" на экране блокировки не настроен|
-|активирован|1 |Отключить Windows Spotlight на экране блокировки|
-|enabled|2 |Включить Windows Spotlight на экране блокировки|
-
+|активирован|1,1|Отключить Windows Spotlight на экране блокировки|
+|enabled|2|Включить Windows Spotlight на экране блокировки|
 
 
 

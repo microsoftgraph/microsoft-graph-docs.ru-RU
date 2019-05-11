@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементскриптграупассигнмент
 description: Обновление свойств объекта Девицеманажементскриптграупассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8f7aba28595ba9d5ffa13b61689709f62b0c8b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30aafd9f755c0ed7275bf1f511180779f42b29ee
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465729"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909822"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>Обновление Девицеманажементскриптграупассигнмент
 
@@ -50,8 +50,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы сценариев управления устройствами.|
-|Таржетграупид|String|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
+|id|Строка|Ключ объекта назначения группы сценариев управления устройствами.|
+|Таржетграупид|Строка|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
 
 
@@ -86,7 +86,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

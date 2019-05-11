@@ -1,15 +1,15 @@
 ---
 title: Удаление Девицеманажементскриптграупассигнмент
 description: Удаляет объект Девицеманажементскриптграупассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21c5d65090cf4c8c6dfb0f4502596a7f065eb87d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6f0ed71630e227839ad0ea97149512f45084c38
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465722"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909913"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>Удаление Девицеманажементскриптграупассигнмент
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

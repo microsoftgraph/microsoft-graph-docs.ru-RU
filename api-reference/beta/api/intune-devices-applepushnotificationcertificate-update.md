@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта applePushNotificationCertificate
 description: Обновление свойств объекта applePushNotificationCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d87a60747fce6eb85cb50439eb14f14a207280d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9446dafefaa98a421bcc11148dc6f651a6806eae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466142"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910562"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -50,13 +50,13 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сертификата|
-|appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
+|id|Строка|Уникальный идентификатор сертификата|
+|appleIdentifier|Строка|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|Цертификатеуплоадстатус|String|Состояние отправки сертификата.|
-|Цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
+|Цертификатеуплоадстатус|Строка|Состояние отправки сертификата.|
+|Цертификатеуплоадфаилуререасон|Строка|Причина сбоя отправки сертификата.|
 |certificate|String|Пока не задокументировано.|
 
 
@@ -103,7 +103,6 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

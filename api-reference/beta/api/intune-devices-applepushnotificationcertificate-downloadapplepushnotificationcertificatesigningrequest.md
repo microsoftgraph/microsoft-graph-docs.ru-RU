@@ -1,15 +1,15 @@
 ---
 title: Функция downloadApplePushNotificationCertificateSigningRequest
 description: Скачивание запроса на подпись сертификата для push-уведомлений Apple
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a73f66149268b9ad0536ea44b8955f429e7bb7da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 08395fc7036d60dbd4a8e56dd069e1f1af6d08c9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466065"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33911667"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Функция downloadApplePushNotificationCertificateSigningRequest
 
@@ -68,7 +68,6 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
-
 
 
 

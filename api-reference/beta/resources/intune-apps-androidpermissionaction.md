@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Андроидпермиссионактион
 description: Сопоставление разрешений приложения Android и действия, выполняемого Android, должны выполняться при запросе этого разрешения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fec33b2600e88e6a4dfae644c335d9652c20abe0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4766bb91d5d1cde99a12f5a8e4903451a3ac5aca
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552354"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950489"
 ---
 # <a name="androidpermissionaction-resource-type"></a>Тип ресурса Андроидпермиссионактион
 
@@ -22,10 +22,10 @@ ms.locfileid: "32552354"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|права|String|Строка разрешений Android, определенная в официальной документации по Android.  Пример: "Android. Permission. РЕАД_КОНТАКТС".|
+|права|Строка|Строка разрешений Android, определенная в официальной документации по Android.  Пример: "Android. Permission. РЕАД_КОНТАКТС".|
 |action|[Андроидпермиссионактионтипе](../resources/intune-apps-androidpermissionactiontype.md)|Тип действия разрешений Android. Возможные значения: `prompt`, `autoGrant`, `autoDeny`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32552354"
   "action": "String"
 }
 ```
-
 
 
 

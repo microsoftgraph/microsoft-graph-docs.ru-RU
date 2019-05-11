@@ -1,15 +1,15 @@
 ---
 title: Получение appLogCollectionRequest
 description: Чтение свойств и связей объекта appLogCollectionRequest.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d7183082374adaf9fb1016002868297f63a93c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b097985118c38c37b9675a9c8a233cdc68cda2aa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466149"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910594"
 ---
 # <a name="get-applogcollectionrequest"></a>Получение appLogCollectionRequest
 
@@ -80,7 +80,6 @@ Content-Length: 341
   }
 }
 ```
-
 
 
 

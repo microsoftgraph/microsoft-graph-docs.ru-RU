@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементинтентусерстате
 description: Обновление свойств объекта Девицеманажементинтентусерстате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4590a77b20cd5584c4d3edc885e869ba8d3064a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea5718c3deaae9472cc2a601ddc5614eaebfde4b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507772"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915932"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>Обновление Девицеманажементинтентусерстате
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceCount|Int32|Количество устройств, принадлежащие пользователю для намерения|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

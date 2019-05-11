@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Дептокентипе
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4008d271f33bb68e9cc770c41bddb4129f597bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 93776e8d74422509723172439c7e03fdeb27efd1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573853"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941620"
 ---
 # <a name="deptokentype-enum-type"></a>тип перечисления Дептокентипе
 
@@ -22,10 +22,9 @@ ms.locfileid: "32573853"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Тип маркера — None|
-|DEP|1 |Тип токена — DEP.|
-|Апплесчулманажер|2 |Тип маркера — Apple School Manager|
-
+|none|нуль|Тип маркера — None|
+|DEP|1,1|Тип токена — DEP.|
+|Апплесчулманажер|2|Тип маркера — Apple School Manager|
 
 
 

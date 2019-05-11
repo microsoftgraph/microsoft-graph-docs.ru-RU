@@ -1,15 +1,15 @@
 ---
 title: Удаление Секуритибаселинетемплате
 description: Удаляет объект Секуритибаселинетемплате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1218c3131938feb61591182d2821389e8f545cf3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6096daccdb87b163ca5b364dc1d1709f9f99a756
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466191"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33911695"
 ---
 # <a name="delete-securitybaselinetemplate"></a>Удаление Секуритибаселинетемплате
 
@@ -35,6 +35,7 @@ ms.locfileid: "32466191"
 -->
 ``` http
 DELETE /deviceManagement/templates/{deviceManagementTemplateId}
+DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -62,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

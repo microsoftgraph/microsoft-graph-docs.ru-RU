@@ -1,15 +1,15 @@
 ---
 title: Действие extendQualityUpdatesPause
-description: Дополнительные сведения об остановке обновлений качества приОстанавливаются для центра обновления Windows для бизнеса.
-author: tfitzmac
+description: Дополнительные сведения об остановке обновлений качества приостанавливаются для центра обновления Windows для бизнеса.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 714d699497564b13962163069d34bb63d9ee1794
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5c0c819993b4c29e9bdc50068cb9a80af5f9ac01
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511643"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917367"
 ---
 # <a name="extendqualityupdatespause-action"></a>Действие extendQualityUpdatesPause
 
@@ -17,7 +17,7 @@ ms.locfileid: "32511643"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Дополнительные сведения об остановке обновлений качества приОстанавливаются для центра обновления Windows для бизнеса.
+Дополнительные сведения об остановке обновлений качества приостанавливаются для центра обновления Windows для бизнеса.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

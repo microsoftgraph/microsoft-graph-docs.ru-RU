@@ -2,14 +2,14 @@
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  '
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e79bd6d5573930d041b4a8249ae993275f0e26c7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574455"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939681"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -33,7 +33,7 @@ ms.locfileid: "32574455"
 - Удаленный доступ
 - Партнеры удаленного помощника
 - Политики управления доступом на основе ролей (RBAC)
-- Партнеры по управлению телеКоммуникационной експансе
+- Партнеры по управлению телекоммуникационной експансе
 - События устранения неполадок
 - Сводки Windows Information Protection
 
@@ -57,10 +57,10 @@ ms.locfileid: "32574455"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, связанный с устройством.|
+|id|Строка|Уникальный идентификатор, связанный с устройством.|
 |**Настройка устройства**|
-|Интунеаккаунтид|Guid|Идентификатор учетной записи Intune для данного клиента|
-|Легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|Интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
+|Легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |Максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -153,7 +153,7 @@ ms.locfileid: "32574455"
 |roleAssignments|Коллекция [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md)|Назначения ролей.|
 |roleDefinitions|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Определения ролей.|
 |roleScopeTags|Коллекция [ролескопетаг](../resources/intune-rbac-rolescopetag.md)|Теги области применения роли.|
-|**Управление расходами по телеКоммуникационной связи (TEM)**|
+|**Управление расходами по телекоммуникационной связи (TEM)**|
 |telecomExpenseManagementPartners|Коллекция [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md)|Партнеры по управлению затратами на телекоммуникации.|
 |**Устранение неполадок**|
 |troubleshootingEvents|Коллекция [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|Список событий устранения неполадок для клиента.|

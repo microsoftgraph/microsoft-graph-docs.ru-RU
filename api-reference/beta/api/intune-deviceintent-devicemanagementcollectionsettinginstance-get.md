@@ -1,15 +1,15 @@
 ---
 title: Получение Девицеманажементколлектионсеттингинстанце
 description: Чтение свойств и связей объекта Девицеманажементколлектионсеттингинстанце.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21a2348d99b5ae76659f88cf9cbc29f84a0a1181
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b314ee41522288b6297a8ad66a1573bf38899f6a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510033"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916737"
 ---
 # <a name="get-devicemanagementcollectionsettinginstance"></a>Получение Девицеманажементколлектионсеттингинстанце
 
@@ -79,7 +79,6 @@ Content-Length: 237
   }
 }
 ```
-
 
 
 

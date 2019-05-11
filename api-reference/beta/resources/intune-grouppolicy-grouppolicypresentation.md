@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Граупполиципресентатион
 description: Базовая сущность для отображения представления любого из дополнительных параметров в определении групповой политики.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00151ec7c75a071df9c6485a68749cce07e6f91a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8a1e4a615999a899712ad82d2177fbb862328c2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575830"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941130"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Тип ресурса Граупполиципресентатион
 
@@ -28,8 +28,8 @@ ms.locfileid: "32575830"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
-|id|String|Ключ объекта.|
+|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -53,7 +53,6 @@ ms.locfileid: "32575830"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

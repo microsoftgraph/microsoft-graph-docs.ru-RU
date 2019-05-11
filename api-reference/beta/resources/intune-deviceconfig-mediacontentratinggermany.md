@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса mediaContentRatingGermany
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 111abc1804874dd7345d654eafdb1452c05ebd42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 156fda6749188a52df59d829beadbf8616ddb645
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554487"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944868"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Тип ресурса mediaContentRatingGermany
 
@@ -25,7 +25,7 @@ ms.locfileid: "32554487"
 |movieRating|[Ратингжерманимовиестипе](../resources/intune-deviceconfig-ratinggermanymoviestype.md)|Оценка фильмов выбрана для Германии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
 |tvRating|[Ратингжерманителевисионтипе](../resources/intune-deviceconfig-ratinggermanytelevisiontype.md)|Рейтинг для телевизора выбран в Германии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32554487"
   "tvRating": "String"
 }
 ```
-
 
 
 

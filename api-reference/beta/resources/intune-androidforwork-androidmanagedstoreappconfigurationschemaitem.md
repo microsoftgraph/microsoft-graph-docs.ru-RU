@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 description: Один элемент конфигурации внутри настраиваемой схемы конфигурации приложения Android.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 964916f9f6a46cd8b276e304bfb341d6504db0d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3012542315cd30a565da315a9d383757557b1008
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552438"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950545"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 
@@ -22,7 +22,7 @@ ms.locfileid: "32552438"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
+|schemaItemKey|Строка|Уникальный ключ, используемый приложением для определения элемента.|
 |displayName|Строка|Понятное человеку имя.|
 |description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
@@ -32,7 +32,7 @@ ms.locfileid: "32552438"
 |dataType|[Андроидманажедстореаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
 |selections|Коллекция объектов [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список понятных человеку пар имя-значение для допустимых значений, которые можно задать для этого элемента (только для элементов одиночного и множественного выбора).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,7 +64,6 @@ ms.locfileid: "32552438"
   ]
 }
 ```
-
 
 
 

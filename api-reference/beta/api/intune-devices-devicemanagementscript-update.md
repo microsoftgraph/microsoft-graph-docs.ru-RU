@@ -1,15 +1,15 @@
 ---
 title: Обновление deviceManagementScript
 description: Обновление свойств объекта deviceManagementScript.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aac5c1592dd9e18f791f93829192dc9bfe2125f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5dc0554456be285f8f6306bfa52033e851164874
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465813"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909906"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|Строка|Имя скрипта управления устройствами.|
-|description|String|НеОбязательное описание скрипта управления устройствами.|
+|description|String|Необязательное описание скрипта управления устройствами.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
 |Скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
@@ -122,7 +122,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

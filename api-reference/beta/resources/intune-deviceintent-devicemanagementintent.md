@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементинтент
 description: Сущность, которая представляет цель применения параметров к устройству
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541859"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943447"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Тип ресурса Девицеманажементинтент
 
@@ -28,17 +28,18 @@ ms.locfileid: "32541859"
 |[Удаление Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-delete.md)|Нет|Удаляет объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md).|
 |[Обновление Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Обновление свойств объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
 |[Действие updateSettings](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Нет|Н/Д|
+|[действие Мигратетотемплате](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|Нет|Н/Д|
 |[Действие assign](../api/intune-deviceintent-devicemanagementintent-assign.md)|Нет|Пока не задокументировано|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор намерения|
-|displayName|String|Имя пользователя для данного отображаемого имени|
+|id|String|Идентификатор намерения|
+|displayName|Строка|Имя пользователя для данного отображаемого имени|
 |description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -48,7 +49,7 @@ ms.locfileid: "32541859"
 |assignments|Коллекция [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Коллекция назначений|
 |deviceSettingStateSummaries|Коллекция [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Набор параметров и их состояний, а также количество устройств, которые относятся к соответствующему состоянию для всех параметров в цели|
 |deviceStates|Коллекция [девицеманажементинтентдевицестате](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)|Коллекция состояний всех устройств, к которым применяется цель|
-|Усерстатес|Коллекция [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Коллекция состояний всех пользователей, к которым применяется цель|
+|userStates|Коллекция [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Коллекция состояний всех пользователей, к которым применяется цель|
 |Девицестатесуммари|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Сводка состояний устройств и счетчиков устройств, которые относятся к соответствующему состоянию для всех устройств, к которым применяется цель|
 |userStateSummary|[deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md)|Сводка по состояниям пользователей и количества пользователей, относящихся к соответствующему состоянию для всех пользователей, к которым применяется цель|
 
@@ -71,7 +72,6 @@ ms.locfileid: "32541859"
   "templateId": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Манажементкондитионекспрессионстринг
 description: Строка выражения условия управления — это строковое представление выражения условия управления.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3dac405c71e4e85cc29bb36d335a57bb51fbe0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 510a12e38415b002e62c23891acf95cff7d6fd5a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568733"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941270"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>Тип ресурса Манажементкондитионекспрессионстринг
 
@@ -20,14 +20,14 @@ ms.locfileid: "32568733"
 Строка выражения условия управления — это строковое представление выражения условия управления.
 
 
-НаСледуется от [манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)
+Наследуется от [манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |значение|String|Строковое значение выражения оператора условия управления.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32568733"
   "value": "String"
 }
 ```
-
 
 
 

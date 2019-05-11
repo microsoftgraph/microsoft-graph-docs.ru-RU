@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Хаурлисчедуле
-description: ПоЧасовое расписание выполнения сценария управления повторяющимся устройством.
-author: tfitzmac
+description: Почасовое расписание выполнения сценария управления повторяющимся устройством.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f86591326f2b4df8e887c657c05ad3d5021946e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0fdca426960035dcc9ddad8593d4111498c49671
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522183"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941998"
 ---
 # <a name="hourlyschedule-resource-type"></a>Тип ресурса Хаурлисчедуле
 
@@ -17,17 +17,17 @@ ms.locfileid: "32522183"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-ПоЧасовое расписание выполнения сценария управления повторяющимся устройством.
+Почасовое расписание выполнения сценария управления повторяющимся устройством.
 
 
-НаСледуется от [рунсчедуле](../resources/intune-devices-runschedule.md)
+Наследуется от [рунсчедуле](../resources/intune-devices-runschedule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |interval|Int32|Интервал (в часах)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32522183"
   "interval": 1024
 }
 ```
-
 
 
 

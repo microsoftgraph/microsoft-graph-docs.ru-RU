@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Манажементкондитион
 description: Условия управления — это события, которые могут динамически запускаться, например, с географическими ограждениями, временными ограждениями и сетевыми ограждениями.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b10442832d08507c3d33b71dd38928bc1be895d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: efd9dfa17858e4de1aa430c26977babe659c1067
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568740"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941291"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
 
@@ -30,8 +30,8 @@ ms.locfileid: "32568740"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
-|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
-|displayName|String|Имя условия управления, определенное администратором.|
+|uniqueName|Строка|Уникальное имя условия управления. Используется в выражениях условия управления.|
+|displayName|Строка|Имя условия управления, определенное администратором.|
 |description|String|Описание условия управления, заданное администратором.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
@@ -66,7 +66,6 @@ ms.locfileid: "32568740"
   ]
 }
 ```
-
 
 
 

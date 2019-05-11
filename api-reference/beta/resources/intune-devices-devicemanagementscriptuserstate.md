@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементскриптусерстате
 description: Содержит свойства для состояния выполнения пользователя скрипта управления устройствами.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2476329a402e0d6a50594ab110e88da4b5f5ac1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70c0ab2cbfd52a538997dce5cc3c7dadb98aaae7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522407"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942033"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Тип ресурса Девицеманажементскриптусерстате
 
@@ -58,7 +58,6 @@ ms.locfileid: "32522407"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

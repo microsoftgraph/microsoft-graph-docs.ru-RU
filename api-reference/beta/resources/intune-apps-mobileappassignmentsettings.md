@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса mobileAppAssignmentSettings
 description: Абстрактный класс, содержащий свойства, которые используются при назначении мобильного приложения группе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b5fff18f7227b1b8f30bd4a9ec35076e6b3f5a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee8426e9a932b38a8d6002ca08d18264d49efbf0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552207"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949992"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Тип ресурса mobileAppAssignmentSettings
 
@@ -23,7 +23,7 @@ ms.locfileid: "32552207"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,7 +38,6 @@ ms.locfileid: "32552207"
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
 
 
 

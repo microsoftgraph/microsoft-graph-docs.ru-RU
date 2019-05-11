@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементсеттингбулеанконстраинт
 description: Constraint — принудительно определяет конкретное логическое значение
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee2689bfbc6b407a688c0422c568d4b311694c06
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba1b40d5481e6fc239aeea46a859d6d4a88294f2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562288"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943441"
 ---
 # <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингбулеанконстраинт
 
@@ -20,14 +20,14 @@ ms.locfileid: "32562288"
 Constraint — принудительно определяет конкретное логическое значение
 
 
-НаСледуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
+Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |значение|Boolean|Логическое значение, с которым выполняется сравнение|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ Constraint — принудительно определяет конкретн�
   "value": true
 }
 ```
-
 
 
 

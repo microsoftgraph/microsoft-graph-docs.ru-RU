@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса remoteAssistancePartner
 description: Ресурсы Ремотеассистпартнер представляют метаданные и состояние данной службы партнерской службы удаленного помощника.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3343d0e9d68c76db91f1153704176d70b06a7483
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 596027baaa5bc118c835de9aaff009bb0de180a3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566306"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939926"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Тип ресурса remoteAssistancePartner
 
@@ -39,7 +39,7 @@ ms.locfileid: "32566306"
 |onboardingStatus|[Ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Понятное описание состояния текущего соединителя TeamViewer. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,7 +60,6 @@ ms.locfileid: "32566306"
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

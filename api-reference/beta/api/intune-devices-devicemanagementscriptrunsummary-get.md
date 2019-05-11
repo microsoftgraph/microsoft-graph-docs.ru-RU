@@ -1,15 +1,15 @@
 ---
 title: Получение Девицеманажементскриптрунсуммари
 description: Чтение свойств и связей объекта Девицеманажементскриптрунсуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c8f2943397152a6e24479687a3480e19e10ec9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4e3a0718bf62155952d1d3e10357c8cd6144dfc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465960"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909815"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Получение Девицеманажементскриптрунсуммари
 
@@ -78,7 +78,6 @@ Content-Length: 259
   }
 }
 ```
-
 
 
 

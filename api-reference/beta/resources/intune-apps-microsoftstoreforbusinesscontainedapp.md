@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Микрософтсторефорбусинессконтаинедапп
 description: Класс, представляющий вложенное приложение MicrosoftStoreForBusinessApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c1d85373743e66f8d744200a488fa902f0d6944
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6cb07075e3313cfd2232bebdeca2f06fef2a991e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552194"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950020"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>Тип ресурса Микрософтсторефорбусинессконтаинедапп
 
@@ -20,7 +20,7 @@ ms.locfileid: "32552194"
 Класс, представляющий вложенное приложение MicrosoftStoreForBusinessApp.
 
 
-НаСледуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)
+Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -34,10 +34,10 @@ ms.locfileid: "32552194"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. НаСледуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
-|Модели|String|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
+|id|Строка|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
+|Модели|Строка|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,7 +55,6 @@ ms.locfileid: "32552194"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Впнондемандрулеконнектиондомаинактион
 description: Действие домена подключения к VPN-запросу с правилом.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 864abbe321aa40388f2cd87d31178ac31ea4a5cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5202c4bc2871697481f7ea1c5047b495f90a7c39
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561952"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944567"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>тип перечисления Впнондемандрулеконнектиондомаинактион
 
@@ -22,9 +22,8 @@ ms.locfileid: "32561952"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Коннектифнидед|нуль|При необходимости подКлючаться.|
-|Неверконнект|1 |Никогда не подключаться.|
-
+|Коннектифнидед|нуль|При необходимости подключаться.|
+|Неверконнект|1,1|Никогда не подключаться.|
 
 
 

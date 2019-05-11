@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Андроидманажедстореаппконфигуратион
 description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения Android Enterprise.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0caae4c2964873ed9f2dc4af98b69dfd1e4bbd3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc2e32aa273e7944d409b9649bd92ee2ac755fd6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552347"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950496"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратион
 
@@ -43,7 +43,7 @@ ms.locfileid: "32552347"
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
-|Пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
+|Пайлоаджсон|Строка|Полезные данные JSON конфигурации корпоративных приложений Android.|
 |Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
 |Аппсуппортсоемконфиг|Логический|Указывает, является ли Аппконфиг политикой Оемконфиг.|
 
@@ -91,7 +91,6 @@ ms.locfileid: "32552347"
   "appSupportsOemConfig": true
 }
 ```
-
 
 
 

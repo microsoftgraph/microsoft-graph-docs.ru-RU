@@ -1,15 +1,15 @@
 ---
 title: Обновление Секуритибаселинестатесуммари
 description: Обновление свойств объекта Секуритибаселинестатесуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5ac7e4094f415af6b2922eaa03af663d0cf0572
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f38b58d59eab1bc74b622c968cab110da39d856d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466205"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914473"
 ---
 # <a name="update-securitybaselinestatesummary"></a>Обновление Секуритибаселинестатесуммари
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
+|id|Строка|Уникальный идентификатор объекта.|
 |Секурекаунт|Int32|Количество защищенных устройств|
 |Нотсекурекаунт|Int32|Количество незащищенных устройств|
 |unknownCount|Int32|Количество неизвестных устройств.|
@@ -101,7 +101,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
 
 
 
