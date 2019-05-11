@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовсманажементапфеалссуммари
 description: Содержит свойства для сводки о работоспособности приложения управления Windows.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aea7f113d144ca876b301acc3b303ac0f7072bc4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07e782cb14ab2ee4996ff8e53f61323693e00846
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520027"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941690"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>Тип ресурса Виндовсманажементапфеалссуммари
 
@@ -28,12 +28,12 @@ ms.locfileid: "32520027"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта сводки работоспособности приложения управления Windows.|
+|id|Строка|Ключ объекта сводки работоспособности приложения управления Windows.|
 |Хеалсидевицекаунт|Int32|Работоспособное число устройств.|
 |Унхеалсидевицекаунт|Int32|Неработоспособное число устройств.|
-|unknownDeviceCount|Int32|Количество неИзвестных устройств.|
+|unknownDeviceCount|Int32|Количество неизвестных устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "32520027"
   "unknownDeviceCount": 1024
 }
 ```
-
 
 
 

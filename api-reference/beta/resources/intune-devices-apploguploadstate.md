@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Апплогуплоадстате
 description: Апплогуплоадстатус
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b59210e7a00fde1e62e1cbc056f0bd34625330e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6a0c880fe8fa7fe743bea3ad42fee6d1e24d209
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467143"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943118"
 ---
 # <a name="apploguploadstate-enum-type"></a>тип перечисления Апплогуплоадстате
 
@@ -25,7 +25,6 @@ ms.locfileid: "32467143"
 |закончен|нуль|Запрос ожидает обработки или обработки|
 |готовы|1,1|Запрос выполнен с помощью файла, отправленного в большой двоичный объект Azure для скачивания.|
 |сбоев|2|Запрос завершил обработку и находится в состоянии ошибки.|
-
 
 
 

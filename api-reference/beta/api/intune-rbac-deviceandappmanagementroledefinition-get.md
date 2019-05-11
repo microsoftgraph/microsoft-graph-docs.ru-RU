@@ -1,15 +1,15 @@
 ---
 title: Получение deviceAndAppManagementRoleDefinition
 description: Считывание свойств и связей объекта deviceAndAppManagementRoleDefinition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65cd240284111eb90f17590186ca0abb299a07ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b172eae4893ab0cd09dec1443a9dec33c153662
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527709"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899573"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Получение deviceAndAppManagementRoleDefinition
 
@@ -50,7 +50,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -120,7 +120,6 @@ Content-Length: 1391
   }
 }
 ```
-
 
 
 

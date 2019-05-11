@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Унариманажементкондитионекспрессион
 description: Выражение условия управления, вычисляемое с использованием унарной операции.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6554f62805bcd1d45f6db165367624434e794117
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eee7a423ca412eb4ee86e3f0b5a5f13ec786a690
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561882"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941201"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>Тип ресурса Унариманажементкондитионекспрессион
 
@@ -20,7 +20,7 @@ ms.locfileid: "32561882"
 Выражение условия управления, вычисляемое с использованием унарной операции.
 
 
-НаСледуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
+Наследуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -28,7 +28,7 @@ ms.locfileid: "32561882"
 |operator|[Унариманажементкондитионекспрессионоператортипе](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|Оператор, используемый в оценке унарной операции. Возможные значения: `not`.|
 |начинается|[Манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Операнд унарной операции.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,7 +47,6 @@ ms.locfileid: "32561882"
   }
 }
 ```
-
 
 
 

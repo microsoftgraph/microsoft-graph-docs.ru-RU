@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса managedDeviceOverview
 description: Сводные данные для управляемых устройств
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07a6bda1e62088eabc3450cf2dcefc945f3ca898
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca88af3320b1d7ccaab57d874f3b97a853652864
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521343"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942194"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -28,7 +28,7 @@ ms.locfileid: "32521343"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки.|
+|id|Строка|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -37,7 +37,7 @@ ms.locfileid: "32521343"
 |managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производства меатадата для управляемых устройств в учетной записи|
 |lastModifiedDateTime|DateTimeOffset|Общие сведения о дате и времени последнего изменения устройства|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -84,7 +84,6 @@ ms.locfileid: "32521343"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

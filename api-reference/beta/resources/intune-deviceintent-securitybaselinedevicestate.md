@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Секуритибаселинедевицестате
 description: Сводка по базовому состоянию соответствия требованиям безопасности для устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1fb6bd8ee8e474fdf96bc2c70f4db288571d795
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff87b5c39d00957ddd4128bc3351879dcd5b652f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562239"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943293"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Тип ресурса Секуритибаселинедевицестате
 
@@ -32,13 +32,13 @@ ms.locfileid: "32562239"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор объекта|
-|Манажеддевицеид|String|Идентификатор устройства Intune|
+|Манажеддевицеид|Строка|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|состояние|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,7 +60,6 @@ ms.locfileid: "32562239"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

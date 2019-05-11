@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Рунсчедуле
 description: Запустите расписание для повторяющегося сценария управления устройствами.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ed3fb0705ce7ec0405549b8dc83f57c1782ef4b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9e033ee06818b596b766ca19e92dd6fb9969eb4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526204"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941788"
 ---
 # <a name="runschedule-resource-type"></a>Тип ресурса Рунсчедуле
 
@@ -23,7 +23,7 @@ ms.locfileid: "32526204"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,7 +38,6 @@ ms.locfileid: "32526204"
   "@odata.type": "#microsoft.graph.runSchedule"
 }
 ```
-
 
 
 

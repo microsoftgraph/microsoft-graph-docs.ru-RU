@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Бинариманажементкондитионекспрессионоператортипе
 description: Поддерживаемые бинарные операторы для выражений условия управления.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca2518b554388fdd00fae8310ac14c105f5b62ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568810"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941312"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Бинариманажементкондитионекспрессионоператортипе
 
@@ -23,8 +23,7 @@ ms.locfileid: "32568810"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |или|нуль|Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.|
-|и|1 |Оценивает набор операндов как true, если все его операнды имеют значение true.|
-
+|и|1,1|Оценивает набор операндов как true, если все его операнды имеют значение true.|
 
 
 

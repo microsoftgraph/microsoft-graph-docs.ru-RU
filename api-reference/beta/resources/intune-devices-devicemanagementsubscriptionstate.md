@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицеманажементсубскриптионстате
 description: Состояние подписки на управление мобильными устройствами для клиента.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 015768fb5150a64f13f3d34581a10b822712395c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07798971199ded6efa524e144111eac66ea675c4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522393"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942047"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип перечисления Девицеманажементсубскриптионстате
 
@@ -23,13 +23,12 @@ ms.locfileid: "32522393"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |закончен|нуль|Pending|
-|ASP|1 |Активное|
-|warning|2 |Предупреждение|
-|активирован|3 |Отключена|
-|deleted|4 |Deleted|
-|заблокированных|5 |Заблокировано|
+|ASP|1,1|Активное|
+|warning|2|Предупреждение|
+|активирован|4|Отключена|
+|deleted|SP4|Deleted|
+|заблокированных|17:00|Заблокировано|
 |Блокировка|8 |Блокировка|
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windows10AppsForceUpdateSchedule
 description: Расписание принудительного обновления Windows 10 для приложений
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c8c76c08c434ab9c5e3506339e53cda41156e09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e5d7cf1b4e32543b9937603e1b7b782e39410cc
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572264"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944448"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>Тип ресурса windows10AppsForceUpdateSchedule
 
@@ -24,9 +24,9 @@ ms.locfileid: "32572264"
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Время начала принудительного перезапуска.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
-|Руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
+|Руниммедиателифафтерстартдатетиме|Логический|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,7 +44,6 @@ ms.locfileid: "32572264"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 

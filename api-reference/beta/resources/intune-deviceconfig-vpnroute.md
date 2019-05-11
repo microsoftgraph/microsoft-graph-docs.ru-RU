@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Впнрауте
 description: Определение маршрута VPN.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c13cb40b5324620eebeb7230135ef981dba84f36
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ffa3569d8d1a769779201cf056de07c80594b68e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561897"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944546"
 ---
 # <a name="vpnroute-resource-type"></a>Тип ресурса Впнрауте
 
@@ -22,10 +22,10 @@ ms.locfileid: "32561897"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Дестинатионпрефикс|String|Префикс назначения (IPv4/V6-адрес).|
+|Дестинатионпрефикс|Строка|Префикс назначения (IPv4/V6-адрес).|
 |Префикссизе|Int32|Размер префикса. (1-32). Допустимые значения — от 1 до 32|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32561897"
   "prefixSize": 1024
 }
 ```
-
 
 
 

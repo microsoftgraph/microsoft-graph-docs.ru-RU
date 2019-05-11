@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементскриптграупассигнмент
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0e1d76760f9bc8d8f73f2e1fd15ab2a2d730ce0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11e4093c1a92f13b71cf205e48db1a7b8a5c444f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522414"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942054"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>Тип ресурса Девицеманажементскриптграупассигнмент
 
@@ -31,10 +31,10 @@ ms.locfileid: "32522414"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы сценариев управления устройствами.|
-|Таржетграупид|String|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
+|id|Строка|Ключ объекта назначения группы сценариев управления устройствами.|
+|Таржетграупид|Строка|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "32522414"
   "targetGroupId": "String"
 }
 ```
-
 
 
 

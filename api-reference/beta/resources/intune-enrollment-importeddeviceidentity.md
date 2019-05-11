@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Импортеддевицеидентити
 description: Ресурс Импортеддевицеидентити представляет уникальное аппаратное удостоверение устройства, которое было предварительно подготовлено для настройки предварительной регистрации.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7cc903fa1b30177f037493fe090ebfde31831b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 197f4d9fd3377e6359d93a75ac36c8c15be3e0f5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550730"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941529"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>Тип ресурса Импортеддевицеидентити
 
@@ -34,7 +34,7 @@ ms.locfileid: "32550730"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор импортированного удостоверения устройства|
-|Импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
+|Импортеддевицеидентифиер|Строка|Импортированный идентификатор устройства|
 |Импортеддевицеидентититипе|[Импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
@@ -43,7 +43,7 @@ ms.locfileid: "32550730"
 |Енроллментстате|[Енроллментстате](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,7 +68,6 @@ ms.locfileid: "32550730"
   "platform": "String"
 }
 ```
-
 
 
 

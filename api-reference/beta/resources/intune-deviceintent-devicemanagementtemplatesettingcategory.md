@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементтемплатесеттингкатегори
 description: Сущность, представляющая категорию параметров шаблона
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f8974c102bcd07bb6042e703f38b59840a164b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd476adffd3608041cbfe0e9223940bfb2e29066
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562267"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943399"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>Тип ресурса Девицеманажементтемплатесеттингкатегори
 
@@ -20,7 +20,7 @@ ms.locfileid: "32562267"
 Сущность, представляющая категорию параметров шаблона
 
 
-НаСледуется от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)
+Наследуется от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -34,8 +34,8 @@ ms.locfileid: "32562267"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор категории, наСледуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|displayName|String|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|String|Идентификатор категории, наследуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|displayName|Строка|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -58,7 +58,6 @@ ms.locfileid: "32562267"
   "displayName": "String"
 }
 ```
-
 
 
 

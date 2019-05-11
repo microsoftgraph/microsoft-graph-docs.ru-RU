@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Ембеддедсимдевицестате
 description: Описание встроенного состояния развертывания кода активации SIM-карты для устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cd14c92e5619cbce071190b966d3274386cec89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2fb953021dde36960faf2875131bf3bcd8e7e50
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568775"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941347"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса Ембеддедсимдевицестате
 
@@ -31,17 +31,17 @@ ms.locfileid: "32568775"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор состояния встроенного SIM-устройства. Созданное системой значение, назначаемое при создании.|
+|id|Строка|Уникальный идентификатор состояния встроенного SIM-устройства. Созданное системой значение, назначаемое при создании.|
 |createdDateTime|DateTimeOffset|Время создания встроенного состояния SIM-устройства. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния внедренного SIM-устройства. Обновленная сторона службы.|
 |lastSyncDateTime|DateTimeOffset|Время последнего возврата встроенного SIM-устройства. Обновленная сторона службы.|
-|УниверсалинтегратедЦиркуиткардидентифиер|String|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
-|deviceName|String|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
+|УниверсалинтегратедЦиркуиткардидентифиер|Строка|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
+|deviceName|Строка|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
 |userName|String|Имя пользователя, для которого была подготовлена подписка (например, joe@contoso.com).|
-|state|[Ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|Статедетаилс|String|Строковое описание состояния подготовки.|
+|состояние|[Ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|Статедетаилс|Строка|Строковое описание состояния подготовки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,7 +66,6 @@ ms.locfileid: "32568775"
   "stateDetails": "String"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Ревокеапплевпплиценсесактионресулт
 description: Отзыв результатов действий для лицензий Apple VPP
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5315c2061eafbe87b6a5292237828c65999433e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3646aa2cf790b599abdef38eb62df1118e67d9f8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526253"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941810"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>Тип ресурса Ревокеапплевпплиценсесактионресулт
 
@@ -32,7 +32,7 @@ ms.locfileid: "32526253"
 |Тоталлиценсескаунт|Int32|Общее количество связанных лицензий Apple VPP|
 |Фаиледлиценсескаунт|Int32|Общее количество лицензий Apple VPP, которые не удалось отозвать|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "32526253"
   "failedLicensesCount": 1024
 }
 ```
-
 
 
 

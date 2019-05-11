@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a90b7f0009b4d9bd617b781338ceee3de2f432c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37c098910ec532a1ab23ae8464c03e43cf7a9e29
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549134"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943041"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
@@ -31,7 +31,7 @@ ms.locfileid: "32549134"
 |Ендпоинтпротектион|Логический|Управляет ли Intune Endpoint Protection|
 |Оффицеаппс|Логический|Управляет ли Intune приложением Office|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,7 +54,6 @@ ms.locfileid: "32549134"
   "officeApps": true
 }
 ```
-
 
 
 

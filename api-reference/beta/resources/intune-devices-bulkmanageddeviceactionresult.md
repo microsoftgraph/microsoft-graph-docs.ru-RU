@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Булкманажеддевицеактионресулт
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0978367465fde92f9874e338a0de84da2a20403
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c066e87066a766fdef40fc75caa8818a973de4f2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467353"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943048"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
@@ -27,7 +27,7 @@ ms.locfileid: "32467353"
 |Нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
 |Нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,7 +54,6 @@ ms.locfileid: "32467353"
   ]
 }
 ```
-
 
 
 

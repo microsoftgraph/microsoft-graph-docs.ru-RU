@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Даилисчедуле
 description: Расписание ежедневного запуска сценария управления для повторяющегося устройства.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd2b226255f433b4f82d042b6389830143515033
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf0f5b59992a862b88ae663b45b6ae910ac4ba82
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454141"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942964"
 ---
 # <a name="dailyschedule-resource-type"></a>Тип ресурса Даилисчедуле
 
@@ -20,14 +20,14 @@ ms.locfileid: "32454141"
 Расписание ежедневного запуска сценария управления для повторяющегося устройства.
 
 
-НаСледуется от [рунсчедуле](../resources/intune-devices-runschedule.md)
+Наследуется от [рунсчедуле](../resources/intune-devices-runschedule.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |interval|Int32|Интервал (количество дней)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "32454141"
   "interval": 1024
 }
 ```
-
 
 
 
