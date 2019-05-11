@@ -1,33 +1,33 @@
 ---
 title: Тип ресурса deviceAndAppManagementAssignmentTarget
 description: Базовый тип для объектов назначения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d7bf5d3d169b472eeaf14d5435cd661b3fe4161
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b050e26f746c7da05f99c6db6c4b728e216c986
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572992"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939667"
 ---
-# <a name="deviceandappmanagementassignmenttarget-resource-type"></a><span data-ttu-id="6b3cc-103">Тип ресурса deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="6b3cc-103">deviceAndAppManagementAssignmentTarget resource type</span></span>
+# <a name="deviceandappmanagementassignmenttarget-resource-type"></a><span data-ttu-id="0d8c7-103">Тип ресурса deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="0d8c7-103">deviceAndAppManagementAssignmentTarget resource type</span></span>
 
-> <span data-ttu-id="6b3cc-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6b3cc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0d8c7-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0d8c7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6b3cc-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6b3cc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0d8c7-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0d8c7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6b3cc-106">Базовый тип для объектов назначения.</span><span class="sxs-lookup"><span data-stu-id="6b3cc-106">Base type for assignment targets.</span></span>
+<span data-ttu-id="0d8c7-106">Базовый тип для объектов назначения.</span><span class="sxs-lookup"><span data-stu-id="0d8c7-106">Base type for assignment targets.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6b3cc-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6b3cc-107">Properties</span></span>
-|<span data-ttu-id="6b3cc-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6b3cc-108">Property</span></span>|<span data-ttu-id="6b3cc-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6b3cc-109">Type</span></span>|<span data-ttu-id="6b3cc-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6b3cc-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0d8c7-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0d8c7-107">Properties</span></span>
+|<span data-ttu-id="0d8c7-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="0d8c7-108">Property</span></span>|<span data-ttu-id="0d8c7-109">Тип</span><span class="sxs-lookup"><span data-stu-id="0d8c7-109">Type</span></span>|<span data-ttu-id="0d8c7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0d8c7-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="6b3cc-111">Отношения</span><span class="sxs-lookup"><span data-stu-id="6b3cc-111">Relationships</span></span>
-<span data-ttu-id="6b3cc-112">Нет</span><span class="sxs-lookup"><span data-stu-id="6b3cc-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0d8c7-111">Связи</span><span class="sxs-lookup"><span data-stu-id="0d8c7-111">Relationships</span></span>
+<span data-ttu-id="0d8c7-112">Нет</span><span class="sxs-lookup"><span data-stu-id="0d8c7-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6b3cc-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6b3cc-113">JSON Representation</span></span>
-<span data-ttu-id="6b3cc-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6b3cc-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0d8c7-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0d8c7-113">JSON Representation</span></span>
+<span data-ttu-id="0d8c7-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0d8c7-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
@@ -38,7 +38,6 @@ ms.locfileid: "32572992"
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
-
 
 
 

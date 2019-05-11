@@ -1,34 +1,34 @@
 ---
 title: Действие syncApps
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97de84fc7ee56d942a7226ee03dd01a30f014b49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7515297b62a241a276b3b7bc5718a6d75cfd2882
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498223"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938932"
 ---
-# <a name="syncapps-action"></a><span data-ttu-id="2d0df-103">Действие syncApps</span><span class="sxs-lookup"><span data-stu-id="2d0df-103">syncApps action</span></span>
+# <a name="syncapps-action"></a><span data-ttu-id="ccbcc-103">Действие syncApps</span><span class="sxs-lookup"><span data-stu-id="ccbcc-103">syncApps action</span></span>
 
-> <span data-ttu-id="2d0df-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d0df-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ccbcc-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2d0df-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2d0df-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ccbcc-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2d0df-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="2d0df-106">Not yet documented</span></span>
+<span data-ttu-id="ccbcc-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-106">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2d0df-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="2d0df-107">Prerequisites</span></span>
-<span data-ttu-id="2d0df-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d0df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ccbcc-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="ccbcc-107">Prerequisites</span></span>
+<span data-ttu-id="ccbcc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ccbcc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2d0df-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2d0df-110">Permission type</span></span>|<span data-ttu-id="2d0df-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2d0df-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ccbcc-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ccbcc-110">Permission type</span></span>|<span data-ttu-id="ccbcc-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ccbcc-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2d0df-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2d0df-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2d0df-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d0df-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="2d0df-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2d0df-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2d0df-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d0df-115">Not supported.</span></span>|
-|<span data-ttu-id="2d0df-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2d0df-116">Application</span></span>|<span data-ttu-id="2d0df-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d0df-117">Not supported.</span></span>|
+|<span data-ttu-id="ccbcc-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ccbcc-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ccbcc-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ccbcc-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="ccbcc-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ccbcc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ccbcc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-115">Not supported.</span></span>|
+|<span data-ttu-id="ccbcc-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ccbcc-116">Application</span></span>|<span data-ttu-id="ccbcc-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2d0df-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2d0df-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ccbcc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ccbcc-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,31 @@ ms.locfileid: "32498223"
 POST /deviceManagement/androidForWorkSettings/syncApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2d0df-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2d0df-119">Request headers</span></span>
-|<span data-ttu-id="2d0df-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2d0df-120">Header</span></span>|<span data-ttu-id="2d0df-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2d0df-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ccbcc-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ccbcc-119">Request headers</span></span>
+|<span data-ttu-id="ccbcc-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ccbcc-120">Header</span></span>|<span data-ttu-id="ccbcc-121">Значение</span><span class="sxs-lookup"><span data-stu-id="ccbcc-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2d0df-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2d0df-122">Authorization</span></span>|<span data-ttu-id="2d0df-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2d0df-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2d0df-124">Accept</span><span class="sxs-lookup"><span data-stu-id="2d0df-124">Accept</span></span>|<span data-ttu-id="2d0df-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2d0df-125">application/json</span></span>|
+|<span data-ttu-id="ccbcc-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ccbcc-122">Authorization</span></span>|<span data-ttu-id="ccbcc-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ccbcc-124">Accept</span><span class="sxs-lookup"><span data-stu-id="ccbcc-124">Accept</span></span>|<span data-ttu-id="ccbcc-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ccbcc-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2d0df-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2d0df-126">Request body</span></span>
-<span data-ttu-id="2d0df-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2d0df-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ccbcc-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ccbcc-126">Request body</span></span>
+<span data-ttu-id="ccbcc-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d0df-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="2d0df-128">Response</span></span>
-<span data-ttu-id="2d0df-129">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="2d0df-129">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="ccbcc-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="ccbcc-128">Response</span></span>
+<span data-ttu-id="ccbcc-129">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-129">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2d0df-130">Пример</span><span class="sxs-lookup"><span data-stu-id="2d0df-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ccbcc-130">Пример</span><span class="sxs-lookup"><span data-stu-id="ccbcc-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2d0df-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2d0df-131">Request</span></span>
-<span data-ttu-id="2d0df-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2d0df-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ccbcc-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="ccbcc-131">Request</span></span>
+<span data-ttu-id="ccbcc-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-132">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/syncApps
 ```
 
-### <a name="response"></a><span data-ttu-id="2d0df-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d0df-133">Response</span></span>
-<span data-ttu-id="2d0df-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2d0df-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ccbcc-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="ccbcc-133">Response</span></span>
+<span data-ttu-id="ccbcc-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ccbcc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

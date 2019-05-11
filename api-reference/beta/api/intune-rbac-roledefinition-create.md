@@ -1,34 +1,34 @@
 ---
 title: Создание roleDefinition
 description: Создание объекта roleDefinition.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3949cf3dbeab5a9c6c1717d2103c574f532aad46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fa847f21b18fcdbb37429ff56a504d0b4e0caae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527387"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899468"
 ---
-# <a name="create-roledefinition"></a><span data-ttu-id="b05c1-103">Создание roleDefinition</span><span class="sxs-lookup"><span data-stu-id="b05c1-103">Create roleDefinition</span></span>
+# <a name="create-roledefinition"></a><span data-ttu-id="1c1a8-103">Создание roleDefinition</span><span class="sxs-lookup"><span data-stu-id="1c1a8-103">Create roleDefinition</span></span>
 
-> <span data-ttu-id="b05c1-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b05c1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1c1a8-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b05c1-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b05c1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1c1a8-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b05c1-106">Создание объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="b05c1-106">Create a new [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
+<span data-ttu-id="1c1a8-106">Создание объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="1c1a8-106">Create a new [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b05c1-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="b05c1-107">Prerequisites</span></span>
-<span data-ttu-id="b05c1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b05c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1c1a8-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="1c1a8-107">Prerequisites</span></span>
+<span data-ttu-id="1c1a8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c1a8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b05c1-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b05c1-110">Permission type</span></span>|<span data-ttu-id="b05c1-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="b05c1-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1c1a8-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1c1a8-110">Permission type</span></span>|<span data-ttu-id="1c1a8-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1c1a8-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b05c1-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b05c1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b05c1-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b05c1-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="b05c1-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b05c1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b05c1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b05c1-115">Not supported.</span></span>|
-|<span data-ttu-id="b05c1-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b05c1-116">Application</span></span>|<span data-ttu-id="b05c1-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b05c1-117">Not supported.</span></span>|
+|<span data-ttu-id="1c1a8-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1c1a8-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1c1a8-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c1a8-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="1c1a8-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1c1a8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1c1a8-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-115">Not supported.</span></span>|
+|<span data-ttu-id="1c1a8-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1c1a8-116">Application</span></span>|<span data-ttu-id="1c1a8-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b05c1-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b05c1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1c1a8-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1c1a8-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,37 +37,37 @@ ms.locfileid: "32527387"
 POST /deviceManagement/roleDefinitions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b05c1-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b05c1-119">Request headers</span></span>
-|<span data-ttu-id="b05c1-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b05c1-120">Header</span></span>|<span data-ttu-id="b05c1-121">Значение</span><span class="sxs-lookup"><span data-stu-id="b05c1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1c1a8-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1c1a8-119">Request headers</span></span>
+|<span data-ttu-id="1c1a8-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1c1a8-120">Header</span></span>|<span data-ttu-id="1c1a8-121">Значение</span><span class="sxs-lookup"><span data-stu-id="1c1a8-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b05c1-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b05c1-122">Authorization</span></span>|<span data-ttu-id="b05c1-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b05c1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b05c1-124">Accept</span><span class="sxs-lookup"><span data-stu-id="b05c1-124">Accept</span></span>|<span data-ttu-id="b05c1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b05c1-125">application/json</span></span>|
+|<span data-ttu-id="1c1a8-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1c1a8-122">Authorization</span></span>|<span data-ttu-id="1c1a8-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1c1a8-124">Accept</span><span class="sxs-lookup"><span data-stu-id="1c1a8-124">Accept</span></span>|<span data-ttu-id="1c1a8-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1c1a8-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b05c1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b05c1-126">Request body</span></span>
-<span data-ttu-id="b05c1-127">В теле запроса добавьте представление объекта roleDefinition в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b05c1-127">In the request body, supply a JSON representation for the roleDefinition object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1c1a8-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1c1a8-126">Request body</span></span>
+<span data-ttu-id="1c1a8-127">В теле запроса добавьте представление объекта roleDefinition в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-127">In the request body, supply a JSON representation for the roleDefinition object.</span></span>
 
-<span data-ttu-id="b05c1-128">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта roleDefinition.</span><span class="sxs-lookup"><span data-stu-id="b05c1-128">The following table shows the properties that are required when you create the roleDefinition.</span></span>
+<span data-ttu-id="1c1a8-128">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта roleDefinition.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-128">The following table shows the properties that are required when you create the roleDefinition.</span></span>
 
-|<span data-ttu-id="b05c1-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="b05c1-129">Property</span></span>|<span data-ttu-id="b05c1-130">Тип</span><span class="sxs-lookup"><span data-stu-id="b05c1-130">Type</span></span>|<span data-ttu-id="b05c1-131">Описание</span><span class="sxs-lookup"><span data-stu-id="b05c1-131">Description</span></span>|
+|<span data-ttu-id="1c1a8-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="1c1a8-129">Property</span></span>|<span data-ttu-id="1c1a8-130">Тип</span><span class="sxs-lookup"><span data-stu-id="1c1a8-130">Type</span></span>|<span data-ttu-id="1c1a8-131">Описание</span><span class="sxs-lookup"><span data-stu-id="1c1a8-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b05c1-132">id</span><span class="sxs-lookup"><span data-stu-id="b05c1-132">id</span></span>|<span data-ttu-id="b05c1-133">Строка</span><span class="sxs-lookup"><span data-stu-id="b05c1-133">String</span></span>|<span data-ttu-id="b05c1-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="b05c1-134">Key of the entity.</span></span> <span data-ttu-id="b05c1-135">Это свойство доступно только для чтения и создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="b05c1-135">This is read-only and automatically generated.</span></span>|
-|<span data-ttu-id="b05c1-136">displayName</span><span class="sxs-lookup"><span data-stu-id="b05c1-136">displayName</span></span>|<span data-ttu-id="b05c1-137">String</span><span class="sxs-lookup"><span data-stu-id="b05c1-137">String</span></span>|<span data-ttu-id="b05c1-138">Отображаемое имя определения роли.</span><span class="sxs-lookup"><span data-stu-id="b05c1-138">Display Name of the Role definition.</span></span>|
-|<span data-ttu-id="b05c1-139">description</span><span class="sxs-lookup"><span data-stu-id="b05c1-139">description</span></span>|<span data-ttu-id="b05c1-140">String</span><span class="sxs-lookup"><span data-stu-id="b05c1-140">String</span></span>|<span data-ttu-id="b05c1-141">Описание определения роли.</span><span class="sxs-lookup"><span data-stu-id="b05c1-141">Description of the Role definition.</span></span>|
-|<span data-ttu-id="b05c1-142">permissions</span><span class="sxs-lookup"><span data-stu-id="b05c1-142">permissions</span></span>|<span data-ttu-id="b05c1-143">Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="b05c1-143">[rolePermission](../resources/intune-rbac-rolepermission.md) collection</span></span>|<span data-ttu-id="b05c1-144">Список разрешений, активированных для роли.</span><span class="sxs-lookup"><span data-stu-id="b05c1-144">List of Role Permissions this role is allowed to perform.</span></span> <span data-ttu-id="b05c1-145">Они должны соответствовать объекту actionName, который определен как часть rolePermission.</span><span class="sxs-lookup"><span data-stu-id="b05c1-145">These must match the actionName that is defined as part of the rolePermission.</span></span>|
-|<span data-ttu-id="b05c1-146">rolePermissions</span><span class="sxs-lookup"><span data-stu-id="b05c1-146">rolePermissions</span></span>|<span data-ttu-id="b05c1-147">Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="b05c1-147">[rolePermission](../resources/intune-rbac-rolepermission.md) collection</span></span>|<span data-ttu-id="b05c1-148">Список разрешений, активированных для роли.</span><span class="sxs-lookup"><span data-stu-id="b05c1-148">List of Role Permissions this role is allowed to perform.</span></span> <span data-ttu-id="b05c1-149">Они должны соответствовать объекту actionName, который определен как часть rolePermission.</span><span class="sxs-lookup"><span data-stu-id="b05c1-149">These must match the actionName that is defined as part of the rolePermission.</span></span>|
-|<span data-ttu-id="b05c1-150">Исбуилтинроледефинитион</span><span class="sxs-lookup"><span data-stu-id="b05c1-150">isBuiltInRoleDefinition</span></span>|<span data-ttu-id="b05c1-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="b05c1-151">Boolean</span></span>|<span data-ttu-id="b05c1-152">Тип роли.</span><span class="sxs-lookup"><span data-stu-id="b05c1-152">Type of Role.</span></span> <span data-ttu-id="b05c1-153">Для встроенного определения роли задается значение True, а для настраиваемого — False.</span><span class="sxs-lookup"><span data-stu-id="b05c1-153">Set to True if it is built-in, or set to False if it is a custom role definition.</span></span>|
-|<span data-ttu-id="b05c1-154">isBuiltIn</span><span class="sxs-lookup"><span data-stu-id="b05c1-154">isBuiltIn</span></span>|<span data-ttu-id="b05c1-155">Boolean</span><span class="sxs-lookup"><span data-stu-id="b05c1-155">Boolean</span></span>|<span data-ttu-id="b05c1-156">Тип роли.</span><span class="sxs-lookup"><span data-stu-id="b05c1-156">Type of Role.</span></span> <span data-ttu-id="b05c1-157">Для встроенного определения роли задается значение True, а для настраиваемого — False.</span><span class="sxs-lookup"><span data-stu-id="b05c1-157">Set to True if it is built-in, or set to False if it is a custom role definition.</span></span>|
-|<span data-ttu-id="b05c1-158">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="b05c1-158">roleScopeTagIds</span></span>|<span data-ttu-id="b05c1-159">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="b05c1-159">String collection</span></span>|<span data-ttu-id="b05c1-160">Список тегов областей для этого экземпляра сущности.</span><span class="sxs-lookup"><span data-stu-id="b05c1-160">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="1c1a8-132">id</span><span class="sxs-lookup"><span data-stu-id="1c1a8-132">id</span></span>|<span data-ttu-id="1c1a8-133">String</span><span class="sxs-lookup"><span data-stu-id="1c1a8-133">String</span></span>|<span data-ttu-id="1c1a8-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-134">Key of the entity.</span></span> <span data-ttu-id="1c1a8-135">Это свойство доступно только для чтения и создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-135">This is read-only and automatically generated.</span></span>|
+|<span data-ttu-id="1c1a8-136">displayName</span><span class="sxs-lookup"><span data-stu-id="1c1a8-136">displayName</span></span>|<span data-ttu-id="1c1a8-137">Строка</span><span class="sxs-lookup"><span data-stu-id="1c1a8-137">String</span></span>|<span data-ttu-id="1c1a8-138">Отображаемое имя определения роли.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-138">Display Name of the Role definition.</span></span>|
+|<span data-ttu-id="1c1a8-139">description</span><span class="sxs-lookup"><span data-stu-id="1c1a8-139">description</span></span>|<span data-ttu-id="1c1a8-140">String</span><span class="sxs-lookup"><span data-stu-id="1c1a8-140">String</span></span>|<span data-ttu-id="1c1a8-141">Описание определения роли.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-141">Description of the Role definition.</span></span>|
+|<span data-ttu-id="1c1a8-142">permissions</span><span class="sxs-lookup"><span data-stu-id="1c1a8-142">permissions</span></span>|<span data-ttu-id="1c1a8-143">Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="1c1a8-143">[rolePermission](../resources/intune-rbac-rolepermission.md) collection</span></span>|<span data-ttu-id="1c1a8-144">Список разрешений, активированных для роли.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-144">List of Role Permissions this role is allowed to perform.</span></span> <span data-ttu-id="1c1a8-145">Они должны соответствовать объекту actionName, который определен как часть rolePermission.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-145">These must match the actionName that is defined as part of the rolePermission.</span></span>|
+|<span data-ttu-id="1c1a8-146">rolePermissions</span><span class="sxs-lookup"><span data-stu-id="1c1a8-146">rolePermissions</span></span>|<span data-ttu-id="1c1a8-147">Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="1c1a8-147">[rolePermission](../resources/intune-rbac-rolepermission.md) collection</span></span>|<span data-ttu-id="1c1a8-148">Список разрешений, активированных для роли.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-148">List of Role Permissions this role is allowed to perform.</span></span> <span data-ttu-id="1c1a8-149">Они должны соответствовать объекту actionName, который определен как часть rolePermission.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-149">These must match the actionName that is defined as part of the rolePermission.</span></span>|
+|<span data-ttu-id="1c1a8-150">Исбуилтинроледефинитион</span><span class="sxs-lookup"><span data-stu-id="1c1a8-150">isBuiltInRoleDefinition</span></span>|<span data-ttu-id="1c1a8-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="1c1a8-151">Boolean</span></span>|<span data-ttu-id="1c1a8-152">Тип роли.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-152">Type of Role.</span></span> <span data-ttu-id="1c1a8-153">Для встроенного определения роли задается значение True, а для настраиваемого — False.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-153">Set to True if it is built-in, or set to False if it is a custom role definition.</span></span>|
+|<span data-ttu-id="1c1a8-154">isBuiltIn</span><span class="sxs-lookup"><span data-stu-id="1c1a8-154">isBuiltIn</span></span>|<span data-ttu-id="1c1a8-155">Boolean</span><span class="sxs-lookup"><span data-stu-id="1c1a8-155">Boolean</span></span>|<span data-ttu-id="1c1a8-156">Тип роли.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-156">Type of Role.</span></span> <span data-ttu-id="1c1a8-157">Для встроенного определения роли задается значение True, а для настраиваемого — False.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-157">Set to True if it is built-in, or set to False if it is a custom role definition.</span></span>|
+|<span data-ttu-id="1c1a8-158">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="1c1a8-158">roleScopeTagIds</span></span>|<span data-ttu-id="1c1a8-159">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="1c1a8-159">String collection</span></span>|<span data-ttu-id="1c1a8-160">Список тегов областей для этого экземпляра сущности.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-160">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b05c1-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="b05c1-161">Response</span></span>
-<span data-ttu-id="b05c1-162">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [roleDefinition](../resources/intune-rbac-roledefinition.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b05c1-162">If successful, this method returns a `201 Created` response code and a [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1c1a8-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="1c1a8-161">Response</span></span>
+<span data-ttu-id="1c1a8-162">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [roleDefinition](../resources/intune-rbac-roledefinition.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-162">If successful, this method returns a `201 Created` response code and a [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b05c1-163">Пример</span><span class="sxs-lookup"><span data-stu-id="b05c1-163">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1c1a8-163">Пример</span><span class="sxs-lookup"><span data-stu-id="1c1a8-163">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b05c1-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="b05c1-164">Request</span></span>
-<span data-ttu-id="b05c1-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b05c1-165">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1c1a8-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="1c1a8-164">Request</span></span>
+<span data-ttu-id="1c1a8-165">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-165">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions
 Content-type: application/json
@@ -123,8 +123,8 @@ Content-length: 1207
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b05c1-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="b05c1-166">Response</span></span>
-<span data-ttu-id="b05c1-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b05c1-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1c1a8-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="1c1a8-166">Response</span></span>
+<span data-ttu-id="1c1a8-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1c1a8-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -180,7 +180,6 @@ Content-Length: 1256
   ]
 }
 ```
-
 
 
 
