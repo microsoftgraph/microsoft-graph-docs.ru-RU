@@ -1,15 +1,15 @@
 ---
 title: Get androidCustomConfiguration
 description: Чтение свойств и связей объекта androidCustomConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58fc481dd72bb4eaf271a10051abb25d1ccad1d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e91070de3c25b46b9238bfc2c32c8efa1abb85b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32481215"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933265"
 ---
 # <a name="get-androidcustomconfiguration"></a>Get androidCustomConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -94,7 +94,6 @@ Content-Length: 725
   }
 }
 ```
-
 
 
 

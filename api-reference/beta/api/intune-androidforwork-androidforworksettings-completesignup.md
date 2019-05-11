@@ -1,15 +1,15 @@
 ---
 title: Действие completeSignup
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42a4167997fc3a4d5b1c4a8d9885951cc54583ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70d56311e7890bd0e75212ff12ccd3a925c5b263
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498923"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938725"
 ---
 # <a name="completesignup-action"></a>Действие completeSignup
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidForWorkSettings/completeSignup
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -77,7 +77,6 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

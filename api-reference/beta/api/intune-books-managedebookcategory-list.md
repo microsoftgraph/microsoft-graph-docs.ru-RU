@@ -1,15 +1,15 @@
 ---
 title: Список Манажедебуккатегориес
 description: Список свойств и связей объектов Манажедебуккатегори.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8b8053f4c25af438f937605ec65011509373fdf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6f9f3a91b543ba896c2cbbf3141fd66238569c2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483147"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934133"
 ---
 # <a name="list-managedebookcategories"></a>Список Манажедебуккатегориес
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,7 +76,6 @@ Content-Length: 264
   ]
 }
 ```
-
 
 
 

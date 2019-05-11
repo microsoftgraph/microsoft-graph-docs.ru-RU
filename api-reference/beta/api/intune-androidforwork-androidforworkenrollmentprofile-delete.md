@@ -1,15 +1,15 @@
 ---
 title: Удаление объекта androidForWorkEnrollmentProfile
 description: Удаляет объект androidForWorkEnrollmentProfile.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a3f985be79acacf4810f52dd464fe44c4b6db2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afb678b81a69a12adafeca38aee63e0e7eb832fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498874"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938704"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>Удаление объекта androidForWorkEnrollmentProfile
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollm
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmen
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

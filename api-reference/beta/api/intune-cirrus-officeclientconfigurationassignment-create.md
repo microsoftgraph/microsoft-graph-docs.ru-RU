@@ -2,14 +2,14 @@
 title: Создание Оффицеклиентконфигуратионассигнмент
 description: Добавление целевой группы в существующую политику.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 3e646b70ea3e18a79aaee5b4129e54da833c5c4a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e1222a23112356b1681f1cdc01556800ffe44586
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483826"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934063"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Создание Оффицеклиентконфигуратионассигнмент
 
@@ -43,14 +43,14 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Оффицеклиентконфигуратионассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Оффицеклиентконфигуратионассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта Оффицеконфигуратионассигнмент.|
+|id|Строка|Идентификатор объекта Оффицеконфигуратионассигнмент.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Целевое назначение, заданное администратором.|
 
 

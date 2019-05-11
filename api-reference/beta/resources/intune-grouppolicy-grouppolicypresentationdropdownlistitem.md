@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Граупполиципресентатиондропдовнлиститем
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bccbd186c3b63145473509bec4312ad0633fe535
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd401c1f1b6f2f5efef3bf34e9032d323fbda6ba
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575760"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941088"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>Тип ресурса Граупполиципресентатиондропдовнлиститем
 
@@ -22,10 +22,10 @@ ms.locfileid: "32575760"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованное отображаемое имя для элемента раскрывающегося списка.|
+|displayName|Строка|Локализованное отображаемое имя для элемента раскрывающегося списка.|
 |value|String|Связанное значение для элемента раскрывающегося списка|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32575760"
   "value": "String"
 }
 ```
-
 
 
 

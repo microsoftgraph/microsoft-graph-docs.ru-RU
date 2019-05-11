@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windowsInformationProtectionApp
 description: Защита данных приложений для Windows
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb14092fa9f347e551a4871da69d9a3631b96e8c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72b7654712241549aaa1377e48dfdc856dd3bc1b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579179"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940612"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Тип ресурса windowsInformationProtectionApp
 
@@ -23,12 +23,12 @@ ms.locfileid: "32579179"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображаемое имя приложения.|
-|description|String|Описание приложения.|
+|description|Строка|Описание приложения.|
 |publisherName|String|Имя издателя|
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,7 +48,6 @@ ms.locfileid: "32579179"
   "denied": true
 }
 ```
-
 
 
 

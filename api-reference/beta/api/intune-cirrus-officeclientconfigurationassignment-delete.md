@@ -2,14 +2,14 @@
 title: Удаление Оффицеклиентконфигуратионассигнмент
 description: Удаляет объект Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 49b4401887276957ecf220802ae67a3803497212
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9cfea5da157aace569d2c6b5132b94a95fe975e6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483819"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934049"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>Удаление Оффицеклиентконфигуратионассигнмент
 
@@ -43,7 +43,7 @@ DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/a
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,15 +1,15 @@
 ---
 title: List deviceComplianceScheduledActionForRules
 description: Перечисление свойств и связей объектов deviceComplianceScheduledActionForRule.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1f3d46d1cf80b9b090cc042b810f3373a295fa8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11680e369571975a3d20e8a7c49297c80f83b784
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470428"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927687"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>List deviceComplianceScheduledActionForRules
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -74,7 +74,6 @@ Content-Length: 208
   ]
 }
 ```
-
 
 
 

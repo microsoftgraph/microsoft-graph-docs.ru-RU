@@ -2,14 +2,14 @@
 title: Удаление Виндовсоффицеклиентсекуритиконфигуратион
 description: Удаляет политику безопасности Виндовсоффицеклиентсекуритиконфигуратион.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e236c56dff58cb0efefe96c58a97f284394afdd6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 400b8b9e1c8d83983f08eab2013a72be3178c73f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482993"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933965"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>Удаление Виндовсоффицеклиентсекуритиконфигуратион
 
@@ -43,7 +43,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

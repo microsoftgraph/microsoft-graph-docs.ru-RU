@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса iPv4Range
 description: Определение диапазона IPv4.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c896eb6f9a35992d7370cf29124d8072c171eb30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f6a732ad11980b22b08d4684a8706e244e78a08a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550597"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938869"
 ---
 # <a name="ipv4range-resource-type"></a>Тип ресурса iPv4Range
 
@@ -25,10 +25,10 @@ ms.locfileid: "32550597"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|lowerAddress|String|Адрес нижнего уровня.|
+|lowerAddress|Строка|Адрес нижнего уровня.|
 |upperAddress|String|Верхний адрес.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "32550597"
   "upperAddress": "String"
 }
 ```
-
 
 
 

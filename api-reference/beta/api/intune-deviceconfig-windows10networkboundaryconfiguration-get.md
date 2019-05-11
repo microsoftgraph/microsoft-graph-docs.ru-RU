@@ -1,15 +1,15 @@
 ---
 title: Получение windows10NetworkBoundaryConfiguration
 description: Чтение свойств и связей объекта windows10NetworkBoundaryConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb48ebb65eec48b8aff6c380455d223710264109
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05192b423afad9e8700057196b877c7d89c37d43
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516457"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918537"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Получение windows10NetworkBoundaryConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -116,7 +116,6 @@ Content-Length: 1519
   }
 }
 ```
-
 
 
 

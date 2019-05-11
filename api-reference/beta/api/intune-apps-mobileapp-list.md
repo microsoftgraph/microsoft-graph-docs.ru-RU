@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов mobileApp
 description: Список свойств и связей объектов mobileApp.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b125753c16dd96b8e6513fdcc24106cc6a6d3e83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3df311e9ee22d527c868c8e432bc96bc266974eb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490145"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935372"
 ---
 # <a name="list-mobileapps"></a>Перечисление объектов mobileApp
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [mobileApp](../resources/intune-apps-mobileapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,7 +96,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

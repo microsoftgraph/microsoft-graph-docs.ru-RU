@@ -1,15 +1,15 @@
 ---
 title: Получение Термсандкондитионсграупассигнмент
 description: Чтение свойств и связей объекта Термсандкондитионсграупассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 045fd64cebfe2e166d9a6e1a2fda5cf47243b0b9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2dc443b7ec2fbc6416f951ea305f56e35d5ff1a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482447"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933741"
 ---
 # <a name="get-termsandconditionsgroupassignment"></a>Получение Термсандкондитионсграупассигнмент
 
@@ -46,7 +46,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -75,7 +75,6 @@ Content-Length: 194
   }
 }
 ```
-
 
 
 

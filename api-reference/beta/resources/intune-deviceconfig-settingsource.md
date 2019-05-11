@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса settingSource
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87e925e13cd061c6b3eaa78f3a1cecc0cd9b730b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32ff6d0db11cf75e052f4ff63287a72fd651e328
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465001"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944756"
 ---
 # <a name="settingsource-resource-type"></a>Тип ресурса settingSource
 
@@ -23,9 +23,9 @@ ms.locfileid: "32465001"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|displayName|String|Пока не задокументировано.|
+|displayName|Строка|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "32465001"
   "displayName": "String"
 }
 ```
-
 
 
 

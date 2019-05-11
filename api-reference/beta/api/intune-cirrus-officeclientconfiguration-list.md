@@ -2,14 +2,14 @@
 title: Список Оффицеклиентконфигуратионс
 description: Получить все политики.
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: dbbfae2a7568977c8dbdbc640d0829837c5e3fb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 093364b093606153fd82c18791a86ff441291d56
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483154"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934070"
 ---
 # <a name="list-officeclientconfigurations"></a>Список Оффицеклиентконфигуратионс
 
@@ -43,7 +43,7 @@ GET /officeConfiguration/clientConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

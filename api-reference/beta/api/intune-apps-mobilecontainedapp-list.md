@@ -1,15 +1,15 @@
 ---
 title: Список Мобилеконтаинедаппс
 description: Список свойств и связей объектов Мобилеконтаинедапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 995eda4b463251504297ce1d11535622600015e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a0a760c6107cc3408ec288924dc37d9938fa058
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488794"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935029"
 ---
 # <a name="list-mobilecontainedapps"></a>Список Мобилеконтаинедаппс
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -75,7 +75,6 @@ Content-Length: 150
   ]
 }
 ```
-
 
 
 

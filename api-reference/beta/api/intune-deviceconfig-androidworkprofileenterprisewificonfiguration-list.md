@@ -1,15 +1,15 @@
 ---
 title: Список Андроидворкпрофилинтерприсевификонфигуратионс
 description: Список свойств и связей объектов Андроидворкпрофилинтерприсевификонфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d8654e3266b09c528a7e4be62586ea2d165b6aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b0d13f4e8227b37eee849fd84d67c589e575df35
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475083"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928563"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>Список Андроидворкпрофилинтерприсевификонфигуратионс
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,7 +93,6 @@ Content-Length: 1065
   ]
 }
 ```
-
 
 
 

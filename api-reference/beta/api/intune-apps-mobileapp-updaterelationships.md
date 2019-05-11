@@ -1,15 +1,15 @@
 ---
 title: действие Упдатерелатионшипс
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35e0be0efc1496aa92534a5bd36bab6eacafd143
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53035c756e346a8df68e81cd37877e6d4255348e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489907"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935344"
 ---
 # <a name="updaterelationships-action"></a>действие Упдатерелатионшипс
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -86,7 +86,6 @@ Content-length: 256
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

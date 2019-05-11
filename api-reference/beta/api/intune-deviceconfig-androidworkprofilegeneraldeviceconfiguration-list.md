@@ -1,15 +1,15 @@
 ---
 title: Список Андроидворкпрофилеженералдевицеконфигуратионс
 description: Список свойств и связей объектов androidWorkProfileGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e04a5efc3fe325a17f866955af0d83a9ce130fe9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4383b736740eb983ba1337758877b1dbf60b85e1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32474440"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928514"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Список Андроидворкпрофилеженералдевицеконфигуратионс
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -119,7 +119,6 @@ Content-Length: 2435
   ]
 }
 ```
-
 
 
 

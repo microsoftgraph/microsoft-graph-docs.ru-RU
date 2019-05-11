@@ -1,15 +1,15 @@
 ---
 title: Получение Виндовшеалсмониторингконфигуратион
 description: Чтение свойств и связей объекта Виндовшеалсмониторингконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01e972987b20d5294e5f4478899a86d7678bb9b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6972aebcd5e98098f7ce9bbcf968b91a66922a2b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514931"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917928"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>Получение Виндовшеалсмониторингконфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 588
+Content-Length: 690
 
 {
   "value": {
@@ -83,11 +83,11 @@ Content-Length: 588
     "displayName": "Display Name value",
     "version": 7,
     "allowDeviceHealthMonitoring": "enabled",
-    "configDeviceHealthMonitoringScope": "healthMonitoring"
+    "configDeviceHealthMonitoringScope": "healthMonitoring",
+    "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
   }
 }
 ```
-
 
 
 

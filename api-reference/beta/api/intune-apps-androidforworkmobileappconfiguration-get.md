@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидфорворкмобилеаппконфигуратион
 description: Чтение свойств и связей объекта Андроидфорворкмобилеаппконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2993a57b04ab6d9b534de6ebb6095e3da1ffa893
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4e34b3a5b80d7ed4a20b8d482d6051a713aba95e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497460"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937360"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Получение Андроидфорворкмобилеаппконфигуратион
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -94,7 +94,6 @@ Content-Length: 795
   }
 }
 ```
-
 
 
 

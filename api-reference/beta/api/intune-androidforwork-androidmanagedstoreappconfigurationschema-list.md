@@ -1,15 +1,15 @@
 ---
 title: Список Андроидманажедстореаппконфигуратионсчемас
 description: Список свойств и связей объектов Андроидманажедстореаппконфигуратионсчема.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d38027c967296512b6d877f790033660ced66d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6d1deb80753da3e4408e41ed1cd94ba50945ecd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497558"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937507"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>Список Андроидманажедстореаппконфигуратионсчемас
 
@@ -43,7 +43,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -96,7 +96,6 @@ Content-Length: 987
   ]
 }
 ```
-
 
 
 

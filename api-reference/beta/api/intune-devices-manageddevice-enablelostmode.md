@@ -1,15 +1,15 @@
 ---
 title: Действие enableLostMode
 description: Включение режима потери
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 735ee2659c603b03718a0e0031973dd5addb21eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2e8103e113ab97f117d32b4fb50aaa828700f490
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520223"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909675"
 ---
 # <a name="enablelostmode-action"></a>Действие enableLostMode
 
@@ -84,7 +84,6 @@ Content-length: 103
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

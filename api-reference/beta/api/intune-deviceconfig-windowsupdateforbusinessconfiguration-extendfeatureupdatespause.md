@@ -1,15 +1,15 @@
 ---
 title: Действие extendFeatureUpdatesPause
 description: Расширение функции PAUSE для центра обновления Windows для бизнеса.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99026500c43824343b9cb7e5fe9501dcba1189c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aef0e53d4b9a68a54f967a7f5cdce5dd18282dea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511664"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917410"
 ---
 # <a name="extendfeatureupdatespause-action"></a>Действие extendFeatureUpdatesPause
 
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

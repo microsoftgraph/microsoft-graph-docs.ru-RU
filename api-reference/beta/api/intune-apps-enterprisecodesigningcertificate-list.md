@@ -1,15 +1,15 @@
 ---
 title: Список enterpriseCodeSigningCertificates
 description: Список свойств и связей объектов Ентерприсекодесигнингцертификате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05ad21c07cc52049cd1d4177070611c1de663b45
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d70556d6b4ea7460501103eb37bebf9e5b722d6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496508"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937108"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>Список enterpriseCodeSigningCertificates
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/enterpriseCodeSigningCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -81,7 +81,6 @@ Content-Length: 512
   ]
 }
 ```
-
 
 
 

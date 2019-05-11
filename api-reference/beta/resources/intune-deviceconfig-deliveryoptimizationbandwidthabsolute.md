@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Деливерйоптимизатионбандвидсабсолуте
-description: Пределы проПускной способности в килобайтах в секунду.
-author: tfitzmac
+description: Пределы пропускной способности в килобайтах в секунду.
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 791748adb7620ed23082a597d2b62855467a5048
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: addb48091e3682019a508b7f19832b5acccd6aa7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534838"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947290"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсабсолуте
 
@@ -17,10 +17,10 @@ ms.locfileid: "32534838"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пределы проПускной способности в килобайтах в секунду.
+Пределы пропускной способности в килобайтах в секунду.
 
 
-НаСледуется от [деливерйоптимизатионбандвидс](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
+Наследуется от [деливерйоптимизатионбандвидс](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -30,7 +30,7 @@ ms.locfileid: "32534838"
 |Максимумуплоадбандвидсинкилобитесперсеконд|Int64|Указывает максимальную пропускную способность передачи в килобайтах/с, которая будет использоваться устройством для всех параллельных операций отправки с помощью оптимизации доставки (0-4000000). Допустимые значения — от 0 до 4000000
 Значение по умолчанию — 0, что позволяет использовать неограниченную пропускную способность (оптимизирована для минимального использования полосы пропускания при загрузке). Допустимые значения — от 0 до 4000000|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,7 +47,6 @@ ms.locfileid: "32534838"
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
-
 
 
 

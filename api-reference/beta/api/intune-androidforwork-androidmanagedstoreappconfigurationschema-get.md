@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидманажедстореаппконфигуратионсчема
 description: Чтение свойств и связей объекта Андроидманажедстореаппконфигуратионсчема.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a92dd8bf421acc3dd735b804753ceb1b446f7958
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c0c6b2856af44c4c964c0690958b4898e9500a2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32497495"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937332"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Получение Андроидманажедстореаппконфигуратионсчема
 
@@ -46,7 +46,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManaged
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -97,7 +97,6 @@ Content-Length: 923
   }
 }
 ```
-
 
 
 

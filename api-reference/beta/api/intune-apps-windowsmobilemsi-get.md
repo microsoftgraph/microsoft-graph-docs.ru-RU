@@ -1,15 +1,15 @@
 ---
 title: Get windowsMobileMSI
 description: Чтение свойств и связей объекта windowsMobileMSI.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 826679cc9aefbe39d85a49ca10503fee925e1731
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37be3720ce0e4be4ac1036ec991da705181a31ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488017"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934686"
 ---
 # <a name="get-windowsmobilemsi"></a>Get windowsMobileMSI
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -108,7 +108,6 @@ Content-Length: 1325
   }
 }
 ```
-
 
 
 

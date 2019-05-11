@@ -1,15 +1,15 @@
 ---
 title: Создание Иослобапппровисионингконфигуратионассигнмент
 description: Создание нового объекта Иослобапппровисионингконфигуратионассигнмент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68005d3f8682b61417a9b1a768b62a8ff5cf235e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b57788c96223073e1c3eb80acd19e3389d55daf3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496088"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936933"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>Создание Иослобапппровисионингконфигуратионассигнмент
 
@@ -43,14 +43,14 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Иослобапппровисионингконфигуратионассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Иослобапппровисионингконфигуратионассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

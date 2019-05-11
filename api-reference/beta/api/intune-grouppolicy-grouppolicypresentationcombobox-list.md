@@ -1,15 +1,15 @@
 ---
 title: Список Граупполиципресентатионкомбобоксес
 description: Список свойств и связей объектов Граупполиципресентатионкомбобокс.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5b6e6b0d5448f2987fd6676db09be10fe8028ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b5a40f8ba5e429e48fcbd9628492f0a1aae62c36
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531189"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904967"
 ---
 # <a name="list-grouppolicypresentationcomboboxes"></a>Список Граупполиципресентатионкомбобоксес
 
@@ -81,7 +81,6 @@ Content-Length: 419
   ]
 }
 ```
-
 
 
 

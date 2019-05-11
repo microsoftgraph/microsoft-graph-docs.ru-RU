@@ -1,15 +1,15 @@
 ---
 title: Список Андроидвпнконфигуратионс
 description: Список свойств и связей объектов Андроидвпнконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca521264a3997783fae03c8ef0786f667a16ac08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f36c9d7cccf7326fd662d48c7c62ffa2ebce9f21
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32475342"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928783"
 ---
 # <a name="list-androidvpnconfigurations"></a>Список Андроидвпнконфигуратионс
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -111,7 +111,6 @@ Content-Length: 1339
   ]
 }
 ```
-
 
 
 

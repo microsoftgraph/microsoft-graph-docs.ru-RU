@@ -1,15 +1,15 @@
 ---
 title: Get deviceComplianceSettingState
 description: Чтение свойств и связей объекта deviceComplianceSettingState.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8968d525464c0fd7c935ee0d44dd247282fafbf9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9cd00f3cb6e379715acc76381dc15db1b3dc54d1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470337"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927659"
 ---
 # <a name="get-devicecompliancesettingstate"></a>Get deviceComplianceSettingState
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,7 +86,6 @@ Content-Length: 645
   }
 }
 ```
-
 
 
 

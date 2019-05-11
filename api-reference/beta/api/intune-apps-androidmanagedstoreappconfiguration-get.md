@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидманажедстореаппконфигуратион
 description: Чтение свойств и связей объекта Андроидманажедстореаппконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7d69550b7f4fe3294d2522935118327fc3f7f50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ced5bbadd17a36139852ea4329c701e19b564bfb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496515"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937234"
 ---
 # <a name="get-androidmanagedstoreappconfiguration"></a>Получение Андроидманажедстореаппконфигуратион
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,7 +95,6 @@ Content-Length: 829
   }
 }
 ```
-
 
 
 

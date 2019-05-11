@@ -1,15 +1,15 @@
 ---
 title: тип перечисления windows10VpnProfileTarget
 description: Конечные типы профилей VPN Windows 10.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 602316620aa076107436abdc39c97ea0dcb270d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 737b8e9f828d4054fef407e148b9073dd7924b5c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571991"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944217"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>тип перечисления windows10VpnProfileTarget
 
@@ -23,9 +23,8 @@ ms.locfileid: "32571991"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |user|нуль|Профиль конечного пользователя VPN.|
-|device;|1 |Конечный профиль VPN для устройства.|
-|Аутопилотдевице|2 |Целевой профиль VPN для устройства автоПилота.|
-
+|device;|1,1|Конечный профиль VPN для устройства.|
+|Аутопилотдевице|2|Целевой профиль VPN для устройства автопилота.|
 
 
 

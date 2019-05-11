@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Термсандкондитионсграупассигнмент
 description: Объект Термсандкондитионсграупассигнмент представляет назначение определенной политики условий (Т_амп_к) для данной группы. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f3518dcc31bf703d3fe42e6bab15d5731d5beb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 417871f610e9c278e902b41c020c1d8fd904eb6a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463527"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949144"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Тип ресурса Термсандкондитионсграупассигнмент
 
@@ -31,8 +31,8 @@ ms.locfileid: "32463527"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
-|Таржетграупид|String|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
+|id|Строка|Уникальный идентификатор объекта.|
+|Таржетграупид|Строка|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -54,7 +54,6 @@ ms.locfileid: "32463527"
   "targetGroupId": "String"
 }
 ```
-
 
 
 

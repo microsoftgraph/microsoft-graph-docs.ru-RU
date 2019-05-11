@@ -1,15 +1,15 @@
 ---
 title: Список Граупполиципресентатионвалуелистс
 description: Список свойств и связей объектов Граупполиципресентатионвалуелист.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56cefa757c08e6084fc96009a86e6addc994d109
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1362ed549edbc9c3be063c21cb2ab3e98d93496
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530664"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904274"
 ---
 # <a name="list-grouppolicypresentationvaluelists"></a>Список Граупполиципресентатионвалуелистс
 
@@ -82,7 +82,6 @@ Content-Length: 471
   ]
 }
 ```
-
 
 
 

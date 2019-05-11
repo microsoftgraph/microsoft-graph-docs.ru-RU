@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Excludedapps к объекту
 description: Содержит свойства исключенных приложений Office365.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d90954bda8a5bd6c9bfdeb6af0d2946b48215d00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37abd83b34fde565aa78e62454c4ce7d47ea192a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553052"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950412"
 ---
 # <a name="excludedapps-resource-type"></a>Тип ресурса Excludedapps к объекту
 
@@ -23,7 +23,7 @@ ms.locfileid: "32553052"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |обращения|Логический|Значение, если доступ к MS Office должен быть исключен или нет.|
-|невозможно|Логический|Значение, заДанное в поле IF MS Office Excel, не должно быть исключено.|
+|невозможно|Логический|Значение, заданное в поле IF MS Office Excel, не должно быть исключено.|
 |тень|Логический|Значение, которое должно быть исключено, если MS Office OneDrive для бизнеса — Groove.|
 |infoPath|Логический|Значение, если MS Office InfoPath следует исключить.|
 |Lync|Логический|Значение, если MS Office Skype для бизнеса — не следует исключать.|
@@ -34,10 +34,10 @@ ms.locfileid: "32553052"
 |publisher|Логический|Значение, если MS Office Publisher должен быть исключен или нет.|
 |Шарепоинтдесигнер|Логический|Значение для параметра if MS Office Шарепоинтдесигнер должно быть исключено или нет.|
 |Teams|Логический|Значение, которое должно быть исключено, если MS Office Teams должен быть исключен.|
-|Visio|Логический|Значение, заДанное для if MS Office Visio, должно быть исключено.|
-|текстовых|Логический|Значение, заДанное для if MS Office Word, должно быть исключено.|
+|Visio|Логический|Значение, заданное для if MS Office Visio, должно быть исключено.|
+|текстовых|Логический|Значение, заданное для if MS Office Word, должно быть исключено.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,7 +66,6 @@ ms.locfileid: "32553052"
   "word": true
 }
 ```
-
 
 
 

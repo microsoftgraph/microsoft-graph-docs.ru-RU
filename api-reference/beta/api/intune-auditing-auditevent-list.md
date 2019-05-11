@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов auditEvent
 description: Список свойств и связей объектов auditEvent.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e52eaee297b587bba1d6d41afa21f11005dc835f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f092553031c1e5c12c6f35adf3858223516bfb2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32484260"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934385"
 ---
 # <a name="list-auditevents"></a>Перечисление объектов auditEvent
 
@@ -43,10 +43,10 @@ GET /deviceManagement/auditEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [auditEvent](../resources/intune-auditing-auditevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -111,7 +111,6 @@ Content-Length: 1632
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Впптокенактионфаилуререасон
 description: Возможные типы причин сбоя действия маркера Apple Volume Purchase Program.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9adb896d384be99496c016ef3bd39b02ff1a28e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f8e06243d8b719ad4cb3f2a2c264fdafe7e468cf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548259"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938641"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>тип перечисления Впптокенактионфаилуререасон
 
@@ -22,12 +22,11 @@ ms.locfileid: "32548259"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет.|
-|Апплефаилуре|1 |В службе Apple возникла ошибка.|
-|Интерналеррор|2 |Произошла внутренняя ошибка.|
-|Експиредвпптокен|3 |Произошла ошибка из-за истечения срока действия маркера Apple Volume Purchase Program.|
-|Експиредапплепушнотификатионцертификате|4 |Произошла ошибка из-за истечения срока действия сертификата push-уведомлений Apple Volume Purchase Program.|
-
+|none|нуль|Нет.|
+|Апплефаилуре|1,1|В службе Apple возникла ошибка.|
+|Интерналеррор|2|Произошла внутренняя ошибка.|
+|Експиредвпптокен|4|Произошла ошибка из-за истечения срока действия маркера Apple Volume Purchase Program.|
+|Експиредапплепушнотификатионцертификате|SP4|Произошла ошибка из-за истечения срока действия сертификата push-уведомлений Apple Volume Purchase Program.|
 
 
 

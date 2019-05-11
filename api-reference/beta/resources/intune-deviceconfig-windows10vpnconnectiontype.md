@@ -1,15 +1,15 @@
 ---
 title: тип перечисления windows10VpnConnectionType
 description: Типы VPN-подключений.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ac61b494fc261832a864c4c87998532a863f87b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3e2db29d395a91d43fbb71a634b06a6000f65796
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572033"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944224"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
 
@@ -23,16 +23,15 @@ ms.locfileid: "32572033"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Пулсесекуре|нуль|Безопасный импульс.|
-|f5EdgeClient|1 |ПоГраничный клиент F5.|
-|Деллсоникваллмобилеконнект|2 |Мобильное подключение Dell Сониквалл.|
-|Чеккпоинткапсулевпн|3 |Проверка поКапсулы VPN.|
-|Автоматически|4 |Автоматически.|
-|Клиентских|5 |Клиентских.|
+|f5EdgeClient|1,1|Пограничный клиент F5.|
+|Деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
+|Чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
+|Автоматически|SP4|Автоматически.|
+|Клиентских|17:00|Клиентских.|
 |L2TP|6 |L2TP.|
 |PPTP|7 |PPTP.|
 |клиентов|8 |Клиентов.|
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
-
 
 
 

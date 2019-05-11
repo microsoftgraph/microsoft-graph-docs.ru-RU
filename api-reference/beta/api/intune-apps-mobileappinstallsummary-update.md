@@ -1,15 +1,15 @@
 ---
 title: Обновление Мобилеаппинсталлсуммари
 description: Обновление свойств объекта Мобилеаппинсталлсуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17389db16c5080c3ca13fa21f77437483d0be64a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cff057bdb80e57fa2bdfcf4b9c008dacd0a58b42
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489459"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935092"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
 
@@ -43,14 +43,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
@@ -113,7 +113,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
 
 
 

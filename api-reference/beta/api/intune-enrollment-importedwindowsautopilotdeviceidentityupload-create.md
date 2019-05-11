@@ -1,15 +1,15 @@
 ---
 title: Создание Импортедвиндовсаутопилотдевицеидентитюплоад
 description: Создание нового объекта Импортедвиндовсаутопилотдевицеидентитюплоад.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa8e18a8635be0a8955b3e2c7400a5884cf8d3c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 19f1cfce3f44c49a2da5e31fa791574be1d5eb69
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532459"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908408"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Создание Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -50,7 +50,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
@@ -89,7 +89,6 @@ Content-Length: 221
   "status": "pending"
 }
 ```
-
 
 
 

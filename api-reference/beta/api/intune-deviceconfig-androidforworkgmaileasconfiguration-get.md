@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидфорворкгмаилеасконфигуратион
 description: Чтение свойств и связей объекта Андроидфорворкгмаилеасконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd8ea8e8d98ce9fed631f33fc17d6ad3e4bd5dbf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 06b17693afc2421d28a1942a9458989c1f353b96
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478912"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933391"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>Получение Андроидфорворкгмаилеасконфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,7 +91,6 @@ Content-Length: 716
   }
 }
 ```
-
 
 
 

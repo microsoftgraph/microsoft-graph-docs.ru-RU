@@ -1,15 +1,15 @@
 ---
 title: Получение Мобилеаппинсталлсуммари
 description: Чтение свойств и связей объекта Мобилеаппинсталлсуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7d245309550eb586a713ccc7d5dc2885616a612
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 796e9f1ed388c5438c457e57831c199a739288ea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489109"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935088"
 ---
 # <a name="get-mobileappinstallsummary"></a>Получение Мобилеаппинсталлсуммари
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 466
   }
 }
 ```
-
 
 
 

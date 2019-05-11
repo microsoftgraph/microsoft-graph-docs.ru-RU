@@ -1,15 +1,15 @@
 ---
 title: Обновление организации
 description: Обновление свойств объекта organization.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26941e8a12b15bb5f27396c46c6ac2645497894f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca25ac972a52922897762e8337db598857844483
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528521"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899881"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -50,7 +50,7 @@ PATCH /organization/{organizationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта.|
+|id|Строка|GUID объекта.|
 |mobileDeviceManagementAuthority|[Мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 |Цертификатеконнекторсеттинг|[Цертификатеконнекторсеттинг](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединителя сертификатов.|
 
@@ -105,7 +105,6 @@ Content-Length: 541
   }
 }
 ```
-
 
 
 
