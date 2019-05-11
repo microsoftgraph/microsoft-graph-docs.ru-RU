@@ -1,34 +1,34 @@
 ---
 title: Создание iosLobAppProvisioningConfiguration
 description: Создание нового объекта iosLobAppProvisioningConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89420fa4680fdb6978ebff209c36f4f81804596a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a848b7bb83146019f4eebc37c95a99ce4beba17
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496095"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937024"
 ---
-# <a name="create-ioslobappprovisioningconfiguration"></a><span data-ttu-id="cd9f1-103">Создание iosLobAppProvisioningConfiguration</span><span class="sxs-lookup"><span data-stu-id="cd9f1-103">Create iosLobAppProvisioningConfiguration</span></span>
+# <a name="create-ioslobappprovisioningconfiguration"></a><span data-ttu-id="6aeb2-103">Создание iosLobAppProvisioningConfiguration</span><span class="sxs-lookup"><span data-stu-id="6aeb2-103">Create iosLobAppProvisioningConfiguration</span></span>
 
-> <span data-ttu-id="cd9f1-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6aeb2-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cd9f1-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6aeb2-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cd9f1-106">Создание нового объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="cd9f1-106">Create a new [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object.</span></span>
+<span data-ttu-id="6aeb2-106">Создание нового объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="6aeb2-106">Create a new [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cd9f1-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="cd9f1-107">Prerequisites</span></span>
-<span data-ttu-id="cd9f1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd9f1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6aeb2-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="6aeb2-107">Prerequisites</span></span>
+<span data-ttu-id="6aeb2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6aeb2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cd9f1-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd9f1-110">Permission type</span></span>|<span data-ttu-id="cd9f1-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd9f1-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6aeb2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6aeb2-110">Permission type</span></span>|<span data-ttu-id="6aeb2-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="6aeb2-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cd9f1-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd9f1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="cd9f1-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd9f1-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="cd9f1-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd9f1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cd9f1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-115">Not supported.</span></span>|
-|<span data-ttu-id="cd9f1-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd9f1-116">Application</span></span>|<span data-ttu-id="cd9f1-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-117">Not supported.</span></span>|
+|<span data-ttu-id="6aeb2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6aeb2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="6aeb2-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6aeb2-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="6aeb2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6aeb2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6aeb2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-115">Not supported.</span></span>|
+|<span data-ttu-id="6aeb2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6aeb2-116">Application</span></span>|<span data-ttu-id="6aeb2-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cd9f1-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd9f1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6aeb2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6aeb2-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,39 +37,39 @@ ms.locfileid: "32496095"
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cd9f1-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd9f1-119">Request headers</span></span>
-|<span data-ttu-id="cd9f1-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cd9f1-120">Header</span></span>|<span data-ttu-id="cd9f1-121">Значение</span><span class="sxs-lookup"><span data-stu-id="cd9f1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6aeb2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6aeb2-119">Request headers</span></span>
+|<span data-ttu-id="6aeb2-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6aeb2-120">Header</span></span>|<span data-ttu-id="6aeb2-121">Значение</span><span class="sxs-lookup"><span data-stu-id="6aeb2-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cd9f1-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd9f1-122">Authorization</span></span>|<span data-ttu-id="cd9f1-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cd9f1-124">Accept</span><span class="sxs-lookup"><span data-stu-id="cd9f1-124">Accept</span></span>|<span data-ttu-id="cd9f1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="cd9f1-125">application/json</span></span>|
+|<span data-ttu-id="6aeb2-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6aeb2-122">Authorization</span></span>|<span data-ttu-id="6aeb2-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6aeb2-124">Accept</span><span class="sxs-lookup"><span data-stu-id="6aeb2-124">Accept</span></span>|<span data-ttu-id="6aeb2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6aeb2-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cd9f1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd9f1-126">Request body</span></span>
-<span data-ttu-id="cd9f1-127">В тексте запроса добавьте представление объекта iosLobAppProvisioningConfiguration в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-127">In the request body, supply a JSON representation for the iosLobAppProvisioningConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6aeb2-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6aeb2-126">Request body</span></span>
+<span data-ttu-id="6aeb2-127">В тексте запроса добавьте представление объекта iosLobAppProvisioningConfiguration в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-127">In the request body, supply a JSON representation for the iosLobAppProvisioningConfiguration object.</span></span>
 
-<span data-ttu-id="cd9f1-128">В следующей таблице приведены свойства, необходимые при создании iosLobAppProvisioningConfiguration.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-128">The following table shows the properties that are required when you create the iosLobAppProvisioningConfiguration.</span></span>
+<span data-ttu-id="6aeb2-128">В следующей таблице приведены свойства, необходимые при создании iosLobAppProvisioningConfiguration.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-128">The following table shows the properties that are required when you create the iosLobAppProvisioningConfiguration.</span></span>
 
-|<span data-ttu-id="cd9f1-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd9f1-129">Property</span></span>|<span data-ttu-id="cd9f1-130">Тип</span><span class="sxs-lookup"><span data-stu-id="cd9f1-130">Type</span></span>|<span data-ttu-id="cd9f1-131">Описание</span><span class="sxs-lookup"><span data-stu-id="cd9f1-131">Description</span></span>|
+|<span data-ttu-id="6aeb2-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="6aeb2-129">Property</span></span>|<span data-ttu-id="6aeb2-130">Тип</span><span class="sxs-lookup"><span data-stu-id="6aeb2-130">Type</span></span>|<span data-ttu-id="6aeb2-131">Описание</span><span class="sxs-lookup"><span data-stu-id="6aeb2-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cd9f1-132">id</span><span class="sxs-lookup"><span data-stu-id="cd9f1-132">id</span></span>|<span data-ttu-id="cd9f1-133">Строка</span><span class="sxs-lookup"><span data-stu-id="cd9f1-133">String</span></span>|<span data-ttu-id="cd9f1-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-134">Key of the entity.</span></span>|
-|<span data-ttu-id="cd9f1-135">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="cd9f1-135">expirationDateTime</span></span>|<span data-ttu-id="cd9f1-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cd9f1-136">DateTimeOffset</span></span>|<span data-ttu-id="cd9f1-137">Дата и время неОбязательного окончания срока действия профиля.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-137">Optional profile expiration date and time.</span></span>|
-|<span data-ttu-id="cd9f1-138">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="cd9f1-138">payloadFileName</span></span>|<span data-ttu-id="cd9f1-139">String</span><span class="sxs-lookup"><span data-stu-id="cd9f1-139">String</span></span>|<span data-ttu-id="cd9f1-140">Имя файла полезных данных (\*. мобилепровисион</span><span class="sxs-lookup"><span data-stu-id="cd9f1-140">Payload file name (\*.mobileprovision</span></span> | <span data-ttu-id="cd9f1-141">\*.xml).</span><span class="sxs-lookup"><span data-stu-id="cd9f1-141">\*.xml).</span></span>|
-|<span data-ttu-id="cd9f1-142">payload</span><span class="sxs-lookup"><span data-stu-id="cd9f1-142">payload</span></span>|<span data-ttu-id="cd9f1-143">Binary</span><span class="sxs-lookup"><span data-stu-id="cd9f1-143">Binary</span></span>|<span data-ttu-id="cd9f1-144">Полезные данные</span><span class="sxs-lookup"><span data-stu-id="cd9f1-144">Payload.</span></span> <span data-ttu-id="cd9f1-145">(массив байтов в кодировке UTF8).</span><span class="sxs-lookup"><span data-stu-id="cd9f1-145">(UTF8 encoded byte array)</span></span>|
-|<span data-ttu-id="cd9f1-146">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="cd9f1-146">roleScopeTagIds</span></span>|<span data-ttu-id="cd9f1-147">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="cd9f1-147">String collection</span></span>|<span data-ttu-id="cd9f1-148">Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-148">List of Scope Tags for this iOS LOB app provisioning configuration entity.</span></span>|
-|<span data-ttu-id="cd9f1-149">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="cd9f1-149">createdDateTime</span></span>|<span data-ttu-id="cd9f1-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cd9f1-150">DateTimeOffset</span></span>|<span data-ttu-id="cd9f1-151">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-151">DateTime the object was created.</span></span>|
-|<span data-ttu-id="cd9f1-152">description</span><span class="sxs-lookup"><span data-stu-id="cd9f1-152">description</span></span>|<span data-ttu-id="cd9f1-153">String</span><span class="sxs-lookup"><span data-stu-id="cd9f1-153">String</span></span>|<span data-ttu-id="cd9f1-154">Указанное администратором описание конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-154">Admin provided description of the Device Configuration.</span></span>|
-|<span data-ttu-id="cd9f1-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="cd9f1-155">lastModifiedDateTime</span></span>|<span data-ttu-id="cd9f1-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cd9f1-156">DateTimeOffset</span></span>|<span data-ttu-id="cd9f1-157">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-157">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="cd9f1-158">displayName</span><span class="sxs-lookup"><span data-stu-id="cd9f1-158">displayName</span></span>|<span data-ttu-id="cd9f1-159">Строка</span><span class="sxs-lookup"><span data-stu-id="cd9f1-159">String</span></span>|<span data-ttu-id="cd9f1-160">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-160">Admin provided name of the device configuration.</span></span>|
-|<span data-ttu-id="cd9f1-161">version</span><span class="sxs-lookup"><span data-stu-id="cd9f1-161">version</span></span>|<span data-ttu-id="cd9f1-162">Int32</span><span class="sxs-lookup"><span data-stu-id="cd9f1-162">Int32</span></span>|<span data-ttu-id="cd9f1-163">Версия конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-163">Version of the device configuration.</span></span>|
+|<span data-ttu-id="6aeb2-132">id</span><span class="sxs-lookup"><span data-stu-id="6aeb2-132">id</span></span>|<span data-ttu-id="6aeb2-133">Строка</span><span class="sxs-lookup"><span data-stu-id="6aeb2-133">String</span></span>|<span data-ttu-id="6aeb2-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-134">Key of the entity.</span></span>|
+|<span data-ttu-id="6aeb2-135">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="6aeb2-135">expirationDateTime</span></span>|<span data-ttu-id="6aeb2-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6aeb2-136">DateTimeOffset</span></span>|<span data-ttu-id="6aeb2-137">Дата и время необязательного окончания срока действия профиля.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-137">Optional profile expiration date and time.</span></span>|
+|<span data-ttu-id="6aeb2-138">payloadFileName</span><span class="sxs-lookup"><span data-stu-id="6aeb2-138">payloadFileName</span></span>|<span data-ttu-id="6aeb2-139">String</span><span class="sxs-lookup"><span data-stu-id="6aeb2-139">String</span></span>|<span data-ttu-id="6aeb2-140">Имя файла полезных данных (\*. мобилепровисион</span><span class="sxs-lookup"><span data-stu-id="6aeb2-140">Payload file name (\*.mobileprovision</span></span> | <span data-ttu-id="6aeb2-141">\*.xml).</span><span class="sxs-lookup"><span data-stu-id="6aeb2-141">\*.xml).</span></span>|
+|<span data-ttu-id="6aeb2-142">payload</span><span class="sxs-lookup"><span data-stu-id="6aeb2-142">payload</span></span>|<span data-ttu-id="6aeb2-143">Binary</span><span class="sxs-lookup"><span data-stu-id="6aeb2-143">Binary</span></span>|<span data-ttu-id="6aeb2-144">Полезные данные</span><span class="sxs-lookup"><span data-stu-id="6aeb2-144">Payload.</span></span> <span data-ttu-id="6aeb2-145">(массив байтов в кодировке UTF8).</span><span class="sxs-lookup"><span data-stu-id="6aeb2-145">(UTF8 encoded byte array)</span></span>|
+|<span data-ttu-id="6aeb2-146">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="6aeb2-146">roleScopeTagIds</span></span>|<span data-ttu-id="6aeb2-147">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="6aeb2-147">String collection</span></span>|<span data-ttu-id="6aeb2-148">Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-148">List of Scope Tags for this iOS LOB app provisioning configuration entity.</span></span>|
+|<span data-ttu-id="6aeb2-149">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="6aeb2-149">createdDateTime</span></span>|<span data-ttu-id="6aeb2-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6aeb2-150">DateTimeOffset</span></span>|<span data-ttu-id="6aeb2-151">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-151">DateTime the object was created.</span></span>|
+|<span data-ttu-id="6aeb2-152">description</span><span class="sxs-lookup"><span data-stu-id="6aeb2-152">description</span></span>|<span data-ttu-id="6aeb2-153">String</span><span class="sxs-lookup"><span data-stu-id="6aeb2-153">String</span></span>|<span data-ttu-id="6aeb2-154">Указанное администратором описание конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-154">Admin provided description of the Device Configuration.</span></span>|
+|<span data-ttu-id="6aeb2-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="6aeb2-155">lastModifiedDateTime</span></span>|<span data-ttu-id="6aeb2-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6aeb2-156">DateTimeOffset</span></span>|<span data-ttu-id="6aeb2-157">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-157">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="6aeb2-158">displayName</span><span class="sxs-lookup"><span data-stu-id="6aeb2-158">displayName</span></span>|<span data-ttu-id="6aeb2-159">Строка</span><span class="sxs-lookup"><span data-stu-id="6aeb2-159">String</span></span>|<span data-ttu-id="6aeb2-160">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-160">Admin provided name of the device configuration.</span></span>|
+|<span data-ttu-id="6aeb2-161">version</span><span class="sxs-lookup"><span data-stu-id="6aeb2-161">version</span></span>|<span data-ttu-id="6aeb2-162">Int32</span><span class="sxs-lookup"><span data-stu-id="6aeb2-162">Int32</span></span>|<span data-ttu-id="6aeb2-163">Версия конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-163">Version of the device configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="cd9f1-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd9f1-164">Response</span></span>
-<span data-ttu-id="cd9f1-165">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-165">If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6aeb2-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="6aeb2-164">Response</span></span>
+<span data-ttu-id="6aeb2-165">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-165">If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cd9f1-166">Пример</span><span class="sxs-lookup"><span data-stu-id="cd9f1-166">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6aeb2-166">Пример</span><span class="sxs-lookup"><span data-stu-id="6aeb2-166">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cd9f1-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd9f1-167">Request</span></span>
-<span data-ttu-id="cd9f1-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-168">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6aeb2-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="6aeb2-167">Request</span></span>
+<span data-ttu-id="6aeb2-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-168">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
@@ -89,8 +89,8 @@ Content-length: 375
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="cd9f1-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd9f1-169">Response</span></span>
-<span data-ttu-id="cd9f1-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cd9f1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6aeb2-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="6aeb2-169">Response</span></span>
+<span data-ttu-id="6aeb2-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6aeb2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -112,7 +112,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 
