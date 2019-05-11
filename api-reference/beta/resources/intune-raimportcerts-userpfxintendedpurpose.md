@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Усерпфксинтендедпурпосе
 description: Поддерживаемые значения для назначения сертификата пользователя PFX.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b8beb971c0ca8051dcab716526e9dfb12007573
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bd732953e1782767d6ab7557d76d3f84d071f56b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573069"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940087"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
 
@@ -23,10 +23,11 @@ ms.locfileid: "32573069"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неназначенных|нуль|Пока не задокументировано.|
-|Смиминкриптион|1 |Пока не задокументировано.|
-|Смимесигнинг|2 |Пока не задокументировано.|
-|виртуального|4 |Пока не задокументировано.|
+|Смиминкриптион|1,1|Пока не задокументировано.|
+|Смимесигнинг|2|Пока не задокументировано.|
+|виртуального|SP4|Пока не задокументировано.|
 |подключений|8 |Пока не задокументировано.|
+
 
 
 

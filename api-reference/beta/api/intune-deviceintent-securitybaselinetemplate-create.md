@@ -1,15 +1,15 @@
 ---
 title: Создание Секуритибаселинетемплате
 description: Создание нового объекта Секуритибаселинетемплате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d6f48f0fdb95f2d88f6af5f62975792453367d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d36c5da772bf5b0eeab711ffa156567d0a243db
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466135"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914459"
 ---
 # <a name="create-securitybaselinetemplate"></a>Создание Секуритибаселинетемплате
 
@@ -35,6 +35,7 @@ ms.locfileid: "32466135"
 -->
 ``` http
 POST /deviceManagement/templates
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -50,9 +51,12 @@ POST /deviceManagement/templates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор шаблона, унаследованный от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|displayName|String|Отображаемое имя шаблона, унаследованное от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|id|String|Идентификатор шаблона, унаследованный от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|displayName|Строка|Отображаемое имя шаблона, унаследованное от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |description|String|Описание шаблона, унаследованное от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|versionInfo|Строка|Сведения о версии шаблона, унаследованные от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|нерекомендуемый|Логический|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона. Наследуется от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|Интенткаунт|Int32|Количество целей, созданных на основе этого шаблона. Наследуется от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 
 
@@ -66,12 +70,15 @@ POST /deviceManagement/templates
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 145
+Content-length: 232
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
 
@@ -80,16 +87,18 @@ Content-length: 145
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 281
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
-
 
 
 

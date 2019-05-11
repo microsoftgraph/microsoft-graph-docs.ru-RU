@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементинтент
 description: Обновление свойств объекта Девицеманажементинтент.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6cf31f6b4e0ee8eeaf88b9421587e52d6b4b2f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d61a86001e85f58a9c0f8fa1cb719453029e4fe2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32508311"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916441"
 ---
 # <a name="update-devicemanagementintent"></a>Обновление Девицеманажементинтент
 
@@ -50,12 +50,12 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор намерения|
-|displayName|String|Имя пользователя для данного отображаемого имени|
+|id|String|Идентификатор намерения|
+|displayName|Строка|Имя пользователя для данного отображаемого имени|
 |description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
 
 
 
@@ -97,7 +97,6 @@ Content-Length: 317
   "templateId": "Template Id value"
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицеманажементексчанжеконнекторсинктипе
 description: Тип запрошенной синхронизации соединителя Exchange.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abb2a74c27df76a75971a2e2205698002bc3d8ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22622c993017539e97e9a8913267eb4fe0205c5d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566600"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940325"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторсинктипе
 
@@ -23,8 +23,7 @@ ms.locfileid: "32566600"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Профиль выполнения FullSync|нуль|Обнаружение устройства в Exchange.|
-|Профиль выполнения deltasync|1 |Обнаружение только устройства в Exchange, которое обновилось в окне "разностная синхронизация".|
-
+|Профиль выполнения deltasync|1,1|Обнаружение только устройства в Exchange, которое обновилось в окне "разностная синхронизация".|
 
 
 

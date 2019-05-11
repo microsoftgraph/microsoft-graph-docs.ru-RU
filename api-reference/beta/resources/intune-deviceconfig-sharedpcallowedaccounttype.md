@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Шаредпкалловедаккаунттипе
 description: Тип учетных записей, которым разрешено предоставлять общий доступ к компьютеру.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c450f09a89602493582db5585fe1e565716a4ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28f2fa25f77d99b0556d0233edf0c53c851fed33
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464577"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944707"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>тип перечисления Шаредпкалловедаккаунттипе
 
@@ -25,7 +25,6 @@ ms.locfileid: "32464577"
 |notConfigured|нуль|Не настроен. Значение по умолчанию.|
 |книге|1,1|Только учетные записи гостя.|
 |domain|2|Только учетные записи, присоединенные к домену.|
-
 
 
 

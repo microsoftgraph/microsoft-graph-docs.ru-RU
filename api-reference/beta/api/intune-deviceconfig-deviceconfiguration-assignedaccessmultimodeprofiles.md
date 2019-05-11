@@ -1,15 +1,15 @@
 ---
 title: Действие assignedAccessMultiModeProfiles
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f902d8bef523b62e0bbad763ca56cfc45ede15d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2ea366c70de271dd571db64166bd858113ed7100
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469826"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927561"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>Действие assignedAccessMultiModeProfiles
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -96,7 +96,6 @@ Content-length: 528
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

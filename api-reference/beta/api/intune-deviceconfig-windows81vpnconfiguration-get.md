@@ -1,15 +1,15 @@
 ---
 title: Получение windows81VpnConfiguration
 description: Чтение свойств и связей объекта windows81VpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ee8d44879f51a616e3c6aa89f36c8644941f138
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1de6574027aa44f503d7f8e421ec7a1e1254bba
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515220"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918145"
 ---
 # <a name="get-windows81vpnconfiguration"></a>Получение windows81VpnConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -107,7 +107,6 @@ Content-Length: 1272
   }
 }
 ```
-
 
 
 

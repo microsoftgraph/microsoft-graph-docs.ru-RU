@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Мдмаппконфигкэйтипе
 description: Типы ключей конфигурации приложений.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea0fa95f79e3378b785001c80682c3188b094427
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6a337c2b6dd9e2048965996905a914eeaf5d29e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554074"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950069"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>тип перечисления Мдмаппконфигкэйтипе
 
@@ -23,11 +23,10 @@ ms.locfileid: "32554074"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Стрингтипе|нуль|Пока не задокументировано.|
-|Интежертипе|1 |Пока не задокументировано.|
-|Реалтипе|2 |Пока не задокументировано.|
-|Булеантипе|3 |Пока не задокументировано.|
-|Токентипе|4 |Пока не задокументировано.|
-
+|Интежертипе|1,1|Пока не задокументировано.|
+|Реалтипе|2|Пока не задокументировано.|
+|Булеантипе|4|Пока не задокументировано.|
+|Токентипе|SP4|Пока не задокументировано.|
 
 
 

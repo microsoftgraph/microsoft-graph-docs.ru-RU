@@ -1,15 +1,15 @@
 ---
 title: Создание windows10EndpointProtectionConfiguration
 description: Создание объекта windows10EndpointProtectionConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8af7cd90cf42ce3a8e79ba5a67a45e2b166200de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74dc20bf9a160e68f81024ee1badeb95df9d717a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516639"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921774"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Создание windows10EndpointProtectionConfiguration
 
@@ -44,23 +44,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта windows10EndpointProtectionConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта windows10EndpointProtectionConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Дмагуарддевицеенумератионполици|[Дмагуарддевицеенумератионполицитипе](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|Эта политика предназначена для обеспечения дополнительной защиты от внешних устройств с поддержкой прямого доступа к памяти. Он обеспечивает более полный контроль над перечислением устройств с поддержкой внешних устройств с поддержкой прямого доступа к памяти, несовместимых с пересопоставлением и изоляцией памяти устройств и изолированной средой. Эта политика вступает в силу только тогда, когда система защиты DMA поддерживается и включена встроенным встроенным по. Защита от DMA ядра — это компонент платформы, который невозможно контролировать с помощью политики или конечным пользователем. Она должна поддерживаться системой на момент производства. Чтобы проверить, поддерживает ли система защиту DMA, проверьте поле Защита ядра DMA на странице Сводка объекта MSINFO32. exe. Возможные значения: `deviceDefault`, `blockAll`, `allowAll`.|
-|Фиреваллрулес|Коллекция [виндовсфиреваллруле](../resources/intune-deviceconfig-windowsfirewallrule.md)|НаСтраивает параметры правила брандмауэра. Эта коллекция может содержать не более 150 элементов.|
+|Фиреваллрулес|Коллекция [виндовсфиреваллруле](../resources/intune-deviceconfig-windowsfirewallrule.md)|Настраивает параметры правила брандмауэра. Эта коллекция может содержать не более 150 элементов.|
 |Усерригхтсакцесскредентиалманажераструстедкаллер|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя используется диспетчером учетных данных во время резервного копирования и восстановления. Сохраненные учетные данные пользователей могут быть скомпрометированы, если эта привилегия передана другим субъектам. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтсалловакцессфромнетворк|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут подключаться к компьютеру через сеть. Допустимое состояние — Supported.|
 |Усерригхтсблоккакцессфромнетворк|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, каким пользователям и группам запрещается подключаться к компьютеру через сеть. Блок состояния поддерживается.|
@@ -86,7 +86,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Усерригхтсмодифифирмваринвиронмент|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, кто может изменять значения в аппаратной среде. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтсмодифйобжектлабелс|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие учетные записи пользователей могут изменять метки целостности объектов, таких как файлы, разделы реестра или процессы, принадлежащие другим пользователям. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтспрофилесинглепроцесс|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут использовать средства мониторинга производительности для наблюдения за производительностью системных процессов. Поддерживаются только состояния NotConfigured и Allowed.|
-|Усерригхтсремотешутдовн|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, каким пользователям разрешено завершать работу компьютера из удаленного расположения в сети. НеПравильное использование этого права пользователя может привести к отказу в обслуживании. Поддерживаются только состояния NotConfigured и Allowed.|
+|Усерригхтсремотешутдовн|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, каким пользователям разрешено завершать работу компьютера из удаленного расположения в сети. Неправильное использование этого права пользователя может привести к отказу в обслуживании. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтсресторедата|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут обходить разрешения для файлов, каталогов, реестра и других постоянных объектов при восстановлении резервных копий файлов и каталогов, и определяет, какие пользователи могут устанавливать любой действительный субъект безопасности в качестве владельца объекта. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтстакеовнершип|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут становиться владельцами любого защищаемого объекта в системе, включая объекты Active Directory, файлы и папки, принтеры, разделы реестра, процессы и потоки. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтсрегистерпроцессассервице|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Этот параметр безопасности определяет, каким учетным записям служб запрещается регистрировать процесс в качестве службы. Примечание: этот параметр безопасности не применяется к системным, локальным или сетевым учетным записям служб. Поддерживается только блокирование состояния.|
@@ -98,9 +98,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Локалсекуритйоптионсблоккмикрософтаккаунтс|Логический|Запретить пользователям добавлять новые учетные записи Майкрософт на этот компьютер.|
 |Локалсекуритйоптионсблоккремотелогонвисбланкпассворд|Логический|Включите локальные учетные записи, не защищенные паролем, для входа в систему из расположений, отличных от физического устройства. Включено по умолчанию|
 |Локалсекуритйоптионсдисаблеадминистратораккаунт|Логический|Определяет, включена или отключена учетная запись локального администратора.|
-|Локалсекуритйоптионсадминистратораккаунтнаме|String|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) учетной записи "Administrator".|
+|Локалсекуритйоптионсадминистратораккаунтнаме|Строка|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) учетной записи "Administrator".|
 |Локалсекуритйоптионсдисаблегуестаккаунт|Логический|Определяет, включена или отключена Гостевая учетная запись.|
-|Локалсекуритйоптионсгуестаккаунтнаме|String|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) для учетной записи "гость".|
+|Локалсекуритйоптионсгуестаккаунтнаме|Строка|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) для учетной записи "гость".|
 |Локалсекуритйоптионсалловундокквисаусавингтологон|Логический|Запретите отстыковку портативного компьютера без необходимости входа в систему.|
 |Локалсекуритйоптионсблоккусерсинсталлингпринтердриверс|Логический|Ограничьте установку драйверов принтеров в рамках подключения к общему принтеру только для администраторов.|
 |Локалсекуритйоптионсблоккремотеоптикалдривеакцесс|Логический|Включение этого параметра позволяет интерактивно вошедший в систему пользователь получать доступ к устройству чтения компакт-дисков.|
@@ -110,11 +110,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Локалсекуритйоптионсдонотрекуиректрлалтдел|Логический|Требовать нажатия клавиш CTRL + ALT + DEL, прежде чем пользователь сможет войти в систему.|
 |Локалсекуритйоптионшиделастсигнединусер|Логический|Не отображать имя последнего пользователя, выполнившего вход на это устройство.|
 |Локалсекуритйоптионшидеусернамеатсигнин|Логический|Не отображать имя пользователя, выполняющего вход на это устройство, после ввода учетных данных и отображения рабочего стола на устройстве.|
-|Локалсекуритйоптионслогонмессажетитле|String|Задайте заголовок сообщения для пользователей, пытающихся войти в систему.|
-|Локалсекуритйоптионслогонмессажетекст|String|Задайте текст сообщения для пользователей, пытающихся войти в систему.|
+|Локалсекуритйоптионслогонмессажетитле|Строка|Задайте заголовок сообщения для пользователей, пытающихся войти в систему.|
+|Локалсекуритйоптионслогонмессажетекст|Строка|Задайте текст сообщения для пользователей, пытающихся войти в систему.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Логический|Блокировать запросы проверки подлинности PKU2U на этом устройстве для использования сетевых удостоверений.|
 |Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажерхелпербул|Логический|Помощник по ПОЛЬЗОВАТЕЛЬСКОМу ИНТЕРФЕЙСу Boolean для объекта Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|
-|Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|String|Измените строку языка определения дескрипторов безопасности по умолчанию, чтобы разрешить или запретить пользователям и группам совершать удаленные вызовы в SAM.|
+|Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|Строка|Измените строку языка определения дескрипторов безопасности по умолчанию, чтобы разрешить или запретить пользователям и группам совершать удаленные вызовы в SAM.|
 |Локалсекуритйоптионсминимумсессионсекуритифорнтлмсспбаседклиентс|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет клиенту требовать согласование 128-разрядного шифрования и/или сеанса защиты сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |Локалсекуритйоптионсминимумсессионсекуритифорнтлмсспбаседсерверс|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет серверу требовать согласование 128-разрядного шифрования и/или сеанса защиты сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Этот параметр безопасности определяет, какой протокол проверки подлинности "запрос/ответ" используется для входа в сеть. Возможные значения: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -155,11 +155,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Дефендерсекуритицентердисаблерансомвареуи|Логический|Используется для отключения отображения области защиты от пошантажистом. |
 |Дефендерсекуритицентердисаблесекуребутуи|Логический|Используется для отключения отображения области безопасной загрузки в разделе Безопасность устройства.|
 |Дефендерсекуритицентердисаблетраублешутингуи|Логический|Используется для отключения отображения устранения неполадок процесса безопасности в разделе Безопасность устройства.|
-|Дефендерсекуритицентердисаблевулнераблетпмфирмвареупдатеуи|Логический|Используется для отключения отображения обновления микроПрограммы ДОВЕРЕНного ПЛАТФОРМЕНного модуля при обнаружении уязвимого программного обеспечения.|
-|Дефендерсекуритицентерорганизатиондисплайнаме|String|Имя компании, которое отображается для пользователей.|
-|Дефендерсекуритицентерхелпемаил|String|Адрес электронной почты, который отображается для пользователей.|
-|Дефендерсекуритицентерхелпфоне|String|Номер телефона или идентификатор Skype, который отображается для пользователей.|
-|Дефендерсекуритицентерхелпурл|String|URL-адрес портала справки это отображается для пользователей.|
+|Дефендерсекуритицентердисаблевулнераблетпмфирмвареупдатеуи|Логический|Используется для отключения отображения обновления микропрограммы ДОВЕРЕНного ПЛАТФОРМЕНного модуля при обнаружении уязвимого программного обеспечения.|
+|Дефендерсекуритицентерорганизатиондисплайнаме|Строка|Имя компании, которое отображается для пользователей.|
+|Дефендерсекуритицентерхелпемаил|Строка|Адрес электронной почты, который отображается для пользователей.|
+|Дефендерсекуритицентерхелпфоне|Строка|Номер телефона или идентификатор Skype, который отображается для пользователей.|
+|Дефендерсекуритицентерхелпурл|Строка|URL-адрес портала справки это отображается для пользователей.|
 |Дефендерсекуритицентернотификатионсфромапп|[Дефендерсекуритицентернотификатионсфромапптипе](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления, отображаемые в отображаемых областях приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |Дефендерсекуритицентеритконтактдисплай|[Дефендерсекуритицентеритконтактдисплайтипе](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактной информации для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Логический|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
@@ -171,7 +171,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |firewallIPSecExemptionsAllowDHCP|Логический|Настраивает исключения IPSec для разрешения DHCP-трафика IPv4 и IPv6|
 |firewallCertificateRevocationListCheckMethod|[Фиреваллцертификатеревокатионлистчеккмесодтипе](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Укажите способ применения списка отзыва сертификатов. Возможные значения: `deviceDefault`, `none`, `attempt`, `require`.|
 |firewallMergeKeyingModuleSettings|Boolean|Если модуль ключей поддерживает не весь набор проверки подлинности, дайте ему указание игнорировать только неподдерживаемые пакеты, а не весь набор|
-|firewallPacketQueueingMethod|[Фиреваллпаккеткуеуеингмесодтипе](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|НаСтраивает способ применения очередей пакетов в сценарии туннельного шлюза. Возможные значения: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
+|firewallPacketQueueingMethod|[Фиреваллпаккеткуеуеингмесодтипе](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Настраивает способ применения очередей пакетов в сценарии туннельного шлюза. Возможные значения: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Настраивает параметры профиля брандмауэра для доменных сетей|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Настраивает параметры профиля брандмауэра для общедоступных сетей|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Настраивает параметры профиля брандмауэра для частных сетей|
@@ -208,7 +208,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderExploitProtectionXmlFileName|String|Имя файла, из которого получено свойство DefenderExploitProtectionXml.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Указывает, следует ли запретить пользователю переопределять настройки защиты от эксплойтов.|
 |appLockerApplicationControl|[Апплоккераппликатионконтролтипе](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Позволяет администратору выбирать разрешенные типы приложений для устройств. Возможные значения: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
-|Девицегуардлокалсистемаусоритикредентиалгуардсеттингс|[Девицегуардлокалсистемаусоритикредентиалгуардтипе](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Включите Guard в учетных данных, когда включен уровень безопасности платформы с безопасной заГрузкой и безопасностью на основе виртуализации. Возможные значения: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
+|Девицегуардлокалсистемаусоритикредентиалгуардсеттингс|[Девицегуардлокалсистемаусоритикредентиалгуардтипе](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Включите Guard в учетных данных, когда включен уровень безопасности платформы с безопасной загрузкой и безопасностью на основе виртуализации. Возможные значения: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |Девицегуарденаблевиртуализатионбаседсекурити|Логический|Включает безопасность на основе виртуализации (VBS).|
 |Девицегуарденаблесекуребутвисдма|Логический|Указывает, включен ли уровень безопасности платформы при следующей перезагрузке.|
 |Девицегуардлаунчсистемгуард|[Включение](../resources/intune-shared-enablement.md)|Позволяет ИТ – администратору настраивать запуск системы защиты системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
@@ -227,7 +227,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |applicationGuardAllowPrintToNetworkPrinters|Логический|Позволяет разрешить печать на сетевых принтерах из контейнера.|
 |Аппликатионгуардалловвиртуалгпу|Логический|Разрешить приложению Application Guard использовать виртуальный GPU|
 |Аппликатионгуардалловфилесавеонхост|Логический|Разрешить пользователям скачивать файлы из EDGE в контейнере Application Guard и сохранять их в файловой системе узла|
-|Битлоккералловстандардусеренкриптион|Логический|Позволяет администратору разрешить обычным пользователям включать енкрпитион во время приСоединения к Azure AD.|
+|Битлоккералловстандардусеренкриптион|Логический|Позволяет администратору разрешить обычным пользователям включать енкрпитион во время присоединения к Azure AD.|
 |bitLockerDisableWarningForOtherDiskEncryption|Логический|Позволяет администратору отключить предупреждение о другом методе шифрования диска на компьютерах пользователей.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker. Эта политика действительна только для мобильных устройств.|
 |bitLockerEncryptDevice|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker.|
@@ -1570,7 +1570,6 @@ Content-Length: 27813
   }
 }
 ```
-
 
 
 

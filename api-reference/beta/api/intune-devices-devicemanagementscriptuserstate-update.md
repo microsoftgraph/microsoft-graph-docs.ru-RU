@@ -1,15 +1,15 @@
 ---
 title: Обновление Девицеманажементскриптусерстате
 description: Обновление свойств объекта Девицеманажементскриптусерстате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6c2e2390d9ad6ba9ca650587d0eb5621d3c1011
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5609e4600d2ca7d9853bf05de6ac979e550a23ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520293"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909779"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Обновление Девицеманажементскриптусерстате
 
@@ -92,7 +92,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

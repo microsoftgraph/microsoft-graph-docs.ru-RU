@@ -1,15 +1,15 @@
 ---
 title: Получение Унсуппортеддевицеконфигуратион
 description: Чтение свойств и связей объекта Унсуппортеддевицеконфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f05552cc371c34a5310baad0f6ab43f9859643c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30f7d5bee6bf8ff919254702b59b6e817486ae5d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32517871"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921970"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Получение Унсуппортеддевицеконфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,7 +93,6 @@ Content-Length: 747
   }
 }
 ```
-
 
 
 

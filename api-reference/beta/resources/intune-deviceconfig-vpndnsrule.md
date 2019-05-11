@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Впнднсруле
 description: Определение правила DNS для VPN.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db3be739e6ee1e7c5ebe2a5bd33af648488df54f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bdb362bcbf672f491e22e2ee7d69a7e5c243e812
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561938"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944616"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса Впнднсруле
 
@@ -23,12 +23,12 @@ ms.locfileid: "32561938"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Расширением.|
-|серверами|Коллекция String|Серверами.|
-|Проксисерверури|String|URI прокси-сервера.|
-|автоТриггер|Boolean|Автоматически подключаться к ВИРТУАЛЬНОЙ частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
-|сохраняемого|Boolean|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
+|серверами|Коллекция строк|Серверами.|
+|Проксисерверури|Строка|URI прокси-сервера.|
+|автотриггер|Логический|Автоматически подключаться к ВИРТУАЛЬНОЙ частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
+|сохраняемого|Логический|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,7 +50,6 @@ ms.locfileid: "32561938"
   "persistent": true
 }
 ```
-
 
 
 

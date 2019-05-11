@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Виндовскиосксинглеувпапп
 description: Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3bb9c57de0e3e60d1c62adb62c3d1a274c6f853
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 276cbe4c231425540037dcc9a9e0afe977220bc0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574654"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944014"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>Тип ресурса Виндовскиосксинглеувпапп
 
@@ -20,14 +20,14 @@ ms.locfileid: "32574654"
 Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
 
 
-НаСледуется от [виндовскиоскаппконфигуратион](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
+Наследуется от [виндовскиоскаппконфигуратион](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Увпапп|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);|Это единственный идентификатор пользовательской модели приложения (AUMID), который будет доступен для запуска в режиме киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "32574654"
   }
 }
 ```
-
 
 
 

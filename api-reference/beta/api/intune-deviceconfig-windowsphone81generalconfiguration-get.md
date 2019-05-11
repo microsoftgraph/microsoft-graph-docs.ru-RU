@@ -1,15 +1,15 @@
 ---
 title: Get windowsPhone81GeneralConfiguration
 description: Чтение свойств и связей объекта windowsPhone81GeneralConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87bee64ee86bff2ec5e127455af47181e475eb54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49bfc832fa3b09d6b534a3b3380baff6c103d205
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512791"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917767"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Get windowsPhone81GeneralConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -122,7 +122,6 @@ Content-Length: 1840
   }
 }
 ```
-
 
 
 

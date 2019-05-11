@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Упдатеклассификатион
 description: Возможные значения для автоматической классификации обновлений.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1851ed4dda3d0af631632c1a2e8234794628cbe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548497"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944644"
 ---
 # <a name="updateclassification-enum-type"></a>тип перечисления Упдатеклассификатион
 
@@ -23,10 +23,9 @@ ms.locfileid: "32548497"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|Рекоммендедандимпортант|1 |Рекомендуемые и важные.|
-|внимание|2 |Внимание.|
-|Нет|3 |Нет.|
-
+|Рекоммендедандимпортант|1,1|Рекомендуемые и важные.|
+|внимание|2|Внимание.|
+|none|4|Нет.|
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Список Девицеманажементсеттингкатегориес
 description: Список свойств и связей объектов Девицеманажементсеттингкатегори.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93e401d287a47e00618897c1474149a42df38b4f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f1a1f2f3dfa964707672dd8338545e8949c8940
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467010"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915756"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>Список Девицеманажементсеттингкатегориес
 
@@ -74,7 +74,6 @@ Content-Length: 207
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Удаление Девицеманажементсеттингдефинитион
 description: Удаляет объект Девицеманажементсеттингдефинитион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9835f7731e7d8384d8a6f54d6ecfb20fadc16c58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 521288f5c29341336894ad6bfcb064712793177d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467262"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917052"
 ---
 # <a name="delete-devicemanagementsettingdefinition"></a>Удаление Девицеманажементсеттингдефинитион
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

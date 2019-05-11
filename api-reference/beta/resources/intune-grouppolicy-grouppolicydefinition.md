@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Граупполицидефинитион
 description: Сущность описывает все сведения об одной групповой политике.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9e411c2672650e3e603bfa0e64fde1c4db53607
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 17fef49d7d08f94f5ebafd02636d9536a05b87f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575774"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941172"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
 
@@ -29,10 +29,10 @@ ms.locfileid: "32575774"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Класстипе|[Граупполицидефинитионкласстипе](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которым можно применить политику. Возможные значения: `user`, `machine`.|
-|displayName|String|Имя локализованной политики.|
-|Експлаинтекст|String|Локализованное объяснение или текст справки, связанный с политикой. По умолчанию это значение пусто.|
-|Категорипас|String|Локализованный полный путь к категории для политики.|
-|Суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
+|displayName|Строка|Имя локализованной политики.|
+|Експлаинтекст|Строка|Локализованное объяснение или текст справки, связанный с политикой. По умолчанию это значение пусто.|
+|Категорипас|Строка|Локализованный полный путь к категории для политики.|
+|Суппортедон|Строка|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
 |Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -64,7 +64,6 @@ ms.locfileid: "32575774"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

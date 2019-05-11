@@ -1,15 +1,15 @@
 ---
 title: Создание Секуритибаселинедевицестате
 description: Создание нового объекта Секуритибаселинедевицестате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0b816fb81d85536dcb220b5cb7fc3483549ab85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 871c2b5ce94ef19580cc89bc23c6bc16541bb25a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466604"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914578"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Создание Секуритибаселинедевицестате
 
@@ -51,10 +51,10 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор объекта|
-|Манажеддевицеид|String|Идентификатор устройства Intune|
+|Манажеддевицеид|Строка|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|состояние|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике|
 
 
@@ -98,7 +98,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

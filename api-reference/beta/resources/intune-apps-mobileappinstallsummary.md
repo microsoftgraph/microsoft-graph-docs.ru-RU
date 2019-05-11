@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Мобилеаппинсталлсуммари
 description: Содержит свойства для сводки установки мобильного приложения.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a981477daefae92b6afcd3612a173d75b37e8637
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49ab6340614405d6c9474a0fd31b578ff4b42fef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551871"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949901"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса Мобилеаппинсталлсуммари
 
@@ -28,7 +28,7 @@ ms.locfileid: "32551871"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
@@ -40,7 +40,7 @@ ms.locfileid: "32551871"
 |notInstalledUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не установили это приложение.|
 |Пендингинсталлусеркаунт|Int32|Количество пользователей с 1 или больше устройств, которые были уведомлены об установке этого приложения и имеют 0 устройств с ошибками.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,7 +67,6 @@ ms.locfileid: "32551871"
   "pendingInstallUserCount": 1024
 }
 ```
-
 
 
 

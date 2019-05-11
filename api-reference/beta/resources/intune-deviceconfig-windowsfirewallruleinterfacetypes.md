@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсфиреваллрулеинтерфацетипес
 description: Флаги, представляющие типы интерфейсов правил брандмауэра.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7196f3d59e92d26cb832063ce053d61fac2cb828
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5452ecedf7d91c9e9241625ec76ec373b6fe7d0b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570210"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944070"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>тип перечисления Виндовсфиреваллрулеинтерфацетипес
 
@@ -23,10 +23,9 @@ ms.locfileid: "32570210"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Флаги не заданы.|
-|Служба|1 |Тип интерфейса удаленного доступа.|
-|инфракрас|2 |Тип интерфейса беспроводной сети.|
-|локальной сети|4 |Тип интерфейса ЛВС.|
-
+|Служба|1,1|Тип интерфейса удаленного доступа.|
+|инфракрас|2|Тип интерфейса беспроводной сети.|
+|локальной сети|SP4|Тип интерфейса ЛВС.|
 
 
 

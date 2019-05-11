@@ -1,15 +1,15 @@
 ---
 title: Перечисление объектов windows10TeamGeneralConfiguration
 description: Перечисление свойств и связей объектов windows10TeamGeneralConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dac038a30889c27bf879dc58a300726e70a768c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5f31167c0c50b1ed947a0d0cfe1a25ad1018c85
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515584"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918425"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Перечисление объектов windows10TeamGeneralConfiguration
 
@@ -44,10 +44,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -103,7 +103,6 @@ Content-Length: 1571
   ]
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Получение Секуритибаселинестатесуммари
 description: Чтение свойств и связей объекта Секуритибаселинестатесуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1539772b4a0a270dcae1d05af67133f257ff866b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55f69ba40e8c6167e48536fe3c7d096b407d0df5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466184"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914480"
 ---
 # <a name="get-securitybaselinestatesummary"></a>Получение Секуритибаселинестатесуммари
 
@@ -80,7 +80,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

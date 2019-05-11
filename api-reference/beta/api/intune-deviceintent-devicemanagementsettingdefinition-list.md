@@ -1,15 +1,15 @@
 ---
 title: Список Девицеманажементсеттингдефинитионс
 description: Список свойств и связей объектов Девицеманажементсеттингдефинитион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f186b735435a3c1732153d39212cf76c346cdce0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf3d8efdd306f9d497a12dbe032980e813eab9f7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466758"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917045"
 ---
 # <a name="list-devicemanagementsettingdefinitions"></a>Список Девицеманажементсеттингдефинитионс
 
@@ -100,7 +100,6 @@ Content-Length: 914
   ]
 }
 ```
-
 
 
 

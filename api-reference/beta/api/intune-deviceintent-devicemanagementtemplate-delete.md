@@ -1,15 +1,15 @@
 ---
 title: Удаление Девицеманажементтемплате
 description: Удаляет объект Девицеманажементтемплате.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4c36d8d1f0283c22fca2a690b2c19f4d67861da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e7ff1fb6603eeea6194d950e203b03253ee406bd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466562"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915862"
 ---
 # <a name="delete-devicemanagementtemplate"></a>Удаление Девицеманажементтемплате
 
@@ -35,6 +35,7 @@ ms.locfileid: "32466562"
 -->
 ``` http
 DELETE /deviceManagement/templates/{deviceManagementTemplateId}
+DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -62,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
