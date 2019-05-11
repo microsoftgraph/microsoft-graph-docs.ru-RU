@@ -1,15 +1,15 @@
 ---
 title: Update windows81GeneralConfiguration
 description: Обновление свойств объекта windows81GeneralConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ae714c6fc270866da8dc1e153db5765d810e9f7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6ed92aa4d6e16530104e07012b94948165b049c5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515465"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918250"
 ---
 # <a name="update-windows81generalconfiguration"></a>Update windows81GeneralConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md).
@@ -71,7 +71,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |browserBlockSendingDoNotTrackHeader|Логический|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
 |browserBlockSingleWordEntryOnIntranetSites|Логический|Указывает, следует ли блокировать переход на сайты интрасети при вводе одного слова.|
 |browserRequireSmartScreen|Логический|Указывает, обязательно ли использовать фильтр Smart Screen.|
-|browserEnterpriseModeSiteListLocation|String|Расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
+|browserEnterpriseModeSiteListLocation|Строка|Расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
 |browserInternetSecurityLevel|[Интернетситесекуритилевел](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|Уровень интернет-безопасности. Возможные значения: `userDefined`, `medium`, `mediumHigh`, `high`.|
 |browserIntranetSecurityLevel|[Ситесекуритилевел](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности интрасети. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|Расположение хранения отчетов.|
@@ -213,7 +213,6 @@ Content-Length: 2096
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
-
 
 
 

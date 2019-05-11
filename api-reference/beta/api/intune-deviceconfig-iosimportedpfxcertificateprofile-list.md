@@ -1,15 +1,15 @@
 ---
 title: Список Иосимпортедпфксцертификатепрофилес
 description: Список свойств и связей объектов Иосимпортедпфксцертификатепрофиле.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d4588b035f79e052c18c2b94e97471628f352ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 64a951cd2d43325802ac03a8818e4b5d4d0a18e7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467157"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923449"
 ---
 # <a name="list-iosimportedpfxcertificateprofiles"></a>Список Иосимпортедпфксцертификатепрофилес
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 556
   ]
 }
 ```
-
 
 
 

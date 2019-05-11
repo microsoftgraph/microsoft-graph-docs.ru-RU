@@ -1,15 +1,15 @@
 ---
 title: Создание Дефаултдевицекомплианцеполици
 description: Создание нового объекта Дефаултдевицекомплианцеполици.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 357f7d2fb5ade86aa482ec4e6bd3c15b917ec629
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 183893bb3d07833964cd3f310a6c9051ff95c05a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471625"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928038"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>Создание Дефаултдевицекомплианцеполици
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Дефаултдевицекомплианцеполици в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Дефаултдевицекомплианцеполици.
@@ -51,11 +51,11 @@ POST /deviceManagement/deviceCompliancePolicies
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 
 
@@ -103,7 +103,6 @@ Content-Length: 401
   "version": 7
 }
 ```
-
 
 
 

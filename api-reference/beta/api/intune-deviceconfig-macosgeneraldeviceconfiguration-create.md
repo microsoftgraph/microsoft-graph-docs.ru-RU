@@ -1,15 +1,15 @@
 ---
 title: Create macOSGeneralDeviceConfiguration
 description: Создание объекта macOSGeneralDeviceConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c2705b947e97597b38ef2d22441193cbafba01b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f6f019609885973c16152df9647407e12c41c760
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518634"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922461"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Create macOSGeneralDeviceConfiguration
 
@@ -44,20 +44,20 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта macOSGeneralDeviceConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны, которые необходимо указывать при создании объекта macOSGeneralDeviceConfiguration.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
@@ -71,34 +71,41 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
-|Кэйчаинблоккклаудсинк|Boolean|Указывает, заблокирована ли синхронизация ключей iCloud для iCloud (macOS 10,12 и более поздних версий).|
-|airPrintBlocked|Boolean|Указывает, заблокировано ли Аирпринт (macOS 10,12 и более поздних версий).|
-|airPrintForceTrustedTLS|Boolean|Указывает, требуются ли доверенные сертификаты для обмена данными при печати TLS (macOS 10,13 и более поздних версий).|
-|airPrintBlockiBeaconDiscovery|Boolean|Указывает, блокируется ли Ибеакон обнаружение принтеров Аирпринт. Это предотвращает ложные сигналы Аирпринт Bluetooth от фишинга для сетевого трафика (macOS 10,3 и более поздних версий).|
+|Кэйчаинблоккклаудсинк|Логический|Указывает, заблокирована ли синхронизация ключей iCloud для iCloud (macOS 10,12 и более поздних версий).|
+|airPrintBlocked|Логический|Указывает, заблокировано ли Аирпринт (macOS 10,12 и более поздних версий).|
+|airPrintForceTrustedTLS|Логический|Указывает, требуются ли доверенные сертификаты для обмена данными при печати TLS (macOS 10,13 и более поздних версий).|
+|airPrintBlockiBeaconDiscovery|Логический|Указывает, блокируется ли Ибеакон обнаружение принтеров Аирпринт. Это предотвращает ложные сигналы Аирпринт Bluetooth от фишинга для сетевого трафика (macOS 10,3 и более поздних версий).|
 |safariBlockAutofill|Логический|Указывает, следует ли запретить использовать автозаполнение в Safari.|
-|cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства.|
-|iTunesBlockMusicService|Boolean|Указывает, следует ли заблокировать музыкальную службу и вернуть приложение "Музыка" в классический режим.|
+|cameraBlocked|Логический|Указывает, следует ли запретить доступ к камере устройства.|
+|iTunesBlockMusicService|Логический|Указывает, следует ли заблокировать музыкальную службу и вернуть приложение "Музыка" в классический режим.|
 |spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить получение результатов из поиска в Интернете.|
-|keyboardBlockDictation|Boolean|Указывает, следует ли запретить пользователю использовать диктовку.|
-|definitionLookupBlocked|Boolean|Указывает, следует ли заблокировать Поиск определений.|
-|Апплеватчблоккаутаунлокк|Boolean|Указывает, следует ли запретить пользователям разблокирование своего Mac-адреса с контрольной записью Apple.|
-|Итунесблоккфилешаринг|Boolean|Указывает, следует ли запретить передачу файлов с помощью iTunes.|
-|iCloudBlockDocumentSync|Boolean|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|Иклаудблоккмаил|Boolean|Указывает, следует ли запретить синхронизацию почты для iCloud.|
-|Иклаудблоккаддрессбук|Boolean|Указывает, следует ли запретить синхронизацию контактов с iCloud.|
-|Иклаудблокккалендар|Boolean|Указывает, следует ли запретить синхронизацию календарей в iCloud.|
-|Иклаудблоккреминдерс|Boolean|Указывает, следует ли запретить синхронизацию напоминаний для iCloud.|
-|Иклаудблоккбукмаркс|Boolean|Указывает, следует ли блокировать синхронизацию закладок в iCloud.|
-|Иклаудблоккнотес|Boolean|Указывает, следует ли запретить синхронизацию заметок в iCloud.|
-|airDropBlocked|Boolean|Указывает, следует ли запретить AirDrop.|
-|Пассвордблоккмодификатион|Boolean|Указывает, следует ли запретить изменение секретного кода.|
+|keyboardBlockDictation|Логический|Указывает, следует ли запретить пользователю использовать диктовку.|
+|definitionLookupBlocked|Логический|Указывает, следует ли заблокировать Поиск определений.|
+|Апплеватчблоккаутаунлокк|Логический|Указывает, следует ли запретить пользователям разблокирование своего Mac-адреса с контрольной записью Apple.|
+|Итунесблоккфилешаринг|Логический|Указывает, следует ли запретить передачу файлов с помощью iTunes.|
+|iCloudBlockDocumentSync|Логический|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
+|Иклаудблоккмаил|Логический|Указывает, следует ли запретить синхронизацию почты для iCloud.|
+|Иклаудблоккаддрессбук|Логический|Указывает, следует ли запретить синхронизацию контактов с iCloud.|
+|Иклаудблокккалендар|Логический|Указывает, следует ли запретить синхронизацию календарей в iCloud.|
+|Иклаудблоккреминдерс|Логический|Указывает, следует ли запретить синхронизацию напоминаний для iCloud.|
+|Иклаудблоккбукмаркс|Логический|Указывает, следует ли блокировать синхронизацию закладок в iCloud.|
+|Иклаудблоккнотес|Логический|Указывает, следует ли запретить синхронизацию заметок в iCloud.|
+|airDropBlocked|Логический|Указывает, следует ли запретить AirDrop.|
+|Пассвордблоккмодификатион|Логический|Указывает, следует ли запретить изменение секретного кода.|
 |passwordBlockFingerprintUnlock|Логический|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|Пассвордблоккаутофилл|Boolean|Указывает, следует ли заблокировать функцию автоЗаполнения паролей.|
-|Пассвордблоккпроксимитирекуестс|Boolean|Указывает, следует ли запретить запрашивать пароли с ближайших устройств.|
-|Пассвордблоккаирдропшаринг|Boolean|Указывает, следует ли заблокировать общий доступ к паролям с помощью функции паролей AirDrop.|
+|Пассвордблоккаутофилл|Логический|Указывает, следует ли заблокировать функцию автозаполнения паролей.|
+|Пассвордблоккпроксимитирекуестс|Логический|Указывает, следует ли запретить запрашивать пароли с ближайших устройств.|
+|Пассвордблоккаирдропшаринг|Логический|Указывает, следует ли заблокировать общий доступ к паролям с помощью функции паролей AirDrop.|
 |Софтвареупдатесенфорцедделайиндайс|Int32|Задает число дней, в течение которых обновление программного обеспечения будет делед для защищенного устройства. Допустимые значения: от 0 до 90.|
-|Софтвареупдатесфорцеделайед|Boolean|Указывает, следует ли откладывать видимость обновлений программного обеспечения, когда устройство находится в защищенном режиме.|
-|Контенткачингблоккед|Boolean|Указывает, следует ли запретить кэширование контента.|
+|Софтвареупдатесфорцеделайед|Логический|Указывает, следует ли откладывать видимость обновлений программного обеспечения, когда устройство находится в защищенном режиме.|
+|Контенткачингблоккед|Логический|Указывает, следует ли запретить кэширование контента.|
+|iCloudBlockPhotoLibrary|Логический|Указывает, следует ли заблокировать медиатеку iCloud.|
+|screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
+|classroomAppBlockRemoteScreenObservation|Логический|Указывает, следует ли запретить удаленное наблюдение за экраном в приложении "аудитория". Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|classroomAppForceUnpromptedScreenObservation|Логический|Указывает, следует ли автоматически предоставлять разрешение преподавателю управляемого курса в приложении аудитории для просмотра экрана учащегося без выдачи запросов. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|Классрумфорцеаутоматикаллижоинклассес|Логический|Указывает, следует ли автоматически предоставлять разрешение для запросов преподавателя без запроса учащегося. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|Классрумфорцерекуестпермиссионтолеавеклассес|Логический|Указывает, должен ли студент, зарегистрированный в неуправляемом курсе, запрашивать разрешение у преподавателя при попытке выйти из курса. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|Классрумфорцеунпромптедаппанддевицелокк|Логический|Указывает, следует ли запретить преподавателю блокировать приложения или устройство, не запрашивая учащихся. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
 
 
 
@@ -112,7 +119,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1988
+Content-length: 2329
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -172,7 +179,14 @@ Content-length: 1988
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
 
@@ -181,7 +195,7 @@ Content-length: 1988
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2160
+Content-Length: 2501
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -244,10 +258,16 @@ Content-Length: 2160
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
-
 
 
 

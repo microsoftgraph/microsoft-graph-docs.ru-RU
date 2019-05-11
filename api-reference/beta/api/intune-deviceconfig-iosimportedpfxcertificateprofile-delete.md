@@ -1,15 +1,15 @@
 ---
 title: Удаление Иосимпортедпфксцертификатепрофиле
 description: Удаляет объект Иосимпортедпфксцертификатепрофиле.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e49b791a1b4b6ccfea7df5ec47ff020fdef421a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 686b1490ed622d4378ca3e2bd509990d3db5baae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467318"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923435"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>Удаление Иосимпортедпфксцертификатепрофиле
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

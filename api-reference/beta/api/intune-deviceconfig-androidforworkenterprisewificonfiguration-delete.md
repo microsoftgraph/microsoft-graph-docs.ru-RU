@@ -1,15 +1,15 @@
 ---
 title: Удаление androidForWorkEnterpriseWiFiConfiguration
 description: Удаляет объект androidForWorkEnterpriseWiFiConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 118dfeb515824f70dfb4fdc3323e891c7f3a6ba5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b68dcbe7c0f8060c2e3b742f26ccca622a694f70
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32479269"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933748"
 ---
 # <a name="delete-androidforworkenterprisewificonfiguration"></a>Удаление androidForWorkEnterpriseWiFiConfiguration
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

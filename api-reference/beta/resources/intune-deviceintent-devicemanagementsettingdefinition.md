@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Девицеманажементсеттингдефинитион
 description: Сущность, представляющая определение определения для заданной настройки
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2e06522680085502e3007dd4863bd703c4bed44
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b4147d5ed892eebce175d79925b7329525585a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550548"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943573"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементсеттингдефинитион
 
@@ -31,17 +31,17 @@ ms.locfileid: "32550548"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор определения параметра|
+|id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|Отображаемое имя параметра|
+|displayName|Строка|Отображаемое имя параметра|
 |Истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
-|Документатионурл|String|URL-адрес для установки документации|
+|Документатионурл|Строка|URL-адрес для установки документации|
 |keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -82,7 +82,6 @@ ms.locfileid: "32550548"
   ]
 }
 ```
-
 
 
 

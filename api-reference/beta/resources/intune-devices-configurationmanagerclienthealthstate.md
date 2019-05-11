@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Конфигуратионманажерклиенсеалсстате
 description: Состояние работоспособности клиента Configuration Manager
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2a04b8cf7520425527e118fcc9db00461c4edda
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e0ed47d34f8f3d749ccab7d2788528c9b12679f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563807"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943013"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>Тип ресурса Конфигуратионманажерклиенсеалсстате
 
@@ -26,7 +26,7 @@ ms.locfileid: "32563807"
 |errorCode|Int32|Код ошибки для состояния сбоя.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации с точкой управления Configuration Manager.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,7 +44,6 @@ ms.locfileid: "32563807"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

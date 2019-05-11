@@ -1,15 +1,15 @@
 ---
 title: Создание объекта deviceConfigurationAssignment
 description: Создание объекта deviceConfigurationAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 035828ad5266c745e33cbd57f097d925e6ea4c5c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 89f93804273dd6c4820c046b9a3131831aca4a68
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469595"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927495"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Создание объекта deviceConfigurationAssignment
 
@@ -51,14 +51,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceConfigurationAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceConfigurationAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
 
@@ -98,7 +98,6 @@ Content-Length: 218
   }
 }
 ```
-
 
 
 

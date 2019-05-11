@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта sharedPCConfiguration
 description: Обновляет свойства объекта sharedPCConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ecc5c3cbb7d63195fc832177a391231a051d77fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b001e650e511a72c418704f7aac420fe25894ae9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518046"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921858"
 ---
 # <a name="update-sharedpcconfiguration"></a>Обновление объекта sharedPCConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md).
@@ -74,7 +74,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |disableSignInOnResume|Boolean|Отключает обязательный вход в систему при выходе устройства из спящего режима.|
 |enabled|Boolean|Включает режим общего компьютера и применяет политики совместного использования ПК.|
 |idleTimeBeforeSleepInSeconds|Int32|Определяет длительность (в секундах) пребывания устройства в режиме бездействия перед переходом в спящий режим. Если задать значение 0, переход в спящий режим отключается.|
-|kioskAppDisplayName|String|Задает текст для учетной записи, который отображается на экране входа в систему и используется для запуска приложения, определяемого с помощью свойства SetKioskAppUserModelId. Применяется, только если задано свойство KioskAppUserModelId.|
+|kioskAppDisplayName|Строка|Задает текст для учетной записи, который отображается на экране входа в систему и используется для запуска приложения, определяемого с помощью свойства SetKioskAppUserModelId. Применяется, только если задано свойство KioskAppUserModelId.|
 |kioskAppUserModelId|String|Определяет идентификатор пользовательской модели для приложения, используемого с ограниченным доступом.|
 |maintenanceStartTime|TimeOfDay|Указывает ежедневное время начала обслуживания.|
 |Фастфирстсигнин|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли автоматически подключать новые учетные записи Azure AD, не являющиеся администраторами, к предварительно настроенным локальным учетным записям кандидатов. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
@@ -174,7 +174,6 @@ Content-Length: 1319
   "fastFirstSignIn": "enabled"
 }
 ```
-
 
 
 

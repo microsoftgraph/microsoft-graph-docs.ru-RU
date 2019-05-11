@@ -1,15 +1,15 @@
 ---
 title: Обновление windowsPhone81VpnConfiguration
 description: Обновление свойств объекта windowsPhone81VpnConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e5f8726dc820ec352326f61e73aa77e725ccefa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6266c3ca8e1a42153565de0108ed99b679e17e6b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512623"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917557"
 ---
 # <a name="update-windowsphone81vpnconfiguration"></a>Обновление windowsPhone81VpnConfiguration
 
@@ -52,25 +52,25 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Коннектионнаме|String|Имя подключения, отображаемое для пользователя. НаСледуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|серверами|Коллекция [vpnserver.](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получать доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов. НаСледуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|customXml|Binary|Настраиваемые XML-команды, которые настраивают VPN-подключение. (Массив байтов в кодировке UTF8) НаСледуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
-|applyOnlyToWindows81|Boolean|Указывает, применяется ли эта политика только к Windows 8.1. Это свойство доступно только для чтения. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|connectionType|[Виндовсвпнконнектионтипе](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|Тип подключения. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md). Возможные значения: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
-|Логинграупордомаин|String|Группа входа или домен, когда для параметра Тип подключения установлено мобильное подключение Dell Сониквалл. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|Енаблесплиттуннелинг|Логический|Включение Расщепленного туннелирования для VPN. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|проксисервер|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|Прокси-сервер. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|Коннектионнаме|Строка|Имя подключения, отображаемое для пользователя. Наследуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|серверами|Коллекция [vpnserver.](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получать доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов. Наследуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|customXml|Binary|Настраиваемые XML-команды, которые настраивают VPN-подключение. (Массив байтов в кодировке UTF8) Наследуется от [виндовсвпнконфигуратион](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|applyOnlyToWindows81|Boolean|Указывает, применяется ли эта политика только к Windows 8.1. Это свойство доступно только для чтения. Наследуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|connectionType|[Виндовсвпнконнектионтипе](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|Тип подключения. Наследуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md). Возможные значения: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
+|Логинграупордомаин|Строка|Группа входа или домен, когда для параметра Тип подключения установлено мобильное подключение Dell Сониквалл. Наследуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|Енаблесплиттуннелинг|Логический|Включение Расщепленного туннелирования для VPN. Наследуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|проксисервер|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|Прокси-сервер. Наследуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |Бипассвпнонкомпанивифи|Логический|Обход VPN в сети Wi-Fi компании.|
 |Бипассвпнонхомевифи|Логический|Обход VPN для домашнего Wi-Fi.|
-|Параметр authenticationmethod|[Впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки поДлинности. Возможные значения: `certificate`, `usernameAndPassword`.|
+|Параметр authenticationmethod|[Впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |Ремемберусеркредентиалс|Логический|Запомнить учетные данные пользователя.|
 |Днссуффикссеарчлист|Коллекция строк|Список поиска DNS-суффиксов.|
 
@@ -179,7 +179,6 @@ Content-Length: 1415
   ]
 }
 ```
-
 
 
 

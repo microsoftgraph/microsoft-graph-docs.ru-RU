@@ -1,15 +1,15 @@
 ---
 title: Create windowsUpdateForBusinessConfiguration
 description: Создание объекта windowsUpdateForBusinessConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7053cda0381212049bfc57be8910d84d366cd8c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8f874b495e177417842b01806d19fbaa239b5418
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511755"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917395"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -51,13 +51,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deliveryOptimizationMode|[Виндовсделиверйоптимизатионмоде](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Режим оптимизации доставки. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Функции предварительного выпуска. Возможные значения: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
@@ -82,8 +82,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Куалитюпдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений качества|
 |Феатуреупдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений компонентов|
 |Енгажедрестартдеадлинеиндайс|Int32|Крайний срок в днях перед автоматическим планированием и выполнением ожидающего перезапуска за пределами периода активности, с допустимым диапазоном от 2 до 30 дней.|
-|Енгажедрестартснузесчедулеиндайс|Int32|Количество дней, в течение которых пользователь может отложить уведомления о переЗапуске с допустимым диапазоном от 1 до 3 дней|
-|Енгажедрестарттранситионсчедулеиндайс|Int32|Количество дней перед переходом с автоматических перезапусков, запланированных за пределами активного времени до запланированного переЗапуска, для которого пользователь должен запланировать, с допустимым диапазоном от 0 до 30 дней|
+|Енгажедрестартснузесчедулеиндайс|Int32|Количество дней, в течение которых пользователь может отложить уведомления о перезапуске с допустимым диапазоном от 1 до 3 дней|
+|Енгажедрестарттранситионсчедулеиндайс|Int32|Количество дней перед переходом с автоматических перезапусков, запланированных за пределами активного времени до запланированного перезапуска, для которого пользователь должен запланировать, с допустимым диапазоном от 0 до 30 дней|
 |Ауторестартнотификатиондисмиссал|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Укажите метод закрытия уведомления об обязательном автоматическом перезапуске. Возможные значения: `notConfigured`, `automatic`, `user`.|
 |Счедулерестартварнингинхаурс|Int32|Укажите период уведомлений с напоминанием об автоматическом перезапуске. Поддерживаемые значения: 2, 4, 8, 12 или 24 (часы).|
 |Счедулеимминентрестартварнингинминутес|Int32|Укажите период, в котором автоматически перезапускаются уведомления о приближениях. Поддерживаемые значения: 15, 30 или 60 (минут).|
@@ -208,7 +208,6 @@ Content-Length: 2075
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
-
 
 
 

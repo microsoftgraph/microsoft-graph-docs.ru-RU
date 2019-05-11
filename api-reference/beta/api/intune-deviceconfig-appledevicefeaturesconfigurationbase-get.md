@@ -1,15 +1,15 @@
 ---
 title: Get appleDeviceFeaturesConfigurationBase
 description: Чтение свойств и связей объекта appleDeviceFeaturesConfigurationBase.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b29edb6421c7422d6ee0a204018a34dd21c2029
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 083274a773cb93d0249e1d2c8d19ed4c01f40a3b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471534"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928171"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Get appleDeviceFeaturesConfigurationBase
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -94,7 +94,6 @@ Content-Length: 735
   }
 }
 ```
-
 
 
 

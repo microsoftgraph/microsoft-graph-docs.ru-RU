@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта deviceConfigurationUserOverview
 description: Обновление свойств объекта deviceConfigurationUserOverview.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b736598a6624545fe315a9dcb601b08359ddf658
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40013de2d8d3d29397c8ece4bb8cb86ea3ad31ee
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32468776"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927519"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Обновление объекта deviceConfigurationUserOverview
 
@@ -51,14 +51,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
@@ -115,7 +115,6 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
-
 
 
 

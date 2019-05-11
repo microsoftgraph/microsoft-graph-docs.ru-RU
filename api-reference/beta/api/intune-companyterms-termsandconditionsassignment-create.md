@@ -1,15 +1,15 @@
 ---
 title: Создание объекта termsAndConditionsAssignment
 description: Создание объекта termsAndConditionsAssignment.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af88847ac2ce47b09f5a07304f02a1d1fcce2598
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18cb89e02a22933fcb284c64169520bce77eacce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32482510"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933811"
 ---
 # <a name="create-termsandconditionsassignment"></a>Создание объекта termsAndConditionsAssignment
 
@@ -43,14 +43,14 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта termsAndConditionsAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта termsAndConditionsAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
+|id|Строка|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
@@ -90,7 +90,6 @@ Content-Length: 217
   }
 }
 ```
-
 
 
 

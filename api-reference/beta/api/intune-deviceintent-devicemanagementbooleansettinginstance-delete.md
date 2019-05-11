@@ -1,15 +1,15 @@
 ---
 title: Удаление Девицеманажементбулеансеттингинстанце
 description: Удаляет объект Девицеманажементбулеансеттингинстанце.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db78b939d779fdb3330ee3009eaf071de0a1c8ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f6e3871fad29227d08a17063ff97351014b37b3c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509879"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916786"
 ---
 # <a name="delete-devicemanagementbooleansettinginstance"></a>Удаление Девицеманажементбулеансеттингинстанце
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Функция getMobileAppCount
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e91686226557e90f60eac3c2aba730627e52dfd0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: be043b447e3b97bc248d62f25cdce19c906e81fd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490334"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935366"
 ---
 # <a name="getmobileappcount-function"></a>Функция getMobileAppCount
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -75,7 +75,6 @@ Content-Length: 18
   "value": 1
 }
 ```
-
 
 
 

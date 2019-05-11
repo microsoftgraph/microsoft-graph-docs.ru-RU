@@ -1,15 +1,15 @@
 ---
 title: Создание Девицеконфигуратионконфликтсуммари
 description: Создание нового объекта Девицеконфигуратионконфликтсуммари.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 801d403745bea8fa3e4b962a0892ced2129bd92f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8bcc892e895babe22da90e1e9867cce96a195c9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469553"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927368"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Создание Девицеконфигуратионконфликтсуммари
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеконфигуратионконфликтсуммари в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеконфигуратионконфликтсуммари.
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
-|id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
+|id|Строка|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
 |Контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
 |Девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
@@ -108,7 +108,6 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Удаление Девицеманажементабстракткомплекссеттингдефинитион
 description: Удаляет объект Девицеманажементабстракткомплекссеттингдефинитион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8a1dd46708956a897abd97a21854c24ea6f19a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d950900b564f9085782981b851740d17f8a5e590
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32510922"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917017"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettingdefinition"></a>Удаление Девицеманажементабстракткомплекссеттингдефинитион
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Получение Андроидфорворквификонфигуратион
 description: Чтение свойств и связей объекта Андроидфорворквификонфигуратион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76ce6b40de38101478cbf7ef79879e0928ef9b94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63f9758b744dbcb7448e9295ff41e2787c9baf87
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32478030"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33929611"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>Получение Андроидфорворквификонфигуратион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -90,7 +90,6 @@ Content-Length: 665
   }
 }
 ```
-
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Обновление Макосвппаппассигнедлиценсе
 description: Обновление свойств объекта Макосвппаппассигнедлиценсе.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 816de40dd2efadb47fad8ed93415499f1fb5342a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 361e64df09ad5c17f065d5335dc35a83a3643904
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495465"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935806"
 ---
 # <a name="update-macosvppappassignedlicense"></a>Обновление Макосвппаппассигнедлиценсе
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md).
@@ -51,10 +51,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Усеремаиладдресс|String|Адрес электронной почты пользователя.|
+|Усеремаиладдресс|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

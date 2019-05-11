@@ -1,15 +1,15 @@
 ---
 title: Действие assign
 description: Пока не задокументировано.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6865ef77b442f8e22aa3d6fa50d37c87fc207c3a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a180c1f6670c51f277e672a5480aa129312a1e36
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483245"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934245"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -86,7 +86,6 @@ Content-length: 318
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

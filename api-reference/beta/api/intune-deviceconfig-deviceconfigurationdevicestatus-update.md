@@ -1,15 +1,15 @@
 ---
 title: Обновление объекта deviceConfigurationDeviceStatus
 description: Обновление свойств объекта deviceConfigurationDeviceStatus.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 327ed74d6a3a2fec9a2e4b76b51b2f418e68c198
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad05478fcbf97b1adce17bd5b385c5afa9a3b43a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469476"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927337"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>Обновление объекта deviceConfigurationDeviceStatus
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md).
@@ -59,8 +59,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String|Имя пользователя в отчете|
+|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
+|userName|Строка|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -115,7 +115,6 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

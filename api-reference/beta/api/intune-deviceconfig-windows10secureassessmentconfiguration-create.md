@@ -1,15 +1,15 @@
 ---
 title: Create windows10SecureAssessmentConfiguration
 description: Создание объекта windows10SecureAssessmentConfiguration.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6864f7034d1009e5ddb1707d3f84dc463b15080b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 42eef7c428df760efb9caff9c679104b08d4e808
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515822"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918488"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Create windows10SecureAssessmentConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта windows10SecureAssessmentConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, которые необходимо указать при создании объекта windows10SecureAssessmentConfiguration.
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|launchUri|String|URL-адрес страницы оценки, которая автоматически загружается при запуске браузера для надежного тестирования. Это должен быть допустимый URL-адрес (http\[s\]://msdn.microsoft.com/).|
+|launchUri|Строка|URL-адрес страницы оценки, которая автоматически загружается при запуске браузера для надежного тестирования. Это должен быть допустимый URL-адрес (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|Учетная запись, с использованием которой настраивается устройство с Windows для прохождения теста. В качестве пользователя можно указать учетную запись домена (domen\polzovatel), учетную запись AAD (imya_polzovatelya@klient.com) или локальную учетную запись (имя пользователя).|
 |Конфигуратионаккаунттипе|[Секуреассессментаккаунттипе](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|Тип учетной записи, используемой в Конфигуратионаккаунт. Возможные значения: `azureADAccount`, `domainAccount`, `localAccount`.|
 |allowPrinting|Логический|Определяет, разрешается ли приложению печатать во время выполнения теста.|
@@ -125,7 +125,6 @@ Content-Length: 671
   "allowTextSuggestion": true
 }
 ```
-
 
 
 

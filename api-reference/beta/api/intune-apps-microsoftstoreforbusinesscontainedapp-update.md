@@ -1,15 +1,15 @@
 ---
 title: Обновление Микрософтсторефорбусинессконтаинедапп
 description: Обновление свойств объекта Микрософтсторефорбусинессконтаинедапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20526c67ba34a2e508b625f8bc2fafeb9ba0b2eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e0a6aac641687e343cd0c3e41fdbfd3b40acd6a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32490957"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935393"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Обновление Микрософтсторефорбусинессконтаинедапп
 
@@ -45,15 +45,15 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Микрософтсторефорбусинессконтаинедапп](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [микрософтсторефорбусинессконтаинедапп](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. НаСледуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
-|Модели|String|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
+|id|Строка|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
+|Модели|Строка|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
 
 
 
@@ -88,7 +88,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

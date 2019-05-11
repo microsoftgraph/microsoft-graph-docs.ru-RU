@@ -1,15 +1,15 @@
 ---
 title: Список Макосвппаппс
 description: Список свойств и связей объектов Макосвппапп.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8c3e92200c86f661e8d6511e16166a83b0892f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a939f5e46d792ae1a1a86d46eb9e7965c6fbf271
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495381"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935841"
 ---
 # <a name="list-macosvppapps"></a>Список Макосвппаппс
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -126,7 +126,6 @@ Content-Length: 2294
   ]
 }
 ```
-
 
 
 

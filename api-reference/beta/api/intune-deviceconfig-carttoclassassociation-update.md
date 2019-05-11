@@ -1,15 +1,15 @@
 ---
 title: Обновление КарттоклассассоЦиатион
 description: Обновление свойств объекта КарттоклассассоЦиатион.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4443a2924b60333d34830fee77f802df7e8aead3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471590"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928010"
 ---
 # <a name="update-carttoclassassociation"></a>Обновление КарттоклассассоЦиатион
 
@@ -43,18 +43,18 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [КарттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия КарттоклассассоЦиатион.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
 |Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
 |Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
@@ -110,7 +110,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

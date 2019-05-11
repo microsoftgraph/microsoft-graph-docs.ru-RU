@@ -1,15 +1,15 @@
 ---
 title: Обновление symantecCodeSigningCertificate
 description: Обновление свойств объекта symantecCodeSigningCertificate.
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: adc2f49931b4a8d5938874d8f23bce6329eaf174
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488780"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934952"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).
@@ -56,10 +56,10 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |password|Строка|Пароль, необходимый для PFX-файла.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|String|Имя поставщика сертификата.|
-|имени|String|Значение издателя для сертификата.|
+|Иссуернаме|Строка|Имя поставщика сертификата.|
+|имени|Строка|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|Уплоаддатетиме|DateTimeOffset|Тип сертификата соПроектировании в качестве сертификата Symantec.|
+|Уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
 
 
 
@@ -110,7 +110,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 
