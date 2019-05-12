@@ -4,12 +4,12 @@ description: Чтобы вызвать Microsoft Graph, приложение д�
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a50a800ff88bcdc15ce0d8bab9a7992d95592b49
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2578d7d4533577e88993e5c83884b393c78dc2af
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629861"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951230"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Основные сведения о проверке подлинности и авторизации для Microsoft Graph
 
