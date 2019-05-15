@@ -3102,6 +3102,8 @@ items:
                 href: api/driveitem-list-versions.md
               - name: Элемент предварительного просмотра
                 href: api/driveitem-preview.md
+              - name: Получение аналитических данных об элементе
+                href: api/itemanalytics-get.md
           - name: Разрешения
             href: resources/permission.md
             items:
@@ -3852,6 +3854,8 @@ items:
                 href: api/list-list.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
+              - name: Получение аналитических данных об элементе
+                href: api/itemanalytics-get.md
           - name: Списки
             href: resources/list.md
             items:
@@ -3874,6 +3878,8 @@ items:
                 href: api/listitem-delete.md
               - name: Список версий
                 href: api/listitem-list-versions.md
+              - name: Получение аналитических данных об элементе
+                href: api/itemanalytics-get.md
       - name: 'Социальная аналитика: люди'
         items:
           - name: Обзор

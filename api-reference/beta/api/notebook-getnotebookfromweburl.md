@@ -4,27 +4,27 @@ description: Получение свойств и связей объекта з
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8f69fb9e2f97de7f307868b6be1a22e2e72172de
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c726f3ace6663676317ac0a9578b68881d33ee65
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597851"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961278"
 ---
-# <a name="notebook-getnotebookfromweburl"></a><span data-ttu-id="a0a42-103">Записная книжка: Жетнотебукфромвебурл</span><span class="sxs-lookup"><span data-stu-id="a0a42-103">notebook: getNotebookFromWebUrl</span></span>
+# <a name="notebook-getnotebookfromweburl"></a><span data-ttu-id="64935-103">Записная книжка: Жетнотебукфромвебурл</span><span class="sxs-lookup"><span data-stu-id="64935-103">notebook: getNotebookFromWebUrl</span></span>
 
-<span data-ttu-id="a0a42-104">Получение свойств и связей объекта записной [книжки](../resources/notebook.md) с помощью URL-пути.</span><span class="sxs-lookup"><span data-stu-id="a0a42-104">Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.</span></span>
+<span data-ttu-id="64935-104">Получение свойств и связей объекта записной [книжки](../resources/notebook.md) с помощью URL-пути.</span><span class="sxs-lookup"><span data-stu-id="64935-104">Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.</span></span>
 
-<span data-ttu-id="a0a42-105">Местоположение может представлять собой записные книжки для пользователей в Office 365, групповые записные книжки или записные книжки группы, размещаемые в SharePoint, в Office 365.</span><span class="sxs-lookup"><span data-stu-id="a0a42-105">The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a0a42-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a0a42-106">Permissions</span></span>
-<span data-ttu-id="a0a42-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0a42-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="64935-105">Местоположение может представлять собой записные книжки для пользователей в Office 365, групповые записные книжки или записные книжки группы, размещаемые в SharePoint, в Office 365.</span><span class="sxs-lookup"><span data-stu-id="64935-105">The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365.</span></span>
+## <a name="permissions"></a><span data-ttu-id="64935-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="64935-106">Permissions</span></span>
+<span data-ttu-id="64935-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64935-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0a42-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a0a42-109">Permission type</span></span>      | <span data-ttu-id="a0a42-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a0a42-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="64935-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64935-109">Permission type</span></span>      | <span data-ttu-id="64935-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="64935-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a0a42-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a0a42-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a0a42-112">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0a42-112">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a0a42-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a0a42-113">Application</span></span> | <span data-ttu-id="a0a42-114">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0a42-114">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="64935-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64935-111">Delegated (work or school account)</span></span> | <span data-ttu-id="64935-112">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64935-112">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="64935-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64935-113">Application</span></span> | <span data-ttu-id="64935-114">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64935-114">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a0a42-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a0a42-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64935-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64935-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks/GetNotebookFromWebUrl
@@ -32,25 +32,25 @@ POST /users/{id | userPrincipalName}/onenote/notebooks/GetNotebookFromWebUrl
 POST /groups/{id}/onenote/notebooks/GetNotebookFromWebUrl
 POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ```
-## <a name="request-headers"></a><span data-ttu-id="a0a42-116">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a0a42-116">Request headers</span></span>
-| <span data-ttu-id="a0a42-117">Имя</span><span class="sxs-lookup"><span data-stu-id="a0a42-117">Name</span></span>       | <span data-ttu-id="a0a42-118">Тип</span><span class="sxs-lookup"><span data-stu-id="a0a42-118">Type</span></span> | <span data-ttu-id="a0a42-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a0a42-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="64935-116">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="64935-116">Request headers</span></span>
+| <span data-ttu-id="64935-117">Имя</span><span class="sxs-lookup"><span data-stu-id="64935-117">Name</span></span>       | <span data-ttu-id="64935-118">Тип</span><span class="sxs-lookup"><span data-stu-id="64935-118">Type</span></span> | <span data-ttu-id="64935-119">Описание</span><span class="sxs-lookup"><span data-stu-id="64935-119">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a0a42-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0a42-120">Authorization</span></span>  | <span data-ttu-id="a0a42-121">string</span><span class="sxs-lookup"><span data-stu-id="a0a42-121">string</span></span>  | <span data-ttu-id="a0a42-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a0a42-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a0a42-124">Accept</span><span class="sxs-lookup"><span data-stu-id="a0a42-124">Accept</span></span> | <span data-ttu-id="a0a42-125">строка</span><span class="sxs-lookup"><span data-stu-id="a0a42-125">string</span></span> | `application/json` |
+| <span data-ttu-id="64935-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="64935-120">Authorization</span></span>  | <span data-ttu-id="64935-121">string</span><span class="sxs-lookup"><span data-stu-id="64935-121">string</span></span>  | <span data-ttu-id="64935-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="64935-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="64935-124">Accept</span><span class="sxs-lookup"><span data-stu-id="64935-124">Accept</span></span> | <span data-ttu-id="64935-125">строка</span><span class="sxs-lookup"><span data-stu-id="64935-125">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="a0a42-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a0a42-126">Request body</span></span>
-<span data-ttu-id="a0a42-127">В тексте запроса добавьте представление в формате JSON полного URL-пути к записной книжке, которую необходимо получить.</span><span class="sxs-lookup"><span data-stu-id="a0a42-127">In the request body, supply a JSON representation of the full URL path to the notebook you want to retrieve.</span></span>
+## <a name="request-body"></a><span data-ttu-id="64935-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="64935-126">Request body</span></span>
+<span data-ttu-id="64935-127">В тексте запроса добавьте представление в формате JSON полного URL-пути к записной книжке, которую необходимо получить.</span><span class="sxs-lookup"><span data-stu-id="64935-127">In the request body, supply a JSON representation of the full URL path to the notebook you want to retrieve.</span></span>
 
-| <span data-ttu-id="a0a42-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="a0a42-128">Property</span></span>     | <span data-ttu-id="a0a42-129">Тип</span><span class="sxs-lookup"><span data-stu-id="a0a42-129">Type</span></span>        | <span data-ttu-id="a0a42-130">Описание</span><span class="sxs-lookup"><span data-stu-id="a0a42-130">Description</span></span> |
+| <span data-ttu-id="64935-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="64935-128">Property</span></span>     | <span data-ttu-id="64935-129">Тип</span><span class="sxs-lookup"><span data-stu-id="64935-129">Type</span></span>        | <span data-ttu-id="64935-130">Описание</span><span class="sxs-lookup"><span data-stu-id="64935-130">Description</span></span> |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | <span data-ttu-id="a0a42-131">Путь URL-адреса извлекаемой записной книжки.</span><span class="sxs-lookup"><span data-stu-id="a0a42-131">The URL path of the notebook to retrieve.</span></span> <span data-ttu-id="a0a42-132">Он также может содержать префикс "OneNote:".</span><span class="sxs-lookup"><span data-stu-id="a0a42-132">It can also contain a "onenote:" prefix.</span></span>|
+| `webUrl`     |`String`     | <span data-ttu-id="64935-131">Путь URL-адреса извлекаемой записной книжки.</span><span class="sxs-lookup"><span data-stu-id="64935-131">The URL path of the notebook to retrieve.</span></span> <span data-ttu-id="64935-132">Он также может содержать префикс "OneNote:".</span><span class="sxs-lookup"><span data-stu-id="64935-132">It can also contain a "onenote:" prefix.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a0a42-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0a42-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="64935-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="64935-133">Response</span></span>
 
-<span data-ttu-id="a0a42-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a0a42-134">If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a0a42-135">Пример</span><span class="sxs-lookup"><span data-stu-id="a0a42-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a0a42-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="a0a42-136">Request</span></span>
-<span data-ttu-id="a0a42-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a0a42-137">Here is an example of the request.</span></span>
+<span data-ttu-id="64935-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="64935-134">If successful, this method returns a `200 OK` response code and a [notebook](../resources/notebook.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="64935-135">Пример</span><span class="sxs-lookup"><span data-stu-id="64935-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="64935-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="64935-136">Request</span></span>
+<span data-ttu-id="64935-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="64935-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "notebook_fromweburl"
@@ -61,10 +61,10 @@ Content-type: application/json
 
 {"webUrl":"webUrl value"}
 ```
-##### <a name="response"></a><span data-ttu-id="a0a42-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0a42-138">Response</span></span>
-<span data-ttu-id="a0a42-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a0a42-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="64935-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="64935-138">Response</span></span>
+<span data-ttu-id="64935-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="64935-139">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="a0a42-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a0a42-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="64935-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="64935-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -94,9 +94,11 @@ Content-Length: 544
     "self": "self-value",
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a0a42-142">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="a0a42-142">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="64935-142">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="64935-142">SDK sample code</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="64935-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="64935-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[<span data-ttu-id="a0a42-143">Языках</span><span class="sxs-lookup"><span data-stu-id="a0a42-143">C#</span></span>](#tab/cs)
+# <a name="ctabcs"></a>[<span data-ttu-id="64935-144">C#</span><span class="sxs-lookup"><span data-stu-id="64935-144">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]
 
 ---
