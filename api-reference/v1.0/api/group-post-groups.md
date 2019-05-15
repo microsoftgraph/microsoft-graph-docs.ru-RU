@@ -1,21 +1,20 @@
 ---
 title: Создание группы
-description: 'Используйте этот API, чтобы создать группу согласно инструкциям в тексте запроса. Можно создать один из трех типов групп:'
+description: 'Создание группы согласно инструкциям в тексте запроса. '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: be09edf1004880160f50515e269dfb9c3fe60b55
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: baaf76455fefc6e44bf4995854d99baafb713005
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613720"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036376"
 ---
 # <a name="create-group"></a>Создание группы
-Используйте этот API, чтобы создать группу согласно инструкциям в тексте запроса. Можно создать один из трех типов групп:
+Создание группы согласно инструкциям в тексте запроса. Вы можете создавать группы указанных ниже типов.
 
 * Группа Office 365 (единая группа)
-* Динамическая группа
 * Группа безопасности
 
 Эта операция по умолчанию возвращает только подмножество свойств для каждой группы. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties).
@@ -51,39 +50,43 @@ POST /groups
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательный. |
-| mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. При создании группы Office 365 установите значение **true**. При создании динамической группы или группы безопасности установите для этого свойства значение **false**. Обязательный. |
+| mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
 | mailNickname | string | Почтовый псевдоним для группы. Обязательный. |
-| securityEnabled | boolean | Установите значение **true** для защищенных групп. При создании динамической группы или группы безопасности установите для этого свойства значение **true**. Установите значение **false** при создании группы Office 365. Обязательный. |
+| securityEnabled | boolean | Значение **true** для защищенных групп, включая группы Office 365. Обязательно. |
 | owners | string collection | Это свойство представляет владельцев группы на момент создания. Необязательный параметр. |
-| members | string collection | Это свойство представляет участников группы на момент создания. Необязательный параметр. |
+| members | string collection | Это свойство представляет участников группы на момент создания. Необязательный. |
 
+> Примечание: в группах, созданных с помощью портала Microsoft Azure, для свойств **securityEnabled** и **mailEnabled** задается значение `true`.
 
-При создании динамической группы или группы Office 365 укажите свойство **groupTypes**, как описано ниже.
+При необходимости укажите другие записываемые свойства для своей группы. Дополнительные сведения см. в таблице свойств ресурса [group](../resources/group.md).
+
+>**Примечание.** Создание группы Office 365 программным путем без пользовательского контекста, а также без указания владельцев будет анонимным.  Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.  
 
 ### <a name="grouptypes-options"></a>Параметры groupTypes
 
-| Тип группы | Свойство **groupTypes** |
-|:--------------|:------------------------|
-| Office 365 (как единая группа)| "Unified" |
-| Динамическая группа | "DynamicMembership" |
-| Система безопасности | Не задавайте. |
+Свойство **groupTypes** используется для управления типом группы и членства в ней, как показано ниже.
 
-
->**Примечание.** Создание группы Office 365 программным путем без пользовательского контекста, а также без указания владельцев будет анонимным.  Это может привести к тому, что связанный с ней сайт SharePoint Online, не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.  
-
-При необходимости укажите другие записываемые свойства для своей группы. Дополнительные сведения см. в таблице свойств ресурса [group](../resources/group.md).
+| Тип группы | Назначенное членство | Динамическое членство |
+|:--------------|:------------------------|:---------------|
+| Office 365 (как единая группа)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Динамическая группа | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [group](../resources/group.md) в теле отклика. Отклик включает в себя только свойства по умолчанию для группы.
 
-## <a name="example"></a>Пример
-#### <a name="request-1"></a>Запрос 1
-Первый пример запроса создает группу Office 365.
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-create-an-office-365-group"></a>Пример 1. Создание группы Office 365
+
+В приведенном ниже примере создается группа Office 365.
+
+#### <a name="request"></a>Запрос
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
 Content-length: 244
@@ -100,8 +103,10 @@ Content-length: 244
 }
 ```
 
-#### <a name="response-1"></a>Ответ 1
+#### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика.
+
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
 <!-- {
   "blockType": "response",
@@ -109,7 +114,7 @@ Content-length: 244
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -146,20 +151,24 @@ Content-type: application/json
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_group-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-2"></a>Запрос 2
-Второй пример запроса создает группу Office 365 с указанным владельцем и участниками.
+### <a name="example-2-create-a-group-with-owners-and-members"></a>Пример 2. Создание группы с владельцами и участниками
+
+В приведенном ниже примере создается группа Office 365 с указанным владельцем и участниками.
+
+#### <a name="request"></a>Запрос
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
@@ -182,16 +191,19 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
+
 Ниже представлен пример успешного отклика. Он включает только свойства по умолчанию. Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников. 
+
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
