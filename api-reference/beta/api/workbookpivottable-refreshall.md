@@ -4,12 +4,12 @@ description: Обновляет сводную таблицу на заданн�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 28d6fc1922844307b0c2871d699e16f225772a81
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 09373fe51dcd760702c0ad2aa5a6f09ae48f572e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636949"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961294"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -66,9 +66,11 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookpivottable_refreshall-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookpivottable_refreshall-Cs-snippets.md)]
 
 ---

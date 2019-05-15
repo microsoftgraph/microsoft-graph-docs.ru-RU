@@ -4,12 +4,12 @@ description: 'Получение ошибок, возникших во врем�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 322eeb409584020dfa15c18be4c264cacd8a23cb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 84c0139e950274de6d8d625d00787784b52661bb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587188"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960874"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение Едукатионсинчронизатионеррорс
 
@@ -37,7 +37,7 @@ GET /synchronizationProfiles/{id}/errors
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Error синхронизации](../resources/educationsynchronizationerror.md) в теле отклика.
@@ -99,9 +99,11 @@ Content-length: 1568
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Cs-snippets.md)]
 
 ---

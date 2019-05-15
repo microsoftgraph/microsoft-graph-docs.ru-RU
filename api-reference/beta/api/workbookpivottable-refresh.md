@@ -4,12 +4,12 @@ description: Обновляет сводную таблицу.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 38d4f113040258823fdb4736e549399534fe35c6
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: bae547f2397dbc7e19e918c906070fa3177f0d81
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636956"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961133"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
@@ -67,9 +67,11 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Cs-snippets.md)]
 
 ---

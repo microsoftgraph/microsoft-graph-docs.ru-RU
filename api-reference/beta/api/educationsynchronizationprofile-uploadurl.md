@@ -4,12 +4,12 @@ description: Получение подписи общего доступа (SAS)
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f09e179c8014949be855ef0dc0941cfd374340ee
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 52af853e41c00456a20dcd5beeb0ed72f1afca2c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587056"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960853"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>Едукатионсинчронизатионпрофиле: адрес uploadurl
 
@@ -41,7 +41,7 @@ GET /synchronizationProfiles/{id}/uploadUrl
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и URL-адрес SAS для [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
@@ -78,9 +78,11 @@ Content-length: 314
     "value": "https://sdsstorage.blob.core.windows.net/86904b1e-c7d0-4ead-b13a-98f11fc400ee?sv=2015-07-08&sr=c&si=SharedAccessPolicy_20170704044441&sig=CH65vxxqXETCkQNH0Lfsu31cUo0s0XcEEo0OE2YiL6Q%3D&se=2017-07-04T08%3A43%3A01Z&sp=w"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_uploadurl-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_uploadurl-Cs-snippets.md)]
 
 ---

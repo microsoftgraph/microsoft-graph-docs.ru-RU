@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Изменение записи в списке SharePoint
+title: Обновление ресурса listItem
+description: Изменение свойств ресурса **[listItem][]**.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 811dcd2640b2fe95ab78c1561fea8ea98f3029ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c75f14a5dd118a6735f494fb56e9f0895ce99ba9
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614003"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968739"
 ---
-# <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
+# <a name="update-listitem"></a>Обновление ресурса listItem
 
 Изменение свойств ресурса **[listItem][]**.
 
@@ -30,6 +30,12 @@ ms.locfileid: "33614003"
 
 <!-- { "blockType": "ignored" } -->
 
+Изменение свойств ресурса listItem.
+```http
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+
+Изменение значений столбцов ресурса listItem.
 ```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
@@ -40,15 +46,18 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag не совпадает с текущим тегом eTag элемента, то будет возвращен ответ `412 Precondition Failed`, а элемент не будет обновлен.
 
-
-## <a name="request-body"></a>Тело запроса
-
+## <a name="request-body"></a>Тело запроса 
 Включите представление объекта [fieldValueSet][] в формате JSON в тело запроса, указав поля, которые необходимо обновить.
+
+## <a name="response"></a>Отклик 
+
+При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [fieldValueSet][] для обновленного элемента списка в теле отклика.
 
 ## <a name="example"></a>Пример
 
-В примере ниже показано, как обновить поля Color (Цвет) и Quantity (Количество) элемента списка, указав новые значения.
-Все остальные значения для ресурса listItem останутся без изменений. 
+В следующем примере обновляются поля **Color** (Цвет) и **Quantity** (Количество) элемента списка с указанием новых значений. Все остальные значения для ресурса **listItem** останутся без изменений. 
+
+### <a name="request"></a>Запрос 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -62,9 +71,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>Ответ
-
-При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
@@ -78,7 +85,7 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
-#### <a name="sdk-sample-code"></a>Образец кода SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]

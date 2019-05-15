@@ -4,12 +4,12 @@ description: Создавайте, обновляйте или удаляйте 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f2e411f4947205bb420ddea319f577495752374
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c4c95efda43f066f5c2fae127156cc0c076c167b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637418"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961287"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/users/delta
 
 Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -153,11 +153,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
 
 ---
@@ -169,7 +169,7 @@ Content-type: application/json
 В следующем примере показан исходный запрос с выбором 3 свойств для отслеживания изменений с поведением отклика по умолчанию:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_select"
 }-->
 
 ```http
@@ -203,12 +203,12 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_select-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_select-Javascript-snippets.md)]
 
 ---
 
@@ -219,7 +219,7 @@ Content-type: application/json
 В следующем примере показан исходный запрос с выбором 3 свойств для отслеживания изменений с альтернативным поведением отклика с минимальными результатами:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_minimal"
 }-->
 
 ```http
@@ -253,6 +253,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 - [Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview).
 - [Получение добавочных изменений для пользователей](/graph/delta-query-users).

@@ -4,12 +4,12 @@ description: Получение списка объектов workbookpivottable
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 269589a7e0589226bac87ae78b6169ec276b2d8c
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8bdc3801e182fca5b6708d5e0606330a491f65ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637054"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961252"
 ---
 # <a name="list-pivottables"></a>Получение списка pivotTables
 
@@ -41,7 +41,7 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,9 +79,11 @@ Content-length: 83
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_pivottables-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_pivottables-Cs-snippets.md)]
 
 ---

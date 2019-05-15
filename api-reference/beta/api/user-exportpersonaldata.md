@@ -4,12 +4,12 @@ description: Передает запрос операции политики д�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: adc6e35609b27a8353d24585b5542d3e9a704bd6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 776602eb600ca74feff61c595092e1e2518b49a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33609595"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961301"
 ---
 # <a name="user-exportpersonaldata"></a>Пользователь: Експортперсоналдата
 
@@ -37,14 +37,14 @@ POST /users/<id>/exportPersonalData
 |:---------------|:----------|
 | Authorization  | Bearer {token}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание |
 |:---------------|:--------|:----------|
-|Сторажелокатион|String|Это URL-адрес учетной записи службы хранилища Azure, в которую будут экспортироваться данные.|
+|Сторажелокатион|Строка|Это URL-адрес учетной записи службы хранилища Azure, в которую будут экспортироваться данные.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных. Ответ содержит следующие заголовки.
 
 | Имя       | Описание |
@@ -70,22 +70,22 @@ Content-length: 48
 ```
 ##### <a name="response"></a>Отклик
 
-```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+```http
 {
   Location: https://graph.microsoft.com/beta/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "blockType": "response",

@@ -1,23 +1,28 @@
 ---
 title: Тип ресурса signIn
-description: 'Этот ресурс представляет сведения о действиях входа пользователя или приложения в каталоге. '
-localization_priority: Priority
-ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: Описание ресурса signIn для API Microsoft Graph (REST), который помогает проводить аудит входа пользователей и входа в приложения (бета-версия).
+author: lleonard-msft
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 90e2b2cf56776657f9c76c442b3ca9579b75cd5f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343019"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620822"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
-Этот ресурс представляет сведения о действиях входа пользователя или приложения в каталоге. 
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Предоставляет сведения о входе пользователей или входе в приложения в вашем каталоге. 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Перечисление signIn](../api/signin-list.md) | [signIn](signin.md) |Чтение свойств и связей объектов signIn.|
-|[Получение объекта signIn](../api/signin-get.md) | [signIn](signin.md) |Чтение свойств и связей объекта signIn.|
+|[Получение объекта signIn](../api/signin-get.md) | [signIn](signin.md) |Считывание свойств и связей объекта signIn.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

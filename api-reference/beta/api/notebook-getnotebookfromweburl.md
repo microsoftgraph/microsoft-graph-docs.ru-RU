@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта з
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8f69fb9e2f97de7f307868b6be1a22e2e72172de
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c726f3ace6663676317ac0a9578b68881d33ee65
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597851"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961278"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>Записная книжка: Жетнотебукфромвебурл
 
@@ -94,9 +94,11 @@ Content-Length: 544
     "self": "self-value",
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]
 
 ---

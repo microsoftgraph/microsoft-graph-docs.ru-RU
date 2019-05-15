@@ -4,12 +4,12 @@ description: Проверьте, что файлы переданы в опре�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 067beecf2570dc8775cc1a570a87cb8acac31d10
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 38d5b8833c424889604751d8b4c4be7f7678b891
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587070"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960846"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Запуск синхронизации после отправки файлов в Едукатионсинчронизатионпрофиле
 
@@ -39,7 +39,7 @@ POST /synchronizationProfiles/{id}/start
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если операция завершилась неудачно, `400 Bad Request`возвращается значение. Ответ содержит коллекцию объектов [едукатионфилесинчронизатионверификатионмессаже](../resources/educationfilesynchronizationverificationmessage.md) в теле отклика, если обнаружены какие-либо ошибки или предупреждения.
@@ -127,9 +127,11 @@ Content-length: 2105
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Cs-snippets.md)]
 
 ---

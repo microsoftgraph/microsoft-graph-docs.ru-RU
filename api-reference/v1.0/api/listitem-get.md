@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Получение записи из списка SharePoint
+title: Получение ресурса listItem
+description: Возвращает метаданные элемента в списке SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: c46fed1c2da3ac246212dbbcdfeb35479699efe6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a498947002247541bebf4fc7cd24147a0ca0df7a
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613075"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968788"
 ---
-# <a name="get-an-item-in-a-list"></a>Получение элемента списка
+# <a name="get-listitem"></a>Получение ресурса listItem
 
 Возвращает метаданные [элемента][] в [списке][].
 
@@ -31,15 +31,38 @@ ms.locfileid: "33613075"
 
 ## <a name="http-request"></a>HTTP-запрос
 
+Получение ресурса listItem
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+Получение значений столбцов ресурса listItem
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+```
+Получение значений определенных столбцов ресурса listItem
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+## <a name="request-headers"></a>Заголовки запросов
+
+| Имя      |Описание|
+|:----------|:----------|
+| Авторизация  | Bearer {код}. Обязательно.|
+
+## <a name="request-body"></a>Основной текст запросов
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик 
+
+При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [item][] в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
@@ -47,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -64,6 +87,7 @@ Content-type: application/json
     }
 }
 ```
+
 #### <a name="sdk-sample-code"></a>Пример кода SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-list-item-Cs-snippets.md)]

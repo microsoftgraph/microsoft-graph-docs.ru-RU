@@ -1,75 +1,47 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: ListItem
+title: Ресурс listItem
+description: Этот ресурс представляет элемент объекта list в SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 873ad5961c9cadb444c6fe9f2afec69853cc5d85
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519950"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968802"
 ---
-# <a name="listitem-resource"></a>Ресурс ListItem
+# <a name="listitem-resource"></a>Ресурс listItem
 
 Этот ресурс представляет элемент объекта **[list][]** в SharePoint.
 Значения столбцов в списке доступны через словарь `fieldValueSet`.
 
-## <a name="tasks-on-a-listitem"></a>Задачи для ресурса listItem
+## <a name="methods"></a>Методы
 
-Ниже перечислены задачи, доступные для ресурсов **listItem**.
-Все приведенные ниже примеры относятся к объекту **[list][]**, например `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
+Ниже перечислены методы, доступные для ресурсов **listItem**.
+Все примеры относятся к объекту **[list][]**: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
-| Стандартная задача                    | Метод HTTP
-|:-------------------------------|:------------------------
-| [Получение][]                        | GET /items/{item-id}
-| [Получение значений столбцов][Получение]       | GET /items/{item-id}?expand=fields
-| [Создание][]                     | POST /items
-| [Удаление][]                     | DELETE /items/{item-id}
-| [Обновление][]                     | PATCH /items/{item-id}
-| [Обновление значений столбцов][Обновление] | PATCH /items/{item-id}/fields
+| Метод                    | Возвращаемый тип | Описание
+|:-------------------------------|:-------------------|:------
+| [Получение][]                   | lisItem| Получение элемента списка.
+| [Получение значений столбцов][Получение]       | listItem | Получение значений столбцов из ресурса listItem.
+| [Получение аналитики][]              | [itemAnalytics][]| Получение аналитических данных для ресурса. 
+| [Получение действий по интервалу][] | [itemActivityStat][]| Получение коллекции объектов itemActivityStat в пределах указанного интервала времени.
+| [Создание][]                     | listItem | Создание ресурса listItem в списке.
+| [Удаление][]                     | Содержимое отсутствует | Удаление элемента из списка.
+| [Обновление][]                     | [fieldValueSet][]| Изменение свойств ресурса listItem.
+| [Обновление значений столбцов][Обновление] | [fieldValueSet][]| Изменение значений столбцов ресурса listItem.
 
 [Получение]: ../api/listitem-get.md
+[Получение аналитики]: ../api/itemanalytics-get.md
+[Получение действий по интервалу]: ../api/itemactivitystat-getactivitybyinterval.md
 [Создание]: ../api/listitem-create.md
 [Удаление]: ../api/listitem-delete.md
 [Обновление]: ../api/listitem-update.md
 
-## <a name="json-representation"></a>Представление в формате JSON
-
-Ниже показано представление ресурса **listItem** в формате JSON.
-
-<!--{
-  "blockType": "resource",
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
-}-->
-
-```json
-{
-  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of resource",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of resource",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
-}
-```
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
 
 ## <a name="properties"></a>Свойства
 
@@ -101,6 +73,8 @@ ms.locfileid: "32519950"
 
 | Имя связи | Тип                           | Описание
 |:------------------|:-------------------------------|:-------------------------------
+| activities        | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.
+| analytics         | Ресурс [itemAnalytics][]     | Аналитические данные о действиях просмотра, выполненных для элемента.
 | driveItem         | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]**
 | fields            | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.
 | versions          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.
@@ -110,17 +84,56 @@ ms.locfileid: "32519950"
 [driveItem]: driveitem.md
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже показано представление ресурса **listItem** в формате JSON.
+
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
+
+```json
+{
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of resource",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of resource",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "url"
+}
+```
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ListItem",
+  "tocPath": "Resources/listItem",
   "tocBookmarks": {
     "ListItem": "#"
   }

@@ -4,12 +4,12 @@ description: Возвращает определенное количество 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 39655f5d9130563f3dd0514bc1b17157836e2aeb
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: fa880d1932a56bac697f5469e2b44d42d1753479
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636935"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961098"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -45,7 +45,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,9 +84,11 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Cs-snippets.md)]
 
 ---
