@@ -819,14 +819,6 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
-          - name: Уведомления
-            href: resources/notifications-api-overview.md
-            items:
-              - name: Уведомление
-                href: resources/projectrome-notification.md
-                items:
-                  - name: Создание и отправление уведомления
-                    href: api/projectrome-notification-post.md
       - name: Резервирование для пользователей
         displayName: 'Bookings, Microsoft Bookings'
         items:
@@ -835,7 +827,7 @@ items:
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/bookingbusiness-list.md
               - name: Создание
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -1074,7 +1066,7 @@ items:
               - name: Конфигурация управляемого приложения магазина для Android
                 href: resources/intune-apps-androidmanagedstoreappconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-androidmanagedstoreappconfiguration-list.md
                   - name: Получение
                     href: api/intune-apps-androidmanagedstoreappconfiguration-get.md
@@ -1241,7 +1233,7 @@ items:
               - name: 'Приложение iOS, приобретенное по программе VPP'
                 href: resources/intune-apps-iosvppapp.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-iosvppapp-list.md
                   - name: Получение
                     href: api/intune-apps-iosvppapp-get.md
@@ -1303,7 +1295,7 @@ items:
               - name: Электронная книга VPP для iOS
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-books-iosvppebook-list.md
                   - name: Получение
                     href: api/intune-books-iosvppebook-get.md
@@ -1481,7 +1473,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
               - name: Управление электронной книгой
                 href: resources/intune-books-managedebook.md
@@ -1495,7 +1487,7 @@ items:
               - name: Назначение управляемой электронной книги
                 href: resources/intune-books-managedebookassignment.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-books-managedebookassignment-list.md
                   - name: Получение
                     href: api/intune-books-managedebookassignment-get.md
@@ -1521,7 +1513,7 @@ items:
               - name: Управляемые бизнес-приложения для iOS
                 href: resources/intune-apps-managedioslobapp.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-managedioslobapp-list.md
                   - name: Получение
                     href: api/intune-apps-managedioslobapp-get.md
@@ -2767,7 +2759,7 @@ items:
               - name: Профиль сертификата SCEP для Android
                 href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -2810,7 +2802,7 @@ items:
               - name: Конфигурация Wi-Fi для Android
                 href: resources/intune-deviceconfig-androidwificonfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -4435,7 +4427,7 @@ items:
               - name: Неподдерживаемая конфигурация устройства
                 href: resources/intune-deviceconfig-unsupporteddeviceconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
@@ -4519,7 +4511,7 @@ items:
               - name: База профилей сертификатов для Windows 10
                 href: resources/intune-deviceconfig-windows10certificateprofilebase.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-windows10certificateprofilebase-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10certificateprofilebase-get.md
@@ -5163,7 +5155,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-devices-applepushnotificationcertificate-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/intune-devices-applepushnotificationcertificate-update.md
               - name: Событие устранения неполадок маркера VPP Apple
                 href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
@@ -6445,7 +6437,7 @@ items:
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                   - name: Создание
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                  - name: Удаление
+                  - name: Удалить
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                   - name: Обновление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -7960,14 +7952,14 @@ items:
               - name: Определения ролей
                 href: resources/governanceroledefinition.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/governanceroledefinition-list.md
                   - name: Получение
                     href: api/governanceroledefinition-get.md
               - name: Параметры роли
                 href: resources/governancerolesetting.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/governancerolesetting-list.md
                   - name: Получение
                     href: api/governancerolesetting-get.md
@@ -8330,6 +8322,14 @@ items:
             items:
               - name: Вывод ресурса
                 href: api/resource-get.md
+      - name: Уведомления
+        href: resources/notifications-api-overview.md
+        items:
+          - name: Уведомление
+            href: resources/projectrome-notification.md
+            items:
+              - name: Создание и отправление уведомления
+                href: api/notifications-post.md
       - name: Личные контакты.
         href: resources/contact.md
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'

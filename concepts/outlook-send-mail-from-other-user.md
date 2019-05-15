@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: d3c9b2f77b63abf21d8eb538d08bade4f6cfcb32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0921cec73d405262470ed30b7f0d61534f6b5ab4
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036572"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Отправка сообщений Outlook от другого пользователя
 
@@ -107,7 +107,7 @@ Exchange Online предусматривает [разрешения для по
 Порядок по умолчанию может меняться в зависимости других сторонних факторов.
 
 - Администраторы могут обновить почтовый ящик пользователя, значащегося в качестве отправителя, таким образом, чтобы [всегда сохранять копии сообщений, отправленных делегированным пользователем,](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) в его папке "Отправленные".
-- Задав свойство `saveToSentItems` как `true` в запросе [отправить почту](/graph/api/user-sendmail?view=graph-rest-1.0), вы можете отменить сохранение элемента в папке "Отправленные". Тем не менее, если администратор настроил параметр "всегда сохранять копию", сообщения будут по-прежнему сохраняться в папке "Отправленные" пользователя, значащегося как отправитель.
+- Задав свойство `saveToSentItems` как `false` в запросе [отправить почту](/graph/api/user-sendmail?view=graph-rest-1.0), вы можете отменить сохранение элемента в папке "Отправленные". Тем не менее, если администратор настроил параметр "всегда сохранять копию", сообщения будут по-прежнему сохраняться в папке "Отправленные" пользователя, значащегося как отправитель.
 
 ## <a name="examples"></a>Примеры
 

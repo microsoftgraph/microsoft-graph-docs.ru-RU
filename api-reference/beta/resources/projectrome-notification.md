@@ -3,12 +3,12 @@ title: Тип ресурса Notification
 description: 'Представляет уведомление, которое публикует сервер приложений, предназначенный для указанного пользователя. Уведомление хранится в Microsoft Graph и распространяется на другие конечные точки устройств, принадлежащие пользователю. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 56a05ced6d722b3c1c347fc43735dec461aa0f69
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 13839cdc946ecaf47e59d37e90fe4be144789a6d
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344109"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036485"
 ---
 # <a name="notification-resource-type"></a>Тип ресурса Notification
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "33344109"
 ## <a name="methods"></a>Методы
 |Метод | Возвращаемый тип | Описание|
 |:------|:------------|:-----------|
-|[Создание уведомления](../api/projectrome-notification-post.md) | [уведомляющее](projectrome-notification.md) |Создание и отправка уведомления. |
+|[Создание уведомления](../api/notifications-post.md) | [уведомляющее](projectrome-notification.md) |Создание и отправка уведомления. |
 
 ## <a name="properties"></a>Свойства
 |Имя | Тип | Описание|
@@ -41,7 +41,7 @@ ms.locfileid: "33344109"
 | Таржетполици | Объект EDM. ComplexType, объект JSON | Объект целевой политики обрабатывает политику доставки уведомлений на двух различных типах (Windows, iOS и Android), которые должны быть нацелены, и определенных конечных точках (идентифицируемых идентификаторами подписки), которые должны быть нацелены. |
 | Таржетполици. Платформтипес | Модель EDM. ComplexType, Collection (EnumType) | Используется для фильтрации распространения уведомлений на определенную платформу или платформы. По умолчанию все типы конечных точек Push (iOS, Windows и Android) включены. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
