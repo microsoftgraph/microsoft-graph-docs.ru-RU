@@ -4,16 +4,18 @@ description: Outlook — это центр обмена сообщениями 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 14debcfb59b062e0c29b5024d32e6a5dcc4e7394
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440068"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083241"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 
 Outlook — это центр обмена сообщениями в Office 365. Кроме того, с помощью Outlook можно управлять контактами, планировать собрания, искать информацию о пользователях в организации, инициировать беседы через Интернет, делиться файлами и совместно работать в группах.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 
 ## <a name="why-integrate-with-outlook-mail"></a>Зачем выполнять интеграцию с почтой Outlook?
 
