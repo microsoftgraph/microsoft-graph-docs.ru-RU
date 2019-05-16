@@ -1,23 +1,23 @@
 ---
 title: 'user: findRoomLists'
 description: Получение списка помещений, определенных в клиенте.
-author: dkershaw10
+author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19bd8c7caca4aa2dc4d30c431d115dede0426e23
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 5e7fcab1baf5fba276058fb7b0c28d41bfba0414
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637390"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083295"
 ---
 # <a name="user-findroomlists"></a>user: findRoomLists
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка помещений, определенных в клиенте.
+Получение списка помещений, определенных в клиенте, в соответствии с представлением в их объектах [emailAddress](../resources/emailaddress.md).
 
-Клиенты могут упорядочивать помещения для собраний в списках помещений. Каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md).
+Клиенты могут упорядочивать помещения для собраний в списках помещений. В этом API каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md).
 Можно получить все списки помещений в клиенте, [получить все помещения](user-findrooms.md) в клиенте или [получить все помещения](user-findrooms.md) в определенном списке помещений.
 
 
@@ -51,7 +51,7 @@ GET /users/<id>/findRoomLists
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [emailAddress](../resources/emailaddress.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [emailAddress](../resources/emailaddress.md) в тексте отклика.
 
 Если в клиенте не определены списки, возвращается пустой массив.
 
@@ -101,7 +101,7 @@ Content-type: application/json
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_get_room_lists-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_get_room_lists-Javascript-snippets.md)]
 
 ---

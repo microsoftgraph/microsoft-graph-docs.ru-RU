@@ -2,22 +2,22 @@
 title: 'user: findRooms'
 description: 'Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. '
 localization_priority: Priority
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5784824fe0e6c174935d12b8b22052709a61f69d
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9c7d6fb47a52e67ae5dd884d9413726e9b2e3bae
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637380"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083328"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. 
+Получение объектов [emailAddress](../resources/emailaddress.md), представляющих все помещения для собраний в клиенте пользователя или определенном списке помещений. 
 
-Клиенты могут упорядочивать помещения для собраний в списках помещений. Каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md). Можно [получить все списки помещений](user-findroomlists.md) в клиенте, получить все помещения в клиенте или получить все помещения в определенном списке помещений. Можно получить до 100 первых помещений в клиенте.
+Клиенты могут упорядочивать помещения для собраний в списках помещений. В этом API каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md). Можно [получить все списки помещений](user-findroomlists.md) в клиенте, получить все помещения в клиенте или получить все помещения в определенном списке помещений. Можно получить до 100 первых помещений в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,8 +43,8 @@ GET /users/<id>/findRooms
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/findRooms(RoomList='{room_list}')
-GET /users/<id>/findRooms(RoomList='{room_list}')
+GET /me/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -65,14 +65,14 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [emailAddress](../resources/emailaddress.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [emailAddress](../resources/emailaddress.md) в тексте отклика.
 
 
 ## <a name="example"></a>Пример
 
 ##### <a name="request-1"></a>Запрос 1
 
-В первом примере возвращаются все помещения, определенные в клиенте вошедшего пользователя.
+В первом примере возвращаются объекты [emailAddress](../resources/emailaddress.md), представляющие все помещения, определенные в клиенте вошедшего пользователя.
 
 <!-- {
   "blockType": "request",
@@ -131,7 +131,7 @@ Content-type: application/json
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_get_rooms_in_tenant-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_get_rooms_in_tenant-Javascript-snippets.md)]
 
 ---
@@ -140,7 +140,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>Запрос 2
 
-Во втором примере возвращаются все помещения в указанном списке помещений, определенном по электронному адресу Building2Rooms@contoso.onmicrosoft.com.
+Во втором примере возвращаются объекты [emailAddress](../resources/emailaddress.md), представляющие все помещения в указанном списке помещений, определенном по электронному адресу Building2Rooms@contoso.onmicrosoft.com.
 
 <!-- {
   "blockType": "request",
@@ -150,7 +150,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
 ```
 
-##### <a name="response-2"></a>Отклик 2
+##### <a name="response-2"></a>Отклик 2
 Ниже приведен пример отклика. 
 
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -187,7 +187,7 @@ Content-type: application/json
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_get_rooms_from_specific_list-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_get_rooms_from_specific_list-Javascript-snippets.md)]
 
 ---
