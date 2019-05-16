@@ -81,8 +81,6 @@ items:
             href: activity-feed-concept-overview.md
           - name: Ретрансляция устройств (предварительная версия)
             href: device-relay-concept-overview.md
-          - name: Уведомления (предварительная версия)
-            href: notifications-concept-overview.md
           - name: Создание приложений для различных устройств
             href: cross-device-app-configuration.md
       - name: Запись клиентов (предварительная версия)
@@ -166,7 +164,29 @@ items:
             href: onenote-branding.md
           - name: Коды ошибок
             href: onenote-error-codes.md
-      - name: Личные контакты.
+      - name: Уведомления (предварительная версия)
+        displayName: Notifications
+        items:
+          - name: Обзор
+            href: notifications-concept-overview.md
+          - name: Начало работы
+            displayName: Notifications
+            items:
+              - name: Обзор
+                href: notifications-integration-e2e-overview.md
+              - name: Регистрация приложения
+                href: notifications-integration-app-registration.md
+              - name: Подключение к разным устройствах
+                href: notifications-integration-cross-device-experiences-onboarding.md
+              - name: Интеграция сервера приложений
+                href: notifications-integrating-app-server.md
+              - name: Интеграция приложений Windows
+                href: notifications-integrating-with-windows.md
+              - name: Интеграция приложений Android
+                href: notifications-integrating-with-android.md
+              - name: Интеграция приложений IOS
+                href: notifications-integrating-with-ios.md
+      - name: Личные контакты
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
           - name: Обзор
