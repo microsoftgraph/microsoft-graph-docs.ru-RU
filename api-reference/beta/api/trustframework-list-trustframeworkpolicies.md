@@ -4,12 +4,12 @@ description: Эта операция перечисляет все объект�
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afdaf352494b0f68f37d88707fad98aa9373969a
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: f10cb19e78a1607cc6d535e97e593e604b743703
+ms.sourcegitcommit: 126b15ac37fb199c7b1001f91e70d8463a18c280
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637453"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34083274"
 ---
 # <a name="list-trustframeworkpolicies"></a>Список ТрустфрамеворкполиЦиес
 
@@ -19,7 +19,7 @@ ms.locfileid: "33637453"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -45,7 +45,7 @@ GET /trustFramework/policies/
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -93,11 +93,11 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_trustFrameworks-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_trustFrameworks-Javascript-snippets.md)]
 
 ---
