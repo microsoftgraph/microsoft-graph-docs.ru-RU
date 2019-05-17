@@ -4,22 +4,22 @@ description: 'Сообщение, которое представляет соб
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e1072a8b94a9c6099494e649b66595092e737083
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d4fa746df2c2dcde7785d768c0bd9268c19c113f
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333893"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108982"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение). 
+Сообщение, которое представляет собой приглашение на собрание, уведомление об отмене или ответ (принятие, предварительное принятие или отклонение).
 
 Сущность **eventMessage** является производной от [сообщения](message.md)и [EventMessageRequest](eventmessagerequest.md) является производной от **eventMessage** и представляет приглашение на собрание. Свойство **meetingMessageType** определяет тип сообщения о событии.
 
-Когда организатор или приложение отправляет приглашение на собрание, оно попадает во входящие участника в виде экземпляра **eventMessage** со свойством **meetingMessageType** **meetingRequest**. Кроме того, Outlook автоматически создает в календаре участника экземпляр **event** со свойством **showAs** **tentative**. 
+Когда организатор или приложение отправляет приглашение на собрание, оно попадает во входящие участника в виде экземпляра **eventMessage** со свойством **meetingMessageType** **meetingRequest**. Кроме того, Outlook автоматически создает в календаре участника экземпляр **event** со свойством **showAs** **tentative**.
 
 Чтобы получить свойства связанного события в почтовом ящике участника, приложение может использовать свойство навигации объекта **eventMessage** **event**, как показано в [этом примере](../api/eventmessage-get.md#request-2). Приложение также может отвечать на событие от имени участника программным способом, путем [принятия](../api/event-accept.md), принятия [под вопросом](../api/event-tentativelyaccept.md)или отклонения события. [](../api/event-decline.md)
 
@@ -27,7 +27,7 @@ ms.locfileid: "33333893"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.  
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
@@ -105,21 +105,21 @@ ms.locfileid: "33333893"
 |flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
-|id|String||
+|id|String| Уникальный идентификатор сообщения. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]Только для чтения. |
 |importance|String| Важность сообщения: `low`, `normal`, `high`.|
 |inferenceClassification|String| Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Boolean|Указывает, продолжается ли событие за весь день. Для настройки этого свойства необходимо также настроить свойства **startDateTime** и **endDateTime** события.|
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isOutOfDate|Boolean|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[location](location.md)|Расположение запрошенного собрания.|
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
-|parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
+|parentFolderId|Строка|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрошенного собрания.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
@@ -137,7 +137,7 @@ ms.locfileid: "33333893"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускает значение null.|
+|attachments|Коллекция [attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускается значение null.|
 |event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
 |extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
@@ -149,7 +149,7 @@ ms.locfileid: "33333893"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage.|
-|[Delete](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage.|
+|[Удаление](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
