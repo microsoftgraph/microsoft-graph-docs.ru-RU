@@ -7,8 +7,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/{id}/messages/delta')
+let res = await client.api('/users/delta')
     .version('beta')
+    .select('displayName,jobTitle,mobilePhone')
     .get();
 
 ```

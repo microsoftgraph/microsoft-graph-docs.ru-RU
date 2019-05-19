@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var contact = await graphClient.Me.Contacts["AAMkAGI2THk0AAA="]
+var getYammerDeviceUsageUserDetail = await graphClient.Reports.GetYammerDeviceUsageUserDetail('D7')
     .Request()
     .GetAsync();
 

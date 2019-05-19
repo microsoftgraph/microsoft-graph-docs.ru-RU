@@ -3,8 +3,8 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var contact = await graphClient.Me.Contacts["AAMkAGI2THk0AAA="]
+await graphClient.Users["ba9a3254-9f18-4209-aeb3-9e42a35b5be4"]
     .Request()
-    .GetAsync();
+    .DeleteAsync();
 
 ```

@@ -3,8 +3,9 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var contact = await graphClient.Me.Contacts["AAMkAGI2THk0AAA="]
+var sites = await graphClient.Sites
     .Request()
+    .Filter("siteCollection/root ne null")
     .GetAsync();
 
 ```
