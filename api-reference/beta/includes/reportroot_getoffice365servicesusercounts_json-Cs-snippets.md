@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Planner.Plans["'id'"]
+var getOffice365ServicesUserCounts = await graphClient.Reports.GetOffice365ServicesUserCounts('D7')
     .Request()
     .GetAsync();
 

@@ -3,8 +3,10 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Planner.Plans["'id'"]
+var columns = await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
     .Request()
+    .Skip(5)
+    .Top(5)
     .GetAsync();
 
 ```

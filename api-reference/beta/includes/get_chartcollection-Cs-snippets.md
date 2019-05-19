@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Planner.Plans["'id'"]
+var charts = await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts
     .Request()
     .GetAsync();
 

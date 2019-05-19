@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Planner.Plans["'id'"]
+var subscribedSkus = await graphClient.SubscribedSkus
     .Request()
     .GetAsync();
 
