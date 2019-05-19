@@ -3,10 +3,8 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var securityEnabledOnly = true;
-
-await graphClient.Me
-    .GetMemberGroups(securityEnabledOnly)
+await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"]
+    .ClearFilters()
     .Request()
     .PostAsync()
 
