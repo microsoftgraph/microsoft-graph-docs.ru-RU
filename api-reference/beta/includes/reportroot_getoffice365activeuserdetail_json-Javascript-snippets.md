@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/{id}/messages/delta')
+let res = await client.api('/reports/getOffice365ActiveUserDetail(period='D7')')
     .version('beta')
     .get();
 
