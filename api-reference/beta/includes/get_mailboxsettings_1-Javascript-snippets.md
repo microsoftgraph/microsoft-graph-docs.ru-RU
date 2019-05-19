@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes/11023/teachers')
+let res = await client.api('/me/mailboxSettings')
     .version('beta')
     .get();
 

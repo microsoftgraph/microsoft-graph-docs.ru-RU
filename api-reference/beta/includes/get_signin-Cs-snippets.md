@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Planner.Plans["'id'"]
+var signIn = await graphClient.AuditLogs.SignIns["{id}"]
     .Request()
     .GetAsync();
 

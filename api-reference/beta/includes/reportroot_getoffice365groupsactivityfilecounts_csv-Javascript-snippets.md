@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes/11023/teachers')
+let res = await client.api('/reports/getOffice365GroupsActivityFileCounts(period='D7')')
     .version('beta')
     .get();
 
