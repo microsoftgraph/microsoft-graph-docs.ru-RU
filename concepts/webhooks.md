@@ -3,18 +3,21 @@ title: Настройка уведомлений об изменениях в п
 description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние в случае изменений.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bffab081e8f9520890f6bfe7c690b9258cd3dee
+ms.sourcegitcommit: 7bf9885c8769c5dfe2614a98ba6d7cc297ae564c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575970"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34182092"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
 API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние в случае изменений.
 
 Приняв запрос на подписку, Microsoft Graph отправляет уведомления на URL-адрес, указанный в подписке. Затем приложение действует в соответствии с бизнес-логикой. Например, оно получает дополнительные данные, обновляет кэш и представления, а также выполняет другие действия.
+
+> [!div class="nextstepaction"]
+> [Создание приложения веб-перехватчика с помощью .NET Core](/graph/tutorials/change-notifications)
 
 ## <a name="supported-resources"></a>Поддерживаемые ресурсы
 
@@ -234,6 +237,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 Указанные ниже примеры кода доступны на сайте GitHub.
 
+- [Обучающий модуль по Microsoft Graph: использование уведомлений об изменениях и отслеживание изменений с помощью Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Пример веб-перехватчиков Microsoft Graph для Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Пример веб-перехватчиков Microsoft Graph для ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [Пример веб-перехватчиков Microsoft Graph для WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -243,6 +247,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [Тип ресурса subscription](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Учебник по уведомлениям об изменениях](/graph/tutorials/change-notifications)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
