@@ -4,18 +4,18 @@ description: 'Элемент Outlook, который может отслежив
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: d8dd9c4b87ebe43755ae4ad0ce0dae92de5a9d96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341715"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34109540"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Элемент Outlook, который может отслеживать рабочий элемент. 
+Элемент Outlook, который может отслеживать рабочий элемент.
 
 Вы можете использовать задачу для отслеживания начала, запланированной и фактической даты и времени выполнения, хода выполнения или состояния, а также является ли она повторяющейся и требует ли напоминания.
 
@@ -28,7 +28,8 @@ ms.locfileid: "33341715"
 - reminderDateTime
 - startDateTime
 
-По умолчанию операции POST, GET, PATCH и [complete](../api/outlooktask-complete.md) возвращают связанные с датами свойства в откликах REST в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC. В приведенном ниже примере связанные с датами свойства возвращаются в соответствующем отклике в часовом поясе EST:
+По умолчанию операции POST, GET, PATCH и [complete](../api/outlooktask-complete.md) возвращают связанные с датами свойства в откликах REST в формате UTC.
+Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC. В приведенном ниже примере связанные с датами свойства возвращаются в соответствующем отклике в часовом поясе EST:
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -62,7 +63,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
 |hasAttachments|Boolean|Присвоено значение true, если у задачи есть вложения.|
-|id|String|Уникальный идентификатор задачи. Только для чтения.|
+|id|String| Уникальный идентификатор задачи. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -93,7 +94,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTask"
 }-->
 

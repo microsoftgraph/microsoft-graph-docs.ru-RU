@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: cc8d3b724b42827c568377b1f4d83d6c4513414a
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: 41cd5756ffb82a2e32a7e336cc24b839e310187e
+ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036509"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34108968"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -103,6 +103,7 @@ ms.locfileid: "34036509"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Логический| Указывает, могут ли пользователи за пределами организации отправлять сообщения в группу. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select. |
+|assignedLabels|Коллекция [assignedLabel](assignedlabel.md)|Список пар меток конфиденциальности (идентификатор метки, имя метки), связанных с группой Office 365. <br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |assignedLicenses|Коллекция [assignedLicense](assignedlicense.md)|Лицензии, назначенные группе. <br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |autoSubscribeNewMembers|Логический|Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. Это свойство можно задать в запросе PATCH для группы. Не задавайте его в первоначальном запросе POST, создающем группу. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
 |classification|String|Описывает классификацию для группы (например, незначительное, среднее или значительное влияние на бизнес). Допустимые значения для этого свойства определяются созданием значения [setting](directorysetting.md) ClassificationList на базе [определения шаблона](directorysettingtemplate.md).<br><br>Возвращается по умолчанию.|
@@ -218,6 +219,7 @@ ms.locfileid: "34036509"
 ```json
 {
   "accessType": "string",
+  "assignedLabels": [{"@odata.type": "microsoft.graph.assignedLabel"}],
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
