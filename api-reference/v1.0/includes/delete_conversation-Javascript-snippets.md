@@ -7,7 +7,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows')
-    .get();
+let res = await client.api('/groups/{id}/conversations/{id}')
+    .delete();
 
 ```
