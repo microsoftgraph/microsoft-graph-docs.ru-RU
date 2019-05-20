@@ -35,6 +35,8 @@ items:
         items:
           - name: Обзор
             href: /graph/webhooks?toc=./ref/toc.json
+          - name: Руководство
+            href: /graph/tutorials/change-notifications
           - name: Отсутствие уведомлений в Outlook (предварительная версия)
             href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
       - name: Отслеживание изменений
@@ -1066,7 +1068,7 @@ items:
               - name: Конфигурация управляемого приложения магазина для Android
                 href: resources/intune-apps-androidmanagedstoreappconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-androidmanagedstoreappconfiguration-list.md
                   - name: Получение
                     href: api/intune-apps-androidmanagedstoreappconfiguration-get.md
@@ -1233,7 +1235,7 @@ items:
               - name: 'Приложение iOS, приобретенное по программе VPP'
                 href: resources/intune-apps-iosvppapp.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-iosvppapp-list.md
                   - name: Получение
                     href: api/intune-apps-iosvppapp-get.md
@@ -1295,7 +1297,7 @@ items:
               - name: Электронная книга VPP для iOS
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-books-iosvppebook-list.md
                   - name: Получение
                     href: api/intune-books-iosvppebook-get.md
@@ -1487,7 +1489,7 @@ items:
               - name: Назначение управляемой электронной книги
                 href: resources/intune-books-managedebookassignment.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-books-managedebookassignment-list.md
                   - name: Получение
                     href: api/intune-books-managedebookassignment-get.md
@@ -1513,7 +1515,7 @@ items:
               - name: Управляемые бизнес-приложения для iOS
                 href: resources/intune-apps-managedioslobapp.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-managedioslobapp-list.md
                   - name: Получение
                     href: api/intune-apps-managedioslobapp-get.md
@@ -4427,7 +4429,7 @@ items:
               - name: Неподдерживаемая конфигурация устройства
                 href: resources/intune-deviceconfig-unsupporteddeviceconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md
@@ -4511,7 +4513,7 @@ items:
               - name: База профилей сертификатов для Windows 10
                 href: resources/intune-deviceconfig-windows10certificateprofilebase.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-windows10certificateprofilebase-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10certificateprofilebase-get.md
@@ -5155,7 +5157,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-devices-applepushnotificationcertificate-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-devices-applepushnotificationcertificate-update.md
               - name: Событие устранения неполадок маркера VPP Apple
                 href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
