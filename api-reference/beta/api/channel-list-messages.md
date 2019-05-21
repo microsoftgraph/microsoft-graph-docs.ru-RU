@@ -4,61 +4,61 @@ description: 'Получение списка сообщений (без отв�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: f482222d1eb6c672d97109a9cc7d6f6d9c838a5e
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c10538ebf9e4fd2450f5a3e3ea569eb9cbb05ca6
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635598"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310788"
 ---
-# <a name="list-channel-messages"></a><span data-ttu-id="217dc-104">Перечисление сообщений в каналах</span><span class="sxs-lookup"><span data-stu-id="217dc-104">List channel messages</span></span>
+# <a name="list-channel-messages"></a><span data-ttu-id="565bf-104">Перечисление сообщений в каналах</span><span class="sxs-lookup"><span data-stu-id="565bf-104">List channel messages</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="217dc-105">Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="217dc-105">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="565bf-105">Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="565bf-105">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> 
 
-<span data-ttu-id="217dc-106">Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-get-messagereply.md) или [получения ответа на сообщение](channel-list-messagereplies.md).</span><span class="sxs-lookup"><span data-stu-id="217dc-106">To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) API.</span></span> 
+<span data-ttu-id="565bf-106">Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-get-messagereply.md) или [получения ответа на сообщение](channel-list-messagereplies.md).</span><span class="sxs-lookup"><span data-stu-id="565bf-106">To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) API.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="217dc-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="217dc-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="565bf-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="565bf-107">Permissions</span></span>
 
-<span data-ttu-id="217dc-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="217dc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="565bf-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="565bf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="217dc-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="217dc-110">Permission Type</span></span>|<span data-ttu-id="217dc-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="217dc-111">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="565bf-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="565bf-110">Permission Type</span></span>|<span data-ttu-id="565bf-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="565bf-111">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="217dc-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="217dc-112">Delegated (work or school account)</span></span>|<span data-ttu-id="217dc-113">Group.Read.All,Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="217dc-113">Group.Read.All,Group.ReadWrite.All</span></span>|
-|<span data-ttu-id="217dc-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="217dc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="217dc-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="217dc-115">Not supported</span></span>|
-|<span data-ttu-id="217dc-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="217dc-116">Application</span></span>| <span data-ttu-id="217dc-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="217dc-117">Not supported.</span></span> |
+|<span data-ttu-id="565bf-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="565bf-112">Delegated (work or school account)</span></span>|<span data-ttu-id="565bf-113">Group.Read.All,Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="565bf-113">Group.Read.All,Group.ReadWrite.All</span></span>|
+|<span data-ttu-id="565bf-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="565bf-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="565bf-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="565bf-115">Not supported</span></span>|
+|<span data-ttu-id="565bf-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="565bf-116">Application</span></span>| <span data-ttu-id="565bf-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="565bf-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="217dc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="217dc-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="565bf-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="565bf-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="217dc-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="217dc-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="565bf-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="565bf-119">Optional query parameters</span></span>
 
-<span data-ttu-id="217dc-120">Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.</span><span class="sxs-lookup"><span data-stu-id="217dc-120">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span> <span data-ttu-id="217dc-121">Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="217dc-121">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
+<span data-ttu-id="565bf-120">Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.</span><span class="sxs-lookup"><span data-stu-id="565bf-120">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span> <span data-ttu-id="565bf-121">Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="565bf-121">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="217dc-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="217dc-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="565bf-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="565bf-122">Request headers</span></span>
 
-| <span data-ttu-id="217dc-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="217dc-123">Header</span></span>       | <span data-ttu-id="217dc-124">Значение</span><span class="sxs-lookup"><span data-stu-id="217dc-124">Value</span></span> |
+| <span data-ttu-id="565bf-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="565bf-123">Header</span></span>       | <span data-ttu-id="565bf-124">Значение</span><span class="sxs-lookup"><span data-stu-id="565bf-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="217dc-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="217dc-125">Authorization</span></span>  | <span data-ttu-id="217dc-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="217dc-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="565bf-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="565bf-125">Authorization</span></span>  | <span data-ttu-id="565bf-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="565bf-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="217dc-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="217dc-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="565bf-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="565bf-128">Request body</span></span>
 
-<span data-ttu-id="217dc-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="217dc-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="565bf-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="565bf-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="217dc-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="217dc-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="565bf-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="565bf-130">Response</span></span>
 
-<span data-ttu-id="217dc-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="217dc-131">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span>
+<span data-ttu-id="565bf-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="565bf-131">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="217dc-132">Пример</span><span class="sxs-lookup"><span data-stu-id="217dc-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="565bf-132">Пример</span><span class="sxs-lookup"><span data-stu-id="565bf-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="217dc-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="217dc-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="565bf-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="565bf-133">Request</span></span>
 
-<span data-ttu-id="217dc-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="217dc-134">Here is an example of the request.</span></span>
+<span data-ttu-id="565bf-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="565bf-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"],
@@ -67,10 +67,10 @@ GET /teams/{id}/channels/{id}/messages
 ```http
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages
 ```
-##### <a name="response"></a><span data-ttu-id="217dc-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="217dc-135">Response</span></span>
-<span data-ttu-id="217dc-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="217dc-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="565bf-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="565bf-135">Response</span></span>
+<span data-ttu-id="565bf-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="565bf-136">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="217dc-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="217dc-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="565bf-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="565bf-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,6 +98,7 @@ Content-type: application/json
             "importance": "normal",
             "locale": "en-us",
             "policyViolation": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1555375673184?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1555375673184&parentMessageId=1555375673184",
             "from": {
                 "application": null,
                 "device": null,
@@ -144,6 +145,7 @@ Content-type: application/json
             "importance": "normal",
             "locale": "en-us",
             "policyViolation": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1548100551644?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1548100551644&parentMessageId=1548100551644",
             "from": {
                 "application": null,
                 "device": null,
@@ -205,6 +207,7 @@ Content-type: application/json
             "importance": "high",
             "locale": "en-us",
             "policyViolation": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1548100547534?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1548100547534&parentMessageId=1548100547534",
             "from": {
                 "application": null,
                 "device": null,
@@ -226,11 +229,11 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="217dc-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="217dc-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="217dc-140">C#</span><span class="sxs-lookup"><span data-stu-id="217dc-140">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="565bf-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="565bf-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="565bf-140">C#</span><span class="sxs-lookup"><span data-stu-id="565bf-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_channel_messages-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="217dc-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="217dc-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="565bf-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="565bf-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_channel_messages-Javascript-snippets.md)]
 
 ---
