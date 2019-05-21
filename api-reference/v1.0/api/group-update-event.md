@@ -4,12 +4,12 @@ description: Обновление объекта event.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 9b6c61ba2e63fab0572a9efc76dccc56c581be0d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 14d86f4358a231e8cf93f2dcacfe1f0282820e73
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613057"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34311345"
 ---
 # <a name="update-event"></a>Обновление события
 Обновление объекта [event](../resources/event.md).
@@ -35,11 +35,11 @@ PATCH /groups/{id}/calendar/events/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
@@ -47,23 +47,17 @@ PATCH /groups/{id}/calendar/events/{id}
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4", "AAMkADZlAAAAABERAAA="],
   "name": "update_group_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/events/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/calendar/events/AAMkADZlAAAAABERAAA=
 Content-type: application/json
-Content-length: 211
 
-{
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
-  },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+{ 
+  "location":{
+      "displayName":"Conf Room 2"
+  }
 }
 ```
 
@@ -72,16 +66,140 @@ Content-length: 211
 
 <!-- {
   "blockType": "response",
+  "@odata.type": "microsoft.graph.event",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('01d4ee64-15ce-491e-bad1-b91aa3223df4')/calendar/events/$entity",
+    "@odata.etag": "W/\"Na8DfbsBGUG8JeyvlwNi5wAAHMKyZg==\"",
+    "id": "AAMkADZlAAAAABERAAA=",
+    "createdDateTime": "2019-04-06T13:19:09.2517612Z",
+    "lastModifiedDateTime": "2019-05-20T00:14:51.2677891Z",
+    "changeKey": "Na8DfbsBGUG8JeyvlwNi5wAAHMKyZg==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "iCalUId": "040000008200E00074C5B7101A82E00800000000B7CA7D517BECD40100000000000000001000000011E38F935AD4FF41BDAB12A2F3E15103",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Planogram Training",
+    "bodyPreview": "Need more help with visual merchandising?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADZlAAAAABERAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "recurrence": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\n<div>Need more help with visual merchandising?\r\n</div>\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2019-04-16T22:00:00.0000000",
+        "timeZone": "UTC"
+    },
+    "end": {
+        "dateTime": "2019-04-16T23:00:00.0000000",
+        "timeZone": "UTC"
+    },
+    "location": {
+        "displayName": "Conf Room 2",
+        "locationType": "default",
+        "uniqueId": "Conf Room 2",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Conf Room 2",
+            "locationType": "default",
+            "uniqueId": "Conf Room 2",
+            "uniqueIdType": "private"
+        }
+    ],
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "accepted",
+                "time": "2019-04-06T13:19:12.1060982Z"
+            },
+            "emailAddress": {
+                "name": "Johanna Lorenz",
+                "address": "JohannaL@contoso.OnMicrosoft.com"
+            }
+        },
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Retail",
+                "address": "Retail@contoso.onmicrosoft.com"
+            }
+        },
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.OnMicrosoft.com"
+            }
+        },
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Megan Bowen",
+                "address": "MeganB@contoso.OnMicrosoft.com"
+            }
+        },
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Nestor Wilke",
+                "address": "NestorW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Retail",
+            "address": "Retail@contoso.onmicrosoft.com"
+        }
+    }
+}
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_group_event-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_group_event-Javascript-snippets.md)]
 
 ---

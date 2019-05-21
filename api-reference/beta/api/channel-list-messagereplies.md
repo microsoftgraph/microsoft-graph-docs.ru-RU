@@ -4,12 +4,12 @@ description: Перечисление всех ответов на сообще�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a42695839b71d3eb8f33b3b605d5d701f2f7f395
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 1236e94f9ec15a5b2680d7dcdce322fd7db4ace8
+ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635465"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34310771"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
@@ -43,7 +43,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -90,6 +90,7 @@ Content-type: application/json
             "importance": "normal",
             "locale": "en-us",
             "policyViolation": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1555377090002?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1555377090002&parentMessageId=1555375673184",
             "from": {
                 "application": null,
                 "device": null,
@@ -150,6 +151,7 @@ Content-type: application/json
             "importance": "normal",
             "locale": "en-us",
             "policyViolation": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1555375848360?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1555375848360&parentMessageId=1555375673184",
             "from": {
                 "application": null,
                 "device": null,
@@ -186,11 +188,11 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_channel_message_replies-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_channel_message_replies-Javascript-snippets.md)]
 
 ---
