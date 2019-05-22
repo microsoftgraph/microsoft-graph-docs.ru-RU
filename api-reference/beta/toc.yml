@@ -8973,6 +8973,10 @@ items:
                 href: api/chat-list-messages.md
               - name: Получение сообщения в чате
                 href: api/chat-get-message.md
+              - name: Получение участников в чате
+                href: api/conversationmember-list.md
+              - name: Получение одного участника в чате
+                href: api/conversationmember-get.md
           - name: Приложения
             href: resources/teamsapp.md
             items:
