@@ -4,12 +4,12 @@ description: Чат — это коллекция chatMessages между одн
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1091021235a50d3dfa237467e319da9b131b7a72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339719"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344978"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -23,7 +23,9 @@ ms.locfileid: "33339719"
 |:---------------|:--------|:----------|
 |[Список чатов](../api/chat-list.md) | Коллекция [чата](channel.md) | Получение списка сеансов, в которые входит пользователь.|
 |[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.|
-|[ПереЧисление сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в 1:1 или группе чата. |
+|[Список членов чата](../api/conversationmember-list.md) | Коллекция [конверсатионмембер](conversationmember.md) | Получение списка всех пользователей в чате.|
+|[Получение члена чата](../api/conversationmember-get.md) | [конверсатионмембер](conversationmember.md) | Получение одного пользователя в чате.|
+|[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
 
 ## <a name="properties"></a>Свойства
@@ -38,6 +40,7 @@ ms.locfileid: "33339719"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
+| members | Коллекция [конверсатионмембер](conversationmember.md) | Коллекция всех людей в чате. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
