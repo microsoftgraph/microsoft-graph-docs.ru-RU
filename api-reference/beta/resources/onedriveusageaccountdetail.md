@@ -3,12 +3,12 @@ title: Тип ресурса Онедривеусажеаккаунтдетаи�
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c13e03d1170b0ebbc53394541c4564c60c67e78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcf75fad8c39a543e69fc378546a2621f24eaeab
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563548"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344929"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>Тип ресурса Онедривеусажеаккаунтдетаил
 
@@ -19,6 +19,7 @@ ms.locfileid: "32563548"
 | Репортрефрешдате       | Дата    |
 | siteUrl                 | String  |
 | Овнердисплайнаме        | String  |
+| ОвнерпринЦипалнаме      | String  |
 | isDeleted               | Boolean |
 | Ластактивитидате        | Дата    |
 | Филекаунт               | Int64   |
@@ -41,6 +42,7 @@ ms.locfileid: "32563548"
   "reportRefreshDate": "Date", 
   "siteUrl": "String", 
   "ownerDisplayName": "String", 
+  "ownerPrincipalName": "String", 
   "isDeleted": true, 
   "lastActivityDate": "Date", 
   "fileCount": 1024, 
