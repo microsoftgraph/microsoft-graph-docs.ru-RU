@@ -1,17 +1,23 @@
-
-```Cs
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 589b3b16ea4adbb15d1dda5e354fdfdeff4ffdaa
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34462464"
+---
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var actions = new MessageRuleActions
-{
-    MarkImportance = Importance.High,
-};
 
 var messageRule = new MessageRule
 {
     DisplayName = "Important from partner",
-    Actions = actions,
+    Actions = new MessageRuleActions
+    {
+        MarkImportance = Importance.High
+    }
 };
 
 await graphClient.Me.MailFolders["inbox"].MessageRules["AQAAAJ5dZqA="]
