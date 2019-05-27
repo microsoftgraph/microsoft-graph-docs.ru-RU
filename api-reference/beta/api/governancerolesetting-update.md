@@ -2,12 +2,12 @@
 title: Обновление Говернанцеролесеттинг
 description: Обновление свойств объекта Говернанцеролесеттинг.
 localization_priority: Normal
-ms.openlocfilehash: a35cec14924ac4d4c41966da3b631dcbfebc2644
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6f6b9d0fb565532a4f610c6434843c1f09aa259d
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593458"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422292"
 ---
 # <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
 
@@ -24,7 +24,7 @@ ms.locfileid: "33593458"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 | Content-Type  | application/json|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для [говернанцерулесеттингс](../resources/governancerulesetting.md) , которые необходимо обновить. 
 
 | Свойство     | Тип   |Описание|
@@ -88,11 +88,11 @@ Content-length: 350
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_governancerolesetting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_governancerolesetting-Javascript-snippets.md)]
 
 ---

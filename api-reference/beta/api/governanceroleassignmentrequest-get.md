@@ -2,12 +2,12 @@
 title: Получение governanceRoleAssignmentRequest
 description: 'Получение governanceRoleAssignmentRequest. '
 localization_priority: Normal
-ms.openlocfilehash: 8c07aeed9589004051c4db89397979b955bb4dfd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ce48ed5596d9ad3000bc7ee24ff67c08d0b1814b
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324237"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422418"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324237"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 Кроме области разрешений, для него требуется запрашивающий 
 *   для ресурса по крайней мере одно назначение роли; также

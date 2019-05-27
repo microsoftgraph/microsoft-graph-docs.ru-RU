@@ -2,12 +2,12 @@
 title: Обновление Говернанцеролеассигнментрекуестс
 description: Позволяет администраторам обновлять свои решения (`AdminApproved` или `AdminDenied`) в говернанцеролеассигнментрекуестс, которые находятся в состоянии `PendingAdminDecision`.
 localization_priority: Normal
-ms.openlocfilehash: a20e583d701dca988b935b21e1d5874efcff6415
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b123345ed14bfe3f12471f70a24df5e02aca0f11
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593503"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422341"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление Говернанцеролеассигнментрекуестс
 
@@ -24,7 +24,7 @@ ms.locfileid: "33593503"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 | Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
@@ -60,7 +60,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/updateRequest
 ```
-##### <a name="request-body"></a>Текст запроса
+##### <a name="request-body"></a>Тело запроса
 ```json
 {
   "reason":"approve the request to extend role assignment",
@@ -73,11 +73,11 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
   "assignmentState": "Eligible"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
 
 ---

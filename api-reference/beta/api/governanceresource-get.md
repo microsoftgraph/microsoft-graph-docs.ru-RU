@@ -2,12 +2,12 @@
 title: Получение governanceResource
 description: Получение свойств и связей объекта governanceResource.
 localization_priority: Normal
-ms.openlocfilehash: 30c5c5404e11ba5394c306c8d6196cdf58954d25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 346ebe770b12d9a66c77951521e59b453fbc8ea6
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329647"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422432"
 ---
 # <a name="get-governanceresource"></a>Получение governanceResource
 
@@ -22,7 +22,7 @@ ms.locfileid: "33329647"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
 
