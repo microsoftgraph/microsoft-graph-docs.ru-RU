@@ -2,12 +2,12 @@
 title: Список Говернанцеролеассигнментрекуестс
 description: 'Получение коллекции Говернанцеролеассигнментрекуестс. '
 localization_priority: Normal
-ms.openlocfilehash: 53399bfdc0bc30c2c28c0ad97e5111908e395fc1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 1f51c2be86424162e1c7003aaed9d34a352cbfa1
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329609"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422453"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Список Говернанцеролеассигнментрекуестс
 
@@ -22,11 +22,11 @@ ms.locfileid: "33329609"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-ПереЧисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) для ресурса.
+Перечисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) для ресурса.
     
 >**Примечание:** Кроме области разрешений, запрос должен иметь по крайней мере одно назначение роли для ресурса.
 
@@ -34,13 +34,13 @@ ms.locfileid: "33329609"
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-ПереЧисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) .
+Перечисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) .
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-ПереЧисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) , которые являются ожидающими решениями администратора.
+Перечисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) , которые являются ожидающими решениями администратора.
     
 >**Примечание:** В этом запросе, кроме области разрешений, должен быть по крайней мере одно `Active` назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 

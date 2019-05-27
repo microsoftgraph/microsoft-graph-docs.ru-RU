@@ -2,12 +2,12 @@
 title: Экспорт Говернанцеролеассигнментрекуестс
 description: Получение коллекции Говернанцеролеассигнментрекуестс в формате `application/octet-stream`, который можно проанализировать как CSV-файл в браузере.
 localization_priority: Normal
-ms.openlocfilehash: c01234ce4976d6f900530bdd06d31a4df8e325b0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 454df89b014d3f8e0ed9a80d48b0ba7d97c29558
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324183"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422408"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Экспорт Говернанцеролеассигнментрекуестс
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324183"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 
 ## <a name="http-request"></a>HTTP-запрос

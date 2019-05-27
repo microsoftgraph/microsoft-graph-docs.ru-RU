@@ -2,12 +2,12 @@
 title: Создание governanceRoleAssignmentRequest
 description: Создайте запрос на назначение роли, который будет представлять нужную операцию для назначения роли. В приведенной ниже таблице перечислены операции.
 localization_priority: Normal
-ms.openlocfilehash: 2ab5328b9841c157a031e3e0ab9ff7599ddcaf57
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: be27c8e0bab24f6a83e970b9aae46d0742be7c10
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593482"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422369"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -35,7 +35,7 @@ ms.locfileid: "33593482"
 |:---------------------------------------|:------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Привилежедакцесс. ReadWrite. Азурересаурцес |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                            |
-| Для приложений                            | Привилежедакцесс. ReadWrite. Азурересаурцес |
+| Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,9 +52,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Авторизация | Bearer {code}    |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в формате JSON.
+В тексте запроса добавьте представление объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в формате JSON.
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
@@ -181,11 +181,11 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
 
 ---

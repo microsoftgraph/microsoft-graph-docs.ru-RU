@@ -2,12 +2,12 @@
 title: Список Говернанцероледефинитионс
 description: Получение коллекции Говернанцероледефинитионс для ресурса.
 localization_priority: Normal
-ms.openlocfilehash: b79a8c27a6d2c26b5f827d87762f7edc9c0aaf3b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ec648687b70dac37b6775ac1d3d14b3fcd6c7b7e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324240"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422481"
 ---
 # <a name="list-governanceroledefinitions"></a>Список Говернанцероледефинитионс
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "33324240"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
 

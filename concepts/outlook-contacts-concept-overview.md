@@ -4,12 +4,12 @@ description: Контакты Outlook позволяют хранить данн
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 241227993a8194d955d0a28f8fcfaf9f946a1e68
+ms.sourcegitcommit: 17eec88891d62b27dcc5d0abdff9fcff2186b31f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555215"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34407081"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Обзор API для личных контактов Outlook
 
@@ -33,7 +33,7 @@ API контактов позволяет упорядочивать ваших 
 
 ### <a name="share-contact-information"></a>Общий доступ к информации контактов
 
-API контактов позволяет получать элементы контактов вошедшего пользователя или пользователей, которые поделились своими контактами или делегировали их вошедшему пользователю. Например, если Григорий поделился папкой контактов с Артемом или делегировал доступ к ней, то [делегированные разрешения](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions) от Артема позволят вам читать общие календарь и контент Григория.
+API контактов позволяет получать элементы контактов вошедшего пользователя или пользователей, которые поделились своими контактами или делегировали их вошедшему пользователю. Например, если Григорий поделился папкой контактов с Артемом или делегировал доступ к ней, то [делегированные разрешения](./auth/auth-concepts#microsoft-graph-permissions) от Артема позволят вам читать общие календарь и контент Григория.
 
 
 ### <a name="leverage-people-api-in-microsoft-graph-to-make-better-use-of-all-people-data"></a>Использование API людей в Microsoft Graph для более эффективного использования всех данных пользователей

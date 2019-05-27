@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 887bcdc17dce733509c2a9763c91a65e46e7c644
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: e4f8be6555aef71bfcb67f8fbc8671bacf6e6728
+ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34311177"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34344985"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,13 @@ ms.locfileid: "34311177"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="may-2019"></a>Май 2019 г.
+
+### <a name="reports-apis"></a>API отчетов
+
+| **Тип изменения** | **Version** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
+| Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 
 ### <a name="directory-apis"></a>API каталогов
 | **Тип изменения** | **Version** | **Описание** |
@@ -77,12 +84,6 @@ ms.locfileid: "34311177"
 | **Тип изменения** | **Version** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), включающие следующие ресурсы и операции:<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Обновление объектов secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
-
-### <a name="microsoft-teams-apis"></a>API Microsoft Teams
-
-| **Тип изменения** | **Version**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлены свойства **webUrl** для [чата](/graph/api/resources/chatmessage).|
 
 
 ## <a name="april-2019"></a>Апрель 2019 г.
@@ -149,7 +150,8 @@ ms.locfileid: "34311177"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |1.0 | Добавлена поддержка разрешений приложений для ресурса [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0).|
 |Дополнение |1.0| Добавлены свойства **email** и **webUrl** для [канала](/graph/api/resources/channel?view=graph-rest-1.0).|
-| Дополнение | бета | Добавлены ресурсы [chat](/api-reference/beta/resources/chat.md) и соответствующие методы. |
+| Дополнение | бета | Добавлены ресурсы [чата](/api-reference/beta/resources/chat.md) и соответствующие методы. |
+| Дополнение | бета | Добавлены ресурсы [участника беседы](/api-reference/beta/resources/conversationmember.md) и соответствующие методы. |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>API OneDrive и SharePoint
 
@@ -1184,7 +1186,7 @@ ms.locfileid: "34311177"
 |Дополнение|Бета-версия|Добавлены свойства **localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees**, **localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers**, **localSecurityOptionsDisableServerDigitallySignCommunicationsAlways**, **localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees**, **localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares**, **localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts**, **localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares**, **localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange** и **localSecurityOptionsSmartCardRemovalBehavior** объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлены свойства **showInstallationProgress**, **blockDeviceSetupRetryByUser**, **allowDeviceResetOnInstallFailure**, **allowLogCollectionOnInstallFailure**, **customErrorMessage**, **installProgressTimeoutInMinutes** и **allowDeviceUseOnInstallFailure** объекта [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration?view=graph-rest-beta).|
 |Удаление|Бета-версия|Удалены свойства **title**, **bodyText**, **moreInfoUrl** и **moreInfoText** объекта [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration?view=graph-rest-beta).|
-|Дополнение|Бета-версия|Добавлены свойства **defenderBlockOnAccessProtection**, **defenderScheduleScanDay** и **defenderSubmitSamplesConsentType** объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta).|
+|Дополнение|бета|Добавлены свойства **defenderBlockOnAccessProtection**, **defenderScheduleScanDay** и **defenderSubmitSamplesConsentType** объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлены свойства **language** и **enrollmentSettings** объекта [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta).|
 |Дополнение|бета|Добавлено свойство **useDeviceContext** объекта [windowsMobileMSI](/graph/api/resources/intune-apps-windowsmobilemsi?view=graph-rest-beta).|
 |Удаление|Бета-версия|Удалено свойство **usernameSource** объекта [windowsPhoneEASEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration?view=graph-rest-beta).|
@@ -2280,7 +2282,7 @@ ms.locfileid: "34311177"
 | Удаление    | Бета-версия    | Удалено действие wipeByDeviceTag для [user](/graph/api/resources/intune-devicefe-user?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства **innerAuthenticationProtocolForEapTtls**, **innerAuthenticationProtocolForPeap** и **outerIdentityPrivacyTemporaryValue** для объекта [androidEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidenterprisewificonfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалены свойства **nonEapAuthenticationMethodForEapTtls**, **nonEapAuthenticationMethodForPeap** и **enableOuterIdentityPrivacy** для объекта [androidEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidenterprisewificonfiguration?view=graph-rest-beta). |
-| Изменение      | Бета-версия    | Добавлено свойство **deployedAppCount** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta). |
+| Изменение      | бета    | Добавлено свойство **deployedAppCount** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалены свойства **instanceDisplayName** и **settingPlatform** для объекта [complianceSettingStateSummary](/graph/api/resources/compliancesettingstatesummary?view=graph-rest-beta). |
 | Изменение      | бета    | Добавлено свойство **deployedAppCount** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство **excludeGroup** для объекта [deviceCompliancePolicyGroupAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicygroupassignment?view=graph-rest-beta) |
@@ -2670,7 +2672,7 @@ ms.locfileid: "34311177"
 | Дополнение    | Бета-версия    | Добавлена функция [getTopMobileApps](/graph/api/intune-apps-mobileapp-gettopmobileapps?view=graph-rest-beta) к объекту [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
 | Дополнение    | Бета-версия    | Добавлена функция [verifyWindowsEnrollmentAutoDiscovery](/graph/api/intune-corpenrollment-devicemanagement-verifywindowsenrollmentautodiscovery?view=graph-rest-beta) к объекту [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
 | Удаление    | Бета-версия    | Удалены следующие объекты:<br/>**appProvisioningConfigGroupAssignment**;<br/>**defaultManagedAppConfiguration**;<br/>**enterpriseCertificate**;<br/>**managedDeviceMobileAppProvisioningConfigurationDeviceStatus**;<br/>**symantecCertificate**;<br/>**windows10WindowsInformationProtectionConfiguration**.<br/> |
-| Удаление    | Бета-версия    | Удалены следующие сложные типы:<br/>**mobileAppInstallSummary**;<br/>**windowsArchitecture**;<br/>**windowsDeviceType**.<br/> |
+| Удаление    | бета    | Удалены следующие сложные типы:<br/>**mobileAppInstallSummary**;<br/>**windowsArchitecture**;<br/>**windowsDeviceType**.<br/> |
 | Изменение      | Бета    | Добавлено свойство **webBrowserBlockPopups** к объекту [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалено свойство **webBrowserAllowPopups** из объекта [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство **appIdentifier** к объекту [androidStoreApp](/graph/api/resources/intune-apps-androidstoreapp?view=graph-rest-beta). |
