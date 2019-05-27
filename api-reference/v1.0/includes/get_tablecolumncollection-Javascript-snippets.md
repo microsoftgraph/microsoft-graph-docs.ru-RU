@@ -1,5 +1,13 @@
-
-```Javascript
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 1ea8eb2de6588420841df8ced3a59b08a9c99dac
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34475159"
+---
+```javascript
 
 const options = {
     authProvider,
@@ -8,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns')
-    .version('beta')
     .get();
 
 ```

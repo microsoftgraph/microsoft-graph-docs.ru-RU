@@ -1,22 +1,25 @@
 ---
 title: Создание пользователя
-description: Используйте этот API, чтобы создать нового пользователя.
+description: Создание пользователя.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5efcc4bd793ca876d1db5860785c3ba67d447ade
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8e7653095ded6d4146c07c37660260ba53190df5
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637124"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34479058"
 ---
 # <a name="create-user"></a>Создание пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать нового пользователя. Текст запроса содержит пользователя, которого требуется создать. Как минимум, необходимо указать необходимые свойства для пользователя. При необходимости можно указать любые другие записываемые свойства.
+Создание пользователя.
+В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -37,24 +40,28 @@ POST /users
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
+
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |boolean |Если учетная запись обеспечена — true, в противном случае — false.|
+|accountEnabled |Boolean |Если учетная запись обеспечена — true, в противном случае — false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя.|
 |userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com).|
 
-Так как **Пользовательский** ресурс поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавить настраиваемые свойства с собственными данными в экземпляр пользователя при его создании.
+Так как ресурс **User** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавлять настраиваемые свойства с собственными данными в экземпляр пользователя при его создании.
+
+[!NOTE]
+Федеративные пользователи, созданные с помощью этого API, будут вынуждены подписываться каждые 12 часов по умолчанию. Дополнительные сведения об изменении этого способа приведены в статье [исключения для времени существования маркеров](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвратит код отклика `201 Created` и объект [user](../resources/user.md) в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [user](../resources/user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -81,7 +88,11 @@ Content-type: application/json
 ```
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+[!NOTE]
+Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,11 +117,11 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_user_from_users_2-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_user_from_users_2-Javascript-snippets.md)]
 
 ---
