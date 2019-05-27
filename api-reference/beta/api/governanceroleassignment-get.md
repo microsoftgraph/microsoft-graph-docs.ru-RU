@@ -2,65 +2,65 @@
 title: Получение governanceRoleAssignment
 description: Получение свойств и связей объекта governanceRoleAssignment.
 localization_priority: Normal
-ms.openlocfilehash: 96499b214216576ce12f27fe448f1da9c7927847
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2e116baad573c8b99ab278771d1149ea3563209
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329769"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422425"
 ---
-# <a name="get-governanceroleassignment"></a><span data-ttu-id="2bd8b-103">Получение governanceRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="2bd8b-103">Get governanceRoleAssignment</span></span>
+# <a name="get-governanceroleassignment"></a><span data-ttu-id="29c2a-103">Получение governanceRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="29c2a-103">Get governanceRoleAssignment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2bd8b-104">Получение свойств и связей объекта [governanceRoleAssignment](../resources/governanceroleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="2bd8b-104">Retrieve the properties and relationships of a [governanceRoleAssignment](../resources/governanceroleassignment.md).</span></span>
+<span data-ttu-id="29c2a-104">Получение свойств и связей объекта [governanceRoleAssignment](../resources/governanceroleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="29c2a-104">Retrieve the properties and relationships of a [governanceRoleAssignment](../resources/governanceroleassignment.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2bd8b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2bd8b-105">Permissions</span></span>
-<span data-ttu-id="2bd8b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2bd8b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="29c2a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="29c2a-105">Permissions</span></span>
+<span data-ttu-id="29c2a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29c2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2bd8b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2bd8b-108">Permission type</span></span>      | <span data-ttu-id="2bd8b-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2bd8b-109">Permissions</span></span>              |
+|<span data-ttu-id="29c2a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="29c2a-108">Permission type</span></span>      | <span data-ttu-id="29c2a-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="29c2a-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2bd8b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2bd8b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2bd8b-111">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="2bd8b-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="2bd8b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2bd8b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2bd8b-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2bd8b-113">Not supported.</span></span>    |
-|<span data-ttu-id="2bd8b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2bd8b-114">Application</span></span> | <span data-ttu-id="2bd8b-115">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="2bd8b-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="29c2a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="29c2a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="29c2a-111">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="29c2a-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="29c2a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="29c2a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29c2a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="29c2a-113">Not supported.</span></span>    |
+|<span data-ttu-id="29c2a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="29c2a-114">Application</span></span> | <span data-ttu-id="29c2a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="29c2a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2bd8b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2bd8b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="29c2a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="29c2a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-1. <span data-ttu-id="2bd8b-117">Получение [governanceRoleAssignment](../resources/governanceroleassignment.md) для ресурса</span><span class="sxs-lookup"><span data-stu-id="2bd8b-117">Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource</span></span>
+1. <span data-ttu-id="29c2a-117">Получение [governanceRoleAssignment](../resources/governanceroleassignment.md) для ресурса</span><span class="sxs-lookup"><span data-stu-id="29c2a-117">Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource</span></span>
 
-    <span data-ttu-id="2bd8b-118">*Примечание. Кроме области разрешений, необходимо, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.*</span><span class="sxs-lookup"><span data-stu-id="2bd8b-118">*Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.*</span></span> 
+    <span data-ttu-id="29c2a-118">*Примечание. Кроме области разрешений, необходимо, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.*</span><span class="sxs-lookup"><span data-stu-id="29c2a-118">*Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.*</span></span> 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-2. <span data-ttu-id="2bd8b-119">Получение [governanceRoleAssignment](../resources/governanceroleassignment.md)</span><span class="sxs-lookup"><span data-stu-id="2bd8b-119">Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) of mine</span></span>
+2. <span data-ttu-id="29c2a-119">Получение [governanceRoleAssignment](../resources/governanceroleassignment.md)</span><span class="sxs-lookup"><span data-stu-id="29c2a-119">Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) of mine</span></span>
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2bd8b-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2bd8b-120">Optional query parameters</span></span>
-<span data-ttu-id="2bd8b-121">Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) `$filter` , не позволяющие настраивать ответ.</span><span class="sxs-lookup"><span data-stu-id="2bd8b-121">This method does **not** supports [OData Query Parameters](/graph/query-parameters) other than `$filter` to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="29c2a-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="29c2a-120">Optional query parameters</span></span>
+<span data-ttu-id="29c2a-121">Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) `$filter` , не позволяющие настраивать ответ.</span><span class="sxs-lookup"><span data-stu-id="29c2a-121">This method does **not** supports [OData Query Parameters](/graph/query-parameters) other than `$filter` to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2bd8b-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2bd8b-122">Request headers</span></span>
-| <span data-ttu-id="2bd8b-123">Имя</span><span class="sxs-lookup"><span data-stu-id="2bd8b-123">Name</span></span>      |<span data-ttu-id="2bd8b-124">Описание</span><span class="sxs-lookup"><span data-stu-id="2bd8b-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="29c2a-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="29c2a-122">Request headers</span></span>
+| <span data-ttu-id="29c2a-123">Имя</span><span class="sxs-lookup"><span data-stu-id="29c2a-123">Name</span></span>      |<span data-ttu-id="29c2a-124">Описание</span><span class="sxs-lookup"><span data-stu-id="29c2a-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2bd8b-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2bd8b-125">Authorization</span></span>  | <span data-ttu-id="2bd8b-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="2bd8b-126">Bearer {code}</span></span>|
+| <span data-ttu-id="29c2a-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="29c2a-125">Authorization</span></span>  | <span data-ttu-id="29c2a-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="29c2a-126">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2bd8b-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2bd8b-127">Request body</span></span>
-<span data-ttu-id="2bd8b-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2bd8b-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="2bd8b-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="2bd8b-129">Response</span></span>
-<span data-ttu-id="2bd8b-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2bd8b-130">If successful, this method returns a `200 OK` response code and [governanceRoleAssignment](../resources/governanceroleassignment.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2bd8b-131">Пример</span><span class="sxs-lookup"><span data-stu-id="2bd8b-131">Example</span></span>
+## <a name="request-body"></a><span data-ttu-id="29c2a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="29c2a-127">Request body</span></span>
+<span data-ttu-id="29c2a-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="29c2a-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="29c2a-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="29c2a-129">Response</span></span>
+<span data-ttu-id="29c2a-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="29c2a-130">If successful, this method returns a `200 OK` response code and [governanceRoleAssignment](../resources/governanceroleassignment.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="29c2a-131">Пример</span><span class="sxs-lookup"><span data-stu-id="29c2a-131">Example</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignment"
 }-->
-<span data-ttu-id="2bd8b-132">Получение [governanceRoleAssignment](../resources/governanceroleassignment.md) по подписке "Wingtip Toys — произ"</span><span class="sxs-lookup"><span data-stu-id="2bd8b-132">Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on subscription "Wingtip Toys - Prod"</span></span>
-##### <a name="request"></a><span data-ttu-id="2bd8b-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="2bd8b-133">Request</span></span>
+<span data-ttu-id="29c2a-132">Получение [governanceRoleAssignment](../resources/governanceroleassignment.md) по подписке "Wingtip Toys — произ"</span><span class="sxs-lookup"><span data-stu-id="29c2a-132">Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on subscription "Wingtip Toys - Prod"</span></span>
+##### <a name="request"></a><span data-ttu-id="29c2a-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="29c2a-133">Request</span></span>
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a><span data-ttu-id="2bd8b-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="2bd8b-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="29c2a-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="29c2a-134">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
