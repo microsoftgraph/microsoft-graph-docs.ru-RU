@@ -1,8 +1,16 @@
-
-```Javascript
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 97d3e2af844f9d0d25d60010ce7dae73065f6258
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34453147"
+---
+```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
@@ -16,6 +24,6 @@ const driveItem = {
 };
 
 let res = await client.api('/me/drive/items/{item-id}/copy')
-	.post(driveItem);
+    .post(driveItem);
 
 ```
