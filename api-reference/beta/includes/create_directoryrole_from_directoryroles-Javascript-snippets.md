@@ -1,5 +1,13 @@
-
-```Javascript
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 381cca61cccff66f1a73a67f14f97727ea827a0c
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34481123"
+---
+```javascript
 
 const options = {
     authProvider,
