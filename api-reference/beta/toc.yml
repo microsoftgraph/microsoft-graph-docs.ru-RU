@@ -7779,19 +7779,6 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: Отклонить
                     href: api/riskyusers-dismiss.md
-          - name: Политика инфраструктуры доверия
-            href: resources/trustframeworkpolicy.md
-            items:
-              - name: Список
-                href: api/trustframework-list-trustframeworkpolicies.md
-              - name: Создание
-                href: api/trustframework-post-trustframeworkpolicy.md
-              - name: Получение
-                href: api/trustframeworkpolicy-get.md
-              - name: Обновление
-                href: api/trustframework-put-trustframeworkpolicy.md
-              - name: Удаление
-                href: api/trustframeworkpolicy-delete.md
           - name: Поставщик удостоверений
             href: resources/identityprovider.md
             items:
@@ -7879,116 +7866,125 @@ items:
               - name: Список субъектов-служб и приложений
                 href: api/policy-list-appliesto.md
           - name: Управление привилегированными пользователями (PIM)
-            href: resources/privilegedidentitymanagement-root.md
             items:
-              - name: Привилегированная роль
-                href: resources/privilegedrole.md
+              - name: Управление привилегированными пользователями (PIM)
+                href: resources/privilegedidentitymanagement-root.md
+              - name: Azure AD
                 items:
-                  - name: Список привилегированных ролей
-                    href: api/privilegedrole-list.md
-                  - name: Получение привилегированной роли
-                    href: api/privilegedrole-get.md
-                  - name: Список назначений ролей
-                    href: api/privilegedrole-list-assignments.md
-                  - name: Самостоятельная активация роли
-                    href: api/privilegedrole-selfactivate.md
-                  - name: Самостоятельная деактивация роли
-                    href: api/privilegedrole-selfdeactivate.md
-                  - name: Получение параметров роли
-                    href: api/privilegedrolesettings-get.md
-                  - name: Обновление параметров роли
-                    href: api/privilegedrolesettings-update.md
-                  - name: Получение сводки по ролям
-                    href: api/privilegedrolesummary-get.md
-              - name: Назначение привилегированных ролей
-                href: resources/privilegedroleassignment.md
+                  - name: Azure AD
+                    href: resources/privilegedidentitymanagement-directory.md
+                  - name: Привилегированная роль
+                    href: resources/privilegedrole.md
+                    items:
+                      - name: Список привилегированных ролей
+                        href: api/privilegedrole-list.md
+                      - name: Получение привилегированной роли
+                        href: api/privilegedrole-get.md
+                      - name: Список назначений ролей
+                        href: api/privilegedrole-list-assignments.md
+                      - name: Самостоятельная активация роли
+                        href: api/privilegedrole-selfactivate.md
+                      - name: Самостоятельная деактивация роли
+                        href: api/privilegedrole-selfdeactivate.md
+                      - name: Получение параметров роли
+                        href: api/privilegedrolesettings-get.md
+                      - name: Обновление параметров роли
+                        href: api/privilegedrolesettings-update.md
+                      - name: Получение сводки по ролям
+                        href: api/privilegedrolesummary-get.md
+                  - name: Назначение привилегированных ролей
+                    href: resources/privilegedroleassignment.md
+                    items:
+                      - name: Список назначений ролей
+                        href: api/privilegedroleassignment-list.md
+                      - name: Получение назначения ролей
+                        href: api/privilegedroleassignment-get.md
+                      - name: Создание назначений ролей
+                        href: api/privilegedroleassignment-post-privilegedroleassignments.md
+                      - name: Удаление назначения ролей
+                        href: api/privilegedroleassignment-delete.md
+                      - name: Получение своих назначений ролей
+                        href: api/privilegedroleassignment-my.md
+                      - name: 'Выполнение назначения ролей, соответствующего требованиям'
+                        href: api/privilegedroleassignment-makeeligible.md
+                      - name: Выполнение бессрочного назначения ролей
+                        href: api/privilegedroleassignment_makepermanent.md
+                  - name: Запрос назначения привилегированных ролей
+                    href: resources/privilegedroleassignmentrequest.md
+                    items:
+                      - name: Список назначений ролей
+                        href: api/privilegedroleassignmentrequest-list.md
+                      - name: Создание назначений ролей
+                        href: api/privilegedroleassignmentrequest-post.md
+                      - name: Отмена назначений ролей
+                        href: api/privilegedroleassignmentrequest-cancel.md
+                      - name: Получение своих назначений ролей
+                        href: api/privilegedroleassignmentrequest-my.md
+                  - name: Привилегированные утверждения
+                    href: resources/privilegedapproval.md
+                    items:
+                      - name: Список привилегированных утверждений
+                        href: api/privilegedapproval-list.md
+                      - name: Получение привилегированных утверждений
+                        href: api/privilegedapproval-get.md
+                      - name: Обновление назначения ролей
+                        href: api/privilegedapproval-update.md
+                  - name: Событие аудита
+                    href: resources/privilegedoperationevent.md
+                    items:
+                      - name: Список событий аудита
+                        href: api/privilegedoperationevent-list.md
+              - name: Ресурсы Azure
                 items:
-                  - name: Список назначений ролей
-                    href: api/privilegedroleassignment-list.md
-                  - name: Получение назначения ролей
-                    href: api/privilegedroleassignment-get.md
-                  - name: Создание назначений ролей
-                    href: api/privilegedroleassignment-post-privilegedroleassignments.md
-                  - name: Удаление назначения ролей
-                    href: api/privilegedroleassignment-delete.md
-                  - name: Получение своих назначений ролей
-                    href: api/privilegedroleassignment-my.md
-                  - name: 'Выполнение назначения ролей, соответствующего требованиям'
-                    href: api/privilegedroleassignment-makeeligible.md
-                  - name: Выполнение бессрочного назначения ролей
-                    href: api/privilegedroleassignment_makepermanent.md
-              - name: Запрос назначения привилегированных ролей
-                href: resources/privilegedroleassignmentrequest.md
-                items:
-                  - name: Список назначений ролей
-                    href: api/privilegedroleassignmentrequest-list.md
-                  - name: Создание назначений ролей
-                    href: api/privilegedroleassignmentrequest-post.md
-                  - name: Отмена назначений ролей
-                    href: api/privilegedroleassignmentrequest-cancel.md
-                  - name: Получение своих назначений ролей
-                    href: api/privilegedroleassignmentrequest-my.md
-              - name: Привилегированные утверждения
-                href: resources/privilegedapproval.md
-                items:
-                  - name: Список привилегированных утверждений
-                    href: api/privilegedapproval-list.md
-                  - name: Получение привилегированных утверждений
-                    href: api/privilegedapproval-get.md
-                  - name: Обновление назначения ролей
-                    href: api/privilegedapproval-update.md
-              - name: Событие аудита
-                href: resources/privilegedoperationevent.md
-                items:
-                  - name: Список событий аудита
-                    href: api/privilegedoperationevent-list.md
-              - name: Управляемые ресурсы
-                href: resources/governanceresource.md
-                items:
-                  - name: Перечисление
-                    href: api/governanceresource-list.md
-                  - name: Получение
-                    href: api/governanceresource-get.md
-                  - name: Зарегистрировать
-                    href: api/governanceresource-register.md
-              - name: Определения ролей
-                href: resources/governanceroledefinition.md
-                items:
-                  - name: Перечисление
-                    href: api/governanceroledefinition-list.md
-                  - name: Получение
-                    href: api/governanceroledefinition-get.md
-              - name: Параметры роли
-                href: resources/governancerolesetting.md
-                items:
-                  - name: Список
-                    href: api/governancerolesetting-list.md
-                  - name: Получение
-                    href: api/governancerolesetting-get.md
-                  - name: Обновление
-                    href: api/governancerolesetting-update.md
-              - name: Назначения ролей
-                href: resources/governanceroleassignment.md
-                items:
-                  - name: Перечисление
-                    href: api/governanceroleassignment-list.md
-                  - name: Получение
-                    href: api/governanceroleassignment-get.md
-                  - name: Экспорт
-                    href: api/governanceroleassignment-export.md
-              - name: Запросы назначения роли
-                href: resources/governanceroleassignmentrequest.md
-                items:
-                  - name: Список
-                    href: api/governanceroleassignmentrequest-list.md
-                  - name: Создание
-                    href: api/governanceroleassignmentrequest-post.md
-                  - name: Получение
-                    href: api/governanceroleassignmentrequest-get.md
-                  - name: Обновление
-                    href: api/governanceroleassignmentrequest-update.md
-                  - name: Отмена
-                    href: api/governanceroleassignmentrequest-cancel.md
+                  - name: Ресурсы Azure
+                    href: resources/privilegedidentitymanagement-resources.md
+                  - name: Управляемые ресурсы
+                    href: resources/governanceresource.md
+                    items:
+                      - name: Список
+                        href: api/governanceresource-list.md
+                      - name: Получение
+                        href: api/governanceresource-get.md
+                      - name: Зарегистрировать
+                        href: api/governanceresource-register.md
+                  - name: Определения ролей
+                    href: resources/governanceroledefinition.md
+                    items:
+                      - name: Список
+                        href: api/governanceroledefinition-list.md
+                      - name: Получение
+                        href: api/governanceroledefinition-get.md
+                  - name: Параметры роли
+                    href: resources/governancerolesetting.md
+                    items:
+                      - name: Список
+                        href: api/governancerolesetting-list.md
+                      - name: Получение
+                        href: api/governancerolesetting-get.md
+                      - name: Обновление
+                        href: api/governancerolesetting-update.md
+                  - name: Назначения ролей
+                    href: resources/governanceroleassignment.md
+                    items:
+                      - name: Перечисление
+                        href: api/governanceroleassignment-list.md
+                      - name: Получение
+                        href: api/governanceroleassignment-get.md
+                      - name: Экспорт
+                        href: api/governanceroleassignment-export.md
+                  - name: Запросы назначения роли
+                    href: resources/governanceroleassignmentrequest.md
+                    items:
+                      - name: Список
+                        href: api/governanceroleassignmentrequest-list.md
+                      - name: Создание
+                        href: api/governanceroleassignmentrequest-post.md
+                      - name: Получение
+                        href: api/governanceroleassignmentrequest-get.md
+                      - name: Обновление
+                        href: api/governanceroleassignmentrequest-update.md
+                      - name: Отмена
+                        href: api/governanceroleassignmentrequest-cancel.md
           - name: Субъект-служба
             href: resources/serviceprincipal.md
             items:
@@ -8066,6 +8062,19 @@ items:
                 href: api/agreement-delete.md
               - name: Список состояний принятия
                 href: api/user-list-agreementacceptances.md
+          - name: Политика инфраструктуры доверия
+            href: resources/trustframeworkpolicy.md
+            items:
+              - name: Список
+                href: api/trustframework-list-trustframeworkpolicies.md
+              - name: Создание
+                href: api/trustframework-post-trustframeworkpolicy.md
+              - name: Получение
+                href: api/trustframeworkpolicy-get.md
+              - name: Обновление
+                href: api/trustframework-put-trustframeworkpolicy.md
+              - name: Удаление
+                href: api/trustframeworkpolicy-delete.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
@@ -9271,7 +9280,7 @@ items:
                 href: api/range-unmerge.md
               - name: Очистка
                 href: api/range-clear.md
-              - name: Удалить
+              - name: Удаление
                 href: api/range-delete.md
           - name: Таблица
             href: resources/workbooktable.md
