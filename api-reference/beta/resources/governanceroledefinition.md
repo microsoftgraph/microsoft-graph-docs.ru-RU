@@ -2,12 +2,12 @@
 title: Тип ресурса Говернанцероледефинитион
 description: Представляет определения ролей. Для ресурсов Azure он может представлять роли Azure RBAC, такие как Owner, Reader, корреспондент и т. д.
 localization_priority: Normal
-ms.openlocfilehash: 27b4b144f834f3b5eb4270a2875da5add10efb9d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c760cc04b8dae39c06d0dbc2c4821401bd75a699
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333759"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422509"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
 
@@ -20,10 +20,12 @@ ms.locfileid: "33333759"
 ## <a name="methods"></a>Методы
 
 | Метод          | Возвращаемый тип |Описание|
-|:---------------|:--------|:--------|:----------|
-|[Список](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |ПереЧисление коллекции определений ролей для ресурса.|
-|[Получение](../api/governanceroledefinition-get.md) | [Говернанцероледефинитион](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
+|:---------------|:--------|:--------|
+|[List](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |Перечисление коллекции определений ролей для ресурса.|
+|[получение](../api/governanceroledefinition-get.md); | [Говернанцероледефинитион](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
+
 Нет `POST`, `PUT`, `PATCH`, `DELETE` поддерживается в `roleDefinitions` наборе сущностей для Now.
+
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----|:----------|:----------|:----------|

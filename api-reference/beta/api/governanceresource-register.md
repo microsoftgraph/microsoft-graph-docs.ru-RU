@@ -2,12 +2,12 @@
 title: Регистрация governanceResource
 description: Регистрация неуправляемого объекта governanceResource в PIM.
 localization_priority: Normal
-ms.openlocfilehash: a6ad89f799ee171971f7301ed039cf1b6d9111ea
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 814ccd84d449f20882e1febbf0d48216ba3f5b89
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329780"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422460"
 ---
 # <a name="register-governanceresource"></a>Регистрация governanceResource
 
@@ -24,7 +24,7 @@ ms.locfileid: "33329780"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /privilegedAccess/azureResources/resources/register
 | Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
-### <a name="request-body"></a>Текст запроса
+### <a name="request-body"></a>Тело запроса
 
 |Параметры      |Тип                 |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|

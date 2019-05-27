@@ -2,12 +2,12 @@
 title: Список Говернанцеролеассигнментс
 description: Получение коллекции Говернанцеролеассигнментс.
 localization_priority: Normal
-ms.openlocfilehash: 1e6d90c50503188e4b75b103f303e74af367081a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ed8ad77fdd2621bc14cad12a34b06836607b3b98
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324253"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422441"
 ---
 # <a name="list-governanceroleassignments"></a>Список Говернанцеролеассигнментс
 
@@ -22,20 +22,20 @@ ms.locfileid: "33324253"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-ПереЧисление коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md) для ресурса.
+Перечисление коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md) для ресурса.
 
 >**Примечание:** Кроме области разрешений, этот запрос требует, чтобы запрашивающая сторона состроила по крайней мере одно назначение роли для ресурса. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-ПереЧисление коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md) .
+Перечисление коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md) .
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```

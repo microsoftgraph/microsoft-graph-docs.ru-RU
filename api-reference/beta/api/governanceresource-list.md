@@ -2,12 +2,12 @@
 title: Список Говернанцересаурцес
 description: Получение коллекции governanceResource, к которой у запрашивающего есть доступ.
 localization_priority: Normal
-ms.openlocfilehash: e68e4633735d1eecb5d4994e3c2c70bf06a70e6a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fa82ddf97b394af747f73133446c8bc15d21ba36
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593545"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422412"
 ---
 # <a name="list-governanceresources"></a>Список Говернанцересаурцес
 
@@ -22,7 +22,7 @@ ms.locfileid: "33593545"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -100,11 +100,11 @@ Content-Length: 1289
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governanceresources-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governanceresources-Javascript-snippets.md)]
 
 ---

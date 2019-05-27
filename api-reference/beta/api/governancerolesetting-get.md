@@ -2,12 +2,12 @@
 title: Получение Говернанцеролесеттинг
 description: Получение свойств и связей объекта Говернанцеролесеттинг.
 localization_priority: Normal
-ms.openlocfilehash: d8d920e9abbe73de573fb41a6b7be76ae9914484
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 988fc237e76c0ec653fff768a617a08d33a6998e
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593454"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422348"
 ---
 # <a name="get-governancerolesetting"></a>Получение Говернанцеролесеттинг
 
@@ -23,7 +23,7 @@ ms.locfileid: "33593454"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса, к которому относится [говернанцеролесеттинг](../resources/governancerolesetting.md) .
 ## <a name="http-request"></a>HTTP-запрос
@@ -112,11 +112,11 @@ Content-length: 370
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_governancerolesetting-Javascript-snippets.md)]
 
 ---

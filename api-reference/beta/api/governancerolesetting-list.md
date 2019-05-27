@@ -2,12 +2,12 @@
 title: Список Говернанцеролесеттингс
 description: Получение коллекции Говернанцеролесеттингс для ресурса.
 localization_priority: Normal
-ms.openlocfilehash: 95762771cd52308459aec4e015c682e05307a43b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 64bfd50a4b289a820b99c32d76b831d1fb4338d9
+ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324291"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422446"
 ---
 # <a name="list-governancerolesettings"></a>Список Говернанцеролесеттингс
 
@@ -22,7 +22,7 @@ ms.locfileid: "33324291"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. ReadWrite. Азурересаурцес |
+|Для приложений | Не поддерживается. |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
 ## <a name="http-request"></a>HTTP-запрос
