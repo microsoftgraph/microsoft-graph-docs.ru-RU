@@ -108,10 +108,10 @@ Content-type: application/json
 ```
 #### <a name="sdk-sample-code"></a><span data-ttu-id="ceda0-133">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="ceda0-133">SDK sample code</span></span>
 # <a name="ctabcs"></a>[<span data-ttu-id="ceda0-134">C#</span><span class="sxs-lookup"><span data-stu-id="ceda0-134">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-drive-root-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/get-item-metadata-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[<span data-ttu-id="ceda0-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ceda0-135">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/get-item-metadata-Javascript-snippets.md)]
 
 ---
 
