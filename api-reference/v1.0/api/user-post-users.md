@@ -4,17 +4,19 @@ description: С помощью этого API можно создать объе
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d9c247c3d9befef7fb6f342ce063620e11a4d3a6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a856786402d45889790f50a0843153ef072415b3
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600829"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34466516"
 ---
 # <a name="create-user"></a>Создание пользователя
 
-С помощью этого API можно создать пользователя. В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+Создание пользователя. В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -28,13 +30,16 @@ ms.locfileid: "33600829"
 ```http
 POST /users
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
+
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
@@ -48,17 +53,25 @@ POST /users
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя.|
 |userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com).|
 
+Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.
+
+[!NOTE]
+Федеративные пользователи, созданные с помощью этого API, по умолчанию должны выполнять вход каждые 12 часов.  Дополнительные сведения об изменении этого параметра см. в разделе [Исключения для сроков действия маркеров](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвратит код отклика `201 Created` и объект [user](../resources/user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
@@ -74,14 +87,18 @@ Content-type: application/json
   }
 }
 ```
+
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
+
 ##### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -101,6 +118,7 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
+
 #### <a name="sdk-sample-code"></a>Пример кода SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]

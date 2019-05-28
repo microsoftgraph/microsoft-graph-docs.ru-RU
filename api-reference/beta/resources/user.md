@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
+ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345090"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "34475208"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -69,7 +69,8 @@ ms.locfileid: "33345090"
 |[getMailTips](../api/user-getmailtips.md)|Коллекия [mailTips](mailtips.md)|Возвращение подсказок о доступности одного или нескольких получателей для вошедшего пользователя. |
 |[getMemberGroups](../api/user-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Коллекция строк| Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Нет |Аннулирует все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значения свойства **refreshTokensValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения.|
+|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Нет |Аннулирует все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значения свойства **refreshTokensValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяется методом **revokeSignInSessions**.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**.|
 |[reminderView](../api/user-reminderview.md)|Коллекция [Reminder](reminder.md)|Возвращает список напоминаний календаря за указанный период времени.|
 |[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
 |[Перевод идентификаторов Outlook](../api/user-translateexchangeids.md) |Коллекция [типа ресурса convertIdResult](convertidresult.md)| Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.|
@@ -277,11 +278,14 @@ ms.locfileid: "33345090"
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
+  "faxNumber": "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -296,12 +300,17 @@ ms.locfileid: "33345090"
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesSamAccountName": "string",
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -311,8 +320,11 @@ ms.locfileid: "33345090"
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "proxyAddresses": ["string"],
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
@@ -343,17 +355,7 @@ ms.locfileid: "33345090"
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "employeeId": "string",
-  "faxNumber": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
-  "onPremisesSamAccountName": "string",
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
-  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "showInAddressList": true
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
 }
 ```
 
