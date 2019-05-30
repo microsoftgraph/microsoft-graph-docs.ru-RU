@@ -2,58 +2,58 @@
 title: 'Синчронизатионсчема: Парсикспрессион'
 description: '(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). '
 localization_priority: Normal
-ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 79cb683571fa7a5e1b48f93a1805ae5d7a4f7202
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536150"
 ---
-# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="28634-103">Синчронизатионсчема: Парсикспрессион</span><span class="sxs-lookup"><span data-stu-id="28634-103">synchronizationSchema: parseExpression</span></span>
+# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="12f1e-103">Синчронизатионсчема: Парсикспрессион</span><span class="sxs-lookup"><span data-stu-id="12f1e-103">synchronizationSchema: parseExpression</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="28634-104">Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД).</span><span class="sxs-lookup"><span data-stu-id="28634-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
+<span data-ttu-id="12f1e-104">Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД).</span><span class="sxs-lookup"><span data-stu-id="12f1e-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
 
-<span data-ttu-id="28634-105">Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span><span class="sxs-lookup"><span data-stu-id="28634-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
+<span data-ttu-id="12f1e-105">Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span><span class="sxs-lookup"><span data-stu-id="12f1e-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="28634-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="28634-106">Permissions</span></span>
-<span data-ttu-id="28634-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28634-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="12f1e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="12f1e-106">Permissions</span></span>
+<span data-ttu-id="12f1e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12f1e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="28634-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="28634-109">Permission type</span></span>                        | <span data-ttu-id="28634-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="28634-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="12f1e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="12f1e-109">Permission type</span></span>                        | <span data-ttu-id="12f1e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="12f1e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="28634-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="28634-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="28634-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28634-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="28634-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="28634-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="28634-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="28634-114">Not supported.</span></span>|
-|<span data-ttu-id="28634-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="28634-115">Application</span></span>                            |<span data-ttu-id="28634-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="28634-116">Not supported.</span></span>| 
+|<span data-ttu-id="12f1e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="12f1e-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="12f1e-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12f1e-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="12f1e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="12f1e-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="12f1e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12f1e-114">Not supported.</span></span>|
+|<span data-ttu-id="12f1e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="12f1e-115">Application</span></span>                            |<span data-ttu-id="12f1e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12f1e-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="28634-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="28634-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="12f1e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="12f1e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpression
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="28634-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="28634-118">Request headers</span></span>
-| <span data-ttu-id="28634-119">Имя</span><span class="sxs-lookup"><span data-stu-id="28634-119">Name</span></span>       | <span data-ttu-id="28634-120">Описание</span><span class="sxs-lookup"><span data-stu-id="28634-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="12f1e-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="12f1e-118">Request headers</span></span>
+| <span data-ttu-id="12f1e-119">Имя</span><span class="sxs-lookup"><span data-stu-id="12f1e-119">Name</span></span>       | <span data-ttu-id="12f1e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="12f1e-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="28634-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="28634-121">Authorization</span></span>  | <span data-ttu-id="28634-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="28634-122">Bearer {code}</span></span>|
+| <span data-ttu-id="12f1e-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="12f1e-121">Authorization</span></span>  | <span data-ttu-id="12f1e-122">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="12f1e-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="28634-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="28634-123">Request body</span></span>
-<span data-ttu-id="28634-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="28634-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="12f1e-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="12f1e-123">Request body</span></span>
+<span data-ttu-id="12f1e-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="12f1e-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="28634-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="28634-125">Parameter</span></span>    | <span data-ttu-id="28634-126">Тип</span><span class="sxs-lookup"><span data-stu-id="28634-126">Type</span></span>   |<span data-ttu-id="28634-127">Описание</span><span class="sxs-lookup"><span data-stu-id="28634-127">Description</span></span>|
+| <span data-ttu-id="12f1e-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="12f1e-125">Parameter</span></span>    | <span data-ttu-id="12f1e-126">Тип</span><span class="sxs-lookup"><span data-stu-id="12f1e-126">Type</span></span>   |<span data-ttu-id="12f1e-127">Описание</span><span class="sxs-lookup"><span data-stu-id="12f1e-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="28634-128">выражение</span><span class="sxs-lookup"><span data-stu-id="28634-128">expression</span></span>               |<span data-ttu-id="28634-129">String</span><span class="sxs-lookup"><span data-stu-id="28634-129">String</span></span>               |<span data-ttu-id="28634-130">Выражение для синтаксического анализа.</span><span class="sxs-lookup"><span data-stu-id="28634-130">Expression to parse.</span></span>|
-|<span data-ttu-id="28634-131">Тестинпутобжект</span><span class="sxs-lookup"><span data-stu-id="28634-131">testInputObject</span></span>          |[<span data-ttu-id="28634-132">Експрессионинпутобжект</span><span class="sxs-lookup"><span data-stu-id="28634-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="28634-133">Тестовый объект данных, с которым вычисляется выражение.</span><span class="sxs-lookup"><span data-stu-id="28634-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="28634-134">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="28634-134">Optional.</span></span>|
-|<span data-ttu-id="28634-135">Таржетаттрибутедефинитион</span><span class="sxs-lookup"><span data-stu-id="28634-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="28634-136">Аттрибутедефинитион</span><span class="sxs-lookup"><span data-stu-id="28634-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="28634-137">Определение атрибута, который будет сопоставлен с этим выражением.</span><span class="sxs-lookup"><span data-stu-id="28634-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="28634-138">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="28634-138">Optional.</span></span>|
+|<span data-ttu-id="12f1e-128">выражение</span><span class="sxs-lookup"><span data-stu-id="12f1e-128">expression</span></span>               |<span data-ttu-id="12f1e-129">String</span><span class="sxs-lookup"><span data-stu-id="12f1e-129">String</span></span>               |<span data-ttu-id="12f1e-130">Выражение для синтаксического анализа.</span><span class="sxs-lookup"><span data-stu-id="12f1e-130">Expression to parse.</span></span>|
+|<span data-ttu-id="12f1e-131">Тестинпутобжект</span><span class="sxs-lookup"><span data-stu-id="12f1e-131">testInputObject</span></span>          |[<span data-ttu-id="12f1e-132">Експрессионинпутобжект</span><span class="sxs-lookup"><span data-stu-id="12f1e-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="12f1e-133">Тестовый объект данных, с которым вычисляется выражение.</span><span class="sxs-lookup"><span data-stu-id="12f1e-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="12f1e-134">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="12f1e-134">Optional.</span></span>|
+|<span data-ttu-id="12f1e-135">Таржетаттрибутедефинитион</span><span class="sxs-lookup"><span data-stu-id="12f1e-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="12f1e-136">Аттрибутедефинитион</span><span class="sxs-lookup"><span data-stu-id="12f1e-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="12f1e-137">Определение атрибута, который будет сопоставлен с этим выражением.</span><span class="sxs-lookup"><span data-stu-id="12f1e-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="12f1e-138">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="12f1e-138">Optional.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="28634-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="28634-139">Response</span></span>
-<span data-ttu-id="28634-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [парсикспрессионреспонсе](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="28634-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="12f1e-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="12f1e-139">Response</span></span>
+<span data-ttu-id="12f1e-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [парсикспрессионреспонсе](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="12f1e-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="28634-141">Пример</span><span class="sxs-lookup"><span data-stu-id="28634-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="12f1e-141">Пример</span><span class="sxs-lookup"><span data-stu-id="12f1e-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="28634-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="28634-142">Request</span></span>
-<span data-ttu-id="28634-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="28634-143">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="12f1e-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="12f1e-142">Request</span></span>
+<span data-ttu-id="12f1e-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="12f1e-143">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
@@ -113,10 +113,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="28634-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="28634-144">Response</span></span>
-<span data-ttu-id="28634-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="28634-145">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="12f1e-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="12f1e-144">Response</span></span>
+<span data-ttu-id="12f1e-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="12f1e-145">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="28634-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="28634-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="12f1e-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="12f1e-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -170,9 +170,11 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="28634-148">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="28634-148">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="12f1e-148">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="12f1e-148">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="12f1e-149">C#</span><span class="sxs-lookup"><span data-stu-id="12f1e-149">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="28634-149">Язык</span><span class="sxs-lookup"><span data-stu-id="28634-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="12f1e-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="12f1e-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
 
 ---
@@ -189,6 +191,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

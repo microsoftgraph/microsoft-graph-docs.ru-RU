@@ -4,59 +4,59 @@ description: Передача активного вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ced05ad4539dadf490198d4a0ed70ea981672e3
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 92cb446303278d95eeb9f852491566b6305d468b
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635836"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536066"
 ---
-# <a name="call-transfer"></a><span data-ttu-id="42208-103">Call: Transfer</span><span class="sxs-lookup"><span data-stu-id="42208-103">call: transfer</span></span>
+# <a name="call-transfer"></a><span data-ttu-id="efa32-103">Call: Transfer</span><span class="sxs-lookup"><span data-stu-id="efa32-103">call: transfer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="42208-104">Передача активного вызова.</span><span class="sxs-lookup"><span data-stu-id="42208-104">Transfer an active call.</span></span>
+<span data-ttu-id="efa32-104">Передача активного вызова.</span><span class="sxs-lookup"><span data-stu-id="efa32-104">Transfer an active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="42208-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="42208-105">Permissions</span></span>
-<span data-ttu-id="42208-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42208-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="efa32-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="efa32-105">Permissions</span></span>
+<span data-ttu-id="efa32-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="efa32-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="42208-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="42208-108">Permission type</span></span> | <span data-ttu-id="42208-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="42208-109">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="efa32-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="efa32-108">Permission type</span></span> | <span data-ttu-id="efa32-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="efa32-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="42208-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="42208-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="42208-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="42208-111">Not Supported</span></span>                |
-| <span data-ttu-id="42208-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="42208-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42208-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="42208-113">Not Supported</span></span>                |
-| <span data-ttu-id="42208-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="42208-114">Application</span></span>     | <span data-ttu-id="42208-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="42208-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="efa32-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="efa32-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="efa32-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="efa32-111">Not Supported</span></span>                |
+| <span data-ttu-id="efa32-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="efa32-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="efa32-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="efa32-113">Not Supported</span></span>                |
+| <span data-ttu-id="efa32-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="efa32-114">Application</span></span>     | <span data-ttu-id="efa32-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="efa32-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="42208-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="42208-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efa32-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="efa32-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
 POST /applications/{id}/calls/{id}/transfer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="42208-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="42208-117">Request headers</span></span>
-| <span data-ttu-id="42208-118">Имя</span><span class="sxs-lookup"><span data-stu-id="42208-118">Name</span></span>          | <span data-ttu-id="42208-119">Описание</span><span class="sxs-lookup"><span data-stu-id="42208-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="efa32-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="efa32-117">Request headers</span></span>
+| <span data-ttu-id="efa32-118">Имя</span><span class="sxs-lookup"><span data-stu-id="efa32-118">Name</span></span>          | <span data-ttu-id="efa32-119">Описание</span><span class="sxs-lookup"><span data-stu-id="efa32-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="42208-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="42208-120">Authorization</span></span> | <span data-ttu-id="42208-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="42208-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="efa32-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="efa32-120">Authorization</span></span> | <span data-ttu-id="efa32-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="efa32-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="42208-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="42208-123">Request body</span></span>
-<span data-ttu-id="42208-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="42208-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="efa32-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="efa32-123">Request body</span></span>
+<span data-ttu-id="efa32-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="efa32-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="42208-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="42208-125">Parameter</span></span>      | <span data-ttu-id="42208-126">Тип</span><span class="sxs-lookup"><span data-stu-id="42208-126">Type</span></span>    |<span data-ttu-id="42208-127">Описание</span><span class="sxs-lookup"><span data-stu-id="42208-127">Description</span></span>|
+| <span data-ttu-id="efa32-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="efa32-125">Parameter</span></span>      | <span data-ttu-id="efa32-126">Тип</span><span class="sxs-lookup"><span data-stu-id="efa32-126">Type</span></span>    |<span data-ttu-id="efa32-127">Описание</span><span class="sxs-lookup"><span data-stu-id="efa32-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="42208-128">Трансфертаржет</span><span class="sxs-lookup"><span data-stu-id="42208-128">transferTarget</span></span>|[<span data-ttu-id="42208-129">ИнвитатионпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="42208-129">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="42208-130">Участник, который является целевым объектом передачи.</span><span class="sxs-lookup"><span data-stu-id="42208-130">The participant which is the target of the transfer.</span></span>|
-|<span data-ttu-id="42208-131">Контекст</span><span class="sxs-lookup"><span data-stu-id="42208-131">clientContext</span></span>|<span data-ttu-id="42208-132">String</span><span class="sxs-lookup"><span data-stu-id="42208-132">String</span></span>|<span data-ttu-id="42208-133">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="42208-133">The client context.</span></span>|
+|<span data-ttu-id="efa32-128">Трансфертаржет</span><span class="sxs-lookup"><span data-stu-id="efa32-128">transferTarget</span></span>|[<span data-ttu-id="efa32-129">ИнвитатионпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="efa32-129">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="efa32-130">Участник, который является целевым объектом передачи.</span><span class="sxs-lookup"><span data-stu-id="efa32-130">The participant which is the target of the transfer.</span></span>|
+|<span data-ttu-id="efa32-131">Контекст</span><span class="sxs-lookup"><span data-stu-id="efa32-131">clientContext</span></span>|<span data-ttu-id="efa32-132">String</span><span class="sxs-lookup"><span data-stu-id="efa32-132">String</span></span>|<span data-ttu-id="efa32-133">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="efa32-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="42208-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="42208-134">Response</span></span>
-<span data-ttu-id="42208-135">Возвращает `202 Accepted` код отклика.</span><span class="sxs-lookup"><span data-stu-id="42208-135">Returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="efa32-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="efa32-134">Response</span></span>
+<span data-ttu-id="efa32-135">Возвращает `202 Accepted` код отклика.</span><span class="sxs-lookup"><span data-stu-id="efa32-135">Returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="42208-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="42208-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="efa32-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="efa32-136">Examples</span></span>
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="42208-137">Прямой перенос вызовов без участия пользователя</span><span class="sxs-lookup"><span data-stu-id="42208-137">Transfer call directly, with no user involvement</span></span>
+### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="efa32-137">Прямой перенос вызовов без участия пользователя</span><span class="sxs-lookup"><span data-stu-id="efa32-137">Transfer call directly, with no user involvement</span></span>
 
-<span data-ttu-id="42208-138">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="42208-138">The following example shows how to call this API.</span></span>
+<span data-ttu-id="efa32-138">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="efa32-138">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="42208-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="42208-139">Request</span></span>
-<span data-ttu-id="42208-140">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="42208-140">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="efa32-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="efa32-139">Request</span></span>
+<span data-ttu-id="efa32-140">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="efa32-140">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -85,9 +85,9 @@ Content-Length: 430
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="42208-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="42208-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="efa32-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="efa32-141">Response</span></span>
 
-> <span data-ttu-id="42208-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="42208-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="efa32-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="efa32-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -97,16 +97,18 @@ Content-Length: 430
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="42208-144">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="42208-144">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="efa32-144">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="efa32-144">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="efa32-145">C#</span><span class="sxs-lookup"><span data-stu-id="efa32-145">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-transfer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42208-145">Язык</span><span class="sxs-lookup"><span data-stu-id="42208-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="efa32-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="efa32-146">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-transfer-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="notification---transferring"></a><span data-ttu-id="42208-146">Передача уведомлений</span><span class="sxs-lookup"><span data-stu-id="42208-146">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="efa32-147">Передача уведомлений</span><span class="sxs-lookup"><span data-stu-id="efa32-147">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -140,7 +142,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="42208-147">Уведомление — передача принята</span><span class="sxs-lookup"><span data-stu-id="42208-147">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="efa32-148">Уведомление — передача принята</span><span class="sxs-lookup"><span data-stu-id="efa32-148">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -174,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="42208-148">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="42208-148">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="efa32-149">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="efa32-149">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -204,9 +206,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a><span data-ttu-id="42208-149">Передача Консультативного</span><span class="sxs-lookup"><span data-stu-id="42208-149">Consultative transfer</span></span>
+### <a name="consultative-transfer"></a><span data-ttu-id="efa32-150">Передача Консультативного</span><span class="sxs-lookup"><span data-stu-id="efa32-150">Consultative transfer</span></span>
 
-##### <a name="request"></a><span data-ttu-id="42208-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="42208-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="efa32-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="efa32-151">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
@@ -236,15 +238,15 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="42208-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="42208-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="efa32-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="efa32-152">Response</span></span>
 
-> <span data-ttu-id="42208-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="42208-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="efa32-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="efa32-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="42208-154">Передача уведомлений</span><span class="sxs-lookup"><span data-stu-id="42208-154">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="efa32-155">Передача уведомлений</span><span class="sxs-lookup"><span data-stu-id="efa32-155">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -278,7 +280,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="42208-155">Уведомление — передача принята</span><span class="sxs-lookup"><span data-stu-id="42208-155">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="efa32-156">Уведомление — передача принята</span><span class="sxs-lookup"><span data-stu-id="efa32-156">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -312,7 +314,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="42208-156">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="42208-156">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="efa32-157">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="efa32-157">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -352,6 +354,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-transfer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

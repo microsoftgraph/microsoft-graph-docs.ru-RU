@@ -4,37 +4,37 @@ description: Категория, которая может быть примен
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bf5ee33ec7d217c0bc4c6e4d35666d6e9f34dadb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dd9eccac3a1b6b1bdc3b0eca4c87b5e29e2135a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536178"
 ---
-# <a name="educationcategory-resource-type"></a><span data-ttu-id="589a2-103">Тип ресурса Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="589a2-103">educationCategory resource type</span></span>
+# <a name="educationcategory-resource-type"></a><span data-ttu-id="eb381-103">Тип ресурса Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="eb381-103">educationCategory resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="589a2-104">Категория, которая может быть применена к назначениям.</span><span class="sxs-lookup"><span data-stu-id="589a2-104">A category that can be applied to assignments.</span></span>
+<span data-ttu-id="eb381-104">Категория, которая может быть применена к назначениям.</span><span class="sxs-lookup"><span data-stu-id="eb381-104">A category that can be applied to assignments.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="589a2-105">Методы</span><span class="sxs-lookup"><span data-stu-id="589a2-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="eb381-105">Методы</span><span class="sxs-lookup"><span data-stu-id="eb381-105">Methods</span></span>
 
-| <span data-ttu-id="589a2-106">Метод</span><span class="sxs-lookup"><span data-stu-id="589a2-106">Method</span></span>           | <span data-ttu-id="589a2-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="589a2-107">Return Type</span></span>    |<span data-ttu-id="589a2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="589a2-108">Description</span></span>|
+| <span data-ttu-id="eb381-106">Метод</span><span class="sxs-lookup"><span data-stu-id="eb381-106">Method</span></span>           | <span data-ttu-id="eb381-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="eb381-107">Return Type</span></span>    |<span data-ttu-id="eb381-108">Описание</span><span class="sxs-lookup"><span data-stu-id="eb381-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="589a2-109">Получение Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="589a2-109">Get educationCategory</span></span>](../api/educationcategory-get.md) | [<span data-ttu-id="589a2-110">Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="589a2-110">educationCategory</span></span>](educationCategory.md) | <span data-ttu-id="589a2-111">Получение существующего **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="589a2-111">Get an existing **educationCategory**.</span></span>|
-|[<span data-ttu-id="589a2-112">Удаление категории</span><span class="sxs-lookup"><span data-stu-id="589a2-112">Delete category</span></span>](../api/educationcategory-delete.md) | <span data-ttu-id="589a2-113">Нет</span><span class="sxs-lookup"><span data-stu-id="589a2-113">None</span></span> | <span data-ttu-id="589a2-114">Удаление **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="589a2-114">Remove an **educationCategory**.</span></span>|
+|[<span data-ttu-id="eb381-109">Получение Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="eb381-109">Get educationCategory</span></span>](../api/educationcategory-get.md) | [<span data-ttu-id="eb381-110">Едукатионкатегори</span><span class="sxs-lookup"><span data-stu-id="eb381-110">educationCategory</span></span>](educationcategory.md) | <span data-ttu-id="eb381-111">Получение существующего **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="eb381-111">Get an existing **educationCategory**.</span></span>|
+|[<span data-ttu-id="eb381-112">Удаление категории</span><span class="sxs-lookup"><span data-stu-id="eb381-112">Delete category</span></span>](../api/educationcategory-delete.md) | <span data-ttu-id="eb381-113">Нет</span><span class="sxs-lookup"><span data-stu-id="eb381-113">None</span></span> | <span data-ttu-id="eb381-114">Удаление **едукатионкатегори**.</span><span class="sxs-lookup"><span data-stu-id="eb381-114">Remove an **educationCategory**.</span></span>|
 
 
-## <a name="properties"></a><span data-ttu-id="589a2-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="589a2-115">Properties</span></span>
-| <span data-ttu-id="589a2-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="589a2-116">Property</span></span>     | <span data-ttu-id="589a2-117">Тип</span><span class="sxs-lookup"><span data-stu-id="589a2-117">Type</span></span>   |<span data-ttu-id="589a2-118">Описание</span><span class="sxs-lookup"><span data-stu-id="589a2-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="eb381-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="eb381-115">Properties</span></span>
+| <span data-ttu-id="eb381-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="eb381-116">Property</span></span>     | <span data-ttu-id="eb381-117">Тип</span><span class="sxs-lookup"><span data-stu-id="eb381-117">Type</span></span>   |<span data-ttu-id="eb381-118">Описание</span><span class="sxs-lookup"><span data-stu-id="eb381-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="589a2-119">id</span><span class="sxs-lookup"><span data-stu-id="589a2-119">id</span></span>|<span data-ttu-id="589a2-120">String</span><span class="sxs-lookup"><span data-stu-id="589a2-120">String</span></span>|<span data-ttu-id="589a2-121">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="589a2-121">Unique identifier for the category.</span></span>|
-|<span data-ttu-id="589a2-122">displayName</span><span class="sxs-lookup"><span data-stu-id="589a2-122">displayName</span></span>|<span data-ttu-id="589a2-123">String</span><span class="sxs-lookup"><span data-stu-id="589a2-123">String</span></span>|<span data-ttu-id="589a2-124">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="589a2-124">Unique identifier for the category.</span></span>|
+|<span data-ttu-id="eb381-119">id</span><span class="sxs-lookup"><span data-stu-id="eb381-119">id</span></span>|<span data-ttu-id="eb381-120">String</span><span class="sxs-lookup"><span data-stu-id="eb381-120">String</span></span>|<span data-ttu-id="eb381-121">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="eb381-121">Unique identifier for the category.</span></span>|
+|<span data-ttu-id="eb381-122">displayName</span><span class="sxs-lookup"><span data-stu-id="eb381-122">displayName</span></span>|<span data-ttu-id="eb381-123">Строка</span><span class="sxs-lookup"><span data-stu-id="eb381-123">String</span></span>|<span data-ttu-id="eb381-124">Уникальный идентификатор для категории.</span><span class="sxs-lookup"><span data-stu-id="eb381-124">Unique identifier for the category.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="589a2-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="589a2-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eb381-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="eb381-125">JSON representation</span></span>
 
-<span data-ttu-id="589a2-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="589a2-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="eb381-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="eb381-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
