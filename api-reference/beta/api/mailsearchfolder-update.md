@@ -4,12 +4,12 @@ description: Обновление свойств, доступных для за
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: fb11e06ac450aa218a8e1102557eb9e3a79f874c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dac2bbb95da7d287ce00503ac4b79cdf52a85968
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536024"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
@@ -45,8 +45,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| Инклуденестедфолдерс | Логический | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
-| Саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
+| Инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
 | Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
@@ -100,9 +100,11 @@ Content-length: 179
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
 
 ---
@@ -119,6 +121,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

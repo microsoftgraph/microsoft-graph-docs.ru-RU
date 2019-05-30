@@ -2,12 +2,12 @@
 title: Отмена Привилежедролеассигнментрекуест
 description: Отмена объекта Привилежедролеассигнментрекуест.
 localization_priority: Normal
-ms.openlocfilehash: 114729351f5ae412cea77e1a97e16fd3d8300849
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc27edc71956c64d91dcc85e72ddd6c3cd65c793
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593881"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537471"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отмена Привилежедролеассигнментрекуест
 
@@ -36,11 +36,11 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [привилежедролеассигнментрекуест](../resources/privilegedRoleAssignmentRequest.md) в тексте отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды настраиваемых ошибок, приведенные в следующей таблице.
@@ -96,11 +96,11 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/cancel_privilegedRoleAssignmentRequests-Javascript-snippets.md)]
 
 ---

@@ -4,12 +4,12 @@ description: 'Представляет курс в учебном заведен
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2a1fb4434933a4cc41c9a84c54864f2211f40962
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dfce83c99ec886a01c2c52c3bae58c91b12fa0b0
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536172"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -33,10 +33,10 @@ ms.locfileid: "33334434"
 |[Создание educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Создание нового **educationAssignment** путем публикации в коллекции назначений.|
 |[Перечисление заданий](../api/educationclass-list-assignments.md) |Коллекция [educationAssignment](../resources/educationassignment.md)| Получение коллекции объектов **educationAssignment** .|
 |[Получение группы](../api/educationclass-get-group.md) |[group](group.md)| Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.|
-|[Создание Едукатионкатегори](../api/educationclass-post-category.md) | [Едукатионкатегори](educationCategory.md) | Создание нового **едукатионкатегори** для этого класса.|
-|[Перечисление категорий](../api/educationclass-list-categories.md) | Коллекция [едукатионкатегори](educationCategory.md) | Получение списка объектов **едукатионкатегори** , принадлежащих этому классу.|
+|[Создание Едукатионкатегори](../api/educationclass-post-category.md) | [Едукатионкатегори](educationcategory.md) | Создание нового **едукатионкатегори** для этого класса.|
+|[Перечисление категорий](../api/educationclass-list-categories.md) | Коллекция [едукатионкатегори](educationcategory.md) | Получение списка объектов **едукатионкатегори** , принадлежащих этому классу.|
 |[Обновление](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Обновление объекта **educationClass**. |
-|[Delete](../api/educationclass-delete.md) | Нет |Удаление объекта **educationClass**. |
+|[Удаление](../api/educationclass-delete.md) | Нет |Удаление объекта **educationClass**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -56,10 +56,10 @@ ms.locfileid: "33334434"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускает значение null.|
-|schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускает значение null.|
+|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|
+|schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение null.|
 |teachers|Коллекция [educationUser](../resources/educationuser.md)|  Все преподаватели для этого курса. Допускается значение NULL.|
-|assignments|Коллекция [educationAssignment](../resources/educationassignment.md)| Все назначения, связанные с этим классом. Допускает значение null.|
+|assignments|Коллекция [educationAssignment](../resources/educationassignment.md)| Все назначения, связанные с этим классом. Допускается значение null.|
 |categories|Коллекция [едукатионкатегори](../resources/educationassignment.md)| Все категории, связанные с этим классом. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

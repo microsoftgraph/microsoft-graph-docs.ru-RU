@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9ffd60764a61bb24c25279212424888af3a3fa5d
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 470c49291b9731789cdff260e9deb2ccf6377450
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34465981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536185"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var criteria = new SynchronizationJobRestartCriteria
 {
-    ResetScope = SynchronizationJobRestartScope.Full
+    ResetScope = SynchronizationJobRestartScope.QuarantineState | SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.ConnectorDataStore
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"]

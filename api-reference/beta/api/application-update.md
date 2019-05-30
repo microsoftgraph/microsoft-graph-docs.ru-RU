@@ -4,12 +4,12 @@ description: Обновление свойств объекта Application.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2984e7d57144fd6d5e3efee7d6c9a9c8d68c529c
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636333"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34535996"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -36,12 +36,12 @@ PATCH /applications/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowPublicClient|Логический| Указывает, может ли приложение работать в качестве общедоступного клиента. Например, установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию: *false*. |
+|allowPublicClient|Boolean| Указывает, может ли приложение работать в качестве общедоступного клиента. Например, установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию: *false*. |
 |api|[apiApplication](../resources/apiapplication.md)| Указывает параметры для приложения API. |
 |appRoles|Коллекция [appRole](../resources/approle.md)|Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается.|
 |applicationAliases|Коллекция String| URI, определяющие приложение. Дополнительные сведения см. в статье [Объекты приложения и субъекта-службы](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается. |
@@ -57,7 +57,7 @@ PATCH /applications/{id}
 |Преаусоризедаппликатионс|Коллекция [preAuthorizedApplication](../resources/preauthorizedapplication.md)| Перечисляет приложения и запрашиваемые разрешения для неявного согласия. Необходимо, чтобы администратор предоставил согласие на применение приложения. Преаусоризедаппликатионс не требуют от пользователя согласия с запрошенными разрешениями. Разрешения, перечисленные в Преаусоризедаппликатионс, не требуют согласия пользователя. Однако все дополнительные запрошенные разрешения, не указанные в Преаусоризедаппликатионс, требуют согласия пользователя. |
 |requiredResourceAccess|Коллекция [requiredResourceAccess](../resources/requiredresourceaccess.md)|Указывает ресурсы, к которым приложению требуется доступ, и устанавливает области разрешений OAuth и роли приложения, требующиеся приложению для каждого из этих ресурсов. Эта предварительная настройка доступа к необходимым ресурсам определяет интерфейс предоставления согласия. Значение null не допускается.|
 |tags|Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. |
-|web|[webApplication](../resources/webApplication.md)| Указывает параметры для веб-приложения. |
+|web|[webApplication](../resources/webapplication.md)| Указывает параметры для веб-приложения. |
 
 ## <a name="response"></a>Отклик
 
@@ -89,11 +89,11 @@ Content-length: 72
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
 
 ---

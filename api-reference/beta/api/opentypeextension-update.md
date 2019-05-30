@@ -3,12 +3,12 @@ title: Обновление открытого расширения
 description: 'Обновление открытого расширения (объекта openTypeExtension) с использованием свойств, указанных в теле запроса:'
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: bc8e8446631a0872fc3e7fa73cb0bea36d40672e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 881a408d45418e4d267cea230121a90c4c4f3578
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596955"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536437"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -62,7 +62,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>Параметры пути
 |**Параметр**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
-|id|строка|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
+|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
 |extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -71,7 +71,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Задайте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md) с указанными ниже обязательными парами имя-значение и любыми пользовательскими данными, которые необходимо изменить или добавить в это расширение. Полезные данные JSON могут иметь простой тип или представлять собой массив элементов простого типа.
 
@@ -137,7 +137,7 @@ PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 
-#### <a name="response-1"></a>Ответ 1
+#### <a name="response-1"></a>Отклик 1
 
 Вот отклик, который не зависит от способа, которым вы ссылаетесь на расширение.
 
@@ -209,7 +209,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-2"></a>Ответ 2
+#### <a name="response-2"></a>Отклик 2
 
 Вот отклик для второго примера, в котором отображается обновленный параметр `expirationDate` в расширении.
 
@@ -238,9 +238,11 @@ Content-Type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_opentypeextension-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_opentypeextension-Javascript-snippets.md)]
 
 ---
@@ -258,6 +260,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

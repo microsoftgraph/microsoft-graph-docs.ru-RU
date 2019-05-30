@@ -5,12 +5,12 @@ title: Тип ресурса itemActivity
 description: Объект itemActivity предоставляет сведения о действиях, которые были выполнены над элементом.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c05493ddeb8e007da6ba8b7508369b4d013e672
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: 98ae9e4881de18c94490469b10df43b2aaf58140
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970797"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536689"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса itemActivity
 
@@ -32,7 +32,7 @@ ms.locfileid: "33970797"
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
 | activityDateTime    | DateTimeOffset | Сведения о том, когда было выполнено действие. Только для чтения.
 
-[Акцессактион]: accessAction.md
+[Акцессактион]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>Связи

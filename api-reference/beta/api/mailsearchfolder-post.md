@@ -4,12 +4,12 @@ description: Используйте этот API, чтобы создать но
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 0c600048961b560364982b8b8ef5cff531ae2031
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2fc7a51675b0bfc559b5ab5c9f7a857c84c43174
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33598238"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536373"
 ---
 # <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
@@ -36,7 +36,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительскую папку в URL-АДРЕСе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительскую папку в URL-адресе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,8 +53,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
 | displayName | String | Отображаемое имя новой папки.|
-| Инклуденестедфолдерс | Логический | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
-| Саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
+| Инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
 | Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
@@ -118,9 +118,11 @@ Content-length: 179
   "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_mailsearchfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_mailsearchfolder-Javascript-snippets.md)]
 
 ---
@@ -137,6 +139,7 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

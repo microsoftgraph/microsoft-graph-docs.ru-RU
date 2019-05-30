@@ -4,12 +4,12 @@ description: Перенаправление входящего вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8291751b4dfc74fcd2f4ccfd194cc8bfbe66c482
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8c0bea95767881adc10c7e209825803461df20c6
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636326"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536087"
 ---
 # <a name="call-redirect"></a>вызов: redirect
 
@@ -38,7 +38,7 @@ POST /applications/{id}/calls/{id}/redirect
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
@@ -46,8 +46,8 @@ POST /applications/{id}/calls/{id}/redirect
 |targets|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления.|
 |Таржетдиспоситион|String|Возможные значения:`default`|
 |timeout|Int32|Время ожидания в секундах для операции перенаправления.|
-|Масккалли|Логический|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
-|Масккаллер|Логический|Указывает, следует ли маскировать вызывающий абонент.|
+|Масккалли|Boolean|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
+|Масккаллер|Boolean|Указывает, следует ли маскировать вызывающий абонент.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика
@@ -102,9 +102,11 @@ Content-Length: 515
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-redirect-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-redirect-Javascript-snippets.md)]
 
 ---
@@ -276,6 +278,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

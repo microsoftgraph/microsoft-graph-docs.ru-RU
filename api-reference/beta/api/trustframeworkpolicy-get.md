@@ -4,12 +4,12 @@ description: Эта операция возвращает существующи
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e16c636dd1a367978396af7fcbe21aebfa4cd37
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 986d6dc109a334e0a64e5472d5de6d80850b55e3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536045"
 ---
 # <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
 
@@ -46,13 +46,13 @@ GET /trustFramework/policies/{id}/$value
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и XML-представление объекта [трустфрамеворкполици](../resources/trustFrameworkpolicy.md) в тексте отклика.  
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика.  
 
 >**Note:** тип контента ответа будет иметь `application/xml`значение.
 

@@ -4,12 +4,12 @@ description: Ответ на входящий вызов.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 87ae3b6911585ae3b698ba575e0b8523f96edea8
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ce79ff0e471882576ed885e4ab85d686a6cdb0de
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635913"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536059"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -38,13 +38,13 @@ POST /applications/{id}/calls/{id}/answer
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы. Потребоваться                                                               |
-|Акцептедмодалитиес|Коллекция String                         |Список принимаемых модальности. Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data` Потребоваться |
+|Акцептедмодалитиес|Коллекция строк                         |Список принимаемых модальности. Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data` Потребоваться |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Настройка мультимедиа. Потребоваться                                                                                                            |
 
 ## <a name="response"></a>Отклик
@@ -88,9 +88,11 @@ Content-Length: 211
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/call-answer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-answer-Javascript-snippets.md)]
 
 ---
@@ -417,6 +419,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

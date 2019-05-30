@@ -4,12 +4,12 @@ description: Предложение времени проведения собр
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 61d41b4f3c9d8401ce7ebe34214cb0531435db20
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7280053012f0a5e3769e12827c242dfae02130e0
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602185"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537130"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени, указанных в качестве параметров.
@@ -343,6 +343,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 }
 ```
 #### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_findmeetingtimes-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_findmeetingtimes-Javascript-snippets.md)]
@@ -359,6 +361,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/user-findmeetingtimes.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
       Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",

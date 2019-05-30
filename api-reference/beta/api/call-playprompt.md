@@ -4,12 +4,12 @@ description: Проигрывать запрос в вызове.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 571c8b412e6e8099aaee020ef45e2ad55b1e5707
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: ad0001c1961f1c6e9126a39609d368104e133aec
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635864"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536073"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
@@ -48,7 +48,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 |Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [плайпромптоператион](../resources/playPromptOperation.md) в тексте отклика.
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -93,9 +93,9 @@ Content-Length: 166
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-playPrompt-Javascript-snippets.md)]
 
 ---

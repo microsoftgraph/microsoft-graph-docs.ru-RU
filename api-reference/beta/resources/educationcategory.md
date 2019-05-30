@@ -4,12 +4,12 @@ description: Категория, которая может быть примен
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bf5ee33ec7d217c0bc4c6e4d35666d6e9f34dadb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dd9eccac3a1b6b1bdc3b0eca4c87b5e29e2135a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536178"
 ---
 # <a name="educationcategory-resource-type"></a>Тип ресурса Едукатионкатегори
 
@@ -22,7 +22,7 @@ ms.locfileid: "33340604"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Едукатионкатегори](../api/educationcategory-get.md) | [Едукатионкатегори](educationCategory.md) | Получение существующего **едукатионкатегори**.|
+|[Получение Едукатионкатегори](../api/educationcategory-get.md) | [Едукатионкатегори](educationcategory.md) | Получение существующего **едукатионкатегори**.|
 |[Удаление категории](../api/educationcategory-delete.md) | Нет | Удаление **едукатионкатегори**.|
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "33340604"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String|Уникальный идентификатор для категории.|
-|displayName|String|Уникальный идентификатор для категории.|
+|displayName|Строка|Уникальный идентификатор для категории.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,12 +2,12 @@
 title: 'Синчронизатионсчема: Парсикспрессион'
 description: '(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). '
 localization_priority: Normal
-ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 79cb683571fa7a5e1b48f93a1805ae5d7a4f7202
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536150"
 ---
 # <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
 
@@ -170,9 +170,11 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
 
 ---
@@ -189,6 +191,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }

@@ -3,12 +3,12 @@ title: Обновление объектов secureScoreControlProfile
 description: Обновление редактируемого объекта Секурескореконтролпрофиле в любом интегрированном решении для изменения различных свойств, таких как assignedTo или Тенантноте.
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 91b14c83098c1e03580c4ffeb320a0e5eba6d18b
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951293"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536815"
 ---
 # <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
@@ -39,7 +39,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Авторизация  | Bearer {код}. Обязательно.|
 |Prefer | Возврат = представление. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить. Текст **должен** содержать `vendorInformation` свойство Valid `provider` и `vendor` Fields. В следующей таблице перечислены поля, которые можно обновить для **секурескореконтролпрофиле**. Значения для существующих свойств, не включенных в текст запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -47,7 +47,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.|
 |comment|String|Комментарии аналитика в элементе управления (для управления клиентом).|
-|state| Строка|Управляемый аналитикой параметр для элемента управления. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+|state| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о продукте, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре;). **Требуются поля поставщика и поставщика.** |
 
 
@@ -99,7 +99,9 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Образец кода SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]

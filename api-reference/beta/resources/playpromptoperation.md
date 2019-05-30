@@ -4,12 +4,12 @@ description: Операция Плайпромпт для получения р�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 89a47fc8400d2f0d426ef6f683eb566f9c2376d4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 663675bb895d452c9ad50c89f22f1a51efca20a9
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344374"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536997"
 ---
 # <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
 
@@ -26,10 +26,10 @@ ms.locfileid: "33344374"
 | createdDateTime     | DateTimeOffset              | Время начала операции.                                                   |
 | id                  | Строка                      | Только для чтения.                                                                         |
 | Ластактиондатетиме  | DateTimeOffset              | Время последнего действия операции.                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | Сведения о результате. Только для чтения. Создается сервером.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения. Создается сервером.                               |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

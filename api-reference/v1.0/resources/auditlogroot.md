@@ -4,12 +4,12 @@ description: Содержит различные типы журналов ау�
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 204dfbb3f03be9550429694434bcb420b93e788d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0f961850e0ef48776cf708348fcbacf4c9642c3
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951417"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536038"
 ---
 # <a name="auditlogroot-resource-type"></a>Тип ресурса Аудитлогрут
 
@@ -28,12 +28,12 @@ ms.locfileid: "33951417"
 
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Директоряудитс|Коллекция [директоряудит](directoryAudit.md)| Только для чтения. Допускается значение null.|
-|Сигнинс|Коллекция [SignIn](signIn.md)| Только для чтения. Допускается значение null.|
+|Директоряудитс|Коллекция [директоряудит](directoryaudit.md)| Только для чтения. Допускается значение null.|
+|Сигнинс|Коллекция [SignIn](signin.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -73,7 +73,7 @@ Content-type: application/json
 {
 }
 ```
-#### <a name="sdk-sample-code"></a>Образец кода SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_auditLogs-Cs-snippets.md)]
 
