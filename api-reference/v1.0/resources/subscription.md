@@ -3,12 +3,12 @@ title: Тип ресурса subscription
 description: Подписка позволяет клиентскому приложению получать уведомления об изменениях данных в Microsoft Graph. На данный момент подписки включены для указанных ниже ресурсов.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: db3a536395f327115af69f769f37c823013ec7fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30671dcd93b4593015a5c3cf2eeddac8d7e00c4d
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536781"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -75,6 +75,7 @@ ms.locfileid: "32563702"
 
 | Ресурс            | Максимальный срок действия  |
 |:--------------------|:-------------------------|
+| Пользователь, группа, другие ресурсы каталога   | 4230 минут (до 3 дней)    |
 | Почта                | 4230 минут (до 3 дней)    |
 | Календарь            | 4230 минут (до 3 дней)    |
 | Контакты            | 4230 минут (до 3 дней)    |

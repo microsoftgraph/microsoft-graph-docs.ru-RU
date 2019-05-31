@@ -4,12 +4,12 @@ description: API в Microsoft Graph дополняет ресурсы Office 365
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34536514"
 ---
 # <a name="education-api-overview"></a>Обзор API для образования
 
