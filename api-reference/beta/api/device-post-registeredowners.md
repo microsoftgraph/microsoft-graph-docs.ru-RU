@@ -1,56 +1,58 @@
 ---
 title: Создание объекта registeredOwner
 description: Добавление пользователя в качестве зарегистрированного владельца устройства.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e2e53901b43e4ded9e2273fdf84148798c3fd7fb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 354d2caff8ac0e3a985f09586e7c9a4243eb61fb
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592080"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656246"
 ---
-# <a name="create-registeredowner"></a><span data-ttu-id="5f184-103">Создание объекта registeredOwner</span><span class="sxs-lookup"><span data-stu-id="5f184-103">Create registeredOwner</span></span>
+# <a name="create-registeredowner"></a><span data-ttu-id="b32c8-103">Создание объекта registeredOwner</span><span class="sxs-lookup"><span data-stu-id="b32c8-103">Create registeredOwner</span></span>
 
-<span data-ttu-id="5f184-104">Добавление пользователя в качестве зарегистрированного владельца устройства.</span><span class="sxs-lookup"><span data-stu-id="5f184-104">Add a user as a registered owner of the device.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5f184-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5f184-105">Permissions</span></span>
-<span data-ttu-id="5f184-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5f184-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="b32c8-104">Добавление пользователя в качестве зарегистрированного владельца устройства.</span><span class="sxs-lookup"><span data-stu-id="b32c8-104">Add a user as a registered owner of the device.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b32c8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b32c8-105">Permissions</span></span>
+<span data-ttu-id="b32c8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b32c8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="5f184-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5f184-108">Permission type</span></span>      | <span data-ttu-id="5f184-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5f184-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b32c8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b32c8-108">Permission type</span></span>      | <span data-ttu-id="b32c8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b32c8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5f184-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5f184-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5f184-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5f184-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="5f184-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5f184-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f184-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5f184-113">Not supported.</span></span>    |
-|<span data-ttu-id="5f184-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5f184-114">Application</span></span> | <span data-ttu-id="5f184-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5f184-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b32c8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b32c8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b32c8-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b32c8-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="b32c8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b32c8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b32c8-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b32c8-113">Not supported.</span></span>    |
+|<span data-ttu-id="b32c8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b32c8-114">Application</span></span> | <span data-ttu-id="b32c8-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b32c8-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5f184-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5f184-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b32c8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b32c8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices/{id}/registeredOwners/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="5f184-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5f184-117">Request headers</span></span>
-| <span data-ttu-id="5f184-118">Имя</span><span class="sxs-lookup"><span data-stu-id="5f184-118">Name</span></span>       | <span data-ttu-id="5f184-119">Тип</span><span class="sxs-lookup"><span data-stu-id="5f184-119">Type</span></span> | <span data-ttu-id="5f184-120">Описание</span><span class="sxs-lookup"><span data-stu-id="5f184-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b32c8-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b32c8-117">Request headers</span></span>
+| <span data-ttu-id="b32c8-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b32c8-118">Name</span></span>       | <span data-ttu-id="b32c8-119">Тип</span><span class="sxs-lookup"><span data-stu-id="b32c8-119">Type</span></span> | <span data-ttu-id="b32c8-120">Описание</span><span class="sxs-lookup"><span data-stu-id="b32c8-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5f184-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5f184-121">Authorization</span></span>  | <span data-ttu-id="5f184-122">string</span><span class="sxs-lookup"><span data-stu-id="5f184-122">string</span></span>  | <span data-ttu-id="5f184-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5f184-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b32c8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b32c8-121">Authorization</span></span>  | <span data-ttu-id="b32c8-122">string</span><span class="sxs-lookup"><span data-stu-id="b32c8-122">string</span></span>  | <span data-ttu-id="b32c8-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b32c8-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5f184-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5f184-125">Request body</span></span>
-<span data-ttu-id="5f184-126">Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5f184-126">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b32c8-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b32c8-125">Request body</span></span>
+<span data-ttu-id="b32c8-126">Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b32c8-126">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5f184-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="5f184-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b32c8-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="b32c8-127">Response</span></span>
 
-<span data-ttu-id="5f184-128">В случае успеха этот метод возвращает код отклика `201 Created` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5f184-128">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="b32c8-128">В случае успеха этот метод возвращает код отклика `201 Created` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b32c8-128">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5f184-129">Пример</span><span class="sxs-lookup"><span data-stu-id="5f184-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5f184-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="5f184-130">Request</span></span>
-<span data-ttu-id="5f184-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5f184-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b32c8-129">Пример</span><span class="sxs-lookup"><span data-stu-id="b32c8-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b32c8-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="b32c8-130">Request</span></span>
+<span data-ttu-id="b32c8-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b32c8-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
+POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -59,9 +61,9 @@ Content-length: 30
   }
 }
 ```
-<span data-ttu-id="5f184-132">Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5f184-132">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="5f184-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="5f184-133">Response</span></span>
-<span data-ttu-id="5f184-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5f184-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b32c8-132">Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b32c8-132">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b32c8-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="b32c8-133">Response</span></span>
+<span data-ttu-id="b32c8-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b32c8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,9 +80,9 @@ Content-length: 51
   }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="5f184-137">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="5f184-137">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b32c8-137">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="b32c8-137">SDK sample code</span></span>
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5f184-138">Язык</span><span class="sxs-lookup"><span data-stu-id="5f184-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b32c8-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="b32c8-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_device-Javascript-snippets.md)]
 
 ---
@@ -89,13 +91,15 @@ Content-length: 51
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create registeredOwner",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/device-post-registeredowners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/device-post-registeredowners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
