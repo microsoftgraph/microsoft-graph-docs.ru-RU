@@ -2,50 +2,50 @@
 title: Список registeredOwners
 description: Получение списка пользователей, являющихся зарегистрированными владельцами устройства. Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ec8990a2b0c2d0f674304c4005fbf28a0b5a631e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1ae819c9144f1996cb2961eced6211c9437ab3c
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583748"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657351"
 ---
-# <a name="list-registeredowners"></a><span data-ttu-id="a2184-106">Список registeredOwners</span><span class="sxs-lookup"><span data-stu-id="a2184-106">List registeredOwners</span></span>
+# <a name="list-registeredowners"></a><span data-ttu-id="d4313-106">Список registeredOwners</span><span class="sxs-lookup"><span data-stu-id="d4313-106">List registeredOwners</span></span>
 
-<span data-ttu-id="a2184-107">Получение списка пользователей, являющихся зарегистрированными владельцами устройства.</span><span class="sxs-lookup"><span data-stu-id="a2184-107">Retrieve a list of users that are registered owners of the device.</span></span> <span data-ttu-id="a2184-108">Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство.</span><span class="sxs-lookup"><span data-stu-id="a2184-108">A registered owner is the user that cloud joined the device or registered their personal device.</span></span> <span data-ttu-id="a2184-109">Зарегистрированный владелец задается при регистрации.</span><span class="sxs-lookup"><span data-stu-id="a2184-109">The registered owner is set at the time of registration.</span></span> <span data-ttu-id="a2184-110">Сейчас можно настроить лишь одного такого владельца.</span><span class="sxs-lookup"><span data-stu-id="a2184-110">Currently, there can be only one owner.</span></span>
+<span data-ttu-id="d4313-107">Получение списка пользователей, являющихся зарегистрированными владельцами устройства.</span><span class="sxs-lookup"><span data-stu-id="d4313-107">Retrieve a list of users that are registered owners of the device.</span></span> <span data-ttu-id="d4313-108">Зарегистрированный владелец — пользователь, который присоединил устройство через облако или зарегистрировал личное устройство.</span><span class="sxs-lookup"><span data-stu-id="d4313-108">A registered owner is the user that cloud joined the device or registered their personal device.</span></span> <span data-ttu-id="d4313-109">Зарегистрированный владелец задается при регистрации.</span><span class="sxs-lookup"><span data-stu-id="d4313-109">The registered owner is set at the time of registration.</span></span> <span data-ttu-id="d4313-110">Сейчас можно настроить лишь одного такого владельца.</span><span class="sxs-lookup"><span data-stu-id="d4313-110">Currently, there can be only one owner.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a2184-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a2184-111">Permissions</span></span>
-<span data-ttu-id="a2184-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a2184-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d4313-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d4313-111">Permissions</span></span>
+<span data-ttu-id="d4313-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d4313-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a2184-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a2184-114">Permission type</span></span>      | <span data-ttu-id="a2184-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a2184-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d4313-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d4313-114">Permission type</span></span>      | <span data-ttu-id="d4313-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d4313-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a2184-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a2184-116">Delegated (work or school account)</span></span> | <span data-ttu-id="a2184-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a2184-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a2184-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a2184-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2184-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a2184-119">Not supported.</span></span>    |
-|<span data-ttu-id="a2184-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a2184-120">Application</span></span> | <span data-ttu-id="a2184-121">Directory.Read.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a2184-121">Directory.Read.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="d4313-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d4313-116">Delegated (work or school account)</span></span> | <span data-ttu-id="d4313-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d4313-117">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="d4313-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d4313-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d4313-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d4313-119">Not supported.</span></span>    |
+|<span data-ttu-id="d4313-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d4313-120">Application</span></span> | <span data-ttu-id="d4313-121">Directory.Read.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4313-121">Directory.Read.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a2184-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a2184-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d4313-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d4313-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}/registeredOwners
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a2184-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a2184-123">Optional query parameters</span></span>
-<span data-ttu-id="a2184-124">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a2184-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="a2184-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a2184-125">Request headers</span></span>
-| <span data-ttu-id="a2184-126">Имя</span><span class="sxs-lookup"><span data-stu-id="a2184-126">Name</span></span>       | <span data-ttu-id="a2184-127">Тип</span><span class="sxs-lookup"><span data-stu-id="a2184-127">Type</span></span> | <span data-ttu-id="a2184-128">Описание</span><span class="sxs-lookup"><span data-stu-id="a2184-128">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="d4313-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d4313-123">Optional query parameters</span></span>
+<span data-ttu-id="d4313-124">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d4313-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d4313-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d4313-125">Request headers</span></span>
+| <span data-ttu-id="d4313-126">Имя</span><span class="sxs-lookup"><span data-stu-id="d4313-126">Name</span></span>       | <span data-ttu-id="d4313-127">Тип</span><span class="sxs-lookup"><span data-stu-id="d4313-127">Type</span></span> | <span data-ttu-id="d4313-128">Описание</span><span class="sxs-lookup"><span data-stu-id="d4313-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a2184-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2184-129">Authorization</span></span>  | <span data-ttu-id="a2184-130">string</span><span class="sxs-lookup"><span data-stu-id="a2184-130">string</span></span>  | <span data-ttu-id="a2184-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a2184-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d4313-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="d4313-129">Authorization</span></span>  | <span data-ttu-id="d4313-130">string</span><span class="sxs-lookup"><span data-stu-id="d4313-130">string</span></span>  | <span data-ttu-id="d4313-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d4313-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a2184-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a2184-133">Request body</span></span>
-<span data-ttu-id="a2184-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a2184-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d4313-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d4313-133">Request body</span></span>
+<span data-ttu-id="d4313-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d4313-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a2184-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="a2184-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d4313-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="d4313-135">Response</span></span>
 
-<span data-ttu-id="a2184-136">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a2184-136">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a2184-137">Пример</span><span class="sxs-lookup"><span data-stu-id="a2184-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a2184-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="a2184-138">Request</span></span>
-<span data-ttu-id="a2184-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a2184-139">Here is an example of the request.</span></span>
+<span data-ttu-id="d4313-136">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d4313-136">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d4313-137">Пример</span><span class="sxs-lookup"><span data-stu-id="d4313-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d4313-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="d4313-138">Request</span></span>
+<span data-ttu-id="d4313-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d4313-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_registeredowners"
@@ -53,8 +53,8 @@ GET /devices/{id}/registeredOwners
 ```http
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
 ```
-##### <a name="response"></a><span data-ttu-id="a2184-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="a2184-140">Response</span></span>
-<span data-ttu-id="a2184-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a2184-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d4313-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="d4313-140">Response</span></span>
+<span data-ttu-id="d4313-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d4313-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -74,6 +74,16 @@ Content-length: 55
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d4313-144">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="d4313-144">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d4313-145">C#</span><span class="sxs-lookup"><span data-stu-id="d4313-145">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_registeredowners-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d4313-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="d4313-146">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_registeredowners-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +92,9 @@ Content-length: 55
   "description": "List registeredOwners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

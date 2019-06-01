@@ -1,50 +1,50 @@
 ---
 title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 768e2a780fcfe96bd14d883d0f7ea0d03ac434cc
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1ee4d884642a47c83f48eda38601e2d320e609c9
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617093"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656540"
 ---
-# <a name="add-directory-role-member"></a><span data-ttu-id="c19e8-103">Добавление участника роли каталога</span><span class="sxs-lookup"><span data-stu-id="c19e8-103">Add directory role member</span></span>
+# <a name="add-directory-role-member"></a><span data-ttu-id="5d00f-103">Добавление участника роли каталога</span><span class="sxs-lookup"><span data-stu-id="5d00f-103">Add directory role member</span></span>
 
-<span data-ttu-id="c19e8-104">С помощью этого API можно создать участника роли каталога.</span><span class="sxs-lookup"><span data-stu-id="c19e8-104">Use this API to create a new directory role member.</span></span>
+<span data-ttu-id="5d00f-104">С помощью этого API можно создать участника роли каталога.</span><span class="sxs-lookup"><span data-stu-id="5d00f-104">Use this API to create a new directory role member.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c19e8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c19e8-105">Permissions</span></span>
-<span data-ttu-id="c19e8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c19e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5d00f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5d00f-105">Permissions</span></span>
+<span data-ttu-id="5d00f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5d00f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c19e8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c19e8-108">Permission type</span></span>      | <span data-ttu-id="c19e8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c19e8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5d00f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5d00f-108">Permission type</span></span>      | <span data-ttu-id="5d00f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5d00f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c19e8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c19e8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c19e8-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c19e8-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c19e8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c19e8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c19e8-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c19e8-113">Not supported.</span></span>    |
-|<span data-ttu-id="c19e8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c19e8-114">Application</span></span> | <span data-ttu-id="c19e8-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c19e8-115">Not supported.</span></span> |
+|<span data-ttu-id="5d00f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5d00f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5d00f-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5d00f-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="5d00f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5d00f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d00f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5d00f-113">Not supported.</span></span>    |
+|<span data-ttu-id="5d00f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5d00f-114">Application</span></span> | <span data-ttu-id="5d00f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5d00f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c19e8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c19e8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5d00f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5d00f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c19e8-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c19e8-117">Request headers</span></span>
-| <span data-ttu-id="c19e8-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c19e8-118">Name</span></span>       | <span data-ttu-id="c19e8-119">Тип</span><span class="sxs-lookup"><span data-stu-id="c19e8-119">Type</span></span> | <span data-ttu-id="c19e8-120">Описание</span><span class="sxs-lookup"><span data-stu-id="c19e8-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5d00f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5d00f-117">Request headers</span></span>
+| <span data-ttu-id="5d00f-118">Имя</span><span class="sxs-lookup"><span data-stu-id="5d00f-118">Name</span></span>       | <span data-ttu-id="5d00f-119">Тип</span><span class="sxs-lookup"><span data-stu-id="5d00f-119">Type</span></span> | <span data-ttu-id="5d00f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="5d00f-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c19e8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c19e8-121">Authorization</span></span>  | <span data-ttu-id="c19e8-122">string</span><span class="sxs-lookup"><span data-stu-id="c19e8-122">string</span></span>  | <span data-ttu-id="c19e8-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c19e8-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c19e8-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c19e8-125">Content-Type</span></span>  | <span data-ttu-id="c19e8-126">string</span><span class="sxs-lookup"><span data-stu-id="c19e8-126">string</span></span>  | <span data-ttu-id="c19e8-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c19e8-127">application/json</span></span>  |
+| <span data-ttu-id="5d00f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5d00f-121">Authorization</span></span>  | <span data-ttu-id="5d00f-122">string</span><span class="sxs-lookup"><span data-stu-id="5d00f-122">string</span></span>  | <span data-ttu-id="5d00f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5d00f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5d00f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5d00f-125">Content-Type</span></span>  | <span data-ttu-id="5d00f-126">string</span><span class="sxs-lookup"><span data-stu-id="5d00f-126">string</span></span>  | <span data-ttu-id="5d00f-127">application/json</span><span class="sxs-lookup"><span data-stu-id="5d00f-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c19e8-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c19e8-128">Request body</span></span>
-<span data-ttu-id="c19e8-129">Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c19e8-129">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5d00f-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5d00f-128">Request body</span></span>
+<span data-ttu-id="5d00f-129">Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5d00f-129">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c19e8-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="c19e8-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5d00f-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="5d00f-130">Response</span></span>
 
-<span data-ttu-id="c19e8-131">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="c19e8-131">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="5d00f-131">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="5d00f-131">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c19e8-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c19e8-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c19e8-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c19e8-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="5d00f-132">Пример</span><span class="sxs-lookup"><span data-stu-id="5d00f-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5d00f-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="5d00f-133">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -59,8 +59,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c19e8-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="c19e8-134">Response</span></span>
-<span data-ttu-id="c19e8-135">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="c19e8-135">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="5d00f-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="5d00f-134">Response</span></span>
+<span data-ttu-id="5d00f-135">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="5d00f-135">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -71,9 +71,9 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c19e8-136">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="c19e8-136">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="5d00f-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="5d00f-136">SDK sample code</span></span>
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c19e8-137">Язык</span><span class="sxs-lookup"><span data-stu-id="c19e8-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5d00f-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="5d00f-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_directoryrole-Javascript-snippets.md)]
 
 ---

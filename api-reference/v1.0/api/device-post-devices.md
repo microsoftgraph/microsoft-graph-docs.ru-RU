@@ -1,52 +1,52 @@
 ---
 title: Создание устройства
 description: Создание и регистрация нового устройства в организации.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 98ad7cd2735458a59f30a6ce00edb64015f7cf2d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48e3c8786fda2651466514c445a96ae26d7dadc6
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583566"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656477"
 ---
-# <a name="create-device"></a><span data-ttu-id="2d10b-103">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="2d10b-103">Create device</span></span>
+# <a name="create-device"></a><span data-ttu-id="daad6-103">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="daad6-103">Create device</span></span>
 
-<span data-ttu-id="2d10b-104">Создание и регистрация нового устройства в организации.</span><span class="sxs-lookup"><span data-stu-id="2d10b-104">Create and register a new device in the organization.</span></span>
+<span data-ttu-id="daad6-104">Создание и регистрация нового устройства в организации.</span><span class="sxs-lookup"><span data-stu-id="daad6-104">Create and register a new device in the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d10b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2d10b-105">Permissions</span></span>
-<span data-ttu-id="2d10b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d10b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="daad6-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="daad6-105">Permissions</span></span>
+<span data-ttu-id="daad6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="daad6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="2d10b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2d10b-108">Permission type</span></span>      | <span data-ttu-id="2d10b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2d10b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="daad6-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="daad6-108">Permission type</span></span>      | <span data-ttu-id="daad6-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="daad6-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2d10b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2d10b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2d10b-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2d10b-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="2d10b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2d10b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d10b-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d10b-113">Not supported.</span></span>    |
-|<span data-ttu-id="2d10b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2d10b-114">Application</span></span> | <span data-ttu-id="2d10b-115">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d10b-115">Device.ReadWrite.All</span></span> |
+|<span data-ttu-id="daad6-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="daad6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="daad6-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="daad6-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="daad6-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="daad6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="daad6-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="daad6-113">Not supported.</span></span>    |
+|<span data-ttu-id="daad6-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="daad6-114">Application</span></span> | <span data-ttu-id="daad6-115">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="daad6-115">Device.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2d10b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2d10b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daad6-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="daad6-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="2d10b-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2d10b-117">Request headers</span></span>
-| <span data-ttu-id="2d10b-118">Имя</span><span class="sxs-lookup"><span data-stu-id="2d10b-118">Name</span></span>       | <span data-ttu-id="2d10b-119">Тип</span><span class="sxs-lookup"><span data-stu-id="2d10b-119">Type</span></span> | <span data-ttu-id="2d10b-120">Описание</span><span class="sxs-lookup"><span data-stu-id="2d10b-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="daad6-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="daad6-117">Request headers</span></span>
+| <span data-ttu-id="daad6-118">Имя</span><span class="sxs-lookup"><span data-stu-id="daad6-118">Name</span></span>       | <span data-ttu-id="daad6-119">Тип</span><span class="sxs-lookup"><span data-stu-id="daad6-119">Type</span></span> | <span data-ttu-id="daad6-120">Описание</span><span class="sxs-lookup"><span data-stu-id="daad6-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2d10b-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d10b-121">Authorization</span></span>  | <span data-ttu-id="2d10b-122">string</span><span class="sxs-lookup"><span data-stu-id="2d10b-122">string</span></span>  | <span data-ttu-id="2d10b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2d10b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2d10b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2d10b-125">Content-type</span></span> | <span data-ttu-id="2d10b-126">string</span><span class="sxs-lookup"><span data-stu-id="2d10b-126">string</span></span> | <span data-ttu-id="2d10b-127">application/json</span><span class="sxs-lookup"><span data-stu-id="2d10b-127">application/json</span></span> |
+| <span data-ttu-id="daad6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="daad6-121">Authorization</span></span>  | <span data-ttu-id="daad6-122">string</span><span class="sxs-lookup"><span data-stu-id="daad6-122">string</span></span>  | <span data-ttu-id="daad6-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="daad6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="daad6-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="daad6-125">Content-type</span></span> | <span data-ttu-id="daad6-126">string</span><span class="sxs-lookup"><span data-stu-id="daad6-126">string</span></span> | <span data-ttu-id="daad6-127">application/json</span><span class="sxs-lookup"><span data-stu-id="daad6-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2d10b-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2d10b-128">Request body</span></span>
-<span data-ttu-id="2d10b-129">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2d10b-129">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="daad6-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="daad6-128">Request body</span></span>
+<span data-ttu-id="daad6-129">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="daad6-129">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d10b-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d10b-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="daad6-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="daad6-130">Response</span></span>
 
-<span data-ttu-id="2d10b-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2d10b-131">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+<span data-ttu-id="daad6-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="daad6-131">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2d10b-132">Пример</span><span class="sxs-lookup"><span data-stu-id="2d10b-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2d10b-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="2d10b-133">Request</span></span>
-<span data-ttu-id="2d10b-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2d10b-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="daad6-132">Пример</span><span class="sxs-lookup"><span data-stu-id="daad6-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="daad6-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="daad6-133">Request</span></span>
+<span data-ttu-id="daad6-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="daad6-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -70,9 +70,9 @@ Content-type: application/json
   "operatingSystemVersion":"1"
 }
 ```
-<span data-ttu-id="2d10b-135">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2d10b-135">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="2d10b-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d10b-136">Response</span></span>
-<span data-ttu-id="2d10b-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2d10b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="daad6-135">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="daad6-135">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="daad6-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="daad6-136">Response</span></span>
+<span data-ttu-id="daad6-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="daad6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,6 +98,16 @@ Content-type: application/json
   "operatingSystemVersion":"1"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="daad6-140">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="daad6-140">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="daad6-141">C#</span><span class="sxs-lookup"><span data-stu-id="daad6-141">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_device_from_devices-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="daad6-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="daad6-142">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_device_from_devices-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,5 +116,9 @@ Content-type: application/json
   "description": "Create device",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/device-post-devices.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
