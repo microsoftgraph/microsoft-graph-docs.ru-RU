@@ -1,17 +1,17 @@
 ---
-title: Список элементов
+title: Список участников
 description: Получение списка пользователей, которым назначена роль каталога.  Роли каталогов можно назначать только пользователям.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19a820605c1a912a0f9d6c052bc36de6114c473e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e055b0ab7610608f152067c95560da4baca7480
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550611"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656680"
 ---
-# <a name="list-members"></a>Список членов
+# <a name="list-members"></a>Список элементов
 
 Получение списка пользователей, которым назначена роль каталога.  Роли каталогов можно назначать только пользователям.
 ## <a name="permissions"></a>Разрешения
@@ -36,10 +36,10 @@ GET /directoryRoles/{id}/members
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -52,7 +52,7 @@ GET /directoryRoles/{id}/members
 ```http
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -80,6 +80,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_members-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_members-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -88,5 +98,9 @@ Content-type: application/json
   "description": "List members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryrole-list-members.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryrole-list-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

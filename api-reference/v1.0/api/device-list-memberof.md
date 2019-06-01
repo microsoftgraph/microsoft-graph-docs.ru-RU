@@ -1,15 +1,15 @@
 ---
 title: Список групп устройств
 description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1642b6ee758af5d2ab4004ea5b7a5293f33f7d01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f6043524a841db2937acf472d1fe9fae1100ac87
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583755"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657352"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -38,7 +38,7 @@ GET /devices/{id}/memberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -85,6 +85,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_user_memberof-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_user_memberof-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,5 +103,9 @@ Content-type: application/json
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/device-list-memberof.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/device-list-memberof.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

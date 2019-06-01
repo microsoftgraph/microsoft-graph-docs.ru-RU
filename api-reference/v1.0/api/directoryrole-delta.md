@@ -2,14 +2,14 @@
 title: 'directoryRole: Delta'
 description: Получение только что созданных, обновленных или удаленных ролей каталогов без выполнения полного чтения всей коллекции ресурсов. Сведения об использовании запроса изменений см.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6da3e8c4cf92edbf79df1b082675c36d54e81292
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 46f6eaa2938c44c458159415b1cca1838f549ffa
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550604"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656953"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: Delta
 
@@ -37,7 +37,7 @@ GET /directoryRoles/delta
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Отслеживание изменений приводит к округлению одного или нескольких вызовов функции **Delta** . Если вы используете любой параметр запроса (кроме `$deltatoken` и `$skiptoken`), необходимо указать его в исходном запросе **Delta** . Microsoft Graph автоматически кодирует все заданные параметры в часть маркера или `nextLink` `deltaLink` URL-адрес, указанный в ответе. Параметры запроса нужно указать только один раз в первом запросе. Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержаться закодированные параметры.
+Отслеживание изменений приводит к округлению одного или нескольких вызовов функции **Delta** . Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. Копируйте и применяйте URL-адрес `nextLink` или `deltaLink` из предыдущего ответа в последующих запросах, так как в нем уже содержаться закодированные параметры.
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -46,11 +46,11 @@ GET /directoryRoles/delta
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
-Этот метод поддерживает параметры запросов OData для настройки отклика.
+Этот метод поддерживает параметры запросов OData для настройки ответа.
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство _id_ возвращается всегда.
 
-- Существует ограниченная поддержка `$filter`:
+- Имеется ограниченная поддержка параметра `$filter`:
 
   - Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`. Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
@@ -58,16 +58,16 @@ GET /directoryRoles/delta
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer &lt;token&gt;|
+| Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [directoryRole](../resources/directoryrole.md) в тексте отклика. В ответ также включается `nextLink` URL-адрес `deltaLink` или URL-адрес.
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [directoryRole](../resources/directoryrole.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
 
@@ -86,9 +86,9 @@ GET /directoryRoles/delta
 GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -112,6 +112,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryRole_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryRole_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>См. также
 
@@ -125,5 +135,9 @@ Content-type: application/json
   "description": "directoryRole: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryrole-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryrole-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

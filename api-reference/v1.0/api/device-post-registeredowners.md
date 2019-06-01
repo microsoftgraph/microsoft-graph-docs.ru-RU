@@ -1,15 +1,15 @@
 ---
 title: Создание объекта registeredOwner
 description: Добавление пользователя в качестве зарегистрированного владельца устройства.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 94d286b88b32d0e86e70581c4d4b91f7408bde51
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 69d702f7ca1cb119dd98a30436531ea9bd54a1ea
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583636"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656442"
 ---
 # <a name="create-registeredowner"></a>Создание объекта registeredOwner
 
@@ -35,7 +35,7 @@ POST /devices/{id}/registeredOwners/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -78,6 +78,14 @@ Content-length: 51
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_device-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -86,5 +94,8 @@ Content-length: 51
   "description": "Create registeredOwner",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/device-post-registeredowners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

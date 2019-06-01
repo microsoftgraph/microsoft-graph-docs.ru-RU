@@ -1,15 +1,15 @@
 ---
 title: Принудительное удаление домена
 description: Удаляет домен с помощью асинхронной длительной операции.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 69d95d4189f5660315365420703d3ebb954b9dda
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467507"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656652"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 
@@ -17,7 +17,7 @@ ms.locfileid: "32467507"
 
 В рамках этой операции выполняются следующие действия:
 
-* обновляет свойства `userPrincipalName`, `mail`и `proxyAddresses` свойства `users` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.
+* Обновляет свойства `userPrincipalName`, `mail`и `proxyAddresses` свойства `users` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.
 
 * Обновляет `mail` свойство `groups` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.
 
@@ -56,7 +56,7 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -64,7 +64,7 @@ POST /domains/{id}/forceDelete
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Параметр для отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему. Если задано **значение true** , то `users` обновление в рамках этой операции будет отключено.  Значение по умолчанию: **true**. |
 
-## <a name="response-body"></a>Текст ответа
+## <a name="response-body"></a>Текст отклика
 
 В случае успеха этот метод возвращает `HTTP/1.1 204 OK` код состояния.
 
@@ -98,6 +98,16 @@ Content-length: 33
 ```http
 HTTP/1.1 204 OK
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/domain_forcedelete-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/domain_forcedelete-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,5 +116,9 @@ HTTP/1.1 204 OK
   "description": "domain: forcedelete",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-forcedelete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/domain-forcedelete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

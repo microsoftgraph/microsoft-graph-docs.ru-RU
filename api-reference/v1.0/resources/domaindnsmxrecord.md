@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса Домаинднсмксрекорд
-description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта DomainDnsRecord.
-author: lleonard-msft
+description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 23d36114472073aedf38ca601380bb9ba38adc7d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bc2764b638f112345ef6328c0cca94ee0757ddfa
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562799"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657961"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>Тип ресурса Домаинднсмксрекорд
 
-Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
+Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
 
 ## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
@@ -26,7 +26,7 @@ ms.locfileid: "32562799"
 |label|String| Значение, используемое при настройке свойства *Alias/Host/Name* для записи MX на узле DNS. |
 |Маилексчанже|String| Значение, используемое при настройке *ответа/назначения/значения* для записи MX на узле DNS.|
 |параметров|Int32| Значение, используемое при настройке свойства *предпочтения/приоритета* записи MX на узле DNS. |
-|recordType|String| Тип записи DNS. Значение — это всегда *MX*. Ключ |
+|recordType|String| Тип записи DNS. Значение — это всегда *MX*. Key |
 |Суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи MX.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
 

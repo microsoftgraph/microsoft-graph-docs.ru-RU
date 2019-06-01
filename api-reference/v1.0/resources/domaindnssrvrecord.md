@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса Домаинднссрврекорд
-description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта DomainDnsRecord.
-author: lleonard-msft
+description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 28c590ff210952fc5d54ace61c08348383ce393a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e7563d90a92e319ceec5a5ca11d7edb4f267c5b
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562794"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657667"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса Домаинднссрврекорд
 
-Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
+Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
 
 ## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
@@ -28,7 +28,7 @@ ms.locfileid: "32562794"
 |порта|Int32| Значение, используемое при настройке свойства *Port* записи SRV на узле DNS. |
 |priority|Int32| Значение, используемое при настройке свойства *Priority* записи SRV на узле DNS. |
 |Protocol|String| Значение, используемое при настройке свойства *Protocol* записи SRV на узле DNS. |
-|recordType|String|  Тип записи DNS. Значение — всегда *SRV*. Ключ |
+|recordType|String|  Тип записи DNS. Значение — всегда *SRV*. Key |
 |service|String| Значение, используемое при настройке свойства *Service* для записи SRV на узле DNS. |
 |Суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи SRV.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи SRV на узле DNS. Не допускает значение null |

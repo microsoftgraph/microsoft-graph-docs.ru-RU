@@ -1,15 +1,15 @@
 ---
 title: Вывод объекта directoryRoleTemplate
 description: Получение свойств и связей объекта directoryRoleTemplate.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 55582635c4ccfbeea2d05175f53c3ca5f1eee1b6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 35dee2924f171976b538e930a264df8147e85b24
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617078"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656533"
 ---
 # <a name="get-directoryroletemplate"></a>Вывод объекта directoryRoleTemplate
 
@@ -36,7 +36,7 @@ GET /directoryRoleTemplates/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -70,11 +70,11 @@ Content-length: 98
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryroletemplate-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryroletemplate-Javascript-snippets.md)]
 
 ---

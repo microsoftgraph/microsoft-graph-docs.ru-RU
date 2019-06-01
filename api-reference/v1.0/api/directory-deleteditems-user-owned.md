@@ -1,15 +1,15 @@
 ---
 title: Разрешения
 description: 'Получает список недавно удаленных элементов, принадлежащих указанному пользователю.  '
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75d943a37899b6f1d84971305cd473a398b049bb
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555089"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656659"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Список удаленных элементов, принадлежащих пользователю**
 
@@ -41,7 +41,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 | ------------- | ------------------------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ```json
 {
@@ -55,10 +55,10 @@ POST /directory/deletedItems/getUserOwnedObjects
 | Параметр    | Тип |Описание|
 |:---------------|:--------|:----------|
 |userId|String|Идентификатор владельца.|
-|type|Строка|Тип собственных объектов, которые требуется вернуть; `Group` в настоящее время является единственным поддерживаемым значением.|
+|type|String|Тип собственных объектов, которые требуется вернуть; `Group` в настоящее время является единственным поддерживаемым значением.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешные запросы `200 OK` возвращают коды ответа; объект Response содержит свойства [Directory (удаленные элементы)](../resources/directory.md) .
 

@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса Домаинднскнамерекорд
-description: Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта DomainDnsRecord.
-author: lleonard-msft
+description: Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 226f067756517771b1d86f053d48268b905dd930
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6372f3684b476afef78b37e36bc395ce5e61f850
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562835"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657996"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Тип ресурса Домаинднскнамерекорд
 
-Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. НаСледуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
+Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
 
 
 ## <a name="methods"></a>Методы
@@ -26,7 +26,7 @@ ms.locfileid: "32562835"
 |id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значение null, доступно только для чтения|
 |Переключатель|Boolean| Если значение равно false, запись CNAME должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. Не допускает значение null |
 |label|String| Значение, используемое при настройке *псевдонима/узла или имени* записи CNAME на узле DNS. |
-|recordType|String| Тип записи DNS. Значение всегда равно *CNAME*. Ключ|
+|recordType|String| Тип записи DNS. Значение всегда равно *CNAME*. Key|
 |Суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи CNAME.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи CNAME на узле DNS. Не допускает значение null |
 

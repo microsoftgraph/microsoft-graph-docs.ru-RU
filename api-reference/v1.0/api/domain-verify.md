@@ -1,15 +1,15 @@
 ---
 title: 'domain: verify'
 description: Проверка права собственности на домен.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be1eb96647fe78a9a796703ea67004f8fa4571cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e68772d817f39fcbfff502ed47f43f97905f8243
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551500"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657485"
 ---
 # <a name="domain-verify"></a>domain: verify
 
@@ -60,7 +60,7 @@ POST /domains/{id}/verify
 POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -82,6 +82,16 @@ Content-length: 192
   "id": "contoso.com"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/domain_verify-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/domain_verify-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -90,5 +100,9 @@ Content-length: 192
   "description": "domain: verify",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-verify.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/domain-verify.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -1,15 +1,15 @@
 ---
 title: Получение удаленного элемента
 description: Получение свойств недавно удаленного элемента.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: de025535058c8b796b591b5bcac2f91f4d3397e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8d84fe777cb5e99727dcf8168d03ff8f2ac25451
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555096"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656806"
 ---
 # <a name="get-deleted-item"></a>Получение удаленного элемента
 
@@ -51,7 +51,7 @@ GET /directory/deletedItems/{id}
 | Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -67,7 +67,7 @@ GET /directory/deletedItems/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -90,6 +90,16 @@ Content-type: application/json
   "visibility":"Public"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directory-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directory-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -98,5 +108,9 @@ Content-type: application/json
   "description": "Get directory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directory-deleteditems-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directory-deleteditems-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
