@@ -2,14 +2,14 @@
 title: Тип ресурса dataPolicyOperation
 description: Представляет отправленную операцию политики данных. Содержит необходимые сведения для отслеживания состояния операции. Например, администратор компании может отправить запрос операции политики данных для экспорта данных компании сотрудника, а затем отследить этот запрос.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07c708ac2d46e23cc4bdcea233587c910d30fc3e
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543179"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657716"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Тип ресурса dataPolicyOperation
 
@@ -39,7 +39,7 @@ ms.locfileid: "32543179"
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

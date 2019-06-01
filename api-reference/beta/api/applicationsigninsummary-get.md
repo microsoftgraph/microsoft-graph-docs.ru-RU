@@ -2,14 +2,14 @@
 title: Получение Аппликатионсигнинсуммари
 description: Получение свойств и связей объекта **аппликатионсигнинсуммари** .
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d93f661baf60f5d6116639ae3d2dc3aa9f167f48
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 141d531693e2cf49b5aaad30002e024d06883939
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636235"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655098"
 ---
 # <a name="get-applicationsigninsummary"></a>Получение Аппликатионсигнинсуммари
 
@@ -61,7 +61,7 @@ reports/getAzureADApplicationSignInSummary(period='{period}')
 GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание:** Объект Response, показанный здесь, ммигхт должен быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -82,11 +82,11 @@ Content-length: 157
   "successPercentage": 99
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_applicationsigninsummary-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_applicationsigninsummary-Javascript-snippets.md)]
 
 ---

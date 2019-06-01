@@ -2,14 +2,14 @@
 title: Получение Аппликатионсигниндетаиледсуммари
 description: Получение свойств и связей объекта Аппликатионсигниндетаилсуммари.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd479161edbf1c0b261f467671c8a4b4c8797349
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 2145bfb511c1460b8001aa9eee9c1087fec460ba
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636508"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655105"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Получение Аппликатионсигниндетаиледсуммари
 
@@ -87,11 +87,11 @@ Content-length: 295
   "aggregatedEventDateTime": "datetime-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_applicationsignindetailedsummary-Javascript-snippets.md)]
 
 ---

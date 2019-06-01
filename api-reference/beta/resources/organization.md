@@ -2,14 +2,14 @@
 title: Тип ресурса organization
 description: 'Представляет клиента Azure Active Directory. '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f2b7d83f8c78eb11ad4f22d456d9791982aab5c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bfde61b207979f734398ef62f988d332a4abb455
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345592"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656890"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -43,8 +43,8 @@ ms.locfileid: "33345592"
 |createdDateTime|DateTimeOffset| Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | deletedDateTime                    | DateTimeOffset                                                    | Представляет дату и время удаления клиента Azure AD с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.                                                                                     |
 |Дирсинценаблед|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию).|
-|displayName|String|Отображаемое имя для клиента.|
-|id|Строка|Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|displayName|Строка|Отображаемое имя для клиента.|
+|id|String|Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 |isMultipleDataLocationsForServicesEnabled|Boolean|Используется значение **true**, если в организации включена поддержка нескольких регионов. Используется значение **false**, если поддержка нескольких регионов в организации не включена. По умолчанию используется значение **null**. Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Коллекция String| Значение null не допускается.            |
 |objectType|String|Строка, которая определяет тип объекта. Для клиентов всегда задается значение Company. |

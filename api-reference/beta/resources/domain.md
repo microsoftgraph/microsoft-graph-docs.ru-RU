@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса domain
 description: Представляет домен, связанный с клиентом.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 07a8e54cbd66096c1923145031de336b3ebc8cfd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 027af02f0327dc5fb75576c8d8813a2d23260066
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340711"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657863"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса domain
 
@@ -35,15 +35,15 @@ ms.locfileid: "33340711"
 
 | Метод   | Возвращаемый тип |Описание|
 |:---------------|:--------|:----------|
-|[Получение домена](../api/domain-get.md) | [domain](domain.md) | Чтение свойств и связей объекта домена.|
-|[Создание домена](../api/domain-post-domains.md) | [domain](domain.md) | Добавление домена в клиент. |
+|[Получение домена](../api/domain-get.md) | [domain](domain.md); | Чтение свойств и связей объекта домена.|
+|[Создание домена](../api/domain-post-domains.md) | [domain](domain.md); | Добавление домена в клиент. |
 |[Список domainNameReference](../api/domain-list-domainnamereferences.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка объектов каталога со ссылкой на домен.|
 |[Список serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |Коллекция [domainDnsRecord](domaindnsrecord.md)|  Получение списка DNS-записей домена для настройки домена.|
 |[Список verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |Коллекция [domainDnsRecord](domaindnsrecord.md)|  Получение списка DNS-записей домена для проверки домена.|
-|[Обновление домена](../api/domain-update.md) | [domain](domain.md) |Обновляет домен.|
+|[Обновление домена](../api/domain-update.md) | [domain](domain.md); |Обновляет домен.|
 |[Удаление домена](../api/domain-delete.md) | Нет |Удаляет домен.|
 |[Домен Форцеделете](../api/domain-forcedelete.md)|Нет|Удаляет домен, используя асинхронную операцию.|
-|[Проверка домена](../api/domain-verify.md)|[domain](domain.md)|Проверка права собственности на домен.|
+|[Проверка домена](../api/domain-verify.md)|[domain](domain.md);|Проверка права собственности на домен.|
 
 ## <a name="properties"></a>Свойства
 
@@ -52,15 +52,15 @@ ms.locfileid: "33340711"
 |authenticationType|String| Указывает настроенный тип проверки подлинности для домена. Значение может быть *управляемым* или *федеративными*.<br> *Managed* указывает облачный управляемый домен, в котором Azure AD выполняет проверку подлинности пользователей.<br>*Федеративная* указывает на то, что проверка подлинности федеративного поставщика удостоверений, например локальной службы Active Directory клиента, через службы федерации Active Directory. Не допускает значение null |
 |availabilityStatus|String| Это свойство всегда имеет значение null, за исключением случаев, когда используется действие [проверки](../api/domain-verify.md) . При использовании действия [Verify](../api/domain-verify.md) в ответе возвращается **Доменная** сущность. Свойство **аваилабилитистатус** объекта **domain** в отклике имеет значение *аваилаблеиммедиатели* или *емаилверифиеддомаинтакеоверсчедулед*.|
 |id|String| Полное доменное имя домена. Key, неизменяемая, не допускающая значение null, уникальная |
-|Исадминманажед|Логический| Значение свойства равно false, если управление записями DNS домена было делегировано в Office 365. В противном случае — значение true. Не допускает значение null |
-|isDefault|Логический| Значение true, если это домен по умолчанию, используемый для создания пользователя. Для каждой компании существует только один домен по умолчанию. Не допускает значение null |
+|Исадминманажед|Boolean| Значение свойства равно false, если управление записями DNS домена было делегировано в Office 365. В противном случае — значение true. Не допускает значение null |
+|isDefault|Boolean| Значение true, если это домен по умолчанию, используемый для создания пользователя. Для каждой компании существует только один домен по умолчанию. Не допускает значение null |
 |при инициализации|Boolean| Имеет значение true, если это начальный домен, созданный Microsoft Online Services (companyname.onmicrosoft.com). Для каждой компании существует только один начальный домен. Не допускает значение null |
-|Корень|Логический| True, если домен является проверенным корневым доменом. В противном случае — false, если домен является поддоменом или непроверенным. Не допускает значение null |
-|Проверка|Логический| True, если домен выполнил проверку владения доменом. Не допускает значение null |
+|Корень|Boolean| True, если домен является проверенным корневым доменом. В противном случае — false, если домен является поддоменом или непроверенным. Не допускает значение null |
+|Проверка|Boolean| True, если домен выполнил проверку владения доменом. Не допускает значение null |
 |Пассворднотификатионвиндовиндайс|Int32|Указывает количество дней до того, как пользователь получит уведомление о том, что срок действия пароля не истечет. Если свойство не задано, будет использоваться значение по умолчанию (14 дней).|
 |Пассвордвалидитипериодиндайс|Int32| Указывает период времени, в течение которого пароль должен быть действителен до его изменения. Если свойство не задано, будет использоваться значение по умолчанию (90 дней). |
-|Суппортедсервицес|Коллекция String| Возможности, назначенные для домена.<br><br>Может включать 0, 1 или несколько из следующих значений: *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> При использовании Graph API можно добавить или удалить следующие значения: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Не допускает значение null|
-|state|[Домаинстате](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
+|Суппортедсервицес|Коллекция строк| Возможности, назначенные для домена.<br><br>Может включать 0, 1 или несколько из следующих значений: *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> При использовании Graph API можно добавить или удалить следующие значения: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Не допускает значение null|
+|состояние|[Домаинстате](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
 ## <a name="relationships"></a>Отношения
 

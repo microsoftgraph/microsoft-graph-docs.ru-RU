@@ -2,14 +2,14 @@
 title: Обновление orgcontact
 description: Обновление свойств объекта orgcontact.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 959be23764b5348c0e9473aa00205620f321ebb4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ab7064a899fcb4aba051dd0aa0046fc0aee9ecd2
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596611"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657107"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -35,7 +35,7 @@ PATCH /contacts/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -43,7 +43,7 @@ PATCH /contacts/{id}
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|Логический||
+|onPremisesSyncEnabled|Boolean||
 |displayName|Строка||
 |givenName|String||
 |jobTitle|String||
@@ -57,7 +57,7 @@ PATCH /contacts/{id}
 |state|Строка||
 |streetAddress|String||
 |surname|String||
-|businessPhones|Коллекция String||
+|businessPhones|Коллекция строк||
 
 ## <a name="response"></a>Отклик
 
@@ -108,11 +108,11 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_orgcontact-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_orgcontact-Javascript-snippets.md)]
 
 ---

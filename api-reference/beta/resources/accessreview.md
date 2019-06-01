@@ -2,14 +2,14 @@
 title: Тип ресурса Акцессревиев
 description: 'В функции проверки доступа Azure AD — это `accessReview` представление доступа.  '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d65d41c23b97c5883be4c062598f438640cd7c1f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b1801a7f7cbd52375e4fbbfb42847b29539a2dde
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339379"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657737"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса Акцессревиев
 
@@ -24,17 +24,17 @@ ms.locfileid: "33339379"
 |:---------------|:--------|:----------|
 |[Получение Акцессревиев](../api/accessreview-get.md) |   [Акцессревиев](accessreview.md) |   Получение проверки доступа с определенным идентификатором. |
 |[Создание Акцессревиев](../api/accessreview-create.md) | [Акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
-|[Удаление Акцессревиев](../api/accessreview-delete.md) | Отсутствуют.   | Удаление Акцессревиев. |
+|[Удаление Акцессревиев](../api/accessreview-delete.md) | Нет.   | Удаление Акцессревиев. |
 |[Обновление Акцессревиев](../api/accessreview-update.md) | [Акцессревиев](accessreview.md) | Обновление Акцессревиев. |
 |[Список рецензентов Акцессревиев](../api/accessreview-listreviewers.md) |      Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
-|[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) |      Отсутствуют.   |   Добавьте проверяющего в объект Акцессревиев. |
-|[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Отсутствуют.  |   Удаление проверяющего из Акцессревиев. |
+|[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
+|[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Нет.  |   Удаление проверяющего из Акцессревиев. |
 |[Список решений Акцессревиев](../api/accessreview-listdecisions.md) |      Коллекция [акцессревиевдеЦисион](accessreviewdecision.md)| Получение решений для Акцессревиев.|
 |[Список моих решений Акцессревиев](../api/accessreview-listmydecisions.md) |     Коллекция [акцессревиевдеЦисион](accessreviewdecision.md)| В качестве проверяющего получите мое решение Акцессревиев.|
-|[Отправка напоминания о Акцессревиев](../api/accessreview-sendreminder.md) |        Отсутствуют.   |   Отправьте напоминание рецензентам Акцессревиев. |
-|[Остановить Акцессревиев](../api/accessreview-stop.md) |     Отсутствуют.   |   Остановка Акцессревиев. |
-|[Сброс решений Акцессревиев](../api/accessreview-reset.md) |     Отсутствуют.   |   Сброс решений во время выполнения Акцессревиев.|
-|[Применение решений Акцессревиев](../api/accessreview-apply.md) |     Отсутствуют.   |   Применение решений из завершенной Акцессревиев.|
+|[Отправка напоминания о Акцессревиев](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание рецензентам Акцессревиев. |
+|[Остановить Акцессревиев](../api/accessreview-stop.md) |     Нет.   |   Остановка Акцессревиев. |
+|[Сброс решений Акцессревиев](../api/accessreview-reset.md) |     Нет.   |   Сброс решений во время выполнения Акцессревиев.|
+|[Применение решений Акцессревиев](../api/accessreview-apply.md) |     Нет.   |   Применение решений из завершенной Акцессревиев.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

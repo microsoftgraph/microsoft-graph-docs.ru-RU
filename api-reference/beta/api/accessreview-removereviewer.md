@@ -2,14 +2,14 @@
 title: Удаление рецензента Акцессревиев
 description: 'В функции рецензирования Access в Azure AD обновите существующий объект Акцессревиев, чтобы удалить пользователя в качестве проверяющего.  Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешена для проверки доступа, при которой пользователи просматривают собственный доступ, и не предназначены для проверки доступа, в которой владельцы группы назначаются в качестве проверяющих. '
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 435574c6c31a145803f263bce33f2ff5f0727ff2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c0b5407b07f309a1c6e7e5e8e6bd0942ad8aca23
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636753"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655539"
 ---
 # <a name="remove-accessreview-reviewer"></a>Удаление рецензента Акцессревиев
 
@@ -37,7 +37,7 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
 
@@ -50,7 +50,7 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 
 
 ##### <a name="request"></a>Запрос
-В URL-АДРЕСе запроса укажите идентификатор объекта Акцессревиев, а затем идентификатор объекта пользователя.
+В URL-адресе запроса укажите идентификатор объекта Акцессревиев, а затем идентификатор объекта пользователя.
 
 <!-- {
   "blockType": "request",
@@ -69,11 +69,11 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16
 ```http
 HTTP/1.1 204 No content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/remove_accessReview_reviewer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/remove_accessReview_reviewer-Javascript-snippets.md)]
 
 ---

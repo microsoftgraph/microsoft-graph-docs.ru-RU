@@ -1,21 +1,24 @@
 ---
 title: Перечисление directoryAudits
-description: Представляет список журналов аудита, созданный Azure Active Directory. Включает журналы аудита, созданные различными службами Azure Active Directory, например службой управления пользователями, приложениями, устройствами и группами, управления привилегированными пользователями, проверки доступа, условий использования, защиты идентификации, управления паролями (SSPR и сброс паролей администраторов), самостоятельного управления группами и т. д.
-localization_priority: Priority
-author: lleonard-msft
+description: Описывает метод List ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
+localization_priority: Normal
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: ae0c98fe5be956aa5a00ce28cad5859c12063b35
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455109"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656127"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
-Представляет список журналов аудита, созданный Azure Active Directory. Включает журналы аудита, созданные различными службами Azure Active Directory, например службой управления пользователями, приложениями, устройствами и группами, управления привилегированными пользователями, проверки доступа, условий использования, защиты идентификации, управления паролями (SSPR и сброс паролей администраторов), самостоятельного управления группами и т. д.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получение списка журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защиту удостоверения, управление паролями (SSPR и пароль администратора RESETS) и управление самосервисными группами.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -27,12 +30,15 @@ ms.locfileid: "32455109"
 Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Сведения о том, как использовать эти параметры, можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -40,7 +46,8 @@ GET /auditLogs/directoryAudits
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>Список атрибутов, поддерживаемых параметром $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
+
 |Имя атрибута |Поддерживаемые операторы|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
@@ -53,33 +60,47 @@ GET /auditLogs/directoryAudits
 |initiatedBy/app/appDisplayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq, startswith|
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryAudit](../resources/directoryaudit.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudits"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -87,7 +108,7 @@ Content-length: 271
 ```
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
   "value": [{
         "id": "id",
         "category": "UserManagement",
@@ -109,7 +130,7 @@ Content-length: 271
         "targetResources": [{
             "@odata.type": "#microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
-            "displayName": "Lynda.com",
+            "displayName": "Example.com",
             "modifiedProperties": [{
                 "displayName": "Action Client Name",
                 "oldValue": null,
@@ -130,6 +151,16 @@ Content-length: 271
     }]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -138,5 +169,9 @@ Content-length: 271
   "description": "List directoryAudits",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -2,14 +2,14 @@
 title: Тип ресурса АкцессревиевдеЦисион
 description: В функции рецензирования Access в `accessReviewDecision` Azure AD — представляет решение для проверки доступа к определенному объекту в Azure AD.  При просмотре доступа или экземпляре повторяющейся проверки доступа существует один `accessReviewDecision` проверенный пользователь.  Например, если в группе есть два гостей и один не гость, а для этой группы выполняется проверка доступа для гостей, то будут доступны два объекта решения для проверки доступа.  Если проверяющий изменяет свое решение или другой проверяющий переопределяет их, `accessReviewDecision` то обновляется.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a3ba49484f46f6d41349abbd7a857ee365ef3ff0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 034ecbdaa108d0c63378d1c00136f0415019b262
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339365"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657744"
 ---
 # <a name="accessreviewdecision-resource-type"></a>Тип ресурса АкцессревиевдеЦисион
 
@@ -20,7 +20,7 @@ ms.locfileid: "33339365"
 
 ## <a name="methods"></a>Методы
 
-Отсутствуют.  Объекты этого типа автоматически создаются компонентом при инициализации проверки доступа и не могут быть удалены.  Они могут извлекаться из проверки доступа с помощью связей " [решения](../api/accessreview-listdecisions.md) " и " [мидеЦисионс](../api/accessreview-listmydecisions.md) ".
+Нет.  Объекты этого типа автоматически создаются компонентом при инициализации проверки доступа и не могут быть удалены.  Они могут извлекаться из проверки доступа с помощью связей " [решения](../api/accessreview-listdecisions.md) " и " [мидеЦисионс](../api/accessreview-listmydecisions.md) ".
 
 ## <a name="properties"></a>Свойства
 
@@ -50,7 +50,7 @@ ms.locfileid: "33339365"
 
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.  Объекты этого типа можно получить из проверки доступа с помощью отношений [решений](../api/accessreview-listdecisions.md) и [МидеЦисионс](../api/accessreview-listmydecisions.md) в объекте [акцессревиев](accessreview.md) .
 

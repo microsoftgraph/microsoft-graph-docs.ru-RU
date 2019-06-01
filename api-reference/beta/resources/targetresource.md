@@ -1,15 +1,15 @@
 ---
 title: сложный тип ресурса targetResource — API Microsoft Graph
 description: Определяет сложный тип ресурса сущности targetResource API Microsoft Graph, который поддерживает действия Организации отчетности журнала аудита (клиента).
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: azure-ad
-ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a52a8586d8bce211729b8dffe2a43129b94b30d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583111"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657653"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -20,8 +20,8 @@ ms.locfileid: "32583111"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|Указывает уникальный идентификатор ресурса.|
-|displayName|String|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
+|id|String|Указывает уникальный идентификатор ресурса.|
+|displayName|Строка|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
 |type|String|Описывает тип ресурса.  Примеры значений: `Application`, `Group` `ServicePrincipal`, и `User`.|
 |userPrincipalName|String|Если **** для `User`параметра Type задано значение, включается имя пользователя, инициировавшего действие; `null` для других типов.|
 |groupType|String|Если **** для `Group`параметра Type задано значение, это указывает тип группы.|

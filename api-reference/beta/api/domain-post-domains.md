@@ -1,15 +1,15 @@
 ---
 title: Создание домена
 description: Добавление домена в клиент.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 098c7a4088de2e8c80081b5435344bf2f91e0f23
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7d824a70777244327c219ee23100afb913455d89
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325920"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655728"
 ---
 # <a name="create-domain"></a>Создание домена
 
@@ -28,7 +28,7 @@ ms.locfileid: "33325920"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Для приложений | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

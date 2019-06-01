@@ -2,14 +2,14 @@
 title: Обновление Акцессревиев
 description: В функции рецензирования Access в Azure AD обновите существующий объект Акцессревиев, чтобы изменить одно или несколько его свойств.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 026b445eee69557ead9179100cd6075e06783a86
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 97df0dedafdca0cd359effff65f1082466916f4a
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636732"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655399"
 ---
 # <a name="update-accessreview"></a>Обновление Акцессревиев
 
@@ -39,8 +39,8 @@ PATCH /accessReviews('{reviewId}')
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление параметров объекта [Акцессревиев](../resources/accessreview.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление параметров объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
 
 В следующей таблице приведены свойства, которые можно указать при обновлении Акцессревиев.
 
@@ -61,7 +61,7 @@ PATCH /accessReviews('{reviewId}')
 Это пример обновления доступа к одноразовой (неповторной) проверке доступа.
 
 ##### <a name="request"></a>Запрос
-В теле запроса добавьте представление новых свойств объекта [Акцессревиев](../resources/accessreview.md) в формате JSON.
+В теле запроса добавьте представление новых свойств объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
 
 <!-- {
   "blockType": "request",
@@ -98,11 +98,11 @@ Content-type: application/json
     "description": "Sample description"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_accessReview-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_accessReview-Javascript-snippets.md)]
 
 ---

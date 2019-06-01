@@ -2,14 +2,14 @@
 title: Создание параметра каталога
 description: Используйте этот API, чтобы создать новый параметр на основе шаблонов, доступных в Директорисеттингтемплатес. Эти параметры могут быть на уровне клиента или на уровне объекта (в настоящее время только для групп). Запрос на создание должен предоставлять Сеттингвалуес для всех параметров, определенных в шаблоне. Для параметров, относящихся к группе, можно задать только параметр, определяющий, могут ли участники группы приглашать гостевых пользователей. Это поведение будет управляться после того, как возможность добавлять гостей в группу является общедоступной.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc73029a66dd1ee0fffb4e99d0dd290870de9b99
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 53177561a7c2ae36919095fab6c456b37ecac67f
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33590418"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655805"
 ---
 # <a name="create-a-directory-setting"></a>Создание параметра каталога
 
@@ -42,8 +42,8 @@ POST /groups/{id}/settings
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Директорисеттинг](../resources/directorysetting.md) в формате JSON.  Однако отображаемое имя для параметра будет задано на основе имени шаблона параметров, на который указывает ссылка.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.  Однако отображаемое имя для параметра будет задано на основе имени шаблона параметров, на который указывает ссылка.
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +71,7 @@ Content-length: 222
   ]
 }
 ```
-В тексте запроса добавьте представление объекта [Директорисеттинг](../resources/directorysetting.md) в формате JSON.
+В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -97,11 +97,11 @@ Content-length: 244
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Javascript-snippets.md)]
 
 ---

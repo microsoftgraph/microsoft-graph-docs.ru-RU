@@ -2,14 +2,14 @@
 title: Получение directoryAudit
 description: Описывает метод Get ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 40d94dd0ffe5df1adc9df9042173e33b5b98a204
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b5c75bdae12fe7204739096e7be6b639512d9d47
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591690"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34656155"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -38,7 +38,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки отклика. Сведения о том, как использовать эти параметры, можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
+Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения о том, как использовать эти параметры, можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -127,11 +127,11 @@ Content-length: 218
     }]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_directoryaudit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
 
 ---

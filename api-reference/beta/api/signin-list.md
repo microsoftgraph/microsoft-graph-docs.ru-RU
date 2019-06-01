@@ -2,14 +2,14 @@
 title: Перечисление входов
 description: Описан метод перечисления ресурсов signIn (объектов) из API Microsoft Graph API (REST), что помогает при аудите действий в каталоге (клиенте) (бета-версия).
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fdb1358d36a0e1da34779de5505c5f18f901e681
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
-ms.translationtype: HT
+ms.openlocfilehash: 8e17b6d6d4a8a80de26d59da5e17e7f5655a04ef
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638685"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657366"
 ---
 # <a name="list-signins"></a>Перечисление входов
 

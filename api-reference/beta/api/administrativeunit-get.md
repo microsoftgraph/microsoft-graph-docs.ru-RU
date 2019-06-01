@@ -1,15 +1,15 @@
 ---
 title: Получение administrativeUnit
 description: Получение свойств и связей объекта administrativeUnit.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8f9a3880111cf7c3cfa51c4f59a1e5b3b5600cbf
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: aa56f7752e303ffbf694bd8ecbe21dd71884d3b1
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636655"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655301"
 ---
 # <a name="get-administrativeunit"></a>Получение administrativeUnit
 
@@ -42,7 +42,7 @@ GET /administrativeUnits/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,11 +77,11 @@ Content-length: 134
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_administrativeunit-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_administrativeunit-Javascript-snippets.md)]
 
 ---

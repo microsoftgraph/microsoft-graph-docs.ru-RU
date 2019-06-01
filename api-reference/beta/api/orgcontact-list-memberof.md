@@ -2,14 +2,14 @@
 title: 'orgContact: List memberOf'
 description: Получение списка групп и единиц админстративе, участником которых является контакт.
 localization_priority: Normal
-author: lleonard-msft
+author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8ed702fa4e656bc0dc3940becb4de9ef35bdc85
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2b6dcaede1d448aec71a8a0318f211e658e93609
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596729"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657226"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: List memberOf
 
@@ -39,7 +39,7 @@ GET /contacts/{id}/memberOf
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -76,11 +76,11 @@ Content-length: 55
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_memberof-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_memberof-Javascript-snippets.md)]
 
 ---
