@@ -4,16 +4,19 @@ description: Создание новой команды из группы.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9950b92acb28d8138bba363170c8e1e89b5f1d5a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c47b3e7568c09c3b7f5e3debaec2eb74e074d6e7
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335273"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669661"
 ---
 # <a name="create-team-from-group"></a>Создание команды из группы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> Этот API-интерфейс находится в процессе замены на интерфейс [Создание команды](../api/team-post.md) и будет удален до конца 2019. Сведения о создании команды из группы см. в примерах 4 и 5 статьи [Создание команды](../api/team-post.md).
 
 Создание новой [команды](../resources/team.md) из [группы](../resources/group.md).
 

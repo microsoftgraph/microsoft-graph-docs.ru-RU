@@ -2,12 +2,12 @@
 title: Рекомендации по работе с Microsoft Graph
 description: Эта статья содержит рекомендации по эффективному использованию Microsoft Graph в приложениях, независимо от текущей задачи — знакомство с Microsoft Graph, увеличение производительности или повышение надежности приложения.
 localization_priority: Priority
-ms.openlocfilehash: 11db24ee87485987f1bf23e750d4af59206885a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d0f0a382b7a61fe636ae5fb0fc791ed1f63327d
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526372"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34657611"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Рекомендации по работе с Microsoft Graph
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/messages
 
 ## <a name="storing-data-locally"></a>Локальное хранение данных
 
-В идеальном случае приложение должно вызывать Microsoft Graph для получения данных в реальном времени. Кэшировать данные или хранить их локально следует, только если это требуется для определенного сценария и если этот вариант использования предусмотрен условиями использованиями и политикой конфиденциальности, а также не противоречит [условиям использования Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use). В приложении также необходимо реализовать надлежащие политики хранения и удаления.
+В идеальном случае приложение должно вызывать Microsoft Graph для получения данных в реальном времени. Кэшировать данные или хранить их локально следует, только если это требуется для определенного сценария и если этот вариант использования предусмотрен условиями использованиями и политикой конфиденциальности, а также не противоречит [условиям использования API Microsoft](/legal/microsoft-apis/terms-of-use?context=/graph/context). В приложении также необходимо реализовать надлежащие политики хранения и удаления.
 
 ## <a name="optimizations"></a>Оптимизация
 

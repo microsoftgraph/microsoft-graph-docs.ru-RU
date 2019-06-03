@@ -4,12 +4,12 @@ description: Создание новой команды.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ce6b61c1d3d3490db1fe37f51f70b943121def72
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c16fd80ff61e49a3a37220c06ea6f742b73131dd
+ms.sourcegitcommit: 9ffac53b262203917dfb20ac981e97f50d398199
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330164"
+ms.lasthandoff: 06/01/2019
+ms.locfileid: "34669668"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -93,7 +93,7 @@ Content-Type: application/json
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('abc123')"
+    "https://graph.microsoft.com/beta/users('userId')"
   ]
 }
 ```
@@ -109,7 +109,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Пример 3. Создание команды с установленным приложением и несколькими каналами с закрепленными вкладками с использованием делегированных разрешений
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>Пример 3. Создание команды с несколькими каналами, установленными приложениями и закрепленными вкладками с использованием делегированных разрешений
 
 Ниже приведен запрос с указанием полного набора полезных данных. Клиент может переопределить значения в базовом шаблоне и добавить элементы со значениями массива в пределах, допускаемых правилами проверки для объекта `specialization`. 
 
@@ -207,7 +207,93 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a>Пример 4. Создание команды с использованием нестандартного базового типа шаблона
+### <a name="example-4-create-a-team-from-group"></a>Пример 4. Создание команды из группы
+
+В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId**.
+
+Обратите внимание на некоторые моменты, связанные с этим вызовом:
+
+* Чтобы создать команду, в группе, из которой она создается, должен быть хотя бы один владелец. 
+* Созданная команда всегда наследует из группы отображаемое имя, параметры видимости, специализацию и владельцев. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств **displayName**, **visibility**, **specialization** или **owners@odata.bind** команды возвращает ошибку.
+* Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. Рекомендуется повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
+
+
+#### <a name="request"></a>Запрос
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a>Пример 5. Создание команды из группы с несколькими каналами, установленными приложениями и закрепленными вкладками
+
+Ниже указан запрос, преобразующий существующую группу с расширенными свойствами, в результате чего создается команда с несколькими каналами, установленными приложениями и закрепленными вкладками.
+
+Дополнительные сведения о поддерживаемых базовых типах шаблонов и свойствах см. в статье [Начало работы с шаблонами Teams](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates).
+
+#### <a name="request"></a>Запрос
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
+  "channels": [
+        {
+            "displayName": "Class Announcements 📢",
+            "isFavoriteByDefault": true
+        },
+        {
+            "displayName": "Homework 🏋️",
+            "isFavoriteByDefault": true,
+        }
+    ],
+    "memberSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false,
+        "allowAddRemoveApps": false,
+        "allowCreateUpdateRemoveTabs": false,
+        "allowCreateUpdateRemoveConnectors": false
+    },
+    "installedApps": [
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        },
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a>Пример 6. Создание команды с использованием нестандартного базового типа шаблона
 
 Базовые типы шаблонов — это специальные шаблоны, созданные корпорацией Майкрософт для определенных отраслей. Эти базовые шаблоны зачастую содержат защищаемые приложения, недоступные в свойствах хранилища и команды, которые еще не поддерживаются по отдельности в шаблонах Microsoft Teams.
 
@@ -238,7 +324,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>Пример 5. Создание команды с использованием нестандартного базового типа шаблона с расширенными свойствами
+### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>Пример 7. Создание команды с использованием нестандартного базового типа шаблона с расширенными свойствами
 
 Базовые типы шаблонов могут быть расширены с помощью дополнительных свойств. Это позволяет дополнить существующий базовый шаблон дополнительными каналами, приложениями, вкладками и параметрами команды.
 
@@ -294,8 +380,8 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>См. также
 
-- [Доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates)
+- 
+  [Доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates)
 - [Начало работы с шаблонами команд розничной торговли](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Начало работы с шаблонами команд здравоохранения](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Создание группы с командой](/graph/teams-create-group-and-team)
-
