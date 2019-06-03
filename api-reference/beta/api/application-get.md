@@ -1,15 +1,15 @@
 ---
 title: Получение объекта application
 description: Получение свойств и связей объекта application.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 06d0bcbf167411f7ebcaafcf4889c4fbe5bf77e0
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: afabbabcaa8221dd59650ba4b0d296101de49061
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636256"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655210"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -99,7 +99,7 @@ Content-length: 1044
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_application-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_application-Javascript-snippets.md)]
 
 ---

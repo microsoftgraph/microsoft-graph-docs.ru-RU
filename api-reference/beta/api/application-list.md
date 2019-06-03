@@ -1,15 +1,15 @@
 ---
 title: Список приложений
 description: Получение списка приложений в этой организации.
-author: lleonard-msft
+author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5bd0db82f38874c30b6b214dcdb74148913cc53
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 4ef59ae8751f7ec74b1e2b5635d19205c6d73a47
+ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636312"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34655203"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -105,7 +105,7 @@ Content-length: 1229
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/list_application-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/list_application-Javascript-snippets.md)]
 
 ---
