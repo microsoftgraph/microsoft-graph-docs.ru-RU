@@ -18,6 +18,8 @@ items:
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: Управление доступом к приложению (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      - name: Ограничить доступ к почтовому ящику
+        href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Использование API
     items:
       - name: Обзор
@@ -643,7 +645,7 @@ items:
                 href: api/calendar-update.md
               - name: Удаление календаря
                 href: api/calendar-delete.md
-              - name: Список представлений календаря
+              - name: Представление списка для календаря
                 href: api/calendar-list-calendarview.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
@@ -829,7 +831,7 @@ items:
           - name: Организация в Microsoft Bookings
             href: resources/bookingbusiness.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/bookingbusiness-list.md
               - name: Создание
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -1475,7 +1477,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
-                  - name: Update
+                  - name: Обновление
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
               - name: Управление электронной книгой
                 href: resources/intune-books-managedebook.md
@@ -2369,7 +2371,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-enrollment-windowsautopilotsettings-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-enrollment-windowsautopilotsettings-update.md
                   - name: Действие sync
                     href: api/intune-enrollment-windowsautopilotsettings-sync.md
@@ -2761,7 +2763,7 @@ items:
               - name: Профиль сертификата SCEP для Android
                 href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -2804,7 +2806,7 @@ items:
               - name: Конфигурация Wi-Fi для Android
                 href: resources/intune-deviceconfig-androidwificonfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-androidwificonfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -6439,7 +6441,7 @@ items:
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                   - name: Создание
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                  - name: Удалить
+                  - name: Удаление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                   - name: Обновление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -7957,7 +7959,7 @@ items:
                   - name: Параметры роли
                     href: resources/governancerolesetting.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/governancerolesetting-list.md
                       - name: Получение
                         href: api/governancerolesetting-get.md
@@ -8609,7 +8611,7 @@ items:
               - name: Действия в Yammer
                 href: resources/yammer-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователях
+                  - name: Получение сведений о пользователе
                     href: api/reportroot-getyammeractivityuserdetail.md
                   - name: Получение количества действий
                     href: api/reportroot-getyammeractivitycounts.md
@@ -8713,6 +8715,10 @@ items:
                 href: api/itemanalytics-get.md
               - name: Получение действий по интервалу
                 href: api/itemactivity-getbyinterval.md
+              - name: Подписаться на сайт
+                href: api/site-follow.md
+              - name: Отписаться от сайта
+                href: api/site-unfollow.md
           - name: Списки
             href: resources/list.md
             items:

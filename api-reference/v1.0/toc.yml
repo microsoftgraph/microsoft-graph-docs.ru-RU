@@ -18,6 +18,8 @@ items:
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: Управление доступом к приложению (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      - name: Ограничить доступ к почтовому ящику
+        href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Использование API
     items:
       - name: Обзор
@@ -35,6 +37,8 @@ items:
         items:
           - name: Обзор
             href: /graph/webhooks?toc=./ref/toc.json
+          - name: Руководство
+            href: /graph/tutorials/change-notifications
           - name: Отсутствие уведомлений в Outlook (предварительная версия)
             href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
       - name: Отслеживание изменений
@@ -838,7 +842,7 @@ items:
               - name: Набор приложений Office для macOS
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: Получение
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -864,7 +868,7 @@ items:
               - name: Управляемое приложение из магазина Android
                 href: resources/intune-apps-managedandroidstoreapp.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-apps-managedandroidstoreapp-list.md
                   - name: Получение
                     href: api/intune-apps-managedandroidstoreapp-get.md
@@ -1517,7 +1521,7 @@ items:
                 items:
                   - name: Получение
                     href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md
-                  - name: Обновление
+                  - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md
               - name: Ресурс DeviceConfigurationDeviceStateSummary
                 href: resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md
@@ -1719,7 +1723,7 @@ items:
               - name: Специальная конфигурация macOS
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -1732,7 +1736,7 @@ items:
               - name: Конфигурация функций для устройств с macOS
                 href: resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md
                 items:
-                  - name: Перечисление
+                  - name: Список
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
@@ -2372,7 +2376,7 @@ items:
                     href: api/intune-mam-defaultmanagedappprotection-get.md
                   - name: Создание
                     href: api/intune-mam-defaultmanagedappprotection-create.md
-                  - name: Удаление
+                  - name: Удалить
                     href: api/intune-mam-defaultmanagedappprotection-delete.md
                   - name: Обновление
                     href: api/intune-mam-defaultmanagedappprotection-update.md
@@ -2590,7 +2594,7 @@ items:
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                   - name: Создание
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                  - name: Удалить
+                  - name: Удаление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                   - name: Обновление
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -3455,7 +3459,7 @@ items:
                 href: api/onenote-list-sections.md
               - name: Вывод списка групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Вывод списка страниц
+              - name: Список страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
