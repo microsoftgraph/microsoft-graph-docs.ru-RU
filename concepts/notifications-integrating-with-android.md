@@ -377,7 +377,6 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>См. также
 
-- 
-  [Справочник по API](https://docs.microsoft.com/ru-RU/windows/project-rome/notifications/api-reference-for-android) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
+- [Справочник по API](https://docs.microsoft.com/ru-RU/windows/project-rome/notifications/api-reference-for-android) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
 - [Пример клиентского кода](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample) для приложений Android.
 - [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений. 

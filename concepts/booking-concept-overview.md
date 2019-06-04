@@ -41,7 +41,6 @@ Microsoft Bookings — это приложения для браузера и м
 
 Дополнительные сведения:
 
-- 
-  [Microsoft Bookings](https://support.office.com/ru-RU/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/ru-RU/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Использование API Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) в Microsoft Graph.
 

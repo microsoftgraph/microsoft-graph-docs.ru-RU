@@ -44,7 +44,6 @@ Microsoft Graph обеспечивает открытость (поддержк�
 
 Дополнительные сведения для ИТ-администраторов см. в указанных ниже источниках.
 
-- 
-  [Гибридные развертывания Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Гибридные развертывания Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [Выпуск накопительного пакета обновления за сентябрь 2016 г.](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Требования к локальной архитектуре для REST API](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

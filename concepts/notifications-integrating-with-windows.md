@@ -88,10 +88,8 @@ ms.locfileid: "34063412"
 
 Дополнительные сведения о добавлении и использовании пакетов NuGet в приложении UWP см. в следующих статьях:
 
-* 
-  [Использование пакетов с сайта nuget.org](https://docs.microsoft.com/ru-RU/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* 
-  [Краткое руководство. Установка и использование пакета в Visual Studio](https://docs.microsoft.com/ru-RU/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Использование пакетов с сайта nuget.org](https://docs.microsoft.com/ru-RU/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [Краткое руководство. Установка и использование пакета в Visual Studio](https://docs.microsoft.com/ru-RU/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>Инициализация платформы подключенных устройств
@@ -279,7 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>См. также
 
-- 
-  [Справочник по API](https://docs.microsoft.com/ru-RU/windows/project-rome/notifications/api-reference-for-windows/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
+- [Справочник по API](https://docs.microsoft.com/ru-RU/windows/project-rome/notifications/api-reference-for-windows/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
 - [Пример клиентского кода](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) для приложений UWP Windows.
 - [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений. 
