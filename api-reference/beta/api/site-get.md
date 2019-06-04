@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Получение сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e0242952a0cecef9ab23cad2cdcd3175dd08fe24
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: f189a28d9b4853492c68e581fc9790253ce6de89
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638706"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683554"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
@@ -19,17 +19,6 @@ ms.locfileid: "33638706"
 Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.
 
 [site]: ../resources/site.md
-
-При обращении ресурс **site** рассматривается как уникальный идентификатор, состоящий из следующих значений:
-
-* имя узла семейства веб-сайтов (contoso.sharepoint.com);
-* уникальный идентификатор семейства веб-сайтов (GUID);
-* уникальный идентификатор сайта (GUID).
-
-Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.
-
-* `/sites/root`. Корневой сайт клиента.
-* `/groups/{group-id}/sites/root`. Сайт группы для ресурса group.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -101,11 +90,11 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
 
 ---
