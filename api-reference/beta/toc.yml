@@ -8974,7 +8974,7 @@ items:
               - name: Получение ответа на сообщение
                 href: api/channel-get-messagereply.md
               - name: Отправка сообщения
-                href: api/channel-post-chatmessage.md
+                href: api/channel-post-messages.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
           - name: Чат
