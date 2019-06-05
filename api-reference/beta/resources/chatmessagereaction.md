@@ -2,25 +2,31 @@
 title: Тип ресурса Чатмессажереактион
 description: 'Представляет реакцию на объект chatMessage. '
 localization_priority: Normal
-ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: RamjotSingh
+ms.prod: microsoft-teams
+doc_type: resourcePageType
+ms.openlocfilehash: 33fe5a881d05b2ac2bc86e97e11b00c3465a8c09
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460641"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709427"
 ---
 # <a name="chatmessagereaction-resource-type"></a>Тип ресурса Чатмессажереактион
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет реакцию на объект [chatMessage](chatmessage.md) . 
 
-Сущность типа `chatMessageReaction` возвращается в составе API [сообщений канала](../api/channel-get-message.md) в составе объекта [chatMessage](chatmessage.md) .
+Сущность типа `chatMessageReaction` возвращается в составе интерфейса [сообщения канала Get](../api/channel-get-message.md) в виде части объекта [chatMessage](chatmessage.md) .
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|Реактионтипе|строка| Тип реакции. Планируемые значения включают: <br><ul><li>В данном случае, как и сообщение, в этом случае используется пустое содержимое.</li><li>Эмодзи, реакция на эмодзи. Для содержимого задано значение Юникод для эмодзи.</li><li>Label — содержимое задается в виде строки в метке.</li></ul>|
-|createdDateTime|dateTimeOffset|Метка времени в формате UTC для корневого сообщения в формате ISO-8601.|
-|user|identitySet|Пользователь, который реагировал на сообщение.|
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Реактионтипе|String|Планируемые значения включают: <br><ul><li>В данном случае, как и сообщение, в этом случае используется пустое содержимое.</li><li>Эмодзи, реакция на эмодзи. Для содержимого задано значение Юникод для эмодзи.</li><li>Label — содержимое задается в виде строки в метке.</li></ul>|
+|user|[identitySet](identityset.md)|Пользователь, который реагировал на сообщение.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -29,26 +35,25 @@ ms.locfileid: "32460641"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "content"
+
   ],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.chatMessageReaction"
+  "@odata.type": "microsoft.graph.chatMessageReaction",
+  "baseType": null
 }-->
 
 ```json
 {
-  "reactionType": "string ",
-  "createdDateTime": "string (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "reactionType": "String",
   "user": {"@odata.type": "microsoft.graph.identitySet"}
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "chat message reaction resource",
+  "description": "chatMessageReaction resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
