@@ -274,6 +274,8 @@ items:
             href: permissions-reference.md
           - name: Управление доступом к приложению (CSP)
             href: auth-cloudsolutionprovider.md
+          - name: Ограничение доступа к почтовому ящику
+            href: auth-limit-mailbox-access.md
       - name: Использование API
         items:
           - name: Обзор
