@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63d4232c2af37541f2a96359f9d2a209d065bc98
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f2386228c3758cc15d9c270f0da32608e4f2b901
+ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343061"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34683505"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -31,6 +31,8 @@ ms.locfileid: "33343061"
 | [Перечисление страниц][]                 | GET /sites/{site-id}/pages
 | [Перечисление корневых сайтов][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Поиск сайтов][]           | GET /sites?search={query}
+| [Отслеживание сайта][]                | POST /users/{user-id}/followedSites/add
+| [Прекращение отслеживания сайта][]              | POST /users/{user-id}/followedSites/remove
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -41,13 +43,15 @@ ms.locfileid: "33343061"
 [Перечисление страниц]: ../api/sitepage-list.md
 [Перечисление корневых сайтов]: ../api/site-list.md
 [Поиск сайтов]: ../api/site-search.md
+[Отслеживание сайта]: ../api/site-follow.md
+[Прекращение отслеживания сайта]: ../api/site-unfollow.md
 
 
 ## <a name="properties"></a>Свойства
 
 | Имя свойства            | Тип               | Описание
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | Уникальный идентификатор элемента. Только для чтения.
+| **id**                   | строка             | [Уникальный идентификатор](#id-property) элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
 | **description**          | string             | Текст с описанием сайта.
 | **eTag**                 | string             | ETag для элемента. Только для чтения.                                                                  |
@@ -58,6 +62,17 @@ ms.locfileid: "33343061"
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
 | **webUrl**               | строка (url-адрес)       | URL-адрес для отображения элемента в браузере. Только для чтения.
+
+### <a name="id-property"></a>Свойство id
+Ресурс **site** идентифицируется посредством уникального идентификатора, при создании которого используются следующие значения:
+* имя узла семейства веб-сайтов (contoso.sharepoint.com);
+* уникальный идентификатор семейства веб-сайтов (GUID);
+* уникальный идентификатор сайта (GUID).
+  
+Идентификатор `root` всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.
+
+* `/sites/root`. Корневой сайт клиента.
+* `/groups/{group-id}/sites/root`. Сайт группы для ресурса group.
 
 ## <a name="relationships"></a>Связи
 
