@@ -4,12 +4,12 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e158d6c0349eacae905936a82d659c8d5c0acec7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bab8e6ead9a88977fe84034ef1c9694d2948c498
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341426"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709392"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -39,7 +39,8 @@ ms.locfileid: "33341426"
 |[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
 |[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
-|[Отправка сообщения канала](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Отправка сообщения в канал](../api/channel-post-chatmessage.md) |
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
+|[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале. |
 
 ## <a name="properties"></a>Свойства
 

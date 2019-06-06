@@ -4,18 +4,19 @@ description: Представляет отдельное сообщение ча
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0639fd0b5317abd4814123b500ec0548f78d05ac
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: ea21d57134643c83406f449ee7cdad192afc0326
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34311163"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709413"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md). Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
+Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md).
+Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 
 ## <a name="methods"></a>Методы
 
@@ -25,20 +26,20 @@ ms.locfileid: "34311163"
 |[Получение сообщения в канале](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Получение одного корневого сообщения из канала.|
 |[Перечисление ответов на сообщение](../api/channel-list-messagereplies.md) | Коллекция [chatmessage](chatmessage.md)| Получение списка всех ответов на сообщение в канале.|
 |[Получение ответа на сообщение](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Получение одного ответа на сообщение в канале.|
-|[Отправка сообщения в канал](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
-|[Ответ на сообщение в канале](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatmessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
+|[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
 
-
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
+
+| Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Идентификатор родительского или корневого сообщения беседы. (Применимо только к сообщениям в каналах, но не в чате) |
+|replyToId| строка | Только для чтения. Идентификатор родительского или корневого сообщения беседы. (Применимо только к сообщениям в каналах, но не в чате) |
 |from|[identitySet](identityset.md)| Только для чтения. Подробные сведения об отправителе сообщения.|
-|etag| string | Номер версии сообщения. |
-|messageType|String|Тип сообщения. В настоящее время поддерживаются следующие значения: message, chatEvent, Typing.|
+|etag| строка | Только для чтения. Номер версии сообщения. |
+|messageType|chatMessageType|Тип сообщения. Возможные значения: `message`.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения.|
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
@@ -47,12 +48,12 @@ ms.locfileid: "34311163"
 |summary|string| Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений. Относится только к сообщениям каналов, не к сообщениям чата. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
-|importance| string | Важность сообщения: Normal, High.|
+|importance| chatMessageImportance | Важность сообщения. Допустимые значения: `normal`, `high`, `urgent`.|
 |reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на сообщение (например, "Нравится").|
 |языковые стандарты|string|Язык сообщения, установленный клиентом.|
-|webUrl|string|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,12 +4,12 @@ description: 'Канал — это коллекция объектов chatMess
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b77afb1560ed451683838a617123db013b71cd6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b284cdfef42e9eb3319fc51c17febcf02eba1a1
+ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338763"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34709434"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -28,7 +28,8 @@ ms.locfileid: "33338763"
 |[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
-|[Отправка сообщения канала](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Отправка сообщения в канал](../api/channel-post-chatmessage.md) |
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
+|[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале.|
 |[Перечисление вкладок](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
 |[Получение вкладки](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Чтение вкладок, закрепленных в канале.|
 |[Добавление вкладки](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки в канал.|
