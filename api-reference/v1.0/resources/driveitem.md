@@ -233,7 +233,7 @@ URL-адрес будет доступен в течение короткого 
 [video]: video.md
 [workbook]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
-[publicationFacet]: publicationfacet.md.
+[publicationFacet]: publicationfacet.md
 
 [DriveItemVersion]: driveitemversion.md
 [permission]: permission.md
