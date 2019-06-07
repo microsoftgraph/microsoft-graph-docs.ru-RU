@@ -7012,6 +7012,8 @@ items:
                 href: api/educationschool-post-users.md
               - name: Удаление пользователя
                 href: api/educationschool-delete-users.md
+              - name: Получение дельты
+                href: api/educationschool-delta.md
           - name: Курсы
             href: resources/educationclass.md
             items:
@@ -7047,6 +7049,8 @@ items:
                 href: api/educationclass-list-categories.md
               - name: Создание категории
                 href: api/educationclass-post-category.md
+              - name: Получение дельты
+                href: api/educationclass-delta.md
           - name: Пользователи
             href: resources/educationuser.md
             items:
@@ -7058,6 +7062,8 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
+              - name: Получение дельты
+                href: api/educationuser-delta.md
           - name: Задание
             href: resources/educationassignment.md
             items:
@@ -7516,7 +7522,7 @@ items:
               - name: Программа
                 href: resources/program.md
                 items:
-                  - name: Создать
+                  - name: Создание
                     href: api/program-create.md
                   - name: Удаление
                     href: api/program-delete.md
@@ -7952,7 +7958,7 @@ items:
                   - name: Определения ролей
                     href: resources/governanceroledefinition.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/governanceroledefinition-list.md
                       - name: Получение
                         href: api/governanceroledefinition-get.md
@@ -8611,7 +8617,7 @@ items:
               - name: Действия в Yammer
                 href: resources/yammer-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователе
+                  - name: Получение сведений о пользователях
                     href: api/reportroot-getyammeractivityuserdetail.md
                   - name: Получение количества действий
                     href: api/reportroot-getyammeractivitycounts.md

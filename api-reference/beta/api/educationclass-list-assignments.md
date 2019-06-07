@@ -4,12 +4,12 @@ description: Получение списка объектов назначени
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 71024bec2b359725bda401f20a265cabbfe4ed53
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 58ce5e911806e6e4c6e19ce3e419bd9b02c1a990
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324782"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750012"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -18,42 +18,56 @@ ms.locfileid: "33324782"
 Получение списка объектов назначений. Преподавателю разрешено просматривать все объекты назначений для этого класса. Студенты могут видеть только назначения, назначенные им.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite   |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Не поддерживается. | 
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
+| Для приложений                            | Не поддерживается.                                                                                         |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Ответ
+
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/education/classes/<id>/assignments
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
+
 ##### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -64,6 +78,7 @@ GET https://graph.microsoft.com/beta/education/classes/<id>/assignments
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

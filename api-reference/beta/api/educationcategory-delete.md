@@ -4,12 +4,12 @@ description: Удаление существующей категории.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7e7f9d0682c1a279d448e82addb1434f93f2e0ec
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7cb8704d0ab48ae60b31675b9df75f3ad5070c1d
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587440"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750061"
 ---
 # <a name="delete-educationcategory"></a>Удаление Едукатионкатегори
 
@@ -18,35 +18,41 @@ ms.locfileid: "33587440"
 Удаление существующей категории.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
-|Делегированные (личная учетная запись Майкрософт) |   Не поддерживается. |
-|Для приложений | Не поддерживается.  | 
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)             |
+| :------------------------------------- | :------------------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                          |
+| Для приложений                            | Не поддерживается.                                          |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/<id>/assignmentCategories/<id>
+DELETE /education/classes/{id}/assignmentCategories/{id}
 ```
-## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-headers"></a>Заголовки запросов
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {токен}. Обязательный. |
+
+## <a name="request-body"></a>Тело запроса
+
 Не указывайте текст запроса для этого метода.
 
-
 ## <a name="response"></a>Ответ
+
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 <!-- {
@@ -57,9 +63,10 @@ DELETE /education/classes/<id>/assignmentCategories/<id>
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCategories/19002
 ```
-### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
 
+### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",
@@ -69,11 +76,15 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCatego
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+
+# <a name="ctabcs"></a>[C#](#tab/cs)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
 
 ---

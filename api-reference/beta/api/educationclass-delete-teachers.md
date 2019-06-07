@@ -4,12 +4,12 @@ description: Удаление преподавателя для курса.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3eedc8905fb9cb902311fcd218d2df7330362116
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 35151136f38bcf1e74d958f3f48f4e6819ab73cf
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324775"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750019"
 ---
 # <a name="remove-teacher"></a>Удаление преподавателя
 
@@ -18,49 +18,62 @@ ms.locfileid: "33324775"
 Удаление преподавателя для курса.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All | 
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /education/classes/{id}/teachers/{userId}/$ref
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте текст запроса для этого метода.
 
-
 ## <a name="response"></a>Ответ
+
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
 
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_educationschool"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/<id>/teachers/14012
+DELETE https://graph.microsoft.com/beta/education/classes/{id}/teachers/14012
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+
+Ниже приведен пример ответа. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationClass"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
