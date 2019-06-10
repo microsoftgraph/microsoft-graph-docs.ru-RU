@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: dcd24f0ea8d4c00c5025ddde22964f65afd2b53c
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 3e88b0a99d983d2ed741cc1bac73716f4787ba61
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34466509"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812777"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const mailFolder = {
   @odata.type: "microsoft.graph.mailSearchFolder",
   displayName: "Get MyAnalytics",
   includeNestedFolders: true,
-  sourceFolderIDs: ["AAMkAGVmMDEzM"],
+  sourceFolderIds: ["AAMkAGVmMDEzM"],
   filterQuery: "contains(subject, 'MyAnalytics')"
 };
 

@@ -4,18 +4,18 @@ description: Используйте этот API, чтобы создать но
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2fc7a51675b0bfc559b5ab5c9f7a857c84c43174
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 05959fe291116b1e16d0108c257ab73f38805d95
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536373"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812910"
 ---
 # <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый [маилсеарчфолдер](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
+Создайте новый [маилсеарчфолдер](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,35 +53,36 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
 | displayName | String | Отображаемое имя новой папки.|
-| Инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| Инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true`означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false`означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
 | Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
 | Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [маилсеарчфолдер](../resources/mailsearchfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [маилсеарчфолдер](../resources/mailsearchfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
+Ниже приведен пример запроса, который создает папку поиска для сообщений, содержащих строку "Еженедельная сводка" в теме. Папка поиска находится в той же папке, в которой применяется указанный запрос фильтра.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AQMkADYAAAIBDAAAAA=="],
   "name": "create_mailsearchfolder"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childfolders
+POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
 Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
-  "displayName": "Get MyAnalytics",
+  "displayName": "Weekly digests",
   "includeNestedFolders": true,
-  "sourceFolderIDs": ["AAMkAGVmMDEzM"],
-  "filterQuery": "contains(subject, 'MyAnalytics')"
+  "sourceFolderIds": ["AQMkADYAAAIBDAAAAA=="],
+  "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
 
@@ -97,25 +98,25 @@ Content-length: 159
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
-  "@odata.type": "#microsoft.graph.mailSearchFolder",
-  "id": "AAMkAGVmMDEzMx",
-  "displayName": "Get MyAnalytics",
-  "parentFolderId": "AAMkAGVmMDEzMy",
-  "childFolderCount": 0,
-  "unreadItemCount": 0,
-  "totalItemCount": 13,
-  "wellKnownName": null,
-  "isSupported": true,
-  "includeNestedFolders": true,
-  "sourceFolderIDs": [
-    "AAMkAGVmMDEzMi"
-  ],
-  "filterQuery": "contains(subject, 'MyAnalytics')"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders('AQMkADYAAAIBDAAAAA%3D%3D')/childFolders/$entity",
+    "@odata.type": "#microsoft.graph.mailSearchFolder",
+    "id": "AAMkADYfRAAAZg1yTAAA=",
+    "displayName": "Weekly digests",
+    "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+    "childFolderCount": 0,
+    "unreadItemCount": 0,
+    "totalItemCount": 0,
+    "wellKnownName": null,
+    "isSupported": true,
+    "includeNestedFolders": true,
+    "sourceFolderIds": [
+        "AQMkADYAAAIBDAAAAA=="
+    ],
+    "filterQuery": "contains(subject, 'weekly digest')"
 }
 ```
 #### <a name="sdk-sample-code"></a>Пример кода SDK

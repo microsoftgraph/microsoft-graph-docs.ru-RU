@@ -4,12 +4,12 @@ description: Обновление свойств, доступных для за
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: dac2bbb95da7d287ce00503ac4b79cdf52a85968
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: 6b5dee2fae2da89cd9fdff43465f1e57e3f57407
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536024"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812896"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
@@ -40,7 +40,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -50,23 +50,23 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+Ниже приведен пример запроса, который обновляет свойство **филтеркуери** папки поиска.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "update_mailsearchfolder"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
-  "filterQuery": "contains(subject, 'Analytics')))"
+  "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
 
@@ -81,7 +81,6 @@ Content-length: 159
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "@odata.type": "#microsoft.graph.mailSearchFolder",
@@ -94,7 +93,7 @@ Content-length: 179
   "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": [
+  "sourceFolderIds": [
       "AAMkAGVmMDEzMi"
   ],
   "filterQuery": "contains(subject, 'Analytics')"

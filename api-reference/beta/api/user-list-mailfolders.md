@@ -2,20 +2,20 @@
 title: Список объектов mailFolder
 description: Получение всех почтовых папок в почтовом ящике вошедшего пользователя.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 412297cc3e0f0e5401e3d3e004a6c255b287be97
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: af3a6970edf051da3cce2c5fc51458ea6f45a388
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637243"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812854"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех почтовых папок в почтовом ящике вошедшего пользователя.
+Получение всех почтовых папок в почтовом ящике вошедшего пользователя, в том числе любых [папках поиска почты](../resources/mailsearchfolder.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [MailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [mailFolder](../resources/mailfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/mailFolders
 GET https://graph.microsoft.com/beta/me/mailFolders
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа, который включает в себя **маилсеарчфолдер** , который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,26 +67,102 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "parentFolderId": "parentFolderId-value",
-      "childFolderCount": 99,
-      "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AQMkADYAAAIBXQAAAA==",
+            "displayName": "Archive",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "archive"
+        },
+        {
+            "id": "AQMkADYAAAIBFQAAAA==",
+            "displayName": "Conversation History",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "conversationhistory"
+        },
+        {
+            "id": "AQMkADYAAAIBCgAAAA==",
+            "displayName": "Deleted Items",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "deleteditems"
+        },
+        {
+            "id": "AQMkADYAAAIBDwAAAA==",
+            "displayName": "Drafts",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "drafts"
+        },
+        {
+            "id": "AQMkADYAAAIBDAAAAA==",
+            "displayName": "Inbox",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 70,
+            "totalItemCount": 71,
+            "wellKnownName": "inbox"
+        },
+        {
+            "@odata.type": "#microsoft.graph.mailSearchFolder",
+            "id": "AAMkADYRAAAZg1yTAAA=",
+            "displayName": "Weekly digests",
+            "parentFolderId": "AQMkADYAAAIBDAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 4,
+            "totalItemCount": 5,
+            "wellKnownName": null,
+            "isSupported": true,
+            "filterQuery": "contains(subject, 'weekly digest')"
+        },
+        {
+            "id": "AQMkADYAAAIBGQAAAA==",
+            "displayName": "Junk Email",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "junkemail"
+        },
+        {
+            "id": "AQMkADYAAAIBCwAAAA==",
+            "displayName": "Outbox",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "outbox"
+        },
+        {
+            "id": "AQMkADYAAAIBCQAAAA==",
+            "displayName": "Sent Items",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "sentitems"
+        }
+    ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_mailfolders-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_mailfolders-Javascript-snippets.md)]
 
 ---
