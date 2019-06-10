@@ -3,18 +3,19 @@ title: Настройка ответов с помощью параметров 
 description: В Microsoft Graph предусмотрены необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддерживаются указанные ниже параметры запросов.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1962ee481d89ccef14d436edb41195a9b5b2529a
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564171"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750171"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
 В Microsoft Graph поддерживаются необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддержка определенных параметров запросов варьируется для разных операций API и в зависимости от API может отличаться в конечных точках версии 1.0 и бета-версии. 
 
-> **Примечание.** В конечных точках версии 1.0 и бета-версии префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`.
+> [!TIP] 
+> В конечной точке бета-версии префикс `$` является необязательным. Например, вместо `$filter` можно использовать `filter`. В конечной точке версии 1 префикс `$` является необязательным только для подмножества API-интерфейсов. Для простоты всегда включайте `$`, если используется конечная точка версии 1.
 
 Параметрами запроса могут быть системные параметры запроса OData или другие параметры запроса. 
 
@@ -245,12 +246,14 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 Дополнительные сведения о доступных для поиска свойствах, синтаксисе KQL, поддерживаемых операторах и подсказках для поиска вы найдете в таких статьях:
 
-- [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
-
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
 - 
-  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
+  [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+- 
+  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/ru-RU/library/dn774955(v=exchg.160).aspx).
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 

@@ -3,12 +3,12 @@ title: Отслеживание изменений в данных Microsoft Gra
 description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c040ad61902dd623ffc2010716e6a843c4d1a38
+ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526197"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34750194"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -75,21 +75,24 @@ ms.locfileid: "32526197"
 
 Разностные запросы поддерживаются для указанных ниже ресурсов.
 
-| **Коллекция ресурсов** | **API** |
-|:------ | :------ |
-| Приложения (предварительная версия) | [Разностная](/graph/api/application-delta?view=graph-rest-beta) функция ресурса [приложения](/graph/api/resources/application?view=graph-rest-beta) (предварительная версия) |
-| Объекты каталога | Функция [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) ресурса [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) (предварительная версия) |
-| Перечисление ролей каталога | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0) |
-| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0) |
-| Группы | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0) |
-| Папки почты | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) |
-| Сообщения в папке | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0) |
-| Папки личных контактов | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) |
-| Личные контакты в папке | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0) |
-| Субъекты-службы (предварительная версия) | Функция [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (предварительная версия) |
-| Users | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0) |
-| Элементы на диске\* | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
-| Элементы Planner\*\* | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр) |
+| **Коллекция ресурсов**                                        | **API**                                                                                                                                                                                |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Приложения (предварительная версия)                                         | Функция [delta](/graph/api/application-delta?view=graph-rest-beta) ресурса [application](/graph/api/resources/application?view=graph-rest-beta) (предварительная версия)                     |
+| Классы (предварительная версия)                                              | Функция [delta](/graph/api/educationclass-delta?view=graph-rest-beta) ресурса [Class](/graph/api/resources/educationclass?view=graph-rest-beta) (предварительная версия)                     |
+| Объекты каталога (предварительная версия)                                    | Функция [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) ресурса [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) (предварительная версия)        |
+| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0)                           |
+| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)                                       |
+| Пользователи образовательных учреждений (предварительная версия)                                      | Функция [delta](/graph/api/educationuser-delta?view=graph-rest-beta) ресурса [Education user](/graph/api/resources/educationuser?view=graph-rest-beta) (предварительная версия)             |
+| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                                                   |
+| Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                                                   |
+| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                    |
+| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                             |
+| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
+| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                                             |
+| Учебные заведения (предварительная версия)                                              | Функция [delta](/graph/api/educationschool-delta?view=graph-rest-beta) ресурса [School](/graph/api/resources/educationschool?view=graph-rest-beta) (предварительная версия)                  |
+| Субъекты-службы (предварительная версия)                                   | Функция [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (предварительная версия)      |
+| Users                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)                                                      |
+| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр) |
 
 > \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
