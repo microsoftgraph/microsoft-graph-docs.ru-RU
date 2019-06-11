@@ -4,12 +4,12 @@ description: Microsoft Graph позволяет вашему приложени�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2c81fc7f7e91a4a568445be2e96b01d545b5be22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 5baf5c6c9b03c93aaa62df9a8f0690d4afe7f437
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345136"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812959"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
@@ -47,6 +47,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Создание, чтение, ответ, пересылка, отправка, обновление или удаление сообщений | [message](../resources/message.md) | [Методы ресурса message](../resources/message.md#methods) |
 | Предоставление другому пользователю права отправлять сообщения от имени владельца почтового ящика | [message](../resources/message.md) | Задание свойств **from** и **sender** в ресурсе [message](../resources/message.md) |
 | Показ более важных сообщений | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Сортировка почты](../resources/manage-focused-inbox.md) |
+| Запрос сообщений и их получение в папке поиска  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Методы ресурса mailSearchFolder](../resources/mailsearchfolder.md#methods) |
 | Получение содержимого MIME сообщения или его вложения (предварительная версия) | [message](../resources/message.md) | [Получение содержимого MIME](/graph/outlook-get-mime-message) |
 | Добавление, получение или удаление вложений сообщения | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Методы ресурса attachment](../resources/attachment.md#methods) |
 | Получение настроек языка и часовых поясов для пользователя | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |

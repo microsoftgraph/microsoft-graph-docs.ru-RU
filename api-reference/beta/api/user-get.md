@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта us
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c00349e0de78c83778b972dd36e7d24c7d582db1
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 3bec928759dde2d1b29cb761316b85ce594eb88f
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637348"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812952"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -46,7 +46,10 @@ GET /users/{id | userPrincipalName}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [user](../resources/user.md) в теле ответа.
+
+В случае успешной обработки запроса этот метод возвращает `202 Accepted`, но серверу требуется дополнительное время для выполнения соответствующих фоновых операций.
+
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 

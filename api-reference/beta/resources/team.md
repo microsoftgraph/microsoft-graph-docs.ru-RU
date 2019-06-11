@@ -4,12 +4,12 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bab8e6ead9a88977fe84034ef1c9694d2948c498
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709392"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812833"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -57,6 +57,7 @@ ms.locfileid: "34709392"
 |isArchived|Boolean|Находится ли команда в режиме только для чтения. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Параметры для настройки возможности обнаружения команды другими пользователями.|
 |webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
 
 ## <a name="relationships"></a>Связи
@@ -83,11 +84,12 @@ ms.locfileid: "34709392"
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "discoverySettings": {"@odata.type": "microsoft.graph.teamDiscoverySettings"},
   "internalId": "string",
   "isArchived": false,
   "webUrl": "string (URL)",
