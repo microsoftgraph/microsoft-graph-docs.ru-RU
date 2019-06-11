@@ -4,12 +4,12 @@ description: Описывает метод Delete ресурса Group (Entity) 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 86e32d83bd30a66405a61c767c46f34f0dd3614c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9d0680adc000f089ba54d3af7b1e84523025d367
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614671"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812826"
 ---
 # <a name="delete-group"></a>Удаление группы
 
@@ -23,7 +23,7 @@ ms.locfileid: "33614671"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
 
@@ -40,7 +40,7 @@ DELETE /groups/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -71,11 +71,11 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_group-Javascript-snippets.md)]
 
 ---

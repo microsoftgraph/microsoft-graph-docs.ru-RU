@@ -4,12 +4,12 @@ description: Получите только что созданные, обнов
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 139bf7d1720364c0092b19e031c26078b08fc472
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 15a8bcb1193f6085748d378d3ff604edf89b3860
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614730"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812812"
 ---
 # <a name="group-delta"></a>group: delta
 Получите только что созданные, обновленные или удаленные группы, в том числе изменения членства в группах, без необходимости выполнять полный доступ ко всей коллекции групп. Сведения об [использовании запроса изменений](/graph/delta-query-overview) см.
@@ -20,9 +20,9 @@ ms.locfileid: "33614730"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,7 +64,7 @@ GET /groups/delta
 | Content-Type  | application/json |
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -159,11 +159,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
 
 ---
@@ -209,11 +209,11 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
 
 ---

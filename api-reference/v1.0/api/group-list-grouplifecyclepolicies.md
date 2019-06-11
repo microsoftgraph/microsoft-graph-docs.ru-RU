@@ -4,12 +4,12 @@ description: Получает список объектов groupLifecyclePolicy
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 7e17e6a0466c34f6e344bd919525a767c950acac
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 034b9d0ff3a61a976a61c19cd0be83ed49e6d1e9
+ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614166"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34812791"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Перечисление groupLifecyclePolicies
 
@@ -21,9 +21,9 @@ ms.locfileid: "33614166"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All |
+|Для приложений | Directory.Read.All, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /groups/{id}/groupLifecyclePolicies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```
 ##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,11 +78,11 @@ Content-length: 222
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_grouplifecyclepolicies-Javascript-snippets.md)]
 
 ---
