@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bf6bb70c43f65909dd0b8bed6f75afe985529e80
-ms.sourcegitcommit: 5cdd6a9dba70b54923ec3520ed9daad5f19a8dac
+ms.openlocfilehash: c1e1cecdcf99d146b42867dae8f332b74f2c689a
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "34730367"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914695"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -57,11 +57,10 @@ ms.locfileid: "34730367"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
 |[Перечисление licenseDetails](../api/user-list-licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
+|[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
 |[getMemberGroups](../api/user-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь. Это транзитивная проверка. |
 |[reminderView](../api/user-reminderview.md)|Коллекция [Reminder](reminder.md)|Возвращает список напоминаний календаря за указанный период времени.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения.|
-|[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -127,7 +126,6 @@ ms.locfileid: "34730367"
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
 |showInAddressList|Boolean|Значение **true**, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение **false**. Если не задано, будет считаться, что присвоено значение **true**. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение **false**.|
 |skills|Коллекция строк|Список навыков пользователя.|
-|signInSessionsValidFromDateTime|DateTimeOffset| Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [revokeSignInSessions](../api/user-revokesigninsessions.md).|
 |state|String|Область, республика, край или округ в адресе пользователя. Поддерживает параметр $filter.|
 |streetAddress|String|Почтовый адрес места работы пользователя.|
 |surname|String|Фамилия пользователя. Поддерживает параметр $filter.|
@@ -175,7 +173,7 @@ ms.locfileid: "34730367"
 |granted|1|Для пользователя получено согласие на наличие учетной записи.|
 |denied|2|Для пользователя не получено согласие на наличие учетной записи.|
 |notRequired|3|Пользователь находится в расположении, не требующем согласия.|
- 
+
 ## <a name="relationships"></a>Связи
 
 | Отношение | Тип   |Описание|
@@ -424,7 +422,6 @@ ms.locfileid: "34730367"
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
-  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
