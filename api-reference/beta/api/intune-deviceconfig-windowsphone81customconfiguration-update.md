@@ -4,31 +4,31 @@ description: Обновление свойств объекта windowsPhone81Cu
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 556a58f588ed5876f9a2f1cbbfbe4edd54cb000a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 674d266b9466ffa16ffad8fa6d9ea3dc622e2c6a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917785"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977508"
 ---
-# <a name="update-windowsphone81customconfiguration"></a><span data-ttu-id="9c6e7-103">Обновление объекта windowsPhone81CustomConfiguration</span><span class="sxs-lookup"><span data-stu-id="9c6e7-103">Update windowsPhone81CustomConfiguration</span></span>
+# <a name="update-windowsphone81customconfiguration"></a><span data-ttu-id="85c02-103">Обновление объекта windowsPhone81CustomConfiguration</span><span class="sxs-lookup"><span data-stu-id="85c02-103">Update windowsPhone81CustomConfiguration</span></span>
 
-> <span data-ttu-id="9c6e7-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="85c02-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85c02-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9c6e7-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="85c02-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="85c02-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9c6e7-106">Обновление свойств объекта [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-106">Update the properties of a [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) object.</span></span>
+<span data-ttu-id="85c02-106">Обновление свойств объекта [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-106">Update the properties of a [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9c6e7-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="9c6e7-107">Prerequisites</span></span>
-<span data-ttu-id="9c6e7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="85c02-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="85c02-107">Prerequisites</span></span>
+<span data-ttu-id="85c02-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85c02-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c6e7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9c6e7-110">Permission type</span></span>|<span data-ttu-id="9c6e7-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9c6e7-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="85c02-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="85c02-110">Permission type</span></span>|<span data-ttu-id="85c02-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="85c02-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c6e7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9c6e7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="9c6e7-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c6e7-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="9c6e7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9c6e7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9c6e7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-115">Not supported.</span></span>|
-|<span data-ttu-id="9c6e7-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9c6e7-116">Application</span></span>|<span data-ttu-id="9c6e7-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-117">Not supported.</span></span>|
+|<span data-ttu-id="85c02-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="85c02-112">Delegated (work or school account)</span></span>|<span data-ttu-id="85c02-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85c02-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="85c02-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="85c02-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="85c02-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85c02-115">Not supported.</span></span>|
+|<span data-ttu-id="85c02-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="85c02-116">Application</span></span>|<span data-ttu-id="85c02-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85c02-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9c6e7-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9c6e7-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85c02-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="85c02-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,42 +39,45 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9c6e7-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9c6e7-119">Request headers</span></span>
-|<span data-ttu-id="9c6e7-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9c6e7-120">Header</span></span>|<span data-ttu-id="9c6e7-121">Значение</span><span class="sxs-lookup"><span data-stu-id="9c6e7-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="85c02-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="85c02-119">Request headers</span></span>
+|<span data-ttu-id="85c02-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="85c02-120">Header</span></span>|<span data-ttu-id="85c02-121">Значение</span><span class="sxs-lookup"><span data-stu-id="85c02-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c6e7-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9c6e7-122">Authorization</span></span>|<span data-ttu-id="9c6e7-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9c6e7-124">Accept</span><span class="sxs-lookup"><span data-stu-id="9c6e7-124">Accept</span></span>|<span data-ttu-id="9c6e7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9c6e7-125">application/json</span></span>|
+|<span data-ttu-id="85c02-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="85c02-122">Authorization</span></span>|<span data-ttu-id="85c02-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="85c02-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="85c02-124">Accept</span><span class="sxs-lookup"><span data-stu-id="85c02-124">Accept</span></span>|<span data-ttu-id="85c02-125">application/json</span><span class="sxs-lookup"><span data-stu-id="85c02-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9c6e7-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9c6e7-126">Request body</span></span>
-<span data-ttu-id="9c6e7-127">В теле запроса добавьте представление объекта [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-127">In the request body, supply a JSON representation for the [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="85c02-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="85c02-126">Request body</span></span>
+<span data-ttu-id="85c02-127">В теле запроса добавьте представление объекта [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="85c02-127">In the request body, supply a JSON representation for the [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) object.</span></span>
 
-<span data-ttu-id="9c6e7-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-128">The following table shows the properties that are required when you create the [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).</span></span>
+<span data-ttu-id="85c02-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-128">The following table shows the properties that are required when you create the [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).</span></span>
 
-|<span data-ttu-id="9c6e7-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="9c6e7-129">Property</span></span>|<span data-ttu-id="9c6e7-130">Тип</span><span class="sxs-lookup"><span data-stu-id="9c6e7-130">Type</span></span>|<span data-ttu-id="9c6e7-131">Описание</span><span class="sxs-lookup"><span data-stu-id="9c6e7-131">Description</span></span>|
+|<span data-ttu-id="85c02-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="85c02-129">Property</span></span>|<span data-ttu-id="85c02-130">Тип</span><span class="sxs-lookup"><span data-stu-id="85c02-130">Type</span></span>|<span data-ttu-id="85c02-131">Описание</span><span class="sxs-lookup"><span data-stu-id="85c02-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9c6e7-132">id</span><span class="sxs-lookup"><span data-stu-id="9c6e7-132">id</span></span>|<span data-ttu-id="9c6e7-133">String</span><span class="sxs-lookup"><span data-stu-id="9c6e7-133">String</span></span>|<span data-ttu-id="9c6e7-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-134">Key of the entity.</span></span> <span data-ttu-id="9c6e7-135">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9c6e7-136">lastModifiedDateTime</span></span>|<span data-ttu-id="9c6e7-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9c6e7-137">DateTimeOffset</span></span>|<span data-ttu-id="9c6e7-138">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-138">DateTime the object was last modified.</span></span> <span data-ttu-id="9c6e7-139">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="9c6e7-140">roleScopeTagIds</span></span>|<span data-ttu-id="9c6e7-141">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="9c6e7-141">String collection</span></span>|<span data-ttu-id="9c6e7-142">Список тегов областей для этого экземпляра сущности.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="9c6e7-143">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-144">Суппортсскопетагс</span><span class="sxs-lookup"><span data-stu-id="9c6e7-144">supportsScopeTags</span></span>|<span data-ttu-id="9c6e7-145">Логический</span><span class="sxs-lookup"><span data-stu-id="9c6e7-145">Boolean</span></span>|<span data-ttu-id="9c6e7-146">Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="9c6e7-147">Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="9c6e7-148">Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="9c6e7-149">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-149">This property is read-only.</span></span> <span data-ttu-id="9c6e7-150">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="9c6e7-151">createdDateTime</span></span>|<span data-ttu-id="9c6e7-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9c6e7-152">DateTimeOffset</span></span>|<span data-ttu-id="9c6e7-153">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-153">DateTime the object was created.</span></span> <span data-ttu-id="9c6e7-154">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-155">description</span><span class="sxs-lookup"><span data-stu-id="9c6e7-155">description</span></span>|<span data-ttu-id="9c6e7-156">String</span><span class="sxs-lookup"><span data-stu-id="9c6e7-156">String</span></span>|<span data-ttu-id="9c6e7-157">Указанное администратором описание конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-157">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="9c6e7-158">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-159">displayName</span><span class="sxs-lookup"><span data-stu-id="9c6e7-159">displayName</span></span>|<span data-ttu-id="9c6e7-160">Строка</span><span class="sxs-lookup"><span data-stu-id="9c6e7-160">String</span></span>|<span data-ttu-id="9c6e7-161">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-161">Admin provided name of the device configuration.</span></span> <span data-ttu-id="9c6e7-162">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9c6e7-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-163">version</span><span class="sxs-lookup"><span data-stu-id="9c6e7-163">version</span></span>|<span data-ttu-id="9c6e7-164">Int32</span><span class="sxs-lookup"><span data-stu-id="9c6e7-164">Int32</span></span>|<span data-ttu-id="9c6e7-165">Версия конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-165">Version of the device configuration.</span></span> <span data-ttu-id="9c6e7-166">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9c6e7-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
-|<span data-ttu-id="9c6e7-167">omaSettings</span><span class="sxs-lookup"><span data-stu-id="9c6e7-167">omaSettings</span></span>|<span data-ttu-id="9c6e7-168">Коллекция [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="9c6e7-168">[omaSetting](../resources/intune-deviceconfig-omasetting.md) collection</span></span>|<span data-ttu-id="9c6e7-169">Параметры OMA.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-169">OMA settings.</span></span> <span data-ttu-id="9c6e7-170">Эта коллекция может содержать не более 1000 элементов.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-170">This collection can contain a maximum of 1000 elements.</span></span>|
+|<span data-ttu-id="85c02-132">id</span><span class="sxs-lookup"><span data-stu-id="85c02-132">id</span></span>|<span data-ttu-id="85c02-133">String</span><span class="sxs-lookup"><span data-stu-id="85c02-133">String</span></span>|<span data-ttu-id="85c02-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="85c02-134">Key of the entity.</span></span> <span data-ttu-id="85c02-135">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-135">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="85c02-136">lastModifiedDateTime</span></span>|<span data-ttu-id="85c02-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="85c02-137">DateTimeOffset</span></span>|<span data-ttu-id="85c02-138">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="85c02-138">DateTime the object was last modified.</span></span> <span data-ttu-id="85c02-139">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-139">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="85c02-140">roleScopeTagIds</span></span>|<span data-ttu-id="85c02-141">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="85c02-141">String collection</span></span>|<span data-ttu-id="85c02-142">Список тегов областей для этого экземпляра сущности.</span><span class="sxs-lookup"><span data-stu-id="85c02-142">List of Scope Tags for this Entity instance.</span></span> <span data-ttu-id="85c02-143">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-143">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-144">Суппортсскопетагс</span><span class="sxs-lookup"><span data-stu-id="85c02-144">supportsScopeTags</span></span>|<span data-ttu-id="85c02-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="85c02-145">Boolean</span></span>|<span data-ttu-id="85c02-146">Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области.</span><span class="sxs-lookup"><span data-stu-id="85c02-146">Indicates whether or not the underlying Device Configuration supports the assignment of scope tags.</span></span> <span data-ttu-id="85c02-147">Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия.</span><span class="sxs-lookup"><span data-stu-id="85c02-147">Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users.</span></span> <span data-ttu-id="85c02-148">Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="85c02-148">This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal.</span></span> <span data-ttu-id="85c02-149">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="85c02-149">This property is read-only.</span></span> <span data-ttu-id="85c02-150">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-150">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-151">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="85c02-151">deviceManagementApplicabilityRuleOsEdition</span></span>|[<span data-ttu-id="85c02-152">deviceManagementApplicabilityRuleOsEdition</span><span class="sxs-lookup"><span data-stu-id="85c02-152">deviceManagementApplicabilityRuleOsEdition</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|<span data-ttu-id="85c02-153">Применимость выпусков ОС для этой политики.</span><span class="sxs-lookup"><span data-stu-id="85c02-153">The OS edition applicability for this Policy.</span></span> <span data-ttu-id="85c02-154">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-154">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-155">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="85c02-155">deviceManagementApplicabilityRuleOsVersion</span></span>|[<span data-ttu-id="85c02-156">deviceManagementApplicabilityRuleOsVersion</span><span class="sxs-lookup"><span data-stu-id="85c02-156">deviceManagementApplicabilityRuleOsVersion</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|<span data-ttu-id="85c02-157">Правило применимости версии ОС для этой политики.</span><span class="sxs-lookup"><span data-stu-id="85c02-157">The OS version applicability rule for this Policy.</span></span> <span data-ttu-id="85c02-158">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-158">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-159">Девицеманажементаппликабилитируледевицемоде</span><span class="sxs-lookup"><span data-stu-id="85c02-159">deviceManagementApplicabilityRuleDeviceMode</span></span>|[<span data-ttu-id="85c02-160">Девицеманажементаппликабилитируледевицемоде</span><span class="sxs-lookup"><span data-stu-id="85c02-160">deviceManagementApplicabilityRuleDeviceMode</span></span>](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|<span data-ttu-id="85c02-161">Правило применимости режима устройства для этой политики.</span><span class="sxs-lookup"><span data-stu-id="85c02-161">The device mode applicability rule for this Policy.</span></span> <span data-ttu-id="85c02-162">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-162">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-163">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="85c02-163">createdDateTime</span></span>|<span data-ttu-id="85c02-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="85c02-164">DateTimeOffset</span></span>|<span data-ttu-id="85c02-165">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="85c02-165">DateTime the object was created.</span></span> <span data-ttu-id="85c02-166">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-166">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-167">description</span><span class="sxs-lookup"><span data-stu-id="85c02-167">description</span></span>|<span data-ttu-id="85c02-168">String</span><span class="sxs-lookup"><span data-stu-id="85c02-168">String</span></span>|<span data-ttu-id="85c02-169">Указанное администратором описание конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="85c02-169">Admin provided description of the Device Configuration.</span></span> <span data-ttu-id="85c02-170">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-170">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-171">displayName</span><span class="sxs-lookup"><span data-stu-id="85c02-171">displayName</span></span>|<span data-ttu-id="85c02-172">Строка</span><span class="sxs-lookup"><span data-stu-id="85c02-172">String</span></span>|<span data-ttu-id="85c02-173">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="85c02-173">Admin provided name of the device configuration.</span></span> <span data-ttu-id="85c02-174">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="85c02-174">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-175">version</span><span class="sxs-lookup"><span data-stu-id="85c02-175">version</span></span>|<span data-ttu-id="85c02-176">Int32</span><span class="sxs-lookup"><span data-stu-id="85c02-176">Int32</span></span>|<span data-ttu-id="85c02-177">Версия конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="85c02-177">Version of the device configuration.</span></span> <span data-ttu-id="85c02-178">Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="85c02-178">Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)</span></span>|
+|<span data-ttu-id="85c02-179">omaSettings</span><span class="sxs-lookup"><span data-stu-id="85c02-179">omaSettings</span></span>|<span data-ttu-id="85c02-180">Коллекция [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="85c02-180">[omaSetting](../resources/intune-deviceconfig-omasetting.md) collection</span></span>|<span data-ttu-id="85c02-181">Параметры OMA.</span><span class="sxs-lookup"><span data-stu-id="85c02-181">OMA settings.</span></span> <span data-ttu-id="85c02-182">Эта коллекция может содержать не более 1000 элементов.</span><span class="sxs-lookup"><span data-stu-id="85c02-182">This collection can contain a maximum of 1000 elements.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9c6e7-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="9c6e7-171">Response</span></span>
-<span data-ttu-id="9c6e7-172">При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-172">If successful, this method returns a `200 OK` response code and an updated [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="85c02-183">Отклик</span><span class="sxs-lookup"><span data-stu-id="85c02-183">Response</span></span>
+<span data-ttu-id="85c02-184">При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="85c02-184">If successful, this method returns a `200 OK` response code and an updated [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9c6e7-173">Пример</span><span class="sxs-lookup"><span data-stu-id="9c6e7-173">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85c02-185">Пример</span><span class="sxs-lookup"><span data-stu-id="85c02-185">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9c6e7-174">Запрос</span><span class="sxs-lookup"><span data-stu-id="9c6e7-174">Request</span></span>
-<span data-ttu-id="9c6e7-175">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-175">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="85c02-186">Запрос</span><span class="sxs-lookup"><span data-stu-id="85c02-186">Request</span></span>
+<span data-ttu-id="85c02-187">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="85c02-187">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 501
+Content-length: 1301
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
@@ -82,6 +85,27 @@ Content-length: 501
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -91,18 +115,19 @@ Content-length: 501
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
-      "value": 5
+      "value": 5,
+      "isReadOnly": true
     }
   ]
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9c6e7-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="9c6e7-176">Response</span></span>
-<span data-ttu-id="9c6e7-p111">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9c6e7-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="85c02-188">Отклик</span><span class="sxs-lookup"><span data-stu-id="85c02-188">Response</span></span>
+<span data-ttu-id="85c02-p114">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="85c02-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 673
+Content-Length: 1473
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
@@ -112,6 +137,27 @@ Content-Length: 673
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -122,11 +168,13 @@ Content-Length: 673
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
-      "value": 5
+      "value": 5,
+      "isReadOnly": true
     }
   ]
 }
 ```
+
 
 
 
