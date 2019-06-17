@@ -4,12 +4,12 @@ description: Указывает состояние публикации прил
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce69b2a2743496714fdb2697cec7e37a1efbaf19
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 34e2d06701513e4070384307f49f5dfd0d2b50de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949922"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991858"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>тип перечисления Мобилеапппублишингстате
 
@@ -25,6 +25,7 @@ ms.locfileid: "33949922"
 |Нотпублишед|нуль|Приложение еще не опубликовано.|
 |двухпроцессорной|1,1|Приложение ожидает обработки на стороне службы.|
 |повторно|2|Приложение публикуется.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Папка, содержащая страницы приложен�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cde0e7ff573e82398123eca17dfa03af29c58ec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2a544e59013b5f6518d8864ba84007a7101fad4a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946471"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992453"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Тип ресурса iosHomeScreenFolder
 
@@ -25,10 +25,10 @@ ms.locfileid: "33946471"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков на начальном экране, которые должны относиться к типу приложения. Эта коллекция может включать до 500 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,7 @@ ms.locfileid: "33946471"
   ]
 }
 ```
+
 
 
 

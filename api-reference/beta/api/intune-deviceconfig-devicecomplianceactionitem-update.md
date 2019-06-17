@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceCompliance
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37376ed6318a97d6f26859021f0480124cceb963
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3b356816632d651b6c2b7bd4939aa9ce0bc73b71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927925"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968667"
 ---
 # <a name="update-devicecomplianceactionitem"></a>Update deviceComplianceActionItem
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Действия, которые необходимо выполнить. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
@@ -99,6 +99,7 @@ Content-Length: 320
   ]
 }
 ```
+
 
 
 

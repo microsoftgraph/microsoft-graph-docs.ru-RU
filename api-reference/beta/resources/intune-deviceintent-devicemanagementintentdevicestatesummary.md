@@ -4,12 +4,12 @@ description: Сущность, представляющая сводную ин�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d9e0d8af7992248114364d7bdf4c2c34d2c715b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72ba65c7b23310a6fb3883bd72579ce838471f4f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943385"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964096"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентдевицестатесуммари
 
@@ -28,7 +28,7 @@ ms.locfileid: "33943385"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор|
+|id|String|Идентификатор|
 |conflictCount|Int32|Количество конфликтующих устройств|
 |errorCount|Int32|Количество устройств с ошибками.|
 |failedCount|Int32|Число устройств со сбоями.|
@@ -36,7 +36,7 @@ ms.locfileid: "33943385"
 |Свойства notapplicableplatformcount|Int32|Количество неприменимых устройств из-за несовпадения платформы и политики|
 |successCount|Int32|Количество успешных устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,7 @@ ms.locfileid: "33943385"
   "successCount": 1024
 }
 ```
+
 
 
 

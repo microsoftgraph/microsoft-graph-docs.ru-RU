@@ -4,12 +4,12 @@ description: Обновление свойств объекта Адванцед
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 092b71ca5532f10f97996c629bf679d3862b76b8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2291fc880a9c6e012adf7d8b774ccd0d43c95e05
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933356"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971663"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Обновление Адванцедсреатпротектиононбоардингстатесуммари
 
@@ -44,13 +44,13 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) в формате JSON.
+В тексте запроса добавьте представление объекта [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор.|
+|id|String|Уникальный идентификатор.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -107,6 +107,7 @@ Content-Length: 380
   "notAssignedDeviceCount": 6
 }
 ```
+
 
 
 

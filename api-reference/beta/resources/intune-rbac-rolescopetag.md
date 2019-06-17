@@ -4,12 +4,12 @@ description: Тег области применения роли
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f44deb124b2347aa2d0300c9fd143b7dca21d74c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 54aa59e99a9697924512da0072e7b4e05e4fa12a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939954"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993538"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса Ролескопетаг
 
@@ -27,6 +27,7 @@ ms.locfileid: "33939954"
 |[Создание Ролескопетаг](../api/intune-rbac-rolescopetag-create.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Создание нового объекта [ролескопетаг](../resources/intune-rbac-rolescopetag.md) .|
 |[Удаление Ролескопетаг](../api/intune-rbac-rolescopetag-delete.md)|Нет|Удаляет объект [ролескопетаг](../resources/intune-rbac-rolescopetag.md).|
 |[Обновление Ролескопетаг](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Обновление свойств объекта [ролескопетаг](../resources/intune-rbac-rolescopetag.md) .|
+|[Действие assign](../api/intune-rbac-rolescopetag-assign.md)|Коллекция [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -35,8 +36,10 @@ ms.locfileid: "33939954"
 |displayName|Строка|Отображаемое или понятное имя тега области применения роли.|
 |description|String|Описание тега области применения роли.|
 
-## <a name="relationships"></a>Связи
-Нет
+## <a name="relationships"></a>Отношения
+|Отношение|Тип|Описание|
+|:---|:---|:---|
+|assignments|Коллекция [ролескопетагаутоассигнмент](../resources/intune-rbac-rolescopetagautoassignment.md)|Список назначений для тега области применения роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -54,6 +57,7 @@ ms.locfileid: "33939954"
   "description": "String"
 }
 ```
+
 
 
 

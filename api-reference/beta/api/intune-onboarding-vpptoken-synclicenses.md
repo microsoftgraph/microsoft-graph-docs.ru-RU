@@ -4,12 +4,12 @@ description: Синхронизирует лицензии, связанные �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8f186bacd52143ae31467dddeb0e451519aeece
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6c7081e72d25c0129416cb17d3139a29734c4bac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899858"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980546"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -98,6 +98,7 @@ Content-Length: 1192
   }
 }
 ```
+
 
 
 

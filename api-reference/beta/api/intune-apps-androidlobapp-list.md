@@ -4,12 +4,12 @@ description: Список свойств и связей объектов androi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9548645ac9b127325e8281ccf5d5394a05439c3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ac02a4f6e42a7ef2c384ee0485c0d2fc6e8011c3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937290"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965342"
 ---
 # <a name="list-androidlobapps"></a>Перечисление объектов androidLobApp
 
@@ -121,6 +121,7 @@ Content-Length: 1818
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание объекта androidForWorkAppConfigurationSchem
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97614ecd0693289b0771cf62d8634c774e6dae35
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 70527c8dcab26df3f0d2beb4dbc9470367865f3f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939002"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965657"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>Создание объекта androidForWorkAppConfigurationSchema
 
@@ -50,7 +50,7 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
+|id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме.|
 
@@ -131,6 +131,7 @@ Content-Length: 844
   ]
 }
 ```
+
 
 
 

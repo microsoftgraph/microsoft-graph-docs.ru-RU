@@ -4,12 +4,12 @@ description: Удаляет объект Андроидворкпрофилев�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d335e40a2fc4bf2cc848818498a402ccdb810a5a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 44a5611d37ee1f6b5b65df9ccbb41e35b3ac4ff7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927982"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968898"
 ---
 # <a name="delete-androidworkprofilewificonfiguration"></a>Удаление Андроидворкпрофилевификонфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,18 +4,18 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0741955dd2d939c70417e27842dd1964e003a146
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949201"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965856"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 - [Согласие администратора](intune-devices-adminconsent.md)
 - [Состояние разрешения администратора](intune-devices-adminconsentstate.md)
@@ -55,6 +55,7 @@ ms.locfileid: "33949201"
 - [Экземпляр логического параметра управления устройствами](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Определение параметра коллекции управления устройствами](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Экземпляр параметра коллекции управления устройствами](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [Результат сравнения управления устройствами](intune-deviceintent-devicemanagementcomparisonresult.md)
 - [Определение сложного параметра управления устройствами](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
 - [Экземпляр сложного параметра управления устройствами](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
 - [Ограничение управления устройствами](intune-deviceintent-devicemanagementconstraint.md)
@@ -79,6 +80,7 @@ ms.locfileid: "33949201"
 - [Тип ресурса deviceManagementScriptUserState](intune-devices-devicemanagementscriptuserstate.md)
 - [Логическое ограничение параметра управления устройствами](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Категория параметра управления устройствами](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Сравнение параметров управления устройствами](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [Определение параметра управления устройствами](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [Зависимость параметра управления устройствами](intune-deviceintent-devicemanagementsettingdependency.md)
 - [Экземпляр параметра управления устройствами](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -91,6 +93,7 @@ ms.locfileid: "33949201"
 - [Подписки на управление устройствами](intune-devices-devicemanagementsubscriptions.md)
 - [Шаблон управления устройствами](intune-deviceintent-devicemanagementtemplate.md)
 - [Категория параметра шаблона управления устройствами](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Тип шаблона управления устройствами](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Данные ошибки "Устранение проблем с управлением устройствами"](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Ресурс ошибки "Устранение проблем с управлением устройствами"](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Событие устранения проблем с управлением устройствами](intune-troubleshooting-devicemanagementtroubleshootingevent.md)

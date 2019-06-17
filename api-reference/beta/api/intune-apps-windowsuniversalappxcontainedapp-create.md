@@ -4,12 +4,12 @@ description: Создание нового объекта Виндовсунив
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed3f1cdf9334fa32e728306b33f561d2ddbd8a82
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4294a45fabb46781f1f4483f2607a9d2ad5a8835
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934469"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972706"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Создание Виндовсуниверсалаппксконтаинедапп
 
@@ -52,8 +52,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
-|Модели|Строка|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения приложения WindowsUniversalAppX.|
+|id|String|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
+|Модели|String|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения приложения WindowsUniversalAppX.|
 
 
 
@@ -88,6 +88,7 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Объект, представляющий состояние ус�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03951ac855e699856684e32e9baf36c40ce8e2f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35729b12c8ed5a27c951063d1efaf54951dc4ebe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943321"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964054"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>Тип ресурса Девицеманажементинтентдевицестате
 
@@ -33,13 +33,13 @@ ms.locfileid: "33943321"
 |:---|:---|:---|
 |id|Строка|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
-|userName|Строка|Имя пользователя, сообщаемое на устройстве|
+|userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceDisplayName|String|Имя устройства, о котором сообщается|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
 |состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Строка|Идентификатор устройства, о котором сообщается|
+|deviceId|String|Идентификатор устройства, о котором сообщается|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,6 +62,7 @@ ms.locfileid: "33943321"
   "deviceId": "String"
 }
 ```
+
 
 
 

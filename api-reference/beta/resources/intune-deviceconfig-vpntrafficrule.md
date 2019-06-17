@@ -4,12 +4,12 @@ description: Определение правила трафика VPN.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21f174056021e9a9789a2c033383c42ba8f09cc3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db16de3ddcbfe17bd5fe19bfe9e672002324c5cb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944560"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991599"
 ---
 # <a name="vpntrafficrule-resource-type"></a>Тип ресурса Впнтраффикруле
 
@@ -31,9 +31,9 @@ ms.locfileid: "33944560"
 |appId|String|Идентификатор приложения, если это правило трафика вызывается приложением.|
 |Тип|[Впнтраффикрулеапптипе](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если это правило трафика вызывается приложением. Возможные значения: `none`, `desktop`, `universal`.|
 |Раутингполицитипе|[Впнтраффикрулераутингполицитипе](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Когда приложение запускается, указывает, следует ли включить раздельное туннелирование по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
-|страх|Строка|Утверждения, связанные с этим правилом трафика.|
+|страх|String|Утверждения, связанные с этим правилом трафика.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -82,6 +82,7 @@ ms.locfileid: "33944560"
   "claims": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Объект, представляющий подключение �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51445741f179af704bbc2e292db5ef4899a5f97a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5119ab9ab7be6a8f76fe94b80738f52b160ab3b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940381"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993062"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Тип ресурса deviceManagementExchangeConnector
 
@@ -32,18 +32,18 @@ ms.locfileid: "33940381"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[Девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|Строка|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|Строка|Имя сервера Exchange Server.|
-|connectorServerName|Строка|Имя сервера, на котором размещается соединитель Exchange.|
+|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|serverName|String|Имя сервера Exchange Server.|
+|connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
 |exchangeConnectorType|[Девицеманажементексчанжеконнектортипе](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|Строка|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|Строка|Псевдоним, назначенный серверу Exchange Server|
+|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +69,7 @@ ms.locfileid: "33940381"
   "exchangeOrganization": "String"
 }
 ```
+
 
 
 

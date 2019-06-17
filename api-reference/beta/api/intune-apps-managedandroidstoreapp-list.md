@@ -4,12 +4,12 @@ description: Список свойств и связей объектов manage
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cba6f14a25cad8e1633e32a690124b9fa276c0ce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 28d73f9837da300963ed8e8756f43c3cd3c21b58
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935736"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974981"
 ---
 # <a name="list-managedandroidstoreapps"></a>Перечисление объектов managedAndroidStoreApp
 
@@ -117,6 +117,7 @@ Content-Length: 1653
   ]
 }
 ```
+
 
 
 

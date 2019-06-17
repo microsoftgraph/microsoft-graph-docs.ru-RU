@@ -4,12 +4,12 @@ description: Удаляет объект Макосекстенсионскон�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bac42a9cf634b2d8e2a397da1435ff4d7affc5e2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cb5850546ab37271fd9483777fb0a7253df01bc4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922573"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976696"
 ---
 # <a name="delete-macosextensionsconfiguration"></a>Удаление Макосекстенсионсконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

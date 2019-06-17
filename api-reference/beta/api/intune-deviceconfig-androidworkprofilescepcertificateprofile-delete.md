@@ -4,12 +4,12 @@ description: Удаляет объект Андроидворкпрофилес�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04fe4d974793af84d148f7cd560922197fc22f03
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 344aa8894a52b9125ca41fcdfe29b5f6f67fcbfa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928283"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34969143"
 ---
 # <a name="delete-androidworkprofilescepcertificateprofile"></a>Удаление Андроидворкпрофилесцепцертификатепрофиле
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

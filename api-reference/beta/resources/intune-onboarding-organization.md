@@ -4,12 +4,12 @@ description: Ресурс organization представляет экземпля
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c587d5a15fa0161e10058eec4a2f8c6183a28a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 46186451d55247c3a405df83955113cfcf05e143
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940157"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958629"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -30,11 +30,11 @@ ms.locfileid: "33940157"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта.|
+|id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[Мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 |Цертификатеконнекторсеттинг|[Цертификатеконнекторсеттинг](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединителя сертификатов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,7 @@ ms.locfileid: "33940157"
   }
 }
 ```
+
 
 
 

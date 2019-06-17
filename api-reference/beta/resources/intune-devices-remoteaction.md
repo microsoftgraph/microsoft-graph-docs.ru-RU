@@ -4,12 +4,12 @@ description: Поддерживаемые удаленные действия In
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ad0666ffc94fcfdc09e289dde80f178e92f09af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58561626423046abe9e0d8832c82c714519ea46f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941830"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963872"
 ---
 # <a name="remoteaction-enum-type"></a>тип перечисления Ремотеактион
 
@@ -41,6 +41,9 @@ ms.locfileid: "33941830"
 |Упдатедевицеаккаунт|столбцов|Пользователь инициирует действие для обновления учетной записи на устройстве.|
 |Аутоматикредеплоймент|17|Пользователь инициирует действие автоматического повторного развертывания устройства|
 |Запланирован|0,18|Пользователь инициирует действие для завершения работы устройства.|
+|Ротатефилеваулткэй|двадцать|Пользователь инициирует действие по повороту Филеваулткэй на Mac.|
+|Жетфилеваулткэй|21|Пользователь инициирует действие для получения Филеваулткэй в Mac.|
+
 
 
 

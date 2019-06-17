@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Винд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0b3d859a92025e9803713efc9e7209d8435e5c7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0c25c818cec9172e1f1646b71e9d1a9976687792
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934448"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972678"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Получение Виндовсуниверсалаппксконтаинедапп
 
@@ -77,6 +77,7 @@ Content-Length: 196
   }
 }
 ```
+
 
 
 

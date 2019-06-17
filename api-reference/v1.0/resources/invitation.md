@@ -1,19 +1,19 @@
 ---
-title: Диспетчер приглашений
-description: 'С помощью диспетчера приглашений можно создать приглашение для добавления внешнего пользователя в организацию. '
+title: Тип ресурса invitation
+description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2fd945f5a8c2bfcf9b877f567701afe584fefb31
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 5d048aea8713e7598f6b551d49d32a10af19793f
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657478"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914674"
 ---
-# <a name="invitation-manager"></a>Диспетчер приглашений
+# <a name="invitation-resource-type"></a>Тип ресурса invitation
 
-С помощью диспетчера приглашений можно создать приглашение для добавления внешнего пользователя в организацию. 
+Представляет приглашение, используемое для добавления внешних пользователей в организацию. 
 
 Процесс приглашения:
 

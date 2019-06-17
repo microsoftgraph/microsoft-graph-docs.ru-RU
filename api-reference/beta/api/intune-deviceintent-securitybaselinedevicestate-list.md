@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Сек
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2aa0e899ccfbdc19dafc2e1cd766467ea10dec8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72436d2fed2c8069bfa7d41a111561f7a508ecd5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33914494"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959525"
 ---
 # <a name="list-securitybaselinedevicestates"></a>Список Секуритибаселинедевицестатес
 
@@ -43,7 +43,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,6 +78,7 @@ Content-Length: 420
   ]
 }
 ```
+
 
 
 

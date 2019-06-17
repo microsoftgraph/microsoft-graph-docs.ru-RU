@@ -4,12 +4,12 @@ description: Создает веб-токен, используемый в вс�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 520a8ce4e54a43fc84a28440930a093863599ceb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 31318c40894f861832a99c7de43f64b6a7e3c64e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939128"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965510"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>Действие createGooglePlayWebToken
 
@@ -50,7 +50,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Парентури|Строка|HTTPS-путь страницы, на которой размещается компонент.|
+|Парентури|String|HTTPS-путь страницы, на которой размещается компонент.|
 
 
 
@@ -83,6 +83,7 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
+
 
 
 

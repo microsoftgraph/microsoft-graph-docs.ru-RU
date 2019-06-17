@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceCompliance
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ede4fb33218dcd3bd9cf1076df266ce37200af5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e5d2c9712351ad51bf53a06e9a9da17ab5e3159
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927827"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968492"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>Обновление объекта deviceComplianceDeviceStatus
 
@@ -51,8 +51,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
-|userName|Строка|Имя пользователя в отчете|
+|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
+|userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -107,6 +107,7 @@ Content-Length: 493
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

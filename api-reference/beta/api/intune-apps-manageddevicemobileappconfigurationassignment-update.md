@@ -4,12 +4,12 @@ description: Обновление свойств объекта managedDeviceMob
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0215fdee8754e939d1838ee5c5fd6727d77e5ce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e8ef4ba678641c30b12f4775b034a70fc2fb322
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935659"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974876"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Обновление объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -50,7 +50,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

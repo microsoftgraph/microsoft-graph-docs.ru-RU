@@ -4,12 +4,12 @@ description: Обновление свойств объекта symantecCodeSign
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: adc2f49931b4a8d5938874d8f23bce6329eaf174
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 32b7d60ae97160a134e6ac26d640a545bb7a429a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934952"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973497"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [SymantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в формате JSON.
+В тексте запроса добавьте представление объекта [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).
 
@@ -56,8 +56,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |password|Строка|Пароль, необходимый для PFX-файла.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|Строка|Имя поставщика сертификата.|
-|имени|Строка|Значение издателя для сертификата.|
+|Иссуернаме|String|Имя поставщика сертификата.|
+|имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |Уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
 
@@ -110,6 +110,7 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

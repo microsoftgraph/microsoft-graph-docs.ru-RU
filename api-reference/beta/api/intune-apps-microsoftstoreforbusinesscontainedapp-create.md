@@ -4,12 +4,12 @@ description: Создание нового объекта Микрософтст
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbdea27ad63b3216df4e729d5f4fc3387a5ade5a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a358f8b9984b58502edb2c4e42297475530b241d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935407"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974379"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Создание Микрософтсторефорбусинессконтаинедапп
 
@@ -52,8 +52,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
-|Модели|Строка|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
+|id|String|Ключ объекта. Наследуется от [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|
+|Модели|String|ИДЕНТИФИКАТОР пользовательской модели приложения для вложенного приложения MicrosoftStoreForBusinessApp.|
 
 
 
@@ -88,6 +88,7 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

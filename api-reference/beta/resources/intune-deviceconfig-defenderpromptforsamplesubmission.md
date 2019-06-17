@@ -4,12 +4,12 @@ description: Возможные значения для подтверждени
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c342107db92a1b4a9acf42f41d9d7440d848e9ae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2d7aec62e0ee5f0e7375e64023dbcf064170e23a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947318"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979832"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>тип перечисления Дефендерпромптфорсамплесубмиссион
 
@@ -27,6 +27,7 @@ ms.locfileid: "33947318"
 |Промптбефоресендингперсоналдата|2|Выдавать запрос перед отправкой персональных данных.|
 |Неверсенддата|4|Никогда не отправлять данные.|
 |Сендаллдатависаутпромптинг|SP4|Отправлять все данные без выдачи запросов.|
+
 
 
 

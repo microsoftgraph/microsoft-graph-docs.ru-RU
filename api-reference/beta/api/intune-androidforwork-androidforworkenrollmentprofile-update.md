@@ -4,12 +4,12 @@ description: Обновление свойств объекта androidForWorkEn
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bd44462792224f5c1865ac3ee2148861479f0ae
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9e6c4b795eef38737384f86ef775391c8fa50d1a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938918"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965573"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Обновление объекта androidForWorkEnrollmentProfile
 
@@ -50,13 +50,13 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accountId|Строка|GUID клиента, которому принадлежит профиль регистрации.|
+|accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|Строка|Уникальный GUID профиля регистрации.|
 |displayName|Строка|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
-|tokenValue|Строка|Значение последнего созданного маркера для этого профиля регистрации.|
+|tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
@@ -119,6 +119,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

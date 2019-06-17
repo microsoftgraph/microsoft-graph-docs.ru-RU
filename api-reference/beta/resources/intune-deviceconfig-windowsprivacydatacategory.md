@@ -4,12 +4,12 @@ description: Описатель категории данных конфиден
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aebf3b636a7abdfb42d9b2febdfc5dbde2d375c1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2e86e45f49f21da84b5d0ae6975a032969586f2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943685"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996465"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>тип перечисления Виндовспривацидатакатегори
 
@@ -41,6 +41,7 @@ ms.locfileid: "33943685"
 |tasks|столбцов|Разрешить приложениям доступ к планировщику задач. Добавлено в Windows 10 версии 1703.|
 |Синквисдевицес|17|Разрешить приложениям автоматически обмениваться данными и синхронизировать их с беспроводными устройствами, которые не напрямую связаны с устройством пользователя. Добавлено в Windows 10 версии 1607.|
 |Трустеддевицес|0,18|Разрешить приложениям доступ к доверенным устройствам. Добавлено в Windows 10 версии 1607.|
+
 
 
 

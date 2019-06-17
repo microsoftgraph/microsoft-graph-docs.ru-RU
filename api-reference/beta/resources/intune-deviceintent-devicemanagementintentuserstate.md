@@ -4,12 +4,12 @@ description: Объект, представляющий состояние по�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fef4bd7995cf822af39743fe6f61028813b4a389
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 381be56c44ba46c11d09a483bbace20b8b842e6b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943265"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963984"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>Тип ресурса Девицеманажементинтентусерстате
 
@@ -38,7 +38,7 @@ ms.locfileid: "33943265"
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
 |состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "33943265"
   "state": "String"
 }
 ```
+
 
 
 

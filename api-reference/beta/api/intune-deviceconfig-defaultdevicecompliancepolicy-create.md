@@ -4,12 +4,12 @@ description: Создание нового объекта Дефаултдеви
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 183893bb3d07833964cd3f310a6c9051ff95c05a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f3d290439234eddbc6ff570442c943e517afd09f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928038"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968723"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>Создание Дефаултдевицекомплианцеполици
 
@@ -103,6 +103,7 @@ Content-Length: 401
   "version": 7
 }
 ```
+
 
 
 

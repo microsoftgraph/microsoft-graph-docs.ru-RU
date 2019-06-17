@@ -4,12 +4,12 @@ description: Действие Android, которое предпринимает
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99510e0f9a24095be519534a1d7bf411de9da938
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 399fd368ad683964d4716e6f7d7021733370923f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950580"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991277"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>тип перечисления Андроидпермиссионактионтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33950580"
 |Подсказка|нуль|Пока не задокументировано.|
 |автопредоставление|1,1|Пока не задокументировано.|
 |автозапрет|2|Пока не задокументировано.|
+
 
 
 

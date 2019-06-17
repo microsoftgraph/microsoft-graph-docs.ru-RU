@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3efb5031cd66e6a9566297f4d3db6430140f4e8f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24e8a73e65f7f697931dbb32ae553e157689c356
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915981"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960092"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Создание Девицеманажементинтентусерстате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентусерстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентусерстате.
@@ -98,6 +98,7 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
+
 
 
 

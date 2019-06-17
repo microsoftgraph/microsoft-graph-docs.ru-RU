@@ -4,12 +4,12 @@ description: Создание нового объекта managedDeviceMobileApp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0c7c81c0d813c3c5025ea04f14cadf3d95faa3b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ae574c44c4cf9cc3d40ce4dbe9b03667a6cbc376
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935652"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974834"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Создание managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -52,8 +52,8 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
-|userName|Строка|Имя пользователя в отчете|
+|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
+|userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -108,6 +108,7 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

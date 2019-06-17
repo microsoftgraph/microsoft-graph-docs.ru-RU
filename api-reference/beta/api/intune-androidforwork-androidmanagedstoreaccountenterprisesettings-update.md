@@ -4,12 +4,12 @@ description: Обновление свойств объекта ресурса a
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f8cce90335c46e4fc11323baf1ac9ed83db0cf8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5ebb87ad192d2fb435e4119f7df11dac83181b11
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937353"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965475"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Обновление ресурса androidmanagedstoreaccountenterprisesettings
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор корпоративных параметров учетной записи магазина Android|
+|id|String|Идентификатор корпоративных параметров учетной записи магазина Android|
 |bindStatus|[Андроидманажедстореаккаунтбиндстатус](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Состояние связывания клиента с помощью API Google EMM. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[Андроидманажедстореаккаунтаппсинкстатус](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Последний результат синхронизации приложений. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -59,9 +59,9 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения корпоративных параметров для Android|
 |enrollmentTarget|[Андроидманажедстореаккаунтенроллменттаржет](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает, какие пользователи могут регистрировать устройства в управлении устройствами Android Enterprise. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|Девицеовнерманажементенаблед|Логический|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
+|Девицеовнерманажементенаблед|Boolean|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
 |Компаникодес|Коллекция [андроиденроллменткомпаникоде](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
-|Андроиддевицеовнерфуллиманажеденроллментенаблед|Логический|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
+|Андроиддевицеовнерфуллиманажеденроллментенаблед|Boolean|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
 
 
 
@@ -141,6 +141,7 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Тип идентификатора настраиваемой гр
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e439b9d4777a0b0c513d750d0b5e35783dbd9a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f3dbddceca6f6b7adc023431a8b8157ce02ef379
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947255"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979650"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидкустом
 
@@ -25,9 +25,9 @@ ms.locfileid: "33947255"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Граупидкустом|Строка|Указывает произвольный идентификатор группы, к которому относится устройство.|
+|Граупидкустом|String|Указывает произвольный идентификатор группы, к которому относится устройство.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "33947255"
   "groupIdCustom": "String"
 }
 ```
+
 
 
 

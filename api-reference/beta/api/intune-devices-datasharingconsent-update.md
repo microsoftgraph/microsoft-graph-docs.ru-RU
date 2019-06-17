@@ -4,12 +4,12 @@ description: Обновление свойств объекта Даташари
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bbe415e838d49d379a1e3f02af6a25a5b8ef559
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 584830ca0733c6526a4ef44c6bd277bfd952e8fe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910137"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959196"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
@@ -43,20 +43,20 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор согласия общего доступа к данным|
-|Сервицедисплайнаме|Строка|Отображаемое имя рабочего процесса службы|
-|Термсурл|Строка|Термсурл для согласия общего доступа к данным|
-|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|id|String|Идентификатор согласия общего доступа к данным|
+|Сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|Термсурл|String|Термсурл для согласия общего доступа к данным|
+|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
 |Грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|Грантедбюпн|Строка|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|Грантедбюсерид|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
+|Грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|Грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

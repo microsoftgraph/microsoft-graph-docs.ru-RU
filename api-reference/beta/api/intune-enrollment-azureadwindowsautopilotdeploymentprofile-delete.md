@@ -4,12 +4,12 @@ description: Удаляет объект Азуреадвиндовсаутоп�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01f62cae3551c1f334c0c70e528878199037b096
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 76444447d94e3c2e70cabe27b51e338fc8c27429
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908926"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978607"
 ---
 # <a name="delete-azureadwindowsautopilotdeploymentprofile"></a>Удаление Азуреадвиндовсаутопилотдеплойментпрофиле
 
@@ -45,7 +45,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploym
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

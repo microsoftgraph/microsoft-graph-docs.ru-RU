@@ -4,12 +4,12 @@ description: Обновление свойств объекта Термсанд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6ee50c5b6781a78d16fc8ee05b8d9d9a53cad28
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 21216e265c3af81fd0c53b76dda8f5015d13b10a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933713"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971796"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Обновление Термсандкондитионсграупассигнмент
 
@@ -44,14 +44,14 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в формате JSON.
+В тексте запроса добавьте представление объекта [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
-|Таржетграупид|Строка|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
+|id|String|Уникальный идентификатор объекта.|
+|Таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

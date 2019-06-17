@@ -4,12 +4,12 @@ description: Тип учетных записей, которым разреше
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28f2fa25f77d99b0556d0233edf0c53c851fed33
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 093b695e6ae5fad885f393e7690dd26f4300c59e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944707"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964229"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>тип перечисления Шаредпкалловедаккаунттипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33944707"
 |notConfigured|нуль|Не настроен. Значение по умолчанию.|
 |книге|1,1|Только учетные записи гостя.|
 |domain|2|Только учетные записи, присоединенные к домену.|
+
 
 
 
