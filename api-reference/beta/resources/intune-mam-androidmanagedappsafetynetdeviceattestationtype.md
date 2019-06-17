@@ -4,12 +4,12 @@ description: Для управляемого приложения требует
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ccf09dcfd1ecc50e4d10e1341e992fb93bd9c17
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 39726acbd8daf5f8f7432b0aa633e9d992a65bba
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940941"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991928"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>тип перечисления Андроидманажедаппсафетинетдевицеаттестатионтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33940941"
 |none|нуль|нет набора требований|
 |БасиЦинтегрити|1,1|требовать, чтобы устройство Android продавало базовую проверку целостности SafetyNet|
 |БасиЦинтегритянддевицецертификатион|2|требовать, чтобы устройство Android продавало базовую целостность SafetyNet и проверки сертификации устройств|
+
 
 
 

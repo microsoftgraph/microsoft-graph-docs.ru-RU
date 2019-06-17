@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта managedI
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d09ffb416d7f7b6b23e353f9e18bdb748fd1f34c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ca17d00e65092aae61a2def6568b7d2f32439476
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935533"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974596"
 ---
 # <a name="get-managedioslobapp"></a>Get managedIOSLobApp
 
@@ -122,6 +122,7 @@ Content-Length: 1756
   }
 }
 ```
+
 
 
 

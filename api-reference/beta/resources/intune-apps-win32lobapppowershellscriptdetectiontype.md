@@ -4,12 +4,12 @@ description: Содержит все поддерживаемые типы об�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2c18e0fa5f6b200a017203fd8320e0b895e8a47
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 894dc61909f17244e3325675e198520cae5657ab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949565"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987336"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>тип перечисления win32LobAppPowerShellScriptDetectionType
 
@@ -23,12 +23,13 @@ ms.locfileid: "33949565"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|строка|1,1|Выходной тип данных String.|
+|string|1,1|Выходной тип данных String.|
 |dateTime|2|Тип выходных данных — Дата и время.|
 |целое|4|Тип выходных данных — целое число.|
 |с плавающей запятой|SP4|Тип выходных данных — float.|
 |version|17:00|Тип выходных данных — Version.|
 |boolean|6 |Тип выходных данных — Boolean.|
+
 
 
 

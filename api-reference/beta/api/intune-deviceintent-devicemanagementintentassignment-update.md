@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dace2f8babeabb492bbddfe7c0e9dac6c533565e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af153fb48969eb0d78d8471a151a3ac9090b1429
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916163"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960379"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Обновление Девицеманажементинтентассигнмент
 
@@ -43,14 +43,14 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceMa
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор назначения|
+|id|String|Идентификатор назначения|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения|
 
 
@@ -90,6 +90,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

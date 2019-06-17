@@ -4,12 +4,12 @@ description: Создание объекта windowsInformationProtectionAppLear
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2751000742487fd3b88e2e7b054edfd2cfd13c48
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ad496ad189905b814696528133207a403ccf7194
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897830"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990528"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>Создание объекта windowsInformationProtectionAppLearningSummary
 
@@ -43,14 +43,14 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажите представление объекта windowsInformationProtectionAppLearningSummary в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionAppLearningSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Имя приложения|
 |applicationType|[Аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
@@ -92,6 +92,7 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект Андроидеасемаилпроф�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87ebd3647eea71d221558da5caf4976d7dc560d5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1a83c54ca88091ff5946ac408fb950f02a09e1e4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933104"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971299"
 ---
 # <a name="delete-androideasemailprofileconfiguration"></a>Удаление Андроидеасемаилпрофилеконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

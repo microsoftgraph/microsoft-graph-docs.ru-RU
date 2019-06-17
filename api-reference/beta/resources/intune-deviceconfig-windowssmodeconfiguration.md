@@ -4,12 +4,12 @@ description: Возможные варианты настройки S режим
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 467879cf7992a60203164d5db6f7e657a77f87d4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db32cab4fa405d9783415710bb5412e08c56239b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943818"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996458"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>тип перечисления Виндовссмодеконфигуратион
 
@@ -25,6 +25,7 @@ ms.locfileid: "33943818"
 |Ограничение|нуль|Этот параметр удалит все ограничения для режима разблокировки S — значение по умолчанию|
 |блок|1,1|Этот параметр блокирует возможность пользователя разблокировать устройство в режиме S|
 |блокиру|2|Этот параметр позволяет разблокировать устройство в режиме S|
+
 
 
 

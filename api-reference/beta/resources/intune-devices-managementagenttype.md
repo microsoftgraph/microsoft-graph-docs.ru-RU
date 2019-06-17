@@ -4,12 +4,12 @@ description: Тип агента управления.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7bb3c564366e2fa5c4be2c7c7ed75267a4d58275
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e3b9fd469a787e0afdacb26dc5a07ee114d72bbe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941928"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986125"
 ---
 # <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
@@ -34,6 +34,7 @@ ms.locfileid: "33941928"
 |жамф|32|Атрибуты устройства извлекаются из Жамф.|
 |Гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
 |microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 с помощью Intune.|
+
 
 
 

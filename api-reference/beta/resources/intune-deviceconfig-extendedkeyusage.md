@@ -4,12 +4,12 @@ description: Настраиваемое определение расширен�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36752e9a2f86e68bd4ada1a342dc174726a684c7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9eb9a02c8f403bf4ee29fc28622ab06f592c870b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946954"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982520"
 ---
 # <a name="extendedkeyusage-resource-type"></a>Тип ресурса Екстендедкэйусаже
 
@@ -23,9 +23,9 @@ ms.locfileid: "33946954"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя расширенного использования ключа|
-|Обжектидентифиер|Строка|Идентификатор объекта расширенного использования ключа|
+|Обжектидентифиер|String|Идентификатор объекта расширенного использования ключа|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "33946954"
   "objectIdentifier": "String"
 }
 ```
+
 
 
 

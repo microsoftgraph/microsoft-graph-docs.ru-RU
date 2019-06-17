@@ -4,12 +4,12 @@ description: 'Максимальный размер кэша для оптими
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 285c1830065d18669bd6d3d02d615400af27e231
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bfeb2e4279e9858f9fd8f923657c8e32bf129396
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947192"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979587"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>Тип ресурса Деливерйоптимизатионмакскачесизеабсолуте
 
@@ -28,7 +28,7 @@ ms.locfileid: "33947192"
 |Максимумкачесизеингигабитес|Int64|Задает максимальный размер кэша оптимизации доставки в ГБ. Допустимые значения — от 0 до 4294967295
 Значение 0 (ноль) означает "неограниченный" кэш. При оптимизации доставки кэш очищается, когда на устройстве заканчивается свободное место на диске. Допустимые значения — от 0 до 4294967295|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "33947192"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
 
 
 

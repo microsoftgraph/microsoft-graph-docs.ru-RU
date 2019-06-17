@@ -4,12 +4,12 @@ description: Разрешить устройству отправку данны
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba90c6cbbd8e242e4cd5902a938d5e670d7d2d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cf69232ee31bf7fd1eebd440e482d76c052f4fbc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946877"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989926"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>тип перечисления Диагностикдатасубмиссионмоде
 
@@ -27,6 +27,7 @@ ms.locfileid: "33946877"
 |Основное|2|Отправляет основные данные телеметрии.|
 |усовершенствован|4|Отправляет расширенные данные телеметрии, в том числе сведения об использовании и Insights.|
 |полный|SP4|Отправляет полные данные телеметрии, в том числе диагностические данные, например состояние системы.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект Андроидфорворкапп.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f36d945ff36af55d3a9e1bcc281d0f2571838c2a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2eb5c0651aee211aa6e37977c77178bdf58a8fea
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937479"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965363"
 ---
 # <a name="delete-androidforworkapp"></a>Удаление Андроидфорворкапп
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Состояние Endpoint Protection
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6086dc05d204e4c9cb23c77f79f98c3a207de35c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0ac91095b27f7151d53ca81c43b3a77e3b8c0d87
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941893"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986594"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>тип перечисления Виндовсдевицехеалсстате
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941893"
 |Мануалстепспендинг|SP4|Компьютер находится в состоянии ожидания действий, выполняемых вручную|
 |Оффлинесканпендинг|8 |Компьютер находится в состоянии ожидания автономной проверки|
 |наиболее|столбцов|Компьютер находится в состоянии критической ошибки|
+
 
 
 

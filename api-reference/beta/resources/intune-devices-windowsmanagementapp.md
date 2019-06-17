@@ -4,12 +4,12 @@ description: Сущность приложения управления Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4525767a81b0e69ed1c99ae4b1a20051304cf1f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e3db66a737e86ad66e66be8b9bde88e6024f8233
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941914"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983994"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
@@ -28,10 +28,10 @@ ms.locfileid: "33941914"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|Строка|Доступная версия приложения управления Windows.|
+|id|String|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|String|Доступная версия приложения управления Windows.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Сводка по работоспособности для приложения управления Windows.|
@@ -52,6 +52,7 @@ ms.locfileid: "33941914"
   "availableVersion": "String"
 }
 ```
+
 
 
 

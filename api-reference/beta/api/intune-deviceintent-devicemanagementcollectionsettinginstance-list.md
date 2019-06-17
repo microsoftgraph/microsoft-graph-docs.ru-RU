@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Дев
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00d11981862aa77fa0271e4d5b081aec775eb09d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 93b1edb40d77c89acd2354869add6bfffbb77257
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916666"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960771"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>Список Девицеманажементколлектионсеттингинстанцес
 
@@ -46,7 +46,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,6 +78,7 @@ Content-Length: 259
   ]
 }
 ```
+
 
 
 

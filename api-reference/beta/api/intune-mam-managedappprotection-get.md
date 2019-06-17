@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта managedA
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 787d593da91fecd2f3d8d7c88dbc4849a3843c7d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5e7aba851cbc0473e5114bc21f674394ae1ae7c8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903553"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985894"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2053
+Content-Length: 2112
 
 {
   "value": {
@@ -114,10 +114,12 @@ Content-Length: 2053
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
-    "allowedOutboundClipboardSharingExceptionLength": 14
+    "allowedOutboundClipboardSharingExceptionLength": 14,
+    "notificationRestriction": "blockOrganizationalData"
   }
 }
 ```
+
 
 
 

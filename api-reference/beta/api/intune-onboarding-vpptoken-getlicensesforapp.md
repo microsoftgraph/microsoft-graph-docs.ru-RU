@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e36c1d64af268a9f489a13f1cc3374b08c8fb4c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2fa89825143c611e2bb9f5c82e5cb36cdbccc083
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899783"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980581"
 ---
 # <a name="getlicensesforapp-function"></a>Функция Жетлиценсесфорапп
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -84,6 +84,7 @@ Content-Length: 298
   ]
 }
 ```
+
 
 
 

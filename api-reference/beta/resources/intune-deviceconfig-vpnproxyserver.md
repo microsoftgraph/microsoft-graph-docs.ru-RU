@@ -4,12 +4,12 @@ description: VPN-прокси-сервер.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73b004eaae0b49c9f3e4341c32923d7f2d48ae45
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b8fabc24daad5c13a1d62405ec6ca73843ccd12d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944581"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987546"
 ---
 # <a name="vpnproxyserver-resource-type"></a>Тип ресурса Впнпроксисервер
 
@@ -22,11 +22,11 @@ VPN-прокси-сервер.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Аутоматикконфигуратионскриптурл|Строка|URL-адрес скрипта автоматической настройки прокси-сервера.|
+|Аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера.|
 |address|String|Address.|
 |порта|Int32|Порта. Допустимые значения — от 0 до 65535|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ VPN-прокси-сервер.
   "port": 1024
 }
 ```
+
 
 
 

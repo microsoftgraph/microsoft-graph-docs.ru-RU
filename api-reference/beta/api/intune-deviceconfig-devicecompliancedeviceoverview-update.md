@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceCompliance
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96f966bd44077b2f94d271913dcfc109ec556a55
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ce885ca448675603ff4e4b0419110075ca21134f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927996"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968576"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Обновление объекта deviceComplianceDeviceOverview
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |Свойства notapplicableplatformcount|Int32|Количество неприменимых устройств из-за несовпадения платформы и политики|
@@ -110,6 +110,7 @@ Content-Length: 391
   "configurationVersion": 4
 }
 ```
+
 
 
 

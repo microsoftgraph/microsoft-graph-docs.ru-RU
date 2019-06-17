@@ -4,12 +4,12 @@ description: Создание нового объекта Ролескопета
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 009a2f8f87c49495730b3f08be86b7238a119a97
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1e8297e48bc26a96a12bce5449a5f3017340d3fa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899433"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985264"
 ---
 # <a name="create-rolescopetag"></a>Создание Ролескопетаг
 
@@ -44,7 +44,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Ролескопетаг в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ролескопетаг.
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

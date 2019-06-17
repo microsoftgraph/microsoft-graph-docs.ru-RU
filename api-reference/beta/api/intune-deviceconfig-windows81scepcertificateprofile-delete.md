@@ -4,12 +4,12 @@ description: Удаляет объект windows81SCEPCertificateProfile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 432080e8bb4ec9a696617a8a8e5cce4ff09327d4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1ad9c11b213d442bf9d3932885e933624888165e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918208"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962220"
 ---
 # <a name="delete-windows81scepcertificateprofile"></a>Удаление windows81SCEPCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0764f7cfd488afbf98ae2bb32c61f061a49b1fa7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 580e4d3d7e363d42a7f828ddd6eaaee0d597806e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905191"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984921"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Создание Граупполициконфигуратион
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Граупполициконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициконфигуратион.
@@ -93,6 +93,7 @@ Content-Length: 317
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

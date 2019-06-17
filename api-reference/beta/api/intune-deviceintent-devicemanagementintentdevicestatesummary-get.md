@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Деви
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eab5dfb7a3eff5ace0ee64d4f773060d30b2689e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d0545b066d6f4a32ecbc9fb79b9ae73d3adacd7c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915706"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960204"
 ---
 # <a name="get-devicemanagementintentdevicestatesummary"></a>Получение Девицеманажементинтентдевицестатесуммари
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/deviceStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 321
   }
 }
 ```
+
 
 
 

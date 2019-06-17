@@ -4,12 +4,12 @@ description: Содержит набор Ресаурцеактионс, опр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c5ef360393e99b8c8a152596a2285cddd49d7e0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8cbe41bae81d165d0800a5184e1f7babedebc09d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939030"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993524"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
 
@@ -25,7 +25,7 @@ ms.locfileid: "33939030"
 |actions|Коллекция строк|Разрешенные действия — устарело|
 |resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия с ресурсами, содержащие набор разрешенных и запрещенных разрешений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "33939030"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Базовый план безопасности для каждо�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd8f40c2997e512f690dcb48908f22b80d7e34c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 00735cb51952ec9cc8104a1d2f142d74cb773e05
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33957099"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983451"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>Тип ресурса Секуритибаселинекатегористатесуммари
 
@@ -26,10 +26,10 @@ ms.locfileid: "33957099"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Секуритибаселинекатегористатесуммариес](../api/intune-deviceintent-securitybaselinecategorystatesummary-list.md)|Коллекция [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Список свойств и связей объектов [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
-|[Получение Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-get.md)|[Секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Чтение свойств и связей объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
-|[Создание Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-create.md)|[Секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Создание нового объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
+|[Получение Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-get.md)|[securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Чтение свойств и связей объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
+|[Создание Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-create.md)|[securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Создание нового объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
 |[Удаление Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-delete.md)|Нет|Удаляет объект [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md).|
-|[Обновление Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-update.md)|[Секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Обновление свойств объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
+|[Обновление Секуритибаселинекатегористатесуммари](../api/intune-deviceintent-securitybaselinecategorystatesummary-update.md)|[securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md)|Обновление свойств объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,7 +43,7 @@ ms.locfileid: "33957099"
 |notApplicableCount|Int32|Количество неприменимых устройств, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |displayName|Строка|Имя категории|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,6 +67,7 @@ ms.locfileid: "33957099"
   "displayName": "String"
 }
 ```
+
 
 
 

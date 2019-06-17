@@ -4,12 +4,12 @@ description: Обновление свойств объекта Виндовсм
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 323e8fdf611b25676f2b1337829a162eedb83f58
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 97ed5c3f5d9126e73fd421e2c9868e09f61e0fe4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909101"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978383"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Обновление Виндовсманажементапфеалссуммари
 
@@ -43,14 +43,14 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта сводки работоспособности приложения управления Windows.|
+|id|String|Ключ объекта сводки работоспособности приложения управления Windows.|
 |Хеалсидевицекаунт|Int32|Работоспособное число устройств.|
 |Унхеалсидевицекаунт|Int32|Неработоспособное число устройств.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
@@ -92,6 +92,7 @@ Content-Length: 210
   "unknownDeviceCount": 2
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Представляет состояние диагностики.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a896a17a2a79db6eea2ac2ece0973175506bac4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 907f9940b7cbb4a35f69e0792092e14c99aebdae
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940766"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996297"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Тип ресурса managedAppDiagnosticStatus
 
@@ -22,11 +22,11 @@ ms.locfileid: "33940766"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|validationName|Строка|Понятное имя проверки|
+|validationName|String|Понятное имя проверки|
 |state|String|Состояние операции|
 |mitigationInstruction|String|Инструкции по исправлению неудачной проверки|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "33940766"
   "mitigationInstruction": "String"
 }
 ```
+
 
 
 

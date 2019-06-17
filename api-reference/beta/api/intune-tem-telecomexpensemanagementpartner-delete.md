@@ -4,12 +4,12 @@ description: Удаляет объект telecomExpenseManagementPartner.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40c89b59840c117e4549c0e0dddace3caabe7faa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: af946280b917916e322c248e933cb7e1a3905fa7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897879"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990346"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Удаление объекта telecomExpenseManagementPartner
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagemen
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

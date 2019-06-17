@@ -4,12 +4,12 @@ description: Список свойств и связей объектов device
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f79bab6a4488a9b14ba9343d6676f509a460edb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1964e86f8229a236d339d17bf279ce2eebf726d2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900203"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981120"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Перечисление объектов deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 956
 
 {
   "value": [
@@ -86,11 +86,13 @@ Content-Length: 914
       "remotePassportEnabled": true,
       "pinPreviousBlockCount": 5,
       "pinExpirationInDays": 3,
-      "enhancedBiometricsState": "enabled"
+      "enhancedBiometricsState": "enabled",
+      "securityKeyForSignIn": "enabled"
     }
   ]
 }
 ```
+
 
 
 

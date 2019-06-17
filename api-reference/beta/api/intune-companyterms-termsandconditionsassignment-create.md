@@ -4,12 +4,12 @@ description: Создание объекта termsAndConditionsAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18cb89e02a22933fcb284c64169520bce77eacce
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b8bb341ed7b4820f3f0f82291044ded396c53745
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933811"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971894"
 ---
 # <a name="create-termsandconditionsassignment"></a>Создание объекта termsAndConditionsAssignment
 
@@ -50,7 +50,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

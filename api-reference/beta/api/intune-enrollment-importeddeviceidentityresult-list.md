@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Имп
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4692a7b1305f8fceee73a59000fc4259b9668c23
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bd6f8785cca3ad7de3f8cd46a36dfdd5227f2e67
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908443"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981813"
 ---
 # <a name="list-importeddeviceidentityresults"></a>Список Импортеддевицеидентитиресултс
 
@@ -43,7 +43,7 @@ GET /deviceManagement/importedDeviceIdentities
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,7 @@ Content-Length: 606
   ]
 }
 ```
+
 
 
 

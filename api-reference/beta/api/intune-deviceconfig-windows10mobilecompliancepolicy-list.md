@@ -4,12 +4,12 @@ description: Список свойств и связей объектов window
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d68ab884b37d50c9e9fe4bd60dd921c6cdf64111
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 814f5aa78702452e841fdaad04e6147c9856130b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33918628"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978131"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>Перечисление объектов windows10MobileCompliancePolicy
 
@@ -106,6 +106,7 @@ Content-Length: 1503
   ]
 }
 ```
+
 
 
 

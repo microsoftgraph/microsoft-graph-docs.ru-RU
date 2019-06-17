@@ -4,12 +4,12 @@ description: Удаляет объект windows10EndpointProtectionConfiguratio
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec1bea5d4b11d7601dd52a0d21d8d2fd348b79f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2858b170c620d8ed5264bcd3d00bbe9179cb6c02
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921830"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34962654"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Удаление объекта windows10EndpointProtectionConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windowsI
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75f643b3d62d19fe5e040da6aa763379c141132f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b694086f862e22e95ccbb600a52f8ac67f33d01b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898702"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990500"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Получение объекта windowsInformationProtectionAppLearningSummary
 
@@ -46,7 +46,7 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

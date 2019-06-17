@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceManagement
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2621df4ec2373c06433df5df4f253971d4280a15
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a77605170d7df943b0d1a96fc2fe864b9d46e4f7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898488"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989695"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -38,6 +38,7 @@ ms.locfileid: "33898488"
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
@@ -64,7 +65,7 @@ PATCH /deviceManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-shared-devicemanagement.md) в формате JSON.
 
@@ -72,14 +73,14 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства.|
+|id|String|Уникальный идентификатор устройства.|
 |**Настройка устройства**|
 |Интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|Легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|Легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |Максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
-|Аккаунтмовекомплетиондатетиме|DateTimeOffset|Дата _Амп_ время, когда данные клиента перемещаются между скалеунитс.|
+|Аккаунтмовекомплетиондатетиме|DateTimeOffset|Дата & время, когда данные клиента перемещаются между скалеунитс.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о согласия администратора.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Общие сведения о защите устройств.|
 |managedDeviceCleanupSettings;|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md);|Правило очистки устройств|

@@ -4,12 +4,12 @@ description: Удаляет объект termsAndConditionsAcceptanceStatus.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4043a71ee87ccadc8e829c045dc0c1fe0f77d23c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5ef41330d3b5de183f7fba81ba113f0a90b023aa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933867"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971943"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Delete termsAndConditionsAcceptanceStatus
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

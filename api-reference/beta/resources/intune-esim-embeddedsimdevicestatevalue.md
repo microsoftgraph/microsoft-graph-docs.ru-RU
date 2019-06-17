@@ -4,12 +4,12 @@ description: Описывает различные состояния для в�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1144db582b7e6aa5f38043797cd15f3b009d4d1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a22641d40b05fa41cc9542df5237a2e9e278a401
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941319"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987307"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>тип перечисления Ембеддедсимдевицестатевалуе
 
@@ -30,6 +30,7 @@ ms.locfileid: "33941319"
 |error|17:00|Указывает на наличие ошибки в этом профиле.|
 |deleted|6 |Указывает, что профиль будет удален с устройства.|
 |Ремоведбюсер|7 |Указывает, что профиль удаляется с устройства пользователем|
+
 
 
 

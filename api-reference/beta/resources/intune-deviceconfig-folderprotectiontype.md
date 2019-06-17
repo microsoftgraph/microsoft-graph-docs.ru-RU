@@ -4,12 +4,12 @@ description: Возможные значения защиты папок
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cc114a1795cb68dd1f1a45a25e70b7128dea828
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d3116e2663a9217e19f32f4e1c6cbc068d856fd0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946604"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994952"
 ---
 # <a name="folderprotectiontype-enum-type"></a>тип перечисления Фолдерпротектионтипе
 
@@ -27,6 +27,7 @@ ms.locfileid: "33946604"
 |Аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
 |Блоккдискмодификатион|4|Блокировать запись недоверенных приложений в секторах диска.|
 |Аудитдискмодификатион|SP4|Создание журналов при записи недоверенных приложений в секторах диска.|
+
 
 
 

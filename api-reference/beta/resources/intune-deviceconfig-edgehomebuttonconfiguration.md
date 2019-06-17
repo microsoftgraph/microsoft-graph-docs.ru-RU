@@ -4,12 +4,12 @@ description: Базовый класс конфигурации кнопки "Д
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 492fb99cf30496f9f0ca6fb940ceb639a63415f8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c88cd93815b2f2fa487c469d8c122cc70e445044
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946793"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989814"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>Тип ресурса Еджехомебуттонконфигуратион
 
@@ -23,7 +23,7 @@ ms.locfileid: "33946793"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "33946793"
   "@odata.type": "#microsoft.graph.edgeHomeButtonConfiguration"
 }
 ```
+
 
 
 

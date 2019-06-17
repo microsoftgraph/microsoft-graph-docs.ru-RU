@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a997deb898ae2f82ca5eb7f44cf11251ce127e42
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f70b2f77808fe4c2b4f15b54198d77d39a484486
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916982"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960295"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>Создание Девицеманажементинтентдевицестате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентдевицестате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентдевицестате.
@@ -52,11 +52,11 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 |:---|:---|:---|
 |id|Строка|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
-|userName|Строка|Имя пользователя, сообщаемое на устройстве|
+|userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceDisplayName|String|Имя устройства, о котором сообщается|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
 |состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Строка|Идентификатор устройства, о котором сообщается|
+|deviceId|String|Идентификатор устройства, о котором сообщается|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Ролескоп
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4f361ba40e92434a3fbd5566a1e5c20517032ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4ee2de294f83db9abdd200bcced4c4c442cbc25
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899377"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985208"
 ---
 # <a name="update-rolescopetag"></a>Обновление Ролескопетаг
 
@@ -44,8 +44,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Ролескопетаг](../resources/intune-rbac-rolescopetag.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [ролескопетаг](../resources/intune-rbac-rolescopetag.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [ролескопетаг](../resources/intune-rbac-rolescopetag.md).
 
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

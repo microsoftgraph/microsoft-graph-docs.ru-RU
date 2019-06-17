@@ -4,12 +4,12 @@ description: Создание нового объекта Андроидфорв
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b8b8fd66d0aa5857d15627be28e95149a8270b8e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b5771a571ec53c8edaeb54e7b983f3be9bba3540
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937430"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966427"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>Создание Андроидфорворкмобилеаппконфигуратион
 
@@ -59,7 +59,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации приложения Android для рабочего приложения.|
-|Пайлоаджсон|Строка|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
+|Пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
 |Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
 
 
@@ -131,6 +131,7 @@ Content-Length: 732
   ]
 }
 ```
+
 
 
 

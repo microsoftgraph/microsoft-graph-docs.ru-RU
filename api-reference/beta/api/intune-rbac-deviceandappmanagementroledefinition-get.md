@@ -4,12 +4,12 @@ description: Считывание свойств и связей объекта 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b172eae4893ab0cd09dec1443a9dec33c153662
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c6f4bd800034c8335abf97159a083ddbcd0e3b7e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899573"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988673"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Получение deviceAndAppManagementRoleDefinition
 
@@ -47,7 +47,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -120,6 +120,7 @@ Content-Length: 1391
   }
 }
 ```
+
 
 
 

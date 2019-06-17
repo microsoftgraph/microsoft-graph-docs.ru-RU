@@ -4,12 +4,12 @@ description: Сообщения уведомлений отправляются 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f637ea8ae088e22c90d504495b1de5206f125ef4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 179d37f4671088deb0bc736a7873a53362aa8f7f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940430"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988218"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Тип ресурса notificationMessageTemplate
 
@@ -39,7 +39,7 @@ ms.locfileid: "33940430"
 |brandingOptions|[Нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |localizedNotificationMessages|Коллекция объектов [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|Список локализованных сообщений для шаблона сообщения уведомления.|
@@ -65,6 +65,7 @@ ms.locfileid: "33940430"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Метки оценки фильмов в Канаде
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dcb5612be1045c2c99e760ca4056e1f00004367
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6cc112ccf178d7c2a7c5d5c5e70a6306b3696b35
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950979"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995772"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>тип перечисления Ратингканадамовиестипе
 
@@ -29,6 +29,7 @@ ms.locfileid: "33950979"
 |agesAbove14|SP4|Классификация 14A подходит для зрителей выше 14 или более ранних версий|
 |agesAbove18|17:00|Классификация 18A подходит для зрителей более 18 лет и старше|
 |ограниченной|6 |Классификация R ограничена до 18 лет и старше|
+
 
 
 

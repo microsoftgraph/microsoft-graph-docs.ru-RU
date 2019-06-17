@@ -4,12 +4,12 @@ description: Список свойств и связей объектов enroll
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9856b443bb9b42058afcb6a42d2891855a11a777
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87bfe43681d5d1bbd10a98a8673b7c58aaa2f1b3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899293"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990794"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Список объектов enrollmentTroubleshootingEvent
 
@@ -43,7 +43,7 @@ GET /deviceManagement/troubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -105,6 +105,7 @@ Content-Length: 1400
   ]
 }
 ```
+
 
 
 

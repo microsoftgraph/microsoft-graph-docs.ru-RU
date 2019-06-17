@@ -4,12 +4,12 @@ description: Обновление свойств объекта roleDefinition.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16163140c0e9f8548107590c88b8c0e6e2686b3b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bf767d6a48f8546147f525fb1756e8e9c7fc2d9c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899475"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988463"
 ---
 # <a name="update-roledefinition"></a>Обновление объекта roleDefinition
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [roleDefinition](../resources/intune-rbac-roledefinition.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).
@@ -181,6 +181,7 @@ Content-Length: 1256
   ]
 }
 ```
+
 
 
 

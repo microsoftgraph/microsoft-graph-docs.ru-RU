@@ -4,12 +4,12 @@ description: Причина, по которой пользователю был
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e2e8d473ba1dad1db8cd53d990a4cd8150b5544
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8b07670130f386a5b4a3c53495464652aee7e686
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940745"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996290"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940745"
 |Рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
 |Андроидбутлоадерунлоккед|2|Регистрация приложения выполняется на устройстве с Android, на котором разблокирован загрузчик.|
 |Андроидфакторироммодифиед|4|Регистрация приложения выполняется на устройстве с Android, на котором было изменено фабричное ПЗУ.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Интунебранд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec9fec5aeb954c2bf4264d12a4ff1cb44a2ed3c6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 51797d3b65f4ae232919f79cd37d21360052ee7a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899321"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990581"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>Создание Интунебрандингпрофилеассигнмент
 
@@ -43,14 +43,14 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignme
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Интунебрандингпрофилеассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофилеассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль фирменной символики.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 220
   }
 }
 ```
+
 
 
 

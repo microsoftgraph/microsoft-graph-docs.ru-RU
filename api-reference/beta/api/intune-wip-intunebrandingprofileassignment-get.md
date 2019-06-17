@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Инту
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e12a60dadccb275808891da3ac60b0066ebd82c4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d10c051f8e2152e5f991963512acd0a23d3f76d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898306"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990556"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>Получение Интунебрандингпрофилеассигнмент
 
@@ -46,7 +46,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignmen
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,7 @@ Content-Length: 249
   }
 }
 ```
+
 
 
 

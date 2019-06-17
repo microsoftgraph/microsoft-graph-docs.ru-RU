@@ -4,12 +4,12 @@ description: Создание объекта deviceAndAppManagementRoleAssignmen
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6022736eec4e95fccd3282de87d0283158540937
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1185ba3e0caa8537a38771d739a60d4e970dec62
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899692"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988785"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Создание объекта deviceAndAppManagementRoleAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/roleAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceAndAppManagementRoleAssignment в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceAndAppManagementRoleAssignment.
@@ -113,6 +113,7 @@ Content-Length: 391
   ]
 }
 ```
+
 
 
 
