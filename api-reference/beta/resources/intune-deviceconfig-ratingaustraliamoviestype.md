@@ -4,12 +4,12 @@ description: Метки оценки фильмов в Австралии
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aebff459a96e686f8d60ee5e862113502a846ab8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: df09ba09db619d22de4e59a5976173df5a3daa79
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950937"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995786"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>тип перечисления Ратингаустралиамовиестипе
 
@@ -29,6 +29,7 @@ ms.locfileid: "33950937"
 |обнаружен|SP4|Не рекомендуется использовать классификацию M для зрителей с 15|
 |agesAbove15|17:00|MA15 + Classification не подходит для зрителей в течение 15|
 |agesAbove18|6 |R18 + Classification не подходит для зрителей в 18|
+
 
 
 

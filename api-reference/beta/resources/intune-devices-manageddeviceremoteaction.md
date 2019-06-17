@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afe1984ac9d5503bb795ae625b340ad3637f1ead
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a80eaccb9810563f95556c9a4b6fa33aec570935
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941950"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995030"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип перечисления Манажеддевицеремотеактион
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941950"
 |quickScan|4|Пока не задокументировано.|
 |Сигнатуреупдате|SP4|Пока не задокументировано.|
 |Очистка|17:00|Пока не задокументировано.|
+
 
 
 

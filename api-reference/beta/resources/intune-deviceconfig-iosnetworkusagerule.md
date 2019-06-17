@@ -4,12 +4,12 @@ description: Благодаря правилам использования се
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7d11b8a7591d2fce03b3f8a023e9ef90fab4f1b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2dc693eb993e6740098ab90dcae53214d8af4d0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946926"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995695"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Тип ресурса iosNetworkUsageRule
 
@@ -23,10 +23,10 @@ ms.locfileid: "33946926"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |managedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Сведения об управляемых приложениях, к которым применяется это правило. Эта коллекция может содержать не более 500 элементов.|
-|cellularDataBlockWhenRoaming|Логический|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.|
+|cellularDataBlockWhenRoaming|Boolean|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.|
 |cellularDataBlocked|Boolean|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в любое время.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,7 @@ ms.locfileid: "33946926"
   "cellularDataBlocked": true
 }
 ```
+
 
 
 
