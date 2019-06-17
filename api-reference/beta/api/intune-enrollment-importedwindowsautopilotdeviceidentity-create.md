@@ -4,31 +4,31 @@ description: Создать новый объект importedWindowsAutopilotDevi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dcd78ce37bdc4718bb69ed324ab34c12d2c7096
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e9580f8da9118a1f920e790cab61f560360cc753
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908422"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981778"
 ---
-# <a name="create-importedwindowsautopilotdeviceidentity"></a><span data-ttu-id="0db69-103">Создать importedWindowsAutopilotDeviceIdentity</span><span class="sxs-lookup"><span data-stu-id="0db69-103">Create importedWindowsAutopilotDeviceIdentity</span></span>
+# <a name="create-importedwindowsautopilotdeviceidentity"></a><span data-ttu-id="a64eb-103">Создать importedWindowsAutopilotDeviceIdentity</span><span class="sxs-lookup"><span data-stu-id="a64eb-103">Create importedWindowsAutopilotDeviceIdentity</span></span>
 
-> <span data-ttu-id="0db69-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0db69-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a64eb-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a64eb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0db69-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0db69-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a64eb-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a64eb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0db69-106">Создать новый объект [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).</span><span class="sxs-lookup"><span data-stu-id="0db69-106">Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.</span></span>
+<span data-ttu-id="a64eb-106">Создать новый объект [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).</span><span class="sxs-lookup"><span data-stu-id="a64eb-106">Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0db69-107">Обязательные требования</span><span class="sxs-lookup"><span data-stu-id="0db69-107">Prerequisites</span></span>
-<span data-ttu-id="0db69-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0db69-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a64eb-107">Обязательные требования</span><span class="sxs-lookup"><span data-stu-id="a64eb-107">Prerequisites</span></span>
+<span data-ttu-id="a64eb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a64eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0db69-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0db69-110">Permission type</span></span>|<span data-ttu-id="0db69-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="0db69-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a64eb-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a64eb-110">Permission type</span></span>|<span data-ttu-id="a64eb-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a64eb-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0db69-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0db69-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0db69-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0db69-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="0db69-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0db69-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0db69-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0db69-115">Not supported.</span></span>|
-|<span data-ttu-id="0db69-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0db69-116">Application</span></span>|<span data-ttu-id="0db69-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0db69-117">Not supported.</span></span>|
+|<span data-ttu-id="a64eb-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a64eb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a64eb-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a64eb-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="a64eb-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a64eb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a64eb-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a64eb-115">Not supported.</span></span>|
+|<span data-ttu-id="a64eb-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a64eb-116">Application</span></span>|<span data-ttu-id="a64eb-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a64eb-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0db69-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0db69-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a64eb-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a64eb-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,37 +38,37 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0db69-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0db69-119">Request headers</span></span>
-|<span data-ttu-id="0db69-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0db69-120">Header</span></span>|<span data-ttu-id="0db69-121">Значение</span><span class="sxs-lookup"><span data-stu-id="0db69-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a64eb-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a64eb-119">Request headers</span></span>
+|<span data-ttu-id="a64eb-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a64eb-120">Header</span></span>|<span data-ttu-id="a64eb-121">Значение</span><span class="sxs-lookup"><span data-stu-id="a64eb-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0db69-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0db69-122">Authorization</span></span>|<span data-ttu-id="0db69-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0db69-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0db69-124">Accept</span><span class="sxs-lookup"><span data-stu-id="0db69-124">Accept</span></span>|<span data-ttu-id="0db69-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0db69-125">application/json</span></span>|
+|<span data-ttu-id="a64eb-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a64eb-122">Authorization</span></span>|<span data-ttu-id="a64eb-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a64eb-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a64eb-124">Accept</span><span class="sxs-lookup"><span data-stu-id="a64eb-124">Accept</span></span>|<span data-ttu-id="a64eb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a64eb-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0db69-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0db69-126">Request body</span></span>
-<span data-ttu-id="0db69-127">В тексте запроса добавьте представление объекта importedWindowsAutopilotDeviceIdentity в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0db69-127">In the request body, supply a JSON representation for the importedWindowsAutopilotDeviceIdentity object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a64eb-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a64eb-126">Request body</span></span>
+<span data-ttu-id="a64eb-127">В тексте запроса добавьте представление объекта importedWindowsAutopilotDeviceIdentity в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a64eb-127">In the request body, supply a JSON representation for the importedWindowsAutopilotDeviceIdentity object.</span></span>
 
-<span data-ttu-id="0db69-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта importedWindowsAutopilotDeviceIdentity.</span><span class="sxs-lookup"><span data-stu-id="0db69-128">The following table shows the properties that are required when you create the importedWindowsAutopilotDeviceIdentity.</span></span>
+<span data-ttu-id="a64eb-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта importedWindowsAutopilotDeviceIdentity.</span><span class="sxs-lookup"><span data-stu-id="a64eb-128">The following table shows the properties that are required when you create the importedWindowsAutopilotDeviceIdentity.</span></span>
 
-|<span data-ttu-id="0db69-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="0db69-129">Property</span></span>|<span data-ttu-id="0db69-130">Тип</span><span class="sxs-lookup"><span data-stu-id="0db69-130">Type</span></span>|<span data-ttu-id="0db69-131">Описание</span><span class="sxs-lookup"><span data-stu-id="0db69-131">Description</span></span>|
+|<span data-ttu-id="a64eb-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="a64eb-129">Property</span></span>|<span data-ttu-id="a64eb-130">Тип</span><span class="sxs-lookup"><span data-stu-id="a64eb-130">Type</span></span>|<span data-ttu-id="a64eb-131">Описание</span><span class="sxs-lookup"><span data-stu-id="a64eb-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0db69-132">id</span><span class="sxs-lookup"><span data-stu-id="0db69-132">id</span></span>|<span data-ttu-id="0db69-133">Строка</span><span class="sxs-lookup"><span data-stu-id="0db69-133">String</span></span>|<span data-ttu-id="0db69-134">GUID объекта</span><span class="sxs-lookup"><span data-stu-id="0db69-134">The GUID for the object</span></span>|
-|<span data-ttu-id="0db69-135">orderIdentifier</span><span class="sxs-lookup"><span data-stu-id="0db69-135">orderIdentifier</span></span>|<span data-ttu-id="0db69-136">Строка</span><span class="sxs-lookup"><span data-stu-id="0db69-136">String</span></span>|<span data-ttu-id="0db69-137">Номер заказа устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="0db69-137">Order Id of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="0db69-138">serialNumber</span><span class="sxs-lookup"><span data-stu-id="0db69-138">serialNumber</span></span>|<span data-ttu-id="0db69-139">String</span><span class="sxs-lookup"><span data-stu-id="0db69-139">String</span></span>|<span data-ttu-id="0db69-140">Серийный номер устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="0db69-140">Serial number of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="0db69-141">productKey</span><span class="sxs-lookup"><span data-stu-id="0db69-141">productKey</span></span>|<span data-ttu-id="0db69-142">Строка</span><span class="sxs-lookup"><span data-stu-id="0db69-142">String</span></span>|<span data-ttu-id="0db69-143">Ключ продукта устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="0db69-143">Product Key of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="0db69-144">Импортид</span><span class="sxs-lookup"><span data-stu-id="0db69-144">importId</span></span>|<span data-ttu-id="0db69-145">Строка</span><span class="sxs-lookup"><span data-stu-id="0db69-145">String</span></span>|<span data-ttu-id="0db69-146">Идентификатор импорта для устройства автопилота Windows.</span><span class="sxs-lookup"><span data-stu-id="0db69-146">The Import Id of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="0db69-147">hardwareIdentifier</span><span class="sxs-lookup"><span data-stu-id="0db69-147">hardwareIdentifier</span></span>|<span data-ttu-id="0db69-148">Двоичный</span><span class="sxs-lookup"><span data-stu-id="0db69-148">Binary</span></span>|<span data-ttu-id="0db69-149">Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="0db69-149">Hardware Blob of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="0db69-150">state</span><span class="sxs-lookup"><span data-stu-id="0db69-150">state</span></span>|[<span data-ttu-id="0db69-151">importedWindowsAutopilotDeviceIdentityState</span><span class="sxs-lookup"><span data-stu-id="0db69-151">importedWindowsAutopilotDeviceIdentityState</span></span>](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|<span data-ttu-id="0db69-152">Текущее состояние импортированного устройства.</span><span class="sxs-lookup"><span data-stu-id="0db69-152">Current state of the imported device.</span></span>|
-|<span data-ttu-id="0db69-153">АссигнедусерпринЦипалнаме</span><span class="sxs-lookup"><span data-stu-id="0db69-153">assignedUserPrincipalName</span></span>|<span data-ttu-id="0db69-154">Строка</span><span class="sxs-lookup"><span data-stu-id="0db69-154">String</span></span>|<span data-ttu-id="0db69-155">ИМЯ участника-пользователя для пользователя, которому будет назначено устройство</span><span class="sxs-lookup"><span data-stu-id="0db69-155">UPN of the user the device will be assigned</span></span>|
+|<span data-ttu-id="a64eb-132">id</span><span class="sxs-lookup"><span data-stu-id="a64eb-132">id</span></span>|<span data-ttu-id="a64eb-133">String</span><span class="sxs-lookup"><span data-stu-id="a64eb-133">String</span></span>|<span data-ttu-id="a64eb-134">GUID объекта</span><span class="sxs-lookup"><span data-stu-id="a64eb-134">The GUID for the object</span></span>|
+|<span data-ttu-id="a64eb-135">orderIdentifier</span><span class="sxs-lookup"><span data-stu-id="a64eb-135">orderIdentifier</span></span>|<span data-ttu-id="a64eb-136">String</span><span class="sxs-lookup"><span data-stu-id="a64eb-136">String</span></span>|<span data-ttu-id="a64eb-137">Номер заказа устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="a64eb-137">Order Id of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="a64eb-138">serialNumber</span><span class="sxs-lookup"><span data-stu-id="a64eb-138">serialNumber</span></span>|<span data-ttu-id="a64eb-139">String</span><span class="sxs-lookup"><span data-stu-id="a64eb-139">String</span></span>|<span data-ttu-id="a64eb-140">Серийный номер устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="a64eb-140">Serial number of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="a64eb-141">productKey</span><span class="sxs-lookup"><span data-stu-id="a64eb-141">productKey</span></span>|<span data-ttu-id="a64eb-142">Строка</span><span class="sxs-lookup"><span data-stu-id="a64eb-142">String</span></span>|<span data-ttu-id="a64eb-143">Ключ продукта устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="a64eb-143">Product Key of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="a64eb-144">Импортид</span><span class="sxs-lookup"><span data-stu-id="a64eb-144">importId</span></span>|<span data-ttu-id="a64eb-145">String</span><span class="sxs-lookup"><span data-stu-id="a64eb-145">String</span></span>|<span data-ttu-id="a64eb-146">Идентификатор импорта для устройства автопилота Windows.</span><span class="sxs-lookup"><span data-stu-id="a64eb-146">The Import Id of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="a64eb-147">hardwareIdentifier</span><span class="sxs-lookup"><span data-stu-id="a64eb-147">hardwareIdentifier</span></span>|<span data-ttu-id="a64eb-148">Двоичный</span><span class="sxs-lookup"><span data-stu-id="a64eb-148">Binary</span></span>|<span data-ttu-id="a64eb-149">Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.</span><span class="sxs-lookup"><span data-stu-id="a64eb-149">Hardware Blob of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="a64eb-150">state</span><span class="sxs-lookup"><span data-stu-id="a64eb-150">state</span></span>|[<span data-ttu-id="a64eb-151">importedWindowsAutopilotDeviceIdentityState</span><span class="sxs-lookup"><span data-stu-id="a64eb-151">importedWindowsAutopilotDeviceIdentityState</span></span>](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|<span data-ttu-id="a64eb-152">Текущее состояние импортированного устройства.</span><span class="sxs-lookup"><span data-stu-id="a64eb-152">Current state of the imported device.</span></span>|
+|<span data-ttu-id="a64eb-153">АссигнедусерпринЦипалнаме</span><span class="sxs-lookup"><span data-stu-id="a64eb-153">assignedUserPrincipalName</span></span>|<span data-ttu-id="a64eb-154">String</span><span class="sxs-lookup"><span data-stu-id="a64eb-154">String</span></span>|<span data-ttu-id="a64eb-155">Имя участника-пользователя для пользователя, которому будет назначено устройство</span><span class="sxs-lookup"><span data-stu-id="a64eb-155">UPN of the user the device will be assigned</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="0db69-156">Ответ</span><span class="sxs-lookup"><span data-stu-id="0db69-156">Response</span></span>
-<span data-ttu-id="0db69-157">В случае успешного выполнения данный метод возвращает код отклика `201 Created` и объект [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) в форме для обратной связи.</span><span class="sxs-lookup"><span data-stu-id="0db69-157">If successful, this method returns a `201 Created` response code and a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a64eb-156">Ответ</span><span class="sxs-lookup"><span data-stu-id="a64eb-156">Response</span></span>
+<span data-ttu-id="a64eb-157">В случае успешного выполнения данный метод возвращает код отклика `201 Created` и объект [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) в форме для обратной связи.</span><span class="sxs-lookup"><span data-stu-id="a64eb-157">If successful, this method returns a `201 Created` response code and a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0db69-158">Пример</span><span class="sxs-lookup"><span data-stu-id="0db69-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a64eb-158">Пример</span><span class="sxs-lookup"><span data-stu-id="a64eb-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0db69-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="0db69-159">Request</span></span>
-<span data-ttu-id="0db69-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0db69-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a64eb-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="a64eb-159">Request</span></span>
+<span data-ttu-id="a64eb-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a64eb-160">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
@@ -92,8 +92,8 @@ Content-length: 645
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0db69-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="0db69-161">Response</span></span>
-<span data-ttu-id="0db69-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0db69-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a64eb-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="a64eb-161">Response</span></span>
+<span data-ttu-id="a64eb-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a64eb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -117,6 +117,7 @@ Content-Length: 694
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
 
 
 
