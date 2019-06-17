@@ -4,23 +4,23 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c2af10e3f45e59ec9bac83fb71a8220e37e769c2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed680af82eb041e93cf73cb6ed3c390b989d8bc3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939940"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996262"
 ---
-# <a name="manage-resource-access-certificates-in-intune"></a><span data-ttu-id="ede5e-103">Управление сертификатами доступа к ресурсам в Intune</span><span class="sxs-lookup"><span data-stu-id="ede5e-103">Manage resource access certificates in Intune</span></span>
+# <a name="manage-resource-access-certificates-in-intune"></a><span data-ttu-id="06847-103">Управление сертификатами доступа к ресурсам в Intune</span><span class="sxs-lookup"><span data-stu-id="06847-103">Manage resource access certificates in Intune</span></span>
 
-> <span data-ttu-id="ede5e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ede5e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ede5e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ede5e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="06847-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="06847-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="06847-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06847-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="ede5e-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="ede5e-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.</span></span>
+> <span data-ttu-id="06847-106">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="06847-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ede5e-107">Вы можете импортировать PFX-сертификаты с помощью API Microsoft Graph для Intune.</span><span class="sxs-lookup"><span data-stu-id="ede5e-107">You can import PFX certificates using Microsoft Graph API for Intune.</span></span>
+<span data-ttu-id="06847-107">Вы можете импортировать PFX-сертификаты с помощью API Microsoft Graph для Intune.</span><span class="sxs-lookup"><span data-stu-id="06847-107">You can import PFX certificates using Microsoft Graph API for Intune.</span></span>
 
-<span data-ttu-id="ede5e-108">Для управления регистрацией в Intune используются перечисленные ниже ресурсы Graph.</span><span class="sxs-lookup"><span data-stu-id="ede5e-108">The following Graph resources are available to manage enrollment in Intune:</span></span>
+<span data-ttu-id="06847-108">Для управления регистрацией в Intune используются перечисленные ниже ресурсы Graph.</span><span class="sxs-lookup"><span data-stu-id="06847-108">The following Graph resources are available to manage enrollment in Intune:</span></span>
 
-- [<span data-ttu-id="ede5e-109">Сертификат PFX пользователя</span><span class="sxs-lookup"><span data-stu-id="ede5e-109">User PFX certificate</span></span>](intune-raimportcerts-userpfxcertificate.md)
-- [<span data-ttu-id="ede5e-110">Предполагаемое назначение PFX пользователя</span><span class="sxs-lookup"><span data-stu-id="ede5e-110">User PFX intended purpose</span></span>](intune-raimportcerts-userpfxintendedpurpose.md)
-- [<span data-ttu-id="ede5e-111">Схема заполнения пользователя PFX</span><span class="sxs-lookup"><span data-stu-id="ede5e-111">User PFX padding scheme</span></span>](intune-raimportcerts-userpfxpaddingscheme.md)
+- [<span data-ttu-id="06847-109">Сертификат PFX пользователя</span><span class="sxs-lookup"><span data-stu-id="06847-109">User PFX certificate</span></span>](intune-raimportcerts-userpfxcertificate.md)
+- [<span data-ttu-id="06847-110">Предполагаемое назначение PFX пользователя</span><span class="sxs-lookup"><span data-stu-id="06847-110">User PFX intended purpose</span></span>](intune-raimportcerts-userpfxintendedpurpose.md)
+- [<span data-ttu-id="06847-111">Схема заполнения пользователя PFX</span><span class="sxs-lookup"><span data-stu-id="06847-111">User PFX padding scheme</span></span>](intune-raimportcerts-userpfxpaddingscheme.md)
