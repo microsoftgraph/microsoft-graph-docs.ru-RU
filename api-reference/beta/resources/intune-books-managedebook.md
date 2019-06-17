@@ -4,12 +4,12 @@ description: Абстрактный класс, содержащий базов�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8bf13e2c0a5c8e55a397516c21fe91d65aa413a5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949299"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991655"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -38,9 +38,9 @@ ms.locfileid: "33949299"
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги.|
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
-|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [манажедебуккатегори](../resources/intune-books-managedebookcategory.md)|Список категорий для этой электронной книги.|
@@ -76,6 +76,7 @@ ms.locfileid: "33949299"
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

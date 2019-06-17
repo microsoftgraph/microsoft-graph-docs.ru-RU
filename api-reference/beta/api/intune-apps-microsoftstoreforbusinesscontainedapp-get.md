@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Микр
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9bf9dda4da4d7c96057c25a19b7967ae25f203e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c5bca3f1e2033189d84438dbbbb13af4be2befcd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935421"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974323"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>Получение Микрософтсторефорбусинессконтаинедапп
 
@@ -77,6 +77,7 @@ Content-Length: 201
   }
 }
 ```
+
 
 
 

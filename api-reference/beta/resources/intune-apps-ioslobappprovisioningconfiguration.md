@@ -4,12 +4,12 @@ description: В этом разделе приведены описания об
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 197aed0a687e417750b61b0de2637bfbb9198a16
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3f4de887116625579e0041403e99d42045c015ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950370"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991214"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Тип ресурса iosLobAppProvisioningConfiguration
 
@@ -43,7 +43,7 @@ ms.locfileid: "33950370"
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|Коллекция [к mobileappprovisioningconfiggroupassignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Связанные назначения групп.|
@@ -76,6 +76,7 @@ ms.locfileid: "33950370"
   "version": 1024
 }
 ```
+
 
 
 

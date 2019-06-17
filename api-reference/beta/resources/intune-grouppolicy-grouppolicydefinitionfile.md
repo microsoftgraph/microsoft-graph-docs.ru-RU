@@ -4,12 +4,12 @@ description: Сущность представляет XML-файл ADMX (адм
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa766eace326dd05470b753f8daf6acfa8362e6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941137"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975940"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>Тип ресурса Граупполицидефинитионфиле
 
@@ -31,13 +31,13 @@ ms.locfileid: "33941137"
 |displayName|Строка|Локализованное понятное имя файла ADMX.|
 |description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
 |Лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
-|Таржетпрефикс|Строка|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
-|Атрибут|Строка|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
+|Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
 |Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |определения|Коллекция [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определения групповой политики, связанные с файлом.|
@@ -65,6 +65,7 @@ ms.locfileid: "33941137"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

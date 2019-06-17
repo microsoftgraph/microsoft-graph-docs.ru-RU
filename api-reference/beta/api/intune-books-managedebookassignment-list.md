@@ -4,12 +4,12 @@ description: Список свойств и связей объектов manage
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3da7288174bb222835a9900a6a94327eac1831be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a2ee6ee05459b7a57ac2f5d7d814df632b32ad0c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934196"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972216"
 ---
 # <a name="list-managedebookassignments"></a>Перечисление объектов managedEBookAssignment
 
@@ -77,6 +77,7 @@ Content-Length: 300
   ]
 }
 ```
+
 
 
 

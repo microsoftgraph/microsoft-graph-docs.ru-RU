@@ -4,12 +4,12 @@ description: Перечисление состояния соответстви�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dadc14c3d812af848a41c1d256840ac394abc3aa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5bc69cf0878da18b4cd80fa01982f71040f6361e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949180"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965811"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>тип перечисления Администраторконфигуреддевицекомплианцестате
 
@@ -24,6 +24,7 @@ ms.locfileid: "33949180"
 |:---|:---|:---|
 |Баседондевицекомплианцеполици|нуль|Задание состояния соответствия на основе других политик соответствия требованиям|
 |Несоответствующих|1,1|Установка соответствия несоответствующим требованиям|
+
 
 
 

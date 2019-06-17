@@ -4,12 +4,12 @@ description: Сущность значения определения храни
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acc7393a8fcbaf7dfc484f40b3ed12bc821ba63e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 816d2e78a969dcd50ad4cff0efd6e294def78d23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941158"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975933"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>Тип ресурса Граупполицидефинитионвалуе
 
@@ -34,10 +34,10 @@ ms.locfileid: "33941158"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |enabled|Boolean|Включает или отключает соответствующее определение групповой политики.|
 |Конфигуратионтипе|[Граупполициконфигуратионтипе](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Указывает, как должно настраиваться значение. Это может быть либо политика, либо предпочтение. Возможные значения: `policy`, `preference`.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Пресентатионвалуес|Коллекция [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|Связанные значения представления групповой политики со значением определения.|
@@ -61,6 +61,7 @@ ms.locfileid: "33941158"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

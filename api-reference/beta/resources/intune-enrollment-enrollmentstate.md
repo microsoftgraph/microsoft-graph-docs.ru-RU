@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78038fc9a279536c1e68708b767c6b7c81e4e4df
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: adb8c668bf3f6d30667417500a5989734167fb5c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941578"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992663"
 ---
 # <a name="enrollmentstate-enum-type"></a>тип перечисления Енроллментстате
 
@@ -28,6 +28,7 @@ ms.locfileid: "33941578"
 |сбоев|4|Не зарегистрирована и существует запись о сбое регистрации.|
 |Нотконтактед|SP4|Устройство импортировано, но не зарегистрировано.|
 |заблокированных|17:00|Устройство зарегистрировано как без пользователя, но заблокировано для перемещения на регистрацию пользователей, так как не удалось установить приложение.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Анд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9258f620f306ff21203b2a6f6e52354bb72c11f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3445671af4c05912ebab1655377a3b69b2a554e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933237"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971425"
 ---
 # <a name="list-androiddeviceownercompliancepolicies"></a>Список АндроиддевицеовнеркомплианцеполиЦиес
 
@@ -97,6 +97,7 @@ Content-Length: 1241
   ]
 }
 ```
+
 
 
 
