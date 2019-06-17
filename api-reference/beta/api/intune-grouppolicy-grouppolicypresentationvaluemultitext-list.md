@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Гра
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 904cbd770f72c07c765c4e914965c5e1f993b06b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 802efde25c889b7e68649ede6ed192534bd58823
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904407"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985782"
 ---
 # <a name="list-grouppolicypresentationvaluemultitexts"></a>Список Граупполиципресентатионвалуемултитекстс
 
@@ -43,7 +43,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,6 +78,7 @@ Content-Length: 353
   ]
 }
 ```
+
 
 
 

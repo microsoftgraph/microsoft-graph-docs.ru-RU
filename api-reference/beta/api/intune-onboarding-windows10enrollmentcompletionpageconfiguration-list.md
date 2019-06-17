@@ -4,12 +4,12 @@ description: Список свойств и связей объектов window
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fe9f8a9e814fc023b7c32e4cad3265cd6cc0e92
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c488d3dcb6b1b7d138b1f7cb07b130ff7c3e0759
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899790"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980476"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>Список windows10EnrollmentCompletionPageConfigurations
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -89,6 +89,7 @@ Content-Length: 860
   ]
 }
 ```
+
 
 
 

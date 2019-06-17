@@ -4,12 +4,12 @@ description: Указывает тип состояния выполнения �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 093af5b16854bf65699e469b1afd47fe6b990375
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 43912d24663f21281058636d3eb8a3811b6dbfa0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939842"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986272"
 ---
 # <a name="runstate-enum-type"></a>тип перечисления Рунстате
 
@@ -25,6 +25,7 @@ ms.locfileid: "33939842"
 |unknown|нуль|Неизвестный результат.|
 |success|1,1|Сценарий успешно запущен.|
 |сбой|2|Не удалось выполнить скрипт.|
+
 
 
 

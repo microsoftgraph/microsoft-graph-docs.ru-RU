@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bc32a238e140bb629be723f5292aa077b4a8139
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 44b6f27f0de3a250468ff17f4b2e50cda97471bb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903980"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985985"
 ---
 # <a name="list-iosmanagedappprotections"></a>Перечисление объектов iosManagedAppProtection
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/iosManagedAppProtections
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtection
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3027
+Content-Length: 3088
 
 {
   "value": [
@@ -111,6 +111,7 @@ Content-Length: 3027
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "appDataEncryptionType": "afterDeviceRestart",
@@ -135,6 +136,7 @@ Content-Length: 3027
   ]
 }
 ```
+
 
 
 

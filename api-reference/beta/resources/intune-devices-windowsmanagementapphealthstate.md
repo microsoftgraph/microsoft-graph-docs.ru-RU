@@ -4,12 +4,12 @@ description: Объект состояния работоспособности 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b443c95b363e926777150013e20bef4bc8bc602d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f423521ddd6e00fd887195d841c1e50518d2c428
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942173"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983973"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса Виндовсманажементапфеалсстате
 
@@ -31,14 +31,14 @@ ms.locfileid: "33942173"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|Инсталледверсион|Строка|Установленная версия приложения управления Windows.|
+|Инсталледверсион|String|Установленная версия приложения управления Windows.|
 |Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|Девицеосверсион|Строка|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|Девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "33942173"
   "deviceOSVersion": "String"
 }
 ```
+
 
 
 

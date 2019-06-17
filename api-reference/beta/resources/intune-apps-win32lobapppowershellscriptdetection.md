@@ -4,12 +4,12 @@ description: Содержит свойства скрипта PowerShell для 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440f86e0056c45f325a9a9bd88f737a91c8efb2a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4cc28f3344bf22e263623c068ae93008a20db557
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949677"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987329"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -25,11 +25,11 @@ ms.locfileid: "33949677"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Свойства enforcesignaturecheck|Логический|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Логический|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
-|Скриптконтент|Строка|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
+|Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
+|Скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "33949677"
   "scriptContent": "String"
 }
 ```
+
 
 
 

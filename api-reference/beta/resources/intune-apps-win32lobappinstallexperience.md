@@ -4,12 +4,12 @@ description: Содержит свойства интерфейса устано
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc79e79c3922982f58a39b1f835b936e62d5c400
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9af7042dd9a95ffde1a447b9d047db003415ad4b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949586"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987306"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>Тип ресурса win32LobAppInstallExperience
 
@@ -24,7 +24,7 @@ ms.locfileid: "33949586"
 |:---|:---|:---|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором работает приложение. Возможные значения: `system`, `user`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,6 +40,7 @@ ms.locfileid: "33949586"
   "runAsAccount": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Грау
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28ee836810647582803837f8bdaf3ab975d76974
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 30aee2efa72e1a3bf28d2af4a221975950780e55
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905107"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984816"
 ---
 # <a name="get-grouppolicydefinition"></a>Получение Граупполицидефинитион
 
@@ -49,7 +49,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,6 +84,7 @@ Content-Length: 435
   }
 }
 ```
+
 
 
 

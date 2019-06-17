@@ -4,12 +4,12 @@ description: Создание нового объекта Усерпфксцер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d71812bc1a4e41f01e8353b49a4e656613a8d2b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 10fa84321b9ebc4a3e1c5b78d338b955ae3261e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899734"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988799"
 ---
 # <a name="create-userpfxcertificate"></a>Создание Усерпфксцертификате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userPfxCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Усерпфксцертификате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерпфксцертификате.
@@ -51,16 +51,16 @@ POST /deviceManagement/userPfxCertificates
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|Строка|Отпечаток SHA-1 сертификата PFX.|
+|отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
-|providerName|Строка|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
-|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
+|providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
+|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
 |Паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |Енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|Енкриптедпфкспассворд|Строка|Зашифрованный пароль PFX.|
+|Енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
 
@@ -117,6 +117,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание объекта resourceOperation.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01fb01eda7710abaa080fca559047022d87fa6f6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b2351eeb6f65b1d12dae4fdd6b28eaf525cbdc87
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899538"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988638"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceOperations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта resourceOperation в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта resourceOperation.
@@ -51,11 +51,11 @@ POST /deviceManagement/resourceOperations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|Строка|Категория ресурса, к которой относится данная операция.|
+|resource|String|Категория ресурса, к которой относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|Енабледфорскопевалидатион|Логический|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|Енабледфорскопевалидатион|Boolean|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 
 
@@ -98,6 +98,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

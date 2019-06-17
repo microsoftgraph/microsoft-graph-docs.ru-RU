@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69115ed96bf3092acd037ec553c3250a0c553826
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0556a00c196e3bf1f543ab034ada344dfdeb98d9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951007"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984697"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>тип перечисления Ратингиреландтелевисионтипе
 
@@ -29,6 +29,7 @@ ms.locfileid: "33951007"
 |Йоунгадултс|SP4|Классификация я подходит для аудитории тинаже|
 |Паренталсупервисион|17:00|Классификация PS предлагает родителям и хранителям учитывать доступ детей к ограничениям|
 |обнаружен|6 |Классификация MA подходит для взрослых.|
+
 
 
 

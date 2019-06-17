@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта networkI
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97a5c61e1c4564f52742468f74c06c9aeabc053c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6462bd66fda6de92a7f7a73f9d6407d39f948017
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905247"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984340"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>Получение networkIPv6ConfigurationManagementCondition
 
@@ -47,7 +47,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -92,6 +92,7 @@ Content-Length: 708
   }
 }
 ```
+
 
 
 

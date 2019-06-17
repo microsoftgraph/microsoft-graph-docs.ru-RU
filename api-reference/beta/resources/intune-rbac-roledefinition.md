@@ -4,12 +4,12 @@ description: 'Ресурс "Определение роли". Определен
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f563c405fcfddf30969378a65fc84e86e5c7d203
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dd73618261e4f5d2d30df33493230ba87be09a03
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939968"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993566"
 ---
 # <a name="roledefinition-resource-type"></a>Тип ресурса roleDefinition
 
@@ -40,7 +40,7 @@ ms.locfileid: "33939968"
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |roleAssignments|Коллекция объектов [roleAssignment](../resources/intune-rbac-roleassignment.md)|Список назначений ролей для определения роли.|
@@ -104,6 +104,7 @@ ms.locfileid: "33939968"
   ]
 }
 ```
+
 
 
 

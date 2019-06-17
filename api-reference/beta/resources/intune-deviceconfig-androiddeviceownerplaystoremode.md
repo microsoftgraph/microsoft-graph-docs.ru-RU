@@ -4,12 +4,12 @@ description: Тип режима хранения "владелец устрой
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d37f57dc2481e18871fca840499142eda30ab8fd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e3f13a942c5b678367262400aeeea9c80ed705b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949005"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983808"
 ---
 # <a name="androiddeviceownerplaystoremode-enum-type"></a>тип перечисления Андроиддевицеовнерплайсторемоде
 
@@ -25,6 +25,7 @@ ms.locfileid: "33949005"
 |notConfigured|нуль|Not Configured|
 |Алловлист|1,1|С устройства будут автоматически удалены только приложения, наявляющиеся в политике, а все приложения, не включенные в политику.|
 |Блокклист|2|Все приложения доступны, и любое приложение, которое не должно находиться на устройстве, должно быть явно отмечено как ЗАБЛОКИРОВАНо в политике приложений.|
+
 
 
 
