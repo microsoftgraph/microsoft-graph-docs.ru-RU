@@ -4,12 +4,12 @@ description: Возможные значения для уровня безоп�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0beec74634a02c78bdc737f75ce9172e297372b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f1669ed00f10cad1ccf597a1de2f1d35d818dc17
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946569"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988358"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>тип перечисления Интернетситесекуритилевел
 
@@ -26,6 +26,7 @@ ms.locfileid: "33946569"
 |medium|1,1|Средний.|
 |Медиумхигх|2|Умеренно высокий.|
 |высокоуровневых|4|Высокоуровневых.|
+
 
 
 

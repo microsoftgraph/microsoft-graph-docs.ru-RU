@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9579f087324362db640ac4ae60bd6a78ae82cb0a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5d8163f08754ee2ab91af8b652706853b540e9c0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941420"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989702"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>тип перечисления Виндовсаутопилотсинкстатус
 
@@ -26,6 +26,7 @@ ms.locfileid: "33941420"
 |inProgress|1,1|Выполняется синхронизация|
 |готовы|2|Синхронизация завершена.|
 |сбоев|4|Ошибка синхронизации.|
+
 
 
 

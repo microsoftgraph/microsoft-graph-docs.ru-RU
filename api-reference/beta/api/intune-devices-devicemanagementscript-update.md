@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceManagement
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dc0554456be285f8f6306bfa52033e851164874
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a8cb1b6978922f99ae357cabe7fbc6d19a58fa2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909906"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959042"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -43,8 +43,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).
 
@@ -58,10 +58,10 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 
 
@@ -122,6 +122,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

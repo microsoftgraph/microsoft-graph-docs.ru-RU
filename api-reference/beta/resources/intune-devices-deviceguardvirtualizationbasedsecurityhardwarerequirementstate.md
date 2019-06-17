@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06688388c75bbd0abb03380f29750a86059819bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e9d6ef35e5996e823e80387346aa5e7a6337d7fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942089"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983080"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате
 
@@ -25,8 +25,9 @@ ms.locfileid: "33942089"
 |Мисардваререкуирементс|нуль|Система соответствует требованиям к конфигурации оборудования|
 |Секуребутрекуиред|1,1|Необходима безопасная загрузка|
 |Дмапротектионрекуиред|2|Необходима защита DMA|
-|Хипервнотсуппортедфоргуествм|SP4|HyperV не поддерживается для гостевой ВИРТУАЛЬНОЙ машины|
+|Хипервнотсуппортедфоргуествм|SP4|HyperV не поддерживается для гостевой виртуальной машины|
 |Хипервнотаваилабле|8 |Функция HyperV недоступна|
+
 
 
 

@@ -4,12 +4,12 @@ description: Включенные клиентом функции диспетч
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37c098910ec532a1ab23ae8464c03e43cf7a9e29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fcee21d1d6d9047b273b539ec10d3cfa63c2e3ce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943041"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983227"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
@@ -22,16 +22,16 @@ ms.locfileid: "33943041"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|inventory|Логический|Управляет ли Intune данными инвентаризации|
-|modernApps|Логический|Управляет ли Intune современным приложением|
-|resourceAccess|Логический|Управляет ли Intune доступом к ресурсам|
-|deviceConfiguration|Логический|Управляет ли Intune конфигурацией устройства|
-|compliancePolicy|Логический|Управляется ли Intune политикой соответствия требованиям|
+|inventory|Boolean|Управляет ли Intune данными инвентаризации|
+|modernApps|Boolean|Управляет ли Intune современным приложением|
+|resourceAccess|Boolean|Управляет ли Intune доступом к ресурсам|
+|deviceConfiguration|Boolean|Управляет ли Intune конфигурацией устройства|
+|compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
-|Ендпоинтпротектион|Логический|Управляет ли Intune Endpoint Protection|
-|Оффицеаппс|Логический|Управляет ли Intune приложением Office|
+|Ендпоинтпротектион|Boolean|Управляет ли Intune Endpoint Protection|
+|Оффицеаппс|Boolean|Управляет ли Intune приложением Office|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "33943041"
   "officeApps": true
 }
 ```
+
 
 
 

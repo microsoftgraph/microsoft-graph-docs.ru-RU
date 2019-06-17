@@ -4,12 +4,12 @@ description: Удаляет объект Макосвификонфигурат�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef80485f2087acae15d10b791353970c15c9e6e6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0589b0385569b3d3e012d5d99d3eb1defc2407b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922264"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976514"
 ---
 # <a name="delete-macoswificonfiguration"></a>Удаление Макосвификонфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

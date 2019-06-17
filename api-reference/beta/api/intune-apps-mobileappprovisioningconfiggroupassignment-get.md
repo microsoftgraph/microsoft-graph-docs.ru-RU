@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта К mobil
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6768d0344d97963b69710b71659448540411631
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 398c16ab82e92a0ac9a986c979c123fa6f3cdeef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935043"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973693"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>Получение К mobileappprovisioningconfiggroupassignment.
 
@@ -75,6 +75,7 @@ Content-Length: 203
   }
 }
 ```
+
 
 
 

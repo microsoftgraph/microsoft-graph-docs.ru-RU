@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73dfbc0d80186cd83ec20fec15a154594d027ad3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 72a595e0dfa3bb7533f1c017818138edafa3e944
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942159"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986587"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Тип ресурса windowsDeviceAzureADAccount
 
@@ -28,7 +28,7 @@ ms.locfileid: "33942159"
 |password|Строка|Н/Д Наследуется от ресурса [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |userPrincipalName|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,7 @@ ms.locfileid: "33942159"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

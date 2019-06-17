@@ -4,12 +4,12 @@ description: Объект, содержащий подробные сведен�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a50c749e6c6c6ddd59705bbea34f0bbd2488f9a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4759665d96940d806e283cd5b59caed7fee63d32
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939786"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988197"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 
@@ -24,11 +24,11 @@ ms.locfileid: "33939786"
 |:---|:---|:---|
 |контекст|String|Пока не задокументировано.|
 |Failure|String|Пока не задокументировано.|
-|Фаилуредетаилс|Строка|Подробное описание того, что пошло не так.|
-|исправления|Строка|Подробное описание этой проблемы.|
+|Фаилуредетаилс|String|Подробное описание того, что пошло не так.|
+|исправления|String|Подробное описание этой проблемы.|
 |resources|Коллекция [девицеманажементтраублешутинжеррорресаурце](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этой ошибке.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "33939786"
   ]
 }
 ```
+
 
 
 

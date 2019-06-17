@@ -4,12 +4,12 @@ description: Удаляет объект mdmWindowsInformationProtectionPolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51d16257ba0408d2b1f49d342d3634154b9554f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5da7a02ab6e0b56075fa166c7118009e22fd6283
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903223"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987105"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicy"></a>Удаление объекта mdmWindowsInformationProtectionPolicy
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mdmWindowsInformatio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

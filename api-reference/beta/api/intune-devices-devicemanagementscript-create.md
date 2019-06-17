@@ -4,12 +4,12 @@ description: Создание нового объекта deviceManagementScript
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a58b0d4f957dc6cdfc98c58449c2b12dfba19397
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b7a986165fdd454ed5bec2521088bd8a1360511e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910046"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959075"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementScripts
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceManagementScript в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании deviceManagementScript.
@@ -58,10 +58,10 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 
 
@@ -122,6 +122,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

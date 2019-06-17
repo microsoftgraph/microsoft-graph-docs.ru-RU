@@ -4,12 +4,12 @@ description: Объект termsAndConditionsAcceptanceStatus представл�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6381f40f5b9abea76da84930894f83d3da8fb3c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 967e64dc4182dc78abf85ad1b3dfd6a398f82dac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949152"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987707"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Тип ресурса termsAndConditionsAcceptanceStatus
 
@@ -36,7 +36,7 @@ ms.locfileid: "33949152"
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|
@@ -58,6 +58,7 @@ ms.locfileid: "33949152"
   "acceptedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

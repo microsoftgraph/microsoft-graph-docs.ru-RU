@@ -4,12 +4,12 @@ description: Параметры прокси-сервера Wi-Fi.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3742ca60ab2b096e0fd5bf57f27cb155729996a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 96f2fec5e9c9ef11ed358352fabbd2396be7fa52
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944427"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991550"
 ---
 # <a name="wifiproxysetting-enum-type"></a>тип перечисления Вифипроксисеттинг
 
@@ -25,6 +25,7 @@ ms.locfileid: "33944427"
 |none|нуль|Нет прокси-сервера.|
 |Вручную|1,1|Параметры прокси-сервера вручную через адрес и порт.|
 |Автоматически|2|Параметры автоматического прокси-сервера с помощью URL-адреса.|
+
 
 
 

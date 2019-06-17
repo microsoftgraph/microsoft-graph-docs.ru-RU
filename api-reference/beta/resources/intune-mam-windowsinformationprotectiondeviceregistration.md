@@ -4,12 +4,12 @@ description: Представляет записи регистрации уст
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39d6d17109b4de5e1a3025bd66ae6f07ccafe56c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c72a094178bbd34849b8a870566c549f5eea37e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940591"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994491"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>Тип ресурса Виндовсинформатионпротектиондевицерегистратион
 
@@ -37,10 +37,10 @@ ms.locfileid: "33940591"
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
-|Девицемакаддресс|Строка|Mac-адрес устройства.|
+|Девицемакаддресс|String|Mac-адрес устройства.|
 |Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,6 +63,7 @@ ms.locfileid: "33940591"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

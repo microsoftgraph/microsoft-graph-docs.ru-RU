@@ -4,12 +4,12 @@ description: Тип файла или определения групповой 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be51705fdf1b82614269e34bd18bc1217384e41c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aea113d0ec527349f583f645a30231169cd64234
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940976"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986020"
 ---
 # <a name="grouppolicytype-enum-type"></a>тип перечисления Граупполицитипе
 
@@ -24,6 +24,7 @@ ms.locfileid: "33940976"
 |:---|:---|:---|
 |Адмксбаккед|нуль|Административные шаблоны групповой политики, встроенные в поставщика службы настройки политик (CSP).|
 |Адмксинжестед|1,1|Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
+
 
 
 

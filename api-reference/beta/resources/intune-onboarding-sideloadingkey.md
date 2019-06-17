@@ -4,12 +4,12 @@ description: Объект Сиделоадингкэй требуется для
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c09cdc1bc620c6f6882abeeae29c7e00613254b1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c4da3030c9c9a4a858e7ebcac0f7435a247672d1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940143"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958601"
 ---
 # <a name="sideloadingkey-resource-type"></a>Тип ресурса Сиделоадингкэй
 
@@ -31,14 +31,14 @@ ms.locfileid: "33940143"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
+|id|String|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
 |displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
 |description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |Тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|Строка|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "33940143"
   "lastUpdatedDateTime": "String"
 }
 ```
+
 
 
 

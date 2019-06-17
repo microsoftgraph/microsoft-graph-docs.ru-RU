@@ -4,12 +4,12 @@ description: Отзыв назначенной лицензии на устро�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f0ccbfdd293fb84a9d32c78a51d9e71be8dd0ab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5bc18f59a880eea7fe8e71f91cf018ae7925a066
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936485"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965958"
 ---
 # <a name="revokedevicelicense-action"></a>Действие revokeAllLicenses
 
@@ -52,8 +52,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Манажеддевицеид|Строка|DeviceId, для которого назначена лицензия на приложение|
-|Нотифиманажеддевицес|Логический|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|Манажеддевицеид|String|DeviceId, для которого назначена лицензия на приложение|
+|Нотифиманажеддевицес|Boolean|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 
@@ -81,6 +81,7 @@ Content-length: 85
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Уровни защиты от угроз для устройств
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c60b9f2775fdad7bc9f1f2fa3ae18992fc2e4757
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 895e8bd056c688ed26ba5fe57c688c66ab6ac846
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946905"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989961"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>тип перечисления Девицесреатпротектионлевел
 
@@ -28,6 +28,7 @@ ms.locfileid: "33946905"
 |medium|4|Требования к уровню защиты от угроз устройств: Medium. Medium — это серьезность угрозы, которая создает умеренный риск для данных устройства или устройства.|
 |высокоуровневых|SP4|Требование к уровню защиты от угроз для устройства: высокое. High — это серьезность угрозы, которая создает серьезный риск для данных устройства или устройства.|
 |Принимать|10 |Требование к уровню защиты от угроз для устройства: не задано. Не задано указывает на то, что устройство не должно соответствовать уровню защиты от угроз.|
+
 
 
 

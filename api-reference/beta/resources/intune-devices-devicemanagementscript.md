@@ -4,12 +4,12 @@ description: Intune предоставит клиенту возможность
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 649ecb29aa3ff18960e858fc86a0f9fae316b13c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f4132aa55abc495dbd36a96714c3405e1445b42c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942061"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983017"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
@@ -40,12 +40,12 @@ Intune предоставит клиенту возможность запуск
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список назначений групп для сценария управления устройствами.|
@@ -83,6 +83,7 @@ Intune предоставит клиенту возможность запуск
   "runAs32Bit": true
 }
 ```
+
 
 
 
