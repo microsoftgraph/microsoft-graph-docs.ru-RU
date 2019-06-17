@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7eb98c9c77c5bc8cecef7994fd2913111bd913fb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 23dde137a74a408dc62848ba780fe28b86a2d3e0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915763"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960043"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Обновление Девицеманажементинтентусерстатесуммари
 
@@ -43,14 +43,14 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор|
+|id|String|Идентификатор|
 |conflictCount|Int32|Количество пользователей в конфликте|
 |errorCount|Int32|Количество пользователей с ошибками|
 |failedCount|Int32|Количество пользователей с ошибками|
@@ -98,6 +98,7 @@ Content-Length: 247
   "successCount": 12
 }
 ```
+
 
 
 

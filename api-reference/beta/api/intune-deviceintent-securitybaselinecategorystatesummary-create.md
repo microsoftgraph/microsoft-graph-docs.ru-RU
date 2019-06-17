@@ -4,12 +4,12 @@ description: Создание нового объекта Секуритибас
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f83ff127c6e65fda09362bef6637b9ad9b60bef4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: edff9cdb1cf0a31fc7273c4c736195bf084a5aa1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33957077"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959616"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>Создание Секуритибаселинекатегористатесуммари
 
@@ -104,6 +104,7 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

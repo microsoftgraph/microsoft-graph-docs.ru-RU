@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Тер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a65616d8b18f057d1017369ab5bb3b2e0f7346ef
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ee36139d51e098335ed225bdd54d42193f135619
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933734"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971803"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Список Термсандкондитионсграупассигнментс
 
@@ -74,6 +74,7 @@ Content-Length: 214
   ]
 }
 ```
+
 
 
 

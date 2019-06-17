@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Сек
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec7632e2c51b7202489d1f9faa981cdd33d78889
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fe7df266a741f87dc54eba724a7d2d39097527d8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33957074"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959574"
 ---
 # <a name="list-securitybaselinecategorystatesummaries"></a>Список Секуритибаселинекатегористатесуммариес
 
@@ -80,6 +80,7 @@ Content-Length: 379
   ]
 }
 ```
+
 
 
 

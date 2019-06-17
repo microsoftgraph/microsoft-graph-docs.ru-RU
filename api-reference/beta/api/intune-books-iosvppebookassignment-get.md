@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта iosVppEB
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd0f6ce03efe22e34f97bc85ec0a373119715c2b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1df5c7222cba2eaea027dea364f10ca0fb439502
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934259"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972369"
 ---
 # <a name="get-iosvppebookassignment"></a>Get iosVppEBookAssignment
 
@@ -78,6 +78,7 @@ Content-Length: 273
   }
 }
 ```
+
 
 
 

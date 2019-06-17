@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Секу
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cbd42d4d1eb120b5ab50af3d214aecb0b102ef5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 92a1707ce5588860379134f0e82ac2f0e11733b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33911730"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959427"
 ---
 # <a name="get-securitybaselinetemplate"></a>Получение Секуритибаселинетемплате
 
@@ -47,7 +47,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagemen
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 314
+Content-Length: 420
 
 {
   "value": {
@@ -76,10 +76,13 @@ Content-Length: 314
     "description": "Description value",
     "versionInfo": "Version Info value",
     "isDeprecated": true,
-    "intentCount": 11
+    "intentCount": 11,
+    "templateType": "specializedDevices",
+    "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект Андроидманажедсторе�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc0f2431ba512cf9e5fe38d9b37e9f8bbb4498bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d1740ce7f28bcdec5e1162672f86b6dbe1e7da41
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937269"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966301"
 ---
 # <a name="delete-androidmanagedstoreapp"></a>Удаление Андроидманажедстореапп
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

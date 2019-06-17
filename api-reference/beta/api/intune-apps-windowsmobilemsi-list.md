@@ -4,12 +4,12 @@ description: Список свойств и связей объектов window
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95a07eeec1387808f34d99c5346c6b779c0cf303
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 52e1fe2a447a79883e5c8168a880e661e9b50ce2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934672"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973140"
 ---
 # <a name="list-windowsmobilemsis"></a>Перечисление объектов windowsMobileMSI
 
@@ -105,6 +105,7 @@ Content-Length: 1407
   ]
 }
 ```
+
 
 
 

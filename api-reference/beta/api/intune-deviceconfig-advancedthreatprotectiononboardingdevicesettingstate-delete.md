@@ -4,12 +4,12 @@ description: Удаляет объект Адванцедсреатпротек�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdb811144ba5ccf32083a32336b88545be5c6ef3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 621b3d2801c54d7b3ef124b4120f6b7f1333d850
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933377"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971740"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>Удаление Адванцедсреатпротектиононбоардингдевицесеттингстате
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

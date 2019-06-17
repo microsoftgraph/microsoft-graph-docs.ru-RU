@@ -4,12 +4,12 @@ description: Содержит свойства бизнес-приложения
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c4ee0802b6e6029d6c49672736e77a89f5346a0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 46e84e629f7664f8a5ab33eaa9db6bbc95fd80bc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950286"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957761"
 ---
 # <a name="macoslobchildapp-resource-type"></a>Тип ресурса Макослобчилдапп
 
@@ -24,9 +24,9 @@ ms.locfileid: "33950286"
 |:---|:---|:---|
 |bundleId|String|Имя удостоверения.|
 |buildNumber|String|Номер сборки бизнес-приложения MacOS бизнес (LoB).|
-|versionNumber|Строка|Номер версии приложения MacOS для бизнеса (LoB).|
+|versionNumber|String|Номер версии приложения MacOS для бизнеса (LoB).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "33950286"
   "versionNumber": "String"
 }
 ```
+
 
 
 

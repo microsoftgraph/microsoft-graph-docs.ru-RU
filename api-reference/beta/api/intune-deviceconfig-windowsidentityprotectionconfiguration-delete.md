@@ -4,12 +4,12 @@ description: Удаляет объект Виндовсидентитипрот�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fb08d2f8c08e847d68662e29f4a24a4cc136222
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 73f555dfab2b126de7cc96a12e6ff345b577c1f1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917879"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961884"
 ---
 # <a name="delete-windowsidentityprotectionconfiguration"></a>Удаление Виндовсидентитипротектионконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

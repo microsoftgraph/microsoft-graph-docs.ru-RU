@@ -4,12 +4,12 @@ description: Содержит свойства для минимальной в�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 998c7a1214fb05596d4f851f7883be514d368e88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 546b63ee0b713e83c90fed8fcabdd4d9382a0740
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950440"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991207"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -22,13 +22,13 @@ ms.locfileid: "33950440"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v8_0|Логический|Версия 8.0 или выше.|
-|v9_0|Логический|Версия 9.0 или выше.|
-|v10_0|Логический|Версия 10.0 или выше.|
+|v8_0|Boolean|Версия 8.0 или выше.|
+|v9_0|Boolean|Версия 9.0 или выше.|
+|v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Логический|Версия 12,0 или более поздняя.|
+|v12_0|Boolean|Версия 12,0 или более поздняя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,7 @@ ms.locfileid: "33950440"
   "v12_0": true
 }
 ```
+
 
 
 

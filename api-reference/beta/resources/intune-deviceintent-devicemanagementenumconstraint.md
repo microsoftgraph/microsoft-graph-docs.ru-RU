@@ -4,12 +4,12 @@ description: Ограничение, которое задает значени�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2979f189921c0c9e7240cc5287a072b27e12b96e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 64c07f663d034cf6fa758155294730015ca6e3b4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943433"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964103"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>Тип ресурса Девицеманажементенумконстраинт
 
@@ -27,7 +27,7 @@ ms.locfileid: "33943433"
 |:---|:---|:---|
 |values|Коллекция [девицеманажементенумвалуе](../resources/intune-deviceintent-devicemanagementenumvalue.md)|Список допустимых значений для этой строки|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "33943433"
   ]
 }
 ```
+
 
 
 

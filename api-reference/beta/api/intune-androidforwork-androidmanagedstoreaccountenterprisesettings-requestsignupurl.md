@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d5ac6e1e169dd425215fe1be80972eb4bd43f44
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3af497aadfadc37133a6d3c7d620df58742fa2c8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938974"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965482"
 ---
 # <a name="requestsignupurl-action"></a>Действие requestSignupUrl
 
@@ -83,6 +83,7 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
+
 
 
 

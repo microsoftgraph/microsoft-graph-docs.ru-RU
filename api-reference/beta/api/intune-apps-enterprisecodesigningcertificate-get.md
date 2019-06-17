@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Енте
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9571141b968e5fa93962c4a935c21065fb3c0dac
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8794c38f0cfba00820b0f7eece0cbe1861b65f62
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33937031"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965174"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>Получение Ентерприсекодесигнингцертификате
 
@@ -82,6 +82,7 @@ Content-Length: 478
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Карттокл
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6f382315d1932d275936be14071af7bf2025060c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928010"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968758"
 ---
 # <a name="update-carttoclassassociation"></a>Обновление КарттоклассассоЦиатион
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [КарттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в формате JSON.
+В тексте запроса добавьте представление объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md).
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

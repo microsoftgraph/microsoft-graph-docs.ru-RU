@@ -4,12 +4,12 @@ description: Список свойств и связей объектов iosVpp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c34a6d7fb0cda89c6d878139a539e4bdad8494f6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5b990adc2b9d6b517a20970a8c02003a6233ff59
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934287"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972367"
 ---
 # <a name="list-iosvppebookassignments"></a>Перечисление объектов iosVppEBookAssignment
 
@@ -77,6 +77,7 @@ Content-Length: 299
   ]
 }
 ```
+
 
 
 
