@@ -4,12 +4,12 @@ description: Создание нового объекта Андроиддеви
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc0b623ecbe699190ee3e86acd87bf3959cbb06f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 09d963044791e6f501363fcf557bee7114c2efd6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938739"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966651"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Создание Андроиддевицеовнеренроллментпрофиле
 
@@ -50,13 +50,13 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accountId|Строка|GUID клиента, которому принадлежит профиль регистрации.|
+|accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|Строка|Уникальный GUID профиля регистрации.|
 |displayName|Строка|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
-|tokenValue|Строка|Значение последнего созданного маркера для этого профиля регистрации.|
+|tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
 |Токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
@@ -122,6 +122,7 @@ Content-Length: 737
   }
 }
 ```
+
 
 
 

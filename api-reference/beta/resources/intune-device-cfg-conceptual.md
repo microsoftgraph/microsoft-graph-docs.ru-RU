@@ -4,18 +4,18 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949166"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965859"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Используйте рабочую нагрузку для настройки устройств Microsoft Intune для управления параметрами и компонентами всех устройств, которыми вы управляете.
 
@@ -90,6 +90,7 @@ ms.locfileid: "33949166"
 - [Конфигурация VPN для рабочего профиля Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Тип VPN-подключения для рабочего профиля Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Конфигурация Wi-Fi для рабочего профиля Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [Тип элемента управления установкой приложения](intune-deviceconfig-appinstallcontroltype.md)
 - [Элемент списка приложений](intune-deviceconfig-applistitem.md)
 - [Тип списка приложений](intune-deviceconfig-applisttype.md)
 - [Тип управления для приложения AppLocker](intune-deviceconfig-applockerapplicationcontroltype.md)
@@ -115,6 +116,7 @@ ms.locfileid: "33949166"
 - [Статус отзыва сертификатов](intune-deviceconfig-certificaterevocationstatus.md)
 - [Хранилище сертификатов](intune-deviceconfig-certificatestore.md)
 - [Шкала срока действия сертификата](intune-deviceconfig-certificatevalidityperiodscale.md)
+- [Разрешение на изменение параметров UEFI](intune-deviceconfig-changeuefisettingspermission.md)
 - [Использование конфигурации](intune-deviceconfig-configurationusage.md)
 - [Альтернативное имя настраиваемого субъекта](intune-deviceconfig-customsubjectalternativename.md)
 - [День недели](intune-deviceconfig-dayofweek.md)
@@ -171,6 +173,10 @@ ms.locfileid: "33949166"
 - [Тип ресурса deviceConfigurationUserStateSummary](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Состояние пользователей, касающееся конфигураций устройств](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Тип защиты учетных данных для местного системного центра в Device Guard](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Режим устройства для правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)
+- [Правило применимости управления устройствами для ОС OS Edition](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
+- [Версия ОС правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
+- [Тип правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
 - [Производный поставщик учетных данных для управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
 - [Тип уведомления о получении учетных данных для управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
 - [Параметры производных учетных данных управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
@@ -273,11 +279,13 @@ ms.locfileid: "33949166"
 - [Тип ресурса iosUpdateDeviceStatus](intune-deviceconfig-iosupdatedevicestatus.md)
 - [Состояние установки обновлений iOS](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [Конфигурация VPN для iOS](intune-deviceconfig-iosvpnconfiguration.md)
+- [параметры сопоставления безопасности VPN для iOS](intune-deviceconfig-iosvpnsecurityassociationparameters.md)
 - [место отображения фонового рисунка iOS](intune-deviceconfig-ioswallpaperdisplaylocation.md)
 - [Автофильтр Фильтра веб-контента iOS ](intune-deviceconfig-ioswebcontentfilterautofilter.md)
 - [Фильтр веб-контента iOS: базовый](intune-deviceconfig-ioswebcontentfilterbase.md)
 - [Фильтр веб-контента iOS: доступ к отдельным сайтам](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [Конфигурация Wi-Fi для iOS](intune-deviceconfig-ioswificonfiguration.md)
+- [Конфигурация VPN EV2 Иосик](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Размер ключа](intune-deviceconfig-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-deviceconfig-keystorageprovideroption.md)
 - [Использование ключей](intune-deviceconfig-keyusages.md)
@@ -297,6 +305,7 @@ ms.locfileid: "33949166"
 - [Конфигурация защиты конечных точек macOS](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [Конфигурация корпоративной сети Wi-Fi для macOS](intune-deviceconfig-macosenterprisewificonfiguration.md)
 - [Конфигурация расширений macOS](intune-deviceconfig-macosextensionsconfiguration.md)
+- [типы ключей восстановления хранилища файлов macOS](intune-deviceconfig-macosfilevaultrecoverykeytypes.md)
 - [Приложение брандмауэра macOS](intune-deviceconfig-macosfirewallapplication.md)
 - [Источники приложений для macOS Gatekeeper](intune-deviceconfig-macosgatekeeperappsources.md)
 - [Общая конфигурация устройств с macOS](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
@@ -362,6 +371,7 @@ ms.locfileid: "33949166"
 - [Нарушение правил для ограниченных приложений](intune-deviceconfig-restrictedappsviolation.md)
 - [Тип фильтра для безопасного поиска](intune-deviceconfig-safesearchfiltertype.md)
 - [Тип учетной записи для безопасной оценки](intune-deviceconfig-secureassessmentaccounttype.md)
+- [Безопасная загрузка с типом d m](intune-deviceconfig-securebootwithdmatype.md)
 - [Тип запуска службы](intune-deviceconfig-servicestarttype.md)
 - [Источник параметра](intune-deviceconfig-settingsource.md)
 - [Объект settingStateDeviceSummary](intune-deviceconfig-settingstatedevicesummary.md)
@@ -385,7 +395,12 @@ ms.locfileid: "33949166"
 - [Источник имени пользователя](intune-deviceconfig-usernamesource.md)
 - [Параметр видимости](intune-deviceconfig-visibilitysetting.md)
 - [Метод проверки подлинности VPN](intune-deviceconfig-vpnauthenticationmethod.md)
+- [Тип проверки подлинности VPN-клиента](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [Частота обнаружения недоставленных узлов VPN](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [Правило DNS VPN](intune-deviceconfig-vpndnsrule.md)
+- [Тип алгоритма шифрования VPN](intune-deviceconfig-vpnencryptionalgorithmtype.md)
+- [Тип алгоритма проверки целостности VPN](intune-deviceconfig-vpnintegrityalgorithmtype.md)
+- [Локальный идентификатор VPN](intune-deviceconfig-vpnlocalidentifier.md)
 - [Правило для VPN по запросу](intune-deviceconfig-vpnondemandrule.md)
 - [Действие при подключении правила для VPN по запросу](intune-deviceconfig-vpnondemandruleconnectionaction.md)
 - [Действие домена при подключении правила для VPN по запросу](intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)
@@ -393,6 +408,7 @@ ms.locfileid: "33949166"
 - [Прокси-сервер VPN](intune-deviceconfig-vpnproxyserver.md)
 - [Маршрут VPN](intune-deviceconfig-vpnroute.md)
 - [VPN-сервер](intune-deviceconfig-vpnserver.md)
+- [Тип сертификата VPN-сервера](intune-deviceconfig-vpnservercertificatetype.md)
 - [Правило трафика VPN](intune-deviceconfig-vpntrafficrule.md)
 - [Тип приложения для правила трафика VPN](intune-deviceconfig-vpntrafficruleapptype.md)
 - [Тип политики маршрутизации для правила трафика VPN](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
@@ -409,6 +425,8 @@ ms.locfileid: "33949166"
 - [База профилей сертификатов для Windows 10](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Политика соответствия требованиям для Windows 10](intune-deviceconfig-windows10compliancepolicy.md)
 - [Специальная конфигурация для Windows 10](intune-deviceconfig-windows10customconfiguration.md)
+- [Интерфейс конфигурации встроенного по устройства Windows 10](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Тип устройства с Windows 10](intune-deviceconfig-windows10devicemodetype.md)
 - [Конфигурация профиля электронной почты EAS для Windows 10](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Тип выпуска Windows 10](intune-deviceconfig-windows10editiontype.md)
 - [Конфигурация Windows 10 Endpoint Protection](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -494,4 +512,4 @@ ms.locfileid: "33949166"
 - [Конфигурация VPN для Windows](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
-- [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Конфигурация EAP для предприятия Windows Wi – Fi](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

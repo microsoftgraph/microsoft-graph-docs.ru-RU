@@ -4,12 +4,12 @@ description: Список свойств и связей объектов androi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 329780982f0352c6f15c9e6bf44e43110abc688a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7f46508216bb4e0ce7041f1c7b11e0defc2310f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938988"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966525"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Перечисление объектов androidForWorkEnrollmentProfile
 
@@ -87,6 +87,7 @@ Content-Length: 765
   ]
 }
 ```
+
 
 
 

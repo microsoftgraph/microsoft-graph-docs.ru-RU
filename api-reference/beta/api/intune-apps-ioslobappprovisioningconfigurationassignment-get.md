@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Иосл
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7944fcaf7a89c35ff1806a04c42e3f7a1116f98a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e2d26268a2907c7f62c7727c79fd413341732bb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936947"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34965027"
 ---
 # <a name="get-ioslobappprovisioningconfigurationassignment"></a>Получение Иослобапппровисионингконфигуратионассигнмент
 
@@ -77,6 +77,7 @@ Content-Length: 262
   }
 }
 ```
+
 
 
 

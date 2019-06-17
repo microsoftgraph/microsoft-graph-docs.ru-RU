@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта iosStore
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 460921b1d042b8ef74a866030398eced2884ea6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 23a66450ff1e982c8e88f0ec8b066222cd4f9265
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33936954"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966063"
 ---
 # <a name="get-iosstoreapp"></a>Get iosStoreApp
 
@@ -114,6 +114,7 @@ Content-Length: 1411
   }
 }
 ```
+
 
 
 
