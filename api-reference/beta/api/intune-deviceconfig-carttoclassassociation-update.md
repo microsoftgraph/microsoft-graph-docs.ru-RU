@@ -4,31 +4,31 @@ description: Обновление свойств объекта Карттокл
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6f382315d1932d275936be14071af7bf2025060c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33928010"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968758"
 ---
-# <a name="update-carttoclassassociation"></a><span data-ttu-id="ea697-103">Обновление КарттоклассассоЦиатион</span><span class="sxs-lookup"><span data-stu-id="ea697-103">Update cartToClassAssociation</span></span>
+# <a name="update-carttoclassassociation"></a><span data-ttu-id="514a7-103">Обновление КарттоклассассоЦиатион</span><span class="sxs-lookup"><span data-stu-id="514a7-103">Update cartToClassAssociation</span></span>
 
-> <span data-ttu-id="ea697-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea697-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="514a7-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="514a7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ea697-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ea697-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="514a7-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="514a7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ea697-106">Обновление свойств объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .</span><span class="sxs-lookup"><span data-stu-id="ea697-106">Update the properties of a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.</span></span>
+<span data-ttu-id="514a7-106">Обновление свойств объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .</span><span class="sxs-lookup"><span data-stu-id="514a7-106">Update the properties of a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ea697-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="ea697-107">Prerequisites</span></span>
-<span data-ttu-id="ea697-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea697-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="514a7-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="514a7-107">Prerequisites</span></span>
+<span data-ttu-id="514a7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="514a7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea697-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ea697-110">Permission type</span></span>|<span data-ttu-id="ea697-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ea697-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="514a7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="514a7-110">Permission type</span></span>|<span data-ttu-id="514a7-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="514a7-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ea697-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ea697-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ea697-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea697-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="ea697-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ea697-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ea697-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea697-115">Not supported.</span></span>|
-|<span data-ttu-id="ea697-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ea697-116">Application</span></span>|<span data-ttu-id="ea697-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea697-117">Not supported.</span></span>|
+|<span data-ttu-id="514a7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="514a7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="514a7-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="514a7-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="514a7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="514a7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="514a7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="514a7-115">Not supported.</span></span>|
+|<span data-ttu-id="514a7-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="514a7-116">Application</span></span>|<span data-ttu-id="514a7-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="514a7-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ea697-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ea697-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="514a7-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="514a7-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,37 +37,37 @@ ms.locfileid: "33928010"
 PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ea697-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ea697-119">Request headers</span></span>
-|<span data-ttu-id="ea697-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ea697-120">Header</span></span>|<span data-ttu-id="ea697-121">Значение</span><span class="sxs-lookup"><span data-stu-id="ea697-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="514a7-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="514a7-119">Request headers</span></span>
+|<span data-ttu-id="514a7-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="514a7-120">Header</span></span>|<span data-ttu-id="514a7-121">Значение</span><span class="sxs-lookup"><span data-stu-id="514a7-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ea697-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ea697-122">Authorization</span></span>|<span data-ttu-id="ea697-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ea697-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ea697-124">Accept</span><span class="sxs-lookup"><span data-stu-id="ea697-124">Accept</span></span>|<span data-ttu-id="ea697-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ea697-125">application/json</span></span>|
+|<span data-ttu-id="514a7-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="514a7-122">Authorization</span></span>|<span data-ttu-id="514a7-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="514a7-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="514a7-124">Accept</span><span class="sxs-lookup"><span data-stu-id="514a7-124">Accept</span></span>|<span data-ttu-id="514a7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="514a7-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ea697-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ea697-126">Request body</span></span>
-<span data-ttu-id="ea697-127">В тексте запроса добавьте представление объекта [КарттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ea697-127">In the request body, supply a JSON representation for the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="514a7-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="514a7-126">Request body</span></span>
+<span data-ttu-id="514a7-127">В тексте запроса добавьте представление объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="514a7-127">In the request body, supply a JSON representation for the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.</span></span>
 
-<span data-ttu-id="ea697-128">В следующей таблице приведены свойства, необходимые при создании [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md).</span><span class="sxs-lookup"><span data-stu-id="ea697-128">The following table shows the properties that are required when you create the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).</span></span>
+<span data-ttu-id="514a7-128">В следующей таблице приведены свойства, необходимые при создании [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md).</span><span class="sxs-lookup"><span data-stu-id="514a7-128">The following table shows the properties that are required when you create the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).</span></span>
 
-|<span data-ttu-id="ea697-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="ea697-129">Property</span></span>|<span data-ttu-id="ea697-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ea697-130">Type</span></span>|<span data-ttu-id="ea697-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ea697-131">Description</span></span>|
+|<span data-ttu-id="514a7-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="514a7-129">Property</span></span>|<span data-ttu-id="514a7-130">Тип</span><span class="sxs-lookup"><span data-stu-id="514a7-130">Type</span></span>|<span data-ttu-id="514a7-131">Описание</span><span class="sxs-lookup"><span data-stu-id="514a7-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ea697-132">id</span><span class="sxs-lookup"><span data-stu-id="ea697-132">id</span></span>|<span data-ttu-id="ea697-133">String</span><span class="sxs-lookup"><span data-stu-id="ea697-133">String</span></span>|<span data-ttu-id="ea697-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="ea697-134">Key of the entity.</span></span>|
-|<span data-ttu-id="ea697-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ea697-135">createdDateTime</span></span>|<span data-ttu-id="ea697-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ea697-136">DateTimeOffset</span></span>|<span data-ttu-id="ea697-137">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="ea697-137">DateTime the object was created.</span></span>|
-|<span data-ttu-id="ea697-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ea697-138">lastModifiedDateTime</span></span>|<span data-ttu-id="ea697-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ea697-139">DateTimeOffset</span></span>|<span data-ttu-id="ea697-140">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="ea697-140">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="ea697-141">version</span><span class="sxs-lookup"><span data-stu-id="ea697-141">version</span></span>|<span data-ttu-id="ea697-142">Int32</span><span class="sxs-lookup"><span data-stu-id="ea697-142">Int32</span></span>|<span data-ttu-id="ea697-143">Версия КарттоклассассоЦиатион.</span><span class="sxs-lookup"><span data-stu-id="ea697-143">Version of the CartToClassAssociation.</span></span>|
-|<span data-ttu-id="ea697-144">displayName</span><span class="sxs-lookup"><span data-stu-id="ea697-144">displayName</span></span>|<span data-ttu-id="ea697-145">Строка</span><span class="sxs-lookup"><span data-stu-id="ea697-145">String</span></span>|<span data-ttu-id="ea697-146">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="ea697-146">Admin provided name of the device configuration.</span></span>|
-|<span data-ttu-id="ea697-147">description</span><span class="sxs-lookup"><span data-stu-id="ea697-147">description</span></span>|<span data-ttu-id="ea697-148">String</span><span class="sxs-lookup"><span data-stu-id="ea697-148">String</span></span>|<span data-ttu-id="ea697-149">Администратор предоставил описание КарттоклассассоЦиатион.</span><span class="sxs-lookup"><span data-stu-id="ea697-149">Admin provided description of the CartToClassAssociation.</span></span>|
-|<span data-ttu-id="ea697-150">Девицекартидс</span><span class="sxs-lookup"><span data-stu-id="ea697-150">deviceCartIds</span></span>|<span data-ttu-id="ea697-151">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="ea697-151">String collection</span></span>|<span data-ttu-id="ea697-152">Идентификаторы корзин устройств, которые необходимо связать с классами.</span><span class="sxs-lookup"><span data-stu-id="ea697-152">Identifiers of device carts to be associated with classes.</span></span>|
-|<span data-ttu-id="ea697-153">Классрумидс</span><span class="sxs-lookup"><span data-stu-id="ea697-153">classroomIds</span></span>|<span data-ttu-id="ea697-154">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="ea697-154">String collection</span></span>|<span data-ttu-id="ea697-155">Идентификаторы аудиторий, которые необходимо связать с тележками устройств.</span><span class="sxs-lookup"><span data-stu-id="ea697-155">Identifiers of classrooms to be associated with device carts.</span></span>|
+|<span data-ttu-id="514a7-132">id</span><span class="sxs-lookup"><span data-stu-id="514a7-132">id</span></span>|<span data-ttu-id="514a7-133">String</span><span class="sxs-lookup"><span data-stu-id="514a7-133">String</span></span>|<span data-ttu-id="514a7-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="514a7-134">Key of the entity.</span></span>|
+|<span data-ttu-id="514a7-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="514a7-135">createdDateTime</span></span>|<span data-ttu-id="514a7-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="514a7-136">DateTimeOffset</span></span>|<span data-ttu-id="514a7-137">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="514a7-137">DateTime the object was created.</span></span>|
+|<span data-ttu-id="514a7-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="514a7-138">lastModifiedDateTime</span></span>|<span data-ttu-id="514a7-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="514a7-139">DateTimeOffset</span></span>|<span data-ttu-id="514a7-140">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="514a7-140">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="514a7-141">version</span><span class="sxs-lookup"><span data-stu-id="514a7-141">version</span></span>|<span data-ttu-id="514a7-142">Int32</span><span class="sxs-lookup"><span data-stu-id="514a7-142">Int32</span></span>|<span data-ttu-id="514a7-143">Версия КарттоклассассоЦиатион.</span><span class="sxs-lookup"><span data-stu-id="514a7-143">Version of the CartToClassAssociation.</span></span>|
+|<span data-ttu-id="514a7-144">displayName</span><span class="sxs-lookup"><span data-stu-id="514a7-144">displayName</span></span>|<span data-ttu-id="514a7-145">Строка</span><span class="sxs-lookup"><span data-stu-id="514a7-145">String</span></span>|<span data-ttu-id="514a7-146">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="514a7-146">Admin provided name of the device configuration.</span></span>|
+|<span data-ttu-id="514a7-147">description</span><span class="sxs-lookup"><span data-stu-id="514a7-147">description</span></span>|<span data-ttu-id="514a7-148">String</span><span class="sxs-lookup"><span data-stu-id="514a7-148">String</span></span>|<span data-ttu-id="514a7-149">Администратор предоставил описание КарттоклассассоЦиатион.</span><span class="sxs-lookup"><span data-stu-id="514a7-149">Admin provided description of the CartToClassAssociation.</span></span>|
+|<span data-ttu-id="514a7-150">Девицекартидс</span><span class="sxs-lookup"><span data-stu-id="514a7-150">deviceCartIds</span></span>|<span data-ttu-id="514a7-151">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="514a7-151">String collection</span></span>|<span data-ttu-id="514a7-152">Идентификаторы корзин устройств, которые необходимо связать с классами.</span><span class="sxs-lookup"><span data-stu-id="514a7-152">Identifiers of device carts to be associated with classes.</span></span>|
+|<span data-ttu-id="514a7-153">Классрумидс</span><span class="sxs-lookup"><span data-stu-id="514a7-153">classroomIds</span></span>|<span data-ttu-id="514a7-154">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="514a7-154">String collection</span></span>|<span data-ttu-id="514a7-155">Идентификаторы аудиторий, которые необходимо связать с тележками устройств.</span><span class="sxs-lookup"><span data-stu-id="514a7-155">Identifiers of classrooms to be associated with device carts.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ea697-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea697-156">Response</span></span>
-<span data-ttu-id="ea697-157">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ea697-157">If successful, this method returns a `200 OK` response code and an updated [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="514a7-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="514a7-156">Response</span></span>
+<span data-ttu-id="514a7-157">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="514a7-157">If successful, this method returns a `200 OK` response code and an updated [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea697-158">Пример</span><span class="sxs-lookup"><span data-stu-id="ea697-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="514a7-158">Пример</span><span class="sxs-lookup"><span data-stu-id="514a7-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ea697-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="ea697-159">Request</span></span>
-<span data-ttu-id="ea697-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ea697-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="514a7-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="514a7-159">Request</span></span>
+<span data-ttu-id="514a7-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="514a7-160">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 271
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ea697-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea697-161">Response</span></span>
-<span data-ttu-id="ea697-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ea697-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="514a7-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="514a7-161">Response</span></span>
+<span data-ttu-id="514a7-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="514a7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 
