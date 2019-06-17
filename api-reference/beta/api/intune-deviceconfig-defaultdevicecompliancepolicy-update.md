@@ -4,12 +4,12 @@ description: Обновление свойств объекта Дефаултд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39ce988b27d79cf709d1d2920ac5042b4a578e91
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 27c3aedeaf17f26a3144c7bf5daff3a826960bb6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927975"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968681"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>Обновление Дефаултдевицекомплианцеполици
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Дефаултдевицекомплианцеполици](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) в формате JSON.
+В тексте запроса добавьте представление объекта [дефаултдевицекомплианцеполици](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [дефаултдевицекомплианцеполици](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md).
 
@@ -103,6 +103,7 @@ Content-Length: 401
   "version": 7
 }
 ```
+
 
 
 

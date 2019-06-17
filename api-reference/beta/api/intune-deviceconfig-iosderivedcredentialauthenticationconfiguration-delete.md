@@ -4,12 +4,12 @@ description: Удаляет объект Иосдериведкредентиа�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfdc0035ad2f27db19cbe480f56d353c66b92447
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c8033fedca7f058af5da94fdc160b0c9c6ec2168
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33957087"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967134"
 ---
 # <a name="delete-iosderivedcredentialauthenticationconfiguration"></a>Удаление Иосдериведкредентиалаусентикатионконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

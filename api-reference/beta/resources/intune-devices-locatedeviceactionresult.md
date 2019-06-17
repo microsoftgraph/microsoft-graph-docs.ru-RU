@@ -4,12 +4,12 @@ description: Результат действия "Поиск устройств�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b64e83a16fc63962fabf6991ebc54fb94372bbb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 588296ad2243e326f855221d217e63fdc01f9cb8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941991"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995149"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Тип ресурса locateDeviceActionResult
 
@@ -31,7 +31,7 @@ ms.locfileid: "33941991"
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|Местоположение устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,6 +62,7 @@ ms.locfileid: "33941991"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceConfigurat
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40013de2d8d3d29397c8ece4bb8cb86ea3ad31ee
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f477f9742cde277dbca6fc891f1a17aec6d0049b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927519"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967582"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Обновление объекта deviceConfigurationUserOverview
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
@@ -115,6 +115,7 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Сведения об оборудовании для данног�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86f941be55d2871f22900c69ec7f1c209df6737d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d1c721039df8b4c656e84a91da76be60dcdd25cf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942026"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995226"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса Девицепротектионовервиев
 
@@ -33,7 +33,7 @@ ms.locfileid: "33942026"
 |Пендингоффлинескандевицекаунт|Int32|Количество устройств, ожидающих автономной проверки.|
 |Критикалфаилуресдевицекаунт|Int32|Количество устройств критических сбоев.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,6 +58,7 @@ ms.locfileid: "33942026"
   "criticalFailuresDeviceCount": 1024
 }
 ```
+
 
 
 

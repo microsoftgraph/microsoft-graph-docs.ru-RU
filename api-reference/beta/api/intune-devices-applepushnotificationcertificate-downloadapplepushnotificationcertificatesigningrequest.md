@@ -4,12 +4,12 @@ description: Скачивание запроса на подпись серти�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08395fc7036d60dbd4a8e56dd069e1f1af6d08c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ddd3de89b4374cf3e222c76fa68eb37a5c8cf57f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33911667"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959399"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Функция downloadApplePushNotificationCertificateSigningRequest
 
@@ -43,7 +43,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,6 +68,7 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
+
 
 
 

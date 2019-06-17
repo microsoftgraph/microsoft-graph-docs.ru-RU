@@ -4,12 +4,12 @@ description: Определите категорию уровня доступа
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80e2546939b9053eca16607d069689e0226380d9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c6eea937d05d45e6fcf7fa955df16885067047b3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943706"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996486"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>тип перечисления Виндовспривацидатаакцесслевел
 
@@ -26,6 +26,7 @@ ms.locfileid: "33943706"
 |Форцеаллов|1,1|Приложениям будет разрешен доступ к указанным данным о конфиденциальности.|
 |Форцедени|2|Приложениям будет отказано в доступе к указанным данным о конфиденциальности.|
 |Усеринконтрол|4|Пользователи будут получать приглашение при попытке приложения получить доступ к указанным данным о конфиденциальности.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f87ff4df1ea1fab1b727a725c01f024a872a8f1f
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: a397c3433de4d3615e09475059eeb58254bd3086
+ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34475208"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34914660"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -63,6 +63,7 @@ ms.locfileid: "34475208"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
 |[Перечисление licenseDetails](../api/user-list-licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
+|[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
 |[findRoomLists](../api/user-findroomlists.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение списка помещений, определенных в клиенте.|
 |[findRooms](../api/user-findrooms.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. |
@@ -70,10 +71,9 @@ ms.locfileid: "34475208"
 |[getMemberGroups](../api/user-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Коллекция строк| Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
 |[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Нет |Аннулирует все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значения свойства **refreshTokensValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяется методом **revokeSignInSessions**.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**.|
 |[reminderView](../api/user-reminderview.md)|Коллекция [Reminder](reminder.md)|Возвращает список напоминаний календаря за указанный период времени.|
-|[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
-|[Перевод идентификаторов Outlook](../api/user-translateexchangeids.md) |Коллекция [типа ресурса convertIdResult](convertidresult.md)| Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**.|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |Коллекция [convertIdResult](convertidresult.md)| Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|

@@ -4,12 +4,12 @@ description: Описание встроенного состояния разв
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2fb953021dde36960faf2875131bf3bcd8e7e50
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b18548afd944b11df5df5bdeae6b4c48cf048f3f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941347"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994855"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса Ембеддедсимдевицестате
 
@@ -31,17 +31,17 @@ ms.locfileid: "33941347"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор состояния встроенного SIM-устройства. Созданное системой значение, назначаемое при создании.|
+|id|String|Уникальный идентификатор состояния встроенного SIM-устройства. Созданное системой значение, назначаемое при создании.|
 |createdDateTime|DateTimeOffset|Время создания встроенного состояния SIM-устройства. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния внедренного SIM-устройства. Обновленная сторона службы.|
 |lastSyncDateTime|DateTimeOffset|Время последнего возврата встроенного SIM-устройства. Обновленная сторона службы.|
-|УниверсалинтегратедЦиркуиткардидентифиер|Строка|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
-|deviceName|Строка|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
+|УниверсалинтегратедЦиркуиткардидентифиер|String|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
+|deviceName|String|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
 |userName|String|Имя пользователя, для которого была подготовлена подписка (например, joe@contoso.com).|
 |состояние|[Ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|Статедетаилс|Строка|Строковое описание состояния подготовки.|
+|Статедетаилс|String|Строковое описание состояния подготовки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,6 +66,7 @@ ms.locfileid: "33941347"
   "stateDetails": "String"
 }
 ```
+
 
 
 

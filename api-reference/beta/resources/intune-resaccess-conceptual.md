@@ -4,18 +4,18 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c2af10e3f45e59ec9bac83fb71a8220e37e769c2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed680af82eb041e93cf73cb6ed3c390b989d8bc3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939940"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996262"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Управление сертификатами доступа к ресурсам в Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Вы можете импортировать PFX-сертификаты с помощью API Microsoft Graph для Intune.
 

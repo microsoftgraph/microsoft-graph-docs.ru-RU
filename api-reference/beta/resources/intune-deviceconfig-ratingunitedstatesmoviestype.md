@@ -4,12 +4,12 @@ description: Метки оценок фильмов в США
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b32de63fe5b559b76a0de0ca2471230c8f637406
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1e561a14c8ed5cf7fd51eef167c635c46e4b93ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944847"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957635"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>тип перечисления Ратингунитедстатесмовиестипе
 
@@ -29,6 +29,7 @@ ms.locfileid: "33944847"
 |parentalGuidance13|SP4|PG13, некоторые материалы могут быть неприемлемыми для детей 13|
 |ограниченной|17:00|R для зрителей в разделе 17 требуется сопроводительный родитель или опекун взрослого|
 |взрослые|6 |NC17, только для взрослых|
+
 
 
 

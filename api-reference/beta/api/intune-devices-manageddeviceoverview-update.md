@@ -4,12 +4,12 @@ description: Обновление свойств объекта managedDeviceOve
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82d57bf60e419e23caa6e6e6cd240d025e76a09c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f822e8d72a50b87566e5069daa53acb7132827a0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909472"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958167"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
@@ -43,14 +43,14 @@ PATCH /deviceManagement/managedDeviceOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сводки.|
+|id|String|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -149,6 +149,7 @@ Content-Length: 1056
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

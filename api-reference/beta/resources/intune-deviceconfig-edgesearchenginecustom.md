@@ -4,12 +4,12 @@ description: Позволяет ИТ-администраторам устана
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de856edf13a8d97e54925ca42537e977351675d7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5a6c9f18a7a02db7054f8cbc230783fb1224e5ae
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946709"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996402"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Тип ресурса edgeSearchEngineCustom
 
@@ -27,7 +27,7 @@ ms.locfileid: "33946709"
 |:---|:---|:---|
 |edgeSearchEngineOpenSearchXmlUrl|String|Указывает на HTTPS-ссылку, содержащую XML-файл OpenSearch, в котором указаны по крайней мере краткое имя и URL-адрес поисковой системы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "33946709"
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
 
 
 

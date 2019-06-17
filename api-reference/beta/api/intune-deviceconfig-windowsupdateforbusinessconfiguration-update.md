@@ -4,12 +4,12 @@ description: Обновление свойств объекта windowsUpdateFor
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28876c81cf385902ada6a5d40c584c0921d58b0e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b178b614f12ae193b1e2369a9c71e337978dde93
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33917353"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34961289"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Обновление объекта windowsUpdateForBusinessConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).
@@ -55,7 +55,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Девицеманажементаппликабилитируледевицемоде|[Девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -63,23 +66,23 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deliveryOptimizationMode|[Виндовсделиверйоптимизатионмоде](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Режим оптимизации доставки. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Функции предварительного выпуска. Возможные значения: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Режим автоматического обновления. Возможные значения: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`, `windowsDefault`.|
-|microsoftUpdateServiceAllowed|Логический|Разрешение использования службы обновлений (Майкрософт).|
-|driversExcluded|Логический|Исключение драйверов из Центра обновления Windows.|
+|microsoftUpdateServiceAllowed|Boolean|Разрешение использования службы обновлений (Майкрософт).|
+|driversExcluded|Boolean|Исключение драйверов из Центра обновления Windows.|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Расписание установки.|
 |qualityUpdatesDeferralPeriodInDays|Int32|Откладывание исправлений на заданное количество дней.|
 |featureUpdatesDeferralPeriodInDays|Int32|Откладывание обновлений компонентов на заданное количество дней.|
-|qualityUpdatesPaused|Логический|Приостановка исправлений.|
+|qualityUpdatesPaused|Boolean|Приостановка исправлений.|
 |featureUpdatesPaused|Boolean|Приостановка обновлений компонентов.|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время завершения срока приостановки исправлений.|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время, когда будет завершен срок приостановки обновлений компонентов.|
 |businessReadyUpdatesOnly|[Виндовсупдатетипе](../resources/intune-deviceconfig-windowsupdatetype.md)|Определяет, от каких устройств филиала будут получаться обновления. Возможные значения: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|Скипчекксбефоререстарт|Логический|Установить для пропуска всех проверок перед перезапуском: уровень аккумулятора = 40%, присутствие пользователя, требуемое отображение, режим презентации, полноэкранный режим, состояние телефонного звонка, игровой режим и т. д. |
+|Скипчекксбефоререстарт|Boolean|Установить для пропуска всех проверок перед перезапуском: уровень аккумулятора = 40%, присутствие пользователя, требуемое отображение, режим презентации, полноэкранный режим, состояние телефонного звонка, игровой режим и т. д. |
 |Упдатевикс|[Виндовсупдатефорбусинессупдатевикс](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Установка обновления запланирована на недели месяца. Возможные значения: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 |Куалитюпдатеспаусестартдате|Дата|Дата начала паузы обновлений. Это свойство доступно только для чтения.|
 |Феатуреупдатеспаусестартдате|Дата|Дата начала паузы обновления компонентов. Это свойство доступно только для чтения.|
 |Феатуреупдатесроллбакквиндовиндайс|Int32|Количество дней после обновления компонента, для которого действует откат|
-|Куалитюпдатесвиллберолледбакк|Логический|Указывает, следует ли откатить обновление для следующего возврата устройства|
-|Феатуреупдатесвиллберолледбакк|Логический|Указывает, следует ли откатить обновления компонентов при следующем возврате устройства|
+|Куалитюпдатесвиллберолледбакк|Boolean|Указывает, следует ли откатить обновление для следующего возврата устройства|
+|Феатуреупдатесвиллберолледбакк|Boolean|Указывает, следует ли откатить обновления компонентов при следующем возврате устройства|
 |Куалитюпдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений качества|
 |Феатуреупдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений компонентов|
 |Енгажедрестартдеадлинеиндайс|Int32|Крайний срок в днях перед автоматическим планированием и выполнением ожидающего перезапуска за пределами периода активности, с допустимым диапазоном от 2 до 30 дней.|
@@ -104,7 +107,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1903
+Content-length: 2676
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -112,6 +115,27 @@ Content-length: 1903
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -158,7 +182,7 @@ Content-length: 1903
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2075
+Content-Length: 2848
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -168,6 +192,27 @@ Content-Length: 2075
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -209,6 +254,7 @@ Content-Length: 2075
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Возможные значения для расписания с�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3801fa0a49d2121b31d91f1f4cc5a03af7fb0571
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f84c9a5cdb5d9608a34553c2a3a6f05a989b78a8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946618"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995065"
 ---
 # <a name="emailsyncschedule-enum-type"></a>тип перечисления Емаилсинксчедуле
 
@@ -29,6 +29,7 @@ ms.locfileid: "33946618"
 |thirtyMinutes|SP4|Синхронизация каждые 30 минут.|
 |Сикстиминутес|17:00|Синхронизация каждые 60 минут.|
 |Баседонмюсаже|6 |Синхронизация с учетом использования.|
+
 
 
 

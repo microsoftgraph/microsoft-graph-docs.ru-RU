@@ -4,12 +4,12 @@ description: Создание объекта deviceCompliancePolicyAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f89512cf6ad6ae5b5d7c9432e0e911f5019e1bf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b46228d5f891b2fd38fde0eacd2936096530fff7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927834"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968436"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Создание объекта deviceCompliancePolicyAssignment
 
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель для назначения политики соответствия.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

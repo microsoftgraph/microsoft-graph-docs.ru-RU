@@ -4,12 +4,12 @@ description: Объект termsAndConditionsAssignment представляет 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7dcccf5e564d3f3be151e5d9b2a4bb3ef8beb2ee
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 36cabb2ca2e6f375701b17901445650740dead73
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949208"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996612"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Тип ресурса termsAndConditionsAssignment
 
@@ -31,10 +31,10 @@ ms.locfileid: "33949208"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "33949208"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицеко
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b09b9e3ab563b0d00fed9a8dfca2eec6118641b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 13ee75239a0a50acc6f893cbaa0754318bd79c4e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927407"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967792"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Обновление Девицеконфигуратионконфликтсуммари
 
@@ -44,14 +44,14 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в формате JSON.
+В тексте запроса добавьте представление объекта [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
-|id|Строка|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
+|id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
 |Контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
 |Девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
@@ -108,6 +108,7 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
 
 
 

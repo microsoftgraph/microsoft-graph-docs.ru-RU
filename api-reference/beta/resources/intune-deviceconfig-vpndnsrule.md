@@ -4,12 +4,12 @@ description: Определение правила DNS для VPN.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdb362bcbf672f491e22e2ee7d69a7e5c243e812
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9f2188efc73201aabf98267a77fee96b9c60de9d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944616"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996339"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса Впнднсруле
 
@@ -24,11 +24,11 @@ ms.locfileid: "33944616"
 |:---|:---|:---|
 |name|String|Расширением.|
 |серверами|Коллекция строк|Серверами.|
-|Проксисерверури|Строка|URI прокси-сервера.|
-|автотриггер|Логический|Автоматически подключаться к ВИРТУАЛЬНОЙ частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
-|сохраняемого|Логический|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
+|Проксисерверури|String|URI прокси-сервера.|
+|автотриггер|Boolean|Автоматически подключаться к виртуальной частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
+|сохраняемого|Boolean|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,6 +50,7 @@ ms.locfileid: "33944616"
   "persistent": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Очистка устройства
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d50366cef1660aec80137562e912746b81f162f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7b7c1c39104180e6edc82fc49b21d2df05687340
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909493"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958132"
 ---
 # <a name="wipe-action"></a>Действие wipe
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -84,6 +84,7 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

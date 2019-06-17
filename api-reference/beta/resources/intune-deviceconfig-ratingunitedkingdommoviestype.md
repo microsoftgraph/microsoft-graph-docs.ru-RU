@@ -4,12 +4,12 @@ description: Метки оценок фильмов в Соединенном К
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 892a9f0317d7a33b59386e4a08e977df55a1b0f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4673a80102fe481852a7cb4fbff950983058463
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951112"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957656"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>тип перечисления Ратингунитедкингдоммовиестипе
 
@@ -31,6 +31,7 @@ ms.locfileid: "33951112"
 |agesAbove12Cinema|6 |12A, выпуск в кинотеатрах, подходящий для 12 лет и более|
 |agesAbove15|7 |15, подходит только для 15 лет и более ранних версий.|
 |взрослые|8 |Подходит только для взрослых|
+
 
 
 

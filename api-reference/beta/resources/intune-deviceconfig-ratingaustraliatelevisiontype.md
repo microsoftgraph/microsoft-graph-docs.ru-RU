@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ea45fe86e4d7e9a909ad6314cf1f6932df947c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a33d4998e3e2949c6833d82110b7e24c574b0307
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951039"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995779"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>тип перечисления Ратингаустралиателевисионтипе
 
@@ -31,6 +31,7 @@ ms.locfileid: "33951039"
 |обнаружен|6 |Для зрителей рекомендуется использовать классификацию M более 15|
 |agesAbove15|7 |MA15 + Classification не подходит для зрителей в течение 15|
 |agesAbove15AdultViolence|8 |AV15 + Classification не подходит для зрителей в масштабе 15, взрослого только для насилия|
+
 
 
 

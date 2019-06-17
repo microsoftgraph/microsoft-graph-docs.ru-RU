@@ -4,12 +4,12 @@ description: Создание нового объекта Андроиддеви
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f36a9aaf47bb29f60c09616dd4235f45fcbbfcf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6c041ff25f4a64e9d997f52d8096f551b28c8189
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933692"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34971488"
 ---
 # <a name="create-androiddeviceownercompliancepolicy"></a>Создание Андроиддевицеовнеркомплианцеполици
 
@@ -57,8 +57,8 @@ POST /deviceManagement/deviceCompliancePolicies
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|osMinimumVersion|Строка|Минимальная версия Android.|
-|osMaximumVersion|Строка|Максимальная версия Android.|
+|osMinimumVersion|String|Минимальная версия Android.|
+|osMaximumVersion|String|Максимальная версия Android.|
 |minAndroidSecurityPatchLevel|String|Минимальный уровень обновления для системы безопасности Android.|
 |passwordRequired|Логический|Указывает, что для разблокировки устройства требуется указывать пароль.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
@@ -151,6 +151,7 @@ Content-Length: 1104
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

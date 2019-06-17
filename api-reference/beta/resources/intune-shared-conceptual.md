@@ -4,20 +4,20 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: d627ebb67876c89136ba6e4e63e9879e3a0ed8d2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2240f8ff55ca2dbcf4e7107495e07b72f95cdfa4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939905"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996192"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Эти конечные точки используются в нескольких ИНТЕРФЕЙСах API Microsoft Graph для рабочих процессов Intune.  Цель, цель и разрешения, необходимые для использования указанного ресурса, меняются в зависимости от конкретного рабочего процесса и контекста базового вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных рабочих процессов.
+Эти конечные точки используются в нескольких интерфейсах API Microsoft Graph для рабочих процессов Intune.  Цель, цель и разрешения, необходимые для использования указанного ресурса, меняются в зависимости от конкретного рабочего процесса и контекста базового вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных рабочих процессов.
 
 Рабочие процессы Intune совместно работают со следующими ресурсами Graph:
 

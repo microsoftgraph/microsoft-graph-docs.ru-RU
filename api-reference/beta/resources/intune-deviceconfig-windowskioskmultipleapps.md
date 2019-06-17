@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df9fec1c5d21d7d23c5c7a56c3760b88348c556b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d4b6a14eccade2555ef069bcbe6d009b094b81a6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944007"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995443"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
 
@@ -26,12 +26,12 @@ ms.locfileid: "33944007"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |apps|Коллекция [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|Это единственные приложения Магазина Windows, которые будут доступны для запуска из меню "Пуск". Эта коллекция может содержать не более 128 элементов.|
-|Шовтаскбар|Логический|Этот параметр позволяет администратору указать, отображается ли панель задач.|
-|Алловакцесстодовнлоадсфолдер|Логический|Этот параметр разрешает доступ к папке "загрузки" в проводнике.|
-|Дисалловдесктопаппс|Логический|Этот параметр указывает, что классические приложения разрешены. Значение по умолчанию — true.|
+|Шовтаскбар|Boolean|Этот параметр позволяет администратору указать, отображается ли панель задач.|
+|Алловакцесстодовнлоадсфолдер|Boolean|Этот параметр разрешает доступ к папке "загрузки" в проводнике.|
+|Дисалловдесктопаппс|Boolean|Этот параметр указывает, что классические приложения разрешены. Значение по умолчанию — true.|
 |startMenuLayoutXml|Binary|Позволяет администраторам переопределять макет запуска по умолчанию и запрещает пользователю изменять его.Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML должен быть в двоичном формате.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,6 +62,7 @@ ms.locfileid: "33944007"
   "startMenuLayoutXml": "binary"
 }
 ```
+
 
 
 

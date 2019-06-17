@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceCo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3df594d65f9dafacbf2d175da8ddaf4debed1a29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cd079beca36380e6109c50d34ed9d0dcad051878
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927708"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968233"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>Get deviceComplianceScheduledActionForRule
 
@@ -75,6 +75,7 @@ Content-Length: 188
   }
 }
 ```
+
 
 
 

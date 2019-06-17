@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 839d4c98bd3c30e57a41e99e279d405ecbd0327d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a6e35255bc9306700aaaab5b6974650dab682294
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943804"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995366"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>Тип ресурса Виндовскиосквиситор
 
@@ -26,7 +26,7 @@ ms.locfileid: "33943804"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "33943804"
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
+
 
 
 

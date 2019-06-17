@@ -4,12 +4,12 @@ description: Состояние действия отзыва лицензий, 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 543ec2a75c61c516cfe32632a82a7cfd08810f94
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e33a47d6fd4f40939d26a7faf41c209fe6e63651
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940255"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958587"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
 
@@ -33,7 +33,7 @@ ms.locfileid: "33940255"
 |Фаиледлиценсескаунт|Int32|Количество лицензий, которые не удалось отозвать.|
 |Актионфаилуререасон|[Впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,7 @@ ms.locfileid: "33940255"
   "actionFailureReason": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект iosEducationDeviceConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53cb3f564f8ef681b0a686744b9929141f20ea6e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b1641b08fdefe4b642e27ad9d5a6b6c252205f70
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923561"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34966896"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>Удаление iosEducationDeviceConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

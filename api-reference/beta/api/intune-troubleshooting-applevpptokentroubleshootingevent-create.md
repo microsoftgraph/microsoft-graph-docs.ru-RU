@@ -4,12 +4,12 @@ description: Создание нового объекта Апплевппток
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45412c0acc9061a1e247f4f39824eedf279999da
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f90c3ac17bc56f3b846f6a3ef174d092577b936f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897824"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957943"
 ---
 # <a name="create-applevpptokentroubleshootingevent"></a>Создание Апплевпптокентраублешутинжевент
 
@@ -43,7 +43,7 @@ POST /deviceManagement/troubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Апплевпптокентраублешутинжевент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Апплевпптокентраублешутинжевент.
@@ -54,9 +54,9 @@ POST /deviceManagement/troubleshootingEvents
 |eventDateTime|DateTimeOffset|Время возникновения события. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |Траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Это необязательное поле, унаследованное от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Это необязательное поле, унаследованное от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |Аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок, наследуемом от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|Токенид|Строка|Идентификатор токена Apple Volume Purchase Program.|
+|Токенид|String|Идентификатор токена Apple Volume Purchase Program.|
 
 
 
@@ -139,6 +139,7 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
+
 
 
 

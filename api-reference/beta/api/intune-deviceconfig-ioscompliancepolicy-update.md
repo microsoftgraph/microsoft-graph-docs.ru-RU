@@ -4,12 +4,12 @@ description: Обновление свойств объекта iosCompliancePol
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a077c25710823b824435522b01fe28d16943f64c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 93a58d86b522a4eb562c0e91e7c59aa3280b7529
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33923920"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967183"
 ---
 # <a name="update-ioscompliancepolicy"></a>Update iosCompliancePolicy
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passcodeBlockSimple|Логический|Указывает, следует ли заблокировать простые секретные коды.|
+|passcodeBlockSimple|Boolean|Указывает, следует ли заблокировать простые секретные коды.|
 |passcodeExpirationDays|Int32|Количество дней до окончания срока действия секретного кода. Допустимые значения: от 1 до 65 535.|
 |passcodeMinimumLength|Int32|Минимальная длина секретного кода. Допустимые значения: от 4 до 14.|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах) до запроса пароля.|
@@ -66,12 +66,12 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passcodeMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passcodeRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Логический|Указывает, требуется ли запрашивать секретный код.|
-|osMinimumVersion|Строка|Минимальная версия iOS.|
+|osMinimumVersion|String|Минимальная версия iOS.|
 |osMaximumVersion|String|Максимальная версия iOS.|
-|Осминимумбуилдверсион|Строка|Минимальная версия сборки IOS.|
-|Осмаксимумбуилдверсион|Строка|Максимальная версия сборки IOS.|
-|securityBlockJailbrokenDevices|Логический|Устройства нельзя взламывать и рутовать.|
-|deviceThreatProtectionEnabled|Логический|Указывает на то, что защита от угроз для устройств должна быть включена.|
+|Осминимумбуилдверсион|String|Минимальная версия сборки IOS.|
+|Осмаксимумбуилдверсион|String|Максимальная версия сборки IOS.|
+|securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
+|deviceThreatProtectionEnabled|Boolean|Указывает на то, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[Девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Указывает, обязательно ли использовать управляемый профиль электронной почты.|
 |restrictedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Потребовать, чтобы на устройстве не было установлено указанное приложение. Эта коллекция может содержать не более 100 элементов.|
@@ -173,6 +173,7 @@ Content-Length: 1413
   ]
 }
 ```
+
 
 
 

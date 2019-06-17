@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицеко
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfbaa2cc4b76a1c1e7cb59685c2ee1bd9d3674de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dc833a4e49db0048430a359d09fe857b571cd35a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927274"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967505"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Обновление Девицеконфигуратионусерстатесуммари
 
@@ -44,13 +44,13 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в формате JSON.
+В тексте запроса добавьте представление объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownUserCount|Int32|Количество неизвестных пользователей|
 |notApplicableUserCount|Int32|Количество неприменимых пользователей|
 |compliantUserCount|Int32|Число соответствующих пользователей|
@@ -104,6 +104,7 @@ Content-Length: 324
   "conflictUserCount": 1
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bccf4a9705c4a0c9a050f982a2917b518e94c00c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 02791ef66a387b80e0c84fa2473ad540fa662228
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947003"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995891"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Тип ресурса deviceConfigurationUserOverview
 
@@ -28,7 +28,7 @@ ms.locfileid: "33947003"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
@@ -38,7 +38,7 @@ ms.locfileid: "33947003"
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,6 +63,7 @@ ms.locfileid: "33947003"
   "configurationVersion": 1024
 }
 ```
+
 
 
 

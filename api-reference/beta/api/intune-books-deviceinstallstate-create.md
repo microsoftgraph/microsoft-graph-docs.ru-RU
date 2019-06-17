@@ -4,12 +4,12 @@ description: Создание объекта deviceInstallState.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38798602751655cbf4da997c63c3043af1d2d1bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8c27f63b6a8753335c0c95d496000f5ef23a6d32
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934378"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972536"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
@@ -51,14 +51,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|deviceName|Строка|Имя устройства.|
-|deviceId|Строка|Идентификатор устройства.|
+|id|String|Ключ объекта.|
+|deviceName|String|Имя устройства.|
+|deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune-books-installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Строка|Код ошибки для сбоев при установке.|
-|osVersion|Строка|Версия ОС.|
-|osDescription|Строка|Описание ОС.|
+|errorCode|String|Код ошибки для сбоев при установке.|
+|osVersion|String|Версия ОС.|
+|osDescription|String|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
 
@@ -108,6 +108,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

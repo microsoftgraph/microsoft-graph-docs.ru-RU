@@ -4,12 +4,12 @@ description: Возможные способы добавления мобиль
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9c5c5fbdd68af1c78e55fc023a8c85642928889
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ae3edcb1d6411e889381c2171f0daeb1cbcc528
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940017"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996143"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>тип перечисления Девицеенроллменттипе
 
@@ -32,6 +32,7 @@ ms.locfileid: "33940017"
 |Виндовсаутоенроллмент|7 |Автоматическая регистрация в Windows 10. (Добавление рабочей учетной записи)|
 |Виндовсбулказуредомаинжоин|8 |Массовый присоединение к Windows 10 Azure AD.|
 |Виндовскоманажемент|9 |Управление с помощью Windows 10 инициировано с помощью автопилота или групповой политики.|
+
 
 
 

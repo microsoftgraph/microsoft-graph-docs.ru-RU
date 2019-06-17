@@ -4,12 +4,12 @@ description: Оценка приложений как в мультимедий�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 818b57499ceb3f4cfd0136572cd229b9f0fe9e80
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 502d82b2f5cef2618a10b21f298620f135a96829
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950958"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995814"
 ---
 # <a name="ratingappstype-enum-type"></a>тип перечисления Ратингаппстипе
 
@@ -28,6 +28,7 @@ ms.locfileid: "33950958"
 |agesAbove9|4|9 +, возраст 9 и более поздних версий|
 |agesAbove12|SP4|12 +, 12 лет и более |
 |agesAbove17|17:00|17 +, возраст 17 и выше|
+
 
 
 

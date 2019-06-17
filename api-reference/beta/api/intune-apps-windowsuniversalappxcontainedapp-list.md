@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c32f9e3457707e82747d72675f42867f15527e1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 48bf307098d4f1ca17fcb7ab80b4ddbfddef056a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934434"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34972629"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Список Виндовсуниверсалаппксконтаинедаппс
 
@@ -76,6 +76,7 @@ Content-Length: 216
   ]
 }
 ```
+
 
 
 

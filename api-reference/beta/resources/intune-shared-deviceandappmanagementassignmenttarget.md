@@ -4,12 +4,12 @@ description: Базовый тип для объектов назначения.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b050e26f746c7da05f99c6db6c4b728e216c986
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4229a21621776a91dab6cff9e6ed67b65899e960
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939667"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34996157"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Тип ресурса deviceAndAppManagementAssignmentTarget
 
@@ -23,7 +23,7 @@ ms.locfileid: "33939667"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "33939667"
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
+
 
 
 

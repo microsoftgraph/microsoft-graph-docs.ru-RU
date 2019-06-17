@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b8068d18f3531dedd727b70f894201645622a78
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0081b43b466439169799d46e0cfcacc341820a3d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33957095"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34967526"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>Обновление Девицеманажементдериведкредентиалсеттингс
 
@@ -34,6 +34,7 @@ ms.locfileid: "33957095"
 }
 -->
 ``` http
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/derivedCredentialSettings
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosVpnConfiguration/derivedCredentialSettings
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/derivedCredentialSettings
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEasEmailProfileConfiguration/derivedCredentialSettings
@@ -47,17 +48,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Девицеманажементдериведкредентиалсеттингс](../resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md) в формате JSON.
+В тексте запроса добавьте представление объекта [девицеманажементдериведкредентиалсеттингс](../resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементдериведкредентиалсеттингс](../resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для производных учетных данных|
-|helpUrl|Строка|URL-адрес, который будет доступен конечным пользователям для получения производных учетных данных с помощью корпоративного портала.|
+|helpUrl|String|URL-адрес, который будет доступен конечным пользователям для получения производных учетных данных с помощью корпоративного портала.|
 |displayName|Строка|Отображаемое имя профиля.|
-|имени|[Девицеманажементдериведкредентиалиссуер](../resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md)|Производный поставщик учетных данных, который будет использоваться. Возможные значения: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|[Девицеманажементдериведкредентиалнотификатионтипе](../resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)|Методы, используемые для информирования конечного пользователя об открытии корпоративного портала для доставки в сеть Wi-Fi, VPN или профилей электронной почты, использующих сертификаты для устройства. Возможные значения: `none`, `companyPortal`, `email`.|
+|имени|[deviceManagementDerivedCredentialIssuer](../resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md)|Производный поставщик учетных данных, который будет использоваться. Возможные значения: `intercede`, `entrustDatacard`, `purebred`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)|Методы, используемые для информирования конечного пользователя об открытии корпоративного портала для доставки в сеть Wi-Fi, VPN или профилей электронной почты, использующих сертификаты для устройства. Возможные значения: `none`, `companyPortal`, `email`.|
 
 
 
@@ -69,7 +70,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosVpnConfiguration/derivedCredentialSettings
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/derivedCredentialSettings
 Content-type: application/json
 Content-length: 241
 
@@ -98,6 +99,7 @@ Content-Length: 290
   "notificationType": "companyPortal"
 }
 ```
+
 
 
 

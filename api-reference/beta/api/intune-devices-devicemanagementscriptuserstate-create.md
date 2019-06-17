@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 872c3a039d0fd474e94492aac814745da188d3aa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bfb3c1119af64f949fa5396a28758811d39f4a65
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909808"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958783"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Создание Девицеманажементскриптусерстате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементскриптусерстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптусерстате.
@@ -92,6 +92,7 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

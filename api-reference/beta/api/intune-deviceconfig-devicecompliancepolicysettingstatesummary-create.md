@@ -4,12 +4,12 @@ description: Создание объекта deviceCompliancePolicySettingStateS
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 611fcb48aded8802f822b60bbd24adbb7013551a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 616431ae65f8a6dae8a9b4be6962112a72a4afd6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33927862"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34968317"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Create deviceCompliancePolicySettingStateSummary
 
@@ -50,8 +50,8 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|setting|Строка|Имя класса параметров и свойства.|
+|id|String|Ключ объекта.|
+|setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[Полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Настройка платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
@@ -113,6 +113,7 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

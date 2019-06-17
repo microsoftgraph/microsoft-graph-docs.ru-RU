@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Дата
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 003e46f4a10d3744fc53c562b619361b5a01fb94
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0c2f5685db428c4fa7f4f1171947ae726968a590
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910159"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959238"
 ---
 # <a name="get-datasharingconsent"></a>Получение Даташарингконсент
 
@@ -46,7 +46,7 @@ GET /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 417
   }
 }
 ```
+
 
 
 
