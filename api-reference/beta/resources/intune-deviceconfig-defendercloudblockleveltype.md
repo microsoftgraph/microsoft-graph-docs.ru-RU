@@ -4,12 +4,12 @@ description: Возможные значения уровня облачного
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c83618e3c730140e4e667810fe7e91e1fb6bed7f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3f798e4b7572cc2593d0d742ecbdebf81d65507d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947374"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979867"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>тип перечисления Дефендерклаудблокклевелтипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "33947374"
 |высокоуровневых|1,1|High — применение надежного уровня обнаружения.|
 |Хигхплус|2|Высокая + использование высокого уровня и применение мер защиты|
 |Зеротолеранце|4|Нулевое отклонение блокирует все неизвестные исполняемые файлы|
+
 
 
 

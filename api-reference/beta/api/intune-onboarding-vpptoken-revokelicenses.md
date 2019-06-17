@@ -4,12 +4,12 @@ description: Отзыв лицензий, связанных с определе
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 691a8b6aeb23bc388a0316a81eeacfdb3a375e75
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2222e45996e1022aa58bacc08d4fcd7ecde23778
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899804"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980553"
 ---
 # <a name="revokelicenses-action"></a>Действие revokeLicenses
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -77,6 +77,7 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

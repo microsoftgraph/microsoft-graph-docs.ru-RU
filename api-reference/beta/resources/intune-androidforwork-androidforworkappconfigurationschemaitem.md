@@ -4,12 +4,12 @@ description: Один элемент конфигурации в схеме на
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3313ba3cef3a996d030d25ac1bb24492b28b4b2a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b3ac320b0630d7307a56b06cd07b8d4d0d7f12b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950776"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993475"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchemaItem
 
@@ -22,7 +22,7 @@ ms.locfileid: "33950776"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|schemaItemKey|Строка|Уникальный ключ, используемый приложением для определения элемента.|
+|schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
 |displayName|Строка|Понятное человеку имя.|
 |description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
@@ -32,7 +32,7 @@ ms.locfileid: "33950776"
 |dataType|[Андроидфорворкаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidforworkappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
 |selections|Коллекция объектов [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список понятных человеку пар имя-значение для допустимых значений, которые можно задать для этого элемента (только для элементов одиночного и множественного выбора).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,6 +64,7 @@ ms.locfileid: "33950776"
   ]
 }
 ```
+
 
 
 

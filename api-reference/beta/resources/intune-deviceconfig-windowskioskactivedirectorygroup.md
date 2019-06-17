@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4c0810cfeda4f620f6733a5b824cde8d0234f38
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fd67f482c0dcd71b871d642b10528a07e7803702
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943965"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994015"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>Тип ресурса Виндовскиоскактиведиректориграуп
 
@@ -25,9 +25,9 @@ ms.locfileid: "33943965"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|Строка|Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска|
+|groupName|String|Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "33943965"
   "groupName": "String"
 }
 ```
+
 
 
 

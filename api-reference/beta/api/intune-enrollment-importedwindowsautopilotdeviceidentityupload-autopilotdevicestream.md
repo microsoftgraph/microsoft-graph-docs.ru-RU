@@ -4,12 +4,12 @@ description: Создайте запрос на отправку с потоко
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae42466b45bb731f1efe3f31eb7c83867b1808b2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: bb21be4505f07a90a384a6bd21bbc8c89eb4b96d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908324"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981701"
 ---
 # <a name="autopilotdevicestream-function"></a>Функция Аутопилотдевицестреам
 
@@ -43,7 +43,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,6 +68,7 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
+
 
 
 

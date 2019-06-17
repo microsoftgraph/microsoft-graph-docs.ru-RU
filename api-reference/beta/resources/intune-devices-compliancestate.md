@@ -4,12 +4,12 @@ description: Состояние соответствия требованиям.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6dc39839754f24ae25044b0aa249d61fe2655d68
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 83f39e4c795d57b6bb5aa5633ed481963419e041
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943035"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983290"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
@@ -29,6 +29,7 @@ ms.locfileid: "33943035"
 |error|SP4|Ошибка|
 |Инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
 |Конфигманажер|255|Управление с помощью диспетчера конфигураций|
+
 
 
 

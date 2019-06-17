@@ -4,12 +4,12 @@ description: Возможные значения защиты от защитн�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b83e219bfa5b8b784880546dc4b9f5109e4e2f5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ecc85ec9ba8f431f5a5b07c50f5865342a59db51
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947339"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979825"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>тип перечисления Дефендерпротектионтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947339"
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
 |подключить|1,1|Функциональная возможность блока.|
 |Аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
+
 
 
 

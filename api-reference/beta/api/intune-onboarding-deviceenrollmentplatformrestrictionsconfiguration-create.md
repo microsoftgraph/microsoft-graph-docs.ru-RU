@@ -4,12 +4,12 @@ description: Создание объекта deviceEnrollmentPlatformRestriction
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d598bd14c031f9f8e87c66b718470841f3d18c73
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0c2645c0019401fcf3d9beb13049b3c5990b882a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900274"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981246"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>Создание объекта deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceEnrollmentPlatformRestrictionsConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceEnrollmentPlatformRestrictionsConfiguration.
@@ -204,6 +204,7 @@ Content-Length: 2403
   }
 }
 ```
+
 
 
 

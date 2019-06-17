@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта onPremis
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e200923bdbbde14f9d0ffae1bb154bd87f54ffda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a423e52c49309eca4c6e8ce8929a09ce9cb8afac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900000"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980707"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Получение объекта onPremisesConditionalAccessSettings
 
@@ -47,7 +47,7 @@ GET /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -83,6 +83,7 @@ Content-Length: 363
   }
 }
 ```
+
 
 
 

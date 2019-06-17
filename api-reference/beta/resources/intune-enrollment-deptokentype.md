@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93776e8d74422509723172439c7e03fdeb27efd1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1055bca305b452dbeaeb8bf2ceee771a14ad08c6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941620"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982989"
 ---
 # <a name="deptokentype-enum-type"></a>тип перечисления Дептокентипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33941620"
 |none|нуль|Тип маркера — None|
 |DEP|1,1|Тип токена — DEP.|
 |Апплесчулманажер|2|Тип маркера — Apple School Manager|
+
 
 
 

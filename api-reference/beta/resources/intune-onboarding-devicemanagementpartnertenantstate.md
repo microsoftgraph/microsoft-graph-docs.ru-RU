@@ -4,12 +4,12 @@ description: Состояние партнера этого клиента.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f31cce7831bfb73ed49399daea7bc4438741d32
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a7c2c7e36d920a7f8ab08be75324983f583174b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940248"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992971"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>тип перечисления Девицеманажементпартнертенантстате
 
@@ -28,6 +28,7 @@ ms.locfileid: "33940248"
 |нулем|4|Подключение к партнеру завершается.|
 |клоняет|SP4|Партнерские сообщения отклоняются.|
 |не отвечает|17:00|Партнер не отвечает.|
+
 
 
 

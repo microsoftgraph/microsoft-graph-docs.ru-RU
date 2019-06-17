@@ -4,12 +4,12 @@ description: Удаляет объект Сиделоадингкэй.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acf93ab6fb2d1dae485c3dc3823c04efed8da467
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7b8728c2221a0638e32850f6f0a0f389dbc2a483
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899923"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980693"
 ---
 # <a name="delete-sideloadingkey"></a>Удаление Сиделоадингкэй
 
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sid
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceEn
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d215cff06cd4b35ea38330634e0e5d64337def7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 031b2f624d677eec076478d010f0588417985f22
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900316"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981273"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Получение deviceEnrollmentLimitConfiguration
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -81,6 +81,7 @@ Content-Length: 414
   }
 }
 ```
+
 
 
 

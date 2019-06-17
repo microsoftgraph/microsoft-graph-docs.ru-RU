@@ -4,12 +4,12 @@ description: Какие устройства филиала будут полу�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5869bcfaa3949a8463d2625c4e7de48897a62daf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 35b117b1a64650a475d392ffadf81769d3b0b08b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943608"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978670"
 ---
 # <a name="windowsupdatetype-enum-type"></a>тип перечисления Виндовсупдатетипе
 
@@ -28,6 +28,7 @@ ms.locfileid: "33943608"
 |Виндовсинсидербуилдфаст|4|Предварительная сборка Windows для предварительной сборки — Быстрая|
 |Виндовсинсидербуилдслов|SP4|Сборка для предварительной оценки Windows — низкая|
 |Виндовсинсидербуилдрелеасе|17:00|Выпуск сборки предварительной оценки Windows|
+
 
 
 

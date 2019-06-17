@@ -4,12 +4,12 @@ description: Возможные значения для дня недели
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c50c392b5db0656c8953948507e88d89a22ff28e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 53e3829abf56318ff32e0f528d08325e910a01ce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947388"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979986"
 ---
 # <a name="dayofweek-enum-type"></a>тип перечисления dayOfWeek
 
@@ -29,6 +29,7 @@ ms.locfileid: "33947388"
 |Пятница|SP4|Пятница.|
 |пятницам|17:00|Пятницам.|
 |субботу|6 |Субботу.|
+
 
 
 

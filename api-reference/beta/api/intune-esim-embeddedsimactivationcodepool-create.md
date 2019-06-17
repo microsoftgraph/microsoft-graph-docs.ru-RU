@@ -4,12 +4,12 @@ description: Создание нового объекта Ембеддедсим
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71da04670308603530c8525c4dc2240a920bd4e6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 405ddba4ef816d81ec20c1ece176e3d8811601c8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908149"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982674"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Создание Ембеддедсимактиватионкодепул
 
@@ -43,7 +43,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Ембеддедсимактиватионкодепул в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ембеддедсимактиватионкодепул.
@@ -110,6 +110,7 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
+
 
 
 

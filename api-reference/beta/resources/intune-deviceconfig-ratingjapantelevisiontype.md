@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de82f29720b125db4751de693e3d9a349177dbc9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c73b73526ee0f35180ff230fbd2958163dfd5473
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950867"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984599"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>тип перечисления Ратингжапантелевисионтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33950867"
 |Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
 |Аллблоккед|1,1|Не разрешать показ контента|
 |ЕксплиЦиталловед|2|Все ТЕЛЕВИЗИОНные материалы явно разрешены|
+
 
 
 

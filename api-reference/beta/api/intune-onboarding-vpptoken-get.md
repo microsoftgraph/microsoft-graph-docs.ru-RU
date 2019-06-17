@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта vppToken
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72ac5a0807aa933ee636b869d54d2a8ff04ef3f0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 82cae534bd4015c6a52a4e15b5b886d0bf048e6d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899818"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980602"
 ---
 # <a name="get-vpptoken"></a>Получить vppToken
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/vppTokens/{vppTokenId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -101,6 +101,7 @@ Content-Length: 1192
   }
 }
 ```
+
 
 
 

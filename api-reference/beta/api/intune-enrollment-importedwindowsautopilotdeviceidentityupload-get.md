@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Импо
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38f1db11fd85257323d7e84c1a8768735107764c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1c396afe7e0e744dc7a4ec2b6f5f5d43a049dc56
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33909150"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981603"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>Получение Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -46,7 +46,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,6 +76,7 @@ Content-Length: 248
   }
 }
 ```
+
 
 
 

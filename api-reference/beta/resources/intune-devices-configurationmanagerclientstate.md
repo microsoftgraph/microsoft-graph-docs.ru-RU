@@ -4,12 +4,12 @@ description: Состояние клиента Configuration Manager
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9be184d298b1cecc9cb3f442fb343e1e00f3d965
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b733a6593be16bf52c075176aff778f1789ba492
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983199"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>тип перечисления Конфигуратионманажерклиентстате
 
@@ -28,6 +28,7 @@ ms.locfileid: "33943006"
 |Инсталлфаилед|8 |Не удалось установить агент диспетчера конфигураций.|
 |Упдатефаилед|-11:00|Ошибка обновления от версии x до версии y агента Configuration Manager. |
 |Коммуникатионеррор|19|Агенту диспетчера конфигураций удалось подключиться к службе Configuration Manager ранее, но теперь она больше не может. |
+
 
 
 

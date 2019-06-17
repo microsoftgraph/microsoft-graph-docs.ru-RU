@@ -4,12 +4,12 @@ description: Сведения о зависимостях для парамет�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3353ef63aab0336a42fad3ac500115adc70a4e24
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 39fa333a9ad008df9b1e71a6ae36f1be160ff9ce
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943328"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984522"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>Тип ресурса Девицеманажементсеттингдепенденци
 
@@ -22,10 +22,10 @@ ms.locfileid: "33943328"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Дефинитионид|Строка|Идентификатор определения параметра зависит от|
+|Дефинитионид|String|Идентификатор определения параметра зависит от|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра зависимости|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "33943328"
   ]
 }
 ```
+
 
 
 

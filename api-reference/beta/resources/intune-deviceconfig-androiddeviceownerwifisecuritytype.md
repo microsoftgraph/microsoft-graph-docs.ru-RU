@@ -4,12 +4,12 @@ description: Типы безопасности Wi/Fi для владельца �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b015aa8c2e56df0a919b580d09f1a1d7e8bbe0c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 725a786de238d8965507dc590cfd200fd91b13e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948991"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983752"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>тип перечисления Андроиддевицеовнервифисекурититипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "33948991"
 |WEP|1,1|WEP-шифрование.|
 |Впаперсонал|2|WPA-личное/WPA2-личное.|
 |Впаентерприсе|SP4|WPA-предприятие/WPA2-предприятие. Для настройки параметров предприятия необходимо использовать тип Андроиддевицеовнерентерприсевификонфигуратион.|
+
 
 
 

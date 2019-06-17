@@ -4,12 +4,12 @@ description: Правила политики соответствия требо
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf41e4ecc15c88e1d2bda61742dd8d96b91821f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cc91f41e3144f21aeef706431ebaabb6bc98328b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947395"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979930"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>Тип ресурса Дефаултдевицекомплианцеполици
 
@@ -42,7 +42,7 @@ ms.locfileid: "33947395"
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
@@ -75,6 +75,7 @@ ms.locfileid: "33947395"
   "version": 1024
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Метки рейтинга фильмов в Новой Зелан
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53f2c6f6fc9777b1de8522541f1e0b84284ccca9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 274d5ea373d00d4b16e5d254e1a244499518c86f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950895"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984550"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>тип перечисления Ратингневзеаландмовиестипе
 
@@ -33,6 +33,7 @@ ms.locfileid: "33950895"
 |agesAbove18|8 |Классификация R18 ограничена лицами 18 лет и более|
 |ограниченной|9 |Классификация R ограничена определенными аудиториями|
 |agesAbove16Restricted|10 |Для классификации RP16 требуются средства просмотра в 16 сопровождаемых родителем или взрослым|
+
 
 
 

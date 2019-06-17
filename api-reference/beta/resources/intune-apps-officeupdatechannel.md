@@ -4,12 +4,12 @@ description: Перечисление, указывающее канал обн�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 042bb46558e5590aa55ffa49fb28203caff28b2f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c9895c4b8f4919314de6e4be49197f07c98ed735
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949740"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993335"
 ---
 # <a name="officeupdatechannel-enum-type"></a>тип перечисления Оффицеупдатечаннел
 
@@ -27,6 +27,7 @@ ms.locfileid: "33949740"
 |deferred|2|Пока не задокументировано.|
 |Firstreleasecurrent —|4|Пока не задокументировано.|
 |firstReleaseDeferred|SP4|Пока не задокументировано.|
+
 
 
 

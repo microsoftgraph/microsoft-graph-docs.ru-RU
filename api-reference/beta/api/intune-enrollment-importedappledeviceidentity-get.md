@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Импо
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea4f6434d5239fa563219bbc259ae99aefad4d98
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ecbd0a8dd35e9c5247e969e1fb60837a0310f5f6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908506"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982051"
 ---
 # <a name="get-importedappledeviceidentity"></a>Получение Импортедаппледевицеидентити
 
@@ -46,7 +46,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,6 +84,7 @@ Content-Length: 648
   }
 }
 ```
+
 
 
 

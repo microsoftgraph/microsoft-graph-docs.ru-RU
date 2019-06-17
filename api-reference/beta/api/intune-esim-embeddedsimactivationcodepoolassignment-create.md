@@ -4,12 +4,12 @@ description: Создание нового объекта Ембеддедсим
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 235d7b291532e08596feffef0804716048703277
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 55ce932d8d8bcbac57fcfc1c65cce571a0af0d37
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905541"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982604"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>Создание Ембеддедсимактиватионкодепулассигнмент
 
@@ -43,14 +43,14 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Ембеддедсимактиватионкодепулассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ембеддедсимактиватионкодепулассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для назначения внедренного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
+|id|String|Уникальный идентификатор для назначения внедренного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип групп, на которые ссылается встроенный пул кода активации SIM-карты.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 228
   }
 }
 ```
+
 
 
 

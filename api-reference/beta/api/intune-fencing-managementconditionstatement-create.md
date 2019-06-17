@@ -4,12 +4,12 @@ description: Создание нового объекта Манажементк
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9637c200c799d5a32610df9df3e86cd573dc8b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5cf357169752ef2b73ee22992cde782d063fb6df
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905387"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984074"
 ---
 # <a name="create-managementconditionstatement"></a>Создание Манажементкондитионстатемент
 
@@ -44,14 +44,14 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Манажементкондитионстатемент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Манажементкондитионстатемент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
 |displayName|Строка|Имя, определенное администратором оператора условия управления.|
 |description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
@@ -112,6 +112,7 @@ Content-Length: 491
   ]
 }
 ```
+
 
 
 

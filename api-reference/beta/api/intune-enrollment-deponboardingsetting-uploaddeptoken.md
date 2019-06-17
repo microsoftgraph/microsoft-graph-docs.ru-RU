@@ -4,12 +4,12 @@ description: Отправка нового маркера программы р�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ea0a8ce6984ba5598cc42a04a9d3799aa50a10e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 888631ec803fccf8db2e7718a94631081462db88
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908639"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980322"
 ---
 # <a name="uploaddeptoken-action"></a>Действие uploadDepToken
 
@@ -43,7 +43,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -79,6 +79,7 @@ Content-length: 69
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

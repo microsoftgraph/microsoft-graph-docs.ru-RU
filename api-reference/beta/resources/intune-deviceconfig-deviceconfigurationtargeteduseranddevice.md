@@ -4,12 +4,12 @@ description: Сводка по конфликтам для набора поли
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94feaec798326c1a2a8c6ad4ed66eedff55344da
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 012a29a7dc0f5cd9fc6332ff99062b6a295792ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946996"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995905"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса Девицеконфигуратионтаржетедусеранддевице
 
@@ -23,13 +23,13 @@ ms.locfileid: "33946996"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |deviceId|String|Идентификатор устройства в возврате.|
-|deviceName|Строка|Имя устройства в возврате.|
+|deviceName|String|Имя устройства в возврате.|
 |userId|String|Идентификатор пользователя в возврате.|
-|userDisplayName|Строка|Отображаемое имя пользователя в репозитории|
-|userPrincipalName|Строка|ИМЯ участника-пользователя в возврате.|
+|userDisplayName|String|Отображаемое имя пользователя в репозитории|
+|userPrincipalName|Строка|Имя участника-пользователя в возврате.|
 |Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата для этой связи пользователя и устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,6 +50,7 @@ ms.locfileid: "33946996"
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

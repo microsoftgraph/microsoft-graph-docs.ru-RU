@@ -4,19 +4,19 @@ description: С помощью этого API можно создать объе
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f023c8882600952feeacffea62b90dc167cf58a
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: e81ecd9b31ab5f2836e40e3b461a4974e161eb60
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914688"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981463"
 ---
 # <a name="create-user"></a>Создание пользователя
 
-Создание пользователя. В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+Создание [пользователя](../resources/user.md). В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
 
 >[!NOTE]
->Внешние пользователи должны создаваться с помощью приглашения. Если нужно включить создание внешних пользователей, см. ресурс [invitation](../resources/invitation.md).
+>Чтобы создать внешних пользователей, используйте [API приглашений](invitation-post.md).
 
 ## <a name="permissions"></a>Разрешения
 

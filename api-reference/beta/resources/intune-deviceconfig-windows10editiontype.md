@@ -4,12 +4,12 @@ description: Тип выпуска Windows 10.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 824fe87c381332d90adfa243ef89eeafc8cc1773
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e304cb77694554443b879b145f9735ab6b315069
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944343"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982289"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -35,6 +35,14 @@ ms.locfileid: "33944343"
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
 |windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
 |notConfigured|12|NotConfigured|
+|windows10Home|13|Windows 10 Домашняя|
+|windows10HomeChina|14|Windows 10 домашняя (Китай)|
+|windows10HomeN|означает|Windows 10 Домашняя N|
+|windows10HomeSingleLanguage|столбцов|Windows 10 Домашняя, для одного языка|
+|windows10Mobile|17|Windows 10 Mobile|
+|windows10IoTCore|0,18|Windows 10 IoT базовая|
+|windows10IoTCoreCommercial|19|Windows 10 IoT базовая коммерческая версия|
+
 
 
 

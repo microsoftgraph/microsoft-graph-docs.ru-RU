@@ -4,12 +4,12 @@ description: Метки оценок фильмов в Германии
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64aada06052f2cf65598a545b3965459e30e0d6f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 10bb7c9b759b23066ac4cfcc7a43f9bc8b2b9d37
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950986"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984683"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>тип перечисления Ратингжерманимовиестипе
 
@@ -29,6 +29,7 @@ ms.locfileid: "33950986"
 |agesAbove12|SP4|AB 12 Жахрен, от 12 лет до 12 лет|
 |agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
 |взрослые|6 |Только для Жахрен, только для взрослых|
+
 
 
 

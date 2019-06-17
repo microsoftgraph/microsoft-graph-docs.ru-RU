@@ -4,12 +4,12 @@ description: Базовый класс конфигурации регистра
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d05914e1b25ac3712ac60274facf0904c91d4224
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 5975327fbad58a7a84e164139137f4924aac1a9b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940458"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982429"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -38,7 +38,7 @@ ms.locfileid: "33940458"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств в формате UTC|
 |version|Int32|Версия конфигурации регистрации устройств|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства|
@@ -63,6 +63,7 @@ ms.locfileid: "33940458"
   "version": 1024
 }
 ```
+
 
 
 
