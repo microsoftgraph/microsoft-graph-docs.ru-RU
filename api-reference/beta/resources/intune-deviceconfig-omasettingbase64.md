@@ -4,12 +4,12 @@ description: Определение параметров OMA в кодировк
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8affdb1f073831df54837420b54f9a0ea19ad956
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6ecb77bc317216e77cb53c31b8be9bded9cafc19
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951046"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995555"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -28,10 +28,10 @@ ms.locfileid: "33951046"
 |displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Описание. Наследуется от ресурса [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|Строка|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
+|fileName|String|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
 |value|Строка|Значение (строка в кодировке Base64).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "33951046"
   "value": "String"
 }
 ```
+
 
 
 

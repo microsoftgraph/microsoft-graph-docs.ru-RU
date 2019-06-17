@@ -4,12 +4,12 @@ description: Обновление свойств объекта windowsInformati
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cd73750c8859289b179dd7017d587d101126542
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24dd2ad7869af76197c0a9606073d8f213049aab
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33902978"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987749"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Обновление объекта windowsInformationProtectionAppLockerFile
 
@@ -46,7 +46,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).
@@ -98,6 +98,7 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
 
 
 

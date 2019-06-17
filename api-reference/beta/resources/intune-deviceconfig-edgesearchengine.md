@@ -4,12 +4,12 @@ description: Позволяет ИТ-администраторам предва
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a83965eb67762135eba3dcf1edf31fb4aec7827
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c1e44ee54752817b8dc95a1126a333d5065b507b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946730"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990234"
 ---
 # <a name="edgesearchengine-resource-type"></a>Тип ресурса edgeSearchEngine
 
@@ -27,7 +27,7 @@ ms.locfileid: "33946730"
 |:---|:---|:---|
 |edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|Позволяет ИТ-администраторам предварительно задавать поисковую систему по умолчанию для управляемых устройств. Возможные значения: `default`, `bing`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "33946730"
   "edgeSearchEngineType": "String"
 }
 ```
+
 
 
 

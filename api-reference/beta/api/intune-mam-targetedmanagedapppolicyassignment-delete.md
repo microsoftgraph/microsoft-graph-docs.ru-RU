@@ -4,12 +4,12 @@ description: Удаляет объект targetedManagedAppPolicyAssignment.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32008ea227b64756691f20f9e2a4baeaedde5aef
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3fc21fe4ebbf0eb509b21e410b905808d044baa0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903006"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986937"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Удаление targetedManagedAppPolicyAssignment
 
@@ -47,7 +47,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

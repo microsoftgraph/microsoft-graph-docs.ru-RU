@@ -4,12 +4,12 @@ description: 'Ресурс "Определение роли". Определен
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3de415e6f0ef0ce7efa23c69a6692ecabd054130
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2721830d10cba47a20446c177a726ad875c6c4bb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940535"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993615"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Тип ресурса deviceAndAppManagementRoleDefinition
 
@@ -43,7 +43,7 @@ ms.locfileid: "33940535"
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |roleAssignments|Коллекция объектов [roleAssignment](../resources/intune-rbac-roleassignment.md)|Список назначений ролей для определения роли. Наследуется от [roleDefinition](../resources/intune-rbac-roledefinition.md).|
@@ -107,6 +107,7 @@ ms.locfileid: "33940535"
   ]
 }
 ```
+
 
 
 

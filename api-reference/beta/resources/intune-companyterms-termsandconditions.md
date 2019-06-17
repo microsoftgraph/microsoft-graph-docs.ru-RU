@@ -4,12 +4,12 @@ description: Объект termsAndConditions представляет метад
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dc02275b32cdc3b5c0ca789890245c9b8593dec
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 756b66776599b07ca95d54f75ca549a5319ef581
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949159"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989471"
 ---
 # <a name="termsandconditions-resource-type"></a>Тип ресурса termsAndConditions
 
@@ -31,21 +31,21 @@ ms.locfileid: "33949159"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор политики использования.|
+|id|String|Уникальный идентификатор политики использования.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |modifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|Строка|Имя политики использования, указанное администратором. |
 |description|Строка|Описание политики использования, указанное администратором.|
 |title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
-|bodyText|Строка|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
+|bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
 |version|Int32|Целое число, указывающее текущую версию условий. Увеличивается, когда администратор вносит изменения в условия и запрашивает повторное принятие измененной политики у пользователей.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|Коллекция [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|Список назначений групп для этой политики Т_амп_к.|
+|groupAssignments|Коллекция [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|Список назначений групп для этой политики T&C.|
 |assignments|Коллекция объектов [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|Список назначений для этой политики условий.|
 |acceptanceStatuses|Коллекция объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md)|Список состояний принятия для этой политики условий.|
 
@@ -72,6 +72,7 @@ ms.locfileid: "33949159"
   "version": 1024
 }
 ```
+
 
 
 

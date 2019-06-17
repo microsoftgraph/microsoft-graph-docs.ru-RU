@@ -4,12 +4,12 @@ description: Представляет элемент checkBox ADMX и логич
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72171c2216319ae13b9ba0eff6e516a6c7fd9309
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cbcff2437270ef7c56846f0945e856a1cc62ba03
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941109"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982968"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>Тип ресурса Граупполиципресентатиончеккбокс
 
@@ -34,12 +34,12 @@ ms.locfileid: "33941109"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|Дефаултчеккед|Логический|Значение по умолчанию для этого флажка. Значение по умолчанию  false.|
+|Дефаултчеккед|Boolean|Значение по умолчанию для этого флажка. Значение по умолчанию  false.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |RDLC|[Граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
@@ -61,6 +61,7 @@ ms.locfileid: "33941109"
   "defaultChecked": true
 }
 ```
+
 
 
 

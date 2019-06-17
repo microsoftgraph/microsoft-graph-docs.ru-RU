@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75798ec0e66086b3dbf1425d297ed7f0a29808c0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 754579e16908edc08f3bfb7e158c9533871e36e2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950468"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991242"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Тип ресурса Ентерприсекодесигнингцертификате
 
@@ -36,12 +36,12 @@ ms.locfileid: "33950468"
 |status|[Цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|Строка|Имя поставщика сертификата.|
-|имени|Строка|Значение издателя для сертификата.|
+|Иссуернаме|String|Имя поставщика сертификата.|
+|имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |Уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,6 +66,7 @@ ms.locfileid: "33950468"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

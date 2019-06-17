@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceManagement
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bff6eec75e1c29e219cd8f2761c6b270a458728d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b0522c5acfc8a179bc30d7532eab1d8d239c395a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900035"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980917"
 ---
 # <a name="update-devicemanagementpartner"></a>Обновление объекта deviceManagementPartner
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).
@@ -113,6 +113,7 @@ Content-Length: 713
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
 
 
 

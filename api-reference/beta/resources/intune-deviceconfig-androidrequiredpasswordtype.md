@@ -4,12 +4,12 @@ description: Требуемый тип пароля для Android.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bcdf143e880940bd407d3c1d550b51ee491346c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b2cfbf31bc2c263031e2e850e4caf479abb325ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948501"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988953"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>тип перечисления Андроидрекуиредпассвордтипе
 
@@ -30,6 +30,7 @@ ms.locfileid: "33948501"
 |числовых|17:00|Необходим числовой пароль.|
 |Нумериккомплекс|6 |Необходим числовой сложный пароль.|
 |любой|7 |Необходим пароль или шаблон, а любой из них приемлем.|
+
 
 
 

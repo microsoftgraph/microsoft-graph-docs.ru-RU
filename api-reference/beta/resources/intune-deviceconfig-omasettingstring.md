@@ -4,12 +4,12 @@ description: Определение строки параметра OMA.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53840e360446975dcbe6fda170ea26892fce3983
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dc59c22933b888227678db70d9a48d601d699a8e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950951"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990248"
 ---
 # <a name="omasettingstring-resource-type"></a>Тип ресурса omaSettingString
 
@@ -30,7 +30,7 @@ ms.locfileid: "33950951"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Строка|Значение|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "33950951"
   "value": "String"
 }
 ```
+
 
 
 

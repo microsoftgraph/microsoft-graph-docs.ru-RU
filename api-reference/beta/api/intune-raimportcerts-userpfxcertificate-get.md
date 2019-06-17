@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Усер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d1b8c0464f74f9c88288f9c71fe1cbff1aac690
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 03f62d2efd087c02c2ed1d3511377fd949ff16aa
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899762"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988778"
 ---
 # <a name="get-userpfxcertificate"></a>Получение Усерпфксцертификате
 
@@ -46,7 +46,7 @@ GET /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,6 +86,7 @@ Content-Length: 742
   }
 }
 ```
+
 
 
 

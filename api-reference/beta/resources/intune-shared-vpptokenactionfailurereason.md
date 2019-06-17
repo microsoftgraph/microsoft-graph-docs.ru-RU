@@ -4,12 +4,12 @@ description: Возможные типы причин сбоя действия 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8e06243d8b719ad4cb3f2a2c264fdafe7e468cf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b0f8aacb6fc6f95b8c8085a78ed2851b16622357
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938641"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990990"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>тип перечисления Впптокенактионфаилуререасон
 
@@ -27,6 +27,7 @@ ms.locfileid: "33938641"
 |Интерналеррор|2|Произошла внутренняя ошибка.|
 |Експиредвпптокен|4|Произошла ошибка из-за истечения срока действия маркера Apple Volume Purchase Program.|
 |Експиредапплепушнотификатионцертификате|SP4|Произошла ошибка из-за истечения срока действия сертификата push-уведомлений Apple Volume Purchase Program.|
+
 
 
 

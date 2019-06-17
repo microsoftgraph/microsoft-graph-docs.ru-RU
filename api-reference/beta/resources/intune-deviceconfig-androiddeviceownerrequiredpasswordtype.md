@@ -4,12 +4,12 @@ description: Обязательный тип пароля для политик�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6d81a71fe01addb6111252b28aee01072fe0dd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e55aa24896e72a2351cfbfc2ac8a88ac2a2d3dd8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949068"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983794"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>тип перечисления Андроиддевицеовнеррекуиредпассвордтипе
 
@@ -30,6 +30,7 @@ ms.locfileid: "33949068"
 |цифрового|17:00|По крайней мере буквенно-цифровые пароли|
 |Алфанумериквиссимболс|6 |По крайней мере буквенно-цифровые символы.|
 |Ловсекуритибиометрик|7 |Необходим пароль на основе биометрического уровня безопасности.|
+
 
 
 

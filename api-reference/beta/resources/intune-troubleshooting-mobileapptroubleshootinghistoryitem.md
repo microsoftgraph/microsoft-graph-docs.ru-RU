@@ -4,12 +4,12 @@ description: Элемент History, содержащийся в событии 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e63de7a150f36529237aac6f5f0794c8407e13e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7158855510df58b56fc63b467ec721250ca502d3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938676"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983584"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Тип ресурса Мобилеапптраублешутингхисторитем
 
@@ -24,7 +24,7 @@ ms.locfileid: "33938676"
 |:---|:---|:---|
 |Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,6 +40,7 @@ ms.locfileid: "33938676"
   "occurrenceDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Типы безопасности Wi/Fi.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85c317706bb953fdeef202e4df9ec114944a7630
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2245069bfda8ced7c16d23465d510c98f1bc5eef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944441"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991536"
 ---
 # <a name="wifisecuritytype-enum-type"></a>тип перечисления Вифисекурититипе
 
@@ -28,6 +28,7 @@ ms.locfileid: "33944441"
 |WEP|4|WEP-шифрование.|
 |wpa2Personal|SP4|WPA2 — личное.|
 |wpa2Enterprise|17:00|WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип Виндовсвифиентерприсиапконфигуратион.|
+
 
 
 

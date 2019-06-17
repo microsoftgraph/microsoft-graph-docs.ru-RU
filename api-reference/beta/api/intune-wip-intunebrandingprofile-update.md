@@ -4,12 +4,12 @@ description: Обновление свойств объекта Интунебр
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e59fcf95d436aca53cb5dc6ab61feda6f7d6d77
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b8d5f80610692aa46b52a2e00101a662549dd32a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899188"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990583"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление Интунебрандингпрофиле
 
@@ -43,33 +43,34 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ профиля|
-|имя_профиля|Строка|Имя профиля|
-|Профиледескриптион|Строка|Описание профиля|
-|Исдефаултпрофиле|Логический|Показывает, используется ли профиль по умолчанию.|
-|createdDateTime|DateTimeOffset|При создании Брандингпрофиле.|
-|lastModifiedDateTime|DateTimeOffset|При последнем изменении Брандингпрофиле.|
-|displayName|Строка|Название компании или организации, которое отображается пользователям.|
-|contactITName|Строка|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
-|contactITPhoneNumber|Строка|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
-|contactITEmailAddress|Строка|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
-|contactITNotes|Строка|Текстовые комментарии в отношении пользователя или организации, ответственных за ИТ-поддержку.|
-|privacyUrl|Строка|URL-адрес страницы с политикой конфиденциальности компании или организации.|
-|onlineSupportSiteUrl|Строка|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
-|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
-|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
-|showLogo|Логический|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
-|showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на светлом фоне.|
+|имя_профиля|String|Имя профиля|
+|Профиледескриптион|String|Описание профиля|
+|Исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
+|displayName|Строка|Название компании или организации, которое отображается для конечных пользователей|
+|contactITName|String|Имя пользователя или организации, ответственных за ИТ-поддержку|
+|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
+|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
+|contactITNotes|String|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
+|privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
+|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
+|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
+|themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
+|showLogo|Boolean|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
+|showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
+|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
 |Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|Кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
 
 
 
@@ -83,7 +84,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1205
+Content-length: 1264
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -120,7 +121,8 @@ Content-length: 1205
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
 
@@ -129,7 +131,7 @@ Content-length: 1205
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1377
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -169,9 +171,11 @@ Content-Length: 1377
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
-  }
+  },
+  "customPrivacyMessage": "Custom Privacy Message value"
 }
 ```
+
 
 
 

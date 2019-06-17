@@ -4,12 +4,12 @@ description: Удаляет объект Граупполицидефинити�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 704e48c083874ca6fad85f2ad0226ba67c2b607d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 02a598f67f6551d9073ca83e4f8c1fcbf7e3d77f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905065"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984718"
 ---
 # <a name="delete-grouppolicydefinitionvalue"></a>Удаление Граупполицидефинитионвалуе
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

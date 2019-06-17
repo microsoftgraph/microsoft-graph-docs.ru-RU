@@ -4,12 +4,12 @@ description: Удаляет объект Ембеддедсимактивати�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a81edef2db3c1560974d27f5f23c2208a4b2c87a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2947fc5ecfd89dba5a931745c6761537730c49df
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905562"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34982590"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>Удаление Ембеддедсимактиватионкодепулассигнмент
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

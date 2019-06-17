@@ -4,12 +4,12 @@ description: Тип устройства.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf45f358a7c6423a689a60f163153485a2a3ff3c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 197009595c54b7711b908c57df7ae7c381597631
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946898"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989968"
 ---
 # <a name="devicetypes-enum-type"></a>тип перечисления Девицетипес
 
@@ -44,6 +44,7 @@ ms.locfileid: "33946898"
 |BlackBerry|100|BlackBerry.|
 |Положите|101|Положите.|
 |unknown|255|Указывает, что тип устройства неизвестен.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Функция Android кэйгуард.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00c63a04a2fe84f67fd9e05011eb68fce452a326
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f62e2a8055dd6e8f46ac40a06d0c8f0bfc7677ad
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33948564"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988943"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>тип перечисления Андроидкэйгуардфеатуре
 
@@ -30,6 +30,7 @@ ms.locfileid: "33948564"
 |распознавания|17:00|Использование датчиков отпечатков пальцев в защищенных экранах кэйгуард.|
 |Ремотеинпут|6 |Ввод текста уведомления при использовании экранов безопасного кэйгуард.|
 |Аллфеатурес|7 |Все компоненты кэйгуард, когда на экранах безопасности кэйгуард.|
+
 
 
 

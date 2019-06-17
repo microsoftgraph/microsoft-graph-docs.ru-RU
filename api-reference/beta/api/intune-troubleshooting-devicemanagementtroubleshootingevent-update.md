@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceManagement
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38fcc4ce0140a36f20887bd4bb58f77facc7a00c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 75ee9c10a766c433fc9f7940c48d2558a28aef5d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898700"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990808"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Обновление объекта deviceManagementTroubleshootingEvent
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).
@@ -54,7 +54,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе.|
 |Траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении.|
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Это необязательное поле|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Это необязательное поле|
 |Аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок|
 
 
@@ -136,6 +136,7 @@ Content-Length: 901
   ]
 }
 ```
+
 
 
 

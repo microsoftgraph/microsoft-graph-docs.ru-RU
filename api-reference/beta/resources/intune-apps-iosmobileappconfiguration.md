@@ -4,12 +4,12 @@ description: Содержит свойства, унаследованные с�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 921a8278f80b6f6d73e5cde119b64be4b9508bb9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: eea6da94d447d93ee843b6d9c9599bb734482cfe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950363"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986349"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>тип ресурса iosMobileAppConfiguration
 
@@ -45,7 +45,7 @@ ms.locfileid: "33950363"
 |encodedSettingXml|Двоичный|конфигурация приложения службы управления мобильными устройствами двоичная Base64.|
 |параметры|Сбор данных [appConfigurationSettingItem](../resources/intune-apps-appconfigurationsettingitem.md)|элементы параметра конфигурации приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md)|Список заданий группы для настройки приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -88,6 +88,7 @@ ms.locfileid: "33950363"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Параметры отображения уведомлений ц
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b11c793d2ef294bf9026de9f1869cdea28babfab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87ae2750ee5aea35abbbc3077940a9e1ab2ee4ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943636"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978712"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>тип перечисления Виндовсупдатенотификатиондисплайоптион
 
@@ -26,6 +26,7 @@ ms.locfileid: "33943636"
 |Дефаултнотификатионс|1,1|Используйте уведомления центра обновления Windows по умолчанию.|
 |Рестартварнингсонли|2|Отключить все уведомления, Кроме предупреждений о перезапуске.|
 |Дисаблеаллнотификатионс|4|Отключение всех уведомлений, в том числе предупреждений о перезапуске.|
+
 
 
 

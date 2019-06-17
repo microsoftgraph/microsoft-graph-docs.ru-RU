@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9fc72352f667f0d5b6a3801b10582b6707489ed0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f7bd4e156551258d98885490fbcb9dc0cd90163e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944931"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992019"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Тип ресурса mediaContentRatingAustralia
 
@@ -25,7 +25,7 @@ ms.locfileid: "33944931"
 |movieRating|[Ратингаустралиамовиестипе](../resources/intune-deviceconfig-ratingaustraliamoviestype.md)|Оценка фильмов выбрана для Австралии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
 |tvRating|[Ратингаустралиателевисионтипе](../resources/intune-deviceconfig-ratingaustraliatelevisiontype.md)|Рейтинг для телевизора выбран для Австралии. Возможные значения: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "33944931"
   "tvRating": "String"
 }
 ```
+
 
 
 

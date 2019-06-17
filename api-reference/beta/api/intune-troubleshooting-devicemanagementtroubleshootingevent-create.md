@@ -4,12 +4,12 @@ description: Создание объекта deviceManagementTroubleshootingEven
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dab72c527651e1975c236cc13ce4a420d00ddbca
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d03c31c0bc60aa52bdf40db13a6f3e224c5b64c6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898748"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990885"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Создание объекта deviceManagementTroubleshootingEvent
 
@@ -43,7 +43,7 @@ POST /deviceManagement/troubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceManagementTroubleshootingEvent в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceManagementTroubleshootingEvent.
@@ -54,7 +54,7 @@ POST /deviceManagement/troubleshootingEvents
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе.|
 |Траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении.|
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Это необязательное поле|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Это необязательное поле|
 |Аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок|
 
 
@@ -136,6 +136,7 @@ Content-Length: 901
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Импортед
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5cf209945c23f904b4c58dcb156dcb77db6fe1d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: df2e778f6c95b5b7e664eb3b99f7b2d3598f98de
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908380"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981596"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Обновление Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -43,14 +43,14 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
@@ -89,6 +89,7 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
 
 
 

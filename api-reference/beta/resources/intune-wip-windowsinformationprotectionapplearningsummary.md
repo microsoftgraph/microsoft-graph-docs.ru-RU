@@ -4,12 +4,12 @@ description: Объект сводки по обучению Windows Information
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d5362e34ba067f02f794ca587ae1ccceb00e1af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2d827c38b0b7eb784e58ad722c2039990ce33495
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938698"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983479"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionAppLearningSummary
 
@@ -31,12 +31,12 @@ ms.locfileid: "33938698"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Имя приложения|
 |applicationType|[Аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,7 @@ ms.locfileid: "33938698"
   "deviceCount": 1024
 }
 ```
+
 
 
 

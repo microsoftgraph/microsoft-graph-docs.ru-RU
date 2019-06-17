@@ -4,12 +4,12 @@ description: Назначение лицензии пользователя "п�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5377c57d095fd07aabfe90609916609dee8fb8fa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a8b6676b827a75581f4f8f527d44ea7161f80f55
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950454"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987875"
 ---
 # <a name="iosvppappassigneduserlicense-resource-type"></a>Тип ресурса Иосвппаппассигнедусерлиценсе
 
@@ -35,12 +35,12 @@ ms.locfileid: "33950454"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
-|Усеремаиладдресс|Строка|Адрес электронной почты пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|Усеремаиладдресс|String|Адрес электронной почты пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|Идентификатор пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|Имя пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userPrincipalName|Строка|Имя участника-пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,7 @@ ms.locfileid: "33950454"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

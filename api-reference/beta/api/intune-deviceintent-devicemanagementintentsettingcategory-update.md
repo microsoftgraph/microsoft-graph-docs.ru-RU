@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5908628ec581db8c1112c18de29bab0c1a3da12b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c894e61ced9a483986e410e8d587a59f9f7e5b2e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915925"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960155"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>Обновление Девицеманажементинтентсеттингкатегори
 
@@ -43,8 +43,8 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Девицеманажементинтентсеттингкатегори](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [девицеманажементинтентсеттингкатегори](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентсеттингкатегори](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md).
 
@@ -86,6 +86,7 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ресурсы telecomExpenseManagementPartner представля
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7479619bf7493ca2f043d7423d994f9fb0b6f905
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d6f0a0fd7b98627adfb49c88f619c6d8d6fd9fbe
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939828"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991004"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Тип ресурса telecomExpenseManagementPartner
 
@@ -38,7 +38,7 @@ ms.locfileid: "33939828"
 |enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "33939828"
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Объект, представляющий определенную
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffaa90db6b47502dfd66c39538f14a3c1a52b669
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 438fbf37cb419145d63b8d25f9e8145005eac6cc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943412"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984417"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>Тип ресурса Девицеманажементтемплате
 
@@ -27,7 +27,8 @@ ms.locfileid: "33943412"
 |[Создание Девицеманажементтемплате](../api/intune-deviceintent-devicemanagementtemplate-create.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Создание нового объекта [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) .|
 |[Удаление Девицеманажементтемплате](../api/intune-deviceintent-devicemanagementtemplate-delete.md)|Нет|Удаляет объект [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md).|
 |[Обновление Девицеманажементтемплате](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Обновление свойств объекта [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) .|
-|[Действие createInstance](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Н/Д|
+|[Действие createInstance](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Пока не задокументировано.|
+|[Функция Compare](../api/intune-deviceintent-devicemanagementtemplate-compare.md)|Коллекция [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -35,11 +36,13 @@ ms.locfileid: "33943412"
 |id|String|Идентификатор шаблона|
 |displayName|Строка|Отображаемое имя шаблона|
 |description|String|Описание шаблона|
-|versionInfo|Строка|Сведения о версии шаблона|
-|нерекомендуемый|Логический|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
+|versionInfo|String|Сведения о версии шаблона|
+|нерекомендуемый|Boolean|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
 |Интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
+|TemplateType — тип|[Девицеманажементтемплатетипе](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|publishedDateTime|DateTimeOffset|При публикации шаблона|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |settings|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция всех параметров, которые содержит этот шаблон|
@@ -62,9 +65,12 @@ ms.locfileid: "33943412"
   "description": "String",
   "versionInfo": "String",
   "isDeprecated": true,
-  "intentCount": 1024
+  "intentCount": 1024,
+  "templateType": "String",
+  "publishedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

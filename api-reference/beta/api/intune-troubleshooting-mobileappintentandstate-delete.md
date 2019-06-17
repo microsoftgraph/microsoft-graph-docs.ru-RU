@@ -4,12 +4,12 @@ description: Удаляет объект Мобилеаппинтентандс�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95be9c13776e875e1e9a09e6534299b5592b4762
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ebacc1131c34a7244d2219bf9210ccf6255347ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899342"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990752"
 ---
 # <a name="delete-mobileappintentandstate"></a>Удаление Мобилеаппинтентандстате
 
@@ -43,7 +43,7 @@ DELETE /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

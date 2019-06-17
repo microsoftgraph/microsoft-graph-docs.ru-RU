@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Винд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 135f9cfe1f3d703aa7930633177619cf5cf016b5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4921289bc8ae3bcbe4b2e2b7ee8f9a0725ab65b9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33903090"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987826"
 ---
 # <a name="get-windowsinformationprotectiondeviceregistration"></a>Получение Виндовсинформатионпротектиондевицерегистратион
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{window
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 450
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Пара "ключ-значение" для хранения пол
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc34bad30ff5bc33f60e6ec4e561e6644b97cc37
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed0df0d07c21ea41aaad5eb9aac993b35ca28f8c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938662"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995975"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 
@@ -25,7 +25,7 @@ ms.locfileid: "33938662"
 |name|String|Имя для этой пары "ключ-значение"|
 |value|String|Значение для этой пары "ключ-значение"|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "33938662"
   "value": "String"
 }
 ```
+
 
 
 

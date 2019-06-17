@@ -4,12 +4,12 @@ description: Обновление свойств объекта Сиделоад
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33e0e04a2caaeca4f4df111aa7ecca35e1d95e52
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 87940a3a17f46614c086ab363e5aa00a9af55179
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899825"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980644"
 ---
 # <a name="update-sideloadingkey"></a>Обновление Сиделоадингкэй
 
@@ -43,19 +43,19 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
+|id|String|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
 |displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
 |description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |Тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|Строка|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 
 
@@ -98,6 +98,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

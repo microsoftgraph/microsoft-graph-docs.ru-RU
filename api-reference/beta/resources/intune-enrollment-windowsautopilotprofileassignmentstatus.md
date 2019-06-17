@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d241d93924de254af3cb76adfab27b49291b97f2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3be930f3289891235a1462d0322323eb9b44bf60
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941396"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989751"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>тип перечисления Виндовсаутопилотпрофилеассигнментстатус
 
@@ -29,6 +29,7 @@ ms.locfileid: "33941396"
 |Нотассигнед|SP4|Не назначено|
 |закончен|17:00|Ожидание назначения|
 |сбоев|6 | Сбой назначения|
+
 
 
 

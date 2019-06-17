@@ -4,12 +4,12 @@ description: Создание объекта windowsInformationProtectionNetwork
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 567d6ceb8cd197cd60cbee4eff7e6886a7cae01b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b78f83ae101b555450fb6939ff180a95f5e7bb7d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898892"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990465"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Создание объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -43,14 +43,14 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта windowsInformationProtectionNetworkLearningSummary в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionNetworkLearningSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
@@ -89,6 +89,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 

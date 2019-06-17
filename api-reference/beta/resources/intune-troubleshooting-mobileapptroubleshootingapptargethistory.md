@@ -4,12 +4,12 @@ description: Элемент History, содержащийся в событии 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fd3ba328dac666feac9f5a87dd8cfebe7627f43
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a0b90b903c024377ad74509f8a16617b1dd28fb1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939749"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990969"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингапптаржесистори
 
@@ -26,11 +26,11 @@ ms.locfileid: "33939749"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|Секуритиграупид|Строка|Идентификатор группы безопасности AAD, к которой назначена эта группа.|
+|Секуритиграупид|String|Идентификатор группы безопасности AAD, к которой назначена эта группа.|
 |Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "33939749"
   "errorCode": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Класс, содержащий свойства для свойс
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c252e7912f3f34e300e1f412db63133ea3acbd8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7028a91f92e87009bdf2899abaafc6bcb5aa0fc0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949362"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991718"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
 
@@ -22,11 +22,11 @@ ms.locfileid: "33949362"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя.|
-|oldValue|Строка|Старое значение.|
+|displayName|String|Отображаемое имя.|
+|oldValue|String|Старое значение.|
 |newValue|String|Новое значение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "33949362"
   "newValue": "String"
 }
 ```
+
 
 
 

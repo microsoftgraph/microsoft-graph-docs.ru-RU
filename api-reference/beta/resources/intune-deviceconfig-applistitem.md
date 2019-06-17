@@ -4,12 +4,12 @@ description: Представляет приложение в списке уп�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d29fca9155ac14c7b8ebf9ad862bda3bed874353
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b6a6eb9922accf3eb59ecd8e8b0c31edc7fa7e99
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947717"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987588"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
 
@@ -23,11 +23,11 @@ ms.locfileid: "33947717"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|Строка|Имя приложения|
-|publisher|Строка|Издатель приложения|
+|publisher|String|Издатель приложения|
 |appStoreUrl|String|URL-адрес приложения в Магазине|
 |appId|String|Идентификатор приложения или его пакета|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "33947717"
   "appId": "String"
 }
 ```
+
 
 
 

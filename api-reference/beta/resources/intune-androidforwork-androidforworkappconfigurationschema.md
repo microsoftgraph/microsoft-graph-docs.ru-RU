@@ -4,12 +4,12 @@ description: Схема, описывающая пользовательские
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 511dbc03064368b2c0d8a9f57b929eefc5d4cb8b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 580799b533c055adeca7a6bfd443078a92148cd3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950755"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992845"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchema
 
@@ -31,11 +31,11 @@ ms.locfileid: "33950755"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
+|id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -75,6 +75,7 @@ ms.locfileid: "33950755"
   ]
 }
 ```
+
 
 
 

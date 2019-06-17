@@ -4,12 +4,12 @@ description: Запрос на удаление активного соедин�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d35ac1f94fe36ba82f237f3d0fecfa5a6ae23e3e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ebaf41d44838d87e4e3aeb7229107cdd2881e91e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899391"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990206"
 ---
 # <a name="disconnect-action"></a>Действие disconnect
 
@@ -43,7 +43,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

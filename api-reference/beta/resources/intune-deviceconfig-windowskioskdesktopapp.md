@@ -4,12 +4,12 @@ description: Базовый класс для типа приложений
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a1541b12754307844e89a06c02ab78081856ee4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b5c3381637cb0bc24224f632b0c08e22e28a68af
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943888"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978495"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Тип ресурса windowsKioskDesktopApp
 
@@ -28,12 +28,12 @@ ms.locfileid: "33943888"
 |Стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет понятное имя приложения, наследуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |Тип|[Виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|Автозапуск|Логический|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|Автозапуск|Boolean|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути к классическому приложению|
-|Десктопаппликатионид|Строка|Определение Десктопаппликатионид приложения|
-|Десктопаппликатионлинкпас|Строка|Определение Десктопаппликатионлинкпас приложения|
+|Десктопаппликатионид|String|Определение Десктопаппликатионид приложения|
+|Десктопаппликатионлинкпас|String|Определение Десктопаппликатионлинкпас приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,7 @@ ms.locfileid: "33943888"
   "desktopApplicationLinkPath": "String"
 }
 ```
+
 
 
 

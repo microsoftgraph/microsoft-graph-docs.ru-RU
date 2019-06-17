@@ -4,12 +4,12 @@ description: Содержит путь к файлу или папке для о
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 498e4b953b283ac0a0cffa6a7a21ea91232b724b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 90d620a13b6472960dad7ab6edd90b1d237387d2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949593"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987323"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>Тип ресурса win32LobAppFileSystemRequirement
 
@@ -26,13 +26,13 @@ ms.locfileid: "33949593"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|Строка|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|Детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
-|Филеорфолдернаме|Строка|Имя файла или папки для определения бизнес-приложения Win32|
-|check32BitOn64System|Логический|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
+|Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|check32BitOn64System|Boolean|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
 |Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "33949593"
   "detectionType": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Абстрактный класс для настройки моб�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a532c39a38ea033a3ed1675183528432e4e87211
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e5079d81a6d8de24feaf701a9329b89d394e9207
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950160"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978782"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Тип ресурса managedDeviceMobileAppConfiguration
 
@@ -38,7 +38,7 @@ ms.locfileid: "33950160"
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md)|Список заданий группы для настройки приложения.|
@@ -72,6 +72,7 @@ ms.locfileid: "33950160"
   "version": 1024
 }
 ```
+
 
 
 

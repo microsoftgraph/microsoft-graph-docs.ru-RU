@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceAppManagem
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cd9b4cbfbfc277b0a6b69032b0304ae13370c947
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 03290cf87550427878d1b01d2ea4e3da9712fd8c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898539"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990087"
 ---
 # <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
 
@@ -24,7 +24,7 @@ ms.locfileid: "33898539"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
-| &nbsp;&nbsp; **Приложения**, **книги**или подключение **** | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; **Приложения**, **книги**, входящая миграция или **Интеграция партнерских** **систем** | DeviceManagementApps.ReadWrite.All |
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
@@ -44,14 +44,14 @@ PATCH /deviceAppManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |**Встроенное подключение**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта managedM
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f53580a6a011cfef26c95ca5b73870470abd39a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a7d39fbc50ea7083d2faabf8db7d98c326b796c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904351"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987154"
 ---
 # <a name="get-managedmobileapp"></a>Получение объекта managedMobileApp
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -81,6 +81,7 @@ Content-Length: 261
   }
 }
 ```
+
 
 
 

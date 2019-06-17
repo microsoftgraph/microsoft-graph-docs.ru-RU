@@ -4,12 +4,12 @@ description: Тип владельца устройства.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 809f1f17ad35b037f55f876f750828ad82e0d37f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4c504ffa45e5d76e57f49416b34e498a660daef7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941844"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963879"
 ---
 # <a name="ownertype-enum-type"></a>ownerType тип enum
 
@@ -25,6 +25,7 @@ ms.locfileid: "33941844"
 |unknown|нуль|Найден.|
 |внутрихолдинговом|1,1|Принадлежит компании.|
 |personal|2|Принадлежит пользователю.|
+
 
 
 

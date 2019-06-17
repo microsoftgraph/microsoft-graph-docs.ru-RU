@@ -4,12 +4,12 @@ description: Представляет значок приложения на н�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6cc32ca42d38d44e0d7e62a4575620a119e5c7c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 279ec6fb424653cbe9247e57881a6a60d96025d4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946485"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992412"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 
@@ -25,10 +25,10 @@ ms.locfileid: "33946485"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |bundleID|String|ИД пакета приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,7 @@ ms.locfileid: "33946485"
   "bundleID": "String"
 }
 ```
+
 
 
 

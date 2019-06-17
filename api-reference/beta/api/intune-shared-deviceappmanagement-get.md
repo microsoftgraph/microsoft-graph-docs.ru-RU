@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceAp
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: dd95af58907525b2de1cfeb80baae09429480695
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f7bfd02d2e98386fa8f9e6172cfdfcfeb63af5b4
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899349"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989548"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -26,7 +26,7 @@ ms.locfileid: "33899349"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
-| &nbsp;&nbsp; **Приложения**, **книги**или подключение **** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
+| &nbsp;&nbsp; **Приложения**, **книги**, входящая миграция или **Интеграция партнерских** **систем** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
@@ -51,7 +51,7 @@ GET /deviceAppManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -4,12 +4,12 @@ description: Объект AppLogCollectionRequest.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24d6ee782dc50935cffddc9916b04121bf3a1cb1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 210fa5f75cf23a8d648da82f502a1335ab58bea5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943202"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983304"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>Тип ресурса appLogCollectionRequest
 
@@ -32,13 +32,13 @@ ms.locfileid: "33943202"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
+|id|String|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|Строка|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
 |Кустомлогфолдерс|Коллекция строк|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,7 @@ ms.locfileid: "33943202"
   "completedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

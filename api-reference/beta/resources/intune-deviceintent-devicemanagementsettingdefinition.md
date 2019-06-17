@@ -4,12 +4,12 @@ description: Сущность, представляющая определени
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b4147d5ed892eebce175d79925b7329525585a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7398d2c53975652a9de0040d6c4bb62705e515c2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943573"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984536"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементсеттингдефинитион
 
@@ -34,14 +34,14 @@ ms.locfileid: "33943573"
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|Строка|Отображаемое имя параметра|
-|Истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|Истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
-|Документатионурл|Строка|URL-адрес для установки документации|
+|Документатионурл|String|URL-адрес для установки документации|
 |keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -82,6 +82,7 @@ ms.locfileid: "33943573"
   ]
 }
 ```
+
 
 
 

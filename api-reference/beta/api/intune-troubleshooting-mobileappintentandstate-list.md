@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Моб
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2f89a4675da9e65298200bd83b543c4e719b3a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db30c5a04abc03a599f8a41c1f0c2b9ab9a33fbf
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899153"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990710"
 ---
 # <a name="list-mobileappintentandstates"></a>Список Мобилеаппинтентандстатес
 
@@ -43,7 +43,7 @@ GET /users/{usersId}/mobileAppIntentAndStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,6 +93,7 @@ Content-Length: 1001
   ]
 }
 ```
+
 
 
 

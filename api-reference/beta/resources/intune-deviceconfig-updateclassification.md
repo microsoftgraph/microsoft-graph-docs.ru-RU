@@ -4,12 +4,12 @@ description: Возможные значения для автоматическ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1851ed4dda3d0af631632c1a2e8234794628cbe
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 195d034cd4651515e6ccf0b1dcf1dbc3fbf534ac
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944644"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978950"
 ---
 # <a name="updateclassification-enum-type"></a>тип перечисления Упдатеклассификатион
 
@@ -26,6 +26,7 @@ ms.locfileid: "33944644"
 |Рекоммендедандимпортант|1,1|Рекомендуемые и важные.|
 |внимание|2|Внимание.|
 |none|4|Нет.|
+
 
 
 

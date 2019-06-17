@@ -4,12 +4,12 @@ description: Представляет уровень, на который дан
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fde2db55cb9af109e2de82f87ef96044f8da36aa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dee810fde166cef7ada5b5500d4618499c51e879
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940788"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991935"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>тип перечисления Манажедаппдатаенкриптионтипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "33940788"
 |Афтердевицерестарт|1,1|Данные приложения шифруются при перезапуске устройства.|
 |Вхендевицелоккедексцептопенфилес|2|Данные приложения, связанные с этой политикой, шифруются, если устройство заблокировано, за исключением данных в открытых файлах.|
 |Вхендевицелоккед|4|Данные о приложении, связанные с этой политикой, шифруются, когда устройство заблокировано|
+
 
 
 

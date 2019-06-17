@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Усе
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aad2b6dbd5a61c2fc18cfe53174da0e747578a4d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0791c80043144a65c8a2099fb89c72116f6cad2a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899741"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988764"
 ---
 # <a name="list-userpfxcertificates"></a>Список Усерпфксцертификатес
 
@@ -43,7 +43,7 @@ GET /deviceManagement/userPfxCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -85,6 +85,7 @@ Content-Length: 784
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Цель мобильного приложения и состоя�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2392d9bc83fda65832cb123115ba1285c823174a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 99374d098d103b9a9898f10ea105ab41ca7bef41
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939023"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988078"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>Тип ресурса Мобилеаппинтентандстатедетаил
 
@@ -23,13 +23,13 @@ ms.locfileid: "33939023"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationId|String|Идентификатор Мобиеапп.|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор.|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор.|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md);|Цель для мобильного приложения. Возможные значения: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
-|Дисплайверсион|Строка|Доступная для человека версия приложения|
+|Дисплайверсион|String|Доступная для человека версия приложения|
 |installState|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |Суппортеддевицетипес|Коллекция [мобилеаппсуппортеддевицетипе](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)|Поддерживаемые платформы для приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,7 @@ ms.locfileid: "33939023"
   ]
 }
 ```
+
 
 
 

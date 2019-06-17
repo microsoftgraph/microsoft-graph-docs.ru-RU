@@ -4,12 +4,12 @@ description: Параметры формата имени субъекта дл�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 284514b055b04b9c1c57c93b26bfd9ea59c7248a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 99e2e480091ab877f660d9bdc12de7f83f538b71
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947752"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987686"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>тип перечисления Апплесубжектнамеформат
 
@@ -28,6 +28,7 @@ ms.locfileid: "33947752"
 |Коммоннамеинклудинжемаил|4|Общее имя, включая электронную почту.|
 |Коммоннамеасимеи|17:00|Общее имя в виде IMEI.|
 |Коммоннамеассериалнумбер|6 |Общее имя в виде порядкового номера.|
+
 
 
 

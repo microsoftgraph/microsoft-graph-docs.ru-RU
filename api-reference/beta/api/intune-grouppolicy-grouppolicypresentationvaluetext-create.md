@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81f547401e1549b69ce92bfcd5e827350aa6e6bc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed2f6e8623b387cded5fe8ba0a26b9175264f8b5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904085"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985747"
 ---
 # <a name="create-grouppolicypresentationvaluetext"></a>Создание Граупполиципресентатионвалуетекст
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатионвалуетекст в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуетекст.
@@ -52,7 +52,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|String|Ключ объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |value|String|Строковое значение для связанной презентации.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9295a71571e21174b463eb055945e4863163f75
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ab05a9b627fa4bc17e3c92e357fc7f8b614b97b7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904372"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34985586"
 ---
 # <a name="create-grouppolicypresentationvaluelist"></a>Создание Граупполиципресентатионвалуелист
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатионвалуелист в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуелист.
@@ -52,7 +52,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|String|Ключ объекта. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |values|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список пар для связанной презентации.|
 
 
@@ -102,6 +102,7 @@ Content-Length: 394
   ]
 }
 ```
+
 
 
 

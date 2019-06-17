@@ -4,12 +4,12 @@ description: Импорт устройств с автопилотом Windows �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5651df7238cf8e4e535b47d8c1aa1cac5d72725
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e3a1452d03068b807625de2075a47dc75935fbc2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941550"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992530"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>Тип ресурса Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -27,16 +27,16 @@ ms.locfileid: "33941550"
 |[Создание Импортедвиндовсаутопилотдевицеидентитюплоад](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Создание нового объекта [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .|
 |[Удаление Импортедвиндовсаутопилотдевицеидентитюплоад](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md)|Нет|Удаляет объект [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).|
 |[Обновление Импортедвиндовсаутопилотдевицеидентитюплоад](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Обновление свойств объекта [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .|
-|[Функция Аутопилотдевицестреам](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|Строка|Создайте запрос на отправку с потоком устройства с автопилотом.|
+|[Функция Аутопилотдевицестреам](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|String|Создайте запрос на отправку с потоком устройства с автопилотом.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Девицеидентитиес|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Коллекция всех устройств автопилота в рамках этой отправки.|
@@ -57,6 +57,7 @@ ms.locfileid: "33941550"
   "status": "String"
 }
 ```
+
 
 
 

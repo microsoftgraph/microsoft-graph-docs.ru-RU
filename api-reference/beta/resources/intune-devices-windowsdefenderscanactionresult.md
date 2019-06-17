@@ -4,12 +4,12 @@ description: Результат последнего сканирования, �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5bffa0e1c227a8d1a6c13fc9daac00e5d8df8b03
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f28e33c5edae2efe22368cd827d7e41fa2c51a51
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941725"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994288"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Тип ресурса windowsDefenderScanActionResult
 
@@ -25,13 +25,13 @@ ms.locfileid: "33941725"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
+|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |scanType|String|Тип сканирования (полное или краткое).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "33941725"
   "scanType": "String"
 }
 ```
+
 
 
 

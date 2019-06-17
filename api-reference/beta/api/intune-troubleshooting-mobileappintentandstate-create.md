@@ -4,12 +4,12 @@ description: Создание нового объекта Мобилеаппин
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdf522608972a8a43d0b6fae2cef8e0afce65eff
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 01de9d8ea65f1462c10cc1fa7048bb19cd4cbbe9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898703"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990766"
 ---
 # <a name="create-mobileappintentandstate"></a>Создание Мобилеаппинтентандстате
 
@@ -43,7 +43,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Мобилеаппинтентандстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеаппинтентандстате.
@@ -126,6 +126,7 @@ Content-Length: 880
   ]
 }
 ```
+
 
 
 

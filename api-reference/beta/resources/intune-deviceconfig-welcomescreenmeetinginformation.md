@@ -4,12 +4,12 @@ description: Возможные значения для сведений о со
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38f31b1306ed7e46e6f1aba8cc8ff04421d06a3f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: be34f27f07aa771302a783ad72da90c3c6351117
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944462"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991648"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
 
@@ -25,6 +25,7 @@ ms.locfileid: "33944462"
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
 |Шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
 |Шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
+
 
 
 

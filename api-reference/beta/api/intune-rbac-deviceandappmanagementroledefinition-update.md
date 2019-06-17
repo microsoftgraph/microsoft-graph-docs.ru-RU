@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceAndAppMana
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 278dde3d8abb9b57a21f6672d2ebb2602683f68e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cb784b47dc1c3cdfdec70b453e9fe4b434a87903
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899559"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34988645"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>Обновление объекта deviceAndAppManagementRoleDefinition
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md).
@@ -181,6 +181,7 @@ Content-Length: 1278
   ]
 }
 ```
+
 
 
 

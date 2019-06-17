@@ -4,12 +4,12 @@ description: Содержит свойства, унаследованные с�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: beab4f406b36a8d350b37c73738bf0bd18447c45
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24f0275c9606e570db7b56685169667940cb79e3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950115"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989541"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -32,8 +32,8 @@ ms.locfileid: "33950115"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
-|userName|Строка|Имя пользователя в отчете|
+|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
+|userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -41,7 +41,7 @@ ms.locfileid: "33950115"
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,6 +66,7 @@ ms.locfileid: "33950115"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96d91f585d8c762a2e1080d38bfd7cebb75e3acc
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: aa938ff2b99f583255c18111f24b5e5f4d7a17b2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943951"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978530"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса Виндовскиосказуреадусер
 
@@ -28,7 +28,7 @@ ms.locfileid: "33943951"
 |userId|String|Идентификатор пользователя AzureAD, который будет заблокирован для этой конфигурации киоска|
 |userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,7 @@ ms.locfileid: "33943951"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

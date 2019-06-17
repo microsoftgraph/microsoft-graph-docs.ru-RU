@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Мана
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba0676ac60ecfa2726abd44d8bce3a3f220c353b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8313fadf643b20103c12f5d97e826ff998ec109b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905394"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984130"
 ---
 # <a name="get-managementcondition"></a>Получение Манажементкондитион
 
@@ -47,7 +47,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,6 +84,7 @@ Content-Length: 468
   }
 }
 ```
+
 
 
 

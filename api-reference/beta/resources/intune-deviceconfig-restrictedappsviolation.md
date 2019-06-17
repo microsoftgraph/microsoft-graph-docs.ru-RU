@@ -4,12 +4,12 @@ description: Нарушение профиля конфигурации огра
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a519399cebd0af6cb5a0b9b0f1b75b346e24764
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 27477d0f12b130975abe42f8b994282e5de5bbcb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944791"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34986699"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Тип ресурса Рестриктедаппсвиолатион
 
@@ -34,15 +34,15 @@ ms.locfileid: "33944791"
 |id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
-|Манажеддевицеид|Строка|Уникальный идентификатор управляемого устройства, должен быть GUID|
-|deviceName|Строка|Имя устройства|
-|Девицеконфигуратионид|Строка|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
-|Девицеконфигуратионнаме|Строка|Имя профиля конфигурации устройства|
+|Манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
+|deviceName|String|Имя устройства|
+|Девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
+|Девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
 |platformType|[Полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|Коллекция [манажеддевицерепортедапп](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -73,6 +73,7 @@ ms.locfileid: "33944791"
   ]
 }
 ```
+
 
 
 

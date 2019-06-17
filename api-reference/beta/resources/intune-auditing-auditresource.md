@@ -4,12 +4,12 @@ description: Класс, содержащий свойства ресурса а
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdc04c468e20431cf23ef6903ff31e7678b20a29
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: acc30182efc11822043b48e495c462a57c3863f3
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949369"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991704"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
@@ -27,7 +27,7 @@ ms.locfileid: "33949369"
 |type|String|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "33949369"
   "resourceId": "String"
 }
 ```
+
 
 
 

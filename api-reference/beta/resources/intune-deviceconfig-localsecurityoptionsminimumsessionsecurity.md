@@ -4,12 +4,12 @@ description: Возможные значения для Локалсекурит
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ab015e80b276870e663d47a3b8b18d17fed82a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ac7ebd94f791372b4bd7b74189204a7b8a4d0360
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946170"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989296"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>тип перечисления Локалсекуритйоптионсминимумсессионсекурити
 
@@ -22,10 +22,11 @@ ms.locfileid: "33946170"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Отправка ответов LM _Амп_ NTLM|
-|requireNtmlV2SessionSecurity|1,1|Отправлять LM _Амп_ NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
-|require128BitEncryption|2|Отправлять только LM _Амп_ NTLM ответы|
-|ntlmV2And128BitEncryption|4|Отправлять только LM _Амп_ NTLMv2 ответы|
+|none|нуль|Отправка ответов LM & NTLM|
+|requireNtmlV2SessionSecurity|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
+|require128BitEncryption|2|Отправлять только LM & NTLM ответы|
+|ntlmV2And128BitEncryption|4|Отправлять только LM & только ответы NTLMv2.|
+
 
 
 

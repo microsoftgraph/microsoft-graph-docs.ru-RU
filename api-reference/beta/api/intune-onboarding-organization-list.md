@@ -4,12 +4,12 @@ description: Список свойств и связей объектов organi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b817607138399d10bdb96debfba1766e42818082
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6d49120c67c520ff17dd9cb7aeabd9e60045c388
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899972"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980700"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -43,7 +43,7 @@ GET /organization
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -83,6 +83,7 @@ Content-Length: 622
   ]
 }
 ```
+
 
 
 

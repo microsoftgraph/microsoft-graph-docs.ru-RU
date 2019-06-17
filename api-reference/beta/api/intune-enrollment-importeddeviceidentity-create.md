@@ -4,12 +4,12 @@ description: Создание нового объекта Импортеддев
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c5148a4d131410ba0947cd597e9ed557a1553a4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ed588ed0c44011ecf49db132c321c2e014745e9e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908499"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981939"
 ---
 # <a name="create-importeddeviceidentity"></a>Создание Импортеддевицеидентити
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Импортеддевицеидентити в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Импортеддевицеидентити.
@@ -51,7 +51,7 @@ POST /deviceManagement/importedDeviceIdentities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор импортированного удостоверения устройства|
-|Импортеддевицеидентифиер|Строка|Импортированный идентификатор устройства|
+|Импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
 |Импортеддевицеидентититипе|[Импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
@@ -105,6 +105,7 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
 
 
 

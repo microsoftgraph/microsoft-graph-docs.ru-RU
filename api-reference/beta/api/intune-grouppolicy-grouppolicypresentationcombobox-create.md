@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44672cf0ef3ba43aeb03a9155fab7693868b0413
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a183ee75a76b9a2d7f0519d4b5bd5f5f73600be5
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33904974"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34984998"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>Создание Граупполиципресентатионкомбобокс
 
@@ -43,19 +43,19 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатионкомбобокс в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионкомбобокс.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|Значение|Строка|Локализованная строка по умолчанию, отображаемая в поле со списком. По умолчанию это значение пусто.|
+|Значение|String|Локализованная строка по умолчанию, отображаемая в поле со списком. По умолчанию это значение пусто.|
 |мнение|Коллекция строк|Локализованные строки, перечисленные в раскрывающемся списке поля со списком. По умолчанию это значение пусто.|
-|Обязательный|Логический|Указывает, следует ли указать значение для параметра. Значение по умолчанию  false.|
+|Обязательный|Boolean|Указывает, следует ли указать значение для параметра. Значение по умолчанию  false.|
 |maxLength|Int64|Целое число без знака, задающее максимальное количество текстовых символов для параметра. Значение по умолчанию — 1023.|
 
 
@@ -104,6 +104,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 

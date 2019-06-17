@@ -4,12 +4,12 @@ description: Делает недействительным все маркеры
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1221edadd8e69139b28aaf1122409cf311986d6c
-ms.sourcegitcommit: 4fa6b745383bb0c1864b65d612d811d64cdc079f
+ms.openlocfilehash: 26f2224e74a90bbc4a47a4e31c5738d3b1baf08e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "34453399"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979349"
 ---
 # <a name="user-revokesigninsessions"></a>Пользователь: Ревокесигнинсессионс
 
@@ -19,8 +19,8 @@ ms.locfileid: "34453399"
 
 Если приложение пытается активировать маркер делегированного доступа для этого пользователя с помощью недействительного маркера обновления, приложение получит ошибку. В этом случае приложению потребуется получить новый маркер обновления, выполнив запрос к конечной точке авторизации, которая вынуждает пользователя выполнить вход.
 
-[!NOTE]
-После вызова **ревокесигнинсессионс**может возникнуть небольшая задержка в несколько минут до отзыва маркеров.
+>[!NOTE]
+>После вызова **ревокесигнинсессионс**может возникнуть небольшая задержка в несколько минут до отзыва маркеров.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,10 +38,12 @@ ms.locfileid: "34453399"
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
 В этой операции нет содержимого запроса.

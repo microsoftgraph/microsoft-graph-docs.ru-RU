@@ -4,12 +4,12 @@ description: Возможные значения для Локалсекурит
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5039fca8b3cc90e1fd87f0ff11a23685e880985
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 24434b710a80e8839b95168204a4d68b31c20b4c
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946037"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34989359"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионсадминистраторелеватионпромптбехавиортипе
 
@@ -29,6 +29,7 @@ ms.locfileid: "33946037"
 |Промптфоркредентиалс|SP4|Запрос учетных данных|
 |Промптфорконсент|17:00|Запрос согласия|
 |Промптфорконсентфорнонвиндовсбинариес|6 |Запрос согласия для двоичных файлов, отличных от Windows|
+
 
 
 

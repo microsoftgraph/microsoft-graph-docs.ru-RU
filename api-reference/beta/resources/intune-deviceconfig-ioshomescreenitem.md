@@ -4,12 +4,12 @@ description: Представляет элемент на начальном э�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f69bb07a54366a84fc9509f900b8a36513f545e3
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 077c0eea7a4953d0cba3e9223a24fd9107f1b6c0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946464"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34990255"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Тип ресурса iosHomeScreenItem
 
@@ -22,9 +22,9 @@ ms.locfileid: "33946464"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя приложения|
+|displayName|String|Имя приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,6 +40,7 @@ ms.locfileid: "33946464"
   "displayName": "String"
 }
 ```
+
 
 
 

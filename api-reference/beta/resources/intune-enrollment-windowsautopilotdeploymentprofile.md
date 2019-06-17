@@ -4,12 +4,12 @@ description: Профиль развертывания Windows для автоп
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0596f4cd23c98b271c5e463a973dcfd29cee6dad
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cfa37dd838e515978db7f6763d1b8e69b5c66417
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941466"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993924"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -36,13 +36,13 @@ ms.locfileid: "33941466"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
 |Енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
-|Екстраксардварехаш|Логический|Извлечение Хардварехаш для профиля|
-|Девиценаметемплате|Строка|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
+|Екстраксардварехаш|Boolean|Извлечение Хардварехаш для профиля|
+|Девиценаметемплате|String|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автопилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
-|Енаблевхитеглове|Логический|Включите для профиля белый Глове для автопилотного развертывания.|
+|Енаблевхитеглове|Boolean|Включите для профиля белый Глове для автопилотного развертывания.|
 |roleScopeTagIds|Коллекция строк|Теги областей для профиля.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Ассигнеддевицес|Коллекция [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Список назначенных устройств для профиля.|
@@ -93,6 +93,7 @@ ms.locfileid: "33941466"
   ]
 }
 ```
+
 
 
 
