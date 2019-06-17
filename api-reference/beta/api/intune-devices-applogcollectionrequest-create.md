@@ -4,12 +4,12 @@ description: Создание нового объекта appLogCollectionReques
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1308bc68e8a3bd17ab5fc9ac9262395c92f2fda
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 83a4c20b64ff0d0a39b4bb736f8f89864df2f6e1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33910611"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959336"
 ---
 # <a name="create-applogcollectionrequest"></a>Создание appLogCollectionRequest
 
@@ -43,16 +43,16 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта appLogCollectionRequest в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании appLogCollectionRequest.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
+|id|String|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|Строка|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
 |Кустомлогфолдерс|Коллекция строк|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
@@ -99,6 +99,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

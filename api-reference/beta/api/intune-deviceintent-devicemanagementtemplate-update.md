@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c8c2ad9d9c0020157068c4e9b78bd13369365f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 570e8d97b66db1cd34b3c7ffc84d90da943bf6e6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915869"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959735"
 ---
 # <a name="update-devicemanagementtemplate"></a>Обновление Девицеманажементтемплате
 
@@ -44,8 +44,8 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md).
 
@@ -54,9 +54,11 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 |id|String|Идентификатор шаблона|
 |displayName|Строка|Отображаемое имя шаблона|
 |description|String|Описание шаблона|
-|versionInfo|Строка|Сведения о версии шаблона|
-|нерекомендуемый|Логический|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
+|versionInfo|String|Сведения о версии шаблона|
+|нерекомендуемый|Boolean|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
 |Интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
+|TemplateType — тип|[Девицеманажементтемплатетипе](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|publishedDateTime|DateTimeOffset|При публикации шаблона|
 
 
 
@@ -70,7 +72,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 232
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -78,7 +80,9 @@ Content-length: 232
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
 
@@ -87,7 +91,7 @@ Content-length: 232
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -96,9 +100,12 @@ Content-Length: 281
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

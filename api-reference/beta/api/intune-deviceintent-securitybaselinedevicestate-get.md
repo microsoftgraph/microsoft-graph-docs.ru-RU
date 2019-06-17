@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Секу
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1bef6db34f0ffa54fdcce464797e4d10165823b2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 372aeefd9e658b2f4df2b201adf15373167ee428
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33914487"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959532"
 ---
 # <a name="get-securitybaselinedevicestate"></a>Получение Секуритибаселинедевицестате
 
@@ -46,7 +46,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,6 +79,7 @@ Content-Length: 392
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект Секуритибаселинетем�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6096daccdb87b163ca5b364dc1d1709f9f99a756
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 7e71148aeb421283f1b8312c0f84710b761093ca
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33911695"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959455"
 ---
 # <a name="delete-securitybaselinetemplate"></a>Удаление Секуритибаселинетемплате
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9062c48fbf3be9ab33f8abc3f7ecebc40eeef0b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0e64f7d495214fff58ecd5db3a7b47987ead4c42
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915671"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959952"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание Девицеманажементсеттингдефинитион
 
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементсеттингдефинитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементсеттингдефинитион.
@@ -56,9 +56,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|Строка|Отображаемое имя параметра|
-|Истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|Истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
-|Документатионурл|Строка|URL-адрес для установки документации|
+|Документатионурл|String|URL-адрес для установки документации|
 |keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
@@ -142,6 +142,7 @@ Content-Length: 777
   ]
 }
 ```
+
 
 
 

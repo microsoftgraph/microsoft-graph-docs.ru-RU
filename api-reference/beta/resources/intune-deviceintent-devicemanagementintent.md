@@ -4,12 +4,12 @@ description: Сущность, которая представляет цель 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3b840a8865545080370c5bfc8c0471f0137c746e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943447"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34964075"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Тип ресурса Девицеманажементинтент
 
@@ -29,7 +29,8 @@ ms.locfileid: "33943447"
 |[Обновление Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Обновление свойств объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
 |[Действие updateSettings](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Нет|Н/Д|
 |[действие Мигратетотемплате](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|Нет|Н/Д|
-|[Действие assign](../api/intune-deviceintent-devicemanagementintent-assign.md)|Нет|Пока не задокументировано|
+|[Действие assign](../api/intune-deviceintent-devicemanagementintent-assign.md)|Нет|Н/Д|
+|[Функция Compare](../api/intune-deviceintent-devicemanagementintent-compare.md)|Коллекция [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)|Пока не задокументировано|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -39,9 +40,10 @@ ms.locfileid: "33943447"
 |description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |settings|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Набор всех параметров, которые необходимо применить|
@@ -69,9 +71,13 @@ ms.locfileid: "33943447"
   "description": "String",
   "isAssigned": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "templateId": "String"
+  "templateId": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
+
 
 
 

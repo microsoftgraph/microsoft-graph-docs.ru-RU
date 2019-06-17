@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440ab24593848ab3eba7139c7589f42aec358ea6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 368491eda8ed4e13d7600073e859ceed73d6b094
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915678"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959686"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>Создание Девицеманажементтемплатесеттингкатегори
 
@@ -43,7 +43,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементтемплатесеттингкатегори в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементтемплатесеттингкатегори.
@@ -86,6 +86,7 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Отправляет проверочное сообщение, и�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7be581b05cf7a8b1d0c8d9f1be757abfdbbece2
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: ea60b10ae0ca699d0f60165f1613dddcf588e23d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33900504"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963501"
 ---
 # <a name="sendtestmessage-action"></a>Действие sendTestMessage
 
@@ -43,7 +43,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTempla
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

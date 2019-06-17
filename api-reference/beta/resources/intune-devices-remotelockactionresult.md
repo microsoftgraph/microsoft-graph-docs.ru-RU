@@ -4,12 +4,12 @@ description: Результат блокирования с ПИН-кодом р
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a8da7d99425e35c937250eee8a36ba005a133af
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 31af22f66b87d8102eeaf81d68d211640326f3fd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941746"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963858"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Тип ресурса remoteLockActionResult
 
@@ -25,13 +25,13 @@ ms.locfileid: "33941746"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|Строка|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
+|actionName|String|Название действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |unlockPin|String|ПИН-код для разблокировки клиента|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "33941746"
   "unlockPin": "String"
 }
 ```
+
 
 
 

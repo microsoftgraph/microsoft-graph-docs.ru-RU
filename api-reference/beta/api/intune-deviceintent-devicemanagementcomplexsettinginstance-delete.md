@@ -4,12 +4,12 @@ description: Удаляет объект Девицеманажементком�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 765095b2a4db6f355c86cd04eb6fc0521236d2e8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 345c756247086e7909bd88f25a59414965ddd506
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33916434"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34960659"
 ---
 # <a name="delete-devicemanagementcomplexsettinginstance"></a>Удаление Девицеманажементкомплекссеттингинстанце
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
