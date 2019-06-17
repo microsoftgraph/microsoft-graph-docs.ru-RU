@@ -4,31 +4,31 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 102fa662dd9cf6eef9a4949f8dc9250e69cfadbf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: f0298ba9d99bd00db8e10e7b5b2afb79a0c7e3ec
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33915988"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959770"
 ---
-# <a name="create-devicemanagementtemplate"></a><span data-ttu-id="e6ac3-103">Создание Девицеманажементтемплате</span><span class="sxs-lookup"><span data-stu-id="e6ac3-103">Create deviceManagementTemplate</span></span>
+# <a name="create-devicemanagementtemplate"></a><span data-ttu-id="04716-103">Создание Девицеманажементтемплате</span><span class="sxs-lookup"><span data-stu-id="04716-103">Create deviceManagementTemplate</span></span>
 
-> <span data-ttu-id="e6ac3-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="04716-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04716-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e6ac3-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="04716-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="04716-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e6ac3-106">Создание нового объекта [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) .</span><span class="sxs-lookup"><span data-stu-id="e6ac3-106">Create a new [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.</span></span>
+<span data-ttu-id="04716-106">Создание нового объекта [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) .</span><span class="sxs-lookup"><span data-stu-id="04716-106">Create a new [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e6ac3-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="e6ac3-107">Prerequisites</span></span>
-<span data-ttu-id="e6ac3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6ac3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="04716-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="04716-107">Prerequisites</span></span>
+<span data-ttu-id="04716-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="04716-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e6ac3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e6ac3-110">Permission type</span></span>|<span data-ttu-id="e6ac3-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e6ac3-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="04716-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="04716-110">Permission type</span></span>|<span data-ttu-id="04716-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="04716-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e6ac3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e6ac3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e6ac3-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6ac3-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="e6ac3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e6ac3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e6ac3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-115">Not supported.</span></span>|
-|<span data-ttu-id="e6ac3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e6ac3-116">Application</span></span>|<span data-ttu-id="e6ac3-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-117">Not supported.</span></span>|
+|<span data-ttu-id="04716-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="04716-112">Delegated (work or school account)</span></span>|<span data-ttu-id="04716-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04716-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="04716-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="04716-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="04716-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04716-115">Not supported.</span></span>|
+|<span data-ttu-id="04716-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="04716-116">Application</span></span>|<span data-ttu-id="04716-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04716-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e6ac3-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e6ac3-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="04716-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="04716-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,39 +38,41 @@ POST /deviceManagement/templates
 POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e6ac3-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e6ac3-119">Request headers</span></span>
-|<span data-ttu-id="e6ac3-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e6ac3-120">Header</span></span>|<span data-ttu-id="e6ac3-121">Значение</span><span class="sxs-lookup"><span data-stu-id="e6ac3-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="04716-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="04716-119">Request headers</span></span>
+|<span data-ttu-id="04716-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="04716-120">Header</span></span>|<span data-ttu-id="04716-121">Значение</span><span class="sxs-lookup"><span data-stu-id="04716-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e6ac3-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e6ac3-122">Authorization</span></span>|<span data-ttu-id="e6ac3-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e6ac3-124">Accept</span><span class="sxs-lookup"><span data-stu-id="e6ac3-124">Accept</span></span>|<span data-ttu-id="e6ac3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e6ac3-125">application/json</span></span>|
+|<span data-ttu-id="04716-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="04716-122">Authorization</span></span>|<span data-ttu-id="04716-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="04716-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="04716-124">Accept</span><span class="sxs-lookup"><span data-stu-id="04716-124">Accept</span></span>|<span data-ttu-id="04716-125">application/json</span><span class="sxs-lookup"><span data-stu-id="04716-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e6ac3-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e6ac3-126">Request body</span></span>
-<span data-ttu-id="e6ac3-127">В тексте запроса добавьте представление объекта Девицеманажементтемплате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-127">In the request body, supply a JSON representation for the deviceManagementTemplate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="04716-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="04716-126">Request body</span></span>
+<span data-ttu-id="04716-127">В тексте запроса добавьте представление объекта Девицеманажементтемплате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="04716-127">In the request body, supply a JSON representation for the deviceManagementTemplate object.</span></span>
 
-<span data-ttu-id="e6ac3-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементтемплате.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-128">The following table shows the properties that are required when you create the deviceManagementTemplate.</span></span>
+<span data-ttu-id="04716-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементтемплате.</span><span class="sxs-lookup"><span data-stu-id="04716-128">The following table shows the properties that are required when you create the deviceManagementTemplate.</span></span>
 
-|<span data-ttu-id="e6ac3-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="e6ac3-129">Property</span></span>|<span data-ttu-id="e6ac3-130">Тип</span><span class="sxs-lookup"><span data-stu-id="e6ac3-130">Type</span></span>|<span data-ttu-id="e6ac3-131">Описание</span><span class="sxs-lookup"><span data-stu-id="e6ac3-131">Description</span></span>|
+|<span data-ttu-id="04716-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="04716-129">Property</span></span>|<span data-ttu-id="04716-130">Тип</span><span class="sxs-lookup"><span data-stu-id="04716-130">Type</span></span>|<span data-ttu-id="04716-131">Описание</span><span class="sxs-lookup"><span data-stu-id="04716-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e6ac3-132">id</span><span class="sxs-lookup"><span data-stu-id="e6ac3-132">id</span></span>|<span data-ttu-id="e6ac3-133">String</span><span class="sxs-lookup"><span data-stu-id="e6ac3-133">String</span></span>|<span data-ttu-id="e6ac3-134">Идентификатор шаблона</span><span class="sxs-lookup"><span data-stu-id="e6ac3-134">The template ID</span></span>|
-|<span data-ttu-id="e6ac3-135">displayName</span><span class="sxs-lookup"><span data-stu-id="e6ac3-135">displayName</span></span>|<span data-ttu-id="e6ac3-136">Строка</span><span class="sxs-lookup"><span data-stu-id="e6ac3-136">String</span></span>|<span data-ttu-id="e6ac3-137">Отображаемое имя шаблона</span><span class="sxs-lookup"><span data-stu-id="e6ac3-137">The template's display name</span></span>|
-|<span data-ttu-id="e6ac3-138">description</span><span class="sxs-lookup"><span data-stu-id="e6ac3-138">description</span></span>|<span data-ttu-id="e6ac3-139">String</span><span class="sxs-lookup"><span data-stu-id="e6ac3-139">String</span></span>|<span data-ttu-id="e6ac3-140">Описание шаблона</span><span class="sxs-lookup"><span data-stu-id="e6ac3-140">The template's description</span></span>|
-|<span data-ttu-id="e6ac3-141">versionInfo</span><span class="sxs-lookup"><span data-stu-id="e6ac3-141">versionInfo</span></span>|<span data-ttu-id="e6ac3-142">Строка</span><span class="sxs-lookup"><span data-stu-id="e6ac3-142">String</span></span>|<span data-ttu-id="e6ac3-143">Сведения о версии шаблона</span><span class="sxs-lookup"><span data-stu-id="e6ac3-143">The template's version information</span></span>|
-|<span data-ttu-id="e6ac3-144">нерекомендуемый</span><span class="sxs-lookup"><span data-stu-id="e6ac3-144">isDeprecated</span></span>|<span data-ttu-id="e6ac3-145">Логический</span><span class="sxs-lookup"><span data-stu-id="e6ac3-145">Boolean</span></span>|<span data-ttu-id="e6ac3-146">Шаблон устарел или не является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-146">The template is deprecated or not.</span></span> <span data-ttu-id="e6ac3-147">Не удается создать объект "удержания" из устаревшего шаблона.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-147">Intents cannot be created from a deprecated template.</span></span>|
-|<span data-ttu-id="e6ac3-148">Интенткаунт</span><span class="sxs-lookup"><span data-stu-id="e6ac3-148">intentCount</span></span>|<span data-ttu-id="e6ac3-149">Int32</span><span class="sxs-lookup"><span data-stu-id="e6ac3-149">Int32</span></span>|<span data-ttu-id="e6ac3-150">Количество целей, созданных на основе этого шаблона.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-150">Number of Intents created from this template.</span></span>|
+|<span data-ttu-id="04716-132">id</span><span class="sxs-lookup"><span data-stu-id="04716-132">id</span></span>|<span data-ttu-id="04716-133">String</span><span class="sxs-lookup"><span data-stu-id="04716-133">String</span></span>|<span data-ttu-id="04716-134">Идентификатор шаблона</span><span class="sxs-lookup"><span data-stu-id="04716-134">The template ID</span></span>|
+|<span data-ttu-id="04716-135">displayName</span><span class="sxs-lookup"><span data-stu-id="04716-135">displayName</span></span>|<span data-ttu-id="04716-136">Строка</span><span class="sxs-lookup"><span data-stu-id="04716-136">String</span></span>|<span data-ttu-id="04716-137">Отображаемое имя шаблона</span><span class="sxs-lookup"><span data-stu-id="04716-137">The template's display name</span></span>|
+|<span data-ttu-id="04716-138">description</span><span class="sxs-lookup"><span data-stu-id="04716-138">description</span></span>|<span data-ttu-id="04716-139">String</span><span class="sxs-lookup"><span data-stu-id="04716-139">String</span></span>|<span data-ttu-id="04716-140">Описание шаблона</span><span class="sxs-lookup"><span data-stu-id="04716-140">The template's description</span></span>|
+|<span data-ttu-id="04716-141">versionInfo</span><span class="sxs-lookup"><span data-stu-id="04716-141">versionInfo</span></span>|<span data-ttu-id="04716-142">String</span><span class="sxs-lookup"><span data-stu-id="04716-142">String</span></span>|<span data-ttu-id="04716-143">Сведения о версии шаблона</span><span class="sxs-lookup"><span data-stu-id="04716-143">The template's version information</span></span>|
+|<span data-ttu-id="04716-144">нерекомендуемый</span><span class="sxs-lookup"><span data-stu-id="04716-144">isDeprecated</span></span>|<span data-ttu-id="04716-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="04716-145">Boolean</span></span>|<span data-ttu-id="04716-146">Шаблон устарел или не является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="04716-146">The template is deprecated or not.</span></span> <span data-ttu-id="04716-147">Не удается создать объект "удержания" из устаревшего шаблона.</span><span class="sxs-lookup"><span data-stu-id="04716-147">Intents cannot be created from a deprecated template.</span></span>|
+|<span data-ttu-id="04716-148">Интенткаунт</span><span class="sxs-lookup"><span data-stu-id="04716-148">intentCount</span></span>|<span data-ttu-id="04716-149">Int32</span><span class="sxs-lookup"><span data-stu-id="04716-149">Int32</span></span>|<span data-ttu-id="04716-150">Количество целей, созданных на основе этого шаблона.</span><span class="sxs-lookup"><span data-stu-id="04716-150">Number of Intents created from this template.</span></span>|
+|<span data-ttu-id="04716-151">TemplateType — тип</span><span class="sxs-lookup"><span data-stu-id="04716-151">templateType</span></span>|[<span data-ttu-id="04716-152">Девицеманажементтемплатетипе</span><span class="sxs-lookup"><span data-stu-id="04716-152">deviceManagementTemplateType</span></span>](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|<span data-ttu-id="04716-153">Тип шаблона.</span><span class="sxs-lookup"><span data-stu-id="04716-153">The template's type.</span></span> <span data-ttu-id="04716-154">Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.</span><span class="sxs-lookup"><span data-stu-id="04716-154">Possible values are: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.</span></span>|
+|<span data-ttu-id="04716-155">publishedDateTime</span><span class="sxs-lookup"><span data-stu-id="04716-155">publishedDateTime</span></span>|<span data-ttu-id="04716-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="04716-156">DateTimeOffset</span></span>|<span data-ttu-id="04716-157">При публикации шаблона</span><span class="sxs-lookup"><span data-stu-id="04716-157">When the template was published</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e6ac3-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="e6ac3-151">Response</span></span>
-<span data-ttu-id="e6ac3-152">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-152">If successful, this method returns a `201 Created` response code and a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="04716-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="04716-158">Response</span></span>
+<span data-ttu-id="04716-159">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="04716-159">If successful, this method returns a `201 Created` response code and a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e6ac3-153">Пример</span><span class="sxs-lookup"><span data-stu-id="e6ac3-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="04716-160">Пример</span><span class="sxs-lookup"><span data-stu-id="04716-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e6ac3-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="e6ac3-154">Request</span></span>
-<span data-ttu-id="e6ac3-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="04716-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="04716-161">Request</span></span>
+<span data-ttu-id="04716-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="04716-162">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 232
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -78,16 +80,18 @@ Content-length: 232
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e6ac3-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="e6ac3-156">Response</span></span>
-<span data-ttu-id="e6ac3-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e6ac3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="04716-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="04716-163">Response</span></span>
+<span data-ttu-id="04716-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="04716-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -96,9 +100,12 @@ Content-Length: 281
   "description": "Description value",
   "versionInfo": "Version Info value",
   "isDeprecated": true,
-  "intentCount": 11
+  "intentCount": 11,
+  "templateType": "specializedDevices",
+  "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 
