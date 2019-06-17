@@ -5,18 +5,20 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0681ded7bb45eea328f9ce6a61f65683aa4d8cf9
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: dfd71d10f73d91a1f6b400dcaa4833e134043f88
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34720962"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34963424"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Создание chatMessage в канале
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание нового [chatMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md).
+
+> **Note**: мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Секурити
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21df5449e65a4bc8fa903d4666a369c7cd5c31a0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 559a4befe8c5a11f7683be35f5ade8a39a323e03
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33957073"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34959595"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>Обновление Секуритибаселинекатегористатесуммари
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) в формате JSON.
+В тексте запроса добавьте представление объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md).
 
@@ -104,6 +104,7 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

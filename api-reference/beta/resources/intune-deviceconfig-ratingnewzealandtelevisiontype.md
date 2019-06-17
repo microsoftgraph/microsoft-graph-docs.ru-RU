@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45ef45e548ffb8b54de6499684d9e39f1b23f631
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0b7b5ae3bda2bc67064b3cb6b2653a3b127a8d1d
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951084"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957684"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>тип перечисления Ратингневзеаландтелевисионтипе
 
@@ -27,6 +27,7 @@ ms.locfileid: "33951084"
 |обобщен|2|Классификация G исключает материалы, которые, вероятнее всего, пострадали детей до 14|
 |Паренталгуиданце|4|Классификация ПГР способствует родителям и хранителям для просмотра моложе детей|
 |взрослые|SP4|Классификация АО не подходит для детей|
+
 
 
 

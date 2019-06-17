@@ -4,12 +4,12 @@ description: Определение параметра OMA.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c595256953928138ec140b799410f5ba43d0b3de
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 0bb5df5f786eefc1b7b7159b1643f9d3d46d8300
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950972"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34958706"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -26,7 +26,7 @@ ms.locfileid: "33950972"
 |description|String|Описание.|
 |omaUri|String|OMA.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "33950972"
   "omaUri": "String"
 }
 ```
+
 
 
 
