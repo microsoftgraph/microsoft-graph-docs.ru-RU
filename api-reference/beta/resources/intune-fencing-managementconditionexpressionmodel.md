@@ -4,12 +4,12 @@ description: Модель выражения условия управления
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df3098ac3a83b2080e11be3701b06b7462019e17
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e984c0f8fde29ed19a92faee2fe6330fdd9fe68a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941277"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979209"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>Тип ресурса Манажементкондитионекспрессионмодел
 
@@ -26,7 +26,7 @@ ms.locfileid: "33941277"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "33941277"
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
+
 
 
 

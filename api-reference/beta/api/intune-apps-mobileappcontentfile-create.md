@@ -4,12 +4,12 @@ description: Создание объекта mobileAppContentFile.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 630f636c8e76cbb13f4667722205c94de3b2a0d8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 67906d7db72d85560ce1eda43bc19d9ea1ac4f4a
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935211"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974001"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -60,8 +60,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
 |uploadState|[Мобилеаппконтентфилеуплоадстате](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|Исфрамеворкфиле|Логический|Значение, указывающее, является ли файл файлом платформы.|
-|Dependency|Логический|Является ли файл содержимого зависимостью от основного файла содержимого.|
+|Исфрамеворкфиле|Boolean|Значение, указывающее, является ли файл файлом платформы.|
+|Dependency|Boolean|Является ли файл содержимого зависимостью от основного файла содержимого.|
 
 
 
@@ -115,6 +115,7 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
 
 
 

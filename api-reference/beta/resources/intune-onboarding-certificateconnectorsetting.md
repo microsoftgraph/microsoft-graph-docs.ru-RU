@@ -4,12 +4,12 @@ description: Параметры соединителя сертификатов.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a980e6bf8dd97141fc3fc5a078beedbd0348a79
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 014d9ab627d1606d9850548128c51ed52939f2c8
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940465"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995541"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса Цертификатеконнекторсеттинг
 
@@ -24,12 +24,12 @@ ms.locfileid: "33940465"
 |:---|:---|:---|
 |status|Int32|Состояние соединителя сертификатов|
 |Цертекспиритиме|DateTimeOffset|Время истечения срока действия сертификата|
-|Енроллментеррор|Строка|Ошибка регистрации соединителя сертификатов|
+|Енроллментеррор|String|Ошибка регистрации соединителя сертификатов|
 |Ластконнекторконнектионтиме|DateTimeOffset|Время последнего подключения к соединителю сертификата|
-|Коннекторверсион|Строка|Версия соединителя сертификатов|
+|Коннекторверсион|String|Версия соединителя сертификатов|
 |Ластуплоадверсион|Int64|Версия последнего отправленного соединителя сертификатов|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,6 +50,7 @@ ms.locfileid: "33940465"
   "lastUploadVersion": 1024
 }
 ```
+
 
 
 

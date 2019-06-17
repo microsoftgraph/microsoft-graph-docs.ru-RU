@@ -4,12 +4,12 @@ description: Тип политики разрешений приложений �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca019291dae065201c8f9466195fe40fc6e3e299
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: fd657e1e76209f4d4c5f74127d09700dfb1a57e7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947675"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993861"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "33947675"
 |Подсказка|1,1|Появляется.|
 |автопредоставление|2|Автоматическое предоставление.|
 |автозапрет|4|Автоматическое отклонение.|
+
 
 
 

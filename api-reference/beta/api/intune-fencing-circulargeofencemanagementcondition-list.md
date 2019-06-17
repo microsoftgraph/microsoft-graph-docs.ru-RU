@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Цир
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 352b4ecbe80ac01aaf58f9be86bf46b8568a576d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dcee0540dee817ef9c04e6fac39e907a1c759a98
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33905436"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978978"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>Список Циркуларжеофенцеманажементкондитионс
 
@@ -44,7 +44,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,6 +86,7 @@ Content-Length: 701
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект Андроидфорворквифик�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c41507c26c631c690a7a4c6f034310fc92633f47
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9fce1d26068039fd925dd0743371e3f855e4dac9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33929723"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34970312"
 ---
 # <a name="delete-androidforworkwificonfiguration"></a>Удаление Андроидфорворквификонфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

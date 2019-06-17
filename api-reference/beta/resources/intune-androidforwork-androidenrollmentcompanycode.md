@@ -4,12 +4,12 @@ description: Класс для хранения специализированн
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6110385caa6c1ac2a84f17160acc996a4b922107
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e1bc92a624e17c9fd0e3d4bb5116bbfbb7c38369
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33950811"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992901"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>Тип ресурса Андроиденроллменткомпаникоде
 
@@ -22,11 +22,11 @@ ms.locfileid: "33950811"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Енроллменттокен|Строка|Маркер регистрации, используемый пользователем для регистрации своего устройства.|
+|Енроллменттокен|String|Маркер регистрации, используемый пользователем для регистрации своего устройства.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный QR код для маркера.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,7 @@ ms.locfileid: "33950811"
   }
 }
 ```
+
 
 
 

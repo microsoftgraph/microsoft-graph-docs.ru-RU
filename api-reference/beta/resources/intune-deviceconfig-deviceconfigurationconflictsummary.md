@@ -4,12 +4,12 @@ description: Сводка по конфликтам для набора поли
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 818f5390717015fce642d83b10c0d8409733741c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58d5c3cf3a1716e2852c3b8ba2a343de51dbfe73
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947045"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992817"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Тип ресурса Девицеконфигуратионконфликтсуммари
 
@@ -32,11 +32,11 @@ ms.locfileid: "33947045"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
-|id|Строка|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
+|id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
 |Контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
 |Девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,6 +64,7 @@ ms.locfileid: "33947045"
   "deviceCheckinsImpacted": 1024
 }
 ```
+
 
 
 

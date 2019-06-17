@@ -4,12 +4,12 @@ description: Типы системных обновлений для владе�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf2fe7e489c2e0bf0bb6233db6145d8563052ab5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2beb0b2eba9c7c67a04d141ecff1463d4ae550ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949096"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983766"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "33949096"
 |отсрочки|1,1|Отложить автоматическую установку обновлений до 30 дней.|
 |окнами|2|Автоматическая установка в период ежедневного обслуживания.|
 |Автоматически|4|Автоматическая установка обновлений как можно скорее.|
+
 
 
 

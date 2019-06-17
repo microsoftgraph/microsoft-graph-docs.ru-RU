@@ -4,18 +4,18 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 80c9296dc0cb52d094647df60145630c18ea1776
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3d35b562564e43e6e96dd8d6479f48de149c20f2
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940920"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34991921"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Политики защиты приложений в Microsoft Intune помогают защитить корпоративные данные и предотвратить потерю данных.
 
@@ -44,6 +44,7 @@ ms.locfileid: "33940920"
 - [Уровень передачи данных управляемого приложения](intune-mam-managedappdatatransferlevel.md)
 - [Состояние диагностики управляемых приложений](intune-mam-managedappdiagnosticstatus.md)
 - [Причина пометки управляемого приложения](intune-mam-managedappflaggedreason.md)
+- [Ограничение на уведомления управляемого приложения](intune-mam-managedappnotificationrestriction.md)
 - [Операция управляемых приложений](intune-mam-managedappoperation.md)
 - [Набор символов ПИН-кода управляемого приложения](intune-mam-managedapppincharacterset.md)
 - [Политика управляемых приложений](intune-mam-managedapppolicy.md)

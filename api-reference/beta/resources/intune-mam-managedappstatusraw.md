@@ -4,12 +4,12 @@ description: Представляет нетипизированный отче�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 529b6b654c176b5062910a2cea0d03622faa78c9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 12d451a87012da930bb7330cd8eb63ecaa3fec1f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940682"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994652"
 ---
 # <a name="managedappstatusraw-resource-type"></a>Тип ресурса managedAppStatusRaw
 
@@ -36,7 +36,7 @@ ms.locfileid: "33940682"
 |version|String|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
 |content|[Json](../resources/intune-mam-json.md)|Содержимое отчета о состоянии.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,6 +58,7 @@ ms.locfileid: "33940682"
   }
 }
 ```
+
 
 
 

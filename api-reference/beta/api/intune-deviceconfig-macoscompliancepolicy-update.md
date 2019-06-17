@@ -4,12 +4,12 @@ description: Обновление свойств объекта macOSComplianceP
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c52b30143f8f38d96516b48b052355ffef298ec0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d7f262efdf3d49a4543d7ac4b3188dfb0a4b5a78
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33922910"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976906"
 ---
 # <a name="update-macoscompliancepolicy"></a>Update macOSCompliancePolicy
 
@@ -58,25 +58,25 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
-|passwordBlockSimple|Логический|Указывает, требуется ли блокировать простые пароли.|
+|passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простые пароли.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 65 535.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 14.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|osMinimumVersion|Строка|Минимальная версия MacOS.|
+|osMinimumVersion|String|Минимальная версия MacOS.|
 |osMaximumVersion|String|Максимальная версия MacOS.|
-|Осминимумбуилдверсион|Строка|Минимальная версия сборки MacOS.|
-|Осмаксимумбуилдверсион|Строка|Максимальная версия сборки MacOS.|
+|Осминимумбуилдверсион|String|Минимальная версия сборки MacOS.|
+|Осмаксимумбуилдверсион|String|Максимальная версия сборки MacOS.|
 |systemIntegrityProtectionEnabled|Boolean|Указывает на то, что защита целостности системы для устройств должна быть включена.|
-|deviceThreatProtectionEnabled|Логический|Указывает, что защита от угроз для устройств должна быть включена.|
+|deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[Девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
 |Гатекипералловедаппсаурце|[Макосгатекипераппсаурцес](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметры системы и конфиденциальности, которые определяют, какие расположения скачивания приложения можно запускать с устройства macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Логический|Указывает, следует ли включить брандмауэр.|
-|firewallBlockAllIncoming|Логический|Соответствует параметру "блокировать все входящие подключения".|
-|firewallEnableStealthMode|Логический|Соответствует параметру "включить скрытый режим".|
+|firewallEnabled|Boolean|Указывает, следует ли включить брандмауэр.|
+|firewallBlockAllIncoming|Boolean|Соответствует параметру "блокировать все входящие подключения".|
+|firewallEnableStealthMode|Boolean|Соответствует параметру "включить скрытый режим".|
 
 
 
@@ -163,6 +163,7 @@ Content-Length: 1255
   "firewallEnableStealthMode": true
 }
 ```
+
 
 
 

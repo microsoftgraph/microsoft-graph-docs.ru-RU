@@ -4,12 +4,12 @@ description: Тип приложения киоска Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0ce9a232fb3a4edad0804559076971389c19f4c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4d33316d356d23f3d77a6daae395ee53df7c9d06
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943937"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995422"
 ---
 # <a name="windowskioskapptype-enum-type"></a>тип перечисления Виндовскиоскапптипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "33943937"
 |store|1,1|Приложение Store.|
 |системной|2|Классическое приложение.|
 |aumId|4|Входные данные по AUMID.|
+
 
 
 

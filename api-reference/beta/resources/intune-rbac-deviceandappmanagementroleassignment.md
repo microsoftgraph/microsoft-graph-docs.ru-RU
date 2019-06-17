@@ -4,12 +4,12 @@ description: Ресурс назначения роли. Назначения р
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 115dfbae5bb333bb512db242d3fc1d58dfca74fb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3243e1c598db2277e411bbb45de38c26af5b3a3b
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33940010"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993643"
 ---
 # <a name="deviceandappmanagementroleassignment-resource-type"></a>Тип ресурса deviceAndAppManagementRoleAssignment
 
@@ -42,7 +42,7 @@ ms.locfileid: "33940010"
 |resourceScopes|Коллекция строк|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
 |members|Коллекция String|Список идентификаторов групп безопасности с элементами ролей. Эти идентификаторы берутся из Azure Active Directory.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |roleDefinition|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Определение роли, частью которого является это назначение. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
@@ -74,6 +74,7 @@ ms.locfileid: "33940010"
   ]
 }
 ```
+
 
 
 

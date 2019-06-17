@@ -4,12 +4,12 @@ description: Возможные значения параметров Credential
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 284f0fd4256a3e7f70cc463eecd6ca9655c7ec04
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 9971c6e6f685180f95af89cc52f05540f3534fd1
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947017"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995849"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>тип перечисления Девицегуардлокалсистемаусоритикредентиалгуардтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947017"
 |notConfigured|нуль|Отключает Credential Guard удаленно, если ранее настроено без блокировки UEFI.|
 |Енаблевисуефилокк|1,1|Включает защиту учетных данных с блокировкой UEFI.|
 |Енаблевисаутуефилокк|2|Включает защиту учетных данных без блокировки UEFI.|
+
 
 
 

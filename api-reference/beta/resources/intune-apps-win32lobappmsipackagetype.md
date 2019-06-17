@@ -4,12 +4,12 @@ description: Указывает тип пакета для MSI Win32LobApp.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd16f32bf0ab2616256bb8f0a72c3e19c094e5b0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 81d8e108f98d8c301063fe64c65ec7fd691fcb49
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949579"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994372"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>тип перечисления win32LobAppMsiPackageType
 
@@ -25,6 +25,7 @@ ms.locfileid: "33949579"
 |Пермачине|нуль|Указывает пакет приложений для компьютера.|
 |perUser|1,1|Указывает на пользовательский пакет приложения.|
 |Дуалпурпосе|2|Указывает пакет приложений с двумя целями.|
+
 
 
 

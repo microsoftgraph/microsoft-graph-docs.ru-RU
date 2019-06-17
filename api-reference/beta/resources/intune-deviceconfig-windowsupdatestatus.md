@@ -4,12 +4,12 @@ description: Состояния устройств конфигурации це
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6eecee6626e4d47856071de3ebb53944e196478
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8ace0b42b09093ce2e9d485271ec607ffd618c9e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33943643"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978691"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>тип перечисления Виндовсупдатестатус
 
@@ -26,6 +26,7 @@ ms.locfileid: "33943643"
 |Пендингинсталлатион|1,1|Существуют обновления, ожидающие установки, которые включают Неутвержденные обновления. Нет обновлений, ожидающих перезагрузки, неудачных обновлений.|
 |Пендингребут|2|Существуют обновления, требующие перезагрузки. Обновления не выполнены.|
 |сбоев|4|Не удалось установить обновления на устройстве.|
+
 
 
 

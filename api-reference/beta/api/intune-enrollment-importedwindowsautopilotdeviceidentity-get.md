@@ -4,12 +4,12 @@ description: Чтение свойств и связей между объект
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6448fb6868c6669e09cdd9bcd242c0e137e5dcaa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: c349cbe092d638c113031d6499ff6c0615bfee9e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908338"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981757"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Получение importedWindowsAutopilotDeviceIdentity
 
@@ -47,7 +47,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -88,6 +88,7 @@ Content-Length: 743
   }
 }
 ```
+
 
 
 

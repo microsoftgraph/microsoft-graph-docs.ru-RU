@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Деп
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c980b061501f521f24169c29c83c560e4a08d1fa
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: db9938b5b0d97b8866ef81c5dff10ed7c7d4bbff
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908849"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979111"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>Список Депенроллментбасепрофилес
 
@@ -43,7 +43,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -98,6 +98,7 @@ Content-Length: 1204
   ]
 }
 ```
+
 
 
 

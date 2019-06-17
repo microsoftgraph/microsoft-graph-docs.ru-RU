@@ -4,12 +4,12 @@ description: Возможные значения правил уменьшени
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aeee20da4330e81a7b3453d4920272b355439dc4
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 2081a4f653eb8824325ce1c0f3af3b542aa33264
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947381"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979895"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>тип перечисления Дефендераттакксурфацетипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947381"
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
 |блок|1,1|Функциональная возможность блока.|
 |Аудитмоде|2|Не изменяет функциональность, но создает журналы.|
+
 
 
 

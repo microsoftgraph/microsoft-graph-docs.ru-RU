@@ -4,12 +4,12 @@ description: Ресурс Импортедаппледевицеидентити
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 277ca83a4df6a3f8125fb3e2ae1687da6cef05ba
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b93929dd02b5ee1f472a89733d2dc6246cad4411
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941592"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992649"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>Тип ресурса Импортедаппледевицеидентити
 
@@ -34,7 +34,7 @@ ms.locfileid: "33941592"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |serialNumber|String|Серийный номер устройства|
-|Рекуестеденроллментпрофилеид|Строка|Идентификатор профиля регистрации администратор планирует применить к устройству во время следующей регистрации|
+|Рекуестеденроллментпрофилеид|String|Идентификатор профиля регистрации администратор планирует применить к устройству во время следующей регистрации|
 |Рекуестеденроллментпрофилеассигнментдатетиме|DateTimeOffset|Для устройства назначен профиль регистрации времени.|
 |isSupervised|Boolean|Указывает, защищено ли устройство Apple. Дополнительные сведения:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
@@ -44,7 +44,7 @@ ms.locfileid: "33941592"
 |Енроллментстате|[Енроллментстате](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -71,6 +71,7 @@ ms.locfileid: "33941592"
   "platform": "String"
 }
 ```
+
 
 
 

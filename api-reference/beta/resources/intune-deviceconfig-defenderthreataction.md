@@ -4,12 +4,12 @@ description: Действие защитника по умолчанию для 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1376927bc76903e10619e7c71fa53ce26d17075
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 215b243a6e63ee44163a4127cd3724b37995cdb6
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947297"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979741"
 ---
 # <a name="defenderthreataction-enum-type"></a>тип перечисления Дефендерсреатактион
 
@@ -29,6 +29,7 @@ ms.locfileid: "33947297"
 |разрешить|SP4|Разрешить обнаруженную угрозу.|
 |UserDefined типа|17:00|Разрешить пользователю определять действие, выполняемое с обнаруженной угрозой.|
 |блок|6 |Блокировка обнаруженной угрозы.|
+
 
 
 

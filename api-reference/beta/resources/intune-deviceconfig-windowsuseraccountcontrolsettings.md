@@ -4,12 +4,12 @@ description: Возможные значения параметров управ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 955fdf21528ca4bfa9be82aa75e06f6e52e44727
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3a3183e2f8c7521474dfb2910eb5e6f5fbe6de14
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33944147"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34978663"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>тип перечисления Виндовсусераккаунтконтролсеттингс
 
@@ -27,6 +27,7 @@ ms.locfileid: "33944147"
 |Нотифйонаппчанжес|2|Уведомление об изменениях приложения.|
 |Нотифйонаппчанжесвисаутдимминг|4|Уведомлять об изменениях приложений без затенения рабочего стола.|
 |Невернотифи|SP4|Никогда не уведомлять.|
+
 
 
 

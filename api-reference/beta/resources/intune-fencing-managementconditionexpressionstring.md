@@ -4,12 +4,12 @@ description: Строка выражения условия управления
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 510a12e38415b002e62c23891acf95cff7d6fd5a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3745066c277b5aa047a6667137d37f40734f2203
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941270"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979167"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>Тип ресурса Манажементкондитионекспрессионстринг
 
@@ -27,7 +27,7 @@ ms.locfileid: "33941270"
 |:---|:---|:---|
 |значение|String|Строковое значение выражения оператора условия управления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "33941270"
   "value": "String"
 }
 ```
+
 
 
 

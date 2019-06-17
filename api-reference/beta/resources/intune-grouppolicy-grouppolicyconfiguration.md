@@ -4,12 +4,12 @@ description: Объект конфигурации групповой полит
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d910bf8bdef34c60ca6bb66e1ce87ca9cf1d51ab
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 544b743ab690521fee48e3609e2c62582131d6ef
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941179"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34994246"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
 
@@ -38,7 +38,7 @@ ms.locfileid: "33941179"
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Дефинитионвалуес|Коллекция [граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Список включенных или отключенных значений определений групповой политики для конфигурации.|
@@ -62,6 +62,7 @@ ms.locfileid: "33941179"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

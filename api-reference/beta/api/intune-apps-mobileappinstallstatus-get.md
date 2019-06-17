@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта mobileAp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e88fe31262d5771916a11604c2e1ac2bebe96a2a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4e7cac9c0705aa9dcd8e4c5dc3fca4daff35522e
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935106"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34973862"
 ---
 # <a name="get-mobileappinstallstatus"></a>Получение mobileAppInstallStatus
 
@@ -87,6 +87,7 @@ Content-Length: 651
   }
 }
 ```
+
 
 
 

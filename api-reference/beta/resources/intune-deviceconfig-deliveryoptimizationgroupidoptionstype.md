@@ -4,12 +4,12 @@ description: Возможные значения параметра Деливе
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e6404b3fc01df4ac67de628477b4747c7fc553b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 1000f1b82edc2dc1987cdc6a75f40be16ade6e18
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947234"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979636"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>тип перечисления Деливерйоптимизатионграупидоптионстипе
 
@@ -27,6 +27,7 @@ ms.locfileid: "33947234"
 |Аусентикатеддомаинсид|2|SID домена с проверкой подлинности.|
 |Дхкпусероптион|4|Параметр пользователя DHCP.|
 |Днссуффикс|SP4|DNS-суффикс.|
+
 
 
 

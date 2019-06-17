@@ -4,12 +4,12 @@ description: Создать новый объект importedWindowsAutopilotDevi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dcd78ce37bdc4718bb69ed324ab34c12d2c7096
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e9580f8da9118a1f920e790cab61f560360cc753
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33908422"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34981778"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -44,21 +44,21 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта importedWindowsAutopilotDeviceIdentity в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта importedWindowsAutopilotDeviceIdentity.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|orderIdentifier|Строка|Номер заказа устройства Windows Autopilot.|
+|id|String|GUID объекта|
+|orderIdentifier|String|Номер заказа устройства Windows Autopilot.|
 |serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|Импортид|Строка|Идентификатор импорта для устройства автопилота Windows.|
+|Импортид|String|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|АссигнедусерпринЦипалнаме|Строка|ИМЯ участника-пользователя для пользователя, которому будет назначено устройство|
+|АссигнедусерпринЦипалнаме|String|Имя участника-пользователя для пользователя, которому будет назначено устройство|
 
 
 
@@ -117,6 +117,7 @@ Content-Length: 694
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
 
 
 

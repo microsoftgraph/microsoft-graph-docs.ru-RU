@@ -4,12 +4,12 @@ description: Содержит свойства реестра для обнар�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bd6f5e64953f71bcea6ed5e6e06205213bba58b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 6a75e30c0cc84f9e775f4ee304e27eacb42b409f
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949537"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975807"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>Тип ресурса win32LobAppRegistryRequirement
 
@@ -26,13 +26,13 @@ ms.locfileid: "33949537"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|Строка|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
-|check32BitOn64System|Логический|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
-|Ключевой|Строка|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
-|valueName|Строка|Имя значения реестра|
+|Детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|check32BitOn64System|Boolean|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
+|Ключевой|String|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
+|valueName|String|Имя значения реестра|
 |Детектионтипе|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных в реестре. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "33949537"
   "detectionType": "String"
 }
 ```
+
 
 
 

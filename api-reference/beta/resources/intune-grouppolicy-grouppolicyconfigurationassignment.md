@@ -4,12 +4,12 @@ description: Объект назначения настройки группов
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b85e3892a92605f4964700bdb9a1a28e5d02187d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e0ec4346174bdaafbc37c0721462ba8fd612abcc
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941165"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975947"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>Тип ресурса Граупполициконфигуратионассигнмент
 
@@ -31,11 +31,11 @@ ms.locfileid: "33941165"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип групп, нацеленных на конфигурацию групповой политики.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,7 @@ ms.locfileid: "33941165"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Содержит свойства для состояния вып�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70c0ab2cbfd52a538997dce5cc3c7dadb98aaae7
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: dbde1236d741b0eba5841170b7a18e0ac00f71ee
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942033"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34995289"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Тип ресурса Девицеманажементскриптусерстате
 
@@ -36,7 +36,7 @@ ms.locfileid: "33942033"
 |errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
 |userPrincipalName|String|Имя участника, указанного пользователем.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |deviceRunStates|Коллекция [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояний запуска для этого сценария на всех устройствах определенного пользователя.|
@@ -58,6 +58,7 @@ ms.locfileid: "33942033"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

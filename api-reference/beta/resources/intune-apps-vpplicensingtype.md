@@ -4,12 +4,12 @@ description: Содержит свойства для корпоративног
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 812cbdc203b09422f8a2cddac205d59f8c762a34
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: accd95c5045e42e3e89a9221e0084e11d4ed3825
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949712"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993251"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Тип ресурса vppLicensingType
 
@@ -22,12 +22,12 @@ ms.locfileid: "33949712"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Суппортусерлиценсинг|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|Суппортусерлиценсинг|Boolean|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |Суппортдевицелиценсинг|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
-|supportsUserLicensing|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|supportsUserLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |supportsDeviceLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "33949712"
   "supportsDeviceLicensing": true
 }
 ```
+
 
 
 

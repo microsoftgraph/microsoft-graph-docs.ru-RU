@@ -4,12 +4,12 @@ description: Условия управления — это события, ко
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efd9dfa17858e4de1aa430c26977babe659c1067
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 046f3280e5ab5ddcd4518b4938f9b8917b3914d9
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941291"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979216"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
 
@@ -29,8 +29,8 @@ ms.locfileid: "33941291"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
-|uniqueName|Строка|Уникальное имя условия управления. Используется в выражениях условия управления.|
+|id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
+|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
 |displayName|Строка|Имя условия управления, определенное администратором.|
 |description|String|Описание условия управления, заданное администратором.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
@@ -38,7 +38,7 @@ ms.locfileid: "33941291"
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы.|
 |Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления.|
@@ -66,6 +66,7 @@ ms.locfileid: "33941291"
   ]
 }
 ```
+
 
 
 

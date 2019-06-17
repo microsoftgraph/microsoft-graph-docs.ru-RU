@@ -4,12 +4,12 @@ description: Папка, содержащая приложения с начал
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a8fddc9b33b95418366b68fc348591af0db7b35
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: e28d9e63214e4dc6564423876e7bd041e51bcc60
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946576"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992341"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Тип ресурса iosHomeScreenFolderPage
 
@@ -22,10 +22,10 @@ ms.locfileid: "33946576"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя страницы папки|
+|displayName|String|Имя страницы папки|
 |apps|Коллекция [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)|Список приложений, которые отображаются на странице в папке. Эта коллекция может включать до 500 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,7 @@ ms.locfileid: "33946576"
   ]
 }
 ```
+
 
 
 

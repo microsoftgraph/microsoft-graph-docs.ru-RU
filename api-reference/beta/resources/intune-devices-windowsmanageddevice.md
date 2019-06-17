@@ -4,12 +4,12 @@ description: Устройства Windows, которые управляются
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb2c7f265824a1bb24ce5c095dfc44e62b31df35
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8e4d94c8f27d4fc651283476b0eb92518d5bdfde
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33941739"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983975"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>Тип ресурса Виндовсманажеддевице
 
@@ -36,7 +36,7 @@ ms.locfileid: "33941739"
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор устройства, наследуемого от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userId|String|Уникальный идентификатор пользователя, связанного с устройством, унаследованным от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceName|Строка|Имя устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceName|String|Имя устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Hardwareinformation.|[Hardwareinformation.](../resources/intune-devices-hardwareinformation.md)|Сведения о хардвард для устройства.  Включает такие сведения, как место хранения, производитель, серийный номер и т. д. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |ownerType|[ownerType](../resources/intune-devices-ownertype.md)|Владение устройством. Может быть "Company" или "Personal", наследуемых от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `company`, `personal`.|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Владение устройством. Может быть "Company" или "Personal", наследуемых от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `company`, `personal`.|
@@ -46,12 +46,12 @@ ms.locfileid: "33941739"
 |enrolledDateTime|DateTimeOffset|Время регистрации устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней успешной синхронизации устройства с Intune. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Чассистипе|[Чассистипе](../resources/intune-devices-chassistype.md)|Тип корпуса устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
-|operatingSystem|Строка|Операционная система устройства. Windows, iOS и т. д. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|operatingSystem|String|Операционная система устройства. Windows, iOS и т. д. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Платформа устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Состояние соответствия устройства требованиям. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
-|jailBroken|Строка|Указывает, является ли устройство взломанным или рутованным. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|jailBroken|String|Указывает, является ли устройство взломанным или рутованным. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[Манажементаженттипе](../resources/intune-devices-managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
-|osVersion|Строка|Версия операционной системы устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|osVersion|String|Версия операционной системы устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivated|Boolean|Указывает, активировано ли устройство в Exchange ActiveSync. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|String|Идентификатор устройства в Exchange ActiveSync. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -59,33 +59,33 @@ ms.locfileid: "33941739"
 |azureADRegistered|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Тип регистрации устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |Лостмодестате|[Лостмодестате](../resources/intune-devices-lostmodestate.md)|Указывает, включен ли режим потерянных или отключенных наследуемых от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `disabled`, `enabled`.|
-|activationLockBypassCode|Строка|Код, позволяющий обойти блокировку активации на устройстве. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|emailAddress|Строка|Сообщения электронной почты пользователя, связанного с устройством, унаследованным из [managedDevice](../resources/intune-devices-manageddevice.md)|
-|Свойства azureactivedirectorydeviceid|Строка|Уникальный идентификатор устройства Azure Active Directory. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureADDeviceId|Строка|Уникальный идентификатор устройства Azure Active Directory. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|activationLockBypassCode|String|Код, позволяющий обойти блокировку активации на устройстве. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|emailAddress|String|Сообщения электронной почты пользователя, связанного с устройством, унаследованным из [managedDevice](../resources/intune-devices-manageddevice.md)|
+|Свойства azureactivedirectorydeviceid|String|Уникальный идентификатор устройства Azure Active Directory. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureADDeviceId|String|Уникальный идентификатор устройства Azure Active Directory. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Состояние регистрации устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|Строка|Отображаемое имя категории устройств, унаследованное от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isSupervised|Логический|Защищенное состояние устройства унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceCategoryDisplayName|String|Отображаемое имя категории устройств, унаследованное от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|isSupervised|Boolean|Защищенное состояние устройства унаследовано от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Время последнего подключения устройства к Exchange. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeAccessState|[Девицеманажементексчанжеакцессстате](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Состояние доступа к устройству в Exchange. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[Девицеманажементексчанжеакцессстатереасон](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Причина состояния доступа к устройству в Exchange. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md). Возможные значения: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|Строка|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|remoteAssistanceSessionUrl|String|URL-адрес, позволяющий установить сеанс удаленного помощника с устройством. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|Проблемы, возникающие при создании сеансов удаленного помощника. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |isEncrypted|Boolean|Состояние шифрования устройства, унаследованное от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userPrincipalName|String|Имя участника пользователя устройства, унаследованное от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|model|Строка|Модель устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|manufacturer|Строка|Производитель устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|imei|Строка|IMEI унаследованы от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|model|String|Модель устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|manufacturer|String|Производитель устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|imei|String|IMEI унаследованы от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройства, наследуемого от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |serialNumber|Строка|SerialNumber, наследуемый от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|phoneNumber|Строка|Номер телефона устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|androidSecurityPatchLevel|Строка|Уровень обновления для системы безопасности Android, наследуемый от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|phoneNumber|String|Номер телефона устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|androidSecurityPatchLevel|String|Уровень обновления для системы безопасности Android, наследуемый от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userDisplayName|String|Отображаемое имя пользователя, унаследованное от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Функции, поддерживающие клиент Конфигрмгр, унаследованные от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |wiFiMacAddress|String|MAC-адрес сети Wi-Fi, наследуемый от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|Состояние подтверждения работоспособности устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|subscriberCarrier|Строка|Оператор перевозчика абонента, наследуемый от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|meid|Строка|MEID наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|subscriberCarrier|String|Оператор перевозчика абонента, наследуемый от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|meid|String|MEID наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |totalStorageSpaceInBytes|Int64|Общий объем хранилища в байтах, наследуемых от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |freeStorageSpaceInBytes|Int64|Свободное хранилище в байтах, наследуемых от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managedDeviceName|String|Автоматически созданный идентификатор устройства. Может быть заменен понятным именем. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -94,18 +94,18 @@ ms.locfileid: "33941739"
 |Ретиреафтердатетиме|DateTimeOffset|Указывает время, по истечении которого устройство будет автоматически снято из-за запланированного действия. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Усерслогжедон|Коллекция [логжедонусер](../resources/intune-devices-loggedonuser.md)|Указывает последнего вошедшего в систему пользователей устройства, унаследованного от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Префермдмоверграупполициапплиеддатетиме|DateTimeOffset|Сообщает о значении DateTime, заданном параметром Префермдмоверграупполици.  Если этот параметр установлен, параметры групповой политики в случае конфликта будут переопределяться параметрами групповой политики. Только для чтения. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|Аутопилотенроллед|Логический|Сообщает, зарегистрировано ли управляемое устройство через Автоматический пилот. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|Рекуиреусеренроллментаппровал|Логический|Указывает, является ли управляемое устройство iOS регистрацией на утверждение пользователя. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|Аутопилотенроллед|Boolean|Сообщает, зарегистрировано ли управляемое устройство через Автоматический пилот. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|Рекуиреусеренроллментаппровал|Boolean|Указывает, является ли управляемое устройство iOS регистрацией на утверждение пользователя. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Манажементцертификатикспиратиондате|DateTimeOffset|Дата окончания срока действия сертификата управления устройствами наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|икЦид|Строка|Идентификатор встроенной карты — это уникальный идентификационный номер SIM-карты. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|удид|Строка|Уникальный идентификатор устройства для устройств iOS и macOS. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|икЦид|String|Идентификатор встроенной карты — это уникальный идентификационный номер SIM-карты. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|удид|String|Уникальный идентификатор устройства для устройств iOS и macOS. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра устройства. Наследуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Виндовсактивемалварекаунт|Int32|Число активных вредоносных программ для этого устройства Windows, унаследованных из [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Виндовсремедиатедмалварекаунт|Int32|Количество исправленных вредоносных программ для этого устройства Windows, унаследованных из [managedDevice](../resources/intune-devices-manageddevice.md)|
-|notes|Строка|Примечания на устройстве, созданном администратором ИТ, унаследованном от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|notes|String|Примечания на устройстве, созданном администратором ИТ, унаследованном от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние работоспособности клиента Configuration Manager, действующее только для устройств под управлением агентов MDM/ConfigMgr, наследуемых от [managedDevice](../resources/intune-devices-manageddevice.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Все приложения, которые установлены на устройстве, унаследованном от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -291,6 +291,7 @@ ms.locfileid: "33941739"
   }
 }
 ```
+
 
 
 

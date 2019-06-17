@@ -4,12 +4,12 @@ description: Возможные значения для Фиреваллпреш
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 052eb026b7668f9159d1a091c32b229b1e1bf04d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cbbb68e9bc2472d1ab4a7ad0082059bc29fe0fcb
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946625"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993573"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "33946625"
 |Девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
 |none|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
 |utF8|2|Кодирование общего ключа с помощью UTF – 8|
+
 
 
 

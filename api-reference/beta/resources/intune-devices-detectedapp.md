@@ -4,12 +4,12 @@ description: Управляемое или неуправляемое прило
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db6ec2e211de14ee65d66874c8512423d4bf5c34
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 098ad481c854514e988037e755cefd3dbecd8165
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942166"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983157"
 ---
 # <a name="detectedapp-resource-type"></a>Тип ресурса detectedApp
 
@@ -37,7 +37,7 @@ ms.locfileid: "33942166"
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых было успешно установлено это приложение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Устройства, на которых установлено обнаруженное приложение|
@@ -60,6 +60,7 @@ ms.locfileid: "33942166"
   "deviceCount": 1024
 }
 ```
+
 
 
 

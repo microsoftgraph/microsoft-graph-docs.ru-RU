@@ -4,12 +4,12 @@ description: Создание нового объекта windows10EnrollmentCom
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc365545c949324cb45e70ffa91d977614fe6604
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 4ee58aeb8565856332ee23910b366832ddf5c7b7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899833"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34980504"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Создание windows10EnrollmentCompletionPageConfiguration
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта windows10EnrollmentCompletionPageConfiguration в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windows10EnrollmentCompletionPageConfiguration.
@@ -57,13 +57,13 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|Шовинсталлатионпрогресс|Логический|Отображение или скрытие хода установки для пользователя|
-|Блоккдевицесетупретрибюсер|Логический|Разрешить пользователю повторно выполнить установку при сбое установки|
-|Алловдевицересетонинсталлфаилуре|Логический|Разрешение или блокировка сброса устройства при сбое установки|
-|Алловлогколлектиононинсталлфаилуре|Логический|Разрешение или блокировка сбора журналов при сбое установки|
-|Кустомеррормессаже|Строка|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
+|Шовинсталлатионпрогресс|Boolean|Отображение или скрытие хода установки для пользователя|
+|Блоккдевицесетупретрибюсер|Boolean|Разрешить пользователю повторно выполнить установку при сбое установки|
+|Алловдевицересетонинсталлфаилуре|Boolean|Разрешение или блокировка сброса устройства при сбое установки|
+|Алловлогколлектиононинсталлфаилуре|Boolean|Разрешение или блокировка сбора журналов при сбое установки|
+|Кустомеррормессаже|String|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
 |Инсталлпрогресстимеаутинминутес|Int32|Задать время ожидания установки (в минутах)|
-|Алловдевицеусеонинсталлфаилуре|Логический|Разрешить пользователю продолжать использовать устройство при сбое установки|
+|Алловдевицеусеонинсталлфаилуре|Boolean|Разрешить пользователю продолжать использовать устройство при сбое установки|
 |Селектедмобилеаппидс|Коллекция строк|Выбранные приложения для отслеживания состояния установки|
 
 
@@ -127,6 +127,7 @@ Content-Length: 755
   ]
 }
 ```
+
 
 
 

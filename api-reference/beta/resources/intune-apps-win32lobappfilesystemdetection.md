@@ -4,12 +4,12 @@ description: Содержит путь к файлу или папке для о
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c7ba5c05647f25eb6248a7611617e630611025a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 447195064a9d42db9756c71dfe08e333bf567b31
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949642"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993181"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 
@@ -26,13 +26,13 @@ ms.locfileid: "33949642"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
-|Филеорфолдернаме|Строка|Имя файла или папки для определения бизнес-приложения Win32|
-|check32BitOn64System|Логический|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
+|Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|check32BitOn64System|Boolean|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
 |Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|Строка|Значение обнаружения файлов или папок|
+|Детектионвалуе|String|Значение обнаружения файлов или папок|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "33949642"
   "detectionValue": "String"
 }
 ```
+
 
 
 

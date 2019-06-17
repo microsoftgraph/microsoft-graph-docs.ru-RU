@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта mobileAp
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8188a0573cdafc38d0d19d846186c6b1981ab04d
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 55fe76b3cc7d6f5b0d9544dffb63db14cb695f34
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33935302"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34974113"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -77,6 +77,7 @@ Content-Length: 239
   }
 }
 ```
+
 
 
 

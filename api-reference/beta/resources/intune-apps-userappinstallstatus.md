@@ -4,12 +4,12 @@ description: Содержит свойства для состояния уст�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2f8c4b31a3c30210c1fbf9de6af5f7d00a939ea
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 60049701413605396ee4bf8d7277a02a11cc5bc0
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949705"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34993300"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса Усераппинсталлстатус
 
@@ -38,7 +38,7 @@ ms.locfileid: "33949705"
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |программы|[mobileApp](../resources/intune-apps-mobileapp.md);|Ссылка навигации на мобильное приложение.|
@@ -63,6 +63,7 @@ ms.locfileid: "33949705"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

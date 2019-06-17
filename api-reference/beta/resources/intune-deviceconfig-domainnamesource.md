@@ -4,12 +4,12 @@ description: Имя_домена источник.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44693fb2f64fe17b382298a8ae3fb1718339165f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 8fc122b050fcd41e093032b190ad3ae5ecf85a72
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33946835"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992397"
 ---
 # <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
 
@@ -24,6 +24,7 @@ ms.locfileid: "33946835"
 |:---|:---|:---|
 |Фуллдомаиннаме|нуль|Полное доменное имя.|
 |Нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
+
 
 
 

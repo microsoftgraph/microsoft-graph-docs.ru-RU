@@ -4,12 +4,12 @@ description: Содержит код продукта и свойства вер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c56e3047ccc83e7d417e03bc4a95a8538650341
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3ab90e57f8a6b78057c8358be319921a197c81cd
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949523"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34977361"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>Тип ресурса win32LobAppProductCodeDetection
 
@@ -25,11 +25,11 @@ ms.locfileid: "33949523"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|productCode|Строка|Код продукта для бизнес-приложения Win32 (LoB).|
+|productCode|String|Код продукта для бизнес-приложения Win32 (LoB).|
 |Продуктверсионоператор|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для определения версии продукта. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |productVersion|String|Версия приложения, на котором установлен продукт Win32 бизнес (LoB).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "33949523"
   "productVersion": "String"
 }
 ```
+
 
 
 

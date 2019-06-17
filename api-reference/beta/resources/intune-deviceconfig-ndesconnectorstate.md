@@ -4,12 +4,12 @@ description: Текущее состояние соединителя NDES Conne
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38371f6bf7c491951030a7853e8d27e58b603ac8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 686b4cc5a0b7fbd55e844cefa054af0ca07deae7
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951098"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34992699"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>тип перечисления Ндесконнекторстате
 
@@ -25,6 +25,7 @@ ms.locfileid: "33951098"
 |none|нуль|Для этого соединителя пока недоступно состояние.|
 |ASP|1,1|Соединитель NDES Connector недавно подключился|
 |отсутств|2|Нет недавних действий для соединителя NDES Connector|
+
 
 
 

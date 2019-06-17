@@ -4,12 +4,12 @@ description: Действие защитника, которое будет пр
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de59b3f3e835f11b172bb24cfb05f0af423be6e5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 3816fe9e4366d21ddab43558ea6ab703a2d4d660
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33947360"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34979860"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>тип перечисления Дефендерпотентиаллюнвантедаппактион
 
@@ -25,6 +25,7 @@ ms.locfileid: "33947360"
 |Девицедефаулт|нуль|Защита от Пуа отключена. Защитник не будет защищаться от потенциально нежелательных приложений.|
 |блок|1,1|Включена защита Пуа. Обнаруженные элементы блокируются. Они будут отображаться в журнале вместе с другими угрозами.|
 |включить|2|Режим аудита. Защитник обнаружит потенциально нежелательные приложения, но не выполнит никаких действий. Чтобы просмотреть сведения о защитнике приложений, необходимо выполнить поиск событий, созданных защитником, в средстве просмотра событий.|
+
 
 
 

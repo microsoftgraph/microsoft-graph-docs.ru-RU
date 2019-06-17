@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c989a0495f1dd9a8067060ab119f2648db6705d0
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 194bad4dd3e5a6b2a260ef7795311047cf66ff38
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33942085"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34983066"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритистате
 
@@ -29,6 +29,7 @@ ms.locfileid: "33942085"
 |notConfigured|SP4|Не настроено|
 |Доеснотмисардваререкуирементс|17:00|Система не соответствует требованиям к оборудованию|
 |остальные|42|Остальные. Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.|
+
 
 
 

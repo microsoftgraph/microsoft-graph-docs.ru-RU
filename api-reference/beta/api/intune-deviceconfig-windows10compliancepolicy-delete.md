@@ -4,12 +4,12 @@ description: Удаляет объект windows10CompliancePolicy.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2aa7e30606b636f586514f702ac7c8bf4c1ed0cb
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: b33a1f61e88cae01418f8d895bcc3efb3c949952
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33921879"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34976213"
 ---
 # <a name="delete-windows10compliancepolicy"></a>Delete windows10CompliancePolicy
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

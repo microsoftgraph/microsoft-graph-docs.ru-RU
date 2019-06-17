@@ -4,12 +4,12 @@ description: Содержит свойства для сведений о пак
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2803779830d0e2bb88a0a91a96abfc101d15cb66
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 63b335aec3a4eeebb5d7cf031a05eaa7547bfd25
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949502"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34975660"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
 
@@ -23,14 +23,14 @@ ms.locfileid: "33949502"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, в которой можно запустить это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|Строка|Отображаемое имя.|
-|identityName|Строка|Имя удостоверения.|
-|Идентитипублишер|Строка|Издатель удостоверений.|
+|displayName|String|Отображаемое имя.|
+|identityName|String|Имя удостоверения.|
+|Идентитипублишер|String|Издатель удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия идентификатора.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,10 +57,13 @@ ms.locfileid: "33949502"
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   }
 }
 ```
+
 
 
 
