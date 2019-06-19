@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 2807404fe67e9bd6e7f09ef6df9872df8ef7a358
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: e4142e63fc319d27632a27850c72da83d4a469ef
+ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991529"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017761"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -57,6 +57,12 @@ ms.locfileid: "34991529"
 |Дополнение|Бета|Добавлен элемент **sharedSecret** для типа перечисления [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены элементы **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** и **windows10IoTCoreCommercial** для типа перечисления [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta)|
 
+### <a name="microsoft-teams-apis"></a>API Microsoft Teams
+
+| **Тип изменения** | **Version**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлен ресурс [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) и соответствующие методы. |
+
 ### <a name="onedrive-and-sharepoint-apis"></a>API OneDrive и SharePoint
 
 | **Тип изменения** | **Version** | **Описание**                          |
@@ -64,13 +70,20 @@ ms.locfileid: "34991529"
 | Дополнение        | Бета-версия        | Добавлено свойство навигации[followSite](/graph/api/follow-site?view=graph-rest-beta) в набор сущностей [user](/graph/api/resources/user?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлено свойство навигации [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) в набор сущностей [user](/graph/api/resources/user?view=graph-rest-beta). |
 
-### <a name="microsoft-teams-apis"></a>API Microsoft Teams
+### <a name="outlook-mail-calendar-contacts"></a>Почта, календарь, контакты Outlook
 
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета | Добавлен ресурс [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) и соответствующие методы. |
+| Дополнение | 1.0 | Добавлен объект [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), производный от объекта [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) и поддерживающий его методы. |
+| Дополнение | 1.0 и бета-версия | Для администраторов добавлена возможность ограничить приложению доступ, указав только определенные почтовые ящики, даже если ему предоставлены разрешения приложений на доступ к почте, параметрам почтового ящика, календарям и контактам. Дополнительные сведения см. в статье [Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online](auth-limit-mailbox-access.md). |
+
 
 ## <a name="may-2019"></a>Май 2019 г.
+
+### <a name="directory-apis"></a>API каталогов
+| **Тип изменения** | **Version** | **Описание** |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлено свойство **assignedlabels** для объекта [group](https://docs.microsoft.com/ru-RU/graph/api/resources/group?view=graph-rest-beta). Это свойство представляет список пар меток конфиденциальности (идентификатор метки, имя метки), связанных с группой.
 
 ### <a name="education-apis"></a>API для образования
 | Тип изменения | Версия | Описание                                                                                                                                                      |
@@ -81,25 +94,6 @@ ms.locfileid: "34991529"
 | Дополнение    | Бета    | Добавление [delta](/graph/delta-query-overview) к [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta).                                       |
 | Дополнение    | Бета    | Добавление [delta](/graph/delta-query-overview) к [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).                                         |
 | Дополнение    | Бета    | Добавление параметра `faculty` к перечислению [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values).                              |
-### <a name="microsoft-teams-apis"></a>API Microsoft Teams
-
-| **Тип изменения** | **Version** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение        | бета        | Добавлено свойство **urgent** для перечисления [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta).|
-| Дополнение        | бета        | Добавлено свойство навигации **hostedContents** для объекта [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
-| Дополнение        | бета        | Добавлен объект **chatMessageHostedContent** для представления контента, размещенного Microsoft Teams, связанного с [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
-
-### <a name="reports-apis"></a>API отчетов
-
-| **Тип изменения** | **Version** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
-| Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
-
-### <a name="directory-apis"></a>API каталогов
-| **Тип изменения** | **Version** | **Описание** |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено свойство **assignedlabels** для объекта [group](https://docs.microsoft.com/ru-RU/graph/api/resources/group?view=graph-rest-beta). Это свойство представляет список пар меток конфиденциальности (идентификатор метки, имя метки), связанных с группой.
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 |Тип изменения|Версия|Описание|
@@ -143,13 +137,20 @@ ms.locfileid: "34991529"
 |Дополнение|бета|Добавлен элемент **derivedCredential** для типа перечисления [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **derivedCredential** для типа перечисления [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta)|
 
+### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
-### <a name="outlook-mail"></a>Почта Outlook
+| **Тип изменения** | **Version** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | бета        | Добавлено свойство **urgent** для перечисления [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta).|
+| Дополнение        | бета        | Добавлено свойство навигации **hostedContents** для объекта [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
+| Дополнение        | бета        | Добавлен объект **chatMessageHostedContent** для представления контента, размещенного Microsoft Teams, связанного с [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
 
-| **Тип изменения** | **Version**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлен объект [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0), производный от объекта [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) и поддерживающий его методы. |
+### <a name="reports-apis"></a>API отчетов
 
+| **Тип изменения** | **Version** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
+| Дополнение        | бета  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 
 ### <a name="risky-users-api"></a>Рискованные API пользователей
 
@@ -1222,7 +1223,7 @@ ms.locfileid: "34991529"
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta); <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
-| Дополнение        | Бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta); <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
+| Дополнение        | бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta); <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta); <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta); <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta).|
@@ -1387,7 +1388,7 @@ ms.locfileid: "34991529"
 | Дополнение        | 1.0        | Добавлены объект [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) и сложные типы [messageRuleActions](/graph/api/resources/messageruleactions?view=graph-rest-1.0), [messageRulePredicates](/graph/api/resources/messagerulepredicates?view=graph-rest-1.0) и [sizeRange](/graph/api/resources/sizerange?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлены следующие операции CRUD для правил обработки сообщений: [создание](/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0), [перечисление](/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0), [получение](/graph/api/messagerule-get?view=graph-rest-1.0), [обновление](/graph/api/messagerule-update?view=graph-rest-1.0) и [удаление](/graph/api/messagerule-delete?view=graph-rest-1.0). |
 | Дополнение | Бета-версия | Добавлен объект [mailSearchFolder](/graph/api/resources/mailsearchfolder?view=graph-rest-beta). |
-| Дополнение | Бета-версия | Добавлены следующие API для папки поиска почты: [API создания](/graph/api/mailsearchfolder-post?view=graph-rest-beta), [API обновления](/graph/api/mailsearchfolder-update?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлены следующие API для папки поиска почты: [API создания](/graph/api/mailsearchfolder-post?view=graph-rest-beta), [API обновления](/graph/api/mailsearchfolder-update?view=graph-rest-beta). |
 | Изменение | Бета-версия | Для папки поиска почты добавлена поддержка [удаления объекта mailFolder](/graph/api/mailfolder-delete?view=graph-rest-beta), [получения объекта mailFolder](/graph/api/mailfolder-get?view=graph-rest-beta) и [перечисления дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). |
 
 
@@ -3094,7 +3095,7 @@ ms.locfileid: "34991529"
 
 ### <a name="webhooks"></a>Веб-перехватчики
 
-| **Тип изменения** | **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | В веб-перехватчики добавлены корневые элементы Drive в качестве ресурса, доступного для подписки. |
 
