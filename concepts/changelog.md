@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e4142e63fc319d27632a27850c72da83d4a469ef
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.openlocfilehash: f468abd516fd83b50ebe3902edd1cef616698999
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017761"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084042"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -230,8 +230,9 @@ ms.locfileid: "35017761"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |1.0 | Добавлена поддержка разрешений приложений для ресурса [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0).|
 |Дополнение |1.0| Добавлены свойства **email** и **webUrl** для [канала](/graph/api/resources/channel?view=graph-rest-1.0).|
-| Дополнение | бета | Добавлены ресурсы [чата](/api-reference/beta/resources/chat.md) и соответствующие методы. |
-| Дополнение | бета | Добавлены ресурсы [участника беседы](/api-reference/beta/resources/conversationmember.md) и соответствующие методы. |
+|Дополнение | бета | Добавлены ресурсы [чата](/api-reference/beta/resources/chat.md) и соответствующие методы. |
+|Дополнение |Бета| Добавлены API для просмотра [изображений](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) в сообщениях.|
+|Дополнение | бета | Добавлены ресурсы [участника беседы](/api-reference/beta/resources/conversationmember.md) и соответствующие методы. |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>API OneDrive и SharePoint
 
@@ -1008,7 +1009,7 @@ ms.locfileid: "35017761"
 |Изменение|бета| Тип **comments** изменен с `String` на `String collection`, а тип **severity** изменен с `String` на перечисление [alertSeverity](/graph/api/resources/alertseverityenumtype?view=graph-rest-beta) в объекте [alert](/graph/api/resources/alert?view=graph-rest-beta). |
 | Дополнение        | бета       | Добавлены следующие типы ресурсов: <br/> [cloudAppSecurityState](/graph/api/resources/cloudappsecuritystate?view=graph-rest-beta) <br/> [fileHash](/graph/api/resources/filehash?view=graph-rest-beta) <br/> [registryKeyState](/graph/api/resources/registrykeystate?view=graph-rest-beta) |
 |Удаление|бета| Удалены следующие типы ресурсов: <br/> **activityGroupState**  <br/> **applicationSecurityState** |
-| Дополнение        | бета       | Добавлены следующие перечисления: <br/> [alertSeverity](/graph/api/resources/alertseverityenumtype?view=graph-rest-beta) <br/> [connectionDirection](/graph/api/resources/connectiondirectionenumtype?view=graph-rest-beta) <br/> [connectionStatus](/graph/api/resources/connectionstatusenumtype?view=graph-rest-beta) <br/> [emailRole](/graph/api/resources/emailroleenumtype?view=graph-rest-beta) <br/> [fileHashType](/graph/api/resources/filehashtypeenumtype?view=graph-rest-beta) <br/> [registryHive](/graph/api/resources/registryhiveenumtype?view=graph-rest-beta)  <br/> [registryOperation](/graph/api/resources/registryoperationenumtype?view=graph-rest-beta) <br/> [registryValueType](/graph/api/resources/registryvaluetypeenumtype?view=graph-rest-beta)|
+| Дополнение        | Бета       | Добавлены следующие перечисления: <br/> [alertSeverity](/graph/api/resources/alertseverityenumtype?view=graph-rest-beta) <br/> [connectionDirection](/graph/api/resources/connectiondirectionenumtype?view=graph-rest-beta) <br/> [connectionStatus](/graph/api/resources/connectionstatusenumtype?view=graph-rest-beta) <br/> [emailRole](/graph/api/resources/emailroleenumtype?view=graph-rest-beta) <br/> [fileHashType](/graph/api/resources/filehashtypeenumtype?view=graph-rest-beta) <br/> [registryHive](/graph/api/resources/registryhiveenumtype?view=graph-rest-beta)  <br/> [registryOperation](/graph/api/resources/registryoperationenumtype?view=graph-rest-beta) <br/> [registryValueType](/graph/api/resources/registryvaluetypeenumtype?view=graph-rest-beta)|
 |Удаление|бета| Удалены следующие типы перечисления: <br/> **alertType** <br/> **applicationPermissionsRequired** |
 | Дополнение        | бета       | Добавлено свойство **fileHash** для объекта [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta ).|
 |Удаление|бета| Удалены свойства **authenticodeHash256** и **sha256** из объекта [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta). |
@@ -1387,7 +1388,7 @@ ms.locfileid: "35017761"
 | Дополнение        | 1.0        | Добавлено свойство навигации **messageRules** для объекта [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0). **messageRules** — это набор экземпляров [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлены объект [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) и сложные типы [messageRuleActions](/graph/api/resources/messageruleactions?view=graph-rest-1.0), [messageRulePredicates](/graph/api/resources/messagerulepredicates?view=graph-rest-1.0) и [sizeRange](/graph/api/resources/sizerange?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлены следующие операции CRUD для правил обработки сообщений: [создание](/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0), [перечисление](/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0), [получение](/graph/api/messagerule-get?view=graph-rest-1.0), [обновление](/graph/api/messagerule-update?view=graph-rest-1.0) и [удаление](/graph/api/messagerule-delete?view=graph-rest-1.0). |
-| Дополнение | Бета-версия | Добавлен объект [mailSearchFolder](/graph/api/resources/mailsearchfolder?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлен объект [mailSearchFolder](/graph/api/resources/mailsearchfolder?view=graph-rest-beta). |
 | Дополнение | Бета | Добавлены следующие API для папки поиска почты: [API создания](/graph/api/mailsearchfolder-post?view=graph-rest-beta), [API обновления](/graph/api/mailsearchfolder-update?view=graph-rest-beta). |
 | Изменение | Бета-версия | Для папки поиска почты добавлена поддержка [удаления объекта mailFolder](/graph/api/mailfolder-delete?view=graph-rest-beta), [получения объекта mailFolder](/graph/api/mailfolder-get?view=graph-rest-beta) и [перечисления дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). |
 
@@ -1700,7 +1701,7 @@ ms.locfileid: "35017761"
 |Дополнение|Версия 1.0|Добавлена функция [downloadApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0) для объекта [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлена функция [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0) для объекта [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлена функция [deviceConfigurationDeviceActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-1.0) для объекта [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0). |
-|Дополнение|Версия 1.0|Добавлена функция [verifyWindowsEnrollmentAutoDiscovery](/graph/api/intune-onboarding-devicemanagement-verifywindowsenrollmentautodiscovery?view=graph-rest-1.0) для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0). |
+|Дополнение|Версия 1.0|Добавлена функция [verifyWindowsEnrollmentAutoDiscovery](/graph/api/intune-onboarding-devicemanagement-verifywindowsenrollmentautodiscovery?view=graph-rest-1.0) к объекту [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлена функция **getUserIdsWithFlaggedAppRegistration** в коллекции [managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлена функция [getManagedAppDiagnosticStatuses](/graph/api/intune-mam-user-getmanagedappdiagnosticstatuses?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлена функция [getManagedAppPolicies](/graph/api/intune-mam-user-getmanagedapppolicies?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |
@@ -2092,10 +2093,10 @@ ms.locfileid: "35017761"
 | Дополнение        | Бета        | Добавлены новые объекты: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta]. |
 | Дополнение        | Бета        | Добавлены новые сложные типы: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta] и [VersionAction][VersionAction-beta]. |
 | Дополнение        | Бета        | Добавлено свойство **driveType** для сложного типа [ItemReference][ItemReference-beta]. |
-| Удаление        | бета        | Удалено свойство **tenantId** сложного типа [SharepointIds][SharepointIds-beta]. |
+| Удаление        | Бета        | Удалено свойство **tenantId** сложного типа [SharepointIds][SharepointIds-beta]. |
 | Дополнение        | 1.0        | Добавлены свойства **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** и **frameRate** для сложного типа [Video][Video-beta]. |
-| Дополнение        | Бета        | Добавлены действия [CheckIn][CheckIn-beta] и [CheckOut][CheckOut-beta] для ресурса [DriveItem][DriveItem-beta]. |
-| Дополнение        | Бета        | Добавлены свойства **expirationDateTime**, **password**, **message** и **recipients** для действия [CreateLink][CreateLink-beta] ресурса [DriveItem][DriveItem-beta]. |
+| Дополнение        | Бета        | Добавлены действия [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] для ресурса [DriveItem][DriveItem-beta]. |
+| Дополнение        | Бета        | Добавлены свойства **expirationDateTime**, **password**, **message** и **recipients** для ресурса [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta]. |
 
 [Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
@@ -2182,7 +2183,7 @@ ms.locfileid: "35017761"
 | Дополнение        | Бета        | Добавлены связи **activities** и **versions** для ресурса [ListItem][ListItem-beta]. |
 | Дополнение        | Бета        | Добавлена связь **contentTypes** для ресурса [Site][Site-beta]. |
 | Дополнение        | Бета        | Добавлено свойство **outputType** для типа [BooleanColumn][BooleanColumn-beta]. |
-| Дополнение        | бета        | Добавлены новые сложные типы: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta] и [SystemFacet][SystemFacet-beta]. |
+| Дополнение        | Бета        | Добавлены новые сложные типы: [ContentTypeInfo][ContentTypeInfo-beta], [ContentTypeOrder][ContentTypeOrder-beta], [CurrencyColumn][CurrencyColumn-beta] и [SystemFacet][SystemFacet-beta]. |
 | Дополнение        | Бета        | Добавлено свойство **contentTypesEnabled** для сложного типа [ListInfo][ListInfo-beta]. |
 | Дополнение        | Бета        | Добавлено свойство **allowUnlimitedLength** для сложного типа [LookupColumn][LookupColumn-beta]. |
 | Изменение          | Бета        | Имя свойства **allowMultipleValue** изменено на **allowMultipleValues** для сложного типа [LookupColumn][LookupColumn-beta]. |
@@ -3095,7 +3096,7 @@ ms.locfileid: "35017761"
 
 ### <a name="webhooks"></a>Веб-перехватчики
 
-| **Тип изменения** | **Версия** | **Описание**                          |
+| **Тип изменения** | **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | В веб-перехватчики добавлены корневые элементы Drive в качестве ресурса, доступного для подписки. |
 

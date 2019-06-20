@@ -3,14 +3,13 @@ title: 'Краткое руководство по Microsoft Graph: вопрос
 description: В этой статье представлены ответы на вопросы, связанные с краткими руководствами по Microsoft Graph.
 author: jasonjoh
 ms.author: jasonjoh
-ms.date: 12/13/2018
 localization_priority: Normal
-ms.openlocfilehash: 457b82813420b8771a5e59e9723f11885388c7b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bd1405f4805bb9740fb7119adcf2f877236d19cf
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834946"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084091"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Краткое руководство по Microsoft Graph: вопросы и ответы
 
@@ -42,7 +41,8 @@ ms.locfileid: "27834946"
 - Выполнить сборку кода самостоятельно, следуя пошаговым инструкциям из учебника.
 - Скачать готовый проект из соответствующего репозитория GitHub и выполнить инструкции из файла сведений, чтобы настроить и запустить пример.
 
-> **Примечание.** Мы работаем над созданием учебников для всех платформ, у которых в настоящее время есть краткие руководства. Для некоторых кратких руководств пока нет соответствующих учебников.
+> [!NOTE]
+> Мы работаем над созданием учебников для всех платформ, у которых в настоящее время есть краткие руководства. Для некоторых кратких руководств пока нет соответствующих учебников.
 
 #### <a name="tutorials-and-github-repositories"></a>Учебники и репозитории GitHub
 
@@ -50,7 +50,7 @@ ms.locfileid: "27834946"
 
 | Краткое руководство | Учебник | Репозиторий GitHub |
 |-------------|----------|-------------------|
-| Android | Нет | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
+| Android | [Учебник](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
 | Angular | [Учебник](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
 | ASP.NET MVC | [Учебник](/graph/tutorials/aspnet) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
 | iOS Swift | Нет | [GitHub](https://github.com/microsoftgraph/ios-swift-connect-sample) |
@@ -64,11 +64,25 @@ ms.locfileid: "27834946"
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>Почему в примерах из краткого руководства нет вариантов использования расширенной проверки подлинности?
 
-Примеры из краткого руководства используются для ознакомления с функцией проверки подлинности и вызовов API Microsoft Graph. Дополнительные сведения о других потоках проверки подлинности см. в документации [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+Примеры из краткого руководства используются для ознакомления с функцией проверки подлинности и вызовов API Microsoft Graph. Дополнительные сведения о других потоках проверки подлинности см. в документации [Azure Active Directory](/azure/active-directory/develop/authentication-scenarios).
 
 ### <a name="what-if-i-run-into-an-unexpected-error-or-problem-with-a-quick-start"></a>Что делать при возникновении непредвиденной ошибки или проблемы с кратким руководством?
 
 Если не удается обеспечить правильную работу при использовании краткого руководства, опубликуйте проблему в соответствующем репозитории GitHub.
+
+## <a name="known-issues"></a>Известные проблемы
+
+### <a name="aspnet-quick-start-displays-an-error-when-running-it-cannot-find-a-part-of-the-path-graph-tutorialgraph-tutorialbinroslyncscexe"></a>При запуске краткого руководства ASP.NET отображается ошибка "Не удается найти часть пути [...]\Graph Tutorial\graph-tutorial\bin\roslyn\csc.exe".
+
+Это вызвано [проблемой с Visual Studio и компилятором Roslyn](https://github.com/dotnet/roslyn/issues/15556). Исправить эту ошибку можно одним из следующих вариантов:
+
+- Выгрузка и повторная загрузка проекта в обозревателе решений
+- Очистка и перестройка решения
+- Обновление пакетов NuGet
+
+### <a name="im-getting-aadsts50011-the-reply-url-specified-in-the-request-does-not-match-the-reply-urls-configured-for-the-application-when-running-a-quick-start"></a>При запуске краткого руководства возникает ошибка "AADSTS50011: URL-адрес ответа, указанный в запросе, не совпадает с URL-адресами ответов, настроенными для приложения".
+
+Это указывает на проблему с регистрацией приложения для краткого руководства. Когда вы скачиваете краткое руководство со [страницы кратких руководств Microsoft Graph](https://developer.microsoft.com/graph/quick-start), для вас создается регистрация приложение и выполняется настройка URL-адреса ответа (другое название — URL-адрес перенаправления), совпадающего с URL-адресом по умолчанию, который используется примером проекта. Если изменить URL-адрес, нарушается соответствие регистрации приложения, и может возникнуть эта ошибка. Чтобы устранить эту ошибку, обратитесь к файлу README.md, включенному в проект краткого руководства, за инструкциями о том, как создать регистрацию приложения и настроить ее в примере кода.
 
 ## <a name="didnt-find-what-you-need"></a>Не нашли то, что искали?
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса chatMessage
 description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
-localization_priority: Priority
-author: nkramer
+localization_priority: Normal
+author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea21d57134643c83406f449ee7cdad192afc0326
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
+ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709413"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35084049"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -22,14 +22,17 @@ ms.locfileid: "34709413"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление сообщений в канале](../api/channel-list-messages.md) | Коллекция [chatmessage](chatmessage.md) | Получение списка всех корневых сообщений в канале.|
-|[Получение сообщения в канале](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Получение одного корневого сообщения из канала.|
-|[Перечисление ответов на сообщение](../api/channel-list-messagereplies.md) | Коллекция [chatmessage](chatmessage.md)| Получение списка всех ответов на сообщение в канале.|
-|[Получение ответа на сообщение](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Получение одного ответа на сообщение в канале.|
-|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatmessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
-|[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
-|[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
+|[Перечисление сообщений в канале](../api/channel-list-messages.md) | Коллекция [chatMessage](chatmessage.md) | Список всех корневых сообщений в канале.|
+|[Получение сообщения в канале](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного корневого сообщения из канала.|
+|[Перечисление ответов на сообщение](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение в канале.|
+|[Получение ответа на сообщение](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение в канале.|
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
+|[Ответ на сообщение в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
+|[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Список сообщений в индивидуальном или групповом чате. |
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
+|[Перечисление всех размещенных изображений](../api/chatmessagehostedimage-list-hostedimages.md) | Коллекция [hostedImage](../resources/chatmessagehostedimage.md)| Получение всех изображений, размещенных в сообщении.|
+|[Получение размещенных изображений](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Получение размещенного изображения из сообщения.|
+|[Получение байтов размещенных изображений](../api/chatmessagehostedimage-getbytes.md) | двоичные данные изображения | Получение двоичных данных размещенного изображения из сообщения.|
 
 ## <a name="properties"></a>Свойства
 
@@ -51,7 +54,6 @@ ms.locfileid: "34709413"
 |importance| chatMessageImportance | Важность сообщения. Допустимые значения: `normal`, `high`, `urgent`.|
 |reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на сообщение (например, "Нравится").|
 |языковые стандарты|string|Язык сообщения, установленный клиентом.|
-
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
