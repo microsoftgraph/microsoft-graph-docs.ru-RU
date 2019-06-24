@@ -7682,6 +7682,15 @@ items:
                 href: api/application-list-owners.md
               - name: Назначение владельца
                 href: api/application-post-owners.md
+              - name: Шаблон приложения
+                href: resources/applicationtemplate.md
+                items:
+                  - name: Список шаблонов приложений
+                    href: api/applicationtemplate-list.md
+                  - name: Получение шаблона приложения
+                    href: api/applicationtemplate-get.md
+                  - name: Создание экземпляра шаблона приложения
+                    href: api/applicationtemplate-instantiate.md
           - name: Журналы аудита
             href: resources/azure-ad-auditlog-overview.md
             items:
@@ -8345,7 +8354,7 @@ items:
                 href: api/onenote-list-sections.md
               - name: Список групп разделов
                 href: api/onenote-list-sectiongroups.md
-              - name: Список страниц
+              - name: Вывод списка страниц
                 href: api/onenote-list-pages.md
               - name: Создание страницы
                 href: api/onenote-post-pages.md
@@ -8609,7 +8618,7 @@ items:
               - name: Действия в OneDrive
                 href: resources/onedrive-activity-reports.md
                 items:
-                  - name: Получение сведений о пользователе
+                  - name: Получение сведений о пользователях
                     href: api/reportroot-getonedriveactivityuserdetail.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getonedriveactivityusercounts.md
@@ -9261,9 +9270,9 @@ items:
           - name: Группа задач Outlook
             href: resources/outlooktaskgroup.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/outlookuser-list-taskgroups.md
-              - name: Create
+              - name: Создание
                 href: api/outlookuser-post-taskgroups.md
               - name: Получение
                 href: api/outlooktaskgroup-get.md
