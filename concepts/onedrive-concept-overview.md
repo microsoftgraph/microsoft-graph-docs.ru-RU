@@ -3,12 +3,12 @@ title: Обзор API для хранилища файлов OneDrive
 description: OneDrive является центром файлов в Office 365.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9bbc5158140930081beb665580b3f8344f6a1738
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61e94a9e7fe9e708762ae5e45c69bd54b8be0ef6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560769"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133777"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Обзор API для хранилища файлов OneDrive
 
@@ -20,6 +20,8 @@ OneDrive является центром файлов в Office 365.
 Пользователи могут хранить файлы на личном (своем OneDrive) либо общем диске на базе библиотеки документов [SharePoint][].
 Гибкость OneDrive позволяет пользователям работать с коллегами так, как им удобно.
 Пользователи могут делиться ссылками на файлы, копировать либо перемещать файлы на диски групп или даже прикреплять файлы OneDrive к почтовым сообщениям в Outlook.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
 
 ## <a name="why-integrate-with-onedrive-file-storage-in-the-cloud"></a>Преимущества интеграции с облачным файловым хранилищем OneDrive?
 

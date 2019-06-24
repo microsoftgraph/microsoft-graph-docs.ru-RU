@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными от сети экземплярами корпоративных облачных служб Майкрософт, которые ограничены в пределах географических границ конкретных стран и обслуживаются местным персоналом.
-ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599830"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133734"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -23,6 +23,8 @@ ms.locfileid: "33599830"
 В этой статье приводятся сведения о различных облачных развертываниях Microsoft Graph и возможностях, доступных разработчикам в различных средах.
 
 >**Примечание:** [Microsoft Graph Data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) не поддерживает никакие из национальных облачных развертываний. 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
 ## <a name="app-registration-and-token-service-root-endpoints"></a>Конечные точки регистрации приложений и корневых конечных точек службы маркеров
 

@@ -4,20 +4,18 @@ description: API в Microsoft Graph дополняет ресурсы Office 365
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: f181441a9333d678ecb989eaa369e972b45ba570
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.openlocfilehash: ab3aec0748c2036ba25ac28a3c2ab7b0cd7e4112
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536514"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133721"
 ---
 # <a name="education-api-overview"></a>Обзор API для образования
 
 API в Microsoft Graph дополняет ресурсы Office 365 сведениями, актуальными для учебных заведений, включая данные об учреждениях, классах, пользователях (учащихся и преподавателях), заданиях и сданных работах. Это упрощает создание решений, интегрируемых с образовательными ресурсами, для различных сценариев в учебных заведениях и аудиториях.
 
-API для образования в Microsoft Graph предоставляет доступ к классам, учебным заведениям, пользователям, заданиям, сданным работам и т. д.
-
-![Обзор EDU Graph](images/edugraph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
 ## <a name="why-integrate-with-education-scenarios"></a>Зачем нужна интеграция со сценариями образования?
 

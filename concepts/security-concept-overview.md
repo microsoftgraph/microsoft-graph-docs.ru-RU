@@ -4,20 +4,24 @@ description: С помощью API безопасности Microsoft Graph мо
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564198"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133840"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 
 С помощью API безопасности Microsoft Graph можно подключаться к продуктам Майкрософт по обеспечению безопасности, службам и партнерам, чтобы упростить операции обеспечения безопасности и улучшить защиту от угроз, их обнаружение и возможности реагирования. API безопасности Microsoft Graph является промежуточной службой (или посредником), предоставляющей единый программный интерфейс для подключения нескольких [поставщиков безопасности Microsoft Graph](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (также называемых поставщиками безопасности или поставщиками). Запросы к API безопасности Microsoft Graph включаются в федерацию для всех соответствующих поставщиков безопасности. Результаты объединяются и возвращаются запрашивающему приложению в общей схеме, как показано на рисунке ниже. Подробные сведения см. в статье [Поток данных API безопасности Microsoft Graph](security-dataflow.md).
 
+
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 Сведения об авторизации см. в статье [Авторизация и API безопасности Microsoft Graph](security-authorization.md). Сведения о разрешениях, в том числе делегированных и для приложений, см. в [справочнике по разрешениям](permissions-reference.md#security-permissions).
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Зачем использовать API безопасности Microsoft Graph?
 

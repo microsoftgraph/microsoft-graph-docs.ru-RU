@@ -3,18 +3,18 @@ title: Обзор API OneNote
 description: OneNote — это цифровая записная книжка, с помощью которой клиенты могут записывать и отслеживать свои идеи и заметки для дома, учебы и работы, вводя данные, рисуя или диктуя текст в Интернете, на телефоне, планшете или настольном компьютере. Они могут свободно упорядочивать заметки, переключаться между устройствами и продолжать работу с места, на котором они закончили ее в прошлый раз. Кроме того, они могут работать над заметками вместе с другими пользователями в режиме реального времени.
 author: Jewan-microsoft
 localization_priority: Priority
-ms.openlocfilehash: a3ca57e9bac52613fbe884368f79b31b5b5165e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7431bab05f0a749e20dd032f0b8472a1a822623d
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560950"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133833"
 ---
 # <a name="onenote-api-overview"></a>Обзор API OneNote
 
 OneNote — это цифровая записная книжка, с помощью которой клиенты могут записывать и отслеживать свои идеи и заметки для дома, учебы и работы, вводя данные, рисуя или диктуя текст в Интернете, на телефоне, планшете или настольном компьютере. Они могут свободно упорядочивать заметки, переключаться между устройствами и продолжать работу с места, на котором они закончили ее в прошлый раз. Кроме того, они могут совместно работать над заметками с другими пользователями в режиме реального времени.
 
-![Записная книжка OneNote с разделами и страницами](images/onenote-page.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/VXd4OeQU1ek]
 
 ## <a name="why-integrate-with-onenote"></a>Зачем нужна интеграция с OneNote?
 
@@ -78,14 +78,22 @@ OneNote можно использовать как холст, где польз
 ## <a name="see-also"></a>См. также
 Узнайте о других функциях OneNote, которые предоставляются только на конечной точке REST для службы OneNote.
 
-- [Разработка для OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Работа с записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Работа с асинхронными записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Работа со служебными записными книжками](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Копирование записных книжек, разделов и страниц](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Управление разрешениями на объекты OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Использование диалогового окна сохранения OneNote на веб-страницах](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Подписка на веб-перехватчики](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-sync)
+- 
+  [Разработка для OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-landing)
+- 
+  [Работа с записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- 
+  [Работа с асинхронными записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- 
+  [Работа со служебными записными книжками](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- 
+  [Копирование записных книжек, разделов и страниц](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-copy)
+- 
+  [Управление разрешениями на объекты OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- 
+  [Использование диалогового окна сохранения OneNote на веб-страницах](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- 
+  [Подписка на веб-перехватчики](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?

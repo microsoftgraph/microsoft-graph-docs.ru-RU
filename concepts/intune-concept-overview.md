@@ -4,18 +4,20 @@ description: 'Microsoft Intune помогает предприятиям упр�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 37c77147029f58625ee8a115dffebb91ee432b30
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951196"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133770"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Обзор API устройств и приложений Intune
 
 Microsoft Intune помогает предприятиям управлять устройствами и приложениями в организации. С помощью API Intune в Microsoft Graph вы можете управлять устройствами и приложениями, а также настраивать Intune, используя привычные средства. 
 
 Если вы независимый поставщик программного обеспечения, вы также можете использовать API Intune для управления клиентами.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/yU1HeqNmN7A]
 
 ## <a name="why-integrate-with-intune"></a>Преимущества интеграции с Intune
 
