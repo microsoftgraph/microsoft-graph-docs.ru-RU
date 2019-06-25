@@ -4,16 +4,16 @@ description: " Гибридные развертывания Intune не под�
 author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 2dfeb5ff55670f3e11b175e0472359002b09bab6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c30436c80af8621b1c633d12a11489f7e586f00
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551814"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133854"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/ru-RU/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
+> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
 
 API Microsoft Graph для Intune обеспечивает программный доступ к сведениям Intune для клиента. API выполняет операции Intune, аналогичные доступным с помощью **портала Azure**.  
 
@@ -37,6 +37,9 @@ Intune предоставляет данные интерфейсу API Microsof
 
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
+## <a name="accessing-the-microsoft-graph-api-for-intune"></a>Доступ к API Microsoft Graph для Intune
+
+Intune поддерживает как [делегированные разрешения](https://docs.microsoft.com/graph/auth-v2-user), так и [разрешения приложений](https://docs.microsoft.com/graph/auth-v2-service). Делегированные разрешения поддерживаются для операций чтения и записи. Разрешения приложений в настоящее время поддерживаются только для операций чтения. Разрешения приложений и делегированные разрешения поддерживает как однотенантные, так и многотенантные приложения. Дополнительные сведения о разрешениях, доступных в Microsoft Graph, см. в [справочнике по разрешениям Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference).
 
 ## <a name="using-permissions"></a>Использование разрешений
 

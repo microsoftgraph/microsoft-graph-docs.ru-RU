@@ -3,12 +3,12 @@ title: 'Разбиение данных Microsoft Graph по страницам 
 description: 'свойство odata.nextLink в ответе, содержащем URL-адрес следующей страницы результатов. '
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 6a19d1873057f5a6f6ea1749a6941389b9be8eb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c39ff697de2d6afdb2f24c1ec99d2ce5a89b32c
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564178"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133805"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Разбиение данных Microsoft Graph по страницам в приложении 
 
@@ -43,3 +43,8 @@ https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B90
  
 - Некоторые ресурсы и отношения не поддерживают разбиение по страницам, например запросы к [directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0).
 Сюда относится считывание самих объектов ролей, а также участников ролей.
+
+## <a name="learn-more-about-paging"></a>Подробнее о разбиении данных
+Следующее видео познакомит вас с разбиением данных в Microsoft Graph.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]

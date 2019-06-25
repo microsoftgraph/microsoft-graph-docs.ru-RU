@@ -3,12 +3,12 @@ title: Объединение нескольких запросов в один 
 description: 'Пакетная обработка JSON позволяет оптимизировать приложение, объединив несколько запросов в один объект JSON. Например, клиент может создать представление из таких несвязанных данных:'
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: f36cc1c8e8ccc016078eab52c4c7f3874892d000
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7b725545008cd512ef0058d678d057f567f40618
+ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560900"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "35133826"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 
@@ -19,6 +19,8 @@ ms.locfileid: "32560900"
 3. Календарь группы
 
 Объединение трех этих запросов в один может значительно снизить задержку в сети, ускорив работу приложения.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 
 ## <a name="first-json-batch-request"></a>Первый пакетный запрос JSON
 
