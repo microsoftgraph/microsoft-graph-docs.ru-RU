@@ -319,6 +319,8 @@ items:
                 href: extensibility-open-users.md
               - name: Использование расширений схемы (пример)
                 href: extensibility-schema-groups.md
+          - name: Использование Postman
+            href: use-postman.md
       - name: Миграция
         expanded: false
         items:
@@ -365,6 +367,38 @@ items:
             href: sdks/create-client.md
           - name: Выбор поставщика проверки подлинности
             href: sdks/choose-authentication-providers.md
+      - name: Использование набора средств (предварительная версия)
+        items:
+          - name: Общие сведения о наборе средств
+            href: toolkit/overview.md
+          - name: Компоненты
+            items:
+              - name: Вход
+                href: toolkit/components/login.md
+              - name: Пользователь
+                href: toolkit/components/person.md
+              - name: Люди
+                href: toolkit/components/people.md
+              - name: Повестка
+                href: toolkit/components/agenda.md
+              - name: Задачи
+                href: toolkit/components/tasks.md
+          - name: Поставщики
+            items:
+              - name: Использование поставщиков
+                href: toolkit/providers.md
+              - name: Поставщик MSAL
+                href: toolkit/providers/msal.md
+              - name: Поставщик SharePoint
+                href: toolkit/providers/sharepoint.md
+              - name: Поставщик Microsoft Teams
+                href: toolkit/providers/teams.md
+              - name: Настраиваемый поставщик
+                href: toolkit/providers/custom.md
+          - name: Компоненты стиля
+            href: toolkit/style.md
+          - name: Компоненты создания шаблонов
+            href: toolkit/templates.md
       - name: Ресурсы
         expanded: true
         items:
