@@ -4,12 +4,12 @@ description: Записная книжка OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 96be6a41424260610794f9a0df4ef8e35dc1597f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d22cfea2e0e64472aa7a1e07e0b005536850ce3
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463112"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236617"
 ---
 # <a name="notebook-resource-type"></a>Тип ресурса для записной книжки
 
@@ -57,18 +57,18 @@ ms.locfileid: "32463112"
 |IsShared|Boolean|Указывает, является ли записная книжка общей. Если да, ее содержимое, кроме владельца, могут видеть другие люди. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|links|[Нотебуклинкс](notebooklinks.md)|Ссылки для открытия записной книжки. `oneNoteClientURL` Ссылка открывает записную книжку в собственном клиенте OneNote, если она установлена. Ссылка `oneNoteWebURL` открывает записную книжку в OneNote Online.|
-|displayName|String|Имя записной книжки.|
+|links|[Нотебуклинкс](notebooklinks.md)|Ссылки для открытия записной книжки. `oneNoteClientURL` Ссылка открывает записную книжку в собственном клиенте OneNote, если она установлена. `oneNoteWebURL` Ссылка открывает записную книжку в OneNote в Интернете.|
+|displayName|Строка|Имя записной книжки.|
 |Сектионграупсурл|String|URL-адрес для `sectionGroups` свойства навигации, который возвращает все группы разделов в записной книжке. Только для чтения.|
 |Сектионсурл|String|URL-адрес для `sections` свойства навигации, который возвращает все разделы записной книжки. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о записной книжке. Только для чтения.|
 |userRole|Оненотеусерроле|Возможные значения: `Owner`, `Contributor`, `Reader`, `None`. Owner — это доступ к записной книжке на уровне владельца. Участник представляет доступ к записной книжке для чтения и записи. Читатель предоставляет доступ только для чтения к записной книжке. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|sectionGroups|Коллекция [sectionGroup](sectiongroup.md)|Группы разделов в записной книжке. Только для чтения. Допускается значение null.|
-|sections|Коллекция [оненотесектион](section.md)|Разделы записной книжки. Только для чтения. Допускается значение null.|
+|sectionGroups|Коллекция [SectionGroup](sectiongroup.md)|Группы разделов в записной книжке. Только для чтения. Допускает значение null.|
+|sections|Коллекция [OnenoteSection](section.md)|Разделы записной книжки. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
@@ -78,9 +78,9 @@ ms.locfileid: "32463112"
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Коллекция [recentNotebook](recentnotebook.md) | Получите коллекцию записных книжек, которые недавно открывал пользователь. |
 |[Жетнотебукфромвебурл](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | Получение свойств и связей объекта записной книжки с помощью URL-пути. |
 |[Создание группы разделов](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Создание группы разделов путем отправки в коллекцию sectionGroups в указанной записной книжке.|
-|[Список групп разделов](../api/notebook-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной записной книжке.|
+|[Перечисление групп разделов](../api/notebook-list-sectiongroups.md) |Коллекция [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной записной книжке.|
 |[Создание раздела](../api/notebook-post-sections.md) |[Оненотесектион](section.md)| Создание раздела путем публикации в коллекции разделов в указанной записной книжке.|
-|[Вывод списка разделов](../api/notebook-list-sections.md) |Коллекция [оненотесектион](section.md)| Получение коллекции разделов в указанной записной книжке.|
+|[Перечисление разделов](../api/notebook-list-sections.md) |Коллекция [OnenoteSection](section.md)| Получение коллекции разделов в указанной записной книжке.|
 |[Включеныcopynotebook](../api/notebook-copynotebook.md)| Нет | Копирует записную книжку.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

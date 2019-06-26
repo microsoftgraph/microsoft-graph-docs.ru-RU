@@ -4,12 +4,12 @@ description: Записная книжка OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 1d79ca41a357206f8c19568082bf2833a60089c4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e63a03b679460f318747f2a81dac9aa859746a9f
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342172"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236638"
 ---
 # <a name="notebook-resource-type"></a>Тип ресурса для записной книжки
 
@@ -59,8 +59,8 @@ ms.locfileid: "33342172"
 |IsShared|Boolean|Указывает, является ли записная книжка общей. Если да, ее содержимое, кроме владельца, могут видеть другие люди. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|links|[Нотебуклинкс](notebooklinks.md)|Ссылки для открытия записной книжки. `oneNoteClientURL` Ссылка открывает записную книжку в собственном клиенте OneNote, если она установлена. Ссылка `oneNoteWebURL` открывает записную книжку в OneNote Online.|
-|displayName|String|Имя записной книжки.|
+|links|[Нотебуклинкс](notebooklinks.md)|Ссылки для открытия записной книжки. `oneNoteClientURL` Ссылка открывает записную книжку в собственном клиенте OneNote, если она установлена. `oneNoteWebURL` Ссылка открывает записную книжку в OneNote в Интернете.|
+|displayName|Строка|Имя записной книжки.|
 |Сектионграупсурл|String|URL-адрес для `sectionGroups` свойства навигации, который возвращает все группы разделов в записной книжке. Только для чтения.|
 |Сектионсурл|String|URL-адрес для `sections` свойства навигации, который возвращает все разделы записной книжки. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о записной книжке. Только для чтения.|

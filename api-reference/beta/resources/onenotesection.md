@@ -2,12 +2,12 @@
 title: Тип ресурса Оненотесектион
 description: Раздел в записной книжке OneNote. Разделы могут содержать страницы.
 localization_priority: Normal
-ms.openlocfilehash: d262065f46052c1cae55b42babaa91a2e065d3ef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b07ea378a4338e22896d40065e35aa599db42832
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348949"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236631"
 ---
 # <a name="onenotesection-resource-type"></a>Тип ресурса Оненотесектион
 
@@ -24,8 +24,8 @@ ms.locfileid: "33348949"
 |isDefault|Boolean|Указывает, является ли этот раздел разделом пользователя по умолчанию. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения раздела. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|links|[Сектионлинкс](sectionlinks.md)|Ссылки для открытия раздела. `oneNoteClientURL` Ссылка открывает раздел в собственном клиенте OneNote, если он установлен. `oneNoteWebURL` Ссылка открывает раздел в OneNote Online.|
-|displayName|String|Имя раздела. |
+|links|[Сектионлинкс](sectionlinks.md)|Ссылки для открытия раздела. `oneNoteClientURL` Ссылка открывает раздел в собственном клиенте OneNote, если он установлен. `oneNoteWebURL` Ссылка открывает раздел в OneNote в Интернете.|
+|displayName|Строка|Имя раздела. |
 |Ссылки pagesurl|String|Конечная точка, `pages` в которой можно получить сведения обо всех страницах в разделе. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о разделе. Только для чтения.|
 
@@ -43,8 +43,8 @@ ms.locfileid: "33348949"
 |[Получение раздела](../api/section-get.md) | [Оненотесектион](onenotesection.md) |Прочитайте свойства и связи раздела.|
 |[Создание страницы](../api/section-post-pages.md) |[Оненотепаже](onenotepage.md)| Создание страницы путем публикации в коллекции страниц в указанном разделе.|
 |[Перечисление страниц](../api/section-list-pages.md) |Коллекция [оненотепаже](onenotepage.md)| Получение коллекции страниц в указанном разделе.|
-|[copyToNotebook](../api/section-copytonotebook.md)|Отсутствует|Скопируйте раздел в указанную записную книжку.|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|Отсутствует|Скопируйте раздел в определенную группу разделов.|
+|[copyToNotebook](../api/section-copytonotebook.md)|Нет|Скопируйте раздел в указанную записную книжку.|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|Нет|Скопируйте раздел в определенную группу разделов.|
 
 
 ## <a name="json-representation"></a>Представление JSON

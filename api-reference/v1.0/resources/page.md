@@ -2,12 +2,12 @@
 title: Тип ресурса Page
 description: Страница в записной книжке OneNote.
 localization_priority: Normal
-ms.openlocfilehash: b7c92aaae401e022a79f7c3b72cb15b3093d0b7d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99807ff781aa3682fd3e310c19208378d457d391
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462552"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35236589"
 ---
 # <a name="page-resource-type"></a>Тип ресурса Page
 
@@ -54,12 +54,12 @@ ms.locfileid: "32462552"
 |id|String|Уникальный идентификатор страницы.  Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |level|Int32|Уровень отступа страницы. Только для чтения.|
-|links|[Пажелинкс](pagelinks.md)|Ссылки для открытия страницы. `oneNoteClientURL` Ссылка открывает страницу в собственном клиенте OneNote, если она установлена. `oneNoteWebUrl` Ссылка открывает страницу в OneNote Online. Только для чтения.|
+|links|[Пажелинкс](pagelinks.md)|Ссылки для открытия страницы. `oneNoteClientURL` Ссылка открывает страницу в собственном клиенте OneNote, если она установлена. `oneNoteWebUrl` Ссылка открывает страницу в OneNote в Интернете. Только для чтения.|
 |порядке|Int32|Порядок страницы в родительском разделе. Только для чтения.|
 |Self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
 |title|String|Заголовок страницы. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|Записная книжка, содержащая страницу.  Только для чтения.|
