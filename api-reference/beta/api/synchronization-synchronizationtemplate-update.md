@@ -2,54 +2,54 @@
 title: Обновление Синчронизатионтемплате
 description: Update (переопределить) шаблон синхронизации, связанный с заданным приложением.
 localization_priority: Normal
-ms.openlocfilehash: 219a303b01198c3fb4ac4bb00e8a91564f8cf3b2
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9cd5a806737fdd3a9ba7284942a83d0548f9abfe
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637929"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271206"
 ---
-# <a name="update-synchronizationtemplate"></a><span data-ttu-id="f30ad-103">Обновление Синчронизатионтемплате</span><span class="sxs-lookup"><span data-stu-id="f30ad-103">Update synchronizationTemplate</span></span>
+# <a name="update-synchronizationtemplate"></a><span data-ttu-id="d31e2-103">Обновление Синчронизатионтемплате</span><span class="sxs-lookup"><span data-stu-id="d31e2-103">Update synchronizationTemplate</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f30ad-104">Update (переопределить) шаблон синхронизации, связанный с заданным приложением.</span><span class="sxs-lookup"><span data-stu-id="f30ad-104">Update (override) the synchronization template associated with a given application.</span></span>
+<span data-ttu-id="d31e2-104">Update (переопределить) шаблон синхронизации, связанный с заданным приложением.</span><span class="sxs-lookup"><span data-stu-id="d31e2-104">Update (override) the synchronization template associated with a given application.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f30ad-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f30ad-105">Permissions</span></span>
-<span data-ttu-id="f30ad-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f30ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d31e2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d31e2-105">Permissions</span></span>
+<span data-ttu-id="d31e2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d31e2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f30ad-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f30ad-108">Permission type</span></span>                        | <span data-ttu-id="f30ad-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f30ad-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d31e2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d31e2-108">Permission type</span></span>                        | <span data-ttu-id="d31e2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d31e2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f30ad-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f30ad-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="f30ad-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f30ad-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="f30ad-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f30ad-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="f30ad-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f30ad-113">Not supported.</span></span>|
-|<span data-ttu-id="f30ad-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f30ad-114">Application</span></span>                            |<span data-ttu-id="f30ad-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f30ad-115">Not supported.</span></span>| 
+|<span data-ttu-id="d31e2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d31e2-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="d31e2-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d31e2-111">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="d31e2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d31e2-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="d31e2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d31e2-113">Not supported.</span></span>|
+|<span data-ttu-id="d31e2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d31e2-114">Application</span></span>                            |<span data-ttu-id="d31e2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d31e2-115">Not supported.</span></span>| 
 
-### <a name="http-request"></a><span data-ttu-id="f30ad-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f30ad-116">HTTP Request</span></span>
+### <a name="http-request"></a><span data-ttu-id="d31e2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d31e2-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT application/{id}/synchronization/templates/{templateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f30ad-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f30ad-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d31e2-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d31e2-117">Request headers</span></span>
 
-| <span data-ttu-id="f30ad-118">Имя</span><span class="sxs-lookup"><span data-stu-id="f30ad-118">Name</span></span>           | <span data-ttu-id="f30ad-119">Тип</span><span class="sxs-lookup"><span data-stu-id="f30ad-119">Type</span></span>    | <span data-ttu-id="f30ad-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f30ad-120">Description</span></span>|
+| <span data-ttu-id="d31e2-118">Имя</span><span class="sxs-lookup"><span data-stu-id="d31e2-118">Name</span></span>           | <span data-ttu-id="d31e2-119">Тип</span><span class="sxs-lookup"><span data-stu-id="d31e2-119">Type</span></span>    | <span data-ttu-id="d31e2-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d31e2-120">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="f30ad-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f30ad-121">Authorization</span></span>  | <span data-ttu-id="f30ad-122">string</span><span class="sxs-lookup"><span data-stu-id="f30ad-122">string</span></span>  | <span data-ttu-id="f30ad-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f30ad-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d31e2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d31e2-121">Authorization</span></span>  | <span data-ttu-id="d31e2-122">string</span><span class="sxs-lookup"><span data-stu-id="d31e2-122">string</span></span>  | <span data-ttu-id="d31e2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d31e2-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f30ad-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f30ad-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d31e2-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d31e2-125">Request body</span></span>
 
-<span data-ttu-id="f30ad-126">В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона.</span><span class="sxs-lookup"><span data-stu-id="f30ad-126">In the request body, supply the [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object to replace the existing template.</span></span> <span data-ttu-id="f30ad-127">Убедитесь, что все свойства предоставлены.</span><span class="sxs-lookup"><span data-stu-id="f30ad-127">Make sure all properties are provided.</span></span> <span data-ttu-id="f30ad-128">Отсутствующие свойства будут удалены.</span><span class="sxs-lookup"><span data-stu-id="f30ad-128">Missing properties will be erased.</span></span>
+<span data-ttu-id="d31e2-126">В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона.</span><span class="sxs-lookup"><span data-stu-id="d31e2-126">In the request body, supply the [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object to replace the existing template.</span></span> <span data-ttu-id="d31e2-127">Убедитесь, что все свойства предоставлены.</span><span class="sxs-lookup"><span data-stu-id="d31e2-127">Make sure all properties are provided.</span></span> <span data-ttu-id="d31e2-128">Отсутствующие свойства будут удалены.</span><span class="sxs-lookup"><span data-stu-id="d31e2-128">Missing properties will be erased.</span></span>
 
-### <a name="response"></a><span data-ttu-id="f30ad-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="f30ad-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d31e2-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="d31e2-129">Response</span></span>
 
-<span data-ttu-id="f30ad-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f30ad-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d31e2-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d31e2-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="f30ad-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="f30ad-132">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="d31e2-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="d31e2-132">Examples</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f30ad-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="f30ad-133">Request</span></span>
-<span data-ttu-id="f30ad-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f30ad-134">The following is an example of a request.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d31e2-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="d31e2-133">Request</span></span>
+<span data-ttu-id="d31e2-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d31e2-134">The following is an example of a request.</span></span> 
 
-><span data-ttu-id="f30ad-135">**Примечание:** Объект Request, показанный здесь, сокращается для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f30ad-135">**Note:** The request object shown here is shortened for readability.</span></span> <span data-ttu-id="f30ad-136">Включает все свойства в фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f30ad-136">Include all the properties in an actual call.</span></span>
+><span data-ttu-id="d31e2-135">**Примечание:** Объект Request, показанный здесь, сокращается для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d31e2-135">**Note:** The request object shown here is shortened for readability.</span></span> <span data-ttu-id="d31e2-136">Включает все свойства в фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d31e2-136">Include all the properties in an actual call.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -66,8 +66,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f30ad-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f30ad-137">Response</span></span>
-<span data-ttu-id="f30ad-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f30ad-138">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="d31e2-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="d31e2-137">Response</span></span>
+<span data-ttu-id="d31e2-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d31e2-138">The following is an example of a response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,13 +76,15 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f30ad-139">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="f30ad-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f30ad-140">Языках</span><span class="sxs-lookup"><span data-stu-id="f30ad-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="d31e2-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="d31e2-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="d31e2-140">C#</span><span class="sxs-lookup"><span data-stu-id="d31e2-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_synchronizationtemplate-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f30ad-141">Язык</span><span class="sxs-lookup"><span data-stu-id="f30ad-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d31e2-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="d31e2-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_synchronizationtemplate-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="d31e2-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d31e2-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_synchronizationtemplate-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -97,6 +99,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,48 +4,48 @@ description: Удаление объекта **plannerTask**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 14aea65a55307d37f8b534cb5b1cce88fdc105e9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1d7c9a053ee6dee6bd7043683ab41ebe4b162fff
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33608711"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276491"
 ---
-# <a name="delete-plannertask"></a><span data-ttu-id="a67fc-103">Удаление объекта plannerTask</span><span class="sxs-lookup"><span data-stu-id="a67fc-103">Delete plannerTask</span></span>
+# <a name="delete-plannertask"></a><span data-ttu-id="0dc97-103">Удаление объекта plannerTask</span><span class="sxs-lookup"><span data-stu-id="0dc97-103">Delete plannerTask</span></span>
 
-<span data-ttu-id="a67fc-104">Удаление объекта **plannerTask**.</span><span class="sxs-lookup"><span data-stu-id="a67fc-104">Delete **plannerTask**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a67fc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a67fc-105">Permissions</span></span>
-<span data-ttu-id="a67fc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a67fc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0dc97-104">Удаление объекта **plannerTask**.</span><span class="sxs-lookup"><span data-stu-id="0dc97-104">Delete **plannerTask**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0dc97-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0dc97-105">Permissions</span></span>
+<span data-ttu-id="0dc97-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0dc97-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a67fc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a67fc-108">Permission type</span></span>      | <span data-ttu-id="a67fc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a67fc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0dc97-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0dc97-108">Permission type</span></span>      | <span data-ttu-id="0dc97-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0dc97-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a67fc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a67fc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a67fc-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a67fc-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a67fc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a67fc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a67fc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a67fc-113">Not supported.</span></span>    |
-|<span data-ttu-id="a67fc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a67fc-114">Application</span></span> | <span data-ttu-id="a67fc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a67fc-115">Not supported.</span></span> |
+|<span data-ttu-id="0dc97-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0dc97-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0dc97-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0dc97-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0dc97-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0dc97-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0dc97-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0dc97-113">Not supported.</span></span>    |
+|<span data-ttu-id="0dc97-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0dc97-114">Application</span></span> | <span data-ttu-id="0dc97-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0dc97-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a67fc-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a67fc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0dc97-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0dc97-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /planner/tasks/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="a67fc-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a67fc-117">Request headers</span></span>
-| <span data-ttu-id="a67fc-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a67fc-118">Name</span></span>       | <span data-ttu-id="a67fc-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a67fc-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0dc97-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0dc97-117">Request headers</span></span>
+| <span data-ttu-id="0dc97-118">Имя</span><span class="sxs-lookup"><span data-stu-id="0dc97-118">Name</span></span>       | <span data-ttu-id="0dc97-119">Описание</span><span class="sxs-lookup"><span data-stu-id="0dc97-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a67fc-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a67fc-120">Authorization</span></span>  | <span data-ttu-id="a67fc-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a67fc-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a67fc-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="a67fc-123">If-Match</span></span>  | <span data-ttu-id="a67fc-p103">Последнее известное значение ETag удаляемого объекта **plannerTask**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a67fc-p103">Last known ETag value for the **plannerTask** to be deleted. Required.</span></span>|
+| <span data-ttu-id="0dc97-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0dc97-120">Authorization</span></span>  | <span data-ttu-id="0dc97-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0dc97-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0dc97-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="0dc97-123">If-Match</span></span>  | <span data-ttu-id="0dc97-p103">Последнее известное значение ETag удаляемого объекта **plannerTask**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0dc97-p103">Last known ETag value for the **plannerTask** to be deleted. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a67fc-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a67fc-126">Request body</span></span>
-<span data-ttu-id="a67fc-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a67fc-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0dc97-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0dc97-126">Request body</span></span>
+<span data-ttu-id="0dc97-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0dc97-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a67fc-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="a67fc-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0dc97-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="0dc97-128">Response</span></span>
 
-<span data-ttu-id="a67fc-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="a67fc-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0dc97-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="0dc97-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="a67fc-p105">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="a67fc-p105">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="0dc97-p105">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="0dc97-p105">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="a67fc-134">Пример</span><span class="sxs-lookup"><span data-stu-id="a67fc-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a67fc-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="a67fc-135">Request</span></span>
-<span data-ttu-id="a67fc-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a67fc-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0dc97-134">Пример</span><span class="sxs-lookup"><span data-stu-id="0dc97-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0dc97-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="0dc97-135">Request</span></span>
+<span data-ttu-id="0dc97-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0dc97-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_plannertask"
@@ -54,8 +54,8 @@ DELETE /planner/tasks/{id}
 DELETE https://graph.microsoft.com/v1.0/planner/tasks/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
-##### <a name="response"></a><span data-ttu-id="a67fc-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="a67fc-137">Response</span></span>
-<span data-ttu-id="a67fc-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a67fc-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0dc97-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="0dc97-137">Response</span></span>
+<span data-ttu-id="0dc97-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0dc97-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -63,13 +63,15 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a67fc-141">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="a67fc-141">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a67fc-142">Языках</span><span class="sxs-lookup"><span data-stu-id="a67fc-142">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0dc97-141">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="0dc97-141">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0dc97-142">C#</span><span class="sxs-lookup"><span data-stu-id="0dc97-142">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_plannertask-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a67fc-143">Язык</span><span class="sxs-lookup"><span data-stu-id="a67fc-143">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0dc97-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="0dc97-143">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_plannertask-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="0dc97-144">Цель — C</span><span class="sxs-lookup"><span data-stu-id="0dc97-144">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_plannertask-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -83,6 +85,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/plannertask-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/plannertask-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/plannertask-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
