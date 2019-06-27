@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Обновление файла или папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 34d223d3400b8540a9bc63d781be7eb0619c4950
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 77f3c96bb1f1245f44213a9796445fd2696e358c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33616028"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268931"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
@@ -74,7 +74,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле ответа.
+При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в тексте ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -95,13 +95,15 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-item-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update-item-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -113,6 +115,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Update",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
