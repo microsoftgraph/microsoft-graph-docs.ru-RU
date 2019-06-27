@@ -4,12 +4,12 @@ description: Создайте новый сотрудник в заданном 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 0ec4dbdf9bd1b1c48f8a2fc40aa287dc46d6fc5d
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 9ac0e87e5bf051cb0998d05b361bf5149d5b4e08
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636137"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258116"
 ---
 # <a name="create-bookingstaffmember"></a>Создание Букингстаффмембер
 
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/staffMembers
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Букингстаффмембер](../resources/bookingstaffmember.md) в формате JSON. Необходимо включить следующие свойства:
+В тексте запроса добавьте представление объекта [букингстаффмембер](../resources/bookingstaffmember.md) в формате JSON. Необходимо включить следующие свойства:
 
 - **displayName**
 - **emailAddress**
@@ -137,7 +137,7 @@ Content-length: 309
     ]
 }
 ```
-В тексте запроса добавьте представление объекта [Букингстаффмембер](../resources/bookingstaffmember.md) в формате JSON.
+В тексте запроса добавьте представление объекта [букингстаффмембер](../resources/bookingstaffmember.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -207,13 +207,15 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_bookingstaffmember_from_bookingbusiness-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_bookingstaffmember_from_bookingbusiness-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_bookingstaffmember_from_bookingbusiness-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -228,6 +230,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-post-staffmembers.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingbusiness-post-staffmembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingbusiness-post-staffmembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

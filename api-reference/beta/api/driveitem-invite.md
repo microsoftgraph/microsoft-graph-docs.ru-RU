@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0fab3f7a25a9f16a3808e4c3ec530132781e0bee
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: df1b179539847b8e75bbab47439c5713310922fc
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589480"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260132"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -63,7 +63,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | Коллекция получателей, которые будут получать доступ и приглашение к совместному использованию.                                            |
 | message          | String                                          | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов. |
-| requireSignIn    | Логический                                         | Указывает, куда должен зайти получатель приглашения, чтобы просмотреть элемент, к которому предоставлен общий доступ.            |
+| requireSignIn    | Boolean                                         | Указывает, куда должен зайти получатель приглашения, чтобы просмотреть элемент, к которому предоставлен общий доступ.            |
 | sendInvitation   | Boolean                                         | Указывает, создано ли электронное письмо или запись (false) или разрешение (true).            |
 | roles            | Collection(String)                              | Указывают роли, которые предоставляются получателям приглашения на доступ.                         |
 | expirationDateTime | DateTimeOffset                       | Укажите значение даты и времени, после которого истечет срок действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и в личных учетных записях OneDrive для бизнеса.
@@ -130,13 +130,15 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -215,7 +217,7 @@ Content-type: application/json
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
 * Список доступных ролей см. в разделе [Перечисление ролей](../resources/permission.md#roles-enumeration-values).
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
@@ -230,6 +232,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
   "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

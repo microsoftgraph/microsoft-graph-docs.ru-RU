@@ -2,12 +2,12 @@
 title: Обновление соглашения
 description: Обновление свойств объекта договора.
 localization_priority: Normal
-ms.openlocfilehash: 6dacf9bfbfdf3cf85a673c68555b8deb3aeab1c7
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: d4a2a904f546128674e36a222de2e4a1e13a8bdc
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636620"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258907"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
@@ -39,7 +39,7 @@ PATCH /agreements/<id>
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображаемое имя соглашения.|
-|Исвиевингбефореакцептанцерекуиред|Логический|Следует ли пользователю разворачивать и просматривать соглашение перед принятием.|
+|Исвиевингбефореакцептанцерекуиред|Boolean|Следует ли пользователю разворачивать и просматривать соглашение перед принятием.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Agreement](../resources/agreement.md) в тексте отклика.
@@ -78,13 +78,15 @@ Content-length: 105
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_agreement-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_agreement-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_agreement-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -99,6 +101,7 @@ Content-length: 105
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/agreement-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/agreement-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/agreement-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: Удаление файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5b9b48cc5fd0ad3c35a8052571096c24699fdff7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c6a270923aeb99de3742a1359ae126942208d525
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33589564"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260244"
 ---
 # <a name="delete-a-driveitem"></a>Удаление ресурса DriveItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление ресурса [DriveItem](../resources/driveitem.md) по идентификатору или пути. Обратите внимание, что при удалении элементов с помощью этого метода элементы перемещаются в корзину, а не удаляются безвозвратно.
 
@@ -48,7 +50,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 Ниже приведен пример вызова этого API.
 
-<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}
@@ -63,13 +65,15 @@ DELETE /me/drive/items/{item-id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete-item-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete-item-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete-item-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -80,14 +84,17 @@ HTTP/1.1 204 No Content
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
   "tocPath": "Items/Delete",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

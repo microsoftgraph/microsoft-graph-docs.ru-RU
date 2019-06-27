@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Поиск файлов
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 729c3994689b013dec3c6ffd8a4a432a2b64e79d
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: ec0ba283e71bcda79c0b9c2ce08d12692205a0d4
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33588365"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260034"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Поиск элементов, соответствующих запросу, в иерархии элементов.
 Вы можете выполнить поиск в иерархии папок, на всем диске или среди файлов, к которым предоставлен доступ текущему пользователю.
@@ -55,7 +57,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 Вот пример запроса, выполняющего поиск в хранилище OneDrive текущего пользователя.
 
-<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "item_search" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -91,13 +93,15 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/item_search-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/item_search-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/item_search-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -108,7 +112,7 @@ Content-type: application/json
 
 ### <a name="example"></a>Пример
 
-<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -131,7 +135,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
+        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
       },
       {
         "id": "0123456789abc!456",
@@ -143,13 +147,15 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/item_search_all-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/item_search_all-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/item_search_all-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -162,16 +168,19 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
   "tocPath": "Items/Search",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-} -->
+}
+-->

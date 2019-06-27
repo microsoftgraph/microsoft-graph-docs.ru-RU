@@ -4,12 +4,12 @@ description: Изменение источников и приемников А�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 835298804e2b409f75ef4d0e86786951f7ae0099
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 6a904c4322260626cc417f7dd47281cff3cb12d5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636424"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258247"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -43,9 +43,9 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция String | Целевые участники в Аудиораутингграуп. |
+| приемники | Коллекция строк | Целевые участники в Аудиораутингграуп. |
 | Раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция String | Участник источника в Аудиораутингграуп. |
+| sources | Коллекция строк | Участник источника в Аудиораутингграуп. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
@@ -102,13 +102,15 @@ Content-Length: 233
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -123,6 +125,7 @@ Content-Length: 233
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
