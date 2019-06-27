@@ -4,26 +4,26 @@ description: Изменяет ширину столбцов текущего д�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b7cc8c1365f09c6b9a213af627625e509a229f68
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bf1578efb3a4c4911ca924212cd0666e9c81f6d7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33607626"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263667"
 ---
-# <a name="rangeformat-autofitcolumns"></a><span data-ttu-id="769d1-103">RangeFormat: autofitColumns</span><span class="sxs-lookup"><span data-stu-id="769d1-103">RangeFormat: autofitColumns</span></span>
+# <a name="rangeformat-autofitcolumns"></a><span data-ttu-id="acf2b-103">RangeFormat: autofitColumns</span><span class="sxs-lookup"><span data-stu-id="acf2b-103">RangeFormat: autofitColumns</span></span>
 
-<span data-ttu-id="769d1-104">Изменяет ширину столбцов текущего диапазона так, чтобы она была оптимальной, с учетом текущих данных в столбцах.</span><span class="sxs-lookup"><span data-stu-id="769d1-104">Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.</span></span>
-## <a name="permissions"></a><span data-ttu-id="769d1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="769d1-105">Permissions</span></span>
-<span data-ttu-id="769d1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="769d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="acf2b-104">Изменяет ширину столбцов текущего диапазона так, чтобы она была оптимальной, с учетом текущих данных в столбцах.</span><span class="sxs-lookup"><span data-stu-id="acf2b-104">Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.</span></span>
+## <a name="permissions"></a><span data-ttu-id="acf2b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="acf2b-105">Permissions</span></span>
+<span data-ttu-id="acf2b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="acf2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="769d1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="769d1-108">Permission type</span></span>      | <span data-ttu-id="769d1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="769d1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="acf2b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="acf2b-108">Permission type</span></span>      | <span data-ttu-id="acf2b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="acf2b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="769d1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="769d1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="769d1-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="769d1-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="769d1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="769d1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="769d1-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="769d1-113">Not supported.</span></span>    |
-|<span data-ttu-id="769d1-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="769d1-114">Application</span></span> | <span data-ttu-id="769d1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="769d1-115">Not supported.</span></span> |
+|<span data-ttu-id="acf2b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="acf2b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="acf2b-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="acf2b-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="acf2b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="acf2b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="acf2b-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="acf2b-113">Not supported.</span></span>    |
+|<span data-ttu-id="acf2b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="acf2b-114">Application</span></span> | <span data-ttu-id="acf2b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="acf2b-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="769d1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="769d1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="acf2b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="acf2b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/format/autofitColumns
@@ -31,22 +31,22 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitCol
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="769d1-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="769d1-117">Request headers</span></span>
-| <span data-ttu-id="769d1-118">Имя</span><span class="sxs-lookup"><span data-stu-id="769d1-118">Name</span></span>       | <span data-ttu-id="769d1-119">Описание</span><span class="sxs-lookup"><span data-stu-id="769d1-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="acf2b-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="acf2b-117">Request headers</span></span>
+| <span data-ttu-id="acf2b-118">Имя</span><span class="sxs-lookup"><span data-stu-id="acf2b-118">Name</span></span>       | <span data-ttu-id="acf2b-119">Описание</span><span class="sxs-lookup"><span data-stu-id="acf2b-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="769d1-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="769d1-120">Authorization</span></span>  | <span data-ttu-id="769d1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="769d1-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="769d1-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="769d1-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="769d1-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="769d1-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="acf2b-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="acf2b-120">Authorization</span></span>  | <span data-ttu-id="acf2b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="acf2b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="acf2b-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="acf2b-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="acf2b-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="acf2b-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="769d1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="769d1-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="acf2b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="acf2b-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="769d1-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="769d1-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="acf2b-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="acf2b-127">Response</span></span>
 
-<span data-ttu-id="769d1-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="769d1-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="acf2b-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="acf2b-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="769d1-130">Пример</span><span class="sxs-lookup"><span data-stu-id="769d1-130">Example</span></span>
-<span data-ttu-id="769d1-131">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="769d1-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="769d1-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="769d1-132">Request</span></span>
-<span data-ttu-id="769d1-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="769d1-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="acf2b-130">Пример</span><span class="sxs-lookup"><span data-stu-id="acf2b-130">Example</span></span>
+<span data-ttu-id="acf2b-131">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="acf2b-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="acf2b-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="acf2b-132">Request</span></span>
+<span data-ttu-id="acf2b-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="acf2b-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangeformat_autofitcolumns"
@@ -55,21 +55,23 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitColumns
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/autofitColumns
 ```
 
-##### <a name="response"></a><span data-ttu-id="769d1-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="769d1-134">Response</span></span>
-<span data-ttu-id="769d1-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="769d1-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="acf2b-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="acf2b-134">Response</span></span>
+<span data-ttu-id="acf2b-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="acf2b-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="769d1-136">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="769d1-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="769d1-137">Языках</span><span class="sxs-lookup"><span data-stu-id="769d1-137">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="acf2b-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="acf2b-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="acf2b-137">C#</span><span class="sxs-lookup"><span data-stu-id="acf2b-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/rangeformat_autofitcolumns-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="769d1-138">Язык</span><span class="sxs-lookup"><span data-stu-id="769d1-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="acf2b-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="acf2b-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/rangeformat_autofitcolumns-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="acf2b-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="acf2b-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/rangeformat_autofitcolumns-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -83,6 +85,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/rangeformat-autofitcolumns.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/rangeformat-autofitcolumns.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/rangeformat-autofitcolumns.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

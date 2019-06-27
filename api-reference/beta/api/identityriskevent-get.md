@@ -4,47 +4,47 @@ description: Получение свойств и связей объекта и
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: bf951b88e61077e606586b24e4ea24f45b47df59
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 278ab64417b4da7db2aa736e1be934aa25d6f1bb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592145"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262638"
 ---
-# <a name="get-identityriskevent"></a><span data-ttu-id="82330-103">Получение объекта identityRiskEvent</span><span class="sxs-lookup"><span data-stu-id="82330-103">Get identityRiskEvent</span></span>
+# <a name="get-identityriskevent"></a><span data-ttu-id="f60b4-103">Получение объекта identityRiskEvent</span><span class="sxs-lookup"><span data-stu-id="f60b4-103">Get identityRiskEvent</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="82330-104">Получение свойств и связей объекта идентитирискевент.</span><span class="sxs-lookup"><span data-stu-id="82330-104">Retrieve the properties and relationships of identityriskevent object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="82330-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="82330-105">Permissions</span></span>
-<span data-ttu-id="82330-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82330-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f60b4-104">Получение свойств и связей объекта идентитирискевент.</span><span class="sxs-lookup"><span data-stu-id="f60b4-104">Retrieve the properties and relationships of identityriskevent object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f60b4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f60b4-105">Permissions</span></span>
+<span data-ttu-id="f60b4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f60b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="82330-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="82330-108">Permission type</span></span>      | <span data-ttu-id="82330-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="82330-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f60b4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f60b4-108">Permission type</span></span>      | <span data-ttu-id="f60b4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f60b4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="82330-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="82330-110">Delegated (work or school account)</span></span> | <span data-ttu-id="82330-111">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="82330-111">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="82330-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="82330-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82330-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82330-113">Not supported.</span></span>    |
-|<span data-ttu-id="82330-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="82330-114">Application</span></span> | <span data-ttu-id="82330-115">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="82330-115">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="f60b4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f60b4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f60b4-111">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="f60b4-111">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="f60b4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f60b4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f60b4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f60b4-113">Not supported.</span></span>    |
+|<span data-ttu-id="f60b4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f60b4-114">Application</span></span> | <span data-ttu-id="f60b4-115">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="f60b4-115">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="82330-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="82330-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f60b4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f60b4-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityRiskEvents/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="82330-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="82330-117">Request headers</span></span>
-| <span data-ttu-id="82330-118">Имя</span><span class="sxs-lookup"><span data-stu-id="82330-118">Name</span></span>      |<span data-ttu-id="82330-119">Описание</span><span class="sxs-lookup"><span data-stu-id="82330-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f60b4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f60b4-117">Request headers</span></span>
+| <span data-ttu-id="f60b4-118">Имя</span><span class="sxs-lookup"><span data-stu-id="f60b4-118">Name</span></span>      |<span data-ttu-id="f60b4-119">Описание</span><span class="sxs-lookup"><span data-stu-id="f60b4-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="82330-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="82330-120">Authorization</span></span>  | <span data-ttu-id="82330-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="82330-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="82330-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="82330-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="82330-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="82330-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="f60b4-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f60b4-120">Authorization</span></span>  | <span data-ttu-id="f60b4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f60b4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f60b4-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f60b4-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="f60b4-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="f60b4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="82330-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="82330-126">Request body</span></span>
-<span data-ttu-id="82330-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="82330-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f60b4-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f60b4-126">Request body</span></span>
+<span data-ttu-id="f60b4-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f60b4-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="82330-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="82330-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f60b4-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="f60b4-128">Response</span></span>
 
-<span data-ttu-id="82330-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [идентитирискевент](../resources/identityriskevent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="82330-129">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="82330-130">Пример</span><span class="sxs-lookup"><span data-stu-id="82330-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="82330-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="82330-131">Request</span></span>
-<span data-ttu-id="82330-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82330-132">Here is an example of the request.</span></span>
+<span data-ttu-id="f60b4-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [идентитирискевент](../resources/identityriskevent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f60b4-129">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f60b4-130">Пример</span><span class="sxs-lookup"><span data-stu-id="f60b4-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f60b4-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="f60b4-131">Request</span></span>
+<span data-ttu-id="f60b4-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f60b4-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent"
@@ -52,8 +52,8 @@ GET /identityRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98
 ```
-##### <a name="response"></a><span data-ttu-id="82330-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="82330-133">Response</span></span>
-<span data-ttu-id="82330-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="82330-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f60b4-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="f60b4-133">Response</span></span>
+<span data-ttu-id="f60b4-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f60b4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,13 +80,15 @@ Content-length: 251
   "userPrincipalName": "jon@contoso.com"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="82330-137">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="82330-137">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="82330-138">Языках</span><span class="sxs-lookup"><span data-stu-id="82330-138">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="f60b4-137">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="f60b4-137">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="f60b4-138">C#</span><span class="sxs-lookup"><span data-stu-id="f60b4-138">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_identityriskevent-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="82330-139">Язык</span><span class="sxs-lookup"><span data-stu-id="82330-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f60b4-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="f60b4-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_identityriskevent-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="f60b4-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f60b4-140">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_identityriskevent-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -101,6 +103,7 @@ Content-length: 251
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/identityriskevent-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/identityriskevent-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/identityriskevent-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
