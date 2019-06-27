@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Получение файла или папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dcca3963e5b5b2f808469f9d478811b22291877f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 5b7005595a83e22ec1d15efc0227cb548ad0ba9d
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33617239"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272872"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -113,13 +113,15 @@ Content-type: application/json
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-root-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>Примечания
 
-Дополнительные сведения о возвращении ошибок см. в статье об [ответах с ошибками][error-response].
+Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
@@ -133,6 +135,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Get item",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

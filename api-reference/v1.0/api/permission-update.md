@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Изменение разрешений на общий доступ
 localization_priority: Normal
-ms.openlocfilehash: fa32f4bbc8867088ceb776cfb7f2556ca49d2f1e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 043f0eda694b3bf0f7258fb07e10ff995056f1ef
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611385"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274251"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
@@ -54,7 +54,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Свойство | Тип              | Описание                   |
 |:---------|:------------------|:------------------------------|
-| roles    | Коллекция String | Массив типов разрешений. |
+| roles    | Коллекция строк | Массив типов разрешений. |
 
 ## <a name="response"></a>Отклик
 
@@ -96,18 +96,20 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update-permission-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update-permission-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update-permission-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
@@ -120,6 +122,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Update permission",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

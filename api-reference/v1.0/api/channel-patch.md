@@ -4,12 +4,12 @@ description: Обновление свойств указанного канал
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4c3a03aaab52da62f56ca376035e56a9b8584832
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b101b964d166ffd2a757a2c461f019c107d5db7b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565578"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273705"
 ---
 # <a name="patch-channel"></a>Канал исправлений
 
@@ -17,7 +17,7 @@ ms.locfileid: "32565578"
 
 Обновление свойств указанного [канала](../resources/channel.md).
 
-> **Note**: существует известная проблема, связанная с разрешениями приложения и этим API. Дополнительные сведения см. в [списке известных проблем](/graph/known-issues#application-permissions).
+> **Примечание**. Существует известная проблема с разрешениями для приложений и этим API. Дополнительные сведения см. в [списке известных проблем](/graph/known-issues#application-permissions).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Channel](../resources/channel.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [channel](../resources/channel.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -58,7 +58,7 @@ PATCH /teams/{id}/channels/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -75,6 +75,14 @@ Content-length: 201
     "displayName": "display-name-value",
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/patch_channel-Objective-C-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -83,5 +91,8 @@ Content-length: 201
   "description": "Patch channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/channel-patch.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)"
+  ]
 }-->

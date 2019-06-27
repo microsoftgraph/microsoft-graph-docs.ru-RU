@@ -2,12 +2,12 @@
 title: Создание privilegedRoleAssignment
 description: Используйте этот API для создания нового Привилежедролеассигнмент.
 localization_priority: Normal
-ms.openlocfilehash: d6fb9462f429cfc19c5d4cf0e1829da6057674c4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 21f5c2822ccc9396e9130c6ad94c65e3df002a36
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593819"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268084"
 ---
 # <a name="create-privilegedroleassignment"></a>Создание privilegedRoleAssignment
 
@@ -35,8 +35,8 @@ POST /privilegedRoleAssignments
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -60,7 +60,7 @@ Content-length: 164
   "roleId": "roleId-value"
 }
 ```
-В тексте запроса добавьте представление объекта [Привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
+В тексте запроса добавьте представление объекта [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -82,13 +82,15 @@ Content-length: 184
   "resultMessage": "resultMessage-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_privilegedroleassignment_from_privilegedroleassignments-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_privilegedroleassignment_from_privilegedroleassignments-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_privilegedroleassignment_from_privilegedroleassignments-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -103,6 +105,7 @@ Content-length: 184
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignment-post-privilegedroleassignments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedroleassignment-post-privilegedroleassignments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedroleassignment-post-privilegedroleassignments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
