@@ -3,16 +3,14 @@ title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: aef2e72898230440bf43c43c0acb317ae0f720ad
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9bbd816a38a040e881aa8d3b36e76906e91c0fc0
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603062"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273110"
 ---
 # <a name="update-subscription"></a>Обновление подписки
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возобновление подписки путем увеличения срока действия.
 
@@ -44,6 +42,7 @@ ms.locfileid: "33603062"
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
   - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
 
+
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -73,7 +72,7 @@ PATCH /subscriptions/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/subscriptions/{id}
+PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-type: application/json
 
 {
@@ -86,7 +85,7 @@ Content-type: application/json
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -100,33 +99,34 @@ Content-length: 252
   "resource":"me/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
-  "clientState":"secretClientValue",
+  "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_subscription-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_subscription-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_subscription-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update subscription",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/subscription-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+}-->

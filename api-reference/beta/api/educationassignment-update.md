@@ -4,12 +4,12 @@ description: Обновление объекта назначения. Это м
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: d3446a6e6759acc4a81daa86cc34f6c13ed54448
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 04e60b7ed5c13cc71915dc9c2a3b4b4adea21887
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587725"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35259922"
 ---
 # <a name="update-educationassignment"></a>Обновление educationassignment
 
@@ -42,8 +42,8 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Алловлатесубмиссионс|Логический| Можно ли отправлять отправку после даты выполнения.|
-|Алловстудентстоаддресаурцестосубмиссион|Логический| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
+|Алловлатесубмиссионс|Boolean| Можно ли отправлять отправку после даты выполнения.|
+|Алловстудентстоаддресаурцестосубмиссион|Boolean| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
 |Ассигндатетиме|DateTimeOffset| Дата, когда назначение должно быть опубликовано для учащихся. |
 |Ассигнто|ЕдукатионассигнментреЦипиент| Студенты, которые получают назначение.|
 |displayName|String| Имя назначения. |
@@ -75,7 +75,7 @@ Content-length: 279
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -101,13 +101,15 @@ Content-length: 279
   "assignedDateTime": "2014-01-01T00:00:00Z"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_educationassignment-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_educationassignment-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_educationassignment-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -122,6 +124,7 @@ Content-length: 279
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
