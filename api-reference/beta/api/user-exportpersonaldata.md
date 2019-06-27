@@ -4,12 +4,12 @@ description: Передает запрос операции политики д�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 776602eb600ca74feff61c595092e1e2518b49a1
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 58b8d8900a7323b12c17de5bb083e4a181abe68e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33961301"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35270387"
 ---
 # <a name="user-exportpersonaldata"></a>Пользователь: Експортперсоналдата
 
@@ -35,14 +35,14 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание |
 |:---------------|:----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание |
 |:---------------|:--------|:----------|
-|Сторажелокатион|Строка|Это URL-адрес учетной записи службы хранилища Azure, в которую будут экспортироваться данные.|
+|Сторажелокатион|String|Это URL-адрес учетной записи службы хранилища Azure, в которую будут экспортироваться данные.|
 
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных. Ответ содержит следующие заголовки.
@@ -83,6 +83,8 @@ Content-length: 48
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -105,6 +107,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
