@@ -1,0 +1,31 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: aa18e5ad7f86c20d51fa0db9da8122658a6aa4fb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35335873"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/reports/getOneDriveUsageAccountCounts(period='D7')?$format=text/csv"]]];
+[urlRequest setHTTPMethod:@"GET"];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        NSError *jsonError = nil;
+        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        NSMutableArray *oneDriveUsageAccountCountsList = [[NSMutableArray alloc] init];
+        oneDriveUsageAccountCountsList = [jsonFinal valueForKey:@"value"];
+        MSGraphOneDriveUsageAccountCounts *oneDriveUsageAccountCounts = [[MSGraphOneDriveUsageAccountCounts alloc] initWithDictionary:[oneDriveUsageAccountCountsList objectAtIndex: 0] error:&nserror];
+
+}];
+
+[meDataTask execute];
+
+```
