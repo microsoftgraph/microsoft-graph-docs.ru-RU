@@ -2,12 +2,12 @@
 title: 'Синчронизатионжоб: Валидатекредентиалс'
 description: Убедитесь, что учетные данные действительны в клиенте.
 localization_priority: Normal
-ms.openlocfilehash: b533305f622ddb5249fb64727979cafb6fbbc56a
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: aede9dbb505ce43eee3399972ad26958cb9ff1b8
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638006"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271318"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 
@@ -40,7 +40,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Усесаведкредентиалс|Логический|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
+|Усесаведкредентиалс|Boolean|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
 |записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, `useSavedCredentials` если параметр `true`имеет значение.|
 
 ## <a name="response"></a>Отклик
@@ -77,13 +77,15 @@ Content-length: 218
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/synchronizationjob_validatecredentials-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationjob_validatecredentials-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/synchronizationjob_validatecredentials-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -98,6 +100,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

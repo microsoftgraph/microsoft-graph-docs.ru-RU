@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37e2bc8a383f5078c413ccc37f369442f55b597c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548098"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272865"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -39,7 +39,7 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -62,7 +62,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | Коллекция получателей, которые будут получать доступ и приглашение к совместному использованию.
 | message          | String                         | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов.
-| requireSignIn    | Логический                        | Указывает, требуется ли получателю приглашения на вход для просмотра общего элемента.
+| requireSignIn    | Boolean                        | Указывает, требуется ли получателю приглашения на вход для просмотра общего элемента.
 | sendInvitation   | Boolean                        | Если этот параметр имеет значение true, получателю отправляется [ссылка для совместного доступа][] . В противном случае разрешение предоставляется напрямую без отправки уведомления.
 | roles            | Collection(String)             | Укажите роли, которые должны быть предоставлены получателям приглашения к совместному использованию.
 
@@ -94,7 +94,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -123,8 +123,20 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
 
-## <a name="remarks"></a>Примечания
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+## <a name="remarks"></a>Замечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
 * Список доступных ролей см. в разделе [Перечисление ролей](../resources/permission.md#roles-enumeration).
@@ -136,12 +148,17 @@ Content-type: application/json
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[Ссылка для совместного доступа]: ../resources/permission.md#sharing-links
+[Ссылка совместного доступа]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

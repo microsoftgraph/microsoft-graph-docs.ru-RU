@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 053fd380728928241c146787c03b87a5207a0b7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b8a3d5b41e934474b2ba91a711f20a00381fe195
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575438"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272648"
 ---
 # <a name="create-chartseries"></a>Создание объекта ChartSeries
 
@@ -36,9 +36,9 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Воркбукчартсериес](../resources/chartseries.md) в формате JSON.
+В тексте запроса добавьте представление объекта [воркбукчартсериес](../resources/chartseries.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукчартсериес](../resources/chartseries.md) в тексте отклика.
 
@@ -58,7 +58,7 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-В тексте запроса добавьте представление объекта [Воркбукчартсериес](../resources/chartseries.md) в формате JSON.
+В тексте запроса добавьте представление объекта [воркбукчартсериес](../resources/chartseries.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -75,6 +75,18 @@ Content-length: 26
   "name": "name-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_chartseries_from_chart-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_chartseries_from_chart-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_chartseries_from_chart-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -83,5 +95,10 @@ Content-length: 26
   "description": "Create ChartSeries",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/chart-post-series.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/chart-post-series.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/chart-post-series.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

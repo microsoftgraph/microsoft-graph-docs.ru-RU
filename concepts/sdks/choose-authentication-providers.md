@@ -3,29 +3,50 @@ title: Выбор поставщика проверки подлинности M
 description: Сведения о том, как выбрать поставщиков проверки подлинности для конкретного сценария для вашего приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 5061b38249f31a6eea959ecec94899337bf57326
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8f69312b4993320e76e2fe46a2977d98c0a42c93
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630197"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275560"
 ---
-# <a name="choose-a-microsoft-graph-authentication-provider-based-on-oauth-flow"></a>Выбор поставщика проверки подлинности Microsoft Graph на основе процесса OAuth
+# <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выбор поставщика проверки подлинности Microsoft Graph на основе сценария
 
-Поставщики проверки подлинности упрощают извлечение маркера доступа путем абстракции параметров, необходимых для клиентских библиотек проверки подлинности. Поставщики проверки подлинности Microsoft Graph упрощают использование библиотеки проверки подлинности Microsoft (MSAL), предоставляя адаптеры для каждой платформы. Эти адаптеры обрабатывают получение маркера для вашего приложения. Поставщики проверки подлинности Microsoft Graph сопоставляются с процессом предоставления OAuth. Необходимо знать, какой способ предоставления OAuth используется для вашего приложения, чтобы выбрать соответствующий поставщик проверки подлинности для вашего приложения.
+Поставщики проверки подлинности реализуют код, необходимый для получения маркера с помощью библиотеки проверки подлинности Microsoft (MSAL); обрабатывать ряд потенциальных ошибок в случае появления добавочного согласия, просроченных паролей и условного доступа; а затем задайте заголовок авторизации HTTP-запроса. В следующей таблице перечислены поставщики, которые отвечают сценариям для различных [типов приложений](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
 
-## <a name="authorization-code-oauth-flow"></a>Потоки кода авторизации OAuth
+|Сценарий | Flow/Grant | Аудитория | Поставщик|
+|--|--|--|--|
+| [Приложение с одной страницей](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
+| | Неявный поток | Делегированный потребитель/org |[Неявный поставщик](#ImplicitProvider) |
+| [Веб-приложение, вызывающее веб-API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
+| | Authorization Code | Делегированный потребитель/org | [Поставщик кода авторизации](#AuthCodeProvider) |
+| | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
+| [Веб-API, вызывающий веб-API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
+| | От имени | Делегированный потребитель/org | [От имени поставщика](#OnBehalfOfProvider) |
+| | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
+| [Классическое приложение, вызывающее веб-API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
+| | Интерактивны | Делегированный потребитель/org | [Интерактивный поставщик](#InteractiveProvider) |
+| | Интегрированная система Windows | Делегированная org | [Интегрированный поставщик Windows](#IntegratedWindowsProvider) |
+| | Владелец ресурса  | Делегированная org | [Имя пользователя и поставщик паролей](#UsernamePasswordProvider) |
+| | Код устройства  | Делегированная org | [Поставщик кода устройства](#DeviceCodeProvider) |
+| [Приложение демона](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
+| | Учетные данные клиента  | Только приложение | [Поставщик учетных данных клиента](#ClientCredentialsProvider) |
+| [Мобильное приложение, вызывающее веб-API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
+| | Интерактивны | Делегированный потребитель/org | [Интерактивный поставщик](#InteractiveProvider) |
+
+
+## <a name="a-nameauthcodeproviderauthorization-code-provider"></a><a name="AuthCodeProvider"/>Поставщик кода авторизации
 
 Потоки кода авторизации позволяют встроенным и веб-приложениям безопасно получать маркеры в имени пользователя. Для получения дополнительных сведений см [код кода авторизации платформы Microsoft Identity и OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication clientApplication = AuthorizationCodeProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
 AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(clientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 В настоящее время код авторизации, учетные данные клиента и потоки OAuth "от имени" требуют реализации настраиваемого поставщика проверки подлинности. Дополнительные сведения см. в разделе [Использование настраиваемого поставщика проверки](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md)подлинности.
 
@@ -58,18 +79,18 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
 
 ---
 
-## <a name="client-credential-oauth-flow"></a>Потоки учетных данных клиента OAuth
+##  <a name="a-nameclientcredentialsproviderclient-credentials-provider"></a><a name="ClientCredentialsProvider"/>Поставщик учетных данных клиента
 
 Поток учетных данных клиента позволяет приложениям службы работать без взаимодействия с пользователем. Доступ зависит от удостоверения приложения. Дополнительные сведения см. [в статье платформа идентификации Майкрософт и процесс учетных данных клиента OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication clientApplication = ClientCredentialProvider.CreateClientApplication(clientId, clientCredential);
 ClientCredentialProvider authProvider = new ClientCredentialProvider(clientApplication);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 В настоящее время код авторизации, учетные данные клиента и потоки OAuth "от имени" требуют реализации настраиваемого поставщика проверки подлинности. Дополнительные сведения см. в разделе [Использование настраиваемого поставщика проверки](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md)подлинности.
 
@@ -102,18 +123,18 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
 
 ---
 
-## <a name="on-behalf-of-oauth-flow"></a>Последовательность OAuth "от имени"
+##  <a name="a-nameonbehalfofprovideron-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>Поставщик от имени
 
 Потоки "от имени" применяются, когда приложение вызывает службу или веб-API, которые в своюмся вызывает API Microsoft Graph. Узнайте больше, прочитав [платформу Microsoft Identity и OAuth 2,0 от имени по поручению](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication clientApplication = OnBehalfOfProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
 OnBehalfOfProvider authProvider = new OnBehalfOfProvider(clientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 В настоящее время код авторизации, учетные данные клиента и потоки OAuth "от имени" требуют реализации настраиваемого поставщика проверки подлинности. Для получения дополнительных сведений ознакомьтесь [с использованием настраиваемого поставщика проверки](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) подлинности.
 
@@ -139,15 +160,15 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(clientApplication, scop
 
 ---
 
-## <a name="implicit-grant-oauth-flow"></a>Неявный поток предоставления OAuth
+## <a name="a-nameimplicitproviderimplicit-provider"></a><a name="ImplicitProvider"/>Неявный поставщик
 
 Неявный поток предоставления используется в приложениях, основанных на браузерах. Для получения дополнительных сведений см [Microsoft Identity Platform и неявный поток предоставления разрешений](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 Неприменимо.
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "your_client_id"; // Client Id of the registered application
@@ -191,18 +212,18 @@ const client = Client.initWithMiddleware(options);
 
 ---
 
-## <a name="device-code-oauth-flow"></a>Процесс обработки OAuth кода устройства
+##  <a name="a-namedevicecodeproviderdevice-code-provider"></a><a name="DeviceCodeProvider"/>Поставщик кода устройства
 
 Потоки кода устройства позволяют выполнять вход на устройства с помощью другого устройства. Дополнительные сведения см. [в статье платформа идентификации Майкрософт и код устройства OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code).
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = DeviceCodeProvider.CreateClientApplication(clientId);
 DeviceCodeProvider authProvider = new DeviceCodeProvider(clientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
@@ -228,18 +249,18 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(clientApplication, scop
 
 ---
 
-## <a name="integrated-windows-flow"></a>Встроенный Windows Flow
+##  <a name="a-nameintegratedwindowsproviderintegrated-windows-provider"></a><a name="IntegratedWindowsProvider"/>Интегрированный поставщик Windows
 
 Интегрированный поток Windows предоставляет компьютеру Windows способ получить маркер доступа без уведомления при присоединении к домену. Подробнее: встроенная [Проверка подлинности Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = IntegratedWindowsAuthenticationProvider.CreateClientApplication(clientId);
 IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(clientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 Неприменимо.
 
@@ -265,18 +286,18 @@ IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuth
 
 ---
 
-## <a name="interactive-flow"></a>Интерактивный процесс
+##  <a name="a-nameinteractiveproviderinteractive-provider"></a><a name="InteractiveProvider"/>Интерактивный поставщик
 
 Интерактивный обмен используется приложениями для мобильных устройств (Xamarin и UWP) и приложениями для настольных ПК, чтобы вызывать Microsoft Graph в имени пользователя. Дополнительные сведения см в разделе [получение маркеров в интерактивном режиме](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = InteractiveAuthenticationProvider.CreateClientApplication(clientId);
 InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 
@@ -324,20 +345,20 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ---
 
-## <a name="resource-owner-password-credential-grant-oauth-flow"></a>Пароль владельца ресурса. предоставление учетных данных для передачи OAuth
+##  <a name="a-nameusernamepasswordproviderusernamepassword-provider"></a><a name="UsernamePasswordProvider"/>Имя пользователя и поставщик паролей
 
-Потоки учетных данных для пароля владельца ресурса позволяют приложению выполнить вход в систему, используя имя пользователя и пароль. Используйте этот поток, только если вы не можете использовать другие потоки OAuth. Для получения дополнительных сведений см [платформа идентификации Майкрософт и учетные данные пароля владельца ресурса OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
+Поставщик имени пользователя и пароля позволяет приложению выполнять вход в систему, используя имя пользователя и пароль. Используйте этот поток, только если вы не можете использовать другие потоки OAuth. Для получения дополнительных сведений см [платформа идентификации Майкрософт и учетные данные пароля владельца ресурса OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication clientApplication = UsernamePasswordProvider.CreateClientApplication(clientId);
 UsernamePasswordProvider authProvider = new UsernamePasswordProvider(clientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 Пока недоступно. Если это важно, проведите голосование или откройте [запрос функции Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) .
 

@@ -4,14 +4,17 @@ description: Добавление пользователя или группы �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: fddccef0fa793e3fc75a96abce5cfa5b586d7b5b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: b46893b52b7d82d7b9ab8fbda1029a9acfa3dc31
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592741"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262974"
 ---
 # <a name="create-acceptedsender"></a>Создание объекта acceptedSender
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Добавление пользователя или группы в список объектов acceptedSender.
 
 Укажите пользователя или группу с помощью параметра `@odata.id` в тексте запроса. Пользователи из списка разрешенных отправителей могут отправлять записи в беседы группы. Убедитесь, что в списках разрешенных и запрещенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
@@ -35,7 +38,7 @@ POST /groups/{id}/acceptedSenders/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Укажите в тексте запроса идентификатор объекта user или group.
 
 ## <a name="response"></a>Отклик
@@ -49,12 +52,12 @@ POST /groups/{id}/acceptedSenders/$ref
   "name": "create_acceptedsender"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
+POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 ```
 
@@ -67,24 +70,29 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
+#### <a name="sdk-sample-code"></a>Пример кода SDK
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_acceptedsender-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_acceptedsender-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-post-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/group-post-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/group-post-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
