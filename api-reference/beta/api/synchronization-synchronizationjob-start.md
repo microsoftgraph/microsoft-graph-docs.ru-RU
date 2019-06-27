@@ -2,52 +2,52 @@
 title: Запуск Синчронизатионжоб
 description: Запуск существующего задания синхронизации. Если задание приостановлено, оно продолжит обработку изменений с того места, где оно было приостановлено. Если задание находится в карантине, состояние карантина будет очищено.
 localization_priority: Normal
-ms.openlocfilehash: 5c9e515881043ee5ceb08596f67bad4e86d34502
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 6681096b66c5ac47cef4e18dbf606148cd637b40
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33638041"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271332"
 ---
-# <a name="start-synchronizationjob"></a><span data-ttu-id="da690-105">Запуск Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="da690-105">Start synchronizationJob</span></span>
+# <a name="start-synchronizationjob"></a><span data-ttu-id="0e597-105">Запуск Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="0e597-105">Start synchronizationJob</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da690-106">Запуск существующего задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="da690-106">Start an existing synchronization job.</span></span> <span data-ttu-id="da690-107">Если задание приостановлено, оно продолжит обработку изменений с того места, где оно было приостановлено.</span><span class="sxs-lookup"><span data-stu-id="da690-107">If the job is in a paused state, it will continue processing changes from the point where it was paused.</span></span> <span data-ttu-id="da690-108">Если задание находится в карантине, состояние карантина будет очищено.</span><span class="sxs-lookup"><span data-stu-id="da690-108">If the job is in quarantine, the quarantine status will be cleared.</span></span>
+<span data-ttu-id="0e597-106">Запуск существующего задания синхронизации.</span><span class="sxs-lookup"><span data-stu-id="0e597-106">Start an existing synchronization job.</span></span> <span data-ttu-id="0e597-107">Если задание приостановлено, оно продолжит обработку изменений с того места, где оно было приостановлено.</span><span class="sxs-lookup"><span data-stu-id="0e597-107">If the job is in a paused state, it will continue processing changes from the point where it was paused.</span></span> <span data-ttu-id="0e597-108">Если задание находится в карантине, состояние карантина будет очищено.</span><span class="sxs-lookup"><span data-stu-id="0e597-108">If the job is in quarantine, the quarantine status will be cleared.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da690-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da690-109">Permissions</span></span>
-<span data-ttu-id="da690-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da690-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0e597-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0e597-109">Permissions</span></span>
+<span data-ttu-id="0e597-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0e597-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="da690-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da690-112">Permission type</span></span>                        | <span data-ttu-id="da690-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da690-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0e597-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0e597-112">Permission type</span></span>                        | <span data-ttu-id="0e597-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0e597-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="da690-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da690-114">Delegated (work or school account)</span></span>     |<span data-ttu-id="da690-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da690-115">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="da690-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da690-116">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="da690-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da690-117">Not supported.</span></span> |
-|<span data-ttu-id="da690-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da690-118">Application</span></span>                            |<span data-ttu-id="da690-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da690-119">Not supported.</span></span> | 
+|<span data-ttu-id="0e597-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0e597-114">Delegated (work or school account)</span></span>     |<span data-ttu-id="0e597-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0e597-115">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="0e597-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0e597-116">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="0e597-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0e597-117">Not supported.</span></span> |
+|<span data-ttu-id="0e597-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0e597-118">Application</span></span>                            |<span data-ttu-id="0e597-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0e597-119">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="da690-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da690-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0e597-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0e597-120">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da690-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da690-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0e597-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0e597-121">Request headers</span></span>
 
-| <span data-ttu-id="da690-122">Имя</span><span class="sxs-lookup"><span data-stu-id="da690-122">Name</span></span>           | <span data-ttu-id="da690-123">Тип</span><span class="sxs-lookup"><span data-stu-id="da690-123">Type</span></span>    | <span data-ttu-id="da690-124">Описание</span><span class="sxs-lookup"><span data-stu-id="da690-124">Description</span></span>|
+| <span data-ttu-id="0e597-122">Имя</span><span class="sxs-lookup"><span data-stu-id="0e597-122">Name</span></span>           | <span data-ttu-id="0e597-123">Тип</span><span class="sxs-lookup"><span data-stu-id="0e597-123">Type</span></span>    | <span data-ttu-id="0e597-124">Описание</span><span class="sxs-lookup"><span data-stu-id="0e597-124">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="da690-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="da690-125">Authorization</span></span>  | <span data-ttu-id="da690-126">string</span><span class="sxs-lookup"><span data-stu-id="da690-126">string</span></span>  | <span data-ttu-id="da690-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da690-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0e597-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="0e597-125">Authorization</span></span>  | <span data-ttu-id="0e597-126">string</span><span class="sxs-lookup"><span data-stu-id="0e597-126">string</span></span>  | <span data-ttu-id="0e597-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0e597-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="da690-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="da690-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0e597-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0e597-129">Request body</span></span>
 
-<span data-ttu-id="da690-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="da690-130">Do not supply a request body for this method.</span></span> 
+<span data-ttu-id="0e597-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0e597-130">Do not supply a request body for this method.</span></span> 
 
-## <a name="response"></a><span data-ttu-id="da690-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="da690-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0e597-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="0e597-131">Response</span></span>
 
-<span data-ttu-id="da690-132">В случае успеха возвращает `204 No Content` отклик.</span><span class="sxs-lookup"><span data-stu-id="da690-132">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="da690-133">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="da690-133">It does not return anything in the response body.</span></span>
+<span data-ttu-id="0e597-132">В случае успеха возвращает `204 No Content` отклик.</span><span class="sxs-lookup"><span data-stu-id="0e597-132">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="0e597-133">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="0e597-133">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da690-134">Пример</span><span class="sxs-lookup"><span data-stu-id="da690-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0e597-134">Пример</span><span class="sxs-lookup"><span data-stu-id="0e597-134">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="da690-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="da690-135">Request</span></span>
-<span data-ttu-id="da690-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da690-136">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="0e597-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="0e597-135">Request</span></span>
+<span data-ttu-id="0e597-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0e597-136">The following is an example of a request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_start"
@@ -56,8 +56,8 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 ```
 
-##### <a name="response"></a><span data-ttu-id="da690-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="da690-137">Response</span></span>
-<span data-ttu-id="da690-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="da690-138">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="0e597-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="0e597-137">Response</span></span>
+<span data-ttu-id="0e597-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0e597-138">The following is an example of a response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -66,13 +66,15 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="da690-139">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="da690-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="da690-140">Языках</span><span class="sxs-lookup"><span data-stu-id="da690-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="0e597-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="0e597-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="0e597-140">C#</span><span class="sxs-lookup"><span data-stu-id="0e597-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/synchronizationjob_start-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="da690-141">Язык</span><span class="sxs-lookup"><span data-stu-id="da690-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0e597-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="0e597-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/synchronizationjob_start-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="0e597-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="0e597-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/synchronizationjob_start-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -87,6 +89,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-start.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/synchronization-synchronizationjob-start.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/synchronization-synchronizationjob-start.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

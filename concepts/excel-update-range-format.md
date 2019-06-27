@@ -4,23 +4,23 @@ description: В приведенных ниже примерах показан�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: f635b51be1b27b81919cf399694389f007be6de3
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 8eb2bdb587ca32a61f9f3804491df2e81e6e5f4b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33600099"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272949"
 ---
-# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a><span data-ttu-id="8d8c6-103">Обновление формата диапазона в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8d8c6-103">Update a range format in Excel with Microsoft Graph</span></span>
+# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a><span data-ttu-id="cb32d-103">Обновление формата диапазона в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cb32d-103">Update a range format in Excel with Microsoft Graph</span></span>
 
-<span data-ttu-id="8d8c6-104">В приведенных ниже примерах показано, как обновить свойства [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0) и [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) указанного диапазона.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-104">The following examples demonstrate how to update properties of the [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0), and [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) properties of a specified range.</span></span>
+<span data-ttu-id="cb32d-104">В приведенных ниже примерах показано, как обновить свойства [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0) и [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) указанного диапазона.</span><span class="sxs-lookup"><span data-stu-id="cb32d-104">The following examples demonstrate how to update properties of the [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0), and [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) properties of a specified range.</span></span>
 
-<span data-ttu-id="8d8c6-105">В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-105">The result of this set of requests is a table with three cells formatted like the top three cells in the image below.</span></span>
+<span data-ttu-id="cb32d-105">В результате этого набора запросов создается таблица с тремя ячейками, отформатированными так же, как три ячейки на приведенном ниже рисунке.</span><span class="sxs-lookup"><span data-stu-id="cb32d-105">The result of this set of requests is a table with three cells formatted like the top three cells in the image below.</span></span>
 
 ![Таблица-диаграмма Excel с тремя ячейками, свойства Format, Fill и Font которых были обновлены.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-107">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-107">Request</span></span>
-<span data-ttu-id="8d8c6-108">Этот запрос обновляет выравнивание по вертикали, высоту строк и столбцов первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-108">This request updates the vertical alignment, row height, and column height of the first cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-107">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-107">Request</span></span>
+<span data-ttu-id="cb32d-108">Этот запрос обновляет выравнивание по вертикали, высоту строк и столбцов первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="cb32d-108">This request updates the vertical alignment, row height, and column height of the first cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -38,8 +38,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-109">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-109">Response</span></span>
-<span data-ttu-id="8d8c6-p101">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p101">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-109">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-109">Response</span></span>
+<span data-ttu-id="cb32d-p101">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p101">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -57,19 +57,21 @@ Content-type: application/json
     "wrapText": false
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-113">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-113">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-114">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-114">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-113">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-113">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-114">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-114">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-115">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-115">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-115">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-115">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-116">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-116">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-116">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-116">Request</span></span>
-<span data-ttu-id="8d8c6-117">Этот запрос обновляет начертание, размер и цвет шрифта в первой ячейке.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-117">This request updates the font style, size, and color of the first cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-117">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-117">Request</span></span>
+<span data-ttu-id="cb32d-118">Этот запрос обновляет начертание, размер и цвет шрифта в первой ячейке.</span><span class="sxs-lookup"><span data-stu-id="cb32d-118">This request updates the font style, size, and color of the first cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -86,8 +88,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-118">Response</span></span>
-<span data-ttu-id="8d8c6-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-119">Response</span></span>
+<span data-ttu-id="cb32d-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,19 +108,21 @@ Content-type: application/json
     "underline": "None"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-122">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-122">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-123">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-123">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-123">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-123">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-124">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-124">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_font-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-124">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-125">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-125">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_font-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-126">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-126">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_font-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-125">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-125">Request</span></span>
-<span data-ttu-id="8d8c6-126">Этот запрос обновляет цвет заливки первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-126">This request updates the background color of the first cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-127">Request</span></span>
+<span data-ttu-id="cb32d-128">Этот запрос обновляет цвет заливки первой ячейки.</span><span class="sxs-lookup"><span data-stu-id="cb32d-128">This request updates the background color of the first cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -133,8 +137,8 @@ Content-type: application/json
   "color": "#FF0000"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-127">Response</span></span>
-<span data-ttu-id="8d8c6-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-129">Response</span></span>
+<span data-ttu-id="cb32d-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,18 +152,20 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-131">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-131">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-132">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-132">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-133">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-133">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-134">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-134">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_fill-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-133">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_fill-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-136">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_fill-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-##### <a name="request"></a><span data-ttu-id="8d8c6-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-134">Request</span></span>
-<span data-ttu-id="8d8c6-135">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-135">This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-137">Request</span></span>
+<span data-ttu-id="cb32d-138">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="cb32d-138">This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -178,8 +184,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-136">Response</span></span>
-<span data-ttu-id="8d8c6-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-139">Response</span></span>
+<span data-ttu-id="cb32d-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -197,19 +203,21 @@ Content-type: application/json
     "wrapText": false
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-140">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-140">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-141">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-141">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-143">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-143">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-144">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-144">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_two-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-142">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-145">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_two-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-146">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_two-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-143">Request</span></span>
-<span data-ttu-id="8d8c6-144">Этот запрос обновляет начертание и размер шрифта во второй ячейке.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-144">This request updates the font style and size of the second cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-147">Request</span></span>
+<span data-ttu-id="cb32d-148">Этот запрос обновляет начертание и размер шрифта во второй ячейке.</span><span class="sxs-lookup"><span data-stu-id="cb32d-148">This request updates the font style and size of the second cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -225,8 +233,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-145">Response</span></span>
-<span data-ttu-id="8d8c6-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-149">Response</span></span>
+<span data-ttu-id="cb32d-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -245,19 +253,21 @@ Content-type: application/json
     "underline": "None"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-149">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-149">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-150">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-150">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-153">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-153">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-154">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-154">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_font_two-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-151">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-155">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_font_two-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-156">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-156">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_font_two-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-152">Request</span></span>
-<span data-ttu-id="8d8c6-153">Этот запрос обновляет цвет заливки второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-153">This request updates the background color of the second cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-157">Request</span></span>
+<span data-ttu-id="cb32d-158">Этот запрос обновляет цвет заливки второй ячейки.</span><span class="sxs-lookup"><span data-stu-id="cb32d-158">This request updates the background color of the second cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -272,8 +282,8 @@ Content-type: application/json
   "color": "#00FF00"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-154">Response</span></span>
-<span data-ttu-id="8d8c6-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-159">Response</span></span>
+<span data-ttu-id="cb32d-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -287,19 +297,21 @@ Content-type: application/json
     "color": "#00FF00"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-158">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-158">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-159">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-159">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-163">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-163">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-164">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-164">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_fill_two-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-160">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-160">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-165">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_fill_two-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-166">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-166">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_fill_two-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-161">Request</span></span>
-<span data-ttu-id="8d8c6-162">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-162">This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-167">Request</span></span>
+<span data-ttu-id="cb32d-168">Этот запрос обновляет выравнивание по вертикали и горизонтали, высоту строк и столбцов третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="cb32d-168">This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -318,8 +330,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-163">Response</span></span>
-<span data-ttu-id="8d8c6-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-169">Response</span></span>
+<span data-ttu-id="cb32d-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -337,19 +349,21 @@ Content-type: application/json
     "wrapText": false
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-167">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-167">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-168">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-168">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-173">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-173">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-174">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-174">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_three-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-169">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-169">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-175">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-175">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_three-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-176">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-176">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_three-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-170">Request</span></span>
-<span data-ttu-id="8d8c6-171">Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-171">This request updates the font style, size, and color of the third cell.</span></span> <span data-ttu-id="8d8c6-172">Обратите внимание: свойство подчеркивания (Underline) принимает значения **Single** или **Double**.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-172">Note that the underline property takes **Single** or **Double** as values.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-177">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-177">Request</span></span>
+<span data-ttu-id="cb32d-178">Этот запрос обновляет начертание, размер и цвет шрифта в третьей ячейке.</span><span class="sxs-lookup"><span data-stu-id="cb32d-178">This request updates the font style, size, and color of the third cell.</span></span> <span data-ttu-id="cb32d-179">Обратите внимание: свойство подчеркивания (Underline) принимает значения **Single** или **Double**.</span><span class="sxs-lookup"><span data-stu-id="cb32d-179">Note that the underline property takes **Single** or **Double** as values.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -366,8 +380,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-173">Response</span></span>
-<span data-ttu-id="8d8c6-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-180">Response</span></span>
+<span data-ttu-id="cb32d-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -386,19 +400,21 @@ Content-type: application/json
     "underline": "Single"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-177">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-177">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-178">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-178">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-184">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-184">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-185">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-185">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_font_three-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-179">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-179">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-186">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-186">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_font_three-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-187">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-187">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_font_three-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="request"></a><span data-ttu-id="8d8c6-180">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d8c6-180">Request</span></span>
-<span data-ttu-id="8d8c6-181">Этот запрос обновляет цвет заливки третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-181">This request updates the background color of the third cell.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb32d-188">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb32d-188">Request</span></span>
+<span data-ttu-id="cb32d-189">Этот запрос обновляет цвет заливки третьей ячейки.</span><span class="sxs-lookup"><span data-stu-id="cb32d-189">This request updates the background color of the third cell.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -413,8 +429,8 @@ Content-type: application/json
   "color": "#0000FF"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="8d8c6-182">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d8c6-182">Response</span></span>
-<span data-ttu-id="8d8c6-p110">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d8c6-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cb32d-190">Отклик</span><span class="sxs-lookup"><span data-stu-id="cb32d-190">Response</span></span>
+<span data-ttu-id="cb32d-p110">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cb32d-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -428,24 +444,26 @@ Content-type: application/json
     "color": "#0000FF"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8d8c6-186">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="8d8c6-186">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8d8c6-187">Языках</span><span class="sxs-lookup"><span data-stu-id="8d8c6-187">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cb32d-194">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cb32d-194">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cb32d-195">C#</span><span class="sxs-lookup"><span data-stu-id="cb32d-195">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_rangeformat_fill_three-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d8c6-188">Язык</span><span class="sxs-lookup"><span data-stu-id="8d8c6-188">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cb32d-196">Javascript</span><span class="sxs-lookup"><span data-stu-id="cb32d-196">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_rangeformat_fill_three-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cb32d-197">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cb32d-197">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_rangeformat_fill_three-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-## <a name="see-also"></a><span data-ttu-id="8d8c6-189">См. также</span><span class="sxs-lookup"><span data-stu-id="8d8c6-189">See also</span></span>
-* [<span data-ttu-id="8d8c6-190">Управление сеансами в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8d8c6-190">Manage sessions in Excel with Microsoft Graph</span></span>](excel-manage-sessions.md)
-* [<span data-ttu-id="8d8c6-191">Запись в книгу Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8d8c6-191">Write to an Excel workbook using Microsoft Graph</span></span>](excel-write-to-workbook.md)
-* [<span data-ttu-id="8d8c6-192">Использование функций книг в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8d8c6-192">Use workbook functions in Excel with Microsoft Graph</span></span>](excel-use-functions.md)
-* [<span data-ttu-id="8d8c6-193">Показ изображения диаграммы в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8d8c6-193">Display a chart image in Excel with Microsoft Graph</span></span>](excel-display-chart-image.md)
-* [<span data-ttu-id="8d8c6-194">Использование REST API для Excel</span><span class="sxs-lookup"><span data-stu-id="8d8c6-194">Use the Excel REST API</span></span>](/graph/api/resources/excel?view=graph-rest-1.0)
+## <a name="see-also"></a><span data-ttu-id="cb32d-198">См. также</span><span class="sxs-lookup"><span data-stu-id="cb32d-198">See also</span></span>
+* [<span data-ttu-id="cb32d-199">Управление сеансами в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cb32d-199">Manage sessions in Excel with Microsoft Graph</span></span>](excel-manage-sessions.md)
+* [<span data-ttu-id="cb32d-200">Запись в книгу Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cb32d-200">Write to an Excel workbook using Microsoft Graph</span></span>](excel-write-to-workbook.md)
+* [<span data-ttu-id="cb32d-201">Использование функций книг в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cb32d-201">Use workbook functions in Excel with Microsoft Graph</span></span>](excel-use-functions.md)
+* [<span data-ttu-id="cb32d-202">Показ изображения диаграммы в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="cb32d-202">Display a chart image in Excel with Microsoft Graph</span></span>](excel-display-chart-image.md)
+* [<span data-ttu-id="cb32d-203">Использование REST API для Excel</span><span class="sxs-lookup"><span data-stu-id="cb32d-203">Use the Excel REST API</span></span>](/graph/api/resources/excel?view=graph-rest-1.0)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -455,6 +473,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /concepts/excel-update-range-format.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /concepts/excel-update-range-format.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /concepts/excel-update-range-format.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /concepts/excel-update-range-format.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

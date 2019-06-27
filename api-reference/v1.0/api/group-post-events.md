@@ -4,46 +4,46 @@ description: Этот API используется для создания со�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 89398b5636734b50c983e5dbb3526b40982d767f
-ms.sourcegitcommit: abca7fcefeaa74b50f4600b35d816b626ba08468
+ms.openlocfilehash: b37358619080b545fa217c2c9264b84571104538
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34310896"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277793"
 ---
-# <a name="create-event"></a><span data-ttu-id="a0745-103">Создание события</span><span class="sxs-lookup"><span data-stu-id="a0745-103">Create event</span></span>
-<span data-ttu-id="a0745-104">С помощью этого API можно создать [событие](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="a0745-104">Use this API to create a new [event](../resources/event.md).</span></span>
+# <a name="create-event"></a><span data-ttu-id="70972-103">Создание события</span><span class="sxs-lookup"><span data-stu-id="70972-103">Create event</span></span>
+<span data-ttu-id="70972-104">С помощью этого API можно создать [событие](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="70972-104">Use this API to create a new [event](../resources/event.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a0745-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a0745-105">Permissions</span></span>
-<span data-ttu-id="a0745-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0745-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="70972-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="70972-105">Permissions</span></span>
+<span data-ttu-id="70972-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70972-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0745-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a0745-108">Permission type</span></span>      | <span data-ttu-id="a0745-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a0745-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70972-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="70972-108">Permission type</span></span>      | <span data-ttu-id="70972-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="70972-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a0745-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a0745-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a0745-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0745-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a0745-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a0745-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0745-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a0745-113">Not supported.</span></span>    |
-|<span data-ttu-id="a0745-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a0745-114">Application</span></span> | <span data-ttu-id="a0745-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a0745-115">Not supported.</span></span> |
+|<span data-ttu-id="70972-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="70972-110">Delegated (work or school account)</span></span> | <span data-ttu-id="70972-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70972-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="70972-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="70972-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70972-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70972-113">Not supported.</span></span>    |
+|<span data-ttu-id="70972-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="70972-114">Application</span></span> | <span data-ttu-id="70972-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70972-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a0745-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a0745-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70972-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="70972-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a0745-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a0745-117">Request headers</span></span>
-| <span data-ttu-id="a0745-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a0745-118">Header</span></span>       | <span data-ttu-id="a0745-119">Значение</span><span class="sxs-lookup"><span data-stu-id="a0745-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="70972-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="70972-117">Request headers</span></span>
+| <span data-ttu-id="70972-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="70972-118">Header</span></span>       | <span data-ttu-id="70972-119">Значение</span><span class="sxs-lookup"><span data-stu-id="70972-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a0745-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a0745-120">Authorization</span></span>  | <span data-ttu-id="a0745-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a0745-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="70972-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="70972-120">Authorization</span></span>  | <span data-ttu-id="70972-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="70972-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a0745-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a0745-123">Request body</span></span>
-<span data-ttu-id="a0745-124">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a0745-124">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70972-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="70972-123">Request body</span></span>
+<span data-ttu-id="70972-124">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="70972-124">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a0745-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0745-125">Response</span></span>
-<span data-ttu-id="a0745-126">В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="a0745-126">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="70972-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="70972-125">Response</span></span>
+<span data-ttu-id="70972-126">В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="70972-126">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0745-127">Пример</span><span class="sxs-lookup"><span data-stu-id="a0745-127">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="a0745-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="a0745-128">Request</span></span>
-<span data-ttu-id="a0745-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a0745-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="70972-127">Пример</span><span class="sxs-lookup"><span data-stu-id="70972-127">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="70972-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="70972-128">Request</span></span>
+<span data-ttu-id="70972-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="70972-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["01d4ee64-15ce-491e-bad1-b91aa3223df4"],
@@ -81,11 +81,11 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="a0745-130">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a0745-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="70972-130">Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="70972-130">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="a0745-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0745-131">Response</span></span>
-<span data-ttu-id="a0745-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a0745-132">The following is an example of the response.</span></span>
-><span data-ttu-id="a0745-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a0745-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="70972-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="70972-131">Response</span></span>
+<span data-ttu-id="70972-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="70972-132">The following is an example of the response.</span></span>
+><span data-ttu-id="70972-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="70972-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -175,13 +175,15 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a0745-135">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="a0745-135">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a0745-136">C#</span><span class="sxs-lookup"><span data-stu-id="a0745-136">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="70972-135">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="70972-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="70972-136">C#</span><span class="sxs-lookup"><span data-stu-id="70972-136">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_event_from_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a0745-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a0745-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="70972-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="70972-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_event_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="70972-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="70972-138">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_event_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -195,6 +197,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-post-events.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

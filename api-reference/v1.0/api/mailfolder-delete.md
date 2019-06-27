@@ -4,51 +4,51 @@ description: Удаление указанного mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c1cd8e05cc1caa428f36ccdc56f2247f7e4e15a2
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 3a66fbb7f665d7958be715616ba25074729ff690
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812693"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35271920"
 ---
-# <a name="delete-mailfolder"></a><span data-ttu-id="8216d-103">Удаление объекта MailFolder</span><span class="sxs-lookup"><span data-stu-id="8216d-103">Delete mailFolder</span></span>
+# <a name="delete-mailfolder"></a><span data-ttu-id="19013-103">Удаление объекта MailFolder</span><span class="sxs-lookup"><span data-stu-id="19013-103">Delete mailFolder</span></span>
 
-<span data-ttu-id="8216d-104">Удаление указанного [mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="8216d-104">Delete the specified [mailFolder](../resources/mailfolder.md).</span></span> <span data-ttu-id="8216d-105">Папка может быть [маилсеарчфолдер](../resources/mailsearchfolder.md).</span><span class="sxs-lookup"><span data-stu-id="8216d-105">The folder can be a [mailSearchFolder](../resources/mailsearchfolder.md).</span></span>
+<span data-ttu-id="19013-104">Удаление указанного [mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="19013-104">Delete the specified [mailFolder](../resources/mailfolder.md).</span></span> <span data-ttu-id="19013-105">Папка может быть [маилсеарчфолдер](../resources/mailsearchfolder.md).</span><span class="sxs-lookup"><span data-stu-id="19013-105">The folder can be a [mailSearchFolder](../resources/mailsearchfolder.md).</span></span>
 
-<span data-ttu-id="8216d-106">Вы можете указать почтовую папку по ее ИДЕНТИФИКАТОРу папки или по известному [имени папки](../resources/mailfolder.md), если она существует.</span><span class="sxs-lookup"><span data-stu-id="8216d-106">You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists.</span></span> 
+<span data-ttu-id="19013-106">Вы можете указать почтовую папку по ее ИДЕНТИФИКАТОРу папки или по известному [имени папки](../resources/mailfolder.md), если она существует.</span><span class="sxs-lookup"><span data-stu-id="19013-106">You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists.</span></span> 
 
-><span data-ttu-id="8216d-107">**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено известным именем `recoverableitemsdeletions`папки).</span><span class="sxs-lookup"><span data-stu-id="8216d-107">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`).</span></span> <span data-ttu-id="8216d-108">Дополнительные сведения см. в статье [Хранение удаленных](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .</span><span class="sxs-lookup"><span data-stu-id="8216d-108">See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
+><span data-ttu-id="19013-107">**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено известным именем `recoverableitemsdeletions`папки).</span><span class="sxs-lookup"><span data-stu-id="19013-107">**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`).</span></span> <span data-ttu-id="19013-108">Дополнительные сведения см. в статье [Хранение удаленных](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .</span><span class="sxs-lookup"><span data-stu-id="19013-108">See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8216d-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8216d-109">Permissions</span></span>
-<span data-ttu-id="8216d-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8216d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="19013-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="19013-109">Permissions</span></span>
+<span data-ttu-id="19013-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="19013-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8216d-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8216d-112">Permission type</span></span>      | <span data-ttu-id="8216d-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8216d-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="19013-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="19013-112">Permission type</span></span>      | <span data-ttu-id="19013-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="19013-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8216d-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8216d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="8216d-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8216d-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8216d-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8216d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8216d-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8216d-117">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8216d-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8216d-118">Application</span></span> | <span data-ttu-id="8216d-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8216d-119">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="19013-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="19013-114">Delegated (work or school account)</span></span> | <span data-ttu-id="19013-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="19013-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="19013-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="19013-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19013-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="19013-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="19013-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="19013-118">Application</span></span> | <span data-ttu-id="19013-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="19013-119">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8216d-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8216d-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="19013-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="19013-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="8216d-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8216d-121">Request headers</span></span>
-| <span data-ttu-id="8216d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="8216d-122">Name</span></span>       | <span data-ttu-id="8216d-123">Тип</span><span class="sxs-lookup"><span data-stu-id="8216d-123">Type</span></span> | <span data-ttu-id="8216d-124">Описание</span><span class="sxs-lookup"><span data-stu-id="8216d-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="19013-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="19013-121">Request headers</span></span>
+| <span data-ttu-id="19013-122">Имя</span><span class="sxs-lookup"><span data-stu-id="19013-122">Name</span></span>       | <span data-ttu-id="19013-123">Тип</span><span class="sxs-lookup"><span data-stu-id="19013-123">Type</span></span> | <span data-ttu-id="19013-124">Описание</span><span class="sxs-lookup"><span data-stu-id="19013-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="8216d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="8216d-125">Authorization</span></span>  | <span data-ttu-id="8216d-126">string</span><span class="sxs-lookup"><span data-stu-id="8216d-126">string</span></span>  | <span data-ttu-id="8216d-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8216d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="19013-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="19013-125">Authorization</span></span>  | <span data-ttu-id="19013-126">string</span><span class="sxs-lookup"><span data-stu-id="19013-126">string</span></span>  | <span data-ttu-id="19013-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="19013-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8216d-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8216d-129">Request body</span></span>
-<span data-ttu-id="8216d-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8216d-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="19013-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="19013-129">Request body</span></span>
+<span data-ttu-id="19013-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="19013-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8216d-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="8216d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="19013-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="19013-131">Response</span></span>
 
-<span data-ttu-id="8216d-p105">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="8216d-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="19013-p105">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="19013-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8216d-134">Пример</span><span class="sxs-lookup"><span data-stu-id="8216d-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8216d-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="8216d-135">Request</span></span>
-<span data-ttu-id="8216d-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8216d-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="19013-134">Пример</span><span class="sxs-lookup"><span data-stu-id="19013-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="19013-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="19013-135">Request</span></span>
+<span data-ttu-id="19013-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="19013-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_mailfolder"
@@ -56,8 +56,8 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="8216d-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="8216d-137">Response</span></span>
-<span data-ttu-id="8216d-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8216d-138">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="19013-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="19013-137">Response</span></span>
+<span data-ttu-id="19013-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="19013-138">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -65,13 +65,15 @@ DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="8216d-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="8216d-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="8216d-140">C#</span><span class="sxs-lookup"><span data-stu-id="8216d-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="19013-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="19013-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="19013-140">C#</span><span class="sxs-lookup"><span data-stu-id="19013-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_mailfolder-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8216d-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="8216d-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="19013-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="19013-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_mailfolder-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="19013-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="19013-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -85,6 +87,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
