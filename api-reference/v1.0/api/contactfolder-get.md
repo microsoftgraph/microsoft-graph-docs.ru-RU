@@ -4,54 +4,54 @@ description: Получение папки контактов с помощью 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5bab3c729795f70789c66b22899b412d5f6abdf0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 056c5e388361a97884b8a301b166cfb91bce08f3
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566166"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277485"
 ---
-# <a name="get-contactfolder"></a><span data-ttu-id="ae58f-103">Получение объекта contactFolder</span><span class="sxs-lookup"><span data-stu-id="ae58f-103">Get contactFolder</span></span>
+# <a name="get-contactfolder"></a><span data-ttu-id="af5ed-103">Получение объекта contactFolder</span><span class="sxs-lookup"><span data-stu-id="af5ed-103">Get contactFolder</span></span>
 
-<span data-ttu-id="ae58f-104">Получение папки контактов с помощью ее идентификатора.</span><span class="sxs-lookup"><span data-stu-id="ae58f-104">Get a contact folder by using the contact folder ID.</span></span>
+<span data-ttu-id="af5ed-104">Получение папки контактов с помощью ее идентификатора.</span><span class="sxs-lookup"><span data-stu-id="af5ed-104">Get a contact folder by using the contact folder ID.</span></span>
 
-<span data-ttu-id="ae58f-105">Существует два сценария, в которых приложение может получить папку контактов другого пользователя:</span><span class="sxs-lookup"><span data-stu-id="ae58f-105">There are two scenarios where an app can get another user's contact folder:</span></span>
+<span data-ttu-id="af5ed-105">Существует два сценария, в которых приложение может получить папку контактов другого пользователя:</span><span class="sxs-lookup"><span data-stu-id="af5ed-105">There are two scenarios where an app can get another user's contact folder:</span></span>
 
-* <span data-ttu-id="ae58f-106">У приложения есть разрешения для приложений; или</span><span class="sxs-lookup"><span data-stu-id="ae58f-106">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="ae58f-107">У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой контактов или предоставил ему делегированный доступ.</span><span class="sxs-lookup"><span data-stu-id="ae58f-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="ae58f-108">См. [подробные сведения и пример](/graph/outlook-get-shared-contacts-folders).</span><span class="sxs-lookup"><span data-stu-id="ae58f-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
+* <span data-ttu-id="af5ed-106">У приложения есть разрешения для приложений; или</span><span class="sxs-lookup"><span data-stu-id="af5ed-106">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="af5ed-107">У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой контактов или предоставил ему делегированный доступ.</span><span class="sxs-lookup"><span data-stu-id="af5ed-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="af5ed-108">См. [подробные сведения и пример](/graph/outlook-get-shared-contacts-folders).</span><span class="sxs-lookup"><span data-stu-id="af5ed-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="ae58f-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ae58f-109">Permissions</span></span>
-<span data-ttu-id="ae58f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae58f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="af5ed-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="af5ed-109">Permissions</span></span>
+<span data-ttu-id="af5ed-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="af5ed-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ae58f-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ae58f-112">Permission type</span></span>      | <span data-ttu-id="ae58f-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ae58f-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="af5ed-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="af5ed-112">Permission type</span></span>      | <span data-ttu-id="af5ed-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="af5ed-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ae58f-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ae58f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ae58f-115">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ae58f-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="ae58f-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ae58f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae58f-117">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ae58f-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="ae58f-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ae58f-118">Application</span></span> | <span data-ttu-id="ae58f-119">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ae58f-119">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="af5ed-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="af5ed-114">Delegated (work or school account)</span></span> | <span data-ttu-id="af5ed-115">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="af5ed-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="af5ed-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="af5ed-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af5ed-117">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="af5ed-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="af5ed-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="af5ed-118">Application</span></span> | <span data-ttu-id="af5ed-119">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="af5ed-119">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ae58f-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ae58f-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="af5ed-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="af5ed-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ae58f-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ae58f-121">Optional query parameters</span></span>
-<span data-ttu-id="ae58f-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="ae58f-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ae58f-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ae58f-123">Request headers</span></span>
-| <span data-ttu-id="ae58f-124">Имя</span><span class="sxs-lookup"><span data-stu-id="ae58f-124">Name</span></span>       | <span data-ttu-id="ae58f-125">Тип</span><span class="sxs-lookup"><span data-stu-id="ae58f-125">Type</span></span> | <span data-ttu-id="ae58f-126">Описание</span><span class="sxs-lookup"><span data-stu-id="ae58f-126">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="af5ed-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="af5ed-121">Optional query parameters</span></span>
+<span data-ttu-id="af5ed-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="af5ed-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="af5ed-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="af5ed-123">Request headers</span></span>
+| <span data-ttu-id="af5ed-124">Имя</span><span class="sxs-lookup"><span data-stu-id="af5ed-124">Name</span></span>       | <span data-ttu-id="af5ed-125">Тип</span><span class="sxs-lookup"><span data-stu-id="af5ed-125">Type</span></span> | <span data-ttu-id="af5ed-126">Описание</span><span class="sxs-lookup"><span data-stu-id="af5ed-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ae58f-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae58f-127">Authorization</span></span>  | <span data-ttu-id="ae58f-128">string</span><span class="sxs-lookup"><span data-stu-id="ae58f-128">string</span></span>  | <span data-ttu-id="ae58f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ae58f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="af5ed-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="af5ed-127">Authorization</span></span>  | <span data-ttu-id="af5ed-128">string</span><span class="sxs-lookup"><span data-stu-id="af5ed-128">string</span></span>  | <span data-ttu-id="af5ed-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="af5ed-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ae58f-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ae58f-131">Request body</span></span>
-<span data-ttu-id="ae58f-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ae58f-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="af5ed-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="af5ed-131">Request body</span></span>
+<span data-ttu-id="af5ed-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="af5ed-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ae58f-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="ae58f-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="af5ed-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="af5ed-133">Response</span></span>
 
-<span data-ttu-id="ae58f-134">В случае успеха этот метод возвращает код отклика `200 OK` и объект [contactFolder](../resources/contactfolder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ae58f-134">If successful, this method returns a `200 OK` response code and [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ae58f-135">Пример</span><span class="sxs-lookup"><span data-stu-id="ae58f-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ae58f-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="ae58f-136">Request</span></span>
-<span data-ttu-id="ae58f-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ae58f-137">Here is an example of the request.</span></span>
+<span data-ttu-id="af5ed-134">В случае успеха этот метод возвращает код отклика `200 OK` и объект [contactFolder](../resources/contactfolder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="af5ed-134">If successful, this method returns a `200 OK` response code and [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="af5ed-135">Пример</span><span class="sxs-lookup"><span data-stu-id="af5ed-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="af5ed-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="af5ed-136">Request</span></span>
+<span data-ttu-id="af5ed-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="af5ed-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_contactfolder"
@@ -59,8 +59,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="ae58f-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="ae58f-138">Response</span></span>
-<span data-ttu-id="ae58f-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ae58f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="af5ed-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="af5ed-138">Response</span></span>
+<span data-ttu-id="af5ed-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="af5ed-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,6 +77,18 @@ Content-length: 104
   "parentFolderId": "AAMkAGI2AAEOAAA="
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="af5ed-142">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="af5ed-142">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="af5ed-143">C#</span><span class="sxs-lookup"><span data-stu-id="af5ed-143">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_contactfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="af5ed-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="af5ed-144">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_contactfolder-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="af5ed-145">Цель — C</span><span class="sxs-lookup"><span data-stu-id="af5ed-145">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_contactfolder-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,5 +97,10 @@ Content-length: 104
   "description": "Get contactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/contactfolder-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/contactfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/contactfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

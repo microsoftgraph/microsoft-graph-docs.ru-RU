@@ -2,49 +2,49 @@
 title: Получение фотографии
 description: Получение свойств и связей объекта фотографии.
 localization_priority: Normal
-ms.openlocfilehash: b5c79d0e10c250f0f3ae3d019bcab10b6157e117
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 513382d58690fdb2198e4974030cd1d9cafd65c7
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611552"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274237"
 ---
-# <a name="get-photo"></a><span data-ttu-id="cfb17-103">Получение фотографии</span><span class="sxs-lookup"><span data-stu-id="cfb17-103">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="fb3be-103">Получение фотографии</span><span class="sxs-lookup"><span data-stu-id="fb3be-103">Get photo</span></span>
 
-<span data-ttu-id="cfb17-104">Получение свойств и связей объекта фотографии.</span><span class="sxs-lookup"><span data-stu-id="cfb17-104">Retrieve the properties and relationships of photo object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cfb17-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cfb17-105">Permissions</span></span>
-<span data-ttu-id="cfb17-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cfb17-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fb3be-104">Получение свойств и связей объекта фотографии.</span><span class="sxs-lookup"><span data-stu-id="fb3be-104">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fb3be-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fb3be-105">Permissions</span></span>
+<span data-ttu-id="fb3be-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fb3be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cfb17-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cfb17-108">Permission type</span></span>      | <span data-ttu-id="cfb17-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cfb17-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fb3be-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fb3be-108">Permission type</span></span>      | <span data-ttu-id="fb3be-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fb3be-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cfb17-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cfb17-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cfb17-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="cfb17-111">Files.Read</span></span>    |
-|<span data-ttu-id="cfb17-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cfb17-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cfb17-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="cfb17-113">Files.Read</span></span>    |
-|<span data-ttu-id="cfb17-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cfb17-114">Application</span></span> | <span data-ttu-id="cfb17-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cfb17-115">Not supported.</span></span> |
+|<span data-ttu-id="fb3be-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fb3be-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fb3be-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="fb3be-111">Files.Read</span></span>    |
+|<span data-ttu-id="fb3be-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fb3be-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb3be-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="fb3be-113">Files.Read</span></span>    |
+|<span data-ttu-id="fb3be-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fb3be-114">Application</span></span> | <span data-ttu-id="fb3be-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fb3be-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cfb17-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cfb17-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fb3be-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fb3be-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cfb17-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cfb17-117">Optional query parameters</span></span>
-<span data-ttu-id="cfb17-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="cfb17-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fb3be-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fb3be-117">Optional query parameters</span></span>
+<span data-ttu-id="fb3be-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fb3be-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cfb17-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cfb17-119">Request headers</span></span>
-| <span data-ttu-id="cfb17-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cfb17-120">Name</span></span>       | <span data-ttu-id="cfb17-121">Тип</span><span class="sxs-lookup"><span data-stu-id="cfb17-121">Type</span></span> | <span data-ttu-id="cfb17-122">Описание</span><span class="sxs-lookup"><span data-stu-id="cfb17-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fb3be-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fb3be-119">Request headers</span></span>
+| <span data-ttu-id="fb3be-120">Имя</span><span class="sxs-lookup"><span data-stu-id="fb3be-120">Name</span></span>       | <span data-ttu-id="fb3be-121">Тип</span><span class="sxs-lookup"><span data-stu-id="fb3be-121">Type</span></span> | <span data-ttu-id="fb3be-122">Описание</span><span class="sxs-lookup"><span data-stu-id="fb3be-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="cfb17-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cfb17-123">Authorization</span></span>  | <span data-ttu-id="cfb17-124">string</span><span class="sxs-lookup"><span data-stu-id="cfb17-124">string</span></span>  | <span data-ttu-id="cfb17-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cfb17-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fb3be-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fb3be-123">Authorization</span></span>  | <span data-ttu-id="fb3be-124">string</span><span class="sxs-lookup"><span data-stu-id="fb3be-124">string</span></span>  | <span data-ttu-id="fb3be-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fb3be-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cfb17-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cfb17-127">Request body</span></span>
-<span data-ttu-id="cfb17-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cfb17-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fb3be-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fb3be-127">Request body</span></span>
+<span data-ttu-id="fb3be-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fb3be-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cfb17-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfb17-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fb3be-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb3be-129">Response</span></span>
 
-<span data-ttu-id="cfb17-130">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cfb17-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cfb17-131">Пример</span><span class="sxs-lookup"><span data-stu-id="cfb17-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cfb17-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="cfb17-132">Request</span></span>
-<span data-ttu-id="cfb17-133">Ниже приведен пример запроса на получение метаданных фотографий.</span><span class="sxs-lookup"><span data-stu-id="cfb17-133">Here is an example of the request for photo metadata.</span></span>
+<span data-ttu-id="fb3be-130">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fb3be-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fb3be-131">Пример</span><span class="sxs-lookup"><span data-stu-id="fb3be-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fb3be-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="fb3be-132">Request</span></span>
+<span data-ttu-id="fb3be-133">Ниже приведен пример запроса на получение метаданных фотографий.</span><span class="sxs-lookup"><span data-stu-id="fb3be-133">Here is an example of the request for photo metadata.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -52,8 +52,8 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a><span data-ttu-id="cfb17-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfb17-134">Response</span></span>
-<span data-ttu-id="cfb17-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cfb17-135">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="fb3be-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb3be-134">Response</span></span>
+<span data-ttu-id="fb3be-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fb3be-135">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -70,18 +70,20 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cfb17-136">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="cfb17-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="cfb17-137">Языках</span><span class="sxs-lookup"><span data-stu-id="cfb17-137">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="fb3be-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="fb3be-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="fb3be-137">C#</span><span class="sxs-lookup"><span data-stu-id="fb3be-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_photo-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cfb17-138">Язык</span><span class="sxs-lookup"><span data-stu-id="cfb17-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb3be-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="fb3be-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_photo-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="fb3be-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fb3be-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_photo-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-##### <a name="request"></a><span data-ttu-id="cfb17-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="cfb17-139">Request</span></span>
-<span data-ttu-id="cfb17-140">Ниже приведен пример запроса на получение байтов фотографий.</span><span class="sxs-lookup"><span data-stu-id="cfb17-140">Here is an example of the request for the photo bytes.</span></span>
+##### <a name="request"></a><span data-ttu-id="fb3be-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="fb3be-140">Request</span></span>
+<span data-ttu-id="fb3be-141">Ниже приведен пример запроса на получение байтов фотографий.</span><span class="sxs-lookup"><span data-stu-id="fb3be-141">Here is an example of the request for the photo bytes.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo_value"
@@ -89,8 +91,8 @@ Content-length: 53
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ```
-##### <a name="response"></a><span data-ttu-id="cfb17-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="cfb17-141">Response</span></span>
-<span data-ttu-id="cfb17-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cfb17-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="fb3be-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb3be-142">Response</span></span>
+<span data-ttu-id="fb3be-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fb3be-143">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 
@@ -110,13 +112,15 @@ Content-Length: 250526
 
 <binary image data>
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="cfb17-143">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="cfb17-143">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="cfb17-144">Языках</span><span class="sxs-lookup"><span data-stu-id="cfb17-144">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="fb3be-144">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="fb3be-144">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="fb3be-145">C#</span><span class="sxs-lookup"><span data-stu-id="fb3be-145">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_photo_value-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cfb17-145">Язык</span><span class="sxs-lookup"><span data-stu-id="cfb17-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb3be-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="fb3be-146">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_photo_value-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="fb3be-147">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fb3be-147">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_photo_value-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -129,6 +133,7 @@ Content-Length: 250526
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/photo-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/photo-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/photo-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/photo-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

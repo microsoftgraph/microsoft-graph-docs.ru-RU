@@ -4,50 +4,50 @@ description: Получение свойств и связей объекта в
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 58d044330a28f297abc3f5e1b1d177fbcc46d93a
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 8b53f12f80c2a27a4879321174f6b4e301693be9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636865"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35269295"
 ---
-# <a name="get-workbookworksheetprotection"></a><span data-ttu-id="c46f7-103">Получение Воркбукворкшитпротектион</span><span class="sxs-lookup"><span data-stu-id="c46f7-103">Get workbookWorksheetProtection</span></span>
+# <a name="get-workbookworksheetprotection"></a><span data-ttu-id="c4e0f-103">Получение Воркбукворкшитпротектион</span><span class="sxs-lookup"><span data-stu-id="c4e0f-103">Get workbookWorksheetProtection</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c46f7-104">Получение свойств и связей объекта Воркбукворкшитпротектион.</span><span class="sxs-lookup"><span data-stu-id="c46f7-104">Retrieve the properties and relationships of workbookWorksheetProtection object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c46f7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c46f7-105">Permissions</span></span>
-<span data-ttu-id="c46f7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c46f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c4e0f-104">Получение свойств и связей объекта Воркбукворкшитпротектион.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-104">Retrieve the properties and relationships of workbookWorksheetProtection object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c4e0f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c4e0f-105">Permissions</span></span>
+<span data-ttu-id="c4e0f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4e0f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c46f7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c46f7-108">Permission type</span></span>      | <span data-ttu-id="c46f7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c46f7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c4e0f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c4e0f-108">Permission type</span></span>      | <span data-ttu-id="c4e0f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c4e0f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c46f7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c46f7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c46f7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c46f7-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c46f7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c46f7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c46f7-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c46f7-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c46f7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c46f7-114">Application</span></span> | <span data-ttu-id="c46f7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c46f7-115">Not supported.</span></span> |
+|<span data-ttu-id="c4e0f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c4e0f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c4e0f-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4e0f-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c4e0f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c4e0f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c4e0f-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4e0f-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c4e0f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c4e0f-114">Application</span></span> | <span data-ttu-id="c4e0f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c46f7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c46f7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c4e0f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c4e0f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/protection
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c46f7-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c46f7-117">Optional query parameters</span></span>
-<span data-ttu-id="c46f7-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c46f7-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c4e0f-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c4e0f-117">Optional query parameters</span></span>
+<span data-ttu-id="c4e0f-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c46f7-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c46f7-119">Request headers</span></span>
-| <span data-ttu-id="c46f7-120">Имя</span><span class="sxs-lookup"><span data-stu-id="c46f7-120">Name</span></span>      |<span data-ttu-id="c46f7-121">Описание</span><span class="sxs-lookup"><span data-stu-id="c46f7-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c4e0f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c4e0f-119">Request headers</span></span>
+| <span data-ttu-id="c4e0f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="c4e0f-120">Name</span></span>      |<span data-ttu-id="c4e0f-121">Описание</span><span class="sxs-lookup"><span data-stu-id="c4e0f-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c46f7-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c46f7-122">Authorization</span></span>  | <span data-ttu-id="c46f7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c46f7-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c46f7-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c46f7-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c46f7-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c46f7-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c4e0f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c4e0f-122">Authorization</span></span>  | <span data-ttu-id="c4e0f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c4e0f-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c4e0f-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c4e0f-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c46f7-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c46f7-128">Request body</span></span>
-<span data-ttu-id="c46f7-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c46f7-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c4e0f-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c4e0f-128">Request body</span></span>
+<span data-ttu-id="c4e0f-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c46f7-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="c46f7-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c4e0f-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="c4e0f-130">Response</span></span>
 
-<span data-ttu-id="c46f7-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшитпротектион](../resources/workbookworksheetprotection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c46f7-131">If successful, this method returns a `200 OK` response code and [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c46f7-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c46f7-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c46f7-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c46f7-133">Request</span></span>
-<span data-ttu-id="c46f7-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c46f7-134">Here is an example of the request.</span></span>
+<span data-ttu-id="c4e0f-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукворкшитпротектион](../resources/workbookworksheetprotection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-131">If successful, this method returns a `200 OK` response code and [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c4e0f-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c4e0f-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c4e0f-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c4e0f-133">Request</span></span>
+<span data-ttu-id="c4e0f-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_workbookworksheetprotection"
@@ -55,8 +55,8 @@ GET /workbook/worksheets/{id|name}/protection
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
 ```
-##### <a name="response"></a><span data-ttu-id="c46f7-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c46f7-135">Response</span></span>
-<span data-ttu-id="c46f7-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c46f7-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c4e0f-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c4e0f-135">Response</span></span>
+<span data-ttu-id="c4e0f-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c4e0f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -71,13 +71,15 @@ Content-length: 23
   "protected": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c46f7-139">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="c46f7-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c46f7-140">Языках</span><span class="sxs-lookup"><span data-stu-id="c46f7-140">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c4e0f-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="c4e0f-139">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c4e0f-140">C#</span><span class="sxs-lookup"><span data-stu-id="c4e0f-140">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_workbookworksheetprotection-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c46f7-141">Язык</span><span class="sxs-lookup"><span data-stu-id="c46f7-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c4e0f-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="c4e0f-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_workbookworksheetprotection-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="c4e0f-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c4e0f-142">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_workbookworksheetprotection-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -92,6 +94,7 @@ Content-length: 23
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/worksheetprotection-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/worksheetprotection-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/worksheetprotection-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

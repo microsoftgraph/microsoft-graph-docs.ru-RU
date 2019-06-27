@@ -2,65 +2,65 @@
 title: 'Привилежедроле: Селфактивате'
 description: Активируйте роль, назначенную инициатору запроса.
 localization_priority: Normal
-ms.openlocfilehash: a6afd9d82536e5cd4660529ad44c064a487fa640
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fa7adc82bab9c25ddee6a301a9f65a60481ff7db
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33594826"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35268182"
 ---
-# <a name="privilegedrole-selfactivate"></a><span data-ttu-id="0f3f1-103">Привилежедроле: Селфактивате</span><span class="sxs-lookup"><span data-stu-id="0f3f1-103">privilegedRole: selfActivate</span></span>
+# <a name="privilegedrole-selfactivate"></a><span data-ttu-id="a7848-103">Привилежедроле: Селфактивате</span><span class="sxs-lookup"><span data-stu-id="a7848-103">privilegedRole: selfActivate</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0f3f1-104">Активируйте роль, назначенную инициатору запроса.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-104">Activate the role that is assigned to the requester.</span></span>
+<span data-ttu-id="a7848-104">Активируйте роль, назначенную инициатору запроса.</span><span class="sxs-lookup"><span data-stu-id="a7848-104">Activate the role that is assigned to the requester.</span></span>
 
-><span data-ttu-id="0f3f1-105">**Примечание:** Эффективный 2018 декабря этот API больше не поддерживается и не должен использоваться.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-105">**Note:** Effective December 2018, this API will no longer be supported and should not be used.</span></span> <span data-ttu-id="0f3f1-106">Используйте вместо этого [CREATE привилежедролеассигнментрекуест](privilegedroleassignmentrequest-post.md) .</span><span class="sxs-lookup"><span data-stu-id="0f3f1-106">Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) instead.</span></span>
+><span data-ttu-id="a7848-105">**Примечание:** Эффективный 2018 декабря этот API больше не поддерживается и не должен использоваться.</span><span class="sxs-lookup"><span data-stu-id="a7848-105">**Note:** Effective December 2018, this API will no longer be supported and should not be used.</span></span> <span data-ttu-id="a7848-106">Используйте вместо этого [CREATE привилежедролеассигнментрекуест](privilegedroleassignmentrequest-post.md) .</span><span class="sxs-lookup"><span data-stu-id="a7848-106">Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) instead.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="0f3f1-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0f3f1-107">Permissions</span></span>
-<span data-ttu-id="0f3f1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f3f1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7848-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a7848-107">Permissions</span></span>
+<span data-ttu-id="a7848-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a7848-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="0f3f1-110">Запрашивающая сторона может вызвать ```selfActivate``` только назначенную ему роль.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-110">The requestor can only call ```selfActivate``` for the role that is assigned to him.</span></span>
+<span data-ttu-id="a7848-110">Запрашивающая сторона может вызвать ```selfActivate``` только назначенную ему роль.</span><span class="sxs-lookup"><span data-stu-id="a7848-110">The requestor can only call ```selfActivate``` for the role that is assigned to him.</span></span>
  
 
-|<span data-ttu-id="0f3f1-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0f3f1-111">Permission type</span></span>      | <span data-ttu-id="0f3f1-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0f3f1-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a7848-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a7848-111">Permission type</span></span>      | <span data-ttu-id="a7848-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a7848-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0f3f1-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0f3f1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0f3f1-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0f3f1-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0f3f1-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0f3f1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f3f1-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-116">Not supported.</span></span>    |
-|<span data-ttu-id="0f3f1-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0f3f1-117">Application</span></span> | <span data-ttu-id="0f3f1-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-118">Not supported.</span></span> |
+|<span data-ttu-id="a7848-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a7848-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a7848-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a7848-114">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a7848-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a7848-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7848-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7848-116">Not supported.</span></span>    |
+|<span data-ttu-id="a7848-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a7848-117">Application</span></span> | <span data-ttu-id="a7848-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7848-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0f3f1-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0f3f1-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7848-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a7848-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-<span data-ttu-id="0f3f1-120">Обратите ``<id>`` внимание, что это идентификатор целевой роли.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-120">Note that ``<id>`` is the target role ID.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="0f3f1-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0f3f1-121">Request headers</span></span>
-| <span data-ttu-id="0f3f1-122">Имя</span><span class="sxs-lookup"><span data-stu-id="0f3f1-122">Name</span></span>       | <span data-ttu-id="0f3f1-123">Описание</span><span class="sxs-lookup"><span data-stu-id="0f3f1-123">Description</span></span>|
+<span data-ttu-id="a7848-120">Обратите ``<id>`` внимание, что это идентификатор целевой роли.</span><span class="sxs-lookup"><span data-stu-id="a7848-120">Note that ``<id>`` is the target role ID.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a7848-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a7848-121">Request headers</span></span>
+| <span data-ttu-id="a7848-122">Имя</span><span class="sxs-lookup"><span data-stu-id="a7848-122">Name</span></span>       | <span data-ttu-id="a7848-123">Описание</span><span class="sxs-lookup"><span data-stu-id="a7848-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="0f3f1-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0f3f1-124">Authorization</span></span>  | <span data-ttu-id="0f3f1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a7848-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a7848-124">Authorization</span></span>  | <span data-ttu-id="a7848-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a7848-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0f3f1-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0f3f1-127">Request body</span></span>
-<span data-ttu-id="0f3f1-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7848-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a7848-127">Request body</span></span>
+<span data-ttu-id="a7848-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a7848-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0f3f1-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="0f3f1-129">Parameter</span></span>    | <span data-ttu-id="0f3f1-130">Тип</span><span class="sxs-lookup"><span data-stu-id="0f3f1-130">Type</span></span>   |<span data-ttu-id="0f3f1-131">Описание</span><span class="sxs-lookup"><span data-stu-id="0f3f1-131">Description</span></span>|
+| <span data-ttu-id="a7848-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="a7848-129">Parameter</span></span>    | <span data-ttu-id="a7848-130">Тип</span><span class="sxs-lookup"><span data-stu-id="a7848-130">Type</span></span>   |<span data-ttu-id="a7848-131">Описание</span><span class="sxs-lookup"><span data-stu-id="a7848-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0f3f1-132">причиной</span><span class="sxs-lookup"><span data-stu-id="0f3f1-132">reason</span></span>|<span data-ttu-id="0f3f1-133">string</span><span class="sxs-lookup"><span data-stu-id="0f3f1-133">string</span></span>|<span data-ttu-id="0f3f1-134">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-134">Optional.</span></span> <span data-ttu-id="0f3f1-135">Описание причины активации этой роли.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-135">Description about the reason for this role activation.</span></span>|
-|<span data-ttu-id="0f3f1-136">duration</span><span class="sxs-lookup"><span data-stu-id="0f3f1-136">duration</span></span>|<span data-ttu-id="0f3f1-137">string</span><span class="sxs-lookup"><span data-stu-id="0f3f1-137">string</span></span>|<span data-ttu-id="0f3f1-138">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-138">Optional.</span></span> <span data-ttu-id="0f3f1-139">Допустимые значения ```min``` : (минимальная длительность активации), ```default``` (длительность активации по умолчанию для роли) или значение Double, определяющее количество часов активации.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-139">Valid values could be ```min``` (minimal activation duration), ```default``` (default activation duration for the role), or a double value to specify how many hours is the activation.</span></span> <span data-ttu-id="0f3f1-140">Указанное время не может быть длиннее, чем длительность активации роли из параметра Role.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-140">The specified duration cannot be longer than the role's activation duration from the role setting.</span></span> |
-|<span data-ttu-id="0f3f1-141">Тиккетнумбер</span><span class="sxs-lookup"><span data-stu-id="0f3f1-141">ticketNumber</span></span>|<span data-ttu-id="0f3f1-142">string</span><span class="sxs-lookup"><span data-stu-id="0f3f1-142">string</span></span>|<span data-ttu-id="0f3f1-143">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-143">Optional.</span></span> <span data-ttu-id="0f3f1-144">Номер билета, который используется для отслеживания активации этой роли.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-144">The ticket number that is used to tracking this role activation.</span></span>|
-|<span data-ttu-id="0f3f1-145">Тиккетсистем</span><span class="sxs-lookup"><span data-stu-id="0f3f1-145">ticketSystem</span></span>|<span data-ttu-id="0f3f1-146">string</span><span class="sxs-lookup"><span data-stu-id="0f3f1-146">string</span></span>|<span data-ttu-id="0f3f1-147">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-147">Optional.</span></span> <span data-ttu-id="0f3f1-148">Система билетов.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-148">The ticket system.</span></span>|
+|<span data-ttu-id="a7848-132">причиной</span><span class="sxs-lookup"><span data-stu-id="a7848-132">reason</span></span>|<span data-ttu-id="a7848-133">string</span><span class="sxs-lookup"><span data-stu-id="a7848-133">string</span></span>|<span data-ttu-id="a7848-134">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="a7848-134">Optional.</span></span> <span data-ttu-id="a7848-135">Описание причины активации этой роли.</span><span class="sxs-lookup"><span data-stu-id="a7848-135">Description about the reason for this role activation.</span></span>|
+|<span data-ttu-id="a7848-136">duration</span><span class="sxs-lookup"><span data-stu-id="a7848-136">duration</span></span>|<span data-ttu-id="a7848-137">string</span><span class="sxs-lookup"><span data-stu-id="a7848-137">string</span></span>|<span data-ttu-id="a7848-138">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="a7848-138">Optional.</span></span> <span data-ttu-id="a7848-139">Допустимые значения ```min``` : (минимальная длительность активации), ```default``` (длительность активации по умолчанию для роли) или значение Double, определяющее количество часов активации.</span><span class="sxs-lookup"><span data-stu-id="a7848-139">Valid values could be ```min``` (minimal activation duration), ```default``` (default activation duration for the role), or a double value to specify how many hours is the activation.</span></span> <span data-ttu-id="a7848-140">Указанное время не может быть длиннее, чем длительность активации роли из параметра Role.</span><span class="sxs-lookup"><span data-stu-id="a7848-140">The specified duration cannot be longer than the role's activation duration from the role setting.</span></span> |
+|<span data-ttu-id="a7848-141">Тиккетнумбер</span><span class="sxs-lookup"><span data-stu-id="a7848-141">ticketNumber</span></span>|<span data-ttu-id="a7848-142">string</span><span class="sxs-lookup"><span data-stu-id="a7848-142">string</span></span>|<span data-ttu-id="a7848-143">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="a7848-143">Optional.</span></span> <span data-ttu-id="a7848-144">Номер билета, который используется для отслеживания активации этой роли.</span><span class="sxs-lookup"><span data-stu-id="a7848-144">The ticket number that is used to tracking this role activation.</span></span>|
+|<span data-ttu-id="a7848-145">Тиккетсистем</span><span class="sxs-lookup"><span data-stu-id="a7848-145">ticketSystem</span></span>|<span data-ttu-id="a7848-146">string</span><span class="sxs-lookup"><span data-stu-id="a7848-146">string</span></span>|<span data-ttu-id="a7848-147">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="a7848-147">Optional.</span></span> <span data-ttu-id="a7848-148">Система билетов.</span><span class="sxs-lookup"><span data-stu-id="a7848-148">The ticket system.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0f3f1-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f3f1-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a7848-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7848-149">Response</span></span>
 
-<span data-ttu-id="0f3f1-150">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-150">If successful, this method returns a `200 OK` response code and a [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="a7848-150">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a7848-150">If successful, this method returns a `200 OK` response code and a [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-<span data-ttu-id="0f3f1-151">Обратите внимание, что клиент должен быть зарегистрирован в PIM.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="0f3f1-152">В противном случае будет возвращен код состояния HTTP 403 запрещено.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="0f3f1-153">Пример</span><span class="sxs-lookup"><span data-stu-id="0f3f1-153">Example</span></span>
-<span data-ttu-id="0f3f1-154">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-154">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="0f3f1-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="0f3f1-155">Request</span></span>
-<span data-ttu-id="0f3f1-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-156">Here is an example of the request.</span></span>
+<span data-ttu-id="a7848-151">Обратите внимание, что клиент должен быть зарегистрирован в PIM.</span><span class="sxs-lookup"><span data-stu-id="a7848-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="a7848-152">В противном случае будет возвращен код состояния HTTP 403 запрещено.</span><span class="sxs-lookup"><span data-stu-id="a7848-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="a7848-153">Пример</span><span class="sxs-lookup"><span data-stu-id="a7848-153">Example</span></span>
+<span data-ttu-id="a7848-154">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="a7848-154">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a7848-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="a7848-155">Request</span></span>
+<span data-ttu-id="a7848-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a7848-156">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfactivate"
@@ -78,10 +78,10 @@ Content-length: 142
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0f3f1-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="0f3f1-157">Response</span></span>
-<span data-ttu-id="0f3f1-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-158">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a7848-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7848-157">Response</span></span>
+<span data-ttu-id="a7848-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a7848-158">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="0f3f1-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0f3f1-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="a7848-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a7848-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,13 +101,15 @@ Content-length: 184
   "resultMessage": "resultMessage-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="0f3f1-161">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="0f3f1-161">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="0f3f1-162">Языках</span><span class="sxs-lookup"><span data-stu-id="0f3f1-162">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="a7848-161">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="a7848-161">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="a7848-162">C#</span><span class="sxs-lookup"><span data-stu-id="a7848-162">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/privilegedrole_selfactivate-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0f3f1-163">Язык</span><span class="sxs-lookup"><span data-stu-id="0f3f1-163">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a7848-163">Javascript</span><span class="sxs-lookup"><span data-stu-id="a7848-163">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/privilegedrole_selfactivate-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="a7848-164">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a7848-164">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/privilegedrole_selfactivate-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -122,6 +124,7 @@ Content-length: 184
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrole-selfactivate.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedrole-selfactivate.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedrole-selfactivate.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -4,56 +4,56 @@ description: Отменяет обработку мультимедиа для �
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b77868957de367cc2889627726375e48054c209c
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: d8edab0c5f7e78e81edad8914c1a636213a62919
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635808"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262344"
 ---
-# <a name="call-cancelmediaprocessing"></a><span data-ttu-id="f0d80-103">Call: Канцелмедиапроцессинг</span><span class="sxs-lookup"><span data-stu-id="f0d80-103">call: cancelMediaProcessing</span></span>
+# <a name="call-cancelmediaprocessing"></a><span data-ttu-id="48743-103">Call: Канцелмедиапроцессинг</span><span class="sxs-lookup"><span data-stu-id="48743-103">call: cancelMediaProcessing</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f0d80-104">Отменяет обработку мультимедиа для всех выполняемых операций Плайпромпт или записи.</span><span class="sxs-lookup"><span data-stu-id="f0d80-104">Cancels media processing for all in-progress any PlayPrompt or Record operations.</span></span>
+<span data-ttu-id="48743-104">Отменяет обработку мультимедиа для всех выполняемых операций Плайпромпт или записи.</span><span class="sxs-lookup"><span data-stu-id="48743-104">Cancels media processing for all in-progress any PlayPrompt or Record operations.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f0d80-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f0d80-105">Permissions</span></span>
-<span data-ttu-id="f0d80-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0d80-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="48743-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="48743-105">Permissions</span></span>
+<span data-ttu-id="48743-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48743-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f0d80-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f0d80-108">Permission type</span></span>                        | <span data-ttu-id="f0d80-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f0d80-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="48743-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="48743-108">Permission type</span></span>                        | <span data-ttu-id="48743-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="48743-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="f0d80-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f0d80-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f0d80-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0d80-111">Not Supported.</span></span>                              |
-| <span data-ttu-id="f0d80-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f0d80-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0d80-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0d80-113">Not Supported.</span></span>                              |
-| <span data-ttu-id="f0d80-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="f0d80-114">Application</span></span>                            | <span data-ttu-id="f0d80-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="f0d80-115">None.</span></span>                                       |
+| <span data-ttu-id="48743-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="48743-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="48743-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="48743-111">Not Supported.</span></span>                              |
+| <span data-ttu-id="48743-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="48743-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48743-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="48743-113">Not Supported.</span></span>                              |
+| <span data-ttu-id="48743-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="48743-114">Application</span></span>                            | <span data-ttu-id="48743-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="48743-115">None.</span></span>                                       |
 
-## <a name="http-request"></a><span data-ttu-id="f0d80-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f0d80-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="48743-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="48743-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/cancelMediaProcessing
 POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f0d80-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f0d80-117">Request headers</span></span>
-| <span data-ttu-id="f0d80-118">Имя</span><span class="sxs-lookup"><span data-stu-id="f0d80-118">Name</span></span>          | <span data-ttu-id="f0d80-119">Описание</span><span class="sxs-lookup"><span data-stu-id="f0d80-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="48743-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="48743-117">Request headers</span></span>
+| <span data-ttu-id="48743-118">Имя</span><span class="sxs-lookup"><span data-stu-id="48743-118">Name</span></span>          | <span data-ttu-id="48743-119">Описание</span><span class="sxs-lookup"><span data-stu-id="48743-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f0d80-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f0d80-120">Authorization</span></span> | <span data-ttu-id="f0d80-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f0d80-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="48743-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="48743-120">Authorization</span></span> | <span data-ttu-id="48743-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="48743-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f0d80-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f0d80-123">Request body</span></span>
-<span data-ttu-id="f0d80-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f0d80-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="48743-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="48743-123">Request body</span></span>
+<span data-ttu-id="48743-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="48743-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f0d80-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="f0d80-125">Parameter</span></span>      | <span data-ttu-id="f0d80-126">Тип</span><span class="sxs-lookup"><span data-stu-id="f0d80-126">Type</span></span>    | <span data-ttu-id="f0d80-127">Описание</span><span class="sxs-lookup"><span data-stu-id="f0d80-127">Description</span></span>                                                    |
+| <span data-ttu-id="48743-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="48743-125">Parameter</span></span>      | <span data-ttu-id="48743-126">Тип</span><span class="sxs-lookup"><span data-stu-id="48743-126">Type</span></span>    | <span data-ttu-id="48743-127">Описание</span><span class="sxs-lookup"><span data-stu-id="48743-127">Description</span></span>                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| <span data-ttu-id="f0d80-128">ко</span><span class="sxs-lookup"><span data-stu-id="f0d80-128">all</span></span>            | <span data-ttu-id="f0d80-129">Логический</span><span class="sxs-lookup"><span data-stu-id="f0d80-129">Boolean</span></span> | <span data-ttu-id="f0d80-130">Флаг, указывающий, следует ли остановить все операции или текущие.</span><span class="sxs-lookup"><span data-stu-id="f0d80-130">The flag indicating whether to stop all operations or current.</span></span> |
-| <span data-ttu-id="f0d80-131">Контекст</span><span class="sxs-lookup"><span data-stu-id="f0d80-131">clientContext</span></span>  | <span data-ttu-id="f0d80-132">String</span><span class="sxs-lookup"><span data-stu-id="f0d80-132">String</span></span>  | <span data-ttu-id="f0d80-133">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="f0d80-133">The client context.</span></span>                                            |
+| <span data-ttu-id="48743-128">ко</span><span class="sxs-lookup"><span data-stu-id="48743-128">all</span></span>            | <span data-ttu-id="48743-129">Boolean</span><span class="sxs-lookup"><span data-stu-id="48743-129">Boolean</span></span> | <span data-ttu-id="48743-130">Флаг, указывающий, следует ли остановить все операции или текущие.</span><span class="sxs-lookup"><span data-stu-id="48743-130">The flag indicating whether to stop all operations or current.</span></span> |
+| <span data-ttu-id="48743-131">Контекст</span><span class="sxs-lookup"><span data-stu-id="48743-131">clientContext</span></span>  | <span data-ttu-id="48743-132">String</span><span class="sxs-lookup"><span data-stu-id="48743-132">String</span></span>  | <span data-ttu-id="48743-133">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="48743-133">The client context.</span></span>                                            |
 
-## <a name="response"></a><span data-ttu-id="f0d80-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0d80-134">Response</span></span>
-<span data-ttu-id="f0d80-135">Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.</span><span class="sxs-lookup"><span data-stu-id="f0d80-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="48743-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="48743-134">Response</span></span>
+<span data-ttu-id="48743-135">Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.</span><span class="sxs-lookup"><span data-stu-id="48743-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0d80-136">Пример</span><span class="sxs-lookup"><span data-stu-id="f0d80-136">Example</span></span>
-<span data-ttu-id="f0d80-137">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="f0d80-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="48743-136">Пример</span><span class="sxs-lookup"><span data-stu-id="48743-136">Example</span></span>
+<span data-ttu-id="48743-137">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="48743-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f0d80-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="f0d80-138">Request</span></span>
-<span data-ttu-id="f0d80-139">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f0d80-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="48743-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="48743-138">Request</span></span>
+<span data-ttu-id="48743-139">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="48743-139">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -70,9 +70,9 @@ Content-Length: 62
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f0d80-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0d80-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="48743-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="48743-140">Response</span></span>
 
-> <span data-ttu-id="f0d80-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f0d80-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="48743-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="48743-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -83,18 +83,20 @@ Content-Length: 62
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f0d80-143">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="f0d80-143">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="f0d80-144">Языках</span><span class="sxs-lookup"><span data-stu-id="f0d80-144">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="48743-143">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="48743-143">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="48743-144">C#</span><span class="sxs-lookup"><span data-stu-id="48743-144">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f0d80-145">Язык</span><span class="sxs-lookup"><span data-stu-id="f0d80-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="48743-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="48743-145">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="48743-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="48743-146">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/call-cancelMediaProcessing-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="f0d80-146">Уведомление о завершении операции</span><span class="sxs-lookup"><span data-stu-id="f0d80-146">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="48743-147">Уведомление о завершении операции</span><span class="sxs-lookup"><span data-stu-id="48743-147">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -134,6 +136,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/call-cancelmediaprocessing.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
