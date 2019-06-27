@@ -4,54 +4,54 @@ description: Используйте этот API, чтобы создать но
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 53177561a7c2ae36919095fab6c456b37ecac67f
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 0d3d0d9d9875c7dab66b7f9220cdf306164658ff
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655805"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260552"
 ---
-# <a name="create-a-directory-setting"></a><span data-ttu-id="a09bd-107">Создание параметра каталога</span><span class="sxs-lookup"><span data-stu-id="a09bd-107">Create a directory setting</span></span>
+# <a name="create-a-directory-setting"></a><span data-ttu-id="cd709-107">Создание параметра каталога</span><span class="sxs-lookup"><span data-stu-id="cd709-107">Create a directory setting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a09bd-108">Используйте этот API, чтобы создать новый параметр на основе шаблонов, доступных в Директорисеттингтемплатес.</span><span class="sxs-lookup"><span data-stu-id="a09bd-108">Use this API to create a new setting, based on the templates available in directorySettingTemplates.</span></span> <span data-ttu-id="a09bd-109">Эти параметры могут быть на уровне клиента или на уровне объекта (в настоящее время только для групп).</span><span class="sxs-lookup"><span data-stu-id="a09bd-109">These settings can be at the tenant-level or at an object level (currently only for groups).</span></span> <span data-ttu-id="a09bd-110">Запрос на создание должен предоставлять Сеттингвалуес для всех параметров, определенных в шаблоне.</span><span class="sxs-lookup"><span data-stu-id="a09bd-110">The creation request must provide settingValues for all the settings defined in the template.</span></span> <span data-ttu-id="a09bd-111">Для параметров, относящихся к группе, можно задать только параметр, определяющий, могут ли участники группы приглашать гостевых пользователей.</span><span class="sxs-lookup"><span data-stu-id="a09bd-111">For group-specific settings, only the setting governing whether members of a group can invite guest users can be set.</span></span> <span data-ttu-id="a09bd-112">Это поведение будет управляться после того, как возможность добавлять гостей в группу является общедоступной.</span><span class="sxs-lookup"><span data-stu-id="a09bd-112">This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
+<span data-ttu-id="cd709-108">Используйте этот API, чтобы создать новый параметр на основе шаблонов, доступных в Директорисеттингтемплатес.</span><span class="sxs-lookup"><span data-stu-id="cd709-108">Use this API to create a new setting, based on the templates available in directorySettingTemplates.</span></span> <span data-ttu-id="cd709-109">Эти параметры могут быть на уровне клиента или на уровне объекта (в настоящее время только для групп).</span><span class="sxs-lookup"><span data-stu-id="cd709-109">These settings can be at the tenant-level or at an object level (currently only for groups).</span></span> <span data-ttu-id="cd709-110">Запрос на создание должен предоставлять Сеттингвалуес для всех параметров, определенных в шаблоне.</span><span class="sxs-lookup"><span data-stu-id="cd709-110">The creation request must provide settingValues for all the settings defined in the template.</span></span> <span data-ttu-id="cd709-111">Для параметров, относящихся к группе, можно задать только параметр, определяющий, могут ли участники группы приглашать гостевых пользователей.</span><span class="sxs-lookup"><span data-stu-id="cd709-111">For group-specific settings, only the setting governing whether members of a group can invite guest users can be set.</span></span> <span data-ttu-id="cd709-112">Это поведение будет управляться после того, как возможность добавлять гостей в группу является общедоступной.</span><span class="sxs-lookup"><span data-stu-id="cd709-112">This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
 
-> <span data-ttu-id="a09bd-113">**Note**: версия/Beta этого API применяется только к группам.</span><span class="sxs-lookup"><span data-stu-id="a09bd-113">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="a09bd-114">Версия/v1.0 этого API была переименована для *создания граупсеттингс*.</span><span class="sxs-lookup"><span data-stu-id="a09bd-114">The /v1.0 version of this API has been renamed to *Create groupSettings*.</span></span>
+> <span data-ttu-id="cd709-113">**Note**: версия/Beta этого API применяется только к группам.</span><span class="sxs-lookup"><span data-stu-id="cd709-113">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="cd709-114">Версия/v1.0 этого API была переименована для *создания граупсеттингс*.</span><span class="sxs-lookup"><span data-stu-id="cd709-114">The /v1.0 version of this API has been renamed to *Create groupSettings*.</span></span>
 
-<span data-ttu-id="a09bd-115">Чтобы получить список шаблонов и свойств, которые они поддерживают в бета-версии, используйте [запрос директорисеттингтемплате](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span><span class="sxs-lookup"><span data-stu-id="a09bd-115">For a list of templates and the properties they support in beta, use a [directorySettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span></span> <span data-ttu-id="a09bd-116">(Для конечных точек v 1.0 вызовите [граупсеттингтемплатес](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span><span class="sxs-lookup"><span data-stu-id="a09bd-116">(For v1.0 endpoints, call [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span></span>
+<span data-ttu-id="cd709-115">Чтобы получить список шаблонов и свойств, которые они поддерживают в бета-версии, используйте [запрос директорисеттингтемплате](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span><span class="sxs-lookup"><span data-stu-id="cd709-115">For a list of templates and the properties they support in beta, use a [directorySettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).</span></span> <span data-ttu-id="cd709-116">(Для конечных точек v 1.0 вызовите [граупсеттингтемплатес](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span><span class="sxs-lookup"><span data-stu-id="cd709-116">(For v1.0 endpoints, call [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="a09bd-117">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a09bd-117">Permissions</span></span>
-<span data-ttu-id="a09bd-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a09bd-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cd709-117">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd709-117">Permissions</span></span>
+<span data-ttu-id="cd709-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd709-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a09bd-120">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a09bd-120">Permission type</span></span>      | <span data-ttu-id="a09bd-121">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a09bd-121">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cd709-120">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd709-120">Permission type</span></span>      | <span data-ttu-id="cd709-121">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd709-121">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a09bd-122">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a09bd-122">Delegated (work or school account)</span></span> | <span data-ttu-id="a09bd-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a09bd-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a09bd-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a09bd-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a09bd-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a09bd-125">Not supported.</span></span>    |
-|<span data-ttu-id="a09bd-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a09bd-126">Application</span></span> | <span data-ttu-id="a09bd-127">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a09bd-127">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="cd709-122">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd709-122">Delegated (work or school account)</span></span> | <span data-ttu-id="cd709-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cd709-123">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="cd709-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd709-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd709-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd709-125">Not supported.</span></span>    |
+|<span data-ttu-id="cd709-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd709-126">Application</span></span> | <span data-ttu-id="cd709-127">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd709-127">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a09bd-128">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a09bd-128">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cd709-128">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd709-128">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /settings
 POST /groups/{id}/settings
 ```
-## <a name="request-headers"></a><span data-ttu-id="a09bd-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a09bd-129">Request headers</span></span>
-| <span data-ttu-id="a09bd-130">Имя</span><span class="sxs-lookup"><span data-stu-id="a09bd-130">Name</span></span>       | <span data-ttu-id="a09bd-131">Описание</span><span class="sxs-lookup"><span data-stu-id="a09bd-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cd709-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd709-129">Request headers</span></span>
+| <span data-ttu-id="cd709-130">Имя</span><span class="sxs-lookup"><span data-stu-id="cd709-130">Name</span></span>       | <span data-ttu-id="cd709-131">Описание</span><span class="sxs-lookup"><span data-stu-id="cd709-131">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a09bd-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a09bd-132">Authorization</span></span>  | <span data-ttu-id="a09bd-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a09bd-p106">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="cd709-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd709-132">Authorization</span></span>  | <span data-ttu-id="cd709-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cd709-p106">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a09bd-135">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a09bd-135">Request body</span></span>
-<span data-ttu-id="a09bd-136">В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a09bd-136">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>  <span data-ttu-id="a09bd-137">Однако отображаемое имя для параметра будет задано на основе имени шаблона параметров, на который указывает ссылка.</span><span class="sxs-lookup"><span data-stu-id="a09bd-137">However, the display name for the setting will be set based on the referenced settings template name.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cd709-135">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cd709-135">Request body</span></span>
+<span data-ttu-id="cd709-136">В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cd709-136">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>  <span data-ttu-id="cd709-137">Однако отображаемое имя для параметра будет задано на основе имени шаблона параметров, на который указывает ссылка.</span><span class="sxs-lookup"><span data-stu-id="cd709-137">However, the display name for the setting will be set based on the referenced settings template name.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a09bd-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="a09bd-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cd709-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd709-138">Response</span></span>
 
-<span data-ttu-id="a09bd-139">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a09bd-139">If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.</span></span>
+<span data-ttu-id="cd709-139">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cd709-139">If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a09bd-140">Пример</span><span class="sxs-lookup"><span data-stu-id="a09bd-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a09bd-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="a09bd-141">Request</span></span>
-<span data-ttu-id="a09bd-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a09bd-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cd709-140">Пример</span><span class="sxs-lookup"><span data-stu-id="cd709-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cd709-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd709-141">Request</span></span>
+<span data-ttu-id="cd709-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cd709-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directorysetting_from_settings"
@@ -71,9 +71,9 @@ Content-length: 222
   ]
 }
 ```
-<span data-ttu-id="a09bd-143">В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a09bd-143">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="a09bd-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="a09bd-144">Response</span></span>
-<span data-ttu-id="a09bd-p108">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a09bd-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cd709-143">В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cd709-143">In the request body, supply a JSON representation of [directorySetting](../resources/directorysetting.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="cd709-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd709-144">Response</span></span>
+<span data-ttu-id="cd709-p108">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cd709-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,13 +97,15 @@ Content-length: 244
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="a09bd-148">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="a09bd-148">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="a09bd-149">C#</span><span class="sxs-lookup"><span data-stu-id="a09bd-149">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="cd709-148">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="cd709-148">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="cd709-149">C#</span><span class="sxs-lookup"><span data-stu-id="cd709-149">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a09bd-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="a09bd-150">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cd709-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="cd709-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="cd709-151">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cd709-151">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -118,6 +120,7 @@ Content-length: 244
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
