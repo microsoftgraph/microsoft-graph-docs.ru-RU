@@ -4,55 +4,55 @@ description: Описан метод удаления ресурса (объек
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d275f6e99e9ff22d156d4d6725872cf160716513
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e45165e41c06718be909f429265fd33fd3d4f870
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602226"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35274601"
 ---
-# <a name="delete-a-user"></a><span data-ttu-id="b9ee4-103">Удалить пользователя</span><span class="sxs-lookup"><span data-stu-id="b9ee4-103">Delete a user</span></span>
+# <a name="delete-a-user"></a><span data-ttu-id="69a2e-103">Удалить пользователя</span><span class="sxs-lookup"><span data-stu-id="69a2e-103">Delete a user</span></span>
 
-<span data-ttu-id="b9ee4-104">Удаление пользователя.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-104">Delete user.</span></span>  
+<span data-ttu-id="69a2e-104">Удаление пользователя.</span><span class="sxs-lookup"><span data-stu-id="69a2e-104">Delete user.</span></span>  
 
-<span data-ttu-id="b9ee4-105">При удалении ресурсы user перемещаются во временный контейнер, и их можно восстановить в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-105">When deleted, user resources are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="b9ee4-106">По истечении этого периода они удаляются без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-106">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="b9ee4-107">Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="b9ee4-107">To learn more, see [deletedItems](../resources/directory.md).</span></span>
+<span data-ttu-id="69a2e-105">При удалении ресурсы user перемещаются во временный контейнер, и их можно восстановить в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="69a2e-105">When deleted, user resources are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="69a2e-106">По истечении этого периода они удаляются без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="69a2e-106">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="69a2e-107">Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="69a2e-107">To learn more, see [deletedItems](../resources/directory.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b9ee4-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b9ee4-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="69a2e-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="69a2e-108">Permissions</span></span>
 
-<span data-ttu-id="b9ee4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9ee4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="69a2e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69a2e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b9ee4-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b9ee4-111">Permission type</span></span>      | <span data-ttu-id="b9ee4-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b9ee4-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="69a2e-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="69a2e-111">Permission type</span></span>      | <span data-ttu-id="69a2e-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="69a2e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b9ee4-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b9ee4-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b9ee4-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b9ee4-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b9ee4-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b9ee4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9ee4-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-116">Not supported.</span></span>    |
-|<span data-ttu-id="b9ee4-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b9ee4-117">Application</span></span> | <span data-ttu-id="b9ee4-118">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9ee4-118">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="69a2e-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="69a2e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="69a2e-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="69a2e-114">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="69a2e-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="69a2e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69a2e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="69a2e-116">Not supported.</span></span>    |
+|<span data-ttu-id="69a2e-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="69a2e-117">Application</span></span> | <span data-ttu-id="69a2e-118">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69a2e-118">User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b9ee4-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b9ee4-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69a2e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="69a2e-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b9ee4-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b9ee4-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="69a2e-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="69a2e-120">Request headers</span></span>
 
-| <span data-ttu-id="b9ee4-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b9ee4-121">Header</span></span>       | <span data-ttu-id="b9ee4-122">Значение</span><span class="sxs-lookup"><span data-stu-id="b9ee4-122">Value</span></span>|
+| <span data-ttu-id="69a2e-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="69a2e-121">Header</span></span>       | <span data-ttu-id="69a2e-122">Значение</span><span class="sxs-lookup"><span data-stu-id="69a2e-122">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="b9ee4-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b9ee4-123">Authorization</span></span>  | <span data-ttu-id="b9ee4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="69a2e-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="69a2e-123">Authorization</span></span>  | <span data-ttu-id="69a2e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="69a2e-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="b9ee4-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b9ee4-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="69a2e-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="69a2e-126">Request body</span></span>
 
-<span data-ttu-id="b9ee4-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="69a2e-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="69a2e-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9ee4-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9ee4-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69a2e-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="69a2e-128">Response</span></span>
 
-<span data-ttu-id="b9ee4-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="69a2e-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="69a2e-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b9ee4-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b9ee4-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="69a2e-131">Пример</span><span class="sxs-lookup"><span data-stu-id="69a2e-131">Example</span></span>
 
-## <a name="request"></a><span data-ttu-id="b9ee4-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b9ee4-132">Request</span></span>
+## <a name="request"></a><span data-ttu-id="69a2e-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="69a2e-132">Request</span></span>
 
-<span data-ttu-id="b9ee4-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-133">Here is an example of the request.</span></span>
+<span data-ttu-id="69a2e-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="69a2e-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -60,9 +60,9 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-### <a name="response"></a><span data-ttu-id="b9ee4-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="b9ee4-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="69a2e-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="69a2e-134">Response</span></span>
 
-<span data-ttu-id="b9ee4-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b9ee4-135">Here is an example of the response.</span></span> 
+<span data-ttu-id="69a2e-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="69a2e-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -70,13 +70,15 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b9ee4-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="b9ee4-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b9ee4-137">C#</span><span class="sxs-lookup"><span data-stu-id="b9ee4-137">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="69a2e-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="69a2e-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="69a2e-137">C#</span><span class="sxs-lookup"><span data-stu-id="69a2e-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_user-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b9ee4-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9ee4-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="69a2e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69a2e-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_user-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="69a2e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69a2e-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -90,6 +92,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/user-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/user-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

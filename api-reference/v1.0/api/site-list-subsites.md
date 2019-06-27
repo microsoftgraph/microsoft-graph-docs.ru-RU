@@ -3,43 +3,41 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание списка дочерних сайтов для сайта SharePoint
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 4abf8eab77ff33b896aab9d0e650373da791a0ac
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 59cede94bbdf5c26f3082fd96c93580fbcd03b3c
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33603066"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279242"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="95207-102">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="95207-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="b2119-102">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="b2119-102">Enumerate subsites</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-<span data-ttu-id="95207-103">Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="95207-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="b2119-103">Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="b2119-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [сайта]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="95207-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="95207-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b2119-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b2119-105">Permissions</span></span>
 
-<span data-ttu-id="95207-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95207-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b2119-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b2119-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="95207-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="95207-108">Permission type</span></span>      | <span data-ttu-id="95207-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="95207-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b2119-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b2119-108">Permission type</span></span>      | <span data-ttu-id="b2119-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b2119-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95207-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="95207-110">Delegated (work or school account)</span></span> | <span data-ttu-id="95207-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95207-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="95207-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="95207-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95207-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="95207-113">Not supported.</span></span>    |
-|<span data-ttu-id="95207-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="95207-114">Application</span></span> | <span data-ttu-id="95207-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95207-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b2119-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b2119-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b2119-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2119-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b2119-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b2119-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2119-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b2119-113">Not supported.</span></span>    |
+|<span data-ttu-id="b2119-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b2119-114">Application</span></span> | <span data-ttu-id="b2119-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2119-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="95207-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="95207-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b2119-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b2119-116">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/sites
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="95207-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="95207-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b2119-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="b2119-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -68,27 +66,28 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="95207-118">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="95207-118">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="95207-119">C#</span><span class="sxs-lookup"><span data-stu-id="95207-119">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b2119-118">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="b2119-118">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b2119-119">C#</span><span class="sxs-lookup"><span data-stu-id="b2119-119">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="95207-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95207-120">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b2119-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b2119-120">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="b2119-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b2119-121">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/list-subsites-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/List subsites",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}
--->
+} -->
