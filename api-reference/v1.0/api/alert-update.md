@@ -4,12 +4,12 @@ description: Обновление редактируемого свойства 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d448a7d23f7370650f7ab621fb0f467a3726bce1
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551512"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35264836"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -39,22 +39,22 @@ PATCH /security/alerts/{alert_id}
 
 | Имя          | Описание              |
 |:--------------|:-------------------------|
-| Авторизация | Bearer {Code}. Обязательный параметр. |
+| Авторизация | Bearer {код}. Обязательно. |
 | Prefer        | Возврат = представление    |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить. Текст **должен** содержать `vendorInformation` свойство Valid `provider` и `vendor` Fields. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в текст запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство          | Тип                                                                   | Описание |
 |:------------------|:-----------------------------------------------------------------------|:--|
 | assignedTo        | String                                                                 | Имя аналитика, которому назначено оповещение для рассмотрения, исследования или исправления. |
-| Клоседдатетиме    | DateTimeOffset                                                         | Время закрытия оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
-| comments          | Коллекция строк                                                      | Комментарии аналитика в оповещении (для управления оповещениями клиентов). |
-| замечания          | alertFeedback                                                          | Обратная связь аналитика с оповещением. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
+| closedDateTime    | DateTimeOffset                                                         | Время закрытия оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. |
+| comments          | Коллекция String                                                      | Комментарии аналитика в оповещении (для управления оповещениями клиентов). |
+| feedback          | alertFeedback                                                          | Отзыв аналитика об оповещении. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
 | status            | alertStatus                                                            | Состояние жизненного цикла оповещений (Stage). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`. |
 | tags              | Коллекция String                                                      | Определяемые пользователями метки, которые могут быть применены к оповещению и могут использоваться в качестве условий фильтрации (например, "Хва", "показано"). |
-| Вендоринформатион | [Секуритивендоринформатион](../resources/securityvendorinformation.md) | Сложный тип, содержащий сведения о продукте, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подПредоставление = AppLocker). **Требуются поля поставщика и поставщика.** |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker). **Требуются поля поставщика и поставщика.** |
 
 ## <a name="response"></a>Отклик
 
@@ -111,6 +111,18 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_alert-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>Пример 2: запрос с заголовком предпочтения
 
@@ -146,7 +158,7 @@ Prefer: return=representation
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика при использовании заголовка необязательного `Prefer: return=representation` запроса.
 
@@ -179,5 +191,12 @@ Content-type: application/json
   "description": "Update alert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
