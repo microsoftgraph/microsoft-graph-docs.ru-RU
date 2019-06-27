@@ -4,36 +4,36 @@ description: Параметр запроса select недоступен для 
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5263613e352439997f7198e971687296981bbc0b
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 7392dec92b25e9d4f651503f393b9d7d7d8a9ffe
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656078"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260776"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="c19f9-103">Получение объектов каталога из списка идентификаторов</span><span class="sxs-lookup"><span data-stu-id="c19f9-103">Get directory objects from a list of ids</span></span>
+# <a name="get-directory-objects-from-a-list-of-ids"></a><span data-ttu-id="94b29-103">Получение объектов каталога из списка идентификаторов</span><span class="sxs-lookup"><span data-stu-id="94b29-103">Get directory objects from a list of ids</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c19f9-p101">Возвращает объекты каталогов, указанные в списке идентификаторов.  ПРИМЕЧАНИЕ. Возвращаемые объекты каталогов представляют собой полные объекты, содержащие **все** свойства. Параметр запроса `$select` недоступен для этой операции.</span><span class="sxs-lookup"><span data-stu-id="c19f9-p101">Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.</span></span>
+<span data-ttu-id="94b29-p101">Возвращает объекты каталогов, указанные в списке идентификаторов.  ПРИМЕЧАНИЕ. Возвращаемые объекты каталогов представляют собой полные объекты, содержащие **все** свойства. Параметр запроса `$select` недоступен для этой операции.</span><span class="sxs-lookup"><span data-stu-id="94b29-p101">Returns the directory objects specified in a list of ids.  NOTE: The directory objects returned are the full objects containing **all** their properties. The `$select` query option is not available for this operation.</span></span>
 
-<span data-ttu-id="c19f9-107">Ниже перечислены некоторые распространенные случаи использования этой функции.</span><span class="sxs-lookup"><span data-stu-id="c19f9-107">Some common uses for this function are to:</span></span>
+<span data-ttu-id="94b29-107">Ниже перечислены некоторые распространенные случаи использования этой функции.</span><span class="sxs-lookup"><span data-stu-id="94b29-107">Some common uses for this function are to:</span></span>
 
-* <span data-ttu-id="c19f9-108">Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) или [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta), в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="c19f9-108">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) or [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta)  to their backing directory objects.</span></span>
-* <span data-ttu-id="c19f9-109">Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="c19f9-109">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
+* <span data-ttu-id="94b29-108">Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) или [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta), в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="94b29-108">Resolve ids returned by functions (that return collections of ids) such as [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) or [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta)  to their backing directory objects.</span></span>
+* <span data-ttu-id="94b29-109">Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.</span><span class="sxs-lookup"><span data-stu-id="94b29-109">Resolve ids persisted in an external store by the application to their backing directory objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c19f9-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c19f9-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="94b29-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="94b29-110">Permissions</span></span>
 
-<span data-ttu-id="c19f9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c19f9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="94b29-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94b29-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="c19f9-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c19f9-113">Permission type</span></span>      | <span data-ttu-id="c19f9-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c19f9-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="94b29-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="94b29-113">Permission type</span></span>      | <span data-ttu-id="94b29-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="94b29-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c19f9-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c19f9-115">Delegated (work or school account)</span></span> | <span data-ttu-id="c19f9-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="c19f9-116">Directory.Read.All</span></span>    |
-|<span data-ttu-id="c19f9-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c19f9-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c19f9-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c19f9-118">Not supported.</span></span>    |
-|<span data-ttu-id="c19f9-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c19f9-119">Application</span></span> | <span data-ttu-id="c19f9-120">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="c19f9-120">Directory.Read.All</span></span> |
+|<span data-ttu-id="94b29-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="94b29-115">Delegated (work or school account)</span></span> | <span data-ttu-id="94b29-116">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="94b29-116">Directory.Read.All</span></span>    |
+|<span data-ttu-id="94b29-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="94b29-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94b29-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="94b29-118">Not supported.</span></span>    |
+|<span data-ttu-id="94b29-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="94b29-119">Application</span></span> | <span data-ttu-id="94b29-120">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="94b29-120">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c19f9-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c19f9-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="94b29-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="94b29-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,29 +41,29 @@ ms.locfileid: "34656078"
 POST /directoryObjects/getByIds
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c19f9-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c19f9-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="94b29-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="94b29-122">Request headers</span></span>
 
-| <span data-ttu-id="c19f9-123">Имя</span><span class="sxs-lookup"><span data-stu-id="c19f9-123">Name</span></span>       | <span data-ttu-id="c19f9-124">Тип</span><span class="sxs-lookup"><span data-stu-id="c19f9-124">Type</span></span> | <span data-ttu-id="c19f9-125">Описание</span><span class="sxs-lookup"><span data-stu-id="c19f9-125">Description</span></span>|
+| <span data-ttu-id="94b29-123">Имя</span><span class="sxs-lookup"><span data-stu-id="94b29-123">Name</span></span>       | <span data-ttu-id="94b29-124">Тип</span><span class="sxs-lookup"><span data-stu-id="94b29-124">Type</span></span> | <span data-ttu-id="94b29-125">Описание</span><span class="sxs-lookup"><span data-stu-id="94b29-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c19f9-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="c19f9-126">Authorization</span></span>  | <span data-ttu-id="c19f9-127">string</span><span class="sxs-lookup"><span data-stu-id="c19f9-127">string</span></span>  | <span data-ttu-id="c19f9-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c19f9-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c19f9-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c19f9-130">Content-Type</span></span>  | <span data-ttu-id="c19f9-131">application/json</span><span class="sxs-lookup"><span data-stu-id="c19f9-131">application/json</span></span>  |
+| <span data-ttu-id="94b29-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="94b29-126">Authorization</span></span>  | <span data-ttu-id="94b29-127">string</span><span class="sxs-lookup"><span data-stu-id="94b29-127">string</span></span>  | <span data-ttu-id="94b29-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="94b29-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="94b29-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="94b29-130">Content-Type</span></span>  | <span data-ttu-id="94b29-131">application/json</span><span class="sxs-lookup"><span data-stu-id="94b29-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c19f9-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c19f9-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="94b29-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="94b29-132">Request body</span></span>
 
-<span data-ttu-id="c19f9-133">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c19f9-133">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="94b29-133">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="94b29-133">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c19f9-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="c19f9-134">Parameter</span></span>   | <span data-ttu-id="c19f9-135">Тип</span><span class="sxs-lookup"><span data-stu-id="c19f9-135">Type</span></span> |<span data-ttu-id="c19f9-136">Описание</span><span class="sxs-lookup"><span data-stu-id="c19f9-136">Description</span></span>|
+| <span data-ttu-id="94b29-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="94b29-134">Parameter</span></span>   | <span data-ttu-id="94b29-135">Тип</span><span class="sxs-lookup"><span data-stu-id="94b29-135">Type</span></span> |<span data-ttu-id="94b29-136">Описание</span><span class="sxs-lookup"><span data-stu-id="94b29-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c19f9-137">ids</span><span class="sxs-lookup"><span data-stu-id="c19f9-137">ids</span></span>|<span data-ttu-id="c19f9-138">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="c19f9-138">String collection</span></span>| <span data-ttu-id="c19f9-p104">Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов.</span><span class="sxs-lookup"><span data-stu-id="c19f9-p104">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> |
-|<span data-ttu-id="c19f9-141">types</span><span class="sxs-lookup"><span data-stu-id="c19f9-141">types</span></span>|<span data-ttu-id="c19f9-142">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="c19f9-142">String collection</span></span>| <span data-ttu-id="c19f9-143">Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск.</span><span class="sxs-lookup"><span data-stu-id="c19f9-143">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="c19f9-144">Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге.</span><span class="sxs-lookup"><span data-stu-id="c19f9-144">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="c19f9-145">В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c19f9-145">Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta), and so on.</span></span> <span data-ttu-id="c19f9-146">Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c19f9-146">To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span></span> <span data-ttu-id="c19f9-147">Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider).</span><span class="sxs-lookup"><span data-stu-id="c19f9-147">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization.</span></span> <span data-ttu-id="c19f9-148">В значениях не учитывается регистр символов.</span><span class="sxs-lookup"><span data-stu-id="c19f9-148">The values are not case-sensitive.</span></span>|
+|<span data-ttu-id="94b29-137">ids</span><span class="sxs-lookup"><span data-stu-id="94b29-137">ids</span></span>|<span data-ttu-id="94b29-138">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="94b29-138">String collection</span></span>| <span data-ttu-id="94b29-p104">Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов.</span><span class="sxs-lookup"><span data-stu-id="94b29-p104">A collection of ids for which to return objects. You can specify up to 1000 ids.</span></span> |
+|<span data-ttu-id="94b29-141">types</span><span class="sxs-lookup"><span data-stu-id="94b29-141">types</span></span>|<span data-ttu-id="94b29-142">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="94b29-142">String collection</span></span>| <span data-ttu-id="94b29-143">Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск.</span><span class="sxs-lookup"><span data-stu-id="94b29-143">A collection of resource types that specifies the set of resource collections to search.</span></span> <span data-ttu-id="94b29-144">Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге.</span><span class="sxs-lookup"><span data-stu-id="94b29-144">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory.</span></span> <span data-ttu-id="94b29-145">В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="94b29-145">Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta), and so on.</span></span> <span data-ttu-id="94b29-146">Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="94b29-146">To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).</span></span> <span data-ttu-id="94b29-147">Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider).</span><span class="sxs-lookup"><span data-stu-id="94b29-147">If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization.</span></span> <span data-ttu-id="94b29-148">В значениях не учитывается регистр символов.</span><span class="sxs-lookup"><span data-stu-id="94b29-148">The values are not case-sensitive.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c19f9-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="c19f9-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="94b29-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="94b29-149">Response</span></span>
 
-<span data-ttu-id="c19f9-150">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c19f9-150">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="94b29-150">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="94b29-150">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c19f9-151">Пример</span><span class="sxs-lookup"><span data-stu-id="c19f9-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="94b29-151">Пример</span><span class="sxs-lookup"><span data-stu-id="94b29-151">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c19f9-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="c19f9-152">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="94b29-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="94b29-152">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -80,9 +80,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c19f9-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="c19f9-153">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="94b29-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="94b29-153">Response</span></span>
 
-<span data-ttu-id="c19f9-p106">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c19f9-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="94b29-p106">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="94b29-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -113,13 +113,15 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="c19f9-156">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="c19f9-156">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="c19f9-157">C#</span><span class="sxs-lookup"><span data-stu-id="c19f9-157">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="94b29-156">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="94b29-156">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="94b29-157">C#</span><span class="sxs-lookup"><span data-stu-id="94b29-157">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/directoryobject_getByIds-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c19f9-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="c19f9-158">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="94b29-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="94b29-158">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_getByIds-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="94b29-159">Цель — C</span><span class="sxs-lookup"><span data-stu-id="94b29-159">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/directoryobject_getByIds-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -134,6 +136,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-getbyids.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directoryobject-getbyids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directoryobject-getbyids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

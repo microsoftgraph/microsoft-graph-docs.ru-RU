@@ -4,47 +4,47 @@ description: Окончательное удаление элемента из �
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1dfa3e53fb6d0e6c20e52cd07a49d4f6f4105c8d
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: cb2738de749cf5b35188792c440d7189d788dc3a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656211"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35260902"
 ---
-# <a name="permanently-delete-item"></a><span data-ttu-id="fda6b-103">Удаление элемента без возможности восстановления</span><span class="sxs-lookup"><span data-stu-id="fda6b-103">Permanently delete item</span></span>
+# <a name="permanently-delete-item"></a><span data-ttu-id="1260f-103">Удаление элемента без возможности восстановления</span><span class="sxs-lookup"><span data-stu-id="1260f-103">Permanently delete item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fda6b-104">Окончательное удаление элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="fda6b-104">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="1260f-104">Окончательное удаление элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="1260f-104">Permanently deletes an item from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="fda6b-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="fda6b-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="fda6b-106">Вы можете окончательно удалить элемент из папки "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="fda6b-106">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="fda6b-107">После окончательного удаления элемент **невозможно** восстановить.</span><span class="sxs-lookup"><span data-stu-id="fda6b-107">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
+<span data-ttu-id="1260f-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="1260f-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="1260f-106">Вы можете окончательно удалить элемент из папки "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="1260f-106">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="1260f-107">После окончательного удаления элемент **невозможно** восстановить.</span><span class="sxs-lookup"><span data-stu-id="1260f-107">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fda6b-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fda6b-108">Permissions</span></span>
-<span data-ttu-id="fda6b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fda6b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1260f-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1260f-108">Permissions</span></span>
+<span data-ttu-id="1260f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1260f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="fda6b-111">Для пользователей: User. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="fda6b-111">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="fda6b-112">Для групп: Group. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="fda6b-112">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="1260f-111">Для пользователей: User. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="1260f-111">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="1260f-112">Для групп: Group. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="1260f-112">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="fda6b-113">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fda6b-113">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1260f-113">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1260f-113">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deleteditems/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="fda6b-114">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fda6b-114">Request headers</span></span>
-| <span data-ttu-id="fda6b-115">Имя</span><span class="sxs-lookup"><span data-stu-id="fda6b-115">Name</span></span>       | <span data-ttu-id="fda6b-116">Описание</span><span class="sxs-lookup"><span data-stu-id="fda6b-116">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1260f-114">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1260f-114">Request headers</span></span>
+| <span data-ttu-id="1260f-115">Имя</span><span class="sxs-lookup"><span data-stu-id="1260f-115">Name</span></span>       | <span data-ttu-id="1260f-116">Описание</span><span class="sxs-lookup"><span data-stu-id="1260f-116">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fda6b-117">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fda6b-117">Authorization</span></span>  | <span data-ttu-id="fda6b-118">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="fda6b-118">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="fda6b-119">Accept</span><span class="sxs-lookup"><span data-stu-id="fda6b-119">Accept</span></span>  | <span data-ttu-id="fda6b-120">application/json</span><span class="sxs-lookup"><span data-stu-id="fda6b-120">application/json</span></span> |
+| <span data-ttu-id="1260f-117">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1260f-117">Authorization</span></span>  | <span data-ttu-id="1260f-118">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="1260f-118">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="1260f-119">Accept</span><span class="sxs-lookup"><span data-stu-id="1260f-119">Accept</span></span>  | <span data-ttu-id="1260f-120">application/json</span><span class="sxs-lookup"><span data-stu-id="1260f-120">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fda6b-121">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fda6b-121">Request body</span></span>
-<span data-ttu-id="fda6b-122">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fda6b-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1260f-121">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1260f-121">Request body</span></span>
+<span data-ttu-id="1260f-122">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1260f-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fda6b-123">Ответ</span><span class="sxs-lookup"><span data-stu-id="fda6b-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1260f-123">Ответ</span><span class="sxs-lookup"><span data-stu-id="1260f-123">Response</span></span>
 
-<span data-ttu-id="fda6b-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fda6b-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="1260f-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="1260f-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fda6b-126">Пример</span><span class="sxs-lookup"><span data-stu-id="fda6b-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fda6b-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="fda6b-127">Request</span></span>
+## <a name="example"></a><span data-ttu-id="1260f-126">Пример</span><span class="sxs-lookup"><span data-stu-id="1260f-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1260f-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="1260f-127">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -53,8 +53,8 @@ DELETE /directory/deleteditems/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
-##### <a name="response"></a><span data-ttu-id="fda6b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="fda6b-128">Response</span></span>
-<span data-ttu-id="fda6b-p104">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fda6b-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1260f-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="1260f-128">Response</span></span>
+<span data-ttu-id="1260f-p104">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1260f-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -62,13 +62,15 @@ DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="fda6b-131">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="fda6b-131">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="fda6b-132">C#</span><span class="sxs-lookup"><span data-stu-id="fda6b-132">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="1260f-131">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="1260f-131">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="1260f-132">C#</span><span class="sxs-lookup"><span data-stu-id="1260f-132">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_directory-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fda6b-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="fda6b-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1260f-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="1260f-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_directory-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1260f-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="1260f-134">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_directory-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -83,6 +85,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directory-deleteditems-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directory-deleteditems-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directory-deleteditems-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

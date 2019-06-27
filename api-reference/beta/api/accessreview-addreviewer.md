@@ -4,58 +4,58 @@ description: 'В функции рецензирования Access в Azure AD 
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b0839fe486679b4388b0bbdd714bb775b8090b27
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: eb67a44050c5c990f34704acc64c39f698ce6d5a
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655574"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35258998"
 ---
-# <a name="add-accessreview-reviewer"></a><span data-ttu-id="e5829-105">Добавление рецензента Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="e5829-105">Add accessReview reviewer</span></span>
+# <a name="add-accessreview-reviewer"></a><span data-ttu-id="ce248-105">Добавление рецензента Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="ce248-105">Add accessReview reviewer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5829-106">В функции рецензирования [Access](../resources/accessreviews-root.md) в Azure AD обновите существующий объект [акцессревиев](../resources/accessreview.md) , чтобы добавить другого пользователя в качестве проверяющего.</span><span class="sxs-lookup"><span data-stu-id="e5829-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to add another user as a reviewer.</span></span>  <span data-ttu-id="e5829-107">Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты.</span><span class="sxs-lookup"><span data-stu-id="e5829-107">This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.</span></span> <span data-ttu-id="e5829-108">Эта операция не разрешена для проверки доступа, при которой пользователи просматривают собственный доступ, и не предназначены для проверки доступа, в которой владельцы группы назначаются в качестве проверяющих.</span><span class="sxs-lookup"><span data-stu-id="e5829-108">This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.</span></span> 
+<span data-ttu-id="ce248-106">В функции рецензирования [Access](../resources/accessreviews-root.md) в Azure AD обновите существующий объект [акцессревиев](../resources/accessreview.md) , чтобы добавить другого пользователя в качестве проверяющего.</span><span class="sxs-lookup"><span data-stu-id="ce248-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to add another user as a reviewer.</span></span>  <span data-ttu-id="ce248-107">Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты.</span><span class="sxs-lookup"><span data-stu-id="ce248-107">This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.</span></span> <span data-ttu-id="ce248-108">Эта операция не разрешена для проверки доступа, при которой пользователи просматривают собственный доступ, и не предназначены для проверки доступа, в которой владельцы группы назначаются в качестве проверяющих.</span><span class="sxs-lookup"><span data-stu-id="ce248-108">This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="e5829-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e5829-109">Permissions</span></span>
-<span data-ttu-id="e5829-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e5829-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ce248-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ce248-109">Permissions</span></span>
+<span data-ttu-id="ce248-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce248-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5829-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5829-112">Permission type</span></span>                        | <span data-ttu-id="e5829-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5829-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ce248-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce248-112">Permission type</span></span>                        | <span data-ttu-id="ce248-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ce248-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e5829-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5829-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="e5829-115">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5829-115">AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="e5829-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5829-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5829-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5829-117">Not supported.</span></span> |
-|<span data-ttu-id="e5829-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e5829-118">Application</span></span>                            | <span data-ttu-id="e5829-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5829-119">Not supported.</span></span> |
+|<span data-ttu-id="ce248-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce248-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="ce248-115">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce248-115">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="ce248-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce248-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce248-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce248-117">Not supported.</span></span> |
+|<span data-ttu-id="ce248-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ce248-118">Application</span></span>                            | <span data-ttu-id="ce248-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce248-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e5829-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5829-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce248-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce248-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews('{reviewId}')/reviewers
 ```
-## <a name="request-headers"></a><span data-ttu-id="e5829-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e5829-121">Request headers</span></span>
-| <span data-ttu-id="e5829-122">Имя</span><span class="sxs-lookup"><span data-stu-id="e5829-122">Name</span></span>         | <span data-ttu-id="e5829-123">Тип</span><span class="sxs-lookup"><span data-stu-id="e5829-123">Type</span></span>        | <span data-ttu-id="e5829-124">Описание</span><span class="sxs-lookup"><span data-stu-id="e5829-124">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ce248-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ce248-121">Request headers</span></span>
+| <span data-ttu-id="ce248-122">Имя</span><span class="sxs-lookup"><span data-stu-id="ce248-122">Name</span></span>         | <span data-ttu-id="ce248-123">Тип</span><span class="sxs-lookup"><span data-stu-id="ce248-123">Type</span></span>        | <span data-ttu-id="ce248-124">Описание</span><span class="sxs-lookup"><span data-stu-id="ce248-124">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="e5829-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5829-125">Authorization</span></span> | <span data-ttu-id="e5829-126">string</span><span class="sxs-lookup"><span data-stu-id="e5829-126">string</span></span> | <span data-ttu-id="e5829-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e5829-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="ce248-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce248-125">Authorization</span></span> | <span data-ttu-id="ce248-126">string</span><span class="sxs-lookup"><span data-stu-id="ce248-126">string</span></span> | <span data-ttu-id="ce248-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce248-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e5829-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e5829-129">Request body</span></span>
-<span data-ttu-id="e5829-130">В тексте запроса добавьте представление идентификатора пользователя, который будет рецензентом, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e5829-130">In the request body, supply a JSON representation of the ID of a user who will be a reviewer.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ce248-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ce248-129">Request body</span></span>
+<span data-ttu-id="ce248-130">В тексте запроса добавьте представление идентификатора пользователя, который будет рецензентом, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ce248-130">In the request body, supply a JSON representation of the ID of a user who will be a reviewer.</span></span>
 
-<span data-ttu-id="e5829-131">В следующей таблице приведены свойства, которые можно указать при обновлении Акцессревиев.</span><span class="sxs-lookup"><span data-stu-id="e5829-131">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
+<span data-ttu-id="ce248-131">В следующей таблице приведены свойства, которые можно указать при обновлении Акцессревиев.</span><span class="sxs-lookup"><span data-stu-id="ce248-131">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
 
-| <span data-ttu-id="e5829-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="e5829-132">Property</span></span>     | <span data-ttu-id="e5829-133">Тип</span><span class="sxs-lookup"><span data-stu-id="e5829-133">Type</span></span>        | <span data-ttu-id="e5829-134">Описание</span><span class="sxs-lookup"><span data-stu-id="e5829-134">Description</span></span> |
+| <span data-ttu-id="ce248-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="ce248-132">Property</span></span>     | <span data-ttu-id="ce248-133">Тип</span><span class="sxs-lookup"><span data-stu-id="ce248-133">Type</span></span>        | <span data-ttu-id="ce248-134">Описание</span><span class="sxs-lookup"><span data-stu-id="ce248-134">Description</span></span> |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | <span data-ttu-id="e5829-135">Идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="e5829-135">The user ID.</span></span>|
+| `id`        | `String`   | <span data-ttu-id="ce248-135">Идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="ce248-135">The user ID.</span></span>|
 
 
-## <a name="response"></a><span data-ttu-id="e5829-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5829-136">Response</span></span>
-<span data-ttu-id="e5829-137">В случае успешного выполнения этот метод возвращает `201, Created` код отклика.</span><span class="sxs-lookup"><span data-stu-id="e5829-137">If successful, this method returns a `201, Created` response code .</span></span>
+## <a name="response"></a><span data-ttu-id="ce248-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce248-136">Response</span></span>
+<span data-ttu-id="ce248-137">В случае успешного выполнения этот метод возвращает `201, Created` код отклика.</span><span class="sxs-lookup"><span data-stu-id="ce248-137">If successful, this method returns a `201, Created` response code .</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5829-138">Пример</span><span class="sxs-lookup"><span data-stu-id="e5829-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ce248-138">Пример</span><span class="sxs-lookup"><span data-stu-id="ce248-138">Example</span></span>
 
-<span data-ttu-id="e5829-139">В этом примере показано, как обновить доступ к одноразовой (неповторной) проверке доступа с помощью дополнительного проверяющего.</span><span class="sxs-lookup"><span data-stu-id="e5829-139">This is an example of updating a one-time (not reoccurring) access review with an additional reviewer.</span></span>
+<span data-ttu-id="ce248-139">В этом примере показано, как обновить доступ к одноразовой (неповторной) проверке доступа с помощью дополнительного проверяющего.</span><span class="sxs-lookup"><span data-stu-id="ce248-139">This is an example of updating a one-time (not reoccurring) access review with an additional reviewer.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e5829-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5829-140">Request</span></span>
-<span data-ttu-id="e5829-141">В тексте запроса добавьте представление идентификатора объекта пользователя в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e5829-141">In the request body, supply a JSON representation of the id of the user object.</span></span>
+##### <a name="request"></a><span data-ttu-id="ce248-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce248-140">Request</span></span>
+<span data-ttu-id="ce248-141">В тексте запроса добавьте представление идентификатора объекта пользователя в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ce248-141">In the request body, supply a JSON representation of the id of the user object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -70,8 +70,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e5829-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="e5829-142">Response</span></span>
-><span data-ttu-id="e5829-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e5829-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ce248-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce248-142">Response</span></span>
+><span data-ttu-id="ce248-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce248-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -79,13 +79,15 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e5829-145">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="e5829-145">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e5829-146">C#</span><span class="sxs-lookup"><span data-stu-id="e5829-146">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ce248-145">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="ce248-145">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ce248-146">C#</span><span class="sxs-lookup"><span data-stu-id="ce248-146">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e5829-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="e5829-147">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ce248-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="ce248-147">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="ce248-148">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ce248-148">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -98,6 +100,7 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

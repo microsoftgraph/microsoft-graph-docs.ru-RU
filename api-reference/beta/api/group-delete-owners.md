@@ -4,57 +4,60 @@ description: С помощью этого API можно удалить влад
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e6af69d5db15d7f25735e04dfeee1eaa5f03d780
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc0f9d7aea0d718cf4c467fa789ec42aa6f2ee7b
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593293"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263314"
 ---
-# <a name="remove-owner"></a><span data-ttu-id="01bc2-103">Удаление владельца</span><span class="sxs-lookup"><span data-stu-id="01bc2-103">Remove owner</span></span>
-<span data-ttu-id="01bc2-104">С помощью этого API можно удалить владельца из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации owners.</span><span class="sxs-lookup"><span data-stu-id="01bc2-104">Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property.</span></span>
+# <a name="remove-owner"></a><span data-ttu-id="fe03a-103">Удаление владельца</span><span class="sxs-lookup"><span data-stu-id="fe03a-103">Remove owner</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="01bc2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="01bc2-105">Permissions</span></span>
-<span data-ttu-id="01bc2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01bc2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="01bc2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="01bc2-108">Permission type</span></span>      | <span data-ttu-id="01bc2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="01bc2-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="fe03a-104">С помощью этого API можно удалить владельца из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации owners.</span><span class="sxs-lookup"><span data-stu-id="fe03a-104">Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="fe03a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fe03a-105">Permissions</span></span>
+<span data-ttu-id="fe03a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe03a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="fe03a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fe03a-108">Permission type</span></span>      | <span data-ttu-id="fe03a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fe03a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="01bc2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="01bc2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="01bc2-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="01bc2-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="01bc2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="01bc2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01bc2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="01bc2-113">Not supported.</span></span>    |
-|<span data-ttu-id="01bc2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="01bc2-114">Application</span></span> | <span data-ttu-id="01bc2-115">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="01bc2-115">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="fe03a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fe03a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fe03a-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fe03a-111">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fe03a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fe03a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe03a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe03a-113">Not supported.</span></span>    |
+|<span data-ttu-id="fe03a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fe03a-114">Application</span></span> | <span data-ttu-id="fe03a-115">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe03a-115">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="01bc2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="01bc2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fe03a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fe03a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/owners/{id}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="01bc2-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="01bc2-117">Request headers</span></span>
-| <span data-ttu-id="01bc2-118">Имя</span><span class="sxs-lookup"><span data-stu-id="01bc2-118">Name</span></span>       | <span data-ttu-id="01bc2-119">Тип</span><span class="sxs-lookup"><span data-stu-id="01bc2-119">Type</span></span> | <span data-ttu-id="01bc2-120">Описание</span><span class="sxs-lookup"><span data-stu-id="01bc2-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fe03a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fe03a-117">Request headers</span></span>
+| <span data-ttu-id="fe03a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="fe03a-118">Name</span></span>       | <span data-ttu-id="fe03a-119">Тип</span><span class="sxs-lookup"><span data-stu-id="fe03a-119">Type</span></span> | <span data-ttu-id="fe03a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="fe03a-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="01bc2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="01bc2-121">Authorization</span></span>  | <span data-ttu-id="01bc2-122">string</span><span class="sxs-lookup"><span data-stu-id="01bc2-122">string</span></span>  | <span data-ttu-id="01bc2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="01bc2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fe03a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe03a-121">Authorization</span></span>  | <span data-ttu-id="fe03a-122">string</span><span class="sxs-lookup"><span data-stu-id="fe03a-122">string</span></span>  | <span data-ttu-id="fe03a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fe03a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="01bc2-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="01bc2-125">Request body</span></span>
-<span data-ttu-id="01bc2-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="01bc2-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fe03a-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fe03a-125">Request body</span></span>
+<span data-ttu-id="fe03a-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fe03a-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="01bc2-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="01bc2-127">Response</span></span>
-<span data-ttu-id="01bc2-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="01bc2-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fe03a-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="fe03a-127">Response</span></span>
+<span data-ttu-id="fe03a-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fe03a-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="01bc2-130">Пример</span><span class="sxs-lookup"><span data-stu-id="01bc2-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="01bc2-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="01bc2-131">Request</span></span>
-<span data-ttu-id="01bc2-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="01bc2-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fe03a-130">Пример</span><span class="sxs-lookup"><span data-stu-id="fe03a-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="fe03a-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="fe03a-131">Request</span></span>
+<span data-ttu-id="fe03a-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fe03a-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "delete_owner_from_group"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 ```
-<span data-ttu-id="01bc2-133">Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.</span><span class="sxs-lookup"><span data-stu-id="01bc2-133">In the request, specify the `id` of the directory object you want to remove after the $ref segment.</span></span>
+<span data-ttu-id="fe03a-133">Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.</span><span class="sxs-lookup"><span data-stu-id="fe03a-133">In the request, specify the `id` of the directory object you want to remove after the $ref segment.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="01bc2-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="01bc2-134">Response</span></span>
-<span data-ttu-id="01bc2-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="01bc2-135">The following is an example of the response.</span></span>
-><span data-ttu-id="01bc2-136">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="01bc2-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="01bc2-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="01bc2-137">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="fe03a-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="fe03a-134">Response</span></span>
+<span data-ttu-id="fe03a-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fe03a-135">The following is an example of the response.</span></span>
+><span data-ttu-id="fe03a-136">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="fe03a-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fe03a-137">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fe03a-137">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -63,27 +66,32 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="01bc2-138">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="01bc2-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="01bc2-139">C#</span><span class="sxs-lookup"><span data-stu-id="01bc2-139">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="fe03a-138">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="fe03a-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="fe03a-139">C#</span><span class="sxs-lookup"><span data-stu-id="fe03a-139">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="01bc2-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="01bc2-140">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fe03a-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="fe03a-140">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="fe03a-141">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fe03a-141">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete owner",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
-}-->
+}
+-->
