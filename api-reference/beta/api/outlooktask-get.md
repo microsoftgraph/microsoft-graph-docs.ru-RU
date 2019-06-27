@@ -4,32 +4,32 @@ description: Получение свойств и связей задачи Outl
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 741aa6d7363473f3e38fa797d0f389f20cfcd39b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: fd2a657e449da84a2c22b5592244974f6dedb981
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33596737"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35265774"
 ---
-# <a name="get-outlooktask"></a><span data-ttu-id="d82c9-103">Получение outlookTask</span><span class="sxs-lookup"><span data-stu-id="d82c9-103">Get outlookTask</span></span>
+# <a name="get-outlooktask"></a><span data-ttu-id="55b73-103">Получение outlookTask</span><span class="sxs-lookup"><span data-stu-id="55b73-103">Get outlookTask</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d82c9-104">Получение свойств и связей задачи Outlook в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="d82c9-104">Get the properties and relationships of an Outlook task in the user's mailbox.</span></span>
+<span data-ttu-id="55b73-104">Получение свойств и связей задачи Outlook в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="55b73-104">Get the properties and relationships of an Outlook task in the user's mailbox.</span></span>
 
-<span data-ttu-id="d82c9-105">По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="d82c9-105">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="d82c9-106">Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.</span><span class="sxs-lookup"><span data-stu-id="d82c9-106">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
+<span data-ttu-id="55b73-105">По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="55b73-105">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="55b73-106">Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.</span><span class="sxs-lookup"><span data-stu-id="55b73-106">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d82c9-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d82c9-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="55b73-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="55b73-107">Permissions</span></span>
 
-<span data-ttu-id="d82c9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d82c9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="55b73-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="55b73-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d82c9-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d82c9-110">Permission type</span></span>                        | <span data-ttu-id="d82c9-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d82c9-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="55b73-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="55b73-110">Permission type</span></span>                        | <span data-ttu-id="55b73-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="55b73-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="d82c9-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d82c9-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d82c9-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="d82c9-113">Tasks.Read</span></span>                          |
-| <span data-ttu-id="d82c9-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d82c9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d82c9-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="d82c9-115">Tasks.Read</span></span>                          |
-| <span data-ttu-id="d82c9-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d82c9-116">Application</span></span>                            | <span data-ttu-id="d82c9-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d82c9-117">Not supported.</span></span>                      |
+| <span data-ttu-id="55b73-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="55b73-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="55b73-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="55b73-113">Tasks.Read</span></span>                          |
+| <span data-ttu-id="55b73-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="55b73-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55b73-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="55b73-115">Tasks.Read</span></span>                          |
+| <span data-ttu-id="55b73-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="55b73-116">Application</span></span>                            | <span data-ttu-id="55b73-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="55b73-117">Not supported.</span></span>                      |
 
-## <a name="http-request"></a><span data-ttu-id="d82c9-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d82c9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="55b73-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="55b73-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,32 +38,32 @@ GET /me/outlook/tasks/{id}
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d82c9-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d82c9-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="55b73-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="55b73-119">Optional query parameters</span></span>
 
-<span data-ttu-id="d82c9-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d82c9-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="55b73-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="55b73-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d82c9-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d82c9-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="55b73-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="55b73-121">Request headers</span></span>
 
-| <span data-ttu-id="d82c9-122">Имя</span><span class="sxs-lookup"><span data-stu-id="d82c9-122">Name</span></span>                     | <span data-ttu-id="d82c9-123">Описание</span><span class="sxs-lookup"><span data-stu-id="d82c9-123">Description</span></span>                                       |
+| <span data-ttu-id="55b73-122">Имя</span><span class="sxs-lookup"><span data-stu-id="55b73-122">Name</span></span>                     | <span data-ttu-id="55b73-123">Описание</span><span class="sxs-lookup"><span data-stu-id="55b73-123">Description</span></span>                                       |
 |:-------------------------|:--------------------------------------------------|
-| <span data-ttu-id="d82c9-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d82c9-124">Authorization</span></span>            | <span data-ttu-id="d82c9-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d82c9-p103">Bearer {token}. Required.</span></span>                         |
-| <span data-ttu-id="d82c9-127">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="d82c9-127">Prefer: outlook.timezone</span></span> | <span data-ttu-id="d82c9-128">Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан.</span><span class="sxs-lookup"><span data-stu-id="d82c9-128">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="d82c9-129">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="d82c9-129">Optional.</span></span> |
+| <span data-ttu-id="55b73-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="55b73-124">Authorization</span></span>            | <span data-ttu-id="55b73-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="55b73-p103">Bearer {token}. Required.</span></span>                         |
+| <span data-ttu-id="55b73-127">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="55b73-127">Prefer: outlook.timezone</span></span> | <span data-ttu-id="55b73-128">Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан.</span><span class="sxs-lookup"><span data-stu-id="55b73-128">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="55b73-129">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="55b73-129">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d82c9-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d82c9-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="55b73-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="55b73-130">Request body</span></span>
 
-<span data-ttu-id="d82c9-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d82c9-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="55b73-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="55b73-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d82c9-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="d82c9-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="55b73-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="55b73-132">Response</span></span>
 
-<span data-ttu-id="d82c9-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d82c9-133">If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
+<span data-ttu-id="55b73-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="55b73-133">If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d82c9-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="d82c9-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="55b73-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="55b73-134">Examples</span></span>
 
-### <a name="example-1-get-an-outlook-task"></a><span data-ttu-id="d82c9-135">Пример 1: получение задачи Outlook</span><span class="sxs-lookup"><span data-stu-id="d82c9-135">Example 1: Get an Outlook task</span></span>
+### <a name="example-1-get-an-outlook-task"></a><span data-ttu-id="55b73-135">Пример 1: получение задачи Outlook</span><span class="sxs-lookup"><span data-stu-id="55b73-135">Example 1: Get an Outlook task</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d82c9-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="d82c9-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="55b73-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="55b73-136">Request</span></span>
 
-<span data-ttu-id="d82c9-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d82c9-137">Here is an example of the request.</span></span>
+<span data-ttu-id="55b73-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="55b73-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
@@ -75,11 +75,11 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="d82c9-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="d82c9-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="55b73-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="55b73-138">Response</span></span>
 
-<span data-ttu-id="d82c9-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d82c9-139">Here is an example of the response.</span></span> <span data-ttu-id="d82c9-140">По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="d82c9-140">By default, the date-time properties in the response are in UTC.</span></span>
+<span data-ttu-id="55b73-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="55b73-139">Here is an example of the response.</span></span> <span data-ttu-id="55b73-140">По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="55b73-140">By default, the date-time properties in the response are in UTC.</span></span>
 
-> <span data-ttu-id="d82c9-141">**Примечание.** Показанный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="d82c9-141">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="d82c9-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d82c9-142">All of the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="55b73-141">**Примечание.** Показанный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="55b73-141">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="55b73-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="55b73-142">All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -123,22 +123,24 @@ Content-type: application/json
   "subject": "Shop for dinner"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="d82c9-143">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="d82c9-143">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="d82c9-144">Языках</span><span class="sxs-lookup"><span data-stu-id="d82c9-144">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="55b73-143">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="55b73-143">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="55b73-144">C#</span><span class="sxs-lookup"><span data-stu-id="55b73-144">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_outlooktask-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d82c9-145">Язык</span><span class="sxs-lookup"><span data-stu-id="d82c9-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55b73-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="55b73-145">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_outlooktask-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="55b73-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="55b73-146">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_outlooktask-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a><span data-ttu-id="d82c9-146">Пример 2: получение задачи Outlook со свойствами даты и времени в стандартном Тихоокеанском времени</span><span class="sxs-lookup"><span data-stu-id="d82c9-146">Example 2: Get Outlook task with date-time properties in Pacific Standard Time</span></span>
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a><span data-ttu-id="55b73-147">Пример 2: получение задачи Outlook со свойствами даты и времени в стандартном Тихоокеанском времени</span><span class="sxs-lookup"><span data-stu-id="55b73-147">Example 2: Get Outlook task with date-time properties in Pacific Standard Time</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d82c9-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="d82c9-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="55b73-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="55b73-148">Request</span></span>
 
-<span data-ttu-id="d82c9-148">В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать в ответе свойства даты и времени в ответе в стандартном Тихоокеанском времени.</span><span class="sxs-lookup"><span data-stu-id="d82c9-148">This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.</span></span>
+<span data-ttu-id="55b73-149">В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать в ответе свойства даты и времени в ответе в стандартном Тихоокеанском времени.</span><span class="sxs-lookup"><span data-stu-id="55b73-149">This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -150,11 +152,11 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-### <a name="response"></a><span data-ttu-id="d82c9-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="d82c9-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="55b73-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="55b73-150">Response</span></span>
 
-<span data-ttu-id="d82c9-150">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d82c9-150">Here is an example of the response.</span></span> <span data-ttu-id="d82c9-151">Свойства даты и времени в отклике возвращаются в указанном тихоокеанском стандартном Тихоокеанском времени.</span><span class="sxs-lookup"><span data-stu-id="d82c9-151">The date-time properties in the response are returned in the specified Pacific Standard Time.</span></span>
+<span data-ttu-id="55b73-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="55b73-151">Here is an example of the response.</span></span> <span data-ttu-id="55b73-152">Свойства даты и времени в отклике возвращаются в указанном тихоокеанском стандартном Тихоокеанском времени.</span><span class="sxs-lookup"><span data-stu-id="55b73-152">The date-time properties in the response are returned in the specified Pacific Standard Time.</span></span>
 
-> <span data-ttu-id="d82c9-152">**Примечание.** Показанный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="d82c9-152">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="d82c9-153">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d82c9-153">All of the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="55b73-153">**Примечание.** Показанный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="55b73-153">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="55b73-154">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="55b73-154">All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -198,13 +200,15 @@ Content-type: application/json
   "subject": "Shop for children's weekend"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="d82c9-154">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="d82c9-154">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="d82c9-155">Языках</span><span class="sxs-lookup"><span data-stu-id="d82c9-155">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="55b73-155">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="55b73-155">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="55b73-156">C#</span><span class="sxs-lookup"><span data-stu-id="55b73-156">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_outlooktask-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d82c9-156">Язык</span><span class="sxs-lookup"><span data-stu-id="d82c9-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55b73-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="55b73-157">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_outlooktask-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="55b73-158">Цель — C</span><span class="sxs-lookup"><span data-stu-id="55b73-158">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_outlooktask-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -219,6 +223,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
