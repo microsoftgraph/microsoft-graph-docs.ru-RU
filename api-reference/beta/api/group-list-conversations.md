@@ -4,51 +4,51 @@ description: Получение списка бесед в этой группе
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d178c5ac2932590dffbcb41bb7105ab00124997e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6fe5d6e127f5fa33d9ff9ef87514ad74c992d7fb
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593034"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35263233"
 ---
-# <a name="list-conversations"></a><span data-ttu-id="527a2-103">Список бесед</span><span class="sxs-lookup"><span data-stu-id="527a2-103">List conversations</span></span>
+# <a name="list-conversations"></a><span data-ttu-id="604ab-103">Список бесед</span><span class="sxs-lookup"><span data-stu-id="604ab-103">List conversations</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="527a2-104">Получение списка объектов [conversation](../resources/conversation.md) в этой группе.</span><span class="sxs-lookup"><span data-stu-id="527a2-104">Retrieve the list of [conversations](../resources/conversation.md) in this group.</span></span>
+<span data-ttu-id="604ab-104">Получение списка объектов [conversation](../resources/conversation.md) в этой группе.</span><span class="sxs-lookup"><span data-stu-id="604ab-104">Retrieve the list of [conversations](../resources/conversation.md) in this group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="527a2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="527a2-105">Permissions</span></span>
-<span data-ttu-id="527a2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="527a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="604ab-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="604ab-105">Permissions</span></span>
+<span data-ttu-id="604ab-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="604ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="527a2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="527a2-108">Permission type</span></span>      | <span data-ttu-id="527a2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="527a2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="604ab-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="604ab-108">Permission type</span></span>      | <span data-ttu-id="604ab-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="604ab-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="527a2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="527a2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="527a2-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="527a2-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="527a2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="527a2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="527a2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="527a2-113">Not supported.</span></span>    |
-|<span data-ttu-id="527a2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="527a2-114">Application</span></span> | <span data-ttu-id="527a2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="527a2-115">Not supported.</span></span> |
+|<span data-ttu-id="604ab-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="604ab-110">Delegated (work or school account)</span></span> | <span data-ttu-id="604ab-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="604ab-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="604ab-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="604ab-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="604ab-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="604ab-113">Not supported.</span></span>    |
+|<span data-ttu-id="604ab-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="604ab-114">Application</span></span> | <span data-ttu-id="604ab-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="604ab-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="527a2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="527a2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="604ab-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="604ab-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/conversations
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="527a2-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="527a2-117">Optional query parameters</span></span>
-<span data-ttu-id="527a2-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="527a2-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="604ab-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="604ab-117">Optional query parameters</span></span>
+<span data-ttu-id="604ab-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="604ab-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="527a2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="527a2-119">Request headers</span></span>
-| <span data-ttu-id="527a2-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="527a2-120">Header</span></span>       | <span data-ttu-id="527a2-121">Значение</span><span class="sxs-lookup"><span data-stu-id="527a2-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="604ab-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="604ab-119">Request headers</span></span>
+| <span data-ttu-id="604ab-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="604ab-120">Header</span></span>       | <span data-ttu-id="604ab-121">Значение</span><span class="sxs-lookup"><span data-stu-id="604ab-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="527a2-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="527a2-122">Authorization</span></span>  | <span data-ttu-id="527a2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="527a2-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="604ab-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="604ab-122">Authorization</span></span>  | <span data-ttu-id="604ab-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="604ab-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="527a2-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="527a2-125">Request body</span></span>
-<span data-ttu-id="527a2-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="527a2-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="604ab-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="604ab-125">Request body</span></span>
+<span data-ttu-id="604ab-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="604ab-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="527a2-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="527a2-127">Response</span></span>
-<span data-ttu-id="527a2-128">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversation](../resources/conversation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="527a2-128">If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="604ab-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="604ab-127">Response</span></span>
+<span data-ttu-id="604ab-128">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [conversation](../resources/conversation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="604ab-128">If successful, this method returns a `200 OK` response code and collection of [conversation](../resources/conversation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="527a2-129">Пример</span><span class="sxs-lookup"><span data-stu-id="527a2-129">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="527a2-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="527a2-130">Request</span></span>
-<span data-ttu-id="527a2-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="527a2-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="604ab-129">Пример</span><span class="sxs-lookup"><span data-stu-id="604ab-129">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="604ab-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="604ab-130">Request</span></span>
+<span data-ttu-id="604ab-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="604ab-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_conversations"
@@ -57,9 +57,9 @@ GET /groups/{id}/conversations
 GET https://graph.microsoft.com/beta/groups/{id}/conversations
 ```
 
-#### <a name="response"></a><span data-ttu-id="527a2-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="527a2-132">Response</span></span>
-<span data-ttu-id="527a2-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="527a2-133">The following is an example of the response.</span></span>
-><span data-ttu-id="527a2-134">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="527a2-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="527a2-135">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="527a2-135">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="604ab-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="604ab-132">Response</span></span>
+<span data-ttu-id="604ab-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="604ab-133">The following is an example of the response.</span></span>
+><span data-ttu-id="604ab-134">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="604ab-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="604ab-135">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="604ab-135">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,13 +86,15 @@ Content-length: 262
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="527a2-136">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="527a2-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="527a2-137">Языках</span><span class="sxs-lookup"><span data-stu-id="527a2-137">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="604ab-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="604ab-136">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="604ab-137">C#</span><span class="sxs-lookup"><span data-stu-id="604ab-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_conversations-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="527a2-138">Язык</span><span class="sxs-lookup"><span data-stu-id="527a2-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="604ab-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="604ab-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_conversations-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="604ab-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="604ab-139">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_conversations-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -107,6 +109,7 @@ Content-length: 262
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/group-list-conversations.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/group-list-conversations.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/group-list-conversations.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
