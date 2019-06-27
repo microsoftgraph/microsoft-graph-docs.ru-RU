@@ -4,32 +4,32 @@ description: Получите сведения о количестве поль�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: aa5b73442c276c188ced793a45d8f60494b6f744
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 0ddb462cfe21f1a7d2faff1632ca46e77a056c04
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639056"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267132"
 ---
-# <a name="reportroot-getyammerdeviceusageusercounts"></a><span data-ttu-id="38ad0-103">reportRoot: getYammerDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="38ad0-103">reportRoot: getYammerDeviceUsageUserCounts</span></span>
+# <a name="reportroot-getyammerdeviceusageusercounts"></a><span data-ttu-id="aeb15-103">reportRoot: getYammerDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="aeb15-103">reportRoot: getYammerDeviceUsageUserCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="38ad0-104">Получите сведения о количестве пользователей в день с разбивкой по типам устройств.</span><span class="sxs-lookup"><span data-stu-id="38ad0-104">Get the number of daily users by device type.</span></span>
+<span data-ttu-id="aeb15-104">Получите сведения о количестве пользователей в день с разбивкой по типам устройств.</span><span class="sxs-lookup"><span data-stu-id="aeb15-104">Get the number of daily users by device type.</span></span>
 
-> <span data-ttu-id="38ad0-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).</span><span class="sxs-lookup"><span data-stu-id="38ad0-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).</span></span>
+> <span data-ttu-id="aeb15-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).</span><span class="sxs-lookup"><span data-stu-id="aeb15-105">**Note:** For details about different report views and names, see [Office 365 Reports - Yammer device usage](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="38ad0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="38ad0-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="aeb15-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aeb15-106">Permissions</span></span>
 
-<span data-ttu-id="38ad0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38ad0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aeb15-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aeb15-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="38ad0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="38ad0-109">Permission type</span></span>                        | <span data-ttu-id="38ad0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="38ad0-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="aeb15-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aeb15-109">Permission type</span></span>                        | <span data-ttu-id="aeb15-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="aeb15-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="38ad0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="38ad0-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="38ad0-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="38ad0-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="38ad0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="38ad0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38ad0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38ad0-114">Not supported.</span></span>                           |
-| <span data-ttu-id="38ad0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="38ad0-115">Application</span></span>                            | <span data-ttu-id="38ad0-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="38ad0-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="aeb15-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aeb15-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="aeb15-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="aeb15-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="aeb15-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aeb15-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aeb15-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aeb15-114">Not supported.</span></span>                           |
+| <span data-ttu-id="aeb15-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aeb15-115">Application</span></span>                            | <span data-ttu-id="aeb15-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="aeb15-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="38ad0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="38ad0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aeb15-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aeb15-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -37,55 +37,55 @@ ms.locfileid: "33639056"
 GET /reports/getYammerDeviceUsageUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="38ad0-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="38ad0-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="aeb15-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="aeb15-118">Function parameters</span></span>
 
-<span data-ttu-id="38ad0-119">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="38ad0-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="aeb15-119">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="aeb15-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="38ad0-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="38ad0-120">Parameter</span></span> | <span data-ttu-id="38ad0-121">Тип</span><span class="sxs-lookup"><span data-stu-id="38ad0-121">Type</span></span>   | <span data-ttu-id="38ad0-122">Описание</span><span class="sxs-lookup"><span data-stu-id="38ad0-122">Description</span></span>                              |
+| <span data-ttu-id="aeb15-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="aeb15-120">Parameter</span></span> | <span data-ttu-id="aeb15-121">Тип</span><span class="sxs-lookup"><span data-stu-id="aeb15-121">Type</span></span>   | <span data-ttu-id="aeb15-122">Описание</span><span class="sxs-lookup"><span data-stu-id="aeb15-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="38ad0-123">period</span><span class="sxs-lookup"><span data-stu-id="38ad0-123">period</span></span>    | <span data-ttu-id="38ad0-124">string</span><span class="sxs-lookup"><span data-stu-id="38ad0-124">string</span></span> | <span data-ttu-id="38ad0-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="38ad0-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="38ad0-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="38ad0-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="38ad0-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="38ad0-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="38ad0-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="38ad0-128">Required.</span></span> |
+| <span data-ttu-id="aeb15-123">period</span><span class="sxs-lookup"><span data-stu-id="aeb15-123">period</span></span>    | <span data-ttu-id="aeb15-124">string</span><span class="sxs-lookup"><span data-stu-id="aeb15-124">string</span></span> | <span data-ttu-id="aeb15-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="aeb15-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="aeb15-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="aeb15-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="aeb15-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="aeb15-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="aeb15-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="aeb15-128">Required.</span></span> |
 
-<span data-ttu-id="38ad0-129">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="38ad0-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="38ad0-130">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="38ad0-130">The default output type is text/csv.</span></span> <span data-ttu-id="38ad0-131">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="38ad0-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="aeb15-129">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="aeb15-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="aeb15-130">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="aeb15-130">The default output type is text/csv.</span></span> <span data-ttu-id="aeb15-131">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="aeb15-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="38ad0-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="38ad0-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="aeb15-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="aeb15-132">Request headers</span></span>
 
-| <span data-ttu-id="38ad0-133">Имя</span><span class="sxs-lookup"><span data-stu-id="38ad0-133">Name</span></span>          | <span data-ttu-id="38ad0-134">Описание</span><span class="sxs-lookup"><span data-stu-id="38ad0-134">Description</span></span>               |
+| <span data-ttu-id="aeb15-133">Имя</span><span class="sxs-lookup"><span data-stu-id="aeb15-133">Name</span></span>          | <span data-ttu-id="aeb15-134">Описание</span><span class="sxs-lookup"><span data-stu-id="aeb15-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="38ad0-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="38ad0-135">Authorization</span></span> | <span data-ttu-id="38ad0-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="38ad0-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="aeb15-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="aeb15-135">Authorization</span></span> | <span data-ttu-id="aeb15-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="aeb15-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="38ad0-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="38ad0-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aeb15-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="aeb15-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="38ad0-139">CSV</span><span class="sxs-lookup"><span data-stu-id="38ad0-139">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="aeb15-139">CSV</span><span class="sxs-lookup"><span data-stu-id="aeb15-139">CSV</span></span>
 
-<span data-ttu-id="38ad0-140">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="38ad0-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="38ad0-141">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="38ad0-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="aeb15-140">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="aeb15-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="aeb15-141">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="aeb15-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="38ad0-142">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="38ad0-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="aeb15-142">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="aeb15-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="38ad0-143">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="38ad0-143">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="aeb15-143">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="aeb15-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="38ad0-144">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="38ad0-144">Report Refresh Date</span></span>
-- <span data-ttu-id="38ad0-145">"Web" (Интернет);</span><span class="sxs-lookup"><span data-stu-id="38ad0-145">Web</span></span>
-- <span data-ttu-id="38ad0-146">"Windows Phone";</span><span class="sxs-lookup"><span data-stu-id="38ad0-146">Windows Phone</span></span>
-- <span data-ttu-id="38ad0-147">"Android Phone" (Телефон с Android);</span><span class="sxs-lookup"><span data-stu-id="38ad0-147">Android Phone</span></span>
-- <span data-ttu-id="38ad0-148">iPhone</span><span class="sxs-lookup"><span data-stu-id="38ad0-148">iPhone</span></span>
-- <span data-ttu-id="38ad0-149">iPad</span><span class="sxs-lookup"><span data-stu-id="38ad0-149">iPad</span></span>
-- <span data-ttu-id="38ad0-150">Other (другие)</span><span class="sxs-lookup"><span data-stu-id="38ad0-150">Other</span></span>
-- <span data-ttu-id="38ad0-151">Report Date (дата отчета)</span><span class="sxs-lookup"><span data-stu-id="38ad0-151">Report Date</span></span>
-- <span data-ttu-id="38ad0-152">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="38ad0-152">Report Period</span></span>
+- <span data-ttu-id="aeb15-144">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="aeb15-144">Report Refresh Date</span></span>
+- <span data-ttu-id="aeb15-145">"Web" (Интернет);</span><span class="sxs-lookup"><span data-stu-id="aeb15-145">Web</span></span>
+- <span data-ttu-id="aeb15-146">"Windows Phone";</span><span class="sxs-lookup"><span data-stu-id="aeb15-146">Windows Phone</span></span>
+- <span data-ttu-id="aeb15-147">"Android Phone" (Телефон с Android);</span><span class="sxs-lookup"><span data-stu-id="aeb15-147">Android Phone</span></span>
+- <span data-ttu-id="aeb15-148">iPhone</span><span class="sxs-lookup"><span data-stu-id="aeb15-148">iPhone</span></span>
+- <span data-ttu-id="aeb15-149">iPad</span><span class="sxs-lookup"><span data-stu-id="aeb15-149">iPad</span></span>
+- <span data-ttu-id="aeb15-150">Other (другие)</span><span class="sxs-lookup"><span data-stu-id="aeb15-150">Other</span></span>
+- <span data-ttu-id="aeb15-151">Report Date (дата отчета)</span><span class="sxs-lookup"><span data-stu-id="aeb15-151">Report Date</span></span>
+- <span data-ttu-id="aeb15-152">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="aeb15-152">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="38ad0-153">JSON</span><span class="sxs-lookup"><span data-stu-id="38ad0-153">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="aeb15-153">JSON</span><span class="sxs-lookup"><span data-stu-id="aeb15-153">JSON</span></span>
 
-<span data-ttu-id="38ad0-154">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[яммердевицеусажеусеркаунтс](../resources/yammerdeviceusageusercounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="38ad0-154">If successful, this method returns a `200 OK` response code and a **[yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md)** object in the response body.</span></span>
+<span data-ttu-id="aeb15-154">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[яммердевицеусажеусеркаунтс](../resources/yammerdeviceusageusercounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="aeb15-154">If successful, this method returns a `200 OK` response code and a **[yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="38ad0-155">Пример</span><span class="sxs-lookup"><span data-stu-id="38ad0-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aeb15-155">Пример</span><span class="sxs-lookup"><span data-stu-id="aeb15-155">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="38ad0-156">CSV</span><span class="sxs-lookup"><span data-stu-id="38ad0-156">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="aeb15-156">CSV</span><span class="sxs-lookup"><span data-stu-id="aeb15-156">CSV</span></span>
 
-<span data-ttu-id="38ad0-157">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="38ad0-157">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="aeb15-157">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="aeb15-157">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="38ad0-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="38ad0-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="aeb15-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="aeb15-158">Request</span></span>
 
-<span data-ttu-id="38ad0-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="38ad0-159">The following is an example of the request.</span></span>
+<span data-ttu-id="aeb15-159">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="aeb15-159">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -96,9 +96,9 @@ GET /reports/getYammerDeviceUsageUserCounts(period='{period_value}')
 GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="38ad0-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="38ad0-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="aeb15-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="aeb15-160">Response</span></span>
 
-<span data-ttu-id="38ad0-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="38ad0-161">The following is an example of the response.</span></span>
+<span data-ttu-id="aeb15-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="aeb15-161">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -107,18 +107,20 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="38ad0-162">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="38ad0-162">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="38ad0-163">Языках</span><span class="sxs-lookup"><span data-stu-id="38ad0-163">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="aeb15-162">Образец кода SDK</span><span class="sxs-lookup"><span data-stu-id="aeb15-162">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="aeb15-163">C#</span><span class="sxs-lookup"><span data-stu-id="aeb15-163">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageusercounts_csv-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="38ad0-164">Язык</span><span class="sxs-lookup"><span data-stu-id="38ad0-164">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aeb15-164">Javascript</span><span class="sxs-lookup"><span data-stu-id="aeb15-164">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageusercounts_csv-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="aeb15-165">Цель — C</span><span class="sxs-lookup"><span data-stu-id="aeb15-165">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageusercounts_csv-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-<span data-ttu-id="38ad0-165">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="38ad0-165">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="aeb15-166">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="aeb15-166">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -133,13 +135,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Web,Windows Phone,Android Phone,iPhone,iPad,Other,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="38ad0-166">JSON</span><span class="sxs-lookup"><span data-stu-id="38ad0-166">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="aeb15-167">JSON</span><span class="sxs-lookup"><span data-stu-id="aeb15-167">JSON</span></span>
 
-<span data-ttu-id="38ad0-167">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="38ad0-167">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="aeb15-168">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="aeb15-168">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="38ad0-168">Запрос</span><span class="sxs-lookup"><span data-stu-id="38ad0-168">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="aeb15-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="aeb15-169">Request</span></span>
 
-<span data-ttu-id="38ad0-169">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="38ad0-169">The following is an example of the request.</span></span>
+<span data-ttu-id="aeb15-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="aeb15-170">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -150,11 +152,11 @@ Report Refresh Date,Web,Windows Phone,Android Phone,iPhone,iPad,Other,Report Dat
 GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="38ad0-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="38ad0-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="aeb15-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="aeb15-171">Response</span></span>
 
-<span data-ttu-id="38ad0-171">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="38ad0-171">The following is an example of the response.</span></span>
+<span data-ttu-id="aeb15-172">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="aeb15-172">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="38ad0-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="38ad0-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="aeb15-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="aeb15-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -184,13 +186,15 @@ Content-Length: 284
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="38ad0-174">Пример кода для SDK</span><span class="sxs-lookup"><span data-stu-id="38ad0-174">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="38ad0-175">Языках</span><span class="sxs-lookup"><span data-stu-id="38ad0-175">C#</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="aeb15-175">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="aeb15-175">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="aeb15-176">C#</span><span class="sxs-lookup"><span data-stu-id="aeb15-176">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageusercounts_json-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="38ad0-176">Язык</span><span class="sxs-lookup"><span data-stu-id="38ad0-176">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="aeb15-177">Javascript</span><span class="sxs-lookup"><span data-stu-id="aeb15-177">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageusercounts_json-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="aeb15-178">Цель — C</span><span class="sxs-lookup"><span data-stu-id="aeb15-178">Objective-C</span></span>](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusageusercounts_json-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -203,6 +207,7 @@ Content-Length: 284
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getyammerdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/reportroot-getyammerdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
     "Error: /api-reference/beta/api/reportroot-getyammerdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/reportroot-getyammerdeviceusageusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #csv (score: 5)",
