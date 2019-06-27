@@ -4,12 +4,12 @@ description: Обновление свойств объекта Букингст
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: acfef7e88e6fe8d5bb8e46c5d3c3e3c85ff1aa33
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 97649a47aba9cd63d58e40e388bf9bd8292156b9
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635892"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35262470"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление букингстаффмембер
 
@@ -40,12 +40,12 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Аваилабилитисаффектедбиперсоналкалендар|Логический|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
+|Аваилабилитисаффектедбиперсоналкалендар|Boolean|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
 |colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице " **сведения о персонале** " в приложении "книги".|
 |displayName|String|Имя сотрудника, отображаемое для клиентов.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть тот же клиент Office 365, что и в Организации, или в другом домене электронной почты. Этот адрес электронной почты используется, если для свойства **сендконфирматионстувнер** в политике планирования бизнеса задано значение true.|
 |role|string| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|Усебусинесшаурс|Логический|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
+|Усебусинесшаурс|Boolean|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
 |workingHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Диапазон часов на каждый день недели, когда сотрудник становится доступен для резервирования.|
 
 ## <a name="response"></a>Отклик
@@ -136,13 +136,15 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_bookingstaffmember-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_bookingstaffmember-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -157,6 +159,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
