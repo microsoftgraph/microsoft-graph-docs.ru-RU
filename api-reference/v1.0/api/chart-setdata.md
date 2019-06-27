@@ -4,12 +4,12 @@ description: Сбрасывает исходные данные для диаг�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 93f50cd4f62909514145cfd369f32e1736b7215f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b028ca325d4f047e7b13b46fa1edd33385827457
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563492"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35272627"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -35,13 +35,13 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setData
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), Rows, Columns.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|string|Необязательно. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), Rows, Columns.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
@@ -74,6 +74,18 @@ Content-length: 70
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/chart_setdata-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/chart_setdata-Javascript-snippets.md)]
+
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/chart_setdata-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +94,10 @@ HTTP/1.1 200 OK
   "description": "Chart: setData",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/chart-setdata.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/v1.0/api/chart-setdata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/chart-setdata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

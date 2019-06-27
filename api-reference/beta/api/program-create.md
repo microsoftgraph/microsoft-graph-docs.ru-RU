@@ -2,12 +2,12 @@
 title: Создание программы
 description: В функции рецензирования Access Azure AD создайте объект программы.
 localization_priority: Normal
-ms.openlocfilehash: 87f766917499e6e9d1896ccf64f8fbae2bef813b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0d2218031e924e7137378a63d932f5533620cc38
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593678"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267664"
 ---
 # <a name="create-program"></a>Создание программы
 
@@ -35,7 +35,7 @@ POST /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [программы](../resources/program.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании программы.
@@ -84,13 +84,15 @@ Content-type: application/json
     "description": "test description"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_program_from_programs-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_program_from_programs-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_program_from_programs-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -112,6 +114,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/program-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

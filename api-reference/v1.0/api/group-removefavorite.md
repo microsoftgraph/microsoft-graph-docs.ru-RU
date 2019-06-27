@@ -4,12 +4,12 @@ description: Удаление группы из списка избранных 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 703d22cc6caff735675f526aba91048170c4b504
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 98f89ea2e591f18569625af24a07920105aed370
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613652"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35277653"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.
@@ -34,7 +34,7 @@ POST /groups/{id}/removeFavorite
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  | 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -59,13 +59,15 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 ```http
 HTTP/1.1 200 OK
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/group_removefavorite-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/group_removefavorite-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/group_removefavorite-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -79,6 +81,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-removefavorite.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-removefavorite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-removefavorite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

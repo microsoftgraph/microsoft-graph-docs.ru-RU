@@ -4,12 +4,12 @@ description: Копирует страницу в определенный ра�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ba7fe9105a8bd610263583cd314a98e69cd50814
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 641c85bf25ed67e94b3cf38368af9ddace6b132e
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611596"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35276673"
 ---
 # <a name="page-copytosection"></a>Страница: copyToSection
 Копирует страницу в определенный раздел.
@@ -79,13 +79,15 @@ Content-length: 52
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/page_copytosection-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/page_copytosection-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/page_copytosection-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -99,6 +101,7 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/page-copytosection.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

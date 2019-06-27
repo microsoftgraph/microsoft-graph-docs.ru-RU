@@ -4,12 +4,12 @@ description: 'Получение групп, непосредственным ч
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 614f29b9ae81ac39db2f15ef46092819ab46157f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e026912d649cc6699ce6e76961cbf5ff1ff71479
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33614187"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35273516"
 ---
 # <a name="list-memberof"></a>Список memberOf
 Получение групп, непосредственным членом которых является данная группа. 
@@ -82,9 +82,11 @@ Content-length: 55
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_memberof-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_memberof-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_memberof-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -98,6 +100,7 @@ Content-length: 55
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-memberof.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-list-memberof.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-list-memberof.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -3,12 +3,12 @@ title: Удаление открытого расширения
 description: 'Удаление открытого расширения (объекта openTypeExtension) из указанного экземпляра ресурса. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: af71848e0bbc6dab98a3ca9cb2875fbbe1ae82cf
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0c3683e51afe105ac74ea03d7e0e8c5807248df5
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33611759"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35275553"
 ---
 # <a name="delete-open-extension"></a>Удаление открытого расширения
 
@@ -51,7 +51,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|id|строка|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
+|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
 |extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,7 +59,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |:---------------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -84,13 +84,15 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_opentypeextension-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_opentypeextension-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

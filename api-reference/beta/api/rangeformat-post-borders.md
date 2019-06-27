@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3a98dadd59cea2913ee05ba1c5bde02568f7a96f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 05676c69de7815ae51bd2b77e66580a153617612
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33610375"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267531"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -40,7 +40,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
+В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-В тексте запроса добавьте представление объекта [Воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
+В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -87,13 +87,15 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_rangeborder_from_rangeformat-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_rangeborder_from_rangeformat-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_rangeborder_from_rangeformat-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -108,6 +110,7 @@ Content-length: 136
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

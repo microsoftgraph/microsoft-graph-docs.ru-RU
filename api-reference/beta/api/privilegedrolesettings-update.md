@@ -2,12 +2,12 @@
 title: Обновление Привилежедролесеттингс
 description: Обновление параметров роли для данного параметра роли. Будет возвращен объект Привилежедролесеттингс.
 localization_priority: Normal
-ms.openlocfilehash: 17f813a72fb88948bd8906924c312ad9fce1dd79
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a20fed06c15e6eacfb62491b3f1dd930327363f2
+ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33593842"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35267678"
 ---
 # <a name="update-privilegedrolesettings"></a>Обновление Привилежедролесеттингс
 
@@ -37,8 +37,8 @@ PUT /privilegedRoles/{id}/settings
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Привилежедролесеттингс](../resources/privilegedrolesettings.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [привилежедролесеттингс](../resources/privilegedrolesettings.md) в формате JSON.
 
 В следующей таблице перечислены свойства, которые можно предоставить при обновлении параметров роли.
 
@@ -47,13 +47,13 @@ PUT /privilegedRoles/{id}/settings
 |Елеватиондуратион|duration|Продолжительность активации роли. Обязательный.|
 |id|string|Уникальный идентификатор для параметров роли. Только для чтения. Обязательный атрибут.|
 |Исмфаонелеватионконфигурабле|boolean|**значение true** , если мфаонелеватион является настраиваемым. **false** , если мфаонелеватион не является настраиваемым. Обязательно.|
-|Ластглобаладмин|Логический|Только для внутреннего использования.|
+|Ластглобаладмин|Boolean|Только для внутреннего использования.|
 |Макселаватиондуратион|duration|Максимальная длительность активированной роли. Обязательно.|
-|Мфаонелеватион|Логический|**значение true** , если для активации роли требуется mfa. **false** , если MFA не требуется для активации роли. Обязательно.|
+|Мфаонелеватион|Boolean|**значение true** , если для активации роли требуется mfa. **false** , если MFA не требуется для активации роли. Обязательно.|
 |Минелеватиондуратион|duration|Минимальная длительность активированной роли. Обязательно.|
-|Нотификатионтаусеронелеватион|Логический|**имеет значение true** , если вы отправляете уведомление конечному пользователю при активации роли. **значение false** , если уведомление не отправляется при активации роли. Обязательно.|
-|Тиккетингинфунелеватион|Логический|**имеет значение true** , если при активации роли требуются сведения о билетах. **false** , если при активации роли не требуются сведения о билетах. Обязательно.|
-|Аппровалонелеватион|Логический|**имеет значение true** , если при активации роли необходимо выполнить утверждение. **false** , если при активации роли не нужно утверждать. Обязательно.|
+|Нотификатионтаусеронелеватион|Boolean|**имеет значение true** , если вы отправляете уведомление конечному пользователю при активации роли. **значение false** , если уведомление не отправляется при активации роли. Обязательно.|
+|Тиккетингинфунелеватион|Boolean|**имеет значение true** , если при активации роли требуются сведения о билетах. **false** , если при активации роли не требуются сведения о билетах. Обязательно.|
+|Аппровалонелеватион|Boolean|**имеет значение true** , если при активации роли необходимо выполнить утверждение. **false** , если при активации роли не нужно утверждать. Обязательно.|
 |Аппроверидс|string collection|Список идентификаторов утверждения, если для активации необходимо утверждение.|
 
 ## <a name="response"></a>Отклик
@@ -95,13 +95,15 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
+#### <a name="sdk-sample-code"></a>Пример кода SDK
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Javascript-snippets.md)]
 
+# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/put_privilegedrolesettings-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -116,6 +118,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
