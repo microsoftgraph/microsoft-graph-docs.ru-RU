@@ -1,0 +1,136 @@
+---
+title: Компонент повестки в наборе инструментов Microsoft Graph
+description: Веб-компонент "центр центровой связи" используется для представления событий в календаре пользователя или группы.
+localization_priority: Normal
+author: nmetulev
+ms.openlocfilehash: 8a91b20a48c1646fafd8cd7a287f037615024a73
+ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35243086"
+---
+# <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Компонент повестки в наборе инструментов Microsoft Graph
+
+`mgt-agenda` Веб-компонент представляет события в календаре пользователя или группы. По умолчанию в календаре отображаются текущие события пользователя, вошедшего в текущий день. Компонент также может использовать любую конечную точку, возвращающую события из Microsoft Graph. 
+
+## <a name="example"></a>Пример
+
+[Пример жсфиддле](https://jsfiddle.net/metulev/ojt2c7vp/)
+
+```html
+<mgt-agenda group-by-day></mgt-agenda>
+```
+
+![центр, повестка](./images/mgt-agenda.png)
+
+## <a name="properties"></a>Свойства
+
+По умолчанию `mgt-agenda` компонент получает события от `/me/calendarview` конечной точки и отображает события за текущий день. Существует несколько свойств, которые можно использовать для изменения этого поведения.
+
+| Свойство | Атрибут | Описание |
+| --- | --- | --- |
+| `groupByDay` | `group-by-day` | Логическое значение для группировки событий по дням события по умолчанию не группируются. |
+| `date` | `date` | Строка, представляющая дату начала событий, которые необходимо получить из Microsoft Graph. Значение должно быть в формате, который может быть проанализирован с помощью [конструктора Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) -value, если `event-query` задан атрибут. |
+| `days` | `days` | Число дней для выборки из Microsoft Graph — значение по умолчанию не оказывает никакого действия, если `event-query` задан атрибут. |
+| `eventQuery` | `event-query` | Строка, представляющая альтернативный запрос, который будет использоваться при получении событий из Microsoft Graph. При необходимости добавьте делегированную область в конец строки, чтобы она была ограничена `|` (`"/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all"`). |
+| `events` | `events` | Массив событий, чтобы получить или задать список событий, отображаемых компонентом, с помощью этого свойства можно получить доступ к событиям, загруженным компонентом. Присвойте этому значению значение загрузка собственных событий, если значение задано разработчиком, `date`атрибуты `days`, или `event-query` , атрибуты, не действуют. |
+
+В следующем примере показано, как изменить поведение компонента для извлечения данных за определенную дату и до 3 дней.
+
+```html
+<mgt-agenda
+  group-by-day
+  date="May 7, 2019"
+  days="3"
+  ></mgt-agenda>
+```
+
+В следующем примере показано изменение поведения компонента для извлечения данных из определенного запроса.
+
+```html
+<mgt-agenda
+  event-query="/me/events?orderby=start/dateTime"
+  ></mgt-agenda>
+```
+
+## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
+
+`mgt-agenda` Компонент определяет следующие НАСТРАИВАЕМЫЕ свойства CSS
+
+```css
+mgt-agenda {
+  --event-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.092);
+  --event-margin: 0px 10px 14px 10px;
+  --event-padding: 8px 0px;
+  --event-background: #ffffff;
+  --event-border: solid 2px rgba(0, 0, 0, 0);
+
+  --agenda-header-margin: 40px 10px 14px 10px;
+  --agenda-header-font-size: 24px;
+  --agenda-header-color: #333333;
+
+  --event-time-font-size: 12px;
+  --event-time-color: #000000;
+
+  --event-subject-font-size: 19px;
+  --event-subject-color: #333333;
+
+  --event-location-font-size: 12px;
+  --event-location-color: #000000;
+}
+```
+
+Чтобы узнать больше, ознакомьтесь с разделами [стилизация компонентов](../style.md).
+
+## <a name="templates"></a>Шаблоны
+
+`mgt-agenda` Компонент поддерживает несколько [шаблонов](../templates.md) , позволяющих заменить определенные части компонента. Чтобы указать шаблон, включите `<template>` элемент в компонент и задайте для него `data-type` одно из следующих значений:
+
+| Тип данных | Контекст данных | Описание |
+| --- | --- | --- |
+| `default` | `events`: список объектов Event | Шаблон по умолчанию заменяет весь компонент своим собственным. |
+| `event` | `event`: объект Event | Шаблон, используемый для отображения каждого события. |
+| `header` | `header`: строка | Шаблон, используемый для отображения заголовка ежедневно. |
+| `other` | `event`: объект Event | Шаблон, используемый для отображения дополнительного содержимого для каждого события. |
+| `no-data` | Контекст данных не передается | Шаблон, используемый при отсутствии доступных событий. |
+| `loading` | Контекст данных не передается | Шаблон, используемый при загрузке данных. |
+
+В следующих примерах показано, как использовать `event` шаблон:
+
+```html
+<mgt-agenda>
+  <template data-type="event">
+    <button class="eventButton">
+      <div class="event-subject">{{ event.subject }}</div>
+      <div data-for="attendee in event.attendees">
+        <mgt-person
+          person-query="{{ attendee.emailAddress.name }}"
+          show-name
+          show-email>
+        </mgt-person>
+      </div>
+    </button>
+  </template>
+  <template data-type="no-data">
+    There are no events found!
+  </template>
+</mgt-agenda>
+```
+
+Чтобы узнать больше, ознакомьтесь со статьей [шаблоны](../templates.md).
+
+## <a name="graph-scopes"></a>Области диаграммы
+
+В этом компоненте используются следующие API и разрешения Microsoft Graph:
+
+| resource | разрешение или область |
+| - | - |
+| [/ме/календарвиев](https://docs.microsoft.com/en-us/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+
+Компонент позволяет указать другой запрос Microsoft Graph для вызова (например, `/groups/{id}/calendar/calendarView`). В этом случае добавьте область в конец строки, отделенной`|`
+
+## <a name="authentication"></a>Проверка подлинности
+
+Элемент управления входом использует глобальную службу проверки подлинности, описанную в [документации по проверке](./../providers.md)подлинности. 
+
