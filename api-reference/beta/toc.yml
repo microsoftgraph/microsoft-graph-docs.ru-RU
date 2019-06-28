@@ -7708,6 +7708,11 @@ items:
                     href: api/signin-list.md
                   - name: Получение события входа
                     href: api/signin-get.md
+              - name: Подготовка журналов
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: Подготовка каталога списка
+                    href: api/provisioningobjectsummary-list.md
           - name: Контракты
             href: resources/contract.md
             items:
@@ -7877,6 +7882,13 @@ items:
                     href: api/riskyusers-confirmcompromised.md
                   - name: Отклонить
                     href: api/riskyusers-dismiss.md
+          - name: Обнаружение рисков
+            href: resources/riskdetection.md
+            items:
+              - name: Список обнаружений рисков
+                href: api/riskdetection-list.md
+              - name: Получение определения риска
+                href: api/riskdetection-get.md
           - name: Поставщик удостоверений
             href: resources/identityprovider.md
             items:
@@ -8352,7 +8364,7 @@ items:
                 href: api/onenote-post-notebooks.md
               - name: Вывод списка разделов
                 href: api/onenote-list-sections.md
-              - name: Список групп разделов
+              - name: Вывод списка групп разделов
                 href: api/onenote-list-sectiongroups.md
               - name: Вывод списка страниц
                 href: api/onenote-list-pages.md
@@ -8373,7 +8385,7 @@ items:
                 href: api/notebook-getrecentnotebooks.md
               - name: Получение записной книжки с сайта по URL-адресу
                 href: api/notebook-getnotebookfromweburl.md
-              - name: Вывод списка разделов
+              - name: Список разделов
                 href: api/notebook-list-sections.md
               - name: Создание раздела
                 href: api/notebook-post-sections.md
