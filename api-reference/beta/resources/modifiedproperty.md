@@ -1,36 +1,42 @@
 ---
 title: Тип ресурса Модифиедпроперти
-description: Указывает все измененные свойства со старым значением и новым значением для всех ресурсов в Azure AD, которые были изменены
+description: Описывает изменения, выполненные в целевой системе.
 localization_priority: Normal
-ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: resourcePageType
+ms.openlocfilehash: 03ae8cb2c36cb811325839341c0fa8b3f395c954
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506238"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348707"
 ---
 # <a name="modifiedproperty-resource-type"></a>Тип ресурса Модифиедпроперти
-Указывает все измененные свойства со старым значением и новым значением для всех ресурсов в Azure AD, которые были изменены
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Описывает изменения, выполненные в целевой системе. 
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName|String|Указывает имя свойства целевого атрибута, которое было изменено.|
-|newValue|String|Указывает обновленное значение для правильной работы.|
-|oldValue|String|Указывает предыдущее значение свойства (перед обновлением).|
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|displayName|String|Имя свойства, которое было изменено.|
+|newValue|String|Новое значение свойства.|
+|oldValue|String|Старое значение свойства.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.modifiedProperty"
+  "@odata.type": "microsoft.graph.modifiedProperty",
+  "baseType": null
 }-->
 
 ```json
@@ -39,11 +45,10 @@ ms.locfileid: "32506238"
   "newValue": "String",
   "oldValue": "String"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "modifiedProperty resource",

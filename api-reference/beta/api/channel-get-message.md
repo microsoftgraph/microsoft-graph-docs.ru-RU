@@ -4,12 +4,12 @@ description: Получение одного сообщения (без отве
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d68adc62df32064c9caa8b57167be723a62e474
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 6393ba9fdd5c012d24fd3e65ee707cda57c93cda
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35262141"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348644"
 ---
 # <a name="get-channel-message"></a>Получение сообщения в канале
 
@@ -22,9 +22,9 @@ ms.locfileid: "35262141"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Group.Read.All,Group.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Group.Read.All, Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| Не поддерживается. |
+|Приложение| Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -1,12 +1,12 @@
 ---
 title: Значения перечисления
 description: Значения перечисления Microsoft Graph
-ms.openlocfilehash: b9e7dac80f40739854128e874b0e1fa82c0c1844
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34750172"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348700"
 ---
 ### <a name="contactrelationship-values"></a>значения Контактрелатионшип
 
@@ -719,6 +719,7 @@ Enum для типов значений реестра, определенных
 |Усерпасседмфадривенбирискбаседполици|
 |Админдисмисседаллрискфорусер|
 |Админконфирмедсигнинкомпромисед|
+|Админконфирмедусеркомпромисед|
 |hidden|
 |unknownFutureValue|
 
@@ -821,3 +822,30 @@ Enum для типов значений реестра, определенных
 |обычный|
 |высокоуровневых|
 |передачи|
+
+### <a name="tokenissuertype-values"></a>значения Токениссуертипе
+
+|Member|
+|:---|
+|AzureAD|
+|Адфедератионсервицес|
+|unknownFutureValue|
+
+### <a name="riskdetectiontimingtype-values"></a>значения Рискдетектионтимингтипе
+
+|Member|
+|:---|
+|Нотдефинед|
+|реальном|
+|Неарреалтиме|
+|содержание|
+|unknownFutureValue|
+
+
+### <a name="activitytype-values"></a>значения activityType
+
+|Member|
+|:---|
+|SignIn|
+|user|
+|unknownFutureValue|
