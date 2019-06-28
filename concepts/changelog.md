@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 799abc4fa62eaeb813a5b109c7817acf8a8f2b59
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 065bb9e52477d06e05ae055e920821db6e9d9a7a
+ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236400"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35348679"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,17 +18,19 @@ ms.locfileid: "35236400"
 
 ## <a name="june-2019"></a>Июнь 2019 г.
 
+### <a name="identity-protection-apis"></a>API защиты идентификации
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение | Бета | Добавлен [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), представляющий определения рисков в службе защиты идентификации Azure AD. |
 
-### <a name="azure-ad-apis"></a>API Azure AD
 
-| **Тип изменения** | **Version** | **Описание**                  |
+### <a name="identity-and-access"></a>Удостоверения и доступ
+
+| **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета  | Появился новый тип ресурса [applicationTemplate](/graph/api/resources/applicationtemplate.md). Этот тип поддерживает операции [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) и [get](/graph/api/applicationtemplate-get.md) с приложениями из коллекции Azure AD.|
-
-### <a name="directory-apis"></a>API каталогов
-
-| **Тип изменения** | **Version** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение | Бета|Добавлены новые ресурсы: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| Дополнение |Бета |Добавлена операция [перечисления provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta)</br>|                     |
 | Дополнение | 1.0 | Добавлено свойство **signInSessionsValidFromDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Дополнение | 1.0 | Добавлено действие [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
 
@@ -1701,7 +1703,7 @@ ms.locfileid: "35236400"
 |Дополнение|Версия 1.0|Добавлено действие [targetApps](/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0) для объекта [managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [targetApps](/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0) для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [targetApps](/graph/api/intune-mam-targetedmanagedappconfiguration-targetapps?view=graph-rest-1.0) для объекта [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0). |
-|Дополнение|Версия 1.0|Добавлено действие [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |
+|Дополнение|1.0|Добавлено действие [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [sendTestMessage](/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0) для объекта [notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0) для объекта [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [beginOnboarding](/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0) для объекта [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0). |
@@ -2701,7 +2703,7 @@ ms.locfileid: "35236400"
 | Дополнение        | Бета-версия        | Добавлена функция [getDeviceComplianceSettingStates](/graph/api/intune-deviceconfig-devicemanagement-getdevicecompliancesettingstates?view=graph-rest-beta) к объекту [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-beta) к объекту [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [deviceConfigurationDeviceActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-beta) к объекту [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta). |
-| Удаление        | Бета-версия        | Удалены следующие сложные типы:<br/>**enterpriseCloudResource**;<br/>**windowsInformationProtectionAppRule**;<br/>**windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate**<br/>**windowsInformationProtectionAppRuleDesktopTemplate**<br/>**windowsInformationProtectionAppRuleStoreAppTemplate**<br/>**windowsInformationProtectionAppRuleTemplate**<br/>**windowsInformationProtectionCorporateNetworkLocation**;<br/>**windowsInformationProtectionProtectedLocation**;<br/>**windowsInformationProtectionProtectedLocationEnterpriseCloudResources**<br/>**windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames**<br/>**windowsInformationProtectionProtectedLocationEnterpriseProxyServers**<br/>**windowsInformationProtectionProtectedLocationNeutralResources**.<br/> |
+| Удаление        | Бета-версия        | Удалены следующие сложные типы:<br/>**enterpriseCloudResource**;<br/>**windowsInformationProtectionAppRule**;<br/>**windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate**<br/>**windowsInformationProtectionAppRuleDesktopTemplate**<br/>**windowsInformationProtectionAppRuleStoreAppTemplate**<br/>**windowsInformationProtectionAppRuleTemplate**<br/>**windowsInformationProtectionCorporateNetworkLocation**;<br/>**windowsInformationProtectionProtectedLocation**;<br/>**windowsInformationProtectionProtectedLocationEnterpriseCloudResources**<br/>**windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames**<br/>**windowsInformationProtectionProtectedLocationEnterpriseProxyServers**<br/>**windowsInformationProtectionProtectedLocationNeutralResources**<br/> |
 | Изменение          | Бета-версия        | Добавлено свойство **deviceSharingAllowed** к объекту [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Удалено **deviceSharingBlocked** свойство из объекта [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **minimumRequiredSdkVersion** к объекту [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta). |
