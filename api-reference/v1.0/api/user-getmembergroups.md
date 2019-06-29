@@ -4,12 +4,12 @@ description: 'Возвращает все группы, в которых сос
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a99aca467e34d82025a45d5a898235f5cc7bf368
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2871dd2bfcc2de54ddeead019a54598989c20e43
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35277982"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395200"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -23,9 +23,9 @@ ms.locfileid: "35277982"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All и Group.Read.All, User.Read и Group.Read.All,  User.Read.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
-| Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Для приложения                            |  User.Read.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

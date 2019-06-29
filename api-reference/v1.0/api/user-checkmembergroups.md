@@ -4,12 +4,12 @@ description: Проверка участия в указанном списке 
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb46306a7ea2298bec4abb9827d93787ca843f7e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 171dffcb912c2ac26ecc3cd01388299228ca44db
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274643"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395165"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -23,11 +23,9 @@ ms.locfileid: "35274643"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
-| Для приложения                            | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
-
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешений `User.Read.All` или `User.ReadWrite.All` возникает ошибка. Мы знаем об этой проблеме.
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, User.ReadWrite.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
+| Для приложения                            | User.Read.All и Group.Read.All, User.ReadWrite.All и Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

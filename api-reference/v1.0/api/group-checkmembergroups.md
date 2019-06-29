@@ -4,12 +4,12 @@ description: Проверка членства в указанном списк�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 0c0b850857b094567ba04c8c701227a6dda742bc
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9d76df33ac36ef936a1abfa873332c3be3aa0650
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275882"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395186"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -23,11 +23,11 @@ ms.locfileid: "35275882"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | _Group.Read.All_, Directory.Read.All Directory.ReadWrite.All                               |
+| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Приложение                            | Group.Read.All, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешения `Group.Read.All` возникает ошибка. Мы знаем об этой проблеме.
+
 
 ## <a name="http-request"></a>HTTP-запрос
 
