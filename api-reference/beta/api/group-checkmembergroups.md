@@ -4,12 +4,12 @@ description: Проверка членства в указанном списк�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 30cc5f43a0ca61b4ebae27854e53ee52180fad0b
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 524cfeff7a01de50d33224089557ecd62081dc77
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263416"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395151"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -25,11 +25,9 @@ ms.locfileid: "35263416"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированное (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
-
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешения `Group.Read.All` возникает ошибка. Мы знаем об этой проблеме.
+| Приложение                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP-запрос
 

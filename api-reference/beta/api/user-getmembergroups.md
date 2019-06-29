@@ -4,12 +4,12 @@ description: 'Возвращает все группы, в которых сос
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 60cc7819511816728dcd901d51174c75ba365f33
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b50a56dac343181f72a2c1eb102a1e609de15a21
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270331"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395193"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -25,9 +25,9 @@ ms.locfileid: "35270331"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadBasic. ALL и Group. Read. ALL, User. Read и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
-| Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Для приложений                            | User. Read. ALL и Group. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL            |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -4,12 +4,12 @@ description: Проверяет членство в указанном спис�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8aec6a92cfa802e0e5a33524a8ab087a68a5cccf
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 2b9bda05fdd07bddf8a179a69c9872d5fa61ed56
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260846"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395144"
 ---
 # <a name="check-member-groups"></a>Проверка членства в группах
 
@@ -23,9 +23,16 @@ ms.locfileid: "35260846"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All |
+|Для приложений | User.Read.All и Group.Read.All, Directory.Read.All |
+
+Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:
+- Используйте разрешения User. Read и Group. Read. ALL, чтобы проверить принадлежность к группам для вошедшего пользователя.
+- Используйте User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы проверить принадлежность к группам для любого пользователя.
+- Используйте разрешение Group. Read. ALL, чтобы проверить принадлежность к группам для группы.
+- Используйте разрешения Application. ReadWrite. ALL и Group. Read. ALL, чтобы проверить принадлежность к группам для субъекта-службы.
+- Используйте разрешение Directory. Read. ALL, чтобы проверить принадлежность к группам для объекта каталога.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +40,7 @@ ms.locfileid: "35260846"
 POST /me/checkMemberGroups
 POST /users/{id | userPrincipalName}/checkMemberGroups
 POST /groups/{id}/checkMemberGroups
-POST /servciePrincipals/{id}/checkMemberGroups
+POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>Заголовки запросов

@@ -4,12 +4,12 @@ description: Проверка участия в указанном списке 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7d8a017372fde8174f70a5a3f2b6960892b73880
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 1ca2f9d35cb5db8799adf6b5909130a922c24ed1
+ms.sourcegitcommit: 6d8bf390380b9434ba626d6dc5101afcf6ba6f8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270485"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35395179"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -25,11 +25,9 @@ ms.locfileid: "35270485"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированное (рабочая или учебная учетная запись)     | User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, User. ReadWrite. ALL и Group. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
 | Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                     |
-| Для приложения                            | ~~User.Read.All~~, ~~User.ReadWrite.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
-
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешений `User.Read.All` или `User.ReadWrite.All` возникает ошибка. Мы знаем об этой проблеме.
+| Для приложения                            | User. Read. ALL и Group. Read. ALL, User. ReadWrite. ALL и Group. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -83,7 +81,7 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -109,7 +107,7 @@ Content-length: 39
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_checkmembergroups-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_checkmembergroups-Javascript-snippets.md)]
 
 # <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
