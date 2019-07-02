@@ -10,6 +10,12 @@ items:
         href: overview.md
       - name: Службы в Microsoft Graph
         href: overview-major-services.md
+      - name: Новые возможности
+        items:
+          - name: Обзор новых возможностей
+            href: whats-new-overview.md
+          - name: Журнал изменений API
+            href: changelog.md
       - name: 'Пользователи, с которыми вы можете связаться'
         items:
           - name: Обзор
@@ -222,7 +228,7 @@ items:
       - name: Сайты и списки
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
-      - name: Социальная аналитика
+      - name: Социальная и рабочая аналитика
         items:
           - name: Обзор
             href: social-intel-concept-overview.md
@@ -293,7 +299,7 @@ items:
           - name: Уведомления об изменениях
             displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: webhooks.md
               - name: Учебник
                 href: /graph/tutorials/change-notifications
@@ -408,7 +414,7 @@ items:
             href: best-practices-concept.md
           - name: Известные проблемы
             href: known-issues.md
-          - name: Журнал изменений
+          - name: Журнал изменений API
             href: changelog.md
           - name: Ошибки
             href: errors.md
