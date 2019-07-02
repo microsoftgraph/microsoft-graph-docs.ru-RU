@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта п
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d9e8c24bd0581e2369441c2ea75e34f2ceb10f1c
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 33932d16ac51f385a66adfd6fd8010069b650bf2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266712"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417740"
 ---
 # <a name="get-mailfolder"></a>Получение объекта mailFolder
 
@@ -28,8 +28,8 @@ ms.locfileid: "35266712"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read, Mail.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read, Mail.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
 |Для приложений | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос

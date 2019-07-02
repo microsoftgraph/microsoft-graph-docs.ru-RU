@@ -4,12 +4,12 @@ description: Получение всех почтовых папок в почт
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 86e2ef795db5eb3fd2973854d982cb2d7742927a
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: be5b7d684c01dcc8fd22ee83d120ea67696a3c9d
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35270194"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417670"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -22,8 +22,8 @@ ms.locfileid: "35270194"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read, Mail.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read, Mail.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
 |Для приложений | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос

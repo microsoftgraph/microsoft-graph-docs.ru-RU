@@ -1,17 +1,17 @@
 ---
-title: Интегрирование социальной аналитики в приложение с помощью Microsoft Graph API
-description: Microsoft Graph поддерживает социальные жесты в социальном контексте пользователя и предоставляет доступ к полезным сведениям о пользователях и социальным данным.
+title: 'Используйте API Microsoft Graph для интеграции функций социальной и рабочей аналитики '
+description: Microsoft Graph поддерживает социальные жесты в социальном контексте пользователя и предоставляет доступ к полезным сведениям о пользователях и к социальным данным.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 45482d2e47c97b6c09302ab60ff9c031cef1e92a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0118902f42984a541c750f34db945bc0e7ede5f2
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345718"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417677"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Интегрирование социальной аналитики в приложение с помощью Microsoft Graph API
+# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Используйте API Microsoft Graph для интеграции функций социальной и рабочей аналитики 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,6 +22,14 @@ Microsoft Graph поддерживает социальные жесты в со
 Используйте ресурс [person](../resources/person.md) и API службы "Люди" для сбора сведений о пользователе, полученных из его почты, контактов и социальных сетей. Результаты упорядочиваются по релевантности на основании множества отношений общения, совместной работы и бизнес-связей. Вы можете просматривать, сортировать, отбирать, фильтровать или искать сведения о пользователях, основываясь на заданных условиях.
 
 - [Получение списка людей](../api/user-list-people.md)
+
+## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Помогите пользователям получить наиболее важные документы для работы
+
+Используйте API аналитики для определения наиболее важных документов для пользователя: 
+
+- Список [популярных документов](../api/insights-list-trending.md) пользователя
+- Список документов, [используемых](../api/insights-list-used.md) пользователем
+- Список документов, [к которым пользователю предоставлен доступ или к которым пользователь предоставил доступ](../api/insights-list-shared.md)
 
 ## <a name="manage--mentions"></a>Управление @упоминаниями
 
@@ -47,9 +55,3 @@ Include the next sentence when supporting events.
 
 - [Удаление упоминания](../api/message-delete.md#request-2) в сообщении
 
-## <a name="access-social-data-around-and-about-a-user"></a>Доступ к социальным данным о пользователе
-
-Office Graph собирает отношения между различными объектами в Office 365. С помощью Office Graph можно получать социальную аналитику по отдельным пользователям в Office 365.
-
-- Перечисление [популярных](../api/insights-list-trending.md) элементов, связанных с пользователем
-- Перечисление пользователей, [работавших](../api/user-list-people.md) с пользователем

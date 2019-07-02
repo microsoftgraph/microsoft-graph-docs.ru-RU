@@ -4,12 +4,12 @@ description: Список всех сообщений в почтовом ящи
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 11ec048d16906bd1a6c95304f7956a56852bfaf6
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 91aa4ed92eb396fc4977796755cb8e377f9eb5bb
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266636"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417727"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -22,8 +22,8 @@ ms.locfileid: "35266636"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read, Mail.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read, Mail.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
 |Для приложений | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
