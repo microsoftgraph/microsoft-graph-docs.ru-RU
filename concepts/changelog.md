@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 065bb9e52477d06e05ae055e920821db6e9d9a7a
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 42865c9c03f0f0bfc5e815e46b6d2ad04ef9bd47
+ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348679"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417747"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -19,14 +19,14 @@ ms.locfileid: "35348679"
 ## <a name="june-2019"></a>Июнь 2019 г.
 
 ### <a name="identity-protection-apis"></a>API защиты идентификации
-| **Тип изменения** | **Версия** | **Описание**                          |
+| **Тип изменения** | **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | Бета | Добавлен [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), представляющий определения рисков в службе защиты идентификации Azure AD. |
 
 
 ### <a name="identity-and-access"></a>Удостоверения и доступ
 
-| **Тип изменения** | **Версия** | **Описание**                  |
+| **Тип изменения** | **Version** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета  | Появился новый тип ресурса [applicationTemplate](/graph/api/resources/applicationtemplate.md). Этот тип поддерживает операции [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) и [get](/graph/api/applicationtemplate-get.md) с приложениями из коллекции Azure AD.|
 | Дополнение | Бета|Добавлены новые ресурсы: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
@@ -65,6 +65,12 @@ ms.locfileid: "35348679"
 |Дополнение|Бета|Добавлены элементы **rotateFileVaultKey** и **getFileVaultKey** для типа перечисления [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **sharedSecret** для типа перечисления [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены элементы **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** и **windows10IoTCoreCommercial** для типа перечисления [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta)|
+
+### <a name="outlook-mail"></a>Почта Outlook
+
+| **Тип изменения** | **Version**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлена поддержка разрешения Mail.ReadBasic в API для управления объектом mailFolder: [перечисление объектов mailfolder](/graph/api/user-list-mailfolders?view=graph-rest-beta), [получение объекта mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [перечисление дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) и [перечисление сообщений в папке почты](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Также добавлена поддержка Mail.ReadBasic в [разностном запросе для сообщения](/graph/api/message-delta?view=graph-rest-beta) и [разностном запросе для объекта mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
 
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
@@ -2703,7 +2709,7 @@ ms.locfileid: "35348679"
 | Дополнение        | Бета-версия        | Добавлена функция [getDeviceComplianceSettingStates](/graph/api/intune-deviceconfig-devicemanagement-getdevicecompliancesettingstates?view=graph-rest-beta) к объекту [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-beta) к объекту [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [deviceConfigurationDeviceActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-beta) к объекту [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta). |
-| Удаление        | Бета-версия        | Удалены следующие сложные типы:<br/>**enterpriseCloudResource**;<br/>**windowsInformationProtectionAppRule**;<br/>**windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate**<br/>**windowsInformationProtectionAppRuleDesktopTemplate**<br/>**windowsInformationProtectionAppRuleStoreAppTemplate**<br/>**windowsInformationProtectionAppRuleTemplate**<br/>**windowsInformationProtectionCorporateNetworkLocation**;<br/>**windowsInformationProtectionProtectedLocation**;<br/>**windowsInformationProtectionProtectedLocationEnterpriseCloudResources**<br/>**windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames**<br/>**windowsInformationProtectionProtectedLocationEnterpriseProxyServers**<br/>**windowsInformationProtectionProtectedLocationNeutralResources**<br/> |
+| Удаление        | Бета-версия        | Удалены следующие сложные типы:<br/>**enterpriseCloudResource**;<br/>**windowsInformationProtectionAppRule**;<br/>**windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate**<br/>**windowsInformationProtectionAppRuleDesktopTemplate**<br/>**windowsInformationProtectionAppRuleStoreAppTemplate**<br/>**windowsInformationProtectionAppRuleTemplate**<br/>**windowsInformationProtectionCorporateNetworkLocation**<br/>**windowsInformationProtectionProtectedLocation**;<br/>**windowsInformationProtectionProtectedLocationEnterpriseCloudResources**<br/>**windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames**<br/>**windowsInformationProtectionProtectedLocationEnterpriseProxyServers**<br/>**windowsInformationProtectionProtectedLocationNeutralResources**<br/> |
 | Изменение          | Бета-версия        | Добавлено свойство **deviceSharingAllowed** к объекту [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Удалено **deviceSharingBlocked** свойство из объекта [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **minimumRequiredSdkVersion** к объекту [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta). |
@@ -2853,7 +2859,7 @@ ms.locfileid: "35348679"
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Вместо термина "расширения данных Office 365" теперь используется "открытые расширения". |
-| Дополнение        | Бета-версия          | Добавлены ресурсы, которые поддерживают [открытые расширения](extensibility-overview.md#open-extensions): <br/>administrative unit;<br/>device;<br/>group<br/>organization;<br/>user.<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](extensibility-open-users.md). |
+| Дополнение        | Бета-версия          | Добавлены ресурсы, которые поддерживают [открытые расширения](extensibility-overview.md#open-extensions): <br/>administrative unit;<br/>device;<br/>group<br/>organization;<br/>user<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](extensibility-open-users.md). |
 
 ### <a name="directory-apis"></a>API каталогов
 
