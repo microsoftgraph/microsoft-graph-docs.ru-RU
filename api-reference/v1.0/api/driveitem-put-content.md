@@ -5,30 +5,30 @@ ms.date: 09/10/2017
 title: Отправка небольших файлов
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 716e97cc514b9cbef25baa5155fb456b87e7f1ea
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572719"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443954"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="73fd7-102">Отправка или замена содержимого элемента DriveItem</span><span class="sxs-lookup"><span data-stu-id="73fd7-102">Upload or replace the contents of a DriveItem</span></span>
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="c38db-102">Отправка или замена содержимого элемента DriveItem</span><span class="sxs-lookup"><span data-stu-id="c38db-102">Upload or replace the contents of a DriveItem</span></span>
 
-<span data-ttu-id="73fd7-p101">Используя простой API отправки, вы можете отправлять содержимое нового файла или обновлять содержимое существующего файла с помощью одного вызова API. Этот метод поддерживает файлы размером не более 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="73fd7-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
+<span data-ttu-id="c38db-p101">Используя простой API отправки, вы можете отправлять содержимое нового файла или обновлять содержимое существующего файла с помощью одного вызова API. Этот метод поддерживает файлы размером не более 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="c38db-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
 
-<span data-ttu-id="73fd7-105">Сведения о том, как отправлять большие файлы, см. в разделе [Отправка больших файлов с помощью сеанса отправки](driveitem-createuploadsession.md).</span><span class="sxs-lookup"><span data-stu-id="73fd7-105">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
+<span data-ttu-id="c38db-105">Сведения о том, как отправлять большие файлы, см. в разделе [Отправка больших файлов с помощью сеанса отправки](driveitem-createuploadsession.md).</span><span class="sxs-lookup"><span data-stu-id="c38db-105">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="73fd7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="73fd7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c38db-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c38db-106">Permissions</span></span>
 
-<span data-ttu-id="73fd7-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="73fd7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c38db-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c38db-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="73fd7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="73fd7-109">Permission type</span></span>      | <span data-ttu-id="73fd7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="73fd7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c38db-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c38db-109">Permission type</span></span>      | <span data-ttu-id="c38db-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c38db-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="73fd7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="73fd7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="73fd7-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="73fd7-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="73fd7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="73fd7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="73fd7-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="73fd7-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="73fd7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="73fd7-115">Application</span></span> | <span data-ttu-id="73fd7-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="73fd7-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c38db-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c38db-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c38db-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c38db-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c38db-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c38db-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c38db-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c38db-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c38db-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c38db-115">Application</span></span> | <span data-ttu-id="c38db-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c38db-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="73fd7-117">HTTP-запрос (для замены существующего элемента)</span><span class="sxs-lookup"><span data-stu-id="73fd7-117">HTTP request (to replace an existing item)</span></span>
+## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="c38db-117">HTTP-запрос (для замены существующего элемента)</span><span class="sxs-lookup"><span data-stu-id="c38db-117">HTTP request (to replace an existing item)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +40,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="73fd7-118">HTTP-запрос (для отправки нового файла)</span><span class="sxs-lookup"><span data-stu-id="73fd7-118">HTTP request (to upload a new file)</span></span>
+## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="c38db-118">HTTP-запрос (для отправки нового файла)</span><span class="sxs-lookup"><span data-stu-id="c38db-118">HTTP request (to upload a new file)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,17 +52,17 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
-## <a name="request-body"></a><span data-ttu-id="73fd7-119">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="73fd7-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c38db-119">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c38db-119">Request body</span></span>
 
-<span data-ttu-id="73fd7-120">Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.</span><span class="sxs-lookup"><span data-stu-id="73fd7-120">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
+<span data-ttu-id="c38db-120">Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.</span><span class="sxs-lookup"><span data-stu-id="c38db-120">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
 
-## <a name="response"></a><span data-ttu-id="73fd7-121">Ответ</span><span class="sxs-lookup"><span data-stu-id="73fd7-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c38db-121">Ответ</span><span class="sxs-lookup"><span data-stu-id="c38db-121">Response</span></span>
 
-<span data-ttu-id="73fd7-122">При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) для вновь созданного или обновленного файла в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="73fd7-122">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
+<span data-ttu-id="c38db-122">При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) для вновь созданного или обновленного файла в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="c38db-122">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
 
-## <a name="example-upload-a-new-file"></a><span data-ttu-id="73fd7-123">Пример (отправка нового файла)</span><span class="sxs-lookup"><span data-stu-id="73fd7-123">Example (upload a new file)</span></span>
+## <a name="example-upload-a-new-file"></a><span data-ttu-id="c38db-123">Пример (отправка нового файла)</span><span class="sxs-lookup"><span data-stu-id="c38db-123">Example (upload a new file)</span></span>
 
-<span data-ttu-id="73fd7-124">В этом примере показано, как отправить строку "The contents of the file goes here." (Здесь начинается содержимое файла.)</span><span class="sxs-lookup"><span data-stu-id="73fd7-124">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="73fd7-125">в файл FileB.txt в папке FolderA на диске пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="73fd7-125">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
+<span data-ttu-id="c38db-124">В этом примере показано, как отправить строку "The contents of the file goes here." (Здесь начинается содержимое файла.)</span><span class="sxs-lookup"><span data-stu-id="c38db-124">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="c38db-125">в файл FileB.txt в папке FolderA на диске пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="c38db-125">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -73,9 +73,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a><span data-ttu-id="73fd7-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="73fd7-126">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c38db-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="c38db-126">Response</span></span>
 
-<span data-ttu-id="73fd7-127">При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="73fd7-127">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+<span data-ttu-id="c38db-127">В случае успешного выполнения этот метод возвращает в тексте отклика ресурс [driveItem][item-resource] для созданного файла.</span><span class="sxs-lookup"><span data-stu-id="c38db-127">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -91,10 +91,12 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-updating-an-existing-file"></a><span data-ttu-id="73fd7-128">Пример (обновление существующего файла)</span><span class="sxs-lookup"><span data-stu-id="73fd7-128">Example (updating an existing file)</span></span>
+## <a name="example-updating-an-existing-file"></a><span data-ttu-id="c38db-128">Пример (обновление существующего файла)</span><span class="sxs-lookup"><span data-stu-id="c38db-128">Example (updating an existing file)</span></span>
 
-<span data-ttu-id="73fd7-129">В этом примере показано, как заменить содержимое файла с известным идентификатором.</span><span class="sxs-lookup"><span data-stu-id="73fd7-129">This example replaces the contents of a file with a known ID.</span></span>
+<span data-ttu-id="c38db-129">В этом примере показано, как заменить содержимое файла с известным идентификатором.</span><span class="sxs-lookup"><span data-stu-id="c38db-129">This example replaces the contents of a file with a known ID.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="c38db-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="c38db-130">--Http</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -103,10 +105,20 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c38db-131">C#</span><span class="sxs-lookup"><span data-stu-id="c38db-131">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="73fd7-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="73fd7-130">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c38db-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c38db-132">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="73fd7-131">При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="73fd7-131">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+---
+
+
+### <a name="response"></a><span data-ttu-id="c38db-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="c38db-133">Response</span></span>
+
+<span data-ttu-id="c38db-134">В случае успешного выполнения этот метод возвращает в тексте отклика ресурс [driveItem][item-resource] для созданного файла.</span><span class="sxs-lookup"><span data-stu-id="c38db-134">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -122,9 +134,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="73fd7-132">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="73fd7-132">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="c38db-135">Отклики с ошибками</span><span class="sxs-lookup"><span data-stu-id="c38db-135">Error responses</span></span>
 
-<span data-ttu-id="73fd7-133">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="73fd7-133">See [Error Responses][error-response] for details about how errors are returned.</span></span>
+<span data-ttu-id="c38db-136">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="c38db-136">See [Error Responses][error-response] for details about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -133,5 +145,7 @@ Content-Type: application/json
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation"
+  "section": "documentation",
+  "suppressions": [
+  ]
 } -->
