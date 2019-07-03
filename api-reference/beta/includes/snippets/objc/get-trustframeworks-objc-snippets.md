@@ -1,0 +1,31 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: f50427bef362fc01a793b87c54df4f50573035b2
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35505016"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/trustFramework/policies"]]];
+[urlRequest setHTTPMethod:@"GET"];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        NSError *jsonError = nil;
+        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        NSMutableArray *trustFrameworkPolicyList = [[NSMutableArray alloc] init];
+        trustFrameworkPolicyList = [jsonFinal valueForKey:@"value"];
+        MSGraphTrustFrameworkPolicy *trustFrameworkPolicy = [[MSGraphTrustFrameworkPolicy alloc] initWithDictionary:[trustFrameworkPolicyList objectAtIndex: 0] error:&nserror];
+
+}];
+
+[meDataTask execute];
+
+```
