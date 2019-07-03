@@ -1,0 +1,41 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 8b6648ba24c210116fc4c49652cf7a03ebb9568f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35514941"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/getMailTips"]]];
+[urlRequest setHTTPMethod:@"POST"];
+[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+
+NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
+
+NSMutableArray *emailAddressesList = [[NSMutableArray alloc] init];
+[emailAddressesList addObject: @"danas@contoso.onmicrosoft.com"];
+[emailAddressesList addObject: @"fannyd@contoso.onmicrosoft.com"];
+payloadDictionary[@"EmailAddresses"] = emailAddressesList;
+
+MSGraphMailTipsType *mailTipsOptions = [MSGraphMailTipsType automaticReplies];
+payloadDictionary[@"MailTipsOptions"] = mailTipsOptions;
+
+NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
+[urlRequest setHTTPBody:data];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        //Request Completed
+
+}];
+
+[meDataTask execute];
+
+```
