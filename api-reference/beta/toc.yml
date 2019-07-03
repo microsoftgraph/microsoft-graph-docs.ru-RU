@@ -8533,16 +8533,42 @@
           items:
             - name: Отчеты об удостоверениях и доступе
               items:
-                - name: Сводка по входу в приложение
-                  href: resources/applicationsigninsummary.md
+                - name: Вход в приложение
                   items:
-                    - name: Получение
-                      href: api/applicationsigninsummary-get.md
-                - name: Общие сведения о входе в приложение
-                  href: resources/applicationsignindetailedsummary.md
+                    - name: Сводка по входу
+                      href: resources/applicationsigninsummary.md
+                      items:
+                        - name: Получение сводки при входе
+                          href: api/applicationsigninsummary-get.md
+                    - name: Сведения о входе
+                      href: resources/applicationsignindetailedsummary.md
+                      items:
+                        - name: Получение сведений о входе
+                          href: api/applicationsignindetailedsummary-get.md
+                - name: Регистрация и использование
                   items:
-                    - name: Получение
-                      href: api/applicationsignindetailedsummary-get.md
+                    - name: Обзор
+                      href: resources/authenticationmethods-usage-insights-overview.md
+                    - name: Счетчик регистрации пользователей учетных данных
+                      href: resources/credentialuserregistrationcount.md
+                      items:
+                        - name: Получение счетчика регистрации
+                          href: api/reportroot-getcredentialuserregistrationcount.md
+                    - name: Сведения о регистрации пользователя с учетными данными
+                      href: resources/credentialuserregistrationdetails.md
+                      items:
+                        - name: Сведения о регистрации списка
+                          href: api/reportroot-list-credentialuserregistrationdetails.md
+                    - name: Сведения об использовании учетных данных пользователей
+                      href: resources/usercredentialusagedetails.md
+                      items:
+                        - name: Сведения об использовании списков
+                          href: api/reportroot-list-usercredentialusagedetails.md
+                    - name: Сводка по использованию учетных данных
+                      href: resources/credentialusagesummary.md
+                      items:
+                        - name: Получение сводки об использовании
+                          href: api/reportroot-getcredentialusagesummary.md
             - name: Отчеты об использовании Office 365
               items:
                 - name: Обзор
@@ -9248,7 +9274,7 @@
               items:
                 - name: Список
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: Создание
                   href: api/outlookuser-post-tasks.md
                 - name: Получение
                   href: api/outlooktask-get.md
@@ -9267,7 +9293,7 @@
               items:
                 - name: Список
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: Создание
                   href: api/outlookuser-post-taskfolders.md
                 - name: Получение
                   href: api/outlooktaskfolder-get.md

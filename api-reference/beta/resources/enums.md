@@ -1,13 +1,25 @@
 ---
 title: Значения перечисления
 description: Значения перечисления Microsoft Graph
-ms.openlocfilehash: 10660c7b44dc80145dd4a3ce14c9cdfc06da7743
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: dbaa9acc7636bdf629df347efd0f59398083eef3
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348700"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435964"
 ---
+### <a name="registrationauthmethod-values"></a>значения Регистратионаусмесод
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|Оффицефоне|
+|Секуритикуестион|
+|Аппнотификатион|
+|Аппкоде|
+|Алтернатемобилефоне|
+
 ### <a name="contactrelationship-values"></a>значения Контактрелатионшип
 
 |Элемент|Значение|Описание|
