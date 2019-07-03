@@ -4,12 +4,12 @@ description: 'Ответ на цепочку в беседе группы и д�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c4cbe8e1339d164f399152854d678c0179940c83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f01992144fc2eaa09fbd12b93cad57213fd1a0a4
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564220"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35442827"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -51,6 +51,8 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "conversationthread_reply"
@@ -69,6 +71,16 @@ Content-length: 1131
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/conversationthread-reply-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/conversationthread-reply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
@@ -87,5 +99,7 @@ HTTP/1.1 202 Accepted
   "description": "conversationThread: reply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

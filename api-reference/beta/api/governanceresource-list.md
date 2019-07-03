@@ -2,12 +2,12 @@
 title: Список Говернанцересаурцес
 description: Получение коллекции governanceResource, к которой у запрашивающего есть доступ.
 localization_priority: Normal
-ms.openlocfilehash: d4ecd7c1b9c7ae3dcaa00ce22042efcf97deaccb
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: dedbe5640ecd7435c6e7525fdbfa37e693d35c18
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35263527"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35440801"
 ---
 # <a name="list-governanceresources"></a>Список Говернанцересаурцес
 
@@ -39,12 +39,14 @@ GET /privilegedAccess/azureResources/resources
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceResource](../resources/governanceresource.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
 В этом примере выводится список всех ресурсов, к которым я могу получить доступ.
 ##### <a name="request"></a>Запрос
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_governanceresources"
@@ -52,6 +54,20 @@ GET /privilegedAccess/azureResources/resources
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-governanceresources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-governanceresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-governanceresources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
@@ -100,18 +116,6 @@ Content-Length: 1289
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_governanceresources-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_governanceresources-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_governanceresources-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -123,9 +127,6 @@ Content-Length: 1289
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/governanceresource-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/governanceresource-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/governanceresource-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

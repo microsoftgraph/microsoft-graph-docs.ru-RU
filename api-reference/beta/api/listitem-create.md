@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3cabdb44546492e05706885ba181785dcd05b5f2
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 8ccb8f1eaca5f32bd7b4820331a9aea5f6898e0d
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35266187"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449215"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 
@@ -44,6 +44,8 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 
 В примере ниже показано, как создать элемент списка общего назначения.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -58,6 +60,20 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## <a name="response"></a>Ответ
 
@@ -87,18 +103,6 @@ Content-type: application/json
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-listitem-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-listitem-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
@@ -113,9 +117,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "ListItem/Create",
   "suppressions": [
-    "Error: /api-reference/beta/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

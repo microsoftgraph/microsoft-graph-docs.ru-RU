@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Обновление файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3eb23e5657794a4ef4062cc8b36cc003055e38c2
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: a74fac49184d615b2e149374291560f7ed50e344
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35260006"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35436230"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
@@ -63,6 +63,8 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 В этом примере показано, как переименовать ресурс DriveItem и присвоить ему имя new-file-name.docx.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-item" } -->
 
 ```http
@@ -73,8 +75,22 @@ Content-type: application/json
   "name": "new-file-name.docx"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a>Ответ
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле ответа.
 
@@ -90,18 +106,6 @@ Content-type: application/json
   "file": { }
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update-item-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update-item-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update-item-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
@@ -118,9 +122,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Update",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

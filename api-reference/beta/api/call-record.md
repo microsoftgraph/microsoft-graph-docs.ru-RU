@@ -4,12 +4,12 @@ description: Запись вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4e864027297f9b96dd6ce3a1ecb08e59444c5cef
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: fad06769f81b9840b89a43cf3e759c86454edef0
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635724"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35438631"
 ---
 # <a name="call-record"></a>Call: Record
 
@@ -38,19 +38,19 @@ POST /applications/{id}/calls/{id}/record
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md) | Коллекция приглашений для воспроизведения (при наличии) до начала записи. Пользователи могут указать действие "Плайпромпт" отдельно или указать его как часть "запись", в основном все записи прецеедед по запросу. |
-|Баржеиналловед|Логический| Разрешить пользователям вводить варианты до завершения приглашения.                                                                 |
+|Баржеиналловед|Boolean| Разрешить пользователям вводить варианты до завершения приглашения.                                                                 |
 |Инитиалсиленцетимеаутинсекондс | Int32| Максимально допустимое время простоя при запуске операции записи до истечения времени ожидания и отказа операции. При воспроизведении приглашения этот таймер запускается после завершения приглашения. |
 |Макссиленцетимеаутинсекондс|Int32| Максимальное время ожидания тишины в секундах.|
 |Максрекорддуратионинсекондс|Int32| Максимальная длительность записи в секундах.|
-|Плайбип|Логический| Воспроизводит звуковой сигнал после воспроизведения приглашения.|
-|Стреамвхилерекординг|Логический|Если задано значение true, расположение ресурса будет указано сразу после начала записи. |
-|Стоптонес|Коллекция String|Остановка заданных тонов в конец записи.|
+|Плайбип|Boolean| Воспроизводит звуковой сигнал после воспроизведения приглашения.|
+|Стреамвхилерекординг|Boolean|Если задано значение true, расположение ресурса будет указано сразу после начала записи. |
+|Стоптонес|Коллекция строк|Остановка заданных тонов в конец записи.|
 |Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
@@ -62,6 +62,8 @@ POST /applications/{id}/calls/{id}/record
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-record"
@@ -93,6 +95,12 @@ Content-Length: 394
   "stopTones": [ "#", "11", "*" ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-record-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 
@@ -107,14 +115,6 @@ Content-Length: 394
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
-[!INCLUDE [sample-code](../includes/call-record-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
@@ -159,7 +159,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-record.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

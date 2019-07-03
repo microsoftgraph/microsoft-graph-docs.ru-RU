@@ -4,12 +4,12 @@ description: Используйте этот API, чтобы создать но
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 7663917e2433862dd4eddfb385214e71f42d1375
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 3897bbfba6a266a7099c49638454d229e6257e9e
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33592524"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35440234"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создание параметра каталога для групп
 
@@ -33,10 +33,10 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Обязательный|
+| Авторизация  | Bearer <token>. Обязательный|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Директорисеттинг](../resources/directorysetting.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -45,6 +45,8 @@ POST /groups/{id}/settings
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directorysetting_from_group"
@@ -67,7 +69,13 @@ Content-length: 222
   }
 }
 ```
-В тексте запроса добавьте представление объекта [Директорисеттинг](../resources/directorysetting.md) в формате JSON.
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+В тексте запроса добавьте представление объекта [директорисеттинг](../resources/directorysetting.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -94,14 +102,6 @@ Content-length: 244
   }
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_directorysetting_from_group-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -113,7 +113,6 @@ Content-length: 244
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/group-post-settings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
