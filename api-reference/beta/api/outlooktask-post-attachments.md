@@ -4,30 +4,30 @@ description: Используйте этот API, чтобы добавить в
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7d0ab132b119b12e5c7359551642009d389da05f
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 66512eca0fffb72f5f014efe8b06533dc2a294f2
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35265781"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35450613"
 ---
-# <a name="create-attachment"></a><span data-ttu-id="74e2b-103">Создание вложения</span><span class="sxs-lookup"><span data-stu-id="74e2b-103">Create attachment</span></span>
+# <a name="create-attachment"></a><span data-ttu-id="a10d2-103">Создание вложения</span><span class="sxs-lookup"><span data-stu-id="a10d2-103">Create attachment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="74e2b-104">Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md).</span><span class="sxs-lookup"><span data-stu-id="74e2b-104">Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).</span></span>
+<span data-ttu-id="a10d2-104">Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md).</span><span class="sxs-lookup"><span data-stu-id="a10d2-104">Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="74e2b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="74e2b-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a10d2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a10d2-105">Permissions</span></span>
 
-<span data-ttu-id="74e2b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="74e2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a10d2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a10d2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="74e2b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="74e2b-108">Permission type</span></span>      | <span data-ttu-id="74e2b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="74e2b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a10d2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a10d2-108">Permission type</span></span>      | <span data-ttu-id="a10d2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a10d2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="74e2b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="74e2b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="74e2b-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="74e2b-111">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="74e2b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="74e2b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74e2b-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="74e2b-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="74e2b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="74e2b-114">Application</span></span> | <span data-ttu-id="74e2b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="74e2b-115">Not supported.</span></span> |
+|<span data-ttu-id="a10d2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a10d2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a10d2-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a10d2-111">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="a10d2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a10d2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a10d2-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a10d2-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="a10d2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a10d2-114">Application</span></span> | <span data-ttu-id="a10d2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a10d2-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="74e2b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="74e2b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a10d2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a10d2-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,26 +36,28 @@ POST /me/outlook/tasks/{id}/attachments
 POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="74e2b-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="74e2b-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a10d2-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a10d2-117">Request headers</span></span>
 
-| <span data-ttu-id="74e2b-118">Имя</span><span class="sxs-lookup"><span data-stu-id="74e2b-118">Name</span></span>       | <span data-ttu-id="74e2b-119">Описание</span><span class="sxs-lookup"><span data-stu-id="74e2b-119">Description</span></span>|
+| <span data-ttu-id="a10d2-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a10d2-118">Name</span></span>       | <span data-ttu-id="a10d2-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a10d2-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="74e2b-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="74e2b-120">Authorization</span></span>  | <span data-ttu-id="74e2b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74e2b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="74e2b-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="74e2b-123">Content-Type</span></span> | <span data-ttu-id="74e2b-124">Строка, представляющая тип данных в теле объекта.</span><span class="sxs-lookup"><span data-stu-id="74e2b-124">A string that represents the type of data in the body of an entity.</span></span> <span data-ttu-id="74e2b-125">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="74e2b-125">Required.</span></span> |
+| <span data-ttu-id="a10d2-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a10d2-120">Authorization</span></span>  | <span data-ttu-id="a10d2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a10d2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a10d2-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a10d2-123">Content-Type</span></span> | <span data-ttu-id="a10d2-124">Строка, представляющая тип данных в теле объекта.</span><span class="sxs-lookup"><span data-stu-id="a10d2-124">A string that represents the type of data in the body of an entity.</span></span> <span data-ttu-id="a10d2-125">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="a10d2-125">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="74e2b-126">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="74e2b-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a10d2-126">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="a10d2-126">Request body</span></span>
 
-<span data-ttu-id="74e2b-127">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="74e2b-127">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="a10d2-127">Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a10d2-127">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="74e2b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="74e2b-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a10d2-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="a10d2-128">Response</span></span>
 
-<span data-ttu-id="74e2b-129">В случае успеха этот метод возвращает код отклика `201 Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="74e2b-129">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="a10d2-129">В случае успеха этот метод возвращает код отклика `201 Created` и объект [attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a10d2-129">If successful, this method returns `201 Created` response code and [attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="74e2b-130">Пример</span><span class="sxs-lookup"><span data-stu-id="74e2b-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a10d2-130">Пример</span><span class="sxs-lookup"><span data-stu-id="a10d2-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="74e2b-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="74e2b-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a10d2-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="a10d2-131">Request</span></span>
 
-<span data-ttu-id="74e2b-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74e2b-132">Here is an example of the request.</span></span>
+<span data-ttu-id="a10d2-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a10d2-132">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a10d2-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="a10d2-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_attachment_from_outlooktask"
@@ -74,10 +76,24 @@ Content-length: 142
   "isInline": true
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a10d2-134">C#</span><span class="sxs-lookup"><span data-stu-id="a10d2-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-attachment-from-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="74e2b-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="74e2b-133">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a10d2-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="a10d2-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-attachment-from-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="74e2b-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="74e2b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a10d2-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a10d2-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-attachment-from-outlooktask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="a10d2-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="a10d2-137">Response</span></span>
+
+<span data-ttu-id="a10d2-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a10d2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,18 +114,6 @@ Content-length: 162
   "id": "id-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="74e2b-137">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="74e2b-137">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="74e2b-138">C#</span><span class="sxs-lookup"><span data-stu-id="74e2b-138">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_attachment_from_outlooktask-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="74e2b-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="74e2b-139">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_attachment_from_outlooktask-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="74e2b-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="74e2b-140">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_attachment_from_outlooktask-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -121,9 +125,6 @@ Content-length: 162
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/outlooktask-post-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/outlooktask-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/outlooktask-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

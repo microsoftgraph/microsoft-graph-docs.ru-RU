@@ -5,44 +5,44 @@ ms.date: 03/15/2018
 title: Список страниц сайта
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 938624d1330a36b3f1318f09290b30bf9388e4ce
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: d4d4e525c048b6d2b76b9d361ab841526b07854f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35271535"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35457144"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="25d21-102">Перечисление страниц в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="25d21-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="aa807-102">Перечисление страниц в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="aa807-102">List the pages in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="25d21-103">Получение коллекции объектов [ситепаже][] из [списка][] страниц сайта на [сайте][]сайта.</span><span class="sxs-lookup"><span data-stu-id="25d21-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="25d21-104">Возвращаются все страницы сайта (с разбивкой на страницы).</span><span class="sxs-lookup"><span data-stu-id="25d21-104">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="aa807-103">Получение коллекции объектов [ситепаже][] из [списка][] страниц сайта на [сайте][]сайта.</span><span class="sxs-lookup"><span data-stu-id="aa807-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="aa807-104">Возвращаются все страницы сайта (с разбивкой на страницы).</span><span class="sxs-lookup"><span data-stu-id="aa807-104">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [сайта]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="25d21-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="25d21-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="aa807-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aa807-108">Permissions</span></span>
 
-<span data-ttu-id="25d21-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="25d21-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aa807-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa807-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="25d21-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="25d21-111">Permission type</span></span>      | <span data-ttu-id="25d21-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="25d21-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aa807-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aa807-111">Permission type</span></span>      | <span data-ttu-id="aa807-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="aa807-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="25d21-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="25d21-113">Delegated (work or school account)</span></span> | <span data-ttu-id="25d21-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25d21-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="25d21-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="25d21-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25d21-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="25d21-116">Not supported.</span></span>    |
-|<span data-ttu-id="25d21-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="25d21-117">Application</span></span> | <span data-ttu-id="25d21-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25d21-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="aa807-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aa807-113">Delegated (work or school account)</span></span> | <span data-ttu-id="aa807-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aa807-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="aa807-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aa807-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa807-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aa807-116">Not supported.</span></span>    |
+|<span data-ttu-id="aa807-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aa807-117">Application</span></span> | <span data-ttu-id="aa807-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aa807-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="25d21-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="25d21-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa807-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aa807-119">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="25d21-120">Пример</span><span class="sxs-lookup"><span data-stu-id="25d21-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aa807-120">Пример</span><span class="sxs-lookup"><span data-stu-id="aa807-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="25d21-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="25d21-121">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="aa807-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="aa807-121">Request</span></span>
 
 <!-- 
 { 
@@ -57,7 +57,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="25d21-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="25d21-122">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="aa807-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="aa807-122">Response</span></span>
 
 <!-- 
 { 
@@ -231,18 +231,6 @@ Content-type: application/json
     ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="25d21-123">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="25d21-123">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="25d21-124">C#</span><span class="sxs-lookup"><span data-stu-id="25d21-124">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-pages-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="25d21-125">Javascript</span><span class="sxs-lookup"><span data-stu-id="25d21-125">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-pages-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="25d21-126">Цель — C</span><span class="sxs-lookup"><span data-stu-id="25d21-126">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-pages-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -252,9 +240,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
   "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

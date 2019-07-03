@@ -4,58 +4,60 @@ description: Получение свойств и связей объекта **
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: da94541540989ef8e85c89e5fd64ea4b75867d91
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: e762035192bb3387f916e2bd7cf1772478952808
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35265900"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35450256"
 ---
-# <a name="get-online-meeting"></a><span data-ttu-id="1019f-103">Получение собраний по сети</span><span class="sxs-lookup"><span data-stu-id="1019f-103">Get Online Meeting</span></span>
+# <a name="get-online-meeting"></a><span data-ttu-id="f518a-103">Получение собраний по сети</span><span class="sxs-lookup"><span data-stu-id="f518a-103">Get Online Meeting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1019f-104">Получение свойств и связей объекта **онлинемитинг** .</span><span class="sxs-lookup"><span data-stu-id="1019f-104">Retrieve the properties and relationships of an **onlineMeeting** object.</span></span>
+<span data-ttu-id="f518a-104">Получение свойств и связей объекта **онлинемитинг** .</span><span class="sxs-lookup"><span data-stu-id="f518a-104">Retrieve the properties and relationships of an **onlineMeeting** object.</span></span>
 
-> <span data-ttu-id="1019f-105">**Примечание:** `GET` Метод ограничен [идентификатором конференции VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоконференций, и этот метод используется для получения сведений о присоединении к собранию.</span><span class="sxs-lookup"><span data-stu-id="1019f-105">**Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
-> <span data-ttu-id="1019f-106">Для обычных потоков, Bot может использовать `joinURL` для присоединения к собранию, а поиск не требуется.</span><span class="sxs-lookup"><span data-stu-id="1019f-106">For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.</span></span>
+> <span data-ttu-id="f518a-105">**Примечание:** `GET` Метод ограничен [идентификатором конференции VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоконференций, и этот метод используется для получения сведений о присоединении к собранию.</span><span class="sxs-lookup"><span data-stu-id="f518a-105">**Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.</span></span>
+> <span data-ttu-id="f518a-106">Для обычных потоков, Bot может использовать `joinURL` для присоединения к собранию, а поиск не требуется.</span><span class="sxs-lookup"><span data-stu-id="f518a-106">For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1019f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1019f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f518a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f518a-107">Permissions</span></span>
 
-<span data-ttu-id="1019f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1019f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f518a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f518a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1019f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1019f-110">Permission type</span></span>                        | <span data-ttu-id="1019f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1019f-111">Permissions (from least to most privileged)</span></span>           |
+| <span data-ttu-id="f518a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f518a-110">Permission type</span></span>                        | <span data-ttu-id="f518a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f518a-111">Permissions (from least to most privileged)</span></span>           |
 |:---------------------------------------|:------------------------------------------------------|
-| <span data-ttu-id="1019f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1019f-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="1019f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1019f-113">Not Supported.</span></span>                                        |
-| <span data-ttu-id="1019f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1019f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1019f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1019f-115">Not Supported.</span></span>                                        |
-| <span data-ttu-id="1019f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1019f-116">Application</span></span>                            | <span data-ttu-id="1019f-117">Онлинемитингс. Read. ALL, Онлинемитингс. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="1019f-117">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All</span></span> |
+| <span data-ttu-id="f518a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f518a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="f518a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f518a-113">Not Supported.</span></span>                                        |
+| <span data-ttu-id="f518a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f518a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f518a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f518a-115">Not Supported.</span></span>                                        |
+| <span data-ttu-id="f518a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f518a-116">Application</span></span>                            | <span data-ttu-id="f518a-117">Онлинемитингс. Read. ALL, Онлинемитингс. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="f518a-117">OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1019f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1019f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f518a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f518a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/{id}
 GET /applications/{id}/onlineMeetings/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1019f-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1019f-119">Optional query parameters</span></span>
-<span data-ttu-id="1019f-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="1019f-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f518a-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f518a-119">Optional query parameters</span></span>
+<span data-ttu-id="f518a-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="f518a-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1019f-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1019f-121">Request headers</span></span>
-| <span data-ttu-id="1019f-122">Имя</span><span class="sxs-lookup"><span data-stu-id="1019f-122">Name</span></span>          | <span data-ttu-id="1019f-123">Описание</span><span class="sxs-lookup"><span data-stu-id="1019f-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="f518a-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f518a-121">Request headers</span></span>
+| <span data-ttu-id="f518a-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f518a-122">Name</span></span>          | <span data-ttu-id="f518a-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f518a-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="1019f-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1019f-124">Authorization</span></span> | <span data-ttu-id="1019f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1019f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f518a-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f518a-124">Authorization</span></span> | <span data-ttu-id="f518a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f518a-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1019f-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1019f-127">Request body</span></span>
-<span data-ttu-id="1019f-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1019f-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f518a-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f518a-127">Request body</span></span>
+<span data-ttu-id="f518a-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f518a-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1019f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="1019f-129">Response</span></span>
-<span data-ttu-id="1019f-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [онлинемитинг](../resources/onlinemeeting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1019f-130">If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f518a-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="f518a-129">Response</span></span>
+<span data-ttu-id="f518a-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [онлинемитинг](../resources/onlinemeeting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f518a-130">If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1019f-131">Пример</span><span class="sxs-lookup"><span data-stu-id="1019f-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f518a-131">Пример</span><span class="sxs-lookup"><span data-stu-id="f518a-131">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1019f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1019f-132">Request</span></span>
-<span data-ttu-id="1019f-133">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1019f-133">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f518a-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="f518a-132">Request</span></span>
+<span data-ttu-id="f518a-133">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f518a-133">The following example shows the request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f518a-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="f518a-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-onlineMeeting"
@@ -63,10 +65,24 @@ GET /applications/{id}/onlineMeetings/{id}
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f518a-135">C#</span><span class="sxs-lookup"><span data-stu-id="f518a-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="1019f-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1019f-134">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f518a-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="f518a-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="1019f-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1019f-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f518a-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f518a-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="f518a-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="f518a-138">Response</span></span>
+
+> <span data-ttu-id="f518a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f518a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -129,18 +145,6 @@ Content-Length: 1574
   "subject": "Quarterly sales numbers"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="1019f-137">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="1019f-137">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="1019f-138">C#</span><span class="sxs-lookup"><span data-stu-id="1019f-138">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-onlineMeeting-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1019f-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="1019f-139">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-onlineMeeting-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="1019f-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="1019f-140">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get-onlineMeeting-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -152,9 +156,6 @@ Content-Length: 1574
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

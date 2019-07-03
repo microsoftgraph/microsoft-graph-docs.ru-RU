@@ -4,28 +4,28 @@ description: Добавление контакта в корневую папк�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fabcaa698c21b4a0118ca108861ffde4b751374a
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: e0f9b7010e900f7432e7a60916e314bdeec7fc15
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35269960"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35452853"
 ---
-# <a name="create-contact"></a><span data-ttu-id="e1df4-103">Создание объекта Contact</span><span class="sxs-lookup"><span data-stu-id="e1df4-103">Create Contact</span></span>
+# <a name="create-contact"></a><span data-ttu-id="ca35b-103">Создание объекта Contact</span><span class="sxs-lookup"><span data-stu-id="ca35b-103">Create Contact</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e1df4-104">Добавление контакта в корневую папку с контактами или конечную точку contacts другой папки с контактами.</span><span class="sxs-lookup"><span data-stu-id="e1df4-104">Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e1df4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e1df4-105">Permissions</span></span>
-<span data-ttu-id="e1df4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e1df4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ca35b-104">Добавление контакта в корневую папку с контактами или конечную точку contacts другой папки с контактами.</span><span class="sxs-lookup"><span data-stu-id="ca35b-104">Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ca35b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ca35b-105">Permissions</span></span>
+<span data-ttu-id="ca35b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca35b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e1df4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e1df4-108">Permission type</span></span>      | <span data-ttu-id="e1df4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e1df4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ca35b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ca35b-108">Permission type</span></span>      | <span data-ttu-id="ca35b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ca35b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e1df4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e1df4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e1df4-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1df4-111">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="e1df4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e1df4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1df4-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1df4-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="e1df4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e1df4-114">Application</span></span> | <span data-ttu-id="e1df4-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1df4-115">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="ca35b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ca35b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ca35b-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca35b-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="ca35b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ca35b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca35b-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca35b-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="ca35b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ca35b-114">Application</span></span> | <span data-ttu-id="ca35b-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca35b-115">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e1df4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e1df4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca35b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ca35b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/contacts
@@ -33,22 +33,24 @@ POST /users/{id | userPrincipalName}/contacts
 POST /me/contactFolders/{contactFolderId}/contacts
 POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 ```
-## <a name="request-headers"></a><span data-ttu-id="e1df4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e1df4-117">Request headers</span></span>
-| <span data-ttu-id="e1df4-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e1df4-118">Header</span></span>       | <span data-ttu-id="e1df4-119">Значение</span><span class="sxs-lookup"><span data-stu-id="e1df4-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ca35b-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ca35b-117">Request headers</span></span>
+| <span data-ttu-id="ca35b-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ca35b-118">Header</span></span>       | <span data-ttu-id="ca35b-119">Значение</span><span class="sxs-lookup"><span data-stu-id="ca35b-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e1df4-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e1df4-120">Authorization</span></span>  | <span data-ttu-id="e1df4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e1df4-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e1df4-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e1df4-123">Content-Type</span></span>  | <span data-ttu-id="e1df4-124">application/json</span><span class="sxs-lookup"><span data-stu-id="e1df4-124">application/json</span></span>  |
+| <span data-ttu-id="ca35b-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ca35b-120">Authorization</span></span>  | <span data-ttu-id="ca35b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ca35b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ca35b-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ca35b-123">Content-Type</span></span>  | <span data-ttu-id="ca35b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ca35b-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e1df4-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e1df4-125">Request body</span></span>
-<span data-ttu-id="e1df4-126">Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e1df4-126">In the request body, supply a JSON representation of [contact](../resources/contact.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca35b-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ca35b-125">Request body</span></span>
+<span data-ttu-id="ca35b-126">Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ca35b-126">In the request body, supply a JSON representation of [contact](../resources/contact.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e1df4-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="e1df4-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ca35b-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="ca35b-127">Response</span></span>
 
-<span data-ttu-id="e1df4-128">В случае успеха этот метод возвращает `201 Created` код отклика и объект [Contact](../resources/contact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e1df4-128">If successful, this method returns `201 Created` response code and [contact](../resources/contact.md) object in the response body.</span></span>
+<span data-ttu-id="ca35b-128">В случае успеха этот метод возвращает `201 Created` код отклика и объект [Contact](../resources/contact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ca35b-128">If successful, this method returns `201 Created` response code and [contact](../resources/contact.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e1df4-129">Пример</span><span class="sxs-lookup"><span data-stu-id="e1df4-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e1df4-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="e1df4-130">Request</span></span>
-<span data-ttu-id="e1df4-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e1df4-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ca35b-129">Пример</span><span class="sxs-lookup"><span data-stu-id="ca35b-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ca35b-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="ca35b-130">Request</span></span>
+<span data-ttu-id="ca35b-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ca35b-131">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="ca35b-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ca35b-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_contact_from_user"
@@ -81,10 +83,24 @@ Content-type: application/json
   ]
 }
 ```
-<span data-ttu-id="e1df4-132">Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e1df4-132">In the request body, supply a JSON representation of [contact](../resources/contact.md) object.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ca35b-133">C#</span><span class="sxs-lookup"><span data-stu-id="ca35b-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-contact-from-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="e1df4-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="e1df4-133">Response</span></span>
-<span data-ttu-id="e1df4-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e1df4-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ca35b-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="ca35b-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-contact-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ca35b-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ca35b-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-contact-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="ca35b-136">Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ca35b-136">In the request body, supply a JSON representation of [contact](../resources/contact.md) object.</span></span>
+
+##### <a name="response"></a><span data-ttu-id="ca35b-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="ca35b-137">Response</span></span>
+<span data-ttu-id="ca35b-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="ca35b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -165,23 +181,11 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="e1df4-137">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="e1df4-137">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="e1df4-138">C#</span><span class="sxs-lookup"><span data-stu-id="e1df4-138">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_contact_from_user-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e1df4-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1df4-139">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_contact_from_user-Javascript-snippets.md)]
+## <a name="see-also"></a><span data-ttu-id="ca35b-141">См. также</span><span class="sxs-lookup"><span data-stu-id="ca35b-141">See also</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="e1df4-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="e1df4-140">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_contact_from_user-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-## <a name="see-also"></a><span data-ttu-id="e1df4-141">См. также</span><span class="sxs-lookup"><span data-stu-id="e1df4-141">See also</span></span>
-
-- [<span data-ttu-id="e1df4-142">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="e1df4-142">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="e1df4-143">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="e1df4-143">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="ca35b-142">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="ca35b-142">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="ca35b-143">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="ca35b-143">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
@@ -196,9 +200,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-post-contacts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/user-post-contacts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-post-contacts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

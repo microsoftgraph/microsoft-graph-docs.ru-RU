@@ -2,56 +2,58 @@
 title: Получение privilegedRole
 description: 'Получение свойств и связей объекта Привилежедроле. '
 localization_priority: Normal
-ms.openlocfilehash: 6a8bb09ab6251d136ac5dfdfe74950e98de46b71
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 390cde81681b037610eb32fd67f4a6efda4c4b3f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35264234"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35445067"
 ---
-# <a name="get-privilegedrole"></a><span data-ttu-id="78464-103">Получение privilegedRole</span><span class="sxs-lookup"><span data-stu-id="78464-103">Get privilegedRole</span></span>
+# <a name="get-privilegedrole"></a><span data-ttu-id="6c870-103">Получение privilegedRole</span><span class="sxs-lookup"><span data-stu-id="6c870-103">Get privilegedRole</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78464-104">Получение свойств и связей объекта [привилежедроле](../resources/privilegedrole.md) .</span><span class="sxs-lookup"><span data-stu-id="78464-104">Retrieve the properties and relationships of [privilegedRole](../resources/privilegedrole.md) object.</span></span> 
+<span data-ttu-id="6c870-104">Получение свойств и связей объекта [привилежедроле](../resources/privilegedrole.md) .</span><span class="sxs-lookup"><span data-stu-id="6c870-104">Retrieve the properties and relationships of [privilegedRole](../resources/privilegedrole.md) object.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="78464-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="78464-105">Permissions</span></span>
-<span data-ttu-id="78464-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78464-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6c870-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6c870-105">Permissions</span></span>
+<span data-ttu-id="6c870-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6c870-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="78464-108">Запрашивающая сторона должна иметь одну из следующих ролей: привилегированный _Администратор ролей_, _глобальный администратор_, _администратор безопасности_или _средство чтения безопасности_.</span><span class="sxs-lookup"><span data-stu-id="78464-108">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span>
+<span data-ttu-id="6c870-108">Запрашивающая сторона должна иметь одну из следующих ролей: привилегированный _Администратор ролей_, _глобальный администратор_, _администратор безопасности_или _средство чтения безопасности_.</span><span class="sxs-lookup"><span data-stu-id="6c870-108">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span>
  
 
-|<span data-ttu-id="78464-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="78464-109">Permission type</span></span>      | <span data-ttu-id="78464-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="78464-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6c870-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6c870-109">Permission type</span></span>      | <span data-ttu-id="6c870-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6c870-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78464-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="78464-111">Delegated (work or school account)</span></span> | <span data-ttu-id="78464-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="78464-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="78464-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="78464-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78464-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78464-114">Not supported.</span></span>    |
-|<span data-ttu-id="78464-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="78464-115">Application</span></span> | <span data-ttu-id="78464-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78464-116">Not supported.</span></span> |
+|<span data-ttu-id="6c870-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6c870-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6c870-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6c870-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="6c870-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6c870-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c870-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c870-114">Not supported.</span></span>    |
+|<span data-ttu-id="6c870-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6c870-115">Application</span></span> | <span data-ttu-id="6c870-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c870-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78464-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="78464-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c870-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6c870-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedRoles/{id}
 GET /privilegedRoleAssignments/{id}/roleInfo
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="78464-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="78464-118">Optional query parameters</span></span>
-<span data-ttu-id="78464-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="78464-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6c870-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6c870-118">Optional query parameters</span></span>
+<span data-ttu-id="6c870-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="6c870-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="78464-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="78464-120">Request headers</span></span>
-| <span data-ttu-id="78464-121">Имя</span><span class="sxs-lookup"><span data-stu-id="78464-121">Name</span></span>      |<span data-ttu-id="78464-122">Описание</span><span class="sxs-lookup"><span data-stu-id="78464-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6c870-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6c870-120">Request headers</span></span>
+| <span data-ttu-id="6c870-121">Имя</span><span class="sxs-lookup"><span data-stu-id="6c870-121">Name</span></span>      |<span data-ttu-id="6c870-122">Описание</span><span class="sxs-lookup"><span data-stu-id="6c870-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="78464-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="78464-123">Authorization</span></span>  | <span data-ttu-id="78464-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78464-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6c870-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6c870-123">Authorization</span></span>  | <span data-ttu-id="6c870-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6c870-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="78464-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="78464-126">Request body</span></span>
-<span data-ttu-id="78464-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="78464-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c870-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6c870-126">Request body</span></span>
+<span data-ttu-id="6c870-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6c870-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="78464-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="78464-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6c870-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="6c870-128">Response</span></span>
 
-<span data-ttu-id="78464-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедроле](../resources/privilegedrole.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="78464-129">If successful, this method returns a `200 OK` response code and [privilegedRole](../resources/privilegedrole.md) object in the response body.</span></span>
+<span data-ttu-id="6c870-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедроле](../resources/privilegedrole.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6c870-129">If successful, this method returns a `200 OK` response code and [privilegedRole](../resources/privilegedrole.md) object in the response body.</span></span>
 
-<span data-ttu-id="78464-130">Обратите внимание, что клиент должен быть зарегистрирован в PIM.</span><span class="sxs-lookup"><span data-stu-id="78464-130">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="78464-131">В противном случае будет возвращен код состояния HTTP 403 запрещено.</span><span class="sxs-lookup"><span data-stu-id="78464-131">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="78464-132">Пример</span><span class="sxs-lookup"><span data-stu-id="78464-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="78464-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="78464-133">Request</span></span>
-<span data-ttu-id="78464-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="78464-134">Here is an example of the request.</span></span>
+<span data-ttu-id="6c870-130">Обратите внимание, что клиент должен быть зарегистрирован в PIM.</span><span class="sxs-lookup"><span data-stu-id="6c870-130">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="6c870-131">В противном случае будет возвращен код состояния HTTP 403 запрещено.</span><span class="sxs-lookup"><span data-stu-id="6c870-131">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="6c870-132">Пример</span><span class="sxs-lookup"><span data-stu-id="6c870-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6c870-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="6c870-133">Request</span></span>
+<span data-ttu-id="6c870-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6c870-134">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="6c870-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="6c870-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_privilegedrole"
@@ -59,8 +61,22 @@ GET /privilegedRoleAssignments/{id}/roleInfo
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="78464-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="78464-135">Response</span></span>
-<span data-ttu-id="78464-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78464-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="6c870-136">C#</span><span class="sxs-lookup"><span data-stu-id="6c870-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6c870-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="6c870-137">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-privilegedrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6c870-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="6c870-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="6c870-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="6c870-139">Response</span></span>
+<span data-ttu-id="6c870-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6c870-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,18 +92,6 @@ Content-length: 46
   "name": "name-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="78464-139">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="78464-139">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="78464-140">C#</span><span class="sxs-lookup"><span data-stu-id="78464-140">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_privilegedrole-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78464-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="78464-141">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_privilegedrole-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="78464-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="78464-142">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_privilegedrole-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,9 +103,6 @@ Content-length: 46
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/privilegedrole-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/privilegedrole-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/privilegedrole-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
