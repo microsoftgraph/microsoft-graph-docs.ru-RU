@@ -5,18 +5,18 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d3c22e67af690a28bb974a0334af7891f0c25cfb
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 88880fbe88c0bd702eefeac5bed9668aac12a356
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349445"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455184"
 ---
 # <a name="statusdetails-resource-type"></a>Тип ресурса Статусдетаилс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает состояние события подготовки и связанных с ним ошибок. Он наследуется от [статусбасе](/graph/api/resources/statusBase?view=graph-rest-beta) и используется только в том случае, если для параметра Status задано значение "failure".  
+Описывает состояние события подготовки и связанных с ним ошибок. Он наследуется от [статусбасе](/graph/api/resources/statusbase?view=graph-rest-beta) и используется только в том случае, если для параметра Status задано значение "failure".  
 
 ## <a name="properties"></a>Свойства
 

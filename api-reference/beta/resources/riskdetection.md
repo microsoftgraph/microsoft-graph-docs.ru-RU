@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 231d75798fb8c58e678fbe26a16c2bbb2299290c
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: de889892e023d5d6036ab1886534d94c4362d641
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349439"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35448593"
 ---
 # <a name="riskdetection-resource-type"></a>Тип ресурса Рискдетектион
 
@@ -29,7 +29,7 @@ Azure AD постоянно оценивает риск для пользова�
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Список Рискдетектион](../api/riskdetection-list.md) | Коллекция [рискдетектион](riskDetection.md)|Перечисление обнаруженных рисков и их свойств.|
+|[Список Рискдетектион](../api/riskdetection-list.md) | Коллекция [рискдетектион](riskdetection.md)|Перечисление обнаруженных рисков и их свойств.|
 |[Получение Рискдетектион](../api/riskdetection-get.md) | [Рискдетектион](riskdetection.md)|Получение определенного опасного обнаружения и его свойств.|
 
 ## <a name="properties"></a>Свойства
