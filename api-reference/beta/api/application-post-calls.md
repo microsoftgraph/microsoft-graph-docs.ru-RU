@@ -4,12 +4,12 @@ description: Создание нового звонка.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 25e716c25ee8d06f5564b8ac6b4e3f6476f0ce84
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 790a33297646eeb84d70708233089aca6f9f15bf
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636459"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439632"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -40,7 +40,7 @@ POST /applications/{id}/calls
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
 > **Примечание:** Свойства, отмеченные как `Server generated` , игнорируются при обработке. `POST` `app/calls`
@@ -57,6 +57,8 @@ POST /applications/{id}/calls
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-from-application"
@@ -104,6 +106,12 @@ Content-Type: application/json
   "tenantId": "tenantId-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 
@@ -159,14 +167,6 @@ Content-Type: application/json
   "tenantId": "tenantId-value"
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-call-from-application-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---establishing"></a>Установка уведомления
 
@@ -522,7 +522,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/application-post-calls.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

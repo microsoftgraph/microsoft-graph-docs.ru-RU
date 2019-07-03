@@ -4,12 +4,12 @@ description: Получение набора контактов, которые 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 80fa244e200cad408976112419c2c2e00b540d40
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c4e19d8243e1715b08a866965c5bf1e983392447
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33591592"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437693"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -52,8 +52,8 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | string  | application/json. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | строка  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
@@ -68,6 +68,8 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 
 Пример, в котором показано, как использовать маркеры состояния для отслеживания изменений сообщений в почтовой папке: [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages). Отслеживания контактов и отслеживания сообщений в папках отличаются, прежде всего, URL-адресами разностных запросов и возвращаемыми в откликах коллекциями (**contact** и **message** соответственно).
  
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contact_delta"
@@ -77,6 +79,16 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts/delta?$sele
 
 Prefer: odata.maxpagesize=2
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contact-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contact-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
@@ -110,16 +122,6 @@ Content-length: 337
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a>Пример кода для SDK
-# <a name="ctabcs"></a>[Языках](#tab/cs)
-[!INCLUDE [sample-code](../includes/contact_delta-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Язык](#tab/javascript)
-[!INCLUDE [sample-code](../includes/contact_delta-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="see-also"></a>См. также
 
@@ -136,8 +138,6 @@ Content-length: 337
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/contact-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

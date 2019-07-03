@@ -4,12 +4,12 @@ description: 'С помощью этого API можно добавить вл�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1b68777b98a3f956b0032318070531db2bf9c627
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 4dcbfed0e1401591083876baf29c2e87a4c935d1
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35276792"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35443947"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -69,6 +69,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
@@ -85,6 +87,20 @@ Content-length: 142
   "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 ##### <a name="response"></a>Ответ
@@ -112,29 +128,13 @@ Content-length: 202
 }
 
 ```
-#### <a name="sdk-sample-code"></a>Пример кода SDK
-# <a name="ctabcs"></a>[C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[Цель — C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Objective-C-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="example-item-attachment"></a>Пример (вложенный элемент)
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkpsDRVK"],
-  "name": "create_item_attachment_from_message"
-}-->
+
+<!-- { "blockType": "ignored" } -->
 
 ```
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
@@ -162,6 +162,7 @@ Content-length: 200
   }
 }
 ```
+
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -194,9 +195,5 @@ Content-length: 162
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
