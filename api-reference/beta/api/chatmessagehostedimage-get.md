@@ -4,12 +4,12 @@ description: Получение размещенного изображения 
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 41ffef10ce68e4d36399839dbcb8da7dd0eac69c
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: e2c2f3d36bdd4be1820af9e6d1f28c39c24afe90
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35085841"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437721"
 ---
 # <a name="get-chatmessagehostedimage"></a>Получение Чатмессажехостедимаже
 
@@ -50,7 +50,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и размещенный объект [Image](../resources/chatmessagehostedimage.md) в тексте отклика.
 
@@ -59,6 +59,8 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}
 ##### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel_message"
@@ -66,6 +68,20 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 
