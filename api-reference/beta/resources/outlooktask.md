@@ -4,12 +4,12 @@ description: 'Элемент Outlook, который может отслежив
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 819f2e30cce8b284e054a172c69bb1940770bca3
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 231cb227c33e9f58e0dbe87dbf832b86bf2f017f
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34109540"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35459603"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
@@ -55,7 +55,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|String|Имя пользователя, которому назначена задача.|
+|assignedTo|String|Имя пользователя, которому назначена задача в Outlook. Только для чтения.|
 |body|[itemBody](itembody.md)|Текст задачи, который обычно содержит сведения о задаче. Обратите внимание, что поддерживается только тип HTML.|
 |categories|Коллекция String|Категории, связанные с задачей. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенному пользователем.|
 |changeKey|String|Версия задачи.|
