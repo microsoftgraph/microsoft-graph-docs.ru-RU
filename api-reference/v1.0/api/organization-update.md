@@ -4,29 +4,29 @@ description: Обновление свойств объекта organization, д
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 41f8dd22d5d1327e4f8b65ab037dc9c46fa91d12
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 4201bed43327b17e808750d5f3f38f41e776bd77
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35274384"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447469"
 ---
-# <a name="update-organization"></a><span data-ttu-id="594b5-103">Обновление организации</span><span class="sxs-lookup"><span data-stu-id="594b5-103">Update organization</span></span>
+# <a name="update-organization"></a><span data-ttu-id="91dc0-103">Обновление организации</span><span class="sxs-lookup"><span data-stu-id="91dc0-103">Update organization</span></span>
 
-<span data-ttu-id="594b5-104">Обновление свойств объекта organization, для которого выполнена проверка подлинности.</span><span class="sxs-lookup"><span data-stu-id="594b5-104">Update the properties of the currently authenticated organization.</span></span> <span data-ttu-id="594b5-105">В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.</span><span class="sxs-lookup"><span data-stu-id="594b5-105">In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.</span></span>  <span data-ttu-id="594b5-106">**Идентификатор** также называется **tenantId** Организации.</span><span class="sxs-lookup"><span data-stu-id="594b5-106">The **ID** is also known as the **tenantId** of the organization.</span></span>
+<span data-ttu-id="91dc0-104">Обновление свойств объекта organization, для которого выполнена проверка подлинности.</span><span class="sxs-lookup"><span data-stu-id="91dc0-104">Update the properties of the currently authenticated organization.</span></span> <span data-ttu-id="91dc0-105">В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.</span><span class="sxs-lookup"><span data-stu-id="91dc0-105">In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.</span></span>  <span data-ttu-id="91dc0-106">**Идентификатор** также называется **tenantId** Организации.</span><span class="sxs-lookup"><span data-stu-id="91dc0-106">The **ID** is also known as the **tenantId** of the organization.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="594b5-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="594b5-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="91dc0-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="91dc0-107">Permissions</span></span>
 
-<span data-ttu-id="594b5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="594b5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="91dc0-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="91dc0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="594b5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="594b5-110">Permission type</span></span> | <span data-ttu-id="594b5-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="594b5-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="91dc0-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="91dc0-110">Permission type</span></span> | <span data-ttu-id="91dc0-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="91dc0-111">Permissions (from least to most privileged)</span></span> |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="594b5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="594b5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="594b5-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="594b5-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="594b5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="594b5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="594b5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="594b5-115">Not supported.</span></span>    |
-|<span data-ttu-id="594b5-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="594b5-116">Application</span></span> | <span data-ttu-id="594b5-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="594b5-117">Not supported.</span></span> |
+|<span data-ttu-id="91dc0-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="91dc0-112">Delegated (work or school account)</span></span> | <span data-ttu-id="91dc0-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="91dc0-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="91dc0-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="91dc0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="91dc0-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91dc0-115">Not supported.</span></span>    |
+|<span data-ttu-id="91dc0-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="91dc0-116">Application</span></span> | <span data-ttu-id="91dc0-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91dc0-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="594b5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="594b5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91dc0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="91dc0-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,32 +35,34 @@ PATCH /organization/{id}
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="594b5-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="594b5-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="91dc0-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="91dc0-119">Request headers</span></span>
 
-| <span data-ttu-id="594b5-120">Имя</span><span class="sxs-lookup"><span data-stu-id="594b5-120">Name</span></span>       | <span data-ttu-id="594b5-121">Тип</span><span class="sxs-lookup"><span data-stu-id="594b5-121">Type</span></span> | <span data-ttu-id="594b5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="594b5-122">Description</span></span>|
+| <span data-ttu-id="91dc0-120">Имя</span><span class="sxs-lookup"><span data-stu-id="91dc0-120">Name</span></span>       | <span data-ttu-id="91dc0-121">Тип</span><span class="sxs-lookup"><span data-stu-id="91dc0-121">Type</span></span> | <span data-ttu-id="91dc0-122">Описание</span><span class="sxs-lookup"><span data-stu-id="91dc0-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="594b5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="594b5-123">Authorization</span></span>  | <span data-ttu-id="594b5-124">string</span><span class="sxs-lookup"><span data-stu-id="594b5-124">string</span></span>  | <span data-ttu-id="594b5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="594b5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="91dc0-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="91dc0-123">Authorization</span></span>  | <span data-ttu-id="91dc0-124">string</span><span class="sxs-lookup"><span data-stu-id="91dc0-124">string</span></span>  | <span data-ttu-id="91dc0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="91dc0-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="594b5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="594b5-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="91dc0-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="91dc0-127">Request body</span></span>
 
-<span data-ttu-id="594b5-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="594b5-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="594b5-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="594b5-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="594b5-130">Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="594b5-130">For best performance, you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="91dc0-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="91dc0-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="91dc0-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="91dc0-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="91dc0-130">Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="91dc0-130">For best performance, you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="594b5-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="594b5-131">Property</span></span>     | <span data-ttu-id="594b5-132">Тип</span><span class="sxs-lookup"><span data-stu-id="594b5-132">Type</span></span>   |<span data-ttu-id="594b5-133">Описание</span><span class="sxs-lookup"><span data-stu-id="594b5-133">Description</span></span>|
+| <span data-ttu-id="91dc0-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="91dc0-131">Property</span></span>     | <span data-ttu-id="91dc0-132">Тип</span><span class="sxs-lookup"><span data-stu-id="91dc0-132">Type</span></span>   |<span data-ttu-id="91dc0-133">Описание</span><span class="sxs-lookup"><span data-stu-id="91dc0-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="594b5-134">marketingNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="594b5-134">marketingNotificationEmails</span></span>|<span data-ttu-id="594b5-135">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="594b5-135">String collection</span></span>|                                        <span data-ttu-id="594b5-136">**Примечание.** Значение NULL не допускается.</span><span class="sxs-lookup"><span data-stu-id="594b5-136">**Notes**: not nullable.</span></span>            |
-|<span data-ttu-id="594b5-137">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="594b5-137">privacyProfile</span></span>|[<span data-ttu-id="594b5-138">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="594b5-138">privacyProfile</span></span>](../resources/privacyprofile.md)|<span data-ttu-id="594b5-139">Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).</span><span class="sxs-lookup"><span data-stu-id="594b5-139">The privacy profile of an organization (set statementUrl and contactEmail).</span></span>            |
-|<span data-ttu-id="594b5-140">securityComplianceNotificationMails</span><span class="sxs-lookup"><span data-stu-id="594b5-140">securityComplianceNotificationMails</span></span>|<span data-ttu-id="594b5-141">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="594b5-141">String collection</span></span>||
-|<span data-ttu-id="594b5-142">securityComplianceNotificationPhones</span><span class="sxs-lookup"><span data-stu-id="594b5-142">securityComplianceNotificationPhones</span></span>|<span data-ttu-id="594b5-143">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="594b5-143">String collection</span></span>||
-|<span data-ttu-id="594b5-144">technicalNotificationMails</span><span class="sxs-lookup"><span data-stu-id="594b5-144">technicalNotificationMails</span></span>|<span data-ttu-id="594b5-145">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="594b5-145">String collection</span></span>|                                        <span data-ttu-id="594b5-146">**Примечание.** Значение NULL не допускается.</span><span class="sxs-lookup"><span data-stu-id="594b5-146">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="91dc0-134">marketingNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="91dc0-134">marketingNotificationEmails</span></span>|<span data-ttu-id="91dc0-135">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="91dc0-135">String collection</span></span>|                                        <span data-ttu-id="91dc0-136">**Примечание.** Значение NULL не допускается.</span><span class="sxs-lookup"><span data-stu-id="91dc0-136">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="91dc0-137">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="91dc0-137">privacyProfile</span></span>|[<span data-ttu-id="91dc0-138">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="91dc0-138">privacyProfile</span></span>](../resources/privacyprofile.md)|<span data-ttu-id="91dc0-139">Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).</span><span class="sxs-lookup"><span data-stu-id="91dc0-139">The privacy profile of an organization (set statementUrl and contactEmail).</span></span>            |
+|<span data-ttu-id="91dc0-140">securityComplianceNotificationMails</span><span class="sxs-lookup"><span data-stu-id="91dc0-140">securityComplianceNotificationMails</span></span>|<span data-ttu-id="91dc0-141">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="91dc0-141">String collection</span></span>||
+|<span data-ttu-id="91dc0-142">securityComplianceNotificationPhones</span><span class="sxs-lookup"><span data-stu-id="91dc0-142">securityComplianceNotificationPhones</span></span>|<span data-ttu-id="91dc0-143">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="91dc0-143">String collection</span></span>||
+|<span data-ttu-id="91dc0-144">technicalNotificationMails</span><span class="sxs-lookup"><span data-stu-id="91dc0-144">technicalNotificationMails</span></span>|<span data-ttu-id="91dc0-145">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="91dc0-145">String collection</span></span>|                                        <span data-ttu-id="91dc0-146">**Примечание.** Значение NULL не допускается.</span><span class="sxs-lookup"><span data-stu-id="91dc0-146">**Notes**: not nullable.</span></span>            |
 
-## <a name="response"></a><span data-ttu-id="594b5-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="594b5-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="91dc0-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="91dc0-147">Response</span></span>
 
-<span data-ttu-id="594b5-148">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="594b5-148">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="91dc0-148">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="91dc0-148">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="594b5-149">Пример</span><span class="sxs-lookup"><span data-stu-id="594b5-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="91dc0-149">Пример</span><span class="sxs-lookup"><span data-stu-id="91dc0-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="594b5-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="594b5-150">Request</span></span>
+### <a name="request"></a><span data-ttu-id="91dc0-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="91dc0-150">Request</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="91dc0-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="91dc0-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organization"
@@ -83,8 +85,22 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="91dc0-152">C#</span><span class="sxs-lookup"><span data-stu-id="91dc0-152">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="594b5-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="594b5-151">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="91dc0-153">Javascript</span><span class="sxs-lookup"><span data-stu-id="91dc0-153">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="91dc0-154">Цель — C</span><span class="sxs-lookup"><span data-stu-id="91dc0-154">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="91dc0-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="91dc0-155">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -95,18 +111,6 @@ Content-length: 411
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="594b5-152">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="594b5-152">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="594b5-153">C#</span><span class="sxs-lookup"><span data-stu-id="594b5-153">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_organization-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="594b5-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="594b5-154">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_organization-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="594b5-155">Цель — C</span><span class="sxs-lookup"><span data-stu-id="594b5-155">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_organization-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -117,8 +121,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/organization-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/organization-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/organization-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

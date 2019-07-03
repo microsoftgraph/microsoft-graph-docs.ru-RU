@@ -4,49 +4,51 @@ description: Получение свойств и связей объекта Б
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: de7322ab85b9fb3fc0c40b9245071d494afd5abb
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: c6dc7d1eba5cfc7fe35016f092f1b24a10afc71a
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35258262"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35439359"
 ---
-# <a name="get-bookingappointment"></a><span data-ttu-id="71096-103">Получение Букингаппоинтмент</span><span class="sxs-lookup"><span data-stu-id="71096-103">Get bookingAppointment</span></span>
+# <a name="get-bookingappointment"></a><span data-ttu-id="c1645-103">Получение Букингаппоинтмент</span><span class="sxs-lookup"><span data-stu-id="c1645-103">Get bookingAppointment</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="71096-104">Получение свойств и связей объекта [букингаппоинтмент](../resources/bookingappointment.md) в указанном [букингбусинесс](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="71096-104">Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+<span data-ttu-id="c1645-104">Получение свойств и связей объекта [букингаппоинтмент](../resources/bookingappointment.md) в указанном [букингбусинесс](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="c1645-104">Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
 
-<span data-ttu-id="71096-105">Свойства **Start** и **End** всегда возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="71096-105">The **start** and **end** properties are always returned in UTC.</span></span>
-## <a name="permissions"></a><span data-ttu-id="71096-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="71096-106">Permissions</span></span>
-<span data-ttu-id="71096-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="71096-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c1645-105">Свойства **Start** и **End** всегда возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="c1645-105">The **start** and **end** properties are always returned in UTC.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1645-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c1645-106">Permissions</span></span>
+<span data-ttu-id="c1645-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c1645-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="71096-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="71096-109">Permission type</span></span>      | <span data-ttu-id="71096-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="71096-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c1645-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c1645-109">Permission type</span></span>      | <span data-ttu-id="c1645-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c1645-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="71096-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="71096-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="71096-112">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="71096-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="71096-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="71096-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="71096-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="71096-114">Not supported.</span></span>   |
-|<span data-ttu-id="71096-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="71096-115">Application</span></span> | <span data-ttu-id="71096-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="71096-116">Not supported.</span></span>  |
+|<span data-ttu-id="c1645-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c1645-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="c1645-112">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="c1645-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="c1645-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c1645-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1645-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1645-114">Not supported.</span></span>   |
+|<span data-ttu-id="c1645-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c1645-115">Application</span></span> | <span data-ttu-id="c1645-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1645-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="71096-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="71096-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1645-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c1645-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="71096-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="71096-118">Optional query parameters</span></span>
-<span data-ttu-id="71096-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="71096-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c1645-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c1645-118">Optional query parameters</span></span>
+<span data-ttu-id="c1645-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c1645-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="71096-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="71096-120">Request headers</span></span>
-| <span data-ttu-id="71096-121">Имя</span><span class="sxs-lookup"><span data-stu-id="71096-121">Name</span></span>      |<span data-ttu-id="71096-122">Описание</span><span class="sxs-lookup"><span data-stu-id="71096-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c1645-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c1645-120">Request headers</span></span>
+| <span data-ttu-id="c1645-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c1645-121">Name</span></span>      |<span data-ttu-id="c1645-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c1645-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="71096-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="71096-123">Authorization</span></span>  | <span data-ttu-id="71096-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="71096-124">Bearer {code}</span></span>|
+| <span data-ttu-id="c1645-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c1645-123">Authorization</span></span>  | <span data-ttu-id="c1645-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="c1645-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="71096-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="71096-125">Request body</span></span>
-<span data-ttu-id="71096-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="71096-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="71096-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="71096-127">Response</span></span>
-<span data-ttu-id="71096-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="71096-128">If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="71096-129">Пример</span><span class="sxs-lookup"><span data-stu-id="71096-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="71096-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="71096-130">Request</span></span>
-<span data-ttu-id="71096-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="71096-131">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c1645-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c1645-125">Request body</span></span>
+<span data-ttu-id="c1645-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c1645-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="c1645-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1645-127">Response</span></span>
+<span data-ttu-id="c1645-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c1645-128">If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c1645-129">Пример</span><span class="sxs-lookup"><span data-stu-id="c1645-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c1645-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="c1645-130">Request</span></span>
+<span data-ttu-id="c1645-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c1645-131">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="c1645-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="c1645-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingappointment"
@@ -54,8 +56,22 @@ GET /bookingBusinesses/{id}/appointments/{id}
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
-##### <a name="response"></a><span data-ttu-id="71096-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="71096-132">Response</span></span>
-<span data-ttu-id="71096-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="71096-133">The following is an example of the response.</span></span> <span data-ttu-id="71096-134">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="71096-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="71096-135">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="71096-135">All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c1645-133">C#</span><span class="sxs-lookup"><span data-stu-id="c1645-133">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingappointment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c1645-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="c1645-134">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingappointment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c1645-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c1645-135">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bookingappointment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="c1645-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1645-136">Response</span></span>
+<span data-ttu-id="c1645-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c1645-137">The following is an example of the response.</span></span> <span data-ttu-id="c1645-138">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="c1645-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c1645-139">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c1645-139">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,18 +183,6 @@ Content-type: application/json
     }
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="71096-136">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="71096-136">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="71096-137">C#</span><span class="sxs-lookup"><span data-stu-id="71096-137">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_bookingappointment-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="71096-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="71096-138">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_bookingappointment-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="71096-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="71096-139">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_bookingappointment-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -190,9 +194,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
