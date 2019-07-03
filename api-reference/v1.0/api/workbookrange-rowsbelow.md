@@ -4,55 +4,57 @@ description: Возвращает определенное количество 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2d7b88a62f65fe15434c431afc16e25d78e22be5
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: b51bb7fbe40e4c2f1316b42a96fcd4631864db54
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35278458"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35458749"
 ---
-# <a name="workbookrange-rowsbelow"></a><span data-ttu-id="78b3e-103">workbookRange: rowsBelow</span><span class="sxs-lookup"><span data-stu-id="78b3e-103">workbookRange: rowsBelow</span></span>
+# <a name="workbookrange-rowsbelow"></a><span data-ttu-id="08b14-103">workbookRange: rowsBelow</span><span class="sxs-lookup"><span data-stu-id="08b14-103">workbookRange: rowsBelow</span></span>
 
-<span data-ttu-id="78b3e-104">Возвращает определенное количество строк под заданным диапазоном.</span><span class="sxs-lookup"><span data-stu-id="78b3e-104">Gets certain number of rows below a given range.</span></span>
+<span data-ttu-id="08b14-104">Возвращает определенное количество строк под заданным диапазоном.</span><span class="sxs-lookup"><span data-stu-id="08b14-104">Gets certain number of rows below a given range.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="78b3e-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="78b3e-105">Permissions</span></span>
-<span data-ttu-id="78b3e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78b3e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="08b14-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="08b14-105">Permissions</span></span>
+<span data-ttu-id="08b14-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08b14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="78b3e-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="78b3e-108">Permission type</span></span>      | <span data-ttu-id="78b3e-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="78b3e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="08b14-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08b14-108">Permission type</span></span>      | <span data-ttu-id="08b14-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="08b14-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78b3e-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="78b3e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="78b3e-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78b3e-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="78b3e-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="78b3e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78b3e-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78b3e-113">Not supported.</span></span>    |
-|<span data-ttu-id="78b3e-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="78b3e-114">Application</span></span> | <span data-ttu-id="78b3e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78b3e-115">Not supported.</span></span> |
+|<span data-ttu-id="08b14-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08b14-110">Delegated (work or school account)</span></span> | <span data-ttu-id="08b14-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="08b14-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="08b14-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08b14-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08b14-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08b14-113">Not supported.</span></span>    |
+|<span data-ttu-id="08b14-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="08b14-114">Application</span></span> | <span data-ttu-id="08b14-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08b14-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78b3e-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="78b3e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08b14-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08b14-116">HTTP request</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="08b14-117">HTTP</span><span class="sxs-lookup"><span data-stu-id="08b14-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="78b3e-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="78b3e-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="08b14-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="08b14-118">Function parameters</span></span>
 
-| <span data-ttu-id="78b3e-118">Параметр</span><span class="sxs-lookup"><span data-stu-id="78b3e-118">Parameter</span></span>    | <span data-ttu-id="78b3e-119">Тип</span><span class="sxs-lookup"><span data-stu-id="78b3e-119">Type</span></span>   |<span data-ttu-id="78b3e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="78b3e-120">Description</span></span>|
+| <span data-ttu-id="08b14-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="08b14-119">Parameter</span></span>    | <span data-ttu-id="08b14-120">Тип</span><span class="sxs-lookup"><span data-stu-id="08b14-120">Type</span></span>   |<span data-ttu-id="08b14-121">Описание</span><span class="sxs-lookup"><span data-stu-id="08b14-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="78b3e-121">count</span><span class="sxs-lookup"><span data-stu-id="78b3e-121">count</span></span>|<span data-ttu-id="78b3e-122">Int32</span><span class="sxs-lookup"><span data-stu-id="78b3e-122">Int32</span></span>| <span data-ttu-id="78b3e-p102">Необязательный. Количество строк, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.</span><span class="sxs-lookup"><span data-stu-id="78b3e-p102">Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
+|<span data-ttu-id="08b14-122">count</span><span class="sxs-lookup"><span data-stu-id="08b14-122">count</span></span>|<span data-ttu-id="08b14-123">Int32</span><span class="sxs-lookup"><span data-stu-id="08b14-123">Int32</span></span>| <span data-ttu-id="08b14-p102">Необязательный. Количество строк, включаемых в полученный диапазон. Чтобы создать диапазон за пределами текущего диапазона, используйте положительное число. Вы также можете использовать отрицательное число, чтобы создать диапазон в рамках текущего диапазона. Значение по умолчанию — 1.</span><span class="sxs-lookup"><span data-stu-id="08b14-p102">Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="78b3e-128">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="78b3e-128">Request headers</span></span>
-| <span data-ttu-id="78b3e-129">Имя</span><span class="sxs-lookup"><span data-stu-id="78b3e-129">Name</span></span>       | <span data-ttu-id="78b3e-130">Описание</span><span class="sxs-lookup"><span data-stu-id="78b3e-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="08b14-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08b14-129">Request headers</span></span>
+| <span data-ttu-id="08b14-130">Имя</span><span class="sxs-lookup"><span data-stu-id="08b14-130">Name</span></span>       | <span data-ttu-id="08b14-131">Описание</span><span class="sxs-lookup"><span data-stu-id="08b14-131">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="78b3e-131">Авторизация</span><span class="sxs-lookup"><span data-stu-id="78b3e-131">Authorization</span></span>  | <span data-ttu-id="78b3e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78b3e-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="78b3e-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="78b3e-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="78b3e-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="78b3e-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="08b14-132">Авторизация</span><span class="sxs-lookup"><span data-stu-id="08b14-132">Authorization</span></span>  | <span data-ttu-id="08b14-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="08b14-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="08b14-135">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="08b14-135">Workbook-Session-Id</span></span>  | <span data-ttu-id="08b14-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="08b14-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="78b3e-137">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="78b3e-137">Request body</span></span>
-<span data-ttu-id="78b3e-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="78b3e-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="08b14-138">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="08b14-138">Request body</span></span>
+<span data-ttu-id="08b14-139">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="08b14-139">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="78b3e-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="78b3e-139">Response</span></span>
-<span data-ttu-id="78b3e-140">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="78b3e-140">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="08b14-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b14-140">Response</span></span>
+<span data-ttu-id="08b14-141">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="08b14-141">If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78b3e-141">Пример</span><span class="sxs-lookup"><span data-stu-id="78b3e-141">Example</span></span>
-<span data-ttu-id="78b3e-142">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="78b3e-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="78b3e-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="78b3e-143">Request</span></span>
-<span data-ttu-id="78b3e-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="78b3e-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="08b14-142">Пример</span><span class="sxs-lookup"><span data-stu-id="08b14-142">Example</span></span>
+<span data-ttu-id="08b14-143">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="08b14-143">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="08b14-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="08b14-144">Request</span></span>
+<span data-ttu-id="08b14-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="08b14-145">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -62,9 +64,25 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="08b14-146">C#</span><span class="sxs-lookup"><span data-stu-id="08b14-146">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsbelow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="78b3e-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="78b3e-145">Response</span></span>
-<span data-ttu-id="78b3e-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78b3e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="08b14-147">Javascript</span><span class="sxs-lookup"><span data-stu-id="08b14-147">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsbelow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="08b14-148">Цель — C</span><span class="sxs-lookup"><span data-stu-id="08b14-148">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/workbookrange-rowsbelow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="08b14-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b14-149">Response</span></span>
+<span data-ttu-id="08b14-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="08b14-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="08b14-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="08b14-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,23 +102,11 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="78b3e-149">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="78b3e-149">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="78b3e-150">C#</span><span class="sxs-lookup"><span data-stu-id="78b3e-150">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78b3e-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="78b3e-151">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Javascript-snippets.md)]
+<span data-ttu-id="08b14-154">При вызове без `count` параметра эта функция принимает значение по умолчанию, равное одной строке.</span><span class="sxs-lookup"><span data-stu-id="08b14-154">If called without the `count` parameter, this function defaults to one row.</span></span>
 
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="78b3e-152">Цель — C</span><span class="sxs-lookup"><span data-stu-id="78b3e-152">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<span data-ttu-id="78b3e-153">При вызове без `count` параметра эта функция принимает значение по умолчанию, равное одной строке.</span><span class="sxs-lookup"><span data-stu-id="78b3e-153">If called without the `count` parameter, this function defaults to one row.</span></span>
-
-##### <a name="request"></a><span data-ttu-id="78b3e-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="78b3e-154">Request</span></span>
-<span data-ttu-id="78b3e-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="78b3e-155">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="08b14-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="08b14-155">Request</span></span>
+<span data-ttu-id="08b14-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="08b14-156">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -110,9 +116,23 @@ Content-length: 157
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="08b14-157">C#</span><span class="sxs-lookup"><span data-stu-id="08b14-157">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsbelow-nocount-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a><span data-ttu-id="78b3e-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="78b3e-156">Response</span></span>
-<span data-ttu-id="78b3e-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78b3e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="08b14-158">Javascript</span><span class="sxs-lookup"><span data-stu-id="08b14-158">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsbelow-nocount-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="08b14-159">Цель — C</span><span class="sxs-lookup"><span data-stu-id="08b14-159">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/workbookrange-rowsbelow-nocount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="08b14-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="08b14-160">Response</span></span>
+<span data-ttu-id="08b14-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="08b14-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,18 +151,6 @@ Content-type: application/json
   "columnIndex": 99
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="78b3e-160">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="78b3e-160">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="78b3e-161">C#</span><span class="sxs-lookup"><span data-stu-id="78b3e-161">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow_nocount-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78b3e-162">Javascript</span><span class="sxs-lookup"><span data-stu-id="78b3e-162">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow_nocount-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="78b3e-163">Цель — C</span><span class="sxs-lookup"><span data-stu-id="78b3e-163">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow_nocount-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -152,10 +160,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/workbookrange-rowsbelow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
