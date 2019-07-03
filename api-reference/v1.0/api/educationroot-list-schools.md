@@ -4,29 +4,29 @@ description: Получение списка всех объектов school.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bcb2d3d0b47e57b155b2e001d5d3f74a8bc3f164
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 9dd70e0ab162c3718f108d01dfdc5a63118fae76
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35275119"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35449892"
 ---
-# <a name="list-educationschools"></a><span data-ttu-id="3f1b2-103">Перечисление educationSchools</span><span class="sxs-lookup"><span data-stu-id="3f1b2-103">List educationSchools</span></span>
+# <a name="list-educationschools"></a><span data-ttu-id="7cc50-103">Перечисление educationSchools</span><span class="sxs-lookup"><span data-stu-id="7cc50-103">List educationSchools</span></span>
 
-<span data-ttu-id="3f1b2-104">Получение списка всех объектов school.</span><span class="sxs-lookup"><span data-stu-id="3f1b2-104">Retrieve a list of all school objects.</span></span>
+<span data-ttu-id="7cc50-104">Получение списка всех объектов school.</span><span class="sxs-lookup"><span data-stu-id="7cc50-104">Retrieve a list of all school objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3f1b2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3f1b2-105">Permissions</span></span>
-<span data-ttu-id="3f1b2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3f1b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7cc50-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7cc50-105">Permissions</span></span>
+<span data-ttu-id="7cc50-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cc50-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3f1b2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3f1b2-108">Permission type</span></span>      | <span data-ttu-id="3f1b2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3f1b2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7cc50-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7cc50-108">Permission type</span></span>      | <span data-ttu-id="7cc50-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7cc50-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3f1b2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3f1b2-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="3f1b2-111">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="3f1b2-111">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="3f1b2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3f1b2-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3f1b2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3f1b2-113">Not supported.</span></span>  |
-|<span data-ttu-id="3f1b2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3f1b2-114">Application</span></span> | <span data-ttu-id="3f1b2-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3f1b2-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="7cc50-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7cc50-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="7cc50-111">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="7cc50-111">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="7cc50-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7cc50-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="7cc50-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cc50-113">Not supported.</span></span>  |
+|<span data-ttu-id="7cc50-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7cc50-114">Application</span></span> | <span data-ttu-id="7cc50-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cc50-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="3f1b2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3f1b2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7cc50-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7cc50-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="3f1b2-117">\`\`\`http GET /education/schools</span><span class="sxs-lookup"><span data-stu-id="3f1b2-117">\`\`\`http GET /education/schools</span></span>
+<span data-ttu-id="7cc50-117">\`\`\`http GET /education/schools</span><span class="sxs-lookup"><span data-stu-id="7cc50-117">\`\`\`http GET /education/schools</span></span>
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -43,6 +43,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schools"
@@ -50,10 +52,24 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/education/schools
 ```
-##### <a name="response"></a><span data-ttu-id="3f1b2-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="3f1b2-118">Response</span></span>
-<span data-ttu-id="3f1b2-119">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3f1b2-119">The following is an example of the response.</span></span> 
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7cc50-118">C#</span><span class="sxs-lookup"><span data-stu-id="7cc50-118">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="3f1b2-p102">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3f1b2-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7cc50-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="7cc50-119">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7cc50-120">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7cc50-120">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="7cc50-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cc50-121">Response</span></span>
+<span data-ttu-id="7cc50-122">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7cc50-122">The following is an example of the response.</span></span> 
+
+><span data-ttu-id="7cc50-p102">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7cc50-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -100,18 +116,6 @@ Content-length: 345
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="3f1b2-122">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="3f1b2-122">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="3f1b2-123">C#</span><span class="sxs-lookup"><span data-stu-id="3f1b2-123">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3f1b2-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="3f1b2-124">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="3f1b2-125">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3f1b2-125">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/get_schools-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -122,8 +126,5 @@ Content-length: 345
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/educationroot-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

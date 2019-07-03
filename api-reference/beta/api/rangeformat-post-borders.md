@@ -4,28 +4,28 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 05676c69de7815ae51bd2b77e66580a153617612
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 8743c22ff91e926a64a24cfa20017e103d554414
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35267531"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35455723"
 ---
-# <a name="create-rangeborder"></a><span data-ttu-id="da2c9-103">Создание объекта RangeBorder</span><span class="sxs-lookup"><span data-stu-id="da2c9-103">Create RangeBorder</span></span>
+# <a name="create-rangeborder"></a><span data-ttu-id="b0470-103">Создание объекта RangeBorder</span><span class="sxs-lookup"><span data-stu-id="b0470-103">Create RangeBorder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da2c9-104">С помощью этого API можно создать объект RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="da2c9-104">Use this API to create a new RangeBorder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="da2c9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da2c9-105">Permissions</span></span>
-<span data-ttu-id="da2c9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da2c9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b0470-104">С помощью этого API можно создать объект RangeBorder.</span><span class="sxs-lookup"><span data-stu-id="b0470-104">Use this API to create a new RangeBorder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b0470-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b0470-105">Permissions</span></span>
+<span data-ttu-id="b0470-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b0470-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="da2c9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da2c9-108">Permission type</span></span>      | <span data-ttu-id="da2c9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da2c9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b0470-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b0470-108">Permission type</span></span>      | <span data-ttu-id="b0470-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b0470-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="da2c9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da2c9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="da2c9-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="da2c9-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="da2c9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da2c9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da2c9-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="da2c9-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="da2c9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da2c9-114">Application</span></span> | <span data-ttu-id="da2c9-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da2c9-115">Not supported.</span></span> |
+|<span data-ttu-id="b0470-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b0470-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b0470-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b0470-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b0470-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b0470-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0470-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b0470-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b0470-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b0470-114">Application</span></span> | <span data-ttu-id="b0470-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b0470-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="da2c9-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da2c9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b0470-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b0470-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/format/borders
@@ -33,22 +33,24 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="da2c9-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da2c9-117">Request headers</span></span>
-| <span data-ttu-id="da2c9-118">Имя</span><span class="sxs-lookup"><span data-stu-id="da2c9-118">Name</span></span>       | <span data-ttu-id="da2c9-119">Описание</span><span class="sxs-lookup"><span data-stu-id="da2c9-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b0470-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b0470-117">Request headers</span></span>
+| <span data-ttu-id="b0470-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b0470-118">Name</span></span>       | <span data-ttu-id="b0470-119">Описание</span><span class="sxs-lookup"><span data-stu-id="b0470-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="da2c9-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="da2c9-120">Authorization</span></span>  | <span data-ttu-id="da2c9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da2c9-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="da2c9-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="da2c9-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="da2c9-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="da2c9-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b0470-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b0470-120">Authorization</span></span>  | <span data-ttu-id="b0470-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b0470-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b0470-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b0470-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="b0470-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="b0470-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="da2c9-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="da2c9-126">Request body</span></span>
-<span data-ttu-id="da2c9-127">В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da2c9-127">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b0470-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b0470-126">Request body</span></span>
+<span data-ttu-id="b0470-127">В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b0470-127">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da2c9-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="da2c9-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b0470-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b0470-128">Response</span></span>
 
-<span data-ttu-id="da2c9-129">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="da2c9-129">If successful, this method returns `201 Created` response code and [workbookRangeBorder](../resources/workbookrangeborder.md) object in the response body.</span></span>
+<span data-ttu-id="b0470-129">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукранжебордер](../resources/workbookrangeborder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b0470-129">If successful, this method returns `201 Created` response code and [workbookRangeBorder](../resources/workbookrangeborder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da2c9-130">Пример</span><span class="sxs-lookup"><span data-stu-id="da2c9-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="da2c9-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="da2c9-131">Request</span></span>
-<span data-ttu-id="da2c9-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da2c9-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b0470-130">Пример</span><span class="sxs-lookup"><span data-stu-id="b0470-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b0470-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="b0470-131">Request</span></span>
+<span data-ttu-id="b0470-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b0470-132">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="b0470-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="b0470-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_rangeborder_from_rangeformat"
@@ -66,9 +68,23 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-<span data-ttu-id="da2c9-133">В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da2c9-133">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="da2c9-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="da2c9-134">Response</span></span>
-<span data-ttu-id="da2c9-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="da2c9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b0470-134">C#</span><span class="sxs-lookup"><span data-stu-id="b0470-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-rangeborder-from-rangeformat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b0470-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="b0470-135">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-rangeborder-from-rangeformat-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b0470-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="b0470-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-rangeborder-from-rangeformat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+<span data-ttu-id="b0470-137">В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/workbookrangeborder.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b0470-137">In the request body, supply a JSON representation of [workbookRangeBorder](../resources/workbookrangeborder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="b0470-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="b0470-138">Response</span></span>
+<span data-ttu-id="b0470-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b0470-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,18 +103,6 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="da2c9-138">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="da2c9-138">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="da2c9-139">C#</span><span class="sxs-lookup"><span data-stu-id="da2c9-139">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_rangeborder_from_rangeformat-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="da2c9-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="da2c9-140">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_rangeborder_from_rangeformat-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="da2c9-141">Цель — C</span><span class="sxs-lookup"><span data-stu-id="da2c9-141">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create_rangeborder_from_rangeformat-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -110,9 +114,6 @@ Content-length: 136
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/rangeformat-post-borders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

@@ -4,53 +4,55 @@ description: Блокировка и разблокировка, позволя�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 39e837656289f14978e15f723ddbc39fd4f80d8e
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+ms.openlocfilehash: 0d5ce8eef48fe85441ffa89d2cc346f4765cffc5
+ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35261056"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35437336"
 ---
-# <a name="update-conversationthread"></a><span data-ttu-id="709a4-103">Обновление объекта conversationThread</span><span class="sxs-lookup"><span data-stu-id="709a4-103">Update conversationthread</span></span>
+# <a name="update-conversationthread"></a><span data-ttu-id="bee99-103">Обновление объекта conversationThread</span><span class="sxs-lookup"><span data-stu-id="bee99-103">Update conversationthread</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="709a4-104">Блокировка и разблокировка, позволяющие разрешить или предотвратить дальнейшую публикацию записей в цепочке.</span><span class="sxs-lookup"><span data-stu-id="709a4-104">Lock or unlock a thread, to allow or avoid further posting to the thread.</span></span>
-## <a name="permissions"></a><span data-ttu-id="709a4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="709a4-105">Permissions</span></span>
-<span data-ttu-id="709a4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="709a4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bee99-104">Блокировка и разблокировка, позволяющие разрешить или предотвратить дальнейшую публикацию записей в цепочке.</span><span class="sxs-lookup"><span data-stu-id="bee99-104">Lock or unlock a thread, to allow or avoid further posting to the thread.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bee99-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bee99-105">Permissions</span></span>
+<span data-ttu-id="bee99-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bee99-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="709a4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="709a4-108">Permission type</span></span>      | <span data-ttu-id="709a4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="709a4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bee99-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bee99-108">Permission type</span></span>      | <span data-ttu-id="bee99-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bee99-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="709a4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="709a4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="709a4-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="709a4-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="709a4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="709a4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="709a4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="709a4-113">Not supported.</span></span>    |
-|<span data-ttu-id="709a4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="709a4-114">Application</span></span> | <span data-ttu-id="709a4-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="709a4-115">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="bee99-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bee99-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bee99-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bee99-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bee99-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bee99-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bee99-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bee99-113">Not supported.</span></span>    |
+|<span data-ttu-id="bee99-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bee99-114">Application</span></span> | <span data-ttu-id="bee99-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bee99-115">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="709a4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="709a4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bee99-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bee99-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="709a4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="709a4-117">Request headers</span></span>
-| <span data-ttu-id="709a4-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="709a4-118">Header</span></span>       | <span data-ttu-id="709a4-119">Значение</span><span class="sxs-lookup"><span data-stu-id="709a4-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="bee99-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bee99-117">Request headers</span></span>
+| <span data-ttu-id="bee99-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bee99-118">Header</span></span>       | <span data-ttu-id="bee99-119">Значение</span><span class="sxs-lookup"><span data-stu-id="bee99-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="709a4-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="709a4-120">Authorization</span></span>  | <span data-ttu-id="709a4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="709a4-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="709a4-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="709a4-123">Content-Type</span></span>  | <span data-ttu-id="709a4-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="709a4-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="bee99-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bee99-120">Authorization</span></span>  | <span data-ttu-id="bee99-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bee99-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="bee99-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bee99-123">Content-Type</span></span>  | <span data-ttu-id="bee99-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bee99-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="709a4-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="709a4-126">Request body</span></span>
-<span data-ttu-id="709a4-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="709a4-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bee99-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bee99-126">Request body</span></span>
+<span data-ttu-id="bee99-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="bee99-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="709a4-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="709a4-130">Property</span></span>     | <span data-ttu-id="709a4-131">Тип</span><span class="sxs-lookup"><span data-stu-id="709a4-131">Type</span></span>   |<span data-ttu-id="709a4-132">Описание</span><span class="sxs-lookup"><span data-stu-id="709a4-132">Description</span></span>|
+| <span data-ttu-id="bee99-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="bee99-130">Property</span></span>     | <span data-ttu-id="bee99-131">Тип</span><span class="sxs-lookup"><span data-stu-id="bee99-131">Type</span></span>   |<span data-ttu-id="bee99-132">Описание</span><span class="sxs-lookup"><span data-stu-id="bee99-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="709a4-133">isLocked</span><span class="sxs-lookup"><span data-stu-id="709a4-133">isLocked</span></span>|<span data-ttu-id="709a4-134">Логическое</span><span class="sxs-lookup"><span data-stu-id="709a4-134">Boolean</span></span>|<span data-ttu-id="709a4-p105">Указывает, заблокирована ли цепочка. Чтобы запретить добавление сообщений, задайте значение `true`.</span><span class="sxs-lookup"><span data-stu-id="709a4-p105">Indicates if the thread is locked. Set to `true` to disallow posting.</span></span>|
+|<span data-ttu-id="bee99-133">isLocked</span><span class="sxs-lookup"><span data-stu-id="bee99-133">isLocked</span></span>|<span data-ttu-id="bee99-134">Логическое</span><span class="sxs-lookup"><span data-stu-id="bee99-134">Boolean</span></span>|<span data-ttu-id="bee99-p105">Указывает, заблокирована ли цепочка. Чтобы запретить добавление сообщений, задайте значение `true`.</span><span class="sxs-lookup"><span data-stu-id="bee99-p105">Indicates if the thread is locked. Set to `true` to disallow posting.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="709a4-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="709a4-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bee99-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="bee99-137">Response</span></span>
 
-<span data-ttu-id="709a4-138">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [conversationThread](../resources/conversationthread.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="709a4-138">If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="709a4-139">Пример</span><span class="sxs-lookup"><span data-stu-id="709a4-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="709a4-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="709a4-140">Request</span></span>
-<span data-ttu-id="709a4-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="709a4-141">Here is an example of the request.</span></span>
+<span data-ttu-id="bee99-138">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [conversationThread](../resources/conversationthread.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="bee99-138">If successful, this method returns a `200 OK` response code and updated [conversationThread](../resources/conversationthread.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bee99-139">Пример</span><span class="sxs-lookup"><span data-stu-id="bee99-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bee99-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="bee99-140">Request</span></span>
+<span data-ttu-id="bee99-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bee99-141">Here is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="bee99-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="bee99-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_conversationthread"
@@ -65,8 +67,22 @@ Content-length: 419
   "isLocked": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="709a4-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="709a4-142">Response</span></span>
-<span data-ttu-id="709a4-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="709a4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bee99-143">C#</span><span class="sxs-lookup"><span data-stu-id="bee99-143">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-conversationthread-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bee99-144">Javascript</span><span class="sxs-lookup"><span data-stu-id="bee99-144">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-conversationthread-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bee99-145">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bee99-145">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-conversationthread-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="bee99-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="bee99-146">Response</span></span>
+<span data-ttu-id="bee99-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bee99-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,18 +119,6 @@ Content-length: 419
   "isLocked": true
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="709a4-146">Пример кода SDK</span><span class="sxs-lookup"><span data-stu-id="709a4-146">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="709a4-147">C#</span><span class="sxs-lookup"><span data-stu-id="709a4-147">C#</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_conversationthread-Cs-snippets.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="709a4-148">Javascript</span><span class="sxs-lookup"><span data-stu-id="709a4-148">Javascript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_conversationthread-Javascript-snippets.md)]
-
-# <a name="objective-ctabobjective-c"></a>[<span data-ttu-id="709a4-149">Цель — C</span><span class="sxs-lookup"><span data-stu-id="709a4-149">Objective-C</span></span>](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/update_conversationthread-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -126,9 +130,6 @@ Content-length: 419
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/conversationthread-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
