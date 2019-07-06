@@ -4,12 +4,12 @@ description: Обновление свойств объекта Грауппол
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3857e4f7b1ec5f25401f1317cdfa413952989732
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 130e66b47459958cbc32c2e9b64e2968018825cd
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984739"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576391"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Обновление Граупполицидефинитионфиле
 
@@ -57,6 +57,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
 |Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|последним|String|Версия редакции, связанная с файлом.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
@@ -72,27 +73,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 Content-type: application/json
-Content-length: 325
-
-{
-  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "languageCodes": [
-    "Language Codes value"
-  ],
-  "targetPrefix": "Target Prefix value",
-  "targetNamespace": "Target Namespace value",
-  "policyType": "admxIngested"
-}
-```
-
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 438
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
@@ -104,12 +85,32 @@ Content-Length: 438
   "targetPrefix": "Target Prefix value",
   "targetNamespace": "Target Namespace value",
   "policyType": "admxIngested",
+  "revision": "Revision value"
+}
+```
+
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 471
+
+{
+  "@odata.type": "#microsoft.graph.groupPolicyDefinitionFile",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "languageCodes": [
+    "Language Codes value"
+  ],
+  "targetPrefix": "Target Prefix value",
+  "targetNamespace": "Target Namespace value",
+  "policyType": "admxIngested",
+  "revision": "Revision value",
   "id": "940aa2a1-a2a1-940a-a1a2-0a94a1a20a94",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

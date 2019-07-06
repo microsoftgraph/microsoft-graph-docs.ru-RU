@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25b75c46d1fcb7dbcc5b25e2acace4e129ae89bd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 5de84a8867e14737611b6d10ab7d2c69159e22b2
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964698"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576475"
 ---
 # <a name="create-grouppolicypresentationlistbox"></a>Создание Граупполиципресентатионлистбокс
 
@@ -54,10 +54,11 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |ЕксплиЦитвалуе|Boolean|Если этот параметр задан, пользователь должен указать значение подраздела реестра и имя подраздела реестра. В списке показаны два столбца: один для имени и один для данных. Значение по умолчанию  false.|
+|Валуепрефикс|String|Пока не задокументировано.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионлистбокс](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -67,12 +68,13 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 Content-type: application/json
-Content-length: 125
+Content-length: 165
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationListBox",
   "label": "Label value",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "Value Prefix value"
 }
 ```
 
@@ -81,18 +83,17 @@ Content-length: 125
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 238
+Content-Length: 278
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationListBox",
   "label": "Label value",
   "id": "2e074c87-4c87-2e07-874c-072e874c072e",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "Value Prefix value"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Сущность представляет XML-файл ADMX (адм
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a872671186e55524002b2d0a5f85b2ce1bbf2466
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 384b59a2c9e1b669cd71b294c6420c13b95d1102
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975940"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576489"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>Тип ресурса Граупполицидефинитионфиле
 
@@ -34,6 +34,7 @@ ms.locfileid: "34975940"
 |Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
 |Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|последним|String|Версия редакции, связанная с файлом.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
@@ -61,12 +62,11 @@ ms.locfileid: "34975940"
   "targetPrefix": "String",
   "targetNamespace": "String",
   "policyType": "String",
+  "revision": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

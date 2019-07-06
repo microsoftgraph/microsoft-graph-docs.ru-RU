@@ -4,12 +4,12 @@ description: Представляет элемент списка ADMX и эле
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d24b70809eb08828b2cc037a7986c6d7b5e255ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: dd7e6c5c3d12719bdcc79aef0e0df4462175b4c1
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985341"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576482"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>Тип ресурса Граупполиципресентатионлистбокс
 
@@ -38,6 +38,7 @@ ms.locfileid: "34985341"
 |id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |ЕксплиЦитвалуе|Boolean|Если этот параметр задан, пользователь должен указать значение подраздела реестра и имя подраздела реестра. В списке показаны два столбца: один для имени и один для данных. Значение по умолчанию  false.|
+|Валуепрефикс|String|Н/Д|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -58,11 +59,10 @@ ms.locfileid: "34985341"
   "label": "String",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "explicitValue": true
+  "explicitValue": true,
+  "valuePrefix": "String"
 }
 ```
-
-
 
 
 

@@ -5,15 +5,11 @@ metadata:
   title: Обзор проверки подлинности Microsoft Graph
   description: 'Узнайте об основных понятиях OAuth 2.0 и о том, как получить маркеры для вызова API Microsoft Graph.'
   services: active-directory
-  author: danieldobalian
+  author: CelesteDG
   manager: CelesteDG
-  ms.service: active-directory
-  ms.subservice: develop
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
   ms.date: 04/26/2019
-  ms.author: dadobali
+  ms.reviewer: jawoods
 abstract:
   description: 'Узнайте, как проверять подлинность и работать с разрешениями для безопасного доступа к данным с помощью Microsoft Graph. Изучите документацию, приведенную ниже, чтобы узнать о регистрации приложений, библиотеках проверки подлинности, авторизации и других компонентах платформы Microsoft Identity, поддерживающих разработку Microsoft Graph.'
   aside:
@@ -43,10 +39,10 @@ sections:
               src: ../images/index/i_overview.svg
             title: Основы проверки подлинности
           - href: /graph/permissions-reference
-            html: <p>Узнайте больше о областях Microsoft Graph _Амп_ разрешений приложений.</p>
+            html: <p>Дополнительные сведения о областях Microsoft Graph & разрешений приложений.</p>
             image:
               src: ../images/index/i_code-edit.svg
-            title: Разрешения _Амп_ областей
+            title: Разрешения & областей
           - href: /graph/auth/auth-cloudsolutionprovider
             html: '<p>Разрешить приложениям доступ к данным, управляемым партнером.</p>'
             image:

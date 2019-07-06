@@ -3,19 +3,19 @@ title: Набор средств Microsoft Graph (Предварительная
 description: Набор средств Microsoft Graph — это набор независимых от платформы веб-компонентов и вспомогательных средств для доступа к Microsoft Graph и работы с ним.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e6d5974029625a8dd1bef0c7b981fcf2b36b747c
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: ca55500217ab23f9e6a2744da61f332e745af398
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243091"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576405"
 ---
 # <a name="microsoft-graph-toolkit-preview"></a>Набор средств Microsoft Graph (Предварительная версия)
 
 Набор средств Microsoft Graph — это набор независимых от платформы веб-компонентов и вспомогательных средств для доступа к Microsoft Graph и работы с ним. Все компоненты могут получать доступ к Microsoft Graph без необходимости настройки.
 
->[!NOTE]
->Эта библиотека находится в предварительной версии и предназначена для более ранней разработки. Мы планируем вносить изменения и улучшения для всех компонентов и интерфейсов API на основе отзывов сообщества.
+> [!NOTE]
+> Эта библиотека находится в предварительной версии и предназначена для более ранней разработки. Мы планируем вносить изменения и улучшения для всех компонентов и интерфейсов API на основе отзывов сообщества.
 
 ## <a name="get-started"></a>Начало работы
 
