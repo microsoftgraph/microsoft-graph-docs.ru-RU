@@ -3,18 +3,26 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 4e4c205c73524c9c26f5f0fe66300e29baf80f4b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5c5c364edb6ff8c0b840450b428cda649d4eba11
+ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447483"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "35576419"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
+
+## <a name="july-2019"></a>Июль 2019 г.
+
+### <a name="microsoft-intune-apis"></a>API Microsoft Intune
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлено свойство **revision** для объекта [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство **valuePrefix** для объекта [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta)|
 
 ## <a name="june-2019"></a>Июнь 2019 г.
 
@@ -24,15 +32,11 @@ ms.locfileid: "35447483"
 | :-------------- | :---------- | :--------------------------------------- |
 |Дополнение|Бета| Добавлены новые отчеты для получения сведений о регистрации пользователей и использовании действий:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) — создает отчет об использовании самостоятельного сброса паролей.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) — создает отчет о числе регистраций для самостоятельного сброса паролей и многофакторной проверки подлинности.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) — создает отчет об использовании самостоятельного сброса паролей и многофакторной проверки подлинности.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) — создает отчет об использовании самостоятельного сброса паролей для пользователя.</li></ul> |
 
-### <a name="identity-protection-apis"></a>API защиты идентификации
-| **Тип изменения** | **Version** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | Бета | Добавлен [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), представляющий определения рисков в службе защиты идентификации Azure AD. |
-
 ### <a name="identity-and-access"></a>Удостоверения и доступ
 
 | **Тип изменения** | **Version** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета | Добавлен [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), представляющий определения рисков в службе защиты идентификации Azure AD. |
 | Дополнение        | бета  | Появился новый тип ресурса [applicationTemplate](/graph/api/resources/applicationtemplate.md). Этот тип поддерживает операции [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) и [get](/graph/api/applicationtemplate-get.md) с приложениями из коллекции Azure AD.|
 | Дополнение | Бета|Добавлены новые ресурсы: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
 | Дополнение |Бета |Добавлена операция [перечисления provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta)</br>|                     |
@@ -2494,7 +2498,7 @@ ms.locfileid: "35447483"
 
 | **Тип изменения** | **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | 1.0        | Добавлены операции с [domains](/graph/api/resources/domain?view=graph-rest-1.0).<br/>Новые объекты:</br>[domain](/graph/api/resources/domain?view=graph-rest-1.0);<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0);<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0);<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0);<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0);<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0);<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0).<br/>Новые действия:</br>[verify](/graph/api/domain-verify?view=graph-rest-1.0) |
+| Дополнение        | 1.0        | Добавлены операции с [domains](/graph/api/resources/domain?view=graph-rest-1.0).<br/>Новые объекты:</br>[domain](/graph/api/resources/domain?view=graph-rest-1.0);<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0);<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0);<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0);<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0);<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0);<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0).<br/>Новые действия:</br>[verify](/graph/api/domain-verify?view=graph-rest-1.0). |
 
 ### <a name="added-contracts-to-v10"></a>Добавлены контракты в версии 1.0
 
