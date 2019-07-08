@@ -5,41 +5,41 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 868695eb6f3ab4ddd7354512477d4abcf0708d8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526302"
 ---
-# <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a><span data-ttu-id="6c5b7-106">Использование функций книг в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="6c5b7-106">Use workbook functions in Excel with Microsoft Graph</span></span>
+# <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a><span data-ttu-id="70be8-106">Использование функций книг в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="70be8-106">Use workbook functions in Excel with Microsoft Graph</span></span>
 
-<span data-ttu-id="6c5b7-107">Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /workbook/functions/{function-name}`.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-107">You can invoke any workbook function by using the following syntax: `POST /workbook/functions/{function-name}`.</span></span> <span data-ttu-id="6c5b7-108">Укажите аргументы функции в теле запроса с помощью объекта JSON.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-108">You provide the function argument(s) in the body using a JSON object.</span></span> <span data-ttu-id="6c5b7-109">Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-109">The function's resulting `value` and any `error` strings are returned in the function result object.</span></span> <span data-ttu-id="6c5b7-110">Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-110">The `error` value of `null` indicates successful execution of the function.</span></span>
+<span data-ttu-id="70be8-107">Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /workbook/functions/{function-name}`.</span><span class="sxs-lookup"><span data-stu-id="70be8-107">You can invoke any workbook function by using the following syntax: `POST /workbook/functions/{function-name}`.</span></span> <span data-ttu-id="70be8-108">Укажите аргументы функции в теле запроса с помощью объекта JSON.</span><span class="sxs-lookup"><span data-stu-id="70be8-108">You provide the function argument(s) in the body using a JSON object.</span></span> <span data-ttu-id="70be8-109">Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции.</span><span class="sxs-lookup"><span data-stu-id="70be8-109">The function's resulting `value` and any `error` strings are returned in the function result object.</span></span> <span data-ttu-id="70be8-110">Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.</span><span class="sxs-lookup"><span data-stu-id="70be8-110">The `error` value of `null` indicates successful execution of the function.</span></span>
 
-<span data-ttu-id="6c5b7-p103">Полный список поддерживаемых функций см. [здесь](https://support.office.com/ru-RU/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Имена определенных параметров и типы данных см. в сигнатуре функции.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-p103">The complete list of supported functions are listed [here](https://support.office.com/ru-RU/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.</span></span>
+<span data-ttu-id="70be8-p103">Полный список поддерживаемых функций см. [здесь](https://support.office.com/ru-RU/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Имена определенных параметров и типы данных см. в сигнатуре функции.</span><span class="sxs-lookup"><span data-stu-id="70be8-p103">The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.</span></span>
 
-<span data-ttu-id="6c5b7-113">_Важные примечания._</span><span class="sxs-lookup"><span data-stu-id="6c5b7-113">_Important notes:_</span></span>
-* <span data-ttu-id="6c5b7-114">Входной параметр range предоставляется с использованием объекта range вместо строки адреса range.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-114">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
-* <span data-ttu-id="6c5b7-115">Параметр index индексируется с 1, а не с 0, как в большинстве API.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-115">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span>
+<span data-ttu-id="70be8-113">_Важные примечания._</span><span class="sxs-lookup"><span data-stu-id="70be8-113">_Important notes:_</span></span>
+* <span data-ttu-id="70be8-114">Входной параметр range предоставляется с использованием объекта range вместо строки адреса range.</span><span class="sxs-lookup"><span data-stu-id="70be8-114">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
+* <span data-ttu-id="70be8-115">Параметр index индексируется с 1, а не с 0, как в большинстве API.</span><span class="sxs-lookup"><span data-stu-id="70be8-115">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span>
 
-<span data-ttu-id="6c5b7-116">Пример: **vlookup**.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-116">Example: **vlookup**</span></span>
+<span data-ttu-id="70be8-116">Пример: **vlookup**.</span><span class="sxs-lookup"><span data-stu-id="70be8-116">Example: **vlookup**</span></span>
 
-<span data-ttu-id="6c5b7-117">В электронной таблице Excel функция `vlookup` принимает следующие аргументы:</span><span class="sxs-lookup"><span data-stu-id="6c5b7-117">In an Excel spreadsheet, the `vlookup` function takes the following arguments:</span></span>
+<span data-ttu-id="70be8-117">В электронной таблице Excel функция `vlookup` принимает следующие аргументы:</span><span class="sxs-lookup"><span data-stu-id="70be8-117">In an Excel spreadsheet, the `vlookup` function takes the following arguments:</span></span>
 
-1. <span data-ttu-id="6c5b7-118">**lookup_value** (обязательный аргумент). Искомое значение.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-118">**lookup_value** (required) The value you want to look up.</span></span>
-2. <span data-ttu-id="6c5b7-119">**table_array** (обязательный аргумент). Диапазон ячеек, в котором находится искомое значение.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-119">**table_array** (required) The range of cells where the lookup value is located.</span></span> <span data-ttu-id="6c5b7-120">Чтобы функция ВПР работала правильно, искомое значение всегда должно находиться в первом столбце диапазона.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-120">Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly.</span></span> <span data-ttu-id="6c5b7-121">Например, если искомое значение находится в ячейке C2, диапазон должен начинаться со столбца C.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-121">For example, if your lookup value is in cell C2 then your range should start with C.</span></span>
-3. <span data-ttu-id="6c5b7-122">**col_index_num** (обязательный аргумент). Номер столбца в диапазоне, содержащем возвращаемое значение.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-122">**col_index_num** (required) The column number in the range that contains the return value.</span></span> <span data-ttu-id="6c5b7-123">Например, если вы укажете в качестве диапазона B2:D11, B будет первым столбцом, C — вторым и т. д.
-</span><span class="sxs-lookup"><span data-stu-id="6c5b7-123">For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.</span></span>
-4. <span data-ttu-id="6c5b7-124">**range_lookup** (необязательный аргумент). Логическое значение, указывающее режим работы функции **ВПР**: поиск приблизительного или точного совпадения.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-124">**range_lookup** (optional) The logical value that specifies whether you want **VLOOKUP** to find an approximate or an exact match.</span></span> <span data-ttu-id="6c5b7-125">Если необходимо, чтобы функция работала в режиме поиска приблизительного совпадения, укажите значение **TRUE**. Если необходимо, чтобы функция возвращала точные совладения, укажите значение **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-125">Specify **TRUE** if you want an approximate match or **FALSE** if you want an exact match of the return value.</span></span> <span data-ttu-id="6c5b7-126">Если вы не укажете значение, по умолчанию будет использовано значение TRUE, и функция будет возвращать приблизительные совпадения.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-126">If you don't specify anything, the default value will always be TRUE or approximate match.</span></span>
+1. <span data-ttu-id="70be8-118">**lookup_value** (обязательный аргумент). Искомое значение.</span><span class="sxs-lookup"><span data-stu-id="70be8-118">**lookup_value** (required) The value you want to look up.</span></span>
+2. <span data-ttu-id="70be8-119">**table_array** (обязательный аргумент). Диапазон ячеек, в котором находится искомое значение.</span><span class="sxs-lookup"><span data-stu-id="70be8-119">**table_array** (required) The range of cells where the lookup value is located.</span></span> <span data-ttu-id="70be8-120">Чтобы функция ВПР работала правильно, искомое значение всегда должно находиться в первом столбце диапазона.</span><span class="sxs-lookup"><span data-stu-id="70be8-120">Remember that the lookup value should always be in the first column in the range for VLOOKUP to work correctly.</span></span> <span data-ttu-id="70be8-121">Например, если искомое значение находится в ячейке C2, диапазон должен начинаться со столбца C.</span><span class="sxs-lookup"><span data-stu-id="70be8-121">For example, if your lookup value is in cell C2 then your range should start with C.</span></span>
+3. <span data-ttu-id="70be8-122">**col_index_num** (обязательный аргумент). Номер столбца в диапазоне, содержащем возвращаемое значение.</span><span class="sxs-lookup"><span data-stu-id="70be8-122">**col_index_num** (required) The column number in the range that contains the return value.</span></span> <span data-ttu-id="70be8-123">Например, если вы укажете в качестве диапазона B2:D11, B будет первым столбцом, C — вторым и т. д.
+</span><span class="sxs-lookup"><span data-stu-id="70be8-123">For example, if you specify B2: D11 as the range, you should count B as the first column, C as the second, and so on.</span></span>
+4. <span data-ttu-id="70be8-124">**range_lookup** (необязательный аргумент). Логическое значение, указывающее режим работы функции **ВПР**: поиск приблизительного или точного совпадения.</span><span class="sxs-lookup"><span data-stu-id="70be8-124">**range_lookup** (optional) The logical value that specifies whether you want **VLOOKUP** to find an approximate or an exact match.</span></span> <span data-ttu-id="70be8-125">Если необходимо, чтобы функция работала в режиме поиска приблизительного совпадения, укажите значение **TRUE**. Если необходимо, чтобы функция возвращала точные совладения, укажите значение **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="70be8-125">Specify **TRUE** if you want an approximate match or **FALSE** if you want an exact match of the return value.</span></span> <span data-ttu-id="70be8-126">Если вы не укажете значение, по умолчанию будет использовано значение TRUE, и функция будет возвращать приблизительные совпадения.</span><span class="sxs-lookup"><span data-stu-id="70be8-126">If you don't specify anything, the default value will always be TRUE or approximate match.</span></span>
 
-<span data-ttu-id="6c5b7-127">В ячейке функция `vlookup` выглядит так:</span><span class="sxs-lookup"><span data-stu-id="6c5b7-127">Inside a cell, the `vlookup` function looks like this:</span></span>
+<span data-ttu-id="70be8-127">В ячейке функция `vlookup` выглядит так:</span><span class="sxs-lookup"><span data-stu-id="70be8-127">Inside a cell, the `vlookup` function looks like this:</span></span>
 
-<span data-ttu-id="6c5b7-128">=ВПР(искомое значение, диапазон с искомым значением, номер столбца в диапазоне с возвращаемым значением, необязательное значение TRUE для указания приблизительного значения или FALSE для указания точного совпадения)</span><span class="sxs-lookup"><span data-stu-id="6c5b7-128">=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)</span></span>
+<span data-ttu-id="70be8-128">=ВПР(искомое значение, диапазон с искомым значением, номер столбца в диапазоне с возвращаемым значением, необязательное значение TRUE для указания приблизительного значения или FALSE для указания точного совпадения)</span><span class="sxs-lookup"><span data-stu-id="70be8-128">=VLOOKUP(lookup value, range containing the lookup value, the column number in the range containing the return value, optionally specify TRUE for approximate match or FALSE for an exact match)</span></span>
 
-<span data-ttu-id="6c5b7-129">(См. документацию по функции [ВПР в Excel](https://support.office.com/ru-RU/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span><span class="sxs-lookup"><span data-stu-id="6c5b7-129">(See the documentation for the [VLOOKUP Excel function](https://support.office.com/ru-RU/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span></span>
+<span data-ttu-id="70be8-129">(См. документацию по функции [ВПР в Excel](https://support.office.com/ru-RU/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span><span class="sxs-lookup"><span data-stu-id="70be8-129">(See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)</span></span>
 
 
-##### <a name="request"></a><span data-ttu-id="6c5b7-130">Запрос:</span><span class="sxs-lookup"><span data-stu-id="6c5b7-130">Request:</span></span>
-<span data-ttu-id="6c5b7-131">В примере ниже показано, как вызвать функцию `vlookup` и передать в нее эти параметры с помощью REST API для Excel.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-131">The following example shows how to call the `vlookup` function and pass these parameters with the Excel REST API.</span></span>
+##### <a name="request"></a><span data-ttu-id="70be8-130">Запрос:</span><span class="sxs-lookup"><span data-stu-id="70be8-130">Request:</span></span>
+<span data-ttu-id="70be8-131">В примере ниже показано, как вызвать функцию `vlookup` и передать в нее эти параметры с помощью REST API для Excel.</span><span class="sxs-lookup"><span data-stu-id="70be8-131">The following example shows how to call the `vlookup` function and pass these parameters with the Excel REST API.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
@@ -55,7 +55,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="6c5b7-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="6c5b7-132">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="70be8-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="70be8-132">Response</span></span>
 
 ```http
 HTTP code: 200 OK
@@ -70,18 +70,18 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="6c5b7-133">Пример: `median`</span><span class="sxs-lookup"><span data-stu-id="6c5b7-133">Example: `median`</span></span>
+<span data-ttu-id="70be8-133">Пример: `median`</span><span class="sxs-lookup"><span data-stu-id="70be8-133">Example: `median`</span></span>
 
-<span data-ttu-id="6c5b7-134">В электронной таблице Excel функция `median` принимает массив одного или нескольких диапазонов входных значений.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-134">In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.</span></span>
+<span data-ttu-id="70be8-134">В электронной таблице Excel функция `median` принимает массив одного или нескольких диапазонов входных значений.</span><span class="sxs-lookup"><span data-stu-id="70be8-134">In an Excel spreadsheet, the `median` function takes an array of one or more input ranges.</span></span>
 
-<span data-ttu-id="6c5b7-135">В ячейке функция `median` выглядит так, как показано в этом примере:</span><span class="sxs-lookup"><span data-stu-id="6c5b7-135">Inside a cell, the `median` function looks like this example:</span></span>
+<span data-ttu-id="70be8-135">В ячейке функция `median` выглядит так, как показано в этом примере:</span><span class="sxs-lookup"><span data-stu-id="70be8-135">Inside a cell, the `median` function looks like this example:</span></span>
 
-<span data-ttu-id="6c5b7-136">=МЕДИАНА(A2:A6)</span><span class="sxs-lookup"><span data-stu-id="6c5b7-136">=MEDIAN(A2:A6)</span></span>
+<span data-ttu-id="70be8-136">=МЕДИАНА(A2:A6)</span><span class="sxs-lookup"><span data-stu-id="70be8-136">=MEDIAN(A2:A6)</span></span>
 
-<span data-ttu-id="6c5b7-137">(См. документацию по [функции МЕДИАНА в Excel](https://support.office.com/ru-RU/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span><span class="sxs-lookup"><span data-stu-id="6c5b7-137">(See the documentation for the [MEDIAN Excel function](https://support.office.com/ru-RU/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span></span>
+<span data-ttu-id="70be8-137">(См. документацию по [функции МЕДИАНА в Excel](https://support.office.com/ru-RU/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span><span class="sxs-lookup"><span data-stu-id="70be8-137">(See the documentation for the [MEDIAN Excel function](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="6c5b7-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="6c5b7-138">Request</span></span>
-<span data-ttu-id="6c5b7-139">В примере ниже показано, как вызывать функцию `median` и один или несколько диапазонов входных значений с помощью REST API для Excel.</span><span class="sxs-lookup"><span data-stu-id="6c5b7-139">The following example shows how to call the `median` function and one or more input ranges with the Excel REST API.</span></span>
+##### <a name="request"></a><span data-ttu-id="70be8-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="70be8-138">Request</span></span>
+<span data-ttu-id="70be8-139">В примере ниже показано, как вызывать функцию `median` и один или несколько диапазонов входных значений с помощью REST API для Excel.</span><span class="sxs-lookup"><span data-stu-id="70be8-139">The following example shows how to call the `median` function and one or more input ranges with the Excel REST API.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
@@ -97,7 +97,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="6c5b7-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="6c5b7-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="70be8-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="70be8-140">Response</span></span>
 
 ```http
 HTTP code: 200 OK
@@ -112,9 +112,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6c5b7-141">См. также</span><span class="sxs-lookup"><span data-stu-id="6c5b7-141">See also</span></span>
-* [<span data-ttu-id="6c5b7-142">Управление сеансами в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="6c5b7-142">Manage sessions in Excel with Microsoft Graph</span></span>](excel-manage-sessions.md)
-* [<span data-ttu-id="6c5b7-143">Запись в книгу Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="6c5b7-143">Write to an Excel workbook using Microsoft Graph</span></span>](excel-write-to-workbook.md)
-* [<span data-ttu-id="6c5b7-144">Обновление формата диапазона в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="6c5b7-144">Update a range’s format in Excel with Microsoft Graph</span></span>](excel-update-range-format.md)
-* [<span data-ttu-id="6c5b7-145">Показ изображения диаграммы в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="6c5b7-145">Display a chart image in Excel with Microsoft Graph</span></span>](excel-display-chart-image.md)
-* [<span data-ttu-id="6c5b7-146">Использование REST API для Excel</span><span class="sxs-lookup"><span data-stu-id="6c5b7-146">Use the Excel REST API</span></span>](/graph/api/resources/excel?view=graph-rest-1.0)
+## <a name="see-also"></a><span data-ttu-id="70be8-141">См. также</span><span class="sxs-lookup"><span data-stu-id="70be8-141">See also</span></span>
+* [<span data-ttu-id="70be8-142">Управление сеансами в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="70be8-142">Manage sessions in Excel with Microsoft Graph</span></span>](excel-manage-sessions.md)
+* [<span data-ttu-id="70be8-143">Запись в книгу Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="70be8-143">Write to an Excel workbook using Microsoft Graph</span></span>](excel-write-to-workbook.md)
+* [<span data-ttu-id="70be8-144">Обновление формата диапазона в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="70be8-144">Update a range’s format in Excel with Microsoft Graph</span></span>](excel-update-range-format.md)
+* [<span data-ttu-id="70be8-145">Показ изображения диаграммы в Excel с помощью Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="70be8-145">Display a chart image in Excel with Microsoft Graph</span></span>](excel-display-chart-image.md)
+* [<span data-ttu-id="70be8-146">Использование REST API для Excel</span><span class="sxs-lookup"><span data-stu-id="70be8-146">Use the Excel REST API</span></span>](/graph/api/resources/excel?view=graph-rest-1.0)
