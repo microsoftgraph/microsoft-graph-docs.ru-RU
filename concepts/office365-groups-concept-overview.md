@@ -4,16 +4,19 @@ description: 'Группы Office 365 — фундаментальная слу
 author: dkershaw10
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cbd06a28b96680e43bbc6b9c2a440ed1b95b21cd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578820"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621244"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Обзор групп Office 365 в Microsoft Graph
 
 Группы Office 365 — фундаментальная служба, которая позволяет пользователям делиться беседами, файлами, заметками, календарями, планами и другими ресурсами. 
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
 ## <a name="why-integrate-with-office-365-groups"></a>Зачем нужна интеграция с группами Office 365?   
 

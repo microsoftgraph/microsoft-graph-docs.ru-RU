@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987855"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558379"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Коды ошибок для API OneNote в Microsoft Graph
 
@@ -343,7 +343,7 @@ PATCH-запросу не удается изменить указанную с�
 Что-то не так с учетной записью пользователя.
 
 ### <a name="30101"></a>30101
-Для учетной записи пользователя превышена квота OneDrive. См. страницу [OneDrive](https://onedrive.live.com/about/ru-RU/).
+Для учетной записи пользователя превышена квота OneDrive. См. страницу [OneDrive](https://onedrive.live.com/about/en-us/).
 
 ### <a name="30102"></a>30102
 В запрошенные раздел невозможно что-либо добавить, так как он достиг своего максимального размера.

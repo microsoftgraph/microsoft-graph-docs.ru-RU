@@ -4,12 +4,12 @@ description: Создание объекта identityProvider
 localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a33354c35903fedc3efedb84e9f2ed7bc20c9506
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63a1ae5fddcc1279c3980b8475c7cbdad0bd74f8
+ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577660"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537590"
 ---
 # <a name="create-identityprovider"></a>Создание identityProvider
 
@@ -43,7 +43,7 @@ POST /identityProviders
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставьте в тексте запроса описание объекта [identityProvider](../resources/identityProvider.md) в формате JSON. Все свойства, перечисленные в приведенной ниже таблице, являются обязательными.
+Предоставьте в тексте запроса описание объекта [identityProvider](../resources/identityprovider.md) в формате JSON. Все свойства, перечисленные в приведенной ниже таблице, являются обязательными.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
@@ -54,7 +54,7 @@ POST /identityProviders
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [identityProvider](../resources/identityProvider.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [identityProvider](../resources/identityprovider.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
