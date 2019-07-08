@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c1e1cecdcf99d146b42867dae8f332b74f2c689a
-ms.sourcegitcommit: 8aaf10f7c11d1bf481e9acac19884346dbd44cb8
+ms.openlocfilehash: 03a1ffa8770772f57b0e1dc6901dbebfe8b40e23
+ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34914695"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34987350"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -30,22 +30,22 @@ ms.locfileid: "34914695"
 |[Получение пользователя](../api/user-get.md) | [user](user.md) |Чтение свойств и связей объекта пользователя.|
 |[Обновление пользователя](../api/user-update.md) | [user](user.md) |Обновление объекта пользователя. |
 |[Удаление пользователя](../api/user-delete.md) | Нет |Удаление объекта пользователя. |
-|[Список сообщений](../api/user-list-messages.md) |Коллекция [Message](message.md)| Получение всех сообщений в почтовом ящике вошедшего пользователя.|
-|[Создание объекта Message](../api/user-post-messages.md) |[Message](message.md)| Создание объекта Message путем добавления в коллекцию сообщений.|
-|[Список объектов mailFolder](../api/user-list-mailfolders.md) |Коллекция [MailFolder](mailfolder.md)| Получение коллекции папок почты в корневой папке вошедшего пользователя. |
-|[Создание объекта MailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| Создание объекта MailFolder путем добавления в коллекцию папок почты.|
+|[Список сообщений](../api/user-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике вошедшего пользователя.|
+|[Создание сообщения](../api/user-post-messages.md) |[message](message.md)| Создание объекта Message путем добавления в коллекцию сообщений.|
+|[Список объектов mailFolder](../api/user-list-mailfolders.md) |Коллекция [mailFolder](mailfolder.md)| Получение коллекции папок почты в корневой папке вошедшего пользователя. |
+|[Создание объекта mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Создание объекта MailFolder путем добавления в коллекцию папок почты.|
 |[sendMail](../api/user-sendmail.md)|Нет|Отправка сообщения, указанного в теле запроса.|
-|[Получение списка событий](../api/user-list-events.md) |Коллекция [Event](event.md)| Получение списка объектов event в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
-|[Создание события](../api/user-post-events.md) |[Event](event.md)| Создание объекта Event путем добавления в коллекцию событий.|
-|[Список календарей](../api/user-list-calendars.md) |Коллекция [Calendar](calendar.md)| Получение коллекции объектов Calendar.|
-|[Создание календаря](../api/user-post-calendars.md) |[Calendar](calendar.md)| Создание объекта Calendar путем добавления в коллекцию календарей.|
-|[Список объектов calendarGroup](../api/user-list-calendargroups.md) |Коллекция [CalendarGroup](calendargroup.md)| Получение коллекции объектов CalendarGroup.|
-|[Создание объекта calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| Создание объекта CalendarGroup путем записи в коллекцию групп календарей.|
-|[Список calendarView](../api/user-list-calendarview.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
-|[Список контактов](../api/user-list-contacts.md) |Коллекция [Contact](contact.md)| Получение коллекции контактов из папки контактов по умолчанию для вошедшего пользователя.|
-|[Создание контакта](../api/user-post-contacts.md) |[Contact](contact.md)| Создание объекта Contact путем добавления в коллекцию контактов.|
-|[Список объектов contactFolder](../api/user-list-contactfolders.md) |Коллекция [ContactFolder](contactfolder.md)| Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.|
-|[Создание объекта ContactFolder](../api/user-post-contactfolders.md) |[ContactFolder](contactfolder.md)| Создание объекта ContactFolder путем добавления в коллекцию папок контактов.|
+|[Получение списка событий](../api/user-list-events.md) |Коллекция [event](event.md)| Получение списка объектов event в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
+|[Создание события](../api/user-post-events.md) |[event](event.md)| Создание объекта Event путем добавления в коллекцию событий.|
+|[Список календарей](../api/user-list-calendars.md) |Коллекция [calendar](calendar.md)| Получение коллекции объектов Calendar.|
+|[Создание календаря](../api/user-post-calendars.md) |[calendar](calendar.md)| Создание объекта Calendar путем добавления в коллекцию календарей.|
+|[Список объектов calendarGroup](../api/user-list-calendargroups.md) |Коллекция [calendarGroup](calendargroup.md)| Получение коллекции объектов CalendarGroup.|
+|[Создание объекта calendarGroup](../api/user-post-calendargroups.md) |[calendarGroup](calendargroup.md)| Создание объекта CalendarGroup путем записи в коллекцию групп календарей.|
+|[Список calendarView](../api/user-list-calendarview.md) |Коллекция [event](event.md)| Получение коллекции объектов Event.|
+|[Список контактов](../api/user-list-contacts.md) |Коллекция [contact](contact.md)| Получение коллекции контактов из папки контактов по умолчанию для вошедшего пользователя.|
+|[Создание контакта](../api/user-post-contacts.md) |[contact](contact.md)| Создание объекта Contact путем добавления в коллекцию контактов.|
+|[Список объектов contactFolder](../api/user-list-contactfolders.md) |Коллекция [contactFolder](contactfolder.md)| Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.|
+|[Создание объекта contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Создание объекта ContactFolder путем добавления в коллекцию папок контактов.|
 |[Список directReports](../api/user-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и контактов, являющихся подчиненными данного пользователя, из свойства навигации directReports.|
 |[Получение руководителя](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Получение пользователя или контакта, являющегося руководителем пользователя, из свойства навигации manager.|
 |[Список memberOf](../api/user-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и ролей каталога, непосредственным участником которых является пользователь, из свойства навигации memberOf.|
@@ -61,6 +61,7 @@ ms.locfileid: "34914695"
 |[getMemberGroups](../api/user-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь. Это транзитивная проверка. |
 |[reminderView](../api/user-reminderview.md)|Коллекция [Reminder](reminder.md)|Возвращает список напоминаний календаря за указанный период времени.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -104,7 +105,7 @@ ms.locfileid: "34914695"
 |officeLocation|String|Расположение офиса на месте работы пользователя.|
 |onPremisesDistinguishedName|String| Содержит параметры локальной службы Active Directory `distinguished name` или `DN`. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |onPremisesDomainName|String| Содержит локальный параметр `domainFQDN`, также называемый dnsDomainName, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит объекты extensionAttributes 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для пользователей `onPremisesSyncEnabled` этот набор свойств управляется локально и предназначен только для чтения. Для исключительно облачных пользователей (где значением для `onPremisesSyncEnabled` является false) эти свойства можно задать при создании или обновлении. |
+|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит свойства extensionAttribute 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для пользователей `onPremisesSyncEnabled` этот набор свойств управляется локально и предназначен только для чтения. Для исключительно облачных пользователей (где значением для `onPremisesSyncEnabled` является false) эти свойства можно задать при создании или обновлении. |
 |onPremisesImmutableId|String|Это свойство используется для сопоставления локальной учетной записи Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если в качестве свойства **userPrincipalName** (имени участника-пользователя) используется федеративный домен. **Важно!** В этом свойстве не допускается использование символов **$** и **\_**. Поддерживает параметр $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последней синхронизации объекта с локальным каталогом, например: "2013-02-16T03:04:54Z". Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |onPremisesProvisioningErrors|Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. |
@@ -114,18 +115,19 @@ ms.locfileid: "34914695"
 |onPremisesUserPrincipalName|String| Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |otherMails|String| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. Поддерживает параметр $filter.|
 |passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением — "DisableStrongPassword". Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение "DisablePasswordExpiration". Эти значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
 |preferredDataLocation|String|Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU".|
 |preferredName|String|Предпочитаемое имя пользователя.|
-|provisionedPlans|Коллекция [ProvisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение null не допускается. |
+|provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается. |
 |proxyAddresses|Коллекция строк|Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. В выражениях фильтра для свойств с несколькими значениями требуется оператор **any**. Только для чтения. Значение null не допускается. Поддерживает параметр $filter.          |
 |responsibilities|Коллекция строк|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
 |showInAddressList|Boolean|Значение **true**, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение **false**. Если не задано, будет считаться, что присвоено значение **true**. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение **false**.|
 |skills|Коллекция строк|Список навыков пользователя.|
+|signInSessionsValidFromDateTime|DateTimeOffset| Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [revokeSignInSessions](../api/user-revokesigninsessions.md).|
 |state|String|Область, республика, край или округ в адресе пользователя. Поддерживает параметр $filter.|
 |streetAddress|String|Почтовый адрес места работы пользователя.|
 |surname|String|Фамилия пользователя. Поддерживает параметр $filter.|
@@ -179,26 +181,26 @@ ms.locfileid: "34914695"
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |activities|Коллекция [userActivity](projectrome-activity.md)|Действия пользователя на разных устройствах. Только для чтения. Допускается значение null.|
-|calendar|[Calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
-|calendarGroups|Коллекция [CalendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
-|calendarView|Коллекция [Event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|
-|calendars|Коллекция [Calendar](calendar.md)|Календари пользователя. Только для чтения. Допускается значение null.|
-|contactFolders|Коллекция [ContactFolder](contactfolder.md)|Папки контактов пользователя. Только для чтения. Допускается значение null.|
-|contacts|Коллекция [Contact](contact.md)|Контакты пользователя. Только для чтения. Допускается значение null.|
+|calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
+|calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
+|calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|
+|calendars|Коллекция [calendar](calendar.md)|Календари пользователя. Только для чтения. Допускается значение null.|
+|contactFolders|Коллекция [contactFolder](contactfolder.md)|Папки контактов пользователя. Только для чтения. Допускается значение null.|
+|contacts|Коллекция [contact](contact.md)|Контакты пользователя. Только для чтения. Допускается значение null.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные пользователем. Только для чтения. Допускается значение null.|
 |directReports|Коллекция [directoryObject](directoryobject.md)|Пользователи и контакты, являющиеся подчиненными пользователя (пользователи и контакты, у которых в свойстве manager указан этот пользователь). Только для чтения. Допускается значение null. |
 |drive|[drive](drive.md)|Хранилище OneDrive пользователя. Только для чтения.|
 |drives|Коллекция [drive](drive.md)| Коллекция дисков, доступных для этого пользователя. Только для чтения. |
-|events|Коллекция [Event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
+|Мероприятия|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Только для чтения. Допускается значение null.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
-|licenseDetails|Коллекция [LicenseDetails](licensedetails.md)|Коллекция сведений о лицензии этого пользователя. Допускается значение null.|
-|mailFolders|Коллекция [MailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
+|licenseDetails|Коллекция объектов [licenseDetails](licensedetails.md)|Коллекция сведений о лицензии этого пользователя. Только для чтения.|
+|mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и роли каталога, участником которых является пользователь. Только для чтения. Допускается значение null.|
-|messages|Коллекция [Message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
-|onenote|[Onenote](onenote.md)| Только для чтения.|
-|outlook|[OutlookUser](outlookuser.md)| Только для чтения.|
+|messages|Коллекция [message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
+|onenote|[onenote](onenote.md)| Только для чтения.|
+|outlook|[outlookUser](outlookuser.md)| Только для чтения.|
 |ownedDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие пользователю. Только для чтения. Допускается значение null.|
 |people|Коллекция [person](person.md)| Люди, которые являются релевантными для пользователя. Только для чтения. Допускается значение null.
@@ -422,6 +424,7 @@ ms.locfileid: "34914695"
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

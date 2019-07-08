@@ -1,38 +1,81 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: site
+title: Ресурс site
+description: Ресурс site предоставляет метаданные и связи для сайта SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d4dfb3f340a2b2b7ff5ad5a3c9279cb2a03c63be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 40add99dfbeee28d82b3d02def833497c01385df
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549603"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968851"
 ---
 # <a name="site-resource"></a>Ресурс site
 
 Ресурс **site** предоставляет метаданные и связи для сайта SharePoint.
 
-## <a name="tasks"></a>Задачи
+## <a name="methods"></a>Методы
 
-Все приведенные ниже примеры относятся к `https://graph.microsoft.com/v1.0`.
-
-| Имя задачи                | Пример запроса
-|:-------------------------|:--------------------------------------------------
-| [Получение корневого сайта][]        | GET /sites/root
-| [Получение сайта][]             | GET /sites/{site-id}
-| [Получение сайта по пути][]     | GET /sites/{hostname}:/{site-path}
-| [Получение сайта для группы][] | GET /groups/{group-id}/sites/root
-| [Поиск сайтов][]     | GET /sites?search={query}
+| Метод                | Тип возвращаемых данных | Описание
+|:-------------------------|:-------------|:----------
+| [Получение корневого сайта][]        | site | Получение доступа к корневому сайту SharePoint внутри клиента.
+| [Получение сайта][]             | site | Получение доступа к сайту SharePoint с помощью параметра siteId.
+| [Получение сайта по пути][]     | site | Получение доступа к корневому сайту SharePoint с использованием относительного пути.
+| [Получение сайта для группы][] | site | Получение доступа к сайту группы для группы.
+| [Получение аналитики][]              | [itemAnalytics][] | Получение аналитических данных для ресурса. 
+| [Получение действий по интервалу][] | [itemActivityStat][] | Получение коллекции объектов **itemActivityStats** в пределах указанного интервала времени.
+| [Поиск сайтов][]     | коллекция сайтов | Поиск сайтов, соответствующих указанным ключевым словам, в клиенте SharePoint.
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
 [Получение сайта по пути]: ../api/site-getbypath.md
 [Получение сайта для группы]: ../api/site-get.md
+[Получение аналитики]: ../api/itemanalytics-get.md
+[Получение действий по интервалу]: ../api/itemactivitystat-getactivitybyinterval.md
 [Поиск сайтов]: ../api/site-search.md
+[itemActivityStat]: itemactivitystat.md
+
+## <a name="properties"></a>Свойства
+
+| Свойство            | Тип                                | Описание                                                                                    |
+| :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | string                              | Уникальный идентификатор элемента. Только для чтения.                                                  |
+| **createdDateTime**      | DateTimeOffset                      | Дата и время создания элемента. Только для чтения.                                             |
+| **description**          | string                              | Текст с описанием сайта.                                                             |
+| **displayName**          | string                              | Полное название сайта. Только для чтения.                                                        |
+| **eTag**                 | string                              | ETag для элемента. Только для чтения.                                                                  |
+| **lastModifiedDateTime** | DateTimeOffset                      | Дата и время последнего изменения элемента. Только для чтения.                                       |
+| **name**                 | string                              | Имя или название элемента.                                                                  |
+| **root**                 | [root](root.md)                     | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
+| **sharepointIds**        | [sharepointIds](sharepointids.md)   | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
+| **siteCollection**       | [siteCollection](sitecollection.md) | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
+| **webUrl**               | строка (url-адрес)                        | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
+
+## <a name="relationships"></a>Связи
+
+| Отношение      | Тип                             | Описание
+|:------------------|:---------------------------------|:----------------------
+| **analytics**     | Ресурс [itemAnalytics][]       | Аналитические данные о действиях просмотра, выполненных на этом сайте.
+| **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
+| **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
+| **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
+| **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
+| **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
+| **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
+| **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
+| **onenote**       | [onenote][]                      | Вызывает службу OneNote для выполнения операций, связанных с записными книжками.
+
+[columnDefinition]: columndefinition.md
+[baseItem]: baseitem.md
+[contentType]: contenttype.md
+[drive]: drive.md
+[identitySet]: identityset.md
+[itemAnalytics]: itemanalytics.md
+[list]: list.md
+[site]: site.md
+[onenote]: onenote.md
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -64,6 +107,7 @@ ms.locfileid: "32549603"
   "displayName": "string",
 
   /* relationships */
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
@@ -82,44 +126,6 @@ ms.locfileid: "32549603"
   "webUrl": "url"
 }
 ```
-
-## <a name="properties"></a>Свойства
-
-| Имя свойства            | Тип                                | Описание                                                                                    |
-| :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | Уникальный идентификатор элемента. Только для чтения.                                                  |
-| **createdDateTime**      | DateTimeOffset                      | Дата и время создания элемента. Только для чтения.                                             |
-| **description**          | string                              | Текст с описанием сайта.                                                             |
-| **displayName**          | string                              | Полное название сайта. Только для чтения.                                                        |
-| **eTag**                 | string                              | ETag для элемента. Только для чтения.                                                                  |
-| **lastModifiedDateTime** | DateTimeOffset                      | Дата и время последнего изменения элемента. Только для чтения.                                       |
-| **name**                 | string                              | Имя или название элемента.                                                                  |
-| **root**                 | [root](root.md)                     | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.            |
-| **sharepointIds**        | [sharepointIds](sharepointids.md)   | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                       |
-| **siteCollection**       | [siteCollection](sitecollection.md) | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения. |
-| **webUrl**               | строка (url-адрес)                        | URL-адрес для отображения элемента в браузере. Только для чтения.                                          |
-
-## <a name="relationships"></a>Связи
-
-| Имя связи | Тип                             | Описание
-|:------------------|:---------------------------------|:----------------------
-| **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
-| **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
-| **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
-| **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
-| **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
-| **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
-| **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
-| **onenote**       | [onenote][]                      | Вызывает службу OneNote для выполнения операций, связанных с записными книжками.
-
-[columnDefinition]: columndefinition.md
-[baseItem]: baseitem.md
-[contentType]: contenttype.md
-[drive]: drive.md
-[identitySet]: identityset.md
-[list]: list.md
-[site]: site.md
-[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",

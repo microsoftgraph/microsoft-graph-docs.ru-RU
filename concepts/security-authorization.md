@@ -4,12 +4,12 @@ description: Данные безопасности, доступные чере�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564150"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33621230"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Авторизация и API безопасности Microsoft Graph
 
@@ -62,9 +62,9 @@ API безопасности Microsoft Graph поддерживает два т�
 
 - Чтобы приложение вновь заработало в клиенте **T1**, администратор клиента **T1** должен явным образом предоставить разрешения **P1** и **P2** для приложения.
 
-## <a name="register-an-application-in-the-azure-ad-v20-endpoint"></a>Регистрация приложения в конечной точке Azure AD версии 2.0
+## <a name="register-an-application-with-the-microsoft-identity-platform-endpoint"></a>Регистрация приложения с помощью конечной точки платформы удостоверений Майкрософт
 
-Чтобы зарегистрировать приложение в конечной точке Azure AD версии 2.0, необходимо следующее:
+Чтобы зарегистрировать приложение в конечной точке платформы удостоверений Майкрософт, необходимо следующее:
 
 - **Имя приложения** — строка, используемая в качестве имени приложения.
 - **URL-адрес перенаправления** — URL-адрес, куда направляется ответ по проверке подлинности из Azure AD. Чтобы начать, можно использовать домашнюю страницу веб-приложения тестового клиента.
@@ -72,11 +72,13 @@ API безопасности Microsoft Graph поддерживает два т�
 
 Чтобы зарегистрировать приложение:
 
-1. Перейдите на https://apps.dev.microsoft.com/ и войдите.
+1. Перейдите на [портал регистрации приложений Azure](https://go.microsoft.com/fwlink/?linkid=2083908) и выполните вход.
     >**Примечание**. Вам не нужно быть администратором клиента. Вы будете перенаправлены в список **Мои приложения**.
-2. Выберите **Добавить приложение** и введите **Имя приложения** для создания нового приложения.
-3. На странице регистрации нового приложения выберите **Добавить платформу** > **Интернет**. В поле **URL-адрес перенаправления** введите URL-адрес перенаправления.
-4. В разделе **Разрешения Microsoft Graph** в подразделе **Делегированные разрешения** нажмите кнопку **Добавить**. В диалоговом окне выберите необходимые разрешения. Список разрешений см. в статье [Разрешения безопасности](permissions-reference.md#security-permissions).
+2. Выберите **Новая регистрация**.
+3. На странице регистрации нового приложения введите значение в поле **Имя** и выберите поддерживаемые типы учетных записей. В поле **URI перенаправления** введите URL-адрес перенаправления.
+4. Нажмите кнопку **Зарегистрировать**, чтобы создать приложение и посмотреть его обзорную страницу.
+5. Перейдите на страницу **Разрешения API** приложения.
+6. Нажмите кнопку **Добавить разрешение** и выберите вариант **Microsoft Graph** во всплывающем окне. Выберите **Делегированные разрешения**. Чтобы найти и выбрать требующиеся разрешения, используйте поле поиска. Список разрешений см. в статье [Разрешения безопасности](permissions-reference.md#security-permissions).
 
     >**Примечание.** Microsoft Graph Security API требуется область *.Read.All для запросов GET и область *.ReadWrite.All для запросов PATCH/POST/DELETE.
 
@@ -84,19 +86,19 @@ API безопасности Microsoft Graph поддерживает два т�
     |:----------|:-------|:-------------------|
     |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (предварительная версия) | GET |
     |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (предварительная версия) | GET, POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (предварительная версия)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (предварительная версия) | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (предварительная версия)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (предварительная версия) | GET, POST, PATCH |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
     |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (предварительная версия) | GET, POST, PATCH, DELETE|
 
-5. Нажмите кнопку **Сохранить**.
+7. Нажмите кнопку **Добавить разрешения**.
 
 Сохраните следующие сведения:
 
-- Идентификатор приложения
+- Идентификатор приложения (клиента)
 - URL-адрес перенаправления
 - Список необходимых разрешений
 
-Дополнительные сведения см. в статье [Регистрация приложения с помощью конечной точки Azure AD версии 2.0](auth-register-app-v2.md).
+Дополнительные сведения см. в статье [Регистрация приложения с помощью платформы удостоверений Майкрософт](auth-register-app-v2.md).
 
 ## <a name="grant-permissions-to-an-application"></a>Предоставление разрешений для приложения
 
@@ -104,8 +106,8 @@ API безопасности Microsoft Graph поддерживает два т�
 
 Чтобы предоставить разрешения для приложения, необходимо следующее:
 
-- **Идентификатор приложения**. Идентификатор приложения из портала регистрации приложений.
-- **URL-адрес перенаправления** — строка, заданная на портале регистрации приложений для отклика проверки подлинности.
+- **Идентификатор приложения**. Идентификатор приложения из портала регистрации приложений Azure.
+- **URL-адрес перенаправления** — строка, заданная на портале регистрации приложений Azure для отклика проверки подлинности.
 
 Чтобы предоставить разрешения:
 
@@ -144,12 +146,18 @@ API безопасности Microsoft Graph поддерживает два т�
 
 |**Тип приложения**|**Библиотека проверки подлинности**|
 |------------------------|----------------------------|
-|[Классические приложения — iOS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: предварительная версия библиотеки проверки подлинности (Майкрософт) для iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Классические приложения — Android](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-android)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Классические приложения — .Net](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Веб-приложения — JavaScript SPA](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Библиотека проверки подлинности Майкрософт для предварительной версии JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Веб-приложения — веб-сервер .NET](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Веб-приложения — веб-приложение NodeJS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|
+  [Классические приложения — iOS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: предварительная версия библиотеки проверки подлинности (Майкрософт) для iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|
+  [Классические приложения — Android](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-android)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|
+  [Классические приложения — .Net](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|
+  [Веб-приложения — JavaScript SPA](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Библиотека проверки подлинности Майкрософт для предварительной версии JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|
+  [Веб-приложения — веб-сервер .NET](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|
+  [Веб-приложения — веб-приложение NodeJS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Сведения о приложениях, которые не используют существующих библиотек, см. в статье [Получение доступа от имени пользователя](auth-v2-user.md).
 
