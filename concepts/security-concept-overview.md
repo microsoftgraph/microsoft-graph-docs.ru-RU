@@ -4,12 +4,12 @@ description: С помощью API безопасности Microsoft Graph мо
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 1036a41a8447b1f6305adf763b200b17fbfa37dd
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133840"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607394"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "35133840"
 Сведения об авторизации см. в статье [Авторизация и API безопасности Microsoft Graph](security-authorization.md). Сведения о разрешениях, в том числе делегированных и для приложений, см. в [справочнике по разрешениям](permissions-reference.md#security-permissions).
 
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/ZXkKjkxdrB4]
+> [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Зачем использовать API безопасности Microsoft Graph?
 

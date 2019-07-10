@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: afd06dcfbefdab71a72ea2b73ff12e84328d361e
+ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574598"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35607401"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -149,8 +149,8 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`, где {randomGuid} — это созданный вами идентификатор GUID.                                      |
-| contentUrl | string      | URL-адрес формы `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
-| removeUrl  | string      | URL-адрес формы `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| contentUrl | string      | URL `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`-адрес формы, где `{notebookId}` и `{oneNoteWebUrl}` можно найти в [Get/граупс/{ИД}/оненоте/нотебукс](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {groupId}, {locale} и {TID} являются литералами. |
+| removeUrl  | string      | URL `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{groupId}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`-адрес формы, где `{notebookId}` и `{oneNoteWebUrl}` можно найти в [Get/граупс/{ИД}/оненоте/нотебукс](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {groupId}, {locale} и {TID} являются литералами. |
 | websiteUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, где `oneNoteWebUrl` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) |
 
 ## <a name="power-bi-tabs"></a>Вкладки Power BI
