@@ -2,58 +2,60 @@
 title: Перезапуск Синчронизатионжоб
 description: Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге. При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.
 localization_priority: Normal
-ms.openlocfilehash: 2c14a77553054fe689aba90bc8eeb53854f63642
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 765b8801c808a71426fc6a5150229e028429436f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457018"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621090"
 ---
-# <a name="restart-synchronizationjob"></a><span data-ttu-id="a7302-104">Перезапуск Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="a7302-104">Restart synchronizationJob</span></span>
+# <a name="restart-synchronizationjob"></a><span data-ttu-id="35412-104">Перезапуск Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="35412-104">Restart synchronizationJob</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a7302-105">Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге.</span><span class="sxs-lookup"><span data-stu-id="a7302-105">Restart the synchronization job, forcing it to reprocess all the objects in the directory.</span></span> <span data-ttu-id="a7302-106">При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.</span><span class="sxs-lookup"><span data-stu-id="a7302-106">Optionally clears existing synchronization state and previous errors.</span></span>
+<span data-ttu-id="35412-105">Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге.</span><span class="sxs-lookup"><span data-stu-id="35412-105">Restart the synchronization job, forcing it to reprocess all the objects in the directory.</span></span> <span data-ttu-id="35412-106">При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.</span><span class="sxs-lookup"><span data-stu-id="35412-106">Optionally clears existing synchronization state and previous errors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a7302-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a7302-107">Permissions</span></span>
-<span data-ttu-id="a7302-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a7302-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="35412-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="35412-107">Permissions</span></span>
+<span data-ttu-id="35412-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35412-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a7302-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a7302-110">Permission type</span></span>                        | <span data-ttu-id="a7302-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a7302-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="35412-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="35412-110">Permission type</span></span>                        | <span data-ttu-id="35412-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="35412-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a7302-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a7302-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="a7302-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7302-113">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="a7302-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a7302-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="a7302-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7302-115">Not supported.</span></span> |
-|<span data-ttu-id="a7302-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a7302-116">Application</span></span>                            |<span data-ttu-id="a7302-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7302-117">Not supported.</span></span>  | 
+|<span data-ttu-id="35412-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="35412-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="35412-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35412-113">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="35412-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="35412-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="35412-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35412-115">Not supported.</span></span> |
+|<span data-ttu-id="35412-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="35412-116">Application</span></span>                            |<span data-ttu-id="35412-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35412-117">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="a7302-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a7302-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35412-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="35412-118">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a7302-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a7302-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="35412-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="35412-119">Request headers</span></span>
 
-| <span data-ttu-id="a7302-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a7302-120">Name</span></span>           | <span data-ttu-id="a7302-121">Тип</span><span class="sxs-lookup"><span data-stu-id="a7302-121">Type</span></span>    | <span data-ttu-id="a7302-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a7302-122">Description</span></span>|
+| <span data-ttu-id="35412-120">Имя</span><span class="sxs-lookup"><span data-stu-id="35412-120">Name</span></span>           | <span data-ttu-id="35412-121">Тип</span><span class="sxs-lookup"><span data-stu-id="35412-121">Type</span></span>    | <span data-ttu-id="35412-122">Описание</span><span class="sxs-lookup"><span data-stu-id="35412-122">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="a7302-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a7302-123">Authorization</span></span>  | <span data-ttu-id="a7302-124">string</span><span class="sxs-lookup"><span data-stu-id="a7302-124">string</span></span>  | <span data-ttu-id="a7302-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a7302-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="35412-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="35412-123">Authorization</span></span>  | <span data-ttu-id="35412-124">string</span><span class="sxs-lookup"><span data-stu-id="35412-124">string</span></span>  | <span data-ttu-id="35412-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="35412-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a7302-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a7302-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="35412-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="35412-127">Request body</span></span>
 
-<span data-ttu-id="a7302-128">В тексте запроса укажите объект JSON со следующим параметром.</span><span class="sxs-lookup"><span data-stu-id="a7302-128">In the request body, provide a JSON object with the following parameter.</span></span>
+<span data-ttu-id="35412-128">В тексте запроса укажите объект JSON со следующим параметром.</span><span class="sxs-lookup"><span data-stu-id="35412-128">In the request body, provide a JSON object with the following parameter.</span></span>
 
-| <span data-ttu-id="a7302-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="a7302-129">Parameter</span></span>     | <span data-ttu-id="a7302-130">Тип</span><span class="sxs-lookup"><span data-stu-id="a7302-130">Type</span></span>      | <span data-ttu-id="a7302-131">Описание</span><span class="sxs-lookup"><span data-stu-id="a7302-131">Description</span></span>    |
+| <span data-ttu-id="35412-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="35412-129">Parameter</span></span>     | <span data-ttu-id="35412-130">Тип</span><span class="sxs-lookup"><span data-stu-id="35412-130">Type</span></span>      | <span data-ttu-id="35412-131">Описание</span><span class="sxs-lookup"><span data-stu-id="35412-131">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="a7302-132">criteria</span><span class="sxs-lookup"><span data-stu-id="a7302-132">criteria</span></span>       |[<span data-ttu-id="a7302-133">Синчронизатионжобрестарткритериа</span><span class="sxs-lookup"><span data-stu-id="a7302-133">synchronizationJobRestartCriteria</span></span>](../resources/synchronization-synchronizationjobrestartcriteria.md) |<span data-ttu-id="a7302-134">Условия перезапуска</span><span class="sxs-lookup"><span data-stu-id="a7302-134">Restart criteria</span></span>|
+|<span data-ttu-id="35412-132">criteria</span><span class="sxs-lookup"><span data-stu-id="35412-132">criteria</span></span>       |[<span data-ttu-id="35412-133">Синчронизатионжобрестарткритериа</span><span class="sxs-lookup"><span data-stu-id="35412-133">synchronizationJobRestartCriteria</span></span>](../resources/synchronization-synchronizationjobrestartcriteria.md) |<span data-ttu-id="35412-134">Условия перезапуска</span><span class="sxs-lookup"><span data-stu-id="35412-134">Restart criteria</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a7302-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7302-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="35412-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="35412-135">Response</span></span>
 
-<span data-ttu-id="a7302-136">В случае успеха возвращает `204 No Content` отклик.</span><span class="sxs-lookup"><span data-stu-id="a7302-136">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="a7302-137">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="a7302-137">It does not return anything in the response body.</span></span>
+<span data-ttu-id="35412-136">В случае успеха возвращает `204 No Content` отклик.</span><span class="sxs-lookup"><span data-stu-id="35412-136">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="35412-137">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="35412-137">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a7302-138">Пример</span><span class="sxs-lookup"><span data-stu-id="a7302-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="35412-138">Пример</span><span class="sxs-lookup"><span data-stu-id="35412-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a7302-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="a7302-139">Request</span></span>
-<span data-ttu-id="a7302-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a7302-140">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="35412-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="35412-139">Request</span></span>
+<span data-ttu-id="35412-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="35412-140">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a7302-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="a7302-141">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="35412-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="35412-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_restart"
@@ -69,23 +71,23 @@ Content-type: application/json
    }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a7302-142">C#</span><span class="sxs-lookup"><span data-stu-id="a7302-142">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="35412-142">C#</span><span class="sxs-lookup"><span data-stu-id="35412-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-restart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a7302-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="a7302-143">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="35412-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="35412-143">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-restart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a7302-144">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a7302-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="35412-144">Цель — C</span><span class="sxs-lookup"><span data-stu-id="35412-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-restart-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="a7302-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7302-145">Response</span></span>
-<span data-ttu-id="a7302-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a7302-146">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="35412-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="35412-145">Response</span></span>
+<span data-ttu-id="35412-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="35412-146">The following is an example of a response.</span></span>
 
 <!-- {
   "blockType": "response",
