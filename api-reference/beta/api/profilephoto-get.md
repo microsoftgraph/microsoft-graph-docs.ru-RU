@@ -2,12 +2,12 @@
 title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств **profilePhoto**).
 localization_priority: Priority
-ms.openlocfilehash: 422b9cb39b7af6527341070cbe35f3bfb59d504d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7d90054391d27dd15758aa4330d777e23fe21344
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337175"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620600"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -34,6 +34,9 @@ ms.locfileid: "33337175"
 |Делегированные (рабочая или учебная учетная запись) | Для ресурса **user**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)  <br /> **Примечание**. Операция получения метаданных не поддерживается. | Для ресурса **user**:<br/>User.Read, User.ReadWrite<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 |Для приложения                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+
+> 
+  **Примечание.** В настоящее время существует [известная проблема](https://docs.microsoft.com/ru-RU/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 
 ## <a name="http-request"></a>HTTP-запрос 
 

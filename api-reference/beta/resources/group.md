@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f4131d3d2c327c91fc29d31a922b167c72607397
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236498"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621139"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -80,7 +80,7 @@ ms.locfileid: "35236498"
 |[Удаление acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Удаление User или Group из коллекции acceptedSenders.|
 |[Список rejectedSenders](../api/group-list-rejectedsenders.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы.|
 |[Добавление rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Добавление User или Group в коллекцию rejectedSenders.|
-|[Удаление rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Удаление новых User или Group из коллекции rejectedSenders.|
+|[Удаление rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Удаление нового объекта User или Group из коллекции объектов rejectedSender.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
