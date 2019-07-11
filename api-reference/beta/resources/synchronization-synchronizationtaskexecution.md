@@ -2,12 +2,14 @@
 title: Тип ресурса Синчронизатионтаскексекутион
 description: Сводка результатов выполнения задания синхронизации.
 localization_priority: Normal
-ms.openlocfilehash: a9008dd7d51a1d07be75c5b9bbad34d636fff74c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2aeb64d0ef08d25a8be9b2ed711d6deabfe522a1
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339828"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620663"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>Тип ресурса Синчронизатионтаскексекутион
 

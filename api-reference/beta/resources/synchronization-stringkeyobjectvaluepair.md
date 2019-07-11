@@ -2,12 +2,14 @@
 title: Тип ресурса Стрингкэйобжектвалуепаир
 description: Представляет собой запись "ключ-значение", в которой ключ является строкой, а значение — произвольным объектом JSON. Это открытый тип OData, который предполагает наличие свойства с именем `value` , которое является допустимым объектом JSON.
 localization_priority: Normal
-ms.openlocfilehash: 66b4438b73f0000c172db1df385088528d221be4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b97f1f8bf10005a9e7829ee9280ebf936405b346
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324804"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620635"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>Тип ресурса Стрингкэйобжектвалуепаир
 
@@ -21,7 +23,7 @@ ms.locfileid: "33324804"
 |ключа|String|Ключ.|
 |значение|Json|Произвольный объект JSON.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

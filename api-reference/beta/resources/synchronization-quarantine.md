@@ -2,12 +2,14 @@
 title: Тип ресурса Синчронизатионкуарантине
 description: Предоставляет сведения о состоянии карантина Синчронизатионжоб.
 localization_priority: Normal
-ms.openlocfilehash: 7036e07b7f812717304e26d8223676d3bb462266
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ca404ced0448534f6ed116f6376a8d26bcb24a90
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342904"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620467"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>Тип ресурса Синчронизатионкуарантине
 

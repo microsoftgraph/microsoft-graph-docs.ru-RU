@@ -2,12 +2,12 @@
 title: Обновление объекта profilephoto
 description: Обновление фотографии для любого пользователя в клиенте, в том числе пользователя, выполнившего вход, или указанной группы или контакта. Так как
 localization_priority: Normal
-ms.openlocfilehash: b4f1cc2cf446d540d4143263bdb68bf9c09cccf4
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8a3c6d2ce042fa068fb0e0d99798fd8fa2be1d07
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455366"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621343"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 
@@ -29,6 +29,8 @@ ms.locfileid: "35455366"
 |Для приложения                            | Для ресурса **user**:<br/>User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.ReadWrite |
 
 > **Примечание.** Чтобы обновить фотографию какого-либо пользователя в организации, ваше приложение должно получить разрешение User.ReadWrite.All приложения и вызвать API с применением собственного идентификатора, не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service).
+
+> **Примечание:**  В настоящее время существует [известная ошибка](https://docs.microsoft.com/en-us/graph/known-issues#groups) при доступе к фотографиям группы с помощью разрешений приложения.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

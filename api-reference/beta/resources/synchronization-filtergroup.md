@@ -2,12 +2,14 @@
 title: Тип ресурса Филтерграуп
 description: Определяет набор предложений, которым должен удовлетворять объект, чтобы рассматриваться в области. Объект рассматривается в области для группы (Группа оценивается как `true`) только в `true`том случае, если все предложения группы оцениваются.
 localization_priority: Normal
-ms.openlocfilehash: ac71d5aa8c278c4c65edd96f0adcb8278bfd3246
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c411b85f2661829fe8739b8f8dc1cdd09639723c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342890"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621447"
 ---
 # <a name="filtergroup-resource-type"></a>Тип ресурса Филтерграуп
 

@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: Итеманалитикс
 localization_priority: Normal
-ms.openlocfilehash: 2869655b3b645fc8d30ceec3867c28ca81ac9d51
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 862b0b14f1efeb3a83dd4b842c0eb995abeabb80
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345458"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620265"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
 
@@ -41,10 +41,10 @@ ms.locfileid: "33345458"
 
 | Свойство      | Тип                 | Описание
 |:--------------|:---------------------|:--------------------------------------
-| Аллтиме       | [Итемактивитистат][] | Аналитика за сроком службы элемента.
-| Ластсевендайс | [Итемактивитистат][] | Аналитика за последние семь дней.
+| Аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
+| Ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
 
-[Итемактивитистат]: itemactivitystat.md
+[itemActivityStat]: itemactivitystat.md
 
 
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md

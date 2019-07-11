@@ -2,12 +2,14 @@
 title: Тип ресурса Синчронизатионсчема
 description: Определяет объекты, которые будут синхронизированы и как они будут синхронизированы. Схема синхронизации содержит большую часть сведений о настройке для определенного задания синхронизации. Как правило, вы настраиваете некоторые сопоставления атрибутов или добавляете фильтр областей для синхронизации только объектов, удовлетворяющих определенному условию.
 localization_priority: Normal
-ms.openlocfilehash: 8fd43a028a7d94b6d4a7c1e5d3c47520bff507ec
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7d4302cec5fe568f322e5a8d1b86bc4681b50f7c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339879"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620684"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса Синчронизатионсчема
 
@@ -36,8 +38,8 @@ ms.locfileid: "33339879"
 |[Получение схемы](../api/synchronization-synchronizationschema-get.md)    |[Синчронизатионсчема](synchronization-synchronizationschema.md)   |Чтение свойств и связей объекта **синчронизатионсчема** .|
 |[Обновление схемы](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации. |
 |[Удаление схемы](../api/synchronization-synchronizationschema-delete.md)    |Нет   |Удаление настраиваемой схемы путем сброса схемы к конфигурации по умолчанию. |
-|[Операторы фильтра списка](../api/synchronization-synchronizationschema-filteroperators.md)    |Коллекция [филтероператорсчема](../resources/synchronization-filteroperatorschema.md)   |ПереЧисление всех операторов, поддерживаемых в фильтрах областей видимости. |
-|[Функции сопоставления атрибутов списка](../api/synchronization-synchronizationschema-functions.md)    |Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)   |ПереЧисление всех функций, поддерживаемых в выражениях сопоставления атрибутов. |
+|[Операторы фильтра списка](../api/synchronization-synchronizationschema-filteroperators.md)    |Коллекция [филтероператорсчема](../resources/synchronization-filteroperatorschema.md)   |Перечисление всех операторов, поддерживаемых в фильтрах областей видимости. |
+|[Функции сопоставления атрибутов списка](../api/synchronization-synchronizationschema-functions.md)    |Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)   |Перечисление всех функций, поддерживаемых в выражениях сопоставления атрибутов. |
 |[Анализ выражения сопоставления атрибутов](../api/synchronization-synchronizationschema-parseexpression.md)|[Парсикспрессионреспонсе](synchronization-parseexpressionresponse.md)|Синтаксический анализ строкового выражения в объект [Аттрибутемаппингсаурце|(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД).|
 
 

@@ -2,12 +2,14 @@
 title: Тип ресурса Филтероператорсчема
 description: Описывает оператор, который можно использовать в фильтре.
 localization_priority: Normal
-ms.openlocfilehash: 0f0ada4aaa02efa2484ffa75d88b2c8256f15fe8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c55838e6e7d12789d1bd84d63dff95b4d9b72efa
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342867"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621370"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Тип ресурса Филтероператорсчема
 
@@ -22,7 +24,7 @@ ms.locfileid: "33342867"
 |равн                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию: `Binary`.|
 |Мултивалуедкомпарисонтипе   |Скопеоператормултивалуедкомпарисонтипе          |Возможные значения: `All`, `Any`. Применяется только к многозначным атрибутам. `All`означает, что все значения должны удовлетворять условию. `Any`Указывает, что по крайней мере одно значение должно удовлетворять условию. Значение по умолчанию: `All`.|
 |name                        |String                     |Имя оператора. |
-|Суппортедаттрибутетипес     |Коллекция String         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|Суппортедаттрибутетипес     |Коллекция строк         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

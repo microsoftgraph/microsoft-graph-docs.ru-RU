@@ -2,12 +2,14 @@
 title: Запуск Синчронизатионжоб
 description: Запуск существующего задания синхронизации. Если задание приостановлено, оно продолжит обработку изменений с того места, где оно было приостановлено. Если задание находится в карантине, состояние карантина будет очищено.
 localization_priority: Normal
-ms.openlocfilehash: 977c38fa55de77e572e96be12f145a434caa688e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ecf773c234aa0a59288ce81d197b178e8b1aac28
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458180"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621069"
 ---
 # <a name="start-synchronizationjob"></a>Запуск Синчронизатионжоб
 

@@ -2,12 +2,14 @@
 title: Тип ресурса Аттрибутемаппингпараметерсчема
 description: Описывает один параметр, используемый в Аттрибутемаппингфунктионсчема.
 localization_priority: Normal
-ms.openlocfilehash: 44234e7e76b5b0d0fb514366be6106c8177b56db
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d8624851d37f475df66ec51f1951ebbbe1ea97a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342957"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620271"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса Аттрибутемаппингпараметерсчема
 
@@ -19,9 +21,9 @@ ms.locfileid: "33342957"
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
-|Алловмултиплеоккурренцес    |Логический                   |Данный параметр может быть указан несколько раз (например, с несколькими входными строками в `Concatenate(string,string,...)` функции). |
+|Алловмултиплеоккурренцес    |Boolean                   |Данный параметр может быть указан несколько раз (например, с несколькими входными строками в `Concatenate(string,string,...)` функции). |
 |name                        |String                    |Имя параметра. |
-|Обязательный                    |Логический                   |`true`значение, если параметр является обязательным; в `false`противном случае. |
+|Обязательный                    |Boolean                   |`true`значение, если параметр является обязательным; в `false`противном случае. |
 |type                        |String                    |Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Значение по умолчанию: `String`.|
 
 ## <a name="json-representation"></a>Представление JSON

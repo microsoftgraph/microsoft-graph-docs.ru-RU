@@ -2,12 +2,14 @@
 title: Создание Синчронизатионтемплате
 description: Создайте новый шаблон синхронизации для конкретного приложения.
 localization_priority: Normal
-ms.openlocfilehash: 22cfa1fa085d680591b7c6ccb9cc43d614f6f644
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1573d741acb0571784730ac6a37bc7b970e0cf3c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456990"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620432"
 ---
 # <a name="create-synchronizationtemplate"></a>Создание Синчронизатионтемплате
 

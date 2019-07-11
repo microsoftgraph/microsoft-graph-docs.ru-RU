@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедоператионевент
 description: Представляет событие аудита, созданное с помощью привилегированного управления удостоверениями для операций с ролями, например администратором, который управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
 localization_priority: Normal
-ms.openlocfilehash: c7a7cdb31289dc0cdd31c843d18138676d518eb3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 58444ab6beac8796dba9945697bc809070f435fe
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344300"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621258"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>Тип ресурса Привилежедоператионевент
 
@@ -41,7 +41,7 @@ ms.locfileid: "33344300"
 |Усермаил|string|Адрес электронной почты пользователя.|
 |userName|string|Отображаемое имя пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

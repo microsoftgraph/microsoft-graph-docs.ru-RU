@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедролеассигнментрекуест
 description: Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 localization_priority: Normal
-ms.openlocfilehash: ead028d61fcbf6fe7cebf13291c0ba5231f0ba22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 240c84ecb0bf4f8d0e171f647f21eb6730c28d44
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344279"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621216"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>Тип ресурса Привилежедролеассигнментрекуест
 
@@ -21,8 +21,8 @@ ms.locfileid: "33344279"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|[Список](../api/privilegedroleassignmentrequest-list.md) | Коллекция [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
-|[Создание](../api/privilegedroleassignmentrequest-post.md)|  [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Создание запроса на управление жизненным циклом существующего или нового назначения роли.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | Коллекция [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
+|[создание](../api/privilegedroleassignmentrequest-post.md);|  [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Создание запроса на управление жизненным циклом существующего или нового назначения роли.|
 |[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена ожидающего запроса на назначение роли.|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |Получение запроса на назначение роли для текущего рекустор.|
 
@@ -36,14 +36,14 @@ ms.locfileid: "33344279"
 |причиной|String| Причина назначения роли.|
 |Рекуестеддатетиме|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| Идентификатор роли.|
-|Диспетчер|[governanceSchedule](governanceschedule.md)| Объект расписания для запроса на назначение роли.|
+|schedule|[governanceSchedule](governanceschedule.md)| Объект расписания для запроса на назначение роли.|
 |status|String| Только для чтения. состояние запроса на назначение роли. Возможные значения `NotStarted``Completed`:,`RequestedApproval``Scheduled``Approved``Revoked``RequestExpired`,,,,,,,,,.`ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
 |Тиккетнумбер|String| Тиккетнумбер для назначения роли. |
 |Тиккетсистем|String| Тиккетсистем для назначения роли.|
 |type|String| Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: Администраторы Add Users to Roles; `UserAdd`: Пользователи добавляют назначения ролей.|
 |userId|String| Идентификатор пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип        | Описание |
 |:-------------|:------------|:------------|
 |Ролеинфо|[privilegedRole](privilegedrole.md)| Объект Ролеинфо запроса назначения роли.|

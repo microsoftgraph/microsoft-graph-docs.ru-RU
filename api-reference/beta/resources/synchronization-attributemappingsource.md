@@ -2,12 +2,14 @@
 title: Тип ресурса Аттрибутемаппингсаурце
 description: 'Определяет способ извлечения (или преобразования) значения из исходного объекта. Например, это может быть простое значение из определенного атрибута для исходного объекта или более сложное выражение сцепления строк/извлечения/замены на основе нескольких исходных атрибутов. '
 localization_priority: Normal
-ms.openlocfilehash: 8b00cec8f49b914d37d252e5dc464720228bb825
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0c5ef197a72767fb0c764689558b9c005be856f8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345635"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621454"
 ---
 # <a name="attributemappingsource-resource-type"></a>Тип ресурса Аттрибутемаппингсаурце
 
@@ -24,7 +26,7 @@ ms.locfileid: "33345635"
 |parameters             |Коллекция [стрингкэйаттрибутемаппингсаурцевалуепаир](synchronization-stringkeyattributemappingsourcevaluepair.md) | Если этот объект представляет функцию, перечисляет параметры функции. Параметры состоят из объектов **аттрибутемаппингсаурце** , что позволяет использовать сложные выражения. Если **тип** — Not `Function`, это свойство будет иметь значение null или пустой массив. |
 |type                   | String                    |Тип этого источника сопоставления атрибутов. Возможные значения: `Attribute`, `Constant`, `Function`. Значение по умолчанию: `Attribute`.| 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

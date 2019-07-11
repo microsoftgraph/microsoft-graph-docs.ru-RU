@@ -2,12 +2,14 @@
 title: Тип ресурса Синчронизатионжобрестарткритериа
 description: 'Определяет область действия [синчронизатионжоб: Restart](../api/synchronization_synchronizationjob_restart.md) .'
 localization_priority: Normal
-ms.openlocfilehash: b59b960534b7fb3e2d122e1ec92ee7b01c998c0f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: fda28a84f568b9d535a06226397375f3fa8e444a
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340039"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620726"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>Тип ресурса Синчронизатионжобрестарткритериа
 
@@ -18,7 +20,7 @@ ms.locfileid: "33340039"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ресетскопе|String| Разделенная заПятыми комбинация следующих значений: `Full`, `QuarantineState` `Watermark`,, `Escrows`, `ConnectorDataStore`. Используйте `Full` , если вы хотите использовать все параметры.|
+|Ресетскопе|String| Разделенная запятыми комбинация следующих значений: `Full`, `QuarantineState` `Watermark`,, `Escrows`, `ConnectorDataStore`. Используйте `Full` , если вы хотите использовать все параметры.|
 
 ## <a name="json-representation"></a>Представление JSON
 

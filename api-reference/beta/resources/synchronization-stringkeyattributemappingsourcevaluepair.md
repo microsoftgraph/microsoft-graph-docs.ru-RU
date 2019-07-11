@@ -2,12 +2,14 @@
 title: Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
 description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — Аттрибутемаппингсаурце.
 localization_priority: Normal
-ms.openlocfilehash: 7b722fb681ceb64ac4dd58553010e704e7669584
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e513ffd0ba32780ae1a489155999716b3a7499d2
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345523"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620439"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
 
@@ -21,7 +23,7 @@ ms.locfileid: "33345523"
 |key|String|Имя параметра.|
 |значение|[Аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Значение параметра.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -2,12 +2,12 @@
 title: Создание Привилежедролеассигнментрекуест
 description: Создание объекта привилежедролеассигнментрекуест.
 localization_priority: Normal
-ms.openlocfilehash: 809bbbbead7a34cd775db8561ae58cb101afe079
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8ea222732b152ea4472b07c2c53a0bd3365f5b7b
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444843"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620572"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание Привилежедролеассигнментрекуест
 

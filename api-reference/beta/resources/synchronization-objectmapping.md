@@ -2,12 +2,14 @@
 title: Тип ресурса Обжектмаппинг
 description: Определяет способ синхронизации данного объекта из исходного каталога в конечный каталог. В частности, он определяет, как объект в исходном каталоге должен сопоставляться с объектом в целевом каталоге, какие фильтры области (если они есть) следует использовать, чтобы определить, нужно ли подготовить заданный объект, и как будут преобразованы атрибуты объекта. Источник с целевым каталогом.
 localization_priority: Normal
-ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 667a58f299847188d193a5b50bb9883721d191e9
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345598"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620516"
 ---
 # <a name="objectmapping-resource-type"></a>Тип ресурса Обжектмаппинг
 
@@ -30,7 +32,7 @@ ms.locfileid: "33345598"
 |Саурцеобжектнаме           |String     |Имя объекта в исходном каталоге. Должно сопоставлять имя объекта из исходного [определения каталога](synchronization-directorydefinition.md).|
 |Таржетобжектнаме           |String     |Имя объекта в целевом каталоге. Должно сопоставлять имя объекта из [определения целевого каталога](synchronization-directorydefinition.md).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

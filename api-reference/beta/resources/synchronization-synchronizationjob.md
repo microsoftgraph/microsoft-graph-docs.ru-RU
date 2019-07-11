@@ -2,12 +2,14 @@
 title: Тип ресурса Синчронизатионжоб
 description: Выполняет синхронизацию с периодического выполнения в фоновом режиме, опрашивает изменения в одном каталоге и помещает их в другой каталог. Задание синхронизации всегда относится к определенному экземпляру приложения в клиенте. В рамках настройки задания синхронизации необходимо предоставить авторизацию для чтения и записи объектов в целевом каталоге, а также для настройки схемы синхронизации задания.
 localization_priority: Normal
-ms.openlocfilehash: 186df51b9a2a941d6c27cda03895423e311fb0b0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 19f30dd20d313d5ab7a46dd9368d391b83ee1993
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33620831"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620733"
 ---
 # <a name="synchronizationjob-resource-type"></a>Тип ресурса Синчронизатионжоб
 
@@ -21,11 +23,11 @@ ms.locfileid: "33620831"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |Коллекция [синчронизатионжоб](synchronization-synchronizationjob.md)  |Перечисление существующих заданий для определенного экземпляра приложения (субъекта-службы).|
 |[Получение Синчронизатионжоб](../api/synchronization-synchronizationjob-get.md) | [Синчронизатионжоб](synchronization-synchronizationjob.md) |Чтение свойств и связей объекта Синчронизатионжоб.|
-|[Create](../api/synchronization-synchronizationjob-post.md)         |[Синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
+|[создание](../api/synchronization-synchronizationjob-post.md);         |[Синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание приостановлено, оно продолжается с того места, где было приостановлено задание. Если задание находится в карантине, статус карантина очищается.|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительно запустить задание и повторно обработать все объекты в каталоге.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении [начального](../api/synchronization-synchronizationjob-start.md) вызова.|
-|[Delete](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
+|[Удаление](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
 |[Получение Синчронизатионсчема](../api/synchronization-synchronizationschema-get.md)    |[Синчронизатионсчема](synchronization-synchronizationschema.md)   |Получение действующей схемы синхронизации задания.|
 |[Обновление Синчронизатионсчема](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации задания. |
 |[Проверка учетных данных](../api/synchronization-synchronizationjob-validatecredentials.md)|Нет|Проверка предоставленных учетных данных в целевом каталоге.|
@@ -39,12 +41,12 @@ ms.locfileid: "33620831"
 |status         |[Синчронизатионстатус](synchronization-synchronizationstatus.md)     |Состояние задания, которое включает время последнего запуска задания, текущее состояние задания и ошибки.|
 |templateId     |String    |Идентификатор [шаблона синхронизации](synchronization-synchronizationtemplate.md) , на котором основано это задание.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |схемы|[Синчронизатионсчема](synchronization-synchronizationschema.md)| Схема синхронизации, настроенная для задания.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

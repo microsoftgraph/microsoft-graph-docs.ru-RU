@@ -2,12 +2,14 @@
 title: Тип ресурса Експрессионинпутобжект
 description: 'Представляет объект, который будет использоваться в качестве входных тестовых данных, когда действие [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) выполняет оценку выражения.'
 localization_priority: Normal
-ms.openlocfilehash: 90d394639de7050eaed3b696dd8526e144cac03d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b5fb11471757328bf0b84ae5ea0977d43587d7e4
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345607"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621384"
 ---
 # <a name="expressioninputobject-resource-type"></a>Тип ресурса Експрессионинпутобжект
 
@@ -21,7 +23,7 @@ ms.locfileid: "33345607"
 |RDLC|[Обжектдефинитион](synchronization-objectdefinition.md)|Определение тестового объекта.|
 |properties|Коллекция [стрингкэйобжектвалуепаир](synchronization-stringkeyobjectvaluepair.md)|Значения свойств тестового объекта.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

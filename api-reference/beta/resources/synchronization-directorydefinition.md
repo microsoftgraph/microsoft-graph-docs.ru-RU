@@ -2,12 +2,14 @@
 title: Тип ресурса Директоридефинитион
 description: Предоставляет сведения о модуле синхронизации для каталога и его объектов. Этот ресурс сообщает обработчику синхронизации, например, что каталог содержит объекты с именем **User** и **Group**, какие атрибуты поддерживаются для этих объектов, и типы этих атрибутов. Чтобы объект и атрибут участвовали в правилах синхронизации и сопоставлениях объектов, они должны быть определены как часть определения каталога.
 localization_priority: Normal
-ms.openlocfilehash: 8e622edef39eec5476015ef5e22c5fe9697e0daa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2c79855ac07ab9a850fd76ac888afbbcb923d136
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342932"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621439"
 ---
 # <a name="directorydefinition-resource-type"></a>Тип ресурса Директоридефинитион
 

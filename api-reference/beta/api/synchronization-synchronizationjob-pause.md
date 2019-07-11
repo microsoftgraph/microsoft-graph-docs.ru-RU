@@ -2,12 +2,14 @@
 title: 'Синчронизатионжоб: пауза'
 description: Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении начального вызова.
 localization_priority: Normal
-ms.openlocfilehash: 5dab823d98db208f599bf486c588e2a48f329fe6
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 80cde9328ef8d34f60c81ada2ce5516bba078e4c
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457046"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621132"
 ---
 # <a name="synchronizationjob-pause"></a>Синчронизатионжоб: пауза
 

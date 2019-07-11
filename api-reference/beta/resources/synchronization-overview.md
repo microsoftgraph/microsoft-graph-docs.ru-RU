@@ -2,12 +2,14 @@
 title: Общие сведения об API синхронизации Azure AD
 description: ') позволяет автоматизировать создание, Обслуживание и удаление удостоверений в приложениях Cloud (программное обеспечение, в качестве службы или SaaS), таких как Dropbox, Salesforce, ServiceNow и т. д. С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:'
 localization_priority: Normal
-ms.openlocfilehash: e472acc60e74c6a22a744d84e7e4dcf672337a6e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c500eeb188461eaf245b6a9149421216cfaf2f43
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342936"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620502"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Общие сведения об API синхронизации Azure AD
 
@@ -54,7 +56,7 @@ ms.locfileid: "33342936"
 
 Работа с API синхронизации в основном включает доступ к ресурсам [синчронизатионжоб](synchronization-synchronizationjob.md) и [синчронизатионсчема](synchronization-synchronizationschema.md) . Чтобы найти ресурс [синчронизатионжоб](synchronization-synchronizationjob.md) , необходимо знать идентификатор объекта участника службы, к которому относится задание синхронизации. В приведенных ниже примерах показано, как работать с ресурсами **синчронизатионжоб** и **синчронизатионсчема** .
 
-### <a name="authorization"></a>Authorization
+### <a name="authorization"></a>Авторизация
 
 API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с разрешениями для [каталогов](/graph/permissions-reference#directory-permissions).
 
@@ -115,7 +117,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="list-existing-synchronization-jobs"></a>ПереЧисление существующих заданий синхронизации
+### <a name="list-existing-synchronization-jobs"></a>Перечисление существующих заданий синхронизации
 
 В приведенном ниже примере показано, как перечислить существующие задания синхронизации.
 

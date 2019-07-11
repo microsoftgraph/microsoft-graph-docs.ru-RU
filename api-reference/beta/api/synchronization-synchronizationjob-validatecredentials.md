@@ -2,12 +2,14 @@
 title: 'Синчронизатионжоб: Валидатекредентиалс'
 description: Убедитесь, что учетные данные действительны в клиенте.
 localization_priority: Normal
-ms.openlocfilehash: 2437cfcf8a0c028d31aeb09ec1c319916de9efb2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bdeb174a8e2c1386df22e7adbe231380f067ee0f
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457011"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35621048"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 

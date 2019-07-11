@@ -2,12 +2,14 @@
 title: Тип ресурса Синчронизатионтемплате
 description: " любой пользователь может получить шаблон для просмотра параметров по умолчанию, в том числе схемы синхронизации."
 localization_priority: Normal
-ms.openlocfilehash: fda63ede321de1a87604e7bca7fe7d7536d42689
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 125b8fe81aedc285da33380c3043827c7c534ab8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339867"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620649"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>Тип ресурса Синчронизатионтемплате
 
@@ -21,8 +23,8 @@ ms.locfileid: "33339867"
 
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[Список](../api/synchronization-synchronizationtemplate-list.md)    |Коллекция [синчронизатионтемплате](synchronization-synchronizationtemplate.md)  |Список шаблонов, доступных для приложения или экземпляра приложения (субъекта-службы).|
-|[Получение](../api/synchronization-synchronizationtemplate-get.md)      |[Синчронизатионтемплате](synchronization-synchronizationtemplate.md)   |Чтение свойств и связей объекта **синчронизатионтемплате** .|
+|[List](../api/synchronization-synchronizationtemplate-list.md)    |Коллекция [синчронизатионтемплате](synchronization-synchronizationtemplate.md)  |Список шаблонов, доступных для приложения или экземпляра приложения (субъекта-службы).|
+|[получение](../api/synchronization-synchronizationtemplate-get.md);      |[Синчронизатионтемплате](synchronization-synchronizationtemplate.md)   |Чтение свойств и связей объекта **синчронизатионтемплате** .|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -34,7 +36,7 @@ ms.locfileid: "33339867"
 |:--------------|:--------------------------|:-----------------------------|
 |id             |Строка                     |Уникальный идентификатор шаблона.|
 |applicationId  |String                     |Идентификатор приложения, к которому принадлежит этот шаблон.|
-|умолчани        |Логический                    |`true`Если этот шаблон рекомендуется использовать по умолчанию для приложения.|
+|умолчани        |Boolean                    |`true`Если этот шаблон рекомендуется использовать по умолчанию для приложения.|
 |description    |String                     |Описание шаблона.|
 |обнаружения   |String                     |`true`Если этот шаблон должен отображаться в коллекции шаблонов, доступных для экземпляра приложения (субъекта-службы).|
 |Факторитаг     |String                     |Один из известных тегов фабрики, поддерживаемых обработчиком синхронизации. **Факторитаг** сообщает обработчику синхронизации, какую реализацию следует использовать при обработке заданий на основе этого шаблона.|

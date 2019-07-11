@@ -4,12 +4,12 @@ description: Сложный тип, содержащий свойства ана
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a8f6f048576ce5bc6ab532793d98fa1644e5158d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7eddc083bd38c0902f61d326926c86f48ca78714
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333570"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620912"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
@@ -46,7 +46,7 @@ ms.locfileid: "33333570"
 | -------------         |---------------| -------------|
 | title                 | String        | Текст заголовка элемента.               |
 | type              | String        | Тип мультимедиа элемента. Можно использовать для фильтрации определенного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| mediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации для определенного типа файлов на основе поддерживаемых типов MIME для мультимедиа IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
+| mediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации файлов определенного типа на основе поддерживаемых типов MIME MIME для устройства IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
 | Превиевимажеурл       | String        | URL-адрес, ведущая к изображению для предварительного просмотра элемента. |
 | previewText           | String        | Предварительный текст для элемента. |
 | Контаинервебурл       | String        | Путь, начинающийся с папки, в которой хранится элемент. |
@@ -63,8 +63,8 @@ ms.locfileid: "33333570"
 -   InfoPath
 -   Visio
 -   Publisher
--   Проект
--   Доступ
+-   Project
+-   Access
 -   Почта
 -   Расширения
 -   Архив
@@ -78,7 +78,7 @@ ms.locfileid: "33333570"
 -   Story
 -   Екстерналконтент
 -   Folder
--   Прочее
+-   Other
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -86,7 +86,7 @@ ms.locfileid: "33333570"
 Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
 
 -   Онедривебусинесс
--   site
+-   Site
 -   Почта
 -   Оставляют
 -   Box

@@ -4,12 +4,12 @@ description: Обновляет свойства объекта windows10Endpoin
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5949b3a4c1609386b7c6ede41469f35b4df8bdd5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 9594362998b5c13e2f38fcd1ca6043cf10fd80cd
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976031"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620327"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Обновление объекта windows10EndpointProtectionConfiguration
 
@@ -218,7 +218,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Девицегуардсекуребутвисдма|[Секуребутвисдматипе](../resources/intune-deviceconfig-securebootwithdmatype.md)|Указывает, включен ли уровень безопасности платформы при следующей перезагрузке. Возможные значения: `notConfigured`, `withoutDMA`, `withDMA`.|
 |Девицегуардлаунчсистемгуард|[Включение](../resources/intune-shared-enablement.md)|Позволяет ИТ – администратору настраивать запуск системы защиты системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Позволяет ИТ-администраторам настраивать SmartScreen для Windows.|
-|smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ-администраторам указывать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
+|smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ – администраторам контролировать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
 |applicationGuardEnabled|Boolean|Включение Application Guard в Защитнике Windows|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Включение Application Guard в Защитнике Windows для более новых сборок Windows. Возможные значения: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[Аппликатионгуардблоккфилетрансфертипе](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Блокировать буфер обмена для передачи файла изображения, текстового файла или ни одного из них. Возможные значения: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
