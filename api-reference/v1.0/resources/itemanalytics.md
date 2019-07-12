@@ -5,12 +5,12 @@ title: Тип ресурса Итеманалитикс
 description: Объект Итеманалитикс предоставляет аналитику о действиях, которые были выполнены над элементом.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5c716f8faaafffe6afd75987843e6b614f5d6552
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+ms.openlocfilehash: a18d12bd2b431d147f2d23ea2c958cd75078c9a8
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970795"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620418"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
 
@@ -24,10 +24,10 @@ ms.locfileid: "33970795"
 
 | Свойство      | Тип                 | Описание
 |:--------------|:---------------------|:--------------------------------------
-| Аллтиме       | [Итемактивитистат][] | Аналитика за сроком службы элемента.
-| Ластсевендайс | [Итемактивитистат][] | Аналитика за последние семь дней.
+| Аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
+| Ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
 
-[Итемактивитистат]: itemactivitystat.md
+[itemActivityStat]: itemactivitystat.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## <a name="json-representation"></a>Представление JSON
