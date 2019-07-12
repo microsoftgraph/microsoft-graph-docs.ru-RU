@@ -2,12 +2,12 @@
 title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств profilePhoto).
 localization_priority: Priority
-ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ab580436a9262e60ef9ab07bc4d61d9ee6f8d04
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576285"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620614"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -31,6 +31,8 @@ ms.locfileid: "32576285"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 |Разрешения приложений                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 
+> 
+  **Примечание.** В настоящее время существует [известная проблема](https://docs.microsoft.com/ru-RU/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 
 ## <a name="http-request"></a>HTTP-запрос 
 
