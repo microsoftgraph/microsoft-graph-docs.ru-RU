@@ -4,18 +4,19 @@ description: Получение свойств и связей объекта or
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e0105a5a81a754beab637fe2199dd7e5bf5d6a7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 1460765c1218fdb397da02fab8073a833b2dd714
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450571"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639075"
 ---
 # <a name="get-organization"></a>Получение организации
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
+Получение свойств и связей в Организации, для которой выполнена проверка подлинности.
 
 Так как ресурс **Организации** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **Организации** .
 
@@ -25,11 +26,11 @@ ms.locfileid: "35450571"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User. Read, Directory. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись) | User. Read, Organization. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Directory.Read.All |
+|Для приложений | Organization. Read. ALL, Directory. Read. ALL, Organization. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
-> Примечание. Приложения с разрешением User.Read могут читать только такие свойства организации, как *id*, *displayName* и *verifiedDomains*.  Для всех остальных свойств возвращается значение `null`. Читать все свойства можно с помощью Directory.Read.All.
+> **Note**: приложения, которым предоставлено разрешение User. Read, могут читать только свойства **ID**, **DisplayName**и **верифиеддомаинс** в Организации.  Для всех остальных свойств возвращается значение `null`. Чтобы прочитать все свойства, используйте Organization. Read. ALL.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,9 +46,9 @@ GET /organization
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:----------|
+| Authorization  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

@@ -4,12 +4,13 @@ description: Обновление свойств объекта organization, д
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f8b8dd73d19cd1697b6ab090415fa56166ba7c8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 10b2ab6650bb255e38eb6bfd2def745edcecd87b
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440241"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639054"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -23,9 +24,9 @@ ms.locfileid: "35440241"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Организация. ReadWrite. ALL, Directory. AccessAsUser. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Не поддерживается. |
+|Для приложений | Организация. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,15 +38,17 @@ PATCH /organization/{id}
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type   | application/json |
+
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
+| Свойство  | Тип |Описание|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|Коллекция строк|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
