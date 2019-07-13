@@ -4,12 +4,12 @@ description: Представляет отдельное сообщение ча
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 269041dece2ab626c5f3d0ecccbf70d62c296ede
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+ms.openlocfilehash: 3f27434e5dd8e3ccfc949c870a239522dd96d9d3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084049"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645242"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -44,7 +44,7 @@ ms.locfileid: "35084049"
 |etag| строка | Только для чтения. Номер версии сообщения. |
 |messageType|chatMessageType|Тип сообщения. Возможные значения: `message`.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
-|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения.|
+|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени создания или изменения сообщения, включая время создания ответа (если это корневое сообщение в канале) либо добавления или удаления реакции. |
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
 |subject|string| Тема сообщения в формате обычного текста.|
 |body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Представление определяется параметром contentType в тексте. Содержимое всегда имеет формат HTML, если сообщение содержит [chatMessageMention](chatmessagemention.md). |
