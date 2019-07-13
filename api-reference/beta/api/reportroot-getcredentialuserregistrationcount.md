@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: b5e14b293447e585451f343a1c130e7d3d323a59
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ee2ffb1921f60e13210a6d564dc689e67407b356
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35505895"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645231"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>Reportroot.: Жеткредентиалусеррегистратионкаунт
 
@@ -33,7 +33,7 @@ ms.locfileid: "35505895"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getCredentialsUserRegistrationCount
+GET /reports/getCredentialUserRegistrationCount
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

@@ -4,29 +4,29 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: f97f3d36599fe088f28176d001fecc701bb5e3ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d996c5e06c5c12e3a5115253bb73ed4a7a450258
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339085"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645221"
 ---
 # <a name="bookingcustomer-resource-type"></a>Тип ресурса Букингкустомер
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет клиента объекта [букингбсинесс](bookingbusiness.md).
+Представляет клиента объекта [букингбусинесс](bookingbusiness.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[ПереЧисление клиентов](../api/bookingbusiness-list-customers.md) | Коллекция [букингкустомер](bookingcustomer.md) | Получение списка объектов **букингкустомер** . |
+|[Перечисление клиентов](../api/bookingbusiness-list-customers.md) | Коллекция [букингкустомер](bookingcustomer.md) | Получение списка объектов **букингкустомер** . |
 |[Создание Букингкустомер](../api/bookingbusiness-post-customers.md) | [Букингкустомер](bookingcustomer.md) | Создание нового объекта **букингкустомер** . |
 |[Получение Букингкустомер](../api/bookingcustomer-get.md) | [Букингкустомер](bookingcustomer.md) |Чтение свойств и связей объекта **букингкустомер** .|
-|[Update](../api/bookingcustomer-update.md) | [Букингкустомер](bookingcustomer.md) |Обновление объекта **букингкустомер** . |
-|[Delete](../api/bookingcustomer-delete.md) | Нет |Удаление объекта **букингкустомер** . |
+|[обновление](../api/bookingcustomer-update.md); | [Букингкустомер](bookingcustomer.md) |Обновление объекта **букингкустомер** . |
+|[Удаление](../api/bookingcustomer-delete.md) | Нет |Удаление объекта **букингкустомер** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

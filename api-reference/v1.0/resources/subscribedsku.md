@@ -4,12 +4,12 @@ description: Содержит сведения о SKU службы, на кот�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ed1a9dc5b12cf1e3b3a01b31d7a990fa7fd562c
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: c3343661f6c72a057c73b70f91a284f3168a9c72
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656470"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639068"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -20,8 +20,8 @@ ms.locfileid: "34656470"
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Чтение свойств и связей объекта subscribedSku.|
-|[Список subscribedsku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
+|[Получение объекта subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Получение конкретной коммерческой подписки, приобретенной Организацией.|
+|[Список subscribedsku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных Организацией.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

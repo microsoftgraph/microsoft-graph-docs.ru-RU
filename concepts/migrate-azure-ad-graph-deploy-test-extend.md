@@ -4,12 +4,12 @@ description: 'В этой статье описывается перенос п�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8a63c14ef27648a1d586551ebe12e18a5f263a9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 6b5236f6b7be140e1040a3169edded6e162b5e7a
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630253"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645256"
 ---
 # <a name="deploy-test-and-extend"></a>Развертывание, тестирование и расширение
 
@@ -42,7 +42,7 @@ ms.locfileid: "33630253"
 - Повторное изучение [контрольного списка](migrate-azure-ad-graph-overview.md)
 - Отправка вопросов в [сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
 - Просмотрите примеры Microsoft Graph и сравните их с существующим кодом приложения:
-  - **Приложения, ИСПОЛЬЗУЮЩИЕ REST API**: краткие [руководства по началу работы и примеры](/graph/get-started), выбор вашей платформы и запуск с помощью краткого руководства или поиск подходящего примера
+  - **Приложения, ИСПОЛЬЗУЮЩИЕ REST API**: краткие [руководства по началу работы и примеры](https://developer.microsoft.com/graph/get-started), выбор вашей платформы и запуск с помощью краткого руководства или поиск подходящего примера
   - **Приложение, использующее клиентскую библиотеку .NET**: "Рецензирование", " [консоль CSharp-сниппетов-фрагменты-Sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) " и/или [дотнеткоре-Console-Sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>Дальнейшие действия

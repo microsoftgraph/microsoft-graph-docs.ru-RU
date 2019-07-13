@@ -4,12 +4,12 @@ description: Сведения о том, как выполнять аудит AP
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ecf6d1897d8473b42ac8b5bcb45c59747eb36f13
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 14cc61039d97fa43f64599310cf86cce6c348fb2
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630274"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645250"
 ---
 # <a name="examine-azure-ad-graph-apis-app-usage"></a>Изучение использования приложений API Azure AD Graph
 
@@ -29,7 +29,7 @@ Microsoft Graph поддерживает многие функции и возм
 
 Кроме того, необходимо проверить разрешения, необходимые для функций, которые использует ваше приложение.  В некоторых случаях доступны более детализированные разрешения.
 
-Дополнительные сведения см. в статье [Разрешения](/concepts/permissions-reference.md).
+Дополнительные сведения см. в статье [Разрешения](permissions-reference.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

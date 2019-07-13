@@ -4,16 +4,16 @@ description: . Активируйте ().
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b8a9389ecbc9dd934f02e75a1d9b870aab832d1b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3bd363a48c3e99133246b1ab46c0d7fcb4d8aa1b
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455037"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645263"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
-Добавляет новый лист в книгу. Лист будет добавлен в конец набора имеющихся листов. Если вы хотите активировать только что добавленный лист, вызовите команду .activate().
+Добавляет новый лист в книгу. Лист будет добавлен после существующих листов. Если вы хотите активировать недавно добавленный лист, вызовите. Activate ().
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

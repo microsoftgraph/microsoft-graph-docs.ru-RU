@@ -4,12 +4,12 @@ description: 'Восстановление недавно удаленного �
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 798be2e38bcbb064fac4069ec7e7276bd9ed49d1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 39a63711881b0d97ab1c103c0d10f2caaadcc043
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455968"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639012"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 
@@ -47,8 +47,8 @@ POST /directory/deletedItems/{id}/restore
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
-| Accept | application/json |
+| Авторизация  | &lt;&gt; *Необходим* маркер носителя|
+| Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -58,7 +58,7 @@ POST /directory/deletedItems/{id}/restore
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -83,8 +83,7 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 
 ---
 
-Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
