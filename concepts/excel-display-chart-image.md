@@ -4,16 +4,16 @@ description: Когда вы выполняете операцию GET, чтоб
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5cdf5522ccd0a72798ee62211e9221cf2ea9cd53
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 330c7d3a531a5735e824dda61928c3af2f05e5e3
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526295"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645217"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>Показ изображения диаграммы в Excel с помощью Microsoft Graph
 
-Когда вы выполняете [операцию GET, чтобы получить изображение диаграммы](/api-reference/v1.0/api/chart-image.md), API Excel возвращает изображение в виде строки в кодировке Base 64.
+Когда вы выполняете [операцию GET, чтобы получить изображение диаграммы](/graph/api/chart-image?view=graph-rest-1.0), API Excel возвращает изображение в виде строки в кодировке Base 64.
 
 Вы можете отображать строку в кодировке Base 64 в HTML-теге изображения: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 

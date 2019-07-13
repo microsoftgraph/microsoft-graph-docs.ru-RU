@@ -4,16 +4,16 @@ description: Подключение к данным Microsoft Graph исполь
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: b09effe96a0b6c04ee68a23016f464a8e0f9d9e0
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 439a5e50779888ff1ae7ccfb11311d8b3f6b8a14
+ms.sourcegitcommit: ca55fc5f5711966eaa41da31cd1ae99820e9e586
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629819"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645270"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Интеграция подключения к данным Microsoft Graph с управлением привилегированным доступом
 
-Подключение к данным Microsoft Graph использует управлением привилегированным доступом (PAM), чтобы позволить администраторам Office 365 утверждать запросы на перемещение данных. Конвейеры подключения к данным должны утверждаться участником группы утверждающих запросы на доступ к данным, который указывается администратором Office 365 во время включения. Чтобы настроить группу утверждающих, см. статью [Начало работы](/concepts/data-connect-get-started.md).
+Подключение к данным Microsoft Graph использует управлением привилегированным доступом (PAM), чтобы позволить администраторам Office 365 утверждать запросы на перемещение данных. Конвейеры подключения к данным должны утверждаться участником группы утверждающих запросы на доступ к данным, который указывается администратором Office 365 во время включения. Чтобы настроить группу утверждающих, см. статью [Начало работы](data-connect-get-started.md).
 
 Каждому участнику группы утверждающих высылаются электронные письма с запросом на утверждение, чтобы уведомить их, когда действия копирования запрашивают доступ для извлечения данных Office 365. Утверждающие могут утверждать или отклонять эти запросы, указывать группу пользователей, из которой следует удалить извлекаемые данные, или отозвать ранее утвержденный запрос. Утверждения сохраняются 6 месяцев, и требуется одно утверждение на каждое действие копирования в конвейере фабрики данных Azure. 
 
@@ -47,9 +47,9 @@ ms.locfileid: "33629819"
 
 Используйте следующие действия для взаимодействия с запросом с помощью модуля PowerShell для Exchange Online:
 
-1. Установите модуль PowerShell для Exchange Online. Инструкции по установке см. в статье [Подключение к Exchange Online PowerShell с помощью многофакторной проверки подлинности](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+1. Установите модуль PowerShell для Exchange Online. Инструкции по установке см. в статье [Подключение к Exchange Online PowerShell с помощью многофакторной проверки подлинности](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
 
-2. Подключитесь к Exchange Online PowerShell с помощью многофакторной проверки подлинности (MFA). Инструкции см. в статье [Подключение к Exchange Online PowerShell с помощью многофакторной проверки подлинности](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+2. Подключитесь к Exchange Online PowerShell с помощью многофакторной проверки подлинности (MFA). Инструкции см. в статье [Подключение к Exchange Online PowerShell с помощью многофакторной проверки подлинности](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
     >**Примечание**. Вам не нужно включать многофакторную проверку подлинности для своей организации, чтобы использовать эти действия при подключении к Exchange Online PowerShell. Подключение с помощью многофакторной проверки подлинности создает маркер OAuth, используемый PAM для подписи ваших запросов.
 
 3. Выполните вход с помощью своей учетной записи. Обратите внимание, что вы должны быть участником настроенной группы утверждающих доступ к данным, чтобы иметь возможность утверждать, отклонять или отзывать запросы. Гостевые пользователи не могут утверждать запросы, даже если они состоят в группе утверждающих. 
@@ -168,4 +168,4 @@ ms.locfileid: "33629819"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Убедитесь, что в вашей организации правильно настроено управление привилегированным доступом для использования с данными Microsoft Graph, выполнив действия, указанные в статье [Начало работы](/concepts/data-connect-get-started.md).
+Убедитесь, что в вашей организации правильно настроено управление привилегированным доступом для использования с данными Microsoft Graph, выполнив действия, указанные в статье [Начало работы](data-connect-get-started.md).
