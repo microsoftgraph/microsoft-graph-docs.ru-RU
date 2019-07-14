@@ -4,12 +4,12 @@ description: 'Представляет группу Azure Active Directory (Azur
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e410de0a4ef354a636a1c3fdd9851a9a109ee6dd
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 57587b183ccc15c4ebc46784161724d9cc7af773
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236666"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620782"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 

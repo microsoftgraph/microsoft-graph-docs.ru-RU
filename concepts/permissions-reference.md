@@ -3,12 +3,12 @@ title: 'Справочник по разрешениям Microsoft Graph '
 description: Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Вы как разработчик указываете, какие разрешения для Microsoft Graph должно запрашивать ваше приложение.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 9d0d82eddf4aaf283942aa6213f28bdb9d589c65
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 6e68a9c0a8f0eca222bd46a9ac15dda8d3d12f55
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133763"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620893"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -132,7 +132,7 @@ _AccessReview.Read.All_ и _AccessReview.ReadWrite.All_ допустимы то�
 * _Application.ReadWrite.All_. Составление списка всех приложений (`GET /beta/applications`)
 * _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_. Создание приложения (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, которыми владеет вызывающее приложение (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_. Добавление другого владельца приложения (`POST /applications/{id}/owners/$ref`).
 > Примечание: могут потребоваться дополнительные разрешения.
 

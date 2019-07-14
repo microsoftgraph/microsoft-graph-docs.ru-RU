@@ -2,12 +2,12 @@
 title: Обновление объекта profilephoto
 description: Обновление фотографии вошедшего **пользователя** либо указанной **группы** или **контакта**. Так как
 localization_priority: Priority
-ms.openlocfilehash: d7dbd54fa86d2a1dde8c5e8a50f654f112a688cb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: eac653df8f0188b292c765076af8d81b9543ca2d
+ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449458"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35620631"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 
@@ -25,6 +25,9 @@ ms.locfileid: "35449458"
 - Фотография **контакта**: Contacts.ReadWrite.
 
 > **Примечание.** Чтобы обновить фотографию какого-либо пользователя в организации, ваше приложение должно получить разрешение User.ReadWrite.All приложения и вызвать API с применением собственного идентификатора, не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service).
+
+> 
+  **Примечание.** В настоящее время существует [известная проблема](https://docs.microsoft.com/ru-RU/graph/known-issues#groups) с доступом к фотографиям группы при помощи разрешений для приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
