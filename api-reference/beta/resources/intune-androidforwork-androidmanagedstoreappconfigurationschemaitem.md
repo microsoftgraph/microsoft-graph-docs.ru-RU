@@ -4,12 +4,12 @@ description: Один элемент конфигурации внутри на�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 706a4daa53201f8bdf295ca26ecf6f20134437da
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 6bb634cd3bab2933f0b66dbc1b9b861c6fe52e64
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991417"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734971"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 
@@ -22,6 +22,8 @@ ms.locfileid: "34991417"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+|index|Int32|Уникальный индекс, который приложение использует для поддержки вложенных элементов схемы|
+|Парентиндекс|Int32|Индекс элемента родительской схемы для отслеживания вложенных элементов схемы|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
 |displayName|Строка|Понятное человеку имя.|
 |description|String|Описание компонентов приложения, которыми управляет элемент.|
@@ -45,6 +47,8 @@ ms.locfileid: "34991417"
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+  "index": 1024,
+  "parentIndex": 1024,
   "schemaItemKey": "String",
   "displayName": "String",
   "description": "String",
