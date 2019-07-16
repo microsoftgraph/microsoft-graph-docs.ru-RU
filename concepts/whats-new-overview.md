@@ -3,18 +3,18 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 13823057cf45dd89ede984748fc8672b9342404a
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 5500d80f1fc9ac4ec0a0a097c106c619aa76f1c9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35638959"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731793"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
 Знаете ли вы, что некоторые новые возможности Microsoft Graph реализуются на основе распространенных запросов сообщества разработчиков? 
 
-Команда разработчиков Microsoft Graph регулярно оценивает потребности клиентов, совершенствует интерфейсы API и среды разработки, а также выпускает их в виде новых возможностей в приведенном ниже порядке.
+Команда разработчиков Microsoft Graph регулярно оценивает потребности клиентов и выпускает новые функции в следующем порядке.
 
 1. Дебютный выпуск в **_предварительной_** версии. Все соответствующие обновления REST API доступны в конечной точке бета-версий (`https://graph.microsoft.com/beta`). Возможности предварительной версии могут меняться без уведомления. Не используйте их в приложениях для рабочей среды. 
 
@@ -29,6 +29,9 @@ ms.locfileid: "35638959"
 
 ### <a name="example-code-snippets"></a>Примеры фрагментов кода
 В дополнение к C# и JavaScript, теперь имеются фрагменты кода Objective-C для всех разделов API в материалах для версий v1.0 и бета. См. пример Objective-C для [получения события](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
+
+### <a name="identity-and-access"></a>Удостоверения и доступ
+Используйте [новые делегированные разрешения и разрешения приложений](permissions-reference.md#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для доступа к [организации](/graph/api/resources/organization?view=graph-rest-1.0) и соответствующим ресурсам, например [SKU, на которые оформлена подписка](/graph/api/resources/subscribedsku?view=graph-rest-1.0).
 
 ### <a name="mail"></a>Почта
 Используйте API [папок поиска почты](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0) для поиска сообщений и доступа к результатам поиска по электронной почте Outlook. См. связанное [объявление в блоге](https://developer.microsoft.com/en-us/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/).
@@ -57,13 +60,17 @@ ms.locfileid: "35638959"
 - Разностный запрос для [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta).
 - Разностный запрос и добавления свойств для [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) и [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta).
 
+### <a name="files"></a>Файлы 
+Применяйте дату и время окончания срока действия или пароль при [создании ссылки для общего доступа](/graph/api/driveitem-createlink?view=graph-rest-beta) к файлу, папке или другому объекту [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
+
 ### <a name="group"></a>Группа
 Получите [метки конфиденциальности](/graph/api/resources/assignedlabel?view=graph-rest-beta), чтобы обеспечить защиту конфиденциальных данных группы Office 365 и выполнение политик в отношении соответствия требованиям. Эти метки являются объектами [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta), опубликованными администраторами в Центре безопасности и соответствия требованиям Microsoft 365, в рамках возможностей Microsoft Information Protection. 
 
 ### <a name="identity-and-access"></a>Удостоверения и доступ
 - Получите экземпляр [приложения](/graph/api/resources/applicationtemplate?view=graph-rest-beta) или добавьте экземпляр из коллекции приложений Azure AD в ваш каталог в качестве шаблона.
 - Получите список [событий подготовки](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) в клиенте.
-- Получите сведения об [обнаруженном пользователе или рисках входа в систему](/graph/api/resources/riskdetection?view=graph-rest-beta) в среде Azure AD. Эта функциональность обнаружения рисков является частью Azure AD Identity Protection (Защиты идентификации Azure AD).
+- Получите сведения об [обнаруженном пользователе или рисках входа в систему](/graph/api/resources/riskdetection?view=graph-rest-beta) в среде Azure AD. Эта функциональность обнаружения рисков является частью защиты идентификации Azure AD.
+- Используйте [новые делегированные разрешения и разрешения приложений](permissions-reference.md#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для доступа к [организации](/graph/api/resources/organization?view=graph-rest-beta) и соответствующим ресурсам, например [SKU, на которые оформлена подписка](/graph/api/resources/subscribedsku?view=graph-rest-beta).
 
 ### <a name="mail"></a>Почта
 Используйте [разрешение Mail.ReadBasic](permissions-reference.md#mail-permissions) в API [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) и в [уведомлениях об изменениях](webhooks.md) для [сообщения](/graph/api/resources/message?view=graph-rest-beta) и **mailFolder**.
