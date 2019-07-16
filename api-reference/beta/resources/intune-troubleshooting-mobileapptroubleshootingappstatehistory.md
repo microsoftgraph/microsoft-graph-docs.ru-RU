@@ -4,12 +4,12 @@ description: Элемент History, содержащийся в событии 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c3f3b466d234c1f49a44cab8170366d8203bd26
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: efef2bb43c34c004df48453ca6a2713d445ec970
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988085"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737365"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппстатехистори
 
@@ -26,7 +26,7 @@ ms.locfileid: "34988085"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|Идентификатор группы безопасности AAD, к которой назначена эта группа. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|Тип действия для приложения Intune. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
 |Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 

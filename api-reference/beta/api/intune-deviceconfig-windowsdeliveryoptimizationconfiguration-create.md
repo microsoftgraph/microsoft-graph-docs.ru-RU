@@ -4,12 +4,12 @@ description: Создание нового объекта Виндовсдели
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b504d7a403aec15fad14ae370bf4d76fb7bf7f6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: e3fca045031823e8e8ea383c1018fa72240c0cc0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977620"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715447"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>Создание Виндовсделиверйоптимизатионконфигуратион
 
@@ -82,6 +82,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Максимумкачеажеиндайс|Int32|Указывает максимальное время (в днях), в течение которого каждый файл хранится в кэше оптимизации доставки после успешного скачивания (0-3650). Допустимые значения — от 0 до 3650|
 |Максимумкачесизе|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Задает максимальный размер кэша для оптимизации доставки: в процентах или в ГБ.|
 |Впнпиркачинг|[Включение](../resources/intune-shared-enablement.md)|Указывает, разрешено ли устройству принимать участие в одноранговом кэшировании при подключении через VPN к доменной сети. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Качесерверхостнамес|Коллекция строк|Указывает имена узлов серверов кэша.|
+|Качесерверфореграунддовнлоадфаллбакктохттпделайинсекондс|Int32|Указывает время (в секундах), по истечении которого откладывается обратное сообщение от серверов кэша к источнику HTTP для загрузки переднего плана. Допустимые значения: от 0 до 2592000.|
+|Качесервербаккграунддовнлоадфаллбакктохттпделайинсекондс|Int32|Указывает время (в секундах), по истечении которого будет возвращаться обратно от серверов кэша к источнику HTTP для загрузки в фоновом режиме. Допустимые значения: от 0 до 2592000.|
 
 
 
@@ -95,7 +98,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1833
+Content-length: 2039
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -146,7 +149,12 @@ Content-length: 1833
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "enabled"
+  "vpnPeerCaching": "enabled",
+  "cacheServerHostNames": [
+    "Cache Server Host Names value"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
 
@@ -155,7 +163,7 @@ Content-length: 1833
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2005
+Content-Length: 2211
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -209,7 +217,12 @@ Content-Length: 2005
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "enabled"
+  "vpnPeerCaching": "enabled",
+  "cacheServerHostNames": [
+    "Cache Server Host Names value"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
 

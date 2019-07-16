@@ -4,12 +4,12 @@ description: Отчет о шифровании для каждого устро
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d844183854a7d7f4f86574999d28d737712efbdb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1c2c86a843c4573d4c00ae4650d857c3f01ec08d
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992033"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737498"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>Тип ресурса Манажеддевицеенкриптионстате
 
@@ -41,6 +41,7 @@ ms.locfileid: "34992033"
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Состояние шифрования устройства. Возможные значения: `notEncrypted`, `encrypted`.|
 |Енкриптионполицисеттингстате|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние параметра политики шифрования. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |Адванцедбитлоккерстатес|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|Расширенное состояние BitLocker. Возможные значения: `success`, `noUserConsent`, `osVolumeEncryptionMethodMismatch`, `osVolumeTpmRequired`, `osVolumeTpmOnlyRequired`, `osVolumeTpmPinRequired`, `osVolumeTpmStartupKeyRequired`, `osVolumeTpmPinStartupKeyRequired`, `osVolumeUnprotected`, `recoveryKeyBackupFailed`, `fixedDriveNotEncrypted`, `fixedDriveEncryptionMethodMismatch`, `loggedOnUserNonAdmin`, `windowsRecoveryEnvironmentNotConfigured`, `tpmNotAvailable`, `tpmNotReady`,. `networkError`|
+|Филеваултстатес|[Филеваултстате](../resources/intune-deviceconfig-filevaultstate.md)|Состояние Филеваулт. Возможные значения: `success`, `driveEncryptedByUser`, `userDeferredEncryption`, `escrowNotEnabled`.|
 |Полицидетаилс|Коллекция [енкриптионрепортполицидетаилс](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)|Сведения о политике|
 
 ## <a name="relationships"></a>Отношения
@@ -67,6 +68,7 @@ ms.locfileid: "34992033"
   "encryptionState": "String",
   "encryptionPolicySettingState": "String",
   "advancedBitLockerStates": "String",
+  "fileVaultStates": "String",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",

@@ -4,12 +4,12 @@ description: Создание объекта windows10EndpointProtectionConfigur
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1828bcd90fd3cefeead8f15dee09dc411a117300
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: aa73f3d61ec7af2045b0d6b7cc53fac135b8fe76
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620383"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715300"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Создание windows10EndpointProtectionConfiguration
 
@@ -68,7 +68,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Усерригхтсалловакцессфромнетворк|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут подключаться к компьютеру через сеть. Допустимое состояние — Supported.|
 |Усерригхтсблоккакцессфромнетворк|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, каким пользователям и группам запрещается подключаться к компьютеру через сеть. Блок состояния поддерживается.|
 |Усерригхтсактаспартофсеоператингсистем|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя позволяет процессу олицетворять любого пользователя без проверки подлинности. Таким образом, процесс может получить доступ к тем же локальным ресурсам, что и пользователь. Поддерживаются только состояния NotConfigured и Allowed.|
-|Усерригхтслокаллогон|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут входить на компьютер. Состояния NotConfigured, разрешенные и заблокированные поддерживаются |
+|Усерригхтслокаллогон|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут входить на компьютер. Допустимые состояния NotConfigured, Поддерживаемые |
+|Усерригхтсденилокаллогон|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи не могут войти на компьютер. Состояния NotConfigured, блокировки поддерживаются |
 |Усерригхтсбаккупдата|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут обходить разрешения для файлов, каталогов, реестра и других постоянных объектов при резервном копировании файлов и каталогов. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтсчанжесистемтиме|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут изменять время и дату на внутреннем часовом компьютере. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтскреатеглобалобжектс|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Этот параметр безопасности определяет, могут ли пользователи создавать глобальные объекты, доступные для всех сеансов. Пользователи, которые могут создавать глобальные объекты, могут повлиять на процессы, выполняемые в сеансах других пользователей, что может привести к сбою приложения или повреждению данных. Поддерживаются только состояния NotConfigured и Allowed.|
@@ -165,6 +166,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Дефендерсекуритицентерхелпурл|String|URL-адрес портала справки это отображается для пользователей.|
 |Дефендерсекуритицентернотификатионсфромапп|[Дефендерсекуритицентернотификатионсфромапптипе](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления, отображаемые в отображаемых областях приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |Дефендерсекуритицентеритконтактдисплай|[Дефендерсекуритицентеритконтактдисплайтипе](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактной информации для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
+|Виндовсдефендертамперпротектион|[Виндовсдефендертамперпротектионоптионс](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Настройка параметров Тамперпротектион для защитника Windows. Возможные значения: `notConfigured`, `enable`, `disable`.|
 |firewallBlockStatefulFTP|Boolean|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Настраивает время ожидания для сопоставлений безопасности в секундах от 300 до 3600 включительно. По истечении этого срока сопоставления безопасности перестают действовать и удаляются. Допустимые значения: от 300 до 3600|
 |firewallPreSharedKeyEncodingMethod|[Фиреваллпрешаредкэйенкодингмесодтипе](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Выберите используемую кодировку с общим ключом. Возможные значения: `deviceDefault`, `none`, `utF8`.|
@@ -217,7 +219,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Девицегуардсекуребутвисдма|[Секуребутвисдматипе](../resources/intune-deviceconfig-securebootwithdmatype.md)|Указывает, включен ли уровень безопасности платформы при следующей перезагрузке. Возможные значения: `notConfigured`, `withoutDMA`, `withDMA`.|
 |Девицегуардлаунчсистемгуард|[Включение](../resources/intune-shared-enablement.md)|Позволяет ИТ – администратору настраивать запуск системы защиты системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Позволяет ИТ-администраторам настраивать SmartScreen для Windows.|
-|smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ – администраторам контролировать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
+|smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ-администраторам указывать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
 |applicationGuardEnabled|Boolean|Включение Application Guard в Защитнике Windows|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Включение Application Guard в Защитнике Windows для более новых сборок Windows. Возможные значения: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[Аппликатионгуардблоккфилетрансфертипе](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Блокировать буфер обмена для передачи файла изображения, текстового файла или ни одного из них. Возможные значения: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
@@ -251,7 +253,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 28463
+Content-length: 28958
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -309,6 +311,7 @@ Content-length: 28463
       "action": "blocked",
       "trafficDirection": "out",
       "interfaceTypes": "remoteAccess",
+      "edgeTraversal": "blocked",
       "localUserAuthorizations": "Local User Authorizations value"
     }
   ],
@@ -361,6 +364,18 @@ Content-length: 28463
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
     "localUsersOrGroups": [
@@ -732,6 +747,7 @@ Content-length: 28463
   "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
   "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
   "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+  "windowsDefenderTamperProtection": "enable",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
@@ -936,7 +952,7 @@ Content-length: 28463
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 28635
+Content-Length: 29130
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -997,6 +1013,7 @@ Content-Length: 28635
       "action": "blocked",
       "trafficDirection": "out",
       "interfaceTypes": "remoteAccess",
+      "edgeTraversal": "blocked",
       "localUserAuthorizations": "Local User Authorizations value"
     }
   ],
@@ -1049,6 +1066,18 @@ Content-Length: 28635
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "blocked",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "Name value",
+        "description": "Description value",
+        "securityIdentifier": "Security Identifier value"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
     "localUsersOrGroups": [
@@ -1420,6 +1449,7 @@ Content-Length: 28635
   "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
   "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
   "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+  "windowsDefenderTamperProtection": "enable",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",

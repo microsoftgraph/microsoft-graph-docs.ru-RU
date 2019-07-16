@@ -4,12 +4,12 @@ description: Создание нового объекта Манажеддеви
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c5fa1846c7f3541e4ea7e3a7cc0186fe01f8290
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 5894b7ef6c77cc0ab012509e1b5bbf71fee297b9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962990"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715363"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>Создание Манажеддевицеенкриптионстате
 
@@ -60,6 +60,7 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Состояние шифрования устройства. Возможные значения: `notEncrypted`, `encrypted`.|
 |Енкриптионполицисеттингстате|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние параметра политики шифрования. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |Адванцедбитлоккерстатес|[advancedBitLockerState](../resources/intune-deviceconfig-advancedbitlockerstate.md)|Расширенное состояние BitLocker. Возможные значения: `success`, `noUserConsent`, `osVolumeEncryptionMethodMismatch`, `osVolumeTpmRequired`, `osVolumeTpmOnlyRequired`, `osVolumeTpmPinRequired`, `osVolumeTpmStartupKeyRequired`, `osVolumeTpmPinStartupKeyRequired`, `osVolumeUnprotected`, `recoveryKeyBackupFailed`, `fixedDriveNotEncrypted`, `fixedDriveEncryptionMethodMismatch`, `loggedOnUserNonAdmin`, `windowsRecoveryEnvironmentNotConfigured`, `tpmNotAvailable`, `tpmNotReady`,. `networkError`|
+|Филеваултстатес|[Филеваултстате](../resources/intune-deviceconfig-filevaultstate.md)|Состояние Филеваулт. Возможные значения: `success`, `driveEncryptedByUser`, `userDeferredEncryption`, `escrowNotEnabled`.|
 |Полицидетаилс|Коллекция [енкриптионрепортполицидетаилс](../resources/intune-deviceconfig-encryptionreportpolicydetails.md)|Сведения о политике|
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/managedDeviceEncryptionStates
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryptionStates
 Content-type: application/json
-Content-length: 658
+Content-length: 704
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceEncryptionState",
@@ -87,6 +88,7 @@ Content-length: 658
   "encryptionState": "encrypted",
   "encryptionPolicySettingState": "notApplicable",
   "advancedBitLockerStates": "noUserConsent",
+  "fileVaultStates": "driveEncryptedByUser",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",
@@ -102,7 +104,7 @@ Content-length: 658
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 707
+Content-Length: 753
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceEncryptionState",
@@ -116,6 +118,7 @@ Content-Length: 707
   "encryptionState": "encrypted",
   "encryptionPolicySettingState": "notApplicable",
   "advancedBitLockerStates": "noUserConsent",
+  "fileVaultStates": "driveEncryptedByUser",
   "policyDetails": [
     {
       "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",

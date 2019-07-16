@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a087192b9ff46b79f5f585cc9515b9c78d806e99
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 025008a74df37daee068fe557df1511d60dcc48f
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990010"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35734460"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -29,6 +29,7 @@ ms.locfileid: "34990010"
 |Девицеинактивитибефореретирементиндай|Int32|Когда устройство не будет возвращать указанное количество дней, данные компании могут быть удалены, а устройство не будет управляться. Допустимые значения — от 30 до 270|
 |Дериведкредентиалпровидер|[Дериведкредентиалпровидертипе](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Производный поставщик учетных данных, который будет использоваться для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |Дериведкредентиалурл|String|URI самообслуживания поставщика производных учетных данных.|
+|Андроиддевицеадминистраторенроллментенаблед|Boolean|Свойство, определяющее, включена ли регистрация администратора устройств Android для этой учетной записи.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -49,7 +50,8 @@ ms.locfileid: "34990010"
   "enhancedJailBreak": true,
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
-  "derivedCredentialUrl": "String"
+  "derivedCredentialUrl": "String",
+  "androidDeviceAdministratorEnrollmentEnabled": true
 }
 ```
 

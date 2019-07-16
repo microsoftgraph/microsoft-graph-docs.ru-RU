@@ -4,12 +4,12 @@ description: Создание нового объекта Виндовскиос
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4adb045f318a9841be0b7597dfe5b3caecf624a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 9e81355897bbdb108897e941e0db102d49068787
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961807"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35722034"
 ---
 # <a name="create-windowskioskconfiguration"></a>Создание Виндовскиоскконфигуратион
 
@@ -71,6 +71,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Киоскбровсерблоккедурлс|Коллекция строк|Указание URL-адресов, к которым не должны переходить браузеры киоска|
 |Киоскбровсерблоккедурлексцептионс|Коллекция строк|Указание URL-адресов, на которые может перейти браузер с киоском|
 |Еджекиоскенаблепубликбровсинг|Boolean|Включение режима "общедоступный" в режиме киоска браузера для браузера Microsoft Edge. Значение по умолчанию — false.|
+|Виндовскиоскфорцеупдатесчедуле|[Виндовскиоскфорцеупдатесчедуле](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|принудительное обновление расписания для устройств киоска.|
 
 
 
@@ -84,7 +85,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2526
+Content-length: 2829
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -158,7 +159,15 @@ Content-length: 2526
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 
@@ -167,7 +176,7 @@ Content-length: 2526
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2698
+Content-Length: 3001
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -244,7 +253,15 @@ Content-Length: 2698
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 

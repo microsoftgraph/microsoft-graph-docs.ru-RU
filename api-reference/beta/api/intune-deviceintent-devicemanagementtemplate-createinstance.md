@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 026cc2175fbb826fd6068adec68a9661215981ab
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 421b4bb400137f7704ca40737ff422649b66f8b6
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959763"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35730008"
 ---
 # <a name="createinstance-action"></a>Действие createInstance
 
@@ -51,9 +51,10 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
+|displayName|Строка|Пока не задокументировано.|
 |description|String|Пока не задокументировано.|
 |Сеттингсделта|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Пока не задокументировано.|
+|roleScopeTagIds|Коллекция строк|Н/Д|
 
 
 
@@ -68,7 +69,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/createInstance
 
 Content-type: application/json
-Content-length: 336
+Content-length: 398
 
 {
   "displayName": "Display Name value",
@@ -80,6 +81,9 @@ Content-length: 336
       "definitionId": "Definition Id value",
       "valueJson": "Value Json value"
     }
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```

@@ -4,12 +4,12 @@ description: Конфигурация оптимизации доставки Wi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c1b4006a9e18bb617c243183e98ff21280410e7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c34a8d1a87be09e66c09909486bb8b4ccd8fb2c7
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994148"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35737659"
 ---
 # <a name="windowsdeliveryoptimizationconfiguration-resource-type"></a>Тип ресурса Виндовсделиверйоптимизатионконфигуратион
 
@@ -65,6 +65,9 @@ ms.locfileid: "34994148"
 |Максимумкачеажеиндайс|Int32|Указывает максимальное время (в днях), в течение которого каждый файл хранится в кэше оптимизации доставки после успешного скачивания (0-3650). Допустимые значения — от 0 до 3650|
 |Максимумкачесизе|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Задает максимальный размер кэша для оптимизации доставки: в процентах или в ГБ.|
 |Впнпиркачинг|[Включение](../resources/intune-shared-enablement.md)|Указывает, разрешено ли устройству принимать участие в одноранговом кэшировании при подключении через VPN к доменной сети. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|Качесерверхостнамес|Коллекция строк|Указывает имена узлов серверов кэша.|
+|Качесерверфореграунддовнлоадфаллбакктохттпделайинсекондс|Int32|Указывает время (в секундах), по истечении которого откладывается обратное сообщение от серверов кэша к источнику HTTP для загрузки переднего плана. Допустимые значения: от 0 до 2592000.|
+|Качесервербаккграунддовнлоадфаллбакктохттпделайинсекондс|Int32|Указывает время (в секундах), по истечении которого будет возвращаться обратно от серверов кэша к источнику HTTP для загрузки в фоновом режиме. Допустимые значения: от 0 до 2592000.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -138,7 +141,12 @@ ms.locfileid: "34994148"
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "String"
+  "vpnPeerCaching": "String",
+  "cacheServerHostNames": [
+    "String"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 1024,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 1024
 }
 ```
 

@@ -4,12 +4,12 @@ description: В этой статье описаны объявляемые ме
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440d236adc645edb7dbf3857f635781d439cb759
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 22d02e467aceca901887eef1d03dbb1450f6d3f2
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620880"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731765"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Тип ресурса windows10EndpointProtectionConfiguration
 
@@ -51,7 +51,8 @@ ms.locfileid: "35620880"
 |Усерригхтсалловакцессфромнетворк|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут подключаться к компьютеру через сеть. Допустимое состояние — Supported.|
 |Усерригхтсблоккакцессфромнетворк|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, каким пользователям и группам запрещается подключаться к компьютеру через сеть. Блок состояния поддерживается.|
 |Усерригхтсактаспартофсеоператингсистем|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя позволяет процессу олицетворять любого пользователя без проверки подлинности. Таким образом, процесс может получить доступ к тем же локальным ресурсам, что и пользователь. Поддерживаются только состояния NotConfigured и Allowed.|
-|Усерригхтслокаллогон|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут входить на компьютер. Состояния NotConfigured, разрешенные и заблокированные поддерживаются |
+|Усерригхтслокаллогон|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут входить на компьютер. Допустимые состояния NotConfigured, Поддерживаемые |
+|Усерригхтсденилокаллогон|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи не могут войти на компьютер. Состояния NotConfigured, блокировки поддерживаются |
 |Усерригхтсбаккупдата|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи могут обходить разрешения для файлов, каталогов, реестра и других постоянных объектов при резервном копировании файлов и каталогов. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтсчанжесистемтиме|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут изменять время и дату на внутреннем часовом компьютере. Поддерживаются только состояния NotConfigured и Allowed.|
 |Усерригхтскреатеглобалобжектс|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Этот параметр безопасности определяет, могут ли пользователи создавать глобальные объекты, доступные для всех сеансов. Пользователи, которые могут создавать глобальные объекты, могут повлиять на процессы, выполняемые в сеансах других пользователей, что может привести к сбою приложения или повреждению данных. Поддерживаются только состояния NotConfigured и Allowed.|
@@ -148,6 +149,7 @@ ms.locfileid: "35620880"
 |Дефендерсекуритицентерхелпурл|String|URL-адрес портала справки это отображается для пользователей.|
 |Дефендерсекуритицентернотификатионсфромапп|[Дефендерсекуритицентернотификатионсфромапптипе](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления, отображаемые в отображаемых областях приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |Дефендерсекуритицентеритконтактдисплай|[Дефендерсекуритицентеритконтактдисплайтипе](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактной информации для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
+|Виндовсдефендертамперпротектион|[Виндовсдефендертамперпротектионоптионс](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Настройка параметров Тамперпротектион для защитника Windows. Возможные значения: `notConfigured`, `enable`, `disable`.|
 |firewallBlockStatefulFTP|Boolean|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Настраивает время ожидания для сопоставлений безопасности в секундах от 300 до 3600 включительно. По истечении этого срока сопоставления безопасности перестают действовать и удаляются. Допустимые значения: от 300 до 3600|
 |firewallPreSharedKeyEncodingMethod|[Фиреваллпрешаредкэйенкодингмесодтипе](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Выберите используемую кодировку с общим ключом. Возможные значения: `deviceDefault`, `none`, `utF8`.|
@@ -200,7 +202,7 @@ ms.locfileid: "35620880"
 |Девицегуардсекуребутвисдма|[Секуребутвисдматипе](../resources/intune-deviceconfig-securebootwithdmatype.md)|Указывает, включен ли уровень безопасности платформы при следующей перезагрузке. Возможные значения: `notConfigured`, `withoutDMA`, `withDMA`.|
 |Девицегуардлаунчсистемгуард|[Включение](../resources/intune-shared-enablement.md)|Позволяет ИТ – администратору настраивать запуск системы защиты системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Позволяет ИТ-администраторам настраивать SmartScreen для Windows.|
-|smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ – администраторам контролировать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
+|smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ-администраторам указывать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
 |applicationGuardEnabled|Boolean|Включение Application Guard в Защитнике Windows|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Включение Application Guard в Защитнике Windows для более новых сборок Windows. Возможные значения: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[Аппликатионгуардблоккфилетрансфертипе](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Блокировать буфер обмена для передачи файла изображения, текстового файла или ни одного из них. Возможные значения: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
@@ -301,6 +303,7 @@ ms.locfileid: "35620880"
       "action": "String",
       "trafficDirection": "String",
       "interfaceTypes": "String",
+      "edgeTraversal": "String",
       "localUserAuthorizations": "String"
     }
   ],
@@ -353,6 +356,18 @@ ms.locfileid: "35620880"
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "String",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "String",
+        "description": "String",
+        "securityIdentifier": "String"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "String",
     "localUsersOrGroups": [
@@ -724,6 +739,7 @@ ms.locfileid: "35620880"
   "defenderSecurityCenterHelpURL": "String",
   "defenderSecurityCenterNotificationsFromApp": "String",
   "defenderSecurityCenterITContactDisplay": "String",
+  "windowsDefenderTamperProtection": "String",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
   "firewallPreSharedKeyEncodingMethod": "String",

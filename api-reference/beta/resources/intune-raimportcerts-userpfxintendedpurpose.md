@@ -4,12 +4,12 @@ description: Поддерживаемые значения для назначе
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66a9509eebffb8434ca629e0c3336d7078d9afff
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 1790b1d1835d19cacb7e3b32262ce06be4daa378
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993692"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35739283"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
 
@@ -22,11 +22,11 @@ ms.locfileid: "34993692"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неназначенных|нуль|Пока не задокументировано.|
-|Смиминкриптион|1,1|Пока не задокументировано.|
-|Смимесигнинг|2|Пока не задокументировано.|
-|виртуального|SP4|Пока не задокументировано.|
-|подключений|8 |Пока не задокументировано.|
+|неназначенных|нуль|Не назначены роли и использования.|
+|Смиминкриптион|1,1|Является допустимым для шифрования S/MIME.|
+|Смимесигнинг|2|Является допустимым для подписывания S/MIME.|
+|виртуального|SP4|Допустимо для использования в VPN.|
+|подключений|8 |Допустимо для использования в Wi-Fi.|
 
 
 

@@ -4,12 +4,12 @@ description: Эта сущность предоставляет описания
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8da4c53d22621f08faf4edb27be2da10ce5674c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 32a7d319314d1fddc40724d686de797dcd1d15d1
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978509"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731751"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>Тип ресурса Виндовскиоскконфигуратион
 
@@ -54,6 +54,7 @@ ms.locfileid: "34978509"
 |Киоскбровсерблоккедурлс|Коллекция строк|Указание URL-адресов, к которым не должны переходить браузеры киоска|
 |Киоскбровсерблоккедурлексцептионс|Коллекция строк|Указание URL-адресов, на которые может перейти браузер с киоском|
 |Еджекиоскенаблепубликбровсинг|Boolean|Включение режима "общедоступный" в режиме киоска браузера для браузера Microsoft Edge. Значение по умолчанию — false.|
+|Виндовскиоскфорцеупдатесчедуле|[Виндовскиоскфорцеупдатесчедуле](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|принудительное обновление расписания для устройств киоска.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -150,7 +151,15 @@ ms.locfileid: "34978509"
   "kioskBrowserBlockedUrlExceptions": [
     "String"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "String (timestamp)",
+    "recurrence": "String",
+    "dayofWeek": "String",
+    "dayofMonth": 1024,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 

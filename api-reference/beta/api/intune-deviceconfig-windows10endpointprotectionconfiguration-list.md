@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfc0270d63f094421627dcdc7c1259e53bf1f531
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 4964d87e950b1d00777e5cde25a5ba56480f06d0
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962619"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715293"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31376
+Content-Length: 31927
 
 {
   "value": [
@@ -126,6 +126,7 @@ Content-Length: 31376
           "action": "blocked",
           "trafficDirection": "out",
           "interfaceTypes": "remoteAccess",
+          "edgeTraversal": "blocked",
           "localUserAuthorizations": "Local User Authorizations value"
         }
       ],
@@ -178,6 +179,18 @@ Content-Length: 31376
         ]
       },
       "userRightsLocalLogOn": {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+        "state": "blocked",
+        "localUsersOrGroups": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+            "name": "Name value",
+            "description": "Description value",
+            "securityIdentifier": "Security Identifier value"
+          }
+        ]
+      },
+      "userRightsDenyLocalLogOn": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
         "localUsersOrGroups": [
@@ -549,6 +562,7 @@ Content-Length: 31376
       "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
       "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
       "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+      "windowsDefenderTamperProtection": "enable",
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
