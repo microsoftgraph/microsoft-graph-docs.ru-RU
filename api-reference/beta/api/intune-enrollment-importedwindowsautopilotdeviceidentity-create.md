@@ -4,12 +4,12 @@ description: Создать новый объект importedWindowsAutopilotDevi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9580f8da9118a1f920e790cab61f560360cc753
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 74dd1111ffdbfa56eefbe5a565fd7169c10e3dd9
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981778"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35729970"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -35,7 +35,6 @@ ms.locfileid: "34981778"
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
-POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -52,7 +51,8 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|orderIdentifier|String|Номер заказа устройства Windows Autopilot.|
+|orderIdentifier|String|Номер заказа устройства Windows Autopilot. — Устаревшее|
+|Грауптаг|String|Тег Group для устройства автопилота Windows.|
 |serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |Импортид|String|Идентификатор импорта для устройства автопилота Windows.|
@@ -72,11 +72,12 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 645
+Content-length: 679
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "importId": "Import Id value",
@@ -97,12 +98,13 @@ Content-length: 645
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 694
+Content-Length: 728
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "importId": "Import Id value",

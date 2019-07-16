@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8c13ed037ffb07e8a3e357f3ab5633dc984e4803
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: b651acefa45cee6e4e89c6c391890dd263cc414a
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965859"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35731576"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -214,6 +214,7 @@ ms.locfileid: "34965859"
 - [Сведения о политике отчетов шифрования](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Состояние шифрования](intune-deviceconfig-encryptionstate.md)
 - [Расширенное использование ключа](intune-deviceconfig-extendedkeyusage.md)
+- [Состояние хранилища файлов](intune-deviceconfig-filevaultstate.md)
 - [Тип метода проверки для списка отзыва сертификатов в брандмауэре](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Тип метода для добавления пакетов брандмауэра в список](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [Тип метода кодировки общего ключа в брандмауэре](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
@@ -316,6 +317,7 @@ ms.locfileid: "34965859"
 - [Доверенный корневой сертификат для macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Конфигурация VPN для macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Конфигурация Wi-Fi для macOS](intune-deviceconfig-macoswificonfiguration.md)
+- [Состояние всех управляемых сертификатов устройств](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Состояние сертификата управляемого устройства](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Состояние шифрования управляемого устройства](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Сообщение из отчета для управляемого устройства](intune-deviceconfig-manageddevicereportedapp.md)
@@ -344,7 +346,10 @@ ms.locfileid: "34965859"
 - [Параметр OMA, целое число](intune-deviceconfig-omasettinginteger.md)
 - [Параметр OMA, строка](intune-deviceconfig-omasettingstring.md)
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
+- [Локальная зашифрованная полезная нагрузка](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
+- [Запрос на получение шифрования PFX](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Сертификат пользователя PFX](intune-raimportcerts-pfxusercertificate.md)
 - [Тип платформы политики](intune-deviceconfig-policyplatformtype.md)
 - [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)
@@ -456,6 +461,7 @@ ms.locfileid: "34965859"
 - [Размер плитки на макете запуска для приложения Windows](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [База профилей сертификатов Windows ](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Конфигурация Advanced Threat Protection в Защитнике Windows](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
+- [Параметры защиты от несанкционированного защитника Windows](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Конфигурация оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Режим оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Сетевой профиль брандмауэра Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
@@ -475,6 +481,7 @@ ms.locfileid: "34965859"
 - [Пользователь Azure AD киоска Windows](intune-deviceconfig-windowskioskazureaduser.md)
 - [Конфигурация киоска Windows](intune-deviceconfig-windowskioskconfiguration.md)
 - [Классическое приложение киоска Windows](intune-deviceconfig-windowskioskdesktopapp.md)
+- [Расписание принудительного обновления Windows для киоска Windows](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Локальная группа киоска Windows](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Локальный пользователь киоска Windows](intune-deviceconfig-windowskiosklocaluser.md)
 - [Несколько приложений киоска Windows](intune-deviceconfig-windowskioskmultipleapps.md)
@@ -506,10 +513,11 @@ ms.locfileid: "34965859"
 - [Тип расписания установки с использованием Центра обновления Windows](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Параметр отображения уведомления Центра обновления Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Запланированная установка с использованием Центра обновления Windows](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Состояние центра обновления Windows](intune-deviceconfig-windowsupdatestate.md)
 - [Статус обновления Windows](intune-deviceconfig-windowsupdatestatus.md)
 - [Тип обновления Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Настройки контроля учетных записей Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Конфигурация VPN для Windows](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
-- [Конфигурация EAP для предприятия Windows Wi – Fi](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

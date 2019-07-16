@@ -4,12 +4,12 @@ description: Обновление свойств объекта windows10SecureA
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf9d4392e04952eb040ca856cce3c2375c3ebc86
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 25fdcbb6ccf3be8b6ed3a647024c54a859a10019
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962388"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35715223"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>Обновление объекта windows10SecureAssessmentConfiguration
 
@@ -65,10 +65,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |launchUri|String|URL-адрес страницы оценки, которая автоматически загружается при запуске браузера для надежного тестирования. Это должен быть допустимый URL-адрес (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|Учетная запись, с использованием которой настраивается устройство с Windows для прохождения теста. В качестве пользователя можно указать учетную запись домена (domen\polzovatel), учетную запись AAD (imya_polzovatelya@klient.com) или локальную учетную запись (имя пользователя).|
-|Конфигуратионаккаунттипе|[Секуреассессментаккаунттипе](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|Тип учетной записи, используемой в Конфигуратионаккаунт. Возможные значения: `azureADAccount`, `domainAccount`, `localAccount`.|
+|Конфигуратионаккаунттипе|[Секуреассессментаккаунттипе](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|Тип учетной записи, используемой в Конфигуратионаккаунт. Возможные значения: `azureADAccount`, `domainAccount`, `localAccount`, `localGuestAccount`.|
 |allowPrinting|Boolean|Определяет, разрешается ли приложению печатать во время выполнения теста.|
 |allowScreenCapture|Boolean|Определяет, разрешается ли создавать снимки экрана во время выполнения теста.|
 |allowTextSuggestion|Boolean|Определяет, разрешается ли использовать текстовые предложения во время выполнения теста.|
+|Локалгуестаккаунтнаме|String|Указывает отображаемый текст для локальной гостевой учетной записи, отображаемой на экране входа. Обычно это имя оценки. Когда пользователь нажимает на экране входа локальную гостевую учетную запись, запускается приложение для оценки с указанным URL-адресом оценки. Для безопасной оценки можно использовать только локальную гостевую учетную запись на устройствах под управлением Windows 10 версии 1903 или более поздней. Важное примечание. это свойство должно быть задано с помощью Ассессментаппусермоделид, чтобы обеспечить правильную работу локальной учетной записи гостя для обеспечения безопасной оценки.|
+|Ассессментаппусермоделид|String|Указывает идентификатор пользовательской модели приложения для оценки, запущенной при входе пользователя в систему для безопасной оценки с помощью локальной учетной записи гостя. Важное примечание. это свойство должно быть задано с помощью Локалгуестаккаунтнаме, чтобы обеспечить правильную работу локальной учетной записи гостя для обеспечения безопасной оценки.|
 
 
 
@@ -82,7 +84,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1272
+Content-length: 1403
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -119,7 +121,9 @@ Content-length: 1272
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "Local Guest Account Name value",
+  "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
 
@@ -128,7 +132,7 @@ Content-length: 1272
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1444
+Content-Length: 1575
 
 {
   "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -168,7 +172,9 @@ Content-Length: 1444
   "configurationAccountType": "domainAccount",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "Local Guest Account Name value",
+  "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
 

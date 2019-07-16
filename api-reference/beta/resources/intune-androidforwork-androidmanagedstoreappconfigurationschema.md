@@ -4,12 +4,12 @@ description: Схема, описывающая настраиваемые ко�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35d2b8a3c380be46865e208471af5467ca6a46f8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: fbf66567ed8d2404ee8da1dd854c44d4faec23cc
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987714"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35741208"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчема
 
@@ -33,7 +33,8 @@ ms.locfileid: "34987714"
 |:---|:---|:---|
 |id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
-|schemaItems|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме|
+|schemaItems|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит только конфигурацию корневого уровня.|
+|Нестедсчемаитемс|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит плоский список всех конфигураций.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -54,6 +55,32 @@ ms.locfileid: "34987714"
   "schemaItems": [
     {
       "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
+      "schemaItemKey": "String",
+      "displayName": "String",
+      "description": "String",
+      "defaultBoolValue": true,
+      "defaultIntValue": 1024,
+      "defaultStringValue": "String",
+      "defaultStringArrayValue": [
+        "String"
+      ],
+      "dataType": "String",
+      "selections": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "String",
+          "value": "String"
+        }
+      ]
+    }
+  ],
+  "nestedSchemaItems": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+      "index": 1024,
+      "parentIndex": 1024,
       "schemaItemKey": "String",
       "displayName": "String",
       "description": "String",

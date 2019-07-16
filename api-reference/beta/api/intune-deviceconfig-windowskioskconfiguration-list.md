@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60b5066eaa6572bcb59d8bfc70367f735443239f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: 213d1435cf6268381627a61c7252cce49382d371
+ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977578"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35722006"
 ---
 # <a name="list-windowskioskconfigurations"></a>Список Виндовскиоскконфигуратионс
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3031
+Content-Length: 3366
 
 {
   "value": [
@@ -142,7 +142,15 @@ Content-Length: 3031
       "kioskBrowserBlockedUrlExceptions": [
         "Kiosk Browser Blocked Url Exceptions value"
       ],
-      "edgeKioskEnablePublicBrowsing": true
+      "edgeKioskEnablePublicBrowsing": true,
+      "windowsKioskForceUpdateSchedule": {
+        "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+        "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+        "recurrence": "daily",
+        "dayofWeek": "monday",
+        "dayofMonth": 10,
+        "runImmediatelyIfAfterStartDateTime": true
+      }
     }
   ]
 }
