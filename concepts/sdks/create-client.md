@@ -3,12 +3,12 @@ title: Создание клиента Microsoft Graph
 description: Описывается создание клиента, который будет использоваться для звонков в Microsoft Graph. Включает как настроить проверку подлинности и выбрать облако публичном.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 3d120f626f3623545366a105aaf9c072c8501e1b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cfff3b8f19b27e360977259d06df730abfd38bf3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630190"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778735"
 ---
 # <a name="create-a-microsoft-graph-client"></a>Создание клиента Microsoft Graph
 
@@ -16,15 +16,20 @@ ms.locfileid: "33630190"
 
 В приведенных ниже примерах кода показано, как создать экземпляр клиента Microsoft Graph с поставщиком проверки подлинности на поддерживаемых языках. Поставщик проверки подлинности будет обрабатывать получение маркеров доступа для приложения. Для каждого языка и платформы доступно множество различных поставщиков проверки подлинности. Различные поставщики приложений поддерживают различные сценарии клиентов. Для получения дополнительных сведений о поставщиках и параметрах, которые подходят для вашего сценария, ознакомьтесь со статьей [Выбор поставщика проверки](choose-authentication-providers.md)подлинности.
 
-# <a name="ctabcs"></a>[Языках](#tab/CS)
+# <a name="ctabcs"></a>[C#](#tab/CS)
 
 ```csharp
-var app = DeviceCodeProvider.CreateClientApplication("INSERT-CLIENT-APP-ID");
-var authProvider = new DeviceCodeProvider(app);
-var client = new GraphServiceClient(authProvider);
+// Build a client application.
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create("INSERT-CLIENT-APP-ID")
+            .Build();
+// Create an authentication provider by passing in a client application and graph scopes.
+DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, graphScopes);
+// Create a new instance of GraphServiceClient with the authentication provider.
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascripttabjavascript"></a>[Язык](#tab/Javascript)
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
@@ -37,7 +42,7 @@ const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
 // Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
 const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, scopes);
+const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
 # <a name="javatabjava"></a>[Java](#tab/Java)

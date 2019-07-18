@@ -4,12 +4,12 @@ description: Перечисление всех ответов на сообще�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bc637d1eaec19bd3de18517c9339b8c15c9d663
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 2db1c418ef669776c945e4c2176a49648ba185c4
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438477"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778418"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
@@ -26,7 +26,10 @@ ms.locfileid: "35438477"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|Group.Read.All,Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| Не поддерживается. |
+|Для приложений| Group.Read.All,Group.ReadWrite.All|
+
+> [!NOTE]
+> Перед вызовом этого API с разрешениями для приложений необходимо запросить доступ. Дополнительные сведения см [в разделе protected API в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

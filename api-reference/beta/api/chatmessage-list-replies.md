@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44d90dd085a09639467c054dbc2af516d270eb3b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c2159d7922c061bb1072ca8f1603677ed3fd6d75
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35437749"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778385"
 ---
 # <a name="list-replies"></a>Список ответов
 
@@ -27,6 +27,9 @@ ms.locfileid: "35437749"
 | Делегированные (рабочая или учебная учетная запись)     | Чат. Read, Chat. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Chat.Read.All |
+
+> [!NOTE]
+> Перед вызовом этого API с разрешениями для приложений необходимо запросить доступ. Дополнительные сведения см [в разделе protected API в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 

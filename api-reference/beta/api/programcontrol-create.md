@@ -2,12 +2,12 @@
 title: Создание Програмконтрол
 description: В средстве проверки доступа Azure AD создайте новый объект Програмконтрол.  При этом будет связана проверка доступа к программе.
 localization_priority: Normal
-ms.openlocfilehash: 5c8bf73cc62a937848577baf3358ead189f88aae
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 101606433c16f711e0d0301cf97b325149459bd3
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450081"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778451"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 
@@ -17,9 +17,9 @@ ms.locfileid: "35450081"
 
 Перед выполнением этого запроса вызывающий абонент должен был
 
- - [созданная программа](program-create.md) или [получена программа](program-list.md)со значением `programId` , включаемым в запрос.
- - [создана проверка доступа](accessreview-create.md) или [полученная проверка доступа](accessreview-get.md), для которой значение `controlId` должно быть включено в запрос, а
- - [получен список типов программного управления](programcontroltype-list.md), чтобы включить в запрос значение `controlTypeId` , которое необходимо включить в запрос.
+- [созданная программа](program-create.md) или [получена программа](program-list.md)со значением `programId` , включаемым в запрос.
+- [создана проверка доступа](accessreview-create.md) или [полученная проверка доступа](accessreview-get.md), для которой значение `controlId` должно быть включено в запрос, а
+- [получен список типов программного управления](programcontroltype-list.md), чтобы включить в запрос значение `controlTypeId` , которое необходимо включить в запрос.
 
 
 ## <a name="permissions"></a>Разрешения

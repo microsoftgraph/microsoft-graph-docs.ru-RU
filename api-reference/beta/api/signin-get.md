@@ -4,12 +4,12 @@ description: Получение определенного события вхо
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e168bccfbecc080cb2a6fdd0e8b06260ae0ede
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c7111e8f63684cd98a1c21d0de72e9adb246353c
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453623"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778455"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -25,8 +25,11 @@ ms.locfileid: "35453623"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All | 
+|Для приложений | Directory.Read.All | 
+
 
 Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -85,7 +88,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. 
 

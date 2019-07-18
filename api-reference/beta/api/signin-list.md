@@ -4,12 +4,12 @@ description: Описан метод перечисления ресурсов s
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f40d1cd32a8156d88d80ed43b87f5d125a1a0ca
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 3ccd1dc320cfa2bab425dad3002ea727baeea15e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457172"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778462"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -24,8 +24,11 @@ ms.locfileid: "35457172"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All | 
+|Для приложений | Directory.Read.All  | 
+
 
 Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -106,7 +109,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 ---
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

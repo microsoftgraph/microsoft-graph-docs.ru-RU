@@ -4,12 +4,12 @@ description: Контрольный список для переноса при�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 78b6ba30d84a2ca71ae8998df1321b2b8e0ba331
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 905a692e6a4fddf71b6488e1695957cba5b182ae
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630225"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778266"
 ---
 # <a name="app-migration-planning-checklist"></a>Контрольный список планирования миграции приложений
 
@@ -41,9 +41,9 @@ ms.locfileid: "33630225"
 
 ## <a name="step-3-review-app-details"></a>Шаг 3: Просмотр сведений о приложении
 
-  - Изменения регистрации и согласия [приложения](migrate-azure-ad-graph-app-registration.md) (не должно быть None).
-  - Получение маркеров и [библиотек проверки](migrate-azure-ad-graph-authentication-library.md)подлинности.
-  - Для приложений .NET используйте клиентские [библиотеки](migrate-azure-ad-graph-client-libraries.md).
+- Изменения регистрации и согласия [приложения](migrate-azure-ad-graph-app-registration.md) (не должно быть None).
+- Получение маркеров и [библиотек проверки](migrate-azure-ad-graph-authentication-library.md)подлинности.
+- Для приложений .NET используйте клиентские [библиотеки](migrate-azure-ad-graph-client-libraries.md).
 
 ## <a name="step-4-deploy-test-and-extend-your-app"></a>Шаг 4: развертывание, тестирование и расширение приложения
 

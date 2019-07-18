@@ -3,12 +3,12 @@ title: Поставщики набора средств Microsoft Graph
 description: Поставщики набора средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e89247daf92471b4a7c6aa16f34396eaedaaa37a
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243087"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778714"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Поставщики набора средств Microsoft Graph
 
@@ -37,13 +37,13 @@ Providers.globalProvider = new MsalProvider({
 
 `Providers` Глобальная переменная предоставляет следующие свойства и функции
 
-   - `globalProvider : IProvider`
+- `globalProvider : IProvider`
 
 Задайте для этого свойства поставщик, который будет использоваться глобально. Все компоненты используют это свойство для получения ссылки на поставщика. При задании этого свойства `onProvidersChanged` событие будет срабатывать.
 
-   - `function onProviderUpdated(callbackFunction)`
+- `function onProviderUpdated(callbackFunction)`
 
- `callbackFunction` Функция будет вызываться при изменении поставщика или при изменении состояния поставщика. В `ProvidersChangedState` функцию передается значение перечисления, которое указывает, что было обновлено.
+`callbackFunction` Функция будет вызываться при изменении поставщика или при изменении состояния поставщика. В `ProvidersChangedState` функцию передается значение перечисления, которое указывает, что было обновлено.
 
 ## <a name="implement-your-own-provider"></a>Реализация собственного поставщика
 

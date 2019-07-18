@@ -4,12 +4,12 @@ description: Описывает метод Get ресурса SignIn (Entity) и
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f4c10ffcf600fd51b0d6531f78c38cc2066ae4a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0f258b49d763ddda90b5ee5b05de92a2b44722f0
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444192"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778444"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -23,7 +23,7 @@ ms.locfileid: "35444192"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All |
+|Для приложений | Аудитлог. Read. ALL и Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -3,12 +3,12 @@ title: Тип ресурса schemaExtension (расширения схемы)
 description: 'С помощью расширений схемы вы можете задать схему, которую необходимо расширить, и добавить строго типизированные пользовательские данные в тип ресурса. В расширенном ресурсе пользовательские данные имеют сложный тип. '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: a6d7ed28b1fedefe1b4172bb780e3a014e4d3ff7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 65b70a00b9da6b41a178d07b9eeb42ed8e92a2f6
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343472"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778665"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Тип ресурса schemaExtension (расширения схемы)
 
@@ -18,15 +18,15 @@ ms.locfileid: "33343472"
 
 Расширения схемы поддерживаются в ресурсах указанных ниже типов.
 
- - [administrativeUnit](administrativeunit.md)
- - [contact](contact.md)
- - [device](device.md)
- - [event](event.md) (для пользователя или календаря группы Office 365)
- - [post](post.md) (для группы Office 365)
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [administrativeUnit](administrativeunit.md)
+- [contact](contact.md)
+- [device](device.md)
+- [event](event.md) (для пользователя или календаря группы Office 365)
+- [post](post.md) (для группы Office 365)
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 Сведения о том, как добавлять пользовательские данные в группы, см. в [примере расширения схемы](/graph/extensibility-schema-groups).
 
@@ -35,7 +35,7 @@ ms.locfileid: "33343472"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание](../api/schemaextension-post-schemaextensions.md) | schemaExtension |Создание определения расширения схемы.|
-|[Перечисление](../api/schemaextension-list.md) | schemaExtension |ПереЧислите аваиалбе schemaExtension дефинтионс и их свойства.|
+|[Перечисление](../api/schemaextension-list.md) | schemaExtension |Перечислите аваиалбе schemaExtension дефинтионс и их свойства.|
 |[Получение](../api/schemaextension-get.md) | schemaExtension |Получение свойств указанного определения schemaExtension.|
 |[Обновление](../api/schemaextension-update.md) | schemaExtension   |Обновление определения schemaExtension. |
 |[Удаление](../api/schemaextension-delete.md) | Нет |Удаление определения schemaExtension. |

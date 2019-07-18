@@ -4,12 +4,12 @@ description: Чат — это коллекция chatMessages между одн
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d0f1009079c4994814385ae8758af6c211f17a2
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344978"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778663"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -25,8 +25,8 @@ ms.locfileid: "34344978"
 |[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.|
 |[Список членов чата](../api/conversationmember-list.md) | Коллекция [конверсатионмембер](conversationmember.md) | Получение списка всех пользователей в чате.|
 |[Получение члена чата](../api/conversationmember-get.md) | [конверсатионмембер](conversationmember.md) | Получение одного пользователя в чате.|
-|[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
-|[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
+|[Список сообщений в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
+|[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
 
 ## <a name="properties"></a>Свойства
 

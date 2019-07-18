@@ -4,12 +4,12 @@ description: Получение одного ответа на сообщени�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e8ffbc9d1135c1345d9fdeece42664d3eb16044d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 4f5efcb73b6b0f9b23ab8157fbc4a1b3b1271785
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438505"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778420"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Получение ответа на сообщение канала
 
@@ -26,6 +26,9 @@ ms.locfileid: "35438505"
 |Делегированные (рабочая или учебная учетная запись)|Group.Read.All, Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Для приложений| Group.Read.All, Group.ReadWrite.All |
+
+> [!NOTE]
+> Перед вызовом этого API с разрешениями для приложений необходимо запросить доступ. Дополнительные сведения см [в разделе protected API в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 

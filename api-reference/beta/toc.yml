@@ -9217,9 +9217,9 @@
                 - name: Получение чата
                   href: api/chat-get.md
                 - name: Список сообщений в чате
-                  href: api/chat-list-messages.md
+                  href: api/chatmessage-list.md
                 - name: Получение сообщения в чате
-                  href: api/chat-get-message.md
+                  href: api/chatmessage-get.md
                 - name: Получение участников в чате
                   href: api/conversationmember-list.md
                 - name: Получение одного участника в чате
