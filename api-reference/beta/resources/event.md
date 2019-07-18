@@ -4,12 +4,12 @@ description: Событие в календаре.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 852384ec4c1dd18216df7f642a7c958c53897280
-ms.sourcegitcommit: b18ccb24fc79f3abb470cd759e25cdd266fc77c7
+ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34108975"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778469"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -25,9 +25,9 @@ ms.locfileid: "34108975"
 
 > **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей, календарями групп и их событиями:
 
- - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
- - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях _пользователя_.
-  - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей _пользователя_.
+- В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+- Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях _пользователя_.
+- Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей _пользователя_.
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -3,12 +3,12 @@ title: Тип ресурса schemaExtension (расширения схемы)
 description: 'С помощью расширений схемы вы можете задать схему, которую необходимо расширить, и добавить строго типизированные пользовательские данные в тип ресурса. В расширенном ресурсе пользовательские данные имеют сложный тип. '
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 64c9fa09b83af23604bf8a6e550533b259f1b0a5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72260112e2b23bf185ea86d039fec9e0af778fb9
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579228"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778350"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Тип ресурса schemaExtension (расширения схемы)
 
@@ -16,14 +16,14 @@ ms.locfileid: "32579228"
 
 Расширения схемы поддерживаются в ресурсах указанных ниже типов.
 
- - [contact](contact.md)
- - [device](device.md)
- - [event](event.md) (для пользователя или календаря группы Office 365)
- - [post](post.md) (для группы Office 365)
- - [group](group.md)
- - [message](message.md) 
- - [organization](organization.md)
- - [user](user.md)
+- [contact](contact.md)
+- [device](device.md)
+- [event](event.md) (для пользователя или календаря группы Office 365)
+- [post](post.md) (для группы Office 365)
+- [group](group.md)
+- [message](message.md) 
+- [organization](organization.md)
+- [user](user.md)
 
 Сведения о том, как добавлять пользовательские данные в группы, см. в [примере расширения схемы](/graph/extensibility-schema-groups).
 

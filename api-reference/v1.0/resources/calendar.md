@@ -4,12 +4,12 @@ description: Календарь, служащий контейнером для 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1ca76ba581b4db8ab3a42ccc993e545afd9a922c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ab1d80073ea73b2e1b6321628218218f71d6ed24
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569398"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778343"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -17,9 +17,9 @@ ms.locfileid: "32569398"
 
 > **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей и календарями групп:
 
- - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
- - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях пользователя.
-  - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей пользователя.
+- В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+- Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях пользователя.
+- Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей пользователя.
 
 ## <a name="methods"></a>Методы
 

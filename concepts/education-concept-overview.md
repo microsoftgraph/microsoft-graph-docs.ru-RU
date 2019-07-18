@@ -4,12 +4,12 @@ description: API в Microsoft Graph дополняет ресурсы Office 365
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-ms.openlocfilehash: 79212e9f196f3eb20468d34c34dc9d4588718615
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: c1a93242071f8ad1aa208ca3361f16d08c13d682
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620152"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778756"
 ---
 # <a name="education-api-overview"></a>Обзор API для образования
 
@@ -71,16 +71,16 @@ API управления School Data Sync поддерживают полноц�
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Прежде чем приступить к использованию API для образования, ознакомьтесь со следующими статьями:
-    - [Использование API для списков курсов](/graph/api/resources/education-overview?view=graph-rest-1.0)
-    - [Использование API заданий](/graph/api/resources/educationassignment?view=graph-rest-beta)
-    - [Использование API управления SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
+  - [Использование API для списков курсов](/graph/api/resources/education-overview?view=graph-rest-1.0)
+  - [Использование API заданий](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [Использование API управления SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - Опробуйте API для образования в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Ознакомьтесь со следующими примерами, связанными с образованием:
-    - [Пример единого входа и составления списков на .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [Пример единого входа и составления списков на Angular Node](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [Пример единого входа и составления списков на Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [Пример единого входа и составления списков на PHP](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [Пример использования API для управления профилями](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+  - [Пример единого входа и составления списков на .NET](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
+  - [Пример единого входа и составления списков на Angular Node](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
+  - [Пример единого входа и составления списков на Python](https://github.com/OfficeDev/O365-EDU-Python-Samples)
+  - [Пример единого входа и составления списков на PHP](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+  - [Пример использования API для управления профилями](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
 
