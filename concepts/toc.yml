@@ -248,6 +248,8 @@ items:
             href: teams-list-all-teams.md
           - name: Настройка встроенных вкладок
             href: teams-configuring-builtin-tabs.md
+          - name: Защищенные API
+            href: teams-protected-apis.md
       - name: Книги и диаграммы
         displayName: Excel
         items:
