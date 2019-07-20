@@ -4,12 +4,12 @@ description: Получение одного сообщения (без отве
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea69a9926a07c0f9fcd05a70bdf409fd9bd4d922
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 884da7f1f27c20c3012c8f8a1d38681d472a8337
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438512"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778415"
 ---
 # <a name="get-channel-message"></a>Получение сообщения в канале
 
@@ -25,6 +25,9 @@ ms.locfileid: "35438512"
 |Делегированные (рабочая или учебная учетная запись)|Group.Read.All, Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение| Group.Read.All, Group.ReadWrite.All |
+
+> [!NOTE]
+> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

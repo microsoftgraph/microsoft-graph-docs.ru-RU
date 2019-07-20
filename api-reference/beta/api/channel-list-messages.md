@@ -4,12 +4,12 @@ description: 'Получение списка сообщений (без отв�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: be255279415c8c973666b328c9edf922607a8d7b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 741c5f31e0b867a5fe6624cb81ea790e61c1fedb
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438463"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778399"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -27,7 +27,10 @@ ms.locfileid: "35438463"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|Group.Read.All,Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| Не поддерживается. |
+|Приложение| Group.Read.All,Group.ReadWrite.All|
+
+> [!NOTE]
+> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 
