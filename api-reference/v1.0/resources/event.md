@@ -4,12 +4,12 @@ description: Событие в календаре.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 0be46df98faf4540e221a140daf0ec22355fc24a
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 887674cb70f5c3247d4a617f6ab6f591340bd0c4
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778728"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805279"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -64,7 +64,7 @@ ms.locfileid: "35778728"
 |categories|Коллекция String|Категории, связанные с событием.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события. По умолчанию время завершения указано в формате UTC.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |iCalUId|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях. Только для чтения.|
 |id|String| Только для чтения.|
@@ -88,7 +88,7 @@ ms.locfileid: "35778728"
 |sensitivity|sensitivity| Допустимые значения: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|Идентификатор для элемента образца повторяющегося ряда, если это событие входит в повторяющийся ряд.|
 |showAs|freeBusyStatus|Отображаемое состояние. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
+|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события. По умолчанию время начала указано в формате UTC.|
 |subject|String|Текст в строке темы сообщения о событии.|
 |type|eventType|Тип события. Допустимые значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения.|
 |webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|

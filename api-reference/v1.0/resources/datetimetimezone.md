@@ -2,12 +2,14 @@
 title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
 localization_priority: Priority
-ms.openlocfilehash: 9e031b053ebc185ee02fa11571019529a870cf04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 5927c10a99b91e0130b8ceb30c33ae1fa19af3dd
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574773"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805055"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
@@ -17,9 +19,13 @@ ms.locfileid: "32574773"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |dateTime|String|Один момент времени в объединенном представлении даты и времени (`{date}T{time}`; например, `2017-08-29T04:00:00.0000000`).|
-|timeZone|String|Один из указанных ниже часовых поясов.|
+|timeZone|String|Представляет часовой пояс, например тихоокеанское время в США. Дополнительные возможные значения см. ниже.|
 
-Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.
+Обычно свойство **timeZone** _можно_ задать для каждого из [часовых поясов, поддерживаемых в настоящее время в Windows](https://docs.microsoft.com/ru-RU/windows-hardware/manufacture/desktop/default-time-zones), а также для дополнительных [часовых поясов, поддерживаемых API календаря](#additional-time-zones). 
+
+При использовании ресурса **dateTimeTimeZone** в сочетании с методом (например, при [создании](../api/user-post-events.md) или [обновлении](../api/event-update.md) события) запишите фактически поддерживаемые часовые пояса, которых может быть совсем немного.
+
+### <a name="additional-time-zones"></a>Дополнительные часовые пояса
 
 Etc/GMT+12
 

@@ -4,12 +4,12 @@ description: 'Представляет группу Azure Active Directory (Azur
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 57587b183ccc15c4ebc46784161724d9cc7af773
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 170f89c0e7c4e701e8b98a5aac8c02404b174b4e
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620782"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805244"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -55,6 +55,7 @@ ms.locfileid: "35620782"
 |[Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
 |[Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта параметра. |
 |[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
 |**Calendar**| | |
 |[Создание события](../api/group-post-events.md) |[event](event.md)| Создание объекта event путем публикации в коллекции объектов event.|
 |[Получение события](../api/group-get-event.md) |[event](event.md)|Считывание свойств объекта event.|
@@ -67,6 +68,7 @@ ms.locfileid: "35620782"
 |[Получение беседы](../api/group-get-conversation.md) |[conversation](conversation.md)| Считывание свойств объекта conversation.|
 |[Перечисление бесед](../api/group-list-conversations.md) |Коллекция [conversation](conversation.md)| Получение коллекции объектов conversation.|
 |[Удаление беседы](../api/group-delete-conversation.md) |Нет|Удаление объекта conversation.|
+|[Создание цепочки](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Создание цепочки беседы.|
 |[Получение цепочки](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Считывание свойств объекта thread.|
 |[Перечисление цепочек](../api/group-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек группы.|
 |[Обновление цепочки](../api/group-update-thread.md) |Нет| Обновление свойств объекта thread.|
@@ -82,6 +84,8 @@ ms.locfileid: "35620782"
 |[Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
 |[Обновление параметра](../api/groupsetting-update.md) | Нет | Обновление объекта параметра. |
 |[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
+|[Получение шаблона параметров](../api/groupsettingtemplate-get.md) | Нет | Чтение свойств шаблона параметров. |
+|[Перечисление шаблонов параметров](../api/groupsettingtemplate-list.md) | Нет | Перечисление свойств всех шаблонов параметров. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|

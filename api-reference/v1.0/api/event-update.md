@@ -4,16 +4,19 @@ description: Обновление свойств объекта event.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b8d767f406d9d635a3a76ba03120851917b91689
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8f9209909fb4c9aee6180ddbf07f60714bce7152
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444381"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805062"
 ---
 # <a name="update-event"></a>Обновление события
 
 Обновление свойств объекта [event](../resources/event.md).
+
+При обновлении часового пояса начала или завершения события сначала [найдите поддерживаемые часовые пояса](outlookuser-supportedtimezones.md), чтобы устанавливать только часовые пояса, настроенные для сервера почтового ящика пользователя. 
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -56,7 +59,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |attendees|[Attendee](../resources/attendee.md)|Коллекция участников события.|
 |body|[ItemBody](../resources/itembody.md)|Текст сообщения, связанного с событием.|
 |categories|String|Категории, связанные с событием.|
-|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время завершения события.<br/><br/>По умолчанию время завершения указано в формате UTC. Можно дополнительно указать часовой пояс в элементе EndTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете EndTimeZone, следует также указать значение StartTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 21:34 по тихоокеанскому поясному времени): "2015-02-25T21:34:00-08:00". |
+| end|DateTimeTimeZone|Дата, время и часовой пояс завершения события.|
 |importance|String|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
@@ -67,7 +70,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 |sensitivity|String| Допустимые значения: `normal`, `personal`, `private`, `confidential`.|
 |showAs|String|Отображаемое состояние. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|начать|[DateTimeTimeZone](../resources/datetimetimezone.md)|Время начала события. <br/><br/>По умолчанию время начала указано в формате UTC. Можно дополнительно указать часовой пояс в элементе StartTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете StartTimeZone, следует также указать значение EndTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 19:34 по тихоокеанскому поясному времени): "2015-02-25T19:34:00-08:00".  |
+| начать|DateTimeTimeZone|Дата, время и часовой пояс начала события. |
 |subject|String|Текст в строке темы сообщения о событии.|
 
 Так как ресурс **event** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `PATCH` можно добавлять, обновлять или удалять собственные данные, касающиеся определенных приложений, в настраиваемых свойствах расширения в существующем экземпляре **event**.  
