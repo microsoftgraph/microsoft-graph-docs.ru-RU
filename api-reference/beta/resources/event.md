@@ -4,12 +4,12 @@ description: Событие в календаре.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 01aac673f5bf9f4a1ecbc4b1fa3b82b9cd001537
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 0d8e25276613461098f2194daa60bf260cc7887b
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778469"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805272"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -102,7 +102,7 @@ ms.locfileid: "35778469"
 |categories|Коллекция String|Категории, связанные с событием. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|end|[DateTimeTimeZone](datetimetimezone.md)|Дата и время завершения события.|
+|end|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события. По умолчанию время завершения указано в формате UTC.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
@@ -125,7 +125,7 @@ ms.locfileid: "35778469"
 |sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|Идентификатор для элемента образца повторяющегося ряда, если это событие входит в повторяющийся ряд.|
 |showAs|String|Отображаемое состояние. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|start|[DateTimeTimeZone](datetimetimezone.md)|Время начала события.|
+|start|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события. По умолчанию время начала указано в формате UTC.|
 |subject|String|Текст в строке темы сообщения о событии.|
 |type|String|Тип события. Возможные значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения|
 |uid|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях. **Примечание.** Предназначение этого свойства совпадает с предназначением свойства `iCalUid` для [ресурса события](/graph/api/resources/event?view=graph-rest-1.0) в конечной точке версии 1.0, но не гарантирует получение такого же значения.|

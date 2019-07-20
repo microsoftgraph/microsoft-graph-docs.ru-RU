@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 551ee0939d4a8ba10ea54d61b068078e21e5003a
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621139"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805265"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -71,6 +71,7 @@ ms.locfileid: "35621139"
 |[Получение беседы](../api/group-get-conversation.md) |[conversation](conversation.md)| Считывание свойств объекта conversation.|
 |[Перечисление бесед](../api/group-list-conversations.md) |Коллекция [conversation](conversation.md)| Получение коллекции объектов conversation.|
 |[Удаление беседы](../api/group-delete-conversation.md) |Нет|Удаление объекта conversation.|
+|[Создание цепочки](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Создание цепочки беседы.|
 |[Получение цепочки](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Считывание свойств объекта thread.|
 |[Перечисление цепочек](../api/group-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек группы.|
 |[Обновление цепочки](../api/group-update-thread.md) |Нет| Обновление свойств объекта thread.|
