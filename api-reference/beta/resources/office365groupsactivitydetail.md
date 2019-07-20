@@ -4,12 +4,12 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1b467f73ed2a4a5e48cb1243c5b1326591bcd707
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 176e960c7d9ae8dd1bc29600ad7b64e45e2940fa
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581452"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805216"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>Тип ресурса office365GroupsActivityDetail
 
@@ -17,6 +17,7 @@ ms.locfileid: "32581452"
 
 | Свойство                          | Тип    | Описание                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
+| groupId                           | String  | Идентификатор группы.          |
 | Репортрефрешдате                 | Дата    | Самая поздняя дата контента.          |
 | Граупдисплайнаме                  | String  | Отображаемое имя группы.           |
 | isDeleted                         | Boolean | Указывает, был ли этот пользователь удален или обратимо удален. |
@@ -47,6 +48,7 @@ ms.locfileid: "32581452"
 
 ```json
 {
+  "groupId": "0003cf63-7ff3-4471-b24b-50ffbfb8b5d2",
   "reportRefreshDate": "Date", 
   "groupDisplayName": "String", 
   "isDeleted": true, 

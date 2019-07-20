@@ -2,14 +2,14 @@
 title: Создание события
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 11e4787d7ca12a42d69f0fcc7cd13b6ed525fda2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: fae2a5d543ac6e0dc852a2b4e98cea03afcf5308
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456780"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805090"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -17,7 +17,7 @@ ms.locfileid: "35456780"
 
 Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.
 
-В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md).
+Вы можете указать часовой пояс для каждого из начальных и конечных моментов события в составе их значений, так как свойства **Start** и **End** имеют тип [dateTimeTimeZone](../resources/datetimetimezone.md) . Сначала [найдите поддерживаемые](outlookuser-supportedtimezones.md) Часовые пояса, чтобы установить только те Часовые пояса, которые были настроены для сервера почтовых ящиков пользователя. 
 
 При отправке события сервер отправляет приглашения всем участникам.
 

@@ -4,12 +4,12 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2890205db7cec6f20eef17c24da112517bf169a1
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581270"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805223"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>Тип ресурса Маилбоксусажедетаил
 
@@ -19,13 +19,15 @@ ms.locfileid: "32581270"
 | :------------------------------ | :------ |
 | Репортрефрешдате               | Дата    |
 | userPrincipalName               | String  |
-| displayName                     | String  |
+| displayName                     | Строка  |
 | isDeleted                       | Boolean |
 | Делетеддате                     | Дата    |
 | createdDate                     | Дата    |
 | Ластактивитидате                | Дата    |
 | itemCount                       | Int64   |
 | Сторажеусединбитес              | Int64   |
+| Делетедитемкаунт                | Int64   |
+| Делетедитемсизеинбитес          | Int64   |
 | Иссуеварнингкуотаинбитес        | Int64   |
 | Прохибитсендкуотаинбитес        | Int64   |
 | Прохибитсендрецеивекуотаинбитес | Int64   |
@@ -51,6 +53,8 @@ ms.locfileid: "32581270"
   "lastActivityDate": "Date", 
   "itemCount": 1024, 
   "storageUsedInBytes": 1024, 
+  "deletedItemCount": 1024,
+  "deletedItemSizeInBytes": 1024, 
   "issueWarningQuotaInBytes": 1024, 
   "prohibitSendQuotaInBytes": 1024, 
   "prohibitSendReceiveQuotaInBytes": 1024, 

@@ -178,7 +178,7 @@
                 - name: Получение дельты
                   href: api/user-delta.md
             - name: Календарь
-              href: resources/event.md
+              href: resources/calendar.md
               displayName: 'Outlook, Outlook calendar'
               items:
                 - name: Список событий
@@ -245,8 +245,10 @@
             - name: Группы
               href: resources/group.md
               items:
-                - name: Список свойств memberOf
+                - name: Список свойств member of
                   href: api/user-list-memberof.md
+                - name: Список транзитивных участников
+                  href: api/user-list-transitivememberof.md
             - name: Почта
               href: resources/message.md
               items:
@@ -353,10 +355,16 @@
                   href: api/group-list-grouplifecyclepolicies.md
                 - name: Список свойств member of
                   href: api/group-list-memberof.md
-                - name: Список членов
+                - name: Список транзитивных участников
+                  href: api/group-list-transitivememberof.md
+                - name: Список элементов
                   href: api/group-list-members.md
+                - name: Перечисление транзитивных участников
+                  href: api/group-list-transitivemembers.md
                 - name: Список владельцев
                   href: api/group-list-owners.md
+                - name: Перечисление фотографий
+                  href: api/group-list-photos.md
                 - name: Обновление группы
                   href: api/group-update.md
                 - name: Удаление из избранного
@@ -390,6 +398,8 @@
                       href: api/grouplifecyclepolicy-addgroup.md
                     - name: Удаление группы
                       href: api/grouplifecyclepolicy-removegroup.md
+                - name: Проверка свойств
+                  href: api/group-validateproperties.md
             - name: Вложение
               href: resources/attachment.md
               items:
@@ -835,7 +845,7 @@
                 - name: 'Приложение iOS, приобретенное по программе VPP'
                   href: resources/intune-apps-iosvppapp.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-apps-iosvppapp-list.md
                     - name: Получение
                       href: api/intune-apps-iosvppapp-get.md
@@ -850,7 +860,7 @@
                 - name: Электронная книга VPP для iOS
                   href: resources/intune-books-iosvppebook.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-books-iosvppebook-list.md
                     - name: Получение
                       href: api/intune-books-iosvppebook-get.md
@@ -1060,7 +1070,7 @@
                 - name: Мобильное приложение
                   href: resources/intune-apps-mobileapp.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-apps-mobileapp-list.md
                     - name: Получение
                       href: api/intune-apps-mobileapp-get.md
@@ -1069,7 +1079,7 @@
                 - name: Назначение мобильного приложения
                   href: resources/intune-apps-mobileappassignment.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-apps-mobileappassignment-list.md
                     - name: Получение
                       href: api/intune-apps-mobileappassignment-get.md
@@ -1281,7 +1291,7 @@
                 - name: Политика соответствия требованиям Android
                   href: resources/intune-deviceconfig-androidcompliancepolicy.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-androidcompliancepolicy-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androidcompliancepolicy-get.md
@@ -1294,7 +1304,7 @@
                 - name: Специальная конфигурация Android
                   href: resources/intune-deviceconfig-androidcustomconfiguration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-androidcustomconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androidcustomconfiguration-get.md
@@ -1513,7 +1523,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-devicecomplianceuseroverview-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-deviceconfig-devicecomplianceuseroverview-update.md
                 - name: 'Состояние пользователей, касающийся соответствия устройств требованиям'
                   href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
@@ -1716,7 +1726,7 @@
                 - name: Конфигурация обновления iOS
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -1729,7 +1739,7 @@
                 - name: Тип ресурса iosUpdateDeviceStatus
                   href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -1880,7 +1890,7 @@
                 - name: Объект settingStateDeviceSummary
                   href: resources/intune-deviceconfig-settingstatedevicesummary.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-settingstatedevicesummary-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-settingstatedevicesummary-get.md
@@ -1931,7 +1941,7 @@
                 - name: Политика соответствия требованиям для Windows 10
                   href: resources/intune-deviceconfig-windows10compliancepolicy.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -2384,7 +2394,7 @@
                       href: api/intune-mam-androidmanagedappprotection-get.md
                     - name: Создание
                       href: api/intune-mam-androidmanagedappprotection-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-androidmanagedappprotection-delete.md
                     - name: Обновление
                       href: api/intune-mam-androidmanagedappprotection-update.md
@@ -2410,7 +2420,7 @@
                       href: api/intune-mam-defaultmanagedappprotection-get.md
                     - name: Создание
                       href: api/intune-mam-defaultmanagedappprotection-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-defaultmanagedappprotection-delete.md
                     - name: Обновление
                       href: api/intune-mam-defaultmanagedappprotection-update.md
@@ -2423,7 +2433,7 @@
                       href: api/intune-mam-iosmanagedappprotection-get.md
                     - name: Создание
                       href: api/intune-mam-iosmanagedappprotection-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-iosmanagedappprotection-delete.md
                     - name: Обновление
                       href: api/intune-mam-iosmanagedappprotection-update.md
@@ -2474,7 +2484,7 @@
                       href: api/intune-mam-managedappoperation-get.md
                     - name: Создание
                       href: api/intune-mam-managedappoperation-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-managedappoperation-delete.md
                     - name: Обновление
                       href: api/intune-mam-managedappoperation-update.md
@@ -2537,7 +2547,7 @@
                       href: api/intune-mam-managedmobileapp-get.md
                     - name: Создание
                       href: api/intune-mam-managedmobileapp-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-managedmobileapp-delete.md
                     - name: Обновление
                       href: api/intune-mam-managedmobileapp-update.md
@@ -2550,7 +2560,7 @@
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
                     - name: Создание
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
                     - name: Обновление
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-update.md
@@ -2567,7 +2577,7 @@
                       href: api/intune-mam-targetedmanagedappconfiguration-get.md
                     - name: Создание
                       href: api/intune-mam-targetedmanagedappconfiguration-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-targetedmanagedappconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-mam-targetedmanagedappconfiguration-update.md
@@ -2615,7 +2625,7 @@
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
                     - name: Создание
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-delete.md
                     - name: Обновление
                       href: api/intune-wip-windowsinformationprotectionapplearningsummary-update.md
@@ -2628,7 +2638,7 @@
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                     - name: Создание
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                     - name: Обновление
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -2649,7 +2659,7 @@
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
                     - name: Создание
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-delete.md
                     - name: Обновление
                       href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-update.md
@@ -2664,7 +2674,7 @@
                       href: api/intune-mam-windowsinformationprotectionpolicy-get.md
                     - name: Создание
                       href: api/intune-mam-windowsinformationprotectionpolicy-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-mam-windowsinformationprotectionpolicy-delete.md
                     - name: Обновление
                       href: api/intune-mam-windowsinformationprotectionpolicy-update.md
@@ -2698,7 +2708,7 @@
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
                     - name: Создание
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-onboarding-deviceenrollmentlimitconfiguration-update.md
@@ -2713,7 +2723,7 @@
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
                     - name: Создание
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-update.md
@@ -2726,7 +2736,7 @@
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
                     - name: Создание
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-update.md
@@ -2739,7 +2749,7 @@
                       href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
                     - name: Создание
                       href: api/intune-onboarding-devicemanagementexchangeconnector-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-onboarding-devicemanagementexchangeconnector-delete.md
                     - name: Обновление
                       href: api/intune-onboarding-devicemanagementexchangeconnector-update.md
@@ -2760,7 +2770,7 @@
                       href: api/intune-onboarding-devicemanagementpartner-get.md
                     - name: Создание
                       href: api/intune-onboarding-devicemanagementpartner-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-onboarding-devicemanagementpartner-delete.md
                     - name: Обновление
                       href: api/intune-onboarding-devicemanagementpartner-update.md
@@ -2773,13 +2783,13 @@
                 - name: Назначение конфигураций регистрации
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: Получение
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
                     - name: Создание
                       href: api/intune-onboarding-enrollmentconfigurationassignment-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-onboarding-enrollmentconfigurationassignment-delete.md
                     - name: Обновление
                       href: api/intune-onboarding-enrollmentconfigurationassignment-update.md
@@ -2790,7 +2800,7 @@
                 - name: Соединитель Mobile Threat Defense
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: Получение
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -3229,6 +3239,8 @@
                   href: api/device-post-registeredusers.md
                 - name: Список групп устройств
                   href: api/device-list-memberof.md
+                - name: Перечисление транзитивных групп устройств
+                  href: api/device-list-transitivememberof.md
             - name: Объект каталога
               href: resources/directoryobject.md
               items:
@@ -3244,6 +3256,8 @@
                   href: api/directoryobject-checkmembergroups.md
                 - name: Получение объектов по идентификатору
                   href: api/directoryobject-getbyids.md
+                - name: Проверка свойств
+                  href: api/directoryobject-validateproperties.md
             - name: Роль каталога
               href: resources/directoryrole.md
               items:
@@ -3670,7 +3684,7 @@
             - name: Использование устройств Microsoft Teams
               href: resources/microsoft-teams-device-usage-reports.md
               items:
-                - name: Получение сведений о пользователях
+                - name: Получение сведений о пользователе
                   href: api/reportroot-getteamsdeviceusageuserdetail.md
                 - name: Получение количества пользователей
                   href: api/reportroot-getteamsdeviceusageusercounts.md
