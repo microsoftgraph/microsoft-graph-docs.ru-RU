@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Отправка небольших файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 492ad11a6bd74b45fea77aee46c6e0050a1927a3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 1b6ec254dd56de3b678aa0c6a3d5c95a8f149837
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436272"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820712"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
 
@@ -77,12 +77,12 @@ The contents of the file goes here.
 
 ### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.
+В случае успешного выполнения этот метод возвращает ресурс [driveItem][item-resource] в тексте отклика для вновь созданного или обновленного файла.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {

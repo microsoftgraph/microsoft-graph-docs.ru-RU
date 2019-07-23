@@ -4,16 +4,16 @@ description: Получение свойств и связей объекта **
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 4c7af021e91ac9ec2bad82f3850726605890de4e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: db61db4d793e77d68f4f900e4c921e95e094a12b
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459582"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820789"
 ---
 # <a name="get-plannerplan"></a>Получение объекта plannerPlan
 
-Получение свойств и связей объекта **plannerplan**.
+Получение свойств и связей объекта [plannerplan](../resources/plannerplan.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "35459582"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/{id}
+GET /planner/plans/{plan-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -38,7 +38,7 @@ GET /planner/plans/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerPlan](../resources/plannerplan.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [plannerPlan](../resources/plannerplan.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -69,7 +69,9 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

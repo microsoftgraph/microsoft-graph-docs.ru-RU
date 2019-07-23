@@ -4,18 +4,18 @@ description: Получение списка объектов **plannerbucket**,
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: c75203d2fe8bffcab62b33e91ded06c9c2dd8efa
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9df9455f68af890390aca64c0c9291071ab44825
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445809"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820768"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов **plannerbucket**, содержащихся в объекте [plannerPlan](../resources/plannerplan.md).
+Получение списка объектов [plannerBucket](../resources/plannerbucket.md) , хранящихся в объекте [plannerPlan](../resources/plannerplan.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ ms.locfileid: "35445809"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/plans/<id>/buckets
+GET /planner/plans/{plan-id}/buckets
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,7 +41,7 @@ GET /planner/plans/<id>/buckets
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `200 OK` и коллекцию объектов [plannerBucket](../resources/plannerbucket.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [plannerBucket](../resources/plannerbucket.md) в тексте отклика.
 
 Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Пример
@@ -71,7 +71,9 @@ GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
