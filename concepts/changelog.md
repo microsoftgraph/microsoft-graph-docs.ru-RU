@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 5d294584e402875980cee1fd0ca2666c68256681
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
+ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778749"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "35805237"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -46,11 +46,6 @@ ms.locfileid: "35778749"
 |Дополнение|Бета|Добавлено свойство **edgeTraversal** для сложного типа [windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **localGuestAccount** для типа перечисления [secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены элементы **empty** и **clientCertificateSubjectName** для типа перечисления [vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta)|
-
-### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
-
-|Тип изменения|Версия|Описание|
-|:---|:---|:---|
 |Дополнение|Бета|Добавлено свойство **revision** для объекта [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **valuePrefix** для объекта [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta)|
 
@@ -65,13 +60,22 @@ ms.locfileid: "35778749"
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение | 1.0 | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-1.0) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
 | Дополнение | Бета | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-beta) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
+| Дополнение | 1.0 | Добавлена [функция group:validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) и [функция directoryobject:validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) для [групп](/graph/api/group-delta?view=graph-rest-1.0), которая проверяет, соответствует ли почтовый псевдоним или отображаемое имя группы Office 365 политикам именования групп. |
+
+### <a name="reports"></a>Отчеты
+
+| **Тип изменения** | **Version** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | Бета  | Добавлено свойство **deletedItemCount** для объекта [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
+| Дополнение        | Бета  | Добавлено свойство **deletedItemSizeInBytes** для объекта [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta).|
+| Дополнение        | Бета-версия  | Добавлено свойство **groupId** для объекта [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta).|
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка для разрешений для приложений на следующие действия: [перечисление сообщений в каналах](/api-reference/beta/api/channel-list-messages.md), [получение сообщений в каналах](/api-reference/beta/api/channel-get-message.md), [перечисление ответов на сообщения](/api-reference/beta/api/channel-list-messagereplies.md), и [вывод ответов на сообщения](/api-reference/beta/api/channel-get-messagereply.md). |
-| Дополнение | Бета | Добавлена поддержка разрешения для приложений на вывод сообщений в беседах и получение сообщений в беседах](/api-reference/beta/api/chatmessage-get.md). |
+| Дополнение | Бета | Добавлена поддержка разрешения для приложений на [вывод сообщений в беседах](/api-reference/beta/api/chatmessage-list.md) и [получение сообщений в беседах](/api-reference/beta/api/chatmessage-get.md). |
 
 ## <a name="june-2019"></a>Июнь 2019 г.
 
@@ -594,7 +598,7 @@ ms.locfileid: "35778749"
 
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено новое свойство `expirationDateTime` в [группы](https://docs.microsoft.com/ru-RU/graph/api/group-list-transitivemembers?view=graph-rest-beta) для [срока действия группы](https://docs.microsoft.com/ru-RU/azure/active-directory/users-groups-roles/groups-lifecycle).|
+| Дополнение | бета | Добавлено новое свойство `expirationDateTime` в [группы](https://docs.microsoft.com/ru-RU/graph/api/resources/group?view=graph-rest-beta) для [срока действия группы](https://docs.microsoft.com/ru-RU/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Дополнение | бета | Добавлен новый тип ресурса [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Дополнение | бета | Добавлено свойство `createdDateTime` для ресурса [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Дополнение | 1.0 | Добавлен метод `memberOf` для получения сведений о непосредственном [участии](/graph/api/device-list-memberOf?view=graph-rest-1.0) для [устройств](/graph/api/resources/device?view=graph-rest-1.0). Этот метод был добавлен для получения списка участий, включая вложенные участия.|
@@ -623,7 +627,7 @@ ms.locfileid: "35778749"
 | **Тип изменения** | **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |бета| Представлен новый тип ресурса [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
-|Дополнение |бета| Представлен новый тип ресурса [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Дополнение |Бета| Представлен новый тип ресурса [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
 |Дополнение |Бета| Добавлены свойства isFavoriteByDefault, email и webUrl для [канала](/graph/api/resources/channel?view=graph-rest-beta).|
 |Дополнение |бета| Добавлено свойство displayName для [команды](/graph/api/resources/team?view=graph-rest-beta)|
 |Дополнение |бета| Добавлены свойство описание для [команды](/graph/api/resources/team?view=graph-rest-beta).|
@@ -3037,7 +3041,7 @@ ms.locfileid: "35778749"
 | Дополнение        | Бета-версия        | Добавлена поддержка элемента _createUploadSession_, который позволяет отправлять файлы размером более 4 МБ в OneDrive, OneDrive для бизнеса и библиотеки документов SharePoint. |
 | Дополнение        | Бета-версия        | Добавлено свойство _sharepointIds_, которое возвращает традиционные идентификаторы API SharePoint для элементов driveItem, хранящихся в SharePoint. |
 | Дополнение        | Бета-версия        | Добавлены дополнительные свойства для _remoteItem_. |
-| Дополнение        | Бета-версия        | Добавлено значение _quickXorHash_ для файлов в OneDrive для бизнеса. |
+| Дополнение        | Бета        | Добавлено значение _quickXorHash_ для файлов в OneDrive для бизнеса. |
 | Дополнение        | Бета-версия        | Добавлена область для объекта _createSharingLink_, которая позволяет создавать ссылки для совместного доступа в компании или анонимного совместного доступа. |
 
 ### <a name="calendar-groups-mail-personal-contacts"></a>Календарь, группы, почта, личные контакты
