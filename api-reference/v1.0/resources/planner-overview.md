@@ -4,12 +4,12 @@ description: API Планировщика в Microsoft Graph можно испо
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 86d5c950b2e281a0af254d48a7d133d7e352341f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d14ec6e535dc8f4ca690f50cdf7712eafcf5d2bb
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462398"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820775"
 ---
 # <a name="use-the-planner-rest-api"></a>Использование REST API Планировщика
 
@@ -23,7 +23,7 @@ API Планировщика в Microsoft Graph можно использова�
 Чтобы [получить планы, принадлежащие группе](../api/plannergroup-list-plans.md), выполните HTTP-запрос, описанный ниже.
 
 ``` http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 При [создании плана](../api/planner-post-plans.md) сделайте группу его владельцем. Для этого установите свойство `owner` для объекта плана. Планы должны принадлежать группам.
@@ -37,7 +37,7 @@ GET /groups/{id}/planner/plans
 Чтобы [получить задачи в плане](../api/plannerplan-list-tasks.md), выполните HTTP-запрос, описанный ниже.
 
 ``` http
-GET /planner/plans/{id}/tasks
+GET /planner/plans/{plan-id}/tasks
 ```
 
 ## <a name="tasks"></a>Задачи
