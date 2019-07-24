@@ -290,6 +290,8 @@ items:
         items:
           - name: Обзор
             href: use-the-api.md
+          - name: Доступ к данным и методам
+            href: traverse-the-graph.md
           - name: Разбиение на страницы
             href: paging.md
           - name: Использование параметров запроса

@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9fd24cb22b027990c9673017a645c937ee3e1384
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: 81a87d1ec6575516e12edab99ee205056b8b4593
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805265"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840749"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -57,7 +57,6 @@ ms.locfileid: "35805265"
 |[Удаление параметра](../api/directorysetting-delete.md) | Нет |Удаление объекта setting. |
 |[Перечисление конечных точек](../api/group-list-endpoints.md) |Коллекция [endpoint](endpoint.md)| Получение коллекции объектов endpoint. |
 |[Получение конечной точки](../api/endpoint-get.md) | [endpoint](endpoint.md) | Чтение свойств и связей объекта endpoint. |
-|[delta](../api/group-delta.md)|Коллекция group| Получение добавочных изменений для групп. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. | 
 |**Календарь**| | |
 |[Создание события](../api/group-post-events.md) |[event](event.md)| Создание объекта event путем публикации в коллекции объектов event.|
