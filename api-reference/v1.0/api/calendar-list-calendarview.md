@@ -4,12 +4,12 @@ description: Получение исключений, повторяемых и�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: eef9e350a2fb6ccb701346cce169eed60be38f31
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 5f3b3c263ffd4f4a7a2a4663b087527791685573
+ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443821"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820663"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -58,7 +58,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 |startDateTime|String|Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2015-11-08T20:00:00.0000000".|
 
-Этот метод также поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+
+> [!NOTE] 
+> Свойства **createdDateTime** и **lastModifiedDateTime** [события](../resources/event.md) не поддерживают `$select`. Чтобы получить их значения, просто запросите **calendarView**, не применяя `$select`.
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
@@ -70,7 +74,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

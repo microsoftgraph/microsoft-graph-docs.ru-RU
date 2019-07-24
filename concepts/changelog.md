@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7f88a9370b59e13c571c10863b3c07eee9a6e480
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+ms.openlocfilehash: a5231180e4477d5ac200bc56fee5e8f1464c612e
+ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805237"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840637"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,17 @@ ms.locfileid: "35805237"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="july-2019"></a>Июль 2019 г.
+
+### <a name="calendar--places"></a>Календарь | Места
+
+Дебютное представление API мест для указания в приложениях подробных сведений о расположениях.
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | Бета-версия  | Добавлен ресурс [room list](/graph/api/resources/roomlist?view=graph-rest-beta)|
+| Дополнение        | Бета-версия  | Добавлен ресурс [room](/graph/api/resources/room?view=graph-rest-beta)|
+| Дополнение        | Бета-версия  | Добавлен ресурс [place](/graph/api/resources/place?view=graph-rest-beta)|
+|Дополнение         | Бета-версия  | Добавлены разрешения приложений и делегированные [разрешения для API мест](permissions-reference.md#places-permissions): Place.Read.All |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -77,9 +88,11 @@ ms.locfileid: "35805237"
 | Дополнение | Бета | Добавлена поддержка для разрешений для приложений на следующие действия: [перечисление сообщений в каналах](/api-reference/beta/api/channel-list-messages.md), [получение сообщений в каналах](/api-reference/beta/api/channel-get-message.md), [перечисление ответов на сообщения](/api-reference/beta/api/channel-list-messagereplies.md), и [вывод ответов на сообщения](/api-reference/beta/api/channel-get-messagereply.md). |
 | Дополнение | Бета | Добавлена поддержка разрешения для приложений на [вывод сообщений в беседах](/api-reference/beta/api/chatmessage-list.md) и [получение сообщений в беседах](/api-reference/beta/api/chatmessage-get.md). |
 
+
 ## <a name="june-2019"></a>Июнь 2019 г.
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
+
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
@@ -387,7 +400,7 @@ ms.locfileid: "35805237"
 |Дополнение|бета|Добавлены свойства **userWindowsUpdateScanAccess** и **updateNotificationLevel** для объекта [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **teams** для сложного типа [excludedApps](/graph/api/resources/intune-apps-excludedapps?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **autoLaunch** для сложного типа [windowsKioskAppBase](/graph/api/resources/intune-deviceconfig-windowskioskappbase?view=graph-rest-beta)|
-|Дополнение|бета|Добавлено свойство **allowAccessToDownloadsFolder** для сложного типа [windowsKioskMultipleApps](/graph/api/resources/intune-deviceconfig-windowskioskmultipleapps?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлено свойство **allowAccessToDownloadsFolder** для сложного типа [windowsKioskMultipleApps](/graph/api/resources/intune-deviceconfig-windowskioskmultipleapps?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **lowSecurityBiometric** для типа перечисления [androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены элементы **androidBootloaderUnlocked** и **androidFactoryRomModified** для типа перечисления [managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta)|
 
