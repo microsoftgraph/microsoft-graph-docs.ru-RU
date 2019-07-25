@@ -4,12 +4,12 @@ description: Получение всех почтовых папок в почт
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ff3798bdc0d4f3c95814be90ad7337ef8bd83fb5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c006e1f4b8714c332b9a1d3144c660784fda11f5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457732"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35867243"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -24,7 +24,7 @@ ms.locfileid: "35457732"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
-|Для приложений | Mail.Read, Mail.ReadWrite |
+|Для приложений | Mail. ReadBasic. ALL, mail. Read, mail. ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
