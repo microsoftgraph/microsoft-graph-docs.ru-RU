@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7afa2d17a07f671396366288be3ae28fe6fd4ead
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0af62965a922d18b6c59b0f35f8e743896a85a77
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445802"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888363"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -77,6 +77,10 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

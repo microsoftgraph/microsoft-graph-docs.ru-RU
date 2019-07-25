@@ -3,12 +3,12 @@ title: Получение ресурса DriveItemVersion
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7756abc8bc97b70367f335c2f262055b3fffe98c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ed11ef061fad293885df8f5269898ddc5df80f10
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35460590"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886474"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Получение ресурса DriveItemVersion
 
@@ -65,6 +65,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-single-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

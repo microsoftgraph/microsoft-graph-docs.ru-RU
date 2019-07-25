@@ -4,12 +4,12 @@ description: Получает объект диапазона, связанны�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f193b9ea0e0aa8f35ccc9097978317385306a4fa
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 09f7107d3407b06f8aa85196948fe735e03769fa
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35451936"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35868729"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tablecolumn-databodyrange-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablecolumn-databodyrange-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

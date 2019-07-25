@@ -4,12 +4,12 @@ description: Сброс свойства unseenCount всех записей, к
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 6651cf4d8b4812bb1eba2b4d281643606c5d6d58
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 9ac5b15776f23f49619dc19b69429f125035a659
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35442792"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35857918"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
@@ -65,6 +65,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-resetunseencount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-resetunseencount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
