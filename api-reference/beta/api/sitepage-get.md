@@ -5,67 +5,71 @@ ms.date: 03/15/2018
 title: Получение страницы на сайте
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: df9cc84f136e4da7833574082c34ac6224d225da
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: df146936bae0967434fec941c37f49b49768f6ea
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453560"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869574"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="6b70f-102">Получение страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="6b70f-102">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="930ec-102">Получение страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="930ec-102">Get a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6b70f-103">Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="6b70f-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="930ec-103">Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="930ec-103">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [сайта]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="6b70f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6b70f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="930ec-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="930ec-107">Permissions</span></span>
 
-<span data-ttu-id="6b70f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b70f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="930ec-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="930ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6b70f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6b70f-110">Permission type</span></span>      | <span data-ttu-id="6b70f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6b70f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="930ec-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="930ec-110">Permission type</span></span>      | <span data-ttu-id="930ec-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="930ec-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b70f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6b70f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6b70f-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b70f-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6b70f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6b70f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b70f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6b70f-115">Not supported.</span></span>    |
-|<span data-ttu-id="6b70f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6b70f-116">Application</span></span> | <span data-ttu-id="6b70f-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6b70f-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="930ec-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="930ec-112">Delegated (work or school account)</span></span> | <span data-ttu-id="930ec-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="930ec-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="930ec-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="930ec-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="930ec-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="930ec-115">Not supported.</span></span>    |
+|<span data-ttu-id="930ec-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="930ec-116">Application</span></span> | <span data-ttu-id="930ec-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="930ec-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b70f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6b70f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="930ec-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="930ec-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="6b70f-119">Пример</span><span class="sxs-lookup"><span data-stu-id="6b70f-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="930ec-119">Пример</span><span class="sxs-lookup"><span data-stu-id="930ec-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="6b70f-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="6b70f-120">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="930ec-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="930ec-120">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6b70f-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="6b70f-121">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="930ec-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="930ec-121">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6b70f-122">C#</span><span class="sxs-lookup"><span data-stu-id="6b70f-122">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="930ec-122">C#</span><span class="sxs-lookup"><span data-stu-id="930ec-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6b70f-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="6b70f-123">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="930ec-123">Javascript</span><span class="sxs-lookup"><span data-stu-id="930ec-123">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6b70f-124">Цель — C</span><span class="sxs-lookup"><span data-stu-id="6b70f-124">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="930ec-124">Цель — C</span><span class="sxs-lookup"><span data-stu-id="930ec-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="930ec-125">Java</span><span class="sxs-lookup"><span data-stu-id="930ec-125">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="6b70f-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="6b70f-125">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="930ec-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="930ec-126">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
