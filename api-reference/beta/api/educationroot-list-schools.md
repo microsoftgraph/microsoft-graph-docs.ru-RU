@@ -4,12 +4,12 @@ description: Получение списка всех объектов school.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 87b521dd870eaf715d67afc72128e0bc5f006db1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f86f280ad1be9e17fa1010fe8f08f8aae7d05128
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441578"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35860488"
 ---
 # <a name="list-educationschools"></a>Перечисление educationSchools
 
@@ -30,23 +30,23 @@ ms.locfileid: "35441578"
 <!-- { "blockType": "ignored" } -->
 ```http GET /education/schools
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-## Request headers
-| Header       | Value |
+## <a name="request-headers"></a>Заголовки запросов
+| Заголовок       | Значение |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
-## Request body
-Do not supply a request body for this method.
-## Response
-If successful, this method returns a `200 OK` response code and a collection of [educationSchool](../resources/educationschool.md) objects in the response body.
-## Example
-##### Request
-The following is an example of the request.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
+## <a name="response"></a>Отклик
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationSchool](../resources/educationschool.md) в теле отклика.
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
 
-# [HTTP](#tab/http)
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_schools"
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/education/schools
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

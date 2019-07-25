@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта С
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 5a596f51aa64a935fefcfcf85f725d3235f12238
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 91df02cee2bec38d6e4e703066cc06105bee5217
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448297"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880552"
 ---
 # <a name="get-securescorecontrolprofile"></a>Получение объектов secureScoreControlProfile
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescorecontrolprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-securescorecontrolprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
