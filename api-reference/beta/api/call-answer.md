@@ -4,60 +4,60 @@ description: Ответ на входящий вызов.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6220210b88974a7769acb95a8ca62d29b98a33ab
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6966c9804c5a3f7570f2decf6f35090130637786
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35438834"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865014"
 ---
-# <a name="call-answer"></a><span data-ttu-id="3645f-103">вызов: ответ</span><span class="sxs-lookup"><span data-stu-id="3645f-103">call: answer</span></span>
+# <a name="call-answer"></a><span data-ttu-id="32c87-103">вызов: ответ</span><span class="sxs-lookup"><span data-stu-id="32c87-103">call: answer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3645f-104">Ответ на входящий вызов.</span><span class="sxs-lookup"><span data-stu-id="3645f-104">Answer an incoming call.</span></span>
+<span data-ttu-id="32c87-104">Ответ на входящий вызов.</span><span class="sxs-lookup"><span data-stu-id="32c87-104">Answer an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3645f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3645f-105">Permissions</span></span>
-<span data-ttu-id="3645f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3645f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="32c87-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="32c87-105">Permissions</span></span>
+<span data-ttu-id="32c87-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32c87-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3645f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3645f-108">Permission type</span></span> | <span data-ttu-id="3645f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3645f-109">Permissions (from least to most privileged)</span></span>                 |
+| <span data-ttu-id="32c87-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="32c87-108">Permission type</span></span> | <span data-ttu-id="32c87-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="32c87-109">Permissions (from least to most privileged)</span></span>                 |
 | :-------------- | :-----------------------------------------------------------|
-| <span data-ttu-id="3645f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3645f-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3645f-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3645f-111">Not Supported</span></span>                        |
-| <span data-ttu-id="3645f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3645f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3645f-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3645f-113">Not Supported</span></span>                        |
-| <span data-ttu-id="3645f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3645f-114">Application</span></span>     | <span data-ttu-id="3645f-115">Нет</span><span class="sxs-lookup"><span data-stu-id="3645f-115">None</span></span>                                                        |
+| <span data-ttu-id="32c87-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="32c87-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="32c87-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="32c87-111">Not Supported</span></span>                        |
+| <span data-ttu-id="32c87-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="32c87-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32c87-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="32c87-113">Not Supported</span></span>                        |
+| <span data-ttu-id="32c87-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="32c87-114">Application</span></span>     | <span data-ttu-id="32c87-115">Нет</span><span class="sxs-lookup"><span data-stu-id="32c87-115">None</span></span>                                                        |
 
-## <a name="http-request"></a><span data-ttu-id="3645f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3645f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32c87-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="32c87-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
 POST /applications/{id}/calls/{id}/answer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3645f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3645f-117">Request headers</span></span>
-| <span data-ttu-id="3645f-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3645f-118">Name</span></span>          | <span data-ttu-id="3645f-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3645f-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="32c87-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="32c87-117">Request headers</span></span>
+| <span data-ttu-id="32c87-118">Имя</span><span class="sxs-lookup"><span data-stu-id="32c87-118">Name</span></span>          | <span data-ttu-id="32c87-119">Описание</span><span class="sxs-lookup"><span data-stu-id="32c87-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="3645f-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3645f-120">Authorization</span></span> | <span data-ttu-id="3645f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3645f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="32c87-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="32c87-120">Authorization</span></span> | <span data-ttu-id="32c87-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="32c87-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3645f-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3645f-123">Request body</span></span>
-<span data-ttu-id="3645f-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="3645f-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="32c87-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="32c87-123">Request body</span></span>
+<span data-ttu-id="32c87-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="32c87-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="3645f-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="3645f-125">Parameter</span></span>        | <span data-ttu-id="3645f-126">Тип</span><span class="sxs-lookup"><span data-stu-id="3645f-126">Type</span></span>                                     |<span data-ttu-id="3645f-127">Описание</span><span class="sxs-lookup"><span data-stu-id="3645f-127">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="32c87-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="32c87-125">Parameter</span></span>        | <span data-ttu-id="32c87-126">Тип</span><span class="sxs-lookup"><span data-stu-id="32c87-126">Type</span></span>                                     |<span data-ttu-id="32c87-127">Описание</span><span class="sxs-lookup"><span data-stu-id="32c87-127">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="3645f-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="3645f-128">callbackUri</span></span>       |<span data-ttu-id="3645f-129">String</span><span class="sxs-lookup"><span data-stu-id="3645f-129">String</span></span>                                    |<span data-ttu-id="3645f-130">Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы.</span><span class="sxs-lookup"><span data-stu-id="3645f-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="3645f-131">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="3645f-131">(Required)</span></span>                                                               |
-|<span data-ttu-id="3645f-132">Акцептедмодалитиес</span><span class="sxs-lookup"><span data-stu-id="3645f-132">acceptedModalities</span></span>|<span data-ttu-id="3645f-133">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="3645f-133">String collection</span></span>                         |<span data-ttu-id="3645f-134">Список принимаемых модальности.</span><span class="sxs-lookup"><span data-stu-id="3645f-134">The list of accept modalities.</span></span> <span data-ttu-id="3645f-135">Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data`</span><span class="sxs-lookup"><span data-stu-id="3645f-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="3645f-136">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="3645f-136">(Required)</span></span> |
-|<span data-ttu-id="3645f-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="3645f-137">mediaConfig</span></span>       |[<span data-ttu-id="3645f-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="3645f-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="3645f-139">Настройка мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="3645f-139">The media configuration.</span></span> <span data-ttu-id="3645f-140">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="3645f-140">(Required)</span></span>                                                                                                            |
+|<span data-ttu-id="32c87-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="32c87-128">callbackUri</span></span>       |<span data-ttu-id="32c87-129">String</span><span class="sxs-lookup"><span data-stu-id="32c87-129">String</span></span>                                    |<span data-ttu-id="32c87-130">Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы.</span><span class="sxs-lookup"><span data-stu-id="32c87-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="32c87-131">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="32c87-131">(Required)</span></span>                                                               |
+|<span data-ttu-id="32c87-132">Акцептедмодалитиес</span><span class="sxs-lookup"><span data-stu-id="32c87-132">acceptedModalities</span></span>|<span data-ttu-id="32c87-133">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="32c87-133">String collection</span></span>                         |<span data-ttu-id="32c87-134">Список принимаемых модальности.</span><span class="sxs-lookup"><span data-stu-id="32c87-134">The list of accept modalities.</span></span> <span data-ttu-id="32c87-135">Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data`</span><span class="sxs-lookup"><span data-stu-id="32c87-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="32c87-136">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="32c87-136">(Required)</span></span> |
+|<span data-ttu-id="32c87-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="32c87-137">mediaConfig</span></span>       |[<span data-ttu-id="32c87-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="32c87-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="32c87-139">Настройка мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="32c87-139">The media configuration.</span></span> <span data-ttu-id="32c87-140">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="32c87-140">(Required)</span></span>                                                                                                            |
 
-## <a name="response"></a><span data-ttu-id="3645f-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="3645f-141">Response</span></span>
-<span data-ttu-id="3645f-142">Этот метод возвращает `202 Accepted` код отклика.</span><span class="sxs-lookup"><span data-stu-id="3645f-142">This method returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="32c87-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="32c87-141">Response</span></span>
+<span data-ttu-id="32c87-142">Этот метод возвращает `202 Accepted` код отклика.</span><span class="sxs-lookup"><span data-stu-id="32c87-142">This method returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3645f-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="3645f-143">Examples</span></span>
-<span data-ttu-id="3645f-144">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="3645f-144">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="32c87-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="32c87-143">Examples</span></span>
+<span data-ttu-id="32c87-144">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="32c87-144">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3645f-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="3645f-145">Request</span></span>
-<span data-ttu-id="3645f-146">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3645f-146">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="32c87-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="32c87-145">Request</span></span>
+<span data-ttu-id="32c87-146">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="32c87-146">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3645f-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="3645f-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="32c87-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="32c87-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
@@ -78,23 +78,27 @@ Content-Length: 211
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3645f-148">C#</span><span class="sxs-lookup"><span data-stu-id="3645f-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="32c87-148">C#</span><span class="sxs-lookup"><span data-stu-id="32c87-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3645f-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="3645f-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="32c87-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="32c87-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3645f-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3645f-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="32c87-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="32c87-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="32c87-151">Java</span><span class="sxs-lookup"><span data-stu-id="32c87-151">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3645f-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="3645f-151">Response</span></span>
-<span data-ttu-id="3645f-152">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3645f-152">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="32c87-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="32c87-152">Response</span></span>
+<span data-ttu-id="32c87-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="32c87-153">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -105,9 +109,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="3645f-153">Отвечать на звонки по VOIP с размещенными на службах носителями</span><span class="sxs-lookup"><span data-stu-id="3645f-153">Answer VOIP call with service hosted media</span></span>
+### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="32c87-154">Отвечать на звонки по VOIP с размещенными на службах носителями</span><span class="sxs-lookup"><span data-stu-id="32c87-154">Answer VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="3645f-154">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3645f-154">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="32c87-155">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="32c87-155">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -175,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="3645f-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="3645f-155">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="32c87-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="32c87-156">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -207,13 +211,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3645f-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="3645f-156">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="32c87-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="32c87-157">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="3645f-157">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="3645f-157">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="32c87-158">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="32c87-158">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -242,7 +246,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="3645f-158">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="3645f-158">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="32c87-159">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="32c87-159">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -271,9 +275,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="3645f-159">Ответ на звонок VOIP с размещенными на сервере приложениями</span><span class="sxs-lookup"><span data-stu-id="3645f-159">Answer VOIP call with application hosted media</span></span>
+### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="32c87-160">Ответ на звонок VOIP с размещенными на сервере приложениями</span><span class="sxs-lookup"><span data-stu-id="32c87-160">Answer VOIP call with application hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="3645f-160">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3645f-160">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="32c87-161">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="32c87-161">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -328,7 +332,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="3645f-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="3645f-161">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="32c87-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="32c87-162">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -351,13 +355,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3645f-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="3645f-162">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="32c87-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="32c87-163">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="3645f-163">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="3645f-163">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="32c87-164">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="32c87-164">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -386,7 +390,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="3645f-164">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="3645f-164">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="32c87-165">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="32c87-165">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

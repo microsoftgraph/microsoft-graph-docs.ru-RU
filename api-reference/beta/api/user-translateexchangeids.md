@@ -4,30 +4,30 @@ description: Перевод идентификаторов ресурсов, с�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 399792e21a0d32adc90b7693d8d6addcc0328647
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 4f3c529edadf8ff1f41110ad17ce4c59f63545e4
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456682"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866697"
 ---
-# <a name="user-translateexchangeids"></a><span data-ttu-id="5fcde-103">Пользователь: Транслатиксчанжеидс</span><span class="sxs-lookup"><span data-stu-id="5fcde-103">user: translateExchangeIds</span></span>
+# <a name="user-translateexchangeids"></a><span data-ttu-id="830d9-103">Пользователь: Транслатиксчанжеидс</span><span class="sxs-lookup"><span data-stu-id="830d9-103">user: translateExchangeIds</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5fcde-104">Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.</span><span class="sxs-lookup"><span data-stu-id="5fcde-104">Translate identifiers of Outlook-related resources between formats.</span></span>
+<span data-ttu-id="830d9-104">Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.</span><span class="sxs-lookup"><span data-stu-id="830d9-104">Translate identifiers of Outlook-related resources between formats.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5fcde-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5fcde-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="830d9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="830d9-105">Permissions</span></span>
 
-<span data-ttu-id="5fcde-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5fcde-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="830d9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="830d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5fcde-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5fcde-108">Permission type</span></span> | <span data-ttu-id="5fcde-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5fcde-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="830d9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="830d9-108">Permission type</span></span> | <span data-ttu-id="830d9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="830d9-109">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-| <span data-ttu-id="5fcde-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5fcde-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5fcde-111">User. ReadBasic, User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5fcde-111">User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="5fcde-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5fcde-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5fcde-113">User. ReadBasic, User. Read, User. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5fcde-113">User.ReadBasic, User.Read, User.ReadWrite</span></span> |
-| <span data-ttu-id="5fcde-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5fcde-114">Application</span></span> | <span data-ttu-id="5fcde-115">User.Read.All, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5fcde-115">User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="830d9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="830d9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="830d9-111">User. ReadBasic, User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="830d9-111">User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="830d9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="830d9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="830d9-113">User. ReadBasic, User. Read, User. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="830d9-113">User.ReadBasic, User.Read, User.ReadWrite</span></span> |
+| <span data-ttu-id="830d9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="830d9-114">Application</span></span> | <span data-ttu-id="830d9-115">User.Read.All, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="830d9-115">User.Read.All, User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5fcde-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5fcde-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="830d9-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="830d9-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,50 +36,50 @@ POST /me/translateExchangeIds
 POST /users/{id|userPrincipalName}/translateExchangeIds
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5fcde-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5fcde-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="830d9-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="830d9-117">Request headers</span></span>
 
-| <span data-ttu-id="5fcde-118">Имя</span><span class="sxs-lookup"><span data-stu-id="5fcde-118">Name</span></span> | <span data-ttu-id="5fcde-119">Значение</span><span class="sxs-lookup"><span data-stu-id="5fcde-119">Value</span></span> |
+| <span data-ttu-id="830d9-118">Имя</span><span class="sxs-lookup"><span data-stu-id="830d9-118">Name</span></span> | <span data-ttu-id="830d9-119">Значение</span><span class="sxs-lookup"><span data-stu-id="830d9-119">Value</span></span> |
 |:-----|:------|
-| <span data-ttu-id="5fcde-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5fcde-120">Authorization</span></span> | <span data-ttu-id="5fcde-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5fcde-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="830d9-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="830d9-120">Authorization</span></span> | <span data-ttu-id="830d9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="830d9-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5fcde-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5fcde-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="830d9-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="830d9-123">Request body</span></span>
 
-| <span data-ttu-id="5fcde-124">Параметр</span><span class="sxs-lookup"><span data-stu-id="5fcde-124">Parameter</span></span> | <span data-ttu-id="5fcde-125">Тип</span><span class="sxs-lookup"><span data-stu-id="5fcde-125">Type</span></span> | <span data-ttu-id="5fcde-126">Описание</span><span class="sxs-lookup"><span data-stu-id="5fcde-126">Description</span></span> |
+| <span data-ttu-id="830d9-124">Параметр</span><span class="sxs-lookup"><span data-stu-id="830d9-124">Parameter</span></span> | <span data-ttu-id="830d9-125">Тип</span><span class="sxs-lookup"><span data-stu-id="830d9-125">Type</span></span> | <span data-ttu-id="830d9-126">Описание</span><span class="sxs-lookup"><span data-stu-id="830d9-126">Description</span></span> |
 |:----------|:-----|:------------|
-| <span data-ttu-id="5fcde-127">Инпутидс</span><span class="sxs-lookup"><span data-stu-id="5fcde-127">inputIds</span></span> | <span data-ttu-id="5fcde-128">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="5fcde-128">String collection</span></span> | <span data-ttu-id="5fcde-129">Коллекция идентификаторов для преобразования.</span><span class="sxs-lookup"><span data-stu-id="5fcde-129">A collection of identifiers to convert.</span></span> <span data-ttu-id="5fcde-130">Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике.</span><span class="sxs-lookup"><span data-stu-id="5fcde-130">All identifiers in the collection MUST have the same source ID type, and MUST be for items in the same mailbox.</span></span> <span data-ttu-id="5fcde-131">Максимальный размер этой коллекции составляет 1000 строк.</span><span class="sxs-lookup"><span data-stu-id="5fcde-131">Maximum size of this collection is 1000 strings.</span></span> |
-| <span data-ttu-id="5fcde-132">Саурцеидтипе</span><span class="sxs-lookup"><span data-stu-id="5fcde-132">sourceIdType</span></span> | <span data-ttu-id="5fcde-133">Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="5fcde-133">exchangeIdFormat</span></span> | <span data-ttu-id="5fcde-134">Тип идентификатора идентификаторов в `InputIds` параметре.</span><span class="sxs-lookup"><span data-stu-id="5fcde-134">The ID type of the identifiers in the `InputIds` parameter.</span></span> |
-| <span data-ttu-id="5fcde-135">Таржетидтипе</span><span class="sxs-lookup"><span data-stu-id="5fcde-135">targetIdType</span></span> | <span data-ttu-id="5fcde-136">Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="5fcde-136">exchangeIdFormat</span></span> | <span data-ttu-id="5fcde-137">Запрошенный тип идентификатора для преобразования.</span><span class="sxs-lookup"><span data-stu-id="5fcde-137">The requested ID type to convert to.</span></span> |
+| <span data-ttu-id="830d9-127">Инпутидс</span><span class="sxs-lookup"><span data-stu-id="830d9-127">inputIds</span></span> | <span data-ttu-id="830d9-128">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="830d9-128">String collection</span></span> | <span data-ttu-id="830d9-129">Коллекция идентификаторов для преобразования.</span><span class="sxs-lookup"><span data-stu-id="830d9-129">A collection of identifiers to convert.</span></span> <span data-ttu-id="830d9-130">Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике.</span><span class="sxs-lookup"><span data-stu-id="830d9-130">All identifiers in the collection MUST have the same source ID type, and MUST be for items in the same mailbox.</span></span> <span data-ttu-id="830d9-131">Максимальный размер этой коллекции составляет 1000 строк.</span><span class="sxs-lookup"><span data-stu-id="830d9-131">Maximum size of this collection is 1000 strings.</span></span> |
+| <span data-ttu-id="830d9-132">Саурцеидтипе</span><span class="sxs-lookup"><span data-stu-id="830d9-132">sourceIdType</span></span> | <span data-ttu-id="830d9-133">Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="830d9-133">exchangeIdFormat</span></span> | <span data-ttu-id="830d9-134">Тип идентификатора идентификаторов в `InputIds` параметре.</span><span class="sxs-lookup"><span data-stu-id="830d9-134">The ID type of the identifiers in the `InputIds` parameter.</span></span> |
+| <span data-ttu-id="830d9-135">Таржетидтипе</span><span class="sxs-lookup"><span data-stu-id="830d9-135">targetIdType</span></span> | <span data-ttu-id="830d9-136">Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="830d9-136">exchangeIdFormat</span></span> | <span data-ttu-id="830d9-137">Запрошенный тип идентификатора для преобразования.</span><span class="sxs-lookup"><span data-stu-id="830d9-137">The requested ID type to convert to.</span></span> |
 
-### <a name="exchangeidformat-values"></a><span data-ttu-id="5fcde-138">значения Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="5fcde-138">exchangeIdFormat values</span></span>
+### <a name="exchangeidformat-values"></a><span data-ttu-id="830d9-138">значения Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="830d9-138">exchangeIdFormat values</span></span>
 
-| <span data-ttu-id="5fcde-139">Значения</span><span class="sxs-lookup"><span data-stu-id="5fcde-139">Values</span></span> | <span data-ttu-id="5fcde-140">Описание</span><span class="sxs-lookup"><span data-stu-id="5fcde-140">Description</span></span> |
+| <span data-ttu-id="830d9-139">Значения</span><span class="sxs-lookup"><span data-stu-id="830d9-139">Values</span></span> | <span data-ttu-id="830d9-140">Описание</span><span class="sxs-lookup"><span data-stu-id="830d9-140">Description</span></span> |
 |:-------|:------------|
-| <span data-ttu-id="5fcde-141">Код</span><span class="sxs-lookup"><span data-stu-id="5fcde-141">entryId</span></span> | <span data-ttu-id="5fcde-142">Формат идентификатора двоичной записи, используемый клиентами MAPI.</span><span class="sxs-lookup"><span data-stu-id="5fcde-142">The binary entry ID format used by MAPI clients.</span></span> |
-| <span data-ttu-id="5fcde-143">Евсид</span><span class="sxs-lookup"><span data-stu-id="5fcde-143">ewsId</span></span> | <span data-ttu-id="5fcde-144">Формат идентификатора, используемый клиентами веб-служб Exchange.</span><span class="sxs-lookup"><span data-stu-id="5fcde-144">The ID format used by Exchange Web Services clients.</span></span> |
-| <span data-ttu-id="5fcde-145">Иммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="5fcde-145">immutableEntryId</span></span> | <span data-ttu-id="5fcde-146">Двоичный формат неизменяемого идентификатора, совместимый с MAPI.</span><span class="sxs-lookup"><span data-stu-id="5fcde-146">The binary MAPI-compatible immutable ID format.</span></span> |
-| <span data-ttu-id="5fcde-147">Рестид</span><span class="sxs-lookup"><span data-stu-id="5fcde-147">restId</span></span> | <span data-ttu-id="5fcde-148">Формат идентификатора по умолчанию, используемый Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="5fcde-148">The default ID format used by Microsoft Graph.</span></span> |
-| <span data-ttu-id="5fcde-149">Рестиммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="5fcde-149">restImmutableEntryId</span></span> | <span data-ttu-id="5fcde-150">Неизменяемый формат идентификатора, используемый Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="5fcde-150">The immutable ID format used by Microsoft Graph.</span></span> |
+| <span data-ttu-id="830d9-141">Код</span><span class="sxs-lookup"><span data-stu-id="830d9-141">entryId</span></span> | <span data-ttu-id="830d9-142">Формат идентификатора двоичной записи, используемый клиентами MAPI.</span><span class="sxs-lookup"><span data-stu-id="830d9-142">The binary entry ID format used by MAPI clients.</span></span> |
+| <span data-ttu-id="830d9-143">Евсид</span><span class="sxs-lookup"><span data-stu-id="830d9-143">ewsId</span></span> | <span data-ttu-id="830d9-144">Формат идентификатора, используемый клиентами веб-служб Exchange.</span><span class="sxs-lookup"><span data-stu-id="830d9-144">The ID format used by Exchange Web Services clients.</span></span> |
+| <span data-ttu-id="830d9-145">Иммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="830d9-145">immutableEntryId</span></span> | <span data-ttu-id="830d9-146">Двоичный формат неизменяемого идентификатора, совместимый с MAPI.</span><span class="sxs-lookup"><span data-stu-id="830d9-146">The binary MAPI-compatible immutable ID format.</span></span> |
+| <span data-ttu-id="830d9-147">Рестид</span><span class="sxs-lookup"><span data-stu-id="830d9-147">restId</span></span> | <span data-ttu-id="830d9-148">Формат идентификатора по умолчанию, используемый Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="830d9-148">The default ID format used by Microsoft Graph.</span></span> |
+| <span data-ttu-id="830d9-149">Рестиммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="830d9-149">restImmutableEntryId</span></span> | <span data-ttu-id="830d9-150">Неизменяемый формат идентификатора, используемый Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="830d9-150">The immutable ID format used by Microsoft Graph.</span></span> |
 
-<span data-ttu-id="5fcde-151">Двоичные форматы (`entryId` и `immutableEntryId`) являются безопасными в URL-адресах в кодировке Base64.</span><span class="sxs-lookup"><span data-stu-id="5fcde-151">The binary formats (`entryId` and `immutableEntryId`) are URL-safe base64 encoded.</span></span> <span data-ttu-id="5fcde-152">Безопасность URL реализована путем изменения кодировки base64 двоичных данных следующим образом:</span><span class="sxs-lookup"><span data-stu-id="5fcde-152">URL-safeness is implemented by modifying the base64 encoding of the binary data in the following way:</span></span>
+<span data-ttu-id="830d9-151">Двоичные форматы (`entryId` и `immutableEntryId`) являются безопасными в URL-адресах в кодировке Base64.</span><span class="sxs-lookup"><span data-stu-id="830d9-151">The binary formats (`entryId` and `immutableEntryId`) are URL-safe base64 encoded.</span></span> <span data-ttu-id="830d9-152">Безопасность URL реализована путем изменения кодировки base64 двоичных данных следующим образом:</span><span class="sxs-lookup"><span data-stu-id="830d9-152">URL-safeness is implemented by modifying the base64 encoding of the binary data in the following way:</span></span>
 
-- <span data-ttu-id="5fcde-153">Замените `+` на`-`</span><span class="sxs-lookup"><span data-stu-id="5fcde-153">Replace `+` with `-`</span></span>
-- <span data-ttu-id="5fcde-154">Замените `/` на`_`</span><span class="sxs-lookup"><span data-stu-id="5fcde-154">Replace `/` with `_`</span></span>
-- <span data-ttu-id="5fcde-155">Удалите все замыкающие символы заполнения (`=`).</span><span class="sxs-lookup"><span data-stu-id="5fcde-155">Remove any trailing padding characters (`=`)</span></span>
-- <span data-ttu-id="5fcde-156">Добавьте целое число в конец строки, указывающую количество заполненных символов в исходной (`0`, `1`или `2`).</span><span class="sxs-lookup"><span data-stu-id="5fcde-156">Add an integer to the end of the string indicating how many padding characters were in the original (`0`, `1`, or `2`)</span></span>
+- <span data-ttu-id="830d9-153">Замените `+` на`-`</span><span class="sxs-lookup"><span data-stu-id="830d9-153">Replace `+` with `-`</span></span>
+- <span data-ttu-id="830d9-154">Замените `/` на`_`</span><span class="sxs-lookup"><span data-stu-id="830d9-154">Replace `/` with `_`</span></span>
+- <span data-ttu-id="830d9-155">Удалите все замыкающие символы заполнения (`=`).</span><span class="sxs-lookup"><span data-stu-id="830d9-155">Remove any trailing padding characters (`=`)</span></span>
+- <span data-ttu-id="830d9-156">Добавьте целое число в конец строки, указывающую количество заполненных символов в исходной (`0`, `1`или `2`).</span><span class="sxs-lookup"><span data-stu-id="830d9-156">Add an integer to the end of the string indicating how many padding characters were in the original (`0`, `1`, or `2`)</span></span>
 
-## <a name="response"></a><span data-ttu-id="5fcde-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fcde-157">Response</span></span>
+## <a name="response"></a><span data-ttu-id="830d9-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="830d9-157">Response</span></span>
 
-<span data-ttu-id="5fcde-158">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и коллекцию [конвертидресулт](../resources/convertidresult.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5fcde-158">If successful, this method returns `200 OK` response code and a [convertIdResult](../resources/convertidresult.md) collection in the response body.</span></span>
+<span data-ttu-id="830d9-158">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и коллекцию [конвертидресулт](../resources/convertidresult.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="830d9-158">If successful, this method returns `200 OK` response code and a [convertIdResult](../resources/convertidresult.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5fcde-159">Пример</span><span class="sxs-lookup"><span data-stu-id="5fcde-159">Example</span></span>
+## <a name="example"></a><span data-ttu-id="830d9-159">Пример</span><span class="sxs-lookup"><span data-stu-id="830d9-159">Example</span></span>
 
-<span data-ttu-id="5fcde-160">В приведенном ниже примере показано, как преобразовать несколько идентификаторов из стандартного формата REST API`restId`() в неизменяемый формат REST`restImmutableEntryId`().</span><span class="sxs-lookup"><span data-stu-id="5fcde-160">The following example shows how to convert multiple identifiers from the normal REST API format (`restId`) to the REST immutable format (`restImmutableEntryId`).</span></span>
+<span data-ttu-id="830d9-160">В приведенном ниже примере показано, как преобразовать несколько идентификаторов из стандартного формата REST API`restId`() в неизменяемый формат REST`restImmutableEntryId`().</span><span class="sxs-lookup"><span data-stu-id="830d9-160">The following example shows how to convert multiple identifiers from the normal REST API format (`restId`) to the REST immutable format (`restImmutableEntryId`).</span></span>
 
-### <a name="request"></a><span data-ttu-id="5fcde-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="5fcde-161">Request</span></span>
+### <a name="request"></a><span data-ttu-id="830d9-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="830d9-161">Request</span></span>
 
-<span data-ttu-id="5fcde-162">Ниже представлен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5fcde-162">Here is the example request.</span></span>
+<span data-ttu-id="830d9-162">Ниже представлен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="830d9-162">Here is the example request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5fcde-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="5fcde-163">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="830d9-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="830d9-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_translateexchangeids"
@@ -98,24 +98,28 @@ Content-Type: application/json
   "targetIdType": "restImmutableEntryId"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5fcde-164">C#</span><span class="sxs-lookup"><span data-stu-id="5fcde-164">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="830d9-164">C#</span><span class="sxs-lookup"><span data-stu-id="830d9-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-translateexchangeids-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5fcde-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="5fcde-165">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="830d9-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="830d9-165">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-translateexchangeids-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5fcde-166">Цель — C</span><span class="sxs-lookup"><span data-stu-id="5fcde-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="830d9-166">Цель — C</span><span class="sxs-lookup"><span data-stu-id="830d9-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-translateexchangeids-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="830d9-167">Java</span><span class="sxs-lookup"><span data-stu-id="830d9-167">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5fcde-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fcde-167">Response</span></span>
+### <a name="response"></a><span data-ttu-id="830d9-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="830d9-168">Response</span></span>
 
-<span data-ttu-id="5fcde-168">Ниже приведен пример ответа</span><span class="sxs-lookup"><span data-stu-id="5fcde-168">Here is the example response</span></span>
+<span data-ttu-id="830d9-169">Ниже приведен пример ответа</span><span class="sxs-lookup"><span data-stu-id="830d9-169">Here is the example response</span></span>
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.convertIdResult",
