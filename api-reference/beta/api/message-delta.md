@@ -4,12 +4,12 @@ description: Получение списка сообщений, которые 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7b093d809ceb4df70b191ce9f38fb7cf594b4675
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e2cf07046d12c0b7d13abed4723a8141f69ab972
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449766"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879652"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -26,7 +26,7 @@ ms.locfileid: "35449766"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
-|Для приложений | Mail.Read, Mail.ReadWrite |
+|Для приложений | Mail. ReadBasic. ALL, mail. Read, mail. ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -89,6 +89,10 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -128,7 +132,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Дополнительные ресурсы
+### <a name="see-also"></a>См. также
 
 - [Запрос изменений Microsoft Graph](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)

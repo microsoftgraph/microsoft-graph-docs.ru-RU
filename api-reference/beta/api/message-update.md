@@ -4,12 +4,12 @@ description: Обновление свойств объекта сообщени
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 529d352d82c1dfaac46e6e8e14b37ebe376669e9
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ac75c8fe517a7e3c13316f2d733ab2b35dece1fa
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447930"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35879368"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -98,6 +98,10 @@ Content-length: 248
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-message-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
@@ -126,7 +130,7 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
