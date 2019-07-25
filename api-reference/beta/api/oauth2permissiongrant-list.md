@@ -2,12 +2,12 @@
 title: Перечисление oauth2PermissionGrants
 description: Получение списка объектов oauth2PermissionGrant.
 localization_priority: Normal
-ms.openlocfilehash: 232a1ae55cafc6928f068898388b02364a66f2d1
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b6ec733c73d281e64978b11ebdf3c43d9eb94378
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450067"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878914"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-oauth2permissiongrants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта **
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f0423d81af6d57dc00de511a07be950f89c5bb46
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dc323f7a1477095157e78fc3af701dfa794dd1c5
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456563"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35870960"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-get-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
