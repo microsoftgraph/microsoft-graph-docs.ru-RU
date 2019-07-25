@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта di
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f70e9fac71b9ddaf74ec1f9d0556abb5328b4451
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 737c5d9d6abb4164d3df5509cc2e6d0577e6fbe2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455954"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35882750"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryobject-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryobject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
