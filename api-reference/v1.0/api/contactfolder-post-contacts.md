@@ -4,28 +4,28 @@ description: Добавление контакта в корневую папк�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fafc6759f89c219e2d4fcbf6c32b4589bf25543b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: dc0dfc81b3616cdd1c898e42b3011674d601fd6e
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35443030"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883842"
 ---
-# <a name="create-contact"></a><span data-ttu-id="7cf0c-103">Создание контакта</span><span class="sxs-lookup"><span data-stu-id="7cf0c-103">Create contact</span></span>
+# <a name="create-contact"></a><span data-ttu-id="7e353-103">Создание контакта</span><span class="sxs-lookup"><span data-stu-id="7e353-103">Create contact</span></span>
 
-<span data-ttu-id="7cf0c-104">Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-104">Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.</span></span>
+<span data-ttu-id="7e353-104">Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.</span><span class="sxs-lookup"><span data-stu-id="7e353-104">Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7cf0c-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7cf0c-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7e353-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7e353-105">Permissions</span></span>
 
-<span data-ttu-id="7cf0c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cf0c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7e353-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e353-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7cf0c-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7cf0c-108">Permission type</span></span>      | <span data-ttu-id="7cf0c-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7cf0c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7e353-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7e353-108">Permission type</span></span>      | <span data-ttu-id="7e353-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7e353-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7cf0c-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7cf0c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7cf0c-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7cf0c-111">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="7cf0c-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7cf0c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cf0c-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7cf0c-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="7cf0c-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7cf0c-114">Application</span></span> | <span data-ttu-id="7cf0c-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7cf0c-115">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="7e353-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7e353-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7e353-111">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7e353-111">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="7e353-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7e353-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e353-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7e353-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="7e353-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7e353-114">Application</span></span> | <span data-ttu-id="7e353-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7e353-115">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7cf0c-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7cf0c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7e353-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7e353-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,28 +39,28 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="7cf0c-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7cf0c-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7e353-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7e353-117">Request headers</span></span>
 
-| <span data-ttu-id="7cf0c-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7cf0c-118">Header</span></span>       | <span data-ttu-id="7cf0c-119">Значение</span><span class="sxs-lookup"><span data-stu-id="7cf0c-119">Value</span></span> |
+| <span data-ttu-id="7e353-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7e353-118">Header</span></span>       | <span data-ttu-id="7e353-119">Значение</span><span class="sxs-lookup"><span data-stu-id="7e353-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7cf0c-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7cf0c-120">Authorization</span></span>  | <span data-ttu-id="7cf0c-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7cf0c-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7cf0c-123">Content-Type</span></span>  | <span data-ttu-id="7cf0c-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="7e353-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7e353-120">Authorization</span></span>  | <span data-ttu-id="7e353-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7e353-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7e353-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7e353-123">Content-Type</span></span>  | <span data-ttu-id="7e353-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7e353-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7cf0c-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7cf0c-126">Request body</span></span>
-<span data-ttu-id="7cf0c-127">В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-127">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7e353-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7e353-126">Request body</span></span>
+<span data-ttu-id="7e353-127">В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7e353-127">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7cf0c-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cf0c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7e353-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e353-128">Response</span></span>
 
-<span data-ttu-id="7cf0c-129">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [Contact](../resources/contact.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-129">If successful, this method returns `201 Created` response code and the [Contact](../resources/contact.md) object in the response body.</span></span>
+<span data-ttu-id="7e353-129">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [Contact](../resources/contact.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="7e353-129">If successful, this method returns `201 Created` response code and the [Contact](../resources/contact.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7cf0c-130">Пример</span><span class="sxs-lookup"><span data-stu-id="7cf0c-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7e353-130">Пример</span><span class="sxs-lookup"><span data-stu-id="7e353-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7cf0c-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="7cf0c-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7e353-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="7e353-131">Request</span></span>
 
-<span data-ttu-id="7cf0c-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-132">Here is an example of the request.</span></span>
+<span data-ttu-id="7e353-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7e353-132">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7cf0c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="7cf0c-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7e353-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e353-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_contact_from_contactfolder"
@@ -80,16 +80,20 @@ Content-length: 210
   "initials": "initials-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7cf0c-134">C#</span><span class="sxs-lookup"><span data-stu-id="7cf0c-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7e353-134">C#</span><span class="sxs-lookup"><span data-stu-id="7e353-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-contact-from-contactfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7cf0c-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="7cf0c-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e353-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="7e353-135">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-contact-from-contactfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7cf0c-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7cf0c-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e353-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7e353-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-contact-from-contactfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7e353-137">Java</span><span class="sxs-lookup"><span data-stu-id="7e353-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-contactfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -97,11 +101,11 @@ Content-length: 210
 
 <br/>
 
-<span data-ttu-id="7cf0c-137">В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-137">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
+<span data-ttu-id="7e353-138">В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7e353-138">In the request body, supply a JSON representation of the [Contact](../resources/contact.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="7cf0c-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cf0c-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7e353-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e353-139">Response</span></span>
 
-<span data-ttu-id="7cf0c-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-139">Here is an example of the response.</span></span> <span data-ttu-id="7cf0c-140">**Примечание.** Показанный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-140">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="7cf0c-141">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7cf0c-141">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7e353-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7e353-140">Here is an example of the response.</span></span> <span data-ttu-id="7e353-141">**Примечание.** Показанный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="7e353-141">**Note:** The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="7e353-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7e353-142">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
