@@ -4,32 +4,32 @@ description: Получение числа уникальных пользова
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: bfbec4ba408a61e014a069c6a78569865cfb301d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 77de092d01aa7d80b1ff097cb5e17505b20fec5c
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35446979"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35873910"
 ---
-# <a name="reportroot-getemailappusageusercounts"></a><span data-ttu-id="6031e-103">reportRoot: getEmailAppUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="6031e-103">reportRoot: getEmailAppUsageUserCounts</span></span>
+# <a name="reportroot-getemailappusageusercounts"></a><span data-ttu-id="ed8a2-103">reportRoot: getEmailAppUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="ed8a2-103">reportRoot: getEmailAppUsageUserCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6031e-104">Получение числа уникальных пользователей, которые подключались к Exchange Online с помощью приложения электронной почты.</span><span class="sxs-lookup"><span data-stu-id="6031e-104">Get the count of unique users that connected to Exchange Online using any email app.</span></span>
+<span data-ttu-id="ed8a2-104">Получение числа уникальных пользователей, которые подключались к Exchange Online с помощью приложения электронной почты.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-104">Get the count of unique users that connected to Exchange Online using any email app.</span></span>
 
-> <span data-ttu-id="6031e-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Центре администрирования Office 365 — использование почтовых приложений](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span><span class="sxs-lookup"><span data-stu-id="6031e-105">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
+> <span data-ttu-id="ed8a2-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Центре администрирования Office 365 — использование почтовых приложений](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span><span class="sxs-lookup"><span data-stu-id="ed8a2-105">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6031e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6031e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed8a2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ed8a2-106">Permissions</span></span>
 
-<span data-ttu-id="6031e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6031e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ed8a2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ed8a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6031e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6031e-109">Permission type</span></span>                        | <span data-ttu-id="6031e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6031e-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ed8a2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ed8a2-109">Permission type</span></span>                        | <span data-ttu-id="ed8a2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="6031e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6031e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="6031e-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6031e-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="6031e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6031e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6031e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6031e-114">Not supported.</span></span>                           |
-| <span data-ttu-id="6031e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6031e-115">Application</span></span>                            | <span data-ttu-id="6031e-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6031e-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="ed8a2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ed8a2-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ed8a2-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="ed8a2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed8a2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-114">Not supported.</span></span>                           |
+| <span data-ttu-id="ed8a2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ed8a2-115">Application</span></span>                            | <span data-ttu-id="ed8a2-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ed8a2-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="6031e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6031e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed8a2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ed8a2-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -37,61 +37,61 @@ ms.locfileid: "35446979"
 GET /reports/getEmailAppUsageUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="6031e-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="6031e-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="ed8a2-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="ed8a2-118">Function parameters</span></span>
 
-<span data-ttu-id="6031e-119">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="6031e-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="ed8a2-119">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="6031e-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="6031e-120">Parameter</span></span> | <span data-ttu-id="6031e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="6031e-121">Type</span></span>   | <span data-ttu-id="6031e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="6031e-122">Description</span></span>                              |
+| <span data-ttu-id="ed8a2-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="ed8a2-120">Parameter</span></span> | <span data-ttu-id="ed8a2-121">Тип</span><span class="sxs-lookup"><span data-stu-id="ed8a2-121">Type</span></span>   | <span data-ttu-id="ed8a2-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ed8a2-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="6031e-123">period</span><span class="sxs-lookup"><span data-stu-id="6031e-123">period</span></span>    | <span data-ttu-id="6031e-124">string</span><span class="sxs-lookup"><span data-stu-id="6031e-124">string</span></span> | <span data-ttu-id="6031e-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="6031e-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="6031e-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="6031e-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="6031e-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="6031e-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="6031e-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6031e-128">Required.</span></span> |
+| <span data-ttu-id="ed8a2-123">period</span><span class="sxs-lookup"><span data-stu-id="ed8a2-123">period</span></span>    | <span data-ttu-id="ed8a2-124">string</span><span class="sxs-lookup"><span data-stu-id="ed8a2-124">string</span></span> | <span data-ttu-id="ed8a2-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="ed8a2-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="ed8a2-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="ed8a2-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-128">Required.</span></span> |
 
-<span data-ttu-id="6031e-129">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="6031e-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="6031e-130">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="6031e-130">The default output type is text/csv.</span></span> <span data-ttu-id="6031e-131">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="6031e-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="ed8a2-129">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="ed8a2-130">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-130">The default output type is text/csv.</span></span> <span data-ttu-id="ed8a2-131">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6031e-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6031e-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ed8a2-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ed8a2-132">Request headers</span></span>
 
-| <span data-ttu-id="6031e-133">Имя</span><span class="sxs-lookup"><span data-stu-id="6031e-133">Name</span></span>          | <span data-ttu-id="6031e-134">Описание</span><span class="sxs-lookup"><span data-stu-id="6031e-134">Description</span></span>               |
+| <span data-ttu-id="ed8a2-133">Имя</span><span class="sxs-lookup"><span data-stu-id="ed8a2-133">Name</span></span>          | <span data-ttu-id="ed8a2-134">Описание</span><span class="sxs-lookup"><span data-stu-id="ed8a2-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="6031e-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6031e-135">Authorization</span></span> | <span data-ttu-id="6031e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6031e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ed8a2-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ed8a2-135">Authorization</span></span> | <span data-ttu-id="ed8a2-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="6031e-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="6031e-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ed8a2-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed8a2-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="6031e-139">CSV</span><span class="sxs-lookup"><span data-stu-id="6031e-139">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="ed8a2-139">CSV</span><span class="sxs-lookup"><span data-stu-id="ed8a2-139">CSV</span></span>
 
-<span data-ttu-id="6031e-140">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="6031e-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="6031e-141">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="6031e-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="ed8a2-140">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="ed8a2-141">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="6031e-142">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="6031e-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="ed8a2-142">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="6031e-143">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="6031e-143">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="ed8a2-143">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="ed8a2-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="6031e-144">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="6031e-144">Report Refresh Date</span></span>
-- <span data-ttu-id="6031e-145">Mail For Mac (Mail для Mac)</span><span class="sxs-lookup"><span data-stu-id="6031e-145">Mail For Mac</span></span>
-- <span data-ttu-id="6031e-146">"Outlook For Mac" (Outlook для Mac);</span><span class="sxs-lookup"><span data-stu-id="6031e-146">Outlook For Mac</span></span>
-- <span data-ttu-id="6031e-147">"Outlook For Windows" (Outlook для Windows);</span><span class="sxs-lookup"><span data-stu-id="6031e-147">Outlook For Windows</span></span>
-- <span data-ttu-id="6031e-148">"Outlook For Mobile" (Outlook для мобильных устройств);</span><span class="sxs-lookup"><span data-stu-id="6031e-148">Outlook For Mobile</span></span>
-- <span data-ttu-id="6031e-149">"Other For Mobile" (Другое для мобильных устройств);</span><span class="sxs-lookup"><span data-stu-id="6031e-149">Other For Mobile</span></span>
-- <span data-ttu-id="6031e-150">"Outlook For Web" (Outlook для браузера);</span><span class="sxs-lookup"><span data-stu-id="6031e-150">Outlook For Web</span></span>
-- <span data-ttu-id="6031e-151">"POP3 App" (Приложение с поддержкой POP3);</span><span class="sxs-lookup"><span data-stu-id="6031e-151">POP3 App</span></span>
-- <span data-ttu-id="6031e-152">"IMAP4 App" (Приложение с поддержкой IMAP4);</span><span class="sxs-lookup"><span data-stu-id="6031e-152">IMAP4 App</span></span>
-- <span data-ttu-id="6031e-153">SMTP App (Приложение с поддержкой SMTP)</span><span class="sxs-lookup"><span data-stu-id="6031e-153">SMTP App</span></span>
-- <span data-ttu-id="6031e-154">Report Date (Дата отчета)</span><span class="sxs-lookup"><span data-stu-id="6031e-154">Report Date</span></span>
-- <span data-ttu-id="6031e-155">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="6031e-155">Report Period</span></span>
+- <span data-ttu-id="ed8a2-144">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-144">Report Refresh Date</span></span>
+- <span data-ttu-id="ed8a2-145">Mail For Mac (Mail для Mac)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-145">Mail For Mac</span></span>
+- <span data-ttu-id="ed8a2-146">"Outlook For Mac" (Outlook для Mac);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-146">Outlook For Mac</span></span>
+- <span data-ttu-id="ed8a2-147">"Outlook For Windows" (Outlook для Windows);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-147">Outlook For Windows</span></span>
+- <span data-ttu-id="ed8a2-148">"Outlook For Mobile" (Outlook для мобильных устройств);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-148">Outlook For Mobile</span></span>
+- <span data-ttu-id="ed8a2-149">"Other For Mobile" (Другое для мобильных устройств);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-149">Other For Mobile</span></span>
+- <span data-ttu-id="ed8a2-150">"Outlook For Web" (Outlook для браузера);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-150">Outlook For Web</span></span>
+- <span data-ttu-id="ed8a2-151">"POP3 App" (Приложение с поддержкой POP3);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-151">POP3 App</span></span>
+- <span data-ttu-id="ed8a2-152">"IMAP4 App" (Приложение с поддержкой IMAP4);</span><span class="sxs-lookup"><span data-stu-id="ed8a2-152">IMAP4 App</span></span>
+- <span data-ttu-id="ed8a2-153">SMTP App (Приложение с поддержкой SMTP)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-153">SMTP App</span></span>
+- <span data-ttu-id="ed8a2-154">Report Date (Дата отчета)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-154">Report Date</span></span>
+- <span data-ttu-id="ed8a2-155">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="ed8a2-155">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="6031e-156">JSON</span><span class="sxs-lookup"><span data-stu-id="6031e-156">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="ed8a2-156">JSON</span><span class="sxs-lookup"><span data-stu-id="ed8a2-156">JSON</span></span>
 
-<span data-ttu-id="6031e-157">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[емаилаппусажеусеркаунтс](../resources/emailappusageusercounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6031e-157">If successful, this method returns a `200 OK` response code and an **[emailAppUsageUserCounts](../resources/emailappusageusercounts.md)** object in the response body.</span></span>
+<span data-ttu-id="ed8a2-157">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[емаилаппусажеусеркаунтс](../resources/emailappusageusercounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-157">If successful, this method returns a `200 OK` response code and an **[emailAppUsageUserCounts](../resources/emailappusageusercounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6031e-158">Пример</span><span class="sxs-lookup"><span data-stu-id="6031e-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ed8a2-158">Пример</span><span class="sxs-lookup"><span data-stu-id="ed8a2-158">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="6031e-159">CSV</span><span class="sxs-lookup"><span data-stu-id="6031e-159">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="ed8a2-159">CSV</span><span class="sxs-lookup"><span data-stu-id="ed8a2-159">CSV</span></span>
 
-<span data-ttu-id="6031e-160">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="6031e-160">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="ed8a2-160">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-160">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6031e-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="6031e-161">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ed8a2-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="ed8a2-161">Request</span></span>
 
-<span data-ttu-id="6031e-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6031e-162">The following is an example of the request.</span></span>
+<span data-ttu-id="ed8a2-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-162">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6031e-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="6031e-163">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ed8a2-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="ed8a2-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getemailappusageusercounts_csv"
@@ -100,24 +100,28 @@ GET /reports/getEmailAppUsageUserCounts(period='{period_value}')
 ```http
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserCounts(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6031e-164">C#</span><span class="sxs-lookup"><span data-stu-id="6031e-164">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ed8a2-164">C#</span><span class="sxs-lookup"><span data-stu-id="ed8a2-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getemailappusageusercounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6031e-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="6031e-165">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ed8a2-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="ed8a2-165">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getemailappusageusercounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6031e-166">Цель — C</span><span class="sxs-lookup"><span data-stu-id="6031e-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ed8a2-166">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ed8a2-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageusercounts-csv-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="ed8a2-167">Java</span><span class="sxs-lookup"><span data-stu-id="ed8a2-167">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageusercounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6031e-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="6031e-167">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ed8a2-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed8a2-168">Response</span></span>
 
-<span data-ttu-id="6031e-168">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6031e-168">The following is an example of the response.</span></span>
+<span data-ttu-id="ed8a2-169">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-169">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -127,7 +131,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="6031e-169">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="6031e-169">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="ed8a2-170">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-170">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,16 +146,16 @@ Content-Type: application/octet-stream
 Report Refresh Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For Mobile,Other For Mobile,Outlook For Web,POP3 App,IMAP4 App,SMTP App,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="6031e-170">JSON</span><span class="sxs-lookup"><span data-stu-id="6031e-170">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="ed8a2-171">JSON</span><span class="sxs-lookup"><span data-stu-id="ed8a2-171">JSON</span></span>
 
-<span data-ttu-id="6031e-171">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="6031e-171">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="ed8a2-172">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-172">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6031e-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="6031e-172">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ed8a2-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="ed8a2-173">Request</span></span>
 
-<span data-ttu-id="6031e-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6031e-173">The following is an example of the request.</span></span>
+<span data-ttu-id="ed8a2-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-174">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6031e-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="6031e-174">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ed8a2-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="ed8a2-175">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getemailappusageusercounts_json"
@@ -160,26 +164,30 @@ Report Refresh Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For
 ```http
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserCounts(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6031e-175">C#</span><span class="sxs-lookup"><span data-stu-id="6031e-175">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ed8a2-176">C#</span><span class="sxs-lookup"><span data-stu-id="ed8a2-176">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getemailappusageusercounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6031e-176">Javascript</span><span class="sxs-lookup"><span data-stu-id="6031e-176">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ed8a2-177">Javascript</span><span class="sxs-lookup"><span data-stu-id="ed8a2-177">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getemailappusageusercounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6031e-177">Цель — C</span><span class="sxs-lookup"><span data-stu-id="6031e-177">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ed8a2-178">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ed8a2-178">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageusercounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="ed8a2-179">Java</span><span class="sxs-lookup"><span data-stu-id="ed8a2-179">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6031e-178">Отклик</span><span class="sxs-lookup"><span data-stu-id="6031e-178">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ed8a2-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed8a2-180">Response</span></span>
 
-<span data-ttu-id="6031e-179">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6031e-179">The following is an example of the response.</span></span>
+<span data-ttu-id="ed8a2-181">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-181">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="6031e-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6031e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ed8a2-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ed8a2-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
