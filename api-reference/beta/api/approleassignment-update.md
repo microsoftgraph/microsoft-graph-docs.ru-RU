@@ -2,12 +2,12 @@
 title: Обновление объекта AppRoleAssignment
 description: Обновление свойств объекта аппролеассигнмент.
 localization_priority: Normal
-ms.openlocfilehash: 898eb756ed8ad018317713be8788bb3feb0950c0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 53d31ceedd439359217bcbe9b3e3fb71d335814f
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439471"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35856638"
 ---
 # <a name="update-approleassignment"></a>Обновление объекта AppRoleAssignment
 
@@ -83,6 +83,10 @@ Content-length: 233
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
