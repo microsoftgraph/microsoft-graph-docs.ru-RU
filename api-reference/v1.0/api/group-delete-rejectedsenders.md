@@ -4,49 +4,49 @@ description: Удаление пользователя или группы из 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 1999e2351cc5e535d97a64c4c84c0bced1bdf12d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f15fce9cb8d3d28e39427d1fa4d4a185b3ebde10
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449612"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890756"
 ---
-# <a name="remove-rejectedsender"></a><span data-ttu-id="688ca-103">Удаление объекта rejectedSender</span><span class="sxs-lookup"><span data-stu-id="688ca-103">Remove rejectedSender</span></span>
-<span data-ttu-id="688ca-104">Удаление пользователя или группы из списка отклоненных отправителей.</span><span class="sxs-lookup"><span data-stu-id="688ca-104">Remove a user or group from the rejected-senders list.</span></span>
+# <a name="remove-rejectedsender"></a><span data-ttu-id="fe6a2-103">Удаление объекта rejectedSender</span><span class="sxs-lookup"><span data-stu-id="fe6a2-103">Remove rejectedSender</span></span>
+<span data-ttu-id="fe6a2-104">Удаление пользователя или группы из списка отклоненных отправителей.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-104">Remove a user or group from the rejected-senders list.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="688ca-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="688ca-105">Permissions</span></span>
-<span data-ttu-id="688ca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="688ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fe6a2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fe6a2-105">Permissions</span></span>
+<span data-ttu-id="fe6a2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe6a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="688ca-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="688ca-108">Permission type</span></span>                        | <span data-ttu-id="688ca-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="688ca-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="fe6a2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fe6a2-108">Permission type</span></span>                        | <span data-ttu-id="fe6a2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fe6a2-109">Permissions (from least to most privileged)</span></span>  |
 |:---------------------------------------|:-------------------------------------------- |
-| <span data-ttu-id="688ca-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="688ca-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="688ca-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="688ca-111">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="688ca-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="688ca-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="688ca-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="688ca-113">Not supported.</span></span> |
-| <span data-ttu-id="688ca-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="688ca-114">Application</span></span>                            | <span data-ttu-id="688ca-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="688ca-115">Not supported.</span></span> |
+| <span data-ttu-id="fe6a2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fe6a2-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="fe6a2-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe6a2-111">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="fe6a2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fe6a2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe6a2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-113">Not supported.</span></span> |
+| <span data-ttu-id="fe6a2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fe6a2-114">Application</span></span>                            | <span data-ttu-id="fe6a2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="688ca-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="688ca-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fe6a2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fe6a2-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="688ca-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="688ca-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fe6a2-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fe6a2-117">Request headers</span></span>
 
-| <span data-ttu-id="688ca-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="688ca-118">Header</span></span>         | <span data-ttu-id="688ca-119">Значение</span><span class="sxs-lookup"><span data-stu-id="688ca-119">Value</span></span>                      |
+| <span data-ttu-id="fe6a2-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fe6a2-118">Header</span></span>         | <span data-ttu-id="fe6a2-119">Значение</span><span class="sxs-lookup"><span data-stu-id="fe6a2-119">Value</span></span>                      |
 |:---------------|:---------------------------|
-| <span data-ttu-id="688ca-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="688ca-120">Authorization</span></span>  | <span data-ttu-id="688ca-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="688ca-p102">Bearer {token}. Required.</span></span> 
+| <span data-ttu-id="fe6a2-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fe6a2-120">Authorization</span></span>  | <span data-ttu-id="fe6a2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-p102">Bearer {token}. Required.</span></span> 
 
-## <a name="request-body"></a><span data-ttu-id="688ca-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="688ca-123">Request body</span></span>
-<span data-ttu-id="688ca-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="688ca-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fe6a2-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fe6a2-123">Request body</span></span>
+<span data-ttu-id="fe6a2-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="688ca-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="688ca-125">Response</span></span>
-<span data-ttu-id="688ca-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="688ca-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fe6a2-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="fe6a2-125">Response</span></span>
+<span data-ttu-id="fe6a2-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="688ca-128">Пример</span><span class="sxs-lookup"><span data-stu-id="688ca-128">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="688ca-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="688ca-129">Request</span></span>
-<span data-ttu-id="688ca-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="688ca-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fe6a2-128">Пример</span><span class="sxs-lookup"><span data-stu-id="fe6a2-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="fe6a2-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="fe6a2-129">Request</span></span>
+<span data-ttu-id="fe6a2-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-130">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="688ca-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="688ca-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="fe6a2-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="fe6a2-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_rejectedSender_from_group"
@@ -54,23 +54,27 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="688ca-132">C#</span><span class="sxs-lookup"><span data-stu-id="688ca-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fe6a2-132">C#</span><span class="sxs-lookup"><span data-stu-id="fe6a2-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-rejectedsender-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="688ca-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="688ca-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fe6a2-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="fe6a2-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-rejectedsender-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="688ca-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="688ca-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fe6a2-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fe6a2-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-rejectedsender-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="fe6a2-135">Java</span><span class="sxs-lookup"><span data-stu-id="fe6a2-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/remove-rejectedsender-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="688ca-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="688ca-135">Response</span></span>
-<span data-ttu-id="688ca-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="688ca-136">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="fe6a2-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="fe6a2-136">Response</span></span>
+<span data-ttu-id="fe6a2-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fe6a2-137">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
