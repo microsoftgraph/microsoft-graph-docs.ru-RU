@@ -4,57 +4,57 @@ description: Отключение выключения определенног�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6dd848ae967f657bf4639418eee3d4e8815b546e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: d4c4709499f51b5eaf80745a56d89314d8ab8ea7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453945"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877050"
 ---
-# <a name="participant-mute"></a><span data-ttu-id="b43ed-103">участник: выкл.</span><span class="sxs-lookup"><span data-stu-id="b43ed-103">participant: mute</span></span>
+# <a name="participant-mute"></a><span data-ttu-id="c8627-103">участник: выкл.</span><span class="sxs-lookup"><span data-stu-id="c8627-103">participant: mute</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b43ed-104">Отключение выключения определенного участника в вызове.</span><span class="sxs-lookup"><span data-stu-id="b43ed-104">Mute a specific participant in the call.</span></span>
+<span data-ttu-id="c8627-104">Отключение выключения определенного участника в вызове.</span><span class="sxs-lookup"><span data-stu-id="c8627-104">Mute a specific participant in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b43ed-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b43ed-105">Permissions</span></span>
-<span data-ttu-id="b43ed-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b43ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c8627-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c8627-105">Permissions</span></span>
+<span data-ttu-id="c8627-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c8627-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b43ed-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b43ed-108">Permission type</span></span> | <span data-ttu-id="b43ed-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b43ed-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c8627-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c8627-108">Permission type</span></span> | <span data-ttu-id="c8627-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c8627-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="b43ed-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b43ed-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b43ed-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="b43ed-111">Not Supported</span></span>        |
-| <span data-ttu-id="b43ed-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b43ed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b43ed-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="b43ed-113">Not Supported</span></span>        |
-| <span data-ttu-id="b43ed-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b43ed-114">Application</span></span>     | <span data-ttu-id="b43ed-115">Нет</span><span class="sxs-lookup"><span data-stu-id="b43ed-115">None</span></span>                                        |
+| <span data-ttu-id="c8627-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c8627-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c8627-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="c8627-111">Not Supported</span></span>        |
+| <span data-ttu-id="c8627-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c8627-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8627-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="c8627-113">Not Supported</span></span>        |
+| <span data-ttu-id="c8627-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c8627-114">Application</span></span>     | <span data-ttu-id="c8627-115">Нет</span><span class="sxs-lookup"><span data-stu-id="c8627-115">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="b43ed-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b43ed-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8627-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c8627-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
 POST /applications/{id}/calls/{id}/participants/{id}/mute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b43ed-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b43ed-117">Request headers</span></span>
-| <span data-ttu-id="b43ed-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b43ed-118">Name</span></span>          | <span data-ttu-id="b43ed-119">Описание</span><span class="sxs-lookup"><span data-stu-id="b43ed-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="c8627-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c8627-117">Request headers</span></span>
+| <span data-ttu-id="c8627-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c8627-118">Name</span></span>          | <span data-ttu-id="c8627-119">Описание</span><span class="sxs-lookup"><span data-stu-id="c8627-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="b43ed-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b43ed-120">Authorization</span></span> | <span data-ttu-id="b43ed-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b43ed-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c8627-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c8627-120">Authorization</span></span> | <span data-ttu-id="c8627-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c8627-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b43ed-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b43ed-123">Request body</span></span>
-<span data-ttu-id="b43ed-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="b43ed-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8627-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c8627-123">Request body</span></span>
+<span data-ttu-id="c8627-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c8627-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="b43ed-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="b43ed-125">Parameter</span></span>      | <span data-ttu-id="b43ed-126">Тип</span><span class="sxs-lookup"><span data-stu-id="b43ed-126">Type</span></span>    |<span data-ttu-id="b43ed-127">Описание</span><span class="sxs-lookup"><span data-stu-id="b43ed-127">Description</span></span>|
+| <span data-ttu-id="c8627-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="c8627-125">Parameter</span></span>      | <span data-ttu-id="c8627-126">Тип</span><span class="sxs-lookup"><span data-stu-id="c8627-126">Type</span></span>    |<span data-ttu-id="c8627-127">Описание</span><span class="sxs-lookup"><span data-stu-id="c8627-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b43ed-128">Контекст</span><span class="sxs-lookup"><span data-stu-id="b43ed-128">clientContext</span></span>|<span data-ttu-id="b43ed-129">String</span><span class="sxs-lookup"><span data-stu-id="b43ed-129">String</span></span>|<span data-ttu-id="b43ed-130">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="b43ed-130">The client context.</span></span>|
+|<span data-ttu-id="c8627-128">Контекст</span><span class="sxs-lookup"><span data-stu-id="c8627-128">clientContext</span></span>|<span data-ttu-id="c8627-129">String</span><span class="sxs-lookup"><span data-stu-id="c8627-129">String</span></span>|<span data-ttu-id="c8627-130">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="c8627-130">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="b43ed-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="b43ed-131">Response</span></span>
-<span data-ttu-id="b43ed-132">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b43ed-132">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c8627-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="c8627-131">Response</span></span>
+<span data-ttu-id="c8627-132">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c8627-132">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b43ed-133">Пример</span><span class="sxs-lookup"><span data-stu-id="b43ed-133">Example</span></span>
-<span data-ttu-id="b43ed-134">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="b43ed-134">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="c8627-133">Пример</span><span class="sxs-lookup"><span data-stu-id="c8627-133">Example</span></span>
+<span data-ttu-id="c8627-134">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="c8627-134">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b43ed-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="b43ed-135">Request</span></span>
-<span data-ttu-id="b43ed-136">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b43ed-136">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c8627-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="c8627-135">Request</span></span>
+<span data-ttu-id="c8627-136">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c8627-136">The following example shows the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b43ed-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="b43ed-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c8627-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8627-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-mute"
@@ -68,24 +68,28 @@ Content-Length: 46
   "clientContext": "clientContext-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b43ed-138">C#</span><span class="sxs-lookup"><span data-stu-id="b43ed-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c8627-138">C#</span><span class="sxs-lookup"><span data-stu-id="c8627-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b43ed-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="b43ed-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c8627-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="c8627-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b43ed-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="b43ed-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c8627-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c8627-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-mute-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="c8627-141">Java</span><span class="sxs-lookup"><span data-stu-id="c8627-141">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/participant-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="b43ed-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b43ed-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c8627-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="c8627-142">Response</span></span>
 
-> <span data-ttu-id="b43ed-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b43ed-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c8627-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c8627-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,9 +110,9 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a><span data-ttu-id="b43ed-144">Пример: Специальный участник</span><span class="sxs-lookup"><span data-stu-id="b43ed-144">Example - Mute specific participant</span></span>
+## <a name="example---mute-specific-participant"></a><span data-ttu-id="c8627-145">Пример: Специальный участник</span><span class="sxs-lookup"><span data-stu-id="c8627-145">Example - Mute specific participant</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b43ed-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="b43ed-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="c8627-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="c8627-146">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
@@ -120,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="b43ed-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="b43ed-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c8627-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="c8627-147">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -143,7 +147,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="b43ed-147">Список уведомлений обновлен с отключенным участником</span><span class="sxs-lookup"><span data-stu-id="b43ed-147">Notification - roster updated with participant muted</span></span>
+##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="c8627-148">Список уведомлений обновлен с отключенным участником</span><span class="sxs-lookup"><span data-stu-id="c8627-148">Notification - roster updated with participant muted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

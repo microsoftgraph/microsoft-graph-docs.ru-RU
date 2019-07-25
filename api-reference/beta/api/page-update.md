@@ -4,28 +4,28 @@ description: Обновление содержимого страницы OneNot
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 498288afbe087be9d1bee3f665e74572efee0692
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b6a447f0d1ed1afc94e88157dcd66a26c98a3f09
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453931"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877134"
 ---
-# <a name="update-page"></a><span data-ttu-id="b02e9-103">Обновление страницы</span><span class="sxs-lookup"><span data-stu-id="b02e9-103">Update page</span></span>
+# <a name="update-page"></a><span data-ttu-id="fc3a5-103">Обновление страницы</span><span class="sxs-lookup"><span data-stu-id="fc3a5-103">Update page</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b02e9-104">Обновление содержимого страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="b02e9-104">Update the content of a OneNote page.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b02e9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b02e9-105">Permissions</span></span>
-<span data-ttu-id="b02e9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b02e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fc3a5-104">Обновление содержимого страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-104">Update the content of a OneNote page.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc3a5-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fc3a5-105">Permissions</span></span>
+<span data-ttu-id="fc3a5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fc3a5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b02e9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b02e9-108">Permission type</span></span>      | <span data-ttu-id="b02e9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b02e9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc3a5-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc3a5-108">Permission type</span></span>      | <span data-ttu-id="fc3a5-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc3a5-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b02e9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b02e9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b02e9-111">Notes. ReadWrite, Notes. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="b02e9-111">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b02e9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b02e9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b02e9-113">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b02e9-113">Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="b02e9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b02e9-114">Application</span></span> | <span data-ttu-id="b02e9-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b02e9-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc3a5-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc3a5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fc3a5-111">Notes. ReadWrite, Notes. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="fc3a5-111">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fc3a5-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc3a5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc3a5-113">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fc3a5-113">Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="fc3a5-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fc3a5-114">Application</span></span> | <span data-ttu-id="fc3a5-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc3a5-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b02e9-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b02e9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc3a5-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fc3a5-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onenote/pages/{id}/content
@@ -33,23 +33,23 @@ PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
 PATCH /groups/{id}/onenote/pages/{id}/content
 PATCH /sites/{id}/onenote/pages/{id}/content
 ```
-## <a name="request-headers"></a><span data-ttu-id="b02e9-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b02e9-117">Request headers</span></span>
-| <span data-ttu-id="b02e9-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b02e9-118">Name</span></span>       | <span data-ttu-id="b02e9-119">Тип</span><span class="sxs-lookup"><span data-stu-id="b02e9-119">Type</span></span> | <span data-ttu-id="b02e9-120">Описание</span><span class="sxs-lookup"><span data-stu-id="b02e9-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fc3a5-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fc3a5-117">Request headers</span></span>
+| <span data-ttu-id="fc3a5-118">Имя</span><span class="sxs-lookup"><span data-stu-id="fc3a5-118">Name</span></span>       | <span data-ttu-id="fc3a5-119">Тип</span><span class="sxs-lookup"><span data-stu-id="fc3a5-119">Type</span></span> | <span data-ttu-id="fc3a5-120">Описание</span><span class="sxs-lookup"><span data-stu-id="fc3a5-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="b02e9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b02e9-121">Authorization</span></span>  | <span data-ttu-id="b02e9-122">string</span><span class="sxs-lookup"><span data-stu-id="b02e9-122">string</span></span>  | <span data-ttu-id="b02e9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b02e9-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b02e9-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b02e9-125">Content-Type</span></span> | <span data-ttu-id="b02e9-126">string</span><span class="sxs-lookup"><span data-stu-id="b02e9-126">string</span></span> | `application/json` |
+| <span data-ttu-id="fc3a5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fc3a5-121">Authorization</span></span>  | <span data-ttu-id="fc3a5-122">string</span><span class="sxs-lookup"><span data-stu-id="fc3a5-122">string</span></span>  | <span data-ttu-id="fc3a5-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fc3a5-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fc3a5-125">Content-Type</span></span> | <span data-ttu-id="fc3a5-126">string</span><span class="sxs-lookup"><span data-stu-id="fc3a5-126">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="b02e9-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b02e9-127">Request body</span></span>
-<span data-ttu-id="b02e9-128">В теле запроса добавьте массив объектов [патчконтенткомманд](../resources/patchcontentcommand.md) , которые представляют изменения на странице.</span><span class="sxs-lookup"><span data-stu-id="b02e9-128">In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page.</span></span> <span data-ttu-id="b02e9-129">Дополнительные сведения и примеры приведены в [статье обновление содержимого страницы OneNote](/graph/onenote-update-page).</span><span class="sxs-lookup"><span data-stu-id="b02e9-129">For more information and examples, see [Update OneNote page content](/graph/onenote-update-page).</span></span>
+## <a name="request-body"></a><span data-ttu-id="fc3a5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fc3a5-127">Request body</span></span>
+<span data-ttu-id="fc3a5-128">В теле запроса добавьте массив объектов [патчконтенткомманд](../resources/patchcontentcommand.md) , которые представляют изменения на странице.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-128">In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page.</span></span> <span data-ttu-id="fc3a5-129">Дополнительные сведения и примеры приведены в [статье обновление содержимого страницы OneNote](/graph/onenote-update-page).</span><span class="sxs-lookup"><span data-stu-id="fc3a5-129">For more information and examples, see [Update OneNote page content](/graph/onenote-update-page).</span></span>
 
-## <a name="response"></a><span data-ttu-id="b02e9-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="b02e9-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc3a5-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc3a5-130">Response</span></span>
 
-<span data-ttu-id="b02e9-131">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b02e9-131">If successful, this method returns a `204 No Content` response code.</span></span>  <span data-ttu-id="b02e9-132">Данные JSON не возвращаются по PATCH-запросу.</span><span class="sxs-lookup"><span data-stu-id="b02e9-132">No JSON data is returned for a PATCH request.</span></span>
-## <a name="example"></a><span data-ttu-id="b02e9-133">Пример</span><span class="sxs-lookup"><span data-stu-id="b02e9-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b02e9-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="b02e9-134">Request</span></span>
-<span data-ttu-id="b02e9-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b02e9-135">Here is an example of the request.</span></span>
+<span data-ttu-id="fc3a5-131">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-131">If successful, this method returns a `204 No Content` response code.</span></span>  <span data-ttu-id="fc3a5-132">Данные JSON не возвращаются по PATCH-запросу.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-132">No JSON data is returned for a PATCH request.</span></span>
+## <a name="example"></a><span data-ttu-id="fc3a5-133">Пример</span><span class="sxs-lookup"><span data-stu-id="fc3a5-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fc3a5-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="fc3a5-134">Request</span></span>
+<span data-ttu-id="fc3a5-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b02e9-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="b02e9-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="fc3a5-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="fc3a5-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -73,22 +73,26 @@ Content-length: 312
   }
 ]
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b02e9-137">C#</span><span class="sxs-lookup"><span data-stu-id="b02e9-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fc3a5-137">C#</span><span class="sxs-lookup"><span data-stu-id="fc3a5-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b02e9-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="b02e9-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fc3a5-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="fc3a5-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b02e9-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="b02e9-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fc3a5-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fc3a5-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-page-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="fc3a5-140">Java</span><span class="sxs-lookup"><span data-stu-id="fc3a5-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="b02e9-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="b02e9-140">Response</span></span>
-<span data-ttu-id="b02e9-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b02e9-141">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="fc3a5-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="fc3a5-141">Response</span></span>
+<span data-ttu-id="fc3a5-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fc3a5-142">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
