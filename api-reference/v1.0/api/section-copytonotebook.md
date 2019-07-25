@@ -4,12 +4,12 @@ description: Копирование раздела в указанную зап�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 283cabaae8a4821b36ae95648ff37fce9a28cf3e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f1a69334b10499295649ba09d64b1fa10bcb86b0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461549"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35884408"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 Копирование раздела в указанную записную книжку.
@@ -81,6 +81,10 @@ Content-length: 84
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytonotebook-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

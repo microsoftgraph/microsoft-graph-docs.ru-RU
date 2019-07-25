@@ -4,12 +4,12 @@ description: Описывает метод List ресурса Директор�
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9de0f618fe4582af02e2202ef8ae529448a9838
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 52f67940086ea7e23331feb4addabeeffcd9d2c0
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455982"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35880424"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -19,15 +19,16 @@ ms.locfileid: "35455982"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Аудитлог. Read. ALL и Directory. Read. ALL    |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
+| Для приложений                            | AuditLog.Read.All                           |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /auditLogs/directoryaudits
 ```
@@ -36,33 +37,33 @@ GET /auditLogs/directoryaudits
 
 Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
-|Имя     |Описание                            |Пример|
-|:--------------------|:----------------|:--------------------------------------|
-|[$filter](/graph/query_parameters#filter-parameter)|Фильтрует результаты (строки). |`/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
-|[$top](/graph/query_parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+| Имя                                                       | Описание                                                                   | Пример                                                                     |
+| :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [\$Фишинг](/graph/query_parameters#filter-parameter)       | Фильтрует результаты (строки).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
+| [\$Вверх](/graph/query_parameters#top-parameter)             | Задает размер страницы результатов.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
+| [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, \$поддерживаемые параметром Filter
 
-|Имя атрибута |Поддерживаемые операторы|
-|:----------------|:------|
-|activityDisplayName| eq, startswith|
-|activityDateTime| eq, ge, le|
-|loggedByService|eq|
-|initiatedBy/user/id|eq|
-|initiatedBy/user/displayName| eq|
-|initiatedBy/user/userPrincipalName| eq, startswith|
-|initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
-|targetResource/Any (t: t/ID EQ ' {значение} ')| eq|
-|targetResource/Any (t: t/displayName EQ "{value}") | eq |
-|Таржетресаурцес/Any (x: StartsWith (x/displayName, ' {значение} '))| startswith|
+| Имя атрибута                                               | Поддерживаемые операторы |
+| :----------------------------------------------------------- | :------------------ |
+| activityDisplayName                                          | eq, startswith      |
+| activityDateTime                                             | eq, ge, le          |
+| loggedByService                                              | eq                  |
+| initiatedBy/user/id                                          | eq                  |
+| initiatedBy/user/displayName                                 | eq                  |
+| initiatedBy/user/userPrincipalName                           | eq, startswith      |
+| initiatedBy/app/appId                                        | eq                  |
+| initiatedBy/app/appDisplayName                               | eq                  |
+| Таржетресаурцес/Any (t: t/ID EQ ' {значение} ')                    | eq                  |
+| Таржетресаурцес/Any (t: t/displayName EQ ' {значение} ')            | eq                  |
+| Таржетресаурцес/Any (x: StartsWith (x/displayName, ' {значение} ')) | startswith          |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация  | Bearer {code}|
+| Имя          | Описание   |
+| :------------ | :------------ |
+| Авторизация | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -84,6 +85,7 @@ GET /auditLogs/directoryaudits
   "blockType": "request",
   "name": "get_directoryaudit"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
@@ -99,13 +101,18 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -113,11 +120,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
   "@odata.type": "microsoft.graph.directoryaudit",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
 ```
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -140,7 +150,7 @@ Content-length: 271
             },
             "app": null
         },
-        "targetResource": [{
+        "targetResources": [{
             "id": "ef7e527d-6c92-4234-8c6d-cf6fdfb57f95",
             "displayName": "Example.com",
             "Type": "Group",

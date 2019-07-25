@@ -4,12 +4,12 @@ description: Получение списка объектов конечной �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d4b17509ed681dbb6d2083d41c96b5596eabf2fd
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e3cd83d180566916809acd51ae3373aecb527a19
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440465"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858465"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
