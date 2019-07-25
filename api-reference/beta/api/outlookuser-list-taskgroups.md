@@ -4,12 +4,12 @@ description: Получение всех групп задач Outlook в поч
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a601843c8f50ff3917d036c1e94a503d7f8cd318
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ce0110e166f4422a18332e85dc0f4cc0747e49b3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447161"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877428"
 ---
 # <a name="list-taskgroups"></a>Список taskGroups
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-taskgroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-taskgroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
