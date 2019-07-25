@@ -4,12 +4,12 @@ description: 'Получение списка пользователей или 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2ad6c218c2f2fa440f9bc3e8acd52b8414ecce00
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 89a3424919dbacdf8e549f49f12db80535145221
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445571"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889028"
 ---
 # <a name="list-rejectedsenders"></a>Список rejectedSenders
 Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы. 
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rejectedsenders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rejectedsenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
