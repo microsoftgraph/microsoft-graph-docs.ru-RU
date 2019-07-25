@@ -5,12 +5,12 @@ title: Получение Итеманалитикс
 description: Получение Итеманалитикс о представлениях, которые были выполнены для этого ресурса.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 08c214feef8b5ea539401466866f71cf0841bbe3
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: fec410281cc8f3ae053264a54ab200558691335b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455373"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35888405"
 ---
 # <a name="get-itemanalytics"></a>Получение Итеманалитикс
 
@@ -80,6 +80,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,12 +4,12 @@ description: Получает преподавателей и учащихся �
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e7453999f1eba14a8e1f7aa675a0b4ac0b6b2f63
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c4a2abd547c47f98e96a2a09ead2ee23967662af
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35449962"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886412"
 ---
 # <a name="list-members"></a>Перечисление участников
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
