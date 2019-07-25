@@ -5,33 +5,33 @@ ms.date: 09/10/2017
 title: Список последних файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f6196d2bbecc3a584d7419896db9c5d21c7e515d
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: e0e7d6fc4dc16f11f76b4c021f957a8ae580acba
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35436552"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861514"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="c7cb8-102">Список последних файлов</span><span class="sxs-lookup"><span data-stu-id="c7cb8-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="7de24-102">Список последних файлов</span><span class="sxs-lookup"><span data-stu-id="7de24-102">List recent files</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c7cb8-p101">Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.</span><span class="sxs-lookup"><span data-stu-id="c7cb8-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="7de24-p101">Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.</span><span class="sxs-lookup"><span data-stu-id="7de24-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c7cb8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c7cb8-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7de24-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7de24-105">Permissions</span></span>
 
-<span data-ttu-id="c7cb8-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7cb8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7de24-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7de24-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c7cb8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c7cb8-108">Permission type</span></span>      | <span data-ttu-id="c7cb8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c7cb8-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7de24-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7de24-108">Permission type</span></span>      | <span data-ttu-id="7de24-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7de24-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c7cb8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c7cb8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c7cb8-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7cb8-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c7cb8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c7cb8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7cb8-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7cb8-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c7cb8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c7cb8-114">Application</span></span> | <span data-ttu-id="c7cb8-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7cb8-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7de24-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7de24-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7de24-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7de24-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7de24-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7de24-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7de24-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7de24-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7de24-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7de24-114">Application</span></span> | <span data-ttu-id="7de24-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7de24-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c7cb8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c7cb8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7de24-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7de24-116">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c7cb8-117">HTTP</span><span class="sxs-lookup"><span data-stu-id="c7cb8-117">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7de24-117">HTTP</span><span class="sxs-lookup"><span data-stu-id="7de24-117">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
@@ -40,24 +40,28 @@ ms.locfileid: "35436552"
 ```http
 GET /me/drive/recent
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c7cb8-118">C#</span><span class="sxs-lookup"><span data-stu-id="c7cb8-118">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7de24-118">C#</span><span class="sxs-lookup"><span data-stu-id="7de24-118">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c7cb8-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="c7cb8-119">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7de24-119">Javascript</span><span class="sxs-lookup"><span data-stu-id="7de24-119">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c7cb8-120">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c7cb8-120">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7de24-120">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7de24-120">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/view-recent-files-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="7de24-121">Java</span><span class="sxs-lookup"><span data-stu-id="7de24-121">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="c7cb8-121">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7cb8-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7de24-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="7de24-122">Response</span></span>
 
-<span data-ttu-id="c7cb8-122">Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.</span><span class="sxs-lookup"><span data-stu-id="c7cb8-122">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+<span data-ttu-id="7de24-123">Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.</span><span class="sxs-lookup"><span data-stu-id="7de24-123">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -103,9 +107,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="c7cb8-123">Замечания</span><span class="sxs-lookup"><span data-stu-id="c7cb8-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7de24-124">Замечания</span><span class="sxs-lookup"><span data-stu-id="7de24-124">Remarks</span></span>
 
-<span data-ttu-id="c7cb8-p103">Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="c7cb8-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="7de24-p103">Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="7de24-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
