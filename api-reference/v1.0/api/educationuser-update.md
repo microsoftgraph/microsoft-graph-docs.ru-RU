@@ -4,12 +4,12 @@ description: Обновление свойств объекта **educationuser*
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a68c3e3ccab2ab6cd2a7fb38a6299432d764512a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a0f3f7a1ed9f28f8b6a09ccf278adff39d7dc07d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458931"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35887516"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -88,6 +88,10 @@ Content-length: 508
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

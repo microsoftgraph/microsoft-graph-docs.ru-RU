@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9ed30ad4e58a3242d45a8bab107b90ed88e41322
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 4ef769058225c1a25282efe2ca13f2f76907a0b7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713193"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35861359"
 ---
 ```objc
 
@@ -20,6 +20,9 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 NSString *type = @"view";
 payloadDictionary[@"type"] = type;
+
+NSString *password = @"ThisIsMyPrivatePassword";
+payloadDictionary[@"password"] = password;
 
 NSString *scope = @"anonymous";
 payloadDictionary[@"scope"] = scope;
