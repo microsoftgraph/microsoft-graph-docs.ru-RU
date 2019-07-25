@@ -4,17 +4,17 @@ description: Обновление свойств объекта organization, д
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4201bed43327b17e808750d5f3f38f41e776bd77
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 4cafafa13b37c819a15b3ba63e5ec9b1ae2f03d2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447469"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894416"
 ---
 # <a name="update-organization"></a>Обновление организации
 
 Обновление свойств объекта organization, для которого выполнена проверка подлинности. В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** Организации.
-
 
 ## <a name="permissions"></a>Разрешения
 
@@ -22,9 +22,9 @@ ms.locfileid: "35447469"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Организация. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Организация. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -32,14 +32,14 @@ ms.locfileid: "35447469"
 
 ```http
 PATCH /organization/{id}
-
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -95,6 +95,10 @@ Content-length: 411
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
