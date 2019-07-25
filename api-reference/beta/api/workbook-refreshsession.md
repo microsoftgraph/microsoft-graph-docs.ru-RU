@@ -4,50 +4,50 @@ description: 'Используйте этот API для обновления с
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bc511ad5650915c2f9c8dbeb032924710430eb44
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 011503ae1e3b16ba190d5b3922268dba79c66deb
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448502"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866502"
 ---
-# <a name="refresh-session"></a><span data-ttu-id="7f094-103">Refresh Session</span><span class="sxs-lookup"><span data-stu-id="7f094-103">Refresh Session</span></span>
+# <a name="refresh-session"></a><span data-ttu-id="d5595-103">Refresh Session</span><span class="sxs-lookup"><span data-stu-id="d5595-103">Refresh Session</span></span>
 
-<span data-ttu-id="7f094-104">Используйте этот API для обновления существующего сеанса книги.</span><span class="sxs-lookup"><span data-stu-id="7f094-104">Use this API to refresh an existing workbook session.</span></span> 
+<span data-ttu-id="d5595-104">Используйте этот API для обновления существующего сеанса книги.</span><span class="sxs-lookup"><span data-stu-id="d5595-104">Use this API to refresh an existing workbook session.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="7f094-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7f094-105">Permissions</span></span>
-<span data-ttu-id="7f094-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f094-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5595-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d5595-105">Permissions</span></span>
+<span data-ttu-id="d5595-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5595-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7f094-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7f094-108">Permission type</span></span>      | <span data-ttu-id="7f094-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7f094-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5595-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d5595-108">Permission type</span></span>      | <span data-ttu-id="d5595-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d5595-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7f094-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7f094-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7f094-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7f094-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7f094-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7f094-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f094-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f094-113">Not supported.</span></span>    |
-|<span data-ttu-id="7f094-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7f094-114">Application</span></span> | <span data-ttu-id="7f094-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f094-115">Not supported.</span></span> |
+|<span data-ttu-id="d5595-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d5595-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d5595-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d5595-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d5595-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d5595-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5595-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5595-113">Not supported.</span></span>    |
+|<span data-ttu-id="d5595-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d5595-114">Application</span></span> | <span data-ttu-id="d5595-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5595-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7f094-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f094-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5595-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d5595-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/refreshSession
 workbook-session-id: {session-id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="7f094-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7f094-117">Request headers</span></span>
-| <span data-ttu-id="7f094-118">Имя</span><span class="sxs-lookup"><span data-stu-id="7f094-118">Name</span></span>       | <span data-ttu-id="7f094-119">Описание</span><span class="sxs-lookup"><span data-stu-id="7f094-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d5595-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d5595-117">Request headers</span></span>
+| <span data-ttu-id="d5595-118">Имя</span><span class="sxs-lookup"><span data-stu-id="d5595-118">Name</span></span>       | <span data-ttu-id="d5595-119">Описание</span><span class="sxs-lookup"><span data-stu-id="d5595-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7f094-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7f094-120">Authorization</span></span>  | <span data-ttu-id="7f094-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7f094-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7f094-123">workbook-session-id</span><span class="sxs-lookup"><span data-stu-id="7f094-123">workbook-session-id</span></span> | <span data-ttu-id="7f094-124">Идентификатор сеанса для книги, который необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="7f094-124">Workbook session Id to be refreshed</span></span> |
+| <span data-ttu-id="d5595-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d5595-120">Authorization</span></span>  | <span data-ttu-id="d5595-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5595-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5595-123">workbook-session-id</span><span class="sxs-lookup"><span data-stu-id="d5595-123">workbook-session-id</span></span> | <span data-ttu-id="d5595-124">Идентификатор сеанса для книги, который необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="d5595-124">Workbook session Id to be refreshed</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7f094-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7f094-125">Request body</span></span>
-<span data-ttu-id="7f094-126">Для этого API не нужно тело запроса.</span><span class="sxs-lookup"><span data-stu-id="7f094-126">This API does not require any request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5595-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d5595-125">Request body</span></span>
+<span data-ttu-id="d5595-126">Для этого API не нужно тело запроса.</span><span class="sxs-lookup"><span data-stu-id="d5595-126">This API does not require any request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7f094-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f094-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5595-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5595-127">Response</span></span>
 
-<span data-ttu-id="7f094-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="7f094-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="d5595-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="d5595-128">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7f094-129">Пример</span><span class="sxs-lookup"><span data-stu-id="7f094-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7f094-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="7f094-130">Request</span></span>
-<span data-ttu-id="7f094-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7f094-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d5595-129">Пример</span><span class="sxs-lookup"><span data-stu-id="d5595-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d5595-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5595-130">Request</span></span>
+<span data-ttu-id="d5595-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5595-131">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7f094-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f094-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d5595-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5595-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "refresh_excel_session"
@@ -62,26 +62,30 @@ Content-length: 0
 
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7f094-133">C#</span><span class="sxs-lookup"><span data-stu-id="7f094-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d5595-133">C#</span><span class="sxs-lookup"><span data-stu-id="d5595-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/refresh-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7f094-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="7f094-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5595-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="d5595-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/refresh-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7f094-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7f094-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5595-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d5595-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/refresh-excel-session-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="d5595-136">Java</span><span class="sxs-lookup"><span data-stu-id="d5595-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/refresh-excel-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="7f094-136">Обратите внимание, что заголовок workbook-session-id является обязательным.</span><span class="sxs-lookup"><span data-stu-id="7f094-136">Note that workbook-session-id header is required.</span></span> 
+<span data-ttu-id="d5595-137">Обратите внимание, что заголовок workbook-session-id является обязательным.</span><span class="sxs-lookup"><span data-stu-id="d5595-137">Note that workbook-session-id header is required.</span></span> 
 
 
-##### <a name="response"></a><span data-ttu-id="7f094-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="7f094-137">Response</span></span>
-<span data-ttu-id="7f094-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7f094-138">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d5595-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="d5595-138">Response</span></span>
+<span data-ttu-id="d5595-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5595-139">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
