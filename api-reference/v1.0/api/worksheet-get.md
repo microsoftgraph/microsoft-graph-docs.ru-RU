@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта л
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ee14faeb98f055c3ebac782d888254724087e9b0
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 8de40a02db98e7963bc1acf38fd52ad7321aa7b7
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459428"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35891128"
 ---
 # <a name="get-worksheet"></a>Получение листа
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-worksheet-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-worksheet-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
