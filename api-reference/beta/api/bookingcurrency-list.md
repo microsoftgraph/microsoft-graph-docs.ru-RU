@@ -4,49 +4,49 @@ description: Получение списка объектов Букингкур
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 999cc69a8cd6154f7797be4199f6b0347deb6aa5
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: ef6be5e410041f660aa83aefb5dc47541b3e47dd
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35439086"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35865409"
 ---
-# <a name="list-bookingcurrencies"></a><span data-ttu-id="cd7d1-103">Список БукингкурренЦиес</span><span class="sxs-lookup"><span data-stu-id="cd7d1-103">List bookingCurrencies</span></span>
+# <a name="list-bookingcurrencies"></a><span data-ttu-id="43179-103">Список БукингкурренЦиес</span><span class="sxs-lookup"><span data-stu-id="43179-103">List bookingCurrencies</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cd7d1-104">Получение списка объектов [букингкурренци](../resources/bookingcurrency.md) , доступных для корпоративных книг Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-104">Get a list of [bookingCurrency](../resources/bookingcurrency.md) objects available to a Microsoft Bookings business.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cd7d1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd7d1-105">Permissions</span></span>
-<span data-ttu-id="cd7d1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd7d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="43179-104">Получение списка объектов [букингкурренци](../resources/bookingcurrency.md) , доступных для корпоративных книг Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="43179-104">Get a list of [bookingCurrency](../resources/bookingcurrency.md) objects available to a Microsoft Bookings business.</span></span>
+## <a name="permissions"></a><span data-ttu-id="43179-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="43179-105">Permissions</span></span>
+<span data-ttu-id="43179-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43179-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cd7d1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd7d1-108">Permission type</span></span>      | <span data-ttu-id="cd7d1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd7d1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43179-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="43179-108">Permission type</span></span>      | <span data-ttu-id="43179-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="43179-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cd7d1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd7d1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cd7d1-111">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="cd7d1-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="cd7d1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd7d1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd7d1-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-113">Not supported.</span></span>   |
-|<span data-ttu-id="cd7d1-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd7d1-114">Application</span></span> | <span data-ttu-id="cd7d1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-115">Not supported.</span></span>  |
+|<span data-ttu-id="43179-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="43179-110">Delegated (work or school account)</span></span> | <span data-ttu-id="43179-111">Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="43179-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="43179-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="43179-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43179-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43179-113">Not supported.</span></span>   |
+|<span data-ttu-id="43179-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="43179-114">Application</span></span> | <span data-ttu-id="43179-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43179-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="cd7d1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd7d1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43179-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="43179-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingCurrencies
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cd7d1-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cd7d1-117">Optional query parameters</span></span>
-<span data-ttu-id="cd7d1-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа, в том числе $count, $filter, $select, $skip и $Top.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="43179-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="43179-117">Optional query parameters</span></span>
+<span data-ttu-id="43179-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа, в том числе $count, $filter, $select, $skip и $Top.</span><span class="sxs-lookup"><span data-stu-id="43179-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cd7d1-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd7d1-119">Request headers</span></span>
-| <span data-ttu-id="cd7d1-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cd7d1-120">Name</span></span>      |<span data-ttu-id="cd7d1-121">Описание</span><span class="sxs-lookup"><span data-stu-id="cd7d1-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="43179-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="43179-119">Request headers</span></span>
+| <span data-ttu-id="43179-120">Имя</span><span class="sxs-lookup"><span data-stu-id="43179-120">Name</span></span>      |<span data-ttu-id="43179-121">Описание</span><span class="sxs-lookup"><span data-stu-id="43179-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cd7d1-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd7d1-122">Authorization</span></span>  | <span data-ttu-id="cd7d1-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="cd7d1-123">Bearer {code}</span></span>|
+| <span data-ttu-id="43179-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="43179-122">Authorization</span></span>  | <span data-ttu-id="43179-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="43179-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cd7d1-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd7d1-124">Request body</span></span>
-<span data-ttu-id="cd7d1-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-125">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="cd7d1-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd7d1-126">Response</span></span>
-<span data-ttu-id="cd7d1-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингкурренци](../resources/bookingcurrency.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-127">If successful, this method returns a `200 OK` response code and collection of [bookingCurrency](../resources/bookingcurrency.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cd7d1-128">Пример</span><span class="sxs-lookup"><span data-stu-id="cd7d1-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cd7d1-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd7d1-129">Request</span></span>
-<span data-ttu-id="cd7d1-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-130">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43179-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="43179-124">Request body</span></span>
+<span data-ttu-id="43179-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="43179-125">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="43179-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="43179-126">Response</span></span>
+<span data-ttu-id="43179-127">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингкурренци](../resources/bookingcurrency.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="43179-127">If successful, this method returns a `200 OK` response code and collection of [bookingCurrency](../resources/bookingcurrency.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="43179-128">Пример</span><span class="sxs-lookup"><span data-stu-id="43179-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="43179-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="43179-129">Request</span></span>
+<span data-ttu-id="43179-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="43179-130">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cd7d1-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="cd7d1-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="43179-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="43179-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingcurrencies"
@@ -54,22 +54,26 @@ GET /bookingCurrencies
 ```http
 GET https://graph.microsoft.com/beta/bookingCurrencies
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cd7d1-132">C#</span><span class="sxs-lookup"><span data-stu-id="cd7d1-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="43179-132">C#</span><span class="sxs-lookup"><span data-stu-id="43179-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingcurrencies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cd7d1-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="cd7d1-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="43179-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="43179-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingcurrencies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cd7d1-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cd7d1-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="43179-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="43179-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingcurrencies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="43179-135">Java</span><span class="sxs-lookup"><span data-stu-id="43179-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bookingcurrencies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="cd7d1-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd7d1-135">Response</span></span>
-<span data-ttu-id="cd7d1-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-136">The following is an example of the response.</span></span> <span data-ttu-id="cd7d1-137">Note: объект Response, показанный здесь, усекается для краткости.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-137">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="cd7d1-138">Все поддерживаемые валюты и свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="cd7d1-138">All of the supported currencies and properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="43179-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="43179-136">Response</span></span>
+<span data-ttu-id="43179-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="43179-137">The following is an example of the response.</span></span> <span data-ttu-id="43179-138">Note: объект Response, показанный здесь, усекается для краткости.</span><span class="sxs-lookup"><span data-stu-id="43179-138">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="43179-139">Все поддерживаемые валюты и свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="43179-139">All of the supported currencies and properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
