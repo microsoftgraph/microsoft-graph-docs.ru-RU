@@ -4,50 +4,50 @@ description: Удаляет текущие параметры сортировк
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 2032c851dc9f0c783cc071ec1ccc4d170150a46e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c7461529dfdde7c84816ee34d761debc93718f40
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456045"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35894159"
 ---
-# <a name="tablesort-clear"></a><span data-ttu-id="516f3-104">TableSort: clear</span><span class="sxs-lookup"><span data-stu-id="516f3-104">TableSort: clear</span></span>
+# <a name="tablesort-clear"></a><span data-ttu-id="a7554-104">TableSort: clear</span><span class="sxs-lookup"><span data-stu-id="a7554-104">TableSort: clear</span></span>
 
-<span data-ttu-id="516f3-p102">Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.</span><span class="sxs-lookup"><span data-stu-id="516f3-p102">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>
-## <a name="permissions"></a><span data-ttu-id="516f3-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="516f3-107">Permissions</span></span>
-<span data-ttu-id="516f3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="516f3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a7554-p102">Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.</span><span class="sxs-lookup"><span data-stu-id="a7554-p102">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7554-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a7554-107">Permissions</span></span>
+<span data-ttu-id="a7554-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a7554-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="516f3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="516f3-110">Permission type</span></span>      | <span data-ttu-id="516f3-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="516f3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a7554-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a7554-110">Permission type</span></span>      | <span data-ttu-id="a7554-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a7554-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="516f3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="516f3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="516f3-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="516f3-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="516f3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="516f3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="516f3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="516f3-115">Not supported.</span></span>    |
-|<span data-ttu-id="516f3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="516f3-116">Application</span></span> | <span data-ttu-id="516f3-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="516f3-117">Not supported.</span></span> |
+|<span data-ttu-id="a7554-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a7554-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a7554-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a7554-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a7554-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a7554-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7554-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7554-115">Not supported.</span></span>    |
+|<span data-ttu-id="a7554-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a7554-116">Application</span></span> | <span data-ttu-id="a7554-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7554-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="516f3-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="516f3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7554-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a7554-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/sort/clear
 POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="516f3-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="516f3-119">Request headers</span></span>
-| <span data-ttu-id="516f3-120">Имя</span><span class="sxs-lookup"><span data-stu-id="516f3-120">Name</span></span>       | <span data-ttu-id="516f3-121">Описание</span><span class="sxs-lookup"><span data-stu-id="516f3-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a7554-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a7554-119">Request headers</span></span>
+| <span data-ttu-id="a7554-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a7554-120">Name</span></span>       | <span data-ttu-id="a7554-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a7554-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="516f3-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="516f3-122">Authorization</span></span>  | <span data-ttu-id="516f3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="516f3-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="516f3-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="516f3-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="516f3-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="516f3-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a7554-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a7554-122">Authorization</span></span>  | <span data-ttu-id="a7554-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a7554-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a7554-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a7554-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="a7554-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="a7554-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="516f3-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="516f3-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7554-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a7554-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="516f3-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="516f3-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a7554-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7554-129">Response</span></span>
 
-<span data-ttu-id="516f3-p106">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="516f3-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a7554-p106">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="a7554-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="516f3-132">Пример</span><span class="sxs-lookup"><span data-stu-id="516f3-132">Example</span></span>
-<span data-ttu-id="516f3-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="516f3-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="516f3-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="516f3-134">Request</span></span>
-<span data-ttu-id="516f3-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="516f3-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a7554-132">Пример</span><span class="sxs-lookup"><span data-stu-id="a7554-132">Example</span></span>
+<span data-ttu-id="a7554-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="a7554-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a7554-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="a7554-134">Request</span></span>
+<span data-ttu-id="a7554-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a7554-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="516f3-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="516f3-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a7554-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="a7554-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablesort_clear"
@@ -55,23 +55,27 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/clear
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="516f3-137">C#</span><span class="sxs-lookup"><span data-stu-id="516f3-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a7554-137">C#</span><span class="sxs-lookup"><span data-stu-id="a7554-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablesort-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="516f3-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="516f3-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a7554-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="a7554-138">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablesort-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="516f3-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="516f3-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a7554-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a7554-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tablesort-clear-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="a7554-140">Java</span><span class="sxs-lookup"><span data-stu-id="a7554-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablesort-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="516f3-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="516f3-140">Response</span></span>
-<span data-ttu-id="516f3-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="516f3-141">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a7554-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7554-141">Response</span></span>
+<span data-ttu-id="a7554-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a7554-142">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
