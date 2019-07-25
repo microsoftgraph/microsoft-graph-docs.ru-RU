@@ -4,12 +4,12 @@ description: Проверьте, что файлы переданы в опре�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2c571ca614c8bb97babe93537e99606ce8799b0f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 88ddd87c67c5e85eee0335d7b04a94ade383abc3
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441277"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35859990"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Запуск синхронизации после отправки файлов в Едукатионсинчронизатионпрофиле
 
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-start-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-start-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

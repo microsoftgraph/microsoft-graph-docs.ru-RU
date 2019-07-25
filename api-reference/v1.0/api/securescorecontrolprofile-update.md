@@ -3,12 +3,12 @@ title: Обновление объектов secureScoreControlProfile
 description: Обновление редактируемого объекта Секурескореконтролпрофиле в любом интегрированном решении для изменения различных свойств, таких как assignedTo или Тенантноте.
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 8cf86d312d9f866c24cfc0d6fc11ba523885d627
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a3403d54e0aad0487ad03184844746d3f27633f6
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448304"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35886312"
 ---
 # <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
