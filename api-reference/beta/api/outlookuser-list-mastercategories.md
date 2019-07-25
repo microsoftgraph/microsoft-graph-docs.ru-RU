@@ -4,12 +4,12 @@ description: Получение всех категорий, определен�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 50c3b2cc688d66dfec2a02ba4c49f12f41bf173b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 286f2193f8d4b0131425f9f551ff1ab2ac1fff28
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447189"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35877485"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mastercategories-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mastercategories-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
