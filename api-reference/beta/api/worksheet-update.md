@@ -4,55 +4,55 @@ description: Обновление свойств объекта листа.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b09165502ab48f3b4bbb61ac3070f320f874b552
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f7120ebb7dfd199ad478a1160c30b5fd000a6ca8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35458637"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35866138"
 ---
-# <a name="update-worksheet"></a><span data-ttu-id="dfdb7-103">Обновление листа</span><span class="sxs-lookup"><span data-stu-id="dfdb7-103">Update worksheet</span></span>
+# <a name="update-worksheet"></a><span data-ttu-id="69036-103">Обновление листа</span><span class="sxs-lookup"><span data-stu-id="69036-103">Update worksheet</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dfdb7-104">Обновление свойств объекта листа.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-104">Update the properties of worksheet object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="dfdb7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dfdb7-105">Permissions</span></span>
-<span data-ttu-id="dfdb7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dfdb7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="69036-104">Обновление свойств объекта листа.</span><span class="sxs-lookup"><span data-stu-id="69036-104">Update the properties of worksheet object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="69036-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="69036-105">Permissions</span></span>
+<span data-ttu-id="69036-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69036-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dfdb7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dfdb7-108">Permission type</span></span>      | <span data-ttu-id="dfdb7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dfdb7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="69036-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="69036-108">Permission type</span></span>      | <span data-ttu-id="69036-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="69036-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dfdb7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dfdb7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="dfdb7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dfdb7-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="dfdb7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dfdb7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dfdb7-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dfdb7-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="dfdb7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dfdb7-114">Application</span></span> | <span data-ttu-id="dfdb7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-115">Not supported.</span></span> |
+|<span data-ttu-id="69036-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="69036-110">Delegated (work or school account)</span></span> | <span data-ttu-id="69036-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69036-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="69036-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="69036-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69036-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69036-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="69036-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="69036-114">Application</span></span> | <span data-ttu-id="69036-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="69036-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dfdb7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dfdb7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69036-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="69036-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="dfdb7-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dfdb7-117">Optional request headers</span></span>
-| <span data-ttu-id="dfdb7-118">Имя</span><span class="sxs-lookup"><span data-stu-id="dfdb7-118">Name</span></span>       | <span data-ttu-id="dfdb7-119">Описание</span><span class="sxs-lookup"><span data-stu-id="dfdb7-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="69036-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="69036-117">Optional request headers</span></span>
+| <span data-ttu-id="69036-118">Имя</span><span class="sxs-lookup"><span data-stu-id="69036-118">Name</span></span>       | <span data-ttu-id="69036-119">Описание</span><span class="sxs-lookup"><span data-stu-id="69036-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="dfdb7-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="dfdb7-120">Authorization</span></span>  | <span data-ttu-id="dfdb7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dfdb7-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="dfdb7-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="dfdb7-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="69036-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="69036-120">Authorization</span></span>  | <span data-ttu-id="69036-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="69036-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="69036-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="69036-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="69036-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="69036-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dfdb7-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dfdb7-126">Request body</span></span>
-<span data-ttu-id="dfdb7-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="69036-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="69036-126">Request body</span></span>
+<span data-ttu-id="69036-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="69036-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="dfdb7-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="dfdb7-130">Property</span></span>     | <span data-ttu-id="dfdb7-131">Тип</span><span class="sxs-lookup"><span data-stu-id="dfdb7-131">Type</span></span>   |<span data-ttu-id="dfdb7-132">Описание</span><span class="sxs-lookup"><span data-stu-id="dfdb7-132">Description</span></span>|
+| <span data-ttu-id="69036-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="69036-130">Property</span></span>     | <span data-ttu-id="69036-131">Тип</span><span class="sxs-lookup"><span data-stu-id="69036-131">Type</span></span>   |<span data-ttu-id="69036-132">Описание</span><span class="sxs-lookup"><span data-stu-id="69036-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dfdb7-133">name</span><span class="sxs-lookup"><span data-stu-id="dfdb7-133">name</span></span>|<span data-ttu-id="dfdb7-134">string</span><span class="sxs-lookup"><span data-stu-id="dfdb7-134">string</span></span>|<span data-ttu-id="dfdb7-135">Отображаемое имя листа.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-135">The display name of the worksheet.</span></span>|
-|<span data-ttu-id="dfdb7-136">position</span><span class="sxs-lookup"><span data-stu-id="dfdb7-136">position</span></span>|<span data-ttu-id="dfdb7-137">int</span><span class="sxs-lookup"><span data-stu-id="dfdb7-137">int</span></span>|<span data-ttu-id="dfdb7-138">Положение листа (начиная с нуля) в книге.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-138">The zero-based position of the worksheet within the workbook.</span></span>|
-|<span data-ttu-id="dfdb7-139">visibility</span><span class="sxs-lookup"><span data-stu-id="dfdb7-139">visibility</span></span>|<span data-ttu-id="dfdb7-140">string</span><span class="sxs-lookup"><span data-stu-id="dfdb7-140">string</span></span>|<span data-ttu-id="dfdb7-p105">Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-p105">The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.</span></span>|
+|<span data-ttu-id="69036-133">name</span><span class="sxs-lookup"><span data-stu-id="69036-133">name</span></span>|<span data-ttu-id="69036-134">string</span><span class="sxs-lookup"><span data-stu-id="69036-134">string</span></span>|<span data-ttu-id="69036-135">Отображаемое имя листа.</span><span class="sxs-lookup"><span data-stu-id="69036-135">The display name of the worksheet.</span></span>|
+|<span data-ttu-id="69036-136">position</span><span class="sxs-lookup"><span data-stu-id="69036-136">position</span></span>|<span data-ttu-id="69036-137">int</span><span class="sxs-lookup"><span data-stu-id="69036-137">int</span></span>|<span data-ttu-id="69036-138">Положение листа (начиная с нуля) в книге.</span><span class="sxs-lookup"><span data-stu-id="69036-138">The zero-based position of the worksheet within the workbook.</span></span>|
+|<span data-ttu-id="69036-139">visibility</span><span class="sxs-lookup"><span data-stu-id="69036-139">visibility</span></span>|<span data-ttu-id="69036-140">string</span><span class="sxs-lookup"><span data-stu-id="69036-140">string</span></span>|<span data-ttu-id="69036-p105">Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.</span><span class="sxs-lookup"><span data-stu-id="69036-p105">The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dfdb7-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="dfdb7-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69036-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="69036-143">Response</span></span>
 
-<span data-ttu-id="dfdb7-144">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-144">If successful, this method returns a `200 OK` response code and updated [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="dfdb7-145">Пример</span><span class="sxs-lookup"><span data-stu-id="dfdb7-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dfdb7-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="dfdb7-146">Request</span></span>
-<span data-ttu-id="dfdb7-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-147">Here is an example of the request.</span></span>
+<span data-ttu-id="69036-144">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="69036-144">If successful, this method returns a `200 OK` response code and updated [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="69036-145">Пример</span><span class="sxs-lookup"><span data-stu-id="69036-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="69036-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="69036-146">Request</span></span>
+<span data-ttu-id="69036-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="69036-147">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dfdb7-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="dfdb7-148">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="69036-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="69036-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_worksheet"
@@ -68,22 +68,26 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dfdb7-149">C#</span><span class="sxs-lookup"><span data-stu-id="dfdb7-149">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="69036-149">C#</span><span class="sxs-lookup"><span data-stu-id="69036-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-worksheet-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dfdb7-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="dfdb7-150">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="69036-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="69036-150">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-worksheet-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dfdb7-151">Цель — C</span><span class="sxs-lookup"><span data-stu-id="dfdb7-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="69036-151">Цель — C</span><span class="sxs-lookup"><span data-stu-id="69036-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-worksheet-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="69036-152">Java</span><span class="sxs-lookup"><span data-stu-id="69036-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-worksheet-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="dfdb7-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="dfdb7-152">Response</span></span>
-<span data-ttu-id="dfdb7-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="dfdb7-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="69036-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="69036-153">Response</span></span>
+<span data-ttu-id="69036-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="69036-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
