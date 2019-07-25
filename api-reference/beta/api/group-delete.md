@@ -4,12 +4,12 @@ description: Описывает метод Delete ресурса Group (Entity) 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a0a7ba7c49714ac685920b6ee70f9e71df7dfa92
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 082196d3d98becd32e7d04c99b7333403e3608da
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440619"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858701"
 ---
 # <a name="delete-group"></a>Удаление группы
 
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/groups/{id}
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
