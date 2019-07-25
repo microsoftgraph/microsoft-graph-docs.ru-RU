@@ -2,12 +2,12 @@
 title: 'Привилежедроле: Селфактивате'
 description: Активируйте роль, назначенную инициатору запроса.
 localization_priority: Normal
-ms.openlocfilehash: f2a8db8b56af011be1f5a07c02b730da1faa242c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a3ad5f6b000148d78184b21c0a02868190a2c1ae
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445025"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875805"
 ---
 # <a name="privilegedrole-selfactivate"></a>Привилежедроле: Селфактивате
 
@@ -89,6 +89,10 @@ Content-length: 142
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

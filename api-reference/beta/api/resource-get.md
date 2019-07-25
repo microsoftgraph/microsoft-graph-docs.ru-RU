@@ -4,12 +4,12 @@ description: Получение двоичных данных объекта р�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 3daa29b322f71c41cd5199759c28160d648e5b3f
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c3b1afbd14c6e2220d7e34f9eda531c019da6fd8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35456612"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35871170"
 ---
 # <a name="get-resource"></a>Вывод ресурса
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-resource-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-resource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,12 +2,12 @@
 title: Перечисление транзитивных servicePrincipal memberOf
 description: Получение групп и ролей каталогов, членом которых является данный участник службы. Эта операция является транзитивным и включает все группы, вложенные в состав участника службы.
 localization_priority: Normal
-ms.openlocfilehash: 8fa94ecc34953c6496f2c00da3a18e33f1a8cdcb
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 440c55cd30ef87bb3589ba6336f799297597a925
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35457242"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35869945"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Перечисление транзитивных servicePrincipal memberOf
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-memberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

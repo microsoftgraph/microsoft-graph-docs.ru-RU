@@ -2,12 +2,12 @@
 title: 'Привилежедролеассигнмент: Макилигибле'
 description: Выполнение назначения ролей как соответствующего требованиям. Если назначение роли уже доступно перед вызовом, оно ничего не делает. Если назначение роли является необратимым, а запрашивающий отличается от конечного пользователя, назначение роли станет доступным, и роль будет отключена для целевого пользователя. Если запрашивающей стороны является целевой пользователь, а роль является администратором безопасности или привилегированным администратором ролей, роль будет активирована с истечением срока действия по умолчанию.
 localization_priority: Normal
-ms.openlocfilehash: 83255aec605a39ae6e86d6845ab0ab983d9413f8
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 0cc2b650e90064dd18e66ede1a59c50dc23665e2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35444948"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875699"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>Привилежедролеассигнмент: Макилигибле
 
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligibl
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignment-makeeligible-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignment-makeeligible-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

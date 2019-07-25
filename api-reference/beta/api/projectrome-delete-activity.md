@@ -3,12 +3,12 @@ title: Удаление действия
 description: Удаление существующего действия пользователя для вашего приложения.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 18062f99f2106eaf60a4f1bab746513e15dda9c7
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 04236f3403799e59b8cbcea4d2eb21632a677a5a
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455492"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35875266"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

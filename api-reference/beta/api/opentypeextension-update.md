@@ -3,12 +3,12 @@ title: Обновление открытого расширения
 description: 'Обновление открытого расширения (объекта openTypeExtension) с использованием свойств, указанных в теле запроса:'
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 7a450033558a177f4b10a57f07cb79e669a6adbf
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 21bb8eb0f88a84a59de0b6fbf0268f0a4eaf73b8
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450529"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35878155"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -220,6 +220,10 @@ Content-type: application/json
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
