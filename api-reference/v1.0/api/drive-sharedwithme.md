@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Создание списка файлов, к которым мне предоставлен доступ
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a12178ceacd1730d8fe8df59508f400c6e460440
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: b2aabc84b0842331e6a52677f347a86c0f17740d
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35445781"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35883070"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 
@@ -48,6 +48,10 @@ GET /me/drive/sharedWithMe
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

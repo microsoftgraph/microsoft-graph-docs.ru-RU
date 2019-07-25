@@ -4,12 +4,12 @@ description: Получение списка непосредственных у
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f03e1b62d4e1e765cd552802af22361a4e88419a
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: f70ca44404e0a5fb72f6e347e8a6ffa6fa2d1727
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35441641"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889125"
 ---
 # <a name="list-members"></a>Список элементов
 Получение списка непосредственных участников группы. Участниками групп могут быть пользователи, контакты и другие группы. Эта операция не является транзитивной.
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
