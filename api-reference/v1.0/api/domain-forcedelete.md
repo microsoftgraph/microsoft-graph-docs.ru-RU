@@ -4,42 +4,42 @@ description: Удаляет домен с помощью асинхронной 
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fe9c6cfa49b3e991cab3d32922b7b5bba8d33e2
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a662d86f3050fdad5e371f0d62c93745fa98afed
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35461269"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35889960"
 ---
-# <a name="force-domain-deletion"></a><span data-ttu-id="f6850-103">Принудительное удаление домена</span><span class="sxs-lookup"><span data-stu-id="f6850-103">Force domain deletion</span></span>
+# <a name="force-domain-deletion"></a><span data-ttu-id="ab507-103">Принудительное удаление домена</span><span class="sxs-lookup"><span data-stu-id="ab507-103">Force domain deletion</span></span>
 
-<span data-ttu-id="f6850-104">Удаляет домен с помощью асинхронной длительной операции.</span><span class="sxs-lookup"><span data-stu-id="f6850-104">Deletes a domain using an asynchronous long-running operation.</span></span>
+<span data-ttu-id="ab507-104">Удаляет домен с помощью асинхронной длительной операции.</span><span class="sxs-lookup"><span data-stu-id="ab507-104">Deletes a domain using an asynchronous long-running operation.</span></span>
 
-<span data-ttu-id="f6850-105">В рамках этой операции выполняются следующие действия:</span><span class="sxs-lookup"><span data-stu-id="f6850-105">The following actions are performed as part of this operation:</span></span>
+<span data-ttu-id="ab507-105">В рамках этой операции выполняются следующие действия:</span><span class="sxs-lookup"><span data-stu-id="ab507-105">The following actions are performed as part of this operation:</span></span>
 
-* <span data-ttu-id="f6850-106">Обновляет свойства `userPrincipalName`, `mail`и `proxyAddresses` свойства `users` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.</span><span class="sxs-lookup"><span data-stu-id="f6850-106">Updates the `userPrincipalName`, `mail`, and `proxyAddresses` properties of `users` with references to the deleted domain to use the initial onmicrosoft.com domain.</span></span>
+* <span data-ttu-id="ab507-106">Обновляет свойства `userPrincipalName`, `mail`и `proxyAddresses` свойства `users` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.</span><span class="sxs-lookup"><span data-stu-id="ab507-106">Updates the `userPrincipalName`, `mail`, and `proxyAddresses` properties of `users` with references to the deleted domain to use the initial onmicrosoft.com domain.</span></span>
 
-* <span data-ttu-id="f6850-107">Обновляет `mail` свойство `groups` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.</span><span class="sxs-lookup"><span data-stu-id="f6850-107">Updates the `mail` property of `groups` with references to the deleted domain to use the initial onmicrosoft.com domain.</span></span>
+* <span data-ttu-id="ab507-107">Обновляет `mail` свойство `groups` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.</span><span class="sxs-lookup"><span data-stu-id="ab507-107">Updates the `mail` property of `groups` with references to the deleted domain to use the initial onmicrosoft.com domain.</span></span>
 
-* <span data-ttu-id="f6850-108">Обновляет `identifierUris` свойство `applications` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.</span><span class="sxs-lookup"><span data-stu-id="f6850-108">Updates the `identifierUris` property of `applications` with references to the deleted domain to use the initial onmicrosoft.com domain.</span></span>
+* <span data-ttu-id="ab507-108">Обновляет `identifierUris` свойство `applications` со ссылками на удаленный домен, чтобы использовать исходный домен onmicrosoft.com.</span><span class="sxs-lookup"><span data-stu-id="ab507-108">Updates the `identifierUris` property of `applications` with references to the deleted domain to use the initial onmicrosoft.com domain.</span></span>
 
-* <span data-ttu-id="f6850-109">Если количество переименованных объектов больше 1000, возвращается ошибка.</span><span class="sxs-lookup"><span data-stu-id="f6850-109">If the number of objects to be renamed is greater than 1000, an error is returned.</span></span>
+* <span data-ttu-id="ab507-109">Если количество переименованных объектов больше 1000, возвращается ошибка.</span><span class="sxs-lookup"><span data-stu-id="ab507-109">If the number of objects to be renamed is greater than 1000, an error is returned.</span></span>
 
-* <span data-ttu-id="f6850-110">Если одно из `applications` наименования является приложением с несколькими клиентами, возвращается ошибка.</span><span class="sxs-lookup"><span data-stu-id="f6850-110">If one of the `applications` to be renamed is a multi-tenant app, an error is returned.</span></span>
+* <span data-ttu-id="ab507-110">Если одно из `applications` наименования является приложением с несколькими клиентами, возвращается ошибка.</span><span class="sxs-lookup"><span data-stu-id="ab507-110">If one of the `applications` to be renamed is a multi-tenant app, an error is returned.</span></span>
 
-<span data-ttu-id="f6850-111">После завершения удаления домена операции API для удаленного домена будут возвращать код состояния HTTP 404.</span><span class="sxs-lookup"><span data-stu-id="f6850-111">After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code.</span></span> <span data-ttu-id="f6850-112">Чтобы проверить удаление домена, можно выполнить операцию [получения домена](domain-get.md) .</span><span class="sxs-lookup"><span data-stu-id="f6850-112">To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.</span></span>
+<span data-ttu-id="ab507-111">После завершения удаления домена операции API для удаленного домена будут возвращать код состояния HTTP 404.</span><span class="sxs-lookup"><span data-stu-id="ab507-111">After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code.</span></span> <span data-ttu-id="ab507-112">Чтобы проверить удаление домена, можно выполнить операцию [получения домена](domain-get.md) .</span><span class="sxs-lookup"><span data-stu-id="ab507-112">To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f6850-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f6850-113">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ab507-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ab507-113">Permissions</span></span>
 
-<span data-ttu-id="f6850-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f6850-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ab507-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ab507-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f6850-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f6850-116">Permission type</span></span>      | <span data-ttu-id="f6850-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f6850-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ab507-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ab507-116">Permission type</span></span>      | <span data-ttu-id="ab507-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ab507-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f6850-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f6850-118">Delegated (work or school account)</span></span> | <span data-ttu-id="f6850-119">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f6850-119">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="f6850-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f6850-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6850-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f6850-121">Not supported.</span></span>    |
-|<span data-ttu-id="f6850-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f6850-122">Application</span></span> | <span data-ttu-id="f6850-123">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f6850-123">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="ab507-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ab507-118">Delegated (work or school account)</span></span> | <span data-ttu-id="ab507-119">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ab507-119">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ab507-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ab507-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab507-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ab507-121">Not supported.</span></span>    |
+|<span data-ttu-id="ab507-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ab507-122">Application</span></span> | <span data-ttu-id="ab507-123">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab507-123">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f6850-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f6850-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ab507-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ab507-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,33 +47,33 @@ ms.locfileid: "35461269"
 POST /domains/{id}/forceDelete
 ```
 
-> <span data-ttu-id="f6850-125">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="f6850-125">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="ab507-125">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="ab507-125">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f6850-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f6850-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ab507-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ab507-126">Request headers</span></span>
 
-| <span data-ttu-id="f6850-127">Имя</span><span class="sxs-lookup"><span data-stu-id="f6850-127">Name</span></span> | <span data-ttu-id="f6850-128">Описание</span><span class="sxs-lookup"><span data-stu-id="f6850-128">Description</span></span> |
+| <span data-ttu-id="ab507-127">Имя</span><span class="sxs-lookup"><span data-stu-id="ab507-127">Name</span></span> | <span data-ttu-id="ab507-128">Описание</span><span class="sxs-lookup"><span data-stu-id="ab507-128">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="f6850-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f6850-129">Authorization</span></span>  | <span data-ttu-id="f6850-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f6850-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="f6850-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f6850-132">Content-Type</span></span>  | <span data-ttu-id="f6850-133">application/json</span><span class="sxs-lookup"><span data-stu-id="f6850-133">application/json</span></span> |
+| <span data-ttu-id="ab507-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ab507-129">Authorization</span></span>  | <span data-ttu-id="ab507-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ab507-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="ab507-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ab507-132">Content-Type</span></span>  | <span data-ttu-id="ab507-133">application/json</span><span class="sxs-lookup"><span data-stu-id="ab507-133">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f6850-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f6850-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ab507-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ab507-134">Request body</span></span>
 
-<span data-ttu-id="f6850-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f6850-135">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="ab507-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="ab507-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f6850-136">Параметр</span><span class="sxs-lookup"><span data-stu-id="f6850-136">Parameter</span></span> | <span data-ttu-id="f6850-137">Тип</span><span class="sxs-lookup"><span data-stu-id="f6850-137">Type</span></span> | <span data-ttu-id="f6850-138">Описание</span><span class="sxs-lookup"><span data-stu-id="f6850-138">Description</span></span> |
+| <span data-ttu-id="ab507-136">Параметр</span><span class="sxs-lookup"><span data-stu-id="ab507-136">Parameter</span></span> | <span data-ttu-id="ab507-137">Тип</span><span class="sxs-lookup"><span data-stu-id="ab507-137">Type</span></span> | <span data-ttu-id="ab507-138">Описание</span><span class="sxs-lookup"><span data-stu-id="ab507-138">Description</span></span> |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| <span data-ttu-id="f6850-139">Параметр для отключения переименованных учетных записей пользователей.</span><span class="sxs-lookup"><span data-stu-id="f6850-139">Option to disable user accounts which are renamed.</span></span> <span data-ttu-id="f6850-140">Если учетная запись пользователя отключена, пользователь не может войти в систему.</span><span class="sxs-lookup"><span data-stu-id="f6850-140">If a user account is disabled, the user will not be allowed to sign in.</span></span> <span data-ttu-id="f6850-141">Если задано **значение true** , то `users` обновление в рамках этой операции будет отключено.</span><span class="sxs-lookup"><span data-stu-id="f6850-141">If set to **true** the `users` updated as part of this operation will be disabled.</span></span>  <span data-ttu-id="f6850-142">Значение по умолчанию: **true**.</span><span class="sxs-lookup"><span data-stu-id="f6850-142">Default value is **true**.</span></span> |
+|`disableUserAccounts`|`Boolean`| <span data-ttu-id="ab507-139">Параметр для отключения переименованных учетных записей пользователей.</span><span class="sxs-lookup"><span data-stu-id="ab507-139">Option to disable user accounts which are renamed.</span></span> <span data-ttu-id="ab507-140">Если учетная запись пользователя отключена, пользователь не может войти в систему.</span><span class="sxs-lookup"><span data-stu-id="ab507-140">If a user account is disabled, the user will not be allowed to sign in.</span></span> <span data-ttu-id="ab507-141">Если задано **значение true** , то `users` обновление в рамках этой операции будет отключено.</span><span class="sxs-lookup"><span data-stu-id="ab507-141">If set to **true** the `users` updated as part of this operation will be disabled.</span></span>  <span data-ttu-id="ab507-142">Значение по умолчанию: **true**.</span><span class="sxs-lookup"><span data-stu-id="ab507-142">Default value is **true**.</span></span> |
 
-## <a name="response-body"></a><span data-ttu-id="f6850-143">Текст отклика</span><span class="sxs-lookup"><span data-stu-id="f6850-143">Response body</span></span>
+## <a name="response-body"></a><span data-ttu-id="ab507-143">Текст отклика</span><span class="sxs-lookup"><span data-stu-id="ab507-143">Response body</span></span>
 
-<span data-ttu-id="f6850-144">В случае успеха этот метод возвращает `HTTP/1.1 204 OK` код состояния.</span><span class="sxs-lookup"><span data-stu-id="f6850-144">If successful, this method returns `HTTP/1.1 204 OK` status code.</span></span>
+<span data-ttu-id="ab507-144">В случае успеха этот метод возвращает `HTTP/1.1 204 OK` код состояния.</span><span class="sxs-lookup"><span data-stu-id="ab507-144">If successful, this method returns `HTTP/1.1 204 OK` status code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f6850-145">Пример</span><span class="sxs-lookup"><span data-stu-id="f6850-145">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ab507-145">Пример</span><span class="sxs-lookup"><span data-stu-id="ab507-145">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f6850-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="f6850-146">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ab507-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="ab507-146">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f6850-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="f6850-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ab507-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="ab507-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_forcedelete"
@@ -88,22 +88,26 @@ Content-length: 33
   "disableUserAccounts": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f6850-148">C#</span><span class="sxs-lookup"><span data-stu-id="f6850-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ab507-148">C#</span><span class="sxs-lookup"><span data-stu-id="ab507-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f6850-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="f6850-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ab507-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="ab507-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f6850-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f6850-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ab507-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ab507-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="ab507-151">Java</span><span class="sxs-lookup"><span data-stu-id="ab507-151">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f6850-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="f6850-151">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ab507-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="ab507-152">Response</span></span>
 
 <!-- {
   "blockType": "response",

@@ -4,54 +4,54 @@ description: 'Обновление перезаписываемого свойс
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a9cb278c15f2806d9010815db9f1ba31a36d502c
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: a20379b4535debbe77832e137246cb7dc5e49026
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35459953"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890649"
 ---
-# <a name="update-outlook-category"></a><span data-ttu-id="cbbda-104">Обновление категории Outlook</span><span class="sxs-lookup"><span data-stu-id="cbbda-104">Update Outlook category</span></span>
+# <a name="update-outlook-category"></a><span data-ttu-id="bfe60-104">Обновление категории Outlook</span><span class="sxs-lookup"><span data-stu-id="bfe60-104">Update Outlook category</span></span>
 
 
-<span data-ttu-id="cbbda-105">Обновление перезаписываемого свойства **color** указанного объекта [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="cbbda-105">Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span> <span data-ttu-id="cbbda-106">Нельзя изменить свойство **displayName** после создания категории.</span><span class="sxs-lookup"><span data-stu-id="cbbda-106">You cannot modify the **displayName** property once you have created the category.</span></span>
+<span data-ttu-id="bfe60-105">Обновление перезаписываемого свойства **color** указанного объекта [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="bfe60-105">Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span> <span data-ttu-id="bfe60-106">Нельзя изменить свойство **displayName** после создания категории.</span><span class="sxs-lookup"><span data-stu-id="bfe60-106">You cannot modify the **displayName** property once you have created the category.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cbbda-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cbbda-107">Permissions</span></span>
-<span data-ttu-id="cbbda-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbbda-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bfe60-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bfe60-107">Permissions</span></span>
+<span data-ttu-id="bfe60-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bfe60-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cbbda-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cbbda-110">Permission type</span></span>      | <span data-ttu-id="cbbda-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cbbda-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bfe60-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bfe60-110">Permission type</span></span>      | <span data-ttu-id="bfe60-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bfe60-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cbbda-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cbbda-112">Delegated (work or school account)</span></span> | <span data-ttu-id="cbbda-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cbbda-113">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="cbbda-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cbbda-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbbda-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cbbda-115">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="cbbda-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cbbda-116">Application</span></span> | <span data-ttu-id="cbbda-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cbbda-117">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="bfe60-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bfe60-112">Delegated (work or school account)</span></span> | <span data-ttu-id="bfe60-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfe60-113">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="bfe60-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bfe60-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bfe60-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfe60-115">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="bfe60-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bfe60-116">Application</span></span> | <span data-ttu-id="bfe60-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfe60-117">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cbbda-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cbbda-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bfe60-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bfe60-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/outlook/masterCategories/{id}
 PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cbbda-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cbbda-119">Request headers</span></span>
-| <span data-ttu-id="cbbda-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cbbda-120">Name</span></span>      |<span data-ttu-id="cbbda-121">Описание</span><span class="sxs-lookup"><span data-stu-id="cbbda-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bfe60-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bfe60-119">Request headers</span></span>
+| <span data-ttu-id="bfe60-120">Имя</span><span class="sxs-lookup"><span data-stu-id="bfe60-120">Name</span></span>      |<span data-ttu-id="bfe60-121">Описание</span><span class="sxs-lookup"><span data-stu-id="bfe60-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cbbda-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cbbda-122">Authorization</span></span>  | <span data-ttu-id="cbbda-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cbbda-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bfe60-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bfe60-122">Authorization</span></span>  | <span data-ttu-id="bfe60-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bfe60-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cbbda-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cbbda-125">Request body</span></span>
-<span data-ttu-id="cbbda-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="cbbda-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bfe60-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bfe60-125">Request body</span></span>
+<span data-ttu-id="bfe60-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="bfe60-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="cbbda-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="cbbda-129">Property</span></span>     | <span data-ttu-id="cbbda-130">Тип</span><span class="sxs-lookup"><span data-stu-id="cbbda-130">Type</span></span>   |<span data-ttu-id="cbbda-131">Описание</span><span class="sxs-lookup"><span data-stu-id="cbbda-131">Description</span></span>|
+| <span data-ttu-id="bfe60-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="bfe60-129">Property</span></span>     | <span data-ttu-id="bfe60-130">Тип</span><span class="sxs-lookup"><span data-stu-id="bfe60-130">Type</span></span>   |<span data-ttu-id="bfe60-131">Описание</span><span class="sxs-lookup"><span data-stu-id="bfe60-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cbbda-132">color</span><span class="sxs-lookup"><span data-stu-id="cbbda-132">color</span></span>|<span data-ttu-id="cbbda-133">String</span><span class="sxs-lookup"><span data-stu-id="cbbda-133">String</span></span>|<span data-ttu-id="cbbda-134">Предустановленная константа, которая характеризует категорию и сопоставлена с одним из 25 предопределенных цветов.</span><span class="sxs-lookup"><span data-stu-id="cbbda-134">A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors.</span></span> |
+|<span data-ttu-id="bfe60-132">color</span><span class="sxs-lookup"><span data-stu-id="bfe60-132">color</span></span>|<span data-ttu-id="bfe60-133">String</span><span class="sxs-lookup"><span data-stu-id="bfe60-133">String</span></span>|<span data-ttu-id="bfe60-134">Предустановленная константа, которая характеризует категорию и сопоставлена с одним из 25 предопределенных цветов.</span><span class="sxs-lookup"><span data-stu-id="bfe60-134">A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="cbbda-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="cbbda-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bfe60-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="bfe60-135">Response</span></span>
 
-<span data-ttu-id="cbbda-136">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [outlookCategory](../resources/outlookcategory.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="cbbda-136">If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cbbda-137">Пример</span><span class="sxs-lookup"><span data-stu-id="cbbda-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cbbda-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="cbbda-138">Request</span></span>
-<span data-ttu-id="cbbda-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cbbda-139">Here is an example of the request.</span></span>
+<span data-ttu-id="bfe60-136">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [outlookCategory](../resources/outlookcategory.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="bfe60-136">If successful, this method returns a `200 OK` response code and updated [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bfe60-137">Пример</span><span class="sxs-lookup"><span data-stu-id="bfe60-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bfe60-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="bfe60-138">Request</span></span>
+<span data-ttu-id="bfe60-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bfe60-139">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cbbda-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="cbbda-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bfe60-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="bfe60-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
@@ -66,22 +66,26 @@ Content-length: 30
   "color":"preset15"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cbbda-141">C#</span><span class="sxs-lookup"><span data-stu-id="cbbda-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bfe60-141">C#</span><span class="sxs-lookup"><span data-stu-id="bfe60-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-outlookcategory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cbbda-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="cbbda-142">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bfe60-142">Javascript</span><span class="sxs-lookup"><span data-stu-id="bfe60-142">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-outlookcategory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cbbda-143">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cbbda-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bfe60-143">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bfe60-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlookcategory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="bfe60-144">Java</span><span class="sxs-lookup"><span data-stu-id="bfe60-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="cbbda-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="cbbda-144">Response</span></span>
-<span data-ttu-id="cbbda-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cbbda-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bfe60-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="bfe60-145">Response</span></span>
+<span data-ttu-id="bfe60-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bfe60-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
