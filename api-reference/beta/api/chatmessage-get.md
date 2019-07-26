@@ -1,17 +1,17 @@
 ---
-title: Получение chatMessage
+title: Получение объекта chatMessage
 description: Получение одного сообщения в чате.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4f59c4f881f971a514b4922e572619a5d9a757b
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
-ms.translationtype: MT
+ms.openlocfilehash: 8d2335ea5e98816c86aff400685663320afa0325
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778392"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35863588"
 ---
-# <a name="get-chatmessage"></a>Получение chatMessage
+# <a name="get-chatmessage"></a>Получение объекта chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,12 +23,12 @@ ms.locfileid: "35778392"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Чат. Read, Chat. ReadWrite   |
+|Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Chat.Read.All   |
+|Приложение | Chat.Read.All   |
 
 > [!NOTE]
-> Перед вызовом этого API с разрешениями для приложений необходимо запросить доступ. Дополнительные сведения см [в разделе protected API в Microsoft Teams](/graph/teams-protected-apis).
+> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /chats/{id}/messages/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -71,18 +71,22 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

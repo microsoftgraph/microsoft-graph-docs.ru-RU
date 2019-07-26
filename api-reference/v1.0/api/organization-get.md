@@ -4,16 +4,19 @@ description: Получение свойств и связей объекта or
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 124f4a05f30196b622b62ecd82ea15a892e3682b
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 252664f760f4eee57d0365a0850e040b0315fdc2
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448335"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35890724"
 ---
 # <a name="get-organization"></a>Получение организации
 
-Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
+Получение свойств и связей организации, прошедшей проверку подлинности.
+
+Так как ресурс **organization** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` вы можете получить настраиваемые свойства и данные расширения в экземпляре **организации**.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -21,11 +24,11 @@ ms.locfileid: "35448335"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Для приложения | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> Примечание. Приложения с разрешением User.Read могут читать только такие свойства организации, как *id*, *displayName* и *verifiedDomains*.  Для всех остальных свойств возвращается значение `null`. Читать все свойства можно с помощью Directory.Read.All.
+> **Примечание.** Приложения с разрешением User.Read могут считывать только такие свойства организации, как **id**, **displayName** и **verifiedDomains**.  Для всех остальных свойств возвращается значение `null`. Считать все свойства можно с помощью Organization.Read.All.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,9 +44,9 @@ GET /organization
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -78,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
