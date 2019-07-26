@@ -4115,15 +4115,9 @@
                   href: api/channel-post.md
                 - name: Получение канала
                   href: api/channel-get.md
-            - name: Приложения
+            - name: Каталог приложений
               href: resources/teamsapp.md
               items:
-                - name: Список приложений в команде
-                  href: api/teamsappinstallation-list.md
-                - name: Добавление приложения в команду
-                  href: api/teamsappinstallation-add.md
-                - name: Удаление приложения из группы
-                  href: api/teamsappinstallation-delete.md
                 - name: Публикация приложения в каталоге
                   href: api/teamsapp-publish.md
                 - name: Список приложений в каталоге
@@ -4132,6 +4126,21 @@
                   href: api/teamsapp-update.md
                 - name: Удаление приложения из каталога
                   href: api/teamsapp-delete.md
+            - name: Приложение
+              items:
+                - name: Установленное приложение
+                  href: resources/teamsappinstallation.md
+                - name: Список приложений в команде
+                  href: api/teamsappinstallation-list.md
+                - name: Добавление приложения в команду
+                  href: api/teamsappinstallation-add.md
+                - name: Удаление приложения из группы
+                  href: api/teamsappinstallation-delete.md
+                - name: Обновление установленного приложения для команды
+                  href: api/teamsappinstallation-upgrade.md
+            - name: Tab
+              href: resources/teamstab.md
+              items:
                 - name: Список вкладок
                   href: api/teamstab-list.md
                 - name: Получение вкладки

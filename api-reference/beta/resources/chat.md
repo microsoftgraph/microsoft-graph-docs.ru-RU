@@ -1,15 +1,16 @@
 ---
 title: Тип ресурса Chat
 description: Чат — это коллекция chatMessages между одним или несколькими участниками.
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e95adb1c00b88fcc2649acb669ee693caef6cccf
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 83ab8428fb09a7a2dc0546dcebdf2f409d90d25a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778663"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908497"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -19,7 +20,7 @@ ms.locfileid: "35778663"
 
 ## <a name="methods"></a>Методы
 
-|  Метод       |  Возвращаемый тип  | Описание| 
+|  Метод       |  Возвращаемый тип  | Описание|
 |:---------------|:--------|:----------|
 |[Список чатов](../api/chat-list.md) | Коллекция [чата](channel.md) | Получение списка сеансов, в которые входит пользователь.|
 |[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.|
@@ -30,7 +31,7 @@ ms.locfileid: "35778663"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип   |Описание|
+| Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 | id| String| Уникальный идентификатор чата. Только для чтения.|
 | topic| String|  Необязательно Тема или тема чата. Доступно только для чатов групп.|
@@ -38,10 +39,12 @@ ms.locfileid: "35778663"
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время обновления чата. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+
+| Отношение | Тип |Описание|
 |:---------------|:--------|:----------|
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
 | members | Коллекция [конверсатионмембер](conversationmember.md) | Коллекция всех людей в чате. Допускается значение null. |
-| messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
+| messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение NULL. |
 
 ## <a name="json-representation"></a>Представление JSON
 

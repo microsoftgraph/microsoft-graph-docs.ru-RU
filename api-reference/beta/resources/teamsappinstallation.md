@@ -1,43 +1,48 @@
 ---
 title: Тип ресурса Теамсаппинсталлатион
-description: 'TeamsApp, установленный в команде. '
-author: nkramer
+description: 'TeamsApp, установленный в команде, в чате или в личной области пользователя. '
+author: clearab
+doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d8770a21b11c9ba1042c9a0f59d9405dce96f9d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 55e1246616b7a3d76c6170a02286a2cde2a15d3a
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345808"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908511"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[TeamsApp](teamsapp.md) , установленный в [команде](team.md). Все боты, которые входят в состав приложения, станут частью любой команды, в которую добавляется приложение.
+[TeamsApp](teamsapp.md) , установленный в [команде](team.md), в [чате](chat.md)или в личной области [пользователя](user.md). Все боты, которые входят в состав приложения, станут частью любой группы, чата или пользователя, к которому добавляется приложение.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Список приложений, установленных в команде.|
-|[Добавление приложения](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Добавляет (устанавливает) приложение в команду.|
-|[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
-|[Обновление приложения](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения.|
+|[Список приложений, установленных в Team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в команде.|
+|[Добавление приложения в команду](../api/teamsappinstallation-add.md) |Нет | Добавляет (устанавливает) приложение в команду.|
+|[Удаление приложения из группы](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
+|[Обновление приложения, установленного в команде](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения.|
+|[Список приложений, установленных для пользователя](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в личной области пользователя.|
+|[Добавление приложения для пользователя](../api/user-add-teamsappinstallation.md) | | Добавляет (устанавливает) приложение в личную область пользователя.|
+|[Удаление приложения для пользователя](../api/user-delete-teamsappinstallation.md) | Нет | Удаляет приложение из персональной области пользователя.|
+|[Обновление приложения, установленного для пользователя](../api/user-upgrade-teamsappinstallation.md) | Нет | Обновление до последней версии приложения, установленного в личной области пользователя.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный идентификатор (а не идентификаторы Teams). |
+| id                  | string   | Уникальный идентификатор (не идентификатор AP группы). |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| Сведения о данной версии приложения. |
+|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| Сведения о данной версии приложения. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -49,7 +54,7 @@ ms.locfileid: "33345808"
 
 ```json
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
@@ -58,7 +63,6 @@ ms.locfileid: "33345808"
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -72,4 +76,3 @@ ms.locfileid: "33345808"
   "suppressions": []
 }
 -->
-

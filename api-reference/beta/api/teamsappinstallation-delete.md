@@ -1,23 +1,25 @@
 ---
 title: Удаление приложения из группы
 description: Удаляет приложение из указанной команды.
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f744083bcde7fd682620fe4cb289d34c4aa07c8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d83069f3256774b53177db29799e6769ec3a17a9
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330437"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908364"
 ---
-# <a name="delete-app-from-team"></a>Удаление приложения из группы
+# <a name="remove-app-from-team"></a>Удаление приложения из группы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаляет [приложение](../resources/teamsappinstallation.md) из указанной [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -33,11 +35,13 @@ DELETE /teams/{id}/installedApps/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -45,21 +49,26 @@ DELETE /teams/{id}/installedApps/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "uninstall_teamsapp"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "uninstall_teamsapp",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,19 +1,18 @@
 ---
 title: Тип ресурса Теамсаппинсталлатион
 description: 'TeamsApp, установленный в команде. '
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c98f1b927c319eb1d81573fd9dc43e1baad86a39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b180cae4c700eea31a5d5d9b1504f09ca12c3ae0
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462356"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908350"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [TeamsApp](teamsapp.md) , установленный в [команде](team.md). Все боты, которые входят в состав приложения, станут частью любой команды, в которую добавляется приложение.
 
@@ -21,8 +20,8 @@ ms.locfileid: "32462356"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Список приложений, установленных в команде.|
-|[Добавление приложения](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Добавляет (устанавливает) приложение в команду.|
+|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Список приложений, установленных в команде.|
+|[Добавление приложения](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
 |[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
 |[Обновление приложения](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения.|
 
@@ -30,16 +29,16 @@ ms.locfileid: "32462356"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный идентификатор (а не идентификаторы Teams). |
+| id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
-|Теамсаппдефинитион|[Теамсаппдефинитион](teamsapp.md)| Сведения о данной версии приложения. |
+|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| Сведения о данной версии приложения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 <!-- {
   "blockType": "resource",
@@ -49,29 +48,22 @@ ms.locfileid: "32462356"
 
 ```json
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
 # <a name="see-also"></a>См. также
 
 - [teamsApp](teamsapp.md)
-- [Теамсаппдефинитион](teamsappdefinition.md)
+- [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsappinstallation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
-
+  "tocPath": ""
+}-->

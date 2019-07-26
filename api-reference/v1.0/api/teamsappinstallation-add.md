@@ -1,23 +1,23 @@
 ---
 title: Добавление приложения в команду
-description: Устанавливает приложение в указанную группу.
-author: nkramer
+description: Установка приложения для указанной команды.
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b1a241ebb9d39b26e12f59b6f8f08e71220d8021
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07e8a5989050a0323fdbcde8027e6c89bef0d454
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521896"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908468"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
-
-
-Устанавливает [приложение](../resources/teamsapp.md) в указанную [группу](../resources/team.md).
+Установка [приложения](../resources/teamsapp.md) для указанной [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -33,48 +33,51 @@ POST /teams/{id}/installedApps
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-| Свойство     | Тип   |Описание|
+| Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |teamsApp| [teamsApp](../resources/teamsapp.md) |Добавляемое приложение.|
 
+## <a name="response"></a>Отклик
 
-## <a name="response"></a>Ответ
-
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team"
 }-->
+
 ```http
 POST /teams/{id}/installedApps
+Content-type: application/json
+
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: xxx
-
-{
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -86,6 +89,3 @@ Content-length: xxx
   "section": "documentation",
   "tocPath": ""
 }-->
-
-## <a name="see-also"></a>См. также
-
