@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67a43e13be16b8e57832c8b9bcacf0658b3c0531
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+ms.openlocfilehash: c71d9d5d64750c6df48a6e9fdf602d4bec4a0760
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995023"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908495"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -52,7 +52,7 @@ ms.locfileid: "34995023"
 |[Получение руководителя](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Получение пользователя или контакта, являющегося руководителем пользователя, из свойства навигации manager.|
 |[Список memberOf](../api/user-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, ролей каталога и административных единиц, непосредственным участником которых является пользователь, из свойства навигации memberOf.|
 |[Перечисление транзитивных свойств memberOf](../api/user-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, ролей каталога и административных единиц, в которых состоит пользователь. Эта операция является транзитивной и включает группы, в которых пользователь является вложенным элементом. |
-|[Перечисление joinedTeams](../api/user-list-joinedteams.md) |Коллекция [groups](group.md)| Получение команд Microsoft Teams, непосредственным участником которых является пользователь, из свойства навигации joinedTeams.|
+|[Перечисление объектов joinedTeams](../api/user-list-joinedteams.md) |Коллекция [team](team.md)| Получение команд Microsoft Teams, непосредственным участником которых является пользователь, из свойства навигации joinedTeams.|
 |[Список ownedDevices](../api/user-list-owneddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices.|
 |[Список ownedObjects](../api/user-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects.|
 |[Перечисление plannerTasks](../api/planneruser-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получает объекты plannerTask, назначенные пользователю.|
@@ -214,7 +214,8 @@ ms.locfileid: "34995023"
 |mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, роли каталога и административные единицы, в которых состоит пользователь. Только для чтения. Допускается значение null.|
-|joinedTeams|Коллекция [group](group.md)|Команды Microsoft Teams, участником которых является пользователь. Только для чтения. Допускается значение null.|
+|joinedTeams|Коллекция [team](team.md)|Команды Microsoft Teams, участником которых является пользователь. Только для чтения. Допускается значение null.|
+|teamwork|[userTeamwork](userteamwork.md)| Контейнер для функций Microsoft Teams, доступных пользователю. Только для чтения. Допускается значение null.|
 |messages|Коллекция [message](message.md)|Сообщения в почтовом ящике или папке. Только для чтения. Допускается значение null.|
 |onenote|[onenote](onenote.md)| Только для чтения.|
 |outlook|[outlookUser](outlookuser.md)| Выборочные службы Outlook, доступные пользователю. Только для чтения. Допускается значение null.|
@@ -253,6 +254,7 @@ ms.locfileid: "34995023"
     "manager",
     "memberOf",
     "joinedTeams",
+    "teamwork",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
@@ -352,6 +354,7 @@ ms.locfileid: "34995023"
   "manager": {"@odata.type": "microsoft.graph.directoryObject"},
   "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "teamwork": {"@odata.type": "microsoft.graph.teamwork"},
   "messages": [{ "@odata.type": "microsoft.graph.message"}],
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],

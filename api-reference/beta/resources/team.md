@@ -1,15 +1,16 @@
 ---
 title: Тип ресурса team
 description: 'Команда в Microsoft Teams — это коллекция каналов. '
-author: nkramer
+author: clearab
+doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52837993d26b764aa8590aadec327fd3a660f104
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+ms.openlocfilehash: 85315d43b1de42e74b83d0ba9664ebfdb7847258
+ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812833"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35908518"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -17,9 +18,7 @@ ms.locfileid: "34812833"
 
 Команда в Microsoft Teams — это коллекция объектов [channel](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
 
-Каждая команда связана с [группой](../resources/group.md).
-У группы такой же идентификатор, как у команды. Например, /groups/{id}/team совпадает с /teams/{id}.
-Дополнительные сведения о работе с группами и участниками в командах см. в статье [Работа с Microsoft Teams при помощи REST API Microsoft Graph](teams-api-overview.md).
+Каждая команда связана с [группой](../resources/group.md). У группы такой же идентификатор, как у команды. Например, `/groups/{id}/team` совпадает с `/teams/{id}`. Дополнительные сведения о работе с группами и участниками в командах см. в статье [Работа с Microsoft Teams при помощи REST API Microsoft Graph](teams-api-overview.md).
 
 ## <a name="methods"></a>Методы
 
@@ -44,7 +43,7 @@ ms.locfileid: "34812833"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство | Тип   | Описание |
+| Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |displayName|string| Имя команды. |
 |description|string| Необязательное описание для команды. |
@@ -62,16 +61,16 @@ ms.locfileid: "34812833"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип   | Описание |
+| Отношение | Тип | Описание |
 |:---------------|:--------|:----------|
 |apps|Коллекция [teamsApp](teamsapp.md)| (Устарело) Приложения, установленные в команде.|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
 |owners|[user](user.md)| Список владельцев команды. В настоящее время при создании группы с использованием разрешений для приложения необходимо указать только одного владельца. При использовании делегированных разрешений нельзя указать владельца (владельцем является текущий пользователь). Владельца необходимо указать в виде ИД объекта (GUID), а не имени участника-пользователя (UPN). |
 |operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
+|primaryChannel|[channel](channel.md)|Основной канал, связанный с командой.|
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
 |шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates). |
-
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -116,5 +115,6 @@ ms.locfileid: "34812833"
 -->
 
 ## <a name="see-also"></a>См. также
+
 - [Создание группы с командой](/graph/teams-create-group-and-team)
 - [Обзор API Teams](teams-api-overview.md)
