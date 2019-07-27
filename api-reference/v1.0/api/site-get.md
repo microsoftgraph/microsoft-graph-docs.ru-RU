@@ -5,20 +5,20 @@ ms.date: 09/10/2017
 title: Получение сайта SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d97444f715daa67f82bd9f739a09eae588aa0ab9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d4978dd4f2cb9918caa3791227dc684227ea7027
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891555"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918032"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
 Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.
 
-[site]: ../resources/site.md
+[сайта]: ../resources/site.md
 
-При обращении ресурс **site** рассматривается как уникальный идентификатор, состоящий из следующих значений:
+Для обращения к ресурсу **site** используется уникальный идентификатор, при создании которого используются указанные ниже значения.
 
 * имя узла семейства веб-сайтов (contoso.sharepoint.com);
 * уникальный идентификатор семейства веб-сайтов (GUID);
