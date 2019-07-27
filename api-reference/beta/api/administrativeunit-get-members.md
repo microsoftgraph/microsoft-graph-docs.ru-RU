@@ -4,12 +4,12 @@ description: Используйте этот API для получения оп�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69f2017015007c1a70fa7a1be73a01def827610b
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 3a9752d37fed21ebadbd0e05cc30831b13f30ef5
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34655336"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35917960"
 ---
 # <a name="get-a-member"></a>Получение члена
 
@@ -23,9 +23,9 @@ ms.locfileid: "34655336"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 

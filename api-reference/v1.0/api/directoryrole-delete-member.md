@@ -4,12 +4,12 @@ description: Удаление элемента из объекта directoryRole
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d02031382482a1835bf12cc68c894cb3f3249fb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: be153524d166e97a42bade6070091b27e72cec98
+ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891429"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "35918036"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -22,9 +22,9 @@ ms.locfileid: "35891429"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Ролеманажемент. ReadWrite. Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
