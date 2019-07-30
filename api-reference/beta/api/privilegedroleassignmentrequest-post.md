@@ -2,12 +2,12 @@
 title: Создание Привилежедролеассигнментрекуест
 description: Создание объекта привилежедролеассигнментрекуест.
 localization_priority: Normal
-ms.openlocfilehash: f2b69bd44b1d8506f016757b5c309bf50ed0423f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0cb7e958e9eaf8550d1262ed00e66ee477cbd195
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875546"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931855"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание Привилежедролеассигнментрекуест
 
@@ -41,7 +41,7 @@ POST /privilegedRoleAssignmentRequests
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
 |roleId|String|Идентификатор роли. Обязательное.|
-|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: Администраторы Add Users to Roles; `UserAdd`: Пользователи добавляют назначения ролей. Обязательно.|
+|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: администраторы добавляют пользователей к ролям; `UserAdd`: Пользователи добавляют назначения ролей. Обязательно.|
 |Ассигнментстате|String|Состояние назначения. Значение может быть `Eligible` для правого назначения `Active` , если оно напрямую назначено `Active` администраторами или активировано в соответствии с подходящими пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательно.|
 |причиной|String|Необходимо указать причину для запроса на назначение роли для аудита и проверки.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение роли.|

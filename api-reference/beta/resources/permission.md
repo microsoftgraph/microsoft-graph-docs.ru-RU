@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Permission
+title: Тип ресурса разрешения
+description: ресурс Permission, представляющий разрешение на совместный доступ, предоставленное для объекта driveItem
 localization_priority: Normal
-ms.openlocfilehash: e8a4adaa3c1d41270e172f9d0b0e1bf3829927c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.prod: sharepoint
+ms.openlocfilehash: e43889f3dcab5c887cffe58cfcc4ac632389f980
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344984"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932467"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 
@@ -71,7 +72,7 @@ ms.locfileid: "33344984"
 | roles               | Collection(String)          | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
 | shareId             | Строка                      | Уникальный маркер, который можно использовать для доступа к общему элементу через **[API shares][]**. Только для чтения.
 | expirationDateTime  | DateTimeOffset              | Формат YYYY – MM – ДДВчч: mm: ССЧП of DateTimeOffset указывает срок действия разрешения. DateTime. MinValue указывает, что для этого разрешения не задано действие срока действия. Необязательно.
-| hasPassword         | Логический                     | Указывает, задан ли для этого разрешения пароль, который отображается в ответе. НеОбязательный и только для чтения и только для OneDrive персональный.
+| hasPassword         | Boolean                     | Указывает, задан ли для этого разрешения пароль, который отображается в ответе. Необязательный и только для чтения и только для OneDrive персональный.
 
 ### <a name="roles-enumeration-values"></a>Значения перечислений ролей
 
@@ -141,6 +142,25 @@ ms.locfileid: "33344984"
 }
 ```
 
+### <a name="existing-access-link"></a>Существующая ссылка доступа
+
+Эта ссылка не предоставляет пользователю никаких дополнительных привилегий.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
 ### <a name="specific-people-link"></a>Ссылка на конкретные люди
 
 Эта ссылка обеспечивает доступ для чтения и записи к определенным пользователям в `grantedToIdentities` коллекции.
@@ -176,8 +196,7 @@ ms.locfileid: "33344984"
 
 ## <a name="sharing-invitations"></a>Приглашение на общий доступ
 
-Разрешения, отправляемые API-интерфейсом [INVITE][] , могут содержать []дополнительные сведения в аспекте[SharingInvitation] .
-Если приглашение было отправлено на адрес электронной почты, который не отвечает на известную учетную запись, свойство **грантедто** не может быть установлено до тех пор, пока не будет активировано приглашение, которое возникает при первом щелчке ссылки и входе в систему.
+Разрешения, отправляемые API [INVITE][] или [предоставления][] , могут содержать дополнительные сведения в [][SharingInvitation] аспекта приглашения для адресов электронной почты, которые не совпадают с известной учетной записью. В таких случаях свойство **грантедто** может быть настроено до тех пор, пока не будет активирована ссылка приглашения, которая возникает при первом щелчке ссылки и входе в систему.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -226,11 +245,12 @@ ms.locfileid: "33344984"
 | [Создание ссылки] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Приглашение пользователей] [пригласить]                                  | `POST /drive/items/{item-id}/invite`
 | [Обновление](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Удаление](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [удаление](../api/permission-delete.md);                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 
 [createLink]: ../api/driveitem-createlink.md
+[обладают]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
 [ложите]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md

@@ -2,12 +2,12 @@
 title: Создание объекта inferenceClassificationOverride
 description: 'Создание переопределения для отправителя, указанному по SMTP-адресу. Будущие сообщения с этого SMTP-адреса будут согласованы. '
 localization_priority: Normal
-ms.openlocfilehash: 5a3972a9c8a86f6bf49c892511a05e398427f33a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 967f8794a5effa68fc42dae578d4dcf0034aabf2
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880838"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932479"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Создание объекта inferenceClassificationOverride
 
@@ -15,7 +15,7 @@ ms.locfileid: "35880838"
 
 **Примечание**
 
-- Если переопределение с таким же SMTP-адресом уже существует, его поля **classifyAs** и **name** будут обновлены с использованием предоставленных значений.
+- Если переопределение с таким же SMTP-адресом уже существует, то поля **classifyAs** и **Name** этого переопределения обновляются с использованием предоставленных значений.
 - Максимальное количество переопределений, поддерживаемых для почтового ящика, — 1000. Они основываются на уникальных SMTP-адресах отправителей.
 - Операция POST поддерживает создание только одного переопределения в один момент времени.
 

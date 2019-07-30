@@ -4,12 +4,12 @@ description: Обновление свойств объекта **educationuser*
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a0f3f7a1ed9f28f8b6a09ccf278adff39d7dc07d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: e38f555d9264ecf2280a2b09a97264ebee7bc96e
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887516"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35932077"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Адрес проживания пользователя.|
 |primaryRole|string| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Допустимые значения: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| Если основная роль — teacher, этот блок будет содержать данные, касающиеся преподавателя.|
+|teacher|[educationTeacher](../resources/educationteacher.md)| Если основная роль — преподаватель, этот блок будет содержать данные, характерные для преподавателя.|
 
 
 ## <a name="response"></a>Отклик
