@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 5c9390eacee57725b35762aaff1e9d95033e74a7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 889d1faf5d328255fea7e0404c0ea39829cf9951
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864696"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35934028"
 ---
 ```java
 
@@ -35,7 +35,7 @@ boolean maskCallee = False;
 boolean maskCaller = False;
 
 graphClient.app().calls("{id}")
-    .redirect(targetsList,targetDisposition,timeout,maskCallee,maskCaller)
+    .redirect(targetsList,targetDisposition,timeout,maskCallee,maskCaller,callbackUri)
     .buildRequest()
     .post();
 
