@@ -5,56 +5,58 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a97c0d47633eced4e7ee24cea3649c20f4580ec1
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: 86902435cad896256775711f48dd4a531adce8f9
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908371"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931707"
 ---
-# <a name="add-app-to-team"></a><span data-ttu-id="6007f-103">Добавление приложения в команду</span><span class="sxs-lookup"><span data-stu-id="6007f-103">Add app to team</span></span>
+# <a name="add-app-to-team"></a><span data-ttu-id="0dbdd-103">Добавление приложения в команду</span><span class="sxs-lookup"><span data-stu-id="0dbdd-103">Add app to team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6007f-104">Устанавливает [приложение](../resources/teamsapp.md) в указанную [группу](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="6007f-104">Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="0dbdd-104">Устанавливает [приложение](../resources/teamsapp.md) в указанную [группу](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="0dbdd-104">Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6007f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6007f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0dbdd-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0dbdd-105">Permissions</span></span>
 
-<span data-ttu-id="6007f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6007f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0dbdd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0dbdd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6007f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6007f-108">Permission type</span></span>      | <span data-ttu-id="6007f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6007f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0dbdd-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0dbdd-108">Permission type</span></span>      | <span data-ttu-id="0dbdd-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0dbdd-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6007f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6007f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6007f-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6007f-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6007f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6007f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6007f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6007f-113">Not supported.</span></span>    |
-|<span data-ttu-id="6007f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6007f-114">Application</span></span> | <span data-ttu-id="6007f-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6007f-115">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="0dbdd-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0dbdd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0dbdd-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0dbdd-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0dbdd-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0dbdd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0dbdd-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0dbdd-113">Not supported.</span></span>    |
+|<span data-ttu-id="0dbdd-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0dbdd-114">Application</span></span> | <span data-ttu-id="0dbdd-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0dbdd-115">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6007f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6007f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0dbdd-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0dbdd-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/installedApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6007f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6007f-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0dbdd-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0dbdd-117">Request headers</span></span>
 
-| <span data-ttu-id="6007f-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6007f-118">Header</span></span>       | <span data-ttu-id="6007f-119">Значение</span><span class="sxs-lookup"><span data-stu-id="6007f-119">Value</span></span> |
+| <span data-ttu-id="0dbdd-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0dbdd-118">Header</span></span>       | <span data-ttu-id="0dbdd-119">Значение</span><span class="sxs-lookup"><span data-stu-id="0dbdd-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6007f-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6007f-120">Authorization</span></span>  | <span data-ttu-id="6007f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6007f-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0dbdd-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0dbdd-120">Authorization</span></span>  | <span data-ttu-id="0dbdd-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0dbdd-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6007f-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6007f-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0dbdd-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0dbdd-123">Request body</span></span>
 
-| <span data-ttu-id="6007f-124">Свойство</span><span class="sxs-lookup"><span data-stu-id="6007f-124">Property</span></span>   | <span data-ttu-id="6007f-125">Тип</span><span class="sxs-lookup"><span data-stu-id="6007f-125">Type</span></span> |<span data-ttu-id="6007f-126">Описание</span><span class="sxs-lookup"><span data-stu-id="6007f-126">Description</span></span>|
+| <span data-ttu-id="0dbdd-124">Свойство</span><span class="sxs-lookup"><span data-stu-id="0dbdd-124">Property</span></span>   | <span data-ttu-id="0dbdd-125">Тип</span><span class="sxs-lookup"><span data-stu-id="0dbdd-125">Type</span></span> |<span data-ttu-id="0dbdd-126">Описание</span><span class="sxs-lookup"><span data-stu-id="0dbdd-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6007f-127">teamsApp</span><span class="sxs-lookup"><span data-stu-id="6007f-127">teamsApp</span></span>|<span data-ttu-id="6007f-128">String</span><span class="sxs-lookup"><span data-stu-id="6007f-128">String</span></span>|<span data-ttu-id="6007f-129">Идентификатор добавляемого приложения.</span><span class="sxs-lookup"><span data-stu-id="6007f-129">The id of the app to add.</span></span>|
+|<span data-ttu-id="0dbdd-127">teamsApp</span><span class="sxs-lookup"><span data-stu-id="0dbdd-127">teamsApp</span></span>|<span data-ttu-id="0dbdd-128">String</span><span class="sxs-lookup"><span data-stu-id="0dbdd-128">String</span></span>|<span data-ttu-id="0dbdd-129">Идентификатор добавляемого приложения.</span><span class="sxs-lookup"><span data-stu-id="0dbdd-129">The id of the app to add.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="6007f-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="6007f-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0dbdd-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="0dbdd-130">Response</span></span>
 
-<span data-ttu-id="6007f-p103">При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="6007f-p103">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0dbdd-p103">При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0dbdd-p103">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6007f-133">Пример</span><span class="sxs-lookup"><span data-stu-id="6007f-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0dbdd-133">Пример</span><span class="sxs-lookup"><span data-stu-id="0dbdd-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6007f-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="6007f-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0dbdd-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="0dbdd-134">Request</span></span>
 
-<span data-ttu-id="6007f-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6007f-135">The following is an example of the request.</span></span>
+<span data-ttu-id="0dbdd-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0dbdd-135">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="0dbdd-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="0dbdd-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_teamsApp"
@@ -67,10 +69,28 @@ Content-type: application/json
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0dbdd-137">C#</span><span class="sxs-lookup"><span data-stu-id="0dbdd-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="6007f-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="6007f-136">Response</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0dbdd-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="0dbdd-138">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="6007f-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="6007f-137">The following is an example of the response.</span></span>
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0dbdd-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="0dbdd-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="0dbdd-140">Java</span><span class="sxs-lookup"><span data-stu-id="0dbdd-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="0dbdd-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="0dbdd-141">Response</span></span>
+
+<span data-ttu-id="0dbdd-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0dbdd-142">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

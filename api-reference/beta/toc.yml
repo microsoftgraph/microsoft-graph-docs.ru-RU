@@ -7442,6 +7442,8 @@
                   href: api/itemactivity-getbyinterval.md
                 - name: Предварительный просмотр элемента
                   href: api/driveitem-preview.md
+                - name: Пакеты
+                  href: resources/bundle.md
             - name: Разрешения
               href: resources/permission.md
               items:
@@ -7449,6 +7451,8 @@
                   href: api/driveitem-createlink.md
                 - name: Использование ссылок совместного доступа
                   href: api/shares-get.md
+                - name: Добавление пользователей в ссылку для общего доступа
+                  href: api/permission-grant.md
                 - name: Разрешения списка
                   href: api/driveitem-list-permissions.md
                 - name: Добавление разрешений
@@ -8560,7 +8564,7 @@
                   href: api/onenote-list-sections.md
                 - name: Список групп разделов
                   href: api/onenote-list-sectiongroups.md
-                - name: Список страниц
+                - name: Вывод списка страниц
                   href: api/onenote-list-pages.md
                 - name: Создание страницы
                   href: api/onenote-post-pages.md

@@ -5,51 +5,51 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbf78bb61c57ef447da07663b5032ab213e3b46e
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: b3bc691b34e57783ef0f3066bfd26efb53c34b41
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908315"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35930457"
 ---
-# <a name="create-owner"></a><span data-ttu-id="78d67-103">Создание владельца</span><span class="sxs-lookup"><span data-stu-id="78d67-103">Create owner</span></span>
+# <a name="create-owner"></a><span data-ttu-id="72075-103">Создание владельца</span><span class="sxs-lookup"><span data-stu-id="72075-103">Create owner</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78d67-104">Используйте этот API, чтобы создать нового владельца.</span><span class="sxs-lookup"><span data-stu-id="78d67-104">Use this API to create a new owner.</span></span>
+<span data-ttu-id="72075-104">Используйте этот API, чтобы создать нового владельца.</span><span class="sxs-lookup"><span data-stu-id="72075-104">Use this API to create a new owner.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="78d67-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="78d67-105">Permissions</span></span>
-<span data-ttu-id="78d67-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78d67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="72075-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="72075-105">Permissions</span></span>
+<span data-ttu-id="72075-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="72075-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="78d67-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="78d67-108">Permission type</span></span>      | <span data-ttu-id="78d67-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="78d67-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="72075-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="72075-108">Permission type</span></span>      | <span data-ttu-id="72075-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="72075-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78d67-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="78d67-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="78d67-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="78d67-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="78d67-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="78d67-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78d67-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78d67-113">Not supported.</span></span>    |
-|<span data-ttu-id="78d67-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="78d67-114">Application</span></span> | <span data-ttu-id="78d67-115">Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="78d67-115">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All</span></span> |
+|<span data-ttu-id="72075-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="72075-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="72075-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="72075-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="72075-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="72075-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="72075-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="72075-113">Not supported.</span></span>    |
+|<span data-ttu-id="72075-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="72075-114">Application</span></span> | <span data-ttu-id="72075-115">Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="72075-115">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78d67-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="78d67-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="72075-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="72075-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/owners/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="78d67-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="78d67-117">Request headers</span></span>
-| <span data-ttu-id="78d67-118">Имя</span><span class="sxs-lookup"><span data-stu-id="78d67-118">Name</span></span> | <span data-ttu-id="78d67-119">Описание</span><span class="sxs-lookup"><span data-stu-id="78d67-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="72075-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="72075-117">Request headers</span></span>
+| <span data-ttu-id="72075-118">Имя</span><span class="sxs-lookup"><span data-stu-id="72075-118">Name</span></span> | <span data-ttu-id="72075-119">Описание</span><span class="sxs-lookup"><span data-stu-id="72075-119">Description</span></span>|
 |:---- |:---------- |
-| <span data-ttu-id="78d67-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="78d67-120">Authorization</span></span> | <span data-ttu-id="78d67-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78d67-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="72075-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="72075-120">Authorization</span></span> | <span data-ttu-id="72075-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="72075-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="78d67-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="78d67-123">Request body</span></span>
-<span data-ttu-id="78d67-124">В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.</span><span class="sxs-lookup"><span data-stu-id="78d67-124">In the request body, supply the identifier of the directory object to be assigned as owner.</span></span>
+## <a name="request-body"></a><span data-ttu-id="72075-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="72075-123">Request body</span></span>
+<span data-ttu-id="72075-124">В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.</span><span class="sxs-lookup"><span data-stu-id="72075-124">In the request body, supply the identifier of the directory object to be assigned as owner.</span></span>
 
-## <a name="response"></a><span data-ttu-id="78d67-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="78d67-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="72075-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="72075-125">Response</span></span>
 
-<span data-ttu-id="78d67-126">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="78d67-126">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="72075-126">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="72075-126">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78d67-127">Пример</span><span class="sxs-lookup"><span data-stu-id="78d67-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="78d67-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="78d67-128">Request</span></span>
-<span data-ttu-id="78d67-129">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="78d67-129">The following example shows the request.</span></span>
+## <a name="example"></a><span data-ttu-id="72075-127">Пример</span><span class="sxs-lookup"><span data-stu-id="72075-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="72075-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="72075-128">Request</span></span>
+<span data-ttu-id="72075-129">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="72075-129">The following example shows the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="78d67-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="78d67-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="72075-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="72075-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_application"
@@ -64,17 +64,29 @@ Content-length: 30
 }
 
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78d67-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="78d67-131">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="72075-131">Javascript</span><span class="sxs-lookup"><span data-stu-id="72075-131">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="ctabcsharp"></a>[<span data-ttu-id="72075-132">C#</span><span class="sxs-lookup"><span data-stu-id="72075-132">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="72075-133">Цель — C</span><span class="sxs-lookup"><span data-stu-id="72075-133">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="72075-134">Java</span><span class="sxs-lookup"><span data-stu-id="72075-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="78d67-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="78d67-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="72075-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="72075-135">Response</span></span>
 
-<span data-ttu-id="78d67-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="78d67-133">The following is an example of the response.</span></span>
+<span data-ttu-id="72075-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="72075-136">The following is an example of the response.</span></span>
 
-><span data-ttu-id="78d67-134">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="78d67-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="78d67-135">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78d67-135">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="72075-137">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="72075-137">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="72075-138">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="72075-138">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
