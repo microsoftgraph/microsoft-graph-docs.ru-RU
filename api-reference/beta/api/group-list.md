@@ -4,72 +4,72 @@ description: Список всех групп, доступных в орган�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: d7095f37c07775dab1f31dc68a623930f741fbed
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 6d11e8e149a3046c96e9abd8bed252c624e2b55b
+ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440332"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35858217"
 ---
-# <a name="list-groups"></a><span data-ttu-id="4ef91-103">Список групп</span><span class="sxs-lookup"><span data-stu-id="4ef91-103">List groups</span></span>
+# <a name="list-groups"></a><span data-ttu-id="51a84-103">Список групп</span><span class="sxs-lookup"><span data-stu-id="51a84-103">List groups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4ef91-104">Список всех групп в организации, в том числе групп Office 365.</span><span class="sxs-lookup"><span data-stu-id="4ef91-104">List all the groups available in an organization, including but not limited to Office 365 Groups.</span></span> 
+<span data-ttu-id="51a84-104">Список всех групп в организации, в том числе групп Office 365.</span><span class="sxs-lookup"><span data-stu-id="51a84-104">List all the groups available in an organization, including but not limited to Office 365 Groups.</span></span> 
 
-<span data-ttu-id="4ef91-105">Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств.</span><span class="sxs-lookup"><span data-stu-id="4ef91-105">This operation returns by default only a subset of the more commonly used properties for each group.</span></span> <span data-ttu-id="4ef91-106">Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="4ef91-106">These _default_ properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="4ef91-107">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре `$select` запроса OData.</span><span class="sxs-lookup"><span data-stu-id="4ef91-107">To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="4ef91-108">Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.</span><span class="sxs-lookup"><span data-stu-id="4ef91-108">The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.</span></span>
+<span data-ttu-id="51a84-105">Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств.</span><span class="sxs-lookup"><span data-stu-id="51a84-105">This operation returns by default only a subset of the more commonly used properties for each group.</span></span> <span data-ttu-id="51a84-106">Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="51a84-106">These _default_ properties are noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="51a84-107">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре `$select` запроса OData.</span><span class="sxs-lookup"><span data-stu-id="51a84-107">To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option.</span></span> <span data-ttu-id="51a84-108">Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.</span><span class="sxs-lookup"><span data-stu-id="51a84-108">The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4ef91-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4ef91-109">Permissions</span></span>
-<span data-ttu-id="4ef91-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ef91-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="51a84-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="51a84-109">Permissions</span></span>
+<span data-ttu-id="51a84-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51a84-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4ef91-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4ef91-112">Permission type</span></span>      | <span data-ttu-id="4ef91-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4ef91-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="51a84-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="51a84-112">Permission type</span></span>      | <span data-ttu-id="51a84-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="51a84-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4ef91-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4ef91-114">Delegated (work or school account)</span></span> | <span data-ttu-id="4ef91-115">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4ef91-115">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="4ef91-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4ef91-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ef91-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ef91-117">Not supported.</span></span>    |
-|<span data-ttu-id="4ef91-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4ef91-118">Application</span></span> | <span data-ttu-id="4ef91-119">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ef91-119">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="51a84-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="51a84-114">Delegated (work or school account)</span></span> | <span data-ttu-id="51a84-115">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="51a84-115">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="51a84-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="51a84-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51a84-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="51a84-117">Not supported.</span></span>    |
+|<span data-ttu-id="51a84-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="51a84-118">Application</span></span> | <span data-ttu-id="51a84-119">Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51a84-119">Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4ef91-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4ef91-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51a84-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="51a84-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4ef91-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4ef91-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="51a84-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="51a84-121">Optional query parameters</span></span>
 
-<span data-ttu-id="4ef91-122">Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:</span><span class="sxs-lookup"><span data-stu-id="4ef91-122">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
+<span data-ttu-id="51a84-122">Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:</span><span class="sxs-lookup"><span data-stu-id="51a84-122">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-<span data-ttu-id="4ef91-123">С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере.</span><span class="sxs-lookup"><span data-stu-id="4ef91-123">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
+<span data-ttu-id="51a84-123">С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере.</span><span class="sxs-lookup"><span data-stu-id="51a84-123">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
 
-<span data-ttu-id="4ef91-124">Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="4ef91-124">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="51a84-124">Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="51a84-124">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4ef91-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4ef91-125">Request headers</span></span>
-| <span data-ttu-id="4ef91-126">Имя</span><span class="sxs-lookup"><span data-stu-id="4ef91-126">Name</span></span>       | <span data-ttu-id="4ef91-127">Тип</span><span class="sxs-lookup"><span data-stu-id="4ef91-127">Type</span></span> | <span data-ttu-id="4ef91-128">Описание</span><span class="sxs-lookup"><span data-stu-id="4ef91-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="51a84-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="51a84-125">Request headers</span></span>
+| <span data-ttu-id="51a84-126">Имя</span><span class="sxs-lookup"><span data-stu-id="51a84-126">Name</span></span>       | <span data-ttu-id="51a84-127">Тип</span><span class="sxs-lookup"><span data-stu-id="51a84-127">Type</span></span> | <span data-ttu-id="51a84-128">Описание</span><span class="sxs-lookup"><span data-stu-id="51a84-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="4ef91-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ef91-129">Authorization</span></span>  | <span data-ttu-id="4ef91-130">string</span><span class="sxs-lookup"><span data-stu-id="4ef91-130">string</span></span>  | <span data-ttu-id="4ef91-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4ef91-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="51a84-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="51a84-129">Authorization</span></span>  | <span data-ttu-id="51a84-130">string</span><span class="sxs-lookup"><span data-stu-id="51a84-130">string</span></span>  | <span data-ttu-id="51a84-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="51a84-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4ef91-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4ef91-133">Request body</span></span>
-<span data-ttu-id="4ef91-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4ef91-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51a84-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="51a84-133">Request body</span></span>
+<span data-ttu-id="51a84-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="51a84-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4ef91-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ef91-135">Response</span></span>
-<span data-ttu-id="4ef91-136">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4ef91-136">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span> <span data-ttu-id="4ef91-137">Отклик включает в себя только свойства по умолчанию для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="4ef91-137">The response includes only the default properties of each group.</span></span>
+## <a name="response"></a><span data-ttu-id="51a84-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="51a84-135">Response</span></span>
+<span data-ttu-id="51a84-136">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="51a84-136">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span> <span data-ttu-id="51a84-137">Отклик включает в себя только свойства по умолчанию для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="51a84-137">The response includes only the default properties of each group.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4ef91-138">Пример</span><span class="sxs-lookup"><span data-stu-id="4ef91-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="51a84-138">Пример</span><span class="sxs-lookup"><span data-stu-id="51a84-138">Example</span></span>
 
-### <a name="example-1-return-a-list-of-group-objects"></a><span data-ttu-id="4ef91-139">Пример 1. Возвращение списка объектов group</span><span class="sxs-lookup"><span data-stu-id="4ef91-139">Example 1: Return a list of group objects</span></span>
+### <a name="example-1-return-a-list-of-group-objects"></a><span data-ttu-id="51a84-139">Пример 1. Возвращение списка объектов group</span><span class="sxs-lookup"><span data-stu-id="51a84-139">Example 1: Return a list of group objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4ef91-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="4ef91-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="51a84-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="51a84-140">Request</span></span>
 
-<span data-ttu-id="4ef91-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4ef91-141">The following is an example of the request.</span></span>
+<span data-ttu-id="51a84-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="51a84-141">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4ef91-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="4ef91-142">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="51a84-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="51a84-142">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -77,25 +77,29 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```http
 GET https://graph.microsoft.com/beta/groups
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4ef91-143">C#</span><span class="sxs-lookup"><span data-stu-id="4ef91-143">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="51a84-143">C#</span><span class="sxs-lookup"><span data-stu-id="51a84-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4ef91-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4ef91-144">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="51a84-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51a84-144">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4ef91-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4ef91-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="51a84-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51a84-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="51a84-146">Java</span><span class="sxs-lookup"><span data-stu-id="51a84-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4ef91-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ef91-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="51a84-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="51a84-147">Response</span></span>
 
-<span data-ttu-id="4ef91-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4ef91-147">The following is an example of the response.</span></span>
-><span data-ttu-id="4ef91-148">**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="4ef91-148">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4ef91-149">В результате реального вызова возвращаются все свойства по умолчанию для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="4ef91-149">All the default properties are returned for each group in an actual call.</span></span>
+<span data-ttu-id="51a84-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="51a84-148">The following is an example of the response.</span></span>
+><span data-ttu-id="51a84-149">**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="51a84-149">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="51a84-150">В результате реального вызова возвращаются все свойства по умолчанию для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="51a84-150">All the default properties are returned for each group in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -181,13 +185,13 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-return-a-filtered-list-of-group-objects"></a><span data-ttu-id="4ef91-150">Пример 2. Возвращение отфильтрованного списка объектов group</span><span class="sxs-lookup"><span data-stu-id="4ef91-150">Example 2: Return a filtered list of group objects</span></span> 
+### <a name="example-2-return-a-filtered-list-of-group-objects"></a><span data-ttu-id="51a84-151">Пример 2. Возвращение отфильтрованного списка объектов group</span><span class="sxs-lookup"><span data-stu-id="51a84-151">Example 2: Return a filtered list of group objects</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="4ef91-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="4ef91-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="51a84-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="51a84-152">Request</span></span>
 
-<span data-ttu-id="4ef91-152">В этом примере используется параметр запроса `$filter` для получения групп, содержащих участников с ошибками в лицензиях из назначения лицензий на основе группы.</span><span class="sxs-lookup"><span data-stu-id="4ef91-152">This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments.</span></span> <span data-ttu-id="4ef91-153">Кроме того, параметр запроса `$select` используется для получения только свойств **id** и **displayName** в отклике для каждой группы, а не других свойств, заданных по умолчанию или нет.</span><span class="sxs-lookup"><span data-stu-id="4ef91-153">It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.</span></span>
+<span data-ttu-id="51a84-153">В этом примере используется параметр запроса `$filter` для получения групп, содержащих участников с ошибками в лицензиях из назначения лицензий на основе группы.</span><span class="sxs-lookup"><span data-stu-id="51a84-153">This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments.</span></span> <span data-ttu-id="51a84-154">Кроме того, параметр запроса `$select` используется для получения только свойств **id** и **displayName** в отклике для каждой группы, а не других свойств, заданных по умолчанию или нет.</span><span class="sxs-lookup"><span data-stu-id="51a84-154">It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4ef91-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="4ef91-154">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="51a84-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="51a84-155">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
@@ -195,24 +199,28 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4ef91-155">C#</span><span class="sxs-lookup"><span data-stu-id="4ef91-155">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="51a84-156">C#</span><span class="sxs-lookup"><span data-stu-id="51a84-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4ef91-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4ef91-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="51a84-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51a84-157">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4ef91-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4ef91-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="51a84-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51a84-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="51a84-159">Java</span><span class="sxs-lookup"><span data-stu-id="51a84-159">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-withlicenseerrors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4ef91-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ef91-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="51a84-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="51a84-160">Response</span></span>
 
-<span data-ttu-id="4ef91-159">Ниже приведен пример отклика, содержащего только запрашиваемые свойства.</span><span class="sxs-lookup"><span data-stu-id="4ef91-159">The following is an example of the response which includes only the requested properties.</span></span>
+<span data-ttu-id="51a84-161">Ниже приведен пример отклика, содержащего только запрашиваемые свойства.</span><span class="sxs-lookup"><span data-stu-id="51a84-161">The following is an example of the response which includes only the requested properties.</span></span>
 
 <!-- {
   "blockType": "response",
