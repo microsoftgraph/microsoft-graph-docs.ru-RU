@@ -4,12 +4,12 @@ description: 'Получение списка сообщений (без отв�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1c7f5eb6a5358a4cfd4d9bfcac3a7fd1756c4db4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f50b14c91bb86c81de000d9593b889f1224cd063
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864478"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931063"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -17,7 +17,7 @@ ms.locfileid: "35864478"
 
 Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md). 
 
-Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-get-messagereply.md) или [получения ответа на сообщение](channel-list-messagereplies.md). 
+Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-list-messagereplies.md) или [получения ответа на сообщение](channel-get-messagereply.md). 
 
 ## <a name="permissions"></a>Разрешения
 
