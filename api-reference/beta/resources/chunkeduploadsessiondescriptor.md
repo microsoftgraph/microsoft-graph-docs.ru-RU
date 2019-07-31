@@ -2,24 +2,27 @@
 title: Тип ресурса chunkedUploadSessionDescriptor
 description: Ниже этот ресурс представлен в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: b11bff34e70585c4cf7be23f5ce6d3a0c2ac0a0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9df47d6bc2ac99d36f87e2af3734f25462371a29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460606"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973445"
 ---
-# <a name="chunkeduploadsessiondescriptor-resource-type"></a><span data-ttu-id="ebcbf-103">Тип ресурса chunkedUploadSessionDescriptor</span><span class="sxs-lookup"><span data-stu-id="ebcbf-103">chunkedUploadSessionDescriptor resource type</span></span>
+# <a name="chunkeduploadsessiondescriptor-resource-type"></a><span data-ttu-id="484f2-103">Тип ресурса chunkedUploadSessionDescriptor</span><span class="sxs-lookup"><span data-stu-id="484f2-103">chunkedUploadSessionDescriptor resource type</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="ebcbf-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="ebcbf-104">Properties</span></span>
-| <span data-ttu-id="ebcbf-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="ebcbf-105">Property</span></span>     | <span data-ttu-id="ebcbf-106">Тип</span><span class="sxs-lookup"><span data-stu-id="ebcbf-106">Type</span></span>   |<span data-ttu-id="ebcbf-107">Описание</span><span class="sxs-lookup"><span data-stu-id="ebcbf-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="484f2-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="484f2-104">Properties</span></span>
+| <span data-ttu-id="484f2-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="484f2-105">Property</span></span>     | <span data-ttu-id="484f2-106">Тип</span><span class="sxs-lookup"><span data-stu-id="484f2-106">Type</span></span>   |<span data-ttu-id="484f2-107">Описание</span><span class="sxs-lookup"><span data-stu-id="484f2-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ebcbf-108">name</span><span class="sxs-lookup"><span data-stu-id="ebcbf-108">name</span></span>|<span data-ttu-id="ebcbf-109">String</span><span class="sxs-lookup"><span data-stu-id="ebcbf-109">String</span></span>||
+|<span data-ttu-id="484f2-108">name</span><span class="sxs-lookup"><span data-stu-id="484f2-108">name</span></span>|<span data-ttu-id="484f2-109">String</span><span class="sxs-lookup"><span data-stu-id="484f2-109">String</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="ebcbf-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ebcbf-110">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="484f2-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="484f2-110">JSON representation</span></span>
 
-<span data-ttu-id="ebcbf-111">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ebcbf-111">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="484f2-111">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="484f2-111">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
