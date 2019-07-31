@@ -4,12 +4,13 @@ description: 'Получение списка вкладок в указанно
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d9566462439d760e3331037afeae2c4c7b04b060
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a5521b0f450dc8c05f886a83dcf554f6f3315f68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330252"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987945"
 ---
 # <a name="list-tabs-in-channel"></a>Вкладки списка в канале
 
@@ -43,7 +44,7 @@ GET /teams/{id}/channels/{id}/tabs
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

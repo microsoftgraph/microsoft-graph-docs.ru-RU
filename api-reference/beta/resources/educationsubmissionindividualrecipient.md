@@ -4,12 +4,13 @@ description: 'Подкласс ЕдукатионсубмиссионреЦип�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: de58dc743cd50f0e31021b4651bb0a3b3b192197
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2eecdc7e7ddd30ecad9a520b42cd11df9565fa71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340558"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972511"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент
 

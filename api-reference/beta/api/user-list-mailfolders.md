@@ -2,14 +2,15 @@
 title: Список объектов mailFolder
 description: Получение всех почтовых папок в почтовом ящике вошедшего пользователя.
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: c006e1f4b8714c332b9a1d3144c660784fda11f5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ecffc08e39b21afff4818d25a98a6fc1d2156c43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987630"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 

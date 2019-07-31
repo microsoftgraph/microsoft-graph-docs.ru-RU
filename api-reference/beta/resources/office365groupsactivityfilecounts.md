@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 89ac23b89730ec98515d6d0d3c06867e57b19ed1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8154f24fe36f2c11f3926412c3fcc062be04b5ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457076"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966526"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>Тип ресурса office365GroupsActivityFileCounts
 
@@ -21,7 +22,7 @@ ms.locfileid: "32457076"
 | total             | Int64  | Общее количество файлов в библиотеке документов SharePoint группы. |
 | ASP            | Int64  | Количество файлов, которые были просмотрены, изменены, предоставлены в общий доступ или синхронизированы в библиотеке документов SharePoint группы. |
 | reportDate        | Дата   | Дата, когда число файлов было активно на сайте SharePoint группы. |
-| Репортпериод      | Строка | Количество дней, охватываемых отчетом.    |
+| Репортпериод      | String | Количество дней, охватываемых отчетом.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

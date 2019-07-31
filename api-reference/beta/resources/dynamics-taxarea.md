@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: aeda0ca136c178355a8a8f9589eb7410399ef62a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 09c1c51fed961489d824136f28aaa2f5b3859b44
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507233"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972896"
 ---
 # <a name="taxareas-resource-type"></a>Тип ресурса Таксареас
 Представляет тип ресурса "налоговая область" в Dynamics 365 Business Central.
@@ -22,7 +23,7 @@ ms.locfileid: "32507233"
 |[Получение Таксареас](../api/dynamics-taxarea-get.md)|Таксареас|Получает объект налоговой области.|
 |[POST Таксареас](../api/dynamics-create-taxarea.md)|Таксареас|Создает объект налоговой области.|
 |[Исправление Таксареас](../api/dynamics-taxarea-update.md)|Таксареас|Обновляет объект налоговой области.|
-|[Удаление Таксареас](../api/dynamics-taxarea-delete.md)|Нет|Удаляет объект налоговой области.|
+|[Удаление Таксареас](../api/dynamics-taxarea-delete.md)|none|Удаляет объект налоговой области.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -30,7 +31,7 @@ ms.locfileid: "32507233"
 |id|GUID|Уникальный идентификатор налоговой области. Не редактируемые.|
 |code|Строка, максимальный размер 20| Код налоговой области.|
 |displayName|Строка, максимальный размер 50| Отображаемое имя налоговой области.|
-|Такстипе|строка|Тип налога для налоговой области.|
+|Такстипе|string|Тип налога для налоговой области.|
 |lastModifiedDateTime|отличным|Дата и время последнего изменения налоговой области. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

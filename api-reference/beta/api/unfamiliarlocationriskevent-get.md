@@ -2,12 +2,15 @@
 title: Получение объекта unfamiliarLocationRiskEvent
 description: Получение свойств и связей объекта унфамилиарлокатионрискевент.
 localization_priority: Normal
-ms.openlocfilehash: 1a4e65873ba94c2c2c6eb32f59183caeab327de6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 95e235303be50a93935cd25c463a2092e485bb30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987882"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>Получение объекта unfamiliarLocationRiskEvent
 
@@ -34,7 +37,7 @@ GET /unfamiliarLocationRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -4,12 +4,13 @@ description: Эти категории затем можно применить 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ff6c9d5bccb48338d88e0698ee58c0121cf49101
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 159b7e38db24a103989e22209baf9a6424b2c1b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939716"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967478"
 ---
 # <a name="devicecategory-resource-type"></a>Тип ресурса deviceCategory
 
@@ -36,7 +37,7 @@ ms.locfileid: "33939716"
 |displayName|Строка|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

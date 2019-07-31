@@ -4,12 +4,13 @@ description: Список свойств и связей объектов window
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd8de4583607609e8a8186c439a8da858fd9e494
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1e8b7ba07586ad6edc8e555c1ae8ff68234cbbe0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962227"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974957"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>Список windows81SCEPCertificateProfiles
 

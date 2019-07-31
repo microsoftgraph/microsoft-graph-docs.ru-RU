@@ -4,12 +4,13 @@ description: Ресурс, представляющий экземпляр ус�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: c975abfa3cb580d107967c7adaf66627bad2ad2e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 474ac908edee316a63c3610782cc4b8dcce070f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938732"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967377"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 
@@ -37,9 +38,9 @@ ms.locfileid: "33938732"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта.|
+|id|String|Уникальный идентификатор для этого объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

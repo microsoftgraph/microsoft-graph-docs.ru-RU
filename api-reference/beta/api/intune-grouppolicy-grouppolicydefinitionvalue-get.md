@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта Грау
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad13b4a989a98c2bc5e1c6d138d9c2fee56a9d7b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 93622606f63844c387fa36d828728fc2f373cbc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989873"
 ---
 # <a name="get-grouppolicydefinitionvalue"></a>Получение Граупполицидефинитионвалуе
 

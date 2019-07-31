@@ -4,12 +4,13 @@ description: Подкласс объекта Едукатионресаурце.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3f2747d94c80732091db06294b26546afc567e03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d2e10ea6db0236b7deff3581c2e1b4f97c589045
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972721"
 ---
 # <a name="educationformresource-resource-type"></a>Тип ресурса Едукатионформресаурце
 
@@ -23,7 +24,7 @@ ms.locfileid: "33334267"
 |:---------------|:--------|:----------|
 |Оригиналформид|String|Исходный идентификатор формы.|
 |Формид|String|Идентификатор формы.|
-|Исграупформ|Логический|Принадлежность формы группе классов.|
+|Исграупформ|Boolean|Принадлежность формы группе классов.|
 |Виевурл|String|URL-адрес студента для формы.|
 |Виевурл|String|URL-адрес студента для формы.|
 |Едитурл|String|URL-адрес преподавателя для формы.|

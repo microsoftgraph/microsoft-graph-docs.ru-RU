@@ -4,12 +4,13 @@ description: 'Представляет параметры подключения
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 387c002240d54d1ec12e58564e91831d6f0e8a50
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c82d912b13ca68dcdccd5ace0232ed65f92cd879
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334121"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972492"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>Тип ресурса Едукатионсинчронизатионконнектионсеттингс
 
@@ -19,7 +20,7 @@ ms.locfileid: "33334121"
 
 > **Примечание:** Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов параметров подключения.
 
-## <a name="derived-types"></a>ПроизВодные типы
+## <a name="derived-types"></a>Производные типы
 | Тип | Описание | 
 |:-|:-|
 | [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | Используйте этот тип для предоставления параметров подключения OAuth1. |

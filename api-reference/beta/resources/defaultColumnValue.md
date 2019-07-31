@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Ресурс defaultColumnValue в ресурсе columnDefinition указывает значение, используемое по умолчанию, для этого столбца.
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
-ms.openlocfilehash: 2710986c3234671f75c1d303de6e0a5eefddc2f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 9c59fd3303f014f8f9f78d8abc52b7f7ff59ade1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340980"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973155"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Тип ресурса defaultColumnValue
 

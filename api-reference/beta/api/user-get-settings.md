@@ -1,22 +1,23 @@
 ---
 title: Получение параметров
-description: Чтение объекта параметров пользователя и Организации.
+description: Чтение объекта settings пользователя и организации.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dcd9079956b4db8b349ba6b81bd85d8472630643
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b0e34e790ae88eceb7e8959dd6e3b9710bf850f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334914"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987749"
 ---
 # <a name="get-settings"></a>Получение параметров
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение объекта [параметров](../resources/user-settings.md) пользователя и Организации.
-Чтобы узнать, как обновить свойства объекта [Settings](../resources/user-settings.md) , ознакомьтесь со статьей [Обновление параметров пользователя](user-update-settings.md).
+Чтение объекта [settings](../resources/user-settings.md) пользователя и организации.
+Сведения об обновлении свойства объекта [settings](../resources/user-settings.md) см. в статье [Обновление параметров пользователя](user-update-settings.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +27,7 @@ ms.locfileid: "33334914"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User. Read. ALL, User. ReadWrite. ALL |
+|Для приложения | User.Read.All,User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,7 +35,7 @@ ms.locfileid: "33334914"
 GET /me/settings/
 ```
 
-Запрос с идентификатором пользователя или userPrincipalName доступен только пользователю или пользователем с разрешениями User. ReadWrite. ALL. Чтобы узнать больше, ознакомьтесь [](/graph/permissions-reference)с разрешениями.
+Запрос с параметрами user id или userPrincipalName доступен только пользователю или пользователю с разрешениями User.ReadWrite.All. Дополнительные сведения см. в статье [Разрешения](/graph/permissions-reference).
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -44,9 +45,9 @@ GET /users/{id | userPrincipalName}/settings/
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [пользовательских параметров](../resources/user-settings.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user settings](../resources/user-settings.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -4,12 +4,13 @@ description: Для отправки используются назначени
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 81c194c08ddc5ed8f5acc38ae84a5478bb7e0229
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334130"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972525"
 ---
 # <a name="educationsubmission-resource-type"></a>Тип ресурса educationSubmission
 
@@ -27,7 +28,7 @@ ms.locfileid: "33334130"
 |[Получение educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Чтение свойств и связей объекта **educationSubmission** .|
 |[Список ресурсов](../api/educationsubmission-list-resources.md) |Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Получение коллекции объектов **едукатионсубмиссионресаурце** .|
 |[Список Субмиттедресаурцес](../api/educationsubmission-list-submittedresources.md) |Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Получение коллекции объектов **едукатионсубмиссионресаурце** .|
-|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
+|[обновление](../api/educationsubmission-update.md); | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
 |[Передачи](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Преподаватель использует возврат, чтобы показать, что оценки и отзывы могут отображаться для учащегося.|
 |[Отправить](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Для включения назначения учащийся использует функцию "послать". При этом ресурсы будут скопированы в папку **субмиттедресаурцес** для ступенчатого и обновления состояния.|
 |[Отправляются](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Учащийся использует unsubmit, чтобы переместить состояние отправки от отправки к работе. При этом ресурсы будут скопированы в папку **воркингресаурцес** для ступенчатого и обновления состояния.|
@@ -35,7 +36,7 @@ ms.locfileid: "33334130"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|замечания|[Едукатионфидбакк](educationfeedback.md)|Содержит свойство feedback, которое хранит заметки преподавателя обратно в учащихся.|
+|feedback|[Едукатионфидбакк](educationfeedback.md)|Содержит свойство feedback, которое хранит заметки преподавателя обратно в учащихся.|
 |оценка|[Едукатионассигнментграде](educationassignmentgrade.md)|Содержит сведения об оценках, которые применяют преподаватель для этой отправки.|
 |id|String| Только для чтения.|
 |получатель;|[ЕдукатионсубмиссионреЦипиент](educationsubmissionrecipient.md)|, Которому назначена эта отправка.|
@@ -53,7 +54,7 @@ ms.locfileid: "33334130"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resources|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Допускает значение null.|
+|resources|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Допускается значение null.|
 |Субмиттедресаурцес|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,12 +2,15 @@
 title: Обновление привилежедаппровал
 description: Обновление свойств объекта привилежедаппровал.
 localization_priority: Normal
-ms.openlocfilehash: 240036a9ee4df57745ca1a613511b2141eec6796
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6103e01ea9832bd7858215576eaeb4319514d6be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978807"
 ---
 # <a name="update-privilegedapproval"></a>Обновление привилежедаппровал
 

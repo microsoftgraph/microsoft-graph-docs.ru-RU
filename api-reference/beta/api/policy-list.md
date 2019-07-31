@@ -2,12 +2,15 @@
 title: Список политик
 description: Получение всех объектов Policy в каталоге.
 localization_priority: Normal
-ms.openlocfilehash: 7f4b70391b68a47073866248c31395df4ebaaf45
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d7ab2de4944019eff936554cc4da2e0dc15166c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983455"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -34,7 +37,7 @@ GET /policies
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

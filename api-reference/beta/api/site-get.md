@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Вы можете получить свойства и связи ресурса site.
 ms.date: 09/10/2017
 title: Получение сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 25d52ee0ee2007819ac422638bab95b3b4c83ec8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: aab284d6ae15bf42e2e33621248e0b809c8c1089
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869680"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977881"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
@@ -18,7 +19,7 @@ ms.locfileid: "35869680"
 
 Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.
 
-[site]: ../resources/site.md
+[сайта]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 

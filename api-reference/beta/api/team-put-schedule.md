@@ -4,12 +4,13 @@ description: Создание или замена объекта **распис�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: da59b254b60b7a7703dc76654705ff8b547c3f64
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cb2823850746c6d2fbf154859b0ed067f8a4f2a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982440"
 ---
 # <a name="create-or-replace-schedule"></a>Создание или замена расписания
 

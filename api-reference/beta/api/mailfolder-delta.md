@@ -4,12 +4,13 @@ description: Получение набора папок почты, которы
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7e9190a4932aef2532ebf3592c9c8bec5c412345
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: de1ca367ccee2c77d3c4176dd474793b58f3d062
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880123"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992985"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 

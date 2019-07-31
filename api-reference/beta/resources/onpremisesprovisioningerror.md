@@ -2,12 +2,15 @@
 title: Тип ресурса onPremisesProvisioningError
 description: Представляет ошибки синхронизации каталогов для сущностей контактов пользователя, группы или организации при синхронизации локальных каталогов с Azure Active Directory.
 localization_priority: Normal
-ms.openlocfilehash: e760493c388320c81d7773370a673aacc61fd3d5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 240b7f100a01c37b6b778d3b18b0297739ada66b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345579"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966374"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>Тип ресурса onPremisesProvisioningError
 
@@ -24,7 +27,7 @@ ms.locfileid: "33345579"
 |Пропертикаусинжеррор|String| Имя свойства каталога, вызвавшего ошибку. Текущие возможные значения: *userPrincipalName* или *proxyAddress* |
 |value|String| Значение свойства, вызвавшего ошибку. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

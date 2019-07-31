@@ -4,12 +4,13 @@ description: Используемый диапазон — это наимен�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 0182b752622b177ecf3ab0de029d4e0a10d356ec
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e3c4fc9aa0dab26ae681205711e3175e3b7861ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866087"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987200"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 

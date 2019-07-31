@@ -2,12 +2,15 @@
 title: Тип ресурса identityProvider
 description: Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может иметь значение Microsoft, Google, Facebook, Amazon или LinkedIn.
 localization_priority: Normal
-ms.openlocfilehash: 616f4d30bf6b5aad0bb97a732cf3aaf27e0fd26d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 470d29844470df6f5cd81ba0d40156492c1fd635
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333723"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971811"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
@@ -38,7 +41,7 @@ ms.locfileid: "33333723"
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|Строка|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |clientSecret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
-|id|String|Нет|Нет|Идентификатор поставщика удостоверений.|
+|id|Строка|Нет|Нет|Идентификатор поставщика удостоверений.|
 |name|String|Нет|Нет|Отображаемое имя поставщика удостоверений.|
 |type|Строка|Да|Нет|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 7a6841bcc2f893f8ca794e7d8e6aeafbcd4e48ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cb9b20d7d88159dbddd2a18caa6db7fe52e5a601
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507296"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972917"
 ---
 # <a name="journallines-resource-type"></a>Тип ресурса Жаурналлинес
 Представляет строку в журнале в Dynamics 365 Business Central.
@@ -23,7 +24,7 @@ ms.locfileid: "32507296"
 |[Получение Жаурналлинес](../api/dynamics-journalline-get.md)      |Жаурналлинес|Получает строку журнала.   |
 |[POST Жаурналлинес](../api/dynamics-create-journalline.md)  |Жаурналлинес|Создает строку журнала.|
 |[Исправление Жаурналлинес](../api/dynamics-journalline-update.md) |Жаурналлинес|Обновляет строку журнала.|
-|[Удаление Жаурналлинес](../api/dynamics-journalline-delete.md)|Нет        |Удаляет строку журнала.|
+|[Удаление Жаурналлинес](../api/dynamics-journalline-delete.md)|none        |Удаляет строку журнала.|
 
 ## <a name="properties"></a>Свойства
 | Свойство             | Тип                   |Описание                                                        |
@@ -33,7 +34,7 @@ ms.locfileid: "32507296"
 |lineNumber            |целое                 |Номер строки журнала.                                    |
 |accountId             |GUID                    |Уникальный идентификатор учетной записи, с которой связана строка журнала.  |
 |Аккаунтнумбер         |Строка, максимальный размер 20 |Номер учетной записи, с которой связана строка журнала.     |
-|Постингдате           |дата                    |Дата, когда строка журнала разносится.                          |
+|Постингдате           |date                    |Дата, когда строка журнала разносится.                          |
 |Документнумбер        |Строка, максимальный размер 20 |Указывает номер документа для строки журнала.                  |
 |Екстерналдокументнумбер|Строка, максимальный размер 20 |Указывает номер внешнего документа для строки журнала.        |
 |отступ                |числе                 |Указывает общую сумму (включая НДС), из которой состоит строка журнала.|
