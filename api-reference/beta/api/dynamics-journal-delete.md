@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 8c40cf086cc1eddad1a9fdc81e932baf4cf83f05
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9a85277bbc65882af3eaa8b69f1d04faa0bebf15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458280"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956179"
 ---
 # <a name="delete-journals"></a>Удаление журналов
 Удаление журнала из Dynamics 365 Business Central.
@@ -39,11 +40,11 @@ DELETE /financials/companies('{id}')/journals('{id}')
 |Авторизация  |Bearer {токен}. Обязательный. |
 |If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **журналах**, **журналы** не будут обновлены. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 

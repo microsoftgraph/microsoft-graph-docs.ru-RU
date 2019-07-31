@@ -4,12 +4,13 @@ description: Удаляет объект Макосвппаппассигнед�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b83dedf8aba3995d9fc506b026bafc0c0d37ff2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 37a623837e9c006b59c7f0c66e9b8f0aa3255e83
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975121"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961947"
 ---
 # <a name="delete-macosvppappassignedlicense"></a>Удаление Макосвппаппассигнедлиценсе
 

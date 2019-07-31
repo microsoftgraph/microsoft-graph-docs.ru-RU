@@ -4,12 +4,13 @@ description: Удаление класса. Так как класс также 
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 93f527023217ecd440abaa30b068684a1b739c1b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8cf2f9c33b3811dd30867f1370f4e67bec10a232
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860675"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955483"
 ---
 # <a name="delete-educationclass"></a>Удаление educationClass
 

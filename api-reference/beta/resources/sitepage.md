@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Этот ресурс представляет страницу в списке SitePages.
 ms.date: 03/15/2018
 title: Ситепаже
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6a9192423c4caf47913029e3671e975884533333
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343081"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965049"
 ---
 # <a name="sitepage-resource"></a>ресурс Ситепаже
 
@@ -28,15 +29,15 @@ ms.locfileid: "33343081"
 |:--------------------------------|:------------------------------
 | [Перечисление страниц][]                  | ПОЛУЧЕНИЕ/Pages
 | [Вывод страницы][]                    | ПОЛУЧЕНИЕ/Пажес/{Паже-ИД}
-| [Создание][]                      | POST/Pages
-| [Delete][]                      | Удаление/Пажес/{Паже-ИД}
-| [Publish][]                     | POST/Пажес/{Паже-ИД}/публиш
+| [создание][];                      | POST/Pages
+| [удаление][];                      | Удаление/Пажес/{Паже-ИД}
+| [публикация][];                     | POST/Пажес/{Паже-ИД}/публиш
 
 [Перечисление страниц]: ../api/sitepage-list.md
 [Вывод страницы]: ../api/sitepage-get.md
 [Создание]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
-[Publish]: ../api/sitepage-publish.md
+[публикация]: ../api/sitepage-publish.md;
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -128,7 +129,7 @@ ms.locfileid: "33343081"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[site]: site.md
+[сайта]: site.md
 [Частей]: webpart.md
 
 <!--

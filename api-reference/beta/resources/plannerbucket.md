@@ -4,12 +4,13 @@ description: ) для задач в плане в Office 365. Он находи�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: a9e6b3ac4a9bad8d7402dee28706b5200c623078
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: eed92a62fed8077d2b7ee541feac7e0fa5c73483
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344589"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966016"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
@@ -25,9 +26,9 @@ ms.locfileid: "33344589"
 |:---------------|:--------|:----------|
 |[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
-|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
-|[Delete](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket** . |
+|[создание](../api/planner-post-buckets.md); | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
+|[обновление](../api/plannerbucket-update.md); | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
+|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -37,10 +38,10 @@ ms.locfileid: "33344589"
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в сегменте.|
+|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в сегменте.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

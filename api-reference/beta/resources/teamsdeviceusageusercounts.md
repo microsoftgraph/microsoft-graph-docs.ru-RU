@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 671dfada02b9c16d3392d0a97023b82020fd1218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 99cb675880962591d6298062f979f0930bc0a15d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964398"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>Тип ресурса Теамсдевицеусажеусеркаунтс
 
@@ -27,7 +28,7 @@ ms.locfileid: "32553598"
 | reportDate        | Дата   |
 | Репортпериод      | String |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

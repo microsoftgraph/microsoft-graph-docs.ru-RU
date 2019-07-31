@@ -2,12 +2,15 @@
 title: Тип ресурса agreementAcceptance
 description: Представляет текущее состояние пользователя в пределах области настраиваемых терминов компании на платформе Azure Active Directory (Azure AD).
 localization_priority: Normal
-ms.openlocfilehash: 84b54998e8afaad501d2cf46d564400aa2307507
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 58ed332429d7976b75929b433d57bd77536b9e70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339150"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013453"
 ---
 # <a name="agreementacceptance-resource-type"></a>Тип ресурса agreementAcceptance
 
@@ -36,7 +39,7 @@ ms.locfileid: "33339150"
 |userDisplayName|String|Отображаемое имя пользователя, когда оно было записано.|
 |userEmail|String|Сообщение электронной почты пользователя, когда сообщение о принятии было записано.|
 |userId|String|Идентификатор пользователя, который принял соглашение.|
-|userPrincipalName|String|ИМЯ участника-пользователя, когда оно было записано.|
+|userPrincipalName|String|Имя участника-пользователя, когда оно было записано.|
 
 ## <a name="relationships"></a>Отношения
 Нет
