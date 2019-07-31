@@ -4,12 +4,13 @@ description: Сообщение, представляющее приглашен
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ead65f036fe5537b7e349124b2771eff575be22f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3d691b814517a6180a42ecd13954e019cc75be8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333956"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973594"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
 
@@ -96,7 +97,7 @@ ms.locfileid: "33333956"
 |inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isOutOfDate|Boolean|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
@@ -123,7 +124,7 @@ ms.locfileid: "33333956"
 |:---------------|:--------|:----------|
 |attachments|Коллекция [Attachment](attachment.md)| Только для чтения. Допускается значение null.|
 |событие|[Event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
-|extensions|Коллекция [Extension](extension.md)| Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
@@ -133,12 +134,12 @@ ms.locfileid: "33333956"
 |[Создание вложения](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Создание вложения путем публикации в коллекции вложений.|
 |[Список вложений](../api/eventmessage-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение коллекции объектов вложений.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage. |
-|[Delete](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage. |
+|[Удаление](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage. |
 |[copy](../api/message-copy.md)|[Message](message.md)||
 |[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
 |[createReplyAll](../api/message-createreplyall.md)|[Сообщение](message.md)||
-|[forward](../api/message-forward.md)|Нет|ПереСылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[forward](../api/message-forward.md)|Нет|Пересылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[move](../api/message-move.md)|[Message](message.md)|Переместить сообщение в mailFolder.|
 |[reply](../api/message-reply.md)|Нет|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[replyAll](../api/message-replyall.md)|Нет|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|

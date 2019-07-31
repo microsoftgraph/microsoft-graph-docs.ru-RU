@@ -2,12 +2,15 @@
 title: Тип ресурса Оненотесектион
 description: Раздел в записной книжке OneNote. Разделы могут содержать страницы.
 localization_priority: Normal
-ms.openlocfilehash: b07ea378a4338e22896d40065e35aa599db42832
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ed90d29e0441544bffd2576a255acf17e6cb3996
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966407"
 ---
 # <a name="onenotesection-resource-type"></a>Тип ресурса Оненотесектион
 

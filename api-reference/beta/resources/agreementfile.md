@@ -2,12 +2,15 @@
 title: Тип ресурса Агриментфиле
 description: Представляет настраиваемый термин файла соглашения об использовании, который клиент управляет с помощью Azure Active Directory (Azure AD). Он содержит метаданные о файле соглашения (например, имя, язык и является ли он файлом по умолчанию).
 localization_priority: Normal
-ms.openlocfilehash: b914feecfc91d71c525711f725bf4a533d44a6b1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a6651eafb57d75d6edb6342bd3f382008336332c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974542"
 ---
 # <a name="agreementfile-resource-type"></a>Тип ресурса Агриментфиле
 

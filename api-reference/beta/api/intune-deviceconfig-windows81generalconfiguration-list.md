@@ -4,12 +4,13 @@ description: Перечисление свойств и связей объек�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5eb0a8c79803dfc82fce4c5f17617f5e4e84672
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 517ed489f9b2f29c98ff611764aa0e692e58aee4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977795"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977162"
 ---
 # <a name="list-windows81generalconfigurations"></a>Перечисление объектов windows81GeneralConfiguration
 

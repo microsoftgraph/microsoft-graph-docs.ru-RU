@@ -2,12 +2,15 @@
 title: Тип ресурса договора
 description: Представляет настраиваемое соглашение об использовании клиента, которое создается и управляется с помощью Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления условиями использования функции Azure Active Directory в соответствии со сценарием.
 localization_priority: Normal
-ms.openlocfilehash: d91cc8f8180ffb706639fb42a8c68d711991602c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 31c25211efbca8ae0f52a9348ad0531ea818397f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339176"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974539"
 ---
 # <a name="agreement-resource-type"></a>Тип ресурса договора
 
@@ -32,9 +35,9 @@ ms.locfileid: "33339176"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемое имя соглашения.|
+|displayName|Строка|Отображаемое имя соглашения.|
 |id|String| Только для чтения.|
-|Исвиевингбефореакцептанцерекуиред|Логический|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
+|Исвиевингбефореакцептанцерекуиред|Boolean|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
 
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип        | Описание |

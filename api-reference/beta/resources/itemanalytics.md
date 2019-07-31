@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Ресурс Итеманалитикс предоставляет аналитику о действиях, которые были выполнены для элемента. Этот ресурс в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 ms.date: 09/14/2017
 title: Итеманалитикс
 localization_priority: Normal
-ms.openlocfilehash: 862b0b14f1efeb3a83dd4b842c0eb995abeabb80
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967107"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
 
