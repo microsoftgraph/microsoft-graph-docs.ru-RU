@@ -1,23 +1,25 @@
 ---
 author: psampath
-ms.author: psampath
+description: Ресурс storagePlanInformation предоставляет сведения о планах квот хранилища диска.
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
-ms.openlocfilehash: 3911d3af5f2149d1043ed246e7c11d287c840842
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d8ddb39f9f7c6443f0e669052084af27b8fd5cec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008084"
 ---
-# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="75b64-102">Тип ресурса storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="75b64-102">storagePlanInformation resource type</span></span>
+# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="db902-103">Тип ресурса storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="db902-103">storagePlanInformation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="75b64-103">Ресурс **storagePlanInformation** предоставляет сведения о планах квот хранилища диска.</span><span class="sxs-lookup"><span data-stu-id="75b64-103">The **storagePlanInformation** resource provides information about the drive's storage quota plans.</span></span>
+<span data-ttu-id="db902-104">Ресурс **storagePlanInformation** предоставляет сведения о планах квот хранилища диска.</span><span class="sxs-lookup"><span data-stu-id="db902-104">The **storagePlanInformation** resource provides information about the drive's storage quota plans.</span></span>
 
-### <a name="json-representation"></a><span data-ttu-id="75b64-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="75b64-104">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="db902-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="db902-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,11 +33,11 @@ ms.locfileid: "33342961"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="75b64-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="75b64-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="db902-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="db902-106">Properties</span></span>
 
-| <span data-ttu-id="75b64-106">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="75b64-106">Property name</span></span>     | <span data-ttu-id="75b64-107">Тип</span><span class="sxs-lookup"><span data-stu-id="75b64-107">Type</span></span>      | <span data-ttu-id="75b64-108">Описание</span><span class="sxs-lookup"><span data-stu-id="75b64-108">Description</span></span>                                                             |
+| <span data-ttu-id="db902-107">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="db902-107">Property name</span></span>     | <span data-ttu-id="db902-108">Тип</span><span class="sxs-lookup"><span data-stu-id="db902-108">Type</span></span>      | <span data-ttu-id="db902-109">Описание</span><span class="sxs-lookup"><span data-stu-id="db902-109">Description</span></span>                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| <span data-ttu-id="75b64-109">Упградеаваилабле</span><span class="sxs-lookup"><span data-stu-id="75b64-109">upgradeAvailable</span></span>  | <span data-ttu-id="75b64-110">Логический</span><span class="sxs-lookup"><span data-stu-id="75b64-110">Boolean</span></span>   | <span data-ttu-id="75b64-111">Указывает, доступны ли планы квоты хранилища выше.</span><span class="sxs-lookup"><span data-stu-id="75b64-111">Indicates if there are higher storage quota plans available.</span></span> <span data-ttu-id="75b64-112">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="75b64-112">Read-only.</span></span> |
+| <span data-ttu-id="db902-110">Упградеаваилабле</span><span class="sxs-lookup"><span data-stu-id="db902-110">upgradeAvailable</span></span>  | <span data-ttu-id="db902-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="db902-111">Boolean</span></span>   | <span data-ttu-id="db902-112">Указывает, доступны ли планы квоты хранилища выше.</span><span class="sxs-lookup"><span data-stu-id="db902-112">Indicates if there are higher storage quota plans available.</span></span> <span data-ttu-id="db902-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="db902-113">Read-only.</span></span> |
 
 
 <!--

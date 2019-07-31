@@ -2,20 +2,23 @@
 title: Тип ресурса Ключзначение
 description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 0b5a1c2e9baa32db91e82f6821a598e74c5b5fbb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4de03faca5ac11345fbaba24995da24e7d456708
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345316"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010023"
 ---
-# <a name="keyvalue-resource-type"></a><span data-ttu-id="287fd-103">Тип ресурса Ключзначение</span><span class="sxs-lookup"><span data-stu-id="287fd-103">keyValue resource type</span></span>
+# <a name="keyvalue-resource-type"></a><span data-ttu-id="37dc8-103">Тип ресурса Ключзначение</span><span class="sxs-lookup"><span data-stu-id="37dc8-103">keyValue resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="287fd-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="287fd-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="37dc8-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="37dc8-104">JSON representation</span></span>
 
-<span data-ttu-id="287fd-105">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="287fd-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="37dc8-105">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="37dc8-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,11 +35,11 @@ ms.locfileid: "33345316"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="287fd-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="287fd-106">Properties</span></span>
-| <span data-ttu-id="287fd-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="287fd-107">Property</span></span>     | <span data-ttu-id="287fd-108">Тип</span><span class="sxs-lookup"><span data-stu-id="287fd-108">Type</span></span>   |<span data-ttu-id="287fd-109">Описание</span><span class="sxs-lookup"><span data-stu-id="287fd-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="37dc8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="37dc8-106">Properties</span></span>
+| <span data-ttu-id="37dc8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="37dc8-107">Property</span></span>     | <span data-ttu-id="37dc8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="37dc8-108">Type</span></span>   |<span data-ttu-id="37dc8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="37dc8-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="287fd-110">key</span><span class="sxs-lookup"><span data-stu-id="287fd-110">key</span></span>|<span data-ttu-id="287fd-111">string</span><span class="sxs-lookup"><span data-stu-id="287fd-111">string</span></span>||
-|<span data-ttu-id="287fd-112">value</span><span class="sxs-lookup"><span data-stu-id="287fd-112">value</span></span>|<span data-ttu-id="287fd-113">string</span><span class="sxs-lookup"><span data-stu-id="287fd-113">string</span></span>||
+|<span data-ttu-id="37dc8-110">key</span><span class="sxs-lookup"><span data-stu-id="37dc8-110">key</span></span>|<span data-ttu-id="37dc8-111">string</span><span class="sxs-lookup"><span data-stu-id="37dc8-111">string</span></span>||
+|<span data-ttu-id="37dc8-112">value</span><span class="sxs-lookup"><span data-stu-id="37dc8-112">value</span></span>|<span data-ttu-id="37dc8-113">string</span><span class="sxs-lookup"><span data-stu-id="37dc8-113">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,29 +4,30 @@ description: Тип Токенмитингинфо.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 38a5aae17cf4364a1cfd58680c2e7b9437cf0e40
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0df9a7a66420f20ff62677f54e617d64e9db0273
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345510"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007545"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="2fde0-103">Тип ресурса Токенмитингинфо</span><span class="sxs-lookup"><span data-stu-id="2fde0-103">tokenMeetingInfo resource type</span></span>
+# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="6c540-103">Тип ресурса Токенмитингинфо</span><span class="sxs-lookup"><span data-stu-id="6c540-103">tokenMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2fde0-104">Тип Токенмитингинфо.</span><span class="sxs-lookup"><span data-stu-id="2fde0-104">The tokenMeetingInfo type.</span></span>
+<span data-ttu-id="6c540-104">Тип Токенмитингинфо.</span><span class="sxs-lookup"><span data-stu-id="6c540-104">The tokenMeetingInfo type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2fde0-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="2fde0-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6c540-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="6c540-105">Properties</span></span>
 
-| <span data-ttu-id="2fde0-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="2fde0-106">Property</span></span>                     | <span data-ttu-id="2fde0-107">Тип</span><span class="sxs-lookup"><span data-stu-id="2fde0-107">Type</span></span>    | <span data-ttu-id="2fde0-108">Описание</span><span class="sxs-lookup"><span data-stu-id="2fde0-108">Description</span></span>                                                                    |
+| <span data-ttu-id="6c540-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="6c540-106">Property</span></span>                     | <span data-ttu-id="6c540-107">Тип</span><span class="sxs-lookup"><span data-stu-id="6c540-107">Type</span></span>    | <span data-ttu-id="6c540-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6c540-108">Description</span></span>                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| <span data-ttu-id="2fde0-109">Алловконверсатионвисаусост</span><span class="sxs-lookup"><span data-stu-id="2fde0-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="2fde0-110">Логический</span><span class="sxs-lookup"><span data-stu-id="2fde0-110">Boolean</span></span> | <span data-ttu-id="2fde0-111">Указывает, может ли беседа продолжиться после закрытия узла беседы.</span><span class="sxs-lookup"><span data-stu-id="2fde0-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="2fde0-112">токен</span><span class="sxs-lookup"><span data-stu-id="2fde0-112">token</span></span>                        | <span data-ttu-id="2fde0-113">Строка</span><span class="sxs-lookup"><span data-stu-id="2fde0-113">String</span></span>  | <span data-ttu-id="2fde0-114">Токен для присоединения и активации собрания.</span><span class="sxs-lookup"><span data-stu-id="2fde0-114">The token to join/activate the meeting.</span></span>                                        |
+| <span data-ttu-id="6c540-109">Алловконверсатионвисаусост</span><span class="sxs-lookup"><span data-stu-id="6c540-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="6c540-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="6c540-110">Boolean</span></span> | <span data-ttu-id="6c540-111">Указывает, может ли беседа продолжиться после закрытия узла беседы.</span><span class="sxs-lookup"><span data-stu-id="6c540-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="6c540-112">токен</span><span class="sxs-lookup"><span data-stu-id="6c540-112">token</span></span>                        | <span data-ttu-id="6c540-113">Строка</span><span class="sxs-lookup"><span data-stu-id="6c540-113">String</span></span>  | <span data-ttu-id="6c540-114">Токен для присоединения и активации собрания.</span><span class="sxs-lookup"><span data-stu-id="6c540-114">The token to join/activate the meeting.</span></span>                                        |
 
-## <a name="json-representation"></a><span data-ttu-id="2fde0-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="2fde0-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6c540-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6c540-115">JSON representation</span></span>
 
-<span data-ttu-id="2fde0-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2fde0-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6c540-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6c540-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +44,7 @@ ms.locfileid: "33345510"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="2fde0-117">Пример</span><span class="sxs-lookup"><span data-stu-id="2fde0-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6c540-117">Пример</span><span class="sxs-lookup"><span data-stu-id="6c540-117">Example</span></span>
 
 <!-- {
   "blockType": "example",
