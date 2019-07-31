@@ -4,80 +4,81 @@ description: В средстве проверки доступа Azure AD соз
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 923b9f1abd515821383becd31b511c554ddf29bd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ab1711a370d766631611d9cd5f96635760f98f48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946061"
 ---
-# <a name="create-accessreview"></a><span data-ttu-id="c15ff-103">Создание Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="c15ff-103">Create accessReview</span></span>
+# <a name="create-accessreview"></a><span data-ttu-id="906e4-103">Создание Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="906e4-103">Create accessReview</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c15ff-104">В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [акцессревиев](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="c15ff-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.</span></span>
+<span data-ttu-id="906e4-104">В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [акцессревиев](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="906e4-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="c15ff-105">Перед выполнением этого запроса абонент должен был [получить список шаблонов бизнес-процесса](businessflowtemplate-list.md), чтобы включить в запрос значение `businessFlowTemplateId` для включения в запрос.</span><span class="sxs-lookup"><span data-stu-id="c15ff-105">Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.</span></span>
+<span data-ttu-id="906e4-105">Перед выполнением этого запроса абонент должен был [получить список шаблонов бизнес-процесса](businessflowtemplate-list.md), чтобы включить в запрос значение `businessFlowTemplateId` для включения в запрос.</span><span class="sxs-lookup"><span data-stu-id="906e4-105">Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.</span></span>
 
-<span data-ttu-id="c15ff-106">После выполнения этого запроса вызывающий абонент должен [создать програмконтрол](programcontrol-create.md), чтобы связать проверку доступа с программой.</span><span class="sxs-lookup"><span data-stu-id="c15ff-106">After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.</span></span>  
+<span data-ttu-id="906e4-106">После выполнения этого запроса вызывающий абонент должен [создать програмконтрол](programcontrol-create.md), чтобы связать проверку доступа с программой.</span><span class="sxs-lookup"><span data-stu-id="906e4-106">After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="c15ff-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c15ff-107">Permissions</span></span>
-<span data-ttu-id="c15ff-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c15ff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="906e4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="906e4-107">Permissions</span></span>
+<span data-ttu-id="906e4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="906e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c15ff-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c15ff-110">Permission type</span></span>                        | <span data-ttu-id="c15ff-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c15ff-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="906e4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="906e4-110">Permission type</span></span>                        | <span data-ttu-id="906e4-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="906e4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c15ff-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c15ff-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="c15ff-113">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c15ff-113">AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="c15ff-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c15ff-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c15ff-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c15ff-115">Not supported.</span></span> |
-|<span data-ttu-id="c15ff-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c15ff-116">Application</span></span>                            | <span data-ttu-id="c15ff-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c15ff-117">Not supported.</span></span> |
+|<span data-ttu-id="906e4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="906e4-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="906e4-113">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="906e4-113">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="906e4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="906e4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="906e4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="906e4-115">Not supported.</span></span> |
+|<span data-ttu-id="906e4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="906e4-116">Application</span></span>                            | <span data-ttu-id="906e4-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="906e4-117">Not supported.</span></span> |
 
-<span data-ttu-id="c15ff-118">Вызывающая сторона также должна иметь разрешение Програмконтрол. ReadWrite. ALL, чтобы после создания проверки доступа вызывающий абонент может создать [програмконтрол](../resources/programcontrol.md).</span><span class="sxs-lookup"><span data-stu-id="c15ff-118">The caller should also have ProgramControl.ReadWrite.All permission, so that after creating an access review, the caller can create a [programControl](../resources/programcontrol.md).</span></span>
-<span data-ttu-id="c15ff-119">Кроме того, пользователь, вошедшего в систему, должен быть членом роли каталога, который позволяет им создавать проверку доступа.</span><span class="sxs-lookup"><span data-stu-id="c15ff-119">In addition, the signed in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="c15ff-120">Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviews-root.md).</span><span class="sxs-lookup"><span data-stu-id="c15ff-120">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
+<span data-ttu-id="906e4-118">Вызывающая сторона также должна иметь разрешение Програмконтрол. ReadWrite. ALL, чтобы после создания проверки доступа вызывающий абонент может создать [програмконтрол](../resources/programcontrol.md).</span><span class="sxs-lookup"><span data-stu-id="906e4-118">The caller should also have ProgramControl.ReadWrite.All permission, so that after creating an access review, the caller can create a [programControl](../resources/programcontrol.md).</span></span>
+<span data-ttu-id="906e4-119">Кроме того, пользователь, вошедшего в систему, должен быть членом роли каталога, который позволяет им создавать проверку доступа.</span><span class="sxs-lookup"><span data-stu-id="906e4-119">In addition, the signed in user must also be in a directory role that permits them to create an access review.</span></span>  <span data-ttu-id="906e4-120">Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviews-root.md).</span><span class="sxs-lookup"><span data-stu-id="906e4-120">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c15ff-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c15ff-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="906e4-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="906e4-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews
 ```
-## <a name="request-headers"></a><span data-ttu-id="c15ff-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c15ff-122">Request headers</span></span>
-| <span data-ttu-id="c15ff-123">Имя</span><span class="sxs-lookup"><span data-stu-id="c15ff-123">Name</span></span>         | <span data-ttu-id="c15ff-124">Тип</span><span class="sxs-lookup"><span data-stu-id="c15ff-124">Type</span></span>        | <span data-ttu-id="c15ff-125">Описание</span><span class="sxs-lookup"><span data-stu-id="c15ff-125">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="906e4-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="906e4-122">Request headers</span></span>
+| <span data-ttu-id="906e4-123">Имя</span><span class="sxs-lookup"><span data-stu-id="906e4-123">Name</span></span>         | <span data-ttu-id="906e4-124">Тип</span><span class="sxs-lookup"><span data-stu-id="906e4-124">Type</span></span>        | <span data-ttu-id="906e4-125">Описание</span><span class="sxs-lookup"><span data-stu-id="906e4-125">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="c15ff-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="c15ff-126">Authorization</span></span> | <span data-ttu-id="c15ff-127">string</span><span class="sxs-lookup"><span data-stu-id="c15ff-127">string</span></span> | <span data-ttu-id="c15ff-p103">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c15ff-p103">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="906e4-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="906e4-126">Authorization</span></span> | <span data-ttu-id="906e4-127">string</span><span class="sxs-lookup"><span data-stu-id="906e4-127">string</span></span> | <span data-ttu-id="906e4-p103">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="906e4-p103">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c15ff-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c15ff-130">Request body</span></span>
-<span data-ttu-id="c15ff-131">В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c15ff-131">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="906e4-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="906e4-130">Request body</span></span>
+<span data-ttu-id="906e4-131">В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="906e4-131">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="c15ff-132">В следующей таблице приведены свойства, необходимые при создании Акцессревиев.</span><span class="sxs-lookup"><span data-stu-id="c15ff-132">The following table shows the properties that are required when you create an accessReview.</span></span>
+<span data-ttu-id="906e4-132">В следующей таблице приведены свойства, необходимые при создании Акцессревиев.</span><span class="sxs-lookup"><span data-stu-id="906e4-132">The following table shows the properties that are required when you create an accessReview.</span></span>
 
-| <span data-ttu-id="c15ff-133">Свойство</span><span class="sxs-lookup"><span data-stu-id="c15ff-133">Property</span></span>     | <span data-ttu-id="c15ff-134">Тип</span><span class="sxs-lookup"><span data-stu-id="c15ff-134">Type</span></span>        | <span data-ttu-id="c15ff-135">Описание</span><span class="sxs-lookup"><span data-stu-id="c15ff-135">Description</span></span> |
+| <span data-ttu-id="906e4-133">Свойство</span><span class="sxs-lookup"><span data-stu-id="906e4-133">Property</span></span>     | <span data-ttu-id="906e4-134">Тип</span><span class="sxs-lookup"><span data-stu-id="906e4-134">Type</span></span>        | <span data-ttu-id="906e4-135">Описание</span><span class="sxs-lookup"><span data-stu-id="906e4-135">Description</span></span> |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | <span data-ttu-id="c15ff-136">Имя проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="c15ff-136">The access review name.</span></span>  |
-| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="c15ff-137">Дата и время, когда выполняется запланированное начало проверки.</span><span class="sxs-lookup"><span data-stu-id="c15ff-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="c15ff-138">Это должна быть Дата в будущем.</span><span class="sxs-lookup"><span data-stu-id="c15ff-138">This must be a date in the future.</span></span>   |
-| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="c15ff-139">Дата и время окончания запланированного рассмотрения.</span><span class="sxs-lookup"><span data-stu-id="c15ff-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="c15ff-140">Это должен быть по крайней мере один день позже даты начала.</span><span class="sxs-lookup"><span data-stu-id="c15ff-140">This must be at least one day later than the start date.</span></span>   |
-| `description`             |`String`                                                        | <span data-ttu-id="c15ff-141">Описание, которое будет отображаться для рецензентов.</span><span class="sxs-lookup"><span data-stu-id="c15ff-141">The description, to show to the reviewers.</span></span> |
-| `businessFlowTemplateId`  |`String`                                                        | <span data-ttu-id="c15ff-142">Идентификатор шаблона рабочего процесса, полученный из объекта [бусинессфловтемплате](../resources/businessflowtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="c15ff-142">The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).</span></span>  |
-| `reviewerType`            |`String`                                                        | <span data-ttu-id="c15ff-143">Тип отношения проверяющего к правам доступа проверенного объекта, один из `self`, `delegated`или. `entityOwners`</span><span class="sxs-lookup"><span data-stu-id="c15ff-143">The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`.</span></span> | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | <span data-ttu-id="c15ff-144">Объект, для которого создается проверка доступа, например членство в группе или назначения пользователей приложению.</span><span class="sxs-lookup"><span data-stu-id="c15ff-144">The object for which an access review is created, such as the membership of a group or the assignments of users to an application.</span></span> | 
+| `displayName`             |`String`                                                        | <span data-ttu-id="906e4-136">Имя проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="906e4-136">The access review name.</span></span>  |
+| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="906e4-137">Дата и время, когда выполняется запланированное начало проверки.</span><span class="sxs-lookup"><span data-stu-id="906e4-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="906e4-138">Это должна быть Дата в будущем.</span><span class="sxs-lookup"><span data-stu-id="906e4-138">This must be a date in the future.</span></span>   |
+| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="906e4-139">Дата и время окончания запланированного рассмотрения.</span><span class="sxs-lookup"><span data-stu-id="906e4-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="906e4-140">Это должен быть по крайней мере один день позже даты начала.</span><span class="sxs-lookup"><span data-stu-id="906e4-140">This must be at least one day later than the start date.</span></span>   |
+| `description`             |`String`                                                        | <span data-ttu-id="906e4-141">Описание, которое будет отображаться для рецензентов.</span><span class="sxs-lookup"><span data-stu-id="906e4-141">The description, to show to the reviewers.</span></span> |
+| `businessFlowTemplateId`  |`String`                                                        | <span data-ttu-id="906e4-142">Идентификатор шаблона рабочего процесса, полученный из объекта [бусинессфловтемплате](../resources/businessflowtemplate.md).</span><span class="sxs-lookup"><span data-stu-id="906e4-142">The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).</span></span>  |
+| `reviewerType`            |`String`                                                        | <span data-ttu-id="906e4-143">Тип отношения проверяющего к правам доступа проверенного объекта, один из `self`, `delegated`или. `entityOwners`</span><span class="sxs-lookup"><span data-stu-id="906e4-143">The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`.</span></span> | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | <span data-ttu-id="906e4-144">Объект, для которого создается проверка доступа, например членство в группе или назначения пользователей приложению.</span><span class="sxs-lookup"><span data-stu-id="906e4-144">The object for which an access review is created, such as the membership of a group or the assignments of users to an application.</span></span> | 
 
 
-<span data-ttu-id="c15ff-145">Если предоставленное значение Ревиевертипе имеет значение `delegated`, вызывающая сторона также должна содержать `reviewers` свойство с коллекцией [userIdentity](../resources/useridentity.md) рецензентов.</span><span class="sxs-lookup"><span data-stu-id="c15ff-145">If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.</span></span>
+<span data-ttu-id="906e4-145">Если предоставленное значение Ревиевертипе имеет значение `delegated`, вызывающая сторона также должна содержать `reviewers` свойство с коллекцией [userIdentity](../resources/useridentity.md) рецензентов.</span><span class="sxs-lookup"><span data-stu-id="906e4-145">If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.</span></span>
 
-<span data-ttu-id="c15ff-146">Если приложение вызывает этот API без вошедшего пользователя, вызывающая сторона также должна включать свойство **createdBy** , значение которого является [userIdentity](../resources/useridentity.md) пользователя, который будет идентифицирован как создатель проверки.</span><span class="sxs-lookup"><span data-stu-id="c15ff-146">If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.</span></span>
+<span data-ttu-id="906e4-146">Если приложение вызывает этот API без вошедшего пользователя, вызывающая сторона также должна включать свойство **createdBy** , значение которого является [userIdentity](../resources/useridentity.md) пользователя, который будет идентифицирован как создатель проверки.</span><span class="sxs-lookup"><span data-stu-id="906e4-146">If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.</span></span>
 
-<span data-ttu-id="c15ff-147">Кроме того, вызывающий может включать в себя параметры для создания повторяющихся рядов проверки или для изменения поведения проверки по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c15ff-147">In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior.</span></span> <span data-ttu-id="c15ff-148">В частности, чтобы создать повторяющуюся проверку, вызывающая сторона должна включать в себя `accessReviewRecurrenceSettings` параметры проверки доступа,</span><span class="sxs-lookup"><span data-stu-id="c15ff-148">In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,</span></span>
-
-
-## <a name="response"></a><span data-ttu-id="c15ff-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="c15ff-149">Response</span></span>
-<span data-ttu-id="c15ff-150">В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c15ff-150">If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="c15ff-151">Пример</span><span class="sxs-lookup"><span data-stu-id="c15ff-151">Example</span></span>
-
-<span data-ttu-id="c15ff-152">Это пример создания одноразовой (не повторяющейся) проверки доступа, явно указав двух пользователей в качестве проверяющих.</span><span class="sxs-lookup"><span data-stu-id="c15ff-152">This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.</span></span>
-
-##### <a name="request"></a><span data-ttu-id="c15ff-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="c15ff-153">Request</span></span>
-<span data-ttu-id="c15ff-154">В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c15ff-154">In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.</span></span>
+<span data-ttu-id="906e4-147">Кроме того, вызывающий может включать в себя параметры для создания повторяющихся рядов проверки или для изменения поведения проверки по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="906e4-147">In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior.</span></span> <span data-ttu-id="906e4-148">В частности, чтобы создать повторяющуюся проверку, вызывающая сторона должна включать в себя `accessReviewRecurrenceSettings` параметры проверки доступа,</span><span class="sxs-lookup"><span data-stu-id="906e4-148">In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c15ff-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="c15ff-155">HTTP</span></span>](#tab/http)
+## <a name="response"></a><span data-ttu-id="906e4-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="906e4-149">Response</span></span>
+<span data-ttu-id="906e4-150">В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="906e4-150">If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="906e4-151">Пример</span><span class="sxs-lookup"><span data-stu-id="906e4-151">Example</span></span>
+
+<span data-ttu-id="906e4-152">Это пример создания одноразовой (не повторяющейся) проверки доступа, явно указав двух пользователей в качестве проверяющих.</span><span class="sxs-lookup"><span data-stu-id="906e4-152">This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.</span></span>
+
+##### <a name="request"></a><span data-ttu-id="906e4-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="906e4-153">Request</span></span>
+<span data-ttu-id="906e4-154">В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="906e4-154">In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="906e4-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="906e4-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReview_from_accessReviews"
@@ -126,27 +127,27 @@ Content-type: application/json
     }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c15ff-156">C#</span><span class="sxs-lookup"><span data-stu-id="c15ff-156">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="906e4-156">C#</span><span class="sxs-lookup"><span data-stu-id="906e4-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c15ff-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="c15ff-157">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="906e4-157">Javascript</span><span class="sxs-lookup"><span data-stu-id="906e4-157">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c15ff-158">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c15ff-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="906e4-158">Цель — C</span><span class="sxs-lookup"><span data-stu-id="906e4-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c15ff-159">Java</span><span class="sxs-lookup"><span data-stu-id="c15ff-159">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="906e4-159">Java</span><span class="sxs-lookup"><span data-stu-id="906e4-159">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c15ff-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="c15ff-160">Response</span></span>
-><span data-ttu-id="c15ff-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c15ff-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="906e4-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="906e4-160">Response</span></span>
+><span data-ttu-id="906e4-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="906e4-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

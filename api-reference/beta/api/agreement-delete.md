@@ -2,48 +2,51 @@
 title: Удаление соглашения
 description: Удаление объекта соглашения.
 localization_priority: Normal
-ms.openlocfilehash: 2b0bf56bf63a62cacd757035f10f0cbb48a30604
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 629414fc0014b4f54689b9dc0541b3504d033c85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855525"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945694"
 ---
-# <a name="delete-agreement"></a><span data-ttu-id="4177a-103">Удаление соглашения</span><span class="sxs-lookup"><span data-stu-id="4177a-103">Delete agreement</span></span>
+# <a name="delete-agreement"></a><span data-ttu-id="d93f8-103">Удаление соглашения</span><span class="sxs-lookup"><span data-stu-id="d93f8-103">Delete agreement</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4177a-104">Удаление объекта [соглашения](../resources/agreement.md) .</span><span class="sxs-lookup"><span data-stu-id="4177a-104">Delete an [agreement](../resources/agreement.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4177a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4177a-105">Permissions</span></span>
-<span data-ttu-id="4177a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4177a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d93f8-104">Удаление объекта [соглашения](../resources/agreement.md) .</span><span class="sxs-lookup"><span data-stu-id="d93f8-104">Delete an [agreement](../resources/agreement.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d93f8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d93f8-105">Permissions</span></span>
+<span data-ttu-id="d93f8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d93f8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4177a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4177a-108">Permission type</span></span>                        | <span data-ttu-id="4177a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4177a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d93f8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d93f8-108">Permission type</span></span>                        | <span data-ttu-id="d93f8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d93f8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4177a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4177a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="4177a-111">Agreement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4177a-111">Agreement.ReadWrite.All</span></span> |
-|<span data-ttu-id="4177a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4177a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4177a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4177a-113">Not supported.</span></span> |
-|<span data-ttu-id="4177a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4177a-114">Application</span></span>                            | <span data-ttu-id="4177a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4177a-115">Not supported.</span></span> |
+|<span data-ttu-id="d93f8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d93f8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d93f8-111">Agreement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d93f8-111">Agreement.ReadWrite.All</span></span> |
+|<span data-ttu-id="d93f8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d93f8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d93f8-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d93f8-113">Not supported.</span></span> |
+|<span data-ttu-id="d93f8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d93f8-114">Application</span></span>                            | <span data-ttu-id="d93f8-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d93f8-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4177a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4177a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d93f8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d93f8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /agreements/<id>
 ```
-## <a name="request-headers"></a><span data-ttu-id="4177a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4177a-117">Request headers</span></span>
-| <span data-ttu-id="4177a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="4177a-118">Name</span></span>         | <span data-ttu-id="4177a-119">Тип</span><span class="sxs-lookup"><span data-stu-id="4177a-119">Type</span></span>        | <span data-ttu-id="4177a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4177a-120">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="d93f8-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d93f8-117">Request headers</span></span>
+| <span data-ttu-id="d93f8-118">Имя</span><span class="sxs-lookup"><span data-stu-id="d93f8-118">Name</span></span>         | <span data-ttu-id="d93f8-119">Тип</span><span class="sxs-lookup"><span data-stu-id="d93f8-119">Type</span></span>        | <span data-ttu-id="d93f8-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d93f8-120">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="4177a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4177a-121">Authorization</span></span> | <span data-ttu-id="4177a-122">string</span><span class="sxs-lookup"><span data-stu-id="4177a-122">string</span></span> | <span data-ttu-id="4177a-p102">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4177a-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="d93f8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d93f8-121">Authorization</span></span> | <span data-ttu-id="d93f8-122">string</span><span class="sxs-lookup"><span data-stu-id="d93f8-122">string</span></span> | <span data-ttu-id="d93f8-p102">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d93f8-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4177a-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4177a-125">Request body</span></span>
-<span data-ttu-id="4177a-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4177a-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d93f8-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d93f8-125">Request body</span></span>
+<span data-ttu-id="d93f8-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d93f8-126">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="4177a-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="4177a-127">Response</span></span>
-<span data-ttu-id="4177a-p103">При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="4177a-p103">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d93f8-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="d93f8-127">Response</span></span>
+<span data-ttu-id="d93f8-p103">При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d93f8-p103">If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4177a-130">Пример</span><span class="sxs-lookup"><span data-stu-id="4177a-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4177a-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="4177a-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="d93f8-130">Пример</span><span class="sxs-lookup"><span data-stu-id="d93f8-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d93f8-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="d93f8-131">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4177a-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="4177a-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d93f8-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="d93f8-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_agreement"
@@ -51,26 +54,26 @@ DELETE /agreements/<id>
 ```http
 DELETE https://graph.microsoft.com/beta/agreements/<id>
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4177a-133">C#</span><span class="sxs-lookup"><span data-stu-id="4177a-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d93f8-133">C#</span><span class="sxs-lookup"><span data-stu-id="d93f8-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-agreement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4177a-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="4177a-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d93f8-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="d93f8-134">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-agreement-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4177a-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="4177a-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d93f8-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d93f8-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-agreement-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="4177a-136">Java</span><span class="sxs-lookup"><span data-stu-id="4177a-136">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d93f8-136">Java</span><span class="sxs-lookup"><span data-stu-id="d93f8-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="4177a-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="4177a-137">Response</span></span>
-><span data-ttu-id="4177a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4177a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d93f8-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="d93f8-137">Response</span></span>
+><span data-ttu-id="d93f8-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d93f8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

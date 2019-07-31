@@ -4,56 +4,57 @@ description: 'В функции рецензирования Access в Azure AD 
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0caca20a3499b001fea3431e852d5b6373836a11
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d49aa473fed17a427f0e0f2785b76210e566cf69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856029"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945979"
 ---
-# <a name="remove-accessreview-reviewer"></a><span data-ttu-id="c6489-105">Удаление рецензента Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="c6489-105">Remove accessReview reviewer</span></span>
+# <a name="remove-accessreview-reviewer"></a><span data-ttu-id="d3463-105">Удаление рецензента Акцессревиев</span><span class="sxs-lookup"><span data-stu-id="d3463-105">Remove accessReview reviewer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c6489-106">В функции рецензирования [Access](../resources/accessreviews-root.md) в Azure AD обновите существующий объект [акцессревиев](../resources/accessreview.md) , чтобы удалить пользователя в качестве проверяющего.</span><span class="sxs-lookup"><span data-stu-id="c6489-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to remove a user as a reviewer.</span></span>  <span data-ttu-id="c6489-107">Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты.</span><span class="sxs-lookup"><span data-stu-id="c6489-107">This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.</span></span> <span data-ttu-id="c6489-108">Эта операция не разрешена для проверки доступа, при которой пользователи просматривают собственный доступ, и не предназначены для проверки доступа, в которой владельцы группы назначаются в качестве проверяющих.</span><span class="sxs-lookup"><span data-stu-id="c6489-108">This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.</span></span> 
+<span data-ttu-id="d3463-106">В функции рецензирования [Access](../resources/accessreviews-root.md) в Azure AD обновите существующий объект [акцессревиев](../resources/accessreview.md) , чтобы удалить пользователя в качестве проверяющего.</span><span class="sxs-lookup"><span data-stu-id="d3463-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to remove a user as a reviewer.</span></span>  <span data-ttu-id="d3463-107">Эта операция разрешена только для проверки доступа, которая еще не завершена, и только для проверки доступа, в которой явно указаны рецензенты.</span><span class="sxs-lookup"><span data-stu-id="d3463-107">This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.</span></span> <span data-ttu-id="d3463-108">Эта операция не разрешена для проверки доступа, при которой пользователи просматривают собственный доступ, и не предназначены для проверки доступа, в которой владельцы группы назначаются в качестве проверяющих.</span><span class="sxs-lookup"><span data-stu-id="d3463-108">This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="c6489-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c6489-109">Permissions</span></span>
-<span data-ttu-id="c6489-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6489-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d3463-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d3463-109">Permissions</span></span>
+<span data-ttu-id="d3463-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d3463-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c6489-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c6489-112">Permission type</span></span>                        | <span data-ttu-id="c6489-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c6489-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d3463-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d3463-112">Permission type</span></span>                        | <span data-ttu-id="d3463-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d3463-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c6489-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c6489-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="c6489-115">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6489-115">AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="c6489-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c6489-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6489-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6489-117">Not supported.</span></span> |
-|<span data-ttu-id="c6489-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c6489-118">Application</span></span>                            | <span data-ttu-id="c6489-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6489-119">Not supported.</span></span> |
+|<span data-ttu-id="d3463-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d3463-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="d3463-115">AccessReview.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d3463-115">AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="d3463-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d3463-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d3463-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d3463-117">Not supported.</span></span> |
+|<span data-ttu-id="d3463-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d3463-118">Application</span></span>                            | <span data-ttu-id="d3463-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d3463-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c6489-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c6489-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d3463-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d3463-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ```
-## <a name="request-headers"></a><span data-ttu-id="c6489-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c6489-121">Request headers</span></span>
-| <span data-ttu-id="c6489-122">Имя</span><span class="sxs-lookup"><span data-stu-id="c6489-122">Name</span></span>         | <span data-ttu-id="c6489-123">Тип</span><span class="sxs-lookup"><span data-stu-id="c6489-123">Type</span></span>        | <span data-ttu-id="c6489-124">Описание</span><span class="sxs-lookup"><span data-stu-id="c6489-124">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="d3463-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d3463-121">Request headers</span></span>
+| <span data-ttu-id="d3463-122">Имя</span><span class="sxs-lookup"><span data-stu-id="d3463-122">Name</span></span>         | <span data-ttu-id="d3463-123">Тип</span><span class="sxs-lookup"><span data-stu-id="d3463-123">Type</span></span>        | <span data-ttu-id="d3463-124">Описание</span><span class="sxs-lookup"><span data-stu-id="d3463-124">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="c6489-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6489-125">Authorization</span></span> | <span data-ttu-id="c6489-126">string</span><span class="sxs-lookup"><span data-stu-id="c6489-126">string</span></span> | <span data-ttu-id="c6489-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c6489-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="d3463-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="d3463-125">Authorization</span></span> | <span data-ttu-id="d3463-126">string</span><span class="sxs-lookup"><span data-stu-id="d3463-126">string</span></span> | <span data-ttu-id="d3463-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d3463-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c6489-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c6489-129">Request body</span></span>
-<span data-ttu-id="c6489-130">Не следует предоставлять текст запроса.</span><span class="sxs-lookup"><span data-stu-id="c6489-130">No request body should be supplied.</span></span>
-
-
-## <a name="response"></a><span data-ttu-id="c6489-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6489-131">Response</span></span>
-<span data-ttu-id="c6489-132">В случае успешного выполнения этот метод возвращает код ответа серии 200.</span><span class="sxs-lookup"><span data-stu-id="c6489-132">If successful, this method returns a 200-series response code.</span></span>
-
-## <a name="example"></a><span data-ttu-id="c6489-133">Пример</span><span class="sxs-lookup"><span data-stu-id="c6489-133">Example</span></span>
-
-<span data-ttu-id="c6489-134">В этом примере показано, как обновить доступ к одноразовой (не возможной) проверке доступа, чтобы удалить ненужного проверяющего.</span><span class="sxs-lookup"><span data-stu-id="c6489-134">This is an example of updating a one-time (not reoccurring) access review to remove an unnecessary reviewer.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d3463-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d3463-129">Request body</span></span>
+<span data-ttu-id="d3463-130">Не следует предоставлять текст запроса.</span><span class="sxs-lookup"><span data-stu-id="d3463-130">No request body should be supplied.</span></span>
 
 
-##### <a name="request"></a><span data-ttu-id="c6489-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="c6489-135">Request</span></span>
-<span data-ttu-id="c6489-136">В URL-адресе запроса укажите идентификатор объекта Акцессревиев, а затем идентификатор объекта пользователя.</span><span class="sxs-lookup"><span data-stu-id="c6489-136">In the request URL, supply the id of the accessReview object and then the id of the user object.</span></span>
+## <a name="response"></a><span data-ttu-id="d3463-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="d3463-131">Response</span></span>
+<span data-ttu-id="d3463-132">В случае успешного выполнения этот метод возвращает код ответа серии 200.</span><span class="sxs-lookup"><span data-stu-id="d3463-132">If successful, this method returns a 200-series response code.</span></span>
+
+## <a name="example"></a><span data-ttu-id="d3463-133">Пример</span><span class="sxs-lookup"><span data-stu-id="d3463-133">Example</span></span>
+
+<span data-ttu-id="d3463-134">В этом примере показано, как обновить доступ к одноразовой (не возможной) проверке доступа, чтобы удалить ненужного проверяющего.</span><span class="sxs-lookup"><span data-stu-id="d3463-134">This is an example of updating a one-time (not reoccurring) access review to remove an unnecessary reviewer.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c6489-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6489-137">HTTP</span></span>](#tab/http)
+##### <a name="request"></a><span data-ttu-id="d3463-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="d3463-135">Request</span></span>
+<span data-ttu-id="d3463-136">В URL-адресе запроса укажите идентификатор объекта Акцессревиев, а затем идентификатор объекта пользователя.</span><span class="sxs-lookup"><span data-stu-id="d3463-136">In the request URL, supply the id of the accessReview object and then the id of the user object.</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d3463-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="d3463-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "remove_accessReview_reviewer"
@@ -62,26 +63,26 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 DELETE https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers/006111db-0810-4494-a6df-904d368bd81b
 
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c6489-138">C#</span><span class="sxs-lookup"><span data-stu-id="c6489-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d3463-138">C#</span><span class="sxs-lookup"><span data-stu-id="d3463-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-accessreview-reviewer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c6489-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="c6489-139">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d3463-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="d3463-139">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-accessreview-reviewer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c6489-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c6489-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d3463-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d3463-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-accessreview-reviewer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c6489-141">Java</span><span class="sxs-lookup"><span data-stu-id="c6489-141">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="d3463-141">Java</span><span class="sxs-lookup"><span data-stu-id="d3463-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-accessreview-reviewer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c6489-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6489-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d3463-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="d3463-142">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
