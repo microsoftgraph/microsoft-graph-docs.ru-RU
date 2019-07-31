@@ -1,27 +1,29 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс хэшей группирует доступных хэши в единую структуру для элемента.
 ms.date: 09/10/2017
 title: Hashes
 localization_priority: Normal
-ms.openlocfilehash: 8b2a80152a0e4e4ec2b05a4ea1080ff4e159d6c9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e2e61e6fbc5e6ff92c91eb2ffd408e6d4c7c41c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006397"
 ---
-# <a name="hashes-resource-type"></a><span data-ttu-id="4c839-102">Тип ресурса Hashes</span><span class="sxs-lookup"><span data-stu-id="4c839-102">Hashes resource type</span></span>
+# <a name="hashes-resource-type"></a><span data-ttu-id="928e2-103">Тип ресурса Hashes</span><span class="sxs-lookup"><span data-stu-id="928e2-103">Hashes resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4c839-103">Ресурс **хэшей** группирует доступных хэши в единую структуру для элемента.</span><span class="sxs-lookup"><span data-stu-id="4c839-103">The **Hashes** resource groups available hashes into a single structure for an item.</span></span>
+<span data-ttu-id="928e2-104">Ресурс **хэшей** группирует доступных хэши в единую структуру для элемента.</span><span class="sxs-lookup"><span data-stu-id="928e2-104">The **Hashes** resource groups available hashes into a single structure for an item.</span></span>
 
-<span data-ttu-id="4c839-104">**Примечание.** Не все службы предоставляют значение для всех свойств хэша в списке.</span><span class="sxs-lookup"><span data-stu-id="4c839-104">**Note:** Not all services provide a value for all hash properties listed.</span></span>
+<span data-ttu-id="928e2-105">**Примечание.** Не все службы предоставляют значение для всех свойств хэша в списке.</span><span class="sxs-lookup"><span data-stu-id="928e2-105">**Note:** Not all services provide a value for all hash properties listed.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4c839-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4c839-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="928e2-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="928e2-106">JSON representation</span></span>
 
-<span data-ttu-id="4c839-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4c839-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="928e2-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="928e2-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,25 +39,25 @@ ms.locfileid: "33333705"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="4c839-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4c839-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="928e2-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="928e2-108">Properties</span></span>
 
-| <span data-ttu-id="4c839-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4c839-108">Property</span></span>         | <span data-ttu-id="4c839-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4c839-109">Type</span></span>   | <span data-ttu-id="4c839-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4c839-110">Description</span></span>                                                       |
+| <span data-ttu-id="928e2-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="928e2-109">Property</span></span>         | <span data-ttu-id="928e2-110">Тип</span><span class="sxs-lookup"><span data-stu-id="928e2-110">Type</span></span>   | <span data-ttu-id="928e2-111">Описание</span><span class="sxs-lookup"><span data-stu-id="928e2-111">Description</span></span>                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| <span data-ttu-id="4c839-111">**sha1Hash**</span><span class="sxs-lookup"><span data-stu-id="4c839-111">**sha1Hash**</span></span>     | <span data-ttu-id="4c839-112">String</span><span class="sxs-lookup"><span data-stu-id="4c839-112">String</span></span> | <span data-ttu-id="4c839-p101">Хэш SHA1 для содержимого файла (если доступно). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4c839-p101">SHA1 hash for the contents of the file (if available). Read-only.</span></span> |
-| <span data-ttu-id="4c839-115">**crc32Hash**</span><span class="sxs-lookup"><span data-stu-id="4c839-115">**crc32Hash**</span></span>    | <span data-ttu-id="4c839-116">String</span><span class="sxs-lookup"><span data-stu-id="4c839-116">String</span></span> | <span data-ttu-id="4c839-p102">Значение CRC32 файла (если доступно). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4c839-p102">The CRC32 value of the file (if available). Read-only.</span></span>            |
-| <span data-ttu-id="4c839-119">**quickXorHash**</span><span class="sxs-lookup"><span data-stu-id="4c839-119">**quickXorHash**</span></span> | <span data-ttu-id="4c839-120">Строка</span><span class="sxs-lookup"><span data-stu-id="4c839-120">String</span></span> | <span data-ttu-id="4c839-p103">Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4c839-p103">A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.</span></span> |
+| <span data-ttu-id="928e2-112">**sha1Hash**</span><span class="sxs-lookup"><span data-stu-id="928e2-112">**sha1Hash**</span></span>     | <span data-ttu-id="928e2-113">String</span><span class="sxs-lookup"><span data-stu-id="928e2-113">String</span></span> | <span data-ttu-id="928e2-p101">Хэш SHA1 для содержимого файла (если доступно). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="928e2-p101">SHA1 hash for the contents of the file (if available). Read-only.</span></span> |
+| <span data-ttu-id="928e2-116">**crc32Hash**</span><span class="sxs-lookup"><span data-stu-id="928e2-116">**crc32Hash**</span></span>    | <span data-ttu-id="928e2-117">String</span><span class="sxs-lookup"><span data-stu-id="928e2-117">String</span></span> | <span data-ttu-id="928e2-p102">Значение CRC32 файла (если доступно). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="928e2-p102">The CRC32 value of the file (if available). Read-only.</span></span>            |
+| <span data-ttu-id="928e2-120">**quickXorHash**</span><span class="sxs-lookup"><span data-stu-id="928e2-120">**quickXorHash**</span></span> | <span data-ttu-id="928e2-121">Строка</span><span class="sxs-lookup"><span data-stu-id="928e2-121">String</span></span> | <span data-ttu-id="928e2-p103">Особый хэш файла, который можно использовать, чтобы определить, было ли изменено содержимое файла (если доступно). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="928e2-p103">A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.</span></span> |
 
-<span data-ttu-id="4c839-p104">**Примечание.** В некоторых случаях значения хэша могут быть недоступны. Если это так, значения хэша для определенного элемента будут обновлены после загрузки элемента.</span><span class="sxs-lookup"><span data-stu-id="4c839-p104">**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.</span></span>
+<span data-ttu-id="928e2-p104">**Примечание.** В некоторых случаях значения хэша могут быть недоступны. Если это так, значения хэша для определенного элемента будут обновлены после загрузки элемента.</span><span class="sxs-lookup"><span data-stu-id="928e2-p104">**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4c839-125">Замечания</span><span class="sxs-lookup"><span data-stu-id="4c839-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="928e2-126">Замечания</span><span class="sxs-lookup"><span data-stu-id="928e2-126">Remarks</span></span>
 
-<span data-ttu-id="4c839-126">В OneDrive для бизнеса и SharePoint Server 2016 значения **sha1Hash** и **crc32Hash** недоступны.</span><span class="sxs-lookup"><span data-stu-id="4c839-126">In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.</span></span>
+<span data-ttu-id="928e2-127">В OneDrive для бизнеса и SharePoint Server 2016 значения **sha1Hash** и **crc32Hash** недоступны.</span><span class="sxs-lookup"><span data-stu-id="928e2-127">In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.</span></span>
 
-<span data-ttu-id="4c839-127">В OneDrive персональный значение **quickXorHash** недоступно.</span><span class="sxs-lookup"><span data-stu-id="4c839-127">In OneDrive Personal, **quickXorHash** is not available.</span></span>
+<span data-ttu-id="928e2-128">В OneDrive персональный значение **quickXorHash** недоступно.</span><span class="sxs-lookup"><span data-stu-id="928e2-128">In OneDrive Personal, **quickXorHash** is not available.</span></span>
 
-<span data-ttu-id="4c839-128">Сведения о том, как вычислить значение **quickXorHash** для файла, см. в [фрагменте кода QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).</span><span class="sxs-lookup"><span data-stu-id="4c839-128">To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).</span></span>
+<span data-ttu-id="928e2-129">Сведения о том, как вычислить значение **quickXorHash** для файла, см. в [фрагменте кода QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).</span><span class="sxs-lookup"><span data-stu-id="928e2-129">To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).</span></span>
 
-<span data-ttu-id="4c839-129">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="4c839-129">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="928e2-130">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="928e2-130">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!--

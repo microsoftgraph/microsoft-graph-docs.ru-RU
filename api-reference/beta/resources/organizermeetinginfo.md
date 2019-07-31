@@ -4,29 +4,30 @@ description: Сведения о собрании, содержащие орга
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 129e8a60edd89d45eb6e48715a59231475d52b99
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341763"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009274"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="b2d10-103">Тип ресурса Организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="b2d10-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="3ddff-103">Тип ресурса Организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="3ddff-103">organizerMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b2d10-104">Сведения о собрании, содержащие организатора собрания.</span><span class="sxs-lookup"><span data-stu-id="b2d10-104">Meeting information containing the organizer of the meeting.</span></span>
+<span data-ttu-id="3ddff-104">Сведения о собрании, содержащие организатора собрания.</span><span class="sxs-lookup"><span data-stu-id="3ddff-104">Meeting information containing the organizer of the meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b2d10-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="b2d10-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3ddff-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="3ddff-105">Properties</span></span>
 
-| <span data-ttu-id="b2d10-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="b2d10-106">Property</span></span>                     | <span data-ttu-id="b2d10-107">Тип</span><span class="sxs-lookup"><span data-stu-id="b2d10-107">Type</span></span>                          | <span data-ttu-id="b2d10-108">Описание</span><span class="sxs-lookup"><span data-stu-id="b2d10-108">Description</span></span>                                     |
+| <span data-ttu-id="3ddff-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="3ddff-106">Property</span></span>                     | <span data-ttu-id="3ddff-107">Тип</span><span class="sxs-lookup"><span data-stu-id="3ddff-107">Type</span></span>                          | <span data-ttu-id="3ddff-108">Описание</span><span class="sxs-lookup"><span data-stu-id="3ddff-108">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="b2d10-109">Алловконверсатионвисаусост</span><span class="sxs-lookup"><span data-stu-id="b2d10-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="b2d10-110">Логический</span><span class="sxs-lookup"><span data-stu-id="b2d10-110">Boolean</span></span>                       | <span data-ttu-id="b2d10-111">Указывает, может ли беседа продолжиться после закрытия узла беседы.</span><span class="sxs-lookup"><span data-stu-id="b2d10-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="b2d10-112">organizer</span><span class="sxs-lookup"><span data-stu-id="b2d10-112">organizer</span></span>                    | [<span data-ttu-id="b2d10-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="b2d10-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="b2d10-114">Удостоверение Azure Active Directory для организатора.</span><span class="sxs-lookup"><span data-stu-id="b2d10-114">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="3ddff-109">Алловконверсатионвисаусост</span><span class="sxs-lookup"><span data-stu-id="3ddff-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="3ddff-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="3ddff-110">Boolean</span></span>                       | <span data-ttu-id="3ddff-111">Указывает, может ли беседа продолжиться после закрытия узла беседы.</span><span class="sxs-lookup"><span data-stu-id="3ddff-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="3ddff-112">organizer</span><span class="sxs-lookup"><span data-stu-id="3ddff-112">organizer</span></span>                    | [<span data-ttu-id="3ddff-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="3ddff-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="3ddff-114">Удостоверение Azure Active Directory для организатора.</span><span class="sxs-lookup"><span data-stu-id="3ddff-114">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="b2d10-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b2d10-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ddff-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3ddff-115">JSON representation</span></span>
 
-<span data-ttu-id="b2d10-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b2d10-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3ddff-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3ddff-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +45,7 @@ ms.locfileid: "33341763"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="b2d10-117">Пример</span><span class="sxs-lookup"><span data-stu-id="b2d10-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3ddff-117">Пример</span><span class="sxs-lookup"><span data-stu-id="3ddff-117">Example</span></span>
 
 <!-- {
   "blockType": "example",
