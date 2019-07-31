@@ -4,12 +4,13 @@ description: Удаляет объект Андроидворкпрофилет�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1910aa17d9ea91afdbdf7252ef2d445eef44ff1
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f226f62dc26e87abd1728aebcb8ff2f418de33fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34969066"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950464"
 ---
 # <a name="delete-androidworkprofiletrustedrootcertificate"></a>Удаление Андроидворкпрофилетрустедрутцертификате
 

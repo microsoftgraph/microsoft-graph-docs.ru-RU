@@ -4,12 +4,13 @@ description: Получение одного ответа на сообщени�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3091a839cc45f5b844e82803b76333829da21c3c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 50f371f9fa1d98d2e8fae17def4dc23158bad97b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944319"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Получение ответа на сообщение канала
 

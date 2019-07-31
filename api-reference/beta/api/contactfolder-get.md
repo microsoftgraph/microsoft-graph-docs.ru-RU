@@ -4,12 +4,13 @@ description: Получение папки контактов с помощью 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a3760f4c437bb69c6f8e7b94218bee176718059e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 14961771bb8c4c038ce7b4515ab592bafcd91d0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943290"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 

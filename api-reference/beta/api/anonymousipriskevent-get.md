@@ -2,12 +2,15 @@
 title: Получение объекта anonymousIpRiskEvent
 description: Получение свойств и связей объекта анонимаусиприскевент.
 localization_priority: Normal
-ms.openlocfilehash: e460f8d7d08a8f20a84e12aab7a6b130ac93ba25
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dd89350360f045659697da747525bf0bfa6ec96a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322667"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945587"
 ---
 # <a name="get-anonymousipriskevent"></a>Получение объекта anonymousIpRiskEvent
 
@@ -21,7 +24,7 @@ ms.locfileid: "33322667"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

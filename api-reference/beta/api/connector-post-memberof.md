@@ -2,12 +2,15 @@
 title: Добавление соединителя в Коннекторграуп
 description: Используйте этот API, чтобы добавить соединитель для нового Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: d0357e1fc3c911111b392b783e94723e8084e44a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 85ea1046509cc0937b9f2ad0d6372dcc1b222862
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327528"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943521"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя в Коннекторграуп
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327528"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,10 +35,10 @@ POST /connectors/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -57,7 +60,7 @@ Content-length: 99
   "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
 }
 ```
-В тексте запроса добавьте представление объекта [Коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

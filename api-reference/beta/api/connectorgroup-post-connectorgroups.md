@@ -2,12 +2,15 @@
 title: Создание Коннекторграуп
 description: Используйте этот API для создания нового Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: 90b3d0cdbdd02876e1dfaf3d6743f6dac2199202
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2b99d52303547bd94deb8c3866e4e62745f5b2d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943402"
 ---
 # <a name="create-connectorgroup"></a>Создание Коннекторграуп
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327682"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,10 +35,10 @@ POST /connectorGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Рекуриед|
+| Авторизация  | Носителя. Рекуриед|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -59,7 +62,7 @@ Content-length: 99
   "isDefault": false
 }
 ```
-В тексте запроса добавьте представление объекта [Коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

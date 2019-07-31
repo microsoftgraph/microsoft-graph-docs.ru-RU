@@ -4,12 +4,13 @@ description: Удаление объекта Букингсервице в ук�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: ca96dc60ed0221cc58ddd5901ab3fd898033b0a8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 790da46ec9a640e50fd9727e9f70f2d14d81175f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865333"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944929"
 ---
 # <a name="delete-bookingservice"></a>Удаление Букингсервице
 

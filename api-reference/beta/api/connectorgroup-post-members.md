@@ -2,12 +2,15 @@
 title: Добавление соединителя в Коннекторграуп
 description: Используйте этот API, чтобы добавить соединитель в Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: 839189b323318b440608b699864a36b69a6c840d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c8b428ca6c724ce37116430cbae56587866c13eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943388"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя в Коннекторграуп
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327679"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +34,7 @@ POST /connectorGroups/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление ссылки на объект [Connector](../resources/connector.md) в формате JSON.

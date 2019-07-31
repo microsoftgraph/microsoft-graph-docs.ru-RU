@@ -4,12 +4,13 @@ description: Получение списка событий в календар�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f14fe27cf236e8843415d2aa54fb281d6af58dca
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3543a96b7efbc4644353a23956f67162ed193888
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865081"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944701"
 ---
 # <a name="list-events"></a>Список событий
 

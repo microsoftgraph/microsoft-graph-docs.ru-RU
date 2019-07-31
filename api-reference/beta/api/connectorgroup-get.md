@@ -2,12 +2,15 @@
 title: Получение Коннекторграуп
 description: Получение свойств объекта Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: fe638c863d12f20cd352d73d589db691d32dccf6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ac1a8ff709b3795fa4491fca1b75b26ca2b9e138
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327692"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943486"
 ---
 # <a name="get-connectorgroup"></a>Получение Коннекторграуп
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327692"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +37,7 @@ GET /connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.

@@ -4,12 +4,13 @@ description: Получение списка объектов **аудиорау
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f526363176163185870ed92eb38388c41890a8f6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dad1e79bafc478691618d8834ccc8873904613fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864782"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944520"
 ---
 # <a name="list-audio-routing-groups"></a>Список групп маршрутизации аудио
 

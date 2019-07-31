@@ -4,12 +4,13 @@ description: 'Создание дочернего объекта contactFolder �
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2071abff1d0950932ff8a0b952bed2eab2a7d557
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bc428e0c5e58241a29e22e81dc6efa4fddfa51a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943234"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 

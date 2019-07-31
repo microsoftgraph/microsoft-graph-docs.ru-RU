@@ -4,12 +4,13 @@ description: Добавление нового Scopedrolemembership измене
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: acc2dc7011d14e4832eb79407e1d08f68239f1c0
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 1ba7a32ac88dfdfec6cd8766816ad5a7cd8fc49d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918043"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945769"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление элемента Скопедролемембер
 
@@ -23,9 +24,9 @@ ms.locfileid: "35918043"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit. ReadWrite. ALL |
+|Для приложений | Ролеманажемент. ReadWrite. Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

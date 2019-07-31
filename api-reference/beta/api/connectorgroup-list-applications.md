@@ -2,12 +2,15 @@
 title: Список приложений
 description: Получение списка объектов приложения, связанных с Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: a1670a88d50a5aa46a5eca0c59f58604a48ec369
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 772dc51a25595de71dec9a760cceb1281347ea8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327604"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943465"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327604"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +37,7 @@ GET /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.

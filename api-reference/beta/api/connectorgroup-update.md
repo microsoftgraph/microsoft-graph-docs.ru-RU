@@ -2,12 +2,15 @@
 title: Обновление Коннекторграупс
 description: Обновление свойств объекта коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: df45006b57886bd3296d92d34d75de65e5bbec89
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: dfc574c9028d5e810a92fd5de4b099d3109bf7ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327639"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943374"
 ---
 # <a name="update-connectorgroups"></a>Обновление Коннекторграупс
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327639"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +34,14 @@ PATCH /connectorGroups/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Коннекторграуптипе|строка| Возможные значения: `applicationProxy`.|
+|Коннекторграуптипе|string| Возможные значения: `applicationProxy`.|
 |name|String|Имя Коннекторграуп.|
 
 ## <a name="response"></a>Отклик

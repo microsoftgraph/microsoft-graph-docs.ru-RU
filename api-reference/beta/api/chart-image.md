@@ -4,12 +4,13 @@ description: Отрисовывает диаграмму в виде изобр�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e82f0600cb43ba515bfb8bee9ecde90e645ea062
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: b75b7700d3b4a862e04a086000831f6fd4b50489
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328156"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944151"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/Image(width=0,height=0,fittingM
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

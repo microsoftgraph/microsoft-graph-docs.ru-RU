@@ -2,12 +2,15 @@
 title: Получение соединителя
 description: Получение свойств объекта Connector.
 localization_priority: Normal
-ms.openlocfilehash: da0a44864043e013b284e901786ba36a04fb143d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7650da72a4de2488c5f7f44644785cdeca43babe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327553"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943549"
 ---
 # <a name="get-connector"></a>Получение соединителя
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327553"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +37,7 @@ GET /connectorGroups/{id}/members/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.

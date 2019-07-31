@@ -4,12 +4,13 @@ description: Обновление нескольких оповещений в �
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7b061b1ab8e323158b12a20262349321b80236fc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 75019108eace22e42a0ffde5bd079e3605c13478
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945615"
 ---
 # <a name="alert-updatealerts"></a>Предупреждение: Упдатеалертс
 

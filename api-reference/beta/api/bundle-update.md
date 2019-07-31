@@ -5,12 +5,13 @@ title: Обновление пакета
 description: Обновление пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bbeb9f62a0053a4735358097e2441bac08078ef7
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: e3d7e684b9987aa5bcd4c601654956c84b6f7904
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932886"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944818"
 ---
 # <a name="update-bundle"></a>Пакет обновления
 

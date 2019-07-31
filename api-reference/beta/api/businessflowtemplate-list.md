@@ -2,12 +2,15 @@
 title: Список Бусинессфловтемплатес
 description: В функции проверок доступа Azure AD перечислите все объекты Бусинессфловтемплате.
 localization_priority: Normal
-ms.openlocfilehash: 738986efa97f97c58eb76abad0eeb01e3a0a12fc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 88a67360fc6d60f9751cecf932dba40dd8be4e08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865185"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944835"
 ---
 # <a name="list-businessflowtemplates"></a>Список Бусинессфловтемплатес
 

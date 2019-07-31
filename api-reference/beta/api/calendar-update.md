@@ -4,12 +4,13 @@ description: 'Обновление свойств объекта calendar. Эт�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 97aa0cf8a512ea938f2379a56d485d8b3fbd0119
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b8b86179dfe39f3f2f5516b87e0294e4f01be052
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944676"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 

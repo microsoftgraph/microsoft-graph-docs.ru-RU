@@ -4,12 +4,13 @@ description: Создание канала в Microsoft Team, как указа�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 499dd2f868fef5e2a5e355a32e768bd4f87609d3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f119181375cfb97128ddcef619e5ea6730d34140
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944207"
 ---
 # <a name="create-channel"></a>Создание канала
 

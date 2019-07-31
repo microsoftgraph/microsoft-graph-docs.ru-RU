@@ -4,12 +4,13 @@ description: Перечисление всех ответов на сообще�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 51de12594a2618c7bc8265f9071529c59705eb46
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fd77712a1940b7b5697ee8750e88e7f9f0d45a18
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864492"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944291"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 

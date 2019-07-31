@@ -4,12 +4,13 @@ description: Получение коллекции объектов Букинг
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: d58d2fdedb29e47d03ff04eff4850abfbeed2fa6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fd9084d963fa3e666f3e0fa75b7ae9bd5288d4ea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945225"
 ---
 # <a name="list-bookings-calendarview"></a>Представление календаря "Список резервирований"
 

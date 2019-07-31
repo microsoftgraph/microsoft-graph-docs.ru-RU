@@ -2,12 +2,15 @@
 title: Удаление Коннекторграуп
 description: Удаление объекта Коннекторграуп.
 localization_priority: Normal
-ms.openlocfilehash: 34bf5dd919ddea37f429e61fc9b01c1ee4c2d68c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e8c7d0dc61338b10451f553421b74ad1b41f628f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943479"
 ---
 # <a name="delete-connectorgroup"></a>Удаление Коннекторграуп
 
@@ -22,7 +25,7 @@ ms.locfileid: "33327704"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 > **Примечание:** У группы соединителей не должно быть связанных соединителей.
 
@@ -34,7 +37,7 @@ DELETE /connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.

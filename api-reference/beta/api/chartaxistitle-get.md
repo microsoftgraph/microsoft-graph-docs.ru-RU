@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта в
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 318c7a15c5c1669659a83aeb09992ee46382ab6d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3052d8249a153fd11fdf0b58c4109d0518f9f96c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944053"
 ---
 # <a name="get-workbookchartaxistitle"></a>Получение Воркбукчартаксиститле
 

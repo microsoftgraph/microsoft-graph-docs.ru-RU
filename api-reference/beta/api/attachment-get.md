@@ -2,14 +2,15 @@
 title: Получение вложения
 description: Считывание свойств и связей вложений, вложенных в событие, сообщение, задачу Outlook или POST.
 localization_priority: Normal
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f55264b156a6687f0eb9e544f97eaf7df84dbeb3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 09a336da0f2ead60235240b60b3539007df6bd15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857167"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945363"
 ---
 # <a name="get-attachment"></a>Получение вложения
 

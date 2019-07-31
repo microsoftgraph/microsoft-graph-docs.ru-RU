@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта А
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d551fa292e746c77d1034025918e672668f1831
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 976423ba07b736e8ac94e2fcbc0831e509d17557
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856918"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945307"
 ---
 # <a name="get-audio-routing-group"></a>Получение группы маршрутизации звука
 

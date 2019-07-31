@@ -2,12 +2,15 @@
 title: Список Анонимаусиприскевентс
 description: Получение списка объектов анонимаусиприскевент.
 localization_priority: Normal
-ms.openlocfilehash: 44f366755396924c15422a44af0712e668327469
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7935b5bcb98d5f7122f3967aeed1313315259a29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945573"
 ---
 # <a name="list-anonymousipriskevents"></a>Список Анонимаусиприскевентс
 
@@ -21,7 +24,7 @@ ms.locfileid: "33322672"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

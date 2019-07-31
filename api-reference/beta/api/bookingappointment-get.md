@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта Б
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: ea8b5a01c69c139ea68692b66c414a87855735b1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 75efcf0c9afc33d6422e082f01c6b7e77988261d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855778"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945251"
 ---
 # <a name="get-bookingappointment"></a>Получение Букингаппоинтмент
 

@@ -2,12 +2,15 @@
 title: Список соединителей
 description: Получение списка объектов Connector.
 localization_priority: Normal
-ms.openlocfilehash: 69e70bbf0f247b4d702f9cea2e69e2cddcce6272
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a85a1d478adc37da6dafe7850262539993e15ae8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327688"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943509"
 ---
 # <a name="list-connectors"></a>Список соединителей
 
@@ -21,7 +24,7 @@ ms.locfileid: "33327688"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +37,7 @@ GET /connectors
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.

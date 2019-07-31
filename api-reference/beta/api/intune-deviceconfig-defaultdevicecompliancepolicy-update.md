@@ -4,12 +4,13 @@ description: Обновление свойств объекта Дефаултд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27c3aedeaf17f26a3144c7bf5daff3a826960bb6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 6b04fa071f35601058f2e9df1a594e88e599da03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34968681"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35950114"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>Обновление Дефаултдевицекомплианцеполици
 

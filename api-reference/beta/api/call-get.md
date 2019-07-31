@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта Ca
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b822e11147dae74748b8666cc01d575251912c2c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9c6807250e66947605cd7abb990a7646301af8a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864829"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944544"
 ---
 # <a name="get-call"></a>Получение вызова
 

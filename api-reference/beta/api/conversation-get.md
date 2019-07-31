@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта б
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: dcaae364e032859459f24b783f1d13283d7cb6df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dadf791cb2b32ab64e696de1f5bde45f3b215c31
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35863058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35943150"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
