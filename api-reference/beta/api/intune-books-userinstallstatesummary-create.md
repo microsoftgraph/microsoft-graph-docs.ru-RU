@@ -4,31 +4,32 @@ description: Создание объекта userInstallStateSummary.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 058e5d47773172cce3f91da04f1697aa2ded3e47
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2b2857933d51c3b2f836c520e725c2563043a481
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972097"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959049"
 ---
-# <a name="create-userinstallstatesummary"></a><span data-ttu-id="8930f-103">Создание объекта userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="8930f-103">Create userInstallStateSummary</span></span>
+# <a name="create-userinstallstatesummary"></a><span data-ttu-id="c5f5e-103">Создание объекта userInstallStateSummary</span><span class="sxs-lookup"><span data-stu-id="c5f5e-103">Create userInstallStateSummary</span></span>
 
-> <span data-ttu-id="8930f-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8930f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c5f5e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8930f-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8930f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c5f5e-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8930f-106">Создание объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).</span><span class="sxs-lookup"><span data-stu-id="8930f-106">Create a new [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
+<span data-ttu-id="c5f5e-106">Создание объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).</span><span class="sxs-lookup"><span data-stu-id="c5f5e-106">Create a new [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="8930f-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="8930f-107">Prerequisites</span></span>
-<span data-ttu-id="8930f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8930f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c5f5e-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="c5f5e-107">Prerequisites</span></span>
+<span data-ttu-id="c5f5e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c5f5e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8930f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8930f-110">Permission type</span></span>|<span data-ttu-id="8930f-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8930f-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c5f5e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c5f5e-110">Permission type</span></span>|<span data-ttu-id="c5f5e-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="c5f5e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="8930f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8930f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8930f-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8930f-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="8930f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8930f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8930f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8930f-115">Not supported.</span></span>|
-|<span data-ttu-id="8930f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8930f-116">Application</span></span>|<span data-ttu-id="8930f-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8930f-117">Not supported.</span></span>|
+|<span data-ttu-id="c5f5e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c5f5e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c5f5e-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5f5e-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="c5f5e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c5f5e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c5f5e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-115">Not supported.</span></span>|
+|<span data-ttu-id="c5f5e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c5f5e-116">Application</span></span>|<span data-ttu-id="c5f5e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8930f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8930f-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c5f5e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c5f5e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +38,34 @@ ms.locfileid: "34972097"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8930f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8930f-119">Request headers</span></span>
-|<span data-ttu-id="8930f-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8930f-120">Header</span></span>|<span data-ttu-id="8930f-121">Значение</span><span class="sxs-lookup"><span data-stu-id="8930f-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c5f5e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c5f5e-119">Request headers</span></span>
+|<span data-ttu-id="c5f5e-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c5f5e-120">Header</span></span>|<span data-ttu-id="c5f5e-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c5f5e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="8930f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8930f-122">Authorization</span></span>|<span data-ttu-id="8930f-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8930f-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="8930f-124">Accept</span><span class="sxs-lookup"><span data-stu-id="8930f-124">Accept</span></span>|<span data-ttu-id="8930f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8930f-125">application/json</span></span>|
+|<span data-ttu-id="c5f5e-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c5f5e-122">Authorization</span></span>|<span data-ttu-id="c5f5e-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c5f5e-124">Accept</span><span class="sxs-lookup"><span data-stu-id="c5f5e-124">Accept</span></span>|<span data-ttu-id="c5f5e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c5f5e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8930f-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8930f-126">Request body</span></span>
-<span data-ttu-id="8930f-127">В тексте запроса добавьте представление объекта userInstallStateSummary в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8930f-127">In the request body, supply a JSON representation for the userInstallStateSummary object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5f5e-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c5f5e-126">Request body</span></span>
+<span data-ttu-id="c5f5e-127">В тексте запроса добавьте представление объекта userInstallStateSummary в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-127">In the request body, supply a JSON representation for the userInstallStateSummary object.</span></span>
 
-<span data-ttu-id="8930f-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта userInstallStateSummary.</span><span class="sxs-lookup"><span data-stu-id="8930f-128">The following table shows the properties that are required when you create the userInstallStateSummary.</span></span>
+<span data-ttu-id="c5f5e-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта userInstallStateSummary.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-128">The following table shows the properties that are required when you create the userInstallStateSummary.</span></span>
 
-|<span data-ttu-id="8930f-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="8930f-129">Property</span></span>|<span data-ttu-id="8930f-130">Тип</span><span class="sxs-lookup"><span data-stu-id="8930f-130">Type</span></span>|<span data-ttu-id="8930f-131">Описание</span><span class="sxs-lookup"><span data-stu-id="8930f-131">Description</span></span>|
+|<span data-ttu-id="c5f5e-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="c5f5e-129">Property</span></span>|<span data-ttu-id="c5f5e-130">Тип</span><span class="sxs-lookup"><span data-stu-id="c5f5e-130">Type</span></span>|<span data-ttu-id="c5f5e-131">Описание</span><span class="sxs-lookup"><span data-stu-id="c5f5e-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8930f-132">id</span><span class="sxs-lookup"><span data-stu-id="8930f-132">id</span></span>|<span data-ttu-id="8930f-133">String</span><span class="sxs-lookup"><span data-stu-id="8930f-133">String</span></span>|<span data-ttu-id="8930f-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="8930f-134">Key of the entity.</span></span>|
-|<span data-ttu-id="8930f-135">userName</span><span class="sxs-lookup"><span data-stu-id="8930f-135">userName</span></span>|<span data-ttu-id="8930f-136">String</span><span class="sxs-lookup"><span data-stu-id="8930f-136">String</span></span>|<span data-ttu-id="8930f-137">Имя пользователя.</span><span class="sxs-lookup"><span data-stu-id="8930f-137">User name.</span></span>|
-|<span data-ttu-id="8930f-138">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="8930f-138">installedDeviceCount</span></span>|<span data-ttu-id="8930f-139">Int32</span><span class="sxs-lookup"><span data-stu-id="8930f-139">Int32</span></span>|<span data-ttu-id="8930f-140">Количество установленных устройств.</span><span class="sxs-lookup"><span data-stu-id="8930f-140">Installed Device Count.</span></span>|
-|<span data-ttu-id="8930f-141">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="8930f-141">failedDeviceCount</span></span>|<span data-ttu-id="8930f-142">Int32</span><span class="sxs-lookup"><span data-stu-id="8930f-142">Int32</span></span>|<span data-ttu-id="8930f-143">Количество устройств со сбоями.</span><span class="sxs-lookup"><span data-stu-id="8930f-143">Failed Device Count.</span></span>|
-|<span data-ttu-id="8930f-144">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="8930f-144">notInstalledDeviceCount</span></span>|<span data-ttu-id="8930f-145">Int32</span><span class="sxs-lookup"><span data-stu-id="8930f-145">Int32</span></span>|<span data-ttu-id="8930f-146">Количество не установленных устройств.</span><span class="sxs-lookup"><span data-stu-id="8930f-146">Not installed device count.</span></span>|
+|<span data-ttu-id="c5f5e-132">id</span><span class="sxs-lookup"><span data-stu-id="c5f5e-132">id</span></span>|<span data-ttu-id="c5f5e-133">String</span><span class="sxs-lookup"><span data-stu-id="c5f5e-133">String</span></span>|<span data-ttu-id="c5f5e-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-134">Key of the entity.</span></span>|
+|<span data-ttu-id="c5f5e-135">userName</span><span class="sxs-lookup"><span data-stu-id="c5f5e-135">userName</span></span>|<span data-ttu-id="c5f5e-136">String</span><span class="sxs-lookup"><span data-stu-id="c5f5e-136">String</span></span>|<span data-ttu-id="c5f5e-137">Имя пользователя.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-137">User name.</span></span>|
+|<span data-ttu-id="c5f5e-138">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="c5f5e-138">installedDeviceCount</span></span>|<span data-ttu-id="c5f5e-139">Int32</span><span class="sxs-lookup"><span data-stu-id="c5f5e-139">Int32</span></span>|<span data-ttu-id="c5f5e-140">Количество установленных устройств.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-140">Installed Device Count.</span></span>|
+|<span data-ttu-id="c5f5e-141">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="c5f5e-141">failedDeviceCount</span></span>|<span data-ttu-id="c5f5e-142">Int32</span><span class="sxs-lookup"><span data-stu-id="c5f5e-142">Int32</span></span>|<span data-ttu-id="c5f5e-143">Количество устройств со сбоями.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-143">Failed Device Count.</span></span>|
+|<span data-ttu-id="c5f5e-144">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="c5f5e-144">notInstalledDeviceCount</span></span>|<span data-ttu-id="c5f5e-145">Int32</span><span class="sxs-lookup"><span data-stu-id="c5f5e-145">Int32</span></span>|<span data-ttu-id="c5f5e-146">Количество не установленных устройств.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-146">Not installed device count.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="8930f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="8930f-147">Response</span></span>
-<span data-ttu-id="8930f-148">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8930f-148">If successful, this method returns a `201 Created` response code and a [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c5f5e-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="c5f5e-147">Response</span></span>
+<span data-ttu-id="c5f5e-148">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-148">If successful, this method returns a `201 Created` response code and a [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8930f-149">Пример</span><span class="sxs-lookup"><span data-stu-id="8930f-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c5f5e-149">Пример</span><span class="sxs-lookup"><span data-stu-id="c5f5e-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8930f-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="8930f-150">Request</span></span>
-<span data-ttu-id="8930f-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8930f-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c5f5e-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="c5f5e-150">Request</span></span>
+<span data-ttu-id="c5f5e-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-151">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 Content-type: application/json
@@ -79,8 +80,8 @@ Content-length: 189
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="8930f-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="8930f-152">Response</span></span>
-<span data-ttu-id="8930f-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8930f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c5f5e-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="c5f5e-152">Response</span></span>
+<span data-ttu-id="c5f5e-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c5f5e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

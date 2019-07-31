@@ -4,29 +4,30 @@ description: Одно событие DTMF.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9cf89df775bb663fbfb4c844b98c6cb35d085aa4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 0eaa4b4159ffd5e7455b1155a7f3cd82c89b19aa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345493"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964251"
 ---
-# <a name="toneinfo-resource-type"></a><span data-ttu-id="b2e7a-103">Тип ресурса Тонеинфо</span><span class="sxs-lookup"><span data-stu-id="b2e7a-103">toneInfo resource type</span></span>
+# <a name="toneinfo-resource-type"></a><span data-ttu-id="174c3-103">Тип ресурса Тонеинфо</span><span class="sxs-lookup"><span data-stu-id="174c3-103">toneInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b2e7a-104">Одно событие DTMF.</span><span class="sxs-lookup"><span data-stu-id="b2e7a-104">A single DTMF event.</span></span>
+<span data-ttu-id="174c3-104">Одно событие DTMF.</span><span class="sxs-lookup"><span data-stu-id="174c3-104">A single DTMF event.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b2e7a-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="b2e7a-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="174c3-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="174c3-105">Properties</span></span>
 
-| <span data-ttu-id="b2e7a-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="b2e7a-106">Property</span></span>       | <span data-ttu-id="b2e7a-107">Тип</span><span class="sxs-lookup"><span data-stu-id="b2e7a-107">Type</span></span>    | <span data-ttu-id="b2e7a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="b2e7a-108">Description</span></span>|
+| <span data-ttu-id="174c3-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="174c3-106">Property</span></span>       | <span data-ttu-id="174c3-107">Тип</span><span class="sxs-lookup"><span data-stu-id="174c3-107">Type</span></span>    | <span data-ttu-id="174c3-108">Описание</span><span class="sxs-lookup"><span data-stu-id="174c3-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b2e7a-109">Секуенцеид</span><span class="sxs-lookup"><span data-stu-id="b2e7a-109">sequenceId</span></span> | <span data-ttu-id="b2e7a-110">Int64</span><span class="sxs-lookup"><span data-stu-id="b2e7a-110">Int64</span></span> | <span data-ttu-id="b2e7a-111">Добавочный идентификатор, используемый для упорядочивания событий DTMF.</span><span class="sxs-lookup"><span data-stu-id="b2e7a-111">An incremental identifier used for ordering DTMF events.</span></span> |
-| <span data-ttu-id="b2e7a-112">Новая</span><span class="sxs-lookup"><span data-stu-id="b2e7a-112">tone</span></span> | <span data-ttu-id="b2e7a-113">String</span><span class="sxs-lookup"><span data-stu-id="b2e7a-113">String</span></span> | <span data-ttu-id="b2e7a-114">Возможные значения: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`,. `flash`</span><span class="sxs-lookup"><span data-stu-id="b2e7a-114">Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`.</span></span> |
+| <span data-ttu-id="174c3-109">Секуенцеид</span><span class="sxs-lookup"><span data-stu-id="174c3-109">sequenceId</span></span> | <span data-ttu-id="174c3-110">Int64</span><span class="sxs-lookup"><span data-stu-id="174c3-110">Int64</span></span> | <span data-ttu-id="174c3-111">Добавочный идентификатор, используемый для упорядочивания событий DTMF.</span><span class="sxs-lookup"><span data-stu-id="174c3-111">An incremental identifier used for ordering DTMF events.</span></span> |
+| <span data-ttu-id="174c3-112">Новая</span><span class="sxs-lookup"><span data-stu-id="174c3-112">tone</span></span> | <span data-ttu-id="174c3-113">String</span><span class="sxs-lookup"><span data-stu-id="174c3-113">String</span></span> | <span data-ttu-id="174c3-114">Возможные значения: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`,. `flash`</span><span class="sxs-lookup"><span data-stu-id="174c3-114">Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="b2e7a-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b2e7a-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="174c3-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="174c3-115">JSON representation</span></span>
 
-<span data-ttu-id="b2e7a-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b2e7a-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="174c3-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="174c3-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

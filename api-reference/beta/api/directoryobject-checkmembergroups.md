@@ -4,37 +4,38 @@ description: Проверяет членство в указанном спис�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d296a57a4bb50eb4fca48d836d32674a2b33b2eb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 471435b7ff0ea7dc9bfcdba82db41772a3945b53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862484"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951234"
 ---
-# <a name="check-member-groups"></a><span data-ttu-id="d0a28-103">Проверка членства в группах</span><span class="sxs-lookup"><span data-stu-id="d0a28-103">Check member groups</span></span>
+# <a name="check-member-groups"></a><span data-ttu-id="e585d-103">Проверка членства в группах</span><span class="sxs-lookup"><span data-stu-id="e585d-103">Check member groups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d0a28-104">Проверяет членство в указанном списке групп и возвращает из этого списка группы, в которые входит указанный пользователь, группа, субъект-служба или объект каталога.</span><span class="sxs-lookup"><span data-stu-id="d0a28-104">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, service principal or directory object is a member.</span></span> <span data-ttu-id="d0a28-105">Это транзитивная функция.</span><span class="sxs-lookup"><span data-stu-id="d0a28-105">This function is transitive.</span></span>
+<span data-ttu-id="e585d-104">Проверяет членство в указанном списке групп и возвращает из этого списка группы, в которые входит указанный пользователь, группа, субъект-служба или объект каталога.</span><span class="sxs-lookup"><span data-stu-id="e585d-104">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, service principal or directory object is a member.</span></span> <span data-ttu-id="e585d-105">Это транзитивная функция.</span><span class="sxs-lookup"><span data-stu-id="e585d-105">This function is transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d0a28-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d0a28-106">Permissions</span></span>
-<span data-ttu-id="d0a28-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0a28-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e585d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e585d-106">Permissions</span></span>
+<span data-ttu-id="e585d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e585d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="d0a28-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d0a28-109">Permission type</span></span>      | <span data-ttu-id="d0a28-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d0a28-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e585d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e585d-109">Permission type</span></span>      | <span data-ttu-id="e585d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e585d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d0a28-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d0a28-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d0a28-112">User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="d0a28-112">User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
-|<span data-ttu-id="d0a28-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d0a28-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0a28-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d0a28-114">Not supported.</span></span>    |
-|<span data-ttu-id="d0a28-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d0a28-115">Application</span></span> | <span data-ttu-id="d0a28-116">User.Read.All и Group.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="d0a28-116">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="e585d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e585d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e585d-112">User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="e585d-112">User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
+|<span data-ttu-id="e585d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e585d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e585d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e585d-114">Not supported.</span></span>    |
+|<span data-ttu-id="e585d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e585d-115">Application</span></span> | <span data-ttu-id="e585d-116">User.Read.All и Group.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="e585d-116">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
 
-<span data-ttu-id="d0a28-117">Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:</span><span class="sxs-lookup"><span data-stu-id="d0a28-117">Use the follow scenario guidance to help determine which permission types to use:</span></span>
-- <span data-ttu-id="d0a28-118">Используйте разрешения User. Read и Group. Read. ALL, чтобы проверить принадлежность к группам для вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="d0a28-118">Use User.Read and Group.Read.All permissions to check group memberships for the signed-in user.</span></span>
-- <span data-ttu-id="d0a28-119">Используйте User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы проверить принадлежность к группам для любого пользователя.</span><span class="sxs-lookup"><span data-stu-id="d0a28-119">Use User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to check group memberships for any user.</span></span>
-- <span data-ttu-id="d0a28-120">Используйте разрешение Group. Read. ALL, чтобы проверить принадлежность к группам для группы.</span><span class="sxs-lookup"><span data-stu-id="d0a28-120">Use Group.Read.All permission to check group memberships for a group.</span></span>
-- <span data-ttu-id="d0a28-121">Используйте разрешения Application. ReadWrite. ALL и Group. Read. ALL, чтобы проверить принадлежность к группам для субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="d0a28-121">Use Application.ReadWrite.All and Group.Read.All permissions to check group memberships for a service principal.</span></span>
-- <span data-ttu-id="d0a28-122">Используйте разрешение Directory. Read. ALL, чтобы проверить принадлежность к группам для объекта каталога.</span><span class="sxs-lookup"><span data-stu-id="d0a28-122">Use Directory.Read.All permission to check group memberships for a directory object.</span></span>
+<span data-ttu-id="e585d-117">Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:</span><span class="sxs-lookup"><span data-stu-id="e585d-117">Use the follow scenario guidance to help determine which permission types to use:</span></span>
+- <span data-ttu-id="e585d-118">Используйте разрешения User. Read и Group. Read. ALL, чтобы проверить принадлежность к группам для вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="e585d-118">Use User.Read and Group.Read.All permissions to check group memberships for the signed-in user.</span></span>
+- <span data-ttu-id="e585d-119">Используйте User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы проверить принадлежность к группам для любого пользователя.</span><span class="sxs-lookup"><span data-stu-id="e585d-119">Use User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to check group memberships for any user.</span></span>
+- <span data-ttu-id="e585d-120">Используйте разрешение Group. Read. ALL, чтобы проверить принадлежность к группам для группы.</span><span class="sxs-lookup"><span data-stu-id="e585d-120">Use Group.Read.All permission to check group memberships for a group.</span></span>
+- <span data-ttu-id="e585d-121">Используйте разрешения Application. ReadWrite. ALL и Group. Read. ALL, чтобы проверить принадлежность к группам для субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="e585d-121">Use Application.ReadWrite.All and Group.Read.All permissions to check group memberships for a service principal.</span></span>
+- <span data-ttu-id="e585d-122">Используйте разрешение Directory. Read. ALL, чтобы проверить принадлежность к группам для объекта каталога.</span><span class="sxs-lookup"><span data-stu-id="e585d-122">Use Directory.Read.All permission to check group memberships for a directory object.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d0a28-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d0a28-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e585d-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e585d-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -43,29 +44,29 @@ POST /groups/{id}/checkMemberGroups
 POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
-## <a name="request-headers"></a><span data-ttu-id="d0a28-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d0a28-124">Request headers</span></span>
-| <span data-ttu-id="d0a28-125">Имя</span><span class="sxs-lookup"><span data-stu-id="d0a28-125">Name</span></span>       | <span data-ttu-id="d0a28-126">Тип</span><span class="sxs-lookup"><span data-stu-id="d0a28-126">Type</span></span> | <span data-ttu-id="d0a28-127">Описание</span><span class="sxs-lookup"><span data-stu-id="d0a28-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e585d-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e585d-124">Request headers</span></span>
+| <span data-ttu-id="e585d-125">Имя</span><span class="sxs-lookup"><span data-stu-id="e585d-125">Name</span></span>       | <span data-ttu-id="e585d-126">Тип</span><span class="sxs-lookup"><span data-stu-id="e585d-126">Type</span></span> | <span data-ttu-id="e585d-127">Описание</span><span class="sxs-lookup"><span data-stu-id="e585d-127">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d0a28-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="d0a28-128">Authorization</span></span>  | <span data-ttu-id="d0a28-129">string</span><span class="sxs-lookup"><span data-stu-id="d0a28-129">string</span></span>  | <span data-ttu-id="d0a28-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d0a28-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d0a28-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d0a28-132">Content-Type</span></span>  | <span data-ttu-id="d0a28-133">application/json</span><span class="sxs-lookup"><span data-stu-id="d0a28-133">application/json</span></span>  |
+| <span data-ttu-id="e585d-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="e585d-128">Authorization</span></span>  | <span data-ttu-id="e585d-129">string</span><span class="sxs-lookup"><span data-stu-id="e585d-129">string</span></span>  | <span data-ttu-id="e585d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e585d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e585d-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e585d-132">Content-Type</span></span>  | <span data-ttu-id="e585d-133">application/json</span><span class="sxs-lookup"><span data-stu-id="e585d-133">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d0a28-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d0a28-134">Request body</span></span>
-<span data-ttu-id="d0a28-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="d0a28-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e585d-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e585d-134">Request body</span></span>
+<span data-ttu-id="e585d-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="e585d-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d0a28-136">Параметр</span><span class="sxs-lookup"><span data-stu-id="d0a28-136">Parameter</span></span>    | <span data-ttu-id="d0a28-137">Тип</span><span class="sxs-lookup"><span data-stu-id="d0a28-137">Type</span></span>   |<span data-ttu-id="d0a28-138">Описание</span><span class="sxs-lookup"><span data-stu-id="d0a28-138">Description</span></span>|
+| <span data-ttu-id="e585d-136">Параметр</span><span class="sxs-lookup"><span data-stu-id="e585d-136">Parameter</span></span>    | <span data-ttu-id="e585d-137">Тип</span><span class="sxs-lookup"><span data-stu-id="e585d-137">Type</span></span>   |<span data-ttu-id="e585d-138">Описание</span><span class="sxs-lookup"><span data-stu-id="e585d-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d0a28-139">groupIds</span><span class="sxs-lookup"><span data-stu-id="d0a28-139">groupIds</span></span>|<span data-ttu-id="d0a28-140">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="d0a28-140">String collection</span></span> |<span data-ttu-id="d0a28-p104">Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.</span><span class="sxs-lookup"><span data-stu-id="d0a28-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
+|<span data-ttu-id="e585d-139">groupIds</span><span class="sxs-lookup"><span data-stu-id="e585d-139">groupIds</span></span>|<span data-ttu-id="e585d-140">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="e585d-140">String collection</span></span> |<span data-ttu-id="e585d-p104">Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.</span><span class="sxs-lookup"><span data-stu-id="e585d-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d0a28-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0a28-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e585d-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="e585d-143">Response</span></span>
 
-<span data-ttu-id="d0a28-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d0a28-144">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="e585d-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e585d-144">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d0a28-145">Пример</span><span class="sxs-lookup"><span data-stu-id="d0a28-145">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e585d-145">Пример</span><span class="sxs-lookup"><span data-stu-id="e585d-145">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d0a28-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="d0a28-146">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e585d-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="e585d-146">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="d0a28-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="d0a28-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e585d-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="e585d-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
@@ -81,27 +82,27 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="d0a28-148">C#</span><span class="sxs-lookup"><span data-stu-id="d0a28-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e585d-148">C#</span><span class="sxs-lookup"><span data-stu-id="e585d-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d0a28-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="d0a28-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e585d-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="e585d-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d0a28-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d0a28-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e585d-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="e585d-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="d0a28-151">Java</span><span class="sxs-lookup"><span data-stu-id="d0a28-151">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="e585d-151">Java</span><span class="sxs-lookup"><span data-stu-id="e585d-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="d0a28-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0a28-152">Response</span></span>
-<span data-ttu-id="d0a28-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d0a28-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e585d-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="e585d-152">Response</span></span>
+<span data-ttu-id="e585d-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e585d-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
