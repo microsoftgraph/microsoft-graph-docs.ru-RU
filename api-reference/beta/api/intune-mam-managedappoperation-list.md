@@ -4,12 +4,13 @@ description: Список свойств и связей объектов manage
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8587ab687ca45d3cb054a69d24ec7cbb9aba1a48
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b0632f9aae3f58ad2f844f535c0a77326ff2047d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986566"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994749"
 ---
 # <a name="list-managedappoperations"></a>Перечисление объектов managedAppOperation
 

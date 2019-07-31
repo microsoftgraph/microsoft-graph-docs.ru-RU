@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта iosManag
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 701d6484b4eee54d2e416cf9af2649451bee8559
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 84de417a25f1945093c772803f5fd23c880e7ed3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994882"
 ---
 # <a name="get-iosmanagedappprotection"></a>Получение объекта iosManagedAppProtection
 

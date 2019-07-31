@@ -2,12 +2,15 @@
 title: Тип ресурса licenseDetails
 description: Содержит сведения о лицензии, назначенной пользователю.
 localization_priority: Normal
-ms.openlocfilehash: 6b977dcff67ac9dc03890a4f2182d8b1d974f314
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 12e0dcb86288eb27859b87a1029e89676a5d511b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966970"
 ---
 # <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
@@ -31,7 +34,7 @@ ms.locfileid: "33345307"
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Равно свойству skuId в связанном объекте [SubscribedSku](subscribedsku.md) . Только для чтения |
 |Скупартнумбер|String| Имя уникального отображаемого номера SKU. Равно Скупартнумбер для связанного объекта [SubscribedSku](subscribedsku.md) ; Пример: "Аад_премиум". Только для чтения |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

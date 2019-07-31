@@ -4,12 +4,13 @@ description: Обновление свойств объекта reportRoot.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 845ee1c469bf0d986d8d417ad620cabf7f527884
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 66a122785d323031ff3d86cb5096caf2a0c3549b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897837"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984176"
 ---
 # <a name="update-reportroot"></a>Обновление объекта reportRoot
 
@@ -44,14 +45,14 @@ PATCH /reports
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [reportRoot](../resources/intune-shared-reportroot.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [reportRoot](../resources/intune-shared-reportroot.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта.|
+|id|String|Уникальный идентификатор для этого объекта.|
 
 
 

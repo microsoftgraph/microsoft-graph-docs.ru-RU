@@ -4,12 +4,13 @@ description: Удаляет объект Граупполиципресента�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86efa6ef660c1a4fc55346c74b707a0a916c02ea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 60c62697a635a1d304e9591404e264b45fe7d292
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995064"
 ---
 # <a name="delete-grouppolicypresentationvaluetext"></a>Удаление Граупполиципресентатионвалуетекст
 

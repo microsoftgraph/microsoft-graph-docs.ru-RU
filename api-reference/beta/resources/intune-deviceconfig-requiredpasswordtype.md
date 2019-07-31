@@ -4,12 +4,13 @@ description: Возможные значения обязательных пар
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8bc7a0980b95806d349c824fe242217f25866a8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 6af30bf051691d5c4d9c878dd65af830087f0d1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000622"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>тип перечисления Рекуиредпассвордтипе
 

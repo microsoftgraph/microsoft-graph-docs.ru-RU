@@ -2,12 +2,15 @@
 title: Обзор API журнала аудита Azure AD
 description: Azure Active Directory (Azure AD) отслеживает действия пользователя, регистрирует показатели входа и создает отчеты журнала аудита, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные, лежащие в основе этих отчетов, и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
 localization_priority: Priority
-ms.openlocfilehash: 6e8081e43745fdc5cdfc6d994e0115ea22514a2a
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9d739cbe711ad175e485ecb3d9d12173718a1b75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348693"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974243"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
 

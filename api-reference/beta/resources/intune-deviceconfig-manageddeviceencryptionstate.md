@@ -4,12 +4,13 @@ description: Отчет о шифровании для каждого устро
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c2c86a843c4573d4c00ae4650d857c3f01ec08d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: eb212599c56410b7f66d6f8baa8db1d06d36ba60
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737498"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000883"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>Тип ресурса Манажеддевицеенкриптионстате
 

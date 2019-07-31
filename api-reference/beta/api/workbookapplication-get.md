@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта В
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 2da708956db95c0b49c7658382b81fd840824721
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b6f7e3a53f6d0210886afc8be3fc5c4e0cd87c15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35995953"
 ---
 # <a name="get-workbookapplication"></a>Получение Воркбукаппликатион
 

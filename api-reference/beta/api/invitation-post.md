@@ -4,12 +4,13 @@ description: Используйте этот API для создания при�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b641b06945d5eba6040c617cd1f43c185af6c259
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1234bac1e1d5f8c3c1dc3e502f657df43a886308
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880439"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993202"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 

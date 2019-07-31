@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Создание списка на сайте.
 ms.date: 09/11/2017
 title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5feed6c868544938adad98165439b6360728f151
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d9d39a2642a6893fd01fd3f8833f4ce79d09966d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993153"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 

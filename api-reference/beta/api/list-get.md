@@ -1,15 +1,16 @@
 ---
 author: JeremyKelley
 title: Получение метаданных списка
-description: Возвращает метаданные для объекта [list] [].
+description: Возвращает метаданные для списка.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b60b5b1d6190738d133a030c96149688fc9fc88b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 417d7a02e58d96831b448f8b5365ce819489e723
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880355"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993139"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 

@@ -4,12 +4,13 @@ description: Обновление свойств объекта networkIPv4Confi
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 702e3bfba5556b7292f3eba32399552196ad745a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bc9cbf6d5b4a989d76cfc805df64111a3ff31222
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984382"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990227"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>Обновление networkIPv4ConfigurationManagementCondition
 

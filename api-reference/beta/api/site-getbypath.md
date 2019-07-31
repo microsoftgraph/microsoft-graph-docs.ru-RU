@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Вы можете получить свойства и связи ресурса site.
 ms.date: 09/10/2017
 title: Получение сайта SharePoint по пути
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 146a3c80bd3cd4cae53766c19206dc79930f7edf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e1d135677bf1ba19234cf2537b77345e8b3926de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330398"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982783"
 ---
 # <a name="get-a-site-resource-by-path"></a>Получение ресурса site по его пути
 

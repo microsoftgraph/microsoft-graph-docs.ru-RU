@@ -4,12 +4,13 @@ description: Пул представляет группу встроенных �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8487a92dae1874f1d11841cf6772b7300265c3b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f1402c699e490593036ac6836c70abe43731826c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994862"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998802"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>Тип ресурса Ембеддедсимактиватионкодепул
 

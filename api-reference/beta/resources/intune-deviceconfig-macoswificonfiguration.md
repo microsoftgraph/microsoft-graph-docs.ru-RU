@@ -4,12 +4,13 @@ description: Предоставляя конфигурации в этом пр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44f74ce428afbc7ee8d5aade7dbee47fc7cc1ccf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: cbdc718b223d8fe46bc2fd8ca9846bd5d2404784
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992075"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000888"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>Тип ресурса Макосвификонфигуратион
 

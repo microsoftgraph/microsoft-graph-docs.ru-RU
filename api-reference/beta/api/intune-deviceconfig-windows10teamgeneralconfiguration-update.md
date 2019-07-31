@@ -4,12 +4,13 @@ description: Обновление свойств объекта windows10TeamGen
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5241c1ea6056970d9df84b7c52b6cfbafc9acfc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: df6bed0790c9575f818a4ed84f5675de2cfa877f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977921"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975188"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Обновление windows10TeamGeneralConfiguration
 

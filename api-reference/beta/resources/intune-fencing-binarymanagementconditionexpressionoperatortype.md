@@ -4,12 +4,13 @@ description: Поддерживаемые бинарные операторы д
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b998bc9430a52347de255d9babfea8fd6061601d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e885c1f04db2429869297e9022bf0e45f0f12e9a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994806"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998739"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Бинариманажементкондитионекспрессионоператортипе
 

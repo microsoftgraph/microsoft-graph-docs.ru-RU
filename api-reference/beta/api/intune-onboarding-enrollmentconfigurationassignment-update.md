@@ -4,12 +4,13 @@ description: Обновление свойств объекта enrollmentConfig
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 506b2ac619d13c3c07fd815ea389b9d06f1109ae
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ad42b6eba03038cfb9346893a63ad9ce03a47921
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980903"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980389"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Обновление объекта enrollmentConfigurationAssignment
 

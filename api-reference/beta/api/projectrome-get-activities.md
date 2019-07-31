@@ -3,12 +3,14 @@ title: Получение действий пользователей
 description: Получение действий для определенного пользователя. В отличие от **последней** функции OData, будут возвращены действия без журналов. Разрешение UserActivity. ReadWrite. CreatedByApp будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 4d09f7fef3d6666885e776f70f439f273d3cdb95
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: f45551699329d571a441d32d10c0eb1bffd9faa4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331912"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978508"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
@@ -39,7 +41,7 @@ GET /me/activities
 Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
 - $expand для свойства навигации **historyitem** .
-- $Top, чтобы ограничить максимальное количество элементов на страницах.
+- $top, чтобы ограничить максимальное количество элементов на страницах.
 - $filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.
 
 Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.
@@ -58,7 +60,7 @@ GET /me/activities
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Текст запроса отсутствует.
 
@@ -83,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/activities
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "ignored",

@@ -4,12 +4,13 @@ description: Удаление объекта notificationMessageTemplate.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bbb5ccf9327cbf7a85bbee09d62bc3405814080
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5bdd9ce4cde6bf7869721f8ad6de59b1206ef3a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963550"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994315"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Удаление notificationMessageTemplate
 

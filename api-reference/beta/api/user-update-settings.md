@@ -4,12 +4,13 @@ description: 'Обновление свойств объекта Settings. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4b641a05486b72883ef5fa033fd40d98b7d42846
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a6b5903e08cfef70bace2f2dc6f2692e54fd7961
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329719"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996100"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -33,7 +34,7 @@ ms.locfileid: "33329719"
 PATCH /me/settings
 ```
 
-Запрос с идентификатором пользователя или userPrincipalName доступен только пользователю или пользователем с разрешениями User. ReadWrite. ALL. Чтобы узнать больше, ознакомьтесь [](/graph/permissions-reference)с разрешениями. 
+Запрос с параметрами user id или userPrincipalName доступен только пользователю или пользователю с разрешениями User.ReadWrite.All. Дополнительные сведения см. в статье [Разрешения](/graph/permissions-reference). 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/

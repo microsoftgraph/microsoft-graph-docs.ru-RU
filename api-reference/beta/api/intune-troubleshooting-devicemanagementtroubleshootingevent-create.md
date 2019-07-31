@@ -4,12 +4,13 @@ description: Создание объекта deviceManagementTroubleshootingEven
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d03c31c0bc60aa52bdf40db13a6f3e224c5b64c6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 86f3593da62397ce9b3a738241ce14cc95fb8373
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990885"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979392"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Создание объекта deviceManagementTroubleshootingEvent
 

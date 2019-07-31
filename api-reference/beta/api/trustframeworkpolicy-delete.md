@@ -4,12 +4,13 @@ description: Эта операция удаляет существующий о�
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1d96ff0f8be03a9e32998e47307a7377ffd217e2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 66a66d9a2fe77d881ab061bd4cbbcd58d6df3401
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867936"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996471"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Удаление Трустфрамеворкполици
 

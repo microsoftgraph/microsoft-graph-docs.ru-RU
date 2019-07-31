@@ -4,12 +4,13 @@ description: Получение руководителя пользовател�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5f91ec297c948603aeef3a0e247b7236ecd7356
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: apiPageType
+ms.openlocfilehash: 70e2baaec1e727f78a0cbde21e5149979ea4224a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33609560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996205"
 ---
 # <a name="list-manager"></a>Получение руководителя
 

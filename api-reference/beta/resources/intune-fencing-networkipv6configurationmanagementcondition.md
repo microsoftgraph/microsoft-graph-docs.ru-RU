@@ -4,12 +4,13 @@ description: Можно определить условия управления
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 665bbd4cb27d533a230614a2712943c23d1b3d76
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fead4345c94e9a48682b6d9584ba9897e1ad78e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979139"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998697"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv6ConfigurationManagementCondition
 

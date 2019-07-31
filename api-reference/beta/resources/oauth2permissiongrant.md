@@ -2,12 +2,15 @@
 title: Тип ресурса oAuth2PermissionGrant
 description: Представляет области OAuth 2,0 (делегированные разрешения), которые были предоставлены приложению (представленному субъектом-службой) в рамках процесса разрешения пользователя или администратора.
 localization_priority: Normal
-ms.openlocfilehash: f23d2e7a8b57b324a92a1268ab4cc0393d8906f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 25f012baca1a7dfa5aeb62b8885b00b151a657ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342074"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966617"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Тип ресурса oAuth2PermissionGrant
 
@@ -52,7 +55,7 @@ ms.locfileid: "33342074"
 |scope|String| Указывает значение утверждения [области](/graph/permissions-reference) , которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. Например, *User. Read* |
 |startTime|DateTimeOffset| В настоящее время значение времени начала игнорируется. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

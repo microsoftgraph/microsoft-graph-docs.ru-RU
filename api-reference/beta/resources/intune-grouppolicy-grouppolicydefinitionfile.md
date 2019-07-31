@@ -4,12 +4,13 @@ description: Сущность представляет XML-файл ADMX (адм
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0800f32cb4349a463454afdba0f22f33bb9bc9f0
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 60001517f635352ea2717033279ebebc8df7895b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741236"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998627"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>Тип ресурса Граупполицидефинитионфиле
 

@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Вы можете настроить SharePoint так, чтобы в нем хранился журнал элементов списка.
 ms.date: 09/10/2017
 title: Получение предыдущей версии записи списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 843c2f501217f7ce1d7923835bf0a7b44a010950
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cf3d0a88f250a954e5143c1000bcf4aaf61c0c1e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333500"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993069"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>Создание списка версий элемента ListItem (ознакомительная версия)
 

@@ -4,12 +4,13 @@ description: Получение списка объектов nameditem.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b14c8ca4ad0971133b025d7e3fef675d2e2b8c39
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6d9ae76dd1b498e4ecfea64f7e1d8785374aea4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996156"
 ---
 # <a name="list-names"></a>Список имен
 

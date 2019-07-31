@@ -4,12 +4,13 @@ description: Создайте папку задач в группе задач �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 4b49e628161899b8bfe0596ebd28a90b23172b8e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d7552e310e4d1e9fff1e559d1d92c71b2107a3d4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877370"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983637"
 ---
 # <a name="create-outlooktaskfolder"></a>Создание outlookTaskFolder
 

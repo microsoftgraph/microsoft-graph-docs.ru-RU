@@ -3,12 +3,14 @@ title: Получение открытого расширения
 description: Получение открытого расширения (объекта openTypeExtension), указанного по имени или полному имени.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ec0e75b9c72640888e27c78fa04c5c539237b58b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+ms.openlocfilehash: beaf6064ec6b175b09a648ba6b938089ed2d650c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878237"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983784"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 

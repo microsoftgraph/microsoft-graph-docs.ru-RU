@@ -4,12 +4,13 @@ description: Получение списка устройств пользова
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc8fedf14d2b61bb407bd5a4eec99ad83c4f1f71
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 292124babfb71ad1c86ae373f123c2f5d57df3b4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334864"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996254"
 ---
 # <a name="list-user-devices"></a>Перечисление пользовательских устройств
 
@@ -43,7 +44,7 @@ GET me/devices
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

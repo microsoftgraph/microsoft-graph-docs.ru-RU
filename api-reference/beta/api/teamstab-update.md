@@ -4,12 +4,13 @@ description: Обновление свойств указанной вкладк
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b809ada1f0a3324930bb75f84a1e4d3b965332f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 43d698e300cb4a9f2d9b6b094250fcbcd33d2821
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977473"
 ---
 # <a name="update-tab"></a>Обновление вкладки
 
@@ -40,7 +41,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

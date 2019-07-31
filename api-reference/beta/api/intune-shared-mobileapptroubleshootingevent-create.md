@@ -4,12 +4,13 @@ description: Описывает метод Create Мобилеапптраубл
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: d258a2d05d260a7820efcbdccc423743b9e6a4cd
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 9eae0c2d66dc28fd70d95c66f2ce034b16523d30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899265"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979752"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание Мобилеапптраублешутинжевент
 
@@ -46,7 +47,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Мобилеапптраублешутинжевент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеапптраублешутинжевент.
@@ -56,10 +57,10 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |id|Строка|GUID объекта|
 |**Устранение неполадок**|
 |Аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок.|
-|applicationId|Строка|Идентификатор приложения Intune.|
-|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе. |
+|applicationId|String|Идентификатор приложения Intune.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательный параметр.|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательно.|
 |лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |Траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |

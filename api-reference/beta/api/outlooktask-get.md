@@ -4,12 +4,13 @@ description: Получение свойств и связей задачи Outl
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f89854a9f77c9f2e9507ad363b029936a68ed14d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f37cc1bae0b227348c6152161768ce40c4db9dc9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877729"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983757"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 

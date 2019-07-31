@@ -4,12 +4,13 @@ description: Список свойств и связей объектов window
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c62dac2d26bd209711562ddb888f226e3cc2299a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1199c41af43fbcb52c2eec63d4fa4aafa3e2835e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976073"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976966"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>Список windows10EasEmailProfileConfigurations
 

@@ -4,12 +4,13 @@ description: Доверенные корневые сертификаты и с�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30e7a68f76c60fafff9fc2b035a65a60307f775d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: dd063ec70dd794ffb151036ea7bbbda090829343
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001259"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Тип ресурса Иоседуцертификатесеттингс
 

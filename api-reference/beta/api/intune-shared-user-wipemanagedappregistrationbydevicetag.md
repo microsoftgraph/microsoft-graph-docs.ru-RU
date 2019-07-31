@@ -4,12 +4,13 @@ description: Стирает данные о регистрации прилож�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 05935def6d23c18726622037b52e5586a06925f9
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: df921fe953271e7a35f318f63434671562ae7338
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897865"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993503"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Действие wipeManagedAppRegistrationByDeviceTag
 
@@ -46,7 +47,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тело запроса добавьте параметры в формате JSON.
 

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Вин
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: fba5ecec145196f4fd4a12182edc31022fb491b6
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 3d692837bd48d2b7dcbe23634ae590f79786c71e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993524"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>Список Виндовсдомаинжоинконфигуратионс
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

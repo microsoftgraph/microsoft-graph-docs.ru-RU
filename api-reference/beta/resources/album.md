@@ -5,12 +5,13 @@ title: Тип ресурса "альбом"
 description: Аспект, описывающий пакет, который представляет собой фотоальбом.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3bb5391557c3dfb0a97702a0e78de60c0a4876c7
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 59717995870cbfe970fd23b160377d32cb722835
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974453"
 ---
 # <a name="album-resource-type"></a>Тип ресурса "альбом"
 

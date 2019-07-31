@@ -4,12 +4,13 @@ description: Обновление свойств объекта localizedNotific
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86efe25dc74c2a5b29623748f296d9741b1492b0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b42352c6f0704614c7085d4edc089802b4fe269c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957850"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994336"
 ---
 # <a name="update-localizednotificationmessage"></a>Обновление объекта localizedNotificationMessage
 

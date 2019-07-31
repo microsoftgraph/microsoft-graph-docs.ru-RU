@@ -4,12 +4,13 @@ description: Сведения о мультимедиа, используемы�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 81fbb1228e8b8821a3a92a6f285a3abc758701ca
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 6a5e5677cb479839449a5e82323729b68201791a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932474"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966873"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса Медиаинфо
 

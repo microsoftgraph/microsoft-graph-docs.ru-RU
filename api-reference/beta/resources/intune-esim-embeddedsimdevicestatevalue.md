@@ -4,12 +4,13 @@ description: Описывает различные состояния для в�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a22641d40b05fa41cc9542df5237a2e9e278a401
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c36d6739e13027f2a4136899e0e60a4dbff8d990
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35998781"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>тип перечисления Ембеддедсимдевицестатевалуе
 
