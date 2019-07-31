@@ -4,12 +4,13 @@ description: Основа для профилей электронной поч�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76d67bd0f33cd822f36b9c82d744b899f70040f4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 15d71ce8f6dbb816a1a0d8740f67caecb9428410
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011817"
 ---
 # <a name="androidforworkeasemailprofilebase-resource-type"></a>Тип ресурса Андроидфорворкеасемаилпрофилебасе
 

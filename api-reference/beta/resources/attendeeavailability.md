@@ -4,12 +4,13 @@ description: Доступность участника.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 95896808f1a58eb77cafb8003ca5c7848d50bc08
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8e9a9eb91ccfc70e771357abf3b91d6a23dbd367
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339031"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013257"
 ---
 # <a name="attendeeavailability-resource-type"></a>Тип ресурсов attendeeAvailability
 
@@ -40,7 +41,7 @@ ms.locfileid: "33339031"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attendee|[attendeeBase](attendeebase.md)|Адрес электронной почты и тип участника — является ли это пользователь или ресурс, а также является ли он обязательным, если это человек.|
-|availability|Фрибусистатус| Состояние занятости участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|availability|freeBusyStatus| Состояние занятости участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

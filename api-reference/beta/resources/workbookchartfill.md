@@ -4,12 +4,13 @@ description: Представляет форматирование заливк�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 574228d4e52c8cf4e320924dee221af4dc27c746
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 65427e495ed506ffb970487ffcce1235ec0e7541
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348988"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007272"
 ---
 # <a name="workbookchartfill-resource-type"></a>Тип ресурса Воркбукчартфилл
 
@@ -21,7 +22,7 @@ ms.locfileid: "33348988"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill-clear.md)|Отсутствует|Очищает цвет заливки элемента диаграммы.|
+|[Clear](../api/chartfill-clear.md)|Нет|Очищает цвет заливки элемента диаграммы.|
 |[Setsolidcolor](../api/chartfill-setsolidcolor.md)|Нет|Задает заливку одним цветом для элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства

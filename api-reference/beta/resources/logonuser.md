@@ -2,12 +2,15 @@
 title: Тип ресурса logonUser
 description: Содержит сведения о состоянии пользователя, вошедшего в систему на этом узле
 localization_priority: Normal
-ms.openlocfilehash: 3b7862555c62eb16aaceaa53d4df58541426e08a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 08053b2e3ba42c167edebb3678b41ccb3531e078
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562659"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009918"
 ---
 # <a name="logonuser-resource-type"></a>Тип ресурса logonUser
 
@@ -23,7 +26,7 @@ ms.locfileid: "32562659"
 |Фирстсиндатетиме|DateTimeOffset|Значение даты и времени, по достижении которого выполнялась самая ранняя учетная запись пользователя (период, определенный поставщиком). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Ластсиндатетиме|DateTimeOffset|Дата и время последнего входа в систему с учетной записью пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Логонид|String|Идентификатор входа пользователя.|
-|Logontypes задано|Коллекция String|Коллекция типов входа в систему для вошедшего пользователя, начиная с первого до последнего обнаружения. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|Logontypes задано|Коллекция строк|Коллекция типов входа в систему для вошедшего пользователя, начиная с первого до последнего обнаружения. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

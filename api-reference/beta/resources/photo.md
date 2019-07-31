@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс photo предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе driveItem.
 ms.date: 09/10/2017
 title: Фотография
 localization_priority: Normal
-ms.openlocfilehash: f55236489d71c88f8d000b3462e64e82b8c08e56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 6713e66b5ca14cfa6605b9e67d4bec152a321f33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344917"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009225"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
 

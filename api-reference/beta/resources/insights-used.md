@@ -4,12 +4,13 @@ description: Представление документов, используе
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 407822dc4ff3f0536b0cbff3bf2894ad96d5d878
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2b6e7a7c4df94e9ffbcb34ef200457b4a903eb24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005690"
 ---
 # <a name="usedinsight-resource-type"></a>Тип ресурса Усединсигхт
 
@@ -24,7 +25,7 @@ ms.locfileid: "33333556"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список "Использованные"](../api/insights-list-used.md) |Коллекция [усединсигхт](insights-used.md)| Получение списка используемых файлов.|
+|[Список "Использованные"](../api/insights-list-used.md) |Коллекция [usedInsight](insights-used.md)| Получение списка используемых файлов.|
 
 ## <a name="properties"></a>Свойства
 

@@ -2,12 +2,15 @@
 title: Получение объекта servicePrincipal
 description: Получение свойств и связей объекта serviceprincipal.
 localization_priority: Priority
-ms.openlocfilehash: 00e437f0e80a59b51571e8871484b3b069f12f06
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 94561406ff047538997374dc4508a536ba71b021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870205"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991480"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 

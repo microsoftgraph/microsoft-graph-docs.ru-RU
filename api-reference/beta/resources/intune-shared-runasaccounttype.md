@@ -1,15 +1,16 @@
 ---
 title: тип перечисления Рунасаккаунттипе
 description: Описывает перечисление Рунасаккаунттипе API Microsoft Graph для Intune, которое поддерживает несколько рабочих процессов.
-author: rolyon
+author: tfitzmac
 localization_priority: Normal
+doc_type: enumPageType
 ms.prod: Intune
-ms.openlocfilehash: d2f74ef12f7d04e36bc45edd5e55e7db7d8ecee5
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: d56a8eb28194abe939a9d89269533f2737c981a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33939723"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010366"
 ---
 # <a name="runasaccounttype-enum-type"></a>тип перечисления Рунасаккаунттипе
 

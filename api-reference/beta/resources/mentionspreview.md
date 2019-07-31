@@ -4,12 +4,13 @@ description: Представляет сведения об упоминании
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 516560d2a0a8e498c1a0b31a62d8ca4209724767
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 5c4604657e18498a85aa8646b5d69db7d74299bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009708"
 ---
 # <a name="mentionspreview-resource-type"></a>Тип ресурса Ментионспревиев
 
@@ -20,7 +21,7 @@ ms.locfileid: "33342291"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| Упомянутые | Логический | Имеет значение true, если пользователь, вошедшего в систему, упоминается в родительском экземпляре ресурса. Только для чтения. Поддерживает фильтр. |
+| Упомянутые | Boolean | Имеет значение true, если пользователь, вошедшего в систему, упоминается в родительском экземпляре ресурса. Только для чтения. Поддерживает фильтр. |
 
 ## <a name="json-representation"></a>Представление JSON
 

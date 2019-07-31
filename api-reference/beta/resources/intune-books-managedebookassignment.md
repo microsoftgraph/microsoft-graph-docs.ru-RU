@@ -4,12 +4,13 @@ description: Содержит свойства, используемые при 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5f8b4cf21c5f4e746713e11c2d08aa4b5bb72d5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a77962f30860025b6e06c0753ee36ec033c77db8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012024"
 ---
 # <a name="managedebookassignment-resource-type"></a>Тип ресурса managedEBookAssignment
 

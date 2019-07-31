@@ -4,12 +4,13 @@ description: Представляет уведомление для пользо
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 28a77b393f2d5574453d08b93df487ffc5203e2c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6c182ad015882a0e34289efbecb4dbcfd1cb8369
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009729"
 ---
 # <a name="mention-resource-type"></a>Тип ресурса "упоминание"
 
@@ -61,11 +62,11 @@ ms.locfileid: "33342326"
 |createdDateTime  |DateTimeOffset |Дата и время создания упоминания в клиенте. |
 |Прямой | String | Глубокая веб-ссылка на контекст упоминания в экземпляре ресурса. Необязательно. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 |id | String| Уникальный идентификатор упоминания в экземпляре ресурса.|
-|котором | [emailAddress](../resources/emailaddress.md) | Сведения электронной почты упомянутого человека. Обязательный. |
+|котором | [emailAddress](../resources/emailaddress.md) | Сведения электронной почты упомянутого человека. Обязательно. |
 |Ментионтекст | String | Необязательное свойство. Не используется и по умолчанию задано значение NULL для **сообщения**. Чтобы получить упоминание в сообщении, ознакомьтесь со свойством **бодипревиев** этого сообщения. |
 |Серверкреатеддатетиме | DateTimeOffset | Дата и время создания упоминания на сервере. Необязательно. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

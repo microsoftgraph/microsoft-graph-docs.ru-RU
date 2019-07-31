@@ -4,12 +4,13 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b651acefa45cee6e4e89c6c391890dd263cc414a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: conceptualPageType
+ms.openlocfilehash: 138fbf66974a63e258c1e7334db8f4c3f03a05ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731576"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004766"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 

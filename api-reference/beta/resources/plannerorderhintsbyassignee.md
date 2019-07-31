@@ -4,12 +4,13 @@ description: '**Планнерордерхинтсбяссигни** — это 
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 428944f9d622bba8db5d700b8d113a2c5b476301
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 97fffc4cf36d0389afd4a2f159b1a9ea624c3a82
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344440"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009043"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>Тип ресурса Планнерордерхинтсбяссигни
 

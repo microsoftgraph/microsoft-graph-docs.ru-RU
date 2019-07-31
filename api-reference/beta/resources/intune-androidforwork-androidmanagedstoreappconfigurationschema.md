@@ -4,12 +4,13 @@ description: Схема, описывающая настраиваемые ко�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbf66567ed8d2404ee8da1dd854c44d4faec23cc
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 8923cfeaadfd82ca20bcdf72ecdf4b023026d14a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741208"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006173"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчема
 

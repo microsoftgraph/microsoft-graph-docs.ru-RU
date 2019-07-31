@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: c0d15b8d20e99537cb2f567a9f8fe12b45dbd389
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ba8ad750831394e2a84fab7ca87d76754838db60
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012620"
 ---
 # <a name="currencies-resource-type"></a>Тип ресурса "валюты"
 Представляет валюту, используемую в Dynamics 365 Business Central.
@@ -22,12 +23,12 @@ ms.locfileid: "32543072"
 |[Получение валют](../api/dynamics-currencies-get.md)      |друг |Получение валюты.   |
 |[Разноска денежных единиц](../api/dynamics-create-currencies.md)  |друг |Создание денежной единицы.|
 |[Единицы обновления](../api/dynamics-currencies-update.md) |друг |Обновление денежной единицы.|
-|[Удаление валют](../api/dynamics-currencies-delete.md)|Нет       |Удаление денежной единицы.|
+|[Удаление валют](../api/dynamics-currencies-delete.md)|none       |Удаление денежной единицы.|
 
 ## <a name="properties"></a>Свойства
 | Свойство              | Тип   |Описание                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
-|id                     |Глобальный уникальный идентификатор (GUID)    |Уникальный идентификатор валюты. Не редактируемые.                  |
+|id                     |GUID    |Уникальный идентификатор валюты. Не редактируемые.                  |
 |code                   |string  |Указывает код валюты.                                  |
 |displayName            |string  |Задает отображаемое имя денежной единицы.                          |
 |знаки                 |string  |Указывает символ валюты, который будет отображаться при проверке.|

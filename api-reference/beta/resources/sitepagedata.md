@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Ресурс Ситепажедата представляет свойства веб-части. Так как эти свойства зависят от веб-части, это OpenType без фиксированных свойств.
 ms.date: 09/01/2018
 title: Ситепажедата
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 881c645c8d61f3ebc7e1011b05eb254a8984915e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 873be3af107295e844b6eb513444d0128cf778dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343012"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008238"
 ---
 # <a name="sitepagedata-resource"></a>ресурс Ситепажедата
 

@@ -4,12 +4,13 @@ description: Сущность, описывающая статистику по 
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: a7cbc54ac2e276932273130f194f484f3ee23b7c
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: df8f1927329a34a51b5f6d8738faec05be01b451
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949292"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012004"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса Оффицеклиентчеккинстатус
 
@@ -23,15 +24,15 @@ ms.locfileid: "33949292"
 |:---|:---|:---|
 |userPrincipalName|Строка|Имя участника пользователя, использующего устройство.|
 |deviceName|String|Имя устройства, пытающееся вернуть.|
-|devicePlatform|Строка|Платформа устройства пытается вернуться.|
-|Девицеплатформверсион|Строка|Версия платформы устройства, пытающаяся вернуть значение.|
-|Вассукцессфул|Логический|, Если последний возврат выполнен успешно.|
+|devicePlatform|String|Платформа устройства пытается вернуться.|
+|Девицеплатформверсион|String|Версия платформы устройства, пытающаяся вернуть значение.|
+|Вассукцессфул|Boolean|, Если последний возврат выполнен успешно.|
 |userId|String|Идентификатор пользователя, использующий устройство.|
 |Чеккиндатетиме|DateTimeOffset|Время последнего возврата устройства в формате UTC.|
-|Ошибк|Строка|Сообщение об ошибке, если оно связано с последним возвратом.|
+|Ошибк|String|Сообщение об ошибке, если оно связано с последним возвратом.|
 |appliedPolicies|Коллекция строк|Список политик, доставляемых на устройство при последнем возврате.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

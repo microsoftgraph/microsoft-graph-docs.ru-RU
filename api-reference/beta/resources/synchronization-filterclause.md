@@ -2,14 +2,15 @@
 title: Тип ресурса Филтерклаусе
 description: Представляет одно утверждение, которое должен удовлетворять объект-кандидат, и оценивается как `true` (объект соответствует утверждению) или `false` (объект не соответствует утверждению).
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 788dcd8741d89639ce2c57511ae54e466815e366
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 83b9c68bd86f716b47a3ba3774022ff3ba520770
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621426"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007937"
 ---
 # <a name="filterclause-resource-type"></a>Тип ресурса Филтерклаусе
 

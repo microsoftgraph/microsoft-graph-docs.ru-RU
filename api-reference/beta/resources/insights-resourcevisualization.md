@@ -4,12 +4,13 @@ description: Сложный тип, содержащий свойства ана
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 7eddc083bd38c0902f61d326926c86f48ca78714
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: ce18edcdd4fc1b28288736767d38926d41612b67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620912"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005732"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 

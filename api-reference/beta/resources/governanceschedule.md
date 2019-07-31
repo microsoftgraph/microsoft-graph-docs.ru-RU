@@ -2,12 +2,15 @@
 title: Тип ресурса Говернанцесчедуле
 description: 'Представляет расписание для объекта governanceRoleAssignmentRequest. Для запроса на назначение роли расписание определяет, когда следует выполнять операцию назначения роли, когда следует остановить назначение роли и как часто выполняется операция назначения роли. '
 localization_priority: Normal
-ms.openlocfilehash: 798b2a7f3e67ac466189f1ece55437214931056d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 36a2b4c73f5f85439a34a42ea2aa23cfe861c4ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006376"
 ---
 # <a name="governanceschedule-resource-type"></a>Тип ресурса Говернанцесчедуле
 

@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс site предоставляет метаданные и связи для сайта SharePoint.
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: f2386228c3758cc15d9c270f0da32608e4f2b901
-ms.sourcegitcommit: 895a03cb2706a9b3a2236b30d6a7e9f5cbc6a89e
+doc_type: resourcePageType
+ms.openlocfilehash: 691f91b63fdff583476c5308f4b8370a563120a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34683505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008357"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 

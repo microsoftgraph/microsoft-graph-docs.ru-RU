@@ -4,12 +4,13 @@ description: Содержит путь к файлу или папке для о
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 447195064a9d42db9756c71dfe08e333bf567b31
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3c35fb1855c0aff33c12a84e9d78e7ec4ebd76a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012312"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 

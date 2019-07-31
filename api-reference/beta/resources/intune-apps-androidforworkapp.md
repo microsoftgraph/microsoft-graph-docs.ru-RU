@@ -4,12 +4,13 @@ description: Содержит свойства и унаследованные �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00ae8935cd225f1e3dc8621b74062e13fc6fc719
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 021b3420829f03c2817431a7c99afcc1bab18db0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991382"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006138"
 ---
 # <a name="androidforworkapp-resource-type"></a>Тип ресурса Андроидфорворкапп
 

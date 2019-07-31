@@ -4,12 +4,13 @@ description: API для образования в Microsoft Graph улучшаю
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: b5dd443b9ccda48c586bc44f6f4e35523a5e000f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 935a34a4b3bf8ed63fc33893ade19dbe16fdf60c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340669"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006495"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 
@@ -91,7 +92,7 @@ API назначения поддерживают следующие сцена�
 - [Публикация задания](../api/educationassignment-publish.md)
 - [Создание ресурса задания](../api/educationassignment-post-resources.md)
 - [Создание ресурса отправки](../api/educationsubmission-post-resources.md)
-- [Назначение для отПравки](../api/educationsubmission-submit.md) 
+- [Назначение для отправки](../api/educationsubmission-submit.md) 
 - [Отправку назначения](../api/educationsubmission-unsubmit.md)   
 - [Возврат оценок и обратная связь для учащихся](../api/educationsubmission-return.md) 
 - [Получение сведений о назначении](../api/educationuser-list-assignments.md)
@@ -114,8 +115,8 @@ API управления для School Data Sync поддерживают сле
 - [Получение профиля синхронизации](../api/educationsynchronizationprofile-get.md)
 - [Создание профиля синхронизации](../api/educationsynchronizationprofile-post.md)
 - [Удаление профиля синхронизации](../api/educationsynchronizationprofile-delete.md)
-- [ПриОстановка текущей синхронизации](../api/educationsynchronizationprofile-pause.md)
-- [ВозОбновление приостановленной синхронизации](../api/educationsynchronizationprofile-resume.md)
+- [Приостановка текущей синхронизации](../api/educationsynchronizationprofile-pause.md)
+- [Возобновление приостановленной синхронизации](../api/educationsynchronizationprofile-resume.md)
 - [Сброс синхронизации](../api/educationsynchronizationprofile-reset.md)
 - [Запуск синхронизации для отправленных файлов](../api/educationsynchronizationprofile-start.md) 
 - [Получение URL-адреса отправки](../api/educationsynchronizationprofile-uploadurl.md)

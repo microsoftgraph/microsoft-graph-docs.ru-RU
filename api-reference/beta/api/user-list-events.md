@@ -4,12 +4,13 @@ description: 'Получение списка объектов event из ста
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 809325e45540deac3d3e260a7b8e62953e697646
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 115daae60ab89f270253526e3b9af11abd52060b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867320"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996247"
 ---
 # <a name="list-events"></a>Перечисление событий
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: bdfbec8f5373637924262388dab0e9c74c363af9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 378d8c1d773eacb3339eba35d5d60cc7ef5f2400
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006607"
 ---
 # <a name="taxgroups-resource-type"></a>Тип ресурса Таксграупс
 Представляет тип ресурса Таксграупс в Dynamics 365 Business Central.
@@ -22,12 +23,12 @@ ms.locfileid: "32543128"
 |[Получение Таксграупс](../api/dynamics-taxgroups-get.md)|Таксграупс|Получает объект налоговой группы.|
 |[POST Таксграупс](../api/dynamics-create-taxgroups.md)|Таксграупс|Создает объект налоговой группы.|
 |[Исправление Таксграупс](../api/dynamics-taxgroups-update.md)|Таксграупс|Обновляет объект налоговой группы.|
-|[Удаление Таксграупс](../api/dynamics-taxgroups-delete.md)|Нет|Удаляет объект налоговой группы.|
+|[Удаление Таксграупс](../api/dynamics-taxgroups-delete.md)|none|Удаляет объект налоговой группы.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Глобальный уникальный идентификатор (GUID)|Уникальный идентификатор Таксграуп. Только для чтения.|
+|id|GUID|Уникальный идентификатор Таксграуп. Только для чтения.|
 |code|string|Указывает налоговую группу.|
 |displayName|string|Задает отображаемое имя налоговой группы.|
 |Такстипе|string|Указывает тип налога для группы.|

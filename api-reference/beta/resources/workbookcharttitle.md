@@ -4,12 +4,13 @@ description: Представляет объект заголовка диагр
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e9cf5de45ae45b336bc6b6bf8456700b5c53495
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8c102ea62b29cba017793dcaf135853121fc4bd4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348999"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007153"
 ---
 # <a name="workbookcharttitle-resource-type"></a>Тип ресурса Воркбукчарттитле
 

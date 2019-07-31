@@ -4,12 +4,13 @@ description: 'Представляет приложение. Любое прил
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 153079b2c03066445a61a0672416a5615d12ab62
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 1273524c7530e1992fbf5084aa945ed481d5a47f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657674"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013355"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 

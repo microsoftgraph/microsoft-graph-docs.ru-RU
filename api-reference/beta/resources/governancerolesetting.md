@@ -2,12 +2,15 @@
 title: Тип ресурса Говернанцеролесеттинг
 description: " и т. д."
 localization_priority: Normal
-ms.openlocfilehash: 09e8cb65f8318294d483a2ad66a7119d7b48822a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 1bd1821bbb3336386b54b62ebe7b4787c85d1ebf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340233"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006425"
 ---
 # <a name="governancerolesetting-resource-type"></a>Тип ресурса Говернанцеролесеттинг
 
@@ -19,9 +22,9 @@ ms.locfileid: "33340233"
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
-|[Список](../api/governancerolesetting-list.md) | Коллекция [говернанцеролесеттинг](../resources/governancerolesetting.md)|ПереЧисление коллекции параметров роли для ресурса.|
-|[Получение](../api/governancerolesetting-get.md) |  [Говернанцеролесеттинг](../resources/governancerolesetting.md) |Чтение свойств и связей параметра Role.|
-|[Update](../api/governancerolesetting-update.md) | [Говернанцеролесеттинг](../resources/governancerolesetting.md)  |Обновление объекта параметров роли. |
+|[List](../api/governancerolesetting-list.md) | Коллекция [говернанцеролесеттинг](../resources/governancerolesetting.md)|Перечисление коллекции параметров роли для ресурса.|
+|[получение](../api/governancerolesetting-get.md); |  [Говернанцеролесеттинг](../resources/governancerolesetting.md) |Чтение свойств и связей параметра Role.|
+|[обновление](../api/governancerolesetting-update.md); | [Говернанцеролесеттинг](../resources/governancerolesetting.md)  |Обновление объекта параметров роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|

@@ -4,12 +4,13 @@ description: Типы ключей конфигурации приложений
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8979ce7e9b0b169ac75ec8034b1203cde5c8d5ff
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: c756868385616bd15cc9726d154f4398a9d62188
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005221"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>тип перечисления Мдмаппконфигкэйтипе
 

@@ -4,12 +4,13 @@ description: Профиль импорта PFX-сертификата для And
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d26869dea7e36a67c656162df53c3245700c4cd3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 5c0dfea84898c50320955da99cad63219a079f0d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34989002"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004633"
 ---
 # <a name="androidimportedpfxcertificateprofile-resource-type"></a>Тип ресурса Андроидимпортедпфксцертификатепрофиле
 

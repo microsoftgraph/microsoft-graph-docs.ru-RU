@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 0485fd95046bc83350983bc1333dba83c79139d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: a3168ad417f246017ba1018aca265ec0363c951e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32505552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009463"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>Тип ресурса office365GroupsActivityStorage
 

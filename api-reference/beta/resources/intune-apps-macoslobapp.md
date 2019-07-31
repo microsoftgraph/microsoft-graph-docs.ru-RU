@@ -4,12 +4,13 @@ description: Содержит свойства и наследуемые сво�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6433f01da0e1dbdf238e34a0e89ed237d401069e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ddf8f168026f0667bf9b105c320a2ca5e38df0ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957709"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005452"
 ---
 # <a name="macoslobapp-resource-type"></a>Тип ресурса Макослобапп
 

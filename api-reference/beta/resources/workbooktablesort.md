@@ -4,12 +4,13 @@ description: Управляет операциями сортировки для
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6ba1e7cdcf48a3ac5cf8262be2174481016aad2e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ea0332f1ad00029cf511f2bc55aca80836e5ef2c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348960"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007034"
 ---
 # <a name="workbooktablesort-resource-type"></a>Тип ресурса Воркбуктаблесорт
 
@@ -23,8 +24,8 @@ ms.locfileid: "33348960"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта TableSort](../api/tablesort-get.md) | [Воркбуктаблесорт](workbooktablesort.md) |Чтение свойств и связей объекта tableSort.|
-|[Apply](../api/tablesort-apply.md)|Отсутствует|Выполняет сортировку.|
-|[Clear](../api/tablesort-clear.md)|Отсутствует|Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.|
+|[Apply](../api/tablesort-apply.md)|Нет|Выполняет сортировку.|
+|[Clear](../api/tablesort-clear.md)|Нет|Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.|
 |[Reapply](../api/tablesort-reapply.md)|Нет|Повторно применяет текущие параметры сортировки к таблице.|
 
 ## <a name="properties"></a>Свойства

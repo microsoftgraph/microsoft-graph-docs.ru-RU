@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8cdd2fe1a212bb1d36846b80fc1b558c576deb47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5bd7443e775a8a9de0dbbc27cf8843331f8f8cb7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007629"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>Тип ресурса Теамсдевицеусажеусердетаил
 
@@ -20,17 +21,17 @@ ms.locfileid: "32553605"
 | Репортрефрешдате | Дата    |
 | userPrincipalName | String  |
 | Ластактивитидате  | Дата    |
-| isDeleted         | Логический |
+| isDeleted         | Boolean |
 | Делетеддате       | Дата    |
-| Уседвеб           | Логический |
-| Уседвиндовсфоне  | Логический |
-| Уседиос           | Логический |
-| Уседмак           | Логический |
-| Уседандроидфоне  | Логический |
-| Уседвиндовс       | Логический |
+| Уседвеб           | Boolean |
+| Уседвиндовсфоне  | Boolean |
+| Уседиос           | Boolean |
+| Уседмак           | Boolean |
+| Уседандроидфоне  | Boolean |
+| Уседвиндовс       | Boolean |
 | Репортпериод      | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 535355d6be3f6b617d7eb293890aa05a517cfc3b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9c1dbbaa6a429a90a54f8af5f3b380ff58c86dab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581284"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007496"
 ---
 # <a name="useractivationcounts-resource-type"></a>Тип ресурса Усерактиватионкаунтс
 
