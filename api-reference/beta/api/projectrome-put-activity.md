@@ -3,30 +3,32 @@ title: Создание или замена действия
 description: Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую вставку.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 497b0e0bf4e236065dc6b44c44e80d99b22a5dc4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: 1c4d276211071ea66351cec3b6bc1fa1684cab8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992033"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="7e13c-104">Создание или замена действия</span><span class="sxs-lookup"><span data-stu-id="7e13c-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="28376-104">Создание или замена действия</span><span class="sxs-lookup"><span data-stu-id="28376-104">Create or replace an activity</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e13c-105">Создание нового или замена существующего действия пользователя для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="7e13c-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="7e13c-106">Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую [вставку](#example-2-deep-insert).</span><span class="sxs-lookup"><span data-stu-id="7e13c-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).</span></span>
+<span data-ttu-id="28376-105">Создание нового или замена существующего действия пользователя для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="28376-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="28376-106">Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую [вставку](#example-2-deep-insert).</span><span class="sxs-lookup"><span data-stu-id="28376-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](#example-2-deep-insert).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7e13c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7e13c-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="28376-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="28376-107">Permissions</span></span>
 
-<span data-ttu-id="7e13c-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e13c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="28376-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28376-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7e13c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7e13c-110">Permission type</span></span>                        | <span data-ttu-id="7e13c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7e13c-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="28376-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="28376-110">Permission type</span></span>                        | <span data-ttu-id="28376-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="28376-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="7e13c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7e13c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7e13c-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="7e13c-113">UserActivity.ReadWrite.CreatedByApp</span></span> |
-| <span data-ttu-id="7e13c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7e13c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e13c-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="7e13c-115">UserActivity.ReadWrite.CreatedByApp</span></span> |
-| <span data-ttu-id="7e13c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7e13c-116">Application</span></span>                            | <span data-ttu-id="7e13c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7e13c-117">Not supported.</span></span>                      |
+| <span data-ttu-id="28376-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="28376-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="28376-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="28376-113">UserActivity.ReadWrite.CreatedByApp</span></span> |
+| <span data-ttu-id="28376-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="28376-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28376-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="28376-115">UserActivity.ReadWrite.CreatedByApp</span></span> |
+| <span data-ttu-id="28376-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="28376-116">Application</span></span>                            | <span data-ttu-id="28376-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="28376-117">Not supported.</span></span>                      |
 
-## <a name="http-request"></a><span data-ttu-id="7e13c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7e13c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28376-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="28376-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,29 +36,29 @@ ms.locfileid: "33337287"
 PUT /me/activities/{appActivityId}
 ```
 
-> <span data-ttu-id="7e13c-119">**Примечание:** Аппактивитид в URL-АДРЕСе должен быть безопасным по URL-АДРЕСу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-АДРЕСу.</span><span class="sxs-lookup"><span data-stu-id="7e13c-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+> <span data-ttu-id="28376-119">**Примечание:** Аппактивитид в URL-адресе должен быть безопасным по URL-адресу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-адресу.</span><span class="sxs-lookup"><span data-stu-id="28376-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7e13c-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7e13c-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="28376-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="28376-120">Request headers</span></span>
 
-| <span data-ttu-id="7e13c-121">Имя</span><span class="sxs-lookup"><span data-stu-id="7e13c-121">Name</span></span>          | <span data-ttu-id="7e13c-122">Тип</span><span class="sxs-lookup"><span data-stu-id="7e13c-122">Type</span></span>   | <span data-ttu-id="7e13c-123">Описание</span><span class="sxs-lookup"><span data-stu-id="7e13c-123">Description</span></span>               |
+| <span data-ttu-id="28376-121">Имя</span><span class="sxs-lookup"><span data-stu-id="28376-121">Name</span></span>          | <span data-ttu-id="28376-122">Тип</span><span class="sxs-lookup"><span data-stu-id="28376-122">Type</span></span>   | <span data-ttu-id="28376-123">Описание</span><span class="sxs-lookup"><span data-stu-id="28376-123">Description</span></span>               |
 |:--------------|:-------|:--------------------------|
-| <span data-ttu-id="7e13c-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e13c-124">Authorization</span></span> | <span data-ttu-id="7e13c-125">string</span><span class="sxs-lookup"><span data-stu-id="7e13c-125">string</span></span> | <span data-ttu-id="7e13c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7e13c-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="28376-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="28376-124">Authorization</span></span> | <span data-ttu-id="28376-125">string</span><span class="sxs-lookup"><span data-stu-id="28376-125">string</span></span> | <span data-ttu-id="28376-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="28376-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7e13c-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7e13c-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="28376-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="28376-128">Request body</span></span>
 
-<span data-ttu-id="7e13c-129">В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7e13c-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="28376-129">В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="28376-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7e13c-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e13c-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28376-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="28376-130">Response</span></span>
 
-<span data-ttu-id="7e13c-131">В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было `200 OK` создано, или если действие было заменено.</span><span class="sxs-lookup"><span data-stu-id="7e13c-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="28376-131">В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было `200 OK` создано, или если действие было заменено.</span><span class="sxs-lookup"><span data-stu-id="28376-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7e13c-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="7e13c-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="28376-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="28376-132">Examples</span></span>
 
-### <a name="example-1-create-an-activity"></a><span data-ttu-id="7e13c-133">Пример 1: Создание действия</span><span class="sxs-lookup"><span data-stu-id="7e13c-133">Example 1: Create an activity</span></span>
+### <a name="example-1-create-an-activity"></a><span data-ttu-id="28376-133">Пример 1: Создание действия</span><span class="sxs-lookup"><span data-stu-id="28376-133">Example 1: Create an activity</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7e13c-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="7e13c-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="28376-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="28376-134">Request</span></span>
 
-<span data-ttu-id="7e13c-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7e13c-135">The following is an example of the request.</span></span>
+<span data-ttu-id="28376-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="28376-135">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -106,9 +108,9 @@ Content-type: application/json
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="7e13c-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e13c-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="28376-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="28376-136">Response</span></span>
 
-<span data-ttu-id="7e13c-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7e13c-137">The following is an example of the response.</span></span>
+<span data-ttu-id="28376-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="28376-137">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -162,13 +164,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a><span data-ttu-id="7e13c-138">Пример 2: глубокая Вставка</span><span class="sxs-lookup"><span data-stu-id="7e13c-138">Example 2: Deep insert</span></span>
+### <a name="example-2-deep-insert"></a><span data-ttu-id="28376-138">Пример 2: глубокая Вставка</span><span class="sxs-lookup"><span data-stu-id="28376-138">Example 2: Deep insert</span></span>
 
-<span data-ttu-id="7e13c-139">В этом примере показано создание нового действия и элемента журнала для этого действия в одном запросе.</span><span class="sxs-lookup"><span data-stu-id="7e13c-139">This example creates a new activity and a history item for that activity in one request.</span></span>
+<span data-ttu-id="28376-139">В этом примере показано создание нового действия и элемента журнала для этого действия в одном запросе.</span><span class="sxs-lookup"><span data-stu-id="28376-139">This example creates a new activity and a history item for that activity in one request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7e13c-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="7e13c-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="28376-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="28376-140">Request</span></span>
 
-<span data-ttu-id="7e13c-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7e13c-141">The following is an example of the request.</span></span>
+<span data-ttu-id="28376-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="28376-141">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -223,9 +225,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="7e13c-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e13c-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="28376-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="28376-142">Response</span></span>
 
-<span data-ttu-id="7e13c-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7e13c-143">The following is an example of the response.</span></span>
+<span data-ttu-id="28376-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="28376-143">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
