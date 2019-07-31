@@ -5,12 +5,13 @@ title: Тип ресурса разрешения
 description: ресурс Permission, представляющий разрешение на совместный доступ, предоставленное для объекта driveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e43889f3dcab5c887cffe58cfcc4ac632389f980
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 3f74ecd71a9f411a336c7fb4b5720208ca0ffa42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966183"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 

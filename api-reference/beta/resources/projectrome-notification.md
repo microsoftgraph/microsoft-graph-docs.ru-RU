@@ -3,12 +3,14 @@ title: Тип ресурса Notification
 description: 'Представляет уведомление, которое публикует сервер приложений, предназначенный для указанного пользователя. Уведомление хранится в Microsoft Graph и распространяется на другие конечные точки устройств, принадлежащие пользователю. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 13839cdc946ecaf47e59d37e90fe4be144789a6d
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: f9d9a4ff77190e18b8c090cf9c976decb4edfc3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036485"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965581"
 ---
 # <a name="notification-resource-type"></a>Тип ресурса Notification
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

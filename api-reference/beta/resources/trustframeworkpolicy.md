@@ -4,12 +4,13 @@ description: В политике Azure AD B2C Trust Framework называютс
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3160ce5ec75c0b65def8aed44ad89032cd293dee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: f573b331b587db50019e71468ec98d0e746e3963
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345465"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964188"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>Тип ресурса Трустфрамеворкполици
 
@@ -40,7 +41,7 @@ ms.locfileid: "33345465"
 |:---------------|:--------|:----------|
 |id|String|Идентификатор политики.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

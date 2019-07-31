@@ -4,12 +4,13 @@ description: Представляет элемент textBox ADMX и элеме�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08edce84569edb8bd85261b0796aaa3e6a5b1eb6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b8343606c95101180957aa04ea7f9d478440ace1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964838"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968143"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>Тип ресурса Граупполиципресентатионтекстбокс
 

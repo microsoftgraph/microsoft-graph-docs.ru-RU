@@ -2,12 +2,15 @@
 title: Получение объекта Icon
 description: Получение свойств и связей объекта значка.
 localization_priority: Normal
-ms.openlocfilehash: f2f50d0385a74fbc43145aaef9577c4ebf96ee8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 8909f1fb610a664c4d2fe95f73a74abc4707f75c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328641"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953257"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 
@@ -37,7 +40,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

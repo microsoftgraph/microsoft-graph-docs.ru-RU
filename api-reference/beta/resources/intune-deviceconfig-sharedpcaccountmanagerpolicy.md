@@ -4,12 +4,13 @@ description: Политика диспетчера учетных записей
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef25086d573d084e9a4c2917eaa5f56a70bea244
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: bbaafde25c7daeaeeade7a5ce72b46496dbee3eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992460"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969697"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Тип ресурса sharedPCAccountManagerPolicy
 

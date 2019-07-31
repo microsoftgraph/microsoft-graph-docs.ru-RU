@@ -4,12 +4,13 @@ description: Удаление зарегистрированного устро�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 63e1643ab16fae363a887e212214acecec3bef4a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f6e11c6332ed15b53221e957a72d4e1f2de743eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951465"
 ---
 # <a name="delete-device"></a>Удаление устройства
 

@@ -4,12 +4,13 @@ description: Удаляет объект Андроидманажедсторе�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45751ab66fb676b107d06fcb938a06bf9ae5d792
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 85f1b449e081a07a2482890006bf8ed884f73b05
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965440"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952522"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>Удаление Андроидманажедстореаппконфигуратионсчема
 

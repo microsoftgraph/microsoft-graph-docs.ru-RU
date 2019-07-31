@@ -4,12 +4,13 @@ description: Представляет основные или вспомогат
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dce652981a16445d82b4d6e556fc7d5ce839ed26
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bf2b481b3b60b7cf5893a1c7ab6e2f168c7cc1ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348997"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964029"
 ---
 # <a name="workbookchartgridlines-resource-type"></a>Тип ресурса Воркбукчартгридлинес
 

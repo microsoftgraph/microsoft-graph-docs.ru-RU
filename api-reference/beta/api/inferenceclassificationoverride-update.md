@@ -2,12 +2,15 @@
 title: Обновление inferenceClassificationOverride
 description: 'Измените значение поля **classifyAs** для параметра отсортированное переопределение, как указано. '
 localization_priority: Normal
-ms.openlocfilehash: 83832c11f09afdfdb27c0020005870c945f4a28d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 23002bd7afa8f174904d221e5e48b0852c3ee4ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857472"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953117"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Обновление inferenceClassificationOverride
 

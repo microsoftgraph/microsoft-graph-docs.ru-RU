@@ -4,12 +4,13 @@ description: VPN-прокси-сервер.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75958584e0fb0dbb442b38954438567bffa1b2fb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 035bbe9511692a7244e4cdc2d0b707c5edfb4146
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969102"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Тип ресурса windows81VpnProxyServer
 

@@ -4,12 +4,13 @@ description: Сущность представляет целое число б�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e518f52512240237e82588b7bd4dbdf9c207eebe
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1e3e825d9f370173efa641877f607398c98ec93c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996325"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968136"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>Тип ресурса ГраупполиципресентатионвалуедеЦимал
 

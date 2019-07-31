@@ -4,12 +4,13 @@ description: Удаляет educationUser из educationClass.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ac5ee332c58a070d9f25dfb3bde78177fb323b02
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: a472686e8922e0671ad0db1f32c74b05ffcdf0ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324950"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955511"
 ---
 # <a name="remove-a-student"></a>Удаление учащегося
 
@@ -26,7 +27,7 @@ ms.locfileid: "33324950"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +58,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true,

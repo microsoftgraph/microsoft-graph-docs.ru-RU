@@ -4,12 +4,13 @@ description: Параметры отображения уведомлений ц
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87ae2750ee5aea35abbbc3077940a9e1ab2ee4ee
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 4662310d1fc03f4a6ecfdbbd310b206736fd17ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978712"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968689"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>тип перечисления Виндовсупдатенотификатиондисплайоптион
 

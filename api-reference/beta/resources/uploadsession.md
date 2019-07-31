@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: <descrption>
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: a05be9e75444f97d809765a0eb16a71cde2957e3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 6b047c8eed22647083da07f2e7722269fb872783
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345486"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964233"
 ---
 # <a name="uploadsession-resource"></a>Ресурс UploadSession
 
@@ -17,7 +19,7 @@ ms.locfileid: "33345486"
 
 Ресурс **UploadSession** содержит сведения о способе отправки больших файлов в OneDrive, OneDrive для бизнеса или в библиотеки документов SharePoint.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 

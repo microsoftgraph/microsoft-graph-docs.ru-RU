@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Создание списка действующих разрешений на общий доступ в элементе DriveItem.
 ms.date: 09/10/2017
 title: Список пользователей, имеющих доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bbfc46f06b16da165974d9be88139e6ebe19cc9a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c3409dc56dbc11f4100d9df54aca44ef54eecaff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861089"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957075"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений на общий доступ в элементе DriveItem
 

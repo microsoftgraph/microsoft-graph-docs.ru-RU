@@ -2,12 +2,15 @@
 title: Тип ресурса preAuthorizedApplication
 description: Представляет приложение и запрашиваемые разрешения для неявного согласия. Необходимо, чтобы администратор предоставил согласие на применение приложения. Преаусоризедаппликатионс не требуют от пользователя согласия с запрошенными разрешениями. Разрешения, перечисленные в Преаусоризедаппликатионс, не требуют согласия пользователя. Однако все дополнительные запрошенные разрешения, не указанные в Преаусоризедаппликатионс, требуют согласия пользователя.
 localization_priority: Normal
-ms.openlocfilehash: f74ac0883c883bfbb2cb93c2da58e9fd8419dadd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 7adaf4fe960b762b12f6b2cc8607e64c9813712e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344236"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965819"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>Тип ресурса preAuthorizedApplication
 
@@ -20,7 +23,7 @@ ms.locfileid: "33344236"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |appId|String| Уникальный идентификатор приложения. |
-|Пермиссионидс|Коллекция String| Уникальный идентификатор для [публишедпермиссионскопе](permissionscope.md) или [аппроле](approle.md) , необходимых для приложения. |
+|Пермиссионидс|Коллекция строк| Уникальный идентификатор для [публишедпермиссионскопе](permissionscope.md) или [аппроле](approle.md) , необходимых для приложения. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

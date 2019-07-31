@@ -4,12 +4,13 @@ description: Удаляет объект Манажедаллдевицецер�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d49b8317b9f4b230294041b6ef10675c3a88b928
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 26d1864f75dbd005375aac79f95f71a97e5d43fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946810"
 ---
 # <a name="delete-managedalldevicecertificatestate"></a>Удаление Манажедаллдевицецертификатестате
 

@@ -2,12 +2,15 @@
 title: Тип ресурса Ресаурцеакцесс
 description: Указывает область разрешений OAuth 2,0 или роль приложения, требуемую приложением. Свойство **ресаурцеакцесс** типа рекуиредресаурцеакцесс является коллекцией **ресаурцеакцесс**.
 localization_priority: Normal
-ms.openlocfilehash: bb77a12a207e274b27263029d96f4ef260cfe5cb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4c2a909fb2beafeb22f303ef42703b3d57c30854
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343635"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965417"
 ---
 # <a name="resourceaccess-resource-type"></a>Тип ресурса Ресаурцеакцесс
 

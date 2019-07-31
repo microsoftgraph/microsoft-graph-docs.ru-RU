@@ -4,12 +4,13 @@ description: Группа разделов в записной книжке OneN
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f1cd9757b0a58afb4183bd917a7a090b14502a36
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4637784ac20d92c82e7a4771c815136ddd3e175a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343403"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965274"
 ---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
 
@@ -55,7 +56,7 @@ ms.locfileid: "33343403"
 |id|String|Уникальный идентификатор группы разделов. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения группы разделов. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|displayName|String|Имя группы разделов.|
+|displayName|Строка|Имя группы разделов.|
 |Сектионграупсурл|String|URL-адрес для `sectionGroups` свойства навигации, который возвращает все группы разделов в группе разделов. Только для чтения.|
 |Сектионсурл|String|URL-адрес для `sections` свойства навигации, который возвращает все разделы в группе разделов. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о группе разделов. Только для чтения.|

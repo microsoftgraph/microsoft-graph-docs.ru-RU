@@ -4,12 +4,13 @@ description: Используйте этот API, чтобы создать но
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 3897bbfba6a266a7099c49638454d229e6257e9e
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: b99ab96e2e8e1d23eb2b5fc606fd481b68741586
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35440234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953502"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создание параметра каталога для групп
 

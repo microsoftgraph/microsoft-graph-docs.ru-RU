@@ -3,12 +3,14 @@ title: Тип ресурса Шарепоинтактивитипажес
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: febca3bb97bc81d39838f168779d271a6e986bef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: a3d54e388d5a43489cac285a481b6ca1137aeba5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965098"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>Тип ресурса Шарепоинтактивитипажес
 

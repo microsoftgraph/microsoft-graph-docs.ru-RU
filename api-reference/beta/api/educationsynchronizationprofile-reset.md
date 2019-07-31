@@ -4,12 +4,13 @@ description: Сбросьте синхронизацию определенно�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1f4de815b7e136ab41afe4dc6df697671f93f8d8
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6ae3c6663621edcdeb08839c645a9cd0f7ae6e81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860025"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954839"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации для Едукатионсинчронизатионпрофиле
 

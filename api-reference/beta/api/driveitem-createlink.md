@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Используя действие createLink, вы можете поделиться ресурсом DriveItem с помощью ссылки для совместного доступа.
 ms.date: 09/10/2017
 title: Предоставление доступа к файлу посредством ссылки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7c9d22b91be11f6dda946cf25d1de7c3b9cf00ac
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 441d37d75e90b5ff82475cf5569fc7ec7fa523d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861363"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957236"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 

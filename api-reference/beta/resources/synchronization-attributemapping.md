@@ -2,14 +2,15 @@
 title: Тип ресурса Аттрибутемаппинг
 description: Определяет, как должны передаваться значения для данного целевого атрибута во время синхронизации.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f2884a4fc9f4e3091f1e7523c615d9ed132abc6
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 09ed298022e687354f7fa9905ee25f5c38f2fdfa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964840"
 ---
 # <a name="attributemapping-resource-type"></a>Тип ресурса Аттрибутемаппинг
 

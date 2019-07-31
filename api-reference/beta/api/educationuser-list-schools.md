@@ -4,12 +4,13 @@ description: Получение списка учебных заведений �
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 293e394af1da3213aedf79ecb1fc782b8f737d1d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1709cbf5abaad87e22677ee9222927b2a83a125f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859871"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954688"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 

@@ -2,12 +2,15 @@
 title: Тип ресурса passwordProfile
 description: Содержит профиль пароля, связанный с пользователем. Свойство **passwordProfile** объекта user является объектом **passwordProfile**.
 localization_priority: Normal
-ms.openlocfilehash: 07e1bb317015177d737719ff024586c94ee05474
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ea3f3daa4807fd56e39930a059d69221e141879c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344897"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966237"
 ---
 # <a name="passwordprofile-resource-type"></a>Тип ресурса passwordProfile
 

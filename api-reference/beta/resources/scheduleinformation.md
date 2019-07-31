@@ -2,12 +2,15 @@
 title: Тип ресурса Счедулеинформатион
 description: 'Представляет доступность пользователя, списка рассылки или ресурса за указанный период времени. '
 localization_priority: Normal
-ms.openlocfilehash: b15d492477368d47fd3ebc9fc00bd3dcfc3e6688
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-teams
+author: ''
+ms.openlocfilehash: 3d6ede4e1085a8be3f78b714f690b79b836abbcb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965322"
 ---
 # <a name="scheduleinformation-resource-type"></a>Тип ресурса Счедулеинформатион
 

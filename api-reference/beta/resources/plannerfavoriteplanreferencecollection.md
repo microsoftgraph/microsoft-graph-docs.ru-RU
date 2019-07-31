@@ -4,12 +4,13 @@ description: " значение — объект Планнерфаворите�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 8c43108ed5c9e2f27b824d772716c6e467d56942
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 67149f0ccf8ec04fe702a0d77b1fb2f5f6020365
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344522"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965952"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>Тип ресурса Планнерфаворитепланреференцеколлектион
 

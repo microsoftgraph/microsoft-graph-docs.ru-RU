@@ -4,12 +4,13 @@ description: Вы можете получить сведения о действ
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 2af5372a62095226410181c3629cd2e55f87b620
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: aac93137f3931613b6c2318ed5d8402ad514b333
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342946"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964988"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Отчеты об участии в конференциях Skype для бизнеса
 
@@ -24,5 +25,5 @@ ms.locfileid: "33342946"
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Получение количества действий](../api/reportroot-getskypeforbusinessparticipantactivitycounts.md) | Stream          | [СкипефорбусинесспартиЦипантактивитикаунтс](../resources/skypeforbusinessparticipantactivitycounts.md) | Отслеживайте динамику использования по количеству и типу конференций, в которых участвовали сотрудники организации (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через стороннюю службу). |
-| [Получение количества пользователей](../api/reportroot-getskypeforbusinessparticipantactivityusercounts.md) | Stream          | [СкипефорбусинесспартиЦипантактивитюсеркаунтс](../resources/skypeforbusinessparticipantactivityusercounts.md) | Отслеживайте динамику использования по количеству уникальных пользователей и типу конференций, в которых участвовали сотрудники организации (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через стороннюю службу). |
+| [Получение количества пользователей](../api/reportroot-getskypeforbusinessparticipantactivityusercounts.md) | Поток          | [СкипефорбусинесспартиЦипантактивитюсеркаунтс](../resources/skypeforbusinessparticipantactivityusercounts.md) | Отслеживайте динамику использования по количеству уникальных пользователей и типу конференций, в которых участвовали сотрудники организации (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через стороннюю службу). |
 | [Получение количества минут](../api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md) | Поток          | [СкипефорбусинесспартиЦипантактивитиминутекаунтс](../resources/skypeforbusinessparticipantactivityminutecounts.md) | Отслеживайте динамику использования по продолжительности (в минутах) и типу конференций, в которых участвовали сотрудники организации (аудио и видео). |

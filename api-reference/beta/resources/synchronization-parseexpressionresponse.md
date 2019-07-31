@@ -2,14 +2,15 @@
 title: Тип ресурса Парсикспрессионреспонсе
 description: 'Представляет отклик от действия [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) .'
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d63a8834640d357e41051750f7f2cd50b8724fee
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: a2c2bc0291eca7c04f246c6f62424b0bab10dced
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964783"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса Парсикспрессионреспонсе
 

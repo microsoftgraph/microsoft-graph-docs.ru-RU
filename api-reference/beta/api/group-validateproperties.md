@@ -4,12 +4,13 @@ description: Убедитесь, что отображаемое имя или �
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: dc1f156be72536e2765d77fefa09fe2f5c4bbeec
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 1419ed265dca33376f3fb3d481b42e3b646ec2dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857745"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953383"
 ---
 # <a name="group-validateproperties"></a>Группа: Валидатепропертиес
 

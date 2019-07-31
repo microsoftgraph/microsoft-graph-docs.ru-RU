@@ -4,12 +4,13 @@ description: Добавление пользователя или группы �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f33353f0f66bb49a69ae58ad73d9155837e4aeda
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: bdd37a2850b80b303a26c5151e05d9d7aab17551
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858208"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953607"
 ---
 # <a name="create-acceptedsender"></a>Создание объекта acceptedSender
 

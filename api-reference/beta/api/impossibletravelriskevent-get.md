@@ -2,12 +2,15 @@
 title: Получение объекта impossibleTravelRiskEvent
 description: Получение свойств и связей объекта импоссиблетравелрискевент.
 localization_priority: Normal
-ms.openlocfilehash: 0889a14a9a7fd2654fb122963df5b1cc58d0f5c1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 81487cf62230708d151f67250b9980e18bcbb7c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953145"
 ---
 # <a name="get-impossibletravelriskevent"></a>Получение объекта impossibleTravelRiskEvent
 
@@ -34,7 +37,7 @@ GET /impossibleTravelRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -4,12 +4,13 @@ description: Получение всех цепочек группы.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: cd2f71f988b6d29560e5717791e192b285a76ee3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5cba029aa403467e4ede2261c932135d547e467a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858253"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953673"
 ---
 # <a name="list-threads"></a>Список цепочек
 

@@ -2,12 +2,15 @@
 title: Тип ресурса Програмконтрол
 description: В функции рецензирования Access в Azure AD объект элемента управления Program представляет элемент управления, связывая проверку доступа с программой.
 localization_priority: Normal
-ms.openlocfilehash: 7d194f3e80f44eb57be0deb7d2ffd71624c385d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 16824c2ed0c053f0cc4f3a0a2903324ff1a2bf5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344028"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965637"
 ---
 # <a name="programcontrol-resource-type"></a>Тип ресурса Програмконтрол
 
@@ -21,8 +24,8 @@ ms.locfileid: "33344028"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание Програмконтрол](../api/programcontrol-create.md) |     [Програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
-|[Удаление Програмконтрол](../api/programcontrol-delete.md) |     Отсутствуют.   |   Удаление Програмконтрол из программы.|
-|[Список Програмконтролс](../api/programcontrol-list.md) | Коллекция [програмконтрол](programcontrol.md)| ПереЧисление элементов управления для всех программ в клиенте.|
+|[Удаление Програмконтрол](../api/programcontrol-delete.md) |     Нет.   |   Удаление Програмконтрол из программы.|
+|[Список Програмконтролс](../api/programcontrol-list.md) | Коллекция [програмконтрол](programcontrol.md)| Перечисление элементов управления для всех программ в клиенте.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -37,7 +40,7 @@ ms.locfileid: "33344028"
 | `owner`                  |[userIdentity](useridentity.md)   | Пользователь, создавший элемент управления программы.                                               |
 | `resource`               |`programResource`       | Ресурс, группа или приложение, предназначенные для проверки доступа этого элемента управления.                   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `program`                |[Программа](program.md)               | Программа, частью которой является этот элемент управления.                                                |

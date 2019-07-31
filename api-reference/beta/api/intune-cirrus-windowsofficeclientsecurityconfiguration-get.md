@@ -4,12 +4,13 @@ description: Получение определенного объекта пол
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 3c55e9d1018d2781bfbd4e761eafcf054485798a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 1f5f668c0648ad36bff08fb7615762edc5bb7a69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933958"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958755"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Получение Виндовсоффицеклиентсекуритиконфигуратион
 

@@ -3,12 +3,14 @@ title: Получение ресурса DriveItemVersion (ознакомите�
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7bf6fb63660dbd961ce94519ee629a23cfd939da
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: dd381033f5bd2a59722302116283e438192d0c2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860843"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956936"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>Получение ресурса DriveItemVersion (ознакомительная версия)
 

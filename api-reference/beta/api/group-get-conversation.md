@@ -4,12 +4,13 @@ description: Удаление объекта conversation.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c147e99370ae8b95b917f9e244560d96173a18d9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dadccbf721b9a596f256ca9bd648b62f32d996dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858708"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953894"
 ---
 # <a name="get-conversation"></a>Получение беседы
 

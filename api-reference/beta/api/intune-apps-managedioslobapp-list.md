@@ -4,12 +4,13 @@ description: Список свойств и связей объектов manage
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7579c30d672da4159bb1e4b9f4250423ff61d2ec
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 20541df1bdc7111db4c28cf1c1d02a089f26981a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974575"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961373"
 ---
 # <a name="list-managedioslobapps"></a>Перечисление объектов managedIOSLobApp
 

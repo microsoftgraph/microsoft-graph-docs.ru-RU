@@ -4,12 +4,13 @@ description: Представляет таблицу Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 330b11869576dc3251b51c7239b9c0aacdc51e70
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1568cc1f08ded8ffdbac04e040bccefe63e9dd02
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348989"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963887"
 ---
 # <a name="workbooktable-resource-type"></a>Тип ресурса Воркбуктабле
 
@@ -26,22 +27,22 @@ ms.locfileid: "33348989"
 |[Список столбцов](../api/table-list-columns.md) |Коллекция [воркбуктаблеколумн](workbooktablecolumn.md)| Получение коллекции объектов TableColumn.|
 |[Создание Воркбуктаблеров](../api/table-post-rows.md) |[Воркбуктаблеров](workbooktablerow.md)| Создание объекта TableRow путем добавления в коллекцию строк.|
 |[Список строк](../api/table-list-rows.md) |Коллекция [воркбуктаблеров](workbooktablerow.md)| Получение коллекции объектов TableRow.|
-|[Обновление](../api/table-update.md) | [Воркбуктабле](workbooktable.md)   |Обновление объекта Table. |
+|[Update](../api/table-update.md) | [Воркбуктабле](workbooktable.md)   |Обновление объекта Table. |
 |[Databodyrange](../api/table-databodyrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный с основными данными таблицы.|
 |[Headerrowrange](../api/table-headerrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой заголовков таблицы.|
 |[Range](../api/table-range.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со всей таблицей.|
 |[Totalrowrange](../api/table-totalrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой итогов таблицы.|
-|[Clearfilters](../api/table-clearfilters.md)|Отсутствует|Удаляет все фильтры, примененные к таблице.|
+|[Clearfilters](../api/table-clearfilters.md)|Нет|Удаляет все фильтры, примененные к таблице.|
 |[Converttorange](../api/table-converttorange.md)|[workbookRange](workbookrange.md)|Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.|
-|[Delete](../api/table-delete.md)|Нет|Удаляет таблицу.|
+|[Delete](../api/table-delete.md)|Нет.|Удаляет таблицу.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Нет|Повторно применяет все текущие фильтры к таблице.|
-|[Список](../api/table-list.md) | Коллекция [воркбуктабле](workbooktable.md) |Получение коллекции объектов table. |
+|[List](../api/table-list.md) | Коллекция [воркбуктабле](workbooktable.md) |Получение коллекции объектов table. |
 |[Add](../api/tablecollection-add.md)|[Воркбуктабле](workbooktable.md)|Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
+|id|string|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
 |name|string|Имя таблицы.|
 |showHeaders|boolean|Указывает, отображается ли строка заголовков. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.|
 |showTotals|boolean|Указывает, отображается ли строка итогов. Можно задать это значение, чтобы отобразить или скрыть строку итогов.|
@@ -56,10 +57,10 @@ ms.locfileid: "33348989"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|столбцы|Коллекция [воркбуктаблеколумн](workbooktablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
+|columns|Коллекция [воркбуктаблеколумн](workbooktablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
 |rows|Коллекция [воркбуктаблеров](workbooktablerow.md)|Представляет коллекцию всех строк в таблице. Только для чтения.|
 |sort|[Воркбуктаблесорт](workbooktablesort.md)|Представляет сортировку для таблицы. Только для чтения.|
-|лист|[Воркбукворкшит](workbookworksheet.md)|Лист, содержащий текущую таблицу. Только для чтения.|
+|worksheet|[Воркбукворкшит](workbookworksheet.md)|Лист, содержащий текущую таблицу. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -4,12 +4,13 @@ description: 'Группа папок (outlookTaskFolder), которая сод
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: af5599773c6a4edef97356e99daa522760d9b37a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: d519e18723ac9fbd38e7cec64a6758b0c9396bc2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345541"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966281"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Тип ресурса outlookTaskGroup
 
@@ -27,7 +28,7 @@ ms.locfileid: "33345541"
 |[Получение outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Получение свойств и связей указанной группы задач Outlook.|
 |[Создание outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач Outlook.|
 |[Список Таскфолдерс](../api/outlooktaskgroup-list-taskfolders.md) |Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Получение коллекции папок задач Outlook.|
-|[Обновление](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление свойств, доступных для записи, для группы задач Outlook. |
+|[обновление](../api/outlooktaskgroup-update.md); | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление свойств, доступных для записи, для группы задач Outlook. |
 |[Удаление](../api/outlooktaskgroup-delete.md) | Нет |Удаление указанной группы задач Outlook. |
 
 ## <a name="properties"></a>Свойства
@@ -36,10 +37,10 @@ ms.locfileid: "33345541"
 |changeKey|String|Версия группы задач.|
 |Граупкэй|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
 |id|String|Уникальный строковый идентификатор группы задач. Только для чтения.|
-|Исдефаултграуп|Логический|Значение true, если группа задач является группой задач по умолчанию.|
+|Исдефаултграуп|Boolean|Значение true, если группа задач является группой задач по умолчанию.|
 |name|String|Имя группы задач.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Таскфолдерс|Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Коллекция папок задач в группе задач. Только для чтения. Допускается значение null.|

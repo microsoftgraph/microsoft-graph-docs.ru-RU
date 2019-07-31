@@ -2,12 +2,15 @@
 title: Тип ресурса Програмконтролтипе
 description: 'В функции рецензирования Access в Azure AD при сопоставлении элемента управления с программой используется тип элемента управления Program, чтобы указать тип проверки доступа, для которой предназначен элемент управления.  '
 localization_priority: Normal
-ms.openlocfilehash: 489fa6e5cac31165fec9f7ce9939d58fa84cb1ab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c7b4360ffa22711c9af9961fbb9f48cee7d29424
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965630"
 ---
 # <a name="programcontroltype-resource-type"></a>Тип ресурса Програмконтролтипе
 
@@ -31,7 +34,7 @@ ms.locfileid: "33344064"
 | `displayName`            |`String`                | Имя типа элемента управления программы                                                             |
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

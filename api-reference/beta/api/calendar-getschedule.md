@@ -4,12 +4,13 @@ description: Получение сведений о доступности ко�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2f38cb2da3fab907206dd7c817ef8dbff95d06c1
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: d8e42d2c0ab59153b32ead33fb18453cbb624f98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930929"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944718"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 

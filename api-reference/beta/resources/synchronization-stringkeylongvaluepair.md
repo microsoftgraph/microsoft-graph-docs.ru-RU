@@ -2,14 +2,15 @@
 title: Тип ресурса Стрингкэйлонгвалуепаир
 description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, и значением является Int64.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c422c565ebdbea58baa3f6709fdd5deef6cb1929
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: f63998c03d84bbcfdf720aacad6364f22e1fea37
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964713"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>Тип ресурса Стрингкэйлонгвалуепаир
 

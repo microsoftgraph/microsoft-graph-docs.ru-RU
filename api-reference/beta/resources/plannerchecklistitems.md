@@ -4,12 +4,13 @@ description: Ресурс **планнерчекклиститемколлект
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 502bda597ba0e021dc449812a104d0fd516f6ef1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bebec56f57f546dcfc0b16eedb1fb9635d0fb16f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966014"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>Тип ресурса Планнерчекклиститемс
 
@@ -23,7 +24,7 @@ ms.locfileid: "33344524"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -2,12 +2,15 @@
 title: Тип ресурса verifiedDomain
 description: Задает домен клиента. Свойство **verifiedDomains** объекта organization представляет собой коллекцию объектов **VerifiedDomain**.
 localization_priority: Normal
-ms.openlocfilehash: 088687d4450a5134c53bca6134039f7ba34a7597
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 091bb8e6c1a14f6c173d18acf68679feb6c88eaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345098"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964231"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 
@@ -20,7 +23,7 @@ ms.locfileid: "33345098"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |capabilities|String|Примеры: “Email”, “OfficeCommunicationsOnline”.|
-|isDefault|Логический|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
+|isDefault|Boolean|                Значение **true** указывает, что это связанный с клиентом домен по умолчанию. В противном случае используется значение **false**.            |
 |при инициализации|Boolean|Значение **true** указывает, что это первоначальный домен, связанный с клиентом. В противном случае используется значение **false**.|
 |name|String|Доменное имя, например "contoso.onmicrosoft.com"|
 |type|String|Пример: "Managed".|

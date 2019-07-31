@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Мак
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 240758d1b4bd5ff9486ce0fd4425afae5f8a8601
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 92eb0206e55887588d85759fba8b86fc86e7bb2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34975128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961919"
 ---
 # <a name="list-macosvppappassignedlicenses"></a>Список Макосвппаппассигнедлиценсес
 

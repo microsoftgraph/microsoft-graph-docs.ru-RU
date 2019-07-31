@@ -1,19 +1,22 @@
 ---
 title: Тип ресурса Привилежедроле
-description: 'Представляет роль администратора Azure AD, например: глобальному **администратору, администратору выставленИя счетов, администратору служб, администратору пользователей, администратору паролей**и т. д.'
+description: 'Представляет роль администратора Azure AD, например: глобальному **администратору, администратору выставления счетов, администратору служб, администратору пользователей, администратору паролей**и т. д.'
 localization_priority: Normal
-ms.openlocfilehash: 9b5454745257bea071f967b654d3b6174c3c3289
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 98e5cd2c53b398339e8db65bec520a16f72d8f39
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344298"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965749"
 ---
 # <a name="privilegedrole-resource-type"></a>Тип ресурса Привилежедроле
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет роль администратора Azure AD, например: глобальному **администратору, администратору выставленИя счетов, администратору служб, администратору пользователей, администратору паролей**и т. д.
+Представляет роль администратора Azure AD, например: глобальному **администратору, администратору выставления счетов, администратору служб, администратору пользователей, администратору паролей**и т. д.
 
 
 ## <a name="methods"></a>Методы
@@ -24,19 +27,19 @@ ms.locfileid: "33344298"
 |[Получение privilegedRole](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |Чтение свойств и связей объекта Привилежедроле.|
 |[Перечисление заданий](../api/privilegedrole-list-assignments.md) |Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)| Получение коллекции объектов назначений для этой роли.|
 |[selfActivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Активируйте назначенную роль.|
-|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|ДеАктивация назначенной роли.|
+|[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Деактивация назначенной роли.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Уникальный идентификатор для роли администратора. Это строка GUID, имеющая то же значение, что и идентификатор шаблона роли из Azure AD для заданной роли. Только для чтения.|
+|id|string|Уникальный идентификатор для роли администратора. Это строка GUID, имеющая то же значение, что и идентификатор шаблона роли из Azure AD для заданной роли. Только для чтения.|
 |name|string|Имя роли.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignments|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)| Назначения для этой роли. Только для чтения. Допускает значение null.|
-|settings|[privilegedRoleSettings](privilegedrolesettings.md)| Параметры для этой роли. Только для чтения. Допускает значение null.|
+|assignments|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)| Назначения для этой роли. Только для чтения. Допускается значение null.|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| Параметры для этой роли. Только для чтения. Допускается значение null.|
 |summary|[privilegedRoleSummary](privilegedrolesummary.md)| Сводные данные для этой роли. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

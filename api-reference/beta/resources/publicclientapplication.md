@@ -2,12 +2,15 @@
 title: Тип ресурса publicClientApplication
 description: Задает параметры для веб-API без веб-приложения или веб-API. (например, мобильный или другой общедоступный клиент, например, установленное приложение, запущенное на настольном устройстве)
 localization_priority: Normal
-ms.openlocfilehash: 8118d1e771cb55ce5b82c9ddac14aaa45260ab56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4503e65777b41fc2f864cd818697b048e3c8e435
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348965"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965560"
 ---
 # <a name="publicclientapplication-resource-type"></a>Тип ресурса publicClientApplication
 

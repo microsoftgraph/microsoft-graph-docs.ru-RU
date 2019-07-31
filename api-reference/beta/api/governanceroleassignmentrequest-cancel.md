@@ -2,12 +2,15 @@
 title: Отмена governanceRoleAssignmentRequest
 description: Отмена объекта governanceRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 8ba825cc94dfc6108ee04706e34ca30990a36ed3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 8c34e2e81882cbb9b01235c70a8e7554ea13fc53
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859136"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954217"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 

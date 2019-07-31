@@ -4,12 +4,13 @@ description: Получает свойства определенного рес
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e6678bc3572623e24fc45db5af5d5c4733e227e6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 9c4362080907ae3425dd68ab3fc5653ba4d57807
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324657"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954937"
 ---
 # <a name="get-educationsubmissionresource"></a>Получение Едукатионсубмиссионресаурце
 

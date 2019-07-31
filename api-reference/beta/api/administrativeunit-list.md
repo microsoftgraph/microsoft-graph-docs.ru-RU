@@ -4,12 +4,13 @@ description: Получение списка объектов administrativeUnit
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8aa9d72e8ba26391db85ebca9bd5de3148c7aea0
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+doc_type: apiPageType
+ms.openlocfilehash: 6326b3db877196a1cf9dd5bd90c4d42cd2a99be3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35917938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35945816"
 ---
 # <a name="list-administrativeunits"></a>Список Административеунитс
 
@@ -22,9 +23,9 @@ ms.locfileid: "35917938"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL |
+|Для приложений | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

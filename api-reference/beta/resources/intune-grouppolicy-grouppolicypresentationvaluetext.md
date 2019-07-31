@@ -4,12 +4,13 @@ description: Сущность представляет строковое зна
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e857977db20eb149d6912493de088825f769eca
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 29f5f316fa0c0439190aaa8a4fc6ad7912d81c56
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968108"
 ---
 # <a name="grouppolicypresentationvaluetext-resource-type"></a>Тип ресурса Граупполиципресентатионвалуетекст
 

@@ -4,12 +4,13 @@ description: Ресурс **апплиедкатегориесколлектио
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a927adb78bc0fe1c5135281043ecbdd3afe09a60
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 87b75da0489099edb5294df752278311b5bf2a86
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344627"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966057"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>Тип ресурса Планнерапплиедкатегориес
 
@@ -23,7 +24,7 @@ ms.locfileid: "33344627"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

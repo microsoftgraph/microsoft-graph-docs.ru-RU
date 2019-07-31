@@ -2,12 +2,15 @@
 title: " Тип ресурса Секурескореконтролстатеупдате"
 description: Этот ресурс содержит историю состояний элементов управления, обновленных пользователем (состояния элементов управления включают значение по умолчанию, игнорируется, ThirdParty, проверено).
 localization_priority: Normal
-ms.openlocfilehash: 24febeb4bfb055e89e59cdb4f79c8b60c6c40347
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 92616569a87a6ccf91c17ea7c845b8185bd33e8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965231"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>Тип ресурса Секурескореконтролстатеупдате
 Содержит историю состояний элементов управления, обновленных пользователем (состояния элементов управления включают значение по умолчанию, игнорируется, ThirdParty, проверено).

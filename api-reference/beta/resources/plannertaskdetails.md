@@ -4,12 +4,13 @@ description: Ресурс **plannerTaskDetails** представляет доп
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d11b0ca1f6090c65a1c5eaa45ce368d102994299
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6eaeaf65271309270d7ecfd042ed75e5c32451a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344388"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965856"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 
@@ -23,7 +24,7 @@ ms.locfileid: "33344388"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md); |Чтение свойств и связей объекта **plannerTaskDetails** .|
-|[Обновление](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md);    |Обновление объекта **plannerTaskDetails** . |
+|[обновление](../api/plannertaskdetails-update.md); | [plannerTaskDetails](plannertaskdetails.md);    |Обновление объекта **plannerTaskDetails** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -34,7 +35,7 @@ ms.locfileid: "33344388"
 |previewType|string|Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -4,26 +4,27 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d543bf16617ed28d50d2e7082372ff2014cd24c5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e6f543a85ac2974f9b3e99d4290fb9d93a8cc025
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343303"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965217"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Тип ресурса Секуритивендоринформатион
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подПредоставление = AppLocker).
+Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подпредоставление = AppLocker).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |поставщики |String|Конкретный поставщик (продукт или услуга — не компания поставщика); Например, Виндовсдефендератп.|
-|Провидерверсион|String|Версия поставщика или подСистемы, если она существует, создавшего оповещение. **Required**|
-|подПредоставление|String|Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.|
+|Провидерверсион|String|Версия поставщика или подсистемы, если она существует, создавшего оповещение. **Required**|
+|подпредоставление|String|Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.|
 |поставщика |String|Имя поставщика оповещений (например, Microsoft, Dell, Фирие). **Required**|
 
 ## <a name="json-representation"></a>Представление JSON

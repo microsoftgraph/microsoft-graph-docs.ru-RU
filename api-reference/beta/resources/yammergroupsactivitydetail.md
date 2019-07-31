@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c5b580f643686c27497fd24a6fe00c7750a6a938
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f16eda3f28556a18c47c68d532ace4244edfad19
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551423"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963754"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>Тип ресурса Яммерграупсактивитидетаил
 
@@ -19,18 +20,18 @@ ms.locfileid: "32551423"
 | :----------------- | :------ |
 | Репортрефрешдате  | Дата    |
 | Граупдисплайнаме   | String  |
-| isDeleted          | Логический |
+| isDeleted          | Boolean |
 | ОвнерпринЦипалнаме | String  |
 | Ластактивитидате   | Дата    |
 | groupType          | String  |
-| office365Connected | Логический |
+| office365Connected | Boolean |
 | Мемберкаунт        | Int64   |
 | Постедкаунт        | Int64   |
 | Реадкаунт          | Int64   |
 | Ликедкаунт         | Int64   |
 | Репортпериод       | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

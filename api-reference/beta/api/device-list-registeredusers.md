@@ -4,12 +4,13 @@ description: Получение списка пользователей, явл�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d1ca45b9e819196fd0225c01c9815860d395b3af
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b1c2da5e82a1d054282b2d62085d5a1f56549b4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862730"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35951402"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 

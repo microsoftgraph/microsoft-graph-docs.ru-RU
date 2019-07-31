@@ -1,15 +1,16 @@
 ---
 title: Создание Едукатионсинчронизатионпрофиле
-description: 'Создайте запрос для нового профиля синхронизации данных School в клиенте. ЗаПросите состояние, чтобы получить состояние профиля. '
+description: 'Создайте запрос для нового профиля синхронизации данных School в клиенте. Запросите состояние, чтобы получить состояние профиля. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 79e3e19f4361f0fe1fd7cb9090c685e60a46f259
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e4fe25723d146a30ad94bd99491bafe293da523a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954816"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание Едукатионсинчронизатионпрофиле
 
@@ -38,7 +39,7 @@ POST /synchronizationProfiles
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 | Content-Type | string | Приложение/JSON. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 В тексте запроса добавьте представление объекта [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

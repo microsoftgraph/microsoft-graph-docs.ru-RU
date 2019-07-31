@@ -4,12 +4,13 @@ description: " Создание, обновление и удаление не �
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c2bca99fed2b8c5328c2f2cf1ac3bf938ddcfcaa
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: resourcePageType
+ms.openlocfilehash: 9e57ff1e59c7caf5b29e582b7381492a7eee5b4c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639026"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964833"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 

@@ -4,12 +4,13 @@ description: Ресурс **планнерграуп** предоставляе�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 043cec9c3953f8c78a37e141a7b0f1259eb89d52
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 308c64e7eb086f48859581cf2d66aae07269fe6e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965966"
 ---
 # <a name="plannergroup-resource-type"></a>Тип ресурса Планнерграуп
 
@@ -28,10 +29,10 @@ ms.locfileid: "33344482"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор объекта **планнерграуп**|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускает значение null. Возвращает [планов](plannerplan.md) , принадлежащий группе.|
+|планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планов](plannerplan.md) , принадлежащий группе.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -2,14 +2,15 @@
 title: Тип ресурса Обжектмаппинг
 description: Определяет способ синхронизации данного объекта из исходного каталога в конечный каталог. В частности, он определяет, как объект в исходном каталоге должен сопоставляться с объектом в целевом каталоге, какие фильтры области (если они есть) следует использовать, чтобы определить, нужно ли подготовить заданный объект, и как будут преобразованы атрибуты объекта. Источник с целевым каталогом.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 667a58f299847188d193a5b50bb9883721d191e9
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 923567d8581f7c4497cbe45c125c529660b9d4b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964790"
 ---
 # <a name="objectmapping-resource-type"></a>Тип ресурса Обжектмаппинг
 

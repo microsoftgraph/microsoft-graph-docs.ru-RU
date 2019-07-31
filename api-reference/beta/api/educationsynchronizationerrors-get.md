@@ -4,12 +4,13 @@ description: 'Получение ошибок, возникших во врем�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c2db0467f86f015f31c40cd59d549a7843b580ce
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5ff930023d99c02ec4fb9d90b02b6569483e9892
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860066"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954895"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение Едукатионсинчронизатионеррорс
 

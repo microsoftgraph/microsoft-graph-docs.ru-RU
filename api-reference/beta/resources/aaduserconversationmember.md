@@ -4,12 +4,13 @@ description: Представляет пользователя в беседе.
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: fd326482869d9f72778edc9d4c55996f7aa59045
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.openlocfilehash: c4e937d88a1e504c6774b2dcb657dee443d54843
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236463"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013635"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
