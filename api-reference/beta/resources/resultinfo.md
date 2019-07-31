@@ -3,30 +3,32 @@ title: Тип ресурса Ресултинфо
 description: Тип Ресултинфо.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 2406c29c12af81ee6981b8ffa59e630a5451c2fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965371"
 ---
-# <a name="resultinfo-resource-type"></a><span data-ttu-id="a9659-103">Тип ресурса Ресултинфо</span><span class="sxs-lookup"><span data-stu-id="a9659-103">resultInfo resource type</span></span>
+# <a name="resultinfo-resource-type"></a><span data-ttu-id="5841d-103">Тип ресурса Ресултинфо</span><span class="sxs-lookup"><span data-stu-id="5841d-103">resultInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a9659-104">Тип Ресултинфо.</span><span class="sxs-lookup"><span data-stu-id="a9659-104">The resultInfo type.</span></span>
+<span data-ttu-id="5841d-104">Тип Ресултинфо.</span><span class="sxs-lookup"><span data-stu-id="5841d-104">The resultInfo type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a9659-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="a9659-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5841d-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5841d-105">Properties</span></span>
 
-| <span data-ttu-id="a9659-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="a9659-106">Property</span></span> | <span data-ttu-id="a9659-107">Тип</span><span class="sxs-lookup"><span data-stu-id="a9659-107">Type</span></span>   | <span data-ttu-id="a9659-108">Описание</span><span class="sxs-lookup"><span data-stu-id="a9659-108">Description</span></span>          |
+| <span data-ttu-id="5841d-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5841d-106">Property</span></span> | <span data-ttu-id="5841d-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5841d-107">Type</span></span>   | <span data-ttu-id="5841d-108">Описание</span><span class="sxs-lookup"><span data-stu-id="5841d-108">Description</span></span>          |
 | :------- | :----- | :------------------  |
-| <span data-ttu-id="a9659-109">code</span><span class="sxs-lookup"><span data-stu-id="a9659-109">code</span></span>     | <span data-ttu-id="a9659-110">String</span><span class="sxs-lookup"><span data-stu-id="a9659-110">String</span></span> | <span data-ttu-id="a9659-111">Код результата.</span><span class="sxs-lookup"><span data-stu-id="a9659-111">The result code.</span></span>     |
-| <span data-ttu-id="a9659-112">message</span><span class="sxs-lookup"><span data-stu-id="a9659-112">message</span></span>  | <span data-ttu-id="a9659-113">String</span><span class="sxs-lookup"><span data-stu-id="a9659-113">String</span></span> | <span data-ttu-id="a9659-114">Сообщение.</span><span class="sxs-lookup"><span data-stu-id="a9659-114">The message.</span></span>         |
-| <span data-ttu-id="a9659-115">subCode</span><span class="sxs-lookup"><span data-stu-id="a9659-115">subCode</span></span>  | <span data-ttu-id="a9659-116">String</span><span class="sxs-lookup"><span data-stu-id="a9659-116">String</span></span> | <span data-ttu-id="a9659-117">Дочерний код результата.</span><span class="sxs-lookup"><span data-stu-id="a9659-117">The result sub-code.</span></span> |
+| <span data-ttu-id="5841d-109">code</span><span class="sxs-lookup"><span data-stu-id="5841d-109">code</span></span>     | <span data-ttu-id="5841d-110">String</span><span class="sxs-lookup"><span data-stu-id="5841d-110">String</span></span> | <span data-ttu-id="5841d-111">Код результата.</span><span class="sxs-lookup"><span data-stu-id="5841d-111">The result code.</span></span>     |
+| <span data-ttu-id="5841d-112">message</span><span class="sxs-lookup"><span data-stu-id="5841d-112">message</span></span>  | <span data-ttu-id="5841d-113">String</span><span class="sxs-lookup"><span data-stu-id="5841d-113">String</span></span> | <span data-ttu-id="5841d-114">Сообщение.</span><span class="sxs-lookup"><span data-stu-id="5841d-114">The message.</span></span>         |
+| <span data-ttu-id="5841d-115">subCode</span><span class="sxs-lookup"><span data-stu-id="5841d-115">subCode</span></span>  | <span data-ttu-id="5841d-116">String</span><span class="sxs-lookup"><span data-stu-id="5841d-116">String</span></span> | <span data-ttu-id="5841d-117">Дочерний код результата.</span><span class="sxs-lookup"><span data-stu-id="5841d-117">The result sub-code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="a9659-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a9659-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5841d-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5841d-118">JSON representation</span></span>
 
-<span data-ttu-id="a9659-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a9659-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5841d-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5841d-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +45,7 @@ ms.locfileid: "33343552"
 }
 ```
 
-## <a name="example-error-result"></a><span data-ttu-id="a9659-120">Пример результата ошибки</span><span class="sxs-lookup"><span data-stu-id="a9659-120">Example Error result</span></span>
+## <a name="example-error-result"></a><span data-ttu-id="5841d-120">Пример результата ошибки</span><span class="sxs-lookup"><span data-stu-id="5841d-120">Example Error result</span></span>
 
 <!-- {
   "blockType": "example",
@@ -57,7 +59,7 @@ ms.locfileid: "33343552"
 }
 ```
 
-## <a name="example-generic-success-result"></a><span data-ttu-id="a9659-121">Пример общего результата успеха</span><span class="sxs-lookup"><span data-stu-id="a9659-121">Example Generic success result</span></span>
+## <a name="example-generic-success-result"></a><span data-ttu-id="5841d-121">Пример общего результата успеха</span><span class="sxs-lookup"><span data-stu-id="5841d-121">Example Generic success result</span></span>
 
 <!-- {
   "blockType": "example",
@@ -71,7 +73,7 @@ ms.locfileid: "33343552"
 }
 ```
 
-## <a name="example-record-success-result"></a><span data-ttu-id="a9659-122">Пример результатов записи</span><span class="sxs-lookup"><span data-stu-id="a9659-122">Example Record Success result</span></span>
+## <a name="example-record-success-result"></a><span data-ttu-id="5841d-122">Пример результатов записи</span><span class="sxs-lookup"><span data-stu-id="5841d-122">Example Record Success result</span></span>
 
 <!-- {
   "blockType": "example",

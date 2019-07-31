@@ -4,26 +4,27 @@ description: Ресурс **планнерчекклиститемколлект
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 502bda597ba0e021dc449812a104d0fd516f6ef1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: bebec56f57f546dcfc0b16eedb1fb9635d0fb16f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966014"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="9af38-106">Тип ресурса Планнерчекклиститемс</span><span class="sxs-lookup"><span data-stu-id="9af38-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="55745-106">Тип ресурса Планнерчекклиститемс</span><span class="sxs-lookup"><span data-stu-id="55745-106">plannerChecklistItems resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9af38-107">Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче.</span><span class="sxs-lookup"><span data-stu-id="9af38-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="9af38-108">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="9af38-108">It is an Open Type.</span></span> <span data-ttu-id="9af38-109">Он является частью объекта [сведений о задаче](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="9af38-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="9af38-110">Значение в параметре "свойство-значение" является объектом [чекклиститем](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="9af38-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="55745-107">Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче.</span><span class="sxs-lookup"><span data-stu-id="55745-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="55745-108">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="55745-108">It is an Open Type.</span></span> <span data-ttu-id="55745-109">Он является частью объекта [сведений о задаче](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="55745-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="55745-110">Значение в параметре "свойство-значение" является объектом [чекклиститем](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="55745-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="9af38-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="9af38-111">Properties</span></span>
-<span data-ttu-id="9af38-112">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="9af38-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="9af38-113">В этом случае клиент должен предоставлять **GUID** в качестве свойств, а их значения должны быть объектами [чекклиститем](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="9af38-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="9af38-114">Пример показан ниже.</span><span class="sxs-lookup"><span data-stu-id="9af38-114">Example is shown below.</span></span> <span data-ttu-id="9af38-115">Чтобы удалить элемент в контрольном списке, присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="9af38-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="55745-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="55745-111">Properties</span></span>
+<span data-ttu-id="55745-112">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="55745-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="55745-113">В этом случае клиент должен предоставлять **GUID** в качестве свойств, а их значения должны быть объектами [чекклиститем](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="55745-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="55745-114">Пример показан ниже.</span><span class="sxs-lookup"><span data-stu-id="55745-114">Example is shown below.</span></span> <span data-ttu-id="55745-115">Чтобы удалить элемент в контрольном списке, присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="55745-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9af38-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9af38-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="55745-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="55745-116">JSON representation</span></span>
 
-<span data-ttu-id="9af38-117">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="9af38-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="55745-117">Ниже этот ресурс представлен в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="55745-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +46,7 @@ ms.locfileid: "33344524"
   }
 }
 ```
-<span data-ttu-id="9af38-118">Примеры</span><span class="sxs-lookup"><span data-stu-id="9af38-118">// Example</span></span>
+<span data-ttu-id="55745-118">Примеры</span><span class="sxs-lookup"><span data-stu-id="55745-118">// Example</span></span>
 
 ```json
 {

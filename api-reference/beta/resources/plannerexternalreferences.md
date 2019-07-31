@@ -4,26 +4,27 @@ description: Ресурс **планнерекстерналреференцес
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6684757b9eb8b1d05a738b5aed887a05e8f32cb3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 65eb2deb04f44bd08be14cf1c0c6d61807552efa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344515"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966027"
 ---
-# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="52edf-106">Тип ресурса Планнерекстерналреференцес</span><span class="sxs-lookup"><span data-stu-id="52edf-106">plannerExternalReferences resource type</span></span>
+# <a name="plannerexternalreferences-resource-type"></a><span data-ttu-id="94a76-106">Тип ресурса Планнерекстерналреференцес</span><span class="sxs-lookup"><span data-stu-id="94a76-106">plannerExternalReferences resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="52edf-107">Ресурс **планнерекстерналреференцес** представляет коллекцию ссылок на задачу.</span><span class="sxs-lookup"><span data-stu-id="52edf-107">The **plannerExternalReferences** resource represents the collection of references on a task.</span></span> <span data-ttu-id="52edf-108">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="52edf-108">This is an Open Type.</span></span> <span data-ttu-id="52edf-109">Он является частью объекта [сведений о задаче](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="52edf-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="52edf-110">Значение в параметре "свойство-значение" является объектом [екстерналреференце](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="52edf-110">The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
+<span data-ttu-id="94a76-107">Ресурс **планнерекстерналреференцес** представляет коллекцию ссылок на задачу.</span><span class="sxs-lookup"><span data-stu-id="94a76-107">The **plannerExternalReferences** resource represents the collection of references on a task.</span></span> <span data-ttu-id="94a76-108">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="94a76-108">This is an Open Type.</span></span> <span data-ttu-id="94a76-109">Он является частью объекта [сведений о задаче](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="94a76-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="94a76-110">Значение в параметре "свойство-значение" является объектом [екстерналреференце](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="94a76-110">The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="52edf-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="52edf-111">Properties</span></span>
-<span data-ttu-id="52edf-112">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="52edf-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="52edf-113">В этом случае клиент должен предоставить действительные **URL-адреса** на основе протоколов **HTTP/HTTPS** , а их значения должны быть объектами [екстерналреференце](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="52edf-113">In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects.</span></span> <span data-ttu-id="52edf-114">На основе OData имена свойств в открытых типах не могут содержать следующие символы: `.`, `:`и `%` поэтому их необходимо закодировать.</span><span class="sxs-lookup"><span data-stu-id="52edf-114">Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded.</span></span> <span data-ttu-id="52edf-115">Пример показан ниже.</span><span class="sxs-lookup"><span data-stu-id="52edf-115">Example is shown below.</span></span> <span data-ttu-id="52edf-116">Чтобы удалить ссылку, присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="52edf-116">To remove a reference, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="94a76-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="94a76-111">Properties</span></span>
+<span data-ttu-id="94a76-112">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="94a76-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="94a76-113">В этом случае клиент должен предоставить действительные **URL-адреса** на основе протоколов **HTTP/HTTPS** , а их значения должны быть объектами [екстерналреференце](plannerexternalreference.md) .</span><span class="sxs-lookup"><span data-stu-id="94a76-113">In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects.</span></span> <span data-ttu-id="94a76-114">На основе OData имена свойств в открытых типах не могут содержать следующие символы: `.`, `:`и `%` поэтому их необходимо закодировать.</span><span class="sxs-lookup"><span data-stu-id="94a76-114">Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded.</span></span> <span data-ttu-id="94a76-115">Пример показан ниже.</span><span class="sxs-lookup"><span data-stu-id="94a76-115">Example is shown below.</span></span> <span data-ttu-id="94a76-116">Чтобы удалить ссылку, присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="94a76-116">To remove a reference, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="52edf-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="52edf-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="94a76-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="94a76-117">JSON representation</span></span>
 
-<span data-ttu-id="52edf-118">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="52edf-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="94a76-118">Ниже этот ресурс представлен в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="94a76-118">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -47,7 +48,7 @@ ms.locfileid: "33344515"
 }
 ```
 
-<span data-ttu-id="52edf-119">Примеры</span><span class="sxs-lookup"><span data-stu-id="52edf-119">// Example</span></span>
+<span data-ttu-id="94a76-119">Примеры</span><span class="sxs-lookup"><span data-stu-id="94a76-119">// Example</span></span>
 
 ```json
 {
