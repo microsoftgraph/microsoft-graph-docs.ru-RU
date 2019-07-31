@@ -4,12 +4,13 @@ description: Сложный тип, содержащий свойства исп
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: d8a8893f2c5fcb21e2e578eefa4cf5733782db07
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2b91275840546f0ff7486d8ecd5bdde2c1ff31e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333535"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005697"
 ---
 # <a name="usagedetails-resource-type"></a>Тип ресурса Усажедетаилс
 

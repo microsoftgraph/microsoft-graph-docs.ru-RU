@@ -4,12 +4,13 @@ description: Представляет объект форматирования 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f0896001fda140ff1d2693b3463c472568f1d28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9c3d968c4d36b8220d505edb6b7503a2b1206416
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348980"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007237"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>Тип ресурса Воркбукчартпоинтформат
 
@@ -19,7 +20,7 @@ ms.locfileid: "33348980"
 
 
 ## <a name="methods"></a>Методы
-Отсутствует
+Нет
 
 ## <a name="properties"></a>Свойства
 Нет

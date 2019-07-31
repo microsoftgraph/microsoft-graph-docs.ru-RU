@@ -4,12 +4,13 @@ description: Точка входа для ресурсов OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 44dfe7b33632bb6691802e46b66f54015b6aa6ae
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 215cf68cbf2efffacd6259aa64b0a00d5700b842
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341493"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009386"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 
@@ -23,7 +24,7 @@ ms.locfileid: "33341493"
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-Местоположение может представлять собой записные книжки для пользователей в Office 365 или OneDrive для пользователей, групповых записных книжек или размещенных на сайте SharePoint записных книжек группы в Office 365. 
+В качестве расположений можно задавать записные книжки пользователя в Office 365 или личные хранилища OneDrive, записные книжки группы (в том числе размещенные на сайте SharePoint) в Office 365. 
 
 **Записные книжки пользователей.** Чтобы получить доступ к персональным записным книжкам в OneDrive для бизнеса или личном хранилище OneDrive, воспользуйтесь одним из следующих URL-адресов:
 

@@ -2,12 +2,15 @@
 title: Тип ресурса standardTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное.
 localization_priority: Normal
-ms.openlocfilehash: fb6327c49c51e9bdee7e2ac5941257a45092fbb8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 545ed2aed08be31aad09e33d8db7e0bd669bfcb8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345741"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008098"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Тип ресурса standardTimeZoneOffset
 
@@ -32,7 +35,7 @@ ms.locfileid: "33345741"
 | year | Edm.Int32 | Указывает периодичность перехода с летнего времени на стандартное (в годах). Например, значение "0" указывает, что переход осуществляется ежегодно.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -2,12 +2,15 @@
 title: Тип ресурса Оненотересаурце
 description: 'Изображение или другой файловый ресурс на странице OneNote. '
 localization_priority: Normal
-ms.openlocfilehash: abb60a52b0f32ac2e1bdc024d07f02233db6043c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3884be59ed0eedafa9d4a45c851570d08ea70848
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348954"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009344"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
 
@@ -68,14 +71,14 @@ GET ../onenote/pages/{id}/content
 | content | Модель EDM. Stream||
 | contentUrl | String ||
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение двоичных данных ресурса](../api/resource-get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
+|[Получение двоичных данных ресурса](../api/resource-get.md) | Поток |Получение двоичных данных ресурса файла или изображения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

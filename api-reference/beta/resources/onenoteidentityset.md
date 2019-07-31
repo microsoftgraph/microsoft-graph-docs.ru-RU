@@ -4,12 +4,13 @@ description: '**Поддержка скоро**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 49aadd4609e214937e02dd21238110addb9ed2ea
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 9ffbc20a73aaed885d118094a7d1946459eb7efc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341808"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009365"
 ---
 # <a name="onenoteidentityset-resource-type"></a>Тип ресурса Оненотеидентитисет
 
@@ -18,7 +19,7 @@ ms.locfileid: "33341808"
 **Поддержка скоро**
 
 Тип Оненотеидентитисет является коллекцией с ключами объектов [оненотеидентити](onenoteidentity.md) .
-Он используется для представления набора удостоверений, связанных с различными событиями для _записНой книжки_, _раздела_ или _страницы_, например _созданных автором_ или автором _последнего изменения_. 
+Он используется для представления набора удостоверений, связанных с различными событиями для _записной книжки_, _раздела_ или _страницы_, например _созданных автором_ или автором _последнего изменения_. 
  
 В настоящее время он содержит один ключ, _**User**_.  В дальнейшем можно добавить такие ключи, как устройство или приложение для изменения элемента.
 

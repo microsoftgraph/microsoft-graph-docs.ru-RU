@@ -4,12 +4,13 @@ description: Сущность, описывающая статистику по 
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 9ee53bbdbb02a3d5716f49941ec108e23a09ae88
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: c364fe1a6da382ed8947b4b2bf63d2bce203d6ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004801"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса Оффицеусерчеккинсуммари
 
@@ -25,7 +26,7 @@ ms.locfileid: "33949271"
 |Сукцеедедусеркаунт|Int32|Общее количество успешных проверок пользователей за последние 3 месяца.|
 |failedUserCount|Int32|Общее число неудачных проверок пользователей за последние 3 месяца.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

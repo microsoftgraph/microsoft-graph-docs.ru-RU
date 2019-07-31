@@ -4,12 +4,13 @@ description: Содержит набор Ресаурцеактионс, опр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cbe41bae81d165d0800a5184e1f7babedebc09d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3fadd331cfb0e8201dcc77abe066d1c2c0b1c2c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993524"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010576"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
 

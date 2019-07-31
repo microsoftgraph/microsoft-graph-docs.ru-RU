@@ -2,12 +2,15 @@
 title: Тип ресурса Аппроле
 description: Представляет роль приложения, которая может быть запрошена клиентским приложением, вызывающей другое приложение, или которая может использоваться для назначения приложения пользователям или группам в указанной роли приложения. Свойство **appRoles** объекта servicePrincipal и сущности приложения является коллекцией **аппроле**.
 localization_priority: Normal
-ms.openlocfilehash: 4043d600bd19c61156cccd72f0d4e4f2e8352640
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 35c26e52c5d7eb9529474d08a43b68fceddfc954
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013329"
 ---
 # <a name="approle-resource-type"></a>Тип ресурса Аппроле
 

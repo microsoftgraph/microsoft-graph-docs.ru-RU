@@ -4,12 +4,13 @@ description: Представляет ресурс, назначенный вс�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b01bda47302b158589778bd473e38b5a37a232b2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c51f42d760e9f1e2f883f5e3cc5e2b20c701323e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996213"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010555"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Тип ресурса allDevicesAssignmentTarget
 

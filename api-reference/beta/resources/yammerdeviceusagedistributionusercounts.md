@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1797facecb5047badb35c0a4d876680e817cc643
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6dcfef0f86913ee1afe98681b71f9210216dd416
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555082"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006983"
 ---
 # <a name="yammerdeviceusagedistributionusercounts-resource-type"></a>Тип ресурса Яммердевицеусажедистрибутионусеркаунтс
 
@@ -26,7 +27,7 @@ ms.locfileid: "32555082"
 | остальные             | Int32  |
 | Репортпериод      | String |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,12 +4,13 @@ description: Объект rangeView представляет набор види
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fdc09b4c88e3105624f322697784cfa4e654ee96
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b71f6eadcf110c2942cf02f43b3aa8b5db2db4cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345829"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007090"
 ---
 # <a name="workbookrangeview-resource-type"></a>Тип ресурса workbookRangeView
 
@@ -35,16 +36,16 @@ ms.locfileid: "33345829"
 |index|Int32|Индекс диапазона.|
 |numberFormat|Json|Представляет код в числовом формате Excel для заданной ячейки. Только для чтения. |
 |rowCount|Int32|Возвращает количество видимых строк. Только для чтения.  |
-|text|Json|Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака #, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, возвращаемое API. Только для чтения.    |
+|текст|Json|Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака #, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, возвращаемое API. Только для чтения.    |
 |valueTypes|Json|Представляет тип данных каждой ячейки. Только для чтения. Возможные значения: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Представляет необработанные значения указанного объекта rangeView. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |rows|Коллекция [workbookRangeView](workbookrangeview.md)| Представляет коллекцию видимых ячеек в диапазоне, сопоставленных с указанным диапазоном. Только для чтения.    Только для чтения.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

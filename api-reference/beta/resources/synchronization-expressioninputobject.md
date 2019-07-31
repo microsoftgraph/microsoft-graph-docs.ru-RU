@@ -2,14 +2,15 @@
 title: Тип ресурса Експрессионинпутобжект
 description: 'Представляет объект, который будет использоваться в качестве входных тестовых данных, когда действие [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) выполняет оценку выражения.'
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b5fb11471757328bf0b84ae5ea0977d43587d7e4
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 113c38e540b8c41fb3d3156b27f6f5e1f1df42f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007951"
 ---
 # <a name="expressioninputobject-resource-type"></a>Тип ресурса Експрессионинпутобжект
 

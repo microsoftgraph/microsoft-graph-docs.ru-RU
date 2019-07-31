@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 176e960c7d9ae8dd1bc29600ad7b64e45e2940fa
-ms.sourcegitcommit: 6fe086e6a9396a71a82179853547cb7b5e22d980
+doc_type: resourcePageType
+ms.openlocfilehash: dfc45c4973194d26c1830f8c36d3bf3b407d2e3f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "35805216"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009505"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>Тип ресурса office365GroupsActivityDetail
 

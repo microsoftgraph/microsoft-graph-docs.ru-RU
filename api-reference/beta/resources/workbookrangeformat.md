@@ -4,12 +4,13 @@ description: Объект формата, в который включены ш�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3ee55e1a398dab1727dfdc24d9ebd5c66b7440d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6ec27300e720892debbd458970063f1b79270597
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33349012"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007069"
 ---
 # <a name="workbookrangeformat-resource-type"></a>Тип ресурса Воркбукранжеформат
 
@@ -26,7 +27,7 @@ ms.locfileid: "33349012"
 |[Создание Воркбукранжебордер](../api/rangeformat-post-borders.md) |[Воркбукранжебордер](workbookrangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
 |[Список границ](../api/rangeformat-list-borders.md) |Коллекция [воркбукранжебордер](workbookrangeborder.md)| Получение коллекции объектов RangeBorder.|
 |[Обновление](../api/rangeformat-update.md) | [Воркбукранжеформат](workbookrangeformat.md) |Обновление объекта RangeFormat. |
-|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Отсутствует|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 
 ## <a name="properties"></a>Свойства

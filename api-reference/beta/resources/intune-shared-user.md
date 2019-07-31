@@ -4,12 +4,13 @@ description: Представляет объект пользователя Azur
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9e99cd379d16896ca60bccef6170e256677e8e95
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 012bc306facb514cefed5d872d20a11b164b3374
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010380"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -45,11 +46,11 @@ ms.locfileid: "33938981"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 |**Входящая миграция**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |**Управление устройствами**|

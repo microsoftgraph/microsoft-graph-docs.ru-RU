@@ -4,12 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 8b1d481d43374d8611f221fb5c3047cdc9cd9148
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 1956ddac829a2921aba6ebf438ae4815ca56b8d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013131"
 ---
 # <a name="bookingappointment-resource-type"></a>Тип ресурса Букингаппоинтмент
 
@@ -25,8 +26,8 @@ ms.locfileid: "33328240"
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |  Коллекция [букингаппоинтмент](bookingappointment.md) | Получение списка объектов **букингаппоинтмент** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 |[Создание Букингаппоинтмент](../api/bookingbusiness-post-appointments.md) |  [bookingAppointment](bookingappointment.md) | Создание нового **букингаппоинтмент** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингаппоинтмент](../api/bookingappointment-get.md) | [bookingAppointment](bookingappointment.md) |Чтение свойств и связей объекта **букингаппоинтмент** .|
-|[Update](../api/bookingappointment-update.md) | [bookingAppointment](bookingappointment.md)    |Обновление объекта **букингаппоинтмент** . |
-|[Delete](../api/bookingappointment-delete.md) | Нет |Удаление объекта **букингаппоинтмент** . |
+|[обновление](../api/bookingappointment-update.md); | [bookingAppointment](bookingappointment.md)    |Обновление объекта **букингаппоинтмент** . |
+|[Удаление](../api/bookingappointment-delete.md) | Нет |Удаление объекта **букингаппоинтмент** . |
 |[Отмена](../api/bookingappointment-cancel.md)|Нет| Отмена объекта **букингаппоинтмент** .|
 
 ## <a name="properties"></a>Свойства
@@ -46,9 +47,9 @@ ms.locfileid: "33328240"
 |Инвоицеид|String|Идентификатор счета.|
 |Инвоицестатус|string| Статус счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |Инвоицеурл|String|URL-адрес счета в книгах корпорации Майкрософт.|
-|Оптаутофкустомеремаил|Логический|Значение true указывает, что [букингкустомер](bookingcustomer.md) для этой встречи не хочет получать подтверждение для этой встречи.|
+|Оптаутофкустомеремаил|Boolean|Значение true указывает, что [букингкустомер](bookingcustomer.md) для этой встречи не хочет получать подтверждение для этой встречи.|
 |Буфер буфера|Duration (Длительность)|Количество времени, которое необходимо зарезервировать после окончания встречи, для очистки в качестве примера. Значение выражается в формате [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
-|преБуфер|Duration (Длительность)|Количество времени, которое необходимо зарезервировать до начала встречи, в качестве примера для подготовки. Значение выражается в формате [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|пребуфер|Duration (Длительность)|Количество времени, которое необходимо зарезервировать до начала встречи, в качестве примера для подготовки. Значение выражается в формате [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |Цена|Двойное|Обычная цена для встречи с указанным [букингсервице](bookingservice.md).|
 |Прицетипе|string| Параметр, обеспечивающий гибкость для структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |напоминания|Коллекция [букингреминдер](bookingreminder.md)|Коллекция напоминаний о клиентах, отправленных для этой встречи. Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
@@ -57,8 +58,8 @@ ms.locfileid: "33328240"
 |Сервицелокатион|[location](location.md)|Место доставки службы.|
 |Служба|String|Имя **букингсервице** , связанного с этой встречей.<br>Это свойство является необязательным при создании новой встречи. Если он не указан, то он вычисляется из службы, связанной с встречей, с помощью свойства **serviceId** .|
 |Сервиценотес|String|Заметки из [букингстаффмембер](bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
-|Стаффмемберидс|Коллекция String|Идентификатор каждого [букингстаффмембер](bookingstaffmember.md) , запланированного в этой встрече.|
-|start|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается встреча.|
+|Стаффмемберидс|Коллекция строк|Идентификатор каждого [букингстаффмембер](bookingstaffmember.md) , запланированного в этой встрече.|
+|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается встреча.|
 
 ## <a name="relationships"></a>Отношения
 Нет

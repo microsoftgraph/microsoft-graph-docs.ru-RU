@@ -2,12 +2,15 @@
 title: Privileged Identity Management — Azure AD
 description: Интерфейсы API службы Azure AD Privileged Identity Management для управления ролями Azure Active Directory.
 localization_priority: Priority
-ms.openlocfilehash: 6002b0cdd3ba177d5a3b236a28c9fe1937ae5de8
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: e0e18405c36bf32b49563cbe8efd48f7317de55b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34425140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008903"
 ---
 # <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management — Azure AD
 

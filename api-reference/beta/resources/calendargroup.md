@@ -4,12 +4,13 @@ description: Группа пользовательских календарей.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2503fd7c113b8b55ba090fbc9504145e12596d4e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e556743517436950e3608247b537307e5bb97e3d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013047"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
@@ -22,10 +23,10 @@ ms.locfileid: "33328271"
 | Метод                                                      | Возвращаемый тип                        | Описание                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [Список групп календарей](../api/user-list-calendargroups.md)  | Коллекция [Calendar](calendar.md) | Получение групп календарей пользователя.                               |
-| [Создание группы календарей](../api/user-post-calendargroups.md) | [Календарь](calendar.md)            | Создание группы календарей.                                  |
+| [Создание группы календарей](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Создание группы календарей.                                  |
 | [Получение группы календарей](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Чтение свойств и связей, принадлежащих объекту группы календарей. |
 | [Обновление](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Обновление объекта calendarGroup.                                  |
-| [Delete](../api/calendargroup-delete.md)                    | Нет                               | Удаление объекта calendarGroup.                                  |
+| [Удаление](../api/calendargroup-delete.md)                    | Нет                               | Удаление объекта calendarGroup.                                  |
 | [Список календарей](../api/calendargroup-list-calendars.md)    | Коллекция объектов [Calendar](calendar.md) | Список календарей в группе календарей.                           |
 | [Создание объекта Calendar](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Создание календаря в группе календарей.                    |
 

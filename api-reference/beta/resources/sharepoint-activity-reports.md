@@ -4,12 +4,13 @@ description: Вы можете получить сведения о действ
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: cfe8c698533b46d4edbbb724dc5fb993cc85cfdb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 408ec081a433823231d4d20af33be2cf9fad31d3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343172"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008497"
 ---
 # <a name="sharepoint-activity-reports"></a>Отчеты о действиях в SharePoint
 
@@ -23,7 +24,7 @@ ms.locfileid: "33343172"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getsharepointactivityuserdetail.md) | Stream          | [Шарепоинтактивитюсердетаил](../resources/sharepointactivityuserdetail.md) | Получите сведения о действиях в SharePoint с разбивкой по пользователям. |
-| [Получение количества файлов](../api/reportroot-getsharepointactivityfilecounts.md) | Stream          | [Ситеактивитисуммари](../resources/siteactivitysummary.md) | Получите количество уникальных пользователей с лицензиями, которые работали с файлами, хранящимися на сайтах SharePoint. |
-| [Получение количества пользователей](../api/reportroot-getsharepointactivityusercounts.md) | Stream          | [Шарепоинтактивитюсеркаунтс](../resources/sharepointactivityusercounts.md) | Получение сведений о том, как меняется количество активных пользователей. Пользователь считается активным, если он выполнил действие с файлом (сохранение, синхронизация, изменение или предоставление общего доступа) или посетил страницу в указанный период. |
+| [Получение сведений о пользователях](../api/reportroot-getsharepointactivityuserdetail.md) | Поток          | [Шарепоинтактивитюсердетаил](../resources/sharepointactivityuserdetail.md) | Получите сведения о действиях в SharePoint с разбивкой по пользователям. |
+| [Получение количества файлов](../api/reportroot-getsharepointactivityfilecounts.md) | Поток          | [Ситеактивитисуммари](../resources/siteactivitysummary.md) | Получите количество уникальных пользователей с лицензиями, которые работали с файлами, хранящимися на сайтах SharePoint. |
+| [Получение количества пользователей](../api/reportroot-getsharepointactivityusercounts.md) | Поток          | [Шарепоинтактивитюсеркаунтс](../resources/sharepointactivityusercounts.md) | Получение сведений о том, как меняется количество активных пользователей. Пользователь считается активным, если он выполнил действие с файлом (сохранение, синхронизация, изменение или предоставление общего доступа) или посетил страницу в указанный период. |
 | [Получение страниц](../api/reportroot-getsharepointactivitypages.md) | Stream          | [Шарепоинтактивитипажес](../resources/sharepointactivitypages.md) | Получите количество уникальных страниц, посещенных пользователями. |

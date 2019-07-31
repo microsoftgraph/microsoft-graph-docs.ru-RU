@@ -4,12 +4,13 @@ description: Контактная запись, связанная с educationU
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d29cf93154e2c032ac7010372e3f116f2a1dd46c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 36e46261c3f31d9d41a63097753799b634dadeb2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343889"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008721"
 ---
 # <a name="relatedcontact-resource-type"></a>Тип ресурса Релатедконтакт
 
@@ -21,11 +22,11 @@ ms.locfileid: "33343889"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Строка|Идентификатор контакта в Azure Active Directory.|
-|displayName|Строка|Имя контакта. Обязательный.|
+|displayName|Строка|Имя контакта. Обязательно.|
 |emailAddress|String|Основной адрес электронной почты контакта.|
 |mobilePhone|String|Номер мобильного телефона контакта.|
 |Отношение|`contactRelationship`|Отношение к пользователю. Возможные значения: `parent`, `relative`, `aide`, `doctor` `guardian` `child`,,, `other`, `unknownFutureValue`.|
-|Акцессконсент|Логический|Указывает, было ли пользователь отправлен для доступа к данным учащихся.|
+|Акцессконсент|Boolean|Указывает, было ли пользователь отправлен для доступа к данным учащихся.|
 
 ## <a name="json-representation"></a>Представление JSON
 

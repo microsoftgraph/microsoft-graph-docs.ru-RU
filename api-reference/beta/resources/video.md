@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс Video — это единая структура, объединяющая элементы данных, связанные с видео.
 ms.date: 09/10/2017
 title: Видео
 localization_priority: Normal
-ms.openlocfilehash: 1dc85c4e5525d5c53e89b6f6db0ffb4a2418ab7e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: e93fd4bbd348df3ad31d1be6aa2b1dc73593327a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345438"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007363"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -19,7 +21,7 @@ ms.locfileid: "33345438"
 
 Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **video**, то этот ресурс представляет видеофайл. Свойства ресурса **Video** заполняются путем извлечения метаданных из такого файла.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -50,7 +52,7 @@ ms.locfileid: "33345438"
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | Количество разрядов звука на выборку.
 | **audioChannels**         | Int32  | Количество звуковых каналов.
-| **audioFormat**           | строка | Название формата аудио (AAC, MP3, и т. д.).
+| **audioFormat**           | string | Название формата аудио (AAC, MP3, и т. д.).
 | **audioSamplesPerSecond** | Int32  | Количество выборок звука в секунду.
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.

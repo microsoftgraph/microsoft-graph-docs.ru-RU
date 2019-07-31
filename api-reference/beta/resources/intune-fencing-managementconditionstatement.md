@@ -4,12 +4,13 @@ description: Оператор условия управления — это г�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37718b5efaa34680f3b990fe61421d0faf24dac5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a196d67a50c0c59f351465d30ad5ce0f0cc17628
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979174"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011094"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса Манажементкондитионстатемент
 

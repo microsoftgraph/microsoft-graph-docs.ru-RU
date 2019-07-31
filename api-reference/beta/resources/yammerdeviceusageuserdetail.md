@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5fe3aa7fa9da243c9cc8f9b015ee85d779b84eb3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 083ace4b10b24e8e5de5d287ddf418d93658c879
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551430"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006984"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>Тип ресурса Яммердевицеусажеусердетаил
 
@@ -19,19 +20,19 @@ ms.locfileid: "32551430"
 | :---------------- | :------ |
 | Репортрефрешдате | Дата    |
 | userPrincipalName | String  |
-| displayName       | String  |
+| displayName       | Строка  |
 | userState         | String  |
 | Статечанжедате   | Дата    |
 | Ластактивитидате  | Дата    |
-| Уседвеб           | Логический |
-| Уседвиндовсфоне  | Логический |
-| Уседандроидфоне  | Логический |
-| Уседифоне        | Логический |
-| Уседипад          | Логический |
-| Уседосерс        | Логический |
+| Уседвеб           | Boolean |
+| Уседвиндовсфоне  | Boolean |
+| Уседандроидфоне  | Boolean |
+| Уседифоне        | Boolean |
+| Уседипад          | Boolean |
+| Уседосерс        | Boolean |
 | Репортпериод      | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

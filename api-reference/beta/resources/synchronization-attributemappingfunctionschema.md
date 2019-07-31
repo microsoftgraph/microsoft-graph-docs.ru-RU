@@ -2,14 +2,15 @@
 title: Тип ресурса Аттрибутемаппингфунктионсчема
 description: Описывает функцию, которая может использоваться в сопоставлении атрибутов для преобразования значений во время синхронизации.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2290f2c3140d9c955dc3a3d4bc72f9b953a7775f
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 0222a01f2bcea819624d1dcb9f53da7ea0b86b25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620285"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007993"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>Тип ресурса Аттрибутемаппингфунктионсчема
 

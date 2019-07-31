@@ -2,12 +2,15 @@
 title: Тип ресурса Нетворкинтерфаце
 description: Представляет сетевую карту (NIC), связанную с этим узлом.
 localization_priority: Normal
-ms.openlocfilehash: 92ea26b76de8fa6ffbcdcf0bc64b85a08d0f51af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ef932729149ea21580ff5a8f1cc3f52e253bfc50
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009617"
 ---
 # <a name="networkinterface-resource-type"></a>Тип ресурса Нетворкинтерфаце
 
@@ -17,11 +20,11 @@ ms.locfileid: "32457069"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание сетевого адаптера (например, Ethernet-адаптера, подключения по локальной сети для адаптера беспроводной сети * _Лт_ # _Гт_ и т. д.).|
-|ipV4Address|Строка|Последний IPv4-адрес, связанный с этим СЕТЕВЫМ АДАПТЕРом.|
-|ipV6Address|Строка|Последний открытый (с нестандартным) IPv6-адрес, связанный с этим СЕТЕВЫМ АДАПТЕРом.|
-|localIpV6Address|Строка|IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим СЕТЕВЫМ АДАПТЕРом.|
-|macAddress|Строка|MAC-адрес сетевого адаптера на этом узле.|
+|description|String|Описание сетевого адаптера (например, Ethernet-адаптера, подключения по локальной сети для адаптера беспроводной сети * < # > и т. д.).|
+|ipV4Address|String|Последний IPv4-адрес, связанный с этим сетевым адаптером.|
+|ipV6Address|String|Последний открытый (с нестандартным) IPv6-адрес, связанный с этим сетевым адаптером.|
+|localIpV6Address|String|IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим сетевым адаптером.|
+|macAddress|String|MAC-адрес сетевого адаптера на этом узле.|
 
 ## <a name="json-representation"></a>Представление JSON
 

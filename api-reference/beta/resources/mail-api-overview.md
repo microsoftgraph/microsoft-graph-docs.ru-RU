@@ -4,12 +4,13 @@ description: Microsoft Graph позволяет вашему приложени�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5baf5c6c9b03c93aaa62df9a8f0690d4afe7f437
-ms.sourcegitcommit: b742da101a3a232356bf748c42da3ba08a7539d3
+doc_type: conceptualPageType
+ms.openlocfilehash: 759739f12d5cb58e5fc3f4d7c2ab74b64fca4b72
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34812959"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009890"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 

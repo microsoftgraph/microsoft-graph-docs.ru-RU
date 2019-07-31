@@ -2,12 +2,15 @@
 title: Тип ресурса Привилежедролеассигнмент
 description: 'Представляет назначение привилегированной роли для определенного пользователя. '
 localization_priority: Normal
-ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 010dbf110de414e5221873263ffb5bcffe30db48
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344244"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008882"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>Тип ресурса Привилежедролеассигнмент
 
@@ -23,7 +26,7 @@ ms.locfileid: "33344244"
 |[Коллекция Привилежедролеассигнмент списка](../api/privilegedroleassignment-list.md) | Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение коллекции объектов Привилежедролеассигнмент.|
 |[Получение privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Чтение свойств и связей объекта Привилежедролеассигнмент.|
 |[Создание задания](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Создайте новое назначение путем публикации в коллекции назначений.|
-|[Delete](../api/privilegedroleassignment-delete.md) | Нет |Удаление объекта privilegedRoleAssignment. |
+|[Удаление](../api/privilegedroleassignment-delete.md) | Нет |Удаление объекта privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как бессрочного.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как соответствующего требованиям.|
 |[my](../api/privilegedroleassignment-my.md)|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение привилегированных назначений ролей текущего пользователя.|
@@ -38,10 +41,10 @@ ms.locfileid: "33344244"
 |roleId|string|Идентификатор роли. В формате строки GUID.|
 |userId|string|Идентификатор пользователя. В формате строки GUID.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускает значение null. Сведения о связанной роли.|
+|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null. Сведения о связанной роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,12 +2,15 @@
 title: Тип ресурса Воркбукнамедитем
 description: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть простыми именованными объектами (как показано ниже в столбце "Тип"), объектом диапазона и ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 localization_priority: Normal
-ms.openlocfilehash: 49267379385a13b94e8639e4c129c05192b2ae6f
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 90c816bde49cf7062bf2b04deebd8ce6a7e08669
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007118"
 ---
 # <a name="workbooknameditem-resource-type"></a>Тип ресурса Воркбукнамедитем
 

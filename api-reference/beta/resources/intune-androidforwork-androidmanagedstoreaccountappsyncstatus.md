@@ -4,12 +4,13 @@ description: Состояние синхронизации клиента с п�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21eccae8d063a6007f6798c0909857688abe13ea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f210612428a3a664a253bcf75669da03bf89bda1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005606"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>тип перечисления Андроидманажедстореаккаунтаппсинкстатус
 

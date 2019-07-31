@@ -4,12 +4,13 @@ description: Сведения о одной версии teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4b350c5ebe39da336dfe467bb73f5b91270dc31c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c4849afe745a8554243bd37d85cb82d831e00a64
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345805"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007706"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
@@ -21,10 +22,10 @@ ms.locfileid: "33345805"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный идентификатор (а не идентификаторы Teams). |
-| teamsAppId          | строка   | Идентификатор из манифеста приложения Teams. |
+| id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
+| teamsAppId          | string   | Идентификатор из манифеста приложения Teams. |
 | displayName         | string   | Имя приложения, предоставленное разработчиком приложения. |
-| version             | строка   | Номер версии приложения. |
+| version             | string   | Номер версии приложения. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

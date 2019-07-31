@@ -4,12 +4,13 @@ description: Профиль сертификата SCEP для Windows 8.1 и SC
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0f30ad27d4815935f0a80d21e6f077f44dc775f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 75ad61ba03125a1d1af08d51379c4d32460727cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991767"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011318"
 ---
 # <a name="windows81scepcertificateprofile-resource-type"></a>Тип ресурса windows81SCEPCertificateProfile
 

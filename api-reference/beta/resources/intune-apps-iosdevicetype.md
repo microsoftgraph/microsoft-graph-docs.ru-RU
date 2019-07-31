@@ -4,12 +4,13 @@ description: Содержит свойства возможных типов у�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9751d541b0bcb64b68673aa8ca646fb85e70b5f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: a28f426199280c98ceadd31560b22fa48829d969
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991305"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005550"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 

@@ -4,12 +4,13 @@ description: Сведения о собрании, содержащие орга
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 129e8a60edd89d45eb6e48715a59231475d52b99
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341763"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009274"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>Тип ресурса Организермитингинфо
 
@@ -21,7 +22,7 @@ ms.locfileid: "33341763"
 
 | Свойство                     | Тип                          | Описание                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| Алловконверсатионвисаусост | Логический                       | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
+| Алловконверсатионвисаусост | Boolean                       | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
 | organizer                    | [identitySet](identityset.md) | Удостоверение Azure Active Directory для организатора.  |
 
 ## <a name="json-representation"></a>Представление JSON

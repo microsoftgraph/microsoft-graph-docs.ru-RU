@@ -4,12 +4,13 @@ description: Тип участника.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4a138267529127562fa9df42d8b20a985939b50e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a903eb34191401100d9b19aa17eba6fb9f5c6617
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345021"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009218"
 ---
 # <a name="participant-resource-type"></a>Тип ресурса участника
 
@@ -34,12 +35,12 @@ ms.locfileid: "33345021"
 | id                   | String                                   | Идентификатор участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
 | Исинлобби            | boolean                                  | true, если участник находится в зале ожидания                          |
-| автоЗвук              | boolean                                  | true, если участник отключен (клиент или сервер выключен)    |
+| Автозвук              | boolean                                  | true, если участник отключен (клиент или сервер выключен)    |
 | Медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
 | метаданных             | String                                   | Большой двоичный объект данных, предоставляемый участником в списке     |
 | Рекордингинфо        | [Рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

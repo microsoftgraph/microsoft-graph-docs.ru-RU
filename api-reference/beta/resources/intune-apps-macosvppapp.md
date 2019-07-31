@@ -4,12 +4,13 @@ description: Содержит свойства и наследуемые сво�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61247bad9fcae8fde14cb92adb8909efcb09e889
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 7b6d52ad6fd1f983dec8cdedd9a9dbc1642bffb1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957754"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005424"
 ---
 # <a name="macosvppapp-resource-type"></a>Тип ресурса Макосвппапп
 

@@ -3,12 +3,14 @@ title: Тип ресурса Ситеусажестораже
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c136b776e0c96a8bc63a1c82ae2ad17f059026cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 1ed15d4efb1c9a0fa81fdd79faeb9542d8093aab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583202"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008231"
 ---
 # <a name="siteusagestorage-resource-type"></a>Тип ресурса Ситеусажестораже
 

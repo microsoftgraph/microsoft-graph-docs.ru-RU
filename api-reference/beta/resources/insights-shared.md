@@ -4,12 +4,13 @@ description: 'Понимание файлов, к которым предост�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 128a85bb9aa2e9f51d2393029cce3c27f8c4e6f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 47228e6597f24b9a6d662c7d87643322acaed40b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339998"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006236"
 ---
 # <a name="sharedinsight-resource-type"></a>Тип ресурса Шарединсигхт
 

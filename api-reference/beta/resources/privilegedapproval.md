@@ -2,12 +2,15 @@
 title: Тип ресурса Привилежедаппровал
 description: Представляет утверждение, запрошенное в результате привилегированного управления удостоверениями для доступа к роли.
 localization_priority: Normal
-ms.openlocfilehash: 754fcd9b61321db1675408172c945557e38dc0e0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e920d34cc9a42c29138a97a83786087c86b7ee10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344240"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008917"
 ---
 # <a name="privilegedapproval-resource-type"></a>Тип ресурса Привилежедаппровал
 
@@ -40,10 +43,10 @@ ms.locfileid: "33344240"
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |userId|String||
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускает значение null.|
+|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
 |Request|[Привилежедролеассигнментрекуест](privilegedroleassignmentrequest.md)| Только для чтения. Запрос на назначение роли для этого объекта утверждения|
 
 ## <a name="json-representation"></a>Представление JSON

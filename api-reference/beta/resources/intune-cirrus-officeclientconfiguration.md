@@ -4,12 +4,13 @@ description: Настройка клиента Office.
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: c762158345e957c265d3784e46f2ef91421603be
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 3688503cf19d8cebe51b4afe7abd1563257f9192
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949404"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36004765"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Тип ресурса officeClientConfiguration
 
@@ -31,8 +32,8 @@ ms.locfileid: "33949404"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор политики конфигурации клиента Office.|
-|Усерпреференцепайлоад|Stream|Строка JSON параметров настройки в двоичном формате. Эти значения могут быть переопределены пользователем.|
-|Полиципайлоад|Stream|Строка JSON параметров политики в двоичном формате эти значения не могут быть изменены пользователем.|
+|Усерпреференцепайлоад|Поток|Строка JSON параметров настройки в двоичном формате. Эти значения могут быть переопределены пользователем.|
+|Полиципайлоад|Поток|Строка JSON параметров политики в двоичном формате эти значения не могут быть изменены пользователем.|
 |description|String|Пока не задокументировано.|
 |displayName|Строка|Администратор предоставил описание политики конфигурации клиента Office.|
 |lastModifiedDateTime|DateTime|Метка даты и времени последнего изменения политики.|
@@ -40,7 +41,7 @@ ms.locfileid: "33949404"
 |Усерчеккинсуммари|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сводка по возврату пользователя для политики.|
 |Чеккинстатусес|Коллекция [оффицеклиентчеккинстатус](../resources/intune-cirrus-officeclientcheckinstatus.md)|Список состояния возврата клиента Office.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Список назначений групп для политики.|

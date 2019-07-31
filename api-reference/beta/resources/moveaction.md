@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Наличие ресурса MoveAction в ресурсе itemActivity указывает, что в результате выполнения действия элемент был перемещен.
 ms.date: 09/14/2017
 title: MoveAction
 localization_priority: Normal
-ms.openlocfilehash: 0715f8e9743c4384e8fbd851fe88563e9eaf9666
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 9fbb19097b6a1401bd3c0b6dba4ce1fd5649e706
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009645"
 ---
 # <a name="moveaction-resource-type"></a>Тип ресурса MoveAction
 
@@ -19,7 +21,7 @@ ms.locfileid: "33342224"
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",

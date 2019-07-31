@@ -4,12 +4,13 @@ description: Описывает ресурс Мобилеапптраублеш�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 321b57ac590bfddf82b22425103d316a13ba1b9a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: f91bb53926bdcc99d4b7796c40d5679a7685d8e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33938876"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010408"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>Тип ресурса Мобилеапптраублешутинжевент
 
@@ -34,16 +35,16 @@ ms.locfileid: "33938876"
 |id|Строка|UUID для объекта.|
 |**Устранение неполадок**|
 |Аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок, наследуемом от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|applicationId|Строка|Идентификатор приложения Intune.|
-|correlationId|Строка|Идентификатор, используемый для трассировки сбоя в службе. |
+|applicationId|String|Идентификатор приложения Intune.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательный|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательный|
 |лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |Траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |**Управление устройствами**|

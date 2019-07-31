@@ -4,12 +4,13 @@ description: Ресурс **plannerBucketTaskBoardTaskFormat** представ�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d40234fd729b849fee9fa789b9ae410eb0147f45
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: b9e9713dca07e8eff0b320fcc50c8c48cc46f489
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344598"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009106"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Тип ресурса plannerBucketTaskBoardTaskFormat
 
@@ -23,7 +24,7 @@ ms.locfileid: "33344598"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md); |Чтение свойств и связей объекта **plannerBucketTaskBoardTaskFormat** .|
-|[Обновление](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
+|[обновление](../api/plannerbuckettaskboardtaskformat-update.md); | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,7 +32,7 @@ ms.locfileid: "33344598"
 |id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -4,12 +4,13 @@ description: Содержит свойства для минимальной в�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73cdb712f74b3339f36cdcb3057afbf4a62d74fb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1a7187b20a9ff46c17751102b2754c0e5e2c2ef7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991333"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36005564"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 

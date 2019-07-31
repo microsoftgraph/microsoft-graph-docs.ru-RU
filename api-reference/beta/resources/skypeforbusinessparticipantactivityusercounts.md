@@ -2,12 +2,15 @@
 title: Тип ресурса СкипефорбусинесспартиЦипантактивитюсеркаунтс
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 6579552ef3ca5e9fefe8690a161bef4752ad2492
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f6feb87de8b62dcf4f958a5c2bc6aaeda3ef454d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568119"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008112"
 ---
 # <a name="skypeforbusinessparticipantactivityusercounts-resource-type"></a>Тип ресурса СкипефорбусинесспартиЦипантактивитюсеркаунтс
 

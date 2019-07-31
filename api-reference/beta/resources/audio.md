@@ -1,15 +1,17 @@
 ---
 author: VinodRavichandran
+description: Ресурс Audio группирует свойства элемента, связанные со звуком, в единую структуру.
 ms.date: 09/10/2017
 title: "\"Audio\" (Аудио);"
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f526fc92c766f3ae91831d5026a31e3bd69b4b8b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 078ade2fd92d6eaf8d9017fe5cd8255a7449769e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339110"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013229"
 ---
 # <a name="audio-facet"></a>Аспект Audio
 
