@@ -4,12 +4,13 @@ description: Получение всех категорий, определен�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 286f2193f8d4b0131425f9f551ff1ab2ac1fff28
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fe9a675a2352cef68788524759273ef2eb26034b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877485"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992523"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 

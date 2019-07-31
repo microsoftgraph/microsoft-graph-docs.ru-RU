@@ -4,12 +4,13 @@ description: Возвращает объект, представляющий в�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8a547df6baea025dbb2d3701e1f47006cacd544
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3ffd1a2a209a883e75f517584297d46a28d3c7b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874921"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988526"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 

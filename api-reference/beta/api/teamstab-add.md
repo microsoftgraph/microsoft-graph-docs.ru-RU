@@ -4,12 +4,13 @@ description: 'Добавляет (закрепляет) вкладку в ука
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7c9e7ef4601c3a2f1d1e4731172cb7f9e81aebfd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 7f6a29243c947573bf90250f9f592597b9568d42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330260"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990752"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 

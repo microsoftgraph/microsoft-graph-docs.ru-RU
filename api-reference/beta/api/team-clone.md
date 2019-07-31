@@ -4,12 +4,13 @@ description: Создание копии команды. Эта операция
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a78312d755befccff6e4b12cc0ba432e4754317
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 892a6de6dd191b43fe139acf7f8340fd14c8da5a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990850"
 ---
 # <a name="clone-a-team"></a>Клонирование команды
 
@@ -51,7 +52,7 @@ POST /teams/{id}/clone
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|

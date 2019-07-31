@@ -4,12 +4,13 @@ description: Конфигурация мультимедиа, указывающ
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec1c70e233f46ad0098a6a7ee76d4d46f3b82c20
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 97d2ac01b434e211eb8836f04343ef65b9f0ea1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342158"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966666"
 ---
 # <a name="nomediaconfig-resource-type"></a>Тип ресурса Номедиаконфиг
 
@@ -21,7 +22,7 @@ ms.locfileid: "33342158"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| Ремовефромдефаултаудиограуп | Логический |  |
+| Ремовефромдефаултаудиограуп | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

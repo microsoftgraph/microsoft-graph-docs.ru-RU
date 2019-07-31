@@ -2,12 +2,15 @@
 title: Тип ресурса governanceRoleAssignment
 description: Представляет назначение роли пользователю или группе.
 localization_priority: Normal
-ms.openlocfilehash: 3b70d356886a14b17fda7ed37292797ba99d51e9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 518fbe18fcd09b1b4cc9730c6b7f0112adabfeae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340259"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971895"
 ---
 # <a name="governanceroleassignment-resource-type"></a>Тип ресурса governanceRoleAssignment
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,15 +20,15 @@ ms.locfileid: "33340259"
 Привилегированное управление удостоверениями (PIM) поддерживает два типа назначений:
 
 1. Активное назначение — представляет прямой/активированный доступ к ресурсам.
-2. ПодХодящие назначения — представляет промежуточный этап привилегированного доступа к ресурсам, между отсутствием доступа и прямым доступом. Администраторы могут заранее назначать пользователей и группы `eligible assignment` , а при необходимости `activation` `eligible assignment` получить доступ к ресурсу в течение нескольких часов. После активации `active assignment` будет создана группа для пользователей и членов группы, указывающая состояние активации.
+2. Подходящие назначения — представляет промежуточный этап привилегированного доступа к ресурсам, между отсутствием доступа и прямым доступом. Администраторы могут заранее назначать пользователей и группы `eligible assignment` , а при необходимости `activation` `eligible assignment` получить доступ к ресурсу в течение нескольких часов. После активации `active assignment` будет создана группа для пользователей и членов группы, указывающая состояние активации.
 
 ## <a name="methods"></a>Методы
 
 | Метод          | Возвращаемый тип |Описание|
 |:------------|:--------|:--------|
 |[Получение](../api/governanceroleassignment-get.md) |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Чтение свойств и связей объекта назначения роли.|
-|[Список](../api/governanceroleassignment-list.md) | Коллекция [governanceRoleAssignment](../resources/governanceroleassignment.md)|ПереЧисление коллекции назначений ролей для ресурса. |
-|[Export](../api/governanceroleassignment-export.md) | поток в октетах |Скачайте коллекцию назначений ролей для ресурса и сохраните ее `.csv` в виде файла.|
+|[List](../api/governanceroleassignment-list.md) | Коллекция [governanceRoleAssignment](../resources/governanceroleassignment.md)|Перечисление коллекции назначений ролей для ресурса. |
+|[Экспорт](../api/governanceroleassignment-export.md) | поток в октетах |Скачайте коллекцию назначений ролей для ресурса и сохраните ее `.csv` в виде файла.|
 
 `PUT` `POST` `roleAssignments` В наборе сущностей `DELETE` поддерживаются не поддерживаемые операции, а также операции. `PATCH` Все операции по `governanceRoleAssignment` созданию, обновлению и удалению выполняются `governanceRoleAssignmentRequest`.
 

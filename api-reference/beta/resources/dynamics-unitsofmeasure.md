@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 870e188939646594b62e6eebf3e234eb0211f140
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3658c4c510194d3cc950094ec9e46db31589bc03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543030"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972868"
 ---
 # <a name="unitsofmeasure-resource-type"></a>Тип ресурса Унитсофмеасуре
 Представляет единицу измерения, которая является стандартом измерения количества в Dynamics 365 Business Central.
@@ -23,12 +24,12 @@ ms.locfileid: "32543030"
 |[Получение Унитсофмеасуре](../api/dynamics-unitsofmeasure-get.md)|Унитсофмеасуре|Возвращает объект единицы измерения.|
 |[POST Унитсофмеасуре](../api/dynamics-create-unitsofmeasure.md)|Унитсофмеасуре|Создает объект единицы измерения.|
 |[Исправление Унитсофмеасуре](../api/dynamics-unitsofmeasure-update.md)|Унитсофмеасуре|Обновляет объект единицы измерения.|
-|[Удаление Унитсофмеасуре](../api/dynamics-unitsofmeasure-delete.md)|Нет|Удаляет объект единицы измерения.|
+|[Удаление Унитсофмеасуре](../api/dynamics-unitsofmeasure-delete.md)|none|Удаляет объект единицы измерения.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Глобальный уникальный идентификатор (GUID)|Уникальный идентификатор Унитсофмеасуре. Не редактируемые.|
+|id|GUID|Уникальный идентификатор Унитсофмеасуре. Не редактируемые.|
 |code|string|Задает код для единицы измерения.|
 |displayName|string|Задает отображаемое имя единицы измерения.|
 |Интернатионалстандардкоде|string|Указывает код единицы измерения, выраженный в соответствии с УНЕЦЕ Rec20 Standard в связи с электронной отправкой документов продажи.|

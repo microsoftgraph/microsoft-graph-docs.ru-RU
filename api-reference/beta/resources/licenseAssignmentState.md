@@ -2,12 +2,15 @@
 title: Тип ресурса Лиценсеассигнментстате
 description: 'Свойство **лиценсеассигнментстатес** объекта user представляет собой коллекцию **лиценсеассигнментстате**. Он предоставляет пользователю сведения о назначении лицензий пользователю. Сведения включают в себя следующие сведения:  '
 localization_priority: Normal
-ms.openlocfilehash: e720070c4c97c58fd3c99e49656d7ca33f5fb9d4
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d85b4e2d45739f0d82e11bf029d00cad91a0e726
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778434"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966957"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Тип ресурса Лиценсеассигнментстате
 

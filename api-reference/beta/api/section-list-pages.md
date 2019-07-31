@@ -4,12 +4,13 @@ description: Получение списка объектов Page из указ
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: e2e1f506883a177716d3b91519d1ce2a8f85f04d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: fff3108faf20615e769f37ca9ad1f0246efc5c0a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336083"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35982874"
 ---
 # <a name="list-pages"></a>Список страниц
 
@@ -44,7 +45,7 @@ GET /sites/{id}/onenote/sections/{id}/pages
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Accept | string | `application/json` |
+| Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -4,12 +4,13 @@ description: 'Пространство имен `/education` обеспечив�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 83879a2fe448e97f62dc592b42d1cbc1d3d5cf39
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8084b1aae61ffb9e9982fbf8b5f4b8e430a85da1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334194"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972567"
 ---
 # <a name="educationroot-resource-type"></a>Тип ресурса educationRoot
 
@@ -34,9 +35,9 @@ ms.locfileid: "33334194"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускает значение null.|
-|me|[educationUser](educationuser.md)| Только для чтения. Допускает значение null.|
-|schools|Коллекция [educationSchool](educationschool.md)| Только для чтения. Допускает значение null.|
+|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение null.|
+|me|[educationUser](educationuser.md)| Только для чтения. Допускается значение null.|
+|schools|Коллекция [educationSchool](educationschool.md)| Только для чтения. Допускается значение null.|
 |users|Коллекция [educationUser](educationuser.md)| Только для чтения. Допускается значение NULL.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

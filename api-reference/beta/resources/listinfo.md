@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Сложный тип listInfo используется для хранения дополнительных сведений о списке.
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: eeb534fe149a0c80f80bec105fe78bf5c1d98ba0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 962fc4928bac69489cf2ae2a4c77f3b72169ce0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345379"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966947"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
 
@@ -20,7 +21,7 @@ ms.locfileid: "33345379"
 
 [списке]: list.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -43,7 +44,7 @@ ms.locfileid: "33345379"
 
 | Имя свойства           | Тип    | Описание
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Логический | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.
+| **contentTypesEnabled** | Boolean | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.
 | **hidden**              | Boolean | Если это свойство имеет значение `true`, это указывает на то, что список обычно не отображается в пользовательском интерфейсе SharePoint.
 | **template**            | String  | Перечислимое значение, которое представляет базовый шаблон списка, используемый при создании списка. Возможные значения: `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` и другие.
 

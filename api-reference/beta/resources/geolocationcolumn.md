@@ -1,15 +1,17 @@
 ---
 author: kevklam
-ms.author: kevinlam
+description: Жеолокатионколумн для ресурса columnDefinition указывает на то, что столбец содержит географическое положение.
 ms.date: 09/10/2018
 title: Жеолокатионколумн
 localization_priority: Normal
-ms.openlocfilehash: 1a7af7746dcfddcc67c4bfe9831bee9acfe82152
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7ab8617ea48e02a1deca29e4aed725a938a5a07c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333736"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973524"
 ---
 # <a name="geolocationcolumn-resource-type"></a>Тип ресурса Жеолокатионколумн
 

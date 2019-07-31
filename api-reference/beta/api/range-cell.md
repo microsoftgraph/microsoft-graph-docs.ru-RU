@@ -4,12 +4,13 @@ description: Получает объект диапазона, содержащ�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 29fb7c4d487dc9d6bfe029a5156278fb9aacf025
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 9dffd75ed5e70e373f824d11fdcc287ce09f051a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991949"
 ---
 # <a name="range-cell"></a>Range: Cell
 
@@ -39,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

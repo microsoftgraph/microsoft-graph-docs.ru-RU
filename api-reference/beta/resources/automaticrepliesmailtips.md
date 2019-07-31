@@ -2,12 +2,15 @@
 title: Тип ресурса Аутоматикреплиесмаилтипс
 description: Подсказки о любых автоматических ответах, настроенных в почтовом ящике.
 localization_priority: Normal
-ms.openlocfilehash: faefc5997f724afeaf09ff4740aac5702be159fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 74fda9db7de1a97ce2b7e44ca9d56020b87ab6f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339076"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974252"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса Аутоматикреплиесмаилтипс
 

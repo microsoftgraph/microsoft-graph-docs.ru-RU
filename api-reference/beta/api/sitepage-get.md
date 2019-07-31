@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Возвращает метаданные для объекта Ситепаже в списке страниц сайта на сайте.
 ms.date: 03/15/2018
 title: Получение страницы на сайте
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: df146936bae0967434fec941c37f49b49768f6ea
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 384436bbae1318eb66e6edc345c2949b9c1d0aba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869574"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991221"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получение страницы в списке страниц сайта
 

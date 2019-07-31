@@ -4,12 +4,13 @@ description: 'Опубликуйте приложение в каталоге п
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3560faff90e02da77e7a3a5a55dba4ce1ecf87d9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: c50b183819d7f56c6d5317a6e30840b674be750a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335309"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990787"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений Организации
 
@@ -42,7 +43,7 @@ POST /appCatalogs/teamsApps
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | приложение/ZIP-индекс |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Полезные данные манифеста ZIP Teams. Для ZIP-файла приложения Teams [в разделе Create a App Package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
 

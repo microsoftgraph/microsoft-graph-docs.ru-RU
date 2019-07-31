@@ -2,12 +2,15 @@
 title: Тип ресурса governanceResource
 description: Представляет ресурсы, которыми можно управлять с помощью привилегированного управления удостоверениями (PIM). Для ресурсов Azure может быть подписка, Группа ресурсов и ресурс, такой как виртуальная машина, база данных SQL и т. д.
 localization_priority: Normal
-ms.openlocfilehash: 7453397b0ea3edccd44a4eebdbbd89624bab2cc5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a0429de2cacc816eaf1a603a29a08897650da6e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333720"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971923"
 ---
 # <a name="governanceresource-resource-type"></a>Тип ресурса governanceResource
 
@@ -20,8 +23,8 @@ ms.locfileid: "33333720"
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:----------|
-|[Список](../api/governanceresource-list.md) | Коллекция [governanceResource](../resources/governanceresource.md)|ПереЧисление коллекции ресурсов, к которым у запрашивающего есть доступ.|
-|[Получение](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Чтение свойств и связей объекта ресурса, указанного по идентификатору.|
+|[List](../api/governanceresource-list.md) | Коллекция [governanceResource](../resources/governanceresource.md)|Перечисление коллекции ресурсов, к которым у запрашивающего есть доступ.|
+|[получение](../api/governanceresource-get.md); | [governanceResource](../resources/governanceresource.md) |Чтение свойств и связей объекта ресурса, указанного по идентификатору.|
 |[Зарегистрировать](../api/governanceresource-register.md) | |Регистрация неуправляемой подписки Azure или группы управления для службы управления информационными данными. |
 
 Нет `POST`, `PUT`, `PATCH`, `DELETE` поддерживаются в `roleDefinitions` наборе сущностей в настоящее время.
@@ -29,10 +32,10 @@ ms.locfileid: "33333720"
 ## <a name="properties"></a>Свойства
 | Свойство          |Тип         |Описание|
 |:------------------|:----------|:----------|
-|id                 |Строка     |Идентификатор ресурса. Он указан в формате GUID.|
+|id                 |String     |Идентификатор ресурса. Он указан в формате GUID.|
 |externalId           |String   |Внешний идентификатор ресурса, представляющий его исходный идентификатор во внешней системе. Например, внешний идентификатор ресурса подписки может иметь значение "/Subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
 |type               |String     |Обязательный. Тип ресурса. Например, для ресурсов Azure типом может быть "Subscription", "ResourceGroup", "Microsoft. SQL/Server" и т. д.|
-|displayName        |String     |Отображаемое имя ресурса.|
+|displayName        |Строка     |Отображаемое имя ресурса.|
 |status             |String     |Состояние данного ресурса. Например, он может представлять, заблокирован ли ресурс (значения: `Active` / `Locked`). Примечание: это свойство может быть расширено в будущем для поддержки дополнительных сценариев.|
 |Регистереддатетиме|DateTimeOffset      |Представляет дату и время, когда ресурс регистрируется в PIM.|
 |Регистередрут|String      |Екстерналид из корневой области ресурса, зарегистрированной в PIM. В качестве корневой области можно указать родительские, бабушке или более поздние ресурсы предков.|

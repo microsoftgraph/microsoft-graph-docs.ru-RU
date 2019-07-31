@@ -4,12 +4,13 @@ description: 'Подкласс объекта Едукатионресаурце
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 1404d054ab26527c617ed8fce8ad03c58f520f3c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 72ab3435ed30602bbd9b2fadf9a6f4d0879e9198
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340471"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972607"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>Тип ресурса Едукатионповерпоинтресаурце
 

@@ -2,12 +2,15 @@
 title: Тип ресурса Аудитактивитинитиатор
 description: Identity объект ресурса, инициирующий действие. Инициатор может быть пользователем, приложением или системой (который рассматривается как приложение).
 localization_priority: Normal
-ms.openlocfilehash: 14c92a4df42c3d8dbcd6836695df8d6caac3cf87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2f76c071efd10d2d43887bdd5dd04df0d2aa86d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543770"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974229"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Тип ресурса Аудитактивитинитиатор
 Identity объект ресурса, инициирующий действие. Инициатор может быть пользователем, приложением или системой (который рассматривается как приложение).
@@ -20,7 +23,7 @@ Identity объект ресурса, инициирующий действие.
 |программы|[Аппидентити](appidentity.md)|Если ресурс, инициирующий действие, является приложением, это свойство указывает все связанные с приложением сведения, такие как appId, Name, СервицепринЦипалид и Name.|
 |user|[userIdentity](useridentity.md)|Если ресурс, инициирующий действие, является пользователем, это свойство указывает все связанные с пользователем сведения, такие как userId, Name, Усерприникпалнаме.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

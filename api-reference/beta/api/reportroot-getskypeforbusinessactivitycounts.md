@@ -4,12 +4,13 @@ description: Отслеживайте, как меняется количест�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 1de6ea5f00570a6dd2ac86aee3e7eea6958181dd
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e5a58ce692e600ad68e4e32581b7e3b0afb91fc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872482"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983217"
 ---
 # <a name="reportroot-getskypeforbusinessactivitycounts"></a>reportRoot: getSkypeForBusinessActivityCounts
 

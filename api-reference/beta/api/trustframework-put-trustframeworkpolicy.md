@@ -4,12 +4,13 @@ description: 'Эта операция обновляет существующи�
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1cb40c5a70056990bfa7d00443289bbcd565707d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: f5aa7f489faecb053ddad2734c1318c3cba7ed71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335089"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977449"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание Трустфрамеворкполици
 
@@ -44,7 +45,7 @@ PUT /trustFramework/policies/{id}/$value
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|Application/XML. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . 
 

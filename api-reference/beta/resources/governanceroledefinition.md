@@ -2,12 +2,15 @@
 title: Тип ресурса Говернанцероледефинитион
 description: Представляет определения ролей. Для ресурсов Azure он может представлять роли Azure RBAC, такие как Owner, Reader, корреспондент и т. д.
 localization_priority: Normal
-ms.openlocfilehash: c760cc04b8dae39c06d0dbc2c4821401bd75a699
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 668f5430e8f098986b7d5398f32c9c35543a7e11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422509"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971855"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
 

@@ -4,12 +4,13 @@ description: Получение списка объектов **plannertask**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 8a36504716c6c1c1b16d88ef61d571ac076a21be
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 8b329a158349e7b790584eb2c55f23efe5e1bece
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35876688"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992313"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 

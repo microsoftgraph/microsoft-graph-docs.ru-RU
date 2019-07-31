@@ -2,12 +2,15 @@
 title: Перечисление объектов secureScoreControlProfiles
 description: Получение свойств и связей объекта Секурескореконтролпрофилес.
 localization_priority: Normal
-ms.openlocfilehash: 089510a8b1abb8e6969dd0f40be7ea4858ffa98c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 31be226c3e7b6f4611a4958ea03584d570fe8b2d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35870402"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991550"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Перечисление объектов secureScoreControlProfiles
 

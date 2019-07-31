@@ -2,12 +2,15 @@
 title: Add Named Item FormulaLocal
 description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
 localization_priority: Normal
-ms.openlocfilehash: 406ca086f29cb6bcd8f1e309e5bd35d1f19c3299
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 82f0dd042575826efd31145a113613de1b950298
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879263"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983819"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.

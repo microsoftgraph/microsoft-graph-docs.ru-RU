@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта reportRo
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 90d347aacefbe177174115433f1f03b6115101bf
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 8b2900af5d900bb71fc993ce0c35eaceb748c8b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979689"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 
@@ -46,7 +47,7 @@ GET /reports
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

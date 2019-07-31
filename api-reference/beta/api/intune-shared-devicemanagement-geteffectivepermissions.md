@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a1c2cb3ba99d89f2903fb417784cf08fdd1bd78f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 770c5784c22f2dfbaa4d9d39e0b83b5e2c72b00b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898366"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979794"
 ---
 # <a name="geteffectivepermissions-function"></a>Функция getEffectivePermissions
 
@@ -43,7 +44,7 @@ GET /deviceManagement/getEffectivePermissions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

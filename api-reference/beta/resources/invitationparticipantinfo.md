@@ -4,12 +4,13 @@ description: '**ИнвитатионпартиЦипант** используе�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 56eb1ad90410edca795a8e29ecaa4b8b94e915ee
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 570c2740cce2f4bc3b5584ba04ed50c9467591af
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345445"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967156"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
 
@@ -27,7 +28,7 @@ ms.locfileid: "33345445"
 | региональных                             | String                        | Регион участника.                                                           |
 | Реплацескаллид                     | String                        | Необязательное свойство. Вызов, частью которого в данный момент является целевой иденити. Этот вызов будет сброшен после добавления участника. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -4,12 +4,13 @@ description: Тип Медиастреам.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69d8088ba161bdf4dbf0482fdab8ad757347126d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966829"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
@@ -24,7 +25,7 @@ ms.locfileid: "33342620"
 | direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
 | mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
-| Сервермутед | Логический | Если сервер отключен на носителе.                                                                          |
+| Сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
 | Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON

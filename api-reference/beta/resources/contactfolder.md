@@ -4,12 +4,13 @@ description: Папка, содержащая контакты.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe980bc27aed3579a70c52941b1a784696b553e3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 4a9fe3263bed04252e8eba5129437d0a7c155d42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341206"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973196"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -26,7 +27,7 @@ ms.locfileid: "33341206"
 |:---------------|:--------|:----------|
 |[Получение contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md). |Получение папки с контактами с помощью идентификатора папки контактов.|
 |[Обновление](../api/contactfolder-update.md) | [contactFolder](contactfolder.md). |Обновление объекта contactFolder. |
-|[Delete](../api/contactfolder-delete.md) | Нет |Удаление объекта contactFolder. |
+|[Удаление](../api/contactfolder-delete.md) | Нет |Удаление объекта contactFolder. |
 |[Список экземпляров childFolders](../api/contactfolder-list-childfolders.md) |Коллекция [contactFolder](contactfolder.md)| Получение коллекции дочерних папок для указанной папки с контактами.|
 |[Создание дочернего элемента contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md).| Создание дочернего объекта contactFolder указанной папки.|
 |[delta](../api/contact-delta.md)|Коллекция [contact](contact.md)| Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.|
@@ -41,8 +42,8 @@ ms.locfileid: "33341206"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя папки.|
-|id|Строка|Уникальный идентификатор папки с контактами. Только для чтения.|
+|displayName|Строка|Отображаемое имя папки.|
+|id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 |wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
 

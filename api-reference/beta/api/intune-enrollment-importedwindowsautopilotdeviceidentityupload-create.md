@@ -1,24 +1,24 @@
 ---
-title: Создание Виндовсаутопилотдеплойментпрофилеассигнмент
-description: Создание нового объекта Виндовсаутопилотдеплойментпрофилеассигнмент.
+title: Создание Импортедвиндовсаутопилотдевицеидентитюплоад
+description: Создание нового объекта Импортедвиндовсаутопилотдевицеидентитюплоад.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2339818dcc9a1d9c101d643372713169f3d3d28
+ms.openlocfilehash: bc8be9c3f4562d93977448549d671f8c603adb7f
 ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980970"
+ms.locfileid: "35985579"
 ---
-# <a name="create-windowsautopilotdeploymentprofileassignment"></a>Создание Виндовсаутопилотдеплойментпрофилеассигнмент
+# <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Создание Импортедвиндовсаутопилотдевицеидентитюплоад
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .
+Создание нового объекта [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "35980970"
 }
 -->
 ``` http
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments
+POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,34 +45,34 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта Виндовсаутопилотдеплойментпрофилеассигнмент в формате JSON.
+В тексте запроса добавьте представление объекта Импортедвиндовсаутопилотдевицеидентитюплоад в формате JSON.
 
-В следующей таблице приведены свойства, необходимые при создании Виндовсаутопилотдеплойментпрофилеассигнмент.
+В следующей таблице приведены свойства, необходимые при создании Импортедвиндовсаутопилотдевицеидентитюплоад.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля развертывания Windows для автопилота.|
+|id|String|GUID объекта|
+|Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
+|status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 Content-type: application/json
-Content-length: 183
+Content-length: 172
 
 {
-  "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
-  "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
+  "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
+  "status": "pending"
 }
 ```
 
@@ -81,14 +81,13 @@ Content-length: 183
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 232
+Content-Length: 221
 
 {
-  "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
-  "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
-  "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
+  "id": "8d639524-9524-8d63-2495-638d2495638d",
+  "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
+  "status": "pending"
 }
 ```
 

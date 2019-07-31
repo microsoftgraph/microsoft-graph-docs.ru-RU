@@ -4,12 +4,13 @@ description: Удаляет объект Апплевпптокентраубл�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88e174400cd79eaf77e68e9f892f94f35134ef3b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9bd678cf14f6621adda76d667ecd5c0f8ddf016b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957712"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979507"
 ---
 # <a name="delete-applevpptokentroubleshootingevent"></a>Удаление Апплевпптокентраублешутинжевент
 

@@ -4,12 +4,13 @@ description: Этот класс содержит параметры соотв�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3b0a086bfc376815bfbe86b211de565d7912151
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9ea2efd43b6b999f5cdd2e153c641e5e50761e7a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992222"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971230"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>Тип ресурса androidWorkProfileCompliancePolicy
 

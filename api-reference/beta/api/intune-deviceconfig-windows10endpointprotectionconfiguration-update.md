@@ -4,12 +4,13 @@ description: Обновляет свойства объекта windows10Endpoin
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55428e62bdb320ffceadc705dc0bde8a05eaf05c
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 8f28c883a33271878cda8790e5358b8b22b50c5e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715321"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976889"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Обновление объекта windows10EndpointProtectionConfiguration
 

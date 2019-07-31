@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7bc21be693a5c68ecd5c6a1e4e44d53c9261acdb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d396ee84e4af6606cfde3e5fc17ef02c0a9594f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32505468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966582"
 ---
 # <a name="office365activationcounts-resource-type"></a>Тип ресурса office365ActivationCounts
 

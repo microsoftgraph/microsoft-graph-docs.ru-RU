@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Создание ресурса listItem в списке.
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3c93ecf2eed61cc6509631dd873ded2e442e5bee
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ebf41cf176956f90a40f75ac593714fcd6359e0b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880341"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993111"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 
@@ -64,7 +65,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

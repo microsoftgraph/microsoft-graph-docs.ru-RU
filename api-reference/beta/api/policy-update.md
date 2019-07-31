@@ -2,12 +2,15 @@
 title: Обновление политики
 description: Обновление свойств в существующей политике.
 localization_priority: Normal
-ms.openlocfilehash: 53b7af8966c932598328e8b78e76022ca6db9c8a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978863"
 ---
 # <a name="update-policy"></a>Обновление политики
 
@@ -41,8 +44,8 @@ PATCH /policies/{id}
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |RDLC|String|Версия преобразованного объекта [Policy](../resources/policy.md) .|
-|displayName|String|Настраиваемое имя политики.|
-|Исорганизатиондефаулт|Логический|Указывает, применяется ли эта политика по умолчанию.|
+|displayName|Строка|Настраиваемое имя политики.|
+|Исорганизатиондефаулт|Boolean|Указывает, применяется ли эта политика по умолчанию.|
 |type|String|Указывает тип политики. В настоящее время должен быть "Токенлифетимеполици"|
 
 ## <a name="response"></a>Ответ

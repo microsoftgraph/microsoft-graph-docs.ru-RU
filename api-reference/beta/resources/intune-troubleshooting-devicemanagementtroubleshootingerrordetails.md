@@ -4,12 +4,13 @@ description: Объект, содержащий подробные сведен�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4759665d96940d806e283cd5b59caed7fee63d32
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8a6b2f9b8f28f626d6855bb6115d83c263a9d4bd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967226"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 

@@ -4,12 +4,13 @@ description: Чтение свойств и связей между объект
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 384cdbf7032a18c44e9f217634f7da53cc8f08b9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: cbb6618d617ed78da570fa936d56da8fd840c196
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729987"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35980935"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Получение importedWindowsAutopilotDeviceIdentity
 

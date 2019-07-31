@@ -4,12 +4,13 @@ description: Создание нового объекта Граупполици
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a8e2a07f143075519ea2f3a2ac8ea3e610bf47c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c7c441d9949cd7f5ec17635bc90f0c8873778950
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963592"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35989261"
 ---
 # <a name="create-grouppolicypresentationvaluedecimal"></a>Создание ГраупполиципресентатионвалуедеЦимал
 

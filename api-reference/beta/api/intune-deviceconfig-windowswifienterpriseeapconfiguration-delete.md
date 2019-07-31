@@ -4,12 +4,13 @@ description: Удаляет объект Виндовсвифиентерпри�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bca4ec05407e87fcbc0c3cee869d266d1e3ef76
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8634d41ea6e4f34e28d4abf828763eae656a94b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961163"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986318"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>Удаление Виндовсвифиентерприсиапконфигуратион
 

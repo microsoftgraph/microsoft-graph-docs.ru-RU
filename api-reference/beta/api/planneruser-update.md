@@ -4,12 +4,13 @@ description: Обновление свойств объекта plannerUser. Э�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 77f76a8b2324fd287cc3f73d1aa78a99accb4ea2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 269741aff4f17a0855bda4681ae49799c03cd4f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337567"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992173"
 ---
 # <a name="update-planneruser"></a>Обновление plannerUser
 
@@ -34,7 +35,7 @@ PATCH /me/planner
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Bearer {Code}. Обязательный.|
+| Авторизация  | Bearer {код}. Обязательно.|
 | If-Match  | Последнее известное значение ETag для **plannerUser** , которое требуется обновить. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса

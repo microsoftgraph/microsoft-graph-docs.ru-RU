@@ -3,12 +3,14 @@ title: Создание и отправление уведомления
 description: 'Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: a5ed743e93a5cafcb7ee919acbbcee5f2734a5de
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063459"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992649"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

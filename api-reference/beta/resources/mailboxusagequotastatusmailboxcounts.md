@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 45e4754fef0dd3a2f7a669e3b3b96692d117c8f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1e8fafe9a3cdce4519cf5755337b016fa587cd06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457132"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966904"
 ---
 # <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>Тип ресурса Маилбоксусажекуотастатусмаилбокскаунтс
 
@@ -18,13 +19,13 @@ ms.locfileid: "32457132"
 | Свойство              | Тип   |
 | :-------------------- | :----- |
 | Репортрефрешдате     | Дата   |
-| подДельное значение            | Int64  |
+| поддельное значение            | Int64  |
 | Варнингиссуед         | Int64  |
 | Сендпрохибитед        | Int64  |
 | Сендрецеивепрохибитед | Int64  |
 | определен         | Int64  |
 | reportDate            | Дата   |
-| Репортпериод          | Строка |
+| Репортпериод          | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Имп
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd6f8785cca3ad7de3f8cd46a36dfdd5227f2e67
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c8cb59ed46728c49b69b33a19748b5603c4e927a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34981813"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986773"
 ---
 # <a name="list-importeddeviceidentityresults"></a>Список Импортеддевицеидентитиресултс
 

@@ -4,12 +4,13 @@ description: Подкласс Едукатионресаурце, предста
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9a851c66e137da1941df9b0268657c9e1b7392b3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 678591d4c9662f1ab3fc68f7d35a0ec525c6e74f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334249"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972746"
 ---
 # <a name="educationfileresource-resource-type"></a>Тип ресурса Едукатионфилересаурце
 

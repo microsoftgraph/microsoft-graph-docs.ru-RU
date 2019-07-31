@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e20c9f31c5174dfc60d8d589bae1a5f51de8972a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 2fd109d2f7217ca3716f05eabf6ec064f5c12632
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993650"
 ---
 # <a name="list-devicecategories"></a>Перечисление объектов deviceCategory
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceCategories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

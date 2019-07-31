@@ -2,12 +2,15 @@
 title: Тип ресурса extension
 description: Абстрактный тип для поддержки открытого типа openTypeExtension в OData 4-й версии.
 localization_priority: Normal
-ms.openlocfilehash: 33238d0addc1b3cc7797fc2a600b7b6195a8d9ea
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 48b48eb4e87be79c65636320f5d93d4e5c6c800b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333947"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973587"
 ---
 # <a name="extension-resource-type"></a>Тип ресурса extension
 

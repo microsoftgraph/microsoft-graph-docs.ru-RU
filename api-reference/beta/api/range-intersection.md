@@ -4,12 +4,13 @@ description: Возвращает объект диапазона, предст�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 25c45abdb526a31700fed68007b123e30c41377a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e107154f6f5737065b62928b212491182fee5021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978422"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 
@@ -39,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

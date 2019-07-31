@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 84958874af09b31aafed694c1a62d080a5c798ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 64c9468d79a93b6f82fff0f04206a0fb6e95e4fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506673"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972224"
 ---
 # <a name="emailactivitysummary-resource-type"></a>Тип ресурса Емаилактивитисуммари
 

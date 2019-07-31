@@ -4,12 +4,13 @@ description: Получите сведения об использовании �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: fde6fd233ef61cfce718898418c9a2b756c253df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5e99b1bf8a3a526e39b3bbac7c5dfad45a5b4d52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35873812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988351"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 

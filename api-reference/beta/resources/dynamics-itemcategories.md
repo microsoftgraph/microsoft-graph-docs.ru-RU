@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: e18319683f6dbceddccc9cf83e48cd3ef89f895d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 18017c580637bb53a70b5f7a331ff7be1dc7a07c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972924"
 ---
 # <a name="itemcategories-resource-type"></a>Тип ресурса Итемкатегориес
 Представляет категорию для ряда элементов в Dynamics 365 Business Central.
@@ -23,12 +24,12 @@ ms.locfileid: "32543058"
 |[Получение Итемкатегориес](../api/dynamics-itemcategories-get.md)      |Итемкатегориес|Получение категории элемента.   |
 |[POST Итемкатегориес](../api/dynamics-create-itemcategories.md)  |Итемкатегориес|Создайте категорию элемента.|
 |[Исправление Итемкатегориес](../api/dynamics-itemcategories-update.md) |Итемкатегориес|Обновление категории элемента.|
-|[Удаление Итемкатегориес](../api/dynamics-itemcategories-delete.md)|Нет          |Удаление категории элемента.|
+|[Удаление Итемкатегориес](../api/dynamics-itemcategories-delete.md)|none          |Удаление категории элемента.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип   |Описание                                     |
 |:-------------------|:-------|:-----------------------------------------------|
-|id                  |Глобальный уникальный идентификатор (GUID)    |Уникальный идентификатор Итемкатегори. Не редактируемые.|
+|id                  |GUID    |Уникальный идентификатор Итемкатегори. Не редактируемые.|
 |code                |string  |Код Итемкатегори.                          |
 |displayName         |string  |Отображаемое имя Итемкатегориес.                |
 |lastModifiedDateTime|отличным|Дата и время последнего изменения Итемкатегори. Только для чтения.|  

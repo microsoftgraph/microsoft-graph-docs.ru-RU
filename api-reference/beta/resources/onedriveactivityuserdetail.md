@@ -3,12 +3,14 @@ title: Тип ресурса Онедривеактивитюсердетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 29c9c8b723d4f87fa9858e26906878c973b37b09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: c61db94678ed50e6cc93f123a506ce262616a1ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966484"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>Тип ресурса Онедривеактивитюсердетаил
 
@@ -25,7 +27,7 @@ ms.locfileid: "32582250"
 | Синцедфилекаунт           | Int64             |
 | Шарединтерналлифилекаунт | Int64             |
 | Шаредекстерналлифилекаунт | Int64             |
-| Ассигнедпродуктс          | Коллекция String |
+| Ассигнедпродуктс          | Коллекция строк |
 | Репортпериод              | String            |
 
 ## <a name="json-representation"></a>Представление JSON

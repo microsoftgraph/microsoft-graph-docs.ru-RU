@@ -4,12 +4,13 @@ description: База профиля сертификата Android для ра�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80efa9fc3900a8abfd0fa1b10cc57cca6fc00530
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ea3ab811dd0c1210d163be18e3c11d5be83eac98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34988225"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971426"
 ---
 # <a name="androidforworkcertificateprofilebase-resource-type"></a>Тип ресурса Андроидфорворкцертификатепрофилебасе
 

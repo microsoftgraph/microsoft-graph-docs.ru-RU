@@ -4,12 +4,13 @@ description: Метаданные для отчета о прекращении 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 598b7941370ed729b5f3010bebe6feed0422ed80
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 618f5985a1d93a9cc45dc4ef93fe475853b7e959
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898243"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993552"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>Функция Манажеддевицеенроллментабандонментдетаилс
 
@@ -43,7 +44,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

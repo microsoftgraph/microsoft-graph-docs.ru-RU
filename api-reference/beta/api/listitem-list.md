@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Получение коллекции ресурсов item из объекта list.
 ms.date: 09/11/2017
 title: Получение элементов из списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b5cdb31aa3f12fa6c5fee867f0a7b5ea62f16fd2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd188f69ea39acf98117231ad6c153852cb4f5b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880208"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993055"
 ---
 # <a name="enumerate-items-in-a-list"></a>Перечисление элементов списка
 
@@ -54,7 +55,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

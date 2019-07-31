@@ -2,12 +2,15 @@
 title: Получение Локатедрискевент
 description: Получение свойств и связей объекта локатедрискевент.
 localization_priority: Normal
-ms.openlocfilehash: 9834bd3f4619e5fa55692e354701106778589be5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a90ecf29119a74e3d102e61ca1f2987683d5c54d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338714"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35984097"
 ---
 # <a name="get-locatedriskevent"></a>Получение Локатедрискевент
 
@@ -35,7 +38,7 @@ GET /locatedRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

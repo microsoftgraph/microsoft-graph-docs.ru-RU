@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71a656365246fee168d0cc1f8f71dc4d913c400c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 9ceaf4db178eb6ca126038d40bd442021da3a81c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959076"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986122"
 ---
 # <a name="list-devicemanagementscripts"></a>Список deviceManagementScripts
 
