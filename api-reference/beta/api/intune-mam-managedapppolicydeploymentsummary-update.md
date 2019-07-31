@@ -4,31 +4,32 @@ description: Обновление свойств объекта managedAppPolicy
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba1199f5914968d661b4d2dbf68323fc5e28f5cd
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 14f78b9704e61d766062579a540993bd10a61854
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35994630"
 ---
-# <a name="update-managedapppolicydeploymentsummary"></a><span data-ttu-id="73969-103">Обновление объекта managedAppPolicyDeploymentSummary</span><span class="sxs-lookup"><span data-stu-id="73969-103">Update managedAppPolicyDeploymentSummary</span></span>
+# <a name="update-managedapppolicydeploymentsummary"></a><span data-ttu-id="fa000-103">Обновление объекта managedAppPolicyDeploymentSummary</span><span class="sxs-lookup"><span data-stu-id="fa000-103">Update managedAppPolicyDeploymentSummary</span></span>
 
-> <span data-ttu-id="73969-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="73969-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="fa000-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa000-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="73969-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="73969-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fa000-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fa000-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="73969-106">Обновление свойств объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span><span class="sxs-lookup"><span data-stu-id="73969-106">Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
+<span data-ttu-id="fa000-106">Обновление свойств объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span><span class="sxs-lookup"><span data-stu-id="fa000-106">Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="73969-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="73969-107">Prerequisites</span></span>
-<span data-ttu-id="73969-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="73969-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fa000-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="fa000-107">Prerequisites</span></span>
+<span data-ttu-id="fa000-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa000-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="73969-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="73969-110">Permission type</span></span>|<span data-ttu-id="73969-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="73969-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fa000-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fa000-110">Permission type</span></span>|<span data-ttu-id="fa000-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="fa000-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="73969-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="73969-112">Delegated (work or school account)</span></span>|<span data-ttu-id="73969-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="73969-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="73969-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="73969-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="73969-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="73969-115">Not supported.</span></span>|
-|<span data-ttu-id="73969-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="73969-116">Application</span></span>|<span data-ttu-id="73969-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="73969-117">Not supported.</span></span>|
+|<span data-ttu-id="fa000-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fa000-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fa000-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa000-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="fa000-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fa000-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fa000-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa000-115">Not supported.</span></span>|
+|<span data-ttu-id="fa000-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fa000-116">Application</span></span>|<span data-ttu-id="fa000-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fa000-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="73969-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="73969-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa000-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fa000-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +41,35 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/deploymentSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="73969-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="73969-119">Request headers</span></span>
-|<span data-ttu-id="73969-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="73969-120">Header</span></span>|<span data-ttu-id="73969-121">Значение</span><span class="sxs-lookup"><span data-stu-id="73969-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fa000-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fa000-119">Request headers</span></span>
+|<span data-ttu-id="fa000-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fa000-120">Header</span></span>|<span data-ttu-id="fa000-121">Значение</span><span class="sxs-lookup"><span data-stu-id="fa000-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="73969-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="73969-122">Authorization</span></span>|<span data-ttu-id="73969-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="73969-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="73969-124">Accept</span><span class="sxs-lookup"><span data-stu-id="73969-124">Accept</span></span>|<span data-ttu-id="73969-125">application/json</span><span class="sxs-lookup"><span data-stu-id="73969-125">application/json</span></span>|
+|<span data-ttu-id="fa000-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fa000-122">Authorization</span></span>|<span data-ttu-id="fa000-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fa000-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fa000-124">Accept</span><span class="sxs-lookup"><span data-stu-id="fa000-124">Accept</span></span>|<span data-ttu-id="fa000-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fa000-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="73969-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="73969-126">Request body</span></span>
-<span data-ttu-id="73969-127">В теле запроса добавьте представление объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="73969-127">In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fa000-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fa000-126">Request body</span></span>
+<span data-ttu-id="fa000-127">В теле запроса добавьте представление объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fa000-127">In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.</span></span>
 
-<span data-ttu-id="73969-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span><span class="sxs-lookup"><span data-stu-id="73969-128">The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span></span>
+<span data-ttu-id="fa000-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span><span class="sxs-lookup"><span data-stu-id="fa000-128">The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).</span></span>
 
-|<span data-ttu-id="73969-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="73969-129">Property</span></span>|<span data-ttu-id="73969-130">Тип</span><span class="sxs-lookup"><span data-stu-id="73969-130">Type</span></span>|<span data-ttu-id="73969-131">Описание</span><span class="sxs-lookup"><span data-stu-id="73969-131">Description</span></span>|
+|<span data-ttu-id="fa000-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="fa000-129">Property</span></span>|<span data-ttu-id="fa000-130">Тип</span><span class="sxs-lookup"><span data-stu-id="fa000-130">Type</span></span>|<span data-ttu-id="fa000-131">Описание</span><span class="sxs-lookup"><span data-stu-id="fa000-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="73969-132">displayName</span><span class="sxs-lookup"><span data-stu-id="73969-132">displayName</span></span>|<span data-ttu-id="73969-133">Строка</span><span class="sxs-lookup"><span data-stu-id="73969-133">String</span></span>|<span data-ttu-id="73969-134">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="73969-134">Not yet documented</span></span>|
-|<span data-ttu-id="73969-135">configurationDeployedUserCount</span><span class="sxs-lookup"><span data-stu-id="73969-135">configurationDeployedUserCount</span></span>|<span data-ttu-id="73969-136">Int32</span><span class="sxs-lookup"><span data-stu-id="73969-136">Int32</span></span>|<span data-ttu-id="73969-137">Пока нет описания</span><span class="sxs-lookup"><span data-stu-id="73969-137">Not yet documented</span></span>|
-|<span data-ttu-id="73969-138">lastRefreshTime</span><span class="sxs-lookup"><span data-stu-id="73969-138">lastRefreshTime</span></span>|<span data-ttu-id="73969-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="73969-139">DateTimeOffset</span></span>|<span data-ttu-id="73969-140">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="73969-140">Not yet documented</span></span>|
-|<span data-ttu-id="73969-141">configurationDeploymentSummaryPerApp</span><span class="sxs-lookup"><span data-stu-id="73969-141">configurationDeploymentSummaryPerApp</span></span>|<span data-ttu-id="73969-142">Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)</span><span class="sxs-lookup"><span data-stu-id="73969-142">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection</span></span>|<span data-ttu-id="73969-143">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="73969-143">Not yet documented</span></span>|
-|<span data-ttu-id="73969-144">id</span><span class="sxs-lookup"><span data-stu-id="73969-144">id</span></span>|<span data-ttu-id="73969-145">String</span><span class="sxs-lookup"><span data-stu-id="73969-145">String</span></span>|<span data-ttu-id="73969-146">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="73969-146">Key of the entity.</span></span>|
-|<span data-ttu-id="73969-147">version</span><span class="sxs-lookup"><span data-stu-id="73969-147">version</span></span>|<span data-ttu-id="73969-148">String</span><span class="sxs-lookup"><span data-stu-id="73969-148">String</span></span>|<span data-ttu-id="73969-149">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="73969-149">Version of the entity.</span></span>|
+|<span data-ttu-id="fa000-132">displayName</span><span class="sxs-lookup"><span data-stu-id="fa000-132">displayName</span></span>|<span data-ttu-id="fa000-133">Строка</span><span class="sxs-lookup"><span data-stu-id="fa000-133">String</span></span>|<span data-ttu-id="fa000-134">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="fa000-134">Not yet documented</span></span>|
+|<span data-ttu-id="fa000-135">configurationDeployedUserCount</span><span class="sxs-lookup"><span data-stu-id="fa000-135">configurationDeployedUserCount</span></span>|<span data-ttu-id="fa000-136">Int32</span><span class="sxs-lookup"><span data-stu-id="fa000-136">Int32</span></span>|<span data-ttu-id="fa000-137">Пока нет описания</span><span class="sxs-lookup"><span data-stu-id="fa000-137">Not yet documented</span></span>|
+|<span data-ttu-id="fa000-138">lastRefreshTime</span><span class="sxs-lookup"><span data-stu-id="fa000-138">lastRefreshTime</span></span>|<span data-ttu-id="fa000-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa000-139">DateTimeOffset</span></span>|<span data-ttu-id="fa000-140">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="fa000-140">Not yet documented</span></span>|
+|<span data-ttu-id="fa000-141">configurationDeploymentSummaryPerApp</span><span class="sxs-lookup"><span data-stu-id="fa000-141">configurationDeploymentSummaryPerApp</span></span>|<span data-ttu-id="fa000-142">Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)</span><span class="sxs-lookup"><span data-stu-id="fa000-142">[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection</span></span>|<span data-ttu-id="fa000-143">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="fa000-143">Not yet documented</span></span>|
+|<span data-ttu-id="fa000-144">id</span><span class="sxs-lookup"><span data-stu-id="fa000-144">id</span></span>|<span data-ttu-id="fa000-145">String</span><span class="sxs-lookup"><span data-stu-id="fa000-145">String</span></span>|<span data-ttu-id="fa000-146">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="fa000-146">Key of the entity.</span></span>|
+|<span data-ttu-id="fa000-147">version</span><span class="sxs-lookup"><span data-stu-id="fa000-147">version</span></span>|<span data-ttu-id="fa000-148">String</span><span class="sxs-lookup"><span data-stu-id="fa000-148">String</span></span>|<span data-ttu-id="fa000-149">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="fa000-149">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="73969-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="73969-150">Response</span></span>
-<span data-ttu-id="73969-151">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="73969-151">If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fa000-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="fa000-150">Response</span></span>
+<span data-ttu-id="fa000-151">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="fa000-151">If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="73969-152">Пример</span><span class="sxs-lookup"><span data-stu-id="73969-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa000-152">Пример</span><span class="sxs-lookup"><span data-stu-id="fa000-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="73969-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="73969-153">Request</span></span>
-<span data-ttu-id="73969-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="73969-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="fa000-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="fa000-153">Request</span></span>
+<span data-ttu-id="fa000-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fa000-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
@@ -93,8 +94,8 @@ Content-length: 588
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="73969-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="73969-155">Response</span></span>
-<span data-ttu-id="73969-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="73969-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fa000-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="fa000-155">Response</span></span>
+<span data-ttu-id="fa000-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fa000-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
