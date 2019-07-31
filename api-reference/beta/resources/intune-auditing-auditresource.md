@@ -4,34 +4,35 @@ description: Класс, содержащий свойства ресурса а
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acc30182efc11822043b48e495c462a57c3863f3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: c02af676c8e7a071aeb7dd53028fcd9091c1d211
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991704"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971622"
 ---
-# <a name="auditresource-resource-type"></a><span data-ttu-id="dd26a-103">Тип ресурса auditResource</span><span class="sxs-lookup"><span data-stu-id="dd26a-103">auditResource resource type</span></span>
+# <a name="auditresource-resource-type"></a><span data-ttu-id="f0632-103">Тип ресурса auditResource</span><span class="sxs-lookup"><span data-stu-id="f0632-103">auditResource resource type</span></span>
 
-> <span data-ttu-id="dd26a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dd26a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f0632-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0632-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dd26a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dd26a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f0632-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f0632-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dd26a-106">Класс, содержащий свойства ресурса аудита.</span><span class="sxs-lookup"><span data-stu-id="dd26a-106">A class containing the properties for Audit Resource.</span></span>
+<span data-ttu-id="f0632-106">Класс, содержащий свойства ресурса аудита.</span><span class="sxs-lookup"><span data-stu-id="f0632-106">A class containing the properties for Audit Resource.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dd26a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="dd26a-107">Properties</span></span>
-|<span data-ttu-id="dd26a-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="dd26a-108">Property</span></span>|<span data-ttu-id="dd26a-109">Тип</span><span class="sxs-lookup"><span data-stu-id="dd26a-109">Type</span></span>|<span data-ttu-id="dd26a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="dd26a-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f0632-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="f0632-107">Properties</span></span>
+|<span data-ttu-id="f0632-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="f0632-108">Property</span></span>|<span data-ttu-id="f0632-109">Тип</span><span class="sxs-lookup"><span data-stu-id="f0632-109">Type</span></span>|<span data-ttu-id="f0632-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f0632-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dd26a-111">displayName</span><span class="sxs-lookup"><span data-stu-id="dd26a-111">displayName</span></span>|<span data-ttu-id="dd26a-112">Строка</span><span class="sxs-lookup"><span data-stu-id="dd26a-112">String</span></span>|<span data-ttu-id="dd26a-113">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="dd26a-113">Display name.</span></span>|
-|<span data-ttu-id="dd26a-114">modifiedProperties</span><span class="sxs-lookup"><span data-stu-id="dd26a-114">modifiedProperties</span></span>|<span data-ttu-id="dd26a-115">Коллекция [auditProperty](../resources/intune-auditing-auditproperty.md)</span><span class="sxs-lookup"><span data-stu-id="dd26a-115">[auditProperty](../resources/intune-auditing-auditproperty.md) collection</span></span>|<span data-ttu-id="dd26a-116">Список измененных свойств.</span><span class="sxs-lookup"><span data-stu-id="dd26a-116">List of modified properties.</span></span>|
-|<span data-ttu-id="dd26a-117">type</span><span class="sxs-lookup"><span data-stu-id="dd26a-117">type</span></span>|<span data-ttu-id="dd26a-118">String</span><span class="sxs-lookup"><span data-stu-id="dd26a-118">String</span></span>|<span data-ttu-id="dd26a-119">Тип ресурса аудита.</span><span class="sxs-lookup"><span data-stu-id="dd26a-119">Audit resource's type.</span></span>|
-|<span data-ttu-id="dd26a-120">resourceId</span><span class="sxs-lookup"><span data-stu-id="dd26a-120">resourceId</span></span>|<span data-ttu-id="dd26a-121">String</span><span class="sxs-lookup"><span data-stu-id="dd26a-121">String</span></span>|<span data-ttu-id="dd26a-122">ИД ресурса аудита.</span><span class="sxs-lookup"><span data-stu-id="dd26a-122">Audit resource's Id.</span></span>|
+|<span data-ttu-id="f0632-111">displayName</span><span class="sxs-lookup"><span data-stu-id="f0632-111">displayName</span></span>|<span data-ttu-id="f0632-112">Строка</span><span class="sxs-lookup"><span data-stu-id="f0632-112">String</span></span>|<span data-ttu-id="f0632-113">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="f0632-113">Display name.</span></span>|
+|<span data-ttu-id="f0632-114">modifiedProperties</span><span class="sxs-lookup"><span data-stu-id="f0632-114">modifiedProperties</span></span>|<span data-ttu-id="f0632-115">Коллекция [auditProperty](../resources/intune-auditing-auditproperty.md)</span><span class="sxs-lookup"><span data-stu-id="f0632-115">[auditProperty](../resources/intune-auditing-auditproperty.md) collection</span></span>|<span data-ttu-id="f0632-116">Список измененных свойств.</span><span class="sxs-lookup"><span data-stu-id="f0632-116">List of modified properties.</span></span>|
+|<span data-ttu-id="f0632-117">type</span><span class="sxs-lookup"><span data-stu-id="f0632-117">type</span></span>|<span data-ttu-id="f0632-118">String</span><span class="sxs-lookup"><span data-stu-id="f0632-118">String</span></span>|<span data-ttu-id="f0632-119">Тип ресурса аудита.</span><span class="sxs-lookup"><span data-stu-id="f0632-119">Audit resource's type.</span></span>|
+|<span data-ttu-id="f0632-120">resourceId</span><span class="sxs-lookup"><span data-stu-id="f0632-120">resourceId</span></span>|<span data-ttu-id="f0632-121">String</span><span class="sxs-lookup"><span data-stu-id="f0632-121">String</span></span>|<span data-ttu-id="f0632-122">ИД ресурса аудита.</span><span class="sxs-lookup"><span data-stu-id="f0632-122">Audit resource's Id.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="dd26a-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="dd26a-123">Relationships</span></span>
-<span data-ttu-id="dd26a-124">Нет</span><span class="sxs-lookup"><span data-stu-id="dd26a-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f0632-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="f0632-123">Relationships</span></span>
+<span data-ttu-id="f0632-124">Нет</span><span class="sxs-lookup"><span data-stu-id="f0632-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dd26a-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dd26a-125">JSON Representation</span></span>
-<span data-ttu-id="dd26a-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dd26a-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0632-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f0632-125">JSON Representation</span></span>
+<span data-ttu-id="f0632-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f0632-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditResource"

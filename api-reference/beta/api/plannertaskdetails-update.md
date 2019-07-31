@@ -4,59 +4,60 @@ description: Обновление свойств объекта **plannertaskdet
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a814dd289269c951209f540961929905384b4344
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: a7a0e058d540c3623d6d3d63b11bbfad46c3ab4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35448363"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979003"
 ---
-# <a name="update-plannertaskdetails"></a><span data-ttu-id="f0705-103">Обновление объекта plannertaskdetails</span><span class="sxs-lookup"><span data-stu-id="f0705-103">Update plannertaskdetails</span></span>
+# <a name="update-plannertaskdetails"></a><span data-ttu-id="bf62e-103">Обновление объекта plannertaskdetails</span><span class="sxs-lookup"><span data-stu-id="bf62e-103">Update plannertaskdetails</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f0705-104">Обновление свойств объекта **plannertaskdetails**.</span><span class="sxs-lookup"><span data-stu-id="f0705-104">Update the properties of **plannertaskdetails** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f0705-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f0705-105">Permissions</span></span>
-<span data-ttu-id="f0705-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0705-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bf62e-104">Обновление свойств объекта **plannertaskdetails**.</span><span class="sxs-lookup"><span data-stu-id="bf62e-104">Update the properties of **plannertaskdetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf62e-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bf62e-105">Permissions</span></span>
+<span data-ttu-id="bf62e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bf62e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f0705-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f0705-108">Permission type</span></span>      | <span data-ttu-id="f0705-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f0705-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bf62e-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bf62e-108">Permission type</span></span>      | <span data-ttu-id="bf62e-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bf62e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f0705-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f0705-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f0705-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f0705-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f0705-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f0705-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0705-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0705-113">Not supported.</span></span>    |
-|<span data-ttu-id="f0705-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f0705-114">Application</span></span> | <span data-ttu-id="f0705-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0705-115">Not supported.</span></span> |
+|<span data-ttu-id="bf62e-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bf62e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bf62e-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf62e-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bf62e-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bf62e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf62e-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bf62e-113">Not supported.</span></span>    |
+|<span data-ttu-id="bf62e-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bf62e-114">Application</span></span> | <span data-ttu-id="bf62e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bf62e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f0705-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f0705-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf62e-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bf62e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/details
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="f0705-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f0705-117">Optional request headers</span></span>
-| <span data-ttu-id="f0705-118">Имя</span><span class="sxs-lookup"><span data-stu-id="f0705-118">Name</span></span>       | <span data-ttu-id="f0705-119">Описание</span><span class="sxs-lookup"><span data-stu-id="f0705-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="bf62e-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bf62e-117">Optional request headers</span></span>
+| <span data-ttu-id="bf62e-118">Имя</span><span class="sxs-lookup"><span data-stu-id="bf62e-118">Name</span></span>       | <span data-ttu-id="bf62e-119">Описание</span><span class="sxs-lookup"><span data-stu-id="bf62e-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="f0705-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f0705-120">Authorization</span></span>  | <span data-ttu-id="f0705-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f0705-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f0705-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="f0705-123">If-Match</span></span>  | <span data-ttu-id="f0705-p103">Последнее известное значение ETag обновляемыого объекта **plannerTaskDetails**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f0705-p103">Last known ETag value for the **plannerTaskDetails** to be updated. Required.</span></span>|
+| <span data-ttu-id="bf62e-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bf62e-120">Authorization</span></span>  | <span data-ttu-id="bf62e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bf62e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bf62e-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="bf62e-123">If-Match</span></span>  | <span data-ttu-id="bf62e-p103">Последнее известное значение ETag обновляемыого объекта **plannerTaskDetails**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bf62e-p103">Last known ETag value for the **plannerTaskDetails** to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f0705-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f0705-126">Request body</span></span>
-<span data-ttu-id="f0705-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="f0705-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bf62e-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bf62e-126">Request body</span></span>
+<span data-ttu-id="bf62e-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="bf62e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f0705-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="f0705-130">Property</span></span>     | <span data-ttu-id="f0705-131">Тип</span><span class="sxs-lookup"><span data-stu-id="f0705-131">Type</span></span>   |<span data-ttu-id="f0705-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f0705-132">Description</span></span>|
+| <span data-ttu-id="bf62e-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="bf62e-130">Property</span></span>     | <span data-ttu-id="bf62e-131">Тип</span><span class="sxs-lookup"><span data-stu-id="bf62e-131">Type</span></span>   |<span data-ttu-id="bf62e-132">Описание</span><span class="sxs-lookup"><span data-stu-id="bf62e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f0705-133">checklist</span><span class="sxs-lookup"><span data-stu-id="f0705-133">checklist</span></span>|[<span data-ttu-id="f0705-134">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="f0705-134">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="f0705-135">Коллекция элементов контрольного списка задачи.</span><span class="sxs-lookup"><span data-stu-id="f0705-135">The collection of checklist items on the task.</span></span>|
-|<span data-ttu-id="f0705-136">description</span><span class="sxs-lookup"><span data-stu-id="f0705-136">description</span></span>|<span data-ttu-id="f0705-137">Строка</span><span class="sxs-lookup"><span data-stu-id="f0705-137">String</span></span>|<span data-ttu-id="f0705-138">Описание задачи.</span><span class="sxs-lookup"><span data-stu-id="f0705-138">Description of the task</span></span>|
-|<span data-ttu-id="f0705-139">previewType</span><span class="sxs-lookup"><span data-stu-id="f0705-139">previewType</span></span>|<span data-ttu-id="f0705-140">string</span><span class="sxs-lookup"><span data-stu-id="f0705-140">string</span></span>|<span data-ttu-id="f0705-p105">Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.</span><span class="sxs-lookup"><span data-stu-id="f0705-p105">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
-|<span data-ttu-id="f0705-144">references</span><span class="sxs-lookup"><span data-stu-id="f0705-144">references</span></span>|[<span data-ttu-id="f0705-145">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="f0705-145">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="f0705-146">Коллекция ссылок на задачу.</span><span class="sxs-lookup"><span data-stu-id="f0705-146">The collection of references on the task.</span></span>|
+|<span data-ttu-id="bf62e-133">checklist</span><span class="sxs-lookup"><span data-stu-id="bf62e-133">checklist</span></span>|[<span data-ttu-id="bf62e-134">plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="bf62e-134">plannerChecklistItems</span></span>](../resources/plannerchecklistitems.md)|<span data-ttu-id="bf62e-135">Коллекция элементов контрольного списка задачи.</span><span class="sxs-lookup"><span data-stu-id="bf62e-135">The collection of checklist items on the task.</span></span>|
+|<span data-ttu-id="bf62e-136">description</span><span class="sxs-lookup"><span data-stu-id="bf62e-136">description</span></span>|<span data-ttu-id="bf62e-137">Строка</span><span class="sxs-lookup"><span data-stu-id="bf62e-137">String</span></span>|<span data-ttu-id="bf62e-138">Описание задачи.</span><span class="sxs-lookup"><span data-stu-id="bf62e-138">Description of the task</span></span>|
+|<span data-ttu-id="bf62e-139">previewType</span><span class="sxs-lookup"><span data-stu-id="bf62e-139">previewType</span></span>|<span data-ttu-id="bf62e-140">string</span><span class="sxs-lookup"><span data-stu-id="bf62e-140">string</span></span>|<span data-ttu-id="bf62e-p105">Устанавливает тип эскиза задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если установлено значение `automatic`, отображаемый эскиз выбирается приложением, просматривающим задачу.</span><span class="sxs-lookup"><span data-stu-id="bf62e-p105">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|
+|<span data-ttu-id="bf62e-144">references</span><span class="sxs-lookup"><span data-stu-id="bf62e-144">references</span></span>|[<span data-ttu-id="bf62e-145">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="bf62e-145">plannerExternalReferences</span></span>](../resources/plannerexternalreferences.md)|<span data-ttu-id="bf62e-146">Коллекция ссылок на задачу.</span><span class="sxs-lookup"><span data-stu-id="bf62e-146">The collection of references on the task.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f0705-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="f0705-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bf62e-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="bf62e-147">Response</span></span>
 
-<span data-ttu-id="f0705-148">В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="f0705-148">If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
+<span data-ttu-id="bf62e-148">В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerTaskDetails](../resources/plannertaskdetails.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="bf62e-148">If successful, this method returns a `200 OK` response code and updated [plannerTaskDetails](../resources/plannertaskdetails.md) object in the response body.</span></span>
 
-<span data-ttu-id="f0705-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="f0705-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="bf62e-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="bf62e-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="f0705-152">Пример</span><span class="sxs-lookup"><span data-stu-id="f0705-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f0705-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="f0705-153">Request</span></span>
-<span data-ttu-id="f0705-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f0705-154">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bf62e-152">Пример</span><span class="sxs-lookup"><span data-stu-id="bf62e-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bf62e-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="bf62e-153">Request</span></span>
+<span data-ttu-id="bf62e-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bf62e-154">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f0705-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0705-155">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bf62e-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="bf62e-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertaskdetails"
@@ -96,14 +97,14 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f0705-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="f0705-156">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bf62e-156">Javascript</span><span class="sxs-lookup"><span data-stu-id="bf62e-156">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f0705-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0705-157">Response</span></span>
-<span data-ttu-id="f0705-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f0705-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bf62e-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="bf62e-157">Response</span></span>
+<span data-ttu-id="bf62e-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bf62e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

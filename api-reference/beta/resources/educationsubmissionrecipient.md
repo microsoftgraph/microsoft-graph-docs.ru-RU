@@ -4,22 +4,23 @@ description: 'Абстрактный класс, представляющий р
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f46e0a7208779e6f3d65b6e4949e6935c44250b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a95060696d581837976ed08e66f85bb53ff9ca10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334116"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972497"
 ---
-# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="93275-105">Тип ресурса ЕдукатионсубмиссионреЦипиент</span><span class="sxs-lookup"><span data-stu-id="93275-105">educationSubmissionRecipient resource type</span></span>
+# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="58a57-105">Тип ресурса ЕдукатионсубмиссионреЦипиент</span><span class="sxs-lookup"><span data-stu-id="58a57-105">educationSubmissionRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="93275-106">Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку.</span><span class="sxs-lookup"><span data-stu-id="93275-106">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="93275-107">Возможные значения: "люди" или "группы".</span><span class="sxs-lookup"><span data-stu-id="93275-107">Possible values include individuals or groups.</span></span> <span data-ttu-id="93275-108">Используется в свойстве **отправителя. Recipient** .</span><span class="sxs-lookup"><span data-stu-id="93275-108">This is used within the **submission.recipient** property.</span></span>
+<span data-ttu-id="58a57-106">Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку.</span><span class="sxs-lookup"><span data-stu-id="58a57-106">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="58a57-107">Возможные значения: "люди" или "группы".</span><span class="sxs-lookup"><span data-stu-id="58a57-107">Possible values include individuals or groups.</span></span> <span data-ttu-id="58a57-108">Используется в свойстве **отправителя. Recipient** .</span><span class="sxs-lookup"><span data-stu-id="58a57-108">This is used within the **submission.recipient** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="93275-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="93275-109">Properties</span></span>
-<span data-ttu-id="93275-110">Нет.</span><span class="sxs-lookup"><span data-stu-id="93275-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="58a57-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="58a57-109">Properties</span></span>
+<span data-ttu-id="58a57-110">Нет.</span><span class="sxs-lookup"><span data-stu-id="58a57-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",
