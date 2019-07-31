@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс photo предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе driveItem.
 ms.date: 09/10/2017
 title: Фотография
 localization_priority: Normal
-ms.openlocfilehash: f55236489d71c88f8d000b3462e64e82b8c08e56
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 6713e66b5ca14cfa6605b9e67d4bec152a321f33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344917"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009225"
 ---
-# <a name="photo-resource-type"></a><span data-ttu-id="b4176-102">Тип ресурса Photo</span><span class="sxs-lookup"><span data-stu-id="b4176-102">Photo resource type</span></span>
+# <a name="photo-resource-type"></a><span data-ttu-id="cb2aa-103">Тип ресурса Photo</span><span class="sxs-lookup"><span data-stu-id="cb2aa-103">Photo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b4176-103">Ресурс **photo** предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="b4176-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
+<span data-ttu-id="cb2aa-104">Ресурс **photo** предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="cb2aa-104">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b4176-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b4176-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cb2aa-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cb2aa-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,23 +39,23 @@ ms.locfileid: "33344917"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b4176-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="b4176-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="cb2aa-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="cb2aa-106">Properties</span></span>
 
-| <span data-ttu-id="b4176-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="b4176-106">Property</span></span>                | <span data-ttu-id="b4176-107">Тип</span><span class="sxs-lookup"><span data-stu-id="b4176-107">Type</span></span>           | <span data-ttu-id="b4176-108">Описание</span><span class="sxs-lookup"><span data-stu-id="b4176-108">Description</span></span>
+| <span data-ttu-id="cb2aa-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="cb2aa-107">Property</span></span>                | <span data-ttu-id="cb2aa-108">Тип</span><span class="sxs-lookup"><span data-stu-id="cb2aa-108">Type</span></span>           | <span data-ttu-id="cb2aa-109">Описание</span><span class="sxs-lookup"><span data-stu-id="cb2aa-109">Description</span></span>
 |:------------------------|:---------------|:----------------------------------
-| <span data-ttu-id="b4176-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="b4176-109">**takenDateTime**</span></span>       | <span data-ttu-id="b4176-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b4176-110">DateTimeOffset</span></span> | <span data-ttu-id="b4176-p101">Представляет дату и время съемки. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p101">Represents the date and time the photo was taken. Read-only.</span></span>
-| <span data-ttu-id="b4176-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="b4176-113">**cameraMake**</span></span>          | <span data-ttu-id="b4176-114">Строка</span><span class="sxs-lookup"><span data-stu-id="b4176-114">String</span></span>         | <span data-ttu-id="b4176-p102">Изготовитель камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p102">Camera manufacturer. Read-only.</span></span>
-| <span data-ttu-id="b4176-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="b4176-117">**cameraModel**</span></span>         | <span data-ttu-id="b4176-118">String</span><span class="sxs-lookup"><span data-stu-id="b4176-118">String</span></span>         | <span data-ttu-id="b4176-p103">Модель камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p103">Camera model. Read-only.</span></span>
-| <span data-ttu-id="b4176-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="b4176-121">**fNumber**</span></span>             | <span data-ttu-id="b4176-122">Двойное</span><span class="sxs-lookup"><span data-stu-id="b4176-122">Double</span></span>         | <span data-ttu-id="b4176-p104">Значение диафрагмы камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p104">The F-stop value from the camera. Read-only.</span></span>
-| <span data-ttu-id="b4176-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="b4176-125">**exposureDenominator**</span></span> | <span data-ttu-id="b4176-126">Двойное</span><span class="sxs-lookup"><span data-stu-id="b4176-126">Double</span></span>         | <span data-ttu-id="b4176-p105">Знаменатель дробного значения выдержки камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="b4176-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="b4176-129">**exposureNumerator**</span></span>   | <span data-ttu-id="b4176-130">Двойное</span><span class="sxs-lookup"><span data-stu-id="b4176-130">Double</span></span>         | <span data-ttu-id="b4176-p106">Числитель дробного значения выдержки камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="b4176-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="b4176-133">**focalLength**</span></span>         | <span data-ttu-id="b4176-134">Double</span><span class="sxs-lookup"><span data-stu-id="b4176-134">Double</span></span>         | <span data-ttu-id="b4176-p107">Фокусное расстояние камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p107">The focal length from the camera. Read-only.</span></span>
-| <span data-ttu-id="b4176-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="b4176-137">**iso**</span></span>                 | <span data-ttu-id="b4176-138">Int64</span><span class="sxs-lookup"><span data-stu-id="b4176-138">Int64</span></span>          | <span data-ttu-id="b4176-p108">Значение ISO камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b4176-p108">The ISO value from the camera. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-110">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-110">**takenDateTime**</span></span>       | <span data-ttu-id="cb2aa-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="cb2aa-111">DateTimeOffset</span></span> | <span data-ttu-id="cb2aa-p101">Представляет дату и время съемки. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p101">Represents the date and time the photo was taken. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-114">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-114">**cameraMake**</span></span>          | <span data-ttu-id="cb2aa-115">Строка</span><span class="sxs-lookup"><span data-stu-id="cb2aa-115">String</span></span>         | <span data-ttu-id="cb2aa-p102">Изготовитель камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p102">Camera manufacturer. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-118">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-118">**cameraModel**</span></span>         | <span data-ttu-id="cb2aa-119">String</span><span class="sxs-lookup"><span data-stu-id="cb2aa-119">String</span></span>         | <span data-ttu-id="cb2aa-p103">Модель камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p103">Camera model. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-122">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-122">**fNumber**</span></span>             | <span data-ttu-id="cb2aa-123">Двойное</span><span class="sxs-lookup"><span data-stu-id="cb2aa-123">Double</span></span>         | <span data-ttu-id="cb2aa-p104">Значение диафрагмы камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p104">The F-stop value from the camera. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-126">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-126">**exposureDenominator**</span></span> | <span data-ttu-id="cb2aa-127">Двойное</span><span class="sxs-lookup"><span data-stu-id="cb2aa-127">Double</span></span>         | <span data-ttu-id="cb2aa-p105">Знаменатель дробного значения выдержки камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-130">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-130">**exposureNumerator**</span></span>   | <span data-ttu-id="cb2aa-131">Двойное</span><span class="sxs-lookup"><span data-stu-id="cb2aa-131">Double</span></span>         | <span data-ttu-id="cb2aa-p106">Числитель дробного значения выдержки камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-134">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-134">**focalLength**</span></span>         | <span data-ttu-id="cb2aa-135">Double</span><span class="sxs-lookup"><span data-stu-id="cb2aa-135">Double</span></span>         | <span data-ttu-id="cb2aa-p107">Фокусное расстояние камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p107">The focal length from the camera. Read-only.</span></span>
+| <span data-ttu-id="cb2aa-138">**iso**</span><span class="sxs-lookup"><span data-stu-id="cb2aa-138">**iso**</span></span>                 | <span data-ttu-id="cb2aa-139">Int64</span><span class="sxs-lookup"><span data-stu-id="cb2aa-139">Int64</span></span>          | <span data-ttu-id="cb2aa-p108">Значение ISO камеры. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-p108">The ISO value from the camera. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b4176-141">Заметки</span><span class="sxs-lookup"><span data-stu-id="b4176-141">Remarks</span></span>
-<span data-ttu-id="b4176-142">OneDrive для бизнеса и SharePoint возвращают только свойство **takenDateTime**.</span><span class="sxs-lookup"><span data-stu-id="b4176-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
+## <a name="remarks"></a><span data-ttu-id="cb2aa-142">Заметки</span><span class="sxs-lookup"><span data-stu-id="cb2aa-142">Remarks</span></span>
+<span data-ttu-id="cb2aa-143">OneDrive для бизнеса и SharePoint возвращают только свойство **takenDateTime**.</span><span class="sxs-lookup"><span data-stu-id="cb2aa-143">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
 
-<span data-ttu-id="b4176-143">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="b4176-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="cb2aa-144">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="cb2aa-144">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 <!--
 {
   "type": "#page.annotation",

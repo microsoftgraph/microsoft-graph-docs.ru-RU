@@ -4,28 +4,29 @@ description: Тип приложения киоска Windows.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d33316d356d23f3d77a6daae395ee53df7c9d06
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: f65134a08781e27ba75e4f3345caa017a9d30c8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995422"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011164"
 ---
-# <a name="windowskioskapptype-enum-type"></a><span data-ttu-id="3e88f-103">тип перечисления Виндовскиоскапптипе</span><span class="sxs-lookup"><span data-stu-id="3e88f-103">windowsKioskAppType enum type</span></span>
+# <a name="windowskioskapptype-enum-type"></a><span data-ttu-id="e6e69-103">тип перечисления Виндовскиоскапптипе</span><span class="sxs-lookup"><span data-stu-id="e6e69-103">windowsKioskAppType enum type</span></span>
 
-> <span data-ttu-id="3e88f-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3e88f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e6e69-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6e69-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3e88f-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3e88f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e6e69-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e6e69-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3e88f-106">Тип приложения киоска Windows.</span><span class="sxs-lookup"><span data-stu-id="3e88f-106">The type of Windows kiosk app.</span></span>
+<span data-ttu-id="e6e69-106">Тип приложения киоска Windows.</span><span class="sxs-lookup"><span data-stu-id="e6e69-106">The type of Windows kiosk app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3e88f-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="3e88f-107">Members</span></span>
-|<span data-ttu-id="3e88f-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="3e88f-108">Member</span></span>|<span data-ttu-id="3e88f-109">Значение</span><span class="sxs-lookup"><span data-stu-id="3e88f-109">Value</span></span>|<span data-ttu-id="3e88f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3e88f-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e6e69-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="e6e69-107">Members</span></span>
+|<span data-ttu-id="e6e69-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="e6e69-108">Member</span></span>|<span data-ttu-id="e6e69-109">Значение</span><span class="sxs-lookup"><span data-stu-id="e6e69-109">Value</span></span>|<span data-ttu-id="e6e69-110">Описание</span><span class="sxs-lookup"><span data-stu-id="e6e69-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3e88f-111">unknown</span><span class="sxs-lookup"><span data-stu-id="3e88f-111">unknown</span></span>|<span data-ttu-id="3e88f-112">нуль</span><span class="sxs-lookup"><span data-stu-id="3e88f-112">0</span></span>|<span data-ttu-id="3e88f-113">Найден.</span><span class="sxs-lookup"><span data-stu-id="3e88f-113">Unknown.</span></span>|
-|<span data-ttu-id="3e88f-114">store</span><span class="sxs-lookup"><span data-stu-id="3e88f-114">store</span></span>|<span data-ttu-id="3e88f-115">1,1</span><span class="sxs-lookup"><span data-stu-id="3e88f-115">1</span></span>|<span data-ttu-id="3e88f-116">Приложение Store.</span><span class="sxs-lookup"><span data-stu-id="3e88f-116">Store App.</span></span>|
-|<span data-ttu-id="3e88f-117">системной</span><span class="sxs-lookup"><span data-stu-id="3e88f-117">desktop</span></span>|<span data-ttu-id="3e88f-118">2</span><span class="sxs-lookup"><span data-stu-id="3e88f-118">2</span></span>|<span data-ttu-id="3e88f-119">Классическое приложение.</span><span class="sxs-lookup"><span data-stu-id="3e88f-119">Desktop App.</span></span>|
-|<span data-ttu-id="3e88f-120">aumId</span><span class="sxs-lookup"><span data-stu-id="3e88f-120">aumId</span></span>|<span data-ttu-id="3e88f-121">4</span><span class="sxs-lookup"><span data-stu-id="3e88f-121">3</span></span>|<span data-ttu-id="3e88f-122">Входные данные по AUMID.</span><span class="sxs-lookup"><span data-stu-id="3e88f-122">Input by AUMID.</span></span>|
+|<span data-ttu-id="e6e69-111">unknown</span><span class="sxs-lookup"><span data-stu-id="e6e69-111">unknown</span></span>|<span data-ttu-id="e6e69-112">нуль</span><span class="sxs-lookup"><span data-stu-id="e6e69-112">0</span></span>|<span data-ttu-id="e6e69-113">Найден.</span><span class="sxs-lookup"><span data-stu-id="e6e69-113">Unknown.</span></span>|
+|<span data-ttu-id="e6e69-114">store</span><span class="sxs-lookup"><span data-stu-id="e6e69-114">store</span></span>|<span data-ttu-id="e6e69-115">1,1</span><span class="sxs-lookup"><span data-stu-id="e6e69-115">1</span></span>|<span data-ttu-id="e6e69-116">Приложение Store.</span><span class="sxs-lookup"><span data-stu-id="e6e69-116">Store App.</span></span>|
+|<span data-ttu-id="e6e69-117">системной</span><span class="sxs-lookup"><span data-stu-id="e6e69-117">desktop</span></span>|<span data-ttu-id="e6e69-118">2</span><span class="sxs-lookup"><span data-stu-id="e6e69-118">2</span></span>|<span data-ttu-id="e6e69-119">Классическое приложение.</span><span class="sxs-lookup"><span data-stu-id="e6e69-119">Desktop App.</span></span>|
+|<span data-ttu-id="e6e69-120">aumId</span><span class="sxs-lookup"><span data-stu-id="e6e69-120">aumId</span></span>|<span data-ttu-id="e6e69-121">4</span><span class="sxs-lookup"><span data-stu-id="e6e69-121">3</span></span>|<span data-ttu-id="e6e69-122">Входные данные по AUMID.</span><span class="sxs-lookup"><span data-stu-id="e6e69-122">Input by AUMID.</span></span>|
 
 
 
