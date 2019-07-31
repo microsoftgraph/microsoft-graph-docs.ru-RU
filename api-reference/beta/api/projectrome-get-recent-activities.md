@@ -3,12 +3,14 @@ title: Получение последних действий пользоват
 description: " Функцию. Служба будет запрашивать последние Historyitem, а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 464d57e5257b1e9c85796e72e4b8cbda732d4946
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: 59385b82dd4d979106c0337489cb4fcea9747835
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337201"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983329"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
@@ -39,7 +41,7 @@ GET /me/activities/recent
 Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
 - $expand для свойства навигации **historyitem** .
-- $Top, чтобы ограничить максимальное количество элементов на страницах.
+- $top, чтобы ограничить максимальное количество элементов на страницах.
 - $filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.
 
 Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.
@@ -58,7 +60,7 @@ GET /me/activities/recent
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса.
 
@@ -83,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/activities/recent
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "ignored",

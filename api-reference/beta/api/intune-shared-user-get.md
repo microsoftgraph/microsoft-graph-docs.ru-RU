@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта user.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ead8f6516dfae6c4357ac62f491bb45e89522600
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 67fabcf6f369db297d104f2273969b4682475084
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899244"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979675"
 ---
 # <a name="get-user"></a>Получение пользователя
 
@@ -54,7 +55,7 @@ GET /users/{usersId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

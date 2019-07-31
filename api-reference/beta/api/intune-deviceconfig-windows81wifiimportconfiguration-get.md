@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windows8
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 854861d257b62d12f18a110c6005f913e1bd24e4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4a2fb360fabf8c0c781046f0ec5ec6ed1560e4bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962108"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976812"
 ---
 # <a name="get-windows81wifiimportconfiguration"></a>Получение windows81WifiImportConfiguration
 

@@ -2,12 +2,15 @@
 title: 'servicePrincipal: Добавление владельца'
 description: Используйте этот API, чтобы добавить владельца для субъекта-службы.
 localization_priority: Normal
-ms.openlocfilehash: 7cf9306b3807f66835896f9d23514b8334940188
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 50465aec078c6719fb5f3887eb6945c36d607693
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35453686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991319"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: Добавление владельца
 

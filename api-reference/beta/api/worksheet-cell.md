@@ -4,12 +4,13 @@ description: Получает объект диапазона, содержащ�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: aca0ee396860a1f12fe820faea2fdc99355e6f03
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 553a09f0619fb16d0e9ee7c1ac9fe8dfac4a3b14
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339648"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987308"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 
@@ -46,7 +47,7 @@ GET /workbook/worksheets/{id|name}/Cell(row={row},column={column})
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -4,12 +4,13 @@ description: Представляет объект Azure Active Directory. Ти�
 localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: edf28af539673064b5afe8ce75c726bb3799b2c4
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 5bc558f92b4c812f95f7a859dbfea6a43a2fe33b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657954"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973849"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 

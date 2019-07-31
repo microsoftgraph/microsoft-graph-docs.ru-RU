@@ -2,12 +2,15 @@
 title: Создание Програмконтрол
 description: В средстве проверки доступа Azure AD создайте новый объект Програмконтрол.  При этом будет связана проверка доступа к программе.
 localization_priority: Normal
-ms.openlocfilehash: dafaf94d00ca44159d474078f8dcce3b8de3e670
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 4f2c90ce3e36f96ceb8dc77cfb32dad0da13c29c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988519"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 

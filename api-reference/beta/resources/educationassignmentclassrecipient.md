@@ -4,12 +4,13 @@ description: 'Используется внутри свойства назна�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: c0d9ea903078c381abf64198a0956ac0cee0e3e1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7824875cba3188729e06c264d58fe6cc3afb9529
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340718"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972847"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>Тип ресурса ЕдукатионассигнментклассреЦипиент
 

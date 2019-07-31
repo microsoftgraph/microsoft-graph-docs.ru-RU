@@ -4,12 +4,13 @@ description: Сведения об оборудовании для данног�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1c721039df8b4c656e84a91da76be60dcdd25cf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1efe63f87057952444e17b9c5684cd3ecc20d4c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999803"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса Девицепротектионовервиев
 

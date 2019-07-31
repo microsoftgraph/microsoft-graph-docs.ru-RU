@@ -4,12 +4,13 @@ description: Ресурс windowsAutopilotDeviceIdentity представляе�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fed9385e83a452bfda3a733d2b930a19b8ee92cb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8fe0b437c2d294ff8603f164f87854bdf60926c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993889"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999012"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Тип ресурса windowsAutopilotDeviceIdentity
 

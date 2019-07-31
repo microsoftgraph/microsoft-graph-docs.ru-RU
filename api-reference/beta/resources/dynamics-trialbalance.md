@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 1a7e906e50ddf39e4c9e2d3d9dde11226c7ec662
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 02e4f039411c992cd1d7335fc2463d660b8ff181
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534852"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972875"
 ---
 # <a name="trialbalance-resource-type"></a>Тип ресурса Триалбаланце
 Представляет пробный баланс в Dynamics 365 Business Central.
@@ -26,20 +27,20 @@ ms.locfileid: "32534852"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |число|string|Номер финансового счета для элемента Триалбаланце|
-|accountId|Глобальный уникальный идентификатор (GUID)|Уникальный идентификатор финансового счета записи.|
+|accountId|GUID|Уникальный идентификатор финансового счета записи.|
 |accountType|string|Тип учетной записи финансового счета записи.|
 |отображения|string|Имя финансового счета для элемента Триалбаланце.|
 |Тоталдебит|string|Представляет общую сумму дебета в финансовом счете.|
 |Тоталкредит|string|Представляет общую сумму кредита в финансовом счете.|
 |Баланцеатдатедебит|string|Представляет положительное сальдо на сумму даты в финансовом счете.|
 |Баланцеатдатекредит|string|Представляет отрицательное сальдо на сумму даты в финансовом счете.|
-|Датефилтер|дата|Фильтр даты, используемый для вычисления элементов Триалбаланце.|
+|Датефилтер|date|Фильтр даты, используемый для вычисления элементов Триалбаланце.|
 
 
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ниже показано представление ресурса columnDefinition в формате JSON.
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: c5cce4c3db7b66ff46a6bab0bbfaacd0ecc9a6cc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7f60d33f8fbfe76c9dfd0ca02c98df96ca6ab380
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341424"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973302"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
 

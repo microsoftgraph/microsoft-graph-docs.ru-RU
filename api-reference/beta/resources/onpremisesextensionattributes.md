@@ -2,12 +2,15 @@
 title: Тип ресурса onPremisesExtensionAttributes
 description: Свойство **onPremisesExtensionAttributes** объекта user содержит пятнадцать свойств настраиваемого атрибута расширения. Для пользователя **onPremisesSyncEnabled** этот набор свойств размещается в локальной службе Active Directory и синхронизируется с Azure AD и доступен только для чтения. Для пользователя, предназначенного только для облачного облака (где **onPremisesSyncEnabled** имеет значение false), эти свойства можно задать при создании или обновлении.
 localization_priority: Normal
-ms.openlocfilehash: 14e6d8530e67f40704d1052ef5e66cf9046b883f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: cbcb3d548a99d33e05768c765ab7a7e06981acc0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341811"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966405"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
@@ -31,8 +34,8 @@ ms.locfileid: "33341811"
 |extensionAttribute10|String| Десятый атрибут расширенной настройки. |
 |extensionAttribute11|String| Одиннадцатый атрибут настраиваемого расширения. |
 |extensionAttribute12|String| Двенадцатый настраиваемый атрибут расширения. |
-|extensionAttribute13|String| Настраиваемый атрибут расширения Сиртинс. |
-|extensionAttribute14|String| Настраиваемый атрибут расширения Фауртинс. |
+|extensionAttribute13|String| Настраиваемый атрибут расширения сиртинс. |
+|extensionAttribute14|String| Настраиваемый атрибут расширения фауртинс. |
 |extensionAttribute15|String| Пятнадцатый настраиваемый атрибут расширения. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -4,12 +4,13 @@ description: Получение Тимеоффреасон по ИДЕНТИФИ
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: dd742509e5b8a0a9c7cbe00c0fae26d64e879f5a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c0f71936eb9f505cd9c8fa0905ac8a0cf1825501
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868010"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977500"
 ---
 # <a name="get-timeoffreason"></a>Получение Тимеоффреасон
 

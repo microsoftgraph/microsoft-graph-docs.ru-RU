@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Дат
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ab72e31caac71f09d5e74e74500f460b738516a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 5b812fa6eaf4e89a0c6c9930c03985bb32b6a375
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35986129"
 ---
 # <a name="list-datasharingconsents"></a>Список Даташарингконсентс
 

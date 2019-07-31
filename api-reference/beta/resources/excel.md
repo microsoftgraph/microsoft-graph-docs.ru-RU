@@ -4,12 +4,13 @@ description: 'Можно использовать Microsoft Graph, чтобы р
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fbb07f14f9cd43212109fdee45171ac09bbdd64d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333906"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972077"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -20,7 +21,7 @@ ms.locfileid: "33333906"
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Пример: `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`.  
+Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Например, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 возвращает коллекцию объектов листа, включенных в книгу.    
 
 
@@ -43,7 +44,7 @@ ms.locfileid: "33333906"
 1. Постоянный сеанс — все изменения, внесенные в книгу, сохраняются (сохраненные). Это обычный режим работы. 
 2. Временный сеанс — изменения, внесенные интерфейсом API, не сохраняются в исходном расположении. Вместо этого внутренний сервер Excel сохраняет временную копию файла, в которой отражены изменения, внесенные во время конкретного сеанса API. Когда истечет срок действия сеанса Excel, изменения будут потеряны. Этот режим удобен для приложений, которым нужно выполнять анализ или получать результаты вычислений или изображение диаграммы, не изменяя состояние документа.   
 
-Чтобы представить сеанс в API, воспользуйтесь заголовком `workbook-session-id: {session-id}`. 
+Чтобы представить сеанс в API, используйте заголовок `workbook-session-id: {session-id}`. 
 
 >**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.  
 
@@ -110,7 +111,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -203,7 +204,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -224,7 +225,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-Отклик
+Ответ
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -254,7 +255,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -288,7 +289,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -314,7 +315,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -378,7 +379,7 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -397,7 +398,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -417,7 +418,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -447,7 +448,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -474,7 +475,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -564,7 +565,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик 
+Ответ 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -679,7 +680,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -712,7 +713,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-Отклик 
+Ответ 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -749,7 +750,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -764,7 +765,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -779,7 +780,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
@@ -804,7 +805,7 @@ workbook-session-id: {session-id}
 ```
 
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -829,7 +830,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -845,7 +846,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Отклик
+Ответ
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content

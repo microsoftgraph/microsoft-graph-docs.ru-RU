@@ -4,12 +4,13 @@ description: Описывает метод Get Мобилеапптраубле�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 2237edd34ab4a6e22032db997e45ed98bee570f8
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: b471b9e6ecea9c84a1b68bc070cab8831c60eb98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898684"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979696"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Получение Мобилеапптраублешутинжевент
 
@@ -49,7 +50,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEve
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

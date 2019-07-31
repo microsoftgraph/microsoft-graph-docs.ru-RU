@@ -2,12 +2,15 @@
 title: Тип ресурса daylightTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее.
 localization_priority: Normal
-ms.openlocfilehash: b6e965a154b0219a78898c2bf021cac2bb11c238
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 2d82db78d97dc12086ec3e4d59cea468eefddf38
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340968"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973865"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Тип ресурса daylightTimeZoneOffset
 

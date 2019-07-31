@@ -2,12 +2,15 @@
 title: Отправка команд для устройства
 description: 'Этот API позволяет функциям Project Рим выполнять командное устройство, связанное с учетной записью Майкрософт. После выполнения вызова GET `me/devices`, передайте идентификатор устройства, чтобы выдать команду на устройство. Поддерживаются два типа команд: Лаунчури и Аппсервицес. Если вы используете Лаунчури, укажите *тип* и параметры *полезных данных* . Для вызова включающее укажите '
 localization_priority: Normal
-ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: fd45047d673dc6def51d3f417861cf15a38a2f98
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336041"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991515"
 ---
 # <a name="send-device-command"></a>Отправка команд для устройства
 
@@ -42,7 +45,7 @@ POST me/devices/{id}/commands
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление свойств команды в формате JSON.
 
@@ -78,7 +81,7 @@ HTTP/1.1 201 OK
 ```
 ## <a name="command-properties"></a>Свойства команды 
 
-|**Name**|**Type**|**Описание**|
+|**Имя**|**Тип**|**Описание**|
 |:----|:------|:------|
 |payload | Microsoft. Graph. JSON| Полезные данные для отправки в службу приложения или для запуска URI на устройстве. |
 |Респонсепайлоад | Microsoft. Graph. JSON| Полезные данные, возвращенные с целевого устройства. |
@@ -115,7 +118,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Отклик 
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "ignored",
@@ -174,7 +177,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "ignored",

@@ -4,12 +4,13 @@ description: Содержит свойства для сводки о работ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8033f5e66928de4e0f913eaaab0aaa271fa2894
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: d54eb789b33a27f7e7c7a62e3a3e37aafff990ce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999362"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>Тип ресурса Виндовсманажементапфеалссуммари
 

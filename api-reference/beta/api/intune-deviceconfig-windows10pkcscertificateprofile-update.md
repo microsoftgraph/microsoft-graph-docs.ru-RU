@@ -4,12 +4,13 @@ description: Обновление свойств объекта windows10PkcsCer
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f71b41a5bf25d6defe3c7a063e1ae3c018b93744
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e4a73d97379bf4c46183f815c4f715d7b16d6ee1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977984"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975307"
 ---
 # <a name="update-windows10pkcscertificateprofile"></a>Обновление windows10PkcsCertificateProfile
 

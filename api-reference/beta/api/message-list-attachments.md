@@ -4,12 +4,13 @@ description: Получение списка объектов attachment, вло
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a9bd4d4826a0f442139d3b7510b29577752a5c97
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 964e822c5f66dc53390c8aa11bc288e81a7ad01a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35879508"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992922"
 ---
 # <a name="list-attachments"></a>Список вложений
 

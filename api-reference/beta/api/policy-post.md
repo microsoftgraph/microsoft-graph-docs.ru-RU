@@ -2,12 +2,15 @@
 title: Создание политики
 description: Создайте новый объект Policy, указав отображаемое имя, тип политики и описание политики.
 localization_priority: Normal
-ms.openlocfilehash: 4521f6fb032f936aec27cc5cac47d27e62bd2a3a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ca8b2f2d98c577fb053f95110a11f5c3c7b875ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332201"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983441"
 ---
 # <a name="create-policy"></a>Создание политики
 
@@ -45,7 +48,7 @@ POST /policies
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |RDLC|String|Строковая версия объекта [Policy](../resources/policy.md) .|
-|displayName|String|Настраиваемое имя политики.|
+|displayName|Строка|Настраиваемое имя политики.|
 |type|String|Указывает тип политики. В настоящее время должен быть "Токенлифетимеполици"|
 
 ## <a name="response"></a>Отклик

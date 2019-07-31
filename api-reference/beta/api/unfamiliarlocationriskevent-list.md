@@ -2,12 +2,15 @@
 title: Список Унфамилиарлокатионрискевентс
 description: Получение списка объектов унфамилиарлокатионрискевент.
 localization_priority: Normal
-ms.openlocfilehash: 672eda941298c4da8cee3e2e0a3ba034ee361234
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b12bc0520bfa285b654b615cfb74582683b04c49
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335124"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987903"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>Список Унфамилиарлокатионрискевентс
 
@@ -34,7 +37,7 @@ GET /unfamiliarLocationRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -4,12 +4,13 @@ description: Описывает метод List Мобилеапптраубле
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 4b8a35f6dcaf007282cc53630d656ba499b5b7db
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 7e3f25d4116d2dcbb577be968bf880e785d498b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898271"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993566"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>Список Мобилеапптраублешутинжевентс
 
@@ -46,7 +47,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

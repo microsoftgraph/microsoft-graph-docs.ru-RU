@@ -2,12 +2,15 @@
 title: Тип ресурса appRoleAssignment
 description: Используется для записи при назначении пользователя или группы приложению. В этом случае после назначения роли будет отображаться плитка приложения на панели доступа к приложениям пользователя. Кроме того, с помощью этого объекта можно предоставить другому приложению (моделируемому как субъект-служба) доступ к приложению ресурса в определенной роли. Вы можете создавать, просматривать, обновлять и удалять назначенные роли.
 localization_priority: Priority
-ms.openlocfilehash: 37942e45f804efaec3e94f8fe9b582e103628025
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 471927eb3aaf0dc26a3a70b0dffae7e15c812787
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339028"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974327"
 ---
 # <a name="approleassignment-resource-type"></a>Тип ресурса appRoleAssignment
 

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Ман
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d11055763fa471482a0517b796dfdc8eaed24749
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 232b650c4774df775b406a5921a59b525142ce0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984214"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990255"
 ---
 # <a name="list-managementconditionstatements"></a>Список Манажементкондитионстатементс
 

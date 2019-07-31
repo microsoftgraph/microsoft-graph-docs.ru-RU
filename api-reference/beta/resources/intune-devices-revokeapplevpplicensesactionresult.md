@@ -4,12 +4,13 @@ description: Отзыв результатов действий для лице�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe831c36af1cfbe29d4b5bcc0dd2daa2a148a01a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 10b26592c859ba58ad4759492c34ca3626be32dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963830"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999635"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>Тип ресурса Ревокеапплевпплиценсесактионресулт
 

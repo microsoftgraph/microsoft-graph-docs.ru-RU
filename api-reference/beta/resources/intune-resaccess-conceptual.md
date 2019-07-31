@@ -4,12 +4,13 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ed680af82eb041e93cf73cb6ed3c390b989d8bc3
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: conceptualPageType
+ms.openlocfilehash: d566e570273cfecf213462ab4bf9cea5b76086a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996262"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967534"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Управление сертификатами доступа к ресурсам в Intune
 

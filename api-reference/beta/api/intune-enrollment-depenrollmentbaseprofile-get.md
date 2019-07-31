@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта Депе
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf2078d280596ca00b22eff77ed4057db61f46f6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d3c46f8525f5c14eaedb30a15a7dd0a288ad0d4c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34978558"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35985506"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>Получение Депенроллментбасепрофиле
 

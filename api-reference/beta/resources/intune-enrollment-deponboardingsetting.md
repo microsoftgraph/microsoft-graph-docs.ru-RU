@@ -4,12 +4,13 @@ description: DepOnboardingSetting представляет экземпляр с
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9079405bf83605a39d2ab5b1a656f89be67a42db
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4209421a952ddfbcfa762cd7d5b6c7eb68cba8b2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993552"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999229"
 ---
 # <a name="deponboardingsetting-resource-type"></a>Тип ресурса depOnboardingSetting
 

@@ -4,12 +4,13 @@ description: Беседа — коллекция цепочек, содержа�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: db7c8822a3d91369554007656baed171ae81b1fd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 60add8177bcbf4f667f251dd853109bdef4db11b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973988"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -26,7 +27,7 @@ ms.locfileid: "33341248"
 |[Перечисление бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
 |[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
 |[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
-|[Delete](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
+|[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
 |[Список цепочек беседы](../api/conversation-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
 |[Создание цепочки беседы](../api/conversation-post-threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
 

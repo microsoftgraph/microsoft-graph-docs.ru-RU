@@ -4,12 +4,13 @@ description: Эта операция возвращает существующи
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 986d6dc109a334e0a64e5472d5de6d80850b55e3
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+doc_type: apiPageType
+ms.openlocfilehash: 39cd3f11644eca36720fccbf60ba81fd5384af6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34536045"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987868"
 ---
 # <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
 

@@ -4,12 +4,13 @@ description: Позволяет ИТ для администраторов ус�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19247f83cc3e19925759c395d98ddc02ef4f8526
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 0ed79e7d8e22ad77102411f45dab2d815e56214a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996394"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36000244"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>тип перечисления Виндовсспотлигхтенаблементсеттингс
 

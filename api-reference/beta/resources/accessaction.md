@@ -1,21 +1,23 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Присутствие ресурса Акцессактион в itemActivity указывает на то, что действие получило доступ к элементу.
 ms.date: 09/12/2018
 title: Акцессактион
 localization_priority: Normal
-ms.openlocfilehash: ae515a9eca368846cf6352b5a68f95f162866710
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6ff8489cea29f5ee249266f36b784b3bd246daab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974549"
 ---
 # <a name="accessaction-resource-type"></a>Тип ресурса Акцессактион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Присутствие ресурса **акцессактион** в [**itemActivity**] [ activity] указывает на то, что действие получило доступ к элементу.
+Присутствие ресурса **акцессактион** в [**itemActivity**][activity] указывает на то, что действие получило доступ к элементу.
 
 >**Примечание:** Записи действий Access доступны только в SharePoint и OneDrive для бизнеса.
 

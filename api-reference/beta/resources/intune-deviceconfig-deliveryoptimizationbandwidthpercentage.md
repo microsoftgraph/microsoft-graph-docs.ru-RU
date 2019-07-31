@@ -4,12 +4,13 @@ description: Пределы пропускной способности, ука�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 482dd1ee20e28a3ae9f5982d144d19a9143123af
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ba89d0101a603634399641ef1f9ccff28c02c42f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970782"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсперцентаже
 

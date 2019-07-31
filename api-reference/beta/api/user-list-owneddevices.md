@@ -4,12 +4,13 @@ description: Получение списка устройств, принадл�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0912678bfdfb0e33ad7c45f38053a08f9f093abc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: e853108c4a1e59e1915d765ebef56ecd1cf54e7f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867173"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987600"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 

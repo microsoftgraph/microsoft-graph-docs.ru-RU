@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Наличие ресурса DeleteAction в ресурсе itemActivity указывает, что в результате выполнения действия элемент был удален.
 ms.date: 09/14/2017
 title: DeleteAction
 localization_priority: Normal
-ms.openlocfilehash: a380376a813df5f519464978851049e020ded8b8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: c5617c61f3221351930ab8d4bf940eaf1efa0629
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340958"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973851"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса DeleteAction
 
@@ -19,7 +21,7 @@ ms.locfileid: "33340958"
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",
