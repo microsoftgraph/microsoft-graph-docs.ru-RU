@@ -4,29 +4,30 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: a6063b8ee5c1c40476f676c3a9846fa7d7aab421
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: fe15bdc33dcff3e118e98c2d00909f626fde921a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338828"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974110"
 ---
-# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="992d7-104">Тип ресурса Букингворктимеслот</span><span class="sxs-lookup"><span data-stu-id="992d7-104">bookingWorkTimeSlot resource type</span></span>
+# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="d6dc5-104">Тип ресурса Букингворктимеслот</span><span class="sxs-lookup"><span data-stu-id="d6dc5-104">bookingWorkTimeSlot resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="992d7-105">Время начала и окончания работы.</span><span class="sxs-lookup"><span data-stu-id="992d7-105">The start and end times for work.</span></span>
+<span data-ttu-id="d6dc5-105">Время начала и окончания работы.</span><span class="sxs-lookup"><span data-stu-id="d6dc5-105">The start and end times for work.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="992d7-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="992d7-106">Properties</span></span>
-| <span data-ttu-id="992d7-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="992d7-107">Property</span></span>     | <span data-ttu-id="992d7-108">Тип</span><span class="sxs-lookup"><span data-stu-id="992d7-108">Type</span></span>   |<span data-ttu-id="992d7-109">Описание</span><span class="sxs-lookup"><span data-stu-id="992d7-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d6dc5-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d6dc5-106">Properties</span></span>
+| <span data-ttu-id="d6dc5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d6dc5-107">Property</span></span>     | <span data-ttu-id="d6dc5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d6dc5-108">Type</span></span>   |<span data-ttu-id="d6dc5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d6dc5-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="992d7-110">end</span><span class="sxs-lookup"><span data-stu-id="992d7-110">end</span></span>|<span data-ttu-id="992d7-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="992d7-111">TimeOfDay</span></span>|<span data-ttu-id="992d7-112">Время суток, в которое начинается рабочий день.</span><span class="sxs-lookup"><span data-stu-id="992d7-112">The time of the day that work starts.</span></span> <span data-ttu-id="992d7-113">Например, 08:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="992d7-113">For example, 08:00:00.0000000.</span></span>|
-|<span data-ttu-id="992d7-114">start</span><span class="sxs-lookup"><span data-stu-id="992d7-114">start</span></span>|<span data-ttu-id="992d7-115">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="992d7-115">TimeOfDay</span></span>|<span data-ttu-id="992d7-116">Время суток, когда работа завершается.</span><span class="sxs-lookup"><span data-stu-id="992d7-116">The time of the day that work stops.</span></span> <span data-ttu-id="992d7-117">Например, 17:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="992d7-117">For example, 17:00:00.0000000.</span></span>|
+|<span data-ttu-id="d6dc5-110">end</span><span class="sxs-lookup"><span data-stu-id="d6dc5-110">end</span></span>|<span data-ttu-id="d6dc5-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="d6dc5-111">TimeOfDay</span></span>|<span data-ttu-id="d6dc5-112">Время суток, в которое начинается рабочий день.</span><span class="sxs-lookup"><span data-stu-id="d6dc5-112">The time of the day that work starts.</span></span> <span data-ttu-id="d6dc5-113">Например, 08:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="d6dc5-113">For example, 08:00:00.0000000.</span></span>|
+|<span data-ttu-id="d6dc5-114">начать</span><span class="sxs-lookup"><span data-stu-id="d6dc5-114">start</span></span>|<span data-ttu-id="d6dc5-115">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="d6dc5-115">TimeOfDay</span></span>|<span data-ttu-id="d6dc5-116">Время суток, когда работа завершается.</span><span class="sxs-lookup"><span data-stu-id="d6dc5-116">The time of the day that work stops.</span></span> <span data-ttu-id="d6dc5-117">Например, 17:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="d6dc5-117">For example, 17:00:00.0000000.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="992d7-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="992d7-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d6dc5-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d6dc5-118">JSON representation</span></span>
 
-<span data-ttu-id="992d7-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="992d7-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d6dc5-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d6dc5-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
