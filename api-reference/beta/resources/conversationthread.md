@@ -4,12 +4,13 @@ description: conversationThread — это коллекция экземпляр
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 39861bdebbc6bb869a4e55d379fd44b2ceb73400
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: a44234c2ec82b0b28df6c9bbf57b8d8069f129f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341003"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973951"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 
@@ -27,7 +28,7 @@ conversationThread — это коллекция экземпляров [post](p
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[Delete](../api/conversationthread-delete.md) | Нет. |Удаление объекта conversationThread. |
+|[Удаление](../api/conversationthread-delete.md) | Нет. |Удаление объекта conversationThread. |
 |[reply](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
 |[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 

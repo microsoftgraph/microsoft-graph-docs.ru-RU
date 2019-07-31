@@ -4,12 +4,13 @@ description: Сводные данные для управляемых устр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ed08262d9b98fc0a72641f0605d717e68f2ba08
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e076e1e32f72ec352984c92076a33e57005cce6c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995114"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999747"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 

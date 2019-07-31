@@ -4,12 +4,13 @@ description: Синхронизирует лицензии, связанные �
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c7081e72d25c0129416cb17d3139a29734c4bac
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7b4d50cd43da4c2ee0c3fc4fea527f217e0afcaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34980546"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993888"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 

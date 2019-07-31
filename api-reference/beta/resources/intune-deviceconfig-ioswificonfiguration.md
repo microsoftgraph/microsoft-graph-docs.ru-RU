@@ -4,12 +4,13 @@ description: Предоставляя конфигурации в этом пр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 487a8d78f831f4f8961a235858e862bd03bdf9ea
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 9277e4c8fc6671f33fe9b3ce4705da8b0ed48b24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34985327"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001028"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>Тип ресурса iosWiFiConfiguration
 

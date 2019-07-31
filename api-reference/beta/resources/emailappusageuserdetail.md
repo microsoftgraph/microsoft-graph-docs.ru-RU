@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1ebc99f25bf0b16343f48686496c1dbd7d329e65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ae0409124569f4318df94f97729402a91d4b8e45
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972147"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Тип ресурса Емаилаппусажеусердетаил
 
@@ -19,8 +20,8 @@ ms.locfileid: "32542841"
 | :---------------- | :---------------- |
 | Репортрефрешдате | Дата              |
 | userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Логический           |
+| displayName       | Строка            |
+| isDeleted         | Boolean           |
 | Делетеддате       | Дата              |
 | Ластактивитидате  | Дата              |
 | Маилформак        | Коллекция строк |
@@ -34,7 +35,7 @@ ms.locfileid: "32542841"
 | Смтпапп           | Коллекция строк |
 | Репортпериод      | String            |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

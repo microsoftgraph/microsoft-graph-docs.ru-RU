@@ -2,14 +2,15 @@
 title: Обновление Синчронизатионсчема
 description: Обновление схемы синхронизации для определенного задания или шаблона. Этот метод полностью заменяет текущую схему на ту, которая была указана в запросе. Чтобы обновить схему шаблона, сделайте вызов для объекта Application. Вы должны быть владельцем приложения.
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 63e1ed50035cd7d04775a3af66b0127d6da17395
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 374d62edbe5b2ae436067c6df19b0d572cf852b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869119"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977631"
 ---
 # <a name="update-synchronizationschema"></a>Обновление Синчронизатионсчема
 

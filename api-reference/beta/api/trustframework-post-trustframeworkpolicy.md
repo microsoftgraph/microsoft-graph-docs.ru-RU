@@ -4,12 +4,13 @@ description: Эта операция создает новый объект Тр
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5b06048859853fbf15b1d82cdee97ac507513fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: ac3e1546e72e91988ef5339ad201fab7f3f2224d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329818"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35990570"
 ---
 # <a name="create-trustframeworkpolicy"></a>Создание Трустфрамеворкполици
 
@@ -43,7 +44,7 @@ POST /trustFramework/policies
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|Application/XML. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . Необходимый тип контента — `application/xml`.
 

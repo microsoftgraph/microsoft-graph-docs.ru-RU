@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Восстановление предыдущей версии ресурса ListItem в качестве текущей версии. При этом будет создана новая версия с тем же содержимым, что и в предыдущей версии, но будут сохранены все существующие версии элемента.
 ms.date: 09/10/2017
 title: Восстановление предыдущей версии элемента списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ede28ecb2ee743748af7ab70cc64e0ae8ec38528
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 22e00628b10e268ef8eada5be6cb195ca62cc454
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338724"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35993020"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Восстановление предыдущей версии ресурса ListItem
 

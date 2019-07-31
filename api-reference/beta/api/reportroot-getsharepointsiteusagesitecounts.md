@@ -4,12 +4,13 @@ description: Узнайте, сколько всего файлов на все�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 03a5c25f301c23dcf5122832f1d684c22aac5867
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 937cc9e1cf33a999b63396648922f7a0cbcd6eb2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35872630"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35983203"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 

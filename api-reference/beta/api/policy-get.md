@@ -2,12 +2,15 @@
 title: Получение политики
 description: Получение свойств политики.
 localization_priority: Normal
-ms.openlocfilehash: 853809ad26910b73bcf6c957e4c55e60f04dea49
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 435e711c711675b94b089d818b7451b551f8b5ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332223"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978884"
 ---
 # <a name="get-policy"></a>Получение политики
 
@@ -34,7 +37,7 @@ GET /policies/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

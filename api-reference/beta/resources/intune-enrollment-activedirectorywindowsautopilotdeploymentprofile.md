@@ -4,12 +4,13 @@ description: Профиль развертывания Windows для автоп
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd88d30d133b1896b96f86af1364ef4720fdd3f8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 21b9f569912c3dc9c06ef4a41e593a2bad9b6a62
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983948"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35999327"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса Активедиректоривиндовсаутопилотдеплойментпрофиле
 

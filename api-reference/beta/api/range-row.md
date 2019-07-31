@@ -4,12 +4,13 @@ description: Возвращает строку из диапазона.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7184ad4a0bae0ab3861bc0db10d87f0b5ae96f5e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 7a13cc21fdebdc77cb2fe64281f20bea7578e4f7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337064"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988442"
 ---
 # <a name="range-row"></a>Range: Row
 
@@ -39,7 +40,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

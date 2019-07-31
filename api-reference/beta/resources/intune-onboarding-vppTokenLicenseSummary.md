@@ -4,12 +4,13 @@ description: Сводка по лицензии для определенног�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b80b5b1d8db1d2352f32413ff4a03b9279cd8b7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 20bb4e83d3b69a705c172464fd18df53d1678df7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34958615"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997990"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Тип ресурса Впптокенлиценсесуммари
 

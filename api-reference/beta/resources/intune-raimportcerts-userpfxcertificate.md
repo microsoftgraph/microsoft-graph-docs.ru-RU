@@ -4,12 +4,13 @@ description: Объект, инкапсулирующий все сведени�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5af5e871ba9818b6c57daeb28bcccbe58b88a0ef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e9b3ed77f4448bdfbe881f6f659208f9dbdff691
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35967709"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
 

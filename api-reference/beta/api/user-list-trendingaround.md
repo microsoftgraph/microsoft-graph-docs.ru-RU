@@ -4,12 +4,13 @@ description: Вычисляемое представление, возвраща
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dcc8788bb7c9fd9dcaf887e66e3cc2ae35d00d3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: dc7b6176fe4fceeeeea78d63c6b7140568ff6875
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996191"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
 
@@ -44,7 +45,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json           |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

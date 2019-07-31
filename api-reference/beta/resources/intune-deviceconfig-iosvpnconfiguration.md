@@ -4,12 +4,13 @@ description: Предоставляя конфигурации в этом пр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc3879b77d2497adbbfc37fcbe2f0c2bf0270ba9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fd1c58609e2cacf47b662f57898255a5c303fac0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995569"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001091"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>Тип ресурса Иосвпнконфигуратион
 

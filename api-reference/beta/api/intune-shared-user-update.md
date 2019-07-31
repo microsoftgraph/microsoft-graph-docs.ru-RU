@@ -4,12 +4,13 @@ description: Обновление свойств объекта пользова
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c4b898a3c9b1907f6b2a05c16daa241b5b363c6b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 03a4f28b854e9e94b4bf7a821109e18c4fc0d537
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897886"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979549"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -50,7 +51,7 @@ PATCH /users/{usersId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление объекта [user](../resources/intune-shared-user.md) в формате JSON.
 
@@ -58,7 +59,7 @@ PATCH /users/{usersId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 |**Входящая миграция**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 

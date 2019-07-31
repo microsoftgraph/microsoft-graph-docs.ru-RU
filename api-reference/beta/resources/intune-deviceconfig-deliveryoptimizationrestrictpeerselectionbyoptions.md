@@ -4,12 +4,13 @@ description: Значения, с помощью которых можно ог�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 551df73db60d344e2cec3fb73a221fcdfe51c129
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 4679ea425d6982665a92094856bd5417ac5c70cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35970684"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
 

@@ -4,12 +4,13 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e4051ab0442d12b894b74f5f5c827393fba2a57
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c9ae4453fed2362222bbcde903df9d4059a414eb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35866548"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987404"
 ---
 # <a name="create-table"></a>Создание таблицы
 

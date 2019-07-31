@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта deviceCa
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c65c06e13067b3ba299e0e6ca4fe15584667c99b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: ad5b6b583c77a8f6b609541c66b2536a725ba079
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33899300"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979815"
 ---
 # <a name="get-devicecategory"></a>Получение объекта deviceCategory
 
@@ -64,7 +65,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

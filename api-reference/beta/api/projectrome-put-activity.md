@@ -3,12 +3,14 @@ title: Создание или замена действия
 description: Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую вставку.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 497b0e0bf4e236065dc6b44c44e80d99b22a5dc4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.openlocfilehash: 1c4d276211071ea66351cec3b6bc1fa1684cab8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992033"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 
@@ -34,7 +36,7 @@ ms.locfileid: "33337287"
 PUT /me/activities/{appActivityId}
 ```
 
-> **Примечание:** Аппактивитид в URL-АДРЕСе должен быть безопасным по URL-АДРЕСу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-АДРЕСу.
+> **Примечание:** Аппактивитид в URL-адресе должен быть безопасным по URL-адресу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-адресу.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -42,7 +44,7 @@ PUT /me/activities/{appActivityId}
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.
 
@@ -108,7 +110,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
     "blockType": "ignored",
@@ -225,7 +227,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
     "blockType": "ignored",

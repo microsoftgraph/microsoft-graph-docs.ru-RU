@@ -2,12 +2,15 @@
 title: Тип ресурса Чатмессажеаттачмент
 description: Представляет вложение для объекта сообщения чата.
 localization_priority: Normal
-ms.openlocfilehash: 6415ac6b52d33946f582c22c7b48770047f57866
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 93034cb504f67b68045afb2de4533d11c963efb4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620892"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973488"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Тип ресурса Чатмессажеаттачмент
 

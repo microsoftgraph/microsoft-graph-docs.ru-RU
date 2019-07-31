@@ -2,12 +2,15 @@
 title: Тип ресурса объекта filesecuritystate
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 8709df89c1a8b82f2381ab450fa235ba325a9f88
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: f061ca71bcd16c16e0292673338e2cb8d915e845
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333756"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972021"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
