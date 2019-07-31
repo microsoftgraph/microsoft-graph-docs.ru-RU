@@ -4,12 +4,13 @@ description: Замените все целевые группы для поли
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 012ddb6cd98540c1e1b46e4956c4163a780f9f1e
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: af53b8c39a84bfdcdd0115ac8db90bef6359303f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934084"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958979"
 ---
 # <a name="assign-action"></a>Действие назначения
 

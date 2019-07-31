@@ -4,12 +4,13 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 082894891a6edd2a1ed8582538c4879cea6dccc4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 9b03ca3547ccecf3f126b2865c8e409d4742fde5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984622"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969844"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>тип перечисления Ратингфранцетелевисионтипе
 

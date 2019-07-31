@@ -4,12 +4,13 @@ description: Ниже этот ресурс представлен в форма
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f0cdf5a992e5cceab62902b24de498f846ca7d60
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 38ded4e6cddcf945c741e43c1f80f2b3d63711ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656932"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966323"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
 

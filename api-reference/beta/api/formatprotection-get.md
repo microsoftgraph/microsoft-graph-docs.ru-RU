@@ -2,12 +2,15 @@
 title: Получение объекта FormatProtection
 description: Получение свойств и связей объекта FormatProtection.
 localization_priority: Normal
-ms.openlocfilehash: e44e3216bd7953256e854be0cd54791808f837e1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 452ac254650e6676fd709ea6341b09eea3069f4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859226"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954391"
 ---
 # <a name="get-formatprotection"></a>Получение объекта FormatProtection
 

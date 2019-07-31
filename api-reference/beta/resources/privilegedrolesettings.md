@@ -2,12 +2,15 @@
 title: Тип ресурса Привилежедролесеттингс
 description: Представляет параметры привилегированной роли.
 localization_priority: Normal
-ms.openlocfilehash: 6500d5a51fcedce97d71c1c4022c7d941de27b83
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ed87787ca8016f1dde7711304a1da1fc977c641b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344232"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965716"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Тип ресурса Привилежедролесеттингс
 
@@ -37,7 +40,7 @@ ms.locfileid: "33344232"
 |Аппровалонелеватион|boolean|**имеет значение true** , если при активации роли необходимо выполнить утверждение. **false** , если при активации роли не нужно утверждать.|
 |Аппроверидс| string collection |Список идентификаторов утверждения, если для активации необходимо утверждение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

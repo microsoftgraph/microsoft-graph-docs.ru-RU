@@ -2,12 +2,15 @@
 title: Тип ресурса "процесс"
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 244c809008eaea286f3048ed103d1b5320e0765e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6b67ec28dadb09442c5e3d66b6c03c54db821a85
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965693"
 ---
 # <a name="process-resource-type"></a>Тип ресурса "процесс"
 
@@ -24,7 +27,7 @@ ms.locfileid: "33344294"
 |createdDateTime|DateTimeOffset|Время запуска процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
 |Интегритилевел|processIntegrityLevel|Уровень целостности процесса. Возможные значения: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|Повышенный уровень|Логический|Значение true, если процесс повышен.|
+|Повышенный уровень|Boolean|Значение true, если процесс повышен.|
 |name|String|Имя файла образа процесса.|
 |Парентпроцесскреатеддатетиме|DateTimeOffset|Дата и время начала родительского процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Парентпроцессид|Int32|Идентификатор процесса (PID) родительского процесса.|

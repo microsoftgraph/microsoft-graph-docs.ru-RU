@@ -2,12 +2,15 @@
 title: Создание governanceRoleAssignmentRequest
 description: Создайте запрос на назначение роли, который будет представлять нужную операцию для назначения роли. В приведенной ниже таблице перечислены операции.
 localization_priority: Normal
-ms.openlocfilehash: 674a69f5697f5abf6e654ea71419bdfdfd660343
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 65ba674740fc7bc756d24fa3fc57b8db13d874b6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859115"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954132"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 

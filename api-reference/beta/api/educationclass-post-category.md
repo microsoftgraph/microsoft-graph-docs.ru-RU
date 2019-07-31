@@ -4,12 +4,13 @@ description: Создает новую категорию.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: eb169310f77e2f4f13a06dbb9871db07dc392101
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 16f7f4bf6ea58aa5d29ae63b95f4b104d0dd1d93
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955371"
 ---
 # <a name="create-educationcategory"></a>Создание Едукатионкатегори
 
@@ -39,7 +40,7 @@ POST /education/classes/{id}/assignmentCategories
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [Едукатионкатегори](../resources/educationcategory.md) в формате JSON.
+В тексте запроса добавьте представление объекта [едукатионкатегори](../resources/educationcategory.md) в формате JSON.
 
 
 ## <a name="response"></a>Отклик
@@ -61,7 +62,7 @@ Content-length: 33
   "displayName": "Quizzes"
 }
 ```
-В тексте запроса добавьте представление объекта [Едукатионкатегори](../resources/educationcategory.md) в формате JSON.
+В тексте запроса добавьте представление объекта [едукатионкатегори](../resources/educationcategory.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 

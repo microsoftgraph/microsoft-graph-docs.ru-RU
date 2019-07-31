@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 6897e072ca18be4f87405ca063f92df8d2f2a50b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 68b0ceaa1beef3528cf3afc228b961fe737f3bac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956781"
 ---
 # <a name="delete-countriesregions"></a>Удаление Каунтриесрегионс
 Удаление объекта стран и регионов из Dynamics 365 Business Central.
@@ -36,12 +37,12 @@ DELETE /financials/companies('{id}')/countriesRegions('{id}')
 |Заголовок|Значение|
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **каунтриесрегионс**, **каунтриесрегионс** не будет обновлен. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **каунтриесрегионс**, **каунтриесрегионс** не будет обновлен. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

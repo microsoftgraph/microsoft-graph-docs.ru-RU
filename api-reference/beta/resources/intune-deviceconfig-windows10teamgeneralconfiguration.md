@@ -4,12 +4,13 @@ description: В этой статье описаны объявляемые ме
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd7887abf152565f12070f4b6aa3126437339b27
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 0644f9f1c2ec8400dec40fbcc71889e1da7e3548
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34986839"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35969235"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>Тип ресурса windows10TeamGeneralConfiguration
 

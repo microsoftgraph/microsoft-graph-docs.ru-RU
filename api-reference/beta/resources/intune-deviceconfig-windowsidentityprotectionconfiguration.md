@@ -4,12 +4,13 @@ description: Эта сущность предоставляет описания
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76941337cd475fcef84f3c212d53407968905044
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ab1dab26916252c2be14315d5ee65d1eaf1cf872
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34994008"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35968991"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>Тип ресурса Виндовсидентитипротектионконфигуратион
 

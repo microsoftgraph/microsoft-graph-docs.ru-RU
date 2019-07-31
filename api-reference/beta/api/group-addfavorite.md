@@ -4,12 +4,13 @@ description: Добавление группы в список избранны�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6ce0901d89a7aa836370f103da0f6f9cf890d1cc
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: a0ceddb391f8bfbd036b43cf2c94eb794041a75b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859079"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954069"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 

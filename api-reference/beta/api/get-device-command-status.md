@@ -2,12 +2,15 @@
 title: Получение состояния команд для устройства
 description: Получение состояния команды на устройстве. Полный список кодов состояния представлен в разделе List of Актионстатус.
 localization_priority: Normal
-ms.openlocfilehash: 9b914cdfde78ce50df812acb09dc034c978c7e08
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 74104859b0621e51c0af9eced15912632fe5b9fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324999"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954307"
 ---
 # <a name="get-device-command-status"></a>Получение состояния команд для устройства
 

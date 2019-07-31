@@ -4,12 +4,13 @@ description: Получение только что созданных, обно
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7265470a3d78e972339b300cd612e0e3364b651
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a705ccd50d23a426f85d468d4b911a9771eb55f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862286"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957719"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: Delta
 
@@ -23,9 +24,9 @@ ms.locfileid: "35862286"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 

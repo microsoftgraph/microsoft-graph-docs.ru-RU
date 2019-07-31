@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 42a53f03e71ca5fe41293db0dc5459990f4560e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c6c3cedd16e8cca7a801d597718482ef1b6c12a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955927"
 ---
 # <a name="update-taxareas"></a>Обновление Таксареас
 Обновление свойств объекта налоговой области для Dynamics 365 Business Central.
@@ -41,7 +42,7 @@ PATCH /financials/companies('{id}')/taxAreas('{id}')
 |Content-Type  |application/json|
 |If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **таксареас**, **таксареас** не будет обновлен. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ

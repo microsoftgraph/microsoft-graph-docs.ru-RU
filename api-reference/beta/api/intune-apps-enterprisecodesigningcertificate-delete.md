@@ -4,12 +4,13 @@ description: Удаляет объект Ентерприсекодесигни�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6475d11926d1140e1aeba36153e37d1d71b5c246
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ac98c01e09fea5c23334754774887244c0fa14e2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34965181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952032"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Удаление Ентерприсекодесигнингцертификате
 

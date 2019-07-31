@@ -2,12 +2,15 @@
 title: Список Импоссиблетравелрискевентс
 description: Получение списка объектов импоссиблетравелрискевент.
 localization_priority: Normal
-ms.openlocfilehash: ca526129abbee7381da1a6f957d5092ae00a06f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 51618f9d90771aaa8364828872bb5c15b8efa291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328633"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953139"
 ---
 # <a name="list-impossibletravelriskevents"></a>Список Импоссиблетравелрискевентс
 
@@ -34,7 +37,7 @@ GET /impossibleTravelRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
