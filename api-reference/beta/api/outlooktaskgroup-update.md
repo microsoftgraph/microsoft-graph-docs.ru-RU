@@ -4,55 +4,56 @@ description: Обновление свойств, доступных для за
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 22d5d487978e6477353ed21a505047147af0862c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2065cb296173a2f1c94a45ab68a060f43135efaf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35877505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35988673"
 ---
-# <a name="update-outlooktaskgroup"></a><span data-ttu-id="b047f-103">Обновление outlooktaskgroup</span><span class="sxs-lookup"><span data-stu-id="b047f-103">Update outlooktaskgroup</span></span>
+# <a name="update-outlooktaskgroup"></a><span data-ttu-id="06b01-103">Обновление outlooktaskgroup</span><span class="sxs-lookup"><span data-stu-id="06b01-103">Update outlooktaskgroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b047f-104">Обновление свойств, доступных для записи, для группы задач Outlook.</span><span class="sxs-lookup"><span data-stu-id="b047f-104">Update the writable properties of an Outlook task group.</span></span>
+<span data-ttu-id="06b01-104">Обновление свойств, доступных для записи, для группы задач Outlook.</span><span class="sxs-lookup"><span data-stu-id="06b01-104">Update the writable properties of an Outlook task group.</span></span>
 
-<span data-ttu-id="b047f-105">Обратите внимание, что нельзя изменить имя группы задач по умолчанию "Мои задачи".</span><span class="sxs-lookup"><span data-stu-id="b047f-105">Note that you cannot modify the name of the default task group, "My Tasks".</span></span>
-## <a name="permissions"></a><span data-ttu-id="b047f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b047f-106">Permissions</span></span>
-<span data-ttu-id="b047f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b047f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="06b01-105">Обратите внимание, что нельзя изменить имя группы задач по умолчанию "Мои задачи".</span><span class="sxs-lookup"><span data-stu-id="06b01-105">Note that you cannot modify the name of the default task group, "My Tasks".</span></span>
+## <a name="permissions"></a><span data-ttu-id="06b01-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="06b01-106">Permissions</span></span>
+<span data-ttu-id="06b01-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06b01-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b047f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b047f-109">Permission type</span></span>      | <span data-ttu-id="b047f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b047f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="06b01-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="06b01-109">Permission type</span></span>      | <span data-ttu-id="06b01-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="06b01-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b047f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b047f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b047f-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b047f-112">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="b047f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b047f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b047f-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b047f-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="b047f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b047f-115">Application</span></span> | <span data-ttu-id="b047f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b047f-116">Not supported.</span></span> |
+|<span data-ttu-id="06b01-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="06b01-111">Delegated (work or school account)</span></span> | <span data-ttu-id="06b01-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="06b01-112">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="06b01-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="06b01-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06b01-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="06b01-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="06b01-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="06b01-115">Application</span></span> | <span data-ttu-id="06b01-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06b01-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b047f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b047f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="06b01-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="06b01-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="b047f-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b047f-118">Optional request headers</span></span>
-| <span data-ttu-id="b047f-119">Имя</span><span class="sxs-lookup"><span data-stu-id="b047f-119">Name</span></span>       | <span data-ttu-id="b047f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="b047f-120">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="06b01-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="06b01-118">Optional request headers</span></span>
+| <span data-ttu-id="06b01-119">Имя</span><span class="sxs-lookup"><span data-stu-id="06b01-119">Name</span></span>       | <span data-ttu-id="06b01-120">Описание</span><span class="sxs-lookup"><span data-stu-id="06b01-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="b047f-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b047f-121">Authorization</span></span>  | <span data-ttu-id="b047f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b047f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="06b01-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="06b01-121">Authorization</span></span>  | <span data-ttu-id="06b01-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="06b01-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b047f-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b047f-124">Request body</span></span>
-<span data-ttu-id="b047f-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="b047f-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="06b01-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="06b01-124">Request body</span></span>
+<span data-ttu-id="06b01-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="06b01-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="b047f-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="b047f-128">Property</span></span>     | <span data-ttu-id="b047f-129">Тип</span><span class="sxs-lookup"><span data-stu-id="b047f-129">Type</span></span>   |<span data-ttu-id="b047f-130">Описание</span><span class="sxs-lookup"><span data-stu-id="b047f-130">Description</span></span>|
+| <span data-ttu-id="06b01-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="06b01-128">Property</span></span>     | <span data-ttu-id="06b01-129">Тип</span><span class="sxs-lookup"><span data-stu-id="06b01-129">Type</span></span>   |<span data-ttu-id="06b01-130">Описание</span><span class="sxs-lookup"><span data-stu-id="06b01-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b047f-131">name</span><span class="sxs-lookup"><span data-stu-id="b047f-131">name</span></span>|<span data-ttu-id="b047f-132">String</span><span class="sxs-lookup"><span data-stu-id="b047f-132">String</span></span>|<span data-ttu-id="b047f-133">Имя группы задач.</span><span class="sxs-lookup"><span data-stu-id="b047f-133">The name of the task group.</span></span>|
+|<span data-ttu-id="06b01-131">name</span><span class="sxs-lookup"><span data-stu-id="06b01-131">name</span></span>|<span data-ttu-id="06b01-132">String</span><span class="sxs-lookup"><span data-stu-id="06b01-132">String</span></span>|<span data-ttu-id="06b01-133">Имя группы задач.</span><span class="sxs-lookup"><span data-stu-id="06b01-133">The name of the task group.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="b047f-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="b047f-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="06b01-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="06b01-134">Response</span></span>
 
-<span data-ttu-id="b047f-135">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b047f-135">If successful, this method returns a `200 OK` response code and updated [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b047f-136">Пример</span><span class="sxs-lookup"><span data-stu-id="b047f-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b047f-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="b047f-137">Request</span></span>
-<span data-ttu-id="b047f-138">В следующем примере имя группы задач изменяется на "личные задачи".</span><span class="sxs-lookup"><span data-stu-id="b047f-138">The following example changes the name of a task group to "Personal Tasks".</span></span> 
+<span data-ttu-id="06b01-135">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="06b01-135">If successful, this method returns a `200 OK` response code and updated [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="06b01-136">Пример</span><span class="sxs-lookup"><span data-stu-id="06b01-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="06b01-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="06b01-137">Request</span></span>
+<span data-ttu-id="06b01-138">В следующем примере имя группы задач изменяется на "личные задачи".</span><span class="sxs-lookup"><span data-stu-id="06b01-138">The following example changes the name of a task group to "Personal Tasks".</span></span> 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b047f-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="b047f-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="06b01-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="06b01-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskgroup"
@@ -66,26 +67,26 @@ Content-length: 28
   "name": "Personal Tasks",
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b047f-140">C#</span><span class="sxs-lookup"><span data-stu-id="b047f-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="06b01-140">C#</span><span class="sxs-lookup"><span data-stu-id="06b01-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-outlooktaskgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b047f-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="b047f-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="06b01-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="06b01-141">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-outlooktaskgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b047f-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="b047f-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="06b01-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="06b01-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlooktaskgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b047f-143">Java</span><span class="sxs-lookup"><span data-stu-id="b047f-143">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="06b01-143">Java</span><span class="sxs-lookup"><span data-stu-id="06b01-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-outlooktaskgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="b047f-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="b047f-144">Response</span></span>
-<span data-ttu-id="b047f-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b047f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="06b01-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="06b01-144">Response</span></span>
+<span data-ttu-id="06b01-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="06b01-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

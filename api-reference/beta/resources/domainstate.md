@@ -4,29 +4,30 @@ description: Представляет состояние асинхронных 
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c1afe3402d20c534a3e976d21a4f00de969f20ee
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 40e3bb3055e0156f00f95598f50a343adc332423
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657121"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973099"
 ---
-# <a name="domainstate-resource-type"></a><span data-ttu-id="f39aa-103">Тип ресурса Домаинстате</span><span class="sxs-lookup"><span data-stu-id="f39aa-103">domainState resource type</span></span>
+# <a name="domainstate-resource-type"></a><span data-ttu-id="c70a2-103">Тип ресурса Домаинстате</span><span class="sxs-lookup"><span data-stu-id="c70a2-103">domainState resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f39aa-104">Представляет состояние асинхронных операций, запланированных в домене.</span><span class="sxs-lookup"><span data-stu-id="f39aa-104">Represents the status of asynchronous operations scheduled on a domain.</span></span>
+<span data-ttu-id="c70a2-104">Представляет состояние асинхронных операций, запланированных в домене.</span><span class="sxs-lookup"><span data-stu-id="c70a2-104">Represents the status of asynchronous operations scheduled on a domain.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f39aa-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f39aa-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c70a2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="c70a2-105">Properties</span></span>
 
-| <span data-ttu-id="f39aa-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f39aa-106">Property</span></span>   | <span data-ttu-id="f39aa-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f39aa-107">Type</span></span> | <span data-ttu-id="f39aa-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f39aa-108">Description</span></span> |
+| <span data-ttu-id="c70a2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="c70a2-106">Property</span></span>   | <span data-ttu-id="c70a2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="c70a2-107">Type</span></span> | <span data-ttu-id="c70a2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c70a2-108">Description</span></span> |
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f39aa-109">Ластактиондатетиме</span><span class="sxs-lookup"><span data-stu-id="f39aa-109">lastActionDateTime</span></span> | <span data-ttu-id="f39aa-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f39aa-110">DateTimeOffset</span></span> | <span data-ttu-id="f39aa-111">Временная метка времени последнего действия.</span><span class="sxs-lookup"><span data-stu-id="f39aa-111">Timestamp for when the last activity occurred.</span></span> <span data-ttu-id="f39aa-112">Значение обновляется при планировании операции асинхронная задача начинается и после завершения операции.</span><span class="sxs-lookup"><span data-stu-id="f39aa-112">The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.</span></span> |
-| <span data-ttu-id="f39aa-113">восстановление</span><span class="sxs-lookup"><span data-stu-id="f39aa-113">operation</span></span> | <span data-ttu-id="f39aa-114">String</span><span class="sxs-lookup"><span data-stu-id="f39aa-114">String</span></span> | <span data-ttu-id="f39aa-115">Тип асинхронной операции.</span><span class="sxs-lookup"><span data-stu-id="f39aa-115">Type of asynchronous operation.</span></span> <span data-ttu-id="f39aa-116">Значения могут быть *форцеделете* или *верификацией*</span><span class="sxs-lookup"><span data-stu-id="f39aa-116">The values can be *ForceDelete* or *Verification*</span></span> |
-| <span data-ttu-id="f39aa-117">status</span><span class="sxs-lookup"><span data-stu-id="f39aa-117">status</span></span> | <span data-ttu-id="f39aa-118">String</span><span class="sxs-lookup"><span data-stu-id="f39aa-118">String</span></span> | <span data-ttu-id="f39aa-119">Текущее состояние операции.</span><span class="sxs-lookup"><span data-stu-id="f39aa-119">Current status of the operation.</span></span> <br> <span data-ttu-id="f39aa-120">*Запланированная* операция запланирована, но еще не запущена.</span><span class="sxs-lookup"><span data-stu-id="f39aa-120">*Scheduled* - Operation has been scheduled but has not started.</span></span> <br> <span data-ttu-id="f39aa-121">*Выполнение* — задача запущена и выполняется.</span><span class="sxs-lookup"><span data-stu-id="f39aa-121">*InProgress* - Task has started and is in progress.</span></span> <br> <span data-ttu-id="f39aa-122">*Failed* — не удалось выполнить операцию.</span><span class="sxs-lookup"><span data-stu-id="f39aa-122">*Failed* - Operation has failed.</span></span> |
+| <span data-ttu-id="c70a2-109">Ластактиондатетиме</span><span class="sxs-lookup"><span data-stu-id="c70a2-109">lastActionDateTime</span></span> | <span data-ttu-id="c70a2-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c70a2-110">DateTimeOffset</span></span> | <span data-ttu-id="c70a2-111">Временная метка времени последнего действия.</span><span class="sxs-lookup"><span data-stu-id="c70a2-111">Timestamp for when the last activity occurred.</span></span> <span data-ttu-id="c70a2-112">Значение обновляется при планировании операции асинхронная задача начинается и после завершения операции.</span><span class="sxs-lookup"><span data-stu-id="c70a2-112">The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.</span></span> |
+| <span data-ttu-id="c70a2-113">восстановление</span><span class="sxs-lookup"><span data-stu-id="c70a2-113">operation</span></span> | <span data-ttu-id="c70a2-114">String</span><span class="sxs-lookup"><span data-stu-id="c70a2-114">String</span></span> | <span data-ttu-id="c70a2-115">Тип асинхронной операции.</span><span class="sxs-lookup"><span data-stu-id="c70a2-115">Type of asynchronous operation.</span></span> <span data-ttu-id="c70a2-116">Значения могут быть *форцеделете* или *верификацией*</span><span class="sxs-lookup"><span data-stu-id="c70a2-116">The values can be *ForceDelete* or *Verification*</span></span> |
+| <span data-ttu-id="c70a2-117">status</span><span class="sxs-lookup"><span data-stu-id="c70a2-117">status</span></span> | <span data-ttu-id="c70a2-118">String</span><span class="sxs-lookup"><span data-stu-id="c70a2-118">String</span></span> | <span data-ttu-id="c70a2-119">Текущее состояние операции.</span><span class="sxs-lookup"><span data-stu-id="c70a2-119">Current status of the operation.</span></span> <br> <span data-ttu-id="c70a2-120">*Запланированная* операция запланирована, но еще не запущена.</span><span class="sxs-lookup"><span data-stu-id="c70a2-120">*Scheduled* - Operation has been scheduled but has not started.</span></span> <br> <span data-ttu-id="c70a2-121">*Выполнение* — задача запущена и выполняется.</span><span class="sxs-lookup"><span data-stu-id="c70a2-121">*InProgress* - Task has started and is in progress.</span></span> <br> <span data-ttu-id="c70a2-122">*Failed* — не удалось выполнить операцию.</span><span class="sxs-lookup"><span data-stu-id="c70a2-122">*Failed* - Operation has failed.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="f39aa-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f39aa-123">JSON representation</span></span>
-<span data-ttu-id="f39aa-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f39aa-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c70a2-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c70a2-123">JSON representation</span></span>
+<span data-ttu-id="c70a2-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c70a2-124">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

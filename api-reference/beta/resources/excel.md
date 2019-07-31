@@ -4,54 +4,55 @@ description: 'Можно использовать Microsoft Graph, чтобы р
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: fbb07f14f9cd43212109fdee45171ac09bbdd64d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333906"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972077"
 ---
-# <a name="working-with-excel-in-microsoft-graph"></a><span data-ttu-id="dc9e4-106">Работа с Excel в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="dc9e4-106">Working with Excel in Microsoft Graph</span></span>
+# <a name="working-with-excel-in-microsoft-graph"></a><span data-ttu-id="5dc9b-106">Работа с Excel в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="5dc9b-106">Working with Excel in Microsoft Graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dc9e4-p102">Можно использовать Microsoft Graph, чтобы разрешать веб-приложениям и мобильным приложениям считывать и изменять книги Excel, хранящиеся в OneDrive, SharePoint или на других поддерживаемых платформах хранения. Ресурс `Workbook` (или файл Excel) содержит все остальные ресурсы Excel благодаря отношениям. Можно получить доступ к книге через интерфейс [API Drive](drive.md), указав расположение файла в URL-адресе. Например:</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p102">You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:</span></span>
+<span data-ttu-id="5dc9b-p102">Можно использовать Microsoft Graph, чтобы разрешать веб-приложениям и мобильным приложениям считывать и изменять книги Excel, хранящиеся в OneDrive, SharePoint или на других поддерживаемых платформах хранения. Ресурс `Workbook` (или файл Excel) содержит все остальные ресурсы Excel благодаря отношениям. Можно получить доступ к книге через интерфейс [API Drive](drive.md), указав расположение файла в URL-адресе. Например:</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p102">You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:</span></span>
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-<span data-ttu-id="dc9e4-p103">Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Пример: `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p103">You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span></span>  
-<span data-ttu-id="dc9e4-113">возвращает коллекцию объектов листа, включенных в книгу.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-113">returns a collection of worksheet objects that are part of the workbook.</span></span>    
+<span data-ttu-id="5dc9b-p103">Можно получить доступ к набору объектов Excel (например, Table, Range или Chart) с помощью стандартных интерфейсов API REST, чтобы выполнять в книге операции создания, чтения, обновления и удаления (CRUD). Например, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p103">You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span></span>  
+<span data-ttu-id="5dc9b-113">возвращает коллекцию объектов листа, включенных в книгу.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-113">returns a collection of worksheet objects that are part of the workbook.</span></span>    
 
 
-<span data-ttu-id="dc9e4-114">**Примечание:** REST API для Excel поддерживает только книги, отформатированные в формате Office Open XML.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-114">**Note:** The Excel REST API supports only Office Open XML file formatted workbooks.</span></span> <span data-ttu-id="dc9e4-115">Книги с расширением `.xls` не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-115">The `.xls` extension workbooks are not supported.</span></span> 
+<span data-ttu-id="5dc9b-114">**Примечание:** REST API для Excel поддерживает только книги, отформатированные в формате Office Open XML.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-114">**Note:** The Excel REST API supports only Office Open XML file formatted workbooks.</span></span> <span data-ttu-id="5dc9b-115">Книги с расширением `.xls` не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-115">The `.xls` extension workbooks are not supported.</span></span> 
 
-## <a name="authorization-and-scopes"></a><span data-ttu-id="dc9e4-116">Авторизация и области</span><span class="sxs-lookup"><span data-stu-id="dc9e4-116">Authorization and scopes</span></span>
+## <a name="authorization-and-scopes"></a><span data-ttu-id="5dc9b-116">Авторизация и области</span><span class="sxs-lookup"><span data-stu-id="5dc9b-116">Authorization and scopes</span></span>
 
-<span data-ttu-id="dc9e4-p105">Для проверки подлинности интерфейсов API Excel можно использовать [конечную точку Azure AD вер. 20](https://developer.microsoft.com/graph/docs/authorization/converged_auth). Для всех интерфейсов API требуется заголовок HTTP `Authorization: Bearer {access-token}`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p105">You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.</span></span>   
+<span data-ttu-id="5dc9b-p105">Для проверки подлинности интерфейсов API Excel можно использовать [конечную точку Azure AD вер. 20](https://developer.microsoft.com/graph/docs/authorization/converged_auth). Для всех интерфейсов API требуется заголовок HTTP `Authorization: Bearer {access-token}`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p105">You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.</span></span>   
   
-<span data-ttu-id="dc9e4-119">Для использования ресурса Excel требуется одна из указанных ниже [областей разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes).</span><span class="sxs-lookup"><span data-stu-id="dc9e4-119">One of the following [permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to use the Excel resource:</span></span>
+<span data-ttu-id="5dc9b-119">Для использования ресурса Excel требуется одна из указанных ниже [областей разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes).</span><span class="sxs-lookup"><span data-stu-id="5dc9b-119">One of the following [permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to use the Excel resource:</span></span>
 
-* <span data-ttu-id="dc9e4-120">Files.Read;</span><span class="sxs-lookup"><span data-stu-id="dc9e4-120">Files.Read</span></span> 
-* <span data-ttu-id="dc9e4-121">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-121">Files.ReadWrite</span></span>
+* <span data-ttu-id="5dc9b-120">Files.Read;</span><span class="sxs-lookup"><span data-stu-id="5dc9b-120">Files.Read</span></span> 
+* <span data-ttu-id="5dc9b-121">Files.ReadWrite.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-121">Files.ReadWrite</span></span>
 
 
-## <a name="sessions-and-persistence"></a><span data-ttu-id="dc9e4-122">Сеансы и сохраняемость</span><span class="sxs-lookup"><span data-stu-id="dc9e4-122">Sessions and persistence</span></span>
+## <a name="sessions-and-persistence"></a><span data-ttu-id="5dc9b-122">Сеансы и сохраняемость</span><span class="sxs-lookup"><span data-stu-id="5dc9b-122">Sessions and persistence</span></span>
 
-<span data-ttu-id="dc9e4-123">Интерфейсы API Excel можно вызвать в одном из двух режимов.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-123">Excel APIs can be called in one of two modes:</span></span> 
+<span data-ttu-id="5dc9b-123">Интерфейсы API Excel можно вызвать в одном из двух режимов.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-123">Excel APIs can be called in one of two modes:</span></span> 
 
-1. <span data-ttu-id="dc9e4-p106">Постоянный сеанс — все изменения, внесенные в книгу, сохраняются (сохраненные). Это обычный режим работы.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p106">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
-2. <span data-ttu-id="dc9e4-p107">Временный сеанс — изменения, внесенные интерфейсом API, не сохраняются в исходном расположении. Вместо этого внутренний сервер Excel сохраняет временную копию файла, в которой отражены изменения, внесенные во время конкретного сеанса API. Когда истечет срок действия сеанса Excel, изменения будут потеряны. Этот режим удобен для приложений, которым нужно выполнять анализ или получать результаты вычислений или изображение диаграммы, не изменяя состояние документа.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p107">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
+1. <span data-ttu-id="5dc9b-p106">Постоянный сеанс — все изменения, внесенные в книгу, сохраняются (сохраненные). Это обычный режим работы.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p106">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
+2. <span data-ttu-id="5dc9b-p107">Временный сеанс — изменения, внесенные интерфейсом API, не сохраняются в исходном расположении. Вместо этого внутренний сервер Excel сохраняет временную копию файла, в которой отражены изменения, внесенные во время конкретного сеанса API. Когда истечет срок действия сеанса Excel, изменения будут потеряны. Этот режим удобен для приложений, которым нужно выполнять анализ или получать результаты вычислений или изображение диаграммы, не изменяя состояние документа.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p107">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
 
-<span data-ttu-id="dc9e4-130">Чтобы представить сеанс в API, воспользуйтесь заголовком `workbook-session-id: {session-id}`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-130">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
+<span data-ttu-id="5dc9b-130">Чтобы представить сеанс в API, используйте заголовок `workbook-session-id: {session-id}`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-130">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
 
-><span data-ttu-id="dc9e4-p108">**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p108">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
+><span data-ttu-id="5dc9b-p108">**Примечание.** Заголовок сеанса не является обязательным для работы API Excel. Тем не менее мы рекомендуем использовать заголовок сеанса для повышения производительности. Если вы не используете заголовок сеанса, изменения, внесенные во время вызова API _сохраняются_ в файл.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p108">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
 
-### <a name="api-call-to-get-a-session"></a><span data-ttu-id="dc9e4-134">Вызов API для получения сеанса</span><span class="sxs-lookup"><span data-stu-id="dc9e4-134">API call to get a session</span></span> 
+### <a name="api-call-to-get-a-session"></a><span data-ttu-id="5dc9b-134">Вызов API для получения сеанса</span><span class="sxs-lookup"><span data-stu-id="5dc9b-134">API call to get a session</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="dc9e4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-135">Request</span></span> 
+#### <a name="request"></a><span data-ttu-id="5dc9b-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-135">Request</span></span> 
 
-<span data-ttu-id="dc9e4-136">Передайте объект JSON, установив для параметра `persistchanges` значение `true` или `false`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-136">Pass a JSON object by setting the `persistchanges` value to `true` or `false`.</span></span> 
+<span data-ttu-id="5dc9b-136">Передайте объект JSON, установив для параметра `persistchanges` значение `true` или `false`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-136">Pass a JSON object by setting the `persistchanges` value to `true` or `false`.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -62,10 +63,10 @@ authorization: Bearer {access-token}
 { "persistChanges": true }
 ```
 
-<span data-ttu-id="dc9e4-137">Если для параметра `persistChanges` установлено значение `false`, возвращается идентификатор непостоянного сеанса.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-137">When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.</span></span>  
+<span data-ttu-id="5dc9b-137">Если для параметра `persistChanges` установлено значение `false`, возвращается идентификатор непостоянного сеанса.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-137">When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.</span></span>  
 
 
-#### <a name="response"></a><span data-ttu-id="dc9e4-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5dc9b-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="5dc9b-138">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,10 +80,10 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="usage"></a><span data-ttu-id="dc9e4-139">Применение</span><span class="sxs-lookup"><span data-stu-id="dc9e4-139">Usage</span></span> 
+#### <a name="usage"></a><span data-ttu-id="5dc9b-139">Применение</span><span class="sxs-lookup"><span data-stu-id="5dc9b-139">Usage</span></span> 
 
-<span data-ttu-id="dc9e4-140">Идентификатор сеанса, возвращенный из предыдущего вызова, передается в качестве заголовка при последующих запросах API в</span><span class="sxs-lookup"><span data-stu-id="dc9e4-140">The session ID returned from the previous call is passed as a header on subsequent API requests in</span></span>  
-<span data-ttu-id="dc9e4-141">заголовке HTTP `workbook-session-id`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-141">`workbook-session-id` HTTP header.</span></span> 
+<span data-ttu-id="5dc9b-140">Идентификатор сеанса, возвращенный из предыдущего вызова, передается в качестве заголовка при последующих запросах API в</span><span class="sxs-lookup"><span data-stu-id="5dc9b-140">The session ID returned from the previous call is passed as a header on subsequent API requests in</span></span>  
+<span data-ttu-id="5dc9b-141">заголовке HTTP `workbook-session-id`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-141">`workbook-session-id` HTTP header.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -91,16 +92,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-><span data-ttu-id="dc9e4-142">Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-142">Note: If the session id has expired, a `404` HTTP error code is returned on the session.</span></span> <span data-ttu-id="dc9e4-143">В таком случае вы можете создать другой сеанс и продолжить работу.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-143">In such a scenarion, you can choose to create a new session and continue.</span></span> <span data-ttu-id="dc9e4-144">Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-144">Another approach would be to refresh the session periodically to keep the session alive.</span></span> <span data-ttu-id="dc9e4-145">Обычно срок действия сохраняемого сеанса истекает через 7 минут бездействия.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-145">Typically the persistent session expires after about 7 minutes of inactivity.</span></span> <span data-ttu-id="dc9e4-146">Срок действия несохраняемого сеанса истекает через 5 минут бездействия.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-146">Non persistent session expires after about 5 minutes of inactivity.</span></span> 
+><span data-ttu-id="5dc9b-142">Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-142">Note: If the session id has expired, a `404` HTTP error code is returned on the session.</span></span> <span data-ttu-id="5dc9b-143">В таком случае вы можете создать другой сеанс и продолжить работу.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-143">In such a scenarion, you can choose to create a new session and continue.</span></span> <span data-ttu-id="5dc9b-144">Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-144">Another approach would be to refresh the session periodically to keep the session alive.</span></span> <span data-ttu-id="5dc9b-145">Обычно срок действия сохраняемого сеанса истекает через 7 минут бездействия.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-145">Typically the persistent session expires after about 7 minutes of inactivity.</span></span> <span data-ttu-id="5dc9b-146">Срок действия несохраняемого сеанса истекает через 5 минут бездействия.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-146">Non persistent session expires after about 5 minutes of inactivity.</span></span> 
 
-## <a name="common-excel-scenarios"></a><span data-ttu-id="dc9e4-147">Стандартные сценарии Excel</span><span class="sxs-lookup"><span data-stu-id="dc9e4-147">Common Excel scenarios</span></span>
+## <a name="common-excel-scenarios"></a><span data-ttu-id="5dc9b-147">Стандартные сценарии Excel</span><span class="sxs-lookup"><span data-stu-id="5dc9b-147">Common Excel scenarios</span></span>
 
-<span data-ttu-id="dc9e4-148">В этом разделе приводятся примеры использования стандартных операций для объектов Excel.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-148">This section provides examples of the common operations you can use on Excel objects.</span></span>
+<span data-ttu-id="5dc9b-148">В этом разделе приводятся примеры использования стандартных операций для объектов Excel.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-148">This section provides examples of the common operations you can use on Excel objects.</span></span>
 
-### <a name="worksheet-operations"></a><span data-ttu-id="dc9e4-149">Операции с листами</span><span class="sxs-lookup"><span data-stu-id="dc9e4-149">Worksheet operations</span></span>
+### <a name="worksheet-operations"></a><span data-ttu-id="5dc9b-149">Операции с листами</span><span class="sxs-lookup"><span data-stu-id="5dc9b-149">Worksheet operations</span></span>
 
-#### <a name="list-worksheets-part-of-the-workbook"></a><span data-ttu-id="dc9e4-150">Список листов, являющихся частью книги</span><span class="sxs-lookup"><span data-stu-id="dc9e4-150">List worksheets part of the workbook</span></span> 
-<span data-ttu-id="dc9e4-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-151">Request</span></span> 
+#### <a name="list-worksheets-part-of-the-workbook"></a><span data-ttu-id="5dc9b-150">Список листов, являющихся частью книги</span><span class="sxs-lookup"><span data-stu-id="5dc9b-150">List worksheets part of the workbook</span></span> 
+<span data-ttu-id="5dc9b-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-151">Request</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -110,7 +111,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-152">Response</span></span>
+<span data-ttu-id="5dc9b-152">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-152">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -137,7 +138,7 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
-#### <a name="add-a-new-worksheet"></a><span data-ttu-id="dc9e4-153">Добавление листа</span><span class="sxs-lookup"><span data-stu-id="dc9e4-153">Add a new worksheet</span></span> 
+#### <a name="add-a-new-worksheet"></a><span data-ttu-id="5dc9b-153">Добавление листа</span><span class="sxs-lookup"><span data-stu-id="5dc9b-153">Add a new worksheet</span></span> 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -149,7 +150,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-<span data-ttu-id="dc9e4-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="dc9e4-154">Response</span></span>
+<span data-ttu-id="5dc9b-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-154">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -165,7 +166,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-a-new-worksheet"></a><span data-ttu-id="dc9e4-155">Получение нового листа</span><span class="sxs-lookup"><span data-stu-id="dc9e4-155">Get a new worksheet</span></span> 
+#### <a name="get-a-new-worksheet"></a><span data-ttu-id="5dc9b-155">Получение нового листа</span><span class="sxs-lookup"><span data-stu-id="5dc9b-155">Get a new worksheet</span></span> 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -175,7 +176,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-156">Ответ</span><span class="sxs-lookup"><span data-stu-id="dc9e4-156">Response</span></span>
+<span data-ttu-id="5dc9b-156">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-156">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -191,11 +192,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="dc9e4-p110">\*\* Примечание. Листы также можно получать, используя идентификатор. Однако в настоящее время идентификатор содержит символы `{` и "}", поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить лист с идентификатором `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, преобразуйте идентификатор в путь URL: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p110">\*\* Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span></span> 
+<span data-ttu-id="5dc9b-p110">\*\* Примечание. Листы также можно получать, используя идентификатор. Однако в настоящее время идентификатор содержит символы `{` и "}", поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить лист с идентификатором `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, преобразуйте идентификатор в путь URL: `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p110">\*\* Note: Worksheets can also be retrieved using the ID. However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work. Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span></span> 
 
-#### <a name="delete-a-worksheet"></a><span data-ttu-id="dc9e4-160">Удаление листа</span><span class="sxs-lookup"><span data-stu-id="dc9e4-160">Delete a worksheet</span></span>
+#### <a name="delete-a-worksheet"></a><span data-ttu-id="5dc9b-160">Удаление листа</span><span class="sxs-lookup"><span data-stu-id="5dc9b-160">Delete a worksheet</span></span>
 
-<span data-ttu-id="dc9e4-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-161">Request</span></span>
+<span data-ttu-id="5dc9b-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-161">Request</span></span>
 ```
 DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
@@ -203,16 +204,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-162">Response</span></span>
+<span data-ttu-id="5dc9b-162">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-162">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="update-worksheet-properties"></a><span data-ttu-id="dc9e4-163">Обновление свойств листа</span><span class="sxs-lookup"><span data-stu-id="dc9e4-163">Update worksheet properties</span></span>
+#### <a name="update-worksheet-properties"></a><span data-ttu-id="5dc9b-163">Обновление свойств листа</span><span class="sxs-lookup"><span data-stu-id="5dc9b-163">Update worksheet properties</span></span>
 
-<span data-ttu-id="dc9e4-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-164">Request</span></span> 
+<span data-ttu-id="5dc9b-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-164">Request</span></span> 
 
 ```
 PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
@@ -224,7 +225,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-<span data-ttu-id="dc9e4-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-165">Response</span></span>
+<span data-ttu-id="5dc9b-165">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-165">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -241,11 +242,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-### <a name="chart-operations"></a><span data-ttu-id="dc9e4-166">Операции с диаграммами</span><span class="sxs-lookup"><span data-stu-id="dc9e4-166">Chart operations</span></span>
+### <a name="chart-operations"></a><span data-ttu-id="5dc9b-166">Операции с диаграммами</span><span class="sxs-lookup"><span data-stu-id="5dc9b-166">Chart operations</span></span>
 
-#### <a name="list-charts-that-are-part-of-the-worksheet"></a><span data-ttu-id="dc9e4-167">Список диаграмм, являющихся частью листа</span><span class="sxs-lookup"><span data-stu-id="dc9e4-167">List charts that are part of the worksheet</span></span> 
+#### <a name="list-charts-that-are-part-of-the-worksheet"></a><span data-ttu-id="5dc9b-167">Список диаграмм, являющихся частью листа</span><span class="sxs-lookup"><span data-stu-id="5dc9b-167">List charts that are part of the worksheet</span></span> 
 
-<span data-ttu-id="dc9e4-168">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-168">Request</span></span>
+<span data-ttu-id="5dc9b-168">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-168">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
@@ -254,7 +255,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-<span data-ttu-id="dc9e4-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-169">Response</span></span>
+<span data-ttu-id="5dc9b-169">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-169">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -276,11 +277,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="dc9e4-p111">\*\* Примечание. Идентификатор диаграмма содержит символы `{` и `}` (пример: `{00000000-0008-0000-0100-000003000000}`), поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить объект диаграммы, преобразуйте идентификатор в путь URL: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p111">\*\* Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span></span> 
+<span data-ttu-id="5dc9b-p111">\*\* Примечание. Идентификатор диаграмма содержит символы `{` и `}` (пример: `{00000000-0008-0000-0100-000003000000}`), поэтому необходимо использовать кодировку URL, чтобы API работал. Пример. Чтобы получить объект диаграммы, преобразуйте идентификатор в путь URL: `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p111">\*\* Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work. Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span></span> 
 
-#### <a name="get-chart-image"></a><span data-ttu-id="dc9e4-172">Получение изображения диаграммы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-172">Get chart image</span></span>
+#### <a name="get-chart-image"></a><span data-ttu-id="5dc9b-172">Получение изображения диаграммы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-172">Get chart image</span></span>
 
-<span data-ttu-id="dc9e4-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-173">Request</span></span>
+<span data-ttu-id="5dc9b-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-173">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
@@ -288,7 +289,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-<span data-ttu-id="dc9e4-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-174">Response</span></span>
+<span data-ttu-id="5dc9b-174">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-174">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -300,9 +301,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-chart"></a><span data-ttu-id="dc9e4-175">Добавление диаграммы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-175">Add a chart</span></span>  
+#### <a name="add-a-chart"></a><span data-ttu-id="5dc9b-175">Добавление диаграммы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-175">Add a chart</span></span>  
 
-<span data-ttu-id="dc9e4-176">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-176">Request</span></span>
+<span data-ttu-id="5dc9b-176">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-176">Request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -314,7 +315,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-<span data-ttu-id="dc9e4-177">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-177">Response</span></span>
+<span data-ttu-id="5dc9b-177">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-177">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -333,7 +334,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-a-chart"></a><span data-ttu-id="dc9e4-178">Обновление диаграммы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-178">Update a chart</span></span>
+#### <a name="update-a-chart"></a><span data-ttu-id="5dc9b-178">Обновление диаграммы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-178">Update a chart</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -345,7 +346,7 @@ workbook-session-id: {session-id}
 { "height": 216.0, "left": 0, "name": "NewName", "top": 0, "width": 360.0 }
 
 ```
-<span data-ttu-id="dc9e4-179">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-179">Response</span></span> 
+<span data-ttu-id="5dc9b-179">Отклик</span><span class="sxs-lookup"><span data-stu-id="5dc9b-179">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -364,9 +365,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-chart-source-data"></a><span data-ttu-id="dc9e4-180">Обновление исходных данных диаграммы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-180">Update chart source data</span></span> 
+#### <a name="update-chart-source-data"></a><span data-ttu-id="5dc9b-180">Обновление исходных данных диаграммы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-180">Update chart source data</span></span> 
 
-<span data-ttu-id="dc9e4-181">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-181">Request</span></span>
+<span data-ttu-id="5dc9b-181">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-181">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
@@ -378,17 +379,17 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-<span data-ttu-id="dc9e4-182">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-182">Response</span></span>
+<span data-ttu-id="5dc9b-182">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-182">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="table-operations"></a><span data-ttu-id="dc9e4-183">Операции с таблицей</span><span class="sxs-lookup"><span data-stu-id="dc9e4-183">Table operations</span></span> 
+### <a name="table-operations"></a><span data-ttu-id="5dc9b-183">Операции с таблицей</span><span class="sxs-lookup"><span data-stu-id="5dc9b-183">Table operations</span></span> 
 
-#### <a name="get-list-of-tables"></a><span data-ttu-id="dc9e4-184">Получение списка таблиц</span><span class="sxs-lookup"><span data-stu-id="dc9e4-184">Get list of tables</span></span> 
+#### <a name="get-list-of-tables"></a><span data-ttu-id="5dc9b-184">Получение списка таблиц</span><span class="sxs-lookup"><span data-stu-id="5dc9b-184">Get list of tables</span></span> 
 
-<span data-ttu-id="dc9e4-185">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-185">Request</span></span>
+<span data-ttu-id="5dc9b-185">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-185">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
@@ -397,16 +398,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-186">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-186">Response</span></span>
+<span data-ttu-id="5dc9b-186">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-186">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="create-table"></a><span data-ttu-id="dc9e4-187">Создание таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-187">Create table</span></span>
+#### <a name="create-table"></a><span data-ttu-id="5dc9b-187">Создание таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-187">Create table</span></span>
 
-<span data-ttu-id="dc9e4-188">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-188">Request</span></span>
+<span data-ttu-id="5dc9b-188">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-188">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
@@ -417,7 +418,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-<span data-ttu-id="dc9e4-189">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-189">Response</span></span>
+<span data-ttu-id="5dc9b-189">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-189">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -434,9 +435,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-table"></a><span data-ttu-id="dc9e4-190">Обновление таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-190">Update table</span></span>
+#### <a name="update-table"></a><span data-ttu-id="5dc9b-190">Обновление таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-190">Update table</span></span>
 
-<span data-ttu-id="dc9e4-191">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-191">Request</span></span>
+<span data-ttu-id="5dc9b-191">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-191">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
@@ -447,7 +448,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-<span data-ttu-id="dc9e4-192">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-192">Response</span></span>
+<span data-ttu-id="5dc9b-192">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-192">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -464,8 +465,8 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-rows"></a><span data-ttu-id="dc9e4-193">Получение списка строк таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-193">Get list of table rows</span></span>
-<span data-ttu-id="dc9e4-194">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-194">Request</span></span> 
+#### <a name="get-list-of-table-rows"></a><span data-ttu-id="5dc9b-193">Получение списка строк таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-193">Get list of table rows</span></span>
+<span data-ttu-id="5dc9b-194">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-194">Request</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -474,7 +475,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-195">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-195">Response</span></span>
+<span data-ttu-id="5dc9b-195">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-195">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -554,9 +555,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-columns"></a><span data-ttu-id="dc9e4-196">Получение списка столбцов таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-196">Get list of table columns</span></span>
+#### <a name="get-list-of-table-columns"></a><span data-ttu-id="5dc9b-196">Получение списка столбцов таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-196">Get list of table columns</span></span>
 
-<span data-ttu-id="dc9e4-197">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-197">Request</span></span>
+<span data-ttu-id="5dc9b-197">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-197">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
@@ -564,7 +565,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-198">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-198">Response</span></span> 
+<span data-ttu-id="5dc9b-198">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-198">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -666,9 +667,9 @@ content-type: application/json;odata.metadata
 ```
 
 
-#### <a name="add-a-table-row"></a><span data-ttu-id="dc9e4-199">Добавление строки таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-199">Add a table row</span></span>
+#### <a name="add-a-table-row"></a><span data-ttu-id="5dc9b-199">Добавление строки таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-199">Add a table row</span></span>
 
-<span data-ttu-id="dc9e4-200">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-200">Request</span></span>
+<span data-ttu-id="5dc9b-200">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-200">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
@@ -679,7 +680,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-<span data-ttu-id="dc9e4-201">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-201">Response</span></span>
+<span data-ttu-id="5dc9b-201">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-201">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -699,9 +700,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-table-column"></a><span data-ttu-id="dc9e4-202">Добавление столбца таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-202">Add a table column</span></span> 
+#### <a name="add-a-table-column"></a><span data-ttu-id="5dc9b-202">Добавление столбца таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-202">Add a table column</span></span> 
 
-<span data-ttu-id="dc9e4-203">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-203">Request</span></span>
+<span data-ttu-id="5dc9b-203">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-203">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
@@ -712,7 +713,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-<span data-ttu-id="dc9e4-204">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-204">Response</span></span> 
+<span data-ttu-id="5dc9b-204">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-204">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -739,9 +740,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="delete-table-row"></a><span data-ttu-id="dc9e4-205">Удаление строки таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-205">Delete table row</span></span>
+#### <a name="delete-table-row"></a><span data-ttu-id="5dc9b-205">Удаление строки таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-205">Delete table row</span></span>
 
-<span data-ttu-id="dc9e4-206">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-206">Request</span></span>
+<span data-ttu-id="5dc9b-206">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-206">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
@@ -749,14 +750,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-207">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-207">Response</span></span>
+<span data-ttu-id="5dc9b-207">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-207">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="delete-table-column"></a><span data-ttu-id="dc9e4-208">Удаление столбца таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-208">Delete table column</span></span> 
-<span data-ttu-id="dc9e4-209">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-209">Request</span></span>
+#### <a name="delete-table-column"></a><span data-ttu-id="5dc9b-208">Удаление столбца таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-208">Delete table column</span></span> 
+<span data-ttu-id="5dc9b-209">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-209">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
@@ -764,14 +765,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-210">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-210">Response</span></span>
+<span data-ttu-id="5dc9b-210">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-210">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="convert-table-to-range"></a><span data-ttu-id="dc9e4-211">Преобразование таблицы в диапазон</span><span class="sxs-lookup"><span data-stu-id="dc9e4-211">Convert table to range</span></span> 
-<span data-ttu-id="dc9e4-212">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-212">Request</span></span>
+#### <a name="convert-table-to-range"></a><span data-ttu-id="5dc9b-211">Преобразование таблицы в диапазон</span><span class="sxs-lookup"><span data-stu-id="5dc9b-211">Convert table to range</span></span> 
+<span data-ttu-id="5dc9b-212">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-212">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
@@ -779,15 +780,15 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-213">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-213">Response</span></span>
+<span data-ttu-id="5dc9b-213">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-213">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="table-sort"></a><span data-ttu-id="dc9e4-214">Сортировка таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-214">Table sort</span></span>
-<span data-ttu-id="dc9e4-215">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-215">Request</span></span>
+#### <a name="table-sort"></a><span data-ttu-id="5dc9b-214">Сортировка таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-214">Table sort</span></span>
+<span data-ttu-id="5dc9b-215">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-215">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
@@ -804,14 +805,14 @@ workbook-session-id: {session-id}
 ```
 
 
-<span data-ttu-id="dc9e4-216">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-216">Response</span></span>
+<span data-ttu-id="5dc9b-216">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-216">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="table-filter"></a><span data-ttu-id="dc9e4-217">Фильтрация таблицы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-217">Table filter</span></span>
-<span data-ttu-id="dc9e4-218">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-218">Request</span></span>
+#### <a name="table-filter"></a><span data-ttu-id="5dc9b-217">Фильтрация таблицы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-217">Table filter</span></span>
+<span data-ttu-id="5dc9b-218">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-218">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
@@ -829,15 +830,15 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="dc9e4-219">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-219">Response</span></span>
+<span data-ttu-id="5dc9b-219">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-219">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="clear-filter"></a><span data-ttu-id="dc9e4-220">Очистка фильтра</span><span class="sxs-lookup"><span data-stu-id="dc9e4-220">Clear filter</span></span>
-<span data-ttu-id="dc9e4-221">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-221">Request</span></span>
+#### <a name="clear-filter"></a><span data-ttu-id="5dc9b-220">Очистка фильтра</span><span class="sxs-lookup"><span data-stu-id="5dc9b-220">Clear filter</span></span>
+<span data-ttu-id="5dc9b-221">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-221">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
@@ -845,17 +846,17 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-222">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-222">Response</span></span>
+<span data-ttu-id="5dc9b-222">Ответ</span><span class="sxs-lookup"><span data-stu-id="5dc9b-222">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="range-operations"></a><span data-ttu-id="dc9e4-223">Операции с диапазоном</span><span class="sxs-lookup"><span data-stu-id="dc9e4-223">Range operations</span></span>
+### <a name="range-operations"></a><span data-ttu-id="5dc9b-223">Операции с диапазоном</span><span class="sxs-lookup"><span data-stu-id="5dc9b-223">Range operations</span></span>
 
-#### <a name="get-range"></a><span data-ttu-id="dc9e4-224">Получение диапазона</span><span class="sxs-lookup"><span data-stu-id="dc9e4-224">Get Range</span></span> 
+#### <a name="get-range"></a><span data-ttu-id="5dc9b-224">Получение диапазона</span><span class="sxs-lookup"><span data-stu-id="5dc9b-224">Get Range</span></span> 
 
-<span data-ttu-id="dc9e4-225">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-225">Request</span></span>
+<span data-ttu-id="5dc9b-225">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-225">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
@@ -863,7 +864,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-226">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-226">Response</span></span> 
+<span data-ttu-id="5dc9b-226">Отклик</span><span class="sxs-lookup"><span data-stu-id="5dc9b-226">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -957,7 +958,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="range-update"></a><span data-ttu-id="dc9e4-227">Обновление диапазона</span><span class="sxs-lookup"><span data-stu-id="dc9e4-227">Range update</span></span> 
+#### <a name="range-update"></a><span data-ttu-id="5dc9b-227">Обновление диапазона</span><span class="sxs-lookup"><span data-stu-id="5dc9b-227">Range update</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1060,8 +1061,8 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="range-sort"></a><span data-ttu-id="dc9e4-228">Сортировка диапазона</span><span class="sxs-lookup"><span data-stu-id="dc9e4-228">Range sort</span></span>
-<span data-ttu-id="dc9e4-229">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-229">Request</span></span>
+#### <a name="range-sort"></a><span data-ttu-id="5dc9b-228">Сортировка диапазона</span><span class="sxs-lookup"><span data-stu-id="5dc9b-228">Range sort</span></span>
+<span data-ttu-id="5dc9b-229">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-229">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
@@ -1077,15 +1078,15 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="dc9e4-230">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-230">Response</span></span>
+<span data-ttu-id="5dc9b-230">Отклик</span><span class="sxs-lookup"><span data-stu-id="5dc9b-230">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-### <a name="named-items"></a><span data-ttu-id="dc9e4-231">Именованные элементы</span><span class="sxs-lookup"><span data-stu-id="dc9e4-231">Named items</span></span>
-<span data-ttu-id="dc9e4-232">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-232">Request</span></span>
+### <a name="named-items"></a><span data-ttu-id="5dc9b-231">Именованные элементы</span><span class="sxs-lookup"><span data-stu-id="5dc9b-231">Named items</span></span>
+<span data-ttu-id="5dc9b-232">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-232">Request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1094,7 +1095,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="dc9e4-233">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-233">Response</span></span> 
+<span data-ttu-id="5dc9b-233">Отклик</span><span class="sxs-lookup"><span data-stu-id="5dc9b-233">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1129,15 +1130,15 @@ content-type: application/json
 }
 ```
 
-### <a name="work-with-nulls"></a><span data-ttu-id="dc9e4-234">Работа со значениями null</span><span class="sxs-lookup"><span data-stu-id="dc9e4-234">Work with nulls</span></span>
+### <a name="work-with-nulls"></a><span data-ttu-id="5dc9b-234">Работа со значениями null</span><span class="sxs-lookup"><span data-stu-id="5dc9b-234">Work with nulls</span></span>
 
-#### <a name="null-input-in-2-d-array"></a><span data-ttu-id="dc9e4-235">Входное значение null в двумерном массиве</span><span class="sxs-lookup"><span data-stu-id="dc9e4-235">null input in 2-D array</span></span>
+#### <a name="null-input-in-2-d-array"></a><span data-ttu-id="5dc9b-235">Входное значение null в двумерном массиве</span><span class="sxs-lookup"><span data-stu-id="5dc9b-235">null input in 2-D array</span></span>
 
-<span data-ttu-id="dc9e4-p112">Входное значение `null` в двумерном массиве (для значений, числового формата, формулы) игнорируется в ресурсах Range и Table. Предполагаемый целевой объект (ячейка) не будет обновлен, если входное значение `null` отправлено в виде значений, числового формата или сетки значений формулы.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p112">`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.</span></span>
+<span data-ttu-id="5dc9b-p112">Входное значение `null` в двумерном массиве (для значений, числового формата, формулы) игнорируется в ресурсах Range и Table. Предполагаемый целевой объект (ячейка) не будет обновлен, если входное значение `null` отправлено в виде значений, числового формата или сетки значений формулы.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p112">`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.</span></span>
 
-<span data-ttu-id="dc9e4-238">Например, чтобы обновить только определенные части Range, такие как числовой формат ячейки, и сохранить существующий числовой формат в других частях Range, установите числовой формат там, где это необходимо, и отправьте `null` для других ячеек.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-238">For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.</span></span>
+<span data-ttu-id="5dc9b-238">Например, чтобы обновить только определенные части Range, такие как числовой формат ячейки, и сохранить существующий числовой формат в других частях Range, установите числовой формат там, где это необходимо, и отправьте `null` для других ячеек.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-238">For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.</span></span>
 
-<span data-ttu-id="dc9e4-239">В приведенном ниже запросе задаются только некоторые значения числового формата Range, в то время как в остальных случаях сохраняется имеющийся числовой формат (передаются значения null).</span><span class="sxs-lookup"><span data-stu-id="dc9e4-239">In the following set request, only some parts of the Range Number Format are set while the existing Number Format on the remaining part is retained (by passing nulls).</span></span>
+<span data-ttu-id="5dc9b-239">В приведенном ниже запросе задаются только некоторые значения числового формата Range, в то время как в остальных случаях сохраняется имеющийся числовой формат (передаются значения null).</span><span class="sxs-lookup"><span data-stu-id="5dc9b-239">In the following set request, only some parts of the Range Number Format are set while the existing Number Format on the remaining part is retained (by passing nulls).</span></span>
 
 ```json
 {
@@ -1146,9 +1147,9 @@ content-type: application/json
 }
 ```
 
-#### <a name="null-input-for-a-property"></a><span data-ttu-id="dc9e4-240">Входное значение null для свойства</span><span class="sxs-lookup"><span data-stu-id="dc9e4-240">null input for a property</span></span>
+#### <a name="null-input-for-a-property"></a><span data-ttu-id="5dc9b-240">Входное значение null для свойства</span><span class="sxs-lookup"><span data-stu-id="5dc9b-240">null input for a property</span></span>
 
-<span data-ttu-id="dc9e4-p113">`null` не является допустимым входным значением для всего свойства. Например, следующий пример недопустим, так как целые значения нельзя устанавливать на null или игнорировать.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p113">`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.</span></span>
+<span data-ttu-id="5dc9b-p113">`null` не является допустимым входным значением для всего свойства. Например, следующий пример недопустим, так как целые значения нельзя устанавливать на null или игнорировать.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p113">`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.</span></span>
 
 ```json
 {
@@ -1157,7 +1158,7 @@ content-type: application/json
 
 ```
 
-<span data-ttu-id="dc9e4-243">Следующий пример также недопустим, потому что значение null недопустимо для цвета.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-243">The following is not valid either as null is not a valid color value.</span></span>
+<span data-ttu-id="5dc9b-243">Следующий пример также недопустим, потому что значение null недопустимо для цвета.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-243">The following is not valid either as null is not a valid color value.</span></span>
 
 ```json
 {
@@ -1165,11 +1166,11 @@ content-type: application/json
 }
 ```
 
-#### <a name="null-response"></a><span data-ttu-id="dc9e4-244">Отклик — null</span><span class="sxs-lookup"><span data-stu-id="dc9e4-244">Null-Response</span></span>
+#### <a name="null-response"></a><span data-ttu-id="5dc9b-244">Отклик — null</span><span class="sxs-lookup"><span data-stu-id="5dc9b-244">Null-Response</span></span>
 
-<span data-ttu-id="dc9e4-245">Представление свойств форматирования, состоящее из неоднородных значений, приведет к возврату значения null в отклике.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-245">Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.</span></span>
+<span data-ttu-id="5dc9b-245">Представление свойств форматирования, состоящее из неоднородных значений, приведет к возврату значения null в отклике.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-245">Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.</span></span>
 
-<span data-ttu-id="dc9e4-p114">Например, Range может состоять из одной или нескольких ячеек. Если отдельные ячейки в указанном объекте Range не содержат единообразных значений форматирования, представление уровня диапазона будет неопределенным.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p114">For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.</span></span>
+<span data-ttu-id="5dc9b-p114">Например, Range может состоять из одной или нескольких ячеек. Если отдельные ячейки в указанном объекте Range не содержат единообразных значений форматирования, представление уровня диапазона будет неопределенным.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p114">For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.</span></span>
 
 ```json
 {
@@ -1179,20 +1180,20 @@ content-type: application/json
 ```
 
 
-### <a name="blank-input-and-output"></a><span data-ttu-id="dc9e4-248">Пустые входные и выходные данные</span><span class="sxs-lookup"><span data-stu-id="dc9e4-248">Blank input and output</span></span>
+### <a name="blank-input-and-output"></a><span data-ttu-id="5dc9b-248">Пустые входные и выходные данные</span><span class="sxs-lookup"><span data-stu-id="5dc9b-248">Blank input and output</span></span>
 
-<span data-ttu-id="dc9e4-p115">Пустые значения в запросах на обновление считаются указанием на очистку или сброс соответствующего свойства. Пустое значение представляется двумя двойными кавычками, не разделенными пробелом: `""`</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p115">Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
+<span data-ttu-id="5dc9b-p115">Пустые значения в запросах на обновление считаются указанием на очистку или сброс соответствующего свойства. Пустое значение представляется двумя двойными кавычками, не разделенными пробелом: `""`</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p115">Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
 
-<span data-ttu-id="dc9e4-251">Примеры:</span><span class="sxs-lookup"><span data-stu-id="dc9e4-251">Examples:</span></span>
+<span data-ttu-id="5dc9b-251">Примеры:</span><span class="sxs-lookup"><span data-stu-id="5dc9b-251">Examples:</span></span>
 
-* <span data-ttu-id="dc9e4-252">Для `values` значение диапазона очищено. Это аналогично очистке содержимого в приложении.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-252">For `values`, the range value is cleared out. This is the same as clearing the contents in the application.</span></span>
+* <span data-ttu-id="5dc9b-252">Для `values` значение диапазона очищено. Это аналогично очистке содержимого в приложении.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-252">For `values`, the range value is cleared out. This is the same as clearing the contents in the application.</span></span>
 
-* <span data-ttu-id="dc9e4-253">Для `numberFormat` числовому формату присвоено значение `General`.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-253">For `numberFormat`, the number format is set to `General`.</span></span>
+* <span data-ttu-id="5dc9b-253">Для `numberFormat` числовому формату присвоено значение `General`.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-253">For `numberFormat`, the number format is set to `General`.</span></span>
 
-* <span data-ttu-id="dc9e4-254">Для `formula` и `formulaLocale` значения формулы очищены.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-254">For `formula` and `formulaLocale`, the formula values are cleared.</span></span>
+* <span data-ttu-id="5dc9b-254">Для `formula` и `formulaLocale` значения формулы очищены.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-254">For `formula` and `formulaLocale`, the formula values are cleared.</span></span>
 
 
-<span data-ttu-id="dc9e4-p116">При операциях чтения будьте готовы получать пустые значения, если в ячейках нет содержимого. Если ячейка не содержит данных или значений, API возвращает пустое значение. Пустое значение представляется двумя двойными кавычками, не разделенными пробелом: `""`</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p116">For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
+<span data-ttu-id="5dc9b-p116">При операциях чтения будьте готовы получать пустые значения, если в ячейках нет содержимого. Если ячейка не содержит данных или значений, API возвращает пустое значение. Пустое значение представляется двумя двойными кавычками, не разделенными пробелом: `""`</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p116">For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
 
 ```json
 {
@@ -1207,22 +1208,22 @@ content-type: application/json
 ```
 
 
-### <a name="unbounded-range"></a><span data-ttu-id="dc9e4-258">Range без ограничений</span><span class="sxs-lookup"><span data-stu-id="dc9e4-258">Unbounded Range</span></span>
+### <a name="unbounded-range"></a><span data-ttu-id="5dc9b-258">Range без ограничений</span><span class="sxs-lookup"><span data-stu-id="5dc9b-258">Unbounded Range</span></span>
 
-#### <a name="read"></a><span data-ttu-id="dc9e4-259">Чтение</span><span class="sxs-lookup"><span data-stu-id="dc9e4-259">Read</span></span>
+#### <a name="read"></a><span data-ttu-id="5dc9b-259">Чтение</span><span class="sxs-lookup"><span data-stu-id="5dc9b-259">Read</span></span>
 
-<span data-ttu-id="dc9e4-260">Адрес Range без ограничений содержит только идентификаторы столбцов и строк, а также идентификаторы неопределенных строк и столбцов (соответственно). Пример:</span><span class="sxs-lookup"><span data-stu-id="dc9e4-260">Unbounded Range address contains only column or row identifiers and unspecified row identifier or column identifiers (respectively), such as:</span></span>
+<span data-ttu-id="5dc9b-260">Адрес Range без ограничений содержит только идентификаторы столбцов и строк, а также идентификаторы неопределенных строк и столбцов (соответственно). Пример:</span><span class="sxs-lookup"><span data-stu-id="5dc9b-260">Unbounded Range address contains only column or row identifiers and unspecified row identifier or column identifiers (respectively), such as:</span></span>
 
-* <span data-ttu-id="dc9e4-261">`C:C`, `A:F`, `A:XFD` (содержит неопределенные строки).</span><span class="sxs-lookup"><span data-stu-id="dc9e4-261">`C:C`, `A:F`, `A:XFD` (contains unspecified rows)</span></span>
-* <span data-ttu-id="dc9e4-262">`2:2`, `1:4`, `1:1048546` (содержит неопределенные столбцы).</span><span class="sxs-lookup"><span data-stu-id="dc9e4-262">`2:2`, `1:4`, `1:1048546` (contains unspecified columns)</span></span>
+* <span data-ttu-id="5dc9b-261">`C:C`, `A:F`, `A:XFD` (содержит неопределенные строки).</span><span class="sxs-lookup"><span data-stu-id="5dc9b-261">`C:C`, `A:F`, `A:XFD` (contains unspecified rows)</span></span>
+* <span data-ttu-id="5dc9b-262">`2:2`, `1:4`, `1:1048546` (содержит неопределенные столбцы).</span><span class="sxs-lookup"><span data-stu-id="5dc9b-262">`2:2`, `1:4`, `1:1048546` (contains unspecified columns)</span></span>
 
-<span data-ttu-id="dc9e4-p117">Когда API запрашивает Range без ограничений (`getRange('C:C')`), отклик содержит значение `null` для свойств на уровне ячеек, например `values`, `text`, `numberFormat` или `formula`. Другие свойства Range, например `address` или `cellCount`, отражают неограниченный диапазон.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p117">When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.</span></span>
+<span data-ttu-id="5dc9b-p117">Когда API запрашивает Range без ограничений (`getRange('C:C')`), отклик содержит значение `null` для свойств на уровне ячеек, например `values`, `text`, `numberFormat` или `formula`. Другие свойства Range, например `address` или `cellCount`, отражают неограниченный диапазон.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p117">When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.</span></span>
 
-#### <a name="write"></a><span data-ttu-id="dc9e4-265">Запись</span><span class="sxs-lookup"><span data-stu-id="dc9e4-265">Write</span></span>
+#### <a name="write"></a><span data-ttu-id="5dc9b-265">Запись</span><span class="sxs-lookup"><span data-stu-id="5dc9b-265">Write</span></span>
 
-<span data-ttu-id="dc9e4-266">Задание свойств уровня ячеек (например, значений, numberFormat и т. д.) для Range без ограничений **не допускается**, так как запрос на ввод может оказаться слишком большим для обработки.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-266">Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.</span></span>
+<span data-ttu-id="5dc9b-266">Задание свойств уровня ячеек (например, значений, numberFormat и т. д.) для Range без ограничений **не допускается**, так как запрос на ввод может оказаться слишком большим для обработки.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-266">Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.</span></span>
 
-<span data-ttu-id="dc9e4-267">Например, приведенный ниже запрос на обновление значений недопустим, так как запрашиваемый диапазон не ограничен.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-267">For example, the following is not a valid update request because the requested range is unbounded.</span></span>
+<span data-ttu-id="5dc9b-267">Например, приведенный ниже запрос на обновление значений недопустим, так как запрашиваемый диапазон не ограничен.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-267">For example, the following is not a valid update request because the requested range is unbounded.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1233,25 +1234,25 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
 }
 ```
 
-<span data-ttu-id="dc9e4-268">Когда для такого объекта Range предпринимается попытка выполнить операцию обновления, API возвращает ошибку.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-268">When an update operation is attempted on such a Range, the API will return an error.</span></span>
+<span data-ttu-id="5dc9b-268">Когда для такого объекта Range предпринимается попытка выполнить операцию обновления, API возвращает ошибку.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-268">When an update operation is attempted on such a Range, the API will return an error.</span></span>
 
 
-### <a name="large-range"></a><span data-ttu-id="dc9e4-269">Большой диапазон</span><span class="sxs-lookup"><span data-stu-id="dc9e4-269">Large Range</span></span>
+### <a name="large-range"></a><span data-ttu-id="5dc9b-269">Большой диапазон</span><span class="sxs-lookup"><span data-stu-id="5dc9b-269">Large Range</span></span>
 
-<span data-ttu-id="dc9e4-p118">Большой диапазон — это объект Range, размер которого слишком велик для одного вызова API. Множество факторов, например количество ячеек, значений, объектов numberFormat и формул, могут сделать запрос настолько большим, что он станет неподходящим для взаимодействия с API. Интерфейс API делает все возможное для возврата запрашиваемых данных или записи в них. Но обработка крупного запроса может привести к ошибке API из-за чрезмерного использования ресурсов.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p118">Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.</span></span>
+<span data-ttu-id="5dc9b-p118">Большой диапазон — это объект Range, размер которого слишком велик для одного вызова API. Множество факторов, например количество ячеек, значений, объектов numberFormat и формул, могут сделать запрос настолько большим, что он станет неподходящим для взаимодействия с API. Интерфейс API делает все возможное для возврата запрашиваемых данных или записи в них. Но обработка крупного запроса может привести к ошибке API из-за чрезмерного использования ресурсов.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p118">Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.</span></span>
 
-<span data-ttu-id="dc9e4-274">Чтобы избежать этого, рекомендуем выполнять операции чтения и записи для нескольких объектов Range меньшего размера.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-274">To avoid this, we recommend that you read or write for large Range in multiple smaller range sizes.</span></span>
+<span data-ttu-id="5dc9b-274">Чтобы избежать этого, рекомендуем выполнять операции чтения и записи для нескольких объектов Range меньшего размера.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-274">To avoid this, we recommend that you read or write for large Range in multiple smaller range sizes.</span></span>
 
 
-### <a name="single-input-copy"></a><span data-ttu-id="dc9e4-275">Копирование одного входного значения</span><span class="sxs-lookup"><span data-stu-id="dc9e4-275">Single input copy</span></span>
+### <a name="single-input-copy"></a><span data-ttu-id="5dc9b-275">Копирование одного входного значения</span><span class="sxs-lookup"><span data-stu-id="5dc9b-275">Single input copy</span></span>
 
-<span data-ttu-id="dc9e4-p119">Для поддержки обновления диапазона с использованием одинаковых значений или числового формата либо для применения одной и той же формулы ко всему диапазону в установленном интерфейсе API используется следующее соглашение. В Excel этот принцип аналогичен вводу значений или формул в диапазон в режиме CTRL+ВВОД.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p119">To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.</span></span>
+<span data-ttu-id="5dc9b-p119">Для поддержки обновления диапазона с использованием одинаковых значений или числового формата либо для применения одной и той же формулы ко всему диапазону в установленном интерфейсе API используется следующее соглашение. В Excel этот принцип аналогичен вводу значений или формул в диапазон в режиме CTRL+ВВОД.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p119">To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.</span></span>
 
-<span data-ttu-id="dc9e4-278">API ищет *значение одной ячейки* и, если размер целевого диапазона не соответствует размеру входного диапазона, обновление применяется ко всему диапазону в режиме CTRL+ВВОД с использованием значения или формулы в запросе.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-278">The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.</span></span>
+<span data-ttu-id="5dc9b-278">API ищет *значение одной ячейки* и, если размер целевого диапазона не соответствует размеру входного диапазона, обновление применяется ко всему диапазону в режиме CTRL+ВВОД с использованием значения или формулы в запросе.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-278">The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="dc9e4-279">Примеры</span><span class="sxs-lookup"><span data-stu-id="dc9e4-279">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="5dc9b-279">Примеры</span><span class="sxs-lookup"><span data-stu-id="5dc9b-279">Examples</span></span>
 
-<span data-ttu-id="dc9e4-p120">Следующий запрос добавляет в выбранный диапазон текст "Sample text". Обратите внимание, что Range содержит 200 ячеек, в то время как входные данные — значение лишь для одной ячейки.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p120">The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.</span></span>
+<span data-ttu-id="5dc9b-p120">Следующий запрос добавляет в выбранный диапазон текст "Sample text". Обратите внимание, что Range содержит 200 ячеек, в то время как входные данные — значение лишь для одной ячейки.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p120">The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1262,12 +1263,12 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 }
 ```
 
-### <a name="workbook-functions"></a><span data-ttu-id="dc9e4-282">Функции книги</span><span class="sxs-lookup"><span data-stu-id="dc9e4-282">Workbook functions</span></span> 
-<span data-ttu-id="dc9e4-283">Можно получить доступ к функциям книги через коллекцию функций, включенных в ресурс /Functions.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-283">You can access the workbook functions through a collection of functions included in the /Functions resource.</span></span> 
+### <a name="workbook-functions"></a><span data-ttu-id="5dc9b-282">Функции книги</span><span class="sxs-lookup"><span data-stu-id="5dc9b-282">Workbook functions</span></span> 
+<span data-ttu-id="5dc9b-283">Можно получить доступ к функциям книги через коллекцию функций, включенных в ресурс /Functions.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-283">You can access the workbook functions through a collection of functions included in the /Functions resource.</span></span> 
 
 <!-- LG: Where is the Functions resource? We should link to this.
 -->
-##### <a name="request"></a><span data-ttu-id="dc9e4-284">Запрос</span><span class="sxs-lookup"><span data-stu-id="dc9e4-284">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="5dc9b-284">Запрос</span><span class="sxs-lookup"><span data-stu-id="5dc9b-284">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/pmt
@@ -1283,7 +1284,7 @@ workbook-session-id: {session-id}
 ```
 
 
-##### <a name="response"></a><span data-ttu-id="dc9e4-285">Отклик</span><span class="sxs-lookup"><span data-stu-id="dc9e4-285">Response</span></span> 
+##### <a name="response"></a><span data-ttu-id="5dc9b-285">Отклик</span><span class="sxs-lookup"><span data-stu-id="5dc9b-285">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1299,11 +1300,11 @@ content-type: application/json
 }
 ```
 
-## <a name="error-information"></a><span data-ttu-id="dc9e4-286">Сведения об ошибках</span><span class="sxs-lookup"><span data-stu-id="dc9e4-286">Error information</span></span> 
+## <a name="error-information"></a><span data-ttu-id="5dc9b-286">Сведения об ошибках</span><span class="sxs-lookup"><span data-stu-id="5dc9b-286">Error information</span></span> 
 
-<span data-ttu-id="dc9e4-p121">Ошибки возвращаются с HTTP-кодом и объектом ошибки. Ошибки `code` и `message` объясняют причины возникновения ошибки.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-p121">Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.</span></span>
+<span data-ttu-id="5dc9b-p121">Ошибки возвращаются с HTTP-кодом и объектом ошибки. Ошибки `code` и `message` объясняют причины возникновения ошибки.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-p121">Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.</span></span>
  
-<span data-ttu-id="dc9e4-289">Ниже приведен пример.</span><span class="sxs-lookup"><span data-stu-id="dc9e4-289">The following is an example.</span></span>
+<span data-ttu-id="5dc9b-289">Ниже приведен пример.</span><span class="sxs-lookup"><span data-stu-id="5dc9b-289">The following is an example.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
