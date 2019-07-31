@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: ab4f40785401353887cba22eaeca620c75276051
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fa0f2bbf63c82f451f9c7b91a12dc81a28315b2a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956431"
 ---
 # <a name="delete-customerpayments"></a>Удаление Кустомерпайментс
 Удаление Кустомерпаймент из Dynamics 365 Business Central.
@@ -39,11 +40,11 @@ DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPay
 |Авторизация  |Bearer {токен}. Обязательный. |
 |If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментс**, **кустомерпайментс** не будет обновлен. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 

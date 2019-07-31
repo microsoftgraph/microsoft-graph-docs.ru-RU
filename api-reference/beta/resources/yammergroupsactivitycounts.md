@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 404dcd44baac005374634db097b79c10c86ae78f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 12ab6de821ad4cd4362bcd3baa82525f6894b747
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551437"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963761"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>Тип ресурса Яммерграупсактивитикаунтс
 
@@ -24,7 +25,7 @@ ms.locfileid: "32551437"
 | reportDate        | Дата   |
 | Репортпериод      | String |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

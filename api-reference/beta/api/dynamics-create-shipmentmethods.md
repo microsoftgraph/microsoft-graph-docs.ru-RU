@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4f83c186adf72dde6f88082db1a6156ebc7b12af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 178b5c2f7a728970ec12931f6e5bd6c06e1ead81
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463623"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956585"
 ---
 # <a name="create-shipmentmethods"></a>Создание Шипментмесодс
 Создайте объект метода отгрузки в Dynamics 365 Business Central.
@@ -40,8 +41,8 @@ POST /financials/companies('{id}')/shipmentMethods
 |Авторизация  |Bearer {токен}. Обязательный. |
 |Content-Type   |application/json          |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта **Шипментмесодс** в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта **шипментмесодс** в формате JSON.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **шипментмесодс** в тексте отклика.

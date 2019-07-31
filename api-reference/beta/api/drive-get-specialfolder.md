@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Используйте специальную коллекцию для доступа к специальной папке по имени.
 ms.date: 09/10/2017
 title: Получение специальных папок
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 019852314e905e16d157637e70f3fa2231564c45
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 557e5f8e3efe822c13fbcdaaad16c6be70fa6568
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957369"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по ее имени
 

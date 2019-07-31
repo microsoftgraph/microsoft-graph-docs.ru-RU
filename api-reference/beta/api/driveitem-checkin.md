@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: В этой статье рассказывается, как возвратить извлеченный ресурс DriveItem, чтобы сделать версию документа доступной другим пользователям.
 ms.date: 09/10/2017
 title: Возврат файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 18c06435e4fed868f13998a3724f4b13c0853c20
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4fb16edc3c38db72ffd2c33f891ed5cc3d74654d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861453"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957257"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>Возврат изменений в ресурсе DriveItem
 

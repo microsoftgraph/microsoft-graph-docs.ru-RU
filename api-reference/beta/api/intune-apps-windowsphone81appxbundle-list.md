@@ -4,12 +4,13 @@ description: Список свойств и связей объектов window
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 377bf4df991ad69940381b454c5c2e549afc9353
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: e4581c307b37c765218b921ded91264d0cc88263
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973021"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959938"
 ---
 # <a name="list-windowsphone81appxbundles"></a>Список windowsPhone81AppXBundles
 

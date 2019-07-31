@@ -4,12 +4,13 @@ description: Удаление учебного заведения.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 692f21bacf15f25074cce513dbe889a214434820
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 337bc03df9aec93bdcbfebc84db3467bf8748342
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860368"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955203"
 ---
 # <a name="delete-educationschool"></a>Удаление educationSchool
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4f51017ef57818961117078958b013a56597859d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 49f3e4abfa1fcfb3993a74069e04a24efaf33982
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956249"
 ---
 # <a name="get-items"></a>Получение элементов
 Получение свойств и связей объекта Item для Dynamics 365 Business Central.
@@ -39,10 +40,10 @@ GET /financials/companies('{id}')/items('{id}')
 |-------------|-------------------------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Items** в тексте отклика.
 
 ## <a name="example"></a>Пример

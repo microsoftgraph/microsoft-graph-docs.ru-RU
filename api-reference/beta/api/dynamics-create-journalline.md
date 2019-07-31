@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: c6ed8b1ccbe1f33cad174e1c5e4f9b3832f2a5c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 74c5f1210b4d8be40ca74eff5f0cf29769b5b691
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956620"
 ---
 # <a name="create-journallines"></a>Создание Жаурналлинес
 Создает объект строки журнала в Dynamics 365 Business Central.
@@ -40,8 +41,8 @@ POST /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json         |
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта **Жаурналлинес** в формате JSON.
+## <a name="request-body"></a>Тело запроса
+В тексте запроса добавьте представление объекта **жаурналлинес** в формате JSON.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **жаурналлинес** в тексте отклика.

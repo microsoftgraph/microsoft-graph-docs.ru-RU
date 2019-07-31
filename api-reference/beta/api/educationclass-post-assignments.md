@@ -4,12 +4,13 @@ description: 'Создает новое назначение. Только пр�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a27bb6d62897582e659022aea78a0539e09d8c57
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: f8f4b7fe917b9366f852b6fe0b620754890705a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324921"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955366"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -39,7 +40,7 @@ POST /education/classes/{id}/assignments
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [EducationAssignment](../resources/educationassignment.md) в формате JSON.
+В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
 
 
 ## <a name="response"></a>Отклик
@@ -75,7 +76,7 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-В тексте запроса добавьте представление объекта [EducationAssignment](../resources/educationassignment.md) в формате JSON.
+В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 

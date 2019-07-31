@@ -4,12 +4,13 @@ description: 'Обновление свойств ресурса, связанн
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3ce0db2353d91f17f059fe8a2dfd9d6c775e1e2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324699"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955553"
 ---
 # <a name="update-educationassignmentresource"></a>Обновление Едукатионассигнментресаурце
 
@@ -42,7 +43,7 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Дистрибутефорстудентворк|Логический| Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.|
+|Дистрибутефорстудентворк|Boolean| Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.|
 |resource|Едукатионресаурце| Объект Resource. |
 
 ## <a name="response"></a>Отклик
@@ -64,7 +65,7 @@ Content-length: 822
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

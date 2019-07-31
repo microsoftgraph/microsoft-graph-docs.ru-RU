@@ -4,12 +4,13 @@ description: Удаляет политику безопасности Виндо
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 400b8b9e1c8d83983f08eab2013a72be3178c73f
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 37fc5241a8337b96d9415a4954ad7a6512673a4d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33933965"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958762"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>Удаление Виндовсоффицеклиентсекуритиконфигуратион
 

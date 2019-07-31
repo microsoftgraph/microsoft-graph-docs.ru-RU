@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 27bef92d9392cd6369564e86417b438ed8bd5a5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6eae175fe8f9de73ba9db7d8b05bf4217d7a9a36
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463637"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956641"
 ---
 # <a name="create-journals"></a>Создание журналов
 Создает журнал в Dynamics 365 Business Central. 
@@ -40,7 +41,7 @@ POST /financials/companies('{id}')/journals('{id}')
 |Авторизация |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json          |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **журналов** в формате JSON.
 
 ## <a name="response"></a>Отклик

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 8e75860cb3c78c16ccb3ac82bec3a972f11ddf51
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7dae71167f7de6481ac7127f320cf12022866ee1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458420"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955801"
 ---
 # <a name="update-vendors"></a>Обновление поставщиков
 Обновление свойств объекта поставщика для Dynamics 365 Business Central.
@@ -40,7 +41,7 @@ PATCH /financials/companies('{id}')/vendors('{id}')
 |Content-Type  |application/json|
 |If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **поставщиков**, то **поставщики** не будут обновлены. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ

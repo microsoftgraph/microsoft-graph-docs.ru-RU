@@ -4,12 +4,13 @@ description: Добавление целевой группы в существ�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: e1222a23112356b1681f1cdc01556800ffe44586
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 247af7eb00c72a8f9b5de5a2d324f25ee1613cd7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33934063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958916"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Создание Оффицеклиентконфигуратионассигнмент
 
@@ -50,7 +51,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта Оффицеконфигуратионассигнмент.|
+|id|String|Идентификатор объекта Оффицеконфигуратионассигнмент.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Целевое назначение, заданное администратором.|
 
 

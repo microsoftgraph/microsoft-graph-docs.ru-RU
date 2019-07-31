@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: 'Используя простой API отправки, вы можете отправлять содержимое нового файла или обновлять содержимое существующего файла с помощью одного вызова API. '
 ms.date: 09/10/2017
 title: Отправка небольших файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1b6ec254dd56de3b678aa0c6a3d5c95a8f149837
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+doc_type: apiPageType
+ms.openlocfilehash: b5662cf739fffdc2dbba7e49deeaf60fb0e2d33f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820712"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956984"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
 

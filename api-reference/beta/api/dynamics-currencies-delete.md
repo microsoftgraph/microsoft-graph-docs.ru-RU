@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 54ff3632680d0819c33a6594a2a3c3b9e882fd98
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ce3980118a26276ab712e2c422b9260b8624b31c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458602"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956515"
 ---
 # <a name="delete-currencies"></a>Удаление валют
 Удаление объекта Currency из Dynamics 365 Business Central.
@@ -41,10 +42,10 @@ DELETE /financials/companies('{id}')/currencies('{id}')
 |If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **валютах**, то **валюты** не будут
  обновленный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример

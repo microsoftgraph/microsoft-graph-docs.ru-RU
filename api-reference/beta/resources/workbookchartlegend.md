@@ -4,12 +4,13 @@ description: Представляет легенду в диаграмме.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e9c032966f62ac48e178aa6625b3f9891d2518a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 42414f0089cf3e33529796ebbeb53b95bc1d4ef2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348986"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964047"
 ---
 # <a name="workbookchartlegend-resource-type"></a>Тип ресурса Воркбукчартлеженд
 
@@ -28,7 +29,7 @@ ms.locfileid: "33348986"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.|
-|position|string|Представляет расположение легенды на диаграмме. Возможные `Top`значения:, `Bottom`, `Left`, `Right`, `Corner`,. `Custom`|
+|position|string|Представляет расположение легенды на диаграмме. Допустимые значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Логическое значение, представляющее видимость объекта ChartLegend.|
 
 ## <a name="relationships"></a>Отношения

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 14f7b2b36b687190817dc348e975ba1a23c99aae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c65e38849520c7f0c67cf2c3e642cd39fcda0594
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956046"
 ---
 # <a name="get-paymentterms"></a>Получение Пайменттермс
 Получение свойств и связей объекта условий оплаты для Dynamics 365 Business Central.
@@ -39,10 +40,10 @@ GET /financials/companies('{id}')/paymentTerms('{id}')
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **пайменттермс** в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Удаляет объект Иосимпортедпфксцерт�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d78b225efdc203dadfaebf33be4a4971247717bc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 37f99fb2adf21114def71f587b2ab02b075af2f5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34963781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948154"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>Удаление Иосимпортедпфксцертификатепрофиле
 

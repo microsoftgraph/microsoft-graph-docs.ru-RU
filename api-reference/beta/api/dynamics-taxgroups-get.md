@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: cbc05c0a7c8a3ae4466c27462716ec242371c30c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2d670883305367e9e505cc1af6e84945aeb36474
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464619"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955899"
 ---
 # <a name="get-taxgroups"></a>Получение Таксграупс
 Получение свойств и связей объекта налоговой группы для Dynamics 365 Business Central.
@@ -39,10 +40,10 @@ GET /financials/companies('{id}')/taxGroups('{id}')
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **таксграупс** в тексте отклика.
 
 ## <a name="example"></a>Пример

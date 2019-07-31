@@ -4,12 +4,13 @@ description: Создание пользователя.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ca288f9aa1a4a948cb4e0c1e4f6375d545e14ac2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 376dddf5b875ae4164698f0f7d77aed3b6af43f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860389"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955231"
 ---
 # <a name="create-educationuser"></a>Создание educationUser
 

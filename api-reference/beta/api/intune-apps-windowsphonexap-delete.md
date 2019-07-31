@@ -4,12 +4,13 @@ description: Удаляет объект Виндовсфонексап.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 895799821defb9a9f5fde1afa95d27f46b197075
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1c434b4df2b9ce7fbdcfa3eeeda02acff9b389f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34972895"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35959833"
 ---
 # <a name="delete-windowsphonexap"></a>Удаление Виндовсфонексап
 

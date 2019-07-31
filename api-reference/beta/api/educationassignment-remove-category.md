@@ -4,12 +4,13 @@ description: Удаление существующего Едукатионка�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 9c92ab53cd62a7ed32aff6300386e2e76699275e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: deb55b14c40acb25b366eec140cbc433e9ee203d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324789"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955671"
 ---
 # <a name="remove-educationcategory"></a>Удаление Едукатионкатегори
 
@@ -56,7 +57,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
