@@ -4,32 +4,33 @@ description: Тип Медиастреам.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 69d8088ba161bdf4dbf0482fdab8ad757347126d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342620"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966829"
 ---
-# <a name="mediastream-resource-type"></a><span data-ttu-id="64811-103">Тип ресурса Медиастреам</span><span class="sxs-lookup"><span data-stu-id="64811-103">mediaStream resource type</span></span>
+# <a name="mediastream-resource-type"></a><span data-ttu-id="3f3dc-103">Тип ресурса Медиастреам</span><span class="sxs-lookup"><span data-stu-id="3f3dc-103">mediaStream resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64811-104">Тип Медиастреам.</span><span class="sxs-lookup"><span data-stu-id="64811-104">The mediaStream type.</span></span>
+<span data-ttu-id="3f3dc-104">Тип Медиастреам.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-104">The mediaStream type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="64811-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="64811-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3f3dc-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="3f3dc-105">Properties</span></span>
 
-| <span data-ttu-id="64811-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="64811-106">Property</span></span>    | <span data-ttu-id="64811-107">Тип</span><span class="sxs-lookup"><span data-stu-id="64811-107">Type</span></span>    | <span data-ttu-id="64811-108">Описание</span><span class="sxs-lookup"><span data-stu-id="64811-108">Description</span></span>                                                                                                   |
+| <span data-ttu-id="3f3dc-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="3f3dc-106">Property</span></span>    | <span data-ttu-id="3f3dc-107">Тип</span><span class="sxs-lookup"><span data-stu-id="3f3dc-107">Type</span></span>    | <span data-ttu-id="3f3dc-108">Описание</span><span class="sxs-lookup"><span data-stu-id="3f3dc-108">Description</span></span>                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| <span data-ttu-id="64811-109">direction</span><span class="sxs-lookup"><span data-stu-id="64811-109">direction</span></span>   | <span data-ttu-id="64811-110">String</span><span class="sxs-lookup"><span data-stu-id="64811-110">String</span></span>  | <span data-ttu-id="64811-111">Направление.</span><span class="sxs-lookup"><span data-stu-id="64811-111">The direction.</span></span> <span data-ttu-id="64811-112">`inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`</span><span class="sxs-lookup"><span data-stu-id="64811-112">The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.</span></span>                  |
-| <span data-ttu-id="64811-113">label</span><span class="sxs-lookup"><span data-stu-id="64811-113">label</span></span>       | <span data-ttu-id="64811-114">String</span><span class="sxs-lookup"><span data-stu-id="64811-114">String</span></span>  | <span data-ttu-id="64811-115">Метка потока мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="64811-115">The media stream label.</span></span>                                                                                       |
-| <span data-ttu-id="64811-116">mediaType</span><span class="sxs-lookup"><span data-stu-id="64811-116">mediaType</span></span>   | <span data-ttu-id="64811-117">String</span><span class="sxs-lookup"><span data-stu-id="64811-117">String</span></span>  | <span data-ttu-id="64811-118">Тип мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="64811-118">The media type.</span></span> <span data-ttu-id="64811-119">Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`</span><span class="sxs-lookup"><span data-stu-id="64811-119">The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span></span>        |
-| <span data-ttu-id="64811-120">Сервермутед</span><span class="sxs-lookup"><span data-stu-id="64811-120">serverMuted</span></span> | <span data-ttu-id="64811-121">Логический</span><span class="sxs-lookup"><span data-stu-id="64811-121">Boolean</span></span> | <span data-ttu-id="64811-122">Если сервер отключен на носителе.</span><span class="sxs-lookup"><span data-stu-id="64811-122">If the media is muted by the server.</span></span>                                                                          |
-| <span data-ttu-id="64811-123">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="64811-123">sourceId</span></span>    | <span data-ttu-id="64811-124">String</span><span class="sxs-lookup"><span data-stu-id="64811-124">String</span></span>  | <span data-ttu-id="64811-125">Идентификатор источника.</span><span class="sxs-lookup"><span data-stu-id="64811-125">The source ID.</span></span>                                                                                                |
+| <span data-ttu-id="3f3dc-109">direction</span><span class="sxs-lookup"><span data-stu-id="3f3dc-109">direction</span></span>   | <span data-ttu-id="3f3dc-110">String</span><span class="sxs-lookup"><span data-stu-id="3f3dc-110">String</span></span>  | <span data-ttu-id="3f3dc-111">Направление.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-111">The direction.</span></span> <span data-ttu-id="3f3dc-112">`inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`</span><span class="sxs-lookup"><span data-stu-id="3f3dc-112">The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.</span></span>                  |
+| <span data-ttu-id="3f3dc-113">label</span><span class="sxs-lookup"><span data-stu-id="3f3dc-113">label</span></span>       | <span data-ttu-id="3f3dc-114">String</span><span class="sxs-lookup"><span data-stu-id="3f3dc-114">String</span></span>  | <span data-ttu-id="3f3dc-115">Метка потока мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-115">The media stream label.</span></span>                                                                                       |
+| <span data-ttu-id="3f3dc-116">mediaType</span><span class="sxs-lookup"><span data-stu-id="3f3dc-116">mediaType</span></span>   | <span data-ttu-id="3f3dc-117">String</span><span class="sxs-lookup"><span data-stu-id="3f3dc-117">String</span></span>  | <span data-ttu-id="3f3dc-118">Тип мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-118">The media type.</span></span> <span data-ttu-id="3f3dc-119">Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`</span><span class="sxs-lookup"><span data-stu-id="3f3dc-119">The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span></span>        |
+| <span data-ttu-id="3f3dc-120">Сервермутед</span><span class="sxs-lookup"><span data-stu-id="3f3dc-120">serverMuted</span></span> | <span data-ttu-id="3f3dc-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="3f3dc-121">Boolean</span></span> | <span data-ttu-id="3f3dc-122">Если сервер отключен на носителе.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-122">If the media is muted by the server.</span></span>                                                                          |
+| <span data-ttu-id="3f3dc-123">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="3f3dc-123">sourceId</span></span>    | <span data-ttu-id="3f3dc-124">String</span><span class="sxs-lookup"><span data-stu-id="3f3dc-124">String</span></span>  | <span data-ttu-id="3f3dc-125">Идентификатор источника.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-125">The source ID.</span></span>                                                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="64811-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="64811-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3f3dc-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3f3dc-126">JSON representation</span></span>
 
-<span data-ttu-id="64811-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="64811-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3f3dc-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3f3dc-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,7 +49,7 @@ ms.locfileid: "33342620"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="64811-128">Пример</span><span class="sxs-lookup"><span data-stu-id="64811-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3f3dc-128">Пример</span><span class="sxs-lookup"><span data-stu-id="3f3dc-128">Example</span></span>
 
 <!-- {
   "blockType": "example",

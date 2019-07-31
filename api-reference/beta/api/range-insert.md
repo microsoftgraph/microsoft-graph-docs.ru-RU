@@ -4,28 +4,29 @@ description: Вставляет ячейку или диапазон ячеек 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 20bfb39dd3682340fab316af7763951acf112fdb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 62d7bbf5d44fe69b45c9865007062abbac364647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35874845"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978450"
 ---
-# <a name="range-insert"></a><span data-ttu-id="ff120-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="ff120-104">Range: insert</span></span>
+# <a name="range-insert"></a><span data-ttu-id="91b97-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="91b97-104">Range: insert</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ff120-p102">Вставляет ячейку или диапазон ячеек на лист вместо этого диапазона, а также сдвигает другие ячейки, чтобы освободить место. Возвращает новый объект Range в пустом месте.</span><span class="sxs-lookup"><span data-stu-id="ff120-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ff120-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ff120-107">Permissions</span></span>
-<span data-ttu-id="ff120-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff120-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="91b97-p102">Вставляет ячейку или диапазон ячеек на лист вместо этого диапазона, а также сдвигает другие ячейки, чтобы освободить место. Возвращает новый объект Range в пустом месте.</span><span class="sxs-lookup"><span data-stu-id="91b97-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
+## <a name="permissions"></a><span data-ttu-id="91b97-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="91b97-107">Permissions</span></span>
+<span data-ttu-id="91b97-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="91b97-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff120-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ff120-110">Permission type</span></span>      | <span data-ttu-id="ff120-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ff120-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="91b97-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="91b97-110">Permission type</span></span>      | <span data-ttu-id="91b97-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="91b97-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff120-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ff120-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ff120-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff120-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ff120-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ff120-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff120-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff120-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ff120-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ff120-116">Application</span></span> | <span data-ttu-id="ff120-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ff120-117">Not supported.</span></span> |
+|<span data-ttu-id="91b97-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="91b97-112">Delegated (work or school account)</span></span> | <span data-ttu-id="91b97-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="91b97-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="91b97-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="91b97-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="91b97-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="91b97-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="91b97-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="91b97-116">Application</span></span> | <span data-ttu-id="91b97-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91b97-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ff120-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ff120-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91b97-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="91b97-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/insert
@@ -33,29 +34,29 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ff120-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ff120-119">Request headers</span></span>
-| <span data-ttu-id="ff120-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ff120-120">Name</span></span>       | <span data-ttu-id="ff120-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ff120-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="91b97-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="91b97-119">Request headers</span></span>
+| <span data-ttu-id="91b97-120">Имя</span><span class="sxs-lookup"><span data-stu-id="91b97-120">Name</span></span>       | <span data-ttu-id="91b97-121">Описание</span><span class="sxs-lookup"><span data-stu-id="91b97-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ff120-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ff120-122">Authorization</span></span>  | <span data-ttu-id="ff120-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ff120-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ff120-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ff120-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="ff120-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="ff120-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="91b97-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="91b97-122">Authorization</span></span>  | <span data-ttu-id="91b97-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="91b97-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="91b97-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="91b97-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="91b97-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="91b97-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ff120-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ff120-128">Request body</span></span>
-<span data-ttu-id="ff120-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="ff120-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="91b97-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="91b97-128">Request body</span></span>
+<span data-ttu-id="91b97-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="91b97-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ff120-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="ff120-130">Parameter</span></span>    | <span data-ttu-id="ff120-131">Тип</span><span class="sxs-lookup"><span data-stu-id="ff120-131">Type</span></span>   |<span data-ttu-id="ff120-132">Описание</span><span class="sxs-lookup"><span data-stu-id="ff120-132">Description</span></span>|
+| <span data-ttu-id="91b97-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="91b97-130">Parameter</span></span>    | <span data-ttu-id="91b97-131">Тип</span><span class="sxs-lookup"><span data-stu-id="91b97-131">Type</span></span>   |<span data-ttu-id="91b97-132">Описание</span><span class="sxs-lookup"><span data-stu-id="91b97-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ff120-133">shift</span><span class="sxs-lookup"><span data-stu-id="ff120-133">shift</span></span>|<span data-ttu-id="ff120-134">string</span><span class="sxs-lookup"><span data-stu-id="ff120-134">string</span></span>|<span data-ttu-id="ff120-p106">Указывает направление сдвига ячеек.  Возможные значения: `Down`, `Right`.</span><span class="sxs-lookup"><span data-stu-id="ff120-p106">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
+|<span data-ttu-id="91b97-133">shift</span><span class="sxs-lookup"><span data-stu-id="91b97-133">shift</span></span>|<span data-ttu-id="91b97-134">string</span><span class="sxs-lookup"><span data-stu-id="91b97-134">string</span></span>|<span data-ttu-id="91b97-p106">Указывает направление сдвига ячеек.  Возможные значения: `Down`, `Right`.</span><span class="sxs-lookup"><span data-stu-id="91b97-p106">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ff120-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff120-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="91b97-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="91b97-137">Response</span></span>
 
-<span data-ttu-id="ff120-138">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ff120-138">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
+<span data-ttu-id="91b97-138">В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/workbookrange.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="91b97-138">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff120-139">Пример</span><span class="sxs-lookup"><span data-stu-id="ff120-139">Example</span></span>
-<span data-ttu-id="ff120-140">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="ff120-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ff120-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="ff120-141">Request</span></span>
-<span data-ttu-id="ff120-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ff120-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="91b97-139">Пример</span><span class="sxs-lookup"><span data-stu-id="91b97-139">Example</span></span>
+<span data-ttu-id="91b97-140">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="91b97-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="91b97-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="91b97-141">Request</span></span>
+<span data-ttu-id="91b97-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="91b97-142">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ff120-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff120-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="91b97-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="91b97-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "range_insert"
@@ -69,27 +70,27 @@ Content-length: 28
   "shift": "shift-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ff120-144">C#</span><span class="sxs-lookup"><span data-stu-id="ff120-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="91b97-144">C#</span><span class="sxs-lookup"><span data-stu-id="91b97-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-insert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff120-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff120-145">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="91b97-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="91b97-145">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-insert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ff120-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ff120-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="91b97-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="91b97-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-insert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="ff120-147">Java</span><span class="sxs-lookup"><span data-stu-id="ff120-147">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="91b97-147">Java</span><span class="sxs-lookup"><span data-stu-id="91b97-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/range-insert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ff120-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="ff120-148">Response</span></span>
-<span data-ttu-id="ff120-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ff120-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="91b97-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="91b97-148">Response</span></span>
+<span data-ttu-id="91b97-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="91b97-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
