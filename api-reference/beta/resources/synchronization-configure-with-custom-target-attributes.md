@@ -2,14 +2,15 @@
 title: Настройка синхронизации с пользовательскими целевыми атрибутами
 description: Вы можете настроить схему синхронизации, включив в нее настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается, как настроить подписку на Salesforce, добавив новое `officeCode`поле с именем. Вы настраиваете синхронизацию из Azure Active Directory (Azure AD) с Salesforce, и для каждого пользователя вы заполните `officeCode` поле в Salesforce значением из `extensionAttribute10` поля в Azure AD.
 localization_priority: Normal
+doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 40fb833e0fc7e57b6b959efe0e13905483cae89f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 4b642bc9718f8ce750f55371c5864014d58813e5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891914"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964853"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с пользовательскими целевыми атрибутами
 

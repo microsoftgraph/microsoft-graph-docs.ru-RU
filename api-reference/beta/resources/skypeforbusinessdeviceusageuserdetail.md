@@ -2,12 +2,15 @@
 title: Тип ресурса Скипефорбусинессдевицеусажеусердетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 95f2f6cf1f3f6c54c4b6b4b39a7118cd8a94b224
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: b84cf9c7654354446fb7c6a5005befe3d17a0fa4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555936"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964916"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессдевицеусажеусердетаил
 
@@ -18,14 +21,14 @@ ms.locfileid: "32555936"
 | Репортрефрешдате | Дата    |
 | userPrincipalName | String  |
 | Ластактивитидате  | Дата    |
-| Уседвиндовс       | Логический |
-| Уседвиндовсфоне  | Логический |
-| Уседандроидфоне  | Логический |
-| Уседифоне        | Логический |
-| Уседипад          | Логический |
+| Уседвиндовс       | Boolean |
+| Уседвиндовсфоне  | Boolean |
+| Уседандроидфоне  | Boolean |
+| Уседифоне        | Boolean |
+| Уседипад          | Boolean |
 | Репортпериод      | String  |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

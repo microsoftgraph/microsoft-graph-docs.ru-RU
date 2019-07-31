@@ -2,12 +2,15 @@
 title: Тип ресурса Рекуиредресаурцеакцесс
 description: Задает набор областей разрешений OAuth 2,0 и ролей приложения в указанном ресурсе, к которому приложение требует доступ. Указанные области разрешений OAuth 2,0 могут запрашиваться клиентскими приложениями (через коллекцию **рекуиредресаурцеакцесс** ) при вызове приложения-ресурса. Свойство **рекуиредресаурцеакцесс** объекта Application представляет собой коллекцию **рекиредресаурцеакцесс**.
 localization_priority: Normal
-ms.openlocfilehash: cd8049e7f843bbf057c79b4f3c90b7da51105191
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 6c7fec2027e5e987c66f868cc4a69555141bdbf9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343670"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965425"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>Тип ресурса Рекуиредресаурцеакцесс
 

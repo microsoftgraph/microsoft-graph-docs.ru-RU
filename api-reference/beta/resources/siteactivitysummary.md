@@ -3,12 +3,14 @@ title: Тип ресурса Ситеактивитисуммари
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a49b8e47ca2a6efcc5c5c87702fdea0122b208e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 1258530aea56f7ec26a2f48274935afc809f2fd5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583601"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965021"
 ---
 # <a name="siteactivitysummary-resource-type"></a>Тип ресурса Ситеактивитисуммари
 

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f17d617091a363ea5e8f07eabd38b194431a6d9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4cc46c382f0649b33b9b5c77ca3a9cf50089a9f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967680"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949036"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>Список Девицеконфигуратионграупассигнментс
 

@@ -2,12 +2,15 @@
 title: Обновление объекта FormatProtection
 description: Обновление свойств объекта FormatProtection.
 localization_priority: Normal
-ms.openlocfilehash: f3eb949ed073dc70ed0252727b272ec57f30cede
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 3d789c209d4e0eb350e6ddd026a47db8e9ea162e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35859190"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954328"
 ---
 # <a name="update-formatprotection"></a>Обновление объекта FormatProtection
 

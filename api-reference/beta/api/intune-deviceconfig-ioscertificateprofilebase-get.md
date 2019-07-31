@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта испо
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4ad439158226af9b5c960c1d22db1d9663900f7
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 4122ee65c822265577d862e50e0f147e1f42639a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967302"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948749"
 ---
 # <a name="get-ioscertificateprofilebase"></a>Получение используется
 

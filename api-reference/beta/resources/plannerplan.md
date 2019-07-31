@@ -4,12 +4,13 @@ description: Ресурс **plannerPlan** представляет план в O
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 5da918e3ba0e8087d4572799168fa1132e0ce5e7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 658bcbbaf8431b65565ecebd03a014776be840e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344468"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965947"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
@@ -38,11 +39,11 @@ ms.locfileid: "33344468"
 |createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|
 |контекстах|[plannerPlanContextCollection](plannerplancontextcollection.md);| Только для чтения. Дополнительные пользовательские взаимодействия, в которых используется этот план, представленный в виде записей [планнерпланконтекст](plannerplancontext.md) .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускает значение null. Коллекция контейнеров в плане.|
-|details|[plannerPlanDetails](plannerplandetails.md)| Только для чтения. Допускает значение null. Дополнительные сведения о плане.|
+|buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Коллекция контейнеров в плане.|
+|details|[plannerPlanDetails](plannerplandetails.md)| Только для чтения. Допускается значение null. Дополнительные сведения о плане.|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в плане.|
 
 ## <a name="json-representation"></a>Представление в формате JSON

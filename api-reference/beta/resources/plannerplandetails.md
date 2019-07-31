@@ -4,12 +4,13 @@ description: Ресурс **plannerPlanDetails** представляет доп
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 51bc28e93f7978fb080969de413db4e804918f6d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 61296138f1477219e85ae7fd372102b8c7fd3a47
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965889"
 ---
 # <a name="plannerplandetails-resource-type"></a>Тип ресурса plannerPlanDetails
 
@@ -22,8 +23,8 @@ ms.locfileid: "33344405"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Чтение свойств и связей объекта **plannerPlanDetails** .|
-|[Обновление](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |Обновление объекта **plannerPlanDetails** . |
+|[Получение объекта plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md); |Чтение свойств и связей объекта **plannerPlanDetails** .|
+|[обновление](../api/plannerplandetails-update.md); | [plannerPlanDetails](plannerplandetails.md);    |Обновление объекта **plannerPlanDetails** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,7 +34,7 @@ ms.locfileid: "33344405"
 |sharedWith|[plannerUserIds](planneruserids.md)|Набор идентификаторов пользователей, к которым предоставлен общий доступ к этому плану. Если вы используете группы Office 365, используйте API групп для управления членством в группах, чтобы поделиться планом [группы](group.md) . Вы также можете добавить существующих членов группы в эту коллекцию, хотя это не требуется для доступа к плану, принадлежащему группе. |
 |Контекстдетаилс|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md);|Только для чтения. Коллекция дополнительных сведений, связанных с записями [планнерпланконтекст](plannerplancontext.md) , которые определены для контейнера [plannerPlan](plannerplan.md) . |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

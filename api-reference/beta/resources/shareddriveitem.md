@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс sharedDriveItem возвращается при использовании API shares для доступа к общему driveItem.
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 3c0fa155088e39d69d52d4b14f33662d92666ed6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 7d5af60c4ba5c67046909f6998d298444fa06d51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343201"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965161"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -59,16 +61,16 @@ ms.locfileid: "33343201"
 | Имя связи | Тип                | Описание
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem] | Используется для доступа к базовому объекту **driveItem**
-| **list**          | [**list**][list]           | Используется для доступа к базовому объекту **list**
+| **list**          | [**перечн**][list]           | Используется для доступа к базовому объекту **list**
 | **listItem**      | [**listItem**][listItem]   | Используется для доступа к базовому объекту **listItem**
-| **permission**    | [**права**][permission] | Используется для доступа к **разрешению** , представляющему базовую ссылку для совместного доступа
-| **site**          | [**site**][site]           | Используется для доступа к базовому объекту **site**
+| **permission**    | [**permission**][permission] | Используется для доступа к **разрешению** , представляющему базовую ссылку для совместного доступа
+| **сайта**          | [**страницу**][site]           | Используется для доступа к базовому объекту **site**
 
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
 
 | Имя связи | Тип                         | Описание
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
+| **items**         | Коллекция [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
 | **driveItem**     | [**driveItem**][driveItem]            | Используется для доступа к базовому объекту **driveItem**
 
 [driveItem]: driveitem.md

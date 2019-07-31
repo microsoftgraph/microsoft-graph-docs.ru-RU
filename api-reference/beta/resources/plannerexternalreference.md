@@ -4,12 +4,13 @@ description: Ресурс **планнерекстерналреференце**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6d2bce70afbeee3848f3055530daf732afe8a2b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 2ac2b6bef3f2e4e24bfc6e789536f4952d89bb6d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966012"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Тип ресурса Планнерекстерналреференце
 

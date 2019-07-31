@@ -4,12 +4,13 @@ description: Обновление свойств объекта Андроидф
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27b94ddfdec232f7d3d92b81414077af255aeef9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 2a13d4ba462bac49096cfeb9da13af56d74921e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966378"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35952340"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>Обновление Андроидфорворкмобилеаппконфигуратион
 

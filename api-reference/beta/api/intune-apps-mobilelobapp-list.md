@@ -4,12 +4,13 @@ description: Список свойств и связей объектов mobile
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c28f5ecdaac48aac82708396463489d29e4c1f08
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c6fac922f7fc59eceb680da2ed63f4929db86a7c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960526"
 ---
 # <a name="list-mobilelobapps"></a>Перечисление объектов mobileLobApp
 

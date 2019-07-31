@@ -4,12 +4,13 @@ description: Ресурс **планнерусеридс** представля�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 83717714d58cd0c442b42c23c9aa361bcd3b2261
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3382da3131040f6ae3dc78102ac6e5d64a23695c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35965847"
 ---
 # <a name="planneruserids-resource-type"></a>Тип ресурса Планнерусеридс
 
@@ -24,7 +25,7 @@ ms.locfileid: "33344391"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -2,14 +2,15 @@
 title: Тип ресурса Метадатаентри
 description: Метаданные для данного объекта.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 49c43e502cfb06832172f46c1e790b2a20eb0f08
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 55b686bc04ccf869ddf9d6dc6029c6206f7b2274
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620558"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964844"
 ---
 # <a name="metadataentry-resource-type"></a>Тип ресурса Метадатаентри
 
