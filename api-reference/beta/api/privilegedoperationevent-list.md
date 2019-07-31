@@ -2,12 +2,15 @@
 title: Список Привилежедоператионевентс
 description: Filter "Expression".
 localization_priority: Normal
-ms.openlocfilehash: 672035f460043c795b293cd90b18918389fe7137
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d7eb411a7cdd134ae1f2bfaaaf691ec900a4fb46
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337354"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992061"
 ---
 # <a name="list-privilegedoperationevents"></a>Список Привилежедоператионевентс
 
@@ -42,7 +45,7 @@ GET /privilegedOperationEvents
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,7 +64,7 @@ GET /privilegedOperationEvents
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,7 +124,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,7 +185,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,7 +228,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

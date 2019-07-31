@@ -2,12 +2,15 @@
 title: Тип ресурса Говернанцеролеассигнментрекуестстатус
 description: Представляет состояние governanceRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 768ef092dbe52b0989277905bae03eee091ca8c6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ca61e5e3ef5456889eafcef3914f16fc072dfb6b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340327"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35971868"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>Тип ресурса Говернанцеролеассигнментрекуестстатус
 
@@ -20,7 +23,7 @@ ms.locfileid: "33340327"
 Свойство       | Тип |Описание|
 |:----|:-------------|:-----|
 |status |String| Состояние запроса на назначение роли. Значение может быть `InProgress` или `Closed`.|
-|подСостояние |String| Дочерний статус запроса на назначение роли. Возможные значения `Accepted`:, `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `FailedAsResourceIsLocked` `ProvisioningStarted`,,,,,,,,,,,,,, и. `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval`|
+|подсостояние |String| Дочерний статус запроса на назначение роли. Возможные значения `Accepted`:, `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `FailedAsResourceIsLocked` `ProvisioningStarted`,,,,,,,,,,,,,, и. `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval`|
 |Статусдетаилс       |Коллекция [keyValue](../resources/keyvalue.md)| Сведения о состоянии запроса на назначение роли. Он представляет результаты оценки различных правил. |
 
 ## <a name="json-representation"></a>Представление JSON

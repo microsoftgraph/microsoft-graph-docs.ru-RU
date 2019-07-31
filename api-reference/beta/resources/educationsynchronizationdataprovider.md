@@ -4,12 +4,13 @@ description: 'Представляет исходную схему SIS. Это �
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 70c48e8d18191172be25046d8b1d60c0765c5187
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c28238cf35858745979a4d9659b1f649dbab7061
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334039"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972427"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>Тип ресурса Едукатионсинчронизатиондатапровидер
 
@@ -19,7 +20,7 @@ ms.locfileid: "33334039"
 
 > **Примечание:** Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов поставщиков данных.
 
-## <a name="derived-types"></a>ПроизВодные типы
+## <a name="derived-types"></a>Производные типы
 | Тип | Описание |
 |:-|:-|:-|
 | [едукатионксвдатапровидер](educationcsvdataprovider.md) | Используется с CSV-файлами в качестве источника входных данных. |

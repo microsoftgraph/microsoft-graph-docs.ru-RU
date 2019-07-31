@@ -4,12 +4,13 @@ description: Вы можете получить сведения о пользо
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 324f936e497142b5f8bab5ea6607005ea1c35c2b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: 83530708465673e61c22e087179c9de5a9070c96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345112"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35966991"
 ---
 # <a name="mailbox-usage-reports"></a>Отчеты об использовании почтовых ящиков
 
@@ -23,7 +24,7 @@ ms.locfileid: "33345112"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о почтовых ящиках](../api/reportroot-getmailboxusagedetail.md) | Stream          | [Маилбоксусажедетаил](../resources/mailboxusagedetail.md) | Получите сведения об использовании почтовых ящиков.         |
+| [Получение сведений о почтовых ящиках](../api/reportroot-getmailboxusagedetail.md) | Поток          | [Маилбоксусажедетаил](../resources/mailboxusagedetail.md) | Получите сведения об использовании почтовых ящиков.         |
 | [Получение количества почтовых ящиков](../api/reportroot-getmailboxusagemailboxcounts.md) | Поток          | [Маилбоксусажемаилбокскаунтс](../resources/mailboxusagemailboxcounts.md) | Узнайте, сколько всего почтовых ящиков в организации и сколько из них были активный в отчетный период. Почтовый ящик считается активным, если пользователь отправил или прочитал по крайней мере одно письмо. |
 | [Получение количества почтовых ящиков по состоянию квоты](../api/reportroot-getmailboxusagequotastatusmailboxcounts.md) | Поток          | [Маилбоксусажекуотастатусмаилбокскаунтс](../resources/mailboxusagequotastatusmailboxcounts.md) | Узнайте, сколько почтовых ящиков пользователей в каждой категории квоты. |
 | [Получение занятого объема хранилища](../api/reportroot-getmailboxusagestorage.md) | Поток          | [Маилбоксусажестораже](../resources/mailboxusagestorage.md) | Узнайте, сколько места занято в хранилище организации. |

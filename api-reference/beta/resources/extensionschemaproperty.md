@@ -2,12 +2,15 @@
 title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
 localization_priority: Normal
-ms.openlocfilehash: 05fb5eb94f760bce26ba09bf3e8e862ff5fd2fb8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d36cf90e82e0240842fd9631e2471f9ee834fcb7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33340275"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35972063"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
