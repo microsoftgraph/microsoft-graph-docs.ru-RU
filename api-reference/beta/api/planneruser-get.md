@@ -4,12 +4,13 @@ description: 'Получение свойств и связей объекта p
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2ebf13373b0d09443d9f7ecbdc3a09f22aa93f38
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 4bc0bf1ddd07a1f03baa871bd96bf2193fae9e4c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337618"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992208"
 ---
 # <a name="get-planneruser"></a>Получение plannerUser
 
@@ -35,9 +36,9 @@ GET /users/<id>/planner
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {Code}. Обязательно.|
+| Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [plannerUser](../resources/planneruser.md) в тексте отклика.

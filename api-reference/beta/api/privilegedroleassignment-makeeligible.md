@@ -2,12 +2,15 @@
 title: 'Привилежедролеассигнмент: Макилигибле'
 description: Выполнение назначения ролей как соответствующего требованиям. Если назначение роли уже доступно перед вызовом, оно ничего не делает. Если назначение роли является необратимым, а запрашивающий отличается от конечного пользователя, назначение роли станет доступным, и роль будет отключена для целевого пользователя. Если запрашивающей стороны является целевой пользователь, а роль является администратором безопасности или привилегированным администратором ролей, роль будет активирована с истечением срока действия по умолчанию.
 localization_priority: Normal
-ms.openlocfilehash: 0cc2b650e90064dd18e66ede1a59c50dc23665e2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d44cbbd682a02d5a8d89bbfe148f310c31b0313b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875699"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35992082"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>Привилежедролеассигнмент: Макилигибле
 

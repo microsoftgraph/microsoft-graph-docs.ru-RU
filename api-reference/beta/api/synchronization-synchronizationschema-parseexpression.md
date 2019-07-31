@@ -2,14 +2,15 @@
 title: 'Синчронизатионсчема: Парсикспрессион'
 description: '(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). '
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 24e223be3dc5ffbe50aed30ffabcf8959bdbaa6c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 77590b277840ff322e71cf03dd71d2ba8d9f6f75
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869145"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991144"
 ---
 # <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
 

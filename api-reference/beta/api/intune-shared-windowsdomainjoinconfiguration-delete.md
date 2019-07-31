@@ -4,12 +4,13 @@ description: Удаляет объект Виндовсдомаинжоинко�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e1ed4774bf522ca820880f6a5e07e4bf87ed1f07
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: af184a56a2391e8fb76cfa61ece292a9fa8af2f2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33897851"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979528"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>Удаление Виндовсдомаинжоинконфигуратион
 
@@ -45,7 +46,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

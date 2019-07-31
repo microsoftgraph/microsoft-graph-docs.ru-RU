@@ -4,12 +4,13 @@ description: В группе маршрутизации звука хранит�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: db5f94f9ac500dfeb97c6eb787783e9f749ae507
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328255"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974278"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Тип ресурса Аудиораутингграуп
 
@@ -24,8 +25,8 @@ ms.locfileid: "33328255"
 | Метод                                                  | Возвращаемый тип                               | Описание                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Получение Аудиораутингграуп](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Чтение свойств и связей объекта Аудиораутингграуп.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | Нет                                      | Удаление группы маршрутизации звука.              |
+| [обновление](../api/audioroutinggroup-update.md);            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
+| [Удаление](../api/audioroutinggroup-delete.md)            | Нет                                      | Удаление группы маршрутизации звука.              |
 
 ## <a name="properties"></a>Свойства
 

@@ -2,12 +2,15 @@
 title: Тип ресурса chunkedUploadSessionDescriptor
 description: Ниже этот ресурс представлен в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: b11bff34e70585c4cf7be23f5ce6d3a0c2ac0a0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 9df47d6bc2ac99d36f87e2af3734f25462371a29
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460606"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973445"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>Тип ресурса chunkedUploadSessionDescriptor
 

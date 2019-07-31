@@ -4,12 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c6cf62320a6cfd8e96455e95e1d17c0621d261f8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 5f51ec999f0a2048b8dbcbdd533c609eb5a86757
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328320"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974131"
 ---
 # <a name="bookingservice-resource-type"></a>Тип ресурса Букингсервице
 
@@ -24,8 +25,8 @@ ms.locfileid: "33328320"
 |[Список служб](../api/bookingbusiness-list-services.md) | Коллекция [букингсервице](bookingservice.md) | Получение списка объектов **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
 |[Создание Букингсервице](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте объект **букингсервице** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
 |[Получение Букингсервице](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получение свойств и связей объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
-|[Delete](../api/bookingservice-delete.md) | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[обновление](../api/bookingservice-update.md); | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Удаление](../api/bookingservice-delete.md) | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -39,12 +40,12 @@ ms.locfileid: "33328320"
 |displayName|Строка|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
 |id|Строка|Идентификатор этой службы в формате GUID. Только для чтения.|
-|Ишидденфромкустомерс|Логический|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|Ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
 |notes|String|Дополнительные сведения об этой службе.|
 |Буфер буфера|Duration (Длительность)|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
-|преБуфер|Duration (Длительность)|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
+|пребуфер|Duration (Длительность)|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
 |Счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|Стаффмемберидс|Коллекция String|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
+|Стаффмемберидс|Коллекция строк|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
 
 ## <a name="relationships"></a>Отношения
 Нет

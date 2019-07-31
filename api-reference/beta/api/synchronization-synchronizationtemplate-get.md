@@ -2,14 +2,15 @@
 title: Получение Синчронизатионтемплате
 description: Получение шаблона синхронизации по его идентификатору.
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 27402a9e24c03ee000df419cb11082aff5afe1ea
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 5ef1c33422b36e8fd88fcc6646506905e2a091e1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620957"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35991102"
 ---
 # <a name="get-synchronizationtemplate"></a>Получение Синчронизатионтемплате
 
