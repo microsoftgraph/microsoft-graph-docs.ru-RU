@@ -2,12 +2,15 @@
 title: Работа с ресурсами Azure Active Directory в Microsoft Graph
 description: Microsoft Graph для Azure Active Directory (Azure AD) предоставляет REST API для управления организацией, ресурсами и активами.
 localization_priority: Priority
-ms.openlocfilehash: 9ae541b2daf608b4b3421268018e00d08be39bc3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 83c9f8b9c1d95139ed2b170dd3df4964add15b1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339046"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013166"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -41,7 +44,8 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Применение политики Azure AD к приложениям, субъектам-службам, группам или всей организации. В настоящее время поддерживаются политики для времени существования маркера и обнаружения домашней области.  | [policy](../resources/policy.md) | Н/Д |
 | **Защита привилегированного доступа к Azure AD** | | |
 | Отслеживание и управление ограниченным по времени привилегированным доступом к каталогу и ресурсам Azure для администраторов и ИТ-специалистов с помощью службы Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [Что такое Azure AD Privileged Identity Management?](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| Отслеживание событий с риском для идентификации, например входа пользователей с устройств, зараженных вредоносными программами, или из незнакомых расположений. | [API службы защиты идентификации](../resources/identityprotection-root.md) | [Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[События с риском Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-reporting-risk-events) |
+| Отслеживание событий с риском для идентификации, например входа пользователей с устройств, зараженных вредоносными программами, или из незнакомых расположений. | [API службы защиты идентификации](../resources/identityprotection-root.md) | [Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>
+  [События с риском Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-reporting-risk-events) |
 | **Управление устройствами** | | |
 | Управляйте устройствами, зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) регистрируются на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются политиками условного доступа для многофакторной аутентификации. | [device](../resources/device.md) | [Знакомство с регистрацией устройств в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[Что такое InTune?](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Регистрация устройств для управления в Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **Управление приложениями** | | |
@@ -57,7 +61,8 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
 | Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | **Проверки доступа** | | |
-| Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверки доступа](../resources/accessreviews-root.md) |
+  [Проверки доступа Azure AD](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## <a name="next-steps"></a>Дальнейшие действия
 Ресурсы и API каталога открывают новые способы взаимодействия с пользователями и контроля их работы с помощью Microsoft Graph. Чтобы узнать больше: 
 

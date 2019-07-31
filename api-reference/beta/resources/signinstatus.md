@@ -1,16 +1,19 @@
 ---
 title: Тип ресурса Сигнинстатус
-description: Предоставляет состояние входа (успешный или неУдачный) входа
+description: Предоставляет состояние входа (успешный или неудачный) входа
 localization_priority: Normal
-ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d336e226b2855687da0aae889afd9d92141c895c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008308"
 ---
 # <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
-Предоставляет состояние входа (успешный или неУдачный) входа
+Предоставляет состояние входа (успешный или неудачный) входа
 
 
 

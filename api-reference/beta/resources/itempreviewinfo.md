@@ -1,15 +1,17 @@
 ---
 author: kevinlam
-ms.author: kevinlam
+description: Ресурс Итемпревиевинфо содержит сведения о внедрении предварительного просмотра DriveItem.
 ms.date: 3/16/2018
 title: 'Итемпревиевинфо: API OneDrive'
 localization_priority: Normal
-ms.openlocfilehash: c43626292cd07ad14d27202255a499b413dbae63
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 2d789dacb0f1c1d3daca988f334fca2e8da4b0d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345514"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010058"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Тип ресурса Итемпревиевинфо
 
@@ -31,9 +33,9 @@ ms.locfileid: "33345514"
 
 | Имя           | Тип   | Описание
 |:---------------|:-------|:---------------------------------------------------
-| Команда         | строка | URL-адрес, подходящие для внедрения с помощью HTTP GET (Iframes и т. д.)
-| Постурл        | строка | URL-адрес, подходящий для внедрения с помощью HTTP POST (форма POST, JS и т. д.)
-| Параметры | строка | Параметры POST для включения при использовании Постурл
+| Команда         | string | URL-адрес, подходящие для внедрения с помощью HTTP GET (Iframes и т. д.)
+| Постурл        | string | URL-адрес, подходящий для внедрения с помощью HTTP POST (форма POST, JS и т. д.)
+| Параметры | string | Параметры POST для включения при использовании Постурл
 
 В зависимости от текущего состояния поддержки для заданных параметров может возвращаться либо getUrl, Постурл, либо и то, и другое.
 

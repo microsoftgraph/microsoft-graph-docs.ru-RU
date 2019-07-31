@@ -2,18 +2,21 @@
 title: Тип ресурса СуспиЦиаусиприскевент
 description: Событие риска, обнаруженное при попытке входа учетной записи с подозрительным IP-адресом с помощью средства защиты удостоверений Azure Active Directory. Полную информацию о событиях риска можно найти в документации по защите удостоверений Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: f5151c5526dc4d7d63ce6b230705497f67db88dd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: a774c94d8e4ade2067e3aa784c42bee5db6ee3b0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345726"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008049"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>Тип ресурса СуспиЦиаусиприскевент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие риска, обнаруженное при попытке входа учетной записи с подозрительным IP-адресом с помощью средства [защиты удостоверенИй Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) . Полную информацию о событиях риска можно найти в [документации по защите удостоверенИй Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Событие риска, обнаруженное при попытке входа учетной записи с подозрительным IP-адресом с помощью средства [защиты удостоверений Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) . Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Методы
@@ -25,20 +28,20 @@ ms.locfileid: "33345726"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Клоседдатетиме|dateTimeOffset| Дата и время закрытия события риска|
+|closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
-|id|строка| Только для чтения|
-|ipAddress|строка| IP-адрес входа|
-|location|строка| Расположение, подключенное к IP-адресу входа|
+|id|string| Только для чтения|
+|ipAddress|string| IP-адрес входа|
+|location|string| Расположение, подключенное к IP-адресу входа|
 |Рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|Рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|строка| Тип риска|
-|userDisplayName|строка| Имя пользователя под угрозой|
-|userId|строка| Идентификатор пользователя, который подвергается риску|
+|Рискевенттипе|string| Тип риска|
+|userDisplayName|string| Имя пользователя под угрозой|
+|userId|string| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|

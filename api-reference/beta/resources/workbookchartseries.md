@@ -4,12 +4,13 @@ description: Представляет ряд в диаграмме.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e9ff478a5f7e91c3d116ca2dbd78e20699077aab
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: c7f7c8108ac17e6705b8bf5f69b0e87f0dc96b31
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348981"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007251"
 ---
 # <a name="workbookchartseries-resource-type"></a>Тип ресурса Воркбукчартсериес
 
@@ -25,8 +26,8 @@ ms.locfileid: "33348981"
 |[Получение объекта ChartSeries](../api/chartseries-get.md) | [Воркбукчартсериес](workbookchartseries.md) |Чтение свойств и связей объекта chartSeries.|
 |[Создание ChartPoint](../api/chartseries-post-points.md) |[chartPoints](workbookchartpoint.md)| Создание нового chartPoint путем публикации в коллекции Points.|
 |[Список точек](../api/chartseries-list-points.md) |Коллекция [воркбукчартпоинтс](workbookchartpoint.md)| Получение коллекции объектов chartPoints.|
-|[Обновление](../api/chartseries-update.md) | [Воркбукчартсериес](workbookchartseries.md) |Обновление объекта chartSeries. |
-|[Список](../api/chartseries-list.md) | Коллекция [воркбукчартсериес](workbookchartseries.md) |Получение коллекции объектов chartSeries. |
+|[обновление](../api/chartseries-update.md); | [Воркбукчартсериес](workbookchartseries.md) |Обновление объекта chartSeries. |
+|[List](../api/chartseries-list.md) | Коллекция [воркбукчартсериес](workbookchartseries.md) |Получение коллекции объектов chartSeries. |
 |[Итемат](../api/chartseriescollection-itemat.md)|[Воркбукчартсериес](workbookchartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
 
 ## <a name="properties"></a>Свойства

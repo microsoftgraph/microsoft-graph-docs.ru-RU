@@ -4,12 +4,13 @@ description: Параметры для настройки использован
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0f96157072ac7b6de403f82822226f316c8dcd46
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 05f882a54ab43dce3f985a4913b3f20c4ef3a1f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341713"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007713"
 ---
 # <a name="teamfunsettings-resource-type"></a>Тип ресурса Теамфунсеттингс
 
@@ -20,10 +21,10 @@ ms.locfileid: "33341713"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Алловгифи|Логический|Если задано значение true, включается использование Giphy.|
+|Алловгифи|Boolean|Если задано значение true, включается использование Giphy.|
 |Гификонтентратинг|String (enum)|Оценка содержимого Giphy. Возможные значения: `moderate`, `strict`.|
-|Алловстиккерсандмемес|Логический|Если задано значение true, пользователям разрешается включать наклейки и мемес.|
-|Алловкустоммемес|Логический|Если задано значение true, пользователи могут включать пользовательские мемес.|
+|Алловстиккерсандмемес|Boolean|Если задано значение true, пользователям разрешается включать наклейки и мемес.|
+|Алловкустоммемес|Boolean|Если задано значение true, пользователи могут включать пользовательские мемес.|
 
 ## <a name="json-representation"></a>Представление JSON
 

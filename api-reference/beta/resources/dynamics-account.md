@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 4252c20e9d11f67a6de40871b1649a165cbd787c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cd42177d4886793adedc222cb360a2b3e89faa7e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507576"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012690"
 ---
 # <a name="accounts-resource-type"></a>Тип ресурса Accounts
 Представляет объект Account в Dynamics 365 Business Central.
@@ -26,11 +27,11 @@ ms.locfileid: "32507576"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|GUID|Уникальный идентификатор учетной записи.|
-|number|Строка, максимальный размер 20|Указывает номер финансового счета.|
+|число|Строка, максимальный размер 20|Указывает номер финансового счета.|
 |displayName|Строка, максимальный размер 50|Указывает имя финансового счета.|
 |category|Строка, максимальный размер 20|Указывает категорию финансового счета.|
 |Подкатегории|Строка, максимальный размер 80|Указывает подкатегорию категории счетов для финансового счета.|
-|заблокированных|логический|Указывает, что операции не могут быть учтены на финансовом счете. **Значение true** указывает, что учетная запись заблокирована, а Разноска не разрешена.|
+|заблокированных|boolean|Указывает, что операции не могут быть учтены на финансовом счете. **Значение true** указывает, что учетная запись заблокирована, а Разноска не разрешена.|
 |lastModifiedDateTime|отличным|Дата и время последнего изменения учетной записи.|
 
 

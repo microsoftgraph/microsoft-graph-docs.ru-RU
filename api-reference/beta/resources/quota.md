@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс Quota предоставляет сведения об ограничениях дискового пространства для ресурса Drive.
 ms.date: 09/10/2017
 title: Назначаем
 localization_priority: Normal
-ms.openlocfilehash: b7357eba3cdf7a9f01c983016c6890232c3d5bbf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 83e842872694a1f708bf37ab800fa73673255647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008798"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса Quota
 

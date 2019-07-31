@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e9da6a72c3c2d79323041e683702a7af2e4699c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b9f336e3d23cd84f79af7092463383a030336e13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463273"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009862"
 ---
 # <a name="mailboxusagemailboxcounts-resource-type"></a>Тип ресурса Маилбоксусажемаилбокскаунтс
 

@@ -2,12 +2,15 @@
 title: " Тип ресурса Цертификатионконтрол"
 description: Этот ресурс содержит данные сертификации соответствия требованиям, связанные с контролем безопасности по показателю.
 localization_priority: Normal
-ms.openlocfilehash: 6f8269a85a8d3cb032f3e58457df95f4dd432c11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 22dc12070a801988d814ba73c6bffe1414bb5218
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535415"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012998"
 ---
 #  <a name="certificationcontrol-resource-type"></a>Тип ресурса Цертификатионконтрол
 
@@ -18,7 +21,7 @@ ms.locfileid: "32535415"
 |name | string | Имя элемента управления сертификацией |
 |url | string | URL-адрес портала доверия службы Майкрософт |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

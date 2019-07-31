@@ -4,12 +4,13 @@ description: Настройка общих устройств Android для р�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c90c3ee2b7e2b9d40d9210ef0c0997e911122425
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 8816373a21e1b6bc21c0543d65dc5928a14ef7fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34991144"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011822"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidForWorkGeneralDeviceConfiguration
 

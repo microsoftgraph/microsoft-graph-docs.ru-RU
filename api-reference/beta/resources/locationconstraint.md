@@ -4,12 +4,13 @@ description: Условия, заданные клиентом в отношен
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d22e351217125cc54f2fa7f95e4be1d3d70fc6a2
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 6828d7afdb9caec79978f4196106ff687faa2a1d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345314"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009939"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -17,7 +18,7 @@ ms.locfileid: "33345314"
 
 Условия, заданные клиентом в отношении расположения для проведения собрания.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -40,7 +41,7 @@ ms.locfileid: "33345314"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|isRequired|Логический|Клиент запрашивает у службы включение в отклик данных о расположении для проведения собрания. Если задано значение true и все ресурсы заняты, [findMeetingTimes](../api/user-findmeetingtimes.md) не вернет вариантов времени для проведения собрания. Если задано значение false и все ресурсы заняты, **findMeetingTimes** все равно будет искать варианты времени для проведения собрания, но без указания расположений. |
+|isRequired|Boolean|Клиент запрашивает у службы включение в отклик данных о расположении для проведения собрания. Если задано значение true и все ресурсы заняты, [findMeetingTimes](../api/user-findmeetingtimes.md) не вернет вариантов времени для проведения собрания. Если задано значение false и все ресурсы заняты, **findMeetingTimes** все равно будет искать варианты времени для проведения собрания, но без указания расположений. |
 |locations|Коллекция [locationConstraintItem](locationconstraintitem.md)|Ограниченные сведения об одном или нескольких расположениях, которые клиент запрашивает для собрания.|
 |Сугжестлокатион|Boolean|Клиент запрашивает у службы один или несколько вариантов расположений для проведения собрания.|
 

@@ -4,12 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c9dc533360d28fc470a3a00528a20cea1b7ea551
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 7eba40effa1ef5107a97e2acd075dad0c5e350f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328194"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013103"
 ---
 # <a name="bookingnamedentity-resource-type"></a>Тип ресурса Букингнамедентити
 
@@ -20,7 +21,7 @@ ms.locfileid: "33328194"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя производной сущности, которая взаимодействует с клиентами.|
+|displayName|Строка|Имя производной сущности, которая взаимодействует с клиентами.|
 |id|String| Идентификатор производной сущности. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения

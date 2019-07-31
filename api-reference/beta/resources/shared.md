@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс Shared указывает, что к элементу DriveItem был предоставлен доступ другим пользователям.
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
-ms.openlocfilehash: 143593615d34d069c8378f1cb068fc000d076192
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d4337341245d355d85d8d4ba74171ed95863e06a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343181"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008469"
 ---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
 

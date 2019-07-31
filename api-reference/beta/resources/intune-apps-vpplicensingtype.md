@@ -4,12 +4,13 @@ description: Содержит свойства для корпоративног
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: accd95c5045e42e3e89a9221e0084e11d4ed3825
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: fe6e59ba5703d5c069781db6331f0ea6dbbfa240
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34993251"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012382"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Тип ресурса vppLicensingType
 

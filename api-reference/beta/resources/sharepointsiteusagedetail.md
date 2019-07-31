@@ -3,12 +3,14 @@ title: Тип ресурса Шарепоинтситеусажедетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 10b0f83dc6ed69fc3158e7d5ac6f35e242052042
-ms.sourcegitcommit: afea19508ad74a3583b11b5f7b544c53eafb3740
+doc_type: resourcePageType
+author: ''
+ms.openlocfilehash: 50acafbe1d58aabf3bc502e2400f84c1dd530356
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344936"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008448"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>Тип ресурса Шарепоинтситеусажедетаил
 

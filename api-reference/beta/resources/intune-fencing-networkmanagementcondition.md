@@ -4,12 +4,13 @@ description: Содержит сведения для определения у�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46e32312dc501219d887fcebb5da435ad2690031
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 54495de0d31c9ccc36a663450d1e6e8a0605c85f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987742"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011059"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>Тип ресурса Нетворкманажементкондитион
 

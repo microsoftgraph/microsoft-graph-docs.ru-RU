@@ -2,12 +2,15 @@
 title: Тип ресурса recurrencePattern
 description: Описывает частоту повторения события.
 localization_priority: Normal
-ms.openlocfilehash: 1dd582a9054850b9aa4cf3a8c29aa2366d6aaf2a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 48fca7295d7305fd915cf40a32c227f1fbf08c5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343852"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008742"
 ---
 # <a name="recurrencepattern-resource-type"></a>Тип ресурса recurrencePattern
 
@@ -38,7 +41,7 @@ ms.locfileid: "33343852"
 |daysOfWeek|Коллекция String|Коллекция дней недели, в которые происходит событие. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Если для **type** задано значение `relativeMonthly` или `relativeYearly`, а **daysOfWeek** указывает несколько дней, то событие происходит в первый день, соответствующий расписанию. <br> Обязательный параметр, если для **type** задано значение `weekly`, `relativeMonthly` или `relativeYearly`.|
 |firstDayOfWeek|String|Первый день недели. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Значение по умолчанию: `sunday`. Обязательное, если для **type** задано значение `weekly`. |
 |index|String|Указывает, в какой из разрешенных дней, указанных в **daysOfsWeek**, происходит событие (начиная с первого экземпляра за месяц). Возможные значения: `first`, `second`, `third`, `fourth`, `last`. Значение по умолчанию: `first`. Необязательное, если для **type** задано значение `relativeMonthly` или `relativeYearly`. |
-|interval|Int32|Количество единиц между повторениями. Единицами могут быть дни, недели, месяцы или годы (в зависимости от значения **type**). Обязательный. |
+|interval|Int32|Количество единиц между повторениями. Единицами могут быть дни, недели, месяцы или годы (в зависимости от значения **type**). Обязательно. |
 |month|Int32|Месяц, в который происходит событие.  Это число от 1 до 12.|
 |type|String|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательное.|
 

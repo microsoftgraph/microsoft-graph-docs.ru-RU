@@ -2,12 +2,15 @@
 title: Тип ресурса singleValueLegacyExtendedProperty
 description: 'Расширенное свойство, содержащее одно значение. '
 localization_priority: Normal
-ms.openlocfilehash: e57091e9ccf525fc10754dab7de464f2ebf7662c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 256fea5b42f367fb9c6d08b2e871bebd825e3451
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008329"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Тип ресурса singleValueLegacyExtendedProperty
 
@@ -31,7 +34,7 @@ ms.locfileid: "33343058"
 |id|string|Идентификатор свойства. Только для чтения.|
 |значение|string|Значение свойства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

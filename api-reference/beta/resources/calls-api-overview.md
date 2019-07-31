@@ -4,12 +4,13 @@ description: API звонков и собраний по сети в Microsoft G
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a84900147679901ad45a19180c05f17246768479
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: dea588035e2f19361a36450bb49b4c5b2d9391b5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328318"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013012"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Работа с API звонков и собраний по сети в Microsoft Graph
 

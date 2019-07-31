@@ -2,14 +2,15 @@
 title: Настройка синхронизации с атрибутами расширения каталога
 description: 'Вы можете настроить схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значения User. Коммунитиниккнаме в Salesforce. В этом сценарии у вас есть Azure AD Connect, настроенный на подготовку ряда атрибутов расширения каталогов из локальной среды Windows Server Active Directory в Azure AD. '
 localization_priority: Normal
+doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d7624a90a550fba990be960eb9ebd954ebca6926
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f545057cd6fd64151f85218704b6887d7e925892
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891753"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007979"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Настройка синхронизации с атрибутами расширения каталога
 

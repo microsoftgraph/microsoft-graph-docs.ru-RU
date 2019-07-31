@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Ресурс webPart представляет тип и сведения о визуализации веб-части в Ситепаже.
 ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 03b5f1007d8dbe6587da736cdf0ac0fdc1ed8a55
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 71626440abe9eb63af3419b3e65c4351ae442dea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345795"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007356"
 ---
 # <a name="webpart-resource"></a>ресурс webPart
 

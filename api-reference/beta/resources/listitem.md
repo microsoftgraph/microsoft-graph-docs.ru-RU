@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Этот ресурс представляет элемент объекта list в SharePoint.
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9f813511ffa8a033d2ee85f8c7e5d2d5a271dd1e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3c05125257eeec9d7b21a7d1eb03de79bc189ccd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009981"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -39,7 +40,7 @@ ms.locfileid: "33345248"
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 [Создание]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
+[Удаление]: ../api/listitem-delete.md
 [Обновление]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -110,7 +111,7 @@ ms.locfileid: "33345248"
 | Имя связи | Тип                           | Описание
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.
-| analytics         | Ресурс [itemAnalytics][]     | Аналитика сведений о действиях, которые были выполнены для этого элемента.
+| analytics         | Ресурс [itemAnalytics][]     | Аналитические данные о действиях просмотра, выполненных для элемента.
 | driveItem         | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]**
 | fields            | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.
 | versions          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.

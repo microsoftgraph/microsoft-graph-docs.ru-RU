@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс baseItem — это абстрактный ресурс, который содержит общий набор свойств, которые являются общими для нескольких других типов ресурсов.
 ms.date: 09/10/2017
 title: baseItem
 localization_priority: Normal
-ms.openlocfilehash: 6c37ecc2ab0f838f4957a5aff1d88c4c6b75b382
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 38e697e4a991871bd592cc891dcd131e845572fe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339122"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013145"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 

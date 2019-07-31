@@ -2,12 +2,15 @@
 title: Тип ресурса Скипефорбусинессактивитюсердетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: bd17deab26b061f48f762bf8ffeb5f8289b2a51f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571767"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008196"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессактивитюсердетаил
 
@@ -48,7 +51,7 @@ ms.locfileid: "32571767"
 | isDeleted                                | Boolean           |
 | Делетеддате                              | Дата              |
 | Ластактивитидате                         | Дата              |
-| Ассигнедпродуктс                         | Коллекция String |
+| Ассигнедпродуктс                         | Коллекция строк |
 | Репортпериод                             | String            |
 
 ## <a name="json-representation"></a>Представление JSON

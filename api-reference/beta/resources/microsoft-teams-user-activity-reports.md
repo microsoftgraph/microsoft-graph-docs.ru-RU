@@ -4,12 +4,13 @@ description: Используйте отчеты об активности по�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f88d1c9d568ce3fbbf9bfe19abaf637065d37b8c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.openlocfilehash: ca8d1f772744b33aa5fee60fc3b843bf60b0be9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342207"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009638"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Отчеты о действиях пользователей Microsoft Teams
 

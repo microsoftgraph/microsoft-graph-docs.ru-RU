@@ -4,12 +4,13 @@ description: Пара "ключ-значение" для хранения пол
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed0df0d07c21ea41aaad5eb9aac993b35ca28f8c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b5d4a294be690e012d43893e44540658e919c123
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34995975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010429"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 

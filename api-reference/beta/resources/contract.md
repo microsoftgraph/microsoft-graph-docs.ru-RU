@@ -4,12 +4,13 @@ description: Представляет существующую связь, с к
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ffbc5d1fed99f852c3b800add025cd941cc21a72
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: df27cd583644d7066043f8c332bd708f80f7d0c0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36012837"
 ---
 # <a name="contract-resource-type"></a>Тип ресурса контракта
 

@@ -4,12 +4,13 @@ description: Представляет форматирование для наз
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c98cfee5c776f761c4e84479bb6a4b3f2814bb06
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e992f083bd063ea7708f0aec4261ec04cbcc8539
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348937"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007286"
 ---
 # <a name="workbookchartaxistitleformat-resource-type"></a>Тип ресурса Воркбукчартаксиститлеформат
 
@@ -19,7 +20,7 @@ ms.locfileid: "33348937"
 
 
 ## <a name="methods"></a>Методы
-Отсутствует
+Нет
 
 ## <a name="properties"></a>Свойства
 Нет

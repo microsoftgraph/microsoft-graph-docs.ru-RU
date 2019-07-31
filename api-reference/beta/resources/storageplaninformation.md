@@ -1,15 +1,17 @@
 ---
 author: psampath
-ms.author: psampath
+description: Ресурс storagePlanInformation предоставляет сведения о планах квот хранилища диска.
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
-ms.openlocfilehash: 3911d3af5f2149d1043ed246e7c11d287c840842
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d8ddb39f9f7c6443f0e669052084af27b8fd5cec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342961"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008084"
 ---
 # <a name="storageplaninformation-resource-type"></a>Тип ресурса storagePlanInformation
 
@@ -35,7 +37,7 @@ ms.locfileid: "33342961"
 
 | Имя свойства     | Тип      | Описание                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| Упградеаваилабле  | Логический   | Указывает, доступны ли планы квоты хранилища выше. Только для чтения. |
+| Упградеаваилабле  | Boolean   | Указывает, доступны ли планы квоты хранилища выше. Только для чтения. |
 
 
 <!--

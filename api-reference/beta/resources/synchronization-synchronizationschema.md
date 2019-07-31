@@ -2,14 +2,15 @@
 title: Тип ресурса Синчронизатионсчема
 description: Определяет объекты, которые будут синхронизированы и как они будут синхронизированы. Схема синхронизации содержит большую часть сведений о настройке для определенного задания синхронизации. Как правило, вы настраиваете некоторые сопоставления атрибутов или добавляете фильтр областей для синхронизации только объектов, удовлетворяющих определенному условию.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7d4302cec5fe568f322e5a8d1b86bc4681b50f7c
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 95cb2a9bc38b3c23d8ddece5abe5520bf0fe25a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620684"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007783"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса Синчронизатионсчема
 

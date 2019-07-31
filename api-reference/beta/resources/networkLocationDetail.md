@@ -2,12 +2,15 @@
 title: Тип ресурса Нетворклокатиондетаил
 description: Показывает сведения, связанные с сетевым расположением. .
 localization_priority: Normal
-ms.openlocfilehash: c4a5323099258d9670b970b1bb85bd0d01f3cf8d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 3b7e12a87889909737cac9a52fadf64231f7f2a5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342179"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009610"
 ---
 # <a name="networklocationdetail-resource-type"></a>Тип ресурса Нетворклокатиондетаил
 Показывает сведения, связанные с сетевым расположением.
@@ -18,7 +21,7 @@ ms.locfileid: "33342179"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Нетворктипе|Нетворктипе|Предоставляет тип сети. `intranet`Возможные значения: `extranet`, `namedNetwork`, и. `trusted`|
-|Нетворкнамес|Коллекция String|Имена сетей.|
+|Нетворкнамес|Коллекция строк|Имена сетей.|
 
 
 ## <a name="json-representation"></a>Представление JSON

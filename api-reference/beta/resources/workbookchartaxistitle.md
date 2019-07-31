@@ -4,12 +4,13 @@ description: Представляет название оси диаграммы
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bb6eeb7afb270d1cbc16fe5ab818f6a650800d1a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 685ed8ce049fda8cdba12d4bc9171156b458e443
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348938"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007300"
 ---
 # <a name="workbookchartaxistitle-resource-type"></a>Тип ресурса Воркбукчартаксиститле
 

@@ -4,12 +4,13 @@ description: Ошибка при выполнении операции с OneNot
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8b2912ee02ab22631224b892a09a8c4dd7840dd1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: ecd1c42ceb278c483601344dd28c72f7436b9537
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341449"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009351"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>Тип ресурса Оненотеоператионеррор
 

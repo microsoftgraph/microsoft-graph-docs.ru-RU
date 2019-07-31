@@ -4,12 +4,13 @@ description: Одноэлементный объект, служащий кон�
 localization_priority: Normal
 author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 7dfa6ead3de28daa0a5e3f4269578028dbc6b766
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: resourcePageType
+ms.openlocfilehash: 47ee6458d8c045ff99ce244a43e3058d040093fa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33949278"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011976"
 ---
 # <a name="officeconfiguration-resource-type"></a>Тип ресурса Оффицеконфигуратион
 
@@ -28,11 +29,11 @@ ms.locfileid: "33949278"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор конфигурации Office.|
+|id|String|Идентификатор конфигурации Office.|
 |Тенантчеккинстатусес|Коллекция [оффицеклиентчеккинстатус](../resources/intune-cirrus-officeclientcheckinstatus.md)|Список состояния возврата клиента Office.|
 |Тенантусерчеккинсуммари|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сущность, описывающая возврат клиента статуес|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Клиентконфигуратионс|Коллекция [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Список конфигураций клиентов Office.|
