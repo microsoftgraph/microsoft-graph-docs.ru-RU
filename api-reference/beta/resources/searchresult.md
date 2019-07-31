@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс SearchResult указывает, что элемент представляет собой отклик на поисковый запрос.
 ms.date: 09/10/2017
 title: SearchResult
 localization_priority: Normal
-ms.openlocfilehash: 74743839d55dd5a8fc52661fac4a071d7a1730bc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 716a8147c9041ceee64993f9e90ad2f0f9ecb9e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343488"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008609"
 ---
-# <a name="searchresult-resource-type"></a><span data-ttu-id="06321-102">Тип ресурса SearchResult</span><span class="sxs-lookup"><span data-stu-id="06321-102">SearchResult resource type</span></span>
+# <a name="searchresult-resource-type"></a><span data-ttu-id="63c1b-103">Тип ресурса SearchResult</span><span class="sxs-lookup"><span data-stu-id="63c1b-103">SearchResult resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="06321-103">Ресурс **SearchResult** указывает, что элемент представляет собой отклик на поисковый запрос.</span><span class="sxs-lookup"><span data-stu-id="06321-103">The **SearchResult** resource indicates than an item is the response to a search query.</span></span>
+<span data-ttu-id="63c1b-104">Ресурс **SearchResult** указывает, что элемент представляет собой отклик на поисковый запрос.</span><span class="sxs-lookup"><span data-stu-id="63c1b-104">The **SearchResult** resource indicates than an item is the response to a search query.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="06321-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="06321-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="63c1b-105">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="63c1b-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,15 +33,15 @@ ms.locfileid: "33343488"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="06321-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="06321-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="63c1b-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="63c1b-106">Properties</span></span>
 
-| <span data-ttu-id="06321-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="06321-106">Property</span></span>            | <span data-ttu-id="06321-107">Тип</span><span class="sxs-lookup"><span data-stu-id="06321-107">Type</span></span>   | <span data-ttu-id="06321-108">Описание</span><span class="sxs-lookup"><span data-stu-id="06321-108">Description</span></span>
+| <span data-ttu-id="63c1b-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="63c1b-107">Property</span></span>            | <span data-ttu-id="63c1b-108">Тип</span><span class="sxs-lookup"><span data-stu-id="63c1b-108">Type</span></span>   | <span data-ttu-id="63c1b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="63c1b-109">Description</span></span>
 |:--------------------|:-------|:----------------------------------------------
-| <span data-ttu-id="06321-109">onClickTelemetryUrl</span><span class="sxs-lookup"><span data-stu-id="06321-109">onClickTelemetryUrl</span></span> | <span data-ttu-id="06321-110">Строка</span><span class="sxs-lookup"><span data-stu-id="06321-110">String</span></span> | <span data-ttu-id="06321-p101">URL-адрес обратного вызова, с помощью которого можно записывать данные телеметрии. Когда пользователь использует этот элемент, приложение должно выполнять запрос GET на этот URL-адрес, чтобы повышать качество результатов.</span><span class="sxs-lookup"><span data-stu-id="06321-p101">A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.</span></span>
+| <span data-ttu-id="63c1b-110">onClickTelemetryUrl</span><span class="sxs-lookup"><span data-stu-id="63c1b-110">onClickTelemetryUrl</span></span> | <span data-ttu-id="63c1b-111">Строка</span><span class="sxs-lookup"><span data-stu-id="63c1b-111">String</span></span> | <span data-ttu-id="63c1b-p101">URL-адрес обратного вызова, с помощью которого можно записывать данные телеметрии. Когда пользователь использует этот элемент, приложение должно выполнять запрос GET на этот URL-адрес, чтобы повышать качество результатов.</span><span class="sxs-lookup"><span data-stu-id="63c1b-p101">A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="06321-113">Заметки</span><span class="sxs-lookup"><span data-stu-id="06321-113">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="63c1b-114">Заметки</span><span class="sxs-lookup"><span data-stu-id="63c1b-114">Remarks</span></span> 
 
-<span data-ttu-id="06321-114">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="06321-114">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="63c1b-115">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="63c1b-115">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 <!--
 {
