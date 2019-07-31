@@ -4,12 +4,13 @@ description: Ниже приведен пример JSON репресентаи�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 32b611ee9ec01b0339389256b8c8dff9eac99fa9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: cbe6297388907f28f8841e0a1dcb2ec3ae788844
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582908"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964356"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>Тип ресурса Теамсусерактивитюсердетаил
 
@@ -22,7 +23,7 @@ ms.locfileid: "32582908"
 | Ластактивитидате        | Дата              |
 | isDeleted               | Boolean           |
 | Делетеддате             | Дата              |
-| Ассигнедпродуктс        | Коллекция String |
+| Ассигнедпродуктс        | Коллекция строк |
 | Теамчатмессажекаунт    | Int64             |
 | Приватечатмессажекаунт | Int64             |
 | Каллкаунт               | Int64             |
@@ -30,7 +31,7 @@ ms.locfileid: "32582908"
 | Хасосерактион          | Boolean           |
 | Репортпериод            | String            |
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже приведен пример JSON репресентаион для ресурса.
 

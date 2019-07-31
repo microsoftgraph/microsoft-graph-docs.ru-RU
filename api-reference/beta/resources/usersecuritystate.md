@@ -4,12 +4,13 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7ca02b6582898e8a0184c6c37115c9ac96b386ff
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 3c0f9cb91484f23702329a38de26189176dacb13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345092"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964237"
 ---
 # <a name="usersecuritystate-resource-type"></a>Тип ресурса Усерсекуритистате
 
@@ -25,7 +26,7 @@ ms.locfileid: "33345092"
 |имя_учетной_записи|String|Имя учетной записи пользователя (без домена Active Directory или DNS-домена) (также называется `mailNickName`).|
 |domainName|String|NetBIOS/Active Directory учетной записи пользователя (то есть формат домен \ пользователь).|
 |emailRole|emailRole|Для оповещений, связанных с электронной почтой: "роль" — Электронная почта учетной записи пользователя. Возможные значения: `unknown`, `sender`, `recipient`.|
-|Исвпн|Логический|Указывает, вошел ли пользователь в систему через VPN.|
+|Исвпн|Boolean|Указывает, вошел ли пользователь в систему через VPN.|
 |Логондатетиме|DateTimeOffset|Время возникновения входа. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Логонид|String|Идентификатор входа пользователя.|
 |logonIp|String|IP-адрес, с которого поступил запрос на вход.|

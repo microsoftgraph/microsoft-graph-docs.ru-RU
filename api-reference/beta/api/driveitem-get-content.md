@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: В этой статье рассказывается, как скачать содержимое основного потока (файла) элемента DriveItem. Вы можете скачать только те элементы driveItem, у которых имеется свойство file.
 ms.date: 09/10/2017
 title: Скачивание файла
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 435c712a586dfb3661d0f4814bfc87c4ed07922b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6f5d836b5c5dbd382cbf11cf94fc0273515d4806
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861173"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957110"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 

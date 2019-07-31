@@ -4,12 +4,13 @@ description: 'Получение списка сообщений (без отв�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: f50b14c91bb86c81de000d9593b889f1224cd063
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: d095e2c53452cf1cb3dc8860419365b8a103eed3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931063"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35944270"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 

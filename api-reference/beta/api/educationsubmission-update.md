@@ -4,12 +4,13 @@ description: Добавьте оценку и обратную связь к о�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c83617fc6882c2ea39f16bb5313f952b76c44105
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 3ad2c4663eb2d93d36a370762a650f4a38f48c03
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324730"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35954951"
 ---
 # <a name="update-educationsubmission"></a>Обновление educationsubmission
 
@@ -43,7 +44,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|замечания|Едукатионфидбакк||
+|feedback|Едукатионфидбакк||
 |оценка|Едукатионассигнментграде||
 
 ## <a name="response"></a>Отклик

@@ -4,12 +4,13 @@ description: Создание нового объекта iosEducationDeviceConf
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7d80e093c088969700cb772b0b4dc678f179e7c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 39c55218e7216b56b61e180c8757834981520785
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34966931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35948420"
 ---
 # <a name="create-ioseducationdeviceconfiguration"></a>Создание iosEducationDeviceConfiguration
 

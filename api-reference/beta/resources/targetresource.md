@@ -3,13 +3,14 @@ title: сложный тип ресурса targetResource — API Microsoft Gra
 description: Определяет сложный тип ресурса сущности targetResource API Microsoft Graph, который поддерживает действия Организации отчетности журнала аудита (клиента).
 author: davidmu1
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: azure-ad
-ms.openlocfilehash: 0a52a8586d8bce211729b8dffe2a43129b94b30d
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: a67cfbccf9d05872ec0d9207ac54c51cda222053
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34657653"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964580"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 

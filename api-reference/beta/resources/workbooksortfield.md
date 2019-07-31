@@ -2,12 +2,15 @@
 title: Тип ресурса Воркбуксортфиелд
 description: Представляет условие в операции сортировки.
 localization_priority: Normal
-ms.openlocfilehash: 239c0e3b9f95108165ed32e7e22f94049e787432
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: excel
+author: ''
+ms.openlocfilehash: 55a1f822e080f786b588837dd6d9120cea546d4b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33349009"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963908"
 ---
 # <a name="workbooksortfield-resource-type"></a>Тип ресурса Воркбуксортфиелд
 

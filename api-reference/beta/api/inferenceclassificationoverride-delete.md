@@ -2,12 +2,15 @@
 title: Удаление объекта inferenceClassificationOverride
 description: Удаление отсортированного переопределения папки "Входящие", указанного с помощью идентификатора.
 localization_priority: Normal
-ms.openlocfilehash: 97ce2f0aab82e031fec2b2b96e3ffd8d08c92a3b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 5819b243bafe0fdb9f012bed6ae1f753f1d1150f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857508"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953096"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 

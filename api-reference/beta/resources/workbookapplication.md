@@ -4,12 +4,13 @@ description: Представляет Воркбукаппликатион Excel
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3db8c640ebb2fd36a0902563c28a3ec51bfa99d8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 71c7c92e623fc2a9c05b9e1e8448f329615c51e3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348976"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964111"
 ---
 # <a name="workbookapplication-resource-type"></a>Тип ресурса Воркбукаппликатион
 
@@ -23,7 +24,7 @@ ms.locfileid: "33348976"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение Воркбукаппликатион](../api/workbookapplication-get.md) | [Воркбукаппликатион](workbookapplication.md) |Чтение свойств и связей объекта Воркбукаппликатион.|
-|[Calculate](../api/workbookapplication-calculate.md)|Отсутствует|Пересчитывает данные во всех открытых в текущий момент книгах Excel.|
+|[Calculate](../api/workbookapplication-calculate.md)|Нет|Пересчитывает данные во всех открытых в текущий момент книгах Excel.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

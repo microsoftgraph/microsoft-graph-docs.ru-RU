@@ -4,12 +4,13 @@ description: Инкапсулирует свойства формата для �
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c152971dde5efb188cfde30c30b54a1266b44fb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 91e749fd0f1449883eca261f5ef27c0f2a7ba5dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348944"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964090"
 ---
 # <a name="workbookchartaxisformat-resource-type"></a>Тип ресурса Воркбукчартаксисформат
 
@@ -19,7 +20,7 @@ ms.locfileid: "33348944"
 
 
 ## <a name="methods"></a>Методы
-Отсутствует
+Нет
 ## <a name="properties"></a>Свойства
 Нет
 

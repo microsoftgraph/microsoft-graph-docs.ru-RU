@@ -4,12 +4,13 @@ description: Получение **группы** Office 365, которая со
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 57410d1c686454b5843d5d1b2d5769753b8a25ba
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 51c9e8be9e4b0e6a226824d8bc19a329e09ec9cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860649"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955477"
 ---
 # <a name="get-group"></a>Получение группы
 

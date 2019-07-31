@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 631f043819d45ded32f4a79cf68e644221f2a4aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5ddbc2cb4053456e76ee57ca06375f6a64ffa106
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458315"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955955"
 ---
 # <a name="delete-taxareas"></a>Удаление Таксареас
 Удаление объекта налоговой области из Dynamics 365 Business Central.
@@ -39,11 +40,11 @@ DELETE /financials/companies('{id}')/taxAreas('{id}')
 |Авторизация  |Bearer {токен}. Обязательный. |
 |If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **таксареас**, **таксареас** не будет обновлен. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 

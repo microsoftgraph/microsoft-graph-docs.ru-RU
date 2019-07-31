@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
 ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325345"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957194"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -90,7 +91,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | Параметр            | Тип                          | Описание
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | Дривеитемуплоадаблепропертиес | Данные о отправляемом файле
-| Деферкоммит          | Логический                       | Если задано значение true, для конечного создания файла в месте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
+| Деферкоммит          | Boolean                       | Если задано значение true, для конечного создания файла в месте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
 
 ## <a name="item-properties"></a>Свойства элемента
 
@@ -168,7 +169,7 @@ Content-Range: bytes 0-25/128
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.
 Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 

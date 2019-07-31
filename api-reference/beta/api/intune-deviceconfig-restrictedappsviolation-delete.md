@@ -4,12 +4,13 @@ description: Удаляет объект Рестриктедаппсвиола�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a428cb1ff5d553c6b3ce3cc328bf67a3729aad6
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fd36b2a9454d69d2fd97dde190a7b7d3dddf0e74
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976339"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946532"
 ---
 # <a name="delete-restrictedappsviolation"></a>Удаление Рестриктедаппсвиолатион
 

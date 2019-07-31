@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem.
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: db11d1bb36e608a477669ec174ef8bdb09dbdf55
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fdb0bd3b1c0ec346252bb4a45763c26d3cec96d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861122"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957096"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -57,7 +58,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке диска текущего пользователя
 
-Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)

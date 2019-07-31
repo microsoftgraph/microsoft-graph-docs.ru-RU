@@ -4,12 +4,13 @@ description: Стек мультимедиа, размещенный в прил
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0cb34d0673404c90607a8f1ac442ca1b7c504ce9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: abc9cd8aa916c4e0b9141f79151fbd7e9f2d3b8b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33339183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013369"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса Апфостедмедиаконфиг
 
@@ -22,7 +23,7 @@ ms.locfileid: "33339183"
 | Свойство                          | Тип    | Описание                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
 | характеристики                              | String  | Большой двоичный объект конфигурации мультимедиа, созданный агентом интеллектуальных носителей.    |
-| Ремовефромдефаултаудиограуп       | Логический | Удаление звука из группы "звук" по умолчанию                       |
+| Ремовефромдефаултаудиограуп       | Boolean | Удаление звука из группы "звук" по умолчанию                       |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: b4d5ca27c1248d07ddfa38b4b282282c282e5eef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 55c51b0016876a0b80f35d8d12168bb700881075
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458266"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955934"
 ---
 # <a name="get-taxareas"></a>Получение Таксареас
 Получение свойств и связей объекта налоговой области для Dynamics 365 Business Central.
@@ -39,10 +40,10 @@ GET /financials/companies('{id}')/taxAreas('{id}')
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **таксареас** в тексте отклика.
 
 ## <a name="example"></a>Пример

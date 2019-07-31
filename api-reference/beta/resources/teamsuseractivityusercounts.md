@@ -4,12 +4,13 @@ description: Ниже указано представление ресурса �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bcb69c09d621ce3cce006fd9130afa0a70e4cdb8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: f0b6d9d77518b6e40a5793c6715bfbae69600f3c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964363"
 ---
 # <a name="teamsuseractivityusercounts-resource-type"></a>Тип ресурса Теамсусерактивитюсеркаунтс
 

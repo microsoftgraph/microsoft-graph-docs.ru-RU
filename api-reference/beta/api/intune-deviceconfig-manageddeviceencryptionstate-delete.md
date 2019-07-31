@@ -4,12 +4,13 @@ description: Удаляет объект Манажеддевицеенкрип�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37dd9ff1b64081812554c40bf633eb426e4962b9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c7269b5a828b1124fd937092140d628369e18549
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34976451"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946726"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>Удаление Манажеддевицеенкриптионстате
 

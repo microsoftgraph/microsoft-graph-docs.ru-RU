@@ -4,12 +4,13 @@ description: Запрещает предложения по времени со�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3ce27e94ff4f201def558ae4478e12642efeb638
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: 8393e4b501815dcbd0195e04ca82cd639d1a84c8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33342053"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964321"
 ---
 # <a name="timeconstraint-resource-type"></a>Тип ресурсов timeConstraint
 

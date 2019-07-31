@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 9f3a09ddeee5e84e0ae7de35c4f5705e6781743d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 84e5a81ba604819f90ccd1fde600fe43abbfdcaa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956501"
 ---
 # <a name="get-currencies"></a>Получение валют
 Получение свойств и связей объекта Currency для Dynamics 365 Business Central.
@@ -39,10 +40,10 @@ GET /financials/companies('{id}')/currencies('{id}')
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **валюты** в теле отклика.
 
 ## <a name="example"></a>Пример

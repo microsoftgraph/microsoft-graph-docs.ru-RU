@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0dd701cfff4b730c97d5c92ce2ed2134fced81fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e4797a866124daf3877eac29b93f4cf3608938d9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956774"
 ---
 # <a name="get-countriesregions"></a>Получение Каунтриесрегионс
 Получение свойств и связей объекта Каунтриесрегионс для Dynamics 365 Business Central.
@@ -38,10 +39,10 @@ GET /financials/companies('{id}')/countriesRegions('{id}')
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **каунтриесрегионс** в тексте отклика.
 
 ## <a name="example"></a>Пример

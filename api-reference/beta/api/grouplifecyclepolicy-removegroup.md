@@ -4,12 +4,13 @@ description: Удаляет группу из политики жизненно�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 74b194a9d0bf7810e8e45ade806577177d3dc4f7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 8043119b2480f0116566d668b440e4d493ebbeb5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324093"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953313"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -50,7 +51,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
 
 ## <a name="example"></a>Пример
 

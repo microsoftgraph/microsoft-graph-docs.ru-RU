@@ -4,12 +4,13 @@ description: " преподаватели могут видеть все наз�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: df0c4859b650b181ac317374a74093dac7b64353
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 22db7dc1c85de37c991078ba4c7b718c2e2dbc52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325113"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955675"
 ---
 # <a name="get-educationassignment"></a>Получение educationAssignment
 

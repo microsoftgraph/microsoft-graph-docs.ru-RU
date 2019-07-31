@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windowsA
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3419cf1c02dcc1073eecf04796f1392b5e91c54d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: af001b9f369328ebfcf3e5c9b8b0b4f854edfd88
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35960141"
 ---
 # <a name="get-windowsappx"></a>Получение windowsAppX
 

@@ -2,12 +2,15 @@
 title: Тип ресурса timeZoneInformation
 description: Представляет часовой пояс. Поддерживаемый формат — Windows, а часовой пояс IP Numbers Authority (IANA) (также известный как часовой пояс Олсона).
 localization_priority: Normal
-ms.openlocfilehash: ecc13a614aacbe66e3e477bc87f874c215d10574
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: ea20a14ddd18e533767e7e969a91a07f6e2ad479
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341831"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964291"
 ---
 # <a name="timezoneinformation-resource-type"></a>Тип ресурса timeZoneInformation
 

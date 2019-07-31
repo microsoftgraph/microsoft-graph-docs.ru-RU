@@ -4,12 +4,13 @@ description: Представляет строку в таблице.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2c43fab3024d04a9e58f5de23e849c7b98fafeed
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: e6097915005c96291f93543866ad9e28ff781f82
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33349018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35963873"
 ---
 # <a name="workbooktablerow-resource-type"></a>Тип ресурса Воркбуктаблеров
 
@@ -25,7 +26,7 @@ ms.locfileid: "33349018"
 |[Получение объекта TableRow](../api/tablerow-get.md) | [Воркбуктаблеров](workbooktablerow.md) |Чтение свойств и связей объекта tableRow.|
 |[Обновление](../api/tablerow-update.md) | [Воркбуктаблеров](workbooktablerow.md)  |Обновление объекта tableRow. |
 |[Range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со всей строкой.|
-|[Delete](../api/tablerow-delete.md)|Нет|Удаляет строку из таблицы.|
+|[Удаление](../api/tablerow-delete.md)|Нет|Удаляет строку из таблицы.|
 |[Список](../api/tablerow-list.md) | Коллекция [воркбуктаблеров](workbooktablerow.md) |Получение коллекции объектов tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[Воркбуктаблеров](workbooktablerow.md)|Получает строку на основании ее позиции в коллекции.|
 |[Add](../api/tablerowcollection-add.md)|[Воркбуктаблеров](workbooktablerow.md)|Добавляет новую строку в таблицу.|
@@ -36,7 +37,7 @@ ms.locfileid: "33349018"
 |index|int|Возвращает номер индекса строки в коллекции строк таблицы. Используется нулевой индекс. Только для чтения.|
 |values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

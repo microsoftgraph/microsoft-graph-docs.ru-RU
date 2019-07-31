@@ -4,12 +4,13 @@ description: Список свойств и связей объектов micros
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a92ad0081aa4cc6cebe410804f90932fc8a225ad
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: fe78ffd739f2b8cb926843333f8867b9dbb33944
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961205"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Перечисление объектов microsoftStoreForBusinessApp
 

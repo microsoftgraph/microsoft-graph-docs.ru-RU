@@ -2,12 +2,15 @@
 title: Тип ресурса "приложение"
 description: Указывает параметры для веб-приложения.
 localization_priority: Normal
-ms.openlocfilehash: cdb210d5193167138ecec216b1e4084554f05c78
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: e57744c3825a669a9008cd05d649be0ec51b71ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33348433"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964153"
 ---
 # <a name="webapplication-resource-type"></a>Тип ресурса "приложение"
 

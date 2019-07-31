@@ -4,12 +4,13 @@ description: Вычисляемое представление, которое �
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: fd3f784ca48c408b8616faaa965b327aec48c538
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 5fa615e27f6fe1833af8d1b7c62c952623f5b703
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328574"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953068"
 ---
 # <a name="list-shared"></a>Список "Общие"
 
@@ -57,7 +58,7 @@ GET /users/{id | userPrincipalName}/insights/shared
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

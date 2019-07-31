@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта termsAnd
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 978e4ad4941d344d5dcb4da2e5557a4c8eaacb60
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0ac424b23baa4ae629929afa28a88a07633ddfbf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34971859"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35958644"
 ---
 # <a name="get-termsandconditionsassignment"></a>Получение объекта termsAndConditionsAssignment
 

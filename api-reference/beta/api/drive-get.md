@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: В этой статье рассказывается, как получить свойства и связи ресурса Drive.
 ms.date: 09/10/2017
-title: Получение доступа к ресурсу Drive
+title: Получение ресурса Drive
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 818923b6c8f72a972d6979813e5e0365359c42d2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d4d4f548eb5deffd307bffbeb78cb42a414ff87c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35861647"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957376"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 

@@ -1,21 +1,22 @@
 ---
 title: Перечисление категорий
-description: ПереЧисление всех категорий, связанных с этим назначением.
+description: Перечисление всех категорий, связанных с этим назначением.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3a66e74a0addd6b6064e1e5ad66aba74895f0451
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: e74e1bfd808e3bc7a5dcd7b5e3bc18aebf248b11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324742"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955673"
 ---
 # <a name="list-categories"></a>Перечисление категорий
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ПереЧисление всех категорий, связанных с этим назначением.
+Перечисление всех категорий, связанных с этим назначением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +25,7 @@ ms.locfileid: "33324742"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | Не поддерживается. | 
+|Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +55,7 @@ GET /education/classes/{id}/assignments/{id}/categories
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

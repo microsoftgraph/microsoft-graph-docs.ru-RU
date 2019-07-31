@@ -4,12 +4,13 @@ description: Получение простого каталога **administrati
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a5ea028511939a626c58119b678b0907bf532ac3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 3d6811a2036fd6b6d233ffbbf704b52cfb2f2b2f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35955175"
 ---
 # <a name="get-administrativeunit"></a>Получение administrativeUnit
 

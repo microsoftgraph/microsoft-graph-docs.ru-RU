@@ -2,12 +2,15 @@
 title: Идентификаторы в задачах
 description: 'Идентификаторы объектов в задачах — это строковые значения, создаваемые службой. . Значения: 28 символов, с учетом регистра. Если параметр передается как in, служба выполняет простую проверку формата идентификатора, при неудачной проверке формата вызывающие абоненты получат ошибочный запрос (400) об ошибке, указывающий на эту проблему. Получение этой ошибки указывает на ошибку в вызывающем приложении, например:'
 localization_priority: Normal
-ms.openlocfilehash: 654e097895d86add54c79b3b6df7b6735bd0db22
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: conceptualPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 726c9953d514796384ee23c948a157c29099d81f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341445"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964566"
 ---
 # <a name="identifiers-in-tasks"></a>Идентификаторы в задачах
 

@@ -2,14 +2,15 @@
 title: Тип ресурса Синчронизатионстатус
 description: Представляет текущее состояние Синчронизатионжоб.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb7c3337933af763ee4f08412ee1b85085f0d380
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: e99db38b4f6c925f7ec7bfb2345582d6f8f9dae1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620677"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964622"
 ---
 # <a name="synchronizationstatus-resource-type"></a>Тип ресурса Синчронизатионстатус
 

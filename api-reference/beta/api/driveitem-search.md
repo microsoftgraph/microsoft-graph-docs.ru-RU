@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Поиск элементов, соответствующих запросу, в иерархии элементов.
 ms.date: 09/10/2017
 title: Поиск файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a6e003485c4bacbbae4478c14bd5f297d2861619
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 70c9064d44b741a41607482d8e101b81fe5e9f40
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860953"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956977"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 

@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта iosWiFiC
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0af2a77afee540ee7579b21204dfdfb6385062c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f1223b0ad263c32343a37199779cdec7b5451a51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34977039"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35947706"
 ---
 # <a name="get-ioswificonfiguration"></a>Получение iosWiFiConfiguration
 

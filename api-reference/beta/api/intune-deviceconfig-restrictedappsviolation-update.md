@@ -4,12 +4,13 @@ description: Обновление свойств объекта Рестрикт
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b21401c5bdc78649187c0dd3f9a32dbb896c37c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: d5d2eca3231bfd7453b46a267076f566a50f399a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34962906"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35946483"
 ---
 # <a name="update-restrictedappsviolation"></a>Обновление Рестриктедаппсвиолатион
 

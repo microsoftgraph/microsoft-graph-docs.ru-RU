@@ -2,12 +2,15 @@
 title: Создание объекта inferenceClassificationOverride
 description: 'Создание отсортированного переопределения папки "Входящие" для отправителя, определенного SMTP-адресом. Будущие сообщения с этого SMTP-адреса будут согласованы. '
 localization_priority: Normal
-ms.openlocfilehash: 310171e99df0c41b07d3c178fe6ee676f317ea1b
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+author: ''
+ms.prod: ''
+ms.openlocfilehash: 1eb476df8e973459b2e0b152db3ba11c5506b1a2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931152"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35953112"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Создание объекта inferenceClassificationOverride
 

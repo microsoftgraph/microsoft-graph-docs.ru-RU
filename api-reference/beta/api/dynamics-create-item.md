@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 68bb1e1c8fbfa3c7675b5ef6dc39de24ffad2ecd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: db6622a6f58bb4fb84a19b56b62f20d305fc74f6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463770"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35956669"
 ---
 # <a name="create-items"></a>Создание элементов
 Создание элемента в Dynamics 365 Business Central для использования в счетах, квотах и т. д.
@@ -39,7 +40,7 @@ POST /financials/companies('{id}')/items
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type |application/json         |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **Items** в формате JSON.
 
 ## <a name="response"></a>Отклик

@@ -4,12 +4,13 @@ description: Параметр запроса select недоступен для 
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 90d6d3f28c5d413d1c55d19e9162e6e68fa1a4e1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 409a9cff9c0cfe62418a292476a14d3f6578ff0d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35862407"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957796"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 

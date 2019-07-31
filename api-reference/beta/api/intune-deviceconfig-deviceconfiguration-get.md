@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта deviceCo
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a41ab22be9305404f0314c2f1ccdb78c26429699
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c432953e790dfd2e91291d3e5d6a1259a6b403f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35949400"
 ---
 # <a name="get-deviceconfiguration"></a>Get deviceConfiguration
 

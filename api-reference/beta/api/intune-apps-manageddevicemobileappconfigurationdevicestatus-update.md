@@ -4,12 +4,13 @@ description: Обновление свойств объекта managedDeviceMob
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43b0c3d1fc475344d93e1659c9918e3ce2d07eb9
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 42d7bcbeb68d35dc54081620613f5810bf75f45e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974722"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35961555"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Обновление managedDeviceMobileAppConfigurationDeviceStatus
 

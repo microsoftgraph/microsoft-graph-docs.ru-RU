@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Создание папки или ресурса DriveItem в объекте Drive с указанным родительским элементом или по указанному пути.
 ms.date: 09/10/2017
 title: Создание папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bf0dfda6a51d00fe58e4ab30ef1af445991da1f3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b38f6d62bdc90afc62591afa053f50c1b9c42497
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35860970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35957019"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 
@@ -73,7 +74,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
