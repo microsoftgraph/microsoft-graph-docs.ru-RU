@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: Создайте новый Ситепаже в списке страниц сайта на сайте.
 ms.date: 05/07/2018
 title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93376d4b724bfea59c44456eb61bc22f9837444b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: bb54af97b1a2527893c5090e52e5bb7aa8381c94
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330269"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977869"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создание страницы в списке страниц сайта
 
@@ -36,7 +37,7 @@ ms.locfileid: "33330269"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление ресурса [ситепаже][] , который требуется создать, в формате JSON.
 
@@ -184,7 +185,7 @@ Content-type: application/json
 
 **Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[списке]: ../resources/list.md
+[list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md

@@ -1,21 +1,22 @@
 ---
 title: Список опубликованных приложений из каталога приложений Microsoft Teams
-description: 'ПереЧисление приложений из каталога приложений Microsoft Teams. '
+description: 'Перечисление приложений из каталога приложений Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 229d91768f222a6bfc4bbf0de726a2f6d40c0da4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: cfb7cc45d41d779d63ef4c13ff28996ed035abe3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330136"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977545"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Список опубликованных приложений из каталога приложений Microsoft Teams
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ПереЧисление [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
+Перечисление [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
 Сюда входят приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (Каталог приложений клиента). Чтобы получить доступ к приложениям только из каталога приложений вашей организации, `Organization` укажите в качестве **distributionMethod** в ресурсе [теамскаталогапп](../resources/teamsapp.md) .
 
 ## <a name="permissions"></a>Разрешения
@@ -48,9 +49,9 @@ GET /appCatalogs/teamsApps
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Отсутствуют.
+Нет.
 
 > **Примечание:** Можно выполнить фильтрацию по любому полю объекта [теамскаталогапп](../resources/teamsapp.md) для сокращения списка результатов. Вы можете использовать любую из следующих операций фильтрации: EQUAL, Not Equals, and, OR и not.
 

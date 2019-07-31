@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: a8b01124db732866e1a7b971af57d7e0a2b692e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0791fe2b8c36bdff535f7fc56dea54abe1632647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507254"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973634"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>Тип ресурса Кустомерпайментсжаурналс
 Представляет журнал платежей клиента в Dynamics 365 Business Central.
@@ -23,7 +24,7 @@ ms.locfileid: "32507254"
 |[Получение Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-get.md)      |Кустомерпайментжаурналс|Возвращает журнал платежей клиента.   |
 |[POST Кустомерпайментжаурналс](../api/dynamics-create-customerpaymentsjournal.md)  |Кустомерпайментжаурналс|Создает журнал платежей клиента.|
 |[Исправление Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-update.md) |Кустомерпайментжаурналс|Обновляет журнал платежей клиента.|
-|[Удаление Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-delete.md)|Нет                     |Удаляет журнал платежей клиента.|
+|[Удаление Кустомерпайментжаурналс](../api/dynamics-customerpaymentsjournal-delete.md)|none                     |Удаляет журнал платежей клиента.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип                  |Описание                                                             |

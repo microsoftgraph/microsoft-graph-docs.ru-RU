@@ -2,12 +2,15 @@
 title: Тип ресурса Коннекторграуп
 description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 5de46f480ff101e6d149bbfbe246ef47baff2604
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: d985f1f49ade4057b1a9ed9d3e1dbdafebfec7f9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973207"
 ---
 # <a name="connectorgroup-resource-type"></a>Тип ресурса Коннекторграуп
 
@@ -21,9 +24,9 @@ ms.locfileid: "33341204"
 |[Создание приложения](../api/connectorgroup-post-applications.md) |[application](application.md)| Свяжите приложение с группой соединителей, размещая в коллекции Applications.|
 |[Перечисление приложений](../api/connectorgroup-list-applications.md) |Коллекция [приложений](application.md)| Получение связанной коллекции объектов Application.|
 |[Создание соединителя](../api/connectorgroup-post-members.md) |[PDIF](connector.md)| Добавьте соединитель в группу соединителей, отправив его в коллекцию Members.|
-|[Перечисление участников](../api/connectorgroup-list-members.md) |[](connector.md) Коллекция соединителей| Получение коллекции объектов Connector.|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Обновление объекта Коннекторграуп. |
-|[Delete](../api/connectorgroup-delete.md) | Нет |Удаление объекта Коннекторграуп. Перед удалением группы конектор необходимо удалить все соединители. |
+|[Список членов](../api/connectorgroup-list-members.md) |[](connector.md) Коллекция соединителей| Получение коллекции объектов Connector.|
+|[обновление](../api/connectorgroup-update.md); | [connectorGroup](connectorgroup.md)    |Обновление объекта Коннекторграуп. |
+|[Удаление](../api/connectorgroup-delete.md) | Нет |Удаление объекта Коннекторграуп. Перед удалением группы конектор необходимо удалить все соединители. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

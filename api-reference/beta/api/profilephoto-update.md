@@ -2,12 +2,15 @@
 title: Обновление объекта profilephoto
 description: Обновление фотографии для любого пользователя в клиенте, в том числе пользователя, выполнившего вход, или указанной группы или контакта. Так как
 localization_priority: Normal
-ms.openlocfilehash: 8a3c6d2ce042fa068fb0e0d99798fd8fa2be1d07
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: apiPageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: c36e5d21d3082404e6622332adc400896b46ff26
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35621343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978653"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 

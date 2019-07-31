@@ -4,12 +4,13 @@ description: Создание объекта page в указанном разд
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 7e0ecd6792758d6a48626f47b21c879dd110daba
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: apiPageType
+ms.openlocfilehash: 2606399489042820d62d7efcb503a5b7835782ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331467"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35978037"
 ---
 # <a name="create-page"></a>Создание страницы
 

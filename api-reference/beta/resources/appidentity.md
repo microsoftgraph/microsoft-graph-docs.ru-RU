@@ -2,12 +2,15 @@
 title: Тип ресурса Аппидентити
 description: Указывает идентификатор приложения, который выполнил действие или изменился. Включает идентификатор приложения, имя, идентификатор и имя участника службы. Этот ресурс вызывается API Директоряудит
 localization_priority: Normal
-ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 63cb9ed2fbbf9487af1e4d523a04defb7c78cb9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535678"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974320"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса Аппидентити
 Указывает идентификатор приложения, который выполнил действие или изменился. Включает идентификатор приложения, имя, идентификатор и имя участника службы. Этот ресурс вызывается API [директоряудит](../api/directoryaudit-get.md)
@@ -17,11 +20,11 @@ ms.locfileid: "32535678"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
-|displayName|String|Указывает на имя приложения, отображаемое на портале Azure.|
+|displayName|Строка|Указывает на имя приложения, отображаемое на портале Azure.|
 |СервицепринЦипалид|String|Указывает уникальный идентификатор GUID, указывающий идентификатор участника службы в Azure Active Directory для соответствующего приложения.|
 |servicePrincipalName|String|— Имя участника-службы — это имя приложения в клиенте. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

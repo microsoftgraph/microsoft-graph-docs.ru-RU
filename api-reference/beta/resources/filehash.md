@@ -2,12 +2,15 @@
 title: Тип ресурса fileHash
 description: Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
 localization_priority: Normal
-ms.openlocfilehash: f5d865a7ded230ca611b8628c3648ec1e331c67d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.prod: ''
+author: ''
+ms.openlocfilehash: 532389671cacb907c7e85862a621b936ec1691a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547608"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973536"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
@@ -20,7 +23,7 @@ ms.locfileid: "32547608"
 |Хаштипе|Перечисление [филехаштипе](filehashtypeenumtype.md)|Тип хэша файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
 |Хашвалуе|String|Значение хэша файла.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс baseItemVersion представляет предыдущую версию элемента или записи.
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: 735931e757297bd9846396d6f6c42988d8cb87fa
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: d5265004eac969fa827e5456183180a4c6434f96
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328246"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974238"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
 

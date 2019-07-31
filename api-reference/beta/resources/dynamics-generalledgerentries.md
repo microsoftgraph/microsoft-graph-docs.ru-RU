@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 0a5701451bf96773428b12b6bb715320e2ba81b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 500c78d0e29d83c68c2b7247a9787b977cc8a7b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507241"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973606"
 ---
 # <a name="generalledgerentries-resource-type"></a>Тип ресурса Женералледжерентриес
 Представляет объект Женералледжерентри в Dynamics 365 Business Central.
@@ -26,9 +27,9 @@ ms.locfileid: "32507241"
 | Свойство           | Тип                  |Описание                                  |
 |:-------------------|:----------------------|:--------------------------------------------|
 |id                  |числовых                |Уникальный идентификатор финансовой операции.              |
-|Постингдате         |дата                   |Указывает дату учета финансовой операции. |
+|Постингдате         |date                   |Указывает дату учета финансовой операции. |
 |Документнумбер      |Строка, максимальный размер 20|Указывает номер документа в финансовой операции.|
-|documentType        |строка                 |Указывает тип документа для финансовой операции.|
+|documentType        |string                 |Указывает тип документа для финансовой операции.|
 |accountId           |GUID                   |Определяет accountId финансовой операции.    |
 |Аккаунтнумбер       |Строка, максимальный размер 20|Указывает Аккаунтнумбер финансовой операции.|
 |description         |Строка, максимальный размер 50|Задает описание финансовой операции.  |

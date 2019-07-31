@@ -4,12 +4,13 @@ description: Список свойств и связей объектов user.
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 1342764362b9902c5666a744e93597ac45228d9a
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+doc_type: apiPageType
+ms.openlocfilehash: 4763bdcfb8bfc675a81a95c45f23ccb023fed26f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33898149"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35979563"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -50,7 +51,7 @@ GET /users
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

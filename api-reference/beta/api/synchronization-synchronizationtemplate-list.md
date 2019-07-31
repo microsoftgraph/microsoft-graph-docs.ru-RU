@@ -2,14 +2,15 @@
 title: Список существующих шаблонов синхронизации
 description: Список шаблонов синхронизации, связанных с конкретным приложением или участником службы.
 localization_priority: Normal
+doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f8d68f7da852e6026b0f146bf76db455645d597
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: c38f65a0e91a3a1c8c9a89042bfd08a27fb1dbce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35869098"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35977609"
 ---
 # <a name="list-existing-synchronization-templates"></a>Список существующих шаблонов синхронизации
 

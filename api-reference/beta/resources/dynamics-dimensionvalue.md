@@ -6,12 +6,13 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: da3935b8e784b05551af123c1832d5dc84a2c81c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: af7ba3b49051a4e89fcdf2a4a408a1f72fc547ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507219"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973617"
 ---
 # <a name="dimensionvalues-resource-type"></a>Тип ресурса Дименсионвалуес
 Представляет значение измерения в Dynamics 365 Business Central.

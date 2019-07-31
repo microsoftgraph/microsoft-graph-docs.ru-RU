@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс choiceColumn в ресурсе columnDefinition указывает, что значения столбца можно выбрать из списка вариантов.
 ms.date: 09/11/2017
 title: choiceColumn
 localization_priority: Normal
-ms.openlocfilehash: d6c0db61fe3d919f780e14a950183619bb027801
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 72ef8adb96614fc32b9aee8141eb19248e963639
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341480"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35973508"
 ---
 # <a name="choicecolumn-resource-type"></a>Тип ресурса choiceColumn
 
