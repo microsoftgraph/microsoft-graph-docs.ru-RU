@@ -2,14 +2,15 @@
 title: Тип ресурса Синчронизатионруле
 description: Определяет способ выполнения синхронизации для обработчика синхронизации, в том числе объекты, которые необходимо синхронизировать и в каком направлении, как объекты из исходного каталога должны сопоставляться с объектами в целевом каталоге и как атрибуты должно быть преобразовано при синхронизации из источника с целевым каталогом.
 localization_priority: Normal
+doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 83bb8751a60197b8afd9132618ba994c33f370c8
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.openlocfilehash: 367c0f00fb4abe4a41785f3b73599c06a2b31d6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620712"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007776"
 ---
 # <a name="synchronizationrule-resource-type"></a>Тип ресурса Синчронизатионруле
 

@@ -3,12 +3,14 @@ title: Использование REST API уведомлений в Microsoft G
 description: Для отправки push-уведомлений пользователю можно использовать API уведомлений в Microsoft Graph. Просто укажите учетную запись пользователя для отправки уведомления, и платформа доставит уведомление во все конечные точки устройства. Запросы API уведомлений выполняются от имени пользователя посредством делегированных разрешений и [разрешения на уведомления]( /graph/permissions_reference), которые можно использовать с учетными записями Майкрософт, рабочими или учебными учетными записями.
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 28aa795b1df9b2f4817c69332dd8bc9bf3afb172
-ms.sourcegitcommit: f80282ff00d5aafc3e575bce447543d7dd23963d
+doc_type: conceptualPageType
+author: ''
+ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422523"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009589"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Использование REST API уведомлений в Microsoft Graph
 

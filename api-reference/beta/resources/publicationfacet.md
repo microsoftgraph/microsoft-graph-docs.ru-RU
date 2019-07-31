@@ -1,15 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: Ресурс publicationFacet содержит сведения о состоянии публикации ресурса driveItemVersion или driveItem.
 ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal
-ms.openlocfilehash: a95ec524b8e33ce65d9ecb7030a90a49305cdf6c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 9c09f0863376e1569fb4af0acc0044fa1c7c8cfa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33344093"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008861"
 ---
 # <a name="publicationfacet-resource-type"></a>Тип ресурса publicationFacet
 

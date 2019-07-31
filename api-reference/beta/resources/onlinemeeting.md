@@ -4,12 +4,13 @@ description: Сбор сведений о собрании, в том числе
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 698058fa918462448fcd115d5573e13ada49162e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.openlocfilehash: cd3615f82a4e88d6dc0b07c12ba72e39726e755f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341843"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36009358"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -33,7 +34,7 @@ ms.locfileid: "33341843"
 | chatInfo                  | [chatInfo](chatinfo.md)                                | Чат, связанный с этим собранием. |
 | Креатиондатетиме          | DateTime                                               | Время создания собрания. Только для чтения.
 | endDateTime               | DateTime                                               | Время окончания собрания. |
-| Ентрекситаннаунцемент     | Логический                                                | Состояние объявления о присутствии для собрания по сети. Если объявления о присутствии включены, собрание по сети будет объявлять об именах участников, которые присоединяются к собранию с помощью звука. |
+| Ентрекситаннаунцемент     | Boolean                                                | Состояние объявления о присутствии для собрания по сети. Если объявления о присутствии включены, собрание по сети будет объявлять об именах участников, которые присоединяются к собранию с помощью звука. |
 | expirationDateTime        | DateTime                                               | Дата и время, по истечении которого собрание по сети может быть удалено в формате UTC. День и время должны находиться в пределах одного года до и десяти лет после текущей даты и времени на сервере. |
 | id                        | Строка                                                 | Идентификатор, связанный с собранием по сети. Используется в запросе GET HTTP в качестве идентификатора. Только для чтения. Создается сервером. |
 | isCancelled               | Boolean                                                | Указывает, было ли собрание отменено. |
@@ -43,7 +44,7 @@ ms.locfileid: "33341843"
 | startDateTime             | DateTime                                               | Время начала собрания. |
 | subject                   | String                                                 | Тема собрания по сети. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

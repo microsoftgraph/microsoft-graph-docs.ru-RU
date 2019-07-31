@@ -4,12 +4,12 @@ description: Получение команд в Microsoft Teams, непосре�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2ee7834dbb9366ab1db726eaf53575b4d4c33d1f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3124f72b30a9ca82efe7f2583a6afc766bed1718
+ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35867284"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35931487"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -51,7 +51,8 @@ GET /users/{id}/joinedTeams
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [group](../resources/group.md) в тексте отклика.
+При успешном выполнении этот метод возвращает `200 OK`код ответа и коллекцию объектов [team](../resources/team.md) в теле ответа.
+
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

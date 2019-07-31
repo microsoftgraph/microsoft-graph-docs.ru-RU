@@ -1,15 +1,17 @@
 ---
 author: daspek
-ms.author: dspektor
+description: Наличие ресурса VersionAction в ресурсе itemActivity указывает, что в результате выполнения действия была создана другая версия.
 ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
-ms.openlocfilehash: 59977b4ad84615f72dc008d671d64c62a2f4960f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: ''
+ms.openlocfilehash: 8eeec313ac4ed901d7552e2ad65d02edcaa821cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345061"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36007398"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса VersionAction
 
@@ -19,7 +21,7 @@ ms.locfileid: "33345061"
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",

@@ -2,12 +2,15 @@
 title: Тип ресурса Счедулеитем
 description: Элемент, описывающий доступность пользователя, соответствующего фактическому событию, в календаре пользователя по умолчанию. Этот элемент также применяется к ресурсу.
 localization_priority: Normal
-ms.openlocfilehash: d8b0d7bc18c00ca8bda3ef91b2ec8c629c980a97
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+doc_type: resourcePageType
+ms.prod: microsoft-teams
+author: ''
+ms.openlocfilehash: f2901412dcf1d52d8b117afa214da159b4553a8a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36008644"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса Счедулеитем
 
@@ -19,10 +22,10 @@ ms.locfileid: "33343470"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в течение которого заканчивается соответствующее событие. |
-|Частный |Логический |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательно. |
+|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательно. |
 |location |String | Расположение, в котором находится соответствующее событие. Необязательно.|
-|start |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
-|status |Фрибусистатус | Состояние доступности пользователя или ресурса во время соответствующего события. Возможные `free`значения:, `tentative`, `busy`, `oof`, `workingElsewhere`,. `unknown` |
+|начать |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
+|status |freeBusyStatus | Состояние доступности пользователя или ресурса во время соответствующего события. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
 |subject |String | Строка темы соответствующего события. Необязательно.|
 
 

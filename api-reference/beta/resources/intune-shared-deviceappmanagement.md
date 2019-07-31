@@ -4,12 +4,13 @@ description: Одноэлементный объект, служащий кон�
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9ebb14421204c364e04a7151f7898d253798f440
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 1d7439ded5371139bd083351e5c10e567f29ae80
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34996129"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36010506"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 

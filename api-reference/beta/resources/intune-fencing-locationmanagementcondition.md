@@ -4,12 +4,13 @@ description: Содержит сведения, определяющие усл�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70258c73aa146451dbe0aaab919fc8192017bc27
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: e633e0dab4069997843e733431a601697b23dd30
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34979237"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36011122"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>Тип ресурса Локатионманажементкондитион
 
