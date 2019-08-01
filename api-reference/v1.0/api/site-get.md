@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Получение сайта SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d4978dd4f2cb9918caa3791227dc684227ea7027
-ms.sourcegitcommit: 27e8ddb53b699f70b676c9648db8f06bb8d831a9
+description: Получение свойств и отношений ресурса site.
+doc_type: apiPageType
+ms.openlocfilehash: a8ee917e3b5afa20ac0796624bdb411eeea8df36
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "35918032"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024688"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 

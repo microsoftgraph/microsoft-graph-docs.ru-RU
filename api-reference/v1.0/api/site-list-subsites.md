@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Создание списка дочерних сайтов для сайта SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a14a44700ee3167759af6f484615494a8675cca6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Вы можете получить коллекцию дочерних сайтов, определенных для сайта.
+doc_type: apiPageType
+ms.openlocfilehash: 33bf99951655036f736e5eecf274845b577b8b9f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885516"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975650"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 
