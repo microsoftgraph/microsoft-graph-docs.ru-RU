@@ -5,37 +5,39 @@ ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный.
+doc_type: apiPageType
+ms.openlocfilehash: 1e61635d64974d98fa32c60c622ea576aa0ccfbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548252"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015532"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a><span data-ttu-id="d88c4-102">Отправка больших файлов с помощью сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="d88c4-102">Upload large files with an upload session</span></span>
+# <a name="upload-large-files-with-an-upload-session"></a><span data-ttu-id="dbf58-103">Отправка больших файлов с помощью сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="dbf58-103">Upload large files with an upload session</span></span>
 
-<span data-ttu-id="d88c4-p101">Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный. С помощью сеанса отправки приложение может отправлять диапазоны файла при последовательных запросах API, что позволяет возобновить передачу, если во время отправки соединение будет разорвано.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p101">Create an upload session to allow your app to upload files up to the maximum file size. An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.</span></span>
+<span data-ttu-id="dbf58-p101">Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный. С помощью сеанса отправки приложение может отправлять диапазоны файла при последовательных запросах API, что позволяет возобновить передачу, если во время отправки соединение будет разорвано.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p101">Create an upload session to allow your app to upload files up to the maximum file size. An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.</span></span>
 
-<span data-ttu-id="d88c4-105">Процесс отправки файла с помощью сеанса отправки состоит из двух этапов:</span><span class="sxs-lookup"><span data-stu-id="d88c4-105">To upload a file using an upload session, there are two steps:</span></span>
+<span data-ttu-id="dbf58-106">Процесс отправки файла с помощью сеанса отправки состоит из двух этапов:</span><span class="sxs-lookup"><span data-stu-id="dbf58-106">To upload a file using an upload session, there are two steps:</span></span>
 
-1. <span data-ttu-id="d88c4-106">[Создание сеанса отправки](#create-an-upload-session).</span><span class="sxs-lookup"><span data-stu-id="d88c4-106">[Create an upload session](#create-an-upload-session)</span></span>
-2. <span data-ttu-id="d88c4-107">[Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).</span><span class="sxs-lookup"><span data-stu-id="d88c4-107">[Upload bytes to the upload session](#upload-bytes-to-the-upload-session)</span></span>
+1. <span data-ttu-id="dbf58-107">[Создание сеанса отправки](#create-an-upload-session).</span><span class="sxs-lookup"><span data-stu-id="dbf58-107">[Create an upload session](#create-an-upload-session)</span></span>
+2. <span data-ttu-id="dbf58-108">[Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).</span><span class="sxs-lookup"><span data-stu-id="dbf58-108">[Upload bytes to the upload session](#upload-bytes-to-the-upload-session)</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d88c4-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d88c4-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dbf58-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dbf58-109">Permissions</span></span>
 
-<span data-ttu-id="d88c4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d88c4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dbf58-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dbf58-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d88c4-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d88c4-111">Permission type</span></span>      | <span data-ttu-id="d88c4-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d88c4-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dbf58-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dbf58-112">Permission type</span></span>      | <span data-ttu-id="dbf58-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dbf58-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d88c4-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d88c4-113">Delegated (work or school account)</span></span> | <span data-ttu-id="d88c4-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d88c4-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d88c4-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d88c4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d88c4-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d88c4-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d88c4-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d88c4-117">Application</span></span> | <span data-ttu-id="d88c4-118">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d88c4-118">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="dbf58-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dbf58-114">Delegated (work or school account)</span></span> | <span data-ttu-id="dbf58-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbf58-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dbf58-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dbf58-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbf58-117">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbf58-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="dbf58-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dbf58-118">Application</span></span> | <span data-ttu-id="dbf58-119">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbf58-119">Sites.ReadWrite.All</span></span> |
 
-## <a name="create-an-upload-session"></a><span data-ttu-id="d88c4-119">Создание сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="d88c4-119">Create an upload session</span></span>
+## <a name="create-an-upload-session"></a><span data-ttu-id="dbf58-120">Создание сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="dbf58-120">Create an upload session</span></span>
 
-<span data-ttu-id="d88c4-p103">Чтобы начать отправку большого файла, приложение должно сначала запросить новый сеанс отправки. При этом создается временное место хранения, где сохраняются байты файла, пока он не будет отправлен полностью. После отправки последнего байта файла сеанс отправки завершается, а готовый файл отображается в целевой папке.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p103">To begin a large file upload, your app must first request a new upload session. This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded. Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.</span></span>
+<span data-ttu-id="dbf58-p103">Чтобы начать отправку большого файла, приложение должно сначала запросить новый сеанс отправки. При этом создается временное место хранения, где сохраняются байты файла, пока он не будет отправлен полностью. После отправки последнего байта файла сеанс отправки завершается, а готовый файл отображается в целевой папке.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p103">To begin a large file upload, your app must first request a new upload session. This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded. Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="d88c4-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d88c4-123">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="dbf58-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dbf58-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,10 +49,10 @@ POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
-### <a name="request-body"></a><span data-ttu-id="d88c4-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d88c4-124">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="dbf58-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dbf58-125">Request body</span></span>
 
-<span data-ttu-id="d88c4-125">Тело запроса не требуется.</span><span class="sxs-lookup"><span data-stu-id="d88c4-125">No request body is required.</span></span>
-<span data-ttu-id="d88c4-126">Но вы можете указать свойство `item` в теле запроса, чтобы предоставить дополнительные данные об отправляемом файле.</span><span class="sxs-lookup"><span data-stu-id="d88c4-126">However, you can specify an `item` property in the request body, providing additional data about the file being uploaded.</span></span>
+<span data-ttu-id="dbf58-126">Тело запроса не требуется.</span><span class="sxs-lookup"><span data-stu-id="dbf58-126">No request body is required.</span></span>
+<span data-ttu-id="dbf58-127">Но вы можете указать свойство `item` в теле запроса, чтобы предоставить дополнительные данные об отправляемом файле.</span><span class="sxs-lookup"><span data-stu-id="dbf58-127">However, you can specify an `item` property in the request body, providing additional data about the file being uploaded.</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
@@ -62,7 +64,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 }
 ```
 
-<span data-ttu-id="d88c4-127">Например, вы можете задать необходимые действия для случая, когда имя файла уже используется, указав в теле запроса свойство поведения при конфликтах.</span><span class="sxs-lookup"><span data-stu-id="d88c4-127">For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.</span></span>
+<span data-ttu-id="dbf58-128">Например, вы можете задать необходимые действия для случая, когда имя файла уже используется, указав в теле запроса свойство поведения при конфликтах.</span><span class="sxs-lookup"><span data-stu-id="dbf58-128">For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -73,23 +75,23 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 }
 ```
 
-### <a name="optional-request-headers"></a><span data-ttu-id="d88c4-128">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d88c4-128">Optional request headers</span></span>
+### <a name="optional-request-headers"></a><span data-ttu-id="dbf58-129">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dbf58-129">Optional request headers</span></span>
 
-| <span data-ttu-id="d88c4-129">Имя</span><span class="sxs-lookup"><span data-stu-id="d88c4-129">Name</span></span>       | <span data-ttu-id="d88c4-130">Значение</span><span class="sxs-lookup"><span data-stu-id="d88c4-130">Value</span></span> | <span data-ttu-id="d88c4-131">Описание</span><span class="sxs-lookup"><span data-stu-id="d88c4-131">Description</span></span>                                                                                                                                                            |
+| <span data-ttu-id="dbf58-130">Имя</span><span class="sxs-lookup"><span data-stu-id="dbf58-130">Name</span></span>       | <span data-ttu-id="dbf58-131">Значение</span><span class="sxs-lookup"><span data-stu-id="dbf58-131">Value</span></span> | <span data-ttu-id="dbf58-132">Описание</span><span class="sxs-lookup"><span data-stu-id="dbf58-132">Description</span></span>                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="d88c4-132">*if-match*</span><span class="sxs-lookup"><span data-stu-id="d88c4-132">*if-match*</span></span> | <span data-ttu-id="d88c4-133">etag</span><span class="sxs-lookup"><span data-stu-id="d88c4-133">etag</span></span>  | <span data-ttu-id="d88c4-134">Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`.</span><span class="sxs-lookup"><span data-stu-id="d88c4-134">If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned.</span></span> |
+| <span data-ttu-id="dbf58-133">*if-match*</span><span class="sxs-lookup"><span data-stu-id="dbf58-133">*if-match*</span></span> | <span data-ttu-id="dbf58-134">etag</span><span class="sxs-lookup"><span data-stu-id="dbf58-134">etag</span></span>  | <span data-ttu-id="dbf58-135">Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`.</span><span class="sxs-lookup"><span data-stu-id="dbf58-135">If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="d88c4-135">Свойства</span><span class="sxs-lookup"><span data-stu-id="d88c4-135">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dbf58-136">Свойства</span><span class="sxs-lookup"><span data-stu-id="dbf58-136">Properties</span></span>
 
-| <span data-ttu-id="d88c4-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="d88c4-136">Property</span></span>             | <span data-ttu-id="d88c4-137">Тип</span><span class="sxs-lookup"><span data-stu-id="d88c4-137">Type</span></span>               | <span data-ttu-id="d88c4-138">Описание</span><span class="sxs-lookup"><span data-stu-id="d88c4-138">Description</span></span>
+| <span data-ttu-id="dbf58-137">Свойство</span><span class="sxs-lookup"><span data-stu-id="dbf58-137">Property</span></span>             | <span data-ttu-id="dbf58-138">Тип</span><span class="sxs-lookup"><span data-stu-id="dbf58-138">Type</span></span>               | <span data-ttu-id="dbf58-139">Описание</span><span class="sxs-lookup"><span data-stu-id="dbf58-139">Description</span></span>
 |:---------------------|:-------------------|:---------------------------------
-| <span data-ttu-id="d88c4-139">description</span><span class="sxs-lookup"><span data-stu-id="d88c4-139">description</span></span>          | <span data-ttu-id="d88c4-140">String</span><span class="sxs-lookup"><span data-stu-id="d88c4-140">String</span></span>             | <span data-ttu-id="d88c4-p105">Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive</span><span class="sxs-lookup"><span data-stu-id="d88c4-p105">Provides a user-visible description of the item. Read-write. Only on OneDrive Personal</span></span>
-| <span data-ttu-id="d88c4-144">fileSystemInfo</span><span class="sxs-lookup"><span data-stu-id="d88c4-144">fileSystemInfo</span></span>       | <span data-ttu-id="d88c4-145">[fileSystemInfo][]</span><span class="sxs-lookup"><span data-stu-id="d88c4-145">[fileSystemInfo][]</span></span> | <span data-ttu-id="d88c4-p106">Сведения о файловой системе на клиенте. Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p106">File system information on client. Read-write.</span></span>
-| <span data-ttu-id="d88c4-148">name</span><span class="sxs-lookup"><span data-stu-id="d88c4-148">name</span></span>                 | <span data-ttu-id="d88c4-149">String</span><span class="sxs-lookup"><span data-stu-id="d88c4-149">String</span></span>             | <span data-ttu-id="d88c4-p107">Имя элемента (имя и расширение файла). Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p107">The name of the item (filename and extension). Read-write.</span></span>
+| <span data-ttu-id="dbf58-140">description</span><span class="sxs-lookup"><span data-stu-id="dbf58-140">description</span></span>          | <span data-ttu-id="dbf58-141">String</span><span class="sxs-lookup"><span data-stu-id="dbf58-141">String</span></span>             | <span data-ttu-id="dbf58-p105">Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive</span><span class="sxs-lookup"><span data-stu-id="dbf58-p105">Provides a user-visible description of the item. Read-write. Only on OneDrive Personal</span></span>
+| <span data-ttu-id="dbf58-145">fileSystemInfo</span><span class="sxs-lookup"><span data-stu-id="dbf58-145">fileSystemInfo</span></span>       | <span data-ttu-id="dbf58-146">[fileSystemInfo][]</span><span class="sxs-lookup"><span data-stu-id="dbf58-146">[fileSystemInfo][]</span></span> | <span data-ttu-id="dbf58-p106">Сведения о файловой системе на клиенте. Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p106">File system information on client. Read-write.</span></span>
+| <span data-ttu-id="dbf58-149">name</span><span class="sxs-lookup"><span data-stu-id="dbf58-149">name</span></span>                 | <span data-ttu-id="dbf58-150">String</span><span class="sxs-lookup"><span data-stu-id="dbf58-150">String</span></span>             | <span data-ttu-id="dbf58-p107">Имя элемента (имя и расширение файла). Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p107">The name of the item (filename and extension). Read-write.</span></span>
 
-### <a name="request"></a><span data-ttu-id="d88c4-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="d88c4-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dbf58-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="dbf58-153">Request</span></span>
 
-<span data-ttu-id="d88c4-153">В отклике на этот запрос будут представлены подробные сведения о новом экземпляре [uploadSession](../resources/uploadsession.md) (в том числе URL-адрес для отправки фрагментов файла).</span><span class="sxs-lookup"><span data-stu-id="d88c4-153">The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file.</span></span> 
+<span data-ttu-id="dbf58-154">В отклике на этот запрос будут представлены подробные сведения о новом экземпляре [uploadSession](../resources/uploadsession.md) (в том числе URL-адрес для отправки фрагментов файла).</span><span class="sxs-lookup"><span data-stu-id="dbf58-154">The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file.</span></span> 
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -106,11 +108,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d88c4-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="d88c4-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dbf58-155">Ответ</span><span class="sxs-lookup"><span data-stu-id="dbf58-155">Response</span></span>
 
-<span data-ttu-id="d88c4-155">В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).</span><span class="sxs-lookup"><span data-stu-id="d88c4-155">The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.</span></span>
+<span data-ttu-id="dbf58-156">В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).</span><span class="sxs-lookup"><span data-stu-id="dbf58-156">The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.</span></span>
 
-<span data-ttu-id="d88c4-156">Этот ресурс предоставляет сведения о том, куда следует отправлять диапазон байтов файла и когда истекает срок действия сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-156">This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.</span></span>
+<span data-ttu-id="dbf58-157">Этот ресурс предоставляет сведения о том, куда следует отправлять диапазон байтов файла и когда истекает срок действия сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-157">This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -125,23 +127,23 @@ Content-Type: application/json
 }
 ```
 
-## <a name="upload-bytes-to-the-upload-session"></a><span data-ttu-id="d88c4-157">Отправка байтов в сеанс отправки</span><span class="sxs-lookup"><span data-stu-id="d88c4-157">Upload bytes to the upload session</span></span>
+## <a name="upload-bytes-to-the-upload-session"></a><span data-ttu-id="dbf58-158">Отправка байтов в сеанс отправки</span><span class="sxs-lookup"><span data-stu-id="dbf58-158">Upload bytes to the upload session</span></span>
 
-<span data-ttu-id="d88c4-158">Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.</span><span class="sxs-lookup"><span data-stu-id="d88c4-158">To upload the file, or a portion of the file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
-<span data-ttu-id="d88c4-159">Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером не более 60 МБ.</span><span class="sxs-lookup"><span data-stu-id="d88c4-159">You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 60 MiB.</span></span>
+<span data-ttu-id="dbf58-159">Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.</span><span class="sxs-lookup"><span data-stu-id="dbf58-159">To upload the file, or a portion of the file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.</span></span>
+<span data-ttu-id="dbf58-160">Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером не более 60 МБ.</span><span class="sxs-lookup"><span data-stu-id="dbf58-160">You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 60 MiB.</span></span>
 
-<span data-ttu-id="d88c4-160">Фрагменты файла необходимо отправлять в правильном порядке.</span><span class="sxs-lookup"><span data-stu-id="d88c4-160">The fragments of the file must be uploaded sequentially in order.</span></span>
-<span data-ttu-id="d88c4-161">В противном случае возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="d88c4-161">Uploading fragments out of order will result in an error.</span></span>
+<span data-ttu-id="dbf58-161">Фрагменты файла необходимо отправлять в правильном порядке.</span><span class="sxs-lookup"><span data-stu-id="dbf58-161">The fragments of the file must be uploaded sequentially in order.</span></span>
+<span data-ttu-id="dbf58-162">В противном случае возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="dbf58-162">Uploading fragments out of order will result in an error.</span></span>
 
-<span data-ttu-id="d88c4-162">**Примечание.** Если приложение делит файл на несколько диапазонов байтов, размер каждого из них **ДОЛЖЕН** быть кратным 320 КиБ (327 680 байтов).</span><span class="sxs-lookup"><span data-stu-id="d88c4-162">**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).</span></span> <span data-ttu-id="d88c4-163">Если размер фрагментов не делится на 320 КБ без остатка, при отправке некоторых файлов возникнут ошибки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-163">Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.</span></span>
+<span data-ttu-id="dbf58-163">**Примечание.** Если приложение делит файл на несколько диапазонов байтов, размер каждого из них **ДОЛЖЕН** быть кратным 320 КиБ (327 680 байтов).</span><span class="sxs-lookup"><span data-stu-id="dbf58-163">**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).</span></span> <span data-ttu-id="dbf58-164">Если размер фрагментов не делится на 320 КБ без остатка, при отправке некоторых файлов возникнут ошибки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-164">Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.</span></span>
 
-### <a name="example"></a><span data-ttu-id="d88c4-164">Пример</span><span class="sxs-lookup"><span data-stu-id="d88c4-164">Example</span></span>
+### <a name="example"></a><span data-ttu-id="dbf58-165">Пример</span><span class="sxs-lookup"><span data-stu-id="dbf58-165">Example</span></span>
 
-<span data-ttu-id="d88c4-165">В этом примере приложение отправляет первые 26 из 128 байтов файла.</span><span class="sxs-lookup"><span data-stu-id="d88c4-165">In this example, the app is uploading the first 26 bytes of a 128 byte file.</span></span>
+<span data-ttu-id="dbf58-166">В этом примере приложение отправляет первые 26 из 128 байтов файла.</span><span class="sxs-lookup"><span data-stu-id="dbf58-166">In this example, the app is uploading the first 26 bytes of a 128 byte file.</span></span>
 
-* <span data-ttu-id="d88c4-166">Заголовок **Content-Length** задает размер текущего запроса.</span><span class="sxs-lookup"><span data-stu-id="d88c4-166">The **Content-Length** header specifies the size of the current request.</span></span>
-* <span data-ttu-id="d88c4-167">Заголовок **Content-Range** указывает диапазон байтов для всего файла, представленного в запросе.</span><span class="sxs-lookup"><span data-stu-id="d88c4-167">The **Content-Range** header indicates the range of bytes in the overall file that this request represents.</span></span>
-* <span data-ttu-id="d88c4-168">Прежде чем отправлять первый фрагмент файла, необходимо знать общий размер этого файла.</span><span class="sxs-lookup"><span data-stu-id="d88c4-168">The total length of the file is known before you can upload the first fragment of the file.</span></span>
+* <span data-ttu-id="dbf58-167">Заголовок **Content-Length** задает размер текущего запроса.</span><span class="sxs-lookup"><span data-stu-id="dbf58-167">The **Content-Length** header specifies the size of the current request.</span></span>
+* <span data-ttu-id="dbf58-168">Заголовок **Content-Range** указывает диапазон байтов для всего файла, представленного в запросе.</span><span class="sxs-lookup"><span data-stu-id="dbf58-168">The **Content-Range** header indicates the range of bytes in the overall file that this request represents.</span></span>
+* <span data-ttu-id="dbf58-169">Прежде чем отправлять первый фрагмент файла, необходимо знать общий размер этого файла.</span><span class="sxs-lookup"><span data-stu-id="dbf58-169">The total length of the file is known before you can upload the first fragment of the file.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
 
@@ -153,12 +155,12 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-<span data-ttu-id="d88c4-169">**Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.</span><span class="sxs-lookup"><span data-stu-id="d88c4-169">**Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.</span></span>
-<span data-ttu-id="d88c4-170">Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.</span><span class="sxs-lookup"><span data-stu-id="d88c4-170">If a byte range declares a different file size, the request will fail.</span></span>
+<span data-ttu-id="dbf58-170">**Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.</span><span class="sxs-lookup"><span data-stu-id="dbf58-170">**Important:** Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests.</span></span>
+<span data-ttu-id="dbf58-171">Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.</span><span class="sxs-lookup"><span data-stu-id="dbf58-171">If a byte range declares a different file size, the request will fail.</span></span>
 
-### <a name="response"></a><span data-ttu-id="d88c4-171">Ответ</span><span class="sxs-lookup"><span data-stu-id="d88c4-171">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dbf58-172">Ответ</span><span class="sxs-lookup"><span data-stu-id="dbf58-172">Response</span></span>
 
-<span data-ttu-id="d88c4-172">После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.</span><span class="sxs-lookup"><span data-stu-id="d88c4-172">When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.</span></span>
+<span data-ttu-id="dbf58-173">После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.</span><span class="sxs-lookup"><span data-stu-id="dbf58-173">When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -172,11 +174,11 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="d88c4-173">С помощью значения **nextExpectedRanges** приложение может определить, где должен начинаться следующий диапазон байтов.</span><span class="sxs-lookup"><span data-stu-id="d88c4-173">Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.</span></span>
-<span data-ttu-id="d88c4-174">Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером.</span><span class="sxs-lookup"><span data-stu-id="d88c4-174">You may see multiple ranges specified, indicating parts of the file that the server has not yet received.</span></span> <span data-ttu-id="d88c4-175">Это удобно, когда требуется возобновить прерванную передачу, а клиенту неизвестно состояние службы.</span><span class="sxs-lookup"><span data-stu-id="d88c4-175">This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.</span></span>
+<span data-ttu-id="dbf58-174">С помощью значения **nextExpectedRanges** приложение может определить, где должен начинаться следующий диапазон байтов.</span><span class="sxs-lookup"><span data-stu-id="dbf58-174">Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.</span></span>
+<span data-ttu-id="dbf58-175">Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером.</span><span class="sxs-lookup"><span data-stu-id="dbf58-175">You may see multiple ranges specified, indicating parts of the file that the server has not yet received.</span></span> <span data-ttu-id="dbf58-176">Это удобно, когда требуется возобновить прерванную передачу, а клиенту неизвестно состояние службы.</span><span class="sxs-lookup"><span data-stu-id="dbf58-176">This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.</span></span>
 
-<span data-ttu-id="d88c4-176">Размер диапазонов байтов всегда следует определять в соответствии с приведенными ниже рекомендациями.</span><span class="sxs-lookup"><span data-stu-id="d88c4-176">You should always determine the size of your byte ranges according to the best practices below.</span></span> <span data-ttu-id="d88c4-177">Не рассчитывайте на то, что свойство **nextExpectedRanges** вернет диапазоны надлежащего размера для отправляемого диапазона байтов.</span><span class="sxs-lookup"><span data-stu-id="d88c4-177">Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.</span></span>
-<span data-ttu-id="d88c4-178">Свойство **nextExpectedRanges** указывает диапазоны файла, которые не были получены, а не схему отправки файла приложением.</span><span class="sxs-lookup"><span data-stu-id="d88c4-178">The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.</span></span>
+<span data-ttu-id="dbf58-177">Размер диапазонов байтов всегда следует определять в соответствии с приведенными ниже рекомендациями.</span><span class="sxs-lookup"><span data-stu-id="dbf58-177">You should always determine the size of your byte ranges according to the best practices below.</span></span> <span data-ttu-id="dbf58-178">Не рассчитывайте на то, что свойство **nextExpectedRanges** вернет диапазоны надлежащего размера для отправляемого диапазона байтов.</span><span class="sxs-lookup"><span data-stu-id="dbf58-178">Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.</span></span>
+<span data-ttu-id="dbf58-179">Свойство **nextExpectedRanges** указывает диапазоны файла, которые не были получены, а не схему отправки файла приложением.</span><span class="sxs-lookup"><span data-stu-id="dbf58-179">The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.</span></span>
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -193,17 +195,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="d88c4-179">Примечания</span><span class="sxs-lookup"><span data-stu-id="d88c4-179">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dbf58-180">Примечания</span><span class="sxs-lookup"><span data-stu-id="dbf58-180">Remarks</span></span>
 
-* <span data-ttu-id="d88c4-180">Свойство `nextExpectedRanges` не всегда указывает все отсутствующие диапазоны.</span><span class="sxs-lookup"><span data-stu-id="d88c4-180">The `nextExpectedRanges` property won't always list all of the missing ranges.</span></span>
-* <span data-ttu-id="d88c4-p114">При успешной записи фрагментов оно возвращает следующий диапазон (например, "523-").</span><span class="sxs-lookup"><span data-stu-id="d88c4-p114">On successful fragment writes, it will return the next range to start from (eg. "523-").</span></span>
-* <span data-ttu-id="d88c4-p115">При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#resuming-an-in-progress-upload), чтобы получить более подробный список недостающих диапазонов.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p115">On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.</span></span>
-* <span data-ttu-id="d88c4-p116">Как отклик на добавление заголовка авторизации при совершении вызова `PUT` может появиться сообщение об ошибке `HTTP 401 Unauthorized`. Заголовок авторизации и токен носителя необходимо отправлять только при выполнении `POST` на начальном этапе. Не следует включать их, когда совершается вызов `PUT`.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p116">Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issueing the `PUT`.</span></span>
+* <span data-ttu-id="dbf58-181">Свойство `nextExpectedRanges` не всегда указывает все отсутствующие диапазоны.</span><span class="sxs-lookup"><span data-stu-id="dbf58-181">The `nextExpectedRanges` property won't always list all of the missing ranges.</span></span>
+* <span data-ttu-id="dbf58-p114">При успешной записи фрагментов оно возвращает следующий диапазон (например, "523-").</span><span class="sxs-lookup"><span data-stu-id="dbf58-p114">On successful fragment writes, it will return the next range to start from (eg. "523-").</span></span>
+* <span data-ttu-id="dbf58-p115">При сбоях в тех случаях, когда клиент отправляет файл, уже полученный сервером, сервер возвращает отклик `HTTP 416 Requested Range Not Satisfiable`. Вы можете [запросить состояние отправки](#resuming-an-in-progress-upload), чтобы получить более подробный список недостающих диапазонов.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p115">On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.</span></span>
+* <span data-ttu-id="dbf58-p116">Как отклик на добавление заголовка авторизации при совершении вызова `PUT` может появиться сообщение об ошибке `HTTP 401 Unauthorized`. Заголовок авторизации и токен носителя необходимо отправлять только при выполнении `POST` на начальном этапе. Не следует включать их, когда совершается вызов `PUT`.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p116">Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issueing the `PUT`.</span></span>
 
-## <a name="completing-a-file"></a><span data-ttu-id="d88c4-188">Завершение отправки файла</span><span class="sxs-lookup"><span data-stu-id="d88c4-188">Completing a file</span></span>
+## <a name="completing-a-file"></a><span data-ttu-id="dbf58-189">Завершение отправки файла</span><span class="sxs-lookup"><span data-stu-id="dbf58-189">Completing a file</span></span>
 
-<span data-ttu-id="d88c4-189">После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created` или `HTTP 200 OK`.</span><span class="sxs-lookup"><span data-stu-id="d88c4-189">When the last byte range of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.</span></span>
-<span data-ttu-id="d88c4-190">Текст ответа также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.</span><span class="sxs-lookup"><span data-stu-id="d88c4-190">The response body will also include the default property set for the **driveItem** representing the completed file.</span></span>
+<span data-ttu-id="dbf58-190">После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created` или `HTTP 200 OK`.</span><span class="sxs-lookup"><span data-stu-id="dbf58-190">When the last byte range of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.</span></span>
+<span data-ttu-id="dbf58-191">Текст ответа также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.</span><span class="sxs-lookup"><span data-stu-id="dbf58-191">The response body will also include the default property set for the **driveItem** representing the completed file.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
@@ -229,9 +231,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="handling-upload-conflicts"></a><span data-ttu-id="d88c4-191">Обработка конфликтов при отправке</span><span class="sxs-lookup"><span data-stu-id="d88c4-191">Handling upload conflicts</span></span>
+## <a name="handling-upload-conflicts"></a><span data-ttu-id="dbf58-192">Обработка конфликтов при отправке</span><span class="sxs-lookup"><span data-stu-id="dbf58-192">Handling upload conflicts</span></span>
 
-<span data-ttu-id="d88c4-192">В случае возникновения конфликта после отправки файла (например, если в ходе сеанса отправки был создан элемент с таким же именем) при отправке последнего диапазона байтов возвращается ошибка.</span><span class="sxs-lookup"><span data-stu-id="d88c4-192">If a conflict occurs after the file is uploaded (for example, an item with the same name was created during the upload session), an error is returned when the last byte range is uploaded.</span></span>
+<span data-ttu-id="dbf58-193">В случае возникновения конфликта после отправки файла (например, если в ходе сеанса отправки был создан элемент с таким же именем) при отправке последнего диапазона байтов возвращается ошибка.</span><span class="sxs-lookup"><span data-stu-id="dbf58-193">If a conflict occurs after the file is uploaded (for example, an item with the same name was created during the upload session), an error is returned when the last byte range is uploaded.</span></span>
 
 ```http
 HTTP/1.1 409 Conflict
@@ -246,14 +248,14 @@ Content-Type: application/json
 }
 ```
 
-## <a name="cancel-the-upload-session"></a><span data-ttu-id="d88c4-193">Отмена сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="d88c4-193">Cancel the upload session</span></span>
+## <a name="cancel-the-upload-session"></a><span data-ttu-id="dbf58-194">Отмена сеанса отправки</span><span class="sxs-lookup"><span data-stu-id="dbf58-194">Cancel the upload session</span></span>
 
-<span data-ttu-id="d88c4-p118">Чтобы отменить сеанс отправки, отправьте запрос DELETE на URL-адрес отправки. При этом очищается временный файл, содержащий ранее отправленные данные. Это следует делать в тех случаях, когда отправка прерывается (например, если пользователь отменил передачу).</span><span class="sxs-lookup"><span data-stu-id="d88c4-p118">To cancel an upload session send a DELETE request to the upload URL. This cleans up the temporary file holding the data previously uploaded. This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.</span></span>
+<span data-ttu-id="dbf58-p118">Чтобы отменить сеанс отправки, отправьте запрос DELETE на URL-адрес отправки. При этом очищается временный файл, содержащий ранее отправленные данные. Это следует делать в тех случаях, когда отправка прерывается (например, если пользователь отменил передачу).</span><span class="sxs-lookup"><span data-stu-id="dbf58-p118">To cancel an upload session send a DELETE request to the upload URL. This cleans up the temporary file holding the data previously uploaded. This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.</span></span>
 
-<span data-ttu-id="d88c4-197">Временные файлы и соответствующий сеанс отправки автоматически очищаются по прошествии времени, указанного свойством **expirationDateTime**.</span><span class="sxs-lookup"><span data-stu-id="d88c4-197">Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.</span></span>
-<span data-ttu-id="d88c4-198">Временные файлы могут быть удалены не сразу по истечении срока действия.</span><span class="sxs-lookup"><span data-stu-id="d88c4-198">Temporary files may not be deleted immedately after the expiration time has elapsed.</span></span>
+<span data-ttu-id="dbf58-198">Временные файлы и соответствующий сеанс отправки автоматически очищаются по прошествии времени, указанного свойством **expirationDateTime**.</span><span class="sxs-lookup"><span data-stu-id="dbf58-198">Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.</span></span>
+<span data-ttu-id="dbf58-199">Временные файлы могут быть удалены не сразу по истечении срока действия.</span><span class="sxs-lookup"><span data-stu-id="dbf58-199">Temporary files may not be deleted immedately after the expiration time has elapsed.</span></span>
 
-### <a name="request"></a><span data-ttu-id="d88c4-199">Запрос</span><span class="sxs-lookup"><span data-stu-id="d88c4-199">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dbf58-200">Запрос</span><span class="sxs-lookup"><span data-stu-id="dbf58-200">Request</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
 
@@ -261,9 +263,9 @@ Content-Type: application/json
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
-### <a name="response"></a><span data-ttu-id="d88c4-200">Отклик</span><span class="sxs-lookup"><span data-stu-id="d88c4-200">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dbf58-201">Отклик</span><span class="sxs-lookup"><span data-stu-id="dbf58-201">Response</span></span>
 
-<span data-ttu-id="d88c4-201">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d88c4-201">The following example shows the response.</span></span>
+<span data-ttu-id="dbf58-202">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="dbf58-202">The following example shows the response.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -271,15 +273,15 @@ DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 HTTP/1.1 204 No Content
 ```
 
-## <a name="resuming-an-in-progress-upload"></a><span data-ttu-id="d88c4-202">Возобновление выполняемой отправки</span><span class="sxs-lookup"><span data-stu-id="d88c4-202">Resuming an in-progress upload</span></span>
+## <a name="resuming-an-in-progress-upload"></a><span data-ttu-id="dbf58-203">Возобновление выполняемой отправки</span><span class="sxs-lookup"><span data-stu-id="dbf58-203">Resuming an in-progress upload</span></span>
 
-<span data-ttu-id="d88c4-p120">При отключении или сбое отправки до полного выполнения запроса все байты в этом запросе игнорируются. Это может произойти при разрыве соединения между приложением и службой. В этом случае приложение может возобновить передачу файла с ранее отправленного фрагмента.</span><span class="sxs-lookup"><span data-stu-id="d88c4-p120">If an upload request is disconnected or fails before the request is completed, all bytes in that request are ignored. This can occur if the connection between your app and the service is dropped. If this occurs, your app can still resume the file transfer from the previously completed fragment.</span></span>
+<span data-ttu-id="dbf58-p120">При отключении или сбое отправки до полного выполнения запроса все байты в этом запросе игнорируются. Это может произойти при разрыве соединения между приложением и службой. В этом случае приложение может возобновить передачу файла с ранее отправленного фрагмента.</span><span class="sxs-lookup"><span data-stu-id="dbf58-p120">If an upload request is disconnected or fails before the request is completed, all bytes in that request are ignored. This can occur if the connection between your app and the service is dropped. If this occurs, your app can still resume the file transfer from the previously completed fragment.</span></span>
 
-<span data-ttu-id="d88c4-206">Чтобы узнать, какие диапазоны байтов были получены ранее, приложение может запросить состояние сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-206">To find out which byte ranges have been received previously, your app can request the status of an upload session.</span></span>
+<span data-ttu-id="dbf58-207">Чтобы узнать, какие диапазоны байтов были получены ранее, приложение может запросить состояние сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-207">To find out which byte ranges have been received previously, your app can request the status of an upload session.</span></span>
 
-### <a name="example"></a><span data-ttu-id="d88c4-207">Пример</span><span class="sxs-lookup"><span data-stu-id="d88c4-207">Example</span></span>
+### <a name="example"></a><span data-ttu-id="dbf58-208">Пример</span><span class="sxs-lookup"><span data-stu-id="dbf58-208">Example</span></span>
 
-<span data-ttu-id="d88c4-208">Получить состояние отправки можно, отправив запрос GET на адрес `uploadUrl`.</span><span class="sxs-lookup"><span data-stu-id="d88c4-208">Query the status of the upload by sending a GET request to the `uploadUrl`.</span></span>
+<span data-ttu-id="dbf58-209">Получить состояние отправки можно, отправив запрос GET на адрес `uploadUrl`.</span><span class="sxs-lookup"><span data-stu-id="dbf58-209">Query the status of the upload by sending a GET request to the `uploadUrl`.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
@@ -287,7 +289,7 @@ HTTP/1.1 204 No Content
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 
-<span data-ttu-id="d88c4-209">В ответ сервер отправит список отсутствующих байтовых диапазонов, которые требуется отправить, и время окончания срока действия для сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-209">The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.</span></span>
+<span data-ttu-id="dbf58-210">В ответ сервер отправит список отсутствующих байтовых диапазонов, которые требуется отправить, и время окончания срока действия для сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-210">The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -301,19 +303,19 @@ Content-Type: application/json
 }
 ```
 
-### <a name="upload-remaining-data"></a><span data-ttu-id="d88c4-210">Отправка оставшихся данных</span><span class="sxs-lookup"><span data-stu-id="d88c4-210">Upload remaining data</span></span>
+### <a name="upload-remaining-data"></a><span data-ttu-id="dbf58-211">Отправка оставшихся данных</span><span class="sxs-lookup"><span data-stu-id="dbf58-211">Upload remaining data</span></span>
 
-<span data-ttu-id="d88c4-211">Теперь, когда приложению известно, с какого момента начинать отправку, возобновите операцию, выполнив действия из раздела [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).</span><span class="sxs-lookup"><span data-stu-id="d88c4-211">Now that your app knows where to start the upload from, resume the upload by following the steps in [upload bytes to the upload session](#upload-bytes-to-the-upload-session).</span></span>
+<span data-ttu-id="dbf58-212">Теперь, когда приложению известно, с какого момента начинать отправку, возобновите операцию, выполнив действия из раздела [Отправка байтов в сеанс отправки](#upload-bytes-to-the-upload-session).</span><span class="sxs-lookup"><span data-stu-id="dbf58-212">Now that your app knows where to start the upload from, resume the upload by following the steps in [upload bytes to the upload session](#upload-bytes-to-the-upload-session).</span></span>
 
-## <a name="handle-upload-errors"></a><span data-ttu-id="d88c4-212">Обработка ошибок отправки</span><span class="sxs-lookup"><span data-stu-id="d88c4-212">Handle upload errors</span></span>
+## <a name="handle-upload-errors"></a><span data-ttu-id="dbf58-213">Обработка ошибок отправки</span><span class="sxs-lookup"><span data-stu-id="dbf58-213">Handle upload errors</span></span>
 
-<span data-ttu-id="d88c4-213">После отправки последнего диапазона байтов файла может возникнуть ошибка.</span><span class="sxs-lookup"><span data-stu-id="d88c4-213">When the last byte range of a file is uploaded, it is possible for an error to occur.</span></span> <span data-ttu-id="d88c4-214">Она может быть вызвана конфликтом имен или превышением ограничения квоты.</span><span class="sxs-lookup"><span data-stu-id="d88c4-214">This can be due to a name conflict or quota limitation being exceeded.</span></span>
-<span data-ttu-id="d88c4-215">Сеанс отправки будет сохранен до истечения срока его действия. Это позволяет приложению возобновить отправку, явно зафиксировав сеанс отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-215">The upload session will be preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.</span></span>
+<span data-ttu-id="dbf58-214">После отправки последнего диапазона байтов файла может возникнуть ошибка.</span><span class="sxs-lookup"><span data-stu-id="dbf58-214">When the last byte range of a file is uploaded, it is possible for an error to occur.</span></span> <span data-ttu-id="dbf58-215">Она может быть вызвана конфликтом имен или превышением ограничения квоты.</span><span class="sxs-lookup"><span data-stu-id="dbf58-215">This can be due to a name conflict or quota limitation being exceeded.</span></span>
+<span data-ttu-id="dbf58-216">Сеанс отправки будет сохранен до истечения срока его действия. Это позволяет приложению возобновить отправку, явно зафиксировав сеанс отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-216">The upload session will be preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.</span></span>
 
-<span data-ttu-id="d88c4-216">Для этого приложение должно отправить запрос PUT с новым ресурсом **driveItem**, который будет использоваться при фиксации сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-216">To explicitly commit the upload session, your app must make a PUT request with a new **driveItem** resource that will be used when committing the upload session.</span></span>
-<span data-ttu-id="d88c4-217">Этот новый запрос должен устранить причину первоначальной ошибки отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-217">This new request should correct the source of error that generated the original upload error.</span></span>
+<span data-ttu-id="dbf58-217">Для этого приложение должно отправить запрос PUT с новым ресурсом **driveItem**, который будет использоваться при фиксации сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-217">To explicitly commit the upload session, your app must make a PUT request with a new **driveItem** resource that will be used when committing the upload session.</span></span>
+<span data-ttu-id="dbf58-218">Этот новый запрос должен устранить причину первоначальной ошибки отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-218">This new request should correct the source of error that generated the original upload error.</span></span>
 
-<span data-ttu-id="d88c4-218">Чтобы указать, что приложение применяет существующий сеанс отправки, запрос PUT должен включать свойство `@microsoft.graph.sourceUrl` со значением URL-адреса сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="d88c4-218">To indicate that your app is committing an existing upload session, the PUT request must include the `@microsoft.graph.sourceUrl` property with the value of your upload session URL.</span></span>
+<span data-ttu-id="dbf58-219">Чтобы указать, что приложение применяет существующий сеанс отправки, запрос PUT должен включать свойство `@microsoft.graph.sourceUrl` со значением URL-адреса сеанса отправки.</span><span class="sxs-lookup"><span data-stu-id="dbf58-219">To indicate that your app is committing an existing upload session, the PUT request must include the `@microsoft.graph.sourceUrl` property with the value of your upload session URL.</span></span>
 
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
@@ -329,11 +331,11 @@ If-Match: {etag or ctag}
 }
 ```
 
-<span data-ttu-id="d88c4-219">**Примечание.** В этом вызове можно использовать заголовки `@microsoft.graph.conflictBehavior` и `if-match` надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="d88c4-219">**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.</span></span>
+<span data-ttu-id="dbf58-220">**Примечание.** В этом вызове можно использовать заголовки `@microsoft.graph.conflictBehavior` и `if-match` надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="dbf58-220">**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.</span></span>
 
-### <a name="response"></a><span data-ttu-id="d88c4-220">Ответ</span><span class="sxs-lookup"><span data-stu-id="d88c4-220">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dbf58-221">Ответ</span><span class="sxs-lookup"><span data-stu-id="dbf58-221">Response</span></span>
 
-<span data-ttu-id="d88c4-221">Если файл можно зафиксировать с помощью новых метаданных, возвращается ответ `HTTP 201 Created` или `HTTP 200 OK` с метаданными ресурса Item для отправленного файла.</span><span class="sxs-lookup"><span data-stu-id="d88c4-221">If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.</span></span>
+<span data-ttu-id="dbf58-222">Если файл можно зафиксировать с помощью новых метаданных, возвращается ответ `HTTP 201 Created` или `HTTP 200 OK` с метаданными ресурса Item для отправленного файла.</span><span class="sxs-lookup"><span data-stu-id="dbf58-222">If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.</span></span>
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -349,23 +351,23 @@ Content-Type: application/json
 }
 ```
 
-## <a name="best-practices"></a><span data-ttu-id="d88c4-222">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="d88c4-222">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="dbf58-223">Рекомендации</span><span class="sxs-lookup"><span data-stu-id="dbf58-223">Best practices</span></span>
 
-* <span data-ttu-id="d88c4-223">Возобновляйте или повторно запускайте операции отправки, не выполненные из-за разрывов соединения или каких-либо ошибок с кодом 5xx, в том числе:</span><span class="sxs-lookup"><span data-stu-id="d88c4-223">Resume or retry uploads that fail due to connection interruptions or any 5xx errors, including:</span></span>
+* <span data-ttu-id="dbf58-224">Возобновляйте или повторно запускайте операции отправки, не выполненные из-за разрывов соединения или каких-либо ошибок с кодом 5xx, в том числе:</span><span class="sxs-lookup"><span data-stu-id="dbf58-224">Resume or retry uploads that fail due to connection interruptions or any 5xx errors, including:</span></span>
   * `500 Internal Server Error`
   * `502 Bad Gateway`
   * `503 Service Unavailable`
   * `504 Gateway Timeout`
-* <span data-ttu-id="d88c4-224">Используйте стратегию экспоненциального откладывания, если при возобновлении или повторной отправке возвращаются ошибки сервера с кодом 5xx.</span><span class="sxs-lookup"><span data-stu-id="d88c4-224">Use an exponential back off strategy if any 5xx server errors are returned when resuming or retrying upload requests.</span></span>
-* <span data-ttu-id="d88c4-225">При возникновении других ошибок не следует использовать эту стратегию. Вместо этого ограничьте количество повторных попыток.</span><span class="sxs-lookup"><span data-stu-id="d88c4-225">For other errors, you should not use an exponential back off strategy but limit the number of retry attempts made.</span></span>
-* <span data-ttu-id="d88c4-226">Для устранения ошибок `404 Not Found` при возобновляемой отправке начинайте всю отправку заново.</span><span class="sxs-lookup"><span data-stu-id="d88c4-226">Handle `404 Not Found` errors when doing resumable uploads by starting the entire upload over.</span></span> <span data-ttu-id="d88c4-227">Это означает, что сеанс отправки больше не существует.</span><span class="sxs-lookup"><span data-stu-id="d88c4-227">This indicates the upload session no longer exists.</span></span>
-* <span data-ttu-id="d88c4-228">Используйте возобновляемую отправку для файлов размером более 10 МБ (10 485 760 байтов).</span><span class="sxs-lookup"><span data-stu-id="d88c4-228">Use resumable file transfers for files larger than 10 MiB (10,485,760 bytes).</span></span>
-* <span data-ttu-id="d88c4-229">Размер 10 МБ для диапазона байтов оптимален при использовании стабильных высокоскоростных подключений.</span><span class="sxs-lookup"><span data-stu-id="d88c4-229">A byte range size of 10 MiB for stable high speed connections is optimal.</span></span> <span data-ttu-id="d88c4-230">Если используется более медленное или менее надежное подключение, то вы можете достичь оптимальных результатов, используя фрагменты меньших размеров.</span><span class="sxs-lookup"><span data-stu-id="d88c4-230">For slower or less reliable connections you may get better results from a smaller fragment size.</span></span> <span data-ttu-id="d88c4-231">Рекомендуем использовать фрагменты размером 5–10 МиБ.</span><span class="sxs-lookup"><span data-stu-id="d88c4-231">The recommended fragment size is between 5-10 MiB.</span></span>
-* <span data-ttu-id="d88c4-232">Используйте размер фрагментов, кратный 320 КиБ (327 680 байтов).</span><span class="sxs-lookup"><span data-stu-id="d88c4-232">Use a byte range size that is a multiple of 320 KiB (327,680 bytes).</span></span> <span data-ttu-id="d88c4-233">В противном случае после отправки последнего диапазона байтов большого файла может произойти сбой.</span><span class="sxs-lookup"><span data-stu-id="d88c4-233">Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.</span></span>
+* <span data-ttu-id="dbf58-225">Используйте стратегию экспоненциального откладывания, если при возобновлении или повторной отправке возвращаются ошибки сервера с кодом 5xx.</span><span class="sxs-lookup"><span data-stu-id="dbf58-225">Use an exponential back off strategy if any 5xx server errors are returned when resuming or retrying upload requests.</span></span>
+* <span data-ttu-id="dbf58-226">При возникновении других ошибок не следует использовать эту стратегию. Вместо этого ограничьте количество повторных попыток.</span><span class="sxs-lookup"><span data-stu-id="dbf58-226">For other errors, you should not use an exponential back off strategy but limit the number of retry attempts made.</span></span>
+* <span data-ttu-id="dbf58-227">Для устранения ошибок `404 Not Found` при возобновляемой отправке начинайте всю отправку заново.</span><span class="sxs-lookup"><span data-stu-id="dbf58-227">Handle `404 Not Found` errors when doing resumable uploads by starting the entire upload over.</span></span> <span data-ttu-id="dbf58-228">Это означает, что сеанс отправки больше не существует.</span><span class="sxs-lookup"><span data-stu-id="dbf58-228">This indicates the upload session no longer exists.</span></span>
+* <span data-ttu-id="dbf58-229">Используйте возобновляемую отправку для файлов размером более 10 МБ (10 485 760 байтов).</span><span class="sxs-lookup"><span data-stu-id="dbf58-229">Use resumable file transfers for files larger than 10 MiB (10,485,760 bytes).</span></span>
+* <span data-ttu-id="dbf58-230">Размер 10 МБ для диапазона байтов оптимален при использовании стабильных высокоскоростных подключений.</span><span class="sxs-lookup"><span data-stu-id="dbf58-230">A byte range size of 10 MiB for stable high speed connections is optimal.</span></span> <span data-ttu-id="dbf58-231">Если используется более медленное или менее надежное подключение, то вы можете достичь оптимальных результатов, используя фрагменты меньших размеров.</span><span class="sxs-lookup"><span data-stu-id="dbf58-231">For slower or less reliable connections you may get better results from a smaller fragment size.</span></span> <span data-ttu-id="dbf58-232">Рекомендуем использовать фрагменты размером 5–10 МиБ.</span><span class="sxs-lookup"><span data-stu-id="dbf58-232">The recommended fragment size is between 5-10 MiB.</span></span>
+* <span data-ttu-id="dbf58-233">Используйте размер фрагментов, кратный 320 КиБ (327 680 байтов).</span><span class="sxs-lookup"><span data-stu-id="dbf58-233">Use a byte range size that is a multiple of 320 KiB (327,680 bytes).</span></span> <span data-ttu-id="dbf58-234">В противном случае после отправки последнего диапазона байтов большого файла может произойти сбой.</span><span class="sxs-lookup"><span data-stu-id="dbf58-234">Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.</span></span>
 
-## <a name="error-responses"></a><span data-ttu-id="d88c4-234">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="d88c4-234">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="dbf58-235">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="dbf58-235">Error responses</span></span>
 
-<span data-ttu-id="d88c4-235">Дополнительные сведения о том как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="d88c4-235">See the [Error Responses][error-response] topic for details about how errors are returned.</span></span>
+<span data-ttu-id="dbf58-236">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="dbf58-236">See the [Error Responses][error-response] topic for details about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
