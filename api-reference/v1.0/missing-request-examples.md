@@ -2,12 +2,15 @@
 title: Определение /me как одноэлементного класса
 description: Вот что нужно было добавить в документы, чтобы убедиться, что сканер Markdown
 localization_priority: Normal
-ms.openlocfilehash: 58f5dd45a18753a599b404c6241a5213d216a75a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 82dac0d1b01b9e06c68c8d48fa54d9e728b3a293
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887147"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030151"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>Вспомогательный код (примеры, не включенные в документы)
 

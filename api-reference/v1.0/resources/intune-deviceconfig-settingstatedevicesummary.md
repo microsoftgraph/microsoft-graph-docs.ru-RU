@@ -4,12 +4,13 @@ description: Сводка по состоянию параметра конфи�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 429ee25a57383b7356948242ce39dcb45b4067ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ed7427e05e8d48f090f991b45e3a46cbc2985b01
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534747"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031117"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Тип ресурса settingStateDeviceSummary
 

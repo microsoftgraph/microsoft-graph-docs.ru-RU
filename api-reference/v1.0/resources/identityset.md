@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Identity
 localization_priority: Normal
-ms.openlocfilehash: 369068dd48b9173032542303e3fd9831d25e6e9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс IdentitySet представляет собой коллекцию ресурсов identity с ключами.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f1176f133f51432899a1fb6ddab964f04e658c69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030221"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса IdentitySet
 

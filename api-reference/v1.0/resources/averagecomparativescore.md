@@ -3,12 +3,14 @@ title: Тип ресурса Аверажекомпаративескоре
 description: Содержит различные оценки на основе разных областей.
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 59faa1c3dcf3f7f2b70807a74878dab796ae4d54
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f128fd22562889a5a537f3815a4003aec9bfc8a9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629329"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030018"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Тип ресурса Аверажекомпаративескоре
 
@@ -21,7 +23,7 @@ ms.locfileid: "33629329"
 |бы|String|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |Аверажескоре|Двойное|Средняя оценка в указанном базисе.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

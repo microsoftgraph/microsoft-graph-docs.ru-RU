@@ -4,12 +4,13 @@ description: Когда вы запрашиваете свойство нави�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ebe73224936d456c4f860e7cf2ea7e1b689a11e
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 6cffb53ac4a5e53988d059947da895b80349ca9e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658059"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030536"
 ---
 # <a name="domaindnsunavailablerecord-resource-type"></a>Тип ресурса domainDnsUnavailableRecord
 

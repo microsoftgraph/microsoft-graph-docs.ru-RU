@@ -4,12 +4,13 @@ description: Представляет основные или вспомогат
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: af1f9576c486174b6aa78dd3196c813e744a1552
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569027"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029801"
 ---
 # <a name="chartgridlines-resource-type"></a>Тип ресурса ChartGridlines
 
@@ -28,7 +29,7 @@ ms.locfileid: "32569027"
 |:---------------|:--------|:----------|
 |visible|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[Воркбукчартгридлинесформат](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|

@@ -4,12 +4,13 @@ description: Пользователь в системе. Используемы�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 71b9933f4ffbaf3b69ad3d60fc9dd06dc2e794c3
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: resourcePageType
+ms.openlocfilehash: 7c1f2a3eca2bdde48c630381d6f1f53c57e54fc7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030459"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
 

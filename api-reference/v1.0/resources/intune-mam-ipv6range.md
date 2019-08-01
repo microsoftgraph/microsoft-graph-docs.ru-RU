@@ -4,12 +4,13 @@ description: Определение диапазона IPv6.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f171a8ebb28d15e78a30bf542c37a163f0d097f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 04183f443d767236a1a7c0afb1d1ed9b92c37889
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038145"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
 

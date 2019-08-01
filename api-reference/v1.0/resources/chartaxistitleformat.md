@@ -4,12 +4,13 @@ description: Представляет форматирование для наз
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 26d305d8bd4a0059123f77bd86cbbf5fd01dcea7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3ae74b7353a0b4198b42a04fdd420eb3447d4c11
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569083"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029850"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Тип ресурса ChartAxisTitleFormat
 
@@ -22,7 +23,7 @@ ms.locfileid: "32569083"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |font|[Воркбукчартфонт](chartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы. Только для чтения.|

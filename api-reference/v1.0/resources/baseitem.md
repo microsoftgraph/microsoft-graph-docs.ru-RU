@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: baseItem
 localization_priority: Normal
-ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс baseItem — это абстрактный ресурс, который содержит общий набор свойств, которые являются общими для нескольких других типов ресурсов.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 2bde386a736805d52758f6d80e629c585f82d87e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569335"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029983"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -55,7 +58,7 @@ ms.locfileid: "32569335"
 | id                   | строка            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
-| description          | String            | Предоставляет видимое пользователю описание элемента. Необязательный параметр.                             |
+| description          | String            | Предоставляет видимое пользователю описание элемента. Необязательно.                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
@@ -63,7 +66,7 @@ ms.locfileid: "32569335"
 | parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                              |
 | webUrl               | строка (url-адрес)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение       | Тип     | Описание
 |:-------------------|:---------|:---------------------------------------------

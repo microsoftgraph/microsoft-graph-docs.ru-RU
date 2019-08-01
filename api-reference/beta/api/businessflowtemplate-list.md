@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 88a67360fc6d60f9751cecf932dba40dd8be4e08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f9c1bc8747d2057374c4aac6809987572475fdf
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944835"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049640"
 ---
 # <a name="list-businessflowtemplates"></a>Список Бусинессфловтемплатес
 
@@ -24,7 +24,7 @@ ms.locfileid: "35944835"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.Read.All |
+|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership |
 
 Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.
 

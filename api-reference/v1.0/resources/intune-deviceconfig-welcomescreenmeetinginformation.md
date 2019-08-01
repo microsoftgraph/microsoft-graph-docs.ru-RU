@@ -4,12 +4,13 @@ description: Возможные значения для сведений о со
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5eb28fba08ce30d32cb37fe35efaf7471db558e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: c450c631995e2f1467236760f964b3151317f65d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547020"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031054"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
 
@@ -21,8 +22,8 @@ ms.locfileid: "32547020"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|Шоворганизерандтимеонли|1 |Показывать только организатор и время.|
-|Шоворганизерандтимеандсубжект|2 |Отображение организатора, времени и темы (тема скрыта для частных собраний).|
+|Шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
+|Шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
 
 
 

@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: calculatedColumn
 localization_priority: Normal
-ms.openlocfilehash: 66fbc59fa9fe4880c023086c9bd334e04650bc73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс calculatedColumn в ресурсе columnDefinition указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 19f11c7033f03dbf4a190acbd6df54bbdfe1fa24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569370"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029976"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
 

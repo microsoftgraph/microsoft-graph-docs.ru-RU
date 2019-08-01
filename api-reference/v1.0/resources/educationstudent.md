@@ -4,12 +4,13 @@ description: Добавляются дополнительные сведени�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 683a290806f9a70f97bda4aa9429a64578fbcd97
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2b8574d790094468d4a74ab5796c18e26b696540
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463560"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030494"
 ---
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 
@@ -20,7 +21,7 @@ ms.locfileid: "32463560"
 |:---------------|:--------|:----------|
 |birthDate|Date| Дата рождения учащегося.|
 |externalId|String| Идентификатор учащегося в исходной системе.|
-|gender|Едукатионжендер| `female`Возможные значения: `male`,, `other`,. `unknownFutureValue`|
+|gender|Едукатионжендер| Допустимые значения: `female`, `male`, `other`, `unknownFutureValue`.|
 |оценка|String|Текущий уровень оценок учащегося.|
 |graduationYear|String| Год выпуска учащегося из школы.|
 |studentNumber|String| Student Number.|

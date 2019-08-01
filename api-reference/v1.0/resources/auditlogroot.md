@@ -4,12 +4,13 @@ description: Содержит различные типы журналов ау�
 author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3b8a90ae97c3ad1ff8c59ad9789c6b1c18498496
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: resourcePageType
+ms.openlocfilehash: 2956b933b5d7703300964a0d6fd2014287f5e0ed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030053"
 ---
 # <a name="auditlogroot-resource-type"></a>Тип ресурса Аудитлогрут
 

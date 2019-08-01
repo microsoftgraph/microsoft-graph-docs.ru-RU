@@ -4,12 +4,13 @@ description: Состояние подписки на управление мо�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52568fb380a74637c6f87f5fa192dfadf41bd911
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: bd68aaa3654fd140c0c751d55f490f0f45f89a4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556349"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030767"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип перечисления Девицеманажементсубскриптионстате
 
@@ -21,11 +22,11 @@ ms.locfileid: "32556349"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |закончен|нуль|Pending|
-|ASP|1 |Активные|
-|warning|2 |Предупреждение|
-|активирован|3 |Disabled|
-|deleted|4 |Deleted|
-|заблокированных|5 |Заблокировано|
+|ASP|1,1|Активное|
+|warning|2|Предупреждение|
+|активирован|4|Отключена|
+|deleted|SP4|Deleted|
+|заблокированных|17:00|Заблокировано|
 |Блокировка|8 |Блокировка|
 
 

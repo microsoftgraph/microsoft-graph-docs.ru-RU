@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42d0ecbb7745346d5fc8d25fbc1aa595c8f1887f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3635441f015d49ffb402f5314896e9e68b15e8e7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030928"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>Тип ресурса windowsUpdateActiveHoursInstall
 

@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Файл
 localization_priority: Normal
-ms.openlocfilehash: 7478ba064b5193ce7ddcd8685fc571a72d4b0057
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс File — это единая структура, объединяющая элементы данных, связанные с файлами.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 51ec91a635db2ca259ba84cea29304e4e6ac7cbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030375"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
 

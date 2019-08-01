@@ -4,12 +4,13 @@ description: Результат действия "Поиск устройств�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c335ac49bcf053e58381f7c1111caf5ae70cb0fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 69d4eea303711cc5c2174ee05ae97225521ed89f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570364"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030746"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Тип ресурса locateDeviceActionResult
 

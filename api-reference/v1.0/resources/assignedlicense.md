@@ -2,16 +2,17 @@
 title: Тип ресурса assignedLicense
 description: Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта user представляет собой коллекцию объектов **assignedLicense**.
 localization_priority: Normal
-ms.openlocfilehash: 1e190060d0aafa4d494240f691b354b28e7697c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: cd551085dac72b2f63e2cb67d9ada978746c0b5c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569496"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030081"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта [user](user.md) представляет собой коллекцию объектов **assignedLicense**.
 
@@ -21,7 +22,7 @@ ms.locfileid: "32569496"
 |Дисабледпланс|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
 |skuId|Guid|Уникальный идентификатор SKU.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -44,13 +45,10 @@ ms.locfileid: "32569496"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "assignedLicense resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

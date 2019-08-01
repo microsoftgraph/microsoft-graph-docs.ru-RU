@@ -4,12 +4,13 @@ description: Состояние доступа к Exchange для устройс
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fedbd157c4668397256971c57a4cb5fa355f78c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 5969c28aab1b54d8922c6391cf994274ef3570a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584665"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030823"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстате
 
@@ -20,7 +21,7 @@ ms.locfileid: "32584665"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Не обнаружено состояние доступа в Exchange|
+|none|нуль|Не обнаружено состояние доступа в Exchange|
 |unknown|1,1|Неизвестный режим доступа к устройству Exchange|
 |разрешенных|2|Устройство имеет доступ к Exchange|
 |заблокированных|4|Устройство заблокировано в Exchange|

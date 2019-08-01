@@ -4,16 +4,15 @@ description: Дополнительные сведения, добавляемы
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b58d74e6b53b1721a5139d050c7e89197b8721be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8e2cfef452538b9b75500898bf9a809ee871d372
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463658"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030480"
 ---
 # <a name="educationteacher-resource-type"></a>Тип ресурса educationTeacher
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.
 
@@ -46,15 +45,10 @@ ms.locfileid: "32463658"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "educationTeacher resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationteacher.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

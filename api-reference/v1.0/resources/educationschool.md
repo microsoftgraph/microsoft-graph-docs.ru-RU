@@ -4,12 +4,13 @@ description: 'Ресурс представляет учебное заведе�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3446b637835facfbe9a03e31dbdb8e9421b2faed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463672"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030508"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -20,7 +21,7 @@ ms.locfileid: "32463672"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Get](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Считывание свойств и отношений объекта **educationSchool**.|
+|[Получение](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Считывание свойств и отношений объекта **educationSchool**.|
 |[Добавление класса](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.|
 |[Перечисление классов](../api/educationschool-list-classes.md) |Коллекция [educationClass](educationclass.md)| Получение коллекции объектов **educationClass**.|
 |[Удаление класса](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Удаление **educationClass** из учебного заведения через свойство навигации classes.|
@@ -33,10 +34,10 @@ ms.locfileid: "32463672"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|GUID этого учебного заведения.|
-|displayName| String| Отображаемое имя учебного заведения.| 
-|description| String | Описание учебного заведения.| 
-|status| string| Только для чтения. `inactive`Возможные значения: `active`,, `expired`,. `deleteable`|
+|id|String|GUID этого учебного заведения.|
+|displayName| Строка| Отображаемое имя учебного заведения.| 
+|description| Строка | Описание учебного заведения.| 
+|status| string| Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`.|
 |externalSource| Едукатионекстерналсаурце| Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Адрес электронной почты директора.|
 |principalName| String | Имя директора.|
@@ -50,7 +51,7 @@ ms.locfileid: "32463672"
 |address|[physicalAddress](physicaladdress.md)| Адрес учебного заведения.|
 |createdBy|[identitySet](identityset.md)|Объект, который создал учебное заведение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |classes|Коллекция [educationClass](educationclass.md)| Классы, которые обучаются в учебном заведении. Допускается значение null.|

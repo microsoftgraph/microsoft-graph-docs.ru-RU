@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d32abb41313a9008e6b222119a9b4d7a95553b0f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd2dd21687d108ee4099d5a524da4c603995148d
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945993"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049517"
 ---
 # <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
 
@@ -24,7 +24,7 @@ ms.locfileid: "35945993"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.Read.All  |
+|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership  |
 
 
  Пользователь, вошедшего в систему, также должен быть членом роли каталога, который позволяет им читать проверку доступа.

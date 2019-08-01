@@ -4,12 +4,13 @@ description: Параметры группы, такие как заблокир
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42e6c0dc0f0ffd48da84023c5e4ff0d97cb446f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c85b062e955fc15f83728813427f2de5579e297e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570829"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030242"
 ---
 # <a name="groupsetting-resource-type"></a>Тип ресурса groupSetting
 
@@ -25,22 +26,22 @@ ms.locfileid: "32570829"
 |[Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта параметра. |
 |[Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
 |[Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта groupsetting. |
-|[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта setting. |
+|[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|displayName|String| Отображаемое имя группы параметров, поступающих из связанного шаблона. |
+|displayName|Строка| Отображаемое имя группы параметров, поступающих из связанного шаблона. |
 |id|String| Уникальный идентификатор для этих параметров. Только для чтения. |
 |templateId|String| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения. |
 |values|Коллекция [settingValue](settingvalue.md)| Коллекция пар "имя-значение". Должен содержать и задавать все параметры, определенные в шаблоне. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

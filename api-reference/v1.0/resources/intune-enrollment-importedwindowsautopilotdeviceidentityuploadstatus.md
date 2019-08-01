@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4490568adae1437ff01ac269a910c1fa2f3c4831
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 194f4ec9ea0bcb7c0f8434835cf548aa902bd204
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551773"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030599"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>тип перечисления Импортедвиндовсаутопилотдевицеидентитюплоадстатус
 
@@ -21,9 +22,9 @@ ms.locfileid: "32551773"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Отправка|нуль|Состояние отправки не задано.|
-|закончен|1 |Состояние ожидания.|
-|complete|2 |Состояние "завершено".|
-|error|3 |Состояние ошибки.|
+|закончен|1,1|Состояние ожидания.|
+|complete|2|Состояние "завершено".|
+|error|4|Состояние ошибки.|
 
 
 

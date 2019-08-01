@@ -4,12 +4,13 @@ description: Представляет оси диаграммы.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 483a69f11425f3b8991305e6acdf6b970d0e2db1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7e8ee5eac8face4d16418799d627d3aa168c48c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569433"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029878"
 ---
 # <a name="chartaxes-resource-type"></a>Тип ресурса ChartAxes
 
@@ -22,7 +23,7 @@ ms.locfileid: "32569433"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Категоряксис|[Воркбукчартаксис](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|

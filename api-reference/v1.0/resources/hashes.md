@@ -3,12 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
-ms.openlocfilehash: abe6fc277f94eb1f66f50f25b894bc41fd038a9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+title: Тип ресурса Hashes
+description: Ресурс хэшей группирует доступных хэши в единую структуру для элемента.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 6ed5cef48584aeb9d656ba0e088b535988f25a1f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570822"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030235"
 ---
 # <a name="hashes-resource-type"></a>Тип ресурса Hashes
 
