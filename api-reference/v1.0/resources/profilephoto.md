@@ -2,39 +2,42 @@
 title: Тип ресурса profilePhoto
 description: Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.
 localization_priority: Priority
-ms.openlocfilehash: b1901928a97356b2a9808a446d34981fd74bf456
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: baee7eebd3abcaa8376440fb0b20cbe5c69df880
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579869"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035058"
 ---
-# <a name="profilephoto-resource-type"></a><span data-ttu-id="c9843-104">Тип ресурса profilePhoto</span><span class="sxs-lookup"><span data-stu-id="c9843-104">profilePhoto resource type</span></span>
-<span data-ttu-id="c9843-p102">Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.</span><span class="sxs-lookup"><span data-stu-id="c9843-p102">A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.</span></span>
+# <a name="profilephoto-resource-type"></a><span data-ttu-id="cec90-104">Тип ресурса profilePhoto</span><span class="sxs-lookup"><span data-stu-id="cec90-104">profilePhoto resource type</span></span>
+<span data-ttu-id="cec90-p102">Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.</span><span class="sxs-lookup"><span data-stu-id="cec90-p102">A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.</span></span>
 
-<span data-ttu-id="c9843-107">Поддерживаемые размеры фотографий в формате HD для Exchange Online: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 и 648x648.</span><span class="sxs-lookup"><span data-stu-id="c9843-107">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> 
+<span data-ttu-id="cec90-107">Поддерживаемые размеры фотографий в формате HD для Exchange Online: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 и 648x648.</span><span class="sxs-lookup"><span data-stu-id="cec90-107">The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504', and '648x648'.</span></span> 
 
-## <a name="methods"></a><span data-ttu-id="c9843-108">Методы</span><span class="sxs-lookup"><span data-stu-id="c9843-108">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="cec90-108">Методы</span><span class="sxs-lookup"><span data-stu-id="cec90-108">Methods</span></span>
 
-| <span data-ttu-id="c9843-109">Метод</span><span class="sxs-lookup"><span data-stu-id="c9843-109">Method</span></span>       | <span data-ttu-id="c9843-110">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="c9843-110">Return Type</span></span>  |<span data-ttu-id="c9843-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c9843-111">Description</span></span>|
+| <span data-ttu-id="cec90-109">Метод</span><span class="sxs-lookup"><span data-stu-id="cec90-109">Method</span></span>       | <span data-ttu-id="cec90-110">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="cec90-110">Return Type</span></span>  |<span data-ttu-id="cec90-111">Описание</span><span class="sxs-lookup"><span data-stu-id="cec90-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c9843-112">Получение объекта profilePhoto</span><span class="sxs-lookup"><span data-stu-id="c9843-112">Get profilePhoto</span></span>](../api/profilephoto-get.md) | [<span data-ttu-id="c9843-113">profilePhoto</span><span class="sxs-lookup"><span data-stu-id="c9843-113">profilePhoto</span></span>](profilephoto.md) |<span data-ttu-id="c9843-114">Получение указанного объекта **profilePhoto** или его метаданных (свойств profilePhoto).</span><span class="sxs-lookup"><span data-stu-id="c9843-114">Get the specified **profilePhoto** or its metadata (profilePhoto properties).</span></span>|
-|[<span data-ttu-id="c9843-115">Обновление</span><span class="sxs-lookup"><span data-stu-id="c9843-115">Update</span></span>](../api/profilephoto-update.md) | [<span data-ttu-id="c9843-116">profilePhoto</span><span class="sxs-lookup"><span data-stu-id="c9843-116">profilePhoto</span></span>](profilephoto.md)  |<span data-ttu-id="c9843-p103">Назначение фотографии указанному пользователю, группе или контакту. Фотография должна быть представлена в двоичном формате. Она заменяет текущую фотографию (если она существует).</span><span class="sxs-lookup"><span data-stu-id="c9843-p103">Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.</span></span>|
+|[<span data-ttu-id="cec90-112">Получение объекта profilePhoto</span><span class="sxs-lookup"><span data-stu-id="cec90-112">Get profilePhoto</span></span>](../api/profilephoto-get.md) | [<span data-ttu-id="cec90-113">profilePhoto</span><span class="sxs-lookup"><span data-stu-id="cec90-113">profilePhoto</span></span>](profilephoto.md) |<span data-ttu-id="cec90-114">Получение указанного объекта **profilePhoto** или его метаданных (свойств profilePhoto).</span><span class="sxs-lookup"><span data-stu-id="cec90-114">Get the specified **profilePhoto** or its metadata (profilePhoto properties).</span></span>|
+|[<span data-ttu-id="cec90-115">Обновление</span><span class="sxs-lookup"><span data-stu-id="cec90-115">Update</span></span>](../api/profilephoto-update.md) | [<span data-ttu-id="cec90-116">profilePhoto</span><span class="sxs-lookup"><span data-stu-id="cec90-116">profilePhoto</span></span>](profilephoto.md)  |<span data-ttu-id="cec90-p103">Назначение фотографии указанному пользователю, группе или контакту. Фотография должна быть представлена в двоичном формате. Она заменяет текущую фотографию (если она существует).</span><span class="sxs-lookup"><span data-stu-id="cec90-p103">Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="c9843-120">Свойства</span><span class="sxs-lookup"><span data-stu-id="c9843-120">Properties</span></span>
-| <span data-ttu-id="c9843-121">Свойство</span><span class="sxs-lookup"><span data-stu-id="c9843-121">Property</span></span>     | <span data-ttu-id="c9843-122">Тип</span><span class="sxs-lookup"><span data-stu-id="c9843-122">Type</span></span>   |<span data-ttu-id="c9843-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c9843-123">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cec90-120">Свойства</span><span class="sxs-lookup"><span data-stu-id="cec90-120">Properties</span></span>
+| <span data-ttu-id="cec90-121">Свойство</span><span class="sxs-lookup"><span data-stu-id="cec90-121">Property</span></span>     | <span data-ttu-id="cec90-122">Тип</span><span class="sxs-lookup"><span data-stu-id="cec90-122">Type</span></span>   |<span data-ttu-id="cec90-123">Описание</span><span class="sxs-lookup"><span data-stu-id="cec90-123">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c9843-124">id</span><span class="sxs-lookup"><span data-stu-id="c9843-124">id</span></span>|<span data-ttu-id="c9843-125">string</span><span class="sxs-lookup"><span data-stu-id="c9843-125">string</span></span>|<span data-ttu-id="c9843-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c9843-126">Read-only.</span></span>|
-|<span data-ttu-id="c9843-127">height</span><span class="sxs-lookup"><span data-stu-id="c9843-127">height</span></span>|<span data-ttu-id="c9843-128">int32</span><span class="sxs-lookup"><span data-stu-id="c9843-128">Int32</span></span>|<span data-ttu-id="c9843-p104">Высота фотографии. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c9843-p104">The height of the photo. Read-only.</span></span>|
-|<span data-ttu-id="c9843-131">width</span><span class="sxs-lookup"><span data-stu-id="c9843-131">width</span></span>|<span data-ttu-id="c9843-132">int32</span><span class="sxs-lookup"><span data-stu-id="c9843-132">Int32</span></span>|<span data-ttu-id="c9843-p105">Ширина фотографии. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c9843-p105">The width of the photo. Read-only.</span></span>|
+|<span data-ttu-id="cec90-124">id</span><span class="sxs-lookup"><span data-stu-id="cec90-124">id</span></span>|<span data-ttu-id="cec90-125">string</span><span class="sxs-lookup"><span data-stu-id="cec90-125">string</span></span>|<span data-ttu-id="cec90-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cec90-126">Read-only.</span></span>|
+|<span data-ttu-id="cec90-127">height</span><span class="sxs-lookup"><span data-stu-id="cec90-127">height</span></span>|<span data-ttu-id="cec90-128">int32</span><span class="sxs-lookup"><span data-stu-id="cec90-128">int32</span></span>|<span data-ttu-id="cec90-p104">Высота фотографии. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cec90-p104">The height of the photo. Read-only.</span></span>|
+|<span data-ttu-id="cec90-131">width</span><span class="sxs-lookup"><span data-stu-id="cec90-131">width</span></span>|<span data-ttu-id="cec90-132">int32</span><span class="sxs-lookup"><span data-stu-id="cec90-132">int32</span></span>|<span data-ttu-id="cec90-p105">Ширина фотографии. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cec90-p105">The width of the photo. Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c9843-135">Связи</span><span class="sxs-lookup"><span data-stu-id="c9843-135">Relationships</span></span>
-<span data-ttu-id="c9843-136">Нет</span><span class="sxs-lookup"><span data-stu-id="c9843-136">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="cec90-135">Связи</span><span class="sxs-lookup"><span data-stu-id="cec90-135">Relationships</span></span>
+<span data-ttu-id="cec90-136">Нет</span><span class="sxs-lookup"><span data-stu-id="cec90-136">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="c9843-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c9843-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cec90-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cec90-137">JSON representation</span></span>
 
-<span data-ttu-id="c9843-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c9843-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cec90-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cec90-138">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
