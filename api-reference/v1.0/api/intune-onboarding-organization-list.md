@@ -4,12 +4,13 @@ description: Список свойств и связей объектов organi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eaceb5fccc74b0d2e64c7c8a6436e946bdd0a1fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 045dcb8635bcee2b71d40a8a1c3fe056f59eadfc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561581"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024058"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -41,10 +42,10 @@ GET /organization
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [organization](../resources/intune-onboarding-organization.md) в теле отклика.
 
 ## <a name="example"></a>Пример

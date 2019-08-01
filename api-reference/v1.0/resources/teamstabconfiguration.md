@@ -4,16 +4,17 @@ description: Параметры, определяющие содержимое �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9873d9e03fec5d7751270b963015aed9eeb0ab48
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2a3c16c69acefb8f746d11807a898e74de7620be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456983"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033686"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>Тип ресурса Теамстабконфигуратион (Open Type)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Параметры, определяющие содержимое [вкладки](teamstab.md). При настройке вкладки в интерактивном режиме эти сведения задаются приложением поставщика вкладок.
 Помимо приведенных ниже свойств, некоторые приложения поставщика вкладок задают дополнительные настраиваемые свойства.
@@ -22,9 +23,9 @@ ms.locfileid: "32456983"
 
 |Свойство|Тип|Описание|
 |-|-|-|
-|  entityId   |   строка |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
-|  contentUrl |   строка |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательно.    |
-|  removeUrl  |   строка |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
+|  entityId   |   string |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
+|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательно.    |
+|  removeUrl  |   string |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
 |  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне Teams.     |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,15 +47,10 @@ ms.locfileid: "32456983"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "teamsTabConfiguration complex type (Open Type)",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamstabconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

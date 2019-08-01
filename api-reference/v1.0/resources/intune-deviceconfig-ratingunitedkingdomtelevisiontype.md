@@ -4,12 +4,13 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b65561cd54a347e03bbe895d70fec7edfc1b602
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 17fe466de15e919014f71e747dbb42db26769e25
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534649"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027876"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>тип перечисления Ратингунитедкингдомтелевисионтипе
 
@@ -21,8 +22,8 @@ ms.locfileid: "32534649"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|Аллблоккед|1 |Не разрешать показ контента|
-|изучить|2 |Разрешение ТВ-содержимого с предупреждающим сообщением|
+|Аллблоккед|1,1|Не разрешать показ контента|
+|изучить|2|Разрешение ТВ-содержимого с предупреждающим сообщением|
 
 
 

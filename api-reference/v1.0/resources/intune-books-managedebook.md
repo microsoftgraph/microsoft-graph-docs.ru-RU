@@ -4,12 +4,13 @@ description: Абстрактный класс, содержащий базов�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 42d14dbd1c2afa6eb316bcb46cf3fe76bd0669e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534362"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028814"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -38,7 +39,7 @@ ms.locfileid: "32534362"
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги.|

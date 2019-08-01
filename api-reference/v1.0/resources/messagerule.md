@@ -4,12 +4,13 @@ description: Правило, которое применяется к сообщ
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a1a1ed26b7f0e659af0b7aeebae7f6da456afddf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9f3ded6cb3fff7ac29968085e228549c32c5e2d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580291"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036122"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
@@ -26,7 +27,7 @@ ms.locfileid: "32580291"
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
-| displayName | String | Отображаемое имя правила. |
+| displayName | Строка | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
 | hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
@@ -36,7 +37,7 @@ ms.locfileid: "32580291"
 
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже показано представление ресурса в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

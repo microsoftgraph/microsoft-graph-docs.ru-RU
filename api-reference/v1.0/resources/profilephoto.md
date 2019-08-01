@@ -2,12 +2,15 @@
 title: Тип ресурса profilePhoto
 description: Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.
 localization_priority: Priority
-ms.openlocfilehash: b1901928a97356b2a9808a446d34981fd74bf456
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: baee7eebd3abcaa8376440fb0b20cbe5c69df880
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579869"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035058"
 ---
 # <a name="profilephoto-resource-type"></a>Тип ресурса profilePhoto
 Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.

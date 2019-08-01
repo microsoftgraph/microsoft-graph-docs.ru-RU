@@ -2,12 +2,15 @@
 title: Тип ресурса responseStatus
 description: Состояние ответа к приглашению на собрание.
 localization_priority: Normal
-ms.openlocfilehash: 110b0eb158043b9573deb3e3ced792119bfa91a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 03deeabfd789fe3e8912d5a431af21bc2c8e5256
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579284"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034666"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 
@@ -17,10 +20,10 @@ ms.locfileid: "32579284"
 
 | Свойство | Тип           | Описание |
 |:---------|:---------------|:------------|
-| response | responseType   | Тип ответа. Возможные `None`значения:, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`,. `NotResponded`
+| response | responseType   | Тип ответа. Допустимые значения: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
 | time     | DateTimeOffset | Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

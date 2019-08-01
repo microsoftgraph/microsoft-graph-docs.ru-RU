@@ -4,16 +4,17 @@ description: 'Описывает видимость команды. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea8868924681d3e8f8cd0b4f55ff947c085260e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 46f84541e88924e9d5a0cb4ec0ac414e422f6d5b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456968"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033672"
 ---
-# <a name="teamvisibilitytype-enum-type"></a>тип перечисления объекта teamvisibilitytype
+#<a name="teamvisibilitytype-enum-type"></a>тип перечисления объекта teamvisibilitytype
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Описывает видимость [команды](../resources/team.md). 
 
@@ -23,11 +24,3 @@ ms.locfileid: "32456968"
 |:---------------|:--------|:----------|
 |закрытый|нуль|Любой пользователь может видеть команду, но только владелец может добавить в нее пользователя.|
 |public|1,1|Любой пользователь может присоединиться к команде.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamvisibilitytype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

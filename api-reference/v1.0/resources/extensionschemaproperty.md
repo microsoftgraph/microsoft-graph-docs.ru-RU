@@ -2,12 +2,15 @@
 title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
 localization_priority: Normal
-ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 362072f8727d82e4b5b5744922d8b819e0eae079
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032538"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -29,7 +32,7 @@ ms.locfileid: "32575788"
 | Boolean | Не поддерживается для ресурсов contact, message, event и post. |
 | DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
 | Целое число | 32-разрядное значение. Не поддерживается для ресурсов contact, message, event и post. |
-| String | Не более 256 символов. |
+| String | Не более 256 символов |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

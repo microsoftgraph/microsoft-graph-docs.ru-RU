@@ -2,12 +2,15 @@
 title: Тип ресурса Хостсекуритистате
 description: Содержит сведения о состоянии узла (включая устройства, компьютеры и т. д.).
 localization_priority: Normal
-ms.openlocfilehash: 0646547b7f3e31dcf283c1ce423a52b4ae16f013
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: dabe7d0aa026cb1b514e95fbc953dcb1974f8925
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570787"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029276"
 ---
 # <a name="hostsecuritystate-resource-type"></a>Тип ресурса Хостсекуритистате
 
@@ -24,7 +27,7 @@ ms.locfileid: "32570787"
 |Нетбиоснаме|String|Имя локального узла без DNS-имени домена.|
 |совместим|String|Хост операционной системы. (Например, Windows10, MacOS, РХЕЛ и т. д.).|
 |Приватеипаддресс|String|Частный (без маршрутизации) IPv4-или IPv6-адрес (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) на момент оповещения.|
-|ПублиЦипаддресс|String|IPv4-или IPv6-адрес общеДоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
+|ПублиЦипаддресс|String|IPv4-или IPv6-адрес общедоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
 |riskScore|String|Полученный поставщиком и вычисляемый показатель риска для узла.  Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
 ## <a name="json-representation"></a>Представление JSON

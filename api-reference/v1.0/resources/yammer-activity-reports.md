@@ -4,12 +4,13 @@ description: Благодаря отчетам о действиях в Yammer �
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 3ceda4e5771e442f4b664de71b595f8c5b6aeaf7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: fcd42485cc6578ae9443ce212ed8d2ec6f1120dd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033217"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
 

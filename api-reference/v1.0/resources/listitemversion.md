@@ -3,12 +3,14 @@ title: Тип ресурса listItemVersion
 description: Ресурс **listItemVersion** представляет предыдущую версию ресурса ListItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6e21be59b71a8f348931603c799ebbbe225e5d3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 8523e77fd308ab4863a0c3d90ccacad73cc766cc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572817"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036451"
 ---
 # <a name="listitemversion-resource-type"></a>Тип ресурса listItemVersion
 
@@ -20,7 +22,7 @@ ms.locfileid: "32572817"
 
 |            Стандартная задача             |         Метод HTTP         |
 | :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
+| [Список версий][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
 | [Get version][version-get]         | `GET /sites/{site-id}/items/{item-id}/versions/{version-id}`     |
 | [Restore version][version-restore] | `POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restore` |
 
@@ -29,7 +31,7 @@ ms.locfileid: "32572817"
 [version-restore]: ../api/listitemversion-restore.md
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!--{
   "blockType": "resource",

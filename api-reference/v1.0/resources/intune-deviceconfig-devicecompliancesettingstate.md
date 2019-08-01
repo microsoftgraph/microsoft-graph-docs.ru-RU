@@ -4,12 +4,13 @@ description: Состояние параметров соответствия т
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63285c5b0d0c7d1b342d13478777ddd6e87ae17f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9ad64ca5d89700fc5cb90ec7b548a396a9648035
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031726"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Тип ресурса deviceComplianceSettingState
 

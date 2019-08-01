@@ -2,16 +2,17 @@
 title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
 localization_priority: Normal
-ms.openlocfilehash: d1f3df6a88ab688206d26db6fc0afe1e1d4a4f60
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: a1a8780becf240c61b419edaa11e327fceeb5e54
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569377"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033140"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Свойство **assignedPlans** объектов [user](user.md) и [organization](organization.md) представляет собой коллекцию объектов **assignedPlan**.
 
@@ -24,7 +25,7 @@ ms.locfileid: "32569377"
 |service|String|Имя службы, например "Exchange".|
 |Сервицепланид|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -48,13 +49,10 @@ ms.locfileid: "32569377"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "assignedPlan resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

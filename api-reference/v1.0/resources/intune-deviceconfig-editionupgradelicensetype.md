@@ -4,12 +4,13 @@ description: Тип лицензии на обновление выпуска
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b37074a8f7d1a233d742f4deda81ce73c1b82707
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: cfb92e3a1ff622b00215bb94036ac537b18f2934
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565907"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031586"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
 
@@ -21,7 +22,7 @@ ms.locfileid: "32565907"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |productKey|нуль|Тип ключа продукта|
-|Лиценсефиле|1 |Тип файла лицензии|
+|Лиценсефиле|1,1|Тип файла лицензии|
 
 
 

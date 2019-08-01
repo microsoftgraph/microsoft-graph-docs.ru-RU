@@ -4,12 +4,13 @@ description: Ресурс **планнерекстерналреференце**
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: f95c6661dd179a7078980894b87184059598319d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d13af293defb09630f23c3be193020eed053ca21
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462363"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035268"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Тип ресурса Планнерекстерналреференце
 
@@ -22,7 +23,7 @@ ms.locfileid: "32462363"
 |:---------------|:--------|:----------|
 |alias|String|Псевдоним имени для описания ссылки.|
 |lastModifiedBy|[identitySet](identityset.md)|Только для чтения. Идентификатор пользователя, на который последний раз изменился.|
-|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Превиевприорити|String|Используется для задания относительного порядка приоритетов, в соответствии с которым ссылка будет отображаться в качестве предварительной версии для задачи.|
 |type|String|Используется для описания типа ссылки. Типы включают: `PowerPoint`, `Word`, `Excel`, `Other`.|
 

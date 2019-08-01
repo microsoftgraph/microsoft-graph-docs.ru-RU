@@ -4,12 +4,13 @@ description: Инкапсулирует свойства формата для �
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a447b604807f3ae223445db953d45928eda9f36b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ee39e1fc58fe604ff24433dcb540b44e22bb3ee9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569391"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033007"
 ---
 # <a name="chartareaformat-resource-type"></a>Тип ресурса ChartAreaFormat
 
@@ -22,7 +23,7 @@ ms.locfileid: "32569391"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[Воркбукчартфилл](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|

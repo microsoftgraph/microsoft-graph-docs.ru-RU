@@ -4,12 +4,13 @@ description: Представляет сводную таблицу Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5f6360ce1eacc313f1bcc8a9f59b44b216a87b84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c5b841495b19a81967ba056f702a88c4cbe74efc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456866"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033364"
 ---
 # <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
 
@@ -29,10 +30,10 @@ ms.locfileid: "32456866"
 |id|Строка| Идентификатор сводной таблицы.   Только для чтения.|
 |name|String|Имя сводной таблицы.    |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[Воркбукворкшит](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
+|worksheet|[WorkbookWorksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

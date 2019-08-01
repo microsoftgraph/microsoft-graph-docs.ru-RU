@@ -2,12 +2,15 @@
 title: Тип ресурса FilterDatetime
 description: Представляет способ фильтрации даты при фильтрации по значениям.
 localization_priority: Normal
-ms.openlocfilehash: 26d42b45a2e9b9cdd279f33330a877a64ea1c8d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e2938c151e052372df1b959e6e24d4a2c0d94ea4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564248"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032461"
 ---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
 
@@ -17,7 +20,7 @@ ms.locfileid: "32564248"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |дата|строка|Дата в формате ISO8601, используемая для фильтрации данных.|
-|specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Возможные `Year`значения:, `Monday`, `Day`, `Hour`, `Minute`,. `Second`|
+|specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Допустимые значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## <a name="relationships"></a>Отношения
 Нет

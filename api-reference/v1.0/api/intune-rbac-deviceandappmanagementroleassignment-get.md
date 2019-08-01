@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта deviceAn
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 728c0f15d3df34255f29f1fb530b001d6f08c920
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b5f22b134d1bc7d1f6e83e7a5f2b96f3974ad9b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582397"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023911"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Получение объекта deviceAndAppManagementRoleAssignment
 
@@ -44,10 +45,10 @@ GET /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример

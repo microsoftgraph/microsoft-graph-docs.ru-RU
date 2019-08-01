@@ -2,12 +2,15 @@
 title: Тип ресурса SortField
 description: Представляет условие в операции сортировки.
 localization_priority: Normal
-ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 33c2d37f46d4fdfdaef4bc5b6d92557668bf9d70
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034057"
 ---
 # <a name="sortfield-resource-type"></a>Тип ресурса SortField
 
@@ -20,10 +23,10 @@ ms.locfileid: "32561301"
 |color|строка|Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.|
 |dataOption|string|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
 |key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
-|sortOn|string|Представляет тип сортировки этого условия. `Value`Возможные значения: `CellColor`,, `FontColor`,. `Icon`|
+|sortOn|string|Представляет тип сортировки этого условия. Допустимые значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
 |значок|[Воркбукикон](icon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

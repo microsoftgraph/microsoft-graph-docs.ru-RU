@@ -4,12 +4,13 @@ description: Группа пользовательских календарей.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5b75ebf253276876129859be7d37ecb6748fc0d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3931359b3b7eec65e2c675fbc5b6ef40176b13fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033056"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
@@ -36,13 +37,13 @@ ms.locfileid: "32569405"
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
 | id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Отношение | Тип                               | Описание                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
 | calendars    | Коллекция [Calendar](calendar.md) | Календари в группе календарей. Свойство навигации. Только для чтения. Допускается значение null. |
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

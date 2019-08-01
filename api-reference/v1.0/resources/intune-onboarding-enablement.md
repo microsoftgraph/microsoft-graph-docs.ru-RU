@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bb862dd45b49e67bb1e02b7a34a7945845fd1e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: e42937aa7ed090e6bdb3dacb58af77a8fedbb220
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583629"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037396"
 ---
 # <a name="enablement-enum-type"></a>тип перечисления включения
 
@@ -21,8 +22,8 @@ ms.locfileid: "32583629"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Н/Д|
-|enabled|1 |Пока не задокументировано.|
-|активирован|2 |Пока не задокументировано.|
+|enabled|1,1|Пока не задокументировано.|
+|активирован|2|Пока не задокументировано.|
 
 
 

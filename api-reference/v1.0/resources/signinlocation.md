@@ -4,12 +4,13 @@ description: Предоставляет город, область и стран
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6f81556526c9de1177248b7015bb276e47cb73d9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: 35c6511b7dba69a362b44a9390974913c46b73ee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629238"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034218"
 ---
 # <a name="signinlocation-resource-type"></a>Тип ресурса signInLocation
 
@@ -24,7 +25,7 @@ ms.locfileid: "33629238"
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Предоставляет широту, долготу и высоту, на которой поступил вход.|
 |state|String|Предоставляет состояние, в котором поступил вход. Рассчитывается с использованием информации о широте и долготе из действия, выполняемого при входе.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

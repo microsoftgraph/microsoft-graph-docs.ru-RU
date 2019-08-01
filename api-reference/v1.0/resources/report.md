@@ -4,12 +4,13 @@ description: Microsoft Graph позволяет получить доступ к
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: c786d2a6c26a667f44037e1bcb2834dee757ae94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 918c079360ba944c7a94af8321cd384396fc5b0e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579305"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034715"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Office 365 в Microsoft Graph
 

@@ -1,19 +1,20 @@
 ---
-title: Элементы
+title: Members
 description: Описывает текущее состояние установки teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a58a0d046ef9c42f197e841ab542bf8dcb5f96f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 14354cc996d7a88ffea47bc5f3de50b403baedf4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462251"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033770"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>тип перечисления Теамсаппинсталледстате
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Описывает текущее состояние установки [teamsApp](teamsapp.md).
 
@@ -25,11 +26,3 @@ ms.locfileid: "32462251"
 |устанавлива|1,1|Приложение устанавливается обычным образом.|
 |Инсталледандхидден|2|Приложение установлено, но скрыто в представлении.|
 |Инсталледандперманент|4|Приложение устанавливается без возможности восстановления и не может быть удалено.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsappinstalledstate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

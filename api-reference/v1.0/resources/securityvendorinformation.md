@@ -1,31 +1,32 @@
 ---
 title: Тип ресурса Секуритивендоринформатион
-description: " подДается подПредоставлению = AppLocker)."
+description: " поддается подпредоставлению = AppLocker)."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fb5dee36da08332fd5c36f7ee4e578cc9fb7deaa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 3fb959da2d6af10632f9113a33eb942492b679ef
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549701"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034428"
 ---
 # <a name="securityvendorinformation-resource-type"></a>Тип ресурса Секуритивендоринформатион
 
-Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подПредоставление = AppLocker).
+Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подпредоставление = AppLocker).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |поставщики |String|Конкретный поставщик (продукт или услуга — не компания поставщика); Например, Виндовсдефендератп.|
-|Провидерверсион|String|Версия поставщика или подСистемы, если она существует, создавшего оповещение. *Required*|
-|подПредоставление|String|Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.|
+|Провидерверсион|String|Версия поставщика или подсистемы, если она существует, создавшего оповещение. *Required*|
+|подпредоставление|String|Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.|
 |поставщика |String|Имя поставщика оповещений (например, Microsoft, Dell, Фирие). *Required*|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Следующем — это представление ресурса в формате JSON.
 <!-- {

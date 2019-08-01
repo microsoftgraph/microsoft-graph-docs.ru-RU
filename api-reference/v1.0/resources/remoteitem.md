@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: ceb66fdacd4a108318c84fd9297aca8b2332c3f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс remoteItem указывает, что элемент driveItem ссылается на элемент, находящийся на другом диске.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d19034475f72984f023cef368e1fec5f75fe456
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579340"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034729"
 ---
 # <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
 

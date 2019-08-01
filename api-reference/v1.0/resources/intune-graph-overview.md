@@ -4,12 +4,13 @@ description: " Гибридные развертывания Intune не под�
 author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 0c30436c80af8621b1c633d12a11489f7e586f00
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+doc_type: conceptualPageType
+ms.openlocfilehash: a5007c629fd48165ceedd6a829ce8c21fc5e9c10
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133854"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027344"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 

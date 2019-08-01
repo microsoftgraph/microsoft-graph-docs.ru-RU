@@ -3,16 +3,16 @@ title: Тип ресурса Имажеинфо
 description: Сложный тип для представления свойства " **атрибуты** " в части висуалинфо объекта Activity.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a17fe40f53308a0b1b1f587425d2afb019f84bb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: resourcePageType
+ms.openlocfilehash: e79bea73a5a7a81ad92eab159745d2cf64938483
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579715"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035016"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .
 
@@ -49,13 +49,10 @@ ms.locfileid: "32579715"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "imageinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

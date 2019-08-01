@@ -4,12 +4,13 @@ description: Эти отчеты позволяют получить подро�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a98e74c1c94f1b94046aea0a5b2964d47f55595b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 18d756c21d5c19b24eebca78543e3fa31a86a1dc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552784"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034130"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 

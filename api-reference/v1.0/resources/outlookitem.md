@@ -4,12 +4,13 @@ description: Ниже этот ресурс представлен в форма
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 3bbfe6119d279a1a708b44128a7d134664d7b040
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7b04d84019cbb38f78ef1df63e4e39480c4d949b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462643"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035660"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
 
@@ -42,9 +43,9 @@ ms.locfileid: "32462643"
 |:---------------|:--------|:----------|
 |categories|Коллекция String|Категории, связанные с элементом|
 |changeKey|String|Определяет версию элемента. Каждый раз при изменении элемента Чанжекэй также изменяются. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
