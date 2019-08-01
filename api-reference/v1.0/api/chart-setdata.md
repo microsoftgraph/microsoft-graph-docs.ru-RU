@@ -4,55 +4,56 @@ description: Сбрасывает исходные данные для диаг�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2d00235881b8f946961405773de431723495bfca
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 394567b5612e5e06067b13bfb2d2cb3ae3aff646
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882161"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003793"
 ---
-# <a name="chart-setdata"></a><span data-ttu-id="c4092-103">Chart: setData</span><span class="sxs-lookup"><span data-stu-id="c4092-103">Chart: setData</span></span>
+# <a name="chart-setdata"></a><span data-ttu-id="e4f6a-103">Chart: setData</span><span class="sxs-lookup"><span data-stu-id="e4f6a-103">Chart: setData</span></span>
 
-<span data-ttu-id="c4092-104">Сбрасывает исходные данные для диаграммы.</span><span class="sxs-lookup"><span data-stu-id="c4092-104">Resets the source data for the chart.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c4092-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c4092-105">Permissions</span></span>
-<span data-ttu-id="c4092-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4092-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e4f6a-104">Сбрасывает исходные данные для диаграммы.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-104">Resets the source data for the chart.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4f6a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e4f6a-105">Permissions</span></span>
+<span data-ttu-id="e4f6a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4f6a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c4092-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c4092-108">Permission type</span></span>      | <span data-ttu-id="c4092-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c4092-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e4f6a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e4f6a-108">Permission type</span></span>      | <span data-ttu-id="e4f6a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e4f6a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c4092-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c4092-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c4092-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4092-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c4092-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c4092-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c4092-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c4092-113">Not supported.</span></span>    |
-|<span data-ttu-id="c4092-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c4092-114">Application</span></span> | <span data-ttu-id="c4092-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c4092-115">Not supported.</span></span> |
+|<span data-ttu-id="e4f6a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e4f6a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e4f6a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e4f6a-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e4f6a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e4f6a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4f6a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-113">Not supported.</span></span>    |
+|<span data-ttu-id="e4f6a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e4f6a-114">Application</span></span> | <span data-ttu-id="e4f6a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c4092-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c4092-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4f6a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e4f6a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c4092-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c4092-117">Request headers</span></span>
-| <span data-ttu-id="c4092-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c4092-118">Name</span></span>       | <span data-ttu-id="c4092-119">Описание</span><span class="sxs-lookup"><span data-stu-id="c4092-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e4f6a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e4f6a-117">Request headers</span></span>
+| <span data-ttu-id="e4f6a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="e4f6a-118">Name</span></span>       | <span data-ttu-id="e4f6a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="e4f6a-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c4092-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c4092-120">Authorization</span></span>  | <span data-ttu-id="c4092-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c4092-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c4092-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c4092-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c4092-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c4092-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e4f6a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e4f6a-120">Authorization</span></span>  | <span data-ttu-id="e4f6a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4f6a-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e4f6a-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e4f6a-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c4092-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c4092-126">Request body</span></span>
-<span data-ttu-id="c4092-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c4092-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4f6a-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e4f6a-126">Request body</span></span>
+<span data-ttu-id="e4f6a-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c4092-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="c4092-128">Parameter</span></span>    | <span data-ttu-id="c4092-129">Тип</span><span class="sxs-lookup"><span data-stu-id="c4092-129">Type</span></span>   |<span data-ttu-id="c4092-130">Описание</span><span class="sxs-lookup"><span data-stu-id="c4092-130">Description</span></span>|
+| <span data-ttu-id="e4f6a-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="e4f6a-128">Parameter</span></span>    | <span data-ttu-id="e4f6a-129">Тип</span><span class="sxs-lookup"><span data-stu-id="e4f6a-129">Type</span></span>   |<span data-ttu-id="e4f6a-130">Описание</span><span class="sxs-lookup"><span data-stu-id="e4f6a-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c4092-131">sourceData</span><span class="sxs-lookup"><span data-stu-id="c4092-131">sourceData</span></span>|<span data-ttu-id="c4092-132">Json</span><span class="sxs-lookup"><span data-stu-id="c4092-132">Json</span></span>|<span data-ttu-id="c4092-133">Объект Range, соответствующий исходным данным.</span><span class="sxs-lookup"><span data-stu-id="c4092-133">The Range object corresponding to the source data.</span></span>|
-|<span data-ttu-id="c4092-134">seriesBy</span><span class="sxs-lookup"><span data-stu-id="c4092-134">seriesBy</span></span>|<span data-ttu-id="c4092-135">string</span><span class="sxs-lookup"><span data-stu-id="c4092-135">string</span></span>|<span data-ttu-id="c4092-136">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="c4092-136">Optional.</span></span> <span data-ttu-id="c4092-137">Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.</span><span class="sxs-lookup"><span data-stu-id="c4092-137">Specifies the way columns or rows are used as data series on the chart.</span></span> <span data-ttu-id="c4092-138">Может иметь одно из следующих значений: Auto (по умолчанию), Rows, Columns.</span><span class="sxs-lookup"><span data-stu-id="c4092-138">Can be one of the following: Auto (default), Rows, Columns.</span></span>  <span data-ttu-id="c4092-139">Допустимые значения: `Auto`, `Columns`, `Rows`.</span><span class="sxs-lookup"><span data-stu-id="c4092-139">The possible values are: `Auto`, `Columns`, `Rows`.</span></span>|
+|<span data-ttu-id="e4f6a-131">sourceData</span><span class="sxs-lookup"><span data-stu-id="e4f6a-131">sourceData</span></span>|<span data-ttu-id="e4f6a-132">Json</span><span class="sxs-lookup"><span data-stu-id="e4f6a-132">Json</span></span>|<span data-ttu-id="e4f6a-133">Объект Range, соответствующий исходным данным.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-133">The Range object corresponding to the source data.</span></span>|
+|<span data-ttu-id="e4f6a-134">seriesBy</span><span class="sxs-lookup"><span data-stu-id="e4f6a-134">seriesBy</span></span>|<span data-ttu-id="e4f6a-135">string</span><span class="sxs-lookup"><span data-stu-id="e4f6a-135">string</span></span>|<span data-ttu-id="e4f6a-136">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-136">Optional.</span></span> <span data-ttu-id="e4f6a-137">Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-137">Specifies the way columns or rows are used as data series on the chart.</span></span> <span data-ttu-id="e4f6a-138">Может иметь одно из следующих значений: Auto (по умолчанию), Rows, Columns.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-138">Can be one of the following: Auto (default), Rows, Columns.</span></span>  <span data-ttu-id="e4f6a-139">Допустимые значения: `Auto`, `Columns`, `Rows`.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-139">The possible values are: `Auto`, `Columns`, `Rows`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c4092-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="c4092-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e4f6a-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="e4f6a-140">Response</span></span>
 
-<span data-ttu-id="c4092-p105">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c4092-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e4f6a-p105">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c4092-143">Пример</span><span class="sxs-lookup"><span data-stu-id="c4092-143">Example</span></span>
-<span data-ttu-id="c4092-144">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c4092-144">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="c4092-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="c4092-145">Request</span></span>
-<span data-ttu-id="c4092-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c4092-146">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e4f6a-143">Пример</span><span class="sxs-lookup"><span data-stu-id="e4f6a-143">Example</span></span>
+<span data-ttu-id="e4f6a-144">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-144">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e4f6a-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="e4f6a-145">Request</span></span>
+<span data-ttu-id="e4f6a-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-146">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c4092-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="c4092-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e4f6a-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4f6a-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chart_setdata"
@@ -67,27 +68,27 @@ Content-length: 70
   "seriesBy": "seriesBy-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c4092-148">C#</span><span class="sxs-lookup"><span data-stu-id="c4092-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e4f6a-148">C#</span><span class="sxs-lookup"><span data-stu-id="e4f6a-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chart-setdata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c4092-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="c4092-149">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e4f6a-149">Javascript</span><span class="sxs-lookup"><span data-stu-id="e4f6a-149">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chart-setdata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c4092-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c4092-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e4f6a-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="e4f6a-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chart-setdata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c4092-151">Java</span><span class="sxs-lookup"><span data-stu-id="c4092-151">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="e4f6a-151">Java</span><span class="sxs-lookup"><span data-stu-id="e4f6a-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chart-setdata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c4092-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="c4092-152">Response</span></span>
-<span data-ttu-id="c4092-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c4092-153">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e4f6a-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="e4f6a-152">Response</span></span>
+<span data-ttu-id="e4f6a-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e4f6a-153">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response"
 } -->
