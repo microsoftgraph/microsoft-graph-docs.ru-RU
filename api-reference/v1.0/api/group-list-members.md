@@ -4,12 +4,13 @@ description: Получение списка непосредственных у
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f70ca44404e0a5fb72f6e347e8a6ffa6fa2d1727
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 04a55e4fa188fcd8d0cc6a068d6655f7fb62beee
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889125"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016286"
 ---
 # <a name="list-members"></a>Список элементов
 Получение списка непосредственных участников группы. Участниками групп могут быть пользователи, контакты и другие группы. Эта операция не является транзитивной.

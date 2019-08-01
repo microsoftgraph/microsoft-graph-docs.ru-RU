@@ -4,12 +4,13 @@ description: 'Создание группы согласно инструкци�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 073fa6992345ee3d8275b38d3106bb095fe2308f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 2bd288c9a0ee54b4985ca173859b22022be97337
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893192"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016295"
 ---
 # <a name="create-group"></a>Создание группы
 Создание группы согласно инструкциям в тексте запроса. Вы можете создавать группы указанных ниже типов.

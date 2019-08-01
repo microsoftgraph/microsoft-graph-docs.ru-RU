@@ -4,12 +4,13 @@ description: Получение свойств и связей объекта gr
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: a1a366c29cad0af6b92db4b0e4624a668399f554
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd12ee9f078545b6ad486056e37335c28c70935c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014944"
 ---
 # <a name="get-group"></a>Вывод группы
 
