@@ -4,12 +4,13 @@ description: Обновление свойств объекта VPP токен.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05264adae4245aea25bc9f8ee6414a13fb8c2ccb
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: apiPageType
+ms.openlocfilehash: 9a427a7ff1acdecef20ba7d1930cfe84f8538fd7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620914"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023974"
 ---
 # <a name="update-vpptoken"></a>Обновить VPP токен
 

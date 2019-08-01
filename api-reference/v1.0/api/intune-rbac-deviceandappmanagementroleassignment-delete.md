@@ -4,12 +4,13 @@ description: Удаление объекта deviceAndAppManagementRoleAssignmen
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5bbd15ca67080e34703b51b2f1feac42cd5e1bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3ba9dd454fe7f2a79f1d0ab2eba1f343be5d3867
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561497"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023918"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Удаление объекта deviceAndAppManagementRoleAssignment
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

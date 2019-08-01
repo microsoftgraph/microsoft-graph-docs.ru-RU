@@ -4,12 +4,13 @@ description: Список свойств и связей объектов window
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b544218d4f7cdc8cfa292c909fc4499bdeaf2cc9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8a2b466b52f836aadef722adea0e0df664681bb2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576397"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025626"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>Список объектов windowsInformationProtectionAppLearningSummary
 
@@ -41,10 +42,10 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) в теле отклика.
 
 ## <a name="example"></a>Пример

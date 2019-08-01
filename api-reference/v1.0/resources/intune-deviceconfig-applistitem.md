@@ -4,12 +4,13 @@ description: Представляет приложение в списке уп�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb81c8edfae3f9b33be4636e9fd7f15fa758e789
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5b9aa0a35767078b7c91f72b7a8b06a450cc9f33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575095"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028611"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
 
@@ -20,7 +21,7 @@ ms.locfileid: "32575095"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|String|Имя приложения|
+|name|Строка|Имя приложения|
 |publisher|String|Издатель приложения|
 |appStoreUrl|String|URL-адрес приложения в Магазине|
 |appId|String|Идентификатор приложения или его пакета|

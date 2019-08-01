@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4792a943598911cc2f0b8329016469ca157bda58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс DriveRecipient представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия invite.
+doc_type: resourcePageType
+ms.openlocfilehash: a198bdc8a50fdb754ba8f9c88ce8e925c548a600
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562722"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029388"
 ---
 # <a name="driverecipient-resource"></a>Ресурс DriveRecipient
 

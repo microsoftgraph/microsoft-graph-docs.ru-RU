@@ -4,12 +4,13 @@ description: Получает объект диапазона, содержащ�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: e48d5e2997cb8ca0eca3e16aed9ed92299031ddb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c326dbbb5885786008d4bac0730a37b4dd92941d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35857196"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025395"
 ---
 # <a name="range-cell"></a>Range: Cell
 

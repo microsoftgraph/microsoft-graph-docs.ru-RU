@@ -4,12 +4,13 @@ description: Тип учетных записей, которым разреше
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7528b79652be799e2cc8b9b6d30622f10b5c6a0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 36afa0caff37aec689bd9e66d372eac72b989ee9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027799"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>тип перечисления Шаредпкалловедаккаунттипе
 
@@ -20,8 +21,8 @@ ms.locfileid: "32534600"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|книге|1 |Только учетные записи гостя.|
-|domain|2 |Только учетные записи, присоединенные к домену.|
+|книге|1,1|Только учетные записи гостя.|
+|domain|2|Только учетные записи, присоединенные к домену.|
 
 
 

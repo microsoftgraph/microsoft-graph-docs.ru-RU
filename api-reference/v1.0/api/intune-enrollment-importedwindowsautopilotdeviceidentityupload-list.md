@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Имп
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51285b5a36ee41da5151cb507ab1a7be182348d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8e7ad709ae54ec05943d3da20ae8e263a61b791d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020851"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>Список importedWindowsAutopilotDeviceIdentityUploads
 
@@ -41,7 +42,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

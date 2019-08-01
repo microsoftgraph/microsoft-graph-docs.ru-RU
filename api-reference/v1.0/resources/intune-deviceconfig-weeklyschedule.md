@@ -4,12 +4,13 @@ description: Возможные значения для еженедельног
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04773d2c23dde1d103e2865e6cc8d731337e38a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 863e0006030dcfad6c54228c936511fa720b5e5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574497"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027750"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
@@ -21,11 +22,11 @@ ms.locfileid: "32574497"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|решения|1 |Решения.|
-|воскресеньям|2 |Воскресеньям.|
-|Вторник|3 |Вторник.|
-|во|4 |Во.|
-|Четверг|5 |Четверг.|
+|решения|1,1|Решения.|
+|воскресеньям|2|Воскресеньям.|
+|Вторник|4|Вторник.|
+|во|SP4|Во.|
+|Четверг|17:00|Четверг.|
 |Пятница|6 |Пятница.|
 |пятницам|7 |Пятницам.|
 |субботу|8 |Субботу.|

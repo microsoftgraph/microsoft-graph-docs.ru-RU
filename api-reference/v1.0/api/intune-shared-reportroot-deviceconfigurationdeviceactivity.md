@@ -4,12 +4,13 @@ description: Метаданные для отчета о работе устро
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a92ca929c45e9da34e598df079197fd76a2761bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 55be9ee8ffa1cd2b7dba5e91fe31df7b0f3b58f8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576939"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023428"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Функция deviceConfigurationDeviceActivity
 
@@ -42,7 +43,7 @@ GET /reports/deviceConfigurationDeviceActivity
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
