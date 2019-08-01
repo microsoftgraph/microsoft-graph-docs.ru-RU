@@ -4,12 +4,13 @@ description: 'Отчет, который изменяется в зависим�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: ad95fa9ef21a6fbf80ddd8265b5bac2e72c1825b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9348abb1b63f4c83604213ce1f9ad0a521a85c05
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036878"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
 

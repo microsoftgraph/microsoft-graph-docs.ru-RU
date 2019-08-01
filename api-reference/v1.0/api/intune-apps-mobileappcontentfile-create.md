@@ -4,12 +4,13 @@ description: Создание объекта mobileAppContentFile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6c78f6575a1d5f66e9989e876a03839ab2a8849
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6135d8fb10b2295c8e654151bdb821a77ab03a95
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554429"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002015"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -41,7 +42,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта mobileAppContentFile в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта mobileAppContentFile.

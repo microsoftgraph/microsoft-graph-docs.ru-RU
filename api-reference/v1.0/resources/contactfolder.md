@@ -4,12 +4,13 @@ description: Папка, содержащая контакты.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6cf4d6ed75427dce527ced6cb64d0cdcb9afed99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 84ca2fff70adff1acdf63e62f19c64f18c7518c7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548168"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029654"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -38,11 +39,11 @@ ms.locfileid: "32548168"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя папки.|
-|id|Строка|Уникальный идентификатор папки с контактами. Только для чтения.|
+|displayName|Строка|Отображаемое имя папки.|
+|id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolders|Коллекция [ContactFolder](contactfolder.md)|Коллекция дочерних папок в папке. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -96,7 +97,7 @@ ms.locfileid: "32548168"
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 

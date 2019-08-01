@@ -4,12 +4,13 @@ description: Создайте новую группу разделов в ука
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: f19d33c4c450418bea1beb15c844ea9987eb61b6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 915eb7947a4cdfac15a0eb63c99283cc4d9c2cc6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892729"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976497"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 

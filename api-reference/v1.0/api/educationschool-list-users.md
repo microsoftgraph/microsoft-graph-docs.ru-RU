@@ -4,12 +4,13 @@ description: Получение списка пользователей в уч�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8b3bebd7d1ae93ed01e93962e0a0470fccea2a4a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fadf7554beda44b4dbcda533e2be2e2f4f0def79
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887706"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015182"
 ---
 # <a name="list-educationusers"></a>Перечисление EducationUsers
 

@@ -3,12 +3,14 @@ title: Перечисление подписок
 description: Получение свойств и связей подписок на веб-перехватчики с учетом идентификатора приложения, пользователя и его роли в клиенте.
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 56a24582d5eb40a10bded2c82a01c1c24b3736c6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 845897a17f85ec50f98110a672772d18ad329a58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894338"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024639"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 

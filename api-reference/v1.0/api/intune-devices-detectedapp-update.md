@@ -4,12 +4,13 @@ description: Обновление свойств объекта detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bbd9cb4d4ad26eda487557a8e21df19ad3564118
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6a66b7ebb07f8f61c5364fc8fdc95cc5b21a8f6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584682"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996940"
 ---
 # <a name="update-detectedapp"></a>Обновление объекта detectedApp
 
@@ -41,7 +42,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [detectedApp](../resources/intune-devices-detectedapp.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [detectedApp](../resources/intune-devices-detectedapp.md).
@@ -49,7 +50,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|String|Имя обнаруженного приложения. Только для чтения|
+|displayName|Строка|Имя обнаруженного приложения. Только для чтения|
 |version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|

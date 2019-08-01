@@ -4,12 +4,13 @@ description: Ссылки для открытия записной книжки 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 376000d84ccec8cdc0c1ae601e65f3217275b1e4
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+doc_type: resourcePageType
+ms.openlocfilehash: 8ec315e3dbf5e807408c4de289b2bedf42999159
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35236624"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035961"
 ---
 # <a name="notebooklinks-resource-type"></a>Тип ресурса Нотебуклинкс
 

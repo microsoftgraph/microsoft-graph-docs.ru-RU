@@ -4,12 +4,13 @@ description: Удаляет объект deviceCompliancePolicyAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 030a15e26ee551415231b63dd27c49cb81e84cc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 546926e8567deeb854dc1d73a230af108913a555
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459908"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017814"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>Удаление объекта deviceCompliancePolicyAssignment
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

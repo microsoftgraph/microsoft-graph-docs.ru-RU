@@ -2,12 +2,15 @@
 title: Тип ресурса networkConnection
 description: Содержит сведения о состоянии сетевого подключения, связанного с оповещением.
 localization_priority: Normal
-ms.openlocfilehash: 78ddcfd19d68b8dcd64c74a5beed6d1430f0ca38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 25750b5484558c53ab03d3001bc2b8bafa307524
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580277"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035996"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
@@ -21,9 +24,9 @@ ms.locfileid: "32580277"
 |Дестинатионаддресс|String|Конечный IP-адрес (сетевого подключения).|
 |Дестинатиондомаин|String|Часть конечного домена, в которой находится конечный URL-адрес. (например, "www.contoso.com").|
 |Дестинатионпорт|String|Порт назначения (для сетевого подключения).|
-|Дестинатионурл|String|URL-адрес сетевого подключения/URI-строка — без параметров. (например, "www.contoso.com/products/Default.HTML")|
+|Дестинатионурл|String|URL-адрес сетевого подключения/URI-строка — без параметров. (например, "www.contoso.com/products/default.html")|
 |direction|connectionDirection|Направление сетевого подключения. Возможные значения: `unknown`, `inbound`, `outbound`.|
-|Домаинрегистереддатетиме|DateTimeOffset|Дата регистрации конечного домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Домаинрегистереддатетиме|DateTimeOffset|Дата регистрации конечного домена. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Локалднснаме|String|Локальное разрешение DNS-имен, отображаемое в локальном кэше DNS узла (например, на случай, если файл hosts был подделан).|
 |Натдестинатионаддресс|String|IP-адрес назначения преобразования сетевых адресов.|
 |Натдестинатионпорт|String|Порт назначения преобразования сетевых адресов.|

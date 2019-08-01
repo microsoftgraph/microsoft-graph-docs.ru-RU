@@ -5,16 +5,17 @@ title: Тип ресурса shareAction
 description: Объект shareAction предоставляет сведения о том, к которому был предоставлен общий доступ к элементу в действии Share.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a61ec47aae94eb99c2a192c863127d18a80fc087
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 73b847bbd9608a7647f3895e8d67fff9dbdc9a68
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970792"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034351"
 ---
 # <a name="shareaction-resource-type"></a>Тип ресурса shareAction
 
-Ресурс **shareAction** предоставляет сведения о [действии] [ activity] , в котором общий доступ к элементу.
+Ресурс **shareAction** предоставляет сведения о [действии][activity] , в котором общий доступ к элементу.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

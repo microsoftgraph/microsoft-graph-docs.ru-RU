@@ -4,12 +4,13 @@ description: Ресурс назначения роли. Назначения р
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32527fad8db54f865f054f04400897e51638e5c2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 542cd188653465f2482e4a5fe837eeb811fe3bd6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554039"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037130"
 ---
 # <a name="roleassignment-resource-type"></a>Тип ресурса roleAssignment
 
@@ -29,12 +30,12 @@ ms.locfileid: "32554039"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|String|Отображаемое или понятное имя назначения роли.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|Строка|Отображаемое или понятное имя назначения роли.|
 |description|String|Описание назначения роли.|
 |resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |roleDefinition|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Определение роли, частью которого является это назначение.|

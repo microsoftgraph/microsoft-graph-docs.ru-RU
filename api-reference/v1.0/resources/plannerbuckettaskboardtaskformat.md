@@ -4,12 +4,13 @@ description: Ресурс **plannerBucketTaskBoardTaskFormat** представ�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 4982b0b539412058d6d598893b698f12d88bd671
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: dcc78f60decaa50f0ac1a2051b84e2f651e11521
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462244"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035331"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Тип ресурса plannerBucketTaskBoardTaskFormat
 
@@ -21,13 +22,13 @@ ms.locfileid: "32462244"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md); |Чтение свойств и связей объекта **plannerBucketTaskBoardTaskFormat** .|
-|[Обновление](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
+|[обновление](../api/plannerbuckettaskboardtaskformat-update.md); | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
-|orderHint|Строка|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
+|orderHint|String|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 
 ## <a name="relationships"></a>Отношения
 Нет

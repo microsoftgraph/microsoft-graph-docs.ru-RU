@@ -4,12 +4,13 @@ description: Создание объекта deviceComplianceSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4731d7475e4e27870ade2bbb4b4b54814562e0d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b5e952ca051f7cc01ae5662e0a853b3c8f642f67
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019298"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Создание объекта deviceComplianceSettingState
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceComplianceSettingState в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceSettingState.

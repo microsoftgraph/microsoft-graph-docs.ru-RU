@@ -4,12 +4,13 @@ description: Обновление свойств объекта editionUpgradeCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fd923367898dae191dfae4ac8b2dd026b368641
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 77e12cf924470db6a580c6a29d3cb80d65f37e8d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577121"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017429"
 ---
 # <a name="update-editionupgradeconfiguration"></a>Обновление объекта editionUpgradeConfiguration
 
@@ -41,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [editionUpgradeConfiguration](../resources/intune-deviceconfig-editionupgradeconfiguration.md).

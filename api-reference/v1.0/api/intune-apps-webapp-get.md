@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта webApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94f056b82d95aa934bc780c957ba174e01b2c4ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2a3018f0db2d37b856216b2b4f75c150767bf33a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580617"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015987"
 ---
 # <a name="get-webapp"></a>Get webApp
 
@@ -44,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

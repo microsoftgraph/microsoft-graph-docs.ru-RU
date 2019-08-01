@@ -4,12 +4,13 @@ description: Список свойств и связей объектов macOSG
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 014732195966dd44adea6e28b0d6e945b18cc0d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d5fba74eaa8f8c59f46d636d9095a7675f3c6190
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562505"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997402"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Перечисление объектов macOSGeneralDeviceConfiguration
 
@@ -41,10 +42,10 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

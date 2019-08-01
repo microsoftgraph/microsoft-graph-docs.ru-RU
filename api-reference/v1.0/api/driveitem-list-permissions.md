@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Список пользователей, имеющих доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecbb197eb93c6251d5eac0b2bc1baea4b7efe87
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Создание списка действующих разрешений на общий доступ в элементе DriveItem.
+doc_type: apiPageType
+ms.openlocfilehash: fef9dfc62579569287bb2d6141a64e34f526a8fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888043"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015420"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений на общий доступ в элементе DriveItem
 

@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта managedD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ee090d9a263a03e222da2fd338cfe44c9fead47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9a31e8ac2b3c87d38a0f1e2892eab295f0f691cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578297"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014006"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>Получение объекта managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -44,10 +45,10 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

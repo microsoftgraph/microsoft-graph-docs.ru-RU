@@ -4,12 +4,13 @@ description: Список свойств и связей объектов iosLob
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d845f69fc8cf90ef0014e0023d6fa1f265ffd188
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ed401f4d804a3ed4146b51c89d4f3c16e1bcb9ab
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577436"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014286"
 ---
 # <a name="list-ioslobapps"></a>Перечисление объектов iosLobApp
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosLobApp](../resources/intune-apps-ioslobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

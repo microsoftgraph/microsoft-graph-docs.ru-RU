@@ -1,28 +1,26 @@
 ---
 title: Использование REST API для OneNote
-description: 'Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или организационной учетной записи. Имея соответствующие разрешения приложения или делегированные разрешения, приложение может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте. '
-localization_priority: Normal
+description: Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или организационной учетной записи. Имея соответствующие разрешения приложения или делегированные разрешения, приложение может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте.
+localization_priority: Priority
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ceb5ac30786ecfd207a2076d471e9d004b60f8d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: c22f38e7002e7619b1e9ee182866e850cf83cdf9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462958"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035919"
 ---
 # <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или организационной учетной записи. Имея [соответствующие разрешения приложения или делегированные разрешения](/graph/permissions-reference#notes-permissions), приложение может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте. 
+Microsoft Graph позволяет вашему приложению получать авторизованный доступ к записным книжкам, разделам и страницам OneNote в личной или организационной учетной записи. Имея [соответствующие разрешения приложения или делегированные разрешения](/graph/permissions-reference#notes-permissions), приложение может получать доступ к данным OneNote вошедшего пользователя или любого пользователя в клиенте.
 
 ## <a name="root-url"></a>Корневой URL-адрес
 Для всех вызовов API OneNote используется следующий формат корневого URL-адреса службы OneNote.
 ```
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
-
 Сегмент `version` URL-адреса представляет нужную версию Microsoft Graph.
 
 - Значение `v1.0` предназначено для стабильного производственного кода.
@@ -46,15 +44,16 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 > **Примечание.** Вы можете получить идентификаторы пользователей, отправив запрос GET к конечной точке `https://graph.microsoft.com/v1.0/users`.
 
 ### <a name="group-notebooks"></a>Записные книжки группы
-
 Чтобы получить доступ к записным книжкам группы, воспользуйтесь следующим корневым URL-адресом службы:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 ### <a name="sharepoint-site-notebooks"></a>Записные книжки на сайте SharePoint
+
 Чтобы получить доступ к записным книжкам на сайте группы SharePoint, воспользуйтесь следующим корневым URL-адресом службы:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+

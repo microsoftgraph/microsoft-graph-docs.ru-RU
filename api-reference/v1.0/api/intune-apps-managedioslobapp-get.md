@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта managedI
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc4f563a6a87c2246caa61dd5421c6727b8a980c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fc444a32cff4800ae50fa839c80511bf39bafd4f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578094"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013873"
 ---
 # <a name="get-managedioslobapp"></a>Get managedIOSLobApp
 
@@ -44,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -4,12 +4,13 @@ description: Обновление свойств объекта targetedManagedA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32e03d719a631e1237eafac4404f9a9607dde188
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2beaa0f25b5000eb02fdc4942a63b66e58f8549d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018115"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Обновление объекта targetedManagedAppPolicyAssignment
 
@@ -45,14 +46,14 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id|
+|id|String|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор для развертывания группы или приложения|
 
 

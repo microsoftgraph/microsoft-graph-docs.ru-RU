@@ -4,12 +4,13 @@ description: Обновление свойств объекта macOSCustomConfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b8895014666e4c75e885ad9ee529ae1faa1a40c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9faae3c3562c6ea3dddd0e1b0de6290becd63967
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581018"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997507"
 ---
 # <a name="update-macoscustomconfiguration"></a>Обновление объекта macOSCustomConfiguration
 
@@ -41,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md).

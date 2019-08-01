@@ -4,12 +4,13 @@ description: Список свойств и связей объектов macOSC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c36f9540571b0ad32587989a2be2c42b8615a088
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 28f57cd01c4cb1c15ef6c81a820dd674163f1da1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581025"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017135"
 ---
 # <a name="list-macoscustomconfigurations"></a>Перечисление объектов macOSCustomConfiguration
 
@@ -41,10 +42,10 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

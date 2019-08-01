@@ -4,12 +4,13 @@ description: Удаляет объект windows81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da63317ffad50316d88a3a14da0b6c9ac357ecd5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: df7c8820816696429975ca83dec934e5106b442d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566061"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997157"
 ---
 # <a name="delete-windows81generalconfiguration"></a>Delete windows81GeneralConfiguration
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

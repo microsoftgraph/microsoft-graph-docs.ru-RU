@@ -4,12 +4,13 @@ description: Получение объекта thread.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a28bf8a91ae1ee509e9b9d5147cc5caa690201a0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 87860ea9e68ed00a37863e119ddea13e7695dab7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889440"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016419"
 ---
 # <a name="get-conversation-thread"></a>Получение цепочки беседы
 Получение объекта [thread](../resources/conversationthread.md).

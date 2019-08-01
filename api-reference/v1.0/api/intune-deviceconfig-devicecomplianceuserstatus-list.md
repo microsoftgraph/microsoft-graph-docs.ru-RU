@@ -4,12 +4,13 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02f8c750b06e934d50ab60ac539ecae0e377b3da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 04bb45dadaa2d8540f30d5169b7569e197280db4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019235"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>List deviceComplianceUserStatuses
 
@@ -41,7 +42,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userSt
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

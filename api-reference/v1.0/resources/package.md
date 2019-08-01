@@ -2,14 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Пакет
+title: Режим
 localization_priority: Normal
-ms.openlocfilehash: c64dfce910456ef9b9415e3332c099d7814a71f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: " или коллекция элементов, которые должны рассматриваться как коллекция, а не как отдельные элементы."
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d8eff13e0cfdc6b355cc289833e7b3050ded2641
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462531"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035667"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
 

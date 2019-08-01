@@ -4,12 +4,13 @@ description: Список свойств и связей объектов window
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b41b67c1ca9b7daf29e1bc3870ea6a4e71c36210
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d15b686b5081f60a64091fc7a4c5a96a4223a758
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520076"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997099"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Перечисление объектов windowsPhone81CompliancePolicy
 
@@ -41,10 +42,10 @@ GET /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример

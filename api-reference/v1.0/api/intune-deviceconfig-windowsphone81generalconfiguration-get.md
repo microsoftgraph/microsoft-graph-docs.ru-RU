@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windowsP
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a31b9a02550181bc52e10979758c9c3165dc21d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 860ef04cf76b140fcf927ea564a2cb0b2cce6e54
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519915"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997018"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Get windowsPhone81GeneralConfiguration
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

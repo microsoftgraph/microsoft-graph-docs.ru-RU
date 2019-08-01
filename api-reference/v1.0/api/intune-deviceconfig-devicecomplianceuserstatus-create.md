@@ -4,12 +4,13 @@ description: Создание объекта deviceComplianceUserStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b855f9515e2c0bda21817ac00c0a3948904dabe1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 671dfde7d5e1bc975dd6397977ecc4d0c6ac3d7b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574584"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017646"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Создание объекта deviceComplianceUserStatus
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceComplianceUserStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceComplianceUserStatus.

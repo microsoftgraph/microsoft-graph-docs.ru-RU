@@ -4,12 +4,13 @@ description: Удаляет объект webApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3ecfe7fc30d54f34734cd891ae36c297ea6716a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 60d078acde26d9eff4e20d3a42cfffd7eda1b891
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580582"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013684"
 ---
 # <a name="delete-webapp"></a>Delete webApp
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

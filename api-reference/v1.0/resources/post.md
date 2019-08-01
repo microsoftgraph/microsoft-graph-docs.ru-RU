@@ -4,12 +4,13 @@ description: Представляет отдельный элемент Post в 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d594b7f44a39f17427ac395d4cd734d064d8b1ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 43837b1403b7b213b1b8a30002aeb53b8fa297a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548490"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035100"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 Представляет отдельный элемент Post в сущности [conversationThread](conversationthread.md).
@@ -32,7 +33,7 @@ ms.locfileid: "32548490"
 |[Ответ](../api/post-reply.md)|Нет|Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы.|
 |[Переадресация](../api/post-forward.md)|Нет|Переадресация публикации получателю.|
 |**Вложения**| | |
-|[Список вложений](../api/post-list-attachments.md) |Коллекция [attachment](attachment.md)| Получает все вложения для экземпляра post.|
+|[Список вложений](../api/post-list-attachments.md) |Коллекция [attachment](attachment.md) | Получает все вложения для экземпляра post.|
 |[Добавление вложения](../api/post-post-attachments.md) |[attachment](attachment.md)| Добавление вложения в публикацию. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.|
@@ -40,7 +41,7 @@ ms.locfileid: "32548490"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Расширенные свойства**| | |
-|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей публикации.   |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей публикации.   |
 |[Получение публикации с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Получение публикаций, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новой или существующей публикации.  |
 |[Получение публикации с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Получение публикации, которая содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
@@ -62,11 +63,11 @@ ms.locfileid: "32548490"
 |receivedDateTime|DateTimeOffset|Указывает, когда была получена публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |sender|[recipient](recipient.md)|Содержит электронный адрес отправителя. Если получатель не указан, то в качестве значения Sender используется адрес пользователя, прошедшего проверку подлинности. Это свойство используется по умолчанию.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [Attachment](attachment.md)| Только для чтения. Допускается значение null.|
-|extensions|Коллекция [Extension](extension.md)|Коллекция открытых расширений, определенных для записи. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для записи. Только для чтения. Допускается значение null.|
 |Инреплито|[post](post.md)| Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|

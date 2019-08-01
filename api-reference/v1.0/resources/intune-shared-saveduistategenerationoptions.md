@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4939061dc18ef7fbea6f8945f74226b363a3bc3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 556dd303bb5ad8f8ad5b804fb684319cd1d32a06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571802"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036843"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>тип перечисления Саведуистатеженератионоптионс
 
@@ -20,8 +21,8 @@ ms.locfileid: "32571802"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Пока не задокументировано.|
-|Омитсилверлигхтполициреференцес|1 |Пока не задокументировано.|
+|none|нуль|Пока не задокументировано.|
+|Омитсилверлигхтполициреференцес|1,1|Пока не задокументировано.|
 
 
 
