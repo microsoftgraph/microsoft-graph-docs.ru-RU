@@ -4,50 +4,51 @@ description: Получает список объектов groupLifecyclePolicy
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: b5e08c900f864478b8ab510dea5774136df1a255
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 23ac6af1f01f24613f91a3a8f00d922f9f5741ec
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889169"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014895"
 ---
-# <a name="list-grouplifecyclepolicies"></a><span data-ttu-id="370e9-103">Перечисление groupLifecyclePolicies</span><span class="sxs-lookup"><span data-stu-id="370e9-103">List groupLifecyclePolicies</span></span>
+# <a name="list-grouplifecyclepolicies"></a><span data-ttu-id="889ae-103">Перечисление groupLifecyclePolicies</span><span class="sxs-lookup"><span data-stu-id="889ae-103">List groupLifecyclePolicies</span></span>
 
-<span data-ttu-id="370e9-104">Получает список объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md), к которым принадлежит группа.</span><span class="sxs-lookup"><span data-stu-id="370e9-104">Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.</span></span>
+<span data-ttu-id="889ae-104">Получает список объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md), к которым принадлежит группа.</span><span class="sxs-lookup"><span data-stu-id="889ae-104">Retrieves a list of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects to which a group belongs.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="370e9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="370e9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="889ae-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="889ae-105">Permissions</span></span>
 
-<span data-ttu-id="370e9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="370e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="889ae-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="889ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="370e9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="370e9-108">Permission type</span></span>      | <span data-ttu-id="370e9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="370e9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="889ae-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="889ae-108">Permission type</span></span>      | <span data-ttu-id="889ae-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="889ae-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="370e9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="370e9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="370e9-111">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="370e9-111">Directory.Read.All, Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="370e9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="370e9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="370e9-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="370e9-113">Not supported.</span></span>    |
-|<span data-ttu-id="370e9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="370e9-114">Application</span></span> | <span data-ttu-id="370e9-115">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="370e9-115">Directory.Read.All, Directory.ReadWrite.All</span></span>|
+|<span data-ttu-id="889ae-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="889ae-110">Delegated (work or school account)</span></span> | <span data-ttu-id="889ae-111">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="889ae-111">Directory.Read.All, Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="889ae-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="889ae-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="889ae-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="889ae-113">Not supported.</span></span>    |
+|<span data-ttu-id="889ae-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="889ae-114">Application</span></span> | <span data-ttu-id="889ae-115">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="889ae-115">Directory.Read.All, Directory.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="370e9-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="370e9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="889ae-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="889ae-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/groupLifecyclePolicies
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="370e9-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="370e9-117">Optional query parameters</span></span>
-<span data-ttu-id="370e9-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="370e9-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="889ae-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="889ae-117">Optional query parameters</span></span>
+<span data-ttu-id="889ae-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="889ae-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="370e9-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="370e9-119">Request headers</span></span>
-| <span data-ttu-id="370e9-120">Имя</span><span class="sxs-lookup"><span data-stu-id="370e9-120">Name</span></span> | <span data-ttu-id="370e9-121">Описание</span><span class="sxs-lookup"><span data-stu-id="370e9-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="889ae-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="889ae-119">Request headers</span></span>
+| <span data-ttu-id="889ae-120">Имя</span><span class="sxs-lookup"><span data-stu-id="889ae-120">Name</span></span> | <span data-ttu-id="889ae-121">Описание</span><span class="sxs-lookup"><span data-stu-id="889ae-121">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="370e9-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="370e9-122">Authorization</span></span> | <span data-ttu-id="370e9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="370e9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="889ae-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="889ae-122">Authorization</span></span> | <span data-ttu-id="889ae-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="889ae-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="370e9-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="370e9-125">Request body</span></span>
-<span data-ttu-id="370e9-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="370e9-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="370e9-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="370e9-127">Response</span></span>
-<span data-ttu-id="370e9-128">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="370e9-128">If successful, this method returns a `200 OK` response code and collection of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="370e9-129">Пример</span><span class="sxs-lookup"><span data-stu-id="370e9-129">Example</span></span>
+## <a name="request-body"></a><span data-ttu-id="889ae-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="889ae-125">Request body</span></span>
+<span data-ttu-id="889ae-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="889ae-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="889ae-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="889ae-127">Response</span></span>
+<span data-ttu-id="889ae-128">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="889ae-128">If successful, this method returns a `200 OK` response code and collection of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="889ae-129">Пример</span><span class="sxs-lookup"><span data-stu-id="889ae-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="370e9-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="370e9-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="889ae-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="889ae-130">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="370e9-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="370e9-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="889ae-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="889ae-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_grouplifecyclepolicies"
@@ -55,27 +56,27 @@ GET /groups/{id}/groupLifecyclePolicies
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="370e9-132">C#</span><span class="sxs-lookup"><span data-stu-id="370e9-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="889ae-132">C#</span><span class="sxs-lookup"><span data-stu-id="889ae-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-grouplifecyclepolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="370e9-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="370e9-133">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="889ae-133">Javascript</span><span class="sxs-lookup"><span data-stu-id="889ae-133">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-grouplifecyclepolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="370e9-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="370e9-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="889ae-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="889ae-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-grouplifecyclepolicies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="370e9-135">Java</span><span class="sxs-lookup"><span data-stu-id="370e9-135">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="889ae-135">Java</span><span class="sxs-lookup"><span data-stu-id="889ae-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-grouplifecyclepolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="370e9-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="370e9-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="889ae-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="889ae-136">Response</span></span>
 
-<span data-ttu-id="370e9-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="370e9-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="889ae-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="889ae-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

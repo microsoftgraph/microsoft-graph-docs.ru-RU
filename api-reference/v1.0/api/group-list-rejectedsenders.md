@@ -4,51 +4,52 @@ description: 'Получение списка пользователей или 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 89a3424919dbacdf8e549f49f12db80535145221
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 5a0e669395d71ca4b0c2312147c4a3e93cfb24d2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889028"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014893"
 ---
-# <a name="list-rejectedsenders"></a><span data-ttu-id="c531c-103">Список rejectedSenders</span><span class="sxs-lookup"><span data-stu-id="c531c-103">List rejectedSenders</span></span>
-<span data-ttu-id="c531c-104">Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы.</span><span class="sxs-lookup"><span data-stu-id="c531c-104">Get a list of users or groups that are in the rejected-senders list for this group.</span></span> 
+# <a name="list-rejectedsenders"></a><span data-ttu-id="42fa7-103">Список rejectedSenders</span><span class="sxs-lookup"><span data-stu-id="42fa7-103">List rejectedSenders</span></span>
+<span data-ttu-id="42fa7-104">Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы.</span><span class="sxs-lookup"><span data-stu-id="42fa7-104">Get a list of users or groups that are in the rejected-senders list for this group.</span></span> 
 
-<span data-ttu-id="c531c-p101">Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="c531c-p101">Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="42fa7-p101">Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса GET). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.</span><span class="sxs-lookup"><span data-stu-id="42fa7-p101">Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c531c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c531c-107">Permissions</span></span>
-<span data-ttu-id="c531c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c531c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="42fa7-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="42fa7-107">Permissions</span></span>
+<span data-ttu-id="42fa7-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42fa7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c531c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c531c-110">Permission type</span></span>      | <span data-ttu-id="c531c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c531c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="42fa7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="42fa7-110">Permission type</span></span>      | <span data-ttu-id="42fa7-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="42fa7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c531c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c531c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c531c-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c531c-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c531c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c531c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c531c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c531c-115">Not supported.</span></span>    |
-|<span data-ttu-id="c531c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c531c-116">Application</span></span> | <span data-ttu-id="c531c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c531c-117">Not supported.</span></span> |
+|<span data-ttu-id="42fa7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="42fa7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="42fa7-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42fa7-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="42fa7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="42fa7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42fa7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42fa7-115">Not supported.</span></span>    |
+|<span data-ttu-id="42fa7-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="42fa7-116">Application</span></span> | <span data-ttu-id="42fa7-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42fa7-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c531c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c531c-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42fa7-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="42fa7-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/rejectedSenders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c531c-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c531c-119">Optional query parameters</span></span>
-<span data-ttu-id="c531c-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c531c-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="42fa7-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="42fa7-119">Optional query parameters</span></span>
+<span data-ttu-id="42fa7-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="42fa7-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c531c-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c531c-121">Request headers</span></span>
-| <span data-ttu-id="c531c-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c531c-122">Header</span></span>       | <span data-ttu-id="c531c-123">Значение</span><span class="sxs-lookup"><span data-stu-id="c531c-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="42fa7-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="42fa7-121">Request headers</span></span>
+| <span data-ttu-id="42fa7-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="42fa7-122">Header</span></span>       | <span data-ttu-id="42fa7-123">Значение</span><span class="sxs-lookup"><span data-stu-id="42fa7-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c531c-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c531c-124">Authorization</span></span>  | <span data-ttu-id="c531c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c531c-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="42fa7-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="42fa7-124">Authorization</span></span>  | <span data-ttu-id="42fa7-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="42fa7-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c531c-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c531c-127">Request body</span></span>
-<span data-ttu-id="c531c-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c531c-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42fa7-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="42fa7-127">Request body</span></span>
+<span data-ttu-id="42fa7-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="42fa7-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c531c-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="c531c-129">Response</span></span>
-<span data-ttu-id="c531c-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c531c-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="42fa7-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="42fa7-129">Response</span></span>
+<span data-ttu-id="42fa7-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="42fa7-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c531c-131">Пример</span><span class="sxs-lookup"><span data-stu-id="c531c-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="c531c-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="c531c-132">Request</span></span>
-<span data-ttu-id="c531c-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c531c-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="42fa7-131">Пример</span><span class="sxs-lookup"><span data-stu-id="42fa7-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="42fa7-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="42fa7-132">Request</span></span>
+<span data-ttu-id="42fa7-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="42fa7-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c531c-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="c531c-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="42fa7-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="42fa7-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rejectedsenders"
@@ -56,28 +57,28 @@ GET /groups/{id}/rejectedSenders
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c531c-135">C#</span><span class="sxs-lookup"><span data-stu-id="c531c-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="42fa7-135">C#</span><span class="sxs-lookup"><span data-stu-id="42fa7-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rejectedsenders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c531c-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="c531c-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42fa7-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="42fa7-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rejectedsenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c531c-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c531c-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="42fa7-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="42fa7-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rejectedsenders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c531c-138">Java</span><span class="sxs-lookup"><span data-stu-id="c531c-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="42fa7-138">Java</span><span class="sxs-lookup"><span data-stu-id="42fa7-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rejectedsenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c531c-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="c531c-139">Response</span></span>
-<span data-ttu-id="c531c-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c531c-140">The following is an example of the response.</span></span>
-><span data-ttu-id="c531c-141">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="c531c-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="c531c-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c531c-142">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="42fa7-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="42fa7-139">Response</span></span>
+<span data-ttu-id="42fa7-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="42fa7-140">The following is an example of the response.</span></span>
+><span data-ttu-id="42fa7-141">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="42fa7-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="42fa7-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="42fa7-142">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
