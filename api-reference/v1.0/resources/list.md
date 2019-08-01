@@ -2,15 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: List
+title: Перечисление
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс list представляет список на сайте.
+doc_type: resourcePageType
+ms.openlocfilehash: 51821bb20188c004af3f2aca868c3cfd953ce19c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570801"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036409"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -115,7 +117,7 @@ ms.locfileid: "32570801"
 
 | Имя связи | Тип                             | Описание
 |:------------------|:---------------------------------|:----------------------
-| **drive**         | [drive][]                        | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с ресурсами [driveItem][driveItem].
+| **drive**         | [drive][]                        | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с объектами [driveItem][driveItem].
 | **items**         | Коллекция ([listItem][])         | Все элементы, содержащиеся в списке.
 | **columns**       | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
 | **contentTypes**  | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.

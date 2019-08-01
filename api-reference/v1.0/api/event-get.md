@@ -4,12 +4,13 @@ description: Получение свойств и отношений указа�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7972c635fe37395b4dae03cbc4145b88468b4448
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 42023d3bbbdf3548db25f1994ce68e38bc16a594
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887382"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006733"
 ---
 # <a name="get-event"></a>Вывод события
 

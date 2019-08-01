@@ -4,12 +4,13 @@ description: Получение свойств и связей канала.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: e0bde47461f7d20c0b4bb117c834f9c1f28d126a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 196ab8a68075e59a5e74cec986a273ff9dc3a6ad
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882266"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003891"
 ---
 # <a name="get-channel"></a>Получение канала
 

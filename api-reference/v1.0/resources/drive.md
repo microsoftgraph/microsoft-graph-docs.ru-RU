@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: a6a406ef5cb011e82d14c54ea0a35cd93eaab837
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
+doc_type: resourcePageType
+ms.openlocfilehash: ba40d2ac0605a255b0b7df05db1e5bebb68c2e42
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562841"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030543"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса Drive
 
@@ -103,7 +105,7 @@ ms.locfileid: "32562841"
 |                        Стандартная задача                         |         Метод HTTP         |
 | :--------------------------------------------------------- | :-------------------------- |
 | [Получение метаданных другого ресурса Drive][drive-get]           | `GET /drives/{drive-id}`    |
-| [Получение корневой папки для ресурса Drive, используемого по умолчанию, пользователя][item-get]       | `GET /drive/root`           |
+| [Получение корневой папки для ресурса Drive по умолчанию пользователя][item-get]       | `GET /drive/root`           |
 | [Получение списка дочерних элементов ресурса Drive][item-children]             | `GET /drive/root/children`  |
 | [Получение списка изменений для всех элементов в ресурсе Drive][item-changes]    | `GET /drive/root/delta`     |
 | [Поиск элементов в ресурсе Drive][item-search]               | `GET /drive/root/search`    |
