@@ -4,53 +4,54 @@ description: Получение списка поддерживаемых язы
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 707355732c17890e69bd547305641c73c7941501
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 45e5ab477f9a8b6cb7bd09bca38d7cdd479d205b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892843"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022644"
 ---
-# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="f7e93-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="f7e93-103">outlookUser: supportedLanguages</span></span>
+# <a name="outlookuser-supportedlanguages"></a><span data-ttu-id="cdab7-103">outlookUser: supportedLanguages</span><span class="sxs-lookup"><span data-stu-id="cdab7-103">outlookUser: supportedLanguages</span></span>
 
-<span data-ttu-id="f7e93-104">Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя.</span><span class="sxs-lookup"><span data-stu-id="f7e93-104">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="cdab7-104">Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя.</span><span class="sxs-lookup"><span data-stu-id="cdab7-104">Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="f7e93-105">Настраивая клиент Outlook, пользователь выбирает язык из этого списка.</span><span class="sxs-lookup"><span data-stu-id="f7e93-105">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="f7e93-106">После этого вы можете получить выбранный язык вместе с [ настройками почтового ящика пользователя](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="f7e93-106">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="cdab7-105">Настраивая клиент Outlook, пользователь выбирает язык из этого списка.</span><span class="sxs-lookup"><span data-stu-id="cdab7-105">When setting up an Outlook client, the user selects the preferred language from this supported list.</span></span> <span data-ttu-id="cdab7-106">После этого вы можете получить выбранный язык вместе с [ настройками почтового ящика пользователя](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="cdab7-106">You can subsequently get the preferred language by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="f7e93-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f7e93-107">Permissions</span></span>
-<span data-ttu-id="f7e93-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7e93-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdab7-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cdab7-107">Permissions</span></span>
+<span data-ttu-id="cdab7-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdab7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f7e93-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f7e93-110">Permission type</span></span>      | <span data-ttu-id="f7e93-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f7e93-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cdab7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cdab7-110">Permission type</span></span>      | <span data-ttu-id="cdab7-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cdab7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f7e93-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f7e93-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f7e93-113">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="f7e93-113">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="f7e93-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f7e93-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7e93-115">User.Read</span><span class="sxs-lookup"><span data-stu-id="f7e93-115">User.Read</span></span>    |
-|<span data-ttu-id="f7e93-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f7e93-116">Application</span></span> | <span data-ttu-id="f7e93-117">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7e93-117">User.Read.All</span></span> |
+|<span data-ttu-id="cdab7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cdab7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="cdab7-113">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="cdab7-113">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="cdab7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cdab7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdab7-115">User.Read</span><span class="sxs-lookup"><span data-stu-id="cdab7-115">User.Read</span></span>    |
+|<span data-ttu-id="cdab7-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cdab7-116">Application</span></span> | <span data-ttu-id="cdab7-117">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="cdab7-117">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f7e93-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f7e93-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdab7-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cdab7-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedLanguages
 GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```
-## <a name="request-headers"></a><span data-ttu-id="f7e93-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f7e93-119">Request headers</span></span>
-| <span data-ttu-id="f7e93-120">Имя</span><span class="sxs-lookup"><span data-stu-id="f7e93-120">Name</span></span>       | <span data-ttu-id="f7e93-121">Тип</span><span class="sxs-lookup"><span data-stu-id="f7e93-121">Type</span></span> | <span data-ttu-id="f7e93-122">Описание</span><span class="sxs-lookup"><span data-stu-id="f7e93-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cdab7-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cdab7-119">Request headers</span></span>
+| <span data-ttu-id="cdab7-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cdab7-120">Name</span></span>       | <span data-ttu-id="cdab7-121">Тип</span><span class="sxs-lookup"><span data-stu-id="cdab7-121">Type</span></span> | <span data-ttu-id="cdab7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="cdab7-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f7e93-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f7e93-123">Authorization</span></span>  | <span data-ttu-id="f7e93-124">string</span><span class="sxs-lookup"><span data-stu-id="f7e93-124">string</span></span>  | <span data-ttu-id="f7e93-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7e93-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cdab7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cdab7-123">Authorization</span></span>  | <span data-ttu-id="cdab7-124">string</span><span class="sxs-lookup"><span data-stu-id="cdab7-124">string</span></span>  | <span data-ttu-id="cdab7-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cdab7-p103">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="f7e93-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f7e93-127">Request body</span></span>
-<span data-ttu-id="f7e93-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f7e93-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdab7-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cdab7-127">Request body</span></span>
+<span data-ttu-id="cdab7-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cdab7-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f7e93-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7e93-129">Response</span></span>
-<span data-ttu-id="f7e93-130">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [localeInfo](../resources/localeinfo.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="f7e93-130">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cdab7-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdab7-129">Response</span></span>
+<span data-ttu-id="cdab7-130">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [localeInfo](../resources/localeinfo.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="cdab7-130">If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f7e93-131">Пример</span><span class="sxs-lookup"><span data-stu-id="f7e93-131">Example</span></span>
-<span data-ttu-id="f7e93-132">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="f7e93-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="f7e93-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="f7e93-133">Request</span></span>
-<span data-ttu-id="f7e93-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f7e93-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cdab7-131">Пример</span><span class="sxs-lookup"><span data-stu-id="cdab7-131">Example</span></span>
+<span data-ttu-id="cdab7-132">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="cdab7-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="cdab7-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="cdab7-133">Request</span></span>
+<span data-ttu-id="cdab7-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cdab7-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f7e93-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7e93-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cdab7-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdab7-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_supportedlanguages"
@@ -58,27 +59,27 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ```http
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f7e93-136">C#</span><span class="sxs-lookup"><span data-stu-id="f7e93-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cdab7-136">C#</span><span class="sxs-lookup"><span data-stu-id="cdab7-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedlanguages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f7e93-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="f7e93-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cdab7-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="cdab7-137">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedlanguages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f7e93-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f7e93-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cdab7-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cdab7-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-supportedlanguages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f7e93-139">Java</span><span class="sxs-lookup"><span data-stu-id="f7e93-139">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="cdab7-139">Java</span><span class="sxs-lookup"><span data-stu-id="cdab7-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedlanguages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f7e93-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7e93-140">Response</span></span>
-<span data-ttu-id="f7e93-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f7e93-141">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="cdab7-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdab7-140">Response</span></span>
+<span data-ttu-id="cdab7-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cdab7-141">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

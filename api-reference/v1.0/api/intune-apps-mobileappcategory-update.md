@@ -4,29 +4,30 @@ description: Обновление свойств объекта mobileAppCategor
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17f3a0c8a71e7c443764d03ba7021ecddfd5d7af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: feb3f3884bfa35b06bd6de9a718312716a45ca51
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541635"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013705"
 ---
-# <a name="update-mobileappcategory"></a><span data-ttu-id="51067-103">Обновление объекта mobileAppCategory</span><span class="sxs-lookup"><span data-stu-id="51067-103">Update mobileAppCategory</span></span>
+# <a name="update-mobileappcategory"></a><span data-ttu-id="bfa56-103">Обновление объекта mobileAppCategory</span><span class="sxs-lookup"><span data-stu-id="bfa56-103">Update mobileAppCategory</span></span>
 
-> <span data-ttu-id="51067-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="51067-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bfa56-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bfa56-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="51067-105">Обновление свойств объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="51067-105">Update the properties of a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
+<span data-ttu-id="bfa56-105">Обновление свойств объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="bfa56-105">Update the properties of a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="51067-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="51067-106">Prerequisites</span></span>
-<span data-ttu-id="51067-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51067-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="bfa56-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="bfa56-106">Prerequisites</span></span>
+<span data-ttu-id="bfa56-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bfa56-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="51067-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="51067-109">Permission type</span></span>|<span data-ttu-id="51067-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="51067-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="bfa56-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bfa56-109">Permission type</span></span>|<span data-ttu-id="bfa56-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="bfa56-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="51067-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="51067-111">Delegated (work or school account)</span></span>|<span data-ttu-id="51067-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51067-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="51067-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="51067-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="51067-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="51067-114">Not supported.</span></span>|
-|<span data-ttu-id="51067-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="51067-115">Application</span></span>|<span data-ttu-id="51067-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="51067-116">Not supported.</span></span>|
+|<span data-ttu-id="bfa56-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bfa56-111">Delegated (work or school account)</span></span>|<span data-ttu-id="bfa56-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bfa56-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="bfa56-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bfa56-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bfa56-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bfa56-114">Not supported.</span></span>|
+|<span data-ttu-id="bfa56-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bfa56-115">Application</span></span>|<span data-ttu-id="bfa56-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bfa56-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="51067-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="51067-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bfa56-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bfa56-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,32 +37,32 @@ PATCH /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="51067-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="51067-118">Request headers</span></span>
-|<span data-ttu-id="51067-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="51067-119">Header</span></span>|<span data-ttu-id="51067-120">Значение</span><span class="sxs-lookup"><span data-stu-id="51067-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bfa56-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bfa56-118">Request headers</span></span>
+|<span data-ttu-id="bfa56-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bfa56-119">Header</span></span>|<span data-ttu-id="bfa56-120">Значение</span><span class="sxs-lookup"><span data-stu-id="bfa56-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="51067-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="51067-121">Authorization</span></span>|<span data-ttu-id="51067-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="51067-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="51067-123">Accept</span><span class="sxs-lookup"><span data-stu-id="51067-123">Accept</span></span>|<span data-ttu-id="51067-124">application/json</span><span class="sxs-lookup"><span data-stu-id="51067-124">application/json</span></span>|
+|<span data-ttu-id="bfa56-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bfa56-121">Authorization</span></span>|<span data-ttu-id="bfa56-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bfa56-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="bfa56-123">Accept</span><span class="sxs-lookup"><span data-stu-id="bfa56-123">Accept</span></span>|<span data-ttu-id="bfa56-124">application/json</span><span class="sxs-lookup"><span data-stu-id="bfa56-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="51067-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="51067-125">Request body</span></span>
-<span data-ttu-id="51067-126">В тексте запроса добавьте представление объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="51067-126">In the request body, supply a JSON representation for the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bfa56-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bfa56-125">Request body</span></span>
+<span data-ttu-id="bfa56-126">В тексте запроса добавьте представление объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bfa56-126">In the request body, supply a JSON representation for the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
 
-<span data-ttu-id="51067-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="51067-127">The following table shows the properties that are required when you create the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span></span>
+<span data-ttu-id="bfa56-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="bfa56-127">The following table shows the properties that are required when you create the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span></span>
 
-|<span data-ttu-id="51067-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="51067-128">Property</span></span>|<span data-ttu-id="51067-129">Тип</span><span class="sxs-lookup"><span data-stu-id="51067-129">Type</span></span>|<span data-ttu-id="51067-130">Описание</span><span class="sxs-lookup"><span data-stu-id="51067-130">Description</span></span>|
+|<span data-ttu-id="bfa56-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="bfa56-128">Property</span></span>|<span data-ttu-id="bfa56-129">Тип</span><span class="sxs-lookup"><span data-stu-id="bfa56-129">Type</span></span>|<span data-ttu-id="bfa56-130">Описание</span><span class="sxs-lookup"><span data-stu-id="bfa56-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="51067-131">id</span><span class="sxs-lookup"><span data-stu-id="51067-131">id</span></span>|<span data-ttu-id="51067-132">String</span><span class="sxs-lookup"><span data-stu-id="51067-132">String</span></span>|<span data-ttu-id="51067-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="51067-133">The key of the entity.</span></span>|
-|<span data-ttu-id="51067-134">displayName</span><span class="sxs-lookup"><span data-stu-id="51067-134">displayName</span></span>|<span data-ttu-id="51067-135">String</span><span class="sxs-lookup"><span data-stu-id="51067-135">String</span></span>|<span data-ttu-id="51067-136">Имя категории приложений.</span><span class="sxs-lookup"><span data-stu-id="51067-136">The name of the app category.</span></span>|
-|<span data-ttu-id="51067-137">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="51067-137">lastModifiedDateTime</span></span>|<span data-ttu-id="51067-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="51067-138">DateTimeOffset</span></span>|<span data-ttu-id="51067-139">Дата и время последнего изменения объекта mobileAppCategory.</span><span class="sxs-lookup"><span data-stu-id="51067-139">The date and time the mobileAppCategory was last modified.</span></span>|
+|<span data-ttu-id="bfa56-131">id</span><span class="sxs-lookup"><span data-stu-id="bfa56-131">id</span></span>|<span data-ttu-id="bfa56-132">String</span><span class="sxs-lookup"><span data-stu-id="bfa56-132">String</span></span>|<span data-ttu-id="bfa56-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="bfa56-133">The key of the entity.</span></span>|
+|<span data-ttu-id="bfa56-134">displayName</span><span class="sxs-lookup"><span data-stu-id="bfa56-134">displayName</span></span>|<span data-ttu-id="bfa56-135">Строка</span><span class="sxs-lookup"><span data-stu-id="bfa56-135">String</span></span>|<span data-ttu-id="bfa56-136">Имя категории приложений.</span><span class="sxs-lookup"><span data-stu-id="bfa56-136">The name of the app category.</span></span>|
+|<span data-ttu-id="bfa56-137">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="bfa56-137">lastModifiedDateTime</span></span>|<span data-ttu-id="bfa56-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bfa56-138">DateTimeOffset</span></span>|<span data-ttu-id="bfa56-139">Дата и время последнего изменения объекта mobileAppCategory.</span><span class="sxs-lookup"><span data-stu-id="bfa56-139">The date and time the mobileAppCategory was last modified.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="51067-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="51067-140">Response</span></span>
-<span data-ttu-id="51067-141">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="51067-141">If successful, this method returns a `200 OK` response code and an updated [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bfa56-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="bfa56-140">Response</span></span>
+<span data-ttu-id="bfa56-141">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="bfa56-141">If successful, this method returns a `200 OK` response code and an updated [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="51067-142">Пример</span><span class="sxs-lookup"><span data-stu-id="51067-142">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bfa56-142">Пример</span><span class="sxs-lookup"><span data-stu-id="bfa56-142">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="51067-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="51067-143">Request</span></span>
-<span data-ttu-id="51067-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="51067-144">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="bfa56-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="bfa56-143">Request</span></span>
+<span data-ttu-id="bfa56-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bfa56-144">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 Content-type: application/json
@@ -73,8 +74,8 @@ Content-length: 99
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="51067-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="51067-145">Response</span></span>
-<span data-ttu-id="51067-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="51067-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="bfa56-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="bfa56-145">Response</span></span>
+<span data-ttu-id="bfa56-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bfa56-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

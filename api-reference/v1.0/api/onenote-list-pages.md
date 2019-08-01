@@ -4,26 +4,27 @@ description: Получение списка объектов Page.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 72956bafbd526c3391e68358aad2104e51b29773
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562134"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976455"
 ---
-# <a name="list-pages"></a><span data-ttu-id="d92b0-103">Список страниц</span><span class="sxs-lookup"><span data-stu-id="d92b0-103">List pages</span></span>
+# <a name="list-pages"></a><span data-ttu-id="c9aa3-103">Список страниц</span><span class="sxs-lookup"><span data-stu-id="c9aa3-103">List pages</span></span>
 
-<span data-ttu-id="d92b0-104">Получение списка объектов [Page](../resources/page.md) .</span><span class="sxs-lookup"><span data-stu-id="d92b0-104">Retrieve a list of [page](../resources/page.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d92b0-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d92b0-105">Permissions</span></span>
-<span data-ttu-id="d92b0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d92b0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c9aa3-104">Получение списка объектов [Page](../resources/page.md) .</span><span class="sxs-lookup"><span data-stu-id="c9aa3-104">Retrieve a list of [page](../resources/page.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c9aa3-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c9aa3-105">Permissions</span></span>
+<span data-ttu-id="c9aa3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9aa3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d92b0-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d92b0-108">Permission type</span></span>      | <span data-ttu-id="d92b0-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d92b0-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c9aa3-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c9aa3-108">Permission type</span></span>      | <span data-ttu-id="c9aa3-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c9aa3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d92b0-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d92b0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d92b0-111">Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="d92b0-111">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d92b0-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d92b0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d92b0-113">Notes. Read, Notes. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d92b0-113">Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="d92b0-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d92b0-114">Application</span></span> | <span data-ttu-id="d92b0-115">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d92b0-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="c9aa3-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c9aa3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9aa3-111">Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="c9aa3-111">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c9aa3-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c9aa3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9aa3-113">Notes. Read, Notes. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9aa3-113">Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="c9aa3-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c9aa3-114">Application</span></span> | <span data-ttu-id="c9aa3-115">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c9aa3-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d92b0-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d92b0-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c9aa3-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c9aa3-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/pages
@@ -31,34 +32,34 @@ GET /users/{id | userPrincipalName}/onenote/pages
 GET /groups/{id}/onenote/pages
 GET /sites/{id}/onenote/pages
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d92b0-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d92b0-117">Optional query parameters</span></span>
-<span data-ttu-id="d92b0-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d92b0-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c9aa3-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c9aa3-117">Optional query parameters</span></span>
+<span data-ttu-id="c9aa3-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="d92b0-119">Запрос по умолчанию для страниц возвращает 20 первых страниц, упорядоченных по `lastModifiedTime desc`.</span><span class="sxs-lookup"><span data-stu-id="d92b0-119">The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`.</span></span> <span data-ttu-id="d92b0-120">Если запрос по умолчанию возвращает более 20 страниц, ответ содержит элемент `@odata.nextLink` , который можно использовать для страницы в наборе результатов.</span><span class="sxs-lookup"><span data-stu-id="d92b0-120">If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set.</span></span> <span data-ttu-id="d92b0-121">Максимальное количество страниц, возвращаемых для `top` запроса — 100.</span><span class="sxs-lookup"><span data-stu-id="d92b0-121">The maximum number of pages returned for a `top` request is 100.</span></span>
+<span data-ttu-id="c9aa3-119">Запрос по умолчанию для страниц возвращает 20 первых страниц, упорядоченных по `lastModifiedTime desc`.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-119">The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`.</span></span> <span data-ttu-id="c9aa3-120">Если запрос по умолчанию возвращает более 20 страниц, ответ содержит элемент `@odata.nextLink` , который можно использовать для страницы в наборе результатов.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-120">If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set.</span></span> <span data-ttu-id="c9aa3-121">Максимальное количество страниц, возвращаемых для `top` запроса — 100.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-121">The maximum number of pages returned for a `top` request is 100.</span></span>
 
-<span data-ttu-id="d92b0-122">`parentSection` Ответ по умолчанию разворачивается и выбирает свойства `id`раздела `displayName`, а `self` также свойства.</span><span class="sxs-lookup"><span data-stu-id="d92b0-122">The default response expands `parentSection` and selects the section's `id`, `displayName`, and `self` properties.</span></span> <span data-ttu-id="d92b0-123">Допустимые `expand` значения для страниц `parentNotebook` : `parentSection`и.</span><span class="sxs-lookup"><span data-stu-id="d92b0-123">Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
+<span data-ttu-id="c9aa3-122">`parentSection` Ответ по умолчанию разворачивается и выбирает свойства `id`раздела `displayName`, а `self` также свойства.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-122">The default response expands `parentSection` and selects the section's `id`, `displayName`, and `self` properties.</span></span> <span data-ttu-id="c9aa3-123">Допустимые `expand` значения для страниц `parentNotebook` : `parentSection`и.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-123">Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d92b0-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d92b0-124">Request headers</span></span>
-| <span data-ttu-id="d92b0-125">Имя</span><span class="sxs-lookup"><span data-stu-id="d92b0-125">Name</span></span>       | <span data-ttu-id="d92b0-126">Тип</span><span class="sxs-lookup"><span data-stu-id="d92b0-126">Type</span></span> | <span data-ttu-id="d92b0-127">Описание</span><span class="sxs-lookup"><span data-stu-id="d92b0-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c9aa3-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c9aa3-124">Request headers</span></span>
+| <span data-ttu-id="c9aa3-125">Имя</span><span class="sxs-lookup"><span data-stu-id="c9aa3-125">Name</span></span>       | <span data-ttu-id="c9aa3-126">Тип</span><span class="sxs-lookup"><span data-stu-id="c9aa3-126">Type</span></span> | <span data-ttu-id="c9aa3-127">Описание</span><span class="sxs-lookup"><span data-stu-id="c9aa3-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="d92b0-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="d92b0-128">Authorization</span></span>  | <span data-ttu-id="d92b0-129">string</span><span class="sxs-lookup"><span data-stu-id="d92b0-129">string</span></span>  | <span data-ttu-id="d92b0-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d92b0-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d92b0-132">Accept</span><span class="sxs-lookup"><span data-stu-id="d92b0-132">Accept</span></span> | <span data-ttu-id="d92b0-133">string</span><span class="sxs-lookup"><span data-stu-id="d92b0-133">string</span></span> | `application/json` |
+| <span data-ttu-id="c9aa3-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="c9aa3-128">Authorization</span></span>  | <span data-ttu-id="c9aa3-129">string</span><span class="sxs-lookup"><span data-stu-id="c9aa3-129">string</span></span>  | <span data-ttu-id="c9aa3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c9aa3-132">Accept</span><span class="sxs-lookup"><span data-stu-id="c9aa3-132">Accept</span></span> | <span data-ttu-id="c9aa3-133">строка</span><span class="sxs-lookup"><span data-stu-id="c9aa3-133">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="d92b0-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d92b0-134">Request body</span></span>
-<span data-ttu-id="d92b0-135">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d92b0-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c9aa3-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c9aa3-134">Request body</span></span>
+<span data-ttu-id="c9aa3-135">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d92b0-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="d92b0-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c9aa3-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="c9aa3-136">Response</span></span>
 
-<span data-ttu-id="d92b0-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Page](../resources/page.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d92b0-137">If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d92b0-138">Пример</span><span class="sxs-lookup"><span data-stu-id="d92b0-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d92b0-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="d92b0-139">Request</span></span>
-<span data-ttu-id="d92b0-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d92b0-140">Here is an example of the request.</span></span>
+<span data-ttu-id="c9aa3-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Page](../resources/page.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-137">If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c9aa3-138">Пример</span><span class="sxs-lookup"><span data-stu-id="c9aa3-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c9aa3-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9aa3-139">Request</span></span>
+<span data-ttu-id="c9aa3-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-140">Here is an example of the request.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
-##### <a name="response"></a><span data-ttu-id="d92b0-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="d92b0-141">Response</span></span>
-<span data-ttu-id="d92b0-p105">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d92b0-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
+##### <a name="response"></a><span data-ttu-id="c9aa3-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9aa3-141">Response</span></span>
+<span data-ttu-id="c9aa3-p105">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c9aa3-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
