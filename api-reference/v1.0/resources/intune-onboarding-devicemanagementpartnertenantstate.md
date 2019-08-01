@@ -4,12 +4,13 @@ description: Состояние партнера этого клиента.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c14c1806e65ba180837082288b76e047055f8a9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 103fd9149e7bc17a7f72a5af5ab002f136e616d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583559"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037389"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>тип перечисления Девицеманажементпартнертенантстате
 
@@ -21,11 +22,11 @@ ms.locfileid: "32583559"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние партнера неизвестно.|
-|выходе|1 |Партнер недоступен.|
-|enabled|2 |Партнер включен.|
-|нулем|3 |Подключение к партнеру завершается.|
-|клоняет|4 |Партнерские сообщения отклоняются.|
-|не отвечает|5 |Партнер не отвечает.|
+|выходе|1,1|Партнер недоступен.|
+|enabled|2|Партнер включен.|
+|нулем|4|Подключение к партнеру завершается.|
+|клоняет|SP4|Партнерские сообщения отклоняются.|
+|не отвечает|17:00|Партнер не отвечает.|
 
 
 

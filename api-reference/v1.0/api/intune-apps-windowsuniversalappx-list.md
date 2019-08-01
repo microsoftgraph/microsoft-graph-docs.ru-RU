@@ -4,12 +4,13 @@ description: Список свойств и связей объектов window
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7018bf105e166f7b796a2bf3a12dfeca844daac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c77895fb52957bc09efc6d2df4a4fd75d6e08ba9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575410"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36001945"
 ---
 # <a name="list-windowsuniversalappxs"></a>Перечисление объектов windowsUniversalAppX
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsUniversalAppX](../resources/intune-apps-windowsuniversalappx.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

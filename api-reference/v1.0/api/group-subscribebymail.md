@@ -4,12 +4,13 @@ description: Вызов этого метода позволит текущем�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 73c340832b3cb9ae52146a0af79f27e873a7ddc9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: ba29352f6ce0b913f0a9af70484a123952945343
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885381"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014734"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 Вызов этого метода позволит текущему пользователю получать уведомления электронной почты о новых записях, событиях и файлах в этой группе. Поддерживается только для групп Office 365.

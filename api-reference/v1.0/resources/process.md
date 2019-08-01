@@ -2,12 +2,15 @@
 title: Тип ресурса "процесс"
 description: Содержит сведения о состоянии процесса, связанного с оповещением.
 localization_priority: Normal
-ms.openlocfilehash: 0b4207c1780dfd6327ceb67e837f793341e609ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: ccaf2e3048fc26573e9599a515aabf391dda6d58
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579876"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035086"
 ---
 # <a name="process-resource-type"></a>Тип ресурса "процесс"
 

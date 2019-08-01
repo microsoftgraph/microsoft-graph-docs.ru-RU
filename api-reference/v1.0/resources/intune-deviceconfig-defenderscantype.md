@@ -4,12 +4,13 @@ description: Возможные значения для типа "сканиро
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52d1002c7a242f0aca203d84c4d7d16763e5debd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 6d1d5f13e35b5a271393753abf852eee29d32337
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534306"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031859"
 ---
 # <a name="defenderscantype-enum-type"></a>тип перечисления Дефендерскантипе
 
@@ -21,9 +22,9 @@ ms.locfileid: "32534306"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|активирован|1 |Сканирование системы отключено.|
-|Quick|2 |Быстрая проверка системы.|
-|полный|3 |Полное сканирование системы.|
+|активирован|1,1|Сканирование системы отключено.|
+|Quick|2|Быстрая проверка системы.|
+|полный|4|Полное сканирование системы.|
 
 
 

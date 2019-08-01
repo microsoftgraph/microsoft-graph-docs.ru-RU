@@ -4,12 +4,13 @@ description: Отчеты об использовании устройств с�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 8eb1f5896a261610eb5400611a78f5ac75952256
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: f84665f0840be87d14e2caafbeaa1d7edc8d6aa5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565900"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034120"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Отчеты об использовании устройств со Skype для бизнеса
 

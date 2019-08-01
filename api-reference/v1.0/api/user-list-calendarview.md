@@ -2,14 +2,15 @@
 title: Список calendarView
 description: 'Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря пользователя, которое определяется заданным диапазоном времени. '
 localization_priority: Priority
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 798eecc72d64d9f579dcfda4eb6c742e5824ce2a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ec5f3b405ff4c000451f4659fddfc6892bd7d01c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886058"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027001"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 

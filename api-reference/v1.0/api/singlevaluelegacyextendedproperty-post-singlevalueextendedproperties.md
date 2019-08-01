@@ -1,30 +1,33 @@
 ---
-title: Создание однозначного расширенного свойства
+title: Создание расширенного свойства с одним значением
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
-ms.openlocfilehash: cf98c3e2b43192e5c8b636d2f67fc471af82da6b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c90c8fca501e813635e3e3b208c1a5be6808b728
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520825"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975594"
 ---
-# <a name="create-single-value-extended-property"></a>Создание однозначного расширенного свойства
+# <a name="create-single-value-extended-property"></a>Создание расширенного свойства с одним значением
 
 Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. 
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
 - [contactFolder](../resources/contactfolder.md). 
 - [event](../resources/event.md)
-- [mailFolder](../resources/mailfolder.md);
+- [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [calendar](../resources/calendar.md) для групп
+- [calendar](../resources/calendar.md) для групп;
 - group [event](../resources/event.md);
 - [post](../resources/post.md) для групп. 
 
@@ -39,10 +42,10 @@ ms.locfileid: "32520825"
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md). | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| [calendar](../resources/calendar.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [calendar](../resources/calendar.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
-| group [post](../resources/post.md). | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
-| [mailFolder](../resources/mailfolder.md); | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [post](../resources/post.md) для групп. | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -117,7 +120,7 @@ PATCH /groups/{id}/events/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Предоставьте тело JSON каждого объекта [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) в свойстве коллекции **singleValueExtendedProperties** для экземпляра ресурса.
 
@@ -137,7 +140,7 @@ PATCH /groups/{id}/events/{id}
 В результате успешной операции создания в существующем экземпляре ресурса возвращается код `200 OK`. 
 
 
-#### <a name="response-body"></a>Текст ответа
+#### <a name="response-body"></a>Текст отклика
 
 При создании расширенного свойства отклик будет включать только новый или существующий экземпляр (он будет без нового расширенного свойства). Чтобы отобразить только что созданное расширенное свойство, [примените к экземпляру, содержащему это расширенное свойство, параметр $expand](../api/singlevaluelegacyextendedproperty-get.md).
 

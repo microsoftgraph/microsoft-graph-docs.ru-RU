@@ -4,12 +4,13 @@ description: Класс, содержащий свойства события а
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa86724affd94d3eaaf6584ce3e70dc8266a5f00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 18d56205f0602016f4d2ecdd2587b06ae5c676fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028856"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -31,7 +32,7 @@ ms.locfileid: "32584812"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|

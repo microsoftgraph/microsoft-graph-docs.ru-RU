@@ -4,12 +4,13 @@ description: Представляет объект заголовка диагр
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f6c843e24839b51da67bda5ed3484a32c868ae54
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b2c65a53dc5ff6ebcbc91438ff0e0e8d55bc3647
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032902"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
@@ -30,7 +31,7 @@ ms.locfileid: "32584995"
 |text|string|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[Воркбукчарттитлеформат](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|

@@ -4,12 +4,13 @@ description: Создание копии команды. Эта операция
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c3b6b8e9615491275f981a759fabc4ed6a683373
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe33df030e5f92ee9780c22e1f73b6aa88a021a8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534726"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024282"
 ---
 # <a name="clone-a-team"></a>Клонирование команды
 
@@ -51,7 +52,7 @@ POST /teams/{id}/clone
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -62,7 +63,7 @@ POST /teams/{id}/clone
 |Партстоклоне| [Клонаблетеампартс](../resources/clonableteamparts.md) |Разделенный запятыми список частей, которые необходимо клонировать. Юридическими частями являются "приложения, вкладки, параметры, каналы, элементы".|
 |visibility|[объекта teamvisibilitytype](../resources/teamvisibilitytype.md) необязательно| Задает видимость группы. Возможные значения: **Private**, **Public**. Если параметр Visibility не указан, то видимость будет скопирована из исходной группы или группы. Если группа является клонированной, параметр видимости **** игнорируется, и для отображения новой группы будет задано значение значение hiddenmembership.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвратит код `202 Accepted` отклика с расположением: Header, указывающий на ресурс [Operation](../resources/teamsasyncoperation.md) .
 После завершения операции ресурс Operation сообщит вам идентификатор созданной команды.

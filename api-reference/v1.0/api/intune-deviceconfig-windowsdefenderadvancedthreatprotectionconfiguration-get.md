@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windowsD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37b03894bd9ec8607d0bc8651a1282867d2685af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 989fbdae22e3b95e208cef8e56f38394fa2e2cbe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018843"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>Получение объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -44,10 +45,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -5,16 +5,17 @@ title: Тип ресурса Акцессактион
 description: Объект Акцессактион предоставляет сведения о доступе к элементу.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: eb2cb0a0c8fd78a1977320a3a02f9de5eb31946c
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: e27c7513e86932569849cdf794ab55ef4b40b039
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970790"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033280"
 ---
 # <a name="accessaction-resource-type"></a>Тип ресурса Акцессактион
 
-Присутствие ресурса **акцессактион** в [**itemActivity**] [ activity] указывает на то, что действие получило доступ к элементу.
+Присутствие ресурса **акцессактион** в [**itemActivity**][activity] указывает на то, что действие получило доступ к элементу.
 
 >**Примечание:** Записи действий Access доступны только в SharePoint и OneDrive для бизнеса.
 

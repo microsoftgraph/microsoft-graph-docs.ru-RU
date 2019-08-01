@@ -4,16 +4,17 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: columnLink
 localization_priority: Normal
-ms.openlocfilehash: 435696cc596f73830104ea8ec0619bf40a462d62
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс columnLink для объекта contentType связывает ресурс columnDefinition сайта с соответствующим типом контента.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d3914c4b3cfe18d2dead778116b86134caaf6caa
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029696"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **columnLink** для объекта [contentType][] связывает ресурс **columnDefinition** сайта с соответствующим типом контента.
 
@@ -22,7 +23,10 @@ ms.locfileid: "32565788"
 ## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление ресурса **columnLink** в формате JSON.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {
@@ -38,13 +42,10 @@ ms.locfileid: "32565788"
 | **id**        | string | Уникальный идентификатор столбца.
 | **name**      | string | Имя столбца в этом типе контента.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnLink",
-  "suppressions": []
-}
--->
+  "tocPath": "Resources/ColumnLink"
+} -->

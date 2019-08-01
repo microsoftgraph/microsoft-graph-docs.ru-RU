@@ -5,12 +5,13 @@ title: Ресурс listItem
 description: Этот ресурс представляет элемент объекта list в SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 873ad5961c9cadb444c6fe9f2afec69853cc5d85
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 883e7257b55826abf5cf60197c7854161f568fa5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968802"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036472"
 ---
 # <a name="listitem-resource"></a>Ресурс listItem
 

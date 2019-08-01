@@ -2,12 +2,15 @@
 title: Создание объекта inferenceClassificationOverride
 description: 'Создание переопределения для отправителя, указанному по SMTP-адресу. Будущие сообщения с этого SMTP-адреса будут согласованы. '
 localization_priority: Normal
-ms.openlocfilehash: 967f8794a5effa68fc42dae578d4dcf0034aabf2
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: bd9c86e3a283ec63c81eeac9bc19f3968d45d5d6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932479"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014391"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Создание объекта inferenceClassificationOverride
 

@@ -4,12 +4,13 @@ description: Получение списка групп разделов из у
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: b6915467feea73a20b4176c01223f94fb7871bf9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c5c4d292142c65ca5af962892816e8c3824dd7f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892778"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022714"
 ---
 # <a name="list-sectiongroups"></a>Список sectionGroups
 

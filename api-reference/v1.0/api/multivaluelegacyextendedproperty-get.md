@@ -2,12 +2,15 @@
 title: Получение объекта multiValueLegacyExtendedProperty
 description: Разверните узел ".
 localization_priority: Normal
-ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: c8ca94f253b2949dc25c6cacf8ccdef516827a9d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585316"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022805"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
@@ -17,16 +20,16 @@ ms.locfileid: "32585316"
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
 - [contactFolder](../resources/contactfolder.md). 
 - [event](../resources/event.md)
-- [mailFolder](../resources/mailfolder.md);
+- [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [calendar](../resources/calendar.md) для групп
+- [calendar](../resources/calendar.md) для групп;
 - group [event](../resources/event.md);
 - [post](../resources/post.md) для групп.
 
@@ -41,10 +44,10 @@ ms.locfileid: "32585316"
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md). | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| [calendar](../resources/calendar.md) для групп | Group.Read.All | Не поддерживается | Не поддерживается |
+| [calendar](../resources/calendar.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.Read.All | Не поддерживается | Не поддерживается |
-| group [post](../resources/post.md). | Group.Read.All | Не поддерживается | Group.Read.All |
-| [mailFolder](../resources/mailfolder.md); | Mail.Read | Mail.Read | Mail.Read |
+| [post](../resources/post.md) для групп. | Group.Read.All | Не поддерживается | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
  
 ## <a name="http-request"></a>HTTP-запрос
@@ -114,7 +117,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

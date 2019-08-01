@@ -4,12 +4,13 @@ description: Представляет целевые типы ресурсов, 
 localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
-ms.openlocfilehash: 33a381d6088245be235f37549184183443fe3237
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+doc_type: resourcePageType
+ms.openlocfilehash: e21e2fad07dca15c5be42b8de29aa5c791c50d69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629217"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033903"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -26,7 +27,7 @@ ms.locfileid: "33629217"
 |groupType|String|Если **** для `Group`параметра Type задано значение, это указывает тип группы.|
 |modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

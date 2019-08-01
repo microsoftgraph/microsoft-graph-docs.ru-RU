@@ -3,12 +3,14 @@ title: Тип ресурса Комплианцеинформатион
 description: Этот ресурс содержит данные соответствия требованиям, связанные с контролем безопасности по показателю.
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 85fef478a8dcc0f3196355d89f0a20ef0cd7a5b4
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9fc47940b8a9f249e66092ee016453a9eb5152ca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629308"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032860"
 ---
 #  <a name="complianceinformation-resource-type"></a>Тип ресурса Комплианцеинформатион
 
@@ -21,7 +23,7 @@ ms.locfileid: "33629308"
 |Цертификатионнаме|String| Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
 |Цертификатионконтролс|Коллекция [цертификатионконтрол](certificationcontrol.md)|Коллекция элементов управления сертификацией, связанных с сертификацией|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

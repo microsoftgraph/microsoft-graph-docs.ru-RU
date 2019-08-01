@@ -4,12 +4,14 @@ ms.author: dspektor
 title: Получение конечной точки WebSocket
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 131b8ebd7cb26185b161e5f6dca776284ee19fe5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Позволяет получать уведомления об изменении почти в режиме реального времени для диска с помощью socket.io.
+doc_type: apiPageType
+ms.openlocfilehash: a412dd24ab95762002afb1cbfff979112da23096
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881812"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016463"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 

@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта iosVppEB
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d965e3a526c63841cca2338b53fa04cb6ff49b18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6af41c0c490073f84e5633ae966c3c18c6883ff4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577086"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013558"
 ---
 # <a name="get-iosvppebook"></a>Get iosVppEBook
 
@@ -44,7 +45,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

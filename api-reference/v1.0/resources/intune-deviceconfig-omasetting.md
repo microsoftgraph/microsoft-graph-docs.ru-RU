@@ -4,12 +4,13 @@ description: Определение параметра OMA.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d0a69c10f1f0075caee48276bdbc37f6d616f22
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b5a2d2152d107050f655d43dab2cb2c65f114868
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549554"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031348"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -20,7 +21,7 @@ ms.locfileid: "32549554"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |description|String|Описание.|
 |omaUri|String|OMA.|
 

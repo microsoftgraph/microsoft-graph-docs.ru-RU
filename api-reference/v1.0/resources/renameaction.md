@@ -5,16 +5,17 @@ title: Тип ресурса renameAction
 description: Объект renameAction предоставляет сведения о действии, которое переименовало элемент.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bce040130d74b7977fc1f988a34edde674f9e0d4
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 2949a3875d657dba3c64b6753855476c1d66bfb3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970803"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034722"
 ---
 # <a name="renameaction-resource-type"></a>Тип ресурса renameAction
 
-Присутствие ресурса **renameAction** в [**itemActivity**] [ activity] указывает, что действие переименовало элемент.
+Присутствие ресурса **renameAction** в [**itemActivity**][activity] указывает, что действие переименовало элемент.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

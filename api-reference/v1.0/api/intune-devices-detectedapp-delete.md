@@ -4,12 +4,13 @@ description: Удаляет объект detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d68a0e2ff298efb852dfd41639ae15354eb175de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7192d562d6a3390a5d45623ddd4529794fe6b3be
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541985"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018731"
 ---
 # <a name="delete-detectedapp"></a>Delete detectedApp
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

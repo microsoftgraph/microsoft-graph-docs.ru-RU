@@ -4,12 +4,13 @@ description: Обновление содержимого страницы OneNot
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 1c5b77ddbc236dc78242397702a9d43294bea0eb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6d29cf7bab3ba562278e32a29c750edf0e0c6ac2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886543"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976268"
 ---
 # <a name="update-page"></a>Обновление страницы
 

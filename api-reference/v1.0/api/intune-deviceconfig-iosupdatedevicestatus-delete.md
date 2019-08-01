@@ -4,12 +4,13 @@ description: Удаляет объект iosUpdateDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc1030d43de700f43809a0f94a8c945dc03cf49a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 49eb8330028f3ffbdafced80e01ad1397182b98a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549848"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017191"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>Удаление объекта iosUpdateDeviceStatus
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -4,12 +4,13 @@ description: Создание объекта windowsInformationProtectionPolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 646069f4e1f9ea863ddf6bc83e1dc2397322b121
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+doc_type: apiPageType
+ms.openlocfilehash: fee5ff70c094207c364d2e43f83c6e9e36c5e961
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639033"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020516"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>Create windowsInformationProtectionPolicy
 

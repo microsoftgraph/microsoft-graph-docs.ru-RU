@@ -2,12 +2,15 @@
 title: Тип ресурсов timeConstraint
 description: Запрещает предложения по времени собранию определенным часам и дням недели в соответствии с заданным характером активности и временем открытия.
 localization_priority: Normal
-ms.openlocfilehash: b6e239abbd0d9f7b4f83df4a60625a2f88131476
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7da2a3a2c712cdbe1fc3fb961781e35099a565d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456960"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033616"
 ---
 # <a name="timeconstraint-resource-type"></a>Тип ресурсов timeConstraint
 

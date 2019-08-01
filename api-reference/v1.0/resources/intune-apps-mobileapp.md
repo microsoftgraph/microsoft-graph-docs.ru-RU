@@ -4,12 +4,13 @@ description: Абстрактный класс, содержащий базов�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91167967a543ea4556c1704a2bba4ec9a10a4c3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 08bc3cb0c6b1a7b815e30179aa79861b08ad3b15
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557896"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028954"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -29,7 +30,7 @@ ms.locfileid: "32557896"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Администратор предоставил или импортировал название приложения.|
-|description|String|Описание приложения.|
+|description|Строка|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
@@ -42,7 +43,7 @@ ms.locfileid: "32557896"
 |notes|String|Заметки для приложения.|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|

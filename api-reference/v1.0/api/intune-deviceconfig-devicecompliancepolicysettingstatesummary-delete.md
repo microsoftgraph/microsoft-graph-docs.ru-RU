@@ -4,12 +4,13 @@ description: Удаляет объект deviceCompliancePolicySettingStateSumma
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a33ec4629b98ab5824a4c7b25e6c268d9c980d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c098f13523484a5e0f68204fed7cd6feac27b37c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550625"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997738"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Удаление объекта deviceCompliancePolicySettingStateSummary
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

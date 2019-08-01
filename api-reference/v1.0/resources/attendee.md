@@ -2,12 +2,15 @@
 title: Тип ресурса attendee
 description: Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
 localization_priority: Normal
-ms.openlocfilehash: 89c289a342bb0b761bed982f88d0f47470eaa237
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d679704cf884276718186c289ded0c8d5bb05df
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569419"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033105"
 ---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
@@ -22,7 +25,7 @@ ms.locfileid: "32569419"
 |type|String|Тип участника: `required`, `optional`, `resource`.|
 |emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

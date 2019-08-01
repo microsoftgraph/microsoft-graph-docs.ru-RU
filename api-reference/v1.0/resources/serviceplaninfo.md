@@ -2,12 +2,15 @@
 title: Тип ресурса servicePlanInfo
 description: Содержит сведения о плане обслуживания, связанном с подписанным SKU. Свойство **servicePlans** объекта subscribedSku представляет собой коллекцию объектов **servicePlanInfo**.
 localization_priority: Normal
-ms.openlocfilehash: 837170881c7c093d26c5b59662e20e87b399a029
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 5aa721ce300338e68ca284f4f4ed11b1f66faad2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034386"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 

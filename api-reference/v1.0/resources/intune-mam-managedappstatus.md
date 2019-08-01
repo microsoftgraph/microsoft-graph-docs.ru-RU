@@ -4,12 +4,13 @@ description: Представляет состояние защиты и кон�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bc6982161e204a4f2e5cac38b62d351ab417482
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: eef17c260d868b05280a41f14e797c928c432002
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037893"
 ---
 # <a name="managedappstatus-resource-type"></a>Тип ресурса managedAppStatus
 
@@ -26,9 +27,9 @@ ms.locfileid: "32465197"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Понятное имя отчета о состоянии.|
+|displayName|Строка|Понятное имя отчета о состоянии.|
 |id|String|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Отношения
 Нет

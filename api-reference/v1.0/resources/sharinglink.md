@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс SharingLink группирует связанные ссылками элементы данных в единую структуру.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 01d27971cd04ff91333d25240e4d1d517e05cec5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549666"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034253"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса SharingLink
 
@@ -17,7 +20,7 @@ ms.locfileid: "32549666"
 
 Если у ресурса [**Permission**](permission.md) имеется аспект **sharingLink**, значение которого отлично от NULL, разрешение представляет ссылку для совместного доступа (а не разрешение, предоставляемое пользователю или группе).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -42,10 +45,10 @@ ms.locfileid: "32549666"
 | Свойство    | Тип          | Описание
 |:------------|:--------------|:-------------------------------------
 | application | [identity][]  | Приложение, с которым сопоставлена ссылка.
-| type        | Строка        | Тип созданной ссылки.
-| scope       | Строка        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
+| type        | String        | Тип созданной ссылки.
+| scope       | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
 | webHtml     | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
-| webUrl      | String        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
+| webUrl      | Строка        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 
 [Identity]: identity.md
 
