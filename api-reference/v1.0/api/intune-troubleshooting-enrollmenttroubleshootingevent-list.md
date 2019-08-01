@@ -4,12 +4,13 @@ description: Список свойств и связей объектов enroll
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 106fd47aba30b4df04a08485432dbbea67cb6f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8dd03acd651a4a54891a2f5245cff32e1ae308fd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576355"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023239"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Список объектов enrollmentTroubleshootingEvent
 
@@ -41,10 +42,10 @@ GET /deviceManagement/troubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) в теле отклика.
 
 ## <a name="example"></a>Пример

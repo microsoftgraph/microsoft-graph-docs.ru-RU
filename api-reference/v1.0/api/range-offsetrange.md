@@ -4,12 +4,13 @@ description: Возвращает объект, представляющий д�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 86db999cd39275ebb38c653e6dc4dda69fd87433
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fe1c368eff0c03df0fe454684139720ec8360ac5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525518"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025290"
 ---
 # <a name="range-offsetrange"></a>Range: OffsetRange
 
@@ -37,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/offsetRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

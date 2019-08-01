@@ -4,12 +4,13 @@ description: Обновление свойств объекта **plannerProgres
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 860d826dd559f757dff9107b9dfdca9b246f6b9b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 84ade6812990739f1939c50475617ef7adc632d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887054"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976063"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Обновление объекта plannerProgressTaskBoardTaskFormat
 

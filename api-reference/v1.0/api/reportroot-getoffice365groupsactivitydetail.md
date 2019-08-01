@@ -4,12 +4,13 @@ description: Получите сведения об активности в гр
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a1fd2fd17e65d508c6548e6f5cdeb4dae7984a9b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fbc81adb8b6f0a7df46d774876a5e196ce3c5a7c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893963"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022006"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 

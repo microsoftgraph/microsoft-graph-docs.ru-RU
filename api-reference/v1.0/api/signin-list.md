@@ -4,12 +4,13 @@ description: Описывает метод List ресурса SignIn (Entity) �
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b628abb986e04a137fb2fa50fe27d39a9390d580
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 6a1081b623bcd43d2c65e31e350168b700f98772
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891613"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024709"
 ---
 # <a name="list-signins"></a>Перечисление входов
 

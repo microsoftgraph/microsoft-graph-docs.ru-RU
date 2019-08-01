@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14105698ef39601b2c4b96df1163ae5439db9022
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 84fae520e9e60f5227981aefbdb04820b38d71b4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585199"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023596"
 ---
 # <a name="disconnect-action"></a>Действие disconnect
 
@@ -41,7 +42,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

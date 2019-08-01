@@ -4,12 +4,13 @@ description: Позволяет понять, как меняется колич
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 5d980efb4285a21e93545160cc3fdc309d60db9e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f9555eb2fc662bcff71f7ef900106a2b8635c422
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891821"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025199"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 

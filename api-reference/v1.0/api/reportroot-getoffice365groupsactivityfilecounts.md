@@ -4,12 +4,13 @@ description: Узнайте, сколько всего файлов на все�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: d92997010cf9a8e4f82fed98f521449b14f9d1e0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d5b46bfa6dbc6c13d97f64340d812df2931d0065
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884667"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025037"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 

@@ -4,16 +4,17 @@ description: 'Опубликуйте приложение в каталоге п
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1e5254d5d75ac2dbb2efa1882845bbfbd40fa291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521763"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021160"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений Организации
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams. В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь `distributionMethod`  =  `organization`.
 
@@ -42,7 +43,7 @@ POST /appCatalogs/teamsApps
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | приложение/ZIP-индекс |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Полезные данные манифеста ZIP Teams. Для ZIP-файла приложения Teams [в разделе Create a App Package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
 
@@ -55,7 +56,7 @@ POST /appCatalogs/teamsApps
 ### <a name="request"></a>Запрос
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 
@@ -78,11 +79,3 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,13 @@ description: Выход от имени активного пользовате�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34fff1178f13fc675d3822701a63018479e4356f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5f37148835d7e16be3591a844a4a24fe9b7a128d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565473"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020992"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>Действие logoutSharedAppleDeviceActiveUser
 
@@ -43,7 +44,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

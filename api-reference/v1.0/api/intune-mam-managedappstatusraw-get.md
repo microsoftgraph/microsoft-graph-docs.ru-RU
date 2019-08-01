@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта managedA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 897d5398a87a2cb451f9c0cc5408aeb7c953478a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: bfa7e038ab6896b9fea0dabb4ddc5e3a37902812
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974887"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 
@@ -44,7 +45,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

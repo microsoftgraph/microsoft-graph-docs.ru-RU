@@ -3,12 +3,14 @@ title: Получение последних действий пользоват
 description: " Функцию. Служба будет запрашивать последние Historyitem, а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы."
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 8f33522988e405eb2f05e0a0b719a867690d111f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 63dc61730813cd218dc17cb019b46ef7ea8a701a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890124"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975909"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 

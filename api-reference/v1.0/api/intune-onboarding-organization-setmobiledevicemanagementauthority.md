@@ -4,12 +4,13 @@ description: Задание центра управления мобильным
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93a8c0c6e3d9f8aa3e02c11550e7b8a920a30701
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ec89c18d6239a16bd4ca8dfdf0e0c82704503e05
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582579"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024044"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>Действие setMobileDeviceManagementAuthority
 
@@ -41,10 +42,10 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении это действие возвращает код отклика `200 OK` и объект Int32 в теле отклика.
 
 ## <a name="example"></a>Пример

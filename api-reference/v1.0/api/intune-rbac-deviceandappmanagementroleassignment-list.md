@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 199794d8971214577b1a5e64e4b890aa643d60b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: db8c1cab59738aad3751917f70e9c3184a190a24
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561441"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023904"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Перечисление объектов deviceAndAppManagementRoleAssignment
 
@@ -41,10 +42,10 @@ GET /deviceManagement/roleAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример

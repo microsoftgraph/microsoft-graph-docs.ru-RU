@@ -4,16 +4,17 @@ description: Восстановление архивной команды. Эт�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 77cd2decf1250d6d189aba20df1db172475ab806
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 011b68f2e85c041ccb0f654295dfaf1a42d5d237
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576425"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024226"
 ---
 # <a name="unarchive-team"></a>Распаковка объекта команды
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Восстановление архивной [команды](../resources/team.md). Это восстанавливает возможность пользователей отправлять сообщения и редактировать команду, абидинг по клиенту и параметрам группы. Архивация Teams выполняется с помощью API [архива](team-archive.md) .
 
@@ -41,7 +42,7 @@ POST /teams/{id}/unarchive
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -56,7 +57,7 @@ POST /teams/{id}/unarchive
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>Отклик
@@ -70,13 +71,10 @@ Content-Length: 0
 
 <!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Unarchive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

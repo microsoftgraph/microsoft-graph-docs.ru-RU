@@ -4,12 +4,13 @@ description: Удаляет объект user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e66d987c2e88f40dd5b104961e9203dcd636651a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d3d9f883f15dafd496dc2ef0217ef76e859f98bb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576813"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025808"
 ---
 # <a name="delete-user"></a>Удаление пользователя
 
@@ -45,7 +46,7 @@ DELETE /users/{usersId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
