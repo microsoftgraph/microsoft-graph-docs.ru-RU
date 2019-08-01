@@ -2,20 +2,23 @@
 title: Тип ресурса FilterCriteria
 description: Представляет условия фильтра, применяемые к столбцу.
 localization_priority: Normal
-ms.openlocfilehash: 27fd3b6b211934c2cc81a11f203287c530993dde
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 4d15c1ddc0c53d32648c67d8f5bdacc32072ea5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564304"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030312"
 ---
-# <a name="filtercriteria-resource-type"></a><span data-ttu-id="d8731-103">Тип ресурса FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="d8731-103">FilterCriteria resource type</span></span>
+# <a name="filtercriteria-resource-type"></a><span data-ttu-id="a3cad-103">Тип ресурса FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="a3cad-103">FilterCriteria resource type</span></span>
 
-<span data-ttu-id="d8731-104">Представляет условия фильтра, применяемые к столбцу.</span><span class="sxs-lookup"><span data-stu-id="d8731-104">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="a3cad-104">Представляет условия фильтра, применяемые к столбцу.</span><span class="sxs-lookup"><span data-stu-id="a3cad-104">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d8731-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d8731-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a3cad-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a3cad-105">JSON representation</span></span>
 
-<span data-ttu-id="d8731-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d8731-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a3cad-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a3cad-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

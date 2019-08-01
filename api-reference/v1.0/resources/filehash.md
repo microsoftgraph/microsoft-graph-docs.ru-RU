@@ -2,27 +2,30 @@
 title: Тип ресурса fileHash
 description: Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
 localization_priority: Normal
-ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: aabe56237ea44285c93f802268bd68688f16aa05
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564773"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030382"
 ---
-# <a name="filehash-resource-type"></a><span data-ttu-id="8d870-103">Тип ресурса fileHash</span><span class="sxs-lookup"><span data-stu-id="8d870-103">fileHash resource type</span></span>
+# <a name="filehash-resource-type"></a><span data-ttu-id="0a53f-103">Тип ресурса fileHash</span><span class="sxs-lookup"><span data-stu-id="0a53f-103">fileHash resource type</span></span>
 
-<span data-ttu-id="8d870-104">Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).</span><span class="sxs-lookup"><span data-stu-id="8d870-104">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
+<span data-ttu-id="0a53f-104">Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).</span><span class="sxs-lookup"><span data-stu-id="0a53f-104">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8d870-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="8d870-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0a53f-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="0a53f-105">Properties</span></span>
 
-| <span data-ttu-id="8d870-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="8d870-106">Property</span></span>     | <span data-ttu-id="8d870-107">Тип</span><span class="sxs-lookup"><span data-stu-id="8d870-107">Type</span></span>        | <span data-ttu-id="8d870-108">Описание</span><span class="sxs-lookup"><span data-stu-id="8d870-108">Description</span></span> |
+| <span data-ttu-id="0a53f-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="0a53f-106">Property</span></span>     | <span data-ttu-id="0a53f-107">Тип</span><span class="sxs-lookup"><span data-stu-id="0a53f-107">Type</span></span>        | <span data-ttu-id="0a53f-108">Описание</span><span class="sxs-lookup"><span data-stu-id="0a53f-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="8d870-109">Хаштипе</span><span class="sxs-lookup"><span data-stu-id="8d870-109">hashType</span></span>|<span data-ttu-id="8d870-110">fileHashType</span><span class="sxs-lookup"><span data-stu-id="8d870-110">fileHashType</span></span>|<span data-ttu-id="8d870-111">Тип хэша файла.</span><span class="sxs-lookup"><span data-stu-id="8d870-111">File hash type.</span></span> <span data-ttu-id="8d870-112">Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span><span class="sxs-lookup"><span data-stu-id="8d870-112">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
-|<span data-ttu-id="8d870-113">Хашвалуе</span><span class="sxs-lookup"><span data-stu-id="8d870-113">hashValue</span></span>|<span data-ttu-id="8d870-114">String</span><span class="sxs-lookup"><span data-stu-id="8d870-114">String</span></span>|<span data-ttu-id="8d870-115">Значение хэша файла.</span><span class="sxs-lookup"><span data-stu-id="8d870-115">Value of the file hash.</span></span>|
+|<span data-ttu-id="0a53f-109">Хаштипе</span><span class="sxs-lookup"><span data-stu-id="0a53f-109">hashType</span></span>|<span data-ttu-id="0a53f-110">fileHashType</span><span class="sxs-lookup"><span data-stu-id="0a53f-110">fileHashType</span></span>|<span data-ttu-id="0a53f-111">Тип хэша файла.</span><span class="sxs-lookup"><span data-stu-id="0a53f-111">File hash type.</span></span> <span data-ttu-id="0a53f-112">Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span><span class="sxs-lookup"><span data-stu-id="0a53f-112">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
+|<span data-ttu-id="0a53f-113">Хашвалуе</span><span class="sxs-lookup"><span data-stu-id="0a53f-113">hashValue</span></span>|<span data-ttu-id="0a53f-114">String</span><span class="sxs-lookup"><span data-stu-id="0a53f-114">String</span></span>|<span data-ttu-id="0a53f-115">Значение хэша файла.</span><span class="sxs-lookup"><span data-stu-id="0a53f-115">Value of the file hash.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="8d870-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8d870-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0a53f-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0a53f-116">JSON representation</span></span>
 
-<span data-ttu-id="8d870-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8d870-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0a53f-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0a53f-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
