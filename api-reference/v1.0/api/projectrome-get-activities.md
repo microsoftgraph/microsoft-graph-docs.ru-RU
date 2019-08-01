@@ -3,12 +3,14 @@ title: Получение действий пользователей
 description: Получение действий для определенного пользователя. В отличие от **последней** функции OData, будут возвращены действия без журналов. Разрешение UserActivity. ReadWrite. CreatedByApp будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: dce6420e33a5d57eb78d8ea4842ed759ebcdd11c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1a3dad16f96f8b16618a1916bcccf6cf67eb95ff
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576439"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975888"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
@@ -37,7 +39,7 @@ GET /me/activities
 Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
 - $expand для свойства навигации **historyitem** .
-- $Top, чтобы ограничить максимальное количество элементов на страницах.
+- $top, чтобы ограничить максимальное количество элементов на страницах.
 - $filter в свойстве **lastModifiedDateTime** для действий или **historyitem**, если она развернута.
 
 Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.
@@ -56,11 +58,11 @@ GET /me/activities
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Текст запроса отсутствует.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика с действиями пользователя для вашего приложения.
 
@@ -81,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/activities
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "ignored",

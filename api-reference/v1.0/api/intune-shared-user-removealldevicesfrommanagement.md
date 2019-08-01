@@ -4,12 +4,13 @@ description: Прекращение управления всеми устрой
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40baa470968c10bbe26af1d8397306f5b9e3f736
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d35b852ef9694a2e9d8f427ba3bbb98cb2b4c26a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576656"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025766"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Действие removeAllDevicesFromManagement
 
@@ -42,7 +43,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

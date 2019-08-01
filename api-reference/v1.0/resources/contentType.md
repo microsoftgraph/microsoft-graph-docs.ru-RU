@@ -4,17 +4,20 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс contentType представляет тип контента в SharePoint.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b26f9b7a3bafb7b6185aa781c1f842f7c20adab3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029640"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
 
 Ресурс **contentType** представляет _тип контента_ в SharePoint.
-Типы контента позволяют задать набор столбцов, которые должны присутствовать в каждом элементе [**listItem**][listItem] в [**списке**][list].
+Типы контента позволяют определить набор столбцов, которые должны присутствовать в каждом элементе [**ListItem**][listItem] в [**списке**][list].
 
 [list]: list.md
 [listItem]: listitem.md

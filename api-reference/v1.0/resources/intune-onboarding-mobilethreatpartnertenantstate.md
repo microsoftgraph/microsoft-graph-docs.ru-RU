@@ -4,12 +4,13 @@ description: Состояние партнера этого клиента.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: f0ae38e6d0d19ecacc77f66a5a9ef3e3d1f540d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524374"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037368"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>тип перечисления Мобилесреатпартнертенантстате
 
@@ -21,9 +22,9 @@ ms.locfileid: "32524374"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |выходе|нуль|Партнер недоступен.|
-|доступен|1 |Партнер доступен.|
-|enabled|2 |Партнер включен.|
-|не отвечает|3 |Партнер не отвечает.|
+|доступен|1,1|Партнер доступен.|
+|enabled|2|Партнер включен.|
+|не отвечает|4|Партнер не отвечает.|
 
 
 

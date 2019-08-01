@@ -4,12 +4,13 @@ description: Класс, содержащий свойства, которые �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0f3faff8a04709788e415b72013e32a850889ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: ad2f5824d8afbf70796046c9c3f397bf8eddc4f4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557959"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032181"
 ---
 # <a name="mobileappassignment-resource-type"></a>Тип ресурса mobileAppAssignment
 

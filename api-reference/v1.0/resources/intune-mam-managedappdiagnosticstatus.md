@@ -4,12 +4,13 @@ description: Представляет состояние диагностики.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2477039c3a0ebca3de09a4042691045782848b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 79a89b7084ea006352ad0bc423d0833acfaae86e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465307"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038047"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Тип ресурса managedAppDiagnosticStatus
 

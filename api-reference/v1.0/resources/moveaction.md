@@ -5,16 +5,17 @@ title: Тип ресурса moveAction
 description: Объект MoveAction предоставляет сведения о действии, которое переместит элемент.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 525558d040109e637e2f3532d16c308a197e45fb
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 8ef93cd83c8fd020af91a9ea8c9288c1d27d5cf6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970817"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036073"
 ---
 # <a name="moveaction-resource-type"></a>Тип ресурса moveAction
 
-Присутствие ресурса **moveAction** в [**itemActivity**] [ activity] указывает на то, что действие переместило элемент.
+Присутствие ресурса **moveAction** в [**itemActivity**][activity] указывает на то, что действие переместило элемент.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

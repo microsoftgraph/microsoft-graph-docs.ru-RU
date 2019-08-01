@@ -4,12 +4,13 @@ description: Обновление свойств объекта windowsPhone81Ge
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 268b5ab7030eae72cb9af4630b30bb8a2db8cdfc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac835c386471dd1bc62337c0b14a61924291dd86
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551409"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996989"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Обновление windowsPhone81GeneralConfiguration
 
@@ -41,30 +42,30 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|applyOnlyToWindowsPhone81|Логический|Указывает, применяется ли эта политика только к Windows Phone 8.1. Это свойство доступно только для чтения.|
-|appsBlockCopyPaste|Логический|Указывает, следует ли заблокировать копирование данных.|
-|bluetoothBlocked|Логический|Указывает, следует ли заблокировать Bluetooth.|
-|cameraBlocked|Логический|Указывает, следует ли заблокировать камеру.|
-|cellularBlockWifiTethering|Логический|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|applyOnlyToWindowsPhone81|Boolean|Указывает, применяется ли эта политика только к Windows Phone 8.1. Это свойство доступно только для чтения.|
+|appsBlockCopyPaste|Boolean|Указывает, следует ли заблокировать копирование данных.|
+|bluetoothBlocked|Boolean|Указывает, следует ли заблокировать Bluetooth.|
+|cameraBlocked|Boolean|Указывает, следует ли заблокировать камеру.|
+|cellularBlockWifiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
 |emailBlockAddingAccounts|Boolean|Указывает, следует ли заблокировать пользовательские учетные записи электронной почты.|
-|locationServicesBlocked|Логический|Указывает, следует ли заблокировать службы определения местоположения.|
-|microsoftAccountBlocked|Логический|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
+|locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
+|microsoftAccountBlocked|Boolean|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
 |nfcBlocked|Логический|Указывает, следует ли заблокировать NFC.|
 |passwordBlockSimple|Boolean|Указывает, следует ли заблокировать синхронизацию календаря.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля.|
@@ -74,13 +75,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
-|screenCaptureBlocked|Логический|Указывает, следует ли запретить делать снимки экрана.|
-|storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
-|storageRequireEncryption|Логический|Указывает, обязательно ли шифрование.|
-|webBrowserBlocked|Логический|Указывает, следует ли заблокировать веб-браузер.|
-|wifiBlocked|Логический|Указывает, следует ли заблокировать Wi-Fi.|
-|wifiBlockAutomaticConnectHotspots|Логический|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
+|screenCaptureBlocked|Boolean|Указывает, следует ли запретить делать снимки экрана.|
+|storageBlockRemovableStorage|Boolean|Указывает, следует ли запретить использовать съемные носители.|
+|storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование.|
+|webBrowserBlocked|Boolean|Указывает, следует ли заблокировать веб-браузер.|
+|wifiBlocked|Boolean|Указывает, следует ли заблокировать Wi-Fi.|
+|wifiBlockAutomaticConnectHotspots|Boolean|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |wifiBlockHotspotReporting|Boolean|Указывает, следует ли запретить устройству сообщать об обнаруженных хот-спотах Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |windowsStoreBlocked|Boolean|Указывает, следует ли заблокировать Microsoft Store.|
 

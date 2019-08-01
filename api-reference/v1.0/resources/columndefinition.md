@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ниже показано представление ресурса ColumnDefinition в формате JSON.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 3a02721c5289b1d49077e1b2d9fa1017f0c53021
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584854"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032874"
 ---
 # <a name="columndefinition-resource"></a>Ресурс ColumnDefinition
 
@@ -59,10 +62,10 @@ ms.locfileid: "32584854"
 | **columnGroup**         | строка  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.
 | **description**         | строка  | Описание столбца, которое видит пользователь.
 | **displayName**         | string  | Имя столбца, которое видит пользователь.
-| **enforceUniqueValues** | логический | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
-| **hidden**              | логический | Указывает, отображается ли столбец в пользовательском интерфейсе.
+| **enforceUniqueValues** | boolean | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
+| **hidden**              | boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.
 | **id**                  | string  | Уникальный идентификатор столбца.
-| **indexed**             | логический | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
+| **indexed**             | boolean | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
 | **name**                | string  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.
 | **readOnly**            | логический    | Указывает, можно ли менять значения в столбце.
 | **required**            | логический | Указывает, является ли значение в столбце обязательным.

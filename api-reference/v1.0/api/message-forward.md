@@ -4,12 +4,13 @@ description: Пересылка сообщения. Сообщение сохр�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 21db6da10dea3480e187dc38cf59abb8654fea80
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: d1becc0bc31b15c1393dde2c9aa8c7ec4fc2a921
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881329"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976679"
 ---
 # <a name="message-forward"></a>message: forward
 

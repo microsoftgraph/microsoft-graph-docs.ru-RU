@@ -4,12 +4,13 @@ description: Список свойств и связей объектов manage
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe4f7279f76ecc2957933a88e569eb37ebe4f830
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 32911404b7faba66239e87bca8c1cfc766758920
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573440"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996660"
 ---
 # <a name="list-managedappstatuses"></a>Перечисление объектов managedAppStatus
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/managedAppStatuses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedAppStatus](../resources/intune-mam-managedappstatus.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Коллекция предложений (если они есть
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3f4aa23e582ead2fc51b9091159e158373be1cd1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2c5e7461b27168150c21f8fedd5d697e2b8ec5e6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573972"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036199"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Тип ресурса meetingTimeSuggestionsResult
 
@@ -25,7 +26,7 @@ ms.locfileid: "32573972"
 | Организерунаваилабле | Для параметра **isOrganizerOptional** задано значение false, но организатор недоступен в запрашиваемый период времени. |
 | unknown | Причина отсутствия предложений неизвестна.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 

@@ -4,12 +4,13 @@ description: Ресурс ManagedAppPolicy представляет базовы
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2615d1331c024c1a04bc7db618e36966cc5bcdff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4aef589e8667dd3002175b478203384cd7cb2181
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465344"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037984"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
@@ -27,11 +28,11 @@ ms.locfileid: "32465344"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя политики.|
+|displayName|Строка|Отображаемое имя политики.|
 |description|String|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Отношения

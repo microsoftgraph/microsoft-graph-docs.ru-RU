@@ -4,16 +4,17 @@ description: 'Удаляет (открепляет) вкладку из указ
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a5cb2334c250c63d0644c8fab3f97d35c481a515
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3dbba4b8996a86e8ff71d0dd115b0a00362e103f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521779"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027211"
 ---
 # <a name="delete-tab-from-channel"></a>Удаление вкладки из канала
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Удаляет (открепляет) вкладку из указанного [канала](../resources/channel.md) в [команде](../resources/team.md). 
 
@@ -39,10 +40,10 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -54,7 +55,7 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -70,9 +71,6 @@ HTTP/1.1 204 No Content
   "description": "Delete tab from channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

@@ -4,12 +4,13 @@ description: Представляет точку из ряда в диаграм
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3318415094a36100851b1c604cba2507de31f558
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 5e0a9d9fe558f53fe87ae8e3a0a447a5bd93aa71
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032951"
 ---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 
@@ -30,7 +31,7 @@ ms.locfileid: "32569090"
 |значение|Json|Возвращает значение точки диаграммы. Только для чтения.|
 |id|string|уникальный идентификатор|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[Воркбукчартпоинтформат](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|

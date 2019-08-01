@@ -2,15 +2,15 @@
 title: Удаление приложения из группы
 description: Удаляет приложение из указанной команды.
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 59caed63c53dacd86b6303dfdf29ad018e0f4677
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 5ebb99e0c4fa3db38fc8ae1281354ee1e83fe6d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932449"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027288"
 ---
 # <a name="remove-app-from-team"></a>Удаление приложения из группы
 

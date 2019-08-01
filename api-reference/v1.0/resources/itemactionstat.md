@@ -5,12 +5,13 @@ title: Тип ресурса Итемактионстат
 description: Объект Итемактионстат предоставляет статистические сведения о действии в течение определенного периода времени.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1d5531fc969762219f4e2404787190649ecdaf11
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 7eda0f6ddbed16dadf1eac4a3ea737cdd7fd2c89
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036759"
 ---
 # <a name="itemactionstat-resource-type"></a>Тип ресурса Итемактионстат
 

@@ -4,12 +4,13 @@ description: Удаляет объект managedAndroidLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 392623f646ee5d0f3eb2f06cb46d8ea8e417ae85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3353de174cb35b85531e3315dc169375101d6ac6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567433"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002428"
 ---
 # <a name="delete-managedandroidlobapp"></a>Delete managedAndroidLobApp
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

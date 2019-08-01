@@ -2,12 +2,15 @@
 title: Тип ресурса recurrenceRange
 description: 'Описывает диапазон дат, согласно которому повторяется событие. '
 localization_priority: Normal
-ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 0d5fee6ad877958b4861360e4e90fbdd688e0011
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579403"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034806"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
@@ -23,7 +26,7 @@ ms.locfileid: "32579403"
 |numberOfOccurrences|Int32|Количество повторений события. Обязательное свойство, которое должно быть положительным, если для **type** задано значение `numbered`.|
 |recurrenceTimeZone|String |Часовой пояс для свойств **startDate** и **endDate**. Необязательное. Если это свойство не задано, используется часовой пояс события.|
 |startDate|Date|Дата, с которой начинает применяться расписание повторения. В зависимости от того, каково расписание повторения события, первый экземпляр собрания может приходиться на эту или более позднюю дату. Должно быть задано то же значение, что и для свойства **start** повторяющегося [события](event.md). Обязательное.|
-|type|Рекурренцеранжетипе|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательный.|
+|type|Рекурренцеранжетипе|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательно.|
 
 С помощью свойства **type** можно указывать различные типы для **recurrenceRange**. Обратите внимание на обязательные свойства для каждого типа, описанные в приведенной ниже таблице.
 
@@ -34,7 +37,7 @@ ms.locfileid: "32579403"
 |`numbered`|Диапазон с определенным количеством повторений | Событие повторяется определенное количество раз (указанное в **numberOfOccurrences**) в соответствии с расписанием повторения, начиная с даты **startDate**. | Повторение события 10 раз с 1 июня 2017 г.  | **type**, **startDate**, **numberOfOccurrences** |
 
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

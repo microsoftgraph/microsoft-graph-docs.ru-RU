@@ -4,12 +4,13 @@ description: Объект termsAndConditions представляет метад
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d4366ef5f9e72d6ea3e217fb71eb796bfa20cc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: be4cf9b5145a6e5ee320e82f33ec2f67a70829a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523898"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031992"
 ---
 # <a name="termsandconditions-resource-type"></a>Тип ресурса termsAndConditions
 
@@ -29,17 +30,17 @@ ms.locfileid: "32523898"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор политики использования.|
+|id|String|Уникальный идентификатор политики использования.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Имя политики использования, указанное администратором. |
-|description|String|Описание политики использования, указанное администратором.|
-|title|Строка|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
+|displayName|Строка|Имя политики использования, указанное администратором. |
+|description|Строка|Описание политики использования, указанное администратором.|
+|title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
 |bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
 |version|Int32|Целое число, указывающее текущую версию условий. Увеличивается, когда администратор вносит изменения в условия и запрашивает повторное принятие измененной политики у пользователей.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция объектов [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|Список назначений для этой политики условий.|

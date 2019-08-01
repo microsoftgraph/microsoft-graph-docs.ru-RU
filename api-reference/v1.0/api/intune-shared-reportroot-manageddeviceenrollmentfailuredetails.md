@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: da38aa1fb497bc5fb1225f2435ed2bd9c4e4b3c3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576799"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025850"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
@@ -42,7 +43,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 

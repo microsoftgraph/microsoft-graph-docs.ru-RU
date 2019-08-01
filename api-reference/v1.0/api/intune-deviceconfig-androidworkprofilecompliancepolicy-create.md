@@ -4,12 +4,13 @@ description: Создание нового объекта androidWorkProfileComp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff3908edf6799b350471789ef70d158e17db5047
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 23709a2b9949afeaf0872db32a59f1304a37bc1a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019592"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>Создание androidWorkProfileCompliancePolicy
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта androidWorkProfileCompliancePolicy в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании androidWorkProfileCompliancePolicy.
@@ -60,20 +61,20 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
-|securityPreventInstallAppsFromUnknownSources|Логический|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
-|securityDisableUsbDebugging|Логический|Запрещает USB-отладку на устройствах с Android.|
-|securityRequireVerifyApps|Логический|Указывает, что требуется включить функцию проверки приложений для Android.|
-|deviceThreatProtectionEnabled|Логический|Указывает, что защита от угроз для устройств должна быть включена.|
+|securityPreventInstallAppsFromUnknownSources|Boolean|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
+|securityDisableUsbDebugging|Boolean|Запрещает USB-отладку на устройствах с Android.|
+|securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
+|deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[Девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|securityBlockJailbrokenDevices|Логический|Устройства нельзя взламывать и рутовать.|
+|securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
 |osMinimumVersion|String|Минимальная версия Android.|
 |osMaximumVersion|String|Максимальная версия Android.|
 |minAndroidSecurityPatchLevel|String|Минимальный уровень обновления для системы безопасности Android.|
-|storageRequireEncryption|Логический|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Логический|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Логический|Указывает, что устройству требуется пройти проверку сертификата SafetyNet.|
-|securityRequireGooglePlayServices|Логический|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
-|securityRequireUpToDateSecurityProviders|Логический|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
+|storageRequireEncryption|Boolean|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Указывает, что устройству требуется пройти проверку сертификата SafetyNet.|
+|securityRequireGooglePlayServices|Boolean|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
+|securityRequireUpToDateSecurityProviders|Boolean|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Указывает, обязательна ли проверка целостности среды выполнения в клиентском приложении "Корпоративный портал".|
 
 

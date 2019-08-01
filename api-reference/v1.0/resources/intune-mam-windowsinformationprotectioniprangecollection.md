@@ -4,12 +4,13 @@ description: Коллекция диапазонов IP-адресов Windows I
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6a2f52613eae9d8e06751672c95230dfc3b00c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9354704c5326e9f92814e06aee9ef12635c0faa5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037690"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Тип ресурса windowsInformationProtectionIPRangeCollection
 

@@ -4,12 +4,13 @@ description: Файл AppLocker для Windows Information Protection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df994cc8e4dcf698656f617ad2e5959a5ded3f83
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b50c174f02d8389a61843a2e8fe11729c240c910
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561469"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037746"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>Тип ресурса windowsInformationProtectionAppLockerFile
 
@@ -29,7 +30,7 @@ ms.locfileid: "32561469"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Понятное имя|
+|displayName|Строка|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
 |file|Binary|Файл в виде массива байтов|
 |id|String|Ключ объекта.|

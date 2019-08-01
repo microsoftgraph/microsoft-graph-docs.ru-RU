@@ -4,12 +4,13 @@ description: Список свойств и связей объектов micros
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fbdc31fc37fca22b68187e40809b4063eb5b4f1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 730cd03b7f308ce0e54b10784eb5e23900623785
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534418"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002120"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Перечисление объектов microsoftStoreForBusinessApp
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

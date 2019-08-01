@@ -4,12 +4,13 @@ description: Объект сводки по обучению Windows Information
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ad392b2685d4322c5afc90f82c381a790ef8a46
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 81454c6eecefd685af152c230faf41938debf142
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585141"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036766"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionNetworkLearningSummary
 

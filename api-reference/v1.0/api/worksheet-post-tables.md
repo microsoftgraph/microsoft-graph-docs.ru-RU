@@ -4,12 +4,13 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b402a047165a03b2631c0045041e1f50a95de710
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2dbf09cf8732a7bc2667e497b7ec41a088aba379
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569727"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026126"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр           | Тип      |Описание|

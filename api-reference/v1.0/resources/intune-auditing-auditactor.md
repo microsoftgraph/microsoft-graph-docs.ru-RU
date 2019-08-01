@@ -4,12 +4,13 @@ description: Класс, содержащий свойства субъекта 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 2b2aab468a6638b2e3bb525fd54c6554f5a5694a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584707"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032083"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
@@ -20,11 +21,11 @@ ms.locfileid: "32584707"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|Строка|Тип субъекта.|
+|type|String|Тип субъекта.|
 |userPermissions|Коллекция строк|Список разрешений пользователей во время аудита.|
 |applicationId|String|ИД приложения AAD.|
 |applicationDisplayName|String|Имя приложения.|
-|userPrincipalName|String|Имя участника-пользователя (UPN).|
+|userPrincipalName|Строка|Имя участника-пользователя (UPN).|
 |servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|

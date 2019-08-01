@@ -5,16 +5,17 @@ title: Тип ресурса versionAction
 description: Объект VersionAction предоставляет сведения о действии, которое привело к созданию новой версии элемента.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0d05ad93c59ba736dd90276fc5e3db6e05740344
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 22f06691824d2ffa5b773a796b4c456cb2fcaecc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970793"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033448"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса versionAction
 
-Присутствие ресурса **versionAction** в [**itemActivity**] [ activity] указывает на то, что действие привело к созданию новой версии.
+Присутствие ресурса **versionAction** в [**itemActivity**][activity] указывает на то, что действие привело к созданию новой версии.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

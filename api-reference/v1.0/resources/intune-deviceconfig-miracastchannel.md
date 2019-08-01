@@ -4,12 +4,13 @@ description: Возможные значения для канала Miracast.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 436036aa9b5945be94587622a2e6a5cfe4f5d027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: f6ca37c3766efd236facf7cee528252eaf7cf71a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549360"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028079"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
@@ -21,17 +22,17 @@ ms.locfileid: "32549360"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1 |Один.|
-|two|2 |2.|
-|three|3 |Трёх.|
-|four|4 |Четыре.|
-|five|5 |Следующих.|
+|one|1,1|Один.|
+|two|2|2.|
+|three|4|Трёх.|
+|four|SP4|Четыре.|
+|five|17:00|Следующих.|
 |шест|6 |Шест.|
 |неделю|7 |Неделю.|
 |Основными|8 |Основными.|
 |9|9 |9.|
 |раз|10 |Раз.|
-|Eleven|11 |Eleven.|
+|Eleven|-11:00|Eleven.|
 |Сиртисикс|36|36.|
 |40|40|40.|
 |Фортифаур|44|44.|

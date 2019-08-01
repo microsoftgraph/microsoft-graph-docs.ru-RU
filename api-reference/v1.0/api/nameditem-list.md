@@ -2,12 +2,15 @@
 title: Список NamedItemCollection
 description: Получение списка объектов nameditem.
 localization_priority: Normal
-ms.openlocfilehash: 3ef7a99cc9d07cf80be2129be51517c5ecf55037
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: bc16f9ae71b197c5398fea2e74f77dbc25253ca3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890263"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976591"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 

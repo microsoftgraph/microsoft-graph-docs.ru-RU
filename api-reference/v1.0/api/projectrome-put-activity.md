@@ -3,12 +3,14 @@ title: Создание или замена действия
 description: Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую вставку.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3f0864d5bdd8e393a21df49ec3fade6930fdcbde
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: 8f80d17f64b4f04816670d8e007ca7db82755c0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575312"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025374"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 
@@ -32,7 +34,7 @@ ms.locfileid: "32575312"
 PUT /me/activities/{appActivityId}
 ```
 
-> **Примечание:** Аппактивитид в URL-АДРЕСе должен быть безопасным по URL-АДРЕСу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-АДРЕСу.
+> **Примечание:** Аппактивитид в URL-адресе должен быть безопасным по URL-адресу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-адресу.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -40,11 +42,11 @@ PUT /me/activities/{appActivityId}
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было `200 OK` создано, или если действие было заменено.
 
@@ -106,7 +108,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
     "blockType": "ignored",
@@ -223,7 +225,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
     "blockType": "ignored",

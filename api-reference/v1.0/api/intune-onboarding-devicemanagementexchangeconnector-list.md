@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 144b4e8c0e07b3115d4cc56a0e5a6d9005684578
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 847494e92abbd122263cbe2fbd7b658d31fa60a1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561595"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996436"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>Список объектов deviceManagementExchangeConnector
 
@@ -41,10 +42,10 @@ GET /deviceManagement/exchangeConnectors
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) в теле отклика.
 
 ## <a name="example"></a>Пример

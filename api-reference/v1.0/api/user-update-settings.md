@@ -4,12 +4,13 @@ description: 'Обновление свойств объекта Settings. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: eb739ebe4266dc61246fd39f1b4f053ab08a5a75
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac4907867eebd0cf02bf4e978d1a48b1f1b47ce8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573573"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026518"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -31,7 +32,7 @@ ms.locfileid: "32573573"
 PATCH /me/settings
 ```
 
-Запрос с идентификатором пользователя или userPrincipalName доступен только пользователю или пользователем с разрешениями User. ReadWrite. ALL. Чтобы узнать больше, ознакомьтесь [](/graph/permissions-reference)с разрешениями. 
+Запрос с параметрами user id или userPrincipalName доступен только пользователю или пользователю с разрешениями User.ReadWrite.All. Дополнительные сведения см. в статье [Разрешения](/graph/permissions-reference). 
 
 ```http
 PATCH /users/{id | userPrincipalName}/settings/
@@ -44,13 +45,13 @@ PATCH /users/{id | userPrincipalName}/settings/
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Контрибутионтоконтентдисковеридисаблед|Boolean|Установите значение true, чтобы запретить представителю доступ [](/graph/api/resources/insights-trending?view=graph-rest-beta) к API тенденций и отключить доступ к документам в Office delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Office 365, например, Рекомендуемые сайты в SharePoint Home и представление обнаружение в OneDrive для бизнеса содержат менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Office delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Логический|Установите значение true, чтобы запретить представителю доступ [](/graph/api/resources/insights-trending?view=graph-rest-beta) к API тенденций и отключить доступ к документам в Office delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Office 365, например, Рекомендуемые сайты в SharePoint Home и представление обнаружение в OneDrive для бизнеса содержат менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Office delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 

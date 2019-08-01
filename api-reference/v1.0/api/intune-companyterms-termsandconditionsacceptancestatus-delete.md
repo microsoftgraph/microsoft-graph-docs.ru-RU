@@ -4,12 +4,13 @@ description: Удаляет объект termsAndConditionsAcceptanceStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccca81543d28dbd71efad5663c83cf76fb39e16f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ce1708927c01cd3e7abb4d8b238364f39cc42764
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524493"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019858"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Delete termsAndConditionsAcceptanceStatus
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

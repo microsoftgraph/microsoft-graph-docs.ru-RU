@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта software
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 408fcf809d6fc42e0585ed2134c2024d6e0e4675
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e9bac9fd4f19cf1812a8a21ffff78d91db750aca
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020298"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Получение объекта softwareUpdateStatusSummary
 
@@ -44,10 +45,10 @@ GET /deviceManagement/softwareUpdateStatusSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

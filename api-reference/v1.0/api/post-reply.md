@@ -4,12 +4,13 @@ description: 'Ответ на публикацию и добавление но�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: be33bf35eb840daebabafb316c210f1f728ffef1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 718d7b5dca3b5f8d6899f3289f5dd0d24937ed13
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35975937"
 ---
 # <a name="post-reply"></a>post: reply
 

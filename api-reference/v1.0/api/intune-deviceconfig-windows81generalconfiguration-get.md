@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windows8
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48b251abe0626048109271894ff24e6c87c2a5f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 2dec869e420fbb7ab4eefa328760ec05f6ded14e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566439"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020033"
 ---
 # <a name="get-windows81generalconfiguration"></a>Получение объекта windows81GeneralConfiguration
 
@@ -44,10 +45,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windows81GeneralConfiguration](../resources/intune-deviceconfig-windows81generalconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример

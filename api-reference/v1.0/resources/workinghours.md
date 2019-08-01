@@ -2,12 +2,15 @@
 title: Тип ресурса workingHours
 description: Представляет дни недели и часы работы пользователя в определенном часовом поясе.
 localization_priority: Normal
-ms.openlocfilehash: e0f2cf09f1e0f2270b5d1ae08ce9e5757c5900da
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: c3449e64f94a3e90bae443a23e7b941116df0291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345395"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033329"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 
@@ -28,7 +31,7 @@ ms.locfileid: "33345395"
 | endTime | Edm.TimeOfDay | Время дня, в которое пользователь заканчивает работать. |
 | timeZone | [timeZoneBase](timezonebase.md) | Часовой пояс, к которому относится рабочее время. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

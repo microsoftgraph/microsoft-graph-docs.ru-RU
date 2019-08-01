@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windowsI
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46c67e327a5e20a268d1774daac26a8ccfe769cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 5cf3651461b4dba94a0f97c16d833f6fbac6b94e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522645"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020488"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>Получение объекта windowsInformationProtectionPolicy
 
@@ -44,10 +45,10 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример

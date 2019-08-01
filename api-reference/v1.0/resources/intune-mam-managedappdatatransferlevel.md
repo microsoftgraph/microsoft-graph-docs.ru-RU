@@ -4,12 +4,13 @@ description: Данные можно переносить из/в эти кла�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65c6614e645de47141818a97b8ed2cbaddcb4a41
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 5c8081e6b4cacd8010e617c256faa92d52bc75df
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465470"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038040"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>тип перечисления Манажедаппдататрансферлевел
 
@@ -22,7 +23,7 @@ ms.locfileid: "32465470"
 |:---|:---|:---|
 |Аллаппс|нуль|Все приложения.|
 |managedApps|1,1|Управляемые приложения.|
-|Нет|2|Нет приложений.|
+|none|2|Нет приложений.|
 
 
 

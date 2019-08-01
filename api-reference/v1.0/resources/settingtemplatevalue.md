@@ -2,12 +2,15 @@
 title: Тип ресурса Сеттингтемплатевалуе
 description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
 localization_priority: Normal
-ms.openlocfilehash: 0cb3376177e3a4efcae54a591a083914db6b56d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: f4ac39001e260d7f65b3a593d90976f94acd4693
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549694"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034393"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>Тип ресурса Сеттингтемплатевалуе
 
@@ -18,11 +21,11 @@ ms.locfileid: "32549694"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |Значение|String| Значение по умолчанию для параметра. |
-|description|Строка| Описание параметра. |
+|description|String| Описание параметра. |
 |name|String| Имя параметра. |
 |type|String| Тип параметра. |
 
-### <a name="json-representation"></a>Представление в формате JSON
+### <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

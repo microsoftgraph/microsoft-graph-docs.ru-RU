@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d36ab0a845450d803b3f0ac3fb0b9ea58cc4d3d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 0d990271b611fdb088975e155637834dc9261580
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460935"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028422"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -21,7 +22,7 @@ ms.locfileid: "32460935"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|Количество дней, в течение которых устройство может считаться соответствующим требованиям, несмотря на отсутствие записей после изменения. Допустимые значения: от 0 до 120|
-|isScheduledActionEnabled|Логический|Включена ли функция для запланированного действия для правила.|
+|isScheduledActionEnabled|Boolean|Включена ли функция для запланированного действия для правила.|
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
 
 ## <a name="relationships"></a>Отношения

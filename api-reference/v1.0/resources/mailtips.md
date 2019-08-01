@@ -4,12 +4,13 @@ description: 'Информативные сообщения о получате�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 90f6f1a66631223a45a34797b6d18c13259d6241
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574014"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036325"
 ---
 # <a name="mailtips-resource-type"></a>Тип ресурса подсказки
 
@@ -36,7 +37,7 @@ ms.locfileid: "32574014"
 
 | Значение
 |:-------------------------
-| Нет
+| none
 | образом
 | внешних
 | ExternalPartner.

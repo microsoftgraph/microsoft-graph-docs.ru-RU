@@ -4,12 +4,13 @@ description: Эти отчеты позволяют получить подро�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 26e99a22db2fb380647aa63cf0db5e1cd8793ac8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: d914e1af08a2afc85a1d263b1c55098f6d8457fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566481"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034106"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Отчеты об организации конференций Skype для бизнеса
 

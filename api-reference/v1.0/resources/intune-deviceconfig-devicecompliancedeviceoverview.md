@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b54c617209c37ec623434fd52f5a5fa03db1256
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 65d2c1ecfa300a89f8f887d9d2a4719d2cea65fb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534286"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36031789"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>Тип ресурса deviceComplianceDeviceOverview
 

@@ -4,12 +4,13 @@ description: Обновление свойств объекта organization.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01c366d5236a93da64d3f73d733ddfd264110fc0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 195aac351138cc133fbb48877b2e68d27a77954f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561588"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024030"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -41,7 +42,7 @@ PATCH /organization/{organizationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [organization](../resources/intune-onboarding-organization.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [organization](../resources/intune-onboarding-organization.md).

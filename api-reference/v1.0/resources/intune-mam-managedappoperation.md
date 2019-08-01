@@ -4,12 +4,13 @@ description: Представляет операцию, примененную �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe7416c5357b83bd9dc7eb82d94aae6a6d740667
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 6653836cf21f4552e64bc433934a10b717be3708
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465218"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36038026"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 
@@ -29,11 +30,11 @@ ms.locfileid: "32465218"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя операции.|
+|displayName|Строка|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Отношения
 Нет

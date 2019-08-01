@@ -4,12 +4,13 @@ description: Инкапсулирует параметры форматиров�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9da0c29acf49d0e183a2ded4652fe0972f21bf76
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 505e6d88e0c1b19ea33d475b6d8edf3485e29cea
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569034"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032965"
 ---
 # <a name="chartlineformat-resource-type"></a>Тип ресурса ChartLineFormat
 

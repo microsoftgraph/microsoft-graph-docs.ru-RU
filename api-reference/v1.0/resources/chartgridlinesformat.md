@@ -4,12 +4,13 @@ description: Инкапсулирует свойства формата для �
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: dd1e6d7f0a4ae9c17794035c8103cda8d189d5ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c34a9e640589a0df537d5f13652552551ac00372
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569062"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029780"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Тип ресурса ChartGridlinesFormat
 
@@ -22,7 +23,7 @@ ms.locfileid: "32569062"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |line|[Воркбукчартлинеформат](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|

@@ -4,12 +4,13 @@ description: Представляет объект форматирования 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1c1b0a4a7d9076771da11061723f275079d429cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: b17eb84c3de5505a3dfea23ce3fef564dca9aa2b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569069"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029766"
 ---
 # <a name="chartpointformat-resource-type"></a>Тип ресурса ChartPointFormat
 
@@ -22,7 +23,7 @@ ms.locfileid: "32569069"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[Воркбукчартфилл](chartfill.md)|Представляет формат заливки диаграммы, включая сведения о форматировании фона. Только для чтения.|

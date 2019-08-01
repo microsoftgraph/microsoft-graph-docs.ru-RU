@@ -4,12 +4,13 @@ description: Абстрактный объект, используемый дл�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 99f3294f76a246e4e78f0f61b0fc1f62532c3a03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c62e65ffb6c6a0e3a8af92bda6a8b1e1c241ada7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562806"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032636"
 ---
 # <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
 
@@ -19,14 +20,14 @@ ms.locfileid: "32562806"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|String| Описание организации.|
-|displayName|String| Отображаемое имя Организации.|
+|displayName|Строка| Отображаемое имя Организации.|
 |externalSource|Едукатионекстерналсаурце| Источник, из которого была создана данная организация. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

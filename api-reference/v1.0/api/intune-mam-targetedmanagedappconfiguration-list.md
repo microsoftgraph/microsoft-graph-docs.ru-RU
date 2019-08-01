@@ -4,12 +4,13 @@ description: Список свойств и связей объектов target
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d58516c9e6b72f8412f3a75be53092f18b9fe2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4e501983ef8ff489f36910198e842258231d39a7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583169"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020537"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Перечисление объектов targetedManagedAppConfiguration
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/targetedManagedAppConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример

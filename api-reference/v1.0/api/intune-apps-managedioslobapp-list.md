@@ -4,12 +4,13 @@ description: Список свойств и связей объектов manage
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a26b64ccd605331fe0be7c6d1528c26acf5b81f9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 8293e36339975857f35c8fdcd0242f43ebad06e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578052"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002232"
 ---
 # <a name="list-managedioslobapps"></a>Перечисление объектов managedIOSLobApp
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

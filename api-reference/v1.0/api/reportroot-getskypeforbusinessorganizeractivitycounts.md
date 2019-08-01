@@ -4,12 +4,13 @@ description: Получение сведений о том, как меняет�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 9f57d6e21ca60855c58fd16bacf8a8fd0b38d9c7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: cacbff6b813f95f212e1b1297f2d92e4b36ec6e9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892375"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024890"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivitycounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityCounts
 

@@ -4,12 +4,13 @@ description: Удаляет объект windows10EndpointProtectionConfiguratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24b94c0eb16dcfccba28c9918f7fbf5e4395b9a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c889bec46ae226b452c6a7c0ac139fc4199d84a3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558183"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020264"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Удаление объекта windows10EndpointProtectionConfiguration
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

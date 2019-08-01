@@ -5,16 +5,17 @@ title: Тип ресурса deleteAction
 description: Объект deleteAction предоставляет сведения об удалении элемента.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ba5004c17f1cc71f66420a81b5eb66603df00eee
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 93f605e74a0a483a94593a9aaa40d6fd30efe914
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970819"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032734"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса deleteAction
 
-Присутствие ресурса **deleteAction** в [**itemActivity**] [ activity] указывает на то, что действие удалило элемент.
+Присутствие ресурса **deleteAction** в [**itemActivity**][activity] указывает на то, что действие удалило элемент.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

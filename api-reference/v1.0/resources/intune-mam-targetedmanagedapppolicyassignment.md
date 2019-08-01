@@ -4,12 +4,13 @@ description: Тип развертывания групп или приложе�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b496dea2e39c3e8f5e4f7d15e5cc7893df259069
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: df0dfad513a3da06e6088e322a5bb8740bd011d7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465519"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037802"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>Тип ресурса targetedManagedAppPolicyAssignment
 

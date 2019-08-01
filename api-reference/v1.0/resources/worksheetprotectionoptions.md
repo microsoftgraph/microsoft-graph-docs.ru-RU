@@ -4,32 +4,31 @@ description: Представляет параметры защиты листа
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 80a77f0ca9e1945a75f1b07aa40ccae490942f6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 083cc86ef5fd7361f2dfd11f8cb2aff501d06035
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521875"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033238"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Тип ресурса WorksheetProtectionOptions
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет параметры защиты листа.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowAutoFilter|логический|Представляет параметр защиты листа, разрешающий использовать функцию автофильтра.|
-|allowDeleteColumns|логический|Представляет параметр защиты листа, разрешающий удалять столбцы.|
-|allowDeleteRows|логический|Представляет параметр защиты листа, разрешающий удалять строки.|
-|allowFormatCells|логический|Представляет параметр защиты листа, разрешающий форматировать ячейки.|
-|allowFormatColumns|логический|Представляет параметр защиты листа, разрешающий форматировать столбцы.|
-|allowFormatRows|логический|Представляет параметр защиты листа, разрешающий форматировать строки.|
-|allowInsertColumns|логический|Представляет параметр защиты листа, разрешающий вставлять столбцы.|
-|allowInsertHyperlinks|логический|Представляет параметр защиты листа, разрешающий вставлять гиперссылки.|
-|allowInsertRows|логический|Представляет параметр защиты листа, разрешающий вставлять строки.|
-|allowPivotTables|логический|Представляет параметр защиты листа, разрешающий использовать функцию сводных таблиц.|
+|allowAutoFilter|boolean|Представляет параметр защиты листа, разрешающий использовать функцию автофильтра.|
+|allowDeleteColumns|boolean|Представляет параметр защиты листа, разрешающий удалять столбцы.|
+|allowDeleteRows|boolean|Представляет параметр защиты листа, разрешающий удалять строки.|
+|allowFormatCells|boolean|Представляет параметр защиты листа, разрешающий форматировать ячейки.|
+|allowFormatColumns|boolean|Представляет параметр защиты листа, разрешающий форматировать столбцы.|
+|allowFormatRows|boolean|Представляет параметр защиты листа, разрешающий форматировать строки.|
+|allowInsertColumns|boolean|Представляет параметр защиты листа, разрешающий вставлять столбцы.|
+|allowInsertHyperlinks|boolean|Представляет параметр защиты листа, разрешающий вставлять гиперссылки.|
+|allowInsertRows|boolean|Представляет параметр защиты листа, разрешающий вставлять строки.|
+|allowPivotTables|boolean|Представляет параметр защиты листа, разрешающий использовать функцию сводных таблиц.|
 |allowSort|boolean|Представляет параметр защиты листа, разрешающий использовать функцию сортировки.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +40,7 @@ ms.locfileid: "32521875"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json
@@ -63,15 +62,10 @@ ms.locfileid: "32521875"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "WorksheetProtectionOptions resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/worksheetprotectionoptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

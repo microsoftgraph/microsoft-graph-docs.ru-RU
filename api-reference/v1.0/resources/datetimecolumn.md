@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: dateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: ba650ccbe307ba286cf2182bda35a21f3c675114
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс dateTimeColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой даты или время.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 35a80a369f348193858a54226ae5b239df67447f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574766"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032776"
 ---
 # <a name="datetimecolumn-resource-type"></a>Тип ресурса dateTimeColumn
 

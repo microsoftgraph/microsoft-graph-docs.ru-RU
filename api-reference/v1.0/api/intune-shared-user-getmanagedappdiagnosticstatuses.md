@@ -4,12 +4,13 @@ description: Получает состояние диагностической 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 8af90447f721d559c5620af58e30600b1ce29b11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c12d3f03fd608f23a94afcf4ac7a2a75a6d8f846
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576677"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025801"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Функция getManagedAppDiagnosticStatuses
 
@@ -42,10 +43,10 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) в теле отклика.
 
 ## <a name="example"></a>Пример

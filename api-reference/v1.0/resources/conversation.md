@@ -4,12 +4,13 @@ description: Беседа — коллекция цепочек, содержа�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4c34f6f0d55cb27e5ce7f5f2ba6459cfbb4d5291
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563793"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029598"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -21,7 +22,7 @@ ms.locfileid: "32563793"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
+|[Перечисление бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
 |[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
 |[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
 |[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
@@ -38,12 +39,12 @@ ms.locfileid: "32563793"
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
 |Уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

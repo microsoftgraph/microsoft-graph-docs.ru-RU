@@ -4,12 +4,13 @@ description: Список свойств и связей объектов termsA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3dc2062e8706ab89f9917ad0df29fb2aa9bec38e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a5c1da79f59c1d12e6703906acc24eab06c63175
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019851"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Перечисление объектов termsAndConditionsAcceptanceStatus
 
@@ -41,10 +42,10 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Представляет ряд в диаграмме.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 4ecdc4c6f249b6783b023d0a69832a9415fc8549
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569041"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032916"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -32,7 +33,7 @@ ms.locfileid: "32569041"
 |:---------------|:--------|:----------|
 |name|string|Представляет имя ряда в диаграмме.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[Воркбукчартсериесформат](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|

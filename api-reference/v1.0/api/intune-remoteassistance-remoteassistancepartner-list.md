@@ -4,12 +4,13 @@ description: Список свойств и связей объектов remote
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae6350fd7d519991d8741d2f90350c1b7ee08201
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c10535d281661fff6036e8d3392857d6f70b8105
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585281"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023568"
 ---
 # <a name="list-remoteassistancepartners"></a>Список объектов remoteAssistancePartner
 
@@ -41,10 +42,10 @@ GET /deviceManagement/remoteAssistancePartners
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример

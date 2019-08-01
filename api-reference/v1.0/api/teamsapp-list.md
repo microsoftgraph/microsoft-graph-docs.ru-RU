@@ -1,21 +1,20 @@
 ---
 title: Список опубликованных приложений из каталога приложений Microsoft Teams
-description: 'ПереЧисление приложений из каталога приложений Microsoft Teams. '
+description: 'Перечисление приложений из каталога приложений Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 884fd932acddb1352c48e82302a6c345fadf90b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e4d56376628ef95096b14e96334f9bcb9da425f1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521791"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024233"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Список опубликованных приложений из каталога приложений Microsoft Teams
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-ПереЧисление [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
+Перечисление [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
 Сюда входят приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (Каталог приложений клиента). Чтобы получить доступ к приложениям только из каталога приложений вашей организации, `Organization` укажите в качестве **distributionMethod** в ресурсе [теамскаталогапп](../resources/teamsapp.md) .
 
 ## <a name="permissions"></a>Разрешения
@@ -48,7 +47,7 @@ GET /appCatalogs/teamsApps
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Нет.
 
@@ -67,7 +66,7 @@ GET /appCatalogs/teamsApps
 #### <a name="request"></a>Запрос
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -98,7 +97,7 @@ Content-Type: application/json
 #### <a name="request"></a>Запрос
 
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### <a name="response"></a>Отклик
@@ -119,12 +118,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

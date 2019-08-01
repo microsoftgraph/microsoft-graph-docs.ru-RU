@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта deviceMa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7ae3300ffa73aa42481930e5701755d2551a6076
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4c2e24770280509ee3823bb2a662792e809def33
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576953"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023456"
 ---
 # <a name="get-devicemanagement"></a>Получение deviceManagement
 
@@ -57,7 +58,7 @@ GET /deviceManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

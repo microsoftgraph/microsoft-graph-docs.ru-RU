@@ -2,15 +2,15 @@
 title: Тип ресурса Теамсаппинсталлатион
 description: 'TeamsApp, установленный в команде. '
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b180cae4c700eea31a5d5d9b1504f09ca12c3ae0
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+doc_type: resourcePageType
+ms.openlocfilehash: 1a76d11472b3faef95e87ed4724f1397ebe467a6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908350"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033784"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 

@@ -4,12 +4,13 @@ description: 'Добавляет строки в конец таблицы. Об
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a6f8ff3c282b687d836bff0add39f0b43f772b75
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+doc_type: apiPageType
+ms.openlocfilehash: 70b4bac141df06140327a8545816c098ec3de93d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35450438"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024485"
 ---
 # <a name="create-tablerow"></a>Создание объекта TableRow
 

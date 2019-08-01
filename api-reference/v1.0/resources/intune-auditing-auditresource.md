@@ -4,12 +4,13 @@ description: Класс, содержащий свойства ресурса а
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e2a6b2309e831a872c4cde04a951819cac292ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 14ecd6e4772e6d694707bd047899bd6b75720252
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028863"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
@@ -20,9 +21,9 @@ ms.locfileid: "32534348"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |modifiedProperties|Коллекция [auditProperty](../resources/intune-auditing-auditproperty.md)|Список измененных свойств.|
-|type|Строка|Тип ресурса аудита.|
+|type|String|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
 
 ## <a name="relationships"></a>Отношения

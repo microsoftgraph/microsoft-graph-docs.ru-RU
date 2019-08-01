@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc515f291e2ab32b744756063869ca3ca0c86cb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c406f29b999f507a1214118f9c6c5f2998d37713
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541301"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037550"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -28,15 +29,15 @@ ms.locfileid: "32541301"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
-|displayName|String|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
+|displayName|Строка|Пока не задокументировано.|
 |description|String|Пока не задокументировано.|
 |priority|Int32|Пока нет описания|
 |createdDateTime|DateTimeOffset|Пока не задокументировано.|
 |lastModifiedDateTime|DateTimeOffset|Н/Д|
 |version|Int32|Пока нет описания|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства.|

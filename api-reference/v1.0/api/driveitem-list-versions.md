@@ -3,12 +3,14 @@ title: Перечисление версий объекта DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2020cfeaaf8a47ca92312a3650813f910d9b9006
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+doc_type: apiPageType
+ms.openlocfilehash: df141939ee8ad27a96ac079ca04c1572b3f46332
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881727"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36006915"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Перечисление версий объекта DriveItem
 

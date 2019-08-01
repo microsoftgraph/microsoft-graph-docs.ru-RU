@@ -4,12 +4,13 @@ description: Удаляет объект sharedPCConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bee9e1927dba9db7df0b02bfdfbf567fd699ca0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c70417b0c281992d8c0f4df6d67ab06c1bcff8cf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020296"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Удаление объекта sharedPCConfiguration
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

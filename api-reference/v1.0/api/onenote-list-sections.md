@@ -4,12 +4,13 @@ description: Получение списка объектов Оненотесе
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c9ec0315e9f40232a3b0f81efda379a864f8d511
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: aa56033c37eb0d0c0362300f67174e449adef887
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887995"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976399"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 

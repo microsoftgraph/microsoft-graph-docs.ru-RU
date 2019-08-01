@@ -4,12 +4,13 @@ description: 'Получение списка именованных элеме�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 349bb0b8dbdcd7c11183e5d838f8a15e4cbb39c7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b2b0c8ff4622e64c8d11f52509ec7ca794a3d427
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35884326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026189"
 ---
 # <a name="list-names"></a>Перечисление имен
 

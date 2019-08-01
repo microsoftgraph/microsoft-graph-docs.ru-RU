@@ -4,12 +4,13 @@ description: Удаление пользователя на общем устр�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1602253d7b22c36b71056035491d0b18c35cd3a8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4abbae5e1ca234c51331cf77368a53a15a64aede
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584784"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996926"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Действие deleteUserFromSharedAppleDevice
 
@@ -43,7 +44,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
