@@ -4,12 +4,13 @@ description: 'Канал — это коллекция сообщений в к�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6c1f73746081e5b1e4f78acb91d43e33c1c9bf73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1db6133b4bb4c74e9515a9f14cc6f430ef0e32d5
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569461"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033020"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 

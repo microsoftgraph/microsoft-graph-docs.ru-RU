@@ -4,12 +4,13 @@ description: Обновление свойств объекта androidGeneralDe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c68c13fa95221bca7c284dcc58a2bd1d69f3ff55
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7c8daea851f088b4405b7b081bef1c33bfd3a29d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553234"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019606"
 ---
 # <a name="update-androidgeneraldeviceconfiguration"></a>Update androidGeneralDeviceConfiguration
 
@@ -41,36 +42,36 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|appsBlockClipboardSharing|Логический|Указывает, следует ли запретить совместное использование буфера обмена для копирования данных между приложениями.|
-|appsBlockCopyPaste|Логический|Указывает, следует ли запретить копирование данных между приложениями.|
-|appsBlockYouTube|Логический|Указывает, следует ли заблокировать приложение YouTube.|
-|bluetoothBlocked|Логический|Указывает, следует ли заблокировать Bluetooth.|
-|cameraBlocked|Логический|Указывает, следует ли запретить использовать камеру.|
-|cellularBlockDataRoaming|Логический|Указывает, следует ли блокировать передачу данных в роуминге.|
-|cellularBlockMessaging|Логический|Указывает, следует ли запретить обмениваться SMS и MMS.|
-|cellularBlockVoiceRoaming|Логический|Указывает, следует ли заблокировать голосовой роуминг.|
-|cellularBlockWiFiTethering|Логический|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
+|appsBlockClipboardSharing|Boolean|Указывает, следует ли запретить совместное использование буфера обмена для копирования данных между приложениями.|
+|appsBlockCopyPaste|Boolean|Указывает, следует ли запретить копирование данных между приложениями.|
+|appsBlockYouTube|Boolean|Указывает, следует ли заблокировать приложение YouTube.|
+|bluetoothBlocked|Boolean|Указывает, следует ли заблокировать Bluetooth.|
+|cameraBlocked|Boolean|Указывает, следует ли запретить использовать камеру.|
+|cellularBlockDataRoaming|Boolean|Указывает, следует ли блокировать передачу данных в роуминге.|
+|cellularBlockMessaging|Boolean|Указывает, следует ли запретить обмениваться SMS и MMS.|
+|cellularBlockVoiceRoaming|Boolean|Указывает, следует ли заблокировать голосовой роуминг.|
+|cellularBlockWiFiTethering|Boolean|Указывает, следует ли блокировать синхронизацию модема Wi-Fi.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
-|locationServicesBlocked|Логический|Указывает, следует ли заблокировать службы определения местоположения.|
-|googleAccountBlockAutoSync|Логический|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
-|googlePlayStoreBlocked|Логический|Указывает, следует ли блокировать Google Play Маркет.|
-|kioskModeBlockSleepButton|Логический|Указывает, следует ли блокировать кнопку спящего режима экрана в режиме терминала.|
-|kioskModeBlockVolumeButtons|Логический|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
+|diagnosticDataBlockSubmission|Boolean|Указывает, следует ли заблокировать отправку диагностических данных.|
+|locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
+|googleAccountBlockAutoSync|Boolean|Указывает, следует ли блокировать автоматическую синхронизацию учетной записи Google.|
+|googlePlayStoreBlocked|Boolean|Указывает, следует ли блокировать Google Play Маркет.|
+|kioskModeBlockSleepButton|Boolean|Указывает, следует ли блокировать кнопку спящего режима экрана в режиме терминала.|
+|kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список разрешенных приложений в режиме терминала. Эта коллекция может содержать не более 500 элементов.|
 |nfcBlocked|Логический|Указывает, следует ли заблокировать NFC.|
 |passwordBlockFingerprintUnlock|Логический|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
@@ -81,27 +82,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения — от 1 до 16.|
 |passwordRequiredType|[Андроидрекуиредпассвордтипе](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
-|passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
-|powerOffBlocked|Логический|Указывает, следует ли блокировать отключение устройства.|
-|factoryResetBlocked|Логический|Указывает, следует ли запретить пользователю восстанавливать заводские настройки.|
-|screenCaptureBlocked|Логический|Указывает, следует ли запретить делать снимки экрана.|
-|deviceSharingAllowed|Логический|Указывает, следует ли разрешить режим совместного доступа к устройству.|
-|storageBlockGoogleBackup|Логический|Указывает, следует ли блокировать резервное копирование Google.|
-|storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
-|storageRequireDeviceEncryption|Логический|Указывает, обязательно ли шифрование устройства.|
-|storageRequireRemovableStorageEncryption|Логический|Указывает, обязательно ли шифрование съемных носителей.|
-|voiceAssistantBlocked|Логический|Указывает, следует ли блокировать использование голосового помощника.|
+|passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
+|powerOffBlocked|Boolean|Указывает, следует ли блокировать отключение устройства.|
+|factoryResetBlocked|Boolean|Указывает, следует ли запретить пользователю восстанавливать заводские настройки.|
+|screenCaptureBlocked|Boolean|Указывает, следует ли запретить делать снимки экрана.|
+|deviceSharingAllowed|Boolean|Указывает, следует ли разрешить режим совместного доступа к устройству.|
+|storageBlockGoogleBackup|Boolean|Указывает, следует ли блокировать резервное копирование Google.|
+|storageBlockRemovableStorage|Boolean|Указывает, следует ли запретить использовать съемные носители.|
+|storageRequireDeviceEncryption|Boolean|Указывает, обязательно ли шифрование устройства.|
+|storageRequireRemovableStorageEncryption|Boolean|Указывает, обязательно ли шифрование съемных носителей.|
+|voiceAssistantBlocked|Boolean|Указывает, следует ли блокировать использование голосового помощника.|
 |voiceDialingBlocked|Логический|Указывает, следует ли заблокировать голосовой набор.|
-|webBrowserBlockPopups|Логический|Указывает, следует ли блокировать всплывающие окна в веб-браузере.|
-|webBrowserBlockAutofill|Логический|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
-|webBrowserBlockJavaScript|Логический|Указывает, следует ли заблокировать JavaScript в веб-браузере.|
-|webBrowserBlocked|Логический|Указывает, следует ли заблокировать веб-браузер.|
+|webBrowserBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в веб-браузере.|
+|webBrowserBlockAutofill|Boolean|Указывает, следует ли заблокировать функцию автозаполнения в веб-браузере.|
+|webBrowserBlockJavaScript|Boolean|Указывает, следует ли заблокировать JavaScript в веб-браузере.|
+|webBrowserBlocked|Boolean|Указывает, следует ли заблокировать веб-браузер.|
 |webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Настройки файлов cookie в веб-браузере. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Boolean|Указывает, следует ли заблокировать синхронизацию Wi-Fi.|
 |appsInstallAllowList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, которые можно установить на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
 |appsLaunchBlockList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, которые запрещено запускать на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
 |appsHideList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, которые следует скрыть на устройстве KNOX. Эта коллекция может содержать не более 500 элементов.|
-|securityRequireVerifyApps|Логический|Указывает, что требуется включить функцию проверки приложений для Android.|
+|securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
 
 
 

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a33245074d351624ad8f7cd5f3d4791cf752fd8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 924e2fb33afc4108b4c464ae270278d103102fdc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542013"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36019200"
 ---
 # <a name="list-deviceconfigurations"></a>Перечисление объектов deviceConfiguration
 
@@ -41,10 +42,10 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

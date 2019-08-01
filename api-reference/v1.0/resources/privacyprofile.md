@@ -2,12 +2,15 @@
 title: Тип ресурса privacyProfile
 description: Представляет профиль конфиденциальности организации, который включает URL-адрес заявления о конфиденциальности и сведения о контактном лице, к которому можно обращаться по вопросам, касающимся этого заявления.
 localization_priority: Normal
-ms.openlocfilehash: 29c4a01cde0e05c42ce74576e769ca005840e854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 02942e654eb198986d765489e2f35b75e2611e92
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579883"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035093"
 ---
 # <a name="privacyprofile-resource-type"></a>Тип ресурса privacyProfile
 
@@ -19,7 +22,7 @@ ms.locfileid: "32579883"
 |contactEmail|String| Допустимый электронный адрес SMTP для контактного лица, к которому можно обращаться по вопросам, касающимся заявления о конфиденциальности. Не требуется.|
 |statementUrl|String| Допустимый формат URL-адреса, который начинается с http:// или https://. Максимальная длина составляет 255 символов. URL-адрес заявления о конфиденциальности организации. Не обязательное.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

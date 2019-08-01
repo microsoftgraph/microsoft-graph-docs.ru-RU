@@ -4,12 +4,13 @@ description: Этот класс содержит параметры обесп�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0afde9e7bbdc5a5bcf7c442d0d9f17c298bd574
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d2d3cb3522bf8ffdf06d565d7d69e915efb06b06
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585078"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027680"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>Тип ресурса windows81CompliancePolicy
 
@@ -50,7 +51,7 @@ ms.locfileid: "32585078"
 |osMaximumVersion|String|Максимальная версия Windows 8.1.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройстве с Windows 8.1.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

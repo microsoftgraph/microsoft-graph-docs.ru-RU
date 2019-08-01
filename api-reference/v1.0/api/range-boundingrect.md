@@ -4,12 +4,13 @@ description: .
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9e8f5ef8a4c7c55ead433b0aa0557ce5fca74ecc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c69dd039ee62e422c069fa00ea260cbbfda72205
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022252"
 ---
 # <a name="range-boundingrect"></a>Range: BoundingRect
 
@@ -37,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

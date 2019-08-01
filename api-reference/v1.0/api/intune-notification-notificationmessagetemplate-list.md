@@ -4,12 +4,13 @@ description: Список свойств и связей объектов notifi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1334ae2925fe0d8dddc1f50a6e26b79ea6a4927e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: b8d2794ff1029c00204faf5e81d51bf83a33f927
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561721"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35974803"
 ---
 # <a name="list-notificationmessagetemplates"></a>Перечисление объектов notificationMessageTemplate
 
@@ -41,10 +42,10 @@ GET /deviceManagement/notificationMessageTemplates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) в теле отклика.
 
 ## <a name="example"></a>Пример

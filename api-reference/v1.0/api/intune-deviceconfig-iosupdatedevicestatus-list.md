@@ -4,12 +4,13 @@ description: Список свойств и связей объектов iosUpd
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 681495495892e6d00f692bc8aa6c9afca0706e15
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 569a92832e76f56f61ba506ef62b50e72561fd0c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549813"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017184"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Перечисление объектов iosUpdateDeviceStatus
 
@@ -41,10 +42,10 @@ GET /deviceManagement/iosUpdateStatuses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Обновление свойств объекта **plannerbucket*
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d2bcbda13cf5a3f169ac5d0cafd2841499f186db
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: fb7ba12d7896d1c1f8a199b73c29edc3d056a60b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891947"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976147"
 ---
 # <a name="update-plannerbucket"></a>Обновление объекта plannerbucket
 

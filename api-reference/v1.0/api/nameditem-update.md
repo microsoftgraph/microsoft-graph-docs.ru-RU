@@ -2,12 +2,15 @@
 title: Обновление объекта NamedItem
 description: Обновление свойств объекта nameditem.
 localization_priority: Normal
-ms.openlocfilehash: ad7f899791d64d5d3ef431d8875cba6fbcd150c0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 17bb61d87777b3d62c8ca399aebbabd5eb7f888c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890239"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976582"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 

@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта macOSDev
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6bb2d75fc66b97cf4dab6d28261d29cbb7cbd612
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 1145cceb036d41df96f9c8dbdcb4653da1c8e945
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562176"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997459"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Получение объекта macOSDeviceFeaturesConfiguration
 
@@ -44,10 +45,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

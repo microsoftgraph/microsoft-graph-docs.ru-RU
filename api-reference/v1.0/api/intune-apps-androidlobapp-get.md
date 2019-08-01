@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта androidL
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa0f09dab949f2e5934a609fc3ddbc47bc11f2c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: e501b186cd1b5ea33fa67eb674c41f27fe1f8ff3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577555"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002680"
 ---
 # <a name="get-androidlobapp"></a>Get androidLobApp
 
@@ -44,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

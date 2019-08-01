@@ -4,12 +4,13 @@ description: Получение списка пользователей, явл�
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 165ca84b2d081e971311ffa16b1bed5cf620cb17
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: f21a238e5cf5cf898b269f012442cfeb329a2baf
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883442"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002974"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 

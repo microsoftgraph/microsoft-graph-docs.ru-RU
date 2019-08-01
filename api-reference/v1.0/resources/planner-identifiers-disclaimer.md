@@ -4,12 +4,13 @@ description: 'Идентификаторы объектов в планиров�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 75c284d576ed6f03691828309fab7ed899c1c066
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 75a0262b085b6649d7390a2a6196d0190cdefc5d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462454"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035450"
 ---
 # <a name="identifiers-in-planner"></a>Идентификаторы в планировщике
 

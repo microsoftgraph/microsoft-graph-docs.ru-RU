@@ -4,12 +4,13 @@ description: Содержит свойства для одного файла у
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8edeebdc3df12d3e1a458ae57e805052e47e3d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 48cb6d12234135aa3bdab6eaba123f99faa51bf8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557882"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032160"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Тип ресурса mobileAppContentFile
 

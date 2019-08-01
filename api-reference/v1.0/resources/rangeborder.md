@@ -4,12 +4,13 @@ description: Представляет границу объекта.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9c32264311400951152f892e6f88d70645f47064
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8b5a12c05bed39363d8a8a01eef749f2e88b929e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579489"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034932"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
 
@@ -31,8 +32,8 @@ ms.locfileid: "32579489"
 |color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
 |id|string|Представляет идентификатор границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
 |Сидеиндекс|string|Постоянное значение, указывающее определенную сторону границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
-|стиль|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные `None`значения:, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`,. `SlantDashDot`|
-|weight|string|Определяет толщину границы вокруг диапазона. `Hairline`Возможные значения: `Thin`,, `Medium`,. `Thick`|
+|style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные `None`значения:, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`,. `SlantDashDot`|
+|weight|string|Определяет толщину границы вокруг диапазона. Допустимые значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="relationships"></a>Отношения
 Нет

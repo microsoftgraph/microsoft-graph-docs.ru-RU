@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс sharedDriveItem возвращается при использовании API shares для доступа к общему driveItem.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1f6684e9c266a800f5a76a7085a8af22ea9518e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549638"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034337"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -56,15 +59,15 @@ ms.locfileid: "32549638"
 | Имя связи | Тип                | Описание
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | Используется для доступа к базовому объекту **driveItem**
-| **list**          | [**list**][list]        | Используется для доступа к базовому объекту **list**
+| **list**          | [**перечн**][list]        | Используется для доступа к базовому объекту **list**
 | **listItem**      | [**listItem**][listItem]    | Используется для доступа к базовому объекту **listItem**
-| **site**          | [**site**][site]        | Используется для доступа к базовому объекту **site**
+| **site**          | [**страницу**][site]        | Используется для доступа к базовому объекту **site**
 
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
 
 | Имя связи | Тип                         | Описание
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
+| **items**         | Коллекция [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
 | **root**          | [**driveItem**][driveItem]   | Используется для доступа к базовому **driveItem**. Рекомендуется использовать `driveItem` вместо этого.
 
 [driveItem]: driveitem.md

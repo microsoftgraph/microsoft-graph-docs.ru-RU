@@ -4,12 +4,13 @@ description: Список свойств и связей объектов roleDe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4df05098fccbc74056a0e10516b573dfce0ca141
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f546f100551b93749adc7625bb37f6e297e89dc3
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585204"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023701"
 ---
 # <a name="list-roledefinitions"></a>Перечисление объектов roleDefinition
 
@@ -41,10 +42,10 @@ GET /deviceManagement/roleDefinitions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [roleDefinition](../resources/intune-rbac-roledefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример

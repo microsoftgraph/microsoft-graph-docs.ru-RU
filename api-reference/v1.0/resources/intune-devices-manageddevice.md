@@ -4,12 +4,13 @@ description: Устройства, которые управляются или 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3672e9a03c3259c56744a9c786cf6b1b8eacc7f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 9d46ca04225e3ceb8df79e72ce80be019af4fd8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522631"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027470"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -47,7 +48,7 @@ ms.locfileid: "32522631"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства.|
+|id|Строка|Уникальный идентификатор устройства.|
 |userId|String|Уникальный идентификатор пользователя, связанного с устройством.
 |
 |deviceName|String|Название устройства|
@@ -99,7 +100,7 @@ ms.locfileid: "32522631"
 |partnerReportedThreatState|[Манажеддевицепартнеррепортедхеалсстате](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Указывает состояние подверженности устройства угрозам при использовании решения Mobile Threat Defense (в учетной записи и на устройстве).
  Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Категория устройства|

@@ -4,16 +4,15 @@ description: Состояние определенных длительно вы
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: eaab313e9399e6e8724d5096b7ac29ec315889ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 179bdad12d81298605a7ac196ab717b9024e9df0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462664"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035779"
 ---
 # <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Состояние определенных длительно выполняемых операций OneNote.
 
@@ -21,11 +20,10 @@ ms.locfileid: "32462664"
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -47,12 +45,12 @@ ms.locfileid: "32462664"
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
 |error|[Оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
-|id|строка|Идентификатор операции. Только для чтения.|
+|id|string|Идентификатор операции. Только для чтения.|
 |Ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
-|resourceId|строка|Идентификатор ресурса.|
-|Ресаурцелокатион|строка|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
+|resourceId|string|Идентификатор ресурса.|
+|Ресаурцелокатион|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
 |status|string|Текущее состояние операции: `notstarted`, `running`,, `completed``failed` |
-|percentComplete|строка|Процент завершения операции, если операция все еще находится в `running` состоянии.
+|percentComplete|string|Процент завершения операции, если операция все еще находится в `running` состоянии.
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -66,15 +64,10 @@ ms.locfileid: "32462664"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "onenoteOperation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenoteoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

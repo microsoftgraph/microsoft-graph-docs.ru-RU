@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ed9a6facc72bc941b3e26a802d324e1354d339a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d25838240d55cf78bf2d36b4742c8d18a1cfb174
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577023"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025909"
 ---
 # <a name="list-devicecategories"></a>Перечисление объектов deviceCategory
 
@@ -42,10 +43,10 @@ GET /deviceManagement/deviceCategories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceCategory](../resources/intune-shared-devicecategory.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Обновление свойств объекта deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a32034bd88c0295eaff9fc5c29e7dc45961bb4ac
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576967"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023470"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -43,16 +44,16 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Входящая миграция**|
-|displayName|String|Отображаемое имя категории устройств.|
+|displayName|Строка|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
 
@@ -76,7 +77,7 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будут зависеть от контекста.
 ``` http
 HTTP/1.1 200 OK

@@ -4,12 +4,13 @@ description: Удаляет объект iosStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 708360f8d95b5fad6e939e983101b7b97b2ba98f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: d85c748cd34eb0300d6345c3fe90015d6c7b163c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577345"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997906"
 ---
 # <a name="delete-iosstoreapp"></a>Удаление объекта iosStoreApp
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

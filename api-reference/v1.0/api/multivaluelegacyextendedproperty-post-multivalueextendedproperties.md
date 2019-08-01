@@ -2,12 +2,15 @@
 title: Создание расширенного свойства с несколькими значениями
 description: 'Создание одного или нескольких многозначных расширенных свойств в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
-ms.openlocfilehash: ded36690cdbe684f78bed6af6aee9dba0b09854d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 87cb6d617d719575705bdfb9379f4b5a87ddfe57
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560993"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35976602"
 ---
 # <a name="create-multi-value-extended-property"></a>Создание расширенного свойства с несколькими значениями
 
@@ -15,16 +18,16 @@ ms.locfileid: "32560993"
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
+- [calendar](../resources/calendar.md);
+- [contact](../resources/contact.md);
 - [contactFolder](../resources/contactfolder.md). 
 - [event](../resources/event.md)
-- [mailFolder](../resources/mailfolder.md);
+- [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [calendar](../resources/calendar.md) для групп
+- [calendar](../resources/calendar.md) для групп;
 - group [event](../resources/event.md);
 - [post](../resources/post.md) для групп. 
 
@@ -39,10 +42,10 @@ ms.locfileid: "32560993"
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md). | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| [calendar](../resources/calendar.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [calendar](../resources/calendar.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
-| group [post](../resources/post.md). | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
-| [mailFolder](../resources/mailfolder.md); | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [post](../resources/post.md) для групп. | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -117,7 +120,7 @@ PATCH /groups/{id}/events/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Предоставьте тело в формате JSON для каждого объекта [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
 
@@ -198,7 +201,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Отклик 1
+##### <a name="response-1"></a>Отклик 1
 
 Отклик в результате успешного выполнения обозначен кодом `HTTP 201 Created` и включает в себя новое событие, подобно отклику при [создании просто события](../api/user-post-events.md). Отклик не включает только что созданные расширенные свойства.
 

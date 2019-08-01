@@ -3,12 +3,14 @@ title: Тип ресурса Контролскоре
 description: Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 64b5377fce01273ab31d7ec293f5dc7a6e1342ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 68e4bf278b7d1b6ea6f00f75192847abab1ae3a4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629287"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032846"
 ---
 #  <a name="controlscore-resource-type"></a>Тип ресурса Контролскоре
 
@@ -23,7 +25,7 @@ ms.locfileid: "33629287"
 |Контролкатегори|String|Категория действий управления (идентификация, данные, устройство, приложения, инфраструктура).|
 |description|String| Описание элемента управления.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

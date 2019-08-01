@@ -4,12 +4,13 @@ description: Конфигурация запланированного дейс�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b0a507ffb080f2354e5c854810554da64b47e7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1858996a6d0e41b7dfa8a2a4854a33878e7e13c2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534796"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36028534"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Тип ресурса deviceComplianceActionItem
 

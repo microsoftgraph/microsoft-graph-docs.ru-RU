@@ -4,12 +4,13 @@ description: Удаляет объект iosVppEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17556ff93c13032457d0cf69cae9f2a15a9d7035
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 0dfb0950b6827d73c84e24a58448ec34c45a1d4a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015805"
 ---
 # <a name="delete-iosvppebookassignment"></a>Удаление объекта iosVppEBookAssignment
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -5,12 +5,13 @@ title: Получение Итеманалитикс
 description: Получение Итеманалитикс о представлениях, которые были выполнены для этого ресурса.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fec410281cc8f3ae053264a54ab200558691335b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: dd8ba2295a84c5ff4612b64c4a1b4485c5a95dbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888405"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023246"
 ---
 # <a name="get-itemanalytics"></a>Получение Итеманалитикс
 

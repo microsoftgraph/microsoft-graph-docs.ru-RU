@@ -4,12 +4,13 @@ description: 'Управление доступом на основе ролей
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: caae38f5f5f7cdae16850eb88303b40017d15ef7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: d65da14a0a8d111136e257985803bfe5ad7932a0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567475"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037207"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Управление доступом на основе ролей в Microsoft Intune
 

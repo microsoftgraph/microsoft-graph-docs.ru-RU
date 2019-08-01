@@ -4,12 +4,13 @@ description: Получение списка объектов Domain.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0e084e016180b14d3a596023a1c898ba51d75829
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9d4ae1b7a1cf350a209006e3bc69e3f6a7da46fc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883274"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016570"
 ---
 # <a name="list-domains"></a>Список доменов
 

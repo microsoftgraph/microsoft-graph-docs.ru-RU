@@ -4,12 +4,13 @@ description: Используя Saaswedo (службу управления за
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 7ae9aefc3504de430b11c2d80a8cf51906426d16
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: b2d581c6c10a1782a1b75be37f7b040f3c9dbd3b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571788"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036815"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 

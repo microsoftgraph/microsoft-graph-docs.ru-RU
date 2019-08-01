@@ -4,12 +4,13 @@ description: Создание объекта detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7135b3ee02e0bf6b4c8d7a8cd4fe62a658b5f961
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: f7f0c88f63c3ff6e2dd3cad8586df6b96625e7b1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542090"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021062"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
 
@@ -41,7 +42,7 @@ POST /deviceManagement/detectedApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта detectedApp в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта detectedApp.
@@ -49,7 +50,7 @@ POST /deviceManagement/detectedApps
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|String|Имя обнаруженного приложения. Только для чтения|
+|displayName|Строка|Имя обнаруженного приложения. Только для чтения|
 |version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|

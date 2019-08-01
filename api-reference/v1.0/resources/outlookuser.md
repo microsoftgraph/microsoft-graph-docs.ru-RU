@@ -4,12 +4,13 @@ description: Представляет службы Outlook, доступные �
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 32d621b71770d220487b60b4573fb34cdf28d526
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 754ae286c97e4c6ddae4ed6fb4f34aef5733090f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462671"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035681"
 ---
 # <a name="outlookuser-resource-type"></a>Тип ресурса outlookUser
 
@@ -30,7 +31,7 @@ ms.locfileid: "32462671"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |masterCategories|Коллекция [outlookCategory](../resources/outlookcategory.md)| Список категорий, определенных для пользователя. | 

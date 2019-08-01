@@ -4,12 +4,13 @@ description: Список свойств и связей объектов device
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b0e374a83277df6d078464f7b9b116f71b575e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3d5965747c0a21addbbaaf85d795ff2207d9ff6f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017947"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Перечисление объектов deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -41,10 +42,10 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример

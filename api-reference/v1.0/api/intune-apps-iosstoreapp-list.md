@@ -4,12 +4,13 @@ description: Список свойств и связей объектов iosSto
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2ded7142459f8b0b211ed757c64e9bc0157f911
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: fd0708d77cbf3514f5778c1881b690fcc7acbeeb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577373"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997878"
 ---
 # <a name="list-iosstoreapps"></a>Перечисление объектов iosStoreApp
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosStoreApp](../resources/intune-apps-iosstoreapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

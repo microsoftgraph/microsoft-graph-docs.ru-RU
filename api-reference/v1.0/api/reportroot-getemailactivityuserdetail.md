@@ -4,12 +4,13 @@ description: Узнайте, какие действия пользовател�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 3cf199d821454d312041e2004aaac03188079470
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 9d9e24dfaebdc9a8321a3d2443e02d3fc9011311
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025178"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 

@@ -4,12 +4,13 @@ description: Эти отчеты позволяют узнать, сколько
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: cb0b760bf58d9127d7cec97ac700fe04f6f7f481
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 95c377ae8ee00c39196586822019e33ad97fcb8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463140"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035972"
 ---
 # <a name="office-365-active-users-reports"></a>Отчеты об активных пользователях Office 365
 
@@ -21,5 +22,5 @@ ms.locfileid: "32463140"
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Получите сведения об активных пользователях Office 365. |
-| [Получение количества пользователей](../api/reportroot-getoffice365activeusercounts.md) | Stream      | Узнайте, сколько активных пользователей в день было у каждого продукта в отчетный период. |
+| [Получение количества пользователей](../api/reportroot-getoffice365activeusercounts.md) | Поток      | Узнайте, сколько активных пользователей в день было у каждого продукта в отчетный период. |
 | [Получение количества пользователей по службам](../api/reportroot-getoffice365servicesusercounts.md) | Поток      | Узнайте, сколько пользователей были активны и неактивны в каждой службе. |

@@ -4,12 +4,13 @@ description: 'Ресурс deviceManagement представляет конте�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 08f04242b379fee6ebcc4496e10d342fd3ec342e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 8f8ef8fcb3d38ca46ab95e63a92e5f108d8a7782
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571914"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036948"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -27,7 +28,7 @@ ms.locfileid: "32571914"
 - Политики, параметры и сведения о входящей миграции  
 - Политики управления доступом на основе ролей (RBAC)  
 - Партнеры удаленного помощника  
-- Партнеры по управлению телеКоммуникационной експансе  
+- Партнеры по управлению телекоммуникационной експансе  
 - События устранения неполадок  
 - Сводки Windows Information Protection  
 
@@ -52,7 +53,7 @@ ms.locfileid: "32571914"
 |**Входящая миграция**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложений "Корпоративный портал" и веб-портала пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |**Аудит**|
@@ -90,7 +91,7 @@ ms.locfileid: "32571914"
 |roleDefinitions|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Определения ролей.|
 |**Удаленная помощь**|
 |remoteAssistancePartners|Коллекция [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|Партнеры по удаленной помощи.|
-|**Управление расходами по телеКоммуникационной связи**|
+|**Управление расходами по телекоммуникационной связи**|
 |telecomExpenseManagementPartners|Коллекция [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md)|Партнеры по управлению затратами на телекоммуникации.|
 |**Устранение неполадок**|
 |troubleshootingEvents|Коллекция [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|Список событий устранения неполадок для клиента.|

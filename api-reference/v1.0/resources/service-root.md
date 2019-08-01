@@ -1,13 +1,16 @@
 ---
 title: Корневой каталог для обслуживания
-description: 2015-10-25 14:57:30 UTC — _Гт_
+description: 2015-10-25 14:57:30 UTC — >
 localization_priority: Normal
-ms.openlocfilehash: 7fc6729eac7dc32e0f92770fc3357af960510dd8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 8a4c31b24fd22929fae3d4848c141efacb894ef7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549659"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034414"
 ---
 # <a name="service-root"></a>Корневой каталог для обслуживания
 

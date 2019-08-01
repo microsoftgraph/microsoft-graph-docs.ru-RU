@@ -4,12 +4,13 @@ description: Получение списка объектов **plannerPlan**, �
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 70f8194367f68dc189c0fb929c3950030f3c3644
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 4a6fa05502f37248ac80b91a0729cb5c5cf35129
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35855042"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022413"
 ---
 # <a name="list-plans"></a>Список планов
 

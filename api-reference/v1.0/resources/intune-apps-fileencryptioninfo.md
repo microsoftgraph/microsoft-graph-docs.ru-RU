@@ -4,12 +4,13 @@ description: Содержит свойства сведений о шифров�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f9d9dce2516c1978058dd1c9ddbf2211a3d88da
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+doc_type: resourcePageType
+ms.openlocfilehash: a6aa144db5b4bc06177af77b965a6268d199105a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620257"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029192"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 

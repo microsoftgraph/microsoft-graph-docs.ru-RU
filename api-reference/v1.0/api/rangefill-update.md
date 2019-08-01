@@ -4,12 +4,13 @@ description: Обновление свойств объекта rangefill.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 824cd06d038810daca426b31173909a6919ba821
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 123f705873fff56d35fd9d5afa95a90d9e74a1bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889853"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36025269"
 ---
 # <a name="update-rangefill"></a>Обновление объекта rangeFill
 

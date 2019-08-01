@@ -4,12 +4,13 @@ description: Группы — это коллекции пользователе
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 46d8f1db9a2c3c12add07787d62fe02c588cd6ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 7e523fd27aabc5c1051a45f80b5505db2dd51e16
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570836"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032426"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
@@ -71,7 +72,7 @@ ms.locfileid: "32570836"
 
 Группы безопасности предназначены для управления доступом пользователей к ресурсам. Проверяя, является ли пользователь членом группы безопасности, приложение может принимать решения касательно авторизации, когда пользователь пытается получить доступ к защищенным ресурсам в приложении. Членами групп безопасности могут быть как пользователи, так и другие группы безопасности.
 
-Группы безопасности, поддерживающие почту, используются так же, как и обычные группы безопасности, но включают общий почтовый ящик. Группы безопасности, поддерживающие почту, нельзя создавать через API, но с ними можно выполнять все остальные операции для групп.  Группы безопасности, поддерживающие почту, доступны только для чтения. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange](https://technet.microsoft.com/ru-RU/library/bb123521%28v=exchg.160%29.aspx).
+Группы безопасности, поддерживающие почту, используются так же, как и обычные группы безопасности, но включают общий почтовый ящик. Группы безопасности, поддерживающие почту, нельзя создавать через API, но с ними можно выполнять все остальные операции для групп.  Группы безопасности, поддерживающие почту, доступны только для чтения. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
 
 ### <a name="security-group-example"></a>Пример группы безопасности
 
@@ -118,7 +119,7 @@ POST https://graph.microsoft.com/beta/groups
 
 Дополнительные сведения о составлении правил членства см. в статье [Создание правил на основе атрибутов для динамического членства в группах в Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
-> **Примечание.** Чтобы правила динамического членства работали, у клиента должна быть лицензия на уровне [Azure Active Directory Premium P1](https://azure.microsoft.com/ru-RU/pricing/details/active-directory/) или выше.
+> **Примечание.** Чтобы правила динамического членства работали, у клиента должна быть лицензия на уровне [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) или выше.
 
 ## <a name="other-types-of-groups"></a>Группы других типов
 

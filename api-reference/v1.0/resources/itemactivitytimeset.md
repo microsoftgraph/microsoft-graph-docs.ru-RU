@@ -5,16 +5,17 @@ title: Тип ресурса itemActivityTimeSet
 description: Объект itemActionSet предоставляет сведения о действиях, которые были выполнены над элементом.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4ef0b56471afe78b13edc2f6efb25941c9a749df
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: 9dce21afc1acc8e93181204e026f74a597c9120f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33970816"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036591"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса itemActivityTimeSet
 
-Ресурс **itemActivityTimeSet** предоставляет сведения о том, когда выполнялось [действие] [ activity] для элемента.
+Ресурс **itemActivityTimeSet** предоставляет сведения о том, когда выполнялось [действие][activity] для элемента.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

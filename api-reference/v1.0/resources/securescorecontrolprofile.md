@@ -3,12 +3,14 @@ title: Тип ресурса Секурескореконтролпрофиле
 description: Представляет уровень безопасности клиента для данных элемента управления. По умолчанию он возвращает все элементы управления для клиента и может явно извлекать отдельные элементы управления.
 localization_priority: Normal
 author: preetikr
-ms.openlocfilehash: 98b335d536ab64000b65756f8c60e0f401f028fd
-ms.sourcegitcommit: c0df90d66cb2072848d4bb0bf730c47a601b99ce
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 40bee951d3030772973911510ebba7cc90f412ae
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537200"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034491"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>Тип ресурса Секурескореконтролпрофиле
 
@@ -19,7 +21,7 @@ ms.locfileid: "34537200"
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Перечисление объектов secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта Секурескореконтролпрофилес.|
+|[Список объектов secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта Секурескореконтролпрофилес.|
 |[Получение объектов secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [секурескореконтролпрофиле](securescorecontrolprofile.md) |Чтение свойств и метаданных объекта Секурескореконтролпрофилес.|
 |[Обновление секурескореконтролпрофиле](../api/securescorecontrolprofile-update.md) | [секурескореконтролпрофиле](securescorecontrolprofile.md) |Обновление объекта секурескореконтролпрофиле. |
 

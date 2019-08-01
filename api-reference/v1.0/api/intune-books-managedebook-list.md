@@ -4,12 +4,13 @@ description: Список свойств и связей объектов manage
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88e7c4a76bd8a0d9856a49f7d14169c6e27f5be4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 02aeebefd6e5ad14d158c9bd007d320ede6372e0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525007"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018430"
 ---
 # <a name="list-managedebooks"></a>Перечисление объектов managedEBook
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/managedEBooks
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedEBook](../resources/intune-books-managedebook.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

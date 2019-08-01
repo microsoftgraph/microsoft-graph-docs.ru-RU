@@ -4,12 +4,13 @@ description: Ошибки в API безопасности Microsoft Graph воз
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 52b7c375bd3e0c6a367f1150a21bb96ef84437ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 2d77a0f21623a98e4041b845e92a23c7574a415d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560755"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034470"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы на ошибки API безопасности Microsoft Graph
 
@@ -24,7 +25,7 @@ API безопасности Microsoft Graph — это Федеративная
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Примеры:
+Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Пример:
 
 - HttpStatusCode. запрещено (403) может быть возвращено, если доступ к ресурсу не предоставляется.
 - Если время ожидания поставщика истекло, в заголовке предупреждения возвращается HttpStatusCode. Гатевайтимеаут (504).
@@ -52,9 +53,9 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="constraints"></a>Провероч
 
-параметр `$top` запроса odata имеет предел в 1000 оповещений, а сочетание `$top`  +  `$skip` параметров запроса odata не может превышать 6000 оповещений. Например, `/security/alerts?$top=10&$skip=5990` возвращает код `200 OK` отклика, но `/security/alerts?$top=10&$skip=5991` возвратит код `400 Bad Request` отклика.
+Параметр `$top` запроса OData имеет предел в 1000 оповещений, а сочетание `$top`  +  `$skip` параметров запроса OData не может превышать 6000 оповещений. Например, `/security/alerts?$top=10&$skip=5990` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=5991` вернет код отклика `400 Bad Request`.
 
-Для обхода этого ограничения необходимо использовать параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (6000th) оповещение. Кроме того, можно задать диапазон для объекта `eventDateTime`; Например, *алертс_км_ $ Filter = евентдатетиме **gt** 2018-11 –**11**T00:00:00.000 з_амп_евентдатетиме **lt** 2018-11 –**12**T00:00:00.000 z*
+Для обхода этого ограничения необходимо использовать параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (6000th) оповещение. Кроме того, можно задать диапазон для объекта `eventDateTime`; Например, *Alerts? $Filter = евентдатетиме **gt** 2018-11 –**11**T00:00:00.000 z&евентдатетиме **lt** 2018-11 –**12**T00:00:00.000 z*
 
 ## <a name="see-also"></a>См. также
 

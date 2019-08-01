@@ -4,12 +4,13 @@ description: Содержит свойства возможных типов у�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f3bd1d0aff7e09d5828496de348805075d0b330
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 23d38faeafd9aac0d0e547596de51507b6932c20
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503529"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029166"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 
@@ -20,7 +21,7 @@ ms.locfileid: "32503529"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|iPad|Логический|Указывает, должно ли приложение работать на iPad.|
+|iPad|Boolean|Указывает, должно ли приложение работать на iPad.|
 |iPhoneAndIPod|Boolean|Указывает, должно ли приложение работать на iPhone и iPod.|
 
 ## <a name="relationships"></a>Отношения

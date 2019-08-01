@@ -4,12 +4,13 @@ description: Создание объекта remoteAssistancePartner.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f387750fcd06bc2520479b511c24b4ac7ce333dd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7b0c3f59d3e5169444d782c139e954e87904defe
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32585267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023659"
 ---
 # <a name="create-remoteassistancepartner"></a>Создание объекта remoteAssistancePartner
 
@@ -41,7 +42,7 @@ POST /deviceManagement/remoteAssistancePartners
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта remoteAssistancePartner в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта remoteAssistancePartner.

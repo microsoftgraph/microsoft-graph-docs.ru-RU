@@ -4,12 +4,13 @@ description: Получает объект диапазона, содержащ�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 96069c11d8e520b64854eb7a2a72dc9d5f6de25b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 39370dafce1d404f4412cbda6e907aaff115afb6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569916"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026245"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 
@@ -44,10 +45,10 @@ GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
 

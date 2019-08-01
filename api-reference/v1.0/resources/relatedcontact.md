@@ -4,12 +4,13 @@ description: Контактная запись, связанная с educationU
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7e3829de2ffeb073d8360976ce70d13985fcae39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 7a2040bbe357a7cc89dffed1ad4332bf89077204
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579410"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034764"
 ---
 # <a name="realtedcontact-resource-type"></a>Тип ресурса Реалтедконтакт
 
@@ -19,7 +20,7 @@ ms.locfileid: "32579410"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Строка|Идентификатор контакта в Azure Active Directory.|
-|displayName|Строка|Имя контакта. Обязательный.|
+|displayName|Строка|Имя контакта. Обязательно.|
 |emailAddress|String|Основной адрес электронной почты контакта.|
 |mobilePhone|String|Номер мобильного телефона контакта.|
 |Отношение|`contactRelationship`|Отношение к пользователю. Возможные значения: `parent`, `relative`, `aide`, `doctor` `guardian` `child`,,, `other`, `unknownFutureValue`.|

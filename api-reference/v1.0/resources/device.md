@@ -4,12 +4,13 @@ description: Представляет устройство, зарегистри
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: adfe8ddda99f5ff9ef516aba286f866cb7957dfa
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+doc_type: resourcePageType
+ms.openlocfilehash: 78b2b10e904580f10a4a186863c9caca994b8de7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34658045"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032783"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 

@@ -2,12 +2,15 @@
 title: Тип ресурса attachment
 description: Вы можете добавить связанное содержимое в экземпляр event,
 localization_priority: Priority
-ms.openlocfilehash: 284895871a0c6a80140ff248045b89d2de104c20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: d47fde49a76f00658e39d9a3ae6629cd9bcf56b7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569384"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36030074"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 

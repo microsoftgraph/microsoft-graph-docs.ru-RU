@@ -1,14 +1,14 @@
 ---
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
-author: jthake-msft
+author: ''
 localization_priority: Priority
-ms.openlocfilehash: 60ad1361f5d188beacf4a34b040ee46196fb8304
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 1b20fde223a681cc6fb5a424eb2a914824c9ed81
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35930568"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049598"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,9 +18,9 @@ ms.locfileid: "35930568"
 
 ## <a name="july-2019"></a>Июль 2019 г.
 
-### <a name="calendar--places"></a>Календарь | Места
+### <a name="calendar--place"></a>Календарь | Место
 
-Дебютное представление API мест для указания в приложениях подробных сведений о расположениях.
+Дебютный выпуск API мест, представляющего в приложениях подробные сведения о расположениях.
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -77,6 +77,9 @@ ms.locfileid: "35930568"
 | Дополнение | Бета-версия |Добавлен метод [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
 | Дополнение | Бета | Добавлены [новые разрешения приложений и делегированные разрешения](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ и _AdministrativeUnit.ReadWrite.All_ для получения и обновления ресурса [API для управления административными единицами](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
 | Дополнение | 1.0 | Добавлены [новые разрешения приложений и делегированные разрешения](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ и _RoleManagement.ReadWrite.Directory_ для получения и обновления ресурса [API ролей каталога](/graph/api/resources/directoryRole?view=graph-rest-1.0), а также получения ресурса [API шаблона для ролей каталога](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0). |
+| Дополнение | Бета | Добавлено [новое разрешение приложений](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ для получения, создания, обновления и удаления в [API проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+
+
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
@@ -175,6 +178,12 @@ ms.locfileid: "35930568"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлен ресурс [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) и соответствующие методы. |
+
+### <a name="users"></a>Пользователи
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | Бета-версия        | Добавлено свойство **lastPasswordChangeDateTime** для объекта [user](/graph/api/resources/user?view=graph-rest-beta). |
 
 ## <a name="may-2019"></a>Май 2019 г.
 
@@ -1015,7 +1024,7 @@ ms.locfileid: "35930568"
 |Дополнение|бета|Добавлено действие [setDefaultProfile](/graph/api/intune-enrollment-enrollmentprofile-setdefaultprofile?view=graph-rest-beta) для объекта [enrollmentProfile](/graph/api/resources/intune-enrollment-enrollmentprofile?view=graph-rest-beta) |
 |Дополнение|бета|Добавлено действие **importAppleDeviceIdentityList** для коллекции [importedAppleDeviceIdentity](/graph/api/resources/intune-enrollment-importedappledeviceidentity?view=graph-rest-beta) |
 |Дополнение|бета|Добавлено действие [updateDeviceProfileAssignment](/graph/api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment?view=graph-rest-beta) для объекта [enrollmentProfile](/graph/api/resources/intune-enrollment-enrollmentprofile?view=graph-rest-beta). |
-|Дополнение|бета|Добавлено действие [shareForSchoolDataSyncService](/graph/api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice?view=graph-rest-beta) для объекта [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) |
+|Дополнение|Бета|Добавлено действие [shareForSchoolDataSyncService](/graph/api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice?view=graph-rest-beta) для объекта [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) |
 |Дополнение|бета|Добавлено действие [unshareForSchoolDataSyncService](/graph/api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice?view=graph-rest-beta) для объекта [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) |
 |Дополнение|бета|Добавлено действие [assignUserToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice?view=graph-rest-beta) для объекта [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) |
 |Дополнение|бета|Добавлена функция [getRoleScopeTagsByResource](/graph/api/intune-rbac-devicemanagement-getrolescopetagsbyresource?view=graph-rest-beta) для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) |
@@ -3022,7 +3031,7 @@ ms.locfileid: "35930568"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета        | В следующие объекты добавлена новая функция delta для выполнения [запроса на получение различий](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений групп (предварительная версия)](delta-query-groups.md)<br/>[Получение добавочных изменений сообщений в папке (предварительная версия)](delta-query-messages.md)<br/>[Получение добавочных изменений пользователей (предварительная версия)](delta-query-users.md) |
+| Дополнение        | Бета-версия        | В следующие объекты добавлена новая функция delta для выполнения [запроса на получение различий](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Примеры см. в следующих статьях:<br/>[Получение добавочных изменений групп (предварительная версия)](delta-query-groups.md)<br/>[Получение добавочных изменений сообщений в папке (предварительная версия)](delta-query-messages.md)<br/>[Получение добавочных изменений пользователей (предварительная версия)](delta-query-users.md) |
 
 ### <a name="workbooks-and-charts-excel"></a>Книги и диаграммы (Excel)
 

@@ -2,15 +2,15 @@
 title: Обновление приложения в команде
 description: Обновление установки приложения в команде
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 987907552f691de3fe0861323b770c7d72fc64f5
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 8525ae7afa33f34d3630a8b5fbac53b3d89dedbc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027281"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Обновление приложения в команде
 

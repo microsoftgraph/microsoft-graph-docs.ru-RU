@@ -2,12 +2,15 @@
 title: Тип ресурса Ключзначение
 description: Стандартный тип ресурса "ключ — значение".
 localization_priority: Normal
-ms.openlocfilehash: aa026f36d69e894e056f21ba19865c730ec5b643
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 7a3008b328337e4dd4d816f4b0d7432b7e24c08d
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629273"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036493"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
@@ -20,7 +23,7 @@ ms.locfileid: "33629273"
 |key|string| Ключ для параметра "ключ — значение". |
 |value|string| Значение для параметра "ключ — значение".|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

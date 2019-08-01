@@ -2,12 +2,15 @@
 title: Тип ресурса referenceAttachment
 description: Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
 localization_priority: Normal
-ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 21f88a6b3e8374eda3af11ca7094539e66137148
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034792"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -19,7 +22,7 @@ ms.locfileid: "32579417"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
+|[Получение](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
 |[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства

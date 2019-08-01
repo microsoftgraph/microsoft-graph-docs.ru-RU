@@ -4,16 +4,16 @@ description: 'Получение списка вкладок в указанно
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521749"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027190"
 ---
 # <a name="list-tabs-in-channel"></a>Вкладки списка в канале
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка [вкладок](../resources/teamstab.md) в указанном канале [](../resources/channel.md) в [команде](../resources/team.md). 
 
@@ -43,7 +43,7 @@ GET /teams/{id}/channels/{id}/tabs
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -53,7 +53,7 @@ GET /teams/{id}/channels/{id}/tabs
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>Отклик
@@ -105,9 +105,6 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

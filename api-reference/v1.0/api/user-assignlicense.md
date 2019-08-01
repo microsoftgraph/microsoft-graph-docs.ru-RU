@@ -4,12 +4,13 @@ description: Добавление или удаление подписок по�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cdf3e2a0da30630ed725c1fc1d2031a936b03bc0
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 16da9fd581033b7b58b044ad74e0bcc2c1d49b8e
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886942"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36027183"
 ---
 # <a name="assignlicense"></a>assignLicense
 Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.

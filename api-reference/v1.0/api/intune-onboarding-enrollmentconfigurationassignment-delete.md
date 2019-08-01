@@ -4,12 +4,13 @@ description: Удаляет объект enrollmentConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41d06972a05e4cb33db60595054f0c45114df0d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c9588a556410c08548339b0fa99758b2ecd44e1b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561539"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024135"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>Удаление объекта enrollmentConfigurationAssignment
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

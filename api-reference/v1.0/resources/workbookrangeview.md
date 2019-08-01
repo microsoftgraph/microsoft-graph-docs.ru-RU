@@ -4,12 +4,13 @@ description: Объект rangeView представляет набор види
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d0e30db53ec6e798bf62d5a64aa7d856ddc8f5e8
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456852"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033350"
 ---
 # <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 Объект rangeView представляет набор видимых ячеек в родительском диапазоне.
@@ -33,11 +34,11 @@ ms.locfileid: "32456852"
 |index|Int32|Индекс диапазона.|
 |numberFormat|Json|Представляет код в числовом формате Excel для заданной ячейки. Только для чтения. |
 |rowCount|Int32|Возвращает количество видимых строк. Только для чтения.  |
-|text|Json|Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака #, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, возвращаемое API. Только для чтения.    |
+|текст|Json|Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака #, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, возвращаемое API. Только для чтения.    |
 |valueTypes|Json|Представляет тип данных каждой ячейки. Только для чтения. Возможные значения: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Представляет необработанные значения указанного объекта rangeView. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |rows|Коллекция [workbookRangeView](workbookrangeview.md)| Представляет коллекцию видимых ячеек в диапазоне, сопоставленных с указанным диапазоном. Только для чтения.    Только для чтения.|

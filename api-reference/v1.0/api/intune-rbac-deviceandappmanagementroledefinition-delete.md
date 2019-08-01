@@ -4,12 +4,13 @@ description: Удаляет объект deviceAndAppManagementRoleDefinition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ddd1be965bc860e18633cca38165927486db1ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6b43bb6101a66c290505100f2e71de9c4bd39445
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023869"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>Удаление объекта deviceAndAppManagementRoleDefinition
 
@@ -42,7 +43,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

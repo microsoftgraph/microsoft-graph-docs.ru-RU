@@ -4,12 +4,13 @@ description: Синхронизирует лицензии, связанные �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 576b0729763c2554ea1b8348833d6f4634d59603
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 9236cc09ad279668e4d3185785b908144013709b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582495"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36023981"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 
@@ -41,10 +42,10 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении данное действие возвращает `200 OK`код отклика и [vppToken](../resources/intune-onboarding-vpptoken.md)в форме для обратной связи.
 
 ## <a name="example"></a>Пример

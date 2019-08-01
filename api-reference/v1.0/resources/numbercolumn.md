@@ -4,12 +4,15 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: 42824275bd79f4b631d53365997d2dd96984f7b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+description: Ресурс numberColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой числа.
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 9196e2508ed3109ee56c24ad72943ca50aed11bc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463077"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035974"
 ---
 # <a name="numbercolumn-resource-type"></a>Тип ресурса numberColumn
 
@@ -34,7 +37,7 @@ ms.locfileid: "32463077"
 | Имя свойства      | Тип   | Описание
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | Количество десятичных разрядов, которые необходимо отображать. Ниже перечислены возможные значения.
-| **displayAs**      | строка | Способ отображения значения в пользовательском интерфейсе. Должно иметь тип `number` или `percentage`. Если тип не указан, считается, что значение имеет тип `number`.
+| **displayAs**      | string | Способ отображения значения в пользовательском интерфейсе. Должно иметь тип `number` или `percentage`. Если тип не указан, считается, что значение имеет тип `number`.
 | **maximum**        | double | Максимальное разрешенное значение.
 | **minimum**        | double | Минимальное разрешенное значение.
 

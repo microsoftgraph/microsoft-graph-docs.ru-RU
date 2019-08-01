@@ -4,12 +4,13 @@ description: Содержит свойства для одной категор�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82d5f81afca53b01027547b42db4582586a4819f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 82567e991e7528b6c77dfa3b9b0df4185784fdbb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558148"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032195"
 ---
 # <a name="mobileappcategory-resource-type"></a>Тип ресурса mobileAppCategory
 
@@ -30,7 +31,7 @@ ms.locfileid: "32558148"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя категории приложений.|
+|displayName|Строка|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения mobileAppCategory.|
 
 ## <a name="relationships"></a>Отношения

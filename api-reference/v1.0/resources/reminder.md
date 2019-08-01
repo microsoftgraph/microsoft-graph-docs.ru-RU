@@ -2,12 +2,15 @@
 title: Тип ресурса reminder
 description: Напоминание о событии в календаре пользователя.
 localization_priority: Normal
-ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: 1fd2198113187ec5e4a1c507cf31d35457662d8f
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579347"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034750"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
@@ -25,7 +28,7 @@ ms.locfileid: "32579347"
 |Евентвеблинк|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 |Реминдерфиретиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, заданные для упоминания.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

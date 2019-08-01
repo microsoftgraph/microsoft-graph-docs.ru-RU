@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта deviceCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d04a543079db2e33d774eca17ed288292ebf3ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ed75d82f7ddb1c1caa328f405f0a0f1852ac0d63
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459705"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35997766"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Get deviceCompliancePolicyDeviceStateSummary
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

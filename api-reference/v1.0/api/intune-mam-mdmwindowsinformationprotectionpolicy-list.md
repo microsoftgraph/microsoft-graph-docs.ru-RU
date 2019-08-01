@@ -4,12 +4,13 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0433740e2bfd37de9596c873c786cf307fd97ff6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 86819424bb890cec8fb578bdc12229c7f572cc6a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581487"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020579"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Перечисление объектов mdmWindowsInformationProtectionPolicy
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример

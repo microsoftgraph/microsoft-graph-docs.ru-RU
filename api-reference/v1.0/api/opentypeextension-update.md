@@ -3,12 +3,14 @@ title: Обновление открытого расширения
 description: 'Обновление открытого расширения (объекта openTypeExtension) с использованием свойств, указанных в теле запроса:'
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 6465c6b342032ff1e14e43487b534e39f1443ea0
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572572"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36022637"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -59,7 +61,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|id|строка|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
+|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
 |extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -68,7 +70,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Задайте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md) с указанными ниже обязательными парами имя-значение и любыми пользовательскими данными, которые необходимо изменить или добавить в это расширение. Полезные данные JSON могут иметь простой тип или представлять собой массив элементов простого типа.
 
@@ -77,7 +79,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %уникальная_строка% |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [openTypeExtension](../resources/opentypeextension.md).
 
@@ -134,7 +136,7 @@ PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 ```
 
 
-#### <a name="response-1"></a>Отклик 1
+#### <a name="response-1"></a>Отклик 1
 
 Вот отклик, который не зависит от способа, которым вы ссылаетесь на расширение.
 

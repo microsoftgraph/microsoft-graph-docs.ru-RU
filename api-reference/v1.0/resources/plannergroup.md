@@ -4,12 +4,13 @@ description: Ресурс **планнерграуп** предоставляе�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6e60db0a3f33bc47d0ea63b7a773b7bb691cd5be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 65d0e81eede4f5edf75a43eaa662e9c044674624
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462377"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035240"
 ---
 # <a name="plannergroup-resource-type"></a>Тип ресурса Планнерграуп
 
@@ -26,7 +27,7 @@ ms.locfileid: "32462377"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор объекта **планнерграуп**|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планов](plannerplan.md) , принадлежащий группе.|

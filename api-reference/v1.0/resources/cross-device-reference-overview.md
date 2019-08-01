@@ -3,12 +3,14 @@ title: Создание условий для работы на разных у�
 description: '{Версия 1.0 версии 1.0. Содержимое аналогично существующему прожект_роме_овервиев. md.}'
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 8454d1452219ee65973e4d4e6fa4ef323bfdd418
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+doc_type: conceptualPageType
+ms.openlocfilehash: 4893efb3469ec51c61e210a32e6ce30abb6e9643
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556731"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032797"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>Создание условий для работы на разных устройствах с помощью API Microsoft Graph
 

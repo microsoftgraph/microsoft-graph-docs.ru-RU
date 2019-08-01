@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта windows1
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b08f2edae43617d13313fc295a226ca6e7c678eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 3cb099aebf0263c196f798c770d865bba87a43d1
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558267"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017009"
 ---
 # <a name="get-windows10compliancepolicy"></a>Get windows10CompliancePolicy
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

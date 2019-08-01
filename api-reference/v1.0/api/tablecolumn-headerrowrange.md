@@ -4,12 +4,13 @@ description: Получает объект диапазона, связанны�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 04246fc4b65b587ab20d8e4810c36e7ba5b08c14
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: c9e5560554981c2da984ea1793f92933f0a36a08
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886587"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36021354"
 ---
 # <a name="tablecolumn-headerrowrange"></a>TableColumn: HeaderRowRange
 

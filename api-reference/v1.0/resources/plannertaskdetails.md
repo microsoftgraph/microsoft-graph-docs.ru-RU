@@ -4,12 +4,13 @@ description: Ресурс **plannerTaskDetails** представляет доп
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 75e17200dc52fff385c7be8fb0269a3da20464b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: d22c932989b9c0d21350842babd9b4bbf420124c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534327"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035170"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 
@@ -21,14 +22,14 @@ ms.locfileid: "32534327"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md); |Чтение свойств и связей объекта **plannerTaskDetails** .|
-|[Обновление](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md);    |Обновление объекта **plannerTaskDetails** . |
+|[обновление](../api/plannertaskdetails-update.md); | [plannerTaskDetails](plannertaskdetails.md);    |Обновление объекта **plannerTaskDetails** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|String|Описание задачи.|
-|id|String| Только для чтения. Идентификатор сведений о задаче. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|description|Строка|Описание задачи.|
+|id|Строка| Только для чтения. Идентификатор сведений о задаче. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. `automatic` Если выбран отображаемый предварительный просмотр, то приложение просматривает задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
@@ -36,7 +37,7 @@ ms.locfileid: "32534327"
 Нет
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!--{

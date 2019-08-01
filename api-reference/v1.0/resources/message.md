@@ -4,12 +4,13 @@ description: Сообщение в mailFolder.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: e27963f18d3925bca6ee200434f4044c2c0b9197
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463049"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036143"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 

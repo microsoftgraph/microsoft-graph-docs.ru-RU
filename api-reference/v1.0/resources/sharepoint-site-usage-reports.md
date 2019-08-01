@@ -4,12 +4,13 @@ description: Эти отчеты позволяют получить общее 
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 999be8cc10eb0bfa3c937d2fe3e5a849e7423a34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: conceptualPageType
+ms.openlocfilehash: 08de7aff6f96a30632c9b639c7021414f7853663
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579221"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034309"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Отчеты об использовании сайтов SharePoint
 

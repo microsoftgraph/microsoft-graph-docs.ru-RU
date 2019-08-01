@@ -4,12 +4,13 @@ description: conversationThread — это коллекция экземпляр
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a1a45f5ac6d26b58f1179616d3a6b9b76c6c1618
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 59e54733a0ece0c6fa4bef31282cf30939b676ba
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549890"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36032825"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 conversationThread — это коллекция экземпляров [post](post.md).
@@ -20,7 +21,7 @@ conversationThread — это коллекция экземпляров [post](p
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список цепочек бесед](../api/group-list-threads.md) | Коллекция [conversationThread](conversationthread.md) |Получение всех цепочек группы.|
+|[Перечисление цепочек](../api/group-list-threads.md) | Коллекция [conversationThread](conversationthread.md) |Получение всех цепочек группы.|
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
@@ -41,7 +42,7 @@ conversationThread — это коллекция экземпляров [post](p
 |preview|String|Краткая сводка из текста последней записи в этой беседе.|
 |isLocked|Boolean|Указывает, заблокирована ли цепочка.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |posts|Коллекция [post](post.md)| Только для чтения. Допускается значение null.|

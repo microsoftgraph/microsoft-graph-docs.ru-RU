@@ -4,12 +4,13 @@ description: Представляет строку в таблице.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 44f9a60197c066115f704b45d7382ba88563aaeb
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563758"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033994"
 ---
 # <a name="tablerow-resource-type"></a>Тип ресурса TableRow
 
@@ -20,13 +21,13 @@ ms.locfileid: "32563758"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта TableRow](../api/tablerow-get.md) | [Воркбуктаблеров](tablerow.md) |Чтение свойств и связей объекта tableRow.|
-|[Обновление](../api/tablerow-update.md) | [Воркбуктаблеров](tablerow.md)  |Обновление объекта tableRow. |
+|[Получение объекта TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Чтение свойств и связей объекта tableRow.|
+|[Обновление](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Обновление объекта tableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Получает объект диапазона, связанный со всей строкой.|
 |[Удаление](../api/tablerow-delete.md)|Нет|Удаляет строку из таблицы.|
-|[Список](../api/tablerow-list.md) | Коллекция [воркбуктаблеров](tablerow.md) |Получение коллекции объектов tableRow. |
-|[Itemat](../api/tablerowcollection-itemat.md)|[Воркбуктаблеров](tablerow.md)|Получает строку на основании ее позиции в коллекции.|
-|[Add](../api/tablerowcollection-add.md)|[Воркбуктаблеров](tablerow.md)|Добавляет новую строку в таблицу.|
+|[Список](../api/tablerow-list.md) | Коллекция [WorkbookTableRow](tablerow.md) |Получение коллекции объектов tableRow. |
+|[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Получает строку на основании ее позиции в коллекции.|
+|[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Добавляет новую строку в таблицу.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -34,7 +35,7 @@ ms.locfileid: "32563758"
 |index|int|Возвращает номер индекса строки в коллекции строк таблицы. Используется нулевой индекс. Только для чтения.|
 |values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

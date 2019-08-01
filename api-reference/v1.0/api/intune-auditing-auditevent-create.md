@@ -4,12 +4,13 @@ description: Создание объекта auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a08e7266070e3cbaaa0f639660d806d487ef6cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 4218d76a1bee2dcd25da7ffe1c5e06ddc4ae1029
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575417"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36013656"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -41,14 +42,14 @@ POST /deviceManagement/auditEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта auditEvent в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта auditEvent.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|

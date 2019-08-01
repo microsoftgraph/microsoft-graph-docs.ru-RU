@@ -4,12 +4,13 @@ description: Удаляет iosMobileAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2ee113b9d2a47f107023766bbd9f1702c179d3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: a07344d8c323c47ae7cff1d9555a5cd6c17e8a69
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577331"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36002582"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Удалить iosMobileAppConfiguration
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

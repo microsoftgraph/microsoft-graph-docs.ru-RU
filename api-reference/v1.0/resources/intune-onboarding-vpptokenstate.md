@@ -4,12 +4,13 @@ description: Возможные состояния, связанные с ток
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 573fe27064881f670e642e7c3727b8c9eb7db5a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: c1effcc94eb7ed0929902c935c848e4610c1971b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548161"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36037234"
 ---
 # <a name="vpptokenstate-enum-type"></a>тип перечисления Впптокенстате
 
@@ -21,10 +22,10 @@ ms.locfileid: "32548161"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние по умолчанию.|
-|верно|1 |Токен является допустимым.|
-|истек|2 |Срок действия маркера истек.|
-|Недопустимый|3 |Недопустимый маркер.|
-|Ассигнедтоекстерналмдм|4 |Маркер управляется другой службой MDM.|
+|верно|1,1|Токен является допустимым.|
+|истек|2|Срок действия маркера истек.|
+|Недопустимый|4|Недопустимый маркер.|
+|Ассигнедтоекстерналмдм|SP4|Маркер управляется другой службой MDM.|
 
 
 

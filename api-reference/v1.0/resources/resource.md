@@ -2,12 +2,15 @@
 title: Тип ресурса Оненотересаурце
 description: 'Изображение или другой файловый ресурс на странице OneNote. '
 localization_priority: Normal
-ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: cd8ea18047aa3f24343411f8dafd7a79357da87b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36034694"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
 
@@ -67,8 +70,8 @@ GET ../onenote/pages/{id}/content
 | содержимое              | Поток          | Поток содержимого
 | contentUrl           | Строка (URL-адрес)    | URL-адрес для скачивания контента
 
-## <a name="relationships"></a>Связи
-Нет.
+## <a name="relationships"></a>Отношения
+Отсутствуют.
 
 
 ## <a name="methods"></a>Методы

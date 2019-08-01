@@ -4,12 +4,13 @@ description: Удаление пользователя из учебного з�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 930ae9ca24b379abd728bd01ebd6ce8f72291757
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 711be4f776b5d0edac211fd4c0fd9052dc8f7041
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550345"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015175"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Удаление educationUser из educationSchool.
 
@@ -34,11 +35,11 @@ DELETE /education/schools/{id}/users/{userId}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
 
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true,

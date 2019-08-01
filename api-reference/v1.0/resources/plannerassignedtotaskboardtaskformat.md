@@ -4,12 +4,13 @@ description: Ресурс **plannerAssignedToTaskBoardTaskFormat** предст�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d59c8c45c998012cacdf4616f1e31f490bec5791
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: c85a68a3a9c17a35bc94ee32ebff156198029bed
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462314"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36035352"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>Тип ресурса plannerAssignedToTaskBoardTaskFormat
 
@@ -21,7 +22,7 @@ ms.locfileid: "32462314"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md); |Чтение свойств и связей объекта **plannerAssignedToTaskBoardTaskFormat** .|
-|[Обновление](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);  |Обновление объекта **plannerAssignedToTaskBoardTaskFormat** . |
+|[обновление](../api/plannerassignedtotaskboardtaskformat-update.md); | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);  |Обновление объекта **plannerAssignedToTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

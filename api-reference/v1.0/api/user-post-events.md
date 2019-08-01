@@ -2,14 +2,15 @@
 title: Создание события
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
 localization_priority: Priority
+doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9837f5d203e1d1f02ef93c732633bc5867c6098a
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 05d06d396d04cd65066d69d2ba9951625cd75133
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885713"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026756"
 ---
 # <a name="create-event"></a>Создание события
 

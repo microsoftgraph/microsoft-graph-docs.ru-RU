@@ -4,12 +4,13 @@ description: 'Представляет курс в учебном заведен
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: resourcePageType
+ms.openlocfilehash: 1dc246c3a8f48980b65c896bba4b6fbe1ae66809
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562715"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029332"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -46,7 +47,7 @@ ms.locfileid: "32562715"
 |externalSource|Едукатионекстерналсаурце| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|

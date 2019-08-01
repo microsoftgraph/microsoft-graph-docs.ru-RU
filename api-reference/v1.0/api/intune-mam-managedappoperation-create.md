@@ -4,12 +4,13 @@ description: Создание объекта managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 354795b68992307d27189d0edaa9088509d710c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 7f44e085da304958fa67eef4f8ce566be1245e12
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571158"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996786"
 ---
 # <a name="create-managedappoperation"></a>Создание объекта managedAppOperation
 
@@ -41,18 +42,18 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта managedAppOperation в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта managedAppOperation.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя операции.|
+|displayName|Строка|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 

@@ -2,16 +2,17 @@
 title: Тип ресурса licenseUnitsDetail
 description: Свойство **prepaidUnits** объекта subscribedSku относится к типу **licenseUnitsDetail**.
 localization_priority: Normal
-ms.openlocfilehash: 8c2a4e995c7e1afa63b7f9daea6b61cbaf974958
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+author: ''
+ms.prod: ''
+doc_type: resourcePageType
+ms.openlocfilehash: b4540cb546c8dae9d519a68b6ace8d030b6c40cd
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519909"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36036465"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Тип ресурса licenseUnitsDetail
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Свойство **prepaidUnits** объекта [subscribedSku](subscribedsku.md) относится к типу **licenseUnitsDetail**.
 
@@ -45,15 +46,10 @@ ms.locfileid: "32519909"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "licenseUnitsDetail resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/licenseunitsdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

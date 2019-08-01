@@ -4,16 +4,17 @@ description: Описывает текущее состояние Теамсас
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b3ceaca73fe013b76f44cdf9290f3c0935e93b0a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: enumPageType
+ms.openlocfilehash: 4ffd6653752968c16d469ade39fc0e399fbee37c
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462230"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36033735"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>тип перечисления Теамсасинкоператионстатус
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Описывает текущее состояние [теамсасинкоператион](teamsasyncoperation.md).
 
@@ -26,11 +27,3 @@ ms.locfileid: "32462230"
 |inProgress|2|Выполняется операция.|
 |закончил|4|Операция выполнена успешно.|
 |сбоев|SP4|Сбой операции.|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

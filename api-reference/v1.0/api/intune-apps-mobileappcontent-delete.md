@@ -4,12 +4,13 @@ description: Удаляет объект mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ab7fba2cf5fdeec7e73f9cd07f53428ac37c85d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 23fc3b6e3c4b1f72c9f39068f16f89c6fcd8ead6
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541642"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016064"
 ---
 # <a name="delete-mobileappcontent"></a>Delete mobileAppContent
 
@@ -43,7 +44,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

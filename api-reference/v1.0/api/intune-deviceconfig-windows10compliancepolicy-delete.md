@@ -4,12 +4,13 @@ description: Удаляет объект windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d11c8f1c8ccec1fdf50d5d6eda153b6ec18cc040
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: ac23adb4dfb32de3303a2b86b4fa2b9aa494ecfc
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584847"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36017016"
 ---
 # <a name="delete-windows10compliancepolicy"></a>Delete windows10CompliancePolicy
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

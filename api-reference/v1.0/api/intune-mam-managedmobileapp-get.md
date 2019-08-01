@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта managedM
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cdf3a6887b19e31c3ba9afc05f6c1669548bc42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 907d2cce4aaf0a058f546a6fad1bcb154efd9af7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453250"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35996625"
 ---
 # <a name="get-managedmobileapp"></a>Получение объекта managedMobileApp
 
@@ -47,10 +48,10 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [managedMobileApp](../resources/intune-mam-managedmobileapp.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов iosMan
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 234d2f1f198f5261b6d6f7cc27a63c8464bf1207
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 60f01edbc24ba54498d0e8a43519f599a0fd6869
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571144"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36018311"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Перечисление объектов iosManagedAppRegistration
 
@@ -41,10 +42,10 @@ GET /deviceAppManagement/managedAppRegistrations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md) в теле отклика.
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,13 @@ description: Создание группы разделов в указанно�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ec6809b1b59da2cd576adf7c714ec1f92993a597
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: de952489d8337772dca6b35471eda6bb02cbcbd7
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883031"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36024730"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 

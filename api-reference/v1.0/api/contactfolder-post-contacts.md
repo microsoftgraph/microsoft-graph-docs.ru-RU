@@ -4,12 +4,13 @@ description: Добавление контакта в корневую папк�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: dc0dfc81b3616cdd1c898e42b3011674d601fd6e
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 85ec6d704402e1596a5376ed76fea155e61f4fe2
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883842"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36003128"
 ---
 # <a name="create-contact"></a>Создание контакта
 
