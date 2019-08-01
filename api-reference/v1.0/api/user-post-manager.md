@@ -4,49 +4,50 @@ description: С помощью этого API можно назначить ру
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d31789286659aab66f1a453f8f807fc5c18f6da2
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: b7979b1189c797ed6470498350e0c111fb9a5c43
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885610"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36026651"
 ---
-# <a name="assign-a-manager"></a><span data-ttu-id="b3ad2-103">Назначение руководителя</span><span class="sxs-lookup"><span data-stu-id="b3ad2-103">Assign a manager</span></span>
+# <a name="assign-a-manager"></a><span data-ttu-id="35cb1-103">Назначение руководителя</span><span class="sxs-lookup"><span data-stu-id="35cb1-103">Assign a manager</span></span>
 
-<span data-ttu-id="b3ad2-104">С помощью этого API можно назначить руководителя пользователю.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-104">Use this API to assign a user's manager.</span></span>
-> <span data-ttu-id="b3ad2-105">Примечание. Назначать подчиненных невозможно. Вместо этого используйте данный API.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-105">Note: You cannot assign direct reports - instead use this API.</span></span>
+<span data-ttu-id="35cb1-104">С помощью этого API можно назначить руководителя пользователю.</span><span class="sxs-lookup"><span data-stu-id="35cb1-104">Use this API to assign a user's manager.</span></span>
+> <span data-ttu-id="35cb1-105">Примечание. Назначать подчиненных невозможно. Вместо этого используйте данный API.</span><span class="sxs-lookup"><span data-stu-id="35cb1-105">Note: You cannot assign direct reports - instead use this API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b3ad2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b3ad2-106">Permissions</span></span>
-<span data-ttu-id="b3ad2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3ad2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="35cb1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="35cb1-106">Permissions</span></span>
+<span data-ttu-id="35cb1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35cb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b3ad2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b3ad2-109">Permission type</span></span>      | <span data-ttu-id="b3ad2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b3ad2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="35cb1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="35cb1-109">Permission type</span></span>      | <span data-ttu-id="35cb1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="35cb1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b3ad2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b3ad2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b3ad2-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b3ad2-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b3ad2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b3ad2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3ad2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-114">Not supported.</span></span>    |
-|<span data-ttu-id="b3ad2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b3ad2-115">Application</span></span> | <span data-ttu-id="b3ad2-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3ad2-116">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="35cb1-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="35cb1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="35cb1-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="35cb1-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="35cb1-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="35cb1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35cb1-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35cb1-114">Not supported.</span></span>    |
+|<span data-ttu-id="35cb1-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="35cb1-115">Application</span></span> | <span data-ttu-id="35cb1-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35cb1-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b3ad2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b3ad2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35cb1-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="35cb1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /users/{id}/manager/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="b3ad2-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b3ad2-118">Request headers</span></span>
-| <span data-ttu-id="b3ad2-119">Имя</span><span class="sxs-lookup"><span data-stu-id="b3ad2-119">Name</span></span>       | <span data-ttu-id="b3ad2-120">Тип</span><span class="sxs-lookup"><span data-stu-id="b3ad2-120">Type</span></span> | <span data-ttu-id="b3ad2-121">Описание</span><span class="sxs-lookup"><span data-stu-id="b3ad2-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="35cb1-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="35cb1-118">Request headers</span></span>
+| <span data-ttu-id="35cb1-119">Имя</span><span class="sxs-lookup"><span data-stu-id="35cb1-119">Name</span></span>       | <span data-ttu-id="35cb1-120">Тип</span><span class="sxs-lookup"><span data-stu-id="35cb1-120">Type</span></span> | <span data-ttu-id="35cb1-121">Описание</span><span class="sxs-lookup"><span data-stu-id="35cb1-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b3ad2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b3ad2-122">Authorization</span></span>  | <span data-ttu-id="b3ad2-123">string</span><span class="sxs-lookup"><span data-stu-id="b3ad2-123">string</span></span>  | <span data-ttu-id="b3ad2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="35cb1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="35cb1-122">Authorization</span></span>  | <span data-ttu-id="35cb1-123">string</span><span class="sxs-lookup"><span data-stu-id="35cb1-123">string</span></span>  | <span data-ttu-id="35cb1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="35cb1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b3ad2-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b3ad2-126">Request body</span></span>
-<span data-ttu-id="b3ad2-127">Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-127">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="35cb1-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="35cb1-126">Request body</span></span>
+<span data-ttu-id="35cb1-127">Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="35cb1-127">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3ad2-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3ad2-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="35cb1-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="35cb1-128">Response</span></span>
 
-<span data-ttu-id="b3ad2-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="35cb1-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="35cb1-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b3ad2-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b3ad2-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b3ad2-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b3ad2-132">Request</span></span>
-<span data-ttu-id="b3ad2-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="35cb1-131">Пример</span><span class="sxs-lookup"><span data-stu-id="35cb1-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="35cb1-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="35cb1-132">Request</span></span>
+<span data-ttu-id="35cb1-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="35cb1-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b3ad2-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3ad2-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="35cb1-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="35cb1-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_manager_from_group"
@@ -60,27 +61,27 @@ Content-length: xxx
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b3ad2-135">C#</span><span class="sxs-lookup"><span data-stu-id="b3ad2-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="35cb1-135">C#</span><span class="sxs-lookup"><span data-stu-id="35cb1-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-manager-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b3ad2-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="b3ad2-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="35cb1-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="35cb1-136">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-manager-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b3ad2-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="b3ad2-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="35cb1-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="35cb1-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-manager-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b3ad2-138">Java</span><span class="sxs-lookup"><span data-stu-id="b3ad2-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="35cb1-138">Java</span><span class="sxs-lookup"><span data-stu-id="35cb1-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-manager-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="b3ad2-139">Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-139">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
-##### <a name="response"></a><span data-ttu-id="b3ad2-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="b3ad2-140">Response</span></span>
-<span data-ttu-id="b3ad2-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b3ad2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="35cb1-139">Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="35cb1-139">In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.</span></span>
+##### <a name="response"></a><span data-ttu-id="35cb1-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="35cb1-140">Response</span></span>
+<span data-ttu-id="35cb1-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="35cb1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
