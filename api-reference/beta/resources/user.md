@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a629124608a02639aa41a13c449bf307af257310
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02fcc9db35f59ebca3bc85f1ddc65d8d2f7c3d89
+ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964220"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36049626"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -110,6 +110,7 @@ ms.locfileid: "35964220"
 |interests|Коллекция строк|Список интересов пользователя.|
 |isResourceAccount|Boolean| Значение **true**, если пользователь является учетной записью ресурса; в противном случае **false**. Пустое значение должно считаться соответствующим значению **false**.|
 |jobTitle|String|Должность пользователя. Поддерживает параметр $filter.|
+|lastPasswordChangeDateTime|DateTimeOffset| Время последнего изменения своего пароля пользователем Azure AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |legalAgeGroupClassification|String| Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств `ageGroup` и `consentProvidedForMinor`. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|Коллекция [licenseAssignmentState](licenseassignmentstate.md)|Состояние назначений лицензий для пользователя. Только для чтения.|
 |mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.|

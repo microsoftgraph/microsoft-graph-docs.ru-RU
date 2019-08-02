@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Создание списка ресурсов Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9d9df5b89e85d578fe5f8a811b0812ae9d780a4c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: В этой статье рассказывается, как получить список ресурсов Drive, доступных для целевого объекта User, Group или Site.
+doc_type: apiPageType
+ms.openlocfilehash: bd5663df534b2a56e833340c25227a7852533db9
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35894101"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016526"
 ---
 # <a name="list-available-drives"></a>Создание списка доступных дисков
 
