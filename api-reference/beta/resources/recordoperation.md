@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 00b05cd86eeb9cf8be26cdc09fb8a9b254b510db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23fb116a80dcd90206d7a0ae5eeec5d756272c3d
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008805"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062000"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса Рекордоператион
 
@@ -27,8 +27,8 @@ ms.locfileid: "36008805"
 | createdDateTime                | DateTimeOffset              | Время создания записи.                                                                                                          |
 | id                             | Строка                      | Идентификатор операции сервера. Только для чтения. Создается сервером.                                                                                             |
 | Ластактиондатетиме             | DateTimeOffset              | Время последнего действия операции.                                                                                                     |
-| Рекордресаурцеакцесстокен      | String                      | Маркер доступа, необходимый для получения записи.                                                                                              |
-| Рекордресаурцелокатион         | String                      | Расположение, в котором находится запись.                                                                                                      |
+| Рекордингакцесстокен           | String                      | Маркер доступа, необходимый для получения записи.                                                                                              |
+| Рекординглокатион              | String                      | Расположение, в котором находится запись.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения. Создается сервером.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Создается сервером.                                                 |
 
@@ -53,8 +53,8 @@ ms.locfileid: "36008805"
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceAccessToken": "String",
-  "recordResourceLocation": "String",
+  "recordingAccessToken": "String",
+  "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -71,8 +71,8 @@ ms.locfileid: "36008805"
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceAccessToken": "<access-token>",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "recordingAccessToken": "<access-token>",
+  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ca1a83628ebbb5da2bfec41307b53e01c381883
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc5c80e633055eb6cc1d1914a756bfb80f4332f9
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944463"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062010"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
@@ -19,6 +19,9 @@ ms.locfileid: "35944463"
 Проигрывать запрос в вызове.
 
 Дополнительные сведения об обработке операций можно найти в статье [коммсоператион](../resources/commsoperation.md)
+
+> [!Note]
+> Действие **плайпромпт** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,7 +37,6 @@ ms.locfileid: "35944463"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
-POST /applications/{id}/calls/{id}/playPrompt
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,9 +49,9 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|выдан|Коллекция [Prompt](../resources/prompt.md)| В настоящее время поддерживается только один запрос и тип [медиапромпт](../resources/mediaprompt.md) .|
-|CNAME|bool| Значение цикла. значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
-|Контекст|String|Контекст клиента.|
+|выдан|Коллекция Медиапромпт| В настоящее время поддерживается только один запрос и тип [медиапромпт](../resources/mediaprompt.md) .|
+|CNAME|Boolean| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
+|Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.
@@ -94,6 +96,7 @@ Content-Length: 166
 
 
 ##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

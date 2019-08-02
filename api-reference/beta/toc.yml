@@ -7977,6 +7977,23 @@
                   href: api/domain-update.md
                 - name: Проверка домена
                   href: api/domain-verify.md
+            - name: Политика развертывания компонентов
+              href: resources/featurerolloutpolicy.md
+              items:
+                - name: Список
+                  href: api/directory-list-featurerolloutpolicies.md
+                - name: Получение
+                  href: api/featurerolloutpolicy-get.md
+                - name: Создание
+                  href: api/directory-post-featurerolloutpolicies.md
+                - name: Обновление
+                  href: api/featurerolloutpolicy-update.md
+                - name: Удаление
+                  href: api/featurerolloutpolicy-delete.md
+                - name: Создание appliesTo
+                  href: api/featurerolloutpolicy-post-appliesto.md
+                - name: Удаление appliesTo
+                  href: api/featurerolloutpolicy-delete-appliesto.md
             - name: Защита идентификации
               href: resources/identityprotection-root.md
               items:
@@ -8562,7 +8579,7 @@
                   href: api/onenote-post-notebooks.md
                 - name: Вывод списка разделов
                   href: api/onenote-list-sections.md
-                - name: Список групп разделов
+                - name: Вывод списка групп разделов
                   href: api/onenote-list-sectiongroups.md
                 - name: Вывод списка страниц
                   href: api/onenote-list-pages.md

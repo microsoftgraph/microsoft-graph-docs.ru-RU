@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba2c40e5987ee8b6bd89e4385c4c6bf242084edd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b35c2c56c7033cd668b311c17169f5c719e5948
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012809"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062084"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
 
@@ -29,6 +29,11 @@ ms.locfileid: "36012809"
 |[Перечисление удаленных элементов](../api/directory-deleteditems-list.md) |Коллекция [directoryObject](directoryobject.md)| Получает список недавно удаленных элементов. |
 |[Окончательное удаление элемента](../api/directory-deleteditems-delete.md) | None | Окончательно удаляет элемент. |
 |[Список удаленных элементов, принадлежащих пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Список элементов каталога, принадлежащих пользователю. |
+|[Список ФеатурероллаутполиЦиес](../api/directory-list-featurerolloutpolicies.md) | Коллекция [феатурероллаутполици](featurerolloutpolicy.md) | Получение списка объектов Феатурероллаутполици. |
+|[Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [Феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици. |
+| [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md) | [Феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. |
+| [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md) | [Феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици. |
+| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md) | Нет | Удаление объекта Феатурероллаутполици. |
 
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип |Описание|
@@ -39,6 +44,7 @@ ms.locfileid: "36012809"
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |deleteditems|Коллекция [directoryObject](directoryobject.md)| Недавно удаленные элементы. Только для чтения. Допускается значение null.|
+|ФеатурероллаутполиЦиес|Коллекция [феатурероллаутполици](featurerolloutpolicy.md)| Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

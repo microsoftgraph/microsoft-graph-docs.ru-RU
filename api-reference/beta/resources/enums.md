@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 21723975a73ca7288e65e321a3eaeb323dad77b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972098"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062062"
 ---
 ### <a name="registrationauthmethod-values"></a>значения Регистратионаусмесод
 
@@ -839,6 +839,14 @@ Enum для типов значений реестра, определенных
 |высокоуровневых|
 |передачи|
 
+### <a name="stagedfeaturename-values"></a>значения Стажедфеатуренаме
+
+|Member|Описание|
+|:---|:---|
+|Пасссраугхаусентикатион|Сквозная проверка подлинности|
+|Сеамлессссо|Единый вход|
+|Пассвордхашсинк|Синхронизация хэша паролей|
+
 ### <a name="tokenissuertype-values"></a>значения Токениссуертипе
 
 |Member|
@@ -865,3 +873,4 @@ Enum для типов значений реестра, определенных
 |SignIn|
 |user|
 |unknownFutureValue|
+
