@@ -4,12 +4,13 @@ description: Получение команд в Microsoft Teams, непосре�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3124f72b30a9ca82efe7f2583a6afc766bed1718
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+doc_type: apiPageType
+ms.openlocfilehash: 8fa529edc03032665a1b170901dd65f95184941a
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35931487"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35987637"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 

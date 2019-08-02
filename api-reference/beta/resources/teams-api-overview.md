@@ -4,12 +4,13 @@ description: Microsoft Teams — это рабочее пространство 
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: ba27e303ab05e3a9ea3e02f3d0a32066e60c82a6
-ms.sourcegitcommit: 624ac42e74533a9bf0d0d22b3b15adbb258fd594
+doc_type: conceptualPageType
+ms.openlocfilehash: bc2e5dc6575ebc5a2de2497f70d3e1d50bcdfa52
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34709385"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "35964517"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 

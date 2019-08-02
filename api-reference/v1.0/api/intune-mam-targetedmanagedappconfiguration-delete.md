@@ -4,12 +4,13 @@ description: Удаление объекта targetedManagedAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bed90e4c252342f1d068f81024d90a41a1c4b79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: c148801dd41b825cdf788903384f5bc54bece323
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575907"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020558"
 ---
 # <a name="delete-targetedmanagedappconfiguration"></a>Удаление targetedManagedAppConfiguration
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

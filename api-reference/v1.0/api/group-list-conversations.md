@@ -4,12 +4,13 @@ description: Получение списка бесед в этой группе
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 114789ea043ab69fdcf984a162df5d78c4d1aff6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+doc_type: apiPageType
+ms.openlocfilehash: 794919e2bf9cbd05e273ac5c2755ef3a1369d192
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889231"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36014902"
 ---
 # <a name="list-conversations"></a>Список бесед
 Получение списка объектов [conversation](../resources/conversation.md) в этой группе.

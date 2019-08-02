@@ -4,12 +4,13 @@ description: Создание нового объекта Импортедвин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa2fd3cda5995b9e5a66754599393bd60ae0db7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+doc_type: apiPageType
+ms.openlocfilehash: 6449402db0af2a79cbeddd22468adbf5592cb6ce
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561021"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36020873"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Создание Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -41,7 +42,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Импортедвиндовсаутопилотдевицеидентитюплоад в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Импортедвиндовсаутопилотдевицеидентитюплоад.
