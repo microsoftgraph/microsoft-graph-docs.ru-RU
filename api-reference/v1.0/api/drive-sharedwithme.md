@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Создание списка файлов, к которым мне предоставлен доступ
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: b2aabc84b0842331e6a52677f347a86c0f17740d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Получение коллекции ресурсов DriveItem, доступ к которым предоставлен владельцу ресурса Drive.
+doc_type: apiPageType
+ms.openlocfilehash: fe55d08eb0f5e9d9c264b3457ac77bfa693ac471
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883070"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36016475"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 

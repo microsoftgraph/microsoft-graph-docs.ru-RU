@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Создание списка содержимого папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1e5fea5d1ac036ffc8498e9c4eee1315074f00b4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Получение коллекции ресурсов DriveItem, являющихся дочерними элементами ресурса DriveItem.
+doc_type: apiPageType
+ms.openlocfilehash: eaf8130f7134c63f349d19760153bbe3805a73e4
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35891212"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015469"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 

@@ -5,12 +5,14 @@ ms.date: 09/10/2017
 title: Обновление файла или папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7ec2ff2c438588074783e953598509eed1730f90
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: Обновление метаданных ресурса DriveItem по идентификатору или пути.
+doc_type: apiPageType
+ms.openlocfilehash: f1ca58a05bae68bd945d8060820f2b590c659b9b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881616"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36015329"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
