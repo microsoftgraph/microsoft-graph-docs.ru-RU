@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7e2176554bd2ed59312c2743f314e16954ff10f2
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 119d76fe4fe26ef48eb79ad736dfb99428574e24
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049563"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172711"
 ---
 # <a name="sendreminder-accessreview"></a>Сендреминдер Акцессревиев
 
@@ -23,7 +23,7 @@ ms.locfileid: "36049563"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Акцессревиев. ReadWrite. Membership |
 

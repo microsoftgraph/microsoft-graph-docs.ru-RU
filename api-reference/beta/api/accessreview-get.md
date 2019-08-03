@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d052357fd5ff609a701753348f6a276d0d12338
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: c721fbfbdb335898c3b92b335539df9cf83db825
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049553"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172741"
 ---
 # <a name="get-accessreview"></a>Получение Акцессревиев
 
@@ -27,7 +27,7 @@ ms.locfileid: "36049553"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
+|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership  |
 

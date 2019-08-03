@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 81c194c08ddc5ed8f5acc38ae84a5478bb7e0229
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27467548339dc01f7c95fe55bda159c0569c38ba
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972525"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173043"
 ---
 # <a name="educationsubmission-resource-type"></a>Тип ресурса educationSubmission
 
@@ -28,6 +28,7 @@ ms.locfileid: "35972525"
 |[Получение educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Чтение свойств и связей объекта **educationSubmission** .|
 |[Список ресурсов](../api/educationsubmission-list-resources.md) |Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Получение коллекции объектов **едукатионсубмиссионресаурце** .|
 |[Список Субмиттедресаурцес](../api/educationsubmission-list-submittedresources.md) |Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Получение коллекции объектов **едукатионсубмиссионресаурце** .|
+|[Результаты списка](../api/educationsubmission-list-outcomes.md) |Коллекция [едукатионауткоме](educationoutcome.md)| Получение коллекции объектов **едукатионауткоме** .|
 |[обновление](../api/educationsubmission-update.md); | [educationSubmission](educationsubmission.md) |Обновление объекта **educationSubmission** . |
 |[Передачи](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Преподаватель использует возврат, чтобы показать, что оценки и отзывы могут отображаться для учащегося.|
 |[Отправить](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Для включения назначения учащийся использует функцию "послать". При этом ресурсы будут скопированы в папку **субмиттедресаурцес** для ступенчатого и обновления состояния.|
@@ -56,6 +57,7 @@ ms.locfileid: "35972525"
 |:---------------|:--------|:----------|
 |resources|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Допускается значение null.|
 |Субмиттедресаурцес|Коллекция [едукатионсубмиссионресаурце](educationsubmissionresource.md)| Только для чтения. Допускается значение null.|
+|результаты|Коллекция [едукатионауткоме](educationOutcome.md)|Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

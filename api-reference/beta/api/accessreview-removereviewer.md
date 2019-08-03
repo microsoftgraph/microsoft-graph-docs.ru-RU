@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ddf8d2df743a3c3700dfed09016fd76dda37f714
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 215f675f6fa4dd9461f7e36c26c135face9b95d9
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049577"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36172749"
 ---
 # <a name="remove-accessreview-reviewer"></a>Удаление рецензента Акцессревиев
 
@@ -24,7 +24,7 @@ ms.locfileid: "36049577"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Акцессревиев. ReadWrite. Membership |
 

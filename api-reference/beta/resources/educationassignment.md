@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 84345bd87cb1b4ba02746045d69ba783d1710804
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f343edec96af2e51d1bb643abb0652425c54624
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006481"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173050"
 ---
 # <a name="educationassignment-resource-type"></a>Тип ресурса educationAssignment
 
@@ -26,15 +26,17 @@ API назначения представлены в пространстве и
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение задания](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Чтение свойств и связей объекта **educationAssignment** .|
-|[Создание ресурса задания](../api/educationassignment-post-resources.md) |[Едукатионассигнментресаурце](educationassignmentresource.md)| Создание нового **едукатионассигнментресаурце** путем публикации в коллекции ресурсов.|
 |[Список ресурсов](../api/educationassignment-list-resources.md) |Коллекция [едукатионассигнментресаурце](educationassignmentresource.md)| Получение коллекции объектов **едукатионассигнментресаурце** .|
 |[Отправка списка](../api/educationassignment-list-submissions.md) |Коллекция [educationSubmission](educationsubmission.md)| Получение коллекции объектов **educationSubmission** .|
 |[Перечисление категорий](../api/educationassignment-list-categories.md) |Коллекция [едукатионкатегори](educationcategory.md)| Получение коллекции объектов **едукатионкатегори** .|
-|[Добавление категорий](../api/educationassignment-add-categories.md) |[Едукатионкатегори](educationcategory.md) | Назначьте **едукатионкатегори** , принадлежащую классу, этому назначению.|
-|[Удаление категории](../api/educationassignment-remove-category.md) |Нет| Удаление **едукатионкатегори** , относящегося к классу, из этого назначения.|
+|[Создание ресурса задания](../api/educationassignment-post-resources.md) |[Едукатионассигнментресаурце](educationassignmentresource.md)| Создание нового **едукатионассигнментресаурце** путем публикации в коллекции ресурсов.|
+|[Получение задания](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Чтение свойств и связей объекта **educationAssignment** .|
 |[обновление](../api/educationassignment-update.md); | [educationAssignment](educationassignment.md) |Обновление объекта **educationAssignment** . |
 |[Удаление](../api/educationassignment-delete.md) | Нет |Удаление объекта **educationAssignment** . |
+|[Добавление категорий](../api/educationassignment-add-categories.md) |[Едукатионкатегори](educationcategory.md) | Назначьте **едукатионкатегори** , принадлежащую классу, этому назначению.|
+|[Удаление категории](../api/educationassignment-remove-category.md) |Нет| Удаление **едукатионкатегори** , относящегося к классу, из этого назначения.|
+|[Присоединение Rubric](../api/educationassignment-put-rubric.md)|Нет|Присоединение существующего **едукатионрубрик** к этому назначению.|
+|[Удаление Rubric](../api/educationassignment-delete-rubric.md)|Нет|Отсоедините **едукатионрубрик** от этого назначения.|
 |[публикация](../api/educationassignment-publish.md);|[educationAssignment](educationassignment.md)|Изменение состояния объекта **educationAssignment** с черновика на "Опубликовано".|
 |[Получение URL-адреса папки ресурсов](../api/educationassignment-getresourcesfolderurl.md)| string| Папка OneDrive, в которую следует поместить файловые ресурсы, которые должны быть частью ресурса назначения. Файлы должны находиться в этой папке для добавления в качестве ресурса.|
 
@@ -64,6 +66,7 @@ API назначения представлены в пространстве и
 |resources|Коллекция [едукатионассигнментресаурце](educationassignmentresource.md)| Обучающие объекты, связанные с этим назначением.  Только преподаватели могут изменять этот список. Допускается значение null.|
 |отправок|Коллекция [educationSubmission](educationsubmission.md)| После публикации для каждого учащегося существует объект отправки, представляющий свою работу и оценку.  Только для чтения. Допускается значение null.|
 |categories|Коллекция [едукатионкатегори](educationcategory.md)| Если задано, позволяет пользователям легко находить назначения определенного типа.  Только для чтения. Допускается значение null.|
+|Rubric|[Едукатионрубрик](educationrubric.md)|Если этот параметр установлен, Rubric подключается к этому назначению.|
 
 ## <a name="json-representation"></a>Представление JSON
 

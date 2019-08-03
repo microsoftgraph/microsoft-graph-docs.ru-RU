@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 708c8c33d4ae69007a7a1e1e15af71ab69b97e78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
+ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013509"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "36173057"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -69,8 +69,8 @@ ms.locfileid: "36013509"
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[акцессревиев](accessreview.md) роли Azure AD | Чтение | Акцессревиев. Read. ALL или Акцессревиев. ReadWrite. ALL | Глобальный администратор, администратор безопасности, средство чтения безопасности или привилегированный администратор ролей |
 |[акцессревиев](accessreview.md) роли Azure AD | Создание, обновление или удаление | AccessReview.ReadWrite.All | Администратор глобального администратора или привилегированной роли |
-|[акцессревиев](accessreview.md) группы или приложения | Чтение | Акцессревиев. Read. ALL или Акцессревиев. ReadWrite. ALL | Глобальный администратор, администратор безопасности, средство чтения безопасности или администратор пользователей |
-|[акцессревиев](accessreview.md) группы или приложения | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |
+|[акцессревиев](accessreview.md) группы или приложения | Чтение | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership или Акцессревиев. ReadWrite. ALL | Глобальный администратор, администратор безопасности, средство чтения безопасности или администратор пользователей |
+|[акцессревиев](accessreview.md) группы или приложения | Создание, обновление или удаление | Акцессревиев. ReadWrite. Membership или Акцессревиев. ReadWrite. ALL | Глобальный администратор или администратор пользователей |
 | [программы](program.md) и [програмконтрол](programcontrol.md)| Чтение | Програмконтрол. Read. ALL или Програмконтрол. ReadWrite. ALL |  Глобальный администратор, администратор безопасности, средство чтения безопасности или администратор пользователей |
 | [программы](program.md) и [програмконтрол](programcontrol.md) | Создание, обновление или удаление | ProgramControl.ReadWrite.All | Глобальный администратор или администратор пользователей |
 
