@@ -7273,12 +7273,16 @@
                   href: api/educationuser-list-schools.md
                 - name: Перечисление курсов
                   href: api/educationuser-list-classes.md
+                - name: Список рубрикс
+                  href: api/educationuser-list-rubrics.md
                 - name: Получение пользователя
                   href: api/educationuser-get.md
                 - name: Удаление пользователя
                   href: api/educationuser-delete.md
                 - name: Получение дельты
                   href: api/educationuser-delta.md
+                - name: Создание Rubric
+                  href: api/educationuser-post-rubrics.md
             - name: Задание
               href: resources/educationassignment.md
               items:
@@ -7306,12 +7310,18 @@
                   href: api/educationassignment-list-submissions.md
                 - name: Получение URL-адреса папки ресурсов
                   href: api/educationassignment-getresourcesfolderurl.md
+                - name: 'Получение Rubric, присоединенного к назначению'
+                  href: api/educationassignment-get-rubric.md
                 - name: Перечисление категорий
                   href: api/educationassignment-list-categories.md
                 - name: Добавление категории
                   href: api/educationassignment-add-categories.md
                 - name: Удаление категории
                   href: api/educationassignment-remove-category.md
+                - name: Присоединение Rubric к назначению
+                  href: api/educationassignment-put-rubric.md
+                - name: Удаление Rubric из назначения
+                  href: api/educationassignment-delete-rubric.md
             - name: Категория
               href: resources/educationcategory.md
               items:
@@ -7319,6 +7329,15 @@
                   href: api/educationcategory-get.md
                 - name: Удаление категории
                   href: api/educationcategory-delete.md
+            - name: Rubric
+              href: resources/educationrubric.md
+              items:
+                - name: Получение Rubric
+                  href: api/educationrubric-get.md
+                - name: Обновление Rubric
+                  href: api/educationrubric-update.md
+                - name: Удаление Rubric
+                  href: api/educationrubric-delete.md
             - name: Сданная работа
               href: resources/educationsubmission.md
               items:
@@ -7338,12 +7357,19 @@
                   href: api/educationsubmission-unsubmit.md
                 - name: Перечисление отправленных ресурсов
                   href: api/educationsubmission-list-submittedresources.md
+                - name: Результаты списка
+                  href: api/educationsubmission-list-outcomes.md
                 - name: Получение отправленного ресурса
                   href: api/educationsubmittedsubmissionresource-get.md
                 - name: Оценка работы
                   href: api/educationsubmission-update.md
                 - name: Возврат работы
                   href: api/educationsubmission-return.md
+            - name: Способ
+              href: resources/educationoutcome.md
+              items:
+                - name: Результат обновления
+                  href: api/educationoutcome-update.md
             - name: Профиль синхронизации
               href: resources/educationsynchronizationprofile.md
               items:
@@ -7780,7 +7806,7 @@
                   href: api/administrativeunit-delete.md
                 - name: Добавление участника
                   href: api/administrativeunit-post-members.md
-                - name: Список элементов
+                - name: Список членов
                   href: api/administrativeunit-list-members.md
                 - name: Получение члена
                   href: api/administrativeunit-get-members.md
@@ -8579,9 +8605,9 @@
                   href: api/onenote-post-notebooks.md
                 - name: Вывод списка разделов
                   href: api/onenote-list-sections.md
-                - name: Вывод списка групп разделов
+                - name: Список групп разделов
                   href: api/onenote-list-sectiongroups.md
-                - name: Вывод списка страниц
+                - name: Список страниц
                   href: api/onenote-list-pages.md
                 - name: Создание страницы
                   href: api/onenote-post-pages.md
@@ -8791,7 +8817,7 @@
                 - name: Использование устройств Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
                   items:
-                    - name: Получение сведений о пользователе
+                    - name: Получение сведений о пользователях
                       href: api/reportroot-getteamsdeviceusageuserdetail.md
                     - name: Получение количества пользователей
                       href: api/reportroot-getteamsdeviceusageusercounts.md
@@ -9506,7 +9532,7 @@
               items:
                 - name: Список
                   href: api/outlookuser-list-tasks.md
-                - name: Создание
+                - name: Create
                   href: api/outlookuser-post-tasks.md
                 - name: Получение
                   href: api/outlooktask-get.md
@@ -9525,7 +9551,7 @@
               items:
                 - name: Список
                   href: api/outlookuser-list-taskfolders.md
-                - name: Создание
+                - name: Create
                   href: api/outlookuser-post-taskfolders.md
                 - name: Получение
                   href: api/outlooktaskfolder-get.md
@@ -9540,9 +9566,9 @@
             - name: Группа задач Outlook
               href: resources/outlooktaskgroup.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/outlookuser-list-taskgroups.md
-                - name: Создание
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: Получение
                   href: api/outlooktaskgroup-get.md
@@ -9659,7 +9685,7 @@
                   href: api/range-unmerge.md
                 - name: Очистка
                   href: api/range-clear.md
-                - name: Удаление
+                - name: Удалить
                   href: api/range-delete.md
             - name: Таблица
               href: resources/workbooktable.md
