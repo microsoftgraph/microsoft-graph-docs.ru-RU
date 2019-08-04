@@ -5,12 +5,13 @@ title: Тип ресурса driveItem
 description: Элемент — это основная модель данных в API OneDrive. Любое содержимое является элементом.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
-ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
+doc_type: resourcePageType
+ms.openlocfilehash: a098da44ea4d6861a7d4372c907452721bfc881b
+ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2019
-ms.locfileid: "33968795"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36029374"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
