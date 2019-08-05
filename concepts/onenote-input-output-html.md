@@ -4,12 +4,12 @@ description: 'HTML-код, определяющий содержимое и ст
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 0cc2c0994a5e4d2a45e78c055af466f1c4999de6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fcb4a8127b633ba309212a7160c9e5548836466c
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578758"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639222"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>Входной и выходной HTML-код на страницах OneNote
 
@@ -162,20 +162,6 @@ API OneNote в Microsoft Graph заключают все содержимое о
     data-src-type="image/png"
     data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/$value"  
     data-fullres-src-type="image/png" ... />
-```
-
-По умолчанию изображения не отображаются непосредственно в браузере, так как они являются личными и для их получения необходимо пройти проверку подлинности, как и для другого содержимого страницы. Чтобы получить общедоступные URL-адреса ресурсов изображений на странице, включите параметр **preAuthenticated=true** в строку запроса при получении содержимого страницы (пример: `GET ../pages/{page-id}/content?preAuthenticated=true`). Возвращаемые общедоступные URL-адреса действительны в течение одного часа. 
-
-#### <a name="image-with-public-url-when-preauthenticatedtrue-is-included-in-the-request"></a>Изображение с общедоступным URL-адресом (в запрос включен параметр _preAuthenticated=true_)
-
-```html
-<img 
-    width="170" height="128" 
-    src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-src-type="image/{type}" 
-    data-fullres-src="https://graph.microsoft.com/v1.0/me/onenote/resources/{image-id}/content?publicAuth=true&mimeType=image/jpeg" 
-    data-fullres-src-type="image/{type}"
-/>
 ```
 
 В приведенных ниже примерах показаны сведения, которые может содержать элемент **img** в выходном HTML-коде.
@@ -425,7 +411,7 @@ upper-alpha | &nbsp; |
 </ol>
 ``` 
 
-Ниже представлен выходной HTML-код. Обратите внимание, что стили возвращаются встроенными в отдельные элементы **li** или **span**.
+Ниже приводятся выходные данные HTML. Обратите внимание, что стили возвращаются встроенными в отдельные элементы **li** или **span**.
 
 ```html
 <ol>
