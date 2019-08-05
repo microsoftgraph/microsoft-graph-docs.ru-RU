@@ -1,14 +1,14 @@
 ---
 title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
-author: ''
+author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 1b20fde223a681cc6fb5a424eb2a914824c9ed81
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: dad880cc84a1c8574d4f697ed283a0fc3af7c198
+ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049598"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36062077"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -71,14 +71,14 @@ ms.locfileid: "36049598"
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение | 1.0 | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-1.0) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0). |
-| Дополнение | Бета | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-beta) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для получения и обновления ресурса [organization API](/graph/api/resources/organization?view=graph-rest-beta) и получения ресурса [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta). |
 | Дополнение | 1.0 | Добавлена [функция group:validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) и [функция directoryobject:validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) для [групп](/graph/api/group-delta?view=graph-rest-1.0), которая проверяет, соответствует ли почтовый псевдоним или отображаемое имя группы Office 365 политикам именования. |
 | Дополнение | Бета-версия |Добавлены свойства version, discoveryDateTime, discoverabilities для типа ресурса [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta).|
 | Дополнение | Бета-версия |Добавлен метод [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta).|
-| Дополнение | Бета | Добавлены [новые разрешения приложений и делегированные разрешения](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ и _AdministrativeUnit.ReadWrite.All_ для получения и обновления ресурса [API для управления административными единицами](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлены [новые делегированные разрешения и разрешения приложений](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ и _AdministrativeUnit.ReadWrite.All_ для получения и обновления ресурса [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
 | Дополнение | 1.0 | Добавлены [новые разрешения приложений и делегированные разрешения](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ и _RoleManagement.ReadWrite.Directory_ для получения и обновления ресурса [API ролей каталога](/graph/api/resources/directoryRole?view=graph-rest-1.0), а также получения ресурса [API шаблона для ролей каталога](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0). |
-| Дополнение | Бета | Добавлено [новое разрешение приложений](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ для получения, создания, обновления и удаления в [API проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
-
+| Дополнение | Бета-версия | Добавлено [новое разрешение приложений](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ для получения, создания, обновления и удаления в [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлен новый тип ресурса [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) в ресурс [directory](/graph/api/resources/directory?view=graph-rest-beta). Политика развертывания функций позволяет администраторам заказчика апробировать функции на определенных группах до того, как сделать данные функции доступными для всей организации.|
 
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
@@ -1881,7 +1881,7 @@ ms.locfileid: "36049598"
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|Бета|Добавлены свойства навигации и улучшена поддержка фильтрации для [API списков](/graph/api/resources/education-overview?view=graph-rest-beta).|
+|Дополнение|Бета-версия|Добавлены свойства навигации и улучшена поддержка фильтрации для [API списков](/graph/api/resources/education-overview?view=graph-rest-beta).|
 
 ### <a name="reports"></a>Отчеты
 | Тип изменения | Версия | Описание                              |
