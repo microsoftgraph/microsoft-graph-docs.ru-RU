@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Offic
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
+ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555439"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35639216"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
@@ -143,7 +143,7 @@ ms.locfileid: "32555439"
 
 Свойство **previewText** содержит фрагмент текста со страницы. Microsoft Graph возвращает полные фразы длиной до 300 символов. 
 
-Если на странице есть изображение, подходящее для предварительного просмотра, то свойство **href** объекта **previewImageUrl** будет содержать ссылку на общедоступный [ресурс изображения](#image-or-other-file-resource) с предварительной проверкой подлинности. Эту ссылку можно использовать в коде HTML. Если не сделать этого, свойство **href** возвратит значение NULL.
+Если на странице есть изображение, подходящее для предварительного просмотра, то свойство **href** объекта **previewImageUrl** будет содержать ссылку на общедоступный [ресурс изображения](#image-or-other-file-resource). Эту ссылку можно использовать в коде HTML. Если не сделать этого, свойство **href** возвратит значение NULL.
 
 #### <a name="example"></a>Пример 
 
