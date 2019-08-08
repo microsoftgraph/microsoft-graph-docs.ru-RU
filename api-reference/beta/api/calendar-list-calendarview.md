@@ -5,32 +5,34 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 61ec004fbb6cff6a0d8c64cc1fb8444412f96045
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb912124ac903f74672b21bf42882b5a059da72b
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944704"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245616"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря `(../me/calendarview)`, принадлежащего пользователю или группе, либо другого календаря пользователя, которое определяется заданным диапазоном времени.
+Получение вхождений, исключений и отдельных экземпляров событий в представлении календаря, определенного диапазоном времени, из календаря `(../me/calendarview)` пользователя по умолчанию или другого календаря пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* События в календаре пользователя: Calendars.Read или Calendars.ReadWrite.
-* События в календаре группы: Group.Read.All или Group.ReadWrite.All.
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    |
+|Для приложений | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
-[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
+Экземпляр [calendar](../resources/calendar.md) по умолчанию для пользователя.
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /groups/{id}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).

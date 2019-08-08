@@ -5,26 +5,27 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e898881563092019e82c58c476d2996fc185c6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fa92f7657c69871af2f2661cde00b17d9499886
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944669"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245556"
 ---
 # <a name="create-event"></a>Создание события
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно создать событие в календаре по умолчанию или указанном календаре.
-## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Используйте этот API, чтобы создать новое событие в календаре. Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365. 
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Calendars.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Calendars.ReadWrite    |
-|Для приложений | Calendars.ReadWrite |
+## <a name="permissions"></a>Разрешения
+В зависимости от типа календаря, в котором создается событие, и запрошенного типа разрешения (делегированного или приложения), для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Календарь | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----|:-----|:-----|:-----|
+| календарь пользователя | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| calendar для групп; | Group.ReadWrite.All | Не поддерживается. | Не поддерживается. |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +63,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+В следующем примере показано создание события в указанном календаре пользователя, выполнившего вход в систему.
+
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -122,7 +124,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

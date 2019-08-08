@@ -5,29 +5,29 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3543a96b7efbc4644353a23956f67162ed193888
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20393a541505ddc5e1640cbcc6738efa3d32d05d
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944701"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245622"
 ---
 # <a name="list-events"></a>Список событий
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка событий в календаре.  Этот список содержит собрания с одним экземпляром и образцы рядов.
+Получение списка событий в календаре.  Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365. В списке событий содержатся образцы собраний и рядов для отдельных экземпляров.
 
 Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar-list-calendarview.md) или [экземпляры события](event-list-instances.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от типа календаря, в котором находятся события, а также запрошенного типа разрешений (делегированного или приложения), для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Calendars.Read    |
-|Делегированные (личная учетная запись Майкрософт) | Calendars.Read    |
-|Для приложений | Calendars.Read |
+| Календарь | Делегированные (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+|:-----|:-----|:-----|:-----|
+| календарь пользователя | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| calendar для групп; | Group.Read.All, Group.ReadWrite.All | Не поддерживается. | Не поддерживается. |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
