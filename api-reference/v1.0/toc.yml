@@ -416,6 +416,10 @@
             - name: Календарь
               href: resources/calendar.md
               items:
+                - name: Вывод календаря
+                  href: api/calendar-get.md
+                - name: Обновление календаря
+                  href: api/calendar-update.md
                 - name: Список событий
                   href: api/group-list-events.md
                 - name: Создание события
@@ -1684,7 +1688,7 @@
                 - name: Конфигурация функций для устройств iOS
                   href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
@@ -1726,7 +1730,7 @@
                 - name: Конфигурация обновления iOS
                   href: resources/intune-deviceconfig-iosupdateconfiguration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -2581,7 +2585,7 @@
                       href: api/intune-mam-targetedmanagedappconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-mam-targetedmanagedappconfiguration-update.md
-                    - name: Действие назначения
+                    - name: назначения действия
                       href: api/intune-mam-targetedmanagedappconfiguration-assign.md
                     - name: Действие targetApps
                       href: api/intune-mam-targetedmanagedappconfiguration-targetapps.md
@@ -2603,7 +2607,7 @@
                       href: api/intune-mam-targetedmanagedappprotection-list.md
                     - name: Получение
                       href: api/intune-mam-targetedmanagedappprotection-get.md
-                    - name: назначения действия
+                    - name: Действие назначения
                       href: api/intune-mam-targetedmanagedappprotection-assign.md
                 - name: Windows Information Protection
                   href: resources/intune-mam-windowsinformationprotection.md
@@ -2612,7 +2616,7 @@
                       href: api/intune-mam-windowsinformationprotection-list.md
                     - name: Получение
                       href: api/intune-mam-windowsinformationprotection-get.md
-                    - name: назначения действия
+                    - name: Действие назначения
                       href: api/intune-mam-windowsinformationprotection-assign.md
                 - name: Приложение Windows Information Protection
                   href: resources/intune-mam-windowsinformationprotectionapp.md
@@ -2995,7 +2999,7 @@
                 - name: Пользователь
                   href: resources/intune-shared-user.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-shared-user-list.md
                     - name: Получение
                       href: api/intune-shared-user-get.md
