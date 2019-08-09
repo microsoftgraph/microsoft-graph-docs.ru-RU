@@ -5,32 +5,34 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc520c7c27aa3273b87ccffb67484e4f004df76f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 43a0884e8b229facaf98c06160430fb087a89e87
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004080"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245575"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
-Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря `(../me/calendarview)`, принадлежащего пользователю или группе, либо другого календаря пользователя, которое определяется заданным диапазоном времени.
+Получение в представлении календаря исключений, повторяемых или единичных экземпляров событий за определенный диапазон времени, указанных в стандартном `(../me/calendarview)` или любом другом календаре пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* События в календаре пользователя: Calendars.Read или Calendars.ReadWrite.
-* События в календаре группы: Group.Read.All или Group.ReadWrite.All.
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт) | Calendars.Read, Calendars.ReadWrite    |
+|Для приложений | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
+Экземпляр [calendar](../resources/calendar.md) по умолчанию для пользователя.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /groups/{id}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 Экземпляр [calendar](../resources/calendar.md) пользователя в экземпляре по умолчанию [calendarGroup](../resources/calendargroup.md).
