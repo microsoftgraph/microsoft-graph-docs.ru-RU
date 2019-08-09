@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 13bea7e626232caabb0eb58dc3b9eb7b6d458e9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
+ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033259"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245660"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -36,6 +36,10 @@ ms.locfileid: "36033259"
 ### <a name="using-delta-query"></a>Запрос изменений
 
 Об известных проблемах, связанных с запросом изменений, можно узнать в [соответствующем разделе](#delta-query) этой статьи.
+
+### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>Отзыв сеансов входа возвращает неправильный код HTTP
+
+[user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) должен возвращать ответ `204 No content` в случае успешного отзыва и код ошибки HTTP (4xx или 5xx), если запрос не выполнен.    Однако из-за проблемы со службой этот API возвращает `200 OK` и логический параметр, который всегда правильный.  Пока проблема не будет устранена, разработчикам рекомендуется просто интерпретировать код возврата 2xx как успешное выполнение запроса к этому API.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
