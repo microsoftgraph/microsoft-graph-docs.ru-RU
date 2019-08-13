@@ -4,12 +4,13 @@ description: Представляет приложение в списке эл�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2752abd8d76c08e1da162d58aa8863d2f8b63940
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 0d1d9f2e2f17deeca2267bcc0397d4cfc7d650a7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34992124"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321927"
 ---
 # <a name="macoslaunchitem-resource-type"></a>Тип ресурса Макослаунчитем
 
@@ -42,8 +43,6 @@ ms.locfileid: "34992124"
   "hide": true
 }
 ```
-
-
 
 
 

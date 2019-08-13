@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 59bdaf96936be6a4b7aa38ef037ddbc03c918e29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6585516eab55d831b68bcc50be4c3160a0fd3791
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952837"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325101"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>Удаление объекта androidForWorkEnrollmentProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952837"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmen
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

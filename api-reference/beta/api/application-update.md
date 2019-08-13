@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 18b07675304b901bb6b4a37b91c8b48ac0a4ab5e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2794bdb2c9f86db7565a3d1b9cfcd1411e358e4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945433"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318673"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -55,7 +55,7 @@ PATCH /applications/{id}
 |logo|Stream|Основной логотип для приложения. Значение null не допускается. |
 |orgRestrictions|Коллекция String| Организационное Тенантидс, к которому приложение ограничено.  Если коллекция пуста, приложение является несколькими клиентами (не ограничено). Если коллекция содержит Тенантидс, приложение ограничено Тенантидс Организации в коллекции. Указание других клиентов, кроме tenantId, где зарегистрировано приложение, предполагает косвенное включение собственного tenantId приложения. |
 |passwordCredentials|Коллекция [passwordCredential](../resources/passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|
-|Преаусоризедаппликатионс|Коллекция [preAuthorizedApplication](../resources/preauthorizedapplication.md)| Перечисляет приложения и запрашиваемые разрешения для неявного согласия. Необходимо, чтобы администратор предоставил согласие на применение приложения. Преаусоризедаппликатионс не требуют от пользователя согласия с запрошенными разрешениями. Разрешения, перечисленные в Преаусоризедаппликатионс, не требуют согласия пользователя. Однако все дополнительные запрошенные разрешения, не указанные в Преаусоризедаппликатионс, требуют согласия пользователя. |
+|преаусоризедаппликатионс|Коллекция [preAuthorizedApplication](../resources/preauthorizedapplication.md)| Перечисляет приложения и запрашиваемые разрешения для неявного согласия. Необходимо, чтобы администратор предоставил согласие на применение приложения. Преаусоризедаппликатионс не требуют от пользователя согласия с запрошенными разрешениями. Разрешения, перечисленные в Преаусоризедаппликатионс, не требуют согласия пользователя. Однако все дополнительные запрошенные разрешения, не указанные в Преаусоризедаппликатионс, требуют согласия пользователя. |
 |requiredResourceAccess|Коллекция [requiredResourceAccess](../resources/requiredresourceaccess.md)|Указывает ресурсы, к которым приложению требуется доступ, и устанавливает области разрешений OAuth и роли приложения, требующиеся приложению для каждого из этих ресурсов. Эта предварительная настройка доступа к необходимым ресурсам определяет интерфейс предоставления согласия. Значение null не допускается.|
 |tags|Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. |
 |web|[webApplication](../resources/webapplication.md)| Указывает параметры для веб-приложения. |
@@ -86,7 +86,7 @@ Content-length: 72
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

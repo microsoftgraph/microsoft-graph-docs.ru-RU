@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab595ab7fff2f496ba93dd30fbade313558d53af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 423611a5c6e9dfecc936d59e9ae8a03d70950519
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958650"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322088"
 ---
 # <a name="list-termsandconditionses"></a>Перечисление объектов termsAndConditions
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958650"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 582
   ]
 }
 ```
+
 
 
 

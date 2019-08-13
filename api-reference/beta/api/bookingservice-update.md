@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 127847cbf56ed2e25ad5f042b470fa97373d4f55
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b687a0f84cf3433c8d8e0d42f0e362e1b6f30e9a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944935"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318091"
 ---
 # <a name="update-bookingservice"></a>Обновление букингсервице
 
@@ -49,21 +49,21 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Дефаултдуратион|Duration (Длительность)|Длина службы по умолчанию, представленная в виде числа дней, часов, минут и секунд. Например, P11D23H59M 59.999999999999 S. |
+|дефаултдуратион|Duration (Длительность)|Длина службы по умолчанию, представленная в виде числа дней, часов, минут и секунд. Например, P11D23H59M 59.999999999999 S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение службы по умолчанию.|
-|Дефаултприце|Двойное|Денежная Цена по умолчанию для службы.|
-|Дефаултприцетипе|string|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|Дефаултреминдерс|Коллекция [букингреминдер](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этого **букингсервице** с помощью идентификатора.|
+|дефаултприце|Двойное|Денежная Цена по умолчанию для службы.|
+|дефаултприцетипе|string|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|дефаултреминдерс|Коллекция [букингреминдер](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этого **букингсервице** с помощью идентификатора.|
 |description|String|Текстовое описание службы.|
 |displayName|Строка|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
 |id|String| Только для чтения.|
-|Ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
 |notes|String|Дополнительные сведения об этой службе.|
 |Буфер буфера|Duration (Длительность)|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
 |пребуфер|Duration (Длительность)|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
-|Счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|Стаффмемберидс|Коллекция строк|Представляет [сотрудников](../resources/bookingstaffmember.md) , которые предоставляют эту службу. |
+|счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
+|стаффмемберидс|Коллекция строк|Представляет [сотрудников](../resources/bookingstaffmember.md) , которые предоставляют эту службу. |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
@@ -89,7 +89,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingservice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingservice-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

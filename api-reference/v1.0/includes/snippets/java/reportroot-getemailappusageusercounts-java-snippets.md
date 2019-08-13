@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 423dfc52a01d9de612c324ab1b4008f705eb39d6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: fe2a916cef356c63bd96912b5661efaa36fb489e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35886402"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327351"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getEmailAppUsageUserCounts('D7')
+    .getEmailAppUsageUserCounts("D7")
     .buildRequest()
     .get();
 

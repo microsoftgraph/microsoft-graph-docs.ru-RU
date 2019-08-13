@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c1b07251682645379d983a9cf5fc7acd9739ad00
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8647c78e5403f280c3eb585eaf3ef907df75ce1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947314"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315458"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>Получение Макосендпоинтпротектионконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947314"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -128,6 +128,7 @@ Content-Length: 2349
   }
 }
 ```
+
 
 
 

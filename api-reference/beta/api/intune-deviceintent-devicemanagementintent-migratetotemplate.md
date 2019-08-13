@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3adc6c83b66879eea12b17e57933fc0d54130b0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 37e67efff5aef17b82a033e2b76dbeed707e072a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960470"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313274"
 ---
 # <a name="migratetotemplate-action"></a>действие Мигратетотемплате
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960470"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,8 +51,8 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/migrateToTemplate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Невтемплатеид|String|Пока не задокументировано.|
-|Пресервекустомвалуес|Boolean|Н/Д|
+|невтемплатеид|String|Пока не задокументировано.|
+|пресервекустомвалуес|Boolean|Н/Д|
 
 
 
@@ -79,6 +80,7 @@ Content-length: 81
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

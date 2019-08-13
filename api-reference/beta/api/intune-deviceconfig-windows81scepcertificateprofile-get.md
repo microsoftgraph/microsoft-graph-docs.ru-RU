@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0344fd8c4f3636374b18cde3db1a39eae601d924
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8372040379f9c1200e26bf2238b63feb4445d36
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977127"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314170"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Получение windows81SCEPCertificateProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35977127"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -136,6 +136,7 @@ Content-Length: 2337
   }
 }
 ```
+
 
 
 

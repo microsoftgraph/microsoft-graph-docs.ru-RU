@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc85e6bf4d68688b890ca1a3821baf8dc07d8f2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 037139389bdd4d805d5eff7f6a22c07cc427820e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952732"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322809"
 ---
 # <a name="completesignup-action"></a>Действие completeSignup
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952732"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +78,7 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

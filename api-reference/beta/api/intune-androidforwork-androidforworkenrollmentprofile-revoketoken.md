@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41e957e1fa86614716e3eb25c2fc0e2338d33fc4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 111ba55f1268c5b630d6f2ea284d7f14db80cce8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952753"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322823"
 ---
 # <a name="revoketoken-action"></a>Действие revokeToken
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952753"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentP
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

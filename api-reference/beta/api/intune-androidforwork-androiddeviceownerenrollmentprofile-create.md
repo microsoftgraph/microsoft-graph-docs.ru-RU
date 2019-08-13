@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3428846314127f94b46d7195af55e534f98fa10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6fc09bf2324a4e3a35d298321bf45c11725ec07
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953005"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322956"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Создание Андроиддевицеовнеренроллментпрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "35953005"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -58,12 +58,12 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
-|Токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
+|токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|Скопетагс|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -77,7 +77,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles
 Content-type: application/json
-Content-length: 613
+Content-length: 627
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -94,8 +94,8 @@ Content-length: 613
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -105,7 +105,7 @@ Content-length: 613
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 785
+Content-Length: 799
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -125,11 +125,12 @@ Content-Length: 785
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
+
 
 
 

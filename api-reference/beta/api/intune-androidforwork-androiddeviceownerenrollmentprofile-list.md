@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42607d093d12758d4e86aaa9697b1575ef548f97
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a7f2cdcdfed051595355cbf3bf7bf84476d855c4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952928"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322893"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>Список Андроиддевицеовнеренроллментпрофилес
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952928"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 898
+Content-Length: 912
 
 {
   "value": [
@@ -85,13 +85,14 @@ Content-Length: 898
         "type": "Type value",
         "value": "dmFsdWU="
       },
-      "scopeTags": [
-        "Scope Tags value"
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
       ]
     }
   ]
 }
 ```
+
 
 
 

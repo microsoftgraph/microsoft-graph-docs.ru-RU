@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4662310d1fc03f4a6ecfdbbd310b206736fd17ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69c990e8cb2eefc71e1a0cae085e71da7e095383
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968689"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337673"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>тип перечисления Виндовсупдатенотификатиондисплайоптион
 
@@ -24,11 +24,9 @@ ms.locfileid: "35968689"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|Дефаултнотификатионс|1,1|Используйте уведомления центра обновления Windows по умолчанию.|
-|Рестартварнингсонли|2|Отключить все уведомления, Кроме предупреждений о перезапуске.|
-|Дисаблеаллнотификатионс|4|Отключение всех уведомлений, в том числе предупреждений о перезапуске.|
-
-
+|дефаултнотификатионс|1,1|Используйте уведомления центра обновления Windows по умолчанию.|
+|рестартварнингсонли|2|Отключить все уведомления, Кроме предупреждений о перезапуске.|
+|дисаблеаллнотификатионс|4|Отключение всех уведомлений, в том числе предупреждений о перезапуске.|
 
 
 

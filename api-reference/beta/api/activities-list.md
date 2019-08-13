@@ -7,12 +7,12 @@ description: В этой статье рассказывается, как со�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 075f4f3df4e16e23fa3f90cb7de70a502b1d0aae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f794f13e4410cdef7c32c4fd444f31cf66131032
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945937"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319053"
 ---
 # <a name="enumerate-activities-preview"></a>Перечисление действий (ознакомительная версия)
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

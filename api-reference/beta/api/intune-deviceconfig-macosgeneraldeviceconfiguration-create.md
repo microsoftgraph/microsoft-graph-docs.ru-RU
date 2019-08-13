@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecfedc2b9ef91930f02a7dd29f68065e5ef55354
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb283ee50e65e5e9408932dc41af1fb6497adb7b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947258"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315381"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Create macOSGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947258"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,16 +55,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Девицеманажементаппликабилитируледевицемоде|[Девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
-|compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|Коллекция String|Электронный адрес без суффикса, соответствующего одной из этих строк, будет считаться не добавленным в домен.|
 |passwordBlockSimple|Boolean|Блокировка простых паролей.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля.|
@@ -73,9 +73,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться пароль.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Период бездействия (в минутах), по истечении которого будет гаснуть экран.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
-|passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
-|Кэйчаинблоккклаудсинк|Boolean|Указывает, заблокирована ли синхронизация ключей iCloud для iCloud (macOS 10,12 и более поздних версий).|
+|кэйчаинблоккклаудсинк|Boolean|Указывает, заблокирована ли синхронизация ключей iCloud для iCloud (macOS 10,12 и более поздних версий).|
 |airPrintBlocked|Boolean|Указывает, заблокировано ли Аирпринт (macOS 10,12 и более поздних версий).|
 |airPrintForceTrustedTLS|Boolean|Указывает, требуются ли доверенные сертификаты для обмена данными при печати TLS (macOS 10,13 и более поздних версий).|
 |airPrintBlockiBeaconDiscovery|Boolean|Указывает, блокируется ли Ибеакон обнаружение принтеров Аирпринт. Это предотвращает ложные сигналы Аирпринт Bluetooth от фишинга для сетевого трафика (macOS 10,3 и более поздних версий).|
@@ -85,31 +85,32 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить получение результатов из поиска в Интернете.|
 |keyboardBlockDictation|Boolean|Указывает, следует ли запретить пользователю использовать диктовку.|
 |definitionLookupBlocked|Boolean|Указывает, следует ли заблокировать Поиск определений.|
-|Апплеватчблоккаутаунлокк|Boolean|Указывает, следует ли запретить пользователям разблокирование своего Mac-адреса с контрольной записью Apple.|
-|Итунесблоккфилешаринг|Boolean|Указывает, следует ли запретить передачу файлов с помощью iTunes.|
+|апплеватчблоккаутаунлокк|Boolean|Указывает, следует ли запретить пользователям разблокирование своего Mac-адреса с контрольной записью Apple.|
+|итунесблоккфилешаринг|Boolean|Указывает, следует ли запретить передачу файлов с помощью iTunes.|
 |iCloudBlockDocumentSync|Boolean|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|Иклаудблоккмаил|Boolean|Указывает, следует ли запретить синхронизацию почты для iCloud.|
-|Иклаудблоккаддрессбук|Boolean|Указывает, следует ли запретить синхронизацию контактов с iCloud.|
-|Иклаудблокккалендар|Boolean|Указывает, следует ли запретить синхронизацию календарей в iCloud.|
-|Иклаудблоккреминдерс|Boolean|Указывает, следует ли запретить синхронизацию напоминаний для iCloud.|
-|Иклаудблоккбукмаркс|Boolean|Указывает, следует ли блокировать синхронизацию закладок в iCloud.|
-|Иклаудблоккнотес|Boolean|Указывает, следует ли запретить синхронизацию заметок в iCloud.|
+|иклаудблоккмаил|Boolean|Указывает, следует ли запретить синхронизацию почты для iCloud.|
+|иклаудблоккаддрессбук|Boolean|Указывает, следует ли запретить синхронизацию контактов с iCloud.|
+|иклаудблокккалендар|Boolean|Указывает, следует ли запретить синхронизацию календарей в iCloud.|
+|иклаудблоккреминдерс|Boolean|Указывает, следует ли запретить синхронизацию напоминаний для iCloud.|
+|иклаудблоккбукмаркс|Boolean|Указывает, следует ли блокировать синхронизацию закладок в iCloud.|
+|иклаудблоккнотес|Boolean|Указывает, следует ли запретить синхронизацию заметок в iCloud.|
 |airDropBlocked|Boolean|Указывает, следует ли запретить AirDrop.|
-|Пассвордблоккмодификатион|Boolean|Указывает, следует ли запретить изменение секретного кода.|
+|пассвордблоккмодификатион|Boolean|Указывает, следует ли запретить изменение секретного кода.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|Пассвордблоккаутофилл|Boolean|Указывает, следует ли заблокировать функцию автозаполнения паролей.|
-|Пассвордблоккпроксимитирекуестс|Boolean|Указывает, следует ли запретить запрашивать пароли с ближайших устройств.|
-|Пассвордблоккаирдропшаринг|Boolean|Указывает, следует ли заблокировать общий доступ к паролям с помощью функции паролей AirDrop.|
-|Софтвареупдатесенфорцедделайиндайс|Int32|Задает число дней, в течение которых обновление программного обеспечения будет делед для защищенного устройства. Допустимые значения: от 0 до 90.|
-|Софтвареупдатесфорцеделайед|Boolean|Указывает, следует ли откладывать видимость обновлений программного обеспечения, когда устройство находится в защищенном режиме.|
-|Контенткачингблоккед|Boolean|Указывает, следует ли запретить кэширование контента.|
+|пассвордблоккаутофилл|Boolean|Указывает, следует ли заблокировать функцию автозаполнения паролей.|
+|пассвордблоккпроксимитирекуестс|Boolean|Указывает, следует ли запретить запрашивать пароли с ближайших устройств.|
+|пассвордблоккаирдропшаринг|Boolean|Указывает, следует ли заблокировать общий доступ к паролям с помощью функции паролей AirDrop.|
+|софтвареупдатесенфорцедделайиндайс|Int32|Задает число дней, в течение которых обновление программного обеспечения будет делед для защищенного устройства. Допустимые значения: от 0 до 90.|
+|софтвареупдатесфорцеделайед|Boolean|Указывает, следует ли откладывать видимость обновлений программного обеспечения, когда устройство находится в защищенном режиме.|
+|контенткачингблоккед|Boolean|Указывает, следует ли запретить кэширование контента.|
 |iCloudBlockPhotoLibrary|Boolean|Указывает, следует ли заблокировать медиатеку iCloud.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Указывает, следует ли запретить удаленное наблюдение за экраном в приложении "аудитория". Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
 |classroomAppForceUnpromptedScreenObservation|Boolean|Указывает, следует ли автоматически предоставлять разрешение преподавателю управляемого курса в приложении аудитории для просмотра экрана учащегося без выдачи запросов. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
-|Классрумфорцеаутоматикаллижоинклассес|Boolean|Указывает, следует ли автоматически предоставлять разрешение для запросов преподавателя без запроса учащегося. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
-|Классрумфорцерекуестпермиссионтолеавеклассес|Boolean|Указывает, должен ли студент, зарегистрированный в неуправляемом курсе, запрашивать разрешение у преподавателя при попытке выйти из курса. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
-|Классрумфорцеунпромптедаппанддевицелокк|Boolean|Указывает, следует ли запретить преподавателю блокировать приложения или устройство, не запрашивая учащихся. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|классрумфорцеаутоматикаллижоинклассес|Boolean|Указывает, следует ли автоматически предоставлять разрешение для запросов преподавателя без запроса учащегося. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|классрумфорцерекуестпермиссионтолеавеклассес|Boolean|Указывает, должен ли студент, зарегистрированный в неуправляемом курсе, запрашивать разрешение у преподавателя при попытке выйти из курса. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|классрумфорцеунпромптедаппанддевицелокк|Boolean|Указывает, следует ли запретить преподавателю блокировать приложения или устройство, не запрашивая учащихся. Требует регистрации MDM с помощью Apple School Manager или Apple Business Manager.|
+|iCloudBlockActivityContinuation|Boolean|Указывает, следует ли запретить пользователю продолжать работу, начатую на устройстве MacOS, на другом устройстве iOS или MacOS (MacOS 10,15 или более поздней версии).|
 
 
 
@@ -123,7 +124,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3102
+Content-length: 3146
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -211,7 +212,8 @@ Content-length: 3102
   "classroomAppForceUnpromptedScreenObservation": true,
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
-  "classroomForceUnpromptedAppAndDeviceLock": true
+  "classroomForceUnpromptedAppAndDeviceLock": true,
+  "iCloudBlockActivityContinuation": true
 }
 ```
 
@@ -220,7 +222,7 @@ Content-length: 3102
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3274
+Content-Length: 3318
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -311,9 +313,11 @@ Content-Length: 3274
   "classroomAppForceUnpromptedScreenObservation": true,
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
-  "classroomForceUnpromptedAppAndDeviceLock": true
+  "classroomForceUnpromptedAppAndDeviceLock": true,
+  "iCloudBlockActivityContinuation": true
 }
 ```
+
 
 
 

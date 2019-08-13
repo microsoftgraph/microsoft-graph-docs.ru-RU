@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f233faea1804ed604b3a34ecdc241471d2a851b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 44ed7785020bc3278bd0cf86fe78715952333b67
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952823"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322837"
 ---
 # <a name="get-androidforworkenrollmentprofile"></a>Получение объекта androidForWorkEnrollmentProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952823"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -89,6 +89,7 @@ Content-Length: 719
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d10ceb47a48ee053689d4bae3c628cc1ccac961
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a290b2deb1241a15760dfc09919a639608e8371
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952606"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325003"
 ---
 # <a name="requestsignupurl-action"></a>Действие requestSignupUrl
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952606"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,6 +84,7 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
+
 
 
 

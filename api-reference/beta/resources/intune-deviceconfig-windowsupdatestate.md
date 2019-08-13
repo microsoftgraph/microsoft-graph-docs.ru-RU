@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a023e4f74fe7a0abc96a47b79c7da7104617c9d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 47f2e2668634fed4d24d952d08b2b4a90f33c332
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726139"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337680"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Тип ресурса Виндовсупдатестате
 
@@ -37,9 +38,9 @@ ms.locfileid: "35726139"
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|Строка|Имя участника пользователя.|
 |status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|Куалитюпдатеверсион|String|Версия устройства для обновления качества.|
-|Феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
-|Ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
+|куалитюпдатеверсион|String|Версия устройства для обновления качества.|
+|феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
+|ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации устройства с Microsoft Intune.|
 
 ## <a name="relationships"></a>Отношения
@@ -68,8 +69,6 @@ ms.locfileid: "35726139"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

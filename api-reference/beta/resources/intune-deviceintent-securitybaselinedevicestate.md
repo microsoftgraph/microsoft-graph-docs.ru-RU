@@ -4,12 +4,13 @@ description: Сводка по базовому состоянию соотве�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9fb2195a2cdf68c85e05988b1d2063d21a97228
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3a7787ae8a55192adc75ab05f6e6cd21988ab2f4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983444"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319351"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Тип ресурса Секуритибаселинедевицестате
 
@@ -32,7 +33,7 @@ ms.locfileid: "34983444"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор объекта|
-|Манажеддевицеид|String|Идентификатор устройства Intune|
+|манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |состояние|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -60,8 +61,6 @@ ms.locfileid: "34983444"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 
