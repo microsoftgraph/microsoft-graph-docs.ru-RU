@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d513883f2dd82d513dedfcd3dfd50925ef83e37b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9987b3278de40e4b8e946e1753cc48a26e2a3835
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981530"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310320"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Получение Девицеманажементскриптрунсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981530"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 259
+Content-Length: 356
 
 {
   "value": {
@@ -74,11 +74,15 @@ Content-Length: 259
     "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
     "successDeviceCount": 2,
     "errorDeviceCount": 0,
+    "compliantDeviceCount": 4,
+    "notCompliantDeviceCount": 7,
+    "pendingDeviceCount": 2,
     "successUserCount": 0,
     "errorUserCount": 14
   }
 }
 ```
+
 
 
 

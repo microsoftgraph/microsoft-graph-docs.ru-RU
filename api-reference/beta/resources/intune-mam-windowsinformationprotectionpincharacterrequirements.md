@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c5a2a581d761f849b836ccc6173de0a1a2403624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a40637157d9040d34e8a28797906c3272a9c27fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998256"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320765"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
 
@@ -24,10 +24,8 @@ ms.locfileid: "35998256"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notAllow|нуль|Не разрешать|
-|Рекуиреатлеастоне|1,1|Требуется хотя бы один|
+|рекуиреатлеастоне|1,1|Требуется хотя бы один|
 |разрешить|2|Разрешить любой номер|
-
-
 
 
 

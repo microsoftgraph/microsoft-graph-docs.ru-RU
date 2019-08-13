@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26d1864f75dbd005375aac79f95f71a97e5d43fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5d05ae3601ba84afbab974a4d5294afe6c24ec81
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946810"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315048"
 ---
 # <a name="delete-managedalldevicecertificatestate"></a>Удаление Манажедаллдевицецертификатестате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946810"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAll
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

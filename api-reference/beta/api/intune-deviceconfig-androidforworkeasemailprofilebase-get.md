@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1d3465a7ecca037552a2b63138be990c8db388b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3facae3c41d91c280dd07cee823aa08da449bf2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963698"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312210"
 ---
 # <a name="get-androidforworkeasemailprofilebase"></a>Получение Андроидфорворкеасемаилпрофилебасе
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963698"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,6 +113,7 @@ Content-Length: 1529
   }
 }
 ```
+
 
 
 

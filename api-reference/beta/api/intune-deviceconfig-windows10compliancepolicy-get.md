@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe32502087a729cb82d51a583431eb52af6c6474
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71864b59e716fb7f582211c229463ee10b36df8a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946182"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314737"
 ---
 # <a name="get-windows10compliancepolicy"></a>Get windows10CompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946182"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -121,6 +121,7 @@ Content-Length: 1977
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1199c41af43fbcb52c2eec63d4fa4aafa3e2835e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 35ab4ac4fecb0992e0a3c40f42d55d1d35f4c8b3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976966"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314625"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>Список windows10EasEmailProfileConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "35976966"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -118,6 +118,7 @@ Content-Length: 1911
   ]
 }
 ```
+
 
 
 

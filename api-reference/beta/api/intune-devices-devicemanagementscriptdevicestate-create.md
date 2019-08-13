@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfdade7e7014da121453873349c3a3aee787fe43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f0b9c1c2ba51907bc486b5c31460b6b7f5c1dce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981600"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310404"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание Девицеманажементскриптдевицестате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981600"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта состояния устройства сценария управления устройствами.|
-|Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`.|
-|Ресултмессаже|String|Сведения о выходных данных выполнения.|
-|Ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
+|ресултмессаже|String|Сведения о выходных данных выполнения.|
+|ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
+|lastSyncDateTime|DateTimeOffset|Последнее время, когда расширение управления Intune будет синхронизироваться с Intune.|
+|преремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения перед исправлением.|
+|ремедиатионскриптеррор|String|Вывод ошибок сценария исправления.|
+|постремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения после исправления.|
 
 
 
@@ -71,7 +75,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 281
+Content-length: 588
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -79,7 +83,11 @@ Content-length: 281
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
 
@@ -88,7 +96,7 @@ Content-length: 281
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -97,9 +105,14 @@ Content-Length: 330
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
+
 
 
 

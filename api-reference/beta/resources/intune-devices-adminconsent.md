@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f13e8abbaf20f57e94923918a4e5c2bb5bcf9b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d78333cd683501a8bf4fea0aa3a2e55944d9b5a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968612"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319311"
 ---
 # <a name="adminconsent-resource-type"></a>Тип ресурса Adminconsent.
 
@@ -23,7 +23,8 @@ ms.locfileid: "35968612"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Шареапнсдата|[Админконсентстате](../resources/intune-devices-adminconsentstate.md)|Разрешение администратора о предоставлении общего доступа к данным о пользователях и устройствах в Apple. Возможные значения: `notConfigured`, `granted`, `notGranted`.|
+|шареапнсдата|[админконсентстате](../resources/intune-devices-adminconsentstate.md)|Разрешение администратора о предоставлении общего доступа к данным о пользователях и устройствах в Apple. Возможные значения: `notConfigured`, `granted`, `notGranted`.|
+|шареусерекспериенцеаналитиксдата|[админконсентстате](../resources/intune-devices-adminconsentstate.md)|Получает или задает согласие администратора для совместного использования данных аналитики взаимодействия с пользователем. Возможные значения: `notConfigured`, `granted`, `notGranted`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -38,11 +39,10 @@ ms.locfileid: "35968612"
 ``` json
 {
   "@odata.type": "#microsoft.graph.adminConsent",
-  "shareAPNSData": "String"
+  "shareAPNSData": "String",
+  "shareUserExperienceAnalyticsData": "String"
 }
 ```
-
-
 
 
 

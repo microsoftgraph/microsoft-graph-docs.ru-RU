@@ -4,12 +4,13 @@ description: Состояние соответствия нормативным 
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ecde3520bb2fcced3687e04dd9fd89cceec2a11
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 6a287ede8651b3466acdd4ebe229eb1a0f84810d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34983458"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319379"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>тип перечисления Секуритибаселинекомплианцестате
 
@@ -24,12 +25,10 @@ ms.locfileid: "34983458"
 |:---|:---|:---|
 |unknown|нуль|Неизвестное состояние|
 |месте|1,1|Безопасное состояние|
-|Нотаппликабле|2|Неприменимое состояние|
-|Нотсекуре|4|Небезопасное состояние|
+|нотаппликабле|2|Неприменимое состояние|
+|нотсекуре|4|Небезопасное состояние|
 |error|SP4|Состояние ошибки|
 |противоречивы|17:00|Состояние конфликта|
-
-
 
 
 

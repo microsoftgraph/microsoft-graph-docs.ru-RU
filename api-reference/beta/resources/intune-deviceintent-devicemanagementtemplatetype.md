@@ -4,12 +4,13 @@ description: Тип шаблона
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd9855bb1d09d804ec8335dac9ebdc94800c3cfa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 01e4791d0904d40063b2542e0589fc4e7c8ef890
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001946"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319407"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
 
@@ -22,13 +23,11 @@ ms.locfileid: "35001946"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Секуритибаселине|нуль|Шаблон базового плана безопасности|
-|СпеЦиализеддевицес|1,1|Шаблон специализированных устройств|
-|Адванцедсреатпротектионсекуритибаселине|2|Переносится в базовый шаблон безопасности для защиты от угроз|
+|секуритибаселине|нуль|Шаблон базового плана безопасности|
+|спеЦиализеддевицес|1,1|Шаблон специализированных устройств|
+|адванцедсреатпротектионсекуритибаселине|2|Переносится в базовый шаблон безопасности для защиты от угроз|
 |deviceConfiguration|4|Шаблон конфигурации устройства|
 |собственный|SP4|Настраиваемый шаблон, определенный администратором|
-
-
 
 
 

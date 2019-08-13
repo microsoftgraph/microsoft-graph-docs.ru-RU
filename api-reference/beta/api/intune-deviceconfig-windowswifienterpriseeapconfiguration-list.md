@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 28e6236e1c95362a74850fc4e9044d47752ee5fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2514f7f402fe93e80cbd9270c1681c34d43e2ea2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981817"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313582"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>Список Виндовсвифиентерприсиапконфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981817"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -133,6 +133,7 @@ Content-Length: 2722
   ]
 }
 ```
+
 
 
 

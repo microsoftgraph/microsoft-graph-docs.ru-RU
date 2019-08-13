@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 241ee291f038cfccc85b42aa2d1a5fe932a1a494
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f57fa87b84833d24fc6e02f4844b16ae6bffeba
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981684"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310614"
 ---
 # <a name="delete-detectedapp"></a>Delete detectedApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981684"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedA
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

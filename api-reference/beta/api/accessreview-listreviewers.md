@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3e4f6900011d75077d30fd16cc16345db0e4c7d6
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: f0267adad98ea94b5f92342da92350b5c2693969
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172732"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319155"
 ---
 # <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-reviewers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-reviewers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,7 +102,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Акцессревиев](accessreview-get.md) |  [Акцессревиев](../resources/accessreview.md) |  Получение проверки доступа. |
+|[Получение Акцессревиев](accessreview-get.md) |  [акцессревиев](../resources/accessreview.md) |  Получение проверки доступа. |
 |[Добавление рецензента Акцессревиев](accessreview-addreviewer.md) |     Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
 |[Удаление рецензента Акцессревиев](accessreview-removereviewer.md) | Нет. |   Удаление проверяющего из Акцессревиев. |
 

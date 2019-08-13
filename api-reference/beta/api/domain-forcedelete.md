@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 45e5e0c6eb6ed5f42d4c7caca5de02739bbcaf5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c806df38e795c13752c9b0b6bafdf176af641adb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957502"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321207"
 ---
 # <a name="domain-forcedelete"></a>домен: Форцеделете
 
@@ -65,7 +65,7 @@ POST /domains/{id}/forceDelete
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Дисаблеусераккаунтс|Boolean| Возможность отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему.<br>*Значение true* (по умолчанию)-учетные записи пользователей, переименованные в рамках этой операции, отключены.<br>*False* — учетные записи пользователей, переименованные в рамках этой операции, не отключаются. |
+|дисаблеусераккаунтс|Boolean| Возможность отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему.<br>*Значение true* (по умолчанию)-учетные записи пользователей, переименованные в рамках этой операции, отключены.<br>*False* — учетные записи пользователей, переименованные в рамках этой операции, не отключаются. |
 
 ## <a name="response"></a>Ответ
 
@@ -92,7 +92,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

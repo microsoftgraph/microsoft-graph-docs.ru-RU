@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6fff27abba5bce945b1f8abd74e94e2060114b17
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 18149f0493f1591c59e5bef98dc9a36f148a600c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000020"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319211"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
@@ -28,10 +28,8 @@ ms.locfileid: "36000020"
 |несоответствующих|2|Устройство не совместимо и заблокировано из корпоративных ресурсов.|
 |противоречивы|4|Конфликт с другими правилами.|
 |error|SP4|Ошибка|
-|Инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
-|Конфигманажер|255|Управление с помощью диспетчера конфигураций|
-
-
+|инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
+|конфигманажер|255|Управление с помощью диспетчера конфигураций|
 
 
 

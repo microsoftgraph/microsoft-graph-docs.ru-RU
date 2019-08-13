@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 493a533c7549834f7fcd07c8290c96638cb060c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6b625339a273b866cdc243dbb0a9af4ef6dc14ad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975328"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314401"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Список windows10PkcsCertificateProfiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975328"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -122,6 +122,7 @@ Content-Length: 2185
   ]
 }
 ```
+
 
 
 

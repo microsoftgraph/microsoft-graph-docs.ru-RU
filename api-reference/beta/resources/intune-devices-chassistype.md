@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ca9f5993b28469dc77b8e6024926303468c43e2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d243eeb2434f02ede615b69f32d9579ec24c6813
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968577"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319225"
 ---
 # <a name="chassistype-enum-type"></a>тип перечисления Чассистипе
 
@@ -26,14 +26,12 @@ ms.locfileid: "35968577"
 |unknown|нуль|Найден.|
 |системной|1,1|Системной.|
 |ноутбуков|2|Ноутбуков.|
-|Ворксворкстатион|4|Рабочие.|
-|Ентерприсесервер|SP4|Сервер предприятия.|
+|ворксворкстатион|4|Рабочие.|
+|ентерприсесервер|SP4|Сервер предприятия.|
 |phone|100|Звонков.|
 |ПК|101|Мобильный планшет.|
-|Мобилеосер|102|Другой мобильный.|
-|Мобилеункновн|103|Неизвестный мобильный телефон.|
-
-
+|мобилеосер|102|Другой мобильный.|
+|мобилеункновн|103|Неизвестный мобильный телефон.|
 
 
 

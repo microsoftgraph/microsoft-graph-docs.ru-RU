@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 33844bd20b94868f91e2cb390b2dfaff830734ad
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: e2699e50012f92d8a776fcce20c5cd3d87be83d6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932523"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373310"
 ---
 # <a name="group-validateproperties"></a>Группа: Валидатепропертиес
 
@@ -53,7 +53,7 @@ POST /groups/{id}/validateProperties
 |:---------------|:--------|:----------|
 |displayName|Строка| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
 |mailNickname|String| Псевдоним почты для группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
-|Онбехалфофусерид|GUID| Идентификатор пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей **онбехалфофусерид** . |
+|онбехалфофусерид|GUID| Идентификатор пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей **онбехалфофусерид** . |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика. В тексте отклика не возвращается никаких данных.
@@ -89,7 +89,7 @@ Content-length: 132
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

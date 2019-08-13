@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a7af1f1eff882e07ebdeeb9e2066179fa34217e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57c8d62f11d26167f670a2947a73fc2678e84aae
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944858"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318042"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление букингстаффмембер
 
@@ -41,12 +41,12 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Аваилабилитисаффектедбиперсоналкалендар|Boolean|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
+|аваилабилитисаффектедбиперсоналкалендар|Boolean|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
 |colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице " **сведения о персонале** " в приложении "книги".|
 |displayName|String|Имя сотрудника, отображаемое для клиентов.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть тот же клиент Office 365, что и в Организации, или в другом домене электронной почты. Этот адрес электронной почты используется, если для свойства **сендконфирматионстувнер** в политике планирования бизнеса задано значение true.|
 |role|string| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|Усебусинесшаурс|Boolean|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
+|усебусинесшаурс|Boolean|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
 |workingHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Диапазон часов на каждый день недели, когда сотрудник становится доступен для резервирования.|
 
 ## <a name="response"></a>Отклик
@@ -134,7 +134,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingstaffmember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingstaffmember-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

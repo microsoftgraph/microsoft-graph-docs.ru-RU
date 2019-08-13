@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98f718c6efa21e29a3471858f19977e08e8f1a40
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46a53f6f814b7f7844491767ffee15e5c8f60cf3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947860"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315724"
 ---
 # <a name="get-iosupdateconfiguration"></a>Get iosUpdateConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947860"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -115,6 +115,7 @@ Content-Length: 1526
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 560c81cc3bbf427efcdc5520c68c042411b3946c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9cc54b6491661169d264a01a1a0a4f0dbcb4369
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963572"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312140"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>Список Андроидфорворкженералдевицеконфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963572"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -141,6 +141,7 @@ Content-Length: 3288
   ]
 }
 ```
+
 
 
 

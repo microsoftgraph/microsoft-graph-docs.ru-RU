@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08a9cb6a65564895d94d2c0526c2c00ecbc3d599
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd502e0e630a08e5782bcd73f9399937cfd268f7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979913"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351219"
 ---
 # <a name="list-roledefinitions"></a>Перечисление объектов roleDefinition
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979913"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -119,6 +119,7 @@ Content-Length: 1477
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 85f1b449e081a07a2482890006bf8ed884f73b05
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e57af864c5c0e16bc934f9d29c7548b1f81d86c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952522"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322725"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>Удаление Андроидманажедстореаппконфигуратионсчема
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952522"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppC
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

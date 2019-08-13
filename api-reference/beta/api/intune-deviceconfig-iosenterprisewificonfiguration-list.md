@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5449fe2f5bc6ffd59dd86ffded039aa1f0cbbe1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 42e907e9e1bc07b8d73572f181bb74643e5a9f13
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948266"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315935"
 ---
 # <a name="list-iosenterprisewificonfigurations"></a>Список Иосентерприсевификонфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948266"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -125,6 +125,7 @@ Content-Length: 2387
   ]
 }
 ```
+
 
 
 

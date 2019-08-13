@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f7ea535bb2d6d42e5786b76dcba87236099d73e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1a4388fd491bcd74d461327e11ab2d0221e31e90
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948189"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315907"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948189"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10910
+Content-Length: 11114
 
 {
   "value": {
@@ -351,10 +351,16 @@ Content-Length: 10910
     "contactsAllowManagedToUnmanagedWrite": true,
     "contactsAllowUnmanagedToManagedRead": true,
     "cellularBlockPersonalHotspotModification": true,
-    "siriDisableServerLogging": true
+    "siriDisableServerLogging": true,
+    "continuousPathKeyboardBlocked": true,
+    "findMyDeviceInFindMyAppBlocked": true,
+    "findMyFriendsInFindMyAppBlocked": true,
+    "wiFiBlockPowerModification": true,
+    "iTunesBlocked": true
   }
 }
 ```
+
 
 
 

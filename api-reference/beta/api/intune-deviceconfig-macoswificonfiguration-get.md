@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a64e6bc8fc0f75122178fbd4701c116a6945fd9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1f1cb39d8de8f1c4671629466fe0cb6c62de9bab
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946845"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315066"
 ---
 # <a name="get-macoswificonfiguration"></a>Получение Макосвификонфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946845"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -117,6 +117,7 @@ Content-Length: 1725
   }
 }
 ```
+
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение свойств и отношений ресурса site.
 doc_type: apiPageType
-ms.openlocfilehash: a8ee917e3b5afa20ac0796624bdb411eeea8df36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 051c49468adfdc60508b93932e0b56b2b363c988
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024688"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320030"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 

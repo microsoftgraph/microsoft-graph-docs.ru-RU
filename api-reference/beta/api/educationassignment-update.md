@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8c3537a6c14e144147f848dc3cd77388387c3765
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8d518d6a8da0cfe1a0a5a590eb5ecbb7507ef31
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955707"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324232"
 ---
 # <a name="update-educationassignment"></a>Обновление educationassignment
 
@@ -43,14 +43,14 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Алловлатесубмиссионс|Boolean| Можно ли отправлять отправку после даты выполнения.|
-|Алловстудентстоаддресаурцестосубмиссион|Boolean| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
-|Ассигндатетиме|DateTimeOffset| Дата, когда назначение должно быть опубликовано для учащихся. |
-|Ассигнто|ЕдукатионассигнментреЦипиент| Студенты, которые получают назначение.|
+|алловлатесубмиссионс|Boolean| Можно ли отправлять отправку после даты выполнения.|
+|алловстудентстоаддресаурцестосубмиссион|Boolean| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
+|ассигндатетиме|DateTimeOffset| Дата, когда назначение должно быть опубликовано для учащихся. |
+|ассигнто|едукатионассигнментреЦипиент| Студенты, которые получают назначение.|
 |displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Дата выполнения. |
-|снижения|Едукатионассигнментградетипе| Как будет выполняться оценка назначения.|
-|выполнен|Итембоди| Инструкции, которые необходимо предоставить студентам вместе с назначением. |
+|снижения|едукатионассигнментградетипе| Как будет выполняться оценка назначения.|
+|выполнен|итембоди| Инструкции, которые необходимо предоставить студентам вместе с назначением. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
@@ -81,7 +81,7 @@ Content-length: 279
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

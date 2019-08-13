@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df33de128db8b141015326429b8bc1c172fd23c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 91e394030a4a165a385426c76ddb95eb0b8fb7b3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958433"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312987"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Обновление Термсандкондитионсграупассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958433"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|Таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
+|таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
 
 
 
@@ -87,6 +87,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

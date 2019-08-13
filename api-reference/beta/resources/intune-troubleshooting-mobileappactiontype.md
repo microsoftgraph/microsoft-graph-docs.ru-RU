@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Мобилеаппактионтипе
-description: Определяет типы действий для приложения Intune.
+description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f4984ad23c5e38def96f35897055ff934ef85a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d07ff7aad61e9d503c9b34e3d68cf37b1e106d26
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967212"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324666"
 ---
 # <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
 
@@ -18,17 +18,16 @@ ms.locfileid: "35967212"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определяет типы действий для приложения Intune.
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный результат.|
-|Инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
+|инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
 |устанавлива|4|Приложение установлено.|
 |удалить|SP4|Приложение удалено.|
-|Усеррекуестединсталл|17:00|Установка запрошена пользователем|
-
+|усеррекуестединсталл|17:00|Установка запрошена пользователем|
 
 
 

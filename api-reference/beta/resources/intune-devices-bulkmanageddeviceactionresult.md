@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a7b5e719e837dbd175fa634aea2082f5b0b142b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1f260b032078bdcd60000ecbde315a91cfcf492
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999992"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337596"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
@@ -23,10 +23,10 @@ ms.locfileid: "35999992"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
-|Фаиледдевицеидс|Коллекция строк|Неисправные устройства|
-|Нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
-|Нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
+|сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
+|фаиледдевицеидс|Коллекция строк|Неисправные устройства|
+|нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
+|нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -55,8 +55,6 @@ ms.locfileid: "35999992"
   ]
 }
 ```
-
-
 
 
 

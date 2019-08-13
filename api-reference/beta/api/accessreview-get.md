@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c721fbfbdb335898c3b92b335539df9cf83db825
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: a274766eb51b2b4fde1cfa35fe3a88188a586ef4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36172741"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316119"
 ---
 # <a name="get-accessreview"></a>Получение Акцессревиев
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -126,7 +126,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание Акцессревиев](accessreview-create.md) |    [Акцессревиев](../resources/accessreview.md) |  Создание нового Акцессревиев. |
+|[Создание Акцессревиев](accessreview-create.md) |    [акцессревиев](../resources/accessreview.md) |  Создание нового Акцессревиев. |
 |[Список Програмконтролс](programcontrol-list.md) | Коллекция [програмконтрол](../resources/programcontrol.md) | Список Програмконтролс в клиенте. |
 |[Список рецензентов Акцессревиев](accessreview-listreviewers.md) |     Коллекция [userIdentity](../resources/useridentity.md)|    Получение рецензентов объекта Акцессревиев. |
 |[Список решений Акцессревиев](accessreview-listdecisions.md) |     Коллекция [акцессревиевдеЦисион](../resources/accessreviewdecision.md)|    Получение решений для Акцессревиев.|

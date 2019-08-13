@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdb6f9cc4403a3835cf1bc1865d36eeec95baba6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbc2cbbb3eea354b7bf1207dad779e6292b931b0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958464"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312938"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>Список Адванцедсреатпротектиононбоардингдевицесеттингстатес
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958464"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 711
   ]
 }
 ```
+
 
 
 

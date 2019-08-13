@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70d2f943adee1710c56900191111b3c724bf5e8b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1da2a612a777491731fa0b85e2f754605ffa04bc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968493"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370167"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -23,7 +23,7 @@ ms.locfileid: "35968493"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Ластколлектеддатетимеутк|DateTimeOffset|Время записи расположения относительно времени UTC|
+|ластколлектеддатетимеутк|DateTimeOffset|Время записи расположения относительно времени UTC|
 |lastCollectedDateTime|DateTimeOffset|Время записи расположения относительно времени UTC|
 |longitude|Двойное|Долгота расположения устройства|
 |latitude|Двойное|Широта расположения устройства|
@@ -57,8 +57,6 @@ ms.locfileid: "35968493"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
-
 
 
 

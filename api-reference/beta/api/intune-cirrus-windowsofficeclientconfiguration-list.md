@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26989bc38c4e4abbf5156bea7b562458e17b867e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54c9014fb12917aa58747eae8ad9336112194947
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958811"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36322179"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Список Виндовсоффицеклиентконфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958811"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -100,6 +100,9 @@ Content-Length: 1214
   ]
 }
 ```
+
+
+
 
 
 
