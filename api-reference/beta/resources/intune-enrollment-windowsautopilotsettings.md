@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87881810c9498019608794282bd093bd769e755f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f242bd184737daea34446d345eb39c4c2a9027f7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998907"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327684"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>Тип ресурса windowsAutopilotSettings
 
@@ -32,8 +32,8 @@ ms.locfileid: "35998907"
 |:---|:---|:---|
 |id|String|GUID объекта|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
-|Ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
-|syncStatus|[Виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
+|ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
+|syncStatus|[виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -55,8 +55,6 @@ ms.locfileid: "35998907"
   "syncStatus": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9751862ebed2310328a4e38927e7a758405e13d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d2c385113e3b2f113fa86d9c8bf071a88d7eb36
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951815"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330736"
 ---
 # <a name="get-ioslobappprovisioningconfigurationassignment"></a>Получение Иослобапппровисионингконфигуратионассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951815"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 262
   }
 }
 ```
+
 
 
 

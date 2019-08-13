@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc3047eed950cc547f47fa45fbf609e86ba025bb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ddc93ff13e55af15e86fbc72514b7b7daac81556
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998382"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332073"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
@@ -63,8 +63,6 @@ ms.locfileid: "35998382"
   "version": "String"
 }
 ```
-
-
 
 
 
