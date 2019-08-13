@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a358379c09868d11ed381688f8b151cc8baa73d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa22725d8952c69eb726eca0b06b06ac793d2608
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012116"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335328"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Тип ресурса Виндовсстореапп
 
@@ -27,10 +27,10 @@ ms.locfileid: "36012116"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Виндовсстореаппс](../api/intune-apps-windowsstoreapp-list.md)|Коллекция [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Список свойств и связей объектов [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
-|[Получение Виндовсстореапп](../api/intune-apps-windowsstoreapp-get.md)|[Виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Чтение свойств и связей объекта [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
-|[Создание Виндовсстореапп](../api/intune-apps-windowsstoreapp-create.md)|[Виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Создание нового объекта [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
+|[Получение Виндовсстореапп](../api/intune-apps-windowsstoreapp-get.md)|[виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Чтение свойств и связей объекта [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
+|[Создание Виндовсстореапп](../api/intune-apps-windowsstoreapp-create.md)|[виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Создание нового объекта [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
 |[Удаление Виндовсстореапп](../api/intune-apps-windowsstoreapp-delete.md)|Нет|Удаляет объект [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md).|
-|[Обновление Виндовсстореапп](../api/intune-apps-windowsstoreapp-update.md)|[Виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Обновление свойств объекта [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
+|[Обновление Виндовсстореапп](../api/intune-apps-windowsstoreapp-update.md)|[виндовсстореапп](../resources/intune-apps-windowsstoreapp.md)|Обновление свойств объекта [виндовсстореапп](../resources/intune-apps-windowsstoreapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -49,10 +49,10 @@ ms.locfileid: "36012116"
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appStoreUrl|String|URL-адрес хранилища приложений Windows.|
 
 ## <a name="relationships"></a>Отношения
@@ -103,8 +103,6 @@ ms.locfileid: "36012116"
   "appStoreUrl": "String"
 }
 ```
-
-
 
 
 

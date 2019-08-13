@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7034c9e3f1f746ade93fa9cb1aa4068b49ace26b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fcd30a4ab2dea5dbdd4d452799aa18a5dca799ff
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004521"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332675"
 ---
 # <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
 
@@ -23,10 +23,8 @@ ms.locfileid: "36004521"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Фуллдомаиннаме|нуль|Полное доменное имя.|
-|Нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
-
-
+|фуллдомаиннаме|нуль|Полное доменное имя.|
+|нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 74f57c95e9070fa968f821f131dedd278babeff1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ed956d1632c5f27f750d5e493673b8e1b1d6d4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012415"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335867"
 ---
 # <a name="officeproductid-enum-type"></a>тип перечисления Оффицепродуктид
 
@@ -25,10 +25,8 @@ ms.locfileid: "36012415"
 |:---|:---|:---|
 |o365ProPlusRetail|нуль|Пока не задокументировано.|
 |o365BusinessRetail|1,1|Пока не задокументировано.|
-|Висиопроретаил|2|Пока не задокументировано.|
-|Прожектпроретаил|4|Пока не задокументировано.|
-
-
+|висиопроретаил|2|Пока не задокументировано.|
+|прожектпроретаил|4|Пока не задокументировано.|
 
 
 

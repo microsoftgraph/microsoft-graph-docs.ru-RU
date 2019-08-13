@@ -4,12 +4,13 @@ description: Создание нового объекта Манажедаллд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 024aaee657dbb8bd67491e793ceb99f82ca6d0fd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 50877255e069c70749ae77b515d7f45a90398a33
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726130"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338590"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726130"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,17 +52,17 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Цертификатеревокестатус|[Цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|Манажеддевицедисплайнаме|String|Отображаемое имя устройства|
+|цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
-|Цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|Цертификатеиссуернаме|String|Издатель|
+|цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
+|цертификатеиссуернаме|String|Издатель|
 |certificateThumbprint|String|Отпечаток|
-|Цертификатесериалнумбер|String|Серийный номер|
-|Цертификатесубжектнаме|String|Имя субъекта сертификата|
-|Цертификатекэйусажес|Int32|Использование ключа|
-|Цертификатикстендедкэйусажес|String|Расширенное использование ключа|
-|Цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
+|цертификатесериалнумбер|String|Серийный номер|
+|цертификатесубжектнаме|String|Имя субъекта сертификата|
+|цертификатекэйусажес|Int32|Использование ключа|
+|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
+|цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
 
 
@@ -116,6 +117,7 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
 
 
 

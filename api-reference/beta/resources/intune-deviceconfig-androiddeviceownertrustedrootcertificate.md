@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Андроидворкпрофилевпнконфигуратион
-description: Предоставляя конфигурации в этом профиле, вы можете указать устройству рабочего профиля Android подключаться к необходимой конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение неполноценным для конечного пользователя.
+title: Тип ресурса Андроиддевицеовнертрустедрутцертификате
+description: Профиль конфигурации доверенного корневого сертификата владельца устройства Android
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e090dba5a4dc47eef8a8a89018346f4bb87b713
+ms.openlocfilehash: 170cd0d1055710be7a59dc7809fd9dd1ba2ba1c2
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334068"
+ms.locfileid: "36336595"
 ---
-# <a name="androidworkprofilevpnconfiguration-resource-type"></a>Тип ресурса Андроидворкпрофилевпнконфигуратион
+# <a name="androiddeviceownertrustedrootcertificate-resource-type"></a>Тип ресурса Андроиддевицеовнертрустедрутцертификате
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Предоставляя конфигурации в этом профиле, вы можете указать устройству рабочего профиля Android подключаться к необходимой конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение неполноценным для конечного пользователя.
+Профиль конфигурации доверенного корневого сертификата владельца устройства Android
 
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
@@ -26,11 +26,11 @@ ms.locfileid: "36334068"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Андроидворкпрофилевпнконфигуратионс](../api/intune-deviceconfig-androidworkprofilevpnconfiguration-list.md)|Коллекция [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)|Список свойств и связей объектов [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .|
-|[Получение Андроидворкпрофилевпнконфигуратион](../api/intune-deviceconfig-androidworkprofilevpnconfiguration-get.md)|[androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)|Чтение свойств и связей объекта [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .|
-|[Создание Андроидворкпрофилевпнконфигуратион](../api/intune-deviceconfig-androidworkprofilevpnconfiguration-create.md)|[androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)|Создание нового объекта [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .|
-|[Удаление Андроидворкпрофилевпнконфигуратион](../api/intune-deviceconfig-androidworkprofilevpnconfiguration-delete.md)|Нет|Удаляет объект [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md).|
-|[Обновление Андроидворкпрофилевпнконфигуратион](../api/intune-deviceconfig-androidworkprofilevpnconfiguration-update.md)|[androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)|Обновление свойств объекта [андроидворкпрофилевпнконфигуратион](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .|
+|[Список Андроиддевицеовнертрустедрутцертификатес](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-list.md)|Коллекция [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|Список свойств и связей объектов [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) .|
+|[Получение Андроиддевицеовнертрустедрутцертификате](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-get.md)|[андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|Чтение свойств и связей объекта [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) .|
+|[Создание Андроиддевицеовнертрустедрутцертификате](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-create.md)|[андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|Создание нового объекта [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) .|
+|[Удаление Андроиддевицеовнертрустедрутцертификате](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md)|Нет|Удаляет объект [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md).|
+|[Обновление Андроиддевицеовнертрустедрутцертификате](../api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md)|[андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|Обновление свойств объекта [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -44,17 +44,10 @@ ms.locfileid: "36334068"
 |девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|коннектионнаме|String|Имя подключения, отображаемое для пользователя.|
-|connectionType|[androidWorkProfileVpnConnectionType](../resources/intune-deviceconfig-androidworkprofilevpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`.|
-|role|String|Роль, когда для типа подключения задано значение Secure Pulse.|
-|область|String|Область, когда для параметра Тип подключения задано значение Secure Pulse.|
-|серверами|Коллекция [vpnserver.](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получать доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов.|
-|распознавания|String|Отпечаток — это строка, которая будет использоваться для проверки доверенности VPN-сервера, который применяется, только если тип подключения — "VPN-метка капсулы".|
-|Пользовательские|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Пользовательские данные, если для параметра Тип подключения задано значение Citrix. Эта коллекция может содержать не более 25 элементов.|
-|customKeyValueData|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пользовательские данные, если для параметра Тип подключения задано значение Citrix. Эта коллекция может содержать не более 25 элементов.|
-|Параметр authenticationmethod|[впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|trustedRootCertificate|Binary|Доверенный корневой сертификат|
+|цертфиленаме|String|Имя файла, отображаемое в пользовательском интерфейсе.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -66,19 +59,18 @@ ms.locfileid: "36334068"
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Identitycertificate (|[androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md)|Сертификат удостоверения для проверки подлинности клиента при использовании метода проверки подлинности Certificate.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidWorkProfileVpnConfiguration"
+  "@odata.type": "microsoft.graph.androidDeviceOwnerTrustedRootCertificate"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -110,34 +102,8 @@ ms.locfileid: "36334068"
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "connectionName": "String",
-  "connectionType": "String",
-  "role": "String",
-  "realm": "String",
-  "servers": [
-    {
-      "@odata.type": "microsoft.graph.vpnServer",
-      "description": "String",
-      "address": "String",
-      "isDefaultServer": true
-    }
-  ],
-  "fingerprint": "String",
-  "customData": [
-    {
-      "@odata.type": "microsoft.graph.keyValue",
-      "key": "String",
-      "value": "String"
-    }
-  ],
-  "customKeyValueData": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair",
-      "name": "String",
-      "value": "String"
-    }
-  ],
-  "authenticationMethod": "String"
+  "trustedRootCertificate": "binary",
+  "certFileName": "String"
 }
 ```
 

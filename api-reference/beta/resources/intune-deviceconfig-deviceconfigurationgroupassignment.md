@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4340b7d89ce5f29b174861f921a1246ed936691
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8848c50a86f4427ca00cc6f5278431cba37ff698
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970439"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332955"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "35970439"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|Таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
+|таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
 |excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
 ## <a name="relationships"></a>Отношения
@@ -57,8 +57,6 @@ ms.locfileid: "35970439"
   "excludeGroup": true
 }
 ```
-
-
 
 
 

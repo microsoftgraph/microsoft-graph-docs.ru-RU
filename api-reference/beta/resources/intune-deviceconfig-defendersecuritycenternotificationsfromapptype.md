@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: aa5428b91f2d4486553dc8995a38553d3c705937
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c9ce9b4e15d6a63c9e7382d85055aa179a193ddc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970880"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333450"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>тип перечисления Дефендерсекуритицентернотификатионсфромапптипе
 
@@ -24,10 +24,8 @@ ms.locfileid: "35970880"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Блоккнонкритикалнотификатионс|1,1|Блокировать некритические уведомления|
-|Блоккаллнотификатионс|2|Блокировать все уведомления|
-
-
+|блоккнонкритикалнотификатионс|1,1|Блокировать некритические уведомления|
+|блоккаллнотификатионс|2|Блокировать все уведомления|
 
 
 

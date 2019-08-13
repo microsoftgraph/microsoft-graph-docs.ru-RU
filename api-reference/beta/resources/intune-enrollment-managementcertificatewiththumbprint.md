@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 830c4ef0f6368dc573a50232fcc9beed36750d3e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9fc6535147b8e7a5f2a2295b09cb73cce86c1793
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999005"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327810"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса Манажементцертификатевиссумбпринт
 
@@ -43,8 +43,6 @@ ms.locfileid: "35999005"
   "certificate": "String"
 }
 ```
-
-
 
 
 

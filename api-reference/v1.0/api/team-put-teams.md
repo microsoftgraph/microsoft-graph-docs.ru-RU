@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 53651a230a6ab6a9d45fb37ec1b587d43aa07e4d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9c2198e6fb3c3b5f09181636bf8bb0c517a2cc0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021174"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374073"
 ---
 # <a name="create-team"></a>Создание команды
 

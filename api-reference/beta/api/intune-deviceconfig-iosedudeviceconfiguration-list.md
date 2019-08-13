@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a43b734fcc43e13fd5118a5f0ed475ecc5e977e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ec9a7cfa5adb563c32e3f3b792cec4453700c32
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948343"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339290"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>Список Иоседудевицеконфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948343"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -138,6 +138,7 @@ Content-Length: 3148
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ebf5fd2ae5ce8a703d8974f4ae0477633b81164
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3d24d4231b04064e20ef2249e3f1c8a199d8065f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004409"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332507"
 ---
 # <a name="edgeopenoptions-enum-type"></a>тип перечисления Еджеопеноптионс
 
@@ -25,11 +25,9 @@ ms.locfileid: "36004409"
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
 |startPage|1,1|StartPage.|
-|Невтабпаже|2|Невтабпаже.|
-|Превиауспажес|4|Превиауспажес.|
-|СпеЦификпажес|SP4|СпеЦификпажес.|
-
-
+|невтабпаже|2|Невтабпаже.|
+|превиауспажес|4|Превиауспажес.|
+|спеЦификпажес|SP4|СпеЦификпажес.|
 
 
 

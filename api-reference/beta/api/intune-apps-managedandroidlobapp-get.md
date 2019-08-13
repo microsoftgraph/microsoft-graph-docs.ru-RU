@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a12aa8a458a7246b0dffa2d5b0ba68b9d7f56ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 88e02e0b1e284861e3e0ad4736fd515e22dce29d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961870"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330078"
 ---
 # <a name="get-managedandroidlobapp"></a>Get managedAndroidLobApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961870"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -127,6 +127,7 @@ Content-Length: 1786
   }
 }
 ```
+
 
 
 

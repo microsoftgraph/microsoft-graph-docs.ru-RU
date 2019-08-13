@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Поиск элементов, соответствующих запросу, в иерархии элементов.
 doc_type: apiPageType
-ms.openlocfilehash: 57cc2c15d7bf49d724ec35290a929c5b52cfc475
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46f24b88ba22d71789b8d5d9afe38626e050076e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015371"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367254"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 

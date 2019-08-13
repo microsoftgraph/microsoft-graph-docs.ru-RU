@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f30380374e1cb82294eb3a0fa7a38295a9aceeaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dd84d705d1786bf1a340a4220a606dcf62c96abd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001553"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332612"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>тип перечисления Еасаусентикатионмесод
 
@@ -23,11 +23,9 @@ ms.locfileid: "36001553"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Усернамеандпассворд|нуль|Проверка подлинности с использованием имени пользователя и пароля.|
+|усернамеандпассворд|нуль|Проверка подлинности с использованием имени пользователя и пароля.|
 |certificate|1,1|Проверка подлинности с помощью сертификата.|
-|Дериведкредентиал|2|Проверка подлинности с использованием производных учетных данных.|
-
-
+|дериведкредентиал|2|Проверка подлинности с использованием производных учетных данных.|
 
 
 

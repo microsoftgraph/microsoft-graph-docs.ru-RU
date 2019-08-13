@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f55dad9cd3589ccc39b86dfaae8495bb0837d1b8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ddf46f3a110a0aecfd7a5ee9b17bd4ff6f53ae40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011486"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333928"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>тип перечисления Аппликатионгуарденабледоптионс
 
@@ -24,11 +24,9 @@ ms.locfileid: "36011486"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Енабледфоредже|1,1|Включено для пограничного сервера|
-|Енабледфороффице|2|Включено для Office|
-|Енабледфореджеандоффице|4|Включено для пограничной и Office|
-
-
+|енабледфоредже|1,1|Включено для пограничного сервера|
+|енабледфороффице|2|Включено для Office|
+|енабледфореджеандоффице|4|Включено для пограничной и Office|
 
 
 

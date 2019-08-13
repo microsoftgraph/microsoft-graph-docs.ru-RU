@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f2cf130b7e205767ddae5a5a7e857a12725d824
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: bd10d0b2b8dde194c6aa394deec081d2966b1d49
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34974309"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329364"
 ---
 # <a name="getrelatedappstates-function"></a>Функция Жетрелатедаппстатес
 
@@ -26,7 +27,7 @@ ms.locfileid: "34974309"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -92,6 +93,7 @@ Content-Length: 481
   ]
 }
 ```
+
 
 
 

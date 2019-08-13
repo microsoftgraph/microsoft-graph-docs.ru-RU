@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 11faba0b03b2e82c3086481dab617cd34ffa0d64
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 115ae63e353789fb403503f4435e568e9d2cbd67
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953628"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323320"
 ---
 # <a name="list-groups"></a>Список групп
 

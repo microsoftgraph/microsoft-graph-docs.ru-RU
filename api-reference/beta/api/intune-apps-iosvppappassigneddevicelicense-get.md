@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c570e2058371f73f3a5db7a26450f6f3a642c819
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2c8f64ce853fcfa46f2b25ad7eda9b762d8dc89
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951486"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330454"
 ---
 # <a name="get-iosvppappassigneddevicelicense"></a>Получение Иосвппаппассигнеддевицелиценсе
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951486"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,6 +81,7 @@ Content-Length: 411
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84b73966289990dff4b4ba6b1ddc36cc34428e31
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57eb086e03b56f97d2c3b11c375db583a5580c19
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943640"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321857"
 ---
 # <a name="get-chat"></a>Получение чата
 

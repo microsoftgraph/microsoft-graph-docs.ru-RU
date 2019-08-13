@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: daff3ad89beb11c7bf158b9b12a5915a3daf5eaa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 549f8853071d34b70c05a98d7ea1b89c9d499d17
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946943"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338646"
 ---
 # <a name="get-macosvpnconfiguration"></a>Получение Макосвпнконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946943"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -164,6 +164,7 @@ Content-Length: 2999
   }
 }
 ```
+
 
 
 

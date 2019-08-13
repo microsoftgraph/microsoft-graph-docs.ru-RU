@@ -4,12 +4,13 @@ description: Поддерживаемые значения для поставщ
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40ef3a4052836c419a8439ddce9988ee92ecafeb
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: a519661fa02a2622ece759648023ae0967b2ff6f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34990031"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332801"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>тип перечисления Девицеманажементдериведкредентиалиссуер
 
@@ -22,11 +23,9 @@ ms.locfileid: "34990031"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|интерцеде|нуль|Интерцеде|
-|Ентрустдатакард|1,1|Карточка ентруст|
-|пуребред|2|Пуребред|
-
-
+|интерцеде|нуль|интерцеде|
+|ентрустдатакард|1,1|Карточка ентруст|
+|пуребред|2|пуребред|
 
 
 
