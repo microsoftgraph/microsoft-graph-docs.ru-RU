@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15592dbce6bb1fc2665dbfcbc5fc9075cc1420c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a58d72044986bfbc55cdcc311f7bdecdf6a2532
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961247"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336840"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>Create microsoftStoreForBusinessApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961247"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,14 +65,14 @@ POST /deviceAppManagement/mobileApps
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий на Microsoft Store для бизнеса.|
 |totalLicenseCount|Int32|Общее количество лицензий на Microsoft Store для бизнеса.|
 |productKey|Строка|Ключ продукта для приложения.|
-|licenseType|[Микрософтсторефорбусинесслиценсетипе](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|Тип лицензии приложения. Возможные значения: `offline`, `online`.|
+|licenseType|[микрософтсторефорбусинесслиценсетипе](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|Тип лицензии приложения. Возможные значения: `offline`, `online`.|
 |packageIdentityName|String|Идентификатор пакета приложения|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Поддерживаемый тип лицензии.|
 
@@ -175,6 +175,7 @@ Content-Length: 1304
   }
 }
 ```
+
 
 
 

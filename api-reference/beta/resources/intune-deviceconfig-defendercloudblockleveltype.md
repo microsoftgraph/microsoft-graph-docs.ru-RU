@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 928a39e25a02286159ba886bed9c1415b038edbf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc0e99f9d964e80410b10bc48e20ea0a5fd1d608
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001791"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333592"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>тип перечисления Дефендерклаудблокклевелтипе
 
@@ -25,10 +25,8 @@ ms.locfileid: "36001791"
 |:---|:---|:---|
 |notConfigured|нуль|Значение по умолчанию, используемый по умолчанию уровень блокировки антивирусной программы "Защитник Windows" и обеспечивает строгое обнаружение без увеличения риска обнаружения законных файлов|
 |высокоуровневых|1,1|High — применение надежного уровня обнаружения.|
-|Хигхплус|2|Высокая + использование высокого уровня и применение мер защиты|
-|Зеротолеранце|4|Нулевое отклонение блокирует все неизвестные исполняемые файлы|
-
-
+|хигхплус|2|Высокая + использование высокого уровня и применение мер защиты|
+|зеротолеранце|4|Нулевое отклонение блокирует все неизвестные исполняемые файлы|
 
 
 

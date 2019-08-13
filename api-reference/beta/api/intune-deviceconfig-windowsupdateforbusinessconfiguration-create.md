@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94b81dd406e3ed4bb7cc1071f1a9f3604b7b492d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81cd90e62533d386be223b34b19bcf53a65125b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986297"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338254"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986297"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,15 +55,15 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Девицеманажементаппликабилитируледевицемоде|[Девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deliveryOptimizationMode|[Виндовсделиверйоптимизатионмоде](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Режим оптимизации доставки. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
+|deliveryOptimizationMode|[виндовсделиверйоптимизатионмоде](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Режим оптимизации доставки. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Функции предварительного выпуска. Возможные значения: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Режим автоматического обновления. Возможные значения: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`, `windowsDefault`.|
 |microsoftUpdateServiceAllowed|Boolean|Разрешение использования службы обновлений (Майкрософт).|
@@ -75,25 +75,29 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |featureUpdatesPaused|Boolean|Приостановка обновлений компонентов.|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время завершения срока приостановки исправлений.|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время, когда будет завершен срок приостановки обновлений компонентов.|
-|businessReadyUpdatesOnly|[Виндовсупдатетипе](../resources/intune-deviceconfig-windowsupdatetype.md)|Определяет, от каких устройств филиала будут получаться обновления. Возможные значения: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|Скипчекксбефоререстарт|Boolean|Установить для пропуска всех проверок перед перезапуском: уровень аккумулятора = 40%, присутствие пользователя, требуемое отображение, режим презентации, полноэкранный режим, состояние телефонного звонка, игровой режим и т. д. |
-|Упдатевикс|[Виндовсупдатефорбусинессупдатевикс](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Установка обновления запланирована на недели месяца. Возможные значения: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|Куалитюпдатеспаусестартдате|Дата|Дата начала паузы обновлений. Это свойство доступно только для чтения.|
-|Феатуреупдатеспаусестартдате|Дата|Дата начала паузы обновления компонентов. Это свойство доступно только для чтения.|
-|Феатуреупдатесроллбакквиндовиндайс|Int32|Количество дней после обновления компонента, для которого действует откат|
-|Куалитюпдатесвиллберолледбакк|Boolean|Указывает, следует ли откатить обновление для следующего возврата устройства|
-|Феатуреупдатесвиллберолледбакк|Boolean|Указывает, следует ли откатить обновления компонентов при следующем возврате устройства|
-|Куалитюпдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений качества|
-|Феатуреупдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений компонентов|
-|Енгажедрестартдеадлинеиндайс|Int32|Крайний срок в днях перед автоматическим планированием и выполнением ожидающего перезапуска за пределами периода активности, с допустимым диапазоном от 2 до 30 дней.|
-|Енгажедрестартснузесчедулеиндайс|Int32|Количество дней, в течение которых пользователь может отложить уведомления о перезапуске с допустимым диапазоном от 1 до 3 дней|
-|Енгажедрестарттранситионсчедулеиндайс|Int32|Количество дней перед переходом с автоматических перезапусков, запланированных за пределами активного времени до запланированного перезапуска, для которого пользователь должен запланировать, с допустимым диапазоном от 0 до 30 дней|
-|Ауторестартнотификатиондисмиссал|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Укажите метод закрытия уведомления об обязательном автоматическом перезапуске. Возможные значения: `notConfigured`, `automatic`, `user`.|
-|Счедулерестартварнингинхаурс|Int32|Укажите период уведомлений с напоминанием об автоматическом перезапуске. Поддерживаемые значения: 2, 4, 8, 12 или 24 (часы).|
-|Счедулеимминентрестартварнингинминутес|Int32|Укажите период, в котором автоматически перезапускаются уведомления о приближениях. Поддерживаемые значения: 15, 30 или 60 (минут).|
-|Усерпаусеакцесс|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли включить доступ конечного пользователя для приостановки обновлений программного обеспечения. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|Усервиндовсупдатесканакцесс|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли запретить доступ пользователя для сканирования центра обновления Windows. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|Упдатенотификатионлевел|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Указывает, что увидят пользователи уведомлений центра обновления Windows. Возможные значения: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|businessReadyUpdatesOnly|[виндовсупдатетипе](../resources/intune-deviceconfig-windowsupdatetype.md)|Определяет, от каких устройств филиала будут получаться обновления. Возможные значения: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
+|скипчекксбефоререстарт|Boolean|Установить для пропуска всех проверок перед перезапуском: уровень аккумулятора = 40%, присутствие пользователя, требуемое отображение, режим презентации, полноэкранный режим, состояние телефонного звонка, игровой режим и т. д. |
+|упдатевикс|[виндовсупдатефорбусинессупдатевикс](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Установка обновления запланирована на недели месяца. Возможные значения: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
+|куалитюпдатеспаусестартдате|Дата|Дата начала паузы обновлений. Это свойство доступно только для чтения.|
+|феатуреупдатеспаусестартдате|Дата|Дата начала паузы обновления компонентов. Это свойство доступно только для чтения.|
+|феатуреупдатесроллбакквиндовиндайс|Int32|Количество дней после обновления компонента, для которого действует откат|
+|куалитюпдатесвиллберолледбакк|Boolean|Указывает, следует ли откатить обновление для следующего возврата устройства|
+|феатуреупдатесвиллберолледбакк|Boolean|Указывает, следует ли откатить обновления компонентов при следующем возврате устройства|
+|куалитюпдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений качества|
+|феатуреупдатесроллбаккстартдатетиме|DateTimeOffset|Дата и время начала отката обновлений компонентов|
+|енгажедрестартдеадлинеиндайс|Int32|Крайний срок в днях перед автоматическим планированием и выполнением ожидающего перезапуска за пределами периода активности, с допустимым диапазоном от 2 до 30 дней.|
+|енгажедрестартснузесчедулеиндайс|Int32|Количество дней, в течение которых пользователь может отложить уведомления о перезапуске с допустимым диапазоном от 1 до 3 дней|
+|енгажедрестарттранситионсчедулеиндайс|Int32|Количество дней перед переходом с автоматических перезапусков, запланированных за пределами активного времени до запланированного перезапуска, для которого пользователь должен запланировать, с допустимым диапазоном от 0 до 30 дней|
+|деадлинефорфеатуреупдатесиндайс|Int32|Число дней до автоматического установки обновлений компонентов с допустимым диапазоном от 2 до 30 дней.|
+|деадлинефоркуалитюпдатесиндайс|Int32|Количество дней до автоматического установления обновлений качества с допустимым диапазоном от 2 до 30 дней.|
+|деадлинеграцепериодиндайс|Int32|Срок действия перезапуска (в днях), по истечении которого он будет выполняться автоматически (от 0 до 7 дней)|
+|постпонеребутунтилафтердеадлине|Boolean|Указывает, должно ли устройство ждать, пока не истечет время для перезагрузки в течение периода активности|
+|ауторестартнотификатиондисмиссал|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Укажите метод закрытия уведомления об обязательном автоматическом перезапуске. Возможные значения: `notConfigured`, `automatic`, `user`.|
+|счедулерестартварнингинхаурс|Int32|Укажите период уведомлений с напоминанием об автоматическом перезапуске. Поддерживаемые значения: 2, 4, 8, 12 или 24 (часы).|
+|счедулеимминентрестартварнингинминутес|Int32|Укажите период, в котором автоматически перезапускаются уведомления о приближениях. Поддерживаемые значения: 15, 30 или 60 (минут).|
+|усерпаусеакцесс|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли включить доступ конечного пользователя для приостановки обновлений программного обеспечения. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|усервиндовсупдатесканакцесс|[Включение](../resources/intune-shared-enablement.md)|Указывает, следует ли запретить доступ пользователя для сканирования центра обновления Windows. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|упдатенотификатионлевел|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Указывает, что увидят пользователи уведомлений центра обновления Windows. Возможные значения: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
 
 
 
@@ -107,7 +111,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2676
+Content-length: 2840
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -168,6 +172,10 @@ Content-length: 2676
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -182,7 +190,7 @@ Content-length: 2676
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2848
+Content-Length: 3012
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -246,6 +254,10 @@ Content-Length: 2848
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -254,6 +266,7 @@ Content-Length: 2848
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
+
 
 
 

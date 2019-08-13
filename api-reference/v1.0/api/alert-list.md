@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 03a0dae3e74b7d39300b952f4646353a26c8881d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 44fd601cf004237d7cabda967bb99657d4f4bd25
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015819"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374008"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 

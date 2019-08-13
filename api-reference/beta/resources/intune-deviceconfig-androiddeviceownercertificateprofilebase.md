@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Андроидфорворкцертификатепрофилебасе
-description: База профиля сертификата Android для рабочей рабочей базы.
+title: Тип ресурса Андроиддевицеовнерцертификатепрофилебасе
+description: База профиля сертификата владельца устройства Android.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 777f3164ff77b44a1d970718ba32f4082fb32464
+ms.openlocfilehash: cbc83d88593513b67b328ad41e9dfc01fa1a0a49
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334712"
+ms.locfileid: "36336598"
 ---
-# <a name="androidforworkcertificateprofilebase-resource-type"></a>Тип ресурса Андроидфорворкцертификатепрофилебасе
+# <a name="androiddeviceownercertificateprofilebase-resource-type"></a>Тип ресурса Андроиддевицеовнерцертификатепрофилебасе
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-База профиля сертификата Android для рабочей рабочей базы.
+База профиля сертификата владельца устройства Android.
 
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
@@ -26,8 +26,8 @@ ms.locfileid: "36334712"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список Андроидфорворкцертификатепрофилебасес](../api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md)|Коллекция [андроидфорворкцертификатепрофилебасе](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|Список свойств и связей объектов [андроидфорворкцертификатепрофилебасе](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md) .|
-|[Получение Андроидфорворкцертификатепрофилебасе](../api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md)|[androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|Чтение свойств и связей объекта [андроидфорворкцертификатепрофилебасе](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md) .|
+|[Список Андроиддевицеовнерцертификатепрофилебасес](../api/intune-deviceconfig-androiddeviceownercertificateprofilebase-list.md)|Коллекция [андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|Список свойств и связей объектов [андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md) .|
+|[Получение Андроиддевицеовнерцертификатепрофилебасе](../api/intune-deviceconfig-androiddeviceownercertificateprofilebase-get.md)|[андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|Чтение свойств и связей объекта [андроиддевицеовнерцертификатепрофилебасе](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -60,19 +60,19 @@ ms.locfileid: "36334712"
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|рутцертификате|[androidForWorkTrustedRootCertificate](../resources/intune-deviceconfig-androidforworktrustedrootcertificate.md)|Доверенный корневой сертификат.|
+|рутцертификате|[андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)|Доверенный корневой сертификат.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidForWorkCertificateProfileBase"
+  "@odata.type": "microsoft.graph.androidDeviceOwnerCertificateProfileBase"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidForWorkCertificateProfileBase",
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerCertificateProfileBase",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [

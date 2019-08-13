@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ac7f3d9eb88e1c1c68044867ef6b7ba04167441
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da7ffc5c39d10e76c326dc5702ba3c582eedb46c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999047"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327726"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>тип перечисления Виндовсаутопилотдевицетипе
 
@@ -23,10 +23,8 @@ ms.locfileid: "35999047"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Виндовспк|нуль|Windows PC|
+|виндовспк|нуль|Windows PC|
 |surfaceHub2|1,1|Surface Hub 2|
-
-
 
 
 

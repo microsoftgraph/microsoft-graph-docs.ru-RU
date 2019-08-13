@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d993306cdd5f6c69d373669ed83fab6f986497df
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 958cc834a2044e623a8fa1cf7ed37bed1ec7b1f9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971657"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335650"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>Тип ресурса win32LobAppMsiInformation
 
@@ -26,8 +26,8 @@ ms.locfileid: "35971657"
 |productCode|String|Код продукта MSI.|
 |productVersion|String|Версия продукта MSI.|
 |upgradeCode|String|Код обновления MSI.|
-|Рекуиресребут|Boolean|Требует ли приложение MSI перезагрузку компьютера для завершения установки.|
-|Паккажетипе|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
+|рекуиресребут|Boolean|Требует ли приложение MSI перезагрузку компьютера для завершения установки.|
+|паккажетипе|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|String|Имя продукта MSI.|
 |publisher|String|Издатель MSI.|
 
@@ -53,8 +53,6 @@ ms.locfileid: "35971657"
   "publisher": "String"
 }
 ```
-
-
 
 
 

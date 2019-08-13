@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2062775be0c47460055e41fbf989f68db0cf85b8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7d0a797f283afd7942f978c0545c54732f28ea3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961149"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329413"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>Получение Микрософтсторефорбусинессконтаинедапп
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961149"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 201
   }
 }
 ```
+
 
 
 

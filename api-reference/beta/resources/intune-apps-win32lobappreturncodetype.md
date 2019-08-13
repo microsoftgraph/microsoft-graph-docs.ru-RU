@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f4c4750b146d35f515a6dc2d5e11ebe416f2f552
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 19ecf9f8047b1fe73cf6cff9efdd140f39ece35a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004997"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335496"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип перечисления win32LobAppReturnCodeType
 
@@ -25,11 +25,9 @@ ms.locfileid: "36004997"
 |:---|:---|:---|
 |сбоев|нуль|Сбоев.|
 |success|1,1|Отключен.|
-|Софтребут|2|Требуется программная перезагрузка.|
-|Хардребут|4|Необходима аппаратная перезагрузка.|
+|софтребут|2|Требуется программная перезагрузка.|
+|хардребут|4|Необходима аппаратная перезагрузка.|
 |Retry|SP4|Повторите попытку.|
-
-
 
 
 

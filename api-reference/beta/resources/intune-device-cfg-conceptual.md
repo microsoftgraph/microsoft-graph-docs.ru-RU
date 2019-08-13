@@ -4,13 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 138fbf66974a63e258c1e7334db8f4c3f03a05ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2402be0642da8d0f01c30e089fec5947d5260be
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004766"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335020"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -32,12 +31,17 @@ ms.locfileid: "36004766"
 - [Специальная конфигурация Android](intune-deviceconfig-androidcustomconfiguration.md)
 - [Тип политики автоматического обновления приложения для владельца устройства с Android](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Режим подключения аккумулятора для владельца устройства с Android](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [База профиля сертификата владельца устройства Android](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Политика соответствия требованиям владельца устройства Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Тип политики разрешений приложения по умолчанию для владельца устройства с Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Конфигурация Wi/Fi для владельца устройств Android Enterprise](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Общая конфигурация устройств для владельца устройства с Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Тип установки системного обновления для владельца устройства с Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
+- [Доверенный корневой сертификат владельца устройства Android](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
+- [Тип кнопки виртуальной домашней страницы владельца устройства Android](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
+- [Конфигурация VPN владельца устройства Android](intune-deviceconfig-androiddeviceownervpnconfiguration.md)
 - [Конфигурация сети Wi-Fi для владельца устройства с Android](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
 - [Тип безопасности сети Wi-Fi для владельца устройства с Android](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Тип EAP для Android](intune-deviceconfig-androideaptype.md)
@@ -347,11 +351,9 @@ ms.locfileid: "36004766"
 - [Параметр OMA, целое число](intune-deviceconfig-omasettinginteger.md)
 - [Параметр OMA, строка](intune-deviceconfig-omasettingstring.md)
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
-- [Локальная зашифрованная полезная нагрузка](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Запрос на получение шифрования PFX](intune-raimportcerts-pfxrecryptionrequest.md)
-- [Сертификат пользователя PFX](intune-raimportcerts-pfxusercertificate.md)
 - [Тип платформы политики](intune-deviceconfig-policyplatformtype.md)
+- [Тип действия по питанию](intune-deviceconfig-poweractiontype.md)
 - [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)
 - [Тип рейтинга фильмов для Австралии](intune-deviceconfig-ratingaustraliamoviestype.md)
@@ -402,6 +404,7 @@ ms.locfileid: "36004766"
 - [Параметр видимости](intune-deviceconfig-visibilitysetting.md)
 - [Метод проверки подлинности VPN](intune-deviceconfig-vpnauthenticationmethod.md)
 - [Тип проверки подлинности VPN-клиента](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [Конфигурация VPN](intune-deviceconfig-vpnconfiguration.md)
 - [Частота обнаружения недоставленных узлов VPN](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [Правило DNS VPN](intune-deviceconfig-vpndnsrule.md)
 - [Тип алгоритма шифрования VPN](intune-deviceconfig-vpnencryptionalgorithmtype.md)
@@ -522,3 +525,4 @@ ms.locfileid: "36004766"
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+

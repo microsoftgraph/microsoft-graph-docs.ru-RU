@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 455fdd186b8be297ec4d9d2ed32c6461b34f0748
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c2bbc568330386553c855f94498fb410c08d296
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951997"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330932"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Обновление Ентерприсекодесигнингцертификате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951997"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |содержимое|Binary|Сертификат подписи кода Windows Enterprise в формате необработанных данных.|
-|status|[Цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
+|status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|String|Имя поставщика сертификата.|
+|иссуернаме|String|Имя поставщика сертификата.|
 |имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|Уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
+|уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
 
 
@@ -108,6 +108,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

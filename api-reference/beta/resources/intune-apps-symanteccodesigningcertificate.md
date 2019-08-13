@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99cdc636f0a8a5eb5381d09e7c3596bf3e41180d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 330dd361c01d59ede307945bfae4b5d043461621
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012375"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335840"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>Тип ресурса symantecCodeSigningCertificate
 
@@ -31,14 +31,14 @@ ms.locfileid: "36012375"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |содержимое|Binary|Сертификат подписи кода Windows Symantec в формате необработанных данных.|
-|status|[Цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
+|status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |password|Строка|Пароль, необходимый для PFX-файла.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|String|Имя поставщика сертификата.|
+|иссуернаме|String|Имя поставщика сертификата.|
 |имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|Уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
+|уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -66,8 +66,6 @@ ms.locfileid: "36012375"
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

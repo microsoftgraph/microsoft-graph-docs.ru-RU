@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a7b7ea835fb373c9a650807ca5e456e7b5030fd6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbc623b65f4e789f2182640fbd6da45bc1b51e24
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949519"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340060"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Обновление объекта deviceComplianceUserOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949519"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -108,6 +108,7 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
+
 
 
 

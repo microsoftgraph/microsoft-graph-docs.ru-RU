@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: debd0ac97e92fdd558136f436d529c5a7477c446
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 768410bc896a2daf4b6409d7cbde11334bc78d70
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960477"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328986"
 ---
 # <a name="update-officesuiteapp"></a>Обновление officeSuiteApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960477"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,22 +67,22 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Аутоакцептеула|Boolean|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|аутоакцептеула|Boolean|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
 |productIds|Коллекция [оффицепродуктид](../resources/intune-apps-officeproductid.md)|Идентификаторы продуктов, представляющие SKU набора Office365. Возможные значения: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложений, исключаемых из выбранного идентификатора продукта Office365.|
 |Свойства usesharedcomputeractivation|Boolean|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
-|updateChannel|[Оффицеупдатечаннел](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
+|updateChannel|[оффицеупдатечаннел](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии набора приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|Коллекция строк|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словомhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
-|Инсталлпрогрессдисплайлевел|[Оффицесуитеинсталлпрогрессдисплайлевел](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Для указания уровня отображения пользовательского интерфейса установки хода установки на устройстве. Возможные значения: `none`, `full`.|
-|Шаулдунинсталлолдерверсионсофоффице|Boolean|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
+|инсталлпрогрессдисплайлевел|[оффицесуитеинсталлпрогрессдисплайлевел](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Для указания уровня отображения пользовательского интерфейса установки хода установки на устройстве. Возможные значения: `none`, `full`.|
+|шаулдунинсталлолдерверсионсофоффице|Boolean|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
 |Атрибута targetversion|String|Свойство, представляющее определенную целевую версию для набора приложений Office365, который должен быть развернут на устройствах.|
-|Упдатеверсион|String|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
-|Оффицеконфигуратионксмл|Binary|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
+|упдатеверсион|String|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
+|оффицеконфигуратионксмл|Binary|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
 
 
 
@@ -223,6 +223,7 @@ Content-Length: 1771
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 738ccb7f06474f07b0e261e8e322ba0e93f249af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b277f8144499a0cc6d9f85f84fa2f27a9f2e0fe4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961569"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329819"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Список Манажеддевицемобилеаппконфигуратиондевицестатусес
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961569"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

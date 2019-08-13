@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27114474a29d74fe28a321951d2c2d31a9812f9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d060093ce36d0d0774d50bb4353982754c3abacd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012144"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335335"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>Тип ресурса windowsPhone81AppXBundle
 
@@ -49,10 +49,10 @@ ms.locfileid: "36012144"
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -61,10 +61,10 @@ ms.locfileid: "36012144"
 |identityPublisherHash|String|Хэш издателей удостоверений. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|Фонепродуктидентифиер|String|Идентификатор телефонного продукта. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|Фонепублишерид|String|Идентификатор издателя телефона. наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|фонепродуктидентифиер|String|Идентификатор телефонного продукта. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
+|фонепублишерид|String|Идентификатор издателя телефона. наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
 |identityVersion|String|Версия удостоверения. Наследуется от [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|
-|Аппкспаккажеинформатионлист|Коллекция [windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md)|Список сведений о пакете AppX.|
+|аппкспаккажеинформатионлист|Коллекция [windowsPackageInformation](../resources/intune-apps-windowspackageinformation.md)|Список сведений о пакете AppX.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -159,8 +159,6 @@ ms.locfileid: "36012144"
   ]
 }
 ```
-
-
 
 
 

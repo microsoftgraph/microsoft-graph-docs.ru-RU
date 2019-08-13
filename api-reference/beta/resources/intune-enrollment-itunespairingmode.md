@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ee5185783f7edeb9905da7ff4a2ea83a9ce2c3a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c4c5014b428ddc82f04a01c6fd852d7aa161d590
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999026"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327803"
 ---
 # <a name="itunespairingmode-enum-type"></a>тип перечисления Итунеспаирингмоде
 
@@ -25,9 +25,7 @@ ms.locfileid: "35999026"
 |:---|:---|:---|
 |Использование|нуль|Связывание запрещено|
 |разрешить|1,1|Связывание разрешено|
-|Рекуиресцертификате|2|Сертификат, необходимый для связывания с iTunes|
-
-
+|рекуиресцертификате|2|Сертификат, необходимый для связывания с iTunes|
 
 
 

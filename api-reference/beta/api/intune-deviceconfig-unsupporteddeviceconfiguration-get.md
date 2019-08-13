@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6440043ace9f4c0332e5ae19ca829a4df5759d3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56569b2254e8fee0c269781cabf06da4e129bd0c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946280"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338562"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Получение Унсуппортеддевицеконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946280"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -115,6 +115,7 @@ Content-Length: 1562
   }
 }
 ```
+
 
 
 

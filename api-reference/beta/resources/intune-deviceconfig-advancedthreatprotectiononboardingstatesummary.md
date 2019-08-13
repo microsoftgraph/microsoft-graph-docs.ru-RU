@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbc547d616cf87449a48b177ef9175d6a7a884ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ecda609a38d3dc9fe44376a0df9fc49bc06f63c3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011885"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334936"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
 
@@ -37,12 +37,12 @@ ms.locfileid: "36011885"
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
-|Нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
+|нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|Адванцедсреатпротектиононбоардингдевицесеттингстатес|Коллекция [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Н/Д|
+|адванцедсреатпротектиононбоардингдевицесеттингстатес|Коллекция [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Н/Д|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -66,8 +66,6 @@ ms.locfileid: "36011885"
   "notAssignedDeviceCount": 1024
 }
 ```
-
-
 
 
 

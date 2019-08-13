@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 259ea8efefc38af439de0fd8e1cd06d31696991a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2df61390c28fa9228f432d42d8b8d7c9ec362df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999110"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327880"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentity
 
@@ -35,13 +35,13 @@ ms.locfileid: "35999110"
 |:---|:---|:---|
 |id|String|GUID объекта|
 |orderIdentifier|String|Номер заказа устройства Windows Autopilot. — Устаревшее|
-|Грауптаг|String|Тег Group для устройства автопилота Windows.|
+|грауптаг|String|Тег Group для устройства автопилота Windows.|
 |serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|Импортид|String|Идентификатор импорта для устройства автопилота Windows.|
+|импортид|String|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|АссигнедусерпринЦипалнаме|String|Имя участника-пользователя для пользователя, которому будет назначено устройство|
+|ассигнедусерпринЦипалнаме|String|Имя участника-пользователя для пользователя, которому будет назначено устройство|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -74,8 +74,6 @@ ms.locfileid: "35999110"
   "assignedUserPrincipalName": "String"
 }
 ```
-
-
 
 
 
