@@ -5,30 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b6a2b026897395f4dc90a0c453eeb2f0a40e0ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 476a37c1272220193c6cfdcfd6f237ddd239db37
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968878"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370811"
 ---
-# <a name="windowskioskuser-resource-type"></a><span data-ttu-id="80641-103">Тип ресурса Виндовскиоскусер</span><span class="sxs-lookup"><span data-stu-id="80641-103">windowsKioskUser resource type</span></span>
+# <a name="windowskioskuser-resource-type"></a><span data-ttu-id="19583-103">Тип ресурса Виндовскиоскусер</span><span class="sxs-lookup"><span data-stu-id="19583-103">windowsKioskUser resource type</span></span>
 
-> <span data-ttu-id="80641-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80641-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="19583-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="19583-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="80641-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="80641-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="19583-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="19583-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="80641-106">Базовый класс пользователя, используемый для определения сведений об учетной записи для конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="80641-106">The user base class used to identify the account info for the kiosk configuration</span></span>
+<span data-ttu-id="19583-106">Базовый класс пользователя, используемый для определения сведений об учетной записи для конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="19583-106">The user base class used to identify the account info for the kiosk configuration</span></span>
 
-## <a name="properties"></a><span data-ttu-id="80641-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="80641-107">Properties</span></span>
-|<span data-ttu-id="80641-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="80641-108">Property</span></span>|<span data-ttu-id="80641-109">Тип</span><span class="sxs-lookup"><span data-stu-id="80641-109">Type</span></span>|<span data-ttu-id="80641-110">Описание</span><span class="sxs-lookup"><span data-stu-id="80641-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="19583-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="19583-107">Properties</span></span>
+|<span data-ttu-id="19583-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="19583-108">Property</span></span>|<span data-ttu-id="19583-109">Тип</span><span class="sxs-lookup"><span data-stu-id="19583-109">Type</span></span>|<span data-ttu-id="19583-110">Описание</span><span class="sxs-lookup"><span data-stu-id="19583-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="80641-111">Отношения</span><span class="sxs-lookup"><span data-stu-id="80641-111">Relationships</span></span>
-<span data-ttu-id="80641-112">Нет</span><span class="sxs-lookup"><span data-stu-id="80641-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="19583-111">Отношения</span><span class="sxs-lookup"><span data-stu-id="19583-111">Relationships</span></span>
+<span data-ttu-id="19583-112">Нет</span><span class="sxs-lookup"><span data-stu-id="19583-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="80641-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80641-113">JSON Representation</span></span>
-<span data-ttu-id="80641-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80641-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="19583-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="19583-113">JSON Representation</span></span>
+<span data-ttu-id="19583-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="19583-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskUser"
@@ -39,8 +39,6 @@ ms.locfileid: "35968878"
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
-
-
 
 
 
