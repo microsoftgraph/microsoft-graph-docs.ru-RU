@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e4464638ae28b1b82181b5985ab841af7ba9ebe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9fc06ac4791959ef4e603a4a65ddef2f62561a6d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984372"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352765"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984372"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|syncType|[Девицеманажементексчанжеконнекторсинктипе](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|Тип выполняемой синхронизации (синхронизируется все или только изменения).|
+|syncType|[девицеманажементексчанжеконнекторсинктипе](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|Тип выполняемой синхронизации (синхронизируется все или только изменения).|
 
 
 
@@ -78,6 +78,7 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

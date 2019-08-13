@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2468da2e3f27bc4538dd9137ec3041a6c0962c99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 936f0edcbf41fb9556ab8c67dbbd41da42b211dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994301"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353388"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Создание Виндовсинформатионпротектионвипеактион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994301"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,11 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|Таржетедусерид|String|UserId, целевой для этого действия очистки.|
-|Таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
-|Таржетеддевиценаме|String|Имя целевого устройства.|
-|Таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
-|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
+|таржетедусерид|String|UserId, целевой для этого действия очистки.|
+|таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
+|таржетеддевиценаме|String|Имя целевого устройства.|
+|таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
+|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 
 
@@ -102,6 +102,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

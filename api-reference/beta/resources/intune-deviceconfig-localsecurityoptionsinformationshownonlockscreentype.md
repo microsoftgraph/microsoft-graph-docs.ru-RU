@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df52f848d5167af38aabc621ad5ec4126cd33106
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6137ebd4bfb778b8d8f7e6e28cf38d72274b4761
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970248"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356685"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>тип перечисления Локалсекуритйоптионсинформатионшовнонлоккскринтипе
 
@@ -24,11 +24,9 @@ ms.locfileid: "35970248"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Усердисплайнамедомаинусер|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
-|Усердисплайнамеонли|2|Только отображаемое имя пользователя|
-|Донотдисплайусер|4|Не отображать сведения о пользователе|
-
-
+|усердисплайнамедомаинусер|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
+|усердисплайнамеонли|2|Только отображаемое имя пользователя|
+|донотдисплайусер|4|Не отображать сведения о пользователе|
 
 
 

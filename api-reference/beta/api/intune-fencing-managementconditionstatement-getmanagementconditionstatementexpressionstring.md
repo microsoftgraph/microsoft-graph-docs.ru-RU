@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b6b8a6e5496e82479abdc1d55aa1a0e567ea546
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7b690e06b49d0b1be10095c4d467ebbe581e20bb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990304"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355509"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>Функция Жетманажементкондитионстатементекспрессионстринг
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990304"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -73,6 +73,7 @@ Content-Length: 126
   }
 }
 ```
+
 
 
 

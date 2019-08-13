@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 984b2cbe3eb321666a19cbcab432fa4a96929c96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f72d352f592724468ec293297a26dc18ad37b73d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987441"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362040"
 ---
 # <a name="user-translateexchangeids"></a>Пользователь: Транслатиксчанжеидс
 
@@ -47,19 +47,19 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| Инпутидс | Коллекция строк | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
-| Саурцеидтипе | Ексчанжеидформат | Тип идентификатора идентификаторов в `InputIds` параметре. |
-| Таржетидтипе | Ексчанжеидформат | Запрошенный тип идентификатора для преобразования. |
+| инпутидс | Коллекция строк | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
+| саурцеидтипе | ексчанжеидформат | Тип идентификатора идентификаторов в `InputIds` параметре. |
+| таржетидтипе | ексчанжеидформат | Запрошенный тип идентификатора для преобразования. |
 
 ### <a name="exchangeidformat-values"></a>значения Ексчанжеидформат
 
 | Значения | Описание |
 |:-------|:------------|
 | Код | Формат идентификатора двоичной записи, используемый клиентами MAPI. |
-| Евсид | Формат идентификатора, используемый клиентами веб-служб Exchange. |
-| Иммутаблинтрид | Двоичный формат неизменяемого идентификатора, совместимый с MAPI. |
-| Рестид | Формат идентификатора по умолчанию, используемый Microsoft Graph. |
-| Рестиммутаблинтрид | Неизменяемый формат идентификатора, используемый Microsoft Graph. |
+| евсид | Формат идентификатора, используемый клиентами веб-служб Exchange. |
+| иммутаблинтрид | Двоичный формат неизменяемого идентификатора, совместимый с MAPI. |
+| рестид | Формат идентификатора по умолчанию, используемый Microsoft Graph. |
+| рестиммутаблинтрид | Неизменяемый формат идентификатора, используемый Microsoft Graph. |
 
 Двоичные форматы (`entryId` и `immutableEntryId`) являются безопасными в URL-адресах в кодировке Base64. Безопасность URL реализована путем изменения кодировки base64 двоичных данных следующим образом:
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-translateexchangeids-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-translateexchangeids-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
