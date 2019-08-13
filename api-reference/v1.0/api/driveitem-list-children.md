@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции ресурсов DriveItem, являющихся дочерними элементами ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: eaf8130f7134c63f349d19760153bbe3805a73e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c875b35c9c11ffcfdd878991da2ef229e79fc7b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015469"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372064"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 

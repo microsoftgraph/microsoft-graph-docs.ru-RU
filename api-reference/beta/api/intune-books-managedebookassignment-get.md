@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87a43c7f9dc0cac7705269a899a5ab41bce528c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a0996151d070da3d0fabc663e8f22fb74669fde9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959161"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335965"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959161"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -79,6 +79,7 @@ Content-Length: 274
   }
 }
 ```
+
 
 
 

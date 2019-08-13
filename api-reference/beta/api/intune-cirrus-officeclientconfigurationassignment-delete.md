@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 211bdad30814ba463982d1d30dccff5cd7604baf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a8c0a008542d7ecbbb370fee61f78e1bae2d3cb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958909"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328258"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>Удаление Оффицеклиентконфигуратионассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958909"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|* * TODO: определение областей * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

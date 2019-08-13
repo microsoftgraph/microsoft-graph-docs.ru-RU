@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7ffbb2df6fa32dd8bb0376112a0ac2f861dae6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 450a48cbb182fa5bc983c42a011b896c17abfaf7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010940"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331338"
 ---
 # <a name="grouppolicypresentationlongdecimaltextbox-resource-type"></a>Тип ресурса ГраупполиципресентатионлонгдеЦималтекстбокс
 
@@ -27,10 +27,10 @@ ms.locfileid: "36010940"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список ГраупполиципресентатионлонгдеЦималтекстбоксес](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-list.md)|Коллекция [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Список свойств и связей объектов [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
-|[Получение ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-get.md)|[ГраупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Чтение свойств и связей объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
-|[Создание ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-create.md)|[ГраупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Создание нового объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
+|[Получение ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-get.md)|[граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Чтение свойств и связей объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
+|[Создание ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-create.md)|[граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Создание нового объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
 |[Удаление ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-delete.md)|Нет|Удаляет объект [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md).|
-|[Обновление ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-update.md)|[ГраупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Обновление свойств объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
+|[Обновление ГраупполиципресентатионлонгдеЦималтекстбокс](../api/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox-update.md)|[граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md)|Обновление свойств объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -40,7 +40,7 @@ ms.locfileid: "36010940"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |Значение|Int64|Целое число без знака, задающее начальное значение для десятичного текстового поля. Значение по умолчанию равно 1.|
 |повернуть|Boolean|Если значение — true, создайте элемент управления "Счетчик"; в противном случае создайте текстовое поле для числового элемента. Значение по умолчанию: true.|
-|Спинстеп|Int64|Целое число без знака, которое указывает приращение изменения элемента управления "Счетчик". Значение по умолчанию равно 1.|
+|спинстеп|Int64|Целое число без знака, которое указывает приращение изменения элемента управления "Счетчик". Значение по умолчанию равно 1.|
 |Обязательный|Boolean|Требование ввести значение в поле параметр. Значение по умолчанию  false.|
 |minValue|Int64|Длинное целое число без знака, задающее минимальное допустимое значение. Значение по умолчанию равно 0.|
 |maxValue|Int64|Длинное целое число без знака, задающее максимальное допустимое значение. Значение по умолчанию — 9999.|
@@ -48,7 +48,7 @@ ms.locfileid: "36010940"
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|RDLC|[Граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|RDLC|[граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -72,8 +72,6 @@ ms.locfileid: "36010940"
   "maxValue": 1024
 }
 ```
-
-
 
 
 

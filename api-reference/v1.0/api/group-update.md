@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 88fd5ff1d1416d7e6abb51901ffb89741628506e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7974d9db9216a013e01c5f12f87f74488ab929ea
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014662"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373373"
 ---
 # <a name="update-group"></a>Обновление группы
 

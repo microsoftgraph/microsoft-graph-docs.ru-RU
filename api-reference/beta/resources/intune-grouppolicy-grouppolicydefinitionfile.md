@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60001517f635352ea2717033279ebebc8df7895b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98881f482f0feda24d070cd52c83d5de7dc5def9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998627"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331464"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>Тип ресурса Граупполицидефинитионфиле
 
@@ -23,18 +23,18 @@ ms.locfileid: "35998627"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Граупполицидефинитионфиле](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[Граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Чтение свойств и связей объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .|
-|[Обновление Граупполицидефинитионфиле](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[Граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Обновление свойств объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .|
+|[Получение Граупполицидефинитионфиле](../api/intune-grouppolicy-grouppolicydefinitionfile-get.md)|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Чтение свойств и связей объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .|
+|[Обновление Граупполицидефинитионфиле](../api/intune-grouppolicy-grouppolicydefinitionfile-update.md)|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Обновление свойств объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Локализованное понятное имя файла ADMX.|
 |description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|Лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
-|Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
+|таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
-|Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |последним|String|Версия редакции, связанная с файлом.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -68,8 +68,6 @@ ms.locfileid: "35998627"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

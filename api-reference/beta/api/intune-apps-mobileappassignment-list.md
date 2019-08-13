@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d311e3cf1064275ba19bfeb3ae9e44dca271c6cf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 07c019135c8777d63e0990ca6bd742f75a4d88d4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961022"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336728"
 ---
 # <a name="list-mobileappassignments"></a>Перечисление объектов mobileAppAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961022"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,6 +81,7 @@ Content-Length: 391
   ]
 }
 ```
+
 
 
 

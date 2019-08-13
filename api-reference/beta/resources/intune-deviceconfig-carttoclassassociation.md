@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 638b672d500f29b807309e52cdd4ddc14181c614
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 952701547c2cdf8a8b7778316f7e1f28739279b3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001903"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333760"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Тип ресурса КарттоклассассоЦиатион
 
@@ -38,8 +38,8 @@ ms.locfileid: "36001903"
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -69,8 +69,6 @@ ms.locfileid: "36001903"
   ]
 }
 ```
-
-
 
 
 

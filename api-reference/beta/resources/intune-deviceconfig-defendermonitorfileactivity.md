@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2039ca95b69f61b88e5b12b28b55977cb63c1b50
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c9c5bedbb07a89b51deb25942caeb5385f60e0a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001784"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333550"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>тип перечисления Дефендермониторфилеактивити
 
@@ -25,11 +25,9 @@ ms.locfileid: "36001784"
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
 |отключение|1,1|Отключите мониторинг действий с файлами.|
-|Монитораллфилес|2|Отслеживайте все файлы.|
-|Мониторинкомингфилесонли|4| Отслеживайте только входящие файлы.|
-|Монитораутгоингфилесонли|SP4|Отслеживайте только исходящие файлы.|
-
-
+|монитораллфилес|2|Отслеживайте все файлы.|
+|мониторинкомингфилесонли|4| Отслеживайте только входящие файлы.|
+|монитораутгоингфилесонли|SP4|Отслеживайте только исходящие файлы.|
 
 
 

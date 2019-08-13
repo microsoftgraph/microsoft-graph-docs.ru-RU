@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d32e51ffb45b377b3939423eb344e4bf123c3ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08fca46352bf7cbb96f6567a0c0812bf41dfec8b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003849"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369012"
 ---
 # <a name="create-channel"></a>Создание канала
 

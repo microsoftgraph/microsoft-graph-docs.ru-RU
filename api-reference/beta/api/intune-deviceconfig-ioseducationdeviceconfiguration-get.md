@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 37975f307d03524e9fe176b98f8de2c66ef7b6fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6806d9bb6087654566bf4a7b4ffa2a92f2b6a4d5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948427"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339325"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>Получение iosEducationDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948427"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -107,6 +107,7 @@ Content-Length: 1289
   }
 }
 ```
+
 
 
 

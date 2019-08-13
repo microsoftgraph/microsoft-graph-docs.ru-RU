@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции элементов в списке.
 doc_type: apiPageType
-ms.openlocfilehash: 49ca1090411a1a53be3db193821c14df51edef61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3780797477eeba79f92ce304aa740080844fa8eb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023117"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376040"
 ---
 # <a name="enumerate-items-in-a-list"></a>Перечисление элементов списка
 

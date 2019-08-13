@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f5be56f89e32bcf1695f9abca96852c7dd28d8bb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00f08528351160ac319a588d673291019d16ca4e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999096"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327894"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>тип перечисления Импортеддевицеидентититипе
 
@@ -26,8 +26,6 @@ ms.locfileid: "35999096"
 |unknown|нуль|Неизвестное значение Импортеддевицеидентититипе.|
 |imei|1,1|Удостоверение устройства имеет тип IMEI.|
 |serialNumber|2|Идентификатор устройства имеет тип "серийный номер".|
-
-
 
 
 

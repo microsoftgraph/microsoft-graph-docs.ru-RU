@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83a43f042107fae824c761244159ce51b425a87b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c7c88a798306fb2ccb78d91ec5b64ddc7f92478d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027015"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372658"
 ---
 # <a name="list-calendars"></a>Список календарей
 

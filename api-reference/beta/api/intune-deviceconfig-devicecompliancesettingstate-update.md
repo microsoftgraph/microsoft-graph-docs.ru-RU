@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 596c5a8aa695f09ac9a00962f0df0f47a25eb25e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e568a4fa871096e105047e0aa8406524dbf15038
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949540"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340088"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Update deviceComplianceSettingState
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949540"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
 
@@ -120,6 +120,7 @@ Content-Length: 598
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
 
 
 

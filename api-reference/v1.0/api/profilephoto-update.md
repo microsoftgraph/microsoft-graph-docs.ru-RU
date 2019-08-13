@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 73eca65512c166deff7a55d15a170761dd8d263c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e7e46402b533522c17bfed2b9d47a001d7150f0f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975923"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331184"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 

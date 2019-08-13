@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed80d89c73683fe9ba1d117d2eafe88dab8ade29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6e531b947b08bf8993735d74bb5661189a28093
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960827"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336666"
 ---
 # <a name="list-mobileappcontents"></a>Перечисление объектов mobileAppContent
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960827"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -76,6 +76,7 @@ Content-Length: 148
   ]
 }
 ```
+
 
 
 

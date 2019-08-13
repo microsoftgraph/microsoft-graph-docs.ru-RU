@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Возвращает метаданные для списка.
 doc_type: apiPageType
-ms.openlocfilehash: 93c007a761b431131236b9c3ba66f36f071ab250
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 55f1fc02a3f07839e487a5af9721ac18eb0f5e46
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023176"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370699"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02f4e51be7442949c38bd22f663f9a4134876cc7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a835a5570a51ea3e874fdabf98b4f2a5703ca0f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961786"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330022"
 ---
 # <a name="list-managedandroidstoreapps"></a>Перечисление объектов managedAndroidStoreApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961786"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -118,6 +118,7 @@ Content-Length: 1653
   ]
 }
 ```
+
 
 
 

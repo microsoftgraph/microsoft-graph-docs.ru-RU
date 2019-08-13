@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта Иосд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e726b9396f9001ea7768b53efa7d057b495228a
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b05fda333a2e3a86937e6d3736c95ac4279e292f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34967099"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339528"
 ---
 # <a name="get-iosderivedcredentialauthenticationconfiguration"></a>Получение Иосдериведкредентиалаусентикатионконфигуратион
 
@@ -26,7 +27,7 @@ ms.locfileid: "34967099"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -106,6 +107,7 @@ Content-Length: 1305
   }
 }
 ```
+
 
 
 

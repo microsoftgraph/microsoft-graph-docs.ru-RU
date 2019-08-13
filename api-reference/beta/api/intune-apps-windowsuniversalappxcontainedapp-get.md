@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4a00da0548cc9b1a1f513206c3c9ceada3e33f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6b365741015f48946cf0d61fe3f4bfda48163b64
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959602"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328628"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Получение Виндовсуниверсалаппксконтаинедапп
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959602"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 196
   }
 }
 ```
+
 
 
 

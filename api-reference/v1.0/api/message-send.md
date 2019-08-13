@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0ec0d1c60ab705f2ac907899f9c10dea1b9ed10f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 124992e2481209debecf9edc9e10f54ebc3a8f5a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976667"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374675"
 ---
 # <a name="message-send"></a>message: send
 

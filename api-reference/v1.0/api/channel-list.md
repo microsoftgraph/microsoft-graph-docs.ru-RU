@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1019119b38ca3364a22a7f9d173351fa296ab22c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e0dee8bfa6628c937ea55305b7d3575f40c08fc1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003912"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369026"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 

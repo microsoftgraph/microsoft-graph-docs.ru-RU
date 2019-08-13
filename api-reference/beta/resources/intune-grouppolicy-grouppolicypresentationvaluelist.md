@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4efb34c0f725c7253f30a04ba606ce5cf27a669
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 43dc4ed5206e39292ba026f646ae57cac6377ef2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998529"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331240"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>Тип ресурса Граупполиципресентатионвалуелист
 
@@ -27,10 +27,10 @@ ms.locfileid: "35998529"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Граупполиципресентатионвалуелистс](../api/intune-grouppolicy-grouppolicypresentationvaluelist-list.md)|Коллекция [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Список свойств и связей объектов [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
-|[Получение Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md)|[Граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Чтение свойств и связей объекта [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
-|[Создание Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-create.md)|[Граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Создание нового объекта [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
+|[Получение Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-get.md)|[граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Чтение свойств и связей объекта [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
+|[Создание Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-create.md)|[граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Создание нового объекта [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
 |[Удаление Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-delete.md)|Нет|Удаляет объект [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md).|
-|[Обновление Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-update.md)|[Граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Обновление свойств объекта [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
+|[Обновление Граупполиципресентатионвалуелист](../api/intune-grouppolicy-grouppolicypresentationvaluelist-update.md)|[граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md)|Обновление свойств объекта [граупполиципресентатионвалуелист](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,8 +43,8 @@ ms.locfileid: "35998529"
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|Дефинитионвалуе|[Граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Значение определения групповой политики, связанное со значением представления. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|демонстрации|[Граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Представление групповой политики, связанное со значением презентации. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|дефинитионвалуе|[граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Значение определения групповой политики, связанное со значением представления. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|демонстрации|[граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Представление групповой политики, связанное со значением презентации. Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -69,8 +69,6 @@ ms.locfileid: "35998529"
   ]
 }
 ```
-
-
 
 
 

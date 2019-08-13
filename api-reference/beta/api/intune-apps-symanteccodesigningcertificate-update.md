@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b0bdd179c7b6cd610a5a837c2f3de485c6ec0f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9503a4d788df9dacb0a2d4ea98a0f343516a08e9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960428"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328958"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Обновление symantecCodeSigningCertificate
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960428"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,14 +53,14 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |содержимое|Binary|Сертификат подписи кода Windows Symantec в формате необработанных данных.|
-|status|[Цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
+|status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |password|Строка|Пароль, необходимый для PFX-файла.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|Иссуернаме|String|Имя поставщика сертификата.|
+|иссуернаме|String|Имя поставщика сертификата.|
 |имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
-|Уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
+|уплоаддатетиме|DateTimeOffset|Тип сертификата сопроектировании в качестве сертификата Symantec.|
 
 
 
@@ -111,6 +111,7 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

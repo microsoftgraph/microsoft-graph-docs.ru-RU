@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab2e6e095c97d17672c694d3a827791405f1a076
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aea00e27c59e88ad622ca8c88bf4de7727ce7e81
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960358"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328881"
 ---
 # <a name="update-userappinstallstatus"></a>Обновление Усераппинсталлстатус
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960358"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bdc8c5f9064ab68017d9857f384fb17388d0cce7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3491d175f4157bae2229277e35ea937741d06324
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971552"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334866"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>тип перечисления Андроиддевицеовнераппаутаупдатеполицитипе
 
@@ -24,12 +24,10 @@ ms.locfileid: "35971552"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|Усерчоице|1,1|Пользователь может управлять автоматическим обновлением.|
+|усерчоице|1,1|Пользователь может управлять автоматическим обновлением.|
 |ключа|2|Приложения никогда не обновляются автоматически.|
-|Вифионли|4|Приложения автоматически обновляются только с помощью Wi/Fi.|
+|вифионли|4|Приложения автоматически обновляются только с помощью Wi/Fi.|
 |Постоянное|SP4|Приложения автоматически обновляются в любое время. Может взиматься плата за передачу данных.|
-
-
 
 
 

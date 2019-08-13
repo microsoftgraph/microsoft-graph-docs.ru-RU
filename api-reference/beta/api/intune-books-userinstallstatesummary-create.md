@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b2857933d51c3b2f836c520e725c2563043a481
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33ce8deba11363f27971a3c5bc2ac1fef5c05a45
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959049"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335909"
 ---
 # <a name="create-userinstallstatesummary"></a>Создание объекта userInstallStateSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959049"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -96,6 +96,7 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

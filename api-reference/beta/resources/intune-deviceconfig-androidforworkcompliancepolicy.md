@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed8553d8d7291c767598b9de3e588cb2be318d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d29b024bd593c235f7d7962c9da7593144bc0891
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011829"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334691"
 ---
 # <a name="androidforworkcompliancepolicy-resource-type"></a>Тип ресурса androidForWorkCompliancePolicy
 
@@ -44,7 +44,7 @@ ms.locfileid: "36011829"
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |passwordRequired|Логический|Указывает, что для разблокировки устройства требуется указывать пароль.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
-|passwordRequiredType|[Андроидрекуиредпассвордтипе](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Тип символов в пароле. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|passwordRequiredType|[андроидрекуиредпассвордтипе](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Тип символов в пароле. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
@@ -53,7 +53,7 @@ ms.locfileid: "36011829"
 |securityDisableUsbDebugging|Boolean|Запрещает USB-отладку на устройствах с Android.|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
-|deviceThreatProtectionRequiredSecurityLevel|[Девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Устройства нельзя взламывать и рутовать.|
 |osMinimumVersion|String|Минимальная версия Android.|
 |osMaximumVersion|String|Максимальная версия Android.|
@@ -120,8 +120,6 @@ ms.locfileid: "36011829"
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d94e10d64392631aa91506326c27a2cc26b3cd0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c6f51a46d038b518b75ddd808cf488356a25d65d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971321"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334313"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>Тип ресурса Андроидвпнконфигуратион
 
@@ -27,10 +27,10 @@ ms.locfileid: "35971321"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Андроидвпнконфигуратионс](../api/intune-deviceconfig-androidvpnconfiguration-list.md)|Коллекция [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Список свойств и связей объектов [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
-|[Получение Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-get.md)|[Андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Чтение свойств и связей объекта [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
-|[Создание Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-create.md)|[Андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Создание нового объекта [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
+|[Получение Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-get.md)|[андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Чтение свойств и связей объекта [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
+|[Создание Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-create.md)|[андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Создание нового объекта [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
 |[Удаление Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-delete.md)|Нет|Удаляет объект [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md).|
-|[Обновление Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-update.md)|[Андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Обновление свойств объекта [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
+|[Обновление Андроидвпнконфигуратион](../api/intune-deviceconfig-androidvpnconfiguration-update.md)|[андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md)|Обновление свойств объекта [андроидвпнконфигуратион](../resources/intune-deviceconfig-androidvpnconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -38,15 +38,15 @@ ms.locfileid: "35971321"
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Девицеманажементаппликабилитируледевицемоде|[Девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Коннектионнаме|String|Имя подключения, отображаемое для пользователя.|
+|коннектионнаме|String|Имя подключения, отображаемое для пользователя.|
 |connectionType|[Androidvpnconnectiontype.](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
 |role|String|Роль, когда для типа подключения задано значение Secure Pulse.|
 |область|String|Область, когда для параметра Тип подключения задано значение Secure Pulse.|
@@ -54,7 +54,7 @@ ms.locfileid: "35971321"
 |распознавания|String|Отпечаток — это строка, которая будет использоваться для проверки доверенности VPN-сервера, который применяется, только если тип подключения — "VPN-метка капсулы".|
 |Пользовательские|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Пользовательские данные, если для параметра Тип подключения задано значение Citrix. Эта коллекция может содержать не более 25 элементов.|
 |customKeyValueData|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пользовательские данные, если для параметра Тип подключения задано значение Citrix. Эта коллекция может содержать не более 25 элементов.|
-|Параметр authenticationmethod|[Впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|Параметр authenticationmethod|[впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -66,7 +66,7 @@ ms.locfileid: "35971321"
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Identitycertificate (|[Андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|Сертификат удостоверения для проверки подлинности клиента при использовании метода проверки подлинности Certificate.|
+|Identitycertificate (|[андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|Сертификат удостоверения для проверки подлинности клиента при использовании метода проверки подлинности Certificate.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -140,8 +140,6 @@ ms.locfileid: "35971321"
   "authenticationMethod": "String"
 }
 ```
-
-
 
 
 

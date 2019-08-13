@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fea2c70bae98d043974d7c87467ab1b988fa8663
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 786dce90eb4b2dd50828820ceb00f2c17bcf2401
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946196"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338520"
 ---
 # <a name="delete-windows10compliancepolicy"></a>Delete windows10CompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946196"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

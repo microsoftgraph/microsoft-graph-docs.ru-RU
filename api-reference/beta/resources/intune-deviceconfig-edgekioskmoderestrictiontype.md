@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bbd3d13ad39b6acda5fd67d69c8cb2de2f2e7c55
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff024dd8cd27872d0895068fba42e0018fdce011
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001469"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332514"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
 
@@ -24,12 +24,10 @@ ms.locfileid: "36001469"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено (не ограничено).|
-|Дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
-|Нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
-|Публикбровсингсинглеапп|4|Общедоступный обзор в режиме одного приложения.|
-|Публикбровсингмултиапп|SP4|Общедоступный обзор (InPrivate) в режиме нескольких приложений.|
-
-
+|дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
+|нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
+|публикбровсингсинглеапп|4|Общедоступный обзор в режиме одного приложения.|
+|публикбровсингмултиапп|SP4|Общедоступный обзор (InPrivate) в режиме нескольких приложений.|
 
 
 

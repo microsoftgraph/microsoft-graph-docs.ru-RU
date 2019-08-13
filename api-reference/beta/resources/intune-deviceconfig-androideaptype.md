@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0550d3dfd265a6ce6bbbb6c11e63b821c7656d77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd46ce2b2f27c9a9e825d9a89c9fd8d7658a5a1a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971440"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334740"
 ---
 # <a name="androideaptype-enum-type"></a>тип перечисления Андроидеаптипе
 
@@ -23,11 +23,9 @@ ms.locfileid: "35971440"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Еаптлс|13|Протокол расширенной проверки подлинности — протокол TLS (EAP-TLS).|
-|Еапттлс|21|Протокол расширенной проверки подлинности (EAP-TTLS).|
+|еаптлс|13|Протокол расширенной проверки подлинности — протокол TLS (EAP-TLS).|
+|еапттлс|21|Протокол расширенной проверки подлинности (EAP-TTLS).|
 |протокола|25|Протокол PEAP (protected Extensible Authentication Protocol).|
-
-
 
 
 
