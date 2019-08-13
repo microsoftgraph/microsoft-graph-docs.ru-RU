@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 559c37348bd2b594e191ba04faf0668198c6e4dc
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: bdea90bc6903f4d919d04cd0abeda781ac0a685f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245677"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369152"
 ---
 # <a name="create-event"></a>Создание события
 

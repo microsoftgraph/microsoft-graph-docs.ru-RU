@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f72b81597f39b8aa15edbddbd1c01f26c830caaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a38036377f74d8c314397a344ff16f9f3600ad68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004507"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332668"
 ---
 # <a name="eaptype-enum-type"></a>тип перечисления Еаптипе
 
@@ -23,14 +23,12 @@ ms.locfileid: "36004507"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Еаптлс|13|Протокол EAP-Transport Layer Security (EAP-TLS).|
+|еаптлс|13|Протокол EAP-Transport Layer Security (EAP-TLS).|
 |LEAP|17|Облегченный протокол проверки подлинности (LEAP).|
-|Еапсим|0,18|EAP для модуля удостоверения абонента GSM (EAP-SIM).|
-|Еапттлс|21|Протокол TLS-туннелирования (EAP-TTLS).|
+|еапсим|0,18|EAP для модуля удостоверения абонента GSM (EAP-SIM).|
+|еапттлс|21|Протокол TLS-туннелирования (EAP-TTLS).|
 |протокола|25|Протокол PEAP (protected Extensible Authentication Protocol).|
-|Еапфаст|43|EAP-гибкая Проверка подлинности с помощью безопасного туннелирования (EAP-FAST).|
-
-
+|еапфаст|43|EAP-гибкая Проверка подлинности с помощью безопасного туннелирования (EAP-FAST).|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fb950a19eed475a8a9ec7f7b55aeec84e079ec5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ee950b7e4e292b9fb177778ff4df2dcb51641e54
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998620"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331436"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Тип ресурса Граупполиципресентатион
 
@@ -23,8 +23,8 @@ ms.locfileid: "35998620"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Граупполиципресентатион](../api/intune-grouppolicy-grouppolicypresentation-get.md)|[Граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Чтение свойств и связей объекта [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) .|
-|[Обновление Граупполиципресентатион](../api/intune-grouppolicy-grouppolicypresentation-update.md)|[Граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Обновление свойств объекта [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) .|
+|[Получение Граупполиципресентатион](../api/intune-grouppolicy-grouppolicypresentation-get.md)|[граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Чтение свойств и связей объекта [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) .|
+|[Обновление Граупполиципресентатион](../api/intune-grouppolicy-grouppolicypresentation-update.md)|[граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Обновление свойств объекта [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "35998620"
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|RDLC|[Граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией.|
+|RDLC|[граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -54,8 +54,6 @@ ms.locfileid: "35998620"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

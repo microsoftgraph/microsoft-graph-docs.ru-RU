@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 8c34e2e81882cbb9b01235c70a8e7554ea13fc53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81a2b70d171bec25af28d4929fcfd7b5cce31e59
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954217"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326823"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -52,8 +52,8 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 Этот API соответствует стандартным кодам протокола HTTP. Кроме того, коды настраиваемых ошибок указаны ниже.
 |Код ошибки     | Сообщение об ошибке              | Сведения |
 |:--------------------| :---------------------|:--------------------|
-| 400 Бадрекуест | Ролеассигнментрекуестнотфаунд | GovernanceRoleAssignmentRequest не существует в системе.
-| 400 Бадрекуест | Рекуестканнотбеканцеллед    | Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены.
+| 400 Бадрекуест | ролеассигнментрекуестнотфаунд | GovernanceRoleAssignmentRequest не существует в системе.
+| 400 Бадрекуест | рекуестканнотбеканцеллед    | Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -71,7 +71,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 [!INCLUDE [sample-code](../includes/snippets/csharp/cancel-governanceroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/cancel-governanceroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

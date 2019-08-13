@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cfa2debd0c89393fa08751a59203bcac2261f688
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 996013fa0119108606ae80c211e713b55cf90833
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026910"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367428"
 ---
 # <a name="list-events"></a>Список событий
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dc06c29545dffe0117687ecf276dbc6568b61546
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ee279099933bca2c8b0d0461b9226df998dc285
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969249"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337834"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -43,8 +43,6 @@ ms.locfileid: "35969249"
 |windows10Mobile|17|Windows 10 Mobile|
 |windows10IoTCore|0,18|Windows 10 IoT базовая|
 |windows10IoTCoreCommercial|19|Windows 10 IoT базовая коммерческая версия|
-
-
 
 
 

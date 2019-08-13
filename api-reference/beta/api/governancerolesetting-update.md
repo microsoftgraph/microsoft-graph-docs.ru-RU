@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 8dadb8669a3569b971586e04a9d84c5dff93da06
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71351c6ae478fd26f87024550de1d953911f5de6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954151"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326487"
 ---
 # <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
 
@@ -46,10 +46,10 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Админелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить подходящего назначения роли.|
-|Админмемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытке администратора добавить назначение роли прямого члена.|
-|Усерелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. В настоящее время этот `pimforazurerbac` сценарий не поддерживается и может быть доступен в следующих сценариях.|
-|Усермемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается активировать назначение роли.|
+|админелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить подходящего назначения роли.|
+|админмемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытке администратора добавить назначение роли прямого члена.|
+|усерелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. В настоящее время этот `pimforazurerbac` сценарий не поддерживается и может быть доступен в следующих сценариях.|
+|усермемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается активировать назначение роли.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 NoContent`. Метод не возвращает данные в теле отклика. 
@@ -59,8 +59,8 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 |Код ошибки     | Сообщение об ошибке         | Сведения             |
 |:--------------| :---------------------|:--------------------|
-| 400 Бадрекуест| Ролесеттингнотфаунд   | [Говернанцеролесеттинг](../resources/governancerolesetting.md) не существует в системе.
-| 400 Бадрекуест| Инвалидролесеттинг    | В тексте запроса указаны недопустимые значения [говернанцерулесеттингс](../resources/governancerulesetting.md) .
+| 400 Бадрекуест| ролесеттингнотфаунд   | [Говернанцеролесеттинг](../resources/governancerolesetting.md) не существует в системе.
+| 400 Бадрекуест| инвалидролесеттинг    | В тексте запроса указаны недопустимые значения [говернанцерулесеттингс](../resources/governancerulesetting.md) .
 
 ## <a name="example"></a>Пример 
 В этом примере обновляется параметр Role для настраиваемой роли 3 в подписке Wingtip Toys — произ.
@@ -89,7 +89,7 @@ Content-length: 350
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-governancerolesetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-governancerolesetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cb5c41a2ac268bc2a5ad0471e512d6fc121a68cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c22cd85964e4f0866ba2f151c32f8ad1cb255ad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011682"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334247"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
 
@@ -23,12 +23,10 @@ ms.locfileid: "36011682"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|Превентани|1,1|Запретите общий доступ.|
-|Алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
+|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|превентани|1,1|Запретите общий доступ.|
+|алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
 |Ограничения|4|Нет ограничений на общий доступ.|
-
-
 
 
 

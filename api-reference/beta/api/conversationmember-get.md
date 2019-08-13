@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5e6705c6362bf4a2397bf14633f3753cbc0e0ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f357667dfcf782b83896a9cb02e1e5459f3faf94
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943108"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321528"
 ---
 # <a name="get-conversationmember"></a>Получение conversationMember
 

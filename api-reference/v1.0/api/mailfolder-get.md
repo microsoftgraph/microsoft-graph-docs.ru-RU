@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8821cef613a86e7630117a38cef3636eee40e9b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff10b4df939002b7fcbaf1a9ef8e945d0653185a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023050"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375053"
 ---
 # <a name="get-mailfolder"></a>Получение объекта mailFolder
 

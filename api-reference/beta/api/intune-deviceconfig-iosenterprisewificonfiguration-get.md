@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: acbdac4b0cc35de4a2d2880d699cb7568e6e049e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb9239ef5c9e1086d7e4ec8199681b521bcfbd7f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948286"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339276"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Получение iosEnterpriseWiFiConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948286"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -127,6 +127,7 @@ Content-Length: 2269
   }
 }
 ```
+
 
 
 

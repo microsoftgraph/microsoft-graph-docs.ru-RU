@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9409ddebd69d8b046c522de1c3e58baabc15a2ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab26d2b6cda774f3d2cf3284f92d1901cc4bdf82
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970621"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333214"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>тип перечисления deviceComplianceActionType
 
@@ -28,11 +28,9 @@ ms.locfileid: "35970621"
 |блок|2|Блокировка устройства в AAD|
 |снять|4|Прекращение использования устройства|
 |Очистка|SP4|Очистка устройства|
-|Ремовересаурцеакцесспрофилес|17:00|Удаление профилей доступа к ресурсам с устройства|
-|Пушнотификатион|9 |Отправка push-уведомления на устройство|
+|ремовересаурцеакцесспрофилес|17:00|Удаление профилей доступа к ресурсам с устройства|
+|пушнотификатион|9 |Отправка push-уведомления на устройство|
 |remoteLock|10 |Удаленная блокировка устройства|
-
-
 
 
 

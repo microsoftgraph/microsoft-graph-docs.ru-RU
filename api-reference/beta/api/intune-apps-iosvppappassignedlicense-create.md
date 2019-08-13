@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 296d75deb90514baf12ed5ff45a65e6987d639c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4aef79d88af43074a4257f6a77f3cbbe919cf27
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962336"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330393"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Создание Иосвппаппассигнедлиценсе
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962336"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Усеремаиладдресс|String|Адрес электронной почты пользователя.|
+|усеремаиладдресс|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|Строка|Имя участника-пользователя.|
@@ -96,6 +96,7 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

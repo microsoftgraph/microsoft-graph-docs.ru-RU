@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b53ec824e5dd368b0f563c5040270feef0f3ea7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c18f7e95166ed8388ee72b38f601bb15a5c46bfb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026833"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367165"
 ---
 # <a name="list-messages"></a>Список сообщений
 

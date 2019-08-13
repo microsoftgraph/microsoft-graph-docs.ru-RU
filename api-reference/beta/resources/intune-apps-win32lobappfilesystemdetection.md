@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c35fb1855c0aff33c12a84e9d78e7ec4ebd76a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd18cf615b33faa58e699bd53d93ed2110144c4a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012312"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335734"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 
@@ -27,11 +27,11 @@ ms.locfileid: "36012312"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
-|Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
 |check32BitOn64System|Boolean|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
-|Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
+|детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|String|Значение обнаружения файлов или папок|
+|детектионвалуе|String|Значение обнаружения файлов или папок|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -54,8 +54,6 @@ ms.locfileid: "36012312"
   "detectionValue": "String"
 }
 ```
-
-
 
 
 

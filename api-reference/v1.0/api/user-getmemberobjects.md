@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12cd2cd0bf799eb4f140f747b14a075b7af9c510
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b599d443c9a7d7161f51f0aae47d7a62e064e067
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027029"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373109"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 Возвращение всех групп, ролей каталога и административных подразделений, в которых состоит пользователь. Это транзитивная проверка.

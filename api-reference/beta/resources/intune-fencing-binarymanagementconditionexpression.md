@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4782fb9fc7f1af9110622d9714c6f67e59bd89e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b16bd0ec8aecffd4f0221ca9cabbc925e26e059a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011136"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326725"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>Тип ресурса Бинариманажементкондитионекспрессион
 
@@ -26,9 +26,9 @@ ms.locfileid: "36011136"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|operator|[Бинариманажементкондитионекспрессионоператортипе](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Оператор, используемый для оценки бинарной операции. Возможные значения: `or`, `and`.|
-|Фирстоперанд|[Манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд бинарной операции.|
-|Секондоперанд|[Манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Второй операнд бинарной операции.|
+|operator|[бинариманажементкондитионекспрессионоператортипе](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|Оператор, используемый для оценки бинарной операции. Возможные значения: `or`, `and`.|
+|фирстоперанд|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд бинарной операции.|
+|секондоперанд|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Второй операнд бинарной операции.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -52,8 +52,6 @@ ms.locfileid: "36011136"
   }
 }
 ```
-
-
 
 
 

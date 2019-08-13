@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af0a0d02b7877c17c1211af4b7e8e01b208ea1f4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec843c7a16707cd33ebf698c9f32c9ee986cc2f2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952179"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331891"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Создание Андроидманажедстореаппконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952179"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -60,9 +60,9 @@ POST /deviceAppManagement/mobileAppConfigurations
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
-|Пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
-|Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
-|Аппсуппортсоемконфиг|Boolean|Указывает, является ли Аппконфиг политикой Оемконфиг.|
+|пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
+|пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
+|аппсуппортсоемконфиг|Boolean|Указывает, является ли Аппконфиг политикой Оемконфиг.|
 
 
 
@@ -135,6 +135,7 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
+
 
 
 

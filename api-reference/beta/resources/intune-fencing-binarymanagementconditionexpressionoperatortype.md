@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e885c1f04db2429869297e9022bf0e45f0f12e9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11833fdc640182f628bcc2d08974d01cade4a4f1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998739"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326704"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Бинариманажементкондитионекспрессионоператортипе
 
@@ -25,8 +25,6 @@ ms.locfileid: "35998739"
 |:---|:---|:---|
 |или|нуль|Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.|
 |и|1,1|Оценивает набор операндов как true, если все его операнды имеют значение true.|
-
-
 
 
 

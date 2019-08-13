@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Вы можете получить коллекцию дочерних сайтов, определенных для сайта.
 doc_type: apiPageType
-ms.openlocfilehash: 33bf99951655036f736e5eecf274845b577b8b9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11642a80dbcd6aa53dd21a4666b0d0298d53a3b6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975650"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372657"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 

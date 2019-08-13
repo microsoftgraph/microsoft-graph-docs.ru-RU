@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 477ba7d75ba70997b75b66fd67516b52ef2fcd01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d32b7604e614b36ed92f08978679df60baf863e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951563"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330512"
 ---
 # <a name="list-iosvppapps"></a>Перечисление объектов iosVppApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951563"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -132,6 +132,7 @@ Content-Length: 2444
   ]
 }
 ```
+
 
 
 

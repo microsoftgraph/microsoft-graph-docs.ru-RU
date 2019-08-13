@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4aad0d63ad809befcfc054c0127d0c8360bec704
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75923333d699e4cd8cd24a223231d3b720aea542
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959315"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328454"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959315"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -152,6 +152,7 @@ Content-Length: 1026
   ]
 }
 ```
+
 
 
 

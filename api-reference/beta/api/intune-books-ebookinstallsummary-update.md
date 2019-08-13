@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb5e5c0b14b41f4f3ea5c489f87f130d46b49bcd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1b61b0b0ca33ca6314cb9f9e4b9672a5493c1747
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959385"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336070"
 ---
 # <a name="update-ebookinstallsummary"></a>Update eBookInstallSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959385"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -102,6 +102,7 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2c8624f8626012c91b77d05745be2bebb9fef77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b55dc8b1b40eb5f9d590447a06cd37d9ffafad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971244"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334278"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>тип перечисления Андроидвифисекурититипе
 
@@ -24,10 +24,8 @@ ms.locfileid: "35971244"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |окно|нуль|Открыть (без проверки подлинности).|
-|Впаентерприсе|1,1|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
+|впаентерприсе|1,1|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
 |wpa2Enterprise|2|WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
-
-
 
 
 

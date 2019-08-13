@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0ece5e9b588fbccf2292582c1675d9fbe15f7cf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 61e1f0d2c559c9f675ad8bd9053eb9a4d8542247
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022854"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374759"
 ---
 # <a name="list-attachments"></a>Список вложений
 

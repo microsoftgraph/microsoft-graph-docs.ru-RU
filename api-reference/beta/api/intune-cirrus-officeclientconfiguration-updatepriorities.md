@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 964b8c85764193852b80edfb150be8ec6f867b2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a236a20c6563f8ddb0b464168d7fb7d5e5d7ac43
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958937"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328283"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958937"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,8 +51,8 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оффицеконфигуратионполициидс|Коллекция строк|Список идентификаторов политик конфигурации Office|
-|Оффицеконфигуратионприоритиес|Коллекция Int32|Список приоритетов конфигурации Office|
+|оффицеконфигуратионполициидс|Коллекция строк|Список идентификаторов политик конфигурации Office|
+|оффицеконфигуратионприоритиес|Коллекция Int32|Список приоритетов конфигурации Office|
 
 
 
@@ -84,6 +84,9 @@ Content-length: 143
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

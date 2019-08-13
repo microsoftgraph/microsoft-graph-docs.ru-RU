@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e41a5dbf5d4756e7c635bfdf87aca46f54d8139f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bf4ac6aa9de235b1e4117b47c6a5eafc5c011a5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970411"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332752"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Тип ресурса Девицеманажементусерригхтслокалусерорграуп
 
@@ -25,7 +25,7 @@ ms.locfileid: "35970411"
 |:---|:---|:---|
 |name|String|Имя локального пользователя или группы.|
 |description|String|Описание локального пользователя или группы администратором.|
-|Секуритидентифиер|String|Идентификатор безопасности этого локального пользователя или группы (например, * S-1-5-32-544).|
+|секуритидентифиер|String|Идентификатор безопасности этого локального пользователя или группы (например, * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -45,8 +45,6 @@ ms.locfileid: "35970411"
   "securityIdentifier": "String"
 }
 ```
-
-
 
 
 

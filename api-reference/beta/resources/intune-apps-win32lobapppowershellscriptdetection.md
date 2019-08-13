@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ad0dd613182bdd54574e0ef25b107f8b6b6dc2e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e55629f3d8b17c76eef90711bbff184551fd4b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012256"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335608"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -28,7 +28,7 @@ ms.locfileid: "36012256"
 |:---|:---|:---|
 |Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи|
 |runAs32Bit|Boolean|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
-|Скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
+|скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -48,8 +48,6 @@ ms.locfileid: "36012256"
   "scriptContent": "String"
 }
 ```
-
-
 
 
 

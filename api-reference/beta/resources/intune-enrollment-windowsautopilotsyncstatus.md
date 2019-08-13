@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5767d87d5aa89c456d4a50b1f0e32ae76a93864c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 108079b10e87af3805e2c372e546680a5c98e2c6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998900"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327656"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>тип перечисления Виндовсаутопилотсинкстатус
 
@@ -27,8 +27,6 @@ ms.locfileid: "35998900"
 |inProgress|1,1|Выполняется синхронизация|
 |готовы|2|Синхронизация завершена.|
 |сбоев|4|Ошибка синхронизации.|
-
-
 
 
 

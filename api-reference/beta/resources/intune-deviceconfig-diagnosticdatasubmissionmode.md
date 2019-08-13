@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 788da8fd9a239bf26dfd2d9e8d8fbf308d059784
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fce6bbe40d985c15c5455c3b83de88ced4cce768
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004542"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332689"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>тип перечисления Диагностикдатасубмиссионмоде
 
@@ -28,8 +28,6 @@ ms.locfileid: "36004542"
 |Основное|2|Отправляет основные данные телеметрии.|
 |усовершенствован|4|Отправляет расширенные данные телеметрии, в том числе сведения об использовании и Insights.|
 |полный|SP4|Отправляет полные данные телеметрии, в том числе диагностические данные, например состояние системы.|
-
-
 
 
 

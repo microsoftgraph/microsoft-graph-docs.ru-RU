@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ebb4f0bede59a636085c813fa49533015802b6a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e2dba88afee5c566b5757221a28d4d19fd670f9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35959196"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335986"
 ---
 # <a name="create-managedebookassignment"></a>Создание объекта managedEBookAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35959196"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -94,6 +94,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

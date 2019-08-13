@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 67759255d9bdb972639743b7c50efce33f1bd9b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 39ca0631b849477ab4923294221c2c78e4ab0308
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001532"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332710"
 ---
 # <a name="devicetypes-enum-type"></a>тип перечисления Девицетипес
 
@@ -24,29 +24,27 @@ ms.locfileid: "36001532"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системной|нуль|Системной.|
-|Виндовсрт|1,1|Виндовсрт.|
+|виндовсрт|1,1|Виндовсрт.|
 |winMO6|2|WinMO6.|
 |Nokia|4|Nokia.|
 |windowsPhone|SP4|Windows Phone.|
 |mac|17:00|OS.|
 |winCE|6 |WinCE.|
-|Винембеддед|7 |Винембеддед.|
+|винембеддед|7 |Винембеддед.|
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |Иподтауч.|
 |ОС|-11:00|ОС.|
-|Исокконсумер|12|Исокконсумер.|
+|исокконсумер|12|Исокконсумер.|
 |формате|13|Формате.|
-|Макмдм|14|Клиент Mac OS X, использующий встроенный агент MDM.|
+|макмдм|14|Клиент Mac OS X, использующий встроенный агент MDM.|
 |holoLens|означает|Представляет собой затейливого Windows 10 гогглес.|
-|Сурфацехуб|столбцов|Устройство Surface HUB.|
-|Андроидфорворк|17|Android для рабочего устройства.|
-|Андроидентерприсе|0,18|Устройство Android Enterprise.|
+|сурфацехуб|столбцов|Устройство Surface HUB.|
+|андроидфорворк|17|Android для рабочего устройства.|
+|андроидентерприсе|0,18|Устройство Android Enterprise.|
 |BlackBerry|100|BlackBerry.|
 |Положите|101|Положите.|
 |unknown|255|Указывает, что тип устройства неизвестен.|
-
-
 
 
 

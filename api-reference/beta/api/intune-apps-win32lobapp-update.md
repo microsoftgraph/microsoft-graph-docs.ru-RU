@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8f4901e30f5a93042e634b771041252cee6eae3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b2e7b365dd21902c6c0ab3c8139f1e1996ecc48
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960173"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328741"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960173"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,27 +67,27 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|Инсталлкоммандлине|String|Командная строка для установки приложения|
-|Унинсталлкоммандлине|String|Командная строка для удаления приложения|
+|инсталлкоммандлине|String|Командная строка для установки приложения|
+|унинсталлкоммандлине|String|Командная строка для удаления приложения|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
-|Минимумфридискспацеинмб|Int32|Минимальное свободное место на диске, необходимое для установки этого приложения.|
-|Минимуммеморинмб|Int32|Значение минимальной физической памяти, необходимой для установки этого приложения.|
-|Минимумнумберофпроцессорс|Int32|Значение минимального числа процессоров, необходимое для установки этого приложения.|
-|Минимумкпуспидинмхз|Int32|Значение минимальной скорости ЦП, необходимое для установки этого приложения.|
-|Детектионрулес|Коллекция [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для определения бизнес-приложения Win32 (LoB).|
-|Рекуирементрулес|Коллекция [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|Правила требований для обнаружения бизнес-приложения Win32.|
-|Инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
-|Ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
-|Мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
-|Сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
+|минимумфридискспацеинмб|Int32|Минимальное свободное место на диске, необходимое для установки этого приложения.|
+|минимуммеморинмб|Int32|Значение минимальной физической памяти, необходимой для установки этого приложения.|
+|минимумнумберофпроцессорс|Int32|Значение минимального числа процессоров, необходимое для установки этого приложения.|
+|минимумкпуспидинмхз|Int32|Значение минимальной скорости ЦП, необходимое для установки этого приложения.|
+|детектионрулес|Коллекция [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для определения бизнес-приложения Win32 (LoB).|
+|рекуирементрулес|Коллекция [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|Правила требований для обнаружения бизнес-приложения Win32.|
+|инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
+|ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
+|мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
+|сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
 
 
 
@@ -296,6 +296,7 @@ Content-Length: 2950
   "setupFilePath": "Setup File Path value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0df4d0772d9204a47d86f8e9e6ed62173ab76cb5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1af9d31f449f0bd2bda960b65876c2770957436
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001679"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333529"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>тип перечисления Дефендерпротектионтипе
 
@@ -25,9 +25,7 @@ ms.locfileid: "36001679"
 |:---|:---|:---|
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
 |подключить|1,1|Функциональная возможность блока.|
-|Аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
-
-
+|аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
 
 
 

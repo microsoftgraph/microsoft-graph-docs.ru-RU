@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 524467d65548e22b6cdefacf6219c332989961a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e9f4984f45795494fdbc5f6eaddcac23be6ed05
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026749"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36346368"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec7680b5e87794df2b0d117a72167fa2fc630077
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e57bdc4c7e21300b67d452d9feeee7a021813255
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35948203"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339234"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Перечисление объектов iosGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35948203"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11484
+Content-Length: 11698
 
 {
   "value": [
@@ -348,11 +348,17 @@ Content-Length: 11484
       "contactsAllowManagedToUnmanagedWrite": true,
       "contactsAllowUnmanagedToManagedRead": true,
       "cellularBlockPersonalHotspotModification": true,
-      "siriDisableServerLogging": true
+      "siriDisableServerLogging": true,
+      "continuousPathKeyboardBlocked": true,
+      "findMyDeviceInFindMyAppBlocked": true,
+      "findMyFriendsInFindMyAppBlocked": true,
+      "wiFiBlockPowerModification": true,
+      "iTunesBlocked": true
     }
   ]
 }
 ```
+
 
 
 

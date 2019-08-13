@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f5f668c0648ad36bff08fb7615762edc5bb7a69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c868294fec114b6d598378350a0c21df6c1de679
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958755"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328202"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Получение Виндовсоффицеклиентсекуритиконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958755"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -101,6 +101,9 @@ Content-Length: 1152
   }
 }
 ```
+
+
+
 
 
 

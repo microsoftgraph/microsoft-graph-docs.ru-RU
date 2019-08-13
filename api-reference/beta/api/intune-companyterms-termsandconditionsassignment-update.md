@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1996bd47793b25484c21648c23a9017000008728
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98b7e1703fda5d408e34ed13ba868685f779992a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958517"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328104"
 ---
 # <a name="update-termsandconditionsassignment"></a>Обновление объекта termsAndConditionsAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958517"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

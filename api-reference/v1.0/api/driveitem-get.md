@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение метаданных ресурса DriveItem в объекте Drive по пути в файловой системе или идентификатору.
 doc_type: apiPageType
-ms.openlocfilehash: 6760af3b9cf28d325fcda325937f91ed417e2651
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c024a3441cffeadc67cceca20f24fd0f3ee9b93b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015441"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375039"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4a6fa05502f37248ac80b91a0729cb5c5cf35129
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7e7d23d0fad9538318983729000d03d4c64ce4d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022413"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375999"
 ---
 # <a name="list-plans"></a>Список планов
 

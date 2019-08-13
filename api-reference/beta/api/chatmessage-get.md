@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6de6859255afcb3437491854c2795aa83507b6f4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e3fadc893e67a583b370059513f7e6bf91fd3abc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943614"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36321715"
 ---
 # <a name="get-chatmessage"></a>Получение объекта chatMessage
 

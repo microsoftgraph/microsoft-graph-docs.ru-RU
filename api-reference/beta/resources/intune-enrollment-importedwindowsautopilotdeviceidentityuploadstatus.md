@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 47307705f9b0355577d4043885cfb2e742fd5758
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0aeca07622b3705c0a43a523b06dcf09f882feec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999075"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327838"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>тип перечисления Импортедвиндовсаутопилотдевицеидентитюплоадстатус
 
@@ -27,8 +27,6 @@ ms.locfileid: "35999075"
 |закончен|1,1|Состояние ожидания.|
 |complete|2|Состояние "завершено".|
 |error|4|Состояние ошибки.|
-
-
 
 
 

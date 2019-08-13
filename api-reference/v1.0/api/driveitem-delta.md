@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 doc_type: apiPageType
-ms.openlocfilehash: bd71a74cbcd77af19d3ddc87d894bc84ddf8dd3b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b35cd4f286a8cbdeae98fe38a51ed8c5ede69d58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015518"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375112"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 

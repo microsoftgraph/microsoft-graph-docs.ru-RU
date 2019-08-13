@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 778d1f20c9a8c03e64bb0afa6c9aac230d9d0cde
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf16d4fdd3a226799094cb165b7ca4505fbac483
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35947741"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36339024"
 ---
 # <a name="list-iosvpnconfigurations"></a>Список Иосвпнконфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35947741"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -169,6 +169,7 @@ Content-Length: 3404
   ]
 }
 ```
+
 
 
 

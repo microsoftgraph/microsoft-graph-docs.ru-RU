@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06369d828b0cdd2b3afd93f6643bde131aa0dce6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f0bbd5d242936e01c61a13f7e81ff46bf6270e8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953586"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323264"
 ---
 # <a name="create-group"></a>Создание группы
 

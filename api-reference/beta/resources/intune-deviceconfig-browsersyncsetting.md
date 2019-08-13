@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 423d90521529193d2debf778f136a38fb8bbfefa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e8bb7c99f0bd4bf33474671ff6535be938be2fb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971062"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333774"
 ---
 # <a name="browsersyncsetting-enum-type"></a>тип перечисления Бровсерсинксеттинг
 
@@ -24,10 +24,8 @@ ms.locfileid: "35971062"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|По умолчанию — разрешить синхронизацию параметров браузера на разных устройствах.|
-|Блоккедвисусероверриде|1,1|Запретить синхронизацию параметров браузера на устройствах пользователя, разрешить переопределение параметров пользователем.|
+|блоккедвисусероверриде|1,1|Запретить синхронизацию параметров браузера на устройствах пользователя, разрешить переопределение параметров пользователем.|
 |заблокированных|2|Абсолютно запретите синхронизацию параметров браузера для пользовательских устройств.|
-
-
 
 
 

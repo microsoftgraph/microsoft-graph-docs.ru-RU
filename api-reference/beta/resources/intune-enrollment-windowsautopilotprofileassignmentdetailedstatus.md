@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 994b36dfc57f87d89e0fb7f66a28047b81948c2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bec1aa210c4446d210d5a59816d09c9eaecab84
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999019"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327712"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
 
@@ -24,9 +24,7 @@ ms.locfileid: "35999019"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |none|нуль|Нет подробного отчета о состоянии назначения|
-|Хардваререкуирементснотмет|1,1|Требования к оборудованию не выполнены. Это может произойти, если устройство с автоматическим развертыванием автоматически пилотного профиля назначено устройству без доверенного платформенного модуля 2,0.|
-
-
+|хардваререкуирементснотмет|1,1|Требования к оборудованию не выполнены. Это может произойти, если устройство с автоматическим развертыванием автоматически пилотного профиля назначено устройству без доверенного платформенного модуля 2,0.|
 
 
 

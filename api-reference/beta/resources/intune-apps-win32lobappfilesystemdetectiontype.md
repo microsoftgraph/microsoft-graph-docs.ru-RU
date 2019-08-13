@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e77e1a588946ca3a69a993fb561c1b48602602f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea2e8ebdac47c1fcd82818e642ce610ba9c31ebf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004976"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335692"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>тип перечисления win32LobAppFileSystemDetectionType
 
@@ -28,10 +28,8 @@ ms.locfileid: "36004976"
 |modifiedDate|2|Дата последнего изменения.|
 |createdDate|4|Дата создания.|
 |version|SP4|Тип значения Version.|
-|Сизеинмб|17:00|Тип определения размера.|
-|Доеснотексист|6 |Указанный файл или папка не существует.|
-
-
+|сизеинмб|17:00|Тип определения размера.|
+|доеснотексист|6 |Указанный файл или папка не существует.|
 
 
 

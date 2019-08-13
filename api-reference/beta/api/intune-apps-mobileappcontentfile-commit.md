@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 55ace6d773ee441542e5569c83b5b3b57ce8b289
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9c9a04bf80bb582cf929112be09307868e0a8f80
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960876"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336630"
 ---
 # <a name="commit-action"></a>Действие commit
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960876"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -87,6 +87,7 @@ Content-length: 399
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
