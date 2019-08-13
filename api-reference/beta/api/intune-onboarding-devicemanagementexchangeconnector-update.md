@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0687206128c3ae4590c10a2cd0dced9c08b2fea0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 76285db02be34bb0615dc96deeae634cbfe98320
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984358"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352758"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Обновление объекта deviceManagementExchangeConnector
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984358"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,11 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |:---|:---|:---|
 |id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
-|status|[Девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
 |serverName|String|Имя сервера Exchange Server.|
 |connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
-|exchangeConnectorType|[Девицеманажементексчанжеконнектортипе](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|exchangeConnectorType|[девицеманажементексчанжеконнектортипе](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|Строка|Версия объекта ExchangeConnectorAgent|
 |exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
@@ -111,6 +111,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

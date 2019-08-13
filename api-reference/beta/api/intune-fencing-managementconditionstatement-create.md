@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b2790ecd52644a56968ea69c12dc118e587f2e72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48f636aa83b73aa7d5c4eee38bb0d9e9c02656f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990339"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355610"
 ---
 # <a name="create-managementconditionstatement"></a>Создание Манажементкондитионстатемент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990339"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,9 +57,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения оператора условия управления. Обновленная сторона службы.|
-|выражение|[Манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
+|выражение|[манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
 |eTag|String|Тег ETag оператора условия управления. Обновленная сторона службы.|
-|Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого оператора условия управления.
+|аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого оператора условия управления.
 Это рассчитывается на основе условий управления, связанных с оператором условия управления, и поиском пересечения соответствующих платформ. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 
 
@@ -113,6 +113,7 @@ Content-Length: 491
   ]
 }
 ```
+
 
 
 

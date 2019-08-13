@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e60b5fddb3daaada0b5d91e8722e01f14632f7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3b77df87ca37f6a0eb5a4eea9fea63f7d630f3e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981082"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348405"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>Получение Активедиректоривиндовсаутопилотдеплойментпрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981082"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -108,6 +108,7 @@ Content-Length: 1424
   }
 }
 ```
+
 
 
 

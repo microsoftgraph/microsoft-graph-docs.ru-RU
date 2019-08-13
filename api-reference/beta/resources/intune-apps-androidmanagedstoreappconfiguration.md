@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 356269f8b750fcf8e61cec00a93c6a006bff9f17
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29672e2c0147ecc5e516e86d7886b2523fb9ea6e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006110"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366919"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратион
 
@@ -27,10 +27,10 @@ ms.locfileid: "36006110"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Андроидманажедстореаппконфигуратионс](../api/intune-apps-androidmanagedstoreappconfiguration-list.md)|Коллекция [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Список свойств и связей объектов [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
-|[Получение Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[Андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Чтение свойств и связей объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
-|[Создание Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[Андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Создание нового объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
+|[Получение Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-get.md)|[андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Чтение свойств и связей объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
+|[Создание Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-create.md)|[андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Создание нового объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
 |[Удаление Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-delete.md)|Нет|Удаляет объект [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md).|
-|[Обновление Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[Андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Обновление свойств объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
+|[Обновление Андроидманажедстореаппконфигуратион](../api/intune-apps-androidmanagedstoreappconfiguration-update.md)|[андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md)|Обновление свойств объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -44,9 +44,9 @@ ms.locfileid: "36006110"
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
-|Пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
-|Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
-|Аппсуппортсоемконфиг|Boolean|Указывает, является ли Аппконфиг политикой Оемконфиг.|
+|пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
+|пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
+|аппсуппортсоемконфиг|Boolean|Указывает, является ли Аппконфиг политикой Оемконфиг.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -92,8 +92,6 @@ ms.locfileid: "36006110"
   "appSupportsOemConfig": true
 }
 ```
-
-
 
 
 

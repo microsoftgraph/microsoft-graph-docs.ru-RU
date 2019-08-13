@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8fa529edc03032665a1b170901dd65f95184941a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0cc842b58a2ef53ae27c51261c9bd25068e8ac64
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987637"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362228"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 

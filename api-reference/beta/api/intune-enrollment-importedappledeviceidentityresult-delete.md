@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e7c8dfbac70ce4a3804b5adc423266cb50b4699
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 862bf1f70b3cc2e64f02e28fb8752aa8f0e83c06
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986934"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356475"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>Удаление Импортедаппледевицеидентитиресулт
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986934"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
