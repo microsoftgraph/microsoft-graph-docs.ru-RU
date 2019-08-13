@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ead65c0657ebf999562899da5012d02fe7847a16
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c3123f6ae290cf2116433400e54a9819b2c1cad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969424"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367591"
 ---
 # <a name="vpnserver-resource-type"></a>Тип ресурса Vpnserver.
 
@@ -25,7 +25,7 @@ ms.locfileid: "35969424"
 |:---|:---|:---|
 |description|String|Описание.|
 |address|String|Адрес (IP-адрес, полное доменное имя или URL-адрес)|
-|Исдефаултсервер|Boolean|Сервер по умолчанию.|
+|исдефаултсервер|Boolean|Сервер по умолчанию.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -45,8 +45,6 @@ ms.locfileid: "35969424"
   "isDefaultServer": true
 }
 ```
-
-
 
 
 

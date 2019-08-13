@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b519debc63a9e8e681cbabc94881164b81fe075
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b1f9d57a273b5a180c45681dc9d857fdc8f67ef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984498"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352835"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>Удаление объекта deviceManagementExchangeConnector
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984498"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

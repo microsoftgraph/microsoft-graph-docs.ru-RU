@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 06beff5d0e36f44671b6d63e642d962f978b0612
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ef3a59a678d49cb6a2c7cc60ebaac9967e21b3e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969998"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368585"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>тип перечисления Нонеапаусентикатионмесодфореапттлстипе
 
@@ -23,12 +23,10 @@ ms.locfileid: "35969998"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Уненкриптедпассворд|нуль|Незашифрованный пароль (PAP).|
-|Чалленжехандшакеаусентикатионпротокол|1,1|Протокол проверки подлинности подтверждения связи (CHAP).|
-|Микрософтчап|2| Microsoft CHAP (MS-CHAP).|
-|Микрософтчапверсионтво|4|Microsoft CHAP версии 2 (MS-CHAP v2).|
-
-
+|уненкриптедпассворд|нуль|Незашифрованный пароль (PAP).|
+|чалленжехандшакеаусентикатионпротокол|1,1|Протокол проверки подлинности подтверждения связи (CHAP).|
+|микрософтчап|2| Microsoft CHAP (MS-CHAP).|
+|микрософтчапверсионтво|4|Microsoft CHAP версии 2 (MS-CHAP v2).|
 
 
 

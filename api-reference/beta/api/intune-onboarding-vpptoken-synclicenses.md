@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b4d50cd43da4c2ee0c3fc4fea527f217e0afcaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fb03c5de29892de1854e1c5678e9bb54cf69d628
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993888"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352261"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993888"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 1192
   }
 }
 ```
+
 
 
 

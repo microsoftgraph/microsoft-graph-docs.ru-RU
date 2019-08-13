@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e69f3ff7f86013bf380168a3fca7f8aa5b793dc4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 73d4f82899d3b7cda27e02418f2d140cea828834
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993881"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352275"
 ---
 # <a name="revokelicenses-action"></a>Действие revokeLicenses
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993881"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Нотифиманажеддевицес|Boolean|Н/Д|
+|нотифиманажеддевицес|Boolean|Н/Д|
 
 
 
@@ -78,6 +78,7 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: bbb4c1b71e596eebc4055732b0423c2b0fd55786
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: dff76db70f1ccebb6f420575ab793a4bdf7c2b97
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35871214"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36358310"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Список Кредентиалусеррегистратиондетаилс
 
@@ -44,11 +44,11 @@ GET /reports/credentialUserRegistrationDetails
 | --------- | ----------------------- |
 | userDisplayName | Фильтрация по имени пользователя. Пример: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq`и `startswith()`. Поддерживает не зависящий от регистра. |
 | userPrincipalName | Фильтрация по имени участника пользователя. Пример: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()`. Поддерживает не зависящий от регистра. |
-| Аусмесодс | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Поддерживаемые операторы фильтра: `eq`. |
+| аусмесодс | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Поддерживаемые операторы фильтра: `eq`. |
 | Регистрация | Фильтр для пользователей, зарегистрированных для самостоятельного сброса пароля (SSPR). Пример: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Поддерживаемые операторы фильтра: `eq`. |
 | isEnabled | Фильтрация для пользователей, которым был разрешен доступ к SSPR. Пример: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Поддерживаемые операторы филттер: `eq`. |
 | Поддержка | Фильтрация для пользователей, которые готовы к выполнению сброса пароля или многофакторной проверки подлинности (MFA). Пример: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Поддерживаемые операторы фильтра:`eq` |
-| Исмфарегистеред | Фильтрация для пользователей, зарегистрированных для MFA. Пример: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Поддерживаемые операторы фильтра: `eq`. |
+| исмфарегистеред | Фильтрация для пользователей, зарегистрированных для MFA. Пример: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Поддерживаемые операторы фильтра: `eq`. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-credentialuserregistrationdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-credentialuserregistrationdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

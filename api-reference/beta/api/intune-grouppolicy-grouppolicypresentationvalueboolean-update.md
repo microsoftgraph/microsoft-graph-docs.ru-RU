@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1395b1d44451ed3c053f199260dd997ab8cedbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ed7f48cb1087b5d84bf037a851f0d105fc82093
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989240"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357546"
 ---
 # <a name="update-grouppolicypresentationvalueboolean"></a>Обновление Граупполиципресентатионвалуебулеан
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989240"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 267
   "value": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0222cda3c2fed2afb9ef959ada65e08e001ad30a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8bc7f4e8292ded9a118b16379be5674fd1d5a749
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985625"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348447"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление Виндовсманажементапфеалсстате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985625"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,10 +53,10 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|Инсталледверсион|String|Установленная версия приложения управления Windows.|
-|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
+|инсталледверсион|String|Установленная версия приложения управления Windows.|
+|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|Девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 
 
@@ -99,6 +99,7 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
 
 
 

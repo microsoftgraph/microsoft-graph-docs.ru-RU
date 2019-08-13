@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c623429eda707f639e4d6e039542b3dcbe77c9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a8f929355dc5373d3d7a42152469d504570f2e43
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987728"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362376"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |EmailAddresses|Коллекция строк|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
-|Маилтипсоптионс|String|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные `automaticReplies`значения:, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`и. `totalMemberCount`|
+|маилтипсоптионс|String|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные `automaticReplies`значения:, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`и. `totalMemberCount`|
 
 ## <a name="response"></a>Отклик
 
@@ -80,7 +80,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f482ca12a1a53424f361467bf38869247d04b927
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d5a915bd183d898aead90280f1d4a2542566feb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982839"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36363888"
 ---
 # <a name="update-serviceprincipal"></a>Обновление serviceprincipal
 
@@ -45,14 +45,14 @@ PATCH /servicePrincipals/{id}
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
 |appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
 |appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения.                            **Примечания**: требуется версия 1,5 или более новая, не допускающая значение null.            |
-|appRoles|Аппроле|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в описании свойства **appRoles** для объекта Application **Notes**: требуется версия 1,5 или более новая, не допускающая значение null.            |
+|appRoles|аппроле|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в описании свойства **appRoles** для объекта Application **Notes**: требуется версия 1,5 или более новая, не допускающая значение null.            |
 |displayName|Строка|Отображаемое имя для субъекта-службы.|
 |errorUrl|String|            |
 |homepage|String|URL-адрес домашней страницы связанного приложения.|
-|keyCredentials|Кэйкредентиал|Коллекция ключевых учетных данных, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
+|keyCredentials|кэйкредентиал|Коллекция ключевых учетных данных, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
 |oauth2Permissions|oAuth2Permission|Разрешения OAuth 2.0, предоставляемые связанным приложением. Дополнительные сведения см. в определении свойства **oauth2Permissions** для объекта application.                            **Примечания**: требуется версия 1,5 или более новая, не допускающая значение null.            |
-|passwordCredentials|Пассвордкредентиал|Коллекция учетных данных паролей, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
+|passwordCredentials|пассвордкредентиал|Коллекция учетных данных паролей, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
 |preferredTokenSigningKeyThumbprint|String|Зарезервировано только для внутреннего использования. Не записывайте и не используйте иным образом это свойство. Может быть удалено в будущих версиях.                            **Примечания**: требуется версия 1,5 или более поздняя.            |
 |publisherName|String|Отображаемое имя клиента, в котором указано связанное приложение.|
 |replyUrls|String|URL-адреса, которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения.                            **Примечание.** Значение null не допускается.            |
@@ -101,7 +101,7 @@ Content-length: 391
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

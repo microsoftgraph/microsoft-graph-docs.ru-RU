@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 43482bfa8e8024a134ee12d7e50f0a33df373596
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4306ed219ab41d0e7966beb9c9b89474491ac59
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953887"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326361"
 ---
 # <a name="get-group"></a>Вывод группы
 

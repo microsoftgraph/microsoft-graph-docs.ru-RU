@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3c424fdd5c324cbbc3c0d25be6e6b0122b5b63d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 16d84ad4520414fd7448635c93b0ea84a5943c7e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984386"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352779"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>Список объектов deviceManagementExchangeConnector
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984386"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,6 +83,7 @@ Content-Length: 616
   ]
 }
 ```
+
 
 
 

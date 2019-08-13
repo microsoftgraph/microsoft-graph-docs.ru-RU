@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2784c3bd832b786d377ef844f972e203a0e996b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b0ca3b2b76bee2039825330de0e99b941d0815b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986955"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356601"
 ---
 # <a name="importappledeviceidentitylist-action"></a>Действие importAppleDeviceIdentityList
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986955"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |importedAppleDeviceIdentities|Коллекция [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md)|Пока не задокументировано.|
-|Овервритеимпортеддевицеидентитиес|Boolean|Н/Д|
+|овервритеимпортеддевицеидентитиес|Boolean|Н/Д|
 
 
 
@@ -117,6 +117,7 @@ Content-Length: 715
   ]
 }
 ```
+
 
 
 

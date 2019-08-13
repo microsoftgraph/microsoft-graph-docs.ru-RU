@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e9ea384fcba87e2ce42784917f96b62d5e84acd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 51a739e25cc5c848155264ad4e06d49fe424b265
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969662"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367927"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>тип перечисления Ситесекуритилевел
 
@@ -25,12 +25,10 @@ ms.locfileid: "35969662"
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
 |потребление|1,1|Потребление.|
-|Медиумлов|2|Средняя — минимальная.|
+|медиумлов|2|Средняя — минимальная.|
 |medium|4|Средний.|
-|Медиумхигх|SP4|Умеренно высокий.|
+|медиумхигх|SP4|Умеренно высокий.|
 |высокоуровневых|17:00|Высокоуровневых.|
-
-
 
 
 

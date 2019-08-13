@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4aec0eca0c9eb722d9ecbea360df15109284063c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f79efea881a4176640be8ebdd87b6a51cd827c9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995323"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355824"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>Обновление Ембеддедсимактиватионкодепул
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995323"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,8 +55,8 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |displayName|Строка|Имя администратора внедренного пула кода активации SIM-карты.|
 |createdDateTime|DateTimeOffset|Время создания внедренного пула кода активации SIM-карты. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения пула кода активации внедренной SIM-карты. Обновленная сторона службы.|
-|Активатионкодес|Коллекция [ембеддедсимактиватионкоде](../resources/intune-esim-embeddedsimactivationcode.md)|Коды активации, принадлежащие этому пулу. Это свойство навигации используется для публикации кодов активации в Intune, но не может использоваться для считывания кодов активации из Intune.|
-|Активатионкодекаунт|Int32|Общее количество кодов активации, относящихся к этому пулу.|
+|активатионкодес|Коллекция [ембеддедсимактиватионкоде](../resources/intune-esim-embeddedsimactivationcode.md)|Коды активации, принадлежащие этому пулу. Это свойство навигации используется для публикации кодов активации в Intune, но не может использоваться для считывания кодов активации из Intune.|
+|активатионкодекаунт|Int32|Общее количество кодов активации, относящихся к этому пулу.|
 
 
 
@@ -111,6 +111,7 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
+
 
 
 

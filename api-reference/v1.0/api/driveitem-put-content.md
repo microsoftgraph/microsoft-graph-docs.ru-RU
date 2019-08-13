@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 'API простой отправки позволяет отправить содержимое нового файла или обновить содержимое существующего файла с помощью одного вызова API. '
 doc_type: apiPageType
-ms.openlocfilehash: 0653cf59ca3c67a3a941b2df0d654439da950bc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2918e1fddbd91fe843b4f2d02a470a90f798ec9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015364"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373415"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
 

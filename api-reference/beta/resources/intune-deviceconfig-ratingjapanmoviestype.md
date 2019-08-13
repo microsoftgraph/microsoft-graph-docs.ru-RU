@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae17593fdf05f34182fd6b53bfd60da3859c03ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8511194966f2bc0bb2a1de95ff0b554be714c232
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969816"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368235"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>тип перечисления Ратингжапанмовиестипе
 
@@ -23,14 +23,12 @@ ms.locfileid: "35969816"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|Аллблоккед|1,1|Не разрешать никакие видеоролики|
+|аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
+|аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|Подходит для всех возраста|
-|Паренталгуиданце|4|Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
+|паренталгуиданце|4|Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
 |agesAbove15|SP4|R15 + Classification подходит для зрителей от 15 или более ранних версий|
 |agesAbove18|17:00|R18 + Classification подходит для зрителей от 18 лет и старше|
-
-
 
 
 

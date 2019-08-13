@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3e7c9ce07c08e35f592558af00fbae614f5bbb5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cde441e551ef1bf6625e88e745d3392fbd7d3271
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994770"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357259"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Перечисление объектов iosManagedAppRegistration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994770"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -95,6 +95,7 @@ Content-Length: 1060
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 33e0e615a62f62a565196ba3a6c9c814695040e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8bfe6184b2427584c54094636ef7c71f857ec1f6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000538"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369404"
 ---
 # <a name="wifisecuritytype-enum-type"></a>тип перечисления Вифисекурититипе
 
@@ -24,13 +24,11 @@ ms.locfileid: "36000538"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |окно|нуль|Открыть (без проверки подлинности).|
-|Впаперсонал|1,1|WPA – личное.|
-|Впаентерприсе|2|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
+|впаперсонал|1,1|WPA – личное.|
+|впаентерприсе|2|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
 |WEP|4|WEP-шифрование.|
 |wpa2Personal|SP4|WPA2 — личное.|
 |wpa2Enterprise|17:00|WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип Виндовсвифиентерприсиапконфигуратион.|
-
-
 
 
 

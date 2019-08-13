@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdd9f7c487491c4e738ac623e8a45e8723cb20ce
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6918d5feea730006bb115688566f9e4dd76dfde2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994987"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357343"
 ---
 # <a name="get-androidmanagedappregistration"></a>Get androidManagedAppRegistration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994987"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -97,6 +97,7 @@ Content-Length: 1054
   }
 }
 ```
+
 
 
 

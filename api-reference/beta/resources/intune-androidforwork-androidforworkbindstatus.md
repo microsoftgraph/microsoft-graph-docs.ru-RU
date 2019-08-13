@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a70eccad58fe2f04089233c24b2e772062370165
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 31dabb675743cda0341e59f9c0af09d29ba95843
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971762"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367087"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>тип перечисления Андроидфорворкбиндстатус
 
@@ -23,12 +23,10 @@ ms.locfileid: "35971762"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотбаунд|нуль|Пока не задокументировано.|
+|нотбаунд|нуль|Пока не задокументировано.|
 |свободного|1,1|Пока не задокументировано.|
-|Баундандвалидатед|2|Пока не задокументировано.|
+|баундандвалидатед|2|Пока не задокументировано.|
 |Отмена привязки|4|Пока не задокументировано.|
-
-
 
 
 

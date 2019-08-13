@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6467ccf8b91bbaed783d7a8dbc5a203df93acad9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e2e51de75c04c6ebdad1c69b8fa43a9e5ee23c0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984302"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352681"
 ---
 # <a name="get-devicemanagementpartner"></a>Получение deviceManagementPartner
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984302"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -85,6 +85,7 @@ Content-Length: 756
   }
 }
 ```
+
 
 
 

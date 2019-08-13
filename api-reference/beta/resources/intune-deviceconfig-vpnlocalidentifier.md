@@ -4,12 +4,13 @@ description: Тип локального идентификатора VPN
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62dcdce3cfb4d5466d8c50a44ac5ee3ec825310a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: enumPageType
+ms.openlocfilehash: 0ae237e2734b3fa7603db1431944349a8cee295e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730638"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367689"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>тип перечисления Впнлокалидентифиер
 
@@ -22,11 +23,9 @@ ms.locfileid: "35730638"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Девицефкдн|нуль|Полное доменное имя устройства|
+|девицефкдн|нуль|Полное доменное имя устройства|
 |empty|1,1|переменная Empty|
-|Клиентцертификатесубжектнаме|2|Имя субъекта сертификата клиента|
-
-
+|клиентцертификатесубжектнаме|2|Имя субъекта сертификата клиента|
 
 
 

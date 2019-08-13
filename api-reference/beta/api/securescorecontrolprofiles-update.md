@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 3450422320cf1d80bdd4cfd2f7e67960c0bafdbc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0e6b78bc96d3b134eed529429be0d9b84945112e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978057"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364196"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление объектов secureScoreControlProfiles
 
@@ -50,8 +50,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.|
-|Тенантноте|String|Комментарии аналитика в элементе управления (для управления клиентом).|
-|Контролстатеупдатес| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|тенантноте|String|Комментарии аналитика в элементе управления (для управления клиентом).|
+|контролстатеупдатес| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик
@@ -84,7 +84,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
