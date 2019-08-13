@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: aa0ac75a74b7bba089b40826e4709f2c557f632e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7b1db98c98c1da5268b4019c20a3a1fe04851c74
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978777"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36361067"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>Привилежедролеассигнмент: Макеперманент
 
@@ -47,8 +47,8 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |причиной|string|Необязательно. Причина для совершения звонка.|
-|Тиккетнумбер|string|Необязательно. Регистрационный номер, связанный с этим действием.|
-|Тиккетсистем|string|Необязательно. Система билетов.|
+|тиккетнумбер|string|Необязательно. Регистрационный номер, связанный с этим действием.|
+|тиккетсистем|string|Необязательно. Система билетов.|
 
 ## <a name="response"></a>Отклик
 
@@ -79,7 +79,7 @@ Content-length: 110
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedroleassignment-makepermanent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedroleassignment-makepermanent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

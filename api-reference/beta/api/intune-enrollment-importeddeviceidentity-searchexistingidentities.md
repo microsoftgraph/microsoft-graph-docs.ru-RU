@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0fa9568578074de4439a07e06ae2981eb741e3a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d526c2a9c1b3b9dff3cd69af676b1a2fc7f1be8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985023"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356370"
 ---
 # <a name="searchexistingidentities-action"></a>Действие searchExistingIdentities
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985023"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Н/Д|
+|импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Н/Д|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 577
   ]
 }
 ```
+
 
 
 

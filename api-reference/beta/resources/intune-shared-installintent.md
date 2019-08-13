@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 77b2dcadade32a817f0cb482e32871660ad3b06f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3f8307445360a1b0dd43c8a164dd1f2d8032562
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010450"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348025"
 ---
 # <a name="installintent-enum-type"></a>тип перечисления Инсталлинтент
 
@@ -26,9 +26,7 @@ ms.locfileid: "36010450"
 |доступен|нуль|Доступная цель установки.|
 |Обязательный|1,1|Обязательная цель установки.|
 |установить|2|Удаление намерения установки.|
-|Аваилаблевисаутенроллмент|4|Доступно без установки регистрации.|
-
-
+|аваилаблевисаутенроллмент|4|Доступно без установки регистрации.|
 
 
 

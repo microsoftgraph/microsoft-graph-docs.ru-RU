@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9a443b477a54718867f923e3857ca1780e8cdb7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 428191f8c965a5a800eb0b30bc3a48cc7d729d85
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990577"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356125"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>Действие assignResourceAccountToDevice
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990577"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userPrincipalName|String|Пока не задокументировано.|
-|Аддрессаблеусернаме|String|Пока не задокументировано.|
-|Ресаурцеаккаунтнаме|String|Пока не задокументировано.|
+|аддрессаблеусернаме|String|Пока не задокументировано.|
+|ресаурцеаккаунтнаме|String|Пока не задокументировано.|
 
 
 
@@ -83,6 +83,7 @@ Content-length: 170
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

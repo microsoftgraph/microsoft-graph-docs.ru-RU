@@ -4,12 +4,13 @@ description: Задайте состояние задачи и вложите з
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b41581f24612cb59cf36deda55acadb3bf519135
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b504a3aa862db913c502276b01f264be86c81ce2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002296"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351667"
 ---
 # <a name="updatestatus-action"></a>действие updateStatus
 
@@ -26,7 +27,7 @@ ms.locfileid: "35002296"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,7 +51,7 @@ POST /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}/u
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|status|[Девицеаппманажементтаскстатус](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние|
+|status|[девицеаппманажементтаскстатус](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние|
 |ноте|String|Заметка|
 
 
@@ -79,6 +80,7 @@ Content-length: 52
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

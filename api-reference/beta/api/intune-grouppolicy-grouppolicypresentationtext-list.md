@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41a15f98b261179e040a3f7fb995a05d5a404aa3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a7b84c472653bc765c7b08e4173d150879bf133
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989408"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357742"
 ---
 # <a name="list-grouppolicypresentationtexts"></a>Список Граупполиципресентатионтекстс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989408"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -76,6 +76,7 @@ Content-Length: 258
   ]
 }
 ```
+
 
 
 

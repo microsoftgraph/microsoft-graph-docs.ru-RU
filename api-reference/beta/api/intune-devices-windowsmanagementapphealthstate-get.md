@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efd9deca0f914b4a47ea7bc1f95dc296aa724fd5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d51dd115f0d5726583ac88679cf6a3a22566a53b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985660"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348461"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>Получение Виндовсманажементапфеалсстате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985660"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,6 +80,7 @@ Content-Length: 382
   }
 }
 ```
+
 
 
 

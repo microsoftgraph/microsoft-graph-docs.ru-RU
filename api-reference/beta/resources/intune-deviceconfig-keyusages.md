@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 022cf71b844857e5abafcac8abb4cac3f07ea0d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b884a0783cb377e4ab424898d8a4997f71fd4c39
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970362"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356720"
 ---
 # <a name="keyusages-enum-type"></a>тип перечисления Кэйусажес
 
@@ -23,10 +23,8 @@ ms.locfileid: "35970362"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|КэйенЦифермент|1,1|Использование шифрования ключей.|
-|Дигиталсигнатуре|2|Использование цифровой подписи.|
-
-
+|кэйенЦифермент|1,1|Использование шифрования ключей.|
+|дигиталсигнатуре|2|Использование цифровой подписи.|
 
 
 

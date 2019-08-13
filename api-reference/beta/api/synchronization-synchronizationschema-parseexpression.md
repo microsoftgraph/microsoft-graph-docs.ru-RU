@@ -1,22 +1,22 @@
 ---
 title: 'Синчронизатионсчема: Парсикспрессион'
-description: '(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). '
+description: '(.. Объект/Resources/synchronization_attributemappingsource.md). '
 localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77590b277840ff322e71cf03dd71d2ba8d9f6f75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1677a75d83792b8e3f199a5a18970ff38ba0a923
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991144"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36363447"
 ---
 # <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). 
+Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/Resources/synchronization_attributemappingsource.md). 
 
 Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
@@ -47,8 +47,8 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |выражение               |String               |Выражение для синтаксического анализа.|
-|Тестинпутобжект          |[Експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательно.|
-|Таржетаттрибутедефинитион|[Аттрибутедефинитион](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этим выражением. Необязательный параметр.|
+|тестинпутобжект          |[експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательно.|
+|таржетаттрибутедефинитион|[аттрибутедефинитион](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этим выражением. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [парсикспрессионреспонсе](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.
@@ -121,7 +121,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-parseexpression-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

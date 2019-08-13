@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5e89e7f38f41e8c9fac7349a09f4b96b66bd869
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4ef4f4add4c881a7f24b4dc54cc4f065bb169ab
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994154"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353045"
 ---
 # <a name="setpriority-action"></a>Действие setPriority
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994154"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +78,7 @@ Content-length: 21
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
