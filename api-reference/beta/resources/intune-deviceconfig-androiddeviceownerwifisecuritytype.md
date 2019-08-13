@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 19d96ae6c56d0d37e857d6e9e1f0786f225e25e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b54a451ac3e4444d58ad6cdd66abba61d6d69fb4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971468"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334747"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>тип перечисления Андроиддевицеовнервифисекурититипе
 
@@ -25,10 +25,8 @@ ms.locfileid: "35971468"
 |:---|:---|:---|
 |окно|нуль|Открыть (без проверки подлинности).|
 |WEP|1,1|WEP-шифрование.|
-|Впаперсонал|2|WPA-личное/WPA2-личное.|
-|Впаентерприсе|SP4|WPA-предприятие/WPA2-предприятие. Для настройки параметров предприятия необходимо использовать тип Андроиддевицеовнерентерприсевификонфигуратион.|
-
-
+|впаперсонал|2|WPA-личное/WPA2-личное.|
+|впаентерприсе|SP4|WPA-предприятие/WPA2-предприятие. Для настройки параметров предприятия необходимо использовать тип Андроиддевицеовнерентерприсевификонфигуратион.|
 
 
 

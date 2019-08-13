@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cabdf21f697dd4be36fba34ffbe26eab1e37d288
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aea105164ce99bdb5a0f012c2a3b480b5f3a3221
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976490"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374465"
 ---
 # <a name="list-notebooks"></a>Список записных книжек
 

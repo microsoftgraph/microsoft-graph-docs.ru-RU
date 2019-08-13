@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe78ffd739f2b8cb926843333f8867b9dbb33944
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 235f9265fb69cb629c6f962b74bad38da7c3618f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961205"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329448"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Перечисление объектов microsoftStoreForBusinessApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961205"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -109,6 +109,7 @@ Content-Length: 1485
   ]
 }
 ```
+
 
 
 

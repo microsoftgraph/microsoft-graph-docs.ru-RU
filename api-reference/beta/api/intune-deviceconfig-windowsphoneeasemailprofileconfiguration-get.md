@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa1522e797474108ea59a7eed037142ac4013379
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acc7ba69e609350f0f37a514428ba3dd9f276776
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986465"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36338317"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Получение Виндовсфониасемаилпрофилеконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986465"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -121,6 +121,7 @@ Content-Length: 1850
   }
 }
 ```
+
 
 
 

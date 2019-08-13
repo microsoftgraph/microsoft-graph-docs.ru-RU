@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7ff6c47ac4ad12a3091deb5c6f736768cc082387
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58dff3acb944ba09ac8c5f4bdbcc9d916ee6ab68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998508"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332388"
 ---
 # <a name="grouppolicytype-enum-type"></a>тип перечисления Граупполицитипе
 
@@ -23,10 +23,8 @@ ms.locfileid: "35998508"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Адмксбаккед|нуль|Административные шаблоны групповой политики, встроенные в поставщика службы настройки политик (CSP).|
-|Адмксинжестед|1,1|Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
-
-
+|адмксбаккед|нуль|Административные шаблоны групповой политики, встроенные в поставщика службы настройки политик (CSP).|
+|адмксинжестед|1,1|Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
 
 
 

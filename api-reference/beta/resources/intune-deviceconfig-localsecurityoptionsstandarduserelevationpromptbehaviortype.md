@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c27c26f374d2fd27056f1dd10c7744969828eab5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd7752774fdebf40b057463b29c2542829d2c61b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970222"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325493"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионсстандардусерелеватионпромптбехавиортипе
 
@@ -24,11 +24,9 @@ ms.locfileid: "35970222"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Аутоматикаллиденелеватионрекуестс|1,1|Автоматическое отклонение запросов на повышение прав|
-|Промптфоркредентиалсонсесекуредесктоп|2|Запрос учетных данных на безопасном рабочем столе|
-|Промптфоркредентиалс|4|Запрос учетных данных|
-
-
+|аутоматикаллиденелеватионрекуестс|1,1|Автоматическое отклонение запросов на повышение прав|
+|промптфоркредентиалсонсесекуредесктоп|2|Запрос учетных данных на безопасном рабочем столе|
+|промптфоркредентиалс|4|Запрос учетных данных|
 
 
 

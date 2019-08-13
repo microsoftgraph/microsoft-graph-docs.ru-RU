@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5894930d905dfb8aa6b8e3e7cbe5ed7b5f1279f0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23a5e88126cdd7e8da1e086a66f5e1ecce2e1bda
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998487"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332304"
 ---
 # <a name="appmanagementlevel-enum-type"></a>тип перечисления Аппманажементлевел
 
@@ -26,9 +26,7 @@ ms.locfileid: "35998487"
 |неопределенные|нуль|Не определено.|
 |неуправляемые|1,1|Неуправляемые|
 |Корпоратив|2|КОРПОРАТИВ|
-|Андроидентерприсе|SP4|Android Enterprise|
-
-
+|андроидентерприсе|SP4|Android Enterprise|
 
 
 

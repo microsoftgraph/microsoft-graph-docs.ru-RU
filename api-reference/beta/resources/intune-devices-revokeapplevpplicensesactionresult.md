@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10b26592c859ba58ad4759492c34ca3626be32dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb54b4a8f96c35a623a67290b158ee07c9215c1f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999635"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36326795"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>Тип ресурса Ревокеапплевпплиценсесактионресулт
 
@@ -30,8 +30,8 @@ ms.locfileid: "35999635"
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|Тоталлиценсескаунт|Int32|Общее количество связанных лицензий Apple VPP|
-|Фаиледлиценсескаунт|Int32|Общее количество лицензий Apple VPP, которые не удалось отозвать|
+|тоталлиценсескаунт|Int32|Общее количество связанных лицензий Apple VPP|
+|фаиледлиценсескаунт|Int32|Общее количество лицензий Apple VPP, которые не удалось отозвать|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -54,8 +54,6 @@ ms.locfileid: "35999635"
   "failedLicensesCount": 1024
 }
 ```
-
-
 
 
 

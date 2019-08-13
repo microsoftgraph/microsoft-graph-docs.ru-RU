@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Моб
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3645172a0797b11dd08a0d37ef135d3116789e4
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 26edacdf301a43a422f50952ba1eba5c051cfdeb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34973637"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36329056"
 ---
 # <a name="list-mobileapprelationships"></a>Список Мобилеаппрелатионшипс
 
@@ -26,7 +27,7 @@ ms.locfileid: "34973637"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -75,6 +76,7 @@ Content-Length: 248
   ]
 }
 ```
+
 
 
 

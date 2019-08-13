@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 43a0884e8b229facaf98c06160430fb087a89e87
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: 99e6b7c1d41b05a8141f579562cb2b9813610dee
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245575"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369180"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 

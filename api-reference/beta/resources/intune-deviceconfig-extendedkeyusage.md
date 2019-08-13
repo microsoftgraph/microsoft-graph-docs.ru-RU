@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fbcaaf764a0b079df77d81d07e53094a8035e07
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d02154b9513e1ef3edac8cf823bd718d3e356691
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001340"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325584"
 ---
 # <a name="extendedkeyusage-resource-type"></a>Тип ресурса Екстендедкэйусаже
 
@@ -24,7 +24,7 @@ ms.locfileid: "36001340"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя расширенного использования ключа|
-|Обжектидентифиер|String|Идентификатор объекта расширенного использования ключа|
+|обжектидентифиер|String|Идентификатор объекта расширенного использования ключа|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -43,8 +43,6 @@ ms.locfileid: "36001340"
   "objectIdentifier": "String"
 }
 ```
-
-
 
 
 

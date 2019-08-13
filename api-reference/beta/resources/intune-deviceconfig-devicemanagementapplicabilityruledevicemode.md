@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8465f9276e573a44c2b7d80663d1de66bed83bef
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f53d9f676dd50c49fc5222f50c24c2c9a6d08e22
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002527"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36332864"
 ---
 # <a name="devicemanagementapplicabilityruledevicemode-resource-type"></a>Тип ресурса Девицеманажементаппликабилитируледевицемоде
 
@@ -22,9 +23,9 @@ ms.locfileid: "35002527"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Девицемоде|[windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)|Правило применимости для режима устройства. Возможные значения: `standardConfiguration`, `sModeConfiguration`.|
+|девицемоде|[windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)|Правило применимости для режима устройства. Возможные значения: `standardConfiguration`, `sModeConfiguration`.|
 |name|String|Имя объекта.|
-|ruleType|[Девицеманажементаппликабилитирулетипе](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
+|ruleType|[девицеманажементаппликабилитирулетипе](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -44,8 +45,6 @@ ms.locfileid: "35002527"
   "ruleType": "String"
 }
 ```
-
-
 
 
 

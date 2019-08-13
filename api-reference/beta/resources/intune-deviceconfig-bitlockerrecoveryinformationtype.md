@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ccb0e66cfdc1fb2c38c87210750a324052be656
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 19a3edd058b326f1627bb000eeca31267c834342
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011458"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333823"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>тип перечисления Битлоккеррековеринформатионтипе
 
@@ -23,10 +23,8 @@ ms.locfileid: "36011458"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Пассвордандкэй|1,1|Хранение паролей восстановления и пакетов ключевых ключей.|
-|Пассвордонли|2|Сохранять только пароли восстановления.|
-
-
+|пассвордандкэй|1,1|Хранение паролей восстановления и пакетов ключевых ключей.|
+|пассвордонли|2|Сохранять только пароли восстановления.|
 
 
 

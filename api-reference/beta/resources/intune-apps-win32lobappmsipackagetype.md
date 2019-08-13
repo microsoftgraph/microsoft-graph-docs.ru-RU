@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c5770c82f67c50c00ad4986168c79e370fbec757
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 101f7a96fc95f00a739dfcf27384a3668d170eed
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012284"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335636"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>тип перечисления win32LobAppMsiPackageType
 
@@ -23,11 +23,9 @@ ms.locfileid: "36012284"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Пермачине|нуль|Указывает пакет приложений для компьютера.|
+|пермачине|нуль|Указывает пакет приложений для компьютера.|
 |perUser|1,1|Указывает на пользовательский пакет приложения.|
-|Дуалпурпосе|2|Указывает пакет приложений с двумя целями.|
-
-
+|дуалпурпосе|2|Указывает пакет приложений с двумя целями.|
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение свойств и связей ресурса Drive.
 doc_type: apiPageType
-ms.openlocfilehash: 658db847b8e72c70e7445f673c721ae28ef2d145
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5118dedfde1126a01d445dd5a4c566ac8738902a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016533"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365022"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 

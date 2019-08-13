@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb79af0045c98dc630fbe2269c85180a46ac2ba0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f02f6e2f7fc1f53db388e765c2dd3b51330afd1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970516"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333123"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -55,8 +55,6 @@ ms.locfileid: "35970516"
   "ruleName": "String"
 }
 ```
-
-
 
 
 

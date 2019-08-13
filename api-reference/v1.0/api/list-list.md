@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции списков для сайта.
 doc_type: apiPageType
-ms.openlocfilehash: 060234e49943d01b1e4e992ddc41c5872ab1f775
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0535f1dcd38e67df71908291336eacbf8ced10b4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025542"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370681"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 

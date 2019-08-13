@@ -4,12 +4,13 @@ description: Содержит путь к файлу или папке для о
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90d620a13b6472960dad7ab6edd90b1d237387d2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: f57206e7fda4eedb55be1e4ceba89323084289dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34987323"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36335699"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>Тип ресурса win32LobAppFileSystemRequirement
 
@@ -26,11 +27,11 @@ ms.locfileid: "34987323"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|Детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
-|Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
 |check32BitOn64System|Boolean|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
-|Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
+|детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -53,8 +54,6 @@ ms.locfileid: "34987323"
   "detectionType": "String"
 }
 ```
-
-
 
 
 

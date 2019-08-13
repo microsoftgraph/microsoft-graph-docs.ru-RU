@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54495de0d31c9ccc36a663450d1e6e8a0605c85f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7328f061ab459fd02c088e403c7c46a3bc827c60
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011059"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36331590"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>Тип ресурса Нетворкманажементкондитион
 
@@ -27,7 +27,7 @@ ms.locfileid: "36011059"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Нетворкманажементкондитионс](../api/intune-fencing-networkmanagementcondition-list.md)|Коллекция [нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md)|Список свойств и связей объектов [нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md) .|
-|[Получение Нетворкманажементкондитион](../api/intune-fencing-networkmanagementcondition-get.md)|[Нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md)|Чтение свойств и связей объекта [нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md) .|
+|[Получение Нетворкманажементкондитион](../api/intune-fencing-networkmanagementcondition-get.md)|[нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md)|Чтение свойств и связей объекта [нетворкманажементкондитион](../resources/intune-fencing-networkmanagementcondition.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -39,12 +39,12 @@ ms.locfileid: "36011059"
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
-|Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|Манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
+|манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -69,8 +69,6 @@ ms.locfileid: "36011059"
   ]
 }
 ```
-
-
 
 
 

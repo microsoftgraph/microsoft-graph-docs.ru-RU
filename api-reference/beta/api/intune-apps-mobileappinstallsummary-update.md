@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b3625fb06aa5ed7a744dc58e09bbf83dd1605c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a503d48bdf5e8b72b33d2e2ff09c5db385d241f7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35960652"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336483"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "35960652"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,12 +56,12 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
 |notInstalledDeviceCount|Int32|Количество устройств, на которых не установлено это приложение.|
-|Пендингинсталлдевицекаунт|Int32|Количество устройств, которые были уведомлены об установке этого приложения.|
+|пендингинсталлдевицекаунт|Int32|Количество устройств, которые были уведомлены об установке этого приложения.|
 |installedUserCount|Int32|Количество пользователей, чьи устройства успешно выполнили установку этого приложения.|
 |failedUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не удалось установить это приложение.|
 |notApplicableUserCount|Int32|Количество пользователей, чьи устройства были неприменимы к этому приложению.|
 |notInstalledUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не установили это приложение.|
-|Пендингинсталлусеркаунт|Int32|Количество пользователей с 1 или больше устройств, которые были уведомлены об установке этого приложения и имеют 0 устройств с ошибками.|
+|пендингинсталлусеркаунт|Int32|Количество пользователей с 1 или больше устройств, которые были уведомлены об установке этого приложения и имеют 0 устройств с ошибками.|
 
 
 
@@ -114,6 +114,7 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
+
 
 
 

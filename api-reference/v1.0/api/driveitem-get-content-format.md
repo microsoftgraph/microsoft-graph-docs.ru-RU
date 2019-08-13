@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: С помощью этого API вы можете получить содержимое элемента в определенном формате.
 doc_type: apiPageType
-ms.openlocfilehash: 6472daba727cb412fb9c4ab3fa3e3b2160b560e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c2757a64e15865e8278fd38dfed49916dd71d133
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015497"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375081"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 

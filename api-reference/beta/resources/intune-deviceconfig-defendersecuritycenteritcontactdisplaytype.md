@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5c908a70f8bd120f4675c14d23b343845c6e46fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1deab5310fad6a18a6770990f7f84ae100134451
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970894"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333494"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
 
@@ -24,11 +24,9 @@ ms.locfileid: "35970894"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|Дисплайинаппандиннотификатионс|1,1|Отображение в приложении и в уведомлениях|
-|Дисплайонлинапп|2|Отображение только в приложении|
-|Дисплайонлиннотификатионс|4|Отображение только в уведомлениях|
-
-
+|дисплайинаппандиннотификатионс|1,1|Отображение в приложении и в уведомлениях|
+|дисплайонлинапп|2|Отображение только в приложении|
+|дисплайонлиннотификатионс|4|Отображение только в уведомлениях|
 
 
 

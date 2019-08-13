@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32336a0bc73c7d36ee4763dccbdc8a24197833ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0edaa623b080e7b5884b6fe7c3f8817a1c6aecca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999061"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327796"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса Outofboxexperiencesettings.
 
@@ -23,12 +23,12 @@ ms.locfileid: "35999061"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Хидепривацисеттингс|Boolean|Отображение или скрытие параметров конфиденциальности для пользователя|
-|Хидиула|Boolean|Отображение или скрытие лицензионного соглашения для пользователя|
-|userType|[Виндовсусертипе](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
+|хидепривацисеттингс|Boolean|Отображение или скрытие параметров конфиденциальности для пользователя|
+|хидиула|Boolean|Отображение или скрытие лицензионного соглашения для пользователя|
+|userType|[виндовсусертипе](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности присоединения AAD. Возможные значения: `singleUser`, `shared`.|
-|Скипкэйбоардселектионпаже|Boolean|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
-|Хидискапелинк|Boolean|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
+|скипкэйбоардселектионпаже|Boolean|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
+|хидискапелинк|Boolean|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -51,8 +51,6 @@ ms.locfileid: "35999061"
   "hideEscapeLink": true
 }
 ```
-
-
 
 
 

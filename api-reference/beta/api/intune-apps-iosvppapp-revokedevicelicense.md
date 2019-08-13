@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e064f84f994a34b8e5ddee34fd0adce4c205682f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a3a6323621ae1df5f59cd9525d1f9f73a69a4e7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951542"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337078"
 ---
 # <a name="revokedevicelicense-action"></a>Действие revokeAllLicenses
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951542"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Манажеддевицеид|String|DeviceId, для которого назначена лицензия на приложение|
-|Нотифиманажеддевицес|Boolean|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|манажеддевицеид|String|DeviceId, для которого назначена лицензия на приложение|
+|нотифиманажеддевицес|Boolean|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 
@@ -82,6 +82,7 @@ Content-length: 85
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

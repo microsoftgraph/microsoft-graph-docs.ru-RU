@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a441f2a022fc6e759c2e7339a3e5e090692d02d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 747642c47ee897b49a4da9bb819bf6a3e6090c5e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35961982"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36336945"
 ---
 # <a name="list-macosvppapps"></a>Список Макосвппаппс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35961982"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -127,6 +127,7 @@ Content-Length: 2294
   ]
 }
 ```
+
 
 
 

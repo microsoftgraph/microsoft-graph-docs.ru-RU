@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25500c70245083b1d069baecdbb2c7a88af4f880
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83ec7e6abdfcf262e6bbd1016cccb3f196ab319c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971587"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36334964"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингдевицесеттингстате
 
@@ -43,7 +43,7 @@ ms.locfileid: "35971587"
 |userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
 ## <a name="relationships"></a>Отношения
@@ -75,8 +75,6 @@ ms.locfileid: "35971587"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

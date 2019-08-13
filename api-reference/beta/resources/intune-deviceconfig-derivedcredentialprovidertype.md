@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cf1b19790108a5cbfb83e7ce16e42eaef691e792
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a6850d171d7298c514be5b9f92e261238df7642
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970677"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333242"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>тип перечисления Дериведкредентиалпровидертипе
 
@@ -24,12 +24,10 @@ ms.locfileid: "35970677"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен производный поставщик учетных данных.|
-|Ентрустдатакард|1,1|Ентруст.|
+|ентрустдатакард|1,1|Ентруст.|
 |пуребред|2|Агентство по оборонным информационным системам пуребред.|
-|Кстек|4|Кстек — Аусенткс.|
+|кстек|4|Кстек — Аусенткс.|
 |интерцеде|SP4|Интерцеде.|
-
-
 
 
 
