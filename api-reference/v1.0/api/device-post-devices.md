@@ -5,51 +5,51 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3fcaaa3e2da274848495eb0dfbb259ed4200db87
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37371e90bab46082c86664b3f6883a203e2448d7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002967"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370692"
 ---
-# <a name="create-device"></a><span data-ttu-id="80f74-103">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="80f74-103">Create device</span></span>
+# <a name="create-device"></a><span data-ttu-id="3ef93-103">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="3ef93-103">Create device</span></span>
 
-<span data-ttu-id="80f74-104">Создание и регистрация нового устройства в организации.</span><span class="sxs-lookup"><span data-stu-id="80f74-104">Create and register a new device in the organization.</span></span>
+<span data-ttu-id="3ef93-104">Создание и регистрация нового устройства в организации.</span><span class="sxs-lookup"><span data-stu-id="3ef93-104">Create and register a new device in the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="80f74-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="80f74-105">Permissions</span></span>
-<span data-ttu-id="80f74-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80f74-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3ef93-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3ef93-105">Permissions</span></span>
+<span data-ttu-id="3ef93-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3ef93-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="80f74-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="80f74-108">Permission type</span></span>      | <span data-ttu-id="80f74-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="80f74-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3ef93-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3ef93-108">Permission type</span></span>      | <span data-ttu-id="3ef93-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3ef93-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="80f74-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="80f74-110">Delegated (work or school account)</span></span> | <span data-ttu-id="80f74-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="80f74-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="80f74-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="80f74-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80f74-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80f74-113">Not supported.</span></span>    |
-|<span data-ttu-id="80f74-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="80f74-114">Application</span></span> | <span data-ttu-id="80f74-115">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80f74-115">Device.ReadWrite.All</span></span> |
+|<span data-ttu-id="3ef93-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3ef93-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3ef93-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3ef93-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3ef93-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3ef93-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ef93-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3ef93-113">Not supported.</span></span>    |
+|<span data-ttu-id="3ef93-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3ef93-114">Application</span></span> | <span data-ttu-id="3ef93-115">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ef93-115">Device.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="80f74-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="80f74-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3ef93-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3ef93-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="80f74-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="80f74-117">Request headers</span></span>
-| <span data-ttu-id="80f74-118">Имя</span><span class="sxs-lookup"><span data-stu-id="80f74-118">Name</span></span>       | <span data-ttu-id="80f74-119">Тип</span><span class="sxs-lookup"><span data-stu-id="80f74-119">Type</span></span> | <span data-ttu-id="80f74-120">Описание</span><span class="sxs-lookup"><span data-stu-id="80f74-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3ef93-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3ef93-117">Request headers</span></span>
+| <span data-ttu-id="3ef93-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3ef93-118">Name</span></span>       | <span data-ttu-id="3ef93-119">Тип</span><span class="sxs-lookup"><span data-stu-id="3ef93-119">Type</span></span> | <span data-ttu-id="3ef93-120">Описание</span><span class="sxs-lookup"><span data-stu-id="3ef93-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="80f74-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="80f74-121">Authorization</span></span>  | <span data-ttu-id="80f74-122">string</span><span class="sxs-lookup"><span data-stu-id="80f74-122">string</span></span>  | <span data-ttu-id="80f74-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="80f74-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="80f74-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="80f74-125">Content-type</span></span> | <span data-ttu-id="80f74-126">string</span><span class="sxs-lookup"><span data-stu-id="80f74-126">string</span></span> | <span data-ttu-id="80f74-127">application/json</span><span class="sxs-lookup"><span data-stu-id="80f74-127">application/json</span></span> |
+| <span data-ttu-id="3ef93-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3ef93-121">Authorization</span></span>  | <span data-ttu-id="3ef93-122">string</span><span class="sxs-lookup"><span data-stu-id="3ef93-122">string</span></span>  | <span data-ttu-id="3ef93-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3ef93-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3ef93-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3ef93-125">Content-type</span></span> | <span data-ttu-id="3ef93-126">string</span><span class="sxs-lookup"><span data-stu-id="3ef93-126">string</span></span> | <span data-ttu-id="3ef93-127">application/json</span><span class="sxs-lookup"><span data-stu-id="3ef93-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="80f74-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="80f74-128">Request body</span></span>
-<span data-ttu-id="80f74-129">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80f74-129">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3ef93-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3ef93-128">Request body</span></span>
+<span data-ttu-id="3ef93-129">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3ef93-129">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="80f74-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="80f74-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3ef93-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ef93-130">Response</span></span>
 
-<span data-ttu-id="80f74-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="80f74-131">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+<span data-ttu-id="3ef93-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3ef93-131">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="80f74-132">Пример</span><span class="sxs-lookup"><span data-stu-id="80f74-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="80f74-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="80f74-133">Request</span></span>
-<span data-ttu-id="80f74-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="80f74-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3ef93-132">Пример</span><span class="sxs-lookup"><span data-stu-id="3ef93-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3ef93-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="3ef93-133">Request</span></span>
+<span data-ttu-id="3ef93-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3ef93-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="80f74-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="80f74-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3ef93-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="3ef93-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -73,27 +73,27 @@ Content-type: application/json
   "operatingSystemVersion":"1"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="80f74-136">C#</span><span class="sxs-lookup"><span data-stu-id="80f74-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3ef93-136">C#</span><span class="sxs-lookup"><span data-stu-id="3ef93-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-device-from-devices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="80f74-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="80f74-137">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3ef93-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ef93-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-device-from-devices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="80f74-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="80f74-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3ef93-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3ef93-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-device-from-devices-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="80f74-139">Java</span><span class="sxs-lookup"><span data-stu-id="80f74-139">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="3ef93-139">Java</span><span class="sxs-lookup"><span data-stu-id="3ef93-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-device-from-devices-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="80f74-140">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80f74-140">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="80f74-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="80f74-141">Response</span></span>
-<span data-ttu-id="80f74-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="80f74-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3ef93-140">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3ef93-140">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="3ef93-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ef93-141">Response</span></span>
+<span data-ttu-id="3ef93-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3ef93-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
