@@ -5,28 +5,28 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 63dc61730813cd218dc17cb019b46ef7ea8a701a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75e97f9e3f9917b56e0f990e2d1b74278a25e3ff
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975909"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375669"
 ---
-# <a name="get-recent-user-activities"></a><span data-ttu-id="1b69f-109">Получение последних действий пользователя</span><span class="sxs-lookup"><span data-stu-id="1b69f-109">Get recent user activities</span></span>
+# <a name="get-recent-user-activities"></a><span data-ttu-id="b623f-109">Получение последних действий пользователя</span><span class="sxs-lookup"><span data-stu-id="b623f-109">Get recent user activities</span></span>
 
-<span data-ttu-id="1b69f-110">Получение последних действий для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="1b69f-110">Get recent activities for a given user.</span></span> <span data-ttu-id="1b69f-111">Эта функция OData имеет некоторые варианты поведения по умолчанию, которые могут работать так же, как и "самый последний использованный" API.</span><span class="sxs-lookup"><span data-stu-id="1b69f-111">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="1b69f-112">Служба будет запрашивать последние [historyitem](../resources/projectrome-historyitem.md), а затем извлекать эти связанные действия.</span><span class="sxs-lookup"><span data-stu-id="1b69f-112">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="1b69f-113">Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**.</span><span class="sxs-lookup"><span data-stu-id="1b69f-113">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="1b69f-114">Это означает, что действия без **historyitem** не будут включены в ответ.</span><span class="sxs-lookup"><span data-stu-id="1b69f-114">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="1b69f-115">Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением.</span><span class="sxs-lookup"><span data-stu-id="1b69f-115">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="1b69f-116">Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия.</span><span class="sxs-lookup"><span data-stu-id="1b69f-116">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="1b69f-117">Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.</span><span class="sxs-lookup"><span data-stu-id="1b69f-117">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="b623f-110">Получение последних действий для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="b623f-110">Get recent activities for a given user.</span></span> <span data-ttu-id="b623f-111">Эта функция OData имеет некоторые варианты поведения по умолчанию, которые могут работать так же, как и "самый последний использованный" API.</span><span class="sxs-lookup"><span data-stu-id="b623f-111">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="b623f-112">Служба будет запрашивать последние [historyitem](../resources/projectrome-historyitem.md), а затем извлекать эти связанные действия.</span><span class="sxs-lookup"><span data-stu-id="b623f-112">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="b623f-113">Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**.</span><span class="sxs-lookup"><span data-stu-id="b623f-113">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="b623f-114">Это означает, что действия без **historyitem** не будут включены в ответ.</span><span class="sxs-lookup"><span data-stu-id="b623f-114">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="b623f-115">Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением.</span><span class="sxs-lookup"><span data-stu-id="b623f-115">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="b623f-116">Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия.</span><span class="sxs-lookup"><span data-stu-id="b623f-116">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="b623f-117">Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.</span><span class="sxs-lookup"><span data-stu-id="b623f-117">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1b69f-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b69f-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b623f-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b623f-118">Permissions</span></span>
 
-<span data-ttu-id="1b69f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b69f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b623f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b623f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1b69f-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b69f-121">Permission type</span></span>      | <span data-ttu-id="1b69f-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b69f-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b623f-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b623f-121">Permission type</span></span>      | <span data-ttu-id="b623f-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b623f-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b69f-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b69f-123">Delegated (work or school account)</span></span> | <span data-ttu-id="1b69f-124">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="1b69f-124">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="1b69f-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b69f-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b69f-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="1b69f-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="1b69f-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1b69f-127">Application</span></span> | <span data-ttu-id="1b69f-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b69f-128">Not supported.</span></span> |
+|<span data-ttu-id="b623f-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b623f-123">Delegated (work or school account)</span></span> | <span data-ttu-id="b623f-124">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="b623f-124">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="b623f-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b623f-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b623f-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="b623f-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="b623f-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b623f-127">Application</span></span> | <span data-ttu-id="b623f-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b623f-128">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1b69f-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1b69f-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b623f-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b623f-129">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,15 +34,15 @@ ms.locfileid: "35975909"
 GET /me/activities/recent
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1b69f-130">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1b69f-130">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b623f-130">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b623f-130">Optional query parameters</span></span>
 
-<span data-ttu-id="1b69f-131">Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1b69f-131">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="1b69f-132">Поддерживаются следующие параметры запросов:</span><span class="sxs-lookup"><span data-stu-id="1b69f-132">The following query parameters are supported:</span></span>
+<span data-ttu-id="b623f-131">Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b623f-131">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="b623f-132">Поддерживаются следующие параметры запросов:</span><span class="sxs-lookup"><span data-stu-id="b623f-132">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="1b69f-133">$expand для свойства навигации **historyitem** .</span><span class="sxs-lookup"><span data-stu-id="1b69f-133">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="1b69f-134">$top, чтобы ограничить максимальное количество элементов на страницах.</span><span class="sxs-lookup"><span data-stu-id="1b69f-134">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="1b69f-135">$filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.</span><span class="sxs-lookup"><span data-stu-id="1b69f-135">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="b623f-133">$expand для свойства навигации **historyitem** .</span><span class="sxs-lookup"><span data-stu-id="b623f-133">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="b623f-134">$top, чтобы ограничить максимальное количество элементов на страницах.</span><span class="sxs-lookup"><span data-stu-id="b623f-134">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="b623f-135">$filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.</span><span class="sxs-lookup"><span data-stu-id="b623f-135">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="1b69f-136">Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.</span><span class="sxs-lookup"><span data-stu-id="1b69f-136">The following are some examples of supported queries with URL encoding.</span></span>
+<span data-ttu-id="b623f-136">Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.</span><span class="sxs-lookup"><span data-stu-id="b623f-136">The following are some examples of supported queries with URL encoding.</span></span>
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -52,28 +52,28 @@ GET /me/activities/recent
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1b69f-137">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1b69f-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b623f-137">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b623f-137">Request headers</span></span>
 
-|<span data-ttu-id="1b69f-138">Имя</span><span class="sxs-lookup"><span data-stu-id="1b69f-138">Name</span></span> | <span data-ttu-id="1b69f-139">Тип</span><span class="sxs-lookup"><span data-stu-id="1b69f-139">Type</span></span> | <span data-ttu-id="1b69f-140">Описание</span><span class="sxs-lookup"><span data-stu-id="1b69f-140">Description</span></span>|
+|<span data-ttu-id="b623f-138">Имя</span><span class="sxs-lookup"><span data-stu-id="b623f-138">Name</span></span> | <span data-ttu-id="b623f-139">Тип</span><span class="sxs-lookup"><span data-stu-id="b623f-139">Type</span></span> | <span data-ttu-id="b623f-140">Описание</span><span class="sxs-lookup"><span data-stu-id="b623f-140">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="1b69f-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="1b69f-141">Authorization</span></span> | <span data-ttu-id="1b69f-142">string</span><span class="sxs-lookup"><span data-stu-id="1b69f-142">string</span></span> | <span data-ttu-id="1b69f-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b69f-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="b623f-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="b623f-141">Authorization</span></span> | <span data-ttu-id="b623f-142">string</span><span class="sxs-lookup"><span data-stu-id="b623f-142">string</span></span> | <span data-ttu-id="b623f-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b623f-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1b69f-145">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1b69f-145">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b623f-145">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b623f-145">Request body</span></span>
 
-<span data-ttu-id="1b69f-146">Не указывайте текст запроса.</span><span class="sxs-lookup"><span data-stu-id="1b69f-146">Do not specify a request body.</span></span>
+<span data-ttu-id="b623f-146">Не указывайте текст запроса.</span><span class="sxs-lookup"><span data-stu-id="b623f-146">Do not specify a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1b69f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b69f-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b623f-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="b623f-147">Response</span></span>
 
-<span data-ttu-id="1b69f-148">В случае успешного выполнения этот метод возвращает `200 OK` код отклика с последними действиями пользователя для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="1b69f-148">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
+<span data-ttu-id="b623f-148">В случае успешного выполнения этот метод возвращает `200 OK` код отклика с последними действиями пользователя для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="b623f-148">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1b69f-149">Пример</span><span class="sxs-lookup"><span data-stu-id="1b69f-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b623f-149">Пример</span><span class="sxs-lookup"><span data-stu-id="b623f-149">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1b69f-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b69f-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b623f-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="b623f-150">Request</span></span>
 
-<span data-ttu-id="1b69f-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1b69f-151">The following is an example of the request.</span></span>
+<span data-ttu-id="b623f-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b623f-151">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1b69f-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="1b69f-152">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b623f-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="b623f-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_recent_activities"
@@ -82,28 +82,28 @@ GET /me/activities/recent
 ```http
 GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1b69f-153">C#</span><span class="sxs-lookup"><span data-stu-id="1b69f-153">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b623f-153">C#</span><span class="sxs-lookup"><span data-stu-id="b623f-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recent-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1b69f-154">Javascript</span><span class="sxs-lookup"><span data-stu-id="1b69f-154">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b623f-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b623f-154">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recent-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1b69f-155">Цель — C</span><span class="sxs-lookup"><span data-stu-id="1b69f-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b623f-155">Цель — C</span><span class="sxs-lookup"><span data-stu-id="b623f-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recent-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="1b69f-156">Java</span><span class="sxs-lookup"><span data-stu-id="1b69f-156">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="b623f-156">Java</span><span class="sxs-lookup"><span data-stu-id="b623f-156">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-recent-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1b69f-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b69f-157">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b623f-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="b623f-157">Response</span></span>
 
-<span data-ttu-id="1b69f-158">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="1b69f-158">The following is an example of the response.</span></span>
+<span data-ttu-id="b623f-158">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="b623f-158">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

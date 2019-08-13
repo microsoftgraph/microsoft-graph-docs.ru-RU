@@ -5,59 +5,59 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c42138f0e25f5fdecb5d4308245863ce72e7007
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a33af09a20228473bed2d21869746f6d85245ea7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026609"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372597"
 ---
-# <a name="user-reminderview"></a><span data-ttu-id="9e443-103">user: reminderView</span><span class="sxs-lookup"><span data-stu-id="9e443-103">user: reminderView</span></span>
-<span data-ttu-id="9e443-104">Возвращает список напоминаний о событиях в календаре пользователя в заданных время начала и окончания.</span><span class="sxs-lookup"><span data-stu-id="9e443-104">Return a list of event reminders in a user calendar within the specified start and end times.</span></span> 
+# <a name="user-reminderview"></a><span data-ttu-id="31419-103">user: reminderView</span><span class="sxs-lookup"><span data-stu-id="31419-103">user: reminderView</span></span>
+<span data-ttu-id="31419-104">Возвращает список напоминаний о событиях в календаре пользователя в заданных время начала и окончания.</span><span class="sxs-lookup"><span data-stu-id="31419-104">Return a list of event reminders in a user calendar within the specified start and end times.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="9e443-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9e443-105">Permissions</span></span>
-<span data-ttu-id="9e443-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e443-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="31419-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="31419-105">Permissions</span></span>
+<span data-ttu-id="31419-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="31419-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9e443-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9e443-108">Permission type</span></span>      | <span data-ttu-id="9e443-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9e443-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="31419-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="31419-108">Permission type</span></span>      | <span data-ttu-id="31419-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="31419-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9e443-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9e443-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9e443-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9e443-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="9e443-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9e443-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e443-113">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9e443-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="9e443-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9e443-114">Application</span></span> | <span data-ttu-id="9e443-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9e443-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="31419-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="31419-110">Delegated (work or school account)</span></span> | <span data-ttu-id="31419-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="31419-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="31419-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="31419-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31419-113">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="31419-113">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="31419-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="31419-114">Application</span></span> | <span data-ttu-id="31419-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="31419-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9e443-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9e443-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31419-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="31419-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="9e443-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="9e443-117">Function parameters</span></span>
-<span data-ttu-id="9e443-118">В URL-адресе запроса укажите перечисленные ниже параметры функции и их значения.</span><span class="sxs-lookup"><span data-stu-id="9e443-118">In the request URL, provide the following function parameters with values.</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="31419-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="31419-117">Function parameters</span></span>
+<span data-ttu-id="31419-118">В URL-адресе запроса укажите перечисленные ниже параметры функции и их значения.</span><span class="sxs-lookup"><span data-stu-id="31419-118">In the request URL, provide the following function parameters with values.</span></span>
 
-| <span data-ttu-id="9e443-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="9e443-119">Parameter</span></span>    | <span data-ttu-id="9e443-120">Тип</span><span class="sxs-lookup"><span data-stu-id="9e443-120">Type</span></span>   |<span data-ttu-id="9e443-121">Описание</span><span class="sxs-lookup"><span data-stu-id="9e443-121">Description</span></span>|
+| <span data-ttu-id="31419-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="31419-119">Parameter</span></span>    | <span data-ttu-id="31419-120">Тип</span><span class="sxs-lookup"><span data-stu-id="31419-120">Type</span></span>   |<span data-ttu-id="31419-121">Описание</span><span class="sxs-lookup"><span data-stu-id="31419-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9e443-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="9e443-122">startDateTime</span></span>|<span data-ttu-id="9e443-123">String</span><span class="sxs-lookup"><span data-stu-id="9e443-123">String</span></span>|<span data-ttu-id="9e443-p102">Дата и время начала события, для которого настроено напоминание. Значение представлено в формате ISO 8601, например "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="9e443-p102">The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="9e443-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="9e443-126">endDateTime</span></span>|<span data-ttu-id="9e443-127">String</span><span class="sxs-lookup"><span data-stu-id="9e443-127">String</span></span>|<span data-ttu-id="9e443-p103">Дата и время окончания события, для которого настроено напоминание. Значение представлено в формате ISO 8601, например "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="9e443-p103">The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="31419-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="31419-122">startDateTime</span></span>|<span data-ttu-id="31419-123">String</span><span class="sxs-lookup"><span data-stu-id="31419-123">String</span></span>|<span data-ttu-id="31419-p102">Дата и время начала события, для которого настроено напоминание. Значение представлено в формате ISO 8601, например "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="31419-p102">The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="31419-126">endDateTime</span><span class="sxs-lookup"><span data-stu-id="31419-126">endDateTime</span></span>|<span data-ttu-id="31419-127">String</span><span class="sxs-lookup"><span data-stu-id="31419-127">String</span></span>|<span data-ttu-id="31419-p103">Дата и время окончания события, для которого настроено напоминание. Значение представлено в формате ISO 8601, например "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="31419-p103">The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="9e443-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9e443-130">Request headers</span></span>
-| <span data-ttu-id="9e443-131">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9e443-131">Header</span></span>       | <span data-ttu-id="9e443-132">Значение</span><span class="sxs-lookup"><span data-stu-id="9e443-132">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="31419-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="31419-130">Request headers</span></span>
+| <span data-ttu-id="31419-131">Заголовок</span><span class="sxs-lookup"><span data-stu-id="31419-131">Header</span></span>       | <span data-ttu-id="31419-132">Значение</span><span class="sxs-lookup"><span data-stu-id="31419-132">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="9e443-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9e443-133">Authorization</span></span>  | <span data-ttu-id="9e443-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9e443-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9e443-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9e443-136">Content-Type</span></span>   | <span data-ttu-id="9e443-137">application/json</span><span class="sxs-lookup"><span data-stu-id="9e443-137">application/json</span></span> |
-| <span data-ttu-id="9e443-138">Prefer</span><span class="sxs-lookup"><span data-stu-id="9e443-138">Prefer</span></span> | <span data-ttu-id="9e443-p105">{Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.</span><span class="sxs-lookup"><span data-stu-id="9e443-p105">{Time-zone}. Optional, UTC assumed if absent.</span></span>|
+| <span data-ttu-id="31419-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="31419-133">Authorization</span></span>  | <span data-ttu-id="31419-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="31419-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="31419-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="31419-136">Content-Type</span></span>   | <span data-ttu-id="31419-137">application/json</span><span class="sxs-lookup"><span data-stu-id="31419-137">application/json</span></span> |
+| <span data-ttu-id="31419-138">Prefer</span><span class="sxs-lookup"><span data-stu-id="31419-138">Prefer</span></span> | <span data-ttu-id="31419-p105">{Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.</span><span class="sxs-lookup"><span data-stu-id="31419-p105">{Time-zone}. Optional, UTC assumed if absent.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9e443-141">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9e443-141">Request body</span></span>
-<span data-ttu-id="9e443-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9e443-142">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31419-141">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="31419-141">Request body</span></span>
+<span data-ttu-id="31419-142">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="31419-142">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9e443-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="9e443-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="31419-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="31419-143">Response</span></span>
 
-<span data-ttu-id="9e443-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9e443-144">If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.</span></span>
+<span data-ttu-id="31419-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="31419-144">If successful, this method returns `200 OK` response code and [reminder](../resources/reminder.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9e443-145">Пример</span><span class="sxs-lookup"><span data-stu-id="9e443-145">Example</span></span>
-<span data-ttu-id="9e443-146">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="9e443-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="9e443-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="9e443-147">Request</span></span>
-<span data-ttu-id="9e443-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9e443-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="31419-145">Пример</span><span class="sxs-lookup"><span data-stu-id="31419-145">Example</span></span>
+<span data-ttu-id="31419-146">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="31419-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="31419-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="31419-147">Request</span></span>
+<span data-ttu-id="31419-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="31419-148">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9e443-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="9e443-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="31419-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="31419-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_reminderview"
@@ -65,27 +65,27 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ```http
 GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9e443-150">C#</span><span class="sxs-lookup"><span data-stu-id="9e443-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="31419-150">C#</span><span class="sxs-lookup"><span data-stu-id="31419-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reminderview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9e443-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="9e443-151">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="31419-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="31419-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reminderview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9e443-152">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9e443-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="31419-152">Цель — C</span><span class="sxs-lookup"><span data-stu-id="31419-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reminderview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9e443-153">Java</span><span class="sxs-lookup"><span data-stu-id="9e443-153">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="31419-153">Java</span><span class="sxs-lookup"><span data-stu-id="31419-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-reminderview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="9e443-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="9e443-154">Response</span></span>
-<span data-ttu-id="9e443-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9e443-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="31419-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="31419-154">Response</span></span>
+<span data-ttu-id="31419-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="31419-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
