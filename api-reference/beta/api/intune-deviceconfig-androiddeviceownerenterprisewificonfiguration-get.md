@@ -1,24 +1,24 @@
 ---
-title: Получение Андроидомакпконфигуратион
-description: Чтение свойств и связей объекта Андроидомакпконфигуратион.
+title: Получение Андроиддевицеовнерентерприсевификонфигуратион
+description: Чтение свойств и связей объекта Андроиддевицеовнерентерприсевификонфигуратион.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 203a0ea30b68c223326b221d00bf9c1f70ac2a79
+ms.openlocfilehash: a19ca9cb4c4a06da2358857fcd7b131a183d42a1
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311552"
+ms.locfileid: "36317041"
 ---
-# <a name="get-androidomacpconfiguration"></a>Получение Андроидомакпконфигуратион
+# <a name="get-androiddeviceownerenterprisewificonfiguration"></a>Получение Андроиддевицеовнерентерприсевификонфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [андроидомакпконфигуратион](../resources/intune-deviceconfig-androidomacpconfiguration.md) .
+Чтение свойств и связей объекта [андроиддевицеовнерентерприсевификонфигуратион](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидомакпконфигуратион](../resources/intune-deviceconfig-androidomacpconfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроиддевицеовнерентерприсевификонфигуратион](../resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,12 +68,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1336
+Content-Length: 1891
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.androidOmaCpConfiguration",
-    "id": "5f682e4a-2e4a-5f68-4a2e-685f4a2e685f",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration",
+    "id": "7ef0d9c3-d9c3-7ef0-c3d9-f07ec3d9f07e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,7 +104,18 @@ Content-Length: 1336
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
+    "networkName": "Network Name value",
+    "ssid": "Ssid value",
+    "connectAutomatically": true,
+    "connectWhenNetworkNameIsHidden": true,
+    "wiFiSecurityType": "wep",
+    "preSharedKey": "Pre Shared Key value",
+    "preSharedKeyIsSet": true,
+    "eapType": "eapTtls",
+    "authenticationMethod": "usernameAndPassword",
+    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
+    "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
   }
 }
 ```

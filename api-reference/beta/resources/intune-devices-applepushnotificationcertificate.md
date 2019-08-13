@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d4a5725c6cd046c4baa34316f74a90b4c9fb05f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90e7ede759d9df4197aa193495d8aea26996766e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000048"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319281"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -35,8 +35,8 @@ ms.locfileid: "36000048"
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|Цертификатеуплоадстатус|String|Состояние отправки сертификата.|
-|Цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
+|цертификатеуплоадстатус|String|Состояние отправки сертификата.|
+|цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
 |certificate|String|Н/Д|
 
 ## <a name="relationships"></a>Отношения
@@ -63,8 +63,6 @@ ms.locfileid: "36000048"
   "certificate": "String"
 }
 ```
-
-
 
 
 

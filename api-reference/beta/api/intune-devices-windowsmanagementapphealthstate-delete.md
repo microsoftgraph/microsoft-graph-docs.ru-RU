@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd9cb8e9ef8a2a766460efeccd5833041feeaf40
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65a23a80f16d6ade0801d7857a957b7e956b5592
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981271"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309858"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>Удаление Виндовсманажементапфеалсстате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981271"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

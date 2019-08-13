@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 56ffe34e00057fd0c3afe64c519e8fffceb55683
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47b3497514b455e7e14d954098d2a13f7d55f9fa
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944422"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317711"
 ---
 # <a name="call-redirect"></a>вызов: redirect
 
@@ -45,10 +45,10 @@ POST /applications/{id}/calls/{id}/redirect
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |targets|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления.|
-|Таржетдиспоситион|String|Возможные значения:`default`|
+|таржетдиспоситион|String|Возможные значения:`default`|
 |timeout|Int32|Время ожидания в секундах для операции перенаправления.|
-|Масккалли|Boolean|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
-|Масккаллер|Boolean|Указывает, следует ли маскировать вызывающий абонент.|
+|масккалли|Boolean|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
+|масккаллер|Boolean|Указывает, следует ли маскировать вызывающий абонент.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика
@@ -96,7 +96,7 @@ Content-Length: 515
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

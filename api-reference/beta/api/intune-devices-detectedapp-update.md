@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97aba8b8090795470342ded793131f482e4936e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3521af853907a4b1397b34cc0d7e975aa65c0bd0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986136"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310579"
 ---
 # <a name="update-detectedapp"></a>Обновление объекта detectedApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986136"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -97,6 +97,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

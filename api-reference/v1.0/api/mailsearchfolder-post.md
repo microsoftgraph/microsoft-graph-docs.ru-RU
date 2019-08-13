@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8555760088fb1130485a0f864f88f4d1a4f30d83
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6e3815af104187a4267585586f7c7443dd8131f8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022931"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374904"
 ---
 # <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
@@ -52,9 +52,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
 | displayName | String | Отображаемое имя новой папки.|
-| Инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true`означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false`означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
-| Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
-| Филтеркуери | String | Запрос OData для фильтрации сообщений. |
+| инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true`означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false`означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
+| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
+| филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 
@@ -90,7 +90,7 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,24 +1,24 @@
 ---
-title: Получение Андроидомакпконфигуратион
-description: Чтение свойств и связей объекта Андроидомакпконфигуратион.
+title: Получение Андроиддевицеовнертрустедрутцертификате
+description: Чтение свойств и связей объекта Андроиддевицеовнертрустедрутцертификате.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 203a0ea30b68c223326b221d00bf9c1f70ac2a79
+ms.openlocfilehash: c6e8579abeb43c5bf84047adc4e70adb73c9ac07
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311552"
+ms.locfileid: "36317031"
 ---
-# <a name="get-androidomacpconfiguration"></a>Получение Андроидомакпконфигуратион
+# <a name="get-androiddeviceownertrustedrootcertificate"></a>Получение Андроиддевицеовнертрустедрутцертификате
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [андроидомакпконфигуратион](../resources/intune-deviceconfig-androidomacpconfiguration.md) .
+Чтение свойств и связей объекта [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,9 +35,8 @@ ms.locfileid: "36311552"
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,14 +52,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидомакпконфигуратион](../resources/intune-deviceconfig-androidomacpconfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроиддевицеовнертрустедрутцертификате](../resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerCertificateProfileBase/rootCertificate
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,12 +67,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1336
+Content-Length: 1410
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.androidOmaCpConfiguration",
-    "id": "5f682e4a-2e4a-5f68-4a2e-685f4a2e685f",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerTrustedRootCertificate",
+    "id": "6efc1a55-1a55-6efc-551a-fc6e551afc6e",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,7 +103,8 @@ Content-Length: 1336
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
+    "trustedRootCertificate": "dHJ1c3RlZFJvb3RDZXJ0aWZpY2F0ZQ==",
+    "certFileName": "Cert File Name value"
   }
 }
 ```

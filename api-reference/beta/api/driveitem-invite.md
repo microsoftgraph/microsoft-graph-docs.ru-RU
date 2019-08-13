@@ -6,12 +6,12 @@ title: Отправка приглашения на доступ к элемен
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 116024447d21edc353f8d774c30d32aae8c4e8fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ccd80a31ade0be6fc5e63002d02dd7e8f2235e87
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957085"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324360"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -105,7 +105,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -213,11 +213,11 @@ Content-type: application/json
 
 | Код                           | Описание
 |:-------------------------------|:--------------------------------------------------------------------------------------
-| Аккаунтверификатионрекуиред    | Для разблокировки уведомлений об отправке требуется проверка учетной записи.
-| Хипчеккрекуиред               | Необходимо выполнить разрешение ГИП (предотвращение проникновения на узел) — разрешить отправку уведомлений об отправке.
-| Ексчанжеинвалидусер            | Не найден почтовый ящик текущего пользователя.
-| Ексчанжеаутофмаилбокскуота      | Недостаточно квоты.
-| ЕксчанжемаксреЦипиентс          | Превышено максимальное количество получателей, которые могут быть отправлены в одно и то же время.
+| аккаунтверификатионрекуиред    | Для разблокировки уведомлений об отправке требуется проверка учетной записи.
+| хипчеккрекуиред               | Необходимо выполнить разрешение ГИП (предотвращение проникновения на узел) — разрешить отправку уведомлений об отправке.
+| ексчанжеинвалидусер            | Не найден почтовый ящик текущего пользователя.
+| ексчанжеаутофмаилбокскуота      | Недостаточно квоты.
+| ексчанжемаксреЦипиентс          | Превышено максимальное количество получателей, которые могут быть отправлены в одно и то же время.
 
 >**Примечание:** В любой момент служба может добавить новые коды ошибок или прекратить возврат старых.
 

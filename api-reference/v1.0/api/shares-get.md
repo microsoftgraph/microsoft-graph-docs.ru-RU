@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Вы можете получить доступ к общим элементам DriveItem или коллекции общих элементов, используя параметр shareId или URL-адрес для совместного доступа.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d1080c42d3dd6471b2c09ac5a6d013f8e0c4986b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b76d62c2f3beabfb825caea79ca79c55df2d29dc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021517"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36307842"
 ---
 # <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
 
@@ -42,7 +42,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 | Имя параметра                 | Значение    | Описание                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
-| **Шареидоренкодедшарингурл** | `string` | Обязательный. Маркер общего доступа, возвращенный API, или правильно закодированный URL-адрес для общего доступа. |
+| **шареидоренкодедшарингурл** | `string` | Обязательный. Маркер общего доступа, возвращенный API, или правильно закодированный URL-адрес для общего доступа. |
 
 ### <a name="encoding-sharing-urls"></a>Кодирование URL-адресов для общего доступа
 
@@ -70,8 +70,8 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Имя                          | Описание                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| Редимшаринглинк             | Если **шареидоренкодедшарингурл** представляет собой ссылку для совместного доступа, предоставьте вызывающему методу долговременный доступ к элементу    |
-| Редимшаринглинкифнецессари  | То же, что и Редимшаринглинк, но доступ гарантированно предоставляется только в течение этого запроса. |
+| редимшаринглинк             | Если **шареидоренкодедшарингурл** представляет собой ссылку для совместного доступа, предоставьте вызывающему методу долговременный доступ к элементу    |
+| редимшаринглинкифнецессари  | То же, что и Редимшаринглинк, но доступ гарантированно предоставляется только в течение этого запроса. |
 
 Редимшаринглинк должен считаться эквивалентным участнику, который перемещается в ссылку для совместного доступа, в браузере (принимается жестом общего доступа), тогда как Редимшаринглинкифнецессари предназначено для сценариев, в которых намерением является просто взглянуть на ссылку метаданных.
 
@@ -96,7 +96,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -154,7 +154,7 @@ GET /shares/{shareIdOrUrl}/driveItem
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -203,7 +203,7 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-expand-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-expand-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

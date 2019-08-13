@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6453d2b47b370a3642409794f3fed96a5f579f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fdbf86dfaed2bf2ee1255ce9a161470d5d6c585d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981376"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310068"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>Действие updateWindowsDeviceAccount
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981376"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -92,6 +92,7 @@ Content-length: 532
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

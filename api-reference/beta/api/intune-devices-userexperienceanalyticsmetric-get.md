@@ -1,24 +1,24 @@
 ---
-title: Список Девицеманажементскриптдевицестатес
-description: Список свойств и связей объектов Девицеманажементскриптдевицестате.
+title: Получение Усерекспериенцеаналитиксметрик
+description: Чтение свойств и связей объекта Усерекспериенцеаналитиксметрик.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe14c5b2a866c36e50f097dd4c290823f56bf8ad
+ms.openlocfilehash: e7f60c3e09d22131f2948420b0a85f41c386243c
 ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310369"
+ms.locfileid: "36311721"
 ---
-# <a name="list-devicemanagementscriptdevicestates"></a>Список Девицеманажементскриптдевицестатес
+# <a name="get-userexperienceanalyticsmetric"></a>Получение Усерекспериенцеаналитиксметрик
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
+Чтение свойств и связей объекта [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,9 +35,11 @@ ms.locfileid: "36310369"
 }
 -->
 ``` http
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
-GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
+GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 ```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -49,14 +51,14 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -64,24 +66,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 714
+Content-Length: 265
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
-      "id": "39440cba-0cba-3944-ba0c-4439ba0c4439",
-      "runState": "success",
-      "resultMessage": "Result Message value",
-      "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
-      "errorCode": 9,
-      "errorDescription": "Error Description value",
-      "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-      "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-      "remediationScriptError": "Remediation Script Error value",
-      "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
+    "id": "1371822e-822e-1371-2e82-71132e827113",
+    "displayName": "Display Name value",
+    "value": "<Unknown Primitive Type Edm.Double>",
+    "unit": "Unit value"
+  }
 }
 ```
 
