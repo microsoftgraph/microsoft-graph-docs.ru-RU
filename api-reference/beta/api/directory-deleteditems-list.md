@@ -5,56 +5,56 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7cde201762e795339dd9a81f3f487ecd4aa44d22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 783b9d798803258fa804567ddb93fda0230499a2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951269"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319596"
 ---
-# <a name="list-deleted-items"></a><span data-ttu-id="3aa67-103">Перечисление удаленных элементов</span><span class="sxs-lookup"><span data-stu-id="3aa67-103">List deleted items</span></span>
+# <a name="list-deleted-items"></a><span data-ttu-id="9bacb-103">Перечисление удаленных элементов</span><span class="sxs-lookup"><span data-stu-id="9bacb-103">List deleted items</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3aa67-104">Получение списка недавно [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="3aa67-104">Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="9bacb-104">Получение списка недавно [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="9bacb-104">Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="3aa67-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="3aa67-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="9bacb-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="9bacb-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3aa67-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3aa67-106">Permissions</span></span>
-<span data-ttu-id="3aa67-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3aa67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9bacb-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9bacb-106">Permissions</span></span>
+<span data-ttu-id="9bacb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9bacb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="3aa67-109">Для пользователей: User. Read. ALL, Directory. Read. ALL, User. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="3aa67-109">For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="3aa67-110">Для групп: Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="3aa67-110">For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="9bacb-109">Для пользователей: User. Read. ALL, Directory. Read. ALL, User. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="9bacb-109">For users: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="9bacb-110">Для групп: Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="9bacb-110">For groups: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3aa67-111">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3aa67-111">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9bacb-111">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9bacb-111">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-<span data-ttu-id="3aa67-112">В настоящее время этот API поддерживает получение групп (microsoft.graph.group) и пользователей (microsoft.graph.user) из удаленных элементов.</span><span class="sxs-lookup"><span data-stu-id="3aa67-112">This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items.</span></span> <span data-ttu-id="3aa67-113">Тип является обязательной частью URI.</span><span class="sxs-lookup"><span data-stu-id="3aa67-113">The type is specified as a required part of the URI.</span></span> <span data-ttu-id="3aa67-114">Вызов GET /directory/deleteditems без типа не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3aa67-114">Calling GET /directory/deleteditems without a type is not supported.</span></span>
+<span data-ttu-id="9bacb-112">В настоящее время этот API поддерживает получение групп (microsoft.graph.group) и пользователей (microsoft.graph.user) из удаленных элементов.</span><span class="sxs-lookup"><span data-stu-id="9bacb-112">This API currently supports retrieving object types of groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items.</span></span> <span data-ttu-id="9bacb-113">Тип является обязательной частью URI.</span><span class="sxs-lookup"><span data-stu-id="9bacb-113">The type is specified as a required part of the URI.</span></span> <span data-ttu-id="9bacb-114">Вызов GET /directory/deleteditems без типа не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9bacb-114">Calling GET /directory/deleteditems without a type is not supported.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3aa67-115">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3aa67-115">Optional query parameters</span></span>
-<span data-ttu-id="3aa67-116">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="3aa67-116">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9bacb-115">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9bacb-115">Optional query parameters</span></span>
+<span data-ttu-id="9bacb-116">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9bacb-116">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3aa67-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3aa67-117">Request headers</span></span>
-| <span data-ttu-id="3aa67-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3aa67-118">Name</span></span>      |<span data-ttu-id="3aa67-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3aa67-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9bacb-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9bacb-117">Request headers</span></span>
+| <span data-ttu-id="9bacb-118">Имя</span><span class="sxs-lookup"><span data-stu-id="9bacb-118">Name</span></span>      |<span data-ttu-id="9bacb-119">Описание</span><span class="sxs-lookup"><span data-stu-id="9bacb-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3aa67-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3aa67-120">Authorization</span></span>  | <span data-ttu-id="3aa67-121">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="3aa67-121">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="3aa67-122">Accept</span><span class="sxs-lookup"><span data-stu-id="3aa67-122">Accept</span></span>  | <span data-ttu-id="3aa67-123">application/json</span><span class="sxs-lookup"><span data-stu-id="3aa67-123">application/json</span></span> |
+| <span data-ttu-id="9bacb-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9bacb-120">Authorization</span></span>  | <span data-ttu-id="9bacb-121">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="9bacb-121">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="9bacb-122">Accept</span><span class="sxs-lookup"><span data-stu-id="9bacb-122">Accept</span></span>  | <span data-ttu-id="9bacb-123">application/json</span><span class="sxs-lookup"><span data-stu-id="9bacb-123">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3aa67-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3aa67-124">Request body</span></span>
-<span data-ttu-id="3aa67-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3aa67-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9bacb-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9bacb-124">Request body</span></span>
+<span data-ttu-id="9bacb-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9bacb-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3aa67-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="3aa67-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9bacb-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="9bacb-126">Response</span></span>
 
-<span data-ttu-id="3aa67-127">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3aa67-127">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="3aa67-128">Пример</span><span class="sxs-lookup"><span data-stu-id="3aa67-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3aa67-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="3aa67-129">Request</span></span>
+<span data-ttu-id="9bacb-127">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9bacb-127">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9bacb-128">Пример</span><span class="sxs-lookup"><span data-stu-id="9bacb-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9bacb-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="9bacb-129">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3aa67-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="3aa67-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9bacb-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="9bacb-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_deleteditems"
@@ -62,26 +62,26 @@ GET /directory/deletedItems/microsoft.graph.user
 ```http
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3aa67-131">C#</span><span class="sxs-lookup"><span data-stu-id="3aa67-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9bacb-131">C#</span><span class="sxs-lookup"><span data-stu-id="9bacb-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-deleteditems-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3aa67-132">Javascript</span><span class="sxs-lookup"><span data-stu-id="3aa67-132">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9bacb-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9bacb-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-deleteditems-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3aa67-133">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3aa67-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9bacb-133">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9bacb-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-deleteditems-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3aa67-134">Java</span><span class="sxs-lookup"><span data-stu-id="3aa67-134">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="9bacb-134">Java</span><span class="sxs-lookup"><span data-stu-id="9bacb-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="3aa67-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="3aa67-135">Response</span></span>
-<span data-ttu-id="3aa67-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3aa67-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9bacb-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="9bacb-135">Response</span></span>
+<span data-ttu-id="9bacb-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9bacb-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

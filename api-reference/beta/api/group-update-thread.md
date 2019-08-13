@@ -5,51 +5,51 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7e9bdabd9d36ca6e6995eff88e379bb409a84b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 314ed992ca9dafbce7ace3cec27990467609fb76
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953411"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36323106"
 ---
-# <a name="update-conversation-thread"></a><span data-ttu-id="fdea2-103">Обновление цепочки беседы</span><span class="sxs-lookup"><span data-stu-id="fdea2-103">Update conversation thread</span></span>
+# <a name="update-conversation-thread"></a><span data-ttu-id="b7583-103">Обновление цепочки беседы</span><span class="sxs-lookup"><span data-stu-id="b7583-103">Update conversation thread</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fdea2-104">Обновление объекта [thread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="fdea2-104">Update a [thread](../resources/conversationthread.md) object.</span></span>
+<span data-ttu-id="b7583-104">Обновление объекта [thread](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="b7583-104">Update a [thread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fdea2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fdea2-105">Permissions</span></span>
-<span data-ttu-id="fdea2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fdea2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7583-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b7583-105">Permissions</span></span>
+<span data-ttu-id="b7583-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7583-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fdea2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fdea2-108">Permission type</span></span>      | <span data-ttu-id="fdea2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fdea2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b7583-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b7583-108">Permission type</span></span>      | <span data-ttu-id="b7583-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b7583-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fdea2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fdea2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fdea2-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fdea2-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fdea2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fdea2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fdea2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fdea2-113">Not supported.</span></span>    |
-|<span data-ttu-id="fdea2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fdea2-114">Application</span></span> | <span data-ttu-id="fdea2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fdea2-115">Not supported.</span></span> |
+|<span data-ttu-id="b7583-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b7583-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b7583-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7583-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b7583-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b7583-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7583-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b7583-113">Not supported.</span></span>    |
+|<span data-ttu-id="b7583-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b7583-114">Application</span></span> | <span data-ttu-id="b7583-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b7583-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fdea2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fdea2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7583-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b7583-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fdea2-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fdea2-117">Request headers</span></span>
-| <span data-ttu-id="fdea2-118">Имя</span><span class="sxs-lookup"><span data-stu-id="fdea2-118">Name</span></span>       | <span data-ttu-id="fdea2-119">Тип</span><span class="sxs-lookup"><span data-stu-id="fdea2-119">Type</span></span> | <span data-ttu-id="fdea2-120">Описание</span><span class="sxs-lookup"><span data-stu-id="fdea2-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b7583-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b7583-117">Request headers</span></span>
+| <span data-ttu-id="b7583-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b7583-118">Name</span></span>       | <span data-ttu-id="b7583-119">Тип</span><span class="sxs-lookup"><span data-stu-id="b7583-119">Type</span></span> | <span data-ttu-id="b7583-120">Описание</span><span class="sxs-lookup"><span data-stu-id="b7583-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="fdea2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="fdea2-121">Authorization</span></span>  | <span data-ttu-id="fdea2-122">string</span><span class="sxs-lookup"><span data-stu-id="fdea2-122">string</span></span>  | <span data-ttu-id="fdea2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fdea2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b7583-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7583-121">Authorization</span></span>  | <span data-ttu-id="b7583-122">string</span><span class="sxs-lookup"><span data-stu-id="b7583-122">string</span></span>  | <span data-ttu-id="b7583-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b7583-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fdea2-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fdea2-125">Request body</span></span>
-<span data-ttu-id="fdea2-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="fdea2-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7583-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b7583-125">Request body</span></span>
+<span data-ttu-id="b7583-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="b7583-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fdea2-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="fdea2-129">Response</span></span>
-<span data-ttu-id="fdea2-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="fdea2-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="b7583-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="b7583-129">Response</span></span>
+<span data-ttu-id="b7583-130">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b7583-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fdea2-131">Пример</span><span class="sxs-lookup"><span data-stu-id="fdea2-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="fdea2-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdea2-132">Request</span></span>
-<span data-ttu-id="fdea2-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fdea2-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b7583-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b7583-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b7583-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b7583-132">Request</span></span>
+<span data-ttu-id="b7583-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b7583-133">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fdea2-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdea2-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b7583-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7583-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group_thread"
@@ -71,15 +71,15 @@ Content-length: 655
   "isReminderOn": true
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fdea2-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="fdea2-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b7583-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7583-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="fdea2-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdea2-136">Response</span></span>
-<span data-ttu-id="fdea2-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fdea2-137">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="b7583-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b7583-136">Response</span></span>
+<span data-ttu-id="b7583-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="b7583-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

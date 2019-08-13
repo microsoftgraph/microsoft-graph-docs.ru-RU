@@ -5,26 +5,26 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: db574f9c1f45f87b0133490f1e4785bbf35a1547
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e41a43b85f95d9ce3307248c7d25416fae4fe5dd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975678"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320079"
 ---
-# <a name="create-section"></a><span data-ttu-id="6612e-103">Создание раздела</span><span class="sxs-lookup"><span data-stu-id="6612e-103">Create section</span></span>
+# <a name="create-section"></a><span data-ttu-id="c630f-103">Создание раздела</span><span class="sxs-lookup"><span data-stu-id="c630f-103">Create section</span></span>
 
-<span data-ttu-id="6612e-104">Создание нового [оненотесектион](../resources/section.md) в указанной группе разделов.</span><span class="sxs-lookup"><span data-stu-id="6612e-104">Create a new [onenoteSection](../resources/section.md) in the specified section group.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6612e-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6612e-105">Permissions</span></span>
-<span data-ttu-id="6612e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6612e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c630f-104">Создание нового [оненотесектион](../resources/section.md) в указанной группе разделов.</span><span class="sxs-lookup"><span data-stu-id="c630f-104">Create a new [onenoteSection](../resources/section.md) in the specified section group.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c630f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c630f-105">Permissions</span></span>
+<span data-ttu-id="c630f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c630f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6612e-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6612e-108">Permission type</span></span>      | <span data-ttu-id="6612e-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6612e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c630f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c630f-108">Permission type</span></span>      | <span data-ttu-id="c630f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c630f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6612e-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6612e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6612e-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6612e-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6612e-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6612e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6612e-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6612e-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="6612e-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6612e-114">Application</span></span> | <span data-ttu-id="6612e-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6612e-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="c630f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c630f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c630f-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c630f-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c630f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c630f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c630f-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c630f-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="c630f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c630f-114">Application</span></span> | <span data-ttu-id="c630f-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c630f-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6612e-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6612e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c630f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c630f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sectionGroups/{id}/sections
@@ -32,26 +32,26 @@ POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 POST /groups/{id}/onenote/sectionGroups/{id}/sections
 POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
-## <a name="request-headers"></a><span data-ttu-id="6612e-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6612e-117">Request headers</span></span>
-| <span data-ttu-id="6612e-118">Имя</span><span class="sxs-lookup"><span data-stu-id="6612e-118">Name</span></span>       | <span data-ttu-id="6612e-119">Тип</span><span class="sxs-lookup"><span data-stu-id="6612e-119">Type</span></span> | <span data-ttu-id="6612e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="6612e-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c630f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c630f-117">Request headers</span></span>
+| <span data-ttu-id="c630f-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c630f-118">Name</span></span>       | <span data-ttu-id="c630f-119">Тип</span><span class="sxs-lookup"><span data-stu-id="c630f-119">Type</span></span> | <span data-ttu-id="c630f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="c630f-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6612e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="6612e-121">Authorization</span></span>  | <span data-ttu-id="6612e-122">string</span><span class="sxs-lookup"><span data-stu-id="6612e-122">string</span></span>  | <span data-ttu-id="6612e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6612e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6612e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6612e-125">Content-Type</span></span> | <span data-ttu-id="6612e-126">string</span><span class="sxs-lookup"><span data-stu-id="6612e-126">string</span></span> | `application/json` |
+| <span data-ttu-id="c630f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="c630f-121">Authorization</span></span>  | <span data-ttu-id="c630f-122">string</span><span class="sxs-lookup"><span data-stu-id="c630f-122">string</span></span>  | <span data-ttu-id="c630f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c630f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c630f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c630f-125">Content-Type</span></span> | <span data-ttu-id="c630f-126">string</span><span class="sxs-lookup"><span data-stu-id="c630f-126">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="6612e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6612e-127">Request body</span></span>
-<span data-ttu-id="6612e-128">В тексте запроса укажите имя раздела.</span><span class="sxs-lookup"><span data-stu-id="6612e-128">In the request body, supply a name for the section.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c630f-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c630f-127">Request body</span></span>
+<span data-ttu-id="c630f-128">В тексте запроса укажите имя раздела.</span><span class="sxs-lookup"><span data-stu-id="c630f-128">In the request body, supply a name for the section.</span></span>
 
-<span data-ttu-id="6612e-p103">В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?\*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="6612e-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?\*\/:<>|&#''%~</span></span>
+<span data-ttu-id="c630f-p103">В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?\*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="c630f-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?\*\/:<>|&#''%~</span></span>
 
-## <a name="response"></a><span data-ttu-id="6612e-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="6612e-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c630f-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="c630f-131">Response</span></span>
 
-<span data-ttu-id="6612e-132">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [оненотесектион](../resources/section.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6612e-132">If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/section.md) object in the response body.</span></span>
+<span data-ttu-id="c630f-132">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [оненотесектион](../resources/section.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c630f-132">If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/section.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6612e-133">Пример</span><span class="sxs-lookup"><span data-stu-id="6612e-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6612e-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="6612e-134">Request</span></span>
-<span data-ttu-id="6612e-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6612e-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c630f-133">Пример</span><span class="sxs-lookup"><span data-stu-id="c630f-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c630f-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="c630f-134">Request</span></span>
+<span data-ttu-id="c630f-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c630f-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6612e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="6612e-136">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c630f-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="c630f-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_section_from_sectiongroup"
@@ -65,27 +65,27 @@ Content-length: 27
   "displayName": "Section name"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6612e-137">C#</span><span class="sxs-lookup"><span data-stu-id="6612e-137">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c630f-137">C#</span><span class="sxs-lookup"><span data-stu-id="c630f-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-section-from-sectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6612e-138">Javascript</span><span class="sxs-lookup"><span data-stu-id="6612e-138">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c630f-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c630f-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-section-from-sectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6612e-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="6612e-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c630f-139">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c630f-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-section-from-sectiongroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6612e-140">Java</span><span class="sxs-lookup"><span data-stu-id="6612e-140">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="c630f-140">Java</span><span class="sxs-lookup"><span data-stu-id="c630f-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-section-from-sectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="6612e-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="6612e-141">Response</span></span>
-<span data-ttu-id="6612e-p104">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6612e-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c630f-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="c630f-141">Response</span></span>
+<span data-ttu-id="c630f-p104">Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c630f-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

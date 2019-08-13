@@ -5,31 +5,31 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: dd381033f5bd2a59722302116283e438192d0c2f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f69a8c098b86b568508fbd50143b05cab631478
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956936"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324239"
 ---
-# <a name="get-a-driveitemversion-resource-preview"></a><span data-ttu-id="3fda1-103">Получение ресурса DriveItemVersion (ознакомительная версия)</span><span class="sxs-lookup"><span data-stu-id="3fda1-103">Get a DriveItemVersion resource (preview)</span></span>
+# <a name="get-a-driveitemversion-resource-preview"></a><span data-ttu-id="a3e5a-103">Получение ресурса DriveItemVersion (ознакомительная версия)</span><span class="sxs-lookup"><span data-stu-id="a3e5a-103">Get a DriveItemVersion resource (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3fda1-104">В этой статье рассказывается, как получить метаданные для определенной версии ресурса [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="3fda1-104">Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="a3e5a-104">В этой статье рассказывается, как получить метаданные для определенной версии ресурса [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="a3e5a-104">Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3fda1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3fda1-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a3e5a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a3e5a-105">Permissions</span></span>
 
-<span data-ttu-id="3fda1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3fda1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a3e5a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3e5a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3fda1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3fda1-108">Permission type</span></span>      | <span data-ttu-id="3fda1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3fda1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a3e5a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a3e5a-108">Permission type</span></span>      | <span data-ttu-id="a3e5a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a3e5a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3fda1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3fda1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3fda1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3fda1-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3fda1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3fda1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3fda1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3fda1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3fda1-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3fda1-114">Application</span></span> | <span data-ttu-id="3fda1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3fda1-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a3e5a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a3e5a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a3e5a-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3e5a-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a3e5a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a3e5a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3e5a-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3e5a-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a3e5a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a3e5a-114">Application</span></span> | <span data-ttu-id="a3e5a-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3e5a-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="3fda1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3fda1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3e5a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3e5a-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -41,46 +41,46 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 ```
 
-## <a name="response"></a><span data-ttu-id="3fda1-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="3fda1-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a3e5a-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3e5a-117">Response</span></span>
 
-<span data-ttu-id="3fda1-118">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [DriveItemVersion](../resources/driveitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="3fda1-118">If successful, this method returns a `200 OK` response code and a [DriveItemVersion](../resources/driveitemversion.md) object in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="3fda1-119">Пример</span><span class="sxs-lookup"><span data-stu-id="3fda1-119">Example</span></span>
-
-<span data-ttu-id="3fda1-120">В этом примере показано, как получить версию файла в объекте drive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="3fda1-120">This example retrieves a version of a file in the current user's drive.</span></span>
-
-### <a name="http-request"></a><span data-ttu-id="3fda1-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3fda1-121">HTTP request</span></span>
+<span data-ttu-id="a3e5a-118">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [DriveItemVersion](../resources/driveitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a3e5a-118">If successful, this method returns a `200 OK` response code and a [DriveItemVersion](../resources/driveitemversion.md) object in the response body.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3fda1-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="3fda1-122">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="a3e5a-119">Пример</span><span class="sxs-lookup"><span data-stu-id="a3e5a-119">Example</span></span>
+
+<span data-ttu-id="a3e5a-120">В этом примере показано, как получить версию файла в объекте drive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="a3e5a-120">This example retrieves a version of a file in the current user's drive.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="a3e5a-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3e5a-121">HTTP request</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="a3e5a-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3e5a-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3fda1-123">C#</span><span class="sxs-lookup"><span data-stu-id="3fda1-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a3e5a-123">C#</span><span class="sxs-lookup"><span data-stu-id="a3e5a-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-single-version-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3fda1-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="3fda1-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a3e5a-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3e5a-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-single-version-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3fda1-125">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3fda1-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a3e5a-125">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a3e5a-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3fda1-126">Java</span><span class="sxs-lookup"><span data-stu-id="3fda1-126">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="a3e5a-126">Java</span><span class="sxs-lookup"><span data-stu-id="a3e5a-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-single-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="3fda1-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="3fda1-127">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a3e5a-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3e5a-127">Response</span></span>
 
-<span data-ttu-id="3fda1-128">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="3fda1-128">This returns a collection of versions:</span></span>
+<span data-ttu-id="a3e5a-128">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="a3e5a-128">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
 
@@ -101,11 +101,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="3fda1-129">Замечания</span><span class="sxs-lookup"><span data-stu-id="3fda1-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a3e5a-129">Замечания</span><span class="sxs-lookup"><span data-stu-id="a3e5a-129">Remarks</span></span>
 
-<span data-ttu-id="3fda1-130">OneDrive не сохраняет полные метаданные для предыдущих версий файла.</span><span class="sxs-lookup"><span data-stu-id="3fda1-130">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="a3e5a-130">OneDrive не сохраняет полные метаданные для предыдущих версий файла.</span><span class="sxs-lookup"><span data-stu-id="a3e5a-130">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="3fda1-131">Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.</span><span class="sxs-lookup"><span data-stu-id="3fda1-131">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="a3e5a-131">Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.</span><span class="sxs-lookup"><span data-stu-id="a3e5a-131">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 
 <!--
