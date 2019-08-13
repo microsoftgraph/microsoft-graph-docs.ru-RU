@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d808de8d49cf7c8a2b148b8e75bf1530050dc618
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8044b91ab2d49b4c071920d39b3e6a94d4f6bf79
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989884"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355166"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Обновление Граупполицидефинитионфиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989884"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,10 +54,10 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |displayName|Строка|Локализованное понятное имя файла ADMX.|
 |description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|Лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
-|Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
+|таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
-|Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |последним|String|Версия редакции, связанная с файлом.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -112,6 +112,7 @@ Content-Length: 471
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

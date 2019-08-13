@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df237487d65dab617ccf4c40d18382c9a3062451
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e634a02afaabb945109aba93bb0a668124f7daba
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005207"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364924"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -48,10 +48,10 @@ ms.locfileid: "36005207"
 |developer|String|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
 |uploadState|Int32|Состояние отправки.|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе.|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения.|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -100,8 +100,6 @@ ms.locfileid: "36005207"
   "dependentAppCount": 1024
 }
 ```
-
-
 
 
 

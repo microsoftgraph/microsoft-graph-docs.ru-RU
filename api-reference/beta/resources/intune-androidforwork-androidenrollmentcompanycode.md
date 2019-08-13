@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdbcf69751cf341c78c654580a709b0873213289
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ccc8cd1c1753c844ac5a71f9248f8189dad1e0b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005662"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367101"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>Тип ресурса Андроиденроллменткомпаникоде
 
@@ -23,7 +23,7 @@ ms.locfileid: "36005662"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Енроллменттокен|String|Маркер регистрации, используемый пользователем для регистрации своего устройства.|
+|енроллменттокен|String|Маркер регистрации, используемый пользователем для регистрации своего устройства.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный QR код для маркера.|
 
@@ -49,8 +49,6 @@ ms.locfileid: "36005662"
   }
 }
 ```
-
-
 
 
 

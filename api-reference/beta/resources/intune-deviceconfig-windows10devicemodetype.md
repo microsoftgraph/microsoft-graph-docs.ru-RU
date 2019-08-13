@@ -4,12 +4,13 @@ description: Тип устройства Windows 10.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34c690a37efd875b6bd8936783645f7ac8fa21fa
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: b4f4e2014da5729968285f1a56bbd9ad960d0caf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002044"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348048"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>тип перечисления windows10DeviceModeType
 
@@ -22,10 +23,8 @@ ms.locfileid: "35002044"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Стандардконфигуратион|нуль|Стандартная конфигурация|
-|Смодеконфигуратион|1,1|Конфигурация режима S|
-
-
+|стандардконфигуратион|нуль|Стандартная конфигурация|
+|смодеконфигуратион|1,1|Конфигурация режима S|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66f9b1270db2d9ba685f98d8de8939e0a39c9aaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: efa0fe4602b8cf7b27a703b72f40ef12b1dea766
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010373"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347803"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Тип ресурса telecomExpenseManagementPartner
 
@@ -61,8 +61,6 @@ ms.locfileid: "36010373"
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

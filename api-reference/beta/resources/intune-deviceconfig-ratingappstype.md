@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a61c138cdea69471d10080ddf793553f91e35c77
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2f6a8a083da1ef07d91b8203ecd26478ccb7fec
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969872"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368389"
 ---
 # <a name="ratingappstype-enum-type"></a>тип перечисления Ратингаппстипе
 
@@ -23,14 +23,12 @@ ms.locfileid: "35969872"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое приложений|
-|Аллблоккед|1,1|Не разрешать контент приложений|
+|аллалловед|нуль|Значение по умолчанию, разрешить все содержимое приложений|
+|аллблоккед|1,1|Не разрешать контент приложений|
 |agesAbove4|2|4 +, возраст 4 и выше|
 |agesAbove9|4|9 +, возраст 9 и более поздних версий|
 |agesAbove12|SP4|12 +, 12 лет и более |
 |agesAbove17|17:00|17 +, возраст 17 и выше|
-
-
 
 
 

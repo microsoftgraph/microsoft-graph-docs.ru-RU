@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6550f7016b61cd36032a6583469dfb9b53238a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef1d3c48e086e16051e7db1d40dd11409a6053ca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990248"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355467"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Список networkIPv4ConfigurationManagementConditions
 
@@ -27,7 +27,7 @@ ms.locfileid: "35990248"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,6 +93,7 @@ Content-Length: 810
   ]
 }
 ```
+
 
 
 

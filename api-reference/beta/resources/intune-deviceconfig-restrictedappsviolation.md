@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34c52c7d9d013563378ffbed4cb5af656c7c0502
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 481c2b88785d4303296a6f63e192cabf252a1ec6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969732"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368088"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Тип ресурса Рестриктедаппсвиолатион
 
@@ -35,11 +35,11 @@ ms.locfileid: "35969732"
 |id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
-|Манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
+|манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
 |deviceName|String|Имя устройства|
-|Девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
-|Девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
-|platformType|[Полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
+|девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
+|platformType|[полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|Коллекция [манажеддевицерепортедапп](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
 
@@ -74,8 +74,6 @@ ms.locfileid: "35969732"
   ]
 }
 ```
-
-
 
 
 

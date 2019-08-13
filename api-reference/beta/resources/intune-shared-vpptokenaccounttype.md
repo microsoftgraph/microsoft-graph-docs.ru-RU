@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f6530a6d1eab087d8e11916c04af95ec19b550f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c947dcc16c8af6f25acfe47c0bb3c4c543a1d15d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010345"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347887"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>тип перечисления Впптокенаккаунттипе
 
@@ -25,8 +25,6 @@ ms.locfileid: "36010345"
 |:---|:---|:---|
 |подразделения|нуль|Токен Apple Volume Purchase Program, связанный с бизнес-программой.|
 |закончен|1,1|Токен Apple Volume Purchase Program, связанный с программой для образования.|
-
-
 
 
 

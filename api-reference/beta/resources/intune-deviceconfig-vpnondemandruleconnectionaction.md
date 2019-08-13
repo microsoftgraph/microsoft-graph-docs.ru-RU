@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f340ec1faf6c34daea77a8ee91ad7fa4089255f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4824dd4989e31d931ee55c4749c177536219659a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969494"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367682"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>тип перечисления Впнондемандрулеконнектионактион
 
@@ -24,11 +24,9 @@ ms.locfileid: "35969494"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |connect|нуль|Connect.|
-|Евалуатеконнектион|1,1|Оценка подключения.|
+|евалуатеконнектион|1,1|Оценка подключения.|
 |пропуск|2|Пропуск.|
 |disconnect|4|Соединять.|
-
-
 
 
 

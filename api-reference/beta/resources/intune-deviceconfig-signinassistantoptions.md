@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f7f06865e22263a0b8e082f68808806f8497624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e770a111ed7182660dc1d1b921a0f9a08920bf95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000545"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367941"
 ---
 # <a name="signinassistantoptions-enum-type"></a>тип перечисления Сигнинассистантоптионс
 
@@ -23,10 +23,8 @@ ms.locfileid: "36000545"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроено — влидсвк для запуска будет установлено значение СЕРВИЦЕ_ДЕМАНД_СТАРТ.|
-|активирован|1,1|Disabled — для запуска влидсвк будет задано значение СЕРВИЦЕ_ДИСАБЛЕД.|
-
-
+|notConfigured|нуль|Не настроено — влидсвк для запуска будет установлено значение SERVICE_DEMAND_START.|
+|активирован|1,1|Disabled — для запуска влидсвк будет задано значение SERVICE_DISABLED.|
 
 
 

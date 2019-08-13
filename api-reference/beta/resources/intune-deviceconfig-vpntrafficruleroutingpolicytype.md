@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5cbbba22017a40ae2f7db41e25f497c09156a2f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 529c42722d8ce3827bb9daa4c0f158cfd92d8383
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969375"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367521"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>тип перечисления Впнтраффикрулераутингполицитипе
 
@@ -24,10 +24,8 @@ ms.locfileid: "35969375"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |none|нуль|Политика маршрутизации не указана.|
-|Сплиттуннел|1,1|Сетевой трафик для указанного приложения будет перенаправлен через VPN.|
-|Форцетуннел|2|Весь сетевой трафик будет маршрутизироваться через VPN.|
-
-
+|сплиттуннел|1,1|Сетевой трафик для указанного приложения будет перенаправлен через VPN.|
+|форцетуннел|2|Весь сетевой трафик будет маршрутизироваться через VPN.|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 964ec12a40a707b96b29c4793e35533995f16eaf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1a491f6dc8dbbdce729bfebb732f94222ef2b03e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001231"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357035"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 
@@ -46,8 +46,6 @@ ms.locfileid: "36001231"
   "bundleID": "String"
 }
 ```
-
-
 
 
 

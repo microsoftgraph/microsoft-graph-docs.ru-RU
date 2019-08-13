@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fe3397b052fc4dd936080fc248b14da322018d03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e12d5d727172aa9c3927fcaa0cf03443032f5e73
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969382"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367528"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>тип перечисления Веббровсеркукиесеттингс
 
@@ -23,13 +23,11 @@ ms.locfileid: "35969382"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Бровсердефаулт|нуль|Значение по умолчанию браузера без намерения.|
-|Блоккалвайс|1,1|Всегда блокируйте файлы cookie.|
-|Алловкуррентвебсите|2|Разрешить файлы cookie с текущего веб-сайта.|
-|Алловфромвебситесвиситед|4|Разрешить файлы cookie со посещенных веб-сайтов.|
-|Алловалвайс|SP4|Всегда разрешать файлы cookie.|
-
-
+|бровсердефаулт|нуль|Значение по умолчанию браузера без намерения.|
+|блоккалвайс|1,1|Всегда блокируйте файлы cookie.|
+|алловкуррентвебсите|2|Разрешить файлы cookie с текущего веб-сайта.|
+|алловфромвебситесвиситед|4|Разрешить файлы cookie со посещенных веб-сайтов.|
+|алловалвайс|SP4|Всегда разрешать файлы cookie.|
 
 
 

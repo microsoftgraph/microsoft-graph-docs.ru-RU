@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c12e39a3f26fe5a25d0dca522e8d2ab3e774957
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00f5d1eb3f05d11833e687d002e1d698a366fd61
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969438"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367612"
 ---
 # <a name="vpnroute-resource-type"></a>Тип ресурса Впнрауте
 
@@ -23,8 +23,8 @@ ms.locfileid: "35969438"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Дестинатионпрефикс|String|Префикс назначения (IPv4/V6-адрес).|
-|Префикссизе|Int32|Размер префикса. (1-32). Допустимые значения — от 1 до 32|
+|дестинатионпрефикс|String|Префикс назначения (IPv4/V6-адрес).|
+|префикссизе|Int32|Размер префикса. (1-32). Допустимые значения — от 1 до 32|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -43,8 +43,6 @@ ms.locfileid: "35969438"
   "prefixSize": 1024
 }
 ```
-
-
 
 
 

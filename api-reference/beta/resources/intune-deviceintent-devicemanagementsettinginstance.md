@@ -4,12 +4,13 @@ description: Базовый тип для экземпляра параметр�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628ca393006666f7a655cf45832784e88f2a4d01
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 28f380bc2aef749079676d4f97fd4bd6f3d7c671
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984494"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364651"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>Тип ресурса Девицеманажементсеттингинстанце
 
@@ -29,8 +30,8 @@ ms.locfileid: "34984494"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор экземпляра параметра|
-|Дефинитионид|String|Идентификатор определения параметра для этого экземпляра.|
-|Валуежсон|String|Представление значения в формате JSON|
+|дефинитионид|String|Идентификатор определения параметра для этого экземпляра.|
+|валуежсон|String|Представление значения в формате JSON|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -51,8 +52,6 @@ ms.locfileid: "34984494"
   "valueJson": "String"
 }
 ```
-
-
 
 
 

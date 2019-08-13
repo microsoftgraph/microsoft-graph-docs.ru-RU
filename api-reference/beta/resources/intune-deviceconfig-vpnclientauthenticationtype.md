@@ -4,12 +4,13 @@ description: Тип проверки подлинности VPN-клиента
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 066ecdf4872d44cac213056d022d49a65b04b98c
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: e84f2f9b71529f5b1c10d4ba361f1078ca46d55f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002716"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367787"
 ---
 # <a name="vpnclientauthenticationtype-enum-type"></a>тип перечисления Впнклиентаусентикатионтипе
 
@@ -22,10 +23,8 @@ ms.locfileid: "35002716"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Усераусентикатион|нуль|Проверка подлинности пользователя|
-|Девицеаусентикатион|1,1|Проверка подлинности устройства|
-
-
+|усераусентикатион|нуль|Проверка подлинности пользователя|
+|девицеаусентикатион|1,1|Проверка подлинности устройства|
 
 
 

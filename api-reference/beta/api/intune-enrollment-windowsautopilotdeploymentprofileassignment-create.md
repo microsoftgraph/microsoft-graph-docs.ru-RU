@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2339818dcc9a1d9c101d643372713169f3d3d28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8e9e48d577f68647973abe77c7a2628b8fc29d5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980970"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356153"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Создание Виндовсаутопилотдеплойментпрофилеассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980970"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 232
   }
 }
 ```
+
 
 
 

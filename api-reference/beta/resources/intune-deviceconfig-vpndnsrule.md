@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76182d87ec04220ed126165676961e11722f17ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 983b30b1f724c3c8f76e967179c6fcdb1ff1fecb
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969515"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367731"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса Впнднсруле
 
@@ -25,7 +25,7 @@ ms.locfileid: "35969515"
 |:---|:---|:---|
 |name|String|Расширением.|
 |серверами|Коллекция строк|Серверами.|
-|Проксисерверури|String|URI прокси-сервера.|
+|проксисерверури|String|URI прокси-сервера.|
 |автотриггер|Boolean|Автоматически подключаться к виртуальной частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
 |сохраняемого|Boolean|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
 
@@ -51,8 +51,6 @@ ms.locfileid: "35969515"
   "persistent": true
 }
 ```
-
-
 
 
 

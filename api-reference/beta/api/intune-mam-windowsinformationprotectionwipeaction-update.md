@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36ceb1adcd092e77f95ed764bf46b66e7cb2900b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a75930ba8cfe90b102b062427c156757b363179
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994287"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353367"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>Обновление Виндовсинформатионпротектионвипеактион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994287"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,11 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|Таржетедусерид|String|UserId, целевой для этого действия очистки.|
-|Таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
-|Таржетеддевиценаме|String|Имя целевого устройства.|
-|Таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
-|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
+|таржетедусерид|String|UserId, целевой для этого действия очистки.|
+|таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
+|таржетеддевиценаме|String|Имя целевого устройства.|
+|таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
+|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 
 
@@ -102,6 +102,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

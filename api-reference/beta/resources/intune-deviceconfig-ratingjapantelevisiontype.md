@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 10e0a7dc7399a5e4294638e374441ab493354d11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9a756dbe12fba4cf78fb3f836b19a0c23d7d926
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000686"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368221"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>тип перечисления Ратингжапантелевисионтипе
 
@@ -23,11 +23,9 @@ ms.locfileid: "36000686"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|Аллблоккед|1,1|Не разрешать показ контента|
-|ЕксплиЦиталловед|2|Все ТЕЛЕВИЗИОНные материалы явно разрешены|
-
-
+|аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
+|аллблоккед|1,1|Не разрешать показ контента|
+|експлиЦиталловед|2|Все ТЕЛЕВИЗИОНные материалы явно разрешены|
 
 
 

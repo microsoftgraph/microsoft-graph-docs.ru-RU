@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 02994207955e65b9a9ff4817d74f4b81db6f7f81
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7b562f9f1be09c5214905e67b2a8ac604e03f20
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969508"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36367668"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Тип ресурса Впнондемандруле
 
@@ -24,12 +24,12 @@ ms.locfileid: "35969508"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Идентификатор|Коллекция строк|Идентификаторы набора сетевых служб (SSID).|
-|Днссеарчдомаинс|Коллекция строк|Домены поиска DNS.|
-|Пробеурл|String|URL-адрес для зонда. Если этот URL-адрес успешно извлекается (возвращается код состояния HTTP 200) без перенаправления, это правило соответствует этому правилу.|
-|action|[Впнондемандрулеконнектионактион](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Меры. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
-|Домаинактион|[Впнондемандрулеконнектиондомаинактион](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применяется только при оценке подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
+|днссеарчдомаинс|Коллекция строк|Домены поиска DNS.|
+|пробеурл|String|URL-адрес для зонда. Если этот URL-адрес успешно извлекается (возвращается код состояния HTTP 200) без перенаправления, это правило соответствует этому правилу.|
+|action|[впнондемандрулеконнектионактион](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Меры. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
+|домаинактион|[впнондемандрулеконнектиондомаинактион](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применяется только при оценке подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
 |домена|Коллекция строк|Домены (применяется только при оценке подключения).|
-|Проберекуиредурл|String|Обязательный URL-адрес для зонда (применяется только при оценке действия Connection и при необходимости Домаинактион подключается).|
+|проберекуиредурл|String|Обязательный URL-адрес для зонда (применяется только при оценке действия Connection и при необходимости Домаинактион подключается).|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -59,8 +59,6 @@ ms.locfileid: "35969508"
   "probeRequiredUrl": "String"
 }
 ```
-
-
 
 
 

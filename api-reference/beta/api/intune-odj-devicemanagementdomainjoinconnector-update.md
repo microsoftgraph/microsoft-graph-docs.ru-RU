@@ -4,12 +4,13 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 760683b2b837ac8bcfab40a12b3bf4f84214d2c2
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 3adf6799242ec698b4cb62f4f702bb027e27c0b0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35002156"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353129"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>Обновление Девицеманажементдомаинжоинконнектор
 
@@ -26,7 +27,7 @@ ms.locfileid: "35002156"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +54,7 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 |id|String|Уникальный идентификатор, представляющий соединитель.|
 |displayName|Строка|Отображаемое имя соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Последний соединитель времени с обращением к Intune.|
-|состояние|[Девицеманажементдомаинжоинконнекторстате](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединителя. Возможные значения: `active`, `error`, `inactive`.|
+|состояние|[девицеманажементдомаинжоинконнекторстате](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединителя. Возможные значения: `active`, `error`, `inactive`.|
 |version|String|Версия соединителя.|
 
 
@@ -95,6 +96,7 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
+
 
 
 
