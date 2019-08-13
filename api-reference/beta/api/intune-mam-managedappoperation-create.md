@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6848e9f4d397163437d133fbe4f9446a7278680
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33dc3feb9088947d45e441f329e080b1ce5d53c5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994791"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354263"
 ---
-# <a name="create-managedappoperation"></a><span data-ttu-id="e86a6-103">Создание объекта managedAppOperation</span><span class="sxs-lookup"><span data-stu-id="e86a6-103">Create managedAppOperation</span></span>
+# <a name="create-managedappoperation"></a><span data-ttu-id="ee040-103">Создание объекта managedAppOperation</span><span class="sxs-lookup"><span data-stu-id="ee040-103">Create managedAppOperation</span></span>
 
-> <span data-ttu-id="e86a6-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e86a6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ee040-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ee040-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e86a6-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e86a6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ee040-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ee040-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e86a6-106">Создание объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e86a6-106">Create a new [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
+<span data-ttu-id="ee040-106">Создание объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span><span class="sxs-lookup"><span data-stu-id="ee040-106">Create a new [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e86a6-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="e86a6-107">Prerequisites</span></span>
-<span data-ttu-id="e86a6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e86a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ee040-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="ee040-107">Prerequisites</span></span>
+<span data-ttu-id="ee040-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ee040-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e86a6-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e86a6-110">Permission type</span></span>|<span data-ttu-id="e86a6-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e86a6-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ee040-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ee040-110">Permission type</span></span>|<span data-ttu-id="ee040-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ee040-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e86a6-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e86a6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e86a6-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e86a6-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="e86a6-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e86a6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e86a6-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e86a6-115">Not supported.</span></span>|
-|<span data-ttu-id="e86a6-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e86a6-116">Application</span></span>|<span data-ttu-id="e86a6-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e86a6-117">Not supported.</span></span>|
+|<span data-ttu-id="ee040-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ee040-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ee040-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee040-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="ee040-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ee040-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ee040-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ee040-115">Not supported.</span></span>|
+|<span data-ttu-id="ee040-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ee040-116">Application</span></span>|<span data-ttu-id="ee040-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee040-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e86a6-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e86a6-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ee040-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ee040-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +38,34 @@ ms.locfileid: "35994791"
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e86a6-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e86a6-119">Request headers</span></span>
-|<span data-ttu-id="e86a6-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e86a6-120">Header</span></span>|<span data-ttu-id="e86a6-121">Значение</span><span class="sxs-lookup"><span data-stu-id="e86a6-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ee040-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ee040-119">Request headers</span></span>
+|<span data-ttu-id="ee040-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ee040-120">Header</span></span>|<span data-ttu-id="ee040-121">Значение</span><span class="sxs-lookup"><span data-stu-id="ee040-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e86a6-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e86a6-122">Authorization</span></span>|<span data-ttu-id="e86a6-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e86a6-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e86a6-124">Accept</span><span class="sxs-lookup"><span data-stu-id="e86a6-124">Accept</span></span>|<span data-ttu-id="e86a6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e86a6-125">application/json</span></span>|
+|<span data-ttu-id="ee040-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ee040-122">Authorization</span></span>|<span data-ttu-id="ee040-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ee040-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ee040-124">Accept</span><span class="sxs-lookup"><span data-stu-id="ee040-124">Accept</span></span>|<span data-ttu-id="ee040-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ee040-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e86a6-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e86a6-126">Request body</span></span>
-<span data-ttu-id="e86a6-127">В теле запроса добавьте представление объекта managedAppOperation в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e86a6-127">In the request body, supply a JSON representation for the managedAppOperation object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ee040-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ee040-126">Request body</span></span>
+<span data-ttu-id="ee040-127">В теле запроса добавьте представление объекта managedAppOperation в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ee040-127">In the request body, supply a JSON representation for the managedAppOperation object.</span></span>
 
-<span data-ttu-id="e86a6-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта managedAppOperation.</span><span class="sxs-lookup"><span data-stu-id="e86a6-128">The following table shows the properties that are required when you create the managedAppOperation.</span></span>
+<span data-ttu-id="ee040-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта managedAppOperation.</span><span class="sxs-lookup"><span data-stu-id="ee040-128">The following table shows the properties that are required when you create the managedAppOperation.</span></span>
 
-|<span data-ttu-id="e86a6-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="e86a6-129">Property</span></span>|<span data-ttu-id="e86a6-130">Тип</span><span class="sxs-lookup"><span data-stu-id="e86a6-130">Type</span></span>|<span data-ttu-id="e86a6-131">Описание</span><span class="sxs-lookup"><span data-stu-id="e86a6-131">Description</span></span>|
+|<span data-ttu-id="ee040-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="ee040-129">Property</span></span>|<span data-ttu-id="ee040-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ee040-130">Type</span></span>|<span data-ttu-id="ee040-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ee040-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e86a6-132">displayName</span><span class="sxs-lookup"><span data-stu-id="e86a6-132">displayName</span></span>|<span data-ttu-id="e86a6-133">Строка</span><span class="sxs-lookup"><span data-stu-id="e86a6-133">String</span></span>|<span data-ttu-id="e86a6-134">Имя операции.</span><span class="sxs-lookup"><span data-stu-id="e86a6-134">The operation name.</span></span>|
-|<span data-ttu-id="e86a6-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="e86a6-135">lastModifiedDateTime</span></span>|<span data-ttu-id="e86a6-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e86a6-136">DateTimeOffset</span></span>|<span data-ttu-id="e86a6-137">Время последнего изменения операции для приложения.</span><span class="sxs-lookup"><span data-stu-id="e86a6-137">The last time the app operation was modified.</span></span>|
-|<span data-ttu-id="e86a6-138">state</span><span class="sxs-lookup"><span data-stu-id="e86a6-138">state</span></span>|<span data-ttu-id="e86a6-139">String</span><span class="sxs-lookup"><span data-stu-id="e86a6-139">String</span></span>|<span data-ttu-id="e86a6-140">Текущее состояние операции</span><span class="sxs-lookup"><span data-stu-id="e86a6-140">The current state of the operation</span></span>|
-|<span data-ttu-id="e86a6-141">id</span><span class="sxs-lookup"><span data-stu-id="e86a6-141">id</span></span>|<span data-ttu-id="e86a6-142">String</span><span class="sxs-lookup"><span data-stu-id="e86a6-142">String</span></span>|<span data-ttu-id="e86a6-143">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="e86a6-143">Key of the entity.</span></span>|
-|<span data-ttu-id="e86a6-144">version</span><span class="sxs-lookup"><span data-stu-id="e86a6-144">version</span></span>|<span data-ttu-id="e86a6-145">String</span><span class="sxs-lookup"><span data-stu-id="e86a6-145">String</span></span>|<span data-ttu-id="e86a6-146">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="e86a6-146">Version of the entity.</span></span>|
+|<span data-ttu-id="ee040-132">displayName</span><span class="sxs-lookup"><span data-stu-id="ee040-132">displayName</span></span>|<span data-ttu-id="ee040-133">Строка</span><span class="sxs-lookup"><span data-stu-id="ee040-133">String</span></span>|<span data-ttu-id="ee040-134">Имя операции.</span><span class="sxs-lookup"><span data-stu-id="ee040-134">The operation name.</span></span>|
+|<span data-ttu-id="ee040-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ee040-135">lastModifiedDateTime</span></span>|<span data-ttu-id="ee040-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee040-136">DateTimeOffset</span></span>|<span data-ttu-id="ee040-137">Время последнего изменения операции для приложения.</span><span class="sxs-lookup"><span data-stu-id="ee040-137">The last time the app operation was modified.</span></span>|
+|<span data-ttu-id="ee040-138">state</span><span class="sxs-lookup"><span data-stu-id="ee040-138">state</span></span>|<span data-ttu-id="ee040-139">String</span><span class="sxs-lookup"><span data-stu-id="ee040-139">String</span></span>|<span data-ttu-id="ee040-140">Текущее состояние операции</span><span class="sxs-lookup"><span data-stu-id="ee040-140">The current state of the operation</span></span>|
+|<span data-ttu-id="ee040-141">id</span><span class="sxs-lookup"><span data-stu-id="ee040-141">id</span></span>|<span data-ttu-id="ee040-142">String</span><span class="sxs-lookup"><span data-stu-id="ee040-142">String</span></span>|<span data-ttu-id="ee040-143">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="ee040-143">Key of the entity.</span></span>|
+|<span data-ttu-id="ee040-144">version</span><span class="sxs-lookup"><span data-stu-id="ee040-144">version</span></span>|<span data-ttu-id="ee040-145">String</span><span class="sxs-lookup"><span data-stu-id="ee040-145">String</span></span>|<span data-ttu-id="ee040-146">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="ee040-146">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e86a6-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="e86a6-147">Response</span></span>
-<span data-ttu-id="e86a6-148">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [managedAppOperation](../resources/intune-mam-managedappoperation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e86a6-148">If successful, this method returns a `201 Created` response code and a [managedAppOperation](../resources/intune-mam-managedappoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ee040-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="ee040-147">Response</span></span>
+<span data-ttu-id="ee040-148">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [managedAppOperation](../resources/intune-mam-managedappoperation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ee040-148">If successful, this method returns a `201 Created` response code and a [managedAppOperation](../resources/intune-mam-managedappoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e86a6-149">Пример</span><span class="sxs-lookup"><span data-stu-id="e86a6-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ee040-149">Пример</span><span class="sxs-lookup"><span data-stu-id="ee040-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e86a6-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="e86a6-150">Request</span></span>
-<span data-ttu-id="e86a6-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e86a6-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ee040-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="ee040-150">Request</span></span>
+<span data-ttu-id="ee040-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ee040-151">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 Content-type: application/json
@@ -79,8 +79,8 @@ Content-length: 159
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e86a6-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="e86a6-152">Response</span></span>
-<span data-ttu-id="e86a6-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e86a6-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ee040-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="ee040-152">Response</span></span>
+<span data-ttu-id="ee040-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ee040-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -95,6 +95,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 
