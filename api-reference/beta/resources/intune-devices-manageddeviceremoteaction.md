@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 27e3ef9bef12feedfe7f63498ae49a42f40f8124
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2196c0d1284d4bf316a97d3a4cdd010c0c031303
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968360"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372183"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип перечисления Манажеддевицеремотеактион
 
@@ -27,10 +27,9 @@ ms.locfileid: "35968360"
 |delete|1,1|Пока не задокументировано.|
 |fullScan|2|Пока не задокументировано.|
 |quickScan|4|Пока не задокументировано.|
-|Сигнатуреупдате|SP4|Пока не задокументировано.|
+|сигнатуреупдате|SP4|Пока не задокументировано.|
 |Очистка|17:00|Пока не задокументировано.|
-
-
+|кустомтекстнотификатион|6 |Пока не задокументировано.|
 
 
 

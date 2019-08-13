@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b3168b4c3266c5e5314813c3ae1ea4ef08765a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b790dbc00adc308cfb745e802e5dbe651d95b042
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997997"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375480"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>тип перечисления Микрософтсторефорбусинесспорталселектионоптионс
 
@@ -24,10 +24,8 @@ ms.locfileid: "35997997"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |none|нуль|Этот параметр недоступен для учетной записи|
-|Компанипортал|1,1|Только корпоративный портал Intune.|
-|Приватесторе|2|Только частный магазин МСФБ.|
-
-
+|компанипортал|1,1|Только корпоративный портал Intune.|
+|приватесторе|2|Только частный магазин МСФБ.|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 035bbe9511692a7244e4cdc2d0b707c5edfb4146
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff78a7db5707ab0d2b1bea6e0f144119ff9e5d34
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969102"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371258"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Тип ресурса windows81VpnProxyServer
 
@@ -26,11 +26,11 @@ VPN-прокси-сервер.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Address. Наследуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |порта|Int32|Порта. Допустимые значения — от 0 до 65535, наследуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|Аутоматикаллидетектпроксисеттингс|Boolean|Автоматически определять параметры прокси-сервера.|
-|Бипасспроксисерверфорлокаладдресс|Boolean|Обход прокси-сервера для локального адреса.|
+|аутоматикаллидетектпроксисеттингс|Boolean|Автоматически определять параметры прокси-сервера.|
+|бипасспроксисерверфорлокаладдресс|Boolean|Обход прокси-сервера для локального адреса.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -52,8 +52,6 @@ VPN-прокси-сервер.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
 
 
 

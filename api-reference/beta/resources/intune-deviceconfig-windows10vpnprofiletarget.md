@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 98c5419eecb5a5d33bc77f991754db60808d5912
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68b0a68c0dc96e28f08429839f16274b7f58135e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000356"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369684"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>тип перечисления windows10VpnProfileTarget
 
@@ -25,9 +25,7 @@ ms.locfileid: "36000356"
 |:---|:---|:---|
 |user|нуль|Профиль конечного пользователя VPN.|
 |device;|1,1|Конечный профиль VPN для устройства.|
-|Аутопилотдевице|2|Целевой профиль VPN для устройства автопилота.|
-
-
+|аутопилотдевице|2|Целевой профиль VPN для устройства автопилота.|
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfae669fef3595af5e4001586bfc3673eb284cde
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbb5ecab70a7685746b8ab94546753da082eb415
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999642"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372106"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Тип ресурса remoteLockActionResult
 
@@ -52,8 +52,6 @@ ms.locfileid: "35999642"
   "unlockPin": "String"
 }
 ```
-
-
 
 
 

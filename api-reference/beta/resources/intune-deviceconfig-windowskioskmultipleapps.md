@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5cb62fe9423978e1c5a93423770e429127b70de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cbe64a4c58d405c0ea43e6201f3207169f3c1268
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968962"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370853"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
 
@@ -27,9 +27,9 @@ ms.locfileid: "35968962"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |apps|Коллекция [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|Это единственные приложения Магазина Windows, которые будут доступны для запуска из меню "Пуск". Эта коллекция может содержать не более 128 элементов.|
-|Шовтаскбар|Boolean|Этот параметр позволяет администратору указать, отображается ли панель задач.|
-|Алловакцесстодовнлоадсфолдер|Boolean|Этот параметр разрешает доступ к папке "загрузки" в проводнике.|
-|Дисалловдесктопаппс|Boolean|Этот параметр указывает, что классические приложения разрешены. Значение по умолчанию — true.|
+|шовтаскбар|Boolean|Этот параметр позволяет администратору указать, отображается ли панель задач.|
+|алловакцесстодовнлоадсфолдер|Boolean|Этот параметр разрешает доступ к папке "загрузки" в проводнике.|
+|дисалловдесктопаппс|Boolean|Этот параметр указывает, что классические приложения разрешены. Значение по умолчанию — true.|
 |startMenuLayoutXml|Binary|Позволяет администраторам переопределять макет запуска по умолчанию и запрещает пользователю изменять его.Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML должен быть в двоичном формате.|
 
 ## <a name="relationships"></a>Отношения
@@ -63,8 +63,6 @@ ms.locfileid: "35968962"
   "startMenuLayoutXml": "binary"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47a00ec29f91c81c513ef509e763c4071c106b1e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3964702646476f35f7f6e9b7928b69fca83dc5e8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010212"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371308"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингапптаржесистори
 
@@ -26,9 +26,9 @@ ms.locfileid: "36010212"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|Секуритиграупид|String|Идентификатор группы безопасности AAD, к которой назначена эта группа.|
-|Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
+|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|секуритиграупид|String|Идентификатор группы безопасности AAD, к которой назначена эта группа.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
 ## <a name="relationships"></a>Отношения
@@ -50,8 +50,6 @@ ms.locfileid: "36010212"
   "errorCode": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 473f06515b1cb9a1eee966a471c8a8adb81aca7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 845a3b43acecf4e6ca76f4d00682ec982416b8df
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010611"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369313"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
 
@@ -23,13 +23,11 @@ ms.locfileid: "36010611"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неназначенных|нуль|Не назначены роли и использования.|
-|Смиминкриптион|1,1|Является допустимым для шифрования S/MIME.|
-|Смимесигнинг|2|Является допустимым для подписывания S/MIME.|
-|виртуального|SP4|Допустимо для использования в VPN.|
-|подключений|8 |Допустимо для использования в Wi-Fi.|
-
-
+|неназначенных|нуль|Пока не задокументировано.|
+|смиминкриптион|1,1|Пока не задокументировано.|
+|смимесигнинг|2|Пока не задокументировано.|
+|виртуального|SP4|Пока не задокументировано.|
+|подключений|8 |Пока не задокументировано.|
 
 
 

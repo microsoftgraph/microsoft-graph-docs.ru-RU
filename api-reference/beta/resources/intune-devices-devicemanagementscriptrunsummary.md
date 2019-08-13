@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a2486a52a5ce71805604f9e3d9b8d5bfdd6c85e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9d2b0b92287a045607c02e271155e2e74a2fa90
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999838"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370027"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>Тип ресурса Девицеманажементскриптрунсуммари
 
@@ -30,9 +30,12 @@ ms.locfileid: "35999838"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Key объекта сводки запуска сценария управления устройствами.|
-|Сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
+|сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
-|Сукцессусеркаунт|Int32|Число пользователей Success.|
+|compliantDeviceCount|Int32|Число соответствующих устройств.|
+|ноткомплиантдевицекаунт|Int32|Количество устройств, не соответствующих требованиям.|
+|пендингдевицекаунт|Int32|Количество ожидающих устройств.|
+|сукцессусеркаунт|Int32|Число пользователей Success.|
 |errorUserCount|Int32|Количество пользователей с ошибками.|
 
 ## <a name="relationships"></a>Отношения
@@ -52,12 +55,13 @@ ms.locfileid: "35999838"
   "id": "String (identifier)",
   "successDeviceCount": 1024,
   "errorDeviceCount": 1024,
+  "compliantDeviceCount": 1024,
+  "notCompliantDeviceCount": 1024,
+  "pendingDeviceCount": 1024,
   "successUserCount": 1024,
   "errorUserCount": 1024
 }
 ```
-
-
 
 
 

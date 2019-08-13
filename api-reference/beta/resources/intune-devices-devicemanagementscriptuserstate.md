@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 504615f755845c07a938e54a950bb2460a9fb968
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce2d0971e953199cb8f79ca0963d3f2e53843f91
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968437"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369999"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Тип ресурса Девицеманажементскриптусерстате
 
@@ -33,7 +33,7 @@ ms.locfileid: "35968437"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта состояния пользователя скрипта управления устройствами.|
-|Сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
+|сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
 |errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
 |userPrincipalName|String|Имя участника, указанного пользователем.|
 
@@ -59,8 +59,6 @@ ms.locfileid: "35968437"
   "userPrincipalName": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91e86ad5dd490aa4f42a01c369b8597fde030857
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4be11b14c51f7de9f03de6705a9b2cf71fc0c362
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369390"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
 
@@ -30,9 +30,9 @@ ms.locfileid: "36010632"
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия, унаследованное от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия, унаследованного от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
-|Тоталлиценсескаунт|Int32|Число неудачных попыток отзыва лицензий.|
-|Фаиледлиценсескаунт|Int32|Количество лицензий, которые не удалось отозвать.|
-|Актионфаилуререасон|[Впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
+|тоталлиценсескаунт|Int32|Число неудачных попыток отзыва лицензий.|
+|фаиледлиценсескаунт|Int32|Количество лицензий, которые не удалось отозвать.|
+|актионфаилуререасон|[впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -56,8 +56,6 @@ ms.locfileid: "36010632"
   "actionFailureReason": "String"
 }
 ```
-
-
 
 
 

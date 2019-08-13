@@ -4,12 +4,13 @@ description: Расписание принудительного обновле�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6584312503678596a46d606de97ce6f52335d3c5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: 4e308d0ea6fc8015281515ce0d60d859ed326c16
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741522"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370893"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>Тип ресурса Виндовскиоскфорцеупдатесчедуле
 
@@ -26,7 +27,7 @@ ms.locfileid: "35741522"
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|День недели. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |dayofMonth|Int32|День месяца. Допустимые значения — от 1 до 31.|
-|Руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
+|руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -48,8 +49,6 @@ ms.locfileid: "35741522"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a61709e0f1c35972f539ce2a29fe54c156d534ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60b930ece0d938527666b2f00e84791aacdc3e59
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968997"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370909"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Тип ресурса windowsKioskDesktopApp
 
@@ -26,13 +26,13 @@ ms.locfileid: "35968997"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
+|стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет понятное имя приложения, наследуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|Тип|[Виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
+|Тип|[виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |Автозапуск|Boolean|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути к классическому приложению|
-|Десктопаппликатионид|String|Определение Десктопаппликатионид приложения|
-|Десктопаппликатионлинкпас|String|Определение Десктопаппликатионлинкпас приложения|
+|десктопаппликатионид|String|Определение Десктопаппликатионид приложения|
+|десктопаппликатионлинкпас|String|Определение Десктопаппликатионлинкпас приложения|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -56,8 +56,6 @@ ms.locfileid: "35968997"
   "desktopApplicationLinkPath": "String"
 }
 ```
-
-
 
 
 

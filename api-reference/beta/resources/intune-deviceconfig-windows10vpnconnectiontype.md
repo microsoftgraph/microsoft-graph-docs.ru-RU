@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e72da7fce320b1da546c9f8d7f5113cbad13dd5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f16b905161a88b8e07f8f2d3b3f343ac2d693bef
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969221"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369698"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
 
@@ -23,18 +23,16 @@ ms.locfileid: "35969221"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Пулсесекуре|нуль|Безопасный импульс.|
+|пулсесекуре|нуль|Безопасный импульс.|
 |f5EdgeClient|1,1|Пограничный клиент F5.|
-|Деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
-|Чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
+|деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
+|чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
 |Автоматически|SP4|Автоматически.|
 |Клиентских|17:00|Клиентских.|
 |L2TP|6 |L2TP.|
 |PPTP|7 |PPTP.|
 |клиентов|8 |Клиентов.|
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
-
-
 
 
 

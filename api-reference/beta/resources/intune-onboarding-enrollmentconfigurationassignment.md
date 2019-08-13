@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 130ab9bb56edbcce610f8d0f09a5cc05482bdf1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2ed753720116456f11d67e9adbbb998222ed7191
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998025"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371350"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Тип ресурса enrollmentConfigurationAssignment
 
@@ -55,8 +55,6 @@ ms.locfileid: "35998025"
   }
 }
 ```
-
-
 
 
 

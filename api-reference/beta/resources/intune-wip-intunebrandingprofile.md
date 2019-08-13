@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e922634ec08e1fab412c160d2d8fe7f45d0dde5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010156"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371910"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Тип ресурса Интунебрандингпрофиле
 
@@ -35,8 +35,8 @@ ms.locfileid: "36010156"
 |:---|:---|:---|
 |id|String|Ключ профиля|
 |имя_профиля|String|Имя профиля|
-|Профиледескриптион|String|Описание профиля|
-|Исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|профиледескриптион|String|Описание профиля|
+|исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
 |displayName|Строка|Название компании или организации, которое отображается для конечных пользователей|
@@ -50,10 +50,12 @@ ms.locfileid: "36010156"
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
 |showLogo|Boolean|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
-|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
+|семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
-|Кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -108,11 +110,11 @@ ms.locfileid: "36010156"
     "type": "String",
     "value": "binary"
   },
-  "customPrivacyMessage": "String"
+  "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9dfe596ef2a9564554682b3d5e9408b667b191fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa4178eeafe1c011575b852193beb1102e40e4fc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967204"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373541"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>Тип ресурса Мобилеаппсуппортеддевицетипе
 
@@ -24,8 +24,8 @@ ms.locfileid: "35967204"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|Тип устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
-|Минимумоператингсистемверсион|String|Минимальная версия ОС|
-|Максимумоператингсистемверсион|String|Максимальная версия ОС|
+|минимумоператингсистемверсион|String|Минимальная версия ОС|
+|максимумоператингсистемверсион|String|Максимальная версия ОС|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -45,8 +45,6 @@ ms.locfileid: "35967204"
   "maximumOperatingSystemVersion": "String"
 }
 ```
-
-
 
 
 

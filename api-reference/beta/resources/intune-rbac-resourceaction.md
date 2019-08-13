@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a4f2c64ddc44349df15d118c0eddf05569101e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a07701a516c1ebdaf78e98b97be47d37b876c945
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967632"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369292"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
@@ -47,8 +47,6 @@ ms.locfileid: "35967632"
   ]
 }
 ```
-
-
 
 
 

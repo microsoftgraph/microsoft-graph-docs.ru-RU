@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 874cee0b2b09b3d106d771f2c176ceed3d4d04e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a09b1e4d5e788d19ae0df6f6a02fe46009e5362
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999789"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369929"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
@@ -24,27 +24,28 @@ ms.locfileid: "35999789"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |serialNumber|Строка|Серийный номер.|
-|Тоталсторажеспаце|Int64|Общий объем хранилища устройства.|
-|Фристоражеспаце|Int64|Свободное место на устройстве.|
+|тоталсторажеспаце|Int64|Общий объем хранилища устройства.|
+|фристоражеспаце|Int64|Свободное место на устройстве.|
 |imei|String|IMEI|
 |meid|String|MEID|
 |manufacturer|String|Производитель устройства|
 |model|String|Модель устройства|
 |phoneNumber|String|Номер телефона устройства|
 |subscriberCarrier|String|Абонентская перевозчик устройства|
-|Целлулартечнологи|String|Технология сотовой связи устройства|
-|Вифимак|String|MAC-адрес устройства Wi-Fi|
-|Оператингсистемлангуаже|String|Язык операционной системы устройства|
+|целлулартечнологи|String|Технология сотовой связи устройства|
+|вифимак|String|MAC-адрес устройства Wi-Fi|
+|оператингсистемлангуаже|String|Язык операционной системы устройства|
 |isSupervised|Boolean|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
 |Свойства isshareddevice|Boolean|Общие iPad|
-|Шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
-|ТпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
-|Оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
-|Девицефуллкуалифиеддомаиннаме|String|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
-|Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате|[Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования к оборудованию для обеспечения безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
-|Девицегуардвиртуализатионбаседсекуритистате|[Девицегуардвиртуализатионбаседсекуритистате](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
-|Девицегуардлокалсистемаусоритикредентиалгуардстате|[Девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
+|шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
+|тпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
+|оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
+|девицефуллкуалифиеддомаиннаме|String|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
+|девицегуардвиртуализатионбаседсекуритихардваререкуирементстате|[девицегуардвиртуализатионбаседсекуритихардваререкуирементстате](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования к оборудованию для обеспечения безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
+|девицегуардвиртуализатионбаседсекуритистате|[девицегуардвиртуализатионбаседсекуритистате](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
+|девицегуардлокалсистемаусоритикредентиалгуардстате|[девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
+|осбуилднумбер|String|Номер сборки операционной системы на устройстве с Android|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -88,11 +89,10 @@ ms.locfileid: "35999789"
   "deviceFullQualifiedDomainName": "String",
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
-  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+  "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+  "osBuildNumber": "String"
 }
 ```
-
-
 
 
 

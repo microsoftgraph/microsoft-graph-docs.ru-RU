@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d921ffbaca07a790060011a9970b4b02b0e8472
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 812282fdbe6cc6bb329682ab3d95e8e036c512f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010702"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374339"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -36,8 +36,10 @@ ms.locfileid: "36010702"
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение с логотипом на светлом фоне, которое отображается в приложениях "Корпоративный портал".|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение с логотипом на темном фоне, которое отображается в приложениях "Корпоративный портал".|
 |showNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице приложения корпоративного портала|
-|Кустомпривацимессаже|String|Пользовательское сообщение о конфиденциальности.|
+|ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице приложения корпоративного портала|
+|кустомпривацимессаже|String|Пользовательское сообщение о конфиденциальности.|
+|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 
 ## <a name="relationships"></a>Отношения
@@ -85,11 +87,11 @@ ms.locfileid: "36010702"
     "value": "binary"
   },
   "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true,
   "showDisplayNameNextToLogo": true
 }
 ```
-
-
 
 
 

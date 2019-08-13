@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76ef47ee4db5d7858ac476fd12db1615180bd18b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af29752aaf54b5695d17dd78b1e93aab87755130
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998018"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375438"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -32,8 +32,8 @@ ms.locfileid: "35998018"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта.|
-|mobileDeviceManagementAuthority|[Мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
-|Цертификатеконнекторсеттинг|[Цертификатеконнекторсеттинг](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединителя сертификатов.|
+|mobileDeviceManagementAuthority|[мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
+|цертификатеконнекторсеттинг|[цертификатеконнекторсеттинг](../resources/intune-onboarding-certificateconnectorsetting.md)|Параметр соединителя сертификатов.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -62,8 +62,6 @@ ms.locfileid: "35998018"
   }
 }
 ```
-
-
 
 
 

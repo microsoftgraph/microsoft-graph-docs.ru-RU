@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0136d8e4627875cf3b49e2c1f876bfb7454ea165
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b75ba857cce7798ee68fecaefe65b5251a80317
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010219"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371945"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Тип ресурса Мобилеапптраублешутингхисторитем
 
@@ -23,7 +23,7 @@ ms.locfileid: "36010219"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала.|
+|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -41,8 +41,6 @@ ms.locfileid: "36010219"
   "occurrenceDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: тип перечисления включения
-description: Описывает перечисление включения API Microsoft Graph для Intune, которое поддерживает несколько рабочих процессов.
-author: tfitzmac
+description: Возможные значения свойства
+author: rolyon
 localization_priority: Normal
-doc_type: enumPageType
 ms.prod: Intune
-ms.openlocfilehash: e0825c77a446ebe6d4946b0c666f5675cde2e4f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: enumPageType
+ms.openlocfilehash: 64bb5716982d50c28e734d964e182cdb30838611
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967457"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371973"
 ---
 # <a name="enablement-enum-type"></a>тип перечисления включения
 
@@ -26,3 +26,6 @@ ms.locfileid: "35967457"
 |notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
 |enabled|1,1|Включает параметр на устройстве.|
 |активирован|2|Отключает параметр на устройстве.|
+
+
+

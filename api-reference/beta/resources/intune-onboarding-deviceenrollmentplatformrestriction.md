@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d0e881053d3b24bbfa12e627a4f21ded4049747
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1485c429594967fd3c76fc27cb89e85c84cda92
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998193"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374360"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
@@ -47,8 +47,6 @@ ms.locfileid: "35998193"
   "osMaximumVersion": "String"
 }
 ```
-
-
 
 
 

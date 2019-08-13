@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cbbdd3159982ac82031e654890d90741fd48d15
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6df5367e0c52c7db32c840dcd5b0cf9255e6e289
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010198"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372855"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
 
@@ -26,8 +26,8 @@ ms.locfileid: "36010198"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
+|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
 ## <a name="relationships"></a>Отношения
@@ -48,8 +48,6 @@ ms.locfileid: "36010198"
   "errorCode": "String"
 }
 ```
-
-
 
 
 

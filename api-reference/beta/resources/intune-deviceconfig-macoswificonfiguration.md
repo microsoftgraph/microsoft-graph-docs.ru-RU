@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cbdc718b223d8fe46bc2fd8ca9846bd5d2404784
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f0dafbe9cc5ee2b75c750f2c28c170e0c0eef96
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000888"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368900"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>Тип ресурса Макосвификонфигуратион
 
@@ -27,10 +27,10 @@ ms.locfileid: "36000888"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макосвификонфигуратионс](../api/intune-deviceconfig-macoswificonfiguration-list.md)|Коллекция [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Список свойств и связей объектов [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
-|[Получение Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-get.md)|[Макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Чтение свойств и связей объекта [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
-|[Создание Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-create.md)|[Макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Создание нового объекта [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
+|[Получение Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-get.md)|[макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Чтение свойств и связей объекта [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
+|[Создание Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-create.md)|[макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Создание нового объекта [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
 |[Удаление Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-delete.md)|Нет|Удаляет объект [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md).|
-|[Обновление Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-update.md)|[Макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Обновление свойств объекта [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
+|[Обновление Макосвификонфигуратион](../api/intune-deviceconfig-macoswificonfiguration-update.md)|[макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md)|Обновление свойств объекта [макосвификонфигуратион](../resources/intune-deviceconfig-macoswificonfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -38,23 +38,23 @@ ms.locfileid: "36000888"
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Девицеманажементаппликабилитируледевицемоде|[Девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Нетворкнаме|String|Сетевое имя|
+|нетворкнаме|String|Сетевое имя|
 |SSID|String|Это имя сети Wi-Fi, которая отправляется на все устройства.|
-|Коннектаутоматикалли|Boolean|Подключаться автоматически, если сеть находится в диапазоне. Если задать для этого параметра значение true, запрос пользователя будет пропущен и автоматически подключено устройство к сети Wi/Fi.|
-|Коннектвхеннетворкнамеишидден|Boolean|Подключаться, если сеть не ведет вещание своего имени (SSID). Если задано значение true, этот профиль заставляет устройство подключаться к сети, на которой не выполняется трансляция идентификатора SSID на все устройства.|
-|Вифисекурититипе|[Вифисекурититипе](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, использует ли конечная точка Wi/Fi тип безопасности на основе EAP. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
-|proxySettings|[Вифипроксисеттинг](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси-сервера для этого подключения Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
-|Проксимануаладдресс|String|IP-адрес или DNS-имя узла прокси-сервера при выборе конфигурации вручную.|
-|Проксимануалпорт|Int32|Порт прокси-сервера при выборе конфигурации вручную.|
-|Проксяутоматикконфигуратионурл|String|URL-адрес скрипта автоматической настройки прокси-сервера при выборе параметра Автоматическая настройка. Обычно это URL-адрес файла PAC (Автонастройка прокси-сервера).|
+|коннектаутоматикалли|Boolean|Подключаться автоматически, если сеть находится в диапазоне. Если задать для этого параметра значение true, запрос пользователя будет пропущен и автоматически подключено устройство к сети Wi/Fi.|
+|коннектвхеннетворкнамеишидден|Boolean|Подключаться, если сеть не ведет вещание своего имени (SSID). Если задано значение true, этот профиль заставляет устройство подключаться к сети, на которой не выполняется трансляция идентификатора SSID на все устройства.|
+|вифисекурититипе|[вифисекурититипе](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, использует ли конечная точка Wi/Fi тип безопасности на основе EAP. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|proxySettings|[вифипроксисеттинг](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси-сервера для этого подключения Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
+|проксимануаладдресс|String|IP-адрес или DNS-имя узла прокси-сервера при выборе конфигурации вручную.|
+|проксимануалпорт|Int32|Порт прокси-сервера при выборе конфигурации вручную.|
+|проксяутоматикконфигуратионурл|String|URL-адрес скрипта автоматической настройки прокси-сервера при выборе параметра Автоматическая настройка. Обычно это URL-адрес файла PAC (Автонастройка прокси-сервера).|
 |preSharedKey|String|Это предварительно общий ключ для частной сети Wi-Fi WPA.|
 
 ## <a name="relationships"></a>Отношения
@@ -122,8 +122,6 @@ ms.locfileid: "36000888"
   "preSharedKey": "String"
 }
 ```
-
-
 
 
 

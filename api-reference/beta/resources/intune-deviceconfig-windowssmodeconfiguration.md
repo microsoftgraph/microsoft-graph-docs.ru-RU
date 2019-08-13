@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 30e130a0d482e7334d9a8fb1fc01601ad0094822
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aaf6b8c36ea5d0de5628043f87db89ecc62c6490
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968745"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369621"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>тип перечисления Виндовссмодеконфигуратион
 
@@ -26,8 +26,6 @@ ms.locfileid: "35968745"
 |Ограничение|нуль|Этот параметр удалит все ограничения для режима разблокировки S — значение по умолчанию|
 |блок|1,1|Этот параметр блокирует возможность пользователя разблокировать устройство в режиме S|
 |блокиру|2|Этот параметр позволяет разблокировать устройство в режиме S|
-
-
 
 
 

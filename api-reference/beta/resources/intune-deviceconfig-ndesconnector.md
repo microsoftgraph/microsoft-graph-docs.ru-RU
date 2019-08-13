@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8419d44bd21b9a3ffb5292793657e0794d959831
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00608f053d5c41d25a089708165af7494cf435d2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970026"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368627"
 ---
 # <a name="ndesconnector-resource-type"></a>Тип ресурса Ндесконнектор
 
@@ -34,7 +34,7 @@ ms.locfileid: "35970026"
 |:---|:---|:---|
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
-|состояние|[Ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
+|состояние|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
 |displayName|Строка|Понятное имя соединителя NDES Connector.|
 
 ## <a name="relationships"></a>Отношения
@@ -57,8 +57,6 @@ ms.locfileid: "35970026"
   "displayName": "String"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20bb4e83d3b69a705c172464fd18df53d1678df7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f421da54543d74009cb921ec429e3795e31d8572
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997990"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375396"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Тип ресурса Впптокенлиценсесуммари
 
@@ -26,7 +26,7 @@ ms.locfileid: "35997990"
 |vppTokenId|String|Идентификатор токена VPP.|
 |appleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |organizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
-|Аваилаблелиценсекаунт|Int32|Число доступных лицензий VPP.|
+|аваилаблелиценсекаунт|Int32|Число доступных лицензий VPP.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 
 ## <a name="relationships"></a>Отношения
@@ -49,8 +49,6 @@ ms.locfileid: "35997990"
   "usedLicenseCount": 1024
 }
 ```
-
-
 
 
 

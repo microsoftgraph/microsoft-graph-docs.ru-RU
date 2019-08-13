@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e1a4551dce1f20c55ba91866dccf10a34aba76ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c47dd4432bc39abf3e7e17094dd163703858dd4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969214"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369733"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>тип перечисления windows10VpnAuthenticationMethod
 
@@ -24,10 +24,8 @@ ms.locfileid: "35969214"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |certificate|нуль|Проверка подлинности с помощью сертификата.|
-|Усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
-|Кустомеапксмл|2|Метод проверки подлинности указывается в пользовательском XML-коде EAP.|
-
-
+|усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
+|кустомеапксмл|2|Метод проверки подлинности указывается в пользовательском XML-коде EAP.|
 
 
 

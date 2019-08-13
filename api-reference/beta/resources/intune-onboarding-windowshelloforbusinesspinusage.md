@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 85db28ea23824b3af964254e2f232cec60aaeed4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c7b795e845a83b02e7f62d6123dde12e92baa58c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010625"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36374115"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>тип перечисления Виндовшеллофорбусинесспинусаже
 
@@ -26,8 +26,6 @@ ms.locfileid: "36010625"
 |разрешенных|нуль|Использование определенного правила ПИН-кода разрешено|
 |Обязательный|1,1|Принудительное использование определенного правила ПИН-кодов|
 |разрешена|2|Форбит использование определенного правила ПИН-кодов|
-
-
 
 
 

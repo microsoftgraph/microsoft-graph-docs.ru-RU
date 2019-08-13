@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a6b58667933d530f91685f6fd12a8e5f63ea831
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a32ee6182f8937123662e3a8c3e4d18145607151
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999782"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372330"
 ---
 # <a name="loggedonuser-resource-type"></a>Тип ресурса Логжедонусер
 
@@ -24,7 +24,7 @@ ms.locfileid: "35999782"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя|
-|Ластлогондатетиме|DateTimeOffset|Дата и время, когда пользователь входит в систему|
+|ластлогондатетиме|DateTimeOffset|Дата и время, когда пользователь входит в систему|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -43,8 +43,6 @@ ms.locfileid: "35999782"
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

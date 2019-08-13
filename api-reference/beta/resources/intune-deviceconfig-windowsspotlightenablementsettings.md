@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ed79e7d8e22ad77102411f45dab2d815e56214a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 190da30a63b9bdea7fddeb9f0053b5bee5bdcdda
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000244"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36369607"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>тип перечисления Виндовсспотлигхтенаблементсеттингс
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000244"
 |notConfigured|нуль|"Прожектор" на экране блокировки не настроен|
 |активирован|1,1|Отключить Windows Spotlight на экране блокировки|
 |enabled|2|Включить Windows Spotlight на экране блокировки|
-
-
 
 
 

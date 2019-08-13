@@ -4,13 +4,13 @@ description: Параметры ограничения лимитного под
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-doc_type: resourcePageType
-ms.openlocfilehash: 449a7fbe374b0c750fc70c8bfc4678db996eb3ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: enumPageType
+ms.openlocfilehash: b75f39befaf2aca569cfa19df9803431e780356c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000809"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368657"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип перечисления Метередконнектионлимиттипе
 
@@ -26,8 +26,6 @@ ms.locfileid: "36000809"
 |unrestricted|нуль|Unrestricted|
 |стандарт|1,1|ИСПРАВЛЕНО|
 |переменная|2|Переменная|
-
-
 
 
 

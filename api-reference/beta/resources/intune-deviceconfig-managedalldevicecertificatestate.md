@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e307c28e295282c7d6c6572a90bf6a8f5ae1746
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: resourcePageType
+ms.openlocfilehash: aaf13c6c29668b2cf21bd4ce282c71773de69133
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741518"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368879"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>Тип ресурса Манажедаллдевицецертификатестате
 
@@ -23,26 +24,26 @@ ms.locfileid: "35741518"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Манажедаллдевицецертификатестатес](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|Коллекция [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Список свойств и связей объектов [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
-|[Получение Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-get.md)|[Манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Чтение свойств и связей объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
-|[Создание Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-create.md)|[Манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Создание нового объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
+|[Получение Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-get.md)|[манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Чтение свойств и связей объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
+|[Создание Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-create.md)|[манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Создание нового объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
 |[Удаление Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-delete.md)|Нет|Удаляет объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md).|
-|[Обновление Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-update.md)|[Манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Обновление свойств объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
+|[Обновление Манажедаллдевицецертификатестате](../api/intune-deviceconfig-managedalldevicecertificatestate-update.md)|[манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)|Обновление свойств объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|Цертификатеревокестатус|[Цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|Манажеддевицедисплайнаме|String|Отображаемое имя устройства|
+|цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
-|Цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|Цертификатеиссуернаме|String|Издатель|
+|цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
+|цертификатеиссуернаме|String|Издатель|
 |certificateThumbprint|String|Отпечаток|
-|Цертификатесериалнумбер|String|Серийный номер|
-|Цертификатесубжектнаме|String|Имя субъекта сертификата|
-|Цертификатекэйусажес|Int32|Использование ключа|
-|Цертификатикстендедкэйусажес|String|Расширенное использование ключа|
-|Цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
+|цертификатесериалнумбер|String|Серийный номер|
+|цертификатесубжектнаме|String|Имя субъекта сертификата|
+|цертификатекэйусажес|Int32|Использование ключа|
+|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
+|цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -72,8 +73,6 @@ ms.locfileid: "35741518"
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

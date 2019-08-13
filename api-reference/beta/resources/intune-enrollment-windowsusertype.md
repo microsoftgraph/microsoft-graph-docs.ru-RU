@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 774d17b8001dbd54632136353f221c32807f6693
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 44ebf13f28d825b165044a050f9e507be4aad255
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998865"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372862"
 ---
 # <a name="windowsusertype-enum-type"></a>тип перечисления Виндовсусертипе
 
@@ -25,8 +25,6 @@ ms.locfileid: "35998865"
 |:---|:---|:---|
 |имени|нуль|Пока не задокументировано.|
 |Стандартный|1,1|Пока не задокументировано.|
-
-
 
 
 

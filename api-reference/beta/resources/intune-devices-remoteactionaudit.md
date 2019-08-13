@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a691997c985de17646a28d3a72262ae3c99c174
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb00a4d1d160fe4afdfa5c466b3b23e10c693c09
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35968325"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372113"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
 
@@ -36,11 +36,12 @@ ms.locfileid: "35968325"
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[\] рекомендуется вместо этого использовать свойства initiatedbyuserprincipalname.|
 |Свойства initiatedbyuserprincipalname|String|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
-|action|[Ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`.|
-|Рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
+|action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `logoutSharedAppleDeviceActiveUser` `quickScan`,,,,,,,,,,,,,,,,,,,,, `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` , `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
+|рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
 |deviceOwnerUserPrincipalName|String|Имя участника-пользователя для владельца устройства.|
 |deviceIMEI|String|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|манажеддевицеид|String|Цель действия.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -64,11 +65,10 @@ ms.locfileid: "35968325"
   "requestDateTime": "String (timestamp)",
   "deviceOwnerUserPrincipalName": "String",
   "deviceIMEI": "String",
-  "actionState": "String"
+  "actionState": "String",
+  "managedDeviceId": "String"
 }
 ```
-
-
 
 
 

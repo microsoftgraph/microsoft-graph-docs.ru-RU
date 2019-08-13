@@ -4,12 +4,13 @@ description: Объект Entity, представляющий сводку со
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 364dd6783b31f0d8423ac2825de424f2d5699b1e
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: b162728601d40fef304522af583d4cae6fc62d68
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964019"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371756"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -33,12 +34,12 @@ ms.locfileid: "34964019"
 |:---|:---|:---|
 |id|String|Идентификатор|
 |settingName|String|Имя параметра|
-|Комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
+|комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество конфликтующих устройств|
 |errorCount|Int32|Количество устройств с ошибками.|
-|Нонкомплианткаунт|Int32|Количество устройств, не соответствующих требованиям|
+|нонкомплианткаунт|Int32|Количество устройств, не соответствующих требованиям|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
-|Ремедиатедкаунт|Int32|Количество исправленных устройств.|
+|ремедиатедкаунт|Int32|Количество исправленных устройств.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -64,8 +65,6 @@ ms.locfileid: "34964019"
   "remediatedCount": 1024
 }
 ```
-
-
 
 
 

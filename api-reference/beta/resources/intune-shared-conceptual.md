@@ -4,13 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: c8540b7bd183d21a15ad2e38b5f1bef2caa4d983
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d2252093f222f5908756f312c2e82d591c29920
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010534"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36372806"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -34,6 +33,7 @@ ms.locfileid: "36010534"
 - [Тип платформы устройства](intune-shared-deviceplatformtype.md)
 - [Тип устройства](intune-shared-devicetype.md)
 - [Включение](intune-shared-enablement.md)
+- [Включение](intune-shared-enablement.md)
 - [Объект назначения группы исключения](intune-shared-exclusiongroupassignmenttarget.md)
 - [Объект назначения группы](intune-shared-groupassignmenttarget.md)
 - [Намерение установки](intune-shared-installintent.md)
@@ -48,7 +48,6 @@ ms.locfileid: "36010534"
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Итоговое состояние приложения](intune-shared-resultantappstate.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
-- [Тип учетной записи, от имени которой запускается приложение](intune-shared-runasaccounttype.md)
 - [Состояние выполнения](intune-shared-runstate.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
