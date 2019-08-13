@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5afcbdf1847f3e8b06b6f65dc1c3c6b292f6c99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6fc154f7b0f8b6fafded763c8fbc1276284e53f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985863"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348783"
 ---
 # <a name="executeaction-action"></a>Действие executeAction
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985863"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,10 +53,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|[Манажеддевицеремотеактион](../resources/intune-devices-manageddeviceremoteaction.md)|Пока не задокументировано.|
+|actionName|[манажеддевицеремотеактион](../resources/intune-devices-manageddeviceremoteaction.md)|Пока не задокументировано.|
 |keepEnrollmentData|Boolean|Н/Д|
 |keepUserData|Boolean|Н/Д|
-|Девицеидс|Коллекция строк|Пока не задокументировано.|
+|девицеидс|Коллекция строк|Пока не задокументировано.|
+|нотификатионтитле|String|Пока не задокументировано.|
+|нотификатионбоди|String|Пока не задокументировано.|
 
 
 
@@ -71,7 +73,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 134
+Content-length: 236
 
 {
   "actionName": "delete",
@@ -79,7 +81,9 @@ Content-length: 134
   "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
-  ]
+  ],
+  "notificationTitle": "Notification Title value",
+  "notificationBody": "Notification Body value"
 }
 ```
 
@@ -108,6 +112,7 @@ Content-Length: 385
   }
 }
 ```
+
 
 
 

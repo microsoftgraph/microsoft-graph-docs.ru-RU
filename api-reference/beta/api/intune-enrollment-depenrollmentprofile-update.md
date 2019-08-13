@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57d66b30e73a17a21499df2a938180e5a75a4e1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba65cea5019cf48648cb3d04700c3ab6558a6940
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985464"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348279"
 ---
 # <a name="update-depenrollmentprofile"></a>Обновление depEnrollmentProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985464"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,32 +54,32 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |id|String|GUID объекта, наследуемого от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|Строка|Имя профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |description|String|Описание профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|Рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|Конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала. Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|Рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Указывает, является ли этот профиль профилем по умолчанию|
-|Супервиседмодинаблед|Boolean|Защищенный режим, true для включения, false в противном случае. Дополнительную https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune информацию можно узнать в статье.|
-|Суппортдепартмент|String|Сведения о отделе поддержки|
-|Пасскодедисаблед|Boolean|Указывает, отключена ли область настройки секретного кода|
+|супервиседмодинаблед|Boolean|Защищенный режим, true для включения, false в противном случае. Дополнительную https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune информацию можно узнать в статье.|
+|суппортдепартмент|String|Сведения о отделе поддержки|
+|пасскодедисаблед|Boolean|Указывает, отключена ли область настройки секретного кода|
 |Обязательный|Boolean|Указывает, является ли профиль обязательной|
-|Локатиондисаблед|Boolean|Указывает, отключена ли область настройки службы расположения|
-|Суппортфоненумбер|String|Номер телефона службы поддержки|
+|локатиондисаблед|Boolean|Указывает, отключена ли область настройки службы расположения|
+|суппортфоненумбер|String|Номер телефона службы поддержки|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
-|Профилеремовалдисаблед|Boolean|Указывает, отключен ли параметр удаления профиля|
-|Манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
-|Рестореблоккед|Boolean|Указывает, заблокирована ли область настроек восстановления|
-|Ресторефромандроиддисаблед|Boolean|Указывает, отключено ли восстановление из Android|
-|Апплеиддисаблед|Boolean|Указывает, отключена ли область настройки Apple ID|
-|Термсандкондитионсдисаблед|Boolean|Указывает, отключена ли область установки "условия и условия"|
-|Таучиддисаблед|Boolean|Указывает, отключена ли панель настройки сенсорного экрана|
-|Апплепайдисаблед|Boolean|Указывает, отключена ли область настройки оплаты Apple|
-|Зумдисаблед|Boolean|Указывает, отключена ли область настройки масштабирования|
-|Сиридисаблед|Boolean|Указывает, отключена ли область настройки Siri|
-|Диагностиксдисаблед|Boolean|Указывает, отключена ли область настройки диагностики|
-|Макосрегистратиондисаблед|Boolean|Указывает, отключена ли регистрация Mac OS|
-|Макосфилеваултдисаблед|Boolean|Указывает, отключено ли хранилище файлов Mac OS|
-|Аваитдевицеконфигуредконфирматион|Boolean|Указывает, должно ли устройство ждать настройки подтверждения.|
+|профилеремовалдисаблед|Boolean|Указывает, отключен ли параметр удаления профиля|
+|манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
+|рестореблоккед|Boolean|Указывает, заблокирована ли область настроек восстановления|
+|ресторефромандроиддисаблед|Boolean|Указывает, отключено ли восстановление из Android|
+|апплеиддисаблед|Boolean|Указывает, отключена ли область настройки Apple ID|
+|термсандкондитионсдисаблед|Boolean|Указывает, отключена ли область установки "условия и условия"|
+|таучиддисаблед|Boolean|Указывает, отключена ли панель настройки сенсорного экрана|
+|апплепайдисаблед|Boolean|Указывает, отключена ли область настройки оплаты Apple|
+|зумдисаблед|Boolean|Указывает, отключена ли область настройки масштабирования|
+|сиридисаблед|Boolean|Указывает, отключена ли область настройки Siri|
+|диагностиксдисаблед|Boolean|Указывает, отключена ли область настройки диагностики|
+|макосрегистратиондисаблед|Boolean|Указывает, отключена ли регистрация Mac OS|
+|макосфилеваултдисаблед|Boolean|Указывает, отключено ли хранилище файлов Mac OS|
+|аваитдевицеконфигуредконфирматион|Boolean|Указывает, должно ли устройство ждать настройки подтверждения.|
 |Свойства sharedipadmaximumusercount|Int32|Указывает максимальное количество пользователей, которые могут использовать общий iPad. Относится только к общему режиму iPad.|
 |Enablesharedipad к|Boolean|Указывает, следует ли зарегистрировать устройство в режиме, позволяющем использовать сценарии с несколькими пользователями. Применяется только в общих iPad.|
 
@@ -186,6 +186,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

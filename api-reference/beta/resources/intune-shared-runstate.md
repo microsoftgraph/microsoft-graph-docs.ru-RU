@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7345ffbef5d8eb02dd7bbf8595ec933c312ab559
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d77f3ef9a2d7fd37edeaf2b4cc25d5e6d5bfcf4f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967391"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347852"
 ---
 # <a name="runstate-enum-type"></a>тип перечисления Рунстате
 
@@ -26,8 +26,8 @@ ms.locfileid: "35967391"
 |unknown|нуль|Неизвестный результат.|
 |success|1,1|Сценарий успешно запущен.|
 |сбой|2|Не удалось выполнить скрипт.|
-
-
+|error|4|Ошибка при обращении к скрипту обнаружения.|
+|закончен|SP4|Сценарий находится в состоянии ожидания выполнения.|
 
 
 
