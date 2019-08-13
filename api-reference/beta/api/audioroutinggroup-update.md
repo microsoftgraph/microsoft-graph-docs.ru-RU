@@ -5,59 +5,59 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b99feecbd10a1d50551972a7d7b7dc38275f97a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0071a2be9d74a50461a9f937a18489a3e3b4988e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945300"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318483"
 ---
-# <a name="update-audio-routing-group"></a><span data-ttu-id="ef41f-103">Обновление группы маршрутизации звука</span><span class="sxs-lookup"><span data-stu-id="ef41f-103">Update audio routing group</span></span>
+# <a name="update-audio-routing-group"></a><span data-ttu-id="5799a-103">Обновление группы маршрутизации звука</span><span class="sxs-lookup"><span data-stu-id="5799a-103">Update audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef41f-104">Изменение источников и приемников [аудиораутингграуп](../resources/audioroutinggroup.md).</span><span class="sxs-lookup"><span data-stu-id="ef41f-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="5799a-104">Изменение источников и приемников [аудиораутингграуп](../resources/audioroutinggroup.md).</span><span class="sxs-lookup"><span data-stu-id="5799a-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ef41f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ef41f-105">Permissions</span></span>
-<span data-ttu-id="ef41f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ef41f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5799a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5799a-105">Permissions</span></span>
+<span data-ttu-id="5799a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5799a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ef41f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ef41f-108">Permission type</span></span> | <span data-ttu-id="ef41f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ef41f-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="5799a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5799a-108">Permission type</span></span> | <span data-ttu-id="5799a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5799a-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="ef41f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ef41f-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ef41f-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ef41f-111">Not Supported</span></span>                       |
-| <span data-ttu-id="ef41f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ef41f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef41f-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ef41f-113">Not Supported</span></span>                       |
-| <span data-ttu-id="ef41f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ef41f-114">Application</span></span>     | <span data-ttu-id="ef41f-115">Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL</span><span class="sxs-lookup"><span data-stu-id="ef41f-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="5799a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5799a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5799a-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="5799a-111">Not Supported</span></span>                       |
+| <span data-ttu-id="5799a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5799a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5799a-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="5799a-113">Not Supported</span></span>                       |
+| <span data-ttu-id="5799a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5799a-114">Application</span></span>     | <span data-ttu-id="5799a-115">Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL</span><span class="sxs-lookup"><span data-stu-id="5799a-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ef41f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ef41f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5799a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5799a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ef41f-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ef41f-117">Request headers</span></span>
-| <span data-ttu-id="ef41f-118">Имя</span><span class="sxs-lookup"><span data-stu-id="ef41f-118">Name</span></span>          | <span data-ttu-id="ef41f-119">Описание</span><span class="sxs-lookup"><span data-stu-id="ef41f-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="5799a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5799a-117">Request headers</span></span>
+| <span data-ttu-id="5799a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="5799a-118">Name</span></span>          | <span data-ttu-id="5799a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="5799a-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="ef41f-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ef41f-120">Authorization</span></span> | <span data-ttu-id="ef41f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ef41f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5799a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5799a-120">Authorization</span></span> | <span data-ttu-id="5799a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5799a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ef41f-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ef41f-123">Request body</span></span>
-<span data-ttu-id="ef41f-124">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="ef41f-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="ef41f-125">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="ef41f-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="ef41f-126">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="ef41f-126">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5799a-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5799a-123">Request body</span></span>
+<span data-ttu-id="5799a-124">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="5799a-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="5799a-125">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="5799a-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="5799a-126">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="5799a-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="ef41f-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="ef41f-127">Property</span></span>       | <span data-ttu-id="ef41f-128">Тип</span><span class="sxs-lookup"><span data-stu-id="ef41f-128">Type</span></span>    |<span data-ttu-id="ef41f-129">Описание</span><span class="sxs-lookup"><span data-stu-id="ef41f-129">Description</span></span>|
+| <span data-ttu-id="5799a-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="5799a-127">Property</span></span>       | <span data-ttu-id="5799a-128">Тип</span><span class="sxs-lookup"><span data-stu-id="5799a-128">Type</span></span>    |<span data-ttu-id="5799a-129">Описание</span><span class="sxs-lookup"><span data-stu-id="5799a-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ef41f-130">приемники</span><span class="sxs-lookup"><span data-stu-id="ef41f-130">receivers</span></span> | <span data-ttu-id="ef41f-131">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="ef41f-131">String collection</span></span> | <span data-ttu-id="ef41f-132">Целевые участники в Аудиораутингграуп.</span><span class="sxs-lookup"><span data-stu-id="ef41f-132">The target participants in the audioRoutingGroup.</span></span> |
-| <span data-ttu-id="ef41f-133">Раутингмоде</span><span class="sxs-lookup"><span data-stu-id="ef41f-133">routingMode</span></span> | <span data-ttu-id="ef41f-134">String</span><span class="sxs-lookup"><span data-stu-id="ef41f-134">String</span></span> | <span data-ttu-id="ef41f-135">Возможные значения: `oneToOne`, `multicast`.</span><span class="sxs-lookup"><span data-stu-id="ef41f-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
-| <span data-ttu-id="ef41f-136">sources</span><span class="sxs-lookup"><span data-stu-id="ef41f-136">sources</span></span> | <span data-ttu-id="ef41f-137">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="ef41f-137">String collection</span></span> | <span data-ttu-id="ef41f-138">Участник источника в Аудиораутингграуп.</span><span class="sxs-lookup"><span data-stu-id="ef41f-138">The source participant in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="5799a-130">приемники</span><span class="sxs-lookup"><span data-stu-id="5799a-130">receivers</span></span> | <span data-ttu-id="5799a-131">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="5799a-131">String collection</span></span> | <span data-ttu-id="5799a-132">Целевые участники в Аудиораутингграуп.</span><span class="sxs-lookup"><span data-stu-id="5799a-132">The target participants in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="5799a-133">раутингмоде</span><span class="sxs-lookup"><span data-stu-id="5799a-133">routingMode</span></span> | <span data-ttu-id="5799a-134">String</span><span class="sxs-lookup"><span data-stu-id="5799a-134">String</span></span> | <span data-ttu-id="5799a-135">Возможные значения: `oneToOne`, `multicast`.</span><span class="sxs-lookup"><span data-stu-id="5799a-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
+| <span data-ttu-id="5799a-136">sources</span><span class="sxs-lookup"><span data-stu-id="5799a-136">sources</span></span> | <span data-ttu-id="5799a-137">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="5799a-137">String collection</span></span> | <span data-ttu-id="5799a-138">Участник источника в Аудиораутингграуп.</span><span class="sxs-lookup"><span data-stu-id="5799a-138">The source participant in the audioRoutingGroup.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="ef41f-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef41f-139">Response</span></span>
-<span data-ttu-id="ef41f-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ef41f-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5799a-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="5799a-139">Response</span></span>
+<span data-ttu-id="5799a-140">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5799a-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ef41f-141">Пример</span><span class="sxs-lookup"><span data-stu-id="ef41f-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5799a-141">Пример</span><span class="sxs-lookup"><span data-stu-id="5799a-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ef41f-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="ef41f-142">Request</span></span>
-<span data-ttu-id="ef41f-143">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ef41f-143">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="5799a-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="5799a-142">Request</span></span>
+<span data-ttu-id="5799a-143">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5799a-143">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ef41f-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="ef41f-144">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="5799a-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="5799a-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update-audioRoutingGroup"
@@ -79,27 +79,27 @@ Content-Length: 233
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ef41f-145">C#</span><span class="sxs-lookup"><span data-stu-id="ef41f-145">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5799a-145">C#</span><span class="sxs-lookup"><span data-stu-id="5799a-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-audioroutinggroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ef41f-146">Javascript</span><span class="sxs-lookup"><span data-stu-id="ef41f-146">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5799a-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5799a-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ef41f-147">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ef41f-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5799a-147">Цель — C</span><span class="sxs-lookup"><span data-stu-id="5799a-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="ef41f-148">Java</span><span class="sxs-lookup"><span data-stu-id="ef41f-148">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="5799a-148">Java</span><span class="sxs-lookup"><span data-stu-id="5799a-148">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ef41f-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef41f-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="5799a-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="5799a-149">Response</span></span>
 
-> <span data-ttu-id="ef41f-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ef41f-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5799a-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5799a-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

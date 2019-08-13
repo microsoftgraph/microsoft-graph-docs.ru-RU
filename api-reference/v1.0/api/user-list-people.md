@@ -5,30 +5,30 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 458194fe0299c5607268afed482a5112e1fda51b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65a0aa0b04f2c9a8b02a0fd7f4d3accce08636a5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026784"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316269"
 ---
-# <a name="list-people"></a><span data-ttu-id="24e77-103">Список людей</span><span class="sxs-lookup"><span data-stu-id="24e77-103">List people</span></span>
+# <a name="list-people"></a><span data-ttu-id="f142c-103">Список людей</span><span class="sxs-lookup"><span data-stu-id="f142c-103">List people</span></span>
 
-<span data-ttu-id="24e77-104">Получите коллекцию объектов [person](../resources/person.md), упорядоченных по их релевантности для [пользователя](../resources/user.md), которая определяется его моделями общения и совместной работы, а также бизнес-отношениями.</span><span class="sxs-lookup"><span data-stu-id="24e77-104">Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.</span></span>
+<span data-ttu-id="f142c-104">Получите коллекцию объектов [person](../resources/person.md), упорядоченных по их релевантности для [пользователя](../resources/user.md), которая определяется его моделями общения и совместной работы, а также бизнес-отношениями.</span><span class="sxs-lookup"><span data-stu-id="f142c-104">Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.</span></span>
 
-<span data-ttu-id="24e77-p101">Для получения этих сведений используйте API службы "Люди". Примеры см. в разделе [Примеры](#examples) и статье о том, как [получить релевантную информацию о людях](/graph/people-example).</span><span class="sxs-lookup"><span data-stu-id="24e77-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](/graph/people-example).</span></span>
+<span data-ttu-id="f142c-p101">Для получения этих сведений используйте API службы "Люди". Примеры см. в разделе [Примеры](#examples) и статье о том, как [получить релевантную информацию о людях](/graph/people-example).</span><span class="sxs-lookup"><span data-stu-id="f142c-p101">You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Get relevant information about people](/graph/people-example).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="24e77-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="24e77-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f142c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f142c-107">Permissions</span></span>
 
-<span data-ttu-id="24e77-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="24e77-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f142c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f142c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="24e77-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="24e77-110">Permission type</span></span>      | <span data-ttu-id="24e77-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="24e77-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f142c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f142c-110">Permission type</span></span>      | <span data-ttu-id="f142c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f142c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="24e77-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="24e77-112">Delegated (work or school account)</span></span> | <span data-ttu-id="24e77-113">People.Read, People.Read.All</span><span class="sxs-lookup"><span data-stu-id="24e77-113">People.Read, People.Read.All</span></span>    |
-|<span data-ttu-id="24e77-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="24e77-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24e77-115">People.Read</span><span class="sxs-lookup"><span data-stu-id="24e77-115">People.Read</span></span>    |
-|<span data-ttu-id="24e77-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="24e77-116">Application</span></span> | <span data-ttu-id="24e77-117">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="24e77-117">People.Read.All</span></span> |
+|<span data-ttu-id="f142c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f142c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f142c-113">People.Read, People.Read.All</span><span class="sxs-lookup"><span data-stu-id="f142c-113">People.Read, People.Read.All</span></span>    |
+|<span data-ttu-id="f142c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f142c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f142c-115">People.Read</span><span class="sxs-lookup"><span data-stu-id="f142c-115">People.Read</span></span>    |
+|<span data-ttu-id="f142c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f142c-116">Application</span></span> | <span data-ttu-id="f142c-117">People.Read.All</span><span class="sxs-lookup"><span data-stu-id="f142c-117">People.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="24e77-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="24e77-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f142c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f142c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,42 +37,42 @@ GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="24e77-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="24e77-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f142c-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f142c-119">Optional query parameters</span></span>
 
-<span data-ttu-id="24e77-120">Этот метод поддерживает [параметры запроса OData](/graph/query-parameters) также для настройки ответа. Примеры см. в статье [Получение релевантной информации о людях](/graph/people-example).</span><span class="sxs-lookup"><span data-stu-id="24e77-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, as shown in the examples in the article [Get relevant information about people](/graph/people-example).</span></span>
+<span data-ttu-id="f142c-120">Этот метод поддерживает [параметры запроса OData](/graph/query-parameters) также для настройки ответа. Примеры см. в статье [Получение релевантной информации о людях](/graph/people-example).</span><span class="sxs-lookup"><span data-stu-id="f142c-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, as shown in the examples in the article [Get relevant information about people](/graph/people-example).</span></span>
 
-|<span data-ttu-id="24e77-121">Имя</span><span class="sxs-lookup"><span data-stu-id="24e77-121">Name</span></span>|<span data-ttu-id="24e77-122">Значение</span><span class="sxs-lookup"><span data-stu-id="24e77-122">Value</span></span>|<span data-ttu-id="24e77-123">Описание</span><span class="sxs-lookup"><span data-stu-id="24e77-123">Description</span></span>|
+|<span data-ttu-id="f142c-121">Имя</span><span class="sxs-lookup"><span data-stu-id="f142c-121">Name</span></span>|<span data-ttu-id="f142c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="f142c-122">Value</span></span>|<span data-ttu-id="f142c-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f142c-123">Description</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="24e77-124">$filter</span><span class="sxs-lookup"><span data-stu-id="24e77-124">$filter</span></span>|<span data-ttu-id="24e77-125">string</span><span class="sxs-lookup"><span data-stu-id="24e77-125">string</span></span>|<span data-ttu-id="24e77-126">Позволяет возвращать в отклике только тех людей, чьи записи содержат указанные критерии.</span><span class="sxs-lookup"><span data-stu-id="24e77-126">Limits the response to only those people whose record contains the specified criteria.</span></span>|
-|<span data-ttu-id="24e77-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="24e77-127">$orderby</span></span>|<span data-ttu-id="24e77-128">строка</span><span class="sxs-lookup"><span data-stu-id="24e77-128">string</span></span>|<span data-ttu-id="24e77-129">По умолчанию люди в ответе сортируются по степени соответствия запросу.</span><span class="sxs-lookup"><span data-stu-id="24e77-129">By default the people in the response are sorted by their relevance to your query.</span></span> <span data-ttu-id="24e77-130">Этот порядок можно изменить с помощью параметра *$orderby*.</span><span class="sxs-lookup"><span data-stu-id="24e77-130">You can change the order of the people in the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="24e77-131">$search</span><span class="sxs-lookup"><span data-stu-id="24e77-131">$search</span></span>|<span data-ttu-id="24e77-132">string</span><span class="sxs-lookup"><span data-stu-id="24e77-132">string</span></span>|<span data-ttu-id="24e77-133">Поиск пользователей по имени или псевдониму.</span><span class="sxs-lookup"><span data-stu-id="24e77-133">Search for people by name or alias.</span></span> <span data-ttu-id="24e77-134">Поддерживается нечеткое соответствие.</span><span class="sxs-lookup"><span data-stu-id="24e77-134">Supports Fuzzy matching.</span></span> <span data-ttu-id="24e77-135">Параметр применяется только для поиска людей, относящихся к вошедшему пользователю, а не для поиска людей, относящихся к другим пользователям.</span><span class="sxs-lookup"><span data-stu-id="24e77-135">Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users.</span></span> <span data-ttu-id="24e77-136">Также поддерживает ключевое слово `topic` для поиска людей с учетом тем, извлеченных из бесед электронной почты с определенным человеком.</span><span class="sxs-lookup"><span data-stu-id="24e77-136">Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person.</span></span> <span data-ttu-id="24e77-137">Сведения и примеры см. в разделе *Нечеткий поиск* статьи [Получение релевантных сведений о людях](/graph/people-example#perform-a-fuzzy-search).</span><span class="sxs-lookup"><span data-stu-id="24e77-137">See the *Perform a fuzzy search* section at [Get relevant information about people](/graph/people-example#perform-a-fuzzy-search) for information and examples.</span></span> |
-|<span data-ttu-id="24e77-138">$select</span><span class="sxs-lookup"><span data-stu-id="24e77-138">$select</span></span>|<span data-ttu-id="24e77-139">string</span><span class="sxs-lookup"><span data-stu-id="24e77-139">string</span></span>|<span data-ttu-id="24e77-p105">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="24e77-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
-|<span data-ttu-id="24e77-142">$skip</span><span class="sxs-lookup"><span data-stu-id="24e77-142">$skip</span></span>|<span data-ttu-id="24e77-143">int</span><span class="sxs-lookup"><span data-stu-id="24e77-143">int</span></span>|<span data-ttu-id="24e77-p106">Пропуск первых n результатов; эту функцию удобно использовать при разбиении результатов на страницы. Эта возможность не поддерживается при использовании параметра *$search*.</span><span class="sxs-lookup"><span data-stu-id="24e77-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
-|<span data-ttu-id="24e77-146">$top</span><span class="sxs-lookup"><span data-stu-id="24e77-146">$top</span></span>|<span data-ttu-id="24e77-147">int</span><span class="sxs-lookup"><span data-stu-id="24e77-147">int</span></span>|<span data-ttu-id="24e77-148">Количество возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="24e77-148">Number of results to be returned.</span></span>|
+|<span data-ttu-id="f142c-124">$filter</span><span class="sxs-lookup"><span data-stu-id="f142c-124">$filter</span></span>|<span data-ttu-id="f142c-125">string</span><span class="sxs-lookup"><span data-stu-id="f142c-125">string</span></span>|<span data-ttu-id="f142c-126">Позволяет возвращать в отклике только тех людей, чьи записи содержат указанные критерии.</span><span class="sxs-lookup"><span data-stu-id="f142c-126">Limits the response to only those people whose record contains the specified criteria.</span></span>|
+|<span data-ttu-id="f142c-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="f142c-127">$orderby</span></span>|<span data-ttu-id="f142c-128">строка</span><span class="sxs-lookup"><span data-stu-id="f142c-128">string</span></span>|<span data-ttu-id="f142c-129">По умолчанию люди в ответе сортируются по степени соответствия запросу.</span><span class="sxs-lookup"><span data-stu-id="f142c-129">By default the people in the response are sorted by their relevance to your query.</span></span> <span data-ttu-id="f142c-130">Этот порядок можно изменить с помощью параметра *$orderby*.</span><span class="sxs-lookup"><span data-stu-id="f142c-130">You can change the order of the people in the response using the *$orderby* parameter.</span></span>|
+|<span data-ttu-id="f142c-131">$search</span><span class="sxs-lookup"><span data-stu-id="f142c-131">$search</span></span>|<span data-ttu-id="f142c-132">string</span><span class="sxs-lookup"><span data-stu-id="f142c-132">string</span></span>|<span data-ttu-id="f142c-133">Поиск пользователей по имени или псевдониму.</span><span class="sxs-lookup"><span data-stu-id="f142c-133">Search for people by name or alias.</span></span> <span data-ttu-id="f142c-134">Поддерживается нечеткое соответствие.</span><span class="sxs-lookup"><span data-stu-id="f142c-134">Supports Fuzzy matching.</span></span> <span data-ttu-id="f142c-135">Параметр применяется только для поиска людей, относящихся к вошедшему пользователю, а не для поиска людей, относящихся к другим пользователям.</span><span class="sxs-lookup"><span data-stu-id="f142c-135">Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users.</span></span> <span data-ttu-id="f142c-136">Также поддерживает ключевое слово `topic` для поиска людей с учетом тем, извлеченных из бесед электронной почты с определенным человеком.</span><span class="sxs-lookup"><span data-stu-id="f142c-136">Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person.</span></span> <span data-ttu-id="f142c-137">Сведения и примеры см. в разделе *Нечеткий поиск* статьи [Получение релевантных сведений о людях](/graph/people-example#perform-a-fuzzy-search).</span><span class="sxs-lookup"><span data-stu-id="f142c-137">See the *Perform a fuzzy search* section at [Get relevant information about people](/graph/people-example#perform-a-fuzzy-search) for information and examples.</span></span> |
+|<span data-ttu-id="f142c-138">$select</span><span class="sxs-lookup"><span data-stu-id="f142c-138">$select</span></span>|<span data-ttu-id="f142c-139">string</span><span class="sxs-lookup"><span data-stu-id="f142c-139">string</span></span>|<span data-ttu-id="f142c-p105">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="f142c-p105">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>|
+|<span data-ttu-id="f142c-142">$skip</span><span class="sxs-lookup"><span data-stu-id="f142c-142">$skip</span></span>|<span data-ttu-id="f142c-143">int</span><span class="sxs-lookup"><span data-stu-id="f142c-143">int</span></span>|<span data-ttu-id="f142c-p106">Пропуск первых n результатов; эту функцию удобно использовать при разбиении результатов на страницы. Эта возможность не поддерживается при использовании параметра *$search*.</span><span class="sxs-lookup"><span data-stu-id="f142c-p106">Skip the first n results, useful for paging. This is not supported when using *$search*.</span></span>|
+|<span data-ttu-id="f142c-146">$top</span><span class="sxs-lookup"><span data-stu-id="f142c-146">$top</span></span>|<span data-ttu-id="f142c-147">int</span><span class="sxs-lookup"><span data-stu-id="f142c-147">int</span></span>|<span data-ttu-id="f142c-148">Количество возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="f142c-148">Number of results to be returned.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="24e77-149">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="24e77-149">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f142c-149">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="f142c-149">Request headers</span></span>
 
-| <span data-ttu-id="24e77-150">Имя</span><span class="sxs-lookup"><span data-stu-id="24e77-150">Name</span></span>      |<span data-ttu-id="24e77-151">Описание</span><span class="sxs-lookup"><span data-stu-id="24e77-151">Description</span></span>|
+| <span data-ttu-id="f142c-150">Имя</span><span class="sxs-lookup"><span data-stu-id="f142c-150">Name</span></span>      |<span data-ttu-id="f142c-151">Описание</span><span class="sxs-lookup"><span data-stu-id="f142c-151">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="24e77-152">Авторизация</span><span class="sxs-lookup"><span data-stu-id="24e77-152">Authorization</span></span>  | <span data-ttu-id="24e77-p107">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="24e77-p107">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="24e77-155">Accept</span><span class="sxs-lookup"><span data-stu-id="24e77-155">Accept</span></span> | <span data-ttu-id="24e77-156">application/json</span><span class="sxs-lookup"><span data-stu-id="24e77-156">application/json</span></span> |
+| <span data-ttu-id="f142c-152">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f142c-152">Authorization</span></span>  | <span data-ttu-id="f142c-p107">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f142c-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f142c-155">Accept</span><span class="sxs-lookup"><span data-stu-id="f142c-155">Accept</span></span> | <span data-ttu-id="f142c-156">application/json</span><span class="sxs-lookup"><span data-stu-id="f142c-156">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="24e77-157">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="24e77-157">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f142c-157">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f142c-157">Request body</span></span>
 
-<span data-ttu-id="24e77-158">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="24e77-158">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f142c-158">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f142c-158">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="24e77-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="24e77-159">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f142c-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="f142c-159">Response</span></span>
 
-<span data-ttu-id="24e77-p108">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [person](../resources/person.md) в тексте ответа. Отклик может содержать один объект person либо коллекцию объектов person.</span><span class="sxs-lookup"><span data-stu-id="24e77-p108">If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects.</span></span>
+<span data-ttu-id="f142c-p108">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [person](../resources/person.md) в тексте ответа. Отклик может содержать один объект person либо коллекцию объектов person.</span><span class="sxs-lookup"><span data-stu-id="f142c-p108">If successful, this method returns a `200 OK` response code and a collection of [person](../resources/person.md) objects in the response body. The response can contain one person object or a collection of person objects.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="24e77-162">Примеры</span><span class="sxs-lookup"><span data-stu-id="24e77-162">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f142c-162">Примеры</span><span class="sxs-lookup"><span data-stu-id="f142c-162">Examples</span></span>
 
-#### <a name="request"></a><span data-ttu-id="24e77-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="24e77-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f142c-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="f142c-163">Request</span></span>
 
-<span data-ttu-id="24e77-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="24e77-164">The following is an example of the request.</span></span>
+<span data-ttu-id="f142c-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f142c-164">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="24e77-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="24e77-165">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f142c-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="f142c-165">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_person_collection"
@@ -81,28 +81,28 @@ GET /users/{id | userPrincipalName}/people
 ```http
 GET https://graph.microsoft.com/v1.0/me/people
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="24e77-166">C#</span><span class="sxs-lookup"><span data-stu-id="24e77-166">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f142c-166">C#</span><span class="sxs-lookup"><span data-stu-id="f142c-166">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-person-collection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="24e77-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="24e77-167">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f142c-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f142c-167">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-person-collection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="24e77-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24e77-168">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f142c-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f142c-168">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="24e77-169">Java</span><span class="sxs-lookup"><span data-stu-id="24e77-169">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="f142c-169">Java</span><span class="sxs-lookup"><span data-stu-id="f142c-169">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="24e77-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="24e77-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f142c-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="f142c-170">Response</span></span>
 
-<span data-ttu-id="24e77-171">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="24e77-171">The following is an example of the response.</span></span>
+<span data-ttu-id="f142c-171">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f142c-171">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ Content-length: 1370
 }
 ```
 
-<span data-ttu-id="24e77-172">Другие примеры см. в статье [Получение релевантной информации о людях](/graph/people-example).</span><span class="sxs-lookup"><span data-stu-id="24e77-172">For more examples, see the article [Get relevant information about people](/graph/people-example).</span></span>
+<span data-ttu-id="f142c-172">Другие примеры см. в статье [Получение релевантной информации о людях](/graph/people-example).</span><span class="sxs-lookup"><span data-stu-id="f142c-172">For more examples, see the article [Get relevant information about people](/graph/people-example).</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

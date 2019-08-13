@@ -5,55 +5,55 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 365f835d9eb6130687ae81afc79e454a7583a57e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3dbb2fede88e2232fdb14761549de03c2ec129d7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945825"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36319006"
 ---
-# <a name="get-administrativeunit"></a><span data-ttu-id="e6d35-103">Получение administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="e6d35-103">Get administrativeUnit</span></span>
+# <a name="get-administrativeunit"></a><span data-ttu-id="fb302-103">Получение administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="fb302-103">Get administrativeUnit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e6d35-104">Получение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="e6d35-104">Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+<span data-ttu-id="fb302-104">Получение свойств и связей объекта [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="fb302-104">Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="e6d35-105">Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="e6d35-105">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.</span></span>
+<span data-ttu-id="fb302-105">Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="fb302-105">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e6d35-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e6d35-106">Permissions</span></span>
-<span data-ttu-id="e6d35-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6d35-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fb302-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fb302-106">Permissions</span></span>
+<span data-ttu-id="fb302-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fb302-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="e6d35-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e6d35-109">Permission type</span></span>      | <span data-ttu-id="e6d35-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e6d35-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fb302-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fb302-109">Permission type</span></span>      | <span data-ttu-id="fb302-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fb302-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e6d35-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e6d35-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e6d35-112">AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="e6d35-112">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e6d35-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e6d35-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6d35-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6d35-114">Not supported.</span></span>    |
-|<span data-ttu-id="e6d35-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e6d35-115">Application</span></span> | <span data-ttu-id="e6d35-116">AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="e6d35-116">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="fb302-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fb302-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fb302-112">AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="fb302-112">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fb302-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fb302-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb302-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fb302-114">Not supported.</span></span>    |
+|<span data-ttu-id="fb302-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fb302-115">Application</span></span> | <span data-ttu-id="fb302-116">AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="fb302-116">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e6d35-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e6d35-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fb302-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fb302-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="e6d35-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e6d35-118">Optional query parameters</span></span>
-<span data-ttu-id="e6d35-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="e6d35-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fb302-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fb302-118">Optional query parameters</span></span>
+<span data-ttu-id="fb302-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fb302-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e6d35-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e6d35-120">Request headers</span></span>
-| <span data-ttu-id="e6d35-121">Имя</span><span class="sxs-lookup"><span data-stu-id="e6d35-121">Name</span></span>      |<span data-ttu-id="e6d35-122">Описание</span><span class="sxs-lookup"><span data-stu-id="e6d35-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fb302-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fb302-120">Request headers</span></span>
+| <span data-ttu-id="fb302-121">Имя</span><span class="sxs-lookup"><span data-stu-id="fb302-121">Name</span></span>      |<span data-ttu-id="fb302-122">Описание</span><span class="sxs-lookup"><span data-stu-id="fb302-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e6d35-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e6d35-123">Authorization</span></span>  | <span data-ttu-id="e6d35-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e6d35-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fb302-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fb302-123">Authorization</span></span>  | <span data-ttu-id="fb302-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fb302-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e6d35-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e6d35-126">Request body</span></span>
-<span data-ttu-id="e6d35-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e6d35-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fb302-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fb302-126">Request body</span></span>
+<span data-ttu-id="fb302-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fb302-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e6d35-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="e6d35-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fb302-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb302-128">Response</span></span>
 
-<span data-ttu-id="e6d35-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e6d35-129">If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e6d35-130">Пример</span><span class="sxs-lookup"><span data-stu-id="e6d35-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e6d35-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e6d35-131">Request</span></span>
-<span data-ttu-id="e6d35-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e6d35-132">Here is an example of the request.</span></span>
+<span data-ttu-id="fb302-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fb302-129">If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fb302-130">Пример</span><span class="sxs-lookup"><span data-stu-id="fb302-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fb302-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="fb302-131">Request</span></span>
+<span data-ttu-id="fb302-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fb302-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e6d35-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e6d35-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="fb302-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="fb302-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_administrativeunit"
@@ -61,26 +61,26 @@ GET /administrativeUnits/{id}
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e6d35-134">C#</span><span class="sxs-lookup"><span data-stu-id="e6d35-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="fb302-134">C#</span><span class="sxs-lookup"><span data-stu-id="fb302-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e6d35-135">Javascript</span><span class="sxs-lookup"><span data-stu-id="e6d35-135">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb302-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fb302-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e6d35-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="e6d35-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fb302-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fb302-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-administrativeunit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e6d35-137">Java</span><span class="sxs-lookup"><span data-stu-id="e6d35-137">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="fb302-137">Java</span><span class="sxs-lookup"><span data-stu-id="fb302-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="e6d35-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="e6d35-138">Response</span></span>
-<span data-ttu-id="e6d35-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e6d35-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fb302-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="fb302-138">Response</span></span>
+<span data-ttu-id="fb302-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="fb302-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,10 +99,10 @@ Content-length: 134
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e6d35-142">См. также</span><span class="sxs-lookup"><span data-stu-id="e6d35-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fb302-142">См. также</span><span class="sxs-lookup"><span data-stu-id="fb302-142">See also</span></span>
 
-- [<span data-ttu-id="e6d35-143">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="e6d35-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="e6d35-144">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="e6d35-144">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="fb302-143">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="fb302-143">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="fb302-144">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="fb302-144">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

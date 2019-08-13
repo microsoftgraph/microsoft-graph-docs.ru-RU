@@ -5,29 +5,29 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 331708b7e544d4b38fff9f5270a28f766790963a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77b541868720eedf65592b04f547ad918bdae89e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023145"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36376033"
 ---
-# <a name="get-a-listitemversion-resource"></a><span data-ttu-id="0c6ac-103">Получение ресурса ListItemVersion</span><span class="sxs-lookup"><span data-stu-id="0c6ac-103">Get a ListItemVersion resource</span></span>
+# <a name="get-a-listitemversion-resource"></a><span data-ttu-id="5ea5b-103">Получение ресурса ListItemVersion</span><span class="sxs-lookup"><span data-stu-id="5ea5b-103">Get a ListItemVersion resource</span></span>
 
-<span data-ttu-id="0c6ac-104">В этой статье рассказывается, как получить метаданные для определенной версии ресурса [ListItem](../resources/listitem.md).</span><span class="sxs-lookup"><span data-stu-id="0c6ac-104">Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).</span></span>
+<span data-ttu-id="5ea5b-104">В этой статье рассказывается, как получить метаданные для определенной версии ресурса [ListItem](../resources/listitem.md).</span><span class="sxs-lookup"><span data-stu-id="5ea5b-104">Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0c6ac-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0c6ac-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ea5b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5ea5b-105">Permissions</span></span>
 
-<span data-ttu-id="0c6ac-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0c6ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5ea5b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5ea5b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="0c6ac-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0c6ac-108">Permission type</span></span>             | <span data-ttu-id="0c6ac-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0c6ac-109">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="5ea5b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5ea5b-108">Permission type</span></span>             | <span data-ttu-id="5ea5b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5ea5b-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="0c6ac-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0c6ac-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0c6ac-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c6ac-111">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
-| <span data-ttu-id="0c6ac-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0c6ac-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0c6ac-113">Н/д</span><span class="sxs-lookup"><span data-stu-id="0c6ac-113">n/a</span></span>                                         |
-| <span data-ttu-id="0c6ac-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0c6ac-114">Application</span></span>                            | <span data-ttu-id="0c6ac-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0c6ac-115">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="5ea5b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5ea5b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5ea5b-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ea5b-111">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="5ea5b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5ea5b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ea5b-113">Н/д</span><span class="sxs-lookup"><span data-stu-id="5ea5b-113">n/a</span></span>                                         |
+| <span data-ttu-id="5ea5b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5ea5b-114">Application</span></span>                            | <span data-ttu-id="5ea5b-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ea5b-115">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
 
 
-## <a name="http-request"></a><span data-ttu-id="0c6ac-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0c6ac-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ea5b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5ea5b-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -37,46 +37,46 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a><span data-ttu-id="0c6ac-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="0c6ac-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ea5b-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="5ea5b-117">Response</span></span>
 
-<span data-ttu-id="0c6ac-118">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0c6ac-118">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="0c6ac-119">Пример</span><span class="sxs-lookup"><span data-stu-id="0c6ac-119">Example</span></span>
-
-<span data-ttu-id="0c6ac-120">В этом примере показано, как получить версию объекта listItem и расширить коллекцию полей для запроса значений полей в объекте listItem.</span><span class="sxs-lookup"><span data-stu-id="0c6ac-120">This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.</span></span>
-
-### <a name="http-request"></a><span data-ttu-id="0c6ac-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0c6ac-121">HTTP request</span></span>
+<span data-ttu-id="5ea5b-118">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5ea5b-118">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0c6ac-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c6ac-122">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="5ea5b-119">Пример</span><span class="sxs-lookup"><span data-stu-id="5ea5b-119">Example</span></span>
+
+<span data-ttu-id="5ea5b-120">В этом примере показано, как получить версию объекта listItem и расширить коллекцию полей для запроса значений полей в объекте listItem.</span><span class="sxs-lookup"><span data-stu-id="5ea5b-120">This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="5ea5b-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5ea5b-121">HTTP request</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="5ea5b-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="5ea5b-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read sites.read.all", "tags": "service.graph service.sharepoint" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0c6ac-123">C#</span><span class="sxs-lookup"><span data-stu-id="0c6ac-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5ea5b-123">C#</span><span class="sxs-lookup"><span data-stu-id="5ea5b-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-single-version-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0c6ac-124">Javascript</span><span class="sxs-lookup"><span data-stu-id="0c6ac-124">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5ea5b-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5ea5b-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-single-version-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0c6ac-125">Цель — C</span><span class="sxs-lookup"><span data-stu-id="0c6ac-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5ea5b-125">Цель — C</span><span class="sxs-lookup"><span data-stu-id="5ea5b-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="0c6ac-126">Java</span><span class="sxs-lookup"><span data-stu-id="0c6ac-126">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="5ea5b-126">Java</span><span class="sxs-lookup"><span data-stu-id="5ea5b-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-single-version-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="0c6ac-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="0c6ac-127">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5ea5b-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="5ea5b-127">Response</span></span>
 
-<span data-ttu-id="0c6ac-128">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="0c6ac-128">This returns a collection of versions:</span></span>
+<span data-ttu-id="5ea5b-128">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="5ea5b-128">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItemVersion", "truncated": true } -->
 

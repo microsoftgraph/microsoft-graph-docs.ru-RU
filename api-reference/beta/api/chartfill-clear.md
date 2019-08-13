@@ -5,28 +5,28 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4598d3b77b0e053fa656ef36319b7bfa010ad548
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 36ad1d8d2d79fa9f1873ccc83f6001659162e2a4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943941"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317188"
 ---
-# <a name="chartfill-clear"></a><span data-ttu-id="50a72-103">ChartFill: clear</span><span class="sxs-lookup"><span data-stu-id="50a72-103">ChartFill: clear</span></span>
+# <a name="chartfill-clear"></a><span data-ttu-id="3dd25-103">ChartFill: clear</span><span class="sxs-lookup"><span data-stu-id="3dd25-103">ChartFill: clear</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="50a72-104">Очищает цвет заливки элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="50a72-104">Clear the fill color of a chart element.</span></span>
-## <a name="permissions"></a><span data-ttu-id="50a72-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="50a72-105">Permissions</span></span>
-<span data-ttu-id="50a72-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50a72-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3dd25-104">Очищает цвет заливки элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="3dd25-104">Clear the fill color of a chart element.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3dd25-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3dd25-105">Permissions</span></span>
+<span data-ttu-id="3dd25-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3dd25-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="50a72-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="50a72-108">Permission type</span></span>      | <span data-ttu-id="50a72-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="50a72-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3dd25-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3dd25-108">Permission type</span></span>      | <span data-ttu-id="3dd25-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3dd25-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="50a72-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="50a72-110">Delegated (work or school account)</span></span> | <span data-ttu-id="50a72-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50a72-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="50a72-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="50a72-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50a72-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50a72-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="50a72-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="50a72-114">Application</span></span> | <span data-ttu-id="50a72-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50a72-115">Not supported.</span></span> |
+|<span data-ttu-id="3dd25-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3dd25-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3dd25-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3dd25-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3dd25-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3dd25-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3dd25-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3dd25-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3dd25-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3dd25-114">Application</span></span> | <span data-ttu-id="3dd25-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3dd25-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="50a72-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="50a72-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3dd25-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3dd25-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
@@ -34,24 +34,24 @@ POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
 POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="50a72-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="50a72-117">Request headers</span></span>
-| <span data-ttu-id="50a72-118">Имя</span><span class="sxs-lookup"><span data-stu-id="50a72-118">Name</span></span>       | <span data-ttu-id="50a72-119">Описание</span><span class="sxs-lookup"><span data-stu-id="50a72-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3dd25-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3dd25-117">Request headers</span></span>
+| <span data-ttu-id="3dd25-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3dd25-118">Name</span></span>       | <span data-ttu-id="3dd25-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3dd25-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="50a72-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="50a72-120">Authorization</span></span>  | <span data-ttu-id="50a72-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="50a72-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="50a72-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="50a72-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="50a72-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="50a72-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3dd25-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3dd25-120">Authorization</span></span>  | <span data-ttu-id="3dd25-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3dd25-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3dd25-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="3dd25-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="3dd25-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="3dd25-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="50a72-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="50a72-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3dd25-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3dd25-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="50a72-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="50a72-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3dd25-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="3dd25-127">Response</span></span>
 
-<span data-ttu-id="50a72-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="50a72-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3dd25-p104">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3dd25-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="50a72-130">Пример</span><span class="sxs-lookup"><span data-stu-id="50a72-130">Example</span></span>
-<span data-ttu-id="50a72-131">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="50a72-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="50a72-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="50a72-132">Request</span></span>
-<span data-ttu-id="50a72-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="50a72-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3dd25-130">Пример</span><span class="sxs-lookup"><span data-stu-id="3dd25-130">Example</span></span>
+<span data-ttu-id="3dd25-131">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="3dd25-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3dd25-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="3dd25-132">Request</span></span>
+<span data-ttu-id="3dd25-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3dd25-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="50a72-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="50a72-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="3dd25-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="3dd25-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chartfill_clear"
@@ -59,27 +59,27 @@ POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="50a72-135">C#</span><span class="sxs-lookup"><span data-stu-id="50a72-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="3dd25-135">C#</span><span class="sxs-lookup"><span data-stu-id="3dd25-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chartfill-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="50a72-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="50a72-136">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3dd25-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3dd25-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartfill-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="50a72-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="50a72-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3dd25-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3dd25-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chartfill-clear-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="50a72-138">Java</span><span class="sxs-lookup"><span data-stu-id="50a72-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="3dd25-138">Java</span><span class="sxs-lookup"><span data-stu-id="3dd25-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chartfill-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="50a72-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="50a72-139">Response</span></span>
-<span data-ttu-id="50a72-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="50a72-140">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3dd25-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="3dd25-139">Response</span></span>
+<span data-ttu-id="3dd25-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3dd25-140">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
