@@ -5,34 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9409ddebd69d8b046c522de1c3e58baabc15a2ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab26d2b6cda774f3d2cf3284f92d1901cc4bdf82
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970621"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36333214"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a><span data-ttu-id="9fd52-103">тип перечисления deviceComplianceActionType</span><span class="sxs-lookup"><span data-stu-id="9fd52-103">deviceComplianceActionType enum type</span></span>
+# <a name="devicecomplianceactiontype-enum-type"></a><span data-ttu-id="db5e2-103">тип перечисления deviceComplianceActionType</span><span class="sxs-lookup"><span data-stu-id="db5e2-103">deviceComplianceActionType enum type</span></span>
 
-> <span data-ttu-id="9fd52-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9fd52-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="db5e2-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db5e2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9fd52-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9fd52-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="db5e2-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="db5e2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9fd52-106">Перечисление типов запланированных действий</span><span class="sxs-lookup"><span data-stu-id="9fd52-106">Scheduled Action Type Enum</span></span>
+<span data-ttu-id="db5e2-106">Перечисление типов запланированных действий</span><span class="sxs-lookup"><span data-stu-id="db5e2-106">Scheduled Action Type Enum</span></span>
 
-## <a name="members"></a><span data-ttu-id="9fd52-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="9fd52-107">Members</span></span>
-|<span data-ttu-id="9fd52-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="9fd52-108">Member</span></span>|<span data-ttu-id="9fd52-109">Значение</span><span class="sxs-lookup"><span data-stu-id="9fd52-109">Value</span></span>|<span data-ttu-id="9fd52-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9fd52-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="db5e2-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="db5e2-107">Members</span></span>
+|<span data-ttu-id="db5e2-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="db5e2-108">Member</span></span>|<span data-ttu-id="db5e2-109">Значение</span><span class="sxs-lookup"><span data-stu-id="db5e2-109">Value</span></span>|<span data-ttu-id="db5e2-110">Описание</span><span class="sxs-lookup"><span data-stu-id="db5e2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9fd52-111">noAction</span><span class="sxs-lookup"><span data-stu-id="9fd52-111">noAction</span></span>|<span data-ttu-id="9fd52-112">нуль</span><span class="sxs-lookup"><span data-stu-id="9fd52-112">0</span></span>|<span data-ttu-id="9fd52-113">Без действий</span><span class="sxs-lookup"><span data-stu-id="9fd52-113">No Action</span></span>|
-|<span data-ttu-id="9fd52-114">уведомляющее</span><span class="sxs-lookup"><span data-stu-id="9fd52-114">notification</span></span>|<span data-ttu-id="9fd52-115">1,1</span><span class="sxs-lookup"><span data-stu-id="9fd52-115">1</span></span>|<span data-ttu-id="9fd52-116">Уведомление об отправке</span><span class="sxs-lookup"><span data-stu-id="9fd52-116">Send Notification</span></span>|
-|<span data-ttu-id="9fd52-117">блок</span><span class="sxs-lookup"><span data-stu-id="9fd52-117">block</span></span>|<span data-ttu-id="9fd52-118">2</span><span class="sxs-lookup"><span data-stu-id="9fd52-118">2</span></span>|<span data-ttu-id="9fd52-119">Блокировка устройства в AAD</span><span class="sxs-lookup"><span data-stu-id="9fd52-119">Block the device in AAD</span></span>|
-|<span data-ttu-id="9fd52-120">снять</span><span class="sxs-lookup"><span data-stu-id="9fd52-120">retire</span></span>|<span data-ttu-id="9fd52-121">4</span><span class="sxs-lookup"><span data-stu-id="9fd52-121">3</span></span>|<span data-ttu-id="9fd52-122">Прекращение использования устройства</span><span class="sxs-lookup"><span data-stu-id="9fd52-122">Retire the device</span></span>|
-|<span data-ttu-id="9fd52-123">Очистка</span><span class="sxs-lookup"><span data-stu-id="9fd52-123">wipe</span></span>|<span data-ttu-id="9fd52-124">SP4</span><span class="sxs-lookup"><span data-stu-id="9fd52-124">4</span></span>|<span data-ttu-id="9fd52-125">Очистка устройства</span><span class="sxs-lookup"><span data-stu-id="9fd52-125">Wipe the device</span></span>|
-|<span data-ttu-id="9fd52-126">Ремовересаурцеакцесспрофилес</span><span class="sxs-lookup"><span data-stu-id="9fd52-126">removeResourceAccessProfiles</span></span>|<span data-ttu-id="9fd52-127">17:00</span><span class="sxs-lookup"><span data-stu-id="9fd52-127">5</span></span>|<span data-ttu-id="9fd52-128">Удаление профилей доступа к ресурсам с устройства</span><span class="sxs-lookup"><span data-stu-id="9fd52-128">Remove Resource Access Profiles from the device</span></span>|
-|<span data-ttu-id="9fd52-129">Пушнотификатион</span><span class="sxs-lookup"><span data-stu-id="9fd52-129">pushNotification</span></span>|<span data-ttu-id="9fd52-130">9 </span><span class="sxs-lookup"><span data-stu-id="9fd52-130">9</span></span>|<span data-ttu-id="9fd52-131">Отправка push-уведомления на устройство</span><span class="sxs-lookup"><span data-stu-id="9fd52-131">Send push notification to device</span></span>|
-|<span data-ttu-id="9fd52-132">remoteLock</span><span class="sxs-lookup"><span data-stu-id="9fd52-132">remoteLock</span></span>|<span data-ttu-id="9fd52-133">10 </span><span class="sxs-lookup"><span data-stu-id="9fd52-133">10</span></span>|<span data-ttu-id="9fd52-134">Удаленная блокировка устройства</span><span class="sxs-lookup"><span data-stu-id="9fd52-134">Remotely lock the device</span></span>|
-
-
+|<span data-ttu-id="db5e2-111">noAction</span><span class="sxs-lookup"><span data-stu-id="db5e2-111">noAction</span></span>|<span data-ttu-id="db5e2-112">нуль</span><span class="sxs-lookup"><span data-stu-id="db5e2-112">0</span></span>|<span data-ttu-id="db5e2-113">Без действий</span><span class="sxs-lookup"><span data-stu-id="db5e2-113">No Action</span></span>|
+|<span data-ttu-id="db5e2-114">уведомляющее</span><span class="sxs-lookup"><span data-stu-id="db5e2-114">notification</span></span>|<span data-ttu-id="db5e2-115">1,1</span><span class="sxs-lookup"><span data-stu-id="db5e2-115">1</span></span>|<span data-ttu-id="db5e2-116">Уведомление об отправке</span><span class="sxs-lookup"><span data-stu-id="db5e2-116">Send Notification</span></span>|
+|<span data-ttu-id="db5e2-117">блок</span><span class="sxs-lookup"><span data-stu-id="db5e2-117">block</span></span>|<span data-ttu-id="db5e2-118">2</span><span class="sxs-lookup"><span data-stu-id="db5e2-118">2</span></span>|<span data-ttu-id="db5e2-119">Блокировка устройства в AAD</span><span class="sxs-lookup"><span data-stu-id="db5e2-119">Block the device in AAD</span></span>|
+|<span data-ttu-id="db5e2-120">снять</span><span class="sxs-lookup"><span data-stu-id="db5e2-120">retire</span></span>|<span data-ttu-id="db5e2-121">4</span><span class="sxs-lookup"><span data-stu-id="db5e2-121">3</span></span>|<span data-ttu-id="db5e2-122">Прекращение использования устройства</span><span class="sxs-lookup"><span data-stu-id="db5e2-122">Retire the device</span></span>|
+|<span data-ttu-id="db5e2-123">Очистка</span><span class="sxs-lookup"><span data-stu-id="db5e2-123">wipe</span></span>|<span data-ttu-id="db5e2-124">SP4</span><span class="sxs-lookup"><span data-stu-id="db5e2-124">4</span></span>|<span data-ttu-id="db5e2-125">Очистка устройства</span><span class="sxs-lookup"><span data-stu-id="db5e2-125">Wipe the device</span></span>|
+|<span data-ttu-id="db5e2-126">ремовересаурцеакцесспрофилес</span><span class="sxs-lookup"><span data-stu-id="db5e2-126">removeResourceAccessProfiles</span></span>|<span data-ttu-id="db5e2-127">17:00</span><span class="sxs-lookup"><span data-stu-id="db5e2-127">5</span></span>|<span data-ttu-id="db5e2-128">Удаление профилей доступа к ресурсам с устройства</span><span class="sxs-lookup"><span data-stu-id="db5e2-128">Remove Resource Access Profiles from the device</span></span>|
+|<span data-ttu-id="db5e2-129">пушнотификатион</span><span class="sxs-lookup"><span data-stu-id="db5e2-129">pushNotification</span></span>|<span data-ttu-id="db5e2-130">9 </span><span class="sxs-lookup"><span data-stu-id="db5e2-130">9</span></span>|<span data-ttu-id="db5e2-131">Отправка push-уведомления на устройство</span><span class="sxs-lookup"><span data-stu-id="db5e2-131">Send push notification to device</span></span>|
+|<span data-ttu-id="db5e2-132">remoteLock</span><span class="sxs-lookup"><span data-stu-id="db5e2-132">remoteLock</span></span>|<span data-ttu-id="db5e2-133">10 </span><span class="sxs-lookup"><span data-stu-id="db5e2-133">10</span></span>|<span data-ttu-id="db5e2-134">Удаленная блокировка устройства</span><span class="sxs-lookup"><span data-stu-id="db5e2-134">Remotely lock the device</span></span>|
 
 
 

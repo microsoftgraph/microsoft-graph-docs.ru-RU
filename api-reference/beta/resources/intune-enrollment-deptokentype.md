@@ -5,29 +5,27 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2272badd8e2e9fe6b08588273cccc6240c1ec4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d50aa4f0cfd2be2908ef2101da7492860fe6923
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999236"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36328013"
 ---
-# <a name="deptokentype-enum-type"></a><span data-ttu-id="33bee-103">тип перечисления Дептокентипе</span><span class="sxs-lookup"><span data-stu-id="33bee-103">depTokenType enum type</span></span>
+# <a name="deptokentype-enum-type"></a><span data-ttu-id="ba2ab-103">тип перечисления Дептокентипе</span><span class="sxs-lookup"><span data-stu-id="ba2ab-103">depTokenType enum type</span></span>
 
-> <span data-ttu-id="33bee-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="33bee-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ba2ab-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba2ab-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="33bee-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="33bee-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ba2ab-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ba2ab-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="33bee-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="33bee-106">Not yet documented</span></span>
+<span data-ttu-id="ba2ab-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="ba2ab-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="33bee-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="33bee-107">Members</span></span>
-|<span data-ttu-id="33bee-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="33bee-108">Member</span></span>|<span data-ttu-id="33bee-109">Значение</span><span class="sxs-lookup"><span data-stu-id="33bee-109">Value</span></span>|<span data-ttu-id="33bee-110">Описание</span><span class="sxs-lookup"><span data-stu-id="33bee-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ba2ab-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="ba2ab-107">Members</span></span>
+|<span data-ttu-id="ba2ab-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="ba2ab-108">Member</span></span>|<span data-ttu-id="ba2ab-109">Значение</span><span class="sxs-lookup"><span data-stu-id="ba2ab-109">Value</span></span>|<span data-ttu-id="ba2ab-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ba2ab-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="33bee-111">none</span><span class="sxs-lookup"><span data-stu-id="33bee-111">none</span></span>|<span data-ttu-id="33bee-112">нуль</span><span class="sxs-lookup"><span data-stu-id="33bee-112">0</span></span>|<span data-ttu-id="33bee-113">Тип маркера — None</span><span class="sxs-lookup"><span data-stu-id="33bee-113">Token Type is None</span></span>|
-|<span data-ttu-id="33bee-114">DEP</span><span class="sxs-lookup"><span data-stu-id="33bee-114">dep</span></span>|<span data-ttu-id="33bee-115">1,1</span><span class="sxs-lookup"><span data-stu-id="33bee-115">1</span></span>|<span data-ttu-id="33bee-116">Тип токена — DEP.</span><span class="sxs-lookup"><span data-stu-id="33bee-116">Token Type is Dep.</span></span>|
-|<span data-ttu-id="33bee-117">Апплесчулманажер</span><span class="sxs-lookup"><span data-stu-id="33bee-117">appleSchoolManager</span></span>|<span data-ttu-id="33bee-118">2</span><span class="sxs-lookup"><span data-stu-id="33bee-118">2</span></span>|<span data-ttu-id="33bee-119">Тип маркера — Apple School Manager</span><span class="sxs-lookup"><span data-stu-id="33bee-119">Token Type is Apple School Manager</span></span>|
-
-
+|<span data-ttu-id="ba2ab-111">none</span><span class="sxs-lookup"><span data-stu-id="ba2ab-111">none</span></span>|<span data-ttu-id="ba2ab-112">нуль</span><span class="sxs-lookup"><span data-stu-id="ba2ab-112">0</span></span>|<span data-ttu-id="ba2ab-113">Тип маркера — None</span><span class="sxs-lookup"><span data-stu-id="ba2ab-113">Token Type is None</span></span>|
+|<span data-ttu-id="ba2ab-114">DEP</span><span class="sxs-lookup"><span data-stu-id="ba2ab-114">dep</span></span>|<span data-ttu-id="ba2ab-115">1,1</span><span class="sxs-lookup"><span data-stu-id="ba2ab-115">1</span></span>|<span data-ttu-id="ba2ab-116">Тип токена — DEP.</span><span class="sxs-lookup"><span data-stu-id="ba2ab-116">Token Type is Dep.</span></span>|
+|<span data-ttu-id="ba2ab-117">апплесчулманажер</span><span class="sxs-lookup"><span data-stu-id="ba2ab-117">appleSchoolManager</span></span>|<span data-ttu-id="ba2ab-118">2</span><span class="sxs-lookup"><span data-stu-id="ba2ab-118">2</span></span>|<span data-ttu-id="ba2ab-119">Тип маркера — Apple School Manager</span><span class="sxs-lookup"><span data-stu-id="ba2ab-119">Token Type is Apple School Manager</span></span>|
 
 
 

@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3bde036b25cf443570b4a1951a4b3fba09b4e3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5acc9f67980c5776c90f606e7ac0806abf9e3a5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951556"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36330498"
 ---
-# <a name="revokealllicenses-action"></a><span data-ttu-id="f3a2c-103">Действие revokeAllLicenses</span><span class="sxs-lookup"><span data-stu-id="f3a2c-103">revokeAllLicenses action</span></span>
+# <a name="revokealllicenses-action"></a><span data-ttu-id="c7784-103">Действие revokeAllLicenses</span><span class="sxs-lookup"><span data-stu-id="c7784-103">revokeAllLicenses action</span></span>
 
-> <span data-ttu-id="f3a2c-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c7784-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c7784-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f3a2c-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c7784-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c7784-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f3a2c-106">Отозвать все назначенные лицензии на Android для данного приложения.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-106">Revoke all assigned iOS VPP licenses for given app.</span></span>
+<span data-ttu-id="c7784-106">Отозвать все назначенные лицензии на Android для данного приложения.</span><span class="sxs-lookup"><span data-stu-id="c7784-106">Revoke all assigned iOS VPP licenses for given app.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f3a2c-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="f3a2c-107">Prerequisites</span></span>
-<span data-ttu-id="f3a2c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3a2c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c7784-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="c7784-107">Prerequisites</span></span>
+<span data-ttu-id="c7784-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7784-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f3a2c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f3a2c-110">Permission type</span></span>|<span data-ttu-id="f3a2c-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f3a2c-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c7784-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c7784-110">Permission type</span></span>|<span data-ttu-id="c7784-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="c7784-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f3a2c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f3a2c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f3a2c-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3a2c-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="f3a2c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f3a2c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f3a2c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-115">Not supported.</span></span>|
-|<span data-ttu-id="f3a2c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f3a2c-116">Application</span></span>|<span data-ttu-id="f3a2c-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-117">Not supported.</span></span>|
+|<span data-ttu-id="c7784-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c7784-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c7784-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7784-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="c7784-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c7784-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c7784-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c7784-115">Not supported.</span></span>|
+|<span data-ttu-id="c7784-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c7784-116">Application</span></span>|<span data-ttu-id="c7784-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7784-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f3a2c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f3a2c-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c7784-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c7784-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,30 +40,30 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeAllLicenses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f3a2c-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f3a2c-119">Request headers</span></span>
-|<span data-ttu-id="f3a2c-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f3a2c-120">Header</span></span>|<span data-ttu-id="f3a2c-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f3a2c-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c7784-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c7784-119">Request headers</span></span>
+|<span data-ttu-id="c7784-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c7784-120">Header</span></span>|<span data-ttu-id="c7784-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c7784-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f3a2c-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f3a2c-122">Authorization</span></span>|<span data-ttu-id="f3a2c-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f3a2c-124">Accept</span><span class="sxs-lookup"><span data-stu-id="f3a2c-124">Accept</span></span>|<span data-ttu-id="f3a2c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f3a2c-125">application/json</span></span>|
+|<span data-ttu-id="c7784-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c7784-122">Authorization</span></span>|<span data-ttu-id="c7784-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c7784-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c7784-124">Accept</span><span class="sxs-lookup"><span data-stu-id="c7784-124">Accept</span></span>|<span data-ttu-id="c7784-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c7784-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f3a2c-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f3a2c-126">Request body</span></span>
-<span data-ttu-id="f3a2c-127">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c7784-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c7784-126">Request body</span></span>
+<span data-ttu-id="c7784-127">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c7784-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="f3a2c-128">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="c7784-128">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="c7784-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="f3a2c-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="f3a2c-129">Property</span></span>|<span data-ttu-id="f3a2c-130">Тип</span><span class="sxs-lookup"><span data-stu-id="f3a2c-130">Type</span></span>|<span data-ttu-id="f3a2c-131">Описание</span><span class="sxs-lookup"><span data-stu-id="f3a2c-131">Description</span></span>|
+|<span data-ttu-id="c7784-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="c7784-129">Property</span></span>|<span data-ttu-id="c7784-130">Тип</span><span class="sxs-lookup"><span data-stu-id="c7784-130">Type</span></span>|<span data-ttu-id="c7784-131">Описание</span><span class="sxs-lookup"><span data-stu-id="c7784-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f3a2c-132">Нотифиманажеддевицес</span><span class="sxs-lookup"><span data-stu-id="f3a2c-132">notifyManagedDevices</span></span>|<span data-ttu-id="f3a2c-133">Boolean</span><span class="sxs-lookup"><span data-stu-id="f3a2c-133">Boolean</span></span>|<span data-ttu-id="f3a2c-134">Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство</span><span class="sxs-lookup"><span data-stu-id="f3a2c-134">Boolean that indicates if revoke notification should be sent to device</span></span>|
+|<span data-ttu-id="c7784-132">нотифиманажеддевицес</span><span class="sxs-lookup"><span data-stu-id="c7784-132">notifyManagedDevices</span></span>|<span data-ttu-id="c7784-133">Boolean</span><span class="sxs-lookup"><span data-stu-id="c7784-133">Boolean</span></span>|<span data-ttu-id="c7784-134">Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство</span><span class="sxs-lookup"><span data-stu-id="c7784-134">Boolean that indicates if revoke notification should be sent to device</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="f3a2c-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="f3a2c-135">Response</span></span>
-<span data-ttu-id="f3a2c-136">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-136">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="c7784-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="c7784-135">Response</span></span>
+<span data-ttu-id="c7784-136">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="c7784-136">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f3a2c-137">Пример</span><span class="sxs-lookup"><span data-stu-id="f3a2c-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c7784-137">Пример</span><span class="sxs-lookup"><span data-stu-id="c7784-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f3a2c-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="f3a2c-138">Request</span></span>
-<span data-ttu-id="f3a2c-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c7784-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="c7784-138">Request</span></span>
+<span data-ttu-id="c7784-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c7784-139">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
 
@@ -75,11 +75,12 @@ Content-length: 36
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f3a2c-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="f3a2c-140">Response</span></span>
-<span data-ttu-id="f3a2c-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f3a2c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c7784-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7784-140">Response</span></span>
+<span data-ttu-id="c7784-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c7784-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
