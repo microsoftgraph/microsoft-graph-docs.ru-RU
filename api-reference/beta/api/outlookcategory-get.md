@@ -5,53 +5,53 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 94b985c949baf17b0102a270f9a85c1145936960
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7c397a10d94fa8ce34cebeeb23b2b5f568f7855a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995519"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349929"
 ---
-# <a name="get-outlook-category"></a><span data-ttu-id="f7d88-103">Получение категории Outlook</span><span class="sxs-lookup"><span data-stu-id="f7d88-103">Get Outlook category</span></span>
+# <a name="get-outlook-category"></a><span data-ttu-id="9ec46-103">Получение категории Outlook</span><span class="sxs-lookup"><span data-stu-id="9ec46-103">Get Outlook category</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f7d88-104">Получение свойств и отношений указанного объекта [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="f7d88-104">Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+<span data-ttu-id="9ec46-104">Получение свойств и отношений указанного объекта [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="9ec46-104">Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f7d88-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f7d88-105">Permissions</span></span>
-<span data-ttu-id="f7d88-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7d88-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9ec46-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9ec46-105">Permissions</span></span>
+<span data-ttu-id="9ec46-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9ec46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f7d88-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f7d88-108">Permission type</span></span>      | <span data-ttu-id="f7d88-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f7d88-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9ec46-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9ec46-108">Permission type</span></span>      | <span data-ttu-id="9ec46-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9ec46-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f7d88-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f7d88-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f7d88-111">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="f7d88-111">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="f7d88-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f7d88-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7d88-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="f7d88-113">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="f7d88-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f7d88-114">Application</span></span> | <span data-ttu-id="f7d88-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="f7d88-115">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="9ec46-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9ec46-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9ec46-111">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="9ec46-111">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="9ec46-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9ec46-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ec46-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="9ec46-113">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="9ec46-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9ec46-114">Application</span></span> | <span data-ttu-id="9ec46-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="9ec46-115">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f7d88-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f7d88-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9ec46-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9ec46-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/masterCategories/{id}
 GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f7d88-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f7d88-117">Optional query parameters</span></span>
-<span data-ttu-id="f7d88-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="f7d88-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9ec46-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9ec46-117">Optional query parameters</span></span>
+<span data-ttu-id="9ec46-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9ec46-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f7d88-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f7d88-119">Request headers</span></span>
-| <span data-ttu-id="f7d88-120">Имя</span><span class="sxs-lookup"><span data-stu-id="f7d88-120">Name</span></span>      |<span data-ttu-id="f7d88-121">Описание</span><span class="sxs-lookup"><span data-stu-id="f7d88-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9ec46-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9ec46-119">Request headers</span></span>
+| <span data-ttu-id="9ec46-120">Имя</span><span class="sxs-lookup"><span data-stu-id="9ec46-120">Name</span></span>      |<span data-ttu-id="9ec46-121">Описание</span><span class="sxs-lookup"><span data-stu-id="9ec46-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f7d88-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f7d88-122">Authorization</span></span>  | <span data-ttu-id="f7d88-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7d88-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9ec46-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9ec46-122">Authorization</span></span>  | <span data-ttu-id="9ec46-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9ec46-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f7d88-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f7d88-125">Request body</span></span>
-<span data-ttu-id="f7d88-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f7d88-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9ec46-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9ec46-125">Request body</span></span>
+<span data-ttu-id="9ec46-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9ec46-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f7d88-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7d88-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9ec46-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ec46-127">Response</span></span>
 
-<span data-ttu-id="f7d88-128">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [outlookCategory](../resources/outlookcategory.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f7d88-128">If successful, this method returns a `200 OK` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f7d88-129">Пример</span><span class="sxs-lookup"><span data-stu-id="f7d88-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f7d88-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="f7d88-130">Request</span></span>
-<span data-ttu-id="f7d88-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f7d88-131">Here is an example of the request.</span></span>
+<span data-ttu-id="9ec46-128">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [outlookCategory](../resources/outlookcategory.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9ec46-128">If successful, this method returns a `200 OK` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9ec46-129">Пример</span><span class="sxs-lookup"><span data-stu-id="9ec46-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9ec46-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ec46-130">Request</span></span>
+<span data-ttu-id="9ec46-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9ec46-131">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f7d88-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7d88-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9ec46-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ec46-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outlookcategory"
@@ -59,26 +59,26 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f7d88-133">C#</span><span class="sxs-lookup"><span data-stu-id="f7d88-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9ec46-133">C#</span><span class="sxs-lookup"><span data-stu-id="9ec46-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outlookcategory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f7d88-134">Javascript</span><span class="sxs-lookup"><span data-stu-id="f7d88-134">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9ec46-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ec46-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-outlookcategory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f7d88-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f7d88-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9ec46-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9ec46-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outlookcategory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f7d88-136">Java</span><span class="sxs-lookup"><span data-stu-id="f7d88-136">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="9ec46-136">Java</span><span class="sxs-lookup"><span data-stu-id="9ec46-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f7d88-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7d88-137">Response</span></span>
-<span data-ttu-id="f7d88-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f7d88-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9ec46-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ec46-137">Response</span></span>
+<span data-ttu-id="9ec46-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9ec46-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

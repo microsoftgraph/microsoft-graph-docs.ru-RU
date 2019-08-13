@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e2dc00fc79a5e8f64177e8f250ebf075740ee48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2363383f51da57eec40382d2086a9c82c22f0de0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979150"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347117"
 ---
-# <a name="update-windowsinformationprotectionnetworklearningsummary"></a><span data-ttu-id="1d8e3-103">Обновление объекта windowsInformationProtectionNetworkLearningSummary</span><span class="sxs-lookup"><span data-stu-id="1d8e3-103">Update windowsInformationProtectionNetworkLearningSummary</span></span>
+# <a name="update-windowsinformationprotectionnetworklearningsummary"></a><span data-ttu-id="c4173-103">Обновление объекта windowsInformationProtectionNetworkLearningSummary</span><span class="sxs-lookup"><span data-stu-id="c4173-103">Update windowsInformationProtectionNetworkLearningSummary</span></span>
 
-> <span data-ttu-id="1d8e3-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c4173-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c4173-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1d8e3-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c4173-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c4173-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1d8e3-106">Обновление свойств объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="1d8e3-106">Update the properties of a [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object.</span></span>
+<span data-ttu-id="c4173-106">Обновление свойств объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="c4173-106">Update the properties of a [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1d8e3-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1d8e3-107">Prerequisites</span></span>
-<span data-ttu-id="1d8e3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d8e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c4173-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="c4173-107">Prerequisites</span></span>
+<span data-ttu-id="c4173-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4173-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1d8e3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1d8e3-110">Permission type</span></span>|<span data-ttu-id="1d8e3-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1d8e3-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c4173-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c4173-110">Permission type</span></span>|<span data-ttu-id="c4173-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="c4173-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1d8e3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1d8e3-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1d8e3-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d8e3-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="1d8e3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1d8e3-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1d8e3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-115">Not supported.</span></span>|
-|<span data-ttu-id="1d8e3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1d8e3-116">Application</span></span>|<span data-ttu-id="1d8e3-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-117">Not supported.</span></span>|
+|<span data-ttu-id="c4173-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c4173-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c4173-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c4173-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="c4173-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c4173-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c4173-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c4173-115">Not supported.</span></span>|
+|<span data-ttu-id="c4173-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c4173-116">Application</span></span>|<span data-ttu-id="c4173-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c4173-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1d8e3-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1d8e3-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c4173-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c4173-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,32 +38,32 @@ ms.locfileid: "35979150"
 PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1d8e3-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1d8e3-119">Request headers</span></span>
-|<span data-ttu-id="1d8e3-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1d8e3-120">Header</span></span>|<span data-ttu-id="1d8e3-121">Значение</span><span class="sxs-lookup"><span data-stu-id="1d8e3-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c4173-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c4173-119">Request headers</span></span>
+|<span data-ttu-id="c4173-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c4173-120">Header</span></span>|<span data-ttu-id="c4173-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c4173-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1d8e3-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1d8e3-122">Authorization</span></span>|<span data-ttu-id="1d8e3-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1d8e3-124">Accept</span><span class="sxs-lookup"><span data-stu-id="1d8e3-124">Accept</span></span>|<span data-ttu-id="1d8e3-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1d8e3-125">application/json</span></span>|
+|<span data-ttu-id="c4173-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c4173-122">Authorization</span></span>|<span data-ttu-id="c4173-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c4173-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c4173-124">Accept</span><span class="sxs-lookup"><span data-stu-id="c4173-124">Accept</span></span>|<span data-ttu-id="c4173-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c4173-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1d8e3-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1d8e3-126">Request body</span></span>
-<span data-ttu-id="1d8e3-127">В теле запроса добавьте представление объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-127">In the request body, supply a JSON representation for the [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c4173-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c4173-126">Request body</span></span>
+<span data-ttu-id="c4173-127">В теле запроса добавьте представление объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c4173-127">In the request body, supply a JSON representation for the [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object.</span></span>
 
-<span data-ttu-id="1d8e3-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="1d8e3-128">The following table shows the properties that are required when you create the [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span></span>
+<span data-ttu-id="c4173-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="c4173-128">The following table shows the properties that are required when you create the [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).</span></span>
 
-|<span data-ttu-id="1d8e3-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="1d8e3-129">Property</span></span>|<span data-ttu-id="1d8e3-130">Тип</span><span class="sxs-lookup"><span data-stu-id="1d8e3-130">Type</span></span>|<span data-ttu-id="1d8e3-131">Описание</span><span class="sxs-lookup"><span data-stu-id="1d8e3-131">Description</span></span>|
+|<span data-ttu-id="c4173-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="c4173-129">Property</span></span>|<span data-ttu-id="c4173-130">Тип</span><span class="sxs-lookup"><span data-stu-id="c4173-130">Type</span></span>|<span data-ttu-id="c4173-131">Описание</span><span class="sxs-lookup"><span data-stu-id="c4173-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1d8e3-132">id</span><span class="sxs-lookup"><span data-stu-id="1d8e3-132">id</span></span>|<span data-ttu-id="1d8e3-133">String</span><span class="sxs-lookup"><span data-stu-id="1d8e3-133">String</span></span>|<span data-ttu-id="1d8e3-134">Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-134">Unique Identifier for the WindowsInformationProtectionNetworkLearningSummary.</span></span>|
-|<span data-ttu-id="1d8e3-135">url</span><span class="sxs-lookup"><span data-stu-id="1d8e3-135">url</span></span>|<span data-ttu-id="1d8e3-136">String</span><span class="sxs-lookup"><span data-stu-id="1d8e3-136">String</span></span>|<span data-ttu-id="1d8e3-137">URL-адрес веб-сайта</span><span class="sxs-lookup"><span data-stu-id="1d8e3-137">Website url</span></span>|
-|<span data-ttu-id="1d8e3-138">deviceCount</span><span class="sxs-lookup"><span data-stu-id="1d8e3-138">deviceCount</span></span>|<span data-ttu-id="1d8e3-139">Int32</span><span class="sxs-lookup"><span data-stu-id="1d8e3-139">Int32</span></span>|<span data-ttu-id="1d8e3-140">Количество устройств</span><span class="sxs-lookup"><span data-stu-id="1d8e3-140">Device Count</span></span>|
+|<span data-ttu-id="c4173-132">id</span><span class="sxs-lookup"><span data-stu-id="c4173-132">id</span></span>|<span data-ttu-id="c4173-133">String</span><span class="sxs-lookup"><span data-stu-id="c4173-133">String</span></span>|<span data-ttu-id="c4173-134">Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.</span><span class="sxs-lookup"><span data-stu-id="c4173-134">Unique Identifier for the WindowsInformationProtectionNetworkLearningSummary.</span></span>|
+|<span data-ttu-id="c4173-135">url</span><span class="sxs-lookup"><span data-stu-id="c4173-135">url</span></span>|<span data-ttu-id="c4173-136">String</span><span class="sxs-lookup"><span data-stu-id="c4173-136">String</span></span>|<span data-ttu-id="c4173-137">URL-адрес веб-сайта</span><span class="sxs-lookup"><span data-stu-id="c4173-137">Website url</span></span>|
+|<span data-ttu-id="c4173-138">deviceCount</span><span class="sxs-lookup"><span data-stu-id="c4173-138">deviceCount</span></span>|<span data-ttu-id="c4173-139">Int32</span><span class="sxs-lookup"><span data-stu-id="c4173-139">Int32</span></span>|<span data-ttu-id="c4173-140">Количество устройств</span><span class="sxs-lookup"><span data-stu-id="c4173-140">Device Count</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1d8e3-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d8e3-141">Response</span></span>
-<span data-ttu-id="1d8e3-142">При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-142">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c4173-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="c4173-141">Response</span></span>
+<span data-ttu-id="c4173-142">При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c4173-142">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1d8e3-143">Пример</span><span class="sxs-lookup"><span data-stu-id="1d8e3-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c4173-143">Пример</span><span class="sxs-lookup"><span data-stu-id="c4173-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1d8e3-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="1d8e3-144">Request</span></span>
-<span data-ttu-id="1d8e3-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-145">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c4173-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="c4173-144">Request</span></span>
+<span data-ttu-id="c4173-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c4173-145">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 Content-type: application/json
@@ -76,8 +76,8 @@ Content-length: 137
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1d8e3-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d8e3-146">Response</span></span>
-<span data-ttu-id="1d8e3-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1d8e3-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c4173-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="c4173-146">Response</span></span>
+<span data-ttu-id="c4173-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c4173-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -90,6 +90,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 
