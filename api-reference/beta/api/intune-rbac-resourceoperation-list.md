@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ac0883c2b32a9ffb4afc213db95d402e32d3977
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a0bf635b6204956dc12360ae0072643b49206fad
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980039"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351373"
 ---
 # <a name="list-resourceoperations"></a>Перечисление объектов resourceOperation
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980039"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -79,6 +79,7 @@ Content-Length: 359
   ]
 }
 ```
+
 
 
 

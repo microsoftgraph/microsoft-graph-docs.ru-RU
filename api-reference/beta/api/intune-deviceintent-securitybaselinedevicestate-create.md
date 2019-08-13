@@ -4,12 +4,13 @@ description: Создание нового объекта Секуритибас
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7ef6764971b84a0364317e3aee0ba1074a74ad8
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ad9df4c787477a2cb933a78d0f3f168ed71dde58
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959553"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349161"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Создание Секуритибаселинедевицестате
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959553"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +52,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор объекта|
-|Манажеддевицеид|String|Идентификатор устройства Intune|
+|манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |состояние|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -98,6 +99,7 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

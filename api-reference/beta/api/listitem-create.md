@@ -6,12 +6,12 @@ title: Создание записи в списке SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ebf41cf176956f90a40f75ac593714fcd6359e0b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b1b4ba187c204769d55355bebbfd5468aa6956c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993111"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343009"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 

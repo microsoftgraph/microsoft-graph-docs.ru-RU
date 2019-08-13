@@ -4,12 +4,13 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 368491eda8ed4e13d7600073e859ceed73d6b094
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 311233d25b144e601f7c1861d6aea4ab338c9510
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959686"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343099"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>Создание Девицеманажементтемплатесеттингкатегори
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959686"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +87,7 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

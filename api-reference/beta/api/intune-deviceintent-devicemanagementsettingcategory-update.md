@@ -4,12 +4,13 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 438489de88b1e712c7f6e937f096aba9755c639b
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: dfbfa25c365f150e019ac4564946d4e52257371b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959959"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343351"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Обновление Девицеманажементсеттингкатегори
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959959"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +87,7 @@ Content-Length: 162
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d29d7488d0ffe7c8507a05dfb073219e2481052
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec8f72bbaa6111fa5321fe7c15663fcbbda5881f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975017"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344863"
 ---
 # <a name="list-windows81compliancepolicies"></a>Перечисление объектов windows81CompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975017"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,6 +93,7 @@ Content-Length: 953
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 87d1375046a640fc07039d01c8158c09413424a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c1f79725649831e3faf8b6d3556532a13b8c28f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35962409"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344359"
 ---
 # <a name="get-windowsidentityprotectionconfiguration"></a>Получение Виндовсидентитипротектионконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35962409"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -121,6 +121,7 @@ Content-Length: 1866
   }
 }
 ```
+
 
 
 

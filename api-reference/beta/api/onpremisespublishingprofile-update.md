@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: adb963d1f9b3ee2e0c6625a786e35a77682f6d4d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 418bbbeeedfd7bc8b114ae85477d9dfbd72aeb42
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878289"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36346615"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Обновление Онпремисеспублишингпрофиле
 
@@ -48,7 +48,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Хибридажентупдатерконфигуратион|Хибридажентупдатерконфигуратион|Представляет [хибридажентупдатерконфигуратион](../resources/hybridagentupdaterconfiguration.md).|
+|хибридажентупдатерконфигуратион|хибридажентупдатерконфигуратион|Представляет [хибридажентупдатерконфигуратион](../resources/hybridagentupdaterconfiguration.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

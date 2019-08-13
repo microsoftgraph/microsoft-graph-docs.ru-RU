@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8692532a235730c207da2e0fcc50abd67c1becb6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 739e6fb58a55eb0d7da5555048b5ee3475353e9a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35980032"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351359"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -27,7 +27,7 @@ ms.locfileid: "35980032"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,7 +56,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|Енабледфорскопевалидатион|Boolean|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|енабледфорскопевалидатион|Boolean|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 
 
@@ -99,6 +99,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

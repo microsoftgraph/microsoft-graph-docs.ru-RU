@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e788c4881ae32036bc94059ac8a708cd1b5674c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e444ab1bce0ac6ef8c6c24bc239ce1b6226fcd37
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950912"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340774"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>Список Андроидворкпрофилиасемаилпрофилебасес
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950912"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -111,6 +111,7 @@ Content-Length: 1623
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 40ba2077b1a2e21d7c1940c2657efa22a953abea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a28f58cf611e45534e65e58e63556921ba87e926
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35946602"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345542"
 ---
 # <a name="update-ndesconnector"></a>Обновление Ндесконнектор
 
@@ -27,7 +27,7 @@ ms.locfileid: "35946602"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 |:---|:---|:---|
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
-|состояние|[Ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
+|состояние|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
 |displayName|Строка|Понятное имя соединителя NDES Connector.|
 
 
@@ -93,6 +93,7 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

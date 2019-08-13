@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c54cff0e9230e0037eb114bffcbf7e324f9b6abb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f6fbed2f2dce6da3637b4a4921b84834d04dfb60
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949379"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36346039"
 ---
 # <a name="gettargetedusersanddevices-action"></a>Действие getTargetedUsersAndDevices
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949379"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Девицеконфигуратионидс|Коллекция строк|Н/Д|
+|девицеконфигуратионидс|Коллекция строк|Н/Д|
 
 
 
@@ -97,6 +97,7 @@ Content-Length: 409
   ]
 }
 ```
+
 
 
 

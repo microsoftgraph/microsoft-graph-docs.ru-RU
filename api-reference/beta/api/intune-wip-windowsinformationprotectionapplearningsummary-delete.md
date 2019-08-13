@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89dcccb91c418bb38bc563fd55e728b1c55fa618
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f87259f00a7deb1e5e1c7a18a2b36aa93663c474
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979178"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350092"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>Удаление объекта windowsInformationProtectionAppLearningSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979178"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsInformationProte
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

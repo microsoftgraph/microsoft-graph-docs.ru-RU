@@ -4,12 +4,13 @@ description: Чтение свойств и связей объекта Винд
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa75a1f150e766a5bf225c65acdf715f6520b35
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 508a8f1149dfb1d278a22d25e881f1e1d62755d6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726141"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344149"
 ---
 # <a name="get-windowsupdatestate"></a>Получение Виндовсупдатестате
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726141"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,6 +84,7 @@ Content-Length: 594
   }
 }
 ```
+
 
 
 

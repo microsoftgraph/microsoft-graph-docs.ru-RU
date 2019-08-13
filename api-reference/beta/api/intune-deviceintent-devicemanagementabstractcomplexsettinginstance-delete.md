@@ -4,12 +4,13 @@ description: Удаляет объект Девицеманажементабс�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5ae02661f4aaeedec3c676da1a51d9fdc39e309
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 1dae06786beacf07bfb3706e38c87d669e25e459
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34961023"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343974"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettinginstance"></a>Удаление Девицеманажементабстракткомплекссеттингинстанце
 
@@ -26,7 +27,7 @@ ms.locfileid: "34961023"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d035fcd8b71298b926d133118b37ea4e05675165
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae9fb48fdae7658ba2c4f8de652b7e2481bb387f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979451"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350316"
 ---
 # <a name="list-applevpptokentroubleshootingevents"></a>Список Апплевпптокентраублешутинжевентс
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979451"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|* * TODO: определение областей поддержка apponly * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 1071
   ]
 }
 ```
+
 
 
 

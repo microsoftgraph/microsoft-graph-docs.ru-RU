@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8494e37c1e1e6a2e4cbcd6097d8719c720f3208b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c72c4b7ecacfcc42059b7a9bc1065ca58a693fea
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995596"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351121"
 ---
 # <a name="update-rolescopetag"></a>Обновление Ролескопетаг
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995596"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,6 +55,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|Строка|Отображаемое или понятное имя тега области применения роли.|
 |description|String|Описание тега области применения роли.|
+|isBuiltIn|Boolean|Описание тега области применения роли.|
 
 
 
@@ -68,12 +69,13 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScopeTagId}
 Content-type: application/json
-Content-length: 133
+Content-length: 155
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
 
@@ -82,15 +84,17 @@ Content-length: 133
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 182
+Content-Length: 204
 
 {
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "isBuiltIn": true
 }
 ```
+
 
 
 

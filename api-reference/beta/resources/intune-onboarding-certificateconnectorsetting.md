@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd809fd2cb26a57d13ad7a4c250868b44967020a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60c7ac990a4eccd1f4faf0fd8f32c42a1e1addba
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967758"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341986"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса Цертификатеконнекторсеттинг
 
@@ -24,11 +24,11 @@ ms.locfileid: "35967758"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |status|Int32|Состояние соединителя сертификатов|
-|Цертекспиритиме|DateTimeOffset|Время истечения срока действия сертификата|
-|Енроллментеррор|String|Ошибка регистрации соединителя сертификатов|
-|Ластконнекторконнектионтиме|DateTimeOffset|Время последнего подключения к соединителю сертификата|
-|Коннекторверсион|String|Версия соединителя сертификатов|
-|Ластуплоадверсион|Int64|Версия последнего отправленного соединителя сертификатов|
+|цертекспиритиме|DateTimeOffset|Время истечения срока действия сертификата|
+|енроллментеррор|String|Ошибка регистрации соединителя сертификатов|
+|ластконнекторконнектионтиме|DateTimeOffset|Время последнего подключения к соединителю сертификата|
+|коннекторверсион|String|Версия соединителя сертификатов|
+|ластуплоадверсион|Int64|Версия последнего отправленного соединителя сертификатов|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -51,8 +51,6 @@ ms.locfileid: "35967758"
   "lastUploadVersion": 1024
 }
 ```
-
-
 
 
 

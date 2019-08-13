@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96145460be3364643f402a8d808c3ed9bcd4fe88
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df83598ccadd3239f04e8729a1b3dca9379ff01f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979325"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347222"
 ---
 # <a name="delete-mobileappintentandstate"></a>Удаление Мобилеаппинтентандстате
 
@@ -25,9 +25,9 @@ ms.locfileid: "35979325"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|* * TODO: определение областей поддержка apponly * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

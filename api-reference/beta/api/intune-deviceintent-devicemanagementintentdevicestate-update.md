@@ -4,12 +4,13 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a311f6778b47b0e8bf728c0deb721de6d8173394
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: c4e23abab9d3bc7b3ca61ba4946b2ed2d4afc625
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960232"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343561"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>Обновление Девицеманажементинтентдевицестате
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960232"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +56,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceDisplayName|String|Имя устройства, о котором сообщается|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|состояние|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |deviceId|String|Идентификатор устройства, о котором сообщается|
 
 
@@ -101,6 +102,7 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
+
 
 
 

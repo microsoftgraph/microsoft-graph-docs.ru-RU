@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d5765357b617ae98c50765fdcf8979560dcc20b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f96cc4d5b124c3fb32acd59baafc01c231a34bca
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963432"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36341418"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Получение Андроидфорворкимпортедпфксцертификатепрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "35963432"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 1780
   }
 }
 ```
+
 
 
 

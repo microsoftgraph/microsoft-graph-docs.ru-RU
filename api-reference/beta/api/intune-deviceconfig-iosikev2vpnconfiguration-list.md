@@ -4,12 +4,13 @@ description: Список свойств и связей объектов iosikE
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5e951b2d3cd1c18f234283bf368bbf453cc25a3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: d70d2e1cbdc3cb7e8d06ec83c145fc925cbabd62
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715370"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345647"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Список iosikEv2VpnConfigurations
 
@@ -26,7 +27,7 @@ ms.locfileid: "35715370"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -200,6 +201,7 @@ Content-Length: 4949
   ]
 }
 ```
+
 
 
 

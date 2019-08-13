@@ -4,12 +4,13 @@ description: Обновление свойств объекта Секурити
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 176742c9e1151913f01a863aa11c2cfdac2e832f
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: f327529aef1307c06bac7d5eabdaabcac4df6fb7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959482"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349023"
 ---
 # <a name="update-securitybaselinestatesummary"></a>Обновление Секуритибаселинестатесуммари
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959482"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,8 +52,8 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|Секурекаунт|Int32|Количество защищенных устройств|
-|Нотсекурекаунт|Int32|Количество незащищенных устройств|
+|секурекаунт|Int32|Количество защищенных устройств|
+|нотсекурекаунт|Int32|Количество незащищенных устройств|
 |unknownCount|Int32|Количество неизвестных устройств.|
 |errorCount|Int32|Количество устройств с ошибками.|
 |conflictCount|Int32|Количество конфликтующих устройств.|
@@ -101,6 +102,7 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
+
 
 
 

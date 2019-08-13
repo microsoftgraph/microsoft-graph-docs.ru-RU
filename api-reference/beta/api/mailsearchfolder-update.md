@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c220ecb43e08758f50eae8680e5d40af46b10a22
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a9d8ad3a2b58715a431f7f1d227ebfe22d1f9b8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983973"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347026"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
@@ -46,9 +46,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| Инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
-| Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
-| Филтеркуери | String | Запрос OData для фильтрации сообщений. |
+| инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
+| филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
@@ -76,7 +76,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

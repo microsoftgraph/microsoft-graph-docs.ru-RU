@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a77030ba3da40378e8ad1c18bc4e170767da8fbc
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 6bd642e45ee58563a3effe852c87fd893745502c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741479"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351128"
 ---
 # <a name="hascustomrolescopetag-function"></a>Функция Хаскустомролескопетаг
 
@@ -26,7 +27,7 @@ ms.locfileid: "35741479"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -69,6 +70,7 @@ Content-Length: 21
   "value": true
 }
 ```
+
 
 
 

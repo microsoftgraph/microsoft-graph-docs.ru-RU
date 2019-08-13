@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efb35bc62c40bb022a5d18f5e9f3da12bb85e8a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5029907f5e8a47bdfad07133c43b90b277898406
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979556"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350365"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Удаление объекта telecomExpenseManagementPartner
 
@@ -27,7 +27,7 @@ ms.locfileid: "35979556"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagemen
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

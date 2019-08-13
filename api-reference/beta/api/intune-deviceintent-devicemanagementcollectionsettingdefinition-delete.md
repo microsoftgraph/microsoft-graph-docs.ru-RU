@@ -4,12 +4,13 @@ description: Удаляет объект Девицеманажементкол�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63ac026dab5340eb3ad56a2d2a5fd1311deefd77
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: ca5bb9991a9c9be0676963e348d8efe58ff41e95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960876"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343918"
 ---
 # <a name="delete-devicemanagementcollectionsettingdefinition"></a>Удаление Девицеманажементколлектионсеттингдефинитион
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960876"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

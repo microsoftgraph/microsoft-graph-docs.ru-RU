@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 59b5a20819e2912e88c1091627b487b898c61979
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98245e618ef6c821502109164e2c726657477b91
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993339"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350183"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993339"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ POST /deviceManagement/intuneBrandingProfiles
 |:---|:---|:---|
 |id|String|Ключ профиля|
 |имя_профиля|String|Имя профиля|
-|Профиледескриптион|String|Описание профиля|
-|Исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|профиледескриптион|String|Описание профиля|
+|исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
 |displayName|Строка|Название компании или организации, которое отображается для конечных пользователей|
@@ -68,10 +68,12 @@ POST /deviceManagement/intuneBrandingProfiles
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
 |showLogo|Boolean|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
-|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
+|семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
-|Кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
 
 
 
@@ -85,7 +87,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1264
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -123,7 +125,9 @@ Content-length: 1264
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
 
@@ -132,7 +136,7 @@ Content-length: 1264
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -173,9 +177,12 @@ Content-Length: 1436
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
+
 
 
 

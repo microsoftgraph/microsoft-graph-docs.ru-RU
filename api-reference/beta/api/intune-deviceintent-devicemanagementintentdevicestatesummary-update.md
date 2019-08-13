@@ -4,12 +4,13 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ad514cf26038dc71875e22c9ca2c774e4f17819
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 994036c6778eff2d9bf360423c20967c2260cf3e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960225"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343533"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>Обновление Девицеманажементинтентдевицестатесуммари
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960225"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 286
   "successCount": 12
 }
 ```
+
 
 
 

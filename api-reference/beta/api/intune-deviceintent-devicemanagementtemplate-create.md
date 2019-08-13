@@ -4,12 +4,13 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0298ba9d99bd00db8e10e7b5b2afb79a0c7e3ec
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8df263e974037e747eb65169f6d305cef2b7b3b5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959770"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343134"
 ---
 # <a name="create-devicemanagementtemplate"></a>Создание Девицеманажементтемплате
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959770"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,8 +57,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 |description|String|Описание шаблона|
 |versionInfo|String|Сведения о версии шаблона|
 |нерекомендуемый|Boolean|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
-|Интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
-|TemplateType — тип|[Девицеманажементтемплатетипе](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
+|TemplateType — тип|[девицеманажементтемплатетипе](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
 |publishedDateTime|DateTimeOffset|При публикации шаблона|
 
 
@@ -105,6 +106,7 @@ Content-Length: 383
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

@@ -6,12 +6,12 @@ title: Создание списка списков SharePoint на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0068c927192d22d86ad91fad1c5b0e360312587c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 538bb1633e0740148141217a3c266dee97b7e184
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993125"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347082"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Перечисление списков на сайте
 

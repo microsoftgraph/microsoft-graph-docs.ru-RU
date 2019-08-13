@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a99b4c8596feea684d4f9d1edf7b053a1cd391cb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 885eb25e57cb31ff3e5c0f291b9fbcf529ea06ce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983483"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342308"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -42,7 +42,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказок, используемых для упорядочивания задач в представлении AssignedTo доски задач. Ключом каждой записи является один из пользователей, которому назначена задача, а значением является подсказка порядка. Формат каждого значения определяется в разделе [использование подсказок порядка в планировщике (.. /ресаурцес/планнер_ордер_хинт_формат.МД).|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказок, используемых для упорядочивания задач в представлении AssignedTo доски задач. Ключом каждой записи является один из пользователей, которому назначена задача, а значением является подсказка порядка. Формат каждого значения определяется в разделе [использование подсказок порядка в планировщике (.. /resources/planner_order_hint_format.md).|
 |unassignedOrderHint|Строка|Значение подсказки используется для упорядочивания задачи в представлении AssignedTo доски задач, когда задача не назначена никому, или если словарь Ордерхинтсбяссигни не предоставляет подсказку порядка для пользователя, которому назначена задача. Формат определяется в разделе [Использование подсказок порядка в планировщике](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Отклик
@@ -76,7 +76,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerassignedtotaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerassignedtotaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

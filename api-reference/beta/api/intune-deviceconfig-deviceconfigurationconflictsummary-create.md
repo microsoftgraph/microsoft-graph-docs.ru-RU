@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ddc39fdba02ac04e8140be529194b18192df57a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ebde376c13d4dbcdb9a831a2216ceaf9805e4a8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949267"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345990"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Создание Девицеконфигуратионконфликтсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949267"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,10 +51,10 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
+|конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
 |id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
-|Контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
-|Девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
+|контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
+|девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
 
 
@@ -109,6 +109,7 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
 
 
 

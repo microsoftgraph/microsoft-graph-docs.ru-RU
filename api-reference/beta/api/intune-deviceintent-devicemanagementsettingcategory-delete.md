@@ -4,12 +4,13 @@ description: Удаляет объект Девицеманажементсет�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72f0bf5fe9e36352c695601e997380662ba6c586
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 7a7dbc50eb07009cf520032935e9a6adc91ed25e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959994"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343330"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a>Удаление Девицеманажементсеттингкатегори
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959994"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -62,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/categories/{deviceManag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

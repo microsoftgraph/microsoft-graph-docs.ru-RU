@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 133bba0f0584be755d4423d30d9c4ddffa56f157
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2093b493c69c3f8ac40e89e3dc73b18a4310b137
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950310"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340480"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>Получение Андроидворкпрофилевификонфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950310"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -112,6 +112,7 @@ Content-Length: 1484
   }
 }
 ```
+
 
 
 

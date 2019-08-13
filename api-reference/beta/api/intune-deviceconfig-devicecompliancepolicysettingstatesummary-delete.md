@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd1f963d9bf2b3aacff44a3df406dcd3f6d0ac1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8340dee5cca713dac66050a1e72b99310fb83a52
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949722"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36346207"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Удаление объекта deviceCompliancePolicySettingStateSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949722"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicyS
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

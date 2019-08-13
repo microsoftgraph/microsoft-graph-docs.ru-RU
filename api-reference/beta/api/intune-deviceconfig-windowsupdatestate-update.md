@@ -4,12 +4,13 @@ description: Обновление свойств объекта Виндовсу
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f003e5066e0e2b31b1b629067ffacc92efdd36de
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 35a56a0dea3174a7f196a3cee62a46edd35eafce
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726173"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344135"
 ---
 # <a name="update-windowsupdatestate"></a>Обновление Виндовсупдатестате
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726173"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,9 +57,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|Строка|Имя участника пользователя.|
 |status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|Куалитюпдатеверсион|String|Версия устройства для обновления качества.|
-|Феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
-|Ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
+|куалитюпдатеверсион|String|Версия устройства для обновления качества.|
+|феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
+|ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации устройства с Microsoft Intune.|
 
 
@@ -110,6 +111,7 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
 
 
 

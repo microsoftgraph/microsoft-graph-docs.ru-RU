@@ -4,12 +4,13 @@ description: Создание нового объекта Девицеманаж
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24e8a73e65f7f697931dbb32ae553e157689c356
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 932fd37d2460e6e6d0c967e2afb401a1a424fa08
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960092"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343449"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Создание Девицеманажементинтентусерстате
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960092"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +56,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceCount|Int32|Количество устройств, принадлежащие пользователю для намерения|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
-|состояние|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|состояние|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние пользователя для намерения. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 
 
@@ -98,6 +99,7 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: abbddfb8c90bd9c413f7b388ea52f9b14f22a110
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df46fc6a61b87b4cba006cab6d3aefd579699b34
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999243"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327988"
 ---
 # <a name="discoverysource-enum-type"></a>тип перечисления Дисковерисаурце
 
@@ -24,10 +24,8 @@ ms.locfileid: "35999243"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Дисковерисаурце неизвестен.|
-|Админимпорт|2|Устройство импортируется администратором.|
-|Девицеенроллментпрограм|SP4|Устройство добавляется программой регистрации устройств Apple (DEP).|
-
-
+|админимпорт|2|Устройство импортируется администратором.|
+|девицеенроллментпрограм|SP4|Устройство добавляется программой регистрации устройств Apple (DEP).|
 
 
 

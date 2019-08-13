@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75a254632c09234b6ab4fd4045bac307797e5b16
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d86e972fdef89297a23d719e3529ed73f0344b23
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993342"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36350211"
 ---
 # <a name="update-mobileappintentandstate"></a>Обновление Мобилеаппинтентандстате
 
@@ -25,9 +25,9 @@ ms.locfileid: "35993342"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|* * TODO: определение областей поддержка apponly * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 |id|Строка|UUID объекта.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|Мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
+|мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 880
   ]
 }
 ```
+
 
 
 

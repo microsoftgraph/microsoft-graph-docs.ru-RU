@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb0cc62637b1f6c37f0bb765dccb2bc4dc3c566d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ccc6a164314f5f8a34b6b8ba7971d4c2e49ac95
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35982377"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36344653"
 ---
 # <a name="get-windowscertificateprofilebase"></a>Получение Windowscertificateprofilebase)
 
@@ -27,7 +27,7 @@ ms.locfileid: "35982377"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -112,6 +112,7 @@ Content-Length: 1576
   }
 }
 ```
+
 
 
 

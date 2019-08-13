@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 064fdfb65194e5062077c7d97ab17319ae97099a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4acc9f2a94857e9929d48884bb3620cf04557a7c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950156"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340375"
 ---
 # <a name="update-carttoclassassociation"></a>Обновление КарттоклассассоЦиатион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950156"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,8 +57,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 
@@ -111,6 +111,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

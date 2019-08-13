@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 38c8bc918b49ee6e4da5ed7ff921d1f661a0c4a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c91731a522cf26edd96eec34f0c0a9c762721fcd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983766"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36342728"
 ---
 # <a name="notebook-copynotebook"></a>Записная книжка: Включеныcopynotebook
 
@@ -51,7 +51,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 |siteCollectionId|String|Идентификатор сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт группы Office 365.|
 |siteId|String|Идентификатор веб-сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт группы Office 365.|
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
-|Ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 
@@ -81,7 +81,7 @@ Content-length: 108
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-copynotebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-copynotebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

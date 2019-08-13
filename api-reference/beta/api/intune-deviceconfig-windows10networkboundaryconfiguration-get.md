@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4dad41e7e028b766fa517881e85d9dff9d4a3b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6269647056c6e8e07367697f9e65434a4a2956c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977351"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345059"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Получение windows10NetworkBoundaryConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35977351"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -138,6 +138,7 @@ Content-Length: 2334
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: Обновление свойств объекта Девицема
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52051e44f4aad274fd157cd72ba3d8bf93514ad0
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 0bd396e28b80d7d0e81e2f8100414d91f4c470e3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960288"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343673"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>Обновление Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960288"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,12 +53,12 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSum
 |:---|:---|:---|
 |id|String|Идентификатор|
 |settingName|String|Имя параметра|
-|Комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
+|комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество конфликтующих устройств|
 |errorCount|Int32|Количество устройств с ошибками.|
-|Нонкомплианткаунт|Int32|Количество устройств, не соответствующих требованиям|
+|нонкомплианткаунт|Int32|Количество устройств, не соответствующих требованиям|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
-|Ремедиатедкаунт|Int32|Количество исправленных устройств.|
+|ремедиатедкаунт|Int32|Количество исправленных устройств.|
 
 
 
@@ -104,6 +105,7 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
+
 
 
 

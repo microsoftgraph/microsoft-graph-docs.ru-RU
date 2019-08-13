@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 97dda4343383a4635cae72b761c0e1e5d252006d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7cb3d474687120749159d9552edd17648515b339
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35950142"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36340368"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>Создание Дефаултдевицекомплианцеполици
 
@@ -27,7 +27,7 @@ ms.locfileid: "35950142"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 401
   "version": 7
 }
 ```
+
 
 
 

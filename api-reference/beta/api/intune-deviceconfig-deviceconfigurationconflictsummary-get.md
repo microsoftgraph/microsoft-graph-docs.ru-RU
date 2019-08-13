@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffc33a111465a4407d05519a9fbd5928ca05c8a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6e4ecd108ae7a34ef612199d10422c0d4ca0f116
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35949225"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36345983"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Получение Девицеконфигуратионконфликтсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "35949225"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 455
   }
 }
 ```
+
 
 
 

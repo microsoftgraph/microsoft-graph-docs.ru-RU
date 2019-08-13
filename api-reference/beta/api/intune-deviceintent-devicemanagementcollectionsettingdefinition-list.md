@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Дев
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c826d21394f4a6faa9ca291be4e8f358d0aececf
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: 8fef5823b1e6a0c26313b7faf2c856c5a0ebc3b7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34960848"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36343897"
 ---
 # <a name="list-devicemanagementcollectionsettingdefinitions"></a>Список Девицеманажементколлектионсеттингдефинитионс
 
@@ -26,7 +27,7 @@ ms.locfileid: "34960848"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -101,6 +102,7 @@ Content-Length: 985
   ]
 }
 ```
+
 
 
 
