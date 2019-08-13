@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fa596da82167db358a0e13d9c927d77ff671827b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2660442f59b6d50cb91c81586348d2abb4655fcf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022229"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36375536"
 ---
 # <a name="range-lastcolumn"></a>Range: LastColumn
 
@@ -26,7 +26,6 @@ ms.locfileid: "36022229"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/lastColumn
@@ -50,6 +49,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/lastColumn
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -62,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-lastcolumn-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-lastcolumn-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

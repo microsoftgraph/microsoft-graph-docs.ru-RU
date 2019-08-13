@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4ab586ac1a3a876984c3118ec2c956ccf4ea9fa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3496334be570ee3a761d6ecdb1ff5c59217c7da4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026350"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366576"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -27,7 +27,6 @@ ms.locfileid: "36026350"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
@@ -56,6 +55,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -69,7 +70,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/ran
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsabove-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +88,6 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/ran
 ##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,6 +111,8 @@ Content-length: 157
 При вызове без обязательного `count` параметра эта функция возвращает одну строку над диапазоном.
 
 ##### <a name="request"></a>Запрос
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -124,7 +126,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/ran
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsabove-nocount-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-rowsabove-nocount-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

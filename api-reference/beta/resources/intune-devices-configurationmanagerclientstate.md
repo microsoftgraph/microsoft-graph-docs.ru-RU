@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 97fd1dddcfea444d330d3f620244f8f84ebc3da0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba7de7ee3612c4d1e8e419522e8d18587339343c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36000027"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370286"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>тип перечисления Конфигуратионманажерклиентстате
 
@@ -26,11 +26,9 @@ ms.locfileid: "36000027"
 |unknown|нуль|Агент диспетчера конфигурации старше 1806 или не установлен, или это устройство не проверялось в Intune более 30 дней.|
 |устанавлива|1,1|Агент Configuration Manager установлен, но он еще не отображается в консоли Configuration Manager. Подождите несколько часов, пока оно не будет обновлено.|
 |рабочее|7 |Этому устройству удалось успешно вернуть службу Configuration Manager.|
-|Инсталлфаилед|8 |Не удалось установить агент диспетчера конфигураций.|
-|Упдатефаилед|-11:00|Ошибка обновления от версии x до версии y агента Configuration Manager. |
-|Коммуникатионеррор|19|Агенту диспетчера конфигураций удалось подключиться к службе Configuration Manager ранее, но теперь она больше не может. |
-
-
+|инсталлфаилед|8 |Не удалось установить агент диспетчера конфигураций.|
+|упдатефаилед|-11:00|Ошибка обновления от версии x до версии y агента Configuration Manager. |
+|коммуникатионеррор|19|Агенту диспетчера конфигураций удалось подключиться к службе Configuration Manager ранее, но теперь она больше не может. |
 
 
 

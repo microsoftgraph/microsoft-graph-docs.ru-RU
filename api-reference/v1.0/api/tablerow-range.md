@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 784e99c932f7a3dd747b66df6ebf5427504e2336
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d52fe3969c0419466360ad91468d728ca3199785
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024345"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373359"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -26,7 +26,6 @@ ms.locfileid: "36024345"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/rows/{index}/range
@@ -49,6 +48,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 Ниже приведен пример вызова этого API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -61,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerow-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerow-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

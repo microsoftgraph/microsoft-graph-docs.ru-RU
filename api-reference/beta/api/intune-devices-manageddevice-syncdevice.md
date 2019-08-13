@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 697aa09ff303ad9c7a3d715c3b3a8148ed479501
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bfae6e19167cdfad88e5a4bf598b92bda627f11b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981341"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310096"
 ---
 # <a name="syncdevice-action"></a>Действие syncDevice
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981341"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,6 +66,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

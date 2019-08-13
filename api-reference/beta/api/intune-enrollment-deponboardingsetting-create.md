@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23ac56021bb81306e4e61bd878c0f0a6690a4db2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2e4b93373181462a4a2e73c4684ebe2599a6c75
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985345"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309676"
 ---
 # <a name="create-deponboardingsetting"></a>Создание depOnboardingSetting
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985345"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,13 +55,13 @@ POST /deviceManagement/depOnboardingSettings
 |appleIdentifier|String|Идентификатор Apple ID, используемый для получения текущего маркера.|
 |tokenExpirationDateTime|DateTimeOffset|По истечении срока действия маркера.|
 |lastModifiedDateTime|DateTimeOffset|При подключении службы.|
-|Ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
-|Ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
+|ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
+|ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
 |Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
 |Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
-|Токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|Токеннаме|String|Понятное имя для токена DEP|
-|Синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
+|токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
+|токеннаме|String|Понятное имя для токена DEP|
+|синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
 |dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
@@ -123,6 +123,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f4573429db6ccb359feb4b4280483b8d7bbe7c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77774bc58d336429c013dcb391fba95c74512dcc
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987077"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310026"
 ---
 # <a name="create-remoteactionaudit"></a>Создание remoteActionAudit
 
@@ -27,7 +27,7 @@ ms.locfileid: "35987077"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,11 +55,12 @@ POST /deviceManagement/remoteActionAudits
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[\] рекомендуется вместо этого использовать свойства initiatedbyuserprincipalname.|
 |Свойства initiatedbyuserprincipalname|String|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
-|action|[Ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateFileVaultKey`, `getFileVaultKey`.|
-|Рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
+|action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `logoutSharedAppleDeviceActiveUser` `quickScan`,,,,,,,,,,,,,,,,,,,,, `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` , `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
+|рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
 |deviceOwnerUserPrincipalName|String|Имя участника-пользователя для владельца устройства.|
 |deviceIMEI|String|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|манажеддевицеид|String|Цель действия.|
 
 
 
@@ -73,7 +74,7 @@ POST /deviceManagement/remoteActionAudits
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits
 Content-type: application/json
-Content-length: 455
+Content-length: 504
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -84,7 +85,8 @@ Content-length: 455
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -93,7 +95,7 @@ Content-length: 455
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 504
+Content-Length: 553
 
 {
   "@odata.type": "#microsoft.graph.remoteActionAudit",
@@ -105,9 +107,11 @@ Content-Length: 504
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
   "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
   "deviceIMEI": "Device IMEI value",
-  "actionState": "pending"
+  "actionState": "pending",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

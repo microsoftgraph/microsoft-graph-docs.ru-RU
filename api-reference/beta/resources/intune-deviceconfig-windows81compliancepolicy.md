@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff98cb5b8ca00923a34eb35b6e9d48f8408bb15e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 060cb3f8854ff8e3e28d7671b8da9618a7c51e92
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35969130"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309494"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>Тип ресурса windows81CompliancePolicy
 
@@ -48,7 +48,7 @@ ms.locfileid: "35969130"
 |passwordMinimumLength|Int32|Минимальная длина пароля.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
-|passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
 |osMinimumVersion|String|Минимальная версия Windows 8.1.|
 |osMaximumVersion|String|Максимальная версия Windows 8.1.|
@@ -98,8 +98,6 @@ ms.locfileid: "35969130"
   "storageRequireEncryption": true
 }
 ```
-
-
 
 
 
