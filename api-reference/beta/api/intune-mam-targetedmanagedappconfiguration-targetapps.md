@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dc32cf8f77ffe8c5e9a39d9be9916f236c1b1c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d014c907397ec71025363a3c919a07dd5d00844
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35994462"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36353745"
 ---
 # <a name="targetapps-action"></a>Действие targetApps
 
@@ -27,7 +27,7 @@ ms.locfileid: "35994462"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -87,6 +87,7 @@ Content-length: 286
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

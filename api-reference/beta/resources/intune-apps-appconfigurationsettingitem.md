@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c001e19758865e957cb3d72f3d49acf3387281a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a24d2a1824a61dac4658bbf99c45d50c5618c81
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006054"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366863"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Тип ресурса appConfigurationSettingItem
 
@@ -24,7 +24,7 @@ ms.locfileid: "36006054"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |appConfigKey|String|Ключ конфигурации приложения.|
-|appConfigKeyType|[Мдмаппконфигкэйтипе](../resources/intune-apps-mdmappconfigkeytype.md)|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|[мдмаппконфигкэйтипе](../resources/intune-apps-mdmappconfigkeytype.md)|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Строка|Значение ключа конфигурации приложения.|
 
 ## <a name="relationships"></a>Отношения
@@ -45,8 +45,6 @@ ms.locfileid: "36006054"
   "appConfigKeyValue": "String"
 }
 ```
-
-
 
 
 

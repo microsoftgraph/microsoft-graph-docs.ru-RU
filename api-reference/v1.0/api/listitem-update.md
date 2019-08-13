@@ -6,12 +6,12 @@ description: Изменение свойств ресурса **[listItem][]**.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d346e9aedf6a9c7061fcfc2e1093ed6257034345
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e74f0b875232dd51058447a8c9479f5130f8f03f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023127"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356608"
 ---
 # <a name="update-listitem"></a>Обновление ресурса listItem
 

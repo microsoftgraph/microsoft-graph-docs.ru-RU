@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bcd116b4b5f5bc9748d16a202ea0dc2a4485299
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd514aaf99af15a70caac96f49c6dbcfddc49d84
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999376"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365211"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса Виндовсманажементапфеалсстате
 
@@ -34,10 +34,10 @@ ms.locfileid: "35999376"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|Инсталледверсион|String|Установленная версия приложения управления Windows.|
-|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
+|инсталледверсион|String|Установленная версия приложения управления Windows.|
+|ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|Девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -61,8 +61,6 @@ ms.locfileid: "35999376"
   "deviceOSVersion": "String"
 }
 ```
-
-
 
 
 

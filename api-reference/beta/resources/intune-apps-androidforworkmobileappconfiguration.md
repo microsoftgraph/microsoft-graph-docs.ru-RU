@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73d330ec85747a08187cfd79416bc171f83530aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 488f50d5228c9299ff578b8331fbe620d1a99f52
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971678"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366170"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>Тип ресурса Андроидфорворкмобилеаппконфигуратион
 
@@ -44,8 +44,8 @@ ms.locfileid: "35971678"
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации приложения Android для рабочего приложения.|
-|Пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
-|Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
+|пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
+|пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -90,8 +90,6 @@ ms.locfileid: "35971678"
   ]
 }
 ```
-
-
 
 
 

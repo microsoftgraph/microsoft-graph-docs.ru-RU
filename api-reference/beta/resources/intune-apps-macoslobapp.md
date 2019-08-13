@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddf8f168026f0667bf9b105c320a2ca5e38df0ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e7b234374563e4320ff15a40e3a2b2aa791cdc4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005452"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366765"
 ---
 # <a name="macoslobapp-resource-type"></a>Тип ресурса Макослобапп
 
@@ -49,10 +49,10 @@ ms.locfileid: "36005452"
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -60,7 +60,7 @@ ms.locfileid: "36005452"
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md);|Значение, которое представляет минимальную применимую версию операционной системы.|
 |buildNumber|String|Номер сборки бизнес-приложения MacOS бизнес (LoB).|
 |versionNumber|String|Номер версии приложения MacOS для бизнеса (LoB).|
-|Чилдаппс|Коллекция [макослобчилдапп](../resources/intune-apps-macoslobchildapp.md)|Список приложений в этом пакете набора|
+|чилдаппс|Коллекция [макослобчилдапп](../resources/intune-apps-macoslobchildapp.md)|Список приложений в этом пакете набора|
 |identityVersion|String|Версия удостоверения.|
 |md5HashChunkSize|Int32|Размер фрагмента для хеша MD5|
 |md5Hash|Коллекция строк|Хэш-коды MD5|
@@ -144,8 +144,6 @@ ms.locfileid: "36005452"
   "ignoreVersionDetection": true
 }
 ```
-
-
 
 
 

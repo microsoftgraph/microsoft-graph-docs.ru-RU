@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 688e09ae188fe336bff6f2f884d5d8991ce2befb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c1870dfd43100d81690bea70cd472c4aa6c7968
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989037"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36354515"
 ---
 # <a name="get-grouppolicypresentationvaluelongdecimal"></a>Получение ГраупполиципресентатионвалуелонгдеЦимал
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989037"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +78,7 @@ Content-Length: 297
   }
 }
 ```
+
 
 
 

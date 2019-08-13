@@ -3,14 +3,14 @@ title: Тип ресурса iPv6Range
 description: Определение диапазона IPv6.
 author: rolyon
 localization_priority: Normal
-doc_type: resourcePageType
 ms.prod: Intune
-ms.openlocfilehash: 1f2b46cea71d097955ca9e78cc74f6f0cddd1002
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: resourcePageType
+ms.openlocfilehash: 81b95ebbfe4697b20156300cb7b383935556f17e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967379"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36347971"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
 
@@ -46,8 +46,6 @@ ms.locfileid: "35967379"
   "upperAddress": "String"
 }
 ```
-
-
 
 
 

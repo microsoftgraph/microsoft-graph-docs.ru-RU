@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5af7fee426a3b0630cee30ad7638d622e82af93b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc126ec4b7a3d71811eb9ee95ebe0d9bbf2fb04c
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35989758"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357903"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>Создание Граупполиципресентатионкомбобокс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35989758"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -105,6 +105,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 

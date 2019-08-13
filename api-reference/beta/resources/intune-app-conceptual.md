@@ -4,13 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 4bae37d3364836d8c706bfd97994c43396fa8143
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0af6b2070b7438aee2f4efcdb9661cf37a265cd9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006152"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366205"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -111,7 +110,6 @@ ms.locfileid: "36006152"
 - [Содержимое мобильного приложения](intune-apps-mobileappcontent.md)
 - [Файл содержимого мобильного приложения](intune-apps-mobileappcontentfile.md)
 - [Состояние отправки файла содержимого мобильного приложения](intune-apps-mobileappcontentfileuploadstate.md)
-- [Тип депендеци для мобильного приложения](intune-apps-mobileappdependecytype.md)
 - [Зависимость мобильных приложений](intune-apps-mobileappdependency.md)
 - [Тип зависимости мобильных приложений](intune-apps-mobileappdependencytype.md)
 - [Состояние установки мобильных приложений](intune-apps-mobileappinstallstatus.md)
@@ -177,3 +175,4 @@ ms.locfileid: "36006152"
 - [Windows Universal AppX](intune-apps-windowsuniversalappx.md)
 - [Настройки назначения универсального приложения Windows AppX](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Отдельное универсальное приложение Windows AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+

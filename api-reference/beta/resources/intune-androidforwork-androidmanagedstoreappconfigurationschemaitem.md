@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2168cc2449092249ec07f17831c38b5be15d7676
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 39f7bb07e28875ec2d0280eb02a9d3c90b5a82e3
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971692"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366212"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 
@@ -24,7 +24,7 @@ ms.locfileid: "35971692"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |index|Int32|Уникальный индекс, который приложение использует для поддержки вложенных элементов схемы|
-|Парентиндекс|Int32|Индекс элемента родительской схемы для отслеживания вложенных элементов схемы|
+|парентиндекс|Int32|Индекс элемента родительской схемы для отслеживания вложенных элементов схемы|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
 |displayName|Строка|Понятное человеку имя.|
 |description|String|Описание компонентов приложения, которыми управляет элемент.|
@@ -32,7 +32,7 @@ ms.locfileid: "35971692"
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
 |defaultStringValue|String|Значение по умолчанию для элементов строкового типа, если указано разработчиком приложения.|
 |defaultStringArrayValue|Коллекция объектов string|Значение по умолчанию для элементов типа "массив строк", если указано разработчиком приложения.|
-|dataType|[Андроидманажедстореаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
+|dataType|[андроидманажедстореаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
 |selections|Коллекция объектов [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список понятных человеку пар имя-значение для допустимых значений, которые можно задать для этого элемента (только для элементов одиночного и множественного выбора).|
 
 ## <a name="relationships"></a>Отношения
@@ -69,8 +69,6 @@ ms.locfileid: "35971692"
   ]
 }
 ```
-
-
 
 
 

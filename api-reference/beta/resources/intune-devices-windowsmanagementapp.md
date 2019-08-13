@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68b7882da1c223d3b06dec7082fa2ae9d002f251
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b86d6d6ddad847b1a4b39fd96d61f619e19afaac
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999397"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365225"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
@@ -35,7 +35,6 @@ ms.locfileid: "35999397"
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Сводка по работоспособности для приложения управления Windows.|
 |healthStates|Коллекция [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md)|Список состояний работоспособности для установленного приложения управления Windows.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,8 +52,6 @@ ms.locfileid: "35999397"
   "availableVersion": "String"
 }
 ```
-
-
 
 
 

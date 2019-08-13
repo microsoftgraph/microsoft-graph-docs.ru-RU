@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb44ce4fc48cabd6f0b492f929a411a644844793
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9204c75316b94e2f1cec572cf26d52c8d8b35b97
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984295"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36352695"
 ---
 # <a name="delete-devicemanagementpartner"></a>Удаление объекта deviceManagementPartner
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984295"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartner
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a0306faf7ad83e7eae88fbac7c785801220d80a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d4e36f2e87710918254d006726d1142839c599a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967163"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365136"
 ---
 # <a name="mobileapptroubleshootingappupdatehistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппупдатехистори
 
@@ -26,7 +26,7 @@ ms.locfileid: "35967163"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -44,8 +44,6 @@ ms.locfileid: "35967163"
   "occurrenceDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

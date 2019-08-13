@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 243073463b3215434d965a7a089a4019a2ade2d9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fc83f999168d416474a54c8f46d0b36228d5d7a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985177"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348188"
 ---
 # <a name="list-enrollmentprofiles"></a>Список enrollmentProfiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985177"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,6 +80,7 @@ Content-Length: 484
   ]
 }
 ```
+
 
 
 

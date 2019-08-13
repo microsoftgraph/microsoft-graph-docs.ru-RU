@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b6d52ad6fd1f983dec8cdedd9a9dbc1642bffb1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2751aa1a0f8982473f71bba1b0e965e454c5e0d5
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005424"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366737"
 ---
 # <a name="macosvppapp-resource-type"></a>Тип ресурса Макосвппапп
 
@@ -27,10 +27,10 @@ ms.locfileid: "36005424"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макосвппаппс](../api/intune-apps-macosvppapp-list.md)|Коллекция [макосвппапп](../resources/intune-apps-macosvppapp.md)|Список свойств и связей объектов [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
-|[Получение Макосвппапп](../api/intune-apps-macosvppapp-get.md)|[Макосвппапп](../resources/intune-apps-macosvppapp.md)|Чтение свойств и связей объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
-|[Создание Макосвппапп](../api/intune-apps-macosvppapp-create.md)|[Макосвппапп](../resources/intune-apps-macosvppapp.md)|Создание нового объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
+|[Получение Макосвппапп](../api/intune-apps-macosvppapp-get.md)|[макосвппапп](../resources/intune-apps-macosvppapp.md)|Чтение свойств и связей объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
+|[Создание Макосвппапп](../api/intune-apps-macosvppapp-create.md)|[макосвппапп](../resources/intune-apps-macosvppapp.md)|Создание нового объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
 |[Удаление Макосвппапп](../api/intune-apps-macosvppapp-delete.md)|Нет|Удаляет объект [макосвппапп](../resources/intune-apps-macosvppapp.md).|
-|[Обновление Макосвппапп](../api/intune-apps-macosvppapp-update.md)|[Макосвппапп](../resources/intune-apps-macosvppapp.md)|Обновление свойств объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
+|[Обновление Макосвппапп](../api/intune-apps-macosvppapp-update.md)|[макосвппапп](../resources/intune-apps-macosvppapp.md)|Обновление свойств объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -49,10 +49,10 @@ ms.locfileid: "36005424"
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |releaseDateTime|DateTimeOffset|Дата и время выпуска приложения, на которое распространяется программа VPP.|
@@ -63,7 +63,7 @@ ms.locfileid: "36005424"
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
 |vppTokenId|String|Идентификатор токена VPP, связанного с этим приложением.|
-|Ревокелиценсеактионресултс|Коллекция [макосвппаппревокелиценсесактионресулт](../resources/intune-apps-macosvppapprevokelicensesactionresult.md)|Результаты отзыва действий лицензии в этом приложении.|
+|ревокелиценсеактионресултс|Коллекция [макосвппаппревокелиценсесактионресулт](../resources/intune-apps-macosvppapprevokelicensesactionresult.md)|Результаты отзыва действий лицензии в этом приложении.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -143,8 +143,6 @@ ms.locfileid: "36005424"
   ]
 }
 ```
-
-
 
 
 

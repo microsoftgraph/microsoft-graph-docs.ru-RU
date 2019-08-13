@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 62a25e030a89656f634e538855547578df2013c1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e75ee75c51f235109cd3cc3c020dc06c665a586
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971713"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366184"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>тип перечисления Андроидманажедстореаккаунтбиндстатус
 
@@ -23,12 +23,10 @@ ms.locfileid: "35971713"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотбаунд|нуль|Пока не задокументировано.|
+|нотбаунд|нуль|Пока не задокументировано.|
 |свободного|1,1|Пока не задокументировано.|
-|Баундандвалидатед|2|Пока не задокументировано.|
+|баундандвалидатед|2|Пока не задокументировано.|
 |Отмена привязки|4|Пока не задокументировано.|
-
-
 
 
 

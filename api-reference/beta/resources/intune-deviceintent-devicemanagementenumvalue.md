@@ -4,12 +4,13 @@ description: Сведения об определении значения пе�
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 194cab2efca1dc6e88deba2c001063b19127a634
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: ade5c3c10354d8697ca40f553c0941751cd26c1a
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34964033"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366625"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>Тип ресурса Девицеманажементенумвалуе
 
@@ -42,8 +43,6 @@ ms.locfileid: "34964033"
   "displayName": "String"
 }
 ```
-
-
 
 
 

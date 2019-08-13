@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cd3e3d00eb764cb2bc5c0d4b2d9483c90578c660
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edc854d1e347c15d406a527c047a5bc3f2f43438
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005648"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366261"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>тип перечисления Андроидфорворкаппконфигуратионсчемаитемдататипе
 
@@ -29,10 +29,8 @@ ms.locfileid: "36005648"
 |повторяюще|4|Пока не задокументировано.|
 |MultiSelect|SP4|Пока не задокументировано.|
 |bundle|17:00|Пока не задокументировано.|
-|Бундлеаррай|6 |Пока не задокументировано.|
+|бундлеаррай|6 |Пока не задокументировано.|
 |hidden|7 |Пока не задокументировано.|
-
-
 
 
 

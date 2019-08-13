@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58ebe962fca809662b9ce2380ace610d0184584f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dabe9ba9bb7cea28a2d67570bae225b35c4f0f05
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984895"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36357749"
 ---
 # <a name="update-grouppolicypresentationmultitextbox"></a>Обновление Граупполиципресентатионмултитекстбокс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35984895"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,7 +57,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |Обязательный|Boolean|Требование ввести значение в текстовое поле. Значение по умолчанию − ложь.|
 |maxLength|Int64|Целое число без знака, задающее максимальное количество текстовых символов. Значение по умолчанию — 1023.|
-|Максстрингс|Int64|Целое число без знака, задающее максимальное количество строк. Значение по умолчанию: 0.|
+|максстрингс|Int64|Целое число без знака, задающее максимальное количество строк. Значение по умолчанию: 0.|
 
 
 
@@ -99,6 +99,7 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
+
 
 
 

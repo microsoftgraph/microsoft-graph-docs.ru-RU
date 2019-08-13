@@ -4,12 +4,13 @@ description: Определение типа результатов сравне
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c42550f8df6dd63b4e6285ecb1be29f8a231a8d
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: enumPageType
+ms.openlocfilehash: 03e4a0625c668a434ee373614a47cb608722c3b9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "35001736"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36365379"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>тип перечисления Девицеманажементкомпарисонресулт
 
@@ -27,8 +28,6 @@ ms.locfileid: "35001736"
 |notEqual|2|Значения параметров не равны|
 |Добавлено|4|Параметр добавлен|
 |удалены|SP4|Параметр удален|
-
-
 
 
 

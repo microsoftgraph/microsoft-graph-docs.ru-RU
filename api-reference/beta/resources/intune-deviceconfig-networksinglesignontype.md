@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 196164aa58922d02d4efea9d5301bcb767f900d0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9d6c9c2f2458fc4b2a04afd68856b7fcd8021264
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35970033"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36368599"
 ---
 # <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
 
@@ -26,8 +26,6 @@ ms.locfileid: "35970033"
 |активирован|нуль|Отключена|
 |Предварительный вход|1,1|Предварительный вход|
 |Вход в систему|2|После входа|
-
-
 
 
 

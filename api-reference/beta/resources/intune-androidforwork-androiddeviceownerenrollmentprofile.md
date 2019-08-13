@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4aa50fdbfeaf4249296c67804dff4e95e3ac8e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba0d5bcef1e1580b27fde4292c248879dda14868
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006208"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366310"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>Тип ресурса Андроиддевицеовнеренроллментпрофиле
 
@@ -41,12 +41,12 @@ ms.locfileid: "36006208"
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
-|Токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
+|токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|Скопетагс|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -78,13 +78,11 @@ ms.locfileid: "36006208"
     "type": "String",
     "value": "binary"
   },
-  "scopeTags": [
+  "roleScopeTagIds": [
     "String"
   ]
 }
 ```
-
-
 
 
 

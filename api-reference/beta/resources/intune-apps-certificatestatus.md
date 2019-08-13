@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 501d363981a6429d445f722b7cdf5ccdc19fd55a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7488080f457003836102ccc6c6d6410e5550f706
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006040"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36366107"
 ---
 # <a name="certificatestatus-enum-type"></a>тип перечисления Цертификатестатус
 
@@ -23,10 +23,8 @@ ms.locfileid: "36006040"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотпровисионед|нуль|Пока не задокументировано.|
+|нотпровисионед|нуль|Пока не задокументировано.|
 |предоставляемое|1,1|Пока не задокументировано.|
-
-
 
 
 

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c37fdd78986f587da1a075fe88b146c40c530df5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62dfe5b42bd3c2f5cc5c55d6b98e62c9191d7196
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987735"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36362367"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 

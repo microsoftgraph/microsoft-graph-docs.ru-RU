@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9f207d52612da2c4dc4430e3ac191217b8bfc2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cd4df756e10fa1a5d213b56d6adabfa06c8883e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985674"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36348482"
 ---
 # <a name="get-windowsmanagementapp"></a>Получение windowsManagementApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985674"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -76,6 +76,7 @@ Content-Length: 186
   }
 }
 ```
+
 
 
 

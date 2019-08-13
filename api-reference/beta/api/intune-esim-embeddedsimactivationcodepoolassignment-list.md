@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e59c4c73e1b9f4d87fc1ad70e5a704697616bec0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46c82881b3a3571b13677d66fab1207b44ce0f5d
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35995232"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36355831"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Список Ембеддедсимактиватионкодепулассигнментс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35995232"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -77,6 +77,7 @@ Content-Length: 281
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,13 @@ description: Пока не задокументировано.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4da744d7acd78b31b27238805fb63aa9cb7e3186
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 15ba6d0ea681a59fcd39a38ff5bc1fd769fb9362
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730001"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36356223"
 ---
 # <a name="import-action"></a>действие импорта
 
@@ -26,7 +27,7 @@ ms.locfileid: "35730001"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -121,6 +122,7 @@ Content-Length: 825
   ]
 }
 ```
+
 
 
 
