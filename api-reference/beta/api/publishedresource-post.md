@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 789ebd230630ea506ce010db14627257668bbf44
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 75e560ac96a5d8979cd5b0b7c9f76e9ba2d42b90
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35875043"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309221"
 ---
-# <a name="create-publishedresource"></a><span data-ttu-id="da7c7-103">Создание Публишедресаурце</span><span class="sxs-lookup"><span data-stu-id="da7c7-103">Create publishedResource</span></span>
+# <a name="create-publishedresource"></a><span data-ttu-id="37b9a-103">Создание Публишедресаурце</span><span class="sxs-lookup"><span data-stu-id="37b9a-103">Create publishedResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da7c7-104">Создание нового объекта [публишедресаурце](../resources/publishedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="da7c7-104">Create a new [publishedResource](../resources/publishedresource.md) object.</span></span>
+<span data-ttu-id="37b9a-104">Создание нового объекта [публишедресаурце](../resources/publishedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="37b9a-104">Create a new [publishedResource](../resources/publishedresource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da7c7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da7c7-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="37b9a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="37b9a-105">Permissions</span></span>
 
-<span data-ttu-id="da7c7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da7c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="37b9a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="37b9a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="da7c7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da7c7-108">Permission type</span></span>                        | <span data-ttu-id="da7c7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da7c7-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="37b9a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="37b9a-108">Permission type</span></span>                        | <span data-ttu-id="37b9a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="37b9a-109">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="da7c7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da7c7-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="da7c7-111">Онпремисеспублишингпрофилес. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="da7c7-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="da7c7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da7c7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da7c7-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da7c7-113">Not supported.</span></span> |
-| <span data-ttu-id="da7c7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da7c7-114">Application</span></span>                            | <span data-ttu-id="da7c7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da7c7-115">Not supported.</span></span> |
+|<span data-ttu-id="37b9a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="37b9a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="37b9a-111">Онпремисеспублишингпрофилес. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="37b9a-111">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="37b9a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="37b9a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37b9a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="37b9a-113">Not supported.</span></span> |
+| <span data-ttu-id="37b9a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="37b9a-114">Application</span></span>                            | <span data-ttu-id="37b9a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="37b9a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="da7c7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da7c7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37b9a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="37b9a-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,34 +36,34 @@ ms.locfileid: "35875043"
 POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da7c7-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da7c7-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="37b9a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="37b9a-117">Request headers</span></span>
 
-| <span data-ttu-id="da7c7-118">Имя</span><span class="sxs-lookup"><span data-stu-id="da7c7-118">Name</span></span>      |<span data-ttu-id="da7c7-119">Описание</span><span class="sxs-lookup"><span data-stu-id="da7c7-119">Description</span></span>|
+| <span data-ttu-id="37b9a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="37b9a-118">Name</span></span>      |<span data-ttu-id="37b9a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="37b9a-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="da7c7-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="da7c7-120">Authorization</span></span> | <span data-ttu-id="da7c7-121">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="da7c7-121">Bearer {token}</span></span> |
+| <span data-ttu-id="37b9a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="37b9a-120">Authorization</span></span> | <span data-ttu-id="37b9a-121">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="37b9a-121">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="da7c7-122">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="da7c7-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="37b9a-122">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="37b9a-122">Request body</span></span>
 
-<span data-ttu-id="da7c7-123">В тексте запроса добавьте представление объекта [публишедресаурце](../resources/publishedresource.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da7c7-123">In the request body, supply a JSON representation of a [publishedResource](../resources/publishedresource.md) object.</span></span>
+<span data-ttu-id="37b9a-123">В тексте запроса добавьте представление объекта [публишедресаурце](../resources/publishedresource.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="37b9a-123">In the request body, supply a JSON representation of a [publishedResource](../resources/publishedresource.md) object.</span></span>
 
-<span data-ttu-id="da7c7-124">Укажите значения для следующих свойств.</span><span class="sxs-lookup"><span data-stu-id="da7c7-124">Supply the values for the following properties.</span></span>
+<span data-ttu-id="37b9a-124">Укажите значения для следующих свойств.</span><span class="sxs-lookup"><span data-stu-id="37b9a-124">Supply the values for the following properties.</span></span>
 
-| <span data-ttu-id="da7c7-125">Свойство</span><span class="sxs-lookup"><span data-stu-id="da7c7-125">Property</span></span>     | <span data-ttu-id="da7c7-126">Тип</span><span class="sxs-lookup"><span data-stu-id="da7c7-126">Type</span></span>        | <span data-ttu-id="da7c7-127">Описание</span><span class="sxs-lookup"><span data-stu-id="da7c7-127">Description</span></span> |
+| <span data-ttu-id="37b9a-125">Свойство</span><span class="sxs-lookup"><span data-stu-id="37b9a-125">Property</span></span>     | <span data-ttu-id="37b9a-126">Тип</span><span class="sxs-lookup"><span data-stu-id="37b9a-126">Type</span></span>        | <span data-ttu-id="37b9a-127">Описание</span><span class="sxs-lookup"><span data-stu-id="37b9a-127">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="da7c7-128">displayName</span><span class="sxs-lookup"><span data-stu-id="da7c7-128">displayName</span></span>|<span data-ttu-id="da7c7-129">String</span><span class="sxs-lookup"><span data-stu-id="da7c7-129">String</span></span>|<span data-ttu-id="da7c7-130">Отображаемое имя Публишедресаурце.</span><span class="sxs-lookup"><span data-stu-id="da7c7-130">Display Name of the publishedResource.</span></span>|
-|<span data-ttu-id="da7c7-131">resourceName</span><span class="sxs-lookup"><span data-stu-id="da7c7-131">resourceName</span></span>|<span data-ttu-id="da7c7-132">String</span><span class="sxs-lookup"><span data-stu-id="da7c7-132">String</span></span>|<span data-ttu-id="da7c7-133">Имя Публишедресаурце.</span><span class="sxs-lookup"><span data-stu-id="da7c7-133">Name of the publishedResource.</span></span>|
+|<span data-ttu-id="37b9a-128">displayName</span><span class="sxs-lookup"><span data-stu-id="37b9a-128">displayName</span></span>|<span data-ttu-id="37b9a-129">String</span><span class="sxs-lookup"><span data-stu-id="37b9a-129">String</span></span>|<span data-ttu-id="37b9a-130">Отображаемое имя Публишедресаурце.</span><span class="sxs-lookup"><span data-stu-id="37b9a-130">Display Name of the publishedResource.</span></span>|
+|<span data-ttu-id="37b9a-131">resourceName</span><span class="sxs-lookup"><span data-stu-id="37b9a-131">resourceName</span></span>|<span data-ttu-id="37b9a-132">String</span><span class="sxs-lookup"><span data-stu-id="37b9a-132">String</span></span>|<span data-ttu-id="37b9a-133">Имя Публишедресаурце.</span><span class="sxs-lookup"><span data-stu-id="37b9a-133">Name of the publishedResource.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="da7c7-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="da7c7-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="37b9a-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="37b9a-134">Response</span></span>
 
-<span data-ttu-id="da7c7-135">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="da7c7-135">If successful, this method returns a `201 Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.</span></span>
+<span data-ttu-id="37b9a-135">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [публишедресаурце](../resources/publishedresource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="37b9a-135">If successful, this method returns a `201 Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="da7c7-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="da7c7-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="37b9a-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="37b9a-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="da7c7-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="da7c7-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="37b9a-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="37b9a-137">Request</span></span>
 
-<span data-ttu-id="da7c7-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da7c7-138">The following is an example of the request.</span></span>
+<span data-ttu-id="37b9a-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="37b9a-138">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="da7c7-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="da7c7-139">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="37b9a-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="37b9a-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_publishedresource_from_onpremisespublishingprofile"
@@ -78,30 +78,30 @@ Content-Type: application/json
     "resourceName": "domain1.contoso.com"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="da7c7-140">C#</span><span class="sxs-lookup"><span data-stu-id="da7c7-140">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="37b9a-140">C#</span><span class="sxs-lookup"><span data-stu-id="37b9a-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-publishedresource-from-onpremisespublishingprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="da7c7-141">Javascript</span><span class="sxs-lookup"><span data-stu-id="da7c7-141">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="37b9a-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="37b9a-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-publishedresource-from-onpremisespublishingprofile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="da7c7-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="da7c7-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="37b9a-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="37b9a-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-publishedresource-from-onpremisespublishingprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="da7c7-143">Java</span><span class="sxs-lookup"><span data-stu-id="da7c7-143">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="37b9a-143">Java</span><span class="sxs-lookup"><span data-stu-id="37b9a-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-publishedresource-from-onpremisespublishingprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="da7c7-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="da7c7-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="37b9a-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="37b9a-144">Response</span></span>
 
-<span data-ttu-id="da7c7-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="da7c7-145">The following is an example of the response.</span></span>
+<span data-ttu-id="37b9a-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="37b9a-145">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="da7c7-p102">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="da7c7-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="37b9a-p102">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="37b9a-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
