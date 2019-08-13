@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f8d159be0519580121ad7303813c5d4c0656a918
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e7fc61b31f46ce798aeb6e7ece3e6b19429ccb85
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016365"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337267"
 ---
 # <a name="list-memberof"></a>Список memberOf
 Получение групп, непосредственным членом которых является данная группа. 

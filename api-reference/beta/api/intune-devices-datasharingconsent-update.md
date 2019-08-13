@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 946b4bbb36e34d9c1eb59774b8a7a0ccc93f86c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 073ab096a3bacdec1e01e44e891baa2802f5bd61
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981698"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310635"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981698"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,12 +52,12 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор согласия общего доступа к данным|
-|Сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
-|Термсурл|String|Термсурл для согласия общего доступа к данным|
+|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|термсурл|String|Термсурл для согласия общего доступа к данным|
 |granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
-|Грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|Грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|Грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
+|грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
+|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
@@ -102,6 +102,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

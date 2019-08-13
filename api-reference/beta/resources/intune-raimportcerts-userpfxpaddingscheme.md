@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a3c4d4d07a3891167838af6de7ea854883a5b1e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f9a882cd1fdc788782a7c68df1ad38c6cc8d37e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967702"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308136"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
 
@@ -23,14 +23,12 @@ ms.locfileid: "35967702"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Заполнение не используется.|
-|pkcs1|1,1|Используйте заполнение PKCS # 1.|
-|oaepSha1|2|Используйте заполнение OAEP SHA – 1.|
-|oaepSha256|4|Используйте заполнение OAEP SHA – 256.|
-|oaepSha384|SP4|Используйте заполнение OAEP SHA – 384.|
-|oaepSha512|17:00|Используйте заполнение OAEP SHA – 512.|
-
-
+|none|нуль|Пока не задокументировано.|
+|pkcs1|1,1|Пока не задокументировано.|
+|oaepSha1|2|Пока не задокументировано.|
+|oaepSha256|4|Пока не задокументировано.|
+|oaepSha384|SP4|Пока не задокументировано.|
+|oaepSha512|17:00|Пока не задокументировано.|
 
 
 

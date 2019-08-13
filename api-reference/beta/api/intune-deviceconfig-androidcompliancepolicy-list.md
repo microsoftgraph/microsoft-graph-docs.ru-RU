@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7752b0e1445dda45efdfe664ed4734c257e97ec8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4548b3b19a4187b326b0786d7fcc2fe7c1fb44f0
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958265"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312791"
 ---
 # <a name="list-androidcompliancepolicies"></a>Перечисление объектов androidCompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958265"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -114,6 +114,7 @@ Content-Length: 1961
   ]
 }
 ```
+
 
 
 

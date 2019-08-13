@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cac77db53b4740e3ba11dbcff4b21774643bdb67
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2f8b668b09c22227e4c7ac6d70cf5c4b3b45d40
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001441"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325668"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
 
@@ -24,10 +24,8 @@ ms.locfileid: "36001441"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |productKey|нуль|Тип ключа продукта|
-|Лиценсефиле|1,1|Тип файла лицензии|
+|лиценсефиле|1,1|Тип файла лицензии|
 |notConfigured|2|NotConfigured|
-
-
 
 
 

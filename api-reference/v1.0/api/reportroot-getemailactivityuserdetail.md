@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 9d9e24dfaebdc9a8321a3d2443e02d3fc9011311
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 563027b755236827f3cb7b8674114c1fd51f8680
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025178"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327409"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -31,7 +31,6 @@ ms.locfileid: "36025178"
 ## <a name="http-request"></a>HTTP-запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "samples" } --> 
 
 ```http
@@ -83,6 +82,8 @@ CSV-файл содержит столбцы со следующими заго�
 
 Ниже приведен пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 2fa19a2bf01d5584cf9f8d5a976119fa19a98719
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b1fb1c43b5f9c5ecc1a1f62106e781e0b3dca2e1
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025017"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36371639"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 
@@ -31,7 +31,6 @@ ms.locfileid: "36025017"
 ## <a name="http-request"></a>HTTP-запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "samples" } --> 
 
 ```http
@@ -82,6 +81,8 @@ CSV-файл содержит столбцы со следующими заго�
 
 Ниже приведен пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -95,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageAccountDetail(perio
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getonedriveusageuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveusageuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

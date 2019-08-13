@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2662937b7b019496b96a42eab9def872581448aa
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0d3fe05d404a4bd3b7385e82faa0db1af0cc7f2e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892338"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320742"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-    .getSkypeForBusinessOrganizerActivityUserCounts('D7')
+    .getSkypeForBusinessOrganizerActivityUserCounts("D7")
     .buildRequest()
     .get();
 

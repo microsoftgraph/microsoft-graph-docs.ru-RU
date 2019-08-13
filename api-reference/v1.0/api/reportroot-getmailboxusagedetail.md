@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: fb297d3be564a585a5346961aa6e39169cf61b92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a59a75304702b5e8174d051a4f943233043442d8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025136"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36327240"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -31,7 +31,6 @@ ms.locfileid: "36025136"
 ## <a name="http-request"></a>HTTP-запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -81,6 +80,8 @@ CSV-файл содержит столбцы со следующими заго�
 
 Ниже приведен пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,

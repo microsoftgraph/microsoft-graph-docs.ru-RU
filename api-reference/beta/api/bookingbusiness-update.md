@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: de39325ffff84ee975d48875e0785fd2ab7824bb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 377c1eb6bdbc0595e43785db8b31f08e4c2b2cb7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945027"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318217"
 ---
 # <a name="update-bookingbusiness"></a>Обновление букингбусинесс
 
@@ -43,13 +43,13 @@ PATCH /bookingBusinesses/<id>
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|Адрес в почтовом ящике организации.|
 |businessHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Количество часов работы для бизнеса.|
-|Бусинесстипе|String|Тип бизнеса.|
-|Дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
+|бусинесстипе|String|Тип бизнеса.|
+|дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
 |displayName|Строка|Название организации, которая взаимодействует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
-|Счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
-|Вебситеурл|String|URL-адрес веб-сайта компании.|
+|счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
+|вебситеурл|String|URL-адрес веб-сайта компании.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
@@ -81,7 +81,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

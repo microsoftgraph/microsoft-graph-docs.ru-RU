@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e016ad6a390d09466bf4956c585911669437f82b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ecfec55a5bdff723ad64f3541b678dda1d37749
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35958471"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36312868"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Обновление Адванцедсреатпротектиононбоардингстатесуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "35958471"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -59,7 +59,7 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
-|Нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
+|нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
 
 
 
@@ -108,6 +108,7 @@ Content-Length: 380
   "notAssignedDeviceCount": 6
 }
 ```
+
 
 
 

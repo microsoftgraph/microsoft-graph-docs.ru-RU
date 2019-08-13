@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 944cb13bff433737ec90637d98045d0fa8e1c1fc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f07a228ce685ae2ec3fcb502131eac5a6d9271af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985926"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310292"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление Девицеманажементскриптрунсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985926"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,9 +52,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Key объекта сводки запуска сценария управления устройствами.|
-|Сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
+|сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
-|Сукцессусеркаунт|Int32|Число пользователей Success.|
+|compliantDeviceCount|Int32|Число соответствующих устройств.|
+|ноткомплиантдевицекаунт|Int32|Количество устройств, не соответствующих требованиям.|
+|пендингдевицекаунт|Int32|Количество ожидающих устройств.|
+|сукцессусеркаунт|Int32|Число пользователей Success.|
 |errorUserCount|Int32|Количество пользователей с ошибками.|
 
 
@@ -69,12 +72,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 Content-type: application/json
-Content-length: 179
+Content-length: 270
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
+  "compliantDeviceCount": 4,
+  "notCompliantDeviceCount": 7,
+  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
@@ -85,17 +91,21 @@ Content-length: 179
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 228
+Content-Length: 319
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
+  "compliantDeviceCount": 4,
+  "notCompliantDeviceCount": 7,
+  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
 ```
+
 
 
 

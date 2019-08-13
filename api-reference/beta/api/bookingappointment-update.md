@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: abdb15ea5b27071854bf8ece09d037e5d2e95fdb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3ba01a0fa6d1d28070471226a0c5f2ebae95006e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945232"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36318420"
 ---
 # <a name="update-bookingappointment"></a>Обновление букингаппоинтмент
 
@@ -41,31 +41,31 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Кустомеремаиладдресс|String|SMTP-адрес [букингкустомер](../resources/bookingcustomer.md) , который зарезервировано встречу.|
+|кустомеремаиладдресс|String|SMTP-адрес [букингкустомер](../resources/bookingcustomer.md) , который зарезервировано встречу.|
 |customerId|String|Идентификатор [букингкустомер](../resources/bookingcustomer.md) для этой встречи. Если при создании встречи не указан идентификатор, создается новый объект **букингкустомер** . После установки необходимо учесть неизменность **customerId** .|
-|Кустомерлокатион|[location](../resources/location.md)|Представляет сведения о расположении для [букингкустомер](../resources/bookingcustomer.md) , который зарезервировано встречу.|
+|кустомерлокатион|[location](../resources/location.md)|Представляет сведения о расположении для [букингкустомер](../resources/bookingcustomer.md) , который зарезервировано встречу.|
 |customerName|String|Имя клиента.|
-|Кустомернотес|String|Примечания от клиента, связанного с этой встречей. Значение можно получить только при чтении этого **букингаппоинтмент** по его идентификатору. <br> Это свойство можно задать только при первоначальном создании встречи с новым клиентом. После этой точки значение вычисляется от клиента, представленного **customerId**.|
-|Кустомерфоне|String|Номер телефона клиента.|
+|кустомернотес|String|Примечания от клиента, связанного с этой встречей. Значение можно получить только при чтении этого **букингаппоинтмент** по его идентификатору. <br> Это свойство можно задать только при первоначальном создании встречи с новым клиентом. После этой точки значение вычисляется от клиента, представленного **customerId**.|
+|кустомерфоне|String|Номер телефона клиента.|
 |duration|Duration (Длительность)|Длительность встречи, обозначенная в формате [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, в котором заканчивается встреча.|
-|Инвоицеамаунт|Двойное|Сумма счета в счете.|
-|Инвоицедате|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс накладной для данной встречи.|
-|Инвоицеид|String|Идентификатор счета.|
-|Инвоицестатус|string| Статус счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|Инвоицеурл|String|URL-адрес счета в книгах корпорации Майкрософт.|
-|Оптаутофкустомеремаил|Boolean|Значение true указывает, что [букингкустомер](../resources/bookingcustomer.md) для этой встречи не хочет получать подтверждение для этой встречи.|
+|инвоицеамаунт|Двойное|Сумма счета в счете.|
+|инвоицедате|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс накладной для данной встречи.|
+|инвоицеид|String|Идентификатор счета.|
+|инвоицестатус|string| Статус счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|инвоицеурл|String|URL-адрес счета в книгах корпорации Майкрософт.|
+|оптаутофкустомеремаил|Boolean|Значение true указывает, что [букингкустомер](../resources/bookingcustomer.md) для этой встречи не хочет получать подтверждение для этой встречи.|
 |Буфер буфера|Duration (Длительность)|Количество времени, которое необходимо зарезервировать после окончания встречи, для очистки в качестве примера. Значение выражается в формате [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |пребуфер|Duration (Длительность)|Количество времени, которое необходимо зарезервировать до начала встречи, в качестве примера для подготовки. Значение выражается в формате [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |Цена|Двойное|Обычная цена для встречи с указанным [букингсервице](../resources/bookingservice.md).|
-|Прицетипе|string| Параметр, обеспечивающий гибкость для структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|прицетипе|string| Параметр, обеспечивающий гибкость для структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |напоминания|Коллекция [букингреминдер](../resources/bookingreminder.md)|Коллекция напоминаний о клиентах, отправленных для этой встречи. Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
-|Селфсервицеаппоинтментид|String|Дополнительный идентификатор отслеживания для встречи, если встреча создана непосредственно клиентом на странице планирования, в отличие от сотрудника от имени клиента;.|
+|селфсервицеаппоинтментид|String|Дополнительный идентификатор отслеживания для встречи, если встреча создана непосредственно клиентом на странице планирования, в отличие от сотрудника от имени клиента;.|
 |serviceId|String|Идентификатор [букингсервице](../resources/bookingservice.md) , связанный с этой встречей.|
-|Сервицелокатион|[location](../resources/location.md)|Место доставки службы.|
+|сервицелокатион|[location](../resources/location.md)|Место доставки службы.|
 |Служба|String|Имя **букингсервице** , связанного с этой встречей.<br>Это свойство является необязательным при создании новой встречи. Если он не указан, то он вычисляется из службы, связанной с встречей, с помощью свойства **serviceId** .|
-|Сервиценотес|String|Заметки из [букингстаффмембер](../resources/bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
-|Стаффмемберидс|Коллекция строк|Идентификатор каждого [букингстаффмембер](../resources/bookingstaffmember.md) , запланированного в этой встрече.|
+|сервиценотес|String|Заметки из [букингстаффмембер](../resources/bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
+|стаффмемберидс|Коллекция строк|Идентификатор каждого [букингстаффмембер](../resources/bookingstaffmember.md) , запланированного в этой встрече.|
 |начать|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается встреча.|
 
 
@@ -107,7 +107,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingappointment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingappointment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

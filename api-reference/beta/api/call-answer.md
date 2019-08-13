@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2a61d00efa15975e8e7fd1a10f0a6f8856398933
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6540cc9d20868c6a29c24ad44179b1fc904968e6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944584"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36317819"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -45,7 +45,7 @@ POST /applications/{id}/calls/{id}/answer
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы. Потребоваться                                                               |
-|Акцептедмодалитиес|Коллекция строк                         |Список принимаемых модальности. Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data` Потребоваться |
+|акцептедмодалитиес|Коллекция строк                         |Список принимаемых модальности. Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data` Потребоваться |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Настройка мультимедиа. Потребоваться                                                                                                            |
 
 ## <a name="response"></a>Отклик
@@ -83,7 +83,7 @@ Content-Length: 211
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

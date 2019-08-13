@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ce2358017d34d78449623db558d2c2758a5ad9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d72056da18672eeddce80681fa4f2441727c4fd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981593"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310390"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>Удаление Девицеманажементскриптдевицестате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981593"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

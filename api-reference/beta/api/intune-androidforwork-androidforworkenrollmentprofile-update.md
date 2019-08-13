@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abd3fc0112f54989c0e1264150fe59ca1367e628
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c404b63b81a25b003cd72af2a2e7517663d04ba2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952739"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325066"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Обновление объекта androidForWorkEnrollmentProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952739"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

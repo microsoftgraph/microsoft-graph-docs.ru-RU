@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9deb5c9003471026905457a910c6d966463df66b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9163d87b2048a7db377a335bb880354153d486d8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021587"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36320100"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
 Копирует раздел в определенную группу разделов.
@@ -46,7 +46,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 |:---------------|:--------|:----------|
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
 |id|String|Обязательный. Идентификатор группы разделов назначения. |
-|Ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -81,7 +81,7 @@ Content-length: 84
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytosectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytosectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

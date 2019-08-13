@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Сек
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72436d2fed2c8069bfa7d41a111561f7a508ecd5
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: apiPageType
+ms.openlocfilehash: b5e68241a8e6dc3f1827974c2493648681bd7f69
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34959525"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310810"
 ---
 # <a name="list-securitybaselinedevicestates"></a>Список Секуритибаселинедевицестатес
 
@@ -26,7 +27,7 @@ ms.locfileid: "34959525"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -78,6 +79,7 @@ Content-Length: 420
   ]
 }
 ```
+
 
 
 

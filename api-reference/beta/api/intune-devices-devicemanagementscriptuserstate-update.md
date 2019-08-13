@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2891bcf9b3b5614d4b7302339ebf05e6cc786d10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4562d86d49647895653307c050baee284dab60da
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981488"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310278"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Обновление Девицеманажементскриптусерстате
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981488"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта состояния пользователя скрипта управления устройствами.|
-|Сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
+|сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
 |errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
 |userPrincipalName|String|Имя участника, указанного пользователем.|
 
@@ -93,6 +93,7 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

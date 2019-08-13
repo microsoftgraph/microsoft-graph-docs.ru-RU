@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9792956c200b6471472b1024301d04336b0714e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a19ce32f8659e968a3eee0bb99073278b7ed792
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952382"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324884"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>Создание Андроидфорворкмобилеаппконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952382"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -60,8 +60,8 @@ POST /deviceAppManagement/mobileAppConfigurations
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации приложения Android для рабочего приложения.|
-|Пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
-|Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
+|пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
+|пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
 
 
 
@@ -132,6 +132,7 @@ Content-Length: 732
   ]
 }
 ```
+
 
 
 

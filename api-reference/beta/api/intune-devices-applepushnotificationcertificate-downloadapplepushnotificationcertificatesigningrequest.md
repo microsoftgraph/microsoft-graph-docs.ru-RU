@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b0bd3001a114c4cbef10fdf50891fee61695928
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20889790c74c50cac6e38fceeb7fbbff8ed4506e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35986339"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310783"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Функция downloadApplePushNotificationCertificateSigningRequest
 
@@ -27,7 +27,7 @@ ms.locfileid: "35986339"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -69,6 +69,7 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
+
 
 
 

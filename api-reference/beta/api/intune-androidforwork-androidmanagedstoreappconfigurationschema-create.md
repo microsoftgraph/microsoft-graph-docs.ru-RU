@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ef1ebcfdb92700b1260433b7085ff9db2a14c00
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e5395074ddf0860527e5fa7183c21832e4f83d7
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35952536"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36324954"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Создание Андроидманажедстореаппконфигуратионсчема
 
@@ -27,7 +27,7 @@ ms.locfileid: "35952536"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит только конфигурацию корневого уровня.|
-|Нестедсчемаитемс|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит плоский список всех конфигураций.|
+|нестедсчемаитемс|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит плоский список всех конфигураций.|
 
 
 
@@ -185,6 +185,7 @@ Content-Length: 1634
   ]
 }
 ```
+
 
 
 

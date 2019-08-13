@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 362716388f5c479e4b8c4a0009403817fcc80515
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 235411d1b323bbacc5ffb3f86cf68242b8a41861
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026791"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36316289"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 

@@ -4,12 +4,13 @@ description: Список свойств и связей объектов Ман
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c99115cc752645af68c16bc722cd85f78d07e9d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+doc_type: apiPageType
+ms.openlocfilehash: 67f2cb17e099f902c4acbcd00e59b2f59c3be856
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726124"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36315024"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>Список Манажедаллдевицецертификатестатес
 
@@ -26,7 +27,7 @@ ms.locfileid: "35726124"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,6 +85,7 @@ Content-Length: 869
   ]
 }
 ```
+
 
 
 

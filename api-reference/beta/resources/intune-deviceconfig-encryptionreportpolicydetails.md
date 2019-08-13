@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1484e1ed55abb14daccb61e024dc94eb415e031
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7271329a7536a6359bbc9662427e65e21ea39d8b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004374"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36325612"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
 
@@ -23,7 +23,7 @@ ms.locfileid: "36004374"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Полициид|String|Идентификатор политики для отчета о шифровании|
+|полициид|String|Идентификатор политики для отчета о шифровании|
 |policyName|String|Имя политики для отчета о шифровании|
 
 ## <a name="relationships"></a>Отношения
@@ -43,8 +43,6 @@ ms.locfileid: "36004374"
   "policyName": "String"
 }
 ```
-
-
 
 
 

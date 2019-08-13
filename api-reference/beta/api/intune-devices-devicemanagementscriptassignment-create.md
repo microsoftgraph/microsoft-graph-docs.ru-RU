@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 023e270050a227678ebab5a9b70626a097f7e1ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b57f725492d968efe90c152dcb7b82f79613ebe2
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35981656"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36310474"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>Создание Девицеманажементскриптассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "35981656"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,6 +91,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

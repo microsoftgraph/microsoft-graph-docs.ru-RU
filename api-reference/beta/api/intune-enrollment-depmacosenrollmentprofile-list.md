@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dca069ab03278bc2bd537fffdb551da25a6eb65e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 92a9bb76ba2e957125455c7af09d885736b58edf
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35985310"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36309669"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>Список Депмакосенроллментпрофилес
 
@@ -27,7 +27,7 @@ ms.locfileid: "35985310"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -104,6 +104,7 @@ Content-Length: 1401
   ]
 }
 ```
+
 
 
 

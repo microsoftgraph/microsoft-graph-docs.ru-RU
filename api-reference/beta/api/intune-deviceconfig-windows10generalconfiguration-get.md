@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e10547dc9e80e14d4c170cafd85d597cb2dacdd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 693db357bae6ecc57c982e1f02f9e16cbb5c28a9
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975447"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36314527"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "35975447"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15262
+Content-Length: 15750
 
 {
   "value": {
@@ -105,6 +105,16 @@ Content-Length: 15262
     "displayName": "Display Name value",
     "version": 7,
     "taskManagerBlockEndTask": true,
+    "energySaverOnBatteryThresholdPercentage": 7,
+    "energySaverPluggedInThresholdPercentage": 7,
+    "powerLidCloseActionOnBattery": "noAction",
+    "powerLidCloseActionPluggedIn": "noAction",
+    "powerButtonActionOnBattery": "noAction",
+    "powerButtonActionPluggedIn": "noAction",
+    "powerSleepButtonActionOnBattery": "noAction",
+    "powerSleepButtonActionPluggedIn": "noAction",
+    "powerHybridSleepOnBattery": "enabled",
+    "powerHybridSleepPluggedIn": "enabled",
     "windows10AppsForceUpdateSchedule": {
       "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -417,6 +427,7 @@ Content-Length: 15262
   }
 }
 ```
+
 
 
 

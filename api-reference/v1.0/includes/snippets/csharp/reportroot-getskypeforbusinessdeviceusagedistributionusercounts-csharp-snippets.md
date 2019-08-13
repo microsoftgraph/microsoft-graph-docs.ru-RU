@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 80aeb0f83a126ff82f9182855fbdbbdb00266390
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 12677c65d969777b28419429111f530f8152eb0b
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892477"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36349197"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var report = await graphClient.Reports
-    .GetSkypeForBusinessDeviceUsageDistributionUserCounts('D7')
+    .GetSkypeForBusinessDeviceUsageDistributionUserCounts("D7")
     .Request()
     .GetAsync();
 

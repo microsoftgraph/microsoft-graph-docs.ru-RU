@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ef9d93b2a755c03055a89a78b4fe5a0f6b49d1d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5e1f04f74c3847b8d20b9845537e65df3f695c4
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35951122"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36311370"
 ---
 # <a name="list-androidwificonfigurations"></a>Список Андроидвификонфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "35951122"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -110,6 +110,7 @@ Content-Length: 1561
   ]
 }
 ```
+
 
 
 

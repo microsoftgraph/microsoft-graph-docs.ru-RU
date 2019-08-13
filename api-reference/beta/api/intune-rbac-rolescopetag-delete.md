@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 63a4c5f0a36a1606e94f1887e20f818faaf88d03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 44aa38327640e0eeea31b443042269662786e411
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35993832"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36351177"
 ---
 # <a name="delete-rolescopetag"></a>Удаление Ролескопетаг
 
@@ -27,7 +27,7 @@ ms.locfileid: "35993832"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScop
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

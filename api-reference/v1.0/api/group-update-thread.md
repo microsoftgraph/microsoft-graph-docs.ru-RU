@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9f7ce06bc976d58878df31150a0ccc5882e45176
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 80a7909561a58c5d7c4ac77e1021f8077fbb368e
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014678"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36373380"
 ---
 # <a name="update-conversation-thread"></a>Обновление цепочки беседы
 Обновление объекта [thread](../resources/conversationthread.md).
@@ -69,7 +69,7 @@ Content-length: 655
   "isReminderOn": true
 }
 ```
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

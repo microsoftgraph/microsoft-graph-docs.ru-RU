@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d145212645283738d1248bd05c50b1f6658460f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62c57d4ed01ab1f454a5356899f9645927680dfd
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967219"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36313050"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппстатехистори
 
@@ -26,9 +26,9 @@ ms.locfileid: "35967219"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|Тип действия для приложения Intune. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
-|Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
+|оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|Идентификатор группы безопасности AAD, к которой назначена эта группа. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
 ## <a name="relationships"></a>Отношения
@@ -50,8 +50,6 @@ ms.locfileid: "35967219"
   "errorCode": "String"
 }
 ```
-
-
 
 
 

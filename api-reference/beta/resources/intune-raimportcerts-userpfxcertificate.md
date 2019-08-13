@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9b3ed77f4448bdfbe881f6f659208f9dbdff691
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5207ebe54ad6dd7f6f5273bfd9062852c4de24f6
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967709"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36308144"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
 
@@ -40,9 +40,9 @@ ms.locfileid: "35967709"
 |expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
 |providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
 |keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
-|Паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|Енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|Енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
+|паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
+|енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
 
@@ -75,8 +75,6 @@ ms.locfileid: "35967709"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

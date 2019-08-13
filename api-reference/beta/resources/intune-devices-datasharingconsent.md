@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7dbb15103ac6bfe337bdb370ef91524226ac72d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0fabb90bebb112ccb2e74b7914f14be08523e0a8
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35999999"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36370244"
 ---
 # <a name="datasharingconsent-resource-type"></a>Тип ресурса Даташарингконсент
 
@@ -34,12 +34,12 @@ ms.locfileid: "35999999"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор согласия общего доступа к данным|
-|Сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
-|Термсурл|String|Термсурл для согласия общего доступа к данным|
+|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|термсурл|String|Термсурл для согласия общего доступа к данным|
 |granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
-|Грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|Грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|Грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
+|грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
+|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -64,8 +64,6 @@ ms.locfileid: "35999999"
   "grantedByUserId": "String"
 }
 ```
-
-
 
 
 

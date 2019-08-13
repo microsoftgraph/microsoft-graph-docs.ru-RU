@@ -4,12 +4,13 @@ description: Объект, представляющий определенную
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 438fbf37cb419145d63b8d25f9e8145005eac6cc
-ms.sourcegitcommit: 0a62bc5849f27a55d83efce9b3eb01b9711bbe1d
+doc_type: resourcePageType
+ms.openlocfilehash: 3e2c7536c61bfaf8287a0a2428e0b861e09f3a5f
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34984417"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36337624"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>Тип ресурса Девицеманажементтемплате
 
@@ -38,8 +39,8 @@ ms.locfileid: "34984417"
 |description|String|Описание шаблона|
 |versionInfo|String|Сведения о версии шаблона|
 |нерекомендуемый|Boolean|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
-|Интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
-|TemplateType — тип|[Девицеманажементтемплатетипе](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
+|TemplateType — тип|[девицеманажементтемплатетипе](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
 |publishedDateTime|DateTimeOffset|При публикации шаблона|
 
 ## <a name="relationships"></a>Отношения
@@ -47,7 +48,7 @@ ms.locfileid: "34984417"
 |:---|:---|:---|
 |settings|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция всех параметров, которые содержит этот шаблон|
 |categories|Коллекция [девицеманажементтемплатесеттингкатегори](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Коллекция настроек категорий в шаблоне|
-|Мигратаблето|Коллекция [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|Коллекция шаблонов, в которые можно перенести этот шаблон|
+|мигратаблето|Коллекция [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|Коллекция шаблонов, в которые можно перенести этот шаблон|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -70,8 +71,6 @@ ms.locfileid: "34984417"
   "publishedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 
