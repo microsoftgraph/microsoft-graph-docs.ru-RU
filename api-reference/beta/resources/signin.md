@@ -5,12 +5,12 @@ description: Описание ресурса signIn для API Microsoft Graph (
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6197600854833f7887556c35a511fad61b4539d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a0f3977c14ce8e0e53cdbd296ea28c4b79f5762
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965063"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396746"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
@@ -31,7 +31,7 @@ ms.locfileid: "35965063"
 |appDisplayName|String|Обозначает имя приложения, отображаемое на портале Azure.|
 |appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
 |clientAppUsed|String|Представляет устаревший клиент, использовавшийся для действия входа. Например: браузер, Exchange Active Sync, современные клиенты, IMAP, MAPI, SMTP, POP.|
-|appliedConditionalAccessPolicy|Коллекция [conditionalAccessPolicy](conditionalaccesspolicy.md)|Предоставляет список политик условного доступа, запускаемых соответствующим действием входа.|
+|апплиедкондитионалакцессполиЦиес|Коллекция [conditionalAccessPolicy](conditionalaccesspolicy.md)|Предоставляет список политик условного доступа, запускаемых соответствующим действием входа.|
 |conditionalAccessStatus|string| Предоставляет состояние запущенной политики условного доступа. Возможные значения: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
 |originalRequestId|String|Идентификатор первого запроса в последовательности проверки подлинности.|
 |isInteractive|Boolean|Указывает, является ли вход интерактивным.|
@@ -89,7 +89,7 @@ ms.locfileid: "35965063"
   "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "originalRequestId": "String",
   "isInteractive": "String",
   "tokenIssuerName": "String",

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: adbe65253762f4563a43860e73794023cb9861cb
+ms.openlocfilehash: 7e28bf999ad98c2fcd5d04f9dc791906878d27dd
 ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396823"
+ms.locfileid: "36396872"
 ---
 ```java
 
@@ -17,7 +17,7 @@ businessPhonesList.add("businessPhones-value");
 user.businessPhones = businessPhonesList;
 user.officeLocation = "city-value";
 
-graphClient.me()
+graphClient.users("{id}")
     .buildRequest()
     .patch(user);
 
