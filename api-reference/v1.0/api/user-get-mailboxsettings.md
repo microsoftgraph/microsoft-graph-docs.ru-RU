@@ -5,41 +5,41 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a577a2cda9206f2b79fc48aa6a6b1ce3af7741d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d97fdfed4ce30d4700f78fda82d8be2e5a4481b2
+ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027148"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36396865"
 ---
-# <a name="get-user-mailbox-settings"></a><span data-ttu-id="f542e-104">Получение параметров почтового ящика пользователя</span><span class="sxs-lookup"><span data-stu-id="f542e-104">Get user mailbox settings</span></span>
+# <a name="get-user-mailbox-settings"></a><span data-ttu-id="7d35e-104">Получение параметров почтового ящика пользователя</span><span class="sxs-lookup"><span data-stu-id="7d35e-104">Get user mailbox settings</span></span>
 
-<span data-ttu-id="f542e-p102">Получение объекта [mailboxSettings](../resources/mailboxsettings.md) пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при получении электронных сообщений от них), языкового стандарта (язык и страна или регион), часового пояса и рабочего времени.</span><span class="sxs-lookup"><span data-stu-id="f542e-p102">Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), and time zone, and working hours.</span></span>
+<span data-ttu-id="7d35e-p102">Получение объекта [mailboxSettings](../resources/mailboxsettings.md) пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при получении электронных сообщений от них), языкового стандарта (язык и страна или регион), часового пояса и рабочего времени.</span><span class="sxs-lookup"><span data-stu-id="7d35e-p102">Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), and time zone, and working hours.</span></span>
 
-<span data-ttu-id="f542e-107">Вы можете просмотреть все параметры почтового ящика или получить определенные параметры.</span><span class="sxs-lookup"><span data-stu-id="f542e-107">You can view all mailbox settings, or, get specific settings.</span></span>
+<span data-ttu-id="7d35e-107">Вы можете просмотреть все параметры почтового ящика или получить определенные параметры.</span><span class="sxs-lookup"><span data-stu-id="7d35e-107">You can view all mailbox settings, or, get specific settings.</span></span>
 
-<span data-ttu-id="f542e-108">Часовой пояс относится к предпочтительным параметрам, настраиваемым пользователями.</span><span class="sxs-lookup"><span data-stu-id="f542e-108">Time zone is one of the preferred settings a user can set up for the user's mailbox.</span></span> <span data-ttu-id="f542e-109">Допустимые форматы часовых поясов включают в себя форматы Windows и [IANA, или Internet Assigned Numbers Authority](https://www.iana.org/time-zones) (последний еще зовется форматом часового пояса Олсона).</span><span class="sxs-lookup"><span data-stu-id="f542e-109">Valid time zone formats include the Windows time zone format and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="f542e-110">Формат Windows используется по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="f542e-110">The Windows format is the default.</span></span> 
+<span data-ttu-id="7d35e-108">Часовой пояс относится к предпочтительным параметрам, настраиваемым пользователями.</span><span class="sxs-lookup"><span data-stu-id="7d35e-108">Time zone is one of the preferred settings a user can set up for the user's mailbox.</span></span> <span data-ttu-id="7d35e-109">Допустимые форматы часовых поясов включают в себя форматы Windows и [IANA, или Internet Assigned Numbers Authority](https://www.iana.org/time-zones) (последний еще зовется форматом часового пояса Олсона).</span><span class="sxs-lookup"><span data-stu-id="7d35e-109">Valid time zone formats include the Windows time zone format and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="7d35e-110">Формат Windows используется по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="7d35e-110">The Windows format is the default.</span></span> 
 
-<span data-ttu-id="f542e-111">Когда вы получаете предпочтительный часовой пояс пользователя, часовой пояс возвращается в том формате, который был настроен.</span><span class="sxs-lookup"><span data-stu-id="f542e-111">When you get a user's preferred time zone, the time zone is returned in the format that it was set up.</span></span> <span data-ttu-id="f542e-112">Чтобы задать определенный формат часового пояса (Windows или IANA), сначала [обновите предпочтительный часовой пояс в этом формате как параметр почтового ящика](user-update-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="f542e-112">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="f542e-113">Затем вы сможете получить часовой пояс в этом формате.</span><span class="sxs-lookup"><span data-stu-id="f542e-113">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="f542e-114">Кроме того, вы можете управлять преобразованием форматов в своем приложении.</span><span class="sxs-lookup"><span data-stu-id="f542e-114">Alternatively, you can manage the format conversion separately in your app.</span></span>
+<span data-ttu-id="7d35e-111">Когда вы получаете предпочтительный часовой пояс пользователя, часовой пояс возвращается в том формате, который был настроен.</span><span class="sxs-lookup"><span data-stu-id="7d35e-111">When you get a user's preferred time zone, the time zone is returned in the format that it was set up.</span></span> <span data-ttu-id="7d35e-112">Чтобы задать определенный формат часового пояса (Windows или IANA), сначала [обновите предпочтительный часовой пояс в этом формате как параметр почтового ящика](user-update-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="7d35e-112">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="7d35e-113">Затем вы сможете получить часовой пояс в этом формате.</span><span class="sxs-lookup"><span data-stu-id="7d35e-113">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="7d35e-114">Кроме того, вы можете управлять преобразованием форматов в своем приложении.</span><span class="sxs-lookup"><span data-stu-id="7d35e-114">Alternatively, you can manage the format conversion separately in your app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f542e-115">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f542e-115">Permissions</span></span>
-<span data-ttu-id="f542e-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f542e-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d35e-115">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7d35e-115">Permissions</span></span>
+<span data-ttu-id="7d35e-p105">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d35e-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f542e-118">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f542e-118">Permission type</span></span>      | <span data-ttu-id="f542e-119">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f542e-119">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7d35e-118">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7d35e-118">Permission type</span></span>      | <span data-ttu-id="7d35e-119">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7d35e-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f542e-120">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f542e-120">Delegated (work or school account)</span></span> | <span data-ttu-id="f542e-121">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f542e-121">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f542e-122">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f542e-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f542e-123">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f542e-123">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f542e-124">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f542e-124">Application</span></span> | <span data-ttu-id="f542e-125">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f542e-125">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="7d35e-120">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7d35e-120">Delegated (work or school account)</span></span> | <span data-ttu-id="7d35e-121">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d35e-121">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="7d35e-122">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7d35e-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d35e-123">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d35e-123">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="7d35e-124">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7d35e-124">Application</span></span> | <span data-ttu-id="7d35e-125">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7d35e-125">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f542e-126">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f542e-126">HTTP request</span></span>
-<span data-ttu-id="f542e-127">Получение всех параметров почтового ящика пользователя:</span><span class="sxs-lookup"><span data-stu-id="f542e-127">To get all mailbox settings for a user:</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d35e-126">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7d35e-126">HTTP request</span></span>
+<span data-ttu-id="7d35e-127">Получение всех параметров почтового ящика пользователя:</span><span class="sxs-lookup"><span data-stu-id="7d35e-127">To get all mailbox settings for a user:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-<span data-ttu-id="f542e-128">Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени:</span><span class="sxs-lookup"><span data-stu-id="f542e-128">To get specific settings - for example, only the automatic replies settings, locale, time zone, or working hours:</span></span>
+<span data-ttu-id="7d35e-128">Получение определенных параметров, например только параметров автоматических ответов, языкового стандарта, часового пояса или рабочего времени:</span><span class="sxs-lookup"><span data-stu-id="7d35e-128">To get specific settings - for example, only the automatic replies settings, locale, time zone, or working hours:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -54,31 +54,31 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f542e-129">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f542e-129">Optional query parameters</span></span>
-<span data-ttu-id="f542e-130">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="f542e-130">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="f542e-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f542e-131">Request headers</span></span>
-| <span data-ttu-id="f542e-132">Имя</span><span class="sxs-lookup"><span data-stu-id="f542e-132">Name</span></span>       | <span data-ttu-id="f542e-133">Тип</span><span class="sxs-lookup"><span data-stu-id="f542e-133">Type</span></span> | <span data-ttu-id="f542e-134">Описание</span><span class="sxs-lookup"><span data-stu-id="f542e-134">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="7d35e-129">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7d35e-129">Optional query parameters</span></span>
+<span data-ttu-id="7d35e-130">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="7d35e-130">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7d35e-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7d35e-131">Request headers</span></span>
+| <span data-ttu-id="7d35e-132">Имя</span><span class="sxs-lookup"><span data-stu-id="7d35e-132">Name</span></span>       | <span data-ttu-id="7d35e-133">Тип</span><span class="sxs-lookup"><span data-stu-id="7d35e-133">Type</span></span> | <span data-ttu-id="7d35e-134">Описание</span><span class="sxs-lookup"><span data-stu-id="7d35e-134">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="f542e-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="f542e-135">Authorization</span></span>  | <span data-ttu-id="f542e-136">string</span><span class="sxs-lookup"><span data-stu-id="f542e-136">string</span></span>  | <span data-ttu-id="f542e-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f542e-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7d35e-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d35e-135">Authorization</span></span>  | <span data-ttu-id="7d35e-136">string</span><span class="sxs-lookup"><span data-stu-id="7d35e-136">string</span></span>  | <span data-ttu-id="7d35e-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7d35e-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f542e-139">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f542e-139">Request body</span></span>
-<span data-ttu-id="f542e-140">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f542e-140">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d35e-139">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7d35e-139">Request body</span></span>
+<span data-ttu-id="7d35e-140">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7d35e-140">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f542e-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="f542e-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d35e-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="7d35e-141">Response</span></span>
 
-<span data-ttu-id="f542e-142">При успешном выполнении этот метод возвращает код отклика `200 OK` и один из указанных ниже запрошенных объектов в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f542e-142">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
+<span data-ttu-id="7d35e-142">При успешном выполнении этот метод возвращает код отклика `200 OK` и один из указанных ниже запрошенных объектов в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7d35e-142">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
 
-- <span data-ttu-id="f542e-143">Объект [mailboxSettings](../resources/mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="f542e-143">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
-- <span data-ttu-id="f542e-144">Объект [automaticRepliesSetting](../resources/automaticrepliessetting.md).</span><span class="sxs-lookup"><span data-stu-id="f542e-144">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
-- <span data-ttu-id="f542e-145">Объект [localeInfo](../resources/localeinfo.md).</span><span class="sxs-lookup"><span data-stu-id="f542e-145">[localeInfo](../resources/localeinfo.md) object</span></span>
-- <span data-ttu-id="f542e-146">Строка (для параметра **timeZone**).</span><span class="sxs-lookup"><span data-stu-id="f542e-146">string (for **timeZone**)</span></span>
-- [<span data-ttu-id="f542e-147">workingHours</span><span class="sxs-lookup"><span data-stu-id="f542e-147">workingHours</span></span>](../resources/workinghours.md)
+- <span data-ttu-id="7d35e-143">Объект [mailboxSettings](../resources/mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="7d35e-143">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
+- <span data-ttu-id="7d35e-144">Объект [automaticRepliesSetting](../resources/automaticrepliessetting.md).</span><span class="sxs-lookup"><span data-stu-id="7d35e-144">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
+- <span data-ttu-id="7d35e-145">Объект [localeInfo](../resources/localeinfo.md).</span><span class="sxs-lookup"><span data-stu-id="7d35e-145">[localeInfo](../resources/localeinfo.md) object</span></span>
+- <span data-ttu-id="7d35e-146">Строка (для параметра **timeZone**).</span><span class="sxs-lookup"><span data-stu-id="7d35e-146">string (for **timeZone**)</span></span>
+- [<span data-ttu-id="7d35e-147">workingHours</span><span class="sxs-lookup"><span data-stu-id="7d35e-147">workingHours</span></span>](../resources/workinghours.md)
 
-## <a name="example"></a><span data-ttu-id="f542e-148">Пример</span><span class="sxs-lookup"><span data-stu-id="f542e-148">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="f542e-149">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="f542e-149">Request 1</span></span>
-<span data-ttu-id="f542e-150">В первом примере считываются все параметры часового пояса для почтового ящика вошедшего пользователя, в том числе параметры часового пояса, автоматических ответов, языкового стандарта (язык и страна или регион) и рабочего времени.</span><span class="sxs-lookup"><span data-stu-id="f542e-150">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, locale (language and country/region), and working hours.</span></span>
+## <a name="example"></a><span data-ttu-id="7d35e-148">Пример</span><span class="sxs-lookup"><span data-stu-id="7d35e-148">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="7d35e-149">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="7d35e-149">Request 1</span></span>
+<span data-ttu-id="7d35e-150">В первом примере считываются все параметры часового пояса для почтового ящика вошедшего пользователя, в том числе параметры часового пояса, автоматических ответов, языкового стандарта (язык и страна или регион) и рабочего времени.</span><span class="sxs-lookup"><span data-stu-id="7d35e-150">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for time zone, automatic replies, locale (language and country/region), and working hours.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f542e-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="f542e-151">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7d35e-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d35e-151">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -86,26 +86,26 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f542e-152">C#</span><span class="sxs-lookup"><span data-stu-id="f542e-152">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7d35e-152">C#</span><span class="sxs-lookup"><span data-stu-id="7d35e-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f542e-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f542e-153">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d35e-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d35e-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f542e-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f542e-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7d35e-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d35e-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f542e-155">Java</span><span class="sxs-lookup"><span data-stu-id="f542e-155">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="7d35e-155">Java</span><span class="sxs-lookup"><span data-stu-id="7d35e-155">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a><span data-ttu-id="f542e-156">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="f542e-156">Response 1</span></span>
-<span data-ttu-id="f542e-p107">Отклик включает все параметры почтового ящика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f542e-p107">The response includes all the mailbox settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="7d35e-156">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="7d35e-156">Response 1</span></span>
+<span data-ttu-id="7d35e-p107">Отклик включает все параметры почтового ящика. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="7d35e-p107">The response includes all the mailbox settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -154,10 +154,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="f542e-160">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="f542e-160">Request 2</span></span>
-<span data-ttu-id="f542e-161">Во втором примере показано, как получить только параметры автоматических ответов почтового ящика пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="f542e-161">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="7d35e-160">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="7d35e-160">Request 2</span></span>
+<span data-ttu-id="7d35e-161">Во втором примере показано, как получить только параметры автоматических ответов почтового ящика пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="7d35e-161">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f542e-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="f542e-162">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7d35e-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d35e-162">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_2"
@@ -165,26 +165,26 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f542e-163">C#</span><span class="sxs-lookup"><span data-stu-id="f542e-163">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7d35e-163">C#</span><span class="sxs-lookup"><span data-stu-id="7d35e-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f542e-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f542e-164">Javascript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7d35e-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d35e-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f542e-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f542e-165">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7d35e-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d35e-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="f542e-166">Java</span><span class="sxs-lookup"><span data-stu-id="f542e-166">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="7d35e-166">Java</span><span class="sxs-lookup"><span data-stu-id="7d35e-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a><span data-ttu-id="f542e-167">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="f542e-167">Response 2</span></span>
-<span data-ttu-id="f542e-p108">Отклик включает только параметры автоматических ответов. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f542e-p108">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="7d35e-167">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="7d35e-167">Response 2</span></span>
+<span data-ttu-id="7d35e-p108">Отклик включает только параметры автоматических ответов. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="7d35e-p108">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -213,8 +213,8 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-3"></a><span data-ttu-id="f542e-171">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="f542e-171">Request 3</span></span>
-<span data-ttu-id="f542e-172">В третьем примере показано, как получить только параметры рабочего времени для почтового ящика пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="f542e-172">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="7d35e-171">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="7d35e-171">Request 3</span></span>
+<span data-ttu-id="7d35e-172">В третьем примере показано, как получить только параметры рабочего времени для почтового ящика пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="7d35e-172">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
@@ -222,8 +222,8 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
-##### <a name="response-3"></a><span data-ttu-id="f542e-173">Ответ 3</span><span class="sxs-lookup"><span data-stu-id="f542e-173">Response 3</span></span>
-<span data-ttu-id="f542e-174">Ответ включает только параметры рабочего времени.</span><span class="sxs-lookup"><span data-stu-id="f542e-174">The response includes only the working hours settings.</span></span> <span data-ttu-id="f542e-175">Обратите внимание, что рабочее время пользователя относится к [пользовательскому часовому поясу](../resources/customtimezone.md).</span><span class="sxs-lookup"><span data-stu-id="f542e-175">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span> <span data-ttu-id="f542e-176">Примечание. Представленный здесь объект ответа может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="f542e-176">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="f542e-177">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f542e-177">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="7d35e-173">Ответ 3</span><span class="sxs-lookup"><span data-stu-id="7d35e-173">Response 3</span></span>
+<span data-ttu-id="7d35e-174">Ответ включает только параметры рабочего времени.</span><span class="sxs-lookup"><span data-stu-id="7d35e-174">The response includes only the working hours settings.</span></span> <span data-ttu-id="7d35e-175">Обратите внимание, что рабочее время пользователя относится к [пользовательскому часовому поясу](../resources/customtimezone.md).</span><span class="sxs-lookup"><span data-stu-id="7d35e-175">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span> <span data-ttu-id="7d35e-176">Примечание. Представленный здесь объект ответа может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="7d35e-176">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="7d35e-177">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7d35e-177">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
