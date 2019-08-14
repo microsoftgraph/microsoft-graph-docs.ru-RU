@@ -4,12 +4,12 @@ description: API Microsoft Teams в Microsoft Graph, получающие дос
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ebf0bbda324f62c6413bbe3d70ade33a5052da0d
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 124a2f96f2c59909311fad605beeb1273193d8af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778763"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364532"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Защищенные API в Microsoft Teams
 
@@ -23,4 +23,5 @@ API Microsoft Teams в Microsoft Graph, получающие доступ к к�
 * [Перечисление сообщений в чате](/graph/api/chatmessage-list?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение сообщения в чате](/graph/api/chatmessage-get?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 
-Чтобы запросить доступ к этим защищенным API, заполните следующую [форму запроса](http://aka.ms/teamsgraph/requestaccess). Мы еженедельно просматриваем запросы на доступ. Если вы хотите предоставить информацию в дополнение к форме, обратитесь по адресу [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).
+Чтобы запросить доступ к этим защищенным API, заполните следующую [форму запроса](http://aka.ms/teamsgraph/requestaccess). Мы просматриваем запросы на доступ каждую среду и выпускаем утверждения каждую пятницу.
+Если вы хотите предоставить информацию в дополнение к форме, обратитесь по адресу [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).
