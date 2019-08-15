@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b012e1a23a0641c7abd5cc6c763481c251f961dd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 58aa6af3fe651b77ad37c58efb8fbf7137594c60
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313043"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409009"
 ---
 # <a name="apply-accessreview"></a>Применение Акцессревиев
 
@@ -38,7 +38,7 @@ ms.locfileid: "36313043"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /accessReviews('<id>')/applyDecisions()
+POST /accessReviews/{reviewId}/applyDecisions
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
@@ -77,10 +77,6 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/apply-accessreview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
