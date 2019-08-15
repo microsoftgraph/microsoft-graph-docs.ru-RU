@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 83d5116b6ea20ddd98ba792012ba2ec65ad82741
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 04bef61f1f14499a2f568a893068a7644673761e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361368"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413030"
 ---
 # <a name="planner-delta"></a>Планировщик: Дельта
 
@@ -40,7 +40,7 @@ ms.locfileid: "36361368"
 
 ```http
 GET /me/planner/all/delta
-GET /users/<id>/planner/all/delta
+GET /users/{id}/planner/all/delta
 ```
 
 В настоящее время дополнительные параметры запросов ( `$select`например `$expand`,, `$filter`или) не поддерживаются в реализациях разностных запросов в планировщике.
@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

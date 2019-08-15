@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 151bb3f3dd17c27bd4f29f58a7de8a872876c518
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e0f9654ecdd0f055863b8a04fb66ba09d2efbe75
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347005"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415082"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -33,7 +33,7 @@ ms.locfileid: "36347005"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
-GET /users/<id>/mailFolders/{id}/messages/delta
+GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -90,10 +90,6 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -133,7 +129,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>См. также
+### <a name="see-also"></a>Дополнительные ресурсы
 
 - [Запрос изменений Microsoft Graph](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)

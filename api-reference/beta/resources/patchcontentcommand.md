@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2408d08434b97f865ae19cbc70fd1dc16ff6868b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4cfa6fe84c18d4895e5d709d3ab6254258c1b970
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009211"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422284"
 ---
 # <a name="patchcontentcommand-resource-type"></a>Тип ресурса Патчконтенткомманд
 
@@ -46,7 +46,7 @@ ms.locfileid: "36009211"
 |action|String|Действие, которое необходимо выполнить для целевого элемента. Возможные значения: `replace`, `append`, `delete`, `insert` и `prepend`.|
 |content|String|Строка правильно оформленного HTML-кода, который нужно добавить на страницу, а также двоичные данные изображения или файла. Если содержимое содержит двоичные данные, необходимо отправить запрос, используя тип `multipart/form-data` контента с частью "Commands". |
 |position|String|Место для добавления предоставленного контента относительно целевого элемента. Возможные значения: `after` (по умолчанию) `before`или.|
-|target|String|Обновляемый элемент. Должен быть `#<data-id>` либо сгенерированным `<id>` элементом, либо ключевым словом `body` or. `title`|
+|target|String|Обновляемый элемент. Должен быть `#<data-id>` либо сгенерированным `{id}` элементом, либо ключевым словом `body` or. `title`|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cdc285613b9ac3da6de084e649b0db087303c415
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 38500f75e52d8ebeddd1dc5875bb6746c26d5a39
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361231"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412763"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
@@ -35,7 +35,7 @@ ms.locfileid: "36361231"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-Обратите ``<id>`` внимание, что в формате "userId_roleId", где UserID — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.
+Обратите ``{id}`` внимание, что в формате "userId_roleId", где UserID — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -72,10 +72,6 @@ DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-privilegedroleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-privilegedroleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 1b245ad634c69c39bf0a38f355a64507f1d960a2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6beeb5f26c604158c0d40b732a167b069b4f3eb1
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361239"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412759"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>Привилежедроле: Селфдеактивате
 
@@ -34,7 +34,7 @@ ms.locfileid: "36361239"
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Обратите ``<id>`` внимание, что это идентификатор целевой роли.
+Обратите ``{id}`` внимание, что это идентификатор целевой роли.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
@@ -71,10 +71,6 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfdeactivate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfdeactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

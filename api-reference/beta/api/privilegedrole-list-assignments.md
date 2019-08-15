@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 15fe4000cab7cc4925ddb9eac798e9fc768cf185
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2ba85e34a3ce89c072f6a2d955c10505e30eb318
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361270"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412805"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -35,7 +35,7 @@ ms.locfileid: "36361270"
 GET /privilegedRoles/{id}/assignments
 ```
 
-Обратите ``<id>`` внимание, что это идентификатор целевой роли.
+Обратите ``{id}`` внимание, что это идентификатор целевой роли.
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
