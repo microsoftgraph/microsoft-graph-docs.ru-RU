@@ -5,63 +5,63 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c8ab2f1b4a2cca09b8bf5ee296440d6d0acd54bb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e99a59f26111a7ab498ebb1a9400506b2d60904c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363160"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409494"
 ---
-# <a name="tablecollection-add"></a><span data-ttu-id="11aec-105">TableCollection: add</span><span class="sxs-lookup"><span data-stu-id="11aec-105">TableCollection: add</span></span>
+# <a name="tablecollection-add"></a><span data-ttu-id="28133-105">TableCollection: add</span><span class="sxs-lookup"><span data-stu-id="28133-105">TableCollection: add</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="11aec-p102">Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="11aec-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
+<span data-ttu-id="28133-p102">Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.</span><span class="sxs-lookup"><span data-stu-id="28133-p102">Create a new table. The range source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.</span></span>
 
-## <a name="error-handling"></a><span data-ttu-id="11aec-109">Обработка ошибок</span><span class="sxs-lookup"><span data-stu-id="11aec-109">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="28133-109">Обработка ошибок</span><span class="sxs-lookup"><span data-stu-id="28133-109">Error Handling</span></span>
 
-<span data-ttu-id="11aec-110">Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP.</span><span class="sxs-lookup"><span data-stu-id="11aec-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="11aec-111">В этом случае нужно повторить запрос.</span><span class="sxs-lookup"><span data-stu-id="11aec-111">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="28133-110">Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP.</span><span class="sxs-lookup"><span data-stu-id="28133-110">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="28133-111">В этом случае нужно повторить запрос.</span><span class="sxs-lookup"><span data-stu-id="28133-111">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="11aec-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="11aec-112">Permissions</span></span>
-<span data-ttu-id="11aec-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11aec-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="28133-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="28133-112">Permissions</span></span>
+<span data-ttu-id="28133-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28133-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="11aec-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="11aec-115">Permission type</span></span>      | <span data-ttu-id="11aec-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="11aec-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="28133-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="28133-115">Permission type</span></span>      | <span data-ttu-id="28133-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="28133-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="11aec-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="11aec-117">Delegated (work or school account)</span></span> | <span data-ttu-id="11aec-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11aec-118">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="11aec-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="11aec-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11aec-120">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="11aec-120">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="11aec-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="11aec-121">Application</span></span> | <span data-ttu-id="11aec-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="11aec-122">Not supported.</span></span> |
+|<span data-ttu-id="28133-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="28133-117">Delegated (work or school account)</span></span> | <span data-ttu-id="28133-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="28133-118">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="28133-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="28133-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28133-120">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="28133-120">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="28133-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="28133-121">Application</span></span> | <span data-ttu-id="28133-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="28133-122">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="11aec-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="11aec-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28133-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="28133-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/add
 POST /workbook/worksheets/{id|name}/tables/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="11aec-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="11aec-124">Request headers</span></span>
-| <span data-ttu-id="11aec-125">Имя</span><span class="sxs-lookup"><span data-stu-id="11aec-125">Name</span></span>       | <span data-ttu-id="11aec-126">Описание</span><span class="sxs-lookup"><span data-stu-id="11aec-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="28133-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="28133-124">Request headers</span></span>
+| <span data-ttu-id="28133-125">Имя</span><span class="sxs-lookup"><span data-stu-id="28133-125">Name</span></span>       | <span data-ttu-id="28133-126">Описание</span><span class="sxs-lookup"><span data-stu-id="28133-126">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="11aec-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="11aec-127">Authorization</span></span>  | <span data-ttu-id="11aec-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="11aec-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="11aec-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="11aec-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="11aec-p106">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="11aec-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="28133-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="28133-127">Authorization</span></span>  | <span data-ttu-id="28133-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="28133-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="28133-130">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="28133-130">Workbook-Session-Id</span></span>  | <span data-ttu-id="28133-p106">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="28133-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="11aec-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="11aec-133">Request body</span></span>
-<span data-ttu-id="11aec-134">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="11aec-134">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28133-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="28133-133">Request body</span></span>
+<span data-ttu-id="28133-134">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="28133-134">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="11aec-135">Параметр</span><span class="sxs-lookup"><span data-stu-id="11aec-135">Parameter</span></span>    | <span data-ttu-id="11aec-136">Тип</span><span class="sxs-lookup"><span data-stu-id="11aec-136">Type</span></span>   |<span data-ttu-id="11aec-137">Описание</span><span class="sxs-lookup"><span data-stu-id="11aec-137">Description</span></span>|
+| <span data-ttu-id="28133-135">Параметр</span><span class="sxs-lookup"><span data-stu-id="28133-135">Parameter</span></span>    | <span data-ttu-id="28133-136">Тип</span><span class="sxs-lookup"><span data-stu-id="28133-136">Type</span></span>   |<span data-ttu-id="28133-137">Описание</span><span class="sxs-lookup"><span data-stu-id="28133-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="11aec-138">address</span><span class="sxs-lookup"><span data-stu-id="11aec-138">address</span></span>|<span data-ttu-id="11aec-139">string</span><span class="sxs-lookup"><span data-stu-id="11aec-139">string</span></span>|<span data-ttu-id="11aec-p107">Адрес или имя объекта range, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.</span><span class="sxs-lookup"><span data-stu-id="11aec-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
-|<span data-ttu-id="11aec-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="11aec-142">hasHeaders</span></span>|<span data-ttu-id="11aec-143">boolean</span><span class="sxs-lookup"><span data-stu-id="11aec-143">boolean</span></span>|<span data-ttu-id="11aec-p108">Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.</span><span class="sxs-lookup"><span data-stu-id="11aec-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
+|<span data-ttu-id="28133-138">address</span><span class="sxs-lookup"><span data-stu-id="28133-138">address</span></span>|<span data-ttu-id="28133-139">string</span><span class="sxs-lookup"><span data-stu-id="28133-139">string</span></span>|<span data-ttu-id="28133-p107">Адрес или имя объекта range, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.</span><span class="sxs-lookup"><span data-stu-id="28133-p107">Address or name of the range object representing the data source. If the address does not contain a sheet name, the currently-active sheet is used.</span></span>|
+|<span data-ttu-id="28133-142">hasHeaders</span><span class="sxs-lookup"><span data-stu-id="28133-142">hasHeaders</span></span>|<span data-ttu-id="28133-143">boolean</span><span class="sxs-lookup"><span data-stu-id="28133-143">boolean</span></span>|<span data-ttu-id="28133-p108">Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.</span><span class="sxs-lookup"><span data-stu-id="28133-p108">Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="11aec-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="11aec-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28133-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="28133-147">Response</span></span>
 
-<span data-ttu-id="11aec-148">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="11aec-148">If successful, this method returns `200 OK` response code and [workbookTable](../resources/workbooktable.md) object in the response body.</span></span>
+<span data-ttu-id="28133-148">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="28133-148">If successful, this method returns `200 OK` response code and [workbookTable](../resources/workbooktable.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="11aec-149">Пример</span><span class="sxs-lookup"><span data-stu-id="11aec-149">Example</span></span>
-<span data-ttu-id="11aec-150">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="11aec-150">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="11aec-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="11aec-151">Request</span></span>
-<span data-ttu-id="11aec-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="11aec-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="28133-149">Пример</span><span class="sxs-lookup"><span data-stu-id="28133-149">Example</span></span>
+<span data-ttu-id="28133-150">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="28133-150">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="28133-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="28133-151">Request</span></span>
+<span data-ttu-id="28133-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="28133-152">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="11aec-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="11aec-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="28133-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="28133-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablecollection_add"
@@ -76,27 +76,23 @@ Content-length: 54
   "hasHeaders": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="11aec-154">C#</span><span class="sxs-lookup"><span data-stu-id="11aec-154">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="28133-154">C#</span><span class="sxs-lookup"><span data-stu-id="28133-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="11aec-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="11aec-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="28133-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28133-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablecollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="11aec-156">Цель — C</span><span class="sxs-lookup"><span data-stu-id="11aec-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="28133-156">Цель — C</span><span class="sxs-lookup"><span data-stu-id="28133-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tablecollection-add-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="11aec-157">Java</span><span class="sxs-lookup"><span data-stu-id="11aec-157">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tablecollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="11aec-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="11aec-158">Response</span></span>
-<span data-ttu-id="11aec-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="11aec-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="28133-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="28133-157">Response</span></span>
+<span data-ttu-id="28133-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="28133-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
