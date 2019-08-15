@@ -5,51 +5,51 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: de8c30b63abf130535669236a170510f9ccda65d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 74cb61fe4e486a8837542f24efeccab5de295e87
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36323800"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36416039"
 ---
-# <a name="delete-educationsubmissionresource"></a><span data-ttu-id="efcc4-105">Удаление Едукатионсубмиссионресаурце</span><span class="sxs-lookup"><span data-stu-id="efcc4-105">Delete educationSubmissionResource</span></span>
+# <a name="delete-educationsubmissionresource"></a><span data-ttu-id="f4e3a-105">Удаление Едукатионсубмиссионресаурце</span><span class="sxs-lookup"><span data-stu-id="f4e3a-105">Delete educationSubmissionResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="efcc4-106">Удаляет ресурс из отправки.</span><span class="sxs-lookup"><span data-stu-id="efcc4-106">Deletes a resource from the submission.</span></span> <span data-ttu-id="efcc4-107">Это может сделать только студентом.</span><span class="sxs-lookup"><span data-stu-id="efcc4-107">This can only be done by the student.</span></span> <span data-ttu-id="efcc4-108">Если ресурс был скопирован из назначения, то после удаления текущей копии будет создан новый экземпляр ресурса.</span><span class="sxs-lookup"><span data-stu-id="efcc4-108">If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.</span></span> <span data-ttu-id="efcc4-109">Это позволяет «сбросить» ресурс в исходное состояние.</span><span class="sxs-lookup"><span data-stu-id="efcc4-109">This allows you to "reset" the resource to its original state.</span></span> <span data-ttu-id="efcc4-110">Если ресурс не был скопирован из назначения, но добавлен из учащегося, ресурс просто удаляется.</span><span class="sxs-lookup"><span data-stu-id="efcc4-110">If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.</span></span>
+<span data-ttu-id="f4e3a-106">Удаляет ресурс из отправки.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-106">Deletes a resource from the submission.</span></span> <span data-ttu-id="f4e3a-107">Это может сделать только студентом.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-107">This can only be done by the student.</span></span> <span data-ttu-id="f4e3a-108">Если ресурс был скопирован из назначения, то после удаления текущей копии будет создан новый экземпляр ресурса.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-108">If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.</span></span> <span data-ttu-id="f4e3a-109">Это позволяет «сбросить» ресурс в исходное состояние.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-109">This allows you to "reset" the resource to its original state.</span></span> <span data-ttu-id="f4e3a-110">Если ресурс не был скопирован из назначения, но добавлен из учащегося, ресурс просто удаляется.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-110">If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="efcc4-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="efcc4-111">Permissions</span></span>
-<span data-ttu-id="efcc4-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="efcc4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f4e3a-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f4e3a-111">Permissions</span></span>
+<span data-ttu-id="f4e3a-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4e3a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="efcc4-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="efcc4-114">Permission type</span></span>      | <span data-ttu-id="efcc4-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="efcc4-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f4e3a-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f4e3a-114">Permission type</span></span>      | <span data-ttu-id="f4e3a-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f4e3a-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="efcc4-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="efcc4-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="efcc4-117">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efcc4-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="efcc4-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="efcc4-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="efcc4-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="efcc4-119">Not supported.</span></span>  |
-|<span data-ttu-id="efcc4-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="efcc4-120">Application</span></span> | <span data-ttu-id="efcc4-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="efcc4-121">Not supported.</span></span> | 
+|<span data-ttu-id="f4e3a-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f4e3a-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="f4e3a-117">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f4e3a-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="f4e3a-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f4e3a-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="f4e3a-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-119">Not supported.</span></span>  |
+|<span data-ttu-id="f4e3a-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f4e3a-120">Application</span></span> | <span data-ttu-id="f4e3a-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-121">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="efcc4-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="efcc4-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4e3a-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f4e3a-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="efcc4-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="efcc4-123">Request headers</span></span>
-| <span data-ttu-id="efcc4-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="efcc4-124">Header</span></span>       | <span data-ttu-id="efcc4-125">Значение</span><span class="sxs-lookup"><span data-stu-id="efcc4-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f4e3a-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f4e3a-123">Request headers</span></span>
+| <span data-ttu-id="f4e3a-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f4e3a-124">Header</span></span>       | <span data-ttu-id="f4e3a-125">Значение</span><span class="sxs-lookup"><span data-stu-id="f4e3a-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="efcc4-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="efcc4-126">Authorization</span></span>  | <span data-ttu-id="efcc4-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="efcc4-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f4e3a-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f4e3a-126">Authorization</span></span>  | <span data-ttu-id="f4e3a-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="efcc4-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="efcc4-129">Request body</span></span>
-<span data-ttu-id="efcc4-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="efcc4-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4e3a-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f4e3a-129">Request body</span></span>
+<span data-ttu-id="f4e3a-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-130">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="efcc4-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="efcc4-131">Response</span></span>
-<span data-ttu-id="efcc4-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="efcc4-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f4e3a-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="f4e3a-131">Response</span></span>
+<span data-ttu-id="f4e3a-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="efcc4-134">Пример</span><span class="sxs-lookup"><span data-stu-id="efcc4-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="efcc4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="efcc4-135">Request</span></span>
-<span data-ttu-id="efcc4-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="efcc4-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f4e3a-134">Пример</span><span class="sxs-lookup"><span data-stu-id="f4e3a-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f4e3a-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="f4e3a-135">Request</span></span>
+<span data-ttu-id="f4e3a-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="efcc4-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="efcc4-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f4e3a-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="f4e3a-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationsubmissionresource"
@@ -57,26 +57,22 @@ DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="efcc4-138">C#</span><span class="sxs-lookup"><span data-stu-id="efcc4-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f4e3a-138">C#</span><span class="sxs-lookup"><span data-stu-id="f4e3a-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationsubmissionresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="efcc4-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="efcc4-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f4e3a-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f4e3a-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationsubmissionresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="efcc4-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="efcc4-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f4e3a-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f4e3a-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationsubmissionresource-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="efcc4-141">Java</span><span class="sxs-lookup"><span data-stu-id="efcc4-141">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-educationsubmissionresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="efcc4-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="efcc4-142">Response</span></span>
-<span data-ttu-id="efcc4-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="efcc4-143">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f4e3a-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="f4e3a-141">Response</span></span>
+<span data-ttu-id="f4e3a-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f4e3a-142">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

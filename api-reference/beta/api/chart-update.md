@@ -5,57 +5,57 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 539d6846e3ea8fcfc1eee363e486fea99561977d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7e733fbf1f9612bfdaf1d98cdc8d1aca049353cf
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317312"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418588"
 ---
-# <a name="update-chart"></a><span data-ttu-id="08e01-103">Обновление диаграммы</span><span class="sxs-lookup"><span data-stu-id="08e01-103">Update chart</span></span>
+# <a name="update-chart"></a><span data-ttu-id="45d50-103">Обновление диаграммы</span><span class="sxs-lookup"><span data-stu-id="45d50-103">Update chart</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08e01-104">Обновление свойств объекта диаграммы.</span><span class="sxs-lookup"><span data-stu-id="08e01-104">Update the properties of chart object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="08e01-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="08e01-105">Permissions</span></span>
-<span data-ttu-id="08e01-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08e01-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="45d50-104">Обновление свойств объекта диаграммы.</span><span class="sxs-lookup"><span data-stu-id="45d50-104">Update the properties of chart object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="45d50-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="45d50-105">Permissions</span></span>
+<span data-ttu-id="45d50-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45d50-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="08e01-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08e01-108">Permission type</span></span>      | <span data-ttu-id="08e01-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="08e01-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="45d50-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="45d50-108">Permission type</span></span>      | <span data-ttu-id="45d50-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="45d50-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="08e01-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08e01-110">Delegated (work or school account)</span></span> | <span data-ttu-id="08e01-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="08e01-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="08e01-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08e01-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08e01-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="08e01-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="08e01-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="08e01-114">Application</span></span> | <span data-ttu-id="08e01-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08e01-115">Not supported.</span></span> |
+|<span data-ttu-id="45d50-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="45d50-110">Delegated (work or school account)</span></span> | <span data-ttu-id="45d50-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="45d50-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="45d50-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="45d50-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45d50-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="45d50-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="45d50-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="45d50-114">Application</span></span> | <span data-ttu-id="45d50-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="45d50-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="08e01-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08e01-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="45d50-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="45d50-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="08e01-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08e01-117">Optional request headers</span></span>
-| <span data-ttu-id="08e01-118">Имя</span><span class="sxs-lookup"><span data-stu-id="08e01-118">Name</span></span>       | <span data-ttu-id="08e01-119">Описание</span><span class="sxs-lookup"><span data-stu-id="08e01-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="45d50-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="45d50-117">Optional request headers</span></span>
+| <span data-ttu-id="45d50-118">Имя</span><span class="sxs-lookup"><span data-stu-id="45d50-118">Name</span></span>       | <span data-ttu-id="45d50-119">Описание</span><span class="sxs-lookup"><span data-stu-id="45d50-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="08e01-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="08e01-120">Authorization</span></span>  | <span data-ttu-id="08e01-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="08e01-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="08e01-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="08e01-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="08e01-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="08e01-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="45d50-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="45d50-120">Authorization</span></span>  | <span data-ttu-id="45d50-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="45d50-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="45d50-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="45d50-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="45d50-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="45d50-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="08e01-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="08e01-126">Request body</span></span>
-<span data-ttu-id="08e01-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="08e01-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="45d50-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="45d50-126">Request body</span></span>
+<span data-ttu-id="45d50-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="45d50-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="08e01-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="08e01-130">Property</span></span>     | <span data-ttu-id="08e01-131">Тип</span><span class="sxs-lookup"><span data-stu-id="08e01-131">Type</span></span>   |<span data-ttu-id="08e01-132">Описание</span><span class="sxs-lookup"><span data-stu-id="08e01-132">Description</span></span>|
+| <span data-ttu-id="45d50-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="45d50-130">Property</span></span>     | <span data-ttu-id="45d50-131">Тип</span><span class="sxs-lookup"><span data-stu-id="45d50-131">Type</span></span>   |<span data-ttu-id="45d50-132">Описание</span><span class="sxs-lookup"><span data-stu-id="45d50-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="08e01-133">height</span><span class="sxs-lookup"><span data-stu-id="08e01-133">height</span></span>|<span data-ttu-id="08e01-134">double</span><span class="sxs-lookup"><span data-stu-id="08e01-134">double</span></span>|<span data-ttu-id="08e01-135">Обозначает высоту объекта диаграммы (в пунктах).</span><span class="sxs-lookup"><span data-stu-id="08e01-135">Represents the height, in points, of the chart object.</span></span>|
-|<span data-ttu-id="08e01-136">left</span><span class="sxs-lookup"><span data-stu-id="08e01-136">left</span></span>|<span data-ttu-id="08e01-137">double</span><span class="sxs-lookup"><span data-stu-id="08e01-137">double</span></span>|<span data-ttu-id="08e01-138">Расстояние в пунктах от левого края диаграммы до начала листа.</span><span class="sxs-lookup"><span data-stu-id="08e01-138">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
-|<span data-ttu-id="08e01-139">name</span><span class="sxs-lookup"><span data-stu-id="08e01-139">name</span></span>|<span data-ttu-id="08e01-140">string</span><span class="sxs-lookup"><span data-stu-id="08e01-140">string</span></span>|<span data-ttu-id="08e01-141">Обозначает имя объекта диаграммы.</span><span class="sxs-lookup"><span data-stu-id="08e01-141">Represents the name of a chart object.</span></span>|
-|<span data-ttu-id="08e01-142">top</span><span class="sxs-lookup"><span data-stu-id="08e01-142">top</span></span>|<span data-ttu-id="08e01-143">double</span><span class="sxs-lookup"><span data-stu-id="08e01-143">double</span></span>|<span data-ttu-id="08e01-144">Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).</span><span class="sxs-lookup"><span data-stu-id="08e01-144">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
-|<span data-ttu-id="08e01-145">width</span><span class="sxs-lookup"><span data-stu-id="08e01-145">width</span></span>|<span data-ttu-id="08e01-146">double</span><span class="sxs-lookup"><span data-stu-id="08e01-146">double</span></span>|<span data-ttu-id="08e01-147">Представляет ширину объекта диаграммы (в пунктах).</span><span class="sxs-lookup"><span data-stu-id="08e01-147">Represents the width, in points, of the chart object.</span></span>|
+|<span data-ttu-id="45d50-133">height</span><span class="sxs-lookup"><span data-stu-id="45d50-133">height</span></span>|<span data-ttu-id="45d50-134">double</span><span class="sxs-lookup"><span data-stu-id="45d50-134">double</span></span>|<span data-ttu-id="45d50-135">Обозначает высоту объекта диаграммы (в пунктах).</span><span class="sxs-lookup"><span data-stu-id="45d50-135">Represents the height, in points, of the chart object.</span></span>|
+|<span data-ttu-id="45d50-136">left</span><span class="sxs-lookup"><span data-stu-id="45d50-136">left</span></span>|<span data-ttu-id="45d50-137">double</span><span class="sxs-lookup"><span data-stu-id="45d50-137">double</span></span>|<span data-ttu-id="45d50-138">Расстояние в пунктах от левого края диаграммы до начала листа.</span><span class="sxs-lookup"><span data-stu-id="45d50-138">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
+|<span data-ttu-id="45d50-139">name</span><span class="sxs-lookup"><span data-stu-id="45d50-139">name</span></span>|<span data-ttu-id="45d50-140">string</span><span class="sxs-lookup"><span data-stu-id="45d50-140">string</span></span>|<span data-ttu-id="45d50-141">Обозначает имя объекта диаграммы.</span><span class="sxs-lookup"><span data-stu-id="45d50-141">Represents the name of a chart object.</span></span>|
+|<span data-ttu-id="45d50-142">top</span><span class="sxs-lookup"><span data-stu-id="45d50-142">top</span></span>|<span data-ttu-id="45d50-143">double</span><span class="sxs-lookup"><span data-stu-id="45d50-143">double</span></span>|<span data-ttu-id="45d50-144">Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).</span><span class="sxs-lookup"><span data-stu-id="45d50-144">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
+|<span data-ttu-id="45d50-145">width</span><span class="sxs-lookup"><span data-stu-id="45d50-145">width</span></span>|<span data-ttu-id="45d50-146">double</span><span class="sxs-lookup"><span data-stu-id="45d50-146">double</span></span>|<span data-ttu-id="45d50-147">Представляет ширину объекта диаграммы (в пунктах).</span><span class="sxs-lookup"><span data-stu-id="45d50-147">Represents the width, in points, of the chart object.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="08e01-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="08e01-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="45d50-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="45d50-148">Response</span></span>
 
-<span data-ttu-id="08e01-149">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="08e01-149">If successful, this method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="08e01-150">Пример</span><span class="sxs-lookup"><span data-stu-id="08e01-150">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="08e01-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="08e01-151">Request</span></span>
-<span data-ttu-id="08e01-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="08e01-152">Here is an example of the request.</span></span>
+<span data-ttu-id="45d50-149">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="45d50-149">If successful, this method returns a `200 OK` response code and updated [workbookChart](../resources/workbookchart.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="45d50-150">Пример</span><span class="sxs-lookup"><span data-stu-id="45d50-150">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="45d50-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="45d50-151">Request</span></span>
+<span data-ttu-id="45d50-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="45d50-152">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="08e01-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="08e01-153">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="45d50-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="45d50-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chart"
@@ -70,26 +70,22 @@ Content-length: 52
   "left": 99
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="08e01-154">C#</span><span class="sxs-lookup"><span data-stu-id="08e01-154">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="45d50-154">C#</span><span class="sxs-lookup"><span data-stu-id="45d50-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="08e01-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08e01-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="45d50-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="45d50-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="08e01-156">Цель — C</span><span class="sxs-lookup"><span data-stu-id="08e01-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="45d50-156">Цель — C</span><span class="sxs-lookup"><span data-stu-id="45d50-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chart-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="08e01-157">Java</span><span class="sxs-lookup"><span data-stu-id="08e01-157">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-chart-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="08e01-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="08e01-158">Response</span></span>
-<span data-ttu-id="08e01-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="08e01-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="45d50-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="45d50-157">Response</span></span>
+<span data-ttu-id="45d50-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="45d50-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

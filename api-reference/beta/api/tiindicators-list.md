@@ -5,30 +5,30 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c7b26f24fca9043ec4fbab6acfe6aa75e3c45f6b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7f0bc8de6ad01a837317f4512aadc88b0b43bd72
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362702"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409277"
 ---
-# <a name="list-threat-intelligence-indicators"></a><span data-ttu-id="05faf-103">Список индикаторов логики операций с угрозами</span><span class="sxs-lookup"><span data-stu-id="05faf-103">List threat intelligence indicators</span></span>
+# <a name="list-threat-intelligence-indicators"></a><span data-ttu-id="d90ef-103">Список индикаторов логики операций с угрозами</span><span class="sxs-lookup"><span data-stu-id="d90ef-103">List threat intelligence indicators</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="05faf-104">Получение списка объектов [тииндикатор](../resources/tiindicator.md) .</span><span class="sxs-lookup"><span data-stu-id="05faf-104">Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.</span></span>
+<span data-ttu-id="d90ef-104">Получение списка объектов [тииндикатор](../resources/tiindicator.md) .</span><span class="sxs-lookup"><span data-stu-id="d90ef-104">Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="05faf-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="05faf-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d90ef-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d90ef-105">Permissions</span></span>
 
-<span data-ttu-id="05faf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05faf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d90ef-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d90ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="05faf-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="05faf-108">Permission type</span></span>     | <span data-ttu-id="05faf-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="05faf-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d90ef-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d90ef-108">Permission type</span></span>     | <span data-ttu-id="d90ef-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d90ef-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="05faf-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="05faf-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="05faf-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="05faf-111">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
-| <span data-ttu-id="05faf-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="05faf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05faf-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="05faf-113">Not supported.</span></span> |
-| <span data-ttu-id="05faf-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="05faf-114">Application</span></span>                            | <span data-ttu-id="05faf-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="05faf-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="d90ef-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d90ef-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d90ef-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="d90ef-111">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
+| <span data-ttu-id="d90ef-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d90ef-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d90ef-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d90ef-113">Not supported.</span></span> |
+| <span data-ttu-id="d90ef-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d90ef-114">Application</span></span>                            | <span data-ttu-id="d90ef-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="d90ef-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="05faf-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="05faf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d90ef-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d90ef-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +36,31 @@ ms.locfileid: "36362702"
 GET /security/tiIndicators
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="05faf-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="05faf-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d90ef-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d90ef-117">Optional query parameters</span></span>
 
-<span data-ttu-id="05faf-118">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="05faf-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="05faf-119">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="05faf-119">For general information, see [OData Query Parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="d90ef-118">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d90ef-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="d90ef-119">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d90ef-119">For general information, see [OData Query Parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="05faf-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="05faf-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d90ef-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d90ef-120">Request headers</span></span>
 
-| <span data-ttu-id="05faf-121">Имя</span><span class="sxs-lookup"><span data-stu-id="05faf-121">Name</span></span>      |<span data-ttu-id="05faf-122">Описание</span><span class="sxs-lookup"><span data-stu-id="05faf-122">Description</span></span>|
+| <span data-ttu-id="d90ef-121">Имя</span><span class="sxs-lookup"><span data-stu-id="d90ef-121">Name</span></span>      |<span data-ttu-id="d90ef-122">Описание</span><span class="sxs-lookup"><span data-stu-id="d90ef-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="05faf-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="05faf-123">Authorization</span></span> | <span data-ttu-id="05faf-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="05faf-124">Bearer {code}</span></span> |
+| <span data-ttu-id="d90ef-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d90ef-123">Authorization</span></span> | <span data-ttu-id="d90ef-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d90ef-124">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="05faf-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="05faf-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d90ef-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d90ef-125">Request body</span></span>
 
-<span data-ttu-id="05faf-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="05faf-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d90ef-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d90ef-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="05faf-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="05faf-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d90ef-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="d90ef-127">Response</span></span>
 
-<span data-ttu-id="05faf-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="05faf-128">If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.</span></span>
+<span data-ttu-id="d90ef-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d90ef-128">If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="05faf-129">Примеры</span><span class="sxs-lookup"><span data-stu-id="05faf-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d90ef-129">Примеры</span><span class="sxs-lookup"><span data-stu-id="d90ef-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="05faf-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="05faf-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d90ef-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="d90ef-130">Request</span></span>
 
-<span data-ttu-id="05faf-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="05faf-131">The following is an example of the request.</span></span>
+<span data-ttu-id="d90ef-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d90ef-131">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="05faf-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="05faf-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d90ef-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="d90ef-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_tiindicators"
@@ -69,31 +69,27 @@ GET /security/tiIndicators
 ```http
 GET https://graph.microsoft.com/beta/security/tiIndicators
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="05faf-133">C#</span><span class="sxs-lookup"><span data-stu-id="05faf-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d90ef-133">C#</span><span class="sxs-lookup"><span data-stu-id="d90ef-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tiindicators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="05faf-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="05faf-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d90ef-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d90ef-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="05faf-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="05faf-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d90ef-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d90ef-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tiindicators-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="05faf-136">Java</span><span class="sxs-lookup"><span data-stu-id="05faf-136">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-tiindicators-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="05faf-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="05faf-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d90ef-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="d90ef-136">Response</span></span>
 
-<span data-ttu-id="05faf-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="05faf-138">The following is an example of the response.</span></span>
+<span data-ttu-id="d90ef-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="d90ef-137">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="05faf-139">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="05faf-139">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="05faf-140">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="05faf-140">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d90ef-138">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="d90ef-138">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d90ef-139">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d90ef-139">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
