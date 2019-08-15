@@ -5,50 +5,50 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c86c1c119b76de4a16ea8196b23288b7898bfb6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3da827e8110f45df59213ec1549b6cc351ccfb1e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326109"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36421045"
 ---
-# <a name="list-events"></a><span data-ttu-id="6f2ae-103">Перечисление событий</span><span class="sxs-lookup"><span data-stu-id="6f2ae-103">List events</span></span>
+# <a name="list-events"></a><span data-ttu-id="95ae8-103">Перечисление событий</span><span class="sxs-lookup"><span data-stu-id="95ae8-103">List events</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f2ae-104">Получение списка объектов [event](../resources/event.md) из стандартного календаря пользователя или указанного календаря.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-104">Get a list of [event](../resources/event.md) objects from the user's default calendar or from a specified calendar.</span></span> <span data-ttu-id="6f2ae-105">В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-105">The list contains single instance meetings and series masters.</span></span>
+<span data-ttu-id="95ae8-104">Получение списка объектов [event](../resources/event.md) из стандартного календаря пользователя или указанного календаря.</span><span class="sxs-lookup"><span data-stu-id="95ae8-104">Get a list of [event](../resources/event.md) objects from the user's default calendar or from a specified calendar.</span></span> <span data-ttu-id="95ae8-105">В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.</span><span class="sxs-lookup"><span data-stu-id="95ae8-105">The list contains single instance meetings and series masters.</span></span>
 
-<span data-ttu-id="6f2ae-106">Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar-list-calendarview.md) или [экземпляры события](event-list-instances.md).</span><span class="sxs-lookup"><span data-stu-id="6f2ae-106">To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or [get the instances of an event](event-list-instances.md).</span></span>
+<span data-ttu-id="95ae8-106">Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar-list-calendarview.md) или [экземпляры события](event-list-instances.md).</span><span class="sxs-lookup"><span data-stu-id="95ae8-106">To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or [get the instances of an event](event-list-instances.md).</span></span>
 
-<span data-ttu-id="6f2ae-107">Существует два сценария, в которых приложение может получить события из календаря другого пользователя:</span><span class="sxs-lookup"><span data-stu-id="6f2ae-107">There are two scenarios where an app can get events in another user's calendar:</span></span>
+<span data-ttu-id="95ae8-107">Существует два сценария, в которых приложение может получить события из календаря другого пользователя:</span><span class="sxs-lookup"><span data-stu-id="95ae8-107">There are two scenarios where an app can get events in another user's calendar:</span></span>
 
-* <span data-ttu-id="6f2ae-108">если у приложения есть разрешения для приложений;</span><span class="sxs-lookup"><span data-stu-id="6f2ae-108">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="6f2ae-109">если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="6f2ae-110">См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).</span><span class="sxs-lookup"><span data-stu-id="6f2ae-110">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
+* <span data-ttu-id="95ae8-108">если у приложения есть разрешения для приложений;</span><span class="sxs-lookup"><span data-stu-id="95ae8-108">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="95ae8-109">если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ.</span><span class="sxs-lookup"><span data-stu-id="95ae8-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="95ae8-110">См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).</span><span class="sxs-lookup"><span data-stu-id="95ae8-110">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
 
 
-### <a name="support-various-time-zones"></a><span data-ttu-id="6f2ae-111">Поддержка разных часовых поясов</span><span class="sxs-lookup"><span data-stu-id="6f2ae-111">Support various time zones</span></span>
+### <a name="support-various-time-zones"></a><span data-ttu-id="95ae8-111">Поддержка разных часовых поясов</span><span class="sxs-lookup"><span data-stu-id="95ae8-111">Support various time zones</span></span>
 
-<span data-ttu-id="6f2ae-112">Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-112">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
+<span data-ttu-id="95ae8-112">Для всех операций GET, которые возвращают события, можно использовать заголовок `Prefer: outlook.timezone`, чтобы задать часовой пояс для указанного в отклике времени начала и завершения события.</span><span class="sxs-lookup"><span data-stu-id="95ae8-112">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
 
-<span data-ttu-id="6f2ae-113">Например, заголовок `Prefer: outlook.timezone` задает в отклике время начала и завершения согласно североамериканскому восточному времени.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-113">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
+<span data-ttu-id="95ae8-113">Например, заголовок `Prefer: outlook.timezone` задает в отклике время начала и завершения согласно североамериканскому восточному времени.</span><span class="sxs-lookup"><span data-stu-id="95ae8-113">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-<span data-ttu-id="6f2ae-p103">Если событие создано с применением другого часового пояса, время начала и завершения будет изменено в соответствии с часовым поясом, указанным в заголовке `Prefer`. Поддерживаемые часовые пояса указаны в этом [списке](../resources/datetimetimezone.md). Если заголовок `Prefer: outlook.timezone` не указан, время начала и завершения возвращается в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-p103">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
+<span data-ttu-id="95ae8-p103">Если событие создано с применением другого часового пояса, время начала и завершения будет изменено в соответствии с часовым поясом, указанным в заголовке `Prefer`. Поддерживаемые часовые пояса указаны в этом [списке](../resources/datetimetimezone.md). Если заголовок `Prefer: outlook.timezone` не указан, время начала и завершения возвращается в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="95ae8-p103">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
 
-<span data-ttu-id="6f2ae-117">Узнать, какой именно часовой пояс использовался при создании события, позволят свойства **OriginalStartTimeZone** и **OriginalEndTimeZone** ресурса **event**.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-117">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
+<span data-ttu-id="95ae8-117">Узнать, какой именно часовой пояс использовался при создании события, позволят свойства **OriginalStartTimeZone** и **OriginalEndTimeZone** ресурса **event**.</span><span class="sxs-lookup"><span data-stu-id="95ae8-117">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6f2ae-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6f2ae-118">Permissions</span></span>
-<span data-ttu-id="6f2ae-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f2ae-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="95ae8-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="95ae8-118">Permissions</span></span>
+<span data-ttu-id="95ae8-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95ae8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6f2ae-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6f2ae-121">Permission type</span></span>      | <span data-ttu-id="6f2ae-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6f2ae-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="95ae8-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="95ae8-121">Permission type</span></span>      | <span data-ttu-id="95ae8-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="95ae8-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6f2ae-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6f2ae-123">Delegated (work or school account)</span></span> | <span data-ttu-id="6f2ae-124">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f2ae-124">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="6f2ae-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6f2ae-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f2ae-126">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f2ae-126">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="6f2ae-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6f2ae-127">Application</span></span> | <span data-ttu-id="6f2ae-128">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f2ae-128">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="95ae8-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="95ae8-123">Delegated (work or school account)</span></span> | <span data-ttu-id="95ae8-124">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95ae8-124">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="95ae8-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="95ae8-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95ae8-126">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95ae8-126">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="95ae8-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="95ae8-127">Application</span></span> | <span data-ttu-id="95ae8-128">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95ae8-128">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6f2ae-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6f2ae-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95ae8-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="95ae8-129">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events
@@ -66,32 +66,32 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events
 GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6f2ae-130">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6f2ae-130">Optional query parameters</span></span>
-<span data-ttu-id="6f2ae-131">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="6f2ae-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6f2ae-132">Request headers</span></span>
-| <span data-ttu-id="6f2ae-133">Имя</span><span class="sxs-lookup"><span data-stu-id="6f2ae-133">Name</span></span>       | <span data-ttu-id="6f2ae-134">Тип</span><span class="sxs-lookup"><span data-stu-id="6f2ae-134">Type</span></span> | <span data-ttu-id="6f2ae-135">Описание</span><span class="sxs-lookup"><span data-stu-id="6f2ae-135">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="95ae8-130">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="95ae8-130">Optional query parameters</span></span>
+<span data-ttu-id="95ae8-131">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="95ae8-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="95ae8-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="95ae8-132">Request headers</span></span>
+| <span data-ttu-id="95ae8-133">Имя</span><span class="sxs-lookup"><span data-stu-id="95ae8-133">Name</span></span>       | <span data-ttu-id="95ae8-134">Тип</span><span class="sxs-lookup"><span data-stu-id="95ae8-134">Type</span></span> | <span data-ttu-id="95ae8-135">Описание</span><span class="sxs-lookup"><span data-stu-id="95ae8-135">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="6f2ae-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="6f2ae-136">Authorization</span></span>  | <span data-ttu-id="6f2ae-137">string</span><span class="sxs-lookup"><span data-stu-id="6f2ae-137">string</span></span>  | <span data-ttu-id="6f2ae-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6f2ae-140">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="6f2ae-140">Prefer: outlook.timezone</span></span> | <span data-ttu-id="6f2ae-141">string</span><span class="sxs-lookup"><span data-stu-id="6f2ae-141">string</span></span> | <span data-ttu-id="6f2ae-142">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-142">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="6f2ae-143">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-143">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="6f2ae-144">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-144">Optional.</span></span> |
-| <span data-ttu-id="6f2ae-145">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="6f2ae-145">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="6f2ae-146">string</span><span class="sxs-lookup"><span data-stu-id="6f2ae-146">string</span></span> | <span data-ttu-id="6f2ae-147">Формат возвращаемого свойства **body**.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-147">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="6f2ae-148">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="6f2ae-148">Values can be "text" or "html".</span></span> <span data-ttu-id="6f2ae-149">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-149">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="6f2ae-150">Если заголовок не указан, свойство **body** возвращается в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-150">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="6f2ae-151">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-151">Optional.</span></span> |
+| <span data-ttu-id="95ae8-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="95ae8-136">Authorization</span></span>  | <span data-ttu-id="95ae8-137">string</span><span class="sxs-lookup"><span data-stu-id="95ae8-137">string</span></span>  | <span data-ttu-id="95ae8-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="95ae8-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="95ae8-140">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="95ae8-140">Prefer: outlook.timezone</span></span> | <span data-ttu-id="95ae8-141">string</span><span class="sxs-lookup"><span data-stu-id="95ae8-141">string</span></span> | <span data-ttu-id="95ae8-142">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="95ae8-142">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="95ae8-143">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="95ae8-143">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="95ae8-144">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="95ae8-144">Optional.</span></span> |
+| <span data-ttu-id="95ae8-145">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="95ae8-145">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="95ae8-146">string</span><span class="sxs-lookup"><span data-stu-id="95ae8-146">string</span></span> | <span data-ttu-id="95ae8-147">Формат возвращаемого свойства **body**.</span><span class="sxs-lookup"><span data-stu-id="95ae8-147">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="95ae8-148">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="95ae8-148">Values can be "text" or "html".</span></span> <span data-ttu-id="95ae8-149">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="95ae8-149">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="95ae8-150">Если заголовок не указан, свойство **body** возвращается в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="95ae8-150">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="95ae8-151">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="95ae8-151">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6f2ae-152">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6f2ae-152">Request body</span></span>
-<span data-ttu-id="6f2ae-153">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-153">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="95ae8-152">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="95ae8-152">Request body</span></span>
+<span data-ttu-id="95ae8-153">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="95ae8-153">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6f2ae-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="6f2ae-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="95ae8-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="95ae8-154">Response</span></span>
 
-<span data-ttu-id="6f2ae-155">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-155">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6f2ae-156">Пример</span><span class="sxs-lookup"><span data-stu-id="6f2ae-156">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="6f2ae-157">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="6f2ae-157">Request 1</span></span>
-<span data-ttu-id="6f2ae-158">В первом примере возвращаются все события пользователя.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-158">The first example gets all the user's events.</span></span> <span data-ttu-id="6f2ae-159">В нем указывается:</span><span class="sxs-lookup"><span data-stu-id="6f2ae-159">It specifies the following:</span></span>
+<span data-ttu-id="95ae8-155">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="95ae8-155">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="95ae8-156">Пример</span><span class="sxs-lookup"><span data-stu-id="95ae8-156">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="95ae8-157">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="95ae8-157">Request 1</span></span>
+<span data-ttu-id="95ae8-158">В первом примере возвращаются все события пользователя.</span><span class="sxs-lookup"><span data-stu-id="95ae8-158">The first example gets all the user's events.</span></span> <span data-ttu-id="95ae8-159">В нем указывается:</span><span class="sxs-lookup"><span data-stu-id="95ae8-159">It specifies the following:</span></span>
 
-- <span data-ttu-id="6f2ae-160">Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-160">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
-- <span data-ttu-id="6f2ae-p109">Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-p109">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
+- <span data-ttu-id="95ae8-160">Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени.</span><span class="sxs-lookup"><span data-stu-id="95ae8-160">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
+- <span data-ttu-id="95ae8-p109">Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.</span><span class="sxs-lookup"><span data-stu-id="95ae8-p109">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
-<span data-ttu-id="6f2ae-163">В запросе не определен никакой заголовок `Prefer: outlook.body-content-type`, чтобы указать конкретный формат для текста возвращаемого события.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-163">The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.</span></span> 
+<span data-ttu-id="95ae8-163">В запросе не определен никакой заголовок `Prefer: outlook.body-content-type`, чтобы указать конкретный формат для текста возвращаемого события.</span><span class="sxs-lookup"><span data-stu-id="95ae8-163">The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.</span></span> 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6f2ae-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f2ae-164">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="95ae8-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="95ae8-164">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_events"
@@ -100,26 +100,22 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6f2ae-165">C#</span><span class="sxs-lookup"><span data-stu-id="6f2ae-165">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="95ae8-165">C#</span><span class="sxs-lookup"><span data-stu-id="95ae8-165">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f2ae-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6f2ae-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="95ae8-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95ae8-166">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6f2ae-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6f2ae-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="95ae8-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95ae8-167">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-events-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="6f2ae-168">Java</span><span class="sxs-lookup"><span data-stu-id="6f2ae-168">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a><span data-ttu-id="6f2ae-169">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="6f2ae-169">Response 1</span></span>
-<span data-ttu-id="6f2ae-170">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-170">Here is an example of the response.</span></span> <span data-ttu-id="6f2ae-171">Так как заголовок `Prefer: outlook.body-content-type` не указан, свойство **body** возвращается в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-171">Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="95ae8-168">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="95ae8-168">Response 1</span></span>
+<span data-ttu-id="95ae8-169">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="95ae8-169">Here is an example of the response.</span></span> <span data-ttu-id="95ae8-170">Так как заголовок `Prefer: outlook.body-content-type` не указан, свойство **body** возвращается в формате HTML по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="95ae8-170">Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -201,12 +197,12 @@ Content-length: 1932
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="6f2ae-172">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="6f2ae-172">Request 2</span></span>
-<span data-ttu-id="6f2ae-173">Во втором примере показано, как использовать заголовок `Prefer: outlook.body-content-type="text"`, чтобы получить свойство **body** указанного сообщения в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-173">The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="95ae8-171">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="95ae8-171">Request 2</span></span>
+<span data-ttu-id="95ae8-172">Во втором примере показано, как использовать заголовок `Prefer: outlook.body-content-type="text"`, чтобы получить свойство **body** указанного сообщения в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="95ae8-172">The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified message in text format.</span></span>
 
-<span data-ttu-id="6f2ae-174">В запросе также используется параметр `$select` для возврата отдельных свойств.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-174">The request also uses a `$select` query parameter to return specific properties.</span></span> <span data-ttu-id="6f2ae-175">Без параметра `$select` будут возвращены все свойства событий.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-175">Without a `$select` parameter, all of the event properties will be returned.</span></span>
+<span data-ttu-id="95ae8-173">В запросе также используется параметр `$select` для возврата отдельных свойств.</span><span class="sxs-lookup"><span data-stu-id="95ae8-173">The request also uses a `$select` query parameter to return specific properties.</span></span> <span data-ttu-id="95ae8-174">Без параметра `$select` будут возвращены все свойства событий.</span><span class="sxs-lookup"><span data-stu-id="95ae8-174">Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6f2ae-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f2ae-176">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="95ae8-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="95ae8-175">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_events_in_text"
@@ -215,26 +211,22 @@ Content-length: 1932
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6f2ae-177">C#</span><span class="sxs-lookup"><span data-stu-id="6f2ae-177">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="95ae8-176">C#</span><span class="sxs-lookup"><span data-stu-id="95ae8-176">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6f2ae-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6f2ae-178">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="95ae8-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="95ae8-177">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-events-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6f2ae-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6f2ae-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="95ae8-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="95ae8-178">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-events-in-text-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="6f2ae-180">Java</span><span class="sxs-lookup"><span data-stu-id="6f2ae-180">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-events-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a><span data-ttu-id="6f2ae-181">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="6f2ae-181">Response 2</span></span>
-<span data-ttu-id="6f2ae-182">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-182">Here is an example of the response.</span></span> <span data-ttu-id="6f2ae-183">Свойство **body** возвращается в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="6f2ae-183">The **body** property is returned in text format.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="95ae8-179">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="95ae8-179">Response 2</span></span>
+<span data-ttu-id="95ae8-180">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="95ae8-180">Here is an example of the response.</span></span> <span data-ttu-id="95ae8-181">Свойство **body** возвращается в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="95ae8-181">The **body** property is returned in text format.</span></span> 
 
 <!-- {
   "blockType": "response",
