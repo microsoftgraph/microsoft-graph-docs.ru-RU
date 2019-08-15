@@ -5,67 +5,67 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: b9061d3cc8714df5285f9c679a88ea4d020320e0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c0b13dd9eece28a2910f1034a9a484d932a9c6a8
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326221"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420499"
 ---
-# <a name="update-identityprovider"></a><span data-ttu-id="fdcda-103">Обновление identityProvider</span><span class="sxs-lookup"><span data-stu-id="fdcda-103">Update identityProvider</span></span>
+# <a name="update-identityprovider"></a><span data-ttu-id="0762c-103">Обновление identityProvider</span><span class="sxs-lookup"><span data-stu-id="0762c-103">Update identityProvider</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fdcda-104">Обновление свойств в существующем объекте [identityProvider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="fdcda-104">Update properties in an existing [identityProvider](../resources/identityprovider.md).</span></span>
+<span data-ttu-id="0762c-104">Обновление свойств в существующем объекте [identityProvider](../resources/identityprovider.md).</span><span class="sxs-lookup"><span data-stu-id="0762c-104">Update properties in an existing [identityProvider](../resources/identityprovider.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fdcda-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fdcda-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0762c-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0762c-105">Permissions</span></span>
 
-<span data-ttu-id="fdcda-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fdcda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0762c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0762c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fdcda-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fdcda-108">Permission type</span></span>      | <span data-ttu-id="fdcda-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fdcda-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0762c-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0762c-108">Permission type</span></span>      | <span data-ttu-id="0762c-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0762c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fdcda-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fdcda-110">Delegated (work or school account)</span></span>|<span data-ttu-id="fdcda-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fdcda-111">IdentityProvider.ReadWrite.All</span></span>|
-|<span data-ttu-id="fdcda-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fdcda-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="fdcda-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fdcda-113">Not supported.</span></span>|
-|<span data-ttu-id="fdcda-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fdcda-114">Application</span></span>|<span data-ttu-id="fdcda-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fdcda-115">Not supported.</span></span>|
+|<span data-ttu-id="0762c-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0762c-110">Delegated (work or school account)</span></span>|<span data-ttu-id="0762c-111">IdentityProvider.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0762c-111">IdentityProvider.ReadWrite.All</span></span>|
+|<span data-ttu-id="0762c-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0762c-112">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="0762c-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0762c-113">Not supported.</span></span>|
+|<span data-ttu-id="0762c-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0762c-114">Application</span></span>|<span data-ttu-id="0762c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0762c-115">Not supported.</span></span>|
 
-<span data-ttu-id="fdcda-116">Рабочая или учебная учетная запись должна быть глобальным администратором клиента.</span><span class="sxs-lookup"><span data-stu-id="fdcda-116">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="0762c-116">Рабочая или учебная учетная запись должна быть глобальным администратором клиента.</span><span class="sxs-lookup"><span data-stu-id="0762c-116">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="fdcda-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fdcda-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0762c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0762c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityProviders/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fdcda-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fdcda-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0762c-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0762c-118">Request headers</span></span>
 
-|<span data-ttu-id="fdcda-119">Имя</span><span class="sxs-lookup"><span data-stu-id="fdcda-119">Name</span></span>|<span data-ttu-id="fdcda-120">Описание</span><span class="sxs-lookup"><span data-stu-id="fdcda-120">Description</span></span>|
+|<span data-ttu-id="0762c-119">Имя</span><span class="sxs-lookup"><span data-stu-id="0762c-119">Name</span></span>|<span data-ttu-id="0762c-120">Описание</span><span class="sxs-lookup"><span data-stu-id="0762c-120">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="fdcda-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fdcda-121">Authorization</span></span>|<span data-ttu-id="fdcda-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fdcda-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="fdcda-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fdcda-124">Content-Type</span></span>|<span data-ttu-id="fdcda-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fdcda-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="0762c-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0762c-121">Authorization</span></span>|<span data-ttu-id="0762c-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0762c-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="0762c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0762c-124">Content-Type</span></span>|<span data-ttu-id="0762c-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0762c-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fdcda-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fdcda-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0762c-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0762c-127">Request body</span></span>
 
-<span data-ttu-id="fdcda-128">В тексте запроса предоставьте JSON-объект с одним или несколькими свойствами, требующими обновления.</span><span class="sxs-lookup"><span data-stu-id="fdcda-128">In the request body, provide a JSON object with one or more properties that need to be updated.</span></span>
+<span data-ttu-id="0762c-128">В тексте запроса предоставьте JSON-объект с одним или несколькими свойствами, требующими обновления.</span><span class="sxs-lookup"><span data-stu-id="0762c-128">In the request body, provide a JSON object with one or more properties that need to be updated.</span></span>
 
-|<span data-ttu-id="fdcda-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="fdcda-129">Property</span></span>|<span data-ttu-id="fdcda-130">Тип</span><span class="sxs-lookup"><span data-stu-id="fdcda-130">Type</span></span>|<span data-ttu-id="fdcda-131">Описание</span><span class="sxs-lookup"><span data-stu-id="fdcda-131">Description</span></span>|
+|<span data-ttu-id="0762c-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="0762c-129">Property</span></span>|<span data-ttu-id="0762c-130">Тип</span><span class="sxs-lookup"><span data-stu-id="0762c-130">Type</span></span>|<span data-ttu-id="0762c-131">Описание</span><span class="sxs-lookup"><span data-stu-id="0762c-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fdcda-132">clientId</span><span class="sxs-lookup"><span data-stu-id="fdcda-132">clientId</span></span>|<span data-ttu-id="fdcda-133">String</span><span class="sxs-lookup"><span data-stu-id="fdcda-133">String</span></span>|<span data-ttu-id="fdcda-134">Идентификатор клиента для приложения.</span><span class="sxs-lookup"><span data-stu-id="fdcda-134">The client ID for the application.</span></span> <span data-ttu-id="fdcda-135">Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.</span><span class="sxs-lookup"><span data-stu-id="fdcda-135">This is the client ID obtained when registering the application with the identity provider.</span></span>|
-|<span data-ttu-id="fdcda-136">clientSecret</span><span class="sxs-lookup"><span data-stu-id="fdcda-136">clientSecret</span></span>|<span data-ttu-id="fdcda-137">String</span><span class="sxs-lookup"><span data-stu-id="fdcda-137">String</span></span>|<span data-ttu-id="fdcda-138">Секрет клиента для приложения.</span><span class="sxs-lookup"><span data-stu-id="fdcda-138">The client secret for the application.</span></span> <span data-ttu-id="fdcda-139">Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений.</span><span class="sxs-lookup"><span data-stu-id="fdcda-139">This is the client secret obtained when registering the application with the identity provider.</span></span>|
-|<span data-ttu-id="fdcda-140">name</span><span class="sxs-lookup"><span data-stu-id="fdcda-140">name</span></span>|<span data-ttu-id="fdcda-141">String</span><span class="sxs-lookup"><span data-stu-id="fdcda-141">String</span></span>|<span data-ttu-id="fdcda-142">Отображаемое имя поставщика удостоверений.</span><span class="sxs-lookup"><span data-stu-id="fdcda-142">The display name of the identity provider.</span></span>|
+|<span data-ttu-id="0762c-132">clientId</span><span class="sxs-lookup"><span data-stu-id="0762c-132">clientId</span></span>|<span data-ttu-id="0762c-133">String</span><span class="sxs-lookup"><span data-stu-id="0762c-133">String</span></span>|<span data-ttu-id="0762c-134">Идентификатор клиента для приложения.</span><span class="sxs-lookup"><span data-stu-id="0762c-134">The client ID for the application.</span></span> <span data-ttu-id="0762c-135">Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.</span><span class="sxs-lookup"><span data-stu-id="0762c-135">This is the client ID obtained when registering the application with the identity provider.</span></span>|
+|<span data-ttu-id="0762c-136">clientSecret</span><span class="sxs-lookup"><span data-stu-id="0762c-136">clientSecret</span></span>|<span data-ttu-id="0762c-137">String</span><span class="sxs-lookup"><span data-stu-id="0762c-137">String</span></span>|<span data-ttu-id="0762c-138">Секрет клиента для приложения.</span><span class="sxs-lookup"><span data-stu-id="0762c-138">The client secret for the application.</span></span> <span data-ttu-id="0762c-139">Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений.</span><span class="sxs-lookup"><span data-stu-id="0762c-139">This is the client secret obtained when registering the application with the identity provider.</span></span>|
+|<span data-ttu-id="0762c-140">name</span><span class="sxs-lookup"><span data-stu-id="0762c-140">name</span></span>|<span data-ttu-id="0762c-141">String</span><span class="sxs-lookup"><span data-stu-id="0762c-141">String</span></span>|<span data-ttu-id="0762c-142">Отображаемое имя поставщика удостоверений.</span><span class="sxs-lookup"><span data-stu-id="0762c-142">The display name of the identity provider.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fdcda-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcda-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0762c-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="0762c-143">Response</span></span>
 
-<span data-ttu-id="fdcda-144">При успешном выполнении этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="fdcda-144">If successful, this method returns `204 No Content` response code.</span></span> <span data-ttu-id="fdcda-145">В случае неудачи возвращается ошибка `4xx` с подробностями.</span><span class="sxs-lookup"><span data-stu-id="fdcda-145">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="0762c-144">При успешном выполнении этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="0762c-144">If successful, this method returns `204 No Content` response code.</span></span> <span data-ttu-id="0762c-145">В случае неудачи возвращается ошибка `4xx` с подробностями.</span><span class="sxs-lookup"><span data-stu-id="0762c-145">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fdcda-146">Пример</span><span class="sxs-lookup"><span data-stu-id="fdcda-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0762c-146">Пример</span><span class="sxs-lookup"><span data-stu-id="0762c-146">Example</span></span>
 
-<span data-ttu-id="fdcda-147">В приведенном ниже примере обновляется определение объекта **identityProvider** времени существования маркера и оно устанавливается в качестве значения по умолчанию для организации.</span><span class="sxs-lookup"><span data-stu-id="fdcda-147">The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.</span></span>
+<span data-ttu-id="0762c-147">В приведенном ниже примере обновляется определение объекта **identityProvider** времени существования маркера и оно устанавливается в качестве значения по умолчанию для организации.</span><span class="sxs-lookup"><span data-stu-id="0762c-147">The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="fdcda-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcda-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="0762c-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="0762c-148">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fdcda-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdcda-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="0762c-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="0762c-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -79,26 +79,22 @@ Content-length: 41
     "clientSecret": "1111111111111"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fdcda-150">C#</span><span class="sxs-lookup"><span data-stu-id="fdcda-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="0762c-150">C#</span><span class="sxs-lookup"><span data-stu-id="0762c-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fdcda-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdcda-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0762c-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0762c-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fdcda-152">Цель — C</span><span class="sxs-lookup"><span data-stu-id="fdcda-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0762c-152">Цель — C</span><span class="sxs-lookup"><span data-stu-id="0762c-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="fdcda-153">Java</span><span class="sxs-lookup"><span data-stu-id="fdcda-153">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="fdcda-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcda-154">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="0762c-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="0762c-153">Response</span></span>
 
 <!-- {
   "blockType": "response",
