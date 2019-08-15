@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a8c0a008542d7ecbbb370fee61f78e1bae2d3cb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b44c6da84696cc4bafdbcbdb2ddf15d970399bfd
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328258"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36420842"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>Удаление Оффицеклиентконфигуратионассигнмент
 
@@ -25,7 +25,7 @@ ms.locfileid: "36328258"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
+|Делегированные (рабочая или учебная учетная запись)|**TODO: определение областей**|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|* * TODO: определение областей * *|
 
