@@ -6,12 +6,12 @@ description: Добавление элемента в пакет элемент�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 63c7dafb5f3787148b8c5775a83e2a381b64947a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e31fed6b88164ea305d820fb227ae71da9337226
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318021"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419250"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
@@ -82,10 +82,6 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/add-to-bundle-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-to-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
