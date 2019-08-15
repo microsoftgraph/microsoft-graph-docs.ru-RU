@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: b0744662008b0b82167ce8779f478f260eedee57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d171a247b980ef2f1b1d762df696699eae7a1890
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033490"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426407"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
@@ -18,7 +18,7 @@ ms.locfileid: "36033490"
 
 Вы можете получить доступ к [пользователям](user.md) через Microsoft Graph двумя указанными ниже способами.
 
-- По идентификатору пользователя (`/users/{id | userPrincipalName}`). 
+- По идентификатору пользователя (`/users/{id | userPrincipalName}`).
 - С помощью псевдонима `/me` (который совпадает с `/users/{signed-in user's id}`) для пользователя, вошедшего в систему.
 
 ## <a name="authorization"></a>Авторизация
@@ -36,7 +36,7 @@ ms.locfileid: "36033490"
 
 ## <a name="common-properties"></a>Общие свойства
 
-Ниже показан набор свойств, используемый по умолчанию и возвращаемый при получении пользователя или выводе списка пользователей. Это подмножество всех доступных свойств. Чтобы получить дополнительные свойства пользователя, используйте параметр запроса `$select`. 
+Ниже показан набор свойств, используемый по умолчанию и возвращаемый при получении пользователя или выводе списка пользователей. Это подмножество всех доступных свойств. Чтобы получить дополнительные свойства пользователя, используйте параметр запроса `$select`.
 
 |Свойство |Описание |
 |:----------|:-------------|
@@ -51,8 +51,6 @@ ms.locfileid: "36033490"
 |preferredLanguage | Предпочитаемый язык пользователя.|
 |surname| Фамилия пользователя. |
 |userPrincipalName| Имя участника-пользователя для пользователя. |
-
-<br/>
 
 Дополнительные сведения и список всех свойств см. в статье об объекте [user](user.md).
 

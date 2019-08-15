@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: a0a1959607e72397e24065a81b7d2362e05002ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d405dcc5e7881c7a404e5ca16f87c889cd5ccc7
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007405"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426414"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
@@ -20,10 +20,11 @@ ms.locfileid: "36007405"
 
 Вы можете получить доступ к пользователям через Microsoft Graph двумя указанными ниже способами.
 
-- По идентификатору пользователя (`/users/{id}`). 
+- По идентификатору пользователя (`/users/{id}`).
 - С помощью псевдонима `/me` (который совпадает с `/users/{signed-in user's id}`) для пользователя, вошедшего в систему.
 
 ## <a name="authorization"></a>Авторизация
+
 Для операций доступа к пользователям необходимо одно из указанных ниже [разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes). Первые три разрешения могут быть предоставлены приложению пользователем. Остальные разрешения могут быть предоставлены приложению администратором.
 
 - User.ReadBasic.All
@@ -48,6 +49,7 @@ ms.locfileid: "36007405"
 Дополнительные сведения и список всех свойств см. в статье об объекте [user](user.md).
 
 ## <a name="common-operations"></a>Стандартные действия
+
 >**Примечание.** Для выполнения некоторых из этих операций необходимы дополнительные разрешения.
 
 | Path    | Описание |

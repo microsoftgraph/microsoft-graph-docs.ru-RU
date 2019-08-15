@@ -403,11 +403,11 @@
             - name: Вложение
               href: resources/attachment.md
               items:
-                - name: Ресурс вложенного файла
+                - name: Тип вложенного файла
                   href: resources/fileattachment.md
-                - name: Ресурс вложенного элемента
+                - name: Тип вложения элемента
                   href: resources/itemattachment.md
-                - name: Ресурс вложенной ссылки
+                - name: Ссылочный тип вложения
                   href: resources/referenceattachment.md
                 - name: Получение вложения
                   href: api/attachment-get.md
@@ -620,11 +620,11 @@
             - name: Вложение
               href: resources/attachment.md
               items:
-                - name: Ресурс вложенного файла
+                - name: Тип вложенного файла
                   href: resources/fileattachment.md
-                - name: Ресурс вложенного элемента
+                - name: Тип вложения элемента
                   href: resources/itemattachment.md
-                - name: Ресурс вложенной ссылки
+                - name: Ссылочный тип вложения
                   href: resources/referenceattachment.md
                 - name: Получение вложения
                   href: api/attachment-get.md
@@ -3402,11 +3402,11 @@
             - name: Вложение
               href: resources/attachment.md
               items:
-                - name: Ресурс вложенного файла
+                - name: Тип вложенного файла
                   href: resources/fileattachment.md
-                - name: Ресурс вложенного элемента
+                - name: Тип вложения элемента
                   href: resources/itemattachment.md
-                - name: Ресурс вложенной ссылки
+                - name: Ссылочный тип вложения
                   href: resources/referenceattachment.md
                 - name: Получение вложения
                   href: api/attachment-get.md
