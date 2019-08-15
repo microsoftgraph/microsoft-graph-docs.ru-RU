@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5193f99b2bc381541c813aa708ef3d836677e6fb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ebfa5ad0c308cc2d4936c6e3a2a410a9656c3794
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36362466"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36421136"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 
@@ -37,7 +37,7 @@ ms.locfileid: "36362466"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRooms
-GET /users/<id>/findRooms
+GET /users/{id}/findRooms
 ```
 
 Получение всех помещений в определенном списке помещений клиента:
@@ -45,7 +45,7 @@ GET /users/<id>/findRooms
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRooms(RoomList='{room_list_emailAddress}')
-GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/{id}/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -94,10 +94,6 @@ GET https://graph.microsoft.com/beta/me/findRooms
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-rooms-in-tenant-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-get-rooms-in-tenant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,10 +168,6 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-rooms-from-specific-list-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-get-rooms-from-specific-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
