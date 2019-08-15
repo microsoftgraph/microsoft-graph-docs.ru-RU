@@ -5,52 +5,52 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cff12a81b4b564c96ca1d7c614438527dae65937
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c8c9c5199a9c0e78aabf237a71f802e2f9fb4d73
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318952"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408675"
 ---
-# <a name="create-administrativeunit"></a><span data-ttu-id="99eed-103">Создание administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="99eed-103">Create administrativeUnit</span></span>
+# <a name="create-administrativeunit"></a><span data-ttu-id="a1042-103">Создание administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="a1042-103">Create administrativeUnit</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="99eed-104">Используйте этот API для создания нового [administrativeUnit](../resources/administrativeunit.md).</span><span class="sxs-lookup"><span data-stu-id="99eed-104">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="99eed-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="99eed-105">Permissions</span></span>
-<span data-ttu-id="99eed-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="99eed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a1042-104">Используйте этот API для создания нового [administrativeUnit](../resources/administrativeunit.md).</span><span class="sxs-lookup"><span data-stu-id="a1042-104">Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a1042-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a1042-105">Permissions</span></span>
+<span data-ttu-id="a1042-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a1042-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="99eed-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="99eed-108">Permission type</span></span>      | <span data-ttu-id="99eed-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="99eed-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a1042-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a1042-108">Permission type</span></span>      | <span data-ttu-id="a1042-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a1042-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="99eed-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="99eed-110">Delegated (work or school account)</span></span> | <span data-ttu-id="99eed-111">AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="99eed-111">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="99eed-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="99eed-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99eed-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="99eed-113">Not supported.</span></span>    |
-|<span data-ttu-id="99eed-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="99eed-114">Application</span></span> | <span data-ttu-id="99eed-115">AdministrativeUnit. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="99eed-115">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="a1042-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a1042-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a1042-111">AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="a1042-111">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a1042-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a1042-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1042-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a1042-113">Not supported.</span></span>    |
+|<span data-ttu-id="a1042-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a1042-114">Application</span></span> | <span data-ttu-id="a1042-115">AdministrativeUnit. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="a1042-115">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="99eed-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="99eed-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1042-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a1042-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="99eed-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="99eed-117">Request headers</span></span>
-| <span data-ttu-id="99eed-118">Имя</span><span class="sxs-lookup"><span data-stu-id="99eed-118">Name</span></span>      |<span data-ttu-id="99eed-119">Описание</span><span class="sxs-lookup"><span data-stu-id="99eed-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a1042-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a1042-117">Request headers</span></span>
+| <span data-ttu-id="a1042-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a1042-118">Name</span></span>      |<span data-ttu-id="a1042-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a1042-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="99eed-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="99eed-120">Authorization</span></span>  | <span data-ttu-id="99eed-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="99eed-p102">Bearer {token}. Required.</span></span> |
-## <a name="request-body"></a><span data-ttu-id="99eed-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="99eed-123">Request body</span></span>
-<span data-ttu-id="99eed-124">В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="99eed-124">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+| <span data-ttu-id="a1042-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a1042-120">Authorization</span></span>  | <span data-ttu-id="a1042-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a1042-p102">Bearer {token}. Required.</span></span> |
+## <a name="request-body"></a><span data-ttu-id="a1042-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a1042-123">Request body</span></span>
+<span data-ttu-id="a1042-124">В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a1042-124">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="99eed-125">Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавлять настраиваемые свойства с собственными данными в административную единицу при создании.</span><span class="sxs-lookup"><span data-stu-id="99eed-125">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
+<span data-ttu-id="a1042-125">Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавлять настраиваемые свойства с собственными данными в административную единицу при создании.</span><span class="sxs-lookup"><span data-stu-id="a1042-125">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="99eed-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="99eed-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a1042-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="a1042-126">Response</span></span>
 
-<span data-ttu-id="99eed-127">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="99eed-127">If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+<span data-ttu-id="a1042-127">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a1042-127">If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="99eed-128">Пример</span><span class="sxs-lookup"><span data-stu-id="99eed-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="99eed-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="99eed-129">Request</span></span>
-<span data-ttu-id="99eed-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="99eed-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a1042-128">Пример</span><span class="sxs-lookup"><span data-stu-id="a1042-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a1042-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="a1042-129">Request</span></span>
+<span data-ttu-id="a1042-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a1042-130">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="99eed-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="99eed-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a1042-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="a1042-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_administrativeunit_from_administrativeunits"
@@ -66,27 +66,23 @@ Content-length: 150
     "visibility": "true"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="99eed-132">C#</span><span class="sxs-lookup"><span data-stu-id="99eed-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a1042-132">C#</span><span class="sxs-lookup"><span data-stu-id="a1042-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-from-administrativeunits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="99eed-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="99eed-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a1042-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a1042-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-administrativeunit-from-administrativeunits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="99eed-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="99eed-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a1042-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a1042-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-administrativeunit-from-administrativeunits-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="99eed-135">Java</span><span class="sxs-lookup"><span data-stu-id="99eed-135">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="99eed-136">В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="99eed-136">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="99eed-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="99eed-137">Response</span></span>
-<span data-ttu-id="99eed-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="99eed-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="a1042-135">В тексте запроса добавьте представление объекта [administrativeUnit](../resources/administrativeunit.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a1042-135">In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="a1042-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="a1042-136">Response</span></span>
+<span data-ttu-id="a1042-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="a1042-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,10 +103,10 @@ Content-length: 172
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="99eed-141">См. также</span><span class="sxs-lookup"><span data-stu-id="99eed-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1042-140">См. также</span><span class="sxs-lookup"><span data-stu-id="a1042-140">See also</span></span>
 
-- [<span data-ttu-id="99eed-142">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="99eed-142">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="99eed-143">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="99eed-143">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="a1042-141">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="a1042-141">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="a1042-142">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="a1042-142">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
