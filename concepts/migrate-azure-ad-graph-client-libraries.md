@@ -4,12 +4,12 @@ description: Описывается перенос приложений API Azur
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fbc7c7550cda7654f603feeafb17ff3f0eb281e1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bc48be3712b0d3b03e9799559aac4d6ae812b5d0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630260"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422179"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Миграция использования клиентской библиотеки .NET в Microsoft Graph
 
@@ -52,7 +52,7 @@ ms.locfileid: "33630260"
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
-    async () =\> await AcquireTokenAsyncForUser());
+    async () => await AcquireTokenAsyncForUser());
     ```
 
     Кому:
@@ -87,7 +87,7 @@ ms.locfileid: "33630260"
 
     ``` csharp
     var groups = await
-    client.Groups.Where(g =\> g.DisplayName.StartsWith("a")).ExecuteAsync();
+    client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
     Кому:

@@ -5,12 +5,12 @@ description: Описан метод перечисления ресурсов s
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 71fd3e5492ba5990739dac79f4401d8b270eaa4f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5c8ca894571d843305b11402c27ea5f9f688052c
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363804"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410047"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -106,10 +106,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

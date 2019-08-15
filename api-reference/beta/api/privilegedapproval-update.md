@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6103e01ea9832bd7858215576eaeb4319514d6be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8160074fdf8f034ccf2c5b6836a066c44173034
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978807"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412833"
 ---
 # <a name="update-privilegedapproval"></a>Обновление привилежедаппровал
 
@@ -30,7 +30,7 @@ ms.locfileid: "35978807"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /privilegedApproval/<id>
+PATCH /privilegedApproval/{id}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
@@ -42,12 +42,12 @@ PATCH /privilegedApproval/<id>
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Аппровалдуратион|Duration (Длительность)||
-|Аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|Аппровалтипе|String||
-|Аппроверреасон|String||
+|аппровалдуратион|Duration (Длительность)||
+|аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|аппровалтипе|String||
+|аппроверреасон|String||
 |endDateTime|DateTimeOffset||
-|Рекуесторреасон|String||
+|рекуесторреасон|String||
 |roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||

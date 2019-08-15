@@ -6,12 +6,12 @@ title: Создание списка дочерних сайтов для сай
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0a0a3d9b932778734e64a01f2f3370ac7435aa3c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9c574c7d3235947407aca02b8a07ced64620aff4
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363748"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410017"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 
@@ -50,10 +50,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d996c70936dab216b036ba9f218383d4284420c3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 349a170449745456ee33b5868a408bd540e9dd34
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361291"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412903"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
@@ -30,7 +30,7 @@ ms.locfileid: "36361291"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /privilegedApproval/<id>
+GET /privilegedApproval/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
@@ -59,7 +59,7 @@ GET /privilegedApproval/<id>
   "name": "get_privilegedapproval"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/privilegedApproval/<id>
+GET https://graph.microsoft.com/beta/privilegedApproval/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedapproval-csharp-snippets.md)]
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/privilegedApproval/<id>
 
 # <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-privilegedapproval-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-privilegedapproval-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
