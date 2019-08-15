@@ -4,58 +4,58 @@ description: Описывается перенос приложений API Azur
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fbc7c7550cda7654f603feeafb17ff3f0eb281e1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bc48be3712b0d3b03e9799559aac4d6ae812b5d0
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630260"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422179"
 ---
-# <a name="migrate-net-client-library-use-to-microsoft-graph"></a><span data-ttu-id="a46c4-103">Миграция использования клиентской библиотеки .NET в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="a46c4-103">Migrate .NET client library use to Microsoft Graph</span></span>
+# <a name="migrate-net-client-library-use-to-microsoft-graph"></a><span data-ttu-id="45680-103">Миграция использования клиентской библиотеки .NET в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="45680-103">Migrate .NET client library use to Microsoft Graph</span></span>
 
-<span data-ttu-id="a46c4-104">Эта статья входит в *Шаг 3: Ознакомьтесь со сведениями о* [процессе миграции приложений](migrate-azure-ad-graph-planning-checklist.md).</span><span class="sxs-lookup"><span data-stu-id="a46c4-104">This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).</span></span>
+<span data-ttu-id="45680-104">Эта статья входит в *Шаг 3: Ознакомьтесь со сведениями о* [процессе миграции приложений](migrate-azure-ad-graph-planning-checklist.md).</span><span class="sxs-lookup"><span data-stu-id="45680-104">This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).</span></span>
 
-<span data-ttu-id="a46c4-105">Если ваше приложение использует клиентскую библиотеку Azure AD Graph, переключитесь на [клиентскую библиотеку Microsoft Graph .NET](https://github.com/microsoftgraph/msgraph-sdk-dotnet).</span><span class="sxs-lookup"><span data-stu-id="a46c4-105">If your app currently uses the Azure AD Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).</span></span>
+<span data-ttu-id="45680-105">Если ваше приложение использует клиентскую библиотеку Azure AD Graph, переключитесь на [клиентскую библиотеку Microsoft Graph .NET](https://github.com/microsoftgraph/msgraph-sdk-dotnet).</span><span class="sxs-lookup"><span data-stu-id="45680-105">If your app currently uses the Azure AD Graph client library, switch to the [Microsoft Graph .NET client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).</span></span>
 
-><span data-ttu-id="a46c4-106">NOTE: клиентская библиотека Microsoft Graph .NET поддерживается только для .NET Framework 4,5 и .NET Standard 1,1.</span><span class="sxs-lookup"><span data-stu-id="a46c4-106">NOTE: The Microsoft Graph .NET client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.</span></span>  <span data-ttu-id="a46c4-107">Тем не менее, ознакомьтесь со статьей клиентская библиотека .NET для Microsoft Graph, чтобы получить последние сведения о поддержке.</span><span class="sxs-lookup"><span data-stu-id="a46c4-107">However please consult Microsoft Graph .NET client library for the latest support information.</span></span>
+><span data-ttu-id="45680-106">NOTE: клиентская библиотека Microsoft Graph .NET поддерживается только для .NET Framework 4,5 и .NET Standard 1,1.</span><span class="sxs-lookup"><span data-stu-id="45680-106">NOTE: The Microsoft Graph .NET client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.</span></span>  <span data-ttu-id="45680-107">Тем не менее, ознакомьтесь со статьей клиентская библиотека .NET для Microsoft Graph, чтобы получить последние сведения о поддержке.</span><span class="sxs-lookup"><span data-stu-id="45680-107">However please consult Microsoft Graph .NET client library for the latest support information.</span></span>
 
-<span data-ttu-id="a46c4-108">В этой статье мы рассмотрим некоторые общие действия для перехода на клиентскую библиотеку Microsoft Graph .NET:</span><span class="sxs-lookup"><span data-stu-id="a46c4-108">Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:</span></span>
+<span data-ttu-id="45680-108">В этой статье мы рассмотрим некоторые общие действия для перехода на клиентскую библиотеку Microsoft Graph .NET:</span><span class="sxs-lookup"><span data-stu-id="45680-108">Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:</span></span>
 
-- <span data-ttu-id="a46c4-109">Создание клиента Microsoft Graph с помощью маркера доступа (который можно получить с помощью ADAL или MSAL)</span><span class="sxs-lookup"><span data-stu-id="a46c4-109">How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)</span></span>
-- <span data-ttu-id="a46c4-110">Как формулировать запросы</span><span class="sxs-lookup"><span data-stu-id="a46c4-110">How to formulate requests</span></span>
-- <span data-ttu-id="a46c4-111">Использование построителей запросов</span><span class="sxs-lookup"><span data-stu-id="a46c4-111">How to use query builders</span></span>
-- <span data-ttu-id="a46c4-112">Обработка коллекций и разбиения по страницам</span><span class="sxs-lookup"><span data-stu-id="a46c4-112">How to handle collections and paging</span></span>  
+- <span data-ttu-id="45680-109">Создание клиента Microsoft Graph с помощью маркера доступа (который можно получить с помощью ADAL или MSAL)</span><span class="sxs-lookup"><span data-stu-id="45680-109">How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)</span></span>
+- <span data-ttu-id="45680-110">Как формулировать запросы</span><span class="sxs-lookup"><span data-stu-id="45680-110">How to formulate requests</span></span>
+- <span data-ttu-id="45680-111">Использование построителей запросов</span><span class="sxs-lookup"><span data-stu-id="45680-111">How to use query builders</span></span>
+- <span data-ttu-id="45680-112">Обработка коллекций и разбиения по страницам</span><span class="sxs-lookup"><span data-stu-id="45680-112">How to handle collections and paging</span></span>  
 
-## <a name="overview-of-the-migration-steps"></a><span data-ttu-id="a46c4-113">Обзор этапов миграции</span><span class="sxs-lookup"><span data-stu-id="a46c4-113">Overview of the migration steps</span></span>
+## <a name="overview-of-the-migration-steps"></a><span data-ttu-id="45680-113">Обзор этапов миграции</span><span class="sxs-lookup"><span data-stu-id="45680-113">Overview of the migration steps</span></span>
 
-<span data-ttu-id="a46c4-114">В следующих шагах предполагается, что ваше приложение уже использует ADAL для получения маркеров доступа для вызова Azure AD Graph, и теперь вы будете продолжать использовать ADAL.</span><span class="sxs-lookup"><span data-stu-id="a46c4-114">The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL.</span></span> <span data-ttu-id="a46c4-115">Переключение на MSAL можно выполнить в отдельном действии, описанном в статье [Переход на MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).</span><span class="sxs-lookup"><span data-stu-id="a46c4-115">Switching to MSAL can be done as a separate step described in [migrating to MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).</span></span>
+<span data-ttu-id="45680-114">В следующих шагах предполагается, что ваше приложение уже использует ADAL для получения маркеров доступа для вызова Azure AD Graph, и теперь вы будете продолжать использовать ADAL.</span><span class="sxs-lookup"><span data-stu-id="45680-114">The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL.</span></span> <span data-ttu-id="45680-115">Переключение на MSAL можно выполнить в отдельном действии, описанном в статье [Переход на MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).</span><span class="sxs-lookup"><span data-stu-id="45680-115">Switching to MSAL can be done as a separate step described in [migrating to MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).</span></span>
 
-1. <span data-ttu-id="a46c4-116">Чтобы получить маркер доступа к Microsoft Graph, обновите **resourceurl экземпляром** с `https://graph.windows.net` " `https://graph.microsoft.com`на".</span><span class="sxs-lookup"><span data-stu-id="a46c4-116">To acquire an access token to Microsoft Graph, update **resourceUrl** from `https://graph.windows.net` to `https://graph.microsoft.com`.</span></span>
+1. <span data-ttu-id="45680-116">Чтобы получить маркер доступа к Microsoft Graph, обновите **resourceurl экземпляром** с `https://graph.windows.net` " `https://graph.microsoft.com`на".</span><span class="sxs-lookup"><span data-stu-id="45680-116">To acquire an access token to Microsoft Graph, update **resourceUrl** from `https://graph.windows.net` to `https://graph.microsoft.com`.</span></span>
 
-2. <span data-ttu-id="a46c4-117">В приложении обновите ссылки на клиентскую библиотеку Microsoft Graph, изменив следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="a46c4-117">In your app, update references to the Microsoft Graph client library by changing:</span></span>
+2. <span data-ttu-id="45680-117">В приложении обновите ссылки на клиентскую библиотеку Microsoft Graph, изменив следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="45680-117">In your app, update references to the Microsoft Graph client library by changing:</span></span>
 
     ``` csharp
     using Microsoft.Azure.ActiveDirectory.GraphClient;
     ```
 
-    <span data-ttu-id="a46c4-118">Кому:</span><span class="sxs-lookup"><span data-stu-id="a46c4-118">To:</span></span>
+    <span data-ttu-id="45680-118">Кому:</span><span class="sxs-lookup"><span data-stu-id="45680-118">To:</span></span>
 
     ``` csharp
     using Microsoft.Graph;
     ```
 
-3. <span data-ttu-id="a46c4-119">С помощью диспетчера пакетов Скачайте и обновите [пакет NuGet для Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) и зависимости обновлений.</span><span class="sxs-lookup"><span data-stu-id="a46c4-119">Use your package manager to download and update the [Microsoft Graph NuGet package](https://www.nuget.org/packages/Microsoft.Graph/) and update dependencies.</span></span>
+3. <span data-ttu-id="45680-119">С помощью диспетчера пакетов Скачайте и обновите [пакет NuGet для Microsoft Graph](https://www.nuget.org/packages/Microsoft.Graph/) и зависимости обновлений.</span><span class="sxs-lookup"><span data-stu-id="45680-119">Use your package manager to download and update the [Microsoft Graph NuGet package](https://www.nuget.org/packages/Microsoft.Graph/) and update dependencies.</span></span>
 
-4. <span data-ttu-id="a46c4-120">Обновите свой конструктор клиента, чтобы `GraphServiceClient`создать объект a `ActiveDirectoryClient`, а не.</span><span class="sxs-lookup"><span data-stu-id="a46c4-120">Update your client constructor to create a `GraphServiceClient`, rather than `ActiveDirectoryClient`.</span></span>  <span data-ttu-id="a46c4-121">Следующие фрагменты кода предполагают, что ваше приложение использует `AcquireTokenAsyncForUser()` метод для получения новых маркеров.</span><span class="sxs-lookup"><span data-stu-id="a46c4-121">The following code snippets assume your app is using the `AcquireTokenAsyncForUser()` method to acquire new tokens.</span></span> <span data-ttu-id="a46c4-122">Определение этого метода можно найти в [образце Active Directory — DotNet — графапи — Console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).</span><span class="sxs-lookup"><span data-stu-id="a46c4-122">You can find a definition for this method as part of the [active-directory-dotnet-graphapi-console sample](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).</span></span>
+4. <span data-ttu-id="45680-120">Обновите свой конструктор клиента, чтобы `GraphServiceClient`создать объект a `ActiveDirectoryClient`, а не.</span><span class="sxs-lookup"><span data-stu-id="45680-120">Update your client constructor to create a `GraphServiceClient`, rather than `ActiveDirectoryClient`.</span></span>  <span data-ttu-id="45680-121">Следующие фрагменты кода предполагают, что ваше приложение использует `AcquireTokenAsyncForUser()` метод для получения новых маркеров.</span><span class="sxs-lookup"><span data-stu-id="45680-121">The following code snippets assume your app is using the `AcquireTokenAsyncForUser()` method to acquire new tokens.</span></span> <span data-ttu-id="45680-122">Определение этого метода можно найти в [образце Active Directory — DotNet — графапи — Console](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).</span><span class="sxs-lookup"><span data-stu-id="45680-122">You can find a definition for this method as part of the [active-directory-dotnet-graphapi-console sample](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).</span></span>
 
-    <span data-ttu-id="a46c4-123">Настройки</span><span class="sxs-lookup"><span data-stu-id="a46c4-123">Change:</span></span>
+    <span data-ttu-id="45680-123">Настройки</span><span class="sxs-lookup"><span data-stu-id="45680-123">Change:</span></span>
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
-    async () =\> await AcquireTokenAsyncForUser());
+    async () => await AcquireTokenAsyncForUser());
     ```
 
-    <span data-ttu-id="a46c4-124">Кому:</span><span class="sxs-lookup"><span data-stu-id="a46c4-124">To:</span></span>
+    <span data-ttu-id="45680-124">Кому:</span><span class="sxs-lookup"><span data-stu-id="45680-124">To:</span></span>
 
     ``` csharp
     GraphServiceClient graphClient = new GraphServiceClient(serviceRoot,
@@ -66,40 +66,40 @@ ms.locfileid: "33630260"
        }));
     ```
 
-    <span data-ttu-id="a46c4-125">Для клиентской библиотеки Microsoft Graph `serviceRoot` значение также включает номер версии.</span><span class="sxs-lookup"><span data-stu-id="a46c4-125">For Microsoft Graph client library, the `serviceRoot` value also includes the version number.</span></span> <span data-ttu-id="a46c4-126">В настоящее время это `https://graph.microsoft.com/v1.0`значение.</span><span class="sxs-lookup"><span data-stu-id="a46c4-126">Currently, that value is `https://graph.microsoft.com/v1.0`.</span></span>
+    <span data-ttu-id="45680-125">Для клиентской библиотеки Microsoft Graph `serviceRoot` значение также включает номер версии.</span><span class="sxs-lookup"><span data-stu-id="45680-125">For Microsoft Graph client library, the `serviceRoot` value also includes the version number.</span></span> <span data-ttu-id="45680-126">В настоящее время это `https://graph.microsoft.com/v1.0`значение.</span><span class="sxs-lookup"><span data-stu-id="45680-126">Currently, that value is `https://graph.microsoft.com/v1.0`.</span></span>
 
-5. <span data-ttu-id="a46c4-127">Обновление запросов на использование синтаксиса построителя запросов клиентов Microsoft Graph путем изменения следующих параметров:</span><span class="sxs-lookup"><span data-stu-id="a46c4-127">Update requests to use the Microsoft Graph client request builder syntax, by changing:</span></span>
+5. <span data-ttu-id="45680-127">Обновление запросов на использование синтаксиса построителя запросов клиентов Microsoft Graph путем изменения следующих параметров:</span><span class="sxs-lookup"><span data-stu-id="45680-127">Update requests to use the Microsoft Graph client request builder syntax, by changing:</span></span>
 
     ``` csharp
     signedInUser = (User)await client.Me.ExecuteAsync();
     ```
 
-    <span data-ttu-id="a46c4-128">Кому:</span><span class="sxs-lookup"><span data-stu-id="a46c4-128">To:</span></span>
+    <span data-ttu-id="45680-128">Кому:</span><span class="sxs-lookup"><span data-stu-id="45680-128">To:</span></span>
 
     ``` csharp
     signedInUser = (User)await client.Me.Request().GetAsync();
     ```
 
     [!NOTE]
-    <span data-ttu-id="a46c4-129">В клиентской библиотеке Azure AD Graph поддерживался синтаксис запросов на основе LINQ.</span><span class="sxs-lookup"><span data-stu-id="a46c4-129">The Azure AD Graph client library supported LINQ-based query syntax.</span></span> <span data-ttu-id="a46c4-130">Однако клиентская библиотека Microsoft Graph не поддерживает эту функции.</span><span class="sxs-lookup"><span data-stu-id="a46c4-130">However, the Microsoft Graph client library does not.</span></span>  <span data-ttu-id="a46c4-131">Следовательно, вам потребуется преобразовать нужные запросы в другое выражение для RESTFUL.</span><span class="sxs-lookup"><span data-stu-id="a46c4-131">Consequently, you'll need to convert the relevant queries to a more RESTful expression.</span></span>  
+    <span data-ttu-id="45680-129">В клиентской библиотеке Azure AD Graph поддерживался синтаксис запросов на основе LINQ.</span><span class="sxs-lookup"><span data-stu-id="45680-129">The Azure AD Graph client library supported LINQ-based query syntax.</span></span> <span data-ttu-id="45680-130">Однако клиентская библиотека Microsoft Graph не поддерживает эту функции.</span><span class="sxs-lookup"><span data-stu-id="45680-130">However, the Microsoft Graph client library does not.</span></span>  <span data-ttu-id="45680-131">Следовательно, вам потребуется преобразовать нужные запросы в другое выражение для RESTFUL.</span><span class="sxs-lookup"><span data-stu-id="45680-131">Consequently, you'll need to convert the relevant queries to a more RESTful expression.</span></span>  
 
-    <span data-ttu-id="a46c4-132">Для этого измените следующее:</span><span class="sxs-lookup"><span data-stu-id="a46c4-132">To do so, change:</span></span>
+    <span data-ttu-id="45680-132">Для этого измените следующее:</span><span class="sxs-lookup"><span data-stu-id="45680-132">To do so, change:</span></span>
 
     ``` csharp
     var groups = await
-    client.Groups.Where(g =\> g.DisplayName.StartsWith("a")).ExecuteAsync();
+    client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
-    <span data-ttu-id="a46c4-133">Кому:</span><span class="sxs-lookup"><span data-stu-id="a46c4-133">To:</span></span>
+    <span data-ttu-id="45680-133">Кому:</span><span class="sxs-lookup"><span data-stu-id="45680-133">To:</span></span>
 
     ``` csharp
     var groups = await
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-6. <span data-ttu-id="a46c4-134">Если страницы кода проходят через коллекции, внесите следующие небольшие изменения.</span><span class="sxs-lookup"><span data-stu-id="a46c4-134">If your code pages through collections, make the following minor adjustments.</span></span> <span data-ttu-id="a46c4-135">В следующем примере сравниваются и сравниваются получение группы и разбиение по страницам с разбивкой по 5 за раз.</span><span class="sxs-lookup"><span data-stu-id="a46c4-135">The following example compares and contrasts fetching a group and paging through its members, 5 at a time.</span></span> <span data-ttu-id="a46c4-136">Хотя код для Azure AD Graph требует конструкцию для извлечения членов группы, у Microsoft Graph нет такого требования.</span><span class="sxs-lookup"><span data-stu-id="a46c4-136">While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement.</span></span> <span data-ttu-id="a46c4-137">Кроме того, код является относительно похожим.</span><span class="sxs-lookup"><span data-stu-id="a46c4-137">Other than that, the code is relatively similar.</span></span>  <span data-ttu-id="a46c4-138">Чтобы быть кратким, отображаются только пользовательские элементы, условия try/catch и условия ошибок не отображаются, а фрагменты кода предназначены для однопотоковой консоли приложения.</span><span class="sxs-lookup"><span data-stu-id="a46c4-138">To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.</span></span>
+6. <span data-ttu-id="45680-134">Если страницы кода проходят через коллекции, внесите следующие небольшие изменения.</span><span class="sxs-lookup"><span data-stu-id="45680-134">If your code pages through collections, make the following minor adjustments.</span></span> <span data-ttu-id="45680-135">В следующем примере сравниваются и сравниваются получение группы и разбиение по страницам с разбивкой по 5 за раз.</span><span class="sxs-lookup"><span data-stu-id="45680-135">The following example compares and contrasts fetching a group and paging through its members, 5 at a time.</span></span> <span data-ttu-id="45680-136">Хотя код для Azure AD Graph требует конструкцию для извлечения членов группы, у Microsoft Graph нет такого требования.</span><span class="sxs-lookup"><span data-stu-id="45680-136">While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement.</span></span> <span data-ttu-id="45680-137">Кроме того, код является относительно похожим.</span><span class="sxs-lookup"><span data-stu-id="45680-137">Other than that, the code is relatively similar.</span></span>  <span data-ttu-id="45680-138">Чтобы быть кратким, отображаются только пользовательские элементы, условия try/catch и условия ошибок не отображаются, а фрагменты кода предназначены для однопотоковой консоли приложения.</span><span class="sxs-lookup"><span data-stu-id="45680-138">To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.</span></span>
 
-    <span data-ttu-id="a46c4-139">Например, измените следующий код с помощью клиентской библиотеки .NET для Azure AD Graph:</span><span class="sxs-lookup"><span data-stu-id="a46c4-139">As an example, change the following code using the Azure AD Graph .NET client library:</span></span>
+    <span data-ttu-id="45680-139">Например, измените следующий код с помощью клиентской библиотеки .NET для Azure AD Graph:</span><span class="sxs-lookup"><span data-stu-id="45680-139">As an example, change the following code using the Azure AD Graph .NET client library:</span></span>
 
     ```csharp
     Group retrievedGroup = client.Groups.
@@ -124,7 +124,7 @@ ms.locfileid: "33630260"
 
     ```
 
-    <span data-ttu-id="a46c4-140">Следующий код с помощью клиентской библиотеки .NET Microsoft Graph:</span><span class="sxs-lookup"><span data-stu-id="a46c4-140">To the following code using the Microsoft Graph .NET client library:</span></span>
+    <span data-ttu-id="45680-140">Следующий код с помощью клиентской библиотеки .NET Microsoft Graph:</span><span class="sxs-lookup"><span data-stu-id="45680-140">To the following code using the Microsoft Graph .NET client library:</span></span>
 
     ```csharp
     var membersPage = client.Groups[id].Members.Request().Top(5).GetAsync().Result;
@@ -147,16 +147,16 @@ ms.locfileid: "33630260"
 
     ```
 
-7. <span data-ttu-id="a46c4-141">Построение и устранение ошибок ресурсов, свойств, навигации и действий служб, обычно связанных с изменением имен.</span><span class="sxs-lookup"><span data-stu-id="a46c4-141">Build and fix any resource, property, navigation, and service action errors, generally related to name changes.</span></span>
+7. <span data-ttu-id="45680-141">Построение и устранение ошибок ресурсов, свойств, навигации и действий служб, обычно связанных с изменением имен.</span><span class="sxs-lookup"><span data-stu-id="45680-141">Build and fix any resource, property, navigation, and service action errors, generally related to name changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a46c4-142">См. также</span><span class="sxs-lookup"><span data-stu-id="a46c4-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="45680-142">См. также</span><span class="sxs-lookup"><span data-stu-id="45680-142">See also</span></span>
 
-<span data-ttu-id="a46c4-143">[Приложение фрагментов кода консоли C#](https://github.com/microsoftgraph/console-csharp-snippets-sample) выделяет дополнительные различия между клиентской библиотекой Microsoft Graph и клиентской библиотекой Azure AD Graph.</span><span class="sxs-lookup"><span data-stu-id="a46c4-143">The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.</span></span>
+<span data-ttu-id="45680-143">[Приложение фрагментов кода консоли C#](https://github.com/microsoftgraph/console-csharp-snippets-sample) выделяет дополнительные различия между клиентской библиотекой Microsoft Graph и клиентской библиотекой Azure AD Graph.</span><span class="sxs-lookup"><span data-stu-id="45680-143">The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.</span></span>
 
-<span data-ttu-id="a46c4-144">Клиентская библиотека Azure AD Graph поддерживает только платформу .NET.</span><span class="sxs-lookup"><span data-stu-id="a46c4-144">The Azure AD Graph client library supports only the .NET platform.</span></span>  <span data-ttu-id="a46c4-145">Тем не менее, клиентская библиотека Microsoft Graph поддерживает дополнительные [платформы и языки](/graph) , которые могут оказаться более удобными для ваших решений.</span><span class="sxs-lookup"><span data-stu-id="a46c4-145">However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.</span></span>
+<span data-ttu-id="45680-144">Клиентская библиотека Azure AD Graph поддерживает только платформу .NET.</span><span class="sxs-lookup"><span data-stu-id="45680-144">The Azure AD Graph client library supports only the .NET platform.</span></span>  <span data-ttu-id="45680-145">Тем не менее, клиентская библиотека Microsoft Graph поддерживает дополнительные [платформы и языки](/graph) , которые могут оказаться более удобными для ваших решений.</span><span class="sxs-lookup"><span data-stu-id="45680-145">However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="a46c4-146">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="a46c4-146">Next Steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="45680-146">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="45680-146">Next Steps</span></span>
 
-- <span data-ttu-id="a46c4-147">Узнайте, как [развертывать, тестировать и расширять](/graph/migrate-azure-ad-graph-deploy-test-extend) приложения, перенесенные в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="a46c4-147">Learn how to [deploy, test, and extend](/graph/migrate-azure-ad-graph-deploy-test-extend) apps you've migrated to Microsoft Graph.</span></span>
-- <span data-ttu-id="a46c4-148">Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .</span><span class="sxs-lookup"><span data-stu-id="a46c4-148">Explore [Microsoft Graph](/graph/overview) concepts and practices.</span></span>
-- <span data-ttu-id="a46c4-149">Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .</span><span class="sxs-lookup"><span data-stu-id="a46c4-149">Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.</span></span>
+- <span data-ttu-id="45680-147">Узнайте, как [развертывать, тестировать и расширять](/graph/migrate-azure-ad-graph-deploy-test-extend) приложения, перенесенные в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="45680-147">Learn how to [deploy, test, and extend](/graph/migrate-azure-ad-graph-deploy-test-extend) apps you've migrated to Microsoft Graph.</span></span>
+- <span data-ttu-id="45680-148">Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .</span><span class="sxs-lookup"><span data-stu-id="45680-148">Explore [Microsoft Graph](/graph/overview) concepts and practices.</span></span>
+- <span data-ttu-id="45680-149">Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .</span><span class="sxs-lookup"><span data-stu-id="45680-149">Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.</span></span>
