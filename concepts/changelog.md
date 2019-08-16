@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 494fd923a205000352fb1c95217ca81e79b8ef8b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f279dd6be424c34a80fc2b3e942d60ed9dec0d16
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422221"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437673"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -72,6 +72,16 @@ ms.locfileid: "36422221"
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета        | Добавлено действие [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-beta) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета-версия | Добавлен ресурс [roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta), обеспечивающий доступ к определениям ролей и назначениям ролей, полученным от поставщиков RBAC. |
+| Дополнение | Бета-версия | Добавлен ресурс [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta), представляющий коллекцию разрешений с перечислением допустимых операций. |
+| Дополнение | Бета-версия | Добавлен ресурс [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta), предоставляющий доступ к ресурсам. |
+| Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleDefinition: <br><ul><li>[Список объектов unifiedRoleDefinition](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) — получение списка объектов unifiedRoleDefinition для поставщика.</li><li>[Создание объекта unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) — создание объекта unifiedRoleDefinition.</li><li>[Получение объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) — извлечение свойств и связей объекта определения единой роли.</li><li>[Обновление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) — обновление свойств объекта unifiedRoleDefinition.</li><li>[Удаление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) — удаление объекта unifiedRoleDefinition.</li></ul> |
+| Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleAssignment: <br><ul><li>[Список объектов unifiedRoleAssignment](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) — получение списка объектов unifiedRoleAssignment для поставщика.</li><li>[Создание объекта unifiedRoleAssignment]() — создание объекта unifiedRoleAssignment.</li><li>[Получение объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) — извлечение свойств и связей объекта unifiedRoleAssignment.</li><li>[Удаление объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) — удаление объекта unifiedRoleAssignment. |
+
 ### <a name="reports"></a>Отчеты
 
 | **Тип изменения** | **Версия** | **Описание**                  |
@@ -81,6 +91,7 @@ ms.locfileid: "36422221"
 | Дополнение        | 1.0  | Добавлено свойство **ownerPrincipalName** для объекта [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta).|
 | Дополнение        | 1.0  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 | Дополнение        | 1.0  | Добавлены свойства **office365Active** и **office365Inactive** для объекта [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
+
 
 ## <a name="july-2019"></a>Июль 2019 г.
 
@@ -808,7 +819,7 @@ ms.locfileid: "36422221"
 |Дополнение |бета| Добавлено свойство displayName в объект [teamsTab](/graph/api/resources/teamstab?view=graph-rest-beta) |
 |Дополнение |бета| Добавлено свойство messageId в объект [teamsTab](/graph/api/resources/teamstab?view=graph-rest-beta) |
 |Дополнение |Бета| Добавлено свойство teamsApp в объект [teamsTab](/graph/api/resources/teamstab?view=graph-rest-beta) |
-|Дополнение |бета| Представлен новый тип ресурса [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta).|
+|Дополнение |Бета| Представлен новый тип ресурса [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta).|
 |Дополнение |бета| Представлен новый тип ресурса [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta).|
 |Дополнение |бета| Представлен новый тип ресурса [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).|
 |Дополнение |бета| Представлен новый элемент перечисления hiddenMembership для объекта teamVisibilityType.|
@@ -1009,7 +1020,7 @@ ms.locfileid: "36422221"
 | Дополнение        | бета        | Добавлен объект [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлен объект [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлен сложный тип [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta) |
-| Дополнение        | бета        | Добавлен сложный тип [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) |
+| Дополнение        | Бета-версия        | Добавлен сложный тип [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлен сложный тип [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлено свойство **access** для сложного типа [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлено свойство **location** для сложного типа [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) |
@@ -1587,7 +1598,7 @@ ms.locfileid: "36422221"
 |Дополнение|Бета|Добавлен новый объект [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлена новая операция [удаления канала](/graph/api/channel-delete?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлена новая операция [исправления канала](/graph/api/channel-patch?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлено новое свойство webUrl для ресурса [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение|Бета-версия|Добавлено новое свойство webUrl для ресурса [команды](/graph/api/resources/team?view=graph-rest-beta).|
 |Изменение|бета|Обновлен путь к объекту [channel](/graph/api/resources/channel?view=graph-rest-beta).|
 
 ### <a name="users--outlook-settings"></a>Пользователи | Параметры Outlook
@@ -1786,7 +1797,7 @@ ms.locfileid: "36422221"
 | Тип изменения | Версия | Описание                              |
 |:------------|:--------|:-----------------------------------------|
 | Дополнение    | Бета-версия    | Добавлено свойство **activatedOnSharedComputer** для объекта [userActivationCounts](/graph/api/resources/useractivationcounts?view=graph-rest-beta).|
-| Дополнение    | Бета    | Добавлено свойство **sharedComputerActivation** для объекта [office365ActivationsUserCounts](/graph/api/resources/office365activationsusercounts?view=graph-rest-beta).|
+| Дополнение    | Бета-версия    | Добавлено свойство **sharedComputerActivation** для объекта [office365ActivationsUserCounts](/graph/api/resources/office365activationsusercounts?view=graph-rest-beta).|
 
 ### <a name="tasks-and-plans-planner"></a>Задачи и планы (Планировщик)
 
