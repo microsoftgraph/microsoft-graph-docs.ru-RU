@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными от сети экземплярами корпоративных облачных служб Майкрософт, которые ограничены в пределах географических границ конкретных стран и обслуживаются местным персоналом.
-ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 406966a0bc6d1f5729ab96d4bd358ea21e3d9e6e
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133734"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437645"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -38,8 +38,6 @@ ms.locfileid: "35133734"
 |Azure AD (глобальная служба)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке](./auth/auth-concepts.md)подлинности. Сведения о сценариях проверки подлинности Azure AD см. [](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
-
-> **Примечание.** [Конечные точки авторизации и маркеров Azure AD версии 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) доступны только в глобальной службе и не могут использоваться с национальными облачными развертываниями.
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Корневые конечные точки службы Microsoft Graph и проводника Graph
