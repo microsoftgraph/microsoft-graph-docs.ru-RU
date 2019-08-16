@@ -8412,6 +8412,33 @@
                           href: api/governanceroleassignmentrequest-update.md
                         - name: Отмена
                           href: api/governanceroleassignmentrequest-cancel.md
+            - name: Управление ролями
+              href: resources/rolemanagement.md
+              items:
+                - name: Определение ролей
+                  href: resources/unifiedroledefinition.md
+                  items:
+                    - name: Определение ролей списка
+                      href: api/rbacapplication-list-roledefinitions.md
+                    - name: Создание определения роли
+                      href: api/rbacapplication-post-roledefinitions.md
+                    - name: Получение определения роли
+                      href: api/unifiedroledefinition-get.md
+                    - name: Обновление определения роли
+                      href: api/unifiedroledefinition-update.md
+                    - name: Удаление определения роли
+                      href: api/unifiedroledefinition-delete.md
+                - name: Назначение ролей
+                  href: resources/unifiedroleassignment.md
+                  items:
+                    - name: Назначение роли списка
+                      href: api/rbacapplication-list-roleassignments.md
+                    - name: Создание назначения роли
+                      href: api/rbacapplication-post-roleassignments.md
+                    - name: Получение назначения ролей
+                      href: api/unifiedroleassignment-get.md
+                    - name: Удаление назначения ролей
+                      href: api/unifiedroleassignment-delete.md
             - name: Субъект-служба
               href: resources/serviceprincipal.md
               items:
