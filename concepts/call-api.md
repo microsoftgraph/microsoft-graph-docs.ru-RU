@@ -4,12 +4,12 @@ description: 'Для доступа к ресурсу Microsoft Graph и раб�
 localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
-ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2b1af0aa2d2e31bbaa4fd70ef87a2dddef5284f
+ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570252"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778630"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Вызов API Microsoft Graph
 
@@ -34,7 +34,7 @@ ms.locfileid: "32570252"
 - `{resource}` — это сегмент ресурсов или путь, например:
   - `users`, `groups`, `devices`, `organization`
   - псевдоним `me`, который сопоставляется с вошедшим пользователем;
-   - ресурсы, принадлежащие пользователю, такие как `me/events`, `me/drive` или `me/messages`;
+  - ресурсы, принадлежащие пользователю, такие как `me/events`, `me/drive` или `me/messages`;
   - псевдоним `myOrganization`, который сопоставляется с клиентом организации вошедшего пользователя.
 - `[query_parameters]` представляет дополнительные параметры запроса, такие как `$filter` и `$select`.
 
