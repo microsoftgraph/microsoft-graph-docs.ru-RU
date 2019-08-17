@@ -5,872 +5,881 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: b4df1b1283ae0240e26ba3f63ccfad0094e285d7
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062062"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450482"
 ---
-### <a name="registrationauthmethod-values"></a><span data-ttu-id="02272-103">значения Регистратионаусмесод</span><span class="sxs-lookup"><span data-stu-id="02272-103">registrationAuthMethod values</span></span>
+### <a name="analyticsactivitytype-values"></a><span data-ttu-id="d6b49-103">значения Аналитиксактивититипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-103">analyticsActivityType values</span></span>
 
-|<span data-ttu-id="02272-104">Member</span><span class="sxs-lookup"><span data-stu-id="02272-104">Member</span></span>|
+| <span data-ttu-id="d6b49-104">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-104">Value</span></span>
+|:--------------
+| <span data-ttu-id="d6b49-105">call</span><span class="sxs-lookup"><span data-stu-id="d6b49-105">call</span></span>
+| <span data-ttu-id="d6b49-106">отображаются</span><span class="sxs-lookup"><span data-stu-id="d6b49-106">chat</span></span>
+| <span data-ttu-id="d6b49-107">email</span><span class="sxs-lookup"><span data-stu-id="d6b49-107">email</span></span>
+| <span data-ttu-id="d6b49-108">фокус</span><span class="sxs-lookup"><span data-stu-id="d6b49-108">focus</span></span>
+| <span data-ttu-id="d6b49-109">назначить</span><span class="sxs-lookup"><span data-stu-id="d6b49-109">meeting</span></span>
+
+### <a name="registrationauthmethod-values"></a><span data-ttu-id="d6b49-110">значения Регистратионаусмесод</span><span class="sxs-lookup"><span data-stu-id="d6b49-110">registrationAuthMethod values</span></span>
+
+|<span data-ttu-id="d6b49-111">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-111">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-105">email</span><span class="sxs-lookup"><span data-stu-id="02272-105">email</span></span>|
-|<span data-ttu-id="02272-106">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="02272-106">mobilePhone</span></span>|
-|<span data-ttu-id="02272-107">Оффицефоне</span><span class="sxs-lookup"><span data-stu-id="02272-107">officePhone</span></span>|
-|<span data-ttu-id="02272-108">Секуритикуестион</span><span class="sxs-lookup"><span data-stu-id="02272-108">securityQuestion</span></span>|
-|<span data-ttu-id="02272-109">Аппнотификатион</span><span class="sxs-lookup"><span data-stu-id="02272-109">appNotification</span></span>|
-|<span data-ttu-id="02272-110">Аппкоде</span><span class="sxs-lookup"><span data-stu-id="02272-110">appCode</span></span>|
-|<span data-ttu-id="02272-111">Алтернатемобилефоне</span><span class="sxs-lookup"><span data-stu-id="02272-111">alternateMobilePhone</span></span>|
+|<span data-ttu-id="d6b49-112">email</span><span class="sxs-lookup"><span data-stu-id="d6b49-112">email</span></span>|
+|<span data-ttu-id="d6b49-113">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="d6b49-113">mobilePhone</span></span>|
+|<span data-ttu-id="d6b49-114">оффицефоне</span><span class="sxs-lookup"><span data-stu-id="d6b49-114">officePhone</span></span>|
+|<span data-ttu-id="d6b49-115">секуритикуестион</span><span class="sxs-lookup"><span data-stu-id="d6b49-115">securityQuestion</span></span>|
+|<span data-ttu-id="d6b49-116">аппнотификатион</span><span class="sxs-lookup"><span data-stu-id="d6b49-116">appNotification</span></span>|
+|<span data-ttu-id="d6b49-117">аппкоде</span><span class="sxs-lookup"><span data-stu-id="d6b49-117">appCode</span></span>|
+|<span data-ttu-id="d6b49-118">алтернатемобилефоне</span><span class="sxs-lookup"><span data-stu-id="d6b49-118">alternateMobilePhone</span></span>|
 
-### <a name="contactrelationship-values"></a><span data-ttu-id="02272-112">значения Контактрелатионшип</span><span class="sxs-lookup"><span data-stu-id="02272-112">contactRelationship values</span></span>
+### <a name="contactrelationship-values"></a><span data-ttu-id="d6b49-119">значения Контактрелатионшип</span><span class="sxs-lookup"><span data-stu-id="d6b49-119">contactRelationship values</span></span>
 
-|<span data-ttu-id="02272-113">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-113">Member</span></span>|<span data-ttu-id="02272-114">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-114">Value</span></span>|<span data-ttu-id="02272-115">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-115">Description</span></span>|
+|<span data-ttu-id="d6b49-120">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-120">Member</span></span>|<span data-ttu-id="d6b49-121">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-121">Value</span></span>|<span data-ttu-id="d6b49-122">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-122">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-116">верхнего</span><span class="sxs-lookup"><span data-stu-id="02272-116">parent</span></span>|<span data-ttu-id="02272-117">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-117">0</span></span>|<span data-ttu-id="02272-118">Родительский пользователь пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-118">The user's parent.</span></span>|
-|<span data-ttu-id="02272-119">сравнения</span><span class="sxs-lookup"><span data-stu-id="02272-119">relative</span></span>|<span data-ttu-id="02272-120">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-120">1</span></span>| <span data-ttu-id="02272-121">Относительный путь пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-121">The user's relative.</span></span>|
-|<span data-ttu-id="02272-122">Аиде</span><span class="sxs-lookup"><span data-stu-id="02272-122">aide</span></span>|<span data-ttu-id="02272-123">2</span><span class="sxs-lookup"><span data-stu-id="02272-123">2</span></span>| <span data-ttu-id="02272-124">Аиде пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-124">The user's aide.</span></span>|
-|<span data-ttu-id="02272-125">врача</span><span class="sxs-lookup"><span data-stu-id="02272-125">doctor</span></span>|<span data-ttu-id="02272-126">4</span><span class="sxs-lookup"><span data-stu-id="02272-126">3</span></span>| <span data-ttu-id="02272-127">Врач пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-127">The user's doctor.</span></span>|
-|<span data-ttu-id="02272-128">Guardian</span><span class="sxs-lookup"><span data-stu-id="02272-128">guardian</span></span>|<span data-ttu-id="02272-129">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-129">4</span></span>| <span data-ttu-id="02272-130">Хранитель пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-130">The user's guardian.</span></span>|
-|<span data-ttu-id="02272-131">ребенка</span><span class="sxs-lookup"><span data-stu-id="02272-131">child</span></span>|<span data-ttu-id="02272-132">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-132">5</span></span>| <span data-ttu-id="02272-133">Дочерний элемент пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-133">The user's child.</span></span>|
-|<span data-ttu-id="02272-134">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-134">other</span></span>|<span data-ttu-id="02272-135">6 </span><span class="sxs-lookup"><span data-stu-id="02272-135">6</span></span>| <span data-ttu-id="02272-136">Незаданное отношение для пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-136">An unspecified relationship to the user.</span></span>|
-|<span data-ttu-id="02272-137">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-137">unknownFutureValue</span></span>|<span data-ttu-id="02272-138">7 </span><span class="sxs-lookup"><span data-stu-id="02272-138">7</span></span>| <span data-ttu-id="02272-139">Значение маркера для обеспечения совместимости с будущими версиями.</span><span class="sxs-lookup"><span data-stu-id="02272-139">Marker value for future compatibility.</span></span>|
+|<span data-ttu-id="d6b49-123">верхнего</span><span class="sxs-lookup"><span data-stu-id="d6b49-123">parent</span></span>|<span data-ttu-id="d6b49-124">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-124">0</span></span>|<span data-ttu-id="d6b49-125">Родительский пользователь пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-125">The user's parent.</span></span>|
+|<span data-ttu-id="d6b49-126">сравнения</span><span class="sxs-lookup"><span data-stu-id="d6b49-126">relative</span></span>|<span data-ttu-id="d6b49-127">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-127">1</span></span>| <span data-ttu-id="d6b49-128">Относительный путь пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-128">The user's relative.</span></span>|
+|<span data-ttu-id="d6b49-129">аиде</span><span class="sxs-lookup"><span data-stu-id="d6b49-129">aide</span></span>|<span data-ttu-id="d6b49-130">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-130">2</span></span>| <span data-ttu-id="d6b49-131">Аиде пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-131">The user's aide.</span></span>|
+|<span data-ttu-id="d6b49-132">врача</span><span class="sxs-lookup"><span data-stu-id="d6b49-132">doctor</span></span>|<span data-ttu-id="d6b49-133">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-133">3</span></span>| <span data-ttu-id="d6b49-134">Врач пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-134">The user's doctor.</span></span>|
+|<span data-ttu-id="d6b49-135">Guardian</span><span class="sxs-lookup"><span data-stu-id="d6b49-135">guardian</span></span>|<span data-ttu-id="d6b49-136">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-136">4</span></span>| <span data-ttu-id="d6b49-137">Хранитель пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-137">The user's guardian.</span></span>|
+|<span data-ttu-id="d6b49-138">ребенка</span><span class="sxs-lookup"><span data-stu-id="d6b49-138">child</span></span>|<span data-ttu-id="d6b49-139">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-139">5</span></span>| <span data-ttu-id="d6b49-140">Дочерний элемент пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-140">The user's child.</span></span>|
+|<span data-ttu-id="d6b49-141">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-141">other</span></span>|<span data-ttu-id="d6b49-142">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-142">6</span></span>| <span data-ttu-id="d6b49-143">Незаданное отношение для пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-143">An unspecified relationship to the user.</span></span>|
+|<span data-ttu-id="d6b49-144">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-144">unknownFutureValue</span></span>|<span data-ttu-id="d6b49-145">7 </span><span class="sxs-lookup"><span data-stu-id="d6b49-145">7</span></span>| <span data-ttu-id="d6b49-146">Значение маркера для обеспечения совместимости с будущими версиями.</span><span class="sxs-lookup"><span data-stu-id="d6b49-146">Marker value for future compatibility.</span></span>|
 
+### <a name="scheduleentitytheme-values"></a><span data-ttu-id="d6b49-147">значения Счедулинтитисеме</span><span class="sxs-lookup"><span data-stu-id="d6b49-147">scheduleEntityTheme values</span></span>
 
-### <a name="scheduleentitytheme-values"></a><span data-ttu-id="02272-140">значения Счедулинтитисеме</span><span class="sxs-lookup"><span data-stu-id="02272-140">scheduleEntityTheme values</span></span>
-
-| <span data-ttu-id="02272-141">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-141">Value</span></span>
+| <span data-ttu-id="d6b49-148">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-148">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-142">white</span><span class="sxs-lookup"><span data-stu-id="02272-142">white</span></span>
-| <span data-ttu-id="02272-143">blue</span><span class="sxs-lookup"><span data-stu-id="02272-143">blue</span></span>
-| <span data-ttu-id="02272-144">green</span><span class="sxs-lookup"><span data-stu-id="02272-144">green</span></span>
-| <span data-ttu-id="02272-145">purple</span><span class="sxs-lookup"><span data-stu-id="02272-145">purple</span></span>
-| <span data-ttu-id="02272-146">pink</span><span class="sxs-lookup"><span data-stu-id="02272-146">pink</span></span>
-| <span data-ttu-id="02272-147">yellow</span><span class="sxs-lookup"><span data-stu-id="02272-147">yellow</span></span>
-| <span data-ttu-id="02272-148">участка</span><span class="sxs-lookup"><span data-stu-id="02272-148">gray</span></span>
-| <span data-ttu-id="02272-149">Даркблуе</span><span class="sxs-lookup"><span data-stu-id="02272-149">darkBlue</span></span>
-| <span data-ttu-id="02272-150">Даркгрин</span><span class="sxs-lookup"><span data-stu-id="02272-150">darkGreen</span></span>
-| <span data-ttu-id="02272-151">Даркпурпле</span><span class="sxs-lookup"><span data-stu-id="02272-151">darkPurple</span></span>
-| <span data-ttu-id="02272-152">Даркпинк</span><span class="sxs-lookup"><span data-stu-id="02272-152">darkPink</span></span>
-| <span data-ttu-id="02272-153">Даркеллов</span><span class="sxs-lookup"><span data-stu-id="02272-153">darkYellow</span></span>
-| <span data-ttu-id="02272-154">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-154">unknownFutureValue</span></span>
+| <span data-ttu-id="d6b49-149">white</span><span class="sxs-lookup"><span data-stu-id="d6b49-149">white</span></span>
+| <span data-ttu-id="d6b49-150">blue</span><span class="sxs-lookup"><span data-stu-id="d6b49-150">blue</span></span>
+| <span data-ttu-id="d6b49-151">green</span><span class="sxs-lookup"><span data-stu-id="d6b49-151">green</span></span>
+| <span data-ttu-id="d6b49-152">purple</span><span class="sxs-lookup"><span data-stu-id="d6b49-152">purple</span></span>
+| <span data-ttu-id="d6b49-153">pink</span><span class="sxs-lookup"><span data-stu-id="d6b49-153">pink</span></span>
+| <span data-ttu-id="d6b49-154">yellow</span><span class="sxs-lookup"><span data-stu-id="d6b49-154">yellow</span></span>
+| <span data-ttu-id="d6b49-155">участка</span><span class="sxs-lookup"><span data-stu-id="d6b49-155">gray</span></span>
+| <span data-ttu-id="d6b49-156">даркблуе</span><span class="sxs-lookup"><span data-stu-id="d6b49-156">darkBlue</span></span>
+| <span data-ttu-id="d6b49-157">даркгрин</span><span class="sxs-lookup"><span data-stu-id="d6b49-157">darkGreen</span></span>
+| <span data-ttu-id="d6b49-158">даркпурпле</span><span class="sxs-lookup"><span data-stu-id="d6b49-158">darkPurple</span></span>
+| <span data-ttu-id="d6b49-159">даркпинк</span><span class="sxs-lookup"><span data-stu-id="d6b49-159">darkPink</span></span>
+| <span data-ttu-id="d6b49-160">даркеллов</span><span class="sxs-lookup"><span data-stu-id="d6b49-160">darkYellow</span></span>
+| <span data-ttu-id="d6b49-161">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-161">unknownFutureValue</span></span>
 
 
-### <a name="timeoffreasonicontype-values"></a><span data-ttu-id="02272-155">значения Тимеоффреасониконтипе</span><span class="sxs-lookup"><span data-stu-id="02272-155">timeOffReasonIconType values</span></span>
+### <a name="timeoffreasonicontype-values"></a><span data-ttu-id="d6b49-162">значения Тимеоффреасониконтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-162">timeOffReasonIconType values</span></span>
 
-|<span data-ttu-id="02272-156">Member</span><span class="sxs-lookup"><span data-stu-id="02272-156">Member</span></span>|
+|<span data-ttu-id="d6b49-163">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-163">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-157">none</span><span class="sxs-lookup"><span data-stu-id="02272-157">none</span></span>|
-|<span data-ttu-id="02272-158">Мойка</span><span class="sxs-lookup"><span data-stu-id="02272-158">car</span></span>|
-|<span data-ttu-id="02272-159">calendar</span><span class="sxs-lookup"><span data-stu-id="02272-159">calendar</span></span>|
-|<span data-ttu-id="02272-160">запускается</span><span class="sxs-lookup"><span data-stu-id="02272-160">running</span></span>|
-|<span data-ttu-id="02272-161">ходил</span><span class="sxs-lookup"><span data-stu-id="02272-161">plane</span></span>|
-|<span data-ttu-id="02272-162">Фирстаид</span><span class="sxs-lookup"><span data-stu-id="02272-162">firstAid</span></span>|
-|<span data-ttu-id="02272-163">врача</span><span class="sxs-lookup"><span data-stu-id="02272-163">doctor</span></span>|
-|<span data-ttu-id="02272-164">Нотворкинг</span><span class="sxs-lookup"><span data-stu-id="02272-164">notWorking</span></span>|
-|<span data-ttu-id="02272-165">регистрации</span><span class="sxs-lookup"><span data-stu-id="02272-165">clock</span></span>|
-|<span data-ttu-id="02272-166">Журидути</span><span class="sxs-lookup"><span data-stu-id="02272-166">juryDuty</span></span>|
-|<span data-ttu-id="02272-167">любой</span><span class="sxs-lookup"><span data-stu-id="02272-167">globe</span></span>|
-|<span data-ttu-id="02272-168">кружк</span><span class="sxs-lookup"><span data-stu-id="02272-168">cup</span></span>|
-|<span data-ttu-id="02272-169">phone</span><span class="sxs-lookup"><span data-stu-id="02272-169">phone</span></span>|
-|<span data-ttu-id="02272-170">Погода</span><span class="sxs-lookup"><span data-stu-id="02272-170">weather</span></span>|
-|<span data-ttu-id="02272-171">Общий</span><span class="sxs-lookup"><span data-stu-id="02272-171">umbrella</span></span>|
-|<span data-ttu-id="02272-172">Пиггибанк</span><span class="sxs-lookup"><span data-stu-id="02272-172">piggyBank</span></span>|
-|<span data-ttu-id="02272-173">Dog</span><span class="sxs-lookup"><span data-stu-id="02272-173">dog</span></span>|
-|<span data-ttu-id="02272-174">очень</span><span class="sxs-lookup"><span data-stu-id="02272-174">cake</span></span>|
-|<span data-ttu-id="02272-175">Траффикконе</span><span class="sxs-lookup"><span data-stu-id="02272-175">trafficCone</span></span>|
-|<span data-ttu-id="02272-176">крепления</span><span class="sxs-lookup"><span data-stu-id="02272-176">pin</span></span>|
-|<span data-ttu-id="02272-177">Веселая</span><span class="sxs-lookup"><span data-stu-id="02272-177">sunny</span></span>|
-|<span data-ttu-id="02272-178">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-178">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-164">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-164">none</span></span>|
+|<span data-ttu-id="d6b49-165">Мойка</span><span class="sxs-lookup"><span data-stu-id="d6b49-165">car</span></span>|
+|<span data-ttu-id="d6b49-166">calendar</span><span class="sxs-lookup"><span data-stu-id="d6b49-166">calendar</span></span>|
+|<span data-ttu-id="d6b49-167">запускается</span><span class="sxs-lookup"><span data-stu-id="d6b49-167">running</span></span>|
+|<span data-ttu-id="d6b49-168">ходил</span><span class="sxs-lookup"><span data-stu-id="d6b49-168">plane</span></span>|
+|<span data-ttu-id="d6b49-169">фирстаид</span><span class="sxs-lookup"><span data-stu-id="d6b49-169">firstAid</span></span>|
+|<span data-ttu-id="d6b49-170">врача</span><span class="sxs-lookup"><span data-stu-id="d6b49-170">doctor</span></span>|
+|<span data-ttu-id="d6b49-171">нотворкинг</span><span class="sxs-lookup"><span data-stu-id="d6b49-171">notWorking</span></span>|
+|<span data-ttu-id="d6b49-172">регистрации</span><span class="sxs-lookup"><span data-stu-id="d6b49-172">clock</span></span>|
+|<span data-ttu-id="d6b49-173">журидути</span><span class="sxs-lookup"><span data-stu-id="d6b49-173">juryDuty</span></span>|
+|<span data-ttu-id="d6b49-174">любой</span><span class="sxs-lookup"><span data-stu-id="d6b49-174">globe</span></span>|
+|<span data-ttu-id="d6b49-175">кружк</span><span class="sxs-lookup"><span data-stu-id="d6b49-175">cup</span></span>|
+|<span data-ttu-id="d6b49-176">phone</span><span class="sxs-lookup"><span data-stu-id="d6b49-176">phone</span></span>|
+|<span data-ttu-id="d6b49-177">Погода</span><span class="sxs-lookup"><span data-stu-id="d6b49-177">weather</span></span>|
+|<span data-ttu-id="d6b49-178">Общий</span><span class="sxs-lookup"><span data-stu-id="d6b49-178">umbrella</span></span>|
+|<span data-ttu-id="d6b49-179">пиггибанк</span><span class="sxs-lookup"><span data-stu-id="d6b49-179">piggyBank</span></span>|
+|<span data-ttu-id="d6b49-180">Dog</span><span class="sxs-lookup"><span data-stu-id="d6b49-180">dog</span></span>|
+|<span data-ttu-id="d6b49-181">очень</span><span class="sxs-lookup"><span data-stu-id="d6b49-181">cake</span></span>|
+|<span data-ttu-id="d6b49-182">траффикконе</span><span class="sxs-lookup"><span data-stu-id="d6b49-182">trafficCone</span></span>|
+|<span data-ttu-id="d6b49-183">крепления</span><span class="sxs-lookup"><span data-stu-id="d6b49-183">pin</span></span>|
+|<span data-ttu-id="d6b49-184">Веселая</span><span class="sxs-lookup"><span data-stu-id="d6b49-184">sunny</span></span>|
+|<span data-ttu-id="d6b49-185">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-185">unknownFutureValue</span></span>|
 
 
-### <a name="timezonestandard-values"></a><span data-ttu-id="02272-179">значения Тимезонестандард</span><span class="sxs-lookup"><span data-stu-id="02272-179">timeZoneStandard values</span></span>
+### <a name="timezonestandard-values"></a><span data-ttu-id="d6b49-186">значения Тимезонестандард</span><span class="sxs-lookup"><span data-stu-id="d6b49-186">timeZoneStandard values</span></span>
 
-| <span data-ttu-id="02272-180">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-180">Value</span></span>
+| <span data-ttu-id="d6b49-187">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-187">Value</span></span>
 |:-----------------
-| <span data-ttu-id="02272-181">под</span><span class="sxs-lookup"><span data-stu-id="02272-181">windows</span></span>
-| <span data-ttu-id="02272-182">IANA</span><span class="sxs-lookup"><span data-stu-id="02272-182">iana</span></span>
+| <span data-ttu-id="d6b49-188">под</span><span class="sxs-lookup"><span data-stu-id="d6b49-188">windows</span></span>
+| <span data-ttu-id="d6b49-189">IANA</span><span class="sxs-lookup"><span data-stu-id="d6b49-189">iana</span></span>
 
 
-### <a name="freebusystatus-values"></a><span data-ttu-id="02272-183">значения Фрибусистатус</span><span class="sxs-lookup"><span data-stu-id="02272-183">freeBusyStatus values</span></span>
+### <a name="freebusystatus-values"></a><span data-ttu-id="d6b49-190">значения Фрибусистатус</span><span class="sxs-lookup"><span data-stu-id="d6b49-190">freeBusyStatus values</span></span>
 
-| <span data-ttu-id="02272-184">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-184">Member</span></span>            |<span data-ttu-id="02272-185">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-185">Value</span></span>
+| <span data-ttu-id="d6b49-191">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-191">Member</span></span>            |<span data-ttu-id="d6b49-192">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-192">Value</span></span>
 |:------------------|:-------
-| <span data-ttu-id="02272-186">свободного</span><span class="sxs-lookup"><span data-stu-id="02272-186">free</span></span>              | <span data-ttu-id="02272-187">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-187">0</span></span>
-| <span data-ttu-id="02272-188">занят</span><span class="sxs-lookup"><span data-stu-id="02272-188">tentative</span></span>         | <span data-ttu-id="02272-189">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-189">1</span></span>
-| <span data-ttu-id="02272-190">момент</span><span class="sxs-lookup"><span data-stu-id="02272-190">busy</span></span>              | <span data-ttu-id="02272-191">2</span><span class="sxs-lookup"><span data-stu-id="02272-191">2</span></span>
-| <span data-ttu-id="02272-192">OOF</span><span class="sxs-lookup"><span data-stu-id="02272-192">oof</span></span>               | <span data-ttu-id="02272-193">4</span><span class="sxs-lookup"><span data-stu-id="02272-193">3</span></span>
-| <span data-ttu-id="02272-194">Воркинжелсевхере</span><span class="sxs-lookup"><span data-stu-id="02272-194">workingElsewhere</span></span>  | <span data-ttu-id="02272-195">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-195">4</span></span>
-| <span data-ttu-id="02272-196">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-196">unknown</span></span>           | <span data-ttu-id="02272-197">–1</span><span class="sxs-lookup"><span data-stu-id="02272-197">-1</span></span>
+| <span data-ttu-id="d6b49-193">свободного</span><span class="sxs-lookup"><span data-stu-id="d6b49-193">free</span></span>              | <span data-ttu-id="d6b49-194">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-194">0</span></span>
+| <span data-ttu-id="d6b49-195">занят</span><span class="sxs-lookup"><span data-stu-id="d6b49-195">tentative</span></span>         | <span data-ttu-id="d6b49-196">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-196">1</span></span>
+| <span data-ttu-id="d6b49-197">момент</span><span class="sxs-lookup"><span data-stu-id="d6b49-197">busy</span></span>              | <span data-ttu-id="d6b49-198">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-198">2</span></span>
+| <span data-ttu-id="d6b49-199">OOF</span><span class="sxs-lookup"><span data-stu-id="d6b49-199">oof</span></span>               | <span data-ttu-id="d6b49-200">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-200">3</span></span>
+| <span data-ttu-id="d6b49-201">воркинжелсевхере</span><span class="sxs-lookup"><span data-stu-id="d6b49-201">workingElsewhere</span></span>  | <span data-ttu-id="d6b49-202">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-202">4</span></span>
+| <span data-ttu-id="d6b49-203">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-203">unknown</span></span>           | <span data-ttu-id="d6b49-204">–1</span><span class="sxs-lookup"><span data-stu-id="d6b49-204">-1</span></span>
 
 
-### <a name="physicaladdresstype-values"></a><span data-ttu-id="02272-198">значения physicalAddressType</span><span class="sxs-lookup"><span data-stu-id="02272-198">physicalAddressType values</span></span>
+### <a name="physicaladdresstype-values"></a><span data-ttu-id="d6b49-205">значения physicalAddressType</span><span class="sxs-lookup"><span data-stu-id="d6b49-205">physicalAddressType values</span></span>
 
-| <span data-ttu-id="02272-199">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-199">Value</span></span>
+| <span data-ttu-id="d6b49-206">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-206">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-200">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-200">unknown</span></span> 
-| <span data-ttu-id="02272-201">страницу</span><span class="sxs-lookup"><span data-stu-id="02272-201">home</span></span>
-| <span data-ttu-id="02272-202">подразделения</span><span class="sxs-lookup"><span data-stu-id="02272-202">business</span></span> 
-| <span data-ttu-id="02272-203">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-203">other</span></span>
+| <span data-ttu-id="d6b49-207">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-207">unknown</span></span> 
+| <span data-ttu-id="d6b49-208">страницу</span><span class="sxs-lookup"><span data-stu-id="d6b49-208">home</span></span>
+| <span data-ttu-id="d6b49-209">подразделения</span><span class="sxs-lookup"><span data-stu-id="d6b49-209">business</span></span> 
+| <span data-ttu-id="d6b49-210">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-210">other</span></span>
 
 
-### <a name="attendeetype-values"></a><span data-ttu-id="02272-204">значения attendeeType</span><span class="sxs-lookup"><span data-stu-id="02272-204">attendeeType values</span></span>
+### <a name="attendeetype-values"></a><span data-ttu-id="d6b49-211">значения attendeeType</span><span class="sxs-lookup"><span data-stu-id="d6b49-211">attendeeType values</span></span>
 
-| <span data-ttu-id="02272-205">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-205">Value</span></span>
+| <span data-ttu-id="d6b49-212">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-212">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-206">Обязательный</span><span class="sxs-lookup"><span data-stu-id="02272-206">required</span></span>
-| <span data-ttu-id="02272-207">необязательный</span><span class="sxs-lookup"><span data-stu-id="02272-207">optional</span></span>
-| <span data-ttu-id="02272-208">resource</span><span class="sxs-lookup"><span data-stu-id="02272-208">resource</span></span>
+| <span data-ttu-id="d6b49-213">Обязательный</span><span class="sxs-lookup"><span data-stu-id="d6b49-213">required</span></span>
+| <span data-ttu-id="d6b49-214">необязательный</span><span class="sxs-lookup"><span data-stu-id="d6b49-214">optional</span></span>
+| <span data-ttu-id="d6b49-215">resource</span><span class="sxs-lookup"><span data-stu-id="d6b49-215">resource</span></span>
 
 
-### <a name="externalaudiencescope-values"></a><span data-ttu-id="02272-209">значения Екстерналаудиенцескопе</span><span class="sxs-lookup"><span data-stu-id="02272-209">externalAudienceScope values</span></span>
+### <a name="externalaudiencescope-values"></a><span data-ttu-id="d6b49-216">значения Екстерналаудиенцескопе</span><span class="sxs-lookup"><span data-stu-id="d6b49-216">externalAudienceScope values</span></span>
 
-| <span data-ttu-id="02272-210">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-210">Value</span></span>
+| <span data-ttu-id="d6b49-217">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-217">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-211">none</span><span class="sxs-lookup"><span data-stu-id="02272-211">none</span></span>
-| <span data-ttu-id="02272-212">Контактсонли</span><span class="sxs-lookup"><span data-stu-id="02272-212">contactsOnly</span></span>
-| <span data-ttu-id="02272-213">ко</span><span class="sxs-lookup"><span data-stu-id="02272-213">all</span></span>
+| <span data-ttu-id="d6b49-218">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-218">none</span></span>
+| <span data-ttu-id="d6b49-219">контактсонли</span><span class="sxs-lookup"><span data-stu-id="d6b49-219">contactsOnly</span></span>
+| <span data-ttu-id="d6b49-220">ко</span><span class="sxs-lookup"><span data-stu-id="d6b49-220">all</span></span>
 
 
-### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="02272-214">значения Аутоматикреплиесстатус</span><span class="sxs-lookup"><span data-stu-id="02272-214">automaticRepliesStatus values</span></span>
+### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="d6b49-221">значения Аутоматикреплиесстатус</span><span class="sxs-lookup"><span data-stu-id="d6b49-221">automaticRepliesStatus values</span></span>
 
-| <span data-ttu-id="02272-215">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-215">Value</span></span>
+| <span data-ttu-id="d6b49-222">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-222">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-216">активирован</span><span class="sxs-lookup"><span data-stu-id="02272-216">disabled</span></span>
-| <span data-ttu-id="02272-217">Alwaysenabled приложение</span><span class="sxs-lookup"><span data-stu-id="02272-217">alwaysEnabled</span></span>
-| <span data-ttu-id="02272-218">scheduled</span><span class="sxs-lookup"><span data-stu-id="02272-218">scheduled</span></span>
+| <span data-ttu-id="d6b49-223">активирован</span><span class="sxs-lookup"><span data-stu-id="d6b49-223">disabled</span></span>
+| <span data-ttu-id="d6b49-224">Alwaysenabled приложение</span><span class="sxs-lookup"><span data-stu-id="d6b49-224">alwaysEnabled</span></span>
+| <span data-ttu-id="d6b49-225">scheduled</span><span class="sxs-lookup"><span data-stu-id="d6b49-225">scheduled</span></span>
 
 
-### <a name="calendarcolor-values"></a><span data-ttu-id="02272-219">значения Календарколор</span><span class="sxs-lookup"><span data-stu-id="02272-219">calendarColor values</span></span>
+### <a name="calendarcolor-values"></a><span data-ttu-id="d6b49-226">значения Календарколор</span><span class="sxs-lookup"><span data-stu-id="d6b49-226">calendarColor values</span></span>
 
-| <span data-ttu-id="02272-220">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-220">Member</span></span>     | <span data-ttu-id="02272-221">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-221">Value</span></span>
+| <span data-ttu-id="d6b49-227">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-227">Member</span></span>     | <span data-ttu-id="d6b49-228">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-228">Value</span></span>
 |:-----------|:----------
-| <span data-ttu-id="02272-222">Авто</span><span class="sxs-lookup"><span data-stu-id="02272-222">auto</span></span>       | <span data-ttu-id="02272-223">–1</span><span class="sxs-lookup"><span data-stu-id="02272-223">-1</span></span>
-| <span data-ttu-id="02272-224">Лигхтблуе</span><span class="sxs-lookup"><span data-stu-id="02272-224">lightBlue</span></span>  | <span data-ttu-id="02272-225">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-225">0</span></span>
-| <span data-ttu-id="02272-226">Лигхтгрин</span><span class="sxs-lookup"><span data-stu-id="02272-226">lightGreen</span></span> | <span data-ttu-id="02272-227">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-227">1</span></span>
-| <span data-ttu-id="02272-228">Лигхторанже</span><span class="sxs-lookup"><span data-stu-id="02272-228">lightOrange</span></span>| <span data-ttu-id="02272-229">2</span><span class="sxs-lookup"><span data-stu-id="02272-229">2</span></span>
-| <span data-ttu-id="02272-230">Лигхтграй</span><span class="sxs-lookup"><span data-stu-id="02272-230">lightGray</span></span>  | <span data-ttu-id="02272-231">4</span><span class="sxs-lookup"><span data-stu-id="02272-231">3</span></span>
-| <span data-ttu-id="02272-232">Лигхтеллов</span><span class="sxs-lookup"><span data-stu-id="02272-232">lightYellow</span></span>| <span data-ttu-id="02272-233">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-233">4</span></span>
-| <span data-ttu-id="02272-234">Лигхттеал</span><span class="sxs-lookup"><span data-stu-id="02272-234">lightTeal</span></span>  | <span data-ttu-id="02272-235">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-235">5</span></span>
-| <span data-ttu-id="02272-236">Лигхтпинк</span><span class="sxs-lookup"><span data-stu-id="02272-236">lightPink</span></span>  | <span data-ttu-id="02272-237">6 </span><span class="sxs-lookup"><span data-stu-id="02272-237">6</span></span>
-| <span data-ttu-id="02272-238">Лигхтбровн</span><span class="sxs-lookup"><span data-stu-id="02272-238">lightBrown</span></span> | <span data-ttu-id="02272-239">7 </span><span class="sxs-lookup"><span data-stu-id="02272-239">7</span></span>
-| <span data-ttu-id="02272-240">Лигхтред</span><span class="sxs-lookup"><span data-stu-id="02272-240">lightRed</span></span>   | <span data-ttu-id="02272-241">8 </span><span class="sxs-lookup"><span data-stu-id="02272-241">8</span></span>
-| <span data-ttu-id="02272-242">Максколор</span><span class="sxs-lookup"><span data-stu-id="02272-242">maxColor</span></span>   | <span data-ttu-id="02272-243">9 </span><span class="sxs-lookup"><span data-stu-id="02272-243">9</span></span>
+| <span data-ttu-id="d6b49-229">Авто</span><span class="sxs-lookup"><span data-stu-id="d6b49-229">auto</span></span>       | <span data-ttu-id="d6b49-230">–1</span><span class="sxs-lookup"><span data-stu-id="d6b49-230">-1</span></span>
+| <span data-ttu-id="d6b49-231">лигхтблуе</span><span class="sxs-lookup"><span data-stu-id="d6b49-231">lightBlue</span></span>  | <span data-ttu-id="d6b49-232">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-232">0</span></span>
+| <span data-ttu-id="d6b49-233">лигхтгрин</span><span class="sxs-lookup"><span data-stu-id="d6b49-233">lightGreen</span></span> | <span data-ttu-id="d6b49-234">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-234">1</span></span>
+| <span data-ttu-id="d6b49-235">лигхторанже</span><span class="sxs-lookup"><span data-stu-id="d6b49-235">lightOrange</span></span>| <span data-ttu-id="d6b49-236">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-236">2</span></span>
+| <span data-ttu-id="d6b49-237">лигхтграй</span><span class="sxs-lookup"><span data-stu-id="d6b49-237">lightGray</span></span>  | <span data-ttu-id="d6b49-238">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-238">3</span></span>
+| <span data-ttu-id="d6b49-239">лигхтеллов</span><span class="sxs-lookup"><span data-stu-id="d6b49-239">lightYellow</span></span>| <span data-ttu-id="d6b49-240">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-240">4</span></span>
+| <span data-ttu-id="d6b49-241">лигхттеал</span><span class="sxs-lookup"><span data-stu-id="d6b49-241">lightTeal</span></span>  | <span data-ttu-id="d6b49-242">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-242">5</span></span>
+| <span data-ttu-id="d6b49-243">лигхтпинк</span><span class="sxs-lookup"><span data-stu-id="d6b49-243">lightPink</span></span>  | <span data-ttu-id="d6b49-244">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-244">6</span></span>
+| <span data-ttu-id="d6b49-245">лигхтбровн</span><span class="sxs-lookup"><span data-stu-id="d6b49-245">lightBrown</span></span> | <span data-ttu-id="d6b49-246">7 </span><span class="sxs-lookup"><span data-stu-id="d6b49-246">7</span></span>
+| <span data-ttu-id="d6b49-247">лигхтред</span><span class="sxs-lookup"><span data-stu-id="d6b49-247">lightRed</span></span>   | <span data-ttu-id="d6b49-248">8 </span><span class="sxs-lookup"><span data-stu-id="d6b49-248">8</span></span>
+| <span data-ttu-id="d6b49-249">максколор</span><span class="sxs-lookup"><span data-stu-id="d6b49-249">maxColor</span></span>   | <span data-ttu-id="d6b49-250">9 </span><span class="sxs-lookup"><span data-stu-id="d6b49-250">9</span></span>
 
 
-### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="02272-244">значения Едукатионсинчронизатионпрофилестате</span><span class="sxs-lookup"><span data-stu-id="02272-244">educationSynchronizationProfileState values</span></span>
+### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="d6b49-251">значения Едукатионсинчронизатионпрофилестате</span><span class="sxs-lookup"><span data-stu-id="d6b49-251">educationSynchronizationProfileState values</span></span>
 
-| <span data-ttu-id="02272-245">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-245">Member</span></span>     | <span data-ttu-id="02272-246">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-246">Value</span></span>
+| <span data-ttu-id="d6b49-252">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-252">Member</span></span>     | <span data-ttu-id="d6b49-253">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-253">Value</span></span>
 |:-----------|:----------
-| <span data-ttu-id="02272-247">удалять</span><span class="sxs-lookup"><span data-stu-id="02272-247">deleting</span></span>          | <span data-ttu-id="02272-248">2</span><span class="sxs-lookup"><span data-stu-id="02272-248">2</span></span>
-| <span data-ttu-id="02272-249">Делетионфаилед</span><span class="sxs-lookup"><span data-stu-id="02272-249">deletionFailed</span></span>    | <span data-ttu-id="02272-250">4</span><span class="sxs-lookup"><span data-stu-id="02272-250">3</span></span>
-| <span data-ttu-id="02272-251">Провисионингфаилед</span><span class="sxs-lookup"><span data-stu-id="02272-251">provisioningFailed</span></span> | <span data-ttu-id="02272-252">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-252">5</span></span>
-| <span data-ttu-id="02272-253">предоставляемое</span><span class="sxs-lookup"><span data-stu-id="02272-253">provisioned</span></span>        | <span data-ttu-id="02272-254">6 </span><span class="sxs-lookup"><span data-stu-id="02272-254">6</span></span>
-| <span data-ttu-id="02272-255">подготовки</span><span class="sxs-lookup"><span data-stu-id="02272-255">provisioning</span></span>       | <span data-ttu-id="02272-256">7 </span><span class="sxs-lookup"><span data-stu-id="02272-256">7</span></span>
-| <span data-ttu-id="02272-257">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-257">unknownFutureValue</span></span> | <span data-ttu-id="02272-258">8 </span><span class="sxs-lookup"><span data-stu-id="02272-258">8</span></span>
+| <span data-ttu-id="d6b49-254">удалять</span><span class="sxs-lookup"><span data-stu-id="d6b49-254">deleting</span></span>          | <span data-ttu-id="d6b49-255">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-255">2</span></span>
+| <span data-ttu-id="d6b49-256">делетионфаилед</span><span class="sxs-lookup"><span data-stu-id="d6b49-256">deletionFailed</span></span>    | <span data-ttu-id="d6b49-257">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-257">3</span></span>
+| <span data-ttu-id="d6b49-258">провисионингфаилед</span><span class="sxs-lookup"><span data-stu-id="d6b49-258">provisioningFailed</span></span> | <span data-ttu-id="d6b49-259">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-259">5</span></span>
+| <span data-ttu-id="d6b49-260">предоставляемое</span><span class="sxs-lookup"><span data-stu-id="d6b49-260">provisioned</span></span>        | <span data-ttu-id="d6b49-261">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-261">6</span></span>
+| <span data-ttu-id="d6b49-262">подготовки</span><span class="sxs-lookup"><span data-stu-id="d6b49-262">provisioning</span></span>       | <span data-ttu-id="d6b49-263">7 </span><span class="sxs-lookup"><span data-stu-id="d6b49-263">7</span></span>
+| <span data-ttu-id="d6b49-264">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-264">unknownFutureValue</span></span> | <span data-ttu-id="d6b49-265">8 </span><span class="sxs-lookup"><span data-stu-id="d6b49-265">8</span></span>
 
 
-### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="02272-259">значения Едукатионсинчронизатионстатус</span><span class="sxs-lookup"><span data-stu-id="02272-259">educationSynchronizationStatus values</span></span>
+### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="d6b49-266">значения Едукатионсинчронизатионстатус</span><span class="sxs-lookup"><span data-stu-id="d6b49-266">educationSynchronizationStatus values</span></span>
 
-| <span data-ttu-id="02272-260">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-260">Member</span></span>     | <span data-ttu-id="02272-261">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-261">Value</span></span>
+| <span data-ttu-id="d6b49-267">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-267">Member</span></span>     | <span data-ttu-id="d6b49-268">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-268">Value</span></span>
 |:-----------|:----------
-| <span data-ttu-id="02272-262">приостановлено</span><span class="sxs-lookup"><span data-stu-id="02272-262">paused</span></span>          | <span data-ttu-id="02272-263">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-263">0</span></span>
-| <span data-ttu-id="02272-264">inProgress</span><span class="sxs-lookup"><span data-stu-id="02272-264">inProgress</span></span>    | <span data-ttu-id="02272-265">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-265">1</span></span>
-| <span data-ttu-id="02272-266">success</span><span class="sxs-lookup"><span data-stu-id="02272-266">success</span></span> | <span data-ttu-id="02272-267">2</span><span class="sxs-lookup"><span data-stu-id="02272-267">2</span></span>
-| <span data-ttu-id="02272-268">error</span><span class="sxs-lookup"><span data-stu-id="02272-268">error</span></span>        | <span data-ttu-id="02272-269">4</span><span class="sxs-lookup"><span data-stu-id="02272-269">3</span></span>
-| <span data-ttu-id="02272-270">Валидатионеррор</span><span class="sxs-lookup"><span data-stu-id="02272-270">validationError</span></span> | <span data-ttu-id="02272-271">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-271">4</span></span>
-| <span data-ttu-id="02272-272">карантин</span><span class="sxs-lookup"><span data-stu-id="02272-272">quarantined</span></span>       | <span data-ttu-id="02272-273">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-273">5</span></span>
-| <span data-ttu-id="02272-274">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-274">unknownFutureValue</span></span> | <span data-ttu-id="02272-275">6 </span><span class="sxs-lookup"><span data-stu-id="02272-275">6</span></span>
+| <span data-ttu-id="d6b49-269">приостановлено</span><span class="sxs-lookup"><span data-stu-id="d6b49-269">paused</span></span>          | <span data-ttu-id="d6b49-270">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-270">0</span></span>
+| <span data-ttu-id="d6b49-271">inProgress</span><span class="sxs-lookup"><span data-stu-id="d6b49-271">inProgress</span></span>    | <span data-ttu-id="d6b49-272">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-272">1</span></span>
+| <span data-ttu-id="d6b49-273">success</span><span class="sxs-lookup"><span data-stu-id="d6b49-273">success</span></span> | <span data-ttu-id="d6b49-274">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-274">2</span></span>
+| <span data-ttu-id="d6b49-275">error</span><span class="sxs-lookup"><span data-stu-id="d6b49-275">error</span></span>        | <span data-ttu-id="d6b49-276">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-276">3</span></span>
+| <span data-ttu-id="d6b49-277">валидатионеррор</span><span class="sxs-lookup"><span data-stu-id="d6b49-277">validationError</span></span> | <span data-ttu-id="d6b49-278">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-278">4</span></span>
+| <span data-ttu-id="d6b49-279">карантин</span><span class="sxs-lookup"><span data-stu-id="d6b49-279">quarantined</span></span>       | <span data-ttu-id="d6b49-280">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-280">5</span></span>
+| <span data-ttu-id="d6b49-281">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-281">unknownFutureValue</span></span> | <span data-ttu-id="d6b49-282">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-282">6</span></span>
 
-### <a name="educationexternalsource-values"></a><span data-ttu-id="02272-276">значения Едукатионекстерналсаурце</span><span class="sxs-lookup"><span data-stu-id="02272-276">educationExternalSource values</span></span>
+### <a name="educationexternalsource-values"></a><span data-ttu-id="d6b49-283">значения Едукатионекстерналсаурце</span><span class="sxs-lookup"><span data-stu-id="d6b49-283">educationExternalSource values</span></span>
 
-| <span data-ttu-id="02272-277">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-277">Value</span></span>
+| <span data-ttu-id="d6b49-284">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-284">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-278">Гровелер</span><span class="sxs-lookup"><span data-stu-id="02272-278">sis</span></span>
-| <span data-ttu-id="02272-279">Вручную</span><span class="sxs-lookup"><span data-stu-id="02272-279">manual</span></span>
-| <span data-ttu-id="02272-280">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-280">unknownFutureValue</span></span>
+| <span data-ttu-id="d6b49-285">Гровелер</span><span class="sxs-lookup"><span data-stu-id="d6b49-285">sis</span></span>
+| <span data-ttu-id="d6b49-286">Вручную</span><span class="sxs-lookup"><span data-stu-id="d6b49-286">manual</span></span>
+| <span data-ttu-id="d6b49-287">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-287">unknownFutureValue</span></span>
 
 
-### <a name="educationgender-values"></a><span data-ttu-id="02272-281">значения Едукатионжендер</span><span class="sxs-lookup"><span data-stu-id="02272-281">educationGender values</span></span>
+### <a name="educationgender-values"></a><span data-ttu-id="d6b49-288">значения Едукатионжендер</span><span class="sxs-lookup"><span data-stu-id="d6b49-288">educationGender values</span></span>
 
-| <span data-ttu-id="02272-282">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-282">Value</span></span>
+| <span data-ttu-id="d6b49-289">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-289">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-283">женщина</span><span class="sxs-lookup"><span data-stu-id="02272-283">female</span></span>
-| <span data-ttu-id="02272-284">м</span><span class="sxs-lookup"><span data-stu-id="02272-284">male</span></span>
-| <span data-ttu-id="02272-285">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-285">other</span></span>
-| <span data-ttu-id="02272-286">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-286">unknownFutureValue</span></span>
+| <span data-ttu-id="d6b49-290">женщина</span><span class="sxs-lookup"><span data-stu-id="d6b49-290">female</span></span>
+| <span data-ttu-id="d6b49-291">м</span><span class="sxs-lookup"><span data-stu-id="d6b49-291">male</span></span>
+| <span data-ttu-id="d6b49-292">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-292">other</span></span>
+| <span data-ttu-id="d6b49-293">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-293">unknownFutureValue</span></span>
 
 
-### <a name="eventtype-values"></a><span data-ttu-id="02272-287">значения eventType</span><span class="sxs-lookup"><span data-stu-id="02272-287">eventType values</span></span>
+### <a name="eventtype-values"></a><span data-ttu-id="d6b49-294">значения eventType</span><span class="sxs-lookup"><span data-stu-id="d6b49-294">eventType values</span></span>
 
-| <span data-ttu-id="02272-288">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-288">Value</span></span>
+| <span data-ttu-id="d6b49-295">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-295">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-289">Синглеинстанце</span><span class="sxs-lookup"><span data-stu-id="02272-289">singleInstance</span></span>
-| <span data-ttu-id="02272-290">экземпляр</span><span class="sxs-lookup"><span data-stu-id="02272-290">occurrence</span></span>
-| <span data-ttu-id="02272-291">возникновения</span><span class="sxs-lookup"><span data-stu-id="02272-291">exception</span></span>
-| <span data-ttu-id="02272-292">Сериесмастер</span><span class="sxs-lookup"><span data-stu-id="02272-292">seriesMaster</span></span>
+| <span data-ttu-id="d6b49-296">синглеинстанце</span><span class="sxs-lookup"><span data-stu-id="d6b49-296">singleInstance</span></span>
+| <span data-ttu-id="d6b49-297">экземпляр</span><span class="sxs-lookup"><span data-stu-id="d6b49-297">occurrence</span></span>
+| <span data-ttu-id="d6b49-298">возникновения</span><span class="sxs-lookup"><span data-stu-id="d6b49-298">exception</span></span>
+| <span data-ttu-id="d6b49-299">сериесмастер</span><span class="sxs-lookup"><span data-stu-id="d6b49-299">seriesMaster</span></span>
 
 
-### <a name="sensitivity-values"></a><span data-ttu-id="02272-293">значения чувствительности</span><span class="sxs-lookup"><span data-stu-id="02272-293">sensitivity values</span></span>
+### <a name="sensitivity-values"></a><span data-ttu-id="d6b49-300">значения чувствительности</span><span class="sxs-lookup"><span data-stu-id="d6b49-300">sensitivity values</span></span>
 
-| <span data-ttu-id="02272-294">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-294">Value</span></span>
+| <span data-ttu-id="d6b49-301">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-301">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-295">обычный</span><span class="sxs-lookup"><span data-stu-id="02272-295">normal</span></span>
-| <span data-ttu-id="02272-296">personal</span><span class="sxs-lookup"><span data-stu-id="02272-296">personal</span></span>
-| <span data-ttu-id="02272-297">закрытый</span><span class="sxs-lookup"><span data-stu-id="02272-297">private</span></span>
-| <span data-ttu-id="02272-298">конфиденциальный</span><span class="sxs-lookup"><span data-stu-id="02272-298">confidential</span></span>
+| <span data-ttu-id="d6b49-302">обычный</span><span class="sxs-lookup"><span data-stu-id="d6b49-302">normal</span></span>
+| <span data-ttu-id="d6b49-303">personal</span><span class="sxs-lookup"><span data-stu-id="d6b49-303">personal</span></span>
+| <span data-ttu-id="d6b49-304">закрытый</span><span class="sxs-lookup"><span data-stu-id="d6b49-304">private</span></span>
+| <span data-ttu-id="d6b49-305">конфиденциальный</span><span class="sxs-lookup"><span data-stu-id="d6b49-305">confidential</span></span>
 
 
-### <a name="importance-values"></a><span data-ttu-id="02272-299">значения важности</span><span class="sxs-lookup"><span data-stu-id="02272-299">importance values</span></span>
+### <a name="importance-values"></a><span data-ttu-id="d6b49-306">значения важности</span><span class="sxs-lookup"><span data-stu-id="d6b49-306">importance values</span></span>
 
-| <span data-ttu-id="02272-300">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-300">Value</span></span>
+| <span data-ttu-id="d6b49-307">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-307">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-301">потребление</span><span class="sxs-lookup"><span data-stu-id="02272-301">low</span></span>
-| <span data-ttu-id="02272-302">обычный</span><span class="sxs-lookup"><span data-stu-id="02272-302">normal</span></span>
-| <span data-ttu-id="02272-303">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="02272-303">high</span></span>
+| <span data-ttu-id="d6b49-308">потребление</span><span class="sxs-lookup"><span data-stu-id="d6b49-308">low</span></span>
+| <span data-ttu-id="d6b49-309">обычный</span><span class="sxs-lookup"><span data-stu-id="d6b49-309">normal</span></span>
+| <span data-ttu-id="d6b49-310">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="d6b49-310">high</span></span>
 
 
-### <a name="educationuserrole-values"></a><span data-ttu-id="02272-304">значения Едукатионусерроле</span><span class="sxs-lookup"><span data-stu-id="02272-304">educationUserRole values</span></span>
-| <span data-ttu-id="02272-305">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-305">Value</span></span>
+### <a name="educationuserrole-values"></a><span data-ttu-id="d6b49-311">значения Едукатионусерроле</span><span class="sxs-lookup"><span data-stu-id="d6b49-311">educationUserRole values</span></span>
+| <span data-ttu-id="d6b49-312">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-312">Value</span></span>
 |:---------------------
-| <span data-ttu-id="02272-306">student</span><span class="sxs-lookup"><span data-stu-id="02272-306">student</span></span>
-| <span data-ttu-id="02272-307">teacher</span><span class="sxs-lookup"><span data-stu-id="02272-307">teacher</span></span>
-| <span data-ttu-id="02272-308">преподавателей</span><span class="sxs-lookup"><span data-stu-id="02272-308">faculty</span></span>
+| <span data-ttu-id="d6b49-313">student</span><span class="sxs-lookup"><span data-stu-id="d6b49-313">student</span></span>
+| <span data-ttu-id="d6b49-314">teacher</span><span class="sxs-lookup"><span data-stu-id="d6b49-314">teacher</span></span>
+| <span data-ttu-id="d6b49-315">преподавателей</span><span class="sxs-lookup"><span data-stu-id="d6b49-315">faculty</span></span>
 
 
-### <a name="meetingmessagetype-values"></a><span data-ttu-id="02272-309">значения Митингмессажетипе</span><span class="sxs-lookup"><span data-stu-id="02272-309">meetingMessageType values</span></span>
+### <a name="meetingmessagetype-values"></a><span data-ttu-id="d6b49-316">значения Митингмессажетипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-316">meetingMessageType values</span></span>
 
-| <span data-ttu-id="02272-310">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-310">Value</span></span>
+| <span data-ttu-id="d6b49-317">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-317">Value</span></span>
 |:-----------------
-| <span data-ttu-id="02272-311">none</span><span class="sxs-lookup"><span data-stu-id="02272-311">none</span></span>
-| <span data-ttu-id="02272-312">Свойство meetingrequest</span><span class="sxs-lookup"><span data-stu-id="02272-312">meetingRequest</span></span>
-| <span data-ttu-id="02272-313">Митингканцеллед</span><span class="sxs-lookup"><span data-stu-id="02272-313">meetingCancelled</span></span>
-| <span data-ttu-id="02272-314">Митингакцептед</span><span class="sxs-lookup"><span data-stu-id="02272-314">meetingAccepted</span></span>
-| <span data-ttu-id="02272-315">Митингтентативелякцептед</span><span class="sxs-lookup"><span data-stu-id="02272-315">meetingTentativelyAccepted</span></span>
-| <span data-ttu-id="02272-316">Митингдеклинед</span><span class="sxs-lookup"><span data-stu-id="02272-316">meetingDeclined</span></span>
+| <span data-ttu-id="d6b49-318">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-318">none</span></span>
+| <span data-ttu-id="d6b49-319">Свойство meetingrequest</span><span class="sxs-lookup"><span data-stu-id="d6b49-319">meetingRequest</span></span>
+| <span data-ttu-id="d6b49-320">митингканцеллед</span><span class="sxs-lookup"><span data-stu-id="d6b49-320">meetingCancelled</span></span>
+| <span data-ttu-id="d6b49-321">митингакцептед</span><span class="sxs-lookup"><span data-stu-id="d6b49-321">meetingAccepted</span></span>
+| <span data-ttu-id="d6b49-322">митингтентативелякцептед</span><span class="sxs-lookup"><span data-stu-id="d6b49-322">meetingTentativelyAccepted</span></span>
+| <span data-ttu-id="d6b49-323">митингдеклинед</span><span class="sxs-lookup"><span data-stu-id="d6b49-323">meetingDeclined</span></span>
 
 
-### <a name="followupflagstatus-values"></a><span data-ttu-id="02272-317">значения Фолловупфлагстатус</span><span class="sxs-lookup"><span data-stu-id="02272-317">followupFlagStatus values</span></span>
+### <a name="followupflagstatus-values"></a><span data-ttu-id="d6b49-324">значения Фолловупфлагстатус</span><span class="sxs-lookup"><span data-stu-id="d6b49-324">followupFlagStatus values</span></span>
 
-| <span data-ttu-id="02272-318">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-318">Value</span></span>
+| <span data-ttu-id="d6b49-325">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-325">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-319">Нотфлагжед</span><span class="sxs-lookup"><span data-stu-id="02272-319">notFlagged</span></span>
-| <span data-ttu-id="02272-320">complete</span><span class="sxs-lookup"><span data-stu-id="02272-320">complete</span></span>
-| <span data-ttu-id="02272-321">отмеченные</span><span class="sxs-lookup"><span data-stu-id="02272-321">flagged</span></span>
+| <span data-ttu-id="d6b49-326">нотфлагжед</span><span class="sxs-lookup"><span data-stu-id="d6b49-326">notFlagged</span></span>
+| <span data-ttu-id="d6b49-327">complete</span><span class="sxs-lookup"><span data-stu-id="d6b49-327">complete</span></span>
+| <span data-ttu-id="d6b49-328">отмеченные</span><span class="sxs-lookup"><span data-stu-id="d6b49-328">flagged</span></span>
 
 
-### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="02272-322">значения Инференцеклассификатионтипе</span><span class="sxs-lookup"><span data-stu-id="02272-322">inferenceClassificationType values</span></span>
+### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="d6b49-329">значения Инференцеклассификатионтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-329">inferenceClassificationType values</span></span>
 
-| <span data-ttu-id="02272-323">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-323">Value</span></span>
+| <span data-ttu-id="d6b49-330">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-330">Value</span></span>
 |:-----------------
-| <span data-ttu-id="02272-324">связаны</span><span class="sxs-lookup"><span data-stu-id="02272-324">focused</span></span>
-| <span data-ttu-id="02272-325">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-325">other</span></span>
+| <span data-ttu-id="d6b49-331">связаны</span><span class="sxs-lookup"><span data-stu-id="d6b49-331">focused</span></span>
+| <span data-ttu-id="d6b49-332">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-332">other</span></span>
 
 
-### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="02272-326">значения Иоснотификатионалерттипе</span><span class="sxs-lookup"><span data-stu-id="02272-326">iosNotificationAlertType values</span></span>
+### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="d6b49-333">значения Иоснотификатионалерттипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-333">iosNotificationAlertType values</span></span>
 
-| <span data-ttu-id="02272-327">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-327">Value</span></span>
+| <span data-ttu-id="d6b49-334">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-334">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-328">Девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="02272-328">deviceDefault</span></span>
-| <span data-ttu-id="02272-329">заголовок</span><span class="sxs-lookup"><span data-stu-id="02272-329">banner</span></span>
-| <span data-ttu-id="02272-330">модаль</span><span class="sxs-lookup"><span data-stu-id="02272-330">modal</span></span>
-| <span data-ttu-id="02272-331">none</span><span class="sxs-lookup"><span data-stu-id="02272-331">none</span></span>
+| <span data-ttu-id="d6b49-335">девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="d6b49-335">deviceDefault</span></span>
+| <span data-ttu-id="d6b49-336">заголовок</span><span class="sxs-lookup"><span data-stu-id="d6b49-336">banner</span></span>
+| <span data-ttu-id="d6b49-337">модаль</span><span class="sxs-lookup"><span data-stu-id="d6b49-337">modal</span></span>
+| <span data-ttu-id="d6b49-338">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-338">none</span></span>
 
-### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="02272-332">значения Девицеенроллментфаилуререасон</span><span class="sxs-lookup"><span data-stu-id="02272-332">deviceEnrollmentFailureReason values</span></span>
+### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="d6b49-339">значения Девицеенроллментфаилуререасон</span><span class="sxs-lookup"><span data-stu-id="d6b49-339">deviceEnrollmentFailureReason values</span></span>
 
-| <span data-ttu-id="02272-333">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-333">Value</span></span>
+| <span data-ttu-id="d6b49-340">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-340">Value</span></span>
 |:-------------
-| <span data-ttu-id="02272-334">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-334">unknown</span></span>
-| <span data-ttu-id="02272-335">проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="02272-335">authentication</span></span>
-| <span data-ttu-id="02272-336">проверке</span><span class="sxs-lookup"><span data-stu-id="02272-336">authorization</span></span>
-| <span data-ttu-id="02272-337">Аккаунтвалидатион</span><span class="sxs-lookup"><span data-stu-id="02272-337">accountValidation</span></span>
-| <span data-ttu-id="02272-338">Усервалидатион</span><span class="sxs-lookup"><span data-stu-id="02272-338">userValidation</span></span>
-| <span data-ttu-id="02272-339">Девиценотсуппортед</span><span class="sxs-lookup"><span data-stu-id="02272-339">deviceNotSupported</span></span>
-| <span data-ttu-id="02272-340">необслуживание</span><span class="sxs-lookup"><span data-stu-id="02272-340">inMaintenance</span></span>
-| <span data-ttu-id="02272-341">Бадрекуест</span><span class="sxs-lookup"><span data-stu-id="02272-341">badRequest</span></span>
-| <span data-ttu-id="02272-342">Феатуренотсуппортед</span><span class="sxs-lookup"><span data-stu-id="02272-342">featureNotSupported</span></span>
-| <span data-ttu-id="02272-343">Енроллментрестриктионсенфорцед</span><span class="sxs-lookup"><span data-stu-id="02272-343">enrollmentRestrictionsEnforced</span></span>
-| <span data-ttu-id="02272-344">Клиентдисконнектед</span><span class="sxs-lookup"><span data-stu-id="02272-344">clientDisconnected</span></span>
+| <span data-ttu-id="d6b49-341">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-341">unknown</span></span>
+| <span data-ttu-id="d6b49-342">проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="d6b49-342">authentication</span></span>
+| <span data-ttu-id="d6b49-343">проверке</span><span class="sxs-lookup"><span data-stu-id="d6b49-343">authorization</span></span>
+| <span data-ttu-id="d6b49-344">аккаунтвалидатион</span><span class="sxs-lookup"><span data-stu-id="d6b49-344">accountValidation</span></span>
+| <span data-ttu-id="d6b49-345">усервалидатион</span><span class="sxs-lookup"><span data-stu-id="d6b49-345">userValidation</span></span>
+| <span data-ttu-id="d6b49-346">девиценотсуппортед</span><span class="sxs-lookup"><span data-stu-id="d6b49-346">deviceNotSupported</span></span>
+| <span data-ttu-id="d6b49-347">необслуживание</span><span class="sxs-lookup"><span data-stu-id="d6b49-347">inMaintenance</span></span>
+| <span data-ttu-id="d6b49-348">бадрекуест</span><span class="sxs-lookup"><span data-stu-id="d6b49-348">badRequest</span></span>
+| <span data-ttu-id="d6b49-349">феатуренотсуппортед</span><span class="sxs-lookup"><span data-stu-id="d6b49-349">featureNotSupported</span></span>
+| <span data-ttu-id="d6b49-350">енроллментрестриктионсенфорцед</span><span class="sxs-lookup"><span data-stu-id="d6b49-350">enrollmentRestrictionsEnforced</span></span>
+| <span data-ttu-id="d6b49-351">клиентдисконнектед</span><span class="sxs-lookup"><span data-stu-id="d6b49-351">clientDisconnected</span></span>
 
 
-### <a name="bodytype-values"></a><span data-ttu-id="02272-345">значения bodyType</span><span class="sxs-lookup"><span data-stu-id="02272-345">bodyType values</span></span>
-| <span data-ttu-id="02272-346">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-346">Value</span></span>
+### <a name="bodytype-values"></a><span data-ttu-id="d6b49-352">значения bodyType</span><span class="sxs-lookup"><span data-stu-id="d6b49-352">bodyType values</span></span>
+| <span data-ttu-id="d6b49-353">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-353">Value</span></span>
 |:---------
-| <span data-ttu-id="02272-347">текст</span><span class="sxs-lookup"><span data-stu-id="02272-347">text</span></span>
-| <span data-ttu-id="02272-348">html</span><span class="sxs-lookup"><span data-stu-id="02272-348">html</span></span>
+| <span data-ttu-id="d6b49-354">текст</span><span class="sxs-lookup"><span data-stu-id="d6b49-354">text</span></span>
+| <span data-ttu-id="d6b49-355">html</span><span class="sxs-lookup"><span data-stu-id="d6b49-355">html</span></span>
 
 
-### <a name="locationtype-values"></a><span data-ttu-id="02272-349">значения locationType</span><span class="sxs-lookup"><span data-stu-id="02272-349">locationType values</span></span>
+### <a name="locationtype-values"></a><span data-ttu-id="d6b49-356">значения locationType</span><span class="sxs-lookup"><span data-stu-id="d6b49-356">locationType values</span></span>
 
-| <span data-ttu-id="02272-350">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-350">Value</span></span>
+| <span data-ttu-id="d6b49-357">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-357">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-351">умолчани</span><span class="sxs-lookup"><span data-stu-id="02272-351">default</span></span>
-| <span data-ttu-id="02272-352">Конференцерум</span><span class="sxs-lookup"><span data-stu-id="02272-352">conferenceRoom</span></span>
-| <span data-ttu-id="02272-353">homeAddress</span><span class="sxs-lookup"><span data-stu-id="02272-353">homeAddress</span></span>
-| <span data-ttu-id="02272-354">businessAddress</span><span class="sxs-lookup"><span data-stu-id="02272-354">businessAddress</span></span>
-| <span data-ttu-id="02272-355">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="02272-355">geoCoordinates</span></span>
-| <span data-ttu-id="02272-356">streetAddress</span><span class="sxs-lookup"><span data-stu-id="02272-356">streetAddress</span></span>
-| <span data-ttu-id="02272-357">гостинич</span><span class="sxs-lookup"><span data-stu-id="02272-357">hotel</span></span>
-| <span data-ttu-id="02272-358">отзыв</span><span class="sxs-lookup"><span data-stu-id="02272-358">restaurant</span></span>
-| <span data-ttu-id="02272-359">Локалбусинесс</span><span class="sxs-lookup"><span data-stu-id="02272-359">localBusiness</span></span>
-| <span data-ttu-id="02272-360">postalAddress</span><span class="sxs-lookup"><span data-stu-id="02272-360">postalAddress</span></span>
+| <span data-ttu-id="d6b49-358">умолчани</span><span class="sxs-lookup"><span data-stu-id="d6b49-358">default</span></span>
+| <span data-ttu-id="d6b49-359">конференцерум</span><span class="sxs-lookup"><span data-stu-id="d6b49-359">conferenceRoom</span></span>
+| <span data-ttu-id="d6b49-360">homeAddress</span><span class="sxs-lookup"><span data-stu-id="d6b49-360">homeAddress</span></span>
+| <span data-ttu-id="d6b49-361">businessAddress</span><span class="sxs-lookup"><span data-stu-id="d6b49-361">businessAddress</span></span>
+| <span data-ttu-id="d6b49-362">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="d6b49-362">geoCoordinates</span></span>
+| <span data-ttu-id="d6b49-363">streetAddress</span><span class="sxs-lookup"><span data-stu-id="d6b49-363">streetAddress</span></span>
+| <span data-ttu-id="d6b49-364">гостинич</span><span class="sxs-lookup"><span data-stu-id="d6b49-364">hotel</span></span>
+| <span data-ttu-id="d6b49-365">отзыв</span><span class="sxs-lookup"><span data-stu-id="d6b49-365">restaurant</span></span>
+| <span data-ttu-id="d6b49-366">локалбусинесс</span><span class="sxs-lookup"><span data-stu-id="d6b49-366">localBusiness</span></span>
+| <span data-ttu-id="d6b49-367">postalAddress</span><span class="sxs-lookup"><span data-stu-id="d6b49-367">postalAddress</span></span>
 
-### <a name="locationuniqueidtype-values"></a><span data-ttu-id="02272-361">значения Локатионуникуеидтипе</span><span class="sxs-lookup"><span data-stu-id="02272-361">locationUniqueIdType values</span></span>
+### <a name="locationuniqueidtype-values"></a><span data-ttu-id="d6b49-368">значения Локатионуникуеидтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-368">locationUniqueIdType values</span></span>
 
-| <span data-ttu-id="02272-362">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-362">Value</span></span>
+| <span data-ttu-id="d6b49-369">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-369">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-363">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-363">unknown</span></span>
-| <span data-ttu-id="02272-364">Локатионсторе</span><span class="sxs-lookup"><span data-stu-id="02272-364">locationStore</span></span>
-| <span data-ttu-id="02272-365">каталога</span><span class="sxs-lookup"><span data-stu-id="02272-365">directory</span></span>
-| <span data-ttu-id="02272-366">закрытый</span><span class="sxs-lookup"><span data-stu-id="02272-366">private</span></span>
-| <span data-ttu-id="02272-367">Bing</span><span class="sxs-lookup"><span data-stu-id="02272-367">bing</span></span>
+| <span data-ttu-id="d6b49-370">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-370">unknown</span></span>
+| <span data-ttu-id="d6b49-371">локатионсторе</span><span class="sxs-lookup"><span data-stu-id="d6b49-371">locationStore</span></span>
+| <span data-ttu-id="d6b49-372">каталога</span><span class="sxs-lookup"><span data-stu-id="d6b49-372">directory</span></span>
+| <span data-ttu-id="d6b49-373">закрытый</span><span class="sxs-lookup"><span data-stu-id="d6b49-373">private</span></span>
+| <span data-ttu-id="d6b49-374">Bing</span><span class="sxs-lookup"><span data-stu-id="d6b49-374">bing</span></span>
 
 
-### <a name="messageactionflag-values"></a><span data-ttu-id="02272-368">значения Мессажеактионфлаг</span><span class="sxs-lookup"><span data-stu-id="02272-368">messageActionFlag values</span></span>
+### <a name="messageactionflag-values"></a><span data-ttu-id="d6b49-375">значения Мессажеактионфлаг</span><span class="sxs-lookup"><span data-stu-id="d6b49-375">messageActionFlag values</span></span>
 
-| <span data-ttu-id="02272-369">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-369">Value</span></span>
+| <span data-ttu-id="d6b49-376">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-376">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-370">любой</span><span class="sxs-lookup"><span data-stu-id="02272-370">any</span></span>
-| <span data-ttu-id="02272-371">call</span><span class="sxs-lookup"><span data-stu-id="02272-371">call</span></span>
-| <span data-ttu-id="02272-372">Донотфорвард</span><span class="sxs-lookup"><span data-stu-id="02272-372">doNotForward</span></span>
-| <span data-ttu-id="02272-373">Следующего</span><span class="sxs-lookup"><span data-stu-id="02272-373">followUp</span></span>
-| <span data-ttu-id="02272-374">сведению</span><span class="sxs-lookup"><span data-stu-id="02272-374">fyi</span></span>
-| <span data-ttu-id="02272-375">передачи</span><span class="sxs-lookup"><span data-stu-id="02272-375">forward</span></span>
-| <span data-ttu-id="02272-376">Нореспонсенецессари</span><span class="sxs-lookup"><span data-stu-id="02272-376">noResponseNecessary</span></span>
-| <span data-ttu-id="02272-377">прочитан</span><span class="sxs-lookup"><span data-stu-id="02272-377">read</span></span>
-| <span data-ttu-id="02272-378">них</span><span class="sxs-lookup"><span data-stu-id="02272-378">reply</span></span>
-| <span data-ttu-id="02272-379">Реплитоалл</span><span class="sxs-lookup"><span data-stu-id="02272-379">replyToAll</span></span>
-| <span data-ttu-id="02272-380">Смотрите</span><span class="sxs-lookup"><span data-stu-id="02272-380">review</span></span>
+| <span data-ttu-id="d6b49-377">любой</span><span class="sxs-lookup"><span data-stu-id="d6b49-377">any</span></span>
+| <span data-ttu-id="d6b49-378">call</span><span class="sxs-lookup"><span data-stu-id="d6b49-378">call</span></span>
+| <span data-ttu-id="d6b49-379">донотфорвард</span><span class="sxs-lookup"><span data-stu-id="d6b49-379">doNotForward</span></span>
+| <span data-ttu-id="d6b49-380">Следующего</span><span class="sxs-lookup"><span data-stu-id="d6b49-380">followUp</span></span>
+| <span data-ttu-id="d6b49-381">сведению</span><span class="sxs-lookup"><span data-stu-id="d6b49-381">fyi</span></span>
+| <span data-ttu-id="d6b49-382">передачи</span><span class="sxs-lookup"><span data-stu-id="d6b49-382">forward</span></span>
+| <span data-ttu-id="d6b49-383">нореспонсенецессари</span><span class="sxs-lookup"><span data-stu-id="d6b49-383">noResponseNecessary</span></span>
+| <span data-ttu-id="d6b49-384">прочитан</span><span class="sxs-lookup"><span data-stu-id="d6b49-384">read</span></span>
+| <span data-ttu-id="d6b49-385">них</span><span class="sxs-lookup"><span data-stu-id="d6b49-385">reply</span></span>
+| <span data-ttu-id="d6b49-386">реплитоалл</span><span class="sxs-lookup"><span data-stu-id="d6b49-386">replyToAll</span></span>
+| <span data-ttu-id="d6b49-387">Смотрите</span><span class="sxs-lookup"><span data-stu-id="d6b49-387">review</span></span>
 
 
-### <a name="onenoteuserrole-values"></a><span data-ttu-id="02272-381">значения Оненотеусерроле</span><span class="sxs-lookup"><span data-stu-id="02272-381">onenoteUserRole values</span></span>
+### <a name="onenoteuserrole-values"></a><span data-ttu-id="d6b49-388">значения Оненотеусерроле</span><span class="sxs-lookup"><span data-stu-id="d6b49-388">onenoteUserRole values</span></span>
 
-| <span data-ttu-id="02272-382">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-382">Member</span></span>      | <span data-ttu-id="02272-383">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-383">Value</span></span>
+| <span data-ttu-id="d6b49-389">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-389">Member</span></span>      | <span data-ttu-id="d6b49-390">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-390">Value</span></span>
 |:------------|:------------
-| <span data-ttu-id="02272-384">Owner</span><span class="sxs-lookup"><span data-stu-id="02272-384">Owner</span></span>       | <span data-ttu-id="02272-385">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-385">0</span></span>
-| <span data-ttu-id="02272-386">Участник</span><span class="sxs-lookup"><span data-stu-id="02272-386">Contributor</span></span> | <span data-ttu-id="02272-387">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-387">1</span></span>
-| <span data-ttu-id="02272-388">Средств</span><span class="sxs-lookup"><span data-stu-id="02272-388">Reader</span></span>      | <span data-ttu-id="02272-389">2</span><span class="sxs-lookup"><span data-stu-id="02272-389">2</span></span>
-| <span data-ttu-id="02272-390">Нет</span><span class="sxs-lookup"><span data-stu-id="02272-390">None</span></span>        | <span data-ttu-id="02272-391">–1</span><span class="sxs-lookup"><span data-stu-id="02272-391">-1</span></span>
+| <span data-ttu-id="d6b49-391">Owner</span><span class="sxs-lookup"><span data-stu-id="d6b49-391">Owner</span></span>       | <span data-ttu-id="d6b49-392">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-392">0</span></span>
+| <span data-ttu-id="d6b49-393">Участник</span><span class="sxs-lookup"><span data-stu-id="d6b49-393">Contributor</span></span> | <span data-ttu-id="d6b49-394">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-394">1</span></span>
+| <span data-ttu-id="d6b49-395">Средств</span><span class="sxs-lookup"><span data-stu-id="d6b49-395">Reader</span></span>      | <span data-ttu-id="d6b49-396">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-396">2</span></span>
+| <span data-ttu-id="d6b49-397">Нет</span><span class="sxs-lookup"><span data-stu-id="d6b49-397">None</span></span>        | <span data-ttu-id="d6b49-398">–1</span><span class="sxs-lookup"><span data-stu-id="d6b49-398">-1</span></span>
 
 
-### <a name="operationstatus-values"></a><span data-ttu-id="02272-392">значения Оператионстатус</span><span class="sxs-lookup"><span data-stu-id="02272-392">operationStatus values</span></span>
+### <a name="operationstatus-values"></a><span data-ttu-id="d6b49-399">значения Оператионстатус</span><span class="sxs-lookup"><span data-stu-id="d6b49-399">operationStatus values</span></span>
 
-| <span data-ttu-id="02272-393">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-393">Value</span></span>
+| <span data-ttu-id="d6b49-400">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-400">Value</span></span>
 |:-----------------
-| <span data-ttu-id="02272-394">NotStarted</span><span class="sxs-lookup"><span data-stu-id="02272-394">NotStarted</span></span>
-| <span data-ttu-id="02272-395">Запущено</span><span class="sxs-lookup"><span data-stu-id="02272-395">Running</span></span>
-| <span data-ttu-id="02272-396">Completed</span><span class="sxs-lookup"><span data-stu-id="02272-396">Completed</span></span>
-| <span data-ttu-id="02272-397">Failed</span><span class="sxs-lookup"><span data-stu-id="02272-397">Failed</span></span>
+| <span data-ttu-id="d6b49-401">NotStarted</span><span class="sxs-lookup"><span data-stu-id="d6b49-401">NotStarted</span></span>
+| <span data-ttu-id="d6b49-402">Запущено</span><span class="sxs-lookup"><span data-stu-id="d6b49-402">Running</span></span>
+| <span data-ttu-id="d6b49-403">Completed</span><span class="sxs-lookup"><span data-stu-id="d6b49-403">Completed</span></span>
+| <span data-ttu-id="d6b49-404">Failed</span><span class="sxs-lookup"><span data-stu-id="d6b49-404">Failed</span></span>
 
 
-### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="02272-398">значения Оненотепатчактионтипе</span><span class="sxs-lookup"><span data-stu-id="02272-398">onenotePatchActionType values</span></span>
+### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="d6b49-405">значения Оненотепатчактионтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-405">onenotePatchActionType values</span></span>
 
-| <span data-ttu-id="02272-399">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-399">Value</span></span>
+| <span data-ttu-id="d6b49-406">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-406">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-400">Replace</span><span class="sxs-lookup"><span data-stu-id="02272-400">Replace</span></span>
-| <span data-ttu-id="02272-401">Error</span><span class="sxs-lookup"><span data-stu-id="02272-401">Append</span></span>
-| <span data-ttu-id="02272-402">Удалить</span><span class="sxs-lookup"><span data-stu-id="02272-402">Delete</span></span>
-| <span data-ttu-id="02272-403">Вставка</span><span class="sxs-lookup"><span data-stu-id="02272-403">Insert</span></span>
-| <span data-ttu-id="02272-404">Prepend</span><span class="sxs-lookup"><span data-stu-id="02272-404">Prepend</span></span>
+| <span data-ttu-id="d6b49-407">Replace</span><span class="sxs-lookup"><span data-stu-id="d6b49-407">Replace</span></span>
+| <span data-ttu-id="d6b49-408">Error</span><span class="sxs-lookup"><span data-stu-id="d6b49-408">Append</span></span>
+| <span data-ttu-id="d6b49-409">Удалить</span><span class="sxs-lookup"><span data-stu-id="d6b49-409">Delete</span></span>
+| <span data-ttu-id="d6b49-410">Вставка</span><span class="sxs-lookup"><span data-stu-id="d6b49-410">Insert</span></span>
+| <span data-ttu-id="d6b49-411">Prepend</span><span class="sxs-lookup"><span data-stu-id="d6b49-411">Prepend</span></span>
 
-### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="02272-405">значения Оненотепатчинсертпоситион</span><span class="sxs-lookup"><span data-stu-id="02272-405">onenotePatchInsertPosition values</span></span>
+### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="d6b49-412">значения Оненотепатчинсертпоситион</span><span class="sxs-lookup"><span data-stu-id="d6b49-412">onenotePatchInsertPosition values</span></span>
 
-| <span data-ttu-id="02272-406">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-406">Value</span></span>
+| <span data-ttu-id="d6b49-413">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-413">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-407">После</span><span class="sxs-lookup"><span data-stu-id="02272-407">After</span></span>
-| <span data-ttu-id="02272-408">До</span><span class="sxs-lookup"><span data-stu-id="02272-408">Before</span></span>
+| <span data-ttu-id="d6b49-414">После</span><span class="sxs-lookup"><span data-stu-id="d6b49-414">After</span></span>
+| <span data-ttu-id="d6b49-415">До</span><span class="sxs-lookup"><span data-stu-id="d6b49-415">Before</span></span>
 
 
-### <a name="phonetype-values"></a><span data-ttu-id="02272-409">значения Фонетипе</span><span class="sxs-lookup"><span data-stu-id="02272-409">phoneType values</span></span>
+### <a name="phonetype-values"></a><span data-ttu-id="d6b49-416">значения Фонетипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-416">phoneType values</span></span>
 
-| <span data-ttu-id="02272-410">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-410">Value</span></span>
+| <span data-ttu-id="d6b49-417">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-417">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-411">страницу</span><span class="sxs-lookup"><span data-stu-id="02272-411">home</span></span>
-| <span data-ttu-id="02272-412">подразделения</span><span class="sxs-lookup"><span data-stu-id="02272-412">business</span></span>
-| <span data-ttu-id="02272-413">связь</span><span class="sxs-lookup"><span data-stu-id="02272-413">mobile</span></span>
-| <span data-ttu-id="02272-414">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-414">other</span></span>
-| <span data-ttu-id="02272-415">Помощник по</span><span class="sxs-lookup"><span data-stu-id="02272-415">assistant</span></span>
-| <span data-ttu-id="02272-416">Хомефакс</span><span class="sxs-lookup"><span data-stu-id="02272-416">homeFax</span></span>
-| <span data-ttu-id="02272-417">Бусинессфакс</span><span class="sxs-lookup"><span data-stu-id="02272-417">businessFax</span></span>
-| <span data-ttu-id="02272-418">otherFax</span><span class="sxs-lookup"><span data-stu-id="02272-418">otherFax</span></span>
-| <span data-ttu-id="02272-419">pager</span><span class="sxs-lookup"><span data-stu-id="02272-419">pager</span></span>
-| <span data-ttu-id="02272-420">сети</span><span class="sxs-lookup"><span data-stu-id="02272-420">radio</span></span>
+| <span data-ttu-id="d6b49-418">страницу</span><span class="sxs-lookup"><span data-stu-id="d6b49-418">home</span></span>
+| <span data-ttu-id="d6b49-419">подразделения</span><span class="sxs-lookup"><span data-stu-id="d6b49-419">business</span></span>
+| <span data-ttu-id="d6b49-420">связь</span><span class="sxs-lookup"><span data-stu-id="d6b49-420">mobile</span></span>
+| <span data-ttu-id="d6b49-421">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-421">other</span></span>
+| <span data-ttu-id="d6b49-422">Помощник по</span><span class="sxs-lookup"><span data-stu-id="d6b49-422">assistant</span></span>
+| <span data-ttu-id="d6b49-423">хомефакс</span><span class="sxs-lookup"><span data-stu-id="d6b49-423">homeFax</span></span>
+| <span data-ttu-id="d6b49-424">бусинессфакс</span><span class="sxs-lookup"><span data-stu-id="d6b49-424">businessFax</span></span>
+| <span data-ttu-id="d6b49-425">otherFax</span><span class="sxs-lookup"><span data-stu-id="d6b49-425">otherFax</span></span>
+| <span data-ttu-id="d6b49-426">pager</span><span class="sxs-lookup"><span data-stu-id="d6b49-426">pager</span></span>
+| <span data-ttu-id="d6b49-427">сети</span><span class="sxs-lookup"><span data-stu-id="d6b49-427">radio</span></span>
 
 
-### <a name="plannerpreviewtype-values"></a><span data-ttu-id="02272-421">значения Планнерпревиевтипе</span><span class="sxs-lookup"><span data-stu-id="02272-421">plannerPreviewType values</span></span>
+### <a name="plannerpreviewtype-values"></a><span data-ttu-id="d6b49-428">значения Планнерпревиевтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-428">plannerPreviewType values</span></span>
 
-| <span data-ttu-id="02272-422">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-422">Value</span></span>
+| <span data-ttu-id="d6b49-429">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-429">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-423">Автоматически</span><span class="sxs-lookup"><span data-stu-id="02272-423">automatic</span></span>
-| <span data-ttu-id="02272-424">непредварительный Просмотр</span><span class="sxs-lookup"><span data-stu-id="02272-424">noPreview</span></span>
-| <span data-ttu-id="02272-425">checklist</span><span class="sxs-lookup"><span data-stu-id="02272-425">checklist</span></span>
-| <span data-ttu-id="02272-426">description</span><span class="sxs-lookup"><span data-stu-id="02272-426">description</span></span>
-| <span data-ttu-id="02272-427">ссылка</span><span class="sxs-lookup"><span data-stu-id="02272-427">reference</span></span>
+| <span data-ttu-id="d6b49-430">Автоматически</span><span class="sxs-lookup"><span data-stu-id="d6b49-430">automatic</span></span>
+| <span data-ttu-id="d6b49-431">непредварительный Просмотр</span><span class="sxs-lookup"><span data-stu-id="d6b49-431">noPreview</span></span>
+| <span data-ttu-id="d6b49-432">checklist</span><span class="sxs-lookup"><span data-stu-id="d6b49-432">checklist</span></span>
+| <span data-ttu-id="d6b49-433">description</span><span class="sxs-lookup"><span data-stu-id="d6b49-433">description</span></span>
+| <span data-ttu-id="d6b49-434">ссылка</span><span class="sxs-lookup"><span data-stu-id="d6b49-434">reference</span></span>
 
 
-### <a name="status-values"></a><span data-ttu-id="02272-428">значения состояния</span><span class="sxs-lookup"><span data-stu-id="02272-428">status values</span></span>
+### <a name="status-values"></a><span data-ttu-id="d6b49-435">значения состояния</span><span class="sxs-lookup"><span data-stu-id="d6b49-435">status values</span></span>
 
-| <span data-ttu-id="02272-429">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-429">Value</span></span>
+| <span data-ttu-id="d6b49-436">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-436">Value</span></span>
 |:-----------------
-| <span data-ttu-id="02272-430">ASP</span><span class="sxs-lookup"><span data-stu-id="02272-430">active</span></span>
-| <span data-ttu-id="02272-431">обновленный</span><span class="sxs-lookup"><span data-stu-id="02272-431">updated</span></span>
-| <span data-ttu-id="02272-432">deleted</span><span class="sxs-lookup"><span data-stu-id="02272-432">deleted</span></span>
-| <span data-ttu-id="02272-433">обрабатывать</span><span class="sxs-lookup"><span data-stu-id="02272-433">ignored</span></span>
-| <span data-ttu-id="02272-434">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-434">unknownFutureValue</span></span>
+| <span data-ttu-id="d6b49-437">ASP</span><span class="sxs-lookup"><span data-stu-id="d6b49-437">active</span></span>
+| <span data-ttu-id="d6b49-438">обновленный</span><span class="sxs-lookup"><span data-stu-id="d6b49-438">updated</span></span>
+| <span data-ttu-id="d6b49-439">deleted</span><span class="sxs-lookup"><span data-stu-id="d6b49-439">deleted</span></span>
+| <span data-ttu-id="d6b49-440">обрабатывать</span><span class="sxs-lookup"><span data-stu-id="d6b49-440">ignored</span></span>
+| <span data-ttu-id="d6b49-441">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-441">unknownFutureValue</span></span>
 
 
-### <a name="weekindex-values"></a><span data-ttu-id="02272-435">значения Викиндекс</span><span class="sxs-lookup"><span data-stu-id="02272-435">weekIndex values</span></span>
+### <a name="weekindex-values"></a><span data-ttu-id="d6b49-442">значения Викиндекс</span><span class="sxs-lookup"><span data-stu-id="d6b49-442">weekIndex values</span></span>
 
-| <span data-ttu-id="02272-436">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-436">Value</span></span>
+| <span data-ttu-id="d6b49-443">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-443">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-437">первыми</span><span class="sxs-lookup"><span data-stu-id="02272-437">first</span></span>
-| <span data-ttu-id="02272-438">Втор</span><span class="sxs-lookup"><span data-stu-id="02272-438">second</span></span>
-| <span data-ttu-id="02272-439">стороннего</span><span class="sxs-lookup"><span data-stu-id="02272-439">third</span></span>
-| <span data-ttu-id="02272-440">12</span><span class="sxs-lookup"><span data-stu-id="02272-440">fourth</span></span>
-| <span data-ttu-id="02272-441">Фамили</span><span class="sxs-lookup"><span data-stu-id="02272-441">last</span></span>
+| <span data-ttu-id="d6b49-444">первыми</span><span class="sxs-lookup"><span data-stu-id="d6b49-444">first</span></span>
+| <span data-ttu-id="d6b49-445">Втор</span><span class="sxs-lookup"><span data-stu-id="d6b49-445">second</span></span>
+| <span data-ttu-id="d6b49-446">стороннего</span><span class="sxs-lookup"><span data-stu-id="d6b49-446">third</span></span>
+| <span data-ttu-id="d6b49-447">12</span><span class="sxs-lookup"><span data-stu-id="d6b49-447">fourth</span></span>
+| <span data-ttu-id="d6b49-448">Фамили</span><span class="sxs-lookup"><span data-stu-id="d6b49-448">last</span></span>
 
 
-### <a name="dayofweek-values"></a><span data-ttu-id="02272-442">значения dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="02272-442">dayOfWeek values</span></span>
+### <a name="dayofweek-values"></a><span data-ttu-id="d6b49-449">значения dayOfWeek</span><span class="sxs-lookup"><span data-stu-id="d6b49-449">dayOfWeek values</span></span>
 
-| <span data-ttu-id="02272-443">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-443">Value</span></span>
+| <span data-ttu-id="d6b49-450">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-450">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-444">воскресеньям</span><span class="sxs-lookup"><span data-stu-id="02272-444">sunday</span></span>
-| <span data-ttu-id="02272-445">Вторник</span><span class="sxs-lookup"><span data-stu-id="02272-445">monday</span></span>
-| <span data-ttu-id="02272-446">во</span><span class="sxs-lookup"><span data-stu-id="02272-446">tuesday</span></span>
-| <span data-ttu-id="02272-447">Четверг</span><span class="sxs-lookup"><span data-stu-id="02272-447">wednesday</span></span>
-| <span data-ttu-id="02272-448">Пятница</span><span class="sxs-lookup"><span data-stu-id="02272-448">thursday</span></span>
-| <span data-ttu-id="02272-449">пятницам</span><span class="sxs-lookup"><span data-stu-id="02272-449">friday</span></span>
-| <span data-ttu-id="02272-450">субботу</span><span class="sxs-lookup"><span data-stu-id="02272-450">saturday</span></span>
+| <span data-ttu-id="d6b49-451">воскресеньям</span><span class="sxs-lookup"><span data-stu-id="d6b49-451">sunday</span></span>
+| <span data-ttu-id="d6b49-452">Вторник</span><span class="sxs-lookup"><span data-stu-id="d6b49-452">monday</span></span>
+| <span data-ttu-id="d6b49-453">во</span><span class="sxs-lookup"><span data-stu-id="d6b49-453">tuesday</span></span>
+| <span data-ttu-id="d6b49-454">Четверг</span><span class="sxs-lookup"><span data-stu-id="d6b49-454">wednesday</span></span>
+| <span data-ttu-id="d6b49-455">Пятница</span><span class="sxs-lookup"><span data-stu-id="d6b49-455">thursday</span></span>
+| <span data-ttu-id="d6b49-456">пятницам</span><span class="sxs-lookup"><span data-stu-id="d6b49-456">friday</span></span>
+| <span data-ttu-id="d6b49-457">субботу</span><span class="sxs-lookup"><span data-stu-id="d6b49-457">saturday</span></span>
 
-### <a name="recurrencepatterntype-values"></a><span data-ttu-id="02272-451">значения Рекурренцепаттернтипе</span><span class="sxs-lookup"><span data-stu-id="02272-451">recurrencePatternType values</span></span>
+### <a name="recurrencepatterntype-values"></a><span data-ttu-id="d6b49-458">значения Рекурренцепаттернтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-458">recurrencePatternType values</span></span>
 
-| <span data-ttu-id="02272-452">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-452">Value</span></span>
+| <span data-ttu-id="d6b49-459">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-459">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-453">ежедневно</span><span class="sxs-lookup"><span data-stu-id="02272-453">daily</span></span>
-| <span data-ttu-id="02272-454">Табель</span><span class="sxs-lookup"><span data-stu-id="02272-454">weekly</span></span>
-| <span data-ttu-id="02272-455">Абсолутемонсли</span><span class="sxs-lookup"><span data-stu-id="02272-455">absoluteMonthly</span></span>
-| <span data-ttu-id="02272-456">Релативемонсли</span><span class="sxs-lookup"><span data-stu-id="02272-456">relativeMonthly</span></span>
-| <span data-ttu-id="02272-457">Абсолутэйеарли</span><span class="sxs-lookup"><span data-stu-id="02272-457">absoluteYearly</span></span>
-| <span data-ttu-id="02272-458">Релативэйеарли</span><span class="sxs-lookup"><span data-stu-id="02272-458">relativeYearly</span></span>
+| <span data-ttu-id="d6b49-460">ежедневно</span><span class="sxs-lookup"><span data-stu-id="d6b49-460">daily</span></span>
+| <span data-ttu-id="d6b49-461">Табель</span><span class="sxs-lookup"><span data-stu-id="d6b49-461">weekly</span></span>
+| <span data-ttu-id="d6b49-462">абсолутемонсли</span><span class="sxs-lookup"><span data-stu-id="d6b49-462">absoluteMonthly</span></span>
+| <span data-ttu-id="d6b49-463">релативемонсли</span><span class="sxs-lookup"><span data-stu-id="d6b49-463">relativeMonthly</span></span>
+| <span data-ttu-id="d6b49-464">абсолутэйеарли</span><span class="sxs-lookup"><span data-stu-id="d6b49-464">absoluteYearly</span></span>
+| <span data-ttu-id="d6b49-465">релативэйеарли</span><span class="sxs-lookup"><span data-stu-id="d6b49-465">relativeYearly</span></span>
 
 
-### <a name="recurrencerangetype-values"></a><span data-ttu-id="02272-459">значения Рекурренцеранжетипе</span><span class="sxs-lookup"><span data-stu-id="02272-459">recurrenceRangeType values</span></span>
+### <a name="recurrencerangetype-values"></a><span data-ttu-id="d6b49-466">значения Рекурренцеранжетипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-466">recurrenceRangeType values</span></span>
 
-| <span data-ttu-id="02272-460">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-460">Value</span></span>
+| <span data-ttu-id="d6b49-467">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-467">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-461">endDate</span><span class="sxs-lookup"><span data-stu-id="02272-461">endDate</span></span>
-| <span data-ttu-id="02272-462">Ноенд</span><span class="sxs-lookup"><span data-stu-id="02272-462">noEnd</span></span>
-| <span data-ttu-id="02272-463">Нумерованный</span><span class="sxs-lookup"><span data-stu-id="02272-463">numbered</span></span>
+| <span data-ttu-id="d6b49-468">endDate</span><span class="sxs-lookup"><span data-stu-id="d6b49-468">endDate</span></span>
+| <span data-ttu-id="d6b49-469">ноенд</span><span class="sxs-lookup"><span data-stu-id="d6b49-469">noEnd</span></span>
+| <span data-ttu-id="d6b49-470">Нумерованный</span><span class="sxs-lookup"><span data-stu-id="d6b49-470">numbered</span></span>
 
 
-### <a name="onenotesourceservice-values"></a><span data-ttu-id="02272-464">значения Оненотесаурцесервице</span><span class="sxs-lookup"><span data-stu-id="02272-464">onenoteSourceService values</span></span>
-| <span data-ttu-id="02272-465">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-465">Value</span></span>
+### <a name="onenotesourceservice-values"></a><span data-ttu-id="d6b49-471">значения Оненотесаурцесервице</span><span class="sxs-lookup"><span data-stu-id="d6b49-471">onenoteSourceService values</span></span>
+| <span data-ttu-id="d6b49-472">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-472">Value</span></span>
 |:---------------------
-| <span data-ttu-id="02272-466">Неизвестно</span><span class="sxs-lookup"><span data-stu-id="02272-466">Unknown</span></span>
-| <span data-ttu-id="02272-467">OneDrive</span><span class="sxs-lookup"><span data-stu-id="02272-467">OneDrive</span></span>
-| <span data-ttu-id="02272-468">Онедривефорбусинесс</span><span class="sxs-lookup"><span data-stu-id="02272-468">OneDriveForBusiness</span></span>
-| <span data-ttu-id="02272-469">Онпремонедривефорбусинесс</span><span class="sxs-lookup"><span data-stu-id="02272-469">OnPremOneDriveForBusiness</span></span>
+| <span data-ttu-id="d6b49-473">Неизвестно</span><span class="sxs-lookup"><span data-stu-id="d6b49-473">Unknown</span></span>
+| <span data-ttu-id="d6b49-474">OneDrive</span><span class="sxs-lookup"><span data-stu-id="d6b49-474">OneDrive</span></span>
+| <span data-ttu-id="d6b49-475">онедривефорбусинесс</span><span class="sxs-lookup"><span data-stu-id="d6b49-475">OneDriveForBusiness</span></span>
+| <span data-ttu-id="d6b49-476">онпремонедривефорбусинесс</span><span class="sxs-lookup"><span data-stu-id="d6b49-476">OnPremOneDriveForBusiness</span></span>
 
 
-### <a name="responsetype-values"></a><span data-ttu-id="02272-470">значения responseType</span><span class="sxs-lookup"><span data-stu-id="02272-470">responseType values</span></span>
+### <a name="responsetype-values"></a><span data-ttu-id="d6b49-477">значения responseType</span><span class="sxs-lookup"><span data-stu-id="d6b49-477">responseType values</span></span>
 
-| <span data-ttu-id="02272-471">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-471">Value</span></span>
+| <span data-ttu-id="d6b49-478">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-478">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-472">none</span><span class="sxs-lookup"><span data-stu-id="02272-472">none</span></span>
-| <span data-ttu-id="02272-473">organizer</span><span class="sxs-lookup"><span data-stu-id="02272-473">organizer</span></span>
-| <span data-ttu-id="02272-474">Тентативелякцептед</span><span class="sxs-lookup"><span data-stu-id="02272-474">tentativelyAccepted</span></span>
-| <span data-ttu-id="02272-475">обслуживаемый</span><span class="sxs-lookup"><span data-stu-id="02272-475">accepted</span></span>
-| <span data-ttu-id="02272-476">отклонено</span><span class="sxs-lookup"><span data-stu-id="02272-476">declined</span></span>
-| <span data-ttu-id="02272-477">Нотреспондед</span><span class="sxs-lookup"><span data-stu-id="02272-477">notResponded</span></span>
+| <span data-ttu-id="d6b49-479">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-479">none</span></span>
+| <span data-ttu-id="d6b49-480">organizer</span><span class="sxs-lookup"><span data-stu-id="d6b49-480">organizer</span></span>
+| <span data-ttu-id="d6b49-481">тентативелякцептед</span><span class="sxs-lookup"><span data-stu-id="d6b49-481">tentativelyAccepted</span></span>
+| <span data-ttu-id="d6b49-482">обслуживаемый</span><span class="sxs-lookup"><span data-stu-id="d6b49-482">accepted</span></span>
+| <span data-ttu-id="d6b49-483">отклонено</span><span class="sxs-lookup"><span data-stu-id="d6b49-483">declined</span></span>
+| <span data-ttu-id="d6b49-484">нотреспондед</span><span class="sxs-lookup"><span data-stu-id="d6b49-484">notResponded</span></span>
 
 
-### <a name="activitydomain-values"></a><span data-ttu-id="02272-478">значения activityDomain</span><span class="sxs-lookup"><span data-stu-id="02272-478">activityDomain values</span></span>
+### <a name="activitydomain-values"></a><span data-ttu-id="d6b49-485">значения activityDomain</span><span class="sxs-lookup"><span data-stu-id="d6b49-485">activityDomain values</span></span>
 
-| <span data-ttu-id="02272-479">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-479">Value</span></span>
+| <span data-ttu-id="d6b49-486">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-486">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-480">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-480">unknown</span></span>
-| <span data-ttu-id="02272-481">work</span><span class="sxs-lookup"><span data-stu-id="02272-481">work</span></span>
-| <span data-ttu-id="02272-482">personal</span><span class="sxs-lookup"><span data-stu-id="02272-482">personal</span></span>
-| <span data-ttu-id="02272-483">unrestricted</span><span class="sxs-lookup"><span data-stu-id="02272-483">unrestricted</span></span>
+| <span data-ttu-id="d6b49-487">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-487">unknown</span></span>
+| <span data-ttu-id="d6b49-488">work</span><span class="sxs-lookup"><span data-stu-id="d6b49-488">work</span></span>
+| <span data-ttu-id="d6b49-489">personal</span><span class="sxs-lookup"><span data-stu-id="d6b49-489">personal</span></span>
+| <span data-ttu-id="d6b49-490">unrestricted</span><span class="sxs-lookup"><span data-stu-id="d6b49-490">unrestricted</span></span>
 
 
-### <a name="websitetype-values"></a><span data-ttu-id="02272-484">значения websiteType</span><span class="sxs-lookup"><span data-stu-id="02272-484">websiteType values</span></span>
+### <a name="websitetype-values"></a><span data-ttu-id="d6b49-491">значения websiteType</span><span class="sxs-lookup"><span data-stu-id="d6b49-491">websiteType values</span></span>
 
-| <span data-ttu-id="02272-485">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-485">Value</span></span>
+| <span data-ttu-id="d6b49-492">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-492">Value</span></span>
 |:-------------------------
-| <span data-ttu-id="02272-486">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-486">other</span></span>
-| <span data-ttu-id="02272-487">страницу</span><span class="sxs-lookup"><span data-stu-id="02272-487">home</span></span>
-| <span data-ttu-id="02272-488">work</span><span class="sxs-lookup"><span data-stu-id="02272-488">work</span></span>
-| <span data-ttu-id="02272-489">Блог</span><span class="sxs-lookup"><span data-stu-id="02272-489">blog</span></span>
-| <span data-ttu-id="02272-490">profile</span><span class="sxs-lookup"><span data-stu-id="02272-490">profile</span></span>
+| <span data-ttu-id="d6b49-493">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-493">other</span></span>
+| <span data-ttu-id="d6b49-494">страницу</span><span class="sxs-lookup"><span data-stu-id="d6b49-494">home</span></span>
+| <span data-ttu-id="d6b49-495">work</span><span class="sxs-lookup"><span data-stu-id="d6b49-495">work</span></span>
+| <span data-ttu-id="d6b49-496">Блог</span><span class="sxs-lookup"><span data-stu-id="d6b49-496">blog</span></span>
+| <span data-ttu-id="d6b49-497">profile</span><span class="sxs-lookup"><span data-stu-id="d6b49-497">profile</span></span>
 
 
-### <a name="categorycolor-values"></a><span data-ttu-id="02272-491">значения Категориколор</span><span class="sxs-lookup"><span data-stu-id="02272-491">categoryColor values</span></span>
+### <a name="categorycolor-values"></a><span data-ttu-id="d6b49-498">значения Категориколор</span><span class="sxs-lookup"><span data-stu-id="d6b49-498">categoryColor values</span></span>
 
-| <span data-ttu-id="02272-492">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-492">Member</span></span>   |<span data-ttu-id="02272-493">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-493">Value</span></span>    
+| <span data-ttu-id="d6b49-499">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-499">Member</span></span>   |<span data-ttu-id="d6b49-500">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-500">Value</span></span>    
 |:---------|:--------
-| <span data-ttu-id="02272-494">none</span><span class="sxs-lookup"><span data-stu-id="02272-494">none</span></span>     | <span data-ttu-id="02272-495">–1</span><span class="sxs-lookup"><span data-stu-id="02272-495">-1</span></span>      
-| <span data-ttu-id="02272-496">preset0</span><span class="sxs-lookup"><span data-stu-id="02272-496">preset0</span></span>  | <span data-ttu-id="02272-497">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-497">0</span></span>       
-| <span data-ttu-id="02272-498">preset1</span><span class="sxs-lookup"><span data-stu-id="02272-498">preset1</span></span>  | <span data-ttu-id="02272-499">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-499">1</span></span>       
-| <span data-ttu-id="02272-500">preset2</span><span class="sxs-lookup"><span data-stu-id="02272-500">preset2</span></span>  | <span data-ttu-id="02272-501">2</span><span class="sxs-lookup"><span data-stu-id="02272-501">2</span></span>       
-| <span data-ttu-id="02272-502">preset3</span><span class="sxs-lookup"><span data-stu-id="02272-502">preset3</span></span>  | <span data-ttu-id="02272-503">4</span><span class="sxs-lookup"><span data-stu-id="02272-503">3</span></span>       
-| <span data-ttu-id="02272-504">preset4</span><span class="sxs-lookup"><span data-stu-id="02272-504">preset4</span></span>  | <span data-ttu-id="02272-505">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-505">4</span></span>       
-| <span data-ttu-id="02272-506">preset5</span><span class="sxs-lookup"><span data-stu-id="02272-506">preset5</span></span>  | <span data-ttu-id="02272-507">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-507">5</span></span>       
-| <span data-ttu-id="02272-508">preset6</span><span class="sxs-lookup"><span data-stu-id="02272-508">preset6</span></span>  | <span data-ttu-id="02272-509">6 </span><span class="sxs-lookup"><span data-stu-id="02272-509">6</span></span>       
-| <span data-ttu-id="02272-510">preset7</span><span class="sxs-lookup"><span data-stu-id="02272-510">preset7</span></span>  | <span data-ttu-id="02272-511">7 </span><span class="sxs-lookup"><span data-stu-id="02272-511">7</span></span>       
-| <span data-ttu-id="02272-512">preset8</span><span class="sxs-lookup"><span data-stu-id="02272-512">preset8</span></span>  | <span data-ttu-id="02272-513">8 </span><span class="sxs-lookup"><span data-stu-id="02272-513">8</span></span>       
-| <span data-ttu-id="02272-514">preset9</span><span class="sxs-lookup"><span data-stu-id="02272-514">preset9</span></span>  | <span data-ttu-id="02272-515">9 </span><span class="sxs-lookup"><span data-stu-id="02272-515">9</span></span>       
-| <span data-ttu-id="02272-516">preset10</span><span class="sxs-lookup"><span data-stu-id="02272-516">preset10</span></span> | <span data-ttu-id="02272-517">10 </span><span class="sxs-lookup"><span data-stu-id="02272-517">10</span></span>      
-| <span data-ttu-id="02272-518">preset11</span><span class="sxs-lookup"><span data-stu-id="02272-518">preset11</span></span> | <span data-ttu-id="02272-519">-11:00</span><span class="sxs-lookup"><span data-stu-id="02272-519">11</span></span>      
-| <span data-ttu-id="02272-520">preset12</span><span class="sxs-lookup"><span data-stu-id="02272-520">preset12</span></span> | <span data-ttu-id="02272-521">12</span><span class="sxs-lookup"><span data-stu-id="02272-521">12</span></span>      
-| <span data-ttu-id="02272-522">preset13</span><span class="sxs-lookup"><span data-stu-id="02272-522">preset13</span></span> | <span data-ttu-id="02272-523">13</span><span class="sxs-lookup"><span data-stu-id="02272-523">13</span></span>      
-| <span data-ttu-id="02272-524">preset14</span><span class="sxs-lookup"><span data-stu-id="02272-524">preset14</span></span> | <span data-ttu-id="02272-525">14</span><span class="sxs-lookup"><span data-stu-id="02272-525">14</span></span>      
-| <span data-ttu-id="02272-526">preset15</span><span class="sxs-lookup"><span data-stu-id="02272-526">preset15</span></span> | <span data-ttu-id="02272-527">означает</span><span class="sxs-lookup"><span data-stu-id="02272-527">15</span></span>      
-| <span data-ttu-id="02272-528">preset16</span><span class="sxs-lookup"><span data-stu-id="02272-528">preset16</span></span> | <span data-ttu-id="02272-529">столбцов</span><span class="sxs-lookup"><span data-stu-id="02272-529">16</span></span>      
-| <span data-ttu-id="02272-530">preset17</span><span class="sxs-lookup"><span data-stu-id="02272-530">preset17</span></span> | <span data-ttu-id="02272-531">17</span><span class="sxs-lookup"><span data-stu-id="02272-531">17</span></span>      
-| <span data-ttu-id="02272-532">preset18</span><span class="sxs-lookup"><span data-stu-id="02272-532">preset18</span></span> | <span data-ttu-id="02272-533">0,18</span><span class="sxs-lookup"><span data-stu-id="02272-533">18</span></span>      
-| <span data-ttu-id="02272-534">preset19</span><span class="sxs-lookup"><span data-stu-id="02272-534">preset19</span></span> | <span data-ttu-id="02272-535">19</span><span class="sxs-lookup"><span data-stu-id="02272-535">19</span></span>      
-| <span data-ttu-id="02272-536">preset20</span><span class="sxs-lookup"><span data-stu-id="02272-536">preset20</span></span> | <span data-ttu-id="02272-537">двадцать</span><span class="sxs-lookup"><span data-stu-id="02272-537">20</span></span>      
-| <span data-ttu-id="02272-538">preset21</span><span class="sxs-lookup"><span data-stu-id="02272-538">preset21</span></span> | <span data-ttu-id="02272-539">21</span><span class="sxs-lookup"><span data-stu-id="02272-539">21</span></span>      
-| <span data-ttu-id="02272-540">preset22</span><span class="sxs-lookup"><span data-stu-id="02272-540">preset22</span></span> | <span data-ttu-id="02272-541">22</span><span class="sxs-lookup"><span data-stu-id="02272-541">22</span></span>      
-| <span data-ttu-id="02272-542">preset23</span><span class="sxs-lookup"><span data-stu-id="02272-542">preset23</span></span> | <span data-ttu-id="02272-543">23</span><span class="sxs-lookup"><span data-stu-id="02272-543">23</span></span>      
-| <span data-ttu-id="02272-544">preset24</span><span class="sxs-lookup"><span data-stu-id="02272-544">preset24</span></span> | <span data-ttu-id="02272-545">открыт</span><span class="sxs-lookup"><span data-stu-id="02272-545">24</span></span>      
+| <span data-ttu-id="d6b49-501">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-501">none</span></span>     | <span data-ttu-id="d6b49-502">–1</span><span class="sxs-lookup"><span data-stu-id="d6b49-502">-1</span></span>      
+| <span data-ttu-id="d6b49-503">preset0</span><span class="sxs-lookup"><span data-stu-id="d6b49-503">preset0</span></span>  | <span data-ttu-id="d6b49-504">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-504">0</span></span>       
+| <span data-ttu-id="d6b49-505">preset1</span><span class="sxs-lookup"><span data-stu-id="d6b49-505">preset1</span></span>  | <span data-ttu-id="d6b49-506">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-506">1</span></span>       
+| <span data-ttu-id="d6b49-507">preset2</span><span class="sxs-lookup"><span data-stu-id="d6b49-507">preset2</span></span>  | <span data-ttu-id="d6b49-508">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-508">2</span></span>       
+| <span data-ttu-id="d6b49-509">preset3</span><span class="sxs-lookup"><span data-stu-id="d6b49-509">preset3</span></span>  | <span data-ttu-id="d6b49-510">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-510">3</span></span>       
+| <span data-ttu-id="d6b49-511">preset4</span><span class="sxs-lookup"><span data-stu-id="d6b49-511">preset4</span></span>  | <span data-ttu-id="d6b49-512">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-512">4</span></span>       
+| <span data-ttu-id="d6b49-513">preset5</span><span class="sxs-lookup"><span data-stu-id="d6b49-513">preset5</span></span>  | <span data-ttu-id="d6b49-514">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-514">5</span></span>       
+| <span data-ttu-id="d6b49-515">preset6</span><span class="sxs-lookup"><span data-stu-id="d6b49-515">preset6</span></span>  | <span data-ttu-id="d6b49-516">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-516">6</span></span>       
+| <span data-ttu-id="d6b49-517">preset7</span><span class="sxs-lookup"><span data-stu-id="d6b49-517">preset7</span></span>  | <span data-ttu-id="d6b49-518">7 </span><span class="sxs-lookup"><span data-stu-id="d6b49-518">7</span></span>       
+| <span data-ttu-id="d6b49-519">preset8</span><span class="sxs-lookup"><span data-stu-id="d6b49-519">preset8</span></span>  | <span data-ttu-id="d6b49-520">8 </span><span class="sxs-lookup"><span data-stu-id="d6b49-520">8</span></span>       
+| <span data-ttu-id="d6b49-521">preset9</span><span class="sxs-lookup"><span data-stu-id="d6b49-521">preset9</span></span>  | <span data-ttu-id="d6b49-522">9 </span><span class="sxs-lookup"><span data-stu-id="d6b49-522">9</span></span>       
+| <span data-ttu-id="d6b49-523">preset10</span><span class="sxs-lookup"><span data-stu-id="d6b49-523">preset10</span></span> | <span data-ttu-id="d6b49-524">10 </span><span class="sxs-lookup"><span data-stu-id="d6b49-524">10</span></span>      
+| <span data-ttu-id="d6b49-525">preset11</span><span class="sxs-lookup"><span data-stu-id="d6b49-525">preset11</span></span> | <span data-ttu-id="d6b49-526">-11:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-526">11</span></span>      
+| <span data-ttu-id="d6b49-527">preset12</span><span class="sxs-lookup"><span data-stu-id="d6b49-527">preset12</span></span> | <span data-ttu-id="d6b49-528">12</span><span class="sxs-lookup"><span data-stu-id="d6b49-528">12</span></span>      
+| <span data-ttu-id="d6b49-529">preset13</span><span class="sxs-lookup"><span data-stu-id="d6b49-529">preset13</span></span> | <span data-ttu-id="d6b49-530">13</span><span class="sxs-lookup"><span data-stu-id="d6b49-530">13</span></span>      
+| <span data-ttu-id="d6b49-531">preset14</span><span class="sxs-lookup"><span data-stu-id="d6b49-531">preset14</span></span> | <span data-ttu-id="d6b49-532">14</span><span class="sxs-lookup"><span data-stu-id="d6b49-532">14</span></span>      
+| <span data-ttu-id="d6b49-533">preset15</span><span class="sxs-lookup"><span data-stu-id="d6b49-533">preset15</span></span> | <span data-ttu-id="d6b49-534">означает</span><span class="sxs-lookup"><span data-stu-id="d6b49-534">15</span></span>      
+| <span data-ttu-id="d6b49-535">preset16</span><span class="sxs-lookup"><span data-stu-id="d6b49-535">preset16</span></span> | <span data-ttu-id="d6b49-536">столбцов</span><span class="sxs-lookup"><span data-stu-id="d6b49-536">16</span></span>      
+| <span data-ttu-id="d6b49-537">preset17</span><span class="sxs-lookup"><span data-stu-id="d6b49-537">preset17</span></span> | <span data-ttu-id="d6b49-538">17</span><span class="sxs-lookup"><span data-stu-id="d6b49-538">17</span></span>      
+| <span data-ttu-id="d6b49-539">preset18</span><span class="sxs-lookup"><span data-stu-id="d6b49-539">preset18</span></span> | <span data-ttu-id="d6b49-540">0,18</span><span class="sxs-lookup"><span data-stu-id="d6b49-540">18</span></span>      
+| <span data-ttu-id="d6b49-541">preset19</span><span class="sxs-lookup"><span data-stu-id="d6b49-541">preset19</span></span> | <span data-ttu-id="d6b49-542">19</span><span class="sxs-lookup"><span data-stu-id="d6b49-542">19</span></span>      
+| <span data-ttu-id="d6b49-543">preset20</span><span class="sxs-lookup"><span data-stu-id="d6b49-543">preset20</span></span> | <span data-ttu-id="d6b49-544">двадцать</span><span class="sxs-lookup"><span data-stu-id="d6b49-544">20</span></span>      
+| <span data-ttu-id="d6b49-545">preset21</span><span class="sxs-lookup"><span data-stu-id="d6b49-545">preset21</span></span> | <span data-ttu-id="d6b49-546">21</span><span class="sxs-lookup"><span data-stu-id="d6b49-546">21</span></span>      
+| <span data-ttu-id="d6b49-547">preset22</span><span class="sxs-lookup"><span data-stu-id="d6b49-547">preset22</span></span> | <span data-ttu-id="d6b49-548">22</span><span class="sxs-lookup"><span data-stu-id="d6b49-548">22</span></span>      
+| <span data-ttu-id="d6b49-549">preset23</span><span class="sxs-lookup"><span data-stu-id="d6b49-549">preset23</span></span> | <span data-ttu-id="d6b49-550">23</span><span class="sxs-lookup"><span data-stu-id="d6b49-550">23</span></span>      
+| <span data-ttu-id="d6b49-551">preset24</span><span class="sxs-lookup"><span data-stu-id="d6b49-551">preset24</span></span> | <span data-ttu-id="d6b49-552">открыт</span><span class="sxs-lookup"><span data-stu-id="d6b49-552">24</span></span>      
 
-### <a name="alertfeedback-values"></a><span data-ttu-id="02272-546">значения Алертфидбакк</span><span class="sxs-lookup"><span data-stu-id="02272-546">alertFeedback values</span></span>
+### <a name="alertfeedback-values"></a><span data-ttu-id="d6b49-553">значения Алертфидбакк</span><span class="sxs-lookup"><span data-stu-id="d6b49-553">alertFeedback values</span></span>
 
-<span data-ttu-id="02272-547">Возможные значения отзыва оповещений, предоставленных аналитиком.</span><span class="sxs-lookup"><span data-stu-id="02272-547">Possible feedback values on the alert provided by an analyst.</span></span>
+<span data-ttu-id="d6b49-554">Возможные значения отзыва оповещений, предоставленных аналитиком.</span><span class="sxs-lookup"><span data-stu-id="d6b49-554">Possible feedback values on the alert provided by an analyst.</span></span>
 
-|<span data-ttu-id="02272-548">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-548">Member</span></span>|<span data-ttu-id="02272-549">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-549">Value</span></span>|<span data-ttu-id="02272-550">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-550">Description</span></span>|
+|<span data-ttu-id="d6b49-555">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-555">Member</span></span>|<span data-ttu-id="d6b49-556">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-556">Value</span></span>|<span data-ttu-id="d6b49-557">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-557">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-551">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-551">unknown</span></span>|<span data-ttu-id="02272-552">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-552">0</span></span>|<span data-ttu-id="02272-553">Найден.</span><span class="sxs-lookup"><span data-stu-id="02272-553">Unknown.</span></span>|
-|<span data-ttu-id="02272-554">Труепоситиве</span><span class="sxs-lookup"><span data-stu-id="02272-554">truePositive</span></span>|<span data-ttu-id="02272-555">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-555">1</span></span>|<span data-ttu-id="02272-556">Alert имеет значение true (положительно).</span><span class="sxs-lookup"><span data-stu-id="02272-556">Alert is true-positive.</span></span>|
-|<span data-ttu-id="02272-557">falsePositive</span><span class="sxs-lookup"><span data-stu-id="02272-557">falsePositive</span></span>|<span data-ttu-id="02272-558">2</span><span class="sxs-lookup"><span data-stu-id="02272-558">2</span></span>| <span data-ttu-id="02272-559">Alert имеет значение false — положительный.</span><span class="sxs-lookup"><span data-stu-id="02272-559">Alert is false-positive.</span></span>|
-|<span data-ttu-id="02272-560">Бенигнпоситиве</span><span class="sxs-lookup"><span data-stu-id="02272-560">benignPositive</span></span>|<span data-ttu-id="02272-561">4</span><span class="sxs-lookup"><span data-stu-id="02272-561">3</span></span>| <span data-ttu-id="02272-562">Оповещение — это неблагоприятное срабатывание.</span><span class="sxs-lookup"><span data-stu-id="02272-562">Alert is benign-positive.</span></span>|
+|<span data-ttu-id="d6b49-558">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-558">unknown</span></span>|<span data-ttu-id="d6b49-559">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-559">0</span></span>|<span data-ttu-id="d6b49-560">Найден.</span><span class="sxs-lookup"><span data-stu-id="d6b49-560">Unknown.</span></span>|
+|<span data-ttu-id="d6b49-561">труепоситиве</span><span class="sxs-lookup"><span data-stu-id="d6b49-561">truePositive</span></span>|<span data-ttu-id="d6b49-562">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-562">1</span></span>|<span data-ttu-id="d6b49-563">Alert имеет значение true (положительно).</span><span class="sxs-lookup"><span data-stu-id="d6b49-563">Alert is true-positive.</span></span>|
+|<span data-ttu-id="d6b49-564">falsePositive</span><span class="sxs-lookup"><span data-stu-id="d6b49-564">falsePositive</span></span>|<span data-ttu-id="d6b49-565">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-565">2</span></span>| <span data-ttu-id="d6b49-566">Alert имеет значение false — положительный.</span><span class="sxs-lookup"><span data-stu-id="d6b49-566">Alert is false-positive.</span></span>|
+|<span data-ttu-id="d6b49-567">бенигнпоситиве</span><span class="sxs-lookup"><span data-stu-id="d6b49-567">benignPositive</span></span>|<span data-ttu-id="d6b49-568">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-568">3</span></span>| <span data-ttu-id="d6b49-569">Оповещение — это неблагоприятное срабатывание.</span><span class="sxs-lookup"><span data-stu-id="d6b49-569">Alert is benign-positive.</span></span>|
 
-### <a name="filehashtype-values"></a><span data-ttu-id="02272-563">значения Филехаштипе</span><span class="sxs-lookup"><span data-stu-id="02272-563">fileHashType values</span></span>
+### <a name="filehashtype-values"></a><span data-ttu-id="d6b49-570">значения Филехаштипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-570">fileHashType values</span></span>
 
-|<span data-ttu-id="02272-564">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-564">Member</span></span>|<span data-ttu-id="02272-565">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-565">Value</span></span>|<span data-ttu-id="02272-566">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-566">Description</span></span>|
+|<span data-ttu-id="d6b49-571">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-571">Member</span></span>|<span data-ttu-id="d6b49-572">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-572">Value</span></span>|<span data-ttu-id="d6b49-573">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-573">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-567">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-567">unknown</span></span>|<span data-ttu-id="02272-568">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-568">0</span></span>|<span data-ttu-id="02272-569">Неизвестный тип.</span><span class="sxs-lookup"><span data-stu-id="02272-569">Unknown type.</span></span>|
-|<span data-ttu-id="02272-570">хэшем</span><span class="sxs-lookup"><span data-stu-id="02272-570">sha1</span></span>|<span data-ttu-id="02272-571">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-571">1</span></span>|<span data-ttu-id="02272-572">Тип хеша SHA1.</span><span class="sxs-lookup"><span data-stu-id="02272-572">SHA1 hash type.</span></span>|
-|<span data-ttu-id="02272-573">хэш</span><span class="sxs-lookup"><span data-stu-id="02272-573">sha256</span></span>|<span data-ttu-id="02272-574">2</span><span class="sxs-lookup"><span data-stu-id="02272-574">2</span></span>| <span data-ttu-id="02272-575">Тип хеша SHA256.</span><span class="sxs-lookup"><span data-stu-id="02272-575">SHA256 hash type.</span></span>|
-|<span data-ttu-id="02272-576">алгоритм</span><span class="sxs-lookup"><span data-stu-id="02272-576">md5</span></span>|<span data-ttu-id="02272-577">4</span><span class="sxs-lookup"><span data-stu-id="02272-577">3</span></span>| <span data-ttu-id="02272-578">Тип хеша MD5.</span><span class="sxs-lookup"><span data-stu-id="02272-578">MD5 hash type.</span></span>|
-|<span data-ttu-id="02272-579">Свойства authenticodehash256</span><span class="sxs-lookup"><span data-stu-id="02272-579">authenticodeHash256</span></span>|<span data-ttu-id="02272-580">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-580">4</span></span>| <span data-ttu-id="02272-581">Тип хеша свойства authenticodehash256.</span><span class="sxs-lookup"><span data-stu-id="02272-581">AuthenticodeHash256 hash type.</span></span>|
-|<span data-ttu-id="02272-582">Лшаш</span><span class="sxs-lookup"><span data-stu-id="02272-582">lsHash</span></span>|<span data-ttu-id="02272-583">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-583">5</span></span>| <span data-ttu-id="02272-584">Тип хеша Лшаш.</span><span class="sxs-lookup"><span data-stu-id="02272-584">LsHash hash type.</span></span>|
-|<span data-ttu-id="02272-585">КТФ</span><span class="sxs-lookup"><span data-stu-id="02272-585">ctph</span></span>|<span data-ttu-id="02272-586">6 </span><span class="sxs-lookup"><span data-stu-id="02272-586">6</span></span>| <span data-ttu-id="02272-587">Тип хеша КТФ.</span><span class="sxs-lookup"><span data-stu-id="02272-587">CTPH hash type.</span></span>|
-|<span data-ttu-id="02272-588">peSha1</span><span class="sxs-lookup"><span data-stu-id="02272-588">peSha1</span></span>|<span data-ttu-id="02272-589">7 </span><span class="sxs-lookup"><span data-stu-id="02272-589">7</span></span>| <span data-ttu-id="02272-590">Тип хеша PESHA1.</span><span class="sxs-lookup"><span data-stu-id="02272-590">PESHA1 hash type.</span></span>|
-|<span data-ttu-id="02272-591">peSha256</span><span class="sxs-lookup"><span data-stu-id="02272-591">peSha256</span></span>|<span data-ttu-id="02272-592">8 </span><span class="sxs-lookup"><span data-stu-id="02272-592">8</span></span>| <span data-ttu-id="02272-593">Тип хеша PESHA256.</span><span class="sxs-lookup"><span data-stu-id="02272-593">PESHA256 hash type.</span></span>|
+|<span data-ttu-id="d6b49-574">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-574">unknown</span></span>|<span data-ttu-id="d6b49-575">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-575">0</span></span>|<span data-ttu-id="d6b49-576">Неизвестный тип.</span><span class="sxs-lookup"><span data-stu-id="d6b49-576">Unknown type.</span></span>|
+|<span data-ttu-id="d6b49-577">хэшем</span><span class="sxs-lookup"><span data-stu-id="d6b49-577">sha1</span></span>|<span data-ttu-id="d6b49-578">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-578">1</span></span>|<span data-ttu-id="d6b49-579">Тип хеша SHA1.</span><span class="sxs-lookup"><span data-stu-id="d6b49-579">SHA1 hash type.</span></span>|
+|<span data-ttu-id="d6b49-580">хэш</span><span class="sxs-lookup"><span data-stu-id="d6b49-580">sha256</span></span>|<span data-ttu-id="d6b49-581">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-581">2</span></span>| <span data-ttu-id="d6b49-582">Тип хеша SHA256.</span><span class="sxs-lookup"><span data-stu-id="d6b49-582">SHA256 hash type.</span></span>|
+|<span data-ttu-id="d6b49-583">алгоритм</span><span class="sxs-lookup"><span data-stu-id="d6b49-583">md5</span></span>|<span data-ttu-id="d6b49-584">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-584">3</span></span>| <span data-ttu-id="d6b49-585">Тип хеша MD5.</span><span class="sxs-lookup"><span data-stu-id="d6b49-585">MD5 hash type.</span></span>|
+|<span data-ttu-id="d6b49-586">Свойства authenticodehash256</span><span class="sxs-lookup"><span data-stu-id="d6b49-586">authenticodeHash256</span></span>|<span data-ttu-id="d6b49-587">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-587">4</span></span>| <span data-ttu-id="d6b49-588">Тип хеша свойства authenticodehash256.</span><span class="sxs-lookup"><span data-stu-id="d6b49-588">AuthenticodeHash256 hash type.</span></span>|
+|<span data-ttu-id="d6b49-589">лшаш</span><span class="sxs-lookup"><span data-stu-id="d6b49-589">lsHash</span></span>|<span data-ttu-id="d6b49-590">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-590">5</span></span>| <span data-ttu-id="d6b49-591">Тип хеша Лшаш.</span><span class="sxs-lookup"><span data-stu-id="d6b49-591">LsHash hash type.</span></span>|
+|<span data-ttu-id="d6b49-592">ктф</span><span class="sxs-lookup"><span data-stu-id="d6b49-592">ctph</span></span>|<span data-ttu-id="d6b49-593">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-593">6</span></span>| <span data-ttu-id="d6b49-594">Тип хеша КТФ.</span><span class="sxs-lookup"><span data-stu-id="d6b49-594">CTPH hash type.</span></span>|
+|<span data-ttu-id="d6b49-595">peSha1</span><span class="sxs-lookup"><span data-stu-id="d6b49-595">peSha1</span></span>|<span data-ttu-id="d6b49-596">7 </span><span class="sxs-lookup"><span data-stu-id="d6b49-596">7</span></span>| <span data-ttu-id="d6b49-597">Тип хеша PESHA1.</span><span class="sxs-lookup"><span data-stu-id="d6b49-597">PESHA1 hash type.</span></span>|
+|<span data-ttu-id="d6b49-598">peSha256</span><span class="sxs-lookup"><span data-stu-id="d6b49-598">peSha256</span></span>|<span data-ttu-id="d6b49-599">8 </span><span class="sxs-lookup"><span data-stu-id="d6b49-599">8</span></span>| <span data-ttu-id="d6b49-600">Тип хеша PESHA256.</span><span class="sxs-lookup"><span data-stu-id="d6b49-600">PESHA256 hash type.</span></span>|
 
-### <a name="connectiondirection-values"></a><span data-ttu-id="02272-594">значения Коннектиондиректион</span><span class="sxs-lookup"><span data-stu-id="02272-594">connectionDirection values</span></span>
+### <a name="connectiondirection-values"></a><span data-ttu-id="d6b49-601">значения Коннектиондиректион</span><span class="sxs-lookup"><span data-stu-id="d6b49-601">connectionDirection values</span></span>
 
-|<span data-ttu-id="02272-595">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-595">Member</span></span>|<span data-ttu-id="02272-596">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-596">Value</span></span>|<span data-ttu-id="02272-597">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-597">Description</span></span>|
+|<span data-ttu-id="d6b49-602">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-602">Member</span></span>|<span data-ttu-id="d6b49-603">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-603">Value</span></span>|<span data-ttu-id="d6b49-604">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-604">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-598">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-598">unknown</span></span>|<span data-ttu-id="02272-599">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-599">0</span></span>|<span data-ttu-id="02272-600">Неизвестное подключение.</span><span class="sxs-lookup"><span data-stu-id="02272-600">Unknown connection.</span></span>|
-|<span data-ttu-id="02272-601">получение</span><span class="sxs-lookup"><span data-stu-id="02272-601">inbound</span></span>|<span data-ttu-id="02272-602">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-602">1</span></span>|<span data-ttu-id="02272-603">Входящее подключение.</span><span class="sxs-lookup"><span data-stu-id="02272-603">Inbound connection.</span></span>|
-|<span data-ttu-id="02272-604">прав</span><span class="sxs-lookup"><span data-stu-id="02272-604">outbound</span></span>|<span data-ttu-id="02272-605">2</span><span class="sxs-lookup"><span data-stu-id="02272-605">2</span></span>| <span data-ttu-id="02272-606">Исходящее подключение.</span><span class="sxs-lookup"><span data-stu-id="02272-606">Outbound connection.</span></span>|
+|<span data-ttu-id="d6b49-605">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-605">unknown</span></span>|<span data-ttu-id="d6b49-606">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-606">0</span></span>|<span data-ttu-id="d6b49-607">Неизвестное подключение.</span><span class="sxs-lookup"><span data-stu-id="d6b49-607">Unknown connection.</span></span>|
+|<span data-ttu-id="d6b49-608">получение</span><span class="sxs-lookup"><span data-stu-id="d6b49-608">inbound</span></span>|<span data-ttu-id="d6b49-609">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-609">1</span></span>|<span data-ttu-id="d6b49-610">Входящее подключение.</span><span class="sxs-lookup"><span data-stu-id="d6b49-610">Inbound connection.</span></span>|
+|<span data-ttu-id="d6b49-611">прав</span><span class="sxs-lookup"><span data-stu-id="d6b49-611">outbound</span></span>|<span data-ttu-id="d6b49-612">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-612">2</span></span>| <span data-ttu-id="d6b49-613">Исходящее подключение.</span><span class="sxs-lookup"><span data-stu-id="d6b49-613">Outbound connection.</span></span>|
 
-### <a name="connectionstatus-values"></a><span data-ttu-id="02272-607">значения connectionStatus</span><span class="sxs-lookup"><span data-stu-id="02272-607">connectionStatus values</span></span>
+### <a name="connectionstatus-values"></a><span data-ttu-id="d6b49-614">значения connectionStatus</span><span class="sxs-lookup"><span data-stu-id="d6b49-614">connectionStatus values</span></span>
 
-|<span data-ttu-id="02272-608">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-608">Member</span></span>|<span data-ttu-id="02272-609">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-609">Value</span></span>|<span data-ttu-id="02272-610">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-610">Description</span></span>|
+|<span data-ttu-id="d6b49-615">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-615">Member</span></span>|<span data-ttu-id="d6b49-616">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-616">Value</span></span>|<span data-ttu-id="d6b49-617">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-617">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-611">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-611">unknown</span></span>|<span data-ttu-id="02272-612">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-612">0</span></span>|<span data-ttu-id="02272-613">Состояние неизвестного подключения.</span><span class="sxs-lookup"><span data-stu-id="02272-613">Unknown connection status.</span></span>|
-|<span data-ttu-id="02272-614">попытка</span><span class="sxs-lookup"><span data-stu-id="02272-614">attempted</span></span>|<span data-ttu-id="02272-615">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-615">1</span></span>|<span data-ttu-id="02272-616">Попытка подключения.</span><span class="sxs-lookup"><span data-stu-id="02272-616">Connection attempted.</span></span>|
-|<span data-ttu-id="02272-617">закончил</span><span class="sxs-lookup"><span data-stu-id="02272-617">succeeded</span></span>|<span data-ttu-id="02272-618">2</span><span class="sxs-lookup"><span data-stu-id="02272-618">2</span></span>| <span data-ttu-id="02272-619">Подключение выполнено успешно.</span><span class="sxs-lookup"><span data-stu-id="02272-619">Connection succeeded.</span></span>|
-|<span data-ttu-id="02272-620">заблокированных</span><span class="sxs-lookup"><span data-stu-id="02272-620">blocked</span></span>|<span data-ttu-id="02272-621">4</span><span class="sxs-lookup"><span data-stu-id="02272-621">3</span></span>| <span data-ttu-id="02272-622">Подключение заблокировано.</span><span class="sxs-lookup"><span data-stu-id="02272-622">Connection blocked.</span></span>|
-|<span data-ttu-id="02272-623">сбоев</span><span class="sxs-lookup"><span data-stu-id="02272-623">failed</span></span>|<span data-ttu-id="02272-624">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-624">4</span></span>| <span data-ttu-id="02272-625">Ошибка подключения.</span><span class="sxs-lookup"><span data-stu-id="02272-625">Connection failed.</span></span>|
+|<span data-ttu-id="d6b49-618">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-618">unknown</span></span>|<span data-ttu-id="d6b49-619">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-619">0</span></span>|<span data-ttu-id="d6b49-620">Состояние неизвестного подключения.</span><span class="sxs-lookup"><span data-stu-id="d6b49-620">Unknown connection status.</span></span>|
+|<span data-ttu-id="d6b49-621">попытка</span><span class="sxs-lookup"><span data-stu-id="d6b49-621">attempted</span></span>|<span data-ttu-id="d6b49-622">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-622">1</span></span>|<span data-ttu-id="d6b49-623">Попытка подключения.</span><span class="sxs-lookup"><span data-stu-id="d6b49-623">Connection attempted.</span></span>|
+|<span data-ttu-id="d6b49-624">закончил</span><span class="sxs-lookup"><span data-stu-id="d6b49-624">succeeded</span></span>|<span data-ttu-id="d6b49-625">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-625">2</span></span>| <span data-ttu-id="d6b49-626">Подключение выполнено успешно.</span><span class="sxs-lookup"><span data-stu-id="d6b49-626">Connection succeeded.</span></span>|
+|<span data-ttu-id="d6b49-627">заблокированных</span><span class="sxs-lookup"><span data-stu-id="d6b49-627">blocked</span></span>|<span data-ttu-id="d6b49-628">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-628">3</span></span>| <span data-ttu-id="d6b49-629">Подключение заблокировано.</span><span class="sxs-lookup"><span data-stu-id="d6b49-629">Connection blocked.</span></span>|
+|<span data-ttu-id="d6b49-630">сбоев</span><span class="sxs-lookup"><span data-stu-id="d6b49-630">failed</span></span>|<span data-ttu-id="d6b49-631">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-631">4</span></span>| <span data-ttu-id="d6b49-632">Ошибка подключения.</span><span class="sxs-lookup"><span data-stu-id="d6b49-632">Connection failed.</span></span>|
 
-### <a name="processintegritylevel-values"></a><span data-ttu-id="02272-626">значения Процессинтегритилевел</span><span class="sxs-lookup"><span data-stu-id="02272-626">processIntegrityLevel values</span></span>
+### <a name="processintegritylevel-values"></a><span data-ttu-id="d6b49-633">значения Процессинтегритилевел</span><span class="sxs-lookup"><span data-stu-id="d6b49-633">processIntegrityLevel values</span></span>
 
-|<span data-ttu-id="02272-627">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-627">Member</span></span>|<span data-ttu-id="02272-628">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-628">Value</span></span>|<span data-ttu-id="02272-629">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-629">Description</span></span>|
+|<span data-ttu-id="d6b49-634">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-634">Member</span></span>|<span data-ttu-id="d6b49-635">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-635">Value</span></span>|<span data-ttu-id="d6b49-636">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-636">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-630">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-630">unknown</span></span>|<span data-ttu-id="02272-631">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-631">0</span></span>|<span data-ttu-id="02272-632">Найден.</span><span class="sxs-lookup"><span data-stu-id="02272-632">Unknown.</span></span>|
-|<span data-ttu-id="02272-633">недоверенных</span><span class="sxs-lookup"><span data-stu-id="02272-633">untrusted</span></span>|<span data-ttu-id="02272-634">10 </span><span class="sxs-lookup"><span data-stu-id="02272-634">10</span></span>|<span data-ttu-id="02272-635">Уровень целостности не является доверенным.</span><span class="sxs-lookup"><span data-stu-id="02272-635">Integrity level is Untrusted.</span></span>|
-|<span data-ttu-id="02272-636">потребление</span><span class="sxs-lookup"><span data-stu-id="02272-636">low</span></span>|<span data-ttu-id="02272-637">двадцать</span><span class="sxs-lookup"><span data-stu-id="02272-637">20</span></span>| <span data-ttu-id="02272-638">Недостаточный уровень целостности.</span><span class="sxs-lookup"><span data-stu-id="02272-638">Integrity level is Low.</span></span>|
-|<span data-ttu-id="02272-639">medium</span><span class="sxs-lookup"><span data-stu-id="02272-639">medium</span></span>|<span data-ttu-id="02272-640">более</span><span class="sxs-lookup"><span data-stu-id="02272-640">30</span></span>| <span data-ttu-id="02272-641">Уровень целостности — Medium (средний).</span><span class="sxs-lookup"><span data-stu-id="02272-641">Integrity level is Medium.</span></span>|
-|<span data-ttu-id="02272-642">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="02272-642">high</span></span>|<span data-ttu-id="02272-643">40</span><span class="sxs-lookup"><span data-stu-id="02272-643">40</span></span>| <span data-ttu-id="02272-644">Уровень целостности — High.</span><span class="sxs-lookup"><span data-stu-id="02272-644">Integrity level is High.</span></span>|
-|<span data-ttu-id="02272-645">system</span><span class="sxs-lookup"><span data-stu-id="02272-645">system</span></span>|<span data-ttu-id="02272-646">50</span><span class="sxs-lookup"><span data-stu-id="02272-646">50</span></span>| <span data-ttu-id="02272-647">Уровень целостности — System.</span><span class="sxs-lookup"><span data-stu-id="02272-647">Integrity level is System.</span></span>|
+|<span data-ttu-id="d6b49-637">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-637">unknown</span></span>|<span data-ttu-id="d6b49-638">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-638">0</span></span>|<span data-ttu-id="d6b49-639">Найден.</span><span class="sxs-lookup"><span data-stu-id="d6b49-639">Unknown.</span></span>|
+|<span data-ttu-id="d6b49-640">недоверенных</span><span class="sxs-lookup"><span data-stu-id="d6b49-640">untrusted</span></span>|<span data-ttu-id="d6b49-641">10 </span><span class="sxs-lookup"><span data-stu-id="d6b49-641">10</span></span>|<span data-ttu-id="d6b49-642">Уровень целостности не является доверенным.</span><span class="sxs-lookup"><span data-stu-id="d6b49-642">Integrity level is Untrusted.</span></span>|
+|<span data-ttu-id="d6b49-643">потребление</span><span class="sxs-lookup"><span data-stu-id="d6b49-643">low</span></span>|<span data-ttu-id="d6b49-644">двадцать</span><span class="sxs-lookup"><span data-stu-id="d6b49-644">20</span></span>| <span data-ttu-id="d6b49-645">Недостаточный уровень целостности.</span><span class="sxs-lookup"><span data-stu-id="d6b49-645">Integrity level is Low.</span></span>|
+|<span data-ttu-id="d6b49-646">medium</span><span class="sxs-lookup"><span data-stu-id="d6b49-646">medium</span></span>|<span data-ttu-id="d6b49-647">более</span><span class="sxs-lookup"><span data-stu-id="d6b49-647">30</span></span>| <span data-ttu-id="d6b49-648">Уровень целостности — Medium (средний).</span><span class="sxs-lookup"><span data-stu-id="d6b49-648">Integrity level is Medium.</span></span>|
+|<span data-ttu-id="d6b49-649">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="d6b49-649">high</span></span>|<span data-ttu-id="d6b49-650">40</span><span class="sxs-lookup"><span data-stu-id="d6b49-650">40</span></span>| <span data-ttu-id="d6b49-651">Уровень целостности — High.</span><span class="sxs-lookup"><span data-stu-id="d6b49-651">Integrity level is High.</span></span>|
+|<span data-ttu-id="d6b49-652">system</span><span class="sxs-lookup"><span data-stu-id="d6b49-652">system</span></span>|<span data-ttu-id="d6b49-653">50</span><span class="sxs-lookup"><span data-stu-id="d6b49-653">50</span></span>| <span data-ttu-id="d6b49-654">Уровень целостности — System.</span><span class="sxs-lookup"><span data-stu-id="d6b49-654">Integrity level is System.</span></span>|
 
-### <a name="registryhive-values"></a><span data-ttu-id="02272-648">значения Регистрихиве</span><span class="sxs-lookup"><span data-stu-id="02272-648">registryHive values</span></span>
+### <a name="registryhive-values"></a><span data-ttu-id="d6b49-655">значения Регистрихиве</span><span class="sxs-lookup"><span data-stu-id="d6b49-655">registryHive values</span></span>
 
-<span data-ttu-id="02272-649">Enum для кустов реестра, определенных в параметре [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).</span><span class="sxs-lookup"><span data-stu-id="02272-649">Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).</span></span>
+<span data-ttu-id="d6b49-656">Enum для кустов реестра, определенных в параметре [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).</span><span class="sxs-lookup"><span data-stu-id="d6b49-656">Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).</span></span>
 
-|<span data-ttu-id="02272-650">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-650">Member</span></span>|<span data-ttu-id="02272-651">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-651">Value</span></span>|<span data-ttu-id="02272-652">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-652">Description</span></span>|
+|<span data-ttu-id="d6b49-657">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-657">Member</span></span>|<span data-ttu-id="d6b49-658">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-658">Value</span></span>|<span data-ttu-id="d6b49-659">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-659">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-653">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-653">unknown</span></span>|<span data-ttu-id="02272-654">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-654">0</span></span>|<span data-ttu-id="02272-655">Неизвестный куст.</span><span class="sxs-lookup"><span data-stu-id="02272-655">Unknown hive.</span></span>|
-|<span data-ttu-id="02272-656">Куррентконфиг</span><span class="sxs-lookup"><span data-stu-id="02272-656">currentConfig</span></span>|<span data-ttu-id="02272-657">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-657">1</span></span>|<span data-ttu-id="02272-658">Куст ХКЭЙ_КУРРЕНТ_КОНФИГ.</span><span class="sxs-lookup"><span data-stu-id="02272-658">HKEY_CURRENT_CONFIG hive.</span></span>|
-|<span data-ttu-id="02272-659">currentUser</span><span class="sxs-lookup"><span data-stu-id="02272-659">currentUser</span></span>|<span data-ttu-id="02272-660">2</span><span class="sxs-lookup"><span data-stu-id="02272-660">2</span></span>| <span data-ttu-id="02272-661">Куст HKEY_CURRENT_USER.</span><span class="sxs-lookup"><span data-stu-id="02272-661">HKEY_CURRENT_USER hive.</span></span>|
-|<span data-ttu-id="02272-662">Локалмачинесам</span><span class="sxs-lookup"><span data-stu-id="02272-662">localMachineSam</span></span>|<span data-ttu-id="02272-663">4</span><span class="sxs-lookup"><span data-stu-id="02272-663">3</span></span>| <span data-ttu-id="02272-664">Куст ХКЭЙ_ЛОКАЛ_МАЧИНЕ\САМ.</span><span class="sxs-lookup"><span data-stu-id="02272-664">HKEY_LOCAL_MACHINE\SAM hive.</span></span>|
-|<span data-ttu-id="02272-665">Локалмачинесамсофтваре</span><span class="sxs-lookup"><span data-stu-id="02272-665">localMachineSamSoftware</span></span>|<span data-ttu-id="02272-666">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-666">4</span></span>| <span data-ttu-id="02272-667">Куст Хкэй_локал_мачине\софтваре.</span><span class="sxs-lookup"><span data-stu-id="02272-667">HKEY_LOCAL_MACHINE\Software hive.</span></span>|
-|<span data-ttu-id="02272-668">Локалмачинесистем</span><span class="sxs-lookup"><span data-stu-id="02272-668">localMachineSystem</span></span>|<span data-ttu-id="02272-669">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-669">5</span></span>| <span data-ttu-id="02272-670">Куст Хкэй_локал_мачине\систем.</span><span class="sxs-lookup"><span data-stu-id="02272-670">HKEY_LOCAL_MACHINE\System hive.</span></span>|
-|<span data-ttu-id="02272-671">Усерсдефаулт</span><span class="sxs-lookup"><span data-stu-id="02272-671">usersDefault</span></span>|<span data-ttu-id="02272-672">6 </span><span class="sxs-lookup"><span data-stu-id="02272-672">6</span></span>| <span data-ttu-id="02272-673">HKEY_USERS\\. Куст по УМОЛЧАНИю.</span><span class="sxs-lookup"><span data-stu-id="02272-673">HKEY_USERS\\.DEFAULT hive.</span></span>|
+|<span data-ttu-id="d6b49-660">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-660">unknown</span></span>|<span data-ttu-id="d6b49-661">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-661">0</span></span>|<span data-ttu-id="d6b49-662">Неизвестный куст.</span><span class="sxs-lookup"><span data-stu-id="d6b49-662">Unknown hive.</span></span>|
+|<span data-ttu-id="d6b49-663">куррентконфиг</span><span class="sxs-lookup"><span data-stu-id="d6b49-663">currentConfig</span></span>|<span data-ttu-id="d6b49-664">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-664">1</span></span>|<span data-ttu-id="d6b49-665">Куст HKEY_CURRENT_CONFIG.</span><span class="sxs-lookup"><span data-stu-id="d6b49-665">HKEY_CURRENT_CONFIG hive.</span></span>|
+|<span data-ttu-id="d6b49-666">currentUser</span><span class="sxs-lookup"><span data-stu-id="d6b49-666">currentUser</span></span>|<span data-ttu-id="d6b49-667">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-667">2</span></span>| <span data-ttu-id="d6b49-668">Куст HKEY_CURRENT_USER.</span><span class="sxs-lookup"><span data-stu-id="d6b49-668">HKEY_CURRENT_USER hive.</span></span>|
+|<span data-ttu-id="d6b49-669">локалмачинесам</span><span class="sxs-lookup"><span data-stu-id="d6b49-669">localMachineSam</span></span>|<span data-ttu-id="d6b49-670">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-670">3</span></span>| <span data-ttu-id="d6b49-671">Куст HKEY_LOCAL_MACHINE\SAM.</span><span class="sxs-lookup"><span data-stu-id="d6b49-671">HKEY_LOCAL_MACHINE\SAM hive.</span></span>|
+|<span data-ttu-id="d6b49-672">локалмачинесамсофтваре</span><span class="sxs-lookup"><span data-stu-id="d6b49-672">localMachineSamSoftware</span></span>|<span data-ttu-id="d6b49-673">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-673">4</span></span>| <span data-ttu-id="d6b49-674">Куст HKEY_LOCAL_MACHINE\Software.</span><span class="sxs-lookup"><span data-stu-id="d6b49-674">HKEY_LOCAL_MACHINE\Software hive.</span></span>|
+|<span data-ttu-id="d6b49-675">локалмачинесистем</span><span class="sxs-lookup"><span data-stu-id="d6b49-675">localMachineSystem</span></span>|<span data-ttu-id="d6b49-676">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-676">5</span></span>| <span data-ttu-id="d6b49-677">Куст HKEY_LOCAL_MACHINE\System.</span><span class="sxs-lookup"><span data-stu-id="d6b49-677">HKEY_LOCAL_MACHINE\System hive.</span></span>|
+|<span data-ttu-id="d6b49-678">усерсдефаулт</span><span class="sxs-lookup"><span data-stu-id="d6b49-678">usersDefault</span></span>|<span data-ttu-id="d6b49-679">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-679">6</span></span>| <span data-ttu-id="d6b49-680">HKEY_USERS\\. Куст по УМОЛЧАНИю.</span><span class="sxs-lookup"><span data-stu-id="d6b49-680">HKEY_USERS\\.DEFAULT hive.</span></span>|
 
-### <a name="registryoperation-values"></a><span data-ttu-id="02272-674">значения Регистрйоператион</span><span class="sxs-lookup"><span data-stu-id="02272-674">registryOperation values</span></span>
+### <a name="registryoperation-values"></a><span data-ttu-id="d6b49-681">значения Регистрйоператион</span><span class="sxs-lookup"><span data-stu-id="d6b49-681">registryOperation values</span></span>
 
-<span data-ttu-id="02272-675">Операция, в которой изменилось имя и/или значение раздела реестра.</span><span class="sxs-lookup"><span data-stu-id="02272-675">Operation that changed the registry key name and/or value.</span></span>
+<span data-ttu-id="d6b49-682">Операция, в которой изменилось имя и/или значение раздела реестра.</span><span class="sxs-lookup"><span data-stu-id="d6b49-682">Operation that changed the registry key name and/or value.</span></span>
 
-|<span data-ttu-id="02272-676">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-676">Member</span></span>|<span data-ttu-id="02272-677">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-677">Value</span></span>|<span data-ttu-id="02272-678">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-678">Description</span></span>|
+|<span data-ttu-id="d6b49-683">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-683">Member</span></span>|<span data-ttu-id="d6b49-684">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-684">Value</span></span>|<span data-ttu-id="d6b49-685">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-685">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-679">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-679">unknown</span></span>|<span data-ttu-id="02272-680">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-680">0</span></span>|<span data-ttu-id="02272-681">Неизвестный тип значения реестра.</span><span class="sxs-lookup"><span data-stu-id="02272-681">Unknown registry value type.</span></span>|
-|<span data-ttu-id="02272-682">create</span><span class="sxs-lookup"><span data-stu-id="02272-682">create</span></span>|<span data-ttu-id="02272-683">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-683">1</span></span>|<span data-ttu-id="02272-684">Создайте реестр.</span><span class="sxs-lookup"><span data-stu-id="02272-684">Create registry.</span></span>|
-|<span data-ttu-id="02272-685">изменение</span><span class="sxs-lookup"><span data-stu-id="02272-685">modify</span></span>|<span data-ttu-id="02272-686">2</span><span class="sxs-lookup"><span data-stu-id="02272-686">2</span></span>|<span data-ttu-id="02272-687">Изменение реестра.</span><span class="sxs-lookup"><span data-stu-id="02272-687">Modify registry.</span></span>|
-|<span data-ttu-id="02272-688">delete</span><span class="sxs-lookup"><span data-stu-id="02272-688">delete</span></span>|<span data-ttu-id="02272-689">4</span><span class="sxs-lookup"><span data-stu-id="02272-689">3</span></span>|<span data-ttu-id="02272-690">Удаление реестра.</span><span class="sxs-lookup"><span data-stu-id="02272-690">Delete registry.</span></span>|
+|<span data-ttu-id="d6b49-686">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-686">unknown</span></span>|<span data-ttu-id="d6b49-687">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-687">0</span></span>|<span data-ttu-id="d6b49-688">Неизвестный тип значения реестра.</span><span class="sxs-lookup"><span data-stu-id="d6b49-688">Unknown registry value type.</span></span>|
+|<span data-ttu-id="d6b49-689">create</span><span class="sxs-lookup"><span data-stu-id="d6b49-689">create</span></span>|<span data-ttu-id="d6b49-690">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-690">1</span></span>|<span data-ttu-id="d6b49-691">Создайте реестр.</span><span class="sxs-lookup"><span data-stu-id="d6b49-691">Create registry.</span></span>|
+|<span data-ttu-id="d6b49-692">изменение</span><span class="sxs-lookup"><span data-stu-id="d6b49-692">modify</span></span>|<span data-ttu-id="d6b49-693">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-693">2</span></span>|<span data-ttu-id="d6b49-694">Изменение реестра.</span><span class="sxs-lookup"><span data-stu-id="d6b49-694">Modify registry.</span></span>|
+|<span data-ttu-id="d6b49-695">delete</span><span class="sxs-lookup"><span data-stu-id="d6b49-695">delete</span></span>|<span data-ttu-id="d6b49-696">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-696">3</span></span>|<span data-ttu-id="d6b49-697">Удаление реестра.</span><span class="sxs-lookup"><span data-stu-id="d6b49-697">Delete registry.</span></span>|
 
-### <a name="registryvaluetype-values"></a><span data-ttu-id="02272-691">значения Регистривалуетипе</span><span class="sxs-lookup"><span data-stu-id="02272-691">registryValueType values</span></span>
+### <a name="registryvaluetype-values"></a><span data-ttu-id="d6b49-698">значения Регистривалуетипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-698">registryValueType values</span></span>
 
-<span data-ttu-id="02272-692">Enum для типов значений реестра, определенных с [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)помощью параметра.</span><span class="sxs-lookup"><span data-stu-id="02272-692">Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).</span></span>
+<span data-ttu-id="d6b49-699">Enum для типов значений реестра, определенных с [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)помощью параметра.</span><span class="sxs-lookup"><span data-stu-id="d6b49-699">Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).</span></span>
 
-|<span data-ttu-id="02272-693">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-693">Member</span></span>|<span data-ttu-id="02272-694">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-694">Value</span></span>|<span data-ttu-id="02272-695">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-695">Description</span></span>|
+|<span data-ttu-id="d6b49-700">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-700">Member</span></span>|<span data-ttu-id="d6b49-701">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-701">Value</span></span>|<span data-ttu-id="d6b49-702">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-702">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-696">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-696">unknown</span></span>|<span data-ttu-id="02272-697">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-697">0</span></span>|<span data-ttu-id="02272-698">Неизвестный тип значения реестра.</span><span class="sxs-lookup"><span data-stu-id="02272-698">Unknown registry value type.</span></span>|
-|<span data-ttu-id="02272-699">двоичный</span><span class="sxs-lookup"><span data-stu-id="02272-699">binary</span></span>|<span data-ttu-id="02272-700">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-700">1</span></span>|<span data-ttu-id="02272-701">Тип значения реестра REG_BINARY.</span><span class="sxs-lookup"><span data-stu-id="02272-701">REG_BINARY registry value type.</span></span>|
-|<span data-ttu-id="02272-702">значени</span><span class="sxs-lookup"><span data-stu-id="02272-702">dword</span></span>|<span data-ttu-id="02272-703">2</span><span class="sxs-lookup"><span data-stu-id="02272-703">2</span></span>| <span data-ttu-id="02272-704">Тип значения реестра REG_DWORD.</span><span class="sxs-lookup"><span data-stu-id="02272-704">REG_DWORD registry value type.</span></span>|
-|<span data-ttu-id="02272-705">Двордлиттлиндиан</span><span class="sxs-lookup"><span data-stu-id="02272-705">dwordLittleEndian</span></span>|<span data-ttu-id="02272-706">4</span><span class="sxs-lookup"><span data-stu-id="02272-706">3</span></span>| <span data-ttu-id="02272-707">Тип значения реестра РЕГ_ДВОРД_ЛИТТЛЕ_ЕНДИАН.</span><span class="sxs-lookup"><span data-stu-id="02272-707">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span>|
-|<span data-ttu-id="02272-708">Двордбижендиан</span><span class="sxs-lookup"><span data-stu-id="02272-708">dwordBigEndian</span></span>|<span data-ttu-id="02272-709">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-709">4</span></span>| <span data-ttu-id="02272-710">Тип значения реестра РЕГ_ДВОРД_БИГ_ЕНДИАН.</span><span class="sxs-lookup"><span data-stu-id="02272-710">REG_DWORD_BIG_ENDIAN registry value type.</span></span>|
-|<span data-ttu-id="02272-711">Експандсз</span><span class="sxs-lookup"><span data-stu-id="02272-711">expandSz</span></span>|<span data-ttu-id="02272-712">17:00</span><span class="sxs-lookup"><span data-stu-id="02272-712">5</span></span>| <span data-ttu-id="02272-713">Тип значения реестра REG_EXPAND_SZ.</span><span class="sxs-lookup"><span data-stu-id="02272-713">REG_EXPAND_SZ registry value type.</span></span>|
-|<span data-ttu-id="02272-714">ссылка</span><span class="sxs-lookup"><span data-stu-id="02272-714">link</span></span>|<span data-ttu-id="02272-715">6 </span><span class="sxs-lookup"><span data-stu-id="02272-715">6</span></span>| <span data-ttu-id="02272-716">Тип значения реестра РЕГ_ЛИНК.</span><span class="sxs-lookup"><span data-stu-id="02272-716">REG_LINK registry value type.</span></span>|
-|<span data-ttu-id="02272-717">Мултисз</span><span class="sxs-lookup"><span data-stu-id="02272-717">multiSz</span></span>|<span data-ttu-id="02272-718">7 </span><span class="sxs-lookup"><span data-stu-id="02272-718">7</span></span>| <span data-ttu-id="02272-719">Тип значения реестра REG_MULTI_SZ.</span><span class="sxs-lookup"><span data-stu-id="02272-719">REG_MULTI_SZ registry value type.</span></span>|
-|<span data-ttu-id="02272-720">none</span><span class="sxs-lookup"><span data-stu-id="02272-720">none</span></span>|<span data-ttu-id="02272-721">8 </span><span class="sxs-lookup"><span data-stu-id="02272-721">8</span></span>| <span data-ttu-id="02272-722">Тип значения реестра РЕГ_НОНЕ.</span><span class="sxs-lookup"><span data-stu-id="02272-722">REG_NONE registry value type.</span></span>|
-|<span data-ttu-id="02272-723">8</span><span class="sxs-lookup"><span data-stu-id="02272-723">qword</span></span>|<span data-ttu-id="02272-724">9 </span><span class="sxs-lookup"><span data-stu-id="02272-724">9</span></span>| <span data-ttu-id="02272-725">Тип значения реестра РЕГ_КВОРД.</span><span class="sxs-lookup"><span data-stu-id="02272-725">REG_QWORD registry value type.</span></span>|
-|<span data-ttu-id="02272-726">Квордлиттлиндиан</span><span class="sxs-lookup"><span data-stu-id="02272-726">qwordlittleEndian</span></span>|<span data-ttu-id="02272-727">10 </span><span class="sxs-lookup"><span data-stu-id="02272-727">10</span></span>| <span data-ttu-id="02272-728">Тип значения реестра РЕГ_КВОРД_ЛИТТЛЕ_ЕНДИАН.</span><span class="sxs-lookup"><span data-stu-id="02272-728">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span>|
-|<span data-ttu-id="02272-729">СЗ</span><span class="sxs-lookup"><span data-stu-id="02272-729">sz</span></span>|<span data-ttu-id="02272-730">-11:00</span><span class="sxs-lookup"><span data-stu-id="02272-730">11</span></span>| <span data-ttu-id="02272-731">Тип значения реестра REG_SZ.</span><span class="sxs-lookup"><span data-stu-id="02272-731">REG_SZ registry value type.</span></span>|
+|<span data-ttu-id="d6b49-703">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-703">unknown</span></span>|<span data-ttu-id="d6b49-704">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-704">0</span></span>|<span data-ttu-id="d6b49-705">Неизвестный тип значения реестра.</span><span class="sxs-lookup"><span data-stu-id="d6b49-705">Unknown registry value type.</span></span>|
+|<span data-ttu-id="d6b49-706">двоичный</span><span class="sxs-lookup"><span data-stu-id="d6b49-706">binary</span></span>|<span data-ttu-id="d6b49-707">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-707">1</span></span>|<span data-ttu-id="d6b49-708">Тип значения реестра REG_BINARY.</span><span class="sxs-lookup"><span data-stu-id="d6b49-708">REG_BINARY registry value type.</span></span>|
+|<span data-ttu-id="d6b49-709">значени</span><span class="sxs-lookup"><span data-stu-id="d6b49-709">dword</span></span>|<span data-ttu-id="d6b49-710">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-710">2</span></span>| <span data-ttu-id="d6b49-711">Тип значения реестра REG_DWORD.</span><span class="sxs-lookup"><span data-stu-id="d6b49-711">REG_DWORD registry value type.</span></span>|
+|<span data-ttu-id="d6b49-712">двордлиттлиндиан</span><span class="sxs-lookup"><span data-stu-id="d6b49-712">dwordLittleEndian</span></span>|<span data-ttu-id="d6b49-713">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-713">3</span></span>| <span data-ttu-id="d6b49-714">Тип значения реестра REG_DWORD_LITTLE_ENDIAN.</span><span class="sxs-lookup"><span data-stu-id="d6b49-714">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span>|
+|<span data-ttu-id="d6b49-715">двордбижендиан</span><span class="sxs-lookup"><span data-stu-id="d6b49-715">dwordBigEndian</span></span>|<span data-ttu-id="d6b49-716">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-716">4</span></span>| <span data-ttu-id="d6b49-717">Тип значения реестра REG_DWORD_BIG_ENDIAN.</span><span class="sxs-lookup"><span data-stu-id="d6b49-717">REG_DWORD_BIG_ENDIAN registry value type.</span></span>|
+|<span data-ttu-id="d6b49-718">експандсз</span><span class="sxs-lookup"><span data-stu-id="d6b49-718">expandSz</span></span>|<span data-ttu-id="d6b49-719">17:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-719">5</span></span>| <span data-ttu-id="d6b49-720">Тип значения реестра REG_EXPAND_SZ.</span><span class="sxs-lookup"><span data-stu-id="d6b49-720">REG_EXPAND_SZ registry value type.</span></span>|
+|<span data-ttu-id="d6b49-721">ссылка</span><span class="sxs-lookup"><span data-stu-id="d6b49-721">link</span></span>|<span data-ttu-id="d6b49-722">6 </span><span class="sxs-lookup"><span data-stu-id="d6b49-722">6</span></span>| <span data-ttu-id="d6b49-723">Тип значения реестра REG_LINK.</span><span class="sxs-lookup"><span data-stu-id="d6b49-723">REG_LINK registry value type.</span></span>|
+|<span data-ttu-id="d6b49-724">мултисз</span><span class="sxs-lookup"><span data-stu-id="d6b49-724">multiSz</span></span>|<span data-ttu-id="d6b49-725">7 </span><span class="sxs-lookup"><span data-stu-id="d6b49-725">7</span></span>| <span data-ttu-id="d6b49-726">Тип значения реестра REG_MULTI_SZ.</span><span class="sxs-lookup"><span data-stu-id="d6b49-726">REG_MULTI_SZ registry value type.</span></span>|
+|<span data-ttu-id="d6b49-727">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-727">none</span></span>|<span data-ttu-id="d6b49-728">8 </span><span class="sxs-lookup"><span data-stu-id="d6b49-728">8</span></span>| <span data-ttu-id="d6b49-729">Тип значения реестра REG_NONE.</span><span class="sxs-lookup"><span data-stu-id="d6b49-729">REG_NONE registry value type.</span></span>|
+|<span data-ttu-id="d6b49-730">8</span><span class="sxs-lookup"><span data-stu-id="d6b49-730">qword</span></span>|<span data-ttu-id="d6b49-731">9 </span><span class="sxs-lookup"><span data-stu-id="d6b49-731">9</span></span>| <span data-ttu-id="d6b49-732">Тип значения реестра REG_QWORD.</span><span class="sxs-lookup"><span data-stu-id="d6b49-732">REG_QWORD registry value type.</span></span>|
+|<span data-ttu-id="d6b49-733">квордлиттлиндиан</span><span class="sxs-lookup"><span data-stu-id="d6b49-733">qwordlittleEndian</span></span>|<span data-ttu-id="d6b49-734">10 </span><span class="sxs-lookup"><span data-stu-id="d6b49-734">10</span></span>| <span data-ttu-id="d6b49-735">Тип значения реестра REG_QWORD_LITTLE_ENDIAN.</span><span class="sxs-lookup"><span data-stu-id="d6b49-735">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span>|
+|<span data-ttu-id="d6b49-736">сз</span><span class="sxs-lookup"><span data-stu-id="d6b49-736">sz</span></span>|<span data-ttu-id="d6b49-737">-11:00</span><span class="sxs-lookup"><span data-stu-id="d6b49-737">11</span></span>| <span data-ttu-id="d6b49-738">Тип значения реестра REG_SZ.</span><span class="sxs-lookup"><span data-stu-id="d6b49-738">REG_SZ registry value type.</span></span>|
 
-### <a name="alertseverity-values"></a><span data-ttu-id="02272-732">значения Алертсеверити</span><span class="sxs-lookup"><span data-stu-id="02272-732">alertSeverity values</span></span>
+### <a name="alertseverity-values"></a><span data-ttu-id="d6b49-739">значения Алертсеверити</span><span class="sxs-lookup"><span data-stu-id="d6b49-739">alertSeverity values</span></span>
 
-<span data-ttu-id="02272-733">Перечисление для серьезности оповещений.</span><span class="sxs-lookup"><span data-stu-id="02272-733">Enum for severity of alerts.</span></span>
+<span data-ttu-id="d6b49-740">Перечисление для серьезности оповещений.</span><span class="sxs-lookup"><span data-stu-id="d6b49-740">Enum for severity of alerts.</span></span>
 
-|<span data-ttu-id="02272-734">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-734">Member</span></span>|<span data-ttu-id="02272-735">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-735">Value</span></span>|<span data-ttu-id="02272-736">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-736">Description</span></span>|
+|<span data-ttu-id="d6b49-741">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-741">Member</span></span>|<span data-ttu-id="d6b49-742">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-742">Value</span></span>|<span data-ttu-id="d6b49-743">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-743">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-737">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-737">unknown</span></span>|<span data-ttu-id="02272-738">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-738">0</span></span>|<span data-ttu-id="02272-739">Степень неизвестна.</span><span class="sxs-lookup"><span data-stu-id="02272-739">Severity is unknown.</span></span>|
-|<span data-ttu-id="02272-740">справоч</span><span class="sxs-lookup"><span data-stu-id="02272-740">informational</span></span>|<span data-ttu-id="02272-741">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-741">1</span></span>|<span data-ttu-id="02272-742">Уровень важности — только для сведений.</span><span class="sxs-lookup"><span data-stu-id="02272-742">Severity is only for information.</span></span>|
-|<span data-ttu-id="02272-743">потребление</span><span class="sxs-lookup"><span data-stu-id="02272-743">low</span></span>|<span data-ttu-id="02272-744">2</span><span class="sxs-lookup"><span data-stu-id="02272-744">2</span></span>| <span data-ttu-id="02272-745">Степень серьезности невелика.</span><span class="sxs-lookup"><span data-stu-id="02272-745">Severity is low.</span></span>|
-|<span data-ttu-id="02272-746">medium</span><span class="sxs-lookup"><span data-stu-id="02272-746">medium</span></span>|<span data-ttu-id="02272-747">4</span><span class="sxs-lookup"><span data-stu-id="02272-747">3</span></span>| <span data-ttu-id="02272-748">Степень серьезности — средняя.</span><span class="sxs-lookup"><span data-stu-id="02272-748">Severity is medium.</span></span>|
-|<span data-ttu-id="02272-749">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="02272-749">high</span></span>|<span data-ttu-id="02272-750">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-750">4</span></span>| <span data-ttu-id="02272-751">Степень серьезности высока.</span><span class="sxs-lookup"><span data-stu-id="02272-751">Severity is high.</span></span>|
+|<span data-ttu-id="d6b49-744">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-744">unknown</span></span>|<span data-ttu-id="d6b49-745">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-745">0</span></span>|<span data-ttu-id="d6b49-746">Степень неизвестна.</span><span class="sxs-lookup"><span data-stu-id="d6b49-746">Severity is unknown.</span></span>|
+|<span data-ttu-id="d6b49-747">справоч</span><span class="sxs-lookup"><span data-stu-id="d6b49-747">informational</span></span>|<span data-ttu-id="d6b49-748">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-748">1</span></span>|<span data-ttu-id="d6b49-749">Уровень важности — только для сведений.</span><span class="sxs-lookup"><span data-stu-id="d6b49-749">Severity is only for information.</span></span>|
+|<span data-ttu-id="d6b49-750">потребление</span><span class="sxs-lookup"><span data-stu-id="d6b49-750">low</span></span>|<span data-ttu-id="d6b49-751">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-751">2</span></span>| <span data-ttu-id="d6b49-752">Степень серьезности невелика.</span><span class="sxs-lookup"><span data-stu-id="d6b49-752">Severity is low.</span></span>|
+|<span data-ttu-id="d6b49-753">medium</span><span class="sxs-lookup"><span data-stu-id="d6b49-753">medium</span></span>|<span data-ttu-id="d6b49-754">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-754">3</span></span>| <span data-ttu-id="d6b49-755">Степень серьезности — средняя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-755">Severity is medium.</span></span>|
+|<span data-ttu-id="d6b49-756">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="d6b49-756">high</span></span>|<span data-ttu-id="d6b49-757">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-757">4</span></span>| <span data-ttu-id="d6b49-758">Степень серьезности высока.</span><span class="sxs-lookup"><span data-stu-id="d6b49-758">Severity is high.</span></span>|
 
-### <a name="alertstatus-values"></a><span data-ttu-id="02272-752">значения Алертстатус</span><span class="sxs-lookup"><span data-stu-id="02272-752">alertStatus values</span></span>
+### <a name="alertstatus-values"></a><span data-ttu-id="d6b49-759">значения Алертстатус</span><span class="sxs-lookup"><span data-stu-id="d6b49-759">alertStatus values</span></span>
 
-<span data-ttu-id="02272-753">Возможные значения состояния жизненного цикла оповещений (Stage).</span><span class="sxs-lookup"><span data-stu-id="02272-753">Possible values of an Alert lifecycle status (stage).</span></span>
+<span data-ttu-id="d6b49-760">Возможные значения состояния жизненного цикла оповещений (Stage).</span><span class="sxs-lookup"><span data-stu-id="d6b49-760">Possible values of an Alert lifecycle status (stage).</span></span>
 
-|<span data-ttu-id="02272-754">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-754">Member</span></span>|<span data-ttu-id="02272-755">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-755">Value</span></span>|<span data-ttu-id="02272-756">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-756">Description</span></span>|
+|<span data-ttu-id="d6b49-761">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-761">Member</span></span>|<span data-ttu-id="d6b49-762">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-762">Value</span></span>|<span data-ttu-id="d6b49-763">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-763">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-757">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-757">unknown</span></span>|<span data-ttu-id="02272-758">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-758">0</span></span>|<span data-ttu-id="02272-759">Неизвестное состояние.</span><span class="sxs-lookup"><span data-stu-id="02272-759">Unknown status.</span></span>|
-|<span data-ttu-id="02272-760">Невалерт</span><span class="sxs-lookup"><span data-stu-id="02272-760">newAlert</span></span>|<span data-ttu-id="02272-761">10 </span><span class="sxs-lookup"><span data-stu-id="02272-761">10</span></span>| <span data-ttu-id="02272-762">Оповещение является новым.</span><span class="sxs-lookup"><span data-stu-id="02272-762">Alert is new.</span></span>|
-|<span data-ttu-id="02272-763">inProgress</span><span class="sxs-lookup"><span data-stu-id="02272-763">inProgress</span></span>|<span data-ttu-id="02272-764">двадцать</span><span class="sxs-lookup"><span data-stu-id="02272-764">20</span></span>|<span data-ttu-id="02272-765">Выполняется оповещение.</span><span class="sxs-lookup"><span data-stu-id="02272-765">Alert is in progress.</span></span>|
-|<span data-ttu-id="02272-766">определяем</span><span class="sxs-lookup"><span data-stu-id="02272-766">resolved</span></span>|<span data-ttu-id="02272-767">более</span><span class="sxs-lookup"><span data-stu-id="02272-767">30</span></span>|<span data-ttu-id="02272-768">Предупреждение разрешено.</span><span class="sxs-lookup"><span data-stu-id="02272-768">Alert is resolved.</span></span>|
+|<span data-ttu-id="d6b49-764">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-764">unknown</span></span>|<span data-ttu-id="d6b49-765">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-765">0</span></span>|<span data-ttu-id="d6b49-766">Неизвестное состояние.</span><span class="sxs-lookup"><span data-stu-id="d6b49-766">Unknown status.</span></span>|
+|<span data-ttu-id="d6b49-767">невалерт</span><span class="sxs-lookup"><span data-stu-id="d6b49-767">newAlert</span></span>|<span data-ttu-id="d6b49-768">10 </span><span class="sxs-lookup"><span data-stu-id="d6b49-768">10</span></span>| <span data-ttu-id="d6b49-769">Оповещение является новым.</span><span class="sxs-lookup"><span data-stu-id="d6b49-769">Alert is new.</span></span>|
+|<span data-ttu-id="d6b49-770">inProgress</span><span class="sxs-lookup"><span data-stu-id="d6b49-770">inProgress</span></span>|<span data-ttu-id="d6b49-771">двадцать</span><span class="sxs-lookup"><span data-stu-id="d6b49-771">20</span></span>|<span data-ttu-id="d6b49-772">Выполняется оповещение.</span><span class="sxs-lookup"><span data-stu-id="d6b49-772">Alert is in progress.</span></span>|
+|<span data-ttu-id="d6b49-773">определяем</span><span class="sxs-lookup"><span data-stu-id="d6b49-773">resolved</span></span>|<span data-ttu-id="d6b49-774">более</span><span class="sxs-lookup"><span data-stu-id="d6b49-774">30</span></span>|<span data-ttu-id="d6b49-775">Предупреждение разрешено.</span><span class="sxs-lookup"><span data-stu-id="d6b49-775">Alert is resolved.</span></span>|
 
-### <a name="emailrole-values"></a><span data-ttu-id="02272-769">значения Емаилроле</span><span class="sxs-lookup"><span data-stu-id="02272-769">emailRole values</span></span>
+### <a name="emailrole-values"></a><span data-ttu-id="d6b49-776">значения Емаилроле</span><span class="sxs-lookup"><span data-stu-id="d6b49-776">emailRole values</span></span>
 
-<span data-ttu-id="02272-770">Возможные значения для ролей электронной почты.</span><span class="sxs-lookup"><span data-stu-id="02272-770">Possible values for email roles.</span></span>
+<span data-ttu-id="d6b49-777">Возможные значения для ролей электронной почты.</span><span class="sxs-lookup"><span data-stu-id="d6b49-777">Possible values for email roles.</span></span>
 
-|<span data-ttu-id="02272-771">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-771">Member</span></span>|<span data-ttu-id="02272-772">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-772">Value</span></span>|<span data-ttu-id="02272-773">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-773">Description</span></span>|
+|<span data-ttu-id="d6b49-778">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-778">Member</span></span>|<span data-ttu-id="d6b49-779">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-779">Value</span></span>|<span data-ttu-id="d6b49-780">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-780">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-774">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-774">unknown</span></span>|<span data-ttu-id="02272-775">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-775">0</span></span>|<span data-ttu-id="02272-776">Неизвестная роль.</span><span class="sxs-lookup"><span data-stu-id="02272-776">Unknown Role.</span></span>|
-|<span data-ttu-id="02272-777">sender</span><span class="sxs-lookup"><span data-stu-id="02272-777">sender</span></span>|<span data-ttu-id="02272-778">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-778">1</span></span>|<span data-ttu-id="02272-779">Отправитель сообщения электронной почты.</span><span class="sxs-lookup"><span data-stu-id="02272-779">Sender of the email.</span></span>|
-|<span data-ttu-id="02272-780">получатель;</span><span class="sxs-lookup"><span data-stu-id="02272-780">recipient</span></span>|<span data-ttu-id="02272-781">2</span><span class="sxs-lookup"><span data-stu-id="02272-781">2</span></span>|<span data-ttu-id="02272-782">Получатель сообщения электронной почты.</span><span class="sxs-lookup"><span data-stu-id="02272-782">Recipient of the email.</span></span>|
+|<span data-ttu-id="d6b49-781">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-781">unknown</span></span>|<span data-ttu-id="d6b49-782">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-782">0</span></span>|<span data-ttu-id="d6b49-783">Неизвестная роль.</span><span class="sxs-lookup"><span data-stu-id="d6b49-783">Unknown Role.</span></span>|
+|<span data-ttu-id="d6b49-784">sender</span><span class="sxs-lookup"><span data-stu-id="d6b49-784">sender</span></span>|<span data-ttu-id="d6b49-785">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-785">1</span></span>|<span data-ttu-id="d6b49-786">Отправитель сообщения электронной почты.</span><span class="sxs-lookup"><span data-stu-id="d6b49-786">Sender of the email.</span></span>|
+|<span data-ttu-id="d6b49-787">получатель;</span><span class="sxs-lookup"><span data-stu-id="d6b49-787">recipient</span></span>|<span data-ttu-id="d6b49-788">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-788">2</span></span>|<span data-ttu-id="d6b49-789">Получатель сообщения электронной почты.</span><span class="sxs-lookup"><span data-stu-id="d6b49-789">Recipient of the email.</span></span>|
 
-### <a name="logontype-values"></a><span data-ttu-id="02272-783">значения logonType</span><span class="sxs-lookup"><span data-stu-id="02272-783">logonType values</span></span>
+### <a name="logontype-values"></a><span data-ttu-id="d6b49-790">значения logonType</span><span class="sxs-lookup"><span data-stu-id="d6b49-790">logonType values</span></span>
 
-<span data-ttu-id="02272-784">Возможные значения для метода входа пользователя.</span><span class="sxs-lookup"><span data-stu-id="02272-784">Possible values for the method of user signin.</span></span>
+<span data-ttu-id="d6b49-791">Возможные значения для метода входа пользователя.</span><span class="sxs-lookup"><span data-stu-id="d6b49-791">Possible values for the method of user signin.</span></span>
 
-|<span data-ttu-id="02272-785">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-785">Member</span></span>|<span data-ttu-id="02272-786">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-786">Value</span></span>|<span data-ttu-id="02272-787">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-787">Description</span></span>|
+|<span data-ttu-id="d6b49-792">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-792">Member</span></span>|<span data-ttu-id="d6b49-793">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-793">Value</span></span>|<span data-ttu-id="d6b49-794">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-794">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-788">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-788">unknown</span></span>|<span data-ttu-id="02272-789">–1</span><span class="sxs-lookup"><span data-stu-id="02272-789">-1</span></span>|<span data-ttu-id="02272-790">Найден.</span><span class="sxs-lookup"><span data-stu-id="02272-790">Unknown.</span></span>|
-|<span data-ttu-id="02272-791">локальный</span><span class="sxs-lookup"><span data-stu-id="02272-791">interactive</span></span>|<span data-ttu-id="02272-792">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-792">0</span></span>|<span data-ttu-id="02272-793">Вход в систему осуществляется в интерактивном режиме.</span><span class="sxs-lookup"><span data-stu-id="02272-793">Logon is interactive.</span></span>|
-|<span data-ttu-id="02272-794">Ремотеинтерактиве</span><span class="sxs-lookup"><span data-stu-id="02272-794">remoteInteractive</span></span>|<span data-ttu-id="02272-795">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-795">1</span></span>| <span data-ttu-id="02272-796">Вход выполняется в удаленном интерактивном режиме.</span><span class="sxs-lookup"><span data-stu-id="02272-796">Logon is remote interactive.</span></span>|
-|<span data-ttu-id="02272-797">сетью</span><span class="sxs-lookup"><span data-stu-id="02272-797">network</span></span>|<span data-ttu-id="02272-798">2</span><span class="sxs-lookup"><span data-stu-id="02272-798">2</span></span>| <span data-ttu-id="02272-799">Вход в сеть.</span><span class="sxs-lookup"><span data-stu-id="02272-799">Logon is network.</span></span>|
-|<span data-ttu-id="02272-800">batch</span><span class="sxs-lookup"><span data-stu-id="02272-800">batch</span></span>|<span data-ttu-id="02272-801">4</span><span class="sxs-lookup"><span data-stu-id="02272-801">3</span></span>| <span data-ttu-id="02272-802">Вход в пакет.</span><span class="sxs-lookup"><span data-stu-id="02272-802">Logon is batch.</span></span>|
-|<span data-ttu-id="02272-803">service</span><span class="sxs-lookup"><span data-stu-id="02272-803">service</span></span>|<span data-ttu-id="02272-804">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-804">4</span></span>| <span data-ttu-id="02272-805">Вход в службу.</span><span class="sxs-lookup"><span data-stu-id="02272-805">Logon is service.</span></span>|
+|<span data-ttu-id="d6b49-795">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-795">unknown</span></span>|<span data-ttu-id="d6b49-796">–1</span><span class="sxs-lookup"><span data-stu-id="d6b49-796">-1</span></span>|<span data-ttu-id="d6b49-797">Найден.</span><span class="sxs-lookup"><span data-stu-id="d6b49-797">Unknown.</span></span>|
+|<span data-ttu-id="d6b49-798">локальный</span><span class="sxs-lookup"><span data-stu-id="d6b49-798">interactive</span></span>|<span data-ttu-id="d6b49-799">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-799">0</span></span>|<span data-ttu-id="d6b49-800">Вход в систему осуществляется в интерактивном режиме.</span><span class="sxs-lookup"><span data-stu-id="d6b49-800">Logon is interactive.</span></span>|
+|<span data-ttu-id="d6b49-801">ремотеинтерактиве</span><span class="sxs-lookup"><span data-stu-id="d6b49-801">remoteInteractive</span></span>|<span data-ttu-id="d6b49-802">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-802">1</span></span>| <span data-ttu-id="d6b49-803">Вход выполняется в удаленном интерактивном режиме.</span><span class="sxs-lookup"><span data-stu-id="d6b49-803">Logon is remote interactive.</span></span>|
+|<span data-ttu-id="d6b49-804">сетью</span><span class="sxs-lookup"><span data-stu-id="d6b49-804">network</span></span>|<span data-ttu-id="d6b49-805">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-805">2</span></span>| <span data-ttu-id="d6b49-806">Вход в сеть.</span><span class="sxs-lookup"><span data-stu-id="d6b49-806">Logon is network.</span></span>|
+|<span data-ttu-id="d6b49-807">batch</span><span class="sxs-lookup"><span data-stu-id="d6b49-807">batch</span></span>|<span data-ttu-id="d6b49-808">4</span><span class="sxs-lookup"><span data-stu-id="d6b49-808">3</span></span>| <span data-ttu-id="d6b49-809">Вход в пакет.</span><span class="sxs-lookup"><span data-stu-id="d6b49-809">Logon is batch.</span></span>|
+|<span data-ttu-id="d6b49-810">service</span><span class="sxs-lookup"><span data-stu-id="d6b49-810">service</span></span>|<span data-ttu-id="d6b49-811">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-811">4</span></span>| <span data-ttu-id="d6b49-812">Вход в службу.</span><span class="sxs-lookup"><span data-stu-id="d6b49-812">Logon is service.</span></span>|
 
-### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="02272-806">значения Усераккаунтсекурититипе</span><span class="sxs-lookup"><span data-stu-id="02272-806">userAccountSecurityType values</span></span>
+### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="d6b49-813">значения Усераккаунтсекурититипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-813">userAccountSecurityType values</span></span>
 
-<span data-ttu-id="02272-807">Возможные значения для типов учетных записей пользователей (членство в группах), для каждого определения Windows.</span><span class="sxs-lookup"><span data-stu-id="02272-807">Possible values for user account types (group membership), per Windows definition.</span></span>
+<span data-ttu-id="d6b49-814">Возможные значения для типов учетных записей пользователей (членство в группах), для каждого определения Windows.</span><span class="sxs-lookup"><span data-stu-id="d6b49-814">Possible values for user account types (group membership), per Windows definition.</span></span>
 
-|<span data-ttu-id="02272-808">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-808">Member</span></span>|<span data-ttu-id="02272-809">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-809">Value</span></span>|<span data-ttu-id="02272-810">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-810">Description</span></span>|
+|<span data-ttu-id="d6b49-815">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-815">Member</span></span>|<span data-ttu-id="d6b49-816">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-816">Value</span></span>|<span data-ttu-id="d6b49-817">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-817">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="02272-811">unknown</span><span class="sxs-lookup"><span data-stu-id="02272-811">unknown</span></span>|<span data-ttu-id="02272-812">–1</span><span class="sxs-lookup"><span data-stu-id="02272-812">-1</span></span>|<span data-ttu-id="02272-813">Найден.</span><span class="sxs-lookup"><span data-stu-id="02272-813">Unknown.</span></span>|
-|<span data-ttu-id="02272-814">Стандартный</span><span class="sxs-lookup"><span data-stu-id="02272-814">standard</span></span>|<span data-ttu-id="02272-815">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-815">0</span></span>|<span data-ttu-id="02272-816">Член группы стандартных пользователей.</span><span class="sxs-lookup"><span data-stu-id="02272-816">Member of Standard Users group.</span></span>|
-|<span data-ttu-id="02272-817">потребление</span><span class="sxs-lookup"><span data-stu-id="02272-817">power</span></span>|<span data-ttu-id="02272-818">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-818">1</span></span>| <span data-ttu-id="02272-819">Член группы опытных пользователей.</span><span class="sxs-lookup"><span data-stu-id="02272-819">Member of Power Users group.</span></span>|
-|<span data-ttu-id="02272-820">имени</span><span class="sxs-lookup"><span data-stu-id="02272-820">administrator</span></span>|<span data-ttu-id="02272-821">2</span><span class="sxs-lookup"><span data-stu-id="02272-821">2</span></span>| <span data-ttu-id="02272-822">Член группы администраторов.</span><span class="sxs-lookup"><span data-stu-id="02272-822">Member of Administrators group.</span></span>|
+|<span data-ttu-id="d6b49-818">unknown</span><span class="sxs-lookup"><span data-stu-id="d6b49-818">unknown</span></span>|<span data-ttu-id="d6b49-819">–1</span><span class="sxs-lookup"><span data-stu-id="d6b49-819">-1</span></span>|<span data-ttu-id="d6b49-820">Найден.</span><span class="sxs-lookup"><span data-stu-id="d6b49-820">Unknown.</span></span>|
+|<span data-ttu-id="d6b49-821">Стандартный</span><span class="sxs-lookup"><span data-stu-id="d6b49-821">standard</span></span>|<span data-ttu-id="d6b49-822">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-822">0</span></span>|<span data-ttu-id="d6b49-823">Член группы стандартных пользователей.</span><span class="sxs-lookup"><span data-stu-id="d6b49-823">Member of Standard Users group.</span></span>|
+|<span data-ttu-id="d6b49-824">потребление</span><span class="sxs-lookup"><span data-stu-id="d6b49-824">power</span></span>|<span data-ttu-id="d6b49-825">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-825">1</span></span>| <span data-ttu-id="d6b49-826">Член группы опытных пользователей.</span><span class="sxs-lookup"><span data-stu-id="d6b49-826">Member of Power Users group.</span></span>|
+|<span data-ttu-id="d6b49-827">имени</span><span class="sxs-lookup"><span data-stu-id="d6b49-827">administrator</span></span>|<span data-ttu-id="d6b49-828">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-828">2</span></span>| <span data-ttu-id="d6b49-829">Член группы администраторов.</span><span class="sxs-lookup"><span data-stu-id="d6b49-829">Member of Administrators group.</span></span>|
 
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a><span data-ttu-id="02272-823">значения Скопеоператормултивалуедкомпарисонтипе</span><span class="sxs-lookup"><span data-stu-id="02272-823">scopeOperatorMultiValuedComparisonType values</span></span>
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a><span data-ttu-id="d6b49-830">значения Скопеоператормултивалуедкомпарисонтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-830">scopeOperatorMultiValuedComparisonType values</span></span>
 
-|<span data-ttu-id="02272-824">Member</span><span class="sxs-lookup"><span data-stu-id="02272-824">Member</span></span>|
+|<span data-ttu-id="d6b49-831">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-831">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-825">ко</span><span class="sxs-lookup"><span data-stu-id="02272-825">all</span></span>|
-|<span data-ttu-id="02272-826">любой</span><span class="sxs-lookup"><span data-stu-id="02272-826">any</span></span>|
+|<span data-ttu-id="d6b49-832">ко</span><span class="sxs-lookup"><span data-stu-id="d6b49-832">all</span></span>|
+|<span data-ttu-id="d6b49-833">любой</span><span class="sxs-lookup"><span data-stu-id="d6b49-833">any</span></span>|
 
-### <a name="risklevel-values"></a><span data-ttu-id="02272-827">значения Рисклевел</span><span class="sxs-lookup"><span data-stu-id="02272-827">riskLevel values</span></span>
+### <a name="risklevel-values"></a><span data-ttu-id="d6b49-834">значения Рисклевел</span><span class="sxs-lookup"><span data-stu-id="d6b49-834">riskLevel values</span></span>
 
-|<span data-ttu-id="02272-828">Member</span><span class="sxs-lookup"><span data-stu-id="02272-828">Member</span></span>|
+|<span data-ttu-id="d6b49-835">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-835">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-829">потребление</span><span class="sxs-lookup"><span data-stu-id="02272-829">low</span></span>|
-|<span data-ttu-id="02272-830">medium</span><span class="sxs-lookup"><span data-stu-id="02272-830">medium</span></span>|
-|<span data-ttu-id="02272-831">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="02272-831">high</span></span>|
-|<span data-ttu-id="02272-832">hidden</span><span class="sxs-lookup"><span data-stu-id="02272-832">hidden</span></span>|
-|<span data-ttu-id="02272-833">none</span><span class="sxs-lookup"><span data-stu-id="02272-833">none</span></span>|
-|<span data-ttu-id="02272-834">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-834">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-836">потребление</span><span class="sxs-lookup"><span data-stu-id="d6b49-836">low</span></span>|
+|<span data-ttu-id="d6b49-837">medium</span><span class="sxs-lookup"><span data-stu-id="d6b49-837">medium</span></span>|
+|<span data-ttu-id="d6b49-838">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="d6b49-838">high</span></span>|
+|<span data-ttu-id="d6b49-839">hidden</span><span class="sxs-lookup"><span data-stu-id="d6b49-839">hidden</span></span>|
+|<span data-ttu-id="d6b49-840">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-840">none</span></span>|
+|<span data-ttu-id="d6b49-841">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-841">unknownFutureValue</span></span>|
 
-### <a name="riskstate-values"></a><span data-ttu-id="02272-835">значения Рискстате</span><span class="sxs-lookup"><span data-stu-id="02272-835">riskState values</span></span>
+### <a name="riskstate-values"></a><span data-ttu-id="d6b49-842">значения Рискстате</span><span class="sxs-lookup"><span data-stu-id="d6b49-842">riskState values</span></span>
 
-|<span data-ttu-id="02272-836">Member</span><span class="sxs-lookup"><span data-stu-id="02272-836">Member</span></span>|
+|<span data-ttu-id="d6b49-843">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-843">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-837">none</span><span class="sxs-lookup"><span data-stu-id="02272-837">none</span></span>|
-|<span data-ttu-id="02272-838">Конфирмедсафе</span><span class="sxs-lookup"><span data-stu-id="02272-838">confirmedSafe</span></span>|
-|<span data-ttu-id="02272-839">исправленных</span><span class="sxs-lookup"><span data-stu-id="02272-839">remediated</span></span>|
-|<span data-ttu-id="02272-840">закрытые</span><span class="sxs-lookup"><span data-stu-id="02272-840">dismissed</span></span>|
-|<span data-ttu-id="02272-841">Атриск</span><span class="sxs-lookup"><span data-stu-id="02272-841">atRisk</span></span>|
-|<span data-ttu-id="02272-842">Конфирмедкомпромисед</span><span class="sxs-lookup"><span data-stu-id="02272-842">confirmedCompromised</span></span>|
-|<span data-ttu-id="02272-843">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-843">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-844">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-844">none</span></span>|
+|<span data-ttu-id="d6b49-845">конфирмедсафе</span><span class="sxs-lookup"><span data-stu-id="d6b49-845">confirmedSafe</span></span>|
+|<span data-ttu-id="d6b49-846">исправленных</span><span class="sxs-lookup"><span data-stu-id="d6b49-846">remediated</span></span>|
+|<span data-ttu-id="d6b49-847">закрытые</span><span class="sxs-lookup"><span data-stu-id="d6b49-847">dismissed</span></span>|
+|<span data-ttu-id="d6b49-848">атриск</span><span class="sxs-lookup"><span data-stu-id="d6b49-848">atRisk</span></span>|
+|<span data-ttu-id="d6b49-849">конфирмедкомпромисед</span><span class="sxs-lookup"><span data-stu-id="d6b49-849">confirmedCompromised</span></span>|
+|<span data-ttu-id="d6b49-850">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-850">unknownFutureValue</span></span>|
 
-### <a name="riskdetail-values"></a><span data-ttu-id="02272-844">значения Рискдетаил</span><span class="sxs-lookup"><span data-stu-id="02272-844">riskDetail values</span></span>
+### <a name="riskdetail-values"></a><span data-ttu-id="d6b49-851">значения Рискдетаил</span><span class="sxs-lookup"><span data-stu-id="d6b49-851">riskDetail values</span></span>
 
-|<span data-ttu-id="02272-845">Member</span><span class="sxs-lookup"><span data-stu-id="02272-845">Member</span></span>|
+|<span data-ttu-id="d6b49-852">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-852">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-846">none</span><span class="sxs-lookup"><span data-stu-id="02272-846">none</span></span>|
-|<span data-ttu-id="02272-847">Админженератедтемпорарипассворд</span><span class="sxs-lookup"><span data-stu-id="02272-847">adminGeneratedTemporaryPassword</span></span>|
-|<span data-ttu-id="02272-848">Усерперформедсекуредпассвордчанже</span><span class="sxs-lookup"><span data-stu-id="02272-848">userPerformedSecuredPasswordChange</span></span>|
-|<span data-ttu-id="02272-849">Усерперформедсекуредпассвордресет</span><span class="sxs-lookup"><span data-stu-id="02272-849">userPerformedSecuredPasswordReset</span></span>|
-|<span data-ttu-id="02272-850">Админконфирмедсигнинсафе</span><span class="sxs-lookup"><span data-stu-id="02272-850">adminConfirmedSigninSafe</span></span>|
-|<span data-ttu-id="02272-851">Аиконфирмедсигнинсафе</span><span class="sxs-lookup"><span data-stu-id="02272-851">aiConfirmedSigninSafe</span></span>|
-|<span data-ttu-id="02272-852">Усерпасседмфадривенбирискбаседполици</span><span class="sxs-lookup"><span data-stu-id="02272-852">userPassedMFADrivenByRiskBasedPolicy</span></span>|
-|<span data-ttu-id="02272-853">Админдисмисседаллрискфорусер</span><span class="sxs-lookup"><span data-stu-id="02272-853">adminDismissedAllRiskForUser</span></span>|
-|<span data-ttu-id="02272-854">Админконфирмедсигнинкомпромисед</span><span class="sxs-lookup"><span data-stu-id="02272-854">adminConfirmedSigninCompromised</span></span>|
-|<span data-ttu-id="02272-855">Админконфирмедусеркомпромисед</span><span class="sxs-lookup"><span data-stu-id="02272-855">adminConfirmedUserCompromised</span></span>|
-|<span data-ttu-id="02272-856">hidden</span><span class="sxs-lookup"><span data-stu-id="02272-856">hidden</span></span>|
-|<span data-ttu-id="02272-857">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-857">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-853">none</span><span class="sxs-lookup"><span data-stu-id="d6b49-853">none</span></span>|
+|<span data-ttu-id="d6b49-854">админженератедтемпорарипассворд</span><span class="sxs-lookup"><span data-stu-id="d6b49-854">adminGeneratedTemporaryPassword</span></span>|
+|<span data-ttu-id="d6b49-855">усерперформедсекуредпассвордчанже</span><span class="sxs-lookup"><span data-stu-id="d6b49-855">userPerformedSecuredPasswordChange</span></span>|
+|<span data-ttu-id="d6b49-856">усерперформедсекуредпассвордресет</span><span class="sxs-lookup"><span data-stu-id="d6b49-856">userPerformedSecuredPasswordReset</span></span>|
+|<span data-ttu-id="d6b49-857">админконфирмедсигнинсафе</span><span class="sxs-lookup"><span data-stu-id="d6b49-857">adminConfirmedSigninSafe</span></span>|
+|<span data-ttu-id="d6b49-858">аиконфирмедсигнинсафе</span><span class="sxs-lookup"><span data-stu-id="d6b49-858">aiConfirmedSigninSafe</span></span>|
+|<span data-ttu-id="d6b49-859">усерпасседмфадривенбирискбаседполици</span><span class="sxs-lookup"><span data-stu-id="d6b49-859">userPassedMFADrivenByRiskBasedPolicy</span></span>|
+|<span data-ttu-id="d6b49-860">админдисмисседаллрискфорусер</span><span class="sxs-lookup"><span data-stu-id="d6b49-860">adminDismissedAllRiskForUser</span></span>|
+|<span data-ttu-id="d6b49-861">админконфирмедсигнинкомпромисед</span><span class="sxs-lookup"><span data-stu-id="d6b49-861">adminConfirmedSigninCompromised</span></span>|
+|<span data-ttu-id="d6b49-862">админконфирмедусеркомпромисед</span><span class="sxs-lookup"><span data-stu-id="d6b49-862">adminConfirmedUserCompromised</span></span>|
+|<span data-ttu-id="d6b49-863">hidden</span><span class="sxs-lookup"><span data-stu-id="d6b49-863">hidden</span></span>|
+|<span data-ttu-id="d6b49-864">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-864">unknownFutureValue</span></span>|
 
-### <a name="referenceattachmentpermission-values"></a><span data-ttu-id="02272-858">значения referenceAttachmentPermission</span><span class="sxs-lookup"><span data-stu-id="02272-858">referenceAttachmentPermission values</span></span>
+### <a name="referenceattachmentpermission-values"></a><span data-ttu-id="d6b49-865">значения referenceAttachmentPermission</span><span class="sxs-lookup"><span data-stu-id="d6b49-865">referenceAttachmentPermission values</span></span>
 
-|<span data-ttu-id="02272-859">Member</span><span class="sxs-lookup"><span data-stu-id="02272-859">Member</span></span>|
+|<span data-ttu-id="d6b49-866">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-866">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-860">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-860">other</span></span>|
-|<span data-ttu-id="02272-861">view</span><span class="sxs-lookup"><span data-stu-id="02272-861">view</span></span>|
-|<span data-ttu-id="02272-862">edit</span><span class="sxs-lookup"><span data-stu-id="02272-862">edit</span></span>|
-|<span data-ttu-id="02272-863">Анонимаусвиев</span><span class="sxs-lookup"><span data-stu-id="02272-863">anonymousView</span></span>|
-|<span data-ttu-id="02272-864">Анонимауседит</span><span class="sxs-lookup"><span data-stu-id="02272-864">anonymousEdit</span></span>|
-|<span data-ttu-id="02272-865">Организатионвиев</span><span class="sxs-lookup"><span data-stu-id="02272-865">organizationView</span></span>|
-|<span data-ttu-id="02272-866">Организатионедит</span><span class="sxs-lookup"><span data-stu-id="02272-866">organizationEdit</span></span>|
+|<span data-ttu-id="d6b49-867">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-867">other</span></span>|
+|<span data-ttu-id="d6b49-868">view</span><span class="sxs-lookup"><span data-stu-id="d6b49-868">view</span></span>|
+|<span data-ttu-id="d6b49-869">edit</span><span class="sxs-lookup"><span data-stu-id="d6b49-869">edit</span></span>|
+|<span data-ttu-id="d6b49-870">анонимаусвиев</span><span class="sxs-lookup"><span data-stu-id="d6b49-870">anonymousView</span></span>|
+|<span data-ttu-id="d6b49-871">анонимауседит</span><span class="sxs-lookup"><span data-stu-id="d6b49-871">anonymousEdit</span></span>|
+|<span data-ttu-id="d6b49-872">организатионвиев</span><span class="sxs-lookup"><span data-stu-id="d6b49-872">organizationView</span></span>|
+|<span data-ttu-id="d6b49-873">организатионедит</span><span class="sxs-lookup"><span data-stu-id="d6b49-873">organizationEdit</span></span>|
 
-### <a name="referenceattachmentprovider-values"></a><span data-ttu-id="02272-867">значения перечислений — referenceattachmentprovider</span><span class="sxs-lookup"><span data-stu-id="02272-867">referenceAttachmentProvider values</span></span>
+### <a name="referenceattachmentprovider-values"></a><span data-ttu-id="d6b49-874">значения перечислений — referenceattachmentprovider</span><span class="sxs-lookup"><span data-stu-id="d6b49-874">referenceAttachmentProvider values</span></span>
 
-|<span data-ttu-id="02272-868">Member</span><span class="sxs-lookup"><span data-stu-id="02272-868">Member</span></span>|
+|<span data-ttu-id="d6b49-875">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-875">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-869">остальные</span><span class="sxs-lookup"><span data-stu-id="02272-869">other</span></span>|
-|<span data-ttu-id="02272-870">Онедривебусинесс</span><span class="sxs-lookup"><span data-stu-id="02272-870">oneDriveBusiness</span></span>|
-|<span data-ttu-id="02272-871">Онедривеконсумер</span><span class="sxs-lookup"><span data-stu-id="02272-871">oneDriveConsumer</span></span>|
-|<span data-ttu-id="02272-872">оставляют</span><span class="sxs-lookup"><span data-stu-id="02272-872">dropbox</span></span>|
+|<span data-ttu-id="d6b49-876">остальные</span><span class="sxs-lookup"><span data-stu-id="d6b49-876">other</span></span>|
+|<span data-ttu-id="d6b49-877">онедривебусинесс</span><span class="sxs-lookup"><span data-stu-id="d6b49-877">oneDriveBusiness</span></span>|
+|<span data-ttu-id="d6b49-878">онедривеконсумер</span><span class="sxs-lookup"><span data-stu-id="d6b49-878">oneDriveConsumer</span></span>|
+|<span data-ttu-id="d6b49-879">оставляют</span><span class="sxs-lookup"><span data-stu-id="d6b49-879">dropbox</span></span>|
 
-### <a name="riskeventtype-values"></a><span data-ttu-id="02272-873">значения Рискевенттипе</span><span class="sxs-lookup"><span data-stu-id="02272-873">riskEventType values</span></span>
+### <a name="riskeventtype-values"></a><span data-ttu-id="d6b49-880">значения Рискевенттипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-880">riskEventType values</span></span>
 
-|<span data-ttu-id="02272-874">Member</span><span class="sxs-lookup"><span data-stu-id="02272-874">Member</span></span>|
+|<span data-ttu-id="d6b49-881">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-881">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-875">Унликелитравел</span><span class="sxs-lookup"><span data-stu-id="02272-875">unlikelyTravel</span></span>|
-|<span data-ttu-id="02272-876">Анонимизедипаддресс</span><span class="sxs-lookup"><span data-stu-id="02272-876">anonymizedIPAddress</span></span>|
-|<span data-ttu-id="02272-877">МалиЦиаусипаддресс</span><span class="sxs-lookup"><span data-stu-id="02272-877">maliciousIPAddress</span></span>|
-|<span data-ttu-id="02272-878">Унфамилиарфеатурес</span><span class="sxs-lookup"><span data-stu-id="02272-878">unfamiliarFeatures</span></span>|
-|<span data-ttu-id="02272-879">Малвареинфектедипаддресс</span><span class="sxs-lookup"><span data-stu-id="02272-879">malwareInfectedIPAddress</span></span>|
-|<span data-ttu-id="02272-880">СуспиЦиаусипаддресс</span><span class="sxs-lookup"><span data-stu-id="02272-880">suspiciousIPAddress</span></span>|
-|<span data-ttu-id="02272-881">Леакедкредентиалс</span><span class="sxs-lookup"><span data-stu-id="02272-881">leakedCredentials</span></span>|
-|<span data-ttu-id="02272-882">Инвестигатионссреатинтеллиженце</span><span class="sxs-lookup"><span data-stu-id="02272-882">investigationsThreatIntelligence</span></span>|
-|<span data-ttu-id="02272-883">шаблонов</span><span class="sxs-lookup"><span data-stu-id="02272-883">generic</span></span>|
-|<span data-ttu-id="02272-884">Админконфирмедусеркомпромисед</span><span class="sxs-lookup"><span data-stu-id="02272-884">adminConfirmedUserCompromised</span></span>|
-|<span data-ttu-id="02272-885">Мкасимпоссиблетравел</span><span class="sxs-lookup"><span data-stu-id="02272-885">mcasImpossibleTravel</span></span>|
-|<span data-ttu-id="02272-886">МкассуспиЦиаусинбоксманипулатионрулес</span><span class="sxs-lookup"><span data-stu-id="02272-886">mcasSuspiciousInboxManipulationRules</span></span>|
-|<span data-ttu-id="02272-887">Инвестигатионссреатинтеллиженцесигнинлинкед</span><span class="sxs-lookup"><span data-stu-id="02272-887">investigationsThreatIntelligenceSigninLinked</span></span>|
-|<span data-ttu-id="02272-888">МалиЦиаусипаддрессвалидкредентиалсблоккедип</span><span class="sxs-lookup"><span data-stu-id="02272-888">maliciousIPAddressValidCredentialsBlockedIP</span></span>|
-|<span data-ttu-id="02272-889">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-889">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-882">унликелитравел</span><span class="sxs-lookup"><span data-stu-id="d6b49-882">unlikelyTravel</span></span>|
+|<span data-ttu-id="d6b49-883">анонимизедипаддресс</span><span class="sxs-lookup"><span data-stu-id="d6b49-883">anonymizedIPAddress</span></span>|
+|<span data-ttu-id="d6b49-884">малиЦиаусипаддресс</span><span class="sxs-lookup"><span data-stu-id="d6b49-884">maliciousIPAddress</span></span>|
+|<span data-ttu-id="d6b49-885">унфамилиарфеатурес</span><span class="sxs-lookup"><span data-stu-id="d6b49-885">unfamiliarFeatures</span></span>|
+|<span data-ttu-id="d6b49-886">малвареинфектедипаддресс</span><span class="sxs-lookup"><span data-stu-id="d6b49-886">malwareInfectedIPAddress</span></span>|
+|<span data-ttu-id="d6b49-887">суспиЦиаусипаддресс</span><span class="sxs-lookup"><span data-stu-id="d6b49-887">suspiciousIPAddress</span></span>|
+|<span data-ttu-id="d6b49-888">леакедкредентиалс</span><span class="sxs-lookup"><span data-stu-id="d6b49-888">leakedCredentials</span></span>|
+|<span data-ttu-id="d6b49-889">инвестигатионссреатинтеллиженце</span><span class="sxs-lookup"><span data-stu-id="d6b49-889">investigationsThreatIntelligence</span></span>|
+|<span data-ttu-id="d6b49-890">шаблонов</span><span class="sxs-lookup"><span data-stu-id="d6b49-890">generic</span></span>|
+|<span data-ttu-id="d6b49-891">админконфирмедусеркомпромисед</span><span class="sxs-lookup"><span data-stu-id="d6b49-891">adminConfirmedUserCompromised</span></span>|
+|<span data-ttu-id="d6b49-892">мкасимпоссиблетравел</span><span class="sxs-lookup"><span data-stu-id="d6b49-892">mcasImpossibleTravel</span></span>|
+|<span data-ttu-id="d6b49-893">мкассуспиЦиаусинбоксманипулатионрулес</span><span class="sxs-lookup"><span data-stu-id="d6b49-893">mcasSuspiciousInboxManipulationRules</span></span>|
+|<span data-ttu-id="d6b49-894">инвестигатионссреатинтеллиженцесигнинлинкед</span><span class="sxs-lookup"><span data-stu-id="d6b49-894">investigationsThreatIntelligenceSigninLinked</span></span>|
+|<span data-ttu-id="d6b49-895">малиЦиаусипаддрессвалидкредентиалсблоккедип</span><span class="sxs-lookup"><span data-stu-id="d6b49-895">maliciousIPAddressValidCredentialsBlockedIP</span></span>|
+|<span data-ttu-id="d6b49-896">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-896">unknownFutureValue</span></span>|
 
-### <a name="networktype-values"></a><span data-ttu-id="02272-890">значения Нетворктипе</span><span class="sxs-lookup"><span data-stu-id="02272-890">networkType values</span></span>
+### <a name="networktype-values"></a><span data-ttu-id="d6b49-897">значения Нетворктипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-897">networkType values</span></span>
 
-|<span data-ttu-id="02272-891">Member</span><span class="sxs-lookup"><span data-stu-id="02272-891">Member</span></span>|
+|<span data-ttu-id="d6b49-898">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-898">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-892">Внутренняя</span><span class="sxs-lookup"><span data-stu-id="02272-892">intranet</span></span>|
-|<span data-ttu-id="02272-893">экстрасети</span><span class="sxs-lookup"><span data-stu-id="02272-893">extranet</span></span>|
-|<span data-ttu-id="02272-894">Намеднетворк</span><span class="sxs-lookup"><span data-stu-id="02272-894">namedNetwork</span></span>|
-|<span data-ttu-id="02272-895">проверен</span><span class="sxs-lookup"><span data-stu-id="02272-895">trusted</span></span>|
-|<span data-ttu-id="02272-896">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-896">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-899">Внутренняя</span><span class="sxs-lookup"><span data-stu-id="d6b49-899">intranet</span></span>|
+|<span data-ttu-id="d6b49-900">экстрасети</span><span class="sxs-lookup"><span data-stu-id="d6b49-900">extranet</span></span>|
+|<span data-ttu-id="d6b49-901">намеднетворк</span><span class="sxs-lookup"><span data-stu-id="d6b49-901">namedNetwork</span></span>|
+|<span data-ttu-id="d6b49-902">проверен</span><span class="sxs-lookup"><span data-stu-id="d6b49-902">trusted</span></span>|
+|<span data-ttu-id="d6b49-903">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-903">unknownFutureValue</span></span>|
 
-### <a name="exchangeidformat-values"></a><span data-ttu-id="02272-897">значения Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="02272-897">exchangeIdFormat values</span></span>
+### <a name="exchangeidformat-values"></a><span data-ttu-id="d6b49-904">значения Ексчанжеидформат</span><span class="sxs-lookup"><span data-stu-id="d6b49-904">exchangeIdFormat values</span></span>
 
-|<span data-ttu-id="02272-898">Member</span><span class="sxs-lookup"><span data-stu-id="02272-898">Member</span></span>|
+|<span data-ttu-id="d6b49-905">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-905">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-899">Код</span><span class="sxs-lookup"><span data-stu-id="02272-899">entryId</span></span>|
-|<span data-ttu-id="02272-900">Евсид</span><span class="sxs-lookup"><span data-stu-id="02272-900">ewsId</span></span>|
-|<span data-ttu-id="02272-901">Иммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="02272-901">immutableEntryId</span></span>|
-|<span data-ttu-id="02272-902">Рестид</span><span class="sxs-lookup"><span data-stu-id="02272-902">restId</span></span>|
-|<span data-ttu-id="02272-903">Рестиммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="02272-903">restImmutableEntryId</span></span>|
+|<span data-ttu-id="d6b49-906">Код</span><span class="sxs-lookup"><span data-stu-id="d6b49-906">entryId</span></span>|
+|<span data-ttu-id="d6b49-907">евсид</span><span class="sxs-lookup"><span data-stu-id="d6b49-907">ewsId</span></span>|
+|<span data-ttu-id="d6b49-908">иммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="d6b49-908">immutableEntryId</span></span>|
+|<span data-ttu-id="d6b49-909">рестид</span><span class="sxs-lookup"><span data-stu-id="d6b49-909">restId</span></span>|
+|<span data-ttu-id="d6b49-910">рестиммутаблинтрид</span><span class="sxs-lookup"><span data-stu-id="d6b49-910">restImmutableEntryId</span></span>|
 
-### <a name="attributeflowbehavior-values"></a><span data-ttu-id="02272-904">значения Аттрибутефловбехавиор</span><span class="sxs-lookup"><span data-stu-id="02272-904">attributeFlowBehavior values</span></span>
+### <a name="attributeflowbehavior-values"></a><span data-ttu-id="d6b49-911">значения Аттрибутефловбехавиор</span><span class="sxs-lookup"><span data-stu-id="d6b49-911">attributeFlowBehavior values</span></span>
 
-|<span data-ttu-id="02272-905">Member</span><span class="sxs-lookup"><span data-stu-id="02272-905">Member</span></span>|
+|<span data-ttu-id="d6b49-912">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-912">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-906">Фловвхенчанжед</span><span class="sxs-lookup"><span data-stu-id="02272-906">flowWhenChanged</span></span>|
-|<span data-ttu-id="02272-907">Фловалвайс</span><span class="sxs-lookup"><span data-stu-id="02272-907">flowAlways</span></span>|
+|<span data-ttu-id="d6b49-913">фловвхенчанжед</span><span class="sxs-lookup"><span data-stu-id="d6b49-913">flowWhenChanged</span></span>|
+|<span data-ttu-id="d6b49-914">фловалвайс</span><span class="sxs-lookup"><span data-stu-id="d6b49-914">flowAlways</span></span>|
 
-### <a name="attributeflowtype-values"></a><span data-ttu-id="02272-908">значения Аттрибутефловтипе</span><span class="sxs-lookup"><span data-stu-id="02272-908">attributeFlowType values</span></span>
+### <a name="attributeflowtype-values"></a><span data-ttu-id="d6b49-915">значения Аттрибутефловтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-915">attributeFlowType values</span></span>
 
-|<span data-ttu-id="02272-909">Member</span><span class="sxs-lookup"><span data-stu-id="02272-909">Member</span></span>|
+|<span data-ttu-id="d6b49-916">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-916">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-910">Постоянное</span><span class="sxs-lookup"><span data-stu-id="02272-910">always</span></span>|
-|<span data-ttu-id="02272-911">Обжектаддонли</span><span class="sxs-lookup"><span data-stu-id="02272-911">objectAddOnly</span></span>|
-|<span data-ttu-id="02272-912">Мултивалуеаддонли</span><span class="sxs-lookup"><span data-stu-id="02272-912">multiValueAddOnly</span></span>|
-|<span data-ttu-id="02272-913">Рестид</span><span class="sxs-lookup"><span data-stu-id="02272-913">restId</span></span>|
+|<span data-ttu-id="d6b49-917">Постоянное</span><span class="sxs-lookup"><span data-stu-id="d6b49-917">always</span></span>|
+|<span data-ttu-id="d6b49-918">обжектаддонли</span><span class="sxs-lookup"><span data-stu-id="d6b49-918">objectAddOnly</span></span>|
+|<span data-ttu-id="d6b49-919">мултивалуеаддонли</span><span class="sxs-lookup"><span data-stu-id="d6b49-919">multiValueAddOnly</span></span>|
+|<span data-ttu-id="d6b49-920">рестид</span><span class="sxs-lookup"><span data-stu-id="d6b49-920">restId</span></span>|
 
-### <a name="objectflowtypes-values"></a><span data-ttu-id="02272-914">значения Обжектфловтипес</span><span class="sxs-lookup"><span data-stu-id="02272-914">objectFlowTypes values</span></span>
+### <a name="objectflowtypes-values"></a><span data-ttu-id="d6b49-921">значения Обжектфловтипес</span><span class="sxs-lookup"><span data-stu-id="d6b49-921">objectFlowTypes values</span></span>
 
-|<span data-ttu-id="02272-915">Элемент</span><span class="sxs-lookup"><span data-stu-id="02272-915">Member</span></span>| <span data-ttu-id="02272-916">Значение</span><span class="sxs-lookup"><span data-stu-id="02272-916">Value</span></span>|
+|<span data-ttu-id="d6b49-922">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6b49-922">Member</span></span>| <span data-ttu-id="d6b49-923">Значение</span><span class="sxs-lookup"><span data-stu-id="d6b49-923">Value</span></span>|
 |:---|:-------|
-|<span data-ttu-id="02272-917">Нет</span><span class="sxs-lookup"><span data-stu-id="02272-917">None</span></span>| <span data-ttu-id="02272-918">нуль</span><span class="sxs-lookup"><span data-stu-id="02272-918">0</span></span>      |
-|<span data-ttu-id="02272-919">Add</span><span class="sxs-lookup"><span data-stu-id="02272-919">Add</span></span>| <span data-ttu-id="02272-920">1,1</span><span class="sxs-lookup"><span data-stu-id="02272-920">1</span></span>       |
-|<span data-ttu-id="02272-921">Update</span><span class="sxs-lookup"><span data-stu-id="02272-921">Update</span></span>|<span data-ttu-id="02272-922">2</span><span class="sxs-lookup"><span data-stu-id="02272-922">2</span></span>     |
-|<span data-ttu-id="02272-923">Delete</span><span class="sxs-lookup"><span data-stu-id="02272-923">Delete</span></span>|<span data-ttu-id="02272-924">SP4</span><span class="sxs-lookup"><span data-stu-id="02272-924">4</span></span>     |
+|<span data-ttu-id="d6b49-924">Нет</span><span class="sxs-lookup"><span data-stu-id="d6b49-924">None</span></span>| <span data-ttu-id="d6b49-925">нуль</span><span class="sxs-lookup"><span data-stu-id="d6b49-925">0</span></span>      |
+|<span data-ttu-id="d6b49-926">Add</span><span class="sxs-lookup"><span data-stu-id="d6b49-926">Add</span></span>| <span data-ttu-id="d6b49-927">1,1</span><span class="sxs-lookup"><span data-stu-id="d6b49-927">1</span></span>       |
+|<span data-ttu-id="d6b49-928">Update</span><span class="sxs-lookup"><span data-stu-id="d6b49-928">Update</span></span>|<span data-ttu-id="d6b49-929">2</span><span class="sxs-lookup"><span data-stu-id="d6b49-929">2</span></span>     |
+|<span data-ttu-id="d6b49-930">Delete</span><span class="sxs-lookup"><span data-stu-id="d6b49-930">Delete</span></span>|<span data-ttu-id="d6b49-931">SP4</span><span class="sxs-lookup"><span data-stu-id="d6b49-931">4</span></span>     |
 
-### <a name="chatmessagetype-values"></a><span data-ttu-id="02272-925">значения Чатмессажетипе</span><span class="sxs-lookup"><span data-stu-id="02272-925">chatMessageType values</span></span>
+### <a name="chatmessagetype-values"></a><span data-ttu-id="d6b49-932">значения Чатмессажетипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-932">chatMessageType values</span></span>
 
-|<span data-ttu-id="02272-926">Member</span><span class="sxs-lookup"><span data-stu-id="02272-926">Member</span></span>|
+|<span data-ttu-id="d6b49-933">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-933">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-927">message</span><span class="sxs-lookup"><span data-stu-id="02272-927">message</span></span>|
+|<span data-ttu-id="d6b49-934">message</span><span class="sxs-lookup"><span data-stu-id="d6b49-934">message</span></span>|
 
-### <a name="chatmessageimportance-values"></a><span data-ttu-id="02272-928">значения Чатмессажеимпортанце</span><span class="sxs-lookup"><span data-stu-id="02272-928">chatMessageImportance values</span></span>
+### <a name="chatmessageimportance-values"></a><span data-ttu-id="d6b49-935">значения Чатмессажеимпортанце</span><span class="sxs-lookup"><span data-stu-id="d6b49-935">chatMessageImportance values</span></span>
 
-|<span data-ttu-id="02272-929">Member</span><span class="sxs-lookup"><span data-stu-id="02272-929">Member</span></span>|
+|<span data-ttu-id="d6b49-936">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-936">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-930">обычный</span><span class="sxs-lookup"><span data-stu-id="02272-930">normal</span></span>|
-|<span data-ttu-id="02272-931">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="02272-931">high</span></span>|
-|<span data-ttu-id="02272-932">передачи</span><span class="sxs-lookup"><span data-stu-id="02272-932">urgent</span></span>|
+|<span data-ttu-id="d6b49-937">обычный</span><span class="sxs-lookup"><span data-stu-id="d6b49-937">normal</span></span>|
+|<span data-ttu-id="d6b49-938">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="d6b49-938">high</span></span>|
+|<span data-ttu-id="d6b49-939">передачи</span><span class="sxs-lookup"><span data-stu-id="d6b49-939">urgent</span></span>|
 
-### <a name="stagedfeaturename-values"></a><span data-ttu-id="02272-933">значения Стажедфеатуренаме</span><span class="sxs-lookup"><span data-stu-id="02272-933">stagedFeatureName values</span></span>
+### <a name="stagedfeaturename-values"></a><span data-ttu-id="d6b49-940">значения Стажедфеатуренаме</span><span class="sxs-lookup"><span data-stu-id="d6b49-940">stagedFeatureName values</span></span>
 
-|<span data-ttu-id="02272-934">Member</span><span class="sxs-lookup"><span data-stu-id="02272-934">Member</span></span>|<span data-ttu-id="02272-935">Описание</span><span class="sxs-lookup"><span data-stu-id="02272-935">Description</span></span>|
+|<span data-ttu-id="d6b49-941">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-941">Member</span></span>|<span data-ttu-id="d6b49-942">Описание</span><span class="sxs-lookup"><span data-stu-id="d6b49-942">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="02272-936">Пасссраугхаусентикатион</span><span class="sxs-lookup"><span data-stu-id="02272-936">passthroughAuthentication</span></span>|<span data-ttu-id="02272-937">Сквозная проверка подлинности</span><span class="sxs-lookup"><span data-stu-id="02272-937">Passthrough Authentication</span></span>|
-|<span data-ttu-id="02272-938">Сеамлессссо</span><span class="sxs-lookup"><span data-stu-id="02272-938">seamlessSso</span></span>|<span data-ttu-id="02272-939">Единый вход</span><span class="sxs-lookup"><span data-stu-id="02272-939">Seamless Single Sign-on</span></span>|
-|<span data-ttu-id="02272-940">Пассвордхашсинк</span><span class="sxs-lookup"><span data-stu-id="02272-940">passwordHashSync</span></span>|<span data-ttu-id="02272-941">Синхронизация хэша паролей</span><span class="sxs-lookup"><span data-stu-id="02272-941">Password Hash Synchronization</span></span>|
+|<span data-ttu-id="d6b49-943">пасссраугхаусентикатион</span><span class="sxs-lookup"><span data-stu-id="d6b49-943">passthroughAuthentication</span></span>|<span data-ttu-id="d6b49-944">Сквозная проверка подлинности</span><span class="sxs-lookup"><span data-stu-id="d6b49-944">Passthrough Authentication</span></span>|
+|<span data-ttu-id="d6b49-945">сеамлессссо</span><span class="sxs-lookup"><span data-stu-id="d6b49-945">seamlessSso</span></span>|<span data-ttu-id="d6b49-946">Единый вход</span><span class="sxs-lookup"><span data-stu-id="d6b49-946">Seamless Single Sign-on</span></span>|
+|<span data-ttu-id="d6b49-947">пассвордхашсинк</span><span class="sxs-lookup"><span data-stu-id="d6b49-947">passwordHashSync</span></span>|<span data-ttu-id="d6b49-948">Синхронизация хэша паролей</span><span class="sxs-lookup"><span data-stu-id="d6b49-948">Password Hash Synchronization</span></span>|
 
-### <a name="tokenissuertype-values"></a><span data-ttu-id="02272-942">значения Токениссуертипе</span><span class="sxs-lookup"><span data-stu-id="02272-942">tokenIssuerType values</span></span>
+### <a name="tokenissuertype-values"></a><span data-ttu-id="d6b49-949">значения Токениссуертипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-949">tokenIssuerType values</span></span>
 
-|<span data-ttu-id="02272-943">Member</span><span class="sxs-lookup"><span data-stu-id="02272-943">Member</span></span>|
+|<span data-ttu-id="d6b49-950">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-950">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-944">AzureAD</span><span class="sxs-lookup"><span data-stu-id="02272-944">AzureAD</span></span>|
-|<span data-ttu-id="02272-945">Адфедератионсервицес</span><span class="sxs-lookup"><span data-stu-id="02272-945">ADFederationServices</span></span>|
-|<span data-ttu-id="02272-946">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-946">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-951">AzureAD</span><span class="sxs-lookup"><span data-stu-id="d6b49-951">AzureAD</span></span>|
+|<span data-ttu-id="d6b49-952">адфедератионсервицес</span><span class="sxs-lookup"><span data-stu-id="d6b49-952">ADFederationServices</span></span>|
+|<span data-ttu-id="d6b49-953">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-953">unknownFutureValue</span></span>|
 
-### <a name="riskdetectiontimingtype-values"></a><span data-ttu-id="02272-947">значения Рискдетектионтимингтипе</span><span class="sxs-lookup"><span data-stu-id="02272-947">riskDetectionTimingType values</span></span>
+### <a name="riskdetectiontimingtype-values"></a><span data-ttu-id="d6b49-954">значения Рискдетектионтимингтипе</span><span class="sxs-lookup"><span data-stu-id="d6b49-954">riskDetectionTimingType values</span></span>
 
-|<span data-ttu-id="02272-948">Member</span><span class="sxs-lookup"><span data-stu-id="02272-948">Member</span></span>|
+|<span data-ttu-id="d6b49-955">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-955">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-949">Нотдефинед</span><span class="sxs-lookup"><span data-stu-id="02272-949">notDefined</span></span>|
-|<span data-ttu-id="02272-950">реальном</span><span class="sxs-lookup"><span data-stu-id="02272-950">realtime</span></span>|
-|<span data-ttu-id="02272-951">Неарреалтиме</span><span class="sxs-lookup"><span data-stu-id="02272-951">nearRealtime</span></span>|
-|<span data-ttu-id="02272-952">содержание</span><span class="sxs-lookup"><span data-stu-id="02272-952">offline</span></span>|
-|<span data-ttu-id="02272-953">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-953">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-956">нотдефинед</span><span class="sxs-lookup"><span data-stu-id="d6b49-956">notDefined</span></span>|
+|<span data-ttu-id="d6b49-957">реальном</span><span class="sxs-lookup"><span data-stu-id="d6b49-957">realtime</span></span>|
+|<span data-ttu-id="d6b49-958">неарреалтиме</span><span class="sxs-lookup"><span data-stu-id="d6b49-958">nearRealtime</span></span>|
+|<span data-ttu-id="d6b49-959">содержание</span><span class="sxs-lookup"><span data-stu-id="d6b49-959">offline</span></span>|
+|<span data-ttu-id="d6b49-960">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-960">unknownFutureValue</span></span>|
 
 
-### <a name="activitytype-values"></a><span data-ttu-id="02272-954">значения activityType</span><span class="sxs-lookup"><span data-stu-id="02272-954">activityType values</span></span>
+### <a name="activitytype-values"></a><span data-ttu-id="d6b49-961">значения activityType</span><span class="sxs-lookup"><span data-stu-id="d6b49-961">activityType values</span></span>
 
-|<span data-ttu-id="02272-955">Member</span><span class="sxs-lookup"><span data-stu-id="02272-955">Member</span></span>|
+|<span data-ttu-id="d6b49-962">Member</span><span class="sxs-lookup"><span data-stu-id="d6b49-962">Member</span></span>|
 |:---|
-|<span data-ttu-id="02272-956">SignIn</span><span class="sxs-lookup"><span data-stu-id="02272-956">signin</span></span>|
-|<span data-ttu-id="02272-957">user</span><span class="sxs-lookup"><span data-stu-id="02272-957">user</span></span>|
-|<span data-ttu-id="02272-958">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="02272-958">unknownFutureValue</span></span>|
+|<span data-ttu-id="d6b49-963">SignIn</span><span class="sxs-lookup"><span data-stu-id="d6b49-963">signin</span></span>|
+|<span data-ttu-id="d6b49-964">user</span><span class="sxs-lookup"><span data-stu-id="d6b49-964">user</span></span>|
+|<span data-ttu-id="d6b49-965">unknownFutureValue</span><span class="sxs-lookup"><span data-stu-id="d6b49-965">unknownFutureValue</span></span>|
 
