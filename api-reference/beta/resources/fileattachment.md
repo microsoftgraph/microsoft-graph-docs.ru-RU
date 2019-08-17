@@ -3,55 +3,55 @@ title: Тип ресурса fileAttachment
 description: Файл (например, текстовый файл или документ Word), присоединенный к событию,
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 966de812c8b0507c3d757d42fba5624c0b82ce4f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 7161d8bf17aa573cad61123200785ff254c24feb
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972042"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453157"
 ---
-# <a name="fileattachment-resource-type"></a><span data-ttu-id="c0f4e-103">Тип ресурса fileAttachment</span><span class="sxs-lookup"><span data-stu-id="c0f4e-103">fileAttachment resource type</span></span>
+# <a name="fileattachment-resource-type"></a><span data-ttu-id="31543-103">Тип ресурса fileAttachment</span><span class="sxs-lookup"><span data-stu-id="31543-103">fileAttachment resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c0f4e-104">Файл (например, текстовый файл или документ Word), присоединенный к событию, [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). [](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="c0f4e-104">A file (such as a text file or Word document) attached to an [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span> <span data-ttu-id="c0f4e-105">Свойство **contentBytes** включает содержимое файла в кодировке Base 64.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-105">The  **contentBytes** property contains the base64-encoded contents of the file.</span></span>  
+<span data-ttu-id="31543-104">Файл (например, текстовый файл или документ Word), присоединенный к событию, [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). [](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="31543-104">A file (such as a text file or Word document) attached to an [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span> <span data-ttu-id="31543-105">Свойство **contentBytes** включает содержимое файла в кодировке Base 64.</span><span class="sxs-lookup"><span data-stu-id="31543-105">The  **contentBytes** property contains the base64-encoded contents of the file.</span></span>  
 
-<span data-ttu-id="c0f4e-106">При создании вложенного файла включите в текст запроса следующее:</span><span class="sxs-lookup"><span data-stu-id="c0f4e-106">When creating a file attachment, include the following in the request body:</span></span>
+<span data-ttu-id="31543-106">При создании вложенного файла включите в текст запроса следующее:</span><span class="sxs-lookup"><span data-stu-id="31543-106">When creating a file attachment, include the following in the request body:</span></span>
 
 * `"@odata.type": "#microsoft.graph.fileAttachment"`
-* <span data-ttu-id="c0f4e-107">Обязательные свойства **name** и **contentBytes**.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-107">The required properties **name** and **contentBytes**.</span></span>
+* <span data-ttu-id="31543-107">Обязательные свойства **name** и **contentBytes**.</span><span class="sxs-lookup"><span data-stu-id="31543-107">The required properties **name** and **contentBytes**.</span></span>
 
-<span data-ttu-id="c0f4e-108">Производный от типа [attachment](attachment.md).</span><span class="sxs-lookup"><span data-stu-id="c0f4e-108">Derived from [attachment](attachment.md).</span></span>
+<span data-ttu-id="31543-108">Производный от типа [attachment](attachment.md).</span><span class="sxs-lookup"><span data-stu-id="31543-108">Derived from [attachment](attachment.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="c0f4e-109">Методы</span><span class="sxs-lookup"><span data-stu-id="c0f4e-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="31543-109">Методы</span><span class="sxs-lookup"><span data-stu-id="31543-109">Methods</span></span>
 
-| <span data-ttu-id="c0f4e-110">Метод</span><span class="sxs-lookup"><span data-stu-id="c0f4e-110">Method</span></span>       | <span data-ttu-id="c0f4e-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="c0f4e-111">Return Type</span></span>  |<span data-ttu-id="c0f4e-112">Описание</span><span class="sxs-lookup"><span data-stu-id="c0f4e-112">Description</span></span>|
+| <span data-ttu-id="31543-110">Метод</span><span class="sxs-lookup"><span data-stu-id="31543-110">Method</span></span>       | <span data-ttu-id="31543-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="31543-111">Return Type</span></span>  |<span data-ttu-id="31543-112">Описание</span><span class="sxs-lookup"><span data-stu-id="31543-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c0f4e-113">Получение</span><span class="sxs-lookup"><span data-stu-id="c0f4e-113">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="c0f4e-114">fileAttachment</span><span class="sxs-lookup"><span data-stu-id="c0f4e-114">fileAttachment</span></span>](fileattachment.md) |<span data-ttu-id="c0f4e-115">Чтение свойств и связей объекта fileAttachment.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-115">Read properties and relationships of fileAttachment object.</span></span>|
-|[<span data-ttu-id="c0f4e-116">Удаление</span><span class="sxs-lookup"><span data-stu-id="c0f4e-116">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="c0f4e-117">Нет</span><span class="sxs-lookup"><span data-stu-id="c0f4e-117">None</span></span> |<span data-ttu-id="c0f4e-118">Удаление объекта fileAttachment.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-118">Delete fileAttachment object.</span></span> |
+|[<span data-ttu-id="31543-113">Получение</span><span class="sxs-lookup"><span data-stu-id="31543-113">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="31543-114">fileAttachment</span><span class="sxs-lookup"><span data-stu-id="31543-114">fileAttachment</span></span>](fileattachment.md) |<span data-ttu-id="31543-115">Чтение свойств и связей объекта fileAttachment.</span><span class="sxs-lookup"><span data-stu-id="31543-115">Read properties and relationships of fileAttachment object.</span></span>|
+|[<span data-ttu-id="31543-116">Удаление</span><span class="sxs-lookup"><span data-stu-id="31543-116">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="31543-117">Нет</span><span class="sxs-lookup"><span data-stu-id="31543-117">None</span></span> |<span data-ttu-id="31543-118">Удаление объекта fileAttachment.</span><span class="sxs-lookup"><span data-stu-id="31543-118">Delete fileAttachment object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="c0f4e-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="c0f4e-119">Properties</span></span>
-| <span data-ttu-id="c0f4e-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="c0f4e-120">Property</span></span>     | <span data-ttu-id="c0f4e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="c0f4e-121">Type</span></span>   |<span data-ttu-id="c0f4e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c0f4e-122">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="31543-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="31543-119">Properties</span></span>
+| <span data-ttu-id="31543-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="31543-120">Property</span></span>     | <span data-ttu-id="31543-121">Тип</span><span class="sxs-lookup"><span data-stu-id="31543-121">Type</span></span>   |<span data-ttu-id="31543-122">Описание</span><span class="sxs-lookup"><span data-stu-id="31543-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c0f4e-123">contentBytes</span><span class="sxs-lookup"><span data-stu-id="c0f4e-123">contentBytes</span></span>|<span data-ttu-id="c0f4e-124">Двоичный</span><span class="sxs-lookup"><span data-stu-id="c0f4e-124">Binary</span></span>|<span data-ttu-id="c0f4e-125">Содержимое файла в кодировке base64.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-125">The base64-encoded contents of the file.</span></span>|
-|<span data-ttu-id="c0f4e-126">contentId</span><span class="sxs-lookup"><span data-stu-id="c0f4e-126">contentId</span></span>|<span data-ttu-id="c0f4e-127">String</span><span class="sxs-lookup"><span data-stu-id="c0f4e-127">String</span></span>|<span data-ttu-id="c0f4e-128">Идентификатор вложения в хранилище Exchange.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-128">The ID of the attachment in the Exchange store.</span></span>|
-|<span data-ttu-id="c0f4e-129">contentLocation</span><span class="sxs-lookup"><span data-stu-id="c0f4e-129">contentLocation</span></span>|<span data-ttu-id="c0f4e-130">String</span><span class="sxs-lookup"><span data-stu-id="c0f4e-130">String</span></span>|<span data-ttu-id="c0f4e-131">Не используйте это свойство, так как оно не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-131">Do not use this property as it is not supported.</span></span>|
-|<span data-ttu-id="c0f4e-132">contentType</span><span class="sxs-lookup"><span data-stu-id="c0f4e-132">contentType</span></span>|<span data-ttu-id="c0f4e-133">String</span><span class="sxs-lookup"><span data-stu-id="c0f4e-133">String</span></span>|<span data-ttu-id="c0f4e-134">Тип контента этого вложения.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-134">The content type of the attachment.</span></span>|
-|<span data-ttu-id="c0f4e-135">id</span><span class="sxs-lookup"><span data-stu-id="c0f4e-135">id</span></span>|<span data-ttu-id="c0f4e-136">Строка</span><span class="sxs-lookup"><span data-stu-id="c0f4e-136">String</span></span>|<span data-ttu-id="c0f4e-137">Идентификатор вложения.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-137">The attachment ID.</span></span>|
-|<span data-ttu-id="c0f4e-138">isInline</span><span class="sxs-lookup"><span data-stu-id="c0f4e-138">isInline</span></span>|<span data-ttu-id="c0f4e-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="c0f4e-139">Boolean</span></span>|<span data-ttu-id="c0f4e-140">Задано значение true, если это встроенное вложение.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-140">Set to true if this is an inline attachment.</span></span>|
-|<span data-ttu-id="c0f4e-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="c0f4e-141">lastModifiedDateTime</span></span>|<span data-ttu-id="c0f4e-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c0f4e-142">DateTimeOffset</span></span>|<span data-ttu-id="c0f4e-143">Дата и время последнего изменения вложения.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-143">The date and time when the attachment was last modified.</span></span>|
-|<span data-ttu-id="c0f4e-144">name</span><span class="sxs-lookup"><span data-stu-id="c0f4e-144">name</span></span>|<span data-ttu-id="c0f4e-145">String</span><span class="sxs-lookup"><span data-stu-id="c0f4e-145">String</span></span>|<span data-ttu-id="c0f4e-146">Имя, представляющее текст, который отображается под значком, представляющим внедренное вложение. Оно может не быть фактическим именем файла.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-146">The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.</span></span>|
-|<span data-ttu-id="c0f4e-147">size</span><span class="sxs-lookup"><span data-stu-id="c0f4e-147">size</span></span>|<span data-ttu-id="c0f4e-148">Int32</span><span class="sxs-lookup"><span data-stu-id="c0f4e-148">Int32</span></span>|<span data-ttu-id="c0f4e-149">Размер вложения в байтах.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-149">The size in bytes of the attachment.</span></span>|
+|<span data-ttu-id="31543-123">contentBytes</span><span class="sxs-lookup"><span data-stu-id="31543-123">contentBytes</span></span>|<span data-ttu-id="31543-124">EDM. binary</span><span class="sxs-lookup"><span data-stu-id="31543-124">Edm.Binary</span></span>|<span data-ttu-id="31543-125">Содержимое файла в кодировке base64.</span><span class="sxs-lookup"><span data-stu-id="31543-125">The base64-encoded contents of the file.</span></span>|
+|<span data-ttu-id="31543-126">contentId</span><span class="sxs-lookup"><span data-stu-id="31543-126">contentId</span></span>|<span data-ttu-id="31543-127">String</span><span class="sxs-lookup"><span data-stu-id="31543-127">String</span></span>|<span data-ttu-id="31543-128">Идентификатор вложения в хранилище Exchange.</span><span class="sxs-lookup"><span data-stu-id="31543-128">The ID of the attachment in the Exchange store.</span></span>|
+|<span data-ttu-id="31543-129">contentLocation</span><span class="sxs-lookup"><span data-stu-id="31543-129">contentLocation</span></span>|<span data-ttu-id="31543-130">String</span><span class="sxs-lookup"><span data-stu-id="31543-130">String</span></span>|<span data-ttu-id="31543-131">Не используйте это свойство, так как оно не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31543-131">Do not use this property as it is not supported.</span></span>|
+|<span data-ttu-id="31543-132">contentType</span><span class="sxs-lookup"><span data-stu-id="31543-132">contentType</span></span>|<span data-ttu-id="31543-133">String</span><span class="sxs-lookup"><span data-stu-id="31543-133">String</span></span>|<span data-ttu-id="31543-134">Тип контента этого вложения.</span><span class="sxs-lookup"><span data-stu-id="31543-134">The content type of the attachment.</span></span>|
+|<span data-ttu-id="31543-135">id</span><span class="sxs-lookup"><span data-stu-id="31543-135">id</span></span>|<span data-ttu-id="31543-136">Строка</span><span class="sxs-lookup"><span data-stu-id="31543-136">String</span></span>|<span data-ttu-id="31543-137">Идентификатор вложения.</span><span class="sxs-lookup"><span data-stu-id="31543-137">The attachment ID.</span></span>|
+|<span data-ttu-id="31543-138">isInline</span><span class="sxs-lookup"><span data-stu-id="31543-138">isInline</span></span>|<span data-ttu-id="31543-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="31543-139">Boolean</span></span>|<span data-ttu-id="31543-140">Задано значение true, если это встроенное вложение.</span><span class="sxs-lookup"><span data-stu-id="31543-140">Set to true if this is an inline attachment.</span></span>|
+|<span data-ttu-id="31543-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="31543-141">lastModifiedDateTime</span></span>|<span data-ttu-id="31543-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="31543-142">DateTimeOffset</span></span>|<span data-ttu-id="31543-143">Дата и время последнего изменения вложения.</span><span class="sxs-lookup"><span data-stu-id="31543-143">The date and time when the attachment was last modified.</span></span>|
+|<span data-ttu-id="31543-144">name</span><span class="sxs-lookup"><span data-stu-id="31543-144">name</span></span>|<span data-ttu-id="31543-145">String</span><span class="sxs-lookup"><span data-stu-id="31543-145">String</span></span>|<span data-ttu-id="31543-146">Имя, представляющее текст, который отображается под значком, представляющим внедренное вложение. Оно может не быть фактическим именем файла.</span><span class="sxs-lookup"><span data-stu-id="31543-146">The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.</span></span>|
+|<span data-ttu-id="31543-147">size</span><span class="sxs-lookup"><span data-stu-id="31543-147">size</span></span>|<span data-ttu-id="31543-148">Int32</span><span class="sxs-lookup"><span data-stu-id="31543-148">Int32</span></span>|<span data-ttu-id="31543-149">Размер вложения в байтах.</span><span class="sxs-lookup"><span data-stu-id="31543-149">The size in bytes of the attachment.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c0f4e-150">Связи</span><span class="sxs-lookup"><span data-stu-id="c0f4e-150">Relationships</span></span>
-<span data-ttu-id="c0f4e-151">Нет</span><span class="sxs-lookup"><span data-stu-id="c0f4e-151">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="31543-150">Связи</span><span class="sxs-lookup"><span data-stu-id="31543-150">Relationships</span></span>
+<span data-ttu-id="31543-151">Нет</span><span class="sxs-lookup"><span data-stu-id="31543-151">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="c0f4e-152">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c0f4e-152">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="31543-152">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="31543-152">JSON representation</span></span>
 
-<span data-ttu-id="c0f4e-153">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c0f4e-153">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="31543-153">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="31543-153">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -63,7 +63,7 @@ ms.locfileid: "35972042"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",
