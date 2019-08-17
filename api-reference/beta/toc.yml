@@ -9268,6 +9268,33 @@
                   items:
                     - name: Список "Общие"
                       href: api/insights-list-shared.md
+            - name: Аналитика
+              href: resources/useranalytics.md
+              items:
+                - name: Параметры
+                  items:
+                    - name: Параметры
+                      href: resources/settings.md
+                    - name: Получение параметров
+                      href: api/useranalytics-get-settings.md
+                - name: Статистика действий
+                  items:
+                    - name: Статистика действий
+                      href: resources/activitystatistics.md
+                    - name: Тип статистики вызовов
+                      href: resources/callactivitystatistics.md
+                    - name: Тип статистики чата
+                      href: resources/chatactivitystatistics.md
+                    - name: Тип статистики электронной почты
+                      href: resources/emailactivitystatistics.md
+                    - name: Тип статистики Focus
+                      href: resources/focusactivitystatistics.md
+                    - name: Тип статистики собраний
+                      href: resources/meetingactivitystatistics.md
+                    - name: Статистика действий со списками
+                      href: api/activitystatistics-list.md
+                    - name: Получение статистики действий
+                      href: api/activitystatistics-get.md
             - name: Упоминание
               href: resources/mention.md
         - name: Задачи и планы
@@ -9674,9 +9701,9 @@
             - name: Группа задач Outlook
               href: resources/outlooktaskgroup.md
               items:
-                - name: Список
+                - name: Перечисление
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: Создание
                   href: api/outlookuser-post-taskgroups.md
                 - name: Получение
                   href: api/outlooktaskgroup-get.md
