@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f66d818e73a69e2c9969ca4cb823d1f8c7c99629
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5d1c7c6600434f3df1d43705b1fbceb608cf4863
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419813"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453101"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "eventmessage_get_attachments"
+  "name": "eventmessage_get_attachments_beta"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
@@ -76,6 +76,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
+  "name": "eventmessage_get_attachments_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
@@ -88,7 +89,7 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type":"#microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
       "contentBytes": "contentBytes-value",

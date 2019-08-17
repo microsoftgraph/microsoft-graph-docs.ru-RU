@@ -3,14 +3,14 @@ title: Тип ресурса fileAttachment
 description: Файл (например, текстовый файл или документ Word), присоединенный к событию,
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 966de812c8b0507c3d757d42fba5624c0b82ce4f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 7161d8bf17aa573cad61123200785ff254c24feb
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972042"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453157"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -35,7 +35,7 @@ ms.locfileid: "35972042"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contentBytes|Двоичный|Содержимое файла в кодировке base64.|
+|contentBytes|EDM. binary|Содержимое файла в кодировке base64.|
 |contentId|String|Идентификатор вложения в хранилище Exchange.|
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
@@ -63,7 +63,7 @@ ms.locfileid: "35972042"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

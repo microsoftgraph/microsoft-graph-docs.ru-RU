@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a5eecd3bfef94752dea79208f443ede186285dc9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a557287255af80b82d4c4dcb6957c2255eae5ee1
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408166"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453129"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
@@ -161,7 +161,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_file_attachment",
+  "name": "get_file_attachment_beta",
   "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
@@ -188,7 +188,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
-  "name": "get_file_attachment",
+  "name": "get_file_attachment_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -208,7 +208,7 @@ Content-type: application/json
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "base64,UEsDBBQABgAIAAAAIQ4AAAAA"
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
 
