@@ -3,12 +3,12 @@ title: 'Справочник по разрешениям Microsoft Graph '
 description: Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Вы как разработчик указываете, какие разрешения для Microsoft Graph должно запрашивать ваше приложение.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fe8b2d9b7a89aec84cdc067fc9e69a647f64ccc
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437680"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450685"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -73,6 +73,31 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 Чтобы приложение с делегированными разрешениями могло считывать проверки доступа роли Azure AD, вошедший пользователь должен быть участником одной из следующих ролей администратора: "Глобальный администратор", "Администратор безопасности", "Читатель безопасности" или "Администратор привилегированных ролей". Чтобы приложение с делегированными разрешениями могло записывать проверки доступа роли Azure AD, вошедший пользователь должен быть участником одной из следующих ролей администратора: "Глобальный администратор" или "Администратор привилегированных ролей".
 
 Дополнительные сведения о ролях администратора см. в статье [Назначение ролей администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+---
+
+## <a name="analytics-resource-permissions"></a>Разрешения ресурсов аналитики
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Чтение статистики обо всех действиях пользователя. | Позволяет приложению считывать статистику о действиях пользователя без необходимости входа пользователя. | Да |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+Нет.
+
+### <a name="example-usage"></a>Примеры использования
+
+#### <a name="delegated"></a>Делегированные разрешения
+
+* _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+* _Analytics.Read_. [Получение статистики о действиях пользователя](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### <a name="application"></a>Приложение
+
+Нет.
 
 ---
 
