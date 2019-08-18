@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 476693776827df1e4d2ed20481ce6248a83496af
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 77fe0604f3efab83572dfdcfd7a7efcb8b2bf5c8
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374728"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453119"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -75,7 +75,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
-  "name": "create_file_attachment_from_message"
+  "name": "create_file_attachment_from_message_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
@@ -85,7 +85,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "base64R0lGODdhEAYEAA7"
+  "contentBytes": "R0lGODdhEAYEAA7"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -112,6 +112,7 @@ Content-length: 142
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_message_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -129,7 +130,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "base64R0lGODdhEAYEAA7"
+    "contentBytes": "R0lGODdhEAYEAA7"
 }
 
 ```
@@ -139,7 +140,10 @@ Content-length: 202
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_message_v1"
+}-->
 
 ```
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkpsDRVK/attachments
@@ -173,6 +177,7 @@ Content-length: 200
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_message_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
