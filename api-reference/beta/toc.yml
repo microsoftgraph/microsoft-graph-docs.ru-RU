@@ -7816,14 +7816,16 @@
                 - name: Проверка доступа
                   href: resources/accessreview.md
                   items:
-                    - name: Проверка создания доступа
-                      href: api/accessreview-create.md
-                    - name: Проверка удаления доступа
-                      href: api/accessreview-delete.md
+                    - name: Просмотр списка проверок доступа
+                      href: api/accessreview-list.md
                     - name: Проверка получения доступа
                       href: api/accessreview-get.md
+                    - name: Проверка создания доступа
+                      href: api/accessreview-create.md
                     - name: Проверка обновления доступа
                       href: api/accessreview-update.md
+                    - name: Проверка удаления доступа
+                      href: api/accessreview-delete.md
                     - name: Добавление рецензента
                       href: api/accessreview-addreviewer.md
                     - name: Список решений
