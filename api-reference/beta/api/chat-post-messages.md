@@ -2,21 +2,21 @@
 title: Создание chatMessage
 description: Используйте этот API для создания нового chatMessage.
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 784c275f3006af144b56c7de17758492f13e8db1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 96099cf2628b31a03013ae680439e97a55f952c5
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418168"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460824"
 ---
 # <a name="create-chatmessage"></a>Создание chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое [сообщение](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md).
+Создайте новое [сообщение](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md). Этот API не может создать новый чат. для того, чтобы получить сообщение чата, необходимо использовать метод [List Chats](chat-list.md) для извлечения идентификатора существующего чата.
 
 ## <a name="permissions"></a>Разрешения
 

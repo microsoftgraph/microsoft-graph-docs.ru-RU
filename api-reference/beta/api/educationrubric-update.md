@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c1c900084c0410f583621b43b145ccd9934c820b
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: d45d5c90366aa0bf5e165cc640890d4b4247d7b7
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173141"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36461021"
 ---
 # <a name="update-educationrubric"></a>Обновление Едукатионрубрик
 
@@ -51,9 +51,9 @@ PATCH /education/me/assignments/{id}/rubric
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Итембоди|Описание этого Rubric.|
+|description|итембоди|Описание этого Rubric.|
 |displayName|String|Имя этого Rubric.|
-|снижения|Едукатионассигнментградетипе|Указывает, есть ли у этого Rubric баллы.|
+|снижения|едукатионассигнментградетипе|Указывает, есть ли у этого Rubric баллы.|
 |тонов|Коллекция Рубриклевел|Коллекция уровней, составляющих данный Rubric.|
 |являются|Коллекция Рубриккуалити|Коллекция качеств, составляющих этот Rubric.|
 
@@ -66,6 +66,8 @@ PATCH /education/me/assignments/{id}/rubric
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationrubric"
@@ -79,6 +81,20 @@ Content-type: application/json
   "displayName": "Example Credit Rubric after display name patch"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationrubric-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationrubric-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationrubric-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

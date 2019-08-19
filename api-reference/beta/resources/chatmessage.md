@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f807c45fcff2a5e2ea928105ed970d426cfdc1f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b6912312c66bca8b84ccce9d25ac3c83a2edf9
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974033"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460768"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -29,10 +29,11 @@ ms.locfileid: "35974033"
 |[Получение ответа на сообщение](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение в канале.|
 |[Создание chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
 |[Ответ на сообщение в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
+|[Создание chatMessage в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения в существующей беседе в Интернете 1:1 или группе.|
 |[Список сообщений в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Перечисление сообщений в сообщениях в формате 1:1 или Group Chat. |
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
 |[Перечисление всех размещенных изображений](../api/chatmessagehostedimage-list-hostedimages.md) | Коллекция [хостедимаже](../resources/chatmessagehostedimage.md)| Получение всех размещенных изображений в сообщении.|
-|[Получение размещенного изображения](../api/chatmessagehostedimage-get.md) | [Хостедимаже](../resources/chatmessagehostedimage.md) | Получение размещенного изображения из сообщения.|
+|[Получение размещенного изображения](../api/chatmessagehostedimage-get.md) | [хостедимаже](../resources/chatmessagehostedimage.md) | Получение размещенного изображения из сообщения.|
 |[Получение байтов размещенного изображения](../api/chatmessagehostedimage-getbytes.md) | данные двоичных изображений | Получение двоичных данных изображения на размещенном изображении из сообщения.|
 
 ## <a name="properties"></a>Свойства
@@ -43,7 +44,7 @@ ms.locfileid: "35974033"
 |replyToId| string | Только для чтения. Идентификатор родительского или корневого сообщения беседы. (Применимо только к сообщениям в каналах, но не в чате) |
 |from|[identitySet](identityset.md)| Только для чтения. Подробные сведения об отправителе сообщения.|
 |etag| string | Только для чтения. Номер версии сообщения. |
-|messageType|Чатмессажетипе|Тип сообщения. Возможные значения: `message`.|
+|messageType|чатмессажетипе|Тип сообщения. Возможные значения: `message`.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени создания или изменения сообщения, включая время ответа (если это корневое сообщение в канале), а также добавление или удаление реакции. |
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
@@ -52,7 +53,7 @@ ms.locfileid: "35974033"
 |summary|string| Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений. Относится только к сообщениям каналов, не к сообщениям чата. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
-|importance| Чатмессажеимпортанце | Важность сообщения. Допустимые значения: `normal`, `high`, `urgent`.|
+|importance| чатмессажеимпортанце | Важность сообщения. Допустимые значения: `normal`, `high`, `urgent`.|
 |reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на сообщение (например, "Нравится").|
 |языковые стандарты|string|Язык сообщения, установленный клиентом.|
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8e628c2ba8835d42f00116e46b4dfa0527765fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ff201c64156c334b756a9cfc8318fd9882154515
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408841"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460817"
 ---
 # <a name="get-accessreview"></a>Получение Акцессревиев
 
@@ -120,13 +120,12 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Создание Акцессревиев](accessreview-create.md) |    [акцессревиев](../resources/accessreview.md) |  Создание нового Акцессревиев. |
-|[Список Програмконтролс](programcontrol-list.md) | Коллекция [програмконтрол](../resources/programcontrol.md) | Список Програмконтролс в клиенте. |
-|[Список рецензентов Акцессревиев](accessreview-listreviewers.md) |     Коллекция [userIdentity](../resources/useridentity.md)|    Получение рецензентов объекта Акцессревиев. |
-|[Список решений Акцессревиев](accessreview-listdecisions.md) |     Коллекция [акцессревиевдеЦисион](../resources/accessreviewdecision.md)|    Получение решений для Акцессревиев.|
-|[Список моих решений Акцессревиев](accessreview-listmydecisions.md) |        Коллекция [акцессревиевдеЦисион](../resources/accessreviewdecision.md)|    В качестве проверяющего получите мое решение Акцессревиев.|
+- [Создание Акцессревиев](accessreview-create.md)
+- [Список Акцессревиевс](accessreview-list.md)
+- [Список Програмконтролс](programcontrol-list.md)
+- [Список рецензентов Акцессревиев](accessreview-listreviewers.md)
+- [Список решений Акцессревиев](accessreview-listdecisions.md)
+- [Список моих решений Акцессревиев](accessreview-listmydecisions.md)
 
 
 <!--

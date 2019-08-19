@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4205f0995b0e8c71c8e01991837b4d721ecfaaf7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f42124a5b69027d16b2c8adc54d001fd8cf81c0e
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974572"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460759"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса Акцессревиев
 
@@ -23,10 +23,11 @@ ms.locfileid: "35974572"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Акцессревиев](../api/accessreview-get.md) |   [Акцессревиев](accessreview.md) |   Получение проверки доступа с определенным идентификатором. |
-|[Создание Акцессревиев](../api/accessreview-create.md) | [Акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
+|[Список Акцессревиевс](../api/accessreview-list.md) | Коллекция [акцессревиев](accessreview.md) | Список Акцессревиевс для Бусинессфловтемплате. |
+|[Получение Акцессревиев](../api/accessreview-get.md) |   [акцессревиев](accessreview.md) |   Получение проверки доступа с определенным идентификатором. |
+|[Создание Акцессревиев](../api/accessreview-create.md) | [акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
+|[Обновление Акцессревиев](../api/accessreview-update.md) | [акцессревиев](accessreview.md) | Обновление Акцессревиев. |
 |[Удаление Акцессревиев](../api/accessreview-delete.md) | Нет.   | Удаление Акцессревиев. |
-|[Обновление Акцессревиев](../api/accessreview-update.md) | [Акцессревиев](accessreview.md) | Обновление Акцессревиев. |
 |[Список рецензентов Акцессревиев](../api/accessreview-listreviewers.md) |      Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
 |[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
 |[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Нет.  |   Удаление проверяющего из Акцессревиев. |

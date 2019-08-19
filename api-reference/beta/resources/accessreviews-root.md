@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: ecd49dc603fa4ae7c4afdd0120267a47d8f06c43
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173057"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460761"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
@@ -37,10 +37,11 @@ ms.locfileid: "36173057"
 
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Акцессревиев](../api/accessreview-get.md) |   [Акцессревиев](accessreview.md) |   Получение проверки доступа с определенным ИДЕНТИФИКАТОРом. |
-|[Создание Акцессревиев](../api/accessreview-create.md) | [Акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
+|[Получение Акцессревиев](../api/accessreview-get.md) |   [акцессревиев](accessreview.md) |   Получение проверки доступа с определенным ИДЕНТИФИКАТОРом. |
+|[Создание Акцессревиев](../api/accessreview-create.md) | [акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
 |[Удаление Акцессревиев](../api/accessreview-delete.md) | Нет.   | Удаление Акцессревиев. |
-|[Обновление Акцессревиев](../api/accessreview-update.md) | [Акцессревиев](accessreview.md) | Обновление Акцессревиев. |
+|[Обновление Акцессревиев](../api/accessreview-update.md) | [акцессревиев](accessreview.md) | Обновление Акцессревиев. |
+|[Список Акцессревиевс](../api/accessreview-list.md) |    Коллекция [акцессревиев](accessreview.md) |    Список Акцессревиевс для Бусинессфловтемплате. |
 |[Список рецензентов Акцессревиев](../api/accessreview-listreviewers.md) |      Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
 |[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
 |[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Нет.  |   Удаление проверяющего из Акцессревиев. |
@@ -56,7 +57,7 @@ ms.locfileid: "36173057"
 |[Список программ](../api/program-list.md) |  Коллекция [Program](program.md)|   Получение коллекции всех программ.|
 |[Список Програмконтролс программы](../api/program-listcontrols.md) |      Коллекция [програмконтрол](programcontrol.md)| Получение коллекции элементов управления программы.|
 |[Программа обновления](../api/program-update.md) |   [Программа](program.md)|  Обновление программы.|
-|[Создание Програмконтрол](../api/programcontrol-create.md) |     [Програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
+|[Создание Програмконтрол](../api/programcontrol-create.md) |     [програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
 |[Удаление Програмконтрол](../api/programcontrol-delete.md) |     Нет.   |   Удаление Програмконтрол из программы.|
 |[Список Програмконтролс](../api/programcontrol-list.md) | Коллекция [програмконтрол](programcontrol.md)| Перечисление элементов управления для всех программ в клиенте.|
 |[Список Програмконтролтипес](../api/programcontroltype-list.md) | Коллекция [програмконтролтипе](programcontroltype.md)| Список типов элементов управления программы. |
