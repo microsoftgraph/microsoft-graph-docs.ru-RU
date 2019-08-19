@@ -1,22 +1,22 @@
 ---
-title: 'Используйте API Microsoft Graph для интеграции функций социальной и рабочей аналитики '
-description: Microsoft Graph поддерживает социальные жесты в социальном контексте пользователя и предоставляет доступ к полезным сведениям о пользователях и к социальным данным.
+title: Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
+description: Microsoft Graph обеспечивает доступ к полезным социальным и рабочим данным для пользователей, а также поддерживает социальные жесты в социальном контексте пользователя.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 84e0c82173dad6f08d5911f32ef5c384f041ea19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74beb2a66f103342f6dbc5e5977200751a309c08
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008091"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450671"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Используйте API Microsoft Graph для интеграции функций социальной и рабочей аналитики 
+# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph поддерживает социальные жесты в социальном контексте пользователя и предоставляет доступ к полезным сведениям о пользователях и социальным данным.
+Microsoft Graph обеспечивает доступ к социальным и рабочим данным для пользователей, а также поддерживает жесты в социальном контексте пользователя.
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>Сбор и извлечение определенных сведений о пользователях
 
@@ -26,11 +26,18 @@ Microsoft Graph поддерживает социальные жесты в со
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Помогите пользователям получить наиболее важные документы для работы
 
-Используйте API аналитики для определения наиболее важных документов для пользователя: 
+Используйте API аналитики для определения наиболее важных документов для пользователя:
 
 - Список [популярных документов](../api/insights-list-trending.md) пользователя
 - Список документов, [используемых](../api/insights-list-used.md) пользователем
 - Список документов, [к которым пользователю предоставлен доступ или к которым пользователь предоставил доступ](../api/insights-list-shared.md)
+
+## <a name="help-users-gain-insights-into-their-work-patterns"></a>Помощь пользователям в получении аналитики рабочих закономерностей
+
+Используйте API аналитики, чтобы получить статистику о действиях и соответствующие параметры для пользователя:
+
+- [settings](../resources/settings.md). Чтобы API аналитики возвращал результаты для пользователя, в параметрах аналитики текущего пользователя должна отображаться действительная лицензия MyAnalytics, должно быть выбрано использование MyAnalytics и должен применяться облачный почтовый ящик с поддержкой Graph.
+- [activityStatistics](../resources/activitystatistics.md). Получение данных за последнюю полную неделю (или указанный промежуток времени) для действий в Office 365, выполнявшихся пользователем, включая количество часов, потраченное на [звонки](callactivitystatistics.md), [чаты (мгновенные сообщения)](chatactivitystatistics.md), [письма](emailactivitystatistics.md) и [собрания](meetingactivitystatistics.md) в течение и вне рабочего времени, а также часы, доступные для [сосредоточенной работы](focusactivitystatistics.md).
 
 ## <a name="manage--mentions"></a>Управление @упоминаниями
 
@@ -55,4 +62,3 @@ Include the next sentence when supporting events.
   - [Получение сведений о каждом упоминании в сообщении](../api/message-get.md#request-2)
 
 - [Удаление упоминания](../api/message-delete.md#request-2) в сообщении
-
