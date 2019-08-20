@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 02fcc9db35f59ebca3bc85f1ddc65d8d2f7c3d89
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049626"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450517"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -198,6 +198,7 @@ ms.locfileid: "36049626"
 | Отношение | Тип |Описание|
 |:---------------|:--------|:----------|
 |agreementAcceptances|Коллекция [agreementAcceptance](agreementacceptance.md)| Состояния принятия пользователем условий использования. Только для чтения. Допускается значение null.|
+|analytics|Коллекция [userAnalytics](useranalytics.md)| Статистика активности пользователя и сопутствующие параметры. Только для чтения. Допускается значение null.|
 |calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
 |calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|
@@ -238,6 +239,7 @@ ms.locfileid: "36049626"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -337,6 +339,7 @@ ms.locfileid: "36049626"
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
+  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
