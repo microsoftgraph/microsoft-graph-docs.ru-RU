@@ -2,15 +2,15 @@
 title: Тип ресурса referenceAttachment
 description: Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+ms.prod: outlook
+author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 21f88a6b3e8374eda3af11ca7094539e66137148
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49005be287e9ecb10bd184ff1c18750878fbaa46
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034792"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484347"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -48,6 +48,7 @@ ms.locfileid: "36034792"
   "blockType": "resource",
   "optionalProperties": [],
   "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
