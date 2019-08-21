@@ -213,16 +213,10 @@ items:
             href: security-concept-overview.md
           - name: Поток данных
             href: security-dataflow.md
-          - name: Авторизация
+          - name: Authorization
             href: security-authorization.md
-          - name: Интеграция с SIEM
-            items:
-              - name: Обзор
-                href: security-siemintegration.md
-              - name: Splunk
-                href: security-splunk-siemintegration.md
-              - name: QRadar
-                href: security-qradar-siemintegration.md
+          - name: Интегрированные решения
+            href: security-integration.md
           - name: Возможности для партнеров
             href: security-partner-overview.md
       - name: Сайты и списки

@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 379db2a2d5a1826928ed43a0818a1e2c55d3a000
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450608"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36462007"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -81,6 +81,7 @@ ms.locfileid: "36450608"
 | Дополнение | Бета-версия | Добавлен ресурс [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta), предоставляющий доступ к ресурсам. |
 | Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleDefinition: <br><ul><li>[Список объектов unifiedRoleDefinition](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) — получение списка объектов unifiedRoleDefinition для поставщика.</li><li>[Создание объекта unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) — создание объекта unifiedRoleDefinition.</li><li>[Получение объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) — извлечение свойств и связей объекта определения единой роли.</li><li>[Обновление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) — обновление свойств объекта unifiedRoleDefinition.</li><li>[Удаление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) — удаление объекта unifiedRoleDefinition.</li></ul> |
 | Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleAssignment: <br><ul><li>[Список объектов unifiedRoleAssignment](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) — получение списка объектов unifiedRoleAssignment для поставщика.</li><li>[Создание объекта unifiedRoleAssignment]() — создание объекта unifiedRoleAssignment.</li><li>[Получение объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) — извлечение свойств и связей объекта unifiedRoleAssignment.</li><li>[Удаление объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) — удаление объекта unifiedRoleAssignment. |
+| Дополнение | бета | Добавлена операция [Список объектов accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
 
 ### <a name="reports"></a>Отчеты
 
@@ -1213,7 +1214,7 @@ ms.locfileid: "36450608"
 | Дополнение        | бета       | Добавлены свойства **aadUserId**, **emailRole**, **isVpn** и **logonIp** для объекта [userSecurityState](/graph/api/resources/usersecuritystate?view=graph-rest-beta).|
 |Изменение|бета| Свойство **logonIpAddress** изменено на **logonIp** в объекте [userSecurityState](/graph/api/resources/usersecuritystate?view=graph-rest-beta). |
 | Дополнение        | бета       | Добавлено свойство **wasRunning** для объекта [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta).|
-|Удаление|бета| Удалено свойство **name** из объекта [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta). |
+|Удаление|Бета| Удалено свойство **name** из объекта [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta). |
 
 ### <a name="track-changes"></a>Отслеживание изменений
 
@@ -1603,7 +1604,7 @@ ms.locfileid: "36450608"
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|Бета|Добавлен новый объект [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
+|Дополнение|бета|Добавлен новый объект [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлен новый объект [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлен новый объект [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлен новый объект [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta).|
@@ -3315,7 +3316,7 @@ ms.locfileid: "36450608"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета-версия        | Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_. |
+| Дополнение        | бета        | Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_. |
 
 ## <a name="may-2016"></a>Май 2016 г.
 
