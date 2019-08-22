@@ -7447,8 +7447,15 @@
                 - name: Возврат работы
                   href: api/educationsubmission-return.md
             - name: Способ
-              href: resources/educationoutcome.md
               items:
+                - name: Способ
+                  href: resources/educationoutcome.md
+                - name: Тип результата обратной связи
+                  href: resources/educationfeedbackoutcome.md
+                - name: Тип результата баллов
+                  href: resources/educationpointsoutcome.md
+                - name: Тип результата Rubric
+                  href: resources/educationrubricoutcome.md
                 - name: Результат обновления
                   href: api/educationoutcome-update.md
             - name: Профиль синхронизации
@@ -8379,7 +8386,7 @@
                     - name: Определения ролей
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: Список
+                        - name: Перечисление
                           href: api/governanceroledefinition-list.md
                         - name: Получение
                           href: api/governanceroledefinition-get.md
