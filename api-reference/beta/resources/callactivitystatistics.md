@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 014cec3f8adab9f8d41b9f3062b38898b9956bb6
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: dfd75ac3cec0b4580bff58555754585274977c2d
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450815"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622623"
 ---
 # <a name="callactivitystatistics-resource-type"></a>Тип ресурса Каллактивитистатистикс
 
@@ -27,7 +27,7 @@ ms.locfileid: "36450815"
 |endDate|Date|Дата завершения действия звонка. Значение представлено в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-04", которое соответствует формату ГГГГ – MM – DD.|
 |id|String| Идентификатор, предназначенный только для чтения, для действия Call.|
 |startDate|Дата|Дата начала действия звонка. Значение представлено в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-03", которое соответствует формату ГГГГ – MM – DD.|
-|тимезонеусед|String|Для вычисления используется часовой пояс, который пользователь задает в календаре Microsoft Outlook. Например, значение свойства может быть "тихоокеанское стандартное время".|
+|тимезонеусед|String.|Для вычисления используется часовой пояс, который пользователь задает в календаре Microsoft Outlook. Например, значение свойства может быть "тихоокеанское стандартное время".|
 |афтерхаурс|Duration (Длительность)|Время, затраченное на вызовы в нерабочее время, которое основано на параметре календаря пользователя Outlook для рабочих часов. Значение представляется в формате ISO 8601 для длительности. |
 
 ## <a name="relationships"></a>Отношения
@@ -40,8 +40,9 @@ ms.locfileid: "36450815"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id", 
   "optionalProperties": [
-
   ],
   "@odata.type": "microsoft.graph.callActivityStatistics"
 }--> 

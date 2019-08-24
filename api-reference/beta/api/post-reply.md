@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7fd33fead33967859f22b9b7ae9c72ae2588616
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a90addda2b71060bcb2e72aff0f1faceb63519c5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412882"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622602"
 ---
 # <a name="post-reply"></a>post: reply
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ответ на запись и добавление новой записи в указанную цепочку беседы группы. Вы можете указать в запросе родительскую беседу вместе с цепочкой или только родительскую цепочку.
+Ответ на запись и добавление новой записи в указанную цепочку беседы группы. 
+
+Вы можете указать в запросе родительскую беседу вместе с цепочкой или только родительскую цепочку.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +50,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -136,7 +138,7 @@ Content-length: 1131
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

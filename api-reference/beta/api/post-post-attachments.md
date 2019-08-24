@@ -1,22 +1,24 @@
 ---
 title: Добавление вложения
-description: С помощью этого API можно добавить вложение к записи. Так как
+description: Добавление вложения при создании записи группы.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 611489e63c36a922f3eabd3a595680565151ab6f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e82f7d7cc7a0ceaac437cb86020ad62bc470b3e1
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412910"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622589"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно добавить [вложение](../resources/attachment.md) к записи. Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
+Добавление [вложения](../resources/attachment.md) при создании записи группы. 
+
+Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
 
 Допустимые типы вложений:
 
@@ -36,11 +38,12 @@ ms.locfileid: "36412910"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+Включите вложение при создании [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы. Указать родительскую [беседу](../resources/conversation.md) необязательно.
+
 <!-- { "blockType": "ignored" } -->
-Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
 ```http
-POST /groups/{id}/threads/{id}/posts/{id}/attachments
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -48,31 +51,43 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Тело запроса
-Предоставьте в тексте запроса описание объекта [Attachment](../resources/attachment.md) в формате JSON.
+В тексте запроса укажите объект JSON, включающий параметр **POST** .
+
+| Параметр    | Тип   |Описание|
+|:---------------|:--------|:----------|
+|post|[post](../resources/post.md)|Новая запись, с которой отправляются ответы, которые включают одно или несколько вложений [](../resources/attachment.md) в коллекцию вложений.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [Attachment](../resources/attachment.md) в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.
 
-## <a name="example-file-attachment"></a>Пример (вложенный файл)
-
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+## <a name="examples"></a>Примеры
+### <a name="example-1-include-a-file-attachment"></a>Пример 1: включение вложенного файла
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса, включающего файл в качестве вложения при создании записи.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_post"
+  "name": "create_file_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 142
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "Which quarter does that file cover? See my attachment."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.fileAttachment",
+      "name": "Another file as attachment",
+      "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+    } ]
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -89,99 +104,105 @@ Content-length: 142
 
 ---
 
-
-Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
-
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_file_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accpted
 ```
 
-## <a name="example-item-attachment"></a>Пример (вложенный элемент)
+### <a name="example-2-include-an-item-attachment"></a>Пример 2: включение вложения элемента
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса, включающего событие в виде вложения при создании записи.
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
+}-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "name-value",
-  "item": { }
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached an event."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.itemAttachment",
+      "name": "Holiday event", 
+      "item": {
+          "@odata.type": "microsoft.graph.event",
+          "subject": "Discuss gifts for children",
+          "body": {
+              "contentType": "HTML",
+              "content": "Let's look for funding!"
+          },
+          "start": {
+              "dateTime": "2019-12-02T18:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2019-12-02T19:00:00",
+              "timeZone": "Pacific Standard Time"
+          }
+      }
+    } ]
+  }
 }
 ```
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_item_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accepted
 ```
 
-## <a name="example-reference-attachment"></a>Пример (вложенная ссылка)
+### <a name="example-3-include-a-reference-attachment"></a>Пример 3: включение вложения ссылки
 
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса, который добавляет к существующей записи вложение ссылки.
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса, включающего вложение ссылки при создании записи.
 Вложение указывает на папку в OneDrive.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_post",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
-
-```
-POST https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments
+```http
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached a reference to a file on OneDrive."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.referenceAttachment", 
+      "name": "Personal pictures", 
+      "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
+      "providerType": "oneDriveConsumer", 
+      "permission": "Edit", 
+      "isFolder": "True"
+    } ]
+  }
+}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -197,32 +218,14 @@ Content-length: 319
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример полного ответа.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post"
 } -->
 ```http
-HTTP 201 Created
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments/$entity",
-  "@odata.type": "#microsoft.graph.referenceAttachment",
-  "id": "AAMkAGE1Mg72tgf7hJp0PICVGCc0g=",
-  "lastModifiedDateTime": "2016-03-12T06:04:38Z",
-  "name": "Personal pictures",
-  "contentType": null,
-  "size": 382,
-  "isInline": false,
-  "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-  "providerType": "oneDriveConsumer",
-  "thumbnailUrl": null,
-  "previewUrl": null,
-  "permission": "edit",
-  "isFolder": true
-}
+HTTP/1.1 202 Accpted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

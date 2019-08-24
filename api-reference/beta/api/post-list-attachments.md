@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a8696e1e5e45045024f9e94ee7cbf575c628e41
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: b62a20c0f8e2c27c982acead15670afdcf92355d
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461448"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622586"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -27,8 +27,9 @@ ms.locfileid: "36461448"
 |Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+Получение вложений для [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы. Указать родительскую [беседу](../resources/conversation.md) необязательно.
+
 <!-- { "blockType": "ignored" } -->
-Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -38,6 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 
 В частности, вы можете использовать параметр запроса $expand, чтобы включить все вложенные вложения со всеми остальными свойствами POST. Пример:
 
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
 ```
@@ -59,10 +61,11 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_get_attachments_beta"
+  "name": "post_get_attachments_beta",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJfolA==","AAMkADJ-aHAAA="]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJfolA==/posts/AAMkADJ-aHAAA=/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-get-attachments-beta-csharp-snippets.md)]
@@ -90,23 +93,23 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.fileAttachment",
-      "id": "id-value",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-      "isInline": false,
-      "name": "name-value",
-      "size": 99
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('1848753d-185d-4c08-a4e4-6ee40521d115')/threads('AAQkADJfolA%3D%3D')/posts('AAMkADJ-aHAAA%3D')/attachments",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.fileAttachment",
+            "id": "AAMkADJ-aHAAABEgAQAO5ZYuLGBmNFnelXXQqAN6I=",
+            "lastModifiedDateTime": "2019-08-23T01:53:41Z",
+            "name": "FileAsAttachment.txt",
+            "contentType": "text/plain",
+            "size": 244,
+            "isInline": false,
+            "contentId": null,
+            "contentLocation": null,
+            "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+        }
+    ]
 }
 ```
 

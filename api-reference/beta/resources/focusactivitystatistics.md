@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: fc4431ac20c961569ce5cfaa607c2d2ab77240ee
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 11ca850dc7aa24c17f485eb628c7e574bbd4ff4c
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450802"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622609"
 ---
 # <a name="focusactivitystatistics-resource-type"></a>Тип ресурса Фокусактивитистатистикс
 
@@ -27,7 +27,7 @@ ms.locfileid: "36450802"
 |endDate|Date|Дата окончания действия фокуса. Значение представлено в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-04", которое соответствует формату ГГГГ – MM – DD.|
 |id|String| Идентификатор, предназначенный только для чтения, для действия Focus.|
 |startDate|Дата|Дата начала действия фокуса. Значение представлено в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-03", которое соответствует формату ГГГГ – MM – DD.|
-|тимезонеусед|String|Часовой пояс, который пользователь задает в календаре Outlook для вычисления. Например, значение свойства может быть "тихоокеанское стандартное время".|
+|тимезонеусед|String.|Часовой пояс, который пользователь задает в календаре Outlook для вычисления. Например, значение свойства может быть "тихоокеанское стандартное время".|
 
 ## <a name="relationships"></a>Отношения
 
@@ -39,6 +39,8 @@ ms.locfileid: "36450802"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

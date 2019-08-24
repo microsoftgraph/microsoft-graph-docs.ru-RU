@@ -3,20 +3,20 @@ title: Тип ресурса attachment
 description: Вы можете добавить связанное содержимое в экземпляр event,
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6ee3ba645f71b100b78b01fa1821bf91ca21cb26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: da7e66d1edbda224fe547b7e7afc8fd88dc5e5aa
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013264"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622638"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете добавить связанное содержимое к [](../resources/event.md)событию [](../resources/message.md), сообщению, [задаче Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md) в виде вложения.
+Вы можете добавить связанное содержимое для [события](../resources/event.md)пользователя, [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [записи](../resources/post.md) группы в виде вложения.
 
 **attachment** — базовый ресурс для следующих производных типов вложений:
 
@@ -24,19 +24,21 @@ ms.locfileid: "36013264"
 * элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
+События в групповой календаре не поддерживают вложения.
+
 ## <a name="methods"></a>Методы
 
 Указанные ниже методы применяются к любому из производных типов вложений (**fileAttachment**, **itemAttachment** или **referenceAttachment**).
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Считывание свойств и связей вложений, вложенных в событие, сообщение, задачу Outlook или POST.|
-|[Добавление вложения к данным о событии](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление для события файла, элемента или ссылки в качестве вложения.|
+|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Считывание свойств и связей вложений, вложенных в событие пользователя, сообщение, задачу Outlook или POST.|
+|[Добавление вложения в событие пользователя](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение в событие в календаре пользователя.|
 |[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения.|
 |[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение к задаче Outlook.|
 |[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
-|[Список вложений для события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события. |
-|[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
+|[Список вложений пользовательского события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события в календаре пользователя. |
+|[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md) | Получение списка вложений для сообщения. |
 |[Список вложений задачи Outlook](../api/outlooktask-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для задачи Outlook. |
 |[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
 |[Удаление](../api/attachment-delete.md) | Нет |Удаление вложения для события, сообщения, задачи Outlook или POST. |

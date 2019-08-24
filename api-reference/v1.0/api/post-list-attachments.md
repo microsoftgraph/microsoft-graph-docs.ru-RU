@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ebd28d96e64ce6fb25bca87a4e1644dab5c0b659
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 4ec8e7b5681d13c09cff59e22bd1e53ae8c75a3b
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461989"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622567"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -25,14 +25,22 @@ ms.locfileid: "36461989"
 |Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+Получение вложений для [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы. Указать родительскую [беседу](../resources/conversation.md) необязательно.
+
 <!-- { "blockType": "ignored" } -->
-Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+
+В частности, вы можете использовать параметр запроса $expand, чтобы включить все вложенные вложения со всеми остальными свойствами POST. Пример:
+
+<!-- { "blockType": "ignored" } -->
+```
+GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
+```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -43,7 +51,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вложений](../resources/attachment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -51,10 +59,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_get_attachments_v1"
+  "name": "post_get_attachments_v1",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJfolA==","AAMkADJ-aHAAA="]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments
+GET https://graph.microsoft.com/v1.0/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJfolA==/posts/AAMkADJ-aHAAA=/attachments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-get-attachments-v1-csharp-snippets.md)]
@@ -74,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachm
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -86,23 +95,23 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachm
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.fileAttachment",
-      "id": "id-value",
-      "contentType": "contentType-value",
-      "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
-      "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
-      "isInline": false,
-      "name": "name-value",
-      "size": 99
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('1848753d-185d-4c08-a4e4-6ee40521d115')/threads('AAQkADJfolA%3D%3D')/posts('AAMkADJ-aHAAA%3D')/attachments",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.fileAttachment",
+            "id": "AAMkADJ-aHAAABEgAQAO5ZYuLGBmNFnelXXQqAN6I=",
+            "lastModifiedDateTime": "2019-08-23T01:53:41Z",
+            "name": "FileAsAttachment.txt",
+            "contentType": "text/plain",
+            "size": 244,
+            "isInline": false,
+            "contentId": null,
+            "contentLocation": null,
+            "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+        }
+    ]
 }
 ```
 
