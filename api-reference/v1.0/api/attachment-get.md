@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dbdf0f11ef99b7cb283d4f80c2cfa6768ea8040c
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 065871442108722963a4d55d5725038656ba160f
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461838"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622583"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
-Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к [данным о событии](../resources/event.md), [сообщению](../resources/message.md) или [записи](../resources/post.md). 
+Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md) или [записи](../resources/post.md). 
 
 Допустимые типы вложений:
 

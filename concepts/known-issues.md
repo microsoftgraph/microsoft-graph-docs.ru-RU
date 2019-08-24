@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245660"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622651"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -81,10 +81,6 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 ### <a name="policy"></a>Политика
 
 С помощью Microsoft Graph можно создать группу Office 365 и присвоить ей название в обход всех групповых политик Office 365, настроенных через Outlook Web App.
-
-### <a name="adding-and-getting-attachments-of-group-posts"></a>Добавление и получение вложений в записях групп
-
-В настоящее время при [добавлении](/graph/api/post-post-attachments?view=graph-rest-1.0) вложений в записи группы, [отображении](/graph/api/post-list-attachments?view=graph-rest-1.0) и получении вложений возвращается сообщение об ошибке "Запрос OData не поддерживается". Для версий `/v1.0` и `/beta` подготовлено исправление. Оно станет доступно всем пользователям в конце января 2016 года.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Установка свойства allowExternalSenders
 
