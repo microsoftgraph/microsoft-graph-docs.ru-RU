@@ -2,15 +2,15 @@
 title: Тип ресурса attachment
 description: Вы можете добавить связанное содержимое в экземпляр event,
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d47fde49a76f00658e39d9a3ae6629cd9bcf56b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 509421f292e1c849ceee17a3db9f348e05ca747b
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030074"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622658"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -22,6 +22,7 @@ ms.locfileid: "36030074"
 * элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
+События в календарях группы не поддерживают вложения.
 
 ## <a name="methods"></a>Методы
 
@@ -29,11 +30,11 @@ ms.locfileid: "36030074"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии.|
-|[Добавление вложения к данным о событии](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление для события файла, элемента или ссылки в качестве вложения.|
+|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств и связей объекта, представляющего вложение, которое было добавлено к пользовательскому событию, сообщению или записи.|
+|[Добавление вложения в пользовательское событие](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или вложения-ссылки в качестве события в пользовательском календаре.|
 |[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения.|
 |[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
-|[Список вложений для события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события. |
+|[Список вложений пользовательского события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события в пользовательском календаре. |
 |[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
 |[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
 |[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта, представляющего вложение, которое было добавлено к сообщению, записи или данным о событии. |
