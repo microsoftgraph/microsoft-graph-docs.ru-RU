@@ -115,7 +115,11 @@ items:
         href: intune-concept-overview.md
         displayName: Intune
       - name: Образование
-        href: education-concept-overview.md
+        items:
+          - name: Общие сведения
+            href: education-concept-overview.md
+          - name: Рубрики
+            href: education-rubric-overview.md
       - name: Файлы
         href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'

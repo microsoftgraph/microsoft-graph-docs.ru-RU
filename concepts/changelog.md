@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
+ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36462007"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36564736"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -93,7 +93,7 @@ ms.locfileid: "36462007"
 | Дополнение        | 1.0  | Добавлено свойство **ownerPrincipalName** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta).|
 | Дополнение        | 1.0  | Добавлены свойства **office365Active** и **office365Inactive** для объекта [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
 
-### <a name="social-and-workplace-intelligence-analytics"></a>Социальная и рабочая аналитика (аналитические сведения)
+### <a name="social-and-workplace-intelligence"></a>Социальная и рабочая аналитика
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1026,7 +1026,7 @@ ms.locfileid: "36462007"
 | Дополнение        | бета        | Добавлено свойство **analytics** для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлено свойство **analytics** для объекта [site](/graph/api/resources/site?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлено свойство **analytics** для объекта [listItem](/graph/api/resources/listitem?view=graph-rest-beta) |
-| Дополнение        | бета        | Добавлена функция **getActivitiesByInterval** для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
+| Дополнение        | Бета-версия        | Добавлена функция **getActivitiesByInterval** для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) |
 | Дополнение        | Бета-версия        | Добавлена функция **getActivitiesByInterval** для объекта [site](/graph/api/resources/site?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлена функция **getActivitiesByInterval** для объекта [listItem](/graph/api/resources/listitem?view=graph-rest-beta) |
 | Дополнение        | бета        | Добавлен объект [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) |
@@ -1598,13 +1598,13 @@ ms.locfileid: "36462007"
 
 | **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета-версия       | Добавлен [API безопасности](/graph/api/resources/security-api-overview?view=graph-rest-beta), включающий следующие ресурсы и операции:<br/>[оповещение](/graph/api/resources/alert?view=graph-rest-beta) (и соответствующие объекты);<br/>[получение оповещения](/graph/api/alert-get?view=graph-rest-beta);<br/>[перечисление оповещений](/graph/api/alert-list?view=graph-rest-beta);<br/>[обновление оповещения](/graph/api/alert-update?view=graph-rest-beta).<br/><br/>Добавлена следующая вспомогательная документация:<br/>[сведения об ошибках](/graph/api/resources/security-error-codes?view=graph-rest-beta);<br/>[Интеграция с SIEM](security-siemintegration.md)
+| Дополнение        | Бета-версия       | Добавлен [API безопасности](/graph/api/resources/security-api-overview?view=graph-rest-beta), включающий следующие ресурсы и операции:<br/>[оповещение](/graph/api/resources/alert?view=graph-rest-beta) (и соответствующие объекты);<br/>[получение оповещения](/graph/api/alert-get?view=graph-rest-beta);<br/>[перечисление оповещений](/graph/api/alert-list?view=graph-rest-beta);<br/>[обновление оповещения](/graph/api/alert-update?view=graph-rest-beta).<br/><br/>Добавлена следующая вспомогательная документация:<br/>[сведения об ошибках](/graph/api/resources/security-error-codes?view=graph-rest-beta);<br/>[Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API](security-integration.md)
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|бета|Добавлен новый объект [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
+|Дополнение|Бета-версия|Добавлен новый объект [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлен новый объект [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлен новый объект [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлен новый объект [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta).|
@@ -3316,7 +3316,7 @@ ms.locfileid: "36462007"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | бета        | Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_. |
+| Дополнение        | Бета-версия        | Области, предназначенные только для приложений, теперь поддерживаются для подписок _mail_ и _contacts_. |
 
 ## <a name="may-2016"></a>Май 2016 г.
 
