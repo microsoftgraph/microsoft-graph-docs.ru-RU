@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
-ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
+ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36564736"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633715"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,12 @@ ms.locfileid: "36564736"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="august-2019"></a>Август 2019 г.
+
+### <a name="education"></a>Образование
+
+| Тип изменения | Версия | Описание                                                                                               |
+| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
+| Дополнение    | Бета-версия    | Добавлено новое свойство **grade** для объекта [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -101,6 +107,14 @@ ms.locfileid: "36564736"
 | Дополнение | Бета-версия | Представлен новый [API параметров](/graph/api/resources/settings?view=graph-rest-beta) для рабочих сведений, представляющий текущие обязательные параметры для применения пользователем [API аналитики](/graph/api/resources/useranalytics?view=graph-rest-beta). |
 | Дополнение | Бета-версия | Представлен новый тип ресурса [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) и следующие новые типы ресурсов, полученные из него: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) и [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta). |
 
+### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета-версия | Добавлена возможность [добавления участников в закрытый канал](/graph/api/conversationmember-add?view=graph-rest-beta). |
+| Дополнение | бета | Добавлена возможность [удаления участников из закрытого канала](/graph/api/conversationmember-delete?view=graph-rest-beta). |
+| Дополнение | бета | Добавлена возможность [обновления роли участника в закрытом канале](/graph/api/conversationmember-update?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлено свойство `membershipType` для ресурса [channel]](/graph/api/resources/channel?view=graph-rest-beta), чтобы демонстрировать, является ли конкретный канал закрытым или стандартным. |
 
 ## <a name="july-2019"></a>Июль 2019 г.
 
@@ -1893,7 +1907,7 @@ ms.locfileid: "36564736"
 |Дополнение|бета|Добавлены новые объекты:<br/>[deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta);<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-beta);<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-beta).<br/>|
 |Дополнение|бета|Добавлены новые сложные типы:<br/>[revokeAppleVppLicensesActionResult](/graph/api/resources/intune-devices-revokeapplevpplicensesactionresult?view=graph-rest-beta);<br/>[vppTokenRevokeLicensesActionResult](/graph/api/resources/intune-onboarding-vpptokenrevokelicensesactionresult?view=graph-rest-beta).<br/>|
 |Дополнение|Бета-версия|Добавлено действие [revokeToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken?view=graph-rest-beta) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta). |
-|Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
+|Дополнение|бета|Добавлено действие [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-devices-devicemanagementscript-assign?view=graph-rest-beta) к объекту [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [revokeAppleVppLicenses](/graph/api/intune-devices-manageddevice-revokeapplevpplicenses?view=graph-rest-beta) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-beta) для объекта [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta). |
@@ -2047,7 +2061,7 @@ ms.locfileid: "36564736"
 |Дополнение|Бета-версия|Добавлено действие [syncMicrosoftStoreForBusinessApps](/graph/api/intune-onboarding-deviceappmanagement-syncmicrosoftstoreforbusinessapps?view=graph-rest-beta) для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие setDefaultProfile для объекта [enrollmentProfile](/graph/api/resources/intune-corpenrollment-enrollmentprofile?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие shareForSchoolDataSyncService для объекта [depOnboardingSetting](/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta). |
-|Дополнение|Бета-версия|Добавлено действие unshareForSchoolDataSyncService для объекта [depOnboardingSetting](/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta). |
+|Дополнение|бета|Добавлено действие unshareForSchoolDataSyncService для объекта [depOnboardingSetting](/graph/api/resources/intune-onboarding-deponboardingsetting?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлена функция getAuditCategories для коллекции [auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлена функция getAuditActivityTypes для коллекции [auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta). |
 |Удаление|Бета-версия|Удалены следующие объекты:<br/>**mobileAppIdentifierDeployment**.<br/>|
@@ -3294,7 +3308,7 @@ ms.locfileid: "36564736"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета        | Теперь REST API управления привилегированными пользователями доступны в конечной точке Microsoft Graph (бета-версия). [Управление привилегированными пользователями](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) обеспечивает активацию "точно в срок" для привилегированных ролей в организации Azure AD, например ролей глобального администратора, администратора выставления счетов и т. д. C помощью опубликованных API разработчики могут создавать приложения, которые получают и обновляют привилегированные роли и активируют роли для пользователей. Дополнительные сведения см. в статьях [Microsoft Graph: доступна бета-версия API для Azure AD Privileged Identity Management](https://developer.microsoft.com/office/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta/) и [Azure AD Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta). |
+| Дополнение        | бета        | Теперь REST API управления привилегированными пользователями доступны в конечной точке Microsoft Graph (бета-версия). [Управление привилегированными пользователями](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) обеспечивает активацию "точно в срок" для привилегированных ролей в организации Azure AD, например ролей глобального администратора, администратора выставления счетов и т. д. C помощью опубликованных API разработчики могут создавать приложения, которые получают и обновляют привилегированные роли и активируют роли для пользователей. Дополнительные сведения см. в статьях [Microsoft Graph: доступна бета-версия API для Azure AD Privileged Identity Management](https://developer.microsoft.com/office/blogs/microsoft-graph-azure-ad-privileged-identity-management-apis-beta/) и [Azure AD Privileged Identity Management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta). |
 
 ## <a name="july-2016"></a>Июль 2016 г.
 
