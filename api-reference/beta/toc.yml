@@ -9484,6 +9484,8 @@
                   href: api/channel-post.md
                 - name: Получение канала
                   href: api/channel-get.md
+                - name: 'Ветвь обновлений '
+                  href: api/channel-patch.md
                 - name: Список сообщений в каналах
                   href: api/channel-list-messages.md
                 - name: Получение сообщений в каналах
@@ -9511,6 +9513,12 @@
                   href: api/conversationmember-list.md
                 - name: Получение одного участника в чате
                   href: api/conversationmember-get.md
+                - name: Добавление участника в чат
+                  href: api/conversationmember-add.md
+                - name: Удаление участника из чата
+                  href: api/conversationmember-delete.md
+                - name: Обновление роли члена в чате
+                  href: api/conversationmember-update.md
             - name: Сообщение чата
               href: resources/chatmessage.md
               items:
@@ -9531,7 +9539,7 @@
                   href: api/teamsapp-update.md
                 - name: Удаление приложения из каталога
                   href: api/teamsapp-delete.md
-            - name: Приложение
+            - name: Приложения
               items:
                 - name: Установленное приложение
                   href: resources/teamsappinstallation.md
@@ -9695,7 +9703,7 @@
               items:
                 - name: Список
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: Создание
                   href: api/outlookuser-post-taskfolders.md
                 - name: Получение
                   href: api/outlooktaskfolder-get.md
