@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f9f5168f8e7d5436b4af6a0a515ccfa6c7b1b416
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: c1376e6775c3aa26dfe6154a56e354572ae2bda0
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729603"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638406"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const attachment = {
 
 let res = await client.api('/me/messages/AAMkAGE1M88AADUv0uFAAA=/attachments')
     .version('beta')
-    .post({attachment : attachment});
+    .post(attachment);
 
 ```

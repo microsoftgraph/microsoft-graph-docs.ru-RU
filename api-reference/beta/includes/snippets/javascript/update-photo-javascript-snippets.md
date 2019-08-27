@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8322c3da19c7c81745947ef69e03ae2ebe38dce9
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 224cd943ec8cec4514fdfa3eea69ef438ab4b4cc
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720716"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638392"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const profilePhoto = {
 
 let res = await client.api('/users/{id|userPrincipalName}/photo')
     .version('beta')
-    .update({profilePhoto : profilePhoto});
+    .update(profilePhoto);
 
 ```

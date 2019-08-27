@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: fe24d18c0dcc23884c36b07762ff14c6d21b182e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1f05364a1787db9eac87d3cc5e23eba63d149c0b
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729383"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638356"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const sectionGroup = {
 
 let res = await client.api('/me/onenote/notebooks/{id}/sectionGroups')
     .version('beta')
-    .post({sectionGroup : sectionGroup});
+    .post(sectionGroup);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d0a5095f8a5f5231e9b68a7dc7b2a2c54ce3d86d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: a568d6229153de65eac71e9288a5e585568e4b3a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708445"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638247"
 ---
 ```javascript
 
@@ -22,6 +22,6 @@ const workbookChart = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}')
     .version('beta')
-    .update({workbookChart : workbookChart});
+    .update(workbookChart);
 
 ```

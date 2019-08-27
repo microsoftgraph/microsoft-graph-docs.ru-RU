@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 416f6681bff3d5bed67716dff41c77b3154a15cf
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 69e57ceff030611251939a2d09dc0e724c93d9af
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708257"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638243"
 ---
 ```javascript
 
@@ -25,6 +25,6 @@ const workbookChartDataLabels = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels')
     .version('beta')
-    .update({workbookChartDataLabels : workbookChartDataLabels});
+    .update(workbookChartDataLabels);
 
 ```
