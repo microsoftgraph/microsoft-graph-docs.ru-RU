@@ -1,22 +1,22 @@
 ---
 title: Список объектов conversationMember
-description: Получение участника чата.
-author: nkramer
+description: Получение участника чата или канала.
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f81020ec3cc94a90f825401c0fc1d1802670054
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 21c60a65c486c219c89af7cd4e2aad99e1a19f5a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417804"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633344"
 ---
 # <a name="list-conversationmembers"></a>Список объектов conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление всех [участников беседы](../resources/conversationmember.md) в [чате](../resources/chat.md)
+Перечисление всех [участников беседы](../resources/conversationmember.md) в [чате](../resources/chat.md) или [канале](../resources/channel.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -62,21 +62,21 @@ GET /users/{id}/chats/{id}/members
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member"
+  "name": "list_conversation_members"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/chats/{id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-conversation-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-conversation-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-conversation-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

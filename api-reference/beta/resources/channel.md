@@ -1,23 +1,22 @@
 ---
 title: Тип ресурса channel
 description: 'Канал — это коллекция объектов chatMessages в команде. '
-author: nkramer
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f78d6e8730e5f8168cbff94fa03dfbf5287dc5ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a8c6239cc91eb10ecec5d2e037ffa9364e55646e
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012991"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633680"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Команды](../resources/team.md) состоят из каналов, являющихся беседами с сотрудниками. Каждый канал предназначен для определенной темы, отдела или проекта.
-Каналы — это место, где фактически выполняется работа. В них проходят командные обсуждения с помощью текста, аудио и видео, а также выполняется обмен файлами и добавление вкладок.
+[Команды](../resources/team.md) состоят из каналов, являющихся беседами с сотрудниками. Каждый канал предназначен для определенной темы, отдела или проекта. Каналы — это место, где фактически выполняется работа. В них проходят командные обсуждения с помощью текста, аудио и видео, а также выполняется обмен файлами и добавление вкладок.
 
 ## <a name="methods"></a>Методы
 
@@ -29,6 +28,11 @@ ms.locfileid: "36012991"
 |[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
+|[Перечисление участников канала](../api/conversationmember-list.md)| Коллекция [conversationMember](conversationmember.md)| Получение списка участников канала. |
+|[Получение участника канала](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Получение участника канала. |
+|[Добавление участника канала](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Добавление участника в канал. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Обновление участника канала](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Обновление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Удаление участника канала](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
 |[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
 |[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале.|
 |[Перечисление вкладок](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
@@ -37,28 +41,29 @@ ms.locfileid: "36012991"
 |[Удаление вкладки](../api/teamstab-delete.md) | Нет | Удаление (открепление) вкладки из канала.|
 |[Обновление вкладки](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки.|
 
-
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
+
+| Свойство    | Тип |Описание|
 |:---------------|:--------|:----------|
 |description|String|Необязательное текстовое описание канала.|
 |displayName|String|Имя канала, отображаемое для пользователя в Microsoft Teams.|
 |id|String|Уникальный идентификатор канала. Только для чтения.|
-|isFavoriteByDefault|Boolean|Должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Значение по умолчанию: `false`.|
+|isFavoriteByDefault|Логический|Указывает, должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Значение по умолчанию: `false`.|
 |email|String| Адрес электронной почты для отправки сообщений в канал. Только для чтения.|
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
-
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Значение по умолчанию: standard.|
 
 ## <a name="relationships"></a>Отношения
+
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null. В настоящее время этот API поддерживает чтение, но в конечном итоге будет также поддерживать написание сообщений.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
-
+|members|Коллекция [conversationMember](conversationmember.md)|Коллекция записей участников, сопоставленных с каналом.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -76,10 +81,10 @@ ms.locfileid: "36012991"
   "id": "string (identifier)",
   "isFavoriteByDefault": true,
   "email": "string",
-  "webUrl": "string"
+  "webUrl": "string",
+  "membershipType": "channelMembershipType"
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,22 +1,22 @@
 ---
-title: Получение conversationMember
-description: Получение участника чата.
-author: nkramer
+title: Получение объекта conversationMember
+description: Получение участника чата или канала.
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ff0ec4dfd39c4f5d2c54be567869d23f362eb87
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a1c4b522a828fcf08fe3b6385f6074aec4497b2a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417833"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633323"
 ---
-# <a name="get-conversationmember"></a>Получение conversationMember
+# <a name="get-conversationmember"></a>Получение объекта conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [conversationMember](../resources/conversationmember.md) из [чата](../resources/chat.md).
+Получение объекта [conversationMember](../resources/conversationmember.md) из [чата](../resources/chat.md) или [канала](../resources/channel.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,15 +24,16 @@ ms.locfileid: "36417833"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Chat.Read, Chat.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Для ресурса **user** или **chat**:<br/>Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**:<br/>Group.Read.All, Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложения |Chat.Read.All, Chat.ReadWrite.All |
+|Приложение| Для ресурса **user** или **chat**:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Для ресурса **channel**:<br/>Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members/{id}
 GET /users/{id}/chats/{id}/members/{id}
+GET /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -55,7 +56,7 @@ GET /users/{id}/chats/{id}/members/{id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -81,10 +82,9 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 ---
 
+### <a name="response"></a>Отклик
 
-##### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
