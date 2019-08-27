@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 44fd630a038f92cd8ec25c6acbd59a5051b52f92
+ms.openlocfilehash: ac5671ce4013f15e03ef113c5a063ea40ae03a3a
 ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/27/2019
-ms.locfileid: "36634067"
+ms.locfileid: "36634045"
 ---
 ```javascript
 
@@ -15,14 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const attachment = {
-  @odata.type: "#microsoft.graph.fileAttachment",
-  name: "name-value",
-  contentBytes: "contentBytes-value"
-};
-
-let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/attachments')
+let res = await client.api('/teams/{id}/channels/{id}/members/{id}')
     .version('beta')
-    .post({attachment : attachment});
+    .delete();
 
 ```

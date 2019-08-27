@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 44fd630a038f92cd8ec25c6acbd59a5051b52f92
+ms.openlocfilehash: 6cf8a7be504ea554cefc7f424f7d908856de8014
 ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/27/2019
-ms.locfileid: "36634067"
+ms.locfileid: "36633253"
 ---
 ```javascript
 
@@ -15,14 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-const attachment = {
-  @odata.type: "#microsoft.graph.fileAttachment",
-  name: "name-value",
-  contentBytes: "contentBytes-value"
-};
-
-let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/attachments')
+let res = await client.api('/accessReviews')
     .version('beta')
-    .post({attachment : attachment});
+    .filter('businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'')
+    .get();
 
 ```

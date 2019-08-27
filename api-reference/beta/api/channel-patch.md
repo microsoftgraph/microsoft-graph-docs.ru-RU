@@ -1,16 +1,16 @@
 ---
 title: Канал исправлений
 description: Обновление свойств указанного канала.
-author: nkramer
+author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6e8cd0369178917d0a1542e36c8a8ea83b6b7f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b951835941c44d4be5f67bf9c9bb0e23cbf288d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944242"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633386"
 ---
 # <a name="patch-channel"></a>Канал исправлений
 
@@ -18,9 +18,8 @@ ms.locfileid: "35944242"
 
 Обновление свойств указанного [канала](../resources/channel.md).
 
-> **Примечание**. Существует известная проблема с разрешениями для приложений и этим API. Дополнительные сведения см. в [списке известных проблем](/graph/known-issues#application-permissions).
-
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -43,6 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
+
 Предоставьте в тексте запроса описание объекта [channel](../resources/channel.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -50,7 +50,9 @@ PATCH /teams/{id}/channels/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -67,7 +69,8 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>Ответ
+### <a name="response"></a>Ответ
+
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

@@ -4115,10 +4115,14 @@
               items:
                 - name: Список каналов
                   href: api/channel-list.md
-                - name: Создание канала
-                  href: api/channel-post.md
                 - name: Получение канала
                   href: api/channel-get.md
+                - name: Создание канала
+                  href: api/channel-post.md
+                - name: 'Ветвь обновлений '
+                  href: api/channel-patch.md
+                - name: Удаление канала
+                  href: api/channel-delete.md
             - name: Каталог приложений
               href: resources/teamsapp.md
               items:

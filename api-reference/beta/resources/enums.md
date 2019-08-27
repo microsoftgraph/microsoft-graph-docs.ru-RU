@@ -5,16 +5,16 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b4df1b1283ae0240e26ba3f63ccfad0094e285d7
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: b21f5ad0b3018fb37f3005d7eefdac34f1fe3f16
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450482"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633687"
 ---
 ### <a name="analyticsactivitytype-values"></a>значения Аналитиксактивититипе
 
-| Значение
+| Member
 |:--------------
 | call
 | отображаются
@@ -49,7 +49,7 @@ ms.locfileid: "36450482"
 
 ### <a name="scheduleentitytheme-values"></a>значения Счедулинтитисеме
 
-| Значение
+| Member
 |:-------------------------
 | white
 | blue
@@ -96,7 +96,7 @@ ms.locfileid: "36450482"
 
 ### <a name="timezonestandard-values"></a>значения Тимезонестандард
 
-| Значение
+| Member
 |:-----------------
 | под
 | IANA
@@ -116,7 +116,7 @@ ms.locfileid: "36450482"
 
 ### <a name="physicaladdresstype-values"></a>значения physicalAddressType
 
-| Значение
+| Member
 |:-------------------------
 | unknown 
 | страницу
@@ -126,7 +126,7 @@ ms.locfileid: "36450482"
 
 ### <a name="attendeetype-values"></a>значения attendeeType
 
-| Значение
+| Member
 |:-------------------------
 | Обязательный
 | необязательный
@@ -135,7 +135,7 @@ ms.locfileid: "36450482"
 
 ### <a name="externalaudiencescope-values"></a>значения Екстерналаудиенцескопе
 
-| Значение
+| Member
 |:-------------------------
 | none
 | контактсонли
@@ -144,7 +144,7 @@ ms.locfileid: "36450482"
 
 ### <a name="automaticrepliesstatus-values"></a>значения Аутоматикреплиесстатус
 
-| Значение
+| Member
 |:-------------------------
 | активирован
 | Alwaysenabled приложение
@@ -194,7 +194,7 @@ ms.locfileid: "36450482"
 
 ### <a name="educationexternalsource-values"></a>значения Едукатионекстерналсаурце
 
-| Значение
+| Member
 |:-------------------------
 | Гровелер
 | Вручную
@@ -203,7 +203,7 @@ ms.locfileid: "36450482"
 
 ### <a name="educationgender-values"></a>значения Едукатионжендер
 
-| Значение
+| Member
 |:-------------------------
 | женщина
 | м
@@ -213,7 +213,7 @@ ms.locfileid: "36450482"
 
 ### <a name="eventtype-values"></a>значения eventType
 
-| Значение
+| Member
 |:-------------------------
 | синглеинстанце
 | экземпляр
@@ -223,7 +223,7 @@ ms.locfileid: "36450482"
 
 ### <a name="sensitivity-values"></a>значения чувствительности
 
-| Значение
+| Member
 |:-------------------------
 | обычный
 | personal
@@ -233,7 +233,7 @@ ms.locfileid: "36450482"
 
 ### <a name="importance-values"></a>значения важности
 
-| Значение
+| Member
 |:-------------------------
 | потребление
 | обычный
@@ -241,7 +241,7 @@ ms.locfileid: "36450482"
 
 
 ### <a name="educationuserrole-values"></a>значения Едукатионусерроле
-| Значение
+| Member
 |:---------------------
 | student
 | teacher
@@ -250,7 +250,7 @@ ms.locfileid: "36450482"
 
 ### <a name="meetingmessagetype-values"></a>значения Митингмессажетипе
 
-| Значение
+| Member
 |:-----------------
 | none
 | Свойство meetingrequest
@@ -262,7 +262,7 @@ ms.locfileid: "36450482"
 
 ### <a name="followupflagstatus-values"></a>значения Фолловупфлагстатус
 
-| Значение
+| Member
 |:-------------------------
 | нотфлагжед
 | complete
@@ -271,7 +271,7 @@ ms.locfileid: "36450482"
 
 ### <a name="inferenceclassificationtype-values"></a>значения Инференцеклассификатионтипе
 
-| Значение
+| Member
 |:-----------------
 | связаны
 | остальные
@@ -279,7 +279,7 @@ ms.locfileid: "36450482"
 
 ### <a name="iosnotificationalerttype-values"></a>значения Иоснотификатионалерттипе
 
-| Значение
+| Member
 |:-------------------------
 | девицедефаулт
 | заголовок
@@ -288,7 +288,7 @@ ms.locfileid: "36450482"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>значения Девицеенроллментфаилуререасон
 
-| Значение
+| Member
 |:-------------
 | unknown
 | проверки подлинности
@@ -304,7 +304,7 @@ ms.locfileid: "36450482"
 
 
 ### <a name="bodytype-values"></a>значения bodyType
-| Значение
+| Member
 |:---------
 | текст
 | html
@@ -312,7 +312,7 @@ ms.locfileid: "36450482"
 
 ### <a name="locationtype-values"></a>значения locationType
 
-| Значение
+| Member
 |:-------------------------
 | умолчани
 | конференцерум
@@ -327,7 +327,7 @@ ms.locfileid: "36450482"
 
 ### <a name="locationuniqueidtype-values"></a>значения Локатионуникуеидтипе
 
-| Значение
+| Member
 |:-------------------------
 | unknown
 | локатионсторе
@@ -338,7 +338,7 @@ ms.locfileid: "36450482"
 
 ### <a name="messageactionflag-values"></a>значения Мессажеактионфлаг
 
-| Значение
+| Member
 |:-------------------------
 | любой
 | call
@@ -365,7 +365,7 @@ ms.locfileid: "36450482"
 
 ### <a name="operationstatus-values"></a>значения Оператионстатус
 
-| Значение
+| Member
 |:-----------------
 | NotStarted
 | Запущено
@@ -375,7 +375,7 @@ ms.locfileid: "36450482"
 
 ### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
 
-| Значение
+| Member
 |:-------------------------
 | Replace
 | Error
@@ -385,7 +385,7 @@ ms.locfileid: "36450482"
 
 ### <a name="onenotepatchinsertposition-values"></a>значения Оненотепатчинсертпоситион
 
-| Значение
+| Member
 |:-------------------------
 | После
 | До
@@ -393,7 +393,7 @@ ms.locfileid: "36450482"
 
 ### <a name="phonetype-values"></a>значения Фонетипе
 
-| Значение
+| Member
 |:-------------------------
 | страницу
 | подразделения
@@ -409,7 +409,7 @@ ms.locfileid: "36450482"
 
 ### <a name="plannerpreviewtype-values"></a>значения Планнерпревиевтипе
 
-| Значение
+| Member
 |:-------------------------
 | Автоматически
 | непредварительный Просмотр
@@ -420,7 +420,7 @@ ms.locfileid: "36450482"
 
 ### <a name="status-values"></a>значения состояния
 
-| Значение
+| Member
 |:-----------------
 | ASP
 | обновленный
@@ -431,7 +431,7 @@ ms.locfileid: "36450482"
 
 ### <a name="weekindex-values"></a>значения Викиндекс
 
-| Значение
+| Member
 |:-------------------------
 | первыми
 | Втор
@@ -442,7 +442,7 @@ ms.locfileid: "36450482"
 
 ### <a name="dayofweek-values"></a>значения dayOfWeek
 
-| Значение
+| Member
 |:-------------------------
 | воскресеньям
 | Вторник
@@ -454,7 +454,7 @@ ms.locfileid: "36450482"
 
 ### <a name="recurrencepatterntype-values"></a>значения Рекурренцепаттернтипе
 
-| Значение
+| Member
 |:-------------------------
 | ежедневно
 | Табель
@@ -466,7 +466,7 @@ ms.locfileid: "36450482"
 
 ### <a name="recurrencerangetype-values"></a>значения Рекурренцеранжетипе
 
-| Значение
+| Member
 |:-------------------------
 | endDate
 | ноенд
@@ -474,7 +474,7 @@ ms.locfileid: "36450482"
 
 
 ### <a name="onenotesourceservice-values"></a>значения Оненотесаурцесервице
-| Значение
+| Member
 |:---------------------
 | Неизвестно
 | OneDrive
@@ -484,7 +484,7 @@ ms.locfileid: "36450482"
 
 ### <a name="responsetype-values"></a>значения responseType
 
-| Значение
+| Member
 |:-------------------------
 | none
 | organizer
@@ -496,7 +496,7 @@ ms.locfileid: "36450482"
 
 ### <a name="activitydomain-values"></a>значения activityDomain
 
-| Значение
+| Member
 |:-------------------------
 | unknown
 | work
@@ -506,7 +506,7 @@ ms.locfileid: "36450482"
 
 ### <a name="websitetype-values"></a>значения websiteType
 
-| Значение
+| Member
 |:-------------------------
 | остальные
 | страницу
@@ -847,6 +847,14 @@ Enum для типов значений реестра, определенных
 |обычный|
 |высокоуровневых|
 |передачи|
+
+### <a name="channelmembershiptype-values"></a>значения Чаннелмембершиптипе
+
+|Элемент  | Значение|
+|:-------|:-----|
+|Стандартный| нуль    |
+|закрытый | 1,1    |
+|unknownFutureValue| 2  |
 
 ### <a name="stagedfeaturename-values"></a>значения Стажедфеатуренаме
 

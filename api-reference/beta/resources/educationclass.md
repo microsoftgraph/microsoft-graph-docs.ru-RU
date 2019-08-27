@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0bc9fa375e3f22087fbf268933370d8a6222654e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006369"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633708"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -33,7 +33,7 @@ ms.locfileid: "36006369"
 | [Создание educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Создание нового **educationAssignment** путем публикации в коллекции назначений.            |
 | [Перечисление заданий](../api/educationclass-list-assignments.md)           | Коллекция [educationAssignment]                | Получение коллекции объектов **educationAssignment** .                                         |
 | [Получение группы](../api/educationclass-get-group.md)                         | [group]                                        | Получение **группы** Office 365, которая соответствует этому объекту **educationClass**.                 |
-| [Создание Едукатионкатегори](../api/educationclass-post-category.md)      | [Едукатионкатегори]                            | Создание нового **едукатионкатегори** для этого класса.                                        |
+| [Создание Едукатионкатегори](../api/educationclass-post-category.md)      | [едукатионкатегори]                            | Создание нового **едукатионкатегори** для этого класса.                                        |
 | [Перечисление категорий](../api/educationclass-list-categories.md)             | Коллекция [едукатионкатегори]                 | Получение списка объектов **едукатионкатегори** , принадлежащих этому классу.                      |
 | [Обновление](../api/educationclass-update.md)                               | [educationClass]                               | Обновление объекта **educationClass**.                                                         |
 | [Удаление](../api/educationclass-delete.md)                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
@@ -44,15 +44,16 @@ ms.locfileid: "36006369"
 | Свойство       | Тип                                  | Описание                                                                             |
 | :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------- |
 | id             | Строка                                | Уникальный идентификатор для курса.                                                        |
-| classCode      | String                                | Код курса, используемый учебным заведением для идентификации курса.                                    |
-| курсе         | [Едукатионкаурсе](educationcourse.md) | Сведения о курсе для класса                                                        |
+| classCode      | String.                                | Код курса, используемый учебным заведением для идентификации курса.                                    |
+| курсе         | [едукатионкаурсе](educationcourse.md) | Сведения о курсе для класса                                                        |
 | createdBy      | [identitySet]                         | Объект, который создал курс.                                                            |
 | description    | String                                | Описание курса.                                                               |
 | displayName    | Строка                                | Название курса.                                                                      |
-| externalId     | String                                | Идентификатор курса из системы синхронизации.                                                |
+| externalId     | String.                                | Идентификатор курса из системы синхронизации.                                                |
 | externalName   | String                                | Название курса в системе синхронизации.                                                |
 | externalSource | string                                | Способ создания этого курса. Возможные значения: `sis`, `manual`, `unknownFutureValue`. |
-| mailNickname   | String                                | Почтовое имя для отправки почты всем участникам, если это возможно.                         |
+| оценка          | string                                | Уровень категории класса.                                                               |
+| mailNickname   | String.                                | Почтовое имя для отправки почты всем участникам, если это возможно.                         |
 | term           | [educationTerm]                       | Термин для класса.                                                                     |
 
 ## <a name="relationships"></a>Отношения
@@ -87,6 +88,7 @@ ms.locfileid: "36006369"
   "externalId": "String",
   "externalName": "String",
   "externalSource": "string",
+  "grade": "string",
   "id": "String (identifier)",
   "mailNickname": "String",
   "term": { "@odata.type": "microsoft.graph.educationTerm" }
