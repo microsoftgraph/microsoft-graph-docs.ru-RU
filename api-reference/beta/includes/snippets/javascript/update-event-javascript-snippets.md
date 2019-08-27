@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f104453773b4a595f31720b16b475b9f4cd92481
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: dff2ad1fafcb2082c3e0d914482043ae5db24b1b
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712225"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638191"
 ---
 ```javascript
 
@@ -30,6 +30,6 @@ const event = {
 
 let res = await client.api('/me/events/{id}')
     .version('beta')
-    .update({event : event});
+    .update(event);
 
 ```

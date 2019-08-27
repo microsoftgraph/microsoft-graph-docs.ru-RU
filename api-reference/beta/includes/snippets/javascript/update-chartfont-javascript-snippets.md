@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 686aa46b2dbd8b4137e24bc063bf29d450e3b386
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 2db47da05b7a5605d5a0d990557efebea1dc4df7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708156"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638242"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const workbookChartFont = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font')
     .version('beta')
-    .update({workbookChartFont : workbookChartFont});
+    .update(workbookChartFont);
 
 ```

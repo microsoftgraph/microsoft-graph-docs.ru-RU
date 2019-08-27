@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 92af74ff7f8105926f631ef71f826c8fe3e4321b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 66372b15addd268856373ee74d9b405f79a293f7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730543"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638342"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const permission = {
 
 let res = await client.api('/me/drive/items/{item-id}/permissions/{perm-id}')
     .version('beta')
-    .update({permission : permission});
+    .update(permission);
 
 ```

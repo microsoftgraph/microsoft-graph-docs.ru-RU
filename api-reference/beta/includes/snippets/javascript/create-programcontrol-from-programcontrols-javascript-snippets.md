@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: d026a836c3cc601af0338239d74efd64c6f69a7f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: a8e6985bfc7e3058dfce2a05077bd52df33e3033
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35728321"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638330"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const programControl = {
 
 let res = await client.api('/programControls')
     .version('beta')
-    .post({programControl : programControl});
+    .post(programControl);
 
 ```

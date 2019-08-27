@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 49e9dd4c08fc0b82bca9a2db682b64b71c50e45f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 0d1672e9784c50d619a33c4ac14cc51484d1ba18
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709521"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638264"
 ---
 ```javascript
 
@@ -77,6 +77,6 @@ const bookingService = {
 
 let res = await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services')
     .version('beta')
-    .post({bookingService : bookingService});
+    .post(bookingService);
 
 ```

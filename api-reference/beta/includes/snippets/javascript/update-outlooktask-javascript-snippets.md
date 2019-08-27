@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b0fe630be99028d4983e0fc0f2ea9a11d24f426b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d6179e2f010b3adac07cdf83654768a192926ed3
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720924"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638348"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const outlookTask = {
 
 let res = await client.api('/me/outlook/tasks/AAMkADA1MTHgwAAA=')
     .version('beta')
-    .update({outlookTask : outlookTask});
+    .update(outlookTask);
 
 ```
