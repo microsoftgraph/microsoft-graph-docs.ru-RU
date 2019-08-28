@@ -1,29 +1,30 @@
 ---
 title: Список directReports
-description: Получение подчиненных пользователя. Возвращает пользователей и контакты, для которых данный пользователь назначен руководителем.
+description: Получение непосредственных подчиненных пользователя.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 40b81284650955da317cfb90729a5e0cbcd45db1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 04c832efc6ab2b0d00b709aa61a5c6e645899cdd
+ms.sourcegitcommit: dd4501975b50fe47d4eec32cae2ff49638d3a2b4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408967"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645530"
 ---
 # <a name="list-directreports"></a>Список directReports
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение подчиненных пользователя. Возвращает пользователей и контакты, для которых данный пользователь назначен руководителем.
+Получение непосредственных подчиненных пользователя. Возвращает пользователей и контакты, для которых данный пользователь назначен руководителем.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -33,14 +34,14 @@ GET /me/directReports
 GET /users/{id | userPrincipalName}/directReports
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -72,8 +73,10 @@ GET https://graph.microsoft.com/beta/me/directReports
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
