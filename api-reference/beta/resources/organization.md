@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 79fc7676752d4f1ba8363c527c46ac50e9f9afff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3415edebdb792a931abf2b79a591ef3729d2cf6
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966330"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667508"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -25,7 +25,7 @@ ms.locfileid: "35966330"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | [organization](organization.md) |Считывание свойств и связей объекта организации.|
-|[Update](../api/organization-update.md) | [organization](organization.md)  |Обновление объекта организации. Обновлять можно только эти свойства: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** и **privacyProfile**. |
+|[Обновление организации](../api/organization-update.md) | [organization](organization.md)  |Обновление объекта организации. Обновлять можно только эти свойства: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** и **privacyProfile**. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -37,33 +37,34 @@ ms.locfileid: "35966330"
 |:-------- |:---- |:----------- |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Коллекция планов обслуживания, сопоставленных с клиентом. Значение null не допускается. |
 | businessPhones | Коллекция строк | Номер телефона организации. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер. |
-| city | String | Город название адреса Организации. |
-| country | String | Страна или регион в адресе организации. |
+| city | String. | Город название адреса Организации. |
+| country | String. | Страна или регион в адресе организации. |
 | countryLetterCode | String | Сокращенное название страны или региона для Организации. |
 | createdDateTime | DateTimeOffset | Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | displayName | Строка | Отображаемое имя для клиента. |
-| id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
+| id | String. | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | Используется значение **true**, если в организации включена поддержка нескольких регионов. Используется значение **false**, если поддержка нескольких регионов в организации не включена. По умолчанию используется значение **null**. Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
 | objectType | String | Строка, которая определяет тип объекта. Для клиентов всегда задается значение Company. |
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 | onPremisesSyncEnabled | Логический | Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). |
-| postalCode | String | Почтовый индекс в адресе организации. |
+| postalCode | String. | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1. Пример: ru. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
 | provisionedPlans | Коллекция [коллекция provisionedplan](provisionedplan.md) | Значение null не допускается. |
 | securityComplianceNotificationMails | Коллекция String ||
 | securityComplianceNotificationPhones | Коллекция String ||
-| state | String | Название региона в адресе организации. |
+| state | String. | Название региона в адресе организации. |
 | street | String | Название улицы в адресе организации. |
 | technicalNotificationMails |Коллекция String | Значение null не допускается. |
 | verifiedDomains | Коллекция [коллекция verifieddomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается. |
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение     | Тип   |Описание|
+| Отношение  | Тип  |Описание|
 |:---------------|:--------|:----------|
+|цертификатебаседаусконфигуратион|Коллекция [цертификатебаседаусконфигуратион](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции может быть создан только один экземпляр Цертификатебаседаусконфигуратион.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса Организации. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

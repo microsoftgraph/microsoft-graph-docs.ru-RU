@@ -7965,8 +7965,19 @@
                 - name: Подготовка журналов
                   href: resources/provisioningobjectsummary.md
                   items:
-                    - name: Подготовка каталога списка
+                    - name: Подготовка списка
                       href: api/provisioningobjectsummary-list.md
+            - name: Настройка проверки подлинности на основе сертификатов
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: Список
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: Получение
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: Создание
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: Удаление
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: Контракты
               href: resources/contract.md
               items:
@@ -8377,7 +8388,7 @@
                     - name: Управляемые ресурсы
                       href: resources/governanceresource.md
                       items:
-                        - name: Список
+                        - name: Перечисление
                           href: api/governanceresource-list.md
                         - name: Получение
                           href: api/governanceresource-get.md
@@ -9014,7 +9025,7 @@
                 - name: Действия в OneDrive
                   href: resources/onedrive-activity-reports.md
                   items:
-                    - name: Получение сведений о пользователях
+                    - name: Получение сведений о пользователе
                       href: api/reportroot-getonedriveactivityuserdetail.md
                     - name: Получение количества пользователей
                       href: api/reportroot-getonedriveactivityusercounts.md
