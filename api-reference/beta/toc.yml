@@ -9497,8 +9497,10 @@
                   href: api/channel-get.md
                 - name: 'Ветвь обновлений '
                   href: api/channel-patch.md
-                - name: Список сообщений в каналах
+                - name: Перечисление сообщений в каналах
                   href: api/channel-list-messages.md
+                - name: Получение Дельта сообщений канала
+                  href: api/chatmessage-delta.md
                 - name: Получение сообщений в каналах
                   href: api/channel-get-message.md
                 - name: Получение ответов на сообщения
