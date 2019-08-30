@@ -1,63 +1,63 @@
 ---
 title: Тип ресурса chatMessage
-description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
+description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение чата может быть корневым сообщением чата или частью потока, определенного свойством **реплитоид** в сообщении чата.
 doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 17b6912312c66bca8b84ccce9d25ac3c83a2edf9
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: a29afea30f0ea1d75f5c7ce1a0713976f10cc298
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460768"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677123"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md).
-Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
+Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md). Сообщение чата может быть корневым сообщением чата или частью ответа, которое определяется свойством **реплитоид** в сообщении чата.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление сообщений в канале](../api/channel-list-messages.md) | Коллекция [chatMessage](chatmessage.md) | Список всех корневых сообщений в канале.|
-|[Получение сообщения в канале](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного корневого сообщения из канала.|
-|[Перечисление ответов на сообщение](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение в канале.|
-|[Получение ответа на сообщение](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение в канале.|
-|[Создание chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создание сообщения верхнего уровня в канале.|
-|[Ответ на сообщение в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение в канале.|
-|[Создание chatMessage в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения в существующей беседе в Интернете 1:1 или группе.|
-|[Список сообщений в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Перечисление сообщений в сообщениях в формате 1:1 или Group Chat. |
-|[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
-|[Перечисление всех размещенных изображений](../api/chatmessagehostedimage-list-hostedimages.md) | Коллекция [хостедимаже](../resources/chatmessagehostedimage.md)| Получение всех размещенных изображений в сообщении.|
-|[Получение размещенного изображения](../api/chatmessagehostedimage-get.md) | [хостедимаже](../resources/chatmessagehostedimage.md) | Получение размещенного изображения из сообщения.|
-|[Получение байтов размещенного изображения](../api/chatmessagehostedimage-getbytes.md) | данные двоичных изображений | Получение двоичных данных изображения на размещенном изображении из сообщения.|
+|[Список chatMessage Channel](../api/channel-list-messages.md) | Коллекция [chatMessage](chatmessage.md) | Список всех корневых сообщений чата в канале.|
+|[Получение chatMessages в разностном канале](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений чата в канале. |
+|[Получение chatMessage Channel](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного из каналов сообщения с одним корневым сеансом.|
+|[Перечисление ответов на chatMessage](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение чата в канале.|
+|[Получение ответа на chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение чата в канале.|
+|[Создание chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создайте новое сообщение разговора верхнего уровня в канале.|
+|[Ответ на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение чата в канале.|
+|[Создание chatMessage в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или группе чата.|
+|[Перечисление chatMessages в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Перечисление сообщений чата в 1:1 или группе чата. |
+|[Получение chatMessage в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения чата в чате. |
+|[Перечисление всех размещенных изображений](../api/chatmessagehostedimage-list-hostedimages.md) | Коллекция [хостедимаже](../resources/chatmessagehostedimage.md)| Получение всех размещенных изображений в сообщении чата.|
+|[Получение размещенного изображения](../api/chatmessagehostedimage-get.md) | [хостедимаже](../resources/chatmessagehostedimage.md) | Получение размещенного изображения из сообщения чата.|
+|[Получение байтов размещенного изображения](../api/chatmessagehostedimage-getbytes.md) | данные двоичных изображений | Получение двоичных данных изображения на размещенном изображении из сообщения чата.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Только для чтения. Идентификатор родительского или корневого сообщения беседы. (Применимо только к сообщениям в каналах, но не в чате) |
-|from|[identitySet](identityset.md)| Только для чтения. Подробные сведения об отправителе сообщения.|
-|etag| string | Только для чтения. Номер версии сообщения. |
-|messageType|чатмессажетипе|Тип сообщения. Возможные значения: `message`.|
-|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
-|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени создания или изменения сообщения, включая время ответа (если это корневое сообщение в канале), а также добавление или удаление реакции. |
-|deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
-|subject|string| Тема сообщения в формате обычного текста.|
-|body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Представление определяется параметром contentType в тексте. Содержимое всегда имеет формат HTML, если сообщение содержит [chatMessageMention](chatmessagemention.md). |
-|summary|string| Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений. Относится только к сообщениям каналов, не к сообщениям чата. |
+|replyToId| string | Только для чтения. Идентификатор родительского сообщения чата или сообщения корневого сеанса беседы в цепочке. (Применяется только к сообщениям чата в каналах без чатов) |
+|from|[identitySet](identityset.md)| Только для чтения. Сведения об отправителе сообщения чата.|
+|etag| string | Только для чтения. Номер версии сообщения чата. |
+|messageType|чатмессажетипе|Тип сообщения чата. Возможные значения: `message`.|
+|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения чата.|
+|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени создания или изменения сообщения чата, в том числе когда выполняется ответ (если он является корневым сообщением в канале) или добавляется или удаляется реакция. |
+|deletedDateTime|dateTimeOffset|Только для чтения. Временная метка, в которой сообщение чата удалено, или значение null, если оно не удалено. |
+|subject|string| Тема сообщения чата в виде открытого текста.|
+|body|[itemBody](itembody.md)|Представление содержимого сообщения чата в формате обычного текста или в формате HTML. Представление определяется параметром contentType в тексте. Если сообщение чата содержит [чатмессажементион](chatmessagemention.md), содержимое всегда находится в формате HTML. |
+|summary|string| Сводный текст сообщения чата, которое можно использовать для push-уведомлений и сводных представлений, а также для обратного просмотра. Применяется только к сообщениям разговора по каналу, а не к сообщениям в чате. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
-|mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
-|importance| чатмессажеимпортанце | Важность сообщения. Допустимые значения: `normal`, `high`, `urgent`.|
-|reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на сообщение (например, "Нравится").|
-|языковые стандарты|string|Язык сообщения, установленный клиентом.|
+|mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упоминаемых в сообщении чата. В настоящее время поддерживаются значения user, bot, team и channel.|
+|importance| чатмессажеимпортанце | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
+|reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, например).|
+|языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

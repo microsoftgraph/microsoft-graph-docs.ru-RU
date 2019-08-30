@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1eb718daad405fb6aaed2f170747bc91dad47b76
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ced498b9bc56d8f21f96ede67d1a9a6501ddb21
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009001"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677178"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
 
@@ -46,6 +46,7 @@ ms.locfileid: "36009001"
 |id|String|Только для чтения. Идентификатор задачи. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
+|priority|Int32|Приоритет задачи. Допустимый диапазон значений: между `0` и `10` (включительно), при котором увеличивается значение низкого приоритета (`0` имеет самый высокий `10` приоритет и имеет самый низкий приоритет).  В настоящее время планировщик интерпретирует значения `0` , `1` а также как "срочные `3` " `4` , `2` а также `5` `6` `7` "средний", "средний" и "средний" `8`, `9` `10` а также "средний".  В настоящее время планировщик устанавливает значение `1` "срочно", `3` "важно" `5` , "среднее" и `9` "недорогой".|
 |planId|Строка|Идентификатор плана, к которому относится задача.|
 |previewType|String|Устанавливает тип предварительного просмотра задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Количество внешних ссылок на задачу.|
@@ -91,6 +92,7 @@ ms.locfileid: "36009001"
   "id": "String (identifier)",
   "orderHint": "String",
   "percentComplete": 1024,
+  "priority": 1024,
   "planId": "String",
   "previewType": "String",
   "referenceCount": 1024,
