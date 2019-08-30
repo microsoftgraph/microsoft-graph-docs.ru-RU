@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c06335cf1f5892a31b68fe4e3f4810f5757724fb
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633715"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667591"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,12 +17,6 @@ ms.locfileid: "36633715"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="august-2019"></a>Август 2019 г.
-
-### <a name="education"></a>Образование
-
-| Тип изменения | Версия | Описание                                                                                               |
-| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
-| Дополнение    | Бета-версия    | Добавлено новое свойство **grade** для объекта [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -71,6 +65,7 @@ ms.locfileid: "36633715"
 | Дополнение | Бета | Добавлен новый ресурс [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta).|
 | Дополнение | Бета | Добавлены API для управления ресурсами [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) в [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta).|
 | Дополнение | Бета | Добавлен новый ресурс [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta).|
+| Дополнение    | Бета-версия    | Добавлено новое свойство **grade** для объекта [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
 
@@ -82,12 +77,17 @@ ms.locfileid: "36633715"
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Изменение | Бета-версия | Изменено пространство имен [перечисления provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta).|
 | Дополнение | Бета-версия | Добавлен ресурс [roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta), обеспечивающий доступ к определениям ролей и назначениям ролей, полученным от поставщиков RBAC. |
 | Дополнение | Бета-версия | Добавлен ресурс [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta), представляющий коллекцию разрешений с перечислением допустимых операций. |
 | Дополнение | Бета-версия | Добавлен ресурс [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta), предоставляющий доступ к ресурсам. |
 | Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleDefinition: <br><ul><li>[Список объектов unifiedRoleDefinition](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) — получение списка объектов unifiedRoleDefinition для поставщика.</li><li>[Создание объекта unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) — создание объекта unifiedRoleDefinition.</li><li>[Получение объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) — извлечение свойств и связей объекта определения единой роли.</li><li>[Обновление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) — обновление свойств объекта unifiedRoleDefinition.</li><li>[Удаление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) — удаление объекта unifiedRoleDefinition.</li></ul> |
 | Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleAssignment: <br><ul><li>[Список объектов unifiedRoleAssignment](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) — получение списка объектов unifiedRoleAssignment для поставщика.</li><li>[Создание объекта unifiedRoleAssignment]() — создание объекта unifiedRoleAssignment.</li><li>[Получение объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) — извлечение свойств и связей объекта unifiedRoleAssignment.</li><li>[Удаление объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) — удаление объекта unifiedRoleAssignment. |
 | Дополнение | бета | Добавлена операция [Список объектов accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
+|Дополнение  | Бета | Добавлены делегированные разрешения и [разрешения приложения для чтения контактов организации](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All |
+| Дополнение | Бета | Добавлен новый объект [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлен новый сложный тип [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлено новое отношение для ресурса **certificateBasedAuthConfiguration** в ресурсе [организации](/graph/api/resources/organization?view=graph-rest-beta). Это обеспечивает [аутентификацию на основе сертификата в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
 
 ### <a name="reports"></a>Отчеты
 
@@ -1907,7 +1907,7 @@ ms.locfileid: "36633715"
 |Дополнение|бета|Добавлены новые объекты:<br/>[deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta);<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-beta);<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-beta).<br/>|
 |Дополнение|бета|Добавлены новые сложные типы:<br/>[revokeAppleVppLicensesActionResult](/graph/api/resources/intune-devices-revokeapplevpplicensesactionresult?view=graph-rest-beta);<br/>[vppTokenRevokeLicensesActionResult](/graph/api/resources/intune-onboarding-vpptokenrevokelicensesactionresult?view=graph-rest-beta).<br/>|
 |Дополнение|Бета-версия|Добавлено действие [revokeToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken?view=graph-rest-beta) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta). |
-|Дополнение|бета|Добавлено действие [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
+|Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-devices-devicemanagementscript-assign?view=graph-rest-beta) к объекту [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [revokeAppleVppLicenses](/graph/api/intune-devices-manageddevice-revokeapplevpplicenses?view=graph-rest-beta) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-beta) для объекта [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta). |
@@ -2899,7 +2899,7 @@ ms.locfileid: "36633715"
 | Изменение          | Бета-версия        | Изменены следующие свойства объекта [macOSCustomConfiguration](/graph/api/resources/intune-deviceconfig-macoscustomconfiguration?view=graph-rest-beta):<br/>**payloadFileName** теперь можно не указывать.<br/> |
 | Изменение          | Бета-версия        | Добавлены свойства **disableAppPinIfDevicePinIsSet**, **minimumRequiredOsVersion**, **minimumWarningOsVersion**, **minimumRequiredAppVersion** и **minimumWarningAppVersion** к объекту [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлены свойства **remoteAssistanceSessionUrl**, **isEncrypted**, **model** и **manufacturer** к объекту [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
-| Изменение          | Бета-версия        | Изменены следующие свойства объекта [getMobileAppCount](/graph/api/intune-apps-mobileapp-getmobileappcount?view=graph-rest-beta):<br/>для **bindingParameter** вместо **mobileApp** теперь используется **коллекция** *mobileApp*;<br/>для свойства **status** вместо типа GUID теперь используется String.<br/> |
+| Изменение          | Бета        | Изменены следующие свойства объекта [getMobileAppCount](/graph/api/intune-apps-mobileapp-getmobileappcount?view=graph-rest-beta):<br/>для **bindingParameter** вместо **mobileApp** теперь используется **коллекция** *mobileApp*;<br/>для свойства **status** вместо типа GUID теперь используется String.<br/> |
 | Изменение          | Бета-версия        | Добавлено свойство **vpnConfigurationId** к объекту [mobileAppGroupAssignment](/graph/api/resources/intune-apps-mobileappgroupassignment?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Удалено свойство **fromEmailAddress** из объекта [notificationMessageTemplate](/graph/api/resources/intune-deviceconfig-notificationmessagetemplate?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **excludedApps** к объекту [officeSuiteApp](/graph/api/resources/intune-apps-officesuiteapp?view=graph-rest-beta). |

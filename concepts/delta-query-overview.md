@@ -3,12 +3,12 @@ title: Отслеживание изменений в данных Microsoft Gra
 description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 6a7dee807c35bb790d122941f381b8541054e87f
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820803"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677115"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -98,8 +98,9 @@ ms.locfileid: "35820803"
 | Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                                             |
 | Учебные заведения (предварительная версия)                                              | Функция [delta](/graph/api/educationschool-delta?view=graph-rest-beta) ресурса [School](/graph/api/resources/educationschool?view=graph-rest-beta) (предварительная версия)                  |
 | Субъекты-службы (предварительная версия)                                   | Функция [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (предварительная версия)      |
-| Users                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)                                                      |
-| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр) |
+| Users                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0) |
+| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр)|
+| chatMessages в канале (предварительная версия)                            | Функция [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
 
 > \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
 

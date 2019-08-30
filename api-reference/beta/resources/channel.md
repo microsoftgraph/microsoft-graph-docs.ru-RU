@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c6239cc91eb10ecec5d2e037ffa9364e55646e
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: cdcb7f10d068372c167f65a7868672a7cb669107
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633680"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677129"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -27,6 +27,7 @@ ms.locfileid: "36633680"
 |[Получение канала](../api/channel-get.md) | [channel](channel.md) | Чтение свойств и связей канала.|
 |[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
+|[Получение дельты сообщения](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений в канале. |
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
 |[Перечисление участников канала](../api/conversationmember-list.md)| Коллекция [conversationMember](conversationmember.md)| Получение списка участников канала. |
 |[Получение участника канала](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Получение участника канала. |
@@ -43,7 +44,7 @@ ms.locfileid: "36633680"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство    | Тип |Описание|
+| Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |description|String|Необязательное текстовое описание канала.|
 |displayName|String|Имя канала, отображаемое для пользователя в Microsoft Teams.|
@@ -55,7 +56,7 @@ ms.locfileid: "36633680"
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип   |Описание|
+| Отношение | Тип |Описание|
 |:---------------|:--------|:----------|
 |messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null. В настоящее время этот API поддерживает чтение, но в конечном итоге будет также поддерживать написание сообщений.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
