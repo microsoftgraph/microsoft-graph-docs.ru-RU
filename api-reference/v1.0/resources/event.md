@@ -5,16 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f9a77d6d386632df9f617f46af485220680ea1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd4edf3af292f8266b41f8deab8c06cae564f709
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030424"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667584"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
 Событие в календаре ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Office 365.
+
+Максимальное количество участников в ресурсе **event** и максимальное количество получателей в ресурсе [eventMessage](eventmessage.md), отправленном из почтового ящика Exchange Online, составляют 500. Дополнительные сведения см. в разделе [Ограничения на отправку](https://docs.microsoft.com/ru-RU/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Этот ресурс поддерживает:
 
@@ -92,7 +94,17 @@ ms.locfileid: "36030424"
 |начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события. По умолчанию время начала указано в формате UTC.|
 |subject|String|Текст в строке темы сообщения о событии.|
 |type|eventType|Тип события. Допустимые значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения.|
-|webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+|webLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Outlook в Интернете открывает это событие в браузере, если выполнен вход в почтовый ящик. В противном случае Outlook в Интернете предлагает выполнить вход.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+
+> [!NOTE]
+> Свойство **webLink** указывает URL-адрес, по которому можно открыть событие только в более ранних версиях Outlook в Интернете. Ниже представлен формат URL-адреса, где _{event-id}_  — это зашифрованное в виде URL-адреса значение свойства **id**.
+>
+> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+>
+> Чтобы открыть URL-адрес в текущей версии Outlook в Интернете, преобразуйте его в следующий формат:
+>
+> `https://outlook.office365.com/calendar/item/{event-id}`
+
 
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
