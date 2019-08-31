@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560936"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Создание элементов с абсолютным положением на страницах OneNote
 
@@ -129,9 +129,9 @@ API OneNote оценивает входной HTML-код и сохраняет 
 
 API OneNote возвращает указанные ниже сведения в ответе.
 
-| Данные в ответе | Описание |  
+| Данные отклика | Описание |  
 |:------|:------|  
-| Код успешного завершения действия | Код состояния HTTP 201 при успешном выполнении запроса POST и код состояния HTTP 204 при успешном выполнении запроса PATCH. |  
+| Код успешного завершения | Код состояния HTTP 201 при успешном выполнении запроса POST и код состояния HTTP 204 при успешном выполнении запроса PATCH. |  
 | Ошибки | Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote-error-codes.md). |  
   
 
@@ -140,9 +140,9 @@ API OneNote возвращает указанные ниже сведения в
 
 ## <a name="permissions"></a>Разрешения
 
-Чтобы можно было создавать или изменять страницы OneNote, вам придется запросить соответствующие разрешения. Выберите минимальный уровень разрешений, необходимый для работы вашего приложения.
+Для создания и обновления страниц OneNote необходимо запрашивать соответствующие разрешения. Выберите минимальный уровень разрешений, необходимый для работы вашего приложения.
 
-#### <a name="permissions-for-post-pages"></a>Разрешения для запросов POST со страницами 
+#### <a name="permissions-for-post-pages"></a>Разрешения в случае запросов POST для страниц 
 
 - Notes.Create
 - Notes.ReadWrite
