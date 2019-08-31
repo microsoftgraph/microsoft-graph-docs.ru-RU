@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 44d24c2757d690542a5afdcc7496d92551502aea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030403"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699130"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -93,7 +93,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`. В таком случае вы можете создать другой сеанс и продолжить работу. Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен. Обычно срок действия сохраняемого сеанса истекает через 7 минут бездействия. Срок действия несохраняемого сеанса истекает через 5 минут бездействия. 
+>Примечание. Если срок действия идентификатора сеанса истек, для сеанса будет возвращен код ошибки HTTP `404`. В таком случае вы можете создать другой сеанс и продолжить работу. Можно использовать другой подход — периодически обновлять сеанс, чтобы он не был завершен. Обычно срок действия сохраняемого сеанса истекает через 5 минут бездействия. Срок действия несохраняемого сеанса истекает через 7 минут бездействия. 
 
 ## <a name="common-excel-scenarios"></a>Стандартные сценарии Excel
 
