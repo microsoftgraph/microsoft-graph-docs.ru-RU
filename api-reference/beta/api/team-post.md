@@ -384,8 +384,7 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>См. также
 
-- 
-  [Доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates)
+- [Доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates)
 - [Начало работы с шаблонами команд розничной торговли](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Начало работы с шаблонами команд здравоохранения](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Создание группы с командой](/graph/teams-create-group-and-team)

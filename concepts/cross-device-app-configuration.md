@@ -95,8 +95,7 @@ ms.locfileid: "32570357"
 
 Чтобы найти идентификаторы:
 
-* 
-  **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/ru-RU/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
+* **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/ru-RU/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
 * **Служба push-уведомлений Apple** — см. [обзор APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** — см. статью [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 

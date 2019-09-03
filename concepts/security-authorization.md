@@ -146,18 +146,12 @@ API безопасности Microsoft Graph поддерживает два т�
 
 |**Тип приложения**|**Библиотека проверки подлинности**|
 |------------------------|----------------------------|
-|
-  [Классические приложения — iOS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: предварительная версия библиотеки проверки подлинности (Майкрософт) для iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|
-  [Классические приложения — Android](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-android)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|
-  [Классические приложения — .Net](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|
-  [Веб-приложения — JavaScript SPA](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Библиотека проверки подлинности Майкрософт для предварительной версии JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|
-  [Веб-приложения — веб-сервер .NET](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|
-  [Веб-приложения — веб-приложение NodeJS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Классические приложения — iOS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: предварительная версия библиотеки проверки подлинности (Майкрософт) для iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Классические приложения — Android](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-android)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Классические приложения — .Net](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Библиотека проверки подлинности Майкрософт (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Веб-приложения — JavaScript SPA](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Библиотека проверки подлинности Майкрософт для предварительной версии JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Веб-приложения — веб-сервер .NET](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Веб-приложения — веб-приложение NodeJS](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Сведения о приложениях, которые не используют существующих библиотек, см. в статье [Получение доступа от имени пользователя](auth-v2-user.md).
 
