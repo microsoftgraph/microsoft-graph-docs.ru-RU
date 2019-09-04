@@ -5,92 +5,92 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3497f19e4a1348cd42ae9ba272eca551ee676cb2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7b8e49269337c7ca5c46b8f46b608b2df0de1c2d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410901"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722617"
 ---
-# <a name="list-riskdetection"></a><span data-ttu-id="cc7fa-103">Список Рискдетектион</span><span class="sxs-lookup"><span data-stu-id="cc7fa-103">List riskDetection</span></span>
+# <a name="list-riskdetection"></a><span data-ttu-id="097e8-103">Список Рискдетектион</span><span class="sxs-lookup"><span data-stu-id="097e8-103">List riskDetection</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cc7fa-104">Получение свойств коллекции объектов **рискдетектион** .</span><span class="sxs-lookup"><span data-stu-id="cc7fa-104">Retrieve the properties of a collection of **riskDetection** objects.</span></span>
+<span data-ttu-id="097e8-104">Получение свойств коллекции объектов **рискдетектион** .</span><span class="sxs-lookup"><span data-stu-id="097e8-104">Retrieve the properties of a collection of **riskDetection** objects.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="cc7fa-105">Для использования API обнаружения рисков необходима лицензия Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-105">You must have an Azure AD Premium P2 license to use the risk detection API.</span></span>
+><span data-ttu-id="097e8-105">Для использования API обнаружения рисков необходима лицензия Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="097e8-105">You must have an Azure AD Premium P2 license to use the risk detection API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cc7fa-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cc7fa-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="097e8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="097e8-106">Permissions</span></span>
 
-<span data-ttu-id="cc7fa-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc7fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="097e8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="097e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cc7fa-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cc7fa-109">Permission type</span></span>      | <span data-ttu-id="cc7fa-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cc7fa-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="097e8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="097e8-109">Permission type</span></span>      | <span data-ttu-id="097e8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="097e8-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc7fa-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cc7fa-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cc7fa-112">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="cc7fa-112">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="cc7fa-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cc7fa-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc7fa-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-114">Not supported.</span></span>    |
-|<span data-ttu-id="cc7fa-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cc7fa-115">Application</span></span> | <span data-ttu-id="cc7fa-116">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="cc7fa-116">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="097e8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="097e8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="097e8-112">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="097e8-112">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="097e8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="097e8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="097e8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="097e8-114">Not supported.</span></span>    |
+|<span data-ttu-id="097e8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="097e8-115">Application</span></span> | <span data-ttu-id="097e8-116">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="097e8-116">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc7fa-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cc7fa-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="097e8-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="097e8-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="cc7fa-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cc7fa-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="097e8-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="097e8-118">Optional query parameters</span></span>
 
-<span data-ttu-id="cc7fa-119">Этот метод поддерживает `$filter` и `$select` настраивает ответ на запрос.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-119">This method supports `$filter` and `$select` to customize the query response.</span></span> <span data-ttu-id="cc7fa-120">Просмотрите пример, приведенный далее в этом разделе.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-120">See the example later in this topic.</span></span> 
+<span data-ttu-id="097e8-119">Этот метод поддерживает `$filter` и `$select` настраивает ответ на запрос.</span><span class="sxs-lookup"><span data-stu-id="097e8-119">This method supports `$filter` and `$select` to customize the query response.</span></span> <span data-ttu-id="097e8-120">Просмотрите пример, приведенный далее в этом разделе.</span><span class="sxs-lookup"><span data-stu-id="097e8-120">See the example later in this topic.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="cc7fa-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cc7fa-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="097e8-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="097e8-121">Request headers</span></span>
 
-| <span data-ttu-id="cc7fa-122">Имя</span><span class="sxs-lookup"><span data-stu-id="cc7fa-122">Name</span></span>      |<span data-ttu-id="cc7fa-123">Описание</span><span class="sxs-lookup"><span data-stu-id="cc7fa-123">Description</span></span>|
+| <span data-ttu-id="097e8-122">Имя</span><span class="sxs-lookup"><span data-stu-id="097e8-122">Name</span></span>      |<span data-ttu-id="097e8-123">Описание</span><span class="sxs-lookup"><span data-stu-id="097e8-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cc7fa-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cc7fa-124">Authorization</span></span>  | <span data-ttu-id="cc7fa-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cc7fa-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc7fa-127">Content-Type</span></span> | <span data-ttu-id="cc7fa-128">application/json</span><span class="sxs-lookup"><span data-stu-id="cc7fa-128">application/json</span></span> |
+| <span data-ttu-id="097e8-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="097e8-124">Authorization</span></span>  | <span data-ttu-id="097e8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="097e8-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="097e8-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="097e8-127">Content-Type</span></span> | <span data-ttu-id="097e8-128">application/json</span><span class="sxs-lookup"><span data-stu-id="097e8-128">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cc7fa-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cc7fa-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="097e8-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="097e8-129">Request body</span></span>
 
-<span data-ttu-id="cc7fa-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="097e8-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="097e8-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc7fa-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc7fa-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="097e8-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="097e8-131">Response</span></span>
 
-<span data-ttu-id="cc7fa-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискдетектион](../resources/riskdetection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-132">If successful, this method returns a `200 OK` response code and a collection of [riskDetection](../resources/riskdetection.md) objects in the response body.</span></span>
+<span data-ttu-id="097e8-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискдетектион](../resources/riskdetection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="097e8-132">If successful, this method returns a `200 OK` response code and a collection of [riskDetection](../resources/riskdetection.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cc7fa-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="cc7fa-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="097e8-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="097e8-133">Examples</span></span>
 
-### <a name="example-1-list-risk-detections"></a><span data-ttu-id="cc7fa-134">Пример 1: список обнаруженных рисков</span><span class="sxs-lookup"><span data-stu-id="cc7fa-134">Example 1: List risk detections</span></span>
+### <a name="example-1-list-risk-detections"></a><span data-ttu-id="097e8-134">Пример 1: список обнаруженных рисков</span><span class="sxs-lookup"><span data-stu-id="097e8-134">Example 1: List risk detections</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cc7fa-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="cc7fa-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="097e8-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="097e8-135">Request</span></span>
 
-<span data-ttu-id="cc7fa-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-136">Here is an example of the request.</span></span>
+<span data-ttu-id="097e8-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="097e8-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cc7fa-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc7fa-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="097e8-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="097e8-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_riskDetection"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cc7fa-138">C#</span><span class="sxs-lookup"><span data-stu-id="cc7fa-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="097e8-138">C#</span><span class="sxs-lookup"><span data-stu-id="097e8-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cc7fa-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc7fa-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="097e8-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="097e8-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cc7fa-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cc7fa-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="097e8-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="097e8-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cc7fa-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc7fa-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="097e8-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="097e8-141">Response</span></span>
 
-<span data-ttu-id="cc7fa-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-142">Here is an example of the response.</span></span>
+<span data-ttu-id="097e8-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="097e8-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,40 +135,40 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risk-detections-and-filter-the-results"></a><span data-ttu-id="cc7fa-143">Пример 2: список обнаруженных рисков и фильтрация результатов</span><span class="sxs-lookup"><span data-stu-id="cc7fa-143">Example 2: List risk detections and filter the results</span></span>
+### <a name="example-2-list-risk-detections-and-filter-the-results"></a><span data-ttu-id="097e8-143">Пример 2: список обнаруженных рисков и фильтрация результатов</span><span class="sxs-lookup"><span data-stu-id="097e8-143">Example 2: List risk detections and filter the results</span></span>
 
-#### <a name="request"></a><span data-ttu-id="cc7fa-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="cc7fa-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="097e8-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="097e8-144">Request</span></span>
 
-<span data-ttu-id="cc7fa-145">В приведенном ниже примере показано, `$filter` как получить коллекцию обнаружений рисков, в которой уровень риска является средним, или тип события риска — унфамиларфеатурес, что означает, что вход в систему был незнакомым или неизвестным расположением.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-145">The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or the risk event type is unfamilarFeatures, which indicates the sign-in was in an unfamiliar or anomalous location.</span></span>
+<span data-ttu-id="097e8-145">В приведенном ниже примере показано, `$filter` как получить коллекцию обнаружений рисков, в которой уровень риска является средним, или тип события риска — унфамиларфеатурес, что означает, что вход в систему был незнакомым или неизвестным расположением.</span><span class="sxs-lookup"><span data-stu-id="097e8-145">The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or the risk event type is unfamilarFeatures, which indicates the sign-in was in an unfamiliar or anomalous location.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cc7fa-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc7fa-146">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="097e8-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="097e8-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_filter_riskDetections"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cc7fa-147">C#</span><span class="sxs-lookup"><span data-stu-id="cc7fa-147">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="097e8-147">C#</span><span class="sxs-lookup"><span data-stu-id="097e8-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cc7fa-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc7fa-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="097e8-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="097e8-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-filter-riskdetections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cc7fa-149">Цель — C</span><span class="sxs-lookup"><span data-stu-id="cc7fa-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="097e8-149">Цель — C</span><span class="sxs-lookup"><span data-stu-id="097e8-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-filter-riskdetections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="cc7fa-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc7fa-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="097e8-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="097e8-150">Response</span></span>
 
-<span data-ttu-id="cc7fa-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cc7fa-151">Here is an example of the response.</span></span>
+<span data-ttu-id="097e8-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="097e8-151">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

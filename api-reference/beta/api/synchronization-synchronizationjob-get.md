@@ -5,80 +5,80 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4ef4d646507b9d50c43e907fbc28e22b5af15ad
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 40dcee9163acdfe5fd0a146687a5867172a238c0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409818"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722288"
 ---
-# <a name="get-synchronizationjob"></a><span data-ttu-id="67fb3-103">Получение Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="67fb3-103">Get synchronizationJob</span></span>
+# <a name="get-synchronizationjob"></a><span data-ttu-id="78189-103">Получение Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="78189-103">Get synchronizationJob</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="67fb3-104">Получение существующего задания синхронизации и его свойств.</span><span class="sxs-lookup"><span data-stu-id="67fb3-104">Retrieve the existing synchronization job and its properties.</span></span>
+<span data-ttu-id="78189-104">Получение существующего задания синхронизации и его свойств.</span><span class="sxs-lookup"><span data-stu-id="78189-104">Retrieve the existing synchronization job and its properties.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="67fb3-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="67fb3-105">Permissions</span></span>
-<span data-ttu-id="67fb3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67fb3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="78189-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="78189-105">Permissions</span></span>
+<span data-ttu-id="78189-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78189-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="67fb3-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="67fb3-108">Permission type</span></span>                        | <span data-ttu-id="67fb3-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="67fb3-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="78189-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="78189-108">Permission type</span></span>                        | <span data-ttu-id="78189-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="78189-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="67fb3-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="67fb3-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="67fb3-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67fb3-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="67fb3-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="67fb3-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="67fb3-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67fb3-113">Not supported.</span></span>  |
-|<span data-ttu-id="67fb3-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="67fb3-114">Application</span></span>                            |<span data-ttu-id="67fb3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67fb3-115">Not supported.</span></span> | 
+|<span data-ttu-id="78189-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="78189-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="78189-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78189-111">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="78189-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="78189-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="78189-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78189-113">Not supported.</span></span>  |
+|<span data-ttu-id="78189-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="78189-114">Application</span></span>                            |<span data-ttu-id="78189-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78189-115">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="67fb3-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="67fb3-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="78189-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="78189-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="67fb3-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="67fb3-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="78189-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="78189-117">Request headers</span></span>
 
-| <span data-ttu-id="67fb3-118">Имя</span><span class="sxs-lookup"><span data-stu-id="67fb3-118">Name</span></span>           | <span data-ttu-id="67fb3-119">Тип</span><span class="sxs-lookup"><span data-stu-id="67fb3-119">Type</span></span>    | <span data-ttu-id="67fb3-120">Описание</span><span class="sxs-lookup"><span data-stu-id="67fb3-120">Description</span></span>|
+| <span data-ttu-id="78189-118">Имя</span><span class="sxs-lookup"><span data-stu-id="78189-118">Name</span></span>           | <span data-ttu-id="78189-119">Тип</span><span class="sxs-lookup"><span data-stu-id="78189-119">Type</span></span>    | <span data-ttu-id="78189-120">Описание</span><span class="sxs-lookup"><span data-stu-id="78189-120">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="67fb3-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="67fb3-121">Authorization</span></span>  | <span data-ttu-id="67fb3-122">string</span><span class="sxs-lookup"><span data-stu-id="67fb3-122">string</span></span>  | <span data-ttu-id="67fb3-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="67fb3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="78189-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="78189-121">Authorization</span></span>  | <span data-ttu-id="78189-122">string</span><span class="sxs-lookup"><span data-stu-id="78189-122">string</span></span>  | <span data-ttu-id="78189-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78189-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="67fb3-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="67fb3-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="78189-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="78189-125">Request body</span></span>
 
-<span data-ttu-id="67fb3-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="67fb3-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="78189-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="78189-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="67fb3-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="67fb3-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="78189-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="78189-127">Response</span></span>
 
-<span data-ttu-id="67fb3-128">В случае успеха возвращает `200 OK` ответ с [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="67fb3-128">If successful, returns a `200 OK` response with a [synchronizationJob](../resources/synchronization-synchronizationjob.md) in the response body.</span></span>
+<span data-ttu-id="78189-128">В случае успеха возвращает `200 OK` ответ с [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="78189-128">If successful, returns a `200 OK` response with a [synchronizationJob](../resources/synchronization-synchronizationjob.md) in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="67fb3-129">Пример</span><span class="sxs-lookup"><span data-stu-id="67fb3-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="78189-129">Пример</span><span class="sxs-lookup"><span data-stu-id="78189-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="67fb3-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="67fb3-130">Request</span></span>
-<span data-ttu-id="67fb3-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="67fb3-131">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="78189-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="78189-130">Request</span></span>
+<span data-ttu-id="78189-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="78189-131">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="67fb3-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="67fb3-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="78189-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="78189-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationjob"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="67fb3-133">C#</span><span class="sxs-lookup"><span data-stu-id="67fb3-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="78189-133">C#</span><span class="sxs-lookup"><span data-stu-id="78189-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="67fb3-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67fb3-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78189-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78189-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="67fb3-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="67fb3-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="78189-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="78189-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="67fb3-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="67fb3-136">Response</span></span>
-<span data-ttu-id="67fb3-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="67fb3-137">The following is an example of a response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="78189-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="78189-136">Response</span></span>
+<span data-ttu-id="78189-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="78189-137">The following is an example of a response.</span></span> 
 
-><span data-ttu-id="67fb3-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="67fb3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="78189-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78189-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
