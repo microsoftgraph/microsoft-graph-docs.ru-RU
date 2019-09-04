@@ -5,50 +5,50 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 55e90802c0c188bf31349b6cc5e91e80613c1d5b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 78ea5a951891109aa2fdd071af343b9925e1dc40
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414429"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36723891"
 ---
-# <a name="get-open-extension"></a><span data-ttu-id="7695a-103">Получение открытого расширения</span><span class="sxs-lookup"><span data-stu-id="7695a-103">Get open extension</span></span>
+# <a name="get-open-extension"></a><span data-ttu-id="bc14f-103">Получение открытого расширения</span><span class="sxs-lookup"><span data-stu-id="bc14f-103">Get open extension</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7695a-104">Получение открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)), определенного по имени или полному имени.</span><span class="sxs-lookup"><span data-stu-id="7695a-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
+<span data-ttu-id="bc14f-104">Получение открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)), определенного по имени или полному имени.</span><span class="sxs-lookup"><span data-stu-id="bc14f-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
 
-<span data-ttu-id="7695a-105">В приведенной ниже таблице перечислены три сценария, согласно которым можно получить открытое расширение из поддерживаемого экземпляра ресурса.</span><span class="sxs-lookup"><span data-stu-id="7695a-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
+<span data-ttu-id="bc14f-105">В приведенной ниже таблице перечислены три сценария, согласно которым можно получить открытое расширение из поддерживаемого экземпляра ресурса.</span><span class="sxs-lookup"><span data-stu-id="bc14f-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
 
-|<span data-ttu-id="7695a-106">**Сценарий GET**</span><span class="sxs-lookup"><span data-stu-id="7695a-106">**GET scenario**</span></span>|<span data-ttu-id="7695a-107">**Поддерживаемые ресурсы**</span><span class="sxs-lookup"><span data-stu-id="7695a-107">**Supported resources**</span></span>|<span data-ttu-id="7695a-108">**Текст ответа**</span><span class="sxs-lookup"><span data-stu-id="7695a-108">**Response body**</span></span>|
+|<span data-ttu-id="bc14f-106">**Сценарий GET**</span><span class="sxs-lookup"><span data-stu-id="bc14f-106">**GET scenario**</span></span>|<span data-ttu-id="bc14f-107">**Поддерживаемые ресурсы**</span><span class="sxs-lookup"><span data-stu-id="bc14f-107">**Supported resources**</span></span>|<span data-ttu-id="bc14f-108">**Текст ответа**</span><span class="sxs-lookup"><span data-stu-id="bc14f-108">**Response body**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="7695a-109">Получение определенного расширения из экземпляра известного ресурса.</span><span class="sxs-lookup"><span data-stu-id="7695a-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="7695a-110">[Административная единица](../resources/administrativeunit.md), [устройство](../resources/device.md), [событие](../resources/event.md), [Группа](../resources/group.md), [событие группы](../resources/event.md), [Отправка по группе](../resources/post.md), [сообщение](../resources/message.md), [Организация](../resources/organization.md), [личный контакт](../resources/contact.md), [пользователь](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="7695a-110">[Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="7695a-111">Только открытое расширение.</span><span class="sxs-lookup"><span data-stu-id="7695a-111">Open extension only.</span></span>|
-|<span data-ttu-id="7695a-112">Получение экземпляра известного ресурса, дополненного определенным расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="7695a-113">Административная единица, устройство, событие, группа, событие группы, отправка по группе, сообщение, организация, личный контакт, пользователь</span><span class="sxs-lookup"><span data-stu-id="7695a-113">Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="7695a-114">Экземпляр известного ресурса, дополненный открытым расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-114">A resource instance expanded with the open extension.</span></span>|
-|<span data-ttu-id="7695a-115">Поиск экземпляров ресурсов и их дополнение определенным расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-115">Find and expand resource instances with a specific extension.</span></span> | <span data-ttu-id="7695a-116">Event, group event, group post, message, personal contact</span><span class="sxs-lookup"><span data-stu-id="7695a-116">Event, group event, group post, message, personal contact</span></span> |<span data-ttu-id="7695a-117">Экземпляры ресурса, дополненные открытым расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-117">Resource instances expanded with the open extension.</span></span>|
+|<span data-ttu-id="bc14f-109">Получение определенного расширения из экземпляра известного ресурса.</span><span class="sxs-lookup"><span data-stu-id="bc14f-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="bc14f-110">[Административная единица](../resources/administrativeunit.md), [устройство](../resources/device.md), [событие](../resources/event.md), [Группа](../resources/group.md), [событие группы](../resources/event.md), [Отправка по группе](../resources/post.md), [сообщение](../resources/message.md), [Организация](../resources/organization.md), [личный контакт](../resources/contact.md), [пользователь](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="bc14f-110">[Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="bc14f-111">Только открытое расширение.</span><span class="sxs-lookup"><span data-stu-id="bc14f-111">Open extension only.</span></span>|
+|<span data-ttu-id="bc14f-112">Получение экземпляра известного ресурса, дополненного определенным расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="bc14f-113">Административная единица, устройство, событие, группа, событие группы, отправка по группе, сообщение, организация, личный контакт, пользователь</span><span class="sxs-lookup"><span data-stu-id="bc14f-113">Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="bc14f-114">Экземпляр известного ресурса, дополненный открытым расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-114">A resource instance expanded with the open extension.</span></span>|
+|<span data-ttu-id="bc14f-115">Поиск экземпляров ресурсов и их дополнение определенным расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-115">Find and expand resource instances with a specific extension.</span></span> | <span data-ttu-id="bc14f-116">Event, group event, group post, message, personal contact</span><span class="sxs-lookup"><span data-stu-id="bc14f-116">Event, group event, group post, message, personal contact</span></span> |<span data-ttu-id="bc14f-117">Экземпляры ресурса, дополненные открытым расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-117">Resource instances expanded with the open extension.</span></span>|
 
-## <a name="permissions"></a><span data-ttu-id="7695a-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7695a-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bc14f-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bc14f-118">Permissions</span></span>
 
-<span data-ttu-id="7695a-119">В зависимости от того, какой ресурс содержит расширение, и типа запрашиваемого расширения (делегированного или для приложений), разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="7695a-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="7695a-120">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7695a-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bc14f-119">В зависимости от того, какой ресурс содержит расширение, и типа запрашиваемого расширения (делегированного или для приложений), разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="bc14f-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="bc14f-120">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bc14f-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7695a-121">Поддерживаемый ресурс</span><span class="sxs-lookup"><span data-stu-id="7695a-121">Supported resource</span></span> | <span data-ttu-id="7695a-122">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7695a-122">Delegated (work or school account)</span></span> | <span data-ttu-id="7695a-123">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7695a-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7695a-124">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7695a-124">Application</span></span> |
+| <span data-ttu-id="bc14f-121">Поддерживаемый ресурс</span><span class="sxs-lookup"><span data-stu-id="bc14f-121">Supported resource</span></span> | <span data-ttu-id="bc14f-122">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bc14f-122">Delegated (work or school account)</span></span> | <span data-ttu-id="bc14f-123">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bc14f-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bc14f-124">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bc14f-124">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="7695a-125">device</span><span class="sxs-lookup"><span data-stu-id="7695a-125">device</span></span>](../resources/device.md) | <span data-ttu-id="7695a-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-126">Directory.Read.All</span></span> | <span data-ttu-id="7695a-127">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-127">Not supported</span></span> | <span data-ttu-id="7695a-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7695a-128">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="7695a-129">event</span><span class="sxs-lookup"><span data-stu-id="7695a-129">event</span></span>](../resources/event.md) | <span data-ttu-id="7695a-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-130">Calendars.Read</span></span> | <span data-ttu-id="7695a-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-131">Calendars.Read</span></span> | <span data-ttu-id="7695a-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-132">Calendars.Read</span></span> |
-| [<span data-ttu-id="7695a-133">group</span><span class="sxs-lookup"><span data-stu-id="7695a-133">group</span></span>](../resources/group.md) | <span data-ttu-id="7695a-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-134">Group.Read.All</span></span> | <span data-ttu-id="7695a-135">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-135">Not supported</span></span> | <span data-ttu-id="7695a-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-136">Group.Read.All</span></span> |
-| [<span data-ttu-id="7695a-137">Событие для групп</span><span class="sxs-lookup"><span data-stu-id="7695a-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="7695a-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-138">Group.Read.All</span></span> | <span data-ttu-id="7695a-139">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-139">Not supported</span></span> | <span data-ttu-id="7695a-140">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-140">Not supported</span></span> |
-| <span data-ttu-id="7695a-141">[post](../resources/post.md) для групп</span><span class="sxs-lookup"><span data-stu-id="7695a-141">[group post](../resources/post.md)</span></span> | <span data-ttu-id="7695a-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-142">Group.Read.All</span></span> | <span data-ttu-id="7695a-143">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-143">Not supported</span></span> | <span data-ttu-id="7695a-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-144">Group.Read.All</span></span> |
-| [<span data-ttu-id="7695a-145">message</span><span class="sxs-lookup"><span data-stu-id="7695a-145">message</span></span>](../resources/message.md) | <span data-ttu-id="7695a-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-146">Mail.Read</span></span> | <span data-ttu-id="7695a-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-147">Mail.Read</span></span> | <span data-ttu-id="7695a-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-148">Mail.Read</span></span> | 
-| [<span data-ttu-id="7695a-149">organization</span><span class="sxs-lookup"><span data-stu-id="7695a-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="7695a-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-150">User.Read</span></span> | <span data-ttu-id="7695a-151">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-151">Not supported</span></span> | <span data-ttu-id="7695a-152">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7695a-152">Not supported</span></span> |
-| <span data-ttu-id="7695a-153">[contact](../resources/contact.md) (личный контакт)</span><span class="sxs-lookup"><span data-stu-id="7695a-153">[personal contact](../resources/contact.md)</span></span> | <span data-ttu-id="7695a-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-154">Contacts.Read</span></span> | <span data-ttu-id="7695a-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-155">Contacts.Read</span></span> | <span data-ttu-id="7695a-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-156">Contacts.Read</span></span> |
-| [<span data-ttu-id="7695a-157">user</span><span class="sxs-lookup"><span data-stu-id="7695a-157">user</span></span>](../resources/user.md) | <span data-ttu-id="7695a-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-158">User.Read</span></span> | <span data-ttu-id="7695a-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="7695a-159">User.Read</span></span> | <span data-ttu-id="7695a-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="7695a-160">User.Read.All</span></span> |
+| [<span data-ttu-id="bc14f-125">device</span><span class="sxs-lookup"><span data-stu-id="bc14f-125">device</span></span>](../resources/device.md) | <span data-ttu-id="bc14f-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-126">Directory.Read.All</span></span> | <span data-ttu-id="bc14f-127">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-127">Not supported</span></span> | <span data-ttu-id="bc14f-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-128">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="bc14f-129">event</span><span class="sxs-lookup"><span data-stu-id="bc14f-129">event</span></span>](../resources/event.md) | <span data-ttu-id="bc14f-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-130">Calendars.Read</span></span> | <span data-ttu-id="bc14f-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-131">Calendars.Read</span></span> | <span data-ttu-id="bc14f-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-132">Calendars.Read</span></span> |
+| [<span data-ttu-id="bc14f-133">group</span><span class="sxs-lookup"><span data-stu-id="bc14f-133">group</span></span>](../resources/group.md) | <span data-ttu-id="bc14f-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-134">Group.Read.All</span></span> | <span data-ttu-id="bc14f-135">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-135">Not supported</span></span> | <span data-ttu-id="bc14f-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-136">Group.Read.All</span></span> |
+| [<span data-ttu-id="bc14f-137">Событие для групп</span><span class="sxs-lookup"><span data-stu-id="bc14f-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="bc14f-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-138">Group.Read.All</span></span> | <span data-ttu-id="bc14f-139">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-139">Not supported</span></span> | <span data-ttu-id="bc14f-140">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-140">Not supported</span></span> |
+| <span data-ttu-id="bc14f-141">[post](../resources/post.md) для групп</span><span class="sxs-lookup"><span data-stu-id="bc14f-141">[group post](../resources/post.md)</span></span> | <span data-ttu-id="bc14f-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-142">Group.Read.All</span></span> | <span data-ttu-id="bc14f-143">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-143">Not supported</span></span> | <span data-ttu-id="bc14f-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-144">Group.Read.All</span></span> |
+| [<span data-ttu-id="bc14f-145">message</span><span class="sxs-lookup"><span data-stu-id="bc14f-145">message</span></span>](../resources/message.md) | <span data-ttu-id="bc14f-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-146">Mail.Read</span></span> | <span data-ttu-id="bc14f-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-147">Mail.Read</span></span> | <span data-ttu-id="bc14f-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-148">Mail.Read</span></span> | 
+| [<span data-ttu-id="bc14f-149">organization</span><span class="sxs-lookup"><span data-stu-id="bc14f-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="bc14f-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-150">User.Read</span></span> | <span data-ttu-id="bc14f-151">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-151">Not supported</span></span> | <span data-ttu-id="bc14f-152">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="bc14f-152">Not supported</span></span> |
+| <span data-ttu-id="bc14f-153">[contact](../resources/contact.md) (личный контакт)</span><span class="sxs-lookup"><span data-stu-id="bc14f-153">[personal contact](../resources/contact.md)</span></span> | <span data-ttu-id="bc14f-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-154">Contacts.Read</span></span> | <span data-ttu-id="bc14f-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-155">Contacts.Read</span></span> | <span data-ttu-id="bc14f-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-156">Contacts.Read</span></span> |
+| [<span data-ttu-id="bc14f-157">user</span><span class="sxs-lookup"><span data-stu-id="bc14f-157">user</span></span>](../resources/user.md) | <span data-ttu-id="bc14f-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-158">User.Read</span></span> | <span data-ttu-id="bc14f-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="bc14f-159">User.Read</span></span> | <span data-ttu-id="bc14f-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc14f-160">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7695a-161">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7695a-161">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bc14f-161">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bc14f-161">HTTP request</span></span>
 
-<span data-ttu-id="7695a-162">В этом разделе указан синтаксис для каждого из трех перечисленных выше сценариев с `GET`.</span><span class="sxs-lookup"><span data-stu-id="7695a-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
+<span data-ttu-id="bc14f-162">В этом разделе указан синтаксис для каждого из трех перечисленных выше сценариев с `GET`.</span><span class="sxs-lookup"><span data-stu-id="bc14f-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
 
-### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="7695a-163">Получение определенного расширения в известном экземпляре ресурса</span><span class="sxs-lookup"><span data-stu-id="7695a-163">Get a specific extension in a known resource instance</span></span>
+### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="bc14f-163">Получение определенного расширения в известном экземпляре ресурса</span><span class="sxs-lookup"><span data-stu-id="bc14f-163">Get a specific extension in a known resource instance</span></span>
 
-<span data-ttu-id="7695a-164">Используйте такой же запрос REST, что и при получении экземпляра ресурса, и определите расширение с помощью свойства навигации **extensions** этого экземпляра.</span><span class="sxs-lookup"><span data-stu-id="7695a-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
+<span data-ttu-id="bc14f-164">Используйте такой же запрос REST, что и при получении экземпляра ресурса, и определите расширение с помощью свойства навигации **extensions** этого экземпляра.</span><span class="sxs-lookup"><span data-stu-id="bc14f-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -64,9 +64,9 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
-### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="7695a-165">Получение известного экземпляра ресурса с соответствующим расширением</span><span class="sxs-lookup"><span data-stu-id="7695a-165">Get a known resource instance expanded with a matching extension</span></span> 
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="bc14f-165">Получение известного экземпляра ресурса с соответствующим расширением</span><span class="sxs-lookup"><span data-stu-id="bc14f-165">Get a known resource instance expanded with a matching extension</span></span> 
 
-<span data-ttu-id="7695a-166">Для типов ресурса, таких как event, group event, group post, message, personal contact, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id**, и дополните экземпляр расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="7695a-167">Отклик включает большинство свойств ресурса.</span><span class="sxs-lookup"><span data-stu-id="7695a-167">The response includes most of the resource properties.</span></span>
+<span data-ttu-id="bc14f-166">Для типов ресурса, таких как event, group event, group post, message, personal contact, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id**, и дополните экземпляр расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="bc14f-167">Отклик включает большинство свойств ресурса.</span><span class="sxs-lookup"><span data-stu-id="bc14f-167">The response includes most of the resource properties.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -78,7 +78,7 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq
 ```
 
 
-<span data-ttu-id="7695a-168">Для типов ресурса device, group, organization и user также необходимо использовать параметр `$select`, чтобы включить свойство **id** и другие свойства, которые необходимо получить из экземпляра ресурса:</span><span class="sxs-lookup"><span data-stu-id="7695a-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
+<span data-ttu-id="bc14f-168">Для типов ресурса device, group, organization и user также необходимо использовать параметр `$select`, чтобы включить свойство **id** и другие свойства, которые необходимо получить из экземпляра ресурса:</span><span class="sxs-lookup"><span data-stu-id="bc14f-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -89,9 +89,9 @@ GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId
 ```
 
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="7695a-169">Фильтрация экземпляров ресурсов с соответствующим расширением</span><span class="sxs-lookup"><span data-stu-id="7695a-169">Filter for resource instances expanded with a matching extension</span></span> 
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="bc14f-169">Фильтрация экземпляров ресурсов с соответствующим расширением</span><span class="sxs-lookup"><span data-stu-id="bc14f-169">Filter for resource instances expanded with a matching extension</span></span> 
 
-<span data-ttu-id="7695a-170">Используйте такой же запрос REST, что и при получении коллекции поддерживаемого ресурса, отфильтруйте в коллекции экземпляры, содержащие расширение с соответствующим свойством **id**, и дополните эти экземпляры расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
+<span data-ttu-id="bc14f-170">Используйте такой же запрос REST, что и при получении коллекции поддерживаемого ресурса, отфильтруйте в коллекции экземпляры, содержащие расширение с соответствующим свойством **id**, и дополните эти экземпляры расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -102,77 +102,77 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-><span data-ttu-id="7695a-171">**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, чье расширение нужно получить.</span><span class="sxs-lookup"><span data-stu-id="7695a-171">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it.</span></span> <span data-ttu-id="7695a-172">Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.</span><span class="sxs-lookup"><span data-stu-id="7695a-172">All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
+><span data-ttu-id="bc14f-171">**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, чье расширение нужно получить.</span><span class="sxs-lookup"><span data-stu-id="bc14f-171">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it.</span></span> <span data-ttu-id="bc14f-172">Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.</span><span class="sxs-lookup"><span data-stu-id="bc14f-172">All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
 
 
-## <a name="path-parameters"></a><span data-ttu-id="7695a-173">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="7695a-173">Path parameters</span></span>
-|<span data-ttu-id="7695a-174">**Параметр**</span><span class="sxs-lookup"><span data-stu-id="7695a-174">**Parameter**</span></span>|<span data-ttu-id="7695a-175">**Тип**</span><span class="sxs-lookup"><span data-stu-id="7695a-175">**Type**</span></span>|<span data-ttu-id="7695a-176">**Описание**</span><span class="sxs-lookup"><span data-stu-id="7695a-176">**Description**</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="bc14f-173">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="bc14f-173">Path parameters</span></span>
+|<span data-ttu-id="bc14f-174">**Параметр**</span><span class="sxs-lookup"><span data-stu-id="bc14f-174">**Parameter**</span></span>|<span data-ttu-id="bc14f-175">**Тип**</span><span class="sxs-lookup"><span data-stu-id="bc14f-175">**Type**</span></span>|<span data-ttu-id="bc14f-176">**Описание**</span><span class="sxs-lookup"><span data-stu-id="bc14f-176">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="7695a-177">Id</span><span class="sxs-lookup"><span data-stu-id="7695a-177">Id</span></span>|<span data-ttu-id="7695a-178">string</span><span class="sxs-lookup"><span data-stu-id="7695a-178">string</span></span>|<span data-ttu-id="7695a-p104">Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.</span><span class="sxs-lookup"><span data-stu-id="7695a-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
-|<span data-ttu-id="7695a-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="7695a-182">extensionId</span></span>|<span data-ttu-id="7695a-183">string</span><span class="sxs-lookup"><span data-stu-id="7695a-183">string</span></span>|<span data-ttu-id="7695a-p105">Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7695a-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
+|<span data-ttu-id="bc14f-177">Id</span><span class="sxs-lookup"><span data-stu-id="bc14f-177">Id</span></span>|<span data-ttu-id="bc14f-178">string</span><span class="sxs-lookup"><span data-stu-id="bc14f-178">string</span></span>|<span data-ttu-id="bc14f-p104">Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
+|<span data-ttu-id="bc14f-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="bc14f-182">extensionId</span></span>|<span data-ttu-id="bc14f-183">string</span><span class="sxs-lookup"><span data-stu-id="bc14f-183">string</span></span>|<span data-ttu-id="bc14f-p105">Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7695a-187">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7695a-187">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bc14f-187">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="bc14f-187">Optional query parameters</span></span>
 
-<span data-ttu-id="7695a-188">Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.</span><span class="sxs-lookup"><span data-stu-id="7695a-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
+<span data-ttu-id="bc14f-188">Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.</span><span class="sxs-lookup"><span data-stu-id="bc14f-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
 
-|<span data-ttu-id="7695a-189">**Name**</span><span class="sxs-lookup"><span data-stu-id="7695a-189">**Name**</span></span>|<span data-ttu-id="7695a-190">**Value**</span><span class="sxs-lookup"><span data-stu-id="7695a-190">**Value**</span></span>|<span data-ttu-id="7695a-191">**Описание**</span><span class="sxs-lookup"><span data-stu-id="7695a-191">**Description**</span></span>|
+|<span data-ttu-id="bc14f-189">**Name**</span><span class="sxs-lookup"><span data-stu-id="bc14f-189">**Name**</span></span>|<span data-ttu-id="bc14f-190">**Value**</span><span class="sxs-lookup"><span data-stu-id="bc14f-190">**Value**</span></span>|<span data-ttu-id="bc14f-191">**Описание**</span><span class="sxs-lookup"><span data-stu-id="bc14f-191">**Description**</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="7695a-192">$filter</span><span class="sxs-lookup"><span data-stu-id="7695a-192">$filter</span></span>|<span data-ttu-id="7695a-193">string</span><span class="sxs-lookup"><span data-stu-id="7695a-193">string</span></span>|<span data-ttu-id="7695a-194">Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="7695a-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="7695a-195">$filter с **любым** оператором</span><span class="sxs-lookup"><span data-stu-id="7695a-195">$filter with **any** operator</span></span>|<span data-ttu-id="7695a-196">string</span><span class="sxs-lookup"><span data-stu-id="7695a-196">string</span></span>|<span data-ttu-id="7695a-197">Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="7695a-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="7695a-198">$expand</span><span class="sxs-lookup"><span data-stu-id="7695a-198">$expand</span></span>|<span data-ttu-id="7695a-199">string</span><span class="sxs-lookup"><span data-stu-id="7695a-199">string</span></span>|<span data-ttu-id="7695a-200">Дополняет экземпляр ресурса расширением.</span><span class="sxs-lookup"><span data-stu-id="7695a-200">Expands a resource instance to include an extension.</span></span> |
+|<span data-ttu-id="bc14f-192">$filter</span><span class="sxs-lookup"><span data-stu-id="bc14f-192">$filter</span></span>|<span data-ttu-id="bc14f-193">string</span><span class="sxs-lookup"><span data-stu-id="bc14f-193">string</span></span>|<span data-ttu-id="bc14f-194">Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="bc14f-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="bc14f-195">$filter с **любым** оператором</span><span class="sxs-lookup"><span data-stu-id="bc14f-195">$filter with **any** operator</span></span>|<span data-ttu-id="bc14f-196">string</span><span class="sxs-lookup"><span data-stu-id="bc14f-196">string</span></span>|<span data-ttu-id="bc14f-197">Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="bc14f-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="bc14f-198">$expand</span><span class="sxs-lookup"><span data-stu-id="bc14f-198">$expand</span></span>|<span data-ttu-id="bc14f-199">string</span><span class="sxs-lookup"><span data-stu-id="bc14f-199">string</span></span>|<span data-ttu-id="bc14f-200">Дополняет экземпляр ресурса расширением.</span><span class="sxs-lookup"><span data-stu-id="bc14f-200">Expands a resource instance to include an extension.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="7695a-201">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7695a-201">Request headers</span></span>
-| <span data-ttu-id="7695a-202">Имя</span><span class="sxs-lookup"><span data-stu-id="7695a-202">Name</span></span>       | <span data-ttu-id="7695a-203">Значение</span><span class="sxs-lookup"><span data-stu-id="7695a-203">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="bc14f-201">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bc14f-201">Request headers</span></span>
+| <span data-ttu-id="bc14f-202">Имя</span><span class="sxs-lookup"><span data-stu-id="bc14f-202">Name</span></span>       | <span data-ttu-id="bc14f-203">Значение</span><span class="sxs-lookup"><span data-stu-id="bc14f-203">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="7695a-204">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7695a-204">Authorization</span></span> | <span data-ttu-id="7695a-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7695a-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bc14f-204">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bc14f-204">Authorization</span></span> | <span data-ttu-id="bc14f-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7695a-207">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7695a-207">Request body</span></span>
-<span data-ttu-id="7695a-208">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7695a-208">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bc14f-207">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bc14f-207">Request body</span></span>
+<span data-ttu-id="bc14f-208">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="bc14f-208">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7695a-209">Отклик</span><span class="sxs-lookup"><span data-stu-id="7695a-209">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bc14f-209">Отклик</span><span class="sxs-lookup"><span data-stu-id="bc14f-209">Response</span></span>
 
-<span data-ttu-id="7695a-p107">В случае успеха этот метод возвращает код отклика `200 OK` и объект [openTypeExtension](../resources/opentypeextension.md) в тексте отклика. Точный текст отклика зависит от запроса GET.</span><span class="sxs-lookup"><span data-stu-id="7695a-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
-## <a name="example"></a><span data-ttu-id="7695a-212">Пример</span><span class="sxs-lookup"><span data-stu-id="7695a-212">Example</span></span>
+<span data-ttu-id="bc14f-p107">В случае успеха этот метод возвращает код отклика `200 OK` и объект [openTypeExtension](../resources/opentypeextension.md) в тексте отклика. Точный текст отклика зависит от запроса GET.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
+## <a name="example"></a><span data-ttu-id="bc14f-212">Пример</span><span class="sxs-lookup"><span data-stu-id="bc14f-212">Example</span></span>
 
-#### <a name="request-1"></a><span data-ttu-id="7695a-213">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="7695a-213">Request 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="bc14f-213">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="bc14f-213">Request 1</span></span>
 
-<span data-ttu-id="7695a-p108">В первом примере показаны 2 способа обращения к расширению и получение расширения в указанном сообщении. Отклик не зависит от того, как вы ссылаетесь на расширение.</span><span class="sxs-lookup"><span data-stu-id="7695a-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
+<span data-ttu-id="bc14f-p108">В первом примере показаны 2 способа обращения к расширению и получение расширения в указанном сообщении. Отклик не зависит от того, как вы ссылаетесь на расширение.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
 
-<span data-ttu-id="7695a-216">По имени:</span><span class="sxs-lookup"><span data-stu-id="7695a-216">First, by its name:</span></span> 
+<span data-ttu-id="bc14f-216">По имени:</span><span class="sxs-lookup"><span data-stu-id="bc14f-216">First, by its name:</span></span> 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7695a-217">HTTP</span><span class="sxs-lookup"><span data-stu-id="7695a-217">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bc14f-217">HTTP</span><span class="sxs-lookup"><span data-stu-id="bc14f-217">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Com.Contoso.Referral
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7695a-218">C#</span><span class="sxs-lookup"><span data-stu-id="7695a-218">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bc14f-218">C#</span><span class="sxs-lookup"><span data-stu-id="bc14f-218">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7695a-219">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7695a-219">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bc14f-219">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bc14f-219">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7695a-220">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7695a-220">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bc14f-220">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bc14f-220">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="7695a-221">По идентификатору (полному имени):</span><span class="sxs-lookup"><span data-stu-id="7695a-221">Second, by its ID (fully qualified name):</span></span>
+<span data-ttu-id="bc14f-221">По идентификатору (полному имени):</span><span class="sxs-lookup"><span data-stu-id="bc14f-221">Second, by its ID (fully qualified name):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==='/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="7695a-222">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="7695a-222">Response 1</span></span>
-<span data-ttu-id="7695a-223">Ниже представлен отклик для первого примера.</span><span class="sxs-lookup"><span data-stu-id="7695a-223">Here is the response for the first example.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="bc14f-222">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="bc14f-222">Response 1</span></span>
+<span data-ttu-id="bc14f-223">Ниже представлен отклик для первого примера.</span><span class="sxs-lookup"><span data-stu-id="bc14f-223">Here is the response for the first example.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -198,37 +198,37 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a><span data-ttu-id="7695a-224">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="7695a-224">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="bc14f-224">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="bc14f-224">Request 2</span></span>
 
-<span data-ttu-id="7695a-225">Во втором примере показано, как сослаться на расширение по его имени и получить расширение в указанном событии группы.</span><span class="sxs-lookup"><span data-stu-id="7695a-225">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
+<span data-ttu-id="bc14f-225">Во втором примере показано, как сослаться на расширение по его имени и получить расширение в указанном событии группы.</span><span class="sxs-lookup"><span data-stu-id="bc14f-225">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7695a-226">HTTP</span><span class="sxs-lookup"><span data-stu-id="7695a-226">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bc14f-226">HTTP</span><span class="sxs-lookup"><span data-stu-id="bc14f-226">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7695a-227">C#</span><span class="sxs-lookup"><span data-stu-id="7695a-227">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bc14f-227">C#</span><span class="sxs-lookup"><span data-stu-id="bc14f-227">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7695a-228">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7695a-228">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bc14f-228">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bc14f-228">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7695a-229">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7695a-229">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bc14f-229">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bc14f-229">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response-2"></a><span data-ttu-id="7695a-230">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="7695a-230">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="bc14f-230">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="bc14f-230">Response 2</span></span>
 
-<span data-ttu-id="7695a-231">Ниже представлен отклик из второго примера.</span><span class="sxs-lookup"><span data-stu-id="7695a-231">Here is the response from the second example.</span></span>
+<span data-ttu-id="bc14f-231">Ниже представлен отклик из второго примера.</span><span class="sxs-lookup"><span data-stu-id="bc14f-231">Here is the response from the second example.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -252,28 +252,28 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-3"></a><span data-ttu-id="7695a-232">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="7695a-232">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="bc14f-232">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="bc14f-232">Request 3</span></span>
 
-<span data-ttu-id="7695a-p109">В третьем примере показано, как получить и дополнить указанное сообщение, добавив расширение, возвращенное из фильтра. Фильтр возвращает расширение, свойство **id** которого совпадает с полным именем.</span><span class="sxs-lookup"><span data-stu-id="7695a-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
+<span data-ttu-id="bc14f-p109">В третьем примере показано, как получить и дополнить указанное сообщение, добавив расширение, возвращенное из фильтра. Фильтр возвращает расширение, свойство **id** которого совпадает с полным именем.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7695a-235">HTTP</span><span class="sxs-lookup"><span data-stu-id="7695a-235">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bc14f-235">HTTP</span><span class="sxs-lookup"><span data-stu-id="bc14f-235">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7695a-236">C#</span><span class="sxs-lookup"><span data-stu-id="7695a-236">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bc14f-236">C#</span><span class="sxs-lookup"><span data-stu-id="bc14f-236">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7695a-237">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7695a-237">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bc14f-237">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bc14f-237">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7695a-238">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7695a-238">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bc14f-238">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bc14f-238">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -281,9 +281,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 
 
-#### <a name="response-3"></a><span data-ttu-id="7695a-239">Отклик 3</span><span class="sxs-lookup"><span data-stu-id="7695a-239">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="bc14f-239">Отклик 3</span><span class="sxs-lookup"><span data-stu-id="bc14f-239">Response 3</span></span>
 
-<span data-ttu-id="7695a-p110">Ниже представлен отклик из третьего примера. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7695a-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="bc14f-p110">Ниже представлен отклик из третьего примера. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -365,37 +365,37 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-4"></a><span data-ttu-id="7695a-243">Запрос 4</span><span class="sxs-lookup"><span data-stu-id="7695a-243">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="bc14f-243">Запрос 4</span><span class="sxs-lookup"><span data-stu-id="bc14f-243">Request 4</span></span>
 
-<span data-ttu-id="7695a-244">В четвертом примере показано, как сослаться на расширение по его полному имени и получить расширение в указанной записи группы.</span><span class="sxs-lookup"><span data-stu-id="7695a-244">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
+<span data-ttu-id="bc14f-244">В четвертом примере показано, как сослаться на расширение по его полному имени и получить расширение в указанной записи группы.</span><span class="sxs-lookup"><span data-stu-id="bc14f-244">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7695a-245">HTTP</span><span class="sxs-lookup"><span data-stu-id="7695a-245">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="bc14f-245">HTTP</span><span class="sxs-lookup"><span data-stu-id="bc14f-245">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_4"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7695a-246">C#</span><span class="sxs-lookup"><span data-stu-id="7695a-246">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="bc14f-246">C#</span><span class="sxs-lookup"><span data-stu-id="bc14f-246">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7695a-247">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7695a-247">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bc14f-247">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bc14f-247">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7695a-248">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7695a-248">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bc14f-248">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bc14f-248">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response-4"></a><span data-ttu-id="7695a-249">Отклик 4</span><span class="sxs-lookup"><span data-stu-id="7695a-249">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="bc14f-249">Отклик 4</span><span class="sxs-lookup"><span data-stu-id="bc14f-249">Response 4</span></span>
 
-<span data-ttu-id="7695a-250">Ниже представлен отклик из четвертого примера.</span><span class="sxs-lookup"><span data-stu-id="7695a-250">Here is the response from the fourth example.</span></span> 
+<span data-ttu-id="bc14f-250">Ниже представлен отклик из четвертого примера.</span><span class="sxs-lookup"><span data-stu-id="bc14f-250">Here is the response from the fourth example.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -423,9 +423,9 @@ Content-Type: application/json
 ```
 
 
-#### <a name="request-5"></a><span data-ttu-id="7695a-251">Запрос 5</span><span class="sxs-lookup"><span data-stu-id="7695a-251">Request 5</span></span>
+#### <a name="request-5"></a><span data-ttu-id="bc14f-251">Запрос 5</span><span class="sxs-lookup"><span data-stu-id="bc14f-251">Request 5</span></span>
 
-<span data-ttu-id="7695a-p111">В пятом примере показано, как найти в почтовом ящике вошедшего пользователя сообщения с расширениями, соответствующими фильтру, и дополнить их расширением. Фильтр возвращает расширения, свойство **id** которых совпадает с именем расширения `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="7695a-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="bc14f-p111">В пятом примере показано, как найти в почтовом ящике вошедшего пользователя сообщения с расширениями, соответствующими фильтру, и дополнить их расширением. Фильтр возвращает расширения, свойство **id** которых совпадает с именем расширения `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -436,11 +436,11 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-#### <a name="response-5"></a><span data-ttu-id="7695a-254">Отклик 5</span><span class="sxs-lookup"><span data-stu-id="7695a-254">Response 5</span></span>
+#### <a name="response-5"></a><span data-ttu-id="bc14f-254">Отклик 5</span><span class="sxs-lookup"><span data-stu-id="bc14f-254">Response 5</span></span>
 
-<span data-ttu-id="7695a-255">В этом отклике для пятого примера почтовый ящик пользователя содержит только одно сообщение, свойство **id** которого имеет значение `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="7695a-255">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="bc14f-255">В этом отклике для пятого примера почтовый ящик пользователя содержит только одно сообщение, свойство **id** которого имеет значение `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="bc14f-255">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
 
-<span data-ttu-id="7695a-p112">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7695a-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="bc14f-p112">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bc14f-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

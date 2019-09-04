@@ -5,73 +5,73 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: a12cccc40301cc6648b6f728b40d0550ba45543a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 0e44ea05cc52891d1045ab201ac74bce5eb90ae3
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419680"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721700"
 ---
-# <a name="get-governancerolesetting"></a><span data-ttu-id="86c71-103">Получение Говернанцеролесеттинг</span><span class="sxs-lookup"><span data-stu-id="86c71-103">Get governanceRoleSetting</span></span>
+# <a name="get-governancerolesetting"></a><span data-ttu-id="c1c8b-103">Получение Говернанцеролесеттинг</span><span class="sxs-lookup"><span data-stu-id="c1c8b-103">Get governanceRoleSetting</span></span>
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="86c71-104">Получение свойств и связей объекта [говернанцеролесеттинг](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="86c71-104">Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
+<span data-ttu-id="c1c8b-104">Получение свойств и связей объекта [говернанцеролесеттинг](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="c1c8b-104">Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="86c71-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="86c71-105">Permissions</span></span>
-<span data-ttu-id="86c71-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="86c71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c1c8b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c1c8b-105">Permissions</span></span>
+<span data-ttu-id="c1c8b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c1c8b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="86c71-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="86c71-108">Permission type</span></span>      | <span data-ttu-id="86c71-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="86c71-109">Permissions</span></span>              |
+|<span data-ttu-id="c1c8b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c1c8b-108">Permission type</span></span>      | <span data-ttu-id="c1c8b-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c1c8b-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="86c71-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="86c71-110">Delegated (work or school account)</span></span> | <span data-ttu-id="86c71-111">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="86c71-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="86c71-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="86c71-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86c71-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="86c71-113">Not supported.</span></span>    |
-|<span data-ttu-id="86c71-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="86c71-114">Application</span></span> | <span data-ttu-id="86c71-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="86c71-115">Not supported.</span></span> |
+|<span data-ttu-id="c1c8b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c1c8b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c1c8b-111">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="c1c8b-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="c1c8b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c1c8b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c1c8b-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1c8b-113">Not supported.</span></span>    |
+|<span data-ttu-id="c1c8b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c1c8b-114">Application</span></span> | <span data-ttu-id="c1c8b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1c8b-115">Not supported.</span></span> |
 
-<span data-ttu-id="86c71-116">Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса, к которому относится [говернанцеролесеттинг](../resources/governancerolesetting.md) .</span><span class="sxs-lookup"><span data-stu-id="86c71-116">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.</span></span>
-## <a name="http-request"></a><span data-ttu-id="86c71-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="86c71-117">HTTP request</span></span>
+<span data-ttu-id="c1c8b-116">Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса, к которому относится [говернанцеролесеттинг](../resources/governancerolesetting.md) .</span><span class="sxs-lookup"><span data-stu-id="c1c8b-116">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.</span></span>
+## <a name="http-request"></a><span data-ttu-id="c1c8b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c1c8b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="86c71-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="86c71-118">Optional query parameters</span></span>
-<span data-ttu-id="86c71-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="86c71-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c1c8b-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c1c8b-118">Optional query parameters</span></span>
+<span data-ttu-id="c1c8b-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c1c8b-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="86c71-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="86c71-120">Request headers</span></span>
-| <span data-ttu-id="86c71-121">Имя</span><span class="sxs-lookup"><span data-stu-id="86c71-121">Name</span></span>      |<span data-ttu-id="86c71-122">Описание</span><span class="sxs-lookup"><span data-stu-id="86c71-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c1c8b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c1c8b-120">Request headers</span></span>
+| <span data-ttu-id="c1c8b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c1c8b-121">Name</span></span>      |<span data-ttu-id="c1c8b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c1c8b-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="86c71-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="86c71-123">Authorization</span></span>  | <span data-ttu-id="86c71-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="86c71-124">Bearer {code}</span></span>|
+| <span data-ttu-id="c1c8b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c1c8b-123">Authorization</span></span>  | <span data-ttu-id="c1c8b-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="c1c8b-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="86c71-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="86c71-125">Request body</span></span>
-<span data-ttu-id="86c71-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="86c71-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="86c71-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="86c71-127">Response</span></span>
-<span data-ttu-id="86c71-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [говернанцеролесеттинг](../resources/governancerolesetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="86c71-128">If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="86c71-129">Пример</span><span class="sxs-lookup"><span data-stu-id="86c71-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="86c71-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="86c71-130">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="c1c8b-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c1c8b-125">Request body</span></span>
+<span data-ttu-id="c1c8b-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c1c8b-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="c1c8b-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1c8b-127">Response</span></span>
+<span data-ttu-id="c1c8b-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [говернанцеролесеттинг](../resources/governancerolesetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c1c8b-128">If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c1c8b-129">Пример</span><span class="sxs-lookup"><span data-stu-id="c1c8b-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c1c8b-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="c1c8b-130">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="86c71-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="86c71-131">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c1c8b-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="c1c8b-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesetting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/80dc5d6f-8d89-47b3-953f-01dc909ed3f9
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="86c71-132">C#</span><span class="sxs-lookup"><span data-stu-id="86c71-132">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c1c8b-132">C#</span><span class="sxs-lookup"><span data-stu-id="c1c8b-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="86c71-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="86c71-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c1c8b-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c1c8b-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-governancerolesetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="86c71-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="86c71-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c1c8b-134">Цель — C</span><span class="sxs-lookup"><span data-stu-id="c1c8b-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="86c71-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="86c71-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c1c8b-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c1c8b-135">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
