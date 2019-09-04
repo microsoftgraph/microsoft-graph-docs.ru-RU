@@ -5,28 +5,28 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8210f96b4db8a05efc2fa1c82c384ec822c4afb1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4464fb1d06f9b7d69d6accce261ba8e970d3b0f0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307877"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727770"
 ---
-# <a name="list-securescores"></a><span data-ttu-id="104df-103">Перечисление объектов secureScores</span><span class="sxs-lookup"><span data-stu-id="104df-103">List secureScores</span></span>
+# <a name="list-securescores"></a><span data-ttu-id="ece2f-103">Перечисление объектов secureScores</span><span class="sxs-lookup"><span data-stu-id="ece2f-103">List secureScores</span></span>
 
-<span data-ttu-id="104df-104">Получение списка объектов [секурескоре](../resources/securescore.md) .</span><span class="sxs-lookup"><span data-stu-id="104df-104">Retrieve a list of [secureScore](../resources/securescore.md) objects.</span></span>
+<span data-ttu-id="ece2f-104">Получение списка объектов [секурескоре](../resources/securescore.md) .</span><span class="sxs-lookup"><span data-stu-id="ece2f-104">Retrieve a list of [secureScore](../resources/securescore.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="104df-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="104df-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ece2f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ece2f-105">Permissions</span></span>
 
-<span data-ttu-id="104df-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="104df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ece2f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ece2f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="104df-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="104df-108">Permission type</span></span>      | <span data-ttu-id="104df-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="104df-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ece2f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ece2f-108">Permission type</span></span>      | <span data-ttu-id="ece2f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ece2f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="104df-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="104df-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="104df-111">Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="104df-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
-|<span data-ttu-id="104df-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="104df-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="104df-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="104df-113">Not supported.</span></span>  |
-|<span data-ttu-id="104df-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="104df-114">Application</span></span> | <span data-ttu-id="104df-115">Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="104df-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="ece2f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ece2f-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="ece2f-111">Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="ece2f-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
+|<span data-ttu-id="ece2f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ece2f-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="ece2f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ece2f-113">Not supported.</span></span>  |
+|<span data-ttu-id="ece2f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ece2f-114">Application</span></span> | <span data-ttu-id="ece2f-115">Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="ece2f-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="104df-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="104df-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ece2f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ece2f-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,66 +36,66 @@ GET /security/secureScores?$top=1
 GET /security/secureScores?$top=1&$skip=7
 GET /security/secureScores?$filter={property} eq '{property-value}'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="104df-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="104df-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ece2f-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ece2f-117">Optional query parameters</span></span>
 
-<span data-ttu-id="104df-118">Этот метод поддерживает указанные ниже [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="104df-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+<span data-ttu-id="ece2f-118">Этот метод поддерживает указанные ниже [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ece2f-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
 - `$count`
 - `$filter`
 - `$skip`
-- <span data-ttu-id="104df-119">`$top` возвращает объединенные лучшие результаты от каждого поставщика API безопасности.</span><span class="sxs-lookup"><span data-stu-id="104df-119">`$top` will return the aggregated top results from each security API provider.</span></span>  
+- <span data-ttu-id="ece2f-119">`$top` возвращает объединенные лучшие результаты от каждого поставщика API безопасности.</span><span class="sxs-lookup"><span data-stu-id="ece2f-119">`$top` will return the aggregated top results from each security API provider.</span></span>  
 
-## <a name="request-headers"></a><span data-ttu-id="104df-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="104df-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ece2f-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ece2f-120">Request headers</span></span>
 
-| <span data-ttu-id="104df-121">Имя</span><span class="sxs-lookup"><span data-stu-id="104df-121">Name</span></span>      |<span data-ttu-id="104df-122">Описание</span><span class="sxs-lookup"><span data-stu-id="104df-122">Description</span></span>|
+| <span data-ttu-id="ece2f-121">Имя</span><span class="sxs-lookup"><span data-stu-id="ece2f-121">Name</span></span>      |<span data-ttu-id="ece2f-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ece2f-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="104df-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="104df-123">Authorization</span></span>  | <span data-ttu-id="104df-124">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="104df-124">Bearer {code}.</span></span> <span data-ttu-id="104df-125">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="104df-125">Required.</span></span>|
+| <span data-ttu-id="ece2f-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ece2f-123">Authorization</span></span>  | <span data-ttu-id="ece2f-124">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="ece2f-124">Bearer {code}.</span></span> <span data-ttu-id="ece2f-125">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="ece2f-125">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="104df-126">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="104df-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ece2f-126">Основной текст запросов</span><span class="sxs-lookup"><span data-stu-id="ece2f-126">Request body</span></span>
 
-<span data-ttu-id="104df-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="104df-127">Do not supply a request body for this method.</span></span> <span data-ttu-id="104df-128">Текст запроса будет игнорироваться.</span><span class="sxs-lookup"><span data-stu-id="104df-128">The request body will be ignored.</span></span>
+<span data-ttu-id="ece2f-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ece2f-127">Do not supply a request body for this method.</span></span> <span data-ttu-id="ece2f-128">Текст запроса будет игнорироваться.</span><span class="sxs-lookup"><span data-stu-id="ece2f-128">The request body will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="104df-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="104df-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ece2f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="ece2f-129">Response</span></span>
 
-<span data-ttu-id="104df-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескорес** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="104df-130">If successful, this method returns a `200 OK` response code and collection of **secureScores** objects in the response body.</span></span>
+<span data-ttu-id="ece2f-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескорес** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ece2f-130">If successful, this method returns a `200 OK` response code and collection of **secureScores** objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="104df-131">Пример</span><span class="sxs-lookup"><span data-stu-id="104df-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ece2f-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ece2f-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="104df-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="104df-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ece2f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ece2f-132">Request</span></span>
 
-<span data-ttu-id="104df-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="104df-133">The following is an example of the request.</span></span>
+<span data-ttu-id="ece2f-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ece2f-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="104df-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="104df-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ece2f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ece2f-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_securescores"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="104df-135">C#</span><span class="sxs-lookup"><span data-stu-id="104df-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ece2f-135">C#</span><span class="sxs-lookup"><span data-stu-id="ece2f-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescores-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="104df-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="104df-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ece2f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ece2f-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securescores-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="104df-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="104df-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ece2f-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ece2f-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescores-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="104df-138">Java</span><span class="sxs-lookup"><span data-stu-id="104df-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="ece2f-138">Java</span><span class="sxs-lookup"><span data-stu-id="ece2f-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-securescores-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="104df-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="104df-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ece2f-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="ece2f-139">Response</span></span>
 
-<span data-ttu-id="104df-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="104df-140">The following is an example of the response.</span></span>
+<span data-ttu-id="ece2f-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ece2f-140">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

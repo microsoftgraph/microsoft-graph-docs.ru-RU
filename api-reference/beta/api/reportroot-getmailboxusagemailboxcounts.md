@@ -5,32 +5,32 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: b5b2aca2f44840d470c9ac45757f1b7a52caaa55
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4bca82c840233df8ea65ee002d8ebf1d4d87f58d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36411797"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725334"
 ---
-# <a name="reportroot-getmailboxusagemailboxcounts"></a><span data-ttu-id="66fdc-104">reportRoot: getMailboxUsageMailboxCounts</span><span class="sxs-lookup"><span data-stu-id="66fdc-104">reportRoot: getMailboxUsageMailboxCounts</span></span>
+# <a name="reportroot-getmailboxusagemailboxcounts"></a><span data-ttu-id="d5c26-104">reportRoot: getMailboxUsageMailboxCounts</span><span class="sxs-lookup"><span data-stu-id="d5c26-104">reportRoot: getMailboxUsageMailboxCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="66fdc-105">Узнайте, сколько всего почтовых ящиков в организации и сколько из них были активный в отчетный период.</span><span class="sxs-lookup"><span data-stu-id="66fdc-105">Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.</span></span> <span data-ttu-id="66fdc-106">Почтовый ящик считается активным, если пользователь отправил или прочитал по крайней мере одно письмо.</span><span class="sxs-lookup"><span data-stu-id="66fdc-106">A mailbox is considered active if the user sent or read any email.</span></span>
+<span data-ttu-id="d5c26-105">Узнайте, сколько всего почтовых ящиков в организации и сколько из них были активный в отчетный период.</span><span class="sxs-lookup"><span data-stu-id="d5c26-105">Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.</span></span> <span data-ttu-id="d5c26-106">Почтовый ящик считается активным, если пользователь отправил или прочитал по крайней мере одно письмо.</span><span class="sxs-lookup"><span data-stu-id="d5c26-106">A mailbox is considered active if the user sent or read any email.</span></span>
 
-> <span data-ttu-id="66fdc-107">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span><span class="sxs-lookup"><span data-stu-id="66fdc-107">**Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span></span>
+> <span data-ttu-id="d5c26-107">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span><span class="sxs-lookup"><span data-stu-id="d5c26-107">**Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="66fdc-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="66fdc-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5c26-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d5c26-108">Permissions</span></span>
 
-<span data-ttu-id="66fdc-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="66fdc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5c26-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5c26-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="66fdc-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="66fdc-111">Permission type</span></span>                        | <span data-ttu-id="66fdc-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="66fdc-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d5c26-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d5c26-111">Permission type</span></span>                        | <span data-ttu-id="d5c26-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d5c26-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="66fdc-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="66fdc-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="66fdc-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="66fdc-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="66fdc-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="66fdc-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="66fdc-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="66fdc-116">Not supported.</span></span>                           |
-| <span data-ttu-id="66fdc-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="66fdc-117">Application</span></span>                            | <span data-ttu-id="66fdc-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="66fdc-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="d5c26-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d5c26-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="d5c26-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d5c26-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="d5c26-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d5c26-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5c26-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5c26-116">Not supported.</span></span>                           |
+| <span data-ttu-id="d5c26-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d5c26-117">Application</span></span>                            | <span data-ttu-id="d5c26-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d5c26-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="66fdc-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="66fdc-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5c26-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d5c26-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,80 +38,80 @@ ms.locfileid: "36411797"
 GET /reports/getMailboxUsageMailboxCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="66fdc-120">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="66fdc-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="d5c26-120">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="d5c26-120">Function parameters</span></span>
 
-<span data-ttu-id="66fdc-121">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="66fdc-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="d5c26-121">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="d5c26-121">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="66fdc-122">Параметр</span><span class="sxs-lookup"><span data-stu-id="66fdc-122">Parameter</span></span> | <span data-ttu-id="66fdc-123">Тип</span><span class="sxs-lookup"><span data-stu-id="66fdc-123">Type</span></span>   | <span data-ttu-id="66fdc-124">Описание</span><span class="sxs-lookup"><span data-stu-id="66fdc-124">Description</span></span>                              |
+| <span data-ttu-id="d5c26-122">Параметр</span><span class="sxs-lookup"><span data-stu-id="d5c26-122">Parameter</span></span> | <span data-ttu-id="d5c26-123">Тип</span><span class="sxs-lookup"><span data-stu-id="d5c26-123">Type</span></span>   | <span data-ttu-id="d5c26-124">Описание</span><span class="sxs-lookup"><span data-stu-id="d5c26-124">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="66fdc-125">period</span><span class="sxs-lookup"><span data-stu-id="66fdc-125">period</span></span>    | <span data-ttu-id="66fdc-126">string</span><span class="sxs-lookup"><span data-stu-id="66fdc-126">string</span></span> | <span data-ttu-id="66fdc-127">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="66fdc-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="66fdc-128">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="66fdc-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="66fdc-129">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="66fdc-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="66fdc-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="66fdc-130">Required.</span></span> |
+| <span data-ttu-id="d5c26-125">period</span><span class="sxs-lookup"><span data-stu-id="d5c26-125">period</span></span>    | <span data-ttu-id="d5c26-126">string</span><span class="sxs-lookup"><span data-stu-id="d5c26-126">string</span></span> | <span data-ttu-id="d5c26-127">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="d5c26-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="d5c26-128">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="d5c26-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="d5c26-129">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="d5c26-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="d5c26-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5c26-130">Required.</span></span> |
 
-<span data-ttu-id="66fdc-131">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="66fdc-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="66fdc-132">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="66fdc-132">The default output type is text/csv.</span></span> <span data-ttu-id="66fdc-133">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="66fdc-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="d5c26-131">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="d5c26-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="d5c26-132">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="d5c26-132">The default output type is text/csv.</span></span> <span data-ttu-id="d5c26-133">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="d5c26-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="66fdc-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="66fdc-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d5c26-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d5c26-134">Request headers</span></span>
 
-| <span data-ttu-id="66fdc-135">Имя</span><span class="sxs-lookup"><span data-stu-id="66fdc-135">Name</span></span>          | <span data-ttu-id="66fdc-136">Описание</span><span class="sxs-lookup"><span data-stu-id="66fdc-136">Description</span></span>               |
+| <span data-ttu-id="d5c26-135">Имя</span><span class="sxs-lookup"><span data-stu-id="d5c26-135">Name</span></span>          | <span data-ttu-id="d5c26-136">Описание</span><span class="sxs-lookup"><span data-stu-id="d5c26-136">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="66fdc-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="66fdc-137">Authorization</span></span> | <span data-ttu-id="66fdc-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="66fdc-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5c26-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d5c26-137">Authorization</span></span> | <span data-ttu-id="d5c26-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5c26-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="66fdc-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="66fdc-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5c26-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5c26-140">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="66fdc-141">CSV</span><span class="sxs-lookup"><span data-stu-id="66fdc-141">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="d5c26-141">CSV</span><span class="sxs-lookup"><span data-stu-id="d5c26-141">CSV</span></span>
 
-<span data-ttu-id="66fdc-142">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="66fdc-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="66fdc-143">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="66fdc-143">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="d5c26-142">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="d5c26-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="d5c26-143">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="d5c26-143">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="66fdc-144">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="66fdc-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="d5c26-144">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="d5c26-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="66fdc-145">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="66fdc-145">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="d5c26-145">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="d5c26-145">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="66fdc-146">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="66fdc-146">Report Refresh Date</span></span>
-- <span data-ttu-id="66fdc-147">Total (всего)</span><span class="sxs-lookup"><span data-stu-id="66fdc-147">Total</span></span>
-- <span data-ttu-id="66fdc-148">Active (активные)</span><span class="sxs-lookup"><span data-stu-id="66fdc-148">Active</span></span>
-- <span data-ttu-id="66fdc-149">Report Date (дата отчета)</span><span class="sxs-lookup"><span data-stu-id="66fdc-149">Report Date</span></span>
-- <span data-ttu-id="66fdc-150">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="66fdc-150">Report Period</span></span>
+- <span data-ttu-id="d5c26-146">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="d5c26-146">Report Refresh Date</span></span>
+- <span data-ttu-id="d5c26-147">Total (всего)</span><span class="sxs-lookup"><span data-stu-id="d5c26-147">Total</span></span>
+- <span data-ttu-id="d5c26-148">Active (активные)</span><span class="sxs-lookup"><span data-stu-id="d5c26-148">Active</span></span>
+- <span data-ttu-id="d5c26-149">Report Date (дата отчета)</span><span class="sxs-lookup"><span data-stu-id="d5c26-149">Report Date</span></span>
+- <span data-ttu-id="d5c26-150">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="d5c26-150">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="66fdc-151">JSON</span><span class="sxs-lookup"><span data-stu-id="66fdc-151">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="d5c26-151">JSON</span><span class="sxs-lookup"><span data-stu-id="d5c26-151">JSON</span></span>
 
-<span data-ttu-id="66fdc-152">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[маилбоксусажемаилбокскаунтс](../resources/mailboxusagemailboxcounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="66fdc-152">If successful, this method returns a `200 OK` response code and a **[mailboxUsageMailboxCounts](../resources/mailboxusagemailboxcounts.md)** object in the response body.</span></span>
+<span data-ttu-id="d5c26-152">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[маилбоксусажемаилбокскаунтс](../resources/mailboxusagemailboxcounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d5c26-152">If successful, this method returns a `200 OK` response code and a **[mailboxUsageMailboxCounts](../resources/mailboxusagemailboxcounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="66fdc-153">Пример</span><span class="sxs-lookup"><span data-stu-id="66fdc-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d5c26-153">Пример</span><span class="sxs-lookup"><span data-stu-id="d5c26-153">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="66fdc-154">CSV</span><span class="sxs-lookup"><span data-stu-id="66fdc-154">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="d5c26-154">CSV</span><span class="sxs-lookup"><span data-stu-id="d5c26-154">CSV</span></span>
 
-<span data-ttu-id="66fdc-155">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="66fdc-155">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="d5c26-155">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="d5c26-155">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="66fdc-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="66fdc-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5c26-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5c26-156">Request</span></span>
 
-<span data-ttu-id="66fdc-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="66fdc-157">The following is an example of the request.</span></span>
+<span data-ttu-id="d5c26-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5c26-157">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="66fdc-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="66fdc-158">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d5c26-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5c26-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getmailboxusagemailboxcounts_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period='D7')?$format=text/csv
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="66fdc-159">C#</span><span class="sxs-lookup"><span data-stu-id="66fdc-159">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d5c26-159">C#</span><span class="sxs-lookup"><span data-stu-id="d5c26-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getmailboxusagemailboxcounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66fdc-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66fdc-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5c26-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5c26-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmailboxusagemailboxcounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66fdc-161">Цель — C</span><span class="sxs-lookup"><span data-stu-id="66fdc-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5c26-161">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d5c26-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagemailboxcounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="66fdc-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="66fdc-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5c26-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5c26-162">Response</span></span>
 
-<span data-ttu-id="66fdc-163">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="66fdc-163">The following is an example of the response.</span></span>
+<span data-ttu-id="d5c26-163">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5c26-163">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -121,7 +121,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="66fdc-164">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="66fdc-164">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="d5c26-164">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="d5c26-164">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -136,44 +136,44 @@ Content-Type: application/octet-stream
 Report Refresh Date,Total,Active,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="66fdc-165">JSON</span><span class="sxs-lookup"><span data-stu-id="66fdc-165">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="d5c26-165">JSON</span><span class="sxs-lookup"><span data-stu-id="d5c26-165">JSON</span></span>
 
-<span data-ttu-id="66fdc-166">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="66fdc-166">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="d5c26-166">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="d5c26-166">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="66fdc-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="66fdc-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d5c26-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5c26-167">Request</span></span>
 
-<span data-ttu-id="66fdc-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="66fdc-168">The following is an example of the request.</span></span>
+<span data-ttu-id="d5c26-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5c26-168">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="66fdc-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="66fdc-169">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="d5c26-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5c26-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getmailboxusagemailboxcounts_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period='D7')?$format=application/json
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="66fdc-170">C#</span><span class="sxs-lookup"><span data-stu-id="66fdc-170">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d5c26-170">C#</span><span class="sxs-lookup"><span data-stu-id="d5c26-170">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getmailboxusagemailboxcounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66fdc-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66fdc-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5c26-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5c26-171">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmailboxusagemailboxcounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66fdc-172">Цель — C</span><span class="sxs-lookup"><span data-stu-id="66fdc-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5c26-172">Цель — C</span><span class="sxs-lookup"><span data-stu-id="d5c26-172">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagemailboxcounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="66fdc-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="66fdc-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d5c26-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5c26-173">Response</span></span>
 
-<span data-ttu-id="66fdc-174">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="66fdc-174">The following is an example of the response.</span></span>
+<span data-ttu-id="d5c26-174">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="d5c26-174">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="66fdc-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="66fdc-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d5c26-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d5c26-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

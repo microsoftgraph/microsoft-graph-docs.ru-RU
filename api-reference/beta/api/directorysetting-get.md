@@ -5,79 +5,79 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c5e025453f7ed501a326ae4e1089e9eb6254421
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e5d4042f967c99c1cc03976e470555790bee47fb
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417201"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719516"
 ---
-# <a name="get-a-directory-setting"></a><span data-ttu-id="ffb02-103">Получение параметра каталога</span><span class="sxs-lookup"><span data-stu-id="ffb02-103">Get a directory setting</span></span>
+# <a name="get-a-directory-setting"></a><span data-ttu-id="a79b4-103">Получение параметра каталога</span><span class="sxs-lookup"><span data-stu-id="a79b4-103">Get a directory setting</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ffb02-104">Получение свойств определенного объекта параметров каталога.</span><span class="sxs-lookup"><span data-stu-id="ffb02-104">Retrieve the properties of a specific directory setting object.</span></span>
+<span data-ttu-id="a79b4-104">Получение свойств определенного объекта параметров каталога.</span><span class="sxs-lookup"><span data-stu-id="a79b4-104">Retrieve the properties of a specific directory setting object.</span></span>
 
-> <span data-ttu-id="ffb02-105">**Note**: версия/Beta этого API применяется только к группам.</span><span class="sxs-lookup"><span data-stu-id="ffb02-105">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="ffb02-106">Версия/v1.0 этого API была переименована, чтобы *получить граупсеттингс*.</span><span class="sxs-lookup"><span data-stu-id="ffb02-106">The /v1.0 version of this API has been renamed to *Get groupSettings*.</span></span>
+> <span data-ttu-id="a79b4-105">**Note**: версия/Beta этого API применяется только к группам.</span><span class="sxs-lookup"><span data-stu-id="a79b4-105">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="a79b4-106">Версия/v1.0 этого API была переименована, чтобы *получить граупсеттингс*.</span><span class="sxs-lookup"><span data-stu-id="a79b4-106">The /v1.0 version of this API has been renamed to *Get groupSettings*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ffb02-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ffb02-107">Permissions</span></span>
-<span data-ttu-id="ffb02-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffb02-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a79b4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a79b4-107">Permissions</span></span>
+<span data-ttu-id="a79b4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a79b4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ffb02-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ffb02-110">Permission type</span></span>      | <span data-ttu-id="ffb02-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ffb02-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a79b4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a79b4-110">Permission type</span></span>      | <span data-ttu-id="a79b4-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a79b4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ffb02-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ffb02-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ffb02-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ffb02-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ffb02-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ffb02-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffb02-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ffb02-115">Not supported.</span></span>    |
-|<span data-ttu-id="ffb02-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ffb02-116">Application</span></span> | <span data-ttu-id="ffb02-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffb02-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a79b4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a79b4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a79b4-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a79b4-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a79b4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a79b4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a79b4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a79b4-115">Not supported.</span></span>    |
+|<span data-ttu-id="a79b4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a79b4-116">Application</span></span> | <span data-ttu-id="a79b4-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a79b4-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ffb02-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ffb02-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a79b4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a79b4-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="ffb02-119">Получение определенного параметра на уровне клиента или группы</span><span class="sxs-lookup"><span data-stu-id="ffb02-119">Get a specific tenant-wide or group setting</span></span>
+<span data-ttu-id="a79b4-119">Получение определенного параметра на уровне клиента или группы</span><span class="sxs-lookup"><span data-stu-id="a79b4-119">Get a specific tenant-wide or group setting</span></span>
 ```http
 GET /settings/{id}
 GET /groups/{id}/settings/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ffb02-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ffb02-120">Optional query parameters</span></span>
-<span data-ttu-id="ffb02-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="ffb02-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a79b4-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a79b4-120">Optional query parameters</span></span>
+<span data-ttu-id="a79b4-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a79b4-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ffb02-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ffb02-122">Request headers</span></span>
-| <span data-ttu-id="ffb02-123">Имя</span><span class="sxs-lookup"><span data-stu-id="ffb02-123">Name</span></span>      |<span data-ttu-id="ffb02-124">Описание</span><span class="sxs-lookup"><span data-stu-id="ffb02-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a79b4-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a79b4-122">Request headers</span></span>
+| <span data-ttu-id="a79b4-123">Имя</span><span class="sxs-lookup"><span data-stu-id="a79b4-123">Name</span></span>      |<span data-ttu-id="a79b4-124">Описание</span><span class="sxs-lookup"><span data-stu-id="a79b4-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ffb02-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ffb02-125">Authorization</span></span>  | <span data-ttu-id="ffb02-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ffb02-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="a79b4-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a79b4-125">Authorization</span></span>  | <span data-ttu-id="a79b4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a79b4-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ffb02-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ffb02-128">Request body</span></span>
-<span data-ttu-id="ffb02-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ffb02-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a79b4-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a79b4-128">Request body</span></span>
+<span data-ttu-id="a79b4-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a79b4-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ffb02-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="ffb02-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a79b4-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="a79b4-130">Response</span></span>
 
-<span data-ttu-id="ffb02-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ffb02-131">If successful, this method returns a `200 OK` response code and [directorySetting](../resources/directorysetting.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ffb02-132">Пример</span><span class="sxs-lookup"><span data-stu-id="ffb02-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ffb02-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="ffb02-133">Request</span></span>
-<span data-ttu-id="ffb02-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ffb02-134">Here is an example of the request.</span></span>
+<span data-ttu-id="a79b4-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a79b4-131">If successful, this method returns a `200 OK` response code and [directorySetting](../resources/directorysetting.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a79b4-132">Пример</span><span class="sxs-lookup"><span data-stu-id="a79b4-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a79b4-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="a79b4-133">Request</span></span>
+<span data-ttu-id="a79b4-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a79b4-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ffb02-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="ffb02-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a79b4-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="a79b4-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directorysetting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/settings/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ffb02-136">C#</span><span class="sxs-lookup"><span data-stu-id="ffb02-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a79b4-136">C#</span><span class="sxs-lookup"><span data-stu-id="a79b4-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ffb02-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ffb02-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a79b4-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a79b4-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directorysetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ffb02-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ffb02-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a79b4-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a79b4-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ffb02-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="ffb02-139">Response</span></span>
-<span data-ttu-id="ffb02-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ffb02-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a79b4-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="a79b4-139">Response</span></span>
+<span data-ttu-id="a79b4-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a79b4-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
