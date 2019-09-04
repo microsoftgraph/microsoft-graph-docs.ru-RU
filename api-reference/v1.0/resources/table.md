@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 05ca093ec9ab20d039242d231619bc710ac79925
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c1d9ccd71e49e673235bfca151f5b5db92efd1f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033987"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730297"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
 
@@ -22,8 +22,8 @@ ms.locfileid: "36033987"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта Table](../api/table-get.md) | [WorkbookTable](table.md) |Чтение свойств и связей объекта таблицы.|
-|[Создание объекта TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](tablecolumn.md)| Создание объекта TableColumn путем добавления в коллекцию столбцов.|
-|[Список столбцов](../api/table-list-columns.md) |Коллекция [WorkbookTableColumn](tablecolumn.md)| Получение коллекции объектов TableColumn.|
+|[Создание объекта TableColumn](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| Создание объекта TableColumn путем добавления в коллекцию столбцов.|
+|[Список столбцов](../api/table-list-columns.md) |Коллекция [WorkbookTableColumn](workbooktablecolumn.md)| Получение коллекции объектов TableColumn.|
 |[Создание объекта TableRow](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| Создание объекта TableRow путем добавления в коллекцию строк.|
 |[Список строк](../api/table-list-rows.md) |Коллекция [WorkbookTableRow](tablerow.md)| Получение коллекции объектов TableRow.|
 |[Update](../api/table-update.md) | [WorkbookTable](table.md)   |Обновление объекта Table. |
@@ -56,7 +56,7 @@ ms.locfileid: "36033987"
 ## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|columns|Коллекция [WorkbookTableColumn](tablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
+|columns|Коллекция [WorkbookTableColumn](workbooktablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
 |rows|Коллекция [WorkbookTableRow](tablerow.md)|Представляет коллекцию всех строк в таблице. Только для чтения.|
 |sort|[WorkbookTableSort](tablesort.md)|Представляет сортировку для таблицы. Только для чтения.|
 |worksheet|[WorkbookWorksheet](worksheet.md)|Лист, содержащий текущую таблицу. Только для чтения.|

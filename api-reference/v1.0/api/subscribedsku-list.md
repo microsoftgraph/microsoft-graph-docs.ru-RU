@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bf598c71ea7a3d6ae53ba11ed23259a5f57f0cf8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27d97087b2a788c51dd6e39936ba960938b1ed2f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021454"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729219"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 
@@ -55,7 +55,7 @@ GET /subscribedSkus
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/subscribedSkus
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

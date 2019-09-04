@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 563027b755236827f3cb7b8674114c1fd51f8680
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a1f408029f9c6046e9fda2dd5881d60002111d3f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327409"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36728316"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -90,7 +90,7 @@ CSV-файл содержит столбцы со следующими заго�
   "name": "reportroot_getemailactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserDetail(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

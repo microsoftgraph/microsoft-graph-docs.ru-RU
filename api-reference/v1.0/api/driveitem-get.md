@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение метаданных ресурса DriveItem в объекте Drive по пути в файловой системе или идентификатору.
 doc_type: apiPageType
-ms.openlocfilehash: c024a3441cffeadc67cceca20f24fd0f3ee9b93b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7b405c954998207ef1b8c3112995846f51fafa7a
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375039"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721133"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -71,7 +71,7 @@ GET /users/{userId}/drive/root:/{item-path}
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

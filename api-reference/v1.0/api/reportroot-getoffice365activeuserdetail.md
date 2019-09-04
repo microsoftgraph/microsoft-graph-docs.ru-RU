@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 373a149b652764fff627f7236efe0b4e3975bbce
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 77bcab1728cede1721f28b38aaa5fec075816684
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376086"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729709"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot: getOffice365ActiveUserDetail
 
@@ -103,7 +103,7 @@ CSV-файл содержит столбцы со следующими заго�
   "name": "reportroot_getoffice365activeuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
