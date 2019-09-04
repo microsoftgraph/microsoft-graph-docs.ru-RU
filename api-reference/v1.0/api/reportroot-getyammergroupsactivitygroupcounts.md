@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c36ffa232b1697779aabf16041ff65c3fe25aef6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6dc9c326beaedec0c11f104230b7d762c0f695f5
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347690"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729351"
 ---
 # <a name="reportroot-getyammergroupsactivitygroupcounts"></a>reportRoot: getYammerGroupsActivityGroupCounts
 
@@ -80,7 +80,7 @@ CSV-файл содержит столбцы со следующими заго�
   "name": "reportroot_getyammergroupsactivitygroupcounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityGroupCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

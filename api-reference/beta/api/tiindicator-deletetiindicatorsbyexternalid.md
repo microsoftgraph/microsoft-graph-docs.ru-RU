@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 897bc28bb372f76522a0bfc30dd521610ce7f6a5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2444b1ba887d21fbcfe957e3307bf27ae8c6e52c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421262"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724332"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>Тииндикатор: Делететииндикаторсбекстерналид
 
@@ -52,7 +52,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика.
+В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные [](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) сведения см. в разделе Errors.
 
 ## <a name="examples"></a>Примеры
 

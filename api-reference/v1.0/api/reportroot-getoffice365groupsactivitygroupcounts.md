@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 1558215c08162119a3918233e86595be58b05d22
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 27d3f6ac4dcdbc0fca92eb87deccef17626c050f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373707"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729681"
 ---
 # <a name="reportroot-getoffice365groupsactivitygroupcounts"></a>reportRoot: getOffice365GroupsActivityGroupCounts
 
@@ -80,7 +80,7 @@ CSV-файл содержит столбцы со следующими заго�
   "name": "reportroot_getoffice365groupsactivitygroupcounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityGroupCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
