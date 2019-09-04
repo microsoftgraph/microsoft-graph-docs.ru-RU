@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: d71976dabe415174179e2cba5818a7ca31c84af3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82ec04d063899c91ea010730492654fed5ac9dd0
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034498"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730346"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -36,15 +36,17 @@ Microsoft Graph Security API включает указанные ниже клю
 |[Центр безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Advanced Threat Protection в Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-simulations)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Расширенная защита от угроз Azure](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) *| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Advanced Threat Protection в Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) *| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Расширенная защита от угроз Azure](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |Office 365 <ul><li> [По умолчанию](https://docs.microsoft.com/ru-RU/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/ru-RU/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **Примечание.** К экосистеме безопасности Microsoft Graph постоянно подключаются новые поставщики. Чтобы запросить новых поставщиков или дополнительную поддержку у существующих поставщиков, [уведомите о проблеме в репозитории GitHub для Microsoft Graph Security](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* Оповещения расширенной защиты от угроз Azure доступны в рамках интеграции Microsoft Cloud App Security. Это означает, что вы будете получать оповещения расширенной защиты от угроз Azure только в том случае, если вы присоединились к [программе предварительной оценки комплексного решения SecOps](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) и подключили расширенную защиту от угроз Azure к Microsoft Cloud App Security.
+\* Для службы Advanced Threat Protection в Защитнике Windows (WDATP) требуются дополнительные [роли пользователей](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) по сравнению с требованиями Microsoft Graph Security API. Поэтому только пользователи с обеими ролями (WDATP и Microsoft Graph Security API) смогут получить доступ к данным WDATP.  Это ограничение не распространяется на проверку подлинности только для приложений, поэтому рекомендуется использовать маркер проверки подлинности только для приложений.
+
+\*\* Оповещения расширенной защиты от угроз Azure доступны в рамках интеграции Microsoft Cloud App Security. Это означает, что вы будете получать оповещения расширенной защиты от угроз Azure только в том случае, если вы присоединились к [программе предварительной оценки комплексного решения SecOps](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) и подключили расширенную защиту от угроз Azure к Microsoft Cloud App Security.
 
 ## <a name="secure-score"></a>Оценка безопасности
 
