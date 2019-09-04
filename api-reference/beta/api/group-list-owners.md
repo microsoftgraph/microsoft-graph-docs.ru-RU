@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 952ecaa95305f28f802f9c48f442875ab5074cb9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ff45d17a039b1c1295dea1410acff7ed1c73612
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420184"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720545"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -23,9 +23,9 @@ ms.locfileid: "36420184"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All и User.ReadBasic.All, Group.Read.All и User.Read.All, Group.Read.All и User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Group.Read.All и User.Read.All, Group.Read.All и User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ GET /groups/{id}/owners
   "blockType": "request",
   "name": "group_get_owners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/owners
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

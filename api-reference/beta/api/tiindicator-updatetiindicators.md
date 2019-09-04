@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fa2cc1375a76ab1ccf0f5be86c46c6fc26d50578
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 60fe988ebf9299fa41b45bc02b26f0d39ad9122c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409284"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36724346"
 ---
 # <a name="tiindicator-updatetiindicators"></a>Тииндикатор: Упдатетииндикаторс
 
@@ -52,7 +52,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.  При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные [](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) сведения см. в разделе Errors.
 
 ## <a name="examples"></a>Примеры
 
