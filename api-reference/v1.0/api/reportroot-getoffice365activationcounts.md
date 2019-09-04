@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 43df5c8bc681fae23493c8a578b95e894fed107d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 370e4de77398f4894410494cb16ad06efe1bc524
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327194"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729723"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -74,7 +74,7 @@ CSV-файл содержит столбцы со следующими заго�
   "name": "reportroot_getoffice365activationcounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationCounts
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

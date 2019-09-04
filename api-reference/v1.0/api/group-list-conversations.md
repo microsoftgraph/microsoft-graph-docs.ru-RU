@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6077cf4032c19ee35e43b0f4a69b0f385fb455ae
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a70cfb3583981562e26cc41d00ad43e7a7e5f370
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337309"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726797"
 ---
 # <a name="list-conversations"></a>Список бесед
 Получение списка объектов [conversation](../resources/conversation.md) в этой группе.
@@ -53,7 +53,7 @@ GET /groups/{id}/conversations
   "blockType": "request",
   "name": "get_conversations"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/conversations
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

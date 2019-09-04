@@ -3,12 +3,12 @@ title: 'Получение добавочных изменений для соб
 description: 'Представление календаря — это коллекция событий в диапазоне дат и времени из календаря по умолчанию (../me/calendarview) '
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: f63f15fe30ea92e237467ac2d73f50345b3d8379
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3d1f2f377f2a9115c092b8fa9aa9cb47a5795540
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881189"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730304"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Получение добавочных изменений для событий в представлении календаря 
 
@@ -76,7 +76,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
   "blockType": "request",
   "name": "get_calendarview_delta_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -186,7 +186,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_calendarview_delta_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -297,7 +297,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_calendarview_delta_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -384,7 +384,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_calendarview_delta_next"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```

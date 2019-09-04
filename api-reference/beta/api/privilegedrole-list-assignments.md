@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2ba85e34a3ce89c072f6a2d955c10505e30eb318
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a95a67a3977797e76c4ff0baaee796fa7eaaee0b
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412805"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36725579"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -61,7 +61,7 @@ GET /privilegedRoles/{id}/assignments
   "blockType": "request",
   "name": "get_assignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6042fb1c9901f37d08757cd6b376917966749f59
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7486f06f9bfe241265d1ec92f88e8a9bdb4c55c8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373826"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727029"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -70,7 +70,7 @@ GET /directory/deletedItems/microsoft.graph.user
   "blockType": "request",
   "name": "get_deleteditems"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

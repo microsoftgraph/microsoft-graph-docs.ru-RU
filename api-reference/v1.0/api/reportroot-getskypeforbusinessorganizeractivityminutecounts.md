@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c23afba1a6c6fb89c217f01c0c44d738e952c0b7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f02f1eb78f7452f62378742f192c7023f4f037fd
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349225"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729499"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 
@@ -81,7 +81,7 @@ CSV-файл содержит столбцы со следующими заго�
   "name": "reportroot_getskypeforbusinessorganizeractivityminutecounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessOrganizerActivityMinuteCounts(period='D7')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

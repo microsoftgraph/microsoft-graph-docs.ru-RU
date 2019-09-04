@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 07dbcd2e900ced3fe235300cfab2b4922ddccc9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f4359b712f183ffc634e079aea0d61094a2b013
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007076"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726713"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>Тип ресурса Воркбуктаблеколумн
 
@@ -23,29 +23,29 @@ ms.locfileid: "36007076"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта TableColumn](../api/tablecolumn-get.md) | [Воркбуктаблеколумн](workbooktablecolumn.md) |Чтение свойств и связей объекта tableColumn.|
-|[Обновление](../api/tablecolumn-update.md) | [Воркбуктаблеколумн](workbooktablecolumn.md) |Обновление объекта TableColumn. |
+|[Получение объекта TableColumn](../api/tablecolumn-get.md) | [воркбуктаблеколумн](workbooktablecolumn.md) |Чтение свойств и связей объекта tableColumn.|
+|[Обновление](../api/tablecolumn-update.md) | [воркбуктаблеколумн](workbooktablecolumn.md) |Обновление объекта TableColumn. |
 |[Databodyrange](../api/tablecolumn-databodyrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный с основными данными столбца.|
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой заголовков столбца.|
 |[Range](../api/tablecolumn-range.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со всем столбцом.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой итогов столбца.|
 |[Удаление](../api/tablecolumn-delete.md)|Нет|Удаляет столбец из таблицы.|
 |[Список](../api/tablecolumn-list.md) | Коллекция [воркбуктаблеколумн](workbooktablecolumn.md) |Получение коллекции объектов tableColumn. |
-|[Itemat](../api/tablecolumncollection-itemat.md)|[Воркбуктаблеколумн](workbooktablecolumn.md)|Возвращает столбец на основании его позиции в коллекции.|
-|[Add](../api/tablecolumncollection-add.md)|[Воркбуктаблеколумн](workbooktablecolumn.md)|Добавляет новый столбец в таблицу.|
+|[Itemat](../api/tablecolumncollection-itemat.md)|[воркбуктаблеколумн](workbooktablecolumn.md)|Возвращает столбец на основании его позиции в коллекции.|
+|[Add](../api/tablecolumncollection-add.md)|[воркбуктаблеколумн](workbooktablecolumn.md)|Добавляет новый столбец в таблицу.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|int|Возвращает уникальный ключ, идентифицирующий столбец в таблице. Только для чтения.|
 |index|int|Возвращает номер индекса столбца в коллекции столбцов таблицы. Используется нулевой индекс. Только для чтения.|
-|name|string|Возвращает имя столбца таблицы. Только для чтения.|
+|name|string|Возвращает имя столбца таблицы.|
 |values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|filter|[Воркбукфилтер](workbookfilter.md)|Возвращает фильтр, применяемый к столбцу. Только для чтения.|
+|filter|[воркбукфилтер](workbookfilter.md)|Возвращает фильтр, применяемый к столбцу. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

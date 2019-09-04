@@ -7,12 +7,12 @@ description: В этой статье рассказывается, как со�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e7aa64a1ef51b3c374a7ea947818685691811f44
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 78d08603ff367635b21d2518d3fa8b68b0210aba
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408719"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719236"
 ---
 # <a name="enumerate-activities-preview"></a>Перечисление действий (ознакомительная версия)
 
@@ -53,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

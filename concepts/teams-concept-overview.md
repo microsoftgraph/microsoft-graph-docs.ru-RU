@@ -4,12 +4,12 @@ description: 'Microsoft Teams — это единый центр для раб�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: da9999a0719d190950adf20bc119044366126f24
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d269408bc01036830e85be04fbaec3a07b2a6f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621223"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730332"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -40,7 +40,7 @@ ms.locfileid: "33621223"
 Разрешите пользователям создавать новые [команды](/graph/api/resources/team?view=graph-rest-1.0) и [каналы](/graph/api/resources/channel?view=graph-rest-1.0). 
 [Установите ](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) ваше [приложение Teams](https://docs.microsoft.com/ru-RU/microsoftteams/platform/#pivot=home&panel=home-all) в новых командах. 
 [Закрепите приложение на вкладке](/graph/api/teamstab-add?view=graph-rest-1.0) в новом канале. 
-[Отправляйте сообщения](/graph/api/channel-post-chatmessage?view=graph-rest-beta) в канал со ссылкой, возвращающей на ваш веб-сайт.
+[Отправляйте сообщения](/graph/api/channel-post-messages?view=graph-rest-beta) в канал со ссылкой, возвращающей на ваш веб-сайт.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Создание нескольких команд и каналов и управление ими
 
