@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 1344312ded838f2c2828599092cc3392543d2d4d
+ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622651"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36758288"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -40,6 +40,10 @@ ms.locfileid: "36622651"
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>Отзыв сеансов входа возвращает неправильный код HTTP
 
 [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) должен возвращать ответ `204 No content` в случае успешного отзыва и код ошибки HTTP (4xx или 5xx), если запрос не выполнен.    Однако из-за проблемы со службой этот API возвращает `200 OK` и логический параметр, который всегда правильный.  Пока проблема не будет устранена, разработчикам рекомендуется просто интерпретировать код возврата 2xx как успешное выполнение запроса к этому API.
+
+### <a name="incomplete-objects-when-using-getbyids-request"></a>Неполные объекты при использовании запроса getByIds
+
+При запросе объектов с помощью [получения объектов каталога из списка идентификаторов](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) должны возвращаться полные объекты. Однако в настоящее время объекты [user](/graph/api/resources/user?view=graph-rest-1.0) в конечной точке версии 1.0 возвращаются с ограниченным набором свойств. Временное решение: возврат более полных объектов [user](/graph/api/resources/user?view=graph-rest-1.0) обеспечивается при использовании операции в сочетании с параметром запроса `$select`. Это поведение не соответствует спецификациям OData. Так как это поведение может быть изменено в будущем, используйте это временное решение только при указании в параметре `$select=` всех нужных свойств и только если допускается внесение существенных изменений в это временное решение.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
