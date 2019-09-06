@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9662c2abc3b5ef2325b0d3b7a23a0e10d4acff65
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9d69526f4b953c451da9253a176acf9b446fcd2f
+ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409417"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775541"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -81,6 +81,9 @@ Content-length: 81
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+> [!NOTE]
+> Если вы хотите обновить несколько полей столбца, сделайте **значения** массивом строк в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
