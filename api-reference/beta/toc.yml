@@ -9731,7 +9731,7 @@
             - name: Группа задач Outlook
               href: resources/outlooktaskgroup.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/outlookuser-list-taskgroups.md
                 - name: Создание
                   href: api/outlookuser-post-taskgroups.md
@@ -9808,6 +9808,19 @@
                   href: api/workbook-list-worksheets.md
                 - name: Перечисление имен
                   href: api/workbook-list-names.md
+            - name: Комментарии к книге
+              href: resources/workbookcomment.md
+              items:
+                - name: Перечисление
+                  href: api/workbook-list-comments.md
+                - name: Получение
+                  href: api/workbookcomment-get.md
+                - name: Список ответов
+                  href: api/workbookcomment-list-replies.md
+                - name: Создание ответа
+                  href: api/workbookcomment-post-replies.md
+                - name: Получение ответа
+                  href: workbookcommentreply-get.md
             - name: Лист
               href: resources/workbookworksheet.md
               items:
