@@ -5,81 +5,81 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1fdbb43af03cba4ca1b549e51aee1a0745201bfb
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: dc5b51c7266b5d072dd74a242e4e15f4530c7b17
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720139"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792382"
 ---
-# <a name="get-call"></a><span data-ttu-id="46feb-103">Получение вызова</span><span class="sxs-lookup"><span data-stu-id="46feb-103">Get call</span></span>
+# <a name="get-call"></a><span data-ttu-id="dcd7f-103">Получение вызова</span><span class="sxs-lookup"><span data-stu-id="dcd7f-103">Get call</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="46feb-104">Получение свойств и связей объекта Call.</span><span class="sxs-lookup"><span data-stu-id="46feb-104">Retrieve the properties and relationships of a call object.</span></span>
+<span data-ttu-id="dcd7f-104">Получение свойств и связей объекта Call.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-104">Retrieve the properties and relationships of a call object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="46feb-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="46feb-105">Permissions</span></span>
-<span data-ttu-id="46feb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46feb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dcd7f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dcd7f-105">Permissions</span></span>
+<span data-ttu-id="dcd7f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dcd7f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="46feb-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="46feb-108">Permission type</span></span> | <span data-ttu-id="46feb-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="46feb-109">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="dcd7f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dcd7f-108">Permission type</span></span> | <span data-ttu-id="dcd7f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dcd7f-109">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="46feb-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="46feb-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="46feb-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46feb-111">Not Supported.</span></span>                         |
-| <span data-ttu-id="46feb-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="46feb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46feb-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46feb-113">Not Supported.</span></span>                         |
-| <span data-ttu-id="46feb-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="46feb-114">Application</span></span>                            | <span data-ttu-id="46feb-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="46feb-115">None.</span></span>                                  |
+| <span data-ttu-id="dcd7f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dcd7f-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="dcd7f-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-111">Not Supported.</span></span>                         |
+| <span data-ttu-id="dcd7f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dcd7f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dcd7f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="dcd7f-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="dcd7f-114">Application</span></span>                            | <span data-ttu-id="dcd7f-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-115">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="46feb-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="46feb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dcd7f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dcd7f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
-GET /applications/{id}/calls/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="46feb-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="46feb-117">Optional query parameters</span></span>
-<span data-ttu-id="46feb-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="46feb-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dcd7f-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="dcd7f-117">Optional query parameters</span></span>
+<span data-ttu-id="dcd7f-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="46feb-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="46feb-119">Request headers</span></span>
-| <span data-ttu-id="46feb-120">Имя</span><span class="sxs-lookup"><span data-stu-id="46feb-120">Name</span></span>          | <span data-ttu-id="46feb-121">Описание</span><span class="sxs-lookup"><span data-stu-id="46feb-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="dcd7f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dcd7f-119">Request headers</span></span>
+| <span data-ttu-id="dcd7f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="dcd7f-120">Name</span></span>          | <span data-ttu-id="dcd7f-121">Описание</span><span class="sxs-lookup"><span data-stu-id="dcd7f-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="46feb-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="46feb-122">Authorization</span></span> | <span data-ttu-id="46feb-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="46feb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dcd7f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="dcd7f-122">Authorization</span></span> | <span data-ttu-id="dcd7f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="46feb-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="46feb-125">Request body</span></span>
-<span data-ttu-id="46feb-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="46feb-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dcd7f-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dcd7f-125">Request body</span></span>
+<span data-ttu-id="dcd7f-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="46feb-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="46feb-127">Response</span></span>
-<span data-ttu-id="46feb-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Call](../resources/call.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="46feb-128">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dcd7f-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="dcd7f-127">Response</span></span>
+<span data-ttu-id="dcd7f-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Call](../resources/call.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-128">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="46feb-129">Пример</span><span class="sxs-lookup"><span data-stu-id="46feb-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dcd7f-129">Пример</span><span class="sxs-lookup"><span data-stu-id="dcd7f-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="46feb-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="46feb-130">Request</span></span>
-<span data-ttu-id="46feb-131">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="46feb-131">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="dcd7f-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="dcd7f-130">Request</span></span>
+<span data-ttu-id="dcd7f-131">Приведенный ниже пример вызова показывает запрос на получение однорангового вызова.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-131">The following call example shows the request for getting the peer to peer call.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="46feb-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="46feb-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="dcd7f-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="dcd7f-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="46feb-133">C#</span><span class="sxs-lookup"><span data-stu-id="46feb-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dcd7f-133">C#</span><span class="sxs-lookup"><span data-stu-id="dcd7f-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="46feb-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="46feb-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dcd7f-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dcd7f-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="46feb-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="46feb-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dcd7f-135">Цель — C</span><span class="sxs-lookup"><span data-stu-id="dcd7f-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="46feb-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="46feb-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="dcd7f-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="dcd7f-136">Response</span></span>
 
-> <span data-ttu-id="46feb-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="46feb-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="dcd7f-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="dcd7f-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -89,108 +89,165 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2821
 
 {
-  "activeModalities": [
-    "unknown"
-  ],
-  "answeredBy": {
+  "@odata.type": "#microsoft.graph.call",
+  "state": "established",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
       }
     },
-    "languageId": "languageId-value",
-    "region": "region-value"
+    "region": null,
+    "languageId": null
   },
-  "callRoutes": [
+  "targets": [
     {
-      "final": {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
       },
-      "original": {
-        "phone": {
-          "id": "+14258828080"
-        }
-      },
-      "routingType": "forwarded"
+      "region": null,
+      "languageId": null
     }
   ],
-  "callbackUri": "callbackUri-value",
-  "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-    "messageId": "0",
-    "replyChainMessageId": "0"
-  },
-  "direction": "incoming",
-  "id": "id-value",
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
   },
-  "meetingCapability": {
-    "allowAnonymousUsersToDialOut": true,
-    "allowAnonymousUsersToStartMeeting": true,
-    "autoAdmittedUsers": "everyoneInCompany"
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+<!-- {
+  "blockType": "example",
+  "name": "get-call"
+}-->
+```http
+GET https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Authorization: Bearer <Token>
+```
+
+##### <a name="response"></a><span data-ttu-id="dcd7f-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="dcd7f-139">Response</span></span>
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "established",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "chatInfo": {
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2",
+    "messageId": "0",
+    "replyChainMessageId": null
   },
   "meetingInfo": {
     "@odata.type": "#microsoft.graph.organizerMeetingInfo",
     "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
+        "@odata.type": "#microsoft.graph.identity",
+        "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "displayName": null
       }
     },
     "allowConversationWithoutHost": true
   },
-  "myParticipantId": "myParticipantId-value",
-  "requestedModalities": [
-    "audio", "video"
-  ],
-  "ringingTimeoutInSeconds": 99,
-  "routingPolicies": [
-    "none"
-  ],
-  "source": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "state": "incoming",
-  "subject": "subject-value",
-  "targets": [
-    {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "languageId": "languageId-value",
-      "region": "region-value"
-    }
-  ],
-  "tenantId": "tenantId-value",
-  "terminationReason": "terminationReason-value",
-  "toneInfo": {
-    "sequenceId": 99,
-    "tone": "tone0"
-  }
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
+  "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "subject": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "meetingCapability": null,
+  "toneInfo": null
 }
 ```
 
