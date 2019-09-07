@@ -3,12 +3,14 @@ title: Обзор API Azure AD для управления идентифика
 description: 'Azure Active Directory (Azure AD) помогает централизовать управление идентификацией и доступом и, соответственно, обеспечить безопасный и эффективный доступ между приложениями, устройствами, службами и инфраструктурой. С помощью Azure AD организации могут управлять идентификацией и доступом в локальной, гибридной и облачной средах.  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: bd4c71d1cada7badc15178580fd33edfd0e8cc8b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.prod: microsoft-identity-platform
+scenarios: getting-started
+ms.openlocfilehash: 9ed9857ccba80c416386a9cff0d36d8e9ca0ce8f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951266"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792984"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Обзор API Azure AD для управления идентификацией и доступом
 

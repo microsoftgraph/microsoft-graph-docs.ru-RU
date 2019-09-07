@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699234"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792956"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -216,6 +216,17 @@ ms.locfileid: "36699234"
 | Дополнение | Бета | Добавлен ресурс [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta). |
 | Дополнение | Бета | Добавлены новые методы для ресурса [user](/graph/api/resources/user?view=graph-rest-beta), позволяющие использовать следующие методы с личными приложениями для пользователей: <br>[Перечисление приложений, установленных для пользователя](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Установка приложения для пользователя](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Удаление приложения для пользователя](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Обновление приложения, установленного для пользователя](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
+### <a name="calls-and-online-meetings"></a>Звонки и собрания по сети 
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | бета        | Добавлено свойство **mediaState** для ресурса [call](/api-reference/beta/resources/call.md)|
+| Изменение          | бета        | Свойство **recordResourceLocation** в ресурсе [recordOperation](/api-reference/beta/resources/recordOperation.md) переименовано на **recordingLocation**|
+| Изменение          | Бета-версия        | Свойство **recordResourceAccessToken** в ресурсе [recordOperation](/api-reference/beta/resources/recordOperation.md) переименовано на **recordingAccessToken**|
+| Дополнение        | Бета-версия        | Добавлено свойство **capabilities** для ресурса [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
+| Дополнение        | бета        | Добавлено свойство **videoTeleconferenceId** для ресурса [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) |
+| Дополнение        | бета        | Добавлено свойство **producers** для ресурса [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) |
+| Дополнение        | бета        | Добавлено свойство **contributors** для ресурса [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) |
 
 ## <a name="june-2019"></a>Июнь 2019 г.
 
@@ -1899,7 +1910,7 @@ ms.locfileid: "36699234"
 |Дополнение|1.0|Добавлено действие [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [sendTestMessage](/graph/api/intune-notification-notificationmessagetemplate-sendtestmessage?view=graph-rest-1.0) для объекта [notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0) для объекта [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-1.0). |
-|Дополнение|Версия 1.0|Добавлено действие [beginOnboarding](/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0) для объекта [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0). |
+|Дополнение|1.0|Добавлено действие [beginOnboarding](/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0) для объекта [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [disconnect](/graph/api/intune-remoteassistance-remoteassistancepartner-disconnect?view=graph-rest-1.0) для объекта [remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0). |
 |Дополнение|1.0|Добавлена функция [downloadApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-1.0) для объекта [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлена функция [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-1.0) для объекта [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-1.0). |
@@ -2895,7 +2906,7 @@ ms.locfileid: "36699234"
 | Дополнение        | Бета-версия        | Добавлена функция [deviceConfigurationUserActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationuseractivity?view=graph-rest-beta) к объекту [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [deviceConfigurationDeviceActivity](/graph/api/intune-deviceconfig-reportroot-deviceconfigurationdeviceactivity?view=graph-rest-beta) к объекту [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta). |
 | Удаление        | Бета-версия        | Удалены следующие сложные типы:<br/>**enterpriseCloudResource**;<br/>**windowsInformationProtectionAppRule**;<br/>**windowsInformationProtectionAppRuleAppLockerPolicyFileTemplate**<br/>**windowsInformationProtectionAppRuleDesktopTemplate**<br/>**windowsInformationProtectionAppRuleStoreAppTemplate**<br/>**windowsInformationProtectionAppRuleTemplate**<br/>**windowsInformationProtectionCorporateNetworkLocation**<br/>**windowsInformationProtectionProtectedLocation**;<br/>**windowsInformationProtectionProtectedLocationEnterpriseCloudResources**<br/>**windowsInformationProtectionProtectedLocationEnterpriseInternalProxyServers**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv4Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseIPv6Ranges**<br/>**windowsInformationProtectionProtectedLocationEnterpriseNetworkDomainNames**<br/>**windowsInformationProtectionProtectedLocationEnterpriseProxyServers**<br/>**windowsInformationProtectionProtectedLocationNeutralResources**<br/> |
-| Изменение          | Бета-версия        | Добавлено свойство **deviceSharingAllowed** к объекту [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
+| Изменение          | бета        | Добавлено свойство **deviceSharingAllowed** к объекту [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Удалено **deviceSharingBlocked** свойство из объекта [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **minimumRequiredSdkVersion** к объекту [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлено свойство **windowsManagementAppEnabled** к объекту [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta). |

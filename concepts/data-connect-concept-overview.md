@@ -4,12 +4,13 @@ description: Подключение к данным Microsoft Graph предос
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 4f04a48119ecd4da282a0235d0f321aa769cba31
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+scenarios: getting-started
+ms.openlocfilehash: 212f530ff8e2589dcd4c913d0e4b2c7684d18f8a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599802"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792935"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Обзор подключения к данным Microsoft Graph
 Microsoft Graph содержит разнообразные данные о сотрудниках и их рабочих местах, включая сведения о том, как люди работают, общаются, выполняют совместные задания и управляют своим временем. Подключение к данным Microsoft Graph предоставляет набор инструментов для упрощения доставки данных в Microsoft Azure, что обеспечивает доступ к наилучшим средствам разработки и размещения для работы с этими данными. Это позволяет клиентам использовать преимущества инновационных или отраслевых приложений, которые повышают производительность и обеспечивают полный контроль над данными Microsoft Graph. Корпорация Майкрософт также предлагает более безопасные средства управления, ожидаемые клиентами.

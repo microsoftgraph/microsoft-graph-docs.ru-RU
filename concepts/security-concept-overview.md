@@ -4,22 +4,21 @@ description: С помощью API безопасности Microsoft Graph мо
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
-ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
+scenarios: getting-started
+ms.openlocfilehash: 7b12653382f88a3b16c370044fc3cb770aa2ac36
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35607394"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792970"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 
 С помощью API безопасности Microsoft Graph можно подключаться к продуктам Майкрософт по обеспечению безопасности, службам и партнерам, чтобы упростить операции обеспечения безопасности и улучшить защиту от угроз, их обнаружение и возможности реагирования. API безопасности Microsoft Graph является промежуточной службой (или посредником), предоставляющей единый программный интерфейс для подключения нескольких [поставщиков безопасности Microsoft Graph](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (также называемых поставщиками безопасности или поставщиками). Запросы к API безопасности Microsoft Graph включаются в федерацию для всех соответствующих поставщиков безопасности. Результаты объединяются и возвращаются запрашивающему приложению в общей схеме, как показано на рисунке ниже. Подробные сведения см. в статье [Поток данных API безопасности Microsoft Graph](security-dataflow.md).
 
-
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 Сведения об авторизации см. в статье [Авторизация и API безопасности Microsoft Graph](security-authorization.md). Сведения о разрешениях, в том числе делегированных и для приложений, см. в [справочнике по разрешениям](permissions-reference.md#security-permissions).
-
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -35,7 +34,7 @@ ms.locfileid: "35607394"
 
 ### <a name="unify-and-standardize-alert-tracking"></a>Объединение и стандартизация отслеживания оповещений
 
-Достаточно один раз выполнить подключение, чтобы интегрировать оповещения из любого решения для обеспечения безопасности, интегрированного с Microsoft Graph, и состояние оповещений и назначения будут синхронизированы между всеми решениями. Вы также можете выполнять потоковую передачу оповещений в решения для управления информационной безопасностью и событиями безопасности (SIEM), такие как Splunk и IBM QRadar, через [Azure Monitor](https://docs.microsoft.com/ru-RU/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). Подробные сведения об интеграции SIEM с объектами API безопасности см. в статье [Интеграция с SIEM](security-siemintegration.md).
+Достаточно один раз выполнить подключение, чтобы интегрировать оповещения из любого решения для обеспечения безопасности, интегрированного с Microsoft Graph, и состояние оповещений и назначения будут синхронизированы между всеми решениями. Вы также можете выполнять потоковую передачу оповещений в решения для управления информационной безопасностью и событиями безопасности (SIEM), такие как Splunk, с помощью соединителей API безопасности Microsoft Graph. Дополнительные сведения об интеграции решений с объектами API безопасности см. в статье [Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API](security-integration.md).
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>Корреляция оповещений системы безопасности для улучшения защиты от угроз и отклика
 

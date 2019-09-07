@@ -4,12 +4,13 @@ description: Microsoft Bookings — это приложения для брау�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: bookings
-ms.openlocfilehash: af9fa2b993a3ed4a55c5c526f31e0582b18ea837
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+scenarios: getting-started
+ms.openlocfilehash: 83322a2b1343e71f43cd8196ed7484e463ec6ecd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570294"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792949"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 
@@ -41,6 +42,6 @@ Microsoft Bookings — это приложения для браузера и м
 
 Дополнительные сведения:
 
-- [Microsoft Bookings](https://support.office.com/ru-RU/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/ru-RU/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/ru-RU/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Использование API Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) в Microsoft Graph.
 

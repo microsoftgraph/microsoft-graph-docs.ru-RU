@@ -3,12 +3,13 @@ title: 'Справочник по разрешениям Microsoft Graph '
 description: Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Вы как разработчик указываете, какие разрешения для Microsoft Graph должно запрашивать ваше приложение.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: bd3f87afdf7aa9b110dd02e9798705a8acbe1c3f
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+scenarios: getting-started
+ms.openlocfilehash: ffe6ac986d3b8518d11e50ca948478e26ffa0f8b
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667549"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792921"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
