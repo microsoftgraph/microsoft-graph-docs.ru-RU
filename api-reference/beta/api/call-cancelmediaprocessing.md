@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fb14e485efdcb11b7863be540505f4d37f6871f5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4cbadbafe054ceefc74e7bc057d6d5ef1218280e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419008"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792459"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
 
@@ -31,7 +31,6 @@ ms.locfileid: "36419008"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/cancelMediaProcessing
-POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,8 +43,8 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 | Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| ко            | Boolean | Флаг, указывающий, следует ли остановить все операции или текущие. |
-| Контекст  | String  | Контекст клиента.                                            |
+| ко            | Boolean. | Флаг, указывающий, следует ли остановить все операции или текущие. |
+| Контекст  | String.  | Контекст клиента.                                            |
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.

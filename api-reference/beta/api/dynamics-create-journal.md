@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6eae175fe8f9de73ba9db7d8b05bf4217d7a9a36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a60bca82ca5bf4faa0bb69e53f154d145670219
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956641"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791969"
 ---
 # <a name="create-journals"></a>Создание журналов
 Создает журнал в Dynamics 365 Business Central. 
@@ -29,7 +29,7 @@ ms.locfileid: "35956641"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-POST /financials/companies('{id}')/journals('{id}')
+POST /financials/companies/{id}/journals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,7 +54,7 @@ POST /financials/companies('{id}')/journals('{id}')
 Ниже приведен пример запроса.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/journals
+POST https://graph.microsoft.com/beta/financials/companies/{id}/journals
 Content-type: application/json
 
 ```json

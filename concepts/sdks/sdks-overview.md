@@ -3,12 +3,13 @@ title: Общие сведения о пакетах SDK Microsoft Graph
 description: Описывает доступные пакеты SDK, Поддерживаемые платформы и значения, которые они предоставляют разработчикам.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: deab2aac6f087f82c8f383f1aa0bed65e09a08fd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+scenarios: getting-started
+ms.openlocfilehash: 86641c78a4f1c7b6f14a1e1fd07f52e4ca9d87ef
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630176"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792893"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Общие сведения о пакетах SDK Microsoft Graph
 
@@ -29,7 +30,7 @@ ms.locfileid: "33630176"
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
 - [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
 - [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
-- [Язык](https://developer.microsoft.com/en-us/graph/get-started/javascript)
+- [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
 - [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
@@ -42,4 +43,4 @@ ms.locfileid: "33630176"
 
 ## <a name="see-also"></a>См. также
 
-[Документация по требованиям](https://github.com/microsoftgraph/msgraph-sdk-design) по проектированию SDK содержит более подробные сведения о возможностях и возможностях SDK. Запрос или голосование за дополнительные функции на сайте [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) . Список пакетов SDK и примеров для Microsoft Graph представлен на [странице ресурсы Microsoft Graph](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).
+[Документация по требованиям по проектированию](https://github.com/microsoftgraph/msgraph-sdk-design) SDK содержит более подробные сведения о возможностях и возможностях SDK. Запрос или голосование за дополнительные функции на сайте [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) . Список пакетов SDK и примеров для Microsoft Graph представлен на [странице ресурсы Microsoft Graph](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).

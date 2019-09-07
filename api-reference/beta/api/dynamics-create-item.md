@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: db6622a6f58bb4fb84a19b56b62f20d305fc74f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 744b1d13af8b91b6994164bb03cae27926ad5335
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956669"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792011"
 ---
 # <a name="create-items"></a>Создание элементов
 Создание элемента в Dynamics 365 Business Central для использования в счетах, квотах и т. д.
@@ -28,7 +28,7 @@ ms.locfileid: "35956669"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-POST /financials/companies('{id}')/items
+POST /financials/companies/{id}/items
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ POST /financials/companies('{id}')/items
 Ниже приведен пример запроса.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/items
+POST https://graph.microsoft.com/beta/financials/companies/{id}/items
 Content-type: application/json
 
 {

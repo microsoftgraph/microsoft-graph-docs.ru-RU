@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 89db4f4b3a1178c3de56c34340d00edbf8efb6e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0752262adbeae619bf24e8056e3c8f369654ea1b
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955857"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791185"
 ---
 # <a name="get-unitsofmeasure"></a>Получение Унитсофмеасуре
 Получение свойств и связей объекта единиц измерения для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35955857"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-GET /financials/companies('{id}')/unitsOfMeasure('{id}')
+GET /financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/unitsOfMeasure('{id}')
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{id}
 ```
 
 **Отклик**

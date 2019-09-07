@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c9b51a4291adfc6e446c428989aaa04b7540453d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cedeaa7d15b87d0a667d7602138157fa5a7b32dd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956333"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791633"
 ---
 # <a name="get-dimensionvalues"></a>Получение Дименсионвалуес
 Получение свойств и связей объекта значения измерения для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956333"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-GET /financials/companies('{id}')/dimensions('{id}')/dimensionValues('{id}')
+GET /financials/companies/{id}/dimensions/{id}/dimensionValues/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/dimensions('{id}')/dimensionValues('{id}')
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/dimensions('{id}')/dimensionValues('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}/dimensionValues/{id}
 ```
 
 **Отклик**

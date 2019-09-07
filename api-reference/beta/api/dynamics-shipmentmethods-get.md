@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 956cc594d7dd4912f5a9c7e5f48c5528c235999f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b093ed2c086b3ad52ef92bd86629b726d026153a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955997"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791332"
 ---
 # <a name="get-shipmentmethods"></a>Получение Шипментмесодс
 Получение свойств и связей объекта метода отгрузки для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35955997"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-GET /financials/companies('{id}')/shipmentMethods('{id}')
+GET /financials/companies/{id}/shipmentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/shipmentMethods('{id}')
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/shipmentMethods('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 ```
 
 **Отклик**

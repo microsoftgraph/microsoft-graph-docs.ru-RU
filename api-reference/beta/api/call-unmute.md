@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a20b07e2cccb54b069a61ad9a927037481700813
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 161daadfc42213ed5b15c0de4e80e2f722ef8115
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418847"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792536"
 ---
 # <a name="call-unmute"></a>вызов: включение звука
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418847"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/unmute
-POST /applications/{id}/calls/{id}/unmute
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,7 +43,7 @@ POST /applications/{id}/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Контекст|String|Контекст клиента.|
+|Контекст|String.|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.

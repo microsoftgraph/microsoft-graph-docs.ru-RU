@@ -6,12 +6,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 621fe92d598894589cf39cb0371830792560ae6b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da711f4e7ce186814d5e5c33870ed908a853a5c6
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956711"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792074"
 ---
 # <a name="create-customerpayments"></a>Создание Кустомерпайментс
 Создает объект платежа клиента в Dynamics 365 Business Central.
@@ -27,7 +27,7 @@ ms.locfileid: "35956711"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-POST /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ POST /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayme
 Ниже приведен пример запроса.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournal('{id}')/customerPayments
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournal/{id}/customerPayments
 Content-type: application/json
 
 {

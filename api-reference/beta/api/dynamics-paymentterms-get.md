@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c65e38849520c7f0c67cf2c3e642cd39fcda0594
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: efecba2c4a1432dfa9e16d3942f57c872f34367d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956046"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791367"
 ---
 # <a name="get-paymentterms"></a>Получение Пайменттермс
 Получение свойств и связей объекта условий оплаты для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956046"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-GET /financials/companies('{id}')/paymentTerms('{id}')
+GET /financials/companies/{id}/paymentTerms/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/paymentTerms('{id}')
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
 **Отклик**

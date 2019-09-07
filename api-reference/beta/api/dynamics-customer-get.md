@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d60570b92d16163f2e97c3e0944a6d19236cce9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a71b18110e6fc439aa7545b7c2c1fb1d4501b980
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956459"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791787"
 ---
 # <a name="get-customers"></a>Получение клиентов
 Получение свойств и связей объекта Customer для Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35956459"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-GET /financials/companies('{id}')/customers('{id}')
+GET /financials/companies/{id}/customers/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -50,7 +50,7 @@ GET /financials/companies('{id}')/customers('{id}')
 Ниже приведен пример запроса.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/customers('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
 **Отклик**

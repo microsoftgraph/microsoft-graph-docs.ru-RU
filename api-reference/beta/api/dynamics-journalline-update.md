@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: aa5f11574769e1a9b171353dd27afb5ef02e5ea1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b7a60418d1a322b3d2997c1889f7280acd7810d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956109"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791423"
 ---
 # <a name="update-journallines"></a>Обновление Жаурналлинес
 Обновление свойств объекта строк журнала для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956109"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-PATCH /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+PATCH /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,7 +54,7 @@ PATCH /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
 
 Ниже приведен пример запроса.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 Content-type: application/json
 
 {
