@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 1344312ded838f2c2828599092cc3392543d2d4d
-ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
+ms.openlocfilehash: 4895dd81a14369d5756d59ee95451f5942e246dc
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36758288"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792760"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 При использовании следующей операции для доступа к событиям в календаре другого пользователя:
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 Может возникнуть ошибка HTTP 500 `ErrorInternalServerTransientError`. Ошибка возникает, потому что:
@@ -147,7 +147,7 @@ GET \users('{id}')\calendars('{id}')\events
 Календарь, доступ к которому предоставлен новым способом, выглядит как один из стандартных календарей в вашем почтовом ящике. С помощью REST API календаря можно просматривать и редактировать события в общем календаре, как в своем собственном. Например:
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Добавление календарей ICS в почтовый ящик пользователя и доступ к ним

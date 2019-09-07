@@ -3,12 +3,13 @@ title: Настройка ответов с помощью параметров 
 description: В Microsoft Graph предусмотрены необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддерживаются указанные ниже параметры запросов.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 26f765f2537bda8c29a6c25c9352da3558d78f9a
-ms.sourcegitcommit: 0e1101d499f35b08aa2309e273871438b1774979
+scenarios: getting-started
+ms.openlocfilehash: 8be66640c69177d537d81b77fd43e3c2dd139cda
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35273803"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792907"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -250,14 +251,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 Дополнительные сведения о доступных для поиска свойствах, синтаксисе KQL, поддерживаемых операторах и подсказках для поиска вы найдете в таких статьях:
 
-- 
-  [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
+- [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
-- 
-  [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/ru-RU/library/dn774955(v=exchg.160).aspx).
+- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 

@@ -3,12 +3,13 @@ title: 'Включение интерфейсов уведомлений, ори
 description: 'Уведомления — один из наиболее эффективных способов взаимодействия с пользователями вашего приложения. Отличный интерфейс уведомлений может создать канал общения между вами и пользователями вашего приложения практически в режиме реального времени, что может повышать уровень взаимодействия с приложением в нужный момент, помогать пользователям увеличивать производительность и уведомлять их о важных событиях или требующихся своевременных действиях. '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: b83e91be74de44dbd72315331964379992b811de
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+scenarios: getting-started
+ms.openlocfilehash: 06d07b7ae8d8f228ab6fa8c373b7eaa9aad8f61c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133567"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791031"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Включение интерфейсов уведомлений, ориентированных на человека, с использованием уведомлений Microsoft Graph
 
