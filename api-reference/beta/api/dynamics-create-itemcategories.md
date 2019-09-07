@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d8031b46d8ded0170dae1bcceeac68038fde0e5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf44a683f79192d02ffe87f57b0a9d5d92bc0f27
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956655"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791997"
 ---
 # <a name="create-itemcategories"></a>Создание Итемкатегориес
 Создайте объект категории элемента Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35956655"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-POST /financials/companies('{id}')/itemCategories
+POST /financials/companies/{id}/itemCategories
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/itemCategories
 Ниже приведен пример запроса.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories
+POST https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories
 Content-type: application/json
 
 {

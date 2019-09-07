@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e646169249b128e53c8e2c38e99df2a580ed4b66
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 2214726a474fc30fb2f1acf2f3c34c7eb4b9f39c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718935"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792457"
 ---
 # <a name="get-audio-routing-group"></a>Получение группы маршрутизации звука
 
@@ -31,7 +31,6 @@ ms.locfileid: "36718935"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups/{id}
-GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов

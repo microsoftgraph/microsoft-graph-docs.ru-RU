@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e4797a866124daf3877eac29b93f4cf3608938d9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fd0cf37d37e2e9e903f842a1a61c5c19b905372
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956774"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792053"
 ---
 # <a name="get-countriesregions"></a>Получение Каунтриесрегионс
 Получение свойств и связей объекта Каунтриесрегионс для Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35956774"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-GET /financials/companies('{id}')/countriesRegions('{id}')
+GET /financials/companies/{id}/countriesRegions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,7 +51,7 @@ GET /financials/companies('{id}')/countriesRegions('{id}')
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
 **Отклик**

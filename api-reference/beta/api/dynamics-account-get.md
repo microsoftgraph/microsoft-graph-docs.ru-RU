@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f0441a3c2f9385378e767d721c09cb28e87a5682
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b020d6204a5c99f9b3a49721a3fc327f3314f4f7
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956879"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792235"
 ---
 # <a name="get-accounts"></a>Получение учетных записей
 Получение свойств и связей объекта Account для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956879"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-GET /financials/companies('{id}')/accounts('{id}')
+GET /financials/companies/{id}/accounts/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,7 +51,7 @@ GET /financials/companies('{id}')/accounts('{id}')
 **Request (запрос** ) Ниже приведен пример запроса.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/accounts('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/accounts/{id}
 ```
 
 **Отклик**

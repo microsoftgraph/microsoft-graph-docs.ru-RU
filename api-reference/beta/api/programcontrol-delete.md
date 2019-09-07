@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ba76bad184ef4fb4514b529dac4a1c779d29f01b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 569b084a149308d1ea5d3bc8311e2e6d13634eaa
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412469"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792814"
 ---
 # <a name="delete-programcontrol"></a>Удаление Програмконтрол
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции рецензирования [Access](../resources/accessreviews-root.md) Azure AD удалите объект [програмконтрол](../resources/programcontrol.md) .  Это отменяет связь с проверкой доступа из программы.
+В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD удалите объект [програмконтрол](../resources/programcontrol.md) .  Это отменяет связь с проверкой доступа из программы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +31,7 @@ ms.locfileid: "36412469"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programControls('{id}')
+DELETE /programControls/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |

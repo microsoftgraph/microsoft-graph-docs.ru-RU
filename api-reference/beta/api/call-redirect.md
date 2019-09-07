@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a43f9c6164e69315d60f39c2ae0b9c1ba3df2c9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418896"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792271"
 ---
 # <a name="call-redirect"></a>вызов: redirect
 
@@ -45,10 +45,11 @@ POST /applications/{id}/calls/{id}/redirect
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |targets|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления.|
-|таржетдиспоситион|String|Возможные значения:`default`|
+|таржетдиспоситион|String.|Возможные значения:`default`|
 |timeout|Int32|Время ожидания в секундах для операции перенаправления.|
-|масккалли|Boolean|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
-|масккаллер|Boolean|Указывает, следует ли маскировать вызывающий абонент.|
+|масккалли|Boolean.|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
+|масккаллер|Boolean.|Указывает, следует ли маскировать вызывающий абонент.|
+|callbackUri|String|Позволяет Боты предоставить определенный URI обратного вызова, в котором будет отправлен результат действия перенаправления. Это позволяет отправить результат в тот же конкретный экземпляр ленты, который инициировал действие перенаправления. Если он не указан, будет использоваться глобальный URI обратного вызова Bot.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика

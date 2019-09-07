@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 178b5c2f7a728970ec12931f6e5bd6c06e1ead81
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c9ce592c2cc24aa9cac0731b678c473a9c18447
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956585"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791941"
 ---
 # <a name="create-shipmentmethods"></a>Создание Шипментмесодс
 Создайте объект метода отгрузки в Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35956585"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-POST /financials/companies('{id}')/shipmentMethods
+POST /financials/companies/{id}/shipmentMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,7 +54,7 @@ POST /financials/companies('{id}')/shipmentMethods
 Ниже приведен пример запроса.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/shipmentMethods
+POST https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods
 Content-type: application/json
 
 {

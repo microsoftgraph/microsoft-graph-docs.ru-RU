@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b315cde52fbb5be38680272a868c964b9e00c8a9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e777dccdb1eb1925c1c8961c00efe79396f293fd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418829"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792278"
 ---
 # <a name="call-updatemetadata"></a>Call: Упдатеметадата
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418829"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateMetadata
-POST /applications/{id}/calls/{id}/updateMetadata
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,8 +43,8 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|метаданных|String|Большой двоичный объект данных, предоставляемый участником в списке.|
-|Контекст|String|Контекст клиента.|
+|метаданных|String.|Большой двоичный объект данных, предоставляемый участником в списке.|
+|Контекст|String.|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.

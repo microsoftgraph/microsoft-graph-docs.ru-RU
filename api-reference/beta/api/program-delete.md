@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bf91890b5e339bebc73242172d64f6e710e41b02
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d2451ba6ef8ae993b2ee6be5784bed98fd5f0ea9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412539"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792806"
 ---
 # <a name="delete-program"></a>Удаление программы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции рецензирования [Access](../resources/accessreviews-root.md) Azure AD удалите объект [Program](../resources/program.md) .
+В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD удалите объект [Program](../resources/program.md) .
 
 Не удаляйте программу, с которой все `programControl` еще связаны, эти проверки доступа сначала необходимо удалить или удалить из программы, а затем связать с другой программой.  Кроме того, обратите внимание на то, что встроенная программа по умолчанию не может быть удалена.
 
@@ -35,7 +35,7 @@ ms.locfileid: "36412539"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programs('{id}')
+DELETE /programs/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |

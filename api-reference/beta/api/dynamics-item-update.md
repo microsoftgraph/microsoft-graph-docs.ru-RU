@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d92746a5a2b4db3566278ecc0df14fd4104c10ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b79ef611ba16c249dda4de4868b6ada01f6f2148
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956235"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791556"
 ---
 # <a name="update-items"></a>обновлять элементы;
 Обновление свойств объекта Item для Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35956235"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-PATCH /financials/companies('{id}')/items('{id}')
+PATCH /financials/companies/{id}/items/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ PATCH /financials/companies('{id}')/items('{id}')
 
 Ниже приведен пример запроса.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 Content-type: application/json
 
 {

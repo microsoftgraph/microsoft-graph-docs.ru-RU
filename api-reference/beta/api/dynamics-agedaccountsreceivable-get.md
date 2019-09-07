@@ -8,12 +8,12 @@ localization_priority: Normal
 ms.author: solsen
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 3e23ea971ad16d32d3a651259818524870abedc2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15e29f2cfce50cb2e24e503fc893354fbb94f48a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956851"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792221"
 ---
 # <a name="get-agedaccountsreceivable"></a>Получение Ажедаккаунтсрецеивабле
 Получение свойств и связей для устаревших объектов отчета о расчетах с поставщиками для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956851"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-GET /financials/companies('{id}')/agedAccountsReceivable
+GET /financials/companies/{id}/agedAccountsReceivable
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/agedAccountsReceivable
 Ниже приведен пример запроса.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
+GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsReceivable?$filter=periodLengthFilter eq '3M'
 ```
 
 **Отклик**

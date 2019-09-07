@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b3e5881964d49fa1a42cf1aa4f9da8fba818d6e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5541fec6f60db848dcecb2400409728f919a67e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955871"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791213"
 ---
 # <a name="get-trialbalance"></a>Получение Триалбаланце
 Получение свойств и связей объекта отчета по оборотному балансу для Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35955871"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-GET /financials/companies('{id}')/trialBalance
+GET /financials/companies/{id}/trialBalance
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,7 +51,7 @@ GET /financials/companies('{id}')/trialBalance
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/trialBalance?$orderby number&$filter=dateFilter ge 2019-01-01 and dateFilter le 2019-12-31
+GET https://graph.microsoft.com/beta/financials/companies/{id}/trialBalance?$orderby number&$filter=dateFilter ge 2019-01-01 and dateFilter le 2019-12-31
 ```
 
 **Отклик**

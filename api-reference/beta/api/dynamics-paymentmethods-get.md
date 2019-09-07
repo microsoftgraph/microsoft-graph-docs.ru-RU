@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d02cd6eae1ddc9006beeb58020196cbf1766d4e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c73b5776908545354fb3f66483048309b8e01365
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956074"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791430"
 ---
 # <a name="get-paymentmethods"></a>Получение Пайментмесодс
 Получение свойств и связей объекта метода оплаты для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956074"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-GET /financials/companies('{id}')/paymentMethods('{id}')
+GET /financials/companies/{id}/paymentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/paymentMethods('{id}')
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
 **Отклик**

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97918efa4f55aa435214e15396283a4aa4e3cdd3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 96f5e7cdcd9996eb409743186a03239949f4e727
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418854"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792292"
 ---
 # <a name="call-transfer"></a>Call: Transfer
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418854"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
-POST /applications/{id}/calls/{id}/transfer
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,7 +44,7 @@ POST /applications/{id}/calls/{id}/transfer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |трансфертаржет|[инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
-|Контекст|String|Контекст клиента.|
+|Контекст|String.|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика.

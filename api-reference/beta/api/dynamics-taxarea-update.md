@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c6c3cedd16e8cca7a801d597718482ef1b6c12a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0eae4d3640f1cbac3e20617af33c5e6f1962967b
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955927"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791262"
 ---
 # <a name="update-taxareas"></a>Обновление Таксареас
 Обновление свойств объекта налоговой области для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35955927"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-PATCH /financials/companies('{id}')/taxAreas('{id}')
+PATCH /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,7 +54,7 @@ PATCH /financials/companies('{id}')/taxAreas('{id}')
 
 Ниже приведен пример запроса.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 Content-type: application/json
 
 {

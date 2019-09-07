@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 78e80f2a8a6a0b079861d75f809015f27003fcf1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2cf941f8efe1f00ebe5787ef5235501f65e90843
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956417"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791745"
 ---
 # <a name="get-customerpayments"></a>Получение Кустомерпайментс
 Получение свойств и связей объекта клиентского платежа для Dynamics 365 Business Central.
@@ -29,7 +29,7 @@ ms.locfileid: "35956417"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```
-GET /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+GET /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPaymen
 
 Ниже приведен пример запроса.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 **Отклик**

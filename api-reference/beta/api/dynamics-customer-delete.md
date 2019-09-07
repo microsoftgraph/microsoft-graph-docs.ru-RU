@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: cb4bc0867d981b4e6432e59c2db4c8c36c11f71a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b36989b1384316badf3276a96f7068c1a74d7c5c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956487"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791794"
 ---
 # <a name="delete-customers"></a>Удаление клиентов
 Удаление объекта Customer из Dynamics 365 Business Central.
@@ -28,7 +28,7 @@ ms.locfileid: "35956487"
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
-DELETE /financials/companies('{id}')/customers('{id}')
+DELETE /financials/companies/{id}/customers/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -53,7 +53,7 @@ DELETE /financials/companies('{id}')/customers('{id}')
 Ниже приведен пример запроса.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/customers('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
 **Отклик** 

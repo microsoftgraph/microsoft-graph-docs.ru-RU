@@ -5,18 +5,22 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 31036b5bbafb2c47e91a39507f9b03707be86619
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: aa463a7b300cfc4f3e6a8ad27bf2a7344b41c09d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413774"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792523"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Приглашение участников в активный вызов.
+Пригласите участников к активному многочастым звонкам.
+
+Дополнительные сведения о том, как обрабатывать длительные операции с приглашениями участников, можно найти в разделе [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md).
+
+>**Примечание:** Этот API поддерживается только для многосторонних вызовов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +35,6 @@ ms.locfileid: "36413774"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/invite
-POST /applications/{id}/calls/{id}/participants/invite
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,10 +48,10 @@ POST /applications/{id}/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)| Участники, которые необходимо пригласить.|
-|Контекст|String|Контекст клиента.|
+|Контекст|String.|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
-Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
+В случае успешного выполнения этот API возвращает `202 Accepted` код отклика и заголовок Location с URI для объекта [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. В тексте отклика содержится созданный [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) .
 
 ## <a name="examples"></a>Примеры
 В приведенных ниже примерах показано, как вызывать этот API.
@@ -107,16 +110,25 @@ Content-Length: 464
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+Content-Length: 259
 
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующем собрании P2P
+## <a name="example---invite-participants-to-an-existing-multiparty-call"></a>Пример: приглашение участников к существующему многочастым звонкам
 
 ##### <a name="request"></a>Запрос
 
@@ -173,12 +185,14 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"51\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
@@ -203,8 +217,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
       "resourceData": [
@@ -262,275 +278,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующем собрании P2P
+## <a name="example---invite-participants-to-a-multiparty-call-replacing-an-existing-peer-to-peer-call"></a>Пример: приглашение участников в многочастный вызов с заменой существующего однорангового вызова
 
-В этом примере показан полный E2Eный процесс для [приглашения участников](../api/participant-invite.md) в существующем собрании P2P.
+В этом примере предполагается, что существует одноранговый вызов, установленный между Bot и пользователем с ИДЕНТИФИКАТОРом `8A34A46B-3D17-4ADC-8DCE-DC4E7D572698`, и мы хотим, чтобы пользователь с помощью Bot приходился к существующему многочастому вызову при завершении однорангового вызова.
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>Ответ на входящий вызов VOIP с размещенными в службе носителями
-
-##### <a name="notification---incoming"></a>Уведомление — входящий
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
-        "direction": "incoming",
-        "source": {
-          "@odata.type": "#microsoft.graph.participantInfo",
-          "identity": {
-            "user": {
-              "displayName": "Test User",
-              "language": "en-US",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-            }
-          }
-        },
-        "targets": [
-          {
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity": {
-              "application": {
-                "displayName": "Test BOT",
-                "language": "en-US",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-              }
-            }
-          }
-        ],
-        "requestedModalities": [ "audio", "video" ]
-      }
-    }
-  ]
-}
-```
+Сведения об использовании `replacesCallId` для замены существующего однорангового звонка приведены в разделе [приглашение участника](../resources/invitationparticipantinfo.md).
 
 ##### <a name="request"></a>Запрос
-
-``` http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
-{
-  "callback": "https://bot.contoso.com/api/calls",
-  "acceptModalities": [ "audio", "video" ],
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-      {
-        "url": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-      {
-        "url": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-      }
-    ]
-  }
-}
-```
-
-##### <a name="response"></a>Отклик
-
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 306
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Running"
-}
-```
-
-##### <a name="notification---establishing"></a>Установка уведомления
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "establishing"
-      }
-    }
-  ]
-}
-```
-
-##### <a name="notification---established"></a>Установленное уведомление
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": [ "audio", "video" ],
-        "requestedModalities": []
-      }
-    }
-  ]
-}
-```
-
-### <a name="join-channel-meeting-without-media"></a>Присоединение к собранию канала без мультимедиа
-
-> **Важно!** если экземпляр Bot присоединяется только в целях облегчения передачи, следует избегать согласования мультимедиа.  Поэтому лучше всего добавлять его без `requestedModalities` или. `mediaConfig`
-
-##### <a name="request"></a>Запрос
-
-``` http
-POST /app/calls
-Content-Type: application/json
-
-{
-  "subject": "Test Call",
-  "callback": "https://bot.contoso.com/api/calls",
-  "source": {
-    "@odata.type": "#microsoft.graph.participantInfo",
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "targetDisposition": "default",
-  "requestedModalities": [],
-  "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-    "messageId": "1507228578052",
-    "replyChainMessageId": "1507228578052"
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-      }
-    }
-  }
-}
-```
-
-##### <a name="response"></a>Отклик
-
-``` http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
-```
-
-##### <a name="notification---establishing"></a>Установка уведомления
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-        "@odata.etag": "W/\"5445\"",
-        "state": "establishing",
-        "direction": "outgoing"
-      }
-    }
-  ]
-}
-```
-
-##### <a name="notification---established"></a>Установленное уведомление
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": []
-      }
-    }
-  ]
-}
-```
-
-### <a name="invite-participant-from-initial-incoming-call"></a>Приглашение участника от начального входящего звонка
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -583,8 +337,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
@@ -613,8 +369,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
       "resourceData": [
@@ -672,7 +430,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a>Уведомление — завершен первоначальный Звонок P2P
+##### <a name="notification---terminated-the-original-peer-to-peer-call"></a>Уведомление — прекращение исходного однорангового звонка
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -686,8 +444,10 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -702,7 +462,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a>Уведомление: Исходный вызов P2P удален
+##### <a name="notification---deleted-the-original-peer-to-peer-call"></a>Уведомление — удален первоначальный одноранговый Звонок
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -716,14 +476,56 @@ Content-Type: application/json
 }-->
 ``` json
 {
+  "@odata.type": "microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\""
+      }
+    }
+  ]
+}
+```
+
+## <a name="example---invite-participant-failure"></a>Пример: отказ участника приглашений
+
+В случае сбоя операции участника INVITE участник Bot получит уведомление с параметром [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) со `status` значением `failed`.
+
+``` http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resource": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+        "@odata.id": "/app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.etag": "W/\"51\"",
+        "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
+        "status": "failed",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 0,
+          "message": "addParticipantsfailed for participants: 28:8A34A46B-3D17-4ADC-8DCE-DC4E7D572698 reason: Audio-video modality controller could not invite participant to this conversation., code=580 subcode=5201"
+        },
       }
     }
   ]
