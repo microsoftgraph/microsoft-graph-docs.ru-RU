@@ -5,18 +5,20 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 769912b4fc818a892420111749b80614fefc7be9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63340e1edd86ad61c48d707ef0bff685a57c3ef8
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009883"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822734"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры основного параметра вошедшего пользователя.
+Параметры основного почтового ящика [пользователя](user.md).
+
+Вы можете [получить](../api/user-get-mailboxsettings.md) или [Обновить](../api/user-update-mailboxsettings.md) параметры почтового ящика пользователя, запросите свойство **mailboxSettings** пользователя.
 
 
 ## <a name="properties"></a>Свойства
@@ -24,7 +26,9 @@ ms.locfileid: "36009883"
 |:---------------|:--------|:----------|
 |archiveFolder|string|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 
@@ -44,11 +48,12 @@ ms.locfileid: "36009883"
 {
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+  "dateFormat": "string",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
+  "timeFormat": "string",
   "timeZone": "string",
   "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

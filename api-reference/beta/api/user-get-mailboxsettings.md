@@ -2,27 +2,36 @@
 title: Получение параметров почтового ящика пользователя
 description: 'Получение объекта mailboxSettings пользователя. Этот объект включает параметры автоматических ответов (автоматического уведомления пользователей при '
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab1d79ee469ff4d814012ba8d8f606559912f0fc
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 296a5225ca924374a3c38242207f7f329b2e8401
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722057"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822811"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [mailboxSettings](../resources/mailboxsettings.md) пользователя. Сюда входят параметры для автоматических ответов (уведомлять пользователей автоматически после получения их электронной почты), языковой стандарт (язык и страну или регион), часовой пояс и рабочие часы.
+Получение объекта [mailboxSettings](../resources/mailboxsettings.md) пользователя. Вы можете просматривать все параметры почтового ящика или получать определенные параметры.
 
-Вы можете просмотреть все параметры почтового ящика или получить определенные параметры.
+С помощью клиента Outlook пользователи могут устанавливать следующие параметры почтовых ящиков:
 
-Часовой пояс относится к предпочтительным параметрам, настраиваемым пользователями. Пользователь выбирает его из поддерживаемых часовых [поясов](outlookuser-supportedtimezones.md) , настроенных администратором для сервера почтовых ящиков пользователя. Администратор настраивает Часовые пояса в формате часового пояса Windows или в часовом [поясе IANA](https://www.iana.org/time-zones) (который также называется часовым поясом Олсона). Формат Windows используется по умолчанию. 
+- [автоматические ответы](../resources/automaticrepliessetting.md) (извещать пользователей автоматически после получения их электронной почты).
+- формат даты
+- [языковой стандарт](../resources/localeinfo.md) (язык и страна или регион)
+- формат времени
+- часовой пояс
+- [рабочие часы](../resources/workinghours.md)
 
-Когда вы получаете предпочтительный часовой пояс пользователя, часовой пояс возвращается в том формате, который был настроен. Чтобы задать определенный формат часового пояса (Windows или IANA), сначала [обновите предпочтительный часовой пояс в этом формате как параметр почтового ящика](user-update-mailboxsettings.md). Затем вы сможете получить часовой пояс в этом формате. Кроме того, вы можете управлять преобразованием форматов в своем приложении.
+Пользователи могут задавать Предпочтительные форматы даты и времени с помощью Outlook в Интернете. Пользователи могут выбрать один из поддерживаемых [кратких дат](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [кратких форматов времени](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . Эта `GET` операция возвращает формат, который выбрал пользователь.
+
+Пользователи могут задать часовой пояс, предпочитаемый для любого клиента Outlook, выбрав один из [поддерживаемых часовых поясов](outlookuser-supportedtimezones.md) , настроенных администратором для сервера почтовых ящиков. Администратор может настроить Часовые пояса в формате часового пояса Windows или в часовом [поясе IANA](https://www.iana.org/time-zones) (также известном как часовой пояс Олсона). Формат Windows используется по умолчанию. 
+
+Эта `GET` операция Возвращает предпочтительный часовой пояс пользователя в формате, настроенном администратором. Чтобы задать определенный формат часового пояса (Windows или IANA), сначала [обновите предпочтительный часовой пояс в этом формате как параметр почтового ящика](user-update-mailboxsettings.md). Затем вы сможете получить часовой пояс в этом формате. Кроме того, вы можете управлять преобразованием форматов в своем приложении. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,8 +56,14 @@ GET /users/{id|userPrincipalName}/mailboxSettings
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 
+GET /me/mailboxSettings/dateFormat
+GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
+
+GET /me/mailboxSettings/timeFormat
+GET /users/{id|userPrincipalName}/mailboxSettings/timeFormat
 
 GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
@@ -57,7 +72,7 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -72,13 +87,17 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 
 - Объект [mailboxSettings](../resources/mailboxsettings.md).
 - Объект [automaticRepliesSetting](../resources/automaticrepliessetting.md).
+- строка (для **dateFormat**)
 - Объект [localeInfo](../resources/localeinfo.md).
+- строка (для **тимеформат**)
 - Строка (для параметра **timeZone**).
 - [workingHours](../resources/workinghours.md)
 
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
-В первом примере считываются все параметры часового пояса для почтового ящика вошедшего пользователя, в том числе параметры часового пояса, автоматических ответов, языкового стандарта (язык и страна или регион) и рабочего времени.
+## <a name="examples"></a>Примеры
+
+### <a name="example-1"></a>Пример 1
+#### <a name="request"></a>Запрос 
+В первом примере возвращаются все параметры почтового ящика пользователя, выполнившего вход, который включает параметры для автоматических ответов, форматов даты, языкового стандарта (языка и страны/региона), формата времени, часового пояса и рабочих часов.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -102,7 +121,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 
 ---
 
-##### <a name="response-1"></a>Отклик 1
+#### <a name="response"></a>Отклик
 Ответ включает все параметры почтового ящика вошедшего пользователя. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -148,11 +167,14 @@ Content-type: application/json
         "timeZone":{
             "name":"Pacific Standard Time"
         }
-    }
+    },
+    "dateFormat": "MM/dd/yyyy",
+    "timeFormat": "hh:mm tt"
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+### <a name="example-2"></a>Пример 2
+#### <a name="request"></a>Запрос
 Во втором примере показано, как получить только параметры автоматических ответов почтового ящика пользователя, выполнившего вход в систему.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -177,7 +199,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 
 ---
 
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 Отклик включает только параметры автоматических ответов. Примечание. Показанный здесь объект отклика может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -206,8 +228,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-3"></a>Запрос 3
+### <a name="example-3"></a>Пример 3
+#### <a name="request"></a>Запрос
 В третьем примере показано, как получить только параметры рабочего времени для почтового ящика пользователя, выполнившего вход в систему.
 <!-- {
   "blockType": "ignored",
@@ -216,7 +238,7 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
-##### <a name="response-3"></a>Ответ 3
+#### <a name="response"></a>Отклик
 Ответ включает только параметры рабочего времени. Обратите внимание, что рабочее время пользователя относится к [пользовательскому часовому поясу](../resources/customtimezone.md). Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",

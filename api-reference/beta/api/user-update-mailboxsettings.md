@@ -2,27 +2,35 @@
 title: Обновление параметров почтового ящика пользователя
 description: Обновление одного или нескольких параметров почтового ящика пользователя. Сюда входят параметры для автоматических ответов (уведомлять пользователей автоматически после получения их электронной почты), языковой стандарт (язык и страну или регион), часовой пояс и рабочие часы.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe39d03850c9e3d006827593cb4151c0cdac376b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 22cccaaff660c8350c69bc68ccadb28b90786a64
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421801"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822741"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление одного или нескольких параметров почтового ящика пользователя. Это относится к параметрам [автоматических ответов](../resources/automaticrepliessetting.md) (автоматического уведомления пользователей после получения электронных сообщений от них), [языковых стандартов](../resources/localeinfo.md) (языка и страны или региона), часового пояса и [рабочего времени](../resources/workinghours.md).
+Включить, настроить или отключить один или несколько из следующих параметров в составе [mailboxSettings](../resources/mailboxsettings.md)пользователя:
 
-Вы можете включить, настроить или отключить один или несколько этих параметров в составе объекта [mailboxSettings](../resources/mailboxsettings.md).
+- [автоматические ответы](../resources/automaticrepliessetting.md) (извещать пользователей автоматически после получения их электронной почты).
+- dateFormat
+- [языковой стандарт](../resources/localeinfo.md) (язык и страна или регион)
+- тимеформат
+- часовой пояс
+- [рабочие часы](../resources/workinghours.md)
 
-**Примечание.** Невозможно создать или удалить какие-либо параметры почтового ящика.
+При обновлении предпочтительного формата даты или времени для пользователя укажите его соответственно в [кратком формате даты](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [коротком формате времени](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
 
-Обновляя предпочтительный часовой пояс для пользователя, можете указать его в формате Windows или [часового пояса IANA](https://www.iana.org/time-zones) (также известен как часовой пояс Олсона). Кроме того, можно настроить часовой пояс, как показано в [примере 2](#request-2) ниже.
+При обновлении предпочтительного часового пояса для пользователя укажите его в формате [часового пояса Windows или Internet Assigned Numbers Authority (IANA)](https://www.iana.org/time-zones) (также известного как часовой пояс Олсона). Кроме того, можно настроить часовой пояс, как показано в [примере 2](#example-2) ниже.
+
+> [!TIP] 
+> Вы не можете создавать или удалять параметры почтового ящика.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,13 +60,15 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [mailboxSettings](../resources/mailboxsettings.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленные свойства объекта [mailboxSettings](../resources/mailboxsettings.md) в тексте отклика.
 
 ## <a name="errors"></a>Ошибки
 
@@ -72,8 +82,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | Недопустимое значение **timeZone** | 400 | InvalidTimeZone | Указаны недопустимые параметры часового пояса.|
 
 
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+## <a name="examples"></a>Примеры
+### <a name="example-1"></a>Пример 1
+#### <a name="request"></a>Запрос 
 В первом примере показано, как включить автоматические ответы для диапазона дат, настроив для свойства **automaticRepliesSetting** следующие свойства: **status**, **scheduledStartDateTime** и **scheduledEndDateTime**.
 
 
@@ -115,7 +126,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response-1"></a>Отклик 1
+#### <a name="response"></a>Ответ
 Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -146,8 +157,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>Запрос 2
+### <a name="example-2"></a>Пример 2
+#### <a name="request"></a>Запрос
 Во втором примере настраивается часовой пояс для рабочего времени вошедшего пользователя. Для этого в свойстве **timeZone** указывается [пользовательский часовой пояс](../resources/customtimezone.md).
 
 <!-- {
@@ -192,7 +203,7 @@ Content-Type: application/json
   }
 } 
 ```
-##### <a name="response-2"></a>Ответ 2
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",

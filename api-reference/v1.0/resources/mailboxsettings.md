@@ -5,16 +5,18 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a9fb455d2a67835ff1a3a10f89ee188a21e9956b
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036304"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822783"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
-Параметры основного параметра вошедшего пользователя.
+Параметры основного почтового ящика [пользователя](user.md).
+
+Вы можете [получить](../api/user-get-mailboxsettings.md) или [Обновить](../api/user-update-mailboxsettings.md) параметры почтового ящика пользователя, запросите свойство **mailboxSettings** пользователя.
 
 
 ## <a name="properties"></a>Свойства
