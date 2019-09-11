@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 38e8b0f9b98119eca9c1bd617d27d74b6c99d888
+ms.openlocfilehash: 80a2111fff11bbde5d83a6294808c23fb74d9066
 ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838849"
+ms.locfileid: "36838931"
 ---
 ```javascript
 
@@ -15,12 +15,13 @@ const options = {
 
 const client = Client.init(options);
 
-const reject = {
-  reason: "busy"
+const workbookCommentReply = {
+  content: "This is my reply to the comment.",
+  contentType: "plain"
 };
 
-let res = await client.api('/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject')
+let res = await client.api('/drive/root/workbook/comments/{id}/replies')
     .version('beta')
-    .post(reject);
+    .post(workbookCommentReply);
 
 ```

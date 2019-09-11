@@ -1,18 +1,24 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ca7244c033b2e0fc40840b036cf6e1b53e52f17c
+ms.openlocfilehash: c83fd55e400da437ead3aa2f685cc0d30c5e1224
 ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838899"
+ms.locfileid: "36838932"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var replies = await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies
+var workbookCommentReply = new WorkbookCommentReply
+{
+    Content = "This is my reply to the comment.",
+    ContentType = "plain"
+};
+
+await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies
     .Request()
-    .GetAsync();
+    .AddAsync(workbookCommentReply);
 
 ```

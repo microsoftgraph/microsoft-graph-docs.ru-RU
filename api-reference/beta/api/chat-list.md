@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c16e1bf4548fcdb0ebec598a780a8196be26bf6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9a8713b0a65d38c7b160a79c033340ceb9d2366b
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719937"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838674"
 ---
 # <a name="list-chats"></a>Список чатов
 
@@ -24,9 +24,9 @@ ms.locfileid: "36719937"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Chat.Read   |
+|Делегированные (рабочая или учебная учетная запись) | Чат. Read, Chat. ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается.   |
+|Для приложений | Не поддерживается.   | Чат. Read. ALL, Chat. ReadWrite. ALL   |
 
 ## <a name="http-request"></a>HTTP-запрос
 
