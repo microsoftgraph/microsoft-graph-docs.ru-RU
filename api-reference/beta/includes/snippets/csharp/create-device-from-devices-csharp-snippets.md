@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 73811234dfe2f8b956f99007f8be1946b722e74f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: f2cdb52737b152620ead6dd5e82449d4274b4278
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713442"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36846161"
 ---
 ```csharp
 
@@ -23,7 +23,7 @@ var device = new Device
             Key = "base64Y3YxN2E1MWFlYw=="
         }
     },
-    ApproximateLastSignInDateTime = "2016-10-19T10:37:00Z",
+    ApproximateLastSignInDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
     DeviceId = "deviceId-value",
     DeviceMetadata = "deviceMetadata-value",
     DeviceVersion = 99
