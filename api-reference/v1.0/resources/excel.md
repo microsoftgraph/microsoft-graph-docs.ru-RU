@@ -1,16 +1,16 @@
 ---
 title: Работа с Excel в Microsoft Graph
-description: 'С помощью Microsoft Graph можно разрешать веб-приложениям и мобильным приложениям считывать и изменять книги Excel, хранящиеся в OneDrive для бизнеса, на сайте SharePoint или диске группы. Ресурс `Workbook` (или файл Excel) содержит все остальные ресурсы Excel благодаря отношениям. Вы можете получить доступ к книге через API Drive, указав расположение файла в URL-адресе. Например:'
+description: С помощью Microsoft Graph можно разрешать веб-приложениям и мобильным приложениям считывать и изменять книги Excel, хранящиеся в OneDrive для бизнеса, на сайте SharePoint или диске группы.
 localization_priority: Priority
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: abbb74553e5993f6760adaf4929678f48b7b2b86
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699130"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822769"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -1182,6 +1182,9 @@ content-type: application/json
 }
 ```
 
+Значение null также возвращается в отклике в указанных ниже случаях.
+- Если при попытке получить определенное свойство объекта возникает ошибка, и для такого свойства можно задать значение null, свойство может возвращать в отклике значение null.
+- Для объекта Range при получении диапазона для целой строки или целого столбца некоторые свойства могут возвращать значение null в качестве отклика. Если размер диапазона превышает верхнее ограничение (5 млн ячеек), некоторые свойства возвращают null в качестве значения.
 
 ### <a name="blank-input-and-output"></a>Пустые входные и выходные данные
 
