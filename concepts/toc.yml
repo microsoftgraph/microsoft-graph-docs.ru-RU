@@ -393,6 +393,8 @@ items:
                 href: toolkit/components/agenda.md
               - name: Задачи
                 href: toolkit/components/tasks.md
+              - name: Выбор людей
+                href: toolkit/components/people-picker.md
           - name: Поставщики
             items:
               - name: Использование поставщиков
