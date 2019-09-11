@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c2f55681c11c1f854715227faecaf95a80b9210a
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 423a5696e3c02c58e904b54b5fd03832941c1ae3
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710655"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36846176"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var administrativeUnit = new AdministrativeUnit
 {
     DisplayName = "Seattle District Technical Schools",
     Description = "Seattle district technical schools administration",
-    Visibility = "true"
+    Visibility = true
 };
 
 await graphClient.AdministrativeUnits

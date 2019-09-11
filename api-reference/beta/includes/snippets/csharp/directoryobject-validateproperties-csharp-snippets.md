@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 272ae40f8fb5373e7e02cd3b85a783cc2211fe67
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: afc05efa66a2fc3de78f5193288440d696c3eeee
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35713380"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36846160"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var displayName = "Myprefix_test_mysuffix";
 
 var mailNickname = "Myprefix_test_mysuffix";
 
-var onBehalfOfUserId = "onBehalfOfUserId-value";
+var onBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value");
 
 await graphClient.DirectoryObjects
     .ValidateProperties(entityType,displayName,mailNickname,onBehalfOfUserId)
